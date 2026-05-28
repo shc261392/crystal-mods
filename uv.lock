@@ -1,6 +1,6 @@
 version = 1
 revision = 3
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 
 [manifest]
 members = [
@@ -8,6 +8,7 @@ members = [
     "game-discover",
     "pcgw-fetch",
     "steam-scan",
+    "translation-tool",
 ]
 
 [[package]]
@@ -193,6 +194,23 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [{ name = "typer", specifier = ">=0.12" }]
+
+[[package]]
+name = "translation-tool"
+version = "0.1.0"
+source = { editable = "tools/python/translation-tool" }
+dependencies = [
+    { name = "httpx" },
+    { name = "rich" },
+    { name = "typer" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "httpx", specifier = ">=0.27" },
+    { name = "rich", specifier = ">=13.7" },
+    { name = "typer", specifier = ">=0.12" },
+]
 
 [[package]]
 name = "typer"
