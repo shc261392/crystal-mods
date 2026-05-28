@@ -1,0 +1,3 @@
+id	old_tc	new_tc	reason
+25505	3758 No Key	懦夫將會羞愧而死。	dereference-no-key->tc:3758
+15008	4793 No Key	Capture and hold over half of the Critical Locations in this map to win.	replace-no-key-from-en-same-id

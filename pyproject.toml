@@ -1,0 +1,41 @@
+[project]
+name = "crystal-mods"
+version = "0.1.0"
+description = "Monorepo of PC game mods, patches, and shared tooling."
+requires-python = ">=3.11"
+# The root project intentionally has no runtime deps — each tool lives in its
+# own workspace member under tools/python/.
+dependencies = []
+
+[tool.uv.workspace]
+members = ["tools/python/*"]
+
+[tool.uv]
+# Pin one Python toolchain for the whole workspace; uv will download it.
+required-version = ">=0.5"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [
+  ".copilot_workspace",
+  "**/.venv",
+  "**/build",
+  "**/dist",
+  "reference",
+]
+
+[tool.ruff.lint]
+select = [
+  "E", "F", "W",   # pycodestyle + pyflakes
+  "I",             # isort
+  "B",             # bugbear
+  "UP",            # pyupgrade
+  "SIM",           # simplify
+  "RUF",           # ruff-specific
+]
+ignore = ["E501"]  # line length handled by formatter
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"

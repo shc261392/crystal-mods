@@ -1,0 +1,57 @@
+{
+  "modId": "wh40k-dow-de-tc-mod",
+  "vortexMinVersion": "1.4.0",
+  "installerVersion": "1.0.0",
+  "installSteps": [
+    {
+      "step": 1,
+      "title": "Extract Mod",
+      "description": "All files will be extracted to your DoW:DE Engine/Locale/Chinese folder",
+      "optional": false
+    },
+    {
+      "step": 2,
+      "title": "Run Setup (First Time Only)",
+      "description": "Execute setup_relic_tool.ps1 to install Python dependencies and SGA tools",
+      "command": "powershell.exe",
+      "arguments": ["-ExecutionPolicy", "Bypass", "-File", "setup_relic_tool.ps1"],
+      "optional": false,
+      "firstTimeOnly": true
+    },
+    {
+      "step": 3,
+      "title": "Choose Installation Method",
+      "description": "You can either:\n• Use unpacked method (faster, recommended): Run unpack_chinese_locale.ps1 and apply_font_fix.py\n• Repack method (advanced): Use repack_chinese_locale.ps1 after patching",
+      "optional": false
+    }
+  ],
+  "deployment": {
+    "installPath": "Engine/Locale/Chinese",
+    "extractDirectories": [
+      "data",
+      "backup"
+    ],
+    "copyFiles": [
+      "setup_relic_tool.ps1",
+      "unpack_chinese_locale.ps1",
+      "apply_font_fix.py",
+      "repack_chinese_locale.ps1",
+      "FONT_FIX_README.md",
+      "README.md"
+    ],
+    "allowOtherMods": true
+  },
+  "metadata": {
+    "displayName": "WH40K DOW DE - Traditional Chinese Locale Font Fix",
+    "category": "Utility",
+    "description": "Fixes text clipping and scaling in Chinese UI elements for 4K and high-res displays",
+    "tags": ["localization", "font", "ui-fix", "chinese"],
+    "requiredTools": [
+      {
+        "tool": "Python",
+        "version": "3.8+",
+        "note": "Auto-installed via setup script"
+      }
+    ]
+  }
+}

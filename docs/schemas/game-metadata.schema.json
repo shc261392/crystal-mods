@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Crystal Mods game metadata",
+  "type": "object",
+  "required": ["pcgwPage", "displayName"],
+  "additionalProperties": true,
+  "properties": {
+    "pcgwPage": { "type": "string" },
+    "displayName": { "type": "string" },
+    "released": { "type": ["string", "null"] },
+    "developers": { "type": "array", "items": { "type": "string" } },
+    "publishers": { "type": "array", "items": { "type": "string" } },
+    "engine": { "type": "array", "items": { "type": "string" } },
+    "graphicsApi": { "type": "array", "items": { "type": "string" } },
+    "stores": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "steam": {
+          "type": ["object", "null"],
+          "properties": { "appId": { "type": "string" } }
+        },
+        "gog": { "type": ["object", "null"] },
+        "epic": { "type": ["object", "null"] },
+        "ubisoft": { "type": ["object", "null"] },
+        "microsoft": { "type": ["object", "null"] }
+      }
+    },
+    "os": {
+      "type": "object",
+      "properties": {
+        "windows":     { "enum": ["primary", "supported", "untested", "unsupported"] },
+        "linuxProton": { "enum": ["primary", "supported", "untested", "unsupported"] },
+        "macos":       { "enum": ["primary", "supported", "untested", "unsupported"] }
+      }
+    },
+    "modding": {
+      "type": "object",
+      "properties": {
+        "framework":       { "type": ["string", "null"] },
+        "vortexExtension": { "type": "boolean" }
+      }
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "pcgw":  { "type": ["string", "null"] },
+        "nexus": { "type": ["string", "null"] }
+      }
+    },
+    "_source":    { "type": "string" },
+    "_fetchedAt": { "type": "string" },
+    "_manual":    { "type": "boolean" }
+  }
+}

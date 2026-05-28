@@ -1,0 +1,4 @@
+packages:
+  - "tools/node/*"
+  # Future: per-game Vortex extension TS packages can be added as
+  #   - "*/vortex-ext"
