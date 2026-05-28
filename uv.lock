@@ -5,6 +5,7 @@ requires-python = ">=3.11"
 [manifest]
 members = [
     "crystal-mods",
+    "game-discover",
     "pcgw-fetch",
     "steam-scan",
 ]
@@ -53,6 +54,21 @@ wheels = [
 name = "crystal-mods"
 version = "0.1.0"
 source = { virtual = "." }
+
+[[package]]
+name = "game-discover"
+version = "0.1.0"
+source = { editable = "tools/python/game-discover" }
+dependencies = [
+    { name = "rich" },
+    { name = "typer" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "rich", specifier = ">=13.7" },
+    { name = "typer", specifier = ">=0.12" },
+]
 
 [[package]]
 name = "h11"

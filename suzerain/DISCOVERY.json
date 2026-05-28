@@ -1,0 +1,245 @@
+{
+  "root": "/mnt/d/SteamLibrary/steamapps/common/Suzerain",
+  "total_size": 1411653233,
+  "file_count": 161,
+  "engine": "unity",
+  "executables": [
+    {
+      "path": "UnityCrashHandler64.exe",
+      "size": 1531824
+    },
+    {
+      "path": "Suzerain.exe",
+      "size": 902728
+    }
+  ],
+  "unity": {
+    "data_dir": "Suzerain_Data",
+    "scripting_backend": "il2cpp",
+    "unity_version": "6000.0.58f2",
+    "managed_dll_count": 0,
+    "plugins": [
+      "x86_64"
+    ],
+    "streaming_assets_present": true,
+    "streaming_assets_top": [
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/addressableassets_assets_assets_addressableassets_scenecollectionitems_efffb7b536d199b279c78dba76b866ff.bundle",
+        "size": 380800292
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/commonassets_assets_all_26b217e9fa2e4f5653db3f6b6e49e70d.bundle",
+        "size": 155094559
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/scenes_scenes_assets_scenes_rizia.unity_f3aa16cfb48dca20773754a9c19d5c1d.bundle",
+        "size": 94545406
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/audio_assets_assets_addressableassets_audio_dialoguesfx_cebd786595414f740f56c8cd1ebf8635.bundle",
+        "size": 50719057
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/addressableassets_assets_assets_addressableassets_fonts_others_971af2b8a3e72350bdf6ece6f0488c63.bundle",
+        "size": 25184253
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/scenes_scenes_assets_scenes_sordland.unity_6a29f2cab2ef8b301931a992da045ec1.bundle",
+        "size": 24790860
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/audio_assets_assets_addressableassets_audio_mapmusic_b62c8fdbcf080e54bf10fa6cfca388c9.bundle",
+        "size": 22897760
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/storypack_rizia_assets_all_9a9c72850beb511a2896663e17b30565.bundle",
+        "size": 21509654
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/storypack_sordland_assets_all_c64213224933e608d5878b2c017b1400.bundle",
+        "size": 18430788
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/addressableassets_assets_assets_addressableassets_prologue_af06aff349abcf7288a325287a4cdf9f.bundle",
+        "size": 17496548
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/addressableassets_assets_assets_addressableassets_war_8ac244cf736a680ca8e332b79d8e177e.bundle",
+        "size": 15527611
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/addressableassets_assets_assets_addressableassets_portraits_0ed42fb175344234ec9e49ff07faa866.bundle",
+        "size": 15316928
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/database_assets_all_65d8a7c2a9a5b2c3198200d341048c34.bundle",
+        "size": 14600622
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/addressableassets_assets_assets_addressableassets_codexentries_e31c99e0bb9a8eb7fb736a3642a80152.bundle",
+        "size": 8523456
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/audio_assets_assets_addressableassets_audio_mapambience_7ebc079d275fcac16afc359bd39709cc.bundle",
+        "size": 8259076
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/addressableassets_assets_assets_addressableassets_charactercustomization_fb22e5d8446cffe0b11335ed7c3d136c.bundle",
+        "size": 8128201
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/music_assets_assets_addressableassets_audio_music_security.ogg_050d4360182c25556ffc6083e3ab361b.bundle",
+        "size": 8000371
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/music_assets_assets_addressableassets_audio_music_diplomacy.ogg_df07e0ee810be102de601269ae26b7b8.bundle",
+        "size": 7183555
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/music_assets_assets_addressableassets_audio_music_mountains.ogg_35ef304299665696cf485b0bca41d098.bundle",
+        "size": 7055250
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/music_assets_assets_addressableassets_audio_music_prologueloop.ogg_3a0ecf8522643aeff66abb502fcc261e.bundle",
+        "size": 6886624
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/music_assets_assets_addressableassets_audio_music_prologueintro.ogg_7f208d042afb2279ff20568e93ee84d2.bundle",
+        "size": 6827186
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/music_assets_assets_addressableassets_audio_music_suspense.ogg_de58484fc5aeb816d1f5b48dd6b0077a.bundle",
+        "size": 6584927
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/music_assets_assets_addressableassets_audio_music_pinnacle.ogg_92b8d03ff90c68bbd9993dc8e45dd86e.bundle",
+        "size": 6583448
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/scenes_scenes_assets_scenes_mainmenu.unity_6dd6ca6b71e2733b13cf2860d4a95134.bundle",
+        "size": 6545409
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/music_assets_assets_addressableassets_audio_music_optimism.ogg_9d3fec00fcf7169338e285f3a223aeba.bundle",
+        "size": 6318944
+      }
+    ],
+    "bundles_top": [
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/addressableassets_assets_assets_addressableassets_scenecollectionitems_efffb7b536d199b279c78dba76b866ff.bundle",
+        "size": 380800292
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/commonassets_assets_all_26b217e9fa2e4f5653db3f6b6e49e70d.bundle",
+        "size": 155094559
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/scenes_scenes_assets_scenes_rizia.unity_f3aa16cfb48dca20773754a9c19d5c1d.bundle",
+        "size": 94545406
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/audio_assets_assets_addressableassets_audio_dialoguesfx_cebd786595414f740f56c8cd1ebf8635.bundle",
+        "size": 50719057
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/addressableassets_assets_assets_addressableassets_fonts_others_971af2b8a3e72350bdf6ece6f0488c63.bundle",
+        "size": 25184253
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/scenes_scenes_assets_scenes_sordland.unity_6a29f2cab2ef8b301931a992da045ec1.bundle",
+        "size": 24790860
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/audio_assets_assets_addressableassets_audio_mapmusic_b62c8fdbcf080e54bf10fa6cfca388c9.bundle",
+        "size": 22897760
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/storypack_rizia_assets_all_9a9c72850beb511a2896663e17b30565.bundle",
+        "size": 21509654
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/storypack_sordland_assets_all_c64213224933e608d5878b2c017b1400.bundle",
+        "size": 18430788
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/addressableassets_assets_assets_addressableassets_prologue_af06aff349abcf7288a325287a4cdf9f.bundle",
+        "size": 17496548
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/addressableassets_assets_assets_addressableassets_war_8ac244cf736a680ca8e332b79d8e177e.bundle",
+        "size": 15527611
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/addressableassets_assets_assets_addressableassets_portraits_0ed42fb175344234ec9e49ff07faa866.bundle",
+        "size": 15316928
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/database_assets_all_65d8a7c2a9a5b2c3198200d341048c34.bundle",
+        "size": 14600622
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/addressableassets_assets_assets_addressableassets_codexentries_e31c99e0bb9a8eb7fb736a3642a80152.bundle",
+        "size": 8523456
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/audio_assets_assets_addressableassets_audio_mapambience_7ebc079d275fcac16afc359bd39709cc.bundle",
+        "size": 8259076
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/addressableassets_assets_assets_addressableassets_charactercustomization_fb22e5d8446cffe0b11335ed7c3d136c.bundle",
+        "size": 8128201
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/music_assets_assets_addressableassets_audio_music_security.ogg_050d4360182c25556ffc6083e3ab361b.bundle",
+        "size": 8000371
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/music_assets_assets_addressableassets_audio_music_diplomacy.ogg_df07e0ee810be102de601269ae26b7b8.bundle",
+        "size": 7183555
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/music_assets_assets_addressableassets_audio_music_mountains.ogg_35ef304299665696cf485b0bca41d098.bundle",
+        "size": 7055250
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/music_assets_assets_addressableassets_audio_music_prologueloop.ogg_3a0ecf8522643aeff66abb502fcc261e.bundle",
+        "size": 6886624
+      }
+    ],
+    "locale_candidates": [
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/defaultlocalgroup_assets_assets_database_entitytextassets.asset_7658ed792f0c4924d06b11829a6c36d1.bundle",
+        "size": 4766988
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/music_assets_assets_addressableassets_audio_music_r_gridlock.ogg_8be819038faa80c9f31ac98d99d2e955.bundle",
+        "size": 3220256
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/music_assets_assets_addressableassets_audio_music_r_gridlocklight.ogg_7d6c6a3b7d094b2aa9f2e520666bebf5.bundle",
+        "size": 3183080
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/music_assets_assets_addressableassets_audio_music_r_gridlock_loop.ogg_9124eb587b741bc0c7688fb57c8ef9a2.bundle",
+        "size": 1347604
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/music_assets_assets_addressableassets_audio_music_r_gridlocklight_loop.ogg_22ab0b40d6105028e5aeca254253f552.bundle",
+        "size": 1311170
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/defaultlocalgroup_assets_assets_prefabs_maps_map_galmland_base.prefab_59811d39af0de3f4325035c53eca04a3.bundle",
+        "size": 1056057
+      },
+      {
+        "path": "Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/defaultlocalgroup_assets_assets_prefabs_maps_map_galmland_world.prefab_c7c4ba05c5dfdc424b41ad547fcee903.bundle",
+        "size": 4577
+      }
+    ],
+    "bepinex_installed": false,
+    "melonloader_installed": false
+  },
+  "unreal": null,
+  "notes": [],
+  "total_size_human": "1.3 GB"
+}

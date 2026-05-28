@@ -1,0 +1,178 @@
+{
+  "root": "/mnt/d/SteamLibrary/steamapps/common/Digimon Survive",
+  "total_size": 7076465467,
+  "file_count": 6230,
+  "engine": "unity",
+  "executables": [
+    {
+      "path": "UnityCrashHandler64.exe",
+      "size": 1096280
+    },
+    {
+      "path": "DigimonSurvive.exe",
+      "size": 650752
+    }
+  ],
+  "unity": {
+    "data_dir": "DigimonSurvive_Data",
+    "scripting_backend": "mono",
+    "unity_version": "2019.4.29f1",
+    "managed_dll_count": 98,
+    "plugins": [
+      "Steamworks.NET.txt",
+      "x86_64"
+    ],
+    "streaming_assets_present": true,
+    "streaming_assets_top": [
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/movie/movie001_zh_tw",
+        "size": 265704555
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/movie/movie001_ko",
+        "size": 265675112
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/movie/movie001_en",
+        "size": 265589518
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/advroombg/prefabs/106/b",
+        "size": 40840150
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/movie/survive_op",
+        "size": 37877943
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/bm12_scene",
+        "size": 35512786
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/advroombg/prefabs/106/a",
+        "size": 35177050
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/bm26_scene",
+        "size": 33423910
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/bm27_scene",
+        "size": 32998693
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/advroombg/prefabs/03/a",
+        "size": 32212675
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/advroombg/prefabs/101/a",
+        "size": 31771280
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/bm20_scene",
+        "size": 30948319
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/advroombg/prefabs/101/b",
+        "size": 30604022
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/bm07_scene",
+        "size": 30493786
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/bm28_scene",
+        "size": 29935524
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/bm29_scene",
+        "size": 29673138
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/bm32_scene",
+        "size": 28974853
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/advroombg/prefabs/101/c",
+        "size": 28467693
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/bm17_scene",
+        "size": 27276717
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/advroombg/prefabs/04/a",
+        "size": 26476484
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/bm05_scene",
+        "size": 25438646
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/advroombg/prefabs/15/a",
+        "size": 25015295
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/bm25_scene",
+        "size": 24410835
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/advroombg/prefabs/15/b",
+        "size": 23616663
+      },
+      {
+        "path": "DigimonSurvive_Data/StreamingAssets/StandaloneWindows64/advroombg/prefabs/15/c",
+        "size": 23163794
+      }
+    ],
+    "bundles_top": [
+      {
+        "path": "DigimonSurvive_Data/resources.assets",
+        "size": 7705240
+      },
+      {
+        "path": "DigimonSurvive_Data/resources.assets.resS",
+        "size": 3704084
+      },
+      {
+        "path": "DigimonSurvive_Data/sharedassets0.assets",
+        "size": 1849284
+      },
+      {
+        "path": "DigimonSurvive_Data/sharedassets0.assets.resS",
+        "size": 1056256
+      },
+      {
+        "path": "DigimonSurvive_Data/globalgamemanagers.assets",
+        "size": 450324
+      }
+    ],
+    "locale_candidates": [
+      {
+        "path": "DigimonSurvive_Data/Managed/Unity.TextMeshPro.dll",
+        "size": 369664
+      },
+      {
+        "path": "DigimonSurvive_Data/Managed/UnityEngine.TextCoreModule.dll",
+        "size": 186368
+      },
+      {
+        "path": "DigimonSurvive_Data/Managed/UnityEngine.TextRenderingModule.dll",
+        "size": 27648
+      },
+      {
+        "path": "DigimonSurvive_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
+        "size": 10752
+      },
+      {
+        "path": "DigimonSurvive_Data/Managed/UnityEngine.LocalizationModule.dll",
+        "size": 9728
+      }
+    ],
+    "bepinex_installed": false,
+    "melonloader_installed": false
+  },
+  "unreal": null,
+  "notes": [],
+  "total_size_human": "6.6 GB"
+}
