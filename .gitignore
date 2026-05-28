@@ -72,6 +72,9 @@ releases/
 reference/raw/
 reference/extracted/
 
+# Per-mod extracted source data (regenerate via scripts/extract_*.py)
+**/extracted/
+
 # ── Tool caches ──────────────────────────────────────────────────────────────
 .tool-versions.local
 *.log

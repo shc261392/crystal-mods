@@ -1,0 +1,11 @@
+{
+  "$schema": "../../docs/schemas/mod-metadata.schema.json",
+  "name": "tc-localization",
+  "displayName": "Suzerain Traditional Chinese (zh-TW) Localisation",
+  "description": "Community Traditional Chinese localisation for Suzerain. Produced via the repo translation-tool pipeline.",
+  "version": "0.0.1-draft",
+  "game": "suzerain",
+  "status": "draft",
+  "engine": "unity",
+  "tags": ["localization", "zh-TW", "translation"]
+}
