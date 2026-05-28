@@ -1,0 +1,18 @@
+{
+  "id": "unofficial-tc-patch",
+  "name": "Unofficial Traditional Chinese Patch",
+  "game": "dawn-of-war-de",
+  "version": "1.0.2",
+  "author": "Community",
+  "category": "Localization",
+  "platforms": ["windows", "linux-proton"],
+  "supportedVersions": ["2.02.0"],
+  "vortex": {
+    "extensionId": "game-warhammer40kdawnofwar",
+    "extensionPath": "../vortex-ext/game-warhammer40kdawnofwar"
+  },
+  "links": {
+    "nexus": "https://www.nexusmods.com/warhammerdawnofwardefinitiveedition/mods/41",
+    "source": "https://github.com/shc261392/crystal-mods/tree/main/dawn-of-war-de/unofficial-tc-patch"
+  }
+}

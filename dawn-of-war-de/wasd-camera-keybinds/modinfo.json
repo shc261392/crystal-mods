@@ -1,0 +1,20 @@
+{
+  "id": "wasd-camera-keybinds",
+  "name": "WSAD Camera Keybind Overhaul",
+  "game": "dawn-of-war-de",
+  "version": "1.0.0",
+  "author": "Community",
+  "category": "Gameplay",
+  "platforms": ["windows", "linux-proton"],
+  "supportedVersions": ["2.02.0"],
+  "description": "Replaces the default Engine/defprofile/keydefaults.lua so plain W/A/S/D pan the camera (action bindings that previously claimed those bare letters shift to Shift+letter). Ships three presets: vanilla (restore stock), wasd-camera (replace Classic), wasd-camera-ingame (replace Modern slot for in-game dropdown selection).",
+  "vortex": {
+    "extensionId": "game-warhammer40kdawnofwar",
+    "extensionPath": "../vortex-ext/game-warhammer40kdawnofwar"
+  },
+  "presets": ["vanilla", "wasd-camera", "wasd-camera-ingame"],
+  "defaultPreset": "wasd-camera",
+  "links": {
+    "source": "https://github.com/shc261392/crystal-mods/tree/main/dawn-of-war-de/wasd-camera-keybinds"
+  }
+}

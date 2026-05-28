@@ -5,7 +5,7 @@ Generate keybinding presets for the DoW:DE Keybinding Overhaul mod.
 Source of truth: mod/keybinds/stock/keydefaults.lua (a verbatim copy of
 Engine/defprofile/keydefaults.lua unpacked from the game's Engine.sga).
 
-Presets produced (under mod/keybinds/presets/<preset>/):
+Presets produced (under presets/<preset>/):
 
   - vanilla/        — identical to stock; ships so users can restore defaults
                       after experimenting with other presets.
@@ -45,8 +45,8 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-STOCK_LUA = REPO_ROOT / "mod" / "keybinds" / "stock" / "keydefaults.lua"
-PRESETS_DIR = REPO_ROOT / "mod" / "keybinds" / "presets"
+STOCK_LUA = REPO_ROOT / "stock" / "keydefaults.lua"
+PRESETS_DIR = REPO_ROOT / "presets"
 
 # Bare letters that the WSAD preset claims for camera pan.
 CAMERA_LETTERS = {"W", "A", "S", "D"}
@@ -229,7 +229,7 @@ def render_cheatsheet(preset: str, stock_text: str, preset_text: str) -> str:
     out: list[str] = []
     out.append(f"# Hotkey Cheat Sheet — {title_map.get(preset, preset)}\n")
     out.append("")
-    out.append(f"Auto-generated from `mod/keybinds/presets/{preset}/Engine/defprofile/keydefaults.lua`.")
+    out.append(f"Auto-generated from `presets/{preset}/Engine/defprofile/keydefaults.lua`.")
     out.append("")
     out.append("## Camera")
     out.append("")

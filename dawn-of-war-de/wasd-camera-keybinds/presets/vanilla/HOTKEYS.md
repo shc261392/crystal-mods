@@ -1,16 +1,16 @@
-# Hotkey Cheat Sheet — WSAD Camera (community fix, replaces Classic)
+# Hotkey Cheat Sheet — Vanilla (DoW:DE stock defaults)
 
 
-Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefaults.lua`.
+Auto-generated from `presets/vanilla/Engine/defprofile/keydefaults.lua`.
 
 ## Camera
 
 | Action | Key |
 |---|---|
-| `camera_panleft` | `Left,A` |
-| `camera_panright` | `Right,D` |
-| `camera_panup` | `Up,W` |
-| `camera_pandown` | `Down,S` |
+| `camera_panleft` | `Left,Shift+A` |
+| `camera_panright` | `Right,Shift+D` |
+| `camera_panup` | `Up,Shift+W` |
+| `camera_pandown` | `Down,Shift+S` |
 | `camera_rotate` | `Alt` |
 | `camera_defaultcam` | `Backspace` |
 
@@ -35,7 +35,7 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 |---|---|
 | `stop` | `Q` |
 | `move` | `V` |
-| `attackmove` | `Shift+A` |
+| `attackmove` | `A` |
 | `attackmelee` | `Z` |
 | `build` | `B` |
 | `attach` | `T` |
@@ -53,17 +53,17 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `infiltrate` | `I` |
 | `rampage` | `R` |
 | `repair` | `E` |
-| `possess` | `Shift+S` |
+| `possess` | `S` |
 | `relocate` | `L` |
 | `cannibalism` | `C` |
 | `possess_enemy` | `P` |
 | `fear` | `F` |
-| `direct_spawn` | `Shift+S` |
+| `direct_spawn` | `S` |
 | `entrench` | `E` |
 | `burrow` | `B` |
 | `lightning_field` | `L` |
 | `direct_spawn_rally` | `R` |
-| `melee_dance` | `Shift+D` |
+| `melee_dance` | `D` |
 | `harvest` | `H` |
 
 ## Tau
@@ -80,39 +80,39 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `tau_research_building` | `E` |
 | `tau_shrine_of_kauyon` | `K` |
 | `tau_shrine_of_montka` | `M` |
-| `tau_shrine_of_purpose` | `Shift+S` |
+| `tau_shrine_of_purpose` | `S` |
 | `tau_thermo_generator` | `T` |
 | `tau_vehicle_building` | `V` |
-| `tau_attack_drone` | `Shift+A` |
+| `tau_attack_drone` | `A` |
 | `tau_broadside_battlesuit` | `B` |
 | `tau_builder` | `E` |
 | `tau_centaur_auxiliary` | `C` |
 | `tau_commander` | `C` |
 | `tau_commander_sp_drone` | `R` |
-| `tau_commander_shield_drone` | `Shift+D` |
+| `tau_commander_shield_drone` | `D` |
 | `tau_crisis_suit` | `X` |
 | `tau_devilfish_carrier` | `C` |
-| `tau_drone_harbinger` | `Shift+D` |
+| `tau_drone_harbinger` | `D` |
 | `tau_drone_squad` | `R` |
-| `tau_energy_auxiliary` | `Shift+A` |
+| `tau_energy_auxiliary` | `A` |
 | `tau_eradicator` | `R` |
-| `tau_eradicator_kroot` | `Shift+D` |
+| `tau_eradicator_kroot` | `D` |
 | `tau_ethereal` | `E` |
 | `tau_eviscerator` | `V` |
 | `tau_eviscerator_kroot` | `C` |
 | `tau_fire_warrior` | `F` |
 | `tau_fire_warrior_shasui` | `L` |
-| `tau_fire_warrior_shield_drone` | `Shift+D` |
+| `tau_fire_warrior_shield_drone` | `D` |
 | `tau_glob_auxiliary` | `G` |
 | `tau_greater_knarloc` | `G` |
 | `tau_hammerhead` | `H` |
 | `tau_kroot_hound` | `H` |
-| `tau_kroot_shaper` | `Shift+S` |
+| `tau_kroot_shaper` | `S` |
 | `tau_kroot_warrior` | `K` |
 | `tau_krootox` | `K` |
 | `tau_pathfinder` | `P` |
-| `tau_skyray` | `Shift+S` |
-| `tau_stealth_warrior` | `Shift+S` |
+| `tau_skyray` | `S` |
+| `tau_stealth_warrior` | `S` |
 | `tau_vespid_auxiliary` | `V` |
 | `tau_piranha` | `P` |
 | `tau_barracuda` | `B` |
@@ -129,16 +129,16 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `tau_teachings_of_kauyon` | `T` |
 | `tau_teachings_of_montka` | `T` |
 | `tau_target_lock` | `T` |
-| `tau_advanced_pulse_rifles` | `Shift+A` |
+| `tau_advanced_pulse_rifles` | `A` |
 | `tau_improved_metallurgy` | `I` |
 | `tau_targeting_optics` | `O` |
 | `tau_missile_barrage` | `M` |
 | `tau_feral_leap` | `F` |
 | `tau_jetpacks` | `J` |
 | `tau_burst_cannon_enhancements` | `B` |
-| `tau_devour` | `Shift+D` |
-| `tau_hamstring` | `Shift+S` |
-| `tau_sonic_pulse` | `Shift+S` |
+| `tau_devour` | `D` |
+| `tau_hamstring` | `S` |
+| `tau_sonic_pulse` | `S` |
 | `tau_target_acquired` | `G` |
 | `tau_mark_squad` | `M` |
 | `tau_emp_grenade` | `E` |
@@ -146,7 +146,7 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `tau_missile_barrage` | `B` |
 | `tau_canabalism` | `C` |
 | `tau_entrench` | `E` |
-| `tau_ion_shield` | `Shift+S` |
+| `tau_ion_shield` | `S` |
 
 ## Necrons
 
@@ -160,12 +160,12 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `necron_listening_post` | `L` |
 | `necron_monolith` | `M` |
 | `necron_plasma_generator` | `P` |
-| `necron_summoning_core` | `Shift+S` |
+| `necron_summoning_core` | `S` |
 | `necron_thermo_generator` | `T` |
 | `necron_turret` | `U` |
-| `necron_attack_scarab` | `Shift+A` |
-| `necron_builder_scarab` | `Shift+S` |
-| `necron_destroyer` | `Shift+D` |
+| `necron_attack_scarab` | `A` |
+| `necron_builder_scarab` | `S` |
+| `necron_destroyer` | `D` |
 | `necron_flayed_one` | `F` |
 | `necron_heavy_destroyer` | `H` |
 | `necron_immortal` | `I` |
@@ -175,8 +175,8 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `necron_restored_monolith` | `M` |
 | `necron_tomb_spyder` | `T` |
 | `necron_warrior` | `N` |
-| `necron_wraith` | `Shift+W` |
-| `necron_deceiver` | `Shift+D` |
+| `necron_wraith` | `W` |
+| `necron_deceiver` | `D` |
 | `necron_tomb_spyder_particle_projector` | `P` |
 | `necron_power_research_1` | `P` |
 | `necron_power_research_2` | `P` |
@@ -186,23 +186,23 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `necron_phase_shifter_research` | `P` |
 | `necron_phalactery_research` | `Y` |
 | `necron_resurrection_orb_research` | `R` |
-| `necron_solar_pulse_research` | `Shift+S` |
+| `necron_solar_pulse_research` | `S` |
 | `necron_veil_of_darkness_research` | `V` |
-| `necron_wraith_flight_research` | `Shift+W` |
-| `necron_warrior_disruption_field_research` | `Shift+D` |
+| `necron_wraith_flight_research` | `W` |
+| `necron_warrior_disruption_field_research` | `D` |
 | `necron_nightbringer_research` | `N` |
-| `necron_deceiver_research` | `Shift+D` |
+| `necron_deceiver_research` | `D` |
 | `necron_ctan_research` | `C` |
 | `necron_phase_shifter` | `H` |
 | `necron_solar_pulse` | `P` |
-| `necron_doom` | `Shift+D` |
+| `necron_doom` | `D` |
 | `necron_chronometron` | `C` |
 | `necron_mass_resurrection` | `M` |
-| `necron_deceive` | `Shift+D` |
+| `necron_deceive` | `D` |
 | `necron_grand_illusion` | `I` |
 | `necron_misdirect` | `J` |
 | `necron_possess_nightbringer` | `I` |
-| `necron_possess_deceiver` | `Shift+D` |
+| `necron_possess_deceiver` | `D` |
 
 ## Advanced Taskbar Commands
 
@@ -240,38 +240,38 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 
 | Action | Key |
 |---|---|
-| `marine_hq` | `Shift+S` |
-| `marine_artefact` | `Shift+A` |
+| `marine_hq` | `S` |
+| `marine_artefact` | `A` |
 | `marine_armoury` | `R` |
 | `marine_chapel` | `C` |
 | `marine_generator` | `P` |
 | `marine_listening_post` | `L` |
 | `marine_orbital_relay` | `O` |
-| `marine_temp_drop_building` | `Shift+D` |
+| `marine_temp_drop_building` | `D` |
 | `marine_thermo_generator` | `T` |
 | `marine_bolter_turret` | `H` |
 | `marine_machine_cult` | `M` |
 | `marine_mine_field` | `I` |
-| `marine_servitor` | `Shift+S` |
-| `marine_dreadnought` | `Shift+D` |
+| `marine_servitor` | `S` |
+| `marine_dreadnought` | `D` |
 | `marine_dreadnought_hellfire` | `H` |
 | `marine_force_commander` | `F` |
 | `marine_chaplain` | `C` |
 | `marine_grey_knights` | `K` |
 | `marine_land_speeder` | `L` |
 | `marine_librarian` | `L` |
-| `marine_skull_probe` | `Shift+S` |
+| `marine_skull_probe` | `S` |
 | `marine_scout` | `M` |
-| `marine_apothecary` | `Shift+A` |
-| `marine_assault_marine` | `Shift+A` |
-| `marine_sergeant` | `Shift+S` |
-| `marine_space_marine` | `Shift+S` |
+| `marine_apothecary` | `A` |
+| `marine_assault_marine` | `A` |
+| `marine_sergeant` | `S` |
+| `marine_space_marine` | `S` |
 | `marine_terminator` | `T` |
 | `marine_assault_terminator` | `R` |
 | `marine_land_raider` | `R` |
 | `marine_predator` | `P` |
 | `marine_rhino` | `T` |
-| `marine_whirlwind` | `Shift+W` |
+| `marine_whirlwind` | `W` |
 | `marine_techmarine` | `T` |
 | `marine_tempest` | `E` |
 | `marine_assault_cannon` | `C` |
@@ -279,11 +279,11 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `marine_heavy_flamer` | `F` |
 | `marine_heavy_bolter` | `H` |
 | `marine_lascannon_1` | `L` |
-| `marine_lascannon_2` | `Shift+S` |
-| `marine_lascannon_twin` | `Shift+W` |
+| `marine_lascannon_2` | `S` |
+| `marine_lascannon_twin` | `W` |
 | `marine_missile_launcher` | `M` |
 | `marine_plasma_gun` | `P` |
-| `marine_sniper_rifle` | `Shift+S` |
+| `marine_sniper_rifle` | `S` |
 | `marine_missile_launcher_turret` | `U` |
 | `marine_power_halberd` | `P` |
 | `marine_missile_frag` | `F` |
@@ -292,16 +292,16 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `marine_accuracy_research_2` | `T` |
 | `marine_force_commander_research_1` | `F` |
 | `marine_force_commander_research_2` | `F` |
-| `marine_daemon_hammer_research` | `Shift+D` |
+| `marine_daemon_hammer_research` | `D` |
 | `marine_frag_grenade_research` | `G` |
 | `marine_health_research_1` | `B` |
 | `marine_health_research_2` | `B` |
 | `marine_commander_health_research_1` | `P` |
 | `marine_commander_health_research_2` | `P` |
-| `marine_librarian_research_1` | `Shift+W` |
+| `marine_librarian_research_1` | `W` |
 | `marine_librarian_research_2` | `K` |
 | `marine_librarian_research_2_w40k` | `K` |
-| `marine_max_weapons_research` | `Shift+D` |
+| `marine_max_weapons_research` | `D` |
 | `marine_melta_bomb_research` | `M` |
 | `marine_power_research_1` | `U` |
 | `marine_power_research_2` | `U` |
@@ -309,7 +309,7 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `marine_requisition_research_2` | `E` |
 | `marine_scout_infiltration_research` | `O` |
 | `marine_sniper_rifle_research` | `T` |
-| `marine_smoke_launcher_research` | `Shift+S` |
+| `marine_smoke_launcher_research` | `S` |
 | `marine_squad_cap_research` | `I` |
 | `marine_vehicle_cap_research` | `V` |
 | `marine__melee_research_1` | `P` |
@@ -318,7 +318,7 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `marine_personalteleporter_research` | `P` |
 | `marine_heavy_armor_deployment` | `U` |
 | `marine_furious_charge_research` | `F` |
-| `marine_power_swords_research` | `Shift+W` |
+| `marine_power_swords_research` | `W` |
 | `marine_skull_probe_infiltration_research` | `P` |
 | `marine_hq_addon_1` | `U` |
 | `marine_hq_addon_2` | `U` |
@@ -326,17 +326,17 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `marine_listening_post_2` | `U` |
 | `marine_turret_addon` | `U` |
 | `marine_battlecry` | `B` |
-| `marine_demoralize` | `Shift+D` |
+| `marine_demoralize` | `D` |
 | `marine_frag_grenades` | `G` |
 | `marine_machine_spirit` | `M` |
 | `marine_melta_bombs` | `M` |
 | `marine_orbital_bombardment` | `O` |
 | `marine_rally` | `Y` |
-| `marine_sabotage` | `Shift+S` |
+| `marine_sabotage` | `S` |
 | `marine_smite` | `E` |
-| `marine_smoke_launchers` | `Shift+S` |
+| `marine_smoke_launchers` | `S` |
 | `marine_weaken_resolve` | `K` |
-| `marine_word_of_emperer` | `Shift+W` |
+| `marine_word_of_emperer` | `W` |
 | `marine_inquisition` | `I` |
 | `marine_blessing_of_the_omnissiah` | `B` |
 
@@ -344,8 +344,8 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 
 | Action | Key |
 |---|---|
-| `chaos_hq` | `Shift+D` |
-| `chaos_sacrificial_circle` | `Shift+S` |
+| `chaos_hq` | `D` |
+| `chaos_sacrificial_circle` | `S` |
 | `chaos_armoury` | `R` |
 | `chaos_temple` | `E` |
 | `chaos_generator` | `P` |
@@ -357,8 +357,8 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `chaos_mine_field` | `I` |
 | `chaos_bloodthirster` | `B` |
 | `chaos_cultist` | `C` |
-| `chaos_daemon_prince` | `Shift+D` |
-| `chaos_defiler` | `Shift+D` |
+| `chaos_daemon_prince` | `D` |
+| `chaos_defiler` | `D` |
 | `chaos_horrors` | `H` |
 | `chaos_lord` | `L` |
 | `chaos_marines` | `C` |
@@ -369,7 +369,7 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `chaos_aspiring_champion` | `C` |
 | `chaos_rhino` | `R` |
 | `chaos_heretic` | `H` |
-| `chaos_sorcerer` | `Shift+S` |
+| `chaos_sorcerer` | `S` |
 | `chaos_khorne_berserker` | `K` |
 | `chaos_dreadnought` | `E` |
 | `chaos_hell_talon` | `H` |
@@ -379,15 +379,15 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `chaos_heavy_bolter` | `H` |
 | `chaos_lascannon_1` | `L` |
 | `chaos_lascannon_2` | `L` |
-| `chaos_lascannon_twin` | `Shift+W` |
+| `chaos_lascannon_twin` | `W` |
 | `chaos_missile_launcher` | `M` |
 | `chaos_plasma_gun` | `P` |
 | `chaos_missile_launcher_turret` | `U` |
 | `chaos_multi_melta` | `M` |
 | `chaos_purge_the_weak` | `G` |
 | `chaos_ranged_research_1` | `R` |
-| `chaos_cultist_sight_research` | `Shift+S` |
-| `chaos_lord_research_1` | `Shift+W` |
+| `chaos_cultist_sight_research` | `S` |
+| `chaos_lord_research_1` | `W` |
 | `chaos_lord_research_2` | `C` |
 | `chaos_frag_grenade_research` | `F` |
 | `chaos_health_research_1` | `H` |
@@ -396,14 +396,14 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `chaos_commander_health_research_2` | `R` |
 | `chaos_sorcerer_research_1` | `I` |
 | `chaos_sorcerer_research_2` | `I` |
-| `chaos_max_weapons_research` | `Shift+D` |
+| `chaos_max_weapons_research` | `D` |
 | `chaos_power_research_1` | `U` |
 | `chaos_power_research_2` | `U` |
 | `chaos_requisition_research_1` | `E` |
 | `chaos_requisition_research_2` | `E` |
 | `chaos_infiltration_research` | `I` |
 | `chaos_marine_infiltration_research` | `M` |
-| `chaos_smoke_launcher_research` | `Shift+S` |
+| `chaos_smoke_launcher_research` | `S` |
 | `chaos_squad_cap_research` | `I` |
 | `chaos_vehicle_cap_research` | `V` |
 | `chaos_champion_melee_research_1` | `P` |
@@ -415,13 +415,13 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `chaos_accuracy_upgrade_research_2` | `G` |
 | `chaos_personalteleporters` | `P` |
 | `chaos_possessed_daemon_fire_research` | `F` |
-| `chaos_possessed_daemon_flight_research` | `Shift+A` |
+| `chaos_possessed_daemon_flight_research` | `A` |
 | `chaos_possessed_daemon_mutation_research` | `M` |
 | `chaos_possessed_daemon_talons_research` | `T` |
 | `chaos_projectiles` | `U` |
 | `chaos_rage_research` | `R` |
 | `chaos_bloodthirster_research` | `B` |
-| `chaos_daemon_prince_research` | `Shift+D` |
+| `chaos_daemon_prince_research` | `D` |
 | `chaos_hq_addon_1` | `U` |
 | `chaos_hq_addon_2` | `U` |
 | `chaos_listening_post_1` | `U` |
@@ -429,14 +429,14 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `chaos_turret_addon` | `U` |
 | `chaos_chains` | `C` |
 | `chaos_corruption` | `O` |
-| `chaos_daemon_strength` | `Shift+D` |
+| `chaos_daemon_strength` | `D` |
 | `chaos_daemon_roar` | `R` |
-| `chaos_doom_bolt` | `Shift+D` |
+| `chaos_doom_bolt` | `D` |
 | `chaos_force_labor` | `F` |
 | `chaos_frag_grenades` | `G` |
 | `chaos_furious_rage` | `B` |
-| `chaos_smoke_launchers` | `Shift+S` |
-| `chaos_speed_fiends` | `Shift+S` |
+| `chaos_smoke_launchers` | `S` |
+| `chaos_speed_fiends` | `S` |
 | `chaos_tainted_auspex` | `N` |
 | `chaos_rage` | `R` |
 | `chaos_blood_rage` | `B` |
@@ -446,10 +446,10 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 
 | Action | Key |
 |---|---|
-| `ork_hq` | `Shift+S` |
-| `ork_waagh_banner` | `Shift+W` |
+| `ork_hq` | `S` |
+| `ork_waagh_banner` | `W` |
 | `ork_pile_o_guns` | `P` |
-| `ork_boy_hut` | `Shift+D` |
+| `ork_boy_hut` | `D` |
 | `ork_generator` | `G` |
 | `ork_listening_post` | `L` |
 | `ork_big_generator` | `B` |
@@ -458,7 +458,7 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `ork_flash_gitz` | `G` |
 | `ork_nobs` | `Q` |
 | `ork_shoota_boyz` | `H` |
-| `ork_slugga_boyz` | `Shift+S` |
+| `ork_slugga_boyz` | `S` |
 | `ork_stormboyz` | `R` |
 | `ork_tankbustas` | `T` |
 | `ork_grots` | `G` |
@@ -466,23 +466,23 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `ork_bad_dok` | `B` |
 | `ork_mek_boy` | `B` |
 | `ork_nob_leader` | `L` |
-| `ork_warboss` | `Shift+W` |
+| `ork_warboss` | `W` |
 | `ork_looted_tank` | `L` |
-| `ork_squiggoth` | `Shift+S` |
+| `ork_squiggoth` | `S` |
 | `ork_trukk` | `T` |
-| `ork_wartrak` | `Shift+W` |
+| `ork_wartrak` | `W` |
 | `ork_armored_nob` | `M` |
 | `ork_gun_wagon` | `G` |
 | `ork_fighta_bomma` | `F` |
-| `ork_big_shoota` | `Shift+S` |
-| `ork_kustom_shoota` | `Shift+S` |
+| `ork_big_shoota` | `S` |
+| `ork_kustom_shoota` | `S` |
 | `ork_bomb_chucka` | `C` |
 | `ork_burna` | `B` |
 | `ork_mega_blasta` | `M` |
 | `ork_power_klaw` | `K` |
 | `ork_rokkit_launcha` | `K` |
-| `ork_rokkit_launcha_twin` | `Shift+W` |
-| `ork_shoota` | `Shift+S` |
+| `ork_rokkit_launcha_twin` | `W` |
+| `ork_shoota` | `S` |
 | `ork_zzzap_gun` | `P` |
 | `ork_big_squad_research` | `B` |
 | `ork_big_shoota_research` | `L` |
@@ -494,24 +494,24 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `ork_mekboy_ranged_research` | `R` |
 | `ork_morechoppy_research_1` | `C` |
 | `ork_morechoppy_research_2` | `C` |
-| `ork_moredakka_research_1` | `Shift+D` |
-| `ork_moredakka_research_2` | `Shift+D` |
-| `ork_moreshooty_research_1` | `Shift+S` |
-| `ork_moreshooty_research_2` | `Shift+S` |
+| `ork_moredakka_research_1` | `D` |
+| `ork_moredakka_research_2` | `D` |
+| `ork_moreshooty_research_1` | `S` |
+| `ork_moreshooty_research_2` | `S` |
 | `ork_powerclaw_research` | `O` |
 | `ork_rokkit_research` | `B` |
 | `ork_tougherorks_research_1` | `T` |
 | `ork_tougherorks_research_2` | `T` |
-| `ork_warboss_ranged_research` | `Shift+W` |
+| `ork_warboss_ranged_research` | `W` |
 | `ork_tougherbosses_research_1` | `G` |
 | `ork_tougherbosses_research_2` | `G` |
 | `ork_kustom_force_field_research` | `F` |
-| `ork_tankbustin_kit_research` | `Shift+A` |
+| `ork_tankbustin_kit_research` | `A` |
 | `ork_kustom_tellyporta_research` | `L` |
 | `ork_eavy_armor_boyz_research` | `V` |
 | `ork_speed_boost_research` | `H` |
 | `ork_speed_boost_stormboyz_research` | `O` |
-| `ork_waaaaagh_research` | `Shift+W` |
+| `ork_waaaaagh_research` | `W` |
 | `ork_research_stikk_bombs` | `K` |
 | `ork_power_research_1` | `U` |
 | `ork_power_research_2` | `U` |
@@ -532,14 +532,14 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `ork_fightabomba_strafe` | `F` |
 | `ork_fightin_juice` | `F` |
 | `ork_gimme_boyz_mek` | `M` |
-| `ork_gimme_boyz_warboss` | `Shift+W` |
+| `ork_gimme_boyz_warboss` | `W` |
 | `ork_pop_growth` | `P` |
-| `ork_power_of_waagh` | `Shift+W` |
+| `ork_power_of_waagh` | `W` |
 | `ork_stikkbombs` | `O` |
 | `ork_tankbusta_bombs` | `B` |
 | `ork_superstik_bomb` | `M` |
 | `ork_turbo_boost` | `B` |
-| `ork_waaaaagh` | `Shift+A` |
+| `ork_waaaaagh` | `A` |
 | `ork_tank_zzappa` | `P` |
 | `ork_power_surge` | `P` |
 
@@ -548,62 +548,62 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | Action | Key |
 |---|---|
 | `eldar_hq` | `Y` |
-| `eldar_aspect_portal` | `Shift+A` |
+| `eldar_aspect_portal` | `A` |
 | `eldar_soul_shrine` | `R` |
-| `eldar_webway_gate` | `Shift+W` |
+| `eldar_webway_gate` | `W` |
 | `eldar_generator` | `P` |
 | `eldar_listening_post` | `L` |
 | `eldar_advanced_generator` | `T` |
 | `eldar_support_platform` | `F` |
-| `eldar_support_portal` | `Shift+S` |
+| `eldar_support_portal` | `S` |
 | `eldar_mine_field` | `I` |
 | `eldar_bonesinger` | `B` |
-| `eldar_grav_platform_laser` | `Shift+S` |
+| `eldar_grav_platform_laser` | `S` |
 | `eldar_grav_platform_brightlance` | `B` |
-| `eldar_avatar` | `Shift+A` |
+| `eldar_avatar` | `A` |
 | `eldar_farseer` | `F` |
 | `eldar_harlequin` | `H` |
-| `eldar_warlock` | `Shift+W` |
-| `eldar_warlock_seer` | `Shift+S` |
+| `eldar_warlock` | `W` |
+| `eldar_warlock_seer` | `S` |
 | `eldar_falcon_grav_tank` | `T` |
 | `eldar_fire_prism` | `P` |
 | `eldar_vyper` | `V` |
-| `eldar_wraithlord` | `Shift+W` |
+| `eldar_wraithlord` | `W` |
 | `eldar_banshee` | `H` |
 | `eldar_banshee_exarch` | `H` |
-| `eldar_dark_reapers` | `Shift+D` |
-| `eldar_dark_reaper_exarch` | `Shift+D` |
+| `eldar_dark_reapers` | `D` |
+| `eldar_dark_reaper_exarch` | `D` |
 | `eldar_guardians` | `G` |
 | `eldar_rangers` | `R` |
-| `eldar_warp_spiders` | `Shift+W` |
-| `eldar_warp_spiders_exarch` | `Shift+W` |
+| `eldar_warp_spiders` | `W` |
+| `eldar_warp_spiders_exarch` | `W` |
 | `eldar_fire_dragon` | `G` |
 | `eldar_wraithguard` | `G` |
 | `eldar_nightwing` | `N` |
 | `eldar_bright_lance` | `B` |
 | `eldar_dcannon` | `C` |
 | `eldar_missile_launcher` | `M` |
-| `eldar_scatter_laser` | `Shift+S` |
-| `eldar_shuriken_cannon` | `Shift+S` |
-| `eldar_starcannon` | `Shift+S` |
-| `eldar_witchblade_seercouncil` | `Shift+W` |
-| `eldar_ability_research` | `Shift+A` |
-| `eldar_accuracy_research` | `Shift+A` |
+| `eldar_scatter_laser` | `S` |
+| `eldar_shuriken_cannon` | `S` |
+| `eldar_starcannon` | `S` |
+| `eldar_witchblade_seercouncil` | `W` |
+| `eldar_ability_research` | `A` |
+| `eldar_accuracy_research` | `A` |
 | `eldar_exarch_ability_research_1` | `C` |
 | `eldar_exarch_ability_research_2` | `O` |
 | `eldar_farseer_ability_research_1` | `F` |
-| `eldar_farseer_ability_research_2` | `Shift+S` |
-| `eldar_farseer_ability_research_3` | `Shift+S` |
+| `eldar_farseer_ability_research_2` | `S` |
+| `eldar_farseer_ability_research_3` | `S` |
 | `eldar_health_research` | `H` |
 | `eldar_vehicle_ability_research` | `H` |
 | `eldar_warlock_ability_research_1` | `C` |
 | `eldar_warlock_ability_research_2` | `E` |
-| `eldar_warlock_ability_research_3` | `Shift+W` |
-| `eldar_shroud_ability_research` | `Shift+D` |
+| `eldar_warlock_ability_research_3` | `W` |
+| `eldar_shroud_ability_research` | `D` |
 | `eldar_fleet_of_foot_research` | `F` |
-| `eldar_bonesinger_ability_research_3` | `Shift+W` |
+| `eldar_bonesinger_ability_research_3` | `W` |
 | `eldar_ranger_infiltration_research` | `M` |
-| `eldar_haywire_grenade_research` | `Shift+S` |
+| `eldar_haywire_grenade_research` | `S` |
 | `eldar_webway_gate_relocation_research` | `R` |
 | `eldar_plasma_grenade_research` | `P` |
 | `eldar_bonesinger_ability_research_1` | `T` |
@@ -616,17 +616,17 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `eldar_research_farseerhealth_2` | `H` |
 | `eldar_research_infantryaccuracy_1` | `G` |
 | `eldar_research_infantryaccuracy_2` | `G` |
-| `eldar_researchinfantryhealth_1` | `Shift+A` |
-| `eldar_researchinfantryhealth_2` | `Shift+A` |
+| `eldar_researchinfantryhealth_1` | `A` |
+| `eldar_researchinfantryhealth_2` | `A` |
 | `eldar_annihilate_the_enemy` | `U` |
 | `eldar_nightwing_regen_research` | `R` |
 | `eldar_banshee_aspect_stone` | `H` |
-| `eldar_dark_reaper_aspect_stone` | `Shift+D` |
+| `eldar_dark_reaper_aspect_stone` | `D` |
 | `eldar_fire_prism_aspect_stone` | `F` |
 | `eldar_fire_dragon_aspect_stone` | `G` |
 | `eldar_vyper_aspect_stone` | `V` |
-| `eldar_warp_spider_aspect_stone` | `Shift+W` |
-| `eldar_wraithlord_aspect_stone` | `Shift+W` |
+| `eldar_warp_spider_aspect_stone` | `W` |
+| `eldar_wraithlord_aspect_stone` | `W` |
 | `eldar_support_platform_addon` | `U` |
 | `eldar_listening_post_1` | `U` |
 | `eldar_listening_post_2` | `U` |
@@ -643,11 +643,11 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `eldar_guide` | `G` |
 | `eldar_mind_war` | `M` |
 | `eldar_plasma_grenades` | `P` |
-| `eldar_warshout` | `Shift+W` |
-| `eldar_wraithtomb` | `Shift+W` |
-| `eldar_shroud_ability` | `Shift+D` |
+| `eldar_warshout` | `W` |
+| `eldar_wraithtomb` | `W` |
+| `eldar_shroud_ability` | `D` |
 | `eldar_harlequin_kiss` | `K` |
-| `eldar_soulstone` | `Shift+S` |
+| `eldar_soulstone` | `S` |
 
 ## Imperial Guard
 
@@ -679,16 +679,16 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `guard_basilisk` | `B` |
 | `guard_sentinel` | `E` |
 | `guard_hellhound` | `H` |
-| `guard_assassin` | `Shift+A` |
+| `guard_assassin` | `A` |
 | `guard_baneblade` | `B` |
 | `guard_leman_russ` | `L` |
 | `guard_chimera` | `C` |
-| `guard_sergeant` | `Shift+S` |
-| `guard_demolisher` | `Shift+D` |
+| `guard_sergeant` | `S` |
+| `guard_demolisher` | `D` |
 | `guard_marauder` | `M` |
 | `guard_grenade_launcher` | `N` |
 | `guard_plasma_gun` | `P` |
-| `guard_lasgun_heavy_weapons_team` | `Shift+S` |
+| `guard_lasgun_heavy_weapons_team` | `S` |
 | `guard_autocannon_heavy_weapons_team` | `C` |
 | `guard_multi_melta` | `M` |
 | `guard_multi_laser_sentinel` | `M` |
@@ -697,7 +697,7 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `guard_guardsman_morale_2` | `O` |
 | `guard_research_command_squad_size` | `C` |
 | `guard_research_kasrkin_armor` | `K` |
-| `guard_research_kasrkin_speed` | `Shift+S` |
+| `guard_research_kasrkin_speed` | `S` |
 | `guard_upgrade_guardsmen_health` | `H` |
 | `guard_upgrade_guardsmen_range` | `R` |
 | `guard_upgrade_ogryn_melee` | `G` |
@@ -705,24 +705,24 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `guard_upgrade_power_2` | `P` |
 | `guard_upgrade_requisition_1` | `R` |
 | `guard_upgrade_requisition_2` | `R` |
-| `guard_upgrade_weapon_specialization` | `Shift+W` |
+| `guard_upgrade_weapon_specialization` | `W` |
 | `guard_full_scale_war` | `U` |
-| `guard_research_sentinel_armor` | `Shift+S` |
+| `guard_research_sentinel_armor` | `S` |
 | `guard_research_assassin_infiltrate` | `I` |
 | `guard_turret_addon` | `U` |
-| `guard_assassin_assassinate` | `Shift+S` |
+| `guard_assassin_assassinate` | `S` |
 | `guard_commissar_execute` | `E` |
 | `guard_kasrkin_frag_grenades` | `X` |
 | `guard_priest_fanatical` | `F` |
 | `guard_psyker_lighting_arc` | `L` |
-| `guard_psyker_strip_soul` | `Shift+S` |
+| `guard_psyker_strip_soul` | `S` |
 | `guard_strafing_run` | `T` |
 | `guard_let_it_burn` | `B` |
-| `guard_long_range_scanner` | `Shift+S` |
+| `guard_long_range_scanner` | `S` |
 | `guard_curse_of_the_machine` | `C` |
 | `guard_incendiary_bombs` | `I` |
 | `guard_emp_bombs` | `E` |
-| `guard_smoke_bombs` | `Shift+S` |
+| `guard_smoke_bombs` | `S` |
 | `guard_krak_bombs` | `K` |
 
 ## Dark Eldar
@@ -732,18 +732,18 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `dark_eldar_hq` | `F` |
 | `dark_eldar_haemonculus_laboratory` | `H` |
 | `dark_eldar_hall_of_blood` | `B` |
-| `dark_eldar_dark_foundry` | `Shift+D` |
+| `dark_eldar_dark_foundry` | `D` |
 | `dark_eldar_generator` | `P` |
 | `dark_eldar_listening_post` | `L` |
 | `dark_eldar_slave_caravel` | `V` |
 | `dark_eldar_soul_cage` | `G` |
 | `dark_eldar_thermo_generator` | `T` |
-| `dark_eldar_wych_cult_arena` | `Shift+W` |
+| `dark_eldar_wych_cult_arena` | `W` |
 | `dark_eldar_slave` | `V` |
 | `dark_eldar_mandrake` | `M` |
-| `dark_eldar_archon` | `Shift+A` |
+| `dark_eldar_archon` | `A` |
 | `dark_eldar_incubus` | `I` |
-| `dark_eldar_warrior` | `Shift+W` |
+| `dark_eldar_warrior` | `W` |
 | `dark_eldar_hellion` | `H` |
 | `dark_eldar_scourge` | `G` |
 | `dark_eldar_warp_beast` | `B` |
@@ -753,13 +753,13 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `dark_eldar_raider` | `R` |
 | `dark_eldar_talos` | `T` |
 | `dark_eldar_ravager` | `G` |
-| `dark_eldar_dais` | `Shift+D` |
+| `dark_eldar_dais` | `D` |
 | `dark_eldar_squad_leader` | `L` |
-| `dark_eldar_murdered_slave` | `Shift+D` |
-| `dark_eldar_raven` | `Shift+A` |
-| `dark_eldar_darklance_raider` | `Shift+D` |
-| `dark_eldar_darklance_scourge` | `Shift+D` |
-| `dark_eldar_disintegrator_ravager` | `Shift+D` |
+| `dark_eldar_murdered_slave` | `D` |
+| `dark_eldar_raven` | `A` |
+| `dark_eldar_darklance_raider` | `D` |
+| `dark_eldar_darklance_scourge` | `D` |
+| `dark_eldar_disintegrator_ravager` | `D` |
 | `dark_eldar_research_crucible` | `R` |
 | `dark_eldar_research_gruesome_display` | `G` |
 | `dark_eldar_research_infiltration_mandrake` | `I` |
@@ -771,9 +771,9 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `dark_eldar_research_soul_destruction` | `U` |
 | `dark_eldar_research_talisman_of_petrification` | `E` |
 | `dark_eldar_research_barbed_walls` | `B` |
-| `dark_eldar_research_daemonic_touch` | `Shift+D` |
+| `dark_eldar_research_daemonic_touch` | `D` |
 | `dark_eldar_research_range_increase` | `R` |
-| `dark_eldar_research_wildfire` | `Shift+W` |
+| `dark_eldar_research_wildfire` | `W` |
 | `dark_eldar_research_stinger` | `G` |
 | `dark_eldar_research_reaver_targeting` | `T` |
 | `dark_eldar_upgrade_power_1` | `P` |
@@ -789,9 +789,9 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `dark_eldar_upgrade_retinue` | `I` |
 | `dark_eldar_upgrade_infantry_health` | `E` |
 | `dark_eldar_animus_vitae` | `N` |
-| `dark_eldar_combat_drugs` | `Shift+D` |
+| `dark_eldar_combat_drugs` | `D` |
 | `dark_eldar_crucible` | `R` |
-| `dark_eldar_darklance_sweep` | `Shift+D` |
+| `dark_eldar_darklance_sweep` | `D` |
 | `dark_eldar_execute_slave` | `E` |
 | `dark_eldar_gruesome_display` | `G` |
 | `dark_eldar_talisman_of_petrification` | `E` |
@@ -801,13 +801,13 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `dark_eldar_tame_warp_beasts` | `T` |
 | `dark_eldar_terrorfex` | `F` |
 | `dark_eldar_torture_amp` | `M` |
-| `dark_eldar_wildfire` | `Shift+W` |
+| `dark_eldar_wildfire` | `W` |
 | `dark_eldar_soul_shock` | `U` |
 | `dark_eldar_tracking_device` | `T` |
 | `dark_eldar_soul_destruction` | `U` |
 | `dark_eldar_haywire_bombs` | `H` |
 | `dark_eldar_piercing_vision` | `X` |
-| `dark_eldar_screams_of_the_damned` | `Shift+S` |
+| `dark_eldar_screams_of_the_damned` | `S` |
 | `dark_eldar_rend_soul` | `O` |
 | `dark_eldar_corrosion` | `C` |
 | `dark_eldar_war_frenzy` | `F` |
@@ -821,7 +821,7 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 |---|---|
 | `sisters_hq` | `E` |
 | `sisters_infantry` | `C` |
-| `sisters_sanctuary` | `Shift+S` |
+| `sisters_sanctuary` | `S` |
 | `sisters_generator` | `P` |
 | `sisters_thermo_generator` | `T` |
 | `sisters_listening_post` | `L` |
@@ -830,13 +830,13 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `sisters_holy_reliquary` | `R` |
 | `sisters_shrine` | `H` |
 | `sisters_mines` | `I` |
-| `sisters_servitor` | `Shift+S` |
+| `sisters_servitor` | `S` |
 | `sisters_battle_sister` | `B` |
-| `sisters_seraphim` | `Shift+S` |
+| `sisters_seraphim` | `S` |
 | `sisters_repentia` | `R` |
 | `sisters_celestian` | `E` |
 | `sisters_missionary` | `M` |
-| `sisters_assassin` | `Shift+A` |
+| `sisters_assassin` | `A` |
 | `sisters_canoness` | `C` |
 | `sisters_confessor` | `C` |
 | `sisters_celestian_imagifer` | `I` |
@@ -844,7 +844,7 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `sisters_veteran_superior` | `E` |
 | `sisters_veteran_superior_celestian` | `E` |
 | `sisters_veteran_superior_seraphim` | `E` |
-| `sisters_living_saint` | `Shift+S` |
+| `sisters_living_saint` | `S` |
 | `sisters_exorcist_tank` | `E` |
 | `sisters_immolator_tank` | `I` |
 | `sisters_penitent_engine` | `P` |
@@ -861,7 +861,7 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `sisters_research_phosphor_grenades` | `G` |
 | `sisters_research_krak_grenades` | `K` |
 | `sisters_research_laud_hailer` | `H` |
-| `sisters_research_max_weapons` | `Shift+D` |
+| `sisters_research_max_weapons` | `D` |
 | `sisters_research_zealot_charge` | `Z` |
 | `sisters_research_health` | `C` |
 | `sisters_research_ranged_damage` | `Y` |
@@ -874,8 +874,8 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `sisters_research_commander_health_1` | `P` |
 | `sisters_research_commander_health_2` | `P` |
 | `sisters_research_ascension` | `C` |
-| `sisters_research_battle_standard` | `Shift+S` |
-| `sisters_research_divine_pronouncement` | `Shift+D` |
+| `sisters_research_battle_standard` | `S` |
+| `sisters_research_divine_pronouncement` | `D` |
 | `sisters_research_conflagration` | `C` |
 | `sisters_research_emperors_touch` | `P` |
 | `sisters_research_divine_retribution` | `E` |
@@ -887,28 +887,28 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `sisters_squad_cap` | `I` |
 | `sisters_vehicle_cap` | `V` |
 | `sisters_ascension` | `C` |
-| `sisters_divine_light` | `Shift+D` |
-| `sisters_divine_retribution` | `Shift+D` |
+| `sisters_divine_light` | `D` |
+| `sisters_divine_retribution` | `D` |
 | `sisters_emperors_touch` | `P` |
 | `sisters_holy_passion` | `H` |
 | `sisters_ardent_flame` | `F` |
-| `sisters_battle_standard` | `Shift+S` |
+| `sisters_battle_standard` | `S` |
 | `sisters_lay_hands` | `Y` |
 | `sisters_conflagration` | `C` |
-| `sisters_divine_pronouncement` | `Shift+D` |
+| `sisters_divine_pronouncement` | `D` |
 | `sisters_hk_missiles` | `M` |
 | `sisters_holy_rage` | `R` |
 | `sisters_krak_grenades` | `K` |
 | `sisters_mandate` | `E` |
 | `sisters_phosphor_grenades` | `G` |
 | `sisters_righteous_fervor` | `F` |
-| `sisters_seal_of_purity` | `Shift+S` |
-| `sisters_witch_hammer` | `Shift+W` |
-| `sisters_worship` | `Shift+W` |
+| `sisters_seal_of_purity` | `S` |
+| `sisters_witch_hammer` | `W` |
+| `sisters_worship` | `W` |
 | `sisters_rosarius` | `O` |
 | `sisters_laud_hailer` | `H` |
 | `sisters_angelic_visage` | `G` |
-| `sisters_dismantle` | `Shift+D` |
+| `sisters_dismantle` | `D` |
 
 ## Research For Eldar
 
@@ -952,7 +952,7 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `addon_guard_sentinel_depot` | `E` |
 | `addon_guard_telepathica_temple` | `T` |
 | `addon_guard_vindicare_temple` | `V` |
-| `addon_guard_demolisher_depot` | `Shift+D` |
+| `addon_guard_demolisher_depot` | `D` |
 
 ## Addons For Dark Eldar
 
@@ -962,14 +962,14 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 | `addon_dark_eldar_list_post_2` | `U` |
 | `addon_dark_eldar_piercing_vision` | `I` |
 | `addon_dark_eldar_rend_soul` | `R` |
-| `addon_dark_eldar_sadism` | `Shift+A` |
+| `addon_dark_eldar_sadism` | `A` |
 | `addon_dark_eldar_penumbra` | `P` |
 | `addon_dark_eldar_nights_veil` | `N` |
-| `addon_dark_eldar_screams_of_the_damned` | `Shift+S` |
+| `addon_dark_eldar_screams_of_the_damned` | `S` |
 | `addon_dark_eldar_sudden_strike` | `U` |
 | `addon_dark_eldar_slave_graveyard` | `T` |
 | `addon_dark_eldar_hq_upgrade` | `U` |
-| `addon_dark_eldar_list_post_dark_lance` | `Shift+D` |
+| `addon_dark_eldar_list_post_dark_lance` | `D` |
 
 ## Addons For Sisters
 
@@ -992,5 +992,5 @@ Auto-generated from `mod/keybinds/presets/wasd-camera/Engine/defprofile/keydefau
 
 | Action | Key |
 |---|---|
-| `attack` | `Shift+A` |
+| `attack` | `A` |
 
