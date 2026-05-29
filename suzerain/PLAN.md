@@ -15,9 +15,14 @@
 
 - IL2CPP — there is **no `Managed/*.dll`** to patch in C#. Code mods require
   BepInEx-IL2CPP (uses Il2CppInterop), which is a heavier lift.
-- The biggest candidate for in-game text data is:
-  - `defaultlocalgroup_assets_assets_database_entitytextassets.asset_7658ed792f0c4924d06b11829a6c36d1.bundle` — 4.5 MB
-  - Plus story-pack bundles: `storypack_sordland_…`, `storypack_rizia_…`.
+- **All translatable text lives in a single bundle:**
+  `defaultlocalgroup_assets_assets_database_entitytextassets.asset_…bundle`
+  (4.5 MB). Extracted via `scripts/extract_entitytext.py`:
+  - 79 `TextAsset` objects, each wrapping a JSON `items[]` array.
+  - **18,373 translatable strings, ~667K words.**
+  - Storypack bundles (`storypack_sordland`, `storypack_rizia`) contain
+    only 3D map assets (meshes/materials/textures) — no text.
+  - The `…_storypacks_*` bundle holds only sprite icons.
 - Total addressable scene + content payload is on the order of ~700 MB; the
   rest is audio (`.bundle` per OGG track).
 
@@ -43,20 +48,27 @@ features:
 - Backends: Google Translate (free unofficial endpoint or official API), Gemini Flash via REST.
 - Resumable: source unit → glossary apply → backend → review → final state.
 
-### Phase 1 — text extraction
+### Phase 1 — text extraction ✅ DONE
 
-1. Use [AssetRipper](https://github.com/AssetRipper/AssetRipper) or
-   [UnityPy](https://github.com/K0lb3/UnityPy) on
-   `entitytextassets.asset…bundle` to dump the `EntityTextAssets` ScriptableObject as JSON / CSV.
-2. Identify the schema (key, language, text). Suzerain ships multi-language
-   text in-game; locate the existing language enum to know what slot to fill.
-3. Repeat for the `storypack_*` bundles to grab story-specific strings.
+1. ✅ `scripts/extract_entitytext.py` (UnityPy, PEP 723) dumps every
+   object's typetree and, for `TextAsset`, JSON-parses `m_Script` and
+   harvests user-facing string fields into `raw_strings.jsonl`.
+2. ✅ Schema confirmed: 79 TextAssets, each with `items[].{Title,
+   Description, Notes, ...}`. ID format: `<object_index:05d>::<path>`.
+3. ✅ Storypack bundles checked — no text content; nothing to extract.
+4. ✅ `scripts/build_tl_source.py` converts `raw_strings.jsonl` into the
+   `tl` project `source.jsonl` format.
 
-### Phase 2 — translation
+### Phase 2 — translation 🟡 IN PROGRESS
 
-1. Feed extracted strings through `translation-tool` with a curated political /
-   parliamentary / Cold-War-Eastern-European-pastiche glossary.
-2. Review and tag finalised entries.
+1. ✅ Pilot project initialised at `tc-localization/translation/` (18,373
+   units, glossary seeded with country/party/office names).
+2. ✅ End-to-end pipeline validated with Google backend (20 sample units;
+   free endpoint rate-limits hard at ~50/run).
+3. ⏳ Production translation pass with Gemini Flash Lite
+   (`GEMINI_API_KEY` required). Cost estimate: ~$2–5 USD for the full corpus.
+4. ⏳ Review pass via `tl review` (or external editor on `state.jsonl`).
+5. ⏳ Expand glossary as recurring terms emerge from review.
 
 ### Phase 3 — repack
 
@@ -103,5 +115,7 @@ suzerain/
 
 ## Blockers
 
-- Translation tool does not exist yet. Cannot start Phase 2 until it does.
-- Need a working sample of an extracted `EntityTextAssets` to confirm schema before committing to extraction approach.
+- For production TL: `GEMINI_API_KEY` must be set in the environment.
+- For Phase 3: need to research how Suzerain's Addressables catalogue
+  validates bundle hashes before committing to bundle-replacement vs
+  runtime-redirect.
