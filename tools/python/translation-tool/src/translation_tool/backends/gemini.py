@@ -31,6 +31,19 @@ _BATCH_PROMPT = (
     "Input items (JSON):\n{items}"
 )
 
+_GLOSSARY_PROMPT = (
+    "You are building a bilingual glossary for a narrative video game.{context}"
+    " For each English term below, provide the best {tgt} rendering. Rules:\n"
+    "- Personal names and place names: transliterate consistently (phonetic).\n"
+    "- Factions, titles, institutions, and game concepts: translate by meaning.\n"
+    "- Keep each translation concise (the term only, no explanation).\n"
+    "- Stay consistent with the ESTABLISHED translations below: reuse their"
+    " character roots for related/derived forms (e.g. nationalities,"
+    " possessives, adjectives).\n{known}"
+    "- Return a result for EVERY input id, with the SAME id.\n\n"
+    "Terms (JSON):\n{items}"
+)
+
 
 class GeminiBackend:
     name = "gemini"
@@ -107,5 +120,61 @@ class GeminiBackend:
             txt = rec.get("text")
             if isinstance(idx, int) and 0 <= idx < len(texts) and isinstance(txt, str):
                 result[idx] = txt
+        return result
+
+    def translate_glossary(
+        self, terms: list[str], src: str, tgt: str, context: str = "",
+        known: dict[str, str] | None = None,
+    ) -> list[str]:
+        """Translate a list of glossary terms (proper nouns / concepts).
+
+        `known` is an optional map of already-established term→translation pairs
+        used to keep derived forms consistent. Returns a list aligned to
+        `terms`; failed items stay empty.
+        """
+        items = [{"id": i, "text": t} for i, t in enumerate(terms)]
+        ctx = f" The game is: {context}." if context else ""
+        if known:
+            pairs = "\n".join(f"  {s} = {t}" for s, t in known.items())
+            known_block = f"Established translations:\n{pairs}\n"
+        else:
+            known_block = ""
+        prompt = _GLOSSARY_PROMPT.format(
+            tgt=tgt, context=ctx, known=known_block,
+            items=json.dumps(items, ensure_ascii=False),
+        )
+        schema = {
+            "type": "ARRAY",
+            "items": {
+                "type": "OBJECT",
+                "properties": {
+                    "id": {"type": "INTEGER"},
+                    "text": {"type": "STRING"},
+                },
+                "required": ["id", "text"],
+            },
+        }
+        out_text = self._generate(
+            prompt,
+            {
+                "temperature": 0.1,
+                "responseMimeType": "application/json",
+                "responseSchema": schema,
+            },
+        )
+        result = [""] * len(terms)
+        try:
+            parsed = json.loads(out_text)
+        except json.JSONDecodeError:
+            return result
+        if not isinstance(parsed, list):
+            return result
+        for rec in parsed:
+            if not isinstance(rec, dict):
+                continue
+            idx = rec.get("id")
+            txt = rec.get("text")
+            if isinstance(idx, int) and 0 <= idx < len(terms) and isinstance(txt, str):
+                result[idx] = txt.strip()
         return result
 

@@ -11,10 +11,20 @@ from rich.console import Console
 from rich.panel import Panel
 
 from .backends import get_backend
-from .glossary import load_glossary, protect, restore
+from .glossary import (
+    GlossaryRule,
+    detect_terms,
+    load_glossary,
+    protect,
+    restore,
+    split_glossary,
+    write_glossary,
+)
 from .project import Project, init_project
 
 app = typer.Typer(add_completion=False, no_args_is_help=True, help=__doc__)
+glossary_app = typer.Typer(add_completion=False, no_args_is_help=True, help="Build/manage the glossary.")
+app.add_typer(glossary_app, name="glossary")
 console = Console()
 
 
@@ -30,6 +40,93 @@ def init(
     """Create a project from a source file."""
     p = init_project(project_dir, source, src_lang, tgt_lang, backend, model)
     console.print(f"[green]Initialised[/] project at {p.root} ({len(p.units)} units)")
+
+
+@glossary_app.command("build")
+def glossary_build(
+    project_dir: Path = typer.Argument(..., exists=True, file_okay=False),
+    min_count: int = typer.Option(5, "--min-count", help="Minimum corpus frequency for a candidate term"),
+    max_terms: int = typer.Option(400, "--max-terms", help="Cap on number of auto terms"),
+    backend: Optional[str] = typer.Option(None, "--backend", help="Override project backend"),
+    model: Optional[str] = typer.Option(None, "--model"),
+    context: str = typer.Option("", "--context", help="Short game description to guide term translation"),
+    batch_size: int = typer.Option(50, "--batch-size", help="Terms per request when the backend supports batching"),
+    rebuild: bool = typer.Option(False, "--rebuild", help="Re-translate all auto terms (ignore cached auto block)"),
+    dry_run: bool = typer.Option(False, "--dry-run", help="Only detect & list candidate terms; no API calls or writes"),
+) -> None:
+    """Discover recurring proper nouns/named entities and translate them once.
+
+    Detected terms are merged into glossary.tsv (manual entries preserved and
+    given precedence). Run this before `translate` so names stay consistent.
+    """
+    p = Project.load(project_dir)
+    texts = [u.text for u in p.units]
+    candidates = detect_terms(texts, min_count=min_count, max_terms=max_terms)
+    console.print(f"[cyan]Detected {len(candidates)} candidate terms[/] (min_count={min_count})")
+
+    manual, prev_auto = split_glossary(p.glossary_tsv)
+    manual_keys = {r.src for r in manual}
+    prev_auto_map = {} if rebuild else {r.src: r.tgt for r in prev_auto}
+
+    if dry_run:
+        for term, count in candidates[:60]:
+            mark = " (manual)" if term in manual_keys else ""
+            console.print(f"  {count:>5}  {term}{mark}")
+        if len(candidates) > 60:
+            console.print(f"  ... and {len(candidates) - 60} more")
+        return
+
+    # Terms needing translation = detected, not already manual, not already auto-translated.
+    to_translate = [t for t, _ in candidates if t not in manual_keys and t not in prev_auto_map]
+    console.print(f"[cyan]{len(to_translate)} new terms to translate[/] "
+                  f"({len(candidates) - len(to_translate)} already known)")
+
+    cfg_backend = backend or p.config.backend
+    cfg_model = model or p.config.model
+    translations: dict[str, str] = dict(prev_auto_map)
+
+    if to_translate:
+        if cfg_backend == "manual":
+            raise typer.BadParameter("Cannot translate terms with the 'manual' backend.")
+        be = get_backend(cfg_backend, cfg_model)
+        done = 0
+        if hasattr(be, "translate_glossary") and batch_size > 1:
+            for start in range(0, len(to_translate), batch_size):
+                chunk = to_translate[start : start + batch_size]
+                # Anchor consistency on manual terms + everything translated so far.
+                known = {**{r.src: r.tgt for r in manual}, **translations}
+                try:
+                    results = be.translate_glossary(  # type: ignore[attr-defined]
+                        chunk, p.config.src_lang, p.config.tgt_lang, context, known
+                    )
+                except Exception as e:  # noqa: BLE001
+                    console.print(f"[red]Batch failed[/] at offset {start}: {e}")
+                    break
+                for term, tgt in zip(chunk, results):
+                    if tgt:
+                        translations[term] = tgt
+                    done += 1
+                console.print(f"  ... {min(start + batch_size, len(to_translate))}/{len(to_translate)} terms")
+        else:
+            for term in to_translate:
+                try:
+                    translations[term] = be.translate(term, p.config.src_lang, p.config.tgt_lang)
+                except Exception as e:  # noqa: BLE001
+                    console.print(f"[red]Failed[/] term={term!r}: {e}")
+                    break
+                done += 1
+
+    # Build the auto block in detection rank order, only for translated terms.
+    auto_rules = [
+        GlossaryRule(src=term, tgt=translations[term])
+        for term, _ in candidates
+        if term in translations and translations[term]
+    ]
+    write_glossary(p.glossary_tsv, manual, auto_rules)
+    console.print(
+        f"[green]Wrote[/] {p.glossary_tsv} "
+        f"({len(manual)} manual + {len(auto_rules)} auto terms)"
+    )
 
 
 @app.command()
