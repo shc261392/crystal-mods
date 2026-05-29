@@ -1,38 +1,85 @@
 # Suzerain — Traditional Chinese (zh-TW) Localisation
 
-> **Status:** draft / pre-release. Pipeline scaffolding only.
+> **Status:** machine-translation complete; repack pipeline ready for in-game testing.
 
 Community Traditional Chinese localisation for [Suzerain](https://store.steampowered.com/app/1207650/).
 
 ## Pipeline
 
 ```
-EntityTextAssets bundle
-        │  scripts/extract_entitytext.py   (UnityPy)
+EntityTextAssets bundle  (Unity 6 Addressables, IL2CPP)
+        │  scripts/extract_entitytext.py   (UnityPy)   →  make extract
         ▼
-extracted/<object>.json  +  raw_strings.jsonl
-        │  tools/python/translation-tool  (tl init/translate/review/export)
+extracted/raw_strings.jsonl  →  translation/source.jsonl   (18,373 units)
+        │  tl glossary build  (corpus-driven term discovery) →  make glossary
+        │  tl translate       (batched Gemini)               →  make translate
         ▼
-translated/zh-TW.jsonl
-        │  scripts/repack_entitytext.py   (UnityPy, future)
+translation/state.jsonl   (per-unit machine / manual / status)
+        │  scripts/repack_entitytext.py   (UnityPy)   →  make build
         ▼
-payload/Suzerain_Data/StreamingAssets/aa/StandaloneWindows64/<patched>.bundle
-        │  deploy.sh / deploy.ps1
+build/<patched>.bundle
+        │  deploy.sh / deploy.ps1   (backs up original first)
         ▼
-Game install (with backup of original bundle)
+Game install  (uninstall.sh / uninstall.ps1 restores the backup)
 ```
 
 See [../PLAN.md](../PLAN.md) for the higher-level design and trade-offs.
 
+## Quick start (dev, from this directory)
+
+```sh
+make help          # list targets
+make extract       # bundle → source.jsonl  (re-run only if the game updates)
+make glossary      # discover + translate recurring terms (needs GEMINI_API_KEY)
+make translate     # full Gemini zh-TW pass (needs GEMINI_API_KEY)
+make status        # show counts
+make build         # repack translations → build/<bundle>
+make deploy        # build + install into the game (Linux/WSL2)
+make uninstall     # restore the latest backup
+```
+
+`GEMINI_API_KEY` is read from the repo-root `.env` (gitignored).
+
 ## Scripts
 
 - `scripts/extract_entitytext.py` — dump every object in the
-  `entitytextassets*.bundle` to JSON for schema inspection. Self-bootstraps
-  via PEP 723 (`uv run --script`).
-- `scripts/repack_entitytext.py` — *(planned)* apply translated strings
-  back into a copy of the bundle.
+  `entitytextassets*.bundle` to JSON and harvest user-facing strings into
+  `raw_strings.jsonl`. Self-bootstraps via PEP 723 (`uv run --script`).
+- `scripts/build_tl_source.py` — convert `raw_strings.jsonl` into the
+  `tl` project `source.jsonl` (ID = `<object_index:05d>::<path>`).
+- `scripts/repack_entitytext.py` — apply translated strings back into a copy
+  of the bundle (path-precise; rewrites each TextAsset's `m_Script` JSON).
 
-## Run extraction
+## Glossary
+
+`translation/glossary.tsv` has two sections:
+
+- **Manual** entries at the top take precedence and are never overwritten.
+- An auto-generated block (delimited by markers) produced by
+  `tl glossary build`, which detects recurring proper nouns / named entities
+  from the corpus and translates them once with consistency anchoring (so
+  *Sordland → 蘇德蘭*, *Sordish → 蘇德蘭人*, *Rizian → 里齊亞人* stay aligned).
+
+Re-run `make glossary` after the game adds content; use
+`tl glossary build … --rebuild` to re-translate the whole auto block.
+
+## Deploy / uninstall
+
+Both deploy scripts:
+
+1. Auto-detect the Steam install (or accept `--game-dir` / `-GameDir`).
+2. Back up the original bundle to `backup/<stamp>/` (with an `origin.txt`).
+3. Copy the patched bundle into the Addressables folder.
+
+`uninstall` restores the most recent backup (or `--backup <stamp>`).
+
+> **Note on Addressables CRC:** Suzerain (Unity 6) uses a binary catalogue
+> (`catalog.bin`). Local bundles generally load without CRC verification, but
+> if patched text reverts to English or renders blank in-game, the catalogue
+> may be enforcing a hash — run `uninstall` and report it so we can switch to
+> the BepInEx-IL2CPP runtime-redirect approach (Option B in the PLAN).
+
+## Run extraction manually
 
 ```sh
 uv run --script suzerain/tc-localization/scripts/extract_entitytext.py \
