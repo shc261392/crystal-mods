@@ -164,7 +164,10 @@ def main(
             objects_touched += 1
 
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_bytes(env.file.save())
+    # Match the original bundle's LZ4 block compression. Unity Addressables can
+    # silently refuse to mount a bundle saved with a different format, so we do
+    # NOT leave it uncompressed (the UnityPy default).
+    out.write_bytes(env.file.save(packer="lz4"))
     console.print(
         f"[green]Done[/]: {applied} strings applied across {objects_touched} TextAssets, "
         f"{missed} missed -> {out}"
