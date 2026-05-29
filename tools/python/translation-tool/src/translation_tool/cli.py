@@ -18,6 +18,7 @@ from .glossary import (
     protect,
     restore,
     split_glossary,
+    sweep_residual_tokens,
     write_glossary,
 )
 from .project import Project, init_project
@@ -182,9 +183,9 @@ def translate(
                     except Exception:  # noqa: BLE001
                         raw = ""
                     if raw:
-                        st.machine = raw
+                        st.machine = sweep_residual_tokens(raw, rules)
                 else:
-                    st.machine = restore(raw, mapping)
+                    st.machine = sweep_residual_tokens(restore(raw, mapping), rules)
                 if st.machine and st.status == "pending":
                     st.status = "translated"
                 done += 1
@@ -199,7 +200,7 @@ def translate(
             except Exception as e:  # noqa: BLE001
                 console.print(f"[red]Failed[/] id={u.id}: {e}")
                 break
-            st.machine = restore(raw, mapping)
+            st.machine = sweep_residual_tokens(restore(raw, mapping), rules)
             if st.status == "pending":
                 st.status = "translated"
             done += 1
