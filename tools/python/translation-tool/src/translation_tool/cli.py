@@ -39,6 +39,7 @@ def translate(
     model: Optional[str] = typer.Option(None, "--model"),
     limit: int = typer.Option(0, "--limit", help="Only translate first N pending units (0 = all)"),
     redo: bool = typer.Option(False, "--redo", help="Re-translate units that already have a machine output"),
+    batch_size: int = typer.Option(25, "--batch-size", help="Units per request when the backend supports batching"),
 ) -> None:
     """Run the backend on pending units."""
     p = Project.load(project_dir)
@@ -49,26 +50,65 @@ def translate(
         return
     rules = load_glossary(p.glossary_tsv)
     be = get_backend(cfg_backend, cfg_model)
+
+    todo = [u for u in p.units if u.text.strip() and (redo or p.state[u.id].machine is None)]
+    if limit:
+        todo = todo[:limit]
+    total = len(todo)
+    if total == 0:
+        console.print("[yellow]Nothing to translate.[/]")
+        return
+
+    use_batch = hasattr(be, "translate_batch") and batch_size > 1
     done = 0
-    for u in p.units:
-        st = p.state[u.id]
-        if st.machine is not None and not redo:
-            continue
-        if limit and done >= limit:
-            break
-        protected, mapping = protect(u.text, rules)
-        try:
-            raw = be.translate(protected, p.config.src_lang, p.config.tgt_lang)
-        except Exception as e:  # noqa: BLE001
-            console.print(f"[red]Failed[/] id={u.id}: {e}")
-            break
-        st.machine = restore(raw, mapping)
-        if st.status == "pending":
-            st.status = "translated"
-        done += 1
-        if done % 10 == 0:
+
+    if use_batch:
+        for start in range(0, total, batch_size):
+            chunk = todo[start : start + batch_size]
+            protected_pairs = [protect(u.text, rules) for u in chunk]
+            protected_texts = [pp[0] for pp in protected_pairs]
+            try:
+                results = be.translate_batch(  # type: ignore[attr-defined]
+                    protected_texts, p.config.src_lang, p.config.tgt_lang
+                )
+            except Exception as e:  # noqa: BLE001
+                console.print(f"[red]Batch failed[/] at offset {start}: {e}")
+                p.save_state()
+                break
+            for u, (_, mapping), raw in zip(chunk, protected_pairs, results):
+                st = p.state[u.id]
+                if not raw:
+                    # Fallback to a single-item call for this unit.
+                    try:
+                        single, smap = protect(u.text, rules)
+                        raw = restore(be.translate(single, p.config.src_lang, p.config.tgt_lang), smap)
+                    except Exception:  # noqa: BLE001
+                        raw = ""
+                    if raw:
+                        st.machine = raw
+                else:
+                    st.machine = restore(raw, mapping)
+                if st.machine and st.status == "pending":
+                    st.status = "translated"
+                done += 1
             p.save_state()
-            console.print(f"  ... {done} translated, autosaved")
+            console.print(f"  ... {min(start + batch_size, total)}/{total} processed, autosaved")
+    else:
+        for u in todo:
+            st = p.state[u.id]
+            protected, mapping = protect(u.text, rules)
+            try:
+                raw = be.translate(protected, p.config.src_lang, p.config.tgt_lang)
+            except Exception as e:  # noqa: BLE001
+                console.print(f"[red]Failed[/] id={u.id}: {e}")
+                break
+            st.machine = restore(raw, mapping)
+            if st.status == "pending":
+                st.status = "translated"
+            done += 1
+            if done % 10 == 0:
+                p.save_state()
+                console.print(f"  ... {done}/{total} translated, autosaved")
     p.save_state()
     console.print(f"[green]Done[/]: {done} units translated, state saved")
 
