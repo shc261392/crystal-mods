@@ -90,6 +90,94 @@ def _load_final(project: Path) -> dict[str, str]:
     return out
 
 
+def _load_source(project: Path) -> dict[str, str]:
+    """Return {unit_id: english_text} from the project's source.jsonl."""
+    src_path = project / "source.jsonl"
+    out: dict[str, str] = {}
+    for line in src_path.read_text("utf-8").splitlines():
+        if not line.strip():
+            continue
+        rec = json.loads(line)
+        if rec.get("text"):
+            out[rec["id"]] = rec["text"]
+    return out
+
+
+def _build_text_map(project: Path) -> dict[str, str]:
+    """Map English source string -> translated string.
+
+    The runtime database (the "Entity Text Assets" MonoBehaviour) stores its
+    content as ``*DataJson`` strings whose values mirror the standalone
+    TextAssets, so a value-keyed map lets us patch it without re-deriving the
+    per-field path layout.
+    """
+    source = _load_source(project)
+    finals = _load_final(project)
+    mapping: dict[str, str] = {}
+    for uid, tgt in finals.items():
+        src = source.get(uid)
+        if src and tgt and src != tgt and src not in mapping:
+            mapping[src] = tgt
+    return mapping
+
+
+def _replace_strings(node: object, mapping: dict[str, str]) -> int:
+    """Recursively replace matching string leaves in-place. Returns count."""
+    count = 0
+    if isinstance(node, dict):
+        for key, value in node.items():
+            if isinstance(value, str):
+                tgt = mapping.get(value)
+                if tgt is not None:
+                    node[key] = tgt
+                    count += 1
+            else:
+                count += _replace_strings(value, mapping)
+    elif isinstance(node, list):
+        for i, value in enumerate(node):
+            if isinstance(value, str):
+                tgt = mapping.get(value)
+                if tgt is not None:
+                    node[i] = tgt
+                    count += 1
+            else:
+                count += _replace_strings(value, mapping)
+    return count
+
+
+def _patch_database(env: UnityPy.Environment, mapping: dict[str, str]) -> tuple[int, int]:
+    """Patch the runtime "Entity Text Assets" MonoBehaviour *DataJson fields.
+
+    Returns (strings_replaced, fields_touched).
+    """
+    replaced = 0
+    fields = 0
+    for obj in env.objects:
+        if obj.type.name != "MonoBehaviour":
+            continue
+        tree = obj.read_typetree()
+        if tree.get("m_Name") != "Entity Text Assets":
+            continue
+        touched = False
+        for key, value in tree.items():
+            if not (key.endswith("DataJson") and isinstance(value, str) and value.strip()):
+                continue
+            try:
+                data = json.loads(value)
+            except json.JSONDecodeError:
+                continue
+            n = _replace_strings(data, mapping)
+            if n:
+                tree[key] = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
+                replaced += n
+                fields += 1
+                touched = True
+        if touched:
+            obj.save_typetree(tree)
+        break
+    return replaced, fields
+
+
 @app.command()
 def main(
     bundle: Path = typer.Argument(..., exists=True, dir_okay=False, readable=True),
@@ -162,6 +250,15 @@ def main(
             tree["m_Script"] = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
             obj.save_typetree(tree)
             objects_touched += 1
+
+    # Primary target: the runtime "Entity Text Assets" MonoBehaviour. The game
+    # deserializes its ``*DataJson`` string fields at load time; the standalone
+    # TextAssets above are editor source copies and are NOT read in-game.
+    db_replaced, db_fields = _patch_database(env, _build_text_map(project))
+    console.print(
+        f"[green]Database[/]: {db_replaced} strings replaced across {db_fields} "
+        f"*DataJson fields in the 'Entity Text Assets' MonoBehaviour"
+    )
 
     out.parent.mkdir(parents=True, exist_ok=True)
     # Match the original bundle's LZ4 block compression. Unity Addressables can
