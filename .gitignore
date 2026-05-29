@@ -75,6 +75,10 @@ reference/extracted/
 # Per-mod extracted source data (regenerate via scripts/extract_*.py)
 **/extracted/
 
+# Per-mod translation project source.jsonl (regenerate via scripts/build_tl_source.py).
+# Keep project.json, glossary.tsv, state.jsonl in git (curated work).
+**/translation/source.jsonl
+
 # ── Tool caches ──────────────────────────────────────────────────────────────
 .tool-versions.local
 *.log
