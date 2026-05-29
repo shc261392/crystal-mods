@@ -38,6 +38,7 @@ console = Console()
 # Splits an ID path like "items[1662].ReportProperties.Description" into steps.
 # Each match is either a dict key or a list index.
 _STEP_RE = re.compile(r"([^.\[\]]+)|\[(\d+)\]")
+_TRANSLATABLE_KEYS = {"Title", "Description", "Text", "Subtitle"}
 
 
 def _parse_path(path: str) -> list[object]:
@@ -122,25 +123,25 @@ def _build_text_map(project: Path) -> dict[str, str]:
 
 
 def _replace_strings(node: object, mapping: dict[str, str]) -> int:
-    """Recursively replace matching string leaves in-place. Returns count."""
+    """Recursively replace localisable string leaves in-place.
+
+    Safety guard: only replace values on known localisable keys extracted into
+    the translation corpus. This prevents accidental edits of non-localised
+    IDs/references that are also strings.
+    """
     count = 0
     if isinstance(node, dict):
         for key, value in node.items():
             if isinstance(value, str):
                 tgt = mapping.get(value)
-                if tgt is not None:
+                if tgt is not None and key in _TRANSLATABLE_KEYS:
                     node[key] = tgt
                     count += 1
             else:
                 count += _replace_strings(value, mapping)
     elif isinstance(node, list):
-        for i, value in enumerate(node):
-            if isinstance(value, str):
-                tgt = mapping.get(value)
-                if tgt is not None:
-                    node[i] = tgt
-                    count += 1
-            else:
+        for value in node:
+            if not isinstance(value, str):
                 count += _replace_strings(value, mapping)
     return count
 
