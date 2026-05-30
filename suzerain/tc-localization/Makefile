@@ -16,6 +16,7 @@ SHELL := /bin/bash
 REPO_ROOT   := $(abspath ../..)
 SCRIPTS     := scripts
 PROJECT     := translation
+UI_PROJECT  := scene-ui-translation
 EXTRACTED   := extracted
 BUILD       := build
 
@@ -38,6 +39,8 @@ extract: ## Extract strings from the game bundle into extracted/ (re-run if game
 	uv run --script $(SCRIPTS)/extract_entitytext.py "$(SRC_BUNDLE)" --out $(EXTRACTED)
 	uv run --script $(SCRIPTS)/build_tl_source.py $(EXTRACTED)/raw_strings.jsonl \
 	    --out $(PROJECT)/source.jsonl
+	uv run --script $(SCRIPTS)/extract_scene_ui.py "$(GAME_DIR)/$(AA_REL)" \
+	    --out $(UI_PROJECT)/source.jsonl
 
 # ── Glossary ─────────────────────────────────────────────────────────────────
 .PHONY: glossary
@@ -51,10 +54,13 @@ glossary: ## Build the corpus-driven glossary (requires GEMINI_API_KEY)
 translate: ## Run the full Gemini translation pass (requires GEMINI_API_KEY)
 	set -a && . $(REPO_ROOT)/.env && set +a && \
 	  uv run tl translate $(PROJECT) --backend gemini --batch-size 25
+	set -a && . $(REPO_ROOT)/.env && set +a && \
+	  uv run tl translate $(UI_PROJECT) --backend gemini --batch-size 25
 
 .PHONY: status
 status: ## Show translation status counts
 	uv run tl status $(PROJECT)
+	uv run tl status $(UI_PROJECT)
 
 # ── Repack / build ───────────────────────────────────────────────────────────
 .PHONY: build
@@ -62,7 +68,10 @@ build: ## Repack the translated bundle into build/ (uses final else machine text
 	@mkdir -p $(BUILD)
 	uv run --script $(SCRIPTS)/repack_entitytext.py "$(SRC_BUNDLE)" \
 	    --project $(PROJECT) --out "$(OUT_BUNDLE)"
+	uv run --script $(SCRIPTS)/repack_scene_ui.py "$(GAME_DIR)/$(AA_REL)" \
+	    --project $(UI_PROJECT) --out-dir "$(BUILD)"
 	@echo "✓ Patched bundle → $(OUT_BUNDLE)"
+	@echo "✓ Patched scene bundles → $(BUILD)/scenes_scenes_assets_scenes_*.bundle"
 
 .PHONY: clean
 clean: ## Remove the build/ output

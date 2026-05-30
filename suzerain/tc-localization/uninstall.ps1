@@ -31,6 +31,7 @@ $ScriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $GameFolderName = 'Suzerain'
 $AaRel = 'Suzerain_Data\StreamingAssets\aa\StandaloneWindows64'
 $BundleName = 'defaultlocalgroup_assets_assets_database_entitytextassets.asset_7658ed792f0c4924d06b11829a6c36d1.bundle'
+$SceneGlob = 'scenes_scenes_assets_scenes_*.bundle'
 
 function Write-Step { param($m) Write-Host "> $m"  -ForegroundColor Cyan }
 function Write-Ok   { param($m) Write-Host "OK $m" -ForegroundColor Green }
@@ -89,23 +90,30 @@ function Find-Game {
     return ''
 }
 
-$OriginFile = Join-Path $BackupDir 'origin.txt'
-if (-not $GameDir -and (Test-Path $OriginFile)) {
-    $TargetBundle = (Get-Content $OriginFile -Raw).Trim()
+$OriginDirFile = Join-Path $BackupDir 'origin-dir.txt'
+if (-not $GameDir -and (Test-Path $OriginDirFile)) {
+    $TargetDir = (Get-Content $OriginDirFile -Raw).Trim()
 } else {
     $gd = Find-Game
     if (-not $gd) { Die "Could not determine game dir. Use -GameDir." }
-    $TargetBundle = Join-Path (Join-Path $gd $AaRel) $BundleName
+    $TargetDir = Join-Path $gd $AaRel
 }
-$TargetDir = Split-Path -Parent $TargetBundle
 if (-not (Test-Path $TargetDir)) { Die "Target dir missing: $TargetDir" }
+$TargetBundle = Join-Path $TargetDir $BundleName
 
 # -- Restore ------------------------------------------------------------------
 if ($DryRun) {
     Write-Step "[dry-run] cp $BackupBundle -> $TargetBundle"
+    foreach ($scene in Get-ChildItem -Path $BackupDir -Filter $SceneGlob -File -ErrorAction SilentlyContinue) {
+        Write-Step "[dry-run] cp $($scene.FullName) -> $(Join-Path $TargetDir $scene.Name)"
+    }
 } else {
     Copy-Item $BackupBundle $TargetBundle -Force
+    foreach ($scene in Get-ChildItem -Path $BackupDir -Filter $SceneGlob -File -ErrorAction SilentlyContinue) {
+        Copy-Item $scene.FullName (Join-Path $TargetDir $scene.Name) -Force
+    }
     Write-Ok "Restored original bundle -> $TargetBundle"
+    Write-Ok "Restored original scene bundles -> $(Join-Path $TargetDir $SceneGlob)"
 }
 
 Write-Ok "Done. Suzerain is back to its original (English) text."

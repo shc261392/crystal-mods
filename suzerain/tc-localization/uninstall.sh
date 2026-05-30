@@ -22,6 +22,7 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 GAME_FOLDER_NAME="Suzerain"
 AA_REL="Suzerain_Data/StreamingAssets/aa/StandaloneWindows64"
 BUNDLE_NAME="defaultlocalgroup_assets_assets_database_entitytextassets.asset_7658ed792f0c4924d06b11829a6c36d1.bundle"
+SCENE_GLOB="scenes_scenes_assets_scenes_*.bundle"
 
 GAME_DIR="${SUZERAIN_GAME_DIR:-}"
 BACKUP_STAMP=""
@@ -89,21 +90,33 @@ discover_game() {
     echo ""
 }
 
-if [[ -z "${GAME_DIR}" && -f "${BACKUP_DIR}/origin.txt" ]]; then
-    TARGET_BUNDLE="$(< "${BACKUP_DIR}/origin.txt")"
+if [[ -z "${GAME_DIR}" && -f "${BACKUP_DIR}/origin-dir.txt" ]]; then
+    TARGET_DIR="$(< "${BACKUP_DIR}/origin-dir.txt")"
 else
     GD="$(discover_game)"
     [[ -n "${GD}" ]] || die "Could not determine game dir. Use --game-dir."
-    TARGET_BUNDLE="${GD}/${AA_REL}/${BUNDLE_NAME}"
+    TARGET_DIR="${GD}/${AA_REL}"
 fi
-[[ -d "$(dirname "${TARGET_BUNDLE}")" ]] || die "Target dir missing: $(dirname "${TARGET_BUNDLE}")"
+TARGET_BUNDLE="${TARGET_DIR}/${BUNDLE_NAME}"
+[[ -d "${TARGET_DIR}" ]] || die "Target dir missing: ${TARGET_DIR}"
 
 # ── Restore ──────────────────────────────────────────────────────────────────
 if ${DRY_RUN}; then
     log "[dry-run] cp ${BACKUP_BUNDLE} → ${TARGET_BUNDLE}"
+    shopt -s nullglob
+    for scene in "${BACKUP_DIR}/"${SCENE_GLOB}; do
+        log "[dry-run] cp ${scene} → ${TARGET_DIR}/$(basename "${scene}")"
+    done
+    shopt -u nullglob
 else
     cp -p "${BACKUP_BUNDLE}" "${TARGET_BUNDLE}"
+    shopt -s nullglob
+    for scene in "${BACKUP_DIR}/"${SCENE_GLOB}; do
+        cp -p "${scene}" "${TARGET_DIR}/$(basename "${scene}")"
+    done
+    shopt -u nullglob
     ok "Restored original bundle → ${TARGET_BUNDLE}"
+    ok "Restored original scene bundles → ${TARGET_DIR}/${SCENE_GLOB}"
 fi
 
 ok "Done. Suzerain is back to its original (English) text."

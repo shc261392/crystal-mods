@@ -25,6 +25,7 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 GAME_FOLDER_NAME="Suzerain"
 AA_REL="Suzerain_Data/StreamingAssets/aa/StandaloneWindows64"
 BUNDLE_NAME="defaultlocalgroup_assets_assets_database_entitytextassets.asset_7658ed792f0c4924d06b11829a6c36d1.bundle"
+SCENE_GLOB="scenes_scenes_assets_scenes_*.bundle"
 
 GAME_DIR="${SUZERAIN_GAME_DIR:-}"
 PATCHED_BUNDLE="${REPO_ROOT}/build/${BUNDLE_NAME}"
@@ -89,6 +90,11 @@ TARGET_BUNDLE="${TARGET_DIR}/${BUNDLE_NAME}"
 [[ -d "${TARGET_DIR}" ]] || die "Addressables dir missing: ${TARGET_DIR}"
 [[ -f "${TARGET_BUNDLE}" ]] || die "Original bundle not found: ${TARGET_BUNDLE}"
 
+shopt -s nullglob
+PATCHED_SCENE_BUNDLES=("${REPO_ROOT}/build/"${SCENE_GLOB})
+TARGET_SCENE_BUNDLES=("${TARGET_DIR}/"${SCENE_GLOB})
+shopt -u nullglob
+
 # ── Ensure patched bundle exists (build on demand) ───────────────────────────
 if [[ ! -f "${PATCHED_BUNDLE}" ]]; then
     warn "Patched bundle missing: ${PATCHED_BUNDLE}"
@@ -100,6 +106,9 @@ if [[ ! -f "${PATCHED_BUNDLE}" ]]; then
     fi
 fi
 [[ -f "${PATCHED_BUNDLE}" || ${DRY_RUN} == true ]] || die "Build did not produce ${PATCHED_BUNDLE}"
+if [[ ${#PATCHED_SCENE_BUNDLES[@]} -eq 0 && ${DRY_RUN} == false ]]; then
+    die "Build output is missing scene bundles under ${REPO_ROOT}/build/${SCENE_GLOB}"
+fi
 
 # ── Backup ───────────────────────────────────────────────────────────────────
 if ! ${NO_BACKUP}; then
@@ -107,11 +116,19 @@ if ! ${NO_BACKUP}; then
     BACKUP_DIR="${REPO_ROOT}/backup/${STAMP}"
     if ${DRY_RUN}; then
         log "[dry-run] would backup original → ${BACKUP_DIR}/${BUNDLE_NAME}"
+        for scene in "${TARGET_SCENE_BUNDLES[@]}"; do
+            [[ -f "${scene}" ]] || continue
+            log "[dry-run] would backup original → ${BACKUP_DIR}/$(basename "${scene}")"
+        done
     else
         mkdir -p "${BACKUP_DIR}"
         cp -p "${TARGET_BUNDLE}" "${BACKUP_DIR}/${BUNDLE_NAME}"
-        # Record where it came from so uninstall can restore even without --game-dir.
-        printf '%s\n' "${TARGET_BUNDLE}" > "${BACKUP_DIR}/origin.txt"
+        for scene in "${TARGET_SCENE_BUNDLES[@]}"; do
+            [[ -f "${scene}" ]] || continue
+            cp -p "${scene}" "${BACKUP_DIR}/$(basename "${scene}")"
+        done
+        # Record the target directory so uninstall can restore all bundles.
+        printf '%s\n' "${TARGET_DIR}" > "${BACKUP_DIR}/origin-dir.txt"
         ok "Backup → ${BACKUP_DIR}/${BUNDLE_NAME}"
     fi
 fi
@@ -119,9 +136,16 @@ fi
 # ── Deploy ───────────────────────────────────────────────────────────────────
 if ${DRY_RUN}; then
     log "[dry-run] cp ${PATCHED_BUNDLE} → ${TARGET_BUNDLE}"
+    for scene in "${PATCHED_SCENE_BUNDLES[@]}"; do
+        log "[dry-run] cp ${scene} → ${TARGET_DIR}/$(basename "${scene}")"
+    done
 else
     cp -p "${PATCHED_BUNDLE}" "${TARGET_BUNDLE}"
+    for scene in "${PATCHED_SCENE_BUNDLES[@]}"; do
+        cp -p "${scene}" "${TARGET_DIR}/$(basename "${scene}")"
+    done
     ok "Deployed patched bundle → ${TARGET_BUNDLE}"
+    ok "Deployed patched scene bundles → ${TARGET_DIR}/${SCENE_GLOB}"
 fi
 
 ok "Done. Launch Suzerain and verify the Traditional Chinese text."

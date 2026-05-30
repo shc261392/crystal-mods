@@ -39,6 +39,7 @@ $ScriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $GameFolderName = 'Suzerain'
 $AaRel = 'Suzerain_Data\StreamingAssets\aa\StandaloneWindows64'
 $BundleName = 'defaultlocalgroup_assets_assets_database_entitytextassets.asset_7658ed792f0c4924d06b11829a6c36d1.bundle'
+$SceneGlob = 'scenes_scenes_assets_scenes_*.bundle'
 
 function Write-Step { param($m) Write-Host "> $m"  -ForegroundColor Cyan }
 function Write-Ok   { param($m) Write-Host "OK $m" -ForegroundColor Green }
@@ -92,9 +93,13 @@ $TargetDir    = Join-Path $GameDir $AaRel
 $TargetBundle = Join-Path $TargetDir $BundleName
 if (-not (Test-Path $TargetDir))    { Die "Addressables dir missing: $TargetDir" }
 if (-not (Test-Path $TargetBundle)) { Die "Original bundle not found: $TargetBundle" }
+$SceneBundles = @(Get-ChildItem -Path (Join-Path $ScriptRoot "build") -Filter $SceneGlob -File -ErrorAction SilentlyContinue)
 
 if (-not (Test-Path $Bundle)) {
     Die "Patched bundle missing: $Bundle`nBuild it on a dev machine with 'make build', then copy build\$BundleName here."
+}
+if ($SceneBundles.Count -eq 0) {
+    Die "Patched scene bundles missing under $(Join-Path $ScriptRoot 'build'). Run 'make build' first."
 }
 
 # -- Backup -------------------------------------------------------------------
@@ -103,10 +108,16 @@ if (-not $NoBackup) {
     $BackupDir = Join-Path $ScriptRoot "backup\$Stamp"
     if ($DryRun) {
         Write-Step "[dry-run] would backup original -> $BackupDir\$BundleName"
+        foreach ($scene in Get-ChildItem -Path $TargetDir -Filter $SceneGlob -File -ErrorAction SilentlyContinue) {
+            Write-Step "[dry-run] would backup original -> $(Join-Path $BackupDir $scene.Name)"
+        }
     } else {
         New-Item -ItemType Directory -Path $BackupDir -Force | Out-Null
         Copy-Item $TargetBundle (Join-Path $BackupDir $BundleName)
-        Set-Content -Path (Join-Path $BackupDir 'origin.txt') -Value $TargetBundle
+        foreach ($scene in Get-ChildItem -Path $TargetDir -Filter $SceneGlob -File -ErrorAction SilentlyContinue) {
+            Copy-Item $scene.FullName (Join-Path $BackupDir $scene.Name)
+        }
+        Set-Content -Path (Join-Path $BackupDir 'origin-dir.txt') -Value $TargetDir
         Write-Ok "Backup -> $BackupDir\$BundleName"
     }
 }
@@ -114,9 +125,16 @@ if (-not $NoBackup) {
 # -- Deploy -------------------------------------------------------------------
 if ($DryRun) {
     Write-Step "[dry-run] cp $Bundle -> $TargetBundle"
+    foreach ($scene in $SceneBundles) {
+        Write-Step "[dry-run] cp $($scene.FullName) -> $(Join-Path $TargetDir $scene.Name)"
+    }
 } else {
     Copy-Item $Bundle $TargetBundle -Force
+    foreach ($scene in $SceneBundles) {
+        Copy-Item $scene.FullName (Join-Path $TargetDir $scene.Name) -Force
+    }
     Write-Ok "Deployed patched bundle -> $TargetBundle"
+    Write-Ok "Deployed patched scene bundles -> $(Join-Path $TargetDir $SceneGlob)"
 }
 
 Write-Ok "Done. Launch Suzerain and verify the Traditional Chinese text."

@@ -1,0 +1,620 @@
+{"id": "scene-ui-00001", "machine": "載入", "manual": null, "status": "translated"}
+{"id": "scene-ui-00002", "machine": "選項", "manual": null, "status": "translated"}
+{"id": "scene-ui-00003", "machine": "新遊戲", "manual": null, "status": "translated"}
+{"id": "scene-ui-00004", "machine": "開始故事", "manual": null, "status": "translated"}
+{"id": "scene-ui-00005", "machine": "退出", "manual": null, "status": "translated"}
+{"id": "scene-ui-00006", "machine": "版本", "manual": null, "status": "translated"}
+{"id": "scene-ui-00007", "machine": "繼續", "manual": null, "status": "translated"}
+{"id": "scene-ui-00008", "machine": "標題", "manual": null, "status": "translated"}
+{"id": "scene-ui-00009", "machine": "製作名單", "manual": null, "status": "translated"}
+{"id": "scene-ui-00010", "machine": "Sarah Pavlich", "manual": null, "status": "translated"}
+{"id": "scene-ui-00011", "machine": "密碼", "manual": null, "status": "translated"}
+{"id": "scene-ui-00012", "machine": "Ioannis Petridis", "manual": null, "status": "translated"}
+{"id": "scene-ui-00013", "machine": "輸入遊戲名稱...", "manual": null, "status": "translated"}
+{"id": "scene-ui-00014", "machine": "儲存中...", "manual": null, "status": "translated"}
+{"id": "scene-ui-00015", "machine": "asadasdasdasdadasdasdasdasd", "manual": null, "status": "translated"}
+{"id": "scene-ui-00016", "machine": "透過獲得經驗值來升級，以解鎖獎勵和故事點數。\r\n\r\n透過完成遊戲中的行動和成就來獲得經驗值。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00017", "machine": "Janine Campos", "manual": null, "status": "translated"}
+{"id": "scene-ui-00018", "machine": "戰役 1", "manual": null, "status": "translated"}
+{"id": "scene-ui-00019", "machine": "由 Fellow Traveller 聯合發行", "manual": null, "status": "translated"}
+{"id": "scene-ui-00020", "machine": "-10%", "manual": null, "status": "translated"}
+{"id": "scene-ui-00021", "machine": "商店", "manual": null, "status": "translated"}
+{"id": "scene-ui-00022", "machine": "Evolve PR", "manual": null, "status": "translated"}
+{"id": "scene-ui-00023", "machine": "Felix Kramer", "manual": null, "status": "translated"}
+{"id": "scene-ui-00024", "machine": "使用本服務即表示您同意 Torpor Games 的\n<link=\"https://www.torporgames.com/terms-of-service\"><color=#D9D6D6><u>服務條款</color></u></link>與<link=\"https://www.torporgames.com/privacy-policy\"><color=#D9D6D6><u>隱私權政策</color></u></link>", "manual": null, "status": "translated"}
+{"id": "scene-ui-00025", "machine": "Adam Sharp", "manual": null, "status": "translated"}
+{"id": "scene-ui-00026", "machine": "克里斯多福·普里斯特利", "manual": null, "status": "translated"}
+{"id": "scene-ui-00027", "machine": "部設計、寫作與\n視覺藝術", "manual": null, "status": "translated"}
+{"id": "scene-ui-00028", "machine": "阿梅·布里蘭特斯", "manual": null, "status": "translated"}
+{"id": "scene-ui-00029", "machine": "5000", "manual": null, "status": "translated"}
+{"id": "scene-ui-00030", "machine": "聖丹尼爾潘康塔納人教堂", "manual": null, "status": "translated"}
+{"id": "scene-ui-00031", "machine": "耶佩·凱爾加德", "manual": null, "status": "translated"}
+{"id": "scene-ui-00032", "machine": "確認", "manual": null, "status": "translated"}
+{"id": "scene-ui-00033", "machine": "5秒後獎勵", "manual": null, "status": "translated"}
+{"id": "scene-ui-00034", "machine": "收藏", "manual": null, "status": "translated"}
+{"id": "scene-ui-00035", "machine": "姆里杜爾·卡沙特里亞", "manual": null, "status": "translated"}
+{"id": "scene-ui-00036", "machine": "主選單", "manual": null, "status": "translated"}
+{"id": "scene-ui-00037", "machine": "個人檔案名稱", "manual": null, "status": "translated"}
+{"id": "scene-ui-00038", "machine": "連結電子郵件帳號", "manual": null, "status": "translated"}
+{"id": "scene-ui-00039", "machine": "除錯文字：", "manual": null, "status": "translated"}
+{"id": "scene-ui-00040", "machine": "奧默·延圖爾", "manual": null, "status": "translated"}
+{"id": "scene-ui-00041", "machine": "米切爾·克拉馬", "manual": null, "status": "translated"}
+{"id": "scene-ui-00042", "machine": "尼爾斯·倫格", "manual": null, "status": "translated"}
+{"id": "scene-ui-00043", "machine": "傑米·尼科洛夫斯基", "manual": null, "status": "translated"}
+{"id": "scene-ui-00044", "machine": "克里斯·賴特", "manual": null, "status": "translated"}
+{"id": "scene-ui-00045", "machine": "影響力 4影響力 4影響力 4影響力 4影響力 4影響力 4", "manual": null, "status": "translated"}
+{"id": "scene-ui-00046", "machine": "電子郵件或密碼錯誤。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00047", "machine": "安東·雷恩在經濟嚴重衰退、改革呼聲高漲以及外部壓力之下，當選為第4任蘇德蘭總統。\r\n\r\n作為1954年蘇德蘭團結黨的候選人，他接手了一個正處於歷史關鍵轉折點的國家。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00048", "machine": "梅斯基塔·利馬", "manual": null, "status": "translated"}
+{"id": "scene-ui-00049", "machine": "電子郵件", "manual": null, "status": "translated"}
+{"id": "scene-ui-00050", "machine": "打字機", "manual": null, "status": "translated"}
+{"id": "scene-ui-00051", "machine": "漢堡", "manual": null, "status": "translated"}
+{"id": "scene-ui-00052", "machine": "已擁有", "manual": null, "status": "translated"}
+{"id": "scene-ui-00053", "machine": "隸屬關係：", "manual": null, "status": "translated"}
+{"id": "scene-ui-00054", "machine": "坦普林研究所", "manual": null, "status": "translated"}
+{"id": "scene-ui-00055", "machine": "Scott Reismanis", "manual": null, "status": "translated"}
+{"id": "scene-ui-00056", "machine": "部生產部", "manual": null, "status": "translated"}
+{"id": "scene-ui-00057", "machine": "最新消息", "manual": null, "status": "translated"}
+{"id": "scene-ui-00058", "machine": "刪除個人資料", "manual": null, "status": "translated"}
+{"id": "scene-ui-00059", "machine": "已達上限", "manual": null, "status": "translated"}
+{"id": "scene-ui-00060", "machine": "第四個蘇德蘭總統", "manual": null, "status": "translated"}
+{"id": "scene-ui-00061", "machine": "故事點數", "manual": null, "status": "translated"}
+{"id": "scene-ui-00062", "machine": "Nikolaos Ntalianis", "manual": null, "status": "translated"}
+{"id": "scene-ui-00063", "machine": "電子郵件為必填項。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00064", "machine": "​", "manual": null, "status": "translated"}
+{"id": "scene-ui-00065", "machine": "部視覺藝術部", "manual": null, "status": "translated"}
+{"id": "scene-ui-00066", "machine": "Rachel Glassberg", "manual": null, "status": "translated"}
+{"id": "scene-ui-00067", "machine": "拒絕", "manual": null, "status": "translated"}
+{"id": "scene-ui-00068", "machine": "登出", "manual": null, "status": "translated"}
+{"id": "scene-ui-00069", "machine": "部外交部", "manual": null, "status": "translated"}
+{"id": "scene-ui-00070", "machine": "Denis Gier", "manual": null, "status": "translated"}
+{"id": "scene-ui-00071", "machine": "副總統：", "manual": null, "status": "translated"}
+{"id": "scene-ui-00072", "machine": "特別鳴謝", "manual": null, "status": "translated"}
+{"id": "scene-ui-00073", "machine": "馬列尼耶夫主義者", "manual": null, "status": "translated"}
+{"id": "scene-ui-00074", "machine": "彼得·維克特", "manual": null, "status": "translated"}
+{"id": "scene-ui-00075", "machine": "<size=19>（按）</size> 遊戲手把選單", "manual": null, "status": "translated"}
+{"id": "scene-ui-00076", "machine": "Fiona Murray", "manual": null, "status": "translated"}
+{"id": "scene-ui-00077", "machine": "「新索爾主義者」", "manual": null, "status": "translated"}
+{"id": "scene-ui-00078", "machine": "恭喜。您已解鎖今日的每日獎勵。\n\n\n請繼續保持。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00079", "machine": "結束", "manual": null, "status": "translated"}
+{"id": "scene-ui-00080", "machine": "Anett 詹ichen", "manual": null, "status": "translated"}
+{"id": "scene-ui-00081", "machine": "Ryan Seville", "manual": null, "status": "translated"}
+{"id": "scene-ui-00082", "machine": "部 技術與品質保證", "manual": null, "status": "translated"}
+{"id": "scene-ui-00083", "machine": "Andy Sum", "manual": null, "status": "translated"}
+{"id": "scene-ui-00084", "machine": "X", "manual": null, "status": "translated"}
+{"id": "scene-ui-00085", "machine": "阿卡西亞資本主義", "manual": null, "status": "translated"}
+{"id": "scene-ui-00086", "machine": "使用 Apple 繼續", "manual": null, "status": "translated"}
+{"id": "scene-ui-00087", "machine": "密碼", "manual": null, "status": "translated"}
+{"id": "scene-ui-00088", "machine": "個人檔案名稱", "manual": null, "status": "translated"}
+{"id": "scene-ui-00089", "machine": "您確定要刪除 Torpor Games 帳號嗎？\n您將會遺失您的遊戲備份及任何相關資料。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00090", "machine": "Clementine Laffont", "manual": null, "status": "translated"}
+{"id": "scene-ui-00091", "machine": "製作", "manual": null, "status": "translated"}
+{"id": "scene-ui-00092", "machine": "Ilke Karademir", "manual": null, "status": "translated"}
+{"id": "scene-ui-00093", "machine": "蘇德蘭 ", "manual": null, "status": "translated"}
+{"id": "scene-ui-00094", "machine": "後製處理", "manual": null, "status": "translated"}
+{"id": "scene-ui-00095", "machine": "個人檔案名稱為必填項目。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00096", "machine": "蘇德蘭團結黨", "manual": null, "status": "translated"}
+{"id": "scene-ui-00097", "machine": "紀念", "manual": null, "status": "translated"}
+{"id": "scene-ui-00098", "machine": "Vihan Yalamanchili", "manual": null, "status": "translated"}
+{"id": "scene-ui-00099", "machine": "Ekin Keserer", "manual": null, "status": "translated"}
+{"id": "scene-ui-00100", "machine": "組合包", "manual": null, "status": "translated"}
+{"id": "scene-ui-00101", "machine": "部 宣傳與社會", "manual": null, "status": "translated"}
+{"id": "scene-ui-00102", "machine": "蘇德蘭", "manual": null, "status": "translated"}
+{"id": "scene-ui-00103", "machine": "4", "manual": null, "status": "translated"}
+{"id": "scene-ui-00104", "machine": "載入原型", "manual": null, "status": "translated"}
+{"id": "scene-ui-00105", "machine": "1", "manual": null, "status": "translated"}
+{"id": "scene-ui-00106", "machine": "Shawn Petraschuk", "manual": null, "status": "translated"}
+{"id": "scene-ui-00107", "machine": "Claire Goodwin", "manual": null, "status": "translated"}
+{"id": "scene-ui-00108", "machine": "區域主義者，務實派，人民之士", "manual": null, "status": "translated"}
+{"id": "scene-ui-00109", "machine": "Juan Lagar", "manual": null, "status": "translated"}
+{"id": "scene-ui-00110", "machine": "執行董事", "manual": null, "status": "translated"}
+{"id": "scene-ui-00111", "machine": "東默科帕 組合包", "manual": null, "status": "translated"}
+{"id": "scene-ui-00112", "machine": "部 設計與品質保證部", "manual": null, "status": "translated"}
+{"id": "scene-ui-00113", "machine": "部 音樂、音效與編劇部", "manual": null, "status": "translated"}
+{"id": "scene-ui-00114", "machine": "Ame Searle", "manual": null, "status": "translated"}
+{"id": "scene-ui-00115", "machine": "營運", "manual": null, "status": "translated"}
+{"id": "scene-ui-00116", "machine": "經驗", "manual": null, "status": "translated"}
+{"id": "scene-ui-00117", "machine": "5/10", "manual": null, "status": "translated"}
+{"id": "scene-ui-00118", "machine": "Louis Li", "manual": null, "status": "translated"}
+{"id": "scene-ui-00119", "machine": "地圖切換/開啟登入頁面", "manual": null, "status": "translated"}
+{"id": "scene-ui-00120", "machine": "Christopher Ferazzoli", "manual": null, "status": "translated"}
+{"id": "scene-ui-00121", "machine": "解析度", "manual": null, "status": "translated"}
+{"id": "scene-ui-00122", "machine": "行銷經理", "manual": null, "status": "translated"}
+{"id": "scene-ui-00123", "machine": "部 編劇與視覺藝術部", "manual": null, "status": "translated"}
+{"id": "scene-ui-00124", "machine": "行銷協調員", "manual": null, "status": "translated"}
+{"id": "scene-ui-00125", "machine": "近期活動", "manual": null, "status": "translated"}
+{"id": "scene-ui-00126", "machine": "重新連線", "manual": null, "status": "translated"}
+{"id": "scene-ui-00127", "machine": "由尋寶獵人粉絲俱樂部資助", "manual": null, "status": "translated"}
+{"id": "scene-ui-00128", "machine": "Elderlybull", "manual": null, "status": "translated"}
+{"id": "scene-ui-00129", "machine": "歡迎來到《Suzerain》", "manual": null, "status": "translated"}
+{"id": "scene-ui-00130", "machine": "Torpor 模式", "manual": null, "status": "translated"}
+{"id": "scene-ui-00131", "machine": "Marcus Lim", "manual": null, "status": "translated"}
+{"id": "scene-ui-00132", "machine": "新電子郵件地址", "manual": null, "status": "translated"}
+{"id": "scene-ui-00133", "machine": "字體大小", "manual": null, "status": "translated"}
+{"id": "scene-ui-00134", "machine": "版本：", "manual": null, "status": "translated"}
+{"id": "scene-ui-00135", "machine": "禮物代碼", "manual": null, "status": "translated"}
+{"id": "scene-ui-00136", "machine": "刪除 Torpor 帳號", "manual": null, "status": "translated"}
+{"id": "scene-ui-00137", "machine": "部 技術", "manual": null, "status": "translated"}
+{"id": "scene-ui-00138", "machine": "Michael Nathanael", "manual": null, "status": "translated"}
+{"id": "scene-ui-00139", "machine": "編輯電子郵件", "manual": null, "status": "translated"}
+{"id": "scene-ui-00140", "machine": "忘記密碼？", "manual": null, "status": "translated"}
+{"id": "scene-ui-00141", "machine": "Ipek Unal", "manual": null, "status": "translated"}
+{"id": "scene-ui-00142", "machine": "資料收集\n\n本遊戲透過 Torpor Games 的分析服務、A/B 測試及服務供應商收集遊戲資料。所收集的資訊將協助我們改善遊戲平衡，以提供更好的遊戲體驗。欲知詳情，請參閱 Torpor Games 隱私權政策。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00143", "machine": "Colin Gurney", "manual": null, "status": "translated"}
+{"id": "scene-ui-00144", "machine": "志願社群測試人員", "manual": null, "status": "translated"}
+{"id": "scene-ui-00145", "machine": "Sarmo", "manual": null, "status": "translated"}
+{"id": "scene-ui-00146", "machine": "安瑞卡盃足球賽", "manual": null, "status": "translated"}
+{"id": "scene-ui-00147", "machine": "Martin Eyerer", "manual": null, "status": "translated"}
+{"id": "scene-ui-00148", "machine": "影響力 4", "manual": null, "status": "translated"}
+{"id": "scene-ui-00149", "machine": "跳過已讀對話", "manual": null, "status": "translated"}
+{"id": "scene-ui-00150", "machine": "商務經理", "manual": null, "status": "translated"}
+{"id": "scene-ui-00151", "machine": "帳號設定", "manual": null, "status": "translated"}
+{"id": "scene-ui-00152", "machine": "獎勵：", "manual": null, "status": "translated"}
+{"id": "scene-ui-00153", "machine": "重新輸入密碼", "manual": null, "status": "translated"}
+{"id": "scene-ui-00154", "machine": "選擇你自己的", "manual": null, "status": "translated"}
+{"id": "scene-ui-00155", "machine": "垂直同步", "manual": null, "status": "translated"}
+{"id": "scene-ui-00156", "machine": "取消", "manual": null, "status": "translated"}
+{"id": "scene-ui-00157", "machine": "載入", "manual": null, "status": "translated"}
+{"id": "scene-ui-00158", "machine": "HORST NOWAK", "manual": null, "status": "translated"}
+{"id": "scene-ui-00159", "machine": "成就解鎖！", "manual": null, "status": "translated"}
+{"id": "scene-ui-00160", "machine": "用戶測試", "manual": null, "status": "translated"}
+{"id": "scene-ui-00161", "machine": "Brendan McElroy", "manual": null, "status": "translated"}
+{"id": "scene-ui-00162", "machine": "此模式會停用手動存檔並啟用成就。你只能在完成一次故事後將其關閉。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00163", "machine": "製作經理", "manual": null, "status": "translated"}
+{"id": "scene-ui-00164", "machine": "設定密碼", "manual": null, "status": "translated"}
+{"id": "scene-ui-00165", "machine": "128小時", "manual": null, "status": "translated"}
+{"id": "scene-ui-00166", "machine": "行銷", "manual": null, "status": "translated"}
+{"id": "scene-ui-00167", "machine": "Gert Elshani", "manual": null, "status": "translated"}
+{"id": "scene-ui-00168", "machine": "連結帳號", "manual": null, "status": "translated"}
+{"id": "scene-ui-00169", "machine": "Cactuar512", "manual": null, "status": "translated"}
+{"id": "scene-ui-00170", "machine": "反鋸齒", "manual": null, "status": "translated"}
+{"id": "scene-ui-00171", "machine": "Daniel Zacharias", "manual": null, "status": "translated"}
+{"id": "scene-ui-00172", "machine": "資訊", "manual": null, "status": "translated"}
+{"id": "scene-ui-00173", "machine": "Colin James Gurney", "manual": null, "status": "translated"}
+{"id": "scene-ui-00174", "machine": "Emily Cox", "manual": null, "status": "translated"}
+{"id": "scene-ui-00175", "machine": "世界地圖 - 2023年12月1日 19:58", "manual": null, "status": "translated"}
+{"id": "scene-ui-00176", "machine": "登入", "manual": null, "status": "translated"}
+{"id": "scene-ui-00177", "machine": "Torpor Games 隱私權政策", "manual": null, "status": "translated"}
+{"id": "scene-ui-00178", "machine": "故事點數不足", "manual": null, "status": "translated"}
+{"id": "scene-ui-00179", "machine": "Fernando Rizo", "manual": null, "status": "translated"}
+{"id": "scene-ui-00180", "machine": "選擇", "manual": null, "status": "translated"}
+{"id": "scene-ui-00181", "machine": "劇情點數", "manual": null, "status": "translated"}
+{"id": "scene-ui-00182", "machine": "目標幀率", "manual": null, "status": "translated"}
+{"id": "scene-ui-00183", "machine": "Aarón J. Morales", "manual": null, "status": "translated"}
+{"id": "scene-ui-00184", "machine": "立法代表", "manual": null, "status": "translated"}
+{"id": "scene-ui-00185", "machine": "新遊戲名稱", "manual": null, "status": "translated"}
+{"id": "scene-ui-00186", "machine": "一位承諾進行重大改革的魅力型領袖。\n他在 索爾主義者 傳統與民粹主義改革之間尋求平衡。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00187", "machine": "Danielle Allum", "manual": null, "status": "translated"}
+{"id": "scene-ui-00188", "machine": "Suzanne Wallace\n", "manual": null, "status": "translated"}
+{"id": "scene-ui-00189", "machine": "Deathminor\r", "manual": null, "status": "translated"}
+{"id": "scene-ui-00190", "machine": "手把控制", "manual": null, "status": "translated"}
+{"id": "scene-ui-00191", "machine": "安東·雷恩", "manual": null, "status": "translated"}
+{"id": "scene-ui-00192", "machine": "Grimaldus", "manual": null, "status": "translated"}
+{"id": "scene-ui-00193", "machine": "必須輸入密碼。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00194", "machine": "Titas Serpenskas", "manual": null, "status": "translated"}
+{"id": "scene-ui-00195", "machine": "最小化/還原/\n開啟個人資料頁面", "manual": null, "status": "translated"}
+{"id": "scene-ui-00196", "machine": "完成", "manual": null, "status": "translated"}
+{"id": "scene-ui-00197", "machine": "Stephen Gray", "manual": null, "status": "translated"}
+{"id": "scene-ui-00198", "machine": "存檔已上傳。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00199", "machine": "Torpor 帳號登入", "manual": null, "status": "translated"}
+{"id": "scene-ui-00200", "machine": "20", "manual": null, "status": "translated"}
+{"id": "scene-ui-00201", "machine": "Torpor 帳號", "manual": null, "status": "translated"}
+{"id": "scene-ui-00202", "machine": "請輸入有效的電子郵件地址。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00203", "machine": "1000", "manual": null, "status": "translated"}
+{"id": "scene-ui-00204", "machine": "里齊亞 已完成", "manual": null, "status": "translated"}
+{"id": "scene-ui-00205", "machine": "Julian-Constantin Nowak", "manual": null, "status": "translated"}
+{"id": "scene-ui-00206", "machine": "個人檔案詳情", "manual": null, "status": "translated"}
+{"id": "scene-ui-00207", "machine": "/", "manual": null, "status": "translated"}
+{"id": "scene-ui-00208", "machine": "Harufumi Sakasegawa", "manual": null, "status": "translated"}
+{"id": "scene-ui-00209", "machine": "警告", "manual": null, "status": "translated"}
+{"id": "scene-ui-00210", "machine": "ATA SERGEY NOWAK", "manual": null, "status": "translated"}
+{"id": "scene-ui-00211", "machine": "Topmak", "manual": null, "status": "translated"}
+{"id": "scene-ui-00212", "machine": "重設密碼", "manual": null, "status": "translated"}
+{"id": "scene-ui-00213", "machine": "Gundolf S. Freyermuth", "manual": null, "status": "translated"}
+{"id": "scene-ui-00214", "machine": "上次登入：2024年12月4日", "manual": null, "status": "translated"}
+{"id": "scene-ui-00215", "machine": "2024年12月24日", "manual": null, "status": "translated"}
+{"id": "scene-ui-00216", "machine": "INR 1000000", "manual": null, "status": "translated"}
+{"id": "scene-ui-00217", "machine": "選擇", "manual": null, "status": "translated"}
+{"id": "scene-ui-00218", "machine": "由 Torpor Games 開發與聯合發行", "manual": null, "status": "translated"}
+{"id": "scene-ui-00219", "machine": "Adrien Farey", "manual": null, "status": "translated"}
+{"id": "scene-ui-00220", "machine": "SSAO", "manual": null, "status": "translated"}
+{"id": "scene-ui-00221", "machine": "檔案名稱：", "manual": null, "status": "translated"}
+{"id": "scene-ui-00222", "machine": "助理製作人", "manual": null, "status": "translated"}
+{"id": "scene-ui-00223", "machine": "載入中...", "manual": null, "status": "translated"}
+{"id": "scene-ui-00224", "machine": "故事選擇 - 2024-11-28 19-05-18", "manual": null, "status": "translated"}
+{"id": "scene-ui-00225", "machine": "里齊亞", "manual": null, "status": "translated"}
+{"id": "scene-ui-00226", "machine": "Torpor 模式已啟用", "manual": null, "status": "translated"}
+{"id": "scene-ui-00227", "machine": "票務", "manual": null, "status": "translated"}
+{"id": "scene-ui-00228", "machine": "視窗模式", "manual": null, "status": "translated"}
+{"id": "scene-ui-00229", "machine": "Nathan De Farias Lima", "manual": null, "status": "translated"}
+{"id": "scene-ui-00230", "machine": "使用 Apple 帳號註冊", "manual": null, "status": "translated"}
+{"id": "scene-ui-00231", "machine": "編輯使用者名稱", "manual": null, "status": "translated"}
+{"id": "scene-ui-00232", "machine": "設定", "manual": null, "status": "translated"}
+{"id": "scene-ui-00233", "machine": "於不同版本儲存", "manual": null, "status": "translated"}
+{"id": "scene-ui-00234", "machine": "Semih Güner", "manual": null, "status": "translated"}
+{"id": "scene-ui-00235", "machine": "顯示 蘇德蘭人 政治人物", "manual": null, "status": "translated"}
+{"id": "scene-ui-00236", "machine": "面板標題", "manual": null, "status": "translated"}
+{"id": "scene-ui-00237", "machine": "上一個標記/面板", "manual": null, "status": "translated"}
+{"id": "scene-ui-00238", "machine": "永久移除 蘇德蘭 故事包中的廣告並解鎖高級儲存/讀取功能", "manual": null, "status": "translated"}
+{"id": "scene-ui-00239", "machine": "結束檢視", "manual": null, "status": "translated"}
+{"id": "scene-ui-00240", "machine": "圖形", "manual": null, "status": "translated"}
+{"id": "scene-ui-00241", "machine": "Dominic K", "manual": null, "status": "translated"}
+{"id": "scene-ui-00242", "machine": "您可以選擇一個已完成的 蘇德蘭 存檔，將您的選擇繼承至下一個故事。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00243", "machine": "警告", "manual": null, "status": "translated"}
+{"id": "scene-ui-00244", "machine": "Yannick Hogendoorn", "manual": null, "status": "translated"}
+{"id": "scene-ui-00245", "machine": "Ozgun Kilit", "manual": null, "status": "translated"}
+{"id": "scene-ui-00246", "machine": "資訊數值文字文字資訊 dfddddddd", "manual": null, "status": "translated"}
+{"id": "scene-ui-00247", "machine": "成就", "manual": null, "status": "translated"}
+{"id": "scene-ui-00248", "machine": "遊玩 蘇德蘭 故事包以解鎖此項目。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00249", "machine": "42", "manual": null, "status": "translated"}
+{"id": "scene-ui-00250", "machine": "部 宣傳與\n社會", "manual": null, "status": "translated"}
+{"id": "scene-ui-00251", "machine": "使用 Google 註冊", "manual": null, "status": "translated"}
+{"id": "scene-ui-00252", "machine": "標題", "manual": null, "status": "translated"}
+{"id": "scene-ui-00253", "machine": "經驗", "manual": null, "status": "translated"}
+{"id": "scene-ui-00254", "machine": "音效音量", "manual": null, "status": "translated"}
+{"id": "scene-ui-00255", "machine": "分析同意", "manual": null, "status": "translated"}
+{"id": "scene-ui-00256", "machine": "旋轉", "manual": null, "status": "translated"}
+{"id": "scene-ui-00257", "machine": "刪除分析數據", "manual": null, "status": "translated"}
+{"id": "scene-ui-00258", "machine": "手動存檔", "manual": null, "status": "translated"}
+{"id": "scene-ui-00259", "machine": "部 設計與\n品質保證", "manual": null, "status": "translated"}
+{"id": "scene-ui-00260", "machine": "8", "manual": null, "status": "translated"}
+{"id": "scene-ui-00261", "machine": "停滯模式已停用", "manual": null, "status": "translated"}
+{"id": "scene-ui-00262", "machine": "1 日通行證", "manual": null, "status": "translated"}
+{"id": "scene-ui-00263", "machine": "刪除", "manual": null, "status": "translated"}
+{"id": "scene-ui-00264", "machine": "瑪拉·費茲西蒙斯", "manual": null, "status": "translated"}
+{"id": "scene-ui-00265", "machine": "縮小", "manual": null, "status": "translated"}
+{"id": "scene-ui-00266", "machine": "獲取 1 日所有故事包的完整訪問權限，且無廣告。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00267", "machine": "1230", "manual": null, "status": "translated"}
+{"id": "scene-ui-00268", "machine": "毀滅者", "manual": null, "status": "translated"}
+{"id": "scene-ui-00269", "machine": "強納森·貝克", "manual": null, "status": "translated"}
+{"id": "scene-ui-00270", "machine": "恢復購買", "manual": null, "status": "translated"}
+{"id": "scene-ui-00271", "machine": "1954-1958 年間", "manual": null, "status": "translated"}
+{"id": "scene-ui-00272", "machine": "主線故事", "manual": null, "status": "translated"}
+{"id": "scene-ui-00273", "machine": "埃里克·洛夫馬克", "manual": null, "status": "translated"}
+{"id": "scene-ui-00274", "machine": "馬列維主義", "manual": null, "status": "translated"}
+{"id": "scene-ui-00275", "machine": "部 社群監控", "manual": null, "status": "translated"}
+{"id": "scene-ui-00276", "machine": "克里斯·萊特", "manual": null, "status": "translated"}
+{"id": "scene-ui-00277", "machine": "勞倫斯·瑪麗·吉爾伯茨", "manual": null, "status": "translated"}
+{"id": "scene-ui-00278", "machine": "23", "manual": null, "status": "translated"}
+{"id": "scene-ui-00279", "machine": "+25", "manual": null, "status": "translated"}
+{"id": "scene-ui-00280", "machine": "套用", "manual": null, "status": "translated"}
+{"id": "scene-ui-00281", "machine": "多米尼克·麥克米蘭", "manual": null, "status": "translated"}
+{"id": "scene-ui-00282", "machine": "輪播文字", "manual": null, "status": "translated"}
+{"id": "scene-ui-00283", "machine": "Güliz Dülgeroğlu Küpçü", "manual": null, "status": "translated"}
+{"id": "scene-ui-00284", "machine": "Des Gayle", "manual": null, "status": "translated"}
+{"id": "scene-ui-00285", "machine": "載入資料庫", "manual": null, "status": "translated"}
+{"id": "scene-ui-00286", "machine": "Josh Hardy", "manual": null, "status": "translated"}
+{"id": "scene-ui-00287", "machine": "Andrea Lippi", "manual": null, "status": "translated"}
+{"id": "scene-ui-00288", "machine": "完成 10 個 法案", "manual": null, "status": "translated"}
+{"id": "scene-ui-00289", "machine": "選擇個人頭像", "manual": null, "status": "translated"}
+{"id": "scene-ui-00290", "machine": "偵察", "manual": null, "status": "translated"}
+{"id": "scene-ui-00291", "machine": "Ashley Nicollette", "manual": null, "status": "translated"}
+{"id": "scene-ui-00292", "machine": "John Paul Velarde Jose", "manual": null, "status": "translated"}
+{"id": "scene-ui-00293", "machine": "（貢獻成員）", "manual": null, "status": "translated"}
+{"id": "scene-ui-00294", "machine": "接受", "manual": null, "status": "translated"}
+{"id": "scene-ui-00295", "machine": "日期： ", "manual": null, "status": "translated"}
+{"id": "scene-ui-00296", "machine": "部 寫作與設計", "manual": null, "status": "translated"}
+{"id": "scene-ui-00297", "machine": "音樂音量", "manual": null, "status": "translated"}
+{"id": "scene-ui-00298", "machine": "- 20,000 名 霍斯 員工失去了工作。\n- 超過 8000 人因協助 青年蘇德蘭人 的指控而被捕。\n- 五十萬名女性加入了勞動力市場。\n- 50,000 名士兵失業。\n- 238 人喪生。\n- 超過一百萬名工人在新的勞工權利 法案 下獲得了保障。\n- 布魯德人 犯罪率下降了 60%。\n- 五十萬名女性加入了勞動力市場。\n- 50,000 名士兵失業。\n- 238 人喪生。\n- 超過一百萬名工人在新的勞工權利 法案 下獲得了保障。\n- 布魯德人 犯罪率下降了 60%。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00299", "machine": "ReyesEdward", "manual": null, "status": "translated"}
+{"id": "scene-ui-00300", "machine": "歷史將會銘記你是一位……", "manual": null, "status": "translated"}
+{"id": "scene-ui-00301", "machine": "VerylongusernameVerylongusername", "manual": null, "status": "translated"}
+{"id": "scene-ui-00302", "machine": "Brian Kelleher", "manual": null, "status": "translated"}
+{"id": "scene-ui-00303", "machine": "選擇政治傾向", "manual": null, "status": "translated"}
+{"id": "scene-ui-00304", "machine": "光照", "manual": null, "status": "translated"}
+{"id": "scene-ui-00305", "machine": "索爾主義", "manual": null, "status": "translated"}
+{"id": "scene-ui-00306", "machine": "Lennert Suykerbuyk", "manual": null, "status": "translated"}
+{"id": "scene-ui-00307", "machine": "已鎖定", "manual": null, "status": "translated"}
+{"id": "scene-ui-00308", "machine": "返回", "manual": null, "status": "translated"}
+{"id": "scene-ui-00309", "machine": "穆罕默德·達爾瓦澤", "manual": null, "status": "translated"}
+{"id": "scene-ui-00310", "machine": "€0.99", "manual": null, "status": "translated"}
+{"id": "scene-ui-00311", "machine": "成就：", "manual": null, "status": "translated"}
+{"id": "scene-ui-00312", "machine": "1/2 雲端存檔", "manual": null, "status": "translated"}
+{"id": "scene-ui-00313", "machine": "<size=19>（點擊）</size> 超連結", "manual": null, "status": "translated"}
+{"id": "scene-ui-00314", "machine": "使用 Google 繼續", "manual": null, "status": "translated"}
+{"id": "scene-ui-00315", "machine": "電子郵件地址", "manual": null, "status": "translated"}
+{"id": "scene-ui-00316", "machine": "奧斯卡·沃森", "manual": null, "status": "translated"}
+{"id": "scene-ui-00317", "machine": "您目前以訪客身份進行遊戲。\n登入以在不同裝置間使用您的《Suzerain》個人檔案。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00318", "machine": "若找到該電子郵件，您將很快收到一封郵件。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00319", "machine": "帕維爾·馬耶夫斯基", "manual": null, "status": "translated"}
+{"id": "scene-ui-00320", "machine": "新電子郵件地址", "manual": null, "status": "translated"}
+{"id": "scene-ui-00321", "machine": "放大", "manual": null, "status": "translated"}
+{"id": "scene-ui-00322", "machine": "艾琳·普魯斯", "manual": null, "status": "translated"}
+{"id": "scene-ui-00323", "machine": "詹姆斯·斯彭斯", "manual": null, "status": "translated"}
+{"id": "scene-ui-00324", "machine": "返回登入", "manual": null, "status": "translated"}
+{"id": "scene-ui-00325", "machine": "阿爾蒂克·Z.", "manual": null, "status": "translated"}
+{"id": "scene-ui-00326", "machine": "斯泰恩·維斯特拉特", "manual": null, "status": "translated"}
+{"id": "scene-ui-00327", "machine": "若要存取此頁面，請重新連線至網際網路。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00328", "machine": "希蒙·什克瓦拉", "manual": null, "status": "translated"}
+{"id": "scene-ui-00329", "machine": "字體", "manual": null, "status": "translated"}
+{"id": "scene-ui-00330", "machine": "介面縮放\n", "manual": null, "status": "translated"}
+{"id": "scene-ui-00331", "machine": "劇情包", "manual": null, "status": "translated"}
+{"id": "scene-ui-00332", "machine": "羅伯特·E·戴維斯", "manual": null, "status": "translated"}
+{"id": "scene-ui-00333", "machine": "或", "manual": null, "status": "translated"}
+{"id": "scene-ui-00334", "machine": "陰影", "manual": null, "status": "translated"}
+{"id": "scene-ui-00335", "machine": "自動存檔", "manual": null, "status": "translated"}
+{"id": "scene-ui-00336", "machine": "你必須完成一次主線故事才能停用「昏睡模式」。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00337", "machine": "品牌經理\r", "manual": null, "status": "translated"}
+{"id": "scene-ui-00338", "machine": "個人檔案名稱已存在。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00339", "machine": "<color=#F6E09C><size=51>0</size></color><color=#AFADAD><size=32>/0</size></color>", "manual": null, "status": "translated"}
+{"id": "scene-ui-00340", "machine": "密碼必須相符。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00341", "machine": "使用故事點數來開始或繼續遊玩故事。\r\n\r\n透過觀看廣告、升級以及完成遊戲內行動來賺取更多點數。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00342", "machine": "請輸入有效的密碼。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00343", "machine": "升級", "manual": null, "status": "translated"}
+{"id": "scene-ui-00344", "machine": "部 技術、寫作與\n設計", "manual": null, "status": "translated"}
+{"id": "scene-ui-00345", "machine": "正在載入廣告…\r", "manual": null, "status": "translated"}
+{"id": "scene-ui-00346", "machine": "樸實農民", "manual": null, "status": "translated"}
+{"id": "scene-ui-00347", "machine": "Tung Thanh Cao", "manual": null, "status": "translated"}
+{"id": "scene-ui-00348", "machine": "部 寫作\n", "manual": null, "status": "translated"}
+{"id": "scene-ui-00349", "machine": "渲染比例", "manual": null, "status": "translated"}
+{"id": "scene-ui-00350", "machine": "已停用", "manual": null, "status": "translated"}
+{"id": "scene-ui-00351", "machine": "點擊以登入", "manual": null, "status": "translated"}
+{"id": "scene-ui-00352", "machine": "恢復預設值", "manual": null, "status": "translated"}
+{"id": "scene-ui-00353", "machine": "接收來自 Torpor Games 的新聞與更新", "manual": null, "status": "translated"}
+{"id": "scene-ui-00354", "machine": "Zysco", "manual": null, "status": "translated"}
+{"id": "scene-ui-00355", "machine": "地圖移動/捲動", "manual": null, "status": "translated"}
+{"id": "scene-ui-00356", "machine": "無效的個人檔案名稱", "manual": null, "status": "translated"}
+{"id": "scene-ui-00357", "machine": "Alison Nieman", "manual": null, "status": "translated"}
+{"id": "scene-ui-00358", "machine": "影響力", "manual": null, "status": "translated"}
+{"id": "scene-ui-00359", "machine": "序章選擇", "manual": null, "status": "translated"}
+{"id": "scene-ui-00360", "machine": "雅羅斯拉夫·巴赫穆托夫", "manual": null, "status": "translated"}
+{"id": "scene-ui-00361", "machine": "馬克斯·穆倫", "manual": null, "status": "translated"}
+{"id": "scene-ui-00362", "machine": "領袖", "manual": null, "status": "translated"}
+{"id": "scene-ui-00363", "machine": "理想主義者", "manual": null, "status": "translated"}
+{"id": "scene-ui-00364", "machine": "Evolve Originals", "manual": null, "status": "translated"}
+{"id": "scene-ui-00365", "machine": "隸屬關係", "manual": null, "status": "translated"}
+{"id": "scene-ui-00366", "machine": "購買", "manual": null, "status": "translated"}
+{"id": "scene-ui-00367", "machine": "您尚未完成主線故事。\n開始 DLC 故事將自動為您的主線故事生成一個預設存檔。您確定要繼續嗎？", "manual": null, "status": "translated"}
+{"id": "scene-ui-00368", "machine": "塔哈·巴圖爾·申利", "manual": null, "status": "translated"}
+{"id": "scene-ui-00369", "machine": "錯誤", "manual": null, "status": "translated"}
+{"id": "scene-ui-00370", "machine": "阿揚", "manual": null, "status": "translated"}
+{"id": "scene-ui-00371", "machine": "有新版本可用！", "manual": null, "status": "translated"}
+{"id": "scene-ui-00372", "machine": "紋理", "manual": null, "status": "translated"}
+{"id": "scene-ui-00373", "machine": "喬尼·范德萊烏", "manual": null, "status": "translated"}
+{"id": "scene-ui-00374", "machine": "索德蘭改良主義", "manual": null, "status": "translated"}
+{"id": "scene-ui-00375", "machine": "吉米·亨里克森", "manual": null, "status": "translated"}
+{"id": "scene-ui-00376", "machine": "購買門票以保持對所有故事的存取權限並移除廣告。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00377", "machine": "使用此服務即表示您同意 Torpor Games 的\n<link=\"https://www.torporgames.com/\"><color=#D9D6D6><u>服務條款</color></u></link> 與 <link=\"https://www.torporgames.com/\"><color=#D9D6D6><u>隱私權政策</color></u></link>", "manual": null, "status": "translated"}
+{"id": "scene-ui-00378", "machine": "廣告隱私選項", "manual": null, "status": "translated"}
+{"id": "scene-ui-00379", "machine": "天鵝國王", "manual": null, "status": "translated"}
+{"id": "scene-ui-00380", "machine": "在不同版本上儲存。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00381", "machine": "瑪麗亞·比洛", "manual": null, "status": "translated"}
+{"id": "scene-ui-00382", "machine": "3 天門票", "manual": null, "status": "translated"}
+{"id": "scene-ui-00383", "machine": "新", "manual": null, "status": "translated"}
+{"id": "scene-ui-00384", "machine": "-2", "manual": null, "status": "translated"}
+{"id": "scene-ui-00385", "machine": "當前故事：里齊亞", "manual": null, "status": "translated"}
+{"id": "scene-ui-00386", "machine": "同步成就", "manual": null, "status": "translated"}
+{"id": "scene-ui-00387", "machine": "安里卡", "manual": null, "status": "translated"}
+{"id": "scene-ui-00388", "machine": "國家", "manual": null, "status": "translated"}
+{"id": "scene-ui-00389", "machine": "創建帳號", "manual": null, "status": "translated"}
+{"id": "scene-ui-00390", "machine": "人力資源與行政部", "manual": null, "status": "translated"}
+{"id": "scene-ui-00391", "machine": "觀看廣告以賺取故事點數。使用點數來推進故事進度。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00392", "machine": "蘇德蘭共和國", "manual": null, "status": "translated"}
+{"id": "scene-ui-00393", "machine": "首席策略師\n設計與寫作部", "manual": null, "status": "translated"}
+{"id": "scene-ui-00394", "machine": "無網路連線", "manual": null, "status": "translated"}
+{"id": "scene-ui-00395", "machine": "佩德拉姆·馬舒夫", "manual": null, "status": "translated"}
+{"id": "scene-ui-00396", "machine": "輸入指令...", "manual": null, "status": "translated"}
+{"id": "scene-ui-00397", "machine": "格勞喬馬克思主義者", "manual": null, "status": "translated"}
+{"id": "scene-ui-00398", "machine": "觀看廣告", "manual": null, "status": "translated"}
+{"id": "scene-ui-00399", "machine": "返回", "manual": null, "status": "translated"}
+{"id": "scene-ui-00400", "machine": "70", "manual": null, "status": "translated"}
+{"id": "scene-ui-00401", "machine": "？", "manual": null, "status": "translated"}
+{"id": "scene-ui-00402", "machine": "您先前已使用 ... 登入", "manual": null, "status": "translated"}
+{"id": "scene-ui-00403", "machine": "阿德爾·巴哈魯霍姆", "manual": null, "status": "translated"}
+{"id": "scene-ui-00404", "machine": "財務經理", "manual": null, "status": "translated"}
+{"id": "scene-ui-00405", "machine": "跳過序章", "manual": null, "status": "translated"}
+{"id": "scene-ui-00406", "machine": "每日獎勵", "manual": null, "status": "translated"}
+{"id": "scene-ui-00407", "machine": "故事選擇", "manual": null, "status": "translated"}
+{"id": "scene-ui-00408", "machine": "從現有的已完成存檔匯入", "manual": null, "status": "translated"}
+{"id": "scene-ui-00409", "machine": "代碼", "manual": null, "status": "translated"}
+{"id": "scene-ui-00410", "machine": "凱西·布雷登", "manual": null, "status": "translated"}
+{"id": "scene-ui-00411", "machine": "25小時", "manual": null, "status": "translated"}
+{"id": "scene-ui-00412", "machine": "揚·邦克", "manual": null, "status": "translated"}
+{"id": "scene-ui-00413", "machine": "納羅", "manual": null, "status": "translated"}
+{"id": "scene-ui-00414", "machine": "載入存檔", "manual": null, "status": "translated"}
+{"id": "scene-ui-00415", "machine": "丹尼爾·埃米格", "manual": null, "status": "translated"}
+{"id": "scene-ui-00416", "machine": "《Suzerain》為虛構作品，與任何現實中的人物（無論生者或死者）或事件如有雷同，純屬巧合。儘管遊戲可能呈現政治議題的多種觀點，但這些描繪僅用於藝術探索，並不代表創作者對這些觀點的認可或推廣。\n\n本遊戲包含成人主題，敘事中涉及暴力、死亡及自殺等情節。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00417", "machine": "若要領取您的禮物，請在下方輸入您的代碼。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00418", "machine": "Suzerain 已完成", "manual": null, "status": "translated"}
+{"id": "scene-ui-00419", "machine": "下一個標記/面板", "manual": null, "status": "translated"}
+{"id": "scene-ui-00420", "machine": "米爾特\r", "manual": null, "status": "translated"}
+{"id": "scene-ui-00421", "machine": "瘋狂競選", "manual": null, "status": "translated"}
+{"id": "scene-ui-00422", "machine": "主音量", "manual": null, "status": "translated"}
+{"id": "scene-ui-00423", "machine": "索爾·貝基奇", "manual": null, "status": "translated"}
+{"id": "scene-ui-00424", "machine": "奧達希爾·梅納", "manual": null, "status": "translated"}
+{"id": "scene-ui-00425", "machine": "個人檔案", "manual": null, "status": "translated"}
+{"id": "scene-ui-00426", "machine": "25:04:32", "manual": null, "status": "translated"}
+{"id": "scene-ui-00427", "machine": "選擇一個原型：安東·雷恩", "manual": null, "status": "translated"}
+{"id": "scene-ui-00428", "machine": "弗洛里安·馬里奇", "manual": null, "status": "translated"}
+{"id": "scene-ui-00429", "machine": "重置展示", "manual": null, "status": "translated"}
+{"id": "scene-ui-00430", "machine": "筆記：", "manual": null, "status": "translated"}
+{"id": "scene-ui-00431", "machine": "歷史", "manual": null, "status": "translated"}
+{"id": "scene-ui-00432", "machine": "支援", "manual": null, "status": "translated"}
+{"id": "scene-ui-00433", "machine": "裝備", "manual": null, "status": "translated"}
+{"id": "scene-ui-00434", "machine": "法典", "manual": null, "status": "translated"}
+{"id": "scene-ui-00435", "machine": "人力", "manual": null, "status": "translated"}
+{"id": "scene-ui-00436", "machine": "可用", "manual": null, "status": "translated"}
+{"id": "scene-ui-00437", "machine": "組織", "manual": null, "status": "translated"}
+{"id": "scene-ui-00438", "machine": "支持機制", "manual": null, "status": "translated"}
+{"id": "scene-ui-00439", "machine": "公共資金的分配標準將不再根據政黨在大選中獲得的票數決定。新標準將為政黨在 議會 中獲得的席位比例。政黨每年將獲得每位 議會 成員 500,000 倫的資助。\n\n\n（這將使 團結社會黨 的競選預算翻倍，並略微增加 議會 中其他政黨的預算，同時有效地取消所有低於 10% 選舉門檻政黨的資金。）", "manual": null, "status": "translated"}
+{"id": "scene-ui-00440", "machine": "單位", "manual": null, "status": "translated"}
+{"id": "scene-ui-00441", "machine": "2", "manual": null, "status": "translated"}
+{"id": "scene-ui-00442", "machine": "完成", "manual": null, "status": "translated"}
+{"id": "scene-ui-00443", "machine": "里齊亞武裝部隊", "manual": null, "status": "translated"}
+{"id": "scene-ui-00444", "machine": "清除\n", "manual": null, "status": "translated"}
+{"id": "scene-ui-00445", "machine": "攻擊", "manual": null, "status": "translated"}
+{"id": "scene-ui-00446", "machine": "繼續", "manual": null, "status": "translated"}
+{"id": "scene-ui-00447", "machine": "坦克", "manual": null, "status": "translated"}
+{"id": "scene-ui-00448", "machine": "無可用單位。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00449", "machine": "特拉多爾", "manual": null, "status": "translated"}
+{"id": "scene-ui-00450", "machine": "6", "manual": null, "status": "translated"}
+{"id": "scene-ui-00451", "machine": "500", "manual": null, "status": "translated"}
+{"id": "scene-ui-00452", "machine": "隨機化", "manual": null, "status": "translated"}
+{"id": "scene-ui-00453", "machine": "宗教", "manual": null, "status": "translated"}
+{"id": "scene-ui-00454", "machine": "戰艦", "manual": null, "status": "translated"}
+{"id": "scene-ui-00455", "machine": "總統", "manual": null, "status": "translated"}
+{"id": "scene-ui-00456", "machine": "官方語言：", "manual": null, "status": "translated"}
+{"id": "scene-ui-00457", "machine": "移動已鎖定！", "manual": null, "status": "translated"}
+{"id": "scene-ui-00458", "machine": "索德蘭總統", "manual": null, "status": "translated"}
+{"id": "scene-ui-00459", "machine": "空襲", "manual": null, "status": "translated"}
+{"id": "scene-ui-00460", "machine": "盧德林將軍", "manual": null, "status": "translated"}
+{"id": "scene-ui-00461", "machine": "請隨意在此處做筆記，以幫助您記住整個故事中的重要觀點……\n", "manual": null, "status": "translated"}
+{"id": "scene-ui-00462", "machine": "地點", "manual": null, "status": "translated"}
+{"id": "scene-ui-00463", "machine": "無可用提示。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00464", "machine": "廣告", "manual": null, "status": "translated"}
+{"id": "scene-ui-00465", "machine": "國防", "manual": null, "status": "translated"}
+{"id": "scene-ui-00466", "machine": "6/8", "manual": null, "status": "translated"}
+{"id": "scene-ui-00467", "machine": "重置部署", "manual": null, "status": "translated"}
+{"id": "scene-ui-00468", "machine": "當前", "manual": null, "status": "translated"}
+{"id": "scene-ui-00469", "machine": "福利", "manual": null, "status": "translated"}
+{"id": "scene-ui-00470", "machine": "角色自訂", "manual": null, "status": "translated"}
+{"id": "scene-ui-00471", "machine": "狀態", "manual": null, "status": "translated"}
+{"id": "scene-ui-00472", "machine": "1/2", "manual": null, "status": "translated"}
+{"id": "scene-ui-00473", "machine": "選擇部署", "manual": null, "status": "translated"}
+{"id": "scene-ui-00474", "machine": "（加入訓練佇列）", "manual": null, "status": "translated"}
+{"id": "scene-ui-00475", "machine": "皇家法令", "manual": null, "status": "translated"}
+{"id": "scene-ui-00476", "machine": "戰鬥機", "manual": null, "status": "translated"}
+{"id": "scene-ui-00477", "machine": "命令", "manual": null, "status": "translated"}
+{"id": "scene-ui-00478", "machine": "目前沒有可用新聞...", "manual": null, "status": "translated"}
+{"id": "scene-ui-00479", "machine": "取消訓練", "manual": null, "status": "translated"}
+{"id": "scene-ui-00480", "machine": "部署中", "manual": null, "status": "translated"}
+{"id": "scene-ui-00481", "machine": "由 里齊亞人 坦克公司製造的裝甲師。\n\n在攻擊山地時會受到 -1 攻擊懲罰", "manual": null, "status": "translated"}
+{"id": "scene-ui-00482", "machine": "INTE FORET SESIONER", "manual": null, "status": "translated"}
+{"id": "scene-ui-00483", "machine": "取消選取當前單位", "manual": null, "status": "translated"}
+{"id": "scene-ui-00484", "machine": "-", "manual": null, "status": "translated"}
+{"id": "scene-ui-00485", "machine": "貿易", "manual": null, "status": "translated"}
+{"id": "scene-ui-00486", "machine": "新憲法將允許 議會 僅在獲得 2/3 (66%) 多數票的情況下否決法案。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00487", "machine": "使單位失效\n造成 {0} <sprite name=\"organization\"> 傷害", "manual": null, "status": "translated"}
+{"id": "scene-ui-00488", "machine": "組織", "manual": null, "status": "translated"}
+{"id": "scene-ui-00489", "machine": "訓練", "manual": null, "status": "translated"}
+{"id": "scene-ui-00490", "machine": "敵方回合", "manual": null, "status": "translated"}
+{"id": "scene-ui-00491", "machine": "前往地點", "manual": null, "status": "translated"}
+{"id": "scene-ui-00492", "machine": "選單", "manual": null, "status": "translated"}
+{"id": "scene-ui-00493", "machine": "不穩定", "manual": null, "status": "translated"}
+{"id": "scene-ui-00494", "machine": "步兵", "manual": null, "status": "translated"}
+{"id": "scene-ui-00495", "machine": "當選於：", "manual": null, "status": "translated"}
+{"id": "scene-ui-00496", "machine": "大霍爾索德地區", "manual": null, "status": "translated"}
+{"id": "scene-ui-00497", "machine": "已頒布", "manual": null, "status": "translated"}
+{"id": "scene-ui-00498", "machine": "公平貿易委員會", "manual": null, "status": "translated"}
+{"id": "scene-ui-00499", "machine": "開始故事後，您將無法更改 安東·雷恩 的外觀。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00500", "machine": "Sturtecen ely tuten inter ord dei 霍爾索德", "manual": null, "status": "translated"}
+{"id": "scene-ui-00501", "machine": "坦克", "manual": null, "status": "translated"}
+{"id": "scene-ui-00502", "machine": "空中支援", "manual": null, "status": "translated"}
+{"id": "scene-ui-00503", "machine": "挖掘 托佩斯 古代 雷澤尼德 城市\n", "manual": null, "status": "translated"}
+{"id": "scene-ui-00504", "machine": "250", "manual": null, "status": "translated"}
+{"id": "scene-ui-00505", "machine": "角色", "manual": null, "status": "translated"}
+{"id": "scene-ui-00506", "machine": "內閣", "manual": null, "status": "translated"}
+{"id": "scene-ui-00507", "machine": "公平貿易與競爭委員會", "manual": null, "status": "translated"}
+{"id": "scene-ui-00508", "machine": "政黨：", "manual": null, "status": "translated"}
+{"id": "scene-ui-00509", "machine": "外交", "manual": null, "status": "translated"}
+{"id": "scene-ui-00510", "machine": "<sprite name=currency>", "manual": null, "status": "translated"}
+{"id": "scene-ui-00511", "machine": "asdasd", "manual": null, "status": "translated"}
+{"id": "scene-ui-00512", "machine": "Instreten sis er Anginicar av Moreigna ins Altmer ins Almergwolltene keserten..", "manual": null, "status": "translated"}
+{"id": "scene-ui-00513", "machine": "下一條目", "manual": null, "status": "translated"}
+{"id": "scene-ui-00514", "machine": "談判權力", "manual": null, "status": "translated"}
+{"id": "scene-ui-00515", "machine": "高", "manual": null, "status": "translated"}
+{"id": "scene-ui-00516", "machine": "知名成員", "manual": null, "status": "translated"}
+{"id": "scene-ui-00517", "machine": "130", "manual": null, "status": "translated"}
+{"id": "scene-ui-00518", "machine": "從明年開始，芝加哥街頭將不再有馬車行駛時發出的馬蹄聲與車廂嘎吱聲，因為市議會於週五投票禁止了馬車。\n\n\n根據該條例，自 2021 年 1 月 1 日起生效，營運商將無法續簽許可證，市政府也將停止發放新許可證。\n\n\n馬車產業多年來一直在萎縮。據《芝加哥論壇報》報導，該市目前有 10 個馬車許可證將於年底到期。據美聯社報導，該市曾一度提供 60 個許可證。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00519", "machine": "敵方單位", "manual": null, "status": "translated"}
+{"id": "scene-ui-00520", "machine": "主選單", "manual": null, "status": "translated"}
+{"id": "scene-ui-00521", "machine": "王室 下令在 布雷納斯 省內的 賈萊斯 建立一座最先進的轟炸機工廠。該設施專門生產先進的轟炸機，將顯著增強 王國 的進攻性空中能力。這些轟炸機專為對陸地和海上目標進行精確打擊而設計，確保在未來的行動中佔據戰略優勢。\n\n該法令加強了 王國 的軍事力量，重點在於遠程打擊能力和作戰靈活性。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00522", "machine": "經濟", "manual": null, "status": "translated"}
+{"id": "scene-ui-00523", "machine": "已有一個活動場景。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00524", "machine": "空投傘兵", "manual": null, "status": "translated"}
+{"id": "scene-ui-00525", "machine": "切換是否顯示單位數據", "manual": null, "status": "translated"}
+{"id": "scene-ui-00526", "machine": "(+2)", "manual": null, "status": "translated"}
+{"id": "scene-ui-00527", "machine": "法案點數", "manual": null, "status": "translated"}
+{"id": "scene-ui-00528", "machine": "本菲，綽號「格魯尼之珠」，是 蘇德蘭共和國 第七大城市，也是第三富裕的城市。它位於 格魯尼 東南部，毗鄰維斯海。\r\n\r\n它以海灘和葡萄酒聞名於世，作為 萊斯皮亞 奢華海岸的平價替代選擇而廣受歡迎。僅此一城就貢獻了 蘇德蘭 五分之一的旅遊收入。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00529", "machine": "記事本", "manual": null, "status": "translated"}
+{"id": "scene-ui-00530", "machine": "傘兵", "manual": null, "status": "translated"}
+{"id": "scene-ui-00531", "machine": "編輯名稱：", "manual": null, "status": "translated"}
+{"id": "scene-ui-00532", "machine": "萊斯皮亞共和國", "manual": null, "status": "translated"}
+{"id": "scene-ui-00533", "machine": "sadasdas", "manual": null, "status": "translated"}
+{"id": "scene-ui-00534", "machine": "局勢", "manual": null, "status": "translated"}
+{"id": "scene-ui-00535", "machine": "簽署", "manual": null, "status": "translated"}
+{"id": "scene-ui-00536", "machine": "里齊亞人 軍隊", "manual": null, "status": "translated"}
+{"id": "scene-ui-00537", "machine": "法典條目", "manual": null, "status": "translated"}
+{"id": "scene-ui-00538", "machine": "儲存", "manual": null, "status": "translated"}
+{"id": "scene-ui-00539", "machine": "建設中", "manual": null, "status": "translated"}
+{"id": "scene-ui-00540", "machine": "政策", "manual": null, "status": "translated"}
+{"id": "scene-ui-00541", "machine": "連結", "manual": null, "status": "translated"}
+{"id": "scene-ui-00542", "machine": "隨時間的變化", "manual": null, "status": "translated"}
+{"id": "scene-ui-00543", "machine": "過往報告", "manual": null, "status": "translated"}
+{"id": "scene-ui-00544", "machine": "開啟城市資訊", "manual": null, "status": "translated"}
+{"id": "scene-ui-00545", "machine": "0", "manual": null, "status": "translated"}
+{"id": "scene-ui-00546", "machine": "條目", "manual": null, "status": "translated"}
+{"id": "scene-ui-00547", "machine": "決策", "manual": null, "status": "translated"}
+{"id": "scene-ui-00548", "machine": "第一節", "manual": null, "status": "translated"}
+{"id": "scene-ui-00549", "machine": "連結", "manual": null, "status": "translated"}
+{"id": "scene-ui-00550", "machine": "載入最後檢查點", "manual": null, "status": "translated"}
+{"id": "scene-ui-00551", "machine": "國家 結束 概覽", "manual": null, "status": "translated"}
+{"id": "scene-ui-00552", "machine": "5", "manual": null, "status": "translated"}
+{"id": "scene-ui-00553", "machine": "卡車", "manual": null, "status": "translated"}
+{"id": "scene-ui-00554", "machine": "裝甲師在補給線上移動速度較快，但在進攻山區時會受到削弱。  ", "manual": null, "status": "translated"}
+{"id": "scene-ui-00555", "machine": "日誌", "manual": null, "status": "translated"}
+{"id": "scene-ui-00556", "machine": "當前回合", "manual": null, "status": "translated"}
+{"id": "scene-ui-00557", "machine": "選擇一個板塊", "manual": null, "status": "translated"}
+{"id": "scene-ui-00558", "machine": "主題", "manual": null, "status": "translated"}
+{"id": "scene-ui-00559", "machine": "新存檔", "manual": null, "status": "translated"}
+{"id": "scene-ui-00560", "machine": "adasd", "manual": null, "status": "translated"}
+{"id": "scene-ui-00561", "machine": "防禦", "manual": null, "status": "translated"}
+{"id": "scene-ui-00562", "machine": "回合", "manual": null, "status": "translated"}
+{"id": "scene-ui-00563", "machine": "開啟法典條目", "manual": null, "status": "translated"}
+{"id": "scene-ui-00564", "machine": "強化單位 \n每回合恢復 {0} <sprite name=\"organization\"> \n增加 {1} <sprite name=\"defence\"> 防禦", "manual": null, "status": "translated"}
+{"id": "scene-ui-00565", "machine": "法律", "manual": null, "status": "translated"}
+{"id": "scene-ui-00566", "machine": "敘事文本", "manual": null, "status": "translated"}
+{"id": "scene-ui-00567", "machine": "此類別目前沒有可用的法令", "manual": null, "status": "translated"}
+{"id": "scene-ui-00568", "machine": "目前 法案ive：", "manual": null, "status": "translated"}
+{"id": "scene-ui-00569", "machine": "返回法典", "manual": null, "status": "translated"}
+{"id": "scene-ui-00570", "machine": "結束回合", "manual": null, "status": "translated"}
+{"id": "scene-ui-00571", "machine": "族裔", "manual": null, "status": "translated"}
+{"id": "scene-ui-00572", "machine": "大國民議會", "manual": null, "status": "translated"}
+{"id": "scene-ui-00573", "machine": "所有陸地邊界格必須駐紮單位。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00574", "machine": "否決", "manual": null, "status": "translated"}
+{"id": "scene-ui-00575", "machine": "asdasdsad", "manual": null, "status": "translated"}
+{"id": "scene-ui-00576", "machine": "在此輸入以搜尋...", "manual": null, "status": "translated"}
+{"id": "scene-ui-00577", "machine": "開啟人口統計", "manual": null, "status": "translated"}
+{"id": "scene-ui-00578", "machine": "空中支援 1 回合\n+{0} <sprite name=\"attack\">\n+{0} <sprite name=\"defence\">\n+{0} <sprite name=\"support\">", "manual": null, "status": "translated"}
+{"id": "scene-ui-00579", "machine": "輸入存檔名稱...", "manual": null, "status": "translated"}
+{"id": "scene-ui-00580", "machine": "返回", "manual": null, "status": "translated"}
+{"id": "scene-ui-00581", "machine": "已部署", "manual": null, "status": "translated"}
+{"id": "scene-ui-00582", "machine": "超連結", "manual": null, "status": "translated"}
+{"id": "scene-ui-00583", "machine": "訓練中", "manual": null, "status": "translated"}
+{"id": "scene-ui-00584", "machine": "教學", "manual": null, "status": "translated"}
+{"id": "scene-ui-00585", "machine": "在下方的圖表中，您可以追蹤經濟隨時間的成長，並使用時間軸篩選器來探索歷史數據。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00586", "machine": "增援", "manual": null, "status": "translated"}
+{"id": "scene-ui-00587", "machine": "1954", "manual": null, "status": "translated"}
+{"id": "scene-ui-00588", "machine": "競選資金法案", "manual": null, "status": "translated"}
+{"id": "scene-ui-00589", "machine": "asdasdasd", "manual": null, "status": "translated"}
+{"id": "scene-ui-00590", "machine": "下一頁", "manual": null, "status": "translated"}
+{"id": "scene-ui-00591", "machine": "繼續...", "manual": null, "status": "translated"}
+{"id": "scene-ui-00592", "machine": "海軍入侵", "manual": null, "status": "translated"}
+{"id": "scene-ui-00593", "machine": "新聞", "manual": null, "status": "translated"}
+{"id": "scene-ui-00594", "machine": "+", "manual": null, "status": "translated"}
+{"id": "scene-ui-00595", "machine": "建設", "manual": null, "status": "translated"}
+{"id": "scene-ui-00596", "machine": "低", "manual": null, "status": "translated"}
+{"id": "scene-ui-00597", "machine": "你已經放棄了否決法案的權力。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00598", "machine": "經濟", "manual": null, "status": "translated"}
+{"id": "scene-ui-00599", "machine": "軍隊", "manual": null, "status": "translated"}
+{"id": "scene-ui-00600", "machine": "上一頁", "manual": null, "status": "translated"}
+{"id": "scene-ui-00601", "machine": "部署額外單位", "manual": null, "status": "translated"}
+{"id": "scene-ui-00602", "machine": "切換單位數據", "manual": null, "status": "translated"}
+{"id": "scene-ui-00603", "machine": "Grander Asemble au Altmer dei 蘇德蘭", "manual": null, "status": "translated"}
+{"id": "scene-ui-00604", "machine": "世界地圖", "manual": null, "status": "translated"}
+{"id": "scene-ui-00605", "machine": "潛艇", "manual": null, "status": "translated"}
+{"id": "scene-ui-00606", "machine": "宣佈緊急狀態", "manual": null, "status": "translated"}
+{"id": "scene-ui-00607", "machine": "資源與單位", "manual": null, "status": "translated"}
+{"id": "scene-ui-00608", "machine": "支持說明", "manual": null, "status": "translated"}
+{"id": "scene-ui-00609", "machine": "經濟增長", "manual": null, "status": "translated"}
+{"id": "scene-ui-00610", "machine": "舊衛隊 指的是舊政府中那些捍衛現狀並推動保守政治的 索爾主義者。有人聲稱他們建立了一個控制國家機器的深層政府。", "manual": null, "status": "translated"}
+{"id": "scene-ui-00611", "machine": "回到對話", "manual": null, "status": "translated"}
+{"id": "scene-ui-00612", "machine": "重新開始", "manual": null, "status": "translated"}
+{"id": "scene-ui-00613", "machine": "使用海軍陸戰隊入侵海岸地塊", "manual": null, "status": "translated"}
+{"id": "scene-ui-00614", "machine": "轟炸機", "manual": null, "status": "translated"}
+{"id": "scene-ui-00615", "machine": "安東", "manual": null, "status": "translated"}
+{"id": "scene-ui-00616", "machine": "團結社會黨", "manual": null, "status": "translated"}
+{"id": "scene-ui-00617", "machine": "選單", "manual": null, "status": "translated"}
+{"id": "scene-ui-00618", "machine": "人口統計", "manual": null, "status": "translated"}
+{"id": "scene-ui-00619", "machine": "穩定度", "manual": null, "status": "translated"}
+{"id": "scene-ui-00620", "machine": "這位民族主義將軍在 1927 年發動了軍事政變並宣佈戒嚴。", "manual": null, "status": "translated"}
