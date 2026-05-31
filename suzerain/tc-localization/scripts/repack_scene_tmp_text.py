@@ -23,8 +23,12 @@ from rich.console import Console
 app = typer.Typer(add_completion=False)
 console = Console()
 
-SCENE_GLOB = "scenes_scenes_assets_scenes_*.bundle"
 TMP_TEXT_SCRIPT = 7477354737935883349  # TextMeshProUGUI
+SAFE_SCENE_FILES = (
+    "scenes_scenes_assets_scenes_mainmenu.unity_6dd6ca6b71e2733b13cf2860d4a95134.bundle",
+    "scenes_scenes_assets_scenes_rizia.unity_f3aa16cfb48dca20773754a9c19d5c1d.bundle",
+)
+SORDLAND_FILE = "scenes_scenes_assets_scenes_sordland.unity_6a29f2cab2ef8b301931a992da045ec1.bundle"
 
 
 def _load_map(project: Path) -> dict[str, str]:
@@ -51,6 +55,11 @@ def main(
     input_dir: Path = typer.Argument(..., exists=True, file_okay=False, readable=True),
     project: Path = typer.Option(..., "--project", "-p", exists=True, file_okay=False),
     out_dir: Path = typer.Option(..., "--out-dir", "-o"),
+    include_sordland: bool = typer.Option(
+        False,
+        "--include-sordland",
+        help="Also patch the Sordland scene bundle (known to trigger load-game crash in current build).",
+    ),
 ) -> None:
     mapping = _load_map(project)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -58,7 +67,15 @@ def main(
     bundles = 0
     hits = 0
 
-    for bundle in sorted(input_dir.glob(SCENE_GLOB)):
+    names = list(SAFE_SCENE_FILES)
+    if include_sordland:
+        names.append(SORDLAND_FILE)
+
+    for name in names:
+        bundle = input_dir / name
+        if not bundle.exists():
+            console.print(f"[yellow]missing[/]: {bundle}")
+            continue
         env = UnityPy.load(str(bundle))
         changed = False
 

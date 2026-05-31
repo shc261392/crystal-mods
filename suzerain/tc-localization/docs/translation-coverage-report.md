@@ -3,6 +3,7 @@
 Date: 2026-05-31
 Branch: `suzerain-checkpoint-2efaf1c`
 Checkpoint commit: `8ec8b13`
+Latest safety commit: `fce1b72`
 
 ## Scope summary
 
@@ -28,7 +29,7 @@ Runtime patch notes:
   - `StoryPackDataJson`
   - `AppBundleDataJson`
 
-### 2) Scene UI visible text (safe subset)
+### 2) Scene UI visible text (safe subset project)
 
 Source: `scene-tmp-translation/`
 
@@ -37,12 +38,13 @@ Source: `scene-tmp-translation/`
 - Newly machine-translated this pass: **561**
 - Final status: **602 / 602 translated**, pending **0**
 
-Repack/deploy result:
-- Scene bundles patched: **3**
-  - `mainmenu`
-  - `rizia`
-  - `sordland`
-- Runtime `TextMeshProUGUI.m_text` updates applied: **1812**
+Repack/build capability:
+- Scene TMP project can translate all extracted scene TMP strings.
+
+Crash-safe deploy policy (validated):
+- Patch `mainmenu` + `rizia` only.
+- Keep `sordland` original (patched Sordland currently triggers load-game crash).
+- Current crash-safe deployment applies **1141** TMP updates across 2 scene bundles.
 
 ## What has NOT been translated (intentional)
 
@@ -76,6 +78,11 @@ This is expected for values such as:
 - markup-heavy strings
 - short labels where target may intentionally match source
 
+### D) Temporarily held-out translation due stability
+
+- `sordland` scene TMP patch: held out from deployment until crash root-cause is resolved.
+- Status: translated in project, not deployed for stability.
+
 ## Current deployment checkpoint
 
 Deployed on this branch line:
@@ -103,3 +110,9 @@ Deployed on this branch line:
 4. **Release hardening:**
    - Keep backups for all changed bundles
    - Tag a release commit once crash-free behavior is confirmed after load-game tests
+
+## Immediate next-step reference
+
+1. Keep current crash-safe deployment policy (entity patched + mainmenu/rizia patched + sordland original).
+2. Build a tiny Sordland whitelist trial (20-30 non-critical TMP strings).
+3. Re-test load game after each tiny batch and log exact offender(s).

@@ -32,6 +32,16 @@ Do **not** translate string fields that behave as runtime keys / linkage identif
 - Rationale:
   - Visible render text field; safe to localize directly.
 
+## Crash-safety scene policy (discovered by binary isolation)
+
+- `mainmenu` scene patch: safe
+- `rizia` scene patch: safe
+- `sordland` scene patch: **unsafe in current build line** (causes load-game crash)
+
+Default policy now:
+- Patch only `mainmenu` + `rizia` scene bundles.
+- Keep `sordland` scene bundle original until a stricter whitelist strategy is added.
+
 ## Policy for future translation changes
 
 1. Translate only presentation fields (`Title`, `Description`, `Text`, `Subtitle`, TMP `m_text`).
