@@ -60,8 +60,38 @@ def main(
         "--include-sordland",
         help="Also patch the Sordland scene bundle (known to trigger load-game crash in current build).",
     ),
+    whitelist_tsv: Path | None = typer.Option(
+        None,
+        "--whitelist-tsv",
+        help="Optional TSV with header containing `source` column. If set, only listed source strings are patched.",
+    ),
+    whitelist_limit: int = typer.Option(
+        0,
+        "--whitelist-limit",
+        help="Max number of whitelist rows to apply (0 = all).",
+    ),
 ) -> None:
     mapping = _load_map(project)
+    allowed: set[str] | None = None
+
+    if whitelist_tsv is not None:
+        rows = [ln for ln in whitelist_tsv.read_text("utf-8").splitlines() if ln.strip()]
+        if rows:
+            header = rows[0].split("\t")
+            try:
+                src_idx = header.index("source")
+            except ValueError as e:
+                raise typer.BadParameter("whitelist TSV must include `source` column") from e
+            body = rows[1:]
+            if whitelist_limit > 0:
+                body = body[:whitelist_limit]
+            allowed = set()
+            for ln in body:
+                cols = ln.split("\t")
+                if len(cols) > src_idx and cols[src_idx].strip():
+                    allowed.add(cols[src_idx])
+            console.print(f"[cyan]Whitelist[/]: applying {len(allowed)} source strings")
+
     out_dir.mkdir(parents=True, exist_ok=True)
 
     bundles = 0
@@ -90,6 +120,8 @@ def main(
             if not isinstance(script, dict) or script.get("m_PathID") != TMP_TEXT_SCRIPT:
                 continue
             src = tree.get("m_text")
+            if allowed is not None and (not isinstance(src, str) or src not in allowed):
+                continue
             tgt = mapping.get(src) if isinstance(src, str) else None
             if tgt and tgt != src:
                 tree["m_text"] = tgt
