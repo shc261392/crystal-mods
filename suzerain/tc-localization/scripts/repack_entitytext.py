@@ -9,17 +9,14 @@
 """Repack translated strings back into a Suzerain EntityTextAssets bundle.
 
 Reads the translation project's ``state.jsonl`` (final = manual else machine)
-and the original bundle, then rewrites each TextAsset's ``m_Script`` JSON with
-the translated values at their recorded paths. Object iteration order matches
-``extract_entitytext.py`` so the ``<object_index:05d>::<path>`` IDs line up.
+and the original bundle, then rewrites:
 
-The original bundle is never modified in place: output goes to ``--out``.
+1) standalone TextAsset JSON copies (path-precise)
+2) runtime "Entity Text Assets" MonoBehaviour ``*DataJson`` fields (also path-precise)
 
-Usage:
-    uv run --script repack_entitytext.py \\
-        <original.bundle> \\
-        --project ../translation \\
-        --out ../build/<original.bundle name>
+Important safety rule:
+- Runtime identity/linkage fields are excluded from DataJson patching:
+  StoryPackDataJson, AppBundleDataJson.
 """
 
 from __future__ import annotations
@@ -35,14 +32,11 @@ from rich.console import Console
 app = typer.Typer(add_completion=False)
 console = Console()
 
-# Splits an ID path like "items[1662].ReportProperties.Description" into steps.
-# Each match is either a dict key or a list index.
-_STEP_RE = re.compile(r"([^.\[\]]+)|\[(\d+)\]")
-_TRANSLATABLE_KEYS = {"Title", "Description", "Text", "Subtitle"}
+_STEP_RE = re.compile(r"([^\.\[\]]+)|\[(\d+)\]")
+_RUNTIME_ID_FIELDS = {"StoryPackDataJson", "AppBundleDataJson"}
 
 
 def _parse_path(path: str) -> list[object]:
-    """Turn a dotted/indexed path into a list of str keys and int indices."""
     steps: list[object] = []
     for m in _STEP_RE.finditer(path):
         key, idx = m.group(1), m.group(2)
@@ -54,7 +48,6 @@ def _parse_path(path: str) -> list[object]:
 
 
 def _set_by_path(root: object, steps: list[object], value: str) -> bool:
-    """Set ``value`` at the location described by ``steps``. Returns success."""
     node = root
     for step in steps[:-1]:
         if isinstance(step, int):
@@ -65,12 +58,14 @@ def _set_by_path(root: object, steps: list[object], value: str) -> bool:
             if not isinstance(node, dict) or step not in node:
                 return False
             node = node[step]
+
     last = steps[-1]
     if isinstance(last, int):
         if not isinstance(node, list) or last >= len(node):
             return False
         node[last] = value
         return True
+
     if not isinstance(node, dict) or last not in node:
         return False
     node[last] = value
@@ -78,7 +73,6 @@ def _set_by_path(root: object, steps: list[object], value: str) -> bool:
 
 
 def _load_final(project: Path) -> dict[str, str]:
-    """Return {unit_id: final_text} from the project's state.jsonl."""
     state_path = project / "state.jsonl"
     out: dict[str, str] = {}
     for line in state_path.read_text("utf-8").splitlines():
@@ -91,91 +85,57 @@ def _load_final(project: Path) -> dict[str, str]:
     return out
 
 
-def _load_source(project: Path) -> dict[str, str]:
-    """Return {unit_id: english_text} from the project's source.jsonl."""
-    src_path = project / "source.jsonl"
-    out: dict[str, str] = {}
-    for line in src_path.read_text("utf-8").splitlines():
-        if not line.strip():
-            continue
-        rec = json.loads(line)
-        if rec.get("text"):
-            out[rec["id"]] = rec["text"]
-    return out
+def _patch_database(
+    env: UnityPy.Environment, by_asset_name: dict[str, list[tuple[str, str]]]
+) -> tuple[int, int]:
+    """Patch runtime DataJson fields with exact path updates.
 
-
-def _build_text_map(project: Path) -> dict[str, str]:
-    """Map English source string -> translated string.
-
-    The runtime database (the "Entity Text Assets" MonoBehaviour) stores its
-    content as ``*DataJson`` strings whose values mirror the standalone
-    TextAssets, so a value-keyed map lets us patch it without re-deriving the
-    per-field path layout.
-    """
-    source = _load_source(project)
-    finals = _load_final(project)
-    mapping: dict[str, str] = {}
-    for uid, tgt in finals.items():
-        src = source.get(uid)
-        if src and tgt and src != tgt and src not in mapping:
-            mapping[src] = tgt
-    return mapping
-
-
-def _replace_strings(node: object, mapping: dict[str, str]) -> int:
-    """Recursively replace localisable string leaves in-place.
-
-    Safety guard: only replace values on known localisable keys extracted into
-    the translation corpus. This prevents accidental edits of non-localised
-    IDs/references that are also strings.
-    """
-    count = 0
-    if isinstance(node, dict):
-        for key, value in node.items():
-            if isinstance(value, str):
-                tgt = mapping.get(value)
-                if tgt is not None and key in _TRANSLATABLE_KEYS:
-                    node[key] = tgt
-                    count += 1
-            else:
-                count += _replace_strings(value, mapping)
-    elif isinstance(node, list):
-        for value in node:
-            if not isinstance(value, str):
-                count += _replace_strings(value, mapping)
-    return count
-
-
-def _patch_database(env: UnityPy.Environment, mapping: dict[str, str]) -> tuple[int, int]:
-    """Patch the runtime "Entity Text Assets" MonoBehaviour *DataJson fields.
-
-    Returns (strings_replaced, fields_touched).
+    BillsDataJson -> BillsData (TextAsset m_Name) mapping is used to target
+    precise fields/paths and avoid global replacement side effects.
     """
     replaced = 0
     fields = 0
+
     for obj in env.objects:
         if obj.type.name != "MonoBehaviour":
             continue
+
         tree = obj.read_typetree()
         if tree.get("m_Name") != "Entity Text Assets":
             continue
+
         touched = False
         for key, value in tree.items():
             if not (key.endswith("DataJson") and isinstance(value, str) and value.strip()):
                 continue
+            if key in _RUNTIME_ID_FIELDS:
+                continue
+
+            asset_name = key[: -len("Json")]
+            pairs = by_asset_name.get(asset_name)
+            if not pairs:
+                continue
+
             try:
                 data = json.loads(value)
             except json.JSONDecodeError:
                 continue
-            n = _replace_strings(data, mapping)
+
+            n = 0
+            for path, text in pairs:
+                if _set_by_path(data, _parse_path(path), text):
+                    n += 1
+
             if n:
                 tree[key] = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
                 replaced += n
                 fields += 1
                 touched = True
+
         if touched:
             obj.save_typetree(tree)
         break
+
     return replaced, fields
 
 
@@ -184,17 +144,12 @@ def main(
     bundle: Path = typer.Argument(..., exists=True, dir_okay=False, readable=True),
     project: Path = typer.Option(..., "--project", "-p", exists=True, file_okay=False),
     out: Path = typer.Option(..., "--out", "-o"),
-    require_final: bool = typer.Option(
-        False, "--require-final", help="Only apply units with status=final."
-    ),
+    require_final: bool = typer.Option(False, "--require-final", help="Only apply units with status=final."),
 ) -> None:
-    """Inject translations into ``bundle`` and write the result to ``out``."""
     finals = _load_final(project)
     if require_final:
-        # Re-filter using status when strict mode is requested.
-        state_path = project / "state.jsonl"
         finals = {}
-        for line in state_path.read_text("utf-8").splitlines():
+        for line in (project / "state.jsonl").read_text("utf-8").splitlines():
             if not line.strip():
                 continue
             rec = json.loads(line)
@@ -203,9 +158,9 @@ def main(
             final = rec.get("manual") if rec.get("manual") is not None else rec.get("machine")
             if final:
                 finals[rec["id"]] = final
+
     console.print(f"[cyan]Loaded[/] {len(finals)} translated units from {project}")
 
-    # Group translations by object index for efficient per-object application.
     by_index: dict[int, list[tuple[str, str]]] = {}
     for uid, text in finals.items():
         idx_str, _, path = uid.partition("::")
@@ -220,23 +175,23 @@ def main(
     applied = 0
     missed = 0
     objects_touched = 0
+    by_asset_name: dict[str, list[tuple[str, str]]] = {}
 
     for idx, obj in enumerate(env.objects):
         pairs = by_index.get(idx)
         if not pairs:
             continue
         if obj.type.name != "TextAsset":
-            console.print(f"[yellow]Object {idx} is {obj.type.name}, not TextAsset; skipping[/]")
             continue
+
         tree = obj.read_typetree()
         script = tree.get("m_Script")
         if not isinstance(script, str):
-            console.print(f"[yellow]Object {idx} has no string m_Script; skipping[/]")
             continue
+
         try:
             data = json.loads(script)
         except json.JSONDecodeError:
-            console.print(f"[yellow]Object {idx} m_Script is not JSON; skipping[/]")
             continue
 
         changed = 0
@@ -246,35 +201,27 @@ def main(
                 applied += 1
             else:
                 missed += 1
+
         if changed:
-            # Compact separators keep the asset size close to the original.
             tree["m_Script"] = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
             obj.save_typetree(tree)
             objects_touched += 1
 
-    # Primary target: the runtime "Entity Text Assets" MonoBehaviour. The game
-    # deserializes its ``*DataJson`` string fields at load time; the standalone
-    # TextAssets above are editor source copies and are NOT read in-game.
-    db_replaced, db_fields = _patch_database(env, _build_text_map(project))
+        name = tree.get("m_Name")
+        if isinstance(name, str) and name:
+            by_asset_name.setdefault(name, []).extend(pairs)
+
+    db_replaced, db_fields = _patch_database(env, by_asset_name)
     console.print(
-        f"[green]Database[/]: {db_replaced} strings replaced across {db_fields} "
-        f"*DataJson fields in the 'Entity Text Assets' MonoBehaviour"
+        f"[green]Database[/]: {db_replaced} path updates across {db_fields} *DataJson fields"
     )
 
     out.parent.mkdir(parents=True, exist_ok=True)
-    # Match the original bundle's LZ4 block compression. Unity Addressables can
-    # silently refuse to mount a bundle saved with a different format, so we do
-    # NOT leave it uncompressed (the UnityPy default).
     out.write_bytes(env.file.save(packer="lz4"))
     console.print(
-        f"[green]Done[/]: {applied} strings applied across {objects_touched} TextAssets, "
+        f"[green]Done[/]: {applied} path updates across {objects_touched} TextAssets, "
         f"{missed} missed -> {out}"
     )
-    if missed:
-        console.print(
-            "[yellow]Note:[/] missed paths usually mean the bundle differs from the "
-            "one used for extraction. Re-run extraction if the game updated."
-        )
 
 
 if __name__ == "__main__":
