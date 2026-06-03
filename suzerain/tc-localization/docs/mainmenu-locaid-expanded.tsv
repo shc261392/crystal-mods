@@ -1,0 +1,139 @@
+source	target	note
+LOAD	載入	mainmenu-locaid
+Options	選項	mainmenu-locaid
+New Game	新遊戲	mainmenu-locaid
+START STORY	開始故事	mainmenu-locaid
+Exit	退出	mainmenu-locaid
+Version	版本	mainmenu-locaid
+Continue	繼續	mainmenu-locaid
+Title	標題	mainmenu-locaid
+Credits	製作名單	mainmenu-locaid
+Password	密碼	mainmenu-locaid
+Enter game name...	輸入遊戲名稱...	mainmenu-locaid
+SAVING...	儲存中...	mainmenu-locaid
+Campaign 1	戰役 1	mainmenu-locaid
+Store	商店	mainmenu-locaid
+Confirm	確認	mainmenu-locaid
+Collections	收藏	mainmenu-locaid
+Main Menu	主選單	mainmenu-locaid
+profile name	個人檔案名稱	mainmenu-locaid
+Link Account with Email	連結電子郵件帳號	mainmenu-locaid
+Debug Text:	除錯文字：	mainmenu-locaid
+Incorrect email or password.	電子郵件或密碼錯誤。	mainmenu-locaid
+email	電子郵件	mainmenu-locaid
+Owned	已擁有	mainmenu-locaid
+AFFILIATION:	隸屬關係：	mainmenu-locaid
+Latest News	最新消息	mainmenu-locaid
+Delete Personal Data	刪除個人資料	mainmenu-locaid
+CAP REACHED	已達上限	mainmenu-locaid
+4th President of Sordland	第四屆蘇德蘭總統	mainmenu-locaid
+Story Points	劇情點數	mainmenu-locaid
+E-mail is required.	電子郵件為必填項。	mainmenu-locaid
+Decline	拒絕	mainmenu-locaid
+Log Out	登出	mainmenu-locaid
+Vice President:	副總統：	mainmenu-locaid
+Special Thanks	特別鳴謝	mainmenu-locaid
+Malenyevist	馬列尼耶夫主義者	mainmenu-locaid
+Continue with Apple	使用 Apple 繼續	mainmenu-locaid
+Profile Name is required.	必須輸入個人檔案名稱。	mainmenu-locaid
+United Sordland Party	蘇德蘭團結黨	mainmenu-locaid
+Bundles	組合包	mainmenu-locaid
+Sordland	蘇德蘭	mainmenu-locaid
+Load Archetype	載入原型	mainmenu-locaid
+Regionalist, Pragmatic, Man of the People	區域主義者、務實派、人民之人	mainmenu-locaid
+Eastern Merkopa Bundle	東默科帕 組合包	mainmenu-locaid
+Operations	營運	mainmenu-locaid
+Experience	經驗	mainmenu-locaid
+Map Switch/Open Login Page	地圖切換/開啟登入頁面	mainmenu-locaid
+Resolution	解析度	mainmenu-locaid
+Continue with Google	使用 Google 繼續	mainmenu-locaid
+Tickets	票務	mainmenu-locaid
+Select	選擇	mainmenu-locaid
+Settings	設定	mainmenu-locaid
+Zoom Out	縮小	mainmenu-locaid
+Cancel	取消	mainmenu-locaid
+Watch Ads	觀看廣告	mainmenu-locaid
+CHOOSE A POLITICAL AFFILIATION	選擇政治傾向	mainmenu-locaid
+Torpor Account Login	Torpor 帳號登入	mainmenu-locaid
+Torpor Account	Torpor 帳號	mainmenu-locaid
+Country	國家	mainmenu-locaid
+Gift Codes	禮物代碼	mainmenu-locaid
+Return	返回	mainmenu-locaid
+Suzerain Completed	Suzerain 已完成	mainmenu-locaid
+Delete	刪除	mainmenu-locaid
+INFLUENCE	影響力	mainmenu-locaid
+Login	登入	mainmenu-locaid
+Story Packs	劇情包	mainmenu-locaid
+To receive your gift, enter your code below.	若要領取您的禮物，請在下方輸入您的代碼。	mainmenu-locaid
+OR	或	mainmenu-locaid
+Prologue Choices	序章選擇	mainmenu-locaid
+Ad Privacy Options	廣告隱私選項	mainmenu-locaid
+Achievements	成就	mainmenu-locaid
+Post-processing	後製處理	mainmenu-locaid
+Welcome to Suzerain	歡迎來到《Suzerain》	mainmenu-locaid
+Analytics Consent	分析同意	mainmenu-locaid
+Daily Rewards	每日獎勵	mainmenu-locaid
+Account Settings	帳號設定	mainmenu-locaid
+Torpor Mode	Torpor 模式	mainmenu-locaid
+No Internet Connection	無網際網路連線	mainmenu-locaid
+Saved on a different version.	在不同版本上儲存。	mainmenu-locaid
+Zoom In	放大	mainmenu-locaid
+Re-Enter Password	重新輸入密碼	mainmenu-locaid
+Sign up with Google	使用 Google 帳號註冊	mainmenu-locaid
+Torpor Games Privacy Policy	Torpor Games 隱私權政策	mainmenu-locaid
+E-Mail Address	電子郵件地址	mainmenu-locaid
+Link Account	連結帳號	mainmenu-locaid
+Loading...	載入中...	mainmenu-locaid
+Forgot Password?	忘記密碼？	mainmenu-locaid
+Delete Torpor Account	刪除 Torpor 帳號	mainmenu-locaid
+Font Size	字體大小	mainmenu-locaid
+Skip Prologue	跳過序章	mainmenu-locaid
+Font	字體	mainmenu-locaid
+PURCHASE	購買	mainmenu-locaid
+Window Mode	視窗模式	mainmenu-locaid
+Reset Password	重設密碼	mainmenu-locaid
+New	新	mainmenu-locaid
+Leader	領袖	mainmenu-locaid
+SFX Volume	音效音量	mainmenu-locaid
+New E-Mail Address	新電子郵件地址	mainmenu-locaid
+code	代碼	mainmenu-locaid
+Lighting	光照	mainmenu-locaid
+Reward:	獎勵：	mainmenu-locaid
+Back to Login	返回登入	mainmenu-locaid
+STORY POINTS	故事點數	mainmenu-locaid
+Music Volume	音樂音量	mainmenu-locaid
+Story Selection	故事選擇	mainmenu-locaid
+Set Password	設定密碼	mainmenu-locaid
+Restore Defaults	恢復預設值	mainmenu-locaid
+Graphics	圖形	mainmenu-locaid
+Load Save	載入存檔	mainmenu-locaid
+Delete Analytics Data	刪除分析資料	mainmenu-locaid
+Error	錯誤	mainmenu-locaid
+Shadows	陰影	mainmenu-locaid
+New Version Available!	有新版本可用！	mainmenu-locaid
+New Game Name	新遊戲名稱	mainmenu-locaid
+Reconnect	重新連線	mainmenu-locaid
+Create Account	建立帳號	mainmenu-locaid
+V Sync	垂直同步	mainmenu-locaid
+Profile Details	個人資料詳情	mainmenu-locaid
+CHOOSE A PROFILE PICTURE	選擇頭像	mainmenu-locaid
+Profile	個人檔案	mainmenu-locaid
+ACHIEVEMENTS:	成就：	mainmenu-locaid
+Sync Achievements	同步成就	mainmenu-locaid
+Finish	完成	mainmenu-locaid
+Textures	紋理	mainmenu-locaid
+Accept	接受	mainmenu-locaid
+Target FPS	目標幀率	mainmenu-locaid
+Edit Username	編輯使用者名稱	mainmenu-locaid
+Sign up with Apple	使用 Apple 帳號註冊	mainmenu-locaid
+RECENT ACTIVITY	近期活動	mainmenu-locaid
+Warning	警告	mainmenu-locaid
+Render Scale	渲染比例	mainmenu-locaid
+Apply	套用	mainmenu-locaid
+Anti-Aliasing	反鋸齒	mainmenu-locaid
+Restore Purchases	恢復購買	mainmenu-locaid
+Edit Email	編輯電子郵件	mainmenu-locaid
+Typewriter	打字機	mainmenu-locaid
+Master Volume	主音量	mainmenu-locaid
+UI Scaling	介面縮放	mainmenu-locaid
+Skip Read Dialogue Text	跳過已讀對話	mainmenu-locaid

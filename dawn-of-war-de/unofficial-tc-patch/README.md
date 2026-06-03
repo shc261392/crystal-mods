@@ -6,7 +6,7 @@ Fixes font size/weight, subtitle artifacts, and applies text corrections to `Eng
 > 本模組為《戰鎚40,000：破曉之戰 決定版》的非官方繁體中文補丁，修正字型大小、字重、字幕殘字問題，並校正 `Engine.ucs` 的文字內容。  
 > **中文安裝說明請見下方 [繁體中文安裝說明](#繁體中文安裝說明)。**
 
-> **Download:** [GitHub Releases](https://github.com/shc261392/wh40k-dow-de-tc-mod/releases/latest) · [Nexus Mods](https://www.nexusmods.com/warhammerdawnofwardefinitiveedition/mods/41) — grab `wh40k-dow-de-tc-mod-v*.zip` (mod) and `vortex-ext-*.zip` (Vortex extension).
+> **Download:** [GitHub Releases](https://github.com/shc261392/wh40k-dow-de-tc-mod/releases/latest) · [Nexus Mods](https://www.nexusmods.com/warhammerdawnofwardefinitiveedition/mods/41) — grab `wh40k-dow-de-tc-mod-v*.zip` (mod) from Releases and the Vortex extension from Nexus Mods.
 
 ---
 
@@ -17,8 +17,8 @@ Fixes font size/weight, subtitle artifacts, and applies text corrections to `Eng
 
 ### Option A — Vortex Mod Manager (recommended)
 
-1. **Install the game extension** — drag `vortex-ext-game-warhammer40kdawnofwar-v*.zip` onto the Vortex **Extensions** tab and click *Enable*.  
-   *(Only needed once. This lets Vortex recognise DoW DE as a managed game.)*
+1. **Install the game extension** — download `vortex-ext-game-warhammer40kdawnofwar-v*.zip` from [Nexus Mods](https://www.nexusmods.com/site/mods/1934), then drag it onto the Vortex **Extensions** tab and click *Enable*.  
+  *(Only needed once. The extension is still under Vortex review, so drag-and-drop install is required for now.)*
 
 2. **Add the mod** — drag `wh40k-dow-de-tc-mod-v*.zip` onto Vortex.
 
@@ -71,7 +71,7 @@ bash uninstall.sh   # Linux / WSL2
 
 ## 繁體中文安裝說明
 
-> **下載：** [GitHub Releases](https://github.com/shc261392/wh40k-dow-de-tc-mod/releases/latest) · [Nexus Mods](https://www.nexusmods.com/warhammerdawnofwardefinitiveedition/mods/41)
+> **下載：** [GitHub Releases](https://github.com/shc261392/wh40k-dow-de-tc-mod/releases/latest) · [Nexus Mods](https://www.nexusmods.com/warhammerdawnofwardefinitiveedition/mods/41) — 模組壓縮檔從 Releases 下載，Vortex 擴充套件則從 Nexus Mods 下載。
 
 ### 如何找到遊戲資料夾
 
@@ -257,12 +257,11 @@ so the patched `data/` folder takes precedence. Uninstall renames it back.
 
 ## Vortex Mod Manager
 
-See **[Option A — Vortex install](#option-a--vortex-mod-manager-recommended)** above for the full walkthrough.
+The DoW DE Vortex extension is still under Vortex review, so install it by dragging the zip onto Vortex's **Extensions** tab.
 
-The repo ships a Vortex game extension (`vortex-ext/game-warhammer40kdawnofwar/`) that:
-- Registers DoW DE (Steam App 3556750) as a Vortex-managed game
-- Sets the correct install path (`Engine/Locale/Chinese/`)
-- Automatically disables `EnginLoc.sga` on deploy and re-enables it on purge
+1. Download `vortex-ext-game-warhammer40kdawnofwar-v*.zip` from [Nexus Mods](https://www.nexusmods.com/site/mods/1934).
+2. Open Vortex, drag the zip onto the **Extensions** tab, and click *Enable*.
+3. Re-open Vortex, enable **Warhammer 40,000: Dawn of War - Definitive Edition**, then install `wh40k-dow-de-tc-mod-v*.zip` and click *Deploy Mods*.
 
 ---
 

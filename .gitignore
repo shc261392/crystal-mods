@@ -68,6 +68,14 @@ releases/
 !docs/**/*.zip
 !**/fixtures/**/*.zip
 
+# Local AI model artifacts (re-downloadable; not mod source)
+*.safetensors
+*.pth
+*.pt
+*.onnx
+**/weights/
+**/models/
+
 # Extracted game references (re-extract as needed; often copyrighted)
 reference/raw/
 reference/extracted/

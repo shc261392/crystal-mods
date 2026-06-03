@@ -1,0 +1,14 @@
+# Generated extraction outputs (rebuild via scripts)
+extracted/
+preview/
+
+# Local heavy AI/model artifacts for experimentation
+models/
+weights/
+*.safetensors
+*.pth
+*.onnx
+
+# Runtime scratch
+*.log
+*.tmp

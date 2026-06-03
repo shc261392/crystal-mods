@@ -1,0 +1,54 @@
+source	target	note
+LOAD	載入	sordland-menu
+Options	選項	sordland-menu
+New Game	新遊戲	sordland-menu
+START STORY	開始故事	sordland-menu
+Exit	退出	sordland-menu
+Version	版本	sordland-menu
+Continue	繼續	sordland-menu
+Title	標題	sordland-menu
+Credits	製作名單	sordland-menu
+Password	密碼	sordland-menu
+Enter game name...	輸入遊戲名稱...	sordland-menu
+SAVING...	儲存中...	sordland-menu
+Campaign 1	戰役 1	sordland-menu
+Co-Published by Fellow Traveller	由 Fellow Traveller 聯合發行	sordland-menu
+Store	商店	sordland-menu
+Confirm	確認	sordland-menu
+Reward in 5s	5秒後獲得獎勵	sordland-menu
+Collections	收藏	sordland-menu
+Main Menu	主選單	sordland-menu
+profile name	個人檔案名稱	sordland-menu
+Link Account with Email	連結電子郵件帳號	sordland-menu
+Debug Text:	除錯文字：	sordland-menu
+Incorrect email or password.	電子郵件或密碼錯誤。	sordland-menu
+email	電子郵件	sordland-menu
+Owned	已擁有	sordland-menu
+AFFILIATION:	隸屬關係：	sordland-menu
+Latest News	最新消息	sordland-menu
+Delete Personal Data	刪除個人資料	sordland-menu
+CAP REACHED	已達上限	sordland-menu
+4th President of Sordland	第四屆蘇德蘭總統	sordland-menu
+Story Points	劇情點數	sordland-menu
+E-mail is required.	電子郵件為必填項。	sordland-menu
+Decline	拒絕	sordland-menu
+Log Out	登出	sordland-menu
+Vice President:	副總統：	sordland-menu
+Special Thanks	特別鳴謝	sordland-menu
+Malenyevist	馬列尼耶夫主義者	sordland-menu
+Continue with Apple	使用 Apple 繼續	sordland-menu
+Are you sure you want to delete Torpor Games Account?
+You will lose your game backups and any associated data.	您確定要刪除 Torpor Games 帳號嗎？
+您將會遺失您的遊戲備份及任何相關資料。	sordland-menu
+Sordland 	蘇德蘭 	sordland-menu
+Profile Name is required.	必須輸入個人檔案名稱。	sordland-menu
+United Sordland Party	蘇德蘭團結黨	sordland-menu
+Bundles	組合包	sordland-menu
+Sordland	蘇德蘭	sordland-menu
+Load Archetype	載入原型	sordland-menu
+Regionalist, Pragmatic, Man of the People	區域主義者、務實派、人民之人	sordland-menu
+Eastern Merkopa Bundle	東默科帕 組合包	sordland-menu
+Operations	營運	sordland-menu
+Experience	經驗	sordland-menu
+Map Switch/Open Login Page	地圖切換/開啟登入頁面	sordland-menu
+Resolution	解析度	sordland-menu

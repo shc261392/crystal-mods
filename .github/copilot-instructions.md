@@ -6,7 +6,8 @@ This file mirrors them for GitHub Copilot's auto-loading convention. **Read
 
 ## TL;DR for any task
 
-1. Temp files → `./.copilot_workspace/` (never `/tmp`).
+1. Temp files and scratch work MUST go in `./.copilot_workspace/`.
+   `/tmp` is forbidden.
 2. After finishing a task, ask the user for review via `vscode_askQuestions`.
 3. If confidence < 90% on anything (path, flag, identifier), stop and verify.
 4. Confirm before irreversible actions (force-push, public-flip, delete backups).

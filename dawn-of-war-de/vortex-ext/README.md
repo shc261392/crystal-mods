@@ -3,6 +3,8 @@
 A [Vortex](https://www.nexusmods.com/about/vortex/) game extension for  
 **Warhammer 40,000: Dawn of War – Definitive Edition** (Steam App ID `3556750`).
 
+The extension is currently under Vortex review, so install it by dragging the zip onto Vortex's **Extensions** tab.
+
 ## Features
 
 - Auto-discovers the game through Steam (App ID `3556750`)
@@ -15,15 +17,10 @@ A [Vortex](https://www.nexusmods.com/about/vortex/) game extension for
 
 ## Installation
 
-1. Close Vortex.
-2. Copy `game-warhammer40kdawnofwar/` into your Vortex plugins folder:
-   ```
-   %APPDATA%\Roaming\Vortex\plugins\game-warhammer40kdawnofwar\
-   ```
-3. Optionally place a 640 × 360 JPEG named `gameart.jpg` in the same folder  
-   (Steam CDN banner, or any representative image).
-4. Re-open Vortex — **Warhammer 40,000: Dawn of War - Definitive Edition**  
-   will appear under *Supported Games*.
+1. Download `vortex-ext-game-warhammer40kdawnofwar-v*.zip` from Nexus Mods.
+2. Open Vortex, drag the zip onto the **Extensions** tab, and click *Enable*.
+3. Re-open Vortex — **Warhammer 40,000: Dawn of War - Definitive Edition**  
+  will appear under *Supported Games*.
 
 ## ⚠️ Locale Mods: SGA Disable Step Required
 

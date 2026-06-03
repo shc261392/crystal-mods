@@ -1,0 +1,27 @@
+[project]
+name = "digimon-survive-upscale-pack"
+version = "0.1.0"
+description = "Texture upscale scripts for Digimon Survive"
+requires-python = ">=3.11"
+dependencies = [
+  "UnityPy>=1.10.0",
+  "packaging>=24.0",
+  "pillow>=10.0.0",
+  "safetensors>=0.4.0",
+  "spandrel>=0.3.4",
+  "torch>=2.3.0",
+  "torchvision>=0.18.0",
+]
+
+[tool.uv]
+dev-dependencies = []
+
+# Use PyTorch CUDA 12.4 wheels (RTX 3090, driver supports CUDA 13.1)
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }
+torchvision = { index = "pytorch-cu124" }

@@ -85,6 +85,41 @@ def _load_final(project: Path) -> dict[str, str]:
     return out
 
 
+def _load_source(project: Path) -> dict[str, str]:
+    out: dict[str, str] = {}
+    for line in (project / "source.jsonl").read_text("utf-8").splitlines():
+        if not line.strip():
+            continue
+        rec = json.loads(line)
+        text = rec.get("text")
+        if isinstance(text, str):
+            out[rec["id"]] = text
+    return out
+
+
+def _load_override_tsv(path: Path) -> dict[str, str]:
+    rows = [ln for ln in path.read_text("utf-8").splitlines() if ln.strip()]
+    if not rows:
+        return {}
+    header = rows[0].split("\t")
+    try:
+        src_idx = header.index("source")
+        tgt_idx = header.index("target")
+    except ValueError as e:
+        raise typer.BadParameter("override TSV must include source/target columns") from e
+
+    out: dict[str, str] = {}
+    for ln in rows[1:]:
+        cols = ln.split("\t")
+        if len(cols) <= max(src_idx, tgt_idx):
+            continue
+        src = cols[src_idx]
+        tgt = cols[tgt_idx]
+        if src and tgt:
+            out[src] = tgt
+    return out
+
+
 def _patch_database(
     env: UnityPy.Environment, by_asset_name: dict[str, list[tuple[str, str]]]
 ) -> tuple[int, int]:
@@ -145,6 +180,11 @@ def main(
     project: Path = typer.Option(..., "--project", "-p", exists=True, file_okay=False),
     out: Path = typer.Option(..., "--out", "-o"),
     require_final: bool = typer.Option(False, "--require-final", help="Only apply units with status=final."),
+    override_tsv: Path | None = typer.Option(
+        None,
+        "--override-tsv",
+        help="Optional TSV with source/target overrides for untranslated proper names.",
+    ),
 ) -> None:
     finals = _load_final(project)
     if require_final:
@@ -160,6 +200,20 @@ def main(
                 finals[rec["id"]] = final
 
     console.print(f"[cyan]Loaded[/] {len(finals)} translated units from {project}")
+
+    source_by_id = _load_source(project)
+    overrides = _load_override_tsv(override_tsv) if override_tsv is not None else {}
+    if overrides:
+        patched = 0
+        for uid, current in list(finals.items()):
+            src = source_by_id.get(uid)
+            if not isinstance(src, str):
+                continue
+            mapped = overrides.get(src)
+            if mapped and current == src:
+                finals[uid] = mapped
+                patched += 1
+        console.print(f"[cyan]Overrides[/]: applied {patched} source-text replacements")
 
     by_index: dict[int, list[tuple[str, str]]] = {}
     for uid, text in finals.items():
