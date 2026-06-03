@@ -600,3 +600,18 @@
 {"id": "scene-tmp-00600", "machine": "人口統計", "manual": null, "status": "translated"}
 {"id": "scene-tmp-00601", "machine": "穩定度", "manual": null, "status": "translated"}
 {"id": "scene-tmp-00602", "machine": "這位民族主義將領在1927年發動軍事政變並宣佈戒嚴。", "manual": null, "status": "translated"}
+{"id": "screenshot-01", "text": "Campaign: new", "manual": "新戰役", "status": "translated"}
+{"id": "screenshot-02", "text": "Current story: Sordland", "manual": "目前故事：索德蘭", "status": "translated"}
+{"id": "screenshot-03", "text": "OPTIONS", "manual": "選項", "status": "translated"}
+{"id": "screenshot-04", "text": "Borderless", "manual": "無邊框", "status": "translated"}
+{"id": "screenshot-05", "text": "On", "manual": "開啟", "status": "translated"}
+{"id": "screenshot-06", "text": "COLLECTIONS", "manual": "收藏", "status": "translated"}
+{"id": "screenshot-07", "text": "All Story Packs", "manual": "所有故事包", "status": "translated"}
+{"id": "screenshot-08", "text": "UNKNOWN", "manual": "未知", "status": "translated"}
+{"id": "screenshot-09", "text": "Unlocked", "manual": "已解鎖", "status": "translated"}
+{"id": "screenshot-10", "text": "Visit the store to purchase this item.", "manual": "訪問商店購買此物品", "status": "translated"}
+{"id": "screenshot-11", "text": "Chief of Staff", "manual": "參謀長", "status": "translated"}
+{"id": "screenshot-12", "text": "Defense Minister", "manual": "國防部長", "status": "translated"}
+{"id": "screenshot-13", "text": "Economy Minister", "manual": "經濟部長", "status": "translated"}
+{"id": "screenshot-14", "text": "Agriculture & Rural Dev. Minister", "manual": "農業和農村發展部長", "status": "translated"}
+{"id": "screenshot-15", "text": "Foreign Affairs & Trade Minister", "manual": "外交和貿易部長", "status": "translated"}
