@@ -1,0 +1,641 @@
+id	source	target
+scene-tmp-00001	LOAD	載入
+scene-tmp-00002	Options	選項
+scene-tmp-00003	New Game	新遊戲
+scene-tmp-00004	START STORY	開始故事
+scene-tmp-00005	Exit	退出
+scene-tmp-00006	Version	版本
+scene-tmp-00007	Continue	繼續
+scene-tmp-00008	Title	標題
+scene-tmp-00009	Credits	製作名單
+scene-tmp-00011	Password	密碼
+scene-tmp-00013	Enter game name...	輸入遊戲名稱...
+scene-tmp-00014	SAVING...	儲存中...
+scene-tmp-00016	Level up by earning XP to unlock rewards and story points. 
+
+Gain XP through completing actions and achievements in the game.	透過獲得經驗值來升級，以解鎖獎勵和故事點數。
+
+透過完成遊戲中的行動和成就來獲得經驗值。
+scene-tmp-00018	Campaign 1	戰役 1
+scene-tmp-00019	Co-Published by Fellow Traveller	由 Fellow Traveller 聯合發行
+scene-tmp-00021	Store	商店
+scene-tmp-00024	By using this service you agree to the Torpor Games
+<link="https://www.torporgames.com/terms-of-service"><color=#D9D6D6><u>Terms of Service</color></u></link> and <link="https://www.torporgames.com/privacy-policy"><color=#D9D6D6><u>Privacy Policy</color></u></link>	使用本服務即表示您同意 Torpor Games 的
+<link="https://www.torporgames.com/terms-of-service"><color=#D9D6D6><u>服務條款</color></u></link>與<link="https://www.torporgames.com/privacy-policy"><color=#D9D6D6><u>隱私權政策</color></u></link>
+scene-tmp-00026	Christopher Priestly	克里斯多福·普里斯特利
+scene-tmp-00027	Ministry of Design, Writing and 
+Visual Arts	部設計、寫作與
+視覺藝術
+scene-tmp-00028	Ame Brillantes	艾米·布里蘭特斯
+scene-tmp-00030	St Daniel of PanContanan Church	潘康塔納人聖丹尼爾教堂
+scene-tmp-00031	Jeppe Kjærgaard	傑佩·凱爾加德
+scene-tmp-00032	Confirm	確認
+scene-tmp-00033	Reward in 5s	5秒後獲得獎勵
+scene-tmp-00034	Collections	收藏
+scene-tmp-00035	Mridul Kashatria	姆里杜爾·卡沙特里亞
+scene-tmp-00036	Main Menu	主選單
+scene-tmp-00037	profile name	個人檔案名稱
+scene-tmp-00038	Link Account with Email	連結電子郵件帳號
+scene-tmp-00039	Debug Text:	除錯文字：
+scene-tmp-00040	Omer Yentur	奧默·延圖爾
+scene-tmp-00041	Mitchel Crama	米切爾·克拉馬
+scene-tmp-00042	Niels Runge	尼爾斯·倫格
+scene-tmp-00043	Jamie Nikolovski	傑米·尼科洛夫斯基
+scene-tmp-00044	CHRIS WRIGHT	克里斯·萊特
+scene-tmp-00045	Influence 4Influence 4Influence 4Influence 4Influence 4Influence 4	影響力 4影響力 4影響力 4影響力 4影響力 4影響力 4
+scene-tmp-00046	Incorrect email or password.	電子郵件或密碼錯誤。
+scene-tmp-00047	Anton Rayne has been elected the 4th President of Sordland amidst a deep recession, demands for reform and external pressures. 
+
+As the United Sordland Party's candidate in 1954, he inherits a nation at a crucial turning point in its history.	安東·雷恩在經濟嚴重衰退、改革呼聲高漲以及外部壓力之下，當選為第4任蘇德蘭總統。
+
+作為1954年蘇德蘭團結黨的候選人，他接手了一個正處於歷史關鍵轉折點的國家。
+scene-tmp-00048	Mesquita Lima	梅斯基塔·利馬
+scene-tmp-00049	email	電子郵件
+scene-tmp-00050	Typewriter	打字機
+scene-tmp-00051	Burg_er	漢堡
+scene-tmp-00052	Owned	已擁有
+scene-tmp-00053	AFFILIATION:	隸屬關係：
+scene-tmp-00054	Templin Institute	坦普林研究所
+scene-tmp-00056	Ministry of Production	部生產部
+scene-tmp-00057	Latest News	最新消息
+scene-tmp-00058	Delete Personal Data	刪除個人資料
+scene-tmp-00059	CAP REACHED	已達上限
+scene-tmp-00060	4th President of Sordland	第四屆蘇德蘭總統
+scene-tmp-00061	Story Points	劇情點數
+scene-tmp-00063	E-mail is required.	電子郵件為必填項。
+scene-tmp-00065	Ministry of Visual Arts	部視覺藝術部
+scene-tmp-00067	Decline	拒絕
+scene-tmp-00068	Log Out	登出
+scene-tmp-00069	Ministry of Foreign Affairs	部外交部
+scene-tmp-00071	Vice President:	副總統：
+scene-tmp-00072	Special Thanks	特別鳴謝
+scene-tmp-00073	Malenyevist	馬列尼耶夫主義者
+scene-tmp-00074	Petr Vectern	彼得·維克特
+scene-tmp-00075	<size=19>(Press)</size> Gamepad Menu	<size=19>（按鍵）</size> 遊戲手把選單
+scene-tmp-00076	Fiona Murray	菲奧娜·穆雷
+scene-tmp-00077	"Neo Sollist"	「新 索爾主義者」
+scene-tmp-00078	Congratulations. You've unlocked the daily reward for today.
+
+
+Keep up the good work.	恭喜。您已解鎖今日的每日獎勵。
+
+
+繼續保持！
+scene-tmp-00079	END	結束
+scene-tmp-00080	Anett Jenichen	安內特·詹伊琴
+scene-tmp-00081	Ryan Seville	瑞安·塞維爾
+scene-tmp-00082	Ministry of Technology and 
+Quality Assurance	技術與品質保證 部
+scene-tmp-00083	Andy Sum	安迪·薩姆
+scene-tmp-00085	ARCASIAN CAPITALISM	阿卡西亞資本主義
+scene-tmp-00086	Continue with Apple	使用 Apple 繼續
+scene-tmp-00087	Are you sure you want to delete Torpor Games Account?
+You will lose your game backups and any associated data.	您確定要刪除 Torpor Games 帳號嗎？
+您將會遺失您的遊戲備份及任何相關資料。
+scene-tmp-00088	Clementine Laffont	克萊門汀·拉豐
+scene-tmp-00089	Production	製作
+scene-tmp-00090	Ilke Karademir	伊爾克·卡拉德米爾
+scene-tmp-00091	Sordland	蘇德蘭
+scene-tmp-00092	Post-processing	後製處理
+scene-tmp-00093	Profile Name is required.	必須輸入個人檔案名稱。
+scene-tmp-00094	United Sordland Party	蘇德蘭團結黨
+scene-tmp-00095	In Memory Of	紀念
+scene-tmp-00096	Vihan Yalamanchili	維漢·亞拉曼奇利
+scene-tmp-00097	Ekin Keserer	埃金·凱塞雷爾
+scene-tmp-00098	Bundles	組合包
+scene-tmp-00099	Ministry of Propaganda and
+Society	宣傳與社會 部
+scene-tmp-00100	Sordland	蘇德蘭
+scene-tmp-00102	Load Archetype	載入原型
+scene-tmp-00106	Regionalist, Pragmatic, Man of the People	區域主義者、務實派、人民之人
+scene-tmp-00108	Managing Director	執行董事
+scene-tmp-00109	Eastern Merkopa Bundle	東默科帕 組合包
+scene-tmp-00110	Ministry of Design and Quality 
+Assurance	部 設計與品質保證部
+scene-tmp-00111	Ministry of Music, Sound and 
+Writing	部 音樂、音效與
+編劇部
+scene-tmp-00113	Operations	營運
+scene-tmp-00114	Experience	經驗
+scene-tmp-00117	Map Switch/Open Login Page	地圖切換/開啟登入頁面
+scene-tmp-00119	Resolution	解析度
+scene-tmp-00120	Marketing Manager	行銷經理
+scene-tmp-00121	Ministry of Writing and 
+Visual Arts	部 編劇與
+視覺藝術部
+scene-tmp-00122	Marketing Coordinator	行銷協調員
+scene-tmp-00123	RECENT ACTIVITY	近期活動
+scene-tmp-00124	Reconnect	重新連線
+scene-tmp-00125	Funded with the assistance of 
+The Treasure Hunters FanClub	由尋寶者粉絲俱樂部協助資助
+scene-tmp-00127	Welcome to Suzerain	歡迎來到《Suzerain》
+scene-tmp-00128	Torpor Mode	Torpor 模式
+scene-tmp-00130	New E-Mail Address	新電子郵件地址
+scene-tmp-00131	Font Size	字體大小
+scene-tmp-00132	Version:	版本：
+scene-tmp-00133	Gift Codes	禮物代碼
+scene-tmp-00134	Delete Torpor Account	刪除 Torpor 帳號
+scene-tmp-00135	Ministry of Technology	部 技術
+scene-tmp-00137	Edit Email	編輯電子郵件
+scene-tmp-00138	Forgot Password?	忘記密碼？
+scene-tmp-00140	Data Collection
+
+This game collects gameplay data through Torpor Games' analytics service, A/B testing and service providers. The information gathered will aid us in enhancing game balance for a better game experience. For further information see the Torpor Games Privacy Policy.	數據收集
+
+本遊戲透過 Torpor Games 的分析服務、A/B 測試及服務供應商收集遊戲數據。所收集的資訊將協助我們改善遊戲平衡，以提供更好的遊戲體驗。欲知詳情，請參閱 Torpor Games 隱私權政策。
+scene-tmp-00142	Voluntary Community Testers	志願社群測試人員
+scene-tmp-00144	FC ANRICA CUP	安瑞卡盃 (FC ANRICA CUP)
+scene-tmp-00146	Influence 4	影響力 4
+scene-tmp-00147	Skip Read Dialogue Text	跳過已讀對話
+scene-tmp-00148	Business Manager	商務經理
+scene-tmp-00149	Account Settings	帳號設定
+scene-tmp-00150	Reward:	獎勵：
+scene-tmp-00151	Re-Enter Password	重新輸入密碼
+scene-tmp-00152	Choose Your Own	自行選擇
+scene-tmp-00153	V Sync	垂直同步
+scene-tmp-00154	Cancel	取消
+scene-tmp-00156	Achievement Unlocked!	成就解鎖！
+scene-tmp-00157	User Testing	用戶測試
+scene-tmp-00159	This mode disables manual saving and enables achievements. You can only turn it off after completing the story once.	此模式會停用手動存檔並啟用成就。你只能在完成一次故事後將其關閉。
+scene-tmp-00160	Production Manager	製作經理
+scene-tmp-00161	Set Password	設定密碼
+scene-tmp-00162	128h	128小時
+scene-tmp-00163	Marketing	行銷
+scene-tmp-00165	Link Account	連結帳號
+scene-tmp-00167	Anti-Aliasing	反鋸齒
+scene-tmp-00169	Info	資訊
+scene-tmp-00172	World Map - 01.12.2023 19:58	世界地圖 - 2023年12月1日 19:58
+scene-tmp-00173	Login	登入
+scene-tmp-00174	Torpor Games Privacy Policy	Torpor Games 隱私權政策
+scene-tmp-00175	Not Enough Story Points	故事點數不足
+scene-tmp-00176	Fernando Rizo	費爾南多·里佐
+scene-tmp-00177	Select	選擇
+scene-tmp-00178	STORY POINTS	故事點數
+scene-tmp-00179	Target FPS	目標幀率
+scene-tmp-00180	Aarón J. Morales	亞倫·J·莫拉萊斯
+scene-tmp-00181	LEGISLATIVE REPRESENTATIVE	立法代表
+scene-tmp-00182	New Game Name	新遊戲名稱
+scene-tmp-00183	A charismatic leader who's promising grand reforms.
+He navigates between Sollist traditions and populist reforms.	一位承諾進行重大改革的魅力型領導人。
+他在 索爾主義者 傳統與民粹主義改革之間遊走。
+scene-tmp-00184	Danielle Allum	丹妮爾·阿勒姆
+scene-tmp-00185	Suzanne Wallace	蘇珊·華萊士
+scene-tmp-00187	GAMEPAD CONTROLS	手把控制
+scene-tmp-00188	Anton Rayne	安東·雷恩
+scene-tmp-00189	Grimaldus	格里馬爾杜斯
+scene-tmp-00190	Password is required.	需要密碼。
+scene-tmp-00191	Titas Serpenskas	提塔斯·塞彭斯卡斯
+scene-tmp-00192	Minimize/Unminimize/
+Open Profile Page	最小化/取消最小化/
+開啟個人資料頁面
+scene-tmp-00193	Finish	完成
+scene-tmp-00194	Stephen Gray	史蒂芬·格雷
+scene-tmp-00195	Save file uploaded.	存檔已上傳。
+scene-tmp-00196	Torpor Account Login	Torpor 帳號登入
+scene-tmp-00198	Torpor Account	Torpor 帳號
+scene-tmp-00199	Enter a valid e-mail address.	請輸入有效的電子郵件地址。
+scene-tmp-00201	Rizia Completed	里齊亞 已完成
+scene-tmp-00202	Julian-Constantin Nowak	朱利安-康斯坦丁·諾瓦克
+scene-tmp-00203	Profile Details	個人資料詳情
+scene-tmp-00205	Harufumi Sakasegawa	酒瀨川春文
+scene-tmp-00206	Warning	警告
+scene-tmp-00208	Topmak	托普馬克
+scene-tmp-00209	Reset Password	重設密碼
+scene-tmp-00210	Gundolf S. Freyermuth	岡多夫·S·弗雷爾穆斯
+scene-tmp-00211	Last Login: Dec 4 2024	上次登入：2024年12月4日
+scene-tmp-00212	Dec 24 2024	2024年12月24日
+scene-tmp-00213	INR 1000000	1000000 印度盧比
+scene-tmp-00214	Developed & Co-Published by 
+Torpor Games	由 Torpor Games 開發並聯合發行
+scene-tmp-00215	Adrien Farey	阿德里安·法雷
+scene-tmp-00217	File Name:	檔案名稱：
+scene-tmp-00218	Associate Producer	助理製作人
+scene-tmp-00219	Loading...	載入中...
+scene-tmp-00220	Story Selection - 28-11-2024 19-05-18	故事選擇 - 2024-11-28 19-05-18
+scene-tmp-00221	Rizia	里齊亞
+scene-tmp-00222	Torpor Mode Enabled	Torpor 模式已啟用
+scene-tmp-00223	Tickets	票務
+scene-tmp-00224	Window Mode	視窗模式
+scene-tmp-00225	Nathan De Farias Lima	內森·德·法里亞斯·利馬
+scene-tmp-00226	Sign up with Apple	使用 Apple 帳號註冊
+scene-tmp-00227	Edit Username	編輯使用者名稱
+scene-tmp-00228	Settings	設定
+scene-tmp-00229	Saved on a different version	儲存於不同版本
+scene-tmp-00231	Show Sordish Politicans	顯示 蘇德蘭人 政治人物
+scene-tmp-00232	Panel Title	面板標題
+scene-tmp-00233	Previous Token/Panel	上一個標記/面板
+scene-tmp-00234	Permanently removes Ads from Sordland Story Pack & unlocks premium Save/Load	永久移除 蘇德蘭 劇情包中的廣告並解鎖進階儲存/讀取功能
+scene-tmp-00235	Overview	結束檢視
+scene-tmp-00236	Graphics	圖形
+scene-tmp-00238	You can select a completed Sordland save to carry over your choices into the next story.	您可以選擇一個已完成的 蘇德蘭 存檔，將您的選擇延續到下一個故事中。
+scene-tmp-00241	info value text text info dfddddddd	資訊數值文字文字資訊 dfddddddd
+scene-tmp-00242	Achievements	成就
+scene-tmp-00243	Play the Sordland Story Pack to unlock this item.	遊玩 蘇德蘭 劇情包以解鎖此項目。
+scene-tmp-00245	Ministry of Propaganda and 
+Society	部 宣傳與
+社會
+scene-tmp-00246	Sign up with Google	使用 Google 帳號註冊
+scene-tmp-00247	SFX Volume	音效音量
+scene-tmp-00248	Analytics Consent	分析同意
+scene-tmp-00249	ROTATE	旋轉
+scene-tmp-00250	Delete Analytics Data	刪除分析資料
+scene-tmp-00251	Manual Save	手動存檔
+scene-tmp-00252	Ministry of Design and
+Quality Assurance	部設計與
+品質保證
+scene-tmp-00254	Torpor Mode Disabled	蟄伏模式已停用
+scene-tmp-00255	1-Day Ticket	1日通行證
+scene-tmp-00256	Delete	刪除
+scene-tmp-00257	Marla Fitzsimmons	瑪拉·費茲西蒙斯
+scene-tmp-00258	Zoom Out	縮小
+scene-tmp-00259	Get full access to all story packs for 1 day, ad-free.	獲取1日完整故事包存取權，且無廣告。
+scene-tmp-00261	Devastator	毀滅者
+scene-tmp-00262	Jonathan Baker	喬納森·貝克
+scene-tmp-00263	Restore Purchases	恢復購買
+scene-tmp-00264	Between 1954-1958	1954年至1958年間
+scene-tmp-00265	Main Story	主線故事
+scene-tmp-00266	Erik Löfmark	埃里克·洛夫馬克
+scene-tmp-00267	MALENYEVISM	馬列維主義
+scene-tmp-00268	Ministry of Community Surveillance	部社區監控
+scene-tmp-00269	Chris Wright	克里斯·萊特
+scene-tmp-00270	Laurence Marie Gilbertz	勞倫斯·瑪麗·吉爾伯茨
+scene-tmp-00273	Apply	套用
+scene-tmp-00274	Dominic McMillan	多米尼克·麥克米蘭
+scene-tmp-00275	Carousel Text	輪播文字
+scene-tmp-00276	Güliz Dülgeroğlu Küpçü	居利茲·杜爾格奧盧·庫普丘
+scene-tmp-00277	Des Gayle	德斯·蓋爾
+scene-tmp-00278	Load Database	載入資料庫
+scene-tmp-00279	Josh Hardy	喬什·哈迪
+scene-tmp-00280	Andrea Lippi	安德烈·利皮
+scene-tmp-00281	Finish 10 Actions	完成 10 項 法案
+scene-tmp-00282	CHOOSE A PROFILE PICTURE	選擇頭像
+scene-tmp-00283	Scout	偵察
+scene-tmp-00284	Ashley Nicollette	阿什莉·尼科萊特
+scene-tmp-00285	John Paul Velarde Jose	約翰·保羅·維拉爾德·何塞
+scene-tmp-00286	(CONTRIBUTING MEMBERS)	（貢獻成員）
+scene-tmp-00287	Accept	接受
+scene-tmp-00288	Date:	日期：
+scene-tmp-00289	Ministry of Writing and Design	部寫作與設計
+scene-tmp-00290	Music Volume	音樂音量
+scene-tmp-00291	- 20,000 HOS employees lost their jobs.
+- More than 8000 people were arrested under charges for assisting Young Sords.
+- Half a million women joined the workforce.
+- 50,000 soldiers became unemployed.
+- 238 people were killed.
+- More than a million workers secured their rights under the new Workers Rights Act.
+- Bludish crime decreased by 60%.
+- Half a million women joined the workforce.
+- 50,000 soldiers became unemployed.
+- 238 people were killed.
+- More than a million workers secured their rights under the new Workers Rights Act.
+- Bludish crime decreased by 60%.	- 20,000 名 霍斯 員工失去了工作。
+- 超過 8000 人因協助 青年蘇德蘭人 的指控而被捕。
+- 五十萬名女性加入了勞動力市場。
+- 50,000 名士兵失業。
+- 238 人死亡。
+- 超過一百萬名工人在新的勞工權利 法案 下保障了他們的權利。
+- 布魯德人 犯罪率下降了 60%。
+- 五十萬名女性加入了勞動力市場。
+- 50,000 名士兵失業。
+- 238 人死亡。
+- 超過一百萬名工人在新的勞工權利 法案 下保障了他們的權利。
+- 布魯德人 犯罪率下降了 60%。
+scene-tmp-00292	ReyesEdward	雷耶斯·愛德華
+scene-tmp-00293	History will remember you as a...	歷史將會銘記你是一位……
+scene-tmp-00295	Brian Kelleher	布萊恩·凱萊赫
+scene-tmp-00296	CHOOSE A POLITICAL AFFILIATION	選擇政治傾向
+scene-tmp-00297	Lighting	光照
+scene-tmp-00298	SOLLISM	索爾主義
+scene-tmp-00299	Lennert Suykerbuyk	倫納特·蘇克布伊克
+scene-tmp-00300	Locked	已鎖定
+scene-tmp-00301	Return	返回
+scene-tmp-00302	Mohammad Darwazeh	穆罕默德·達瓦澤
+scene-tmp-00304	ACHIEVEMENTS:	成就：
+scene-tmp-00305	1/2 Cloud Saves	1/2 雲端存檔
+scene-tmp-00306	<size=19>(Press)</size> Hyperlinks	<size=19>（點擊）</size> 超連結
+scene-tmp-00307	Continue with Google	使用 Google 繼續
+scene-tmp-00308	E-Mail Address	電子郵件地址
+scene-tmp-00309	Oscar Watson	奧斯卡·沃森
+scene-tmp-00310	You are currently playing as a guest.
+Login to use your Suzerain profile across devices.	您目前以訪客身份遊玩。
+登入以在不同裝置間使用您的《Suzerain》個人檔案。
+scene-tmp-00311	If the email is found, you will receive an email shortly.	若找到該電子郵件，您將很快收到一封郵件。
+scene-tmp-00312	Paweł Majewski	帕維爾·馬耶夫斯基
+scene-tmp-00313	Zoom In	放大
+scene-tmp-00314	Irene Preuss	艾琳·普羅伊斯
+scene-tmp-00315	James Spence	詹姆斯·斯彭斯
+scene-tmp-00316	Back to Login	返回登入
+scene-tmp-00317	Artic Z.	阿蒂克·Z.
+scene-tmp-00318	Stijn Verstraete	斯泰恩·維斯特拉特
+scene-tmp-00319	To access this page, please reconnect to the internet.	若要存取此頁面，請重新連線至網際網路。
+scene-tmp-00320	Šimon Škvára	西蒙·什克瓦拉
+scene-tmp-00321	Font	字體
+scene-tmp-00322	UI Scaling	介面縮放
+scene-tmp-00323	Story Packs	劇情包
+scene-tmp-00324	Robert E. Davis	羅伯特·E·戴維斯
+scene-tmp-00325	OR	或
+scene-tmp-00326	Shadows	陰影
+scene-tmp-00327	Autosave	自動存檔
+scene-tmp-00328	You must complete the Main Story once to disable Torpor Mode.	你必須先完成一次主線故事才能停用昏睡模式。
+scene-tmp-00329	Brand Manager	品牌經理
+scene-tmp-00330	Profile Name already exists.	個人檔案名稱已存在。
+scene-tmp-00332	Passwords need to match.	密碼必須相符。
+scene-tmp-00333	Use Story Points to start or continue playing a story. 
+
+Earn more by watching ads, leveling up, and completing in-game actions.	使用故事點數來開始或繼續遊玩故事。
+
+透過觀看廣告、升級以及完成遊戲內行動來賺取更多點數。
+scene-tmp-00334	Enter a valid password.	請輸入有效的密碼。
+scene-tmp-00335	Leveled Up	升級
+scene-tmp-00336	Ministry of Technology, Writing and 
+Design	部 技術、寫作與
+設計
+scene-tmp-00337	Loading ad…	正在載入廣告…
+scene-tmp-00338	Simple Peasant	純樸農民
+scene-tmp-00340	Ministry of Writing	部 寫作
+scene-tmp-00341	Render Scale	渲染比例
+scene-tmp-00342	Disabled	已停用
+scene-tmp-00343	Click to Login	點擊以登入
+scene-tmp-00344	Restore Defaults	恢復預設值
+scene-tmp-00345	Receive news and updates from Torpor Games	接收來自 Torpor Games 的新聞與更新
+scene-tmp-00347	Map Movement/Scroll	地圖移動/捲動
+scene-tmp-00348	Invalid Profile Name	無效的個人檔案名稱
+scene-tmp-00350	INFLUENCE	影響力
+scene-tmp-00351	Prologue Choices	序章選擇
+scene-tmp-00352	Yaroslav Bakhmutov	雅羅斯拉夫·巴赫穆托夫
+scene-tmp-00353	Max Muehlen	馬克斯·米倫
+scene-tmp-00354	Leader	領袖
+scene-tmp-00355	The Idealist	理想主義者
+scene-tmp-00357	Affiliation	隸屬關係
+scene-tmp-00358	PURCHASE	購買
+scene-tmp-00359	You haven't finished the Main Story.
+Starting a DLC Story will automatically generate a default save file for the main story. Are you sure you want to continue?	您尚未完成主線故事。
+開始 DLC 故事將自動為您生成一個預設的主線故事存檔。您確定要繼續嗎？
+scene-tmp-00360	Taha Batur Şenlİ	塔哈·巴圖爾·申利
+scene-tmp-00361	Error	錯誤
+scene-tmp-00362	Ayan	阿揚
+scene-tmp-00363	New Version Available!	有新版本可用！
+scene-tmp-00364	Textures	紋理
+scene-tmp-00365	Joni van der Leeuw	喬尼·范德勒烏
+scene-tmp-00366	SORDISH REFORMISM	索德蘭改良主義
+scene-tmp-00367	Jimi Henriksson	吉米·亨里克森
+scene-tmp-00368	Purchase a ticket to keep access to all stories and to remove ads.	購買通行證以保留對所有故事的存取權限並移除廣告。
+scene-tmp-00369	By using this service you agree to the Torpor Games
+<link="https://www.torporgames.com/"><color=#D9D6D6><u>Terms of Service</color></u></link> and <link="https://www.torporgames.com/"><color=#D9D6D6><u>Privacy Policy</color></u></link>	使用此服務即表示您同意 Torpor Games 的
+<link="https://www.torporgames.com/"><color=#D9D6D6><u>服務條款</color></u></link> 與 <link="https://www.torporgames.com/"><color=#D9D6D6><u>隱私權政策</color></u></link>
+scene-tmp-00370	Ad Privacy Options	廣告隱私選項
+scene-tmp-00371	SwanKing	天鵝國王
+scene-tmp-00372	Saved on a different version.	在不同版本上儲存。
+scene-tmp-00373	Maria Bilo	瑪麗亞·比洛
+scene-tmp-00374	3-day ticket	3 天通行證
+scene-tmp-00375	New	新
+scene-tmp-00377	Current Story: Rizia	當前故事：里齊亞
+scene-tmp-00378	Sync Achievements	同步成就
+scene-tmp-00379	Anrica	安里卡
+scene-tmp-00380	Country	國家
+scene-tmp-00381	Create Account	建立帳號
+scene-tmp-00382	Ministry of Human Resources and 
+Administration	人力資源與行政部
+scene-tmp-00383	Watch ads to earn Story Points. Use them to advance in the story.	觀看廣告以賺取故事點數。使用它們來推進故事進度。
+scene-tmp-00384	Republic of Sordland	蘇德蘭共和國
+scene-tmp-00385	Chief Strategist
+Ministry of Design and Writing	首席策略師
+設計與編劇部
+scene-tmp-00386	No Internet Connection	無網際網路連線
+scene-tmp-00387	Pedram Mashouf	佩德拉姆·馬舒夫
+scene-tmp-00388	Enter command...	輸入指令...
+scene-tmp-00390	Watch Ads	觀看廣告
+scene-tmp-00393	You have previously signed in with ...	您先前已使用 ... 登入
+scene-tmp-00394	Adel Baharuhom	阿德爾·巴哈魯霍姆
+scene-tmp-00395	Finance Manager	財務經理
+scene-tmp-00396	Skip Prologue	跳過序章
+scene-tmp-00397	Daily Rewards	每日獎勵
+scene-tmp-00398	Story Selection	故事選擇
+scene-tmp-00399	Import from existing completed save	從現有的已完成存檔匯入
+scene-tmp-00400	code	代碼
+scene-tmp-00401	Casey Braden	凱西·布雷登
+scene-tmp-00402	25h	25小時
+scene-tmp-00403	Jan Bąk	揚·邦克
+scene-tmp-00404	Naro	納羅
+scene-tmp-00405	Load Save	載入存檔
+scene-tmp-00406	Daniel Emig	丹尼爾·埃米格
+scene-tmp-00407	"Suzerain" is a work of fiction and any resemblance to actual persons, living or dead, or actual events is purely coincidental. While the game may illustrate various perspectives on political subjects, these depictions are purely for artistic exploration and do not indicate an endorsement or promotion of these viewpoints by the creators. 
+
+This game employs mature themes including instances of violence, death and suicide as part of its narrative.	《Suzerain》是一部虛構作品，與任何現實中的人物（無論生者或死者）或事件如有雷同，純屬巧合。雖然本遊戲可能展示了對政治議題的各種觀點，但這些描繪純粹是為了藝術探索，並不代表創作者對這些觀點的認可或推廣。
+
+本遊戲包含成人主題，包括敘事中出現的暴力、死亡和自殺情節。
+scene-tmp-00408	To receive your gift, enter your code below.	若要領取您的禮物，請在下方輸入您的代碼。
+scene-tmp-00409	Suzerain Completed	Suzerain 已完成
+scene-tmp-00410	Next Token/Panel	下一個標記/面板
+scene-tmp-00411	Milt	米爾特
+scene-tmp-00412	Crazy campaign	瘋狂競選
+scene-tmp-00413	Master Volume	主音量
+scene-tmp-00414	Sol Bekic	索爾·貝基奇
+scene-tmp-00415	Odahir Mena	奧達希爾·梅納
+scene-tmp-00416	Profile	個人檔案
+scene-tmp-00418	Select an Archetype: Anton Rayne	選擇一個原型：安東·雷恩
+scene-tmp-00419	Florian Maric	弗洛里安·馬里奇
+scene-tmp-00420	Reset Showcase	重置展示
+scene-tmp-00421	Notes:	筆記：
+scene-tmp-00422	History	歷史
+scene-tmp-00423	Support	支援
+scene-tmp-00424	Equipment	裝備
+scene-tmp-00425	Codex	法典
+scene-tmp-00426	Manpower	人力
+scene-tmp-00427	AVAILABLE	可用
+scene-tmp-00428	Organisations	組織
+scene-tmp-00429	Support Mechanic	支持機制
+scene-tmp-00430	The criteria for the allocation of public funds shall no longer be according to the number of votes won in the general election by a political party. The new criteria shall be the proportion of seats won by a political party in the Assembly. Political parties shall receive an annual amount of 500.000 ren per Member of Assembly.
+
+
+(This results in a doubling of the USP election budget and a slight increase in the other parties in the Assembly while effectively removing all funding from parties that are below the 10% election threshold.)	公共資金的分配標準將不再依據政黨在大選中獲得的票數。新的標準將是政黨在 議會 中獲得的席位比例。政黨每位 議會 議員每年將獲得 50 萬倫的資金。
+
+
+（這將使 團結社會黨 的選舉預算翻倍，並使 議會 中其他政黨的預算略有增加，同時有效地取消了所有未達 10% 選舉門檻政黨的資金。）
+scene-tmp-00431	Units	單位
+scene-tmp-00433	Rizian Armed Forces	里齊亞武裝部隊
+scene-tmp-00434	Clear	清除
+scene-tmp-00435	Attack	攻擊
+scene-tmp-00436	Tanks	坦克
+scene-tmp-00437	None available.	無可用單位。
+scene-tmp-00438	Terador	特拉多爾
+scene-tmp-00441	Randomize	隨機化
+scene-tmp-00442	Religion	宗教
+scene-tmp-00443	Battle Ships	戰艦
+scene-tmp-00444	PRESIDENT	總統
+scene-tmp-00445	Official Language(S):	官方語言：
+scene-tmp-00446	Movement locked!	移動已鎖定！
+scene-tmp-00447	PRESIDENTEN DEI SORDLAND	索德蘭總統
+scene-tmp-00448	Air Strike	空襲
+scene-tmp-00449	General Luderin	盧德林將軍
+scene-tmp-00450	Feel free to take notes here to help you remember important points throughout the story...	請隨意在此處做筆記，以幫助您記住整個故事中的重要點……
+scene-tmp-00451	Locations	地點
+scene-tmp-00452	No tooltips available.	無可用提示。
+scene-tmp-00453	Ads	廣告
+scene-tmp-00454	Defence	國防
+scene-tmp-00456	Reset Deployment	重置部署
+scene-tmp-00457	Current	當前
+scene-tmp-00458	Welfare	福利
+scene-tmp-00459	Character Customization	角色自訂
+scene-tmp-00460	STATUS	狀態
+scene-tmp-00462	Select to Deploy	選擇部署
+scene-tmp-00463	(Add to Trainining Queue)	（加入訓練佇列）
+scene-tmp-00464	Royal Decrees	皇家法令
+scene-tmp-00465	Fighter Planes	戰鬥機
+scene-tmp-00466	Order	命令
+scene-tmp-00467	There are no news available yet...	目前尚無新聞...
+scene-tmp-00468	Cancel Training	取消訓練
+scene-tmp-00469	Deploying	部署中
+scene-tmp-00470	Armored Divisions manufactared by the Rizian Tank Company.
+
+Gets -1 Attack Penalty when attacking mountains	由 里齊亞人 坦克公司製造的裝甲師。
+
+在山區進攻時會受到 -1 進攻懲罰
+scene-tmp-00472	Deselect current unit	取消選擇當前單位
+scene-tmp-00474	Trade	貿易
+scene-tmp-00475	The new constitution will allow for the Assembly to override a veto only with a 2/3 (66%) supermajority.	新憲法將允許 議會 僅在獲得 2/3 (66%) 的絕對多數票時才能否決法案。
+scene-tmp-00476	Disables a unit
+Inflicts {0} <sprite name="organization"> damage	使單位失效
+造成 {0} <sprite name="organization"> 傷害
+scene-tmp-00477	Train	訓練
+scene-tmp-00478	Enemy Turn	敵方回合
+scene-tmp-00479	Go to Location	前往地點
+scene-tmp-00480	Menu	選單
+scene-tmp-00481	UNSTABLE	不穩定
+scene-tmp-00482	Infantry	步兵
+scene-tmp-00483	Elected In:	當選於：
+scene-tmp-00484	GREATER HOLSORD REGION	大霍爾索德地區
+scene-tmp-00485	ENACTED	已頒布
+scene-tmp-00486	Commission for Fair Trade Commission for Fa	公平貿易委員會
+scene-tmp-00487	You won't be able to change how Anton Rayne looks after starting the story.	一旦開始故事，您將無法更改 安東·雷恩 的外觀。
+scene-tmp-00488	Sturtecen ely tuten inter ord dei Holsord	Sturtecen ely tuten inter ord dei 霍爾索德
+scene-tmp-00489	Air Support	空中支援
+scene-tmp-00490	Excavation of Topes Ancient Rezenid City	挖掘 托佩斯 古代 雷澤尼德 城市
+scene-tmp-00492	Characters	角色
+scene-tmp-00493	Cabinet	內閣
+scene-tmp-00494	Commission for Fair Trade and Competition	公平貿易與競爭委員會
+scene-tmp-00495	Political Party:	政黨：
+scene-tmp-00496	Diplomacy	外交
+scene-tmp-00500	Next Entry	下一條目
+scene-tmp-00501	Negotiating Power	談判籌碼
+scene-tmp-00502	High	高
+scene-tmp-00503	NOTABLE MEMBERS	重要成員
+scene-tmp-00505	The steady sounds of clip-clopping hooves pulling creaking carriages will be absent from the streets in Chicago starting next year after the City Council on Friday voted to ban horse-drawn carriages.
+
+
+Under the ordinance, which is effective Jan. 1, 2021, operators will be unable to renew their licenses, and the city will stop issuing new ones.
+
+
+The horse-drawn carriage industry has been shrinking for years. The city now has 10 carriage licenses that will expire at the end of the year, The Chicago Tribune reported. At one point, it had 60 licenses available, according to The Associated Press.	從明年開始，芝加哥街頭將不再有馬車行駛時發出的噠噠馬蹄聲和吱呀聲，市議會於週五投票禁止了馬車。
+
+
+根據該條例，自2021年1月1日起生效，運營商將無法續簽執照，市政府也將停止發放新執照。
+
+
+據《芝加哥論壇報》報導，馬車行業多年來一直在萎縮。該市目前有10個馬車執照將於年底到期。據美聯社報導，該市曾一度提供60個執照。
+scene-tmp-00506	Enemy Unit	敵方單位
+scene-tmp-00507	The Crown orders the establishment of a state-of-the-art bomber jet factory in Jales, within Brenas province. Specializing in the production of advanced bombers, the facility will significantly enhance the Kingdom’s offensive air capabilities. These bombers are designed for precision strikes on both land and sea targets, ensuring strategic dominance in future operations.
+
+This decree strengthens the Kingdom’s military power, focusing on long-range strike capabilities and operational flexibility.	王室下令在布雷納斯省的賈萊斯建立一座最先進的轟炸機工廠。該設施專門生產先進轟炸機，將顯著增強王國的空中進攻能力。這些轟炸機專為對陸地和海上目標進行精確打擊而設計，確保在未來的行動中佔據戰略優勢。
+
+該法令加強了王國的軍事力量，重點在於遠程打擊能力和作戰靈活性。
+scene-tmp-00508	ECONOMY	經濟
+scene-tmp-00509	There is already an active scene.	已有活躍場景。
+scene-tmp-00510	Air drop a paratrooper	空投傘兵
+scene-tmp-00511	Toggle whether unit stats should be displayed or not	切換是否顯示單位數據
+scene-tmp-00513	Action Points	法案點數
+scene-tmp-00514	Benfi, nicknamed “The Jewel of Gruni”, is the 7th biggest and 3rd wealthiest city in Republic of Sordland. It is located in the south-eastern region of Gruni by the Ves Sea. 
+
+It is internationally renowned for its beaches and wine, and very popular as a cheaper alternative to the luxurious coasts of Lespia. It produces 1/5 of Sordland’s tourism income alone.	本菲，被稱為「格魯尼之寶」，是蘇德蘭共和國第七大城市，也是第三富裕的城市。它位於格魯尼東南部，毗鄰維斯海（Ves Sea）。
+
+它以海灘和葡萄酒聞名於世，作為萊斯皮亞豪華海岸線的平價替代選擇而廣受歡迎。僅此一地就貢獻了蘇德蘭五分之一的旅遊收入。
+scene-tmp-00515	Notepad	記事本
+scene-tmp-00516	Paratrooper	傘兵
+scene-tmp-00517	Edit Name:	編輯名稱：
+scene-tmp-00518	Republic of Lespia	萊斯皮亞共和國
+scene-tmp-00520	SITUATIONS	局勢
+scene-tmp-00521	Sign	簽署
+scene-tmp-00522	Rizian Army	里齊亞人 軍隊
+scene-tmp-00523	Codex Entry	百科條目
+scene-tmp-00524	Save	儲存
+scene-tmp-00525	Under Construction	建設中
+scene-tmp-00526	POLICIES	政策
+scene-tmp-00527	Links	連結
+scene-tmp-00528	CHANGES OVER TIME	隨時間的變化
+scene-tmp-00529	Past Reports	過往報告
+scene-tmp-00530	Open City Information	開啟城市資訊
+scene-tmp-00532	Entry	條目
+scene-tmp-00533	Decisions	決策
+scene-tmp-00534	Section 1	第一節
+scene-tmp-00535	Load Last Checkpoint	載入最後檢查點
+scene-tmp-00536	Country Overview	國家 結束概覽
+scene-tmp-00538	Trucks	卡車
+scene-tmp-00539	Armored Divisions can move faster on supply lines but will suffer when attacking mountains.	裝甲師在補給線上移動速度較快，但在山區進攻時會受到懲罰。
+scene-tmp-00540	Journal	日誌
+scene-tmp-00541	Current Turn	當前回合
+scene-tmp-00542	Select a Tile	選擇一個地塊
+scene-tmp-00543	Topic	主題
+scene-tmp-00544	New Save	新存檔
+scene-tmp-00546	Fortify	築壘
+scene-tmp-00547	Turn	回合
+scene-tmp-00548	Open Codex Entry	開啟法典條目
+scene-tmp-00549	Fortify a unit 
+Heal {0} <sprite name="organization"> per turn 
+Add {1} <sprite name="defence"> defence	築壘單位 
+每回合恢復 {0} <sprite name="organization"> 
+增加 {1} <sprite name="defence"> 防禦
+scene-tmp-00550	Law	法律
+scene-tmp-00551	narration text	敘事文本
+scene-tmp-00552	No decrees currently available in this category	此類別目前沒有可用的法令
+scene-tmp-00553	Currently Active:	目前 法案ive：
+scene-tmp-00554	Back to Codex	返回法典
+scene-tmp-00555	End Turn	結束回合
+scene-tmp-00556	Ethnicity	種族
+scene-tmp-00557	The Grand National Assembly	大國民議會
+scene-tmp-00558	All land border tiles must have a unit.	所有陸地邊界板塊必須駐紮部隊。
+scene-tmp-00559	Veto	否決
+scene-tmp-00561	Type here to search...	在此輸入搜尋內容...
+scene-tmp-00562	Open Demographics	開啟人口統計
+scene-tmp-00563	Air supports for 1 turn
++{0} <sprite name="attack">
++{0} <sprite name="defence">
++{0} <sprite name="support">	空中支援 1 回合
++{0} <sprite name="attack">
++{0} <sprite name="defence">
++{0} <sprite name="support">
+scene-tmp-00564	Enter save file name...	輸入存檔名稱...
+scene-tmp-00565	DEPLOYED	已部署
+scene-tmp-00566	Hyperlinks	超連結
+scene-tmp-00567	In Training	訓練中
+scene-tmp-00568	Tutorial	教學
+scene-tmp-00569	In the graph below, you can track the economy's growth over time and use the timeline filter to explore historical data.	在下方的圖表中，您可以追蹤經濟隨時間的增長，並使用時間軸篩選器來探索歷史數據。
+scene-tmp-00570	Reinforcements	增援
+scene-tmp-00572	Campaing Finance Bill	競選財務法案
+scene-tmp-00574	Next	下一頁
+scene-tmp-00575	Continue...	繼續...
+scene-tmp-00576	Naval Invasion	海軍入侵
+scene-tmp-00577	News	新聞
+scene-tmp-00579	Construction	建設
+scene-tmp-00580	Low	低
+scene-tmp-00581	You have given away your powers to veto bills.	你已經放棄了否決法案的權力。
+scene-tmp-00582	Military	軍隊
+scene-tmp-00583	Previous Entry	上一條目
+scene-tmp-00584	Deploy additional units	部署額外單位
+scene-tmp-00585	Toggle Unit Stats	切換單位數據
+scene-tmp-00586	Grander Asemble au Altmer dei Sordland	Grander Asemble au Altmer dei 蘇德蘭
+scene-tmp-00587	World Map	世界地圖
+scene-tmp-00588	Submarines	潛水艇
+scene-tmp-00589	EMERGENCY DECLARED	已宣佈緊急狀態
+scene-tmp-00590	Resources & Units	資源與單位
+scene-tmp-00591	Suporrt Explanation	支持說明
+scene-tmp-00592	Economical Growth	經濟增長
+scene-tmp-00593	Old Guard refer to the Sollists from the old administration who defends the status quo and promotes conservative politics. Some claim that they established a deep state that controls the state apparatus.	舊衛隊 指的是來自舊政府的 索爾主義者，他們捍衛現狀並推動保守派政治。有人聲稱他們建立了一個控制國家機器的深層政府。
+scene-tmp-00594	Return to Conversation	返回對話
+scene-tmp-00595	Restart	重新開始
+scene-tmp-00596	Invade a shore tile with a marine	使用海軍陸戰隊入侵海岸地塊
+scene-tmp-00597	Bomber Planes	轟炸機
+scene-tmp-00598	Anton	安東
+scene-tmp-00599	USP	團結社會黨
+scene-tmp-00600	Demographics	人口統計
+scene-tmp-00601	STABILITY	穩定度
+scene-tmp-00602	The nationalist general who led a military coup and declared martial law in 1927.	這位民族主義將領在1927年發動軍事政變並宣佈戒嚴。
