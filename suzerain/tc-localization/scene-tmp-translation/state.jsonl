@@ -615,3 +615,33 @@
 {"id": "screenshot-13", "text": "Economy Minister", "manual": "經濟部長", "status": "translated"}
 {"id": "screenshot-14", "text": "Agriculture & Rural Dev. Minister", "manual": "農業和農村發展部長", "status": "translated"}
 {"id": "screenshot-15", "text": "Foreign Affairs & Trade Minister", "manual": "外交和貿易部長", "status": "translated"}
+{"id": "screenshot-ui-001", "text": "Cabinet", "manual": "內閣", "status": "translated"}
+{"id": "screenshot-ui-002", "text": "Collections", "manual": "收藏", "status": "translated"}
+{"id": "screenshot-ui-003", "text": "Options", "manual": "選項", "status": "translated"}
+{"id": "screenshot-ui-004", "text": "Store", "manual": "商店", "status": "translated"}
+{"id": "screenshot-ui-005", "text": "UNSTABLE", "manual": "不穩定", "status": "translated"}
+{"id": "screenshot-ui-006", "text": "Turn", "manual": "回合", "status": "translated"}
+{"id": "screenshot-ui-007", "text": "End Turn", "manual": "結束回合", "status": "translated"}
+{"id": "screenshot-ui-008", "text": "Current Turn", "manual": "當前回合", "status": "translated"}
+{"id": "screenshot-ui-009", "text": "Current Story: Rizia", "manual": "目前故事：里齊亞", "status": "translated"}
+{"id": "screenshot-ui-010", "text": "Ministry of Foreign Affairs", "manual": "外交部", "status": "translated"}
+{"id": "screenshot-ui-011", "text": "Petr Vectern", "manual": "彼得·韋塞爾恩", "status": "translated"}
+{"id": "screenshot-ui-012", "text": "Locked", "manual": "已鎖定", "status": "translated"}
+{"id": "screenshot-ui-013", "text": "Restore Defaults", "manual": "恢復預設值", "status": "translated"}
+{"id": "screenshot-ui-014", "text": "Restore Purchases", "manual": "恢復購買", "status": "translated"}
+{"id": "screenshot-ui-015", "text": "Return", "manual": "返回", "status": "translated"}
+{"id": "screenshot-ui-016", "text": "Return to Conversation", "manual": "返回對話", "status": "translated"}
+{"id": "screenshot-ui-017", "text": "SORDISH REFORMISM", "manual": "索德蘭改革主義", "status": "translated"}
+{"id": "screenshot-ui-018", "text": "Show Sordish Politicans", "manual": "顯示索德蘭政治人物", "status": "translated"}
+{"id": "screenshot-ui-019", "text": "Achievement Unlocked!", "manual": "成就已解鎖！", "status": "translated"}
+{"id": "screenshot-ui-020", "text": "Ad Privacy Options", "manual": "廣告隱私選項", "status": "translated"}
+{"id": "screenshot-ui-021", "text": "Air supports for 1 turn", "manual": "空中支援 1 回合", "status": "translated"}
+{"id": "screenshot-ui-022", "text": "Enemy Turn", "manual": "敵方回合", "status": "translated"}
+{"id": "screenshot-ui-023", "text": "Movement locked!", "manual": "移動已鎖定！", "status": "translated"}
+{"id": "screenshot-ui-024", "text": "This mode disables manual saving and enables achievements. You can only turn it off after completing the story once.", "manual": "此模式停用手動儲存並啟用成就。您只能在完成故事一次後將其關閉。", "status": "translated"}
+{"id": "screenshot-ui-025", "text": "Congratulations. You've unlocked the daily reward for today.", "manual": "恭喜！您已解鎖今天的每日獎勵。", "status": "translated"}
+{"id": "screenshot-ui-026", "text": "Get full access to all story packs for 1 day, ad-free.", "manual": "獲得所有故事包 1 天的完整訪問權限，無廣告。", "status": "translated"}
+{"id": "screenshot-narrative-001", "text": "is an academician and politician who serves as the Minister of Education, Technology & Research of Sordland. She became a member of the United Sordland Party before the 1952 elections. Prior to becoming a minister, she was elected and served as an independent MP.", "manual": "是一名學術家和政治家，擔任索德蘭教育、科技與研究部長。她在 1952 年選舉前成為索德蘭聯合黨成員。在成為部長之前，她被選為獨立議員並服務過。", "status": "translated"}
+{"id": "screenshot-narrative-002", "text": "In Sordland, the military operates as a conscripted force, where the duty of military service falls upon males upon reaching the age of 18. This mandatory conscription ensures a consistent and capable pool of personnel to uphold the nation's defense and security, strengthening the overall resilience and readiness of the military.", "manual": "在索德蘭，軍隊作為徵兵力量運作，男性在 18 歲時有兵役義務。這項強制徵兵確保了一支持久的、有能力的人員隊伍來維護國家的防禦和安全，加強了軍隊的整體韌性和戰備狀況。", "status": "translated"}
+{"id": "screenshot-narrative-003", "text": "I declared my intention to work with the reformists for the constitutional reform.", "manual": "我宣布了與改革派合作進行憲政改革的意圖。", "status": "translated"}
+{"id": "screenshot-narrative-004", "text": "We have won the 1953 election. A new chapter begins for Sordland.", "manual": "我們贏得了 1953 年的選舉。索德蘭的新篇章開始了。", "status": "translated"}

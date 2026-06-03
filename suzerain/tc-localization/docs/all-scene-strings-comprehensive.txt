@@ -1,0 +1,827 @@
+"Neo Sollist"
+"Suzerain" is a work of fiction and any resemblance to actual persons, living or dead, or actual events is purely coincidental. While the game may illustrate various perspectives on political subjects, these depictions are purely for artistic exploration and do not indicate an endorsement or promotion of these viewpoints by the creators. 
+
+This game employs mature themes including instances of violence, death and suicide as part of its narrative.
+(Add to Trainining Queue)
+(CONTRIBUTING MEMBERS)
+- 20,000 HOS employees lost their jobs.
+- More than 8000 people were arrested under charges for assisting Young Sords.
+- Half a million women joined the workforce.
+- 50,000 soldiers became unemployed.
+- 238 people were killed.
+- More than a million workers secured their rights under the new Workers Rights Act.
+- Bludish crime decreased by 60%.
+- Half a million women joined the workforce.
+- 50,000 soldiers became unemployed.
+- 238 people were killed.
+- More than a million workers secured their rights under the new Workers Rights Act.
+- Bludish crime decreased by 60%.
+1-Day Ticket
+1/2 Cloud Saves
+3-day ticket
+4th President of Sordland
+<color=#F6E09C><size=51>0</size></color><color=#AFADAD><size=32>/0</size></color>
+<size=19>(Press)</size> Gamepad Menu
+<size=19>(Press)</size> Hyperlinks
+<sprite name=currency>
+A charismatic leader who's promising grand reforms.
+He navigates between Sollist traditions and populist reforms.
+ACHIEVEMENTS:
+AFFILIATION:
+ARCASIAN CAPITALISM
+ATA SERGEY NOWAK
+AVAILABLE
+Aarón J. Morales
+Accept
+Account Settings
+Achievement Unlocked!
+Achievements
+Action Points
+Ad Privacy Options
+Adam Sharp
+Adel Baharuhom
+Adrien Farey
+Ads
+Affiliation
+Affiliations Data
+Air Strike
+Air Support
+Air drop a paratrooper
+Air supports for 1 turn
++{0} <sprite name="attack">
++{0} <sprite name="defence">
++{0} <sprite name="support">
+Alison Nieman
+All land border tiles must have a unit.
+Ame Brillantes
+Ame Searle
+Analytics Consent
+Andrea Lippi
+Andy Sum
+Anett Jenichen
+Angosor...
+Anrica
+Anti-Aliasing
+Anton
+Anton Rayne
+Anton Rayne has been elected the 4th President of Sordland amidst a deep recession, demands for reform and external pressures. 
+
+As the United Sordland Party's candidate in 1954, he inherits a nation at a crucial turning point in its history.
+Apply
+Are you sure you want to delete Torpor Games Account?
+You will lose your game backups and any associated data.
+Armored Divisions can move faster on supply lines but will suffer when attacking mountains.  
+Armored Divisions manufactared by the Rizian Tank Company.
+
+Gets -1 Attack Penalty when attacking mountains
+Artic Z.
+Ashley Nicollette
+Associate Producer
+Attack
+Autosave
+Ayan
+Back to Codex
+Back to Login
+Battle Ships
+Benfi, nicknamed “The Jewel of Gruni”, is the 7th biggest and 3rd wealthiest city in Republic of Sordland. It is located in the south-eastern region of Gruni by the Ves Sea. 
+
+It is internationally renowned for its beaches and wine, and very popular as a cheaper alternative to the luxurious coasts of Lespia. It produces 1/5 of Sordland’s tourism income alone. 
+Bomber Planes
+Brand Manager
+Brendan McElroy
+Brian Kelleher
+Bundles
+Burg_er
+Business Manager
+By using this service you agree to the Torpor Games
+<link="https://www.torporgames.com/"><color=#D9D6D6><u>Terms of Service</color></u></link> and <link="https://www.torporgames.com/"><color=#D9D6D6><u>Privacy Policy</color></u></link>
+By using this service you agree to the Torpor Games
+<link="https://www.torporgames.com/terms-of-service"><color=#D9D6D6><u>Terms of Service</color></u></link> and <link="https://www.torporgames.com/privacy-policy"><color=#D9D6D6><u>Privacy Policy</color></u></link>
+CAP REACHED
+CHANGES OVER TIME
+CHOOSE A POLITICAL AFFILIATION
+CHOOSE A PROFILE PICTURE
+CHRIS WRIGHT
+Cabinet
+Cactuar512
+Campaign 1
+Campaign Name
+Campaing Finance Bill
+Cancel
+Cancel Training
+Carousel Text
+Casey Braden
+Character Customization
+Characters
+Chief Strategist
+Ministry of Design and Writing
+Choose Your Own
+Chris Wright
+Christopher Ferazzoli
+Christopher Priestly
+Claire Goodwin
+Clear
+
+Clementine Laffont
+Click to Login
+Co-Published by Fellow Traveller
+Codex
+Codex Entry
+Colin Gurney
+Colin James Gurney
+CollectionItem_AnricaTrophy
+CollectionItem_ArmadineRadio
+CollectionItem_AschrafCandle
+CollectionItem_BullFigurine
+CollectionItem_CarKey
+CollectionItem_CeremonialScissors
+CollectionItem_ChessPiece
+CollectionItem_CigarBox
+CollectionItem_Dagger
+CollectionItem_DastScepter
+CollectionItem_DogToy
+CollectionItem_FabergeEgg
+CollectionItem_GasCorpPlaque
+CollectionItem_GoatStatue
+CollectionItem_Gun
+CollectionItem_Headphones
+CollectionItem_IntermerkopumPlaque
+CollectionItem_IzaKey
+CollectionItem_KesaroLighter
+CollectionItem_KorontiResortPostcard
+CollectionItem_LucitaDagger
+CollectionItem_MandragoraExtract
+CollectionItem_MechanicalBird
+CollectionItem_MiniYacht
+CollectionItem_PalesCrown
+CollectionItem_PhotoFrameTorn
+CollectionItem_Pocketwatch
+CollectionItem_PoemBook
+CollectionItem_PoemScroll
+CollectionItem_USPBrooch
+CollectionItem_UnderhallTrophy
+CollectionItem_WeddingRing
+CollectionItem_WehzekDoorstop
+CollectionItem_WhiskeyBottle
+CollectionItem_WineBottle
+CollectionItem_WruhecistMedallion
+Collections
+Commission for Fair Trade Commission for Fa
+Commission for Fair Trade and Competition
+Confirm
+Congratulations. You've unlocked the daily reward for today.
+
+
+Keep up the good work.
+Construction
+Continue
+Continue with Apple
+Continue with Google
+Continue...
+Country
+Country Overview
+Crazy campaign
+Create Account
+Credits
+Current
+Current Story: Rizia
+Current Turn
+Currently Active:
+DEPLOYED
+DLCCollectionItem_GoldBar
+DLCCollectionItem_VulpitzerAward
+Daily Rewards
+Daniel Emig
+Daniel Zacharias
+Danielle Allum
+Data Collection
+
+This game collects gameplay data through Torpor Games' analytics service, A/B testing and service providers. The information gathered will aid us in enhancing game balance for a better game experience. For further information see the Torpor Games Privacy Policy.
+Date: 
+Deathminor
+Debug Text:
+Decisions
+Decline
+Default Suzerain Rewarded Ad Unit
+Defence
+Delete
+Delete Analytics Data
+Delete Personal Data
+Delete Torpor Account
+Demographics
+Denis Gier
+Deploy additional units
+Deploying
+Des Gayle
+Deselect current unit
+Devastator
+Developed & Co-Published by 
+Torpor Games
+Diplomacy
+Disabled
+Disables a unit
+Inflicts {0} <sprite name="organization"> damage
+Dominic K
+Dominic McMillan
+E-Mail Address
+E-mail is required.
+ECONOMY
+EMERGENCY DECLARED
+ENACTED
+END
+Eastern Merkopa Bundle
+Economical Growth
+Edit Email
+Edit Name:
+Edit Username
+Ekin Keserer
+Elderlybull
+Elected In:
+Emily Cox
+End Turn
+Enemy Turn
+Enemy Unit
+Enter Profile Name
+Enter a valid e-mail address.
+Enter a valid password.
+Enter command...
+Enter game name...
+Enter save file name...
+Entry
+Equipment
+Erik Löfmark
+Error
+Ethnicity
+Evolve Originals
+Evolve PR
+Excavation of Topes Ancient Rezenid City
+
+Exit
+Experience
+FC ANRICA CUP
+Faction_Event_ATO
+Faction_Event_CSP
+Faction_Event_GRACE
+Feel free to take notes here to help you remember important points throughout the story...
+
+Felix Kramer
+Fernando Rizo
+Fighter Planes
+File Name: 
+Finance Manager
+Finish
+Finish 10 Actions
+Fiona Murray
+Florian Maric
+Font
+Font Size
+Forgot Password?
+Fortify
+Fortify a unit 
+Heal {0} <sprite name="organization"> per turn 
+Add {1} <sprite name="defence"> defence
+Funded with the assistance of 
+The Treasure Hunters FanClub
+GAMEPAD CONTROLS
+GREATER HOLSORD REGION
+General Luderin
+Gert Elshani
+Get full access to all story packs for 1 day, ad-free.
+Gift Codes
+Go to Location
+Grander Asemble au Altmer dei Sordland
+Graphics
+Grimaldus
+GrouchoMarxist
+Gundolf S. Freyermuth
+Güliz Dülgeroğlu Küpçü
+HORST NOWAK
+Harufumi Sakasegawa
+High
+History
+History will remember you as a...
+Hyperlinks
+INFLUENCE
+INTE FORET SESIONER
+If the email is found, you will receive an email shortly.
+Ilke Karademir
+Import from existing completed save
+In Memory Of
+In Training
+In the Main Menu
+In the graph below, you can track the economy's growth over time and use the timeline filter to explore historical data.
+Incorrect email or password.
+Infantry
+Influence 4
+Influence 4Influence 4Influence 4Influence 4Influence 4Influence 4
+Info
+Instreten sis er Anginicar av Moreigna ins Altmer ins Almergwolltene keserten..
+International_Event_HeljilandBlockade
+International_Event_OperationBearTrap
+International_Event_TradeWar
+Invade a shore tile with a marine
+Invalid Profile Name
+Ioannis Petridis
+Ipek Unal
+Irene Preuss
+James Spence
+Jamie Nikolovski
+Jan Bąk
+Janine Campos
+Jeppe Kjærgaard
+Jimi Henriksson
+John Paul Velarde Jose
+Jonathan Baker
+Joni van der Leeuw
+Josh Hardy
+Journal
+Juan Lagar
+Julian-Constantin Nowak
+Keyboard&Mouse
+LEGISLATIVE REPRESENTATIVE
+LOAD
+Last Login: Dec 4 2024
+Latest News
+Laurence Marie Gilbertz
+Law
+Leader
+Lennert Suykerbuyk
+Level up by earning XP to unlock rewards and story points. 
+
+Gain XP through completing actions and achievements in the game.
+Leveled Up
+LiberationSans SDF
+LiberationSans SDF - Fallback
+Lighting
+Link Account
+Link Account with Email
+Links
+Load Archetype
+Load Database
+Load Last Checkpoint
+Load Save
+Loading ad…
+Loading...
+Locations
+Locked
+Log Out
+Login
+Louis Li
+Low
+MALENYEVISM
+Main Menu
+Main Story
+Malenyevist
+Managing Director
+Manpower
+Manual Save
+Map Movement/Scroll
+Map Switch/Open Login Page
+Marcus Lim
+Maria Bilo
+Marketing
+Marketing Coordinator
+Marketing Manager
+Marla Fitzsimmons
+Martin Eyerer
+Master Volume
+Max Muehlen
+Menu
+Mesquita Lima
+Michael Nathanael
+Military
+Milt
+Minimize/Unminimize/
+Open Profile Page
+Ministry of Community Surveillance
+Ministry of Design and
+Quality Assurance
+Ministry of Design and Quality 
+Assurance
+Ministry of Design, Writing and 
+Visual Arts
+Ministry of Foreign Affairs
+Ministry of Human Resources and 
+Administration
+Ministry of Music, Sound and 
+Writing
+Ministry of Production
+Ministry of Propaganda and
+Society
+Ministry of Propaganda and 
+Society
+Ministry of Technology
+Ministry of Technology and 
+Quality Assurance
+Ministry of Technology, Writing and 
+Design
+Ministry of Visual Arts
+Ministry of Writing
+
+Ministry of Writing and 
+Visual Arts
+Ministry of Writing and Design
+Mitchel Crama
+Mohammad Darwazeh
+Movement locked!
+Mridul Kashatria
+Music Volume
+NOTABLE MEMBERS
+Naro
+Nathan De Farias Lima
+Naval Invasion
+Negotiating Power
+New
+New E-Mail Address
+New Game
+New Game Name
+New Profile Name
+New Save
+New Version Available!
+News
+Next
+Next Entry
+Next Token/Panel
+Niels Runge
+Nikolaos Ntalianis
+No Internet Connection
+No decrees currently available in this category
+No tooltips available.
+None available.
+Not Enough Story Points
+Notepad
+Notes:
+OP_Tutorial_Turn1
+OR
+Odahir Mena
+Official Language(S):
+Old Guard refer to the Sollists from the old administration who defends the status quo and promotes conservative politics. Some claim that they established a deep state that controls the state apparatus.
+Omer Yentur
+Open City Information
+Open Codex Entry
+Open Demographics
+Operation_1
+Operation_2
+Operation_Tutorial
+Operations
+Options
+Order
+Organisations
+Oscar Watson
+Overview
+Owned
+Ozgun Kilit
+POLICIES
+PP_MainMenu
+PP_Sordland
+PRESIDENT
+PRESIDENTEN DEI SORDLAND
+PURCHASE
+Panel Title
+Paratrooper
+Password
+Password is required.
+Passwords need to match.
+Past Reports
+Paweł Majewski
+Pedram Mashouf
+Permanently removes Ads from Sordland Story Pack & unlocks premium Save/Load
+Petr Vectern
+Play the Sordland Story Pack to unlock this item.
+Political Party:
+Post-processing
+Previous Entry
+Previous Token/Panel
+Production
+Production Manager
+Profile
+Profile Details
+Profile Images Data
+Profile Name already exists.
+Profile Name is required.
+Prologue Choices
+Purchase a ticket to keep access to all stories and to remove ads.
+RECENT ACTIVITY
+ROTATE
+R_Traitor_Loop
+Rachel Glassberg
+Randomize
+Re-Enter Password
+Receive news and updates from Torpor Games
+Reconnect
+Regionalist, Pragmatic, Man of the People
+Reinforcements
+Religion
+Render Scale
+Republic of Lespia
+Republic of Sordland
+Reset Deployment
+Reset Password
+Reset Showcase
+Resolution
+Resources & Units
+Restart
+Restore Defaults
+Restore Purchases
+Return
+Return to Conversation
+Reward in 5s
+Reward:
+ReyesEdward
+Rizia
+Rizia Completed
+RiziaDLC.Army_Unit_GrandTotal_Dead
+RiziaDLC.Army_Unit_GrandTotal_Deployed
+RiziaDLC.Army_Unit_GrandTotal_InTraining
+RiziaDLC.Army_Unit_GrandTotal_Total
+RiziaDLC.DecreeCounsel_DecreeNameInDatabase
+RiziaDLC.Resources_Military_AirStrikeCooldown
+RiziaDLC.Resources_Military_AirSupportCooldown
+RiziaDLC.Resources_Military_BomberPlanes
+RiziaDLC.Resources_Military_EnemyAirStrikeCount
+RiziaDLC.Resources_Military_Equipment
+RiziaDLC.Resources_Military_FighterPlanes
+RiziaDLC.Resources_Military_Manpower
+RiziaDLC.Resources_Military_Ships
+RiziaDLC.Resources_Military_Submarines
+RiziaDLC.Resources_Military_Tanks
+RiziaDLC.Resources_Military_Trucks
+RiziaDLC.War_ActionPoints
+RiziaDLC.War_CapturedCityCount
+RiziaDLC.War_EnemyResistanceChance
+RiziaDLCSetup.IsAnyOperationInProgress
+Rizia_City_Argno
+Rizia_City_Benievon
+Rizia_City_Bronaz
+Rizia_City_FolceDator
+Rizia_City_FortAles
+Rizia_City_Havas
+Rizia_City_Iza
+Rizia_City_Jales
+Rizia_City_MaveNortus
+Rizia_City_Mermi
+Rizia_City_Monqiz
+Rizia_City_Montaklar
+Rizia_City_Nanta
+Rizia_City_Nelvisar
+Rizia_City_Pales
+Rizia_City_Plavo
+Rizia_City_PorteDrazon
+Rizia_City_Qabiz
+Rizia_City_Qalus
+Rizia_City_Remaz
+Rizia_City_Sallabes
+Rizia_City_Solles
+Rizia_City_Terador
+Rizia_City_Topes
+Rizia_City_Valenqir
+Rizia_City_Zille
+Rizia_City_Ziqes
+Rizia_City_Zpana
+Rizia_Country_Agnolia
+Rizia_Country_Derdia
+Rizia_Country_Kyrute
+Rizia_Country_Lespia
+Rizia_Country_Morella
+Rizia_Country_Pales
+Rizia_Country_Rumburg
+Rizia_Country_Sordland
+Rizia_Country_Valgsland
+Rizia_Country_Wehlen
+Rizia_Country_Zille
+Rizia_Event_Aureus
+Rizia_Event_InvasionOfPales
+Rizia_Event_MITZ
+Rizia_Event_Zille
+Rizia_Faction_Event_ATO
+Rizia_Faction_Event_CSP
+Rizia_Faction_Event_GRACE
+Rizia_Faction_Event_Intermerkopum
+Rizian Armed Forces
+Rizian Army
+Robert E. Davis
+Royal Decrees
+Ryan Seville
+SAVING...
+SFX Volume
+SITUATIONS
+SOLLISM
+SORDISH REFORMISM
+SSAO
+STABILITY
+START STORY
+STATUS
+STORY POINTS
+Sarah Pavlich
+Sarmo
+Save
+Save file uploaded.
+Saved on a different version
+Saved on a different version.
+Scott Reismanis
+Scout
+ScreenSpaceAmbientOcclusion
+Search Codex
+Search Past Reports
+Section 1
+Select
+Select a Tile
+Select an Archetype: Anton Rayne
+Select to Deploy
+Semih Güner
+Set Password
+Settings
+Shadows
+ShadowsMidtonesHighlights
+Shawn Petraschuk
+Show Sordish Politicans
+Sign
+Sign up with Apple
+Sign up with Google
+Simple Peasant
+Skip Prologue
+Skip Read Dialogue Text
+Sol Bekic
+Sordland
+Sordland 
+Sordland_City_Anrica
+Sordland_City_Antel
+Sordland_City_Arvory
+Sordland_City_Benfi
+Sordland_City_Borin
+Sordland_City_Conriat
+Sordland_City_Deyr
+Sordland_City_Erlory
+Sordland_City_Erzaren
+Sordland_City_Estord
+Sordland_City_Gelsord
+Sordland_City_Holsord
+Sordland_City_Jen
+Sordland_City_Lachaven
+Sordland_City_Laren
+Sordland_City_Leiren
+Sordland_City_Lenkurg
+Sordland_City_Morbel
+Sordland_City_Morna
+Sordland_City_Narbel
+Sordland_City_Ribel
+Sordland_City_Ribery
+Sordland_City_Sarna
+Sordland_City_Uziren
+Sordland_City_Valgen
+Sordland_City_Vesord
+Sordland_Country_Agnolia
+Sordland_Country_Derdia
+Sordland_Country_Kyrute
+Sordland_Country_Lespia
+Sordland_Country_Morella
+Sordland_Country_Pales
+Sordland_Country_Rizia
+Sordland_Country_Rumburg
+Sordland_Country_Valgsland
+Sordland_Country_Wehlen
+Sordland_Event_RumburgInvasion
+Sordland_Event_RumburgWar
+Special Suzerain Rewarded Ad Unit
+Special Thanks
+St Daniel of PanContanan Church
+Stephen Gray
+Stijn Verstraete
+Store
+Story Packs
+Story Points
+Story Selection
+StoryPack_Main
+StoryPack_Rizia
+Sturtecen ely tuten inter ord dei Holsord
+Submarines
+Suporrt Explanation
+Support
+Support Mechanic
+Suzanne Wallace
+
+Suzerain Completed
+SwanKing
+Sync Achievements
+Taha Batur Şenlİ
+Tanks
+Target FPS
+Templin Institute
+Terador
+Test Default Suzerain Rewarded Ad Unit
+Test Special Suzerain Rewarded Ad Unit
+Textures
+The Crown orders the establishment of a state-of-the-art bomber jet factory in Jales, within Brenas province. Specializing in the production of advanced bombers, the facility will significantly enhance the Kingdom’s offensive air capabilities. These bombers are designed for precision strikes on both land and sea targets, ensuring strategic dominance in future operations.
+
+This decree strengthens the Kingdom’s military power, focusing on long-range strike capabilities and operational flexibility.
+The Grand National Assembly
+The Idealist
+The criteria for the allocation of public funds shall no longer be according to the number of votes won in the general election by a political party. The new criteria shall be the proportion of seats won by a political party in the Assembly. Political parties shall receive an annual amount of 500.000 ren per Member of Assembly.
+
+
+(This results in a doubling of the USP election budget and a slight increase in the other parties in the Assembly while effectively removing all funding from parties that are below the 10% election threshold.)
+The nationalist general who led a military coup and declared martial law in 1927.
+The new constitution will allow for the Assembly to override a veto only with a 2/3 (66%) supermajority.
+The steady sounds of clip-clopping hooves pulling creaking carriages will be absent from the streets in Chicago starting next year after the City Council on Friday voted to ban horse-drawn carriages.
+
+
+Under the ordinance, which is effective Jan. 1, 2021, operators will be unable to renew their licenses, and the city will stop issuing new ones.
+
+
+The horse-drawn carriage industry has been shrinking for years. The city now has 10 carriage licenses that will expire at the end of the year, The Chicago Tribune reported. At one point, it had 60 licenses available, according to The Associated Press.
+There are no news available yet...
+There is already an active scene.
+This mode disables manual saving and enables achievements. You can only turn it off after completing the story once.
+Tickets
+Titas Serpenskas
+Title
+To access this page, please reconnect to the internet.
+To receive your gift, enter your code below.
+Toggle Unit Stats
+Toggle whether unit stats should be displayed or not
+Topic
+Topmak
+Torpor Account
+Torpor Account Login
+Torpor Games Privacy Policy
+Torpor Mode
+Torpor Mode Disabled
+Torpor Mode Enabled
+Trade
+Train
+Trucks
+Tung Thanh Cao
+Turn
+Tutorial
+Type here to search...
+Typewriter
+UI Scaling
+
+UNSTABLE
+USP
+Under Construction
+United Sordland Party
+Units
+Use Story Points to start or continue playing a story. 
+
+Earn more by watching ads, leveling up, and completing in-game actions.
+User Testing
+V Sync
+Version
+Version:
+VerylongusernameVerylongusername
+Veto
+Vice President:
+Vihan Yalamanchili
+Voluntary Community Testers
+War Configuration
+War/Unit Types
+WarProduction_Tutorial_Panel
+War_Tutorial_Panel
+Warning
+Watch Ads
+Watch ads to earn Story Points. Use them to advance in the story.
+Welcome to Suzerain
+Welfare
+Window Mode
+World Map
+Yannick Hogendoorn
+Yaroslav Bakhmutov
+You are currently playing as a guest.
+Login to use your Suzerain profile across devices.
+You can select a completed Sordland save to carry over your choices into the next story.
+You have given away your powers to veto bills.
+You have previously signed in with ...
+You haven't finished the Main Story.
+Starting a DLC Story will automatically generate a default save file for the main story. Are you sure you want to continue?
+You must complete the Main Story once to disable Torpor Mode.
+You won't be able to change how Anton Rayne looks after starting the story.
+Your profile name has been flagged as inappropriate and a temporary profile name was assigned to you. 
+
+You can change your profile name below or in the profile settings.
+Zoom In
+Zoom Out
+Zysco
+adasd
+asadasdasdasdadasdasdasdasd
+asdasd
+asdasdasd
+asdasdsad
+code
+email
+http://discord.gg/H2F6xxg
+https://www.reddit.com/r/suzerain/
+https://www.torporgames.com/feed?format=rss
+https://www.torporgames.com/privacy-policy
+https://www.torporgames.com/suzerain-version?format=rss
+icon_inactivity_longterm_large
+icon_inactivity_rizia_large
+icon_inactivity_sordland_large
+icon_offerexpiry_large
+icon_ticketexpiry_large
+info value text text info dfddddddd
+narration text
+profile name
+re-enter password
+sadasdas
+Šimon Škvára
