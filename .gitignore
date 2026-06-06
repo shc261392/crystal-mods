@@ -43,6 +43,10 @@ node_modules/
 .nuxt/
 .cache/
 dist/
+
+# EXCEPTION: Official release ZIPs (v1.0.3 and later)
+!dist/wh40k-dow-de-tc-mod-v*.zip
+
 out/
 
 # ── Game / mod artifacts ─────────────────────────────────────────────────────
