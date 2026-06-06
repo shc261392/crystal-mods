@@ -124,12 +124,12 @@ EXT_NAME  := vortex-ext-$(EXT_ID)-v$(EXT_VER)
 # ─────────────────────────────────────────────────────────────────────────────
 
 .PHONY: package
-package: ## Build distributable mod archive (only EnginLocMod.sga + Engine.ucs)
+package: ## Build distributable mod archive (files packaged with full deployment paths)
 	@echo "▶ Packaging $(PKG_NAME).zip ..."
 	@rm -rf "$(DIST_DIR)/$(PKG_NAME)" "$(DIST_DIR)/$(PKG_NAME).zip"
-	@mkdir -p "$(DIST_DIR)/$(PKG_NAME)"
-	@cp EnginLocMod.sga "$(DIST_DIR)/$(PKG_NAME)/"
-	@cp Engine.ucs "$(DIST_DIR)/$(PKG_NAME)/"
+	@mkdir -p "$(DIST_DIR)/$(PKG_NAME)/Engine/Locale/Chinese"
+	@cp EnginLocMod.sga "$(DIST_DIR)/$(PKG_NAME)/Engine/Locale/Chinese/"
+	@cp Engine.ucs "$(DIST_DIR)/$(PKG_NAME)/Engine/Locale/Chinese/"
 	@cd "$(DIST_DIR)/$(PKG_NAME)" && zip -r "../$(PKG_NAME).zip" . -x "*.DS_Store"
 	@echo "✓ $(DIST_DIR)/$(PKG_NAME).zip"
 	@echo "  Size: $$(du -sh "$(DIST_DIR)/$(PKG_NAME).zip" | cut -f1)"
