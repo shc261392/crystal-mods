@@ -169,8 +169,9 @@ function installLocaleContent(files) {
 	const norm = files.map((f) => f.replace(/\\/g, "/"));
 	let fileEntries = norm.filter((f) => !f.endsWith("/"));
 
-	// Filter out backup files (user config backups from prior deploys)
-	fileEntries = fileEntries.filter((f) => !path.basename(f).toLowerCase().endsWith(".bak"));
+	// Note: Do NOT filter .bak files. Vortex's staging system handles file
+	// deployment and restoration natively. When the user uninstalls a mod,
+	// Vortex automatically restores the previous state. No manual backups needed.
 
 	// Layout A — archive already has Engine/Locale/ prefix
 	if (fileEntries.some((f) => f.toLowerCase().includes("engine/locale/"))) {
