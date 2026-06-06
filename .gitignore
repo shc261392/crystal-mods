@@ -55,6 +55,9 @@ out/
 *.pak.bak
 *.uasset.bak
 
+# EXCEPTION: Official release SGA files (v1.0.3 and later)
+!dawn-of-war-de/unofficial-tc-patch/EnginLocMod.sga
+
 # Deploy state / backups produced by mod scripts at runtime
 backup/
 *.bak
