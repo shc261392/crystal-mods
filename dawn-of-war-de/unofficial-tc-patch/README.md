@@ -340,3 +340,46 @@ U+0000. The artifact is gone.
 
 If future font experiments re-introduce this file, avoid `notosanstc-bold.ttf`
 for any font definition that is used to render subtitle or in-game dialogue text.
+
+---
+
+## Baseline Hash Verification
+
+**IMPORTANT:** Use these hashes to verify the original/vanilla state of the locale files.  
+Any backup or deployment state **not matching these hashes** is considered "touched" (TC-modified) and should not be used as a restore baseline.
+
+### Original Vanilla Files (Clean Baseline)
+
+These hashes represent the **unmodified original Chinese locale files** as shipped by Steam with the Definitive Edition:
+
+| File | Size | SHA256 |
+|------|------|--------|
+| `Engine/Locale/Chinese/EnginLoc.sga` | 190M | `9174735668f20090bc5f1cbe443050b68a6e559aff288786f3b830e9e077cb4a` |
+| `Engine/Locale/Chinese/Engine.ucs` | 1.6M | `215baacd2846db80229b5763723b4b998642f197507dec752d65ce473f22ff02` |
+
+### Verification
+
+To verify your files match the baseline:
+
+**Linux / WSL2 / macOS:**
+```bash
+sha256sum "$GAME_DIR/Engine/Locale/Chinese/EnginLoc.sga" "$GAME_DIR/Engine/Locale/Chinese/Engine.ucs"
+```
+
+**Windows (PowerShell):**
+```powershell
+Get-FileHash -Algorithm SHA256 -Path "$env:GAME_DIR\Engine\Locale\Chinese\EnginLoc.sga", "$env:GAME_DIR\Engine\Locale\Chinese\Engine.ucs"
+```
+
+If your hashes **do not match**, the files have been modified. Restore from the original Steam installation or verify the game files via Steam's integrity check:
+- Right-click **Dawn of War Definitive Edition** in Steam
+- Select **Manage** → **Verify integrity of game files**
+
+### Backup Interpretation
+
+When `uninstall.sh` / `uninstall.ps1` restore from a timestamped backup, it uses the **most recent backup before the current session**.  
+**If that backup's hashes do not match the baseline above, the backup is TC-modified** and should only be used for reverting an incomplete or broken TC deployment—not as a canonical source.
+
+To force restoration to the true vanilla state, either:
+1. Verify files via Steam (see above), or
+2. Manually compare backup hashes against the table above and reject non-matching entries.
