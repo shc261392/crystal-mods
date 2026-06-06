@@ -1,0 +1,1022 @@
+1|Porucznik||
+2|Porucznik Krwawych Aniołów||
+3|Orędownicy||
+4|Orędownicy Krwawych Aniołów||
+5|Termagant||
+6|Termagant Tyranidów||
+7|Tyrannofex||
+8|Tyrannofex Tyranidów||
+9|Kronikarz||
+10|Kronikarz Krwawych Aniołów||
+11|Brat Aeturo||
+12|Potężne kończyny||
+13|Oddział szturmowy Krwawych Aniołów||
+14|Oddział szturmowy||
+15|Sierżant Carleon||
+16|Ścigacz Krwawych Aniołów||
+17|Ścigacz||
+18|Krwawy kapłan Krwawych Aniołów||
+19|Krwawy kapłan||
+20|Brat Aeturo||
+21|Hormagunt Tyranidów||
+22|Hormagunt||
+23|Venomtrop Tyranidów||
+24|Venomtrop||
+25|Rozpylacz kwasu||
+26|Miotacz świdrożuków||
+27|Pistolet bolterowy||
+28|Miecz energetyczny||
+29|Potężne kończyny||
+30|Miecz łańcuchowy||
+31|Koszące szpony||
+32|Ciężki bolter||
+33|Działko szturmowe||
+34|Ciężki miotacz ognia||
+35|Działo termiczne||
+36|Toksyczna smycz||
+37|Ręczny miotacz ognia||
+38|Karabin termiczny||
+39|Czerwone pragnienie||
+40|Plecak odrzutowy||
+41|Taktyczna precyzja||
+42|Łaski Anioła||
+43|Miecz Sanguiniusa||
+44|Telemetria łącza danych||
+45|Wyniesienie antygrawitacyjne||
+46|Uzdrów brata swego||
+47|Narthecium||
+48|Sprawiedliwe napomnienie||
+49|Ujarzmienie krwi||
+50|Taktyka roju||
+51|Chmura zarodników||
+52|Toksyczna obecność||
+53|Anuluj plecak odrzutowy||
+54|Zwiększa impet sojuszników wokół o {0}||
+55|Leczy jednego sojusznika niebędącego pojazdem w zasięgu {0} pola za {1} PZ.||
+56|Ożywia ostatniego członka wskazanej jednostki i przywraca mu {0} zdrowia||
+57|Zadaje {0} pkt obrażeń wrogim jednostkom wokół||
+58|Nakłada efekt statusu na pola w zasięgu||
+59|Granat niszczący||
+60|Granat odłamkowy||
+61|Rękawica bolterowa||
+62|Rękawica ogniowa||
+63|Wyrzutnia granatów odłamkowych||
+64|Doskonały pistolet bolterowy||
+65|Przywódca synaptyczny||
+66|Krwawe Anioły||
+67|Tyranidzi||
+68|Adepta Sororitas||
+69|Demony Chaosu Khorne’a||
+70|Niezliczeni Synowie||
+71|Taktyka linii frontu||
+72|Karabin bolterowy||
+73|Automatyczny karabin bolterowy||
+74|Agresorzy||
+75|Agresorzy Krwawych Aniołów||
+76|Grad płomieni||
+77|Tyran roju Tyranidów||
+78|Tyran roju||
+79|Wielkie miażdżące szpony||
+80|Tervigon||
+81|Tervigon Tyranidów||
+82|Zadaje {0} pkt obrażeń i penetruje {1} pkt pancerza jednostkom zadającym obrażenia tej jednostce.||
+83|Wystrzeliwuje granaty ({0}), z których każdy zadaje {1} pkt obrażeń i penetruje {2} pkt pancerza.||
+84|Spopielacz plazmowy||
+85|Ciężki spopielacz plazmowy||
+86|Piekielnicy||
+87|Piekielnicy Krwawych Aniołów||
+88|Gargulec||
+89|Gargulec Tyranidów||
+90|Oślepiający jad||
+91|Superdoładowanie||
+92|Jednostka poświęca wszystkie pozostałe punkty ruchu i wykonuje rozkaz ataku dystansowego z {0} dodatkowymi atakami za każdy wydany PR.||
+93|Anuluj Superdoładowanie||
+94|Plujec śmierci||
+95|Wojownicy||
+96|Wojownicy Tyranidów||
+97|Baza||
+98|Żołnierz||
+99|Elita||
+100|Lotnik||
+101|Szybki atak||
+102|Ciężkie wsparcie||
+103|Transport||
+104|Fortyfikacje||
+105|Władca wojny||
+106|Postacie i pojedyncze jednostki często używane do wzmacniania innych jednostek.||
+107|Podstawowa jednostka sił zbrojnych. Tania i liczna.||
+108|Jednostki specjalne. Często silniejsze lub zadające większe obrażenia.||
+109|Jednostki latające.||
+110|Jednostki potrafiące szybko się przemieszczać.||
+111|Wytrzymałe i silne jednostki.||
+112|Pojazdy służące do transportu innych jednostek.||
+113|Stacjonarne fortyfikacje.||
+114|Władcy wojny||
+115|Uskrzydlenie||
+116|Topór energetyczny||
+117|Zbrojmistrz||
+118|Zbrojmistrz Krwawych Aniołów||
+119|Halabarda mocy||
+120|Bolter szturmowy||
+121|Drednot kronikarz||
+122|Drednot kronikarz Krwawych Aniołów||
+123|Bolter szturmowy||
+124|Inceptor||
+125|Inceptor Krwawych Aniołów||
+126|Piekielny pistolet||
+127|Serafinka||
+128|Serafinka Adepta Sororitas||
+129|Działko bioplazmowe||
+130|Egzokryna||
+131|Egzokryna Tyranidów||
+132|Drednot furioso||
+133|Drednot furioso Krwawych Aniołów||
+134|Pięści furii||
+135|Asysta||
+136|Ogień osłonowy||
+137|Seria na oślep||
+138|Gniew Imperatora||
+139|Wojownik||
+140|Zabójca||
+141|Wyrok Imperatora||
+142|Odgrywanie roli||
+143|Zemsta na arcywrogu||
+144|Elita||
+145|Potęga||
+146|Weteran||
+147|Rozdzierające szpony||
+148|Kościane miecze||
+149|Pierwszy||
+150|Pierwszy Tyranid||
+151|Wielkie koszące szpony||
+152|Trygon||
+153|Trygon Tyranidów||
+154|Pożeracz z mózgorobalami||
+155|Plujec śmierci z oślizgłymi larwami||
+156|Kolcogrzbiet||
+157|Kolcogrzbiet Tyranidów||
+158|Olbrzymie koszące szpony||
+159|Podwójne działko szturmowe||
+160|Działko ogniowe||
+161|Predator Baala||
+162|Predator Baala Krwawych Aniołów||
+163|Genokrad||
+164|Genokrad Tyranidów||
+165|Pożeracz||
+166|Dotknięcie Omnizjasza||
+167|Leczy jednego sojusznika mechanicznego w zasięgu {0} pola za {1} PZ.||
+168|Błogosławieństwa Omnizjasza||
+169|Zwiększa pancerz wskazanej jednostki||
+170|Przywołanie ducha maszyny||
+171|Zwiększa celność i zadawane obrażenia jednostki zmechanizowanej||
+172|Serworamię||
+173|Automatycznie atakuje wroga na spornym polu||
+174|Tarcza Sanguiniusa||
+175|Tymczasowo zwiększa maksymalne PZ celu||
+176|Przyspieszenie||
+177|Zwiększa liczbę PR i szybkość ataków wręcz||
+178|Ruchome piaski||
+179|Zmniejsza szybkość ruchu i możliwość uniku na danym obszarze||
+180|Niestabilność||
+181|Wybucha po śmierci, zadając {0} pkt obrażeń i penetrując {1} pkt pancerza wszystkim jednostkom w zasięgu {2} pola.||
+182|Zasłona dymna||
+183|Naturalny zabójca||
+184|Połączenie||
+185|Zwiększa impet zyskiwany przez pobliskie jednostki sojusznicze.||
+186|Taktyka szturmowa||
+187|Skok||
+188|Nagromadzenie plazmy||
+189|Symbiotyczne celowanie||
+190|Jednostka poświęca wszystkie pozostałe punkty ruchu i wykonuje rozkaz ataku dystansowego, zadając dodatkowe obrażenia za każdy wydany PR.||
+191|Śmierć z powietrza||
+192|Plecak odrzutowy musi być aktywny||
+193|Błogosławiona amunicja||
+194|Tarcza wiary||
+195|Bolter Godwyn De'az||
+196|Siostry bitwy||
+197|Siostry bitwy Adepta Sororitas||
+198|Bitewne kazanie||
+199|Wiara i furia||
+200|Siostra przełożona||
+201|Siostra przełożona Adepta Sororitas||
+202|Punkty akcji: {0}||
+203|Żywa broń||
+204|Adaptacyjne celowanie||
+205|Jednostka poświęca wszystkie pozostałe punkty ruchu i wykonuje rozkaz ataku dystansowego z dodatkowym atakiem za każdy wydany PR. Jednostka otrzymuje też większe obrażenia dystansowe.||
+206|=+ Atak||
+207|Działko odłamkowe||
+208|Taran||
+209|Kolczasty pancerz||
+210|Zasobniki kolców||
+211|Wieczny głód||
+212|Oddanie||
+213|Ta jednostka zyskuje rozpęd za każdy zabity wrogi model, proporcjonalnie do odległości od wrogiej jednostki.||
+214|Ta jednostka zyskuje 5 pkt impetu za zabójstwa w walce wręcz i 1 pkt impetu za zabójstwa dystansowe.||
+215|Ta jednostka zyskuje rozpęd proporcjonalnie do obrażeń otrzymywanych w wyniku ataków wrogów.||
+216|Eksterminator plazmowy||
+217|Ciężkie działko jadowe||
+218|Kompania śmierci||
+219|Kompania śmierci Krwawych Aniołów||
+220|Miecz mocy||
+221|Porucznik Carleon||
+222|Brat Aeturo||
+223|Zbrojmistrz Croginax||
+224|Brat Quindar||
+225|Siostra Verity||
+226|Bez broni||
+227|Wyrzutnia odłamkowa||
+228|Strategiczna adaptacja||
+229|Strategiczna adaptacja — dystansowa||
+230|Strategiczna adaptacja — walka wręcz||
+231|Krzyk psioniczny||
+232|Wola Umysłu Roju||
+233|Skrzydła Serafinki||
+234|Łaska||
+235|Anuluj Skrzydła Serafinki||
+236|Przeciwdziała części negatywnych efektów Skrzydeł Serafinki. Przestaje działać wraz ze Skrzydłami Serafinki.||
+237|Litania oddania||
+238|Węzeł zarazy Tyranidów||
+239|Dziki pomiot||
+240|Katalizator||
+241|Kolczasta salwa||
+242|Krwawa telepatia||
+243|Pozwala zyskiwać impet niezależnie od przywódcy synaptycznego, ale uniemożliwia też korzystanie z premii zapewnianych przez przywódcę. Kumuluje się z innymi jednostkami Genokrad do {0} razy.<br><br>{1}||
+244|Impuls bioelektryczny||
+245|Toksyczne ukłucie||
+246|Młot hemoturgiczny||
+247|Skrzydła Sanguiniusa||
+248|Wizja anielskiej furii||
+249|Krwawa lanca||
+250|Czarna wściekłość||
+251|Nieustraszony||
+252|Machina jeżdżąca Lucyfer||
+253|Croginax||
+254|Anuluj Machinę jeżdżącą Lucyfer||
+255|Carleon||
+256|Dzięki 100-letniemu doświadczeniu Carleon potrafi rozmieścić żołnierzy tak, aby byli maksymalnie skuteczni.||
+257|Ostrzał z działka szturmowego||
+258|Uderzenie Szturmowych marines||
+259|Pociski Tajfun||
+260|Ostrzał z działka jadowego||
+261|Soniczny pisk||
+262|Miny zarodnikowe||
+263|Umiejętność rozkazu||
+264|Celność w walce dystansowej||
+265|Punkty trafienia||
+266|Celność w walce wręcz||
+267|Unik||
+268|Jednostki Bazy||
+269|PA w walce wręcz||
+270|Piechota Primaris||
+271|Pancerz przeciw atakom dystansowym||
+272|Zadaje {0} pkt obrażeń celowi na środkowym polu||
+273|Zadaje {0} pkt obrażeń celom na sąsiednich polach||
+274|Umieszcza jednostki ({0}) na wskazanym polu. Jeśli na tym polu znajduje się wróg, nastąpi atak z szarżą.||
+275|Strzela {0} razy na każde pole w 4 pola znajdujące się w jednej linii, zadając {1} pkt obrażeń na strzał z celnością {2} i penetracją pancerza {3}.||
+276|Mina zarodnikowa||
+277|Mina zarodnikowa Tyranidów||
+278|Detonacja||
+279|Obniża ilość impetu wroga o 50% na obszarze 3x3.||
+280|Zmniejsza impet wrogów o 50% i pozbawia ich akcji czuwania na obszarze 3x3.||
+281|Strzela raz na każde pole w 4 pola znajdujące się w jednej linii, zadając {1} pkt obrażeń na strzał z celnością {2} i penetracją pancerza {3}.||
+282|Umieszcza 4 miny zarodnikowe w losowych miejscach na obszarze 3x3. Jeśli mina znajdzie się na wrogu, natychmiast wybuchnie. Minami zarodnikowymi, które znajdą się na pustych polach, będzie można sterować w następnej turze.||
+283|Jama||
+284|Młot gromów||
+285|Ścigacz Tornado Krwawych Aniołów||
+286|Ścigacz Tornado||
+287|Pistolet plazmowy||
+288|Potomkowie Sanguiniusa||
+289|Siła we krwi||
+290|Obserwacja wykonania||
+291|Stabilizatory plazmowe||
+292|Niezwykłe zmysły||
+293|Chodzące bastiony||
+294|Pierwsza linia||
+295|Krwawe ożywienie||
+296|Błogosławieni Sanguiniusa||
+297|Krew Wielkiego Anioła||
+298|Intensywna koncentracja||
+299|Surowe szkolenie||
+300|Impet naprzód||
+301|Amortyzacja wstrząsów||
+302|Dzika technika||
+303|Ścigacz i ścigacz Tornado||
+304|Jednostki mechaniczne||
+305|Wzmocnione duchy maszyn||
+306|Omnizjasz patrzy||
+307|Kalibracja działka szturmowego||
+308|Odbiornik w auspeksie||
+309|Stare metody||
+310|Szturmowi marines, Kompania śmierci, Carleon, Aeturo i Croginax||
+311|Croginax i Agresorzy||
+312|Propagandziści polowi||
+313|Jednostki Kronikarzy||
+314|Harmonia siły||
+315|Jednostki Drednotów||
+316|Tylko śmierć||
+317|Forteca psioniczna||
+318|Anielska przezorność||
+319|Szpony rozdzierają obojętne ciało||
+320|Honor do samego końca||
+321|Akty wiary||
+322|Imperator nas strzeże||
+323|Jednostki wyposażone w pancerz Gravis X||
+324|<i>Ostatnim dźwiękiem, jaki usłyszą, będzie ryk łańcucha.</i>||
+325|<i>Wściekłość zawsze kieruj przed siebie.</i>||
+326|<i>Primaris szybko zrozumieli, że będą musieli walczyć, dopóki nie wyplenią guntów z Baalfory.</i>||
+327|<i>Jeśli chcą przejąć Zakon, muszą być gotowi na życie w cierpieniu.</i>||
+328|<i>Po stu latach spędzonych z plecakiem odrzutowym Carleon wiedział, jak ważne jest lądowanie.</i>||
+329|<i>Krew anioła przedłuża ich życie, ale ci, którzy przeżyją, muszą mierzyć się też z innymi konsekwencjami.</i>||
+330|<i>Aeturo uważnie obserwuje Primaris, wypatrując znaków słabości i uległości.</i>||
+331|<i>Cała trudność nie polega na strzelaniu, tylko na obserwowaniu sytuacji podczas ładowania broni.</i>||
+332|<i>Szlachetność Sanguiniusa widać na pierwszy rzut oka.</i>||
+333|<i>Agresorzy wiedzieli, że znajdą się pod ostrzałem jako pierwsi, i jeszcze chętniej szli do walki.</i>||
+334|<i>Agresorzy z nieznanych dla siebie powodów aż rwali się do walki, gdy tylko w pobliżu znalazł się młody kapłan.</i>||
+335|<i>Dwie warstwy wzmocnionego ceramitu sprawiają, że ten pancerz Gravis jest praktycznie nie do przebicia.</i>||
+336|<i>Dzięki specjalnym szkoleniom Piekielnicy potrafią dostrzegać nierówności wskazujące słabe punkty w pancerzu wroga.</i>||
+337|<i>Zbrojmistrz jest przywiązany do starzejącego się uzbrojenia Krwawych Aniołów. Chętnie korzysta z rytualnych technik konserwacji poznanych na Marsie.</i>||
+338|<i>Bóg Maszyn chroni i błogosławi duchy, które sumiennie wykonują swoje zadania.</i>||
+339|<i>Te stare lufy wymagają jedynie drobnej kalibracji.</i>||
+340|<i>Duch maszyny ostrzega o nadciągających niebezpieczeństwach.</i>||
+341|<i>Napierśnik pancerza typu VII buczał niespokojnie pod wpływem dotyku Zbrojmistrza. Duch maszyny z ufnością wsłuchiwał się w znajome modlitwy.</i>||
+342|<i>Coś w zachowaniu Zbrojmistrza sprawiło, że pola pobliskich broni energetycznych zabuczały z niecierpliwością.</i>||
+343|<i>To ostrze będzie przedłużeniem twojego ramienia. Wykonawcą twojej woli.</i>||
+344|<i>Tylko śmierć może zakończyć służbę. </i>||
+345|<i>Umysł Kronikarza jest jak twierdza, z której ciało czerpie energię.</i>||
+346|<i>Wystarczy rzut okiem, by podjąć decyzję, która może zakończyć się strzałem w ramię lub strzałem w głowę.</i>||
+347|<i>Dla Kompanii śmierci ból nie istnieje.</i>||
+348|<i>W ich umysłach dominują wizje Wielkiego Anioła, które powoli wypierają stracone wspomnienia.</i>||
+349|<i>Módl się, Siostro! Podnieś głos w Jego imieniu! Niech twa modlitwa stanie się manifestem Jego woli!</i>||
+350|<i>Twoją najmocniejszą zbroją jest niezachwiana wiara.</i>||
+351|<i>Każdy z nich na własnej skórze poznał zawiłości życia zgodnego z łaskami Anioła i cnotami Wojownika.</i>||
+352|<i>Bez względu na to, czy utrzymasz szyk, czy go złamiesz, najważniejsza jest umiejętność strzelania prosto.</i>||
+353|<i>Doktryna założycielska Ósmej Kompanii.</i>||
+354|<i>Standardowy granat przeciwpancerny.</i>||
+355|<i>Standardowy granat przeciwpiechotny.</i>||
+356|<i>Dzięki swojej wadze pancerz Gravis sam w sobie jest potężną bronią.</i>||
+357|<i>Nie ma wspanialszego widoku niż grad kul ze Stormravena.</I>||
+358|<i>Przybywające na czas posiłki doświadczonych walecznych braci, których Carleon darzy zaufaniem.</i>||
+359|<i>Wyrzutnie tajfunów zwiastują zgubę swoim celom.</i>||
+360|<i>Doświadczenie uczy, że spokój i wściekłość mogą iść w parze.</i>||
+361|<i>Powinnością Miecza jest wykonać zadanie, bez względu na koszty.</i>||
+362|<i>Carleon doskonale wiedział, gdzie umieścić swoich walecznych braci, aby byli najskuteczniejsi.</I>||
+363|<i>Uratuj jednego brata przed pewną śmiercią, a możesz zmienić losy wojny.</i>||
+364|<i>Agresorzy okopują się w ziemi i zalewają swoich przeciwników deszczem ognia.</i>||
+365|<i>Krwawe Duchowieństwo uważa za święte wszystkie aspekty krwi Prymarcha, w tym Czerwone pragnienie.</i>||
+366|<i>Nierzadko zdarza się, że Krwawy kapłan znajduje się na pierwszej linii ognia, zagrzewając swych braci do walki słowami ich szlachetnego prekursora.</i>||
+367|<i>Każdy strzelec zabity przez własną broń jest uwieczniany mikroskopijnym napisem na obudowie.</i>||
+368|<i>Zbrojmistrz ożywia duchy maszyn mieszkające w pancerzach wspomaganych noszonych przez pobliskich walecznych braci.</i>||
+369|<i>Rytuały inicjacji, hymny konserwacji, modlitwy o skuteczność.</i>||
+370|<i>Drażliwy punkt sporny między Krwawymi Aniołami a Adeptus Mechanicus.</i>||
+371|<i>Strumienie materii wyrzucane z napędów antygrawitacyjnych zwiększają moc grupy ścigaczy.</i>||
+372|<i>Oznacz cel do unicestwienia.</i>||
+373|<i>Miej wiarę, że Wielki Anioł wzmocni twe siły w chwili próby.</i>||
+374|<i>Drednot zaczyna poruszać się z nadnaturalną prędkością, popychany mocą psionika.</i>||
+375|<i>Quindar jest czuły na piaski i księżyce Baala. Jego wola kształtuje ziemię, po której chodzi.</i>||
+376|<i>Kronikarz porusza się na lśniących skrzydłach Wielkiego Anioła.</i>||
+377|<i>Włócznia z energii empyrycznej i krwi jego poległych wrogów.</i>||
+378|<i>Gdy siostra przełożona podnosi głos, sławiąc Imperatora, każda siostra w pobliżu słyszy jej oddanie.</i>||
+379|<i>Mocna mieszanka popychająca Siostrę przełożoną do przodu.</i>||
+380|<i>Każda sztuka tej błogosławionej amunicji jest dziełem mistrza rzemiosła, który całe swoje życie przeznaczył na wykonanie i uświęcenie jednego pocisku.</i>||
+381|<i>Nasza wiara jest naszą tarczą. Gdy jedna słabnie, marnieje też druga.</i>||
+382|<i>Zabójcza gracja lecącej Serafinki to zaiste cudny widok.</i>||
+383|Oddział szturmowy i Carleon||
+384|Za Imperatora i Sanguiniusa||
+385|Zabij lub daj się pożreć||
+386|Imperator nas strzeże||
+387|Działa na wszystkich sojuszników w zasięgu {0} pól<br><br>{1}||
+388|Działa na jednostkę używającą tej umiejętności<br><br>{0}||
+389|Działa na jednego wskazanego sojusznika w zasięgu {0} pól<br><br>{1}||
+390|Ożywia ostatniego członka wskazanej jednostki sojuszniczej w zasięgu {0} pola i przywraca mu {1} zdrowia oraz {2}% pkt ruchu||
+391|Zadaje {0} pkt obrażeń rozpryskowych jednej wrogiej jednostce w zasięgu {1} pól.<br><br>Penetracja pancerza: {2}||
+392|Anuluj Skrzydła Sanguiniusa||
+393|Działa na jednostkę używającą tej umiejętności<br><br>{0}<br><br>Aktywacja w sąsiedztwie innego ścigacza powoduje podwojenie efektu.||
+394|{0}% szansy aktywacji, gdy jednostka Kompanii śmierci zabije model wroga. Kumuluje się do {1} razy.<br><br>{2}||
+395|Rzuca lancę, która rani trafione w drodze do celu jednostki wroga (maks. zasięg: {0}). Zadaje {1} pkt obrażeń rozpryskowych z {2} pkt przebicia pancerza maksymalnie {3} celom na pole.||
+396|Działa na jednego wskazanego wroga w zasięgu {0} pól<br><br>{1}||
+397|Używa plecaka odrzutowego jednostki, aby skoczyć na wroga, zadając {0} pkt obrażeń z {1} pkt przebicia pancerza maksymalnie {2} modelom. Liczy się jako atak z szarżą.||
+398|Zadaje {0} pkt obrażeń psionicznych wskazanej wrogiej jednostce w zasięgu {1} pól||
+399|Przyzywa wyobrażenie Sanguiniusa, które przeraża wszystkich wrogów w zasięgu wzroku. Zadaje {0} pkt obrażeń do impetu wszystkim wrogom w zasięgu {1} pól.||
+400|Przyzywa wyobrażenie Sanguiniusa, które przeraża wszystkich wrogów w zasięgu wzroku. Zadaje {0} pkt obrażeń do impetu wszystkim wrogom w zasięgu {1} pól oraz {2} pkt obrażeń psionicznych wszystkim wrogim jednostkom w zasięgu {3} pola.||
+401|Aktywuje Czerwone pragnienie u jednej sojuszniczej jednostki w zasięgu {0} pól.<br><br>{1}||
+402|Wydaje rozdzierający umysł krzyk wzdłuż linii {0} pól, który zadaje {1} pkt obrażeń do impetu i {2} pkt obrażeń psionicznych.||
+403|Zmusza wszystkie sojusznicze jednostki w zasięgu {0} pól do wykonania woli Umysłu Roju.<br><br>{1}||
+404|Łączy wszystkie sojusznicze jednostki w zasięgu {0} pól w sieć synaptyczną. Połączone jednostki zyskują {1}. Ten efekt może się kumulować do {2} razy.||
+405|Wzrost wiary||
+406|Zadaje {0} pkt obrażeń jednemu wrogiemu modelowi w zasięgu {1} pól z dodatkowymi obrażeniami rozpryskowymi.<br><br>Penetracja pancerza: {2}||
+407|Działa na wszystkich sojuszników w zasięgu {0} pól<br><br>{1}<br><br>{2}||
+408|Działa na jednego wskazanego sojusznika w zasięgu {0} pola<br><br>{1}<br><br>{2}||
+409|Działa, gdy aktywny jest efekt {0}<br><br>{1}||
+410|{0}% szansy, że zadziała po zabiciu wrogiego modelu<br><br>{1}<br><br>+{2} punkt akcji||
+411|{0}% szansy, że zadziała po otrzymaniu obrażeń<br><br>{1}||
+412|Jednostka poświęca wszystkie pozostałe punkty ruchu i wykonuje atak dystansowy zadający obrażenia rozpryskowe i +{0}% dodatkowych obrażeń za każdy wydany PR.<br><br>Ładunki: {1}/{2}||
+413|Jednostka poświęca wszystkie pozostałe punkty ruchu i wykonuje atak dystansowy zadający obrażenia rozpryskowe (+{0}% dodatkowych obrażeń oraz +{1} pkt penetracji pancerza za każdy wydany PR).<br><br>Ładunki:{2}/{3}||
+414|Sierżant Orędownik||
+415|Bierze na cel jednego sojusznika mechanicznego w zasięgu {0} pola<br><br>{1}||
+416|Szarżuje przez wiele jednostek, zadając {0} pkt obrażeń i penetrując {1} pkt pancerza zarówno wrogom, jak i sojusznikom. Zadaje {2} pkt obrażeń i penetruje {3} pkt pancerza ostatniemu celowi.||
+417|Skacze na wroga oddalonego o {0} pole, zadając obrażenia w walce wręcz i penetrując +{1} pkt pancerza. Liczy się jako atak z szarżą.||
+418|Zapewnia premię do ataku dystansowego lub wręcz sojusznikom w zasięgu {0} pól. Umiejętność z możliwością przełączania trybów.<br><br>Premia do ataku dystansowego<br>{1}<br><br>Premia do ataku wręcz<br>{2}||
+419|Przywołuje sojuszniczą jednostkę Termagant z -{0} PR w pierwszej turze.||
+420|Zadaje {0} pkt obrażeń rozpryskowych i penetruje {1} pkt pancerza u wroga w odległości {2} pól||
+421|Natychmiast ryje w ziemi, aby przemieścić się do {0} pól.<br><br>{1}||
+422|Pozwala zyskiwać impet niezależnie od przywódcy synaptycznego, ale uniemożliwia też korzystanie z premii zapewnianych przez przywódcę. Kumuluje się z innymi jednostkami Genokrad do {0} razy.||
+423|Jednostka nie może wykonać akcji Wycofaj się.||
+424|Krwawe Anioły, jeden z najszlachetniejszych zakonów Kosmicznych marines, zmagają się z mroczną klątwą własnej krwi. To szybka frakcja, która specjalizuje się w walce wręcz i taktyce szturmowej.||
+425|Prowadzeni wolą Umysłu Roju Tyranidzi mają jedno nadrzędne pragnienie: pożerać. Są frakcją Xenos, która działa w rojach, wykorzystując przywódców synaptycznych, aby zwiększyć skuteczność zabijania.||
+426|<i>Automatyczna odmiana karabinu bolterowego Primaris do eliminowania rojów.</i>||
+427|<i>Często używana relikwia ze Zbrojowni, w której można wyczuć cień niezliczonych bitew z przeszłości.</i>||
+428|<i>Niech nikt nie umknie przed naszym gniewem.</i>||
+429|<i>Wyjątkowe pistolety termiczne, wydawane najbardziej zaufanym braciom.</i>||
+430|<i>Zwiększa skuteczność Inceptorów w walce ze średnio zbrojnymi wrogami.</i>||
+431|<i>Agresor zastępuje salwę z wyrzutni odłamkowej ścianą płomieni wyrastającą z jego pięści.</i>||
+432|<i>Trafienie jednym strzałem wymaga instynktu strzelca wyborowego.</i>||
+433|<i>Strzelec przestaje zajmować się kontrolą tłumu i zaczyna polować na ważne opancerzone cele.</i>||
+434|<i>Miotacze ognia zamontowane na czołgach z prometium pozwalają uzyskać większy zasięg niż ich ręczne odpowiedniki.</i>||
+435|<i>Majestatyczny strumień płomieni oczyści każdego.</i>||
+436|<i>Drednot wydaje ryk pogardy, stojąc otoczony płonącymi szczątkami wrogów.</i>||
+437|<i>Przeciwpancerny karabin termiczny wyprodukowany specjalnie dla szacownego drednota.</i>||
+438|<i>Tylko ich nienawiść jest gorętsza niż te płomienie.</i>||
+439|<i>Oczyścimy nieczystych ogniem i żelazem.</i>||
+440|<i>Nie tylko Krwawe Anioły są mistrzami w posługiwaniu się pistoletami termicznymi.</i>||
+441|<i>Pomruk ostrza idealnie harmonizuje z jej pieśnią oddania.</i>||
+442|Skacze na wroga znajdującego się w odległości {0} pól, zadając obrażenia w walce wręcz i penetrując +{1} pkt pancerza. Liczy się jako atak z szarżą.<br>Nie prowokuje ataku odwetowego pistoletem.||
+443|Ostrzeżenie: Zadaje obrażenia sojusznikom||
+444|Jednostka poświęca swoje punkty ruchu i wykonuje atak dystansowy z penetracją pancerza +{0} pkt i szansą na trafienie krytyczne +{1}% za każdy wydany PR.||
+445|{0}% szansy aktywacji, gdy ta jednostka zabije wrogi model. Można zastosować tylko raz na turę.||
+446|<i>Precz z nieczystymi!</i>||
+447|Działa na wszystkich sojuszników w zasięgu {0} pola<br><br>{1}||
+448|Zapewnia premię do ataku dystansowego lub wręcz sojusznikom w zasięgu {0} pól. Umiejętność z możliwością przełączania trybów.<br><br>Premia do ataku dystansowego<br>{1}<br><br>Premia do ataku wręcz<br>{2}<br><br>Zapewnia dodatkową premię sojusznikom w zasięgu {3} pól<br>{4}||
+449|Oślepia i zatruwa wroga atakiem dystansowym.||
+450|Plecak odrzutowy Gravis||
+451|Wykonuje atak dystansowy z dodatkowymi obrażeniami (+{0}%) i penetracją pancerza (+{1} pkt), ale istnieje {2}% szansy, że każdy model otrzyma {3} pkt obrażeń.||
+452|Działa na jednostkę używającą tej umiejętności<br><br>{0}<br>Nie sprowokuje ataków odwetowych pistoletem podczas szarży||
+453|Anuluj wyniesienie antygrawitacyjne||
+454|Wyczerpanie||
+455|Działa na jednostkę używającą tej umiejętności<br><br>{0}<br><br>Efekt utrzymuje się przez dodatkową turę||
+456|Leczy jednego wskazanego sojusznika w danym momencie oraz ponownie na początku jego następnej tury. Uzyskanie zdrowie jest dzielone między wszystkie modele w jednostce.||
+457|Kumuluje się z każdą sąsiednią jednostką Taktyki roju, maksymalnie {0} razy.||
+458|Szpony błyskawicy||
+459|Młot gromów i Tarcza burzy||
+460|Bolter Angelus||
+461|Topór Encarmine||
+462|Miecz Encarmine||
+463|Monstrualne rozdzierające szpony||
+464|Działo porażeniowe||
+465|Działo palownicze||
+466|Władca stada||
+467|Władca stada Tyranidów||
+468|Strażnik roju||
+469|Strażnik roju Tyranidów||
+470|Terminatorzy szturmowi||
+471|Terminatorzy szturmowi Krwawych Aniołów||
+472|Krwawy strażnik||
+473|Krwawy strażnik Krwawych Aniołów||
+474|Kolce bestii odłamkowej||
+475|Kolce działa porażeniowego||
+476|Atak terminatora za liniami wroga||
+477|Teleportuje jednostkę na odległość do {0} pól. Docelowa lokalizacja teleportacji musi znajdować się w zasięgu wzroku i nie może sąsiadować z wrogą jednostką.<br><br>Ładunki: {1}/{2}||
+478|Tarcza burzy||
+479|Rozwinięta telepatia stada||
+480|Paroksyzm||
+481|Przeciąża układ nerwowy jednej wskazanej jednostki w zasięgu {0} pól, zadając {1} obrażeń psionicznych i uniemożliwiając przeprowadzenie jakichkolwiek ataków odwetowych (w tym Czuwania).<br><br>{2}<br>Usuwa wszystkie skumulowane efekty Czuwania||
+482|Ta jednostka zyskuje {0} pkt rozpędu za zabójstwa w walce wręcz i {1} pkt rozpędu za zabójstwa dystansowe.<br><br>{2}||
+483|Spadkobiercy Azkaellona||
+484|Nasza krew płonie!||
+485|Działa na jednostkę używającą tej umiejętności<br><br>{0}||
+486|Gdy jednostka sąsiaduje z Dowódcą bazy, wszystkie efekty ulegają podwojeniu||
+487|<i>Do dziś Azkaellon jest uznawany za wybrańca Sanguiniusa i stoi na straży jego imienia i powinności.</i>||
+488|<i>Zawsze możemy użyć plazmy.</i>||
+489|<i>Ani skóra demona, ani zbroja płytowa nie ochroni przed takim gniewem.</i>||
+490|<i>Potrzeba tysiąca bitew, by władać toporem z biegłością, na jaką ta broń zasługuje.</i>||
+491|<i>Gdy wyślą nas do bitwy, można uznać ją za wygraną.</i>||
+492|<i>Niewzruszony. Nieprzenikniony. Nieugięty.</i>||
+493|Teleportowano||
+494|Nekrońscy wojownicy||
+495|Obdzieracz Gaussa||
+496|Żniwiarz Gaussa||
+497|Dynastia Żywego Metalu||
+498|Protokół reanimacji||
+499|Nekroni||
+500|Rozdarci||
+501|Nekrońscy rozdarci||
+502|Apetyt na ciało||
+503|Pazury obdzierające||
+504|Niszczyciel Skorpekh||
+505|Nekroński niszczyciel Skorpekh||
+506|Infuzja plazmocytów||
+507|Hiperfazowe ubijacze||
+508|Hiperfazowe ostrze żniw||
+509|Niszczyciel heksapiętna||
+510|Nekroński niszczyciel heksapiętna||
+511|Pistolety dezintegrujące wrogości||
+512|Eliminator wielu zagrożeń||
+513|Optymalizacja celu||
+514|Nieśmiertelni||
+515|Nekrońscy nieśmiertelni||
+516|Żywa błyskawica||
+517|Blaster Gaussa||
+518|Karabinek Tesli||
+519|Piętna śmierci||
+520|Nekrońskie piętna śmierci||
+521|Dezintegrator synaptyczny||
+522|Piętno łowcy||
+523|Translokacja wymiarowa||
+524|Pretorianin Triumwiratu||
+525|Nekroński Pretorianin Triumwiratu||
+526|Berło przymierza||
+527|Pakiet przesunięcia grawitacyjnego||
+528|Pierworodni Marines||
+529|Destruktor Gaussa||
+530|Eksterminator wrogości||
+531|Najedź||
+532|Ciężcy niszczyciele Lokhust||
+533|Nekrońscy ciężcy niszczyciele Lokhust||
+534|Wykonuje atak z napędzaną wściekłością szarżą, ale istnieje szansa na zabicie jednego z niszczycieli.<br><br>Obrażenia w zwarciu +{0}%<br>Szansa na trafienie krytyczne +{1}%<br>{2}% szans na zabicie modelu niszczyciela||
+535|Podwójny blaster Gaussa||
+536|Wiązka cząstek||
+537|Podwójny karabinek Tesli||
+538|Ostrza grobowca||
+539|Nekrońskie ostrza grobowca||
+540|Engram uników||
+541|Nebuloskop||
+542|Ta jednostka nabiera rozpędu na koniec swojej tury, jeśli oddaliła się od swojej pozycji początkowej.||
+543|Arcylord||
+544|Nekroński arcylord||
+545|Kosa wojenna||
+546|Kostur światła||
+547|Hiperfazowa glewia||
+548|Przesunięcie fazowe||
+549|Kula wskrzeszenia||
+550|Protokół dowodzenia||
+551|Całun ciemności||
+552|Plazmanta||
+553|Nekroński plazmanta||
+554|Lanca plazmowa||
+555|Kula kwantowa||
+556|Zwiastun zniszczenia||
+557|Rozładowanie splotu Tesli||
+558|Gwardzista||
+559|Gwardziści Nekronów||
+560|Hiperfazowy miecz i tarcza dyspersyjna||
+561|Protokoły strażników||
+562|Tarcza dyspersyjna||
+563|Odzyskaj galaktykę||
+564|Nekroni to nieśmiertelna rasa androidów z żywego metalu. Władają mocą gwiazd i pragną zlikwidować pomniejsze rasy. To powolna frakcja z wieloma zabójczymi opcjami walki na dystans. Ostateczne zwycięstwo niekończącego się marszu Nekronów jest nieuniknione.||
+565|Hiperfazowy miecz||
+566|Daje {1}% szansy na ocucenie maksymalnie {2} modeli tej jednostki z {0}% zdrowia raz na turę.||
+567|Rój skarabeuszów Kanopteku||
+568|Nekroński rój skarabeuszów Kanopteku||
+569|Żuwaczki||
+570|Protokół samozniszczenia||
+571|Barka unicestwienia||
+572|Nekrońska barka unicestwienia||
+573|Działko Gaussa||
+574|Działko Tesli||
+575|Podwójny destruktor Tesli||
+576|Osłona kwantowa||
+577|Oznacza cel przeznaczony na śmierć, co daje tej jednostce dodatkową celność i szansę na trafienie krytyczne przeciwko oznaczonemu celowi. Można mieć oznaczony tylko jeden cel naraz.<br><br>{0}||
+578|Teleportuje jednostkę o maks. {0} szt. kafelków. Miejsce docelowe teleportacji musi znajdować się w zasięgu wzroku i nie może sąsiadować z kafelkiem wroga.<br><br>Ładunki: {1}/{2}||
+579|Nawałnica skarabeuszy||
+580|Burza Tesli||
+581|Koszący promień śmierci||
+582|Ich głód rośnie...<br><br>{0}% szans na zyskanie ładunku, gdy ta jednostka zabije model organiczny. Maks. {1} poz. kumulacji.||
+583|Arcylord manipuluje rzeczywistością, aby stworzyć barierę ochronną.||
+584|Przyzywa jednostkę nekrońskich wojowników.||
+585|Protokół przemijających sezonów||
+586|Protokół nieugiętej woli||
+587|Protokół nieskończonego horyzontu||
+588|Przełącza między dwoma protokołami dowodzenia<br><br>Protokół przemijających sezonów<br>{0}<br><br>Protokół nieugiętej woli<br>{1}||
+589|Przełącza między dwoma protokołami dowodzenia i dodaje protokół nieskończonego horyzontu do wszystkich jednostek w zasięgu {0} kafelków.<br><br>Protokół przemijających sezonów<br>{1}<br><br>Protokół nieugiętej woli<br>{2}<br><br>Protokół nieskończonego horyzontu<br>{3}||
+590|Arcylord przechodzi między rzeczywistościami, aby teleportować się na dystans maks. {0} kafelków.||
+591|Plazmanta odpieczętowuje zabezpieczenia tego starożytnego urządzenia, uwalniając niszczycielski słup czystej energii na cele w zasięgu {0} kafelków. Zadaje środkowemu celowi {1} pkt obrażeń z przebiciem pancerza: {2}. Sąsiadujące z nim cele otrzymują {3} pkt obrażeń z przebijaniem pancerza: {4}.||
+592|Wysyła niszczycielską energię, tworząc wiązkę unicestwienia, która zadaje {0} pkt obrażeń rozpryskowych z {1} pkt przebicia pancerza i {2}% celnością wszystkim celom na drodze wiązki.||
+593|Energia przeskakuje do wszystkich pobliskich sojuszniczych jednostek w zasięgu {0} kafelka.<br><br>{1}||
+594|Energia przeskakuje do wszystkich pobliskich sojuszniczych jednostek w zasięgu {0} kafelków.<br><br>{1}||
+595|Protokoły strażników wyłączone||
+596|Reakcja interwencji dla pobliskich jednostek dowodzenia sztabu będących celem ataków dystansowych.||
+597|Zamienia się miejscami z atakowaną z dystansu jednostką dowodzenia sztabu pod warunkiem, że ta jednostka znajduje się w zasięgu {1} kafelków. Ta jednostka otrzyma wszystkie obrażenia przeznaczone dla jednostki dowodzenia sztabu.<br><br>{0}||
+598|Obiera na cel jednego ataku maks. {0} jedn. kosztem zmniejszonej prędkości ataku i celności z dystansu.<br><br>{1}||
+599|Pozwala atakom dystansowym na automatyczne trafienie. Wysysa punkty ruchu i zwiększa szansę na trafienie krytyczne za każdy wydany punkt ruchu.<br><br>{0}||
+600|Rozpoczyna atak w zwarciu z obrażeniami obszarowymi, ale poświęca skarabeusze.||
+601|Niekończący się marsz||
+602|Ta jednostka zyska na koniec tury premię do rozpędu.||
+603|Tworzy na docelowym kafelku {0} jedn. Jeśli na kafelku znajduje się wróg, zostanie wykonany atak z szarżą i wróg zostanie zaatakowany dodatkowo {0} jedn. Jeśli kafelek jest pusty, na losowym sąsiednim kafelku powstanie dodatkowo {0} jedn.||
+604|Kosa zagłady przelatuje do góry, atakując {0} jedn. swoim podwójnym destruktorem Tesli. Zadaje {1} pkt obrażeń z {2} pkt przebicia pancerza.||
+605|Uwaga: powoduje obrażenia bratobójcze<br>Strzela na 4 kafelki w linii prostej, zadając {0} pkt obrażeń z przybijaniem pancerza na poziomie {1}.||
+606|Pokutnik||
+607|Pokutnik Adepta Sororitas||
+608|Wzmacniacze udręki||
+609|Pokutne ostrza tarczowe||
+610|Podwójny ciężki miotacz ognia||
+611|Piekielne ostrze||
+612|Krwiste kły||
+613|Działko czaszkowe||
+614|Krwiste ostrze||
+615|Upuszczacz krwi||
+616|Upuszczacz krwi Khorne'a||
+617|Cielesny ogar||
+618|Cielesny ogar Khorne'a||
+619|Władca krwi||
+620|Zwiastun władcy krwi Khorne'a||
+621|Działko czaszkowe||
+622|Działko czaszkowe Khorne'a||
+623|Krew dla boga krwi!||
+624|Z Osnowy wyłoniły się złowrogie stwory. Szybkie i skupione na walce wręcz demony Chaosu Khorne'a przemierzają pole bitwy w poszukiwaniu krwi do rozlania w ofierze dla ich pana, Władcy Szału.||
+625|Niepowstrzymane okrucieństwo||
+626|Demoniczny rytuał||
+627|Skupienie Khorne'a||
+628|Mordercza fala||
+629|Zapach krwi||
+630|Płonący ryk||
+631|Okowy z miedzi i kości||
+632|Rzeź||
+633|Zwiększa „Unik” po otrzymaniu ataku za pomocą „Ognia osłonowego” lub „Ognia reakcyjnego”<br>||
+634|Przywołuje demona Khorne'a w promieniu {0} pola/pól||
+635|Zwiększa pancerz o {0}, przebicie pancerza o {1} i obrażenia o {2}% u sojuszniczych demonów Khorne'a w promieniu {3} pól.||
+636|Zwiększa szansę na trafienie krytyczne o {0}% dla każdego sojuszniczego upuszczacza krwi na sąsiednim polu||
+637|Wykonuje atak z szarżą na pojedynczym organicznym wrogu z {0} dodatkowymi punktami ruchu.<br><br>Daje premię podczas ataku<br>{1}||
+638|Wykonuje soniczny atak na wrogu w promieniu {0} pól przy {1} pkt przebicia pancerza przez określoną liczbę strzałów ({2}) przy {3} pkt obrażeń na strzał.||
+639|Zmniejsza ponoszone obrażenia o {0}%||
+640|Działa na użytkownika||
+641|Zdolności taktyczne||
+642|Ulepszenia broni plazmowej||
+643|Granaty||
+644|Ulepszenia broni melta||
+645|Energetyczna broń biała||
+646|Bolter potępiania||
+647|Błogosławione ostrze||
+648|Arkocepy bojowe||
+649|Pokutny patroszyciel||
+650|Uświęcona buława||
+651|Ostrze wojenne ideału||
+652|Wyrzutnia rakiet||
+653|Ofiarne miotacze ognia||
+654|Podwójny ciężki bolter||
+655|Podwójna multimelta||
+656|Kanoniczka||
+657|Kanoniczka Adepta Sororitas||
+658|Szpitalniczka||
+659|Szpitalniczka Adepta Sororitas||
+660|Arkobiczowniczka||
+661|Arkobiczowniczka Adepta Sororitas||
+662|Celestianki||
+663|Celestianki Adepta Sororitas||
+664|Siostry repentia||
+665|Siostry repentia Adepta Sororitas||
+666|Święta celestianka||
+667|Święta celestianka Adepta Sororitas||
+668|Retrybutorki||
+669|Retrybutorki Adepta Sororitas||
+670|Zbroje cnót ideału||
+671|Zbroje cnót ideału Adepta Sororitas||
+672|Rhino||
+673|Rhino Adepta Sororitas||
+674|Egzorcystka||
+675|Egzorcystka Adepta Sororitas||
+676|Immolator||
+677|Immolator Adepta Sororitas||
+678|Transportowiec||
+679|Przysięga ochrony||
+680|Chwalebna inkantacja||
+681|Słowo pogardy||
+682|Czcij męczenników||
+683|Rozarius||
+684|Burza odpłaty||
+685|Święta tarcza||
+686|Męczeństwo||
+687|Gorliwy szał||
+688|Medikus||
+689|Obrzędy wstawiennictwa||
+690|Samonaprawa||
+691|Niszczycielski refren||
+692|Rakieta tropiąca||
+693|Granatnik ideału||
+694|Miotacz ognia||
+695|Po śmierci zastosuj efekt do wszystkich sojuszniczych jednostek||
+696|Jednostka poświęca wszystkie pozostałe punkty ruchu i wydaje rozkaz ataku dystansowego, zapewniający +{0}% dodatkowych ataków i +{1} do przebicia pancerza za każdy wydany PR.||
+697|Szarża wroga.<br><br>{0}<br><br>Sojusznicy w zasięgu {1} kafelków zyskują {2} do rozpędu za każdego poległego męczennika.||
+698|Jednostka poświęca wszystkie pozostałe punkty ruchu i wydaje rozkaz ataku dystansowego, zapewniający dodatkowe obrażenia oraz przebicie pancerza za każdy wydany PR.||
+699|Wystrzeliwuje rakietę zadającą {0} pkt obrażeń. Ma ona {1} pkt przebicia pancerza i maksymalny zasięg wynoszący {2}.||
+700|Wojownicze ramię Eklezjarchatu – Adepta Sororitas, to wojowniczki o dzikiej gorliwości, które poświęcają swoje życie, służąc w imię Władcy Ludzkości.||
+701|Usuń wszystkie negatywne efekty statusu.<br>+{0} pkt zdrowia||
+702|Dodaje {0} PA sojuszniczej jednostce (z wyjątkiem pojazdów, mechów i arkobiczowniczek) znajdującej się w promieniu {1} kafelk.||
+703|Duch Imperatora||
+704|Boskie przewodnictwo||
+705|Sprawiedliwy osąd||
+706|Krwiopijca||
+707|Krwiopijca Khorne’a||
+708|Wielki topór Khorne’a||
+709|Większy demon||
+710|Niepohamowana wściekłość||
+711|Straszne skrzydła||
+712|Rozdrabniacz dusz||
+713|Rozdrabniacz dusz Khorne’a||
+714|Działo żniwiarza||
+715|Miecz Osnowy||
+716|Pazur Osnowy||
+717|Żelazny pazur||
+718|Krwawy miażdżyciel||
+719|Krwawy miażdżyciel Khorne’a||
+720|Niszczycielska szarża||
+721|Adepta Sororitas, które ujrzą śmierć kanoniczki, są skłonne do aktów większej odwagi i poświęcenia.<br>||
+722|Miażdżący atak za pomocą żelaznego pazura rozdrabniacza dusz, który zadaje {0} pkt obrażeń przy przebiciu pancerza {1}. Zadaje także obrażenia rozpryskowe {2} dodatkowym modelom.||
+723|Dar Khorne’a||
+724|Wykonuje miażdżący atak za pomocą „Żelaznego Pazura” Rozdzieracza Dusz, który zadaje {0} pkt. obrażeń z {1} pkt. przebicia pancerza przeciwko modelom maks. typu {2}.||
+725|<i>Z grzmiącym rykiem furia i żądza krwi krwiopijcy osiągają nowy poziom apopleksji.</i><br><br>Zwiększa obrażenia w zwarciu na {0} turę o {1}%. Krwiopijca wykonuje również atak psioniczny na wszystkie wrogie jednostki w promieniu {2} kafelków, zadając {3} pkt obrażeń psionicznych i {4} pkt obrażeń od rozpędu.||
+726|<i>Niesiony na potężnych skrzydłach krwiopijca szybko przemierza pole bitwy, by dokonać rzezi w imieniu Khorne’a</i>.||
+727|Anuluj straszne skrzydła||
+728|<i>Szpitalniczka spokojnie wzywa inną ze swoich sióstr, aby działała w jej imieniu.</i>||
+729|<i>Poprzez mgłę wojny przynosimy wyrok Imperatora.</i>||
+730|<i>Sororitas są przepojone bezgranicznym wigorem.</i>||
+731|<i>Widząc słaby punkt w obronie wrogów, waleczne siostry uderzają z nieomylną celnością.</i>||
+732|<i>Sororitas są przepełnione palącą pasją, aby sprowadzić wyroki Imperatora na jego wrogów.</i>||
+733|<i>Z mocno zapartymi stopami i pogardą płonącą w sercach retrybutorki oczyszczają galaktykę z herezji.</i>||
+734|<i>Odkupienie można znaleźć tylko w śmierci.</i>||
+735|<i>Artylerzystka gra hymn o tak potężnym uwielbieniu, że duch maszyny Egzorcysty zostaje pobudzony do dalszego unicestwiania wroga.</i>||
+736|<i>Pobudzone do szału arkobiczowniczki rzucają się bez namysłu prosto na wroga.</i>||
+737|<i>Potępienie kanoniczki rozbrzmiewa na całym polu bitwy, całkowicie wstrząsając obiektem jej pogardy.</i>||
+738|<i>Ten trzykrotnie pobłogosławiony ładunek wybuchowy wznosi się wysoko, a następnie sprowadza śmierć na wrogów Imperatora.</i>||
+739|<i>Pozostała część inhibitorów nerwów zostaje usunięta, a pilot zostaje uderzony pełną mocą chemicznych wzmacniaczy podłączonych do jego układu nerwowego. </i>||
+740|<i>Żadna krzywda nie spotka dotkniętych przez Imperatora.</i>||
+741|Anuluj przysięgę ochrony||
+742|Zamienia się miejscami z atakowaną w zwarciu lub na dystans jednostką dowodzenia sztabu pod warunkiem, że ta jednostka znajduje się w zasięgu {1} kafelków. Ta jednostka otrzyma wszystkie obrażenia przeznaczone dla jednostki dowodzenia sztabu.<br><br>{0}||
+743|Zastrzyk witalności||
+744|Pospieszenie||
+745|Strzelec wyborowy||
+746|Utwardzony pancerz||
+747|Ręka zniszczenia||
+748|Nieuchwytny cel||
+749|Brutalny pojedynkowicz||
+750|Skuteczny zabójca||
+751|Mnożnik oddziałów||
+752|Gotowość do bitwy||
+753|Demoniczny książę||
+754|Demoniczny książę Khorne’a||
+755|Kultyści Chaosu||
+756|Kultyści Chaosu Khorne’a||
+757|Złowrogie szpony||
+758|Siła ponad magię||
+759|Wykuty w piekle miecz||
+760|Demoniczny topór||
+761|Karabin automatyczny kultystów||
+762|Ciężki stubber||
+763|Motórowiec||
+764|Orkowy motórowiec||
+765|Pestkownica||
+766|Chmura dymu||
+767|Duży, czerwony przycisk||
+768|Chopaki||
+769|Orkowe chopaki||
+770|Spluwa||
+771|Duża spluwa||
+772|Rakietomiot||
+773|Kijbomby||
+774|Szaleńczy atak||
+775|W kupie siła||
+776|Szturmiarze||
+777|Orkowi szturmiarze||
+778|Gnat||
+779|Rembak||
+780|Paka rakietowa||
+781|Atak szturmiarzy||
+782|Uzbrojeni po zenby||
+783|Wypalacze||
+784|Orkowi wypalacze||
+785|Wypalarka||
+786|Piromaniacy||
+787|Trupikopter||
+788|Orkowy trupikopter||
+789|Rakiety koptera||
+790|Sztukowany megaszczelacz||
+791|Duża bomba||
+792|Burszuje||
+793|Orkowi burszuje||
+794|Duży rembak||
+795|Energoszpony||
+796|Przywalić mocniej||
+797|Szpanerzy||
+798|Orkowi szpanerzy||
+799|Odpicowana spluwa||
+800|Szpanerskie miażdżenie||
+801|Megaburszuje||
+802|Orkowi megaburszuje||
+803|Sztukowana spluwa||
+804|Rakieta kombinowana||
+805|Ogniomiot kombinowany||
+806|Zabójcza piła||
+807|Orkowie||
+808|Łaaa!||
+809|Orkowie – najbardziej wojownicza rasa w galaktyce – nie dbają o żadne pozory strategii czy nawet przetrwanie na polu bitwy. Żyją dla przyjemności z walczenia i wyczekują następnego Łaaa!||
+810|Herszt||
+811|Orkowy herszt||
+812|Paszczak ofensywny||
+813|Dziwolong||
+814|Orkowy dziwolong||
+815|Kostur dziwolonga||
+816|Wysadzacz łbów||
+817|Wojenna ścieżka||
+818|Dźgajonce palce||
+819|Duży mek||
+820|Orkowy duży mek||
+821|Duży mekaniak||
+822|Wzmocnienie pancerza||
+823|Sztukowane pole siłowe||
+824|Konował||
+825|Orkowy konował||
+826|Łapiduch||
+827|Grot||
+828|Orkowy grot||
+829|Grot szczelacz||
+830|Szabrownicy||
+831|Orkowi szabrownicy||
+832|Szczałowa megasplufa||
+833|Siła gurom!||
+834|Mordodred||
+835|Orkowy mordodred||
+836|Banda strachu||
+837|Więcej szczałów!||
+838|Ostrzał dużych spluw||
+839|Bomba hukowa||
+840|Strachoszpony||
+841|Ogniomiot||
+842|<i>Dostrzegając słabości w obronie wrogów, waleczne siostry w promieniu {0} kafelków od dowódcy sztabu atakują z niezwykłą celnością.</i>||
+843|<i>Sororitas w promieniu {0} kafelków od dowódcy sztabu zostają nasycone bezgranicznym wigorem.</i>||
+844|<i>Siostry bitwy w promieniu {0} kafelków od dowódcy sztabu zostają wypełnione płomienną pasją, aby sprowadzić wyrok Imperatora na jego wrogów.</i>||
+845|Przelatuje nad celem i zrzuca dużą bombę, która zadaje {0} pkt obrażeń na poziomie PA {1} oraz dodatkowo {2} pkt obrażeń na poziomie PA {3} na sąsiednich kafelkach. Uwaga: powoduje obrażenia bratobójcze.||
+846|Motórowiec wytwarza chmurę gęstego dymu, przez co trudniej jest go trafić||
+847|Motórowiec naciska duży, czerwony przycisk, przez co jego już i tak szybka machina śmierci wskakuje na wyższy bieg i jedzie jeszcze dalej.||
+848|Szef se patrzy||
+849|Wpływa na wszystkie jednostki w promieniu {0} kafelków od orkowego herszta||
+850|Wystrzeliwuje rakietę w zasięgu {0} kafelków, która zadaje {1} pkt obrażeń od wybuchu wszystkim trafionym modelom. Rakieta ma też {2} pkt przebicia pancerza.||
+851|Zahartowana powłoka||
+852|Natychmiast naprawia {0} pkt obrażeń sojuszniczemu pojazdowi i zapewnia mu +{1} pkt pancerza na okres {2} tur.||
+853|Działa na jednego sojusznika na sąsiednim kafelku<br><br>{0}||
+854|Wionzkowa megasplufa||
+855|Ma {0}% szans na uzdrowienie {1} PZ na model u niebędącego pojazdem sojusznika na sąsiednim polu. W przypadku niepowodzenia jeden model w jednostce otrzyma {2} pkt obrażeń.||
+856|Ma {0}% szans na uzdrowienie {1} PZ na model u niebędącego pojazdem sojusznika na sąsiednim polu.||
+857|Wykonuje atak, mający dodatkowo {0}% strzałów i +{1} pkt przebicia pancerza||
+858|Kumuluje się, gdy jest w promieniu {0} kafelków od innych mordodredów. Maks. {1} poz. kumulacji.||
+859|Oślepienie||
+860|Dziwolong skupia się na wrogu w promieniu {0} kafelków, a następnie dźga się w oko, przez co cel zostaje tymczasowo oślepiony.||
+861|Wystrzeliwuje pocisk surowej energii psionicznej, który zadaje {0} pkt obrażeń i ma {1} pkt przebicia pancerza.||
+862|Zmniejsza otrzymywane obrażenia dystansowe, gdy jest w promieniu 2 kafelków od dużego meka ze sztukowanym polem siłowym||
+863|Zmniejsza obrażenia otrzymywane przez dużego meka o {0}%, a obrażenia dystansowe otrzymywane przez sojuszników w promieniu {2} kafelków o {1}%||
+864|Dowódca sztabu używa woli Gorka i Morka, aby zwołać sojuszników w promieniu {0} kafelków do intensywniejszego ostrzału.||
+865|Paszczak||
+866|Orkowy paszczak ofensywny||
+867|Ugryzienie paszczaka||
+868|Kłapiące szczęki ofensywnego paszczaka herszta zadają {0} pkt obrażeń i mają {1} pkt przebicia pancerza.||
+869|<i>Orkowe chopaki uwielbiają szaleńczo rzucać się do bójki!</i>||
+870|<i>Prymitywne, ale skuteczne przeciwpiechotne materiały wybuchowe</i>||
+871|<i>Po użyciu przełącznika silnik przechodzi na nadbieg, a motórowca przysłania obłok kłębiącego się dymu</i>||
+872|<i>Motórowiec naciska duży, czerwony przycisk, przez co jego szybka machina śmierci wskakuje na wyższy bieg i jedzie jeszcze szybciej<i>||
+873|<i>Łaaa! prosto z nieba<i>||
+874|<i>Orkowa wiedza, co wzmacnia se pancerz chopaków</i>||
+875|<i>Więcej szczałów, bo siła gurom</i>||
+876|<i>Czasami trzeba mieć rembak, co przywali mocniej</i>||
+877|<i>Szczałów nigdy nie za wiele</i>||
+878|<i>Dowódca sztabu używa woli Gorka i Morka, aby zwołać podwładnych do intensywniejszego ostrzału</i>||
+879|<i>Błyskobombowiec rozpoczyna śmiercionośny ostrzał ze swoich superspluw</i>||
+880|<i>Bum!</i>||
+881|<i>Okiełznaj energię Łaaa!</i>||
+882|<i>Z dziwolonga wypływa surowa moc psioniczna, która wysadza głowy nieprzyjaciół</i>||
+883|Anuluj pakę rakietową||
+884|Mjażdżyć Trukka||
+885|Pszybył doktór||
+886|Nakłada efekt {0} na wszystkie sojusznicze jednostki w zasięgu  kafelków od Orka Konowała||
+887|Rozdzierające uderzenie ostrymi pazurami. Zadaje {0} pkt. obrażeń z {1} pkt. przebicia pancerza przeciwko modelom maks. typu {2}.||
+888|Dzięki morderczemu spojrzeniu demonicznego księcia gniew tlący się w pobliskich demonach gwałtownie się nasila<br><br>Celność walki wręcz +{0}<br>Obrażenia w walce wręcz +{1}%||
+889|Działo Piekieł||
+890|Aura Terroru||
+891|Echa Nieskończonej Furii||
+892|Danina Krwi||
+893|Dowódca kwatery głównej wykorzystuje wpływ Spaczenia, by wywołać u wrogów stan paniki i zastygnięcia, który utrudnia poruszanie się i dzierżenie broni.||
+894|Khorne oraz jego dzicy poplecznicy dostają białej gorączki i wybuchają niezmierzonym gniewem. Od dowódcy kwatery głównej rozchodzą się brutalne fale apopleksji, które odbiera wrogom Legionu wolę do walki.<br><br>Usuwa nałożone efekty „Ognia osłonowego”<br>{0} impetu||
+895|Czerpiąc moc z nieskończonego gniewu bijącego od Pana Czaszek, dowódca kwatery głównej wykonuje atak spaczeniowy, który zadaje {0} pkt. obrażeń psychicznych na dużym obszarze.||
+896|<i>Bezkresny gniew Khorne’a</i>||
+897|<i>Miażdży Drednoty równie bezlitośnie co Kosmicznych Marines</i>||
+898|<i>Niepohamowany gniew Khorne’a tratuje wszystko na swojej drodze</i>||
+899|<i>Koszmar Spaczenia sprowadza strach i szaleństwo na każdą ofiarę</i>||
+900|<i>Apoplektyczny szał dowódcy kwatery głównej pozbawia wrogów Khorne’a woli do walki</i>||
+901|<i>Krew dla Boga Krwi, czerepy dla Tronu z Czaszek</i>||
+902|<i>Demoniczny Książę wybucha gniewem, a jego wrogowie padają</i>||
+903|<i>Paszcza domaga się ofiary</i>||
+904|<i>Sama obecność Krwiopijcy wzmaga gniew demonicznej hordy</i>||
+905|<i>Niesłabnący gniew, nieskończona żądza krwi</i>||
+906|<i>Jedynie kipiąca gniewem bitwa zaspokoi apetyt Legionów Krwi</i>||
+907|<i>Przywołaj nieskończone hordy Chaosu</i>||
+908|T'au||
+909|Dla Większego Dobra||
+910|Dowódca T'au||
+911|Dowódca||
+912|Pancerz bitewny||
+913|Pan wojny||
+914|Utwardzony pancerz||
+915|Manewry przy dużych prędkościach||
+916|Dron towarzysz||
+917|Dron z tarczą||
+918|Dron z działem||
+919|Dron oznaczający||
+920|XV85 Enforcer||
+921|XV86 Coldstar||
+922|Działko rozrywające||
+923|Działko o wysokiej szybkostrzelności||
+924|Ogniste ostrze kadry||
+925|Ogniste ostrze kadry T'au||
+926|Karabin pulsacyjny ognistego ostrza||
+927|Salwa||
+928|Zauważono cel||
+929|Eteryczny||
+930|Eteryczny T'au||
+931|Berło honoru||
+932|Kamienna odporność||
+933|Łaska zefiru||
+934|Drony taktyczne||
+935|Drony taktyczne T'au||
+936|Karabinek pulsacyjny||
+937|Laser oznaczający||
+938|Zwiadowcy||
+939|Zwiadowcy T'au||
+940|Karabin jonowy||
+941|Przeciążenie||
+942|Drużyna szturmowa wojowników ognia||
+943|Drużyna szturmowa wojowników ognia T'au||
+944|Karabin pulsacyjny||
+945|Drużyna wyłomowa wojowników ognia||
+946|Drużyna wyłomowa wojowników ognia T'au||
+947|Blaster pulsacyjny||
+948|Przedarcie i oczyszczenie||
+949|Drużyna z pancerzami Crisis||
+950|Drużyna T'au z pancerzami Crisis||
+951|Blaster fuzyjny||
+952|Wyrzutnia rakiet||
+953|Plecak odrzutowy||
+954|Drużyna z pancerzami Stealth||
+955|Drużyna T'au z pancerzami Stealth||
+956|Pole kamuflujące||
+957|Pancerz bitweny Broadside||
+958|Pancerz bitweny T'au Broadside||
+959|Ciężki karabin szynowy||
+960|Taranowanie||
+961|Zaawansowany system namierzania||
+962|Rakieta naprowadzająca||
+963|Inteligentny system rakietowy||
+964|Pancerz bitewny Ghostkeel||
+965|Pancerz bitewny T'au Ghostkeel||
+966|Zderzacz fuzyjny||
+967|Pięści Ghostkeela||
+968|Pancerz bitewny Riptide||
+969|Pancerz bitewny T'au Riptide||
+970|Ciężkie działko rozrywające||
+971|Akcelerator jonowy||
+972|Karabiny plazmowe||
+973|Generator tarczy Riptide’a||
+974|Piranha||
+975|Piranha T'au||
+976|Statek bojowy Hammerhead||
+977|Statek bojowy T'au Hammerhead||
+978|Działo szynowe||
+979|Działko jonowe||
+980|Wykonuje atak dystansowy, który ignoruje częściową osłonę||
+981|Granat fotonowy||
+982|Ta jednostka zyskuje dodatkowy impet ({0}) za każdym razem, gdy ginie sojusznicza jednostka.||
+983|Oznacza wroga wysokiej klasy laserem, zapewniając sojusznikom w zasięgu {0} pól zwiększoną celność przeciwko celowi<br><br>{1}||
+984|Wykonuje atak dystansowy z dodatkowymi obrażeniami (+{0}%), penetracją pancerza (+{1} pkt.) i dodatkowymi obrażeniami rozpryskowymi. Każdy model ma {2}% szansy na otrzymanie {3} pkt. obrażeń.||
+985|Ignoruje karę do celności ataków wręcz||
+986|Pocisk przeciwpancerny zadający {0} pkt. obrażeń z {1} pkt. penetracji pancerza z maksymalnego zasięgu {2} pól<br><br>Automatycznie trafia cele oznaczone laserem||
+987|Działa na wszystkich sojuszników w zasięgu {0} pól od dowódcy T'au||
+988|Anuluj manewry przy dużych prędkościach||
+989|Działa na wszystkich sojuszników w zasięgu {0} pól<br><br>{1}||
+990|Atak rakietą naprowadzającą||
+991|Atak Mantą||
+992|Orbitalna wiązka jonowa||
+993|Strzela w oddzielne cele (maksymalnie w zasięgu {0} pól od siebie) dwoma pociskami przeciwpancernymi zadającymi {1} pkt. obrażeń z {2} pkt. penetracji pancerza||
+994|Umieszcza drużynę z pancerzami bitewnymi Crisis na wskazanym polu||
+995|Oślepiająca wiązka rozgrzanej do białości energii uderza w cel, rażąc również sąsiednie pola. Zadaje {0} pkt. obrażeń z {1} pkt. penetracji pancerza głównemu celowi oraz {2} pkt. obrażeń z {3} pkt. penetracji pancerza celom sąsiadującym.||
+996|Zbroja bojowa Invictor Krwawych Aniołów||
+997|Zbroja bojowa Invictor||
+998|Działo zapalające||
+999|Podwójny żelazny autostubber||
+1000|Podwójne żelazne działo automatyczne||
+1001|Pięść Invictora||
+1002|Zapewnia Unik ({0} dla celu i {2} dla sąsiednich pól) oraz celność dystansową ({1} dla celu i {3} dla sąsiednich pól) na {4} tur/y. Usuwa wszystkie skumulowane efekty Czuwania.||
+1003|<i>Kontrolowany przez SI dron wyposażony w tarczę, która odbija wrogie pociski</i>||
+1004|<i>Kontrolowany przez SI dron wyposażony w dwa karabinki pulsacyjne</i>||
+1005|<i>Kontrolowany przez SI dron wyposażony w laser zwiększający celność przeciwko oznaczonym celom</i>||
+1006|<i>Większa i mocniej opancerzona wersja pancerza bitewnego Crisis</i>||
+1007|<i>Wysoce zaawansowany pancerz bitewny o wyjątkowej prędkości i zwinności</i>||
+1008|<i>Zostawia po sobie same zgliszcza.</i>||
+1009|Świetlna technologia maskująca zapewniająca jednostce niewidzialność na {0} tur/y. Niewidzialna jednostka nie może zostać zaatakowana oraz nie prowokuje ataków odwetowych i ataków dot. strefy kontroli.||
+1010|<i>Przedarcie i oczyszczenie</i>||
+1011|<i>Nikt nie wytrzyma takiego naporu</i>||
+1012|<i>T'au przemierzają pole bitwy szybko i po cichu</i>||
+1013|<i>Śmierć nadciąga z przestworzy</i>||
+1014|<i>Nasza wprawa to owoc niezliczonych bitew</i>||
+1015|<i>Nie zdołacie się ukryć</i>||
+1016|<i>Przetrzymamy wszelkie trudności</i>||
+1017|<i>Przybyły posiłki</i>||
+1018|<i>Obliczam trajektorię ostrzału</i>||
+1019|<i>Nic nie przetrwa</i>||
+1020|<i>Nie zabijesz tego, czego nie widzisz</i>||
+1021|Bezgranicznie oddani i niestrudzeni wojownicy T'au reprezentują młode, acz nieugięte imperium. Korzystając z zaawansowanych broni i imponujących pancerzy bitewnych, ignorują wszelki opór wobec głoszonych obietnic o jedności i oświeceniu.||
+1022|Dezaktywuj plecak odrzutowy.||0|Иглокулаки||

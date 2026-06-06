@@ -1,0 +1,18 @@
+{
+  "id": "tc-localization",
+  "name": "Traditional Chinese Localization",
+  "game": "warhammer-40k-battlesector",
+  "version": "0.1.0",
+  "author": "Community",
+  "category": "Localization",
+  "platforms": ["windows", "linux-proton"],
+  "supportedVersions": ["1.3.0"],
+  "vortex": {
+    "extensionId": "game-warhammer40kbattlesector",
+    "extensionPath": "../vortex-ext/game-warhammer40kbattlesector"
+  },
+  "links": {
+    "nexus": "https://www.nexusmods.com/warhammer40kbattlesector/mods/???",
+    "source": "https://github.com/shc261392/crystal-mods/tree/main/warhammer-40k-battlesector/tc-localization"
+  }
+}

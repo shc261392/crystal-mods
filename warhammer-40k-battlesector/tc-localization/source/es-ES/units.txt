@@ -1,0 +1,2634 @@
+1|Teniente||
+2|Teniente de los Ángeles Sangrientos||
+3|Intercesores||
+4|Intercesores de los Ángeles Sangrientos||
+5|Termagante||
+6|Termagante Tiránido||
+7|Tiranofex||
+8|Tiranofex Tiránido||
+9|Bibliotecario||
+10|Bibliotecario de los Ángeles Sangrientos||
+11|Hermano Aeturo||
+12|Extremidades poderosas||
+13|Escuadra de asalto de los Ángeles Sangrientos||
+14|Escuadra de asalto||
+15|Sargento Carleon||
+16|Land Speeder de los Ángeles Sangrientos||
+17|Land Speeder||
+18|Sacerdote Sanguinario de los Ángeles Sangrientos||
+19|Sacerdote sanguinario||
+20|Hermano Aeturo||
+21|Hormagante Tiránido||
+22|Hormagante||
+23|Venóntropo Tiránido||
+24|Venóntropo||
+25|Rociador de Ácido||
+26|Perforacarne||
+27|Pistola Bólter||
+28|Espada de Energía||
+29|Extremidades Poderosas||
+30|Espada Sierra||
+31|Garras Afiladas||
+32|Bólter Pesado||
+33|Cañón de Asalto||
+34|Lanzallamas Pesado||
+35|Cañón de Fusión||
+36|Latigazo Tóxico||
+37|Lanzallamas de Mano||
+38|Rifle de Fusión||
+39|Sed de Sangre||
+40|Mochila de Salto||
+41|Precisión Táctica||
+42|Gracias del Ángel||
+43|Espada de Sanguinius||
+44|Telemetría de Enlace de Datos||
+45|Elevación Anti-gravedad||
+46|Sana a tu Hermano||
+47|Narthecium||
+48|Justa Exhortación||
+49|Abraza la Sangre||
+50|Tácticas de Enjambre||
+51|Nube de Esporas||
+52|Presencia Tóxica||
+53|Cancelar Mochila de Salto||
+54|Aumenta el Momentum de los aliados circundantes en {0}||
+55|Cura a un solo objetivo aliado que no sea un vehículo dentro de {0} casillas por {1} HP||
+56|Revive al último miembro de la unidad objetivo con {0} salud||
+57|Aplica {0} daño a las unidades enemigas circundantes.||
+58|Aplica efecto de estado a las casillas dentro del alcance||
+59|Granada Perforante||
+60|Granada de Fragmentación||
+61|Guantelete de Asalto||
+62|Guantelete Tormenta de Llamas||
+63|Lanzagranadas Fragtormenta||
+64|Pistola Bólter Artesana||
+65|Líder Sináptico||
+66|Ángeles Sangrientos||
+67|Tiránido||
+68|Adepta Sororitas||
+69|Demonios del Caos de Khorne||
+70|Incontables Hijos||
+71|Tácticas de Línea de Batalla||
+72|Rifle Bólter||
+73|Rifle Bólter Automático||
+74|Agresores||
+75|Agresores de los Ángeles Sangrientos||
+76|Granizo de Fuego||
+77|Tirano de Enjambre||
+78|Tirano de Enjambre||
+79|Enormes Garras Aplastantes||
+80|Tervigón||
+81|Tervigón Tiránido||
+82|Provoca {0} daño y {1} perforaciones de armadura a las unidades que infligen daño cuerpo a cuerpo a esta unidad.||
+83|Dispara {0} granadas, cada una de las cuales inflige {1} daño con {2} perforaciones de armadura.||
+84|Incinerador de Plasma||
+85|Incinerador de Plasma Pesado||
+86|Revientainfiernos||
+87|Revientainfiernos de los Ángeles Sangrientos||
+88|Gárgola||
+89|Gárgola Tiránida||
+90|Veneno Cegador||
+91|Supercarga||
+92|La unidad sacrifica todos sus puntos de movimiento restantes y realiza una orden de ataque a distancia con {0} ataques adicionales por cada PM gastado.||
+93|Cancelar Supercarga||
+94|Escupemuerte||
+95|Guerreros||
+96|Guerreros Tiránidos||
+97|HQ||
+98|Tropa||
+99|Élite||
+100|Volador||
+101|Ataque Rápido||
+102|Soporte Pesado||
+103|Transporte Dedicado||
+104|Fortificación||
+105|Señor de la Guerra||
+106|Personajes y unidades individuales que se utilizan a menudo para impulsar otras unidades.||
+107|El elemento básico de muchas fuerzas, baratas y numerosas.||
+108|Unidades especializadas, a menudo resistentes o con gran potencia de fuego.||
+109|Unidades voladoras.||
+110|Unidades de movimiento rápido.||
+111|Unidades duraderas que tienen un gran impacto.||
+112|Vehículos utilizados para el transporte de otras unidades.||
+113|Una fortificación estática.||
+114|Señores de la guerra||
+115|Alado||
+116|Hacha de Energía||
+117|Tecnomarine||
+118|Tecnomarine de los Ángeles Sangrientos||
+119|Alabarda de Fuerza||
+120|Bólter Tormenta||
+121|Dreadnought Bibliotecario||
+122|Dreadnought Bibliotecario de los Ángeles Sangrientos||
+123|Bólter de Asalto||
+124|Precursor||
+125|Precursor de los Ángeles Sangrientos||
+126|Pistola Infierno||
+127|Serafines||
+128|Serafines del Adepta Sororitas||
+129|Cañón Bioplásmico||
+130|Exocrino||
+131|Exocrino Tiránido||
+132|Dreadnought Furioso||
+133|Dreadnought Furioso de los Ángeles Sangrientos||
+134|Puños de Furioso||
+135|Ayudar||
+136|Fuego de cobertura||
+137|Dispara y reza||
+138|Ira del Emperador||
+139|Guerrero||
+140|Matador||
+141|Juicio del Emperador||
+142|Jugador de rol||
+143|Cazador Némesis||
+144|Élite||
+145|Central eléctrica||
+146|Veterano||
+147|Garras Aceradas||
+148|Espadas Óseas||
+149|Prime||
+150|Tiránido Prime||
+151|Enormes Garras Afiladas||
+152|Trigón||
+153|Trigón Tiránido||
+154|Devorador con sanguijuelas cerebrales||
+155|Escupemuerte con gusanos de limo||
+156|Espaldaespinada||
+157|Espaldaespinada Tiránido||
+158|Monstruosas Garras Afiladas||
+159|Cañón de Asalto Doble||
+160|Cañón Tormenta de Llamas||
+161|Predator Baal||
+162|Predator Baal de los Ángeles Sangrientos||
+163|Genestealer||
+164|Genestealer Tiránido||
+165|Devorador||
+166|Toque del Omnissiah||
+167|Cura a un solo objetivo aliado mecánico dentro de {0} casillas por {1} HP||
+168|Bendiciones del Omnissiah||
+169|Aumenta la armadura de la unidad objetivo||
+170|Invocar al Espíritu Máquina||
+171|Aumenta la precisión y el daño de una unidad mecanizada||
+172|Servo Brazo||
+173|Ataca automáticamente al enemigo cuando se disputa la casilla||
+174|Escudo de Sanguinius||
+175|Aumenta temporalmente el HP máximo del objetivo.||
+176|Aceleración||
+177|Aumenta MP y ataques cuerpo a cuerpo||
+178|Arenas Movedizas||
+179|Disminuye el movimiento y la evasión en el área.||
+180|Volátil||
+181|Explota al morir, infligiendo {0} daño y {1} perforaciones de armadura a las unidades dentro de {2} casillas.||
+182|Cortina de humo||
+183|Asesino Natural||
+184|Conectado||
+185|Aumenta la ganancia de Momentum de las unidades aliadas cercanas.||
+186|Tácticas de Asalto||
+187|Salto||
+188|Acumulación plásmica||
+189|Orientación Simbiótica||
+190|La unidad sacrifica todos sus puntos de movimiento restantes y realiza un comando de ataque a distancia con daño adicional por cada PM gastado.||
+191|Muerte Desde El Cielo||
+192|La Mochila de Salto debe estar activa||
+193|Munición Bendita||
+194|Escudo de Fe||
+195|Bólter Modelo Godwyn De'az||
+196|Hermanas de Batalla||
+197|Hermanas de Batalla del Adepta Sororitas||
+198|Sermón de Batalla||
+199|Fe y Furia||
+200|Hermana Superiora||
+201|Hermana Superiora del Adepta Sororitas||
+202|{0} Puntos de acción||
+203|Arma Viviente||
+204|Orientación Adaptativa||
+205|La unidad sacrifica todos sus puntos de movimiento restantes y realiza un comando de ataque a distancia con un ataque adicional por cada PM gastado. Esto también aumentará la cantidad de daño a distancia que recibe esta unidad.||
+206|+ Ataque||
+207|Cañón de Fragmentación||
+208|Ariete||
+209|Armadura Espinada||
+210|Grupos de Espinas||
+211|Hambre Insaciable||
+212|Devoción||
+213|Esta unidad gana Momentum cuando muere un modelo enemigo, según la proximidad a la unidad enemiga.||
+214|Esta unidad gana 5 puntos de Momentum por muertes cuerpo a cuerpo y 1 por muertes a distancia.||
+215|Esta unidad gana Momentum en función del daño recibido por los ataques enemigos.||
+216|Exterminador de Plasma||
+217|Cañón Venenoso Pesado||
+218|Compañía de la Muerte||
+219|Compañía de la Muerte de los Ángeles Sangrientos||
+220|Espada de Fuerza||
+221|Teniente Carleon||
+222|Hermano Aeturo||
+223|Tecnomarine Croginax||
+224|Hermano Quindar||
+225|Hermana Verity||
+226|Desarmado||
+227|Lanzador Fragtormenta||
+228|Adaptación Estratégica||
+229|Adaptación Estratégica - A distancia||
+230|Adaptación estratégica - Cuerpo a cuerpo||
+231|Grito Psíquico||
+232|Voluntad de la Mente Colmena||
+233|Alas de Serafín||
+234|Gracia||
+235|Cancelar Alas de Serafín||
+236|Contrarresta algunas de las penalizaciones de Alas de Serafín. Acaba cuando acaba Alas de Serafín||
+237|Letanía de Devoción||
+238|Nodo de Infestación de Tiránidos||
+239|Engendro Salvaje||
+240|Catalizador||
+241|Andanada de Espinas||
+242|Telepatía de Progenie||
+243|Proporciona ganancias de Momentum independientes del líder sináptico, pero también evita que esta unidad obtenga bonificaciones del líder sináptico. Se acumula con otras unidades Genestealer hasta {0} veces.<br><br>{1}||
+244|Pulso Bioeléctrico||
+245|Púa Tóxica||
+246|Martillo Hemotúrgico||
+247|Alas de Sanguinius||
+248|Visiones de Furia Angelical||
+249|Lanza de Sangre||
+250|Rabia Negra||
+251|Audaz||
+252|Motor Modelo Lúcifer||
+253|Croginax||
+254|Cancelar Motor Modelo Lúcifer||
+255|Carleon||
+256|Veterano de 100 años, Carleon sabía exactamente dónde colocar a sus soldados para lograr el máximo impacto.||
+257|Ráfaga de Cañón de Asalto||
+258|Ataque de Marine de Asalto||
+259|Misiles Tifón||
+260|Ráfaga de Cañón Venenoso||
+261|Chillido Sónico||
+262|Minas Espora||
+263|Habilidad de Mando||
+264|Precisión a Distancia||
+265|Puntos de Golpe||
+266|Precisión Cuerpo a Cuerpo||
+267|Evasión||
+268|Unidades HQ||
+269|AP Cuerpo a Cuerpo||
+270|Infantería Primaris||
+271|Armadura contra a distancia||
+272|Aplica {0} daño al objetivo en la casilla central||
+273|Aplica {0} daño a los objetivos en las casillas circundantes||
+274|Genera {0} unidades en la casilla objetivo. Si hay un enemigo en la casilla, se realizará un ataque de carga||
+275|Dispara {0} veces por casilla durante 4 casillas en línea, lo que inflige {1} daño por disparo con una precisión de {2} y un valor de perforación de armadura de {3}.||
+276|Minas Espora||
+277|Minas Espora Tiránidas||
+278|Detonar||
+279|Reduce el Momentum enemigo en un 50% dentro de un área de 3x3.||
+280|Reduce Momentum en un 50% y elimina la acción Vigilancia de los enemigos en un área de 3x3.||
+281|Dispara una vez por ficha durante 4 fichas en una línea, lo que inflige {1} daño por disparo con una precisión de {2} y un valor de perforación de armadura de {3}.||
+282|Genera 4 minas espora en posiciones aleatorias en un área de 3x3. Si una mina espora cae sobre un enemigo, detonará inmediatamente. Las minas espora que aterrizan en casillas vacías se convierten en unidades controlables el próximo turno.||
+283|Madriguera||
+284|Martillo de Trueno||
+285|Land Speeder Tornado de los Ángeles Sangrientos||
+286|Land Speeder Tornado||
+287|Pistola de Plasma||
+288|Vástagos de Sanguinius||
+289|Fuerza en la Sangre||
+290|Observación del Desempeño||
+291|Estabilizadores Plásmicos||
+292|Sentidos Misteriosos||
+293|Bastiones Andantes||
+294|La Primera Línea||
+295|Fortalecimiento Sangriento||
+296|El Bendecido Sanguinius||
+297|Sangre del Gran Ángel||
+298|Enfoque Intenso||
+299|Entrenamiento Riguroso||
+300|Impulso hacia adelante||
+301|Absorción de Impacto||
+302|Técnica Salvaje||
+303|Land Speeder y Land Speeder Tornado||
+304|Unidades Mecánicas||
+305|Espíritus-Máquina Vigorizados||
+306|El Omnissiah Vigila||
+307|Ajuste Fino del Cañón de Asalto||
+308|Receptor Áuspex||
+309|Las Viejas Costumbres||
+310|Marines de Asalto, Compañía de la Muerte, Carleon, Aeturo y Croginax||
+311|Croginax y Agresores||
+312|Agitadores de Campo||
+313|Unidades de Bibliotecarios||
+314|Armónicos de Fuerza||
+315|Unidades Dreadnought||
+316|Sólo En La Muerte||
+317|Fortaleza Psíquica||
+318|Visión del Ángel||
+319|Garras Desgarran La Carne Indiferente||
+320|Su Último Honor||
+321|Actos de Fe||
+322|El Emperador Protege||
+323|Unidades de armadura Mk X Gravis||
+324|<i>El rugido de la cadena será lo último que escuchen.</i>||
+325|<i>El avance debería ser el único vector de tu rabia.</i>||
+326|<i>Los Primaris han aprendido rápidamente que no habrá descanso mientras los gantes permanezcan en Baalfora.</i>||
+327|<i>Si van a heredar el Capítulo, deben estar preparados para las vidas que sufrirán.</i>||
+328|<i>Tras más de cien años con la mochila de salto a cuestas, Carleon conocía la importancia de un buen aterrizaje.</i>||
+329|<i>La sangre del Ángel puede prolongar su esperanza de vida, pero despierta algo más en aquellos que de alguna manera sobreviven.</i>||
+330|<i>Aeturo observa al Primaris de cerca, a la espera de cualquier signo de debilidad o vulnerabilidad.</i>||
+331|<i>La dificultad no radica en disparar, sino en mantener la mira fija mientras carga.</i>||
+332|<i>La nobleza de Sanguinius brilla.</i>||
+333|<i>Los Agresores sabían que serían los primeros en recibir fuego, y eso les hizo desear la batalla que se avecinaba aún más.</i>||
+334|<i>Por razones que aún no podían entender, la proximidad con el joven sacerdote hizo que los Agresores estuvieran ansiosos por lanzarse a la batalla.</i>||
+335|<i>Placa reforzada sobre placa reforzada de ceramita hizo que la armadura Gravis fuera casi impenetrable.</i>||
+336|<i>Los Revientainfiernos están entrenados para detectar las irregularidades que indican un punto débil en la armadura del enemigo.</i>||
+337|<i>El Tecnomarine tiene afinidad por el arsenal antiguo de los Ángeles Sangrientos. Da la bienvenida a los ritos de mantenimiento aprendidos en Marte.</i>||
+338|<i>El Dios Máquina vigila y bendice a los espíritus que se mantienen fieles a sus deberes.</i>||
+339|<i>Estos viejos cañones no necesitan mucho para ayudarlos a concentrarse.</i>||
+340|<i>El espíritu-máquina advierte de peligros lejanos.</i>||
+341|<i>El plastrón de la armadura Mk VII vibró con entusiasmo al toque del Tecnomarine. El espíritu-máquina confiaba en las oraciones familiares que entonaba.</i>||
+342|<i>Algo en el comportamiento del Tecnomarine hace que los campos de las armas de energía cercanas vibren con anticipación.</i>||
+343|<i>Esta hoja es algo más que una extensión de tu brazo: será un amplificador de tu voluntad.</i>||
+344|<i>Solo en la muerte acaba el deber.</i>||
+345|<i>La mente de un Bibliotecario es una fortaleza, de la cual el cuerpo obtiene vigor.</i>||
+346|<i>El más breve vistazo puede significar la diferencia entre un tiro a través del hombro o a través de la cabeza.</i>||
+347|<i>El dolor no es motivo de preocupación para la Compañía de la Muerte.</i>||
+348|<i>Visiones del Gran Ángel inundan sus mentes, tomando eventualmente el lugar de todo recuerdo perdido.</i>||
+349|<i>¡Reza, hermana! ¡Alza tu voz en Su nombre! ¡Deja que tu oración se convierta en Su voluntad manifestada!</i>||
+350|<i>Tu convicción será tu armadura más fuerte.</i>||
+351|<i>Cada uno de ellos había aprendido por sí mismo las complejidades de una vida que defendía las Gracias del Ángel y las Virtudes del Guerrero.</i>||
+352|<i>Independientemente de si tu intención es mantener la línea o romperla, la habilidad esencial es poder disparar recto.</i>||
+353|<i>La doctrina fundamental de la Octava Compañía.</i>||
+354|<i>Granada anti-blindaje estándar.</i>||
+355|<i>Granada anti-persona estándar.</i>||
+356|<i>El peso de la armadura Gravis es un arma formidable en sí misma.</i>||
+357|<i>La andanada del Stormraven es un espectáculo glorioso para la vista.</i>||
+358|<i>Refuerzos oportunos por parte de experimentados hermanos de batalla en los que Carleon confía.</i>||
+359|<i>Los lanzadores de Tifón cantan la perdición para sus objetivos.</i>||
+360|<i>La experiencia enseña que la serenidad y la rabia pueden ser dos caras de la misma moneda.</i>||
+361|<i>El deber de la Espada es completar la misión, independientemente del coste.</i>||
+362|<i>Carleon sabía exactamente dónde colocar a sus hermanos de batalla para desbloquear su potencial.</i>||
+363|<i>Guía a un hermano de vuelta del borde de la muerte y podrás cambiar el destino de una guerra.</i>||
+364|<i>Los Agresores asientan sus pies en la tierra y hacen llover devastación sobre sus enemigos.</i>||
+365|<i>El Sacerdocio Sanguinario tiene todos los aspectos de la sangre del Primarca que llevan como sagrada, incluida la Sed de Sangre.</i>||
+366|<i>No es raro que un Sacerdote Sanguinario esté a la cabeza del combate, instando a sus hermanos con las palabras de su noble progenitor.</i>||
+367|<i>Cada tirador asesinado por su propia arma tiene su nombre honrado para siempre en una escritura microscópica en su carcasa.</i>||
+368|<i>El Tecnomarine vigoriza los espíritus-máquina de la servoarmadura que usan sus hermanos de batalla cercanos.</i>||
+369|<i>Ritos de inicialización; himnos de mantenimiento; oraciones de eficacia.</i>||
+370|<i>Un delicado punto de discordia entre los Ángeles Sangrientos y el Adeptus Mechanicus.</i>||
+371|<i>El chorro de las unidades anti-gravitacionales crea un grupo temible de cazadores.</i>||
+372|<i>Marca un objetivo para la aniquilación.</i>||
+373|<i>Ten fe en que el Gran Ángel te fortalecerá en tu momento de necesidad.</i>||
+374|<i>El Dreadnought comienza a moverse a una velocidad sobrenatural, empujado más rápido por el poder del psíquico.</i>||
+375|<i>Quindar es sensible a las arenas de Baal y sus lunas. El suelo por el que camina está formado por su voluntad.</i>||
+376|<i>Las alas relucientes del Gran Ángel se abren para llevar al Bibliotecario hacia adelante.</i>||
+377|<i>Una lanza hecha de energía empírica y la sangre de sus enemigos caídos.</i>||
+378|<i>Cuando la Hermana Superior alza la voz en alabanza al Emperador, todas las hermanas cercanas escuchan su compromiso.</i>||
+379|<i>Una mezcla potente que impulsa a la Hermana Superiora hacia adelante.</i>||
+380|<i>Por cada proyectil de esta bendita munición, un maestro artífice ha dedicado su vida a fabricar y santificar una sola bala.</i>||
+381|<i>Nuestra fe es nuestro escudo. Cuando uno flaquea, también lo hace el otro.</i>||
+382|<i>Pocos pueden igualar la gracia mortal de los Serafines en vuelo.</i>||
+383|Escuadra de Asalto y Carleon||
+384|Por el Emperador y por Sanguinius||
+385|Matar o ser consumido||
+386|El Emperador protege||
+387|Afecta a todos los aliados dentro de un rango de {0} casillas<br><br>{1}||
+388|Afecta a la unidad lanzadora<br><br>{0}||
+389|Afecta a un solo objetivo aliado dentro de {0} casillas<br><br>{1}||
+390|Revive al último miembro de un objetivo aliado dentro de {0} casillas y le otorga {1} salud y {2}% de puntos de movimiento||
+391|Inflige {0} daño por salpicadura a una sola unidad enemiga dentro de {1} casillas.<br><br>Perforación de armadura: {2}||
+392|Cancelar Alas de Sanguinius||
+393|{0}<br><br>El efecto se dobla cuando se activa adyacente a otro Land Speeder.||
+394|Tiene un {0}% de probabilidad de activarse cuando la Compañía de la Muerte mata a un modelo enemigo. Se acumula hasta {1} veces.<br><br>{2}||
+395|Arroja una lanza que daña a todos los enemigos en la ruta hacia el objetivo (alcance máximo: {0}). Inflige {1} daño por salpicadura con {2} perforaciones de armadura hasta {3} objetivos por casilla.||
+396|Afecta a un solo enemigo objetivo dentro de {0} casillas<br><br>{1}||
+397|Utiliza la mochila de salto de la unidad para lanzarse sobre un enemigo, provocando {0} daño por salpicadura con {1} perforaciones de armadura contra hasta {2} modelos. Esto cuenta como una Carga.||
+398|Inflige {0} daño psíquico a una unidad enemiga objetivo dentro de {1} casillas||
+399|Invoca una visión de Sanguinius que aterroriza a todos los enemigos que la ven. Hace {0} daño de Momentum a todas las unidades enemigas dentro de {1} casillas.||
+400|Invoca una visión de Sanguinius que aterroriza a todos los enemigos que la ven. Hace {0} daño de Momentum a todas las unidades enemigas dentro de {1} casillas y {2} daño psíquico a todas las unidades enemigas dentro de {3} casillas.||
+401|Provoca la Sed de Sangre de una sola unidad amiga dentro de {0} casillas.<br><br>{1}||
+402|Emite un grito desgarrador a lo largo de una {0} línea de casillas que inflige {1} daño de Momentum y {2} daño psíquico.||
+403|Ejerce la voluntad de la Mente Colmena sobre todas las unidades amigas dentro de {0} casillas.<br><br>{1}||
+404|Conecta todas las unidades amigas dentro de {0} casillas a la red sináptica. Las unidades conectadas ganan {1}. Este efecto puede acumularse hasta {2} veces.||
+405|Fe en Aumento||
+406|Inflige {0} daño a un solo modelo enemigo dentro de {1} casillas con daño por salpicadura adicional.<br><br>Perforación de armadura: {2}||
+407|Afecta a todos los aliados dentro de un rango de {0} casillas<br><br>{1}<br><br>{2}||
+408|Afecta a un solo objetivo aliado dentro de un rango de {0} casillas<br><br>{1}<br><br>{2}||
+409|Se aplica mientras {0} está activo<br><br>{1}||
+410|{0}% de probabilidad de aplicarse cuando muere un modelo de unidad enemiga<br><br>{1}<br><br>+{2} Puntos de acción||
+411|{0}% de probabilidad de que se aplique después de recibir daño<br><br>{1}||
+412|La unidad sacrifica todos sus puntos de movimiento restantes y realiza un ataque a distancia que inflige daño por salpicadura con un +{0}% de daño adicional por MP gastado.<br><br>Carga: {1}/{2}||
+413|La unidad sacrifica todos sus puntos de movimiento restantes y realiza un ataque a distancia que inflige daño por salpicadura con +{0}% de daño adicional y +{1} perforación de armadura por MP gastado.<br><br>Cargas: {2}/{3}||
+414|Sargento Intercesor||
+415|Se dirige a un único aliado mecánico dentro de {0} casillas<br><br>{1}||
+416|Carga a través de varias unidades e inflige {0} daño con {1} perforaciones de armadura tanto a enemigos como a aliados. Inflige {2} daño con {3} perforaciones de armadura al objetivo final||
+417|Salta a un enemigo a {0} casillas de distancia e inflige daño cuerpo a cuerpo con +{1} perforación de armadura. Esto cuenta como un ataque de carga.||
+418|Otorga una bonificación a distancia o cuerpo a cuerpo a los aliados dentro de {0} casillas. Usa esta capacidad para cambiar de modo<br><br>Bonificación a distancia<br>{1}<br><br> Bonificación cuerpo a cuerpo<br>{2}||
+419|Genera un Termagante aliado con -{0} MP en su primer turno.||
+420|Inflige {0} daño por salpicadura con {1} perforaciones de armadura a un enemigo a {2} casillas de distancia.||
+421|Se cobija inmediatamente en una ubicación hasta a {0} casillas de distancia, pero sufrirá daño adicional hasta el siguiente turno.<br><br>{1}||
+422|Proporciona ganancias de Momentum independientes del líder sináptico, pero también evita que esta unidad obtenga bonificaciones del líder sináptico. Se acumula con otras unidades Genestealer hasta {0} veces.||
+423|La unidad no puede usar la acción Retirada.||
+424|Entre los capítulos más nobles de los Marines Espaciales, los Ángeles Sangrientos luchan con una maldición oscura dentro de su propia sangre. Son una facción de rápido movimiento que sobresale en tácticas cuerpo a cuerpo y de asalto.||
+425|Impulsados ​​por la voluntad de su Mente Colmena, los Tiránidos solo tienen una directiva imparable: alimentarse. Esta fuerza xenos confía en sus líderes sinápticos para mejorar la eficiencia destructiva de sus enjambres.||
+426|<i>Una variante automática del rifle bólter Primaris, útil para eliminar enjambres.</i>||
+427|<i>Una reliquia favorita de la Armería, cargada con la historia de innumerables batallas pasadas.</i>||
+428|<i>No permitáis que nadie escape de nuestra ira.</i>||
+429|<i>Exquisitas pistolas de fusión, entregadas al hermano más fiable.</i>||
+430|<i>Mejora el perfil de amenaza de los Precursores contra enemigos con armadura moderada.</i>||
+431|<i>El Agresor reemplaza la andanada del lanzagranadas fragtormenta por un muro de llamas lanzado por sus puños. </i>||
+432|<i>Se necesita el instinto de un francotirador para que el primer tiro cuente.</i>||
+433|<i>La prioridad del artillero cambia de control de masas a cazador de blindados de alto perfil.</i>||
+434|<i>Los tanques de prometio más grandes dan a estos lanzallamas montados un mayor alcance que las variantes portátiles.</i>||
+435|<i>Pocos pueden resistir el torrente purificador de las llamas.</i>||
+436|<i>El Dreadnought ruge desafiante, rodeado por los cadáveres en llamas de sus enemigos.</i>||
+437|<i>Una pistola de fusión anti-blindaje diseñada específicamente para el venerable Dreadnought.</i>||
+438|<i>Solo su odio arde con más fuerza.</i>||
+439|<i> Con fuego y espada purgaremos la inmundicia.</i>||
+440|<i>No son solo los Ángeles Sangrientos los que han dominado estas pistolas de fusión del tamaño de una pistola.</i>||
+441|<i>El zumbido de la espada no es otra cosa que una armonía más en su devota canción.</i>||
+442|Salta sobre un enemigo a {0} casillas de distancia e inflige daño cuerpo a cuerpo con +{1} perforación de armadura. Esto cuenta como una Carga.<br>No provocará reacción de pistola.||
+443|Aviso: Provoca Fuego Amigo||
+444|La unidad sacrifica sus Puntos de Movimiento para realizar un ataque a distancia con +{0} Perforación de armadura y +{1}% de probabilidad crítica por PM gastado.||
+445|{0}% de probabilidad de activarse cuando esta unidad mata a un modelo enemigo. Solo se puede aplicar una vez por turno.||
+446|<i>¡Purificad a los inmundos!</i>||
+447|Afecta a todos los aliados dentro de un rango de {0} casillas<br><br>{1}||
+448|Otorga una bonificación a distancia o cuerpo a cuerpo a los aliados dentro de {0} casillas. Usa esta habilidad para cambiar de modo<br><br>Bonificación a distancia<br>{1}<br><br>Bonificación cuerpo a cuerpo<br>{2}<br><br>Agrega una bonificación adicional a los aliados dentro de {3} casillas<br>{4}||
+449|Ciega y envenena al enemigo con un ataque a distancia.||
+450|Mochila de Salto Gravis||
+451|Realiza un ataque a distancia con +{0}% de daño y +{1} perforación de armadura, pero cada modelo tiene un {2}% de probabilidad de recibir {3} daño.||
+452|Afecta a la unidad que lo usa<br><br>{0}<br>No provocará reacciones de pistola al cargar.||
+453|Cancelar Elevación Anti-Gravedad||
+454|Exhausto||
+455|Afecta a la unidad lanzadora<br><br>{0}<br><br>El efecto dura un turno adicional||
+456|Sana ahora a una única unidad propia y de nuevo al comienzo del siguiente turno. La vida recuperada se comparte entre todos los modelos de una unidad.||
+457|Se acumula con cada unidad de Tácticas de Enjambre adyacente, hasta un máximo de {0}.||
+458|Garras Relámpago||
+459|Martillo de Trueno y Escudo Tormenta||
+460|Bólter Ángelus||
+461|Hacha Encarmine||
+462|Espada Encarmine||
+463|Garras Aceradas Monstruosas||
+464|Cañones de Choque||
+465|Cañón Empalador||
+466|Líder de Progenie||
+467|Líder de Progenie Tiránido||
+468|Guardia de Enjambre||
+469|Guardia de Enjambre Tiránido||
+470|Exterminadores de Asalto||
+471|Exterminadores de Asalto de los Ángeles Sangrientos||
+472|Guardia Sanguinaria||
+473|Guardia Sanguinaria de los Ángeles Sangrientos||
+474|Fragmentos de Espinas de Bestia||
+475|Cañones de Choque de Espinas||
+476|Redespliegue de Exterminadores||
+477|Teletransporta la unidad hasta {0} casillas. La localización de teletransporte tiene que estar dentro del radio de visión y no puede ser adyacente a un enemigo.<br><br>Cargas: {1}/{2}||
+478|Escudo Tormenta||
+479|Telepatía de Progenie Evolucionada||
+480|Paroxismo||
+481|Sobrecarga el sistema nervioso de una unidad objetivo dentro de {0} casillas, causando {1} daños psíquico y evitando todos los ataques de reacción (incluida Vigilancia).<br><br>{2}<br>Elimina todas las acciones Vigilancia||
+482|Esta unidad gana {0} Momentum por muertes cuerpo a cuerpo y {1} Momentum por muertes a distancia.<br><br>{2}||
+483|Herederos de Azkaellon||
+484|¡Nuestra Sangre se Enciende!||
+485|Afecta a la unidad que lo lanza<br><br>{0}||
+486|Doble todos los efectos mientras la unidad está adyacente a un Comandante de HQ||
+487|<i>En este día, Azkaellon es honrado como el elegido de Sanguinius; la Guardia defiende su nombre y su deber.</i>||
+488|<i>El Plasma es siempre una opción.</i>||
+489|<i>Ni la piel de demonio ni la placa de blindaje aguantarán tal ira.</i>||
+490|<i>Son necesarias mil batallas para blandir el hacha con la gracia que se merece.</i>||
+491|<i>Dondequiera que nos envíen, la batalla está ganada.</i>||
+492|<i>Inamovible. Impenetrable. Indomable.</i>||
+493|Teleportado||
+494|Guerreros Necrón||
+495|Rifle Gauss||
+496|Segadora Gauss||
+497|Dinastía del Metal Viviente||
+498|Protocolo de Reanimación||
+499|Necrones||
+500|Desolladores||
+501|Desolladores Necrón||
+502|Hambre de carne||
+503|Garras desolladoras||
+504|Destructor Skorpekh||
+505|Destructor Skorpekh Necrón||
+506|Infusión de Plasmacita||
+507|Trilladoras de hiperfase||
+508|Hojasegadora de hiperfase||
+509|Destructor Maldicida||
+510|Destructor Maldicida Necrón||
+511|Pistolas desintegradoras emíticas||
+512|Eliminador Multi-amenaza||
+513|Optimización de Objetivo||
+514|Inmortales||
+515|Inmortales Necrón||
+516|Relámpago Viviente||
+517|Blaster Gauss||
+518|Carabina Tesla||
+519|Omnicidas||
+520|Omnicidas Necrón||
+521|Desintegrador Sinóptico||
+522|Marca de cazador||
+523|Translocación Dimensional||
+524|Pretorianos de la Triarca||
+525|Pretorianos de la Triarca Necrón||
+526|Vara del pacto||
+527|Desplazamiento gravitico||
+528|Marines de la Primera Fundación||
+529|Destructor gauss||
+530|Exterminador emítico||
+531|Deslizador||
+532|Destructores Pesados Lokhust||
+533|Destructores Pesados Lokhust Necrón||
+534|Realiza un asalto alimentado por la ira, pero con la posibilidad de matar a uno de los Destructores.<br><br>Daño cuerpo a cuerpo +{0}%<br>Probabilidad de crítico +{1}%<br>{2}% de probabilidad de que un Destructor sea eliminado.||
+535|Blaster gauss doble||
+536|Cañón de partículas||
+537|Carabina Tesla doble||
+538|Cuchillas de la Necrópolis||
+539|Cuchillas de la Necrópolis Necrón||
+540|Engramas de evasión||
+541|Nebuloscopio||
+542|Esta unidad gana momentum al final de su turno si se ha movido de su posición inicial.||
+543|Líder Supremo||
+544|Líder Supremo Necrón||
+545|Dáculus||
+546|Báculo de luz||
+547|Guja Hiperfásica||
+548|Alteración fásica||
+549|Orbe de Resurrección||
+550|Protocolo de Mando||
+551|Velo de la Oscuridad||
+552|Plasmante||
+553|Plasmante Necrón||
+554|Lanza plásmica||
+555|Orbe Cuántico||
+556|Portadores de destrucción||
+557|Descarga de Urdimbre Tesla||
+558|Necroguardia||
+559|Necroguardia Necrón||
+560|Espada Hiperfásica y Escudo de Dispersión||
+561|Protocolos Guardian||
+562|Escudo de Dispersión||
+563|Reclamar la galaxia||
+564|Los Necrones son una raza inmortal de androides de metal que ejercen el poder de las estrellas para acabar con las razas menores. Es una facción de ritmo lento con devastadoras opciones a distancia. La victoria por la marcha sin fin de los Necrones es inevitable.||
+565|Espada Hiperfásica||
+566|Da un {1}% de probabilidad de revivir hasta {2} modelo(s) de esta unidad con un {0}% de vida una vez por turno.||
+567|Enjambre de Escarabajos Canópticos||
+568|Enjambre de Escarabajos Canópticos Necrón||
+569|Mandíbulas devoradoras||
+570|Protocolo de Auto-Destrucción||
+571|Plataforma de Aniquilación||
+572|Plataforma de Aniquilación Necrón||
+573|Cañón Gauss||
+574|Canón Testla||
+575|Destructor Tesla doble||
+576|Escudo Cuántico||
+577|Marca al objetivo para que muera, lo que otorga a esta unidad puntería adicional y probabilidad de impacto crítico contra el objetivo. Solo se puede establecer una marca a la vez.<br><br>{0}||
+578|Teletransporta la unidad hasta {0} casillas. La ubicación del teletransporte debe estar dentro del alcance visual y no puede estar adyacente a un enemigo.<br><br>Cargas: {1}/{2}||
+579|Escarabajo Tempestad||
+580|Tormenta Eléctrica Tesla||
+581|Rayo Guadaña Mortal||
+582|Su hambre aumenta...<br><br>Tiene un {0}% de ganar una pila cuando esta unidad elimina un modelo orgánico. Max {1} pilas.||
+583|El Líder Supremo manipula la misma realidad para crear una barrera protectora.||
+584|Convoca una unidad de Guerreros Necrones.||
+585|Protocolo de Estaciones Pasajeras||
+586|Protocolo de Voluntad Inquebrantable||
+587|Protocolo de Horizonte Infinito||
+588|Cambia entre dos protocolos de mando<br><br>Protocolo de Estaciones Pasajeras<br>{0}<br><br>Protocolo de Voluntad Inquebrantable<br>{1}||
+589|Cambia entre dos protocolos de mando y añade el Protocolo de Horizonte Infinito a todas las unidades dentre de {0} casillas.<br><br>Protocolo de Estaciones Pasajeras<br>{1}<br><br>Protocolo de Voluntad Inquebrantable<br>{2}<br>Protocolo de Horizonte Infinito<br>{3}||
+590|El Líder Supremo camina entre realidades para teleportarse hasta {0} casillas.||
+591|El Plasmante desactiva los seguros de su antiguo aparato, liberando un devastador pilar de pura energía contra objetivos dentro de {0} casillas. Provoca {1} de daño con {2} de penetración de armadura en el centro del objetivo, y {3} de daño con {4} de penetración de armadura a objetivos adyacentes.||
+592|Canaliza, de manera creciente, energías destructoras en forma de rayo aniquilador, causando {0} daño por salpicadura, {1} de penetración en blindaje y {2}% de puntería a todas las unidades a lo largo del rayo.||
+593|Conecta energía a todas las unidades aliadas cercanas dentro de {0} casilla.<br><br>{1} ||
+594|Conecta energía a todas las unidades aliadas cercanas dentro de {0} casillas.<br><br>{1} ||
+595|Protocolos Guardianes Desactivados||
+596|Reacción de Intercesión para unidades HQ de mando cercanas disparadas con Ataques a Distancia.||
+597|Intercambia ubicación con la unidad HQ cuando son atacadas a distancia siempre y cuando la unidad HQ esté a {1} casillas. Esta unidad sufrirá todo el daño dirigido a la unidad HQ<br><br>{0}||
+598|Toma como objetivos hasta {0} unidades con un solo ataque, a cambio de una velocidad de ataque menor y menor puntería a distancia.<br><br>{1}||
+599|Permite autoaciertos en ataques a distancia. Reduce los puntos de movimiento y aumental la probabilidad de críticos con cada punto de movimiento gastado.<br><br>{0}||
+600|Comienza un ataque cuerpo a cuerpo con daño por salpicadura, pero sacrifica a los Escarabajos en el proceso.||
+601|Marcha Interminable||
+602|La unidad ganará un bonus de Momentum al final del turno.||
+603|Hace aparecer {0} unidades en la casilla objetivo. Si hay una unidad enemiga en la casilla, se realizará un ataque de carga y una unidad adicional {0} atacará al enemigo. Si la casilla está vacía, aparecerá una unidad {0} adicional en una casilla adyacente aleatoria.||
+604|La Guadaña de la Muerte pasa por encima, haciendo volar {0} objetivos con sus Destructores Tesla Dobles. Causa {1} de daño con {2} de penetración de blindaje.||
+605|Advertencia: Causa Fuego Amigo<br>Dispara a 4 casillas en línea, provocando {0} de daño por disparo con un valor {1} de penetración de blindaje.||
+606|Castigo del Penitente||
+607|Castigo del Penitente de las Adepta Sororitas||
+608|Amplificadores de Tormento||
+609|Cuchillas-sierra del Penitente||
+610|Lanzallamas Pesados Dobles||
+611|Espada Infernal||
+612|Colmillos Sanguinolentos||
+613|Cañón de Cráneos||
+614|Espada de Sangre||
+615|Desangrador||
+616|Desangrador de Khorne||
+617|Mastín||
+618|Mastín de Khorne||
+619|Maestro de Sangre||
+620|Heraldo de Khorne Maestro de Sangre||
+621|Cañón de Cráneos||
+622|Cañón de Cráneos de Khorne||
+623|¡Sangre para el Dios de la Sangre!||
+624|Criaturas malévolas escupidas por la Disformidad, los Demonios del Caos de Khorne son una facción de movimiento rápido, orientada al combate cuerpo a cuerpo. Recorren el campo de batalla en busca de sangre que derramar como tributo a su maestro, el Señor de la Furia.||
+625|Ferocidad Imparable||
+626|Ritual Demoníaco||
+627|Foco de Khorne||
+628|Marea Asesina||
+629|Olor de la Sangre||
+630|Rugido Ardiente||
+631|Vinculado en Metal y Hueso||
+632|Carnicería Aplastante||
+633|Aumenta la Evasión un {0}% frente a ataques de Vigilancia o Fuego de Reacción||
+634|Engendra una unidad Demonio de Khorne dentro de {0} casilla(s)||
+635|Aumenta el Blindaje en {0}, la Penetración de Blindaje en {1} y el Daño en {2}% para las unidades Demonios de Khorne aliadas en un alcance de {3} casillas.||
+636|Aumenta la Probabilidad de Críticos en {0}% para cada unidad de Desangradores aliada en una casilla adyacente||
+637|Ejecuta un ataque de carga contra una única unidad orgánica enemiga, con un bonus de {0} puntos de movimiento.<br><br>Proporciona bonus durante el ataque<br>{1}||
+638|Ejecuta un ataque sónico contra un enemigo dentro de un alcance de {0} casillas con una Penetración de Blindaje de {1} para {2} disparos y un daño de {3} por disparo.||
+639|Reduce el daño recibido en un {0}%||
+640|Afecta a la unidad lanzadora||
+641|Habilidades Tácticas||
+642|Mejoras de las Armas de Plasma||
+643|Granadas||
+644|Mejoras de las Armas Melta||
+645|Mejoras de las Armas Cuerpo a Cuerpo de Energía||
+646|Bolter Condenación||
+647|Espada Bendita||
+648|Arcoflagelos||
+649|Eviscerador del penitente||
+650|Maza sagrada||
+651|Filo de Guerra del Dechado||
+652|Lanzamisiles||
+653|Lanzallamas Inmolatio||
+654|Bólter Pesado Doble||
+655|Cañón de Fusión Doble||
+656|Canonesa||
+657|Canonesa del Adepta Sororitas||
+658|Hospitalaria||
+659|Hospitalaria del Adepta Sororitas||
+660|Arcoflagelante||
+661|Arcoflagelante del Adepta Sororitas||
+662|Hermanas Celestes||
+663|Hermanas Celestes del Adepta Sororitas||
+664|Hermanas Arrepentidas||
+665|Hermanas Arrepentidas del Adepta Sororitas||
+666|Hermanas Celestes Sacrosantas||
+667|Hermanas Celestes Sacrosantas del Adepta Sororitas||
+668|Vengadoras||
+669|Vengadoras del Adepta Sororitas||
+670|Exoesqueletos Ejemplares||
+671|Exoesqueletos Ejemplares del Adepta Sororitas||
+672|Rhino||
+673|Rhino del Adepta Sororitas||
+674|Exorcista||
+675|Exorcista del Adepta Sororitas||
+676|Immolator||
+677|Immolator del Adepta Sororitas||
+678|Transporte||
+679|Juramento de Protección||
+680|Conjuro Glorioso||
+681|Palabra de Desprecio||
+682|Honrar a los Mártires||
+683|Rosarius||
+684|Tormenta de Retribución||
+685|Escudo Sacrosanto||
+686|Martirio||
+687|Frenesí Celoso||
+688|Médicus||
+689|Ritos de Intercesión||
+690|Autorreparación||
+691|Estribillo Devastador||
+692|Misíl Cazador Asesino||
+693|Lanzagranadas Ejemplar||
+694|Lanzallamas||
+695|Al Morir, aplicar el efecto a todas las unidades aliadas||
+696|La unidad sacrifica todos sus puntos de movimiento restantes y realiza una orden de ataque a distancia con +{0}% ataques adicionales y +{1} de perforación de blindaje por cada MP gastado.||
+697|Carga contra el enemigo.<br><br>{0}<br><br>Los aliados dentro de {1} casillas ganan {2} momentum por cada mártir caído.||
+698|La unidad sacrifica todos sus puntos de movimiento restantes y realiza una orden de ataque a distancia con perforación de blindaje adicional y daño por cada MP gastado.||
+699|Dispara un misil que causa {0} de daño con {1} de perforación de blindaje y un alcance máximo de {2}.||
+700|El brazo militante de la Eclesiarquía, las Adepta Sororitas son guerreras de feroz celo que dedican sus vidas al servicio en nombre del Maestro de la Humanidad.||
+701|Elimina todos los efectos de los estados negativos.<br>+{0} Salud||
+702|Añade {0} AP a un aliado a {1} casilla(s) (exceptuando vehículos, caminantes y Arcoflagelantes).||
+703|Espíritu del Emperador||
+704|Guía Divina||
+705|Juicio Justo||
+706|Devorador de almas||
+707|Khorne el devorador de almas||
+708|Gran hacha de Khorne||
+709|Gran Demonio||
+710|Rabia insensata||
+711|Alas Terribles||
+712|Aplastador de almas||
+713|Khorne aplastador de almas||
+714|Cañón de cosecha||
+715|Espada disforme||
+716|Garra disforme||
+717|Garra de hierro||
+718|Aplastador||
+719|Aplastador de Khorne||
+720|Carga devastadora||
+721|Las Adepta Sororitas que son testigos de la muerte de una Canonesa son impulsadas a mayores actos de valentía y sacrificio.<br>||
+722|Realiza un ataque con la Garra de hierro del Aplastador de Almas que inflige {0} daños en Perforación de Armadura {1} y genera daño por salpicadura a {2} unidades adicionales.||
+723|Dones de Khorne||
+724|<i>La presencia de un Devorador de Almas invoca a los demonios cercanos a mayores actos de violencia y derramamiento de sangre</i><br>||
+725|<i>Con un rugido atronador, la furia y el ansia de sangre del Devorador de Almas alcanzan un nuevo nivel de apoplejía.</i><br><br>Aumenta el daño en combate cuerpo a cuerpo durante {0} turnos en un {1}%, además de realizar un ataque psíquico a todas las unidades enemigas dentro de {2} casillas por {3} de daño psíquico y {4} de daño de momentum.||
+726|<i>Llevado por enormes alas, el Devorador de Almas atraviesa rápidamente el campo de batalla para masacrar en nombre de Khorne</i>||
+727|Cancelar Alas Terribles||
+728|<i>La Hospitalaria llama tranquilamente a otra de sus Hermanas para que actúe en su nombre</i>||
+729|<i>A través de la niebla de la guerra, presentamos el juicio del Emperador</i>||
+730|<i>Las Sororitas están imbuidas de una fuente ilimitada de vigor.</i>||
+731|<i>Al ver las debilidades en las defensas de los enemigos, las Hermanas de Batalla atacan con una precisión infalible</i>||
+732|<i>Las Sororitas están llenas de una pasión ardiente para llevar el juicio del Emperador ante sus enemigos.</i>||
+733|<i>Con los pies firmemente plantados y el desdén ardiendo en sus corazones, las Vengadoras purgan la galaxia de la herejía</i>||
+734|<i>La redención solo puede encontrarse en la muerte</i>||
+735|<i>El artillero toca un himno de adoración tan potente que el espíritu-máquina del Exorcista se fortalece para aniquilar aún más al enemigo.</i>||
+736|<i>Enloquecidos, los Arcoflagelantes se lanzan de cabeza contra el enemigo.</i>||
+737|<i>La condena de la Canonesa resuena en el campo de batalla, agitando el objetivo de su desprecio a sus fieles</i>||
+738|<i>Esta carga útil tres veces bendecida se eleva alto antes de hacer llover la muerte sobre los enemigos del Emperador</i>||
+739|<i>Los pocos inhibidores nerviosos que quedan son eliminados, aplastando al piloto con toda la extensión de los amplificadores químicos de su sistema nervioso. </i>||
+740|<i>Ningún daño puede ocurrir a aquellos tocados por el Emperador.</i>||
+741|Cancelar el juramento de protección||
+742|Intercambia la ubicación con la unidad de mando HQ cuando son atacados por armas cuerpo a cuerpo o a distancia, siempre que la unidad HQ esté a {1} casillas. Esta unidad recibirá todo el daño destinado a la unidad HQ.<br><br>{0}||
+743|Infusión de vitalidad||
+744|Acelerado||
+745|Francotirador||
+746|Armadura endurecida||
+747|Agente de destrucción||
+748|Objetivo elusivo||
+749|Duelista brutal||
+750|Asesino eficiente||
+751|Multiplicador de fuerza||
+752|Listo para la batalla||
+753|Príncipe Demonio||
+754|Príncipe Demonio de Khorne||
+755|Cultistas del Caos||
+756|Cultistas del Caos de Khorne||
+757|Garras Maléficas||
+758|Fuerza Sobre Magia||
+759|Espada Infernal||
+760|Hacha Demoníaca||
+761|Rifle Automático de Cultista||
+762|Ametralladora Pesada||
+763|Motoriztaz||
+764|Motorizta Orko||
+765|Ametralladoraz||
+766|Nube de Humo||
+767|Gran Botón Rojo||
+768|Chikoz||
+769|Chikoz Orkoz||
+770|Akribillador||
+771|Akribillador Pezado||
+772|Lanzakohetez||
+773|Granadaz||
+774|A Por Todas||
+775|La Peña Triunfará||
+776|Zoldadoz de Azalto||
+777|Zoldadoz de Azalto Orkoz||
+778|Piztola||
+779|Rebanadora||
+780|Kohete Propulzor||
+781|Atake de Zoldadoz de Azalto||
+782|Armadoz Hazta Loz Dientez||
+783|Achicharradorez||
+784|Achicharradorez Orkoz||
+785|Achicharrador||
+786|Piromaníakoz||
+787|Kóptero||
+788|Kóptero Orko||
+789|Kohetez Kópteroz||
+790|Lanzakohetez Ezpezial||
+791|Gran Bomba||
+792|Noblez||
+793|Noblez Orkoz||
+794|Gran Rebanadora||
+795|Garra de Kombate||
+796|Dadle Máz Fuerte||
+797|Tipejoz Vazilonez||
+798|Tipejoz Vazilonez Orkoz||
+799|Mazakrador Molón||
+800|Mazakre Oztentoza||
+801|Meganoblez||
+802|Meganoblez Orkoz||
+803|Akribillador Ezpezial||
+804|Kombi-lanzakohetez||
+805|Kombi-achicharrador||
+806|Motozierra||
+807|Orkoz||
+808|¡Waaagh!||
+809|La raza más implacablemente guerrera de la galaxia, los Orkoz se preocupan poco por la autoconservación o la estrategia de batalla. Los Orkoz viven para la alegría de la batalla, y el próximo ¡Waaagh!||
+810|Kaudillo||
+811|Kaudillo Orko||
+812|Garrapato de Atake||
+813|Eztrambótiko||
+814|Eztrambótiko Orko||
+815|Bákulo||
+816|Ezplotakabezaz||
+817|Alatake||
+818|Dedoz Inkietoz||
+819|Mekániko||
+820|Mekániko Orko||
+821|Gran Mekaniako||
+822|Petatankez||
+823|Pantalla de Energía Ezpezial||
+824|Matazanoz||
+825|Matazanoz Orko||
+826|Zierra||
+827|Gretchin||
+828|Gretchin Orko||
+829|Armaz Gretchin||
+830|Zakeadorez||
+831|Zakeadorez Orkoz||
+832|Matamuchoz||
+833|¡La Fuerza Ez Lo Korrekto!||
+834|Dreadnought Orko||
+835|Dreadnought Orko||
+836|Peñaz de Dreadnoughts||
+837|¡Máz Dakka!||
+838|Ráfaga de Akribillador Pezado||
+839|Bomba Bum||
+840|Garra Dread||
+841|Kema-kema||
+842|<i>Percibiendo la debilidad en las defensas del enemigo, las Hermanas de Batalla dentro de {0} casillas de distancia del Comandante de HQ atacan con precisión infalible.</i>||
+843|<i>Las Sororitas dentro de {0} casillas del Comandante de HQ son imbuídas con una fuente de vigor inagotable.</i>||
+844|<i>Las Hermanas de Batalla dentro de {0} casillas de distancia del Comandante de HQ se llenan de un ardor por traer el juicio del Emperador a Sus enemigos.</i>||
+845|Vuela sobre un objetivo y lanza una gran bomba de que hace {0} de daño a AP {1}, más un daño {2} adicional a AP {3} a las casillas adyacentes. Aviso: Causa Fuego Amigo.||
+846|El Motorizta emite una densa nube de humo oscuro, haciendo que sea más difícil de impactar.||
+847|El Motorizta presiona el Gran Botón Rojo, y la ya de por sí veloz máquina acelera aún más.||
+848|El Jefe Eztá Vigilando||
+849|Afecta a todas las unidades dentro de {0} casillas de distancia del Kaudillo Orko||
+850|Dispara un kohete dentro de {0} casillas de alcance que causa {1} HP de daño por explosión a cualquier modelo alcanzado por penetración de blindaje de {2}||
+851|Envaze Endurezido||
+852|Repara inmediatamente {0} HP de daño a cualquier vehículo aliado, y otorga Blindaje +{1} que dura {2} turnos.||
+853|Afecta a un único aliado en una casilla adyacente<br><br>{0}||
+854|Matamuchoz Lázer||
+855|Tiene un {0}% de probabilidad de curar {1} HP por modelo para un aliado no vehículo en una casilla adyacente. Si falla, un único modelo en la unidad sufrirá {2} HP de daño.||
+856|Tiene un {0}% de probabilidad de curar {1} HP por modelo para un aliado no vehículo en una casilla adyacente.||
+857|Realiza un ataque a distancia con {0}% disparos adicionales y +{1} Penetración de Blindaje||
+858|Se acumula cuando esté dentro de {0} casillas de otros Dreadnought Orkos, hasta {1}  acumulaciones.||
+859|Ziego||
+860|El eztrambótico se centra en un enemigo dentro de {0} casillas de distancia y entonces se pincha en el ojo, dejando al objetivo temporalmente ciego.||
+861|Dispara un relámpago de energía psíquica pura que inflige {0} HP de daño a {1} Penetración de Blindaje.||
+862|Reduce el daño a distancia recibido dentro de 2 casillas alrededor de un Mekániko con Pantalla de Energía Ezpezial||
+863|Reduce el daño recibido por el Mekániko en un {0}% y el daño a distancia recibido por los aliados en {2} casillas en un {1}%||
+864|El Comandante de HQ canaliza la voluntad de Gorka y Morka para exhortar a los aliados dentro de {0} casillas a que disparen con más energía.||
+865|Garrapato||
+866|Garrapato Orko de Atake||
+867|Mordizko de Garrapato||
+868|Las fauces del Garrapato de Atake del Kaudillo infligen {0} HP de daño a {1} Penetración de Blindaje.||
+869|<i>¡Nada les gusta más a los Chikoz Orkoz que meterse en un buen fregao!</i>||
+870|<i>Explosivos anti-infantería, rudimentarios pero efectivos</i>||
+871|<i>Con una simple pulsación, el motor se pone a toda máquina y una nube de humo envuelve al Motorizta</i>||
+872|<i>El Motorizta pulsa el Gran Botón Rojo y la rápida máquina de la muerte acelera aún más</i>||
+873|<i>El Waaagh cae desde el cielo</i>||
+874|<i>El Orkito tiene conozimientoz para mejorar el blindaje de loz chikoz</i>||
+875|<i>Máz dakka, puez la fuerza ez lo korrekto</i>||
+876|<i>A vezez te guztaría ke tu rebanadora pegara máz fuerte</i>||
+877|<i>Nunka hay zuficiente dakka</i>||
+878|<i>El Comandante de HQ canaliza la voluntad de Gork y Mork para exhortar a sus subalternos a que disparen con más energía</i>||
+879|<i>El Bombardero-Datake suelta andanadas de letal dakka desde sus Superakribilladores</i>||
+880|<i>¡Boom!</i>||
+881|<i>Recoge la energía del Waaagh</i>||
+882|<i>Energía psíquica pura erupciona del eztrambótiko, y la cabeza del enemigo explota</i>||
+883|Cancelar Rokkit Pak||
+884|Kamión dezpachurrador||
+885|El Matazanoz eztá||
+886|Se aplica {0} a todas las unidades aliadas en un rango de {1} casillas de un Matazanoz orko||
+887|Un golpe desgarrador de garras afiladas que inflige {0} daños con {1} penetración de armadura contra hasta {2} modelos.||
+888|Bajo la mirada asesina del Príncipe Demonio, la furia ardiente de los Demonios cercanos se convierte en un infierno. <br><br>Precisión cuerpo a cuerpo +{0}<br>Daño cuerpo a cuerpo +{1}%||
+889|Cañón infernal||
+890|Aura de terror||
+891|Ecos de furia sin fin||
+892|Diezmo de sangre||
+893|El Comandante del cuartel general usa la influencia de la Disformidad para reducir a sus enemigos a un estado de pánico total, congelados y menos capaces de moverse o manejar armas.||
+894|Khorne y sus salvajes secuaces imbuyen una ira candente y una furia sin fin. Brutales oleadas de apoplejía resuenan desde el Comandante del HQ, sometiendo la voluntad de luchar de los enemigos de la Legión.<br><br>Elimina todas las Vigilancias<br>{0}  Momentum||
+895|Canalizando la fuente ilimitada de ira y rabia que emana del Señor de las Cráneos, el Comandante del cuartel general desencadena un ataque de Disformidad que inflige {0} de daño psíquico en un área amplia.||
+896|<i>The white-hot rage of Khorne<i>||
+897|<i><i>Aplasta a los Dreadnoughts tan fácilmente como a los Marines Espaciales</i></i>||
+898|<i>La ira imparable de Khorne pisotea todo a su paso</i>||
+899|<i>Los horrores de la Disformidad traen locura y terror a todos</i>||
+900|<i>La furia apopléjica del Comandante del cuartel general destruye la voluntad de luchar de todos los enemigos de Khorne</i>||
+901|<i>Sangre para el Dios de la Sangre, calaveras para el Trono de Cráneos</i>||
+902|<i>El Príncipe Demonio ataca y sus enemigos caen</i>||
+903|<i>Las fauces necesitan alimentación</i>||
+904|<i>La mera presencia de un Bloodthirster aviva la ira de la horda Demoníaca</i>||
+905|<i>Ira implacable, lujuria de sangre sin fin</i>||
+906|<i>Solo una batalla llena de ira puede saciar el apetito de las Legiones Sangrientas</i>||
+907|<i>Invoca a las interminables hordas del Caos</i>||
+908|T'au||
+909|Por el Bien Supremo||
+910|Comandante T'au||
+911|Comandante||
+912|Armadura||
+913|Maestro de guerra||
+914|Armadura endurecida||
+915|Maniobras de alta velocidad||
+916|Compañero de drones||
+917|Dron de defensa||
+918|Dron de ataque||
+919|Dron telemétrico||
+920|XV85 Guardián||
+921|XV86 Coldstar||
+922|Cañón rotativo||
+923|Cañón rotativo de alto rendimiento||
+924|Filoardiente||
+925|Filoardiente T'au||
+926|Rifle de impulsión filoardiente||
+927|Aluvión de fuego||
+928|Objetivo avistado||
+929|Etéreo||
+930|T'au Etéreo||
+931|Bastón de honor||
+932|Solidez de Piedra||
+933|La Gracia de Zephyr||
+934|Drones tácticos||
+935|Drones tácticos T'au||
+936|Carabina de inducción||
+937|Marcador telemétrico||
+938|Rastreadores||
+939|Rastreadores T'au||
+940|Rifle Iónico||
+941|Sobrecarga||
+942|Equipo de ataque de guerreros del fuego ||
+943|Equipo de ataque de guerreros del fuego  T'au||
+944|Rifle de inducción||
+945|Equipo de demolición de guerreros del fuego||
+946|Equipo de demolición de guerreros del fuego T'au||
+947|Blaster de inducción||
+948|Demoler y despejar||
+949|Equipo de armadura Crisis||
+950|Equipo de armadura Crisis T'au||
+951|Blaster de fusión||
+952|Módulo lanzamisiles||
+953|Jet||
+954|Equipo de armadura mimética||
+955|Equipo de armadura mimética T'au||
+956|Camouflage Field||
+957|Armadura Apocalipsis||
+958|Armadura Apocalipsis T'au||
+959|Rifle acelerador pesado||
+960|Aplastamiento corpulento||
+961|Sistema de adquisición de blanco avanzado||
+962|Misil buscador||
+963|Sistema de misiles inteligente||
+964|Armadura Ghostkeel||
+965|Armadura Ghostkeel T'au||
+966|Colisionador de fusión||
+967|Puños Ghostkeel||
+968|Armadura Cataclismo||
+969|Armadura Cataclismo T'au||
+970|Cañón rotativo pesado||
+971|Acelerador de iones||
+972|Fusil de plasma||
+973|Generador de escudos Cataclismo||
+974|Piraña||
+975|Piraña T'au||
+976|Tanque cabezamartillo||
+977|Tanque cabezamartillo T'au||
+978|Acelerador lineal||
+979|Cañón iónico||
+980|Realiza un ataque a distancia que ignora la cobertura parcial.||
+981|Granada de fotones||
+982|Esta unidad gana {0} de Momentum adicional cada vez que una unidad aliada muere.||
+983|Marca el objetivo con un sofisticado haz de luz, lo que proporciona a los aliados dentro de {0} casillas una mayor precisión contra el objetivo<br><br>{1}||
+984|Realiza un ataque a distancia con +{0} % de daño, +{1} de perforación de armadura y daño de salpicadura adicional, pero cada modelo tiene un {2} % de probabilidad de recibir {3} de daño.||
+985|Ignora la desventaja de precisión del enfrentamiento cuerpo a cuerpo.||
+986|Un misil antivehículo que inflige {0} de daño con {1} de perforación de armadura a un alcance máximo de {2} casillas.<br><br>Impacta automáticamente objetivos marcados||
+987|Afecta a todos los aliados dentro de {0} casillas de un Comandante T'au||
+988|Cancelar maniobras de alta velocidad||
+989|Afecta a todos los aliados dentro de un rango de {0} casillas<br><br>{1}||
+990|Ataque con misil buscador||
+991|Ataque Manta||
+992|Rayo iónico orbital||
+993|Dispara dos misiles antivehículo a objetivos separados por una distancia de hasta {0} casillas, cada uno de los cuales inflige {1} a {2} perforación de armadura.||
+994|Genera una armadura Crisis en la casilla objetivo.||
+995|Un rayo cegador de energía candente impacta en el objetivo dañando también las casillas circundantes. Inflige {0} de daño con {1} de perforación de armadura en el objetivo central y {2} de daño con {3} de perforación de armadura a objetivos adyacentes.||
+996|Armadura Invictor de los Ángeles Sangrientos||
+997|Armadura Invictor||
+998|Cañón Incendium||
+999|Ironhail Autostubber doble||
+1000|Ironhail Autocannon doble||
+1001|Puño Invictor||
+1002|Provoca {0} de Evasión y {1} de Precisión a distancia al objetivo, y {2} de Evasión y {3} de Precisión a distancia a las casillas circundantes durante {4} turno(s). También elimina ataques de reacción (overwatch)||
+1003|<i>Una unidad de drones controlada por IA que proyecta un escudo que puede repeler los disparos enemigos</i>||
+1004|<i>Una unidad de drones controlada por IA equipada con dos carabinas de inducción</i>||
+1005|<i>Una unidad de drones controlada por IA que puede marcar unidades enemigas para aumentar la precisión contra ellas</i>||
+1006|<i>Una variante de la armadura Crisis pero más grande y con mayor blindaje</i>||
+1007|<i>Una armadura muy avanzada capaz de alcanzar una velocidad y agilidad increíbles</i>||
+1008|<i>Redúcelo todo a cenizas.</i>||
+1009|La tecnología de camuflaje del espectro de luz hace que la unidad sea invisible durante {0} turnos. Mientras sea invisible, la unidad no puede ser atacada y no desencadenará ataques de reacción ni ataques al entrar en la zona de control.||
+1010|<i>Penetrar y despejar</i>||
+1011|<i>Nadie puede resistir semejante ataque</i>||
+1012|<i>Rápido y silenciosamente el avance T'au atraviesa el campo de batalla</i>||
+1013|<i>La muerte cae del cielo</i>||
+1014|<i>Experiencia nacida de incontables batallas</i>||
+1015|<i>No hay sitio donde esconderse</i>||
+1016|<i>Resistencia a través de todas las dificultades</i>||
+1017|<i>Los refuerzos han llegado</i>||
+1018|<i>Calculando soluciones de fuego</i>||
+1019|<i>Nadie sobrevivirá</i>||
+1020|<i>No puedes matar lo que no puedes ver</i>||
+1021|Inquebrantables en su dedicación. Implacables en su avance. El Imperio T'au es joven pero feroz y utiliza armamento avanzado e imponentes armaduras para barrer cualquier resistencia a su promesa de iluminación y unidad.||
+1022|Cancelar Jet-boost.||1.4.72 (22819)22864
+0|For the Emperor and Sanguinius!|Assault|Affirmative
+1|For the Emperor!|Assault|Affirmative
+2|On our way.|Assault|Movement
+3|With speed.|Assault|Movement
+4|Assault marines, ready.|Assault|Selection
+5|They shall know death!|Assault (Ranged)|Attack
+6|Sanguinius guide my sword.|Assault (Melee)|Attack
+7|For the Emperor!|Sgt Carleone|Affirmative
+8|I am his Sword.|Sgt Carleone|Affirmative
+9|They will not stop me.|Sgt Carleone|Movement
+10|We are the sons of Sanguinius.|Sgt Carleone|Selection
+11|My fury will be fast.|Sgt Carleone|Attack
+12|By the blood!|Assualt Marine|HitReaction
+13|Taking fire!|Shared ranged hit bark|HitReaction
+14|Sanguinius protect us.|Assault|HitReaction
+15|Vengeance will come swiftly.|Assault (Ally Death)|HitReaction
+16|With strength.|Aggressor bark|Affirmative
+17|Roger that.|Aggressor|
+18|Ready to strike.|Aggressor|
+19|To the sky, brothers!|Assault (Jump Pack)|Ability
+20|Throwing grenade!|Shared bark|Ability
+21|Speed and fury!|Assault (Assault Tactics)|Ability
+22|The swarm has no right to live!|Assault (Gaunts)|Rival
+23|The sky belongs to us!|Assault (Fliers)|Rival
+24|On the wings of the Angel.|Assault|Strategy
+25|We are the fury of Sanguinius.|Assault|Strategy
+26|The blood of Sanguinius flows in my veins.|Sgt Carleone|Strategy
+27|Victory for the Bloodblades. Victory for Skyfall.|Sgt Carleone|Strategy
+28|He is with us!|Sgt Carleone|Strategy
+29|Vanquish your doubts, brothers!|Sgt Carleone|Ability
+30|Sanguinius guides every strike.|Sgt Carleone|Ability
+31|Sanguinius stands with me!|Sgt Carleone|Ability
+32|My faith is my shield.|Sgt Carleone|HitReaction
+33|Contempt is my armour.|Sgt Carleone|HitReaction
+34|Honour them, brothers, that they died before they fell.|Sgt Carleone (Ally Death)|HitReaction
+35|Heavy fire support.|Aggressor|
+36|Forward!|Aggressor|
+37|Open fire!|Aggressor|
+38|This Tyrant shall know death by my hand.|Sgt Carleone (Hive Tyrant)|Rival
+39|No amount of carapace will save this abomination.|Sgt Carleone (Bio-titans)|Rival
+40|On my honour.|Lieutenant|
+41|Their death is our only option.|Lieutenant|
+42|I am the Sword of Sanguinius.|Lieutenant|
+43|There can only be victory.|Lieutenant|
+44|With haste.|Lieutenant|
+45|My vengeance will be final.|Lieutenant|
+46|You will fall before me.|Lieutenant|
+47|For the glory of Sanguinius!|Lieutenant|
+48|I await their mistake.|Lieutenant|
+49|A strategic step back.|Lieutenant|
+50|Leave no room for doubt, brothers!|Lieutenant|
+51|Sanguinius guides every strike!|Lieutenant|
+52|Hnnngh!|Lieutenant|
+53|(grunt)|Lieutenant|
+54|You will need more than that.|Lieutenant|
+55|The fury of Sanguinius flows through me!|Lieutenant|
+56|The enemy waits for us.|Lieutenant|
+57|On Baalfora I was born, and should the Emperor will it, on Baalfora I will die.|Lieutenant|
+58|We are the Bloodblades of Skyfall.|Assualt Marine|
+59|Sanguinius watches over us.|Lieutenant|
+60|(small Tyranid screech)||
+61|Your orders?||
+62|Moving.|Movement Bark|
+63|Engaging the enemy.||
+64|Their sacrifice will have meaning.||
+65|Avenge them, brothers!||
+66|I hear something.||
+67|With precision, brothers.||
+68|(large Tyranid screech)||
+69|We are the sons of Sanguinius.||
+70|We fight and we die for the Imperium.||
+71|Crush the enemies of the Imperium!||
+72|Of course.|Sang. Priest bark|
+73|My duty is service.|Sang. Priest bark|
+74|The blood waits.|Sang. Priest bark|
+75|I am ready to help.|Sang. Priest bark|
+76|I go where I am needed.|Sang. Priest bark|
+77|Whatever the Angel requires.|Sang. Priest bark|
+78|My chainsword thirsts for their blood.|Sang. Priest bark|
+79|Seek glory in the Angel's name!|Sang. Priest bark|
+80|They will fear to tread close.|Sang. Priest bark|
+81|I must protect His blood.|Sang. Priest bark|
+82|The blood is strong! Do not falter!|Sang. Priest bark|
+83|Come back to us! The Great Angel is not done with you yet.|Sang. Priest bark|
+84|We are just and righteous before the eyes of the Emperor!|Sang. Priest bark|
+85|Fear not the fury of the Great Angel, brothers! It is your right!|Sang. Priest bark|
+86|Agh!|Sang. Priest bark|
+87|The enemy thinks it can stay beyond our reach.||
+88|Hnnng!|Sang. Priest bark|
+89|For his blood, I will take the Chapter's due.|Sang. Priest bark|
+90|His blood invigorates me!|Sang. Priest bark|
+91|I hear them out there.|Sang. Priest bark|
+92|The blood of Sanguinius flows in my vein.|Sang. Priest bark|
+93|The Sanguinary Priesthood serves the will of the Chapter.|Sang. Priest bark|
+94|When the day is darkest, we prevail through control.|Sang. Priest bark|
+95|As you say.|TechMarine bark|
+96|Understood.|TechMarine bark|
+97|What needs fixing?|TechMarine bark|
+98|Techmarine, standing by.|TechMarine bark|
+99|On my way.|TechMarine bark|
+100|A couple of bolts to soften them up.|TechMarine bark|
+101|My axe hungers.|TechMarine bark|
+102|The might of the Omnissiah will destroy you!|TechMarine bark|
+103|I'll keep an eye out.|TechMarine bark|
+104|Damned pests!|TechMarine bark|
+105|Aye, we'll have you back up in no time.|TechMarine bark|
+106|Trust in your armour to turn their blades.|TechMarine bark|
+107|The Omnissiah will judge your acts.|TechMarine bark|
+108|They should fear my reach.|TechMarine bark|
+109|Agh!|TechMarine bark|
+110|We are the lords of the assault doctrine.|Assualt Marine bark|
+111|Closing distance!|Aggressor bark|
+112|I've had worse.|TechMarine bark|
+113|They failed their armour.|TechMarine bark|
+114|The power of the Omnissiah!|TechMarine bark|
+115|I can hear them skittering around out there.|TechMarine bark|
+116|Yet to meet a xenos my axe couldn't bisect.|TechMarine bark|
+117|Bring me your broken and your outworn, and I will repair them anew.|TechMarine bark|
+118|Confirmed.|Lib. Dread bark|
+119|My vigilance is eternal.|Lib. Dread bark|
+120|Grace through discipline.|Lib. Dread bark|
+121|My will never tires.|Lib. Dread bark|
+122|My power is yours to command.|Lib. Dread bark|
+123|They cannot stop me.|Lib. Dread bark|
+124|Firing on the target.|Lib. Dread bark|
+125|I have seen your death by my hands.|Lib. Dread bark|
+126|Fear me, for I am doom.|Lib. Dread bark|
+127|Forever watching.|Lib. Dread bark|
+128|Sanguinius protect you.|Lib. Dread bark|
+129|Sands shift beneath them.|Lib. Dread bark|
+130|My fury quickens.|Lib. Dread bark|
+131|Resistance detected.|Lib. Dread bark|
+132|Receiving fire.|Lib. Dread bark|
+133|I must resist.|Lib. Dread bark|
+134|We are honoured to witness their sacrifice.|Lib. Dread bark|
+135|I am fury! I am fire! I am death!|Lib. Dread bark|
+136|I sense a future adversary.|Lib. Dread bark|
+137|Only in death will my duty be completed.|Lib. Dread bark|
+138|Past, future; there is only service to the Emperor.|Lib. Dread bark|
+139|Strategically sound.|Primaris Librarian Bark|
+140|A wise course of action.|Primaris Librarian Bark|
+141|What is your plan?|Primaris Librarian Bark|
+142|My powers await your command.|Primaris Librarian Bark|
+143|They shall not pass.|Aggressor bark|
+144|Barely worth my time.|Primaris Librarian Bark|
+145|Clarity through bloodshed!|Primaris Librarian Bark|
+146|My sword sings doom.|Primaris Librarian Bark|
+147|Let them come.|Primaris Librarian Bark|
+148|I require distance.|Primaris Librarian Bark|
+149|Your vitae is your weakness.|Primaris Librarian Bark|
+150|Behold your damnation!|Primaris Librarian Bark|
+151|Strength from blood.|Primaris Librarian Bark|
+152|Sanguinius carries me.|Primaris Librarian Bark|
+153|Hnnng!|Primaris Librarian Bark|
+154|Hrfff!|Primaris Librarian Bark|
+155|Ack!|Primaris Librarian Bark|
+156|Each sacrifice is a step closer to victory.|Primaris Librarian Bark|
+157|The immaterium flows through me!|Primaris Librarian Bark|
+158|I sense the enemy.|Primaris Librarian Bark|
+159|The Librarium can assist you in this matter, if it must.|Primaris Librarian Bark|
+160|The warp is restless.|Primaris Librarian Bark|
+161|AAAAAAARRRGH!|Death Company Bark|
+162|MY FURY WILL NOT DIE!|Death Company Bark|
+163|(hyper-rage breathing)|Death Company Bark|
+164|I WILL SLAY THEM ALL!|Death Company Bark|
+165|THEY WILL TREMBLE BEFORE ME!|Death Company Bark|
+166|DEATH! DEATH!|Death Company Bark|
+167|(berserker yelling)|Death Company Bark|
+168|MY SWORD IS HATRED!|Death Company Bark|
+169|HRAAAAAAAAAA!|Death Company Bark|
+170|HRRRRGH!|Death Company Bark|
+171|Back up!|Aggressor Bark|
+172|YOU CANNOT STOP ME!|Death Company Bark|
+173|I WILL NOT DIE TO YOU!|Death Company Bark|
+174|I SEEK VENGEANCE!|Death Company Bark|
+175|FOR THE NINTH LEGION!|Death Company Bark|
+176|NOW! DEATH TO THEM NOW!|Death Company Bark|
+177|(rage roar)|Death Company Bark|
+178|MY BLADE FOR THE LORD EMPEROR!|Death Company Bark|
+179|Challenge accepted.|Inceptor Bark|
+180|Without hesitation.|Inceptor Bark|
+181|Inceptors waiting to launch.|Inceptor Bark|
+182|Heavy close support.|Inceptor Bark|
+183|Always forwards.|Inceptor Bark|
+184|Engaging target.|Inceptor Bark|
+185|Defensive zone set.|Inceptor Bark|
+186|Extracting.|Inceptor Bark|
+187|Jump packs activated.|Inceptor Bark|
+188|They will scatter beneath us.|Inceptor Bark|
+189|Hnnn!|Inceptor Bark|
+190|We stand strong.|Aggressor Bark|
+191|Huh!|Aggressor Bark|
+192|We have been engaged.|Inceptor Bark|
+193|I will be the thunder that echoes their names.|Inceptor Bark|
+194|We will descend upon them as meteors.|Inceptor Bark|
+195|Target is beyond my vision.|Inceptor Bark|
+196|We will fall upon them with righteous fury.|Inceptor Bark|
+197|Death from above!|Inceptor Bark|
+198|For the Imperium!|Hellblaster bark|
+199|We can handle it.|Hellblaster bark|
+200|Hellblasters, awaiting target.|Hellblaster bark|
+201|Plasma fire support ready.|Hellblaster bark|
+202|Moving into position.|Hellblaster bark|
+203|Target acquired.|Hellblaster bark|
+204|Overwatch set.|Hellblaster bark|
+205|Fall back!|Hellblaster bark|
+206|Plasma coils fully overcharged.|Hellblaster bark|
+207|Aaaagh!|Hellblaster bark|
+208|Under fire!|Aggressorbark|
+209|We are taking fire!|Hellblaster bark|
+210|The enemy has closed in.|Hellblaster bark|
+211|Patience, brothers. Their time will come.|Hellblaster bark|
+212|Ready for a target-rich environment.|Hellblaster bark|
+213|Potential targets detected.|Hellblaster bark|
+214|Fire support.|Hellblaster bark|
+215|Ranged plasma on your request.|Hellblaster bark|
+216|Affirmative.|Furioso Dreadnought bark|
+217|Confirmed.|Furioso Dreadnought bark|
+218|By your command.|Furioso Dreadnought bark|
+219|My duty remains.|Furioso Dreadnought bark|
+220|I await your orders.|Furioso Dreadnought bark|
+221|Destination confirmed.|Furioso Dreadnought bark|
+222|Opening fire.|Furioso Dreadnought bark|
+223|Death to all who oppose me.|Furioso Dreadnought bark|
+224|Their defiance fuels my hatred.|Furioso Dreadnought bark|
+225|Kill zone set.|Furioso Dreadnought bark|
+226|Deploying smoke screen.|Furioso Dreadnought bark|
+227|Frag bombardment commencing.|Furioso Dreadnought bark|
+228|Is that all?|Furioso Dreadnought bark|
+229|Hnnnh, heh!|Aggressor bark|
+230|Impedance acknowledged.|Furioso Dreadnought bark|
+231|Contact established.|Furioso Dreadnought bark|
+232|Our death is the price for the glory of the Imperium.|Furioso Dreadnought bark|
+233|My fury has woken.|Furioso Dreadnought bark|
+234|The enemy lurks in the shadows.|Furioso Dreadnought bark|
+235|Not even death will stop me.|Furioso Dreadnought bark|
+236|The Defensor Angelicum stands with you.|Furioso Dreadnought bark|
+237|Got it.|Land speeder bark|
+238|With speed.|Land speeder bark|
+239|Land Speeder crew, awaiting orders.|Land speeder bark|
+240|Anti-grav ready.|Land speeder bark|
+241|On the move.|Land speeder bark|
+242|Firing on the enemy.|Land speeder bark|
+243|Overwatch zone established.|Land speeder bark|
+244|Target locations acquired.|Land speeder bark|
+245|Hnnnn!|Land speeder bark|
+246|We are the vengeance that follows.|Aggressor bark|
+247|Come, brothers! Battle awaits!|Aggressor bark|
+248|We've been intercepted.|Land speeder bark|
+249|They died so that we can push forward.|Land speeder bark|
+250|Time to move.|Land speeder bark|
+251|Picked up movement on the auspex.|Land speeder bark|
+252|Ready for recon.|Land speeder bark|
+253|Need a scout?|Land speeder bark|
+254|Order confirmed.|Baal Predator bark|
+255|Aye.|Baal Predator bark|
+256|Predator crew, ready.|Baal Predator bark|
+257|Heavy armour, awaiting your orders.|Baal Predator bark|
+258|Rolling to position.|Baal Predator bark|
+259|Firing.|Baal Predator bark|
+260|Zone of denial established.|Baal Predator bark|
+261|Speed to match our fury.|Baal Predator bark|
+262|Taking hits.|Baal Predator bark|
+263|[generic hits]|Baal Predator bark|
+264|More targets are coming.|Aggressor bark|
+265|They test our armour.|Baal Predator bark|
+266|Their death will not be in vain.|Baal Predator bark|
+267|Unleash the Angel's wrath!|Baal Predator bark|
+268|Targets moving beyond range.|Baal Predator bark|
+269|We are the defenders of Baal.|Baal Predator bark|
+270|We are indomitable.|Baal Predator bark|
+271|Battleline squad ready.|Intercessor bark|
+272|We are the walls, we are the guns.|Aggressor bark|
+273|Engaging the enemy.||
+274|Overwatch!||
+275|Fend them off, brothers.||
+276|With precision, brothers.||
+277|(Tyranid screech)||
+278|Aaaagh!||
+279|Push them back!||
+280|They are numerous, but my fury is greater!|Death Company - Rival|
+281|Death to the unworthy!||
+282|** unused||
+283|For Sanguinius!||
+284|Yes.||
+285|Close combat support.||
+286|Crush them!||
+287|They will regret coming this close.||
+288|Put distance between us, brothers.||
+289|Always ready. Always vigilant.||
+290|My faith is strong.|Sister Superior/Verity bark|
+291|I will not fail.|Sister Superior/Verity bark|
+292|Who tests my conviction?|Sister Superior/Verity bark|
+293|The Emperor's light burns bright.|Sister Superior/Verity bark|
+294|In Katherine's footsteps..|Sister Superior/Verity bark|
+295|Purge the unclean!|Sister Superior/Verity bark|
+296|Hatred for the sinner!|Sister Superior/Verity bark|
+297|For the Emperor!|Sister Superior/Verity bark|
+298|I defy their existence.|Sister Superior/Verity bark|
+299|You are not worthy.|Sister Superior/Verity bark|
+300|Of Katherine and Celestine! Of Cesti and Praxedes!|Sister Superior/Verity bark|
+301|Fear has no place in our hearts, sisters, for the Emperor watches over us!|Sister Superior/Verity bark|
+302|I am the instrument of His divine will!|Sister Superior/Verity bark|
+303|Hrah!|Sister Superior/Verity bark|
+304|My faith is my shield.|Sister Superior/Verity bark|
+305|The Emperor protects.|Sister Superior/Verity bark|
+306|Rejoice, sisters! The Emperor knows their name now.|Sister Superior/Verity bark|
+307|My purpose shines brightly.|Sister Superior/Verity bark|
+308|Heretics surround us.|Sister Superior/Verity bark|
+309|I am the Imperium's shield.|Sister Superior/Verity bark|
+310|In every shadow I find heresy.|Sister Superior/Verity bark|
+311|The road of righteousness is soaked in the blood of the unworthy.|Sister Superior/Verity bark|
+312|See the beast rage in impotence! Its mewling tantrum will be for nought.|Sister Superior/Verity bark|
+313|I will see every last one of you exterminated.|Sister Superior/Verity bark|
+314|By His will.|Battle sister bark|
+315|Understood.|Battle sister bark|
+316|We are His shield indomitable.|Battle sister bark|
+317|Your command?|Battle sister bark|
+318|We follow His light.|Battle sister bark|
+319|Target engaged.|Battle sister bark|
+320|They shall never walk in the Emperor's light.|Battle sister bark|
+321|Fall back!|Battle sister bark|
+322|We carry divine vengeance.|Battle sister bark|
+323|** unused||
+324|Aaargh.|Battle sister bark|
+325|We are taking fire!|Battle sister bark|
+326|We will endure.|Battle sister bark|
+327|We are lifted by the blood of martyrs.|Battle sister bark|
+328|In Katherine's name!|Battle sister bark|
+329|I thought I saw something...|Battle sister bark|
+330|In righteous battle, liberation. In death, vindication.|Battle sister bark|
+331|We are the sisters of battle.|Battle sister bark|
+332|Cut them down!|Battle sister bark|
+333|Sever the head so that the body will fall.|Battle sister bark|
+334|No room for doubt.|Seraphim bark|
+335|Immediately.|Seraphim bark|
+336|Air support.|Seraphim bark|
+337|Where to next?|Seraphim bark|
+338|Try and stop me.|Seraphim bark|
+339|Take them down!|Seraphim bark|
+340|Forward vector covered.|Seraphim bark|
+341|Taking wing.|Seraphim bark|
+342|Packs engaged.|Seraphim bark|
+343|Balance and mastery.|Seraphim bark|
+344|Aah!|Seraphim bark|
+345|Evasive maneuvers!|Seraphim bark|
+346|We've been intercepted.|Seraphim bark|
+347|They fell so that we can rise.|Seraphim bark|
+348|My skills are unmatched.|Seraphim bark|
+349|I see movement in the distance.|Seraphim bark|
+350|I am the vanguard of the faith.|Seraphim bark|
+351|The skies are our domain.|Seraphim bark|
+352|Only the just may soar.|Seraphim bark|
+353|Command received.|Blood Angels Command Ability|CommandAbility
+354|Confirmed and enroute.|Blood Angels Command Ability|CommandAbility
+355|Stormraven enroute.|Blood Angels Command Ability|CommandAbility
+356|Targets aquired.|Blood Angels Command Ability|CommandAbility
+357|Assault squad ready for deep strike.|Blood Angels Command Ability|CommandAbility
+358|Stormstrike ready.|Blood Angels Command Ability|CommandAbility
+359|Thin their numbers! They will not overwhelm us.|Aggressor - Rivalry (Swarmers)|
+360|Shoot it! Crush it! Either way, it dies by my hands.|Aggressor - Rivalry (Warriors)|
+361|I've seen bigger.|Baal Predator - Rivalry (Exocrine)|
+362|Purge them! Suffer not the xenos to exist!|Baal Predator - Rivalry (Genestealer)|
+363|The beast dies today.|Furioso - Rivalry (Trygon)|
+364|The xenos' spines are for nought.|Furioso - Rivalry (Thornback)|
+365|Heh! Let's see how well that armour protects you.|Hellblaster - Rivalry (Armoured)|
+366|Kill it before it disappears!|Hellblaster - Rivalry (Trygon)|
+367|Leave nothing but stains beneath out feet.|Inceptor - Rivalry (Gaunts)|
+368|Only angels have the right to fly.|Inceptor - Rivalry (Gargoyle)|
+369|Death to the xenos swarm.|Intercessor - Rivalry (Gaunts)|
+370|Look past their haze, brothers.|Intercessor - Rivalry (Venomthrope)|
+371|Not even their flyers will outrun us.|Land Speeder - Rivalry (Gargoyle)|
+372|Lining up anti-swarm firing solution.|Land Speeder - Rivalry (Gaunts)|
+373|Your intelligence does not belong to you. Your death is of no consequence.|Librarian - Rivalry (Warriors)|
+374|Its mind is weak; a pebble to be crushed.|Librarian - Rivalry (Exocrine)|
+375|Every waking moment I face annihilation. You are nothing to me.|Librarian Dreadnought - Rivalry (Psykers)|
+376|The struggles of this synaptic creature are futile.|Librarian Dreadnought - Rivalry (Synaptic Leaders)|
+377|This tyrant shall know death by my hand.|Lieutenant - Rivalry (Hive Tyrant)|
+378|No amount of carapace will save this abomination.|Lieutenant - Armoured Nids|
+379|All that will be left of you is the stain of your spilled venom.|Sanguinary Priest - Rivalry (Venomthrope)|
+380|Your spawn will be purged! Your thrashings, symphony! Your death rattle, succor.|Sanguinary Priest - Rivalry (Tervigon)|
+381|No machine spirit protects you, cursed abomination.|Techmarine - Rivalry (Armoured Nid)|
+382|Pests! Damned pests everywhere!|Techmarine - Rivalry (Swarmers)|
+383|A powerful decision.|Assault Terminator - Affirmative|Affirmative
+384|Victory is inevitable.|Assault Terminator - Affirmative|Affirmative
+385|The Emperor is with us.|Assault Terminator - Selection|Selection
+386|Assault Terminators, ready for action.|Assault Terminator - Selection|Selection
+387|We are unstoppable.|Assault Terminator - Movement|Movement
+388|No mercy.|Assault Terminator - Attack Melee|Attack
+389|Terminators, charge!|Assault Terminator - Attack Charge|Attack
+390|Break distance!|Assault Terminator - Attack Fallback|Attack
+391|We are the fear that strikes at their hearts.|Assault Terminator - Ability Teleport|Ability
+392|We will not break!|Assault Terminator - Hit Reaction General|HitReaction
+393|Do not bow to their attacks!|Assault Terminator - Hit Reaction Ranged|HitReaction
+394|They wish to test their strength!|Assault Terminator - Hit Reaction Melee|HitReaction
+395|Break them on our shields!|Assault Terminator - Hit Reaction Shield|HitReaction
+396|I have seen hundreds fall before them.|Assault Terminator - Friendly Death|FriendlyDeath
+397|We will prevail!|Assault Terminator - Surge|Surge
+398|They will know death soon enough.|Assault Terminator - Enemy Detected|EnemyDetected
+399|Our presence here means we have already won.|Assault Terminator - Strategy|Strategy
+400|The Emperor's will lives through us.|Assault Terminator - Strategy|Strategy
+401|We return with our shields, or on them.|Assault Terminator - Strategy|Strategy
+402|They do not see their death coming for them.|Assault Terminator - Rival (Hive Guard)|Rival
+403|Tear through their armour, brothers!|Assault Terminator - Rival (Armoured)|Rival
+404|This abomination will not be allowed to stand.|Assault Terminator - Rival (Tervigon)|Rival
+405|Do not hesitate, brothers! Slay it!|Assault Terminator - Rival (Trygon)|Rival
+406|In mind, body and spirit.|Sanguinary Guard -  Affirmative|Affirmative
+407|Your will be done.|Sanguinary Guard - Affirmative|Affirmative
+408|Sanguinary Guard at your disposal.|Sanguinary Guard - Selection|Selection
+409|Sanguinius watch over us.|Sanguinary Guard - Selection|Selection
+410|With grace.|Sanguinary Guard - Movement|Movement
+411|With certainty.|Sanguinary Guard - Attack Melee|Attack
+412|Unleash devastation, brothers!|Sanguinary Guard - Attack Ranged|Attack
+413|Fall upon my blade!|Sanguinary Guard - Attack Charge|Attack
+414|A necessary tactic.|Sanguinary Guard - Attack Fallback|Attack
+415|Light the fires of angel wings!|Sanguinary Guard - Ability (Jump Pack)|Ability
+416|Our blood ignites!|Sanguinary Guard - Ability (Heirs of Azkaellon)|Ability
+417|I have faced better.|Sanguinary Guard - Hit Reaction General|HitReaction
+418|They challenge us from afar.|Sanguinary Guard - Hit Reaction Ranged|HitReaction
+419|They wish to duel!|Sanguinary Guard - Hit Reaction Melee|HitReaction
+420|They rest with our Father now.|Sanguinary Guard - Friendly Death|FriendlyDeath
+421|Our will is immutable! Our glory, inevitable! For Sanguinius!|Sanguinary Guard - Surge|Surge
+422|Let them hide in the shadows.|Sanguinary Guard - Enemy Detected|EnemyDetected
+423|We are the light and glory of Sanguinius!|Sanguinary Guard - Strategy|Strategy
+424|There is little left in this universe that I have not witnessed.|Sanguinary Guard - Strategy|Strategy
+425|There will be poetry to their deaths.|Sanguinary Guard - Strategy|Strategy
+426|There is power in the strength of their devotion.|Sanguinary Guard - Rival (Celestians, Lychguard)|Rival
+427|Give them the death they so eagerly seek.|Sanguinary Guard - Rival (Repentia, Genestealers)|Rival
+428|Put them out of their misery, brothers. Their minds are as fractured as their armour.|Sanguinary Guard - Rival (Destroyers)|Rival
+429|I have waited for this.|Overlord - Affirmative|Affirmative
+430|My will be done.|Overlord - Affirmative|Affirmative
+431|What?|Overlord - Selection|Selection
+432|My empire awakens.|Overlord - Selection|Selection
+433|An endless march.|Overlord - Movement|Movement
+434|You waste my time.|Overlord - Attack Ranged|Attack
+435|Kneel before me.|Overlord - Attack Melee|Attack
+436|You will yield!|Overlord - Attack Charge|Attack
+437|Do not approach me.|Overlord - Attack Overwatch|Attack
+438|Begone, insect.|Overlord - Attack Fallback|Attack
+439|I am beyond your abilities.|Overlord - Ability (Phase Shift)|Ability
+440|Awaken! The age of Necrons is nigh!|Overlord - Ability (Orb of Resurrection)|Ability
+441|Heed my mandate.|Overlord - Ability (Command Protocol)|Ability
+442|I walk between realities.|Overlord - Ability (Veil of Darkness)|Ability
+443|Hnnnng.|Overlord - Hit Reaction General|HitReaction
+444|[grunt]|Overlord - Hit Reaction General|HitReaction
+445|Pitiful.|Overlord - Hit Reaction Ranged|HitReaction
+446|You dare?|Overlord - Hit Reaction Melee|HitReaction
+447|When I command it, they will serve again.|Overlord - Friendly Death|FriendlyDeath
+448|Your stars will sunder before me!|Overlord - Surge|Surge
+449|They are correct to hide.|Overlord - Enemy Detected|EnemyDetected
+450|I have condemned stars to death.|Overlord - Strategy|Strategy
+451|Aeons have passed as we slept. And now we wake to these obscenities.|Overlord - Strategy|Strategy
+452|The full might of the dynasty is mine to control.|Overlord - Strategy|Strategy
+453|Entire galaxies have collapsed waiting for my return. You will barely leave a mark.|Overlord - Rival (LibDread, Tervigon)|Rival
+454|I have slain gods! You... are nothing.|Overlord - Rival (Lieutenant, Hive Tyrant)|Rival
+455|Destruction!|Plasmancer - Affirmative|Affirmative
+456|This power is yours.|Plasmancer - Affirmative|Affirmative
+457|You have a plan?|Plasmancer - Selection|Selection
+458|You require my counsel.|Plasmancer - Selection|Selection
+459|Wherever I walk, ruination follows.|Plasmancer - Movement|Movement
+460|A taste of my power!|Plasmancer - Attack Ranged|Attack
+461|Begone, annoyance!|Plasmancer - Attack Melee|Attack
+462|Annihilation!|Plasmancer - Attack Charge|Attack
+463|Let them come!|Plasmancer - Attack Overwatch|Attack
+464|Just a little step outside of the blast radius...|Plasmancer - Attack Fallback|Attack
+465|The heart of this singularity will collapse.|Plasmancer - Ability (Quantum Orb)|Ability
+466|Destruction before me!|Plasmancer - Ability (Harbinger of Destruction)|Ability
+467|Living lightning!|Plasmancer - Ability (Tesla Weave Discharge)|Ability
+468|[grunt]|Plasmancer - Hit Reaction General|HitReaction
+469|Hng!|Plasmancer - Hit Reaction General|HitReaction
+470|They're shooting! At me!|Plasmancer - Hit Reaction Ranged|HitReaction
+471|Such crude attempts.|Plasmancer - Hit Reaction Melee|HitReaction
+472|We'll use their energy another time.|Plasmancer - Friendly Death|FriendlyDeath
+473|Unfathomable power flows through me!|Plasmancer - Surge|Surge
+474|Come out into the open, so that I can destroy you.|Plasmancer - Enemy Detected|EnemyDetected
+475|Destroyer of worlds!|Plasmancer - Strategy|Strategy
+476|Near limitless energy, harnessed for your bidding.|Plasmancer - Strategy|Strategy
+477|Creation and destruction both require the same thing: energy.|Plasmancer - Strategy|Strategy
+478|You think you have power, but I will kill you with this energy alone!|Plasmancer - Rival (Librarian, Techmarine, Broodlord)|Rival
+479|Filth! Insects! Eradication!|Plasmancer - Rival (Hormagaunt, Genestealer)|Rival
+480|They will all die.|Hexmark Destroyer - Affirmative|Affirmative
+481|In progress.|Hexmark Destroyer - Affirmative|Affirmative
+482|You have targets?|Hexmark Destroyer - Selection|Selection
+483|I see all.|Hexmark Destroyer - Selection|Selection
+484|I seek a favourable position.|Hexmark Destroyer - Movement|Movement
+485|Death by my hands.|Hexmark Destroyer - Attack Ranged|Attack
+486|None will pass unseen.|Hexmark Destroyer - Attack Overwatch|Attack
+487|An optimal strategy.|Hexmark Destroyer - Attack Fallback|Attack
+488|Targets acquired.|Hexmark Destroyer - Ability (Multithreat Eliminator)|Ability
+489|Firing solutions optimised.|Hexmark Destroyer - Ability (Target Optimisation)|Ability
+490|Huh.|Hexmark Destroyer - Hit Reaction General|HitReaction
+491|They are returning fire.|Hexmark Destroyer - Hit Reaction Ranged|HitReaction
+492|Resistance encountered.|Hexmark Destroyer - Hit Reaction Melee|HitReaction
+493|They were weak.|Hexmark Destroyer - Friendly Death|FriendlyDeath
+494|None can survive my aim.|Hexmark Destroyer - Surge|Surge
+495|Hiding will not help them.|Hexmark Destroyer - Enemy Detected|EnemyDetected
+496|The purpose of all life is to die. I aim to help it along.|Hexmark Destroyer - Strategy|Strategy
+497|Murder, atrophy, misstep; you cannot outrun death.|Hexmark Destroyer - Strategy|Strategy
+498|Their numbers are their weakness.|Hexmark Destroyer - Rival (Swarms)|Rival
+499|You cannot dodge all six of your fates.|Hexmark Destroyer - Rival (Evasive)|Rival
+500|[Necron grunts]|Necron Warrior - General|Affirmative
+501|Confirmed.|Immortals - Affirmative|Affirmative
+502|We are endless.|Immortals - Affirmative|Affirmative
+503|Heavy fire support.|Immortals - Selection|Selection
+504|Immortals, awaiting command.|Immortals - Selection|Selection
+505|Progressing.|Immortals - Movement|Movement
+506|Firing on target.|Immortals - Attack Ranged|Attack
+507|Overwatch.|Immortals - Attack Overwatch|Attack
+508|Falling back.|Immortals - Attack Fallback|Attack
+509|Taking fire.|Immortals - Hit Reaction Ranged|HitReaction
+510|We are engaged.|Immortals - Hit Reaction Melee|HitReaction
+511|The fallen will rise again.|Immortals - Friendly Death|FriendlyDeath
+512|The Necron empire rises!|Immortals - Surge|Surge
+513|Hostile detected.|Immortals - Enemy Detected|EnemyDetected
+514|Our service is forever.|Immortals - Strategy|Strategy
+515|Our duty is war, and war has never changed.|Immortals - Strategy|Strategy
+516|Heavy target acquired.|Immortals - Rival (Baal Predator, Tfex)|Rival
+517|We serve.|Lychguard - Affirmative|Affirmative
+518|By your command.|Lychguard - Affirmative|Affirmative
+519|What is your will?|Lychguard - Selection|Selection
+520|Your guardians await.|Lychguard - Selection|Selection
+521|We move.|Lychguard - Movement|Movement
+522|A single strike.|Lychguard - Attack Melee|Attack
+523|Honour for the dynasty!|Lychguard - Attack Charge|Attack
+524|We have more important work to do.|Lychguard - Attack Fallback|Attack
+525|Our duty is to fall in their place.|Lychguard - Ability (Guardian Protocols)|Ability
+526|Our shields remain!|Lychguard - Ability (Dispersion Shield)|Ability
+527|Hrah!|Lychguard - Hit Reaction General|HitReaction
+528|Defensive formation!|Lychguard - Hit Reaction Ranged|HitReaction
+529|Their technique is crude.|Lychguard - Hit Reaction Melee|HitReaction
+530|We will honour their death with the bloodshed of their murderer.|Lychguard - Friendly Death|FriendlyDeath
+531|We are the protectors of aeons!|Lychguard - Surge|Surge
+532|We will meet them in combat, if they make it this far.|Lychguard - Enemy Detected|EnemyDetected
+533|We are the shields of the dynasty.|Lychguard - Strategy|Strategy
+534|None shall get past us.|Lychguard - Strategy|Strategy
+535|A worthy test of strength.|Lychguard - Rival (Assault Terminators, Thornback)|Rival
+536|Primitive fools.|Lychguard - Rival (ASM, gaunts)|Rival
+537|Yes.|Deathmark - Affirmative|Affirmative
+538|Efficient.|Deathmark - Affirmative|Affirmative
+539|Who is next on the list?|Deathmark - Selection|Selection
+540|Our targets wait.|Deathmark - Selection|Selection
+541|Tracking target.|Deathmark - Movement|Movement
+542|Death!|Deathmark - Attack Ranged|Attack
+543|Watching this area.|Deathmark - Attack Overwatch|Attack
+544|Falling back.|Deathmark - Attack Fallback|Attack
+545|Mark set. They will not escape.|Deathmark - Ability (Hunter's Mark)|Ability
+546|Repositioning.|Deathmark - Ability (Dimensional Oubliette)|Ability
+547|Hnnng.|Deathmark - Hit Reaction General|HitReaction
+548|Counterfire!|Deathmark - Hit Reaction Ranged|HitReaction
+549|Our position is compromised.|Deathmark - Hit Reaction Melee|HitReaction
+550|A necessary sacrifice.|Deathmark - Friendly Death|FriendlyDeath
+551|They cannot escape our aim.|Deathmark - Surge|Surge
+552|They cannot hide for long.|Deathmark - Enemy Detected|EnemyDetected
+553|The satisfaction of a perfect kill.|Deathmark - Strategy|Strategy
+554|They never see us coming.|Deathmark - Strategy|Strategy
+555|Shoot the crude guns from their hands.|Deathmark - Rival (Hellblasters, Hive Guard)|Rival
+556|Eliminating priority target.|Deathmark - Rival (Sanguinary Guard, Tyranid Prime)|Rival
+557|With authority.|Triarch Praetorian - Affirmative|Affirmative
+558|We agree.|Triarch Praetorian - Affirmative|Affirmative
+559|We serve the Triarch.|Triarch Praetorian - Selection|Selection
+560|Our duty is tireless.|Triarch Praetorian - Selection|Selection
+561|Our judgement will be swift.|Triarch Praetorian - Movement|Movement
+562|Face judgement!|Triarch Praetorian - Attack Ranged|Attack
+563|Submit!|Triarch Praetorian - Attack Melee|Attack
+564|We find this opponent worthy!|Triarch Praetorian - Attack Charge|Attack
+565|We will hold.|Triarch Praetorian - Attack Overwatch|Attack
+566|Distance is needed.|Triarch Praetorian - Attack Fallback|Attack
+567|Packs activated.|Triarch Praetorian - Ability (Gravity Displacement Pack)|Ability
+568|Hmmmmn.|Triarch Praetorian - Hit Reaction General|HitReaction
+569|They goad us.|Triarch Praetorian - Hit Reaction Ranged|HitReaction
+570|A worthy attempt.|Triarch Praetorian - Hit Reaction Melee|HitReaction
+571|While we stand, the dynasties shall never fall.|Triarch Praetorian - Friendly Death|FriendlyDeath
+572|Our authority is absolute!|Triarch Praetorian - Surge|Surge
+573|They will be judged, one way or another.|Triarch Praetorian - Enemy Detected|EnemyDetected
+574|As long as I stand, the ancient codes will be upheld.|Triarch Praetorian - Strategy|Strategy
+575|If the battle is worthy, we will be there.|Triarch Praetorian - Strategy|Strategy
+576|We have not failed our duty in sixty million years. Nor will we today.|Triarch Praetorian - Strategy|Strategy
+577|Put these misbegotten wretches in the ground.|Triarch Praetorian - Rival (Death Company, Genestealers)|Rival
+578|I have not slept in sixty million years.You are not so fearsome.|Triarch Praetorian - Rival (Broodlord)|Rival
+579|[manic necron sounds]|Flayed Ones - Affirmative|Affirmative
+580|... i hunger ....|Flayed Ones - Affirmative|Affirmative
+581|... fleeeesh? ....|Flayed Ones - Selection|Selection
+582|[manic necron hiss]|Flayed Ones - Selection|Selection
+583|[manic necron screech]|Flayed Ones - Attack Melee|Attack
+584|This skin is mine!|Flayed Ones - Attack Charge|Attack
+585|My skin! Mine!|Flayed Ones - Hit Reaction Melee|HitReaction
+586|meat. meat. meAT. MEAT!|Flayed Ones - Surge|Surge
+587|I smell ... fear.|Flayed Ones - Enemy Detected|EnemyDetected
+588|This hunger... hurts...|Flayed Ones - Strategy|Strategy
+589|So... much... meat...|Flayed Ones - Rival (Tfex, Tervigon)|Rival
+590|I thirst... their blood...|Flayed Ones - Rival (ASM, Intercessor, Hellblaster)|Rival
+591|It will be their deaths.|Skorpekh Destroyer - Affirmative|Affirmative
+592|Yes.|Skorpekh Destroyer - Affirmative|Affirmative
+593|Whose life do we end next?|Skorpekh Destroyer - Selection|Selection
+594|My purpose is slaughter.|Skorpekh Destroyer - Selection|Selection
+595|I carry death with me.|Skorpekh Destroyer - Movement|Movement
+596|Kill! Kill! Kill!|Skorpekh Destroyer - Attack Melee|Attack
+597|Death!|Skorpekh Destroyer - Attack Charge|Attack
+598|A macabre dance.|Skorpekh Destroyer - Attack Fallback|Attack
+599|All! Is! Death!|Skorpekh Destroyer - Ability (Plasmacyte Infusion)|Ability
+600|Hrrrrn.|Skorpekh Destroyer - Hit Reaction General|HitReaction
+601|Come closer, that I may kill you.|Skorpekh Destroyer - Hit Reaction Ranged|HitReaction
+602|A feeble attempt.|Skorpekh Destroyer - Hit Reaction Melee|HitReaction
+603|All death is progress.|Skorpekh Destroyer - Friendly Death|FriendlyDeath
+604|Nothing shall remain!|Skorpekh Destroyer - Surge|Surge
+605|Another life to extinguish.|Skorpekh Destroyer - Enemy Detected|EnemyDetected
+606|When nothing remains, my work will finally be complete.|Skorpekh Destroyer - Strategy|Strategy
+607|I will cut them down where they stand.|Skorpekh Destroyer - Strategy|Strategy
+608|Your biology is your weakness.|Skorpekh Destroyer - Rival (Exocrine, Aggressors)|Rival
+609|A glorious reaping!|Skorpekh Destroyer - Rival (Gaunts, Intercessors)|Rival
+610|Processing.|Lokhust Heavy Destroyer - Affirmative|Affirmative
+611|Acknowledged.|Lokhust Heavy Destroyer - Affirmative|Affirmative
+612|Artillery.|Lokhust Heavy Destroyer - Selection|Selection
+613|The sound of our guns will herald their death.|Lokhust Heavy Destroyer - Selection|Selection
+614|Setting position.|Lokhust Heavy Destroyer - Movement|Movement
+615|Firing.|Lokhust Heavy Destroyer - Attack Ranged|Attack
+616|Barrage zone set.|Lokhust Heavy Destroyer - Attack Overwatch|Attack
+617|More distance is required.|Lokhust Heavy Destroyer - Attack Fallback|Attack
+618|Hrrrph.|Lokhust Heavy Destroyer - Hit Reaction General|HitReaction
+619|Taking fire.|Lokhust Heavy Destroyer - Hit Reaction Ranged|HitReaction
+620|Engaged.|Lokhust Heavy Destroyer - Hit Reaction Melee|HitReaction
+621|Inevitable.|Lokhust Heavy Destroyer - Friendly Death|FriendlyDeath
+622|Prepare for devastation.|Lokhust Heavy Destroyer - Surge|Surge
+623|Targets detected.|Lokhust Heavy Destroyer - Enemy Detected|EnemyDetected
+624|Long distance eradication.|Lokhust Heavy Destroyer - Strategy|Strategy
+625|Personality engrams have been redistributed to target aquisition.|Lokhust Heavy Destroyer - Strategy|Strategy
+626|This primitive form knows death well.|Lokhust Heavy Destroyer - Rival (Exocrine, Dreadnought)|Rival
+627|I will obliterate this node from their network.|Lokhust Heavy Destroyer - Rival (Tyranid Warriors)|Rival
+628|[robotic swarm chittering]|Canoptek Scarab Swarm - Affirmative|Affirmative
+629|Hyperlogic agreed.|Tomb Blade - Affirmative|Affirmative
+630|Makes sense.|Tomb Blade - Affirmative|Affirmative
+631|Aerial scouts.|Tomb Blade - Selection|Selection
+632|Tomb Blades.|Tomb Blade - Selection|Selection
+633|Already on our way.|Tomb Blade - Movement|Movement
+634|Attack vector true.|Tomb Blade - Attack Ranged|Attack
+635|Defense vector override.|Tomb Blade - Attack Overwatch|Attack
+636|Continue engagement false.|Tomb Blade - Attack Fallback|Attack
+637|Evasive function.|Tomb Blade - Ability (Evasive Engram)|Ability
+638|Nebuloscope engaged.|Tomb Blade - Ability (Nebuloscope)|Ability
+639|Hsssssh.|Tomb Blade - Hit Reaction General|HitReaction
+640|I've been marked.|Tomb Blade - Hit Reaction Ranged|HitReaction
+641|Disrupted.|Tomb Blade - Hit Reaction Melee|HitReaction
+642|Friendly down.|Tomb Blade - Friendly Death|FriendlyDeath
+643|I won't be slowed!|Tomb Blade - Surge|Surge
+644|Another target to seek.|Tomb Blade - Enemy Detected|EnemyDetected
+645|No obstacle will get in my way.|Tomb Blade - Strategy|Strategy
+646|They can't hit what they can't keep up with.|Tomb Blade - Strategy|Strategy
+647|Activating counter-scout protocols.|Tomb Blade - Rival (Land Speeder, Gargoyle)|Rival
+648|Executing pre-emptive strike.|Tomb Blade - Rival (Exocrine, Baal Predator)|Rival
+649|Updating calculations.|Annihilation Barge - Affirmative|Affirmative
+650|Directive set.|Annihilation Barge - Affirmative|Affirmative
+651|Annilihation Barge, awaiting your directive.|Annihilation Barge - Selection|Selection
+652|Waiting.|Annihilation Barge - Selection|Selection
+653|Plotting movement.|Annihilation Barge - Movement|Movement
+654|Firing.|Annihilation Barge - Attack Ranged|Attack
+655|Annihilation waits for them.|Annihilation Barge - Attack Overwatch|Attack
+656|Making clearance.|Annihilation Barge - Attack Fallback|Attack
+657|Quantum shields active.|Annihilation Barge - Hit Reaction General|HitReaction
+658|[concerned hmm]|Annihilation Barge - Hit Reaction General|HitReaction
+659|Taking fire.|Annihilation Barge - Hit Reaction Ranged|HitReaction
+660|Taking hits.|Annihilation Barge - Hit Reaction Melee|HitReaction
+661|They will be back.|Annihilation Barge - Friendly Death|FriendlyDeath
+662|Power flux redirected to hyperlogic capacitor.|Annihilation Barge - Surge|Surge
+663|Activity detected out of range.|Annihilation Barge - Enemy Detected|EnemyDetected
+664|A path of annihilation awaits.|Annihilation Barge - Strategy|Strategy
+665|High probability of quantum deflection.|Annihilation Barge - Strategy|Strategy
+666|Targets are swarming together. Fools.|Annihilation Barge - Rival (Gaunts, Genestealers)|Rival
+667|The insects think that armour will help.|Annihilation Barge - Rival (Baal Predator, Rhino, Immolator)|Rival
+668|Eradication orders confirmed.|Doom Scythe - Command Ability General|CommandAbility
+669|Extermination protocol activated.|Doom Scythe - Command Ability General|CommandAbility
+670|Air support incoming.|Doom Scythe - Command Ability General|CommandAbility
+671|Unleashing Tesla Destructors.|Doom Scythe - Command Ability Tesla Lightning Storm|CommandAbility
+672|They will suffer a death of a thousand cuts.|Doom Scythe - Command Ability Scarab Tempest|CommandAbility
+673|Their doom is imminent.|Doom Scythe - Command Ability Scything Death Ray|CommandAbility
+674|[tortured wailing]|Pentient Engine - Affirmative|
+675|Emperor... watch me...|Penitent Engine - Affirmative|
+676|[pained moan]|Penitent Engine - Selection|
+677|I seek... His light...|Penitent Engine - Selection|
+678|[pained moan]|Penitent Engine - Movement|
+679|[scream]|Penitent Engine - Attack|
+680|[higher intensity scream]|Penitent Engine - Charge|
+681|... not like this ...|Penitent Engine - Fallback|
+682|[higher intensity moaning]|Penitent Engine - Ability (Torment Amplifiers)|
+683|[pained groan]|Penitent Engine - Hit Reaction|
+684|[pained grunt]|Penitent Engine - Hit Reaction|
+685|[multiple pained grunts]|Penitent Engine - Hit Reaction|
+686|End this torment!|Penitent Engine - Hit Reaction|
+687|Emperor witness me!|Penitent Engine - Surge|
+688|This heresy... shall burn!|Penitent Engine - Adversary|
+689|Absolution... through... death!|Penitent Engine - Adversary|
+690|Their blood will flow.|Bloodmaster - Affirmative|
+691|Khorne wills it so.|Bloodmaster - Affirmative|
+692|I am the Bloodmaster.|Bloodmaster - Selection|
+693|Violence and death.|Bloodmaster - Selection|
+694|Forward!|Bloodmaster - Movement|
+695|Blood for the Blood God!|Bloodmaster - Attack|
+696|SKULLS FOR THE SKULL THRONE!|Bloodmaster- Attack|
+697|[dismissive grunt]|Bloodmaster - Fallback|
+698|Wrath and rage!|Bloodmaster - Ability|
+699|Heed the call of the Axefather!|Bloodmaster - Ability|
+700|[generic grunt]|Bloodmaster - Hit Reaction|
+701|Pitiful.|Bloodmaster - Hit Reaction|
+702|Khorne cares not!|Bloodmaster - Hit Reaction|
+703|Blood shall flow!|Bloodmaster - Hit Reaction|
+704|Malice eternal! Blood and skulls!|Bloodmaster - Surge|
+705|All who pass my gaze will be blood tribute.|Bloodmaster - Enemy Detected|
+706|Khorne cares not from whence the blood flows.|Bloodmaster - Strategic|
+707|I do not tire while blood remains unsplit.|Bloodmaster - Strategic|
+708|My sword will claim your skull.|Bloodmaster - Strategic|
+709|Your Corpse God is pitiful.|Bloodmaster - Adversary|
+710|Give in to your blood! Defy your dead Angel!|Bloodmaster - Adversary|
+711|For Khorne!|Bloodletter - Affirmative|
+712|[daemonic roar]|Bloodletter - Affirmative|
+713|Death.|Bloodletter - Selection|
+714|[daemonic growl]|Bloodletter - Selection|
+715|Towards the slaughter.|Bloodletter - Movement|
+716|Kill! Kill! Kill!|Bloodletter - Attack|
+717|Slay them!|Bloodletter - Attack|
+718|[daemonic growl]|Bloodletter - Attack|
+719|[generic grunt]|Bloodletter - Hit Reaction|
+720|[daemonic growl]|Bloodletter - Hit Reaction|
+721|[daemonic grunt]|Bloodletter - Hit Reaction|
+722|Skulls for the Skull Throne!|Bloodletter - Friendly Death|
+723|Tear their flesh! Spill their blood!|Bloodletter - Surge|
+724|[daemonic dog growl]|Flesh Hound|
+725|[daemonic dog bark]|Flesh Hound|
+726|[daemonic dog howl]|Flesh Hound|
+727|[daemonic dog grumble]|Flesh Hound|
+728|[daemonic dog growl and snapping]|Flesh Hound|
+729|[daemonic dog howl and bark]|Flesh Hound|
+730|[daemonic dog grunt and bark]|Flesh Hound|
+731|[daemonic dog uber howl]|Flesh Hound|
+732|[daemonic dog sniffing]|Flesh Hound|
+733|[daemonic dog huffing with sadistic glee]|Flesh Hound|
+734|[daemonic dog eager howling]|Flesh Hound|
+735|For Khorne!|Skull Cannon - Affirmative|
+736|[daemon engine growl]|Skull Cannon - Affirmative|
+737|[daemon engine snarl] Skulls.|Skull Cannon - Selection|
+738|[daemon engine roar]|Skull Cannon - Selecton|
+739|The bloody feast awaits.|Skull Cannon - Movement|
+740|More blood for the Blood God!|Skull Cannon - Attack|
+741|The wheels crush! [daemon engine roar]|Skull Cannon - Attack|
+742|Rage unabated.|Skull Cannon - Attack|
+743|[daemonic engine grunt]|Skull Cannon - Hit Reaction|
+744|[daemon engine groan]|Skull Cannon - Hit Reaction|
+745|Blood from afar!|Skull Cannon - Hit Reaction|
+746|Flesh at the teeth!|Skull Cannon - Hit Reaction|
+747|MAIM! KILL! BURN! [daemon engine uber-roar]|Skull Cannon - Surge|
+748|Skulls! Skulls!! SKULLS!!|Skull Cannon - Strategy|
+749|Their limbs shall be a feast. [daemon engine growl]|Skull Cannon - Strategy|
+750|A beast of indiscriminate murder. [daemon engine snarl]|Skull Cannon - Adversary|
+751|Khorne demands destruction!|Skull Cannon - Adversary|
+752|As He wills it, so it shall be.|Cannoness|Affirmative
+753|With faith!|Cannoness|Affirmative
+754|I am His iron will.|Cannoness|Selection
+755|For Katherine, for eternity.|Cannoness|Selection
+756|I walk in His light.|Cannoness|Movement
+757|Show no mercy to the unrighteous.|Cannoness|Attack
+758|My blade will mete out His mighty judgement.|Cannoness|Attack
+759|The Emperor demands your death!|Cannoness|Attack
+760|Come near me, and the Emperor will smite you.|Cannoness|Attack
+761|Repositioning.|Cannoness|Attack
+762|The emperors light fills our souls.|Cannoness|Ability
+763|Blessed are we that walk with the Emperor!|Cannoness|Ability
+764|This evil must be expunged from the galaxy!|Cannoness|Ability
+765|Your foul presence will be tolerated no more!|Cannoness|Ability
+766|[general grunt]|Cannoness|Hit Reaction
+767|Hrrnhh.|Cannoness|Hit Reaction
+768|Your heresy only lends me the strength, so that I might kill you!|Cannoness|Hit Reaction
+769|I will die ONLY when the Emperors wills it.|Cannoness|Hit Reaction
+770|Walk now, with the Emperor.|Cannoness|Friendly Death
+771|Glory, glory in His name!|Cannoness|Surge
+772|Suffer not the heretic.|Cannoness|Enemy Detected
+773|Until my dying breath, I will bring the Emperors light to the darkest corners of the galaxy.|Cannoness|Strategic
+774|Contempt for the sinner!|Cannoness|Strategic
+775|Go back to the Warp!|Cannoness|Adversary
+776|Without doubt.|Celestian|Affirmative
+777|As you command.|Celestian|Affirmative
+778|With faith we serve.|Celestian|Selection
+779|We are invincible in His light.|Celestian|Selection
+780|Faith guides my feet to walk the righteous path.|Celestian|Movement
+781|There is no light, but the light of the Emperor!|Celestian|Attack
+782|Heretics, mutants, xenos, we will purge them all.|Celestian|Attack
+783|Our resolve is strong!|Celestian|Attack
+784|We gladly give our lives for the Order.|Celestian|Ability
+785|(general grunt)|Celestian|Hit Reaction
+786|Hrrn.|Celestian|Hit Reaction
+787|We are taking fire!|Celestian|Hit Reaction
+788|We have been engaged!|Celestian|Hit Reaction
+789|He now knows their name.|Celestian|Friendly Death
+790|I am His mighty instrument of death!|Celestian|Surge
+791|Vigilance Sisters, the unworthy approach us.|Celestian|Enemy Detected
+792|Our service is eternal.|Celestian|Strategic
+793|Katherine, guide our footsteps, that we should follow your path.|Celestian|Strategic
+794|Your foul taint will spread no further!|Celestian|Adversary
+795|It will be done.|Retributors|Affirmative
+796|We're on it!|Retributors|Affirmative
+797|What is your command?|Retributors|Selection
+798|Heavy weapons, ready!|Retributors|Selection
+799|We move to execute the unclean.|Retributors|Movement
+800|Purge these abominations!|Retributors|Attack
+801|They will die if they approach.|Retributors|Attack
+802|Falling back.|Retributors|Attack
+803|Submit now to the Emperor's judgement!!|Retributors|Ability
+804|[generic grunt]|Retributors|Hit Reaction
+805|Hrrrnnn.|Retributors|Hit Reaction
+806|Is that all you've got?|Retributors|Hit Reaction
+807|By His light, we shall endure.|Retributors|Hit Reaction
+808|We honour the martyrs.|Retributors|Friendly Death
+809|By holy fire, we do His work.|Retributors|Surge
+810|The enemy comes, we must be ready.|Retributors|Enemy Detected
+811|If the sinner will not reform their ways, we will purge them from existance!|Retributors|Strategic
+812|There is no problem in this galaxy our firepower cannot solve.|Retributors|Strategic
+813|This foul abomination will be purged by holy fire!|Retributors|Adversary
+814|So it will be.|Sacresants|Affirmative
+815|As you command.|Sacresants|Affirmative
+816|What is your will?|Sacresants|Selection
+817|We serve.|Sacresants|Selection
+818|We seek His enemies.|Sacresants|Movement
+819|We are His judgement.|Sacresants|Attack
+820|Death to all sinners!|Sacresants|Attack
+821|We must regroup.|Sacresants|Attack
+822|Our shields shall protect the worthy.|Sacresants|Ability
+823|(generic grunt)|Sacresants|Hit Reaction
+824|Hrrnnnn.|Sacresants|Hit Reaction
+825|My faith protects me, as much as my power armour.|Sacresants|Hit Reaction
+826|None can harm me whilst I walk with the Emperor.|Sacresants|Hit Reaction
+827|Go, take your place as His right hand!|Sacresants|Friendly Death
+828|By my faith in the Emperor, I cannot be stopped.|Sacresants|Surge
+829|Prepare yourselves sisters, the heretics scout us.|Sacresants|Enemy Detected
+830|We are resolute protectors of the faith.|Sacresants|Strategic
+831|The weak deserve no mercy.|Sacresants|Strategic
+832|These creatures are truly disgusting!|Sacresants|Adversary
+833|Conviction is the greatest armour.|Sister Repentia|Affirmative
+834|Affirmative.|Sister Repentia|Affirmative
+835|Our lives are the Emperors to spend.|Sister Repentia|Selection
+836|In penance, we seek redemption.|Sister Repentia|Selection
+837|Closer to redemption or closer to death, whichever He favours.|Sister Repentia|Movement
+838|My Eviscerator is His judgement.|Sister Repentia|Attack
+839|I will cleave all heresy in my path!|Sister Repentia|Attack
+840|Repositioning so we might better punish His enemies.|Sister Repentia|Attack
+841|Emperor, see these deeds we do in your name!|Sister Repentia|Ability
+842|[general grunt]|Sister Repentia|Hit Reaction
+843|Hrrrnn.|Sister Repentia|Hit Reaction
+844|Suffering is our prayer.|Sister Repentia|Hit Reaction
+845|Your attack only brings me redemption.|Sister Repentia|Hit Reaction
+846|What could be more noble than death in His service?|Sister Repentia|Friendly Death
+847|Penance will be my reward.|Sister Repentia|Surge
+848|Be alert, His enemies approach.|Sister Repentia|Enemy Detected
+849|My life, for the Lord Emperor!|Sister Repentia|Strategic
+850|If my death is the currency of repentance, I paid it with a joyous heart.|Sister Repentia|Strategic
+851|Gaaahh!|Arco-flagellant|Affirmative
+852|[frenzied wailing]|Arco-flagellant|Affirmative
+853|[angry wailing]|Arco-flagellant|Selection
+854|[pained moan]|Arco-flagellant|Selection
+855|Aargghh.|Arco-flagellant|Movement
+856|Must..kill...them.|Arco-flagellant|Attack
+857|Give me deeaaattthhhhh!|Arco-flagellant|Attack
+858|Aaarrrrgggghhhh.|Arco-flagellant|Ability
+859|[Generic grunt]|Arco-flagellant|Hit Reaction
+860|Hnnnrrhh.|Arco-flagellant|Hit Reaction
+861|[pained moan]|Arco-flagellant|Hit Reaction
+862|[pained moan]|Arco-flagellant|Hit Reaction
+863|Emperor, take me next!|Arco-flagellant|Friendly Death
+864|We seek His light.|Arco-flagellant|Surge
+865|Let...us...at...them!|Arco-flagellant|Enemy Detected
+866|I serve Him with a gracious heart.|Sister Hospitaller|Affirmative
+867|So it shall be.|Sister Hospitaller|Affirmative
+868|Who needs my aid?|Sister Hospitaller|Selection
+869|Yes?|Sister Hospitaller|Selection
+870|With haste.|Sister Hospitaller|Movement
+871|Your festering soul will burn!|Sister Hospitaller|Attack
+872|I stand ready.|Sister Hospitaller|Attack
+873|I must disengage.|Sister Hospitaller|Attack
+874|By His light, you are made whole again.|Sister Hospitaller|Ability
+875|Go forth Sister, you are His will made flesh!|Sister Hospitaller|Ability
+876|(general grunt)|Sister Hospitaller|Hit Reaction
+877|Hrrnnnn.|Sister Hospitaller|Hit Reaction
+878|Emperor, protect your humble servant.|Sister Hospitaller|Hit Reaction
+879|You will have to try harder than that!|Sister Hospitaller|Hit Reaction
+880|Rest in peace, your duty is complete.|Sister Hospitaller|Friendly Death
+881|The Emperors light fills my soul.|Sister Hospitaller|Surge
+882|Putrid is the sinner that comes this way.|Sister Hospitaller|Enemy Detected
+883|To the holy, I bring healing. To the unclean, I bring death.|Sister Hospitaller|Strategic
+884|Your very existence is a perversion, you must be destroyed!|Sister Hospitaller|Adversary
+885|Yes!|Sororitas Rhino|Affirmative
+886|At once.|Sororitas Rhino|Affirmative
+887|Transport, awaiting command.|Sororitas Rhino|Selection
+888|Rhino, ready.|Sororitas Rhino|Selection
+889|Into battle!|Sororitas Rhino|Movement
+890|Destroy them, and move swiftly onwards.|Sororitas Rhino|Attack
+891|Let them come!|Sororitas Rhino|Attack
+892|Confound His enemies.|Sororitas Rhino|Ability
+893|They test our resolve!|Sororitas Rhino|Hit Reaction
+894|They are no match for our armour.|Sororitas Rhino|Hit Reaction
+895|Under fire.|Sororitas Rhino|Hit Reaction
+896|They challenge us.|Sororitas Rhino|Hit Reaction
+897|Rejoice, they died in His service.|Sororitas Rhino|Friendly Death
+898|Unleash the Emperor's wrath!|Sororitas Rhino|Surge
+899|Targets moving outside our weapons range.|Sororitas Rhino|Enemy Detected
+900|Forward into battle, we carry the hopes of the Imperium.|Sororitas Rhino|Strategic
+901|Affirmative!|Exorcist|Affirmative
+902|Confirmed.|Exorcist|Affirmative
+903|What shall we purge next?|Exorcist|Selection
+904|Ready for combat.|Exorcist|Selection
+905|Seeking an optimal firing position.|Exorcist|Movement
+906|With these holy weapons, we shall destroy His enemies!|Exorcist|Attack
+907|If they approach, we will break them.|Exorcist|Attack
+908|None can resist the will of the Emperor!|Exorcist|Ability
+909|Rain death upon the heretic.|Exorcist|Ability
+910|Taking hits.|Exorcist|Hit Reaction
+911|The enemy is attacking, stand fast.|Exorcist|Hit Reaction
+912|We are taking fire.|Exorcist|Hit Reaction
+913|His light is my strongest armour.|Exorcist|Hit Reaction
+914|Death is the price for the glory of the Imperium.|Exorcist|Friendly Death
+915|Neither heretic nor xenos will stand before us!|Exorcist|Surge
+916|Be watchful sisters, the enemy is near.|Exorcist|Enemy Detected
+917|Let the enemy come, for our aim and our resolve is ever unwavering!|Exorcist|Strategic
+918|This heresy must be destroyed!|Exorcist|Adversary
+919|The unclean shall burn.|Immolator|Affirmative
+920|In service there is life, and truth.|Immolator|Affirmative
+921|Fire, and fury!|Immolator|Selection
+922|Standing by.|Immolator|Selection
+923|Moving into position.|Immolator|Movement
+924|With bolter, melta and flamer, we purge the unclean.|Immolator|Attack
+925|None shall pass!|Immolator|Attack
+926|Enemy contact!|Immolator|Hit Reaction
+927|They test us!|Immolator|Hit Reaction
+928|We are taking hits.|Immolator|Hit Reaction
+929|Their feeble attacks will be no match for our armour.|Immolator|Hit Reaction
+930|They will not be forgotten.|Immolator|Friendly Death
+931|We will not stop until the galaxy is cleansed of this filth!|Immolator|Surge
+932|The enemy scouts our position.|Immolator|Enemy Detected
+933|In the cleansing fires of faith, we smite the sinners.|Immolator|Strategic
+934|The holy radiance burns within me.|Paragon Warsuit|Affirmative
+935|As you wish.|Paragon Warsuit|Affirmative
+936|None shall best me.|Paragon Warsuit|Selection
+937|With faith, we will conquer the galaxy.|Paragon Warsuit|Selection
+938|Our duty awaits at the front.|Paragon Warsuit|Movement
+939|Without mercy.|Paragon Warsuit|Attack
+940|The weak willed will fall before me.|Paragon Warsuit|Attack
+941|Aaarrrgggghhhh!|Paragon Warsuit|Attack
+942|Death awaits His foes that stray too close.|Paragon Warsuit|Attack
+943|Regrouping!|Paragon Warsuit|Attack
+944|Burn heretic, burn!|Paragon Warsuit|Ability
+945|(General grunt)|Paragon Warsuit|Hit Reaction
+946|Hrrnn.|Paragon Warsuit|Hit Reaction
+947|Huh! You are unworthy of His light.|Paragon Warsuit|Hit Reaction
+948|We cannot be stopped!|Paragon Warsuit|Hit Reaction
+949|We honour their sacrifice.|Paragon Warsuit|Friendly Death
+950|His Divine light shines within me!|Paragon Warsuit|Surge
+951|Fresh targets seek the Emperors judgement.|Paragon Warsuit|Enemy Detected
+952|Into battle, we march!|Paragon Warsuit|Strategic
+953|We bring the Emperors truth to the galaxy.|Paragon Warsuit|Strategic
+954|[angry daemonic roar]|Bloodthirster|Hit Reaction
+955|[daemonic growl]|Bloodthirster|Hit Reaction
+956|Pathetic being!|Bloodthirster|Hit Reaction
+957|Blood, yes! More blood for Khorne!|Bloodthirster|Hit Reaction
+958|[daemonic growl]|Bloodcrusher|Hit Reaction
+959|[generic grunt]|Bloodcrusher|Hit Reaction
+960|[daemonic grunt]|Bloodcrusher|Hit Reaction
+961|[daemonic roar]|Bloodcrusher|Hit Reaction
+962|[daemonic growl]|Soul Grinder|Hit Reaction
+963|[generic grunt]|Soul Grinder|Hit Reaction
+964|[daemonic grunt]|Soul Grinder|Hit Reaction
+965|[daemonic roar]|Soul Grinder|Hit Reaction
+966|I's gotta kunnin' plan.|Warboss|Affirmative
+967|I's dont need ta be da smartest, just da biggest!|Warboss|Affirmative
+968|We woz made ta fight, so letz fight.|Warboss|Selection
+969|Orks always win! Even wen we don't.|Warboss|Selection
+970|Let's get movin'!|Warboss|Movement
+971|WAAAGH!|Warboss|Attack
+972|Comin' dis way will get 'em killed.|Warboss|Attack
+973|Da boss don't run. Dis is, uh, taktics.|Warboss|Attack
+974|Dis iz more like it!|Warboss|Attack
+975|WAAAGH me!|Warboss|Attack
+976|Howz about I gives yer a bit o' boom?!|Warboss|Ability
+977|Ooz feelin' 'ungry? Yooz feelin' ungry!|Warboss|Ability
+978|Okay, ya little runt, go on, 'ave a nibble.|Warboss|Ability
+979|[Ork pained roar]|Warboss|Hit Reaction
+980|Iz dat all youse got!!?|Warboss|Hit Reaction
+981|What a paffetic little shoota.|Warboss|Hit Reaction
+982|Didn't feel a fing.|Warboss|Hit Reaction
+983|[Orkish belly laugh]|Warboss|Friendly Death
+984|WAAAGH!|Warboss|Surge
+985|I smell me somfin' punie!|Warboss|Enemy Detected
+986|Fightin' iz da best. Nuffin' betta dan fitein'.|Warboss|Strategic
+987|Bashin' first, finkin' secund.|Warboss|Strategic
+988|Dem fancy gubbins won’t 'elp ya.|Warboss|Adversary
+989|Yezzzzz, Bozzzzzz!|Weirdboy|Affirmative
+990|Wozzzit?|Weirdboy|Affirmative
+991|Da old wayz iz best.|Weirdboy|Selection
+992|I noes yew iz lookin' at me.|Weirdboy|Selection
+993|What now?|Weirdboy|Movement
+994|Save da weirdboyz and grots furst!|Weirdboy|Attack
+995|Eat my WAAAGH!|Weirdboy|Attack
+996|Love crumping. But iz dis a gud idea?|Weirdboy|Attack
+997|Edz-a-poppppin!|Weirdboy|Ability
+998|Gork iz wiv uz! WAAAGH!|Weirdboy|Ability
+999|Ow, me eyez!|Weirdboy|Ability
+1000|Ow! Dat urtz!|Weirdboy|Hit Reaction
+1001|Oi! Stop it! |Weirdboy|Hit Reaction
+1002|Deyz shootin' at me?|Weirdboy|Hit Reaction
+1003|Get me outta 'ere!|Weirdboy|Hit Reaction
+1004|I detect... 'e'z ded.|Weirdboy|Friendly Death
+1005|My 'edzzzz fiilling up wid WAAAGH!|Weirdboy|Surge
+1006|I can feel a scrap comin'|Weirdboy|Enemy Detected
+1007|Gork is wiv uz. Or maybe Mork. 'ard ta tell.|Weirdboy|Strategic
+1008|Da more fightin', da more WAAAGH. Da more WAAAGH... it's a bootiful circle.|Weirdboy|Strategic
+1009|Oh, dis iz it. My chance ta shine!|Weirdboy|Adversary
+1010|If ya say so.|Painboy|Affirmative
+1011|Sure fink, Boss.|Painboy|Affirmative
+1012|I fink I can stitch that back.|Painboy|Selection
+1013|Ready ta saw bonez.|Painboy|Selection
+1014|Cybork legs ready ta go.|Painboy|Movement
+1015|I got uvver fings ta do.|Painboy|Attack
+1016|Ain't nothing a bit a stabby bizness cant fix.|Painboy|Attack
+1017|Kil 'em! Kil 'em all!|Painboy|Attack
+1018|Dis may sting a bit.|Painboy|Ability
+1019|Da pain iz in yer mind! Quite a lot of it, ashually.|Painboy|Hit Reaction
+1020|[pained grunt]|Painboy|Hit Reaction
+1021|Come closer, gotta treatment for ya!|Painboy|Hit Reaction
+1022|Oi, that needs stitches! Or maybe weldin'?|Painboy|Hit Reaction
+1023|Can't fix 'em all!|Painboy|Friendly Death
+1024|Dey're the ones who need a Doc!|Painboy|Surge
+1025|Sumfin over dere. Useful for parts?|Painboy|Enemy Detected
+1026|I can fix you right up - even make some impruvments!|Painboy|Strategic
+1027|Oi, oomies! can't have ya runnin' around patchin' up ya mates.|Painboy|Adversary
+1028|We'z wuz made fer war.|Stormboyz|Affirmative
+1029|Wot da boss sez, da boss gets.|Stormboyz|Affirmative
+1030|Stormboyz iz da best!|Stormboyz|Selection
+1031|Rokkit paks ready to go.|Stormboyz|Selection
+1032|They won't see uz comin'.|Stormboyz|Movement
+1033|Give em' a krumpin'.|Stormboyz|Attack
+1034|Come 'ere and we'll giv ya what for!|Stormboyz|Attack
+1035|Back up a bit so we take a run up at 'em.|Stormboyz|Attack
+1036|Smash 'em right in da gob!|Stormboyz|Attack
+1037|Arrrrrhhhh!|Stormboyz|Attack
+1038|They'll be nasty stainz on the bottom of our bootz!|Stormboyz|Ability
+1039|[pained grunt]|Stormboyz|Hit Reaction
+1040|Hrrnnnnn!|Stormboyz|Hit Reaction
+1041|Yooz can't hurt uz! Much!|Stormboyz|Hit Reaction
+1042|Scrappin' up close is da best.|Stormboyz|Hit Reaction
+1043|Dey died doin' wot they luv. |Stormboyz|Friendly Death
+1044|Da skies belong to da Orks!|Stormboyz|Surge
+1045|Looks like we'z got a fight comin' our way! Gud.|Stormboyz|Enemy Detected
+1046|Da only fing betta than a good scrap, is flyin' into a good scrap.|Stormboyz|Strategic
+1047|Yooz 'oomie fly boyz are weak and squishy.|Stormboyz|Adversary
+1048|Don't 'it me!|Gretchin|Affirmative
+1049|Sorry? Sorry!|Gretchin|Affirmative
+1050|Whateva yew want, boss!|Gretchin|Selection
+1051|Grotz, ready ta fite!|Gretchin|Selection
+1052|Yes, boss, right away.|Gretchin|Movement
+1053|Let 'em have it!|Gretchin|Attack
+1054|Come and get us!|Gretchin|Attack
+1055|We're all gonna dieeeee!|Gretchin|Attack
+1056|[grunts]|Gretchin|Hit Reaction
+1057|Ahhhhhhrhh. Mork save uz!|Gretchin|Hit Reaction
+1058|Ah!, no, stop!|Gretchin|Hit Reaction
+1059|Urrrghh!|Gretchin|Hit Reaction
+1060|Oh no, we're next!|Gretchin|Friendly Death
+1061|We can take 'em! I fink?|Gretchin|Surge
+1062|More of 'em? Oh no.|Gretchin|Enemy Detected
+1063|Deyz even smaller than uz! Easier than kickin' a squig!|Gretchin|Adversary
+1064|OK Boss.|Boyz|Affirmative
+1065|No muckin' about.|Boyz|Affirmative
+1066|Yeah, wot?|Boyz|Selection
+1067|Orks iz best.|Boyz|Selection
+1068|Let's go ladz.|Boyz|Movement
+1069|Give 'em some dakka.|Boyz|Attack
+1070|Kill wot comes close.|Boyz|Attack
+1071|Back up ladz.|Boyz|Attack
+1072|Chuckin' a stikkbom!|Boyz|Ability
+1073|Let's get stuck in!|Boyz|Ability
+1074|[Pained roar]|Boyz|Hit Reaction
+1075|Aaahhh!|Boyz|Hit Reaction
+1076|Theyz shootin' at us!|Boyz|Hit Reaction
+1077|Didn't hurt a bit.|Boyz|Hit Reaction
+1078|Lookz like more fer uz ta krump.|Boyz|Friendly Death
+1079|Da orkzies is unstoppable!|Boyz|Surge
+1080|Dey iz comin' at uz. |Boyz|Enemy Detected
+1081|It's a big ol' galaxy full of adventure and fightin'. An we just luv fightin'!|Boyz|Strategic
+1082|The good fing about yooz gribbliez iz dare's so many of ya'z, so we can keep shootin' longa.|Boyz|Adversary
+1083|Da Nobz iz 'ere.|Nobz|Affirmative
+1084|Best of da best.|Nobz|Affirmative
+1085|It's our time.|Nobz|Selection
+1086|Ready ta boss da boyz.|Nobz|Selection
+1087|Movin' and leadin'.|Nobz|Movement
+1088|I luv a good scrap.|Nobz|Attack
+1089|Give 'em a krumpin'.|Nobz|Attack
+1090|Nobz don't run away. We's just beein' cunnin'|Nobz|Attack
+1091|Diz is da life!|Nobz|Attack
+1092|Ere we go, ere we go, ere we go!|Nobz|Attack
+1093|We wuz 'oldin' back... now we'll use both 'ands.|Nobz|Ability
+1094|Uff. Right through me armour!|Nobz|Hit Reaction
+1095|Don't dey know oo we are!?|Nobz|Hit Reaction
+1096|We're under fire?|Nobz|Hit Reaction
+1097|Ow. My turn now.|Nobz|Hit Reaction
+1098|Someone grab iz teef, eh?|Nobz|Friendly Death
+1099|Leadin' from da front!|Nobz|Surge
+1100|Ooh! More to zoggin' smack!|Nobz|Enemy Detected
+1101|Looking forward to a nice rest... wen we'z ded! Hahaha.|Nobz|Strategic
+1102|When we conquer da galaxy... we'll still 'ave each other ta fite!|Nobz|Strategic
+1103|Dey looks fancy! Gonna giv uz a damn gud fite!|Nobz|Adversary
+1104|Meganobz. We'z Nobz, but ded shiny.|Meganobz|Affirmative
+1105|Wot?|Meganobz|Affirmative
+1106|Wot needs killin'?|Meganobz|Selection
+1107|Dahn't bovver uz.|Meganobz|Selection
+1108|Movin' closer to the scrap.|Meganobz|Movement
+1109|Mega-dakka-dakka-dakka!|Meganobz|Attack
+1110|Deyz coming closer?|Meganobz|Attack
+1111|Can't get da armour scratched!|Meganobz|Attack
+1112|Smash 'em in da face!|Meganobz|Attack
+1113|Wanna test diz saw out!|Meganobz|Attack
+1114|Hmph. A tuff wun.|Meganobz|Ability
+1115|Who threw dat? |Meganobz|Hit Reaction
+1116|You're makin' uz madddd.|Meganobz|Hit Reaction
+1117|Shudn't a dun dat!|Meganobz|Hit Reaction
+1118|Nah yer got me attenshun.|Meganobz|Hit Reaction
+1119|Boo-hoo, more fiting fer the rest of uz!|Meganobz|Friendly Death
+1120|WAAAGH! Meganobz!|Meganobz|Surge
+1121|Look, new wimps ta krump!|Meganobz|Enemy Detected
+1122|Ooh, cud murdah a squig roll right nah.|Meganobz|Strategic
+1123|Do da mekz make Mega-Mega-armour? Need more dakka.|Meganobz|Strategic
+1124|Ooh, we could nick dose bitz for our armour.|Meganobz|Adversary
+1125|Fired up, bozz.|Burna Boyz|Affirmative
+1126|Boss. Hehe.|Burna Boyz|Affirmative
+1127|Wot's not on fire?|Burna Boyz|Selection
+1128|Somefin' to burn?|Burna Boyz|Selection
+1129|Getting warmer, warmer...|Burna Boyz|Movement
+1130|Ha, letz make 'em do da burny dance!|Burna Boyz|Attack
+1131|Come ovva 'ere, we'll warm ya up!|Burna Boyz|Attack
+1132|It's gettin' a bit hot lads, back up a bit.|Burna Boyz|Attack
+1133|Ouch!|Burna Boyz|Hit Reaction
+1134|Careful! Don't 'it da tank!|Burna Boyz|Hit Reaction
+1135|On fire, not unda fire!|Burna Boyz|Hit Reaction
+1136|Careful, we're 'ot ta touch.|Burna Boyz|Hit Reaction
+1137|'e's spark out. |Burna Boyz|Friendly Death
+1138|We're burnin' up, 'ere!|Burna Boyz|Surge
+1139|Dere, more fuel for da fire!|Burna Boyz|Enemy Detected
+1140|Iz dere more ta life than fire and fites..? Nah.|Burna Boyz|Strategic
+1141|Diz chilli squig ain't 'alf-'ot.|Burna Boyz|Strategic
+1142|Come on ladz, lets make a fire Gork will notice.|Burna Boyz|Adversary
+1143|Wot? Wot?|Lootas |Affirmative
+1144|Nuffin! |Lootas |Affirmative
+1145|Lootas! 'Ave da best shootas!|Lootas |Selection
+1146|Wotz da plan?|Lootas |Selection
+1147|If we 'ave ta, we'll move.|Lootas |Movement
+1148|Looterz and shootaz!|Lootas |Attack
+1149|Putting more 'olez in dem than da Warboss' plans! ...sorry Boss.|Lootas |Attack
+1150|Dunt wan our shootas in da rong 'ands.|Lootas |Attack
+1151|Ooz gonna argew with uz?|Lootas |Ability
+1152|Oi! Dat urtz.|Lootas |Hit Reaction
+1153|Nah, stoppit. Krump 'em!|Lootas |Hit Reaction
+1154|Fire back!|Lootas |Hit Reaction
+1155|Back off! Can't shoot yew 'ere.|Lootas |Hit Reaction
+1156|Oh, poor fing. Let me check iz pockets.|Lootas |Friendly Death
+1157|Fink uf all da loot!|Lootas |Surge
+1158|Look, deyz got stuff ta nick.|Lootas |Enemy Detected
+1159|Diz? Diz? It fell off da back uv a Battlewaggon. 'onest!|Lootas |Strategic
+1160|'ow did yer shoota get inta my bag? Sorry Boss, won't 'appen agin.|Lootas |Strategic
+1161|'old still, while get da shoota set up! Cheers!|Lootas |Adversary
+1162|If we avta.|Flash Gitz|Affirmative
+1163|Well, maybe.|Flash Gitz|Affirmative
+1164|Orks iz da best, and uz Flash Gitz are da best Orks!|Flash Gitz|Selection
+1165|Bling! |Flash Gitz|Selection
+1166|Movin' oor subshtanshal riches out.|Flash Gitz|Movement
+1167|'ave summa diz, ya scum!|Flash Gitz|Attack
+1168|If dey cum diz way, dey'll be sorry.|Flash Gitz|Attack
+1169|Steppin' back ta get a betta shot.|Flash Gitz|Attack
+1170|Dey won't av EVA seen summat like diz.|Flash Gitz|Ability
+1171|[Ork roar]|Flash Gitz|Hit Reaction
+1172|Urrrgghhh!|Flash Gitz|Hit Reaction
+1173|Come 'ere so we can smash ya teef out!|Flash Gitz|Hit Reaction
+1174|Y'ill need more than that!|Flash Gitz|Hit Reaction
+1175|We'll cum bak fer dere teef laterz.|Flash Gitz|Friendly Death
+1176|More...dakka!|Flash Gitz|Surge
+1177|Somefing new ta kill!|Flash Gitz|Enemy Detected
+1178|Teef means might, and might iz right.|Flash Gitz|Strategic
+1179|Wot d'ya get the Ork wotz got everyfin? MORE DAKKA, ahahah.|Flash Gitz|Strategic
+1180|Yew ain't fit to kiss da squigs in da Drops.|Flash Gitz|Adversary
+1181|Wotttttttt?|Warbikers|Affirmative
+1182|Wot we waitin for?|Warbikers|Affirmative
+1183|Boss? Boss? BOSS? Boss?!|Warbikers|Selection
+1184|Rrrrarin' ta go.|Warbikers|Selection
+1185|RED WUNZ GO FASTA.|Warbikers|Movement
+1186|Warbikers firing Boss!|Warbikers|Attack
+1187|We even shoot quick!|Warbikers|Attack
+1188|Are we goin' da rong way!?|Warbikers|Attack
+1189|Burnin' rubber, boss.|Warbikers|Ability
+1190|Givin' it some welly!|Warbikers|Ability
+1191|Oi, 'it me, not ma bike.|Warbikers|Hit Reaction
+1192|No! Not da paintjob!|Warbikers|Hit Reaction
+1193|We's too fast, 'ow dey 'itting uz?|Warbikers|Hit Reaction
+1194|Get off me BIKE!|Warbikers|Hit Reaction
+1195|What was dat?|Warbikers|Friendly Death
+1196|Roadkill comin' up.|Warbikers|Surge
+1197|New punies over dere. Be wiv yew in a minute!|Warbikers|Enemy Detected
+1198|Needz more red paint boss. Gotta go fasta!|Warbikers|Strategic
+1199|Da only fing better than a warbike... iz a fasta warbike!|Warbikers|Strategic
+1200|Time for a race! Guns allowed, o' course.|Warbikers|Adversary
+1201|Wen's we shootin'?|Deff Dreads|Affirmative
+1202|Yez.|Deff Dreads|Affirmative
+1203|Deff Dreads.|Deff Dreads|Selection
+1204|Tinboyz.|Deff Dreads|Selection
+1205|Clunkin' over.|Deff Dreads|Movement
+1206|Dakka-dakka. Ah, wot musik dat iz.|Deff Dreads|Attack
+1207|ere dey come... and dere dey go.|Deff Dreads|Attack
+1208|Duz dis even 'ave reeversz?|Deff Dreads|Attack
+1209|[metal groaning]|Deff Dreads|Hit Reaction
+1210|Dreads' takin a powndin.|Deff Dreads|Hit Reaction
+1211|Shoot back!|Deff Dreads|Hit Reaction
+1212|My turn...|Deff Dreads|Hit Reaction
+1213|Iz 'e dead?|Deff Dreads|Friendly Death
+1214|Dreads in front!|Deff Dreads|Surge
+1215|Wots dat, over dere? |Deff Dreads|Enemy Detected
+1216|Could someone scratch me nose? S'ard with a power claw...|Deff Dreads|Strategic
+1217|Not sure dere's enuff dakka to make up for being stuck in diz.|Deff Dreads|Strategic
+1218|Dat humie kan looks nice an shiny, letz see who is da most killy!|Deff Dreads|Adversary
+1219|Skyboyz!|Deffkoptas|Affirmative
+1220|Sorry?|Deffkoptas|Affirmative
+1221|Gotcha, circlin'.|Deffkoptas|Selection
+1222|Deff frum abuv.|Deffkoptas|Selection
+1223|Zoomin' over dere.|Deffkoptas|Movement
+1224|Blast 'em!|Deffkoptas|Attack
+1225|Deze goin' 'ome wiv 'ols in em!|Deffkoptas|Attack
+1226|Away, losin' control!|Deffkoptas|Attack
+1227|Bombs awaaay!|Deffkoptas|Ability
+1228|Dey got the rota!|Deffkoptas|Hit Reaction
+1229|Not enjoin' dis.|Deffkoptas|Hit Reaction
+1230|Chopper's under fire!|Deffkoptas|Hit Reaction
+1231|Dahn't get so close!|Deffkoptas|Hit Reaction
+1232|Anuvver wun bites da dust!|Deffkoptas|Friendly Death
+1233|Revvin' up da rotas!|Deffkoptas|Surge
+1234|Scoutin', we seen somefin!|Deffkoptas|Enemy Detected
+1235|Not sure wevver we should be choppin' 'em or blastin' 'em?|Deffkoptas|Strategic
+1236|Oo sed dat flyin'z un-orky. We'll bomb yer 'ed!|Deffkoptas|Strategic
+1237|Oh, fancy fly-boyz aintcha? |Deffkoptas|Adversary
+1238|Busy, Boss.|Big Mek|Affirmative
+1239|Yeh?|Big Mek|Affirmative
+1240|Need ya gubbinz fixed up?|Big Mek|Selection
+1241|Tinkerin'.|Big Mek|Selection
+1242|Movin' me way ova.|Big Mek|Movement
+1243|Kustom-blasta dakka dakka. Workin' nicely.|Big Mek|Attack
+1244|Hmm, could improve dese claws with big spikes. |Big Mek|Attack
+1245|Sometimes you need to stop finkin' and start krumpin'.|Big Mek|Attack
+1246|Nice of dem to test me gunz.|Big Mek|Attack
+1247|Learned a lot, backing orf to rebuild.|Big Mek|Attack
+1248|Ya gubbinz should work betta now.|Big Mek|Ability
+1249|More arma, so ya harder ta kill!|Big Mek|Ability
+1250|Flaw in the armour! Ah.|Big Mek|Hit Reaction
+1251|Gotta fix dis.|Big Mek|Hit Reaction
+1252|Shields and armour 'olding nicely.|Big Mek|Hit Reaction
+1253|Cheeky. |Big Mek|Hit Reaction
+1254|Any useful scrap?|Big Mek|Friendly Death
+1255|Turnin' all the dials ta 11!|Big Mek|Surge
+1256|What's dat? They got anythin' worth nickin?|Big Mek|Enemy Detected
+1257|I don't know how I knows, I just duz. 'Old da gun the UVVER way round.|Big Mek|Strategic
+1258|Rather be an oddboy than a boss. But both iz best.|Big Mek|Strategic
+1259|Dat humie is doing some fixin like me. But not as good wiv da Dakka!|Big Mek|Adversary
+1260|Bomber reportin'|Blitza-Bommer|Affirmative
+1261|Boom bombz reddy.|Blitza-Bommer|Affirmative
+1262|Circlin'.|Blitza-Bommer|Affirmative
+1263|Moar dakka, incummin'|Blitza-Bommer|Ability
+1264|Naveegatin' over.|Blitza-Bommer|Ability
+1265|Divin' ta drop!|Blitza-Bommer|Ability
+1266|FOR KHORNE!|Bloodthirster|Affirmative
+1267|I will serve.|Bloodthirster|Affirmative
+1268|Blood and brass.|Bloodthirster|Selection
+1269|[daemonic growl]|Bloodthirster|Selection
+1270|KILL THEM ALL!|Bloodthirster|Movement
+1271|MY AXE THIRSTS!|Bloodthirster|Attack
+1272|THE BLOOD WILL FLOW!|Bloodthirster|Attack
+1273|[dismissive grunt]|Bloodthirster|Attack
+1274|[rage-fuelled roar]|Bloodthirster|Ability
+1275|I claim your skulls for Khorne!|Bloodthirster|Ability
+1276|We care not where the blood flows from.|Bloodthirster|Friendly Death
+1277|BLOOOOOD!|Bloodthirster|Surge
+1278|Bring me their skulls!|Bloodthirster|Enemy Detected
+1279|Blood and skulls... BLOOD AND SKULLS!|Bloodthirster|Strategic
+1280|The lord of blood demands sacrifice.|Bloodthirster|Strategic
+1281|The fury of Khorne consumes all!|Bloodthirster|Strategic
+1282|Your blood is a torrent of rage, Khorne will be pleased!|Bloodthirster|Adversary
+1283|A fine offering for the Skull Throne!|Bloodthirster|Adversary
+1284|Whatever Khorne demands.|Daemon Prince|Affirmative
+1285|For Khorne!|Daemon Prince|Affirmative
+1286|Lord of Rage, command me.|Daemon Prince|Selection
+1287|[intimidating growl]|Daemon Prince|Selection
+1288|None shall live!|Daemon Prince|Movement
+1289|Face me, cowards!|Daemon Prince|Attack
+1290|My blade hungers for your blood.|Daemon Prince|Attack
+1291|Fall! Fall to the might of Khorne!|Daemon Prince|Attack
+1292|[frustrated roar]|Daemon Prince|Attack
+1293|I will bleed you.|Daemon Prince|Ability
+1294|A thousand blades! A thousand sacrifices!|Daemon Prince|Ability
+1295|[daemonic grunt]|Daemon Prince|Hit Reaction
+1296|Pathetic.|Daemon Prince|Hit Reaction
+1297|Come closer!|Daemon Prince|Hit Reaction
+1298|You dare?!|Daemon Prince|Hit Reaction
+1299|Khorne is pleased, it matters not where the blood flows from.|Daemon Prince|Friendly Death
+1300|[bellowing roar]|Daemon Prince|Surge
+1301|More skulls for the Skull Throne!|Daemon Prince|Enemy Detected
+1302|Khorne demands blood, and I will see that it flows.|Daemon Prince|Strategic
+1303|A river of blood flows from my blade, in Khorne's name!|Daemon Prince|Strategic
+1304|Mortality is weakness. Khorne is endless, his rage immortal!|Daemon Prince|Strategic
+1305|Bloodless, soulless vessels! Khorne still demands your skulls!|Daemon Prince|Adversary
+1306|Your angelic blood is deliciously corrupt, Khorne will be pleased.|Daemon Prince|Adversary
+1307|[tortured growl]|Soul Grinder|Affirmative
+1308|I must obey.|Soul Grinder|Affirmative
+1309|Blood for the Blood God!|Soul Grinder|Selection
+1310|[daemonic snarl]|Soul Grinder|Selection
+1311|I must KILL!|Soul Grinder|Movement
+1312|[agonised roar]|Soul Grinder|Attack
+1313|CRUSH! KILL! SLAUGHTER!|Soul Grinder|Attack
+1314|[angry roar]|Soul Grinder|Attack
+1315|I will CRUSH YOU!|Soul Grinder|Ability
+1316|RAGE UNENDING!|Soul Grinder|Surge
+1317|BLOOD FOR THE LORD OF SKULLS!|Soul Grinder|Enemy Detected
+1318|[daemonic scream]|Soul Grinder|Strategy
+1319|Souls for the soul-forge!|Soul Grinder|Strategy
+1320|[aggressive snarl]|Soul Grinder|Adversary
+1321|RIP! SHRED! DESTROY!|Soul Grinder|Adversary
+1322|[aggressive growl]|Bloodcrusher|Affirmative
+1323|Skulls for the Skull Throne!|Bloodcrusher|Affirmative
+1324|Khorne's rage guides us!|Bloodcrusher|Selection
+1325|The blood must flow!|Bloodcrusher|Selection
+1326|Forward! Blood for the Blood God!|Bloodcrusher|Movement
+1327|Blood to spill! Skulls to take!|Bloodcrusher|Attack
+1328|Crush them all!|Bloodcrusher|Attack
+1329|[angry roar]|Bloodcrusher|Attack
+1330|Crush! Trample! Kill!|Bloodcrusher|Ability
+1331|We are Khorne! The blood must flow!|Bloodcrusher|Friendly Death
+1332|Rip them apart!|Bloodcrusher|Surge
+1333|Our blades thirst for blood!|Bloodcrusher|Enemy Detected
+1334|Crush! Tear! Kill!|Bloodcrusher|Strategic
+1335|Crush them all, their skulls for Khorne!|Bloodcrusher|Adversary
+1336|Affirmitive.|Invictor Warsuit|Affirmative
+1337|Orders received.|Invictor Warsuit|Affirmative
+1338|Invictor Warsuit, ready!|Invictor Warsuit|Selection
+1339|Awaiting command.|Invictor Warsuit|Selection
+1340|Vanguard marching.|Invictor Warsuit|Movement
+1341|Laying down fire.|Invictor Warsuit|Attack
+1342|Crush them!|Invictor Warsuit|Attack
+1343|For the Emperor!|Invictor Warsuit|Attack
+1344|Repositioning.|Invictor Warsuit|Attack
+1345|Firing grenade volley.|Invictor Warsuit|Ability
+1346|[generic grunt]|Invictor Warsuit|Hit Reaction
+1347|Urgh!|Invictor Warsuit|Hit Reaction
+1348|Rally behind me, brothers!|Invictor Warsuit|Hit Reaction
+1349|Is that your best?|Invictor Warsuit|Hit Reaction
+1350|I will avenge my fallen brothers!|Invictor Warsuit|Friendly Death
+1351|For Sanguinius!|Invictor Warsuit|Surge
+1352|Targets on the move.|Invictor Warsuit|Enemy Detected
+1353|Heavy support, ready.|Invictor Warsuit|Strategic
+1354|I will thin their numbers.|Invictor Warsuit|Strategic
+1355|Spill their blood, for the Emperor!|Invictor Warsuit|Adversary
+1356|Send it back to the Warp!|Invictor Warsuit|Adversary
+1357|Consider it done|Commander|Affirmative
+1358|This will bring us closer to victory|Commander|Affirmative
+1359|Nothing shall stand against us|Commander|Selection
+1360|I serve the Greater Good|Commander|Selection
+1361|Moving to position|Commander|Movement
+1362|They deny the way of the Tau'va, kill them all!|Commander|Attack
+1363|I will slow them down|Commander|Attack
+1364|Falling back!|Commander|Attack
+1365|Study your enemy first, search for weakpoints. Then deliver the killing blow|Commander|Ability
+1366|Thrusters engaged!|Commander|Ability
+1367|[generic grunt]|Commander|Hit Reaction
+1368|Ugh!|Commander|Hit Reaction
+1369|I will not break|Commander|Hit Reaction
+1370|Is that your best?|Commander|Hit Reaction
+1371|It is a heavy burden, sending so many to their deaths, but it is all for the Greater Good|Commander|Friendly Death
+1372|We will not fail!|Commander|Surge
+1373|Targets outside of visual range|Commander|Enemy Detected
+1374|Long have I studied the teachings of Puretide|Commander|Strategic
+1375|Through the wisdom of the Aun's we will have victory|Commander|Strategic
+1376|Your dead machinery is no match for my battlesuit!|Commander|Adversary
+1377|With pride!|Cadre Fireblade|Affirmative
+1378|For Vior'la!|Cadre Fireblade|Affirmative
+1379|Ready for orders|Cadre Fireblade|Selection
+1380|How can I assist?|Cadre Fireblade|Selection
+1381|To the frontline!|Cadre Fireblade|Movement
+1382|Removing targets|Cadre Fireblade|Attack
+1383|Establishing fire zone|Cadre Fireblade|Attack
+1384|Seeking a better position|Cadre Fireblade|Attack
+1385|Make every shot count!|Cadre Fireblade|Ability
+1386|Study your enemy's movements! Know where they will be even before they do!|Cadre Fireblade|Ability
+1387|Arrgh!|Cadre Fireblade|Hit Reaction
+1388|Hnng!|Cadre Fireblade|Hit Reaction
+1389|Under fire!|Cadre Fireblade|Hit Reaction
+1390|The enemy has closed in|Cadre Fireblade|Hit Reaction
+1391|They died so that we could win|Cadre Fireblade|Friendly Death
+1392|Form on me team, we will take the fight to the enemy!|Cadre Fireblade|Surge
+1393|More targets will soon be in range|Cadre Fireblade|Enemy Detected
+1394|There are countless lessons to be learned on the battlefield|Cadre Fireblade|Strategic
+1395|You will find me in the thick of the battle, not lurking in the backline|Cadre Fireblade|Strategic
+1396|Take it down, before it can summon reinforcements!|Cadre Fireblade|Adversary
+1397|It shall be|Ethereal|Affirmative
+1398|Of course|Ethereal|Affirmative
+1399|I am here|Ethereal|Selection
+1400|What troubles you?|Ethereal|Selection
+1401|Wherever I am needed|Ethereal|Movement
+1402|Better to fall back, than risk being overwhelmed|Ethereal|Attack
+1403|It saddens me that it has come to this|Ethereal|Attack
+1404|You may resist the rightness of the Tau'va, but you will not resist my blade|Ethereal|Attack
+1405|The blows of the enemy will not hinder you|Ethereal|Ability
+1406|Move swiftly and silently through the battlefield|Ethereal|Ability
+1407|They test my resolve!|Ethereal|Hit Reaction
+1408|Ackh!|Ethereal|Hit Reaction
+1409|Your rejection of the Greater Good will be your undoing|Ethereal|Hit Reaction
+1410|It is not too late to accept a better way|Ethereal|Hit Reaction
+1411|Feel no sorrow my children, for they gave their lives gladly for the good of our empire|Ethereal|Friendly Death
+1412|There can be no surrender to those who refuse to follow the path|Ethereal|Surge
+1413|They may yet be convinced of the truth of our words|Ethereal|Enemy Detected
+1414|Through unity, and common purpose, we will bring the light of the Greater Good to all|Ethereal|Strategic
+1415|It is not through hatred, or malice, that we make war with those who reject our message. It is to save them from themselves|Ethereal|Strategic
+1416|Your empty sermons to a false God are devoid of true wisdom|Ethereal|Adversary
+1417|It will be done|Pathfinders|Affirmative
+1418|Confirmed|Pathfinders|Affirmative
+1419|We serve the Greater Good|Pathfinders|Selection
+1420|Awaiting instructions|Pathfinders|Selection
+1421|Pathfinder team, on the move|Pathfinders|Movement
+1422|Cut them down!|Pathfinders|Attack
+1423|Execute the Mont'ka|Pathfinders|Attack
+1424|We must reposition!|Pathfinders|Attack
+1425|High-value target indentified|Pathfinders|Ability
+1426|Overcharging the reactor|Pathfinders|Ability
+1427|[pained grunt]|Pathfinders|Hit Reaction
+1428|Aargh!|Pathfinders|Hit Reaction
+1429|We've been spotted!|Pathfinders|Hit Reaction
+1430|Taking hits!|Pathfinders|Hit Reaction
+1431|Honour their sacrifice|Pathfinders|Friendly Death
+1432|Fight on, brothers and sisters!|Pathfinders|Surge
+1433|Movement up ahead|Pathfinders|Enemy Detected
+1434|The fire caste are ready to serve!|Pathfinders|Strategic
+1435|Every time you get back up I will put you down again|Pathfinders|Adversary
+1436|Orders confirmed|Fire Warrior Strike Team|Affirmative
+1437|For the Greater Good|Fire Warrior Strike Team|Affirmative
+1438|Strike team, ready!|Fire Warrior Strike Team|Selection
+1439|Standing by|Fire Warrior Strike Team|Selection
+1440|Moving out|Fire Warrior Strike Team|Movement
+1441|Cut them down!|Fire Warrior Strike Team|Attack
+1442|The trap is set|Fire Warrior Strike Team|Attack
+1443|They're too close, fall back!|Fire Warrior Strike Team|Attack
+1444|Priority target marked|Fire Warrior Strike Team|Ability
+1445|[generic grunt]|Fire Warrior Strike Team|Hit Reaction
+1446|Agh!|Fire Warrior Strike Team|Hit Reaction
+1447|We're under fire!|Fire Warrior Strike Team|Hit Reaction
+1448|[pained grunt]|Fire Warrior Strike Team|Hit Reaction
+1449|They did their duty|Fire Warrior Strike Team|Friendly Death
+1450|By the will of the Aun's, we shall have victory!|Fire Warrior Strike Team|Surge
+1451|The enemy aproaches|Fire Warrior Strike Team|Enemy Detected
+1452|We are the fire caste! We will not fail!|Fire Warrior Strike Team|Strategic
+1453|Your ineffective strategies will be your undoing|Fire Warrior Strike Team|Adversary
+1454|We will not fail|Fire Warrior Breacher Team|Affirmative
+1455|As you wish|Fire Warrior Breacher Team|Affirmative
+1456|What do you need?|Fire Warrior Breacher Team|Selection
+1457|Ready for orders|Fire Warrior Breacher Team|Selection
+1458|Pushing forward|Fire Warrior Breacher Team|Movement
+1459|Clear them out!|Fire Warrior Breacher Team|Attack
+1460|They will not get through this way|Fire Warrior Breacher Team|Attack
+1461|Create some distance, brothers!|Fire Warrior Breacher Team|Attack
+1462|Painting target|Fire Warrior Breacher Team|Ability
+1463|Throwing photon grenade!|Fire Warrior Breacher Team|Ability
+1464|[generic grunt]|Fire Warrior Breacher Team|Hit Reaction
+1465|Hnngh!|Fire Warrior Breacher Team|Hit Reaction
+1466|Seek cover!|Fire Warrior Breacher Team|Hit Reaction
+1467|You will not best me|Fire Warrior Breacher Team|Hit Reaction
+1468|Their fires burned brightly|Fire Warrior Breacher Team|Friendly Death
+1469|Forward, for the Greater Good!|Fire Warrior Breacher Team|Surge
+1470|Hostiles detected|Fire Warrior Breacher Team|Enemy Detected
+1471|Show us the targets, and we will eliminate them|Fire Warrior Breacher Team|Strategic
+1472|Let us see if you can get back up from this|Fire Warrior Breacher Team|Adversary
+1473|Affirmative|Crisis Battlesuit|Affirmative
+1474|Understood|Crisis Battlesuit|Affirmative
+1475|Armoured support, ready|Crisis Battlesuit|Selection
+1476|Yes?|Crisis Battlesuit|Selection
+1477|Moving|Crisis Battlesuit|Movement
+1478|Firing on target!|Crisis Battlesuit|Attack
+1479|Providing cover|Crisis Battlesuit|Attack
+1480|Fall back!|Crisis Battlesuit|Attack
+1481|Open fire!|Crisis Battlesuit|Attack
+1482|Take to the sky!|Crisis Battlesuit|Ability
+1483|Ugh|Crisis Battlesuit|Hit Reaction
+1484|Taking hits|Crisis Battlesuit|Hit Reaction
+1485|Armour holding!|Crisis Battlesuit|Hit Reaction
+1486|The enemy has engaged|Crisis Battlesuit|Hit Reaction
+1487|We shall honour them|Crisis Battlesuit|Friendly Death
+1488|Push forward! Do not falter!|Crisis Battlesuit|Surge
+1489|Scanner picking up movement|Crisis Battlesuit|Enemy Detected
+1490|If battle is the only way, then we will be the front line|Crisis Battlesuit|Strategic
+1491|We will glady give our lives for the Tau'va|Crisis Battlesuit|Strategic
+1492|Foul beasts! We cannot allow you to live!|Crisis Battlesuit|Adversary
+1493|Confirmed|Stealth Battlesuit|Affirmative
+1494|Orders recieved|Stealth Battlesuit|Affirmative
+1495|On your word|Stealth Battlesuit|Selection
+1496|Stealth team, reporting in|Stealth Battlesuit|Selection
+1497|On our way|Stealth Battlesuit|Movement
+1498|Thin them out|Stealth Battlesuit|Attack
+1499|Ambush, ready|Stealth Battlesuit|Attack
+1500|Backing up|Stealth Battlesuit|Attack
+1501|Activate stealth fields!|Stealth Battlesuit|Ability
+1502|[generic grunt]|Stealth Battlesuit|Hit Reaction
+1503|Ugh|Stealth Battlesuit|Hit Reaction
+1504|We've been spotted!|Stealth Battlesuit|Hit Reaction
+1505|This will not stop me|Stealth Battlesuit|Hit Reaction
+1506|Their fire has gone out|Stealth Battlesuit|Friendly Death
+1507|We will bring the wisdom of the Tau'va to this world!|Stealth Battlesuit|Surge
+1508|Tracking potential targets|Stealth Battlesuit|Enemy Detected
+1509|They cannot kill what they cannot see|Stealth Battlesuit|Strategic
+1510|We are ready for the hunt|Stealth Battlesuit|Strategic
+1511|Wipe them all out! Quickly!|Stealth Battlesuit|Adversary
+1512|As you command|Broadside Battlesuit|Affirmative
+1513|Acknowledged|Broadside Battlesuit|Affirmative
+1514|Calculating firing solutions|Broadside Battlesuit|Selection
+1515|Artillery standing by|Broadside Battlesuit|Selection
+1516|Repositioning|Broadside Battlesuit|Movement
+1517|Engaging|Broadside Battlesuit|Attack
+1518|To enter will mean their deaths|Broadside Battlesuit|Attack
+1519|A necessary action|Broadside Battlesuit|Attack
+1520|Seeker missile, away|Broadside Battlesuit|Ability
+1521|Commencing anti-personnel bombardment|Broadside Battlesuit|Ability
+1522|[generic hits]|Broadside Battlesuit|Hit Reaction
+1523|The enemy resists|Broadside Battlesuit|Hit Reaction
+1524|Under fire|Broadside Battlesuit|Hit Reaction
+1525|Obstruction detected|Broadside Battlesuit|Hit Reaction
+1526|Their death was not meaningless|Broadside Battlesuit|Friendly Death
+1527|Ready for more targets!|Broadside Battlesuit|Surge
+1528|Sensors are picking up possible hostiles|Broadside Battlesuit|Enemy Detected
+1529|It is an honour to join the cadre|Broadside Battlesuit|Strategic
+1530|I serve the Greater Good|Broadside Battlesuit|Strategic
+1531|Allow me to demonstrate true firepower|Broadside Battlesuit|Adversary
+1532|Instructions received|Ghostkeel Battlesuit|Affirmative
+1533|Orders acknowledged|Ghostkeel Battlesuit|Affirmative
+1534|Awaiting assignment|Ghostkeel Battlesuit|Selection
+1535|Ready|Ghostkeel Battlesuit|Selection
+1536|Moving|Ghostkeel Battlesuit|Movement
+1537|Firing!|Ghostkeel Battlesuit|Attack
+1538|They will never see it coming|Ghostkeel Battlesuit|Attack
+1539|This position is untenable|Ghostkeel Battlesuit|Attack
+1540|Ready for infiltration!|Ghostkeel Battlesuit|Ability
+1541|[generic grunt]|Ghostkeel Battlesuit|Hit Reaction
+1542|Enough of this!|Ghostkeel Battlesuit|Hit Reaction
+1543|The enemy has me in their sights!|Ghostkeel Battlesuit|Hit Reaction
+1544|Hostiles have engaged|Ghostkeel Battlesuit|Hit Reaction
+1545|They gave their lives in service to the Greater Good|Ghostkeel Battlesuit|Friendly Death
+1546|The fight is not yet done|Ghostkeel Battlesuit|Surge
+1547|I know where you are|Ghostkeel Battlesuit|Enemy Detected
+1548|Ghostkeel battlesuit ready!|Ghostkeel Battlesuit|Strategic
+1549|How can I be of service?|Ghostkeel Battlesuit|Strategic
+1550|I am the patient hunter. You, are nothing but prey|Ghostkeel Battlesuit|Adversary
+1551|I will not fail|Riptide Battlesuit|Affirmative
+1552|Immediately|Riptide Battlesuit|Affirmative
+1553|I am ready|Riptide Battlesuit|Selection
+1554|What are your orders?|Riptide Battlesuit|Selection
+1555|Wherever you need me|Riptide Battlesuit|Movement
+1556|Firing now!|Riptide Battlesuit|Attack
+1557|They dare not approach|Riptide Battlesuit|Attack
+1558|Is this necessary?|Riptide Battlesuit|Attack
+1559|Exposing Mor'tonium reactor|Riptide Battlesuit|Ability
+1560|[generic hits]|Riptide Battlesuit|Hit Reaction
+1561|All systems operational|Riptide Battlesuit|Hit Reaction
+1562|Shield holding|Riptide Battlesuit|Hit Reaction
+1563|Is that all?|Riptide Battlesuit|Hit Reaction
+1564|Their sacrifice helps us all|Riptide Battlesuit|Friendly Death
+1565|For the Greater Good!|Riptide Battlesuit|Surge
+1566|More targets approach|Riptide Battlesuit|Enemy Detected
+1567|I will sweep aside any that stand in my way|Riptide Battlesuit|Strategic
+1568|Heavy support, ready for deployment|Riptide Battlesuit|Strategic
+1569|Finally, a worthy challenge!|Riptide Battlesuit|Adversary
+1570|Yes|Piranha|Affirmative
+1571|Understood|Piranha|Affirmative
+1572|Ready for orders|Piranha|Selection
+1573|Piranha crew, waiting for instructions|Piranha|Selection
+1574|We will be there soon|Piranha|Movement
+1575|Open fire!|Piranha|Attack
+1576|Suppression zone set|Piranha|Attack
+1577|They are too close!|Piranha|Attack
+1578|[generic grunt]|Piranha|Hit Reaction
+1579|Aargh!|Piranha|Hit Reaction
+1580|We are being hit!|Piranha|Hit Reaction
+1581|They have engaged us|Piranha|Hit Reaction
+1582|They brought us closer to victory|Piranha|Friendly Death
+1583|Keep pushing forward!|Piranha|Surge
+1584|We will scout ahead|Piranha|Enemy Detected
+1585|Fast attack, ready for scouting mission|Piranha|Strategic
+1586|We will strike hard and fast, for the Greater Good!|Piranha|Strategic
+1587|Your speed will not save you|Piranha|Adversary
+1588|Orders understood|Hammerhead Gunship|Affirmative
+1589|Whatever you ask|Hammerhead Gunship|Affirmative
+1590|Standing by|Hammerhead Gunship|Selection
+1591|Hammerhead crew ready for duty!|Hammerhead Gunship|Selection
+1592|En route|Hammerhead Gunship|Movement
+1593|Heavy weapons firing!|Hammerhead Gunship|Attack
+1594|We will keep watch|Hammerhead Gunship|Attack
+1595|Overcharging ion weapon!|Hammerhead Gunship|Ability
+1596|[generic hits]|Hammerhead Gunship|Hit Reaction
+1597|We can take it|Hammerhead Gunship|Hit Reaction
+1598|Taking fire!|Hammerhead Gunship|Hit Reaction
+1599|[frustrated growl]|Hammerhead Gunship|Hit Reaction
+1600|Fight on for our fallen brothers!|Hammerhead Gunship|Friendly Death
+1601|Ready the weapons!|Hammerhead Gunship|Surge
+1602|Targets up ahead|Hammerhead Gunship|Enemy Detected
+1603|We are the fist of the Mont'ka|Hammerhead Gunship|Strategic
+1604|The enemy will die before they ever get close|Hammerhead Gunship|Strategic
+1605|We will punch a hole through that pitiful excuse for a battlesuit|Hammerhead Gunship|Adversary
+1606|[high-tech chittering]|Tactical Drone|Affirmative
+1607|[series of beeps]|Tactical Drone|Affirmative
+1608|[mechanical whirring]|Tactical Drone|Movement
+1609|[aggressive beep]|Tactical Drone|Attack
+1610|[alarm beeping]|Tactical Drone|Hit Reaction
+1611|[alarm buzzing]|Tactical Drone|Hit Reaction0|Pelo Imperador e por Sanguinius!|

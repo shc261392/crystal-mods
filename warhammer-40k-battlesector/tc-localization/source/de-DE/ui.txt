@@ -1,0 +1,1433 @@
+1|Spielzug beenden|
+2|Zug von: {0}|
+3|Ausweichen: {0}|
+4|Kampfesrausch: {0}|
+5|Verbergen|
+6|Nächste ungenutzte Einheit|
+7|Lebenspunkte|
+8|Vorne: {0}|
+9|Rechts: {0}|
+10|Hinten: {0}|
+11|Links: {0}|
+12|Präzision: {0}%|
+13|Schaden: {0}|
+14|Angriffe: {0}|
+15|Munition: {0} / {1}|
+16|Neue Kampagne|
+17|Spiel laden|
+18|Gefecht|
+19|Mehrspieler|
+20|Tutorial|
+21|Optionen|
+22|Beenden|
+23|Interagieren|
+24|{0} Kampfesrausch-Erhalt|
+25|{0} Kampfesrausch|
+26|Abwehrfeuer im Nahkampf nicht möglich|
+27|Tot|
+28|Keine Einheiten zum Angreifen|
+29|Einheiten im selben Team können nicht angegriffen werden.|
+30|Munition aufgebraucht|
+31|Nicht genügend Aktionspunkte|
+32|Abwehrfeuermodus ist aktiv|
+33|Feind zu nahe|
+34|Feind außer Reichweite|
+35|Feind vollständig hinter Deckung|
+36|Eine Fähigkeit ohne Bewegung wurde in diesem Spielzug eingesetzt.|
+37|Ablehnen|
+38|Unpassierbares Gelände|
+39|Nicht genügend Bewegungspunkte|
+40|Bewegung auf belegte Felder nicht möglich.|
+41|Fernkampf|
+42|Nahkampf|
+43|Flamme|
+44|Artillerie|
+45|{0} Präzision: {1}|
+46|{0} Schaden: {1}|
+47|Einheit verteidigen|
+48|Diese Unterführung schließt nicht an eine andere Unterführung an.|
+49|Panzerung: {0}/{1}|
+50|Im Ladebildschirm anzeigen|
+51|Hauptlobby|
+52|Ungenutzte Aktionspunkte|
+53|Einige deiner Einheiten haben noch ungenutzte Aktionspunkte und werden deshalb einen Kampfesrausch-Malus erhalten. Soll dein Spielzug trotzdem beendet werden?|
+54|{0} verbleibend|
+55|{0} über dem Limit|
+56|Meine Armee|
+57|{0} Präzision pro Kampfesrausch|
+58|{0} Ausweichen pro Kampfesrausch|
+59|{0} Präzision|
+60|{0} Schaden|
+61|{0} Zusatzangriffe|
+62|Letzte Chance|
+63|Abwehrfeuer<br><br>Weist eine Abwehrfeuerzone aus. Die Einheit erhält am Ende des Spielzugs einen geringen Kampfesrausch-Malus.|
+64|Abwehrfeuer abbrechen|
+65|Änderungen übernehmen|
+66|{0} fragt Änderungen an.|
+67|Änderungen verwerfen|
+68|Präzision:|
+69|Fernkampfmodifikator: {0}%|
+70|Nahkampf: {0}%|
+71|Panzerung: {0}|
+72|Panzerung:|
+73|Diese Figur ist des Todes ...|
+74|{0} Nahkampfschaden|
+75|{0} Ausweichen|
+76|Ausrichtung ändern|
+77|Bewegen|
+78|Kosten|
+79|Bewegungspunkte|
+80|Schaden|
+81|Deckungsmalus|
+82|Trefferchance|
+83|Standardpräzision|
+84|Fernkampfmalus|
+85|Feind ausweichen|
+86|Im Abwehrfeuermodus sind keine anderen Aktionen möglich.|
+87|Diese Einheit kann keine Unterführungen durchqueren.|
+88|Panisch|
+89|{0} Bewegung|
+90|{0} Fernkampfpräzision|
+91|Aktiviert Sprungmodul-Modus|
+92|{0} BP durch Abwehrfeuer unterdrückt|
+93|{0} Nahkampfpräzision|
+94|Feindliche Unterführungen können nicht genutzt werden.|
+95|Panzerungsunterschied|
+96|Diese Fähigkeit kann nicht neben anderen Unterführungen eingesetzt werden.|
+97|Wichtige Figuren erhalten eine zweite Chance, wenn sie sterben. Dies ist die Menge an LP, die wiederbelebte Einheiten erhalten.|
+98|<i>Partie-Änderungen akzeptiert</i>|
+99|<i>Partie-Änderungen abgelehnt</i>|
+100|Die Einheit ist vollständig blockiert und bewegungsunfähig.|
+101|Auf diesem Feld entsteht gleich eine Unterführung.|
+102|{0} Mindestbewegungsweite|
+103|Unterhalb der Mindestreichweite|
+104|AP|
+105|{0} Fernkampfschaden|
+106|Wiederbelebungs-LP bei letzter Chance|
+107|Weitere Rüstungszweige werden mit der Rekrutierung weiterer HQ-Figuren verfügbar.|
+108|Spielzug beginnt ...|
+109|20 LP|
+110|Volle LP|
+111|Mit HQ-Marken kannst du neue Fähigkeiten, Waffen und Aufwertungen für HQ-Figuren und andere Einheiten freischalten.|
+112|Fertig|
+113|Musik|
+114|Soundeffekte|
+115|Sprachausgabe|
+116|Ton|
+117|Kamera|
+118|Grafik|
+119|Spielsteuerung / Steuermenü|
+120|Extras|
+121|Sprache|
+122|Zoomgeschwindigkeit|
+123|Scrollgeschwindigkeit|
+124|Rotationsgeschwindigkeit|
+125|Bildschirmauflösung|
+126|Bildschirmauflösung ändern?|
+127|Die Bildschirmauflösung wurde auf {0} geändert. Soll diese Auflösung beibehalten werden?|
+128|OK|
+129|Bestätigen|
+130|Abbrechen|
+131|Zurücksetzen|
+132|Zurücksetzen in {0} Sekunde|
+133|Zurücksetzen in {0} Sekunden|
+134|Vollbildmodus|
+135|Abklingzeit der Waffe läuft.|
+136|Vergiss nicht, dass jede Waffe eine optimale Reichweite hat. Aus entsprechender Entfernung abgefeuert sind die Waffen am effektivsten.|
+137|Bildschirmrand-Scrolling|
+138|Neigen umkehren|
+139|Rotieren umkehren|
+140|Zoomen umkehren|
+141|Untertitel in Zwischensequenzen anzeigen|
+142|Untertitel für Ausrufe anzeigen|
+143|Bruder Aeturo schützen|
+144|Zu wenige angrenzende Felder frei|
+145|Kann unterirdisch nicht verwendet werden.|
+146|Kann oberirdisch nicht verwendet werden.|
+147|Durch Drücken von <color=#C8914F>P</color> wechselst du zur nächsten verfügbaren Einheit, die noch mindestens einen <color=#C65C34>Aktionspunkt</color> übrig hat.<br><br>Alternativ dazu kannst du mit <color=#C8914F>TAB</color> durch alle Einheiten schalten.|
+148|Keine angrenzenden Felder für eine Flucht verfügbar.|
+149|{0} erlittener Fernkampf-Giftschaden|
+150|{0} erlittener Nahkampf-Giftschaden|
+151|{0} erlittener Fernkampfschaden|
+152|Außer Reichweite der Fähigkeit|
+153|Fähigkeit bereits aktiv|
+154|{0} erlittener Nahkampfschaden|
+155|Wird aktiviert, wenn sich die Einheit in der aktuellen oder vorherigen Runde nicht bewegt hat.|
+156|Die Ansicht lässt sich schnell wieder auf deine ausgewählte Einheit ausrichten, indem du die Taste <color=#C8914F><b>.</b></color> drückst.|
+157|{0} Panzerungsdurchschlag|
+158|Kein Ziel in Reichweite|
+159|{0} Kampfesrausch|
+160|Endet in {0} Zug.|
+161|Endet in {0} Zügen.|
+162|{0} Fernkampfpanzerung|
+163|{0} Nahkampfpanzerung|
+164|Kann nur mechanische Einheiten zum Ziel haben.|
+165|** ungenutzt **|
+166|{0} erlittener Standard-Fernkampfschaden|
+167|{0} erlittener Standard-Nahkampfschaden|
+168|Kann aus jeder Entfernung mit Artillerie angegriffen werden.|
+169|{0} Artillerie-Panzerungsdurchschlag bei dieser Einheit|
+170|{0} Panzerungsdurchschlag mit Standard-Fernkampfschaden bei dieser Einheit|
+171|Anvisiert|
+172|<b>HQ-Marken</b><br>Nach dem erfolgreichen Abschluss einer Mission erhältst du HQ-Marken. Diese Marken kannst du dann im HQ-Aufwertungszentrum zur Verbesserung deiner Einheiten verwenden.|
+173|<b>Aufstellungskapazität gesteigert</b><br>Armeepunktelimit erhöht!<br>Armeeeinheitenlimit erhöht!|
+174|<b>Aufstellungskapazität gesteigert</b><br>Armeepunktelimit erhöht!|
+175|<b>Armeeorganisation</b><br>Verstärke im Bildschirm „Armeeorganisation“ deine Truppen mit zusätzlichen Einheiten.|
+176|Erweitere deine Truppen mit neuen Einheiten. Wenn du mehr Platz für neue Einheiten benötigst, kannst du aktive Einheiten in die Reserve verlegen.|
+177|{0:+#;-#;+0} LP|
+178|{0} {2} Auslösechance|
+179|Ziel hat schon volle Lebenspunkte.|
+180|Jede Einheit fließt in die Gesamtpunktzahl deiner Armee mit ein. Zusätzliche Waffen erhöhen die Kosten einer Einheit, sobald eine entsprechende Waffe freigeschaltet und die Einheit damit ausgerüstet wurde.|
+181|** ungenutzt **|
+182|Kann nur organische Einheiten zum Ziel haben.|
+183|Erleidet {0} Schaden am Ende des Zugs.|
+184|Endet zum Spielzugwechsel.|
+185|Vergiftet|
+186|Sammle die Gensaat gefallener Brüder ein|
+187|Vernichte alle Tyraniden|
+188|** ungenutzt **|
+189|{0} drücken, um Kameraansicht wieder zu sperren|
+190|** ungenutzt **|
+191|** ungenutzt **|
+192|Die Einheit war schon zu lange tot.|
+193|Zurück|
+194|Weiter|
+195|Mission starten|
+196|Armeeorganisation|
+197|Mission abgeschlossen|
+198|Mission gescheitert|
+199|Zurück ins Hauptmenü|
+200|Ins Hauptmenü zurückkehren?|
+201|Bist du dir sicher, dass du ins Hauptmenü zurückkehren möchtest? Dein noch nicht gespeicherter Spielfortschritt geht dadurch verloren.|
+202|Schwierigkeitsgrad|
+203|Astartes|
+204|Lieutenant|
+205|Captain der Kompanie|
+206|Einheit hinzufügen|
+207|Reserveliste|
+208|Untereinheiten|
+209|LP|
+210|Armee vollzählig|
+211|Deine aktive Armee ist bereits vollzählig. Um andere Einheiten in deine aktive Armee zu übertragen, müssen zuvor Einheiten in die Reserve verlegt werden.|
+212|Inspizieren|
+213|Aufwerten|
+214|Reserve|
+215|{0} Punkte|
+216|Protokoll|
+217|Waffenausrüstung|
+218|Ändern|
+219|Rang|
+220|EP|
+221|Blockiert|
+222|Ein Statuseffekt verhindert Bewegungen.|
+223|Ein Statuseffekt verhindert Angriffe.|
+224|Verbessert|
+225|Keine Missionen freigeschaltet|
+226|Bewegen deaktiviert|
+227|Angreifen deaktiviert|
+228|{0} Aktionspunkte|
+229|Einheitenliste anzeigen|
+230|Hauptmenü|
+231|Fraktion|
+232|Gefecht starten|
+233|Kampagnenmission erneut spielen|
+234|Zufällig festlegen|
+235|Starten|
+236|Ziel|
+237|Karte|
+238|Spieler|
+239|KI|
+240|Armeegröße|
+241|Exterminatus|
+242|<b>Vernichte jeden einzelnen von ihnen.</b><br><br>Alle Einheiten des Gegenspielers müssen ausgeschaltet werden. Siegpunkte werden entsprechend dem Armeepunktewert der ausgeschalteten Einheit vergeben.|
+243|Eroberer|
+244|<b>Kontrolliere die Zielzone, um das Schlachtfeld zu dominieren.</b><br><br>Punkte werden in der Bewertungsphase entsprechend der Anzahl an Einheiten innerhalb der Zone vergeben:<br><br>• +5 Punkte, falls du mindestens eine Einheit innerhalb der Zone kontrollierst<br><br>• +5 Punkte, falls du mehr Einheiten als der Gegner innerhalb der Zone kontrollierst<br><br>• +5 Punkte, falls der Gegner keine Einheiten innerhalb der Zone kontrolliert<br><br>Die Maximalanzahl an Punkten, die auf diese Weise pro Runde erreicht werden kann, beträgt 15.|
+245|Strategischer Befehl|
+246|<b>Übernimm Kontrollpunkte auf dem Schlachtfeld.</b><br><br>Durch Interagieren mit Kontrollpunkten sicherst du sie dir für dein Team. Ein Kontrollpunkt kann beansprucht werden, wenn dieser nicht von einer gegnerischen Einheit verteidigt wird.<br><br>• +5 Punkte pro übernommenem Kontrollpunkt<br><br>Punkte werden in der Bewertungsphase vergeben. Die Maximalanzahl an Punkten, die auf diese Weise pro Runde erreicht werden kann, beträgt 25.|
+247|Todeszone|
+248|Die feindlichen Einheiten versuchen, einen Austrittspunkt zu erreichen. Du musst 50% des Punktwerts der feindlichen Armee ausschalten, bevor die Einheiten fliehen können.|
+249|Austrittspunkt|
+250|Am anderen Ende der Karte befindet sich ein Austrittspunkt. Du gewinnst, wenn du Einheiten mit einem Gesamtwert von X Punkten zum Austrittspunkt bringen konntest.|
+251|Gensaat|
+252|Auf der Karte befinden sich an verschiedenen Stellen (Eroberungspunkte) einige gefallene Blood Angels. Für einen Sieg muss ein Sanguiniuspriester ihre Gensaat einsammeln. (Hierzu muss sich ein Sanguiniuspriester in der Armee des Spielers befinden.)|
+253|Reliquie|
+254|Auf der Karte befindet sich eine heilige Reliquie. Sie muss eingesammelt und zum Austrittspunkt gebracht werden, um die Partie zu gewinnen. Wird die Einheit, die die Reliquie trägt, ausgeschaltet, verbleibt die Reliquie an diesem Ort. Du verlierst, wenn alle deine Einheiten ausgeschaltet wurden.|
+255|Gemetzel|
+256|Für jeden getöteten organischen Gegner erhältst du Siegpunkte. Du musst eine bestimmte Anzahl von Siegpunkten erreichen, um die Partie zu gewinnen. Du verlierst, falls alle deine Einheiten ausgeschaltet wurden.|
+257|Schwarmherrscher|
+258|Du gewinnst, wenn du an allen Eroberungspunkten auf der Karte eine Einheit platzieren kannst.|
+259|Keine Armeen konfiguriert|
+260|Keine Fraktion hat eine Armee mit Einheiten. Über den Button „Armeeorganisation“ können Einheiten einer Armee hinzugefügt werden.|
+261|Armee nicht konfiguriert|
+262|Die ausgewählte Spielerfraktion hat keine Einheiten in ihrer Armee. Über den Button „Armeeorganisation“ können Einheiten einer Armee hinzugefügt werden.|
+263|Mindestens eine Einheit des Typs „{0}“ ist für dieses Ziel erforderlich.|
+264|{1}%-ige Wahrscheinlichkeit, sich selbst {0} Schaden während eines Angriffs zuzufügen.|
+265|Reichweite|
+266|{0} pro Feld|
+267|Präzisionsabfall|
+268|Standardschaden|
+269|BP|
+270|{0} BP|
+271|AP {0} gg. Panzerung {1}|
+272|{0}% Wirksamkeit|
+273|Einheitenbonus|
+274|Trifft immer|
+275|In Verwendung|
+276|Waffe|
+277|Panzerungsdurchschlag|
+278|Ignoriert Bewegungsmalusse aufgrund des Geländes|
+279|Alles auf Zufall|
+280|Diese Waffe kann nicht im Nahkampf eingesetzt werden.|
+281|{0} EP|
+282|{0} Pkt.|
+283|Armee|
+284|{0}/{1} Pkt.|
+285|Punktelimit überschritten|
+286|Die Anzahl an Einheitenpunkten überschreitet das Limit für diese Mission.|
+287|Voraussetzungen nicht erfüllt|
+288|Um diese Mission starten zu können, müssen sich bestimmte Einheiten in deiner Armee befinden:|
+289|Spiel speichern|
+290|Speichern|
+291|Laden|
+292|Speichern ist nur während des Zugs des Spielers möglich.|
+293|Speichern ist während der Aufstellungsphase nicht möglich.|
+294|Speichern ist während einer Zwischensequenz nicht möglich.|
+295|Speichern ist während Einheitenbewegungen nicht möglich.|
+296|Manueller Spielstand|
+297|Autosave-Spielstand|
+298|In Kampagnenmission (Vorschau)|
+299|In Kampagnenschlacht|
+300|In Gefechtsschlacht|
+301|Leer|
+302|Filter|
+303|Ziele|
+304|Kampfesrausch|
+305|Ausweichen|
+306|Fernkampfstabilität|
+307|Nahkampfpräzision|
+308|Max.|
+309|Rang {0} erforderlich|
+310|Rang {0}|
+311|Verfügbare EP: {0}|
+312|Insgesamt erhaltene EP: {0}|
+313|Zugewiesene EP: {0}|
+314|Stufe {0}|
+315|Slot {0}|
+316|Nichts|
+317|Statistik|
+318|Waffen|
+319|Fähigkeiten|
+320|Zurücksetzen|
+321|Ränge von {0} zurücksetzen?|
+322|Bist du dir sicher, dass du die Ränge von {0} zurücksetzen möchtest? Hierdurch werden {1}% ({2} EP) der insgesamt erhaltenen EP dieser Einheit entfernt.|
+323|Zusammenhalt wiederherstellen|
+324|Name des Spielstands|
+325|Unter welchem Namen soll das neu gespeicherte Spiel abgelegt werden?|
+326|Diese Einheit führt bereits eine Aktion aus und kann keine Befehle erhalten.|
+327|Wiederherstellen|
+328|{0} Züge|
+329|{0} Zug|
+330|{0} Fernkampfstabilität|
+331|{0} LP-Maximum|
+332|{0} LP aktuell|
+333|{0} zusätzliche Nahkampfangriffe|
+334|{0} Auslösechance|
+335|{0} Zusätzliche Fernkampfangriffe|
+336|Felder mit Nahkämpfen können nicht als Ziel definiert werden.|
+337|Ziel zu hoch|
+338|Ziel zu niedrig|
+339|Verfehlt|
+340|Rasend|
+341|Tödlich verstrahlte Zone|
+342|Neu|
+343|Armee löschen|
+344|Löschen|
+345|Fraktion auswählen|
+346|Einheit auswählen|
+347|Einheit löschen?|
+348|Bist du dir sicher, dass du die Einheit „{0}“ löschen möchtest?|
+349|Armee umbenennen|
+350|Wähle einen neuen Namen für deine Armee.|
+351|Armee löschen?|
+352|Bist du dir sicher, dass du die Armee „{0}“ löschen möchtest?|
+353|Punkte|
+354|Armee kann nicht gelöscht werden.|
+355|Die aktuell ausgewählte Armee ist die letzte Armee der Fraktion „{0}“. Sie kann deshalb nicht gelöscht werden.|
+356|Neues Profil|
+357|Wähle einen Namen für dein neues Profil.|
+358|Profil bereits vorhanden|
+359|Ein Profil mit demselben Namen ist bereits angelegt worden.|
+360|Profil|
+361|Armee|
+362|Anmeldung bei Slitherine|
+363|Gib hier deinen Slitherine-Benutzernamen sowie dein Passwort für die Anmeldung ein.|
+364|Benutzername|
+365|Passwort|
+366|Anmeldung|
+367|Falscher Benutzername oder falsches Passwort|
+368|Verbindung wird hergestellt ...|
+369|Partie erstellen|
+370|Erstellen|
+371|Deine Fraktion|
+372|Name der Partie|
+373|Spielzugzeit|
+374|Partie von {0} – {1}|
+375|Beitreten|
+376|Beitritt erfolgt ...|
+377|Passwortgeschützt|
+378|Herausfordererfraktion|
+379|Herausforderer|
+380|Passwort für Partie|
+381|Gib das Passwort für diese Partie ein.|
+382|Der Partie konnte nicht beigetreten werden.|
+383|Falsches Passwort für die Partie.|
+384|Offene Partien|
+385|Aktive Partien|
+386|Verlassen|
+387|Fortsetzen|
+388|Partie beenden?|
+389|Bist du dir sicher, dass du diese Partie beenden möchtest?|
+390|Austritt erfolgt ...|
+391|Fehler beim Spielaustritt|
+392|Auslaufzeitpunkt|
+393|Zug|
+394|Dein Zug|
+395|Spieler 1|
+396|Spieler 2|
+397|Partie wird erstellt ...|
+398|Fehler beim Erstellen der Partie|
+399|Leere Armeen|
+400|Einige Fraktionen haben keine Armeen mit Einheiten. Du musst für jede der Fraktionen mindestens eine Armee mit Einheiten anlegen:|
+401|Diese Partie wurde von dir erstellt. Du kannst nicht gegen dich selbst antreten.|
+402|Suchfilter|
+403|Herausfordererfraktionen|
+404|Öffentliche Partien|
+405|Private Partien|
+406|Speichern im Mehrspielermodus nicht möglich.|
+407|Aufstellung auswählen|
+408|Partie wird fortgesetzt ...|
+409|Zugrecht wird weitergereicht ...|
+410|Der andere Spieler hat die Partie verlassen.|
+411|Spieler 1 siegt|
+412|Spieler 2 siegt|
+413|Warte auf Abschluss der Aktionen einiger Einheiten ...|
+414|Waffenaufstellung|
+415|Ist in diesem Zug bereits bewegt worden.|
+416|Der Pfad ist nicht direkt genug für einen Sturmangriff. Er darf nicht durch Einheiten oder Wände führen und muss relativ geradlinig verlaufen.|
+417|Überwältigt|
+418|Aktionspunkte|
+419|Bewegungspunkte|
+420|Panzerung|
+421|Bedrängt|
+422|{0} Fernkampfpräzision für Nichtpistolenwaffen|
+423|Direkter Rückseitenangriff|
+424|Rückseiten-Flankenangriff|
+425|Zurückziehen|
+426|Keine Aktionspunkte mehr übrig|
+427|Das Feld für den Rückzug ist blockiert.|
+428|Keine Bewegungspunkte mehr übrig|
+429|Braucht alle Bewegungspunkte auf|
+430|Werte beim Rückzug erhöht|
+431|Chance für krit. Treffer|
+432|{0} Chance für krit. Treffer|
+433|{0} Chance für krit. Treffer pro Kampfesrausch|
+434|Streiftreffer|
+435|KRITISCHER TREFFER!|
+436|Alle Waffen verursachen Streuschaden.|
+437|{0} Fernkampf-Panzerungsdurchschlag|
+438|{0} Nahkampf-Panzerungsdurchschlag|
+439|Ermöglicht Fliegen|
+440|+{1} Runden, bis {0} abgeklungen ist|
+441|Diese Fraktion kann nicht als Ziel definiert werden.|
+442|Ermöglicht Reaktionen auf Nahkampfangriffe und Sturmangriffe aus allen Richtungen.|
+443|{0} Lebenspunkte pro Zug|
+444|Wand|
+445|Steuerungsmodus|
+446|Tastatur und Maus|
+447|Gamepad|
+448|Steuerungsmodus ändern?|
+449|Der Steuerungsmodus {0} wurde ausgewählt. Soll diese Einstellung übernommen werden?|
+450|Pkt.|
+451|Reserve|
+452|Aktiv|
+453|Hotseat|
+454|Asynchron|
+455|HQ-Aufwertungszentrum|
+456|Fähigkeit|
+457|Befehligungsfähigkeit|
+458|Werte|
+459|Erhaltene Marken|
+460|Mission abgeschlossen|
+461|Bonusziel|
+462|{0} LP pro Untereinheit|
+463|{0} Wachsamkeit (Reichweite)|
+464|{0} Wachsamkeit (Reichweite des Kegels)|
+465|{0} Wachsamkeit (Winkel des Kegels)|
+466|Aufwerten|
+467|Rasen|
+468|Fügt den Statuseffekt „{0}“ hinzu, wenn dieser Status endet.|
+469|freigeschaltet!|
+470|Aufwertungen für HQ-Befehle|
+471|Einheitenplatzierung|
+472|Annehmen|
+473|Befehligungsfähigkeiten|
+474|BFP|
+475|Nicht genügend Befehligungspunkte|
+476|Mit dieser Fähigkeit kann keine feindliche Einheit als Ziel definiert werden.|
+477|Befehligungsfähigkeiten sind auf dieser Karte nicht möglich.|
+478|Navigation|
+479|Gruppe verlassen|
+480|Gruppe beitreten|
+481|Einheitenliste|
+482|Einheit auswählen|
+483|Liste schließen|
+484|Strategiekarte|
+485|Strategiekarte schließen|
+486|Einheitenname|
+487|Ausgeschaltete Gegner|
+488|Ungültige Seriennummer|
+489|Seriennummer|
+490|Abmelden|
+491|Einheitenbanner verbergen|
+492|Bildschirmfoto speichern|
+493|Steuermenü verbergen|
+494|Rotationsmodus|
+495|Bildausschnitt|
+496|Kameraneigung|
+497|Brennweite|
+498|Tiefenschärfe|
+499|Blendenöffnung|
+500|Belichtung|
+501|Sättigung|
+502|Kontrast|
+503|Farbtemperatur|
+504|Fotomodus: Kamera|
+505|Umrandung|
+506|Logo|
+507|Position des Logos|
+508|Fotomodus: Fokus|
+509|Fotomodus: Farbe|
+510|Fotomodus: Rahmen|
+511|Zurück auf Standard|
+512|Vignette-Effekt|
+513|{0} drücken zum Anzeigen des Steuermenüs|
+514|Oben links|
+515|Oben rechts|
+516|Unten links|
+517|Unten rechts|
+518|Logo „Battlesector“|
+519|Logo „Warhammer 40k“|
+520|Kinobalken|
+521|Eigene Einstellungen|
+522|Satt kühl|
+523|Satt warm|
+524|Klassisches Schwarzweiß|
+525|Noir|
+526|Umkreisen|
+527|Frei|
+528|Zwischensequenzen|
+529|Bildschirmfotos|
+530|Medienbrowser|
+531|Bildschirmfoto löschen?|
+532|Bist du dir sicher, dass du dieses Bildschirmfoto löschen möchtest?|
+533|{0}{1}{2}{3} Kamera verschieben / {4} Zielpunkt fokussieren / {5} Drehen / {6} Bildschirmfoto speichern / {7} Steuermenü verbergen / {8} Verlassen / {9} Kamera steigen lassen / {10} Kamera senken|
+534|Kamera verschieben|
+535|Zielpunkt fokussieren|
+536|Drehen|
+537|zum Anzeigen des Steuermenüs|
+538|{0} drücken zum Verbergen|
+539|zum Verbergen|
+540|Fotomodus|
+541|Live|
+542|Warten auf anderen Spieler ...|
+543|Bereit|
+544|(Warten auf Spieler)|
+545|Host ausgestiegen|
+546|Der Host hat die Partie verlassen.|
+547|Mitspieler ausgestiegen|
+548|Ein Mitspieler hat die Partie verlassen.|
+549|Stummschalten|
+550|Lobby|
+551|Schlacht|
+552|Aktuell keine Schlacht|
+553|Hinzufügen|
+554|Entfernen|
+555|Verbindung getrennt|
+556|Deine Verbindung ist unterbrochen. Die Verbindung wird wiederhergestellt ... (noch weitere {0} Sekunden)|
+557|Die Verbindung eines Spielers ist unterbrochen. Die Verbindung wird wiederhergestellt ... (noch weitere {0} Sekunden)|
+558|Deine Verbindung zur aktuellen Partie wurde unterbrochen.|
+559|<color=#{2}>{0}</color> spielt gegen <color=#{3}>{1}</color>|
+560|Verbleibende Zeit: {0}|
+561|Online|
+562|Offline|
+563|∞|
+564|Aktualisieren|
+565|Abklingzeit der Fähigkeit läuft|
+566|Spieler|
+567|Detaillierte Informationen über den Feind anzeigen|
+568|Auswählen|
+569|Befehl auswählen|
+570|Verfügbare Befehligungspunkte: {0}|
+571|Verlassen, ohne Änderungen zu übernehmen?|
+572|Bist du dir sicher, dass du die Aufwertungen nicht übernehmen möchtest? Alle unbestätigten Änderungen werden verworfen.|
+573|Kaufen|
+574|HQ-Aufwertungen|
+575|{0} wiederbeleben|
+576|Aktive Einheiten|
+577|Reserve|
+578|Waffen|
+579|Fähigkeiten|
+580|{0} von {1}|
+581|Einheit zu Armee hinzufügen|
+582|Einheit in Reserve verlegen|
+583|Einheit in Armee übertragen|
+584|Einheit löschen|
+585|Übersicht|
+586|Armeeinspektion|
+587|Neue Armee erstellen|
+588|Profil löschen?|
+589|Bist du dir sicher, dass du das aktuelle Profil löschen möchtest?|
+590|Eine tote Einheit kann nicht als Ziel ausgewählt werden, solange sich eine andere Einheit auf demselben Feld befindet.|
+591|Führt Fernkampfangriff gegen den Feind aus:|
+592|Spielchat stummschalten|
+593|Freund einladen|
+594|Starten|
+595|Live-Chat|
+596|Verfügbare Partien|
+597|Laufende Partien|
+598|Lobby für Live-Mehrspielermodus|
+599|Lobby für asynchronen Mehrspielermodus|
+600|Name|
+601|Leerer Slot|
+602|Spieldaten|
+603|Daten zur ausgewählten Partie|
+604|Keine Partien gefunden|
+605|Mein Zug|
+606|Zug des Gegners|
+607|Kampagne|
+608|Das Zeitalter der Karminroten Dämmerung|
+609|Neue Einheiten sind verfügbar|
+610|Kampagnen-Optionen|
+611|Schwierigkeitseinstellungen|
+612|Feindliche Verstärkung|
+613|Bessere feindliche Einheiten|
+614|Kosten für Waffenaufwertungen|
+615|Weniger HQ-Marken als Belohnung|
+616|Geringeres Armeepunktelimit|
+617|Erhöhter Kampfesrausch beim Feind|
+618|Weniger Kampfesrausch und BFP|
+619|Schwierigkeitsgrad der gegnerischen KI|
+620|Niedrig|
+621|Mittel|
+622|Hoch|
+623|Standard|
+624|Legt die Anzahl an Einheiten fest, die der Feind als Verstärkung erhält.|
+625|Erhöht die Werte der feindlichen Einheiten und damit auch den Schwierigkeitsgrad von Schlachten.|
+626|Wirkt sich auf die Menge an Kampfesrausch aus, die feindliche Einheiten im Kampf erhalten.|
+627|Verändert das Verhalten der Feind-KI und damit auch den Schwierigkeitsgrad.|
+628|Wirkt sich auf den Punktwert aus, der durch die Aufwertung der Waffe einer Einheit zu deinen Armeepunkten hinzugezählt wird.|
+629|Wirkt sich auf die Menge an HQ-Marken aus, die am Missionsende als Belohnung vergeben werden.|
+630|Wirkt sich auf die Anzahl der Punkte aus, die du in jeder Mission verfügbar haben wirst.|
+631|Wirkt sich auf die Menge an Kampfesrausch aus, die deine Einheiten erhalten. Dies hat auch Auswirkungen darauf, wie viele Befehligungspunkte du erhältst.|
+632|Die Ansicht lässt sich mit den Tasten <color=#C8914F><b>WASD</color></b>, den Pfeiltasten oder durch Gedrückthalten der linken Maustaste und Bewegen der Maus verschieben.|
+633|Du kannst die Ansicht mit der mittleren Maustaste, mit den Tasten <color=#C8914F><b>Q</b></color> und <color=#C8914F><b>E</b></color> oder durch Gedrückthalten von ALT und Bewegen der Maus rotieren.|
+634|Wähle die Einheit mit der <color=#C8914F>linken</color> Maustaste aus.|
+635|<b>BEWEGUNG</b><br><br>Bewege die Einheit zum <color=#C8914F>Zielpunkt</color> durch einen Rechtsklick auf das Feld. Die Kosten in <color=#6380AD>Bewegungspunkten</color> werden direkt neben dem Mauszeiger angezeigt.|
+636|VERNICHTE ALLE TYRANIDEN|
+637|***NICHT IN GEBRAUCH***|
+638|<b>INTERAGIEREN</b><br><br>Mit Steuerungskonsolen und Zielpunkten kann von einem angrenzenden Feld aus interagiert werden. Öffne das Tor mit dem Button <color=#C8914F>Interagieren</color> oder dem Tastenkürzel <color=#C8914F><b>I</b></color>.|
+639|Bewege (Z) die Intercessor-Einheit auf das hervorgehobene Feld.|
+640|<b>WACHSAMKEITSREICHWEITE</b><br><br>Die <color=#C8914F>Wachsamkeitsreichweite</color> einer Einheit wird mithilfe der <color=#37FCFA>Beobachtungslinie</color> dargestellt. Feindliche Einheiten außerhalb dieses Bereichs bleiben unbemerkt.|
+641|Mithilfe von „Ausrichtung ändern“ (<b><color=#C8914F>G</color></b>) in der Befehlsleiste und Auswählen eines bestimmten Feldes oder durch einen Rechtsklick auf die Einheit und Ziehen in eine bestimmte Richtung wendet sich die Einheit dorthin um.|
+642|<b>FERNKAMPFANGRIFFE</b><br><br>Zwei Faktoren, die sich auf das Ergebnis eines Fernkampfangriffs auswirken, sind die <color=#C8914F>Sichtlinie</color> und die <color=#C8914F>Optimale Reichweite</color> einer Waffe.|
+643|Du hast keine klare Sicht auf den Feind. Bewege dich per <color=#C8914F>Rechtsklick</color> zum Zielfeld, um so von einer besseren Warte aus angreifen zu können.|
+644|Von dieser Position aus können die Intercessoren optimal die geschwächten Hormaganten angreifen. Mit einem <color=#C8914F>Rechtsklick</color> auf die feindliche Einheit wird der Angriff gestartet.|
+645|<b>AUSGEWÄHLTE EINHEIT</b><br><br>In der Detailübersicht der ausgewählten Einheit findest du wichtige Informationen über diese, einschließlich ihrer <color=#8CBA61>Lebenspunkte</color>, der Menge an <color=#45D8FF>Kampfesrausch</color> und ihrer noch vorhandenen <color=#6380AD>Bewegungspunkte</color> sowie <color=#C65C34>Aktionspunkte</color>.|
+646|***NICHT IN GEBRAUCH***|
+647|<b>ABWEHRFEUER</b><br><br>Verschwende nicht deine Angriffe gegen Feiglinge, die sich nur hinter Deckungen verkriechen! Mithilfe von <color=#C8914F>Abwehrfeuer</color> wird der erste Gegner angegriffen, der sich in deine Abwehrfeuerzone begibt.|
+648|Du hast all deine Aktions- und Bewegungspunkte aufgebraucht.<br>Jetzt ist es an der Zeit, den Spielzug zu beenden.|
+649|Möge sich der Imperator deiner Seele erbarmen.|
+650|Zoomen funktioniert mit dem Mausrad oder den Tasten <color=#C8914F><b>R</b></color> und <color=#C8914F><b>F</b></color>.|
+651|Bewege die Intercessoren neben die Steuerungskonsole.|
+652|Bringe deine Intercessoren zurück in die hervorgehobene Kontrollzone des Feindes und verwende den Befehl „Zurückziehen“.|
+653|<b>ANGRIFFSINFORMATIONEN</b><br><br>Mit einem <color=#C8914F>Linksklick</color> auf eine feindliche Einheit werden dir nähere Angriffsdetails angezeigt.|
+654|<b>ZURÜCKZIEHEN</b><br><br>Deine Intercessoren-Einheit wird angegriffen und von Hormaganten <color=#C8914F>bedrängt</color>.|
+655|***NICHT IN GEBRAUCH***|
+656|***NICHT IN GEBRAUCH***|
+657|Mit der Fähigkeit <color=#C8914F>Fragmentgranate</color> kannst du die Hormaganten unschädlich machen.|
+658|Wähle eine andere Intercessoren-Einheit aus (<color=#C8914F>Linksklick</color>) und bewege sie zum Zielfeld.|
+659|Drücke <color=#C8914F><b>O</b></color> und lege mit einem Rechtsklick eine <color=#C8914F>Abwehrfeuerzone</color> fest, die der optimalen Reichweite des Boltgewehrs entspricht. Die Einheit wird dann den ersten Gegner unter Beschuss nehmen, der ein Feld innerhalb dieser Zone betritt.|
+660|Wähle den Befehl „Zurückziehen“ (<color=#C8914F><b>U</b></color>) aus und definiere die Hormaganten als Ziel. Die Intercessoren erhalten einen großen Verteidigungsbonus, während sie sich zu dem Feld in entgegengesetzter Richtung bewegen.|
+661|***NICHT IN GEBRAUCH***|
+662|<b>EINHEITENLISTE</b><br><br>Dank der Einheitenliste kannst du problemlos Einheiten anhand ihrer Rolle finden und auswählen.<br><br>Rufe die HQ-Rolle auf und wähle den Sanguiniuspriester aus.|
+663|<b>HQ-BEFEHLIGUNGSFÄHIGKEITEN</b><br><br>Die kommandierende HQ-Einheit deiner Truppen hat die Möglichkeit, HQ-Befehligungsfähigkeiten einzusetzen, die nur jeweils einer Fraktion zur Verfügung stehen. Diese Fähigkeiten erfordern <color=#C8914F>Befehligungspunkte</color>, die sich über den Verlauf der Schlacht anreichern.|
+664|Klicke auf das Symbol für das Menü der Befehligungsfähigkeiten (<color=#C8914F><b>C</b></color>), wähle die Fähigkeit „Sturmkanonen-Luftunterstützung“ aus und töte die Hormaganten.|
+665|Den restlichen Verlauf der Schlacht bist du auf dich gestellt.<br><br>Zum Ruhme des Imperators!|
+666|<b>HINWEIS:</b> Die Fähigkeit „Sturmkanonen-Luftunterstützung“ trifft ALLE Einheiten entlang von vier aufeinanderfolgenden Feldern. Wähle das erste Feld und ein zweites drei Felder entfernt aus. Du solltest einen Pfad mit so vielen Tyraniden wie möglich wählen.|
+667|***NICHT IN GEBRAUCH***|
+668|Ziehe die übrige Intercessor-Einheit zum Schutz des Korridors hinzu.|
+669|Aufgewertet|
+670|Diese Einheit ist in Raserei verfallen. Wähle aus, ob eine Fähigkeit aufgewertet werden soll oder ob die Einheit im nächsten Zug den Statuseffekt „Rasend“ erhält (+1 AP).|
+671|Diese Einheit ist in Raserei verfallen. Sie erhält im nächsten Zug +1 AP.|
+672|Untereinheiten|
+673|Einheiten mit AP|
+674|Befehligungspunkt erhalten|
+675|Nahkampfangriffe|
+676|Fernkampfangriffe|
+677|Ausgeschaltete Einheiten in dieser Schlacht und insgesamt während aller Schlachten|
+678|Im Nahkampf ausgeschaltete Einheiten|
+679|Nahkampfpräzision|
+680|Im Fernkampf ausgeschaltete Einheiten|
+681|Fernkampfpräzision|
+682|Nutzungen in dieser Schlacht und insgesamt während aller Schlachten|
+683|Fortfahren mit {0}|
+684|**Nicht festgelegt**|
+685|Aktuelle Sprachauswahl|
+686|Alle Schlachteinstellungen zufällig festlegen|
+687|Alle Schlachteinstellungen zufällig festlegen und dann Schlacht starten|
+688|Neues Profil erstellen mit dem Namen:|
+689|Die Anzahl an Feldern, die sich diese Einheit bewegen kann. Weitere Felder zu ziehen, kostet Aktionspunkte.|
+690|Wird aktiviert, wenn mindestens die Hälfte der Bewegungspunkte der Einheit in der aktuellen oder vorherigen Runde aufgebraucht wurde.|
+691|Die Anzahl an Aktionen, die diese Einheit ausführen kann. Einige mächtige Fähigkeiten kosten womöglich mehr als 1 AP.|
+692|Verringert den durch feindliche Angriffe erlittenen Schaden. Die Wirksamkeit der Panzerung verringert sich durch den Panzerungsdurchschlag der Waffe.|
+693|Wenn Kampfesrausch 100 erreicht, verfällt diese Einheit in Raserei.|
+694|Die HQ-Kommandoeinheit der Armee erhält Befehligungspunkte, wenn eine verbündete Einheit Kampfesrausch erhält, getötet wird oder ein Missionsziel erfüllt.|
+695|Dies ist die HQ-Kommandoeinheit dieser Armee. Sie erhält über den Verlauf der Schlacht Befehligungspunkte, die für Befehligungsfähigkeiten verwendet werden können.|
+696|Einheitenliste anzeigen/verbergen|
+697|Zur nächsten ungenutzten Einheit wechseln|
+698|Befehligungspunkte|
+699|HQ-Kommando|
+700|Einheitenliste verbergen|
+701|Es gibt keine Fähigkeiten, die verstärkt werden können.|
+702|Falsche Fraktion ausgewählt|
+703|Bitte wähle eine Armee der Fraktion „{0}“ aus, um diese Kampagnenmission starten zu können.|
+704|Bestimmte Einheiten erforderlich|
+705|Die folgenden Einheiten werden deiner Armee hinzugefügt:|
+706|<i>Sie sind die Wächter der Menschheit und sie kennen keine Furcht.</i> <br><br>Der standardmäßige Schwierigkeitsgrad von Battlesector. Taktik und Stärke sind gefragt, um die Herausforderungen zu meistern, die vor dir liegen.|
+707|<i>In der düsteren Finsternis einer fernen Zukunft gibt es nur noch Krieg.</i> <br><br>Die Missionen sind schwieriger und bieten kleinere Belohnungen. Eine zusätzliche Herausforderung ohne Anpassungen des Kampfsystems.|
+708|<i>Die Schreie der Unschuldigen und Bitten der Rechtschaffenen verhallen im grausamen Gelächter dunkler Götter.</i> <br><br>Deine Gegner sind zäher und schlagfertiger, die Missionen sind unerbittlich und um deine Chancen steht es nicht gut. Nur für wirklich erfahrene Battlesector-Spieler empfohlen.|
+709|Triff uns auf Discord|
+710|{0} hat die Lobby betreten.|
+711|{0} hat die Lobby verlassen.|
+712|{0} ist der Partie beigetreten.|
+713|Benutzer|
+714|Passwort verbergen|
+715|Bewegungsunschärfe|
+716|VSync|
+717|Qualität|
+718|Einsammeln|
+719|{0} drücken, um die Informationen weiter anzuzeigen|
+720|Detaillierte Schlachtinformationen während des feindlichen Spielzugs anzeigen|
+721|{0} drücken, um die Informationen zu verbergen|
+722|Partikeleffekte für Steuermenü|
+723|Kontrollzone|
+724|Pistolen-Reaktionsangriff|
+725|{0} um Ziel auszuwählen /|
+726|{0} auf das Ziel für detaillierte Informationen /|
+727|{0} oder {1} auf ein leeres Feld, um abzubrechen|
+728|{0} um eine verbündete Einheit auszuwählen /|
+729|{0} um eine feindliche Einheit auszuwählen /|
+730|{0} um ein Feld auszuwählen /|
+731|Trefferwahrsch.|
+732|<i>In unserer finstersten Stunde sind sie uns ein Leuchtfeuer der Hoffnung.</i><br><br>Für Spieler, die mit Strategiespielen nicht sonderlich vertraut sind oder hauptsächlich der Geschichte der Kampagne folgen wollen.|
+733|Initiat|
+734|Abwehrfeuer|
+735|SICHERHEITSBARRIERE UMGANGEN|
+736|FEIND GESICHTET|
+737|FEIND ELIMINIERT|
+738|HQ-EINHEITENVERSTÄRKUNG|
+739|BODENUNTERSTÜTZUNG|
+740|Normale Geschwindigkeit: {0}<br>Vorspulen: {1}<br>Überspringen: {2}|
+741|Optimal|
+742|Bild überspringen: {0}|
+743|Einheit auswählen/abwählen|
+744|Aktion ausführen|
+745|Nächste Einheit|
+746|Kamera nach links verschieben|
+747|Kamera nach rechts verschieben|
+748|Kamera vorwärts verschieben|
+749|Kamera rückwärts verschieben|
+750|Steuerung neu zuweisen|
+751|Fehler im Mehrspielermodus|
+752|Deine Spielversion {0} ist veraltet. Bitte aktualisiere dein Spiel, um den Mehrspielermodus nutzen zu können.|
+753|Neu zuweisen|
+754|Durch Drücken einer Taste wird diese „{0}“ zugewiesen.<br>Aktion wird rückgängig gemacht in {1} Sekunde(n).|
+755|Durch Drücken einer Maustaste wird diese „{0}“ zugewiesen.<br>Aktion wird rückgängig gemacht in {1} Sekunde(n).|
+756|Steuerung zurücksetzen?|
+757|Bist du dir sicher, dass du alle Steuerungseinstellungen auf die Standardwerte zurücksetzen möchtest?|
+758|{0} und {1} sind mit derselben Taste belegt.|
+759|Kamera links drehen|
+760|Kamera rechts drehen|
+761|Hineinzoomen|
+762|Herauszoomen|
+763|Bewegungsmodus starten|
+764|Waffen-/Fähigkeiten-Slot 1|
+765|Waffen-/Fähigkeiten-Slot 2|
+766|Waffen-/Fähigkeiten-Slot 3|
+767|Fähigkeiten-Slot 4|
+768|Fähigkeiten-Slot 5|
+769|Fähigkeiten-Slot 6|
+770|Fähigkeiten-Slot 7|
+771|Fotomodus starten/beenden|
+772|Einheitenliste anzeigen/verbergen|
+773|Belohnungen|
+774|Armeeliste|
+775|Kartenauswahl|
+776|Geländeart|
+777|Kartengröße|
+778|Ruine|
+779|Siedlung|
+780|Fabrik|
+781|Eliteeinheiten|
+782|Fraktionseigenarten|
+783|Geschichte|
+784|<b>Kampf-Tutorial für Fortgeschrittene</b><br>In diesem Tutorial erfährst du mehr über Sturmangriffe, Nahkampfkonter und <color=#45D8FF>Kampfesrausch</color>. <br><br>Wähle die hervorgehobene Hormaganten-Einheit aus.|
+785|<b>Sturmangriff</b><br>Sturmangriffe erfordern einen geradeaus führenden Pfad zu einem entfernten Ziel. Stürmende Einheiten erhalten +1 <color=#6380AD>Bewegungspunkt</color> und können nicht im Nahkampf gekontert werden.<br><br>Führe mit einem <color=#C8914F>Rechtsklick</color> einen Sturmangriff gegen diese Sturmmarines durch.|
+786|Bewege die Hormaganten zurück zum hervorgehobenen Feld.|
+787|<b>Pistolen-Reaktionsangriff</b><br>Einheiten mit <color=#C8914F>Pistolen</color>-Waffen erhalten einen Reaktionsangriff auf Sturmangriffe gratis. Ebenso wie bei Abwehrfeuer verliert die feindliche Einheit <color=#6380AD>Bewegungspunkte</color>, falls genügend Schaden verursacht wurde.<br><br>In der Folge kann ein Sturmangriff womöglich gar nicht sein Ziel erreichen!|
+788|Nutze den übrigen <color=#C65C34>Aktionspunkt</color> dieser Hormaganten, um vorzurücken und in Reichweite des Feindes zu gelangen.<br><br>Hierdurch werden die Sturmmarines daran gehindert, während des nächsten Zugs anzugreifen.|
+789|Die andere Hormaganten-Einheit ist in einer deutlich günstigeren Position für einen Sturmangriff auf ihr Ziel.|
+790|Nahkampf- und Sturmangriffe von hinten sorgen für eine Erhöhung der <color=#C8914F>Präzision</color>, des <color=#C8914F>Panzerungsdurchschlags</color> und des <color=#C8914F>Schadens</color>.|
+791|<b>Nahkampfkonter</b><br><br>Überlebende Einheiten kontern alle feindlichen Nahkampfangriffe, die von innerhalb ihrer <color=#C8914F>Kontrollzone</color> ausgehen.|
+792|Weiter|
+793|<b>Strategiekarte</b><br><br>Ein <color=#9E6EA4>Synapsenanführer</color> hat das Schlachtfeld betreten!<br><br>Durch Drücken von <color=#C8914F>M</color> öffnet sich die Strategiekarte und du kannst deinen nächsten Zug planen.|
+794|Durch erneutes Drücken von <color=#C8914F>M</color> kehrst du zur Schlacht zurück.|
+795|Auch wenn diese Krieger nicht direkt am Kampf teilnehmen können, so können sie sich doch so nah heranwagen, dass sie in der Lage sind, entscheidend Einfluss zu nehmen.|
+796|<b>Kampfesrausch</b><br>Einheiten erhalten für das Ausschalten eines Gegners <color=#45D8FF>Kampfesrausch</color>. Je nach <color=#C8914F>Fraktionseigenart</color> erhalten sie zusätzlich Kampfesrausch entsprechend ihrem Waffentyp, der Distanz zum Feind oder den jeweils ausgeführten Aktionen.|
+797|Die Tyranideneigenart <color=#9E6EA4>Unersättlich</color> sorgt für einen großen Kampfesrauschbonus, wenn ein Gegner mit einer Nahkampfwaffe ausgeschaltet wurde. Wird ein Gegner mit einer Fernkampfwaffe ausgeschaltet, fällt der Bonus geringer aus.|
+798|Diese Hormaganten-Einheit ist in einer hervorragenden Position, um die Sturmmarines auszuschalten, allerdings könnte sie mit ein klein wenig Hilfe 100 Kampfesrausch erhalten und in <color=#C65C34>Raserei</color> verfallen.|
+799|Wähle die hervorgehobene Hormaganten-Einheit aus.|
+800|Bringen wir zunächst die Krieger näher heran.|
+801|<b>Synapsenanführer</b><br><br><color=#9E6EA4>Synapsenanführer</color> sind der Tyranidenfraktion vorbehalten. Die Aura, die sie ausstrahlen, verleiht den Kampffertigkeiten von geringeren Kreaturen in der Umgebung einen Schub. Zudem reichern diese Kreaturen schneller Kampfesrausch an.|
+802|Bewege diese Kriegereinheit näher an die Hormaganten heran.|
+803|Abwehrfeuer & Bestätigen|
+804|Während eine Einheit mit einem Synapsenanführer <color=#9E6EA4>verbunden</color> ist, erhält sie doppelt so viel Kampfesrausch.|
+805|Alle Statuseffekte einer Einheit können oberhalb der Befehlsleiste als Tooltipps angezeigt werden.|
+806|Töte diese Sturmmarines, um so die Hormaganten-Einheit in <color=#C65C34>Raserei</color> verfallen zu lassen.|
+807|Diese Einheit ist in <color=#C65C34>Raserei</color> verfallen. Während der Kampfesrauschwert bei 100 bleibt, erhält sie +1 <color=#6380AD>Bewegungspunkt</color> sowie den vollständigen Bonus der Fraktionseigenart.<br><br>Während der Raserei erhält eine Einheit auch zwei zusätzliche Optionen oberhalb der Befehlsleiste: <color=#C8914F>Verstärken</color> und <color=#C8914F>Rasen</color>.|
+808|<b>Verstärken</b><br><br>Verstärken verbraucht 100 Kampfesrausch und verleiht einer Fähigkeit der Einheit einen beträchtlichen Einmalschub.|
+809|<b>Rasen</b><br><br>Raserei verbraucht 100 Kampfesrausch und verleiht dadurch der Einheit +1 <color=#C65C34>Aktionspunkt</color> für diesen Spielzug.|
+810|**Nicht in Gebrauch**|
+811|Den restlichen Verlauf der Schlacht obliegen die Entscheidungen dir.<br><br>Das Schwarmbewusstsein wird nicht warten ...|
+812|Du kannst Kampfesrausch dazu nutzen, um mit <color=#C8914F>Verstärken</color> die Sprungfähigkeit des Hormaganten zu steigern oder um mit <color=#C8914F>Rasen</color> einen zusätzlichen Angriff in diesem Spielzug durchzuführen.|
+813|Bewegung & Befehle|
+814|Fortgeschrittener Kampf|
+815|ST. {0}|
+816|Gift|
+817|Säure|
+818|Standard|
+819|Psi|
+820|Anklicken, um Waffen anzuzeigen/zu wechseln|
+821|Slitherine-Account erstellen|
+822|Gib unten die Daten für deinen neuen Account ein. Dein Benutzername ist für andere Spieler einsehbar.|
+823|E-Mail|
+824|Registrieren|
+825|Ein Account mit dieser E-Mail-Adresse ist bereits vorhanden.|
+826|Ein Account mit diesem Benutzernamen ist bereits vorhanden.|
+827|Account wechseln|
+828|Slitherine-Accounts:<br><br> • Können an Turnieren teilnehmen.<br> • Erhalten Benachrichtigungen per E-Mail zu PBEM-Partien (Play-by-E-Mail).|
+829|Dieser Account:<br><br> • Kann nicht an Turnieren teilnehmen.<br> • Erhält keine Benachrichtigungen per E-Mail zu PBEM-Partien (Play-by-E-Mail).|
+830|Account-Auswahl|
+831|Passwörter müssen mindestens 3 Zeichen lang sein und dürfen nur Zahlen und Buchstaben (keine Leerzeichen oder Sonderzeichen) beinhalten.|
+832|Munition|
+833|Abklingzeit|
+834|Auf der Suche nach einem Gefechtspartner? Triff uns auf Discord.|
+835|Tutorials nicht abgeschlossen|
+836|Nicht alle Tutorials wurden bisher abgeschlossen. Möchtest du das nächste Tutorial spielen, bevor du fortfährst?|
+837|Ja|
+838|Nein|
+839|Den restlichen Verlauf der Schlacht musst du nun auf eigene Faust bewerkstelligen. Zum Ruhme des Imperators!|
+840|<b>Waffen-Tutorial</b><br>In diesem Tutorial erfährst du mehr über eine wirksame Verwendung einiger Waffen der Space Marines.<br><br>Wähle die hervorgehobene Sturmmarine-Einheit aus.|
+841|Diese Sturmmarines verfügen über Flammenpistolen, die allen Einheiten auf einem Feld beträchtlichen Schaden zufügen. Bewege die Sturmmarines zum Feld neben dem der Termaganten.|
+842|Setze jetzt die Flammenpistolen gegen die Termaganten ein.|
+843|Ausgezeichnet! Mit dem Baal-Predatoren kannst du die Hormaganten ausschalten. Wähle den Baal-Predatoren aus.|
+844|Die Zwillingssturmkanone hat eine hohe Schussfolge, dank der sie besonders gut gegen Schwarmeinheiten Verwendung findet. Bewege die Einheit auf das hervorgehobene Feld, damit sie in optimale Reichweite zum Ziel gelangt.|
+845|Setze jetzt die Zwillingssturmkanone gegen die Hormaganten ein.|
+846|Ein Tyrannofex! Dieses Ungetüm hat eine dicke Panzerung, die nicht ohne Weiteres durchschlagen werden kann. Wähle den Baal-Predatoren aus.|
+847|Plasma-Interfectoren tragen <color=#C8914F>Plasmabrenner</color> als Waffe, die hohen Schaden verursachen und dicke Panzerungen durchschlagen können, dabei allerdings nur eine niedrige Schussfolge aufweisen. Bewege deine Plasma-Interfectoren zum hervorgehobenen Feld, damit die Plasmabrenner ihre optimale Reichweite ausspielen können.|
+848|Eröffne jetzt das Feuer auf den Tyrannofex.|
+849|Der Furioso Dreadnought verfügt über eine Furioso-Faust, die besonders wirksam gegen Einheiten ist, die nur aus einer einzelnen großen Untereinheit bestehen. Wähle den Furioso Dreadnought aus und bewege ihn bis auf Nahkampfreichweite an den Tyrannofex heran.|
+850|Aufgeben|
+851|Wirklich aufgeben?|
+852|Bist du dir sicher, dass du die Partie aufgeben möchtest?|
+853|Spielaufgabe wird erklärt ...|
+854|Bewege die Einheit zum hervorgehobenen Feld und greif mit dem Sturmbolter an.|
+855|Wie du sehen kannst, wurde der Angriff mit dem Sturmbolter von der Panzerung des Tyrannofex <color=#C8914F>abgeblockt</color>. Wir müssen also eine Waffe mit höherem Panzerungsdurchschlag einsetzen. Wähle die Plasma-Interfectoren aus.|
+856|Greif jetzt den Tyrannofex mit der Furioso-Faust an.|
+857|Waffen & Panzerung|
+858|Du hast alle deine Aktionspunkte aufgebraucht. Es wird Zeit, deinen Spielzug zu beenden.|
+859|** NOT USED **|
+860|** NOT USED **|
+861|Anderer Spieler hat aufgegeben|
+862|Der andere Spieler hat die Partie aufgegeben.|
+863|Du hast Partien im asynchronen Mehrspielermodus mit neuen Ereignissen.|
+864|Neue Spielereignisse|
+865|English|
+866|Deutsch|
+867|Français|
+868|Español|
+869|русский|
+870|中国人|
+871|Polski|
+872|português|
+873|한국어|
+874|Nach einmaliger Bewegung entfernt|
+875|Verstärkt|
+876|Verstärken|
+877|Du kannst deine Heldentaten und Erfolge auf dem Schlachtfeld mithilfe des Fotomodus verewigen. Drücke hierfür zu jedem beliebigen Zeitpunkt die Rücktaste, um das Spiel zu pausieren und den Fotomodus zu starten.|
+878|Warten auf Ausführung aller übrigen Aktionen|
+879|Kampagnenverlauf|
+880|Alle Waffen verursachen bei jeder Untereinheit auf einem Feld Schaden.|
+881|Gestreut|
+882|Streuschaden|
+883|Braucht {0} BP auf|
+884|Immun gegen Abwehrfeuer|
+885|Immun gegen Pistolen-Reaktionsangriffe|
+886|Immun gegen Nahkampf-Kontrollzonen|
+887|Immun gegen Pistolen-Kontrollzonen|
+888|Angriff während Rückzug|
+889|Den erhaltenen Kampfesrausch aus diesem Spielzug sparen wir besser auf und beenden den Zug hier. Im nächsten Zug kannst du den Kampfesrausch dann dazu nutzen, um in Raserei zu verfallen und auf dem Schlachtfeld zu wüten.|
+890|Automatisch erstellen|
+891|Rundenlimit|
+892|Ziel markieren|
+893|gg.|
+894|Du|
+895|Aufstellung|
+896|Ergebnis|
+897|Entscheidungswert – Höchster Punktestand bei überlebenden Einheiten: {0}|
+898|Entscheidungswert – Niedrigster Gesamtpunktestand der Armee: {0}|
+899|Entscheidungswert – Höchste Durchschnittspräzision: {0}|
+900|Unentschieden|
+901|Ziel|
+902|Zielauswahl|
+903|<b>Eroberer</b><br><br>Kontrolliere die Zielzone|
+904|<b>Strategischer Befehl</b><br><br>Kontrollpunkte übernehmen|
+905|Erneut synchronisieren|
+906|Einheit ausgeschaltet|
+907|Einheit innerhalb der Kontrollzone|
+908|Mehr eigene Einheiten als gegnerische innerhalb der Kontrollzone|
+909|Gegenspieler hat keine Einheiten in der Kontrollzone|
+910|Kontrollpunkte übernommen|
+911|Bitte wähle eine andere Karte aus, um nach den ausgewählten Zielvorgaben zu spielen.|
+912|Die Armee, die für den Computerspieler ausgewählt wurde, übersteigt die Armeegröße für Computerspieler.|
+913|Das ausgewählte Ziel erfordert bestimmte Einheiten in deiner Armee.|
+914|Einheiten geben Deckung|
+915|Benutze {0}, um die Ansicht zu verschieben.|
+916|Rotiere die Kamera mit {0}.|
+917|Benutze zum Zoomen {0}.|
+918|Wähle die Intercessoren aus, indem du den Fadenkreuz-Zeiger auf die Einheit bewegst und {0} drückst.|
+919|<b>BEWEGUNG</b><br>Bewege die Einheit zum <color=#C8914F>Zielpunkt</color>, indem du auf dem Feld {0} drückst. Die Kosten in <color=#6380AD>Bewegungspunkten</color> werden neben dem Zeiger angezeigt.|
+920|<b>INTERAGIEREN</b><br><br>Einheiten können mit Steuerungskonsolen und Zielpunkten von einem angrenzenden Feld aus interagieren. Drücke {0} auf den Intercessoren, um das Tor zu öffnen.|
+921|Die Ansicht lässt sich schnell wieder auf deine ausgewählte Einheit ausrichten, indem du {0} drückst.|
+922|Benutze den Befehl „Ausrichtung ändern“ {0} in der Befehlsleiste und wähle das hervorgehobene Feld aus.|
+923|Öffne mit {0} die Befehlsleiste.|
+924|<b>ANGRIFFSINFORMATIONEN</b><br><br>Bewege das Fadenkreuz über den Gegner, um detaillierte Angriffsinformationen anzeigen zu lassen.|
+925|Du hast keine klare Sicht auf den Feind. Bewege dich mit {0} zum Zielfeld, um so von einer besseren Warte aus angreifen zu können.|
+926|Von dieser Position aus können die Intercessoren optimal die geschwächten Hormaganten angreifen. Drücke {0} auf der feindlichen Einheit, um sie anzugreifen.|
+927|Wähle den Befehl „Zurückziehen“ aus und definiere die Hormaganten als Ziel. Die Intercessoren erhalten einen großen Verteidigungsbonus, während sie sich zu dem Feld in entgegengesetzter Richtung bewegen.|
+928|Navigiere mit {0} zum Befehl <color=#C8914F>Zurückziehen</color>.|
+929|Drücke {0}, um „Zurückziehen“ zu aktivieren, und wähle die Hormaganten aus, um sie als Ziel zu definieren.|
+930|Halte {0} gedrückt, um den Zug zu beenden.|
+931|Wähle eine andere Intercessoren-Einheit aus und bewege sie zum Zielfeld.|
+932|Benutze {0}, um zur nächsten verfügbaren Einheit zu wechseln, die noch mindestens einen <color=#C65C34>Aktionspunkt</color> übrig hat.|
+933|Wähle <color=#C8914F>Abwehrfeuer</color> in der Befehlsleiste {0} aus und lege eine Abwehrfeuerzone fest, die der optimalen Reichweite des Boltgewehrs entspricht. Die Einheit wird dann den ersten Gegner unter Beschuss nehmen, der ein Feld innerhalb dieser Zone betritt.|
+934|<b>EINHEITENLISTE</b><br><br>Benutze die Einheitenliste {0}, um problemlos Einheiten anhand ihrer Rolle zu finden und auszuwählen.|
+935|Drücke {0}, um die HQ-Einheitengruppe aufzurufen, und wähle den Sanguiniuspriester aus.|
+936|Drücke {0}, um die HQ-Befehligungsfähigkeiten aufzurufen.|
+937|{0} BP beim Verlassen des Felds|
+938|{0} hat gewonnen|
+939|Ultra|
+940|<b>Sturmangriff</b><br>Sturmangriffe erfordern einen geradeaus führenden Pfad zu einem entfernten Ziel. Stürmende Einheiten erhalten +1 <color=#6380AD>Bewegungspunkt</color> und können nicht im Nahkampf gekontert werden.<br><br>Führe mit {0} einen Sturmangriff gegen diese Sturmmarines durch.|
+941|<b>Strategiekarte</b><br><br>Ein <color=#9E6EA4>Synapsenanführer</color> hat das Schlachtfeld betreten!<br><br>Drücke {0}, um die Strategiekarte zu öffnen und deinen nächsten Zug zu planen.|
+942|Drücke {0}, um zur Schlacht zurückzukehren.|
+943|Inspiziere die hervorgehobene Hormaganten-Einheit.|
+944|Benutze {0}, um auf die Befehle „Verstärken“ und „Rasen“ zugreifen zu können.|
+945|Ermöglicht es dir, die aufgewertete Version einer Fähigkeit einzusetzen.|
+946|Gewährt +1 Aktionspunkt|
+947|Du kannst deine Heldentaten und Erfolge auf dem Schlachtfeld mithilfe des Fotomodus verewigen. Drücke hierfür zu jedem beliebigen Zeitpunkt {0}, um das Spiel zu pausieren und den Fotomodus zu starten.|
+948|Bild überspringen|
+949|Kamera steigen lassen/senken|
+950|Alle Statuseffekte einer Einheit können in den Details der Einheiteninspektion eingesehen werden. Drücke {0}, während die Einheit inspiziert wird.|
+951|Jedes angrenzende Feld ist eine Kontrollzone.|
+952|Der Weg ist blockiert|
+953|Gibt allen Fernkampfeinheiten mit Aktionspunkten den Befehl „Abwehrfeuer“ bei maximaler Reichweite.|
+954|Gedrückt halten zum Überspringen|
+955|Datenschutzrichtlinie|
+956|Analyse nicht zulassen|
+957|Eine Schlacht gegen einen Gegner über das Internet schlagen. Beide Spieler sind gleichzeitig online und können die Züge ihres Gegners in Echtzeit verfolgen.|
+958|Eine Schlacht gegen einen Gegner über den „PBEM++“-Server schlagen. Die Spieler müssen nicht gleichzeitig online sein und können ihre Züge zu einem beliebigen Zeitpunkt ausspielen.|
+959|Eine Schlacht gegen einen Gegner auf demselben Gerät schlagen.|
+960|Verringert beim Einsatz von Fernkampfwaffen die Sichtlinie, wenn andere Einheiten im Weg stehen.|
+961|Speichern ist in Tutorial-Missionen nicht möglich.|
+962|Speichern ist während des erneuten Spielens einer Kampagnenmission nicht möglich.|
+963|Partie wird intialisiert|
+964|Zug wird beendet|
+965|Partie wird gestartet|
+966|Partie wird beendet|
+967|Zum Beitreten {0} drücken.|
+968|Anmelden fehlgeschlagen, bitte versuche es erneut.|
+969|Automatisches Anmelden fehlgeschlagen|
+970|Armee vernichtet|
+971|Verbindung von {0} unterbrochen|
+972|Max. Bildwiederholrate|
+973|Helligkeit|
+974|Sicherer Darstellungsbereich|
+975|Aus|
+976|Texturenqualität|
+977|Schatten|
+978|Schattenqualität|
+979|Antialiasing|
+980|Bloom-Effekt|
+981|Umgebungsverdeckung|
+982|Profil wechseln|
+983|Passt das Grafik-Rendering an die Bildwiederholfrequenz deines Monitors an, um Tearing-Effekte zu vermeiden. Die Einstellungsoption für die maximale Bildwiederholrate ist nach dem Aktivieren von VSync nicht mehr verfügbar.|
+984|VSync|
+985|Wirkt sich auf die Anzahl von Einheiten aus, die du zwischen Missionen rekrutieren kannst.|
+986|Requirierungsaktionen|
+987|Unbegrenzt|
+988|Normal|
+989|Halbiert|
+990|Keine Requirierungsaktionen übrig|
+991|Es sind keine Requirierungsaktionen zur Rekrutierung von Einheiten übrig. Die Requirierungsaktionen werden zwischen Missionen wiederaufgefüllt.|
+992|Nebelqualität|
+993|Abklingzeit für Einheit läuft|
+994|Für diese Einheit läuft eine Abklingzeit. Sie ist erst wieder nach {1} Missionen verfügbar.|
+995|Für diese Einheit läuft eine Abklingzeit. Sie ist erst wieder nach {1} Mission verfügbar.|
+996|Unbegrenzte Infanterie|
+997|Standardinfanterie-Einheiten können ohne Requirierungsaktionen rekrutiert werden.|
+998|1 Requirierungsaktion|
+999|Neue Einheit in Reserve verlegt|
+1000|Veteranentum|
+1001|Turniere|
+1002|Rundenstart|
+1003|Aktuelle Runde|
+1004|Status|
+1005|{0} - RUNDE {1} vs. {2}|
+1006|Offene Turniere|
+1007|Beendet|
+1008|Keine Turniere gefunden|
+1009|Resultat anzeigen|
+1010|Offen|
+1011|Laufend|
+1012|Kann Turnier nicht beitreten|
+1013|Turnier beitreten?|
+1014|Bist du sicher, dass du dem Turnier beitreten möchtest?|
+1015|Beigetreten|
+1016|Noch nicht gewählt|
+1017|Wähle eine Fraktion|
+1018|Resultat|
+1019|Rundenabschlusszeit|
+1020|Verbleibende Zeit|
+1021|{0} Tg.:{1:00} St.:{2:00} Min.:{3:00} Sek.|
+1022|Gesamt|
+1023|Runde {0}|
+1024|Beliebige Taste|
+1025|Du bist in einer Turnier-Spielbegegnung an der Reihe.|
+1026|{0} Malusse durch Teildeckung werden ignoriert|
+1027|{0} Distanzschaden gegen Fahrzeuge|
+1028|{0} Panzerdurchschlagen bei Distanzschaden gegen Fahrzeuge|
+1029|{0} Wuchttrefferchance bei Distanzschaden gegen Fahrzeuge|
+1030|Kann nur sichtbare Rasterfelder anvisieren|
+1031|Zu nahe am Feind|
+1032|{0} Panzerung|
+1033|{0} Schaden erlitten|
+1034|Verhindert alle Reaktionsangriffe|
+1035|Nicht mit dem Internet verbunden.|
+1036|{0} Bonus-GP|
+1037|Spielbegegnung ist voll.|
+1038|Werte werden um {0} erhöht, wenn neben einer HQ-Kommandoeinheit|
+1039|Chance von {0}, weitere AP zu erhalten, nachdem ein Feind besiegt wurde|
+1040|Mehrspieler nicht erlaubt|
+1041|Datenschutzerklärung|
+1042|Deine persönlichen Daten werden niemals an Dritte weitergegeben und nur für Infos über unsere Spiele und Dienstleistungen verwendet. Falls du Fragen zur Aufbewahrung deiner Daten hast, schreibe bitte an support@slitherine.co.uk.|
+1043|Trennen|
+1044|Angemeldet als|
+1045|Spielbare DLC-Einheiten erlauben|
+1046|Fähigkeit wird noch aufgeladen|
+1047|Aufladungszeit|
+1048|Spielbegegnungsrunde|
+1049|Turnier-Spielbegegnung|
+1050|Turnier-Daten|
+1051|Runden|
+1052|Beginnt in|
+1053|Runde|
+1054|Resultat|
+1055|Moderatoren|
+1056|Letzter Zug!|
+1057|Chat nicht verfügbar|
+1058|Geschlossenheit der Armee|
+1059|Limit der geschlossenen Armee|
+1060|Deine Armee ist zu groß|
+1061|Deine Armee ist nicht geschlossen. Diese Spielbegegnung erfordert geschlossene Armeen.|
+1062|Diese Armee ist derzeit geschlossen. Daher erhält jede Einheit während der Schlacht zusätzlichen Kampfesrausch.|
+1063|Diese Armee erfüllt derzeit nicht die Anforderungen einer geschlossenen Armee. Daher erhalten die Einheiten während der Schlacht keinen zusätzlichen Kampfesrausch. Verringere die Anzahl der unten angezeigten Einheiten, um dies zu ändern.|
+1064|Armeehöchstzahl|
+1065|Armee speichern|
+1066|Erfordert geschlossene Armeen|
+1067|Die KI-Armee ist zu groß|
+1068|Die KI-Armee ist nicht geschlossen. Diese Spielbegegnung erfordert geschlossene Armeen.|
+1069|Die Armee von Spieler 1 ist zu groß|
+1070|Die Armee von Spieler 1 ist nicht geschlossen. Diese Spielbegegnung erfordert geschlossene Armeen.|
+1071|Die Armee von Spieler 2 ist zu groß|
+1072|Die Armee von Spieler 2 ist nicht geschlossen. Diese Spielbegegnung erfordert geschlossene Armeen.|
+1073|Unangemessener Benutzername|
+1074|Der Benutzername konnte über das Netzwerk nicht bestätigt werden|
+1075|Benutzername wird bestätigt ...|
+1076|Der Benutzername ist unangemessen. Überprüfe bitte, ob du ihn richtig eingegeben hast. Kontaktiere support@slitherine.co.uk, wenn du deinen Benutzernamen ändern möchtest.|
+1077|Turnier verlassen?|
+1078|Bist du sicher, dass du das Turnier verlassen möchtest?|
+1079|Kann Turnier nicht verlassen|
+1080|Turnier-Spielbegegnung|
+1081|Siegerbonus|
+1082|Der Sieger erhält entsprechend dem Punktwert seiner Armee und der Anzahl der nicht gespielten Spielbegegnungsrunden einen Siegerbonus.|
+1083|Spielstand löschen?|
+1084|„{0}“ wirklich löschen?<br>{1} - {2}|
+1085|Der Spielstand enthält Einheiten eines Add-ons, das nicht aktiviert ist.|
+1086|Add-on nicht aktiviert|
+1087|Verstärken|
+1088|Einnehmen|
+1089|Vox-Transmitter-Relais|
+1090|Manufactorum|
+1091|Munitionsdepot|
+1092|Eliteeinheiten|
+1093|Ehrenabzeichen|
+1094|{0} Armeepunkte|
+1095|{0}x Abklingzeit für Requirierung|
+1096|Zugang zu Eliteeinheiten.|
+1097|{0} AP wenn aufgeladen|
+1098|Strategiekarte|
+1099|Auto-Berechnung|
+1100|Zurückziehen|
+1101|Die Fraktion, die du in dieser Kampagne spielst.|
+1102|Stärke neutraler Truppen|
+1103|Stärke der KI-Truppen|
+1104|Fraktionsschlacht-Punkteziel|
+1105|Bessere neutrale Einheiten|
+1106|Bessere KI-Einheiten|
+1107|Aktiviert/Deaktiviert das System für den Armeezusammenhalt.|
+1108|Passt das Armeepunktelimit für alle feindliche Nebenfraktionen an.|
+1109|Passt das Armeepunktelimit für alle KI-Fraktionen an.|
+1110|Passt das Punkteziel für Exterminatus-Ziele gegen KI-Fraktionen an.<br>Ein höherer Wert bedeutet größere Armeeverluste beim Verlieren eines Felds.|
+1111|Einheiten feindlicher Nebenfraktionen erhalten den Statuseffekt „Verbessert“.|
+1112|Einheiten von KI-Fraktionen erhalten den Statuseffekt „Verbessert“.|
+1113|Du hast noch mindestens eine Aktion übrig. Möchtest du deinen Zug wirklich beenden?|
+1114|Biomasse|
+1115|Sieg-Engramm|
+1116|Angreifer|
+1117|Verteidiger|
+1118|Die {0} kämpfen gegen die {1}!|
+1119|Du kannst deine Truppen bis zur nächsten Schlacht oder bis zum Beginn der nächsten Runde weiter kostenlos anpassen.|
+1120|Du hast keine Aktion mehr übrig, um deine Armee zu verstärken. Du musst deinen Zug beenden, bevor du weitere Anpassungen vornehmen kannst.|
+1121|Kämpfen|
+1122|Verstärke deine Truppen|
+1123|Einheiten, die beim Versuch zu gewinnen ausgeschaltet werden. Es wird zu weiteren Verlusten kommen, falls du die Schlacht verlierst.|
+1124|{0}% Chance für {1}|
+1125|Überragender Sieg|
+1126|Klarer Sieg|
+1127|Normaler Sieg|
+1128|Knapper Sieg|
+1129|Drohende Niederlage|
+1130|Einheiten verloren|
+1131|Berechnung läuft|
+1132|Sieg|
+1133|Niederlage|
+1134|Kein Speichern beim Einnehmen oder Verstärken möglich.|
+1135|Diese Einheit würde den Zusammenhalt deiner Armee brechen. Willst du sie wirklich rekrutieren?|
+1136|In deiner Armee befinden sich keine Einheiten.|
+1137|Einheit bricht Zusammenhalt|
+1138|Keine Einheiten|
+1139|Ein Rückzug ist nur möglich, wenn keine Aktionspunkte aufgebraucht wurden. Du kannst dich zu Beginn deines nächsten Zugs zurückziehen.|
+1140|Du kannst dich nur während deines eigenen Zugs zurückziehen.|
+1141|Zurückziehen?|
+1142|Sicher zurückziehen?|
+1143|{0}-Schlacht|
+1144|Verstärkt!|
+1145|Zurückgezogen!|
+1146|{0} LP pro Kampfesrausch|
+1147|{0} Kampfesrausch nach Bewegung über {2} Felder|
+1148|Ermöglicht das Bewegen über kurze Hindernisse und ignoriert Bewegungsmalusse durch das Gelände.|
+1149|Bei jedem erfolgreichen Schuss mit dieser Waffe besteht kumulativ eine Chance von {0}, auch einen angrenzenden Gegner mit {1} Schaden zu treffen.|
+1150|{0} Schaden gegen organische Einheiten|
+1151|{0} Panzerungsdurchschlag gegen organische Einheiten|
+1152|{0} {2} Reichweite|
+1153|Wirft {0} des Schadens auf Nahkampfangreifer zurück|
+1154|{0} Schüsse|
+1155|{0} von {1} Zielen ausgewählt|
+1156|{0} zum Bestätigen /|
+1157|Autom. Fernkampfwaffen-Treffer|
+1158|{0} zum Abbrechen|
+1159|Besitzer|
+1160|Mit Basis verbunden|
+1161|Ressource|
+1162|Bonus|
+1163|Unbekannt|
+1164|Eliminiert|
+1165|Verzehrt|
+1166|Ausgelöscht|
+1167|Die Stärke deiner Armee ist gering. Du solltest in Erwägung ziehen, Verstärkung anzufordern.|
+1168|Der Feind nähert sich deiner Basis. Du solltest in Erwägung ziehen, Gebiete in der Nähe einzunehmen.|
+1169|Es befinden sich unbesetzte Felder in Reichweite. Unterwerfe neutrales Territorium, um dein Armeepunktelimit zu erhöhen.|
+1170|Es befindet sich eine unbesetzte Ressource in Reichweite. Nimm sie ein, um einen Bonus zu erhalten.|
+1171|Ein vom Feind kontrolliertes Hilfstruppen-Ressourcenfeld befindet sich in Reichweite. Nimm es ein, um dein Armeepunktelimit zu erhöhen.|
+1172|Ein vom Feind kontrolliertes Befehlserweiterung-Ressourcenfeld befindet sich in Reichweite. Nimm es ein, um deine Aktionen pro Runde zu erhöhen.|
+1173|Ein vom Feind kontrolliertes Schnellversorgung-Ressourcenfeld befindet sich in Reichweite. Nimm es ein, um die Abklingzeit für Requirierungen zu verringern.|
+1174|Alle Aktionspunkte wurden aufgebraucht. Zeit, deinen Zug zu beenden.|
+1175|Schließen|
+1176|Basis eingenommen!|
+1177|Unbesetzt|
+1178|Korrosion|
+1179|Kämpfe gegen Verbündete|
+1180|Ist diese Option aktiviert, können Fraktionen, die eigentlich miteinander verbündet sind, in der Kampagne verfeindet sein.|
+1181|Kampf|
+1182|Runden gespielt|
+1183|Felder eingenommen|
+1184|Felder verloren|
+1185|Meiste gehaltene Felder|
+1186|Basen eingenommen|
+1187|Ressourcen besessen|
+1188|Einheiten insgesamt ausgeschaltet|
+1189|Schaden insgesamt verursacht|
+1190|Kürzeste Schlacht|
+1191|Längste Schlacht|
+1192|Einheit mit bester Leistung|
+1193|Bestes Kills/Opfer-Verhältnis in der Mission|
+1194|Heilung gesamt|
+1195|Einheiten verloren/aufgestellt|
+1196|Schaden nach Waffenkategorie|
+1197|Einheiten in Raserei verfallen|
+1198|Fähigkeiten verstärkt|
+1199|Am meisten in Raserei verfallene Einheit|
+1200|Am meisten verstärkte Fähigkeit|
+1201|Armeebewertung|
+1202|Durchschnittliche Präzision|
+1203|{0} Kills|
+1204|{0} Missionen hintereinander überlebt|
+1205|{0} Felder überquert|
+1206|Kills/Opfer-Verhältnis|
+1207|{0}-mal Raserei|
+1208|{0}-mal verwendet|
+1209|Mission {0}|
+1210|Einheiten insgesamt verloren|
+1211|Foren besuchen|
+1212|Einheit|
+1213|Aufwertungen erfordern AP|
+1214|Legt fest, ob für den Kauf von Aufwertungen in der HQ-Kommandozentrale ein Aktionspunkt erforderlich ist.|
+1215|KI erhält alle Aufwertungen|
+1216|Die KI-Fraktionen erhalten alle Aufwertungen der HQ-Kommandozentrale.|
+1217|Kann nicht unterdrückt werden|
+1218|{0} maximale Reichweite|
+1219|Diese Einheit freischalten|
+1220|Freischalten von|
+1221|Für Einheiten|
+1222|Für deine Truppen sind Aufwertungen verfügbar. Du solltest in Erwägung ziehen, HQ-Aufwertungen freizuschalten.|
+1223|{0} Kampfesrausch-Erhalt durch das Ausschalten organischer Einheiten|
+1224|{0} Schaden pro Kampfesrausch|
+1225|Für diese Einheit läuft eine Abklingzeit. {0} Requirierungspunkte sind erforderlich, um sie zu kaufen.|
+1226|Keine Einheiten verloren|
+1227|Belagerung|
+1228|<b>Kontrollpunkte angreifen und verteidigen</b><br><br>Der eine Spieler übernimmt die Rolle des Angreifers, der andere Spieler die des Verteidigers:<br><br>• Pro eingenommenem Kontrollpunkt erhält der Angreifer 25 Punkte. Der Verteidiger kann vom Angreifer eingenommene Kontrollpunkte nicht zurückerobern.<br><br>• Es dauert mehrere Runden, bis ein Kontrollpunkt eingenommen wurde. Die Einheit, die den Kontrollpunkt einnimmt, kann in dieser Zeit nicht bewegt werden und muss daher gut verteidigt werden.<br><br>• Der Verteidiger erhält Punkte für das Ausschalten von Einheiten des Angreifers. Nur der Verteidiger kann auf diese Weise Punkte erhalten.<br><br>• Der Verteidiger verfügt über ein größeres Aufstellungsgebiet, was es ihm zu Beginn der Partie ermöglicht, Einheiten in größerer Nähe zu den Kontrollpunkten aufzustellen.<br><br>• Der Verteidiger erhält zu Beginn seiner Runde automatisch Verstärkung, falls seine Armee fast aufgerieben ist.|
+1229|Erobern|
+1230|Eroberung ({0} Runde/Runden übrig)|
+1231|Nur der Angreifer kann auf Kontrollpunkten stehen.|
+1232|<b>Belagerung</b><br><br>Die Kontrollpunkte erobern|
+1233|<b>Belagerung</b><br><br>Die Kontrollpunkte verteidigen|
+1234|<b>Belagerung</b><br><br>Der Angreifer muss die Kontrollpunkte erobern. Der Verteidiger muss die Kontrollpunkte verteidigen.|
+1235|Kosten für Beschleunigung: {0} Requirierungspunkte|
+1236|Spielen als|
+1237|Einladen|
+1238|Ausladen|
+1239|Der Transporter ist voll.|
+1240|In dieser Runde bereits ausgeladen.|
+1241|<b>Kapazitätslimits</b><br><br>Einheit: {0}<br>Untereinheiten: {1}|
+1242|Weiter|
+1243|Verstärkungspunkte: {0}|
+1244|Wellen überlebt|
+1245|Dämonen ausgeschaltet|
+1246|Punkte für ausgeschaltete Dämonen|
+1247|Armeegröße-Multiplikator|
+1248|Bonus für überlebte Wellen|
+1249|Genutzte Verstärkungspunkte|
+1250|Diese Einheit kann nicht als Ziel definiert werden.|
+1251|Rangliste|
+1252|Welt|
+1253|Du|
+1254|Freunde|
+1255|Ist diese Option aktiviert, folgen immer weitere Angriffswellen der Dämonen und die Partie endet nur, wenn deine Armee vernichtet wurde.|
+1256|Feindliche Fraktionen|
+1257|Wie viele Punkte du nach jeder Welle für Verstärkung erhältst.|
+1258|Bonus für kleinere Armee|
+1259|Bonus für verbleibende Runden|
+1260|Welle|
+1261|Welle beendet|
+1262|Auffrischen|
+1263|Bronze|
+1264|Silber|
+1265|Gold|
+1266|Schlachtfeldhilfe|
+1267|Standard|
+1268|Wirkt sich abhängig von der Größe und Agilität der Einheit auf die Präzision feindlicher Angriffe aus.|
+1269|{0} Fernkampfstabilität pro Kampfesrausch|
+1270|{0} Panzerungsdurchschlag pro Kampfesrausch|
+1271|Interface-Größe|
+1272|{0} Kampfesrausch-Malus für ungenutzte Aktionspunkte|
+1273|Analyse deaktiviert|
+1274|Analyse nicht zulassen|
+1275|Analysedaten werden ausschließlich zur Verbesserung des Spiels verwendet. Die Erhebung von Analysedaten wirklich nicht zu lassen?|
+1276|Eroberung und Kontrolle|
+1277|KI-Requirierungen|
+1278|Legt fest, wie viele Einheiten die KI zwischen Missionen rekrutieren kann.|
+1279|Fehler beim Starten|
+1280|Ein kritischer Fehler ist aufgetreten. Sollte das Problem weiterhin bestehen, bitte die Spieldaten überprüfen und/oder das Spiel neu installieren.|
+1281|Standardmäßig Nahkampfwaffen gegen angrenzende feindliche Einheiten einsetzen|
+1282|<b>Eroberung und Kontrolle</b><br>Vernichte den Feind, bevor er die Kontrollzone besetzen kann.|
+1283|<b>Eroberung und Kontrolle</b><br>Der Angreifer muss die Kontrollzone besetzen und der Verteidiger muss den Angreifer vernichten.|
+1284|<b>Eroberung und Kontrolle</b><br>Besetze die Kontrollzone.|
+1285|Aufladen im Gange|
+1286|Aktiv. +{0} AP|
+1287|Schlachtfeld-Beförderung|
+1288|Kampfesrausch: {0} pro ausgeschalteter Untereinheit|
+1289|<b>Besetze die Zielzone, um Zugang zum wichtigen Ressourcenfeld zu haben.</b><br><br>Der Angreifer erhält 5 Punkte für jede eigene Einheit in der Kontrollzone und verliert 5 Punkte für jede Einheit des Verteidigers in der Kontrollzone.<br><br>Der Verteidiger erhält Punkte für das Ausschalten der Einheiten des Angreifers.|
+1290|Feindliche Einheiten in der Kontrollzone|
+1291|Eigene Einheiten in der Kontrollzone|
+1292|Waaagh-Beutä|
+1293|Nächste Einheit mit BP|
+1294|Waffe wird nachgeladen|
+1295|Munition-Nachladedauer|
+1296|Die minimale Armeegröße für „Dämoneneinfall“ beträgt {0}.|
+1297|Verfügbar nach {0} Wellen|
+1298|Verfügbar nach der nächsten Welle|
+1299|Indikator für direkten Rückseitenangriff anzeigen|
+1300|Blutzoll|
+1301|Gelände|
+1302|Gameplay|
+1303|Atmosphäre|
+1304|Props|
+1305|Neue Karte erstellen|
+1306|Karteneditor|
+1307|Breite|
+1308|Höhe|
+1309|Vorlage|
+1310|Benutzerdefinierte Aufstellungszonen|
+1311|Eroberungszonen|
+1312|Eroberungspunkte|
+1313|{0} Fernkampfschaden pro Kampfesrausch|
+1314|{0} Fernkampfpräzision gegen diese Einheit|
+1315|{0} Präzisionsabfall gegen diese Einheit|
+1316|Innerhalb von {0} Feldern wirksam|
+1317|Meine Karten|
+1318|Heruntergeladene Karten|
+1319|Bearbeiten|
+1320|Online stöbern|
+1321|Duplizieren|
+1322|„{0}“ wirklich löschen?|
+1323|Veröffentlichen|
+1324|Erstelle ein Änderungsprotokoll, um die Spieler wissen zu lassen, welche Neuerungen dieser Release bietet.|
+1325|Kartendetails|
+1326|Beschreibung|
+1327|Fehler|
+1328|Erfolg|
+1329|Karte erfolgreich veröffentlicht.|
+1330|Benutzerdefinierte Karte nicht installiert:<br>{0}|
+1331|Lokale Karte nicht gefunden:<br>{0}|
+1332|Aktivieren|
+1333|{0} Felder verfügbar|
+1334|Größe|
+1335|Sehr klein|
+1336|Klein|
+1337|Mittel|
+1338|Groß|
+1339|Sehr groß|
+1340|Natur|
+1341|Konstruktionen|
+1342|Kategorie|
+1343|Wände|
+1344|Objekte|
+1345|Decals|
+1346|Imperium|
+1347|Zivil|
+1348|Natürlich|
+1349|Bebaut|
+1350|Üppige Vegetation|
+1351|Trocken|
+1352|Zerklüftet|
+1353|Flach|
+1354|Benutzerdefinierte Karten|
+1355|Geringe Dichte|
+1356|Hohe Dichte|
+1357|Generierte Karten|
+1358|Gestalte deinen Planeten|
+1359|Alle Modi|
+1360|Neuer Modus|
+1361|Einen Namen für deinen neuen Spielmodus erstellen. Diese Karte kann dann als Einzelspielerkarte gespielt werden.|
+1362|Einheiten|
+1363|Die Daten für diesen Spielmodus wirklich löschen? Die Aktion kann nicht rückgängig gemacht werden.|
+1364|Pinselstärke|
+1365|Min. Höhe|
+1366|Max. Höhe|
+1367|Größe|
+1368|Sand|
+1369|Gras|
+1370|Schlamm|
+1371|Felsen|
+1372|Künstlich|
+1373|Azimut|
+1374|Zenit|
+1375|Sonne|
+1376|Rot|
+1377|Grün|
+1378|Blau|
+1379|Nebel|
+1380|Farbe|
+1381|Nachbearbeitung|
+1382|Dichte|
+1383|Intensität|
+1384|Gefecht-Musik verwenden|
+1385|Stärke|
+1386|Radius|
+1387|Himmel|
+1388|Boden|
+1389|Linear|
+1390|Exponentiell|
+1391|Exponentiell zum Quadrat|
+1392|Anfang|
+1393|Ende|
+1394|Temperatur|
+1395|Weißabgleich|
+1396|Sättigung|
+1397|Farbton|
+1398|Dunkle Töne|
+1399|Mitteltöne|
+1400|Helle Töne|
+1401|Kampfauszeichnung|
+1402|Umgebung|
+1403|Logo erforderlich|
+1404|In den Spielmodus wechseln und im Fotomodus ein Foto machen.|
+1405|Version|
+1406|Feld-Props|
+1407|Freie Props|
+1408|Kartenfoto speichern|
+1409|Pinselgröße|
+1410|Position|
+1411|Richtung|
+1412|Felder|
+1413|Raster|
+1414|Benutzerdefinierte Kampagne|
+1415|Mods verwalten|
+1416|Benutzerdefinierte Kampagnen|
+1417|Meine Kampagnen|
+1418|Heruntergeladene Kampagnen|
+1419|Neue Kampagne erstellen|
+1420|Eine Mehrspielerpartie mit einer lokal gespeicherten Karte erstellen. Nur Spieler, die ebenfalls über diese Karte verfügen, können beitreten.|
+1421|Hinweis|
+1422|Spieler wählt Fraktion|
+1423|Ist lokaler Spieler|
+1424|Zulässige Fraktionen|
+1425|„{0}“ wirklich entfernen?|
+1426|Hochladen ...|
+1427|Authentifizieren ...|
+1428|Kampagnenbriefing|
+1429|Missionsbriefing|
+1430|Missionen|
+1431|Missionsname|
+1432|Kampagnenname|
+0|모든 적을 제거하십시오|

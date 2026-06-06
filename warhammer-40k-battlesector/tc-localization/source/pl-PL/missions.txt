@@ -1,0 +1,457 @@
+1|Zabezpieczono progenoidy.|
+2|Wydostań się z zasadzki egzokrynów.<br>Wyeliminowano <b>{0}</b> z 3 egzokrynów.|
+3|Broń brata Quindara przed hordą Tyranidów.<br><b>{0}</b> z 4 tur|
+4|Osada|
+5|Pozbądź się wszystkich wrogów.|
+6|Obroń oddział.|
+7|Ochroń brata Aetura.|
+8|<b>Brat Aeturo</b><br>Odzyskaj geneziarno poległych Krwawych Aniołów.<br>Odzyskano:<b>{0}</b> z 4|
+9|Zniszcz wszystkich Tyranidów|
+10|<b>Sierżant Carleon</b><br>Zabezpiecz przekaźnik nadajnika voxowego.|
+11|Miejsce Próby|
+12|Inicjacja|
+13|Jadowite zepsucie|
+14|Przekaźnik nadajnika voxowego|
+15|Uzbrojenie i zaopatrzenie|
+16|Strefa rozkładu|
+17|Lord dowódca Dante zamierza zasilić szeregi 10. kompanii zwiadowczej bezprecedensową liczbą nowych rekrutów, ale póki co jedynymi dostępnymi posiłkami, które mogą zająć się odbudową zakonu, są nowi Primaris, którzy wysiadają z frachtowca arcymaga Cawla.<br><br>Po inwazji floty Lewiatan wysoki kapłan, brat Corbulo wraz z Krwawym Duchowieństwem podjął się straszliwego zadania – odzyskania progenoidów wszystkich braci, którzy stracili życie, broniąc świętej planety Baal. Działania brata Aetura, który kontynuuje jego prace na księżycu Baal Secundus, mają kluczowe znaczenie dla dalszego funkcjonowania Krwawych Aniołów i kolejnych zakonów, które tu walczyły.<br><br>Ten bunkier z amunicją leży po drodze do strefy rozkładu Xenos, w której Aeturo utracił łączność z sierżantem Pentaciem. Chociaż nie ma ryzyka, że broń z tego bunkra zostanie skradziona przez bezradnych Tyranidów, zapasy amunicji pozwolą Carleonowi wezwać posiłki w postaci nowych jednostek Piekielników oczekujących na Baalu.|
+18|Zastąpcie siostry. Działania Xenos już nas srogo kosztowały.|
+19|Miejsce Próby to święty obszar, na którym sprawdza się możliwości kandydatów do służby w szeregach Zakonu. Ci, którzy przetrwają próby walki i sprostają oczekiwaniom członków komisji rekrutacyjnej, zostają dopuszczeni do nowicjatu Krwawych Aniołów.<br><br>Ranga porucznika została przywrócona po zmianach w Codex Astartes wprowadzonych przez prymarcha Guillimana. Carleon jest jednym z pierwszych Krwawych Aniołów, którzy dostępują zaszczytu uzyskania tej niedawno przywróconej rangi.|
+20|Sierżant Carleon jest szanowany za to, w jaki sposób szkoli nowych braci wcielonych do ósmej kompanii Krwawych Aniołów. Specjalizuje się w taktyce i zawiłościach doktryny szturmowej opisanych w Codex Astartes.<br><br>Liczebność Krwawego Duchowieństwa znacznie się zmniejszyła po ataku Lewiatana. Podczas inwazji konsyliarze zakonu musieli walczyć na pierwszej linii z rojem Xenos. Jeśli ktoś wzywa pomocy przez radio voxowe, przebywając samotnie na Baal Secundus, to trzeba mu pospieszyć z odsieczą przez słone równiny.|
+21|Starożytny kronikarz Donatus Gallian zdawał sobie sprawę, jakie zniszczenia spowodowałyby jego moce psioniczne, gdyby uległ skazie swojej krwi. Starał się znaleźć równowagę między szlachetnością a pragnieniem odziedziczenia genoziarna swojego pana.<br><br>Rezultatem tych działań było stworzenie broni mocy znanej jako Laska Galliana, która aktywnie wysysa gniew tego, kto ją dzierży. Dzięki niej Donatus uniknął strasznego i niszczycielskiego losu, jaki czekał wielu jego braci w boju. Ku frustracji Zbrojowni i kronikarzy nigdy nie udało się odtworzyć efektu wysysania emocji, który zastosowano w tym relikcie.<br><br>Ostatnim znanym wojownikiem, który dzierżył Laskę Galliana, był kodyfikator Mordos. Możliwe, że jacyś bracia w boju znaleźli ten relikt podczas Dewastacji i przynieśli go do tego bastionu, zanim zostali pokonani przez Tyranidów.|
+22|Tyranidzki proces konsumpcji planety obejmuje zastosowanie zbiorników rozkładu, w których obcy rozpuszczają cały zgromadzony materiał organiczny, a także wieży kapilarnych, które czekają na podłączenie się do nich statku roju w celu przepompowania na niego biomasy.<br><br>Nikt nie zna prawdziwych zamiarów tyranidzkiego Umysłu Roju. Floty-roje najeżdżają każdą napotkaną planetę, przytłaczają obrońców liczebnością i konsumują każdą drobinę biomasy, aby zasilić flotę i umożliwić jej dalszy ruch.<br><br>Gdyby wyrwa Cicatrix Maledictum nie otworzyła się w odpowiednim momencie, z planety Baal i jej księżyca Baal Secundus pozostałyby jedynie martwe skorupy, a flota-rój Lewiatan kontynuowałaby swoją niszczycielską podróż przez Czerwoną Bliznę, pożerając wszystko, co stanie jej na drodze.|
+23|Era Karmazynowego Świtu|
+24|Po dewastacji planety Baal Krwawe Anioły starają się uleczyć swoją ojczyznę i zakon. Po tym jak od zagłady uratowała ich krucjata Indomitus, ich szeregi zasilili nowi kosmiczni marines Primaris. Na miejscu niewiele pozostało z tyranidzkiej inwazji, dlatego prymarcha Roboute Guilliman pragnie opuścić Baala i kontynuować swoją krucjatę.<br><br>Sierżant Carleon z ósmej kompanii powraca na księżyc Baal Secundus – jego zadaniem jest ocena gotowości bojowej tych nowych żołnierzy Primaris. Gdy na jego ojczysty księżyc zmierza kapsuła desantowa, on oddaje się rozważaniom na temat jego nowych braci w boju oraz ceny, jaką przyjdzie mu zapłacić za to, że nieoczekiwanie przeżył atak nieustępliwej floty-roju Lewiatan...|
+25|Zabezpieczono wejście do bunkra.|
+26|Tyrannofex zlikwidowany.|
+27|Ustanowiono połączenie skupiające.|
+28|Egzokryn zlikwidowany.|
+29|Zabezpieczono Laskę Galliana.|
+30|Baal Secundus i Baal Primus to dwa księżyce orbitujące wokół macierzystej planety Krwawych Aniołów – Baala. Do końca Mrocznej Ery Technologii oba księżyce miały być zamieszkane przez wysoce zaawansowane cywilizacje.<br><br>Niewiele wiadomo o tych dawnych cywilizacjach, ale panuje powszechne przekonanie o tym, że ich konflikt, w którym na bezprecedensową skalę zastosowano broń jądrową i wirusową, spowodował powstanie śmiertelnie niebezpiecznych stref promieniowania, które obecnie znaczą powierzchnię księżyca Baal Secundus.|
+31|Pozbądź się guntów.|
+32|Wyeliminuj wszystkie pozostałe siły Tyranidów.|
+33|Zabezpiecz bunkier z amunicją.|
+34|Chroń drednota kronikarza.|
+35|Pomóż siostrom w boju.<br>Siostra Verity musi przeżyć.|
+36|Wyłom w Niebiańskim Murze.|
+37|Większość tyranidzkich form życia w izolacji wykazuje proste i zwierzęce zachowania, ale mogą nimi dowodzić przywódcy synaptyczni. Te synaptyczne istoty potrafią nawiązać kontakt mentalny z bezlitosną wolą Umysłu Roju.<br><br>Gdy kilku przywódców synaptycznych ma za zadanie sformować siły bojowe, tworzą między sobą sieć złożoną z telepatycznych węzłów, aby dyrygować pomniejszymi formami życia i manipulować nimi w celu stworzenia hiperzorganizowanej i bezwzględnej sfory łowców.|
+38|Pozbądź się Xenos z Kemrenderu|
+39|Przyjdź z pomocą Misji Baal Adepta Sororitas.<br>Jednostki pozostałe przy życiu: <b>{0}</b> z 7|
+40|Wyzwól Upadek Anioła|
+41|Odczytaj|
+42|Broń Quindara do czasu, aż odczyta położenie głównego przywódcy synaptycznego.|
+43|Eskortuj brata Quindara do przekaźnika astropatycznego.|
+44|<b>Obroń strefę.</b><br>Obroń miejsce katastrofy stormravena.|
+45|Aktywuj przekaźnik za pomocą drednota kronikarza.|
+46|Zabij tyrannofeksa.|
+47|Pozbądź się wszystkich sił Tyranidów.|
+48|<b>Brat Aeturo</b><br>Odzyskaj geneziarno sierżanta Pentaciego.|
+49|Przekaźnik astropatyczny|
+50|W okresie Dewastacji Baala przekaźnik astropatyczny znajdował się w rękach zakonu następców Karminowych Ostrzy. Gdyby chór znajdujący się w środku nie wytrzymał ataku, krucjata Indomitus nie odnalazłaby drogi na planetę Baal i nie mogłaby udzielić pomocy synom Sanguiniusa.<br><br>Zbrojmistrzowi Croginaksowi powierzono zadanie polegające na eskortowaniu brata Quindara i monitorowaniu podatności tego psionika na skazy krwi. Gdyby kronikarz wykazywał jakiekolwiek oznaki popadania w Czarny Szał, to zbrojmistrz będzie odpowiedzialny za rozbrojenie i zdezaktywowanie drednota. Jeśli mu się nie uda, nastąpi niepowstrzymany szał zniszczenia.|
+51|Dezaktywuj przepływ prometeum w segmencie primus.|
+52|Dezaktywuj przepływ prometeum w segmencie secundus.|
+53|<b>Carleon</b><br>Spotkaj się z siostrami w boju.|
+54|Sterowanie bramą aktywowane.|
+55|Wyeliminowano tervigona będącego przywódcą synaptycznym.|
+56|Znajdź główny węzeł synaptyczny.|
+57|Aktywowano mechanizm zabezpieczający bramę.|
+58|Znajdź kronikarza i odzyskaj jego geneziarno.|
+59|Znajdź Laskę Galliana.|
+60|Skok Anioła|
+61|Otwórz bramy Kemrenderu.|
+62|Utrzymaj Bramy Kemrenderu i pozbądź się Xenos|
+63|Zabij tervigona.|
+64|Pozbądź się Tyranidów z giełdy solnej.|
+65|Chroń miejsce, w którym znajduje się ciało brata Quindara|
+66|Pomóż siostrom w boju.<br>Oddziały, które przetrwały:<b>{0}</b>z 3|
+67|Pomóż jednostkom Kompanii śmierci zginąć z honorem.<br>Jednostki Kompanii śmierci zabite w walce: <b>{0}</b> z 5|
+68|Zabij tyrana z Baal Fortunaty.|
+69|Pozbądź się pozostałych Tyranidów.|
+70|Przepływ pomocniczy przekierowany.|
+71|Wstrzymano protokół przepływu pomocniczego.|
+72|Zniszcz hormagunty.|
+73|Zniszcz wszystkie węzły zarazy (ukończono: {0}%).|
+74|Oczyść ten obszar z Tyranidów.|
+75|Przepływ prometeum w segmencie primus zdezaktywowany.|
+76|Przepływ prometeum w segmencie secundus zdezaktywowany.|
+77|OPCJONALNIE: sierżant Carleon musi zadać ostateczny cios tyrannofeksowi.|
+78|Kapitan Matarno|
+79|Oczyść kanion Rzeki Wiatru z Xenos|
+80|Odpieraj ataki hordy.<br><b>{0}</b> z 6 rund|
+81|Podejdź do ciała Quindara.|
+82|Aktywuj trzy układy zabezpieczające bramę.|
+83|Pierwszy przełącznik zabezpieczenia bramy aktywowany [pozostało tur: {0}].|
+84|Drugi przełącznik zabezpieczenia bramy aktywowany [pozostało tur: {0}].|
+85|Trzeci przełącznik zabezpieczenia bramy aktywowany [pozostało tur: {0}].|
+86|Imperialne Ruiny|
+87|Liczne komandorie Zakonu Naszej Umęczonej Pani towarzyszyły prymarchowi Roboute’owi Guillimanowi w trakcie krucjaty Indomitus, niosąc światło Imperatora do ciemnych i zapomnianych zakątków galaktyki.<br><br>Przeorysza Martilja dowodzi Misją Baal, która ma pomóc w odbudowywaniu społeczności Czerwonej Blizny zniszczonej przez flotę-rój Lewiatan. Nawet w czasach odbudowy i żałoby nie ma miejsca na herezję.<br><br>Ponieważ Dante i Czerwona Rada czekają na opuszczenie planety przez krucjatę Indomitus, uznano, że siostry z Misji Baal powinny przenieść się na księżyc Baal Secundus.|
+88|Czerwona Rada serdecznie powitała przeoryszę Martilję jako tymczasową doradczynię, która teraz służy radą komandorowi Dantemu i dowództwu jego zakonu. W trakcie pobytu w twierdzy Arx Angelicum kanoniczka otacza się skromną strażą honorową złożoną z niebianek.<br><br>Ponieważ większość Misji Baal dotyczy prac logistycznych, odbudowy i działalności misyjnej na księżycu Baal Secundus, siostrę przełożoną Verity wysłano tam, aby dołączyła do ósmej kompanii Krwawych Aniołów i pomogła w eliminowaniu pozostałych Tyranidów na tym księżycu.<br><br>Siostra przełożona Verity to bardzo doświadczony oficer i żołnierz. Jej spokojne usposobienie skrywa wielką żarliwość, która uwidacznia się dopiero na polu bitwy.|
+89|Kemrender to największa placówka przetwórcza i handlowa na słonych równinach, co czyni z niej jedną z głównych osad na księżycu Baal Secundus. Podobnie jak inne miasta Kemrender został opuszczony przez mieszkańców, zanim Lewiatan pojawił się nad Baalem.<br><br>Mówi się, że Guilliman już nie może się doczekać upadku sieci synaptycznej na księżycu Baal Secundus. Dante, który jak zawsze wykazuje się cierpliwością, czeka na wieści o powodzeniu misji od porucznika Carleona.|
+90|Bramy Kemrenderu|
+91|Siostra Verity|
+92|Miot genokradów|
+93|Genokrady to niewidoczni sprawcy tyranidzkiego koszmaru. Kryją się w ciemnych zaułkach, osłabiają i zakażają lokalnych mieszkańców oraz powodują gnicie planety od środka. Następnie czekają, aż flota-rój znajdzie swoje sługi i da sygnał do walki.<br><br>Te organizmy będące awangardą floty-roju są wyjątkowe, ponieważ w obrębie miotu utrzymują pewną formę kontaktu telepatycznego. Nie potrzebują pomocy przywódcy synaptycznego, który zaplanuje i wprowadzi w życie odpowiednią strategię.<br><br>Ponieważ w Kemrenderze zagnieździł się miot genokradów, odzyskanie celu będzie znacznie trudniejsze. Wystarczy, że jeden genokrad przeżyje, a zagrożenie wciąż będzie kryć się głęboko w mrocznym sercu tego księżyca.<br><br>W tej misji wsparcie powietrzne z siedziby głównej będzie niedostępne.|
+94|Giełda solna|
+95|Jeżeli sól jest krwią Baalfory, to giełda solna w Kemrenderze jest jej udręczonym sercem. Kiedyś kanałami tego miasta płynęły minerały i piasek, które pompowano i wypompowywano według kaprysu kupców i handlarzy. Mrok, który zadomowił się w tym factorum, musi zostać całkowicie rozproszony.<br><br>Chociaż nie można porównywać jej skali z pierwotną liczebnością floty-roju Lewiatan, krucjata Indomitus sama w sobie jest imperium i rzuca długi cień na układ Baala. Nikt nie odważy się powiedzieć złego słowa o prawdziwym synu Imperatora, ale ciągła obecność Guillimana opóźnia odbudowę, ponieważ Baal i Indomitus muszą dzielić się zasobami.|
+96|Bitwa o Upadek Anioła|
+97|Upadek Anioła powstał w miejscu, gdzie znaleziono kapsułę chroniącą nowo narodzonego prymarchę Sanguiniusa. Wielkie miasto, które powstało tu od tego czasu, jest świadectwem szlachetności i determinacji Wielkiego Anioła i jego synów.<br><br>Misja Baal Zakonu Naszej Umęczonej Pani ma być głównym wsparciem w odbudowie księżyca Baal Secundus. Siedziba główna misji powstaje w pobliżu cokołu posągu Wielkiego Anioła w opustoszałym w dużej części mieście.|
+98|Blokada na Rzece Wiatru|
+99|Wiatry w kanionie Rzeki Wiatru tworzą śmiertelnie niebezpieczną powietrzną drogę, którą wyruszają śmiałkowie chcący sprawdzić swoją wytrzymałość przed przystąpieniem do prób inicjacji.<br><br>Każdego zabitego Tyranida zastępuje tuzin kolejnych czyhających tuż za rogiem. Jasne jest, że ich znaczne siły wciąż ukrywają się gdzieś na księżycu Baal Secundus i że dowodzi nimi potężny synaptyczny przywódca.|
+100|Skok Anioła|
+101|Niedawno widziano harpię, która zaatakowała siedzibę główną Misji Baal Adepta Sororitas w Upadku Anioła, jak leciała w kierunku tego szczytu.<br><br>Przy Skoku Anioła, z którego Carleon i wielu innych pierworodnych Krwawych Aniołów skakało na swych prowizorycznych skrzydłach, czeka gruby splot synaptycznych aberracji.<br><br>Wielu śmiałków pragnących dołączyć do zakonu skacze z tego czarnego szczytu, aby dać się ponieść prądom powietrznym w kanionie Rzeki Wiatru ku zbawieniu lub śmierci.|
+102|Ziemie Duchów|
+103|Ziemie Duchów to zrujnowane pustkowie. To wszystko, co zostało po wielkiej cywilizacji, która w Mrocznej Erze Technologii prosperowała na księżycu Baal Secundus.<br><br>Nie wiadomo, co wywołało wojnę między cywilizacjami księżyców Baal Secundus i Baal Primus. W wielu mitach księżyce te opisuje się jako walczące rodzeństwo, które w końcu zostało zniszczone przez broń o niewyobrażalnej sile. Strefy śmiertelnie niebezpiecznego promieniowania, które znaczą powierzchnię księżyca Baal Secundus, są na to dowodem.|
+104|Brat Quindar|
+105|Szok po śmierci Sanguiniusa w szczytowym momencie Herezji Horusa rozszedł się niczym psioniczna fala uderzeniowa po całym dziewiątym legionie. Po dziś dzień pamięć o zdradzie wpływa na genoziarno Krwawych Aniołów. <br><br>Gdy następstwa korzystania z mocy psionicznych stają się zbyt trudne do zniesienia, brat w boju zaczyna mieć halucynacje przepojone uczuciem gniewu i ulega Czarnemu Szałowi. Nawet ci bracia, którzy zostali pochowani w trumnie na pokładzie drednota, nie są odporni na zagrożenia wpisane w ich genoziarno.<br><br>Chociaż istnienie Czarnego Szału nie jest tajemnicą, Krwawe Anioły starają się do minimum ograniczyć dowody na istnienie skazy, których mogłyby się doszukać osoby spoza zakonu, zwłaszcza gdy chodzi o psioników.|
+106|Tyran z Baala|
+107|Wśród wielu drapieżników tyran roju zajmuje najwyższą pozycję w zastępach Tyranidów. Funkcjonuje jako bezpośredni łącznik z wolą Umysłu Roju, a jego obecność tłumi dzikie zachowania każdej niższej formy życia wokół niego.<br><br>Bez tyrana roju obecni na księżycu Baal Secundus Tyranidzi zaczną się dzielić na coraz mniejsze grupki i będzie można ich całkowicie wyeliminować.|
+108|Mosty|
+109|Strefa promieniowania|
+110|Lądowisko|
+111|Laska Galliana|
+112|Plac Dziesięcin|
+113|Szczyt Roju|
+114|Przetrwaj bombardowania harpii i nadejście posiłków roju.|
+115|<b>Quindar</b><br>Dotrzyj na szczyt Skoku Anioła.|
+116|Obroń bunkier przed nacierającymi posiłkami Tyranidów (<br><b>{0}</b> z 3 tur).|
+117|Zlikwiduj klaster synaptyczny.|
+118|<b>Zbrojmistrz Croginax</b><br>Zabezpiecz Laskę Galliana.|
+119|<b>Zbrojmistrz Croginax</b><br>Ucieknij z pomocniczej sterowni.|
+120|Wyłącz zapasową konsolę i ucieknij.|
+121|Od czasu inwazji czas płynie sprzecznościami. Niemożliwe zwycięstwo przyniosło nieoczekiwane spowolnienie, a wraz z nim mdlącą słodycz powietrza smakowaną przez nieszczęśliwego zwycięzcę.|
+122|A mimo to czuję zmianę i widzę pracę, której muszą podjąć się ci, którym udało się przetrwać. Ciała do spalenia, umocnienia do odbudowania, neofici czekający na inicjację. Bez względu na nasze straty jesteśmy Aniołami Śmierci – zawsze gotowymi do wojny.|
+123|Oczywiście to nie są bieżące zmartwienia nieopierzonych Primaris. Baalfora jest bezlitosną nauczycielką.|
+124|Dante mówi, że jesteście Krwawymi Aniołami. Udowodnijcie to! Dowiedźcie, że w waszych żyłach płynie krew Wielkiego Anioła!|
+125|Muszę przyznać, że potraficie walczyć. Nie wiem jeszcze, czy naprawdę jesteście uczniami Sanguiniusa, czy to tylko jakiś podstęp arcymaga. Bitwa to zweryfikuje. Jak zawsze.|
+126|...potrzebne natychmiastowe wsparcie. Tyranidzi zbierają się przy przekaźniku nadajnika voxowego na zachodnim krańcu Sal Feritas.|
+127|Zająć pozycje, bracia! Wygląda na to, że Baalfora jeszcze z wami nie skończyła.|
+128|Sierżancie, ponieważ przekaźnik był wyłączony, obawiałem się, że tylko Xenos usłyszeli moje prośby o wsparcie. Pośpieszcie się, mój reduktor ma wciąż coś do zrobienia.|
+129|Tak uczynimy, bracie. Krwawe Ostrza z ósemki zawsze chętnie służą Krwawemu Duchowieństwu.|
+130|Teraz nie powinniśmy już mieć problemu z kontaktowaniem się z Baalem. O ile uda nam się przetrwać napływ Xenos w okolicy.|
+131|To ostatnie progenoidy, które mogę tu zebrać. Doceniam wasze wsparcie, sierżancie.|
+132|Carleonie. Sierżancie Carleonie z ósemki, tu Matarno. Odezwij się, bracie.|
+133|Kapitanie Matarno. Zasłużyłeś na swój stopień, bracie. Zrób z niego dobry użytek.|
+134|Te posiedzenia rady szybko uzmysłowiły mi, że nie mam wystarczających kwalifikacji, aby nosić ten tytuł. Błagam, pozwól mi się oderwać od tej gadki o logistyce i odbudowie. Opowiedz mi, jak oceniasz Primaris.|
+135|Wciąż zabiegają o względy pięknej Baalfory. Mają mnóstwo guntów do przetrzebienia na rozgrzewkę. Właściwie to dopiero co skończyli pomagać bratu Aeturowi.|
+136|Temu kapłanowi? Wysłałem go wraz z Pentaciem, aby pozbyli się zbiorników Xenose na zachód od równin. Gdzie jest sierżant?|
+137|On i jego ludzie nie żyją. Na chwilę przed tym, jak zmiażdżono mu tchawicę, sierżant Pentacio nalegał, abym wycofał się ze zbiorników obcych z kilkoma progenoidami, które udało mi się zdobyć. Coś odrażającego gnieździ się między wieżami obcych.|
+138|Zabierz mnie do miejsca, w którym zginął Pentacio, kapłanie. Odzyskasz pozostałe geneziarna naszych braci bez względu na to, co twoim zdaniem czyha w tych gnijących dołach.|
+139|Sierżancie! Kapitan Matarno powiedział nam, że tu was znajdziemy. Zostaliśmy wysłani, aby pomóc wam z odzyskiwaniem szczątków.|
+140|Pomoc jest mile widziana. Nie chciałbym bez potrzeby dokładać tu kolejnych ciał.|
+141|Z tych rozsianych szczątków niewiele da się już odzyskać. Nie sądzę, abym znalazł tu coś wartościowego.|
+142|To coś więcej niż egzekucja. Ten obcy pożałuje swego haniebnego czynu.|
+143|Oznacz ten bunkier jako bezpieczny. Weźmiemy to, czego potrzebujemy, a logistycy skatalogują resztę.|
+144|Ten obszar jest zabezpieczony. Zgodnie z twoimi przewidywaniami niewiele dało się tu odzyskać z ciał naszych braci. Modlę się, by geneziarno Pentaciego nie zostało zbezczeszczone. Masz paskudną robotę, kapłanie.|
+145|Nie jest to zadanie, którym się rozkoszuję. Ze względu na skalę prac nasza służba nie jest komfortowa. Pod pewnymi względami cieszę się, że wysłano mnie na ten księżyc, na którym ciała naszych braci liczy się jedynie w tuzinach...|
+146|Broń brata Aetura przed atakiem Tyranidów, aż ukończy zadanie|
+147|Obietnica bitwy sprawia, że ci Primaris nie potrafią usiedzieć w spokoju, tak rwą się do bitki. Moim obowiązkiem tu, na słonych ziemiach Baalfory, jest ocena ich możliwości. Poprzez walkę zamierzam odkryć, kim naprawdę są te olbrzymy zakute w czerwone zbroje.|
+148|Niektórzy z nich patrzą na te słone krajobrazy jak znudzeni turyści. Mają w poważaniu niebiosa i piaski, które ukształtowały naszego ojca. Szybko się nauczą albo Baalfora ich zabije. Ona nie toleruje rozpasania.|
+149|Spodziewam się, że kapłan, na którego natrafimy, również od niedawna pełni tę funkcję. Tylko młodzieńcza ignorancja mogła skłonić go do ryzykowania krwi anioła na tych słonych ziemiach. Po dewastacji dokonanej przez flotę-rój Lewiatan nasz zakon jest skąpany w świeżej krwi.|
+150|To niefortunne, że brat Aeturo dał się poznać ze swojej słabej strony. Zazwyczaj Krwawy Anioł jest przedstawiany Krwawemu Duchowieństwu zgoła inaczej. Mam nadzieję, że nie wywrze to trwałego wrażenia na tych Primaris.|
+151|Szczerze mówiąc, brat Aeturo, lekceważąc naszych nowych braci, również nie wystawił sobie dobrego świadectwa. Nie docenia ich potencjału i widzi w nich testowe kultywary bez obycia w świecie.|
+152|Rozumiem, skąd bierze się sceptycyzm kapłana. Stulecie temu nie nazwałbym bratem nikogo, kto nie pił z kielichów krwi. Ale wiek temu nie uwierzyłbym też, że od pewnego wyginięcia uratuje nas nie kto inny jak prymarcha Guilliman.|
+153|Brat Aeturo niepokoi się tym, że poślę nas na śmierć w ramach jakiejś pokuty za winę, która mnie obciąża. Honor nakazuje mi pomszczenie brata z mojej kompanii, ale wiem, że musimy działać pragmatycznie. Pentacio dysponował umiejętnościami i doświadczeniem tuzina pełnokrwistych szturmowych marines, a mimo to został pokonany.|
+154|Skorzystamy z tej szansy, aby prześledzić kroki poczynione przez brata Aetura i ponownie się uzbroić, zanim wkroczymy do miejsca występowania zarazy. Z mojego doświadczenia wynika, że niewielu problemów nie da się rozwiązać bronią plazmową.|
+155|„Znaj swoją powinność i wywiązuj się z niej przed wszystkim innym”. To credo każdego Astarte i powód, dla którego udaję się do tych gnijących dołów.|
+156|Mam dług wobec Pentaciego i ósmej kompanii. Przeżyć Lewiatana tylko po to, aby zostać pokonanym przez te nędzne niedobitki... Nie zasługuję na zaszczyt przywrócenia mu dobrego imienia. Ale jeżeli taka jest wola Imperatora, tak właśnie uczynię.|
+157|Kapłan nadal zatruwa mi życie pogadankami o Primaris. Na razie nie wykazują żadnych objawów Czarnego Szału, ale obaj byliśmy świadkami pragnienia, które ich dręczy. Oni jeszcze nie rozumieją, czym jest to uczucie uderzenia krwi do głowy, gdy nadchodzi bitwa.|
+158|Bez względu na to, jak dobrze wydaje im się, że to ukrywają, w żyłach tych Primaris płynie ta sama krew co w naszych, a wraz z nią nasze wady. Czerwone pragnienie zatruwa ich serca. Przekonajmy się, co się wydarzy, gdy zmierzą się z bestią, która zabiła Pentaciego.|
+159|To ta twoja bestia, bracie? Przecież to tylko bezmózgi tyrannofex.|
+160|Wcześniej nie zachowywał się tak bezsensownie. Coś się w nim zmieniło.|
+161|Zgadza się, Pentacio nie zginąłby w starciu z czymś takim. Ruszajmy. Wiemy, co mamy zrobić. Ty odzyskasz jego geneziarno, a my dokonamy zemsty.|
+162|Odzyskałem geneziarno sierżanta Pentaciego. Jego dziedzictwo zapisze się w Zastępie Anielskim.|
+163|Chwała Sanguiniusowi!|
+164|Oznacz tę lokalizację, aby wysłano tu serwitorów Logisticiam. Te przeklęte wieżyczki nie będą już kaleczyć skóry Baalfory.|
+165|Niepokoi mnie niekonsekwencja obcych. Tym razem nie było widać ani śladu przemyślanego działania i zmysłu strategicznego, którym ulegliśmy wcześniej.|
+166|Nie musisz się tłumaczyć, bracie. Wyraźnie było widać różnicę między bestią, której stawiliśmy czoła, a tą, która pokonała Pentaciego.|
+167|Ale to wciąż ta sama istota.|
+168|Zgadza się. Ale poprzednio kierowała nią wola innej.|
+169|Sieć synaptyczna... To nie wieszczy dobrze twojemu księżycowi...|
+170|Nie potrafiłem ukryć wewnętrznego konfliktu, który mnie dręczy, gdy przekazywałem Matarnowi moją ocenę. Teraz nie mam już wątpliwości, że ci Primaris mają w sobie coś z Sanguiniusa. Ale oni muszą funkcjonować w świecie, który nie jest przystosowany do nich, we wszechświecie, który nie jest gotów na ich potęgę.|
+171|Znakomicie by się tu odnaleźli, gdyby przybyli tu wiele dni wcześniej, gdy hordy Xenos były niezliczone i nieustępliwe. Teraz sprzątają szczątki i podążają szlakami, które wydeptali moi polegli bracia. Wyglądają jak dzieci bawiące się w strażników.|
+172|Znaczenie śmierci Pentaciego nie było jasne dla tego niedoświadczonego kapłana, ale Matarno od razu pojął zagrożenie. Jeżeli synaptyczny przywódca nadal żyje na Baalforze, oznacza to, że przez ten cały czas nie został wykryty. Jest niczym jątrząca się rana, która zagraża całemu organizmowi.|
+173|Dlatego kapitan wysłał mnie, abym przeszukał Niebiańskie Mury. Ten łańcuch górski przypominający labirynt dolin rozdartych wstrząsami i poprzecinanych niedostępnymi szlakami oszałamia nowych rekrutów. Jeżeli tyranidzka bestia ma w sobie choć odrobinę przebiegłości, może ukrywać się tu przez całe pokolenia. A potem gwałtownie...|
+174|[WYBUCH]|
+175|W moim radiu voxowym słychać tylko szumy. Ponad wiek instynktu pcha mnie w kierunku miejsca wybuchu. Moje rozkazy są wykonywane natychmiast, reszta oddziału podąża tuż za mną bez żadnych pytań. Baalfora wciąż ma dla nas niespodzianki, bracia.|
+176|Przeklęte szkodniki! Nawet po śmierci potrafią irytować.|
+177|Ścieżki prawdopodobieństwa prostują się. Pomoc przybywa zgodnie z przewidywaniami.|
+178|Nie spodziewałem się drednota tak daleko od Angelicum, a już na pewno nie takiego, który należy do kronikarza. A twoi debiutujący Primaris mówią o zmarnowanym potencjale...|
+179|Kwestionowanie rozkazów nie należy do naszych obowiązków. Ruszcie się, bracia, pomóżcie kronikarzowi!|
+180|Doceniam pomoc, sierżancie. Ale jeżeli przepływ prometeum nie zostanie wyłączony, nie tylko gunty zostaną tu spopielone.|
+181|Zrozumiano. Zajmiemy się tym, zbrojmistrzu.|
+182|Dzień jak co dzień. Uniknęliśmy pewnej śmierci tylko po to, aby odkryć kolejne śmiertelne zagrożenie.|
+183|Ku chwale Sanguiniusa!|
+184|Carleonie? Carleonie, mówi Matarno. Potrzebuję pilnej zaszyfrowanej odpowiedzi. Mam rozkazy bezpośrednio od Czerwonej Rady.|
+185|Doszły mnie słuchy o niezgodzie wśród kronikarzy. Martwią się, że Baalforę oplata synaptyczna sieć.|
+186|Udało wam się już odnaleźć kronikarza. Bardzo dobrze. Chrońcie go. Może pomóc wam odkryć, co za zło kryje się w Niebiańskim Murze.|
+187|Nie zwlekaj, Carleonie. Nie podobał mi się klimat panujący na tej Czerwonej Radzie.|
+188|Wyczuwam, że to było ostatnie zagrożenie ze strony Xenos w bezpośredniej okolicy.|
+189|Walka u twego boku, bracie kronikarzu, to dla nas zaszczyt. Spytałbym o cel twojego pobytu tutaj, ale wygląda na to, że obaj mamy nową misję.|
+190|Nonsens! Nie zliczę, ile razy jakiś kapitan przesadzał z zaangażowaniem. Mamy własną robotę do wykonania...|
+191|Bracie Croginaksie, obawiam się, że nasza misja musi poczekać. Niektórzy kronikarze wierzą, że Lewiatan powraca.|
+192|Co? Nie, to nie może być prawda.|
+193|A jednak mędrcy znacznie od was starsi i mądrzejsi są teraz odmiennego zdania. Przypuszczają, że wystarczająco silna sieć synaptyczna może wskazać flocie-rojowi drogę w osnowie niczym latarnia w czasie sztormu. Nie wiem, czy to prawda. Niemniej jednak sierżant będzie potrzebował mojej pomocy, jeżeli ma odnaleźć swoją ofiarę w tych górach.|
+194|W takim razie zabierzemy cię do macierzy skupiającej. Quindar będzie jej potrzebował, jeżeli ma zachować przytomność, przepowiadając przyszłe posunięcia tych szkodników. Nie karz mu czekać, marnując czas na snucie czczych rozważań.|
+195|Materno dołącza do rozmowy i dyskutuje z Quindarem i ze mną o synaptycznych bestiach oraz teoretycznych rozważaniach kronikarzy. Sieć synaptyczna z wystarczającym połączeniem z umysłem roju mogłaby w teorii zadziałać jak latarnia morska i pokierować flotami Lewiatan, a w efekcie sprowadzić je z osnowy z powrotem na planetę Baal.|
+196|W teorii. Między tymi dwoma słowami kryje się mnóstwo pracy do wykonania. Nie wątpię, że biurokracja związana z jego nową rolą jest dla Materna wyzwaniem. Rzadko kiedy ma do czynienia z zagadkami, których nie może rozwiązać machnięciem swego mieczoramienia.|
+197|Póki kronikarze lepiej nie rozpoznają zagrożenia, naszym celem jest znalezienie i zlikwidowanie wszystkich synaptycznych przywódców kryjących się w Niebiańskim Murze.|
+198|W tym celu eskortuję brata kronikarza Quindara do przekaźnika astropatycznego. Jego mgliste rozważania o aberracjach osnowy i wymagających natychmiastowego działania anomaliach nie podnosi mnie na duchu. Ale jest zdeterminowany, a gdy nadejdzie czas bitwy, jego obecność będzie mile widziana. Zbrojmistrza też mimo jego... Specyficznego charakteru.|
+199|Nie kwestionuję woli Imperatora, ale przyznaję, że bardzo zależy mi na tym, aby przeżyć. Byłem świadkiem poświęcenia tysięcy braci, wymazywania całych zakonów z annałów historii. A teraz miałoby się okazać, że Lewiatan wciąż nam zagraża? Skłamałbym, gdybym powiedział, że ta myśl mnie nie niepokoi.|
+200|Są plagą na tym księżycu. Zabijesz jednego, a kolejny tuzin wyłazi z każdego zakamarka.|
+201|Dość tej gadaniny. Quindar potrzebuje bezpośredniego dostępu do tej macierzy skupiającej. Skalibrujemy ją, aby zwiększyć precyzję jego przepowiedni, a wtedy odkryjesz każde zakłócenie w osnowie stąd aż do twierdzy Angelicum.|
+202|Zważcie na moje słowa, Primaris. Gunt pod kontrolą umysłu roju to przeciwnik, z którym nie mieliście jeszcze okazji się zmierzyć. Ich synaptyczna telepatia potrafi z najbardziej ociężałej bestii uczynić sprawnego zabójcę.|
+203|Aktywowałem macierz skupiającą. Skataloguję wszystkie aberracje osłony wskazujące na działalność synaptycznych Xenos.|
+204|Obrońcie ten obszar przed Tyranidami, bracia. Żaden plugawy Xenos nie ma prawa przeżyć. Kronikarz musi dokończyć swoją pracę.|
+205|W bezpośredniej okolicy nie ma więcej Xenos. Potrzebuję pomocy przy tej macierzy, bracie Croginaksie...|
+206|Oczywiście, oczywiście, nie śpiesz się. Może dostroimy te czujniki bez przerobienia twojego układu nerwowego na galaretę, a przynajmniej tego, co z niego jeszcze w tej trumnie zostało.|
+207|Widzę przed sobą wyraźnie ich całą sieć. Macki ich zepsucia wnikają głęboko w materię księżyca Baal Secundus i szczelnie go oplatają.|
+208|Wierzę w twoją ocenę, aczkolwiek twe słowa zatruwają nieco słodycz zwycięstwa.|
+209|Znajdziemy każde źródło zepsucia, które kryje się w mrokach twojego księżyca, poruczniku. Widzę teraz, że nasza wspólna podróż jeszcze się nie zakończyła.|
+210|Nie jestem porucznikiem, bracie. Ta ranga nie istnieje od dziesięciu tysięcy lat...|
+211|Lord Guilliman znowelizował Codex Astartes. Będziesz jednym z pierwszych synów Sanguiniusa, którzy znów będą nosić ten tytuł. Matarno wkrótce skontaktuje się z tobą voxowo i przekaże ci wieści dotyczące twojego awansu. A póki co potrzebuję czasu, aby skatalogować te węzły...|
+212|Na tych świętych ziemiach każdy z nas walczył zębami i pazurami o szansę stania się aniołem. Gdy po raz pierwszy przeszedłem pod tymi posągami, nie piłem jeszcze krwi Wielkiego Anioła. Nie przypuszczałem, że ponownie zrobię to we wnętrzu mojego własnego sarkofagu.|
+213|Po konfrontacji z niezmierzonym i niewyczerpanym udało mi się zdobyć tylko połowiczne odpowiedzi. Przerywam porucznikowi Carleonowi jego rozważania nad winą i mówię, że aberracje synaptyczne rezonują z tego miejsca. Nie kłamię, ale też nie mówię mu, że zakłócenia radiowe są jedynie drugorzędnym powodem, dla którego go tu ściągnąłem.|
+214|Zza Niebiańskiego Muru dosięga mnie szept. Skoro nie wiemy nic, skąd mam wiedzieć, za czyim głosem podążam. Wykonuję rozkazy porucznika, którego ranga dopiero co została przywrócona i lśni niczym naramiennik prosto ze zbrojowni. Ale on nie jest pytaniem, które mnie tu doprowadziło.|
+215|Brak odpowiedzi. Mogę tylko podążać za głosem na północ, do Miejsca Próby, i modlić się o odpowiedź na moje odwieczne czekanie.|
+216|Te posągi przywołują wspomnienia, które, jak mi się zdawało, już dawno wyblakły. Przypuszczam, że dla tych Primaris to tylko pozbawione wartości okruchy skał.|
+217|Nie widzę ani śladu Xenos. Jesteś pewien, bracie Quindarze, że aberracje osnowy pochodziły stąd?|
+218|Tak, poruczniku. Nie wiem, jak wytłumaczyć ich nieobecność. Być może nie uwzględniłem należycie kwestii czasu...|
+219|Masz na myśli to, że patrzyłeś w przeszłość.|
+220|Nie, zbrojmistrzu Nie ma potrzeby się tym zamartwiać. Przygotujcie się. Tyranidzi wiedzą teraz, że tu jesteśmy.|
+221|Egzokryn strzela! Szyk obronny, teraz!|
+222|Posiłki! Twoje wyczucie czasu jest nienaganne, jak u wszystkich naszych braci z doktryny szturmowej.|
+223|Wow. Spójrz na te plecaki odrzutowe. Wygląda na to, że mimo twojego nowego naramiennika Cawl sprowadził ze sobą kogoś na twoje miejsce.|
+224|Ten obszar oczyszczono z Xenos. Nie wrócą tutaj. Zostaje łącze synaptyczne.|
+225|Naciesz się chwilą. Niewielu ma okazję walczyć w Miejscu Próby jako pełnokrwiści Astartes.|
+226|Carleonie, tu Matarno. Proszę o raport.|
+227|Zabezpieczyliśmy Miejsce Próby. Posiłki bardzo się przydały. Brat Quindar zabiera nas stąd do kolejnego klastra synaptycznego.|
+228|Pośpiesz się, bracie. Masz do wykonania całą serię rozkazów począwszy od moich poprzez rozkazy Dantego, aż po te wydane przez samego Mściwego Syna. Lord Guilliman nie chce ruszać, póki kwestia sieci synaptycznej pozostaje nierozwikłana. Nie każ czekać krucjacie Indomitus.|
+229|Doszło do zakłócenia promieniowania. Kiedyś było silniejsze, ale w ostatnich dniach się zmniejszyło. Czy to wskazówka? Czy też obietnica kolejnego zagrożenia takiego jak Lewiatan?|
+230|Widzę siebie stojącego pośród duchów. Moje dłonie znów są moim ciałem. Nie mogą powstrzymać miecza, który przeszywa moją pierś, aby zatopić się w sercu. Spoglądam w dół i czuję tylko pięści tej machiny wojennej.|
+231|Znowu przyciąga mnie ten szept. Nic nie mówi, ale i tak wyczuwam jego obecność. To nie jest aberracja synaptyczna, ale wmawiam to Carleonowi, bo cóż innego mogłoby mnie tu ściągnąć?|
+232|Niewiele rzeczy na księżycu Baal Secundus zaskoczyło nowych Primaris. Ale zagrożenie ze strony śmiertelnie niebezpiecznych stref promieniowania przyprawiła ich o szybsze bicie serca. Trudno o bardziej podstępną śmierć niż ta, która pożera cię od środka. Dobrze o tym wiem.|
+233|Ostrożnie, Primaris. Te strefy promieniowania to subtelni zabójcy. Nawet w swoich pancerzach mocy nie jesteście całkiem bezpieczni.|
+234|Szept jest przede mną. Kodyfikator Mordos, ostatni znany właściciel Laski Galliana. Kronikarze nie wiedzieli, co się z nim stało po inwazji.|
+235|Cóż, teraz już mniej więcej wiemy. Nie ma jednak śladu tej laski mocy. Utrata tego reliktu tutaj okryłaby nas hańbą.|
+236|Moim obowiązkiem jest odzyskanie geneziarna kodyfikatora. Nawet jeżeli jest skażone promieniowaniem, wysoki kapłan Corbulo może z niego zrobić użytek w swoich badaniach.|
+237|Udało się odzyskać geneziarno kodyfikatora. W pobliżu ciała nie znaleziono reliktu. Szkoda, miałem nadzieję, że zobaczę broń, nad którą tak rozwodził się brat Corbulo.|
+238|Wyeliminowaliśmy wszystkie formy życia Xenos, a geneziarno kodyfikatora bezpiecznie trafiło w ręce brata Aetura.|
+239|Wiesz, kiedyś próbowałem odtworzyć ten kij Galliana. Spędziłem dwieście dni w kuźni, formując idealną replikę. Bez cienia efektu.|
+240|Co z nią zrobiłeś?|
+241|Przełamałem na pół, łamiąc przy okazji kolano. Przyznaję, że się nie popisałem.|
+242|Naszym głównym celem pozostaje sieć synaptyczna. Relikt Galliana na niewiele nam się zda, jeżeli flota-rój Lewiatan powróci.|
+243|Otaczają mnie mury dziesiątek lat, pozostałości jądrowego zniszczenia. Skupiam się, a anormalna sieć w strumieniu osnowy powraca. Synaptyczny klaster czeka, a w jego sercu tkwi Laska Galliana. To przynęta czy przypadek? Sam nie wiem.|
+244|Trudno mi się skupić na słowach wypowiadanych wokół mnie. Przez mgłę widzę, jak bracia w mojej obecności unikają rozmowy o Czarnym Szale. Kapłan i zbrojmistrz wymieniają porozumiewawcze spojrzenia, których Primaris nie są zupełnie świadomi.|
+245|Zbieram siły. Krok długości cala w kierunku czeluści, w stronę której zawsze zmierzamy. Zaprowadzę Carleona do tych fortyfikacji i zmiażdżę sieć synaptyczną. To mój odwieczny obowiązek.|
+246|Węzeł klastra przywódcy synaptycznego jest tutaj. Są skazani na zagładę.|
+247|Tak, a do tego w tych ruinach znajduje się też broń mocy. Czuję to.|
+248|Piaski u naszych stóp się rozstępują.|
+249|To trygon! Zabić tego obcego!|
+250|Zabezpieczyliśmy laskę Galliana. Dostrzegam w tym pewną metaforę. Laska przyda się tym Primaris jeszcze mniej niż nam.|
+251|Imperator widzi wszystko, bracie. Twoim celem nadal jest służba.|
+252|Klaster przywódcy synaptycznego został zlikwidowany. Sieć słabnie.|
+253|Gdybym miał więcej czasu, znalazłbym sposób, aby Quindar mógł wykorzystać ten relikt w charakterze środka zapobiegawczego, dopóki nie będzie mógł wrócić do Arx Angelicum.|
+254|Rozumiem twój niepokój, bracie Croginaksie. Ale ścigamy samego Lewiatana i nie możemy dalej ryzykować bezpieczeństwem tego historycznego reliktu. Póki co sam poradzę sobie z moimi nastrojami.|
+255|Wezwijcie logistyków, poruczniku. Powinni jak najszybciej zwrócić tę laskę mocy do zbrojowni zakonu.|
+256|Muszę sama sobie przypominać, że nasza obecność na tym księżycu nie jest wygnaniem z planety Baal. Komandor Dante wysłał nas na Baal Secundus dla dobra lorda Guillimana, a nie naszego.|
+257|Służba prymarchowi wiąże się ze splendorem, ale on wyraźnie nie czuje się komfortowo w naszej obecności. A zwłaszcza w towarzystwie tych spośród moich sióstr, które wykazują się większą żarliwością niż dyplomacją.|
+258|Komandor Dante poprosił, abyśmy przeniosły się z naszą misją na księżyc Baal Secundus. Przynajmniej do czasu, aż lord Guilliman nie zbierze krucjaty Indomitus i nie opuści Czerwonej Blizny.|
+259|Podczas gdy przeorysza Martilja wciąż doradza Dantemu, rozkazano mi zebrać moje siostry i dołączyć do ósmej kompanii Krwawych Aniołów. Rozumiem, że awans na pułkownika to świeża sprawa, ale Carleon ma już doświadczenie z przywództwem synaptycznym, które kieruje tutejszymi Xenos.|
+260|Póki nasze cele są zbieżne, oddaje mu na służbę mój bolter i moją wiarę. Rozświetlimy światłem Imperatora najmroczniejsze szczeliny tych gór. Wypalimy ogniem obcych. I uhonorujemy życia, które poświęcono tu, na księżycu Baal Secundus. Żywoty oddane na służbie Imperatorowi nigdy nie idą na marne.|
+261|Przeklęci Xenos! Im zacieklej na nich polujemy, tym stają się odważniejsi. Chodźmy sprawdzić, czy siostra przełożona dotarła na lądowisko.|
+262|Serdecznie witamy na Baalforze. Czy jest wśród was siostra Verity?|
+263|Obawiam się, że nie poruczniku. Była w drugim stormravanie.|
+264|Nie martw się, siostro. Oczyścimy lądowisko z Tyranidów i odszukamy waszą siostrę przełożoną.|
+265|Chyba że to ona pierwsza przyjdzie wam z odsieczą, Astartes.|
+266|Wygląda na to, że to ostatni z nich. Chodźmy znaleźć siostrę, którą Czerwona Rada wysłała nam do pomocy.|
+267|Miałam nadzieję na inne wejście. Ale Imperator mnie chroni, a wokół mnie tłoczą się tuziny Xenos, które tylko czekają, aby zostać zmiecione przez Jego gniew.|
+268|Dwóch pilotów naszego transportowca i sześć naszych sióstr nie żyje. Imperator powołał ich do siebie.|
+269|Można uznać to za test szybkości tych niesławnych Krwawych Aniołów. Być może niektórzy z tych plugawych obcych wciąż będą żywi, gdy Astartes do nas dotrą. Szanse na to są nikłe, ale dzięki błogosławieństwu Imperatora będę dziś miłosierna.|
+270|Poruczniku! Sądziłam, że twoi Krwawi Aniołowie wolą działać szybko.|
+271|Imperator ma cię w swojej opiece, siostro przełożona Verity Alodia. Niepokoiła mnie myśl o konieczności zgłoszenia Czerwonej Radzie twojej śmierci tak szybko po przeniesieniu cię do nowej placówki.|
+272|To nie pierwszy raz, jak ktoś próbuje zestrzelić mnie wraz z transportem, poruczniku.|
+273|Lepiej uważaj na tego osobnika – jest rozwścieczony i gotów przebić cię lub stratować.|
+274|Zabezpieczyć miejsce katastrofy. Logistycy będą chcieli odzyskać ten wrak.|
+275|Jeżeli chodzi o miejsce katastrofy...|
+276|Zastąpcie siostry. Działania Xenos już nas srogo kosztowały.|
+277|Przyzwoita walka. Widzę, że ostatnie wydarzenia nie stępiły zaciekłości Krwawych Aniołów.|
+278|Pogłoski o umiejętnościach Sororitas również nie są przesadzone. Witaj na Baal Secundus, siostro przełożona.|
+279|Przeorysza Martilja to kobieta o stoickim charakterze. Widziałam, jak ścinała głowy zdrajcom na oczach ich rodzin, jak mordowała heretyków bazgrzących bezbożne pisma w kołyskach. Nie mdleje na widok rozlewu krwi. Wiedziała, po co tu przybyłyśmy.|
+280|Doskonale rozumie nasz cel, którym jest usunięcie sieci synaptycznej z tego księżyca. Zdaje sobie też sprawę – być może nawet lepiej niż te Krwawe Anioły – że prawdziwym zagrożeniem ze strony Tyranidów nie są ich ataki frontalne, lecz podstępne zepsucie, które zostawiają za sobą.|
+281|Podczas gdy moje siostry zajmą się organizacją misji w Upadku Anioła, ja będę towarzyszyć porucznikowi na wyprawie do factorum Kemrender. To miasto, które zostało opuszczone – przynajmniej przez lokalnych mieszkańców.|
+282|Bez wątpienia za murami Kemrenderu znajdziemy setki obcych, których będziemy musieli wytępić. Carleon upiera się, że do fortecy prowadzi tylko jedna droga i jest z niej tylko jedno wyjście. Wcale nie dziwi mnie to, że ci superżołnierze nie zdają się sobie sprawy z dziur i rynsztoków, którymi to ścierwo wnika do środka.|
+283|Wyprowadzanie porucznika z błędu na oczach jego ludzi byłoby nie na miejscu. Nie, gdy ma do wykonania rozkazy lorda Guillimana. Sam prymarcha oczekuje wieści o naszym sukcesie. Nie zawaham się przed wniesieniem światła Imperatora do tej zapadłej dziury. Grzech i herezja nie będą miały jak się tu szerzyć.|
+284|Gunty jak okiem sięgnąć.|
+285|Gdybym nie wiedział, że to niemożliwe, pomyślałbym, że te bezmózgie bestie celowo okupują to miejsce.|
+286|Bez wątpienia to sprawka tej kapsuły wojownika. Szybko się ich pozbądźmy, bo nie jesteśmy przygotowani na długie oblężenie.|
+287|Genokrady. Módlmy się, żeby nie miały okazji rozplenić się w środku.|
+288|To był już ostatni tutaj.|
+289|Jestem pewna, że za tymi murami jest ich więcej. Jeżeli mamy szczęście, nie miały jeszcze czasu się zagnieździć i ukryć wśród ludzi z twojego księżyca. Ruszajmy, poruczniku. Mamy czystkę do zrobienia.|
+290|Podejrzenia Martilji się sprawdziły. Genokrady opanowały największe factorum na tym księżycu. Musimy się ich pozbyć, zanim zagrożą lokalnym mieszkańcom.|
+291|Kosmiczni marines nie pojmują, czym to plugastwo grozi. To tragiczny dowód na to, jak bardzo oddalili się od swego śmiertelnego pochodzenia. Nie rozumieją, że ci Xenos to coś więcej niż tylko cele, w które mogą mierzyć karabinami.|
+292|Jeżeli choć jeden genokrad stąd ucieknie, życie każdej osoby, która przetrwała Lewiatana, pójdzie na marne. Wszyscy zginą. Nie jutro ani kolejnego dnia. Ale infekcja będzie się rozwijać, czekając na właściwy czas, aż wreszcie obejmie cały księżyc, planetę Baal i całą Czerwoną Bliznę.|
+293|Dopilnuję wyeliminowania tej zarazy Xenos do ostatniego osobnika, bo wolą Imperatora jest całkowite pozbycie się obcych. A nie ma innej prawdy niż prawda Imperatora.|
+294|Pełzną po wszystkich ulicach. Musimy działać powoli, poruczniku, i upewnić się, że żaden genokrad nie przetrwał. Nie chcę, aby lord Dante musiał tu zrobić to samo co na drugim księżycu Baala.|
+295|Exterminatus nie będzie potrzebny, siostro. Oczyścimy te ulice Kemrenderu tak, że zamiast po soli będziemy stąpać po szczątkach Xenos.|
+296|Musimy uważać, żeby nie odsłonić flanki na ataki z zaskoczenia w czasie, gdy będziemy próbowali otworzyć te bramy.|
+297|Zlikwidować tę zarazę! Niech w waszych sercach zapanuje wyłącznie pogarda dla tych obcych!|
+298|To z pewnością byli ostatni spośród tych parszywych obcych. Potrzebujesz odpoczynku, siostro?|
+299|Braciom byś odpoczynku nie proponował. Chodźmy, musimy dostać się do zgniłego jądra tego factorum. Oczyścimy je ogniem i mieczem.|
+300|Wielu Krwawych Aniołów nie jest związana z tym miejscem, zwłaszcza Primaris. Ale Carleon ma inne podejście. Dorastał na słonych ziemiach tego księżyca. Wspomnienia z tego miejsca zajmują ważne miejsce w jego sercu. Niemal tak samo ważne jak wina.|
+301|Porucznik nie wie, że podsłuchiwałam jego rozmowy voxowe z kapitanem Matarnem. Nie łatwo mi wyplenić niektóre z moich dawnych zwyczajów z czasów służby w zakonie Famulous. Niech Imperator mi wybaczy.|
+302|Dowódcy krucjaty Indomitus niecierpliwią się i chcą, abyśmy jak najszybciej rozbili tę sieć. Podobnie logistycy Krwawych Aniołów. W krucjacie biorą udział miliony ludzi, a ich przedłużająca się obecność bardzo obciąża planetę Baal i jej mieszkańców.|
+303|Drednot kronikarzy zaktualizował nasze położenie poprzez to factorum. Będę dalej miała oko na tego brata Quindara. To, co mówi, to w najlepszym przypadku półprawdy, a nasze postępy w pełni zależą od jego umiejętności przepowiedzenia przyszłych posunięć węzłów synaptycznych.|
+304|Ci Krwawi Aniołowie ukrywają przede mną coś niepokojącego. Gdy jestem w zasięgu słuchu, zawsze starannie dobierają słowa. Gdyby ich panem nie był Wielki Anioł, ja... Musiałabym zadać sobie trudne pytania.|
+305|Tutaj czeka na nas jądro tego węzła synaptycznego.|
+306|Łatwo wyobrazić sobie to bijące serce Kemrenderu. Kupcy, pośrednicy, złodzieje... Ich umysły to otwarte wrota dla herezji i chciwości.|
+307|Znajdźmy tę istotę synaptyczną i odetnijmy ją od sieci.|
+308|Tervigon. To wyjaśnia, czemu było tu tyle guntów. Miał mnóstwo czasu, aby urodzić własne siły obronne.|
+309|Ten obcy przerobił Kemrender w ufortyfikowany żłobek dla genokradów. To... Bardziej wyrafinowane, niż się spodziewałem.|
+310|Jego zasięg jest duży, ale to nie jest węzeł główny. Wciąż musimy odkryć, kto zaplata tę sieć.|
+311|Przywódca synaptyczny pokonany. Kolejny węzeł sieci gaśnie.|
+312|Wyczyszczenie tego wszystkiego zajmie serwitorom całe miesiące. Obawiam się, poruczniku, że twój potężny solny fort może nie nadawać się do zamieszkania przez pewien czas.|
+313|Nie poddadzą się, siostro. Solni ludzie tak łatwo nie rezygnują. Póki mają do czego wrócić, zrobiliśmy dla nich wszystko, co mogliśmy.|
+314|Sieć się rozpada. Adepta Sororitas, które strzegą Upadku Anioła, zostaną zaatakowane. Siostra Verity otrzyma wiadomość voxową z prośbą o posiłki. Zgodzi się i dowie się czegoś, czego nie chce wiedzieć.|
+315|Czarna tama pęka. Widzę przed sobą cielesne dłonie. Podnoszę karabin. Wiem, że Anioł jest blisko, ale jego krzyki są ogłuszające. Chcę unieść ręce, aby zatkać sobie uszy, ale znów są metalowe, a moja głowa tkwi w tej trumnie.|
+316|Xenos otaczają ojczyznę Sanguiniusa. Szpony rozrywają wspomagany pancerz na oczach obojętnej dobrotliwości naszego ojca. Jądro synaptyczne jest niespokojne. Ja jestem niespokojny.|
+317|Upadek Anioła czeka na wyzwolenie.|
+318|Przeklęci Xenos. Niech spłoną w ogniu światła Imperatora. Zwyciężmy ich Jego nieskończoną nienawiścią do obcych.|
+319|Xenos wkraczają od południowego zachodu. Wkrótce więcej z nich przedrze się przez mury.|
+320|Ruszajcie! Pomóżcie siostrom. Krwawe Anioły nie stoją z boku, gdy nasi sojusznicy walczą za nas w bitwach!|
+321|Ten latający potwór uciekł w kierunku kanionu Rzeki Wiatru.|
+322|To była harpia. Ten odwrót był zbyt strategiczny, aby mogła go zaplanować samodzielnie.|
+323|Siostro przełożona Verity! Chwała świętej Katarzynie, myślałyśmy, że cię straciłyśmy.|
+324|Ochroniła mnie łaska Imperatora, siostro. Więcej wiary, kontynuujemy Jego dzieło do naszego ostatniego tchu. Dopiero wtedy odpoczniemy.|
+325|Krwawienie zostało na razie zatamowane. Jeżeli rana nie zostanie skauteryzowana, znów zacznie krwawić.|
+326|Gdzie mamy się udać, by ich powstrzymać?|
+327|Do kanionu Rzeki Wiatru. Można tam powstrzymać Xenos, ale będzie cię to srogo kosztowało.|
+328|To Imperator decyduje o naszym życiu i śmierci. Powstrzymamy ich w kanionie. Siostro przełożona Verity, siostry potrzebują twojej pomocy tutaj. Twoje wsparcie dotychczas było bezcenne, ale moi bracia i ja musimy ruszyć dalej sami.|
+329|Rozkazano mi dopilnować, abyś wywiązał się ze swojej misji do końca, pułkowniku. Nie zamierzam zawieść przeoryszy ani komandora Dantego, gdy staną przed obliczem lorda prymarcha.|
+330|Miej wiarę. Moje siostry poradzą sobie zarówno z moją pomocą, jak i bez niej. A ja nie spocznę, póki księżyc Baal Secundus nie zostanie oczyszczony z plagi Xenos.|
+331|To, co spadło na Upadek Anioła, było zaledwie kroplą w porównaniu z powodzią, która czeka na nas w kanionie. Rwę się, aby popłynąć z nurtem Rzeki Wiatru, wiedząc, jaką tamę napotkam w jej sercu.|
+332|Jeżeli utrzymamy kanion, będziemy mieli jeszcze szansę wydrzeć Baalforę z tej sieci. Nawet teraz czuję, jak jej piaski przesypują się pod moimi stopami. Idę korytarzami Mściwego Ducha, choć nigdy nie postawiłem na nim stopy. Słyszę echo butów uderzających o metalowe pokłady. Nie mogę jeszcze odejść.|
+333|Po kilku minutach, a może godzinach obudziłem się i Baalfora wróciła. Rzeka Wiatru. Dwie aberracje w osnowie rzeczy utrzymujące się wzajemnie na miejscu. Zamierzamy pozbyć się ich obu...|
+334|Wielki Aniele... Moi bracia...|
+335|Cóż to za ohyda?|
+336|Nie miałaś tego zobaczyć, siostro. To bracia z Kompanii śmierci.|
+337|Są przerażający.|
+338|Wyglądają tak, jakby walczyli od dnia pierwszego lądowania floty Lewiatan.|
+339|Nie popadajcie w rozpacz, bracia. Tym razem uratowali Upadek Anioła. Poświęcają się w imię Sanguiniusa!|
+340|Nigdy nie widziałam żołnierza, który byłby w stanie walczyć tak długo. Jakim cudem wciąż żyją?|
+341|Oto, czym jest porażka dla Krwawego Anioła, siostro. Przegrana nie oznacza śmierci. Przegrana to przedłużająca się udręka, która jest o wiele boleśniejsza od zwykłej śmierci.|
+342|Napływ Xenos został spowolniony. Dokończyliśmy dzieła nieodkupionych.|
+343|A jednak nie tylko obcy się upodlili. Ci żołnierze... Może i niewiele w was już z ludzi, kosmiczni marine, ale ci żołnierze to obelga wobec Imperatora.|
+344|Gdyby nie oni, twoja misja zakończyłaby się porażką już wiele dni temu. Dzięki tym niezmordowanym wojownikom Tyranidzi nie zdołali wkroczyć do Upadku Anioła.|
+345|Nie możemy liczyć na dłuższe wytchnienie. Na końcu kanionu czeka na nas klaster aberracji. Konfrontacja jest nieunikniona.|
+346|Przy uskoku czeka na nas węzeł aberracji. Chcą przeć naprzód, wyrwać się ze swojej sieci, ale sploty, które ich trzymają, są zbyt mocne.|
+347|Z korytarza słychać echo głosów. Słyszę biegnących braci, odgłosy bitwy toczonej ze zdrajcami. Jeszcze nie teraz. To nieuniknione, ale jeszcze nie nadeszła pora.|
+348|Croginax mnie obserwował. On wie. Powinien działać teraz, zabrać mnie z Mściwego Ducha, z piasków Baalfory. Powinien zabrać mnie przed oblicze Odkupiciela Straconego. Ale tego nie zrobi. Zbrojmistrz wie, że jestem latarnią w mroku.|
+349|A siostra coś podejrzewa. Nie mówi tego głośno, ale jej emocje widać jak na dłoni. Ujrzenie czarnego szału na własne oczy wstrząsnęło ją i zwątpiła. Z kim podzieli się wątpliwościami? Carleonowi palec może zadrżeć na spuście.|
+350|Tylko śmierć dotrzymuje tajemnice.|
+351|Jesteśmy blisko, ale to nie to. Aberracja główna. Potrzebuję tylko... Wizji...|
+352|Harpia! Będziemy tutaj dla niej łatwym celem.|
+353|Nie przejmuj się tym. Przez to piekielne skrzeczenie każdy gunt po tej stronie Niebiańskiego Muru wie, że tu jesteśmy.|
+354|Szyk defensywny! Będziemy tarczą, która ich przełamie. Niech ta dolina spłynie krwią Xenos!|
+355|Szczyt. Zabierz mnie na szczyt, z którego skakałeś jako chłopak, Carleonie. Patrzyłeś, jak runęło niebo. Muszę zobaczyć twoją wizję.|
+356|Słyszałeś go. Oczyść drogę na ten szczyt. I tak już zbyt długo jest przebudzony.|
+357|Szum się zbliża. Muszę... Musimy ruszać... Miasta umarłych. We wnętrzu... Aberracji. W jądrze.|
+358|Carleonie, jaka jest sytuacja?|
+359|Jesteśmy na Skoku Anioła. Brat Quindar... Mówi, że jesteśmy blisko. Znajdziemy jądro synaptyczne na Ziemiach Duchów.|
+360|Carleonie, musisz to zakończyć teraz. Lord Guilliman lada moment wyśle Catona Sicariusa, aby dokończył to za ciebie. Za każdą godzinę dalszego istnienia sieci Tyranidów płacimy honorem lorda Dantego.|
+361|Oby z woli Sanguiniusa moje zaufanie do ciebie nie okazało się bezpodstawne. Znajdź przywódcę synaptycznego, Carleonie. Albo ty go zabijesz, albo zginiesz z jego rąk. Nie wracaj na Baala, póki jeden z tych warunków nie zostanie spełniony.|
+362|Ziemie Duchów. Baalfora niszczy te ruiny od ponad dwunastu tysięcy lat. Obserwują nas duchy dawnych cywilizacji sprzed czasów Krwi i nuklearnego deszczu.|
+363|Nie wiem, czy Tyranidzi, którzy rozpanoszyli się w tych ruinach, naprawdę mogą kontaktować się z umysłem roju i czy są w stanie sprowadzić Lewiatana z powrotem. Nawet teraz to wciąż tylko teoria i domysły.|
+364|Jednak wiem na pewno, że honor naszego zakonu w pełni zależy od kronikarza, którego tracimy, bo popada w Czarny Szał. Z bólem patrzę, jak jego stan się pogarsza. Wszyscy staliśmy nad tą przepaścią ledwie kilka dni temu. Jak to się stało, że zostałem pokonany, zrehabilitowany, a potem znów popadłem w niełaskę...|
+365|Muszę wierzyć, że brat Quindar potrafi zachować spokój, aby zostać z nami do końca. Gdyby upadł teraz, obezwładnienie go kosztowałoby nas życie wielu marines. A ja i tak mam już na sumieniu śmierć zbyt wielu braci.|
+366|Jeżeli chodzi o siostrę przełożoną, zobaczyła zbyt wiele mroku, z którym musimy sobie radzić. Jej wnikliwa obserwacja jest... Niepokojąca. Zastanowię się, jak najlepiej rozwiązać problem naszej szacownej sojuszniczki, gdy pozbędziemy się przywódcy synaptycznego.|
+367|Nawet pył dawno wymarłego miasta pada ofiarą ich nieskończonego głodu.|
+368|Jedynym celem istnienia tego plugastwa jest konsumpcja tylko po to, aby zasilić coś większego od nich. Gdy zderzą się z potęgą Imperatora, ich pusta egzystencja nie potrwa długo.|
+369|Ja... Słyszę... Nasz ojciec jest atakowany. Nadchodzę, mój panie! Mój miecz jest twój!|
+370|Nikt nie stanie mi na drodze! Śmierć zdrajcy!|
+371|Quindarze! Jeszcze nie! Ta przeklęta krew...|
+372|Ścigamy brata Quindara, który swoimi mocami psionicznymi uruchamia ciężkiego drednota przed nami. Ciała Tyranidów leżą rozrzucone jak szmaciane lalki. Wbiegamy głębiej w labirynt ruin, ale gubimy kronikarza w ciemnych korytarzach umarłego miasta.|
+373|Cienie atakują nas z każdej strony. Xenos nas sprawdzają, rzucając się i wprowadzając nas w błąd. Moi bracia rozrywają ich na strzępy, ale już niedługo mrok się uwolni i zmiażdży nas wszystkich.|
+374|Wybuch. Croginax biegnie na przód. Jeszcze nigdy nie widziałem, aby ten zbrojmistrz poruszał się tak zwinnie. Biegniemy po to, aby ujrzeć przed sobą brutalny obraz, który jest wręcz piękny w swoim tragizmie.|
+375|Tyran roju!|
+376|Tyran z Baal Fortunaty.|
+377|Zabić ich! Zabić ich wszystkich! Nie pozwólcie żadnemu dotrzeć do ciała brata Quindara.|
+378|Och, Quindarze. A więc wreszcie znajdziesz ukojenie...|
+379|Brat Quindar oddał życie ze Imperium. Imperator wezwał go do siebie.|
+380|Jeszcze nigdy w mojej służbie nie miałam do czynienia z tak nieograniczoną siłą i niepohamowanym gniewem...|
+381|Teraz spoczywa u boku Sanguiniusa. Ruszajmy, bracia! Schwytamy tyrana i szczegółowo pokażemy mu, jak wygląda gniew Zastępu Anielskiego.|
+382|Carleonie, nasza siostra w bitwie widziała za dużo. Patrzyła, jak usankcjonowany psionik traci całą kontrolę nad sobą i wpada w Czarny Szał. Nie możemy pozwolić jej odejść stąd z tą wiedzą.|
+383|Imperator nas prowadzi, bracie. Najpierw zajmiemy się zemstą. O losie siostry zadecydujemy później.|
+384|Xenos opanowali te korytarze niczym szczury. Nie da się tu przejść bez zmiażdżenia pod stopami czaszki jednego z ich trupów.|
+385|Tyran roju to podstawa oporu Xenos na Baalforze. To on odpowiada za skoordynowane ataki, precyzyjne uderzenia i zadziwiające szyki bojowe. Musimy uciąć mu głowę. Bez niej jego ciało rozpadnie się na kawałki i dobije je każdy, kto dysponuje bolterem.|
+386|Pamiętam i zliczam każdą śmierć, która doprowadziła nas do tego miejsca. Poświęcenie moich braci nie pójdzie na marne. Ta zaraza zostanie unicestwiona, a tyran zginie jeszcze dziś.|
+387|Zmiażdżcie wroga pod swoimi stopami! Ci z was, którzy przeleją dziś swoją krew, są prawdziwymi synami Sanguiniusa i zawsze będą moimi braćmi!|
+388|Za Baalforę! Za Wielkiego Anioła! Za Imperatora!|
+389|Spokojnie, bracia. Jądro ich sieci jest martwe. Ostudźcie swoją krew. Cieszcie się tym zwycięstwem.|
+390|Ja... Muszę udać się na pokład drednota. Incarael mnie wypatroszy, jeżeli stracimy tu ducha maszyny.|
+391|Idź, bracie. Zatroszcz się o jego ciało. Nasz zakon powinien uhonorować poświęcenie brata Quindara i wspominać je z dumą.|
+392|Ufam, że pozwolisz mi odejść równie łatwo, poruczniku. Nawet mimo tego wszystkiego, czego byłam świadkiem.|
+393|Nie rozumiesz niczego, co widziałaś!|
+394|Spokojnie, bracie. Siostra Verity ma prawo zadawać pytania. Codziennie musimy mierzyć się z naszą klątwą. To, że nasza siostra nie odwróciła się od nas, kiedy stawialiśmy czoła najmroczniejszemu cieniowi naszego zakonu, świadczy o jej sile.|
+395|Powiedz mi prawdę, Carleonie. Czy gdy nas tu sprowadziłeś, wiedziałeś, że coś złego dzieje się z psionikiem? Gdyby nie dosięgły go szpony tyrana, mógł zagrozić nam wszystkim. Wiedziałeś o tym?|
+396|Gdy będę rozmawiała z przeoryszą Martilją, będę musiała wyznać jej wszystko. Dowie się o twoim zbuntowanym kronikarzu i o tym, w jak niebezpiecznej sytuacji nas postawiłeś.|
+397|Ufam, że powiesz jej wszystko, co należy, siostro. Imperator zawsze ocenia każdą naszą decyzję. Jeżeli uzna, że moja była błędna, moje życie należy do niego.|
+398|Z czasem sprzeczności rozmywają się. Życie toczy się dalej. Mieszkańcy Baalfory zaczną powoli wracać i odbudowywać swoje życie. Nie jestem tu już potrzebny. Moje duchy spoczywają w pokoju.|
+399|Już mamy kolejne zadanie do wykonania. Primaris dowiedli siły swojej krwi. Dante chętnie wykorzysta ich do oczyszczenia Czerwonej Blizny. Planeta Baal jest tylko jedną z tysięcy, które wyrwiemy z rąk Lewiatana. Nasze mieczoramiona mogą opadać ze zmęczenia, ale nasz duch nigdy nie spocznie, póki nie pozbędziemy się wrogów Imperium.|
+400|Albowiem jesteśmy Aniołami Śmierci...|
+401|...i zawsze jesteśmy gotowi do wojny.|
+402|W ponurych mrokach odległej przyszłości czeka na nas tylko wojna. Ludzie przychodzą na świat. Żyją, cierpią i umierają. Rzadko z przyczyn naturalnych.|
+403|Przed upadkiem Cadii Dante zmierzył się z największym wyzwaniem w swoim życiu. Flota-rój Lewiatan przedarła się przez osłony systemu Cryptus, a Tyranidzi skierowali się bezpośrednio w stronę świętej ojczyzny Krwawych Aniołów – na planetę Baal.|
+404|Synowie Sanguiniusa pospieszyli na miejsce z odległych zakątków galaktyki. Zupełnie obcy sobie ludzie ginęli ramię w ramię jak bracia. Ale nawet tak niespotykane zgromadzenie braci w wierze nie zdołało powstrzymać Wielkiego Pożeracza.|
+405|W tej najmroczniejszej chwili Krwawe Anioły zgromadziły się wokół komandora Dantego. Mieli być ostatnią linią oporu. Poddali się czerwonemu pragnieniu i stawili czoła obcym. Nie w imię przetrwania, bo zakon był skazany na zagładę, ale w imię honoru ich ojca, Wielkiego Anioła Sanguiniusa.|
+406|Wówczas nastąpiło pandemonium. Otworzyła się Wielka Wyrwa, czyli Cicatrix Maledictum, i rozdarła galaktykę na pół. Czas wypaczył się i rozciągnął. Demony Khorne’a rozprzestrzeniły się na powierzchni księżyca Baal Primus, rozrywając na strzępy zarówno Xenos, jak i marines. Zapanował zamęt.|
+407|Ale wyrwa Cicatrix Maledictum skurczyła się równie szybko, jak powstała. Zabrała ze sobą zarówno demony, jak i olbrzymią część floty-roju Lewiatan. Na ich miejscu pojawiła się krucjata Indomitus, na czele której stał sam Mściwy Syn, prymarcha Roboute Guilliman.|
+408|Błogosławiony prymarcha przyniósł mieszkańcom Baala nie tylko ulgę. Przywiódł za sobą tysiące kosmicznych marines Primaris noszących symbol kropli krwi. Primaris byli więksi, silniejsi i odporniejsi od swych pierworodnych braci. Ale dla Krwawych Aniołów byli symbolem innego rodzaju zbawienia.|
+409|Ci superżołnierze mieli mieć ulepszony materiał genetyczny, czystszy i bliższy genom Sanguiniusa. Z dala od wścibskich uszu arcymag Cawl szeptał, że ci żołnierze wykazywali mniej symptomów wady krwi Wielkiego Anioła. Koniec z pragnieniem dręczącym ich serca. Koniec z pancerzami malowanymi na czarno.|
+410|Od tego czasu życie na planecie Baal pozornie wróciło do normalności. Monolityczna krucjata Indomitus przygotowuje się do opuszczenia układu. Komandor Dante, obecnie lord regent połowy Imperium, pracuje nad uleczeniem swego zakonu oraz Baala z traumy po ataku floty Lewiatan.|
+411|A na księżycu Baal Secundus sierżant Carleon śpieszy na pomoc pewnemu krwawemu kapłanowi...|
+412|Pozornie jest tu cicho i spokojnie, ale to cisza przed burzą. Zanim przejdziesz dalej, przeanalizuj pole bitwy.|
+413|Sprawdźmy, czy ten mechanizm otwierania bramy nie został zniszczony przez Xenos.|
+414|Twoje oczy mogą się mylić, twoje uszy mogą źle słyszeć, ale Imperator zawsze jest prawdą. Zaufaj ścieżce, którą wskaże ci twój auspex.|
+415|Hormagunty. Zauważ, że nie jest ich wiele. Nasi bracia mężnie ginęli, aby przetrzebić ich szeregi. Pozbądź się obcych, aby uhonorować dziedzictwo poległych.|
+416|Miejcie wiarę, bracia. Imperator nas strzeże!|
+417|Nadchodzi więcej naszych braci w boju! Aby do nich dołączyć, musimy zakończyć walkę z tymi guntami.|
+418|Nie marnuj pocisków na tchórzy kryjących się za murami. Ustaw się tak, aby mieć na oku wąskie gardło, i przygotuj się na ich szarżę.|
+419|Krwawy kapłan! Wielki Anioł ma nas w swojej opiece!|
+420|Za Imperatora!|
+421|Opuszczona osada przybyszów z Baala na księżycu Baal Secundus, w której wkrótce zabrzmią kroki beznamiętnych żołnierzy.|
+422|Ukryte wewnątrz krateru wyżłobionego przez starożytną broń Miejsce Próby przesiąkło krwią tysięcy śmiałków, którzy pragnęli dołączyć do Krwawych Aniołów.|
+423|Z ran tego manufactorum, niemal zupełnie opanowanego przez niewyobrażalną zarazę, sączy się sól.|
+424|Głęboko w czeluściach Ziem Duchów święte miejsce promieniuje wspomnieniami desperackich bitew i honorowego poświęcenia.|
+425|Na ulicach, które niegdyś były bastionem imperialnej potęgi, teraz toczy się wieczna wojna.|
+426|Główna arteria Administratum, zatkana przez korupcję i przemoc.|
+427|Publiczny plac, na którym Administratum pobiera – czy to w żołnierzach, pieniądzach, czy we krwi – imperialną dziesięcinę należną od mieszkańców tej mało znaczącej planety.|
+428|Spośród miliardów przewijających się na dole dusz żadna nie ucieknie przed długimi cieniami tych ogromnych budowli.|
+429|Zabij tyrana z Baal Fortunaty i jego Strażników roju<br>Wyeliminowano <b>{0}</b> z 3 Strażników roju.|
+430|Supremacja planetarna|
+431|Umierające słońce rzuca głębokie cienie na powierzchni Konarakhu, planety uznawanej za dawno porzuconą przez Imperium. Planeta ta, jeszcze do niedawna nieznana archiwistom Adeptus Administratum, stanowiła niegdyś domenę dynastii Mephrit Nekronów i była ceniona za swoje złoża wartościowego czarnego kamienia. W burzliwej historii starożytnej często dochodziło do konfliktów między rywalizującymi dynastiami. Świat ten nigdy nie miał doświadczyć pokoju.<br><br>Teraz każda frakcja w galaktyce pragnie kontrolować pustkowia Konarakhu oraz zasoby zakopane pod ich powierzchnią.<br><br>Aby osiągnąć zwycięstwo, musisz przemieścić swoje oddziały po mapie i zniszczyć terytoria bazowe dwóch przeciwnych frakcji. Zasoby strategiczne zapewnią ci unikatowe premie, które pozwolą ci utrzymać dominację. Przegrasz tylko wtedy, gdy nie uda ci się obronić swojej bazy przed naporem wroga. Dopóki masz choć jedną pozostałą przy życiu jednostkę, możesz walczyć dalej, aby sprowadzić na tę planetę swój gniew.|
+432|Supremacja planetarna to nowy tryb kampanii w stylu podboju, który jest obecnie w trakcie tworzenia. Zagraj w tę demonstrację i podziel się z twórcami opinią oraz sugestiami na łamach forum Slitherine.|
+433|Forteca Odkupienia|
+434|Ta majestatyczna fortyfikacja zbudowana przez zastępy aniołów jest odą do wielkiego anioła Sanguiniusa – i do wojny.|
+435|Fortyfikacja|
+436|Żerowisko|
+437|Kierując się upostaciowioną wolą umysłu roju, zmora pożerająca planety pochłania wszystko.|
+438|Strefa odzysku|
+439|Czarny kamień|
+440|Niebywale starożytne wejście do grobowca. To jedynie omen złowrogiej mocy, która przebudziła się na dole.|
+441|Nekroński grobowiec|
+442|Demoniczna inwazja|
+443|Nieskończone fale|
+444|Demoniczna inwazja to desperacka walka o przetrwanie. Walcz z coraz potężniejszymi falami demonów Khorne’a, które pędzą w prawdziwą przestrzeń, aby przelewać krew i zbierać czaszki ku zadowoleniu Władcy Szału!<br><br>Wybierz oddział z listy armii, wkrocz do piekielnego krajobrazu i zobacz, jak długo zdołasz przetrwać. Pomiędzy kolejnymi falami legionów Khorne’a będziesz mieć krótką chwilę wytchnienia, aby wzmocnić swoje siły ograniczonymi posiłkami.<br><br>Słudzy Boga Krwi są nieustępliwi, a twoja zagłada jest niemalże pewna. Czy zdołasz pokonać przeciwności i dożyć jutra?|
+445|Kara za dodatkowy element|
+446|Sanctum Sacresant|
+447|Sanctorum|
+448|Rozbrzmiewają psalmy bitewne, które dodają siły wiernym w tym sanktuarium i oddają cześć św. Katarzynie i bogu-imperatorowi|
+449|Złomowisko|
+450|Orkowe złomowisko|
+451|W tej zrujnowanej osadzie zielonoskórych porozrzucane są stosy najlepszego złomu, jaki można kupić za zenby.|
+452|Pole czaszek|
+453|Popękane i wyniszczone pustkowie usłane roztrzaskanymi kośćmi ofiar Boga Krwi.|
+454|Demoniczny świat|
+455|Posterunek Kasty Ognia|
+456|Gdy rozwiązania dyplomatyczne zawodzą, na przeciwników Większego Dobra wysyła się Kastę Ognia.|
+0|Станция вокс-передачи активирована|

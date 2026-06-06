@@ -1,0 +1,1897 @@
+1|Glándula Progenoide asegurada|
+2|Derrotar la emboscada Exocrina.<br><b>{0}</b>de 3 Exocrinos eliminados.|
+3|Defender al Hermano Quindar de la horda Tiránida<br><b>{0}</b> de 4 turnos|
+4|Asentamiento|
+5|Eliminar a todos los enemigos|
+6|Defender la Unidad|
+7|Proteger al Hermano Aeturo|
+8|<b>Hermano Aeturo</b><br>Recoger las semillas genéticas de los Ángeles Sangrientos caídos<br><b>{0}</b>de 4 cosechadas|
+9|Destruir a todos los Tiránidos|
+10|<b>Sargento Carleon</b><br>Asegurar el relé vocoemisor|
+11|Capilla del Desafío|
+12|Iniciación|
+13|Corrupción Venenosa|
+14|Relé Vocoemisor|
+15|Rearme y reabastecimiento|
+16|Zona en Reclamación|
+17|El Lord Comandante Dante tiene la intención de aumentar las filas de la 10ª Compañía de Exploradores con un número sin precedentes de nuevos reclutas pero, por ahora, los únicos refuerzos disponibles para reconstruir el Capítulo son los nuevos Primaris que desembarcan del carguero del Archimagos Cawl.<br><br>Después de la invasión de Leviatán, el Sumo Sacerdote Hermano Corbulo ha dirigido al Sacerdocio Sanguinario en la pesarosa tarea de recuperar las glándulas progenoides de los miles de hermanos de batalla que perdieron la vida defendiendo el sagrado Baal. La continuación de esta tarea por parte del Hermano Aeturo en Baal Secundus es vital para la existencia de los Ángeles Sangrientos y de los capítulos sucesores que lucharon aquí.<br><br>Este búnker de municiones está en el camino a la zona xenos en reclamación donde Aeturo perdió el contacto con el Sargento Pentacio. Aunque las armas de este búnker no corren peligro de ser robadas por los simplones Tiránidos, las reservas de municiones permitirán a Carleon pedir ayuda a las nuevas unidades Revientainfiernos que esperan en Baal.|
+18|Auxilia a las Hermanas. Los xenos ya nos han costado suficiente.|
+19|La Capilla del Desafío es un campo de pruebas sagrado para los aspirantes del Capítulo. Aquellos que sobreviven a las pruebas de combate y cumplen las altas expectativas de los evaluadores son ascendidos a los rangos de noviciado de los nobles Ángeles Sangrientos.<br><br>Se ha reinstaurado el rango de teniente tras la actualización del Códex Astartes por parte del Primarca Guilliman. Carleon es uno de los primeros Ángeles Sangrientos en obtener el recién reinstaurado rango.|
+20|El Sargento Carleon es muy respetado por el entrenamiento impartido a las nuevas tropas incorporadas a la Octava Compañía de Ángeles Sangrientos. Se especializa en las complejidades tácticas de la doctrina de asalto perfilada en el Códex Astartes.<br><br>Las filas del Sacerdocio Sanguinario se han visto muy afectadas tras Leviatán. Durante la invasión, los apotecarios del capítulo tuvieron que actuar también como soldados de primera línea contra el enjambre xenos. Que uno de ellos tuviera que pedir ayuda estando solo en Baal Secundus es razón suficiente para apresurarse a cruzar las salinas.|
+21|El antiguo Bibliotecario Donatus Gallian comprendió la destrucción que causarían sus poderes psíquicos si cayera en la Maldición de su sangre. Trabajó activamente para encontrar un equilibrio entre la nobleza y el hambre heredados de la semilla genética de su padre.<br><br>El resultado fue un arma de fuerza conocida ahora como el Báculo de Gallian, que encauza activamente la ira de quien la empuña. Esto ayudó a Donatus a evitar el terrible y destructivo destino que aguarda a muchos de sus hermanos de batalla. Para frustración de la Armería y el Librarius, el emotivo efecto de encauzamiento de la reliquia nunca ha sido replicado.<br><br>El Codiciario Mordos fue el último portador conocido del Báculo de Gallian. Es probable que algunos hermanos de batalla encontraran la reliquia durante la Devastación y la llevaran a este bastión, antes de ser invadidos por los Tiránidos.|
+22|La operación Tiránida de consumo planetario involucra piscinas de reclamación, a través de las cuales los alienígenas descomponen todo el material orgánico recolectado; y torres capilares que se elevan hasta el cielo, esperando para unirse a una nave colmena y transferir la biomasa.<br><br>Nadie conoce la verdadera intención de la Mente Colmena Tiránida. Las Flotas Enjambre invaden cualquier planeta en su camino, abruman a los defensores y consumen cada partícula de biomasa orgánica para alimentar el avance de la flota.<br><br>Si la Gran Fisura, la Cicatrix Maledictum, no se hubiera abierto cuando lo hizo, Baal y Baal Secundus serían poco más que cáscaras marchitas, con la Flota Enjambre Leviatán continuando su devastador camino a través de la Cicatriz Roja, devorando todo lo que se interpusiera en su camino.|
+23|Edad del Amanecer Carmesí|
+24|Tras la Devastación de Baal, los Ángeles Sangrientos trabajan para curar su mundo natal y su Capítulo. Salvados del borde de la extinción por la Cruzada Indomitus, ahora encuentran sus filas reforzadas por los nuevos Marines Espaciales Primaris. Quedan pocos restos de la invasión Tiránida, y el Primarca Roboute Guilliman está ansioso por dejar Baal y continuar con su cruzada.<br><br>El sargento Carleon de la Octava Compañía regresa a Baal Secundus y se le ha encomendado la tarea de evaluar la preparación para el combate de estos nuevos soldados Primaris. Mientras la cápsula de desembarco viaja hacia su luna natal, piensa sobre la llegada de estos nuevos hermanos de batalla y el coste de su improbable supervivencia contra el implacable Leviatán de la Flota Enjambre...|
+25|Entrada al búnker asegurada|
+26|Tiranofex eliminado|
+27|Enlace de lente establecido|
+28|Exocrino eliminado|
+29|Báculo de Gallian asegurado|
+30|Baal Secundus y Baal Primus son las dos lunas que orbitan el planeta natal de los Ángeles Sangrientos, Baal. Se dice que ambas lunas albergaron civilizaciones muy avanzadas hasta el final de la Edad Oscura de la Tecnología.<br><br>Se sabe poco sobre estas civilizaciones precursoras, aunque se acepta ampliamente que su conflicto, luchado con armas nucleares y virales sin precedentes, causó las zonas radiactivas mortis que ahora marcan la superficie de Baal Secundus.|
+31|Limpiar los gantes|
+32|Eliminar todas las fuerzas Tiránidas restantes|
+33|Asegurar el búnker de municiones|
+34|Proteger al Bibliotecario Dreadnought.|
+35|Relevar a las Hermanas de Batalla<br>La hermana Verity debe sobrevivir|
+36|Brecha en el Muro Celestial|
+37|La mayoría de las formas de vida tiránidas son limitadas en inteligencia y salvajes en aislamiento, pero pueden ser comandadas por líderes sinápticos. Estas criaturas sinápticas actúan como conductos psíquicos para la voluntad implacable de la Mente Enjambre.<br><br> Cuando se utilizan múltiples líderes sinápticos para establecer una fuerza de combate, forman una red de nodos telepáticos entre ellos, dirigiendo y manipulando las bioformas menores en una manada de caza hiperorganizada y despiadada.|
+38|Purga a los xenos de Kemrender|
+39|Releva la Misión Baal de las Adeptas Sororitas<br><b>{0}</b>de 7 unidades supervivientes|
+40|Libera Caída del Ángel|
+41|Augurio|
+42|Defiende a Quindar mientras augura la ubicación del líder sináptico.|
+43|Escoltar al Hermano Quindar al relé astropático.|
+44|<b>Defender la zona</b><br>Defender el lugar del accidente del Stormraven|
+45|Activar el relé con el Bibliotecario Dreadnought.|
+46|Matar al Tiranofex.|
+47|Exterminar a todas las fuerzas Tiránidas.|
+48|<b>Hermano Aeturo</b><br>Recuperar la semilla genética del Sargento Pentacio.|
+49|Relé astropático|
+50|Este Relé Astropático fue defendido por el capítulo sucesor Hojas Carmesíes durante la Devastación de Baal. Si el coro interior hubiera caído, la Cruzada Indomitus no habría llegado a Baal para auxiliar a los hijos de Sanguinius.<br><br>El Tecnomarine Croginax ha sido asignado como escolta del Hermano Quindar para monitorizar la susceptibilidad del psíquico a la Maldición. Si el Bibliotecario muestra algún signo de caer en la Rabia Negra, será responsabilidad del Tecnomarine desarmar y desactivar al dreadnought. El fracaso implicaría una vorágine imparable de destrucción.|
+51|Desactivar el segmento de flujo de prometio primus.|
+52|Desactive el segmento de flujo de prometio secundus.|
+53|<b>Carleon</b><br>Reunirse con las Hermanas de Batalla.|
+54|Control de puerta activado|
+55|Líder sináptico Tervigón eliminado|
+56|Localizando fundación del nodo sináptico|
+57|Mecanismo guardabarreras activado|
+58|Localizar al Bibliotecario y recolectar su semilla genética.|
+59|Localizar el Báculo de Gallian|
+60|Salto del Ángel|
+61|Abrir las Puertas de Kemrender.|
+62|Defender las Puertas de Kemrender y purgar a los xenos|
+63|Matar al Tervigón|
+64|Purgar a los Tiránidos del Intercambio de Sal|
+65|Proteger la ubicación donde descansa el cuerpo de Quindar|
+66|Auxiliar a las Hermanas de Batalla<br><b>{0}</b>de 3 unidades vivas|
+67|Ayudar a la Compañía de la Muerte a encontrar un final honorable<br><b>{0}</b> de 5 unidades de la Compañía de la Muerte caídas en combate|
+68|Matar al Tirano de Baal Fortunata|
+69|Limpiar a los Tiránidos restantes|
+70|Flujo auxiliar desviado|
+71|Protocolo de flujo auxiliar detenido|
+72|Destruir a los hormagantes|
+73|Destruir todos los Nodos de Infestación ({0}% completado)|
+74|Limpiar la zona de Tiránidos|
+75|Segmento de flujo de prometio primus desactivado|
+76|Segmento de flujo de prometio secundus desactivado|
+77|OPCIONAL: Otorgar al sargento Carleon el golpe mortal contra el Tiranofex|
+78|Capitán Matarno|
+79|Limpiar el Cañón del Río del Viento de presencia xenos|
+80|Defenderse frente a la horda<br><b>{0}</b> de 6 turnos|
+81|Acercarse al cuerpo de Quindar|
+82|Activar los tres controles del guardabarreras.|
+83|Primer interruptor del guardabarreras activo [Se desactiva en {0} turnos]|
+84|Segundo interruptor del guardabarreras activo [Se desactiva en {0} turnos]|
+85|Tercer interruptor del guardabarreras activo [Se desactiva en {0} turnos]|
+86|Ruinas Imperiales|
+87|Numerosas Comandancias de la Orden de Nuestra Señora Mártir han acompañado al Primarca Roboute Guilliman durante la Cruzada Indomitus, llevando la luz del Emperador a los rincones oscuros y olvidados de la galaxia.<br><br>La Canonesa Martilja lidera la Misión Baal, que pretende ayudar a reconstruir las comunidades de la Cicatriz Roja fracturadas por la Flota Enjambre Leviatán. Incluso durante la recuperación y el dolor, no hay lugar para la herejía.<br><br>Mientras Dante y el Consejo Rojo esperan la partida de la Cruzada Indomitus, se ha considerado necesario que las Hermanas de la Misión Baal se trasladen a Baal Secundus.|
+88|El Consejo Rojo ha acogido a la Canonesa Martilja como asesora provisional, que ahora asesora al Comandante Dante y a su Mando del Capítulo. Mantiene una escasa guardia de honor de Hermanas Celestes mientras permanecen dentro del Arx Angelicum.<br><br>Mientras la mayor parte de la Misión Baal realiza trabajo logístico, de recuperación y misionero en Baal Secundus, la Hermana Superiora Verity ha sido adjunta a la 8ª Compañía de los Ángeles Sangrientos para ayudar a eliminar cualquier amenaza Tiránida restante en la luna.<br><br>La Hermana Superiora Verity es una oficial y soldado muy experimentada, cuya actitud tranquila oculta un furioso celo interior que solo florece verdaderamente en el campo de batalla.|
+89|Kemrender es el centro de procesamiento y comercio de sales más grande, lo que lo convierte en uno de los principales asentamientos de Baal Secundus. Como la mayoría de los demás, Kemrender fue abandonado por su población antes de que Leviatán apareciera sobre Baal.<br><br>Los rumores indican que Guilliman se impacienta al enterarse de la desaparición de la red sináptica en Baal Secundus. Dante, siempre paciente, espera noticias del teniente Carleon sobre el éxito de la misión.|
+90|Puertas de Kemrender|
+91|Hermana Verity|
+92|Cría de Genestealer|
+93|Los Genestealers son el terror invisible de la pesadilla Tiránida. Escondidos en rincones oscuros, subvierten e infestan a las poblaciones locales, pudriendo el planeta desde dentro, esperando que una flota colmena encuentre y active su resistencia.<br><br>Estos bioorganismos de vanguardia son únicos en la flota colmena, ya que pueden mantener una forma de telepatía de camada entre ellos, sin requerir la mano guía de un líder sináptico para planear y ejecutar su victoria estratégica.<br><br>Que una camada de genestealers haya infestado Kemrender hace que la misión de recuperación de los factorum sea mucho más difícil. La amenaza persistirá con que sólo un único genestealer sobreviva, escondido en el profundo y oscuro corazón de la luna.<br><br>El apoyo aéreo del cuartel general no estará disponible para esta misión.|
+94|El Intercambio de Sal|
+95|Si la sal es la sangre de Baalfora, entonces el Intercambio de Sal de Kemrender es su corazón enfermo. Los minerales y la arena una vez se vertieron a través de sus canales, bombeando dentro y fuera al ritmo de los caprichos de los comerciantes y mercaderes. Cualquier oscuridad que haya hecho de este factorum su hogar debe ser eliminada y erradicada por completo.<br><br>Aunque es incomparable al tamaño original del Leviatán de la Flota Enjambre, la Cruzada Indomitus es un imperio en sí mismo y proyecta una larga sombra sobre el sistema Baal. Nadie se atreve a hablar mal de un verdadero hijo del Emperador, pero la presencia continua de Guilliman ha estancado gran parte de los esfuerzos de reconstrucción, debido a que los suministros se comparten entre Baal e Indomitus.|
+96|La Batalla por Caída del Ángel|
+97|Caída del Ángel se construyó en el lugar donde se encontró la cápsula que protegía al infante Primarca Sanguinius. La gran ciudad que se ha construido desde entonces es un testimonio de la nobleza y determinación del Gran Ángel y sus hijos.<br><br>La Misión Baal de la Orden de Nuestra Señora Mártir pretende ser una ayuda primordial en la restauración de Baal Secundus. Caída del Ángel permanece en gran parte abandonada mientras construyen la sede de la Misión cerca de la base de la estatua del Gran Ángel.|
+98|Bloqueo de Río del Viento|
+99|Los vientos del cañón del Río del Viento conforman una ruta aérea mortal, tomada por aspirantes que desean probar su resistencia antes de emprender las pruebas de iniciación.<br><br>Por cada tiránido que es destruido, se encuentran una docena más tras la siguiente esquina. Está claro que una fuerza significativa todavía permanece oculta en algún lugar de la luna de Baal Secundus, y está guiada por un liderazgo sináptico significativo.|
+100|Salto del Ángel|
+101|La Arpía que atacó la sede de la Misión Baal del Adepta Sororitas en Caída del Ángel fue vista por última vez volando hacia este pico.<br><br>Un grueso nudo de aberraciones sinápticas aguarda en Salto del Ángel, donde Carleon y muchos otros primogénitos de los Ángeles Sangrientos saltaron con sus alas improvisadas.<br><br>Desde este pináculo negro, muchos aspirantes saltan a las corrientes del Cañón del Río del Viento y son arrastrados, bien a su muerte o bien a su salvación.|
+102|Las Tierras Fantasmas|
+103|Las Tierras Fantasma son un páramo en ruinas. Son todo lo que queda de la gran civilización que una vez prosperó en Baal Secundus durante la Edad Oscura de la Tecnología.<br><br>Se desconoce qué llevó a la guerra a las civilizaciones de Baal Secundus y Baal Primus. Los mitos locales describen a las lunas como hermanos en guerra, que finalmente fueron arruinados por armas de escala inimaginable. Las zonas radiactivas mortis que marcan a Baal Secundus son evidencia de la destrucción que se produjo.|
+104|Hermano Quindar|
+105|El impacto de la muerte de Sanguinius en el punto álgido de la Herejía de Horus produjo ondas de choque psíquicas a toda la Novena Legión. Hasta el día de hoy el recuerdo de la traición resuena dentro de la semilla genética de los Ángeles Sangrientos.<br><br>Cuando este golpe psíquico se vuelve demasiado para que un hermano de batalla pueda soportarlo, se pierde en alucinaciones llenas de ira y sucumbe a la Rabia Negra. Incluso aquellos enterrados dentro del sarcófago de un Dreadnought no son inmunes a los riesgos inherentes a su semilla genética.<br><br>Aunque la existencia de la Rabia Negra no se mantiene en secreto, los Ángeles Sangrientos intentan minimizar las pruebas del Defecto frente a miembros que no pertenecen al Capítulo, especialmente cuando hay psíquicos involucrados.|
+106|El Tirano de Baal|
+107|En un grupo de depredadores, el Tirano del Enjambre es la cúspide de la colmena Tiránida. Actúa como un conducto directo de la voluntad de la Mente Enjambre, y su presencia sofoca los comportamientos salvajes de cada bioforma menor a su alrededor.<br><br>Sin el Tirano del Enjambre, la presencia Tiránida en Baal Secundus se fragmentará en grupos más pequeños, momento en el cual será susceptible de erradicación completa.|
+108|Puentes|
+109|Zona Radiactiva Mortis|
+110|Pista de Aterrizaje|
+111|Báculo de Gallian|
+112|El Pasillo de los Diezmos|
+113|Cumbre Colmena|
+114|Sobrevive a los bombardeos de las Arpías y a los refuerzos del enjambre.|
+115|<b>Quindar</b><br>Alcanza el pináculo de Salto del Ángel.|
+116|Mantén el búnker contra los refuerzos Tiránidos<br><b>{0}</b>de 3 turnos|
+117|Elimina el racimo sináptico.|
+118|<b>Tecnomarine Croginax</b><br>Asegurar el Báculo de Gallian.|
+119|<b>Tecnomarine Croginax</b><br>Escapar de la sala de control auxiliar.|
+120|Apagar la consola secundaria y escapar.|
+121|El tiempo fluye en contradicciones desde la invasión. Hay una lentitud inesperada a raíz de una victoria imposible. Una lánguida dulzura de aire saboreada por el desventurado vencedor.|
+122|Y, sin embargo, también siento el giro del cambio y las minucias acumuladas que recaen sobre los supervivientes. Cadáveres para ser quemados; fortificaciones para reconstruir; neófitos que han de pasar su bautismo de fuego. Independientemente de nuestras pérdidas, somos los Ángeles de la Muerte y siempre estamos preparados para la guerra.|
+123|No es que estas sean preocupaciones para los novatos Primaris en este momento. Baalfora es un tutor implacable.|
+124|Dante dice que sois Ángeles Sangrientos. ¡Probadlo! ¡Mostradme que la sangre del Gran Ángel fluye por vuestras venas!|
+125|Sabéis luchar, os lo concedo. Todavía no sé si realmente sois vástagos de Sanguinius, o simplemente una artimaña de los Archimagos. La batalla lo decidirá. Siempre lo hace.|
+126|…se requiere asistencia inmediata. Los Tiránidos convergen sobre el relé vocoemisor en el borde occidental de Sal Feritas.|
+127|¡A mi, hermanos! Parece que Baalfora ha decidido que aún no ha acabado con vosotros.|
+128|Sargento. Con el relé fuera de combate, temía que sólo los xenos hubieran escuchado mi petición de refuerzos. Date prisa; mi reductor todavía tiene trabajo que hacer.|
+129|Como digas, hermano. Los Filos Sangrientos de la Octava están siempre dispuestos a servir al Sacerdocio Sanguinario.|
+130|No deberíamos tener dificultades para ponernos en contacto con Baal ahora. Mientras sobrevivamos a este aumento de xenos cercanos.|
+131|Esa es la última progenoide que podía recoger aquí. Se ha tomado nota de tu ayuda, sargento.|
+132|Carleon. Sargento Carleon de la Octava, Matarno al habla. Responde, hermano.|
+133|Capitán Matarno. Te has ganado el rango, hermano. Úsalo.|
+134|Estas reuniones del consejo son un buen recordatorio de lo poco cualificado que suena el título. Por favor, distráeme de toda esta cháchara sobre logística y recuperación. Dame tu valoración sobre los Primaris.|
+135|Todavía están cortejando a la bella Baalfora. Quedan muchos gantes con los que estirar los músculos. De hecho, acaban de terminar de intervenir en nombre del hermano Aeturo.|
+136|¿El sacerdote? Lo envié con Pentacio para limpiar los agrupaciones de xenos al oeste de las planicies. ¿Dónde está el sargento?|
+137|Muerto, junto con sus hombres. El sargento Pentacio insistió en que me retirara de la zona con las pocas progenoides que tenía, justo antes de que le aplastaran la garganta. Hay una presencia repugnante entre las torres alienígenas.|
+138|Muéstramelo. Llévame a donde dejaste morir a Pentacio, sacerdote. Recuperarás la semilla genética restante de nuestro hermano, a pesar de lo que creas que se esconde dentro de esos pozos infectados.|
+139|¡Sargento! El capitán Matarno dijo que lo encontraríamos aquí. Nos han enviado para ayudar con su misión de recuperación.|
+140|La ayuda es bienvenida. No deseo agregar el mío a los cadáveres ya presentes aquí.|
+141|Estos restos dispersos tienen poco que recuperar. Dudo que haya mucho aquí que pueda recoger.|
+142|Esto es más que una mera ejecución. El alienígena sufrirá por esta carnicería.|
+143|Marcad el búnker como seguro. Tomaremos lo que necesitemos; el Logisticiam catalogará el resto.|
+144|El área está asegurada. Como anticipantes, queda poco de nuestros hermanos que se pueda recuperar. Rezo para que la semilla genética de Pentacio permanezca intacta. Es un trabajo terrible el que emprendes, sacerdote.|
+145|No es una tarea que me guste. La escala de nuestro deber hace que el servicio sea incómodo. Pero, en cierto modo, me alegro de haber sido relegado a esta luna, donde los cuerpos de nuestros hermanos sólo se amontonan por docenas...|
+146|Defender al hermano Aeturo del asalto Tiránido mientras completa su tarea|
+147|La promesa de batalla hace que estos Primaris estén inquietos, ansiosos. Es mi deber evaluar su potencial aquí en las salinas de Baalfora. A través del combate, tengo la intención de descubrir quiénes son realmente estos gigantes de roja armadura.|
+148|Algunos de ellos contemplan las salinas como turistas aburridos. Hay poca consideración por los cielos y arenas que dieron forma a nuestro padre. Aprenderán rápidamente o Baalfora los matará. Ella no tolera la laxitud.|
+149|Espero que este sacerdote que encontramos también sea nuevo en su papel. No hay otra razón que la ignorancia juvenil para arriesgar la sangre del Ángel en las salinas. En estos días posteriores a la devastación del Leviatán, somos un Capítulo repleto de sangre fresca.|
+150|Es lamentable que el hermano Aeturo se presentara desde una posición de debilidad. Es muy diferente a como normalmente se presenta a un Ángel Sangriento al Sacerdocio Sanguinario. Espero que la primera impresión en estos Primaris sea pasajera.|
+151|Para ser justos, la indiferencia del hermano Aeturo hacia nuestros nuevos hermanos tampoco le hace justicia. Pasa por alto su potencial y sólo ve sujetos de prueba cultivados en laboratorio, sin experiencia real.|
+152|Entiendo la raíz del escepticismo del sacerdote. Hace un siglo tampoco habría llamado hermano a nadie que no hubiera bebido de los Cálices de Sangre. Pero hace un siglo, no hubiera creído que nos vería rescatados del borde de la extinción. Por el Primarca Guilliman, nada menos.|
+153|La preocupación del hermano Aeturo es que nos arroje de cabeza a la muerte, como una especie de penitencia por esta culpa que me pesa. Estoy obligado por el honor a vengar a mi hermano de batalla, pero sé que debemos actuar de forma pragmática. Pentacio tenía la habilidad y la experiencia de una docena de experimentados Marines de Asalto cuando fue superado.|
+154|Aprovecharemos esta oportunidad para volver sobre los pasos del hermano Aeturo y rearmarnos antes de abrir una brecha en el lugar de la infestación. Hay pocos problemas que no se puedan resolver con un arma de plasma, en mi experiencia.|
+155|"Conoce tu deber y cúmplelo por encima de todo". Ese es la razón de ser de un Astarte, y la razón por la que me dirijo a esos pozos infestados.|
+156|Tengo un deber para con Pentacio y con la Octava Compañía. Haber sobrevivido al Leviatán, solo para ser vencido por sus restos...No merezco el honor de recuperar su nombre. Pero si es la voluntad del Emperador, así lo haré.|
+157|El sacerdote continúa parloteando en mi oído sobre los Primaris. Todavía no han mostrado ningún signo de la Rabia Negra, pero ambos hemos sido testigos de la sed presente dentro de ellos. Todavía no comprenden el endurecimiento de sus mejillas, el rubor sanguíneo de su piel cuando se acerca la batalla.|
+158|No importa lo bien que crean que lo ocultan, estos Primaris comparten nuestra sangre y sus defectos. La Sed Roja se clava en sus corazones. Veamos qué pasa una vez que se enfrenten a la bestia que mató a Pentacio.|
+159|¿Esta es tu bestia, hermano? No es más que un Tiranofex idiota.|
+160|Su comportamiento no era tan errático antes. Algo ha cambiado en él.|
+161|Sí, Pentacio no habría caído por esto. Vamos, nuestro deber está claro. Recupera su semilla genética y nosotros nos cobraremos nuestra venganza.|
+162|He recuperado la semilla genética del sargento Pentacio. Su legado perdurará dentro de la Hueste Angélica.|
+163|¡Alabado sea Sanguinius!|
+164|Marcad esta ubicación para los servidores del Logisticiam. Estos malditos pináculos ya no estropearán la piel de Baalfora.|
+165|La inconsistencia mostrada por el alien me preocupa. No había señales de la inteligencia y la astucia con la que nos venció antes.|
+166|No tienes que dar explicaciones, hermano. Es evidente que había una disparidad entre la bestia a la que nos enfrentamos y la que superó a Pentacio.|
+167|Pero seguía siendo la misma criatura.|
+168|Sí. Pero previamente dirigida por la voluntad de otro.|
+169|Una red sináptica ... Eso no augura nada bueno para tu luna...|
+170|No pude ocultar mi conflicto mientras le proporcionaba mi evaluación a Matarno. Ahora no tengo ninguna duda de que existe algo de Sanguinius dentro de estos Primaris. Pero se mueven por un mundo que aún no está a su escala; un universo que aún no está preparado para su peso.|
+171|Habría sido mucho mejor si hubieran estado aquí días antes, cuando las hordas de xenos eran infinitas e implacables. Ahora, limpian los restos, siguiendo los pasos que alguna vez pertenecieron a mis hermanos perdidos. Parecen niños jugando a soldados.|
+172|El novicio no entendió el significado de la muerte de Pentacio, pero Matarno comprendió la amenaza de inmediato. Si hay un líder sináptico todavía vivo en Baalfora, es que no ha sido detectado en todo este tiempo. Una amenaza que se ha infectado.|
+173|Por esa razón, el capitán me ha enviado a recorrer el Muro Celestial. La variedad es desconcertante para los nuevos reclutas: un laberinto de valles destrozados por explosiones y senderos de montaña impenetrables. Con solo una gota de astucia, una bestia tiránida podría permanecer aquí oculta sin ser detectada durante generaciones. Y luego, violentamente...|
+174|[EXPLOSIÓN]|
+175|Mi vocoemisor explota con estática. Más de un siglo de instinto me impulsa hacia la explosión. Mis órdenes se siguen de inmediato, el resto del destacamento pisándome los talones sin cuestionarlo. Baalfora todavía nos depara sorpresas, hermanos.|
+176|¡Malditos parásitos! Incluso en la muerte no hacen otra cosa que molestar.|
+177|El complejo de probabilidad decae. La ayuda llega según lo previsto.|
+178|No esperaba ver un dreadnought tan lejos del Angelicum, y mucho menos uno del Librarius. Y tus novicios Primaris hablan de potencial desperdiciado...|
+179|Nuestra misión no es cuestionar. ¡Adelante, hermanos, auxiliad al Bibliotecario!|
+180|Se agradece la ayuda, sargento. Pero si esos controles del flujo de prometio no se cierran, no serán los gantes los únicos incinerados hoy aquí.|
+181|Comprendido. Nos encargaremos de ello, Tecnomarine.|
+182|No sería un día normal si no evitáramos una muerte segura, sólo para descubrir otra fuente de muerte segura esperándonos.|
+183|¡Por la gloria de Sanguinius!|
+184|¿Carleon? Carleon, Matarno. Requiero respuesta codificada urgente. Tengo órdenes directas del Consejo Rojo.|
+185|Percibo disensión en el Librarius. Les preocupa una red sináptica que une a Baalfora.|
+186|Ya has encontrado al Bibliotecario. Bien. Protegedlo. Puede ayudar a descubrir cualquier mal que se esconda en el Muro Celestial.|
+187|No te demores, Carleon. No me gusta el tono que ha adoptado este Consejo Rojo.|
+188|Percibo que esa era la última amenaza de los xenos en el área inmediata.|
+189|Nos sentimos honrados de luchar a tu lado, Hermano Bibliotecario. Te preguntaría cuál es tu propósito aquí, pero parece que ambos tenemos un nuevo objetivo que cumplir.|
+190|¡Bah! Son incontables las veces que un capitán se ha comprometido en exceso con su propia hipérbole. Tenemos nuestro propio trabajo que cumplir…|
+191|Me temo que nuestra propia misión será anulada, hermano Croginax. Hay algunos en el Librarius que creen que Leviatán regresa.|
+192|Eso ... no, eso no puede ser cierto.|
+193|Y, sin embargo, hermanos más ancianos y sabios que tú argumentan ahora lo contrario. Conjeturan que una red sináptica lo suficientemente fuerte podría guiar a la flota colmena de regreso de la disformidad, como un faro en la tormenta. No conozco la veracidad de esto. De todos modos, el sargento necesitará de mi ayuda si quiere encontrar a su presa en estas montañas.|
+194|Entonces te llevaremos a la matriz de lentes. Quindar la necesitará si quiere evitar dormirse buscando tus parásitos. No le hagas esperar.|
+195|Matarno abre comunicación y habla con Quindar y conmigo sobre las bestias sinápticas y la teoría del Librarius. Una red de sinapsis con suficientes enlaces con la Mente Colmena podría, en teoría, actuar como un faro y guiar las flotas de Leviatán. Traerlos a través de la disformidad, de regreso a Baal.|
+196|En teoría. Se trabaja mucho entre esas dos palabras. No dudo que para Matarno es un desafío la burocracia de su nuevo rol. Es un raro rompecabezas que no puede resolver blandiendo su espada.|
+197|Hasta que los Bibliotecarios comprendan mejor la amenaza, nuestro objetivo es encontrar y exterminar todo el liderazgo sináptico enquistado en el Muro Celestial.|
+198|Con ese fin, estoy escoltando al Hermano Bibliotecario Quindar al relé astropático. Su confusa cháchara sobre aberraciones de la disformidad y anomalías exigentes es de poco consuelo. Pero su determinación es clara, y agradeceré su presencia cuando llegue el momento de la batalla. El Tecnomarine también, a pesar de sus...modales únicos.|
+199|No cuestiono la voluntad del Emperador, pero debo admitir que la supervivencia me pesa mucho. Haber presenciado el sacrificio de miles de hermanos, Capítulos enteros eliminados de los anales de la historia, solo para que esta amenaza del Leviatán vuelva...mentiría si dijera que la idea no me preocupa.|
+200|Son una plaga en esta luna. Por cada uno que matamos, emerge una docena de cualquier esquina.|
+201|Tsk, ya vale de poesía. Quindar necesita acceso directo a esa matriz de lentes. Lo recalibraremos para enfocar sus adivinaciones, y encontrarás todas las disrupciones en la disformidad de aquí hasta el Angelicum.|
+202|Presta atención a mis palabras, Primaris. Un gante bajo el control de la Mente Colmena es un oponente completamente distinto a cualquiera que con el que te hayas enfrentado hasta ahora. Su telepatía sináptica convierte a la más letárgica de las bestias en un hábil asesino.|
+203|He activado la matriz de lentes. Catalogaré todas las disrupciones de la disformidad que indiquen actividad xenos sináptica.|
+204|Mantened esta zona contra los Tiránidos, hermanos. No dejéis vivo a ninguno de los xenos. El Bibliotecario debe completar su trabajo.|
+205|No hay más xenos en las inmediaciones. Necesito ayuda con esta matriz, Hermano Croginax ...|
+206|Sí, sí, tómate tu tiempo. ¿Y si ajustamos esos sensores sin afectar a tu sistema nervioso? Lo que quede de él dentro de ese sarcófago, quiero decir.|
+207|Puedo ver su red desplegada ante mí. La trama de su corrupción se entreteje profundamente con Baal Secundus.|
+208|Confío en tus visiones, aunque las palabras amarguen la victoria.|
+209|Encontraremos toda la corrupción que acecha en las sombras de tu luna, teniente. Puedo ver que nuestro viaje juntos aún no ha terminado.|
+210|No soy un teniente, hermano. Ese rango no ha existido desde hace diez mil años...|
+211|Lord Guilliman ha revisado el Codex Astartes. Serás uno de los primeros hijos de Sanguinius en ostentar el título de nuevo. Matarno comunicará a su debido tiempo la noticia de tu ascenso. Hasta entonces, necesito tiempo para catalogar estos nodos...|
+212|En este terreno sagrado, cada uno de nosotros luchó con uñas y dientes por la oportunidad de convertirnos en ángeles. Cuando pasé por primera vez debajo de estas estatuas, aún no había tomado la sangre del Gran Ángel. No preveía que volvería a hacerlo desde dentro de mi propio sarcófago.|
+213|Enfrentado a lo inconmensurable e inagotable, sólo obtengo respuestas a medias. Saco al teniente Carleon de sus culpables cavilaciones y le digo que las aberraciones sinápticas resuenan en este lugar. Yo no miento. Pero no le digo que la estática es la razón secundaria por la que lo traigo aquí.|
+214|Un susurro me llega desde más allá del Muro Celestial. Sin conocer nada más, ¿cómo voy a saber de quién es la voz que sigo? Escucho las órdenes del teniente, el rango resucitado y tan brillante como la hombrera que le ha obsequiado la Armería. Pero la suya no es la pregunta que me guía aquí.|
+215|No hay respuesta. Solo puedo seguir la voz hacia el norte, seguirla hasta esta Capilla del Desafío y rezar por una respuesta a mi eterna vigilia.|
+216|Estas estatuas me traen recuerdos que pensaba desvanecidos hace mucho tiempo. No son más que basura obsoleta para estos Primaris, supongo.|
+217|No veo rastro de los xenos. ¿Está seguro de que las aberraciones en la disformidad provenían de aquí, Hermano Quindar?|
+218|Sí, teniente. No puedo explicar su ausencia. Quizás hay un elemento temporal que no he tenido en cuenta...|
+219|Quieres decir que estabas viendo el pasado.|
+220|No, Tecnomarine. No hay necesidad de preocuparse por ese particular. Preparaos. Los Tiránidos saben ya que estamos aquí.|
+221|¡Fuego exocrino! ¡Formación defensiva, ahora!|
+222|¡Refuerzos! Como todos nuestros hermanos de la doctrina de asalto, su sincronización es impecable.|
+223|Vaya. Mirad esos propulsores de salto. Parece que Cawl también trajo a tu sustituto con él, independientemente de tu nueva hombrera.|
+224|La zona ha sido limpiada de presencia xenos. No regresarán. El vínculo sináptico permanece.|
+225|Aprovechad este momento. Muy pocos pueden luchar en la Capilla del Desafío como Astartes de pura cepa.|
+226|Carleon, Matarno. Informa.|
+227|Hemos terminado de asegurar la Capilla del Desafío. Muy agradecidos por los refuerzos. El Hermano Quindar nos lleva a otro grupo sináptico desde aquí.|
+228|Deprisa, hermano. Tienes una serie de órdenes, desde mí mismo hasta Dante y el mismísimo Hijo Vengador. Lord Guilliman es reacio a irse mientras permanezca esta incógnita que es la red sináptica. No hagas esperar a la Cruzada Indomitus.|
+229|Hay una perturbación entre la radiación. Alguna vez fue más fuerte, pero ha disminuido en los últimos días. ¿Es una guía? ¿O la promesa de otra amenaza, como Leviatán?|
+230|Me veo de pie entre espectros, mis manos una vez más de carne y hueso. Son incapaces de contener la espada que atraviesa mi pecho, buscando la sangre de mi corazón. Miro hacia abajo y solo siento los puños de esta máquina de guerra.|
+231|El susurro incita de nuevo. No dice nada, pero es una presencia, de cualquier modo. No es una aberración sináptica, pero le digo a Carleon que debe serlo, porque ¿qué más podría traerme aquí?|
+232|No mucho de Baal Secundus ha sorprendido a los nuevos Primaris. Pero la amenaza de las zonas radiactivas mortis hace que sus corazones latan con furia. Pocas cosas son más insidiosas que cultivar tu muerte desde dentro. Lo sé bien.|
+233|Cuidado, Primaris. Estas zonas radiactivas mortis son asesinas sutiles. Incluso dentro de tu servoarmadura, no estás del todo seguro.|
+234|El susurro está delante. El Codiciario Mordos, último portador conocido del Báculo de Gallian. Su destino después de la invasión era desconocido para el Librarius.|
+235|Bueno, ahora tenemos una idea bastante clara de lo que le pasó. Sin embargo, no hay señales de ese báculo de fuerza. Sería una maldita desgracia perder esa reliquia aquí.|
+236|Tengo el deber de recuperar la semilla genética del Codiciario. Incluso aunque esté contaminada por la radiación, puede ser útil para las investigaciones del Sumo Sacerdote Corbulo.|
+237|Se ha recuperado la semilla genética del Codiciario. No hay rastro de su reliquia cerca del cuerpo. Es una pena; me hubiera gustado ver el arma sobre la que el hermano Corbulo discutía con tanta vehemencia.|
+238|Todas las formas de vida xenos han sido eliminadas y la semilla genética del Codiciario está a salvo con el hermano Aeturo.|
+239|Sabes, una vez intenté recrear el Báculo de Gallian. Me pasé doscientos días en la fragua fabricando una réplica exacta. No pude obtener ni una pizca del efecto.|
+240|¿Y qué hiciste?|
+241|La partí por la mitad. Me rompí la rótula en el proceso. No fue mi mejor momento, lo admito.|
+242|La red sináptica sigue siendo nuestro enfoque principal. La reliquia de Gallian no será de mucha ayuda si la Flota Enjambre Leviatán nos rodea en su regreso.|
+243|Muros de una miríada de años me rodean, restos de una devastación nuclear. Me concentro y regresa la red aberrante en el flujo de la disformidad. Una red sináptica espera, con el Báculo de Gallian en su corazón. Un señuelo, o una coincidencia, no lo sé.|
+244|Es difícil concentrarse en las palabras que me rodean. A través de la neblina, puedo ver que mis hermanos evitan hablar de la Rabia Negra mientras están en mi compañía. El sacerdote y el tecnomarine intercambian miradas significativas, que los Primaris ignoran.|
+245|Me fortalezco. Un paso, reducido a un milímetro, encarado al precipicio hacia el cual caminamos por siempre. Llevaré a Carleon a esta fortificación y aplastaré la red sináptica. Mi deber sigue siendo eterno.|
+246|El nodo del clúster líder sináptico está presente. Su destino será el exterminio.|
+247|Sí, y también hay armamento de fuerza en esas ruinas. Puedo sentirlo.|
+248|Las arenas se mueven debajo de nosotros.|
+249|¡Trygon! ¡Mata al alien!|
+250|El Báculo de Gallian está a buen recaudo. La metáfora que representa no se me escapa. Estos Primaris le sacarán menos provecho a esta reliquia que nosotros.|
+251|El Emperador observa todo, hermano. Todavía tienes un propósito en el deber.|
+252|Se ha eliminado el grupo líder de la sinapsis. La red se debilita.|
+253|Si tuviera más tiempo, encontraría la manera de que Quindar usara esta reliquia. Una medida de precaución hasta que pueda regresar al Arx Angelicum.|
+254|Entiendo tu preocupación, Hermano Croginax. Pero corremos contra el propio Leviatán, y no debemos arriesgar más la seguridad de esta reliquia histórica. Puedo controlar mi genio yo mismo, por ahora.|
+255|Contacta con el Logisticiam, teniente. Deberían devolver este báculo de fuerza a la Armería del Capítulo lo antes posible.|
+256|Debo recordarme a mí mismo que nuestra presencia en esta luna no es una expulsión de Baal propiamente dicha. Es por el bien de Lord Guilliman, no el nuestro, que el Comandante Dante nos envía a Baal Secundus.|
+257|El Primarca es esplendoroso. Pero se siente claramente incómodo en nuestra presencia. Particularmente en presencia de aquellas de mis hermanas que muestran más fervor que diplomacia...|
+258|El Comandante Dante ha solicitado que traslademos nuestra Misión a la luna de Baal Secundus. Al menos hasta que Lord Guilliman reúna a Indomitus y parta de la Cicatriz Roja.|
+259|Mientras la Canonesa Martilja continúa aconsejando a Dante, se me ha ordenado que lleve a mis hermanas y me una a la Octava Compañía de los Ángeles Sangrientos. Entiendo que el ascenso a teniente es reciente. Pero ya tiene experiencia con el liderazgo sináptico que controla a los xenos aquí.|
+260|Mientras nuestros objetivos estén alineados, mi bólter y mi fe serán suyos. Llevaremos la luz del Emperador a las grietas más oscuras de estas montañas. Incineraremos al alien. Y honraremos los sacrificios hechos aquí en Baal Secundus. Las vidas vividas por el Emperador nunca se truncan.|
+261|¡Malditos xenos! Cuanto más los cazamos, más se envalentonan. Vayamos a ver si la Hermana Superiora ha llegado al Escudo Celeste.|
+262|Una excelente bienvenida a Baalfora. ¿La hermana Verity se encuentra entre vosotros?|
+263|Me temo que no, teniente. Viajaba en el otro Stormraven.|
+264|No te preocupes, hermana. Limpiaremos esta zona de aterrizaje de Tiránidos y luego iremos a buscar a tu superiora.|
+265|Suponiendo que ella no venga en tu ayuda primero, Astartes.|
+266|Ese parece ser el último de ellos. Busquemos a esta hermana que envió el Consejo Rojo para ayudarnos.|
+267|No es la entrada que esperaba hacer. Pero el Emperador protege, y decenas de xenos me rodean, deseosos de ser purgados por Su ira.|
+268|Los dos pilotos de nuestro transporte están muertos, junto con media docena de nuestras hermanas. El Emperador conoce ahora sus nombres.|
+269|Esto, al menos, debería ser una prueba para la infame celeridad de los Ángeles Sangrientos. Quizás alguna de esta escoria alienígena todavía esté viva cuando los Astartes nos alcancen. Es poco probable, pero la bendición del Emperador me ha puesto de buen humor.|
+270|¡Teniente! Pensaba que los Ángeles Sangrientos preferían trabajar rápido.|
+271|El Emperador vela por ti, Superiora Verity Alodia. No me gustaba la idea de informar de tu muerte al Consejo Rojo tan pronto después de tu despliegue.|
+272|Esta no es la primera vez que mi transporte es derribado conmigo a bordo, teniente.|
+273|Cuidado con este; su ira está inflamada y es tan probable que te empale como que te pisotee.|
+274|Asegurad el lugar del accidente. El Logisticiam querrá recuperar estos restos.|
+275|Sobre el lugar del accidente...|
+276|Auxiliad a las hermanas. Los xenos ya nos han costado bastante.|
+277|Una pelea decente. Veo que la ferocidad de los Ángeles Sangrientos no se ha apagado con los acontecimientos recientes.|
+278|Tampoco se exagera la habilidad de las Sororitas. Bienvenida a Baal Secundus, Hermana Superiora.|
+279|La Canonesa Martilja es una mujer estoica. La he visto matar a traidores delante de sus familias. Ejecutar herejes mientras garabatean escrituras impías en sus cunas. No siente náuseas ante el derramamiento de sangre. Ella sabía a qué veníamos aquí.|
+280|Ella comprende claramente nuestro objetivo de limpiar la red sináptica de esta luna. También es consciente, tal vez más que estos Ángeles Sangrientos, de que el verdadero peligro de los Tiránidos no está en sus ataques frontales, sino en las corrupciones insidiosas que dejan atrás.|
+281|Mientras mis hermanas establecen nuestra misión en Caída del Ángel, acompañaré al teniente al factorum de Kemrender. Permanece abandonado, al menos por los lugareños.|
+282|Sin duda, encontraremos los muros de Kemrender llenos de una miríada de alienígenas para ser purgados. Carleon insiste en que solo hay una forma de entrar y salir de la fortaleza. No me sorprende que estos super-soldados permanezcan ajenos a los agujeros y cunetas en las que las alimañas encuentran su entrada.|
+283|No me corresponde a mí corregir al teniente delante de sus hombres. No cuando lleva las órdenes de Lord Guilliman sobre sus hombros. El propio Primarca espera noticias de nuestro éxito. No dudaré en llevar la luz del Emperador a este apartado lugar. No quedará terreno para que el pecado y la herejía arraiguen.|
+284|Gantes hasta donde alcanza la vista.|
+285|Si no lo supiera mejor, pensaría que estas bestias tontas están manteniendo esta posición a propósito.|
+286|Sin duda por esa cápsula de Guerrero. Seamos rápidos a la hora de hacerlos huir; no estamos equipados para un asedio prolongado.|
+287|Genestealers. Rezad para que no hayan tenido la oportunidad de corromperse.|
+288|Ese es el último de ellos en la zona.|
+289|No tengo ninguna duda de que hay más escondidos entre estos muros. Con suerte, aún no han tenido tiempo de anidar y esconderse entre la gente de tu luna. Procedamos, teniente. Tenemos abominaciones que purgar.|
+290|Las sospechas de Martilja han resultado correctas. Los genestealers infestan el factorum más grande de esta luna. Es crucial que se erradiquen antes de que la población nativa pueda verse comprometida.|
+291|Los Marines Espaciales no comprenden el verdadero peligro de esta aborrecible amenaza. Es una trágica evidencia de lo que se han alejado de sus orígenes mortales. No entienden que estos xenos son algo más que simples objetivos para sus rifles.|
+292|Con que escapara un único genestealer de aquí, todas las personas que sobrevivieron al Leviatán lo habrían hecho en vano. Todos ellos morirían. Ni mañana ni pasado. Pero la infección persistiría, aguardando su momento, y eventualmente abrumaría a esta luna, a Baal y a la totalidad de la Cicatriz Roja.|
+293|Veré esta enfermedad de los xenos purgada hasta el final, porque la voluntad del Emperador es que no se permita vivir a ningún alienígena. No hay más verdad que la verdad del Emperador.|
+294|Se arrastran por todas las calles. Debemos tomarnos nuestro tiempo, teniente. Asegúrate de que no sobreviva ni un solo genestealer. No quiero que Lord Dante tenga que repetir el destino de la otra luna de Baal.|
+295|El Exterminatus no será necesario, Hermana. Limpiaremos las calles de Kemrender hasta que ya no caminemos sobre sal, sino sobre las cenizas de los xenos.|
+296|Debemos tener cuidado de no dejar desprotegidos flancos contra ataques por sorpresa mientras manipulamos estas puertas.|
+297|¡Purgad esta plaga! ¡No permitáis nada más en vuestros corazones que desprecio por el alien!|
+298|Ese parece ser el último de esta inmundicia. ¿Necesitas descansar, Hermana?|
+299|No les preguntarías eso a tus hermanos. Vamos, debemos proceder al núcleo podrido de este factorum. Lo limpiaremos a sangre y fuego.|
+300|Muchos de los Ángeles Sangrientos no tienen afinidad por este lugar, particularmente los Primaris. Pero veo diferencias en el comportamiento de Carleon. Creció de las salinas de esta luna. El recuerdo de este lugar fluye a través de él con tanta fuerza como su sangre. Casi tan fuerte como su culpa.|
+301|El teniente no sabe que he estado escuchando sus transmisiones de voz con el capitán Matarno. Aún permanecen algunos de mis hábitos Famulous anteriores, que el Emperador me perdone.|
+302|Indomitus se impacienta porque eliminemos esta red, al igual que el Logisticiam de los Ángeles Sangrientos. La Cruzada está compuesta por millones de personas; su presencia continua ejerce una tensión única sobre Baal y sus habitantes.|
+303|El Bibliotecario Dreadnought actualiza nuestro rumbo a través de este factorum. Seguiré vigilando a este Hermano Quindar. Dice medias verdades, en el mejor de los casos, pero nuestro progreso depende por completo de su capacidad para descubrir los nodos sinápticos.|
+304|Hay algo siniestro que estos Ángeles Sangrientos me ocultan. Eligen sus palabras con cuidado siempre que estoy cerca. Si no tuvieran al Gran Ángel como su padre, yo...yo tendría preguntas difíciles que valorar.|
+305|El núcleo de este nodo sináptico nos espera aquí.|
+306|Es fácil imaginar vivo este corazón palpitante de Kemrender. Comerciantes, corredores, ladrones, sus mentes caminos abiertos para la herejía y la codicia.|
+307|Encontremos esta criatura sináptica y arranquémosla de su red.|
+308|Un Tervigón. Explica la cantidad de gantes que hemos estado viendo. Ha tenido todo este tiempo para crear su propia fuerza de defensa.|
+309|El alien ha convertido Kemrender en una guardería fortificada para los genestealers. Esto es...más sofisticado de lo esperado.|
+310|Su alcance es grande, pero no es el núcleo de la red. Todavía tenemos que desenmascarar al que teje esta red.|
+311|El líder sináptico ha sido derrotado. Otro nodo de la red que se oscurece.|
+312|Los servidores tardarán meses en limpiar todo esto. Me temo que tu poderoso fuerte de sal no será habitable por algún tiempo, teniente.|
+313|Persistirán, hermana. La gente de la sal siempre lo hace. Siempre que tengan un lugar al que regresar, habremos hecho todo lo posible por ellos.|
+314|La red flaquea. Las Adepta Sororitas presentes en Caída del Ángel están siendo superadas. La hermana Verity recibirá un mensaje de voz solicitando refuerzos. Ella cumplirá y aprenderá algo que no quiere saber.|
+315|La presa negra se está rompiendo. Veo manos de carne y hueso delante de mí. Cojo mi rifle. Sé que el Ángel está cerca, pero sus gritos son ensordecedores. Quiero llevarme las manos a los oídos, pero vuelven a ser de metal y mi cabeza está confinada dentro de este sarcófago.|
+316|Los xenos invaden la tierra natal de Sanguinius. Las garras atraviesan las servoarmaduras bajo la pétrea benevolencia de nuestro padre. El núcleo sináptico está inquieto. Estoy inquieto.|
+317|La liberación de Caída del Ángel espera nuestra llegada.|
+318|Malditos xenos. Quémalos en los fuegos de la luz del Emperador; prevalezca sobre ellos Su infinito odio por el alien.|
+319|El vector de entrada de xenos está al suroeste. Más romperán las murallas a su debido tiempo.|
+320|¡Vamos! Socorred a las hermanas. ¡Los Ángeles Sangrientos no se quedan quietos mientras nuestros aliados luchan nuestras guerras por nosotros!|
+321|Esa monstruosidad voladora huyó hacia el Cañón del Río del Viento.|
+322|Una arpía. Su retirada es demasiado estratégica para actuar por sí misma.|
+323|¡Hermana Superiora Verity! Alabada sea Santa Catalina, pensábamos que te habíamos perdido.|
+324|El Emperador protege, hermana. Tened fe; continuamos Su obra hasta nuestro último aliento. Solo entonces descansaremos.|
+325|El sangrado se ha detenido, por ahora. Comenzará de nuevo a sangrar si no se cauteriza la herida.|
+326|¿A dónde vamos para detenerlos?|
+327|Cañón del Río del Viento. Podemos aguantar a los xenos allí, pero te resultará costoso.|
+328|Nuestras vidas son del Emperador para que las utilice como estime conveniente. Los retendremos en el cañón. Superiora Verity, tus hermanas necesitan tu ayuda aquí. Tu asistencia hasta ahora no tiene precio, pero mis hermanos y yo debemos proseguir solos.|
+329|Se me encomendó la tarea de ver el final de tu misión, teniente. No tengo ninguna intención de fallarles a la Canonesa ni al Comandante Dante frente al Lord Primarca.|
+330|Tened fe. Mis hermanas perseverarán con nuestra ayuda o sin ella. Y no descansaré hasta que Baal Secundus sea purgado de la infestación de xenos.|
+331|Lo que fluyó en Caída del Ángel no fue más que un reguero comparado con la inundación que nos espera en el cañón. El Río del Viento me arrastra, sabiendo la presa que encontraré en su corazón.|
+332|Si mantenemos el cañón, todavía tendremos la oportunidad de arrebatar Baalfora de las garras de esta red sináptica. Incluso ahora, sus arenas se mueven debajo de mí. Camino por los pasillos de la Espíritu Vengativo, aunque nunca he estado a bordo. Eco de botas por pasillos metálicos. Todavía no puedo irme.|
+333|Minutos, horas después, me despierto y vuelve Baalfora. Río del Viento. Dos aberraciones en el tejido de las cosas, manteniéndose cada una en su lugar. Estamos a punto de romperlas a ambas...|
+334|Gran Ángel...Mis hermanos...|
+335|¿De qué abominaciones soy testigo?|
+336|Algo que se suponía que no debías ver, hermana. Son hermanos de la Compañía de la Muerte.|
+337|Son terribles.|
+338|Parece que han estado luchando aquí desde que Leviatán aterrizó por primera vez.|
+339|Hermanos, no los miréis con desesperación. Han ganado tiempo para Caída del Ángel. ¡Su sacrificio honra a Sanguinius!|
+340|Nunca he visto a ningún soldado que pueda soportar una batalla interminable durante tanto tiempo. ¿Cómo siguen vivos?|
+341|Esto es lo que significa la derrota para un Ángel Sangriento, hermana. La derrota no es la muerte. La derrota es un prolongado tormento mucho más doloroso que la simple muerte.|
+342|El flujo de xenos ha disminuido. Hemos completado la obra de los no redimidos.|
+343|Y, sin embargo, no fueron sólo los alien los que se degradaron a sí mismos. Esos soldados... puede que quede poca humanidad en vosotros, Marines Espaciales, pero esos hombres eran perversiones a los ojos del Emperador.|
+344|Si no fuera por ellos, tu Misión habría sido invadida hace días. Esos incansables guerreros eran lo único que impedía a los Tiránidos ocupar Caída del Ángel.|
+345|El respiro es temporal. Un grupo de aberraciones nos espera al final del cañón. La resolución es inevitable.|
+346|Un grupo de aberraciones nos espera, listos para saltar. Quieren empujar, salir disparados de su red, pero la trama que los retiene es demasiado fuerte.|
+347|Las voces resuenan por los pasillos. Escucho hermanos corriendo, gritos en la batalla contra los traidores. Todavía no. Inevitable, pero todavía no.|
+348|Croginax me ha estado observando. Él lo sabe. Debería actuar ahora, apartarme del Espíritu Vengativo. Sacarme de las arenas de Baalfora. Llevarme al Redentor de los Perdidos. Pero no lo hará. El Tecnomarine sabe que soy el faro en la oscuridad.|
+349|Y la Hermana sospecha. No lo dice en voz alta, pero sus emociones resuenan cristalinas. Ser testigo de la Rabia Negra la ha conmovido, la ha hecho preguntarse. ¿A quién se confesará? El dedo de Carleon en el gatillo se contrae ante la pregunta.|
+350|Sólo en la muerte se guardan los secretos.|
+351|Estamos cerca, pero no es este. El núcleo de la aberración. Sólo necesito...visión...|
+352|¡La arpía! Seremos presas fáciles para la bestia mientras estemos expuestos aquí.|
+353|Olvídalo; cada gante a este lado del Muro Celestial sabe ya que estamos aquí gracias a ese chillido infernal.|
+354|¡Formación defensiva! Seremos el escudo que los rompa. ¡Inundad este valle con la sangre de los xenos!|
+355|El pico. Llévame a la cima desde la que saltaste de niño, Carleon. Viste caer el cielo. Necesito compartir tu visión.|
+356|Ya le has oído. Despeja el camino hacia ese pináculo. Ha estado despierto demasiado tiempo.|
+357|La estática se extiende. Debo...debemos ir... las ciudades de los muertos. Dentro...la aberración. El núcleo.|
+358|Carleon, informa.|
+359|Estamos en Salto del Ángel. El hermano Quindar es...dice que estamos cerca. Encontraremos el núcleo sináptico dentro de las Tierras Fantasma.|
+360|Carleon, debes acabar con esto ahora. Lord Guilliman está a punto de enviar a Cato Sicarius a completar el trabajo por ti. El honor de Lord Dante es la moneda con la que pagamos cada hora que la red Tiránida permanece en este mundo.|
+361|Que Sanguinius demuestre que mi confianza en ti no estaba fuera de lugar. Encuentra al líder sináptico, Carleon. Mátalo o muere a sus manos. No regreses a Baal hasta que una de esas cosas sea cierta.|
+362|Las Tierras Fantasma. Baalfora ha crecido sobre y alrededor de estas ruinas durante más de doce mil años. Los espectros de civilizaciones pasadas nos vigilan; desde antes de la Sangre, antes de la lluvia nuclear.|
+363|No sé si los Tiránidos que infestan estas ruinas realmente pueden contactar con la Mente Colmena, y si pueden guiar a Leviatán de vuelta. Incluso ahora, eso es solo una conjetura y una teoría.|
+364|Pero lo que sí sé es que el honor de nuestro Capítulo depende totalmente de un Bibliotecario que estamos perdiendo ante la Rabia Negra. Me duele verlo deteriorarse. Todos estuvimos en ese precipicio hace apenas unos días. Pero ser golpeado, restaurado, y aun así caer en desgracia...|
+365|Tengo que confiar en que el Hermano Quindar pueda mantener la serenidad para quedarse con nosotros hasta el final. A muchos de nosotros nos costaría la vida someterlo si cayera ahora. Y ya pesan sobre mí demasiados hermanos muertos.|
+366|En cuanto a la Hermana Superiora, ha visto demasiado de las tinieblas con las que luchamos. Su escrutinio es...inquietante. Consideraré cuál es la mejor manera de tratar con nuestra estimada aliada una vez que se haya eliminado la amenaza de este líder sináptico.|
+367|Incluso el polvo de una ciudad muerta hace mucho tiempo no está a salvo de su hambre interminable.|
+368|El único propósito de esta inmundicia es consumir en sí mismo, todo por alimentar a la entidad mayor. Su vacía existencia durará poco frente al poder del Emperador.|
+369|Puedo...puedo oír...Nuestro Padre está siendo atacado. ¡Ya voy, mi Señor! ¡Mi espada es vuestra!|
+370|¡Nadie se interpondrá en mi camino! ¡Muerte al traidor!|
+371|¡Quindar! ¡Todavía no! Sangre maldita, todavía no.|
+372|Perseguimos al hermano Quindar, sus poderes psíquicos llevando al pesado dreadnought por delante de nosotros. Los cadáveres de los Tiránidos son arrojados a un lado como muñecas de trapo. Nos adentramos más en las ruinas, pero perdemos al Bibliotecario en los oscuros pasillos de esta ciudad muerta.|
+373|Las sombras se deslizan sobre nosotros. Los xenos nos ponen a prueba, arremetiendo, fintando. Mis hermanos los destrozan, pero es sólo cuestión de tiempo que la oscuridad se desate y nos aplaste a todos.|
+374|Una explosión. Croginax corre por delante, el Tecnomarine más ágil de lo que nunca lo había visto. Corremos y nos enfrentamos a un cuadro violento, hermoso y trágico ...|
+375|¡Tirano de Colmena!|
+376|El Tirano de Baal Fortunata.|
+377|¡Matadlos! ¡Matadlos a todos! Que ninguno de ellos alcance el cuerpo del hermano Quindar.|
+378|Oh, Quindar. Después de todo, encontraste tu paz...|
+379|El hermano Quindar dio su vida por el Imperio. El Emperador conoce su nombre.|
+380|En todo mi servicio, nunca había visto un poder y una rabia tan desenfrenados...|
+381|Ahora descansa con Sanguinius. ¡Venid, hermanos! Acorralaremos al Tirano y le enseñaremos, con exquisito detalle, la ira de la Hueste Angélica.|
+382|Carleon, la Hermana de Batalla ha visto demasiado. Ha visto a un psíquico sancionado perder todo autocontrol ante la Rabia Negra. No podemos dejar que se vaya de aquí con ese conocimiento.|
+383|El Emperador nos guía, hermano. Primero nos tomaremos nuestra venganza. El destino de la hermana se puede decidir después.|
+384|Los xenos infestan estos pasillos como una plaga de ratas. No puedes caminar sin aplastar los cráneos de sus muertos bajo tus pies.|
+385|Este Tirano de Enjambre es la base la resistencia xenos en Baalfora. Es responsable de los ataques coordinados y precisos, de las astutas formaciones. Hemos de decapitar la resistencia. Sin ella, el cuerpo se fragmentará, y perecerá ante cualquiera con un bólter.|
+386|Recuerdo y recuento cada muerte que nos ha traído hasta aquí. Los sacrificios de mis hermanos no serán en vano. Está infección será purgada. El Tirano muere hoy.|
+387|¡Destrozad al enemigo bajo vuestras botas! ¡Aquellos de vosotros que derraméis vuestra sangre hoy sois verdaderos hijos de Sanguinius, y seréis mis hermanos por siempre!|
+388|¡Por Baalfora! ¡Por el Gran Ángel! ¡Por el Emperador!|
+389|Tened cuidado, hermanos. El núcleo de su red está muerto. Enfriad vuestra sangre. Saboread esta victoria.|
+390|Te…tengo que atender al dreadnought. Incarael me arrancará el hígado si perdemos al espíritu-máquina que habita en él.|
+391|Ve, hermano. Atiende a su cuerpo. El sacrificio del Hermano Quindar debe ser venerado, y relatado con orgullo en nuestro Capítulo.|
+392|Espero marcharme con la misma facilidad, teniente. Incluso después de haber visto lo que he visto.|
+393|¡No has entendido nada de lo que has presenciado!|
+394|Tranquilo, hermano. La Hermana Verity tiene derecho a preguntar. Luchamos contra nuestra maldición cada día. Es testimonio de la fuerza de la hermana que no nos haya denunciado tras ser testigo de la sombra más oscura de nuestro Capítulo.|
+395|Respóndeme con la verdad, Carleon. ¿Sabías que el psíquico estaba cayendo cuando nos trajiste? Si no hubiera sido por las garras del Tirano, nos podría haber puesto en peligro a todos. ¿Lo sabías?|
+396|Cuando hable con la Canonesa Martilja, tendré que confesárselo todo. Sabrá del Bibliotecario caído, y conocerá el filo de la navaja sobre el que nos hiciste caminar.|
+397|Confío en que le harás partícipe de todo aquello que necesites decirle, hermana. El Emperador ya juzga cada una de nuestras decisiones. Si considera que he fallado en las mías, mi vida es suya para que la tome.|
+398|Con el tiempo, las contradicciones se difuminan. Baalfora sigue girando. Su gente se recuperará poco a poco, y comenzará a rehacer sus vidas. Ya no soy necesario aquí. Mis fantasmas pueden descansar.|
+399|Ya hay trabajo nuevo para nosotros. Los Primaris han manifestado la fortaleza de su sangre. Dante está ansioso por emplearlos para limpiar la Cicatriz Roja. Baal es meramente uno de miles que tendremos que arrebatar a Leviatán. Quizá el brazo que sostiene la espada se agote, pero nuestras almas no pueden hacerlo mientras siga habiendo enemigos del Imperio.|
+400|Porque somos los Ángeles de la Muerte...|
+401|…y siempre estamos preparados para la guerra.|
+402|En los oscuros confines del futuro, sólo hay guerra. La gente nace. Viven, sufren y mueren. Raramente de causas naturales.|
+403|Días antes de la Caída de Cadia, Dante se enfrentó a su mayor reto. La Flota Enjambre Leviatán se había abierto paso a través del Escudo Cryptano, y los Tiránidos avanzaban directamente hacia el sagrado mundo natal de los Ángeles Sangrientos, Baal.|
+404|Los Hijos de Sanguinius se apresuraron a acudir desde los lejanos confines de la galaxia. Completos desconocidos murieron, hombro con hombro, como hermanos. Pero ni siquiera esta congregación sin precedentes pudo resistir ante el Gran Devorador.|
+405|En su momento de mayor oscuridad, los Ángeles Sangrientos se reunieron alrededor del Lord Comandante Dante. Una resistencia final. Se entregaron a la Sed de Sangre, y se mantuvieron desafiantes frente a los aliens. No por la supervivencia, pues el Capítulo estaba condenado; sino por el honor de su señor, el Gran Ángel Sanguinius.|
+406|Y entonces, el pandemonio. Se abrió la Cicatrix Maledictum, y partió la galaxia en dos. El tiempo se estiró, contorsionado. Los demonios de Khorne se vertieron por la luna de Baal Primus, atacando a xenos y marines por igual. Reinó la devastación.|
+407|Pero tan pronto como apareció, la Cicatrix Maledictum se contrajo. Se llevó con ella tanto a los Demonios como a una gran parte de la Flota Enjambre Leviatán. En su lugar, apareció la Cruzada Indomitus, comandada por nada más y nada menos que el Hijo Vengador mismo, el Primarca Roboute Guilliman.|
+408|El bendito Primarca no sólo auxilió a Baal. También trajo consigo Marines Espaciales Primaris, miles de ellos, con el símbolo de la gota de sangre. Los Primaris eran más grandes, más fuertes, más resistentes que sus hermanos originales. Pero, para los Ángeles Sangrientos, representaban una forma diferente de salvación.|
+409|La promesa de estos super-soldados era la de una línea genética mejorada, más cercana a la de Sanguinius. Lejos de oídos curiosos, el Archimagos Cawl susurraba que mostraban menos síntomas de la maldición que plagaba a la sangre del Gran Ángel. No más sed de sangre en sus corazones. No más armaduras pintadas de negro.|
+410|Ha vuelto un atisbo de normalidad a Baal. La monolítica Cruzada Indomitus se prepara para partir. El Comandante Dante, ahora Lord Regente de la mitad del Imperio, trabaja en recuperar a su Capítulo, y a Baal, del trauma provocado por el Leviatán.|
+411|Y en la luna Baal Secundus, el sargento Carleon se apresura en ayuda de un Sacerdote Sanguinario...|
+412|El ambiente parece tranquilo, pero esta calma no es natural. Estudiad el campo de batalla antes de proseguir.|
+413|Veamos si los controles de las puertas no han sido destrozados por los xenos.|
+414|Vuestros ojos os pueden engañar; vuestros oídos pueden oír mentiras; pero el Emperador es siempre la verdad. Confiad en vuestros áuspex para que os guíen.|
+415|Hormagantes. No muchos, por suerte. Nuestros hermanos dieron su vida valientemente para debilitar sus filas. Erradicad a los alienígenas y honrad el sacrificio de los caídos.|
+416|Tened fe, hermanos. ¡El Emperador protege!|
+417|¡Llegan más hermanos de batalla! Pero para unirnos a ellos primero debemos deshacernos de estos gantes.|
+418|No malgastéis munición en cobardes que se esconden tras muros. Posicionaos de manera que cubráis el paso y esperad su asalto.|
+419|¡Un Sacerdote Sanguinario! ¡El Gran Ángel vela por nosotros!|
+420|¡Por el Emperador!|
+421|Un asentamiento Baalita abandonado en la luna de Baal Secundus, que pronto se llenará con las pisadas de combatientes indiferentes.|
+422|Escondida dentro de un cráter dejado por un arma antigua, la Capilla del Desafío está empapada en la sangre de miles de aspirantes que deseaban convertirse en Ángeles Sangrientos.|
+423|La sal se filtra de las heridas de este manufactorum, prácticamente invadido por una infestación inimaginable.|
+424|En lo profundo de las entrañas de las Tierras Fantasmas. Un sitio sagrado que resuena con recuerdos de batallas desesperadas y sacrificios honorables.|
+425|Una vez bastión del poder imperial, estas calles ahora están condenadas a la guerra eterna.|
+426|Una arteria vital del Administratum, atascada por la corrupción y la violencia.|
+427|Una plaza pública desde la cual el Administratum recolecta el Diezmo Imperial que este insignificante planeta debe; en soldados, riquezas, o sangre.|
+428|De los billones de almas que corretean debajo, ninguna de ellas escapará jamás de las majestuosas sombras que proyectan estos titánicos edificios.|
+429|Mata al Tirano de Baal Fortunata y a su Guardia de Enjambre<br><b>{0}</b> de Guardia de Enjambre eliminada|
+430|Supremacía Planetaria|
+431|Un sol moribundo proyecta profundas sombras sobre la superficie de Konarakh, un planeta que el Imperio considera abandonado desde hace mucho tiempo. Desconocido para el Adeptus Administratum hasta hace poco, fue una vez  dominio de la dinastía necrón Mephrit, preciada por sus depósitos de la valiosa piedra-negra. Su antigua y tumultuosa historia ha visto frecuentes conflictos entre dinastías rivales. La paz nunca fue pensada para este mundo.<br><br>Ahora, todas las facciones de la galaxia quieren controlar los páramos vacíos de Konarakh y sus recursos enterrados bajo la superficie.<br><br>Para conseguir la victoria, necesitarás hacer avanzar a tus fuerzas a través del mapa, y tendrás que destruir los territorios base de las dos facciones enemigas. Los recursos estratégicos te proporcionarán bonus únicos que te ayudarán a mantener tu dominio. Sólo perderás si no eres capaz de defender tu base de los ataques enemigos; mientras tengas una unidad viva, puedes continuar luchando para azotar a este planeta con la totalidad de tu ira.|
+432|Supremacía Planetaria es un nuevo modo de campaña de escaramuza de estilo conquista actualmente en desarrollo activo. Juega esta vista previa y comparte tus comentarios y solicitudes de características con el equipo de desarrollo a través de los foros de Slitherine.|
+433|Fortaleza de la Redención|
+434|Construida por la Hueste Angelical, esta poderosa fortificación es una oda al Gran Ángel, Sanguinius - y a la guerra.|
+435|Fortificación|
+436|Zona de Alimentación|
+437|Alimentada por la fuerza de voluntad de la Mente Enjambre, la amenaza devoradora de planetas lo consume todo|
+438|Zona de Reclamación|
+439|Piedranegra|
+440|Antigua más allá de lo imaginable, la entrada a esta tumba apenas insinúa el poder sobrenatural que despierta en su interior|
+441|Tumba Necrón|
+442|Incursión Demoníaca|
+443|Oleadas infinitas|
+444|Incursión Demoníaca es una batalla desesperada por la supervivencia. ¡Lucha contra oleadas cada vez más poderosas de Demonios de Khorne mientras se precipitan hacia el espacio real para derramar sangre y recolectar cráneos con objeto de complacer al Señor de la Ira!<br><br>Elige una fuerza de tu lista de ejército, combate en un paisaje infernal infestado de disformidad y comprueba cuánto tiempo puedes sobrevivir. Entre oleada y oleada de las legiones de Khorne, tendrás un breve respiro para reemplazar tus unidades con refuerzos limitados.<br><br>Los sirvientes del Dios de la Sangre son implacables y tu perdición está ciertamente asegurada. ¿Podrás luchar para ver el mañana?|
+445|Penalización por recogida de bonus|
+446|Sanctum Sacrosantas|
+447|Sanctorum|
+448|Los salmos de batalla resuenan para fortalecer a los fieles en este santuario y en homenaje a Santa Katherine y al Dios-Emperador.|
+449|Desguaze|
+450|Desguaze Orko|
+451|Esparcidos por este destartalado asentamiento de pielez verdez hay montones de la mejor chatarra que se pueda comprar.|
+452|Campo de Cráneos|
+453|Un páramo agrietado y atormentado lleno de huesos astillados de las víctimas del espectro del Dios de la Sangre.|
+454|Mundo demoníaco|
+455|Puesto avanzado de La Casta del Fuego|
+456|Cuando la diplomacia falla, la Casta del Fuego se desata contra aquellos que se atreven a rechazar el Bien Supremo.|
+0|Eliminate All Enemies|Objective|Objective
+1|End Turn|End Turn Panel|UI
+2|{0} Turn|End Turn Panel|UI
+3|Evasion: {0}|Detailed Unit Info Panel|UI
+4|Momentum: {0}|Detailed Unit Info Panel|UI
+5|Hide|Unit List Panel|UI
+6|Next Unused Unit|Unit List Panel / Options Key Rebinding|UI
+7|Health|Unit Member Panel / Army Unit Upgrade Panel|UI
+8|Front: {0}|DetailedUnitInfoPanel / Army Builder|UI
+9|Right: {0}|DetailedUnitInfoPanel / Army Builder|UI
+10|Rear: {0}|DetailedUnitInfoPanel / Army Builder|UI
+11|Left: {0}|DetailedUnitInfoPanel / Army Builder|UI
+12|Accuracy: {0}%|Weapon Info Panel|UI
+13|Damage: {0}|Weapon Info Panel|UI
+14|Attacks: {0}|Weapon Info Panel|UI
+15|Ammunition: {0} / {1}|Weapon Info Panel|UI
+16|New Campaign|Main Menu Panel|UI
+17|Load Game|Main Menu Panel / Button Label|UI
+18|Skirmish|Main Menu Panel / Skirmish Landing Panel|UI
+19|Multiplayer|Main Menu Panel|UI
+20|Tutorial|Main Menu Panel|UI
+21|Options|Main Menu Panel|UI
+22|Exit|Main Menu Panel / Photo Mode Panel|UI
+23|Interact|Unit action (use, activate, etc.) / Options Key Rebinding|UI
+24|{0} Momentum Gains|StatChangeType.MomentumGains|Enum
+25|{0} Momentum|StatChangeType.Momentum|Enum
+26|Cannot use overwatch while in melee combat|ActionDisabledReason.CannotUseSuppressionFireInMelee|Enum
+27|Dead|Unit Health Bar|UI
+28|No unit to attack|ActionDisabledReason.NoUnitToAttack|Enum
+29|Cannot attack a unit on the same team|ActionDisabledReason.UnitSameTeam|Enum
+30|Out of ammunition|ActionDisabledReason.OutOfAmmo|Enum
+31|Not enough action points|ActionDisabledReason.InsufficientActionPoints|Enum
+32|Suppression fire mode is enabled|ActionDisabledReason.SuppressionFireModeEnabled|Enum
+33|Enemy is too close|ActionDisabledReason.BelowMinWeaponRange|Enum
+34|Enemy is out of range|ActionDisabledReason.AboveMaxWeaponRange|Enum
+35|Enemy is behind full cover|ActionDisabledReason.EnemyBehindFullCover|Enum
+36|A non movement ability was used this turn|ActionDisabledReason.MovementAbilityAlreadyUsed|Enum
+37|Decline|Create Live Match Panel|UI
+38|Impassible terrain|ActionDisabledReason.ImpassibleTerrain|Enum
+39|Not enough movement points|ActionDisabledReason.InsuffiecientMovementPoints|Enum
+40|Can't move to a tile with a unit already on it|ActionDisabledReason.UnitAlreadyOnTile|Enum
+41|Ballistic|WeaponCategory.Ballistic|Enum
+42|Melee|WeaponCategory.Melee|Enum
+43|Flame|WeaponCategory.Flame / DamageType.Flame|Enum
+44|Artillery|WeaponCategory.Artillery|Enum
+45|{0} Accuracy: {1}|Detailed Unit Info Panel|UI
+46|{0} Damage: {1}|Detailed Unit Info Panel|UI
+47|Defend the Unit|Objective|Objective
+48|This burrow is not connected to another burrow|ActionDisabledReason.BurrowIsNotConnected|Enum
+49|Armour: {0}/{1}|ArmourDisplayPanel (Single Profile)|UI
+50|Show in Loading Screen|Screenshot Browser|UI
+51|Main Lobby|Multiplayer Selection Panel|UI
+52|Unspent Action Points|End Turn Confirmation (title)|UI
+53|Some of your units have unspent action points, and will suffer a Momentum penalty. Do you wish to end your turn now?|End Turn Confirmation (description)|UI
+54|{0} remaining|Loadout Unit Panel / Objective Display|UI
+55|{0} Over Limit|Loadout Unit Panel|UI
+56|My Army|Skirmish Configuration panel|UI
+57|{0} Accuracy per Momentum|StatChangeType.AccuracyPerMomentum|Enum
+58|{0} Evasion per Momentum|StatChangeType.EvasionPerMomentum|Enum
+59|{0} Accuracy|StatChangeType.Accuracy|Enum
+60|{0} Damage|StatChangeType.Damage|Enum
+61|{0} Additional Attacks|StatChangeType.AdditionalAttacks|Enum
+62|Last Chance|Status Effect Title|UI
+63|Overwatch<br><br>Sets a reactive zone of fire. Unit will take a small Momentum penalty at the end of the turn.|Suppression Fire Tooltip|UI
+64|Cancel Overwatch|Suppression Fire Tooltip|UI
+65|Submit Changes|Create Live Match Panel|UI
+66|{0} has requested some changes|Create Live Match Panel|UI
+67|Revert Changes|Create Live Match Panel|UI
+68|Accuracy:|DetailedUnitInfoPanel|UI
+69|Ranged Modifier: {0}%|DetailedUnitInfoPanel|UI
+70|Melee: {0}%|DetailedUnitInfoPanel|UI
+71|Armour: {0}|DetailedUnitInfoPanel|UI
+72|Armour:|DetailedUnitInfoPanel / Army Builder Inspect Unit|UI
+73|Death waits for this character...|Status Effect Description - Last Chance|UI
+74|{0} Melee Damage|StatChangeType.MeleeDamage|Enum
+75|{0} Evasion|StatChangeType.Evasion|Enum
+76|Change Facing|Change Facing Tooltip / Options Key Rebinding|UI
+77|Move|Move Tooltip|UI
+78|Cost|Move Tooltip / Loadout Weapon Tooltip Panel|UI
+79|Movement Points|Move Tooltip / Detailed Unit Panel Tooltip - Movement|UI
+80|Damage|Weapon Tooltip|UI
+81|Cover Penalty|Weapon Tooltip|UI
+82|Hit Chance|Weapon Tooltip|UI
+83|Base Accuracy|Weapon Tooltip|UI
+84|Range Penalty|Weapon Tooltip|UI
+85|Enemy Evade|Weapon Tooltip|UI
+86|Cannot use other actions while in overwatch mode|ActionDisabledReason.InSupressionFireMode|Enum
+87|This unit is not able to use burrows|ActionDisabledReason.UnitCannotUseBurrows|Enum
+88|Panicked|Weapon Tooltip|UI
+89|{0} Movement|StatChangeType.Movement|Enum
+90|{0} Ranged Accuracy|StatChangeType.RangedAccuracy|Enum
+91|Enables Jump Movement Mode|StatChangeType.GroundBasedFlyingMode|Enum
+92|Suppressed -{0} MP|Suppression fire floating text|UI
+93|{0} Melee Accuracy|StatChangeType.MeleeAccuracy|Enum
+94|Cannot use enemy burrows|ActionDisabledReason.CannotUseEnemyBurrow|Enum
+95|Armor Differential|Weapon Tooltip (selected enemy tooltip)|UI
+96|Cannot use this ability near other burrows|ActionDisabledReason.AdjacentBurrowsFound|Enum
+97|Important characters get a second chance when they die. This is the amount of HP important characters get when they're revived.|Campaign Select Panel (Last Chance Revive HP tooltip)|UI
+98|<i>Match Changes Accepted</i>|Live Chat Handler|UI
+99|<i>Match Changes Declined</i>|Live Chat Handler|UI
+100|Unit is completely blocked and cannot move|ActionDisabledReason.CompletelyBlocked|Enum
+101|Another burrow is about to be on this tile|ActionDisabledReason.PendingBurrowAlreadyThere|Enum
+102|{0} Minimum Movement Range|StatChangeType.MinMovementRange|Enum
+103|Below Minimum Range|ActionDisabledReason.BelowMinMovementRange|Enum
+104|AP|Weapon Tooltip (Action Points)|UI
+105|{0} Ranged Damage|StatChangeType.RangedDamage|Enum
+106|Last Chance Revive HP|Campaign Select Panel|UI
+107|Additional tech trees will become available as you recruit more HQ characters.|Campaign Notification|Notification
+108|Starting Turn...|MultiplayerLiveContestantAgent|UI
+109|20 HP|LastChanceReviveHP.Low|enum
+110|Full HP|LastChanceReviveHP.Full|enum
+111|Spend HQ tokens to unlock new abilities, weapons, and stat upgrades for HQ characters and related units.|Campaign Notification|Notification
+112|Done|Options Panel|UI
+113|Music|Options Panel|UI
+114|Sound Effects|Options Panel|UI
+115|Voice|Options Panel|UI
+116|Sound|Options Panel|UI
+117|Camera|Options Panel|UI
+118|Graphics|Options Panel|UI
+119|Controls / UI|Options Panel|UI
+120|Misc|Options Panel|UI
+121|Language|Options Panel|UI
+122|Zoom Speed|Options Panel|UI
+123|Pan Speed|Options Panel|UI
+124|Rotate Speed|Options Panel|UI
+125|Resolution|Options Panel|UI
+126|Change Resolution?|Options Manager|UI
+127|The resolution has been changed to {0},  do you confirm this change?|Options Manager|UI
+128|Ok|Dialog Panel|UI
+129|Confirm|Dialog Panel|UI
+130|Cancel|Dialog Panel|UI
+131|Revert|Options Manager|UI
+132|Reverting in {0} second|Options Manager|UI
+133|Reverting in {0} seconds|Options Manager|UI
+134|Fullscreen|Options Panel|UI
+135|Weapon on cooldown|ActionDisabledReason.WeaponOnCooldown|enum
+136|Remember, every weapon has an optimal range. Weapons are most effective when fired from their optimal range.|Tutorial 3|Tutorial
+137|Pan at screen edge|Options Panel|UI
+138|Invert Pitch|Options Panel|UI
+139|Invert Yaw|Options Panel|UI
+140|Invert Zoom|Options Panel|UI
+141|Show subtitles during cinematics|Options Panel|UI
+142|Show subtitles for barks|Options Panel|UI
+143|Protect Brother Aeturo|Objective|Objective
+144|Not Enough Clear Adjacent Tiles|ActionDisabledReason.NotEnoughClearAdjacentTiles|Enum
+145|Cannot use while underground|ActionDisabledReason.UnitIsUnderground|Enum
+146|Cannot use while above ground|ActionDisabledReason.UnitIsAboveGround|Enum
+147|Press <color=#C8914F>P</color> to cycle to the next available unit that still has at least one <color=#C65C34>Action Point</color> to spend.<br><br>Alternately, use <color=#C8914F>TAB</color> to cycle through all units.|Tutorial|Tutorial
+148|No adjacent tiles to escape to|ActionDisabledReason.NoAdjacentTilesToEscapeTo|Enum
+149|{0} Poison Ranged Damage Received|StatChangeType.PoisonRangedDamageReceived|Enum
+150|{0} Poison Melee Damage Received|StatChangeType.PoisonMeleeDamageReceived|Enum
+151|{0} Ranged Damage Received|StatChangeType.AllRangedDamageReceived|Enum
+152|Out of ability range|ActionDisabledReason.OutOfAbilityRange|Enum
+153|Ability already active|ActionDisabledReason.AbilityAlreadyActive|Enum
+154|{0} Melee Damage Received|StatChangeType.AllMeleeDamageReceived|Enum
+155|Activates if the unit did not move during the current or previous turn.|Detailed Unit Panel Tooltip - Negative Evasion|UI
+156|You can quickly refocus the camera on your selected unit by pressing the <color=#C8914F><b>.</b></color> key.|** unused **|
+157|{0} Armor Piercing|StatChangeType.ArmorPiercing|Enum
+158|No target in range|ActionDisabledReason.NoTargetInRange|Enum
+159|{0} Momentum|Momentum floating text|UI
+160|Expires in {0} Turn|Status Effect Tooltips|UI
+161|Expires in {0} Turns|Status Effect Tooltips|UI
+162|{0} Ranged Armour|StatChangeType.RangedArmor|Enum
+163|{0} Melee Armour|StatChangeType.MeleeArmor|Enum
+164|Can only target mechanical units|ActionDisabledReason.CanOnlyTargetMechanicalTargets|Enum
+165|** unused **|** unused **|
+166|{0} Basic Ranged Damage Received|StatChangeType.BasicRangedDamageReceived|Enum
+167|{0} Basic Melee Damage Received|StatChangeType.BasicMeleeDamageReceived|Enum
+168|Can be attacked by artillery at any range|StatChangeType.ArtilleryAnyRange|Enum
+169|{0} Artillery Armor Piercing against this unit|StatChangeType.ArtilleyArmorPiercingAgainst|Enum
+170|{0} Basic Ranged Armor Piercing against this unit|StatChangeType.RangedArmorPiercingAgainst|Enum
+171|Marked|Status Effect|UI
+172|<b>HQ Tokens</b><br>You will earn HQ Tokens on the successful completion of a mission. Spend these tokens in the HQ Upgrade Centre to improve your units.|Campaign Notification|Notification
+173|<b>Deployment Capacity Upgraded</b><br>Army point limit increased!<br>Army unit cap increased!|Campaign Notification|Notification
+174|<b>Deployment Capacity Upgraded</b><br>Army point limit increased!|Campaign Notification |Notification
+175|<b>Army Management</b><br>Update your fighting force with additional units in the Army Management screen.|Campaign Notification|Notification
+176|Add units to fill out your fighting force. Send units to the reserve force when you need to make space for new units.|Campaign Notification|Notification
+177|{0:+#;-#;+0} HP|Health floating text|UI
+178|{0} {2} Trigger Chance|StatChangeType.AbilityTriggerChance|Enum
+179|Target is already at full health|StatChangeType.TargetAlreadyAtFullHealth|Enum
+180|Each unit contributes towards your army's total points value. Additional weapons, once unlocked, will increase the cost of a unit when equipped.|Campaign Notification|Notification
+181|** unused **|**unused**|
+182|Can only target organic units|ActionDisabledReason.CanOnlyTargetOrganicUnits|Enum
+183|{0} damage applied at end of turn|StatChangeType.ApplyDamageAtEndOfTurn|Enum
+184|Expires at end of turn|StatChangeType.RemoveAtEndOfTurn|Enum
+185|Poisoned|Status Effect|UI
+186|Harvest the geneseed of fallen brothers|Objective|Objective
+187|Destroy all tyranids|Objective|Objective
+188|** unused **|** unused **|
+189|Press {0} to re-lock the camera|Multiplayer re-lock camera prompt|UI
+190|** unused **|** unused **|
+191|** unused **|** unused **|
+192|Unit has been dead for too long|ActionDisabledReason.UnitDeadForTooLong|Enum
+193|Back|Button Label|UI
+194|Proceed|Button Label|UI
+195|Play Mission|Button Label|UI
+196|Army Management|Button Label|UI
+197|Mission Completed|Post Battle Panel|UI
+198|Mission Failed|Post Battle Panel|UI
+199|Back to Main Menu|Button Label|UI
+200|Go Back to Main Menu?|Dialog Panel Title (From Options Panel)|UI
+201|Are you sure you want to go back to the main menu? Any unsaved progress will be lost.|Dialog Panel Description (From Options Panel)|UI
+202|Difficulty|Campaign Options Panel|UI
+203|Astartes|Difficulty Description (Normal)|UI
+204|Lieutenant|Difficulty Description (Hard)|UI
+205|Company Captain|Difficulty Description (Very Hard)|UI
+206|Add Unit|Button Label|UI
+207|Reserve List|Button Label|UI
+208|Members|Army Unit Button|UI
+209|HP|Army Unit Button|UI
+210|Army Full|Army Full Dialog|UI
+211|Your active army is currently full. Units will need to be placed into the reserves list before any units can be transferred to the army.|Army Full Dialog|UI
+212|Inspect|Button Label|UI
+213|Upgrade|Button Label|UI
+214|Reserve|Button Label|UI
+215|{0} Points|Army Unit Button|UI
+216|History|Army Unit Inspect Panel|UI
+217|Weapon Set|Army Unit Inspect Panel|UI
+218|Change|Army Unit Inspect Panel|UI
+219|Rank|Army Unit Inspect Panel|UI
+220|XP|Army Unit Inspect Panel / Post Battle Panel|UI
+221|Blocked|Blocked Indicator|UI
+222|A status effect is preventing movement|ActionDisabledReason.MovementPrevented|Enum
+223|A status effect is preventing attacks|ActionDisabledReason.AttackingPrevented|Enum
+224|Enhanced|Enhanced Enemy status effect (Campaign Difficulty status)|UI
+225|No Missions Unlocked|ReplayCampaignMissionPanel|UI
+226|Movement Disabled|StatChangeType.PreventMovement|Enum
+227|Attacking Disabled|StatChangeType.PreventAttacking|Enum
+228|{0} Action Points|StatChangeType.ActionPoints|Enum
+229|Show Unit List|Unit List Panel|UI
+230|Main Menu|Button Name|UI
+231|Faction|Skirmish Landing Panel|UI
+232|Begin Skirmish|Button Name|UI
+233|Replay Campaign Mission|Button Name|UI
+234|Randomise|Button Name|UI
+235|Begin|Button Name|UI
+236|Objective|Skirmish Configuration Panel|UI
+237|Map|Skirmish Configuration Panel|UI
+238|Player|Skirmish Configuration Panel|UI
+239|AI|Skirmish Configuration Panel|UI
+240|Army Size|Skirmish Configuration Panel|UI
+241|Exterminatus|Multiplayer Match UI (Objective)|UI
+242|<b>Annihilate every last one of them.</b><br><br>Destroy the opponent's units. Match points are awarded based on the army point value of the destroyed unit.|Skirmish Objective Description|UI
+243|Conqueror|Skirmish Objective Title|UI
+244|<b>Control the objective zone to dominate the battlefield.</b><br><br>Points are awarded during the scoring phase based on the number of units within the zone:<br><br>• +5 points if you control at least one unit within the zone<br><br>• +5 points if you control more units within the zone than your opponent<br><br>• +5 points if your opponent has no units within the zone<br><br>The maximum number of points that can be scored in one turn is 15.|Skirmish Objective Description|UI
+245|Strategic Command|Skirmish Objective Title|UI
+246|<b>Secure control points around the battlefield.</b><br><br>Interact with control points to secure them for your team. A control point can be claimed by an opponent's unit if left undefended.<br><br>• +5 points per control point secured<br><br>Points are earned during the scoring phase. The maximum amount of points that can be scored in one turn is 25.|Skirmish Objective Description|UI
+247|Kill Zone|Skirmish Objective Title|UI
+248|Enemy units will try to reach an extraction point. Win by killing or destroying 50% of the point value of the enemy before they can escape.|Skirmish Objective Description|UI
+249|Extraction|Skirmish Objective Title|UI
+250|An extraction point exists on the other side of the map. Win by getting X points worth of units to the extraction point.|Skirmish Objective Description|UI
+251|Gene-seed|Skirmish Objective Title|UI
+252|A number of fallen Blood Angels are located on the map (use Capture Points). A Sanguinary Priest must collect them to win. (Requires a Sanguinary Priest to be in the player's army).|Skirmish Objective Description|UI
+253|Relic|Skirmish Objective Title|UI
+254|A holy relic is placed on the map. Retrieve it and get to an extraction point to win. If the unit carrying the relic is killed, the item is dropped. Lose by having all units killed.|Skirmish Objective Description|UI
+255|Devour|Skirmish Objective Title|UI
+256|Gain victory points for each organic enemy killed. Achieve a certain number of victory points to win. Lose by having all units killed.|Skirmish Objective Description|UI
+257|Hiveswarm|Skirmish Objective Title|UI
+258|Win by positioning a unit on all Capture Points on the map.|Skirmish Objective Description|UI
+259|No Armies Configured|Skirmish Landing Panel (Dialog)|UI
+260|No faction has an army with units in it. Use the Army Management button to add units to an army.|Skirmish Landing Panel (Dialog)|UI
+261|Army Not Configured|Skirmish Configuration Panel (Dialog)|UI
+262|The selected player faction has no units in its army. Use the Army Management button to add units to an army.|Skirmish Configuration Panel (Dialog)|UI
+263|At least one {0} is required for this objective|Skirmish Configuration Panel|UI
+264|{1}% chance to apply {0} damage to self during an attack|StatChangeType.DamageSelfOnAttack|Enum
+265|Range|Weapon Tooltip|UI
+266|{0} per tile|Weapon Tooltip|UI
+267|Accuracy Falloff|Weapon Tooltip|UI
+268|Base Damage|Weapon Tooltip|UI
+269|MP|Unit Tooltip|UI
+270|{0} MP|Detailed Unit Info Panel|UI
+271|AP {0} vs Armour {1}|Weapon Tooltip|UI
+272|{0}% Effectiveness|Weapon Tooltip|UI
+273|Unit Bonus|Weapon Tooltip (Ranged accuracy)|UI
+274|Always Hits|Weapon Tooltip|UI
+275|Already used|ActionDisabledReason.AlreadyUsed|Enum
+276|Weapon|Weapon Tooltip /  TechTreeUpgradeType.UnlockWeapon|UI
+277|Armour Piercing|Weapon Tooltip|UI
+278|Ignores movement penalties from terrain|StatChangeType.IgnoreTerrainPenalties|Enum
+279|Surprise Me|Skirmish Configuration Panel|UI
+280|Cannot use this weapon in melee|ActionDisabledReason.CannotUseInMelee|Enum
+281|{0} XP|Loadout unit list (experience) / Army Unit upgrade panel|UI
+282|{0} PT|Loadout unit list (points) / Army Management Panels|UI
+283|Army|Loadout Panel|UI
+284|{0}/{1} PT|Loadout Panel|UI
+285|Point Cap Exceeded|Loadout Panel (Dialog Panel)|UI
+286|The number of unit points used exceeds the point cap for this mission.|Loadout Panel (Dialog Panel)|UI
+287|Prerequisites Not Met|Mission Manager (Dialog)|UI
+288|Certain units need to exist in your army in order to play this mission:|Mission Manager (Dialog)|UI
+289|Save Game|Button Label|UI
+290|Save|Button Label|UI
+291|Load|Button Label|UI
+292|Can only save during the player's turn|Cannot save reason (BattleSaveChecker)|UI
+293|Can't save while in the loadout phase|Cannot save reason (BattleSaveChecker)|UI
+294|Can't save during a cutscene|Cannot save reason (BattleSaveChecker)|UI
+295|Can't save while units are moving|Cannot save reason (BattleSaveChecker)|UI
+296|Manual Save|Save Slot Button|UI
+297|Auto Save|Save Slot Button|UI
+298|In Campaign Mission Preview|Save Slot Button|UI
+299|In Campaign Battle|Save Slot Button|UI
+300|In Skirmish Battle|Save Slot Button|UI
+301|Empty|Save Slot Button|UI
+302|Filters|Tactical Filters Panel / Photo Mode Panel|UI
+303|Objectives|Tactical Filters Panel|UI
+304|Momentum|Army Unit Upgrade Panel / Detailed Unit Panel Tooltip - Momentum|UI
+305|Evasion|Army Unit Upgrade Panel / Detailed Unit Panel Tooltip - Evasion|UI
+306|Ranged Stability|Army Unit Upgrade Panel|UI
+307|Melee Accuracy|Army Unit Upgrade Panel|UI
+308|Max|Army Unit Upgrade Panel|UI
+309|Rank {0} Required|Army Unit Upgrade Panel|UI
+310|Rank {0}|Army Unit Upgrade Panel|UI
+311|XP Available: {0}|Army Unit Upgrade Panel|UI
+312|Total XP Earned: {0}|Army Unit Upgrade Panel|UI
+313|XP Allocated: {0}|Army Unit Upgrade Panel|UI
+314|Level {0}|Army Unit Upgrade Panel|UI
+315|Slot {0}|Army Unit Inpect Panel|UI
+316|None|Weapon Choice Display / Photo Mode Badge Positions|UI
+317|Stats|Army Unit Upgrade Panel / Post Battle Panel (Multiplayer)|UI
+318|Weapons|Army Unit Upgrade Panel|UI
+319|Abilities|Army Unit Upgrade Panel|UI
+320|Reset|Army Unit Upgrade Panel|UI
+321|Reset {0}'s Ranks?|Army Unit Upgrade Panel (dialog panel)|UI
+322|Are you sure you would like to reset the {0}'s Ranks? This will remove {1}% ({2}XP) of the unit's Total XP Earned|Army Unit Upgrade Panel (dialog panel)|UI
+323|Rebuilding Cohesion|UnitStateModifierType.XPDebuff|Enum
+324|Save Game Name|Save Game Panel (dialog panel)|UI
+325|What would you like to call your new save game?|Save Game Panel (dialog panel)|UI
+326|This unit is currently busy and cannot receive commands|ActionDisabledReason.UnitDisabled|Enum
+327|Restore|Post Battle Panel|UI
+328|{0} Turns|Objectives Panel|UI
+329|{0} Turn|Objectives Panel|UI
+330|{0} Ranged Stability|StatChangeType.RangedFalloff|Enum
+331|{0} Maximum HP|StatChangeType.MaxHP|Enum
+332|{0} Current HP|StatChangeType.CurrentHP|Enum
+333|{0} Additional Melee Attacks|StatChangeType.AdditionalMeleeAttacks|Enum
+334|{0} Trigger Chance|StatChangeType.NaturalKillerTriggerChance|Enum
+335|{0} Additional Ranged Attacks|StatChangeType.AdditionalRangedAttacks|Enum
+336|Cannot target tiles where melee combat is occurring|ActionDisabledReason.CannotTargetContestedTile|Enum
+337|Target too high|ActionDisabledReason.TileTooHigh|Enum
+338|Target too low|ActionDisabledReason.TileTooLow|Enum
+339|Miss|Miss Indicator|UI
+340|Surging|Status Effect|UI
+341|Mortis Radzone|Status Effect|UI
+342|New|Button Label|UI
+343|Delete Army|Button Label|UI
+344|Delete|Button Label|UI
+345|Select Faction|Title (Skirmish Army Management)|UI
+346|Select Unit|Title (Skirmish Army Management)|UI
+347|Delete Unit?|Dialog Panel (Skirmish Army Management)|UI
+348|Are you sure you want to delete this "{0}" unit?|Dialog Panel (Skirmish Army Management)|UI
+349|Rename Army|Dialog Panel (Skirmish Army Management)|UI
+350|Choose a new name for your army|Dialog Panel (Skirmish Army Management)|UI
+351|Delete Army?|Dialog Panel (Skirmish Army Management)|UI
+352|Are you sure you want to delete the "{0}" army?|Dialog Panel (Skirmish Army Management)|UI
+353|Points|Skirmish Army Management) / Tournament Landing Panel|UI
+354|Cannot Delete Army|Dialog Panel (Skirmish Army Management)|UI
+355|The current army is the last available for the "{0}" faction, so it cannot be deleted.|Dialog Panel (Skirmish Army Management)|UI
+356|New Profile|Dialog Panel (Skirmish Army Management)|UI
+357|Choose a name for the new profile|Dialog Panel (Skirmish Army Management)|UI
+358|Profile Already Exists|Dialog Panel (Skirmish Army Management)|UI
+359|A profile with the same name already exists.|Dialog Panel (Skirmish Army Management)|UI
+360|Profile|Skirmish Army Management|UI
+361|Army|Skirmish Configuration Panel|UI
+362|Slitherine Login|Login Panel|UI
+363|Type in your Slitherine username and password below to login|Login Panel|UI
+364|Username|Login Panel|UI
+365|Password|Login Panel|UI
+366|Login|Login Panel|UI
+367|Incorrect username or password|Multiplayer Login|UI
+368|Connecting...|Multiplayer Login|UI
+369|Create Match|Create Match Panel|UI
+370|Create|Create Match Panel|UI
+371|Your Faction|Create Match Panel|UI
+372|Match Name|Create Match Panel|UI
+373|Turn Timer|Create Match Panel|UI
+374|{0}'s Match - {1}|Multiplayer Match Titles|UI
+375|Join|Full Multiplayer match details|UI
+376|Joining...|Multiplayer Landing Panel|UI
+377|Password Protected|Multiplayer Landing Panel|UI
+378|Challenger Faction|Multiplayer Landing Panel|UI
+379|Challenger|Multiplayer Landing Panel|UI
+380|Match Password|Multiplayer Landing Panel|UI
+381|Type in the password for this match.|Multiplayer Landing Panel|UI
+382|Could Not Join Match|Multiplayer Landing Panel|UI
+383|Wrong password for match.|Multiplayer Landing Panel|UI
+384|Open Matches|Multiplayer Landing Panel|UI
+385|Active Matches|Multiplayer Landing Panel|UI
+386|Leave|Multiplayer Landing Panel|UI
+387|Continue|Multiplayer Landing Panel|UI
+388|Leave Match?|Dialog Panel (Multiplayer Landing Panel)|UI
+389|Are you sure you want to leave this match?|Dialog Panel (Multiplayer Landing Panel)|UI
+390|Leaving...|Multiplayer Landing Panel|UI
+391|Error Leaving Match|Multiplayer Landing Panel|UI
+392|Expiration Date|Multiplayer Landing Panel|UI
+393|Turn|Multiplayer Landing Panel|UI
+394|Your Turn|Multiplayer Landing Panel|UI
+395|Player 1|Multiplayer Landing Panel|UI
+396|Player 2|Multiplayer Landing Panel|UI
+397|Creating Match...|Create Match Panel|UI
+398|Create Match Error|Create Match Panel|UI
+399|Empty Armies|Multiplayer Landing Panel / Multiplayer Loadout Panel|UI
+400|Some factions don't have any armies that have units in them. You will need to add units to at least one army for each of these factions:|Multiplayer Landing Panel / Multiplayer Loadout Panel|UI
+401|This match was created by you. It is not possible to verse yourself in a multiplayer match.|Multiplayer Landing Panel|UI
+402|Search Filters|Multiplayer Landing Panel|UI
+403|Challenger Factions|Multiplayer Landing Panel (Search Filters)|UI
+404|Public Matches|Multiplayer Landing Panel (Search Filters)|UI
+405|Private Matches|Multiplayer Landing Panel (Search Filters)|UI
+406|Can't save while in multiplayer|Cannot save reason (BattleSaveChecker)|UI
+407|Choose Your Loadout|Multiplayer Loadout Panel|UI
+408|Continuing Match...|Baal Networked Game Manager|UI
+409|Sending Turn...|Baal Networked Game Manager|UI
+410|The other player left|Full Match Display|UI
+411|Player 1 Won|Multiplayer Landing Panel|UI
+412|Player 2 Won|Multiplayer Landing Panel|UI
+413|Waiting for other units to complete their actions|Orders Panel (Multiplayer)|UI
+414|Weapon Loadout|Detailed Unit Info Panel|UI
+415|Already moved during this turn.|ActionDisabledReason.AlreadyMovedThisTurn|Enum
+416|Path is not direct enough for a charge. The path cannot go through units or walls, and cannot turn too much.|ActionDisabledReason.PathIsNotChargable|Enum
+417|Overwhelmed|Overwhelmed Indicator|UI
+418|Action Points|Detailed Unit Info Panel / Detailed Unit Panel Tooltip - Action|UI
+419|Move Points|Detailed Unit Info Panel|UI
+420|Armour|Detailed Unit Info Panel / Detailed Unit Panel Tooltip - Armour|UI
+421|Engaged|Status Effect|UI
+422|{0} Ranged Accuracy for non-pistol weapons|StatChangeType.RangedAccuracyNonPistol|Enum
+423|Direct Rear Attack|Melee Attack Status Effect|UI
+424|Rear Side Flank Attack|Melee Attack Status Effect|UI
+425|Fallback|Fallback action|UI
+426|No action points left|ActionDisabledReason.NoActionPointsLeft|Enum
+427|The tile to fallback to is blocked|ActionDisabledReason.FallbackTileBlocked|Enum
+428|No movement points left|ActionDisabledReason.NoMovementPointsLeft|Enum
+429|Uses all movement points|Fallback action|UI
+430|Stats gained while falling back|Fallback action|UI
+431|Critical Chance|Weapon action tooltip|UI
+432|{0} Critical Chance|StatChangeType.CriticalChance|Enum
+433|{0} Critical Chance per Momentum|StatChangeType.CriticalChancePerMomentum|Enum
+434|Grazed|Grazed Indicator|UI
+435|CRIT!|Critical Hit Indicator|UI
+436|All weapons do splash damage|StatChangeType.SplashDamage|Enum
+437|{0} Ranged Armor Piercing|StatChangeType.RangedArmorPiercing|Enum
+438|{0} Melee Armor Piercing|StatChangeType.MeleeArmorPiercing|Enum
+439|Allows Flying|StatChangeType.AirBasedFlyingMode|Enum
+440|+{1} Expiration Turns for {0}|StatChangeType.IncreaseStatusEffectExpiration|Enum
+441|Cannot target this faction|ActionDisabledReason.WrongFaction|Enum
+442|Allows reactions to melee attacks and charges from all angles.|StatChangeType.FullMeleeReaction|Enum
+443|{0} Health Per Turn|StatChangeType.HealPerTurn|Enum
+444|Wall|Description of a prop|UI
+445|Input Mode|Options Panel|UI
+446|Keyboard and Mouse|InputMode.KeyboardAndMouse|Enum
+447|Gamepad|InputMode.Gamepad|Enum
+448|Change Input Mode?|OptionsManager|UI
+449|The input mode has been changed to {0},  do you confirm this change?|OptionsManager|UI
+450|PT|Loadout Unit Button (Short for points)|UI
+451|Reserved|Loadout Unit Button|UI
+452|Deployed|Loadout Unit Button|UI
+453|Hot Seat|Multiplayer Selection Panel|UI
+454|Asynchronous|Multiplayer Selection Panel|UI
+455|HQ Upgrade Centre|Mission Select Button in ArmyManagementButtonPanel|UI
+456|Ability|TechTreeUpgradeType.UnlockAbility|Enum
+457|Command Ability|TechTreeUpgradeType.UnlockCommandAbility|Enum
+458|Stat|TechTreeUpgradeType.UnlockStat|Enum
+459|Tokens Earned|Post Battle Token Display|UI
+460|Mission Complete|Post Battle Token Display|UI
+461|Bonus Objective|Post Battle Token Display|UI
+462|{0} HP per model|StatChangeType.HPPerModel|Enum
+463|{0} Awareness Range|StatChangeType.AwarenessRange|Enum
+464|{0} Awareness Cone Range|StatChangeType.AwarenessConeRange|Enum
+465|{0} Awareness Cone Angle|StatChangeType.AwarenessConeAngle|Enum
+466|Upgrade|Surging Upgrade Display|UI
+467|Surge|Surging Upgrade Display|UI
+468|Adds the {0} status when this status expires|StatChangeType.AddStatusEffectOnRemove|Enum
+469|Unlocked!|Unlocked Tech Tree Node Popup|UI
+470|HQ Command Upgrades|Tech Tree Status Effect Title|UI
+471|Unit Placement|Loadout UI|UI
+472|Accept|Loadout UI / Create Live Match Panel|UI
+473|Command Abilities|Command Abilities Action Tooltip|UI
+474|CP|Global Descriptions (Command Points)|UI
+475|Not Enough Command Points|ActionDisabledReason.InsufficientCommandPoints|Enum
+476|Cannot target an enemy unit with this ability|ActionDisabledReason.CannotTargetEnemyTeam|Enum
+477|Command abilities are not allowed on this map|ActionDisabledReason.CommandAbilitiesNotAllowedOnMap|Enum
+478|Navigation|Unit List Gamepad controls|UI
+479|Exit Group|Unit List Gamepad controls|UI
+480|Enter Group|Unit List Gamepad controls|UI
+481|Unit List|Unit List Gamepad controls|UI
+482|Select Unit|Unit List Gamepad controls|UI
+483|Close List|Unit List Gamepad controls|UI
+484|Tactical Map|Tactical Map access Panel|UI
+485|Close Tactical Map|Tactical Map access Panel|UI
+486|Unit Name|Post Battle Panel|UI
+487|Enemies Dispatched|Post Battle Panel|UI
+488|Invalid Serial Number|Login Panel|UI
+489|Serial Number|Login Panel|UI
+490|Logout|Multiplayer Landing Panel|UI
+491|Hide Unit Banners|Options Panel|UI
+492|Save Screenshot|Photo Mode Panel|UI
+493|Hide UI|Photo Mode Panel|UI
+494|Rotation Mode|Photo Mode Panel|UI
+495|Field Of View|Photo Mode Panel|UI
+496|Camera Tilt|Photo Mode Panel|UI
+497|Focus Distance|Photo Mode Panel|UI
+498|Depth Of Field|Photo Mode Panel|UI
+499|Aperture|Photo Mode Panel|UI
+500|Exposure|Photo Mode Panel|UI
+501|Saturation|Photo Mode Panel|UI
+502|Contrast|Photo Mode Panel|UI
+503|Temperature|Photo Mode Panel|UI
+504|Photo Mode - Camera|Photo Mode Panel|UI
+505|Border|Photo Mode Panel|UI
+506|Badge|Photo Mode Panel|UI
+507|Badge Position|Photo Mode Panel|UI
+508|Photo Mode - Focus|Photo Mode Panel|UI
+509|Photo Mode - Color|Photo Mode Panel|UI
+510|Photo Mode - Frame|Photo Mode Panel|UI
+511|Reset to Default|Photo Mode Panel / Options Key Rebinding|UI
+512|Vignette|Photo Mode Panel|UI
+513|Press {0} to show UI|Photo Mode Panel|UI
+514|Top Left|Photo Mode Badge Position|UI
+515|Top Right|Photo Mode Badge Position|UI
+516|Bottom Left|Photo Mode Badge Position|UI
+517|Bottom Right|Photo Mode Badge Position|UI
+518|Battlesector Logo|Photo Mode Badge|UI
+519|Warhammer 40K Logo|Photo Mode Badge|UI
+520|Cinema Bars|Photo Mode Border|UI
+521|Custom|Photo Mode Filter|UI
+522|Vivid Cool|Photo Mode Filter|UI
+523|Vivid Warm|Photo Mode Filter|UI
+524|Classic B&W|Photo Mode Filter|UI
+525|Noir|Photo Mode Filter|UI
+526|Orbit|Camera Mode|UI
+527|Flythrough|Camera Mode|UI
+528|Cinematics|Media Browser Panel|UI
+529|Screenshots|Media Browser Panel|UI
+530|Media Browser|Main Menu Panel|UI
+531|Delete Screenshot?|Media Browser Prompt|UI
+532|Are you sure you want to delete this screenshot?|Media Browser Prompt|UI
+533|{0}{1}{2}{3} Pan Camera / {4} Focus Target / {5} Rotate / {6} Save Screenshot / {7} Hide UI / {8} Exit / {9} Raise Camera / {10} Lower Camera|Photo Mode Panel Controls|UI
+534|Pan Camera|Photo Mode Panel|UI
+535|Focus Target|Photo Mode Panel|UI
+536|Rotate|Photo Mode Panel|UI
+537|to show UI|Photo Mode Panel|UI
+538|Press {0} to Hide|Screenshot Browser|UI
+539|to Hide|Screenshot Browser|UI
+540|Photo Mode|Options Panel|UI
+541|Live|Multiplayer Selection Panel|UI
+542|Waiting for other player...|Connecting message|UI
+543|Ready|Create Live Match Panel|UI
+544|(Waiting for Player)|Live Match Player Slot|UI
+545|Host Left|Create Live Match Panel|UI
+546|The host has left the match|Create Live Match Panel|UI
+547|Player Left|Create Live Match Panel|UI
+548|A player left the match|Create Live Match Panel|UI
+549|Mute|Live Chat Display|UI
+550|Lobby|Live Chat Display|UI
+551|Battle|Live Chat Display|UI
+552|No Active Battle|Live Chat Display|UI
+553|Add|Live Chat Display (Add Muted Player)|UI
+554|Remove|Live Chat Display (Remove Muted Player)|UI
+555|Disconnected|Disconnected from live multiplayer match|UI
+556|You are currently disconnected. Trying to reconnect...{0} seconds left.|Disconnected from live multiplayer match|UI
+557|Another player has disconnected. Trying to reconnect...{0} seconds left.|Disconnected from live multiplayer match|UI
+558|You have disconnected from the current match|Disconnected from live multiplayer match|UI
+559|Playing <color=#{2}>{0}</color> <color=#{3}>{1}</color>|Multiplayer Status Panel|UI
+560|Time Left: {0}|Multiplayer Status Panel|UI
+561|Online|Multiplayer Status Panel|UI
+562|Offline|Multiplayer Status Panel|UI
+563|∞|Unlimited Option (Create Match Panels)|UI
+564|Refresh|Live and PBEM landing panels|UI
+565|Ability on cooldown|ActionDisabledReason.OnCooldown|Enum
+566|Players|Full Match Display / Tournament Landing Panel|UI
+567|Show detailed enemy information|Options Panel|UI
+568|Select|Command Ability Panel|UI
+569|Select Command|Command Ability Panel|UI
+570|Command Points Available: {0}|Command Ability Panel|UI
+571|Leave Without Locking In Changes?|HQ Command Panel (Dialog)|UI
+572|Are you sure you want to leave without confirming your upgrades? All unconfirmed changes will be reset.|HQ Command Panel (Dialog)|UI
+573|Purchase|HQ Command Panel|UI
+574|HQ Upgrades|HQ Command Panel|UI
+575|Revive {0}|Global Description Manager (Character Knockout System)|UI
+576|Active Units|Campaign Army Management Panel|UI
+577|Reserves|Campaign Army Management Panel|UI
+578|Weapons|Campaign Army Management Panel|UI
+579|Abilities|Campaign Army Management Panel|UI
+580|{0} of {1}|Campaign Army Management Panel (Displaying the number of units the player has, and their maximum cap)|UI
+581|Add Unit to Army|Campaign Army Management Panel|UI
+582|Transfer Unit to Reserves|Campaign Army Management Panel|UI
+583|Transfer Unit to Army|Campaign Army Management Panel|UI
+584|Delete Unit|Campaign Army Management Panel|UI
+585|Overview|Skirmish Army Management Panel|UI
+586|Army Inspector|Skirmish Army Management Panel|UI
+587|Create New Army|Skirmish Army Management Panel|UI
+588|Delete Profile?|Skirmish Army Management Panel|UI
+589|Are you sure you want to delete the current profile?|Skirmish Army Management Panel|UI
+590|Cannot target dead unit while another unit is standing on the dead unit's tile|ActionDisabledReason.UnitStandingOnTile|Enum
+591|Does ranged attack on enemy:|Global Descriptions (Fallback Action)|UI
+592|Mute Game Chat|Options Panel|UI
+593|Invite Friend|Create Live Match Panel|UI
+594|Launch|Campaign Select Panel|UI
+595|Live Chat|Live Chat Display|UI
+596|Available Games|PBEM Landing Panel|UI
+597|Games in Progress|PBEM Landing Panel|UI
+598|Live Multiplayer Lobby|Live Landing Panel|UI
+599|Asynchronous Multiplayer Lobby|PBEM Landing Panel|UI
+600|Name|Open Match List Display (Multiplayer) / Tournament List Display|UI
+601|Empty Slot|Full Match Display|UI
+602|Match Data|Create Match Display|UI
+603|Selected Match Data|PBEM and Live Landing Panels|UI
+604|No Matches Found|Open and Active Match lists|UI
+605|My Turn|Match Search Filters|UI
+606|Enemy's Turn|Match Search Filters|UI
+607|Campaign|Campaign Screen Main Panel Title|UI
+608|Age of Crimson Dawn|Campaign Screen label for base game campaign (name of campaign)|UI
+609|New Units Are Available|Mission Select Main Panel|UI
+610|Campaign Options|Campaign Select Panel|UI
+611|Difficulty Settings|Campaign Select Panel|UI
+612|Reinforcements|Campaign Select Panel (Difficulty Settings)|UI
+613|Enhanced Enemy Units|Campaign Select Panel (Difficulty Settings)|UI
+614|Weapon Upgrade Costs|Campaign Select Panel (Difficulty Settings)|UI
+615|Reduced HQ Token Rewards|Campaign Select Panel (Difficulty Settings)|UI
+616|Reduced Army Point Caps|Campaign Select Panel (Difficulty Settings)|UI
+617|Increased Enemy Momentum|Campaign Select Panel (Difficulty Settings)|UI
+618|Reduced Momentum and CP Gains|Campaign Select Panel (Difficulty Settings)|UI
+619|Enemy AI Difficulty|Campaign Select Panel (Difficulty Settings)|UI
+620|Low|ReinforcementsDifficulty.Low / CharacterKnockoutTurns.Low / TextureQuality.Low|Enum
+621|Medium|ReinforcementsDifficulty.Medium / CharacterKnockoutTurns.Medium / TextureQuality.Medium|Enum
+622|High|ReinforcementsDifficulty.High / CharacterKnockoutTurns.High / TextureQuality.High|Enum
+623|Standard|WeaponUpgradeCosts.Standard|Enum
+624|Determines the number of reinforcement units the enemies gain.|Difficulty Setting Tooltip (Enemy Reinforcements)|UI
+625|Increases the stats of enemy units to make battles harder.|Difficulty Setting Tooltip (Enhanced Enemy Units)|UI
+626|Affects the amount of momentum enemy units gain during combat.|Difficulty Setting Tooltip (Increased Enemy Momentum)|UI
+627|Changes the behaviour of enemy AI which affects difficulty.|Difficulty Setting Tooltip (Enemy AI Difficulty)|UI
+628|Affects the point value that a unit's weapon upgrade adds to your army's points.|Difficulty Setting Tooltip (Weapon Upgrade Costs)|UI
+629|Affects the amount of HQ Tokens rewarded at the end of a mission.|Difficulty Setting Tooltip (Reduced HQ Token Rewards)|UI
+630|Affects the amount of points that you can bring to each mission.|Difficulty Setting Tooltip (Reduced Army Point Caps)|UI
+631|Affects the amount of momentum your units gain. This will also affect the amount of command points you gain.|Difficulty Setting Tooltip (Reduced Momentum and Command Point Gains)|UI
+632|Pan camera with <color=#C8914F><b>WASD</color></b>, arrow keys, or click and drag left mouse button.|Tutorial Notification (Camera Movement)|Tutorial
+633|Rotate camera with middle mouse button, <color=#C8914F><b>Q</b></color> and <color=#C8914F><b>E</b></color>, or holding ALT and moving the mouse.|Tutorial Notification (Camera Movement)|Tutorial
+634|Select the unit with the <color=#C8914F>left</color> mouse button.|Tutorial Notification (Select Unit)|Tutorial
+635|<b>MOVEMENT</b><br><br>Move the unit to the <color=#C8914F>objective</color> by right-clicking on the tile. The cost in <color=#6380AD>Movement Points</color> is displayed next to the cursor.|Tutorial Notification (Movement)|Tutorial
+636|DESTROY ALL TYRANIDS|Tutorial Objective|Objective
+637|***NOT IN USE***|***NOT IN USE***|
+638|<b>INTERACT</b><br><br>Control panels and objectives can be interacted with from an adjacent tile. Use the <color=#C8914F>Interact</color> button, or the <color=#C8914F><b>I</b></color> hotkey, to open the gate.|Tutorial Notification (Interact)|Tutorial
+639|Move (Z) the Intercessor unit to the highlighted tile.|Tutorial Notification (General)|Tutorial
+640|<b>AWARENESS RANGE</b><br><br>A unit's <color=#C8914F>awareness range</color> is indicated by the <color=#37FCFA>auspex line</color>. Enemy units outside of this range will be hidden.|Tutorial Notification (Awareness)|Tutorial
+641|Use Change Facing (<b><color=#C8914F>G</color></b>) from the command bar and select the indicated tile, or right-click on the unit and drag in the direction you need them to face.|Tutorial Notification (Awareness)|Tutorial
+642|<b>RANGED ATTACKS</b><br><br>Two factors that impact the outcome of a ranged attack are <color=#C8914F>Line of Sight</color>, and the weapon's <color=#C8914F>Optimal Range</color>.|Tutorial Notification (Shooting)|Tutorial
+643|You do not have clear line of sight on the enemy. Move to the objective tile with <color=#C8914F>right click</color> for a better position to attack from.|Tutorial Notification (Shooting)|Tutorial
+644|This is an optimal position for the Intercessors to attack the weakened hormagaunts. <color=#C8914F>Right click</color> on the enemy unit to attack it.|Tutorial Notification (Shooting)|Tutorial
+645|<b>SELECTED UNIT</b><br><br>The selected unit panel provides critical information about your unit, including their <color=#8CBA61>Health</color>, <color=#45D8FF>Momentum</color>, and their available <color=#6380AD>Movement Points</color> and <color=#C65C34>Action Points</color>.|Tutorial Notification (Select Unit)|Tutorial
+646|***NOT IN USE***|***NOT IN USE***|
+647|<b>OVERWATCH</b><br><br>Do not waste your attacks on cowards hiding behind cover! Use <color=#C8914F>Overwatch</color> to attack the first enemy that breaches your reactive zone.|Tutorial Notification (Overwatch)|Tutorial
+648|You have used all of your Action and Movement Points.<br>It is time to end the turn.|Tutorial Notification (End Turn)|Tutorial
+649|May the Emperor have mercy on your soul.|Tutorial Notification (End Turn)|Tutorial
+650|Zoom camera with middle mouse wheel, or <color=#C8914F><b>R</b></color> and <color=#C8914F><b>F</b></color>.|Tutorial Notification (Camera Movement)|Tutorial
+651|Move the Intercessors next to the control panel.|Tutorial Notification (Interact)|Tutorial
+652|Return your Intercessors into the enemy's marked zone of control, and use the Fallback command.|Tutorial Notification (Fallback)|
+653|<b>ATTACK INFORMATION</b><br><br><color=#C8914F>Left click</color> on the enemy to see detailed attack information.|Tutorial Notification (Select Enemy Unit)|Tutorial
+654|<b>FALLBACK</b><br><br>Your Intecessor unit has been attacked, and is currently <color=#C8914F>Engaged</color> by the hormagaunts.|Tutorial Notification (Fallback)|Tutorial
+655|***NOT IN USE***|***NOT IN USE***|
+656|***NOT IN USE***|***NOT IN USE***|
+657|Use the <color=#C8914F>Frag Grenade</color> ability to eliminate the hormagaunt threat.|Tutorial Notification (Abilities)|Tutorial
+658|Select another Intercessor unit (<color=#C8914F>left click</color>), and move to the objective tile. |Tutorial Notification (Abilities)|Tutorial
+659|Press <color=#C8914F><b>O</b></color>, and set an <color=#C8914F>Overwatch</color> zone at the Bolt Rifle's optimal range with right click. The unit will shoot at the first enemy to enter any tile within the zone.|Tutorial Notification (Overwatch)|Tutorial
+660|Use the Fallback command (<color=#C8914F><b>U</b></color>), and target the hormagaunts. The Intercessors will gain a large defensive bonus while moving to the opposite tile.|Tutorial Notification (Fallback)|Tutorial
+661|***NOT IN USE***|***NOT IN USE***|
+662|<b>UNIT LIST</b><br><br>Use the Unit List to easily find and select units across different roles.<br><br>Navigate to the HQ role and select the Sanguinary Priest.|Tutorial Notification (Unit List)|Tutorial
+663|<b>HQ COMMAND ABILITIES</b><br><br>The commanding HQ unit of your forces has access to HQ Command Abilities unique to each faction. These abilities require <color=#C8914F>Command Points</color>, which accumulate throughout the course of the battle.|Tutorial Notification (HQ Command Abilities)|Tutorial
+664|Click on the Command Abilities indicator (<color=#C8914F><b>C</b></color>), select the Assault Cannon Strafe ability, and kill the hormagaunts.|Tutorial Notification (HQ Command Abilities)|Tutorial
+665|The battle is yours to complete however you see fit.<br><br>Glory for the Emperor!|Tutorial Notification (Final)|Tutorial
+666|<b>TIP:</b> The Assault Cannon Strafe ability targets ALL units along four consecutive tiles in a line. Select the first target tile, and then select the second target three tiles away. Try to catch as many gaunts in the path as you can.|Tutorial Notification (HQ Command Abilities)|Tutorial
+667|***NOT IN USE***|***NOT IN USE***|
+668|Move the remaining Intercessor unit to cover the corridor.|Tutorial Notification (Overwatch)|Tutorial
+669|Upgraded|Global Description Manager (Order Button Upgrade)|UI
+670|This unit is surging. Choose whether to upgrade an ability, or gain a surged status next turn (+1 AP)|Momentum Bar Surging Tooltip (Player)|UI
+671|This unit is surging. It will gain +1 AP next turn.|Momentum Bar Surging Tooltip (Enemy)|UI
+672|Unit Members|Army Unit Details (Army Management Panels)|UI
+673|Units With AP|Tactical Filters Panel|UI
+674|Command Point Earned|Orders Panel|UI
+675|Melee Attacks|Post Battle Panel|UI
+676|Ranged Attacks|Post Battle Panel|UI
+677|Kills this battle and total kills over career|Post Battle Panel|UI
+678|Melee Kills|Post Battle Panel|UI
+679|Melee Accuracy|Post Battle Panel|UI
+680|Ranged Kills|Post Battle Panel|UI
+681|Ranged Accuracy|Post Battle Panel|UI
+682|Uses this battle and total uses over career|Post Battle Panel|UI
+683|Press {0} to Continue|User Engagement|UI
+684|**Unset**|**Unset**|
+685|Current Language Selection|Options Panel|UI
+686|Randomises all battle options|Skirmish Configuration Panel (Tooltip for Randomise all button)|UI
+687|Randomises all battle options and then starts the battle|Skirmish Configuration Panel (Tooltip for Suprise Me button)|UI
+688|Create a new profile with the name:|Skirmish Army Management Panel|UI
+689|The number of tiles this unit can move. Advancing additional tiles costs Action Points.|Detailed Unit Panel Tooltip - Movement|UI
+690|Activates when at least half of the unit's Movement Points are spent in the current or previous turn.|Detailed Unit Panel Tooltip - Evasion|UI
+691|The number of actions this unit can perform. Some powerful abilities may cost more than 1 AP.|Detailed Unit Panel Tooltip - Action|UI
+692|Reduces the damage taken from enemy attacks. The effectiveness of Armour is decreased by a weapon's Armour Piercing.|Detailed Unit Panel Tooltip - Armour|UI
+693|When Momentum reaches 100, this unit will Surge.|Detailed Unit Panel Tooltip - Momentum|UI
+694|Command Points are earned by the army's HQ Command unit whenever a friendly unit gains Momentum, is killed, or completes an objective.|Orders Panel  - Command Points|UI
+695|This unit is the HQ Command unit for the army. They will earn Command Points throughout the battle, which can be used to activate HQ Command Abilities.|Detailed Unit Panel Tooltip - HQ Command Unit|UI
+696|Hide/Show the unit list.|Unit List Panel - Hide Unit List|UI
+697|Cycle through to the next unused unit.|Unit List Panel - Next Unit|UI
+698|Command Points|Orders Panel - Command Points|UI
+699|HQ Command|Detailed Unit Panel Tooltip - HQ Command Unit|UI
+700|Hide Unit List|Detailed Unit Panel Tooltip - Hide Unit List|UI
+701|There are no abilities to Empower|Orders Panel (Upgrade not interactable button tooltip)|UI
+702|Incorrect Faction Selected|Replay Campaign Mission Panel|UI
+703|Please select a {0} army to play this campaign mission|Replay Campaign Mission Panel|UI
+704|Prerequisite Units Needed|Replay Campaign Mission Panel|UI
+705|The following prerequisite units will be added to your army:|Replay Campaign Mission Panel|UI
+706|<i>They are the Defenders of Humanity, and they shall know no fear.</i> <br><br>The default Battlesector experience. You will need to use tactics and strength to overcome the challenges ahead. |Difficulty Description (Astartes)|UI
+707|<i>In the grim darkness of the far future, there is only war.</i> <br><br>Missions will be more difficult, and provide less rewards. An additional challenge without adjustments to the combat system. |Difficulty Description (Lieutenant)|UI
+708|<i>The screams of the innocent, the pleas of the righteous resound to the cruel laughter of Dark Gods.</i> <br><br>Enemies will be tougher and hit harder, missions will be unforgiving, and the odds will be stacked against you. Only recommended for the experienced Battlesector player. |Difficulty Description (Company Captain)|UI
+709|Join us on Discord|Button Label. Discord is a community and discussion service|UI
+710|{0} has joined the lobby|Live Chat Handler|UI
+711|{0} has left the lobby|Live Chat Handler|UI
+712|{0} has joined the match|Live Chat Handler|UI
+713|User|Live Chat Handler|UI
+714|Hide password|Create Match Display|UI
+715|Motion Blur Enabled|Graphics Options Panel|UI
+716|VSync Enabled|Graphics Options Panel|UI
+717|Quality|Graphics Options Panel|UI
+718|Harvest|Interaction Description|UI
+719|Press {0} to keep visible|Hold Interrogation Panel Open Prompt|UI
+720|Show Detailed Battle Information During Enemy Turn|Options Panel|UI
+721|Press {0} to hide|Hold Interrogation Panel Open Prompt|UI
+722|UI Particle FX|Options Panel|UI
+723|Zone of Control|Combat Text (Pistol Zone of Control)|UI
+724|Pistol Reaction Attack|Combat Text (Pistol Melee Charge Reaction)|UI
+725|{0} to select target /|Help Text - Target |UI
+726|{0} on target for detailed information /|Help Text - Interrogate / Information|UI
+727|{0} or {1} on empty tile to cancel|Help Text - Exit|UI
+728|{0} to select ally /|Help Text - Ally|UI
+729|{0} to select enemy /|Help Text - Enemy|UI
+730|{0} to select tile /|Help Text - Tile|UI
+731|To Hit|Basic Unit Tooltip|UI
+732|<i>In our darkest hour, they are a blazing beacon of hope.</i><br><br>For players who are new to strategy games, or who wish to more easily experience the campaign story.|Difficulty Description (Initiate)|UI
+733|Initiate|Difficulty Level (Easy)|UI
+734|Overwatch|Combat text (floating text) / Options Key Rebinding|UI
+735|SECURITY BARRIER BYPASSED|Tutorial panel|UI
+736|HOSTILE DETECTED|Tutorial Panel|UI
+737|HOSTILE ELIMINATED|Tutorial Panel|UI
+738|HQ UNIT REINFORCEMENT|Tutorial Panel|UI
+739|INFANTRY REINFORCEMENTS|Tutorial Panel|UI
+740|Normal Speed: {0}<br>Fast Forward: {1}<br>Skip: {2}|End Turn Panel - Fast Forward Button Tooltips|UI
+741|Optimal|Weapon Information Tech Tree|UI
+742|Skip Frame: {0}|Photo Mode Skip Frame Shortcut Tooltip|UI
+743|Select / Deselect Unit|Options Key Rebinding|UI
+744|Execute Action|Options Key Rebinding|UI
+745|Next Unit|Options Key Rebinding|UI
+746|Camera Pan Left|Options Key Rebinding|UI
+747|Camera Pan Right|Options Key Rebinding|UI
+748|Camera Pan Forward|Options Key Rebinding|UI
+749|Camera Pan Backward|Options Key Rebinding|UI
+750|Rebind Controls|Options Panel|UI
+751|Multiplayer Error|Multiplayer Connection Manager|UI
+752|Client version {0} is out of date. Please update your game to connect to multiplayer.|Multiplayer Connection Manager|UI
+753|Rebind|Options Key Rebinding Popup|UI
+754|Press a key to rebind '{0}'<br>Reverting in {1} seconds|Options Key Rebinding Popup|UI
+755|Press a mouse button to rebind '{0}'<br>Reverting in {1} seconds|Options Key Rebinding Popup|UI
+756|Reset Controls?|Options Key Rebinding PopupOptions Key Rebinding Popup|UI
+757|Are you sure you want to reset all control rebindings to the default settings?|Options Key Rebinding PopupOptions Key Rebinding Popup|UI
+758|{0} and {1} have the same key set|Options Key Rebinding|UI
+759|Rotate Camera Left|Options Key Rebinding|UI
+760|Rotate Camera Right|Options Key Rebinding|UI
+761|Zoom In|Options Key Rebinding|UI
+762|Zoom Out|Options Key Rebinding|UI
+763|Enter Movement Mode|Options Key Rebinding|UI
+764|Weapon/Ability Slot 1|Options Key Rebinding|UI
+765|Weapon/Ability Slot 2|Options Key Rebinding|UI
+766|Weapon/Ability Slot 3|Options Key Rebinding|UI
+767|Ability Slot 4|Options Key Rebinding|UI
+768|Ability Slot 5|Options Key Rebinding|UI
+769|Ability Slot 6|Options Key Rebinding|UI
+770|Ability Slot 7|Options Key Rebinding|UI
+771|Enter/Exit Photo Mode|Options Key Rebinding|UI
+772|Show/Hide Unit List|Options Key Rebinding|UI
+773|Rewards|Mission Briefing Panel|UI
+774|Army List|Create Match Display (show army details)|UI
+775|Map Select|Create Match Display (show map details)|UI
+776|Terrain Type|Create Match Display (show map details)|UI
+777|Map Size|Create Match Display (show map details)|UI
+778|Ruins|Map Terrain Type|UI
+779|Settlement|Map Terrain Type|UI
+780|Factorum|Map Terrain Type|UI
+781|Elite Units|Create Match Display (show faction details)|UI
+782|Faction Traits|Create Match Display (show faction details)|UI
+783|Lore|Create Match Display (show faction details)|UI
+784|<b>Advanced Combat Tutorial</b><br>This tutorial will teach you about charge attacks, melee counterattacks, and <color=#45D8FF>Momentum</color>.<br><br>Select the indicated Hormagaunt unit.|Tutorial Notification (Advanced Combat Intro)|Tutorial
+785|<b>Charging</b><br>Charge attacks require a straight path to a distant target. Charging units gain +1 <color=#6380AD>Movement Point</color>, and are not counterattacked in the melee.<br><br>Charge these Assault Marines using <color=#C8914F>right click</color>.|Tutorial Notification (Charge Attacks)|Tutorial
+786|Return the hormagaunt to the indicated tile.|Tutorial Notification (Charge Attacks)|Tutorial
+787|<b>Pistol Reaction Attack</b><br><color=#C8914F>Pistol</color> weapons gain a free reaction attack against charges. Just like Overwatch, if enough damaging shots hit, the unit will lose <color=#6380AD>Movement Points</color>.<br><br>This can result in a unit failing to reach their charge target!|Tutorial Notification (Pistol Reactions)|Tutorial
+788|Advance these hormagaunts with their remaining <color=#C65C34>Action Point</color>, and close the distance to the enemy.<br><br>This will prevent the Assault Marines from charging next turn.|Tutorial Notification (Pistol Reactions)|Tutorial
+789|The other hormagaunt unit is in a much more favourable position to charge their target.|Tutorial Notification (Rear Attack)|Tutorial
+790|Melee and charge attacks to the rear of a unit gain additional <color=#C8914F>Accuracy</color>, <color=#C8914F>Armour Piercing</color> and <color=#C8914F>Damage</color>.|Tutorial Notification (Rear Attack)|Tutorial
+791|<b>Melee Counterattacks</b><br><br>A surviving unit will counterattack any enemy melee attack originating from within their <color=#C8914F>Zones of Control</color>.|Tutorial Notification (Counterattack)|Tutorial
+792|Skip|Narrative Cutscene Panel|UI
+793|<b>Overhead Map</b><br><br>A <color=#9E6EA4>synaptic leader</color> has entered the battlefield!<br><br>Press <color=#C8914F>M</color> to bring up the overhead map and plan your next move.|Tutorial Notification (Map)|Tutorial
+794|Press <color=#C8914F>M</color> again to return to the battle.|Tutorial Notification (Map)|Tutorial
+795|Although these Warriors will not be able to get into direct combat, they can still get close enough to turn the battle. |Tutorial Notification (Map)|Tutorial
+796|<b>Momentum</b><br>Units are awarded <color=#45D8FF>Momentum</color> for killing an enemy. Depending on their <color=#C8914F>Faction Trait</color>, they are awarded additional Momentum based on their weapon type, distance to enemy, or different actions taken.|Tutorial Notification (Momentum)|Tutorial
+797|The Tyranids' <color=#9E6EA4>Endless Hunger</color> trait provides a large Momentum bonus if an enemy is killed with a melee weapon, or a smaller bonus if they were killed by a ranged weapon.|Tutorial Notification (Momentum)|Tutorial
+798|This Hormagaunt unit is in a great position to clear out the Assault Marines, but with a little bit of help could also reach 100 Momentum and begin <color=#C65C34>Surging</color>.|Tutorial Notification (Momentum)|Tutorial
+799|Select the indicated hormagaunt unit.|Tutorial Notification (Momentum)|Tutorial
+800|Let's first bring the Warriors closer.|Tutorial Notification (Momentum)|Tutorial
+801|<b>Synaptic Leaders</b><br><br><color=#9E6EA4>Synaptic leaders</color> are unique to the Tyranid faction. The aura they radiate boost the combat ability of lesser creatures around them, and increase the Momentum they gain.|Tutorial Notification (Synaptic Leader)|Tutorial
+802|Move this Warrior unit closer to the hormagaunts.|Tutorial Notification (Synaptic Leader)|Tutorial
+803|Overwatch & Confirm|End Turn Confirmation button|UI
+804|While a unit is <color=#9E6EA4>Connected</color> to a synaptic leader, they will double the Momentum they gain.|Tutorial Notification (Synaptic Leader)|Tutorial
+805|All of a unit's status effects can be viewed with tooltips along the top of the Command Bar.|Tutorial Notification (Synaptic Leader)|Tutorial
+806|Kill the Assault Marines to <color=#C65C34>Surge</color> this hormagaunt unit.|Tutorial Notification (Synaptic Leader)|Tutorial
+807|This unit is now <color=#C65C34>Surging</color>. While its Momentum value remains at 100, it will receive +1 <color=#6380AD>Movement Point</color> as well as the full bonus from its faction trait.<br><br>While Surging, a unit also gains access to two additional options above its Command Bar: <color=#C8914F>Empower</color> and <color=#C8914F>Surge</color>.|Tutorial Notification (Surge)|Tutorial
+808|<b>Empower</b><br><br>Empower will spend 100 Momentum to give a powerful one-off boost to one of the unit's abilities.|Tutorial Notification (Surge)|Tutorial
+809|<b>Surge</b><br><br>Surge will spend 100 Momentum to immediately give the unit +1 <color=#C65C34>Action Point</color> to use this turn.|Tutorial Notification (Surge)|Tutorial
+810|**Not in use**|**Not in use**|
+811|The battle is yours to complete however you see fit.<br><br>The Hive Mind will not wait...|Tutorial Notification (End Tutorial)|Tutorial
+812|Spend the Momentum to <color=#C8914F>Empower</color> the hormagaunt's Leap ability, or <color=#C8914F>Surge</color> to make an additional attack this turn.|Tutorial Notification (Surge)|Tutorial
+813|Movement & Commands|Main Menu Panel (tutorial 1)|UI
+814|Advanced Combat|Main Menu Panel (tutorial 2)|UI
+815|LVL {0}|Army Unit Details (Ability)|UI
+816|Poison|DamageType.Posion|Enum
+817|Acidic|DamageType.Acidic|Enum
+818|Basic|DamageType.Basic|Enum
+819|Psychic|DamageType.Psychic|Enum
+820|Click to view/change weapons|Loadout Unit Button (view weapon tooltip)|UI
+821|Create a Slitherine Account|Signup Panel (title)|UI
+822|Type in your new account details below. Your username will be visible to other players.|Signup Panel (details)|UI
+823|Email|Signup Panel (email field label)|UI
+824|Register|Signup Panel (button to create an account)|UI
+825|An account with this email already exists.|Signup Panel (error message)|UI
+826|An account with this username already exists.|Signup Panel (error message)|UI
+827|Change Account|Multiplayer Selection Panel|UI
+828|Slitherine accounts:<br><br>  • Can participate in tournaments.<br>  • Will receive email updates for 'play by email' matches.|Account Selection Panel|UI
+829|This account:<br><br>  • Can not participate in tournaments.<br>  • Will not recieve email updates for 'play by email' matches.|Account Selection Panel|UI
+830|Account Selection|Account Selection Panel (title)|UI
+831|Passwords must be at least 3 characters long and must only contain numbers and letters (no spaces or special characters).|Signup Panel (error)|UI
+832|Ammunition|Additional ability description|UI
+833|Cooldown|Additional ability description|UI
+834|Looking for a match? Join us on Discord|Button text. Encourages players to use the social platform Discord to find other players to battle against.|UI
+835|Tutorial Not Started|Tutorial not played popup title|UI
+836|Some tutorials have not been completed yet. Would you like to play the next tutorial before continuing?|Tutorial not played popup description|UI
+837|Yes|Dialog Panel Option|UI
+838|No|Dialog Panel Option|UI
+839|The battle is now yours to complete as you see fit. For the Emperor!|Tutorial Notification|Tutorial
+840|<b>Weapons Training Tutorial</b><br>This tutorial will teach you about effective use of some of the weapons available to Space Marine units.<br><br>Select the indicated Assault Marine unit.|Tutorial Notification|Tutorial
+841|These Assault Marines are equipped with Hand Flamers, which do significant damage to all units on a tile. Move to the tile adjacent to these Termagants.|Tutorial Notification|Tutorial
+842|Now use the Hand Flamer against the Termagants.|Tutorial Notification|Tutorial
+843|Excellent! Now, take out the Hormagants with the Baal Predator. Select the Baal Predator.|Tutorial Notification|Tutorial
+844|The Twin Assault Cannon has a high fire rate, which is effective against swarm units. Move to the indicated tile, which is the optimal range from the target.|Tutorial Notification|Tutorial
+845|Now use the Twin Assault Cannon against the Hormagaunts.|Tutorial Notification|Tutorial
+846|Here comes a Tyrannofex! These brutes have thick armour, which can be hard to penetrate. Select the Baal Predator.|Tutorial Notification|Tutorial
+847|Hellblasters carry <color=#C8914F>Plasma Incinerators</color>, which have high armour penetration and high damage output, at the cost of a lower firing rate.  Move your Hellblasters to the indicated tile, which is the optimal range for the Plasma Incinerator.|Tutorial Notification|Tutorial
+848|Now fire at the Tyrannofex.|Tutorial Notification|Tutorial
+849|The Furioso Dreadnought is equipped with a Furioso Fist, which is very effective against large single model units. Select the Furioso Dreadnought and move to melee range of the Tyrannofex.|Tutorial Notification|Tutorial
+850|Concede|Options Panel (concede in live multiplayer)|UI
+851|Concede?|Options Panel (concede prompt title)|UI
+852|Are you sure you want to concede?|Options Panel (concede prompt description)|UI
+853|Conceding...|Displayed on screen while conceding|UI
+854|Move to the indicated tile, and attack with the Storm Bolter|Tutorial Notification|Tutorial
+855|Notice that the armour of the Tyrannofex <color=#C8914F>Blocked</color> the Storm Bolter. We'll need a weapon with higher armour penetration. Select the Hellblasters.|Tutorial Notification|Tutorial
+856|Now attack the Tyrannofex with the Furioso Fist.|Tutorial Notification|Tutorial
+857|Weapons & Armour|Tutorial Notification|Tutorial
+858|You have used your action points. It's time to end your turn.|Tutorial Notification|Tutorial
+859|*reserved for TUT3|Tutorial Notification|Tutorial
+860|*reserved for TUT3|Tutorial Notification|Tutorial
+861|Other Player Conceded|Title of popup that appears explaining that the other player conceded / Match Point Manager notification when other player gets points|UI
+862|The other player has conceded the match|Description of popup that appears explaining that the other player conceded|UI
+863|You have asynchronous matches with updates.|Tooltip text displayed on the main menu when a player has PBEM (Play by Email) games that have updated since they last took their turn.|UI
+864|Challenge Update|Tooltip title displayed on the main menu when a player has updates in their multiplayer games.|UI
+865|English|Language. MUST STAY IN ENGLISH. DO NOT TRANSLATE|UI
+866|Deutsche|Language. MUST STAY IN GERMAN. DO NOT TRANSLATE|UI
+867|Français|Language. MUST STAY IN FRENCH. DO NOT TRANSLATE|UI
+868|Español|Language. MUST STAY IN SPANISH. DO NOT TRANSLATE|UI
+869|русский|Language - MUST STAY IN RUSSIAN. DO NOT TRANSLATE|UI
+870|中国人|Language -MUST STAY IN CHINESE. DO NOT TRANSLATE|UI
+871|Polskie|Language - MUST STAY IN POLISH. DO NOT TRANSLATE|UI
+872|português|Language - MUST STAY IN PORTUEGESE. DO NOT TRANSLATE|UI
+873|한국어|Language - MUST STAY IN KOREAN. DO NOT TRANSLATE|UI
+874|Removed after moving once|StatChangeType.RemoveAfterMovement|Enum
+875|Empowered|Displayed on empowered abilities (abilities with upgraded effects)|UI
+876|Empower|Orders Panel|UI
+877|You can capture your exploits and heroic moments on the battlefield by using Photo Mode. Press Backspace to any time to pause the game and enter Photo Mode.|Tutorial prompt to enter photo mode|Tutorial
+878|Waiting for other actions to resolve|ActionDisabledReason.WaitingForOtherActionsToResolve|Enum
+879|Campaign History|Army Management Panels|UI
+880|All weapons do tile damage|StatChangeType.TileDamage|UI
+881|Splash|Displayed in combat UI for splash damage|UI
+882|Splash Damage|Displayed in combat UI for splash damage|UI
+883|Uses {0} MP|Fallback action tooltip|UI
+884|Immune to overwatch|StatChangeType.IgnoreOverwatch|Enum
+885|Immune to pistol reaction attacks|StatChangeType.IgnorePistolChargeReactions|Enum
+886|Immune to melee zones of control|StatChangeType.IgnoreMeleeZonesOfControl|Enum
+887|Immune to pistol zones of control|StatChangeType.IgnorePistolZonesOfControl|Enum
+888|Fallback Attack|Floating combat text (UICombatText config)|UI
+889|For now, save the Momentum and complete your turn. You will get the opportunity to use this surge in power next turn.|Tutorial Notification|Tutorial
+890|Auto-Generate|AI army option in skirmish|UI
+891|Turn Limit|Multiplayer Match UI|UI
+892|Point Target|Multiplayer Match UI|UI
+893|vs|Multiplayer Status UI|UI
+894|You|Multiplayer Status UI|UI
+895|Loadout|Multiplayer Match UI|UI
+896|Results|Post Battle Panel (Multiplayer)|UI
+897|Tie breaker - Highest points in alive units: {0}|Post Battle Panel (Multiplayer)|UI
+898|Tie breaker - Lowest total army points: {0}|Post Battle Panel (Multiplayer)|UI
+899|Tie breaker - Highest average accuracy: {0}|Post Battle Panel (Multiplayer)|UI
+900|Draw|Post Battle Panel (Multiplayer)|UI
+901|Target|Multiplayer status panel (target points)|UI
+902|Objective Select|Multiplayer Match UI|UI
+903|<b>Conqueror</b><br><br>Control the objective zone|Conqueror objective text|UI
+904|<b>Strategic Command</b><br><br>Secure the control points|Strategic Command objective text|UI
+905|Resync|Multiplayer Points Gained Reason|UI
+906|Unit killed|Multiplayer Points Gained Reason|UI
+907|Unit within control zone|Multiplayer Points Gained Reason|UI
+908|More units than opponent in control zone|Multiplayer Points Gained Reason|UI
+909|Opponent has no units in control zone|Multiplayer Points Gained Reason|UI
+910|Command Points Captured|Multiplayer Points Gained Reason|UI
+911|Please select another map to use the selected objective|Multiplayer Match UI (Match Invalid Reason)|UI
+912|The army picked for the AI is larger than the AI army size.|Multiplayer Match UI (Match Invalid Reason)|UI
+913|The current objective requires specific units in your army|Multiplayer Match UI (Match Invalid Reason)|UI
+914|Units Provide Cover|Campaign Select Panel (Difficulty Settings)|UI
+915|Use {0} to move the camera.|Gamepad Tutorial|Tutorial
+916|Rotate the camera with {0}.|Gamepad Tutorial|Tutorial
+917|Zoom camera with {0}.|Gamepad Tutorial|Tutorial
+918|Select the Intercessors by centring the reticle on the unit and pressing {0}.|Gamepad Tutorial|Tutorial
+919|<b>MOVEMENT</b><br>Move the unit to the <color=#C8914F>objective</color> by pressing {0} on the tile. The cost in <color=#6380AD>Movement Points</color> is displayed next to the cursor.|Gamepad Tutorial|Tutorial
+920|<b>INTERACT</b><br><br>Control panels and objectives can be interacted by a unit from an adjacent tile. Press {0} on the Intercessors to open the gate.|Gamepad Tutorial|Tutorial
+921|You can quickly refocus the camera on your selected unit by pressing {0}.|Gamepad Tutorial|Tutorial
+922|Use Change Facing {0} from the command bar and select the indicated tile.|Gamepad Tutorial|Tutorial
+923|Open the Command Bar with {0}.|Gamepad Tutorial|Tutorial
+924|<b>ATTACK INFORMATION</b><br><br>Move the reticle over the enemy to see detailed attack information.|Gamepad Tutorial|Tutorial
+925|You do not have clear line of sight on the enemy. Move to the objective tile with {0} for a better position to attack from.|Gamepad Tutorial|Tutorial
+926|This is an optimal position for the Intercessors to attack the weakened hormagaunts. Press {0} on the enemy unit to attack it.|Gamepad Tutorial|Gamepad Tutorial
+927|Use the Fallback command, and target the hormagaunts. The Intercessors will gain a large defensive bonus while moving to the opposite tile.|Gamepad Tutorial|Gamepad Tutorial
+928|Navigate to the <color=#C8914F>Fallback</color> command with {0}.|Gamepad Tutorial|Gamepad
+929|Press {0} to activate Fallback, and select the hormagaunts to target them.|Gamepad Tutorial|Gamepad
+930|Hold {0} to end the turn.|Gamepad Tutorial|Gamepad
+931|Select another Intercessor unit, and move to the objective tile. |Gamepad Tutorial|Gamepad
+932|Use {0} to cycle to the next available unit that still has at least one <color=#C65C34>Action Point</color> to spend.|Gamepad Tutorial|Gamepad
+933|Access <color=#C8914F>Overwatch</color> from the Command Bar {0}, and set the zone at the Bolt Rifle's optimal range. The unit will shoot at the first enemy to enter any tile within the zone.|Gamepad Tutorial|Gamepad
+934|<b>UNIT LIST</b><br><br>Use the Unit List {0} to easily find and select units across different roles.|Gamepad Tutorial|Gamepad
+935|Press {0} to enter the HQ unit group, and select the Sanguinary Priest.|Gamepad Tutorial|Gamepad
+936|Press {0} to access HQ Command Abilities.|Gamepad Tutorial|Gamepad
+937|{0} MP when leaving tile|StatChangeType.MPWhenLeavingTile|Enum
+938|{0} won|Full Match Display|UI
+939|Ultra|TextureQuality.Ultra|Enum
+940|<b>Charging</b><br>Charge attacks require a straight path to a distant target. Charging units gain +1 <color=#6380AD>Movement Point</color>, and are not counterattacked in the melee.<br><br>Charge these Assault Marines using {0}.|Gamepad Tutorial|Gamepad
+941|<b>Overhead Map</b><br><br>A <color=#9E6EA4>synaptic leader</color> has entered the battlefield!<br><br>Press {0} to bring up the overhead map and plan your next move.|Gamepad Tutorial|Gamepad
+942|Press {0} to return to the battle.|Gamepad Tutorial|Gamepad
+943|Inspect the indicated hormagaunt unit.|Gamepad Tutorial|Gamepad
+944|Use {0} to access Empower and Surge commands.|Gamepad Tutorial|Gamepad
+945|Gives the option to use an upgraded version of an ability.|Empower Tooltip|UI
+946|Gives +1 Action Point|Surge Tooltip|UI
+947|You can capture your exploits and heroic moments on the battlefield by using Photo Mode. Press {0} at any time to pause the game and enter Photo Mode.|Gamepad Tutorial|Gamepad
+948|Skip Frame|Photo mode skip frame (gamepad)|UI
+949|Raise/Lower Camera|Photo mode raise camera|UI
+950|All of a unit's status effects can be viewed in the unit inspection details. Press {0} while the unit is inspected.|Gamepad Tutorial|Gamepad
+951|Every adjacent tile is a zone of control|StatChangeType.FullZonesOfControl|Enum
+952|Travel path is blocked|Ability disabled reason|UI
+953|Sets all ranged units with action points to use overwatch at maximum range|Overwatch and Confirm tooltip|UI
+954|Hold to Skip|Cinematic Gamepad Prompt|UI
+955|Data Privacy Policy|Button for GDPR settings|UI
+956|Opt-out of Analytics|Opt-out of Analytics|UI
+957|Fight a battle against an opponent over the internet. Both players are online at the same time, and see their opponent's moves in real-time.|Live multiplayer description|UI
+958|Fight a battle against an opponent via the PBEM++ server. Players do not need to be online at the same time, and turns are exchanged at each players' convenience.|PBEM/Async description|UI
+959|Fight a battle against an opponent on the same system.|Hotseat description|UI
+960|Reduces line of sight while using ranged weapons if other units are in the way.|Difficulty Setting Tooltip (Unit Cover)|UI
+961|Can't save in the tutorial|Cannot Save Reason|UI
+962|Can't save while replaying a campaign mission|Cannot Save Reason|UI
+963|Initializing Match|Live Multiplayer Progress Message|UI
+964|Ending Turn|Live Multiplayer Progress Message|UI
+965|Starting Match|Live Multiplayer Progress Message|UI
+966|Ending Match|Live Multiplayer Progress Message|UI
+967|Press {0} to join.|Hotseat multiplayer button prompt|UI
+968|Login failed, please try again.|Login Generic Error|UI
+969|Auto Login Failed|Login Generic Error|UI
+970|Army Destroyed|Skirmish Post Battle Points Display|UI
+971|{0} Disconnected|A console player has disconnected their controller or signed out. Their username will be shown in this string to ensure the correct player re-joins.|UI
+972|Max Framerate|Max framerate option|UI
+973|Brightness|Label for the screen brightness setting.|UI
+974|Safe Zone|Label for the screen safe zone setting.|UI
+975|Off|Options Panel|UI
+976|Texture Quality|Options Panel|UI
+977|Shadows|Options Panel|UI
+978|Shadow Quality|Options Panel|UI
+979|Anti-Aliasing|Options Panel|UI
+980|Bloom|Options Panel|UI
+981|Ambient Occlusion|Options Panel|UI
+982|Swap Profile|Label for a button that launches the console account picker.|UI
+983|Synchronises rendering to your monitor refresh rate to avoid tearing. Max Framerate setting is not available when using Vsync.|Vsync Option Tooltip|UI
+984|Vsync|Options Panel|UI
+985|Affects the number of units you can recruit between missions.|Campaign Select Panel (Requisition difficulty setting tooltip)|UI
+986|Requisitions|Campaign Select Panel|UI
+987|Infinite|Campaign Select Panel (Requisition difficulty setting option)|UI
+988|Regular|Campaign Select Panel (Requisition difficulty setting option)|UI
+989|Halved|Campaign Select Panel (Requisition difficulty setting option)|UI
+990|No Requisition Actions Left|Campaign Army Management Panel (No Requisition points left popup)|UI
+991|There are no requistion actions left to recruit units with. Requisition actions are replenished between missions.|Campaign Army Management Panel (No Requisition points left popup)|UI
+992|Fog Quality|Options Panel|UI
+993|Unit On Cooldown|Campaign Army Management Panel (Unit on cooldown popup)|UI
+994|This unit is on cooldown and will be available again after {1} missions.|Campaign Army Management Panel (Unit on cooldown popup, plural)|UI
+995|This unit is on cooldown and will be available again after {1} mission.|Campaign Army Management Panel (Unit on cooldown popup, singular)|UI
+996|Unlimited Infantry|Campaign Select Panel|UI
+997|Allows basic infantry units to be recruited without Requisition Actions.|Campaign Select Panel (Unlimited Infantry difficulty setting tooltip)|UI
+998|1 Requisition Action|Campaign Army Management Panel|UI
+999|New unit placed into reserves|Campaign Army Management Panel|UI
+1000|Veterancy|Veterancy system status effect title|UI
+1001|Tournaments|Multiplayer Selection Panel|UI
+1002|Round Start|Tournament Landing Panel|UI
+1003|Current Round|Tournament Landing Panel|UI
+1004|Status|Tournament Landing Panel|UI
+1005|{0} - ROUND {1} vs {2}|Tournament Landing Panel - *Tournament Name* - Round *Round Number* vs *Opponent Player Name*|UI
+1006|Open Tournaments|Tournament Landing Panel|UI
+1007|Finished|Tournament Landing Panel|UI
+1008|No Tournaments Found|Tournament Landing Panel|UI
+1009|View Scores|Tournament Landing Panel|UI
+1010|Open|Tournament Landing Panel|UI
+1011|In Progress|Tournament Landing Panel|UI
+1012|Could Not Join Tournament|Tournament Landing Panel|UI
+1013|Join Tournament?|Tournament Landing Panel|UI
+1014|Are you sure you want to join this tournament?|Tournament Landing Panel|UI
+1015|Joined|Tournament Landing Panel|UI
+1016|Not Chosen Yet|Full Match Display (When Faction isn't picked)|UI
+1017|Choose Faction|Full Match Display (When Faction isn't picked)|UI
+1018|Scores|Tournament Scores Panel|UI
+1019|Round Finish Time|Tournament Match Information|UI
+1020|Time Left|Tournament Match Information|UI
+1021|{0}d:{1:00}h:{2:00}m:{3:00}s|Tournament Match Information|UI
+1022|Total|Tournament Scores Panel|UI
+1023|Round {0}|Tournament Scores Panel|UI
+1024|any key|Key name to insert into "Press any key to continue" prompt.|UI
+1025|It is your turn in a tournament match.|Multiplayer Selection Panel|UI
+1026|{0} Ignore Partial Cover Penalties|StatChangeType.RangedIgnorePartialCover|Enum
+1027|{0} Ranged Damage vs Vehicles|StatChangeType.RangedDamageVehicle|Enum
+1028|{0} Ranged Armor Piercing vs Vehicles|StatChangeType.RangedArmourPiercingVehicle|Enum
+1029|{0} Ranged Critical Chance vs Vehicles|StatChangeType.RangedCriticalChanceVehicle|Enum
+1030|Can only target visible tiles|ActionDisabledReason.CanOnlyTargetVisibleTiles|Enum
+1031|Too close to enemy|ActionDisabledReason.TooCloseToEnemy|Enum
+1032|{0} Armor|StatChangeType.AllArmor|Enum
+1033|{0} Damage Received|StatChangeType.AllDamageReceived|Enum
+1034|Prevents all reaction attacks|StatChangeType.PreventAllReactionAttacks|Enum
+1035|Not connected to the internet.|Error message when trying to start multiplayer without an internet connection.|UI
+1036|{0} Bonus HP|StatChangeType.BonusHP|Enum
+1037|Match is full.|Error message when trying to join a full multiplayer match.|UI
+1038|{0} to all stats while adjacent to HQ Command unit|StatChangeType.StatsModifiedWhileAdjacentToHQUnit|Enum
+1039|{0} chance to gain AP after killing enemy model|Status Effect Custom Description (Heirs Of Azkallon)|UI
+1040|Multiplayer Not Allowed|Login Error|UI
+1041|Privacy Policy|Signup Panel|UI
+1042|Your personal information will never be shared with 3rd parties and only used to communicate with you about your games and our services. If you have any questions about how your information is stored please contact support@slitherine.co.uk for details.|Signup Panel|UI
+1043|Unlink|Multiplayer Selection Panel (Windows Store application only)|UI
+1044|Logged in as|Logged in User Display (multiplayer)|UI
+1045|Allow Playable DLC Units|Campaign Select Panel|UI
+1046|Ability is still charging|ActionDisabledReason.AbilityCharging|Enum
+1047|Charge Time|Additional ability description|UI
+1048|Match Round|Tournament Match UI|UI
+1049|Tournament Match|Tournament Match UI|UI
+1050|Tournament Data|Tournament Match UI|UI
+1051|Rounds|Tournament Match UI|UI
+1052|Commences In|Tournament Match UI|UI
+1053|Round|Tournament Match UI|UI
+1054|Score|Tournament Match UI|UI
+1055|Moderators|Tournament Match UI|UI
+1056|Final Turn!|Scoring Phase UI|UI
+1057|Chat Unavailable|Live Chat Display|UI
+1058|Army Cohesion|Status Effect|UI
+1059|Army Cohesion Limit|Skirmish Army Management Panel|UI
+1060|Your army is over the maximum army point value.|Create Match UI|UI
+1061|Your army does not meet army cohesion requirements. This match requires cohesive armies.|Create Match UI|UI
+1062|This army is cohesive. Every unit will receive bonus momentum during the battle.|Skirmish Army Management Panel (Tooltip)|UI
+1063|This army does not match army cohesion requirements. Units will not receive bonus momentum during the battle. Reduce the units shown below to change this.|Skirmish Army Management Panel (Tooltip)|UI
+1064|Army Point Cap|Skirmish Army Management Panel|UI
+1065|Save Army|Skirmish Army Management Panel|UI
+1066|Requires Cohesive Armies|Create Match UI|UI
+1067|The AI's army is over the maximum army point value.|Create Match UI|UI
+1068|The AI's army is not cohesive. This match requires cohesive armies.|Create Match UI|UI
+1069|Player 1's army is over the maximum army point value.|Create Match UI|UI
+1070|Player 1's army is not cohesive. This match requires cohesive armies.|Create Match UI|UI
+1071|Player 2's army is over the maximum army point value.|Create Match UI|UI
+1072|Player 2's army is not cohesive. This match requires cohesive armies.|Create Match UI|UI
+1073|Inappropriate username|Signup Panel|UI
+1074|Failed to validate username over network|Signup Panel|UI
+1075|Validating Username...|Signup Panel|UI
+1076|That username is inappropriate. Please check that you have entered it correctly. You can contact support@slitherine.co.uk to request a change to your username if you wish.|Login Panel|UI
+1077|Leave Tournament?|Tournament Landing Panel|UI
+1078|Are you sure you want to leave this tournament?|Tournament Landing Panel|UI
+1079|Could not Leave Tournament|Tournament Landing Panel|UI
+1080|Tournament Match|Scoring Phase Panel|UI
+1081|Victory Bonus|Scoring Phase Panel|UI
+1082|The winner is awarded a Victory Bonus based on the point value of their army, and the number of unplayed match turns.|Scoring Phase UI Tooltip|UI
+1083|Delete Save?|Save game UI delete confirmation dialog|UI
+1084|Are you sure you want to delete "{0}"?<br>{1} - {2}|Save game UI delete confirmation dialog. {0} is the save game filename. {1} is the game mode that the save is for. {2} is the time the save was made.|UI
+1085|Save file contains units from an add-on that is not active.|Save Game Panel (Popup Description)|UI
+1086|Add-on is Not Active|Save Game Panel (Popup Title)|UI
+1087|Reinforce|Conquest Resource Panel|UI
+1088|Claim|Conquest Resource Panel|UI
+1089|Auxillary Force|Conquest Resource Title - Increased army cap|UI
+1090|Expanded Authority|Conquest Resource Title - Extra AP|UI
+1091|Rapid Resupply|Conquest Resource Title - -1 Req Cooldowns|UI
+1092|Elite Units|Conquest Resource Title|UI
+1093|Honour Mark|Conquest Resource Panel|UI
+1094|{0} Army Points|Conquest Resource Panel|UI
+1095|{0} Requisition Cooldowns|Conquest Resource Description|UI
+1096|Gain access to elite units|Conquest Resource Description|UI
+1097|{0} AP when charged|Conquest Resource Description|UI
+1098|Strategy Map|Conquest Save Games|UI
+1099|Autoresolve|Conquest Claim Reaction Panel|UI
+1100|Withdraw|Conquest Claim Reaction Panel|UI
+1101|The faction to play as during this campaign|Faction choice description for conquest campaigns|UI
+1102|Neutral Force Strength|Campaign Select Panel|UI
+1103|AI Force Strength|Campaign Select Panel|UI
+1104|Faction Battle Target Score|Campaign Select Panel|UI
+1105|Enhanced Neutral Units|Campaign Select Panel|UI
+1106|Enhanced AI Units|Campaign Select Panel|UI
+1107|Toggles the Army Cohesion system.|Difficulty Setting Tooltip (Army Cohesion)|UI
+1108|Adjusts the army point max value for all hostile unaligned forces.|Difficulty Setting Tooltip (Neutral Force Strength)|UI
+1109|Adjusts the army point max value for all AI factions.|Difficulty Setting Tooltip (AI Force Strength)|UI
+1110|Adjusts the target score for Exterminatus objectives vs. AI factions.<br>Higher values mean greater army losses when losing a tile.|Difficulty Setting Tooltip (Faction Battle Target Score)|UI
+1111|Applies the Enhanced Units status effect to hostile unaligned force units.|Difficulty Setting Tooltip (Enhanced Neutral Units)|UI
+1112|Applies the Enhanced Units status effect to AI faction units.|Difficulty Setting Tooltip (Enhanced AI units)|UI
+1113|You still have at least one Action remaining. Are you sure you want to end your turn?|Conquest End Turn Warning|UI
+1114|Biomass|Honour Mark Name (Tyranid)|UI
+1115|Victory Engram|Honour Mark Name (Necrons)|UI
+1116|Attacker|Conquest Claim Reaction Panel|UI
+1117|Defender|Conquest Claim Reaction Panel|UI
+1118|{0} are contesting the {1}!|Conquest activity description (claim resource)|UI
+1119|You can continue to modify your forces for free until the next battle, or the start of the next turn.|Conquest Resource Panel (Tooltip)|UI
+1120|You do not have another Action available to reinforce your army. You will need to end your turn before you can make any further adjustments.|Conquest Resource Panel (Tooltip)|UI
+1121|Fight|Conquest Bolster Panel|UI
+1122|Bolster Your Forces|Conquest Bolster Panel|UI
+1123|Units lost to achieve victory. Further losses will occur if battle is failed.|Autoresolve Tooltip|UI
+1124|{0}% Chance of {1}|Autoresolve Tooltip ({1} will be one of the 5 lines below)|UI
+1125|Overwhelming Victory|Autoresolve Tooltip|UI
+1126|Strong Victory|Autoresolve Tooltip|UI
+1127|Moderate Victory|Autoresolve Tooltip|UI
+1128|Minor Victory|Autoresolve Tooltip|UI
+1129|Imminent Defeat|Autoresolve Tooltip|UI
+1130|Units Lost|Autoresolve Battle Panel|UI
+1131|Calculating|Autoresolve Battle Panel|UI
+1132|Victory|Autoresolve Battle Panel|UI
+1133|Defeat|Autoresolve Battle Panel|UI
+1134|Cannot save while claiming or reinforcing|Conquest Cannot Save Reason|UI
+1135|This will break your army's cohesion. Are you sure you want to recruit this unit?|Reinforce Army Management Panel|UI
+1136|There are no units in your army|Claim button message|UI
+1137|Unit Breaks Cohesion|Reinforce Army Management Panel|UI
+1138|No Units|Claim button message|UI
+1139|You can only withdraw when no actions points have been spent. You will be able to withdraw at the start of your next turn.|Conquest withdraw button tooltip|UI
+1140|You can only withdraw during your turn.|Conquest withdraw button tooltip|UI
+1141|Withdraw?|Conquest withdraw button prompt|UI
+1142|Are you sure you want to withdraw?|Conquest withdraw button prompt|UI
+1143|{0}  Battle|Generic Conquest Battle Name|UI
+1144|Reinforced!|Conquest Reinforced Indicator (Floating Text)|UI
+1145|Withdrawn!|Conquest AI Withdrawn Indicator (Floating Text)|UI
+1146|{0} HP per momentum|StatChangeType.HealPerTurnPerModelPerMomentum|Enum
+1147|{0} Momentum after moving {2} tiles|StatChangeType.MomentumIfMoved|Enum
+1148|Allows moving over short obstacles and ignores movement penalties from terrain. |StatChangeType.IgnoreTerrainPenaltiesBelowHeight|Enum
+1149|Each successful shot with this weapon has a {0} cumulative chance to arc to an adjacent enemy, dealing {1} damage. |StatChangeType.AdditionalAdjacentRangedShot|Enum
+1150|{0} Damage against organic units|Custom Stat Description (Damage against organic)|Enum
+1151|{0} Armour piercing against organic units|Custom Stat Description (Armour piercing against organic)|Enum
+1152|{0} {2} Range|StatChange.AbilityRange|Enum
+1153|Reflects {0} of damage back onto melee attackers|StatChange.ReflectMelee|Enum
+1154|{0} Shots|StatChange.AllShots|Enum
+1155|{0} of {1} targets selected|Target selection (multi target abilities)|UI
+1156|{0} to confirm /|Target selection (multi target abilities)|UI
+1157|Ranged Weapons Autohit|StatChange.RangedAutoHit|Enum
+1158|{0} to cancel|Help Text (Gamepad Only)|UI
+1159|Owner|Conquest Tile Information|UI
+1160|Connected To Base|Conquest Tile Information|UI
+1161|Resource|Conquest Tile Information|UI
+1162|Bonus|Conquest Tile Information|UI
+1163|Unknown|Conquest Tile Information|UI
+1164|Eliminated|Conquest Campaign Faction Destroyed Status|UI
+1165|Consumed|Conquest Campaign Faction Destroyed Status|UI
+1166|Annihilated|Conquest Campaign Faction Destroyed Status|UI
+1167|Your army strength is low. Consider requesting reinforcements.|Conquest Campaign Advisor Suggestion|UI
+1168|The enemy approaches your base. Consider claiming nearby territory.|Conquest Campaign Advisor Suggestion|UI
+1169|There are unclaimed tiles within reach. Defeat the neutral territories to increase your army point cap.|Conquest Campaign Advisor Suggestion|UI
+1170|There is an unclaimed resource within reach. Claim it to gain a bonus.|Conquest Campaign Advisor Suggestion|UI
+1171|An enemy controlled Auxillary Force resource is within reach. Capture it to increase your army cap.|Conquest Campaign Advisor Suggestion|UI
+1172|An enemy controlled Expansive Authority resource is within reach. Capture it to increase actions per turn.|Conquest Campaign Advisor Suggestion|UI
+1173|An enemy controlled Rapid Resupply resource is within reach. Capture it to reduce requisition cooldowns.|Conquest Campaign Advisor Suggestion|UI
+1174|All actions have been used. It’s time to end your turn.|Conquest Campaign Advisor Suggestion|UI
+1175|Close|Conquest Tile Information|UI
+1176|Base Claimed!|Conquest Base Claimed Message (During Starting Cutscene)|UI
+1177|Unclaimed|Conquest Tile Information|UI
+1178|Corrosion|Status Effect (Acidic damage type)|UI
+1179|Fight Against Allies|Planetary Supremacy Campaign Option|UI
+1180|When enabled, factions that are normally allied can be opponents in the campaign|Planetary Supremacy Option Tooltip|UI
+1181|Combat|Post Conquest Panel|UI
+1182|Turns Played|Post Conquest Panel|UI
+1183|Tiles Captured|Post Conquest Panel|UI
+1184|Tiles Lost|Post Conquest Panel|UI
+1185|Most Tiles Held|Post Conquest Panel|UI
+1186|Bases Captured|Post Conquest Panel|UI
+1187|Resources Owned|Post Conquest Panel|UI
+1188|Total Units Killed|Post Conquest Panel|UI
+1189|Total Damage Done|Post Conquest Panel|UI
+1190|Shortest Battle|Post Conquest Panel|UI
+1191|Longest Battle|Post Conquest Panel|UI
+1192|Best Performing Unit|Post Conquest Panel|UI
+1193|Best Mission Kill/Death Ratio|Post Conquest Panel|UI
+1194|Total Healing|Post Conquest Panel|UI
+1195|Units Lost/Deployed|Post Conquest Panel|UI
+1196|Damage by Weapon Category|Post Conquest Panel|UI
+1197|Units Surged|Post Conquest Panel|UI
+1198|Abilities Empowered|Post Conquest Panel|UI
+1199|Most Surged Unit|Post Conquest Panel|UI
+1200|Most Empowered Ability|Post Conquest Panel|UI
+1201|Army Rating|Post Conquest Panel|UI
+1202|Average Accuracy|Post Conquest Panel|UI
+1203|{0} Kills|Post Conquest Panel|UI
+1204|{0} Mission Survival Streak|Post Conquest Panel|UI
+1205|{0} Tiles Travelled|Post Conquest Panel|UI
+1206|Kill Death Ratio|Post Conquest Panel|UI
+1207|{0} Surge/s|Post Conquest Panel|UI
+1208|{0} Use/s|Post Conquest Panel|UI
+1209|Mission {0}|Post Conquest Panel|UI
+1210|Total Units Lost|Post Conquest Panel|UI
+1211|View Forums|Main Menu Manager|UI
+1212|Unit|TechTreeUpgradeType.UnlockUnit|Enum
+1213|Upgrades Require AP|CampaignSelectPanel|UI
+1214|Defines whether it requires an action point to purchase upgrades in the HQ Command Centre.|CampaignSelectPanel|UI
+1215|AI Gets All Upgrades|CampaignSelectPanel|UI
+1216|Gives the other AI factions all HQ Command Centre upgrades.|CampaignSelectPanel|UI
+1217|Cannot be Suppressed|StatChangeType.PreventSuppression|Enum
+1218|{0} Maximum Range|StatChangeType.MaximumRange|Enum
+1219|Unlock this unit|Help text. Unit refers to a game character. Unlock means allow for selection|UI
+1220|Unlocks|Tech Tree Tooltip Panel|UI
+1221|For Units|Tech Tree Tooltip Panel|UI
+1222|Upgrades are available for your forces. Consider unlocking HQ Upgrades.|Planetary Supremacy Campaign Advisor|UI
+1223|{0} Momentum gains from killing organic units|Blood for the Blood God custom stat|UI
+1224|{0} Weapon Damage per Momentum|StatChangeType.DamagePerMomentum|Enum
+1225|This unit is on cooldown. To purchase it will require {0} Requisition Points|Reinforce Army Management Panel (Planetary Supremacy)|UI
+1226|No Units Lost|Conquest Autoresolve Panel|UI
+1227|Siege|Skirmish Objective Title (Siege)|UI
+1228|<b>Attack and defend control points.</b><br><br>One player is designated as the attacker while the other is the defender:<br><br>• +25 points are awarded to the attacker per point captured. The defender cannot recapture points once the attacker has captured them.<br><br>• Capture points take multiple turns to capture. The unit capturing the point will not be able to move during this time, so defend them well.<br><br>• The defender gains points from killing the attacker's units. Only the defender can gain points by doing this.<br><br>• The defender has a larger deployment area, allowing them to deploy units closer to the capture points at the start of the match.<br><br>• The defender will automatically gain reinforcements at the start of their turn if their army is almost destroyed.|Skirmish Objective Description (Siege)|UI
+1229|Capture|Siege objective mode|UI
+1230|Capturing ({0} Turn/s Left)|SiegePointCapturePanel|UI
+1231|Only the attacker can stand on capture points|ActionDisabledReason.OnlyAttackerCanStandOnCapturePoints|Enum
+1232|<b>Siege</b><br><br>Secure the control points|Siege mode objective description (attacker)|UI
+1233|<b>Siege</b><br><br>Defend the control points|Siege mode objective description (defender)|UI
+1234|<b>Siege</b><br><br>Attacker needs to secure the control points. Defender needs to defend the control points|Siege mode objective description (hotseat)|UI
+1235|Accelerated Cost: {0} Requisition Points|Accelerated Reinforcement Button Tooltip|UI
+1236|Play as|Skirmish setup|UI
+1237|Embark|Embark Transport|UI
+1238|Disembark|Disembark Transport|UI
+1239|Transport is full|Disable Transport|UI
+1240|Already disembarked this turn.|Transport|UI
+1241|<b>Capacity limits</b><br><br>Unit: {0}<br>Models: {1}|Transport|UI
+1242|Next|Button Label|UI
+1243|Reinforcement Points: {0}|Incursion Army Management|UI
+1244|Waves Survived|UI Incursion post battle|UI
+1245|Daemons Killed|UI Incursion post battle / post wave|UI
+1246|Daemons Killed Score|UI Incursion post battle|UI
+1247|Army Size Multiplier|UI Incursion post battle|UI
+1248|Wave Survived Bonus|UI Incursion post battle|UI
+1249|Reinforcement Points Spent|UI Incursion post battle|UI
+1250|Cannot target this unit|ActionDisabledReason.CannotTargetThisUnit|Enum
+1251|Leaderboard|Button text to open the scores leaderboard for a gamemode.|UI
+1252|World|Title for the page that shows the top leaderboard scores in the world.|UI
+1253|You|Title for the page that shows the current player's leaderboard scores and nearby scores.|UI
+1254|Friends|Title for the page that shows the current player's friends leaderboard scores.|UI
+1255|When enabled, Daemon waves will never end and the game only concludes when your army is destroyed.|UI Button Tooltip|UI
+1256|Enemy Factions|UI label|UI
+1257|How many points you receive to spend on reinforcements after each wave.|UI Button Tooltip|UI
+1258|Smaller Army Bonus|Description for bonus points added in the ScoringPhasePanel for having a smaller army than the opponent.|UI
+1259|Turns Remaining Bonus|Description for bonus points added in the ScoringPhasePanel for winning before reaching the turn limit.|UI
+1260|Wave|UI Incursion post battle / post wave - label next to the number of waves completed.|UI
+1261|Wave Complete|UI Incursion post wave - Title|UI
+1262|Resupply|UI floating text when units regain limited ammo supplies|UI
+1263|Bronze|LootType|UI
+1264|Silver|LootType|UI
+1265|Gold|LootType|UI
+1266|Battlefield Aid|Tooltip title when hovering over bonus pickups.|UI
+1267|Default|UI|UI
+1268|Adjusts the accuracy of enemy attacks based on the size and agility of the unit.|UI Evasion Tooltip|UI
+1269|{0} Ranged Stability Per Momentum|StatChangeType.RangedFalloffPerMomentum|Enum
+1270|{0} Armor Piercing Per Momentum|StatChangeType.ArArmorPiercingPerMomentum|Enum
+1271|Interface Scale|Changes the scale for user interface and text.|UI
+1272|{0} Unspent Action Momentum Penalty|StatChangeType.UnspentActionLoss|Enum
+1273|Analytics Disabled|Analytics Disabled button text|UI
+1274|Opt-Out of Analytics|Analytics Optout Title|UI
+1275|Analytics data is used strictly to help improve the game. Are you sure you wish to opt out?|Analytics Optout Description|UI
+1276|Seize And Control|Skirmish Objective|UI
+1277|AI Requisitions|Difficulty Setting|UI
+1278|Affects the number of units AI can recruit between missions.|Difficulty Setting|UI
+1279|Launch Error|Dialog UI|UI
+1280|The game has encountered a critical error. If this error persists, please validate the game data and/or reinstall the game.|Dialog UI|UI
+1281|Use Melee Weapons By Default Against Adjacent Enemies|Options UI|UI
+1282|<b>Seize And Control</b><br>Eliminate the enemy before they occupy the control zone|Skirmish Objective - Seize and Control, defender|
+1283|<b>Seize And Control</b><br>Attacker occupies the control zone, defender eliminate the attacker|Skirmish Objective - Seize and Control, hotseat|
+1284|<b>Seize And Control</b><br>Occupy the control zone.|Skirmish Objective - Seize and Control, attacker|
+1285|Charging|Expanded Authority Bar UI|UI
+1286|Active. +{0} AP|Expanded Authority Bar UI|UI
+1287|Battlefield Promotion|Displayed above Unit when they are promoted to the HQ Commander role during a battle.|UI
+1288|Momentum: {0} per model killed|Tooltip description showing how much momentum will be gained for each enemy model killed.|UI
+1289|<b>Occupy the objective zone to claim the vital resource.</b><br><br>The attacker gains 5 points for each unit in the control zone, minus 5 points for each defender unit in the control zone.<br><br>The defender gains points for eliminating the attackers units.|Sieze and Control objective descriptions|UI
+1290|Enemies within control zone|Explains multiplayer point gains for number of enemies in the control zone.|UI
+1291|Allies within control zone|Explains multiplayer point gains for number of allies in the control zone.|UI
+1292|Spoilz of Waaagh|Honour Mark Name (Orks)|UI
+1293|Next Unit With MP|UI|UI
+1294|Weapon is reloading|Weapon Reloading|UI
+1295|Ammunition Reload Time|Weapon Reloading|UI
+1296|The minimum army size for incursion is {0}|Create Match UI|UI
+1297|Available after {0} waves|ScoringPostWavePanel|UI
+1298|Available after next wave|ScoringPostWavePanel|UI
+1299|Show direct rear attack indicator|Options Panel text to enable/disable the arrow that indicates where an enemy can be attacked from directly behind.|UI
+1300|Blood Tribute|Honour Mark Name (Daemons)|UI
+1301|Terrain|Title for terrain editing tab in map builder.|UI
+1302|Gameplay|Title for gameplay editing tab in map builder.|UI
+1303|Atmosphere|Title for atmosphere editing tab in map builder.|UI
+1304|Props|Title for prop placement tab in map builder.|UI
+1305|Create New Map|Title for create new map panel.|UI
+1306|Map Builder|Button text for entering the map builder.|UI
+1307|Width|Label for slider determining width of the map in tiles.|UI
+1308|Height|Label for slider determining height of the map in tiles.|UI
+1309|Template|Label for a control for choosing a template to create a new map from.|UI
+1310|Custom Loadout Zones|Label for selecting whether to add loadout zones to a map.|UI
+1311|Capture Areas|Label for selecting whether to add capture areas to a map.|UI
+1312|Capture Points|Label for selecting whether to add capture points to a map.|UI
+1313|{0} Ranged Damage per Momentum|StatChangeType.RangedDamagePerMomentum|Enum
+1314|{0} Ranged Accuracy against this unit|StatChangeType.RangedAccuracyAgainst|Enum
+1315|{0} Accuracy Falloff against this unit|StatChangeType.RangedFalloffAgainst|Enum
+1316|Applies within {0} tiles|Clarification text describing that the above stat changes only apply within a certain number of tiles)|UI
+1317|My Maps|Heading for maps that have been created by this player.|UI
+1318|Downloaded Maps|Heading for maps that have been downloaded from the internet.|UI
+1319|Edit|Button label for editing something.|UI
+1320|Browse Online|Button label for browsing maps created by other players online.|UI
+1321|Duplicate|Button label for copying a map and editing the copy.|UI
+1322|Are you sure you want to delete "{0}"?|Warning message before deleting something.|UI
+1323|Publish|Text to display for the action of publishing a map online for other players to use.|UI
+1324|Enter a change log to tell other players what is new in this release.|Text to display on a popup asking for change details when publishing a map online.|UI
+1325|Map Details|Heading for a panel for editing custom map details.|UI
+1326|Description|Label for a description field.|UI
+1327|Error|Title for a popup informing the player an error has occurred.|UI
+1328|Success|Title for a popup informing the player that some operation was successful.|UI
+1329|Map published successfully.|Message informing player that their map was published successfully.|UI
+1330|Custom map not installed:<br>{0}|Error message telling the player that they don't have the custom map required by this save game or match.|UI
+1331|Local map not found:<br>{0}|Error message telling the player that the locally created map specified by a save game or match was not found. |UI
+1332|Enable|Toggle label to describe whether the current game mode is enabled or not.|UI
+1333|{0} Tiles Available|Label describing how many tiles are available / walkable in a given area of the map.|UI
+1334|Size|Label for a dropdown to filter objects by their size.|UI
+1335|Tiny|Size label for very small objects (smaller than 1 tile).|UI
+1336|Small|Size label for small objects (around 1 tile in size).|UI
+1337|Medium|Size label for medium sized objects (1-3 tiles in size).|UI
+1338|Large|Size label for large objects. (3 - 4 tiles in size).|UI
+1339|Extra Large|Size label for extra large objects. (5+ tiles in size).|UI
+1340|Nature|Label for objects that are naturally occurring (rocks, trees, grass, etc).|UI
+1341|Structures|Label for objects that are buildings or structures.|UI
+1342|Category|Label for dropdown allowing filtering props by category.|UI
+1343|Walls|Label for objects that primarily divide two tiles.|UI
+1344|Objects|Label for general objects that are too small to be structures.|UI
+1345|Decals|Label for decals that will draw on the ground.|UI
+1346|Imperium|Label for objects that belong to any faction of the imperium armed forces (space marines, Battle Sister, IG, etc.)|UI
+1347|Civilian|Label for civilian objects that don't belong to an army.|UI
+1348|Natural|Label for maps that are more natural landscape.|UI
+1349|Structured|Label for maps that are less natural landscape, and more built up structures.|UI
+1350|Lush|Label for maps with water filled biomes (forest, swamp, grassland, etc).|UI
+1351|Dry|Label for maps with dry biomes (Desert, tundra, savanah, etc).|UI
+1352|Rugged|Label for maps with lots of height variation.|UI
+1353|Flat|Label for maps with very little height variation.|UI
+1354|Custom Maps|Label for a button which allows choosing a set of custom maps.|UI
+1355|Sparse|Label for a slider that controls how filled the map will be.|UI
+1356|Filled|Label for the opposite end of the slider that controls how filled the map will be.|UI
+1357|Generated Maps|Label for a slider that controls the number of generated maps to include.|UI
+1358|Design Your Planet|Heading for a section of Planetary Supremacy setup that allows you to customize the overworld map.|UI
+1359|All Modes|Label for a map builder layer where changes will apply to all game modes and objectives.|UI
+1360|New Mode|Heading for a popup to create a new custom game mode.|UI
+1361|Create a name for your new game mode. This will enable playing this map as a single player map.|Description for a popup to create a new game mode.|UI
+1362|Units|Label for UI relating to Units and Unit Models in the custom map.|UI
+1363|Are you sure you want to delete the data for this game mode? This can not be undone.|Label asking the player if they are sure they want to delete a game mode layer in the map editor.|UI
+1364|Brush Strength|Label for a slider that controls the brush strength when painting terrain layers.|UI
+1365|Height Min|Label for a slider that adjusts the minimum height of a terrain layer. Making this lower will make the layer less visible, higher will make it more visible.|UI
+1366|Height Max|Label for a slider that adjusts the maximum height of a terrain layer. Making this lower will make the layer less visible, higher will make it more visible.|UI
+1367|Scale|Label for a slider that controls the scale of a terrain layer. Making this higher will make the terrain layer appear larger.|UI
+1368|Sand|Tag for terrain materials that are mostly sand.|UI
+1369|Grass|Tag for terrain materials that are mostly grass.|UI
+1370|Mud|Tag for terrain materials that are mostly mud.|UI
+1371|Rock|Tag for terrain materials that are mostly rock.|UI
+1372|Artificial|Tag for terrain materials that are mostly artificial.|UI
+1373|Azimuth|The angle between the sun and the north direction.|UI
+1374|Zenith|The angle between the sun and the vertical direction.|UI
+1375|Sun|Heading for settings related to the sun.|UI
+1376|Red|Label for the red component of a color.|UI
+1377|Green|Label for the green component of a color.|UI
+1378|Blue|Label for the blue component of a color.|UI
+1379|Fog|Heading for settings related to fog.|UI
+1380|Color|Label for a color setting.|UI
+1381|Post Processing|Heading for settings related to post processing (color grading and the like).|UI
+1382|Density|Label for a density slider.|UI
+1383|Intensity|Label for a slider controlling the sun intensity.|UI
+1384|Use Skirmish Music|Toggle that controls whether to use music tracks from skirmish mode. Otherwise tracks will be manually selected.|UI
+1385|Strength|Label for a slider controlling the strength of ambient occlusion.|UI
+1386|Radius|Label for a slider controlling the radius of ambient occlusion.|UI
+1387|Sky|Label for settings relating to the sky.|UI
+1388|Ground|Label for settings relating to the ground.|UI
+1389|Linear|Fog mode for linear fog falloff between a start and end distance.|UI
+1390|Exponential|Fog mode for exponential falloff with a given power.|UI
+1391|Exponential Squared|Fog mode for exponential squared falloff with a given power.|UI
+1392|Start|Label for the start of some distance range.|UI
+1393|End|Label for the end of some distance range.|UI
+1394|Temperature|Label for a color temperature setting.|UI
+1395|White Balance|Label for white balance post processing settings.|UI
+1396|Tone|Label for tone mapping post processing settings.|UI
+1397|Hue|Label for a color hue slider.|UI
+1398|Lows|Heading for settings relating to low / dark tones in post processing.|UI
+1399|Mids|Hedaing for settings relating to mid tones in post processing.|UI
+1400|Highs|Heading for settings relating to high / bright tones in post processing.|UI
+1401|Battle Honour|Honour Mark Name (Tau)|UI
+1402|Ambient|Label in the Audio settings to choose the ambient track.|UI
+1403|Logo Required|Title for a warning telling the player that a map requires a logo.|UI
+1404|Enter play mode and capture a photo using Photo Mode.|Instructions telling the player how to create a logo for this map.|UI
+1405|Version|Label for a version input box.|UI
+1406|Tile Props|Props that can be placed snapped to tiles.|UI
+1407|Free Props|Props that can be moved about freely without affecting the tilemap.|UI
+1408|Save Map Photo|Label for a button that saves the current screen as the photo to display for a custom map.|UI
+1409|Brush Size|Label for a slider that controls the layer painting brush size.|UI
+1410|Position|Label for a position.|UI
+1411|Direction|Label for a facing direction (Forward, Left, Right, etc).|UI
+1412|Tiles|Label for props that only write tile data, and don't contain any visuals.|UI
+1413|Grid|Label for a button that shows and hides the tile grid.|UI
+1414|Custom Campaign|Label for a button that begins a new custom campaign.|UI
+1415|User Creations (Beta)|Label for a button that leads to managing installed custom maps and campaigns.|UI
+1416|Custom Campaigns|Label for a button that opens the editor for custom campaigns.|UI
+1417|My Campaigns|Heading for maps that have been created by the local user.|UI
+1418|Downloaded Campaigns|Heading for maps that have been downloaded off the internet.|UI
+1419|Create New Campaign|Label for a button that creates a new custom campaign.|UI
+1420|Creating a multiplayer match with a locally saved map. Only players who have the same map saved locally will be able to join.|Warning shown when trying to pick a local map for a multiplayer match, as opposed to a downloaded map or a built in map.|UI
+1421|Warning|Title for popup messages displaying a warning of any kind.|UI
+1422|Player Chooses Faction|Label for a toggle that controls whether a player gets to choose their own faction for a custom campaign.|UI
+1423|Is Local Player|Label for a toggle that selects which of the players in a match is the local campaign player.|UI
+1424|Allowed Factions|Label for a picker that determines which factions are allowed in a campaign or map.|UI
+1425|Are you sure you want to remove "{0}"?|Warning text when removing an item from somewhere, as opposed to deleting it.|UI
+1426|Uploading|Text shown while waiting for a mod to upload to the server.|UI
+1427|Authenticating|Text shown while waiting to autheticate with server.|UI
+1428|Campaign Briefing|Label for a text input where modders will write a dramatic description for their campaign.|UI
+1429|Mission Briefing|Label for a text input where modders will write a dramatic description for a battle/mission in their campaign.|UI
+1430|Missions|Heading for the list of missions in a campaign.|UI
+1431|Mission Title|Label for an input where modders will give a title for a battle/mission in their campaign.|UI
+1432|Campaign Title|Label for an input where modders will give a title for their campaign.|UI
+1433|Local Space|Toggle that controls whether movement and rotation happen in local space or world space (Relative to the object, or relative to the level).|UI
+1434|Ramps And Platforms|Prop Category for Map Builder|UI
+1435|Undo|Button to undo last action.|UI
+1436|Chances to occur in Planetary Supremacy|Tooltip describing the function of three sliders that control how likely a custom map is to be used in a planetary supremacy campaign.|UI
+1437|Snap to tiles|Tooltip for changing whether a prop snaps to tiles or not.|UI
+1438|By uploading this creation to mod.io, you accept and agree with the EULA and the Mod Policy.|Agreement text displayed next to the publish button to remind users of the terms. (EULA stands for End User License Agreement, and Mod Policy is a named document, neither term should be translated.)|UI
+1439|Custom maps must support the Seize and Control objective to be used in Planetary Supremacy.|Warning tooltip on a button for selecting custom maps, describing the requirements to use those maps in Planetary Supremacy.|UI
+1440|Effects|Label for objects that are effects such as fire and smoke|0|Elimine todos os inimigos|

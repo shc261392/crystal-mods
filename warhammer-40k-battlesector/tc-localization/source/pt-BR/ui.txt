@@ -1,0 +1,1433 @@
+1|Terminar turno|
+2|Vez de {0}|
+3|Evasão: {0}|
+4|Ímpeto: {0}|
+5|Ocultar|
+6|Próxima unidade não utilizada|
+7|Vitalidade|
+8|Frente: {0}|
+9|Direita: {0}|
+10|Atrás: {0}|
+11|Esquerda: {0}|
+12|Precisão: {0}%|
+13|Dano: {0}|
+14|Ataques: {0}|
+15|Munição: {0} / {1}|
+16|Nova Campanha|
+17|Carregar Jogo|
+18|Escaramuça|
+19|Multijogador|
+20|Tutorial|
+21|Opções|
+22|Sair|
+23|Interagir|
+24|{0} Ganhos de Ímpeto|
+25|{0} Ímpeto|
+26|Não é possível usar a Vigília em combate corpo a corpo|
+27|Morreu|
+28|Sem unidade para atacar|
+29|Não é possível atacar uma unidade da mesma equipe|
+30|Sem munição|
+31|Pontos de ação insuficientes|
+32|O modo de disparo de supressão está ativado|
+33|Inimigo próximo demais|
+34|Inimigo fora de alcance|
+35|Inimigo completamente encoberto|
+36|Uma unidade que não é de movimento foi usada neste turno|
+37|Recusar|
+38|Terreno intransponível|
+39|Pontos de movimento insuficientes|
+40|Não é possível se mover para um espaço onde já há uma unidade|
+41|Balística|
+42|Corpo a corpo|
+43|Flamejante|
+44|Artilharia|
+45|Precisão {0}: {1}|
+46|Dano {0}: {1}|
+47|Defenda a unidade|
+48|Esta toca não está conectada a outra toca|
+49|Armadura: {0}/{1}|
+50|Mostrar na tela de carregamento|
+51|Saguão principal|
+52|Pontos de ação não gastos|
+53|Algumas das suas unidades têm pontos de ação não gastos e sofrerão penalidade de Ímpeto. Quer terminar o turno agora?|
+54|{0} restantes|
+55|{0} acima do limite|
+56|Meu exército|
+57|{0} Precisão por Ímpeto|
+58|{0} Evasão por Ímpeto|
+59|{0} Precisão|
+60|{0} Dano|
+61|{0} Ataques adicionais|
+62|Última chance|
+63|Vigília<br><br>Define uma área de disparo reativa. A unidade sofrerá uma pequena penalidade de Ímpeto ao final do turno.|
+64|Cancelar Vigília|
+65|Enviar mudanças|
+66|{0} solicitou algumas mudanças|
+67|Reverter mudanças|
+68|Precisão:|
+69|Modificador de distância: {0}%|
+70|Corpo a corpo: {0}%|
+71|Armadura: {0}|
+72|Armadura:|
+73|A morte aguarda este personagem...|
+74|{0} Dano corpo a corpo|
+75|{0} Evasão|
+76|Virar-se|
+77|Mover|
+78|Custo|
+79|Pontos de movimento|
+80|Dano|
+81|Penalidade de cobertura|
+82|Chance de acerto|
+83|Precisão base|
+84|Penalidade de distância|
+85|Evasão inimiga|
+86|Não é possível usar outras ações no modo Vigília|
+87|Esta unidade não pode usar tocas|
+88|Em pânico|
+89|{0} Movimento|
+90|{0} Precisão à distância|
+91|Ativa o modo de movimento de pulo|
+92|Suprimiu -{0} PM|
+93|{0} Precisão corpo a corpo|
+94|Não é possível usar tocas inimigas|
+95|Diferencial de armadura|
+96|Não é possível usar esta habilidade perto de outras tocas|
+97|Personagens importantes recebem uma segunda chance ao morrer. Esta é a quantidade de PV que esses personagens recebem ao reviver.|
+98|<i>Mudanças na partida aceitas</i>|
+99|<i>Mudanças na partida recusadas</i>|
+100|A unidade está completamente bloqueada e não pode se mover|
+101|Outra toca aparecerá neste espaço|
+102|{0} Alcance mínimo do movimento|
+103|Abaixo do alcance mínimo|
+104|PA|
+105|{0} Dano à distância|
+106|PV de ressurreição com a última chance|
+107|Árvores de tecnologia adicionais serão disponibilizadas à medida que você recrutar mais personagens no QG.|
+108|Começando turno...|
+109|20 PV|
+110|PV completo|
+111|Gaste fichas do QG para liberar novas habilidades, armas e aprimoramentos de atributos dos personagens do QG e das unidades relacionadas.|
+112|Concluído|
+113|Música|
+114|Efeitos sonoros|
+115|Voz|
+116|Som|
+117|Câmera|
+118|Gráficos|
+119|Controles / IU|
+120|Diversos|
+121|Idioma|
+122|Velocidade do zoom|
+123|Velocidade da panorâmica|
+124|Velocidade de rotação|
+125|Resolução|
+126|Mudar resolução?|
+127|A resolução mudou para {0}. Confirmar a mudança?|
+128|Ok|
+129|Confirmar|
+130|Cancelar|
+131|Desfazer|
+132|Desfazendo em {0} segundo|
+133|Desfazendo em {0} segundos|
+134|Tela cheia|
+135|Arma em recarga|
+136|Lembre-se, cada arma tem um alcance ideal e é mais eficaz quando disparada dessa distância.|
+137|Panorâmica na borda da tela|
+138|Inverter eixo y|
+139|Inverter eixo x|
+140|Inverter zoom|
+141|Mostrar legendas durante vídeos|
+142|Mostrar legendas de conversas secundárias|
+143|Proteja o Irmão Aeturo|
+144|Espaços adjacentes livres insuficientes|
+145|Não é possível usar sob a terra|
+146|Não é possível usar sobre a terra|
+147|Pressione <color=#C8914F>P</color> para alternar à próxima unidade disponível que tem pelo menos um <color=#C65C34>ponto de ação</color> a gastar.<br><br>Também é possível usar <color=#C8914F>TAB</color> para alternar entre todas as unidades.|
+148|Sem espaços adjacentes para escapar|
+149|{0} Dano venenoso à distância sofrido|
+150|{0} Dano venenoso corpo a corpo sofrido|
+151|{0} Dano à distância sofrido|
+152|Fora do alcance da habilidade|
+153|A habilidade já está ativa|
+154|{0} Dano corpo a corpo sofrido|
+155|Ativa se a unidade não se moveu durante o turno anterior ou no atual.|
+156|Para centralizar a câmera rapidamente na unidade selecionada, pressione a tecla <color=#C8914F><b>.</b></color>.|
+157|{0} Perfuração de armadura|
+158|Sem alvo ao alcance|
+159|{0} Ímpeto|
+160|Expira em {0} turno|
+161|Expira em {0} turnos|
+162|{0} Armadura à distância|
+163|{0} Armadura corpo a corpo|
+164|Só pode afetar unidades mecânicas|
+165|** unused **|
+166|{0} Dano básico à distância sofrido|
+167|{0} Dano básico corpo a corpo sofrido|
+168|Pode sofrer ataques da artilharia a qualquer distância|
+169|{0} Perfuração de armadura da artilharia contra esta unidade|
+170|{0} Perfuração de armadura básica à distância contra esta unidade|
+171|Marcado|
+172|<b>Fichas do QG</b><br>Você receberá fichas do QG ao concluir missões. Gaste-as na Central de Aprimoramentos do QG para melhorar suas unidades.|
+173|<b>Capacidade de destacamento aprimorada</b><br>Limite de pontos de exército aumentado!<br>Limite de unidades do exército aumentado!|
+174|<b>Capacidade de destacamento aprimorada</b><br>Limite de pontos de exército aumentado!|
+175|<b>Gerenciamento do exército</b><br>Aprimore suas forças bélicas com unidades adicionais na tela de Gerenciamento do exército.|
+176|Adicione unidades para preencher sua força bélica. Envie unidades para a força de reserva quando precisar liberar espaço para novas unidades.|
+177|{0:+#;-#;+0} PV|
+178|{0} {2} Chance de ativação|
+179|O alvo já está com a vitalidade máxima|
+180|Cada unidade contribui para o total de pontos do exército. Armas adicionais, ao serem liberadas, aumentarão o custo de uma unidade ao serem equipadas.|
+181|** unused **|
+182|Só pode afetar unidades orgânicas|
+183|{0} de dano aplicado ao final do turno|
+184|Expira no final do turno|
+185|Envenenado|
+186|Colha a genossemente de irmãos caídos|
+187|Destrua todos os tyranids|
+188|** unused **|
+189|Pressione {0} para fixar a câmera novamente|
+190|** unused **|
+191|** unused **|
+192|A unidade está morta há tempo demais|
+193|Voltar|
+194|Avançar|
+195|Jogar missão|
+196|Gerenciamento do exército|
+197|Missão concluída|
+198|Missão não concluída|
+199|Voltar ao menu principal|
+200|Voltar ao menu principal?|
+201|Quer mesmo voltar ao menu principal? Qualquer progresso não salvo será perdido.|
+202|Dificuldade|
+203|Astartes|
+204|Tenente|
+205|Capitão de Companhia|
+206|Adicionar unidade|
+207|Lista de reserva|
+208|Membros|
+209|PV|
+210|Exército completo|
+211|O exército ativo está completo. Unidades precisarão ser adicionadas à lista de reserva antes de transferir qualquer outra unidade ao exército.|
+212|Inspecionar|
+213|Aprimorar|
+214|Reserva|
+215|{0} Pontos|
+216|Histórico|
+217|Conjunto de armas|
+218|Mudar|
+219|Ranque|
+220|EXP|
+221|Bloqueado|
+222|Um efeito de status impede o movimento|
+223|Um efeito de status impede ataques|
+224|Otimizado|
+225|Nenhuma missão liberada|
+226|Movimento desabilitado|
+227|Ataque desabilitado|
+228|{0} Pontos de ação|
+229|Mostrar lista de unidades|
+230|Menu Principal|
+231|Facção|
+232|Começar escaramuça|
+233|Jogar missão da campanha novamente|
+234|Randomizar|
+235|Começar|
+236|Objetivo|
+237|Mapa|
+238|Jogador|
+239|IA|
+240|Tamanho do exército|
+241|Exterminatus|
+242|<b>Dizime cada um deles.</b><br><br>Destrua as unidades do oponente. A pontuação da partida é calculada proporcionalmente aos pontos de exército da unidade destruída.|
+243|Conquista|
+244|<b>Controle a área do objetivo para dominar o campo de guerra.</b><br><br>Os pontos são concedidos durante a fase de pontuação com base no número de unidades na área:<br><br>• +5 pontos se você controlar ao menos uma unidade na área<br><br>• +5 pontos se você controlar mais unidades na área do que o adversário<br><br>• +5 pontos se o adversário não controlar unidades na área<br><br>O máximo de pontos a marcar em cada turno é 15.|
+245|Comando Estratégico|
+246|<b>Domine pontos de controle no campo de guerra.</b><br><br>Interaja com pontos de controle a fim de dominá-los para sua equipe. Uma unidade adversária pode tomar um ponto de controle indefeso.<br><br>• +5 pontos por ponto de controle dominado<br><br>Os pontos são concedidos na fase de pontuação. O máximo de pontos a marcar em cada turno é 25.|
+247|Área mortal|
+248|Unidades inimigas tentarão chegar a um ponto de extração. Para vencer, elimine ou destrua 50% do valor de pontos do inimigo antes de conseguirem escapar.|
+249|Extração|
+250|Há um ponto de extração do outro lado do mapa. Para vencer, faça com que X pontos de unidades cheguem até ele.|
+251|Genossemente|
+252|Determinado número de Blood Angels caídos estão no mapa (usa os Pontos de captura). Um Sacerdote Sanguíneo precisa colhê-los para vencer. É necessário incluir um Sacerdote Sanguíneo no exército do jogador.|
+253|Relíquia|
+254|Uma relíquia sagrada é colocada no mapa. Recupere-a e chegue a um ponto de extração para vencer. Se a unidade que carrega a relíquia é eliminada, o item cai. Se todas as unidades forem eliminadas, você perde.|
+255|Devorar|
+256|Ganhe pontos de vitória a cada inimigo orgânico eliminado. Conquiste determinado número de pontos de vitória para vencer. Se todas as unidades forem eliminadas, você perde.|
+257|Enxame|
+258|Para vencer, posicione uma unidade em todos os pontos de captura do mapa.|
+259|Nenhum exército configurado|
+260|Nenhuma facção tem um exército com unidades. Use o botão Gerenciamento do exército para adicionar unidades a um exército.|
+261|Exército não configurado|
+262|A facção do jogador selecionado não tem unidades no exército. Use o botão Gerenciamento do exército para adicionar unidades a um exército.|
+263|Pelo menos uma unidade {0} é necessária para este objetivo|
+264|{1}% de chance de causar {0} de dano a si mesmo durante um ataque|
+265|Alcance|
+266|{0} por espaço|
+267|Perda de precisão|
+268|Dano básico|
+269|PM|
+270|{0} PM|
+271|PA {0} x Armadura {1}|
+272|{0}% de eficácia|
+273|Bônus da unidade|
+274|Sempre acerta|
+275|Já usado|
+276|Arma|
+277|Perfuração de armadura|
+278|Ignora penalidades de movimento do terreno|
+279|Surpreenda-me|
+280|Não é possível usar esta arma corpo a corpo|
+281|{0} EXP|
+282|{0} PTS|
+283|Exército|
+284|{0}/{1} PTS|
+285|Limite de pontos excedido|
+286|O número de pontos de unidade usados excede o limite desta missão.|
+287|Pré-requisitos não atendidos|
+288|Certas unidades precisam ser incluídas no seu exército para jogar esta missão:|
+289|Salvar jogo|
+290|Salvar|
+291|Carregar|
+292|Só é possível salvar durante o turno do jogador|
+293|Não é possível salvar durante a fase de escolha do equipamento inicial|
+294|Não é possível salvar durante um vídeo|
+295|Não é possível salvar enquanto unidades estão em movimento|
+296|Salvo manualmente|
+297|Salvo automaticamente|
+298|Na visualização da missão na campanha|
+299|Na batalha na campanha|
+300|Na escaramuça|
+301|Vazio|
+302|Filtros|
+303|Objetivos|
+304|Ímpeto|
+305|Evasão|
+306|Estabilidade à distância|
+307|Precisão corpo a corpo|
+308|Máx.|
+309|Ranque {0} necessário|
+310|Ranque {0}|
+311|EXP disponível: {0}|
+312|EXP total recebida: {0}|
+313|EXP alocada: {0}|
+314|Nível {0}|
+315|Arquivo {0}|
+316|Nenhum|
+317|Atributos|
+318|Armas|
+319|Habilidades|
+320|Redefinir|
+321|Redefinir ranques de {0}?|
+322|Quer mesmo redefinir os ranques de {0}? Isso removerá {1}% ({2}EXP) da EXP total recebida pela unidade|
+323|Reconstruindo coesão|
+324|Nome do arquivo|
+325|Que nome você quer dar ao arquivo em que o jogo é salvo?|
+326|Esta unidade está ocupada e não pode receber comandos|
+327|Restaurar|
+328|{0} Turnos|
+329|{0} Turno|
+330|{0} Estabilidade à distância|
+331|{0} PV máximo|
+332|{0} PV atual|
+333|{0} Ataques corpo a corpo adicionais|
+334|{0} Chance de ativação|
+335|{0} Ataques à distância adicionais|
+336|Não é possível afetar espaços onde combate corpo a corpo está ocorrendo|
+337|Alvo alto demais|
+338|Alvo baixo demais|
+339|Erro|
+340|Avançando|
+341|Zona de Radiação Mortis|
+342|Novo|
+343|Excluir exército|
+344|Excluir|
+345|Selecionar facção|
+346|Selecionar unidade|
+347|Excluir unidade?|
+348|Quer mesmo excluir esta unidade "{0}"?|
+349|Renomear exército|
+350|Escolha um novo nome para o exército|
+351|Excluir exército?|
+352|Quer mesmo excluir este exército "{0}"?|
+353|Pontos|
+354|Não é possível excluir o exército|
+355|O exército atual é o último disponível para a facção "{0}", então não é possível exclui-lo.|
+356|Novo perfil|
+357|Escolha um nome para o novo perfil|
+358|O perfil já existe|
+359|Um perfil com este nome já existe.|
+360|Perfil|
+361|Exército|
+362|Acesso Slitherine|
+363|Insira seu nome de usuário da Slitherine e a senha abaixo para acessar|
+364|Nome de usuário|
+365|Senha|
+366|Acessar|
+367|Senha ou nome de usuário incorreto|
+368|Conectando...|
+369|Criar partida|
+370|Criar|
+371|Sua facção|
+372|Nome da partida|
+373|Tempo por turno|
+374|Partida de {0} - {1}|
+375|Entrar|
+376|Entrando...|
+377|Protegido por senha|
+378|Facção do desafiante|
+379|Desafiante|
+380|Senha da partida|
+381|Insira a senha desta partida.|
+382|Não foi possível entrar na partida|
+383|Senha incorreta da partida.|
+384|Partidas abertas|
+385|Partidas ativas|
+386|Sair|
+387|Continuar|
+388|Sair da partida?|
+389|Quer mesmo sair da partida?|
+390|Saindo...|
+391|Erro ao sair da partida|
+392|Data de expiração|
+393|Turno|
+394|Seu turno|
+395|Jogador 1|
+396|Jogador 2|
+397|Criando partida...|
+398|Erro ao criar a partida|
+399|Exércitos vazios|
+400|Algumas facções não têm qualquer exército com unidades. Será necessário adicionar unidades a pelo menos um exército para cada uma das seguintes facções:|
+401|Você criou esta partida. Não é possível enfrentar você mesmo em uma partida multijogador.|
+402|Filtros de busca|
+403|Facções desafiantes|
+404|Partidas públicas|
+405|Partidas particulares|
+406|Não é possível salvar no modo multijogador|
+407|Escolha seu equipamento inicial|
+408|Continuando partida...|
+409|Enviando turno...|
+410|O outro jogador saiu|
+411|Vitória do jogador 1|
+412|Vitória do jogador 2|
+413|Aguardando ações de outras unidades|
+414|Armas iniciais|
+415|Já se movimentou neste turno.|
+416|O caminho não é direto o suficiente para uma investida. O caminho não pode passar por unidades ou paredes e precisa ser em linha relativamente reta.|
+417|Subjugado|
+418|Pontos de ação|
+419|Pontos de movimento|
+420|Armadura|
+421|Em combate|
+422|{0} Precisão à distância para armas que não sejam pistolas|
+423|Ataque direto traseiro|
+424|Ataque flanqueado traseiro|
+425|Recuar|
+426|Nenhum ponto de ação restante|
+427|O espaço para recuar está bloqueado|
+428|Nenhum ponto de movimento restante|
+429|Usa todos os pontos de movimento|
+430|Atributos ganhos ao recuar|
+431|Chance de crítico|
+432|{0} Chance de crítico|
+433|{0} Chance de crítico por Ímpeto|
+434|De raspão|
+435|CRÍTICO!|
+436|Todas as armas causam dano em área|
+437|{0} Perfuração de armadura à distância|
+438|{0} Perfuração de armadura corpo a corpo|
+439|Permite voar|
+440| + de Turnos de Expiração por {0}|
+441|Não é possível afetar esta facção|
+442|Possibilita reações a ataques corpo a corpo e investidas de todos os ângulos.|
+443|{0} Vitalidade por turno|
+444|Parede|
+445|Modo de controle|
+446|Teclado e mouse|
+447|Controle|
+448|Mudar o modo de controle?|
+449|O modo de controle mudou para {0}. Confirmar a mudança?|
+450|PTS|
+451|Reservado|
+452|Destacado|
+453|Hot Seat|
+454|Assíncrono|
+455|Central de Aprimoramento do QG|
+456|Habilidade|
+457|Habilidade de comando|
+458|Atributo|
+459|Fichas recebidas|
+460|Missão concluída|
+461|Objetivo bônus|
+462|{0} PV por modelo|
+463|{0} Alcance de atenção|
+464|{0} Alcance do cone de atenção|
+465|{0} Ângulo do cone de atenção|
+466|Aprimorar|
+467|Avançar|
+468|Adiciona o status {0} quando este status expira|
+469|Liberado!|
+470|Aprimoramentos de Comando do QG|
+471|Posicionamento das unidades|
+472|Aceitar|
+473|Habilidades de comando|
+474|PC|
+475|Pontos de comando insuficientes|
+476|Não é possível afetar uma unidade inimiga com esta habilidade|
+477|As habilidades de comando não são permitidas neste mapa|
+478|Navegação|
+479|Sair do grupo|
+480|Entrar no grupo|
+481|Lista de unidades|
+482|Selecionar unidade|
+483|Fechar lista|
+484|Mapa tático|
+485|Fechar mapa tático|
+486|Nome da unidade|
+487|Inimigos eliminados|
+488|Número de série inválido|
+489|Número de série|
+490|Sair|
+491|Ocultar estandartes das unidades|
+492|Salvar captura de tela|
+493|Ocultar IU|
+494|Modo de rotação|
+495|Campo de visão|
+496|Inclinação da câmera|
+497|Distância do foco|
+498|Profundidade de campo|
+499|Abertura|
+500|Exposição|
+501|Saturação|
+502|Contraste|
+503|Temperatura|
+504|Modo de fotografia - Câmera|
+505|Margem|
+506|Emblema|
+507|Posição do emblema|
+508|Modo de fotografia - Foco|
+509|Modo de fotografia - Cor|
+510|Modo de fotografia - Moldura|
+511|Redefinir para o padrão|
+512|Vinheta|
+513|Pressione {0} para mostrar a IU|
+514|Superior esquerdo|
+515|Superior direito|
+516|Inferior esquerdo|
+517|Inferior direito|
+518|Logotipo do Battlesector|
+519|Logotipo do Warhammer 40K|
+520|Barras cinemáticas|
+521|Personalizado|
+522|Vívido frio|
+523|Vívido quente|
+524|P&B clássico|
+525|Noir|
+526|Órbita|
+527|Mergulho|
+528|Vídeos|
+529|Capturas de tela|
+530|Navegador de mídia|
+531|Excluir captura de tela?|
+532|Quer mesmo excluir esta captura de tela?|
+533|{0}{1}{2}{3} Câmera panorâmica / {4} Alvo do foco / {5} Girar / {6} Salvar captura / {7} Ocultar IU / {8} Sair / {9} Elevar câmera / {10} Abaixar câmera|
+534|Câmera panorâmica|
+535|Alvo do foco|
+536|Girar|
+537|para mostrar a IU|
+538|Pressione {0} para ocultar|
+539|para ocultar|
+540|Modo de fotografia|
+541|Ao vivo|
+542|Aguardando outro jogador...|
+543|Pronto|
+544|(Aguardando jogador)|
+545|Anfitrião saiu|
+546|O anfitrião saiu da partida|
+547|Jogador saiu|
+548|Um jogador saiu da partida|
+549|Desativar som|
+550|Saguão|
+551|Batalha|
+552|Sem batalha ativa|
+553|Adicionar|
+554|Remover|
+555|Desconectar|
+556|Você se desconectou. Tentado reconectar... {0} segundos restantes.|
+557|Outro jogador se desconectou. Tentado reconectar... {0} segundos restantes.|
+558|Você se desconectou da partida atual|
+559|Jogando com <color=#{2}>{0}</color> <color=#{3}>{1}</color>|
+560|Tempo restante: {0}|
+561|On-line|
+562|Off-line|
+563|∞|
+564|Atualizar|
+565|Habilidade em recarga|
+566|Jogadores|
+567|Mostrar informações inimigas detalhadas|
+568|Selecionar|
+569|Selecionar comando|
+570|Pontos de comando disponíveis: {0}|
+571|Sair sem confirmar as mudanças?|
+572|Quer mesmo sair sem confirmar os aprimoramentos? Todas as mudanças não confirmadas serão redefinidas.|
+573|Comprar|
+574|Aprimoramentos do QG|
+575|Reviver {0}|
+576|Unidades Ativas|
+577|Reservas|
+578|Armas|
+579|Habilidades|
+580|{0} de {1}|
+581|Adicionar unidade ao exército|
+582|Transferir unidade para a reserva|
+583|Transferir unidade para o exército|
+584|Excluir unidade|
+585|Visão geral|
+586|Inspetor do exército|
+587|Criar exército|
+588|Excluir perfil?|
+589|Quer mesmo excluir o perfil atual?|
+590|Não é possível afetar uma unidade eliminada enquanto outra unidade estiver no mesmo espaço|
+591|Desfere um ataque à distância contra o inimigo:|
+592|Desativar bate-papo|
+593|Convidar amigo|
+594|Lançar|
+595|Bate-papo ao vivo|
+596|Jogos disponíveis|
+597|Jogos em andamento|
+598|Saguão do multijogador ao vivo|
+599|Saguão Multijogador Assíncrono|
+600|Nome|
+601|Vaga livre|
+602|Dados da partida|
+603|Dados da partida selecionada|
+604|Nenhuma partida encontrada|
+605|Meu turno|
+606|Turno inimigo|
+607|Campanha|
+608|A Era do Alvorecer Carmesim|
+609|Novas unidades disponíveis|
+610|Opções da campanha|
+611|Configurações de dificuldade|
+612|Reforços|
+613|Unidades inimigas aprimoradas|
+614|Custos de aprimoramento de armas|
+615|Recompensas de fichas de QG reduzidas|
+616|Limites de pontos de exército reduzidos|
+617|Ímpeto inimigo aumentado|
+618|Ganhos de PC e Ímpeto reduzidos|
+619|Dificuldade da IA inimiga|
+620|Baixa|
+621|Média|
+622|Alta|
+623|Padrão|
+624|Determina o número de unidades de reforço que o inimigo recebe.|
+625|Aumenta os atributos das unidades inimigas para dificultar as batalhas.|
+626|Influencia a quantidade de Ímpeto que as unidades inimigas recebem durante o combate.|
+627|Muda o comportamento da IA inimiga, o que influencia a dificuldade.|
+628|Influencia o valor de pontos que um aprimoramento de arma de uma unidade adiciona à pontuação do exército.|
+629|Influencia a quantidade de fichas do QG recebidas após uma missão.|
+630|Influencia a quantidade de pontos que podem ser levados a cada missão.|
+631|Influencia a quantidade de Ímpeto que suas unidades recebem. Também influencia a quantidade de pontos de comando que você recebe.|
+632|Mova a câmera com <color=#C8914F><b>WASD</color></b> ou as teclas de direção ou clique e arraste o botão esquerdo do mouse.|
+633|Para girar a câmera, use o botão do meio do mouse ou as teclas <color=#C8914F><b>Q</b></color> e <color=#C8914F><b>E</b></color> ou segure ALT e mova o mouse.|
+634|Selecione a unidade com o botão <color=#C8914F>esquerdo</color> do mouse.|
+635|<b>MOVIMENTO</b><br><br>Mova a unidade até o <color=#C8914F>objetivo</color>. Para isso, clique com o botão direito no espaço. O custo de <color=#6380AD>pontos de movimento</color> é exibido ao lado do cursor.|
+636|DESTRUA TODOS OS TYRANIDS|
+637|***NOT IN USE***|
+638|<b>INTERAÇÃO</b><br><br>É possível interagir com painéis de controle e com objetivos de um espaço adjacente. Use o botão <color=#C8914F>Interagir</color> ou a tecla de atalho <color=#C8914F><b>I</b></color> para abrir o portão.|
+639|Mova (Z) a unidade Intercessora até o espaço destacado.|
+640|<b>ALCANCE DA ATENÇÃO</b><br><br>O <color=#C8914F>alcance da atenção</color> de uma unidade é indicado pela <color=#37FCFA>linha do auspex</color>. As unidades inimigas fora de alcance estarão escondidas.|
+641|Use a opção “Virar-se” (<b><color=#C8914F>G</color></b>) da barra de comando e selecione o espaço indicado ou clique com o botão direito na unidade e arraste o mouse na direção para que você quer que ela se vire.|
+642|<b>ATAQUES À DISTÂNCIA</b><br><br>Dois fatores que influenciam o resultado de um ataque à distância são a <color=#C8914F>linha de visão</color> e o <color=#C8914F>alcance ótimo</color> da arma.|
+643|Você não tem uma linha de visão clara até o inimigo. Mova-se até o espaço do objetivo com o <color=#C8914F>botão direito</color> para alcançar uma posição melhor de onde atacar.|
+644|Esta é uma posição ótima para que os Intercessores ataquem os hormagaunts enfraquecidos. Clique com o <color=#C8914F>botão direito</color> sobre a unidade inimiga para atacá-la.|
+645|<b>UNIDADE SELECIONADA</b><br><br>O painel de unidade selecionada oferece informações fundamentais sobre a unidade, que incluem a <color=#8CBA61>vitalidade</color>, o <color=#45D8FF>Ímpeto</color> e os <color=#6380AD>pontos de movimento</color> e os <color=#C65C34>pontos de ação</color> disponíveis.|
+646|***NOT IN USE***|
+647|<b>VIGÍLIA</b><br><br>Não desperdice seus ataques em covardes que se escondem atrás de cobertura! Use a <color=#C8914F>Vigília</color> para atacar o primeiro inimigo que entrar na área de reação.|
+648|Você usou todos os pontos de ação e de movimento.<br>É hora de terminar o turno.|
+649|Que o Imperador tenha piedade da sua alma.|
+650|Ajuste o zoom da câmera com o botão do meio do mouse ou com as teclas <color=#C8914F><b>R</b></color> e <color=#C8914F><b>F</b></color>.|
+651|Mova os Intercessores até o painel de controle.|
+652|Leve os Intercessores de volta até a área de controle inimiga marcada e use o comando Recuar.|
+653|<b>INFORMAÇÃO DE ATAQUE</b><br><br>Clique com o <color=#C8914F>botão esquerdo</color> do mouse sobre o inimigo para ver informações detalhadas de ataque.|
+654|<b>RECUAR</b><br><br>A unidade Intercessora foi atacada e está <color=#C8914F>Em combate</color> contra os hormagaunts.|
+655|***NOT IN USE***|
+656|***NOT IN USE***|
+657|Use a habilidade <color=#C8914F>granada de fragmentação</color> para eliminar a ameaça dos hormagaunts.|
+658|Selecione outra unidade Intercessora (<color=#C8914F>clique com o botão esquerdo</color>) e a mova até o espaço do objetivo.|
+659|Pressione <color=#C8914F><b>O</b></color> e use o botão direito do mouse para definir uma área de <color=#C8914F>Vigília</color> no alcance ótimo do Rifle de Ferrolho. A unidade disparará contra o primeiro inimigo que entrar nessa área.|
+660|Use o comando Recuar (<color=#C8914F><b>U</b></color>) e atinja os hormagaunts. Os Intercessores receberão um grande bônus defensivo ao se mover para o espaço oposto.|
+661|***NOT IN USE***|
+662|<b>LISTA DE UNIDADES</b><br><br>Use a lista de unidades para encontrar e selecionar unidades de diferentes papeis facilmente.<br><br>Navegue até o papel “QG” e selecione o Sacerdote Sanguíneo.|
+663|<b>HABILIDADES DE COMANDO DO QG</b><br><br>A unidade de comando do QG das suas forças tem acesso a Habilidades de Comando do QG, que são únicas para cada facção. Para usá-las, é necessário gastar <color=#C8914F>pontos de comando</color>, recebidos durante a batalha.|
+664|Clique sobre o indicador de Habilidades de Comando (<color=#C8914F><b>C</b></color>), selecione a habilidade Bombardeio com Canhão de Ataque para matar os hormagaunts.|
+665|Você tem liberdade para concluir a batalha como preferir.<br><br>Pela glória do Imperador!|
+666|<b>DICA:</b> A habilidade Bombardeio com Canhão de Ataque atinge TODAS as unidades em quatro espaços consecutivos de uma linha. Selecione o primeiro espaço e então selecione o segundo alvo a três espaços de distância. Tente atingir tantos gaunts quanto conseguir no caminho.|
+667|***NOT IN USE***|
+668|Mova a unidade Intercessora restante de modo a cobrir o corredor.|
+669|Aprimorado|
+670|Esta unidade está avançando. Escolha aprimorar uma habilidade ou ganhar o status “Avançando” no próximo turno (+1 PA)|
+671|Esta unidade está avançando. Ela ganhará +1 PA no próximo turno.|
+672|Membros da unidade|
+673|Unidades com PA|
+674|Pontos de comando recebidos|
+675|Ataques corpo a corpo|
+676|Ataques à distância|
+677|Eliminações nesta batalha e total de eliminações na carreira|
+678|Eliminações corpo a corpo|
+679|Precisão corpo a corpo|
+680|Eliminações à distância|
+681|Precisão à distância|
+682|Usos nesta batalha e total de usos na carreira|
+683|Pressione {0} para continuar|
+684|**Unset**|
+685|Seleção atual de idioma|
+686|Randomiza todas as opções de batalha|
+687|Randomiza todas as opções de batalha e começa a batalha|
+688|Criar um perfil com o nome:|
+689|O número de espaços que esta unidade consegue se mover. Avançar espaços adicionais custa pontos de ação.|
+690|Ativa se metade dos pontos de movimento da unidade foram gastos no turno anterior ou atual.|
+691|O número de ações que esta unidade pode realizar. Algumas habilidades poderosas custam mais de 1 PA.|
+692|Reduz o dano sofrido de ataques inimigos. A eficácia da Armadura diminui pela capacidade de perfuração de uma arma.|
+693|Quando o Ímpeto chega a 100, a unidade Avançará.|
+694|Pontos de comando são recebidos pela unidade de comando do QG do exército sempre que uma unidade aliada ganhar Ímpeto, for eliminada ou concluir um objetivo.|
+695|Esta é a unidade de comando do QG do exército. Ela receberá pontos de comando durante a batalha, que poderão ser usados para ativar Habilidades de Comando do QG.|
+696|Ocultar/mostrar a lista de unidades.|
+697|Alternar para a próxima unidade não utilizada.|
+698|Pontos de comando|
+699|Comando do QG|
+700|Ocultar lista de unidades|
+701|Não há habilidades para Fortalecer|
+702|Facção incorreta selecionada|
+703|Selecione um exército {0} para jogar esta missão da campanha|
+704|Unidades de pré-requisito necessárias|
+705|As seguintes unidades de pré-requisito serão adicionadas ao seu exército:|
+706|<i>São os Defensores da Humanidade e não conhecem o medo.</i> <br><br>A experiência padrão do Battlesector. Você precisará empregar tática e força para superar os desafios à frente.|
+707|<i>Na escuridão sombria do futuro distante, a guerra é tudo que existe.</i> <br><br>As missões serão mais difíceis e concederão menos recompensas. Um desafio adicional sem ajustes ao sistema de combate.|
+708|<i>Os gritos dos inocentes e os apelos dos justos ressoam contra a risada cruel dos Deuses Sombrios.</i> <br><br>Os inimigos serão mais resistentes e causarão mais dano, as missões serão inclementes e todas as probabilidades estão contra você. Recomendado apenas para jogadores com experiência no Battlesector.|
+709|Participe do nosso grupo no Discord|
+710|{0} entrou no saguão|
+711|{0} saiu do saguão|
+712|{0} entrou na partida|
+713|Usuário|
+714|Ocultar senha|
+715|Motion blur ativado|
+716|VSync ativado|
+717|Qualidade|
+718|Colher|
+719|Pressione {0} para manter visível|
+720|Mostrar informações detalhadas sobre a batalha durante o turno inimigo|
+721|Pressione {0} para ocultar|
+722|Efeitos de partículas da IU|
+723|Área de controle|
+724|Ataque de reação com pistola|
+725|{0} para selecionar alvo /|
+726|{0} sobre o alvo para ver informações detalhadas /|
+727|{0} ou {1} sobre um espaço vazio para cancelar|
+728|{0} para selecionar aliado /|
+729|{0} para selecionar inimigo /|
+730|{0} para selecionar espaço /|
+731|Chance de acertar|
+732|<i>Em nosso Ímpeto mais sombrio, eles são um farol de esperança.</i><br><br>Para jogadores sem experiência em jogos de estratégia ou que queiram aproveitar a história da campanha mais facilmente.|
+733|Iniciado|
+734|Vigília|
+735|BARREIRA DE SEGURANÇA ULTRAPASSADA|
+736|HOSTIL DETECTADO|
+737|HOSTIL ELIMINADO|
+738|REFORÇO DE UNIDADE DO QG|
+739|REFORÇOS DE INFANTARIA|
+740|Velocidade normal: {0}<br>Acelerar: {1}<br>Pular: {2}|
+741|Ótimo|
+742|Pular frame: {0}|
+743|Selecionar/desselecionar unidade|
+744|Executar ação|
+745|Próxima unidade|
+746|Mover câmera para a esquerda|
+747|Mover câmera para a direita|
+748|Mover câmera para a frente|
+749|Mover câmera para trás|
+750|Reconfigurar controles|
+751|Erro de multijogador|
+752|A versão {0} do cliente está desatualizada. Atualize o jogo para se conectar ao multijogador.|
+753|Reconfigurar|
+754|Pressione uma tecla para reconfigurar '{0}'<br>Reversão em {1} segundos|
+755|Pressione um botão do mouse para reconfigurar '{0}'<br>Reversão em {1} segundos|
+756|Reverter controles?|
+757|Quer mesmo reverter todas as configurações de controle às definições padrão?|
+758|{0} e {1} têm a mesma configuração de tecla|
+759|Girar a câmera para a esquerda|
+760|Girar a câmera para a direita|
+761|Aproximar zoom|
+762|Afastar zoom|
+763|Acessar modo de movimentação|
+764|Slot de arma/habilidade 1|
+765|Slot de arma/habilidade 2|
+766|Slot de arma/habilidade 3|
+767|Slot de habilidade 4|
+768|Slot de habilidade 5|
+769|Slot de habilidade 6|
+770|Slot de habilidade 7|
+771|Entrar/sair do modo fotografia|
+772|Mostrar/ocultar lista de unidades|
+773|Recompensas|
+774|Lista do exército|
+775|Seleção do mapa|
+776|Tipo de terreno|
+777|Tamanho do mapa|
+778|Ruínas|
+779|Colônia|
+780|Factorum|
+781|Unidades de elite|
+782|Características da facção|
+783|Tradição|
+784|<b>Tutorial avançado de combate</b><br>Este tutorial ensinará você a usar investidas, contra-ataques corpo a corpo e <color=#45D8FF>Ímpeto</color>.<br><br>Selecione a unidade hormagaunt indicada.|
+785|<b>Investida</b><br>Para usar investidas, é necessário um caminho direto até um alvo distante. Unidades em investida recebem +1 <color=#6380AD>ponto de movimento</color> e não sofrem contra-ataques corpo a corpo.<br><br>Invista contra estes Marines de Ataque com o <color=#C8914F>botão direito</color> do mouse.|
+786|Leve o hormagaunt de volta ao espaço indicado.|
+787|<b>Ataque de reação com pistola</b><br>As <color=#C8914F>pistolas</color> têm um ataque reativo livre contra investidas. Assim como a Vigília, se disparos suficientes acertarem o alvo e causarem dano, a unidade perderá <color=#6380AD>pontos de movimento</color>.<br><br>Isso pode fazer com que a unidade não alcance o alvo pretendido!|
+788|Avance estes hormagaunts com o <color=#C65C34>ponto de ação</color> restante e se aproxime do inimigo.<br><br>Isso evitará que os Marines de Ataque usem a investida no próximo turno.|
+789|A outra unidade hormagaunt está em uma posição muito mais favorável para investir contra o alvo.|
+790|Ataques corpo a corpo e investidas contra a parte traseira de uma unidade têm <color=#C8914F>precisão</color>, <color=#C8914F>perfuração de armadura</color> e <color=#C8914F>dano</color> adicional.|
+791|<b>Contra-ataques corpo a corpo</b><br><br>Uma unidade sobrevivente contra-atacará qualquer golpe corpo a corpo inimigo que se origine de suas <color=#C8914F>áreas de controle</color>.|
+792|Pular|
+793|<b>Mapa superior</b><br><br>Um <color=#9E6EA4>líder sináptico</color> entrou no campo de batalha!<br><br>Pressione <color=#C8914F>M</color> para exibir o mapa superior e planejar suas próximas ações.|
+794|Pressione <color=#C8914F>M</color> novamente para voltar à batalha.|
+795|Ainda que este Guerreiros não consigam participar do combate direto, podem se aproximar o bastante para mudar os rumos da batalha.|
+796|<b>Ímpeto</b><br>As unidades recebem <color=#45D8FF>Ímpeto</color> ao eliminar um inimigo. Dependendo de sua <color=#C8914F>característica da facção</color>, elas recebem Ímpeto adicional dependendo do tipo de arma, da distância até o inimigo ou das diferentes ações realizadas.|
+797|A característica <color=#9E6EA4>fome eterna</color> dos tyranids concede um bônus de Ímpeto maior se um inimigo for eliminado com uma arma corpo a corpo e um bônus menor se for eliminado com uma arma à distância.|
+798|Esta unidade dos hormagaunts está em uma posição excelente para eliminar os Marines de Assalto, mas com um pouco de ajuda também pode chegar a 100 de Ímpeto e começar a <color=#C65C34>Avançar</color>.|
+799|Selecione a unidade indicada dos hormagaunts.|
+800|Primeiro, vamos aproximar os Guerreiros.|
+801|<b>Líderes sinápticos</b><br><br>Os <color=#9E6EA4>líderes sinápticos</color> de cada facção tyranid são únicos. A aura que irradiam aprimora as habilidades de combate de criaturas inferiores ao seu redor e aumentam o Ímpeto que elas recebem.|
+802|Mova esta unidade Guerreira até mais perto dos hormagaunts.|
+803|Entrar em Vigília e confirmar|
+804|Enquanto uma unidade estiver <color=#9E6EA4>conectada</color> a um líder sináptico, ela receberá o dobro de Ímpeto.|
+805|É possível ver todos os efeitos de status de uma unidade nas dicas da parte superior da Barra de Comando.|
+806|Elimine os Marines de Ataque para <color=#C65C34>Avançar</color> esta unidade dos hormagaunts.|
+807|Esta unidade está <color=#C65C34>Avançando</color>. Enquanto seu Ímpeto se mantiver em 100, ela receberá +1 <color=#6380AD>ponto de movimento</color>, além de todos os bônus de sua característica da facção.<br><br>Ao Avançar, uma unidade também tem acesso a duas opções adicionais sobre a Barra de Comando: <color=#C8914F>Fortalecer</color> e <color=#C8914F>Avançar</color>.|
+808|<b>Fortalecer</b><br><br>Fortalecer gasta 100 de Ímpeto para conceder um bônus único poderoso a uma das habilidades da unidade.|
+809|<b>Avançar</b><br><br>Avançar gastará 100 de Ímpeto para conceder imediatamente à unidade +1 <color=#C65C34>ponto de ação</color> para gastar neste turno.|
+810|**Not in use**|
+811|Você tem liberdade para concluir a batalha como preferir.<br><br>A Consciência Coletiva não espera...|
+812|Gaste Ímpeto para <color=#C8914F>Fortalecer</color> a habilidade “Salto” do hormagaunt ou para <color=#C8914F>Avançar</color> e desferir um ataque adicional neste turno.|
+813|Movimento e comandos|
+814|Combate avançado|
+815|NV. {0}|
+816|Venenoso|
+817|Ácido|
+818|Básico|
+819|Psíquico|
+820|Clique para ver/mudar as armas|
+821|Crie uma conta da Slitherine|
+822|Insira os detalhes da nova conta abaixo. Seu nome de usuário ficará visível para outros jogadores.|
+823|E-mail|
+824|Registrar|
+825|Já existe uma conta com este e-mail.|
+826|Já existe uma conta com este nome de usuário.|
+827|Mudar conta|
+828|Contas da Slitherine:<br><br> • Podem participar de torneios.<br> • Receberão mensagens com atualizações de partidas multijogador disputadas por e-mail.|
+829|Esta conta:<br><br> • Não pode participar de torneios.<br> • Não receberá mensagens com atualizações de partidas multijogador disputadas por e-mail.|
+830|Seleção de conta|
+831|As senhas precisam ter pelo menos 3 caracteres e só podem incluir números e letras (sem espaços ou caracteres especiais).|
+832|Munição|
+833|Recarga|
+834|Procura uma partida? Entre no nosso servidor do Discord|
+835|Tutorial não iniciado|
+836|Alguns tutoriais ainda não foram concluídos. Quer jogar o próximo tutorial antes de continuar?|
+837|Sim|
+838|Não|
+839|Conclua a batalha como julgar mais adequado. Pelo Imperador!|
+840|<b>Tutorial de treinamento de armas</b><br>Este tutorial ensinará você a usar de forma efetiva algumas das armas disponíveis às unidades Space Marine.<br><br>Selecione a unidade Marine de Ataque indicada.|
+841|Estes Marines de Ataque estão equipados com Lança-chamas de Mão, que causam bastante dano a todas as unidades em um espaço. Mova-se até o espaço adjacente a estes termagants.|
+842|Agora, use o Lança-chamas de Mão contra os termagants.|
+843|Excelente! Derrote os hormagaunts com o Predador Baal. Selecione o Predador Baal.|
+844|O Canhão de Ataque Duplo tem uma alta cadência de tiro, que é eficaz contra enxames. Mova-se até o espaço indicado, que corresponde ao alcance ideal até o alvo.|
+845|Agora, use o Canhão de Ataque Duplo contra os hormagaunts|
+846|Um Tyrannofex está a caminho! Estes brutamontes têm uma carapaça resistente e difícil de perfurar. Selecione o Predador Baal.|
+847|Hellblasters contam com <color=#C8914F>Incineradores de Plasma</color>, que têm alta capacidade de perfuração e causam muito dano, ainda que com baixa cadência de tiro. Mova os Hellblasters ao espaço indicado, que corresponde ao alcance ideal do Incinerador de Plasma|
+848|Agora, dispare contra o Tyrannofex.|
+849|O Dreadnought Furioso é equipado com o Punho Furioso, que é bastante eficaz contra unidades grandes e com um único modelo. Selecione o Dreadnought Furioso e mova-o ao alcance de um ataque corpo a corpo contra o Tyrannofex.|
+850|Render-se|
+851|Render-se?|
+852|Tem certeza de que quer se render?|
+853|Rendendo-se...|
+854|Mova-se até o espaço indicado e ataque com o Rifle Tempestuoso|
+855|Observe que a carapaça do Tyrannofex <color=#C8914F>Bloqueou</color> o Rifle Tempestuoso. Precisaremos de uma arma com maior capacidade de perfuração. Selecione os Hellblasters.|
+856|Agora, ataque o Tyrannofex com o Punho Furioso|
+857|Armas e Armadura|
+858|Você usou todos os Pontos de ação. Hora de terminar seu turno.|
+859|**Not in use**|
+860|**Not in use**|
+861|Rendição do oponente|
+862|O oponente se rendeu|
+863|Partidas assíncronas atualizadas.|
+864|Atualização do Desafio|
+865|English|
+866|Deutsch|
+867|Français|
+868|Español|
+869|Русский|
+870|中国人|
+871|Polski|
+872|Português|
+873|한국어|
+874|Removido após se mover uma vez|
+875|Fortalecido|
+876|Fortalecer|
+877|Capture suas conquistas e seus momentos heroicos no campo de batalha com o Modo de fotografia. Pressione a tecla Backspace a qualquer momento para pausar o jogo e acessar o Modo de fotografia.|
+878|Aguardando a conclusão de outras ações|
+879|Histórico de Campanha|
+880|Todas as armas causam dano no espaço|
+881|Área|
+882|Dano em área|
+883|Usa {0} PM|
+884|Imune a Vigília|
+885|Imune a ataques de reação com pistolas|
+886|Imune a áreas de controle corpo a corpo|
+887|Imune a áreas de controle com pistolas|
+888|Ataque de recuo|
+889|Por enquanto, poupe Ímpeto e conclua o turno. Você terá a oportunidade de usar esse avanço de poder no próximo turno.|
+890|Gerar automaticamente|
+891|Limite de turnos|
+892|Meta de pontos|
+893|x|
+894|Você|
+895|Equipamento Inicial|
+896|Resultados|
+897|Desempate - Mais pontos das unidades vivas: {0}|
+898|Desempate - Menor total de pontos de exército: {0}|
+899|Desempate - Maior média de precisão: {0}|
+900|Empate|
+901|Meta|
+902|Selecionar objetivo|
+903|<b>Conquista</b><br><br>Controle a área definida como objetivo|
+904|<b>Comando Estratégico</b><br><br>Domine os pontos de controle|
+905|Ressincronização|
+906|Unidade eliminada|
+907|Unidade na área de controle|
+908|Mais unidades na área de controle do que o oponente|
+909|Oponente sem unidades na área de controle|
+910|Pontos de comando capturados|
+911|Selecione outro mapa para usar este objetivo|
+912|O exército escolhido para esta IA é maior do que o tamanho do exército da IA.|
+913|O objetivo atual demanda unidades específicas no exército|
+914|Unidades fornecem cobertura|
+915|Use {0} para mover a câmera.|
+916|Use {0} para girar a câmera.|
+917|Use {0} para controlar o zoom da câmera.|
+918|Para selecionar os Intercessores, centralize o retículo sobre a unidade e pressione {0}.|
+919|<b>MOVIMENTO</b><br><br>Mova a unidade até o <color=#C8914F>objetivo</color>. Para isso, pressione {0} sobre o espaço. O custo de <color=#6380AD>pontos de movimento</color> é exibido ao lado do cursor.|
+920|<b>INTERAÇÃO</b><br><br>Unidades em um espaço adjacente podem interagir com painéis de controle e com objetivos. Pressione {0} sobre os Intercessores para abrir o portão.|
+921|É possível pressionar {0} para centralizar rapidamente a câmera novamente na unidade selecionada.|
+922|Use a opção Virar-se {0} na barra de comandos e selecione o espaço indicado.|
+923|Use {0} para abrir a barra de comandos.|
+924|<b>INFORMAÇÕES DE ATAQUE</b><br><br>Mova o retículo sobre o inimigo para ver informações de ataque detalhadas.|
+925|Você não tem uma linha de visão clara até o inimigo. Mova-se até o espaço do objetivo com {0} para alcançar uma posição melhor de onde atacar.|
+926|Esta é uma posição ótima para que os Intercessores ataquem os hormagaunts enfraquecidos. Pressione {0} sobre a unidade inimiga para atacá-la.|
+927|Use o comando Recuar e atinja os hormagaunts. Os Intercessores receberão um grande bônus defensivo ao se mover para o espaço oposto.|
+928|Acesse o comando <color=#C8914F>Recuar</color> com {0}.|
+929|Pressione {0} para ativar o comando Recuar e selecione os hormagaunts para atingi-los.|
+930|Segure {0} para terminar o turno.|
+931|Selecione outra unidade Intercessora e a mova para o espaço do objetivo.|
+932|Use {0} para selecionar a próxima unidade disponível que ainda tem pelo menos um <color=#C65C34>ponto de ação</color> a gastar.|
+933|Acesse a opção <color=#C8914F>Vigília</color> na barra de comandos {0} e defina a área no alcance ótimo do Rifle de Ferrolho. A unidade disparará contra o primeiro inimigo que entrar em qualquer espaço da área.|
+934|<b>LISTA DE UNIDADES</b><br><br>Use a Lista de unidades {0} para encontrar e selecionar unidades de diferentes papeis facilmente.|
+935|Pressione {0} para entrar no grupo de unidades do QG e selecione o Sacerdote Sanguíneo.|
+936|Pressione {0} para acessar as Habilidades de Comando do QG.|
+937|{0} PM ao sair do espaço|
+938|{0} venceu|
+939|Ultra|
+940|<b>Investida</b><br>Para usar investidas, é necessário um caminho direto até um alvo distante. Unidades em investida recebem +1 <color=#6380AD>ponto de movimento</color> e não sofrem contra-ataques corpo a corpo.<br><br>Invista contra estes Marines de Ataque com {0}.|
+941|<b>Mapa superior</b><br><br>Um <color=#9E6EA4>líder sináptico</color> entrou no campo de batalha!<br><br>Pressione {0} para exibir o mapa superior e planejar suas próximas ações.|
+942|Pressione {0} para voltar à batalha.|
+943|Inspecione a unidade indicada dos hormagaunts.|
+944|Use {0} para acessar os comandos Fortalecer e Avançar.|
+945|Possibilita o uso de uma versão aprimorada de uma habilidade.|
+946|Concede +1 Ponto de ação|
+947|Capture suas conquistas e seus momentos heroicos no campo de batalha com o Modo de fotografia. Pressione {0} a qualquer momento para pausar o jogo e acessar o Modo de fotografia.|
+948|Pular frame|
+949|Elevar/abaixar a câmera|
+950|É possível ver todos os efeitos de status de uma unidade nos detalhes de inspeção. Para isso, pressione {0} ao inspecionar a unidade.|
+951|A Área de controle é formada por todos os espaços adjacentes|
+952|O percurso de deslocamento está bloqueado|
+953|Todas as unidades que atacam à distância e que tenham Pontos de ação disponíveis usarão Vigília no alcance máximo|
+954|Segure para pular|
+955|Política de privacidade de dados|
+956|Recusar analítica|
+957|Lute contra um oponente pela internet. Ambos os jogadores estão on-line ao mesmo tempo e acompanham os movimentos do adversário em tempo real.|
+958|Lute contra um oponente pelo servidor PBEM++ (jogo por e-mail). Os jogadores não precisam estar on-line ao mesmo tempo e os turnos passam quando os jogadores quiserem.|
+959|Lute contra um oponente no mesmo sistema.|
+960|Reduz a linha de visão ao usar armas à distância se outras unidades estiverem no caminho.|
+961|Não é possível salvar no tutorial|
+962|Não é possível salvar ao jogar uma missão da campanha novamente|
+963|Inicializando partida|
+964|Terminando turno|
+965|Começando partida|
+966|Terminando partida|
+967|Pressione {0} para entrar.|
+968|Erro de acesso, tente novamente.|
+969|Erro de acesso automático|
+970|Exército destruído|
+971|{0} se desconectou|
+972|Taxa máxima de quadros|
+973|Brilho|
+974|Área Segura|
+975|Desligado|
+976|Qualidade da textura|
+977|Sombras|
+978|Qualidade das sombras|
+979|Anti-aliasing|
+980|Bloom|
+981|Oclusão de ambiente|
+982|Mudar Perfil|
+983|Sincroniza a renderização à taxa de atualização do monitor para evitar tearing. A configuração de limite de taxa de quadros não está disponível ao se usar Vsync.|
+984|Vsync|
+985|Afeta o número de unidades que podem ser recrutadas entre missões.|
+986|Requisições|
+987|Infinitas|
+988|Regulares|
+989|Pela metade|
+990|Sem ações de Requisição disponíveis|
+991|Não há ações de Requisição disponíveis para recrutar unidades. As ações de Requisição são recuperadas entre missões.|
+992|Qualidade da névoa|
+993|Unidade em Recarga|
+994|Esta unidade está em Recarga e estará disponível novamente após {1} missões.|
+995|Esta unidade está em Recarga e estará disponível novamente após {1} missão.|
+996|Infantaria ilimitada|
+997|Permite que unidades básicas de infantaria sejam recrutadas sem ações de Requisição.|
+998|1 Ação de Requisição|
+999|Nova unidade adicionada à reserva|
+1000|Experiência|
+1001|Torneios|
+1002|Início da rodada|
+1003|Rodada atual|
+1004|Status|
+1005|{0} - RODADA {1} contra {2}|
+1006|Torneios abertos|
+1007|Encerrado|
+1008|Nenhum torneio encontrado|
+1009|Ver pontuação|
+1010|Aberto|
+1011|Em andamento|
+1012|Não foi possível entrar no torneio|
+1013|Entrar no torneio?|
+1014|Quer mesmo entrar neste torneio?|
+1015|Entrou|
+1016|Ainda não escolheu|
+1017|Escolher facção|
+1018|Pontuação|
+1019|Tempo para fim da rodada|
+1020|Tempo restante|
+1021|{0}d:{1:00}h:{2:00}m:{3:00}s|
+1022|Total|
+1023|Rodada {0}|
+1024|qualquer tecla|
+1025|É seu turno em uma partida de torneio.|
+1026|Ignora as penalidades de camuflagem parcial {0}|
+1027|{0} dano à distância contra veículos|
+1028|{0} perfuração de armadura à distância contra veículos|
+1029|{0} chance de crítico à distância contra veículos|
+1030|Só é possível mirar em espaços visíveis|
+1031|Perto demais do inimigo|
+1032|{0} de armadura|
+1033|{0} de dano sofrido|
+1034|Impede todos os ataques de reação|
+1035|Sem conexão à internet.|
+1036|{0} PV bônus|
+1037|Partida cheia.|
+1038|{0} a todos os atributos enquanto estiver adjacente à unidade do Comando do QG|
+1039|{0} de chance de receber PA após eliminar um modelo inimigo|
+1040|Multijogador não permitido|
+1041|Política de Privacidade|
+1042|Seus dados pessoais nunca serão compartilhados com terceiros e só serão usados para comunicação acerca dos seus jogos e dos nossos serviços. Se você tiver qualquer dúvida sobre como suas informações são armazenadas, entre em contato com support@slitherine.co.uk.|
+1043|Desvincular|
+1044|Acesso como|
+1045|Permitir unidades de DLC jogáveis|
+1046|A habilidade ainda está recarregando|
+1047|Tempo de recarga|
+1048|Rodada da partida|
+1049|Partida de torneio|
+1050|Dados do torneio|
+1051|Rodadas|
+1052|Começa em|
+1053|Rodada|
+1054|Pontuação|
+1055|Moderadores|
+1056|Último turno!|
+1057|Bate-papo indisponível|
+1058|Coesão do exército|
+1059|Limite de coesão do exército|
+1060|O tamanho do exército excede o limite|
+1061|Seu exército não é coeso. Esta partida requer exércitos coesos.|
+1062|Este exército é coeso, o que significa que todas as unidades receberão Ímpeto bônus durante as batalhas.|
+1063|Este exército não atende aos requisitos de coesão, o que significa que não receberá Ímpeto bônus durante as batalhas. Para reverter isso, reduza as unidades listadas abaixo.|
+1064|Limite de pontos de exército|
+1065|Salvar exército|
+1066|Requer exércitos coesos|
+1067|O tamanho do exército da IA excede o limite|
+1068|O exército da IA não é coeso. Esta partida requer exércitos coesos.|
+1069|O tamanho do exército do Jogador 1 excede o limite|
+1070|O exército do Jogador 1 não é coeso. Esta partida requer exércitos coesos.|
+1071|O tamanho do exército do Jogador 2 excede o limite|
+1072|O exército do Jogador 2 não é coeso. Esta partida requer exércitos coesos.|
+1073|Nome de usuário inadequado|
+1074|Erro ao validar nome de usuário na rede|
+1075|Validando nome de usuário...|
+1076|Este nome de usuário é inadequado. Verifique se ele foi inserido corretamente. Entre em contato com support@slitherine.co.uk se quiser solicitar uma mudança de nome de usuário.|
+1077|Sair do torneio?|
+1078|Quer mesmo sair deste torneio?|
+1079|Não foi possível sair do torneio|
+1080|Partida de torneio|
+1081|Bônus de vitória|
+1082|O vencedor recebe um bônus de vitória proporcional ao valor do exército em pontos e ao número de turnos não jogados da partida.|
+1083|Excluir jogo salvo?|
+1084|Quer mesmo excluir "{0}"?<br>{1} - {2}|
+1085|O jogo salvo contém unidades de um complemento que não está ativo.|
+1086|Complemento inativo|
+1087|Reforçar|
+1088|Resgatar|
+1089|Retransmissor de Vocoemissor|
+1090|Manufactorum|
+1091|Depósito de munições|
+1092|Unidades de Elite|
+1093|Marca de Honra|
+1094|Pontos de exército {0}|
+1095|{0} de tempo de recarga de requisição|
+1096|Ganhe acesso a unidades de elite|
+1097|{0} de PA quando carregado|
+1098|Mapa estratégico|
+1099|Resolução automática|
+1100|Retirar|
+1101|A facção que você jogará nesta campanha|
+1102|Poder da Força Neutra|
+1103|Poder da Força de IA|
+1104|Meta de pontuação na Batalha de Facções|
+1105|Unidades neutras melhoradas|
+1106|Unidades de IA melhoradas|
+1107|Ativa o sistema de Coesão de Exército.|
+1108|Ajusta o valor máx. de pontos de exército para todas as forças hostis sem filiação.|
+1109|Ajusta o valor máx. de pontos de exército para todas as facções de IA.|
+1110|Ajusta a meta de potuação para os objetivos Exterminatus contra facções de IA.<br>Valores mais altos significam maiores perdas de exército ao perder um espaço.|
+1111|Aplica o efeito de status de Unidades Melhoradas a unidades de forças hostis sem filiação.|
+1112|Aplica o efeito do status de Unidades Melhoradas a unidades de facção de IA.|
+1113|Você ainda tem uma ação restante. Quer mesmo encerrar o turno?|
+1114|Biomassa|
+1115|Engrama da vitória|
+1116|Atacante|
+1117|Defensor|
+1118|{0} está contestando {1}!|
+1119|Você pode continuar modificando suas forças gratuitamente até a próxima batalha ou até o começo do próximo turno.|
+1120|Você não tem outra ação disponível para reforçar seu exército. Você precisará encerrar seu turno antes de fazer mais ajustes.|
+1121|Lutar|
+1122|Reforce seu exército|
+1123|Unidades perdidas para conquistar a vitória. Mais perdas ocorrerão se fracassar na batalha.|
+1124|{0}% de chance de {1}|
+1125|Vitória total|
+1126|Vitória forte|
+1127|Vitória moderada|
+1128|Vitória pequena|
+1129|Derrota iminente|
+1130|Unidades perdidas|
+1131|Calculando|
+1132|Vitória|
+1133|Derrota|
+1134|Não é possível salvar ao resgatar ou reforçar.|
+1135|Isso vai desfazer a coesão do seu exército. Quer mesmo recrutar esta unidade?|
+1136|Não há unidades no seu exército.|
+1137|A unidade desfaz a coesão.|
+1138|Sem unidades|
+1139|Você só pode retirar quando não gastar nenhum ponto de ação. Você poderá retirar no começo do seu próximo turno.|
+1140|Só é permitido retirar durante o seu turno.|
+1141|Retirar?|
+1142|Deseja mesmo se retirar?|
+1143|Batalha de {0}|
+1144|Reforçado!|
+1145|Retirado!|
+1146|{0} PV por ímpeto|
+1147|{0} ímpeto após se mover por {2} áreas|
+1148|Permite passar por pequenos obstáculos e ignora penalidades de movimentação do terreno.|
+1149|Cada tiro efetivo com esta arma tem {0} de chance cumulativa de passar em arco para um inimigo próximo e causar {1} de dano.|
+1150|{0} de dano contra unidades orgânicas|
+1151|{0} perfurante contra unidades orgânicas|
+1152|{0} de alcance de {2}|
+1153|Reflete {0} de dano para os atacantes corpo a corpo|
+1154|{0} disparos|
+1155|{0} de {1} alvos selecionados|
+1156|{0} para confirmar /|
+1157|Acerto automático de armas de longo alcance|
+1158|{0} para cancelar|
+1159|Proprietário|
+1160|Conectado à base|
+1161|Recurso|
+1162|Bônus|
+1163|Desconhecido|
+1164|Eliminado|
+1165|Consumido|
+1166|Aniquilado|
+1167|A força do seu exército é baixa demais. Considere solicitar reforços.|
+1168|O inimigo se aproxima da sua base. Considere reivindicar um território próximo.|
+1169|Há espaços não reivindicados ao seu alcance. Derrote os territórios neutros para aumentar seu limite de pontos do exército.|
+1170|Há um recurso não reivindicado ao seu alcance. Reivindique-o para ganhar um bônus.|
+1171|Um recurso da Força Auxiliar controlado pelo inimigo está ao alcance. Capture-o para aumentar a capacidade do seu exército.|
+1172|Um recurso de Autoridade Expansiva controlado pelo inimigo está ao alcance. Capture-o para aumentar as ações por turno.|
+1173|Um recurso de Reabastecimento Rápido controlado pelo inimigo está ao alcance. Capture-o para reduzir os tempos de recarga de requisição.|
+1174|Todas as ações foram usadas. Está na hora de terminar o seu turno.|
+1175|Fechar|
+1176|Base reivindicada!|
+1177|Não reivindicada|
+1178|Não reivindicada|
+1179|Luta contra aliados|
+1180|Permitir luta dos aliados|
+1181|Combate|
+1182|Turnos jogados|
+1183|Espaços capturados|
+1184|Espaços perdidos|
+1185|Máximo de espaços obtidos|
+1186|Bases capturadas|
+1187|Recursos obtidos|
+1188|Total de unidades abatidas|
+1189|Total de dano causado|
+1190|Batalha mais curta|
+1191|Batalha mais longa|
+1192|Unidade com melhor desempenho|
+1193|Melhor proporção abates/mortes em missão|
+1194|Total de cura|
+1195|Unidades perdidas/despachadas|
+1196|Dano por categoria de arma|
+1197|Unidades em disparada|
+1198|Habilidades fortalecidas|
+1199|Unidade mais sobrecarregada|
+1200|Habilidade mais fortalecida|
+1201|Classificação de exército|
+1202|Precisão média|
+1203|{0} abates|
+1204|{0} missões sobrevividas em seguida|
+1205|{0} espaços percorridos|
+1206|Proporção abates/mortes|
+1207|{0} sobrecargas|
+1208|{0} usos|
+1209|Missão {0}|
+1210|Total de unidades perdidas|
+1211|Ver fóruns|
+1212|Unidade|
+1213|Melhorias requerem PA|
+1214|Define se requererá pontos de ação para comprar melhorias no Centro de Comando do QG.|
+1215|A IA obtém todas as melhorias|
+1216|Dá às outras facções de IA todas as melhorias do Centro de Comando do QG.|
+1217|Impossível suprimir|
+1218|{0} de alcance máximo|
+1219|Desbloqueie esta unidade|
+1220|Desbloqueia|
+1221|Para unidades|
+1222|Há melhorias disponíveis para suas forças. Considere desbloquear as melhorias de QG.|
+1223|{0} ganhos de ímpeto ao abater unidades orgânicas|
+1224|{0} Dano de arma por ímpeto|
+1225|Esta unidade está em tempo de recarga. Para comprá-lo, seriam necessários {0} pontos de requisição|
+1226|Nenhuma unidade perdida|
+1227|Cerco|
+1228|<b>Ataque e defenda pontos de controle.</b><br><br>Um jogador é designado como atacante enquanto o outro é o defensor:<br><br>• +25 pontos são concedidos ao atacante por ponto capturado. O defensor não pode recapturar pontos depois que o atacante os capturou.<br><br>• Os pontos de captura levam vários turnos para serem capturados. A unidade que captura o ponto não poderá se mover durante este tempo, portanto defenda-o bem.<br><br>• O defensor ganha pontos ao abater as unidades do atacante. Apenas o defensor pode ganhar pontos fazendo isso.<br><br>• O defensor tem uma área de mobilização maior, permitindo que eles mobilizem unidades mais próximas dos pontos de captura no início da partida.<br><br>• O defensor ganhará reforços automaticamente no início de seu turno se seu exército estiver quase destruído.|
+1229|Capturar|
+1230|Capturando ({0} turnos restantes)|
+1231|Apenas o atacante pode ficar em pontos de captura|
+1232|<b>Cerco</b><br><br>Proteja os pontos de controle|
+1233|<b>Cerco</b><br><br>Defenda os pontos de controle|
+1234|<b>Cerco</b><br><br>O atacante precisa dominar os pontos de controle. O defensor precisa defender os pontos de controle.|
+1235|Custo acelerado: {0} pontos de requisição|
+1236|Jogar como|
+1237|Embarcar|
+1238|Desembarcar|
+1239|O transporte está cheio|
+1240|Já desembarcou neste turno.|
+1241|<b>Limites de capacidade</b><br><br>Unidade: {0}<br>Modelos: {1}|
+1242|Próximo|
+1243|Pontos de reforço: {0}|
+1244|Levas sobrevividas|
+1245|Demônios abatidos|
+1246|Pontuação de demônios abatidos|
+1247|Multiplicador do tamanho do exército|
+1248|Bônus de sobrevivência à leva|
+1249|Pontos de reforço gastos|
+1250|Impossível alvejar esta unidade|
+1251|Placar|
+1252|Mundo|
+1253|Você|
+1254|Amigos|
+1255|Quando ativado, as levas de demônios nunca acabarão e o jogo só terminará quando seu exército for destruído.|
+1256|Facções inimigas|
+1257|Número de pontos recebidos para gastar em reforços após cada leva.|
+1258|Bônus de exército menor|
+1259|Bônus de turnos restantes|
+1260|Leva|
+1261|Leva concluída|
+1262|Reabastecer|
+1263|Bronze|
+1264|Prata|
+1265|Ouro|
+1266|Ajuda no campo de batalha|
+1267|Padrão|
+1268|Ajusta a precisão dos ataques inimigos conforme o tamanho e a agilidade da unidade.|
+1269|{0} de estabilidade de longo alcance por ímpeto|
+1270|{0} de antiblindagem por ímpeto|
+1271|Escala da interface|
+1272|{0} de penalidade de ímpeto de ação não gasta|
+1273|Analítica desativada|
+1274|Recusar analítica|
+1275|Os dados analíticos são usados estritamente para a melhoria do jogo. Recusar?|
+1276|Tomar e controlar|
+1277|Requisições de IA|
+1278|Afeta o número de unidades que a IA pode recrutar entre as missões.|
+1279|Erro de inicialização|
+1280|Ocorreu um erro crítico no jogo. Se ele persistir, valide os dados do jogo e/ou reinstale-o.|
+1281|Usar armas corpo a corpo por padrão contra inimigos adjacentes|
+1282|<b>Tomar a controlar</b><br>Elimine o inimigo antes que ele ocupe a zona de controle|
+1283|<b>Tomar e controlar</b><br>O atacante ocupa a zona de controle e o defensor elimina o atacante|
+1284|<b>Tomar e controlar</b><br>Ocupe a zona de controle.|
+1285|Carregando|
+1286|Ativo. +{0} PA|
+1287|Promoção do campo de batalha|
+1288|Ímpeto: {0} por modelo abatido|
+1289|<b>Ocupe a zona de objetivo para resgatar o recurso vital.</b><br><br>O atacante ganha 5 pontos para cada unidade na zona de controle menos 5 pontos para cada unidade defensiva na zona de controle.<br><br>O defensor ganha pontos ao eliminar as unidades atacantes.|
+1290|Inimigos dentro da zona de controle|
+1291|Aliados dentro da zona de controle|
+1292|Vantagens do Waaagh|
+1293|Próxima unidade com PM|
+1294|A arma está recarregando|
+1295|Tempo de recarga de munição|
+1296|O tamanho de exército mínimo para incursão é de {0}|
+1297|Disponível após {0} ondas|
+1298|Disponível após a próxima onda|
+1299|Mostrar indicador de ataque traseiro|
+1300|Tributo de Sangue|
+1301|Terreno|
+1302|Jogabilidade|
+1303|Atmosfera|
+1304|Cenários|
+1305|Criar novo mapa|
+1306|Construtor de mapa|
+1307|Largura|
+1308|Altura|
+1309|Modelo|
+1310|Zonas de equipamentos iniciais personalizadas|
+1311|Áreas de captura|
+1312|Capturar pontos|
+1313|{0} Dano à distância por ímpeto|
+1314|{0} Precisão à distância contra esta unidade|
+1315|{0} Perda de precisão contra esta unidade|
+1316|Aplica-se no raio de {0} espaços|
+1317|Meus mapas|
+1318|Mapas baixados|
+1319|Editar|
+1320|Procurar on-line|
+1321|Duplicar|
+1322|Quer mesmo excluir "{0}"?|
+1323|Publicar|
+1324|Insira um registro de mudanças para informar a outros jogadores sobre as novidades nesta versão.|
+1325|Detalhes do mapa|
+1326|Descrição|
+1327|Erro|
+1328|Sucesso|
+1329|Mapa publicado com sucesso.|
+1330|Mapa personalizado não instalado:<br>{0}|
+1331|Mapa local não encontrado:<br>{0}|
+1332|Ativar|
+1333|{0} Espaços disponíveis|
+1334|Tamanho|
+1335|Minúsculo|
+1336|Pequeno|
+1337|Médio|
+1338|Grande|
+1339|Extra grande|
+1340|Natureza|
+1341|Estruturas|
+1342|Categoria|
+1343|Muros|
+1344|Objetos|
+1345|Decalques|
+1346|Imperium|
+1347|Civil|
+1348|Natural|
+1349|Estruturado|
+1350|Exuberante|
+1351|Seco|
+1352|Escarpado|
+1353|Plano|
+1354|Mapas personalizados|
+1355|Esparso|
+1356|Preenchido|
+1357|Mapas gerados|
+1358|Criar seu planeta|
+1359|Todos os modos|
+1360|Novo modo|
+1361|Crie um nome para o seu novo modo de jogo. Isso permitirá jogar esse mapa como um mapa para um jogador.|
+1362|Unidades|
+1363|Quer mesmo excluir os dados desse modo de jogo? Isso não pode ser desfeito.|
+1364|Força do pincel|
+1365|Altura mín.|
+1366|Altura máx.|
+1367|Escala|
+1368|Areia|
+1369|Grama|
+1370|Lama|
+1371|Pedra|
+1372|Artificial|
+1373|Azimute|
+1374|Zênite|
+1375|Sol|
+1376|Vermelho|
+1377|Verde|
+1378|Azul|
+1379|Névoa|
+1380|Cor|
+1381|Pós-processamento|
+1382|Densidade|
+1383|Intensidade|
+1384|Usar música de escaramuça|
+1385|Força|
+1386|Raio|
+1387|Céu|
+1388|Chão|
+1389|Linear|
+1390|Exponencial|
+1391|Exponencial ao quadrado|
+1392|Início|
+1393|Fim|
+1394|Temperatura|
+1395|Balanço de branco|
+1396|Tom|
+1397|Matiz|
+1398|Escuro|
+1399|Médio|
+1400|Claro|
+1401|Honra da batalha|
+1402|Ambiente|
+1403|Logo necessária|
+1404|Entre no modo de jogo e capture uma foto usando o Modo de fotografia.|
+1405|Versão|
+1406|Cenários de bloco|
+1407|Cenários livres|
+1408|Salvar foto do mapa|
+1409|Tamanho do pincel|
+1410|Posição|
+1411|Direção|
+1412|Blocos|
+1413|Grade|
+1414|Campanha personalizada|
+1415|Gerenciar mods|
+1416|Campanhas personalizadas|
+1417|Minhas campanhas|
+1418|Campanhas baixadas|
+1419|Criar nova campanha|
+1420|Criar uma partida multijogador com um mapa salvo localmente. Apenas jogadores que tenham o mesmo mapa salvo localmente poderão participar.|
+1421|Aviso|
+1422|Jogador escolhe a facção|
+1423|É jogador local|
+1424|Facções permitidas|
+1425|Quer mesmo remover "{0}"?|
+1426|Carregando|
+1427|Autenticando|
+1428|Instruções da campanha|
+1429|Instruções da missão|
+1430|Missões|
+1431|Título da missão|
+1432|Título da campanha|
+0|消灭所有敌人|

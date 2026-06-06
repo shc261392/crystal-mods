@@ -1,0 +1,14 @@
+{
+  "name": "game-warhammer40kbattlesector",
+  "version": "0.1.0",
+  "description": "Vortex extension for Warhammer 40,000: Battlesector.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "lint": "node --check index.js",
+    "package": "node ./scripts/package.js"
+  },
+  "devDependencies": {
+    "vortex-api": "github:Nexus-Mods/vortex-api"
+  }
+}

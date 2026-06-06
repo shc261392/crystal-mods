@@ -1,0 +1,1612 @@
+1|Za Imperatora!|
+2|Już idziemy.|
+3|Pędzimy.|
+4|Szturmowi marines gotowi do akcji.|
+5|Czeka ich śmierć!|
+6|Niech Sanguinius prowadzi mój miecz.|
+7|Za Imperatora!|
+8|Jam jego mieczem.|
+9|Nie powstrzymają mnie.|
+10|Jesteśmy synami Sanguiniusa.|
+11|Potraktuję ich furią.|
+12|Na krew!|
+13|Pod ostrzałem!|
+14|Niech Sanguinius ma nas w opiece.|
+15|Zemsta jest nieuchronna.|
+16|Siła mi pomoże.|
+17|Tak jest.|
+18|Gotów do ataku.|
+19|Ku niebiosom, bracia!|
+20|Granat!|
+21|Szybkość i furia!|
+22|Rój nie ma prawa żyć!|
+23|Niebo jest nasze!|
+24|Na skrzydłach anioła|
+25|Jesteśmy furią Sanguiniusa.|
+26|Krew Sanguiniusa płynie w mych żyłach.|
+27|Chwała Krwawym Ostrzom. Chwała Skyfall.|
+28|Jego moc jest z nami!|
+29|Odrzućcie wątpliwości, bracia!|
+30|Sanguinius prowadzi każdy atak.|
+31|Sanguinius stoi przy mnie!|
+32|Wiara moją tarczą.|
+33|Pogarda moją zbroją.|
+34|Oddajcie im cześć, bracia, albowiem wyzionęli ducha, zanim padli.|
+35|Ciężkie wsparcie ogniowe.|
+36|Naprzód!|
+37|Otworzyć ogień!|
+38|Ten tyran doświadczy śmierci z mojej ręki.|
+39|Żadna skorupa nie ocali tego plugastwa.|
+40|Na mój honor.|
+41|Mogą tylko umrzeć.|
+42|Jestem mieczem Sanguiniusa.|
+43|Zwycięstwo jest pewne.|
+44|Natychmiast.|
+45|Moja zemsta będzie ostateczna.|
+46|Upadniesz przede mną.|
+47|Ku chwale Sanguiniusa!|
+48|Czekam na ich błąd.|
+49|Strategiczny krok wstecz.|
+50|Nie ma miejsca na wątpliwości, bracia!|
+51|Sanguinius prowadzi każdy atak!|
+52|Hnnngh!|
+53|(stęknięcie)|
+54|To nic takiego.|
+55|Przepływa przeze mnie furia Sanguiniusa!|
+56|Wróg na nas czeka.|
+57|Urodziłem się na Baalforze i, jeśli taka wola Imperatora, umrę na Baalforze.|
+58|Krwawe Ostrza ze Skyfall to my.|
+59|Sanguinius ma nas w opiece.|
+60|(wrzask małego Tyranida)|
+61|Rozkazy?|
+62|Ruszam.|
+63|Atakuję wroga.|
+64|Ich ofiara nie będzie bezcelowa.|
+65|Pomścijcie ich, bracia!|
+66|Coś słyszę.|
+67|Strzelajcie celnie, bracia.|
+68|(wrzask dużego Tyranida)|
+69|Jesteśmy synami Sanguiniusa.|
+70|Walczymy i umieramy za Imperium.|
+71|Zmiażdżyć wrogów Imperium!|
+72|Oczywiście.|
+73|Moim obowiązkiem jest służyć.|
+74|Krew czeka.|
+75|Chętnie pomogę.|
+76|Pójdę, gdzie mnie potrzebują.|
+77|Pójdę, gdzie Anioł mnie potrzebuje.|
+78|Mój miecz łańcuchowy jest spragniony ich krwi.|
+79|Walczcie o chwałę w imię Anioła!|
+80|Będą się bać podejść blisko.|
+81|Muszę chronić Jego krew.|
+82|Krew daje siłę! Nie wahajcie się!|
+83|Wracaj do nas! Wielki Anioł wciąż cię potrzebuje.|
+84|W oczach Imperatora jesteśmy prawi i sprawiedliwi!|
+85|Nie obawiajcie się furii Wielkiego Anioła, bracia! To wasze prawo!|
+86|A!|
+87|Wróg sądzi, że go nie sięgniemy.|
+88|Hnnng!|
+89|Odbiorę dług w imieniu Zakonu za jego krew.|
+90|Krew daje mi siłę!|
+91|Słyszę ich.|
+92|Krew Sanguiniusa płynie we mnie.|
+93|Krwawe Duchowieństwo wypełnia wolę Zakonu.|
+94|W najczarniejszej godzinie zwyciężymy dzięki kontroli.|
+95|Jak każesz.|
+96|Zrozumiano.|
+97|Co trzeba naprawić?|
+98|Zbrojmistrz gotów do akcji.|
+99|Już pędzę.|
+100|Nic tak nie zmiękcza jak kilka pocisków.|
+101|Mój topór łaknie krwi.|
+102|Potęga Omnizjasza cię zniszczy!|
+103|Będę uważać.|
+104|Przeklęte szkodniki!|
+105|Tak jest, zaraz cię postawimy na nogi.|
+106|Spokojnie, pancerz osłoni cię przed ich ostrzami.|
+107|Omnizjasz osądzi twe czyny.|
+108|Niech zadrżą przed mą potęgą.|
+109|A!|
+110|Jesteśmy panami doktryny szturmowej.|
+111|Zbliżam się!|
+112|Bywało gorzej.|
+113|Ich pancerz jest bezużyteczny.|
+114|Moc Omnizjasza!|
+115|Słyszę, jak drepczą.|
+116|Mój topór rozpłata każdego Xenosa.|
+117|Dajcie mi to, co macie zepsute i zużyte, a zmienię je w nowe.|
+118|Rozkaz.|
+119|Jestem zawsze czujny.|
+120|Dyscyplina drogą do łaski.|
+121|Moja wola jest nieugięta.|
+122|Moja moc jest na twoje rozkazy.|
+123|Nie zatrzymają mnie.|
+124|Strzelam w cel.|
+125|Widzę, jak cię zabijam.|
+126|Drżyj przede mną, albowiem jestem twą zgubą.|
+127|Wieczna obserwacja.|
+128|Niech Sanguinius ma cię w opiece.|
+129|Piaski u ich stóp się rozstępują.|
+130|Moja furia wzrasta.|
+131|Wykryto opór.|
+132|Strzelają do mnie.|
+133|Muszę stawić opór.|
+134|Widzieć ich ofiarę to dla nas zaszczyt.|
+135|Jam jest furią! Jam jest ogniem! Jam jest śmiercią!|
+136|Wyczuwam zbliżającego się przeciwnika.|
+137|Tylko śmierć może zakończyć służbę.|
+138|Tylko służba Imperatorowi ma znaczenie — teraz i zawsze.|
+139|Solidna strategia.|
+140|Mądra decyzja.|
+141|Co planujesz?|
+142|Moje moce są na twoje rozkazy.|
+143|Nie przejdą.|
+144|Szkoda na nich mojego czasu.|
+145|Rozlew krwi drogą do czystości!|
+146|Mój miecz zwiastuje zagładę.|
+147|Niech przyjdą.|
+148|Muszę utrzymywać dystans.|
+149|Krew jest twą słabością.|
+150|Oto twoja zguba!|
+151|Siła płynie z krwi.|
+152|Sanguinius mnie prowadzi.|
+153|Hnnng!|
+154|Hrfff!|
+155|Aj!|
+156|Każda ofiara to krok do zwycięstwa.|
+157|Immaterium przepływa przeze mnie!|
+158|Wyczuwam wroga.|
+159|Jeśli potrzebujesz pomocy, znajdziesz ją w Librarium.|
+160|Osnowa nigdy nie jest spokojna.|
+161|AAAAA!|
+162|MOJA FURIA NIE UMRZE!|
+163|(oddycha z wściekłością)|
+164|ZASZLACHTUJĘ ICH WSZYSTKICH!|
+165|ZADRŻĄ PRZEDE MNĄ!|
+166|ŚMIERĆ! ŚMIERĆ!|
+167|(szaleńczy krzyk)|
+168|NIENAWIŚĆ JEST MYM MIECZEM!|
+169|HRAAAAAAAAAA!|
+170|HRRRRGH!|
+171|Cofnąć się!|
+172|NIE ZATRZYMACIE MNIE!|
+173|NIE ZABIJECIE MNIE!|
+174|ZEMSTA!|
+175|ZA DZIEWIĄTY LEGION!|
+176|TERAZ! ZABIĆ ICH TERAZ!|
+177|(ryk wściekłości)|
+178|MOJE OSTRZE ZA LORDA IMPERATORA!|
+179|Wyzwanie przyjęte.|
+180|Bez chwili wahania.|
+181|Inceptorzy gotowi do akcji.|
+182|Ciężkie wsparcie w zwarciu.|
+183|Zawsze na szpicy.|
+184|Atakuję cel.|
+185|Strefa obronna aktywna.|
+186|Ewakuacja.|
+187|Plecaki odrzutowe aktywne.|
+188|Rozproszą się pod nami.|
+189|Hnnn!|
+190|Nic nas nie ruszy.|
+191|Ha!|
+192|Zaatakowano nas.|
+193|Będę gromem, którego echo zagłuszy ich imiona.|
+194|Spadniemy na nich jak deszcz meteorytów.|
+195|Cel poza zasięgiem wzroku.|
+196|Niech spadnie na nich nasza szlachetna furia.|
+197|Śmierć z powietrza!|
+198|Za Imperium!|
+199|Poradzimy sobie.|
+200|Piekielnicy czekają na wskazanie celu.|
+201|Wsparcie ogniem plazmowym gotowe do akcji.|
+202|Ruszam na miejsce.|
+203|Cel namierzony.|
+204|Czuwanie w toku.|
+205|Wycofać się!|
+206|Cewki plazmowe na pełnym przeciążeniu.|
+207|Aaaa!|
+208|Strzelają do nas!|
+209|Jesteśmy pod ostrzałem!|
+210|Wróg skrócił dystans.|
+211|Cierpliwości, bracia. Ich czas nadejdzie.|
+212|Gotowi do ataku na cele.|
+213|Wykryto potencjalne cele.|
+214|Wsparcie ogniowe.|
+215|Ostrzał plazmowy czeka na rozkazy.|
+216|Tak jest.|
+217|Rozkaz.|
+218|Według rozkazu.|
+219|Służba nie drużba.|
+220|Czekam na rozkazy.|
+221|Cel potwierdzony.|
+222|Otwieram ogień.|
+223|Śmierć każdemu, kto mi się przeciwstawi.|
+224|Ich opór napędza moją nienawiść.|
+225|Strefa śmierci wyznaczona.|
+226|Stawiam zasłonę dymną.|
+227|Przystępuję do bombardowania.|
+228|To wszystko?|
+229|Hnh, ha!|
+230|Przeszkoda potwierdzona.|
+231|Nawiązano kontakt.|
+232|Nasza śmierć to cena za chwałę Imperium.|
+233|Furia we mnie się budzi.|
+234|Wróg kryje się w cieniu.|
+235|Nawet śmierć mnie nie powstrzyma.|
+236|Defensor Angelicum cię wspiera.|
+237|Rozumiem.|
+238|Pędzimy.|
+239|Załoga ścigacza czeka na rozkazy.|
+240|Pojazd antygrawitacyjny w gotowości.|
+241|Ruszamy.|
+242|Strzelam do wroga.|
+243|Strefa czuwania wyznaczona.|
+244|Otrzymano lokalizacje celów.|
+245|Hnnnn!|
+246|Jesteśmy nieuchronną zemstą.|
+247|Chodźcie, bracia! Bitwa czeka!|
+248|Zaatakowano nas w czasie akcji.|
+249|Zginęli, żebyśmy mogli wykonać zadanie.|
+250|Czas ruszać.|
+251|Auspex wykrył ruch.|
+252|Gotowość do zwiadu.|
+253|Potrzebujesz zwiadowcy?|
+254|Rozkaz przyjęty.|
+255|Tak jest.|
+256|Załoga Predatora w gotowości.|
+257|Pancerniacy czekają na rozkazy.|
+258|Jedziemy na miejsce.|
+259|Rozpoczynamy ostrzał.|
+260|Wyznaczono zakazaną strefę.|
+261|Ruszamy z szybkością naszej furii.|
+262|Pod ostrzałem.|
+263|[trafienia]|
+264|Zbliżają się kolejne cele.|
+265|Testują nasz pancerz.|
+266|Ich śmierć nie pójdzie na marne.|
+267|Uwolnić gniew Anioła!|
+268|Cele wychodzą poza zasięg.|
+269|Jesteśmy obrońcami Baala.|
+270|Nie pokonają nas.|
+271|Oddział frontowy w gotowości.|
+272|Jesteśmy murami i działami.|
+273|Atakuję wroga.|
+274|Czuwanie!|
+275|Odeprzyjcie ich, bracia.|
+276|Strzelajcie celnie, bracia.|
+277|(wrzask Tyranida)|
+278|Aaaa!|
+279|Odeprzeć ich!|
+280|Są liczni, ale moja furia jest większa!|
+281|Śmierć niegodnym!|
+282|** nieużywane|
+283|Za Sanguiniusa!|
+284|Tak.|
+285|Wsparcie w zwarciu.|
+286|Zmiażdżyć ich!|
+287|Pożałują, że podeszli tak blisko.|
+288|Utrzymujcie odległość, bracia.|
+289|Zawsze gotowi. Zawsze czujni.|
+290|Moja wiara jest silna.|
+291|Nie zawiodę.|
+292|Kto testuje moją wiarę?|
+293|Światło Imperatora płonie jasnym ogniem.|
+294|Śladami Katarzyny...|
+295|Precz z nieczystymi!|
+296|Nienawiść dla grzeszników!|
+297|Za Imperatora!|
+298|Odmawiam im prawa do istnienia.|
+299|Nie jesteście godni.|
+300|Na Katarzynę i Celestynę! Na Cesti i Praxedes!|
+301|W naszych sercach nie ma miejsca na lęk, albowiem chroni nas Imperator!|
+302|Wykonuję Jego świętą wolę!|
+303|Hrah!|
+304|Wiara moją tarczą.|
+305|Imperator nas strzeże.|
+306|Radujcie się, siostry! Imperator poznał ich imiona.|
+307|Mój cel świeci jasno.|
+308|Otaczają nas heretycy.|
+309|Jestem tarczą Imperium.|
+310|W każdym cieniu widzę herezję.|
+311|Droga do szlachetności jest zalana krwią niegodnych.|
+312|Patrzcie, jak bestia szaleje z bezsilności! Na nic się zda jej kwilenie i złość.|
+313|Dopilnuję, abyście wszyscy zostali wybici.|
+314|Z Jego woli.|
+315|Zrozumiano.|
+316|Jesteśmy Jego tarczą nie do pokonania.|
+317|Rozkazy?|
+318|Podążamy za Jego światłem.|
+319|Atakuję cel.|
+320|Nie będzie im dane poznać światła Imperatora.|
+321|Wycofać się!|
+322|Niesiemy boską zemstę.|
+323|** nieużywane|
+324|Aaa.|
+325|Jesteśmy pod ostrzałem!|
+326|Wytrzymamy.|
+327|Niesie nas krew męczenników.|
+328|W imię Katarzyny!|
+329|Chyba coś widziałam...|
+330|Szlachetna walka to wyzwolenie. Śmierć to oczyszczenie.|
+331|Jesteśmy walecznymi siostrami.|
+332|Wyciąć ich w pień!|
+333|Po odcięciu głowy ciało jest martwe.|
+334|Nie ma miejsca na wątpliwości.|
+335|W te pędy.|
+336|Wsparcie z powietrza.|
+337|Gdzie teraz?|
+338|Spróbujcie mnie powstrzymać.|
+339|Zlikwidować ich!|
+340|Przednia flanka zabezpieczona.|
+341|Lecimy.|
+342|Plecaki aktywne.|
+343|Równowaga i mistrzostwo.|
+344|Aah!|
+345|Uniki!|
+346|Zaatakowano nas w czasie akcji.|
+347|Ich śmierć pozwoli nam przeżyć.|
+348|Nikt nie jest lepszy ode mnie.|
+349|Widzę ruch w oddali.|
+350|Jestem na strażniczką wiary.|
+351|To my panujemy w niebiosach.|
+352|Tylko sprawiedliwi mogą latać.|
+353|Rozkaz przyjęty.|
+354|Tak jest, ruszam.|
+355|Stormraven rusza.|
+356|Cele potwierdzone.|
+357|Oddział szturmowy gotowy do walki na terytorium wroga.|
+358|Szturmowcy gotowi.|
+359|Przetrzebić ich szeregi! Nie przytłoczą nas liczebnością.|
+360|Strzelać! Miażdżyć! Ważne, żeby zginęli.|
+361|Rozmiar to nie wszystko.|
+362|Zlikwidować ich! Xenos nie ma racji bytu!|
+363|Bestia ma zdechnąć.|
+364|Kolce nie uratują Xenos.|
+365|Ha! Zobaczymy, czy ten pancerz cię ochroni.|
+366|Zabić, zanim się rozprzestrzeni!|
+367|Rozdeptać ich na miazgę.|
+368|Tylko anioły mają prawo latać.|
+369|Śmierć rojowi Xenos.|
+370|Nie dajcie się zwieść tym oparom, bracia.|
+371|Latanie nie robi na nas wrażenia.|
+372|Za chwilę rozwiążemy problem roju.|
+373|Wasza inteligencja nie pochodzi od was. Dlatego wasza śmierć jest bez znaczenia.|
+374|Jego umysł jest słaby. Można go zdeptać jak kamyk.|
+375|Unicestwienie to moja codzienność. Jesteś dla mnie niczym.|
+376|Zmagania tej synaptycznej istoty są daremne.|
+377|Ten tyran doświadczy śmierci z mojej ręki.|
+378|Żadna skorupa nie ocali tego plugastwa.|
+379|Pozostanie po tobie tylko plama jadu.|
+380|Twoje pomioty zostaną zmiecione! Zmiażdżone w rytm strasznej muzyki! Jedyną ulgą będzie śmierć.|
+381|Duch maszyny cię nie obroni, przeklęta plugawa istoto.|
+382|Szkodniki! Wszędzie przeklęte szkodniki!|
+383|**NIEUŻYWANE**|
+384|Zwycięstwo jest pewne.|
+385|Imperator jest z nami.|
+386|Terminatorzy szturmowi, gotowi do akcji.|
+387|Nic nas nie powstrzyma.|
+388|Bez litości.|
+389|Terminatorzy, naprzód!|
+390|Skrócić dystans!|
+391|To nas lękają się ich serca.|
+392|Nie złamią nas!|
+393|Nie zważać na ich ataki!|
+394|Chcą, byśmy poddali próbie ich siłę!|
+395|Roznieść ich na tarczach!|
+396|Padają jak setki przed nimi.|
+397|Pole bitwy jest nasze!|
+398|Wkrótce poznają co to śmierć.|
+399|Gdzie my, tam zwycięstwo.|
+400|Przemawia przez nas wola Imperatora.|
+401|Wrócimy z tarczami lub na nich.|
+402|Nie zdają sobie sprawy, że śmierć jest blisko.|
+403|Rozszarpcie ich pancerze, bracia!|
+404|Ta obmierzła kreatura nie ma prawa żyć.|
+405|Nie wahajcie się bracia! Zgładzić ją!|
+406|Umysł, ciało i duszę.|
+407|To twój koniec.|
+408|Krwawy strażnik, do Twojej dyspozycji.|
+409|Sanguinius ma nas w opiece.|
+410|Pełen łaski.|
+411|Pełen wiary.|
+412|Siejcie zniszczenie, bracia!|
+413|Padnij pod moim ostrzem!|
+414|Niezbędne posunięcie taktyczne.|
+415|Rozpalcie płomienie anielskich skrzydeł!|
+416|Nasza krew płonie!|
+417|Mierzyłem się już z lepszymi.|
+418|Rzucają nam wyzwanie z oddali.|
+419|Pragną się z nami zmierzyć!|
+420|Już spoczywają u boku Ojca.|
+421|Nasza wola jest niezłomna! Nasza chwała - niechybna! Za Sanguiniusa!|
+422|Niech skrywają się w cieniach.|
+423|My jesteśmy światłem i chwałą Sanguiniusa!|
+424|W tym wszechświecie niewiele jest rzeczy, które mogą mnie zaskoczyć.|
+425|Ich śmierć będą opiewać poeci.|
+426|Takie poświęcenie to prawdziwa moc.|
+427|Dajcie im śmierć, której tak gorliwie szukają.|
+428|Połóżcie kres ich nędznej egzystencji, bracia. Ich umysły są strzaskane, tak jak pancerze.|
+429|Nareszcie koniec czekania.|
+430|Moja wola się spełni.|
+431|Co?|
+432|Moje imperium się budzi.|
+433|Niekończący się marsz.|
+434|Marnujesz mój czas.|
+435|Na kolana przede mną.|
+436|Ulegniesz!|
+437|Nie zbliżaj się do mnie.|
+438|Precz, insekcie.|
+439|Wykraczam poza twoje zdolności.|
+440|Przebudźcie się! Nadchodzi era Nekronów!|
+441|Przestrzegaj mojego polecenia.|
+442|Stąpam między rzeczywistościami.|
+443|Hnnnnng.|
+444|[stęknięcie]|
+445|Żałosne.|
+446|Ośmielisz się?|
+447|Kiedy im rozkażę, znów będą służyć.|
+448|Wasze gwiazdy rozpadną się przede mną!|
+449|Słusznie robią, że się ukrywają.|
+450|Mogę skazać na śmierć nawet gwiazdy.|
+451|W czasie naszego snu minęły eony. A po przebudzeniu widzimy te plugastwa.|
+452|Mam pod kontrolą całą potęgę mojej dynastii.|
+453|Całe galaktyki upadły, czekając na mój powrót. Jesteś przy tym bez znaczenia.|
+454|Potrafię zabić boga! Jesteś przy tym niczym.|
+455|Zniszczenie!|
+456|Ta moc jest twoja.|
+457|Masz plan?|
+458|Potrzebujesz mojej rady?|
+459|Gdziekolwiek idę, pojawia się zniszczenie.|
+460|Skosztuj mojej mocy!|
+461|Precz! Irytujesz mnie!|
+462|Unicestwienie!|
+463|Czekam na wroga!|
+464|Tylko mały krok poza zasięgiem wybuchu...|
+465|Serce tej osobliwości zapadnie się.|
+466|Zasieję zniszczenie!|
+467|Żywa błyskawica!|
+468|[stęknięcie]|
+469|Hng!|
+470|Strzelają! Do mnie!|
+471|Takie prymitywne próby.|
+472|Wykorzystamy ich energię innym razem.|
+473|Przepływa przeze mnie niepojęta moc!|
+474|Wyjdź na otwartą przestrzeń, a zaraz cię zlikwiduję.|
+475|Niszczyciel światów!|
+476|Niemal nieograniczona energia – do twojej dyspozycji.|
+477|Zarówno stworzenie, jak i niszczenie wymagają tego samego: energii.|
+478|Myślisz, że posiadasz ogromną moc, ale do zabicia cię wystarczy ta energia!|
+479|Paskudztwo! Pasożyty! Zlikwidować!|
+480|Wszyscy zginą.|
+481|W trakcie działań.|
+482|Masz jakieś cele?|
+483|Widzę wszystko.|
+484|Szukam korzystnej pozycji.|
+485|Śmierć z moich rąk.|
+486|Nikt nie przejdzie niezauważony.|
+487|Optymalna strategia.|
+488|Cele namierzone.|
+489|Metoda ostrzału zoptymalizowana.|
+490|Hm.|
+491|Wróg kontratakuje.|
+492|Napotkano opór.|
+493|Wróg był słaby.|
+494|Nikt nie zejdzie mi z celownika.|
+495|Ukrywanie się nie pomoże im.|
+496|Celem wszelkiego życia jest śmierć. Próbuje tylko pomóc.|
+497|Morderstwo, atrofia, błąd. Nie uciekniesz przed śmiercią.|
+498|Ich liczebność stanowi ich słabość.|
+499|Nie umkniesz wszystkim sześciu swoim losom.|
+500|[Nekrońskie stęknięcia]|
+501|Potwierdzam.|
+502|Jesteśmy bez końca.|
+503|Ciężkie wsparcie ogniowe.|
+504|Nieśmiertelni. Oczekiwanie na rozkaz.|
+505|Robimy postępy.|
+506|Strzelamy do celu.|
+507|Obserwacja.|
+508|Odwrót.|
+509|Ostrzeliwują nas.|
+510|W trakcie walki.|
+511|Polegli powstaną ponownie.|
+512|Imperium Nekronów powstaje!|
+513|Wykryto wrogów.|
+514|Nasza służba trwa wiecznie.|
+515|Naszym obowiązkiem jest wojna, a wojna nigdy się nie zmieniła.|
+516|Duży cel namierzony.|
+517|Służymy.|
+518|Na twoje polecenie.|
+519|Jaka jest twoja wola?|
+520|Twoi strażnicy czekają.|
+521|Przemieszczamy się.|
+522|Jedno uderzenie.|
+523|Honor dla dynastii!|
+524|Mamy ważniejsze zadania do wykonania.|
+525|Naszym obowiązkiem jest chronić i umrzeć.|
+526|Nasze tarcze utrzymują się!|
+527|Hra!|
+528|Formacja obronna!|
+529|Taka surowa technika.|
+530|Uhonorujemy tę śmierć, przelewając krew mordercy.|
+531|Jesteśmy obrońcami eonów!|
+532|Spotkamy się z wrogiem w walce – jeśli zajdzie tak daleko.|
+533|Jesteśmy tarczami naszej dynastii.|
+534|Nikt przez nas nie przejdzie.|
+535|Godna próba siły.|
+536|Prymitywni głupcy.|
+537|Tak.|
+538|Wydajne.|
+539|Kto jest następny na liście?|
+540|Nasze cele czekają.|
+541|Śledzimy cel.|
+542|Śmierć!|
+543|Obserwujemy ten obszar.|
+544|Odwrót.|
+545|Cel ustalony. Nie ucieknie.|
+546|Zmiana pozycji.|
+547|Hnnng.|
+548|Kontratak!|
+549|Nasza pozycja jest zagrożona.|
+550|To niezbędne poświęcenie.|
+551|Nie uciekną nam z celownika.|
+552|Nie mogą się ukrywać bez końca.|
+553|Satysfakcja z doskonałego zabójstwa.|
+554|Wróg nigdy się nas nie spodziewa.|
+555|Wystrzelić tę prymitywną broń z ich rąk.|
+556|Eliminacja celu priorytetowego.|
+557|Z autorytetem.|
+558|Zgadzamy się.|
+559|Służymy Triumwiratowi.|
+560|Niezmordowanie wykonujemy obowiązki.|
+561|Nasz osąd będzie szybki.|
+562|Przyjmij wyrok!|
+563|Ulegniesz!|
+564|To wartościowy przeciwnik!|
+565|Wytrzymamy.|
+566|Potrzebny jest dystans.|
+567|Pakiety aktywowane.|
+568|Hmmmmm.|
+569|Prowokują nas.|
+570|Nie najgorsza próba.|
+571|Dopóki stoimy, dynastie nigdy nie upadną.|
+572|Nasz autorytet jest absolutny!|
+573|Zostaną osądzeni – w ten czy inny sposób.|
+574|Dopóki stoję, starożytne kodeksy będą przestrzegane.|
+575|Jeśli bitwa jest tego warta, będziemy tam.|
+576|Wykonywaliśmy obowiązki przez sześćdziesiąt milionów lat. Dziś też je wykonamy.|
+577|Posłać tych żałosnych nieszczęśników do piachu.|
+578|Nie śpię już od sześćdziesięciu milionów lat. Nie przerażasz mnie.|
+579|[maniakalne odgłosy Nekronów]|
+580|...czuję głód...|
+581|...ciało...?|
+582|[maniakalny syk Nekronów]|
+583|[maniakalny pisk Nekronów]|
+584|To teraz moja skóra!|
+585|Moja skóra! Moja!|
+586|Mięso. Mięso. Mięso. MIĘSO!|
+587|Czuję zapach... strachu.|
+588|Ten głód... aż boli...|
+589|Tak... dużo... mięsa...|
+590|Pragnę... ich krwi...|
+591|To oznacza dla nich śmierć.|
+592|Tak.|
+593|Czyje życie teraz zakończymy?|
+594|Moim celem jest rzeź.|
+595|Noszę ze sobą śmierć.|
+596|Zabić! Zabić! Zabić!|
+597|Śmierć!|
+598|Makabryczny taniec.|
+599|Wszystko! Oznacza! Śmierć!|
+600|Hrrrrn.|
+601|Podejdź bliżej. Zabiję cię.|
+602|Żałosna próba.|
+603|Każda śmierć to postęp.|
+604|Nic nie pozostanie!|
+605|Kolejne życie do zgaszenia.|
+606|Kiedy nic już nie zostanie, moja praca będzie wreszcie zakończona.|
+607|Zetnę wroga na miejscu.|
+608|Twoja biologia jest twoją słabością.|
+609|Wspaniałe żniwa!|
+610|Przetwarzanie.|
+611|Zrozumiano.|
+612|Artyleria.|
+613|Odgłos naszych dział zwiastuje ich śmierć.|
+614|Ustalanie pozycji.|
+615|Ostrzał.|
+616|Strefę zaporowa ustalona.|
+617|Wymagany jest większy dystans.|
+618|Hrrrf.|
+619|Ostrzeliwują nas.|
+620|Zaangażowanie.|
+621|Nieuniknione.|
+622|Przygotuj się na dewastację.|
+623|Wykryto cele.|
+624|Wykorzenienie z dystansu.|
+625|Engramy osobowości zostały przeniesione do systemu pozyskiwania celów.|
+626|Ta prymitywna forma dobrze zna śmierć.|
+627|Usunę ten węzeł z ich sieci.|
+628|[świergot robotycznego roju]|
+629|Hiperlogika przyjęta.|
+630|To ma sens.|
+631|Zwiadowcy powietrzni.|
+632|Ostrza grobowca.|
+633|Już w drodze.|
+634|Słuszny wektor ataku.|
+635|Nadpisanie wektora obrony.|
+636|Kontynuacja walki: fałsz.|
+637|Funkcja uników.|
+638|Nebuloskop włączony.|
+639|Hssssz.|
+640|Oznaczono mnie.|
+641|Zakłócenie.|
+642|Sojusznik padł.|
+643|Nie spowolni mnie to!|
+644|Wyszukać kolejny cel.|
+645|Nic nie stanie mi na drodze.|
+646|Nie trafią tego, za czym nie mogą nadążyć.|
+647|Aktywacja protokołów przeciw rozpoznaniu.|
+648|Wykonanie ataku uprzedzającego.|
+649|Aktualizacja obliczeń.|
+650|Dyrektywa ustalona.|
+651|Barka anihilacji czeka na dyrektywy.|
+652|Oczekiwanie.|
+653|Wyznaczanie trasy.|
+654|Ostrzał.|
+655|Czeka już na nich anihilacja.|
+656|Torowanie drogi.|
+657|Tarcze kwantowe aktywne.|
+658|[zaniepokojone westchnienie]|
+659|Ostrzeliwują nas.|
+660|Trafiają mnie.|
+661|Jeszcze powrócą.|
+662|Strumień mocy przekierowany do kondensatora hiperlogicznego.|
+663|Wykryto aktywność poza zasięgiem.|
+664|Ścieżka anihilacji już czeka.|
+665|Wysokie prawdopodobieństwo odbicia kwantowego.|
+666|Cele zbijają się w grupę. Głupcy.|
+667|Insekty myślą, że pancerz im pomoże.|
+668|Potwierdzono rozkazy wykorzenienia.|
+669|Aktywowano protokół eksterminacji.|
+670|Nadciąga wsparcie powietrzne.|
+671|Używam destruktorów Tesli.|
+672|Czeka ich śmierć spowodowana tysiącem nacięć.|
+673|Ich zguba jest nieuchronna.|
+674|[rozpaczliwy jęk]|
+675|Imperatorze... miej mnie w opiece...|
+676|[jęk bólu]|
+677|Szukam... Jego światła...|
+678|[jęk bólu]|
+679|[krzyk]|
+680|[głośniejszy krzyk]|
+681|...nie w ten sposób...|
+682|[głośniejszy jęk]|
+683|[jęk bólu]|
+684|[stęknięcie]|
+685|[wiele stęknięć]|
+686|Skończ to cierpienie!|
+687|Imperatorze, spójrz na mnie!|
+688|Ta herezja... spłonie!|
+689|Rozgrzeszenie... przez... śmierć!|
+690|Ich krew popłynie.|
+691|Taka wola Khorne'a.|
+692|Jestem władcą krwi.|
+693|Przemoc i śmierć.|
+694|Naprzód!|
+695|Krew dla boga krwi!|
+696|CZASZKI DO CZASZKOWEGO TRONU!|
+697|[lekceważące stęknięcie]|
+698|Gniew i szał!|
+699|Odpowiedzcie na wezwanie Ojca Topora!|
+700|[zwykłe stęknięcie]|
+701|Żałosne.|
+702|Khorne'a nic to nie obchodzi!|
+703|Popłynie krew!|
+704|Wieczne zło! Krew i czaszki!|
+705|Każdy, kogo zoczę, będzie krwawą ofiarą.|
+706|Khorne'a nie obchodzi, skąd płynie krew.|
+707|Nie spocznę, póki na świecie jest nierozlana krew.|
+708|Obetnę ci głowę.|
+709|Wasz zgniły bóg jest żałosny.|
+710|Odpowiedz na zew krwi! Oprzyj się martwemu aniołowi!|
+711|Dla Khorne'a!|
+712|[demoniczny ryk]|
+713|Śmierć.|
+714|[demoniczny warkot]|
+715|Ku rzezi.|
+716|Zabić! Zabić! Zabić!|
+717|Zabić ich!|
+718|[demoniczny warkot]|
+719|[zwykłe stęknięcie]|
+720|[demoniczny warkot]|
+721|[demoniczne stęknięcie]|
+722|Czaszki do czaszkowego tronu!|
+723|Rozerwać ich ciała! Rozlać krew!|
+724|[warczenie demonicznego psa]|
+725|[demoniczne szczekanie]|
+726|[wycie demonicznego psa]|
+727|[warkot demonicznego psa]|
+728|[warczenie i kłapanie demoniczne psa]|
+729|[demoniczne wycie i szczekanie]|
+730|[demoniczne warczenie i szczekanie]|
+731|[głośne wycie demonicznego psa]|
+732|[demoniczny pies węszący]|
+733|[demoniczny pies sapiący z sadystyczną radością]|
+734|[ochocze wycie demonicznego psa]|
+735|Dla Khorne'a!|
+736|[demoniczny warkot silnika]|
+737|[demoniczne syczenie silnika] Czaszki.|
+738|[demoniczny ryk silnika]|
+739|Czas na krwawą ucztę.|
+740|Więcej krwi dla boga krwi!|
+741|Koła miażdżą! [demoniczny ryk silnika]|
+742|Nieopanowany szał.|
+743|[demoniczny stukot silnika]|
+744|[demoniczny jęk silnika]|
+745|Krew z daleka!|
+746|Mięso na wyciągnięcie szponów!|
+747|KALECZYĆ! ZABIJAĆ! PALIĆ! [głośny, demoniczny ryk silnika]|
+748|Czaszki! Czaszki!! CZASZKI!!|
+749|Z ich kończyn będzie prawdziwa uczta. [demoniczny warkot silnika]|
+750|Bezlitosna bestia. [demoniczny syk silnika]|
+751|Khorne żąda zniszczenia!|
+752|Wszystko będzie z Jego wolą|
+753|Zgodnie z wiarą!|
+754|Jestem Jego żelazną wolą|
+755|Za Katherine, za wieczność|
+756|Kroczę w Jego świetle|
+757|Nie okazuj litości niesprawiedliwym|
+758|Moje ostrze wymierzy Jego potężny wyrok|
+759|Imperator żąda twojej śmierci!|
+760|Zbliż się do mnie, a Imperator cię pokarze|
+761|Zmiana pozycji|
+762|Nasze dusze wypełnia Światło Imperatora|
+763|Jesteśmy błogosławione, kroczymy z Imperatorem!|
+764|Należy usunąć to zło z naszej galaktyki!|
+765|Twoja obecność nie będzie już tolerowana!|
+766|[ogólne stęknięcie]|
+767|Hrrnhh|
+768|Twoja herezja dodaje mi tylko sił, które pozwolą mi cię zabić!|
+769|Umrę dopiero wtedy, gdy zechce tego Imperator|
+770|Idź z Imperatorem|
+771|Chwała – chwała w Jego imieniu!|
+772|Nie tolerować heretyka|
+773|Aż do ostatniego tchu będę nieść światło Imperatora w najciemniejsze zakątki galaktyki|
+774|Pogarda dla grzesznika!|
+775|Wracaj do Osnowy!|
+776|Bez wątpliwości|
+777|Zgodnie z rozkazem|
+778|Służymy z wiarą|
+779|W Jego świetle jesteśmy niezwyciężone|
+780|Wiara prowadzi mnie prawą ścieżką|
+781|Jedyne prawdziwe światło to światło Imperatora!|
+782|Heretycy, mutanty, xenosy – wszystkich usuniemy|
+783|Jesteśmy zdeterminowane!|
+784|Z chęcią oddajemy życie za nasz zakon|
+785|[ogólne stęknięcie]|
+786|Hrrn|
+787|Ostrzeliwują nas!|
+788|Zostałyśmy zaatakowane!|
+789|On już wie, kim oni są|
+790|Jestem Jego potężnym narzędziem śmierci!|
+791|Czujność, siostry – zbliżają się niegodni|
+792|Nasza służba jest wieczna|
+793|Katherine, kieruj nas, abyśmy podążały twoimi śladami|
+794|Twoja skaza nie będzie się już rozprzestrzeniać!|
+795|Załatwimy to|
+796|Bierzemy się!|
+797|Jak brzmi twój rozkaz?|
+798|Przygotować broń ciężką!|
+799|Idziemy zlikwidować nieczystych|
+800|Usunąć wynaturzenia!|
+801|Jeśli się zbliżą, zginą|
+802|Odwrót|
+803|Poddaj się osądowi Imperatora!|
+804|[zwykłe stęknięcie]|
+805|Hrrnnn|
+806|Tylko na tyle cię stać?|
+807|W Jego świetle – przetrwamy|
+808|Oddajemy cześć męczennikom|
+809|W świętym ogniu spełniamy Jego wolę|
+810|Nadchodzi wróg, musimy być gotowe|
+811|Jeśli grzesznik nie zaprzestanie grzesznych działań, usuniemy go!|
+812|Nie ma w tej galaktyce problemu, którego nie rozwiąże nasza siła ognia|
+813|To podłe wynaturzenie zostanie oczyszczone przez święty ogień!|
+814|Niech tak się stanie|
+815|Zgodnie z rozkazem|
+816|Jaka jest twoja wola?|
+817|Służymy|
+818|Szukamy Jego wrogów|
+819|Jesteśmy Jego osądem|
+820|Śmierć wszystkim grzesznikom!|
+821|Musimy się przegrupować|
+822|Nasze tarcze strzegą godnych|
+823|[zwykłe stęknięcie]|
+824|Hrrnnnn|
+825|Moja wiara mnie chroni tak samo, jak mój pancerz|
+826|Nikt mnie nie skrzywdzi, gdy kroczę z Imperatorem|
+827|Idź i zajmij swoje miejsce jako Jego prawica!|
+828|Dzięki wierze w Imperatora nikt nie zdoła mnie powstrzymać|
+829|Uwaga, siostry, heretycy nam się przyglądają|
+830|Jesteśmy wytrwałymi obrończyniami wiary|
+831|Słabi nie zasługują na litość|
+832|To naprawdę obrzydliwe stworzenia!|
+833|Przekonanie to najsilniejsza zbroja|
+834|Potwierdzam|
+835|O naszym życiu decyduje Imperator|
+836|W pokucie szukamy odkupienia|
+837|Bliżej odkupienia lub bliżej śmierci – zgodnie z Jego wolą|
+838|Mój patroszyciel wymierza jego osąd|
+839|Wytnę wszelką herezję na mej drodze!|
+840|Zmiana pozycji – pozwoli nam to lepiej ukarać Jego wrogów|
+841|Imperatorze, dostrzeż te czyny, które robimy w twoim imieniu!|
+842|[ogólne stęknięcie]|
+843|Hrrrrnn|
+844|Cierpienie jest naszą modlitwą|
+845|Twój atak przynosi mi tylko odkupienie|
+846|Czy jest coś szlachetniejszego niż śmierć w Jego służbie?|
+847|Moją nagrodą będzie pokuta|
+848|Bądźcie czujne, zbliżają się Jego wrogowie|
+849|Moje życie dla Boga Imperatora!|
+850|Jeśli moja śmierć jest walutą skruchy, to składam tę zapłatę z radosnym sercem|
+851|Gaaahh!|
+852|[szaleńcze zawodzenie]|
+853|[gniewne zawodzenie]|
+854|[jęk z bólu]|
+855|Aarghh|
+856|Muszę... ich... zabić|
+857|Zapewnij mi śmieeeeeeerć!|
+858|Aaarrrrrggggghhhh|
+859|[zwykłe stęknięcie]|
+860|Hnnnrrh|
+861|[jęk z bólu]|
+862|[jęk z bólu]|
+863|Imperatorze, teraz weź mnie!|
+864|Szukamy Jego światła|
+865|Poślij... nas... na... nich!|
+866|Służę Mu z wdzięcznym sercem|
+867|Tak właśnie będzie|
+868|Kto potrzebuje mojej pomocy?|
+869|Tak?|
+870|Pospiesznie|
+871|Twoja chorobliwa dusza spłonie!|
+872|Jestem gotowa|
+873|Muszę się wycofać|
+874|Dzięki Jego światłu wracasz do zdrowia|
+875|Idź, Siostro! Jesteś ucieleśnieniem Jego woli!|
+876|[ogólne stęknięcie]|
+877|Hrrnnnn|
+878|Imperatorze, chroń swoją pokorną poddaną|
+879|Musiał się chyba bardziej postarać!|
+880|Spoczywaj w pokoju, to koniec twojej służby|
+881|Moją duszę wypełnia światło Imperatora|
+882|Paskudny grzesznik kieruje się w tę stronę|
+883|Wiernym przynoszę uzdrowienie. Nieczystym – śmierć|
+884|Samo twoje istnienie jest podłością. Trzeba cię zgładzić!|
+885|Tak!|
+886|Natychmiast|
+887|Transportowiec czeka na rozkaz|
+888|Rhino gotowy|
+889|Do boju!|
+890|Zniszczyć ich i kierować się szybko naprzód|
+891|Czekam na wroga!|
+892|Zmieszać Jego wrogów|
+893|Sprawdzają naszą determinację!|
+894|Nie sprostają naszym pancerzom|
+895|Pod ostrzałem|
+896|Rzucają nam wyzwanie|
+897|Radujcie się – to śmierć w Jego służbie|
+898|Wyzwolić gniew Imperatora!|
+899|Cele poruszają się poza zasięgiem naszej broni|
+900|Naprzód, do boju. Stanowimy nadzieję Imperium|
+901|Tak jest!|
+902|Potwierdzam|
+903|Co teraz oczyścimy?|
+904|Gotowa do walki|
+905|Szukam optymalnej pozycji strzeleckiej|
+906|Dzięki tej świętej broni zniszczymy Jego wrogów!|
+907|Jeśli się zbliżą, przełamiemy ich|
+908|Nikt nie może się oprzeć woli Imperatora!|
+909|Sprowadźcie na heretyka śmierć|
+910|Otrzymuję obrażenia|
+911|Wróg atakuje. Okazać wytrwałość|
+912|Jesteśmy pod ostrzałem|
+913|Najsilniejszym pancerzem jest Jego światło|
+914|Śmierć jest ceną chwały w Imperium.|
+915|Ani heretycy, ani xenosy nie staną nam na drodze!|
+916|Ostrożnie, siostry, wróg jest w pobliżu|
+917|Niech nadejdzie wróg – mamy doskonałą celność i niezachwianą determinację!|
+918|Ta herezja musi zostać usunięta!|
+919|Nieczyści spłoną|
+920|Służba zapewnia życie i prawdę|
+921|Ogień – i wściekłość!|
+922|W gotowości|
+923|Zajmowanie pozycji|
+924|Usuniemy nieczystych bolterem, płomieniami i bronią termiczną|
+925|Nikt tędy nie przejdzie!|
+926|Kontakt z wrogiem!|
+927|To nasza próba!|
+928|Otrzymujemy ataki|
+929|Ich słabe ataki nie mają szans z naszym pancerzem|
+930|Ofiara nie zostanie zapomniana|
+931|Nie przestaniemy, dopóki galaktyka nie zostanie oczyszczona z tego brudu!|
+932|Wróg sprawdza naszą pozycję|
+933|W oczyszczającym ogniu wiary powalamy grzeszników|
+934|Bije we mnie święty blask|
+935|Jak sobie życzysz|
+936|Nikt mnie nie przebije|
+937|Dzięki wierze podbijemy galaktykę|
+938|Mamy obowiązki na froncie|
+939|Bez litości|
+940|Słabe serca upadną przede mną|
+941|Aaarrrggggghhhh!|
+942|Na wrogów, którzy się zbliżą, czeka śmierć|
+943|Przegrupowanie!|
+944|Płoń, heretyku, płoń!|
+945|[ogólne stęknięcie]|
+946|Hrrnn|
+947|Hm! Nie zasługujesz na Jego światło|
+948|Nikt nas nie powstrzyma!|
+949|Szanujemy to poświęcenie|
+950|Świeci we mnie Jego boskie światło!|
+951|Nowe cele szukają sądu Imperatora|
+952|Maszerujemy do walki!|
+953|Niesiemy galaktyce prawdę Imperatora|
+954|[wściekły demoniczny ryk]|
+955|[demoniczne warczenie]|
+956|Żałosna istota!|
+957|Krew, tak! Więcej krwi dla Khorne’a!|
+958|[demoniczne warczenie]|
+959|[zwykłe stęknięcie]|
+960|[demoniczne stęknięcie]|
+961|[demoniczny ryk]|
+962|[demoniczne warczenie]|
+963|[zwykłe stęknięcie]|
+964|[demoniczne stęknięcie]|
+965|[demoniczny ryk]|
+966|Mam cwany plan.|
+967|Nie muszem być najcwańszy, jedynie najwienkszy!|
+968|Jesteśmy od walki. No to walczmy.|
+969|Orki zawsze wygrywają! Nawet gdy przegrywają.|
+970|Biermy się!|
+971|ŁAAA!|
+972|Jak tu przyjdą, to zdechną.|
+973|Szef nie ucieka. To taka... taktyka.|
+974|Od razu fajniej!|
+975|Chcę ŁAAA!|
+976|A może zapodam wam mały huk?!|
+977|Robisz siem głodny? Tak, głodny!|
+978|Dobra, maluczki, idź se coś ugryźć.|
+979|[ryk bólu orka]|
+980|Tylko tak kiepsko walicie?!|
+981|Ale żałosna spluwka.|
+982|Niczego nie czujem.|
+983|[wybuch śmiechu orka]|
+984|ŁAAA!|
+985|Czujem zapach pokurcza!|
+986|Walka najlepsza. Nic się nie równa z walkom.|
+987|Pierw wal, potem pytaj.|
+988|Takie gadżety w ogóle nie pomogom.|
+989|Ta jest, szef!|
+990|Co je?|
+991|Najlepiej jest po staremu.|
+992|Wiem, że se patrzysz na mnie.|
+993|Co tera?|
+994|Pierw ratować groty i dziwolongi!|
+995|Żryj to ŁAAA!|
+996|Lubiem deptać. Dobry to tera pomysł?|
+997|Wysadzanie łbów!|
+998|Gork z nami! ŁAAA!|
+999|A, me oczy!|
+1000|Au! To boli!|
+1001|Ej! Przestań!|
+1002|Se strzelają do mnie?|
+1003|Weźcie mnie stąd!|
+1004|Czujem... że nie dycha.|
+1005|Mam we łbie już tylko ŁAAA!|
+1006|Chyba szykuje siem bitka!|
+1007|Gork z nami. A może Mork. W sumie nie wiadomo.|
+1008|Więcej walki, więcej ŁAAA! Więcej ŁAAA... tak w kuko.|
+1009|Super. Się teraz wykażę!|
+1010|Skoro tak mówisz.|
+1011|Pewnie, szefie.|
+1012|Chyba da siem to załatać.|
+1013|Gotowy do łapania duchów.|
+1014|Cyborkowe giry gotowe.|
+1015|Mam inne sprawy na łbie.|
+1016|Wszystko da siem naprawić odrobinom dźgania.|
+1017|Zabić! Zabić wszystkich!|
+1018|To trochę zaboli.|
+1019|Ból to zwidy umysłu! Z wyjątkiem twojego bólu.|
+1020|[stęknięcie z bólu]|
+1021|Cho no tu, mam dla cię leczonko!|
+1022|Ej, trzeba dać tam szwy! Albo pospawać...?|
+1023|Nie każdego da siem naprawić!|
+1024|To oni bendom potrzebowali doktorka!|
+1025|Coś tam je. Przyda siem na części?|
+1026|Mogę ciem załatać – nawet trochę ulepszyć!|
+1027|Ej, człeki! Nie dam wam tak tu latać i łatać swoich kumpluf.|
+1028|Jesteśmy narzeńdziem wojny.|
+1029|Co szef mówi, szef ma.|
+1030|Szturmiarze gurom!|
+1031|Paki rakietowe gotowe.|
+1032|Nawet nas nie zobaczom.|
+1033|Spuśćmy im lanie.|
+1034|Cho no tu, a zaraz ci pokażemy!|
+1035|Cofnijta się trochę, co byśmy mogli na nich ruszyć.|
+1036|Przywalić prosto w pysk!|
+1037|Arrrrrhhhh!|
+1038|Będziem mieli na podeszwach fuj plamy!|
+1039|[stęknięcie z bólu]|
+1040|Hrrnnnnn!|
+1041|Nie dowalicie nam... zbyt mocno!|
+1042|Naparzenie z bliska jest najlepsze.|
+1043|Zdechli, robiąc to, co uwielbiajom.|
+1044|Niebo należy do orkuf!|
+1045|Zdaje siem, że czeka nas walka! I dobrze.|
+1046|Fajnie iść na porządnom bitkę, ale lepiej tam polecieć.|
+1047|Latające człeki są słabe i miętkie.|
+1048|Nie bij!|
+1049|Co? Wybacz!|
+1050|Jak tam mówisz, szefie!|
+1051|Groty gotowe do walki!|
+1052|Tak je. Się robi.|
+1053|Ale oberwom!|
+1054|No to chodźcie po nas!|
+1055|Wszyscy zdechnieeeemy!|
+1056|[stęknięcie]|
+1057|Aaaa. Morku, uratuj nas!|
+1058|A! Nie, przestań!|
+1059|Urrrghh!|
+1060|A teraz my, niedobrze!|
+1061|Poradzimy se z nimi! Chyba!|
+1062|Więcej ich? Kiepsko.|
+1063|Mniejsi niż my! To łatwiejsze niż kopanie paszczaków!|
+1064|Dobra, szefie.|
+1065|Bez ociągania siem.|
+1066|Tak? Co?|
+1067|Orki gurom.|
+1068|Chodźmy, chopcy.|
+1069|Dajcie im szczałów.|
+1070|Zabić, co podlezie.|
+1071|Cofnąć się, chopcy.|
+1072|Ciskam kijbombę!|
+1073|Szaleńczy atak!|
+1074|[ryk z bólu]|
+1075|Aaaaa!|
+1076|Strzelają do nas!|
+1077|Wcale nie bolało.|
+1078|Czyli więcej dla nas do zdeptania.|
+1079|Orki nie do powstrzymania!|
+1080|Dają prosto na nas.|
+1081|To wielka galaktyka pełna przygód i walki. A my uwielbiamy se walczyć!|
+1082|Dobrze, że je was tak wiele, potworki. Dzięki temu mogą my dłużej se strzelać.|
+1083|Som burszuje.|
+1084|Najlepsi z najlepszych.|
+1085|To nasza okazja.|
+1086|Możemy szefować chopakom.|
+1087|Idą my i prowadzą.|
+1088|Uwielbiam dobrom walkę.|
+1089|Porządnie ich podeptać.|
+1090|Burszuje nie uciekają. To przebiegła taktyka.|
+1091|Ale życie!|
+1092|No to jazda, jazda!|
+1093|W sumie się leniliśmy... Teraz użyjemy obu łap.|
+1094|Uch. Przebiło mi pancerz!|
+1095|Nie wiedzom, kim jesteśmy!?|
+1096|Są my pod ostrzałem?|
+1097|Au. Tera moja kolej.|
+1098|Niech kto weźmie jego zenby, co?|
+1099|W pierwszym szeregu!|
+1100|O! Więcej do rozwalenia!|
+1101|Trochę se odpoczniemy... gdy zdechniemy! Ha, ha, ha.|
+1102|Jak podbijemy galaktykę... będziemy się naparzać ze sobom!|
+1103|Wyglądają nieźle! Pewnie dobrze się nam postawiom!|
+1104|Megaburszuje. Bardziej odpicowani.|
+1105|Co?|
+1106|Trzeba co zabić?|
+1107|Weź no nie przeszkadzaj.|
+1108|Dajemy bliżej rozwałki.|
+1109|Megaszczały! Megaszczały!|
+1110|Idą se bliżej?|
+1111|Nie chcem porysować pancerza!|
+1112|Przywalić im w mordę!|
+1113|Chcę sprawdzić te szpony!|
+1114|Hm. Tfardy wróg.|
+1115|Kto to rzucił?|
+1116|Ale nas wkurzasz.|
+1117|Tera przesadziliście!|
+1118|No to teraz cię widzę.|
+1119|To nic. Więcej naparzania dla nas!|
+1120|ŁAAA! Megaburszuje!|
+1121|Nowe mięczaki do zdeptania!|
+1122|Sporo bym dał za dobrego paszczaka.|
+1123|Mekaniaki robią megamegapancerz? Trzeba więcej szczałów.|
+1124|Ooo, mogą my gwizdnąć te części na nasze pancerze.|
+1125|Rozpaleni, szefie.|
+1126|Szefie. He, he.|
+1127|Co się nie pali?|
+1128|Coś do spalenia?|
+1129|Coraz cieplej, cieplej...|
+1130|Ha, zmuśmy ich do ognistego tańca!|
+1131|Cho no tu! Rozgrzejemy cię!|
+1132|Robi się za gorąco. Cofnijcie się trochę.|
+1133|Au! Hi, hi!|
+1134|Ostrożnie! Nie w zbiornik!|
+1135|W ogniu, nie pod ostrzałem!|
+1136|Uwaga, jest tu gorąco.|
+1137|Iskra se zgasła.|
+1138|Przegrzewamy się tu!|
+1139|O, więcej paliwa do ognia!|
+1140|Jest coś jeszcze poza ogniem i bitką...? Nie.|
+1141|Chili paszczak – prawie zimny.|
+1142|Dalej, chopcy! Niech nasz ogień zobaczy se sam Gork!|
+1143|Co? Co?|
+1144|Nic!|
+1145|Szabrownicy! Mają najlepsze spluwy!|
+1146|Jaki je plan?|
+1147|Się ruszymy, jak musimy.|
+1148|Szabrownicy i spluwy!|
+1149|Bendom mieli więcej dziur niż plan herszta...! Wybacz, szefie.|
+1150|Żeby nasze gnaty nie wpadły w złe rence.|
+1151|Kto siem będzie z nami spierać?|
+1152|Ej! To bolało.|
+1153|Dość już. Zdeptać wroga!|
+1154|Oddać im!|
+1155|Cofnijcie się! Nie mogę stąd naparzać.|
+1156|Biedactwo. Przetrząsnę mu kieszenie.|
+1157|Dzienki za ten łup!|
+1158|Patrzcie, mają coś do gwizdnięcia.|
+1159|To? Nie, znalazłem, jak se spadło z cienżarówy. Serio!|
+1160|Twoja broń wpadła mi do torby? Wybacz, szefie. To siem nie powtórzy.|
+1161|Czekaj, musim przygotować gnaty! Dobra!|
+1162|Skoro musimy.|
+1163|No, może.|
+1164|Orki są najlepsze. A szpanerzy to najlepsze orki!|
+1165|Cacka!|
+1166|Ruszamy z naszymi bogactwami.|
+1167|Macie trochę tego, szumowiny!|
+1168|Jak tu przyjdom, pożałujom.|
+1169|Cofam się, co by lepiej strzelić.|
+1170|Czegoś takiego to jeszcze se nie widzieli.|
+1171|[ryk orka]|
+1172|Urrrgghhh!|
+1173|Cho no tu, żebyśmy mogli ci wybić zenby!|
+1174|To nie wystarczy!|
+1175|Potem se wrócimy po ich zenby.|
+1176|Więcej... szczałów!|
+1177|Coś nowego do zabicia!|
+1178|Zenby to siła, a siła gurom.|
+1179|Co się daje orkom, co mają wszystko? Więcej szczałów! Ha, ha, ha!|
+1180|Nie zasługujesz nawet, żeby całować paszczaki w kupacz.|
+1181|No co?|
+1182|Na co czekamy?|
+1183|Szefie? SZEFIE? Szefie?!|
+1184|Chcę już iść.|
+1185|CZERWONE ZASUWA SZYBCIEJ.|
+1186|Motórowcy strzelają, szefie!|
+1187|Nawet strzelamy szybko!|
+1188|Jadą my w złą stronę!?|
+1189|Palimy gumę, szefie.|
+1190|Dodajemy pałeru!|
+1191|Ej, wal do mnie, nie do bryki.|
+1192|Nie! Porysujesz lakier!|
+1193|Zasuwamy! Czemu nas trafiajom?!|
+1194|Złaź mi z MOTORU!|
+1195|Co to było?|
+1196|Będzie plama na drodze.|
+1197|Są tam nowe cieniasy. Zaraz tam bendem!|
+1198|Trza więcej czerwonej farby. Muszę pędzić szybciej.|
+1199|Od motóra lepszy jest tylko... szybszy motór!|
+1200|Czas na wyścig! Spluwy dozwolone, co nie?|
+1201|Kiedy strzelamy?|
+1202|Tak.|
+1203|Mordodredy.|
+1204|Blaszaki.|
+1205|Człapiemy tam.|
+1206|Szczelanie. Piękna muzyka.|
+1207|Nadciągają... i se spadają.|
+1208|Czy tu w ogóle je wsteczny bieg?|
+1209|[metaliczny jęk]|
+1210|Mordodredy obrywają.|
+1211|Strzelać do nich!|
+1212|Moja kolej...|
+1213|Nie żyje?|
+1214|Mordodredy z przodu!|
+1215|Co to tam je?|
+1216|Może mnie kto podrapać po nochalu? Sam nie mogę tym szponem...|
+1217|Jak już mam tu se siedzieć, to chcę pełno szczałów.|
+1218|Lśniąca puszka człeków. Ale zobaczmy, kto lepiej ukatrupia!|
+1219|Lataki!|
+1220|Co takiego?|
+1221|Dobra, kronżę.|
+1222|Powalanie z powietrza.|
+1223|Już tam mykam.|
+1224|Rozwalić ich!|
+1225|To wróci już z dziurami!|
+1226|Naprzód, zaszaleć!|
+1227|Bomby lecą!|
+1228|Mają śmigło!|
+1229|Kiepsko to widzem.|
+1230|Latak pod ostrzałem!|
+1231|Się tak nie zbliżaj!|
+1232|Kolejny woncha kwiatki od spodu!|
+1233|Se rozkręcam śmigła!|
+1234|Dajemy zwiad. Coś tam je!|
+1235|Nie wiem, czy ich se siekać, czy lepiej rombać...|
+1236|Kto powiedział, że orki se nie latają? Oberwiesz bombę!|
+1237|Wymyślne z waz lotniki, co?|
+1238|Zajęty, szefie.|
+1239|No?|
+1240|Trzeba ci naprawić bebechy?|
+1241|Majsterkujem.|
+1242|Już tam zapodaję.|
+1243|Sztukowany strzelacz, bach-bach. Działa jak trza.|
+1244|Hmm, mogę ucwanić te szpony z kolcami.|
+1245|Czasem trza przestać kombinować i zacząć deptać.|
+1246|Fajnie, że mi testują spluwy.|
+1247|Sporo siem nauczył. Wracam na odbudowę.|
+1248|Będziecie tera działać lepiej.|
+1249|Więcej pancerza, trudniej ukatrupić!|
+1250|Wada w pancerzu! Aaa.|
+1251|Trza to naprawić.|
+1252|Tarcze i pancerz się trzymią.|
+1253|No ładnie...|
+1254|Jakiś przydatny złom?|
+1255|Przekręcam wszystko do 11!|
+1256|Co? Mają tam coś wartego podebrania?|
+1257|Nie wiem, skąd wiem, ale wiem. Tę spluwa trzyma się w drugom stronę.|
+1258|Lepiej być dziwolongiem niż szefem. A najlepiej to i to.|
+1259|Ten człek naprawia jak ja. Ale nie tak dobrze szczela!|
+1260|Jest bombowiec.|
+1261|Bomby hukowe gotowe.|
+1262|Krążymy.|
+1263|Zara będzie więcej szczałów.|
+1264|Przechodzem tam.|
+1265|Szykujem zrzut!|
+1266|ZA KHORNE’A!|
+1267|Będę służyć.|
+1268|Krew i mosiądz.|
+1269|[demoniczne warknięcie]|
+1270|ZABIĆ WSZYSTKICH!|
+1271|MÓJ TOPÓR ŁAKNIE KRWI!|
+1272|TA KRAINA SPŁYNIE KRWIĄ!|
+1273|[lekceważące chrząknięcie]|
+1274|[ryk przepełniony gniewem]|
+1275|Ofiaruję wasze czaszki Khorne’owi!|
+1276|Nie dbamy o to, skąd leje się krew.|
+1277|KREEEEW!|
+1278|Przynieść mi ich czaszki!|
+1279|Krew i czaszki… KREW I CZASZKI!|
+1280|Pan Krwi domaga się ofiary.|
+1281|Furia Khorne’a pochłonie wszystko!|
+1282|Wasza krew jest niczym potok gniewu. Khorne będzie zadowolony!|
+1283|Stosowna ofiara dla Tronu z Czaszek!|
+1284|Dla Khorne’a zrobię wszystko.|
+1285|Za Khorne’a!|
+1286|Daj mi rozkaz, Panie Gniewu.|
+1287|[przerażające warknięcie]|
+1288|Nikt nie przeżyje!|
+1289|Stańcie do walki, tchórze!|
+1290|Moje ostrze pragnie waszej krwi.|
+1291|Na kolana przed potęgą Khorne’a!|
+1292|[sfrustrowany ryk]|
+1293|Przeleję waszą krew.|
+1294|Tysiąc ostrzy! Tysiąc ofiar!|
+1295|[demoniczne chrząknięcie]|
+1296|Żałosne.|
+1297|Podejdźcie bliżej!|
+1298|Odważycie się?!|
+1299|Khorne jest zadowolony. Nie dba o to, skąd płynie krew.|
+1300|[głośny wrzask]|
+1301|Kolejne czerepy dla Tronu z Czaszek!|
+1302|Khorne domaga się krwi – a ja ją przeleję.|
+1303|Me ostrze spływa rzeką krwi – ku chwale Khorne’a!|
+1304|Śmierć to słabość. Khorne jest nieskończony, a jego gniew – nieśmiertelny!|
+1305|Puste naczynia bez krwi i duszy! Khorne domaga się waszych czaszek!|
+1306|Wasza anielska krew jest rozkosznie zepsuta. Khorne będzie zadowolony.|
+1307|[udręczone warknięcie]|
+1308|Muszę służyć.|
+1309|Krew dla Boga Krwi!|
+1310|[demoniczne ryknięcie]|
+1311|Muszę ZABIJAĆ!|
+1312|[rozdzierający ryk]|
+1313|MIAŻDŻYĆ! ZABIJAĆ! MORDOWAĆ!|
+1314|[wściekły ryk]|
+1315|ZMIAŻDŻĘ CIĘ!|
+1316|NIESKOŃCZONY GNIEW!|
+1317|KREW DLA PANA CZASZEK!|
+1318|[demoniczny wrzask]|
+1319|Dusze dla kuźni dusz!|
+1320|[agresywne ryknięcie]|
+1321|RWAĆ! DRZEĆ! NISZCZYĆ!|
+1322|[agresywne warknięcie]|
+1323|Czerepy dla Tronu z Czaszek!|
+1324|Gniew Khorne’a nas prowadzi!|
+1325|Krew musi płynąć!|
+1326|Naprzód! Po krew dla Boga Krwi!|
+1327|Przelać krew! Zebrać czaszki!|
+1328|Zmiażdżyć wszystkich!|
+1329|[wściekły ryk]|
+1330|Zmiażdżyć! Zdeptać! Zabić!|
+1331|Khorne to my! Krew musi płynąć!|
+1332|Rozerwać ich na strzępy!|
+1333|Nasze ostrza łakną krwi!|
+1334|Miażdżyć! Rwać! Zabić!|
+1335|Zmiażdżyć wszystkich! Zebrać czaszki dla Khorne’a!|
+1336|Potwierdzam.|
+1337|Rozkazy otrzymane.|
+1338|Zbroja bojowa Invictor w gotowości!|
+1339|Czekam na rozkazy.|
+1340|Awangarda w ruchu.|
+1341|Prowadzę ostrzał.|
+1342|Zmiażdżyć ich!|
+1343|Za Imperatora!|
+1344|Zmieniam pozycję.|
+1345|Atakuję salwą granatów.|
+1346|[stęknięcie]|
+1347|Urgh!|
+1348|Stańcie za mną, bracia!|
+1349|Tylko na tyle was stać?|
+1350|Pomszczę poległych braci!|
+1351|Za Sanguiniusa!|
+1352|Cele w ruchu.|
+1353|Ciężkie wsparcie w gotowości.|
+1354|Uszczuplę szeregi wroga.|
+1355|Przelejcie ich krew dla Imperatora!|
+1356|Wysłać to z powrotem do Osnowy!|
+1357|Załatwione|
+1358|To zbliży nas do zwycięstwa|
+1359|Nic nie stanie nam na drodze|
+1360|Służę Większemu Dobru|
+1361|Zmierzam na pozycję|
+1362|Sprzeciwiają się tradycji Tau'va! Zabić wszystkich!|
+1363|Spowolnię ich|
+1364|Odwrót!|
+1365|Najpierw poznaj wroga i znajdź słabe punkty, następnie zadaj śmiertelny cios|
+1366|Silniki włączone!|
+1367|[zwykłe stęknięcie]|
+1368|Ugh!|
+1369|Nie złamią mnie|
+1370|Tylko na tyle was stać?|
+1371|To ciężkie brzemię posyłać całe tłumy na śmierć, ale to wszystko dla Większego Dobra|
+1372|Nie zawiedziemy!|
+1373|Cele poza zasięgiem wzroku|
+1374|Długo studiowałem nauki Puretide’a|
+1375|Dzięki mądrości Auna odniesiemy zwycięstwo|
+1376|Wasze machiny śmierci nie dorównują mojemu pancerzowi bitewnemu!|
+1377|Z dumą!|
+1378|Za Vior'la!|
+1379|Czekam na rozkazy|
+1380|Jak mogę pomóc?|
+1381|Na linię frontu!|
+1382|Likwiduję cele|
+1383|Ustanawiam strefę ognia|
+1384|Szukam lepszej pozycji|
+1385|Nie zmarnujcie żadnego strzału!|
+1386|Obserwuj ruchy wroga! Przewiduj, gdzie się pojawi, zanim to zrobi!|
+1387|Arrgh!|
+1388|Hnng!|
+1389|Pod ostrzałem!|
+1390|Wróg skrócił dystans|
+1391|Zginęli, by umożliwić nam zwycięstwo|
+1392|Do mnie, drużyno – ruszamy na wroga!|
+1393|W zasięgu wkrótce zjawi się więcej celów|
+1394|Z pola bitwy można wynieść niezliczoną ilość lekcji|
+1395|Znajdziesz mnie w gąszczu walki – nigdy nie czekam się na tyłach|
+1396|Zniszczyć cel, zanim wezwą posiłki!|
+1397|Tak będzie|
+1398|Oczywiście|
+1399|Jestem|
+1400|Co cię niepokoi?|
+1401|Ruszę tam, gdzie trzeba|
+1402|Lepiej się wycofać, niż ryzykować przygwożdżenie|
+1403|To smutne, że do tego doszło|
+1404|Możecie opierać się słuszności Tau’va, ale nie oprzecie się mojemu ostrzu|
+1405|Ciosy wroga cię nie powstrzymają|
+1406|Przemierzaj pole bitwy szybko i po cichu|
+1407|Sprawdzają moją determinację!|
+1408|Agh!|
+1409|Odrzucenie Większego Dobra będzie waszą zgubą|
+1410|Nie jest za późno, by wkroczyć na lepszą drogę|
+1411|Nie troskajcie się, moje dzieci – z radością oddali życie dla dobra naszego imperium|
+1412|Dla tych, którzy wzgardzą słuszną drogą, nie będzie litości|
+1413|Jeszcze mogą uwierzyć w szczerość naszych słów|
+1414|Poprzez jedność i wspólny cel zaniesiemy całemu światu blask Większego Dobra|
+1415|To nie nienawiść czy zła wola każą nam iść na wojnę z tymi, którzy odrzucają nasze słowa. Robimy to, by uratować ich przed nimi samymi.|
+1416|Wasze kazania ku czci fałszywego bóstwa są puste i wyprane z prawdziwej mądrości|
+1417|Załatwię to|
+1418|Rozkaz|
+1419|Służymy Większemu Dobru|
+1420|Czekam na polecenia|
+1421|Drużyna zwiadowców w ruchu|
+1422|Wyciąć ich w pień!|
+1423|Wykonać Mont’ka|
+1424|Musimy zmienić pozycję!|
+1425|Zidentyfikowano ważny cel|
+1426|Przeciążenie reaktora|
+1427|[stęknięcie]|
+1428|Aargh!|
+1429|Namierzono nas!|
+1430|Obrywam!|
+1431|Doceńcie ich poświęcenie|
+1432|Walczcie dalej, bracia i siostry!|
+1433|Ruch przed nami|
+1434|Kasta Ognia gotowa do służby!|
+1435|Ilekroć się podniesiesz, położę cię na łopatki|
+1436|Rozkazy potwierdzone|
+1437|Dla Większego Dobra|
+1438|Drużyna szturmowa w gotowości!|
+1439|W gotowości|
+1440|Ruszam|
+1441|Wyciąć ich w pień!|
+1442|Pułapka zastawiona|
+1443|Są za blisko, wycofać się!|
+1444|Cel priorytetowy oznaczony|
+1445|[zwykłe stęknięcie]|
+1446|A!|
+1447|Strzelają do nas!|
+1448|[stęknięcie]|
+1449|Spełnili swój obowiązek|
+1450|Odniesiemy zwycięstwo – taka jest wola Auna!|
+1451|Zbliża się wróg|
+1452|Jesteśmy Kastą Ognia! Nie zawiedziemy!|
+1453|Wasza nieudolna strategia będzie waszą zgubą|
+1454|Nie zawiedziemy|
+1455|Jak sobie życzysz|
+1456|Czego ci trzeba?|
+1457|Czekam na rozkazy|
+1458|Prę naprzód|
+1459|Zlikwidować ich!|
+1460|Tędy nie przejdą|
+1461|Zwiększcie dystans, bracia!|
+1462|Oznaczam cel|
+1463|Rzucam granat fotonowy!|
+1464|[zwykłe stęknięcie]|
+1465|Hnngh!|
+1466|Znaleźć osłonę!|
+1467|Ze mną nie wygracie|
+1468|Ich ogień płonął jasnym światłem|
+1469|Naprzód, dla Większego Dobra!|
+1470|Namierzono wrogów|
+1471|Wskaż nam cele, a zlikwidujemy je|
+1472|Zobaczmy, czy po tym się podniesiecie|
+1473|Tak jest|
+1474|Zrozumiano|
+1475|Zbrojne wsparcie w gotowości|
+1476|Tak?|
+1477|Już idę|
+1478|Strzelam do celu!|
+1479|Kładę ogień zaporowy|
+1480|Wycofać się!|
+1481|Otworzyć ogień!|
+1482|Ku niebiosom!|
+1483|Ugh|
+1484|Obrywam|
+1485|Mają pancerz!|
+1486|Wróg przypuścił atak|
+1487|Oddamy im cześć|
+1488|Nacierać! Nie dajcie się złamać!|
+1489|Skaner wykrył ruch|
+1490|Jeśli jedyne wyjście to walka, staniemy w pierwszej linii|
+1491|Z chęcią oddamy życie za Tau'va|
+1492|Paskudne bestie! Nie zasługujecie na życie!|
+1493|Rozkaz|
+1494|Rozkazy otrzymane|
+1495|Na wasz sygnał|
+1496|Drużyna infiltracyjna w gotowości|
+1497|Już idziemy|
+1498|Przerzedzić ich szeregi|
+1499|Zasadzka gotowa|
+1500|Wycofuję się|
+1501|Aktywować pola maskujące!|
+1502|[zwykłe stęknięcie]|
+1503|Ugh|
+1504|Namierzono nas!|
+1505|Nie powstrzymają mnie|
+1506|Ich ogień zgasł|
+1507|Podarujemy temu światu mądrość Tau'va!|
+1508|Namierzam potencjalne cele|
+1509|Nie zabiją tego, czego nie widzą|
+1510|Gotowi do polowania|
+1511|Wybić ich! Prędko!|
+1512|Zgodnie z rozkazem|
+1513|Rozumiem|
+1514|Obliczam trajektorię ostrzału|
+1515|Artyleria w gotowości|
+1516|Zmieniam pozycję|
+1517|Atakuję|
+1518|Przychodząc tu, pójdą na śmierć|
+1519|To było konieczne|
+1520|Poszła rakieta naprowadzająca|
+1521|Rozpoczynam bombardowanie przeciwpiechotne|
+1522|[trafienia]|
+1523|Wróg stawia opór|
+1524|Jestem pod ostrzałem|
+1525|Wykryto przeszkodę|
+1526|Ich śmierć nie pójdzie na marne|
+1527|Czekam na więcej celów!|
+1528|Czujniki namierzyły potencjalnych wrogów|
+1529|To zaszczyt dołączyć do kadry|
+1530|Służę Większemu Dobru|
+1531|Pozwól, że zademonstruję prawdziwą siłę ognia|
+1532|Otrzymano instrukcje|
+1533|Rozkazy przyjęte|
+1534|Czekam na przydział|
+1535|Gotowość|
+1536|Już idę|
+1537|Strzelam!|
+1538|Nawet się nie zorientują|
+1539|Nie utrzymają tej pozycji|
+1540|Czekam na sygnał do infiltracji!|
+1541|[zwykłe stęknięcie]|
+1542|Dość tego!|
+1543|Wróg ma mnie na muszce!|
+1544|Wrogowie przypuścili atak|
+1545|Oddali życie w służbie Większemu Dobru|
+1546|To jeszcze nie koniec walki|
+1547|Wiem, gdzie jesteś|
+1548|Pancerz Ghostkeel w gotowości!|
+1549|Czym mogę służyć?|
+1550|Jestem cierpliwym łowcą. Dopadnę cię, zwierzyno.|
+1551|Nie zawiodę|
+1552|Natychmiast|
+1553|Czekam na rozkaz|
+1554|Jakie rozkazy?|
+1555|Jestem do dyspozycji|
+1556|Otwieram ogień!|
+1557|Nie odważą się zbliżyć|
+1558|Czy to konieczne?|
+1559|Odsłaniam reaktor Mor'tonium|
+1560|[trafienia]|
+1561|Wszystkie systemy sprawne|
+1562|Mają tarcze|
+1563|To wszystko?|
+1564|Ich poświęcenie to dla nas inspiracja|
+1565|Dla Większego Dobra!|
+1566|Zbliża się więcej celów|
+1567|Pozbędę się każdego, kto stanie mi na drodze|
+1568|Ciężkie wsparcie gotowe do działania|
+1569|Nareszcie godne wyzwanie!|
+1570|Tak|
+1571|Zrozumiano|
+1572|Czekam na rozkazy|
+1573|Załoga Piranii czeka na rozkazy|
+1574|Niedługo tam będziemy|
+1575|Otworzyć ogień!|
+1576|Ustanowiono strefę zaporową|
+1577|Są za blisko!|
+1578|[zwykłe stęknięcie]|
+1579|Aargh!|
+1580|Ładują do nas!|
+1581|Przypuścili atak|
+1582|Zbliżyli nas do zwycięstwa|
+1583|Przeć naprzód!|
+1584|Przeprowadzimy zwiad|
+1585|Drużyna szturmowa gotowa do zwiadu|
+1586|Uderzymy mocno i szybko – dla Większego Dobra!|
+1587|Pośpiech was nie uratuje|
+1588|Tak jest, zrozumiano|
+1589|Służę pomocą|
+1590|W gotowości|
+1591|Załoga Młota gotowa do akcji!|
+1592|W drodze|
+1593|Ciężki ostrzał!|
+1594|Będziemy czuwać|
+1595|Przeciążenie broni jonowej!|
+1596|[trafienia]|
+1597|Wytrzymamy|
+1598|Wróg strzela!|
+1599|[sfrustrowane warknięcie]|
+1600|Walczcie ku chwale poległych braci!|
+1601|Szykuj broń!|
+1602|Cele przed nami|
+1603|Jesteśmy pięścią Mont'ka|
+1604|Wróg zginie, zanim zdoła się zbliżyć|
+1605|Wybijemy dziurę w tej żałosnej imitacji pancerza|
+1606|[terkotanie zaawansowanej maszynerii]|
+1607|[seria piknięć]|
+1608|[mechaniczny furkot]|
+1609|[agresywne piknięcie]|
+1610|[pikanie alarmu]|
+1611|[brzęczenie alarmu]|
+0|За Императора и Сангвиния!|

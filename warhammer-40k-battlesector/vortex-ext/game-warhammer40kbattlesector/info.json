@@ -1,0 +1,6 @@
+{
+  "name": "Warhammer 40,000: Battlesector",
+  "author": "shadowevor",
+  "version": "0.1.0",
+  "description": "Vortex extension for Warhammer 40,000: Battlesector (Steam / GOG). Adds game detection, automatic backup of sharedassets1.assets, and a mod type for asset-replacement mods."
+}

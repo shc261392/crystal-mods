@@ -1,0 +1,2068 @@
+1|¡Por el Emperador!|
+2|En camino.|
+3|Velozmente.|
+4|Marines de asalto, listos.|
+5|¡Conocerán la muerte!|
+6|Sanguinius guía mi espada.|
+7|¡Por el Emperador!|
+8|Soy su Espada.|
+9|No me detendrán.|
+10|Somos los hijos de Sanguinius.|
+11|Mi furia será rápida.|
+12|¡Por la sangre!|
+13|¡Recibiendo fuego!|
+14|Sanguinius, protégenos.|
+15|La venganza será rápida.|
+16|Con fuerza.|
+17|Entendido.|
+18|Listo para atacar.|
+19|¡Al cielo, hermanos!|
+20|¡Lanzando granadas!|
+21|¡Furia y velocidad!|
+22|¡El enjambre no tiene derecho a vivir!|
+23|¡El cielo nos pertenece!|
+24|Sobre las alas del Ángel|
+25|Somos la furia de Sanguinius.|
+26|La sangre de Sanguinius corre por mis venas.|
+27|Victoria para los Filos Sangrientos. Victoria para Skyfall.|
+28|¡Él está con nosotros!|
+29|¡Venced vuestras dudas, hermanos!|
+30|Sanguinius guía cada golpe.|
+31|¡Sanguinius está conmigo!|
+32|Mi fe es mi escudo.|
+33|El desprecio es mi armadura.|
+34|Honradlos, hermanos, pues murieron antes que caer.|
+35|Apoyo de fuego pesado.|
+36|¡Adelante!|
+37|¡Abrid fuego!|
+38|Este Tirano conocerá la muerte por mi mano.|
+39|Ninguna cantidad de caparazón salvará a esta abominación.|
+40|Por mi honor.|
+41|Su muerte es nuestra única opción.|
+42|Soy la Espada de Sanguinius.|
+43|Solo puede haber victoria.|
+44|Con celeridad.|
+45|Mi venganza será definitiva.|
+46|Caerás ante mí.|
+47|¡Por la gloria de Sanguinius!|
+48|Espero su error.|
+49|Un paso atrás estratégico.|
+50|¡No dejéis sitio a las dudas, hermanos!|
+51|¡Sanguinius guía cada golpe!|
+52|¡Hnnngh!|
+53|(gruñido)|
+54|¡Necesitarás más que eso!|
+55|¡La furia de Sanguinius fluye a través de mí!|
+56|El enemigo nos espera.|
+57|En Baalfora nací, y si el Emperador así lo quiere, en Baalfora moriré.|
+58|Somos los Filos Sangrientos de Skyfall.|
+59|Sanguinius vela por nosotros.|
+60|(pequeño chillido tiránido)|
+61|¿Tus ordenes?|
+62|En movimiento.|
+63|Atacando al enemigo.|
+64|Su sacrificio no será en vano.|
+65|¡Vengadlos, hermanos!|
+66|Oigo algo.|
+67|Con precisión, hermanos.|
+68|(gran chillido tiránido)|
+69|Somos los hijos de Sanguinius.|
+70|Luchamos y morimos por el Imperio.|
+71|¡Aplastad a los enemigos del Imperio!|
+72|Por supuesto.|
+73|Mi deber es servir.|
+74|La sangre espera.|
+75|Estoy listo para ayudar.|
+76|Voy a donde me necesitan.|
+77|Cualquier cosa que el Ángel requiera.|
+78|Mi espada sierra tiene sed de su sangre.|
+79|¡Buscad la gloria en nombre del Ángel!|
+80|Temerán caminar cerca.|
+81|Debo proteger Su sangre.|
+82|¡La sangre es fuerte! ¡No vaciléis!|
+83|¡Volved aquí! El Gran Ángel aún no ha terminado con vosotros.|
+84|¡Somos justos y rectos ante los ojos del Emperador!|
+85|¡No temáis la furia del Gran Ángel, hermanos! ¡Es vuestro derecho!|
+86|¡Agh!|
+87|El enemigo cree que puede permanecer fuera de nuestro alcance.|
+88|¡Hnnng!|
+89|Por su sangre, tomaré lo que corresponde al Capítulo.|
+90|¡Su sangre me vigoriza!|
+91|Los oigo ahí fuera.|
+92|La sangre de Sanguinius corre por mis venas.|
+93|El Sacerdocio Sanguinario sirve a la voluntad del Capítulo.|
+94|Cuando el día es más oscuro, prevalecemos mediante el control.|
+95|A sus órdenes.|
+96|Comprendido.|
+97|¿Qué necesita reparación?|
+98|Tecnomarine, a la espera.|
+99|En camino.|
+100|Un par de tornillos para ablandarlos.|
+101|Mi hacha tiene hambre.|
+102|¡El poder del Omnissiah te destruirá!|
+103|Estaré atento.|
+104|¡Malditas plagas!|
+105|Sí, te tendremos de nuevo en pie en poco tiempo.|
+106|Confía en tu armadura para desviar sus filos.|
+107|El Omnissiah juzgará tus actos.|
+108|Deberían temer mi alcance.|
+109|¡Agh!|
+110|Somos los señores de la doctrina de asalto.|
+111|¡Acercándonos!|
+112|Me las he visto peores.|
+113|Fallaron a su armadura.|
+114|¡El poder del Omnissiah!|
+115|Puedo oírlos deslizarse por ahí.|
+116|Aún no he encontrado un xenos que mi hacha no pueda partir.|
+117|Tráeme a tus rotos y desgastados, y los dejaré como nuevos.|
+118|Confirmado.|
+119|Mi vigilancia es eterna.|
+120|Gracia a través de la disciplina.|
+121|Mi voluntad es incansable.|
+122|Mi poder está en tus manos.|
+123|No pueden detenerme.|
+124|Disparando al objetivo.|
+125|He visto tu muerte por mis manos.|
+126|Temedme, porque soy la condenación.|
+127|Siempre vigilante.|
+128|Sanguinius te protege.|
+129|Las arenas se mueven debajo de ellos.|
+130|Mi furia se acelera.|
+131|Resistencia detectada.|
+132|Recibiendo fuego.|
+133|Debo resistir.|
+134|Nos sentimos honrados de presenciar su sacrificio.|
+135|¡Soy furia! ¡Soy fuego! ¡Soy muerte!|
+136|Presiento un futuro adversario.|
+137|Sólo con la muerte se completará mi deber.|
+138|Pasado, futuro, sólo hay servicio al Emperador.|
+139|Estratégicamente sólido.|
+140|Un acertado plan de acción.|
+141|¿Cuál es tu plan?|
+142|Mis poderes esperan tu orden.|
+143|No pasarán.|
+144|Apenas digno de mi tiempo.|
+145|¡Claridad a través del derramamiento de sangre!|
+146|Mi espada canta fatalidad.|
+147|Dejadlos venir.|
+148|Necesito distancia.|
+149|Tu vitae es tu debilidad.|
+150|¡He aquí tu condenación!|
+151|Fuerza desde la sangre.|
+152|Sanguinius me porta.|
+153|¡Hnnng!|
+154|¡Hrfff!|
+155|¡Ack!|
+156|Cada sacrificio es un paso más hacia la victoria.|
+157|¡El Immaterium fluye a través de mí!|
+158|Siento al enemigo.|
+159|El Librarium puede ayudarte en este asunto, si es preciso.|
+160|La disformidad está inquieta.|
+161|AAAAAAARRRGH!|
+162|¡MI FURIA NO MORIRÁ!|
+163|(respiración de hiper-rabia)|
+164|¡LOS MATARÉ A TODOS!|
+165|¡TEMBLARÁN ANTE MÍ!|
+166|¡MUERTE! ¡MUERTE!|
+167|(gritos berserker)|
+168|¡MI ESPADA ES ODIO!|
+169|¡HRAAAAAAAAAA!|
+170|HRRRRGH!|
+171|¡Atrás!|
+172|¡NO ME PUEDES DETENER!|
+173|¡NO CAERÉ ANTE TI!|
+174|¡BUSCO VENGANZA!|
+175|¡POR LA NOVENA LEGIÓN!|
+176|¡AHORA! ¡ACABAD CON ELLOS AHORA!|
+177|(rugido de rabia)|
+178|¡MI HOJA PARA EL SEÑOR EMPERADOR!|
+179|Desafío aceptado.|
+180|Sin dudarlo.|
+181|Precursores a la espera de lanzamiento.|
+182|Soporte pesado cercano.|
+183|Siempre hacia adelante.|
+184|Atacando objetivo.|
+185|Zona defensiva dispuesta.|
+186|Extrayendo.|
+187|Propulsores de salto activados.|
+188|Se esparcirán debajo de nosotros.|
+189|¡Hnnn!|
+190|Nos mantenemos firmes.|
+191|¡Eh!|
+192|Hemos sido atacados.|
+193|Seré el trueno que haga eco de sus nombres.|
+194|Descenderemos sobre ellos como meteoros.|
+195|El objetivo está más allá de mi visión.|
+196|Caeremos sobre ellos con justa furia.|
+197|¡Muerte desde arriba!|
+198|¡Por el Imperio!|
+199|Podemos manejarlo.|
+200|Revientainfiernos, esperando objetivo.|
+201|Soporte de fuego de plasma listo.|
+202|Moviéndonos a la posición.|
+203|Objetivo localizado.|
+204|Vigilancia dispuesta.|
+205|¡Retroceded!|
+206|Bobinas de plasma completamente sobrecargadas.|
+207|¡Aaaagh!|
+208|¡Bajo fuego!|
+209|¡Estamos recibiendo fuego!|
+210|El enemigo se ha acercado.|
+211|Paciencia, hermanos. Llegará su hora.|
+212|Listo para un entorno rico en objetivos.|
+213|Posibles objetivos detectados.|
+214|Apoyo de fuego.|
+215|Plasma a distancia a petición tuya.|
+216|Afirmativo.|
+217|Confirmado.|
+218|A tus órdenes.|
+219|Mi deber permanece.|
+220|Espero tus órdenes.|
+221|Destino confirmado.|
+222|Abriendo fuego.|
+223|Muerte a todos los que se me oponen.|
+224|Su desafío alimenta mi odio.|
+225|Zona de muerte establecida.|
+226|Desplegando cortina de humo.|
+227|Comienza el bombardeo de granadas de fragmentación.|
+228|¿Eso es todo?|
+229|¡Hnnnh, je!|
+230|Impedancia reconocida.|
+231|Contacto establecido.|
+232|Nuestra muerte es el precio de la gloria del Imperio.|
+233|Mi furia se ha despertado.|
+234|El enemigo acecha en las sombras.|
+235|Ni siquiera la muerte me detendrá.|
+236|El Defensor Angelicum está contigo.|
+237|Entiendo.|
+238|Con celeridad.|
+239|Tripulación del Land Speeder, esperando órdenes.|
+240|Anti-gravitación lista.|
+241|En movimiento.|
+242|Disparando al enemigo.|
+243|Zona de vigilancia establecida.|
+244|Ubicaciones objetivo adquiridas.|
+245|¡Hnnnn!|
+246|Somos la venganza que sigue.|
+247|¡Venid, hermanos! ¡La batalla aguarda!|
+248|Nos han interceptado.|
+249|Murieron para que pudiéramos seguir adelante.|
+250|Hora de moverse.|
+251|Detectado movimiento en el áuspex.|
+252|Listo para reconocimiento.|
+253|¿Necesitas un explorador?|
+254|Orden confirmada.|
+255|Sí.|
+256|Tripulación Predator, lista.|
+257|Blindados, esperando tus órdenes.|
+258|Rodando a la posición.|
+259|Abriendo fuego.|
+260|Zona de negación establecida.|
+261|Velocidad para igualar nuestra furia.|
+262|Recibiendo impactos.|
+263|[impactos genéricos]|
+264|Se acercan más objetivos.|
+265|Ponen a prueba nuestro blindaje.|
+266|Su muerte no será en vano.|
+267|¡Desatad la ira del ángel!|
+268|Los objetivos salen fuera del alcance.|
+269|Somos los defensores de Baal.|
+270|Somos indomables.|
+271|Escuadra de línea, lista.|
+272|Somos las murallas, somos las armas.|
+273|Atacando al enemigo.|
+274|¡Vigilancia!|
+275|Alejadlos, hermanos.|
+276|Con precisión, hermanos.|
+277|(Chillido tiránido)|
+278|¡Aaaagh!|
+279|¡Hacedlos retroceder!|
+280|¡Son numerosos, pero mi furia es mayor!|
+281|¡Muerte a los indignos!|
+282|** unused|
+283|¡Por Sanguinius!|
+284|Si.|
+285|Apoyo de combate cercano.|
+286|¡Aplastadlos!|
+287|Se arrepentirán de haber llegado tan cerca.|
+288|Poned distancia entre nosotros, hermanos.|
+289|Siempre listo. Siempre vigilante.|
+290|Mi fe es fuerte.|
+291|No fallaré.|
+292|¿Quién pone a prueba mi convicción?|
+293|La luz del Emperador arde intensamente.|
+294|Siguiendo los pasos de Katherine ...|
+295|¡Purificad a los inmundos!|
+296|¡Odio para el pecador!|
+297|¡Por el Emperador!|
+298|Desafío su existencia.|
+299|No eres digno.|
+300|¡De Katherine y Celestine! ¡De Cesti y Praxedes!|
+301|El miedo no tiene cabida en nuestros corazones, hermanas, ¡porque el Emperador vela por nosotras!|
+302|¡Soy el instrumento de Su divina voluntad!|
+303|¡Hrah!|
+304|Mi fe es mi escudo.|
+305|El Emperador protege.|
+306|¡Alegraos, hermanas! Ahora el Emperador conoce su nombre.|
+307|Mi propósito brilla intensamente.|
+308|Los herejes nos rodean.|
+309|Soy el escudo del Imperio.|
+310|En cada sombra encuentro herejía.|
+311|El camino de la justicia está empapado en la sangre de los indignos.|
+312|¡Mirad cómo la bestia enfurece de impotencia! Su aullante berrinche será en vano.|
+313|Seré testigo de la exterminación de cada uno de vosotros.|
+314|Hágase Su voluntad.|
+315|Comprendido.|
+316|Somos Su indomable escudo.|
+317|¿Tus órdenes?|
+318|Seguimos Su luz.|
+319|Atacando objetivo.|
+320|Nunca caminarán a la luz del Emperador.|
+321|¡Retroceded!|
+322|Llevamos la venganza divina.|
+323|** unused|
+324|Aaargh.|
+325|¡Estamos recibiendo fuego!|
+326|Aguantaremos.|
+327|La sangre de los mártires nos eleva.|
+328|¡En nombre de Katherine!|
+329|Creo haber visto algo...|
+330|En justa batalla, liberación. En la muerte, reivindicación.|
+331|Somos las hermanas de batalla.|
+332|¡Acabad con ellos!|
+333|Corta la cabeza para que el cuerpo caiga.|
+334|Sin lugar a dudas.|
+335|Inmediatamente.|
+336|Apoyo aéreo.|
+337|¿A dónde vamos ahora?|
+338|Intenta detenerme.|
+339|¡Derribadlos!|
+340|Vector de avance cubierto.|
+341|Tomando alas.|
+342|Mochilas activadas.|
+343|Equilibrio y dominio.|
+344|¡Aah!|
+345|¡Maniobras evasivas!|
+346|Nos han interceptado.|
+347|Cayeron para que podamos levantarnos.|
+348|Mis habilidades son incomparables.|
+349|Veo movimiento en la distancia.|
+350|Soy la vanguardia de la fe.|
+351|Los cielos son nuestro dominio.|
+352|Solo los justos pueden remontarse.|
+353|Orden recibida.|
+354|Confirmado y en ruta.|
+355|Stormraven en ruta.|
+356|Objetivos localizados.|
+357|Escuadrón de asalto listo para ataque profundo.|
+358|Tormentoso listo.|
+359|¡Reducid su número! No podrán con nosotros.|
+360|¡Disparadle! ¡Aplastadlo! De cualquier manera, muere por mis manos.|
+361|Los he visto más grandes.|
+362|¡Purificadlos! ¡Los xenos no tienen permiso para existir!|
+363|La bestia muere hoy.|
+364|Los dardos de los xenos son en vano.|
+365|¡Je! Veamos cómo protege esa armadura.|
+366|¡Matadlo antes de que desaparezca!|
+367|No dejéis otra cosa que manchas bajo de nuestros pies.|
+368|Solo los ángeles tienen derecho a volar.|
+369|Muerte al enjambre de xenos.|
+370|Mirad más allá de su neblina, hermanos.|
+371|Ni siquiera sus unidades voladoras nos dejarán atrás.|
+372|Alineando solución de disparo anti-enjambre.|
+373|Tu inteligencia no te pertenece. Tu muerte no tiene importancia.|
+374|Su mente es débil; un guijarro a triturar.|
+375|Cada momento de vigilia me enfrento a la aniquilación. No eres nada para mi.|
+376|Los estertores de esta criatura sináptica son inútiles.|
+377|Este Tirano conocerá la muerte por mi mano.|
+378|No hay coraza que salve a esta abominación.|
+379|Todo lo que quedará de ti es la mancha de tu veneno derramado.|
+380|¡Tu engendro será purgado! ¡Tus convulsiones, sinfonía! Tu estertor de muerte, socorro.|
+381|Ningún espíritu-máquina te protege, abominación maldita.|
+382|¡Plagas! ¡Malditas plagas por todas partes!|
+383|Una poderosa decisión.|
+384|La victoria es inevitable.|
+385|El Emperador está con nosotros.|
+386|Exterminadores de asalto, listos para la acción.|
+387|Somos imparables.|
+388|Sin compasión.|
+389|Exterminadores, ¡cargad!|
+390|¡Rompe la distancia!|
+391|Somos el miedo que golpea sus corazones.|
+392|¡No nos vamos a romper!|
+393|¡No doblegaos ante sus ataques!|
+394|¡Quieren probar su fuerza!|
+395|¡Qué se rompan en nuestros escudos!|
+396|He visto a cientos caer ante ellos.|
+397|¡Prevaleceremos!|
+398|Conocerán la muerte muy pronto.|
+399|Nuestra sola presencia significa que ya hemos ganado.|
+400|La voluntad del Emperador vive a través de nosotros.|
+401|Volveremos con nuestros escudos, o sobre ellos.|
+402|No ven venir la muerte a por ellos.|
+403|¡Hermanos, atravesad sus armaduras!|
+404|No permitiremos que esta abominación permanezca en pie.|
+405|¡No dudéis, hermanos! ¡Acabad con ellos!|
+406|En mente, cuerpo y espíritu.|
+407|Hágase tu voluntad.|
+408|Guardia a tu disposición|
+409|Sanguinius cuida de nosotros.|
+410|Con la gracia|
+411|Con certeza|
+412|¡Desatad la devastación, hermanos!|
+413|¡Cae sobre mi espada!|
+414|Una táctica necesaria.|
+415|¡Enciende los fuegos de las alas de los ángeles!|
+416|¡Nuestra sangre prende!|
+417|Me los he enfrentado mejores.|
+418|Nos desafían desde lejos.|
+419|¡Desean el duelo!|
+420|Ahora descansan con nuestro Padre.|
+421|¡Nuestra voluntad es inmutable! ¡Nuestra gloria, inevitable! ¡Por Sanguinius!|
+422|Déjalos esconderse en las sombras. |
+423|¡Somos la luz y la gloria de Sanguinius!|
+424|Queda poco en este universo que no haya presenciado.|
+425|There will be poetry to their deaths.|
+426|Hay poder en la fuerza de su devoción.|
+427|Dales la muerte que tan ansiosamente buscan.|
+428|Sácadlos de su miseria, hermanos. Sus mentes están tan destrozadas como sus armaduras.|
+429|He esperado para esto.|
+430|Se hará mi voluntad.|
+431|¿Qué?|
+432|Mi imperio despierta.|
+433|Una marcha sin final.|
+434|Desperdicias mi tiempo.|
+435|Arrodíllate ante mi.|
+436|¡Te rendirás!|
+437|No te acerques a mi.|
+438|Fuera, insecto.|
+439|Estoy más allá de tus habilidades.|
+440|¡Despertad! ¡La era de los Necrones está cerca!|
+441|Prestad atención a mi mandato.|
+442|Camino entre realidades.|
+443|Hnnnng.|
+444|[gruñido]|
+445|Lamentable.|
+446|¿Te atreves?|
+447|Cuando de la orden, servirán de nuevo.|
+448|¡Tus estrellas sucumbirán ante mi!|
+449|Hacen bien en esconderse.|
+450|He condenado estrellas a su perdición.|
+451|Han pasado eones mientras dormíamos. Y ahora despertamos a estas obscenidades.|
+452|El poder completo de la dinastía está bajo mi control.|
+453|Han caido galaxias enteras esperando mi retorno. Apenas dejarás una marca.|
+454|¡He acabado con dioses! Tú no eres...nada.|
+455|¡Destrucción!|
+456|Este poder es tuyo.|
+457|¿Tienes un plan?|
+458|Requieres mi consejo.|
+459|Adonde quiera que vaya, la ruina me sigue.|
+460|¡Una muestra de mi poder!|
+461|¡Fuera, molestia!|
+462|¡Aniquilación!|
+463|¡Dejad que vengan!|
+464|Sólo un pequeño paso fuera del radio de la explosión...|
+465|El corazón de esta singularidad colapsará.|
+466|¡Destrucción ante mi!|
+467|¡Relámpago viviente!|
+468|[gruñido]|
+469|¡Hng!|
+470|¡Nos disparan! ¡A mi!|
+471|Qué toscos intentos.|
+472|Utilizaremos su energía en otro momento.|
+473|¡Un poder insondable fluye a través de mi!|
+474|Sal a campo abierto, para que pueda destruirte.|
+475|¡Destructor de mundos!|
+476|Energía casi ilimitada, recogida para tus designios.|
+477|La creación y la destrucción necesitan ambas la misma cosa: energía.|
+478|¡Crees que tienes poder, pero te mataré con esta energía!|
+479|¡Mugre! ¡Insectos! ¡Erradicación!|
+480|Todos morirán.|
+481|En progreso.|
+482|¿Tienes objetivos?|
+483|Lo veo todo.|
+484|Busco una posición favorable.|
+485|Muerte por mis manos.|
+486|Nadie pasará sin ser visto.|
+487|Una estrategia óptima.|
+488|Objetivos adquiridos.|
+489|Soluciones de tiro optimizadas.|
+490|Ah.|
+491|Devuelven el fuego.|
+492|Encontrada resistencia.|
+493|Eran débiles.|
+494|Nadie puede sobrevivir a mi puntería.|
+495|Esconderse no les ayudará.|
+496|El sentido de cada vida es morir. Mi objetivo es ayudarles.|
+497|Asesinato, atrofia, paso en falso; no puedes escapar de la muerte.|
+498|Su número es su debilidad.|
+499|No puedes esquivar tus seis destinos.|
+500|[Necron gruñe]|
+501|Confirmado.|
+502|Somos interminables.|
+503|Apoyo de fuego pesado.|
+504|Inmortales, esperando órdenes.|
+505|Progresando.|
+506|Disparando sobre objetivo.|
+507|Vigilancia.|
+508|Retirada.|
+509|Recibiendo fuego.|
+510|Estamos en combate.|
+511|Los caídos se levantarán de nuevo.|
+512|¡El imperio Necron se alza!|
+513|Hostil detectado.|
+514|Nuestro servicio es eterno.|
+515|Nuestro deber es la guerra, y la guerra nunca ha cambiado.|
+516|Objetivo pesado adquirido.|
+517|Servimos.|
+518|A tus órdenes.|
+519|¿Cuál es tu voluntad?|
+520|Tus guardianes esperan.|
+521|Nos movemos.|
+522|Un solo ataque.|
+523|¡Honor para la dinastía!|
+524|Tenemos trabajo más importante que hacer.|
+525|Nuestro deber es caer en su lugar.|
+526|¡Nuestros escudos resisten!|
+527|¡Hrah!|
+528|¡Formación defensiva!|
+529|Su técnica es tosca.|
+530|Honraremos su muerte con el derramamiento de la sangre de sus asesinos.|
+531|¡Somos los protectores de eones!|
+532|Nos encontraremos con ellos en combate, si es que llegan tan lejos.|
+533|Somos los escudos de la dinastía.|
+534|Ninguno pasará a través nuestro.|
+535|Una digna prueba de fuerza.|
+536|Tontos primitivos.|
+537|Sí.|
+538|Eficiente.|
+539|¿Quién es el siguiente en la lista?|
+540|Objetivo de seguimiento.|
+541|Siguiendo objetivo.|
+542|¡Muerte!|
+543|Vigilando esta zona.|
+544|Retirándonos.|
+545|Marca colocada. No escaparán.|
+546|Reposicionándonos.|
+547|Hnnng.|
+548|¡Fuego de respuesta!|
+549|Nuestra posición ha sido comprometida.|
+550|Un sacrificio necesario.|
+551|No pueden escapar a nuestra puntería.|
+552|No pueden esconderse por mucho tiempo.|
+553|La satisfacción de una muerte perfecta.|
+554|Nunca nos ven venir.|
+555|Haced saltar las crudas armas de sus manos.|
+556|Eliminando objetivo prioritario.|
+557|Con autoridad.|
+558|Estamos de acuerdo.|
+559|Servimos al Triarca.|
+560|Nuestro deber es incansable.|
+561|Nuestro juicio será rápido.|
+562|¡Afronta el juicio!|
+563|¡Cede!|
+564|¡Encontramos digno a este oponente!|
+565|Aguantaremos.|
+566|Se necesita distancia.|
+567|Mochilas activadas.|
+568|Hmmmmmm.|
+569|Nos provocan.|
+570|Un digno intento.|
+571|Mientras permanezcamos en pie, las dinastías nunca caerán.|
+572|¡Nuestra autoridad es absoluta!|
+573|Serán juzgados, de una forma u otra.|
+574|Mientras permanezca en pie, los antiguos códigos se respetarán.|
+575|Si la batalla es digna, allí estaremos.|
+576|No hemos faltado a nuestro deber en sesenta millones de años. Tampoco lo haremos hoy.|
+577|Poned a estos miserables engendros en el suelo.|
+578|No he dormido en sesenta millones de años. No eres tan temible.|
+579|[sonidos maníacos necrones]|
+580|... tengo hambre ....|
+581|... ¿caaarneee? ....|
+582|[silbido maníaco necrón]|
+583|[chillido maníaco necrón]|
+584|¡Esta piel es mía!|
+585|¡Mi piel! ¡Mía!|
+586|carne. carne. carNE. ¡CARNE!|
+587|Huelo...miedo.|
+588|Este hambre...duele...|
+589|Tanta...carne...|
+590|Tengo sed...de su sangre...|
+591|Será su muerte.|
+592|Sí.|
+593|¿La vida de quién terminamos después?|
+594|Mi propósito es la matanza.|
+595|Llevo la muerte conmigo.|
+596|¡Matar! ¡Matar! ¡Matar!|
+597|¡Muerte!|
+598|Una danza macabra.|
+599|¡Todo! ¡Es! ¡Muerte!|
+600|Hrrrrn.|
+601|Acércate, que pueda matarte.|
+602|Un débil intento.|
+603|Toda muerte es progreso.|
+604|¡Nada quedará!|
+605|Otra vida que extinguir.|
+606|Cuando no quede nada, mi trabajo finalmente estará completo.|
+607|Los cortaré donde estén.|
+608|Tu biología es tu debilidad.|
+609|¡Una cosecha gloriosa!|
+610|Procesando.|
+611|Admitido.|
+612|Artillería.|
+613|El sonido de nuestras armas anunciará su muerte.|
+614|Preparando posición.|
+615|Disparando.|
+616|Establecida zona de bombardeo.|
+617|Se requiere más distancia.|
+618|Hrrrph.|
+619|Recibiendo fuego.|
+620|Acometiendo.|
+621|Inevitable.|
+622|Prepárate para la devastación.|
+623|Objetivos detectados.|
+624|Erradicación a larga distancia.|
+625|Los engramas de personalidad se han redistribuido para adquisición de objetivos.|
+626|Esta forma primitiva conoce bien la muerte.|
+627|Borraré este nodo de su red.|
+628|[chirrido de enjambre robótico]|
+629|Acuerdo hiperlógico.|
+630|Tiene sentido.|
+631|Exploradores aéreos.|
+632|Cuchillas de la Necrópolis.|
+633|Ya en camino.|
+634|Vector de ataque confirmado.|
+635|Anulación del vector de defensa.|
+636|Continuar ataque falso.|
+637|Función evasiva.|
+638|Nebuloscopio activado.|
+639|Hsssssh.|
+640|Me han marcado.|
+641|Quebrantado.|
+642|Aliado derribado.|
+643|¡No me retrasaréis!|
+644|Otro objetivo a localizar.|
+645|Ningún obstáculo se interpondrá en mi camino.|
+646|No pueden alcanzar lo que no pueden seguir.|
+647|Activando protocolos antiexploradores.|
+648|Ejecutando ataque preventivo.|
+649|Actualizando cálculos.|
+650|Conjunto de directivas.|
+651|Barcaza Aniquilación, esperando tu orden.|
+652|Esperando.|
+653|Trazando movimiento.|
+654|Disparando.|
+655|La aniquilación les espera.|
+656|Abriendo espacio.|
+657|Escudos cuánticos activos.|
+658|[hmm preocupado]|
+659|Recibiendo fuego.|
+660|Recibiendo impactos.|
+661|Volverán.|
+662|Flujo de potencia redirigido al condensador hiperlógico.|
+663|Actividad detectada fuera de rango.|
+664|Un camino de aniquilación espera.|
+665|Alta probabilidad de desviación cuántica.|
+666|Los objetivos están pululando juntos. Tontos.|
+667|Los insectos piensan que el blindaje ayudará.|
+668|Órdenes de erradicación confirmadas.|
+669|Protocolo de exterminio activado.|
+670|Apoyo aéreo en camino.|
+671|Desplegando Destructores Tesla.|
+672|Sufrirán una muerte por mil cortes.|
+673|Su condena es inminente.|
+674|[lamento torturado]|
+675|Emperador...vela por mi...|
+676|[gemido de dolor]|
+677|Busco...Su Luz...|
+678|[gemido de dolor]|
+679|[grito]|
+680|[grito de mayor intensidad]|
+681|...no así...|
+682|[gemidos de mayor intensidad]|
+683|[gemido de dolor]|
+684|[gruñido de dolor]|
+685|[múltiples gruñidos de dolor]|
+686|¡Acabad con este tormento!|
+687|¡Emperador, sé mi testigo!|
+688|¡Esta herejía..ha de arder!|
+689|¡Absolución...por...la muerte!|
+690|Correrá su sangre.|
+691|Khorne así lo quiere.|
+692|Yo soy el Señor de la Sangre.|
+693|Violencia y muerte.|
+694|¡Adelante!|
+695|¡Sangre para el Dios de la Sangre!|
+696|¡CRÁNEOS PARA EL TRONO DE CRÁNEOS!|
+697|[gruñido desdeñoso]|
+698|¡Ira y rabia!|
+699|¡Presta atención a la llamada del Padre Hacha!|
+700|[gruñido genérico]|
+701|Lamentable.|
+702|¡A Khorne no le importa!|
+703|¡Correrá la sangre!|
+704|¡Malicia eterna! ¡Sangre y cráneos!|
+705|Todos los que pasen mi mirada serán tributo de sangre.|
+706|A Khorne no le importa de dónde fluye la sangre.|
+707|No me canso mientras la sangre permanezca intacta|
+708|Mi espada reclamará tu cráneo.|
+709|Tu Dios Cadáver es lamentable.|
+710|¡Ríndete a tu sangre! ¡Desafía a tu Ángel muerto!|
+711|¡Por Khorne!|
+712|[rugido demoníaco]|
+713|Muerte.|
+714|[gruñido demoníaco]|
+715|Hacia la matanza.|
+716|¡Matar! ¡Matar! ¡Matar!|
+717|¡Matadlos!|
+718|[gruñido demoníaco]|
+719|[gruñido genérico]|
+720|[gruñido demoníaco]|
+721|[gruñido demoníaco]|
+722|¡Cráneos para el Trono de Cráneos!|
+723|¡Desgarrad su carne! ¡Derramad su sangre!|
+724|[gruñido de perro demoníaco]|
+725|[ladrido de perro demoníaco]|
+726|[aullido de perro demoníaco]|
+727|[gruñido de perro demoníaco]|
+728|[gruñido y chasquido de perro demoníaco]|
+729|[perro demoníaco aúlla y ladra]|
+730|[perro demoníaco gruñe y ladra]|
+731|[uber aullido de perro demoníaco]|
+732|[perro demoníaco olfateando]|
+733|[perro demoníaco resoplando con alegría sádica]|
+734|[aullido ansioso de perro demoníaco]|
+735|¡Por Khorne!|
+736|[gruñido de ingenio demoníaco]|
+737|[gruñido de ingenio demoníaco] Cráneos.|
+738|[rugido de ingenio demoníaco]|
+739|El festín sangriento espera.|
+740|¡Más sangre para el Dios de la Sangre!|
+741|¡Las ruedas aplastan! [rugido de ingenio demoníaco]|
+742|Rabia incesante.|
+743|[gruñido de ingenio demoníaco]|
+744|[gemido de ingenio demoníaco]|
+745|¡Sangre lejana!|
+746|¡Carne en los dientes!|
+747|¡MUTILAR! ¡MATAR! ¡QUEMAR! [super rugido de ingenio demoníaco]|
+748|¡Cráneos! ¡¡Cráneos!! ¡¡¡CRÁNEOS!!!|
+749|Sus miembros serán un festín. [gruñido de ingenio demoníaco]|
+750|Una bestia de muerte indiscriminada. [gruñido de ingenio demoníaco]|
+751|¡Khorne exige destrucción!|
+752|Como es Su deseo, así se hará|
+753|¡Con fe!|
+754|Soy Su voluntad de hierro|
+755|Por Katherine, por la eternidad|
+756|Camino en Su luz|
+757|Sin piedad con el injusto|
+758|Mi hoja ejecutará Su poderosa sentencia|
+759|¡El Emperador exige tu muerte!|
+760|Acércate, y el Emperador te destrozará|
+761|Reposicionando|
+762|La luz del Emperador llena nuestras almas|
+763|¡Bendecidas nosotras que caminamos con el Emperador!|
+764|¡El mal debe ser purgado de la galaxia!|
+765|¡No se tolerará más tu asquerosa presencia!|
+766|[gruñido general]|
+767|Hrrnhh|
+768|¡Tu herejía me proporciona fuerza, y con ella te mataré!|
+769|Moriré SÓLO cuando lo determine el Emperador|
+770|Camina ahora, con el Emperador|
+771|¡Gloria, gloria en Su nombre!|
+772|No sufras al hereje|
+773|Hasta mi último aliento, llevaré la luz del Emperador a los confines más oscuros de la galaxia|
+774|¡Desprecio por el pecador!|
+775|¡Vuelve a la Disformidad!|
+776|Sin duda|
+777|A tus órdenes|
+778|Servimos con fe|
+779|Somos invencibles en Su luz|
+780|La fe guía mis pasos por el camino recto|
+781|¡No hay más luz que la luz del Emperador!|
+782|Herejes, mutantes, xenos, los purgaremos a todos|
+783|¡Nuestra voluntad es fuerte!|
+784|Damos nuestras vidas con gusto por la Orden|
+785|(gruñido general)|
+786|Hrrn|
+787|¡Recibiendo fuego!|
+788|¡Nos atacan!|
+789|Conoce sus nombres|
+790|¡Soy Su poderoso instrumento de muerte!|
+791|Vigilancia Hermanas, los indignos se nos acercan|
+792|Nuestro servicio es eterno|
+793|Katherine, guía nuestros pasos, para que podamos seguir tu camino|
+794|¡Tu mancha no se extenderá más!|
+795|Así se hará|
+796|¡Estamos en ello!|
+797|¿Cuáles son tus órdenes?|
+798|¡Armas pesadas, listas!|
+799|Nos movemos para ejecutar al inmundo|
+800|¡Purgad esas abominaciones!|
+801|Morirán si se acercan|
+802|Retrocedemos|
+803|¡¡¡Sométete al juicio del Emperador!!!|
+804|[gruñido genérico]|
+805|Hrrrnnn|
+806|¿Esto es todo lo que tienes?|
+807|Por Su luz, resistiremos|
+808|Honramos a los mártires|
+809|Con fuego sagrado, hacemos Su obra|
+810|El enemigo se acerca, hemos de estar preparadas|
+811|¡Si los pecadores no se reforman, los purgaremos de la existencia!|
+812|No hay problema en esta galaxia que nuestra potencia de fuego no pueda resolver|
+813|¡Esta repugnante abominación será purgada con fuego sagrado!|
+814|Así será|
+815|A tus órdenes|
+816|¿Cuál es tu deseo?|
+817|Servimos|
+818|Buscamos a Sus enemigos|
+819|Somos Su sentencia|
+820|¡Muerte a todos los pecadores!|
+821|Debemos reagruparnos|
+822|Nuestros escudos protegerán a los dignos|
+823|(gruñido genérico)|
+824|Hrrnnnn|
+825|Mi fe me protege, tanto como mi servoarmadura|
+826|Nadie me puede herir mientras camine con el Emperador|
+827|¡Ve, toma tu lugar como Su mano derecha!|
+828|Por mi fe en el Emperador, nadie me puede detener|
+829|Preparaos, hermanas, los herejes nos buscan|
+830|Somos resueltas protectoras de la fe.|
+831|Los débiles no merecen piedad|
+832|¡Estas criaturas son verdaderamente repugnantes!|
+833|La convicción es la mayor armadura|
+834|Afirmativo|
+835|Nuestras vidas pertenecen al Emperador para que haga con ellas lo que plazca|
+836|En la penitencia, buscamos la redención|
+837|Más cerca de la redención o más cerca de la muerte, lo que Él prefiera|
+838|Mi Eviscerador es su sentencia|
+839|¡Hendiré toda herejía en mi camino!|
+840|Reposicionando para poder castigar mejor a Sus enemigos|
+841|¡Emperador, contempla estas obras que hacemos en tu nombre!|
+842|[gruñido general]|
+843|Hrrrnn|
+844|El sufrimiento es nuestra oración|
+845|Tu ataque sólo me trae redención|
+846|¿Qué podría ser más noble que la muerte a Su servicio?|
+847|La penitencia será mi recompensa|
+848|Estad alerta, Sus enemigos se acercan|
+849|¡Mi vida, por el Lord Emperador!|
+850|Si mi muerte es moneda de arrepentimiento, la pagué con corazón gozoso|
+851|¡Gaaahh!|
+852|[lamento frenético]|
+853|[lamento enfadado]|
+854|[gemido de dolor]|
+855|Aargghh|
+856|Debo...matarlos|
+857|¡Dame mueeeerteeeee!|
+858|Aaarrrrggggghhhh|
+859|[gruñido genérico]|
+860|Hnnnrrhh|
+861|[gemido de dolor]|
+862|[gemido de dolor]|
+863|¡Emperador, llévame a mí a continuación!|
+864|Busco Su luz|
+865|¡Lánzanos...a...por...ellos!|
+866|Le sirvo con corazón lleno de gracia|
+867|Así será|
+868|¿Quién necesita mi ayuda?|
+869|¿Sí?|
+870|Con rapidez|
+871|¡Tu alma enferma arderá!|
+872|Estoy lista|
+873|Debo retirarme|
+874|Por Su luz, estás completa de nuevo|
+875|¡Adelante, Hermana, eres Su voluntad hecha carne!|
+876|(gruñido general)|
+877|Hrrnnnn|
+878|Emperador, protege a tu humilde servidora|
+879|¡Tendrás que esforzarte más que eso!|
+880|Descansa en paz, tu deber está completo|
+881|La luz del Emperador llena mi alma|
+882|Pútrido es el pecador que viene por este camino|
+883|Al santo, traigo curación. Al impuro, traigo la muerte.|
+884|¡Tu misma existencia es una perversión, debes ser destruido!|
+885|¡Sí!|
+886|De inmediato|
+887|Transporte, esperando órdenes|
+888|Rhino, listo|
+889|¡A la batalla!|
+890|Destruidlos y continuad con rapidez|
+891|¡Dejad que vengan!|
+892|Confundid a Sus enemigos|
+893|¡Ponen a prueba nuestra resolución!|
+894|No son rival para nuestra armadura|
+895|Bajo fuego|
+896|Nos desafían|
+897|Alégrate, murieron a Su servicio|
+898|¡Desata la ira del Emperador!|
+899|Objetivos moviéndose fuera de nuestro alcance|
+900|A la batalla, llevamos las esperanzas del Imperio|
+901|¡Afirmativo!|
+902|Confirmado|
+903|¿Qué vamos a purgar a continuación?|
+904|Lista para el combate|
+905|Buscando una posición de tiro óptima|
+906|¡Con estas armas sagradas, destruiremos a Sus enemigos!|
+907|Si se acercan, los destrozaremos|
+908|¡Nadie puede resistir la voluntad del Emperador!|
+909|Que llueva muerte sobre el hereje|
+910|Recibimos impactos|
+911|El enemigo ataca, resistid.|
+912|Estamos recibiendo fuego|
+913|Su luz es mi armadura más poderosa|
+914|La muerte es el precio por la gloria del Imperio.|
+915|¡Ni los herejes ni los xenos se nos interpondrán!|
+916|Vigilad, Hermanas, el enemigo está cerca|
+917|¡Dejad que venga el enemigo, porque nuestra puntería y determinación son siempre inquebrantables!|
+918|¡Esta herejía debe ser destruida!|
+919|El inmundo arderá|
+920|En el servicio hay vida, y verdad|
+921|¡Fuego y furia!|
+922|A la espera|
+923|Poniéndonos en posición|
+924|Con bólter, melta y lanzallamas, purgamos al inmundo|
+925|¡Ninguno pasará!|
+926|¡Contacto enemigo!|
+927|¡Nos tantean!|
+928|Estamos recibiendo impactos|
+929|Sus débiles ataques no serán rival para nuestra armadura|
+930|No serán olvidados|
+931|¡No nos detendremos hasta que la galaxia esté limpia de esta inmundicia!|
+932|El enemigo explora nuestra posición|
+933|En los fuegos purificadores de la fe, castigamos a los pecadores|
+934|El resplandor sagrado arde dentro de mí|
+935|Como desées|
+936|Ninguno me superará|
+937|Con fe, conquistaremos la galaxia|
+938|Nuestro deber espera en el frente|
+939|Sin piedad|
+940|Los débiles de voluntad caerán ante mí|
+941|¡Aaarrrgggghhhh!|
+942|La muerte espera a Sus enemigos si se acercan demasiado|
+943|¡Reagrupando!|
+944|¡Arde, hereje, arde!|
+945|(Gruñido general)|
+946|Hrnn|
+947|¡Ah! No eres digno de Su luz|
+948|¡No nos pueden detenera!|
+949|Honramos su sacrificio|
+950|¡Su divina luz brilla en mi!|
+951|Objetivos frescos para el juicio del Emperador|
+952|¡A la batalla, marchamos!|
+953|Traemos la verdad del Emperador a la galaxia|
+954|[rugido demoníaco enojado]|
+955|[gruñido demoníaco]|
+956|¡Patético ser!|
+957|¡Sangre, sí! ¡Más sangre para Khorne!|
+958|[gruñido demoníaco]|
+959|[gruñido genérico]|
+960|[gruñido demoníaco]|
+961|[rugido demoníaco]|
+962|[gruñido demoníaco]|
+963|[gruñido genérico]|
+964|[gruñido demoníaco]|
+965|[rugido demoníaco]|
+966|Tengo un aztuto plan|
+967|¡No nezezito zer el máz lizto, zólo el máz grande!|
+968|Fuimoz hechoz para luchar, puez luchemoz.|
+969|¡Loz Orkoz ziempre venzemoz! Incluzo kuando no.|
+970|¡En marcha!|
+971|¡WAAAGH!|
+972|Por ezte camino akabarán muertoz.|
+973|El jefe no korre. Zon, eztooo, táktikaz.|
+974|¡Ezto me guzta máz!|
+975|¡WAAAGH me!|
+976|¡¿Ké tal zi te doy un poko de boom?!|
+977|¿Kién tiene hambre? ¡Vozotroz tenéiz hambre!|
+978|Ok, pekeño kanijo, ve, koge un trozito.|
+979|[Rugido de dolor Orko]|
+980|¡¿Ezo ez todo lo ke tienez?!|
+981|Ké akribillador máz pekeño y pafético.|
+982|No he zentido nada.|
+983|[Profunda risa Orka]|
+984|¡WAAAGH!|
+985|¡Me huelo algo moñaz!|
+986|Luchar zer lo mejor. Nada mejor ke luchar.|
+987|Aplaztar primero, penzar dezpuéz.|
+988|Ezoz kacharroz tan kukiz no te zervirán.|
+989|¡Zíiii, Jefeeeee!|
+990|¿Ké paza?|
+991|Laz viejaz koztumbrez ez lo mejor.|
+992|Ze ke me eztáz mirando.|
+993|¿Ké paza ahora?|
+994|¡Zalvad a loz eztrambótikoz y kanijoz primero!|
+995|¡Kómeme el WAAAGH!|
+996|Me enkanta deztrozar. ¿Pero ez buena idea?|
+997|¡Laz kabezaz ezpppplotan!|
+998|¡Gorka eztá kon nozotroz! ¡WAAAGH!|
+999|¡Au, miz ojoz!|
+1000|¡Au! ¡Ezo duele!|
+1001|¡Oye! ¡Para kon ezo!|
+1002|¿Me eztán dizparando a mi?|
+1003|¡Zákame de akí!|
+1004|Detekto...eztá muerto.|
+1005|¡Mi kabeza ze eztá llenando de WAAAGH!|
+1006|Ziento ke ze avezina un buen fregao.|
+1007|Gorka eztá kon nozotroz. O kizá Morka. Difízil de dezir.|
+1008|Kuanto máz lucha, máz WAAAGH. Kuanto máz WAAGH...ez un hermozo zírkulo.|
+1009|Oh, akí eztá. ¡Mi oportunidad de brillar!|
+1010|Zi tú lo dizez|
+1011|Zeguro, Jefe.|
+1012|Kreo que puedo kozer eza ezpalda|
+1013|Lizto para zerrar huezoz.|
+1014|Piernaz Zybork liztaz.|
+1015|Tengo mejorez kozaz ke hazer.|
+1016|Nada ke un buen kuchillo no pueda zoluzionar.|
+1017|¡Matadloz! ¡Matadloz a todoz!|
+1018|Ezto puede ke te ezkueza.|
+1019|¡El dolor eztá en tu mente! Mucho dolor, de hecho.|
+1020|[gruñido de dolor]|
+1021|¡Azérkate, tengo un tratamiento para ti!|
+1022|¡Uy, eso nezezitará unaz grapaz! ¿O kizá una zoldadura?|
+1023|¡No puedo arreglarloz a todoz!|
+1024|¡Ezoz zon loz que nezezitan un doktor!|
+1025|Hay algo por ahí. ¿Útil komo rekambioz?|
+1026|Te puedo arreglar ahora mizmo - ¡inkluzo mejorarte!|
+1027|¡Ey, humanoz! No puedo dejar ke vayaiz por ahí arreglando a vueztroz kolegaz.|
+1028|Fuimoz hechoz para la guerra.|
+1029|Lo ke el Jefe dize, el Jefe conzigue.|
+1030|¡Zoldadoz de Azalto loz mejorez!|
+1031|Pakz de kohetez, liztoz.|
+1032|No noz verán llegar.|
+1033|Dadlez una paliza.|
+1034|¡Venid akí y oz daremoz lo ke merezeiz!|
+1035|Retrozedez un poko para que podamoz arrollarloz.|
+1036|¡Dadlez juzto donde lez duele!|
+1037|¡Arrrrrrrhhhhh!|
+1038|¡Zerán manchaz en laz zuelaz de nueztraz botaz!|
+1039|[gruñido de dolor]|
+1040|¡Hrrrnnnnnn!|
+1041|¡No podéiz hazernoz daño! ¡Mucho!|
+1042|Zurrar de zerca ez lo mejor.|
+1043|Palmaron haziendo lo que lez guztaba.|
+1044|¡Loz zieloz pertenezen a loz Orkoz!|
+1045|¡Parece que tendremoz pelea! Bien.|
+1046|Lo úniko mejor que meterze en un buen fregao, ez meterze volando en un buen fregao.|
+1047|Vozotroz aviadorez humanoz zoiz débilez y blandoz.|
+1048|¡No me dez!|
+1049|¿Perdón? ¡Perdón!|
+1050|¡Lo ke nezezitez, jefe!|
+1051|¡Kanijoz, liztoz para pelear!|
+1052|Zí, jefe, ahora mizmo.|
+1053|¡Ke ze lo koman!|
+1054|¡Venid a por nozotroz!|
+1055|¡Vamoz a morir todoooozz!|
+1056|[gruñe]|
+1057|¡Aaaaaaah, que Morka noz zalve!|
+1058|¡Ah! ¡No, para!|
+1059|¡Urrrghh!|
+1060|¡Oh, no, zomoz loz ziguientez!|
+1061|¡Podemoz con elloz! Creo.|
+1062|¿Aún kedan máz? Oh no.|
+1063|¡Zon máz pekeñoz ke nozotroz! ¡Máz fázil ke patear un garrapato!|
+1064|Ok Jefe.|
+1065|No hay ke marear la perdiz.|
+1066|¿Zí, ké?|
+1067|Loz Orkoz loz mejorez.|
+1068|Vamoz chikoz.|
+1069|Vamoz a darlez dakka.|
+1070|Matad lo ke ze azerke.|
+1071|Atráz chikoz.|
+1072|¡Lanzando granadaz de mano!|
+1073|¡Vamoz a meternoz!|
+1074|[rugido de dolor]|
+1075|¡Aaahhh!|
+1076|¡Noz dizparan!|
+1077|No me ha hecho ni un razguño.|
+1078|Parece ke vienen máz para ke loz machakemoz.|
+1079|¡Loz Orkoz zon imparablez!|
+1080|Vienen a nozotroz.|
+1081|Ez una vieja galaxia llena de aventuraz y peleaz. ¡Y noz enkanta pelear!|
+1082|Lo bueno de vozotroz ez ke zoiz tantoz ke podemoz dizpararoz máz tiempo.|
+1083|Loz Noblez han llegado.|
+1084|Lo mejor de lo mejor.|
+1085|Ha llegado nueztra hora.|
+1086|Lizto para liderar a loz chikoz.|
+1087|En movimiento y liderando.|
+1088|Me enkanta un buen fregao.|
+1089|Dadlez una paliza.|
+1090|Loz Noblez no huímoz. Eztamoz ziendo aztutoz.|
+1091|¡Ezto ez vida!|
+1092|¡Vamoz, vamoz, vamoz!|
+1093|Noz eztábamos rezervando...ahora uzaremoz laz doz manoz.|
+1094|Uff. ¡Ha atravezado mi armadura!|
+1095|¿No zaben kíenez zomoz?|
+1096|¿Noz dizparan?|
+1097|Uy. Ahora me toka a mi.|
+1098|Ke alguien le agarre loz dientez, ¿eh?|
+1099|¡Liderando dezde el frente!|
+1100|¡Ooh! ¡Máz para machakar!|
+1101|Dezeando dezkanzar...¡kuando eztemoz muertoz! Jajaja.|
+1102|Kuando konkistemos la galaxia...¡aún noz tendremoz a nozotroz para zeguir luchando!|
+1103|¡Zon unoz pintaz! ¡Vamoz a darlez una buena pelea!|
+1104|Meganoblez. Zomoz Noblez, pero kon pintaz.|
+1105|¿Ké?|
+1106|¿Ké hay ke matar?|
+1107|No eztán por enzima de nozotroz.|
+1108|Me azerko al fregao.|
+1109|¡Mega-dakka-dakka-dakka!|
+1110|¿Ze azerkan?|
+1111|¡Ni un razguño en la armadura!|
+1112|¡Dadlez en loz morroz!|
+1113|¡Kiero probar eztaz garraz!|
+1114|Hmph. Una viktoria komplikada.|
+1115|¿Kién ha lanzado ezo?|
+1116|Noz eztáiz kabreaandooo.|
+1117|¡No debizte hazer ezo!|
+1118|Ahora tienez mi atenzión.|
+1119|¡Yuujuu, máz pelea para todoz!|
+1120|¡WAAAGH! ¡Meganoblez!|
+1121|¡Mirad, nuevoz debiluchoz para machakar!|
+1122|Ooh, podría machakar un grupo de kanijoz ahora mizmo.|
+1123|¿Loz mekánikoz hazen Mega-Mega-armaduraz? Nezezito máz dakka.|
+1124|Ooh, podríamoz llevarnoz unoz trozoz para nueztraz armaduraz.|
+1125|Preparadoz, Jefe.|
+1126|Jefe. Jeje.|
+1127|¿Ké falta por kemar?|
+1128|¿Algo para kemar?|
+1129|Ze kalienta, ze kalienta...|
+1130|¡Ja, hagamoz la danza del fuego!|
+1131|¡Azerkaoz, oz kalentaremoz!|
+1132|Ezto ze kalienta, chikoz, retrozeded un poko.|
+1133|¡Ouch! ¡Eeeh, eeeh!|
+1134|¡Kuidado! ¡No le dez a eze tanke!|
+1135|¡Zobre fuego, no bajo fuego!|
+1136|Kuidado, eztamoz kalientez al takto.|
+1137|Chizpaz.|
+1138|¡Noz kemamoz, akí!|
+1139|¡Dale, máz gazolina al fuego!|
+1140|¿Hay algo mejor en la vida ke fuegoz y peleaz...? Nah.|
+1141|Ezte kanijo no eztá ni tibio.|
+1142|Vamoz chikoz, hagamoz un fuego ke hazta Gorka vea.|
+1143|¿Ké? ¿Ké?|
+1144|¡Nada!|
+1145|¡Zakeadorez! ¡Tenemoz loz mejorez akribilladorez!|
+1146|¿Kúal ez el plan?|
+1147|Zi hay ke hazerlo, noz moveremoz.|
+1148|¡Zakeadorez y akribilladorez!|
+1149|¡Hemoz hecho máz agujeroz de loz ke planeaba el Kaudillo!...perdón, Jefe.|
+1150|No keremoz ke nueztraz armaz kaigan en malaz manoz.|
+1151|¿Kién va a dizkutir kon nozotroz?|
+1152|¡Ey! ¡Ezo duele!|
+1153|Nah, para. ¡Machakadloz!|
+1154|¡Devolved el fuego!|
+1155|¡Atráz! No podemoz dizpararlez dezde akí.|
+1156|Oh, pobrezillo. Déjame ke le mire loz bolzilloz.|
+1157|¡Penzad en todo el botín!|
+1158|Mirad, tienen kozaz interezantez.|
+1159|¿Ezto? ¿Ezto? Ze kayó de un Karro de Guerra. ¡En zerio!|
+1160|¿Kómo ha llegado tu arma a mi mochila? Perdón, Jefe, no volverá a pazar.|
+1161|Eztaoz kietoz mientraz preparamoz nueztraz armaz. ¡Zalud!|
+1162|Zi hay ke hazerlo.|
+1163|Bueno, kizá.|
+1164|Loz Orkoz loz mejorez y nozotroz los Tipejoz Vazilonez loz mejorez Orkoz!|
+1165|¡Pling!|
+1166|Moviendo nueztraz zubztanzialez rikezaz.|
+1167|¡Tomad de ezto, ezkoria!|
+1168|Zi viene para akí, lo lamentarán.|
+1169|Un pazo atráz para dizparar mejor.|
+1170|No han vizto nada igual.|
+1171|[rugido Orko]|
+1172|¡Urrrggghhh!|
+1173|¡Venid akí para ke podamoz volaroz loz dientez!|
+1174|¡Nezezitaraz máz ke ezo!|
+1175|Volveremoz a por zuz dientez máz tarde.|
+1176|¡Máz...dakka!|
+1177|¡Algo nuevo ke matar!|
+1178|Dientez signifika poder, y poder ez bien.|
+1179|¿Ké le daz al Orko ke ya tiene de todo? MÁZ DAKKA, jajajaja.|
+1180|No zirvez ni para bezar el trazero de un kanijo.|
+1181|¿Kéeeeee?|
+1182|¿A ké ezperamoz?|
+1183|¿Jefe? ¿Jefe? ¿JEFE? ¡¿Jefe?!|
+1184|Dezzzzeando ir.|
+1185|EL ROJO NOZ HAZE IR MÁZ RÁPIDO.|
+1186|¡Moteroz dizparando, Jefe!|
+1187|¡Inkluzo dizparamoz rápido!|
+1188|¡¿Noz hemoz ekivokado de kamino?!|
+1189|Kemando goma, Jefe.|
+1190|¡Dándole kaña!|
+1191|Ey, dame a mi, no a mi moto.|
+1192|¡No! ¡La pintura no!|
+1193|Vamoz demaziado rápido, ¿kómo noz aziertan?|
+1194|¡Fuera de mi MOTO!|
+1195|¿Ké ha zido ezo?|
+1196|Ze viene un atropello.|
+1197|Nuevoz flojuchoz por ahí. ¡Eztamoz con vozotroz en un momento!|
+1198|Nezezitamoz máz pintura roja, Jefe. ¡Hemoz de ir máz rápido!|
+1199|Lo úniko mejor ke una motozikleta...¡ez una moto máz rápida!|
+1200|¡Ez hora de una karrera! Armaz permitidaz, por zupuezto.|
+1201|¿Kuándo dizparamoz?|
+1202|Zí.|
+1203|Dreadnoughtz Orkoz.|
+1204|Lataz Azezinaz.|
+1205|Chazkeando.|
+1206|Dakka-dakka. Ah, ké múzika máz bella.|
+1207|Akí vienen...y azí ze van.|
+1208|¿Ezto tiene marcha atráz?|
+1209|[gruñido metálico]|
+1210|Loz Dread eztán rezibiendo una paliza.|
+1211|¡Rezponded al fuego!|
+1212|Mi turno...|
+1213|¿Eztá muerto?|
+1214|¡Dreadz al frente!|
+1215|¿Ké ez akello de allí?|
+1216|¿Alguien me puede razkar la nariz? Ez komplikado con una garra de kombate...|
+1217|No eztoy zeguro de ke haya suficiente dakka para kompenzar ezto.|
+1218|Eza lata metálika humana pareze chula y brillante, ¡a ver kién mata máz!|
+1219|¡Pilotoz!|
+1220|¿Perdón?|
+1221|Te pillé, merodeando.|
+1222|Muerte dezde el zielo.|
+1223|Volando para allá.|
+1224|¡Reventadloz!|
+1225|¡Ze van para kaza kon agujeroz!|
+1226|¡Pierdo el kontrol!|
+1227|¡Bombaz fueeeraaaa!|
+1228|¡Le han dado al rotor!|
+1229|Ezto no me guzta.|
+1230|¡Kóptero bajo atake!|
+1231|¡No te azerkez tanto!|
+1232|¡Otro ke muerde el polvo!|
+1233|¡Revoluzionando loz rotorez!|
+1234|¡Explorando, vemoz algo!|
+1235|¿Debemoz kortarloz o reventarloz?|
+1236|Ooh, mira eze volador no-orko. ¡Te vamoz a bombardear la kabeza!|
+1237|Oh, zoiz pilotoz molonez, ¿verdad?|
+1238|Okupado, Jefe.|
+1239|¿Zí?|
+1240|¿Te arreglo laz herramientaz?|
+1241|Trazteando.|
+1242|Moviéndome para allá.|
+1243|Pipa ezpezial dakka dakka. Funziona perfekto.|
+1244|Hum, podemoz mejorar ezaz garraz con grandes pinchoz.|
+1245|A vezez hay que parar de penzar y empezar a deztrozar.|
+1246|Ké majoz ke me dejan probar miz armaz.|
+1247|He aprendido mucho, me retiro a rekuperar.|
+1248|Tuz herramientaz deberían ir mejor ahora.|
+1249|¡Máz armadura para que zeaz máz difízil de matar!|
+1250|¡Fallo en la armadura! Ah.|
+1251|Hay ke arreglar ezto.|
+1252|Ezkudoz y blindaje aguantan bien.|
+1253|Aztuto.|
+1254|¿Algo ke ze pueda aprovechar?|
+1255|¡Poned todoz loz dialez a 11!|
+1256|¿Ké ez ezo? ¿Tienen algo ke merezka la pena?|
+1257|No zé kómo lo zé, zólo ke lo zé. El arma ze koge AL REVÉZ.|
+1258|Mejor zer un Raro ke un Jefe. Pero mejor laz doz kozaz.|
+1259|Eze humano eztá arreglando algo komo yo. ¡Pero no ez tan bueno kon el Dakka!|
+1260|Bombardero reportando|
+1261|Bombaz boom liztaz.|
+1262|Dando vueltaz.|
+1263|Máz dakka, marchando|
+1264|Navegaaando para allá.|
+1265|¡Pikando para dizparar!|
+1266|POR KHORNE!|
+1267|Yo le serviré.|
+1268|Sangre y latón.|
+1269|[gruñido demoníaco]|
+1270|¡MÁTALOS A TODOS!|
+1271|¡MI HACHA TIENE SED!|
+1272|THE BLOOD WILL FLOW!|
+1273|[gruñido desdeñoso]|
+1274|[rugido lleno de rabia]|
+1275|¡Yo reclamo vuestros cráneos para Khorne!|
+1276|No nos importa de dónde fluye la sangre.|
+1277|¡SAAAANGREEE!|
+1278|¡Traedme sus cráneos!|
+1279|Sangre y calaveras…. ¡SANGRE Y CALAVERAS!|
+1280|El señor de la sangre exige sacrificio.|
+1281|¡La furia de Khorne lo consume todo!|
+1282|¡Tu sangre es un torrente de rabia, Khorne estará encantado!|
+1283|¡Una excelente ofrenda para el Trono de Cráneos!|
+1284|Lo que Khorne demande|
+1285|¡Por Khorne!|
+1286|Señor de la ira, dame órdenes|
+1287|[gruñido intimidante]|
+1288|¡Ninguno vivirá!|
+1289|¡Venid a por mí, cobardes!|
+1290|Mi hoja ansía tu sangre.|
+1291|¡Caed! ¡Caed ante el poder de Khorne!|
+1292|[rugido de frustración]|
+1293|Te desangraré.|
+1294|¡Mil espadas! ¡Mil sacrificios!|
+1295|[gruñido demoníaco]|
+1296|Patético|
+1297|¡Acércate más!|
+1298|¡¿Te atreves?!|
+1299|Khorne is pleased, it matters not where the blood flows from.|
+1300|[bellowing roar]|
+1301|Khorne está complacido, no importa de dónde fluya la sangre.|
+1302|Khorne exige sangre y me encargaré de que fluya.|
+1303|¡Un río de sangre brota de mi espada, en nombre de Khorne!|
+1304|La mortalidad es debilidad. ¡Khorne no tiene fin, su rabia inmortal!|
+1305|¡Vasijas sin sangre ni alma! ¡Khorne exige vuestras calaveras!|
+1306|Tu sangre angelical está deliciosamente corrupta, Khorne estará encantado.|
+1307|[gruñido de tortura]|
+1308|Debo obedecer|
+1309|¡Sangre para el Dios de la Sangre!|
+1310|[gruñido demoníaco]|
+1311|¡Debo MATAR!|
+1312|[rugido agonizante]|
+1313|¡MASACRAR! ¡MATAR! ¡SACRIFICAR!|
+1314|[rugido de enfado]|
+1315|TE MACHACARÉ|
+1316|¡RABIA SIN FIN!|
+1317|¡SANGRE PARA EL SEÑOR DE LOS CRÁNEOS!|
+1318|[grito demoníaco]|
+1319|¡Almas para la forja de almas!|
+1320|[gruñido agresivo]|
+1321|ROMPER, DESGARRAR, DESTRUIR|
+1322|[gruñido agresivo]|
+1323|Cráneos para el Trono de Cráneos|
+1324|¡La rabia de Khorne nos guía!|
+1325|¡La sangre debe fluir!|
+1326|¡Adelante! ¡Sangre para el Dios de la Sangre!|
+1327|¡Sangre para derramar! Calaveras para tomar!|
+1328|Aplastadlos a todos|
+1329|[rugido de enfado]|
+1330|¡Aplastar! ¡Pisotear! ¡Matar!|
+1331|¡Somos Khorne! ¡La sangre debe fluir!|
+1332|Hacedlos trizas|
+1333|¡Nuestras hojas están sedientas de sangre!|
+1334|¡Aplastar! ¡Dominar! ¡Matar!|
+1335|¡Aplastadlos a todos, sus cráneos para Khorne!|
+1336|Afirmativo.|
+1337|Ordenes recibidas.|
+1338|¡Armadura Invictor, lista!|
+1339|Esperando órdenes.|
+1340|Marchando en vanguardia.|
+1341|Disparando.|
+1342|¡Aplastadlos!|
+1343|¡Para el emperador!|
+1344|Reposicionamiento.|
+1345|Lanzando andanada de granadas.|
+1346|[gruñido genérico]|
+1347|¡Urgh!|
+1348|¡Concentraos detrás de mí, hermanos!|
+1349|¿Eso es lo mejor que puedes hacer?|
+1350|¡Vengaré a mis hermanos caídos!|
+1351|¡Por Sanguinius!|
+1352|Objetivos en movimiento.|
+1353|Apoyo pesado, preparado.|
+1354|Reduciré su número.|
+1355|¡Derraman su sangre por el Emperador!|
+1356|¡Envíalos de vuelta a la Disformidad!|
+1357|Considérelo hecho|
+1358|Esto nos acercará a la victoria.|
+1359|Nada se opondrá a nosotros|
+1360|Sirvo al Bien Supremo|
+1361|Moviéndose a la posición|
+1362|Niegan el camino de los Tau'va, ¡matadlos a todos!|
+1363|Los ralentizaré|
+1364|¡Retrocediendo!|
+1365|Primero estudia a tu enemigo y busca sus puntos débiles. Entonces da el golpe mortal|
+1366|¡Propulsores activados!|
+1367|[gruñido]|
+1368|¡Ufff!|
+1369|No me romperé|
+1370|¿Es eso lo mejor que sabes hacer?|
+1371|Es una carga pesada enviar a tanta gente a la muerte, pero todo es por el Bien Supremo.|
+1372|¡No fallaremos!|
+1373|Objetivos fuera del alcance visual|
+1374|Durante mucho tiempo he estudiado las enseñanzas de Puretide.|
+1375|A través de la sabiduría de los Aun obtendremos la victoria.|
+1376|¡Tu maquinaria muerta no es rival para mi armadura de batalla!|
+1377|¡Con orgullo!|
+1378|¡Por Vior'la!|
+1379|Listo para recibir órdenes|
+1380|¿Cómo puedo ayudar?|
+1381|¡A la primera línea!|
+1382|Eliminando objetivos|
+1383|Estableciendo zona de fuego|
+1384|Buscando una mejor posición|
+1385|¡Haz que cada disparo cuente!|
+1386|¡Estudia los movimientos de tu enemigo! ¡Adivina dónde estarán incluso antes de que lleguen|
+1387|¡Argh!|
+1388|Hnng!|
+1389|¡Nos disparan!|
+1390|El enemigo se ha acercado|
+1391|Murieron para que pudiéramos ganar|
+1392|¡Formad en mi equipo, llevaremos la lucha al enemigo!|
+1393|Pronto habrá más objetivos al alcance.|
+1394|Hay innumerables lecciones que aprender en el campo de batalla.|
+1395|Me encontrarás en el fragor de la batalla, no acechando en la retaguardia.|
+1396|¡Derríbalo antes de que pueda solicitar refuerzos!|
+1397|Así será|
+1398|Por supuesto|
+1399|Aquí estoy|
+1400|¿Qué te preocupa?|
+1401|Donde sea que me necesiten|
+1402|Es mejor retroceder que correr el riesgo de verse superado|
+1403|Me entristece que se haya llegado a esto.|
+1404|Puedes resistirte a la rectitud de los Tau'va, pero no resistirás mi espada.|
+1405|Los golpes del enemigo no te detendrán|
+1406|Muévete rápida y silenciosamente por el campo de batalla.|
+1407|¡Ponen a prueba mi determinación!|
+1408|¡Ackh!|
+1409|Tu rechazo del Bien Supremo será tu perdición|
+1410|No es demasiado tarde para aceptar una mejor manera|
+1411|No sintáis pena, hijos míos, porque ellos dieron su vida gustosamente por el bien de nuestro imperio.|
+1412|No puede haber rendición para aquellos que se niegan a seguir el camino.|
+1413|Es posible que aún estén convencidos de la verdad de nuestras palabras.|
+1414|A través de la unidad y el propósito común, llevaremos la luz del Bien Supremo a todos.|
+1415|No es por odio o malicia que hacemos la guerra a quienes rechazan nuestro mensaje. Es para salvarlos de ellos mismos.|
+1416|Tus sermones vacíos a un Dios falso están desprovistos de verdadera sabiduría|
+1417|Así se hará|
+1418|Confirmado|
+1419|Servimos al Bien Supremo|
+1420|Esperando instrucciones|
+1421|Equipo de Exploración, en movimiento|
+1422|¡Córtadlos!|
+1423|Ejecuta el Mont'ka|
+1424|¡Debemos reposicionarnos!|
+1425|Objetivo de alto valor identificado|
+1426|Sobrecargando el reactor|
+1427|[gruñido de dolor]|
+1428|¡Arggg!|
+1429|¡Nos han descubierto!|
+1430|¡Me han alcanzado!|
+1431|Honra su sacrificio|
+1432|¡Seguid luchando, hermanos y hermanas!|
+1433|Movimiento hacia adelante|
+1434|¡La casta del fuego está lista para servir!|
+1435|Cada vez que te levantes te haré caer de nuevo|
+1436|Órdenes recibidas|
+1437|Por el Bien Supremo|
+1438|¡Equipo de ataque, listo!|
+1439|A la espera|
+1440|Vamos|
+1441|¡Córtadlos!|
+1442|La trampa está desplegada|
+1443|¡Están demasiado cerca, hay que retroceder!|
+1444|Objetivo prioritario marcado|
+1445|[gruñido]|
+1446|¡Argg!|
+1447|¡Estamos bajo fuego!|
+1448|[gruñido de dolor]|
+1449|Cumplieron con su deber|
+1450|¡Por la voluntad de los Aun, obtendremos la victoria!|
+1451|El enemigo se acerca|
+1452|¡Somos la casta del fuego! ¡No fallaremos!|
+1453|Tus ineficaces estrategias serán tu perdición|
+1454|No fallaremos|
+1455|Como desées|
+1456|¿Qué necesitas?|
+1457|Listo para recibir órdenes|
+1458|Presionando hacia adelante|
+1459|¡Elimínalos!|
+1460|No pasarán por aquí|
+1461|¡Cread cierta distancia, hermanos!|
+1462|Objetivo marcado|
+1463|¡Lanzando granada de fotones!|
+1464|[gruñido]|
+1465|¡Hnngh!|
+1466|¡Busca cobertura!|
+1467|No me superarás|
+1468|Sus fuegos ardían intensamente|
+1469|¡Adelante, por el Bien Supremo!|
+1470|Hostiles detectados|
+1471|Muéstranos los objetivos y los eliminaremos.|
+1472|Veamos si puedes recuperarte de esto.|
+1473|Afirmativo|
+1474|Comprendido|
+1475|Apoyo blindado, listo|
+1476|¿Sí?|
+1477|En movimiento|
+1478|¡Disparando al objetivo!|
+1479|Proporcionando cobertura|
+1480|¡Atrás!|
+1481|¡Abrid fuego!|
+1482|¡Sube al cielo!|
+1483|Urgh|
+1484|Recibiendo impactos|
+1485|Armour holding!|
+1486|El enemigo combate|
+1487|Les honraremos|
+1488|¡Presiona hacia adelante! ¡No desfallezcas!|
+1489|El escáner detecta movimiento|
+1490|Si la batalla es el único camino, seremos la primera línea.|
+1491|Con mucho gusto daremos nuestras vidas por los Tau'va.|
+1492|¡Bestias asquerosas! ¡No podemos permitiros vivir!|
+1493|Confirmado|
+1494|Órdenes recibidas|
+1495|A tu señal|
+1496|Equipo furtivo, informando|
+1497|En camino|
+1498|Thin them out|
+1499|Emboscada, lista|
+1500|Retrasando posición|
+1501|Activate stealth fields!|
+1502|[gruñido]|
+1503|Ugh|
+1504|¡Nos han descubierto!|
+1505|Esto no me detendrá|
+1506|Su fuego se apaga|
+1507|¡Traeremos la sabiduría de los Tau'va a este mundo!|
+1508|Sondeando objetivos potenciales|
+1509|No pueden matar lo que no pueden ver.|
+1510|Listos para empezar la cacería|
+1511|¡Elimínalos a todos! ¡Rápido!|
+1512|A sus órdenes|
+1513|Recibido|
+1514|Calculando disparos|
+1515|Artillería en espera|
+1516|Reposicionándonos|
+1517|Entrando en acción|
+1518|Entrar significará la muerte para ellos|
+1519|Una acción necesaria|
+1520|Misil rastreador|
+1521|Iniciando el bombardeo anti-persona|
+1522|[impactos genéricos]|
+1523|El enemigo resiste|
+1524|Bajo fuego|
+1525|Bloqueo detectado|
+1526|Su muerte no fue sin sentido.|
+1527|¡Listo para más objetivos!|
+1528|Los sensores están detectando posibles enemigos|
+1529|Es un honor unirme al grupo|
+1530|Sirvo al Bien Supremo|
+1531|Permíteme demostrar lo que es potencia de fuego de verdad|
+1532|Instrucciones recibidas|
+1533|Órdenes recibidas|
+1534|A la espera de asignación|
+1535|Listo|
+1536|En movimiento|
+1537|¡Disparando!|
+1538|Nunca lo verán venir|
+1539|Esta posición es insostenible|
+1540|¡Listo para infiltración!|
+1541|[gruñido]|
+1542|¡Basta ya!|
+1543|¡El enemigo me tiene en su mira!|
+1544|El enemigo se ha entablado acción|
+1545|Dieron sus vidas al servicio del Bien Supremo|
+1546|El combate no ha terminado aún |
+1547|Sé donde estás|
+1548|¡Armadura Ghostkeel lista!|
+1549|¿Cómo puedo ser de utilidad?|
+1550|Soy el cazador paciente. No eres más que mi presa|
+1551|No fallaré|
+1552|Inmediatamente|
+1553|Estoy listo|
+1554|¿Cuáles son tus órdenes?|
+1555|Cuando me necesites|
+1556|¡Disparando!|
+1557|No se atreven a acercarse|
+1558|¿Es esto necesario?|
+1559|Exponiendo el Reactor Mor'tonium|
+1560|[impactos genéricos]|
+1561|Todos los sistemas operativos|
+1562|Escudo protegiendo|
+1563|¿Eso es todo?|
+1564|Su sacrificio nos inspira a todos|
+1565|¡Por el Bien Supremo!|
+1566|Se acercan más objetivos|
+1567|Quitare del medio a cualquiera que se interponga en mi camino.|
+1568|Apoyo pesado, listo para despliegar|
+1569|¡Por fin un desafío a la altura!|
+1570|Sí|
+1571|Comprendido|
+1572|Listo para recibir órdenes|
+1573|Tripulación Piraña, esperando órdenes|
+1574|Estaremos allí pronto|
+1575|¡Abrid fuego!|
+1576|Zona de supresión establecida|
+1577|¡Están demasiado cerca!|
+1578|[gruñido]|
+1579|¡Aargh!|
+1580|¡Nos están dando!|
+1581|Se enfrentan a nosostros|
+1582|Nos acercaron a la victoria|
+1583|¡Sigue adelante!|
+1584|Exploraremos más adelante|
+1585|Ataque rápido, listo para la misión de exploración.|
+1586|¡Atacaremos fuerte y rápido, por el Bien Supremo!|
+1587|Tu velocidad no te salvará|
+1588|Órdenes entendidas|
+1589|Cualquier cosa que pidas|
+1590|A la espera|
+1591|¡Tripulación Hammerhead lista para el servicio!|
+1592|En camino|
+1593|¡Armamento pesado disparando!|
+1594|Estaremos atentos|
+1595|¡Sobrecargando arma de iones!|
+1596|[impactos genéricos]|
+1597|Podemos tomarlo|
+1598|¡Nos disparan!|
+1599|[gruñido de frustración]|
+1600|¡Luchad por nuestros hermanos caídos!|
+1601|¡Preparad las armas!|
+1602|Objetivos más adelante|
+1603|Somos el puño del Mont'ka|
+1604|El enemigo morirá antes de acercarse.|
+1605|Agujerearemos esa lamentable armadura de batalla.|
+1606|[murmullo de alta tecnología]|
+1607|[serie de pitidos]|
+1608|[zumbido mecánico]|
+1609|[pitido agresivo]|
+1610|[alarma sonando]|
+1611|[alarma vibrando]|
+0|Voxcaster Relay activated|BAM2 Objective Complete|Objective
+1|Progenoid Gland secured|BAM2 Objective Complete|Objective
+2|Defeat the Exocrine ambush.<br><b>{0}</b> of 3 Exocrines eliminated.|BAM7 Objective|Objective
+3|Defend Brother Quindar from the Tyranid horde<br><b>{0}</b> of 4 turns|MAIN_009 Objective|Objective
+4|Settlement|Multiplayer Map Title|Title
+5|Eliminate All Enemies|Objective|Objective
+6|Defend the Unit|Objective|Objective
+7|Protect Brother Aeturo|Objective|Objective
+8|<b>Brother Aeturo</b><br>Harvest the fallen Blood Angels' geneseeds<br><b>{0}</b> of 4 harvested|Objective.  {0} is a number|Objective
+9|Destroy all Tyranids|Objective|Objective
+10|<b>Sergeant Carleon</b><br>Secure the vox-caster relay|MAIN_004 CIP Objective|Objective
+11|Place of Challenge|BAM 7 Title|Title
+12|Initiation|BAM 1 Title|Title
+13|Venomous Corruption|BAM 2 Title|Title
+14|Vox-caster Relay|BAM 3 Title|Title
+15|Rearm & Resupply|SM5 Title|Title
+16|Reclamation Zone|SM6 Title|Title
+17|Lord Commander Dante intends to swell the ranks of the 10th Scout Company with an unprecedented number of new recruits, but for now, the only reinforcements available to rebuild the Chapter are the new Primaris that disembark from Archmagos Cawl's freighter-hulk.<br><br>Following Leviathan's invasion, High Priest Brother Corbulo has led the Sanguinary Priesthood through the morbid task of recovering the progenoid glands of every battle brother who lost their life defending holy Baal. Brother Aeturo's continuation of this work on Baal Secundus is vital for the continuation of the Blood Angels and its successor chapters that fought here.<br><br>This munitions bunker is on the way to the xenos reclamation zone where Aeturo lost contact with Sergeant Pentacio. Although the weaponry at this bunker is in no danger of being stolen by the guileless Tyranids, the ammunition stores will allow Carleon to call for support from the new Hellblaster units waiting on Baal.|BAM 3 Description (Rearm & Resupply)|Description
+18|Relieve the sisters. The xenos have cost us enough already.||
+19|The Place of Challenge is a hallowed testing ground for Chapter aspirants. Those who survive the combat trials and meet the high expectations of the appraisers are inducted into the novitiate ranks of the noble Blood Angels.<br><br>The rank of Lieutenant has been restored following Primarch Guilliman's update to the Codex Astartes. Carleon is one of the first Blood Angels to hold the newly reinstated rank.|BAM7 Description (Place of Challenge)|Description
+20|Sergeant Carleon is well respected for his training of new brothers inducted into the Blood Angels' Eighth Company. He specialises in the tactics and intricacies of the assault doctrine as outlined in the Codex Astartes.<br><br>The Sanguinary Priesthood's numbers have been hit hard following Leviathan. During the invasion, the chapter's apothecaries were inevitably required as front-line soldiers against the xenos swarm. That one should vox for assistance while alone on Baal Secundus is reason enough to make haste across the salt flats.|BAM 2 Description (Venomous Corruption)|Description
+21|The ancient Librarian Donatus Gallian understood the destruction his psyker powers would cause were he to fall to the Flaw within his blood. He actively worked to find a balance between the nobility and the hunger inherited from his sire's gene-seed.<br><br>The result was a force weapon now known as Gallian's Staff, which actively syphons the rage of whoever wields it. This helped Donatus to avoid a terrible and destructive fate that awaited many of his battle brothers. To the frustration of the Armoury and the Librarius, the emotive syphoning effect of the relic has never been replicated.<br><br>Codicier Mordos was the last known wielder of Gallian's Staff. It is likely some battle brothers found the relic during the Devastation and brought it to this bastion, before being overrun by the Tyranids.|BAM9 Description (Gallian's Staff)|Description
+22|The Tyranid operation of planetary consumption involves reclamation pools, through which the aliens break down all of the collected organic material; and capillary towers, waiting to attach to a hive ship, and transfer the biomass.<br><br>No one knows the true intent of the Tyranid Hive Mind. Hive Fleets invade any planet in their path, overwhelming the defenders, and consume every speck of organic biomass to fuel the fleet's forward momentum.<br><br>Had the Cicatrix Maledictum not opened when it did, Baal and Baal Secundus would be little more than withered husks, with Hive Fleet Leviathan continuing along its devastating path through the Red Scar, devouring everything that lay in its path.|BAM 4 Description (Reclaimation Zone)|Description
+23|Age of Crimson Dawn|Campaign Title|Title
+24|Following the Devastation of Baal, the Blood Angels work to heal their homeworld and their Chapter. Saved from the brink of extinction by the Indomitus Crusade, they now find their ranks bolstered by new Primaris Space Marines. Few remnants of the Tyranid invasion remain, and Primarch Roboute Guilliman is eager to leave Baal and continue with his crusade.<br><br>Sergeant Carleon of the Eighth Company returns to Baal Secundus, and has been tasked to assess the battle-readiness of these new Primaris soldiers. As the drop pod hurtles towards his home moon, he considers the arrival of these new battle-brothers, and the cost of his unlikely survival against the relentless Hive Fleet Leviathan...|Campaign Description|Description
+25|Bunker entrance secured|BAM3 Objective Complete|Objective
+26|Tyrannofex eliminated|BAM4 Objective Complete|Objective
+27|Lensing link established|BAM6 Objective Complete|Objective
+28|Exocrine eliminated|BAM7 Objective Complete|Objective
+29|Gallian's staff secured|BAM9 Objective Complete|Objective
+30|Baal Secundus and Baal Primus are the two moons that orbit the Blood Angels homeworld of Baal. Both moons were said to host highly advanced civilisations until the end of the Dark Age of Technology.<br><br>Little is known about these precursor civilisations, although it is widely accepted that their conflict, fought with unprecedented nuclear and viral weaponry, caused the deadly mortis radzones that now pockmark Baal Secundus' surface.|BAM8 Description (Mortis Radzone)|Description
+31|Clear the gaunts|BAM1 Objective|Objective
+32|Eliminate all remaining Tyranid forces|BAM5 Objective|Objective
+33|Secure the Munition Bunker|BAM3 Objective|Objective
+34|Protect the Librarian Dreadnought.|BAM5 Objective|Objective
+35|Relieve the Battle Sisters<br>Sister Verity must survive|BAM11 Objective|Objective
+36|Breach In The Heavenwall|BAM5 Title|Title
+37|The majority of tyranid lifeforms are guileless and feral in isolation, but can be guided by synaptic leaders. These synaptic creatures act as psychic conduits for the unrelenting will of the Hive Mind.<br><br>When multiple synaptic leaders are used to establish a fighting force, they form a network of telepathic nodes between them, directing and manipulating the lesser bioforms into a hyper-organised and merciless hunting pack.|BAM5 Description|Description
+38|Purge the xenos from Kemrender|BAM13 Objective|Objective
+39|Relieve the Baal Mission Adepta Sororitas<br><b>{0}</b>of 7 units alive|BAM15 Objective|Objective
+40|Liberate Angel's Fall|BAM15 Objective|Objective
+41|Scry|BAM17 Interact Objective|Objective
+42|Defend Quindar as he scrys for the core synaptic leader.|BAM17 Objective|Objective
+43|Escort Brother Quindar to the astropathic relay.|BAM7 Objective|Objective
+44|<b>Defend Zone</b><br>Defend the Stormraven crash site|BAM11 Objective|Objective
+45|Activate relay with Librarian Dreadnought.|BAM7 Objective|Objective
+46|Slay the Tyrannofex.|BAM6 Objective|Objective
+47|Exterminate all Tyranid forces.|Generic Objective|Objective
+48|<b>Brother Aeturo</b><br>Recover Sergeant Pentacio's gene-seed.|BAM6 Objective|Objective
+49|Astropathic Relay|BAM8 Title|Title
+50|This Astropathic Relay was held by the Carmine Blades successor chapter during the Devastation of Baal. Had the choir inside fallen, the Indomitus Crusade would not have found its way to Baal to relieve the sons of Sanguinius.<br><br>Techmarine Croginax has been attached as Brother Quindar's escort to monitor the psyker's susceptibility to the Flaws. Should the Librarian show any sign of falling to the Black Rage, it will be the Techmarine's responsibility to disarm and disable the dreadnought. Failure to do so would result in an unstoppable maelstrom of destruction.|BAM6 Description (Astropathic Relay)|Description
+51|Deactivate prometheum flow segment primus.|BAM5 Objective|Objective
+52|Deactivate prometheum flow segment secundus.|BAM5 Objective|Objective
+53|<b>Carleon</b><br>Rendezvous with the Battle Sisters.|BAM10 Objective|Objective
+54|Gate control activated|BAM12 Objective Complete|Objective
+55|Tervigon synaptic leader eliminated|BAM14 Objective Complete|Objective
+56|Locating foundation synaptic node|BAM17 Objective Complete|Objective
+57|Gatekeeper mechanism activated|BAM18 Objective Complete|Objective
+58|Locate the Librarian and harvest his geneseed|BAM15 Objective|Objective
+59|Locate Gallian's Staff|BAM16 Objective|Objective
+60|Angel's Leap|BAM23 Title|Title
+61|Open the Gates of Kemrender.|BAM18 Objective|Objective
+62|Hold the Gates of Kemrender and purge the xenos|BAM18 Objective|Objective
+63|Slay the Tervigon|BAM20 Objective|Objective
+64|Purge the Tyranids from the Salt Exchange|BAM20 Objective|Objective
+65|Protect the site of Brother Quindar's corpse|BAM25 Objective|Objective
+66|Relieve the Battle Sisters<br><b>{0}</b>of 3 units alive|BAM11 Objective|Objective
+67|Assist Death Company units to meet an honourable end<br><b>{0}</b> of 5 Death Company units killed in battle|BAM16 Objective|Objective
+68|Kill the Tyrant of Baal Fortunata|BAM26 Objective|Objective
+69|Clean up the remaining Tyranids|BAM26 Objective|Objective
+70|Auxiliary flow diverted|BAM5 Objective Complete|Objective
+71|Auxiliary flow protocol halted|BAM5 Objective complete|Objective
+72|Destroy the hormagaunts|BAM1 - Objective text|Objective
+73|Destroy all Infestation Nodes ({0}% complete)|BAM19 Objective. {0} will be a percentage value 0->100|Objective
+74|Clear the area of Tyranids|BAM2 - Objective text|Objective
+75|Prometheum flow segment primus deactivated|BAM5 Objective Complete|Objective
+76|Prometheum flow segment secundus deactivated|BAM5 Objective Complete|Objective
+77|OPTIONAL : Give Sgt Carleon the killing blow against the Tyrannofex|BAM6 Objective|Objective
+78|Captain Matarno|Character name|Character
+79|Clear Wind River Canyon of xenos presence|BAM16 Objective|Objective
+80|Defend against the horde<br><b>{0}</b> of 6 rounds|BAM19 Objective (MAIN_025)|Objective
+81|Approach Quindar's corpse|BAM19 Objective (MAIN_025 )|Objective
+82|Activate the three gatekeeper controls.|BAM18 Objective (MAIN_024)|Objective
+83|First gatekeeper switch active [Deactivates in {0} turns]|BAM18 Secondary Objective (MAIN_024)|Objective
+84|Second gatekeeper switch active [Deactivates in {0} turns]|BAM18 Secondary Objective (MAIN_024)|Objective
+85|Third gatekeeper switch active [Deactivates in {0} turns]|BAM18 Secondary Objective (MAIN_024)|Objective
+86|Imperial Ruins|SKI_000 Map Name|Title
+87|Numerous Commanderies of the Order of Our Martyred Lady have accompanied Primarch Roboute Guilliman throughout the Indomitus Crusade, bringing the Emperor's light to the darkened and forgotten corners of the galaxy.<br><br>Canoness Martilja leads the Baal Mission, which intends to help rebuild the communities of the Red Scar fractured by Hive Fleet Leviathan. Even in recovery and grief, there is no room for heresy.<br><br>As Dante and the Red Council wait for the Indomitus Crusade to depart, it has been deemed necessary for the Sisters of the Baal Mission to relocate to Baal Secundus.|BAM10 Description (Landing Pads)|Description
+88|The Red Council has welcomed Canoness Martilja as a provisional adviser, who now counsels Commander Dante and his Chapter Command. She maintains a sparse honour guard of Celestians while staying within the Arx Angelicum.<br><br>As most of the Baal Mission undertake logistical, recovery, and missionary work on Baal Secundus, Sister Superior Verity has been attached to the Blood Angel's 8th Company to aid in eliminating any remaining Tyranid threat on the moon.<br><br>Sister Superior Verity is a highly experienced officer and soldier, whose calm demeanour belies a furious inner zeal that only truly blooms on the battlefield.|BAM11 Description (Stormraven Down)|Description
+89|Kemrender is the largest processing and trading factorum of the salts, making it one of the major settlements of Baal Secundus. Like most others, Kemrender was abandoned by its population before Leviathan appeared above Baal.<br><br>Rumours whisper that Guilliman grows impatient to hear of the synaptic network's demise on Baal Secundus. Dante, ever patient, awaits word from Lieutenant Carleon of the mission's success.|BAM12 Description (Gates of Kemrender)|Description
+90|Gates of Kemrender|BAM12 Title|Title
+91|Sister Verity|BAM11 Title|Title
+92|Genestealer Broods|BAM13 Title|Title
+93|Genestealers are the unseen terror of the Tyranid nightmare. Hiding in darkened corners, they subvert and infest local populations, rotting the planet from the inside, waiting for a hive fleet to find and activate their forces.<br><br>These vanguard bio-organisms are unique amongst the hive fleet's host, as they can maintain a form of brood telepathy amongst themselves. They do not require the guiding hand of a synaptic leader to plot and plan for their strategic victory.<br><br>The fact that a brood of genestealers has infested Kemrender makes the recovery mission significantly more difficult. Only a single genestealer must survive for the threat to persist, hidden in the deep dark heart of the moon.<br><br>HQ air support will be unavailable for this mission.|BAM13 Description (Genestealer Broods)|Description
+94|The Salt Exchange|BAM14 Title|Title
+95|If salt is the blood of Baalfora, then the Salt Exchange of Kemrender is its plagued heart. Minerals and sand once poured through its channels, pumping in and out on the whims of merchants and traders. Whatever darkness that has made this factorum its home must be excised and removed completely.<br><br>Although it does not compare to the original size of Hive Fleet Leviathan, the Indomitus Crusade is an empire unto itself, and casts a long shadow over the Baal system. No one dares speak ill of a true son of the Emperor, but Guilliman's continued presence has stalled much of the rebuilding efforts, due to supplies being shared between Baal and Indomitus.|BAM14 Description (The Salt Exchange)|Description
+96|The Battle for Angel's Fall|BAM15 Title|Title
+97|Angel's Fall was built where the pod which protected the infant Primarch Sanguinius was found. The great city that has built up since is a testament to the nobility and determination of the Great Angel and his sons.<br><br>The Baal Mission of the Order of Our Martyred Lady intends to be a primary aid in the restoration of Baal Secundus. Angel's Fall remains largely abandoned as they build their Mission headquarters near the base of the Great Angel's statue.|BAM15 Description|Description
+98|Wind River Blockade|BAM16 Title|Title
+99|The winds of Wind River Canyon make for a deadly aerial voyage, taken by aspirants who wish to test their endurance before undertaking the trials of initiation.<br><br>For every tyranid that is destroyed, a dozen more are found around the next corner. It is clear that a significant force still remains hidden away somewhere on the moon of Baal Secundus, and is guided by significant synaptic leadership.|BAM16 Description|Description
+100|Angel's Leap|BAM17 Title|Title
+101|The Harpy that attacked the Adepta Sororitas' Baal Mission headquarters in Angel's Fall was last seen flying towards this peak.<br><br>A thick knot of synaptic aberrations waits at Angel's Leap, where Carleon and many other firstborn Blood Angels leapt with their makeshift wings.<br><br>From this black pinnacle, many aspirants jump into the currents of Wind River Canyon and are swept away, either to their death, or their salvation.|BAM17 Description|Description
+102|The Ghost Lands|BAM18 Title|Title
+103|The Ghost Lands are a ruined wasteland. They are all that remain of the great civilisation that once prospered across Baal Secundus during the Dark Age of Technology.<br><br>It is unknown what brought the civilisations of Baal Secundus and Baal Primus to war. Local myths describe the moons as warring siblings, which were ultimately ruined by weapons of unimaginable scale. The mortis radzones that pockmark Baal Secundus are evidence of the destruction that was wrought.|BAM18 Description|Description
+104|Brother Quindar|BAM19 Title|Title
+105|The shock of Sanguinius' death at the peak of the Horus Heresy sent psychic shockwaves through the entire Ninth Legion. To this day, the memory of the betrayal resonates within the gene-seed of the Blood Angels.<br><br>When this psychic backwash becomes too much for a battle brother to withstand, he loses himself to rage-filled hallucinations, and succumbs to the Black Rage. Even those interred within the coffin of a Dreadnought are not immune to the risks inherent in their gene-seed.<br><br>Although the existence of the Black Rage is not kept secret, the Blood Angels try to minimise evidence of the Flaw in front of non-Chapter members, especially when psykers are involved.|BAM19 Description|Description
+106|The Tyrant of Baal|BAM20 Title|Title
+107|In a swarm of predators, the Hive Tyrant is the apex of the Tyranid host. It acts as a direct conduit of the Hive Mind's will, and its presence smothers the feral behaviours of every lesser bioform surrounding it.<br><br>Without the Hive Tyrant, the Tyranid presence on Baal Secundus will splinter and break into smaller and smaller clusters, at which point the swarm will become susceptible to complete eradication.|BAM20 Description|Description
+108|Bridges|SKI_002 Name|Title
+109|Mortis Radzone|BAM8 Title|Title
+110|Landing Pad|BAM10 Title|
+111|Gallian's Staff|BAM9 Title|Title
+112|The Aisle of Tithes|SKI_003 Name|Title
+113|Hive Top|SKI_004 Name|Title
+114|Survive the Harpy bombardments and swarm reinforcements.|BAM17 - Angel's Leap|Objective
+115|<b>Quindar</b><br>Reach the pinnacle of Angel's Leap.|BAM17 - Angel's Leap|Objective
+116|Hold the bunker against the Tyranid reinforcements<br><b>{0}</b> of 3 turns|BAM3 - Rearm and Resupply|Objective
+117|Eliminate the synaptic cluster.|BAM9 - Gallian's Staff|Objective
+118|<b>Techmarine Croginax</b><br>Secure Gallian's Staff.|BAM9 - Gallian's Staff|Objective
+119|<b>Techmarine Croginax</b><br>Escape the auxiliary control room.|BAM5 - The Librarian|Objective
+120|Shut down secondary console and escape.|BAM5 - Librarian|Objective
+121|Time flows in contradictions since the invasion. There is an unexpected slowness in the aftermath of an impossible victory. A languid sweetness of air tasted by the hapless victor.|BAM1 Scenario - Carleon - BAM1S1|Dialogue
+122|And yet, I also feel the turning of change, and the accumulated minutia that falls to the survivors. Corpses to be burned; fortifications to be rebuilt; neophytes to be blooded. Regardless of our losses, we are the Angels of Death, and we are always prepared for war.|BAM1 Scenario - Carleon - BAM1S2|Dialogue
+123|Not that these are concerns for the fledgling Primaris right now. Baalfora is an unforgiving tutor.|BAM1 Scenario - Carleon - BAM1S3|Dialogue
+124|Dante says you are Blood Angels. Prove it! Show me that the blood of the Great Angel flows within your veins!|BAM1 Scenario - Carleon - BAM1S4|Dialogue
+125|You can fight, I'll give you that. I don't know yet if you truly are scions of Sanguinius, or just some ruse of the Archmagos. Battle will decide. It always does.|BAM1 Scenario - Carleon - BAM1S5|Dialogue
+126|-- immediate assistance required. Tyranids converge at the voxcaster relay on the Sal Feritas western edge.|BAM1 Scenario - Aeturo - BAM1S6|Dialogue
+127|Form on me, brothers! It appears Baalfora has decided she is not yet done with you.|BAM1 Scenario - Carleon - BAM1S7|Dialogue
+128|Sergeant. With the relay offline, I was afraid only the xenos had heard my calls for backup. Make haste; my reductor still has work to do.|BAM2 Scenario - Aeturo - BAM2S1|Dialogue
+129|As you say, brother. The Bloodblades of the Eighth are ever eager to serve the Sanguinary Priesthood.|BAM2 Scenario - Carleon - BAM2S2|Dialogue
+130|We should have no difficulties contacting Baal now. As long as we survive this uptick in nearby xenos.|BAM2 Scenario - Carleon - BAM2S3|Dialogue
+131|That is the last of the progenoids that I can gather here. Your assistance has been noted, sergeant.|BAM2 Scenario - Aeturo - BAM2S4|Dialogue
+132|Carleon. Sergeant Carleon of the Eighth, this is Matarno. Respond, brother. |BAM2 Scenario - Matarno - BAM2S5|Dialogue
+133|Captain Matarno. You've earned the rank, brother. Use it.|BAM2 Scenario - Carleon - BAM2S6|Dialogue
+134|These council meetings are a swift reminder of how unqualified the title feels. Pray, distract me from all this talk of logistics and recovery. Give me your assessment of the Primaris.|BAM2 Scenario - Matarno - BAM2S7|Dialogue
+135|They are still courting beautiful Baalfora. Plenty of gaunts remain for them to stretch their muscles. They've just finished intervening on behalf of Brother Aeturo, in fact.|BAM2 Scenario - Carleon - BAM2S8|Dialogue
+136|The priest? I sent him with Pentacio to clear the xenos pools west of the flats. Where is the sergeant?|BAM2 Scenario - Matarno - BAM2S9|Dialogue
+137|Dead, along with his men. Sergeant Pentacio insisted I retreat from the alien pools with the few progenoids I had, right before his own throat was crushed. There is a foul presence among the alien towers.|BAM2 Scenario - Aeturo - BAM2S10|Dialogue
+138|Show me. Take me to where you left Pentacio to die, priest. You will recover our brother's remaining gene-seed, despite whatever you think lurks within those festering pits.|BAM2 Scenario - Carleon - BAM2S11|Dialogue
+139|Sergeant! Captain Matarno said we would find you here. We've been sent to help with your recovery mission.|BAM3 Scenario - Land Speeder - BAM3S1|Dialogue
+140|The aid is welcome. I do not wish to needlessly add to the bodies here.|BAM3 Scenario - Carleon - BAM3S2|Dialogue
+141|These scattered remains have little left to recover. I doubt there is much here I can harvest.|BAM3 Scenario - Aeturo - BAM3S3|Dialogue
+142|This is more than mere execution. The alien will suffer for this butchery.|BAM3 Scenario - Carleon - BAM3S4|Dialogue
+143|Mark the bunker secure. We will take what we need; the Logisticiam will catalogue the rest.|BAM3 Scenario - Carleon - BAM3S5|Dialogue
+144|The area is secured. As you anticipated, there is little of our brothers here to recover. I pray that Pentacio's gene-seed remains undefiled. It is grim work you undertake, priest.|BAM3 Scenario - Carleon - BAM3S6|Dialogue
+145|It is not a task that I relish. The scale of our chore makes for comfortless service. In some ways, I am glad I have been relegated to this moon, where the bodies of our brothers are only stacked by the dozen...|BAM3 Scenario - Aeturo - BAM3S7|Dialogue
+146|Defend Brother Aeturo against the Tyranid assault while he completes his work|MAIN_004 Objective|Objective
+147|The promise of battle makes these Primaris restless, eager. It is my duty to assess their potential here on the salts of Baalfora. Through combat, I intend to discover who these red-armoured giants truly are.|BAM2 Briefing - Carleon - BAM2B1|Dialogue
+148|Some of them take in the vistas of the salt like bored tourists. There is little regard for the skies and sands that shaped our father. They will learn quickly, or Baalfora will kill them. She does not tolerate laxity.|BAM2 Briefing - Carleon - BAM2B2|Dialogue
+149|I expect this Priest we find will also be new to his role. There is no reason other than youthful ignorance to risk the Angel's blood on the salts. In these days following Leviathan's devastation, we are a Chapter awash with fresh blood.|BAM2 Briefing - Carleon - BAM2B3|Dialogue
+150|It is regrettable that Brother Aeturo presented himself from a position of weakness. That is far different than how a Blood Angel is typically introduced to the Sanguinary Priesthood. I must hope the first impression is not lasting on these Primaris.|BAM3 Briefing - Carleon - BAM3B1|Dialogue
+151|In fairness, Brother Aeturo's disregard of our new brothers does himself no justice either. He overlooks their potential, and sees only vat-grown test subjects with no worldly experience.|BAM3 Briefing - Carleon - BAM3B2 |Dialogue
+152|I understand the root of the Priest's scepticism. A century ago I also would not have claimed any brother who had not supped from the Blood Chalices. But a century ago, I would not have believed that I would see us rescued from the brink of extinction. By Primarch Guilliman, no less.|BAM3 Briefing - Carleon - BAM3B3|Dialogue
+153|Brother Aeturo's concern is that I would throw us headlong into death, as some sort of penance for this guilt that weighs me. I am honour-bound to avenge my company brother, but I know that we must act pragmatically. Pentacio had the skill and experience of a dozen full-blooded assault marines with him when he was bested.|BAM3 Briefing - Carleon - BAM3B4|Dialogue
+154|We will take this opportunity to retrace Brother Aeturo's footsteps, and rearm ourselves prior to breaching the infestation site. There are few problems that cannot be solved with a plasma weapon, in my experience.|BAM3 Briefing - Carleon - BAM3B5|Dialogue
+155|"Know your duty, and discharge it above all else." That is the core of an Astarte's being, and the reason I am led to these festering pits.|BAM4 Briefing - Carleon - BAM4B1|Dialogue
+156|I have my duty to Pentacio, and to Eighth Company. To have survived Leviathan, only to be laid low by these scrap remnants... I do not deserve the honour of recovering his name. But if it is the Emperor's will, I will see it done.|BAM4 Briefing - Carleon - BAM4B2|Dialogue
+157|The Priest continues to natter in my ear about the Primaris. They have not yet shown any sign of the Black Rage, but we have both witnessed the thirst present within them. They don't yet understand the tightening of their cheeks, the sanguine flush of their skin come battle.|BAM4 Briefing - Carleon - BAM4B3|Dialogue
+158|No matter how well they think they hide it, these Primaris share our blood and its defects. The Red Thirst claws at their hearts. Let us see what becomes of it once they face the beast that killed Pentacio.|BAM4 Briefing - Carleon - BAM4B4|Dialogue
+159|This is your beast, brother? It is but a mindless Tyrannofex.|BAM4 Scenario - Carleon - BAM4S1|Dialogue
+160|It's behaviour was not this senseless before. Something of it has changed.|BAM4 Scenario - Aeturo - BAM4S2|Dialogue
+161|Aye, Pentacio would not have fallen to this. Come, our duty is clear. You retrieve his gene-seed, and we will exact his revenge on the brute.|BAM4 Scenario - Carleon - BAM4S3|Dialogue
+162|I have recovered Sergeant Pentacio's gene-seed. His legacy will endure within the Angelic Host.|BAM4 Scenario - Aeturo - BAM4S4|Dialogue
+163|Praise Sanguinius!|BAM4 Scenario - Carleon - BAM4S5|Dialogue
+164|Mark this location for the Logisticiam's servitors. These cursed pinnacles shall spoil Baalfora's skin no longer.|BAM4 Scenario - Carleon - BAM4S6|Dialogue
+165|The inconsistency displayed by the alien troubles me. There was no sign of the cognition and strategy that prevailed upon us before.|BAM4 Scenario - Aeturo - BAM4S7|Dialogue
+166|You do not have to explain, brother. There was clearly a disparity between the beast we faced, and the one that bested Pentacio.|BAM4 Scenario - Carleon - BAM4S8|Dialogue
+167|But it was still the same creature.|BAM4 Scenario - Aeturo - BAM4S9|Dialogue
+168|Aye. But previously steered by the will of another.|BAM4 Scenario - Carleon - BAM4S10|Dialogue
+169|A synaptic network... That does not bode well for your moon...|BAM4 Scenario - Aeturo - BAM4S11|Dialogue
+170|I could not hide my conflict while I gave Matarno my assessment. I have no doubt now that something of Sanguinius exists within these Primaris. But they move through a world not yet scaled for them; a universe not yet ready for their weight.|BAM5 Briefing - Carleon - BAM5B1|Dialogue
+171|They would have been in their prime had they been here days earlier, when the hordes of xenos were infinite and unrelenting. Now, they clean up remnants, taking steps that once belonged to my lost brothers. They look like children playing at guardsmen.|BAM5 Briefing - Carleon - BAM5B2|Dialogue
+172|The significance of Pentacio's death was lost on the novice priest, but Matarno understood the threat immediately. If a synaptic leader still lives on Baalfora, then it has remained undetected all this time. A threat left to fester.|BAM5 Briefing - Carleon - BAM5B3|Dialogue
+173|For that reason, the Captain has sent me to scour the Heavenwall. The range is bewildering to the new recruits; a maze of shock-riven valleys and impenetrable mountain trails. With only a fraction of cunning, a tyranid beast could lurk here undetected for generations. And then, violently...|BAM5 Briefing - Carleon - BAM5B4|Dialogue
+174|[EXPLOSION]|BAM5 Briefing - Carleon - BAM5B5|Dialogue
+175|My vox screams static. Over a century's worth of instinct propels me towards the explosion. My orders are followed immediately, the rest of the detachment on my heels without question. Baalfora holds surprises for us yet, brothers.|BAM5 Briefing - Carleon - BAM5B6|Dialogue
+176|Damned pests! Even in death they do nothing but irritate.|BAM5 Scenario - Croginax - BAM5S1|Dialogue
+177|The probability complex decays. Aid arrives as predicted.|BAM5 Scenario - Quindar - BAM5S2|Dialogue
+178|I did not expect to see a dreadnought this far from the Angelicum, let alone one of the Librarius. And your Primaris novices speak of wasted potential...|BAM5 Scenario - Aeturo - BAM5S3|Dialogue
+179|Ours is not to question. Go, brothers, relieve the Librarian!|BAM5 Scenario - Carleon - BAM5S4|Dialogue
+180|The help is appreciated, Sergeant. But if those prometheum flow controls aren't shut down, it's not just the gaunts that are going to end up incinerated over here.|BAM5 Scenario - Croginax - BAM5S5|Dialogue
+181|Understood. We'll see to it, Techmarine.|BAM5 Scenario - Carleon - BAM5S6|Dialogue
+182|It wouldn't be a regular day if we didn't avert certain death, only to discover another source of certain death waiting for us.|BAM5 Scenario - Croginax - BAM5S7|Dialogue
+183|For the glory of Sanguinius!|BAM5 Scenario - Quindar - BAM5S8|Dialogue
+184|Carleon? Carleon, Matarno. Require urgent encoded response. I have orders directly from the Red Council.|BAM5 Scenario - Matarno - BAM5S9|Dialogue
+185|I hear dissent among the Librarius. They are concerned a synaptic network binds Baalfora.|BAM5 Scenario - Quindar - BAM5S10|Dialogue
+186|You've already found the Librarian. Good. Protect him. He can help uncover whatever evil is hiding in the Heavenwall.|BAM5 Scenario - Matarno - BAM5S11|Dialogue
+187|Do not tarry, Carleon. I do not like the tone this Red Council has taken.|BAM5 Scenario - Matarno - BAM5S12|Dialogue
+188|I sense that was the last of the xenos threat in the immediate area.|BAM5 Scenario - Quindar - BAM5S13|Dialogue
+189|We are honoured to fight by your side, Brother-Librarian. I would ask after your purpose out here, but it seems we both have a new objective to see to.|BAM5 Scenario - Carleon - BAM5S14|Dialogue
+190|Bah! I can't tally the number of times some Captain has over-committed to his own hyperbole. We've got our own work to do--|BAM5 Scenario - Croginax - BAM5S15|Dialogue
+191|I am afraid our own mission will be over-ridden, Brother Croginax. There are some in the Librarius that believe Leviathan returns.|BAM5 Scenario - Quindar - BAM5S16|Dialogue
+192|That... no, that can't be true.|BAM5 Scenario - Aeturo - BAM5S17|Dialogue
+193|And yet sages far older and wiser than you now argue otherwise. They conjecture that a strong enough synaptic network could guide the hive fleet back from the warp, like a beacon in the storm. I do not know the truth of this. Regardless, the sergeant will require my help if he is to find his prey in these mountains.|BAM5 Scenario - Quindar - BAM5S18|Dialogue
+194|We'll take you to the lensing array then. Quindar's going to need it if he's to stay awake scrying for your pests. Don't make him wait while you scratch yourselves thinking about it.|BAM5 Scenario - Croginax - BAM5S19|Dialogue
+195|Matarno voxes in, and talks to Quindar and I of synaptic beasts, and the theorising of the Librarius. A synapse network with enough of a link to the Hive Mind could, in theory, act as a beacon, and guide the fleets of Leviathan. Bring them through the warp, back to Baal.|BAM6 Briefing - Carleon - BAM6B1|Dialogue
+196|In theory. A lot of work is done between those two words. I don't doubt Matarno finds the bureaucracy of his new role a challenge. It is a rare puzzle he cannot solve with a swing of his sword-arm.|BAM6 Briefing - Carleon - BAM6B2|Dialogue
+197|Until the Librarians better understand the threat, our objective is to find and exterminate all synaptic leadership embedded in the Heavenwall.|BAM6 Briefing - Carleon - BAM6B3|Dialogue
+198|To that end, I am escorting Brother-Librarian Quindar to the astropathic relay. His hazed talk of warp-aberrations and exigent anomalies is of little comfort. But his resolve is clear, and I will welcome his presence when the time comes for battle. The Techmarine as well, despite his... unique manner.|BAM6 Briefing - Carleon - BAM6B4|Dialogue
+199|I do not question the Emperor's will, but I must admit that survival weighs heavy within me. To have witnessed thousands of brothers sacrifice themselves, entire Chapters struck from the annals of history, only for this threat of Leviathan to persist... it would be a lie to say the thought does not trouble me.|BAM6 Briefing - Carleon - BAM6B5|Dialogue
+200|They are a plague on this moon. For every one slain, a dozen emerge from every other corner.|BAM6 Scenario - Aeturo - BAM6S1|Dialogue
+201|Tsk, that's enough poetics from you. Quindar needs direct access to that lensing array. We recalibrate it to focus his divinations, and then you'll find every disruption in the warp from here to the Angelicum.|BAM6 Scenario - Croginax - BAM6S2|Dialogue
+202|Heed my words, Primaris. A gaunt under the control of the Hive Mind is a completely different opponent than any you have faced thus far. Their synaptic telepathy makes a deft killer from the most lethargic of beasts.|BAM6 Scenario - Carleon - BAM6S3|Dialogue
+203|I have activated the lensing array. I will catalogue all warp aberrations indicative of synaptic xenos activity.|BAM6 Scenario - Quindar - BAM6S4|Dialogue
+204|Hold this area against the Tyranids, brothers. Leave none of the xenos filth alive. The Librarian must complete his work.|BAM6 Scenario - Carleon - BAM6S5|Dialogue
+205|There are no more xenos immediately present. I require assistance with this array, Brother Croginax...|BAM6 Scenario - Quindar - BAM6S6|Dialogue
+206|Aye, aye, take your time. How about we fine tune those sensors without mincing your nervous system. What's left of it in that coffin, at least.|BAM6 Scenario - Croginax - BAM6S7|Dialogue
+207|I can see their network spread out before me. The weave and weft of their corruption runs deep through Baal Secundus.|BAM6 Scenario - Quindar - BAM6S8|Dialogue
+208|I trust your insights, though the words sour the victory.|BAM6 Scenario - Carleon - BAM6S9|Dialogue
+209|We will find every corruption that lurks in the shadows of your moon, Lieutenant. I can see now that our journey together is not yet finished.|BAM6 Scenario - Quindar - BAM6S10|Dialogue
+210|I am no Lieutenant, brother. That rank has not existed for ten thousand years...|BAM6 Scenario - Carleon - BAM6S11|Dialogue
+211|Lord Guilliman has revised the Codex Astartes. You will be among the first of Sanguinius' sons to bear the title anew. Matarno will vox in due course the news of your promotion. Until then, I need time to catalogue these nodes...|BAM6 Scenario - Quindar - BAM6S12|Dialogue
+212|On this hallowed ground, every one of us fought with tooth and bloody nail for the chance to become angels. When I first walked beneath these statues, I had not yet taken the Great Angel's blood. I did not foresee to do so again would be from within my own sarcophagus.|BAM7 Briefing - Quindar - BAM7B1|Dialogue
+213|Confronted with the measureless and the inexhaustible, I am left with only half-answers. I pull Lieutenant Carleon from his musings of guilt, and tell him that synaptic aberrations resonate from this place. I do not lie. But I do not tell him the static is secondary to why I bring him here.|BAM7 Briefing - Quindar - BAM7B2|Dialogue
+214|A whisper reaches out to me from beyond the Heavenwall. With nothing else known, how am I to know whose voice is it I follow. I heed the commands of the Lieutenant, the rank resurrected and as bright as his pauldron gifted from the Armoury. But his is not the question that guides me here.|BAM7 Briefing - Quindar - BAM7B3|Dialogue
+215|There is no answer. I can only follow the voice north, follow it to this Place of Challenge, and pray for an answer to my eternal vigil.|BAM7 Briefing - Quindar - BAM7B4|Dialogue
+216|These statues brings back memories I thought had long faded. They're nothing more than obsolete detritus to these Primaris, I expect.|BAM7 Scenario - Croginax - BAM7S1|Dialogue
+217|I see no sign of the xenos. You are sure the warp aberrations came from here, Brother Quindar?|BAM7 Scenario - Carleon - BAM7S2|Dialogue
+218|Yes, Lieutenant. I cannot account for their absence. Perhaps there is a temporal element I have not accounted for...|BAM7 Scenario - Quindar - BAM7S3|Dialogue
+219|You mean you were seeing into the past.|BAM7 Scenario - Croginax - BAM7S4|Dialogue
+220|No, Techmarine. There is no need for that particular concern. Prepare yourselves. The tyranids know now that we are here.|BAM7 Scenario - Quindar - BAM7S5|Dialogue
+221|Exocrine fire! Defensive formation now!|BAM7 Scenario - Carleon - BAM7S6|Dialogue
+222|Reinforcements! Like all our brothers of the assault doctrine, your timing is impeccable.|BAM7 Scenario - Carleon - BAM7S7|Dialogue
+223|Huh. Look at those jump packs. Seems Cawl brought your replacement with him as well, regardless of your new pauldron.|BAM7 Scenario - Croginax - BAM7S8|Dialogue
+224|The area has been cleansed of xenos presence. They will not return. The synaptic link remains.|BAM7 Scenario - Quindar - BAM7S9|Dialogue
+225|Take in this moment. Very few get to fight within the Place of Challenge as a full-blooded Astartes.|BAM7 Scenario - Carleon - BAM7S10|Dialogue
+226|Carleon, Matarno. Report.|BAM7 Scenario - Matarno - BAM7S11|Dialogue
+227|We have finished securing the Place of Challenge. The reinforcements were greatly appreciated. Brother Quindar is taking us to another synaptic cluster from here.|BAM7 Scenario - Carleon - BAM7S12|Dialogue
+228|With haste, brother. You bear a cascade of orders, from myself to Dante to the Avenging Son himself. Lord Guilliman is reluctant to leave while this question mark of a synaptic network remains. Do not keep the Indomitus Crusade waiting.|BAM7 Scenario - Matarno - BAM7S13|Dialogue
+229|There is a disturbance amongst the radiation. It was once stronger, but has dwindled in days past. Is it guidance? Or the promise of another threat, like Leviathan?|BAM8 Briefing - Quindar - BAM8B1|Dialogue
+230|I see myself standing among spectres, my hands once more flesh. They are unable to hold back the sword that pierces my chest, seeking my hearts' blood. I look down, and only feel the fists of this war machine.|BAM8 Briefing - Quindar - BAM8B2|Dialogue
+231|The whisper pulls again. It says nothing, but it is a presence all the same. It is not a synaptic aberration, but I tell Carleon it must be, for what else could drive me here?|BAM8 Briefing - Quindar - BAM8B3|Dialogue
+232|Not much of Baal Secundus has surprised the new Primaris. But the threat of the mortis radzones has their hearts beating furiously. Few things are more insidious than cultivating your death from the inside. This truth I know well.|BAM8 Briefing - Quindar - BAM8B4|Dialogue
+233|Careful, Primaris. These mortis radzones are subtle killers. Even behind your power armour, you are not entirely safe.|BAM8 Scenario - Carleon - BAM8S1|Dialogue
+234|The whisper is ahead. Codicier Mordos, last known wielder of Gallian's Staff. His fate following the invasion had been unknown to the Librarius.|BAM8 Scenario - Quindar - BAM8S2|Dialogue
+235|Well, we've got a pretty good idea what happened to him now. No sign of that force staff, though. Would be a damned disgrace to lose that relic out here.|BAM8 Scenario - Croginax - BAM8S3|Dialogue
+236|I am duty-bound to recover the Codicier's gene-seed. Even if it is tainted by the radiation, High Priest Corbulo may have use for it in his research.|BAM8 Scenario - Aeturo - BAM8S4|Dialogue
+237|The Codicier's gene-seed has been recovered. No sign of his relic near the body. A shame; I wished to see the weapon that Brother Corbulo argued so vigorously over.|BAM8 Scenario - Aeturo - BAM8S5|Dialogue
+238|All xenos lifeforms have been eliminated, and the Codicier's gene-seed is safe with Brother Aeturo.|BAM8 Scenario - Quindar - BAM8S6|Dialogue
+239|You know, I tried recreating Gallian's stick once. Spent two hundred days in the forge putting together an exact replica. Couldn't get a sliver of effect.|BAM8 Scenario - Croginax - BAM8S7|Dialogue
+240|What did you do with it?|BAM8 Scenario - Aeturo - BAM8S8|Dialogue
+241|Snapped it in half. Shattered my kneecap in the process. Not my finest moment, I'll admit.|BAM8 Scenario - Croginax - BAM8S9|Dialogue
+242|The synaptic network remains our primary focus. Gallian's relic won't be of much help if Hive Fleet Leviathan envelopes us with its return.|BAM8 Scenario - Carleon - BAM8S10|Dialogue
+243|Walls of a myriad years surround me, leftover from a nuclear devastation. I focus, and the aberrant network in the flow of the warp returns. A synaptic cluster waits, with Gallian's Staff at its heart. A lure, or a coincidence, I do not know.|BAM9 Briefing - Quindar - BAM9B1|Dialogue
+244|It is difficult to focus on the words around me. Through the haze, I can see my brothers avoid discussion of the Black Rage while in my company. Knowing looks between priest and techmarine that the Primaris remain oblivious to.|BAM9 Briefing - Quindar - BAM9B2|Dialogue
+245|I fortify myself. A step diminished to an inch, facing the precipice we forever walk towards. I will take Carleon to this fortification, and crush the synapse network. My duty remains eternal.|BAM9 Briefing - Quindar - BAM9B3|Dialogue
+246|Synaptic leader cluster node is present. Their fate will be extermination.|BAM9 Scenario - Quindar - BAM9S1|Dialogue
+247|Aye, and there's force weaponry in those ruins as well. I can feel it.|BAM9 Scenario - Croginax - BAM9S2|Dialogue
+248|Sands shift beneath us.|BAM9 Scenario - Quindar - BAM9S3|Dialogue
+249|Trygon! Kill the alien!|BAM9 Scenario - Carleon - BAM9S4|Dialogue
+250|Gallian's Staff is secured. The metaphor of this thing isn't lost on me. These Primaris have even less use for this relic than we do.|BAM9 Scenario - Croginax - BAM9S5|Dialogue
+251|The Emperor watches all, brother. You still have purpose in duty.|BAM9 Scenario - Carleon - BAM9S6|Dialogue
+252|The synapse leader cluster has been eliminated. The network weakens.|BAM9 Scenario - Quindar - BAM9S7|Dialogue
+253|Had I more time, I would find a way for Quindar to use this relic. A precautionary measure until he can return to the Arx Angelicum.|BAM9 Scenario - Croginax - BAM9S8|Dialogue
+254|I understand your concern, Brother Croginax. But we race Leviathan itself, and should not further risk the safety of this historic relic. I can bide my humours myself for now.|BAM9 Scenario - Quindar - BAM9S9|Dialogue
+255|Call for the Logisticiam, Lieutenant. They should return this force staff to the Chapter Armoury with haste.|BAM9 Scenario - Quindar - BAM9S10|Dialogue
+256|I must remind myself that our presence on this moon is not an expulsion from Baal proper. It is for Lord Guilliman's sake, not ours, that Commander Dante sends us to Baal Secundus.|BAM10 Briefing - Verity - BAM10B1|Dialogue
+257|The Primarch is splendour. But he is clearly uncomfortable in our presence. Particularly with those of my sisters who display more fervour than diplomacy...|BAM10 Briefing - Verity - BAM10B2|Dialogue
+258|Commander Dante has requested that we relocate our Mission to the moon of Baal Secundus. At least until Lord Guilliman musters Indomitus, and departs the Red Scar.|BAM10 Briefing - Verity - BAM10B3|Dialogue
+259|While Canoness Martilja continues to counsel Dante, I have been commanded to take my sisters, and attach to the Eighth Company of the Blood Angels. I understand the Lieutenant's promotion is new. But he is already experienced with the synaptic leadership that compels the xenos here.|BAM10 Briefing - Verity - BAM10B4|Dialogue
+260|While our objectives align, my bolter and my faith are his. We will bring the Emperor's light to the darkest crevasses of these mountains. We will incinerate the alien. And we will honour the sacrifices made here on Baal Secundus. Lives lived for the Emperor are never cut short.|BAM10 Briefing - Verity - BAM10B5|Dialogue
+261|Damned xenos! The more we hunt them, the more emboldened they become. Let us go see if the Sister Superior made it to the Skyshield.|BAM10 Scenario - Carleon - BAM10S1|Dialogue
+262|A fine welcome to Baalfora. Does Sister Verity number among you?|BAM10 Scenario - Carleon - BAM10S2|Dialogue
+263|I am afraid not, Lieutenant. She was in the other Stormraven.|BAM10 Scenario - Battle Sister - BAM10S3|Dialogue
+264|Do not worry, sister. We'll clear this landing zone of Tyranids, and then go retrieve your superior.|BAM10 Scenario - Carleon - BAM10S4|Dialogue
+265|Assuming she doesn't come to your aid first, Astartes.|BAM10 Scenario - Battle Sister - BAM10S5|Dialogue
+266|That appears to be the last of them. Let's go find this sister the Red Council sent to help us.|BAM10 Scenario - Carleon - BAM10S6|Dialogue
+267|Not the entrance I had expected to make. But the Emperor protects, and dozens of xenos surround me, eager to be purged by His wrath.|BAM11 Briefing - Verity - BAM11B1|Dialogue
+268|The two pilots of our transport are dead, along with half a dozen of our sisters. The Emperor knows their names now.|BAM11 Briefing - Verity - BAM11B2|Dialogue
+269|If nothing else, this should be a test of that infamous Blood Angels celerity. Perhaps some of these alien scum will still be alive by the time the Astartes reach us. Unlikely, but the Emperor's blessing has put me in a charitable mood.|BAM11 Briefing - Verity - BAM11B3|Dialogue
+270|Lieutenant! I was led to believe you Blood Angels preferred to work quickly.|BAM11 Scenario - Verity - BAM11S1|Dialogue
+271|The Emperor watches over you, Superior Verity Alodia. I did not relish the thought of reporting your death to the Red Council so soon after your deployment.|BAM11 Scenario - Carleon - BAM11S2|Dialogue
+272|This isn't the first time my transport has been shot out from beneath me, Lieutenant.|BAM11 Scenario - Verity - BAM11S3|Dialogue
+273|Watch out for this one; it's ire is inflamed, and just as likely to impale than trample you.|BAM11 Scenario - Verity - BAM11S4|Dialogue
+274|Secure the crash site. The Logisticiam will want to recover this wreckage.|BAM11 Scenario - Carleon - BAM11S5|Dialogue
+275|About that crash site--|BAM11 Scenario - Aeturo - BAM11S6|Dialogue
+276|Relieve the sisters. The xenos have cost us enough already.|BAM11 Scenario - Carleon - BAM11S7|Dialogue
+277|A decent fight. I see the ferocity of the Blood Angels has not been dulled by recent events.|BAM11 Scenario - Verity - BAM11S8|Dialogue
+278|Neither is the skill of the Sororitas overstated. Welcome to Baal Secundus, Sister Superior.|BAM11 Scenario - Carleon - BAM11S9|Dialogue
+279|Canoness Martilja is a stoic woman. I have seen her cut down traitors in front of their families. Slain heretics as they scrawl unholy scriptures in their cradles. She is not queasy in the face of bloodshed. She knew what we came here for.|BAM12 Briefing - Verity - BAM12B1|Dialogue
+280|She understands clearly our objective to cleanse the synaptic network from this moon. She is also aware - perhaps more than these Blood Angels - that the true danger of the tyranids is not in their frontal assaults, but the insidious corruptions they leave behind.|BAM12 Briefing - Verity - BAM12B2|Dialogue
+281|While my sisters establish our Mission at Angel’s Fall, I will accompany the Lieutenant to the factorum of Kemrender. It remains abandoned, at least by the locals.|BAM12 Briefing - Verity - BAM12B3|Dialogue
+282|No doubt we will find the walls of Kemrender filled with myriad alien to be purged. Carleon insists there is only one way into the fortress, and one way out. It doesn't surprise me these super-soldiers remain oblivious to the holes and gutters in which vermin find their entrance.|BAM12 Briefing - Verity - BAM12B4|Dialogue
+283|It is not my place to correct the Lieutenant in front of his men. Not when he bears the commands of Lord Guilliman on his shoulders. The Primarch himself waits for word of our success. I will not hesitate to bring the Emperor’s light to this backwater. There will be no ground left for sin and heresy to fester.|BAM12 Briefing - Verity - BAM12B5|Dialogue
+284|Gaunts as far as the eye can see.|BAM12 Scenario - Carleon - BAM12S1|Dialogue
+285|If I did not know better, I'd think the witless beasts are purposefully holding this location.|BAM12 Scenario - Verity - BAM12S2|Dialogue
+286|Undoubtedly the work of that Warrior pod. Let's be quick about routing them; we are ill equipped for a prolonged siege.|BAM12 Scenario - Carleon - BAM12S3|Dialogue
+287|Genestealers. Pray they have not had the opportunity to fester within.|BAM12 Scenario - Verity - BAM12S4|Dialogue
+288|That's the last of them out here.|BAM12 Scenario - Carleon - BAM12S5|Dialogue
+289|I've no doubt more are hiding within these walls. With luck, they have not yet had time to nest and hide among the people of your moon. Let us proceed, Lieutenant. We have abominations to purge.|BAM12 Scenario - Verity - BAM12S6|Dialogue
+290|Martilja's suspicions have proved correct. Genestealers infest the largest factorum on this moon. It is crucial that they are eradicated before the native population can be compromised.|BAM13 Briefing - Verity - BAM13B1|Dialogue
+291|The space marines don't understand the true danger of this abhorrent threat. It is tragic evidence of how far they have strayed from their mortal origins. They don't understand that these xenos are more than just targets for their rifles.|BAM13 Briefing - Verity - BAM13B2|Dialogue
+292|If even one genestealer should escape here, every person that survived Leviathan will have done so for nought. They will all die. Not tomorrow, nor the next day. But the infection will linger, biding its time, eventually overwhelming this moon, Baal, and the entirety of the Red Scar.|BAM13 Briefing - Verity - BAM13B3|Dialogue
+293|I will see this xenos disease purged to the very last, for the Emperor's will is that no alien be suffered to live. There is no truth but the truth of the Emperor.|BAM13 Briefing - Verity - BAM13B4|Dialogue
+294|They crawl through every street. We must take our time, Lieutenant. Be certain that not one single genestealer survives. I do not want Lord Dante to have to repeat the fate of Baal's other moon.|BAM13 Scenario - Verity - BAM13S1|Dialogue
+295|Exterminatus will not be required, Sister. We will clear these Kemrender streets until we no longer walk on salt, but the ash of xenos remains.|BAM13 Scenario - Carleon - BAM13S2|Dialogue
+296|We must beware that we do not open our flanks to surprise attacks while manipulating these gates.|BAM13 Scenario - Carleon - BAM13S3|Dialogue
+297|Purge this infestation! Allow nothing but contempt in your hearts for the alien!|BAM13 Scenario - Verity - BAM13S4|Dialogue
+298|That is surely the last of the filth. Do you need rest, Sister?|BAM13 Scenario - Aeturo - BAM13S5|Dialogue
+299|You would not ask that of your brothers. Come, we must proceed to the rotten core of this factorum. We will cleanse it with flame and blade.|BAM13 Scenario - Verity - BAM13S6|Dialogue
+300|Many of the Blood Angels have no affinity for this place, particularly the Primaris. But I see differently in Carleon's demeanour. He grew from the salts of this moon. The memory of this place flows through him as strongly as his lifeblood. Almost as strong as his guilt.|BAM14 Briefing - Verity - BAM14B1|Dialogue
+301|The Lieutenant does not know that I have been listening to his voxcasts with Captain Matarno. Some of my prior Famulous habits die hard, Emperor forgive me.|BAM14 Briefing - Verity - BAM14B2|Dialogue
+302|Indomitus becomes impatient for us to sever this network, as does the Blood Angels Logisticiam. The Crusade is comprised of millions of people; their continued presence puts a unique strain on Baal and its inhabitants.|BAM14 Briefing - Verity - BAM14B3|Dialogue
+303|The Librarian Dreadnought updates our bearing through this factorum. I will continue to keep an eye on this Brother Quindar. He speaks in half-truths at best, yet our progress is entirely dependent on his ability to scry the synaptic nodes.|BAM14 Briefing - Verity - BAM14B4|Dialogue
+304|There is something sinister these Blood Angels keep from me. They choose their words carefully whenever I am in earshot. If they did not have the Great Angel as their sire, I... I would have difficult questions to consider.|BAM14 Briefing - Verity - BAM14B5|Dialogue
+305|The core of this synaptic node waits for us here.|BAM14 Scenario - Carleon - BAM14S1|Dialogue
+306|It's easy to imagine this beating heart of Kemrender alive. Merchants, brokers, thieves, their minds open pathways for heresy and greed.|BAM14 Scenario - Carleon - BAM14S2|Dialogue
+307|Let us find this synaptic creature, and sever it from its network.|BAM14 Scenario - Carleon - BAM14S3|Dialogue
+308|A tervigon. Explains the number of gaunts we've been seeing. It's had all this time to birth its own defence force.|BAM14 Scenario - Carleon - BAM14S4|Dialogue
+309|The alien has converted Kemrender into a fortified creche for the genestealers. This is... more sophisticated than expected. |BAM14 Scenario - Carleon - BAM14S5|Dialogue
+310|Its reach is large, but it is not the foundation node. We have yet to unmask the weaver of this network.|BAM14 Scenario - Carleon - BAM14S6|Dialogue
+311|The synaptic leader is vanquished. Another node of the network darkens.|BAM14 Scenario - Carleon - BAM14S7|Dialogue
+312|It will take the servitors months to clean all of this up. I fear your mighty salt fort may not be habitable for some time, Lieutenant.|BAM14 Scenario - Carleon - BAM14S8|Dialogue
+313|They will persist, sister. The people of the salt always do. As long as they have somewhere to come back to, then we have done all that we can for them.|BAM14 Scenario - Carleon - BAM14S9|Dialogue
+314|The network waivers. The Adepta Sororitas tending to Angel's Fall are being overrun. Sister Verity will receive a vox, requesting reinforcements. She will comply, and will learn something she does not want to.|BAM15 Briefing - Quindar - BAM15B1|Dialogue
+315|The black dam is breaking. I see hands of flesh before me. I pick up my rifle. I know the Angel is near, but his screams are deafening. I want to raise my hands to my ears, but they are metal again, and my head is confined within this coffin.|BAM15 Briefing - Quindar - BAM15B2|Dialogue
+316|Xenos swarm the home land of Sanguinius. Talons rake across powered armour beneath the stony benevolence of our father. The synaptic core is restless. I am restless.|BAM15 Briefing - Quindar - BAM15B3|Dialogue
+317|The liberation of Angel's Fall awaits our arrival.|BAM15 Briefing - Quindar - BAM15B4|Dialogue
+318|Cursed xenos. Torch them in the fires of the Emperor's light; prevail upon them His infinite hatred for the alien.|BAM15 Scenario - Verity - BAM15S1|Dialogue
+319|The xenos entry vector is south-westerly. More will breach the walls in due time.|BAM15 Scenario - Quindar - BAM15S2|Dialogue
+320|Go! Relieve the sisters. The Blood Angels do not stand by while our allies fight our battles for us!|BAM15 Scenario - Carleon - BAM15S3|Dialogue
+321|That flying monstrosity fled towards the Wind River Canyon.|BAM15 Scenario - Aeturo - BAM15S4|Dialogue
+322|A Harpy. It's retreat is far too strategic for it to be acting of its own accord.|BAM15 Scenario - Carleon - BAM15S5|Dialogue
+323|Sister Superior Verity! Praise Saint Katherine, we thought you lost.|BAM15 Scenario - Battle Sister - BAM15S6|Dialogue
+324|The Emperor protects, sister. Have faith; we continue His work through to our last breath. Only then do we rest.|BAM15 Scenario - Verity - BAM15S7|Dialogue
+325|The bleeding is stemmed for now. The flow will begin again if the wound is not cauterised.|BAM15 Scenario - Quindar - BAM15S8|Dialogue
+326|Where do we go to stop them?|BAM15 Scenario - Carleon - BAM15S9|Dialogue
+327|Wind River Canyon. The xenos can be held there, but it will cost you.|BAM15 Scenario - Quindar - BAM15S10|Dialogue
+328|Our lives are the Emperor's to spend. We will hold them at the canyon. Superior Verity, your sisters require your help here. Your aid until now has been invaluable, but my brothers and I must proceed alone.|BAM15 Scenario - Carleon - BAM15S11|Dialogue
+329|I was tasked to see your mission through to completion, Lieutenant. I've no intention of failing the Canoness nor Commander Dante in front of the Lord Primarch.|BAM15 Scenario - Verity - BAM15S12|Dialogue
+330|Have faith. My sisters will persevere with or without our help. And I will not rest until Baal Secundus is scoured of the xenos infestation.|BAM15 Scenario - Verity - BAM15S13|Dialogue
+331|What flowed into Angel's Fall was but a trickle compared to the flood that waits for us in the canyon. The Wind River pulls me along, knowing the dam I will find in its heart.|BAM16 Briefing - Quindar - BAM16B1|Dialogue
+332|If we hold the canyon, we will yet have a chance to wrest Baalfora from this net. Even now, her sands shift beneath me. I walk the corridors of the Vengeful Spirit, though I have never set foot on it. The echo of boots through metal corridors. I cannot go yet.|BAM16 Briefing - Quindar - BAM16B2|Dialogue
+333|Minutes, hours later, I awaken and Baalfora returns. Wind River. Two aberrations in the weave of things, holding each other in place. We are about to break them both...|BAM16 Briefing - Quindar - BAM16B3|Dialogue
+334|Great Angel... My brothers...|BAM16 Scenario - Carleon - BAM16S1|Dialogue
+335|What abominations do I bear witness to?|BAM16 Scenario - Verity - BAM16S2|Dialogue
+336|Something you weren't supposed to see, sister. Those are brothers of the Death Company.|BAM16 Scenario - Aeturo - BAM16S3|Dialogue
+337|They are terrible.|BAM16 Scenario - Verity - BAM16S4|Dialogue
+338|They look like they've been fighting here since Leviathan first landed.|BAM16 Scenario - Croginax - BAM16S5|Dialogue
+339|Do not look on them in despair, brothers. They have bought Angel's Fall this time. Their sacrifice honours Sanguinius!|BAM16 Scenario - Carleon - BAM16S6|Dialogue
+340|I have never seen any soldier that can endure unending battle for so long. How are they still alive?|BAM16 Scenario - Verity - BAM16S7|Dialogue
+341|This is what defeat means to a Blood Angel, sister. Defeat is not death. Defeat is a prolonged torment far more painful than mere death.|BAM16 Scenario - Aeturo - BAM16S8|Dialogue
+342|The flow of xenos has been slowed. We have completed the work of the unredeemed.|BAM16 Scenario - Quindar - BAM16S9|Dialogue
+343|And yet it was not just the alien that debased themselves. Those soldiers... there may be little humanity left in you space marines, but those men were perversions in the eyes of the Emperor.|BAM16 Scenario - Verity - BAM16S10|Dialogue
+344|Were it not for them, your Mission would have been overrun days ago. Those tireless warriors were the only thing holding the Tyranids back from Angel's Fall.|BAM16 Scenario - Carleon - BAM16S11|Dialogue
+345|The respite is temporary. A cluster of aberrations awaits us at the canyon's end. Resolution is inevitable.|BAM16 Scenario - Quindar - BAM16S12|Dialogue
+346|A knot of aberrations waits for us at the leaping. They want to push forward, burst from their net, but the weft that holds them back is too strong.|BAM17 Briefing - Quindar - BAM17B1|Dialogue
+347|Voices echo down corridors. I hear brothers running, shouts of battle taken to the traitors. Not yet. Inevitable, but not yet.|BAM17 Briefing - Quindar - BAM17B2|Dialogue
+348|Croginax has watched me. He knows. He should act now, take me from the Vengeful Spirit. Take me from the sands of Baalfora. Take me to the Redeemer of the Lost. But he won't. The Techmarine knows I am the lighthouse in the dark.|BAM17 Briefing - Quindar - BAM17B3|Dialogue
+349|And the Sister suspects. She does not say out loud, but her emotions ring clarion clear. Witnessing the Black has shaken her, has made her question. Who will she confess to? Carleon's trigger finger twitches at the question.|BAM17 Briefing - Quindar - BAM17B4|Dialogue
+350|Only in death are secrets kept.|BAM17 Briefing - Quindar - BAM17B5|Dialogue
+351|We are close, but this is not it. The core aberration. I just need... vision...|BAM17 Scenario - Quindar - BAM17S1|Dialogue
+352|The Harpy! We'll be easy pickings for the beast while exposed up here.|BAM17 Scenario - Aeturo - BAM17S2|Dialogue
+353|Never mind that; every gaunt this side of the Heavenwall knows we're here now thanks to that infernal screeching.|BAM17 Scenario - Croginax - BAM17S3|Dialogue
+354|Defensive formation! We will be the shield that breaks them. Flood this valley with the blood of the xenos!|BAM17 Scenario - Carleon - BAM17S4|Dialogue
+355|The peak. Take me to the peak from which you jumped as a boy, Carleon. You watched the sky fall away. I need to share your vision.|BAM17 Scenario - Quindar - BAM17S5|Dialogue
+356|You heard him. Clear the way to that pinnacle. He's been awake too damned long already.|BAM17 Scenario - Croginax - BAM17S6|Dialogue
+357|There is static reaching out. I must... we must go... the cities of the dead. Within... the aberration. The core.|BAM17 Scenario - Quindar - BAM17S7|Dialogue
+358|Carleon, report.|BAM17 Scenario - Matarno - BAM17S8|Dialogue
+359|We are at Angel's Leap. Brother Quindar is... he says we are close. We will find the synaptic core within the Ghost Lands.|BAM17 Scenario - Carleon - BAM17S9|Dialogue
+360|Carleon, you need to finish this now. Lord Guilliman is moments away from sending Cato Sicarius to complete the job for you. Lord Dante's honour is the currency we spend for every hour the Tyranid network remains.|BAM17 Scenario - Matarno - BAM17S10|Dialogue
+361|May Sanguinius prove my trust in you was not misplaced. Find the synaptic leader, Carleon. You kill it, or you die by its hands. Don't come back to Baal until one of those is true.|BAM17 Scenario - Matarno - BAM17S11|Dialogue
+362|The Ghost Lands. Baalfora has grown up and over these ruins for more than twelve thousand years. The spectres of civilisations past watch us; from before the Blood, before the nuclear rain.|BAM18 Briefing - Carleon - BAM18B1|Dialogue
+363|I do not know if the Tyranids that infest these ruins can truly contact the Hive Mind, and whether they can guide Leviathan back. Even now, that is only conjecture and theory.|BAM18 Briefing - Carleon - BAM18B2|Dialogue
+364|But what I do know is that the honour of our Chapter is wholly dependent on a Librarian we are losing to the Black Rage. It pains me to watch him deteriorate. We all stood on that precipice just days ago. To be beaten, restored, yet still fall short of grace...|BAM18 Briefing - Carleon - BAM18B3|Dialogue
+365|I have to trust that Brother Quindar can maintain the serenity to stay with us to the end. It will cost many of us our lives to subdue him were he to fall now. And I already stand on the shoulders of too many dead brothers.|BAM18 Briefing - Carleon - BAM18B4|Dialogue
+366|As for the Sister Superior, she has seen too much of the darkness that we contend with. Her scrutiny is... unsettling. I will consider how best to deal with our esteemed ally, once the threat of this synaptic leader has been eliminated.|BAM18 Briefing - Carleon - BAM18B5|Dialogue
+367|Even the dust of a city long dead is not safe from their unending hunger.|BAM18 Scenario - Aeturo - BAM18S1|Dialogue
+368|The only purpose of this filth is consumption, all to fuel the greater entity for its own sake. Their hollow existence will be short-lived before the Emperor's might.|BAM18 Scenario - Verity - BAM18S2|Dialogue
+369|I can... I can hear... Our Father is under attack. I am coming, my Lord! My sword is yours!|BAM18 Scenario - Quindar - BAM18S3|Dialogue
+370|None shall stand in my way! Death to the traitor!|BAM18 Scenario - Quindar - BAM18S4|Dialogue
+371|Quindar! Not yet! Cursed blood, not yet.|BAM18 Scenario - Croginax - BAM18S5|Dialogue
+372|We pursue Brother Quindar, his psyker powers launching the heavy dreadnought ahead of us. The corpses of Tyranids are cast aside like rag dolls. We run deeper into the ruins, but we lose the Librarian to the darkened halls of this dead city.|BAM19 Briefing - Carleon - BAM19B1|Dialogue
+373|Shadows creep in on us. The xenos test, lunging, feinting. My brothers tear them apart, but it is only a matter of time before the darkness is unleashed, and crushes us all.|BAM19 Briefing - Carleon - BAM19B2|Dialogue
+374|An explosion. Croginax runs ahead, the Techmarine more limber than I have ever seen him. We run, and are confronted with a violent tableau, both beautiful and tragic...|BAM19 Briefing - Carleon - BAM19B3|Dialogue
+375|Hive Tyrant!|BAM19 Scenario - Aeturo - BAM19S1|Dialogue
+376|The Tyrant of Baal Fortunata.|BAM19 Scenario - Verity - BAM19S2|Dialogue
+377|Kill them! Kill them all! Let not one of them reach Brother Quindar's body.|BAM19 Scenario - Carleon - BAM19S3|Dialogue
+378|Oh, Quindar. You found your respite after all...|BAM19 Scenario - Croginax - BAM19S4|Dialogue
+379|Brother Quindar gave his life for the Imperium. The Emperor knows his name.|BAM19 Scenario - Aeturo - BAM19S5|Dialogue
+380|In all my service, I have never seen such unfettered power and rage...|BAM19 Scenario - Verity - BAM19S6|Dialogue
+381|He rests with Sanguinius now. Come, brothers! We will corner the Tyrant, and teach it in exquisite detail the wrath of the Angelic Host.|BAM19 Scenario - Carleon - BAM19S7|Dialogue
+382|Carleon, the Battle Sister has seen too much. She watched a sanctioned psyker lose all self-control to the Black Rage. We can't let her to walk out of here with that knowledge.|BAM19 Scenario - Aeturo - BAM19S8|Dialogue
+383|The Emperor guides us, brother. We will we have our vengeance first. The sister's fate can be decided after.|BAM19 Scenario - Carleon - BAM19S9|Dialogue
+384|The xenos infest these halls like a plague of rats. You cannot walk without crushing the skulls of their dead beneath your feet.|BAM20 Briefing - Carleon - BAM20B1|Dialogue
+385|This Hive Tyrant is the foundation of the xenos resistance on Baalfora. It is responsible for the coordinated attacks, for the precision strikes, for the uncanny formations. We have to sever the head. Without it, the body will fragment, and fall to anyone with a bolter.|BAM20 Briefing - Carleon - BAM20B2|Dialogue
+386|I remember and count every death that has brought us here. The sacrifices of my brothers will not be in vain. This infection will be purged. The Tyrant dies today.|BAM20 Briefing - Carleon - BAM20B3|Dialogue
+387|Crush the enemy beneath your feet! Those of you who spill your blood today are true sons of Sanguinius, and will forever be my brothers!|BAM20 Scenario - Carleon - BAM20S1|Dialogue
+388|For Baalfora! For the Great Angel! For the Emperor!|BAM20 Scenario - Carleon - BAM20S2|Dialogue
+389|Have care, brothers. The core of their network is dead. Cool your blood. Savour this victory.|BA Ending - Carleon - BAES1|Dialogue
+390|I... I have to attend the dreadnought. Incarael will have my liver if we lose the machine-spirit down here.|BA Ending - Croginax - BAES2|Dialogue
+391|Go, brother. Tend to his body. Brother Quindar's sacrifice should be venerated, and recounted with pride within our Chapter.|BA Ending - Carleon - BAES3|Dialogue
+392|I expect I will get to walk away just as easily, Lieutenant. Even after all that I have witnessed.|BA Ending - Verity - BAES4|Dialogue
+393|You understand nothing of what you saw!|BA Ending - Aeturo - BAES5|Dialogue
+394|At ease, brother. Sister Verity has a right to question. We wrestle with our curse every day. It is a testament to the sister's strength that she did not turn on us when faced with our Chapter's darkest shadow.|BA Ending - Carleon - BAES6|Dialogue
+395|Answer me truthfully, Carleon. Did you know the psyker was falling when you brought us here? Were it not for the Tyrant's talons, he may have jeopardised us all. Did you know?|BA Ending - Verity - BAES7|Dialogue
+396|When I talk with Canoness Martilja, I will have to confess all to her. She will learn of your rogue Librarian, and the knife's edge you made us walk.|BA Ending - Verity - BAES8|Dialogue
+397|I trust you will tell her everything you need to, sister. The Emperor already judges our every decision. Should he find mine wanting, my life is his to spend.|BA Ending - Carleon - BAES9|Dialogue
+398|With time, the contradictions fade. Baalfora continues to turn. Her people will slowly come back, and begin to rebuild their lives. I am no longer needed here. My ghosts are at rest.|BA Ending - Carleon - BAES10|Dialogue
+399|There is already new work for us. The Primaris have proved the strength of their blood. Dante is eager to use them to cleanse the Red Scar. Baal is but one of thousands that we will wrest back from Leviathan. Our sword arms may tire, but our spirits cannot, so long as enemies of the Imperium remain.|BA Ending - Carleon - BAES11|Dialogue
+400|For we are the Angels of Death...|BA Ending - Carleon - BAES12|Dialogue
+401|... and we are always prepared for war.|BA Ending - Carleon - BAES13|Dialogue
+402|In the grim darkness of the far future, there is only war. People are born. They live, they suffer, and die. Rarely of natural causes.|BA Introduction - Narrator - BAIS1|Dialogue
+403|Days prior to the Fall of Cadia, Dante faced his greatest challenge. Hive Fleet Leviathan had broken through the Cryptan Shield, and the Tyranids bore directly for the sacred homeworld of the Blood Angels. Baal.|BA Introduction - Narrator - BAIS2|Dialogue
+404|Sons of Sanguinius rallied from the far corners of the galaxy. Complete strangers died side by side as brothers. Yet even this unprecedented congregation could not hold back the Great Devourer.|BA Introduction - Narrator - BAIS3|Dialogue
+405|In their darkest moment, the Blood Angels gathered around Lord Commander Dante. A last stand. They gave themselves to the Red Thirst, and stood in defiance of the alien. Not for survival, for the Chapter was doomed; but for the honour of their sire, the Great Angel Sanguinius.|BA Introduction - Narrator - BAIS4|Dialogue
+406|And then, pandemonium. The Cicatrix Maledictum opened, and tore the galaxy in two. Time stretched, contorted. Daemons of Khorne poured across the moon of Baal Primus, tearing at xenos and marines alike. Havoc reigned.|BA Introduction - Narrator - BAIS5|Dialogue
+407|But just as quickly as it appeared, the Cicatrix Maledictum contracted. It took with it both the Daemons, and vast swathes of Hive Fleet Leviathan. In their place, the Indomitus Crusade appeared, helmed by the Avenging Son himself, Primarch Roboute Guilliman.|BA Introduction - Narrator - BAIS6|Dialogue
+408|The blessed Primarch didn't just bring relief to Baal. He brought with him the Primaris Space Marines, thousands bearing the mark of the blood drop. The Primaris were larger, stronger, more resilient than their firstborn brethren. But to the Blood Angels, they represented a different kind of salvation.|BA Introduction - Narrator - BAIS7|Dialogue
+409|The promise of these super-soldiers was of an improved gene-line; more pure, and closer to that of Sanguinius. Away from prying ears, Archmagos Cawl whispered that they showed fewer signs of the flaws that plagued the Great Angel's blood. No more thirst beating at their hearts. No more armour to be painted black.|BA Introduction - Narrator - BAIS8|Dialogue
+410|A semblance of normality has since returned to Baal. The monolithic Indomitus Crusade prepares to leave. Commander Dante, now Lord Regent of half of the Imperium, works to heal his Chapter, and Baal, of the trauma suffered at the hands of Leviathan.|BA Introduction - Narrator - BAIS9|Dialogue
+411|And on the moon Baal Secundus, Sergeant Carleon hurries to the aid of a Sanguinary Priest...|BA Introduction - Narrator - BAIS10|Dialogue
+412|It may seem quiet, but this stillness is unnatural. Study the battlefield before you proceed.|Tutorial|Dialogue
+413|Let's see if these gate controls haven't been ruined by the xenos.|Tutorial|Dialogue
+414|Your eyes can deceive you; your ears may lie to you; but the Emperor is always the truth. Trust in your auspex to guide you.|Tutorial|Dialogue
+415|Hormagaunts. Not many of them left, mind you. Our brothers died valiantly to thin their numbers. Eradicate the alien, and honour the legacy of our fallen.|Tutorial|Dialogue
+416|Have faith, brothers. The Emperor protects!|Tutorial|Dialogue
+417|More of our battle brothers arrive! We must disengage from these gaunts to join them.|Tutorial|Dialogue
+418|Do not waste your rounds on cowards that hide behind walls. Position yourselves to watch the choke point, and prepare for their charge.|Tutorial|Dialogue
+419|A Sanguinary Priest! The Great Angel watches over us!|Tutorial|Dialogue
+420|For the Emperor!|Tutorial|Dialogue
+421|An abandoned Baalite settlement on the moon of Baal Secundus, soon to be filled with the footfalls of uncaring combatants.|Map Description (MAIN_011)|Skirmish
+422|Hidden within a crater left by an ancient weapon, the Place of Challenge is soaked in the blood of thousands of aspirants who wished to become Blood Angels.|Map Description (MAIN_014)|Skirmish
+423|Salt seeps from the wounds of this manufactorum, nearly overrun with an unimaginable infestation.|Map Description (MAIN_020)|Skirmish
+424|Deep within the bowels of the Ghost Lands. A sacred site that resonates with memories of desperate battles and honourable sacrifice.|Map Description (MAIN_025)|Skirmish
+425|Once a bastion of imperial might, these streets are now doomed to eternal war.|Map Description (SKI_001)|Skirmish
+426|A vital artery of the Administratum, clogged with corruption and violence.|Map Description (SKI_002)|Skirmish
+427|A public square from which the Administratum collects and parades the Imperial Tithe this insignificant planet owes; in soldiers, wealth, or blood.|Map Description (SKI_003)|Skirmish
+428|Of the billions of souls that scurry below, not one of them will ever escape the sweeping shadows these leviathan edifices cast.|Map Description (SKI_004)|Skirmish
+429|Kill the Tyrant of Baal Fortunata and its Hive Guard<br><b>{0}</b> of 3 Hive Guard eliminated.|BAM20 Objective|Objective
+430|Planetary Supremacy|Conquest Campaign Title|Title
+431|On this planet, you will make your last stand. Absolute domination is your only means of survival. In <b>Planetary Supremacy</b>, you control one of three factions warring to conquer the planet.<br><br>Establish your base, take control of the resources, and obliterate your enemies. <br><br>To achieve victory, you will need to advance your forces across the map, and destroy the base territories of the two opposing factions. Strategic resources will provide unique bonuses to help maintain your dominance. You will only lose if you fail to defend your base from the enemy's onslaught; while you still have one unit left alive, you can fight on, and deliver upon this planet the totality of your wrath.|Conquest Campaign Description|Description
+432|Planetary Supremacy is a new conquest-style skirmish campaign mode currently in active development. Play this preview and share your feedback and feature requests with the development team via the Slitherine forums.|Conquest Campaign Dialog Prompt|Description
+433|Fortress of Redemption|Skirmish Map Name|Skirmish
+434|Constructed by the Angelic Host, this mighty fortification is an ode to the Great Angel, Sanguinius - and to war.|Map Description (SKI_005)|Skirmish
+435|Fortification|Skirmish Map Type|Skirmish
+436|Feeding Ground|Skirmish Map Name|Skirmish
+437|Driven by the gestalt will of the Hive Mind, the planet-devouring menace consumes all|Map  Description (SKI_006)|Skirmish
+438|Reclaimation Zone|Skirmish Map Type|Skirmish
+439|Blackstone|Skirmish Map Name|Skirmish
+440|Ancient beyond reckoning, this tomb entrance only hints at the eldritch might that awakens below|Map Description|Skirmish
+441|Necron Tomb|Skirmish Map Description|Skirmish
+442|Daemonic Incursion|Incursion Campaign Title|Title
+443|Infinite Waves|Incursion Campaign UI Option|UI
+444|Daemonic Incursion is a desperate battle for survival. Fight against increasingly powerful waves of Khornate Daemons as they rush forth into real space to spill blood and collect skulls to please the Lord of Rage!<br><br>Choose a force from your army list, enter a warp-infested hellscape, and see how long you can survive. Between waves of Khornes’ legions, you’ll have a brief respite to bolster your forces with limited reinforcements.<br><br>The servants of the Blood God are relentless, and your doom is most certainly assured. Can you overcome the odds, and live to see tomorrow? |Incursion Campaign Description|Description
+445|Bonus Pickup Penalty|Incursion Campaign UI|UI
+446|Sanctum Sacresant|Skirmish Map Name|UI
+447|Sanctorum|Skirmish Map Type|UI
+448|Battle-psalms ring out to strengthen the faithful across this sanctuary and tribute to Saint Katherine and the God-Emperor |Skirmish Map Description|UI
+449|Scrapyard|Skirmish Map Name|UI
+450|Ork Scrapyard|Skirmish Map Type|UI
+451|Scattered across this ramshackle greenskin settlement are piles of the best scrap teef can buy.|Skirmish Map Description|UI
+452|Field of Skulls|Skirmish Map Name|UI
+453|A cracked and tormented wasteland littered with the splintered bones of the victims of the Blood God's wraith.|Skirmish Map Type|UI
+454|Daemon World|Skirmish Map Description|UI
+455|Fire Caste Outpost|Skirmish Map Name|UI
+456|When diplomacy fails, the Fire Caste are unleashed upon those who dare to reject The Greater Good.|Skirmish Map Description|UI0|Repetidor Voxcaster ativado|

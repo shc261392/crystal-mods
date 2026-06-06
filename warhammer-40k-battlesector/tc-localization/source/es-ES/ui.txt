@@ -1,0 +1,2455 @@
+1|Acabar Turno|
+2|Turno de {0}|
+3|Evasión: {0}|
+4|Momentum: {0}|
+5|Esconder|
+6|Siguiente Unidad Sin Usar|
+7|Salud|
+8|Frontal: {0}|
+9|Derecha: {0}|
+10|Trasera: {0}|
+11|Izquierda: {0}|
+12|Precisión: {0}%|
+13|Daño: {0}|
+14|Ataques: {0}|
+15|Munición: {0} / {1}|
+16|Nueva Campaña|
+17|Cargar Partida|
+18|Escaramuza|
+19|Multijugador|
+20|Tutorial|
+21|Opciones|
+22|Salir|
+23|Interactuar|
+24|{0} Ganancias de Momentum|
+25|{0} Momentum|
+26|No se puede usar Vigilancia en combate cuerpo a cuerpo.|
+27|<b><color=#F20707>X</color></b>|
+28|Sin unidad para atacar|
+29|No se puede atacar a una unidad del mismo equipo.|
+30|Sin munición|
+31|No hay suficientes puntos de acción|
+32|Modo de fuego de supresión activado|
+33|El enemigo está demasiado cerca|
+34|El enemigo está fuera de alcance|
+35|El enemigo está tras cobertura completa|
+36|Se usó una habilidad de no movimiento este turno|
+37|Rechazar|
+38|Terreno impasable|
+39|No hay suficientes puntos de movimiento|
+40|No se puede mover a una casilla que ya tiene una unidad|
+41|Balístico|
+42|Combate cuerpo a cuerpo|
+43|Fuego|
+44|Artillería|
+45|{0} Precisión: {1}|
+46|{0} Daño: {1}|
+47|Defender la Unidad|
+48|Esta madriguera no está conectada a otra madriguera|
+49|Armadura: {0} / {1}|
+50|Mostrar en la Pantalla de Carga|
+51|Lobby Principal|
+52|Puntos De Acción No Gastados|
+53|Algunas de tus unidades tienen puntos de acción sin gastar y sufrirán una penalización de Momentum. ¿Deseas finalizar tu turno ahora?|
+54|{0} Restante|
+55|{0} Sobre Límite|
+56|Mi Ejército|
+57|{0} Precisión por Momentum|
+58|{0} Evasión por Momentum|
+59|{0} Precisión|
+60|{0} Daño|
+61|{0} Ataques Adicionales|
+62|Última Oportunidad|
+63|Vigilancia<br><br>Establece una zona reactiva de fuego. La unidad sufrirá una pequeña penalización de Momentum al final del turno.|
+64|Cancelar Vigilancia|
+65|Enviar Cambios|
+66|{0} ha solicitado algunos cambios|
+67|Revertir Cambios|
+68|Precisión:|
+69|Modificador por Distancia: {0}%|
+70|Combate cuerpo a cuerpo: {0}%|
+71|Armadura: {0}|
+72|Armadura:|
+73|La muerte espera a este personaje...|
+74|{0} Daño combate cuerpo a cuerpo|
+75|{0} Evasión|
+76|Cambiar Orientación|
+77|Mover|
+78|Coste|
+79|Puntos de Movimiento|
+80|Daño|
+81|Penalización por Cobertura|
+82|Probabilidad de acierto|
+83|Precisión Base|
+84|Penalización por Distancia|
+85|Evasión del enemigo|
+86|No se pueden utilizar otras acciones en modo de vigilancia|
+87|Esta unidad no puede usar madrigueras|
+88|Presa del pánico|
+89|{0} Movimiento|
+90|{0} Precisión a Distancia|
+91|Habilita el Modo de Movimiento de Salto|
+92|Suprimido -{0} MP|
+93|{0} Precisión cuerpo a cuerpo|
+94|No se pueden usar madrigueras enemigas|
+95|Diferencial de Armadura|
+96|No se puede usar esta habilidad cerca de otras madrigueras.|
+97|Los personajes importantes tienen una segunda oportunidad cuando mueren. Esta es la cantidad de HP que obtienen los personajes importantes cuando son revividos.|
+98|<i>Cambios En La Partida Aceptados</i>|
+99|<i>Cambios En La Partida Rechazados</i>|
+100|La unidad está completamente bloqueada y no se puede mover|
+101|Otra madriguera está a punto de estar en esta casilla|
+102|{0} Rango De Movimiento Mínimo|
+103|Por Debajo Del Rango Mínimo|
+104|AP|
+105|{0} Daño a Distancia|
+106|HP De Última Oportunidad Para Revivir|
+107|Los árboles tecnológicos adicionales estarán disponibles a medida que reclutes más personajes de HQ.|
+108|Turno inicial...|
+109|20 HP|
+110|HP Completo|
+111|Gasta fichas de HQ para desbloquear nuevas habilidades, armas y actualizaciones de estadísticas para personajes de HQ y unidades relacionadas.|
+112|Hecho|
+113|Música|
+114|Efectos de Sonido|
+115|Voz|
+116|Sonido|
+117|Cámara|
+118|Gráficos|
+119|Controles / UI|
+120|Misc|
+121|Idioma|
+122|Velocidad de Zoom|
+123|Velocidad de Movimiento|
+124|Velocidad de Rotación|
+125|Resolución|
+126|¿Cambiar resolución?|
+127|La resolución se ha cambiado a {0}, ¿confirmas este cambio?|
+128|OK|
+129|Confirmar|
+130|Cancelar|
+131|Revertir|
+132|Revirtiendo en {0} segundo|
+133|Revirtiendo en {0} segundos|
+134|Pantalla Completa|
+135|Arma en enfriamiento|
+136|Recuerda, cada arma tiene un alcance óptimo. Las armas son más efectivas cuando disparas desde su rango óptimo.|
+137|Mover al llegar al borde de la pantalla|
+138|Invertir Cabeceo|
+139|Invertir Guiñada|
+140|Invertir Zoom|
+141|Mostrar subtítulos durante las cinemáticas|
+142|Mostrar subtítulos para frases|
+143|Proteger al Hermano Aeturo|
+144|No Hay Suficientes Casillas Adyacentes Libres|
+145|No se puede usar bajo tierra|
+146|No se puede usar sobre tierra|
+147|Presiona<color=#C8914F>P</color>para pasar a la siguiente unidad disponible que todavía tiene al menos un<color=#C65C34> Punto de Acción</color>para gastar.<br><br>Alternativamente, usa<color=#C8914F>TAB</color> para recorrer todas las unidades.|
+148|No hay casillas adyacentes a las que escapar.|
+149|{0} Daño de veneno a distancia recibido|
+150|{0} Daño de veneno cuerpo a cuerpo recibido|
+151|{0} Daño a distancia recibido|
+152|Fuera del alcance de la habilidad|
+153|Habilidad ya activa|
+154|{0} Daño cuerpo a cuerpo recibido|
+155|Se activa si la unidad no se movió durante el turno actual o anterior.|
+156|Puedes volver a enfocar rápidamente la cámara en la unidad seleccionada presionando la tecla<color=#C8914F><b>.</b></color>.|
+157|{0} Perforación De Armadura|
+158|Ningún objetivo dentro de alcance|
+159|{0} Momentum|
+160|Caduca en {0} Turno|
+161|Caduca en {0} Turnos|
+162|{0} Armadura a distancia|
+163|{0} Armadura cuerpo a cuerpo|
+164|Solo puede emplearse sobre unidades mecánicas|
+165|** unused **|
+166|{0} Daño a distancia básico recibido|
+167|{0} Daño cuerpo a cuerpo básico recibido|
+168|Puede ser atacado por artillería a cualquier distancia|
+169|{0} Artillería Antiblindaje contra esta unidad|
+170|{0} Antiblindaje a distancia básico contra esta unidad|
+171|Marcado|
+172|<b>Fichas HQ</b><br>Obtendrás fichas HQ al completar con éxito una misión. Gasta estas fichas en el Centro de Mejoras del HQ para mejorar tus unidades.|
+173|<b>Capacidad de despliegue mejorada</b><br>¡Se aumentó el límite de puntos del ejército!<br>¡Se aumentó el límite de unidades del ejército!|
+174|<b>Capacidad de despliegue mejorada</b><br>¡Se aumentó el límite de puntos del ejército!|
+175|<b>Gestión del ejército</b><br>Actualiza tu fuerza de combate con unidades adicionales en la pantalla Gestión del Ejército.|
+176|Agrega unidades para completar tu fuerza de combate. Envía unidades a la fuerza de reserva cuando necesites hacer espacio para nuevas unidades.|
+177|{0:+#;-#;+0} HP|
+178|{0} {2} Probabilidad de Activación|
+179|El objetivo ya está a plena salud|
+180|Cada unidad contribuye al valor total de puntos de tu ejército. Las armas adicionales, una vez desbloqueadas, aumentarán el coste de una unidad cuando esté equipada.|
+181|** unused **|
+182|Solo se puede emplear sobre unidades orgánicas|
+183|{0} daño aplicado al final del turno|
+184|Caduca al final del turno|
+185|Envenenado|
+186|Cosechar la semilla genética de los hermanos caídos.|
+187|Destruir a todos los tiránidos|
+188|** unused **|
+189|Presiona {0} para volver a bloquear la cámara|
+190|** unused **|
+191|** unused **|
+192|La unidad ha estado muerta durante demasiado tiempo|
+193|Atrás|
+194|Continuar|
+195|Jugar Misión|
+196|Gestión del Ejército|
+197|Misión Completada|
+198|Misión Fallida|
+199|Volver al Menú Principal|
+200|¿Volver al Menú Principal?|
+201|¿Estás seguro de querer volver al menú principal? Se perderá cualquier progreso no guardado.|
+202|Dificultad|
+203|Astartes|
+204|Teniente|
+205|Capitán de Compañía|
+206|Agregar Unidad|
+207|Lista de Reserva|
+208|Miembros|
+209|HP|
+210|Ejército Completo|
+211|Tu ejército activo está lleno actualmente. Las unidades deberán colocarse en la lista de reservas antes de que se puedan transferir al ejército.|
+212|Inspeccionar|
+213|Mejorar|
+214|Reserva|
+215|{0} Puntos|
+216|Historia|
+217|Conjunto de Armas|
+218|Cambio|
+219|Rango|
+220|XP|
+221|Bloqueado|
+222|Un efecto de estado impide el movimiento.|
+223|Un efecto de estado impide ataques|
+224|Mejorado|
+225|No Hay Misiones Desbloqueadas|
+226|Movimiento Deshabilitado|
+227|Ataque Deshabilitado|
+228|{0} Puntos de Acción|
+229|Mostrar Lista de Unidades|
+230|Menú Principal|
+231|Facción|
+232|Comenzar Escaramuza|
+233|Repetir Misión de Campaña|
+234|Aleatorizar|
+235|Empezar|
+236|Objetivo|
+237|Mapa|
+238|Jugador|
+239|IA|
+240|Tamaño Del Ejército|
+241|Exterminatus|
+242|<b>Aniquila hasta el último de ellos.</b><br><br>Destruye las unidades del oponente. Los puntos de partida se otorgan en función del valor de puntos de ejército de la unidad destruida.|
+243|Conquistador|
+244|<b>Controla la zona objetivo para dominar el campo de batalla.</b><br><br>Se otorgan puntos al comienzo de cada turno según el número de unidades dentro de la zona:<br><br>• +5 puntos si controlas al menos una unidad dentro de la zona<br><br>• +5 puntos si controlas más unidades dentro de la zona que tu oponente<br><br>• +5 puntos si tu oponente no tiene unidades dentro de la zona<br><br>El número máximo de puntos que se pueden conseguir en un turno es 15.|
+245|Mando Estratégico|
+246|<b>Asegura puntos de control del campo de batalla.</b><br><br>Interactúa con los puntos de control para asegurarlos para tu equipo. Un punto de control puede ser reclamado por una unidad del oponente si se deja indefenso.<br><br>• +5 puntos por punto de control asegurado<br><br>Los puntos se consiguen durante la fase de puntuación. La máxima cantidad de puntos que pueden conseguirse en un turno son 25.|
+247|Zona de Fuego|
+248|Las unidades enemigas intentarán llegar a un punto de extracción. Gana matando o destruyendo el 50% del valor en puntos del enemigo antes de que pueda escapar.|
+249|Extracción|
+250|Existe un punto de extracción en el otro lado del mapa. Gana llevando X puntos en unidades al punto de extracción.|
+251|Semilla genética|
+252|Hay varios Ángeles Sangrientos caídos en el mapa (usa Puntos de Captura). Un Sacerdote Sanguinario debe recogerlos para ganar. (Requiere un Sacerdote Sanguinario en el ejército del jugador).|
+253|Reliquia|
+254|Se coloca una reliquia sagrada en el mapa. Recupérala y ve a un punto de extracción para ganar. Si la unidad que lleva la reliquia muere, el objeto se deja caer. Pierdes si pierdes a todas tus unidades.|
+255|Devorar|
+256|Gana puntos de victoria por cada enemigo orgánico asesinado. Consigue una cierta cantidad de puntos de victoria para ganar. Pierdes si pierdes a todas tus unidades.|
+257|Enjambre Colmena|
+258|Gana colocando una unidad en todos los Puntos de Captura del mapa.|
+259|No Hay Ejércitos Configurados|
+260|Ninguna facción tiene un ejército con unidades. Utiliza el botón Gestión del Ejército para agregar unidades a un ejército.|
+261|Ejército No Configurado|
+262|La facción del jugador seleccionada no tiene unidades en su ejército. Utiliza el botón Gestión del Ejército para agregar unidades a un ejército.|
+263|Se requiere al menos un {0} para este objetivo|
+264|{1}% de probabilidad de aplicarse {0} daño a sí mismo durante un ataque|
+265|Distancia|
+266|{0} por casilla|
+267|Disminución de la Precisión|
+268|Daño Base|
+269|MP|
+270|{0} MP|
+271|AP {0} frente a Armadura {1}|
+272|{0}% de Efectividad|
+273|Bonificación por Unidad|
+274|Siempre Acierta|
+275|Ya usado|
+276|Arma|
+277|Perforación de Armadura|
+278|Ignora el coste de movimiento y las penalizaciones del terreno.|
+279|Sorpréndeme|
+280|No se puede usar esta arma en combate cuerpo a cuerpo.|
+281|{0} XP|
+282|{0} PT|
+283|Ejército|
+284|{0} / {1} PT|
+285|Límite de Puntos Excedido|
+286|El número de puntos de unidad utilizados supera el límite de puntos para esta misión.|
+287|Prerrequisitos No Cumplidos|
+288|Debes tener ciertas unidades en tu ejército para poder jugar esta misión:|
+289|Guardar Partida|
+290|Guardar|
+291|Cargar|
+292|Solo se puede guardar durante el turno del jugador.|
+293|No se puede guardar en la fase de carga|
+294|No se puede guardar durante una escena|
+295|No se puede guardar mientras las unidades se mueven|
+296|Guardado Manual|
+297|Autoguardado|
+298|En Vista Previa De Misión De Campaña|
+299|En Batalla de Campaña|
+300|En Batalla de Escaramuza|
+301|Vacío|
+302|Filtros|
+303|Objetivos|
+304|Momentum|
+305|Evasión|
+306|Estabilidad a Distancia|
+307|Precisión Cuerpo a cuerpo|
+308|Max|
+309|Rango {0} Obligatorio|
+310|Rango {0}|
+311|XP disponible: {0}|
+312|XP Total Ganado: {0}|
+313|XP Asignado: {0}|
+314|Nivel {0}|
+315|Espacio {0}|
+316|Ninguno|
+317|Estadísticas|
+318|Armas|
+319|Habilidades|
+320|Reiniciar|
+321|¿Reiniciar los rangos de {0}?|
+322|¿Estás seguro de que deseas reiniciar los rangos de {0}? Esto eliminará el {1}% ({2}XP) de la XP total obtenida por la unidad|
+323|Reconstruyendo Cohesión|
+324|Nombre Partida Guardada|
+325|¿Cómo te gustaría llamar a tu nueva partida guardada?|
+326|Esta unidad está ocupada actualmente y no puede recibir comandos|
+327|Restaurar|
+328|{0} Turnos|
+329|{0} Turno|
+330|{0} Estabilidad a Distancia|
+331|{0} HP Máximo|
+332|{0} HP Actual|
+333|{0} Ataques Cuerpo A Cuerpo Adicionales|
+334|{0} Probabilidad De Activación|
+335|{0} Ataques A Distancia Adicionales|
+336|No se puede apuntar a casillas donde se están produciendo combates cuerpo a cuerpo|
+337|Objetivo demasiado alto|
+338|Objetivo demasiado bajo|
+339|Fallo|
+340|Surgiendo|
+341|Zona Radioactiva Mortis|
+342|Nuevo|
+343|Eliminar Ejército|
+344|Eliminar|
+345|Seleccionar Facción|
+346|Seleccionar Unidad|
+347|¿Eliminar Unidad?|
+348|¿Estás seguro de que quieres eliminar la unidad "{0}"?|
+349|Renombrar Ejército|
+350|Elige un nuevo nombre para tu ejército|
+351|¿Eliminar ejército?|
+352|¿Estás seguro de que deseas eliminar el ejército "{0}"?|
+353|Puntos|
+354|No Se Puede Eliminar El Ejército|
+355|El ejército actual es el último disponible para la facción "{0}", por lo que no se puede eliminar.|
+356|Nuevo Perfil|
+357|Elige un nombre para el nuevo perfil|
+358|Perfil Ya Existente|
+359|Ya existe un perfil con el mismo nombre.|
+360|Perfil|
+361|Ejército|
+362|Inicio de sesión de Slitherine|
+363|Escribe tu nombre de usuario y contraseña de Slitherine a continuación para iniciar sesión|
+364|Nombre de usuario|
+365|Contraseña|
+366|Acceso|
+367|Nombre de usuario o contraseña incorrecta|
+368|Conectando...|
+369|Crear Partida|
+370|Crear|
+371|Tu Facción|
+372|Nombre De Partida|
+373|Temporizador de Turnos|
+374|Partida de {0} - {1}|
+375|Unirse|
+376|Uniéndose…|
+377|Protegido por Contraseña|
+378|Facción Desafiadora|
+379|Desafiador|
+380|Contraseña de la Partida|
+381|Escribe la contraseña para esta partida.|
+382|No Se Ha Podido Unir A La Partida|
+383|Contraseña incorrecta para la partida.|
+384|Partidas abiertas|
+385|Partidas activas|
+386|Abandonar|
+387|Continuar|
+388|¿Abandonar Partida?|
+389|¿Estás seguro de que quieres salir de la partida?|
+390|Saliendo…|
+391|Error Al Salir De La Partida|
+392|Fecha de Caducidad|
+393|Turno|
+394|Tu Turno|
+395|Jugador 1|
+396|Jugador 2|
+397|Creando partida…|
+398|Error Al Crear Partida|
+399|Ejércitos Vacíos|
+400|Algunas facciones no tienen ejércitos que tengan unidades. Se deben agregar unidades a al menos un ejército para cada una de estas facciones:|
+401|Esta partida fue creada por ti. No es posible verse a sí mismo en una partida multijugador.|
+402|Filtros de Búsqueda|
+403|Facciones de Retadores|
+404|Partidas Públicas|
+405|Partidas Privadas|
+406|No se puede guardar en modo multijugador|
+407|Elige Tu Equipamiento|
+408|Continuando Partida…|
+409|Enviando Turno...|
+410|El otro jugador se marchó|
+411|Jugador 1 ganó|
+412|Jugador 2 ganó|
+413|Esperando a que otras unidades completen sus acciones|
+414|Equipamiento de Armas|
+415|Ya se movió durante este turno.|
+416|La ruta no es lo suficientemente directa para una carga. El camino no puede atravesar unidades o muros, y no puede girar demasiado.|
+417|Superado|
+418|Puntos de Acción|
+419|Puntos de Movimiento|
+420|Armadura|
+421|Ocupado|
+422|{0} Precisión a distancia para armas que no son de pistola|
+423|Ataque Trasero Directo|
+424|Ataque de Flanco Lateral Trasero|
+425|Retroceder|
+426|No quedan puntos de acción|
+427|La casilla a la que retroceder está bloqueada|
+428|No quedan puntos de movimiento|
+429|Utiliza todos los puntos de movimiento|
+430|Estadísticas ganadas al retroceder|
+431|Probabilidad Crítica|
+432|{0} Probabilidad Crítica|
+433|{0} Probabilidad Crítica por Momentum|
+434|Rozado|
+435|¡CRIT!|
+436|Todas las armas hacen daño por salpicadura|
+437|{0} Perforación de Armadura a Distancia|
+438|{0} Perforación de Armadura Cuerpo a Cuerpo|
+439|Permite Volar|
+440|=+{1} Turnos de vencimiento para {0}|
+441|No se puede apuntar a esta facción|
+442|Permite reacciones a ataques cuerpo a cuerpo y cargas desde todos los ángulos.|
+443|{0} Salud Por Turno|
+444|Muro|
+445|Modo de Entrada|
+446|Teclado y Ratón|
+447|Mando|
+448|¿Cambiar El Modo De Entrada?|
+449|El modo de entrada se ha cambiado a {0}, ¿confirmas este cambio?|
+450|PT|
+451|Reservado|
+452|Desplegado|
+453|Silla Caliente|
+454|Asíncrona|
+455|Centro de Mejoras de HQ|
+456|Habilidad|
+457|Habilidad de Mando|
+458|Estadísticas|
+459|Fichas Ganadas|
+460|Misión Cumplida|
+461|Objetivo de Bonificación|
+462|{0} HP por modelo|
+463|{0} Rango de conciencia|
+464|{0} Rango de cono de conciencia|
+465|{0} Ángulo del cono de conciencia|
+466|Mejorar|
+467|Surgir|
+468|Agrega el estado {0} cuando este estado caduca.|
+469|¡Desbloqueado!|
+470|Mejoras del Mando HQ|
+471|Colocación de la Unidad|
+472|Aceptar|
+473|Habilidades de Mando|
+474|CP|
+475|No hay suficientes puntos de mando|
+476|No se puede apuntar a una unidad enemiga con esta habilidad|
+477|Las habilidades de mando no están permitidas en este mapa|
+478|Navegación|
+479|Salir del Grupo|
+480|Entrar en Grupo|
+481|Lista de Unidades|
+482|Seleccionar Unidad|
+483|Cerrar Lista|
+484|Mapa Táctico|
+485|Cerrar Mapa Táctico|
+486|Nombre De Unidad|
+487|Enemigos Despachados|
+488|Número de Serie Inválido|
+489|Número de Serie|
+490|Cerrar Sesión|
+491|Ocultar Banderas De Unidades|
+492|Guardar Captura De Pantalla|
+493|Ocultar IU|
+494|Modo de Rotación|
+495|Campo de Visión|
+496|Inclinación De La Cámara|
+497|Distancia De Enfoque|
+498|Profundidad De Campo|
+499|Apertura|
+500|Exposición|
+501|Saturación|
+502|Contraste|
+503|Temperatura|
+504|Modo foto - Cámara|
+505|Borde|
+506|Insignia|
+507|Posición De La Insignia|
+508|Modo de foto - Enfoque|
+509|Modo de foto - Color|
+510|Modo de foto - Marco|
+511|Restablecer Predeterminados|
+512|Viñeta|
+513|Presionar {0} para mostrar la IU|
+514|Parte Superior Izquierda|
+515|Parte Superior Derecha|
+516|Parte Inferior Izquierda|
+517|Parte Inferior Derecha|
+518|Logotipo de Battlesector|
+519|Logotipo de Warhammer 40K|
+520|Barras de Cine|
+521|Personalizado|
+522|Vivo Fresco|
+523|Vivo Cálido|
+524|Blanco&Negro Clásico|
+525|Negro|
+526|Órbita|
+527|Volar a través de|
+528|Cinemática|
+529|Capturas de pantalla|
+530|Navegador de medios|
+531|¿Eliminar captura de pantalla?|
+532|¿Estás seguro de querer eliminar esta captura de pantalla?|
+533|{0}{1}{2}{3} Cámara panorámica / {4} Enfocar Objetivo / {5} Girar / {6} Guardar captura de pantalla / {7} Ocultar IU / {8} Salir / {9} Subir Cámara / {10} Bajar Cámara|
+534|Trasladar Cámara|
+535|Enfocar Objetivo|
+536|Girar|
+537|para mostrar la IU|
+538|Presionar {0} para Ocultar|
+539|para Ocultar|
+540|Modo Foto|
+541|En vivo|
+542|Esperando a otro jugador...|
+543|Listo|
+544|(Esperando jugador)|
+545|Anfitrión se fue|
+546|El anfitrión ha abandonado la partida|
+547|Jugador se fue|
+548|Un jugador ha abandonado la partida|
+549|Silenciar|
+550|Lobby|
+551|Batalla|
+552|Sin Batalla Activa|
+553|Agregar|
+554|Eliminar|
+555|Desconectado|
+556|Actualmente estás desconectado. Intentando volver a conectar...Quedan {0} segundos.|
+557|Otro jugador se ha desconectado. Intentando volver a conectar...Quedan {0} segundos.|
+558|Te has desconectado de la partida actual|
+559|Jugando <color=#{2}>{0}</color><color=#{3}>{1}</color>|
+560|Tiempo Restante: {0}|
+561|En línea|
+562|Desconectado|
+563|∞|
+564|Actualizar|
+565|Habilidad en enfriamiento|
+566|Jugadores|
+567|Mostrar información detallada del enemigo|
+568|Seleccionar|
+569|Seleccionar comando|
+570|Puntos de Mando Disponibles: {0}|
+571|¿Salir sin bloquear los cambios?|
+572|¿Estás seguro de que quieres salir sin confirmar tus mejoras? Se restablecerán todos los cambios no confirmados.|
+573|Comprar|
+574|Mejoras HQ|
+575|Revivir {0}|
+576|Unidades activas|
+577|Reservas|
+578|Armas|
+579|Habilidades|
+580|{0} de {1}|
+581|Agregar Unidad Al Ejército|
+582|Transferir Unidad A Las Reservas|
+583|Transferir Unidad Al Ejército|
+584|Eliminar Unidad|
+585|Visión de Conjunto|
+586|Inspector de Ejércitos|
+587|Crear Nuevo Ejército|
+588|¿Borrar Perfil?|
+589|¿Estás seguro de que quieres eliminar el perfil actual?|
+590|No se puede apuntar a una unidad muerta mientras otra unidad está parada en la casilla de la unidad abatida.|
+591|Ataca a distancia al enemigo:|
+592|Silenciar el chat del juego|
+593|Invitar a un amigo|
+594|Lanzar|
+595|Chat en vivo|
+596|Partidas Disponibles|
+597|Partidas En Curso|
+598|Lobby multijugador en vivo|
+599|Lobby partidas asíncronas|
+600|Nombre|
+601|Ranura Vacía|
+602|Datos de Partida|
+603|Datos de Partida Seleccionada|
+604|No Se Encontraron Partidas|
+605|Mi turno|
+606|Turno Del Enemigo|
+607|Campaña|
+608|Edad Del Amanecer Carmesí|
+609|Hay Nuevas Unidades Disponibles|
+610|Opciones de Campaña|
+611|Configuración de Dificultad|
+612|Refuerzos|
+613|Unidades Enemigas Mejoradas|
+614|Coste de Mejora de Armas|
+615|Recompensas de Fichas de HQ Reducidas|
+616|Puntos de Límite de Ejército Reducidos|
+617|Mayor Momentum Enemigo|
+618|Momentum Reducido y Ganancias de CP|
+619|Dificultad IA Enemiga|
+620|Baja|
+621|Media|
+622|Alta|
+623|Estándar|
+624|Determina el número de unidades de refuerzo que obtienen los enemigos.|
+625|Aumenta las estadísticas de las unidades enemigas para hacer las batallas más difíciles.|
+626|Afecta a la cantidad de Momentum que obtienen las unidades enemigas durante el combate.|
+627|Cambia el comportamiento de la IA enemiga, afectando a la dificultad.|
+628|Afecta al valor en puntos que la mejora de arma de una unidad agrega a los puntos de tu ejército.|
+629|Afecta a la cantidad de Fichas HQ como recompensa al final de una misión.|
+630|Afecta a la cantidad de puntos que puedes aportar a cada misión.|
+631|Afecta la cantidad de Momentum que ganan tus unidades. Esto también afectará la cantidad de puntos de mando que ganes.|
+632|Desplaza la cámara con <color=#C8914F><b>WASD</color></b>, las teclas de flecha o haz clic y arrastra el botón izquierdo del ratón.|
+633|Gira la cámara con el botón central del ratón, <color=#C8914F><b>Q</b></color> y <color=#C8914F><b>E</b></color>, o mantén presionada la tecla ALT y mueve el ratón.|
+634|Selecciona la unidad con el botón <color=#C8914F>izquierdo</color> del ratón.|
+635|<b>MOVIMIENTO</b><br><br>Mueve la unidad al <color=#C8914F>objetivo</color> haciendo clic derecho en la casilla. El coste en <color=#6380AD>Puntos de movimiento</color> se muestra junto al cursor.|
+636|DESTRUIR A TODOS LOS TIRÁNIDOS|
+637|***NOT IN USE***|
+638|<b>INTERACTUAR</b><br><br>Se puede interactuar con los paneles de control y los objetivos desde una casilla adyacente. Utiliza el botón <color=#C8914F>Interactuar</color> o la tecla de acceso rápido <color=#C8914F><b>I</b></color> para abrir la puerta.|
+639|Mueve (Z) la unidad Intercesora a la casilla resaltada.|
+640|<b>RANGO DE CONCIENCIA</b><br><br>El <color=#C8914F>rango de conciencia</color> de una unidad se indica mediante la <color=#37FCFA>línea del áuspex </color>. Las unidades enemigas fuera de este rango estarán ocultas.|
+641|Utiliza Cambiar Orientación (<b> <color=#C8914F>G </color></b>) en la barra de comandos y selecciona la casilla indicada, o haz clic con el botón derecho en la unidad y arrastra en la dirección en la que quieres que se orienten.|
+642|<b>ATAQUES A DISTANCIA</b><br><br>Dos factores que influyen en el resultado de un ataque a distancia son la <color=#C8914F>Línea de visión</color> y el <color=#C8914F>Rango óptimo</color> del arma.|
+643|No tienes una línea de visión clara sobre el enemigo. Muévete a la casilla objetivo con <color=#C8914F>clic derecho</color> para una mejor posición desde la que atacar.|
+644|Esta es una posición óptima para que los Intercesores ataquen a los hormagantes debilitados. Haz <color=#C8914F>clic derecho</color> en la unidad enemiga para atacarla.|
+645|<b>UNIDAD SELECCIONADA</b><br><br>El panel de la unidad seleccionada proporciona información crítica sobre la unidad, incluido su <color=#8CBA61>Salud</color>, <color=#45D8FF>Momentum</color> y sus <color=#6380AD>Puntos de movimiento</color> y <color=#C65C34>Puntos de acción</color> disponibles.|
+646|***NOT IN USE***|
+647|<b>VIGILANCIA</b><br><br>¡No desperdicies tus ataques contra cobardes que se parapetan detrás de cobertura! Usa <color=#C8914F>Vigilancia</color> para atacar al primer enemigo que traspase tu zona de reacción.|
+648|Has usado todos tus Puntos de Acción y Movimiento. <br>Es hora de terminar el turno.|
+649|Que el Emperador se apiade de tu alma.|
+650|Haz zoom con la cámara con la rueda central del ratón o <color=#C8914F><b>R</b></color> y <color=#C8914F><b>F</b></color>.|
+651|Mueve a los Intercesores al lado del panel de control.|
+652|Devuelve a tus Intercesores a la zona de control marcada del enemigo y usa el comando Retroceder.|
+653|<b>INFORMACIÓN DE ATAQUE</b><br><br><color=#C8914F>Haz clic con el botón izquierdo</color> en el enemigo para ver información detallada sobre el ataque.|
+654|<b>RETROCEDER</b><br><br>Tu unidad Intercesora ha sido atacada y actualmente está <color=#C8914F>Ocupada</color> con los hormagantes.|
+655|***NOT IN USE***|
+656|***NOT IN USE***|
+657|Usa la habilidad <color=#C8914F>Granada de Fragmentación</color> para eliminar la amenaza de hormagantes.|
+658|Selecciona otra unidad Intercesora (<color=#C8914F>clic izquierdo</color>) y muévete a la casilla objetivo.|
+659|Presiona <color=#C8914F><b>O</b></color> y establece una zona de <color=#C8914F>Vigilancia</color> en el rango óptimo del rifle bólter con un clic derecho. La unidad disparará al primer enemigo que entre en cualquier casilla dentro de la zona.|
+660|Utiliza el comando Retroceder (<color=#C8914F><b>U</b></color>) y apunta a los hormagantes. Los Intercesores obtendrán una gran bonificación defensiva mientras se mueven a la casilla opuesta.|
+661|***NOT IN USE***|
+662|<b>LISTA DE UNIDADES</b><br><br>Usa la Lista de Unidades para encontrar y seleccionar fácilmente unidades en diferentes roles.<br><br>Navega hasta el rol de HQ y selecciona al Sacerdote Sanguinario.|
+663|<b>HABILIDADES DE MANDO DEL HQ</b><br><br>La unidad del HQ al mando de sus fuerzas tiene acceso a las Habilidades de mando del HQ únicas para cada facción. Estas habilidades requieren <color=#C8914F>Puntos de Mando</color>, que se acumulan durante el transcurso de la batalla.|
+664|Haz clic en el indicador de Habilidades de Mando (<color=#C8914F><b>C</b></color>), selecciona la habilidad Ráfaga de Cañón de Asalto y mata a los hormagantes.|
+665|La batalla es tuya para completarla como mejor te parezca.<br><br>¡Gloria para el Emperador!|
+666|<b>SUGERENCIA:</b> La habilidad Ráfaga de Cañón de Asalto apunta a TODAS las unidades a lo largo de cuatro casillas consecutivas en línea. Selecciona la primera casilla objetivo y luego selecciona el segundo objetivo a tres casillas de distancia. Intenta atrapar tantos gantes en el camino como puedas.|
+667|***NOT IN USE***|
+668|Mueve la unidad Intercesora restante para cubrir el pasillo.|
+669|Mejorado|
+670|Esta unidad está surgiendo. Elige si deseas mejorar una habilidad o ganar un estado Surgiendo en el próximo turno (+1 AP)|
+671|Esta unidad está surgiendo. Ganará +1 AP en el próximo turno.|
+672|Miembros De La Unidad|
+673|Unidades Con AP|
+674|Obtenido Punto De Mando|
+675|Ataques Cuerpo A Cuerpo|
+676|Ataques A Distancia|
+677|Muertes durante esta batalla y totales a lo largo de la carrera|
+678|Muertes Cuerpo A Cuerpo|
+679|Precisión Cuerpo A Cuerpo|
+680|Muertes A Distancia|
+681|Precisión A Distancia|
+682|Usos esta batalla y totales a lo largo de la carrera|
+683|Presiona {0} para Continuar|
+684|**Unset**|
+685|Selección De Idioma Actual|
+686|Aleatoriza todas las opciones de batalla|
+687|Aleatoriza todas las opciones de batalla y luego comienza la batalla|
+688|Crea un nuevo perfil con el nombre:|
+689|El número de casillas que esta unidad puede mover. Avanzar casillas adicionales cuesta Puntos de Acción.|
+690|Se activa cuando al menos la mitad de los Puntos de Movimiento de la unidad se gastan en el turno actual o anterior.|
+691|El número de acciones que puede realizar esta unidad. Algunas habilidades poderosas pueden costar más de 1 PA.|
+692|Reduce el daño recibido de los ataques enemigos. La efectividad de la armadura se reduce por la perforación de armadura de un arma.|
+693|Cuando el Momentum llega a 100, esta unidad Surgirá.|
+694|Los Puntos de Mando los gana la unidad de mando del HQ del ejército cada vez que una unidad amiga gana Momentum, muere o completa un objetivo.|
+695|Esta unidad es la unidad de mando del HQ del ejército. Ganarán Puntos de Mando a lo largo de la batalla, que se pueden usar para activar las Habilidades de Mando del HQ.|
+696|Ocultar / Mostrar la lista de unidades.|
+697|Pasar a la siguiente unidad sin usar.|
+698|Puntos de Mando|
+699|Mando HQ|
+700|Ocultar Lista De Unidades|
+701|No hay habilidades que Fortalecer|
+702|Facción Incorrecta Seleccionada|
+703|Selecciona un {0} ejército para jugar esta misión de campaña|
+704|Se requieren ciertas unidades|
+705|Las siguientes unidades obligatorias se agregarán a tu ejército:|
+706|<i>Son los Defensores de la Humanidad y no conocerán el miedo.</i><br><br>La experiencia predeterminada de Battlesector. Deberás utilizar tácticas y fuerza para superar los desafíos que se avecinan.|
+707|<i>En la sombría oscuridad del futuro lejano, sólo hay guerra.</i><br><br>Las misiones serán más difíciles y proporcionarán menos recompensas. Un desafío adicional sin ajustes al sistema de combate.|
+708|<i>Los gritos de los inocentes, las súplicas de los justos resuenan con la risa cruel de los Dioses Oscuros.</i><br><br>Los enemigos serán más duros y golpearán más fuerte, las misiones serán implacables y las probabilidades se apilarán en tu contra. Solo recomendado para el jugador experimentado de Battlesector.|
+709|Únete a nosotros en Discord|
+710|{0} se ha unido al lobby|
+711|{0} ha abandonado el lobby|
+712|{0} se ha unido a la partida|
+713|Usuario|
+714|Ocultar contraseña|
+715|Motion Blur Habilitado|
+716|VSync Habilitado|
+717|Calidad|
+718|Cosechar|
+719|Presiona {0} para mantener visible|
+720|Mostrar Información Detallada De La Batalla Durante El Turno Enemigo|
+721|Presiona {0} para ocultar|
+722|Efectos de Partículas en la IU|
+723|Zona de Control|
+724|Ataque Reactivo Con Pistola|
+725|{0} para seleccionar objetivo /|
+726|{0} en el objetivo para obtener información detallada /|
+727|{0} o {1} en una casilla vacía para cancelar|
+728|{0} para seleccionar aliado /|
+729|{0} para seleccionar enemigo /|
+730|{0} para seleccionar casilla /|
+731|Para Acertar|
+732|<i>En nuestra hora más oscura, son un resplandeciente faro de esperanza.</i><br><br>Para los jugadores que son nuevos en los juegos de estrategia o que desean experimentar más fácilmente la historia de la campaña.|
+733|Iniciado|
+734|Vigilancia|
+735|BARRERA DE SEGURIDAD ELIMINADA|
+736|HOSTIL DETECTADO|
+737|HOSTIL ELIMINADO|
+738|REFUERZO DE LA UNIDAD HQ|
+739|REFUERZOS DE INFANTERÍA|
+740|Velocidad normal: {0}<br>Avance rápido: {1}<br>Saltar: {2}|
+741|Óptimo|
+742|Omitir fotograma: {0}|
+743|Seleccionar / Deseleccionar Unidad|
+744|Ejecutar Acción|
+745|Unidad Siguiente|
+746|Mover cámara a la izquierda|
+747|Mover cámara a la derecha|
+748|Mover cámara hacia adelante|
+749|Mover cámara hacia atrás|
+750|Volver a vincular controles|
+751|Error multijugador|
+752|La versión del cliente {0} está desactualizada. Actualiza tu juego para conectarte al modo multijugador.|
+753|Revincular|
+754|Presiona una tecla para volver a vincular '{0}'<br>Revirtiendo en {1} segundos|
+755|Presiona un botón del ratón para volver a vincular '{0}'<br> Revirtiendo en {1} segundos|
+756|¿Restablecer controles?|
+757|¿Estás seguro de que quieres restablecer todas las vinculaciones de control a la configuración predeterminada?|
+758|{0} y {1} tienen el mismo conjunto de claves|
+759|Girar la cámara a la izquierda|
+760|Girar la cámara a la derecha|
+761|Acercarse|
+762|Alejarse|
+763|Entrar En Modo Movimiento|
+764|Ranura de arma / habilidad 1|
+765|Ranura de arma / habilidad 2|
+766|Ranura de arma / habilidad 3|
+767|Ranura de habilidad 4|
+768|Ranura de habilidad 5|
+769|Ranura de habilidad 6|
+770|Ranura de habilidad 7|
+771|Entrar / Salir Del Modo Foto|
+772|Mostrar / Ocultar Lista De Unidades|
+773|Recompensas|
+774|Lista de Ejército|
+775|Seleccionar Mapa|
+776|Tipo de Terreno|
+777|Tamaño de Mapa|
+778|Ruinas|
+779|Asentamiento|
+780|Factorum|
+781|Unidades de Élite|
+782|Rasgos de Facción|
+783|Lore|
+784|<b>Tutorial de Combate Avanzado</b>El tutorial te enseñará sobre cargas, contraataques cuerpo a cuerpo y <color=#45D8FF>Momentum</color>.<br><br>Selecciona la unidad Hormagante indicada.|
+785|<b>Carga</b><br>Las cargas requieren un camino directo hacia un objetivo distante. Las unidades que cargan obtienen +1 <color=#6380AD>Punto de Movimiento</color> y no reciben contraataque cuerpo a cuerpo.<br><br>Carga contra estos Marines de Asalto con <color=#C8914F>clic derecho</color>.|
+786|Trae de vuelta al hormagante a la casilla indicada.|
+787|<b>Ataque Reactivo con Pistola</b><br><color=#C8914F>Las pistolas</color> obtienen un ataque reactivo gratuito contra cargas. Al igual que Vigilancia, si impactan suficientes disparos, la unidad perderá <color=#6380AD>Puntos de Movimiento</color>.<br><br>¡Esto puede provocar que una unidad no alcance su objetivo de carga!|
+788|Avanza estos hormagantes con los <color=#C65C34>Puntos de Acción</color> restantes y acércate al enemigo.<br><br>Esto evitará que los Marines de Asalto carguen en el próximo turno.|
+789|La otra unidad hormagante está en una posición mucho más favorable para cargar contra su objetivo.|
+790|Los ataques cuerpo a cuerpo y de carga en la retaguardia de una unidad obtienen <color=#C8914F>Precisión</color>, <color=#C8914F>Perforación de armadura</color> y <color=#C8914F>Daño</color> adicionales.|
+791|<b>Contraataques Cuerpo A Cuerpo</b><br><br>Una unidad superviviente contraatacará cualquier ataque cuerpo a cuerpo enemigo que se origine dentro de sus <color=#C8914F>Zonas de Control</color>.|
+792|Saltar|
+793|<b>Mapa Aéreo</b><br><br>¡Un <color=#9E6EA4>líder sináptico</color> ha entrado en el campo de batalla!<br><br>Pulsa <color=#C8914F>M</color> para abrir el mapa y planificar tu próximo movimiento.|
+794|Pulsa <color=#C8914F>M</color> de nuevo para volver a la batalla.|
+795|Aunque estos Guerreros no podrán entrar en combate directo, aún pueden acercarse lo suficiente para dar la vuelta a la batalla.|
+796|<b>Momentum</b><br>Las unidades reciben <color=#45D8FF>Momentum</color> por matar a un enemigo. Dependiendo de su <color=#C8914F>Rasgo de Facción</color>, se les otorga Momentum adicional según el tipo de arma, la distancia al enemigo o las diferentes acciones realizadas.|
+797|El rasgo <color=#9E6EA4>Hambre Infinita</color> de los Tiránidos proporciona una gran bonificación de Momentum si un enemigo muere con un arma cuerpo a cuerpo, o una bonificación menor si lo mata un arma a distancia.|
+798|Esta unidad de Hormagantes está en una excelente posición para eliminar a los Marines de Asalto, pero con un poco de ayuda también podría alcanzar 100 de Momentum y comenzar a <color=#C65C34>Surgir</color>.|
+799|Selecciona la unidad hormagante indicada.|
+800|Primero acerquemos a los Guerreros.|
+801|<b>Líderes Sinápticos</b><br><br><color=#9E6EA4>Los líderes sinápticos</color> son exclusivos de la facción Tiránida. El aura que irradian aumenta la capacidad de combate de las criaturas menores a su alrededor y aumenta el Momentum que obtienen.|
+802|Mueve a este Guerrero más cerca de los hormagantes.|
+803|Vigilancia & Confirmar|
+804|Mientras una unidad esté <color=#9E6EA4>Conectada</color> a un líder sináptico, duplicarán el Momentum que obtienen.|
+805|Todos los efectos de estado de una unidad se pueden ver con la ayuda de información en la parte superior de la Barra de Comandos.|
+806|Mata a los Marines de Asalto para <color=#C65C34>Surgir</color> esta unidad hormagante.|
+807|Esta unidad ahora está <color=#C65C34>Surgiendo</color>. Si bien su valor de Momentum permanece en 100, recibirá +1 <color=#6380AD>Punto de Movimiento</color>, así como la bonificación completa de su rasgo de facción.<br><br>Mientras surge, una unidad también obtiene acceso a dos opciones adicionales sobre su barra de comandos:<color=#C8914F>Fortalecer</color> y <color=#C8914F>Surgir</color>.|
+808|<b>Fortalecer</b><br><br>Fortalecer gastará 100 de Momentum para otorgar un poderoso bonus a una habilidad de la unidad.|
+809|<b>Surgir</b><br><br>Surgir gastará 100 de Momentum para dar inmediatamente a la unidad +1 <color=#C65C34>Punto de Acción</color> para usar este turno.|
+810|**Not in use**|
+811|La batalla es tuya para completarla como mejor te parezca.<br><br>La Mente Colmena no esperará ...|
+812|Gasta Momentum para<color=#C8914F>Fortalecer</color> la habilidad de salto del hormagante o <color=#C8914F> Surgir</color> para atacar de nuevo este turno.|
+813|Movimiento & Comandos|
+814|Combate Avanzado|
+815|NVL {0}|
+816|Veneno|
+817|Ácido|
+818|Básico|
+819|Psíquico|
+820|Haga clic para ver / cambiar armas|
+821|Crear una cuenta Slitherine|
+822|Escribe a continuación los detalles de tu nueva cuenta. Tu nombre de usuario será visible para otros jugadores.|
+823|Correo electrónico|
+824|Registrarse|
+825|Ya existe una cuenta con este correo electrónico.|
+826|Ya existe una cuenta con este nombre de usuario.|
+827|Cambiar cuenta|
+828|Cuentas Slitherine:<br><br>• Pueden participar en torneos.<br>• Recibirán actualizaciones por correo electrónico para las partidas PBEM.|
+829|Esta cuenta:<br><br>• No puede participar en torneos.<br>• No recibirá actualizaciones por correo electrónico para las partidas PBEM.|
+830|Selección de cuenta|
+831|Las contraseñas deben tener al menos 3 caracteres y sólo deben contener números y letras (sin espacios ni caracteres especiales).|
+832|Munición|
+833|Enfriamiento|
+834|¿Buscas una partida? Únete a nosotros en Discord|
+835|Tutorial No Comenzado|
+836|Algunos tutoriales aún no se han completado. ¿Te gustaría jugar el siguiente tutorial antes de continuar?|
+837|Sí|
+838|No|
+839|La batalla está ahora en tus manos para completarla como mejor te parezca. ¡Por el Emperador!|
+840|<b> Tutorial de Entrenamiento de Armas</b><br>Este tutorial te enseñará el uso efectivo de algunas de las armas disponibles para las unidades de Marines Espaciales.<br><br>Selecciona la unidad de Marines de Asalto indicada.|
+841|Estos Marines de Asalto están equipados con Pistolas Lanzallamas, que causan un daño significativo a todas las unidades en una casilla. Muévete a la casilla adyacente a estos Termagantes.|
+842|Ahora usa la Pistola Lanzallamas contra los Termagantes.|
+843|¡Excelente! Ahora, acaba con los Hormagantes con el Predator Baal. Selecciona el Predator Baal.|
+844|El Cañón de Asalto Doble tiene una alta cadencia de fuego, que es efectiva contra unidades de enjambre. Muévete a la casilla indicada, que es el rango óptimo al objetivo.|
+845|Ahora usa el Cañón de Asalto Doble contra los Hormagantes|
+846|¡Aquí viene un Tiranofex! Estos brutos tienen una armadura gruesa, que puede ser difícil de penetrar. Seleccione el Predator Baal.|
+847|Los Revientainfiernos llevan <color=#C8914F> Incineradores de Plasma</color>, que tienen una alta penetración de armadura y provocan una gran cantidad de daño, a costa de un ritmo de disparo más bajo. Mueve tus Revientainfiernos a la casilla indicada, que es el rango óptimo para el Incinerador de Plasma.|
+848|Ahora dispara al Tiranofex.|
+849|El Dreadnought Furioso está equipado con un Puño Furioso, que es muy efectivo contra unidades grandes. Selecciona el Dreadnought Furioso y muévete al alcance cuerpo a cuerpo del Tiranofex.|
+850|Conceder|
+851|¿Conceder?|
+852|¿Seguro que quieres conceder la partida?|
+853|Concediendo...|
+854|Muévete a la casilla indicada y ataca con el Bólter de Asalto.|
+855|Observa que la armadura del Tiranofex <color=#C8914F>Bloqueó</color> al Bólter de Asalto. Necesitaremos un arma con mayor penetración de armadura. Selecciona los Revientainfiernos.|
+856|Ahora ataca al Tiranofex con el Puño Furioso.|
+857|Armas & armaduras|
+858|Has utilizado tus puntos de acción. Es hora de terminar tu turno.|
+859|** NOT USED **|
+860|** NOT USED **|
+861|El Otro Jugador Concedió|
+862|El otro jugador ha concedido la partida.|
+863|Tienes actualizaciones en tus partidas asíncronas.|
+864|Actualizaciones de desafíos|
+865|English|
+866|Deutsche|
+867|Français|
+868|Español|
+869|русский|
+870|中国人|
+871|Polskie|
+872|Português|
+873|한국어|
+874|Eliminado después de moverse una vez|
+875|Fortalecido|
+876|Fortalecer|
+877|Puedes capturar tus hazañas y momentos heroicos en el campo de batalla usando el Modo Foto. Presiona Retroceso en cualquier momento para pausar el juego y entrar al Modo Foto.|
+878|Esperando que se resuelvan otras acciones|
+879|Historial de Campañas|
+880|Todas las armas provocan daño en la casilla|
+881|Salpicadura|
+882|Daño Por Salpicadura|
+883|Utiliza {0} MP|
+884|Inmune a vigilancia|
+885|Inmune a ataques de reacción de pistola|
+886|Inmune a zonas de control cuerpo a cuerpo|
+887|Inmune a zonas de control de pistola|
+888|Ataque en retirada|
+889|Por ahora, guarda el Momentum y completa tu turno. Tendrás la oportunidad de utilizar este aumento de potencia en el próximo turno.|
+890|Autogenerar|
+891|Límite de turnos|
+892|Objetivo Puntual|
+893|vs|
+894|Tú|
+895|Equipamiento|
+896|Resultados|
+897|Desempate - Puntos más altos en unidades vivas: {0}|
+898|Desempate - Puntos de ejército totales más bajos: {0}|
+899|Desempate - Precisión promedio más alta: {0}|
+900|Empate|
+901|Objetivo|
+902|Selección de Objetivo|
+903|<b>Conquistador</b><br><br>Controla la zona objetivo|
+904|<b>Mando Estratégico</b><br><br>Asegurar puntos de control|
+905|Resincronizar|
+906|Unidad eliminada|
+907|Unidad dentro de la zona de control|
+908|Más unidades que el oponente en la zona de control|
+909|El oponente no tiene unidades en la zona de control|
+910|Puntos de Mando capturados|
+911|Selecciona otro mapa para utilizar el objetivo seleccionado|
+912|El ejército elegido para la IA es más grande que el tamaño del ejército de IA.|
+913|El objetivo actual requiere unidades específicas en tu ejército.|
+914|Las unidades proporcionan cobertura|
+915|Usa {0} para mover la cámara.|
+916|Gira la cámara con {0}.|
+917|Haz zoom con {0}.|
+918|Selecciona los Intercesores centrando la retícula en la unidad y presionando {0}.|
+919|<b>MOVIMIENTO</b><br>Mueve la unidad al <color=#C8914F>objetivo</color> presionando {0} en la casilla. El coste en <color=#6380AD>Puntos de movimiento</color> se muestra junto al cursor.|
+920|<b>INTERACCIÓN</b><br><br>Una unidad puede interactuar con los paneles de control y los objetivos desde una casilla adyacente. Presiona {0} en los Intercesores para abrir la puerta.|
+921|Puedes volver a enfocar rápidamente la cámara en la unidad seleccionada presionando {0}.|
+922|Utiliza Cambiar Orientación {0} en la barra de comandos y selecciona la casilla indicada.|
+923|Abre la barra de comandos con {0}.|
+924|<b>INFORMACIÓN DE ATAQUE</b><br><br>Mueve la retícula sobre el enemigo para ver información de ataque detallada.|
+925|No tienes una línea de visión clara sobre el enemigo. Muévete a la casilla de objetivo con {0} para tener una mejor posición desde la que atacar.|
+926|Esta es una posición óptima para que los Intercesores ataquen a los hormagantes debilitados. Pulsa {0} en la unidad enemiga para atacarla.|
+927|Usa el comando Retirada y apunta a los hormagantes. Los Intercesores obtendrán una gran bonificación defensiva mientras se mueven a la casilla opuesta.|
+928|Ir a la orden <color=#C8914F>Retirada</color> con {0}.|
+929|Pulsa {0} para activar la Retirada y selecciona a los hormagantes para apuntarles.|
+930|Mantén presionado {0} para finalizar el turno.|
+931|Selecciona otra unidad Intercesora y muévete a la casilla objetivo.|
+932|Utiliza {0} para pasar a la siguiente unidad disponible que todavía tenga al menos un <color=#C65C34>Punto de Acción</color> para gastar.|
+933|Accede a <color=#C8914F>Vigilancia</color> desde la barra de comandos {0} y establece la zona en el rango óptimo del rifle bólter. La unidad disparará al primer enemigo que entre en cualquier casilla dentro de la zona.|
+934|<b>LISTA DE UNIDADES</b><br><br>Utiliza la Lista de unidades {0} para buscar y seleccionar fácilmente unidades en diferentes roles.|
+935|Pulsa {0} para entrar en el grupo de unidades del cuartel general y selecciona al Sacerdote Sanguinario.|
+936|Presiona {0} para acceder a las Habilidades de Mando del cuartel general.|
+937|{0} MP al salir de la casilla|
+938|{0} venció|
+939|Ultra|
+940|<b>Carga</b><br>Los ataques de carga requieren un camino directo hacia un objetivo distante. Las unidades que cargan obtienen +1 <color=#6380AD>Punto de Movimiento</color> y no son contraatacadas en cuerpo a cuerpo.<br><br>Carga contra estos Marines de asalto usando {0}.|
+941|<b>Mapa superior</b><br><br>¡Un <color=#9E6EA4>líder sináptico</color> ha entrado en el campo de batalla!<br><br>Pulsa {0} para abrir el mapa superior y planifica tu próximo movimiento.|
+942|Pulsa {0} para volver a la batalla.|
+943|Inspecciona la unidad hormagante indicada.|
+944|Utilice {0} para acceder a los comandos Fortalecer y Surgir.|
+945|Ofrece la opción de utilizar una versión mejorada de una habilidad.|
+946|Otorga +1 Punto de Acción|
+947|Puedes capturar tus hazañas y momentos heroicos en el campo de batalla usando el Modo Foto. Presiona {0} en cualquier momento para pausar el juego y entrar en Modo Foto.|
+948|Omitir Fotograma|
+949|Subir / bajar cámara|
+950|Todos los efectos de estado de una unidad se pueden ver en los detalles de inspección de la unidad. Presiona {0} mientras se inspecciona la unidad.|
+951|Cada casilla adyacente es una zona de control|
+952|La ruta está bloqueada|
+953|Configura todas las unidades a distancia con puntos de acción para usar Vigilancia al máximo alcance|
+954|Mantener para Omitir|
+955|Configuración de Privacidad de Datos|
+956|Optar por no recabar estadísticas|
+957|Lucha en una batalla contra un oponente a través de Internet. Ambos jugadores están en línea al mismo tiempo y ven los movimientos de su oponente en tiempo real.|
+958|Lucha contra un oponente a través del servidor PBEM ++. Los jugadores no necesitan estar en línea al mismo tiempo, y los turnos se intercambian según la conveniencia de cada jugador.|
+959|Lucha en una batalla contra un oponente en el mismo sistema.|
+960|Reduce la línea de visión al usar armas a distancia si hay otras unidades en el camino.|
+961|No se puede guardar en el tutorial|
+962|No se puede guardar mientras se reproduce una misión de campaña|
+963|Inicializando Partida|
+964|Finalizando Turno|
+965|Comenzando Partida|
+966|Finalizando Partida|
+967|Presiona {0} para unirte.|
+968|Acceso fallido. Por favor, inténtalo de nuevo.|
+969|Error de Inicio de Sesión Automático|
+970|Ejército destruido|
+971|{0} Desconectado|
+972|Tasa de Imágenes máxima|
+973|Brillo|
+974|Zona segura|
+975|Desactivado|
+976|Calidad de Texturas|
+977|Sombras|
+978|Calidad de Sombras|
+979|Anti-Aliasing|
+980|Flora|
+981|Oclusión Ambiental|
+982|Intercambiar Perfil|
+983|Sincroniza el renderizado con la frecuencia de actualización de tu monitor para evitar el tearing. El ajuste de la Tasa de Imágenes Máxima no está disponible cuando se usa Vsync.|
+984|Vsync|
+985|Afecta a la cantidad de unidades que puedes reclutar entre misiones.|
+986|Puntos|
+987|Infinito|
+988|Regular|
+989|A la mitad|
+990|No quedan Puntos|
+991|No hay Puntos para reclutar unidades. Los Puntos se reponen entre misiones.|
+992|Calidad de la Niebla|
+993|Unidad en Recuperación|
+994|Esta unidad está en Recuperación y volverá a estar disponible después de {1} misiones.|
+995|Esta unidad está en Recuperación y volverá a estar disponible después de {1} misión.|
+996|Infantería Ilimitada|
+997|Permite reclutar unidades básicas de infantería sin gastar Puntos.|
+998|1 Acción para gastar Puntos|
+999|Nueva unidad colocada en la reserva|
+1000|Veteranía|
+1001|Torneos|
+1002|Comienzo de ronda|
+1003|Ronda actual|
+1004|Estado|
+1005|{0} - RONDA {1} vs {2}|
+1006|Torneos abiertos|
+1007|Terminados|
+1008|Torneos no encontrados|
+1009|Ver puntuaciones|
+1010|Abierto|
+1011|En progreso|
+1012|No se pudo unir al torneo|
+1013|¿Unirse al torneo?|
+1014|¿Estás seguro que te quieres unir al torneo?|
+1015|Apuntado|
+1016|No seleccionado aún|
+1017|Elige facción|
+1018|Puntuaciones|
+1019|Tiempo para finalizar la ronda|
+1020|Tiempo restante|
+1021|{0}d:{1:00}h:{2:00}m:{3:00}s|
+1022|Total|
+1023|Ronda {0}|
+1024|cualquier tecla|
+1025|Es tu turno en una partida de torneo|
+1026|{0} Ignora las penalizaciones por cobertura parcial|
+1027|{0} Daño a distancia contra vs Vehículos|
+1028|{0} Penetración de blindaje a distancia vs Vehículos|
+1029|{0} Probalidad de Crítico a distancia vs Vehículos|
+1030|Solo puede seleccionar casillas visibles como objetivo|
+1031|Demasiado cerca del enemigo|
+1032|{0} Blindaje|
+1033|{0} Daño recibido|
+1034|Evita todos los ataques de reacción|
+1035|No conectado a internet|
+1036|{0} Bonus HP|
+1037|La partida está llena.|
+1038|{0} a todas las estadísticas mientras esté adyacente a una unidad de Mando HQ|
+1039|{0} probabilidad de ganar AP tras matar modelos enemigos|
+1040|Multijugador no permitido|
+1041|Política de Privacidad|
+1042|Tu información personal nunca se compartirá con terceros y sólo se utilizará para comunicarnos contigo sobre tus juegos y nuestros servicios. Si tienes alguna pregunta sobre cómo se almacena tu información, póngase en contacto con support@slitherine.co.uk para obtener más detalles.|
+1043|Desconectar|
+1044|Conectado como|
+1045|Permitir unidades jugables de DLC|
+1046|Habilidad todavía cargando|
+1047|Tiempo de carga|
+1048|Ronda de Partida|
+1049|Partida de torneo|
+1050|Datos de Torneo|
+1051|Rondas|
+1052|Comienzo en|
+1053|Ronda|
+1054|Puntuación|
+1055|Moderadores|
+1056|Turno final|
+1057|Chat no disponible|
+1058|Cohesión de Ejército|
+1059|Límite de Cohesión de Ejército|
+1060|Tu ejército ha sobrepasado el límite de tamaño|
+1061|Tu ejército no está cohesionado. Esta partida requiere ejércitos cohesionados.|
+1062|Actualmente, este ejército está cohesionado, lo que significa que cada unidad recibirá un bonus de momentum durante las batallas.|
+1063|Este ejército no cumple con los requisitos de cohesión, lo que significa que las unidades no recibirán momentum adicional durante las batallas. Reduce las unidades que se muestran a continuación para cambiar esto.|
+1064|Cap Puntos de Ejército|
+1065|Guardar Ejército|
+1066|Requiere Ejércitos Cohesionados|
+1067|Este ejército de la IA sobrepasa el límite máximo de tamaño|
+1068|El ejército de la IA no está cohesionado. Esta partida requiere ejércitos cohesionados.|
+1069|El ejército del jugador 1 supera el tamaño máximo de ejército.|
+1070|El ejército del jugador 1 no está cohesionado. Esta partida requiere ejércitos cohesionados.|
+1071|El ejército del jugador 2 supera el tamaño máximo de ejército.|
+1072|El ejército del jugador 2 no está cohesionado. Esta partida requiere ejércitos cohesionados.|
+1073|Nombre de usuario no apropiado|
+1074|Fallo al validar el nombre de usuario en la red|
+1075|Validando nombre de usuario...|
+1076|Ese nombre de usuario es inapropiado. Por favor, comprueba que lo has introducido correctamente. Puedes ponerte en contacto con support@slitherine.co.uk para solicitar un cambio en su nombre de usuario si lo deseas.|
+1077|¿Abandonar el torneo?|
+1078|¿Estás seguro que quieres abandonar el torneo?|
+1079|Podrías no abandonar el torneo|
+1080|Partida de torneo|
+1081|Bonus de victorias|
+1082|El ganador recibe un bonus de victoria basado en el valor en puntos de su ejército y el número de turnos de partida no jugados.|
+1083|¿Borrar archivo guardado?|
+1084|¿Estás seguro de que quieres borrar "{0}"?<br>{1} - {2}|
+1085|El archivo guardado contiene unidades de un addon no activo.|
+1086|Addon no activo|
+1087|Reforzar|
+1088|Reclamar|
+1089|Vocoemisor|
+1090|Manufactorum|
+1091|Depósito de municiones|
+1092|Unidades de élite|
+1093|Marca de Honor|
+1094|{0} Puntos de Ejército|
+1095|{0} para usar de nuevo|
+1096|Conseguir acceso a unidades de élite|
+1097|{0} AP cuando es cargado|
+1098|Mapa Estratégico|
+1099|Autoresolver|
+1100|Retirarse|
+1101|La facción con la que juegas esta campaña|
+1102|Poderío de la Fuerza Neutral|
+1103|Poderío de la Fuerza de la IA|
+1104|Puntuación de la Facción por Objetivo de Batalla|
+1105|Unidades Neutrales mejoradas|
+1106|Unidades de la IA mejoradas|
+1107|Cambiar al sistema de Cohesión de Ejército|
+1108|Ajusta el valor máximo de puntos de ejército para todas las fuerzas hostiles no alineadas.|
+1109|Ajusta el valor máximo de puntos de ejército para todas las facciones de la IA.|
+1110|Ajusta la puntuación objetivo para los objetivos Exterminatus frente a las facciones de la IA.<br>Valores altos indican mayores pérdidas del ejército al perder una casilla.|
+1111|Aplica el efecto de estado de unidades mejoradas a las unidades de las fuerzas hostiles no alineadas.|
+1112|Aplica el efecto de estado de unidades mejoradas a las unidades de la facción de la IA.|
+1113|Todavía te queda al menos una acción. ¿Estás seguro de que quieres terminar tu turno?|
+1114|Biomasa|
+1115|Engrama de Victoria|
+1116|Atacante|
+1117|Defensor|
+1118|¡{0} están disputando {1}!|
+1119|Puedes continuar modificando tus fuerzas gratis hasta la próxima batalla o el comienzo del siguiente turno.|
+1120|No tienes otra Acción disponible para reforzar a tu ejército. Deberás finalizar el turno antes de poder realizar más ajustes.|
+1121|Combatir|
+1122|Aumenta tus fuerzas|
+1123|Unidades perdidas para lograr la victoria. Se producirán más pérdidas si la batalla se pierde.|
+1124|{0}% de probabilidad de {1}|
+1125|Victoria Abrumadora|
+1126|Victoria Enérgica|
+1127|Victoria Moderada|
+1128|Victoria Menor|
+1129|Derrota Inminente|
+1130|Unidades perdidas|
+1131|Calculando|
+1132|Victoria|
+1133|Derrota Inminente|
+1134|No puedes guardar sin reclamar o reforzar|
+1135|Esto romperá la cohesión de tu ejército. ¿Estás seguro de que quieres reclutar esta unidad?|
+1136|No hay unidaes en tu ejército|
+1137|La unidad rompe la cohesión|
+1138|Sin unidades|
+1139|Solo puedes retirarte cuando no se han gastado puntos de acción. Podrás retirarte al comienzo de tu próximo turno.|
+1140|Solo puedes retirarte durante tu turno|
+1141|¿Retirarte?|
+1142|¿Estás seguro de que quieres retirarte?|
+1143|Batalla {0} |
+1144|¡Reforzado!|
+1145|¡Retirada!|
+1146|{0} HP por momentum|
+1147|{0} Momentum después de mover {2} casillas|
+1148|Permite moverse sobre obstáculos cortos e ignora las penalizaciones de movimiento por terreno.|
+1149|Cada disparo efectivo con este arma tiene una probabilidad acumulativa de {0} de saltar a un enemigo adyacente, provocando {1} de daño.|
+1150|{0} Daño contra unidades orgánicas|
+1151|{0} Penetración de blindaje contra unidades orgánicas|
+1152|{0} {2} Alcance|
+1153|Refleja {0} de daño de vuelta a combatientes cuerpo a cuerpo|
+1154|{0} Disparos|
+1155|{0} de {1} objetivos seleccionados|
+1156|{0} para confirmar /|
+1157|Autoimpacto de Armas a Distancia|
+1158|{0} para cancelar|
+1159|Propietario|
+1160|Conectado a la Base|
+1161|Recurso|
+1162|Bonus|
+1163|Desconocido|
+1164|Eliminado|
+1165|Consumido|
+1166|Aniquilado|
+1167|La fuerza de tu ejército es baja. Considera solicitar refuerzos.|
+1168|El enemigo se acerca a tu base. Considera reclamar territorio cercano.|
+1169|Hay casillas no reclamadas a tu alcance. Derrota a los territorios neutrales para aumentar el límite de puntos de tu ejército.|
+1170|Hay un recurso no reclamado a tu alcance. Reclámalo tú para obtener un bonus.|
+1171|Un recurso de Fuerza Auxiliar controlado por el enemigo está al alcance. Captúralo para aumentar el límite de tu ejército.|
+1172|Un recurso de Autoridad Expansiva controlado por el enemigo está a tu alcance. Captúralo para aumentar las acciones por turno.|
+1173|Un recurso de Suministro Rápido controlado por el enemigo está al alcance. Captúralo para reducir los tiempos de reutilización|
+1174|Todas las acciones han sido utilizadas. Es hora de terminar tu turno.|
+1175|Cerrar|
+1176|¡Base reclamada!|
+1177|Sin reclamar|
+1178|Corrosión|
+1179|Combate contra los aliados|
+1180|Si está habilitada, las facciones que normalmente son aliadas pueden ser oponentes en la campaña.|
+1181|Combate|
+1182|Turnos Jugados|
+1183|Casillas Capturadas|
+1184|Casillas Perdidas|
+1185|Mayoría de Casillas en Posesión|
+1186|Bases Capturadas|
+1187|Recursos en Posesión|
+1188|Total de Unidades Eliminadas|
+1189|Total de Daño Causado|
+1190|Batalla Más Corta|
+1191|Batalla Más Larga|
+1192|Mejor Unidad|
+1193|Mejor Ratio Eliminaciones/Muertes por Misión|
+1194|Sanación Total|
+1195|Unidades Perdidas/Desplegadas|
+1196|Daño por Categoría de Arma|
+1197|Unidades Surgidas|
+1198|Habilidades Fortalecidas|
+1199|Unidad Más Surgida|
+1200|Habilidad Más Fortalecida|
+1201|Clasificación de Ejército|
+1202|Precisión Media|
+1203|{0} Eliminaciones|
+1204|{0} Racha de Supervivencia en Misión|
+1205|{0} Casillas Viajadas|
+1206|Ratio Elminaciones Muertes|
+1207|{0} Surgida(s)|
+1208|{0} Uso(s)|
+1209|Misión {0}|
+1210|Total de Unidades Perdidas|
+1211|Ver Foros|
+1212|Unidad|
+1213|Las mejoras requieren AP|
+1214|Define si se necesita un punto de acción para comprar mejoras en el Centro de Mando.|
+1215|La IA Obtiene Todas Las Mejoras|
+1216|Proporciona a las otras facciones de la IA todas las mejoras del Centro de Mando.|
+1217|No puede ser Suprimida|
+1218|{0} Alcance Máximo|
+1219|Desbloquear esta unidad|
+1220|Desbloquea|
+1221|Para Unidades|
+1222|Hay mejoras disponibles para tus unidades. Considera desbloquear las mejoras de HQ.|
+1223|Ganancia de {0} Momentum por acabar con unidades orgánicas|
+1224|{0} Daño de armas por Momentum|
+1225|Esta unidad está en Recuperación. Comprarla requiere {0} Puntos|
+1226|No se han perdido unidades|
+1227|Asedio|
+1228|<b>Atacar y defender puntos de control.</b><br><br>Un jugador se designa como atacante mientras que el otro es el defensor:<br><br>• Se otorgan +25 puntos al atacante por punto capturado. El defensor no puede recapturar los puntos una vez capturados por el atacante.<br><br>• Se necesitan varios turnos para capturar los puntos de control. La unidad que captura el punto no podrá moverse durante este tiempo, así que defiéndela bien.<br><br>• El defensor gana puntos al matar a las unidades del atacante. Sólo el defensor gana puntos de esta manera.<br><br>• El defensor tiene un área de despliegue más grande, lo que le permite desplegar unidades más cerca de los puntos de captura al comienzo de la partida.<br><br>• El defensor obtendrá automáticamente refuerzos al comienzo de su turno si su ejército está casi destruido.|
+1229|Capturar|
+1230|Capturar (Quedan {0} turno(s))|
+1231|Sólo el atacante puede permanecer en los puntos de captura|
+1232|<b>Asedio</b><br><br>Asegura los puntos de control|
+1233|<b>Asedio</b><br><br>Defiende los puntos de control|
+1234|<b>Asedio</b><br><br>El atacante ha de asegurar los puntos de control. El defensor necesita defender los puntos de control|
+1235|Coste Acelerado: {0} Puntos|
+1236|Jugar como|
+1237|Embarcar|
+1238|Desembarcar|
+1239|El transporte está lleno|
+1240|Ya se ha desembarcado este turno.|
+1241|<b>Límites de capacidad</b><br><br>Unidad: {0}<br>Modelos: {1}|
+1242|Siguiente|
+1243|Puntos de Refuerzo: {0}|
+1244|Oleadas Sobrevividas|
+1245|Enemigos Abatidos|
+1246|Puntuación por Enemigos Abatidos|
+1247|Tamaño de Ejército Multijugador|
+1248|Bonus por Oleada Sobrevivida|
+1249|Puntos de Refuerzo Gastados|
+1250|No puedo apuntar a esta unidad|
+1251|Tabla de Clasificación|
+1252|Mundo|
+1253|Tú|
+1254|Amigos|
+1255|Si está habilitado, las oleadas de Demonios nunca terminarán y la partida concluye solo cuando tu ejército es destruido.|
+1256|Facciones enemigas|
+1257|Puntos que recibes para gastar en refuerzos después de cada oleada.|
+1258|Bono de ejército pequeño|
+1259|Bono por turnos restantes|
+1260|Oleada|
+1261|Oleada completa|
+1262|Suministro|
+1263|Bronce|
+1264|Plata|
+1265|Oro|
+1266|Ayuda de campo de batalla|
+1267|Por defecto|
+1268|Ajusta la precisión de los ataques enemigos según el tamaño y la agilidad de la unidad.|
+1269|{0} estabilidad a distancia por momentum|
+1270|{0} perforación de armadura por momentum|
+1271|Escala de Interfaz|
+1272|{0} penalización de momentum por acción no utilizada|
+1273|Estadísticas deshabilitadas|
+1274|Optar por no recabar estadísticas|
+1275|Los datos estadísticos y analíticos se utilizan estrictamente para ayudar a mejorar el juego. ¿Estás seguro de que deseas darte de baja?|
+1276|Tomar y controlar|
+1277|Peticiones IA|
+1278|Afecta al número de unidades que la IA puede reclutar entre misiones|
+1279|Errir de lanzamiento|
+1280|El juego ha encontrado un error crítico. Si este error persiste, valida los datos del juego y/o vuelve a instalarlo.|
+1281|Usar armas cuerpo a cuerpo por defecto contra enemigos adyacentes|
+1282|<b>Tomar y controlar</b><br>Elimina al enemigo antes de que ocupe la zona de control|
+1283|<b>Tomar y controlar</b><br>El atacante ocupar la zona de control, el defensor eliminar al enemigo|
+1284|<b>Tomar y controlar</b><br>Ocupar la zona de control|
+1285|Cargando|
+1286|Activo. +{0} AP|
+1287|Promoción en el Campo de Batalla|
+1288|Momentum: {0} por modelo eliminado|
+1289|<b>Ocupa la zona objetivo para reclamar los recursos.</b><br><br>El atacante gana 5 puntos por cada unidad en la zona de control, menos 5 puntos por cada unidad defensora en la zona de control.<br><br>El defensor gana puntos por eliminar las unidades atacantes.|
+1290|Enemigos dentro de la zona de control|
+1291|Aliados dentro de la zona de control|
+1292|Dezpojoz del Waaagh|
+1293|Siguiente unidad con MP|
+1294|El arma se está recargando|
+1295|Tiempo de recarga de munición|
+1296|El tamaño mínimo del ejército para la incursión es {0}|
+1297|Disponible después de {0} oleadas|
+1298|Disponible después de la próxima ola|
+1299|Mostrar indicador de ataque por retaguardia directo|
+1300|Tributo de sangre|
+1301|Terreno|
+1302|Gameplay|
+1303|Atmósfera|
+1304|Accesorios|
+1305|Crear nuevo mapa|
+1306|Generador de mapas|
+1307|Ancho|
+1308|Altura|
+1309|Plantilla|
+1310|Zonas de equipamiento personalizadas|
+1311|Áreas de captura|
+1312|Puntos de captura|
+1313|{0} Daño a distancia por Momentum|
+1314|{0} Precisión a distancia contra esta unidad|
+1315|{0} Caída de precisión frente a esta unidad|
+1316|Se aplica dentro de {0} casillas|
+1317|Mis mapas|
+1318|Mapas descargados|
+1319|Editar|
+1320|Navegar en línea|
+1321|Duplicar|
+1322|¿Estás seguro de que desea eliminar "{0}"?|
+1323|Publicar|
+1324|Introduce un registro de cambios para contar a otros jugadores las novedades de esta versión.|
+1325|Detalles del mapa|
+1326|Descripción|
+1327|Error|
+1328|Éxito|
+1329|Mapa publicado con éxito.|
+1330|Mapa personalizado no instalado:<br>{0}|
+1331|Mapa local no encontrado:<br>{0}|
+1332|Permitir|
+1333|{0} casillas disponibles|
+1334|Tamaño|
+1335|Diminuto|
+1336|Pequeño|
+1337|Medio|
+1338|Grande|
+1339|Extra grande|
+1340|Naturaleza|
+1341|Estructuras|
+1342|Categoría|
+1343|Muros|
+1344|Objetos|
+1345|Calcomanías|
+1346|Imperium|
+1347|Civil|
+1348|Natural|
+1349|Estructurado|
+1350|Frondoso|
+1351|Seco|
+1352|Escarpado|
+1353|Plano|
+1354|Mapas personalizados|
+1355|Disperso|
+1356|Rellenado|
+1357|Mapas generados|
+1358|Diseña tu planeta|
+1359|Todos los modos|
+1360|Nuevo modo|
+1361|Crea un nombre para tu nuevo modo de juego. Esto permitirá jugar este mapa para un solo jugador.|
+1362|Unidades|
+1363|¿Estás seguro de que quieres eliminar los datos de este modo de juego? Esto no podrás deshacerlo.|
+1364|Fuerza de la maleza|
+1365|Altura mínima|
+1366|Altura máxima|
+1367|Escala|
+1368|Arena|
+1369|Césped|
+1370|Barro|
+1371|Roca|
+1372|Artificial|
+1373|Azimut|
+1374|Cenit|
+1375|Sol|
+1376|Rojo|
+1377|Verde|
+1378|Azul|
+1379|Niebla|
+1380|Color|
+1381|Postprocesamiento|
+1382|Densidad|
+1383|Intensidad|
+1384|Usar música de escaramuza|
+1385|Fortaleza|
+1386|Radio|
+1387|Cielo|
+1388|Terreno|
+1389|Lineal|
+1390|Exponencial|
+1391|Exponencial al cuadrado|
+1392|Comenzar|
+1393|Terminar|
+1394|Temperatura|
+1395|Balance de blancos|
+1396|Tono|
+1397|Matiz|
+1398|Bajos|
+1399|Medios|
+1400|Altos|
+1401|Honor de batalla|
+1402|Ambiente|
+1403|Logo requerido|
+1404|Entra en el modo de reproducción y haz una captura usando el modo Foto.|
+1405|Versión|
+1406|Accesorios para casillas|
+1407|Accesorios gratis|
+1408|Guardar foto del mapa|
+1409|Tamaño del pincel|
+1410|Posición|
+1411|Dirección|
+1412|Casillas|
+1413|Rejilla|
+1414|Campaña personalizada|
+1415|Administrar Mods|
+1416|Campañas personalizadas|
+1417|Mis campañas|
+1418|Campañas descargadas|
+1419|Crear nueva campaña|
+1420|Creando una partida multijugador con un mapa guardado localmente. Solo podrán unirse los jugadores que tengan el mismo mapa guardado localmente.|
+1421|Aviso|
+1422|El jugador que elige facción|
+1423|es jugador local|
+1424|Facciones permitidas|
+1425|¿Estás seguro de que deseas eliminar "{0}"?|
+1426|Subiendo|
+1427|Autenticación|
+1428|Informe de campaña|
+1429|Informe de la misión|
+1430|Misiones|
+1431|Título de misión|
+1432|Título de campaña|
+0|Spinefists|Weapon Type|Weapon
+1|Lieutenant|Unit Type|Unit
+2|Blood Angels Lieutenant|Unit Type|Unit
+3|Intercessors|Unit Type Short|Unit
+4|Blood Angels Intercessors|Unit Type Long|Unit
+5|Termagant|Unit Type|Unit
+6|Tyranid Termagant|Unit Type|Unit
+7|Tyrannofex|Unit Type|Unit
+8|Tyranid Tyrannofex|Unit Type|Unit
+9|Librarian|Unit Type|Unit
+10|Blood Angels Librarian|Unit Type|Unit
+11|Brother Aeturo|Unit Type|Unit
+12|Powerful Limbs|Weapon Type|Weapon
+13|Blood Angels Assault Squad|Unit Type|Unit
+14|Assault Squad|Unit Type|Unit
+15|Sergeant Carleon|Unit Type|Unit
+16|Blood Angels Land Speeder|unit type|Unit
+17|Land Speeder|unit type (short)|Unit
+18|Blood Angels Sanguinary Priest|Unit Type (long)|Unit
+19|Sanguinary Priest|Unit Type (short)|Unit
+20|Brother Aeturo|Unit Type (Character)|Unit
+21|Tyranid Hormagaunt|Unit Type (long)|Unit
+22|Hormagaunt|Unit Type (short)|Unit
+23|Tyranid Venomthrope|Unit Type (long)|Unit
+24|Venomthrope|Unit Type (short)|Unit
+25|Acid Spray|Weapon Type|Weapon
+26|Fleshborer|Weapon Type|Weapon
+27|Bolt Pistol|Weapon Type|Weapon
+28|Power Sword|Weapon Type|Weapon
+29|Powerful Limbs|Weapon Type|Weapon
+30|Chainsword|Weapon Type|Weapon
+31|Scything Talons|Weapon Type|Weapon
+32|Heavy Bolter|weapon type|Weapon
+33|Assault Cannon|weapon type|Weapon
+34|Heavy Flamer|Weapon|Weapon
+35|Multimelta|Weapon|Weapon
+36|Toxic Lash|Venomthrope Weapon|Weapon
+37|Hand Flamer|Weapon|Weapon
+38|Meltagun|Weapon|Weapon
+39|Red Thirst|Ability|Ability
+40|Jump Pack|Ability|Ability
+41|Tactical Precision|Ability|Ability
+42|Graces of the Angel|Ability|Ability
+43|Sword of Sanguinius|Ability|Ability
+44|Datalink Telemetry|Ability|Ability
+45|Anti-Grav Uplift|Ability|Ability
+46|Heal Thy Brother|Ability|Ability
+47|Narthecium|Ability|Ability
+48|Righteous Exhortation|Ability|Ability
+49|Embrace the Blood|Ability|Ability
+50|Swarm Tactics|Ability|Ability
+51|Spore Cloud|Ability|Ability
+52|Toxic Presence|Ability|Ability
+53|Cancel Jump Pack|Ability|Ability
+54|Increases momentum of surrounding allies by {0} .|Ability Description|Ability
+55|Heals a single non-vehicle ally within {0} tile for {1} HP.|Ability Description|Ability
+56|Revives last member of target unit with {0} health|Ability Description|Ability
+57|Applies {0} damage to surrounding enemy units|Ability Description|Ability
+58|Applies status effect to tiles in range|Ability Description|Ability
+59|Krak Grenade|Ability|Ability
+60|Frag Grenade|Ability|Ability
+61|Boltstorm Gauntlet|Weapon Type|Weapon
+62|Flamestorm Gauntlet|Weapon Type|Weapon
+63|Fragstorm Grenade Launcher|Weapon Type|Weapon
+64|Master-crafted Bolt Pistol|Weapon Type|Weapon
+65|Synaptic Leader|Ability|Ability
+66|Blood Angels|Faction|Faction
+67|Tyranid|Faction|Faction
+68|Adepta Sororitas|Faction|Faction
+69|Chaos Daemons of Khorne|Faction|Faction
+70|Mephrit Necrons|Faction|Faction
+71|Battleline Tactics|Ability Description|Ability
+72|Bolt Rifle|Weapon Type|Weapon
+73|Auto Bolt Rifle|WeaponType|Weapon
+74|Aggressors|Unit Type Short|Unit
+75|Blood Angels Aggressors|Unit Type Long|Unit
+76|Hail of Fire|Ability Description|Ability
+77|Tyranid Hive Tyrant|Unit Type Long|Unit
+78|Hive Tyrant|Unit Type Short|Unit
+79|Massive Crushing Claws|Weapon Type|Weapon
+80|Tervigon|Unit Type Short|Unit
+81|Tyranid Tervigon|Unit Type Long|Unit
+82|Deals {0} damage with {1} armour piercing to units that deal melee damage to this unit.|Ability Description - Thorned Armor|Ability
+83|Fires {0} grenades, each dealing {1} damage with {2} armor piercing.|Ability Description - Frag Cannon|Ability
+84|Plasma Incinerator|Weapon Type|Weapon
+85|Heavy Plasma Incinerator|Weapon Type|Weapon
+86|Hellblasters|Unit Type Short|Unit
+87|Blood Angels Hellblasters|Unit Type Long|Unit
+88|Gargoyle|Unit Type Short|Unit
+89|Tyranid Gargoyle|Unit Type Long|Unit
+90|Blinding Venom|Ability Description (Tyranid)|Ability
+91|Supercharge|Ability Description (Blood Angels)|Ability
+92|The unit sacrifices all of its remaining movement points, and makes a ranged attack command with {0} additional attacks for every MP spent.|Ability Tooltip (Hail of Fire)|Ability
+93|Cancel Supercharge|Ability Description (Blood Angels)|Ability
+94|Deathspitter|Weapon Type (Tyranid)|Weapon
+95|Warriors|Unit Type Short|Unit
+96|Tyranid Warriors|Unit Type Long|Unit
+97|HQ|Role Group Title|RoleGroup
+98|Troop|Role Group Title|RoleGroup
+99|Elite|Role Group Title|RoleGroup
+100|Flyer|Role Group Title|RoleGroup
+101|Fast Attack|Role Group Title|RoleGroup
+102|Heavy Support|Role Group Title|RoleGroup
+103|Dedicated Transport|Role Group Title|RoleGroup
+104|Fortification|Role Group Title|RoleGroup
+105|Lord of War|Role Group Title|RoleGroup
+106|Characters and single units often used for boosting other units.|Role Group Description (HQ)|RoleGroup
+107|The staple of a lot of forces, cheap and numerous.|Role Group Description (Troops)|RoleGroup
+108|Specialised units, often tough or with great firepower.|Role Group Description (Elites)|RoleGroup
+109|Flying units.|Role Group Description (Flyers)|RoleGroup
+110|Quick moving units.|Role Group Description (Fast Attacks)|RoleGroup
+111|Durable units that pack a punch.|Role Group Description (Heavy Supports)|RoleGroup
+112|Vehicles used for transporting other units.|Role Group Description (Dedicated Transports)|RoleGroup
+113|A stationary fortification.|Role Group Description (Fortification)|RoleGroup
+114|Lords of war|Role Group Description (Lords of War)|RoleGroup
+115|Winged|Ability Title|Ability
+116|Power Axe|Weapon Type - Blood Angels Techmarine|Weapon
+117|Techmarine|Unit Type Short|Unit
+118|Blood Angels Techmarine|Unit Type Long|Unit
+119|Force Halberd|Weapon Type - Blood Angels Librarian Dreadnought|Weapon
+120|Storm Bolter|Weapon Type - Blood Angels Librarian Dreadnought|Weapon
+121|Librarian Dreadnought|Unit Type Short|Unit
+122|Blood Angels Librarian Dreadnought|Unit Type Long|Unit
+123|Assault Bolter|Weapon Type - Blood Angels Inceptor|Weapon
+124|Inceptor|Unit Type Short|Unit
+125|Blood Angels Inceptor|Unit Type Long|Unit
+126|Inferno Pistol|Weapon Type - Blood Angels Assault Squad|Weapon
+127|Seraphim|Unit Type Short|Unit
+128|Adepta Sororitas Seraphim|Unit Type Long|Unit
+129|Bioplasmic Cannon|Weapon Type - Tyranid Exocrine|Weapon
+130|Exocrine|Unit Type Short|Unit
+131|Tyranid Exocrine|Unit Type Long|Unit
+132|Furioso Dreadnought|Unit Type Short|Unit
+133|Blood Angels Furioso Dreadnought|Unit Type Long|Unit
+134|Furioso Fists|Weapon Type - Furioso Dreadnought|Weapon
+135|Assist|Unit XP Line (Enemy Damaged)|UnitXP
+136|Cover Fire|Unit XP Line (Enemy Damaged)|UnitXP
+137|Spray'n'Pray|Unit XP Line (Enemy Damaged)|UnitXP
+138|Emperor's Wrath|Unit XP Line (Enemy Damaged)|UnitXP
+139|Warrior|Unit XP Line (Enemy Killed)|UnitXP
+140|Slayer|Unit XP Line (Enemy Killed)|UnitXP
+141|Emperor's Judgement|Unit XP Line (Enemy Killed)|UnitXP
+142|Role Player|Unit XP Line (Objective Completed)|UnitXP
+143|Nemesis Hunter|Unit XP Line (Nemesis Killed)|UnitXP
+144|Elite|Unit XP Line (Ability Usage)|UnitXP
+145|Powerhouse|Unit XP Line (Ability Usage)|UnitXP
+146|Veteran|Unit XP Line (Ability Usage)|UnitXP
+147|Rending Claws|Weapon Type - Hormagaunt|Weapon
+148|Boneswords|Weapon Type - Tyranid Prime|Weapon
+149|Prime|Unit Type Short|Unit
+150|Tyranid Prime|Unit Type Long|Unit
+151|Massive Scything Talons|Weapon Type - Trygon|Weapon
+152|Trygon|Unit Type Short|Unit
+153|Tyranid Trygon|Unit Type Long|Unit
+154|Devourer with brainleech worms|Weapon Type - Thornback|Weapon
+155|Deathspitter with slimer maggots|Weapon Type - Thornback|Weapon
+156|Thornback|Unit Type Short|Unit
+157|Tyranid Thornback|Unit Type Long|Unit
+158|Monstrous Scything Talons|Weapon Type - Thornback|Weapon
+159|Twin Assault Cannon|Weapon Type - Baal Predator|Weapon
+160|Flamestorm Cannon|Weapon Type - Baal Predator|Weapon
+161|Baal Predator|Unit Type Short|Unit
+162|Blood Angels Baal Predator|Unit Type Long|Unit
+163|Genestealer|Unit Type Short|Unit
+164|Tyranid Genestealer|Unit Type Long|Unit
+165|Devourer|Weapon Type - Termagant|Weapon
+166|Omnissiah's Touch|Ability - Techmarine|Ability
+167|Heals a single mechanical ally within {0} tile for {1} HP.|Ability Description - Omnissiah's Touch|Ability
+168|Blessings of the Omnissiah|Ability - Techmarine|Ability
+169|Increases Armour of target unit|Ability Description - Blessings of the Omnissiah|Ability
+170|Invoke the Machine Spirit|Ability - Techmarine|Ability
+171|Increases Accuracy and Damage of a mechanised unit|Ability Description - Soothe the Machine Spirit|Ability
+172|Servo Arm|Ability - Techmarine|Ability
+173|Auto-attacks enemy when tile is contested|Ability Description - Servo Arm|Ability
+174|Shield of Sanguinius|Ability - Librarian Dreadnought|Ability
+175|Temporarily increases the Max HP of the target|Ability - Shield of Sanguinius|Ability
+176|Quickening|Ability - Librarian Dreadnought|Ability
+177|Increase MP and melee attacks|Ability - Quickening|Ability
+178|Shifting Sands|Ability - Librarian Dreadnought|Ability
+179|Decreases movement and evasion in area|Ability - Shifting Sands|Ability
+180|Volatile|Ability - Vehicles|Ability
+181|Explodes on death, dealing {0} damage at {1} armour piercing to units within {2} tile.|Ability - Volatile|Ability
+182|Smokescreen|Ability - Smokescreen|Ability
+183|Natural Killer|Ability - Natural Killer|Ability
+184|Connected|Ability - Synaptic Leader|Ability
+185|Increases the momentum gains of nearby ally units.|Ability - Synaptic Leader|Ability
+186|Assault Tactics|Ability - Assault Tactics|Ability
+187|Leap|Ability - Leap|Ability
+188|Plasmic Buildup|Ability - Plasmic Buildup|Ability
+189|Symbiotic Targeting|Ability - Symbiotic Targeting|Ability
+190|The unit sacrifices all of its remaining movement points, and makes a ranged attack command with additional damage for every MP spent.|Ability - Plasmic Buildup|Ability
+191|Death From Above|Ability - Death from Above|Ability
+192|Jump Pack must be active|Ability - Death from Above|Ability
+193|Blessed Ammunition|Ability - Blessed Ammunition|Ability
+194|Shield of Faith|Ability - Shield of Faith|Ability
+195|Godwyn De'az Pattern Bolter|Weapon Type - Godwyn De'az Pattern Bolter|Weapon
+196|Battle Sisters|Unit Type Short|Unit
+197|Adepta Sororitas Battle Sisters|Unit Type Long|Unit
+198|Battle Sermon|Ability - Battle Sermon|Ability
+199|Faith and Fury|Ability - Faith and Fury|Ability
+200|Sister Superior|Unit Type Short|Unit
+201|Adepta Sororitas Sister Superior|Unit Type Long|Unit
+202|{0} Action Point|Ability Description|Ability
+203|Living Weapon|Ability - Living Weapon|Ability
+204|Adaptive Targeting|Ability - Adaptive Targeting|Ability
+205|The unit sacrifices all of its remaining movement points, and makes a ranged attack command with an additional attack for every MP spent. This will also increase the amount of ranged damage this unit takes.|Ability - Living Weapon|Ability
+206|+ Attack|Ability - Adaptive Targeting|Ability
+207|Frag Cannon|Ability - Furioso Dreadnought|Ability
+208|Battering Ram|Ability - Battering Ram|Ability
+209|Thorned Armor|Ability - Thorned Armor|Ability
+210|Spine Banks|Ability - Spine Banks|Ability
+211|Endless Hunger|Ability - Endless Hunger|Ability
+212|Devotion|Ability - Devotion|Ability
+213|This unit gains bonus momentum when an enemy model is killed, based on proximity to the enemy unit.|Ability Description - Red Thrist|Ability
+214|This unit gains 5 momentum for melee kills and 1 momentum for ranged kills.|Ability Description - Endless Hunger|Ability
+215|This unit gains bonus momentum based on the damage taken from enemy attacks.|Ability Description - Devotion|Ability
+216|Plasma Exterminator|Weapon Type - Blood Angels Inceptor|Weapon
+217|Heavy Venom Cannon|Weapon Type - Hive Tyrant|Weapon
+218|Death Company|Unit Type Short|Unit
+219|Blood Angels Death Company|Unit Type Long|Unit
+220|Force Sword|Weapon Type - Blood Angels Librarian|Weapon
+221|Lieutenant Carleon|Unit Type|Unit
+222|Brother Aeturo|Unit Type|Unit
+223|Techmarine Croginax|Unit Type|Unit
+224|Brother Quindar|Unit Type|Unit
+225|Sister Verity|Unit Type|Unit
+226|Unarmed|Weapon Type|Weapon
+227|Fragstorm Launcher|Weapon Type (Abbreviated)|Weapon
+228|Strategic Adaptation|Ability - Title|Ability
+229|Strategic Adaptation - Ranged|Ranged Status Effect|Ability
+230|Strategic Adaptation - Melee|Melee Status Effect|Ability
+231|Psychic Scream|Ability - Title|Ability
+232|Hive Minds Will|Ability - Title|Ability
+233|Seraphim Wings|Ability - Title|Ability
+234|Grace|Ability - Title|Ability
+235|Cancel Seraphim Wings|Ability|Ability
+236|Counteracts some of the penalties of Seraphim Wings. Expires when Seraphim Wings expires|Ability - Grace Description|Ability
+237|Litany of Devotion|Ability - Title|Ability
+238|Tyranid Infestation Node|Prop - Name|Prop
+239|Feral Spawn|Ability - Title|Ability
+240|Catalyst|Ability - Title|Ability
+241|Stinger Salvo|Ability - Title|Ability
+242|Brood Telepathy|Ability - Title|Ability
+243|Provides momentum gains independent from Synaptic Leader, but also prevents this unit from gaining Synaptic Leader bonuses. Stacks with other Genestealer units up to {0} times.<br><br>{1}|Ability - Description (Brood Telepathy)|Ability
+244|Bio-Electric Pulse|Ability - Title|Ability
+245|Toxinspike|Ability - Title|Ability
+246|Haemoturgic Hammer|Ability - Title|Ability
+247|Wings of Sanguinius|Ability - Title|Ability
+248|Vision of Angelic Fury|Ability - Title|Ability
+249|Blood Lance|Ability - Title|Ability
+250|Black Rage|Ability - Title|Ability
+251|Fearless|Ability - Title|Ability
+252|Lucifer-Pattern Engine|Ability - Title|Ability
+253|Croginax|Character name|Character
+254|Cancel Lucifer-Pattern Engine|Ability - Title (Cancel)|Ability
+255|Carleon|Upgrade - Title|Upgrade
+256| A veteran of 100 years, Carleon knew exactly where to put his soldiers for maximum impact.|Upgrade - Long Description|Upgrade
+257|Assault Cannon Strafe|Ability - Title|Ability
+258|Assault Marine Strike|Ability - Title|Ability
+259|Typhoon Missiles|Ability - Title|Ability
+260|Venom Cannon Strafe|Ability - Title|Ability
+261|Sonic Screech|Ability - Title|Ability
+262|Spore Mines|Ability - Title|Ability
+263|Command Ability|Upgrade - Title|Upgrade
+264|Ranged Accuracy|Upgrade - Short Description|Upgrade
+265|Hit Points|Upgrade - Short Description|Upgrade
+266|Melee Accuracy|Upgrade - Short Description|Upgrade
+267|Evasion|Upgrade - Short Description|Upgrade
+268|HQ Units|Upgrade - Title|Upgrade
+269|Melee AP|Upgrade - Short Description|Upgrade
+270|Primaris Infantry|Upgrade - Title|Upgrade
+271|Armour vs. Ranged|Upgrade - Short Description|Upgrade
+272|Applies {0} damage to target in the center tile|Ability Description|Ability
+273|Applies {0} damage to targets in the surrounding tiles|Ability Description|Ability
+274|Spawns {0} units at the target tile. If there is an enemy at the tile, a charge attack will be done|Ability Description|Ability
+275|Fires {0} times per tile for 4 tiles in a line, dealing {1} damage per shot with an accuracy of {2} and armor piercing value of {3}.|Ability Description|Ability
+276|Spore Mine|Unit Type Short|Unit
+277|Tyranid Spore Mine|Unit Type Long|Unit
+278|Detonate|Weapon Name|Weapon
+279|Reduces enemy momentum by 50% within a 3x3 area.|Ability Description|Ability
+280|Reduces Momentum by 50% and removes Overwatch actions from enemies in a 3x3 area.|Ability Description|Ability
+281|Fires once per tile for 4 tiles in a line, dealing {1} damage per shot with an accuracy of {2} and armor piercing value of {3}.|Ability Description|Ability
+282|Spawns 4 spore mines at random positions in a 3x3 area. If a spore mine lands on an enemy it will detonate immediately. Spore mines that land on empty tiles become controllable units next turn.|Ability Description|Ability
+283|Burrow|Ability - Burrow|Ability
+284|Thunder Hammer|Weapon Type|Weapon
+285|Blood Angels Land Speeder Tornado|Unit Type Long|Unit
+286|Land Speeder Tornado|Unit Type Short|Unit
+287|Plasma Pistol|Weapon Type|Weapon
+288|Scions of Sanguinius|Upgrade - Short Description|Upgrade
+289|Strength in Blood|Upgrade - Short Description|Upgrade
+290|Performance Observation|Upgrade - Short Description|Upgrade
+291|Plasmic Stabilisers|Upgrade - Short Description|Upgrade
+292|Uncanny Senses|Upgrade - Short Description|Upgrade
+293|Walking Bastions|Upgrade - Short Description|Upgrade
+294|The First Line|Upgrade - Short Description|Upgrade
+295|Bloody Invigoration|Upgrade - Short Description|Upgrade
+296|The Blessed of Sanguinius|Upgrade - Short Description|Upgrade
+297|Blood of the Great Angel|Upgrade - Short Description|Upgrade
+298|Intense Focus|Upgrade - Short Description|Upgrade
+299|Rigourous Training|Upgrade - Short Description|Upgrade
+300|Forward Momentum|Upgrade - Short Description|Upgrade
+301|Shock Absorption|Upgrade - Short Description|Upgrade
+302|Savage Technique|Upgrade - Short Description|Upgrade
+303|Land Speeder & Land Speeder Tornado|Upgrade - Title|Upgrade
+304|Mechanical Units|Upgrade - Title|Upgrade
+305|Invigorated Machine-Spirits|Upgrade - Short Description|Upgrade
+306|The Omnissiah Watches|Upgrade - Short Description|Upgrade
+307|Assault Cannon Fine Tuning|Upgrade - Short Description|Upgrade
+308|Auspex Receiver|Upgrade - Short Description|Upgrade
+309|The Old Ways|Upgrade - Short Description|Upgrade
+310|Assault Marines, Death Company, Carleon, Aeturo & Croginax|Upgrade - Title|Upgrade
+311|Croginax & Aggressors|Upgrade - Title|Upgrade
+312|Field Agitators|Upgrade - Short Description|Upgrade
+313|Librarian Units|Upgrade - Title|Upgrade
+314|Force Harmonics|Upgrade - Short Description|Upgrade
+315|Dreadnought Units|Upgrade - Title|Upgrade
+316|Only In Death|Upgrade - Short Description|Upgrade
+317|Psychic Fortress|Upgrade - Short Description|Upgrade
+318|Angel's Foresight|Upgrade - Short Description|Upgrade
+319|Claws Tear At Uncaring Flesh|Upgrade - Short Description|Upgrade
+320|Their Final Honour|Upgrade - Short Description|Upgrade
+321|Acts of Faith|Upgrade - Short Description|Upgrade
+322|The Emperor Protects|Upgrade - Short Description|Upgrade
+323|Mk X Gravis Armour Units|Upgrade - Title|Upgrade
+324|<i>The roar of the chain will be the last thing they hear.</i>|Upgrade - Stat Flavour Text|Upgrade
+325|<i>Forward should be the only vector for your rage.</i>|Upgrade - Stat Flavour Text|Upgrade
+326|<i>The Primaris have learned quickly that there will be no rest while gaunts remain on Baalfora.</i>|Upgrade - Stat Flavour Text|Upgrade
+327|<i>If they are to inherit the Chapter, they must be prepared for the lives they will suffer.</i>|Upgrade - Stat Flavour Text|Upgrade
+328|<i>Over a hundred years with the jump pack meant Carleon knew the importance of a proper landing.</i>|Upgrade - Stat Flavour Text|Upgrade
+329|<i>The blood of the Angel may prolong their expected life span, but it stirs something more in those that somehow survive.</i>|Upgrade - Stat Flavour Text|Upgrade
+330|<i>Aeturo watches the Primaris closely, waiting for any sign of weakness or vulnerability.</i>|Upgrade - Stat Flavour Text|Upgrade
+331|<i>The difficulty's not in the shooting, but keeping your sights steady while it charges.</i>|Upgrade - Stat Flavour Text|Upgrade
+332|<i>The nobility of Sanguinius shines through.</i>|Upgrade - Stat Flavour Text|Upgrade
+333|<i>The Aggressors knew they would be the first to take fire, and it made them welcome the coming battle all the more.</i>|Upgrade - Stat Flavour Text|Upgrade
+334|<i>For reasons they couldn't yet understand, proximity with the young priest made the Aggressors eager to charge headlong into battle.</i>|Upgrade - Stat Flavour Text|Upgrade
+335|<i>Reinforced plate upon reinforced plate of ceramite made the Gravis armour near impenetrable.</i>|Upgrade - Stat Flavour Text|Upgrade
+336|<i>Hellblasters are trained to spot the irregularities that indicate a weak point in the enemy's armour.</i>|Upgrade - Stat Flavour Text|Upgrade
+337|<i>The Techmarine has an affinity for the aging armoury of the Blood Angels. They welcome the rites of maintenance learned on Mars.</i>|Upgrade - Stat Flavour Text|Upgrade
+338|<i>The Machine God watches, and blesses the spirits that remain true to their duties.</i>|Upgrade - Stat Flavour Text|Upgrade
+339|<i>These old barrels don't need much to help them focus.</i>|Upgrade - Stat Flavour Text|Upgrade
+340|<i>The machine spirit warns of distant dangers.</i>|Upgrade - Stat Flavour Text|Upgrade
+341|<i>The plastron of the Mk VII armour hummed eagerly at the Techmarine's touch. The machine-spirit trusted the familiar prayers he intoned.</i>|Upgrade - Stat Flavour Text|Upgrade
+342|<i>Something in the Techmarine's demeanour causes the fields of nearby power weapons to hum with anticipation.</i>|Upgrade - Stat Flavour Text|Upgrade
+343|<i>This blade is more than an extension of your arm; it shall be an amplifier of your will.</i>|Upgrade - Stat Flavour Text|Upgrade
+344|<i>Only in death does duty end. </i>|Upgrade - Stat Flavour Text|Upgrade
+345|<i>A Librarian's mind is a stronghold, from which the body derives vigour.</i>|Upgrade - Stat Flavour Text|Upgrade
+346|<i>The briefest glimpse can mean the difference between a bolt through the shoulder, or through the head.</i>|Upgrade - Stat Flavour Text|Upgrade
+347|<i>Pain is of no concern to the Death Company.</i>|Upgrade - Stat Flavour Text|Upgrade
+348|<i>Visions of the Great Angel flood their minds, eventually taking the place of every lost memory.</i>|Upgrade - Stat Flavour Text|Upgrade
+349|<i>Pray, Sister! Raise your voice in His name! Let your prayer become His will made manifest!</i>|Upgrade - Stat Flavour Text|Upgrade
+350|<i>Your conviction shall be your strongest armour.</i>|Upgrade - Stat Flavour Text|Upgrade
+351|<i>Each of them had learned for himself the complexities of a life that upheld the Angel's Graces and the Warrior's Virtues.</i>|Upgrade - Stat Flavour Text|Upgrade
+352|<i>Regardless of whether you intend to hold the line or break it, the core skill needed is being able to shoot straight.</i>|Upgrade - Ability Flavour Text|Upgrade
+353|<i>The foundational doctrine of the Eighth Company.</i>|Upgrade - Ability Flavour Text|Upgrade
+354|<i>Standard issue anti-armour grenade.</i>|Upgrade - Ability Flavour Text|Upgrade
+355|<i>Standard issue anti-personnel grenade.</i>|Upgrade - Ability Flavour Text|Upgrade
+356|<i>The weight of the Gravis armour is a formidable weapon in itself.</i>|Upgrade - Ability Flavour Text|Upgrade
+357|<i>The fusillade of the Stormraven is a glorious sight to behold.</I>|Upgrade - Ability Flavour Text|Upgrade
+358|<i>Timely reinforcements by experienced battle-brothers that Carleon trusts.</i>|Upgrade - Ability Flavour Text|Upgrade
+359|<i>The typhoon launchers sing doom for their targets.</i>|Upgrade - Ability Flavour Text|Upgrade
+360|<i>Experience teaches that serenity and rage can be two sides of the same coin.</i>|Upgrade - Ability Flavour Text|Upgrade
+361|<i>The duty of the Sword is to complete the mission, regardless of the cost.</i>|Upgrade - Ability Flavour Text|Upgrade
+362|<i>Carleon knew exactly where to position his battle-brothers to unlock their potential.</I>|Upgrade - Ability Flavour Text|Upgrade
+363|<i>Guide one brother back from the brink of death, and you can change the fate of a war.</i>|Upgrade - Ability Flavour Text|Upgrade
+364|<i>The Aggressors dig their feet into the ground, and rain devastation on their foes.</i>|Upgrade - Ability Flavour Text|Upgrade
+365|<i>The Sanguinary Priesthood holds all aspects of the Primarch's blood they carry as sacred, including the Red Thirst.</i>|Upgrade - Ability Flavour Text|Upgrade
+366|<i>It is not uncommon for a Sanguinary Priest to be at the head of the melee, urging his brothers with the words of their noble progenitor.</i>|Upgrade - Ability Flavour Text|Upgrade
+367|<i>Every marksman killed by their own weapon has their name forever honoured in microscopic script on its casing.</i>|Upgrade - Ability Flavour Text|Upgrade
+368|<i>The techmarine invigorates the machine spirits of the power armour worn by his nearby battle brothers.</i>|Upgrade - Ability Flavour Text|Upgrade
+369|<i>Rites of initialisation; hymns of maintenance; prayers of efficiency.</i>|Upgrade - Ability Flavour Text|Upgrade
+370|<i>A sore point of contention between the Blood Angels and the Adeptus Mechanicus.</i>|Upgrade - Ability Flavour Text|Upgrade
+371|<i>The wash from the anti-grav drives creates a fearsome pack of hunters.</i>|Upgrade - Ability Flavour Text|Upgrade
+372|<i>Mark a target for annihilation.</i>|Upgrade - Ability Flavour Text|Upgrade
+373|<i>Have faith that the Great Angel will fortify you in your time of need.</i>|Upgrade - Ability Flavour Text|Upgrade
+374|<i>The dreadnought begins to move at preternatural speed, pushed faster by the psyker's power.</i>|Upgrade - Ability Flavour Text|Upgrade
+375|<i>Quindar is sensitive to the sands of Baal and its moons. The ground he walks is shaped by his will.</i>|Upgrade - Ability Flavour Text|Upgrade
+376|<i>Glistening wings of the Great Angel spring forth to carry the Librarian forward.</i>|Upgrade - Ability Flavour Text|Upgrade
+377|<i>A spear made of empyric energy and the blood of his fallen enemies.</i>|Upgrade - Ability Flavour Text|Upgrade
+378|<i>When the Sister Superior lifts her voice in praise of the Emperor, every sister nearby hears her commitment.</i>|Upgrade - Ability Flavour Text|Upgrade
+379|<i>A potent blend that propels the Sister Superior forward.</i>|Upgrade - Ability Flavour Text|Upgrade
+380|<i>For each round of this blessed ammunition, a master artificier has dedicated their lifetime to craft and sanctify a single bolt.</i>|Upgrade - Ability Flavour Text|Upgrade
+381|<i>Our faith is our shield. As one falters, so does the other.</i>|Upgrade - Ability Flavour Text|Upgrade
+382|<i>Few can match the deadly grace of the Seraphim in flight.</i>|Upgrade - Ability Flavour Text|Upgrade
+383|Assault Squad & Carleon|Upgrade - Title|Upgrade
+384|For the Emperor and Sanguinius|Faction Slogan - Blood Angels|Faction
+385|Kill or be consumed|Faction Slogan - Tyranid|Faction
+386|The Emperor protects|Faction Slogan - Adepta Sororitas|Faction
+387|Affects all allies within a range of {0} tiles<br><br>{1}|Ability - Description|Ability
+388|Affects casting unit<br><br>{0}|Ability - Description|Ability
+389|Affects single target ally within {0} tiles<br><br>{1}|Ability - Description|Ability
+390|Revives the last member of a target ally within {0} tile and gives them {1} health and {2}% movement points| (Narthecium)|Ability
+391|Deals {0} splash damage to a single enemy unit within {1} tiles.<br><br>Armor Piercing: {2}|Ability - Description (Frag and Krak Grenade)|Ability
+392|Cancel Wings of Sanguinius|Ability - Title|Ability
+393|Affects casting unit<br><br>{0}<br><br>The effect is doubled when activated while adjacent to another Land Speeder.|Ability - Description (Anti Grav)|Ability
+394|Has a {0}% chance to trigger when the Death Company unit kills an enemy model. Stacks up to {1} times.<br><br>{2}|Ability - Description (Black Rage)|Ability
+395|Throws a lance that damages enemy units along the path to the target (maximum range: {0}). Deals {1} splash damage with {2} armor piercing to up to {3} targets per tile.|Ability - Description (Blood Lance)|Ability
+396|Affects single target enemy within {0} tiles<br><br>{1}|Ability - Description|Ability
+397|Uses the unit's jump pack to dive onto an enemy, dealing {0} splash damage with {1} armor piercing against up to {2} models. This counts as a charge attack.|Ability - Description (Death from Above)|Ability
+398|Deals {0} psychic damage to a target enemy unit within {1} tiles|Ability - Description (Haemoturgic Hammer)|Ability
+399|Summons a vision of Sanguinius that terrifies all enemies who see it. Does {0} Momentum damage to all enemy units within {1} tiles.|Ability - Description (Vision of Angelic Fury)|Ability
+400|Summons a vision of Sanguinius that terrifies all enemies who see it. Does {0} Momentum damage to all enemy units within {1} tiles, and {2} Psychic damage to all enemy units within {3} tile.|Ability - Description (Vision of Angelic Fury - Level 2)|Ability
+401|Energises the Red Thirst of a single friendly unit within {0} tiles.<br><br>{1}|Ability - Description (Embrace the Blood)|Ability
+402|Emits a mind-shattering scream along a {0} tile line that does {1} Momentum damage and {2} Psychic damage.|Ability - Description (Psychic Scream)|Ability
+403|Exerts the will of the Hive Mind on all friendly units within {0} tiles.<br><br>{1}|Ability - Description (Hive Mind's Will)|Ability
+404|Connects all friendly units within {0} tiles to the synaptic network. Connected units gain {1}. This effect can stack up to {2} times.|Ability - Description (Synpatic Leader)|Ability
+405|Rising Faith|Ability - Title|Ability
+406|Deals {0} damage to a single enemy model within {1} tiles with additional splash damage.<br><br>Armor Piercing: {2}|Ability - Description (Krak/Frag Grenade)|Ability
+407|Affects all allies within a range of {0} tiles<br><br>{1}<br><br>{2}|Ability - Description (Battle Sermon)|Ability
+408|Affects single target ally within a range of {0}  tile.<br><br>{1}<br><br>{2} |Ability - Description (Litany Of Devotion)|Ability
+409|Applied while {0} is active<br><br>{1}|Ability - Description (Grace)|Ability
+410|{0}% chance to be applied when an enemy unit model is killed<br><br>{1}<br><br>+{2} Action Point|Ability - Description (Faith and Fury)|Ability
+411|{0}% chance to be applied after being hit with damage<br><br>{1}|Ability - Description (Shield of Faith)|Ability
+412|The unit sacrifices all of its remaining movement points, and makes a ranged attack that deals splash damage with +{0}% additional damage per MP spent.<br><br>Charges: {1}/{2}|Ability - Description (Plasmic Buildup)|Ability
+413|The unit sacrifices all of its remaining movement points, and makes a ranged attack that deals splash damage with +{0}% additional damage and +{1} armor piercing per MP spent.<br><br>Charges:{2}/{3}|Ability - Description (Plasmic Buildup)|Ability
+414|Intercessor Sergeant|Tutorial VO Character|Character
+415|Targets a single mechanical ally within {0} tile<br><br>{1}|Ability - Description (Invoke The Machine-Spirits)|Ability
+416|Charges through multiple units, dealing {0} damage with {1} armor piercing to both enemies and allies. Deals {2} damage with {3} armor piercing to the final target.|Ability - Description (Battering Ram)|Ability
+417|Leaps at an enemy {0} tile away, dealing melee damage with +{1} armor piercing. This counts as a charge attack.|Ability - Description (Leap - Level 1)|Ability
+418|Either gives a ranged or melee bonus to allies within {0} tiles. Use this ability to switch modes<br><br>Ranged Bonus<br>{1}<br><br>Melee Bonus<br>{2}|Ability - Description (Strategic Adaptation)|Ability
+419|Spawns an allied Termagant with -{0} MP on its first turn.|Ability - Description (Feral Spawn)|Ability
+420|Deals {0} splash damage with {1} armor piercing to an enemy {2} tiles away|Ability - Description (Stinger Salvo)|Ability
+421|Immediately burrows to a location up to {0} tiles away.<br><br>{1}|Ability - Description (Burrow)|Ability
+422|Provides momentum gains independent from Synaptic Leader, but also prevents this unit from gaining Synaptic Leader bonuses. Stacks with other Genestealer units up to {0} times.|Ability - Description (Brood Telepathy Status)|Ability
+423|Unit cannot use the Fallback action.|Ability - Description (Fearless)|Ability
+424|Amongst the most noble of the Space Marine chapters, the Blood Angels wrestle with a dark curse within their own blood. They are a fast moving faction that excels at melee and assault tactics.|Lore - Blood Angels|Faction
+425|Driven by the will of the their Hive Mind, Tyranids have only one, unstoppable directive: to feed. This xenos force relies on its synaptic leaders to improve the killing efficiency of its swarms.|Lore - Tyranids|Faction
+426|<i>An automatic variant of the Primaris bolt rifle, useful for clearing out swarms.</i>|Upgrade - Weapon Flavour Text (Auto Bolt Rifle)|Upgrade
+427|<i>A favoured relic from the Armoury, heavy with the history of countless battles past.</i>|Upgrade - Weapon Flavour Text (Thunder Hammer)|Upgrade
+428|<i>Allow none to escape our wrath.</i>|Upgrade - Weapon Flavour Text (Hand Flamer ASMs)|Upgrade
+429|<i>Exquisite melta pistols, given to the most trusted of brothers.</i>|Upgrade - Weapon Flavour Text (Inferno Pistol ASMs)|Upgrade
+430|<i>Improves the Inceptors threat profile against moderately armoured enemies.</i>|Upgrade - Weapon Flavour Text (Plasma Exterminator)|Upgrade
+431|<i>The Aggressor replaces the volley of the fragstorm launcher with a wall of flame spewed from their fists.</i>|Upgrade - Weapon Flavour Text (Flamestorm Gauntlet)|Upgrade
+432|<i>A marksman's instinct is needed to make the one shot count.</i>|Upgrade - Weapon Flavour Text (Heavy Plasma Incinerator)|Upgrade
+433|<i>The gunner's priority changes from crowd control to high-profile armour hunter.</i>|Upgrade - Weapon Flavour Text (Multimelta Land Speeder)|Upgrade
+434|<i>Larger promethium tanks gives these mounted flamers a greater reach than handheld variants.</i>|Upgrade - Weapon Flavour Text (Heavy Flamer Land Speeder Tornado)|Upgrade
+435|<i>Few can stand against the cleansing torrent of flame.</i>|Upgrade - Weapon Flavour Text (Flamestorm Cannon)|Upgrade
+436|<i>The Dreadnought roars in defiance, surrounded by the burning corpses of his foes.</i>|Upgrade - Weapon Flavour Text (Heavy Flamer Dreadnought)|Upgrade
+437|<i>An anti-armour meltagun crafted specifically for the venerable dreadnought.</i>|Upgrade - Weapon Flavour Text (Meltagun Dreadnought)|Upgrade
+438|<i>Only their hate burns brighter.</i>|Upgrade - Weapon Flavour Text (Hand Flamer Death Company)|Upgrade
+439|<i>With fire and blade we will purge the unclean.</i>|Upgrade - Weapon Flavour Text (Hand Flamer Seraphim)|Upgrade
+440|<i>It is not just the Blood Angels that have mastered these pistol sized meltaguns.</i>|Upgrade - Weapon Flavour Text (Inferno Pistol Seraphim)|Upgrade
+441|<i>The hum of the blade is but one more harmony in her song of devotion.</i>|Upgrade - Weapon Flavour Text (Power Sword Verity)|Upgrade
+442|Leaps at an enemy {0} tiles away, dealing melee damage with +{1} armor piercing. This counts as a charge attack.<br>Will not provoke a pistol reaction.|Ability - Description (Leap - Level 2)|Ability
+443|Warning: Deals Friendly Fire|Ability Description - Additional Warning|Ability
+444|The unit sacrifices its Movement Points to make a ranged attack with +{0} Armour Piercing and +{1}% Critical Chance per MP spent.|Ability - Description (Adaptive Targeting)|Ability
+445|{0}% chance to trigger when this unit kills an enemy model. Can only apply once per turn.|Ability Description (Natural Killer)|Ability
+446|<i>Purge the unclean!</i>|Upgrade - Weapon Flavour Text (Adepta Sororitas Plasma Pistol)|Upgrade
+447|Affects all allies within a range of {0} tile<br><br>{1}|Ability - Description|Ability
+448|Either gives a ranged or melee bonus to allies within {0} tiles. Use this ability to switch modes<br><br>Ranged Bonus<br>{1}<br><br>Melee Bonus<br>{2}<br><br>Adds an additional bonus to allies within {3} tiles<br>{4}|Ability - Description (Stratgic Adaptation Empowered)|Ability
+449|Blinds and poisons the enemy with a ranged attack.|Ability - Description (Blinding Venom)|Ability
+450|Gravis Jump Pack|Status Effect|Ability
+451|Makes a ranged attack with +{0}% Damage and +{1} Armor Piercing, but each model has a {2}% chance of taking {3} damage|Supercharged ability description|Ability
+452|Affects casting unit<br><br>{0}<br>Will not provoke pistol reactions when charging|Abillity - Description (Jump Pack, Wings of Sanguinius)|Ability
+453|Cancel Anti-Grav Uplift|Ability - Cancel Description (Anti-Grav Uplift)|Ability
+454|Exhausted|Status Effect (after using burrow ability)|Ability
+455|Affects casting unit<br><br>{0}<br><br>Effect lasts for an additional turn|Ability Description - Seraphim Wings Empowered|Ability
+456|Heals a single target ally now, and again at the start of its next turn. Health gained is shared between all models in a unit.|Ability Description - Catalyst|Ability
+457|Stacks with each adjacent Swarm Tactics unit, to a maximum of {0} stacks.|Ability Description - Swarm Tactics|Ability
+458|Lightning Claws|Weapon Type (Blood Angels Assault Terminator)|Weapon
+459|Thunder Hammer & Storm Shield|Weapon Type (Blood Angels Assault Terminator)|Weapon
+460|Angelus Boltgun|Weapon Type (Blood Angels Sanguinary Guard)|Weapon
+461|Encarmine Axe|Weapon Type (Blood Angels Sanguinary Guard)|Weapon
+462|Encarmine Sword|Weapon Type (Blood Angels Sanguinary Guard)|Weapon
+463|Monstrous Rending Claws|Weapon Type (Tyranid Broodlord)|Weapon
+464|Shockcannon|Weapon Type (Tyranid Hive Guard)|Weapon
+465|Impaler Cannon|Weapon Type (Tyranid Hive Guard)|Weapon
+466|Broodlord|Unit Type (Tyranid Broodlord)|Unit
+467|Tyranid Broodlord|Unity Type (Tyranid Broodlord)|Unit
+468|Hive Guard|Unit Type (Tyranid Hive Guard)|Unit
+469|Tyranid Hive Guard|Unit Type (Tyranid Hive Guard)|Unit
+470|Assault Terminators|Unit Type (Blood Angels Assault Terminator)|Unit
+471|Blood Angels Assault Terminators|Unit Type (Blood Angels Assault Terminator)|Unit
+472|Sanguinary Guard|Unit Type (Blood Angels Sanguinary Guard)|Unit
+473|Blood Angels Sanguinary Guard|Unit Type (Blood Angels Sanguinary Guard)|Unit
+474|Shard-beast Spines|Ability Weapon Status Effect|Ability
+475|Shockcannon Spines|Ability Weapon Status Effect|Ability
+476|Terminator Deep Strike|Ability Title|Ability
+477|Teleports the unit up to {0} tiles. Teleport location must be within visual range and cannot be adjacent to an enemy.<br><br>Unit gains {3} for one turn after teleporting.<br><br>Charges: {1}/{2}|Ability Descripion (Terminator TeleportBeacon)|Ability
+478|Storm Shield|Ability Weapon Status Effect|Ability
+479|Evolved Brood Telepathy|Ability Title|Ability
+480|Paroxysm|Ability Title / Status Effect|Ability
+481|Overloads the nervous system of a single target unit within {0} tiles, dealing {1} psychic damage and preventing all reactive attacks (including Overwatch).<br><br>{2}<br>Removes all Overwatch stacks|Ability Description (Paroxysm)|Ability
+482|This unit gains {0} bonus momentum for melee kills and {1} bonus momentum for ranged kills.<br><br>{2}|Ability Description (Endless Hunger / Armed To Da Teef )|Ability
+483|Heirs of Azkaellon|Ability Title / Status Effect|Ability
+484|Our Blood Ignites!|Status Effect|Ability
+485|Affects casting unit<br><br>{0}|Ability description (Heirs of Azkaellon)|Ability
+486|Double all effects while unit is adjacent to HQ Commander|Ability description (Heirs of Azkaellon)|Ability
+487|<i>To this day, Azkaellon is honoured as the chosen of Sanguinius; the Guard uphold his name and his duty.</i>|Upgrade - Ability flavour text (Heirs of Azkaellon)|Upgrade
+488|<i>Plasma is always an option.</i>|Upgrade - Weapon flavour text (Plasma Pistol)|Upgrade
+489|<i>Neither daemon hide nor plated armour can withstand such wrath.</i>|Upgrade - Weapon flavour text (Inferno Pistol)|Upgrade
+490|<i>It takes a thousand battles to wield an axe with the grace it deserves.</i>|Upgrade - Weapon flavour text (Encarmine Axe)|Upgrade
+491|<i>Wherever we are sent, that battle is already won.</i>|Upgrade - Abliity flavour text (Teleport Beacon)|Upgrade
+492|<i>Immovable. Impenetrable. Indomitable.</i>|Upgrade - Weapon (Storm Shield)|Upgrade
+493|Teleported|Status Effect|Ability
+494|Necron Warriors|Unit Name (long)|Unit
+495|Gauss Flayer|Weapon (Necron Warriors)|Weapon
+496|Gauss Reaper|Weapon (Necron Warriors)|Weapon
+497|Dynasty of Living Metal|Faction Trait Title|Ability
+498|Reanimation Protocols|Ability Title|Ability
+499|Necrons|Faction Title|Faction
+500|Flayed Ones|Unit Name Short|Unit
+501|Necron Flayed Ones|Unit Name Long|Unit
+502|Flesh Hunger|Ability Title (Flayed Ones)|Ability
+503|Flayer Claws|Weapon (Flayed Ones)|Weapon
+504|Skorpekh Destroyer|Unit Name Short|Unit
+505|Necron Skorpekh Destroyer|Unit Name Long|Unit
+506|Plasmacyte Infusion|Ability Title (Skorpehk Destroyer)|Ability
+507|Hyperphase Threshers|Weapon (Skorpehk Destroyer)|Weapon
+508|Hyperphase Reap-blade|Weapon (Skorpehk Destroyer)|Weapon
+509|Hexmark Destroyer|Unit Name Short|Unit
+510|Necron Hexmark Destroyer|Unit Name Long|Unit
+511|Enmitic Disintegrator Pistols|Weapon (Hexmark Destroyer)|Weapon
+512|Multi-Threat Eliminator|Ability Title (Hexmark Destroyer)|Ability
+513|Target Optimisation|Ability Title (Hexmark Destroyer)|Ability
+514|Immortals|Unit Name Short|Unit
+515|Necron Immortals|Unit Name Long|Unit
+516|Living Lightning|Ability Title|Ability
+517|Gauss Blaster|Weapon (Immortals)|Weapon
+518|Tesla Carbine|Weapon (Immortals)|Weapon
+519|Deathmarks|Unit Name Short|Unit
+520|Necron Deathmarks|Uni Name Long|Unit
+521|Synaptic Disintegrator|Weapon (Deathmarks)|Weapon
+522|Hunter's Mark|Ability Title (Deathmarks)|Ability
+523|Dimensional Translocation|Ability Title (Deathmarks)|Ability
+524|Triarch Praetorian|Unit Name Short|Unit
+525|Necron Triarch Praetorian|Unit Name Long|Unit
+526|Rod of Covenant|Weapon (Triach Praetorian)|Weapon
+527|Gravity Displacement Pack|Ability Title (Triach Praetorian)|Ability
+528|Firstborn Marines|Upgrade - Title|Upgrade
+529|Gauss Destructor|Weapon (Lokhust Destroyer)|Weapon
+530|Enmitic Exterminator|Weapon (Lokhust Destroyer)|Weapon
+531|Hover|Ability Title|Ability
+532|Lokhust Heavy Destroyers|Unit Name Short|Unit
+533|Necron Lokhust Heavy Destroyers|Unit Name Long|Unit
+534|Makes a rage fueled charge attack, but with a chance to kill one of the Destroyers.<br><br>Melee Damage +{0}%<br>Crit Chance +{1}%<br>{2}% chance that a Destroyer model is killed|Ability (Plasmacyte Infusion)|Ability
+535|Twin Gauss Blaster|Weapon (Tomb Blades)|Weapon
+536|Particle Beamer|Weapon (Tomb Blades)|Weapon
+537|Twin Tesla Carbine|Weapon (Tomb Blades)|Weapon
+538|Tomb Blades|Unit Name Short|Unit
+539|Necron Tomb Blades|Unit Name Long|Unit
+540|Evasion Engram|Ability Title (Tomb Blades)|Ability
+541|Nebuloscope|Ability Title (Tomb Blades)|Ability
+542|This unit gains bonus momentum at the end of its turn if it has moved away from its starting position.|Ability Description - Dynasty of Living Metal|Ability
+543|Overlord|Unit Name Short|Unit
+544|Necron Overlord|Unit Name Long|Unit
+545|Warscythe|Weapon (Overlord)|Weapon
+546|Staff of Light|Weapon (Overlord)|Weapon
+547|Hyperphase Glaive|Weapon (Overlord)|Weapon
+548|Phase Shift|Ability Title (Overlord)|Ability
+549|Orb of Resurrection|Ability Title (Overlord)|Ability
+550|Command Protocol|Ability Title (Overlord)|Ability
+551|Veil of Darkness|Ability Title (Overlord)|Ability
+552|Plasmancer|Unit Name Short|Unit
+553|Necron Plasmancer|Unit Name Long|Unit
+554|Plasmic Lance|Weapon (Plasmancer)|Weapon
+555|Quantum Orb|Ability Title (Plasmancer)|Ability
+556|Harbinger of Destruction|Ability Title (Plasmancer)|Ability
+557|Tesla Weave Discharge|Ability Tityle (Plasmancer)|Ability
+558|Lychguard|Unit Name Short|Unit
+559|Necron Lychguard|Unit Name Long|Unit
+560|Hyperphase Sword & Dispersion Shield|Weapon (Lychguard)|Weapon
+561|Guardian Protocols|Ability Title (Lychguard)|Ability
+562|Dispersion Shield|Ability Title (Lychguard)|Ability
+563|Reclaim the galaxy|Faction Slogan (Necrons)|Faction
+564|The Necrons are a deathless race of living metal androids, wielding the power of stars to slay the lesser races. A slow-paced faction with devastating ranged options, victory for the Necron's endless march is inevitable.|Faction Description (Necrons)|Faction
+565|Hyperphase Sword|Weapon abbreviated (Lychguard)|Weapon
+566|Gives a {1}% chance to revive up to {2} model(s) from this unit with {0}% health once per turn.|Ability Description (Reanimation Protocol)|Ability
+567|Canoptek Scarab Swarm|Unit Name Short|Unit
+568|Necron Canoptek Scarab Swarm|Unit Name Long|Unit
+569|Feeder Mandibles|Weapon (Canoptek Scarab Swarm)|Weapon
+570|Self-Destruct Protocol|Ability Title (Canoptek Scarab Swarm)|Ability
+571|Annihilation Barge|Unit Name Short|Unit
+572|Necron Annihilation Barge|Unit Name Long|Unit
+573|Gauss Cannon|Weapon (Annihilation Barge)|Weapon
+574|Tesla Cannon|Weapon (Annihilation Barge)|Weapon
+575|Twin Tesla Destructor|Weapon (Annihilation Barge)|Weapon
+576|Quantum Shielding|Ability Title (Annihilation Barge)|Ability
+577|Marks the target for death, giving this unit bonus accuracy and critical chance against the target. Only one mark can be set at a time.<br><br>{0}|Ability Description (Hunter's Mark)|Ability
+578|Teleports the unit up to {0} tiles. Teleport location must be within visual range. <br><br>Charges: {1}/{2}|Ability Description (Dimensional Oubliette)|Ability
+579|Scarab Tempest|Ability Title (Necron HQ)|Ability
+580|Tesla Lightning Storm|Ability Title (Necron HQ)|Ability
+581|Scything Death Ray|Ability Title (Necron HQ)|Ability
+582|Their hunger grows...<br><br>Has a {0}% to gain a stack when this unit kills an organic model. Max {1} stacks.|Ability Description (Flayed One Flesh Hunger)|Ability
+583|The Overlord manipulates reality itself to create a protective barrier.|Ability Description (Overlord Phase Shift)|Ability
+584|Summons a unit of Necron Warriors.|Ability Description (Overlord Orb of Resurrection)|Ability
+585|Protocol of Passing Seasons|Status Effect Title (Overlord Command Protocol)|Ability
+586|Protocol of Unbending Will|Status Effect Title (Overlord Command Protocol)|Ability
+587|Protocol of the Infinite Horizon|Status Effect Title (Overlord Command Protocol)|Ability
+588|Toggle between two command protocols<br><br>Protocol of Passing Seasons<br>{0}<br><br>Protocol of Unbending Will<br>{1}|Ability Description (Overlord Command Protocols)|Ability
+589|Toggle between two command protocols and adds the Protocol of the Infinite Horizon to all units within {0} tiles.<br><br>Protocol of Passing Seasons<br>{1}<br><br>Protocol of Unbending Will<br>{2}<br><br>Protocol of the Infinite Horizon<br>{3}|Ability Description (Empowered Overlord Command Protocols)|Ability
+590|The Overlord steps between realities to teleport up to {0} tiles.|Ability Description (Overlord Veil of Darkness)|Ability
+591|The Plasmancer unseals the safeties from this ancient device, unleashing a devastating pillar of pure energy to targets within {0} tiles. Deals {1} damage with {2} armour piercing on the centre target, and {3} damage with {4} armour piercing to adjacent targets.|Ability Description (Quantum Orb)|Ability
+592|Channels growing destructive energies outwards into an annihilatory beam, dealing {0} splash damage with {1} armour piercing and {2}% accuracy to all targets along the beam.|Ability Description (Harbinger of Destruction)|Ability
+593|Arcs power to all nearby ally units within {0} tile.<br><br>{1}|Ability Description (Tesla Weave Discharge)|Ability
+594|Arcs power to all nearby ally units within {0} tiles.<br><br>{1}|Ability Description (Tesla Weave Discharge Empowered)|Ability
+595|Guardian Protocols Disabled|Ability Floating Text (Guardian Protocols)|Ability
+596|Reaction Intercession for nearby HQ Command unit targeted by Ranged Attacks.|Ability Status Description (Guardian Protocols)|Ability
+597|Swaps places with the HQ Command unit when they're attacked by ranged weapons, provided the HQ Command unit is within {1} tiles. This unit will then take all damage intended for the HQ Command unit.<br><br>{0}|Ability Description (Guardian Protocols and Oath of Protection)|Ability
+598|Targets up to {0} units with a single attack, at the expense of slower attack speeds and decreased ranged accuracy.<br><br>{1}|Ability Description (Multi-Threat Eliminator)|Ability
+599|Allows ranged attacks to auto hit. Drains movement points and boosts critical chance per movement point spent.<br><br>{0}|Ability Description (Target Optimisation)|Ability
+600|Starts a melee attack with splash damage, but sacrifices the Scarabs in the process.|Ability Description (Self-Destruct Protocol)|Ability
+601|Endless March|Status Effect Title|Status
+602|This unit will gain bonus Momentum at the end of the turn.|Status Effect Description|Status
+603|Spawns {0} units at the target tile. If there is an enemy at the tile, a charge attack will be done and an additional {0} unit will attack the enemy. If the tile is empty, an additional {0} unit will be spawned in a random adjacent tile.|Ability Description (Scarabs Tempest)|Ability
+604|The Doom Scythe sweeps overhead, blasting {0} targets with its Twin Tesla Destructors. Deals {1} damage with {2} armour piercing.|Ability Description (Telsa Lightning Storm)|Ability
+605|Warning: Deals Friendly Fire<br>Fires at 4 tiles in a line, dealing {0} damage per shot with an armor piercing value of {1}.|Ability Description (Scything Death Ray)|Ability
+606|Penitent Engine|Unit Name Short|Unit
+607|Adepta Sororitas Penitent Engine|Unit Name Long|Unit
+608|Torment Amplifiers|Ability Title (Penitent Engine)|Ability
+609|Penitent Buzz-blades|Weapon (Penitent Engine)|Weapon
+610|Twin Heavy Flamers|Weapon (Penitent Engine)|Weapon
+611|Hellblade|Weapon (Bloodletter)|Weapon
+612|Gore-drenched Fangs|Weapon (Flesh Hounds)|Weapon
+613|Skull Cannon|Weapon (Skull Cannon)|Weapon
+614|Blade of Blood|Weapon (Blood Master)|Weapon
+615|Bloodletter|Unit Short Name|Unit
+616|Khorne Bloodletter|Unit Long Name|Unit
+617|Flesh Hound|Unit Short Name|Unit
+618|Khorne Flesh Hound|Unit Long Name|Unit
+619|Bloodmaster|Unit Short Name|Unit
+620|Herald of Khorne Bloodmaster|Unit Long Name|Unit
+621|Skull Cannon|Unit Short Name|Unit
+622|Khorne Skull Cannon|Unit Long Name|Unit
+623|Blood for the Blood God!|Khorne faction slogan|Facton
+624|Malevolent creatures spewed forth from the Warp, Chaos Daemons of Khorne are a fast moving, melee-focussed faction. They surge across the battlefield in search of blood to spill as a tithe to their master, the Lord of Rage.|Khorne faction description|Faction
+625|Unstoppable Ferocity|Ability Name|Ability
+626|Daemonic Ritual|Abiltiy Name|Ability
+627|Locus of Khorne|Ability Name|Ability
+628|Murderous Tide|Ability Name|Ability
+629|Scent of Blood|Ability Name|Ability
+630|Burning Roar|Ability Name|Ability
+631|Bound in Brass and Bone|Ability Name|Ability
+632|Crushing Gorefest|Ability Name|Ability
+633|Increases Evasion after being attacked by Overwatch or Reactive Fire.<br>|Ability Description (Unstoppable Ferocity)|Ability
+634|Spawns a Khorne Daemon unit within {0} tile(s).|Ability Description (Daemonic Ritual)|Ability
+635|Increases the Armour by {0}, Armour Penetration by {1} and Damage by {2}% for ally Khorne Daemons units within {3} tiles.|Ability Description (Locus of Khorne)|Ability
+636|Increases the Crit Chance by {0}% for each ally Bloodletter unit in an adjacent tile|Ability Description (Murderous Tide)|Ability
+637|Performs a charge attack against a singular organic enemy, with {0} bonus movement points.<br><br>Gives bonus during attack<br>{1}|Ability Description (Scent of Blood)|Ability
+638|Performs a sonic attack against an enemy within {0} tiles at {1} Armour Penetration for {2} shots at {3} damage per shot.|Ability Description (Burning Roar)|Ability
+639|Decreases damage taken by {0}%|Abiltiy Description (Bound in Brass and Bone)|Ability
+640|Affects casting unit|Ability Description (generic)|Ability
+641|Tactical Abilities|Catch-all turn for abilities like Battleline Tactics, Assault Tactics|Ability
+642|Plasma Weapon Upgrades|Tech Tree label for several plasma weapons|Weapon
+643|Grenades|Tech Tree label for unlocking several types of grenades|Ability
+644|Melta Weapon Upgrades|Tech Tree label for several melta weapons upgrades|Weapon
+645|Melee Power Weapons|Tech Tree label for several melee power weapon|Weapon
+646|Condemnor Boltgun|Weapon (Canoness)|Weapon
+647|Blessed Blade|Weapon (Canoness)|Weapon
+648|Arco-flails|Weapon (Acro Flagellants)|Weapon
+649|Penitent Eviscerator|Weapon (Repentia)|Weapon
+650|Hallowed Mace|Weapon (Sacresants)|Weapon
+651|Paragon War Blade|Weapon (Paragon Warsuit)|Weapon
+652|Missile Launcher|Weapon (Exorcist)|Weapon
+653|Immolation Flamers|Weapon (Immolator)|Weapon
+654|Twin Heavy Bolter|Weapon (Immolator)|Weapon
+655|Twin Multimelta|Weapon (Immolator)|Weapon
+656|Canoness|Unit Name Short|Unit
+657|Adepta Sororitas Canoness|Unit Name Long|Unit
+658|Hospitaller|Unit Name Short|Unit
+659|Adepta Sororitas Hospitaller|Unit Name Long|Unit
+660|Arco Flagellants|Unit Name Short|Unit
+661|Adepta Sororitas Arco Flagellants|Unit Name Long|Unit
+662|Celestians|Unit Name Short|Unit
+663|Adepta Sororitas Celestians|Unit Name Long|Unit
+664|Sisters Repentia|Unit Name Short|Unit
+665|Adepta Sororitas Sisters Repentia|Unit Name Long|Unit
+666|Celestian Sacresants|Unit Name Short|Unit
+667|Adepta Sororitas Celestian Sacresants|Unit Name Long|Unit
+668|Retributors|Unit Name Short|Unit
+669|Adepta Sororitas Retributors|Unit Name Long|Unit
+670|Paragon Warsuits|Unit Name Short|Unit
+671|Adepta Sororitas Paragon Warsuits|Unit Name Long|Unit
+672|Rhino|Unit Name Short|Unit
+673|Adepta Sororitas Rhino|Unit Name Long|Unit
+674|Exorcist|Unit Name Short|Unit
+675|Adepta Sororitas Exorcist|Unit Name Long|Unit
+676|Immolator|Unit Name Short|Unit
+677|Adepta Sororitas Immolator|Unit Name Long|Unit
+678|Transport|Ability Title|Ability
+679|Oath of Protection|Ability Title|Ability
+680|Glorious Incantation|Ability Title|Ability
+681|Word of Contempt|Ability Title|Ability
+682|Honour the Martyrs|Ability Title|Ability
+683|Rosarius|Ability Title|Ability
+684|Storm of Retribution|Ability Title|Ability
+685|Sacresant Shield|Ability Weapon Status Effect|Ability
+686|Martyrdom|Ability Title|Ability
+687|Zealous Frenzy|Ability Title|Ability
+688|Medicus|Ability Title|Ability
+689|Rites of Intercession|Ability Title|Ability
+690|Self Repair|Ability Title|Ability
+691|Devastating Refrain|Ability Title|Ability
+692|Hunter-Killer Missile|Ability Title|Ability
+693|Paragon Grenade Launcher|Ability Title|Ability
+694|Flamer|Weapon|Weapon
+695|On Death apply effect to all ally units|Ability Status Description (Canoness)|Ability
+696|The unit sacrifices all of its remaining movement points, and makes a ranged attack command with +{0}% additional attacks and +{1} armor piercing per MP spent.|Ability Description|Ability
+697|Charges the enemy.<br><br>{0}<br><br>Allies within {1} tiles gain {2} momentum per fallen martyr.|Ability Description - Martyrdom|Ability
+698|The unit sacrifices all of its remaining movement points, and makes a ranged attack command with additional armour piercing and damage for every MP spent.|Ability Description - Devastating Refrain|Ability
+699|Fires a missile dealing {0} damage with {1} armor piercing and a maximum range of {2}.|Ability Description - Hunter Killer Missile|Ability
+700|The militant arm of the Ecclesiarchy, the Adepta Sororitas are warriors of ferocious zeal who devote their lives to service in the name of the Master of Mankind.|Faction description|Faction
+701|Remove all negative status effects.<br>+{0} Health|Ability Description|Ability
+702|Adds {0} AP to an ally unit (excluding vehicles, walkers and Arco-Flagellants) within {1} tile(s).|Ability Description - Rites of Intercession|Ability
+703|Spirit of the Emperor|Ability Title|Ability
+704|Divine Guidance|Ability Title|Ability
+705|Righteous Judgement|Ability Title|Ability
+706|Bloodthirster|Unit Name Short|Unit
+707|Khorne Bloodthirster|Unit Name Long|Unit
+708|Great Axe of Khorne|Weapon (Bloodthirster)|Weapon
+709|Greater Daemon|Ability Title|Ability
+710|Insensate Rage|Ability Title|Ability
+711|Dreadful Wings|Ability Title|Ability
+712|Soul Grinder|Unit Name Short|Unit
+713|Khorne Soul Grinder|Unit Name Long|Unit
+714|Harvester Cannon|Weapon (Soul Grinder)|Weapon
+715|Warpsword|Weapon (Soul Grinder)|Weapon
+716|Warpclaw|Weapon (Soul Grinder)|Weapon
+717|Iron Claw|Ability Title|Weapon
+718|Bloodcrusher|Unit Name Short|Unit
+719|Khorne Bloodcrusher|Unit Name Long|Unit
+720|Devastating Charge|Ability Title|Ability
+721|Adepta Sororitas who witness the death of a Canoness are driven to greater acts of courage and sacrifice.<br>|Ability Description - Honour the Martyr|Ability
+722|Performs a crushing attack with the Soul Grinders' Iron Claw that does {0} damage with {1} armour piercing and additional splash damage.|Ability Description - Iron Claw|Ability
+723|Boon of Khorne|Status Effect name|Ability
+724|<i>The presence of a Bloodthirster invokes nearby daemons to greater acts of violence and bloodshed.</i><br>|Ability Description - Greater Daemon|Ability
+725|<i>With a thunderous roar the Bloodthirster's fury and lust for blood reaches a new level of apoplexy.</i><br><br>Increases melee damage for {0} turn by {1}%, as well as performing a psychic attack on all enemy units within {2} tiles for {3} psychic damage and {4} momentum damage.|Ability Description - Insensate Rage|Ability
+726|<i>Carried on massive wings, the Bloodthirster quickly traverses the battlefield to slaughter in the name of Khorne.</i>|Ability Description - Dreadful Wings|Ability
+727|Cancel Dreadful Wings|Ability Title (Cancel)|Ability
+728|<i>The Hospitaller calmly calls upon another of her Sisters to act on her behalf</i>|Ability Flavour Text - Rites of Intercession|Ability
+729|<i>Through the fog of war, we bring forth the Emperors judgment</i>|Ability Flavour Text - Smokescreen|Ability
+730|<i>The Sororitas are imbued with a boundless font of vigour.</i>|HQ Command Flavour Text - Spirit of the Emperor|Ability
+731|<i>Seeing the weaknesses in the enemies’ defenses, the Sisters of Battle strike with unerring accuracy</i>|HQ Command Flavour Text - Divine Guidance|Ability
+732|<i>The Sororitas are filled with a burning passion to bring the Emperor’s judgements upon His enemies.</i> |HQ Command Flavour Text - Righteous Judgement|Ability
+733|<i>With feet firmly planted and disdain burning in their hearts, the Retributors purge the galaxy of heresy</i>|Ability Flavour Text - Storm of Retribution|Ability
+734|<i>Only in death can redemption be found</i>|Ability Flavour Text - Martydom|Ability
+735|<i>The artillerist plays a hymn of such potent worship that the Exorcist’s machine-spirit is invigorated to further annihilate the enemy.</i>|Ability Flavour Text - Devastating Refrain|Ability
+736|<i>Whipped into a frenzy, Arco-flagellants hurl themselves headlong into the enemy.</i>|Ability Flavour Text - Zealous Frenzy|Ability
+737|<i>The Canoness’ condemnation rings out across the battlefield, shaking the target of her contempt to their very core</i>|Ability Flavour Text - Word of Contempt|Ability
+738|<i>This thrice-blessed payload soars high before raining death on the Emperor's foes</i>|Ability Flavour Text - Hunter-killer missile|Ability
+739|<i>What few nerve inhibitors left are removed, smashing the pilot with the full extent of the chemical amplifiers spliced into their nervous system. </i>|Ability Flavour Text - Torment Amplifiers|Ability
+740|<i>No harm can befall those touched by the Emperor.</i>|Ability Flavour Text - Glorius Incantation|Ability
+741|Cancel Oath of Protection|Ability Title (Cancel|Ability
+742|Swaps places with the HQ Command unit when they're attacked by melee or ranged weapons, provided the HQ Command unit is within {1} tiles. This unit will then take all damage intended for the HQ Command unit.<br><br>{0}|Ability Description|Ability
+743|Infusion of Vitality|Ability Title|Ability
+744|Quickened|Ability Title|Ability
+745|Sharpshooter|Ability Title|Ability
+746|Hardened Armour|Ability Title|Ability
+747|Agent of Destruction|Ability Title|Ability
+748|Elusive Target|Ability Title|Ability
+749|Brutal Duelist|Ability Title|Ability
+750|Efficient Killer|Ability Title|Ability
+751|Force Multiplier|Ability Title|Ability
+752|Battle Ready|Status Effect title|Ability
+753|Daemon Prince|Unit Name Short|Unit
+754|Khorne Daemon Prince|Unit Name Long|Unit
+755|Chaos Cultists|Unit Name Short|Unit
+756|Khorne Chaos Cultists|Unit Name Long|Unit
+757|Malefic Talons|Ability Title|Ability
+758|Might Over Magic|Ability Title|Ability
+759|Hellforged Sword|Weapon (Daemon Prince)|Weapon
+760|Daemonic Axe|Weapon (Daemon Prince)|Weapon
+761|Cultist Autogun|Weapon (Chaos Cultists)|Weapon
+762|Heavy Stubber|Weapon (Chaos Cultists)|Weapon
+763|Warbiker|Unit Name Short|Unit
+764|Ork Warbiker|Unit Name Long|Unit
+765|Dakkagun|Weapon (Warbiker)|Weapon
+766|Cloud of Smoke|Ability Title|Ability
+767|Big Red Button|Ability Title|Ability
+768|Boyz|Unit Name Short|Unit
+769|Ork Boyz|Unit Name Long|Unit
+770|Shoota|Weapon|Weapon
+771|Big Shoota|Weapon|Weapon
+772|Rokkit Launcha|Weapon|Weapon
+773|Stikkbombz|Ability Title|Ability
+774|Get Stuck In|Ability Title|Ability
+775|Mob Rule|Ability Title|Ability
+776|Stormboyz|Unit Name Short|Unit
+777|Ork Stormboyz|Unit Name Long|Unit
+778|Slugga|Weapon|Weapon
+779|Choppa|Weapon|Weapon
+780|Rokkit Pak|Ability Title|Ability
+781|Stormboyz Strike|Ability Title|Ability
+782|Armed To Da Teef|Ability Title (Ork faction trait)|Ability
+783|Burna Boyz|Unit Name Short|Unit
+784|Ork Burna Boyz|Unit Name Long|Unit
+785|Burna|Weapon|Weapon
+786|Pyromaniaks|Ability Title|Ability
+787|Deffkopta|Unit Name Short|Unit
+788|Ork Deffkopta|Unit Name Long|Unit
+789|Kopta Rokkits|Weapon|Weapon
+790|Kustom Mega-blasta|Weapon|Weapon
+791|Big Bomb|Ability Title|Ability
+792|Nobz|Unit Name Short|Unit
+793|Ork Nobz|Unit Name Long|Unit
+794|Big Choppa|Weapon|Weapon
+795|Power Klaw|Weapon|Weapon
+796|Hit 'em Harder|Ability Title|Ability
+797|Flash Gitz|Unit Name Short|Unit
+798|Ork Flash Gitz|Unit Name Long|Unit
+799|Snazzgun|Weapon|Weapon
+800|Flashy Krumpin'|Ability Title|Ability
+801|Meganobz|Unit Name Short|Unit
+802|Ork Meganobz|Unit Name Long|Unit
+803|Kustom Shoota|Weapon|Weapon
+804|Kombi-rokkit|Weapon|Weapon
+805|Kombi-skorcha|Weapon|Weapon
+806|Killsaw|Weapon|Weapon
+807|Orks|Faction Name|Faction
+808|Waaagh!|Faction Slogan|Faction
+809|The most relentlessly warlike race in the galaxy, Orks care little for self-preservation or battle strategy. Orks live for the joy of battle, and the next Waaagh!|Faction Lore|Faction
+810|Warboss|Unit Name Short|Unit
+811|Ork Warboss|Unit Name Long|Unit
+812|Attack Squig|Ability Title|Ability
+813|Weirdboy|Unit Name Short|Unit
+814|Ork Weirdboy|Unit Name Long|Unit
+815|Weirdboy Staff|Weapon|Weapon
+816|'Eadbanger|Ability Title|Ability
+817|Warpath|Ability Title|Ability
+818|Jabbin' Fingerz|Ability Title|Ability
+819|Big Mek|Unit Name Short|Unit
+820|Ork Big Mek|Unit Name Long|Unit
+821|Big Mekaniak|Ability Title|Ability
+822|Armour Boosta|Ability Title|Ability
+823|Kustom Force Field|Ability Title|Ability
+824|Painboy|Unit Name Short|Unit
+825|Ork Painboy|Unit Name Long|Unit
+826|Sawbonez|Ability Title|Ability
+827|Gretchin|Unit Name Short|Unit
+828|Ork Gretchin|Unit Name Long|Unit
+829|Grot Blasta|Weapon|Weapon
+830|Lootas|Unit Name Short|Unit
+831|Ork Lootas|Unit Name Long|Unit
+832|Shooty Deffgun|Weapon|Weapon
+833|Might Iz Right!|Ability Title|Ability
+834|Deff Dread|Unit Name Short|Unit
+835|Ork Deff Dread|Unit Name Long|Unit
+836|Dread Mob|Ability Title|Ability
+837|More Dakka!|Ability Title (HQ)|Ability
+838|Big Shoota Strafe|Ability Title (HQ)|Ability
+839|Boom Bomb|Ability Title (HQ)|Ability
+840|Dread Klaw|Weapon|Weapon
+841|Skorcha|Weapon|Weapon
+842|<i>Seeing the weaknesses in the enemy's defences, the Sisters of Battle within {0} tiles of the HQ Commander strike with unerring accuracy.</i>|Ability Description|Ability
+843|<i>The Sororitas within {0} tiles of the HQ Commander are imbued with a boundless font of vigour.</i>|Ability Description|Ability
+844|<i>The Battle Sisters within {0} tiles of the HQ Commander are filled with a burning passion to bring the Emperor’s judgements upon His enemies.</i>|Ability Description|Ability
+845|Flys over a target and drops a big bomb that does {0} damage at AP {1}, plus an additional {2} damage at AP {3} to the surrounding tiles. Warning: Deals Friendly Fire.|Ability Description|Ability
+846|The Warbiker emits a cloud of thick dark smoke, making for a harder target to hit|Ability Description|Ability
+847|The Warbike rider presses the Big Red Button, and the already speedy death machine kicks up a gear and travels even further.|Ability Description|Ability
+848|Da Boss Iz Watchin'|Status Effect|Ability
+849|Affects all units within {0} tiles of an Ork Warboss|Status Effect|Ability
+850|Fires a rokkit within a range of {0} tiles that causes {1} HP of blast damage to any models hit with armour piercing of {2}|Ability Description|Abilty
+851|'Ardened Case|Status Effect|Ability
+852|Immediately repairs {0} HP of damage to an ally vehicle, and gives +{1} Armour that lasts for {2} turns.|Ability Description|Ability
+853|Affects a single non-vehicle ally in an adjacent tile<br><br>{0}|Ability Description|Ability
+854|Beamy Deffgun|Weapon|Weapon
+855|Has a {0}% chance to heal {1} HP per model for an non-vehicle ally in an adjacent tile. On failure, a single model in the unit will take {2}HP damage.|Ability Description - Sawbonez|Ability
+856|Has a {0}% chance to heal {1} HP per model for an non-vehicle ally in an adjacent tile.|Ability Description - Sawbonez - Level 2|Ability
+857|Makes a ranged attack with an additional {0}% shots and +{1} Armour Piercing|Ability Description - Might Iz Right|Ability
+858|Stacks when within {0} tiles of other Deff Dreads, up to {1} stacks|Ability Description - Dread Mob|Ability
+859|Blinded|Ability Description|Ability
+860|The weirdboy focuses on an enemy within {0} tiles then jabs itself in the eye, leaving the target temporarily blinded. |Ability Description|Ability
+861|Fires a bolt of raw psychic energy that deals {0} HP of damage at {1} Armour Piercing.|Ability Description|Ability
+862|Decreases ranged damage received whilst within 2 tiles of a Big Mek with a Kustom Force Field|Status Effect Description|Ability
+863|Decreases damage received by the Big Mek by {0}% and ranged damage received by allies within {2} tiles by {1}%|Ability Description|Ability
+864|The HQ Commander channels the will of Gork and Mork to exhort allies within {0} tiles to lay down more fire.|Command ability description|Ability
+865|Squig|(Companion) Unit Name Short|Unit
+866|Ork Attack Squig|(Companion) Unit Name Long|Unit
+867|Squig Bite|Weapon|Weapon
+868|The snapping jaws of the Warboss's Attack Squig inflict {0} HP damage at {1} Armour Piercing.|Ability Description|Ability
+869|<i>Ork Boyz love nothin' more than getting stuck in to a good scrap!</i>|Ability Flavour Text - Get Stuck In|Ability
+870|<i>Crude but effective anti-infantry explosives</i>|Ability Flavour Text - Stikkbombz|Ability
+871|<i>With a flick of a switch the engine goes into overdrive and a cloud of billowing smoke shrouds the Warbiker</i>|Ability Flavour Text - Cloud of Smoke|Ability
+872|<i>The Warbike rider presses the Big Red Button and the speedy death machine kicks up a gear and travels even faster</i>|Ability Flavour Text - Big Red Button|Ability
+873|<i>Waaagh comes from the sky</i>|Ability Flavour Text - Stormboyz|Ability
+874|<i>Orky know-wotz to strengthen the armour of the ladz</i>|Ability Flavour Text - Armour Boosta|Ability
+875|<i>More dakka, 'cos might iz right</i>|Ability Flavour Text - Might Iz Right|Ability
+876|<i>Sometimes, ya just want ya Choppa to hit 'em harder</i>|Ability Flavour Text - Hit 'em Harder|Ability
+877|<i>Ya can never have enough dakka</i>|Ability Flavour Text - Flashy Krumpin'|Ability
+878|<i>The HQ Commander channels the will of Gork and Mork to exhort his charges to lay down more fire</i>|HQ Command Flavour Text - More Dakka|Ability
+879|<i>The Blitza-Bommer unleashes fusillades of deadly dakka from its Supa Shootas</i>|HQ Command Flavour Text - Big Shoota Strafe|Ability
+880|<i>Boom!</i>|HQ Command Flavour Text - Boom Bomb|Ability
+881|<i>Harness the energy of the Waaagh</i>|Ability Flavour Text - Warpath|Ability
+882|<i>Raw psychic power erupts from the Weirdboy, and foes head explodes</i>|Ability Flabour Text - 'ead banger|Ability
+883|Cancel Rokkit Pak|Ability cancellation|Ability
+884|Trukk Smasha|Status Effect|Ability
+885|Da Dok Iz In|Status Effect|Ability
+886|Applies {0} to all ally units within {1} tiles of an Ork Painboy|Status effect description|Ability
+887|A rending strike from razor-sharp claws that does {0} damage with {1} armour piercing and additional splash damage.|Ability Description - Malefic Talons|Ability
+888|Under the murderous gaze of the Daemon Prince, the smouldering rage of nearby Daemons is stoked into an inferno.<br><br>Melee Accuracy +{0}<br>Melee Damage +{1}%|Ability Description - Might Over Magic|Ability
+889|Infernal Cannon|Weapon|Weapon
+890|Aura of Terror|Ability Title (HQ)|Ability
+891|Echoes of Endless Fury|Ability Title (HQ)|Ability
+892|Blood Tithe|Ability Title (HQ)|Ability
+893|The HQ Commander uses the influence of the Warp to reduce its foes to a state of utter panic, frozen and less able to move or wield weaponry.|Ability Description (HQ)|Ability
+894|Khorne and his savage minions imbue white-hot anger and endless fury. Brutal waves of apoplexy resonate from the HQ Commander, draining the will to fight from the Legion's foes.<br><br>Removes all Overwatch stacks<br>{0} Momentum|Ability Description (HQ)|Ability
+895|Channelling the boundless font of anger and rage that emanates from the Lord of Skulls, the HQ Commander unleashes an attack from the Warp that inflicts {0} psychic damage across a wide area.|Ability Description (HQ)|Ability
+896|<i>The white-hot rage of Khorne</i>|Ability Flavour Text - Burning Roar|Ability
+897|<i>Crushes Dreadnoughts as easily as Space Marines</i>|Ability Flavour Text - Ironclaw|Ability
+898|<i>Khorne's Unstoppable Rage tramples all in its path</i>|Ability Flavour Text - Devastating Charge|Ability
+899|<i>The horrors of the Warp bring madness and terror to all</i>|Ability Flavour Text - Aura of Terror|Ability
+900|<i>The HQ Commander's apoplectic rage shatters the will to fight in every enemy of Khorne</i>|Ability Flavour Text - Echoes of Endless Fury|Ability
+901|<i>Blood for the Blood God, skulls for the Skull Throne</i>|Ability Flavour Text - Blood Tithe|Ability
+902|<i>The Daemon Prince lashes out, and his enemies fall</i>|Ability Flavour Text - Malefic Talons|Ability
+903|<i>The maw needs feeding</i>|Ability Flavour Text - Crushing Gorefeast|Ability
+904|<i>The very prescence of a Bloodthirster stokes the rage of the Daemonic horde</i>|Ability Flavour Text - Greater Daemon|Ability
+905|<i>Unrelenting anger, unending blood lust</i>|Ability Flavour Text - Insensate Rage|Ability
+906|<i>Only rage-filled battle can sate the appetite of the Blood Legions</i>|Ability Flavour Text - Might Over Magic|Ability
+907|<i>Summon the endless hordes of Chaos</i>|Ability Flavour Text - Daemonic Ritual|Ability
+908|T'au|Faction Name|Faction
+909|For the Greater Good|Faction Slogan|Faction
+910|T'au Commander|Unit Name Long|Unit
+911|Commander|Unit Name Short|Unit
+912|Battlesuit|Ability Title|Ability
+913|Master of War|Ability Title|Ability
+914|Hardened Armour|Ability Title|Ability
+915|High-speed Manoeuvres|Ability Title|Ability
+916|Drone Companion|Ability Title|Ability
+917|Shield Drone|Companion Unit - Ability|Ability
+918|Gun Drone|Companion Unit - Ability|Ability
+919|Marker Drone|Companion Unit - Ability|Ability
+920|XV85 Enforcer|Weapon - Battlesuit Loadout|Weapon
+921|XV86 Coldstar|Weapon - Battlesuit Loadout|Weapon
+922|Burst Cannon|Weapon|Weapon
+923|High-output Burst Cannon|Weapon|Weapon
+924|Cadre Fireblade|Unit Name Short|Unit
+925|T'au Cadre Fireblade|Unit Name Long|Unit
+926|Fireblade Pulse Rifle|Weapon|Weapon
+927|Volley Fire|Ability Title|Ability
+928|Target Sighted|Ability Title|Ability
+929|Ethereal|Unit Name Short|Unit
+930|T'au Ethereal|Unit Name Long|Unit
+931|Honour Stave|Weapon|Weapon
+932|Sense of Stone|Ability Title|Ability
+933|Zephyr's Grace|Ability Title|Ability
+934|Tactical Drones|Unit Name Short|Unit
+935|T'au Tactical Drones|Unit Name Long|Unit
+936|Pulse Carbine|Weapon|Weapon
+937|Markerlight|Ability Title|Ability
+938|Pathfinders|Unit Name Short|Unit
+939|T'au Pathfinders|Unit Name Long|Unit
+940|Ion Rifle|Weapon|Weapon
+941|Overcharge|Ability Title|Ability
+942|Fire Warrior Strike Team|Unit Name Short|Unit
+943|T'au Fire Warrior Strike Team|Unit Name Long|Unit
+944|Pulse Rifle|Weapon|Weapon
+945|Fire Warrior Breacher Team|Unit Name Short|Unit
+946|T'au Fire Warrior Breacher Team|Unit Name Long|Unit
+947|Pulse Blaster|Weapon|Weapon
+948|Breach and Clear|Ability Title|Ability
+949|Crisis Battlesuit Team|Unit Name Short|Unit
+950|T'au Crisis Battlesuit Team|Unit Name Long|Unit
+951|Fusion Blaster|Weapon|Weapon
+952|Missile Pod|Weapon|Weapon
+953|Jet-boost|Ability Title|Ability
+954|Stealth Battlesuit Team|Unit Name Short|Unit
+955|T'au Stealth Battlesuit Team|Unit Name Long|Unit
+956|Camouflage Field|Ability Title|Ability
+957|Broadside Battlesuit|Unit Name Short|Unit
+958|T'au Broadside Battlesuit|Unit Name Long|Unit
+959|Heavy Rail Rifle|Weapon|Weapon
+960|Crushing Bulk|Weapon|Weapon
+961|Advanced Targeting System|Ability Title|Ability
+962|Seeker Missile|Ability Title|Ability
+963|Smart Missile System|Ability Title|Ability
+964|Ghostkeel Battlesuit|Unit Name Short|Unit
+965|T'au Ghostkeel Battlesuit|Unit Name Long|Unit
+966|Fusion Collider|Weapon|Weapon
+967|Ghostkeel Fists|Weapon|Weapon
+968|Riptide Battlesuit|Unit Name Short|Unit
+969|T'au Riptide Battlesuit|Unit Name Long|Unit
+970|Heavy Burst Cannon|Weapon|Weapon
+971|Ion Accelerator|Weapon|Weapon
+972|Plasma Rifles|Weapon|Weapon
+973|Riptide Shield Generator|Ability Title|Ability
+974|Piranha|Unit Name Short|Unit
+975|T'au Piranha|Unit Name Long|Unit
+976|Hammerhead Gunship|Unit Name Short|Unit
+977|T'au Hammerhead Gunship|Unit Name Long|Unit
+978|Railgun|Weapon|Weapon
+979|Ion Cannon|Weapon|Weapon
+980|Performs a ranged attack that ignores partial cover|Ability Description - Breach and Clear|Ability
+981|Photon Grenade|Ability Title|Ability
+982|This unit gains {0} bonus momentum whenever an ally unit is killed.|Ability Description - For the Greater Good|Ability
+983|Paints the target with a sophisticated light-beam, providing allies within {0} tiles with increased accuracy against the target<br><br>{1}|Ability Description - Markerlight|Ability
+984|Makes a ranged attack with +{0}% damage, +{1} armor piercing, and additional splash damage, but each model has a {2}% chance of taking {3} damage.|Ability Description - Overcharge|Ability
+985|Ignores the melee engagement accuracy debuff|Ability Description - Battlesuit|Ability
+986|An anti-vehicle missile that deals {0} damage with {1} armour piercing at a maximum range of {2} tiles<br><br>Autohits Markerlight targets|Ability Description - Seeker Missile|Ability
+987|Affects all allies within {0} tiles of a T'au Commander|Ability Description - Master of War|Ability
+988|Cancel High-speed Manoeuvres|Tooltip Description|Ability
+989|Affects all allies within a range of {0} tiles<br><br>{1}|Ability Description - Sense of Stone/Zephyr's Grace|Ability
+990|Seeker Missile Strike|Ability Title (HQ)|Ability
+991|Battlesuit Strike|Ability Title (HQ)|Ability
+992|Orbital Ion Beam|Ability Title (HQ)|Ability
+993|Fires two anti-vehicle missiles at separate targets up to {0} tiles apart, each dealing {1} at {2} armour piercing.|Ability Description - Seeker Missile Strike (HQ)|Ability
+994|Spawns a Crisis Battlesuit team at the target tile.|Ability Description - Manta Strike (HQ)|Ability
+995|A blinding beam of white-hot energy strikes the target, also damaging the surrounding tiles. Deals {0} damage with {1} armour piercing on the centre target, and {2} damage with {3} armour piercing to adjacent targets.|Ability Description - Orbital Ion Beam (HQ)|Ability
+996|Blood Angels Invictor Warsuit|Unit Name Long|Unit
+997|Invictor Warsuit|Unit Name Short|Unit
+998|Incendium Cannon|Weapon|Weapon
+999|Twin Ironhail Autostubber|Weapon|Weapon
+1000|Twin Ironhail Autocannon|Weapon|Weapon
+1001|Invictor Fist|Weapon|Weapon
+1002|Does {0} Evasion and {1} Ranged Accuracy to the target, and {2} Evasion and {3} Ranged Accuracy to the surrounding tiles for {4} turn(s). Also removes overwatch stacks|Ability Description - Photon Grenade|Ability
+1003|<i>An AI-controlled drone unit that projects a shield that can repel enemy shots</i>|Ability Flavour Text - Drone Companion|Ability
+1004|<i>An AI-controlled drone unit equipped with twin Pulse Carbines</i>|Ability Flavour Text - Drone Companion|Ability
+1005|<i>An AI-controlled drone unit that can target-paint enemy units for increased accuracy against them</i>|Ability Flavour Text - Drone Companion|Ability
+1006|<i>A larger, and more heavily armoured variant of the Crisis Battlesuit</i>|Flavour Text - Battlesuit Loadout|Ability
+1007|<i>A highly advanced Battlesuit capable of incredible speed and agility</i>|Flavour Text - Battlesuit Loadout|Ability
+1008|<i>Leave only ashes behind.</i>|Flavour Text - Incendium Cannon Tech Tree|Weapon
+1009|Light-spectrum stealth technology makes the unit invisible for {0} turns. While invisible the unit cannot be attacked, and will not trigger reaction attacks or zone-of-control attacks|Ability Description - Camouflage Field|Ability
+1010|<i>Breach and clear</i>|Flavour Text - Photon Grenade|Ability
+1011|<i>No one can withstand such an onslaught</i>|Flavour Text - Volley Fire|Ability
+1012|<i>Swiftly and silently do the T'au move across the battlefield</i>|Flavour Text - Zephyr's Grace|Ability
+1013|<i>Death rains down from the sky</i>|Flavour Text - Seeker Missile Strike|Ability
+1014|<i>Expertise born of countless battles</i>|Flavour Text - Master of War|Ability
+1015|<i>There is nowhere to hide</i>|Flavour Text - Target Sighted|Ability
+1016|<i>Endurance through all hardship</i>|Flavour Text - Sense of Stone|Ability
+1017|<i>Reinforcements have arrived</i>|Flavour Text - Manta Strike|Ability
+1018|<i>Calculating firing solutions</i>|Flavour Text - Advanced Targeting System|Ability
+1019|<i>Nothing will survive</i>|Flavour Text - Orbital Ion Beam|Ability
+1020|<i>You can't kill what you can't see</i>|Flavour Text - Camouflage Field|Ability
+1021|Unwavering in their dedication. Unrelenting in their advance. The T'au Empire is young but ferocious, utilising advanced weaponry and towering Battlesuits to sweep aside any resistence to their promise of enlightenment and unity.|Faction Lore|Faction
+1022|Cancel Jet-boost|Ability Description|Ability0|Pulsespinho||

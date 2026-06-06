@@ -1,0 +1,1022 @@
+1|Lieutenant||
+2|Lieutenant Blood Angels||
+3|Intercessors||
+4|Intercessors Blood Angels||
+5|Termagant||
+6|Tyranide Termagant||
+7|Tyrannofex||
+8|Tyranide Tyrannofex||
+9|Archiviste||
+10|Archiviste Blood Angels||
+11|Frère Aeturo||
+12|Membres puissants||
+13|Escouade d'Assaut Blood Angels||
+14|Escouade d'Assaut||
+15|Sergent Carleon||
+16|Land Speeder Blood Angels||
+17|Land Speeder||
+18|Prêtre Sanguinien Blood Angels||
+19|Prêtre Sanguinien||
+20|Frère Aeturo||
+21|Hormagaunt Tyranide||
+22|Hormagaunt||
+23|Venomthrope Tyranide||
+24|Venomthrope||
+25|Jet d'acide||
+26|Creuse-chair||
+27|Pistolet bolter||
+28|Épée énergétique||
+29|Membres puissants||
+30|Épée tronçonneuse||
+31|Serres faucheuses||
+32|Bolter lourd||
+33|Canon d'assault||
+34|Lance-flamme lourd||
+35|Multifuseur||
+36|Fouet toxique||
+37|Lance-flammes léger||
+38|Fuseur||
+39|Soif Rouge||
+40|Réacteur dorsal||
+41|Précision tactique||
+42|Grâces de l'Ange||
+43|Épée de Sanguinius||
+44|Télémétrie de liaison de données||
+45|Élévation Anti-Gravité||
+46|Guérir votre Frère||
+47|Narthecium||
+48|Exhortation Juste||
+49|Accueillir le Sang||
+50|Nuées tactiques||
+51|Nuage de spores||
+52|Présence toxique||
+53|Annuler le saut||
+54|Accroît l'impulsion des alliés environnants de {0}||
+55|Guérit un seul allié mécanique dans un rayon de {0} case(s) de {1} PV.||
+56|Ravive le dernier membre de l'unité cible avec {0} de santé.||
+57|Applique {0} de dégâts aux unités ennemies environnantes||
+58|Applique un effet de statut aux cases à portée||
+59|Grenade Krak||
+60|Grenade Frag||
+61|Gantelet Boltstorm||
+62|Gantelet Flamestorm||
+63|Lance-grenades Fragstorm||
+64|Pistolet bolter d'excellente qualité||
+65|Créature synapse||
+66|Blood Angels||
+67|Tyranide||
+68|Adepta Sororitas||
+69|Démons du Chaos Khorne||
+70|Nécrons Mephrit||
+71|Tactiques de ligne de front||
+72|Fusil bolter||
+73|Fusil bolter automatique||
+74|Aggressors||
+75|Aggressors Blood Angels||
+76|Grêlons de Feu||
+77|Tyran des Ruches Tyranides||
+78|Tyran des Ruches Tyranides||
+79|Énormes pinces écrasantes||
+80|Tervigon||
+81|Tervigon Tyranide||
+82|Inflige {0} de dégâts avec {1} de perforation d'armure aux unités qui infligent des dégâts de mêlée à cette unité.||
+83|Tire {0} grenades, chacune d'entre elles infligeant {1} de dégâts et {2} de perforation d'armure.||
+84|Incinérateur à plasma||
+85|Lourd incinérateur à plasma||
+86|Hellblasters||
+87|Hellblasters Blood Angels||
+88|Gargouille||
+89|Gargouille Tyranide||
+90|Venin aveuglant||
+91|Surcharge||
+92|L'unité sacrifie tous ses points de mouvement restants, et effectue une compétence d'attaque à distance avec {0} d'attaques supplémentaires pour chaque PM dépensé.||
+93|Annulez surcharge||
+94|Cracheur de mort||
+95|Guerriers||
+96|Guerriers Tyranides||
+97|QG||
+98|Troupe||
+99|Élite||
+100|Volant||
+101|Attaque rapide||
+102|Soutien lourd||
+103|Transport dédié||
+104|Fortification||
+105|Seigneur de guerre||
+106|Personnages et unités uniques souvent utilisés pour renforcer d'autres unités.||
+107|L'aliment de base de beaucoup de forces, bon marché et nombreuses.||
+108|Unités spécialisées, souvent robustes ou avec une grande puissance de feu.||
+109|Unités volantes.||
+110|Unités en mouvement rapide.||
+111|Des unités résistantes qui ont du punch.||
+112|Véhicules utilisés pour transporter d'autres unités.||
+113|Une fortification permanente.||
+114|Seigneurs de guerre||
+115|Ailé||
+116|Hache énergétique||
+117|Techmarine||
+118|Techmarine Blood Angels||
+119|Hallebarde de force||
+120|Storm Bolter||
+121|Archiviste Dreadnought||
+122|Archiviste Dreadnought Blood Angels||
+123|Bolter d'assaut||
+124|Inceptor||
+125|Inceptor Blood Angels||
+126|Pistolet Inferno||
+127|Séraphine||
+128|Séraphine Adepta Sororitas||
+129|Canon bioplasmique||
+130|Exocrine||
+131|Exocrine Tyranide||
+132|Dreadnought Furioso||
+133|Dreadnought Furioso Blood Angels||
+134|Poings de Furioso||
+135|Assister||
+136|Feu de couverture||
+137|Pulvériser et prier||
+138|Colère de l'Empereur||
+139|Guerrier||
+140|Tueur||
+141|Jugement de l'Empereur||
+142|Acteur principal||
+143|Chasseur Némésis||
+144|Élite||
+145|Centrale d'énergie||
+146|Vétéran||
+147|Griffes déchirantes||
+148|Épées d'os||
+149|Primordial||
+150|Tyranide primordial||
+151|Énormes serres faucheuses||
+152|Trygon||
+153|Trygon Tyranide||
+154|Sangsues dévoreuses de cerveau||
+155|Minces asticots faucheurs de mort||
+156|Épine dorsale||
+157|Épine dorsale Tyranide||
+158|Serres faucheuses monstrueuses||
+159|Double canon d'assaut||
+160|Canon Flamestorm||
+161|Predator Baal||
+162|Predator Baal Blood Angels||
+163|Genestealer||
+164|Genestealer Tyranide||
+165|Dévoreur||
+166|Toucher de l'Omnimessie||
+167|Guérit un seul allié mécanique dans un rayon de {0} case(s) de {1} PV.||
+168|Bénédictions de l'Omnimessie||
+169|Augmente l'armure de l'unité cible||
+170|Invoquer l'esprit de la Machine||
+171|Augmente la précision et les dégâts d'une unité mécanisée.||
+172|Servo-Bras||
+173|Attaque automatique de l'ennemi quand la case est contestée||
+174|Bouclier de Sanguinius||
+175|Augmente temporairement les PV maximum de la cible||
+176|Accélération||
+177|Augmente les PM et les attaques de mêlée||
+178|Sables mouvants||
+179|Diminue les mouvements et l'évasion dans la zone||
+180|Explosif||
+181|Explosion mortelle, infligeant {0} de dégâts et {1} de perforations d'armure aux unités situées dans un rayon de {2} case(s).||
+182|Écran de fumée||
+183|Tueur né||
+184|Connecté||
+185|Augmente les gains d'impulsion des unités alliées proches.||
+186|Tactiques d'assaut||
+187|bond||
+188|Accumulation Plasmique||
+189|Ciblage symbiotique||
+190|L'unité sacrifie tous ses points de mouvement restants, et effectue une commande d'attaque à distance avec des dégâts supplémentaires pour chaque MP dépensé.||
+191|Mort surgie du ciel||
+192|Le réacteur dorsal doit être actif||
+193|Munition bénie||
+194|Bouclier de la Foi||
+195|Bolter modèle Godwyn De'az||
+196|Sœurs de bataille||
+197|Sœurs de bataille Adepta Sororitas||
+198|Sermon de combat||
+199|Foi et fureur||
+200|Sœur Supérieure||
+201|Sœur Supérieure Adopta Sororitas||
+202|{0} Point d'action||
+203|Arme vivante||
+204|Ciblage adaptatif||
+205|L'unité sacrifie tous ses points de mouvement restants, et effectue une commande d'attaque à distance avec une attaque supplémentaire pour chaque PM dépensé. Cela augmente également la quantité de dégâts à distance subis par l'unité.||
+206|"=+Attaque||
+207|Canon Frag||
+208|Bélier||
+209|Armure épineuse||
+210|Flancs épineux||
+211|Faim sans fin||
+212|Dévotion||
+213|Cette unité gagne un bonus d'impulsion lorsqu'un modèle ennemi est tué, en fonction de sa proximité avec l'unité ennemie.||
+214|Cette unité gagne 5 impulsions pour chaque cible abattue en mêlée et 1 impulsion si à distance.||
+215|Cette unité gagne une impulsion bonus en fonction des dégâts infligés par les attaques ennemies.||
+216|Exterminateur à plasma||
+217|Canon venin lourd||
+218|Compagnie de la Mort||
+219|Compagnie de la Mort Blood Angels||
+220|Épée de force||
+221|Lieutenant Carleon||
+222|Frère Aeturo||
+223|Techmarine Croginax||
+224|Frère Quindar||
+225|Sœur Verity||
+226|Non armé||
+227|Lanceur Fragstorm||
+228|Adaptation stratégique||
+229|Adaptation stratégique - à distance||
+230|Adaptation stratégique - en mêlée||
+231|Hurlement psychique||
+232|Volonté des esprits de la Ruche||
+233|Ailes de Séraphine||
+234|Grâce||
+235|Annuler les Ailes de Séraphine||
+236|Compense certains inconvénients des Ailes de Séraphine. Expire lorsque Ailes de Séraphine cessent.||
+237|Litanie de dévotion||
+238|Nœud d'infestation Tyranide||
+239|Rejeton primitif||
+240|Catalyseur||
+241|Salves hypodermiques||
+242|Couvée Télépathique||
+243|Fournit des gains d'impulsion indépendants de la Créature synapse, mais empêche également cette unité de gagner des bonus d'une Créature synapse. Cumulable avec d'autres unités de Genestealer jusqu'à {0} fois.<br><br>{1}||
+244|Impulsion bioélectrique||
+245|Pointe à toxine||
+246|Marteau hémoturgique||
+247|Ailes de Sanguinius||
+248|Vision de fureur angélique||
+249|Lance de sang||
+250|Rage Noire||
+251|Sans peur||
+252|Machine modèle Lucifer||
+253|Croginax||
+254|Annuler machine modèle Lucifer||
+255|Carleon||
+256|Vétéran de 100 ans, Carleon savait exactement où placer ses soldats pour un impact maximal.||
+257|Mitraillage canon d'assaut||
+258|Frappe de Marines d'assaut||
+259|Missiles Typhoon||
+260|Mitraillage canon à venin||
+261|Hurlement supersonique||
+262|Mine-spores||
+263|Capacité de commandement||
+264|Précision du tir à distance||
+265|Points de vie||
+266|Précision de mêlée||
+267|Évasion||
+268|Unités QG||
+269|PA de Mêlée ||
+270|Infanterie Primaris||
+271|Armure contre tir à distance||
+272|Applique {0} de dégâts à la cible dans la case centrale.||
+273|Applique {0} de dégâts aux cibles dans les cases environnantes.||
+274|Génère {0} unités sur la case cible. S'il y a un ennemi sur la case, une attaque de charge sera effectuée.||
+275|Tire {0} fois par case sur 4 cases en ligne, infligeant {1} de dégâts par tir avec une précision de {2} et une valeur de perforation d'armure de {3}.||
+276|Mine-spores||
+277|Mine-spores Tyranide||
+278|Faire exploser||
+279|Réduit l'impulsion de 50% dans une zone de 3x3.||
+280|Réduit l'impulsion de 50% et enlève les actions de Surveillance des ennemis dans une zone de 3x3.||
+281|Tire une fois par case sur 4 cases en ligne, infligeant {1} de dégâts par tir avec une précision de {2} et une valeur de perforation d'armure de {3}.||
+282|Lance 4 mines-spores à des positions aléatoires dans une zone de 3x3. Si une mine-spores atterrit sur un ennemi, elle explose immédiatement. Les mines-spores qui atterrissent sur des cases vides deviennent des unités contrôlables au prochain tour.||
+283|S'enterrer||
+284|Marteau Tonnerre||
+285|Land Speeder Tornado Blood Angels||
+286|Land Speeder Tornado||
+287|Pistolet à plasma||
+288|Fils de Sanguinius||
+289|Force dans le sang||
+290|Observation de la performance||
+291|Stabilisateurs plasmiques||
+292|Sens surprenants||
+293|Bastions mobile||
+294|La Première Ligne||
+295|Revitalisation sanglante||
+296|Les Bienheureux de Sanguinius||
+297|Sang du Grand Ange||
+298|Concentration intense||
+299|Formation rigoureuse||
+300|Impulsion vers l'avant||
+301|Absorption de choc||
+302|Technique barbare||
+303|Land Speeder & Land Speeder Tornado||
+304|Unités Mécaniques||
+305|Esprits-Mécaniques revigorés||
+306|L'Omnimessie voit tout||
+307|Fin réglage du canon d'assaut||
+308|Récepteur Auspex||
+309|Usages anciens||
+310|Marines d'assaut, Compagnie de la Mort, Carleon, Aeturo & Croginax||
+311|Croginax & Aggressors||
+312|Agitateurs de terrain||
+313|Unités d'archivistes||
+314|Harmoniques de force||
+315|Unités Dreadnought||
+316|Uniquement dans la mort||
+317|Forteresse psychique||
+318|Clairvoyance de l'Ange||
+319|Les Griffes déchirent la chair insensible||
+320|Leur dernier honneur||
+321|Actes de foi||
+322|L'Empereur protège||
+323|Unités Armure Mk X Gravis||
+324|<i>Le rugissement de la chaîne sera la dernière chose qu'ils entendront.</i>||
+325|<i>La fuite en avant devrait être le seul vecteur de votre rage.</i>||
+326|<i>Les Primaris ont vite appris qu'il n'y aura pas de repos tant que les gaunts resteront sur Baalfora.</i>||
+327|<i>S'ils veulent hériter du Chapitre, ils doivent être préparés à la vie qu'ils vont subir.</i>||
+328|<i>Plus de cent ans avec le réacteur dorsal signifiaient que Carleon connaissait l'importance d'un atterrissage correct.</i>||
+329|<i>Le sang de l'Ange peut prolonger leur durée de vie prévue, mais il suscite quelque chose de plus chez ceux qui survivent d'une manière ou d'une autre.</i>||
+330|<i>Aeturo observe attentivement les Primaris, attendant le moindre signe de faiblesse ou de vulnérabilité.</i>||
+331|<i>La difficulté n'est pas de tirer, mais de garder la visée pendant qu'il se recharge.</i>||
+332|<i>La noblesse de Sanguinius transparaît.</i>||
+333|<i>Les Aggressors savaient qu'ils seraient les premiers à essuyer des tirs, et cela leur faisait d'autant plus apprécier la bataille à venir.</i>||
+334|<i>Pour des raisons qu'ils ne pouvaient pas encore comprendre, la proximité avec le jeune prêtre a rendu les Aggressors désireux de foncer tête baissée dans la bataille.</i>||
+335|<i>Plaque renforcée sur plaque renforcée de céramite rendait l'armure de Gravis presque impénétrable.</i>||
+336|<i>Les Hellblasters sont entraînés à repérer les irrégularités qui indiquent un point faible dans l'armure de l'ennemi.</i>||
+337|<i>Le Techmarine a une affinité pour l'armurerie vieillissante des Blood Angels. Ils accueillent les rites de maintenance appris sur Mars.</i>||
+338|<i>Le Dieu-Machine veille, et bénit les esprits qui restent fidèles à leurs devoirs.</i>||
+339|<i>Ces vieux barrils n'ont pas besoin de beaucoup d'aide pour se concentrer.</i>||
+340|<i>L'esprit de la machine prévient des dangers lointains.</i>||
+341|<i>Le plastron de l'armure Mk VII ronronnait avidement au contact du Techmarine. L'esprit de la machine faisait confiance aux prières familières qu'il entonnait.</i>||
+342|<i>Quelque chose dans l'attitude du Techmarine fait bourdonner les champs d'armes puissantes à proximité avec anticipation.</i>||
+343|<i>Cette lame est plus qu'une extension de votre bras, elle sera un amplificateur de votre volonté.</i>||
+344|<i>C'est seulement dans la mort que le devoir s'arrête. </i>||
+345|<i>L'esprit d'un Archiviste est une forteresse, dont le corps tire sa vigueur.</i>||
+346|<i>Le plus bref coup d'œil peut faire la différence entre un bolt dans l'épaule, ou dans la tête.</i>||
+347|<i>La douleur n'est rien pour la Compagnie de la Mort.</i>||
+348|<i>Les visions du Grand Ange inondent leurs esprits, finissant par prendre la place de chaque souvenir perdu.</i>||
+349|<i>Prie, Sœur ! Élève ta voix en son nom ! Que ta prière devienne sa volonté manifestée !</i>||
+350|<i>Votre conviction sera votre plus forte armure.</i>||
+351|<i>Chacun d'entre eux avait appris par lui-même les complexités d'une vie qui défendait les Grâces de l'Ange et les Vertus du Guerrier.</i>||
+352|<i>Que vous ayez l'intention de tenir la ligne ou de la briser, la compétence de base nécessaire est de pouvoir tirer droit.</i>||
+353|<i>La doctrine fondatrice de la Huitième Compagnie.</i>||
+354|<i>Grenade standard anti-armure.</i>||
+355|<i>Grenade standard anti-personnelle.</i>||
+356|<i>Le poids de l'armure de Gravis est une arme redoutable en soi.</i>||
+357|<i>La fusillade du Stormraven est un spectacle glorieux à voir.</i>||
+358|<i>Des renforts opportuns par des frères de bataille expérimentés en qui Carleon a confiance.</i>||
+359|<i>Les lanceurs Typhoon chantent la mort de leurs cibles.</i>||
+360|<i>L'expérience enseigne que la sérénité et la rage peuvent être les deux faces d'une même pièce.</i>||
+361|<i>Le devoir de l'Épée est d'accomplir la mission, quel qu'en soit le coût.</i>||
+362|<i>Carleon savait exactement où positionner ses frères de bataille pour libérer leur potentiel.</i>||
+363|<i>Guidez un frère à revenir du bord de la mort, et vous pouvez changer le destin d'une guerre.</i>||
+364|<i>Les Aggressors enfoncent leurs pieds dans le sol et font pleuvoir la dévastation sur leurs ennemis.</i>||
+365|<i>Le Clergé Sanguinien tient pour sacrés tous les aspects du sang du Primarque qu'ils portent, y compris la Soif Rouge.</i>||
+366|<i>Il n'est pas rare qu'un Prêtre Sanguinien soit à la tête de la mêlée, exhortant ses frères avec les paroles de leur noble géniteur.</i>||
+367|<i>Chaque tireur tué par sa propre arme voit son nom honoré à jamais en écriture microscopique sur son caisson.</i>||
+368|<i>Le Techmarine revigore des esprits de la machine l'armure de puissance portée par ses frères de bataille proches.</i>||
+369|<i>Rites d'initialisation ; hymnes d'entretien ; prières d'efficacité.</i>||
+370|<i>Un point de discorde entre les Blood Angels et l'Adeptus Mechanicus.</i>||
+371|<i>La vision des pilotes anti-grav crée une redoutable meute de chasseurs.</i>||
+372|<i>Marquez une cible pour annihilation.</i>||
+373|<i>Ayez foi que le Grand Ange vous fortifiera quand vous en aurez besoin.</i>||
+374|<i>Le Dreadnought commence à se déplacer à une vitesse surnaturelle, poussé plus vite par le pouvoir du psyker.</i>||
+375|<i>Quindar est sensible aux sables de Baal et à ses lunes. Le sol qu'il foule est façonné par sa volonté.</i>||
+376|<i>Les Ailes du Grand Ange jaillissent pour faire avancer l'Archiviste.</i>||
+377|<i>Une lance faite d'énergie empyréenne et du sang de ses ennemis tombés.</i>||
+378|<i>Quand la sœur supérieure élève la voix à les louanges de l'empereur, chaque sœur à proximité entend son engagement.</i>||
+379|<i>Un mélange puissant qui propulse la Sœur Supérieure en avant.</i>||
+380|<i>Pour chaque cycle de cette munition bénie, un maître artificier a consacré sa vie à fabriquer et à sanctifier un bolt unique.</i>||
+381|<i>Notre foi est notre bouclier. Quand l'un vacille, l'autre vacille aussi. </i>||
+382|<i>Peu de gens peuvent égaler la grâce mortelle de la Séraphine en vol.</i>||
+383|Escouade d'Assaut & Carleon||
+384|Pour l'Empereur et Sanguinius||
+385|Tué ou être consumé||
+386|L'Empereur protège||
+387|Affecte tous les alliés dans un rayon de {0} case(s)<br><br>{1}.||
+388|Affecte l'unité de mêlée<br><br>{0}||
+389|Affecte une seule cible alliée dans un rayon de {0} case(s)<br><br>{1}.||
+390|Ravive le dernier membre d'un allié cible dans un rayon de {0} case(s) et lui donne {1} PV et {2}% de PM.||
+391|Inflige {0} de dégâts à une seule unité ennemie sur {1} case(s).<br><br>Perforation d'armure : {2}||
+392|Annule les ailes de Sanguinius||
+393|Affecte l'unité tirant à distance<br><br>{0}<br><br>L'effet est doublé lorsqu'il est activé en étant adjacent à un autre Land Speeder.||
+394|A {0}% de chances de se déclencher lorsque l'unité de la Compagnie de la Mort tue un modèle ennemi. Se cumule jusqu'à {1} fois.<br><br>{2}||
+395|Projette une lance qui endommage tous les ennemis sur le chemin de la cible (portée maximale : {0}). Elle inflige {1} d'éclaboussure et {2} de dégâts de perforation d'armure à un maximum de {3} cibles par case.||
+396|Affecte un seul ennemi cible dans un rayon de {0} case(s)<br><br>{1}.||
+397|Utilise le réacteur dorsal de l'unité pour plonger sur un ennemi, infligeant {0} de dégats d'éclaboussure avec {1} de perforation d'armure contre {2} modèles au maximum. Ceci compte comme une attaque de charge.||
+398|Inflige {0} de dégâts psychiques à une unité ennemie cible dans un rayon de {1} case(s).||
+399|Invoque une vision de Sanguinius qui terrifie tous les ennemis qui la voient. Elle inflige {0} de dégâts d'impulsion à toutes les unités ennemies situées dans un rayon de {1} case(s).||
+400|Invoque une vision de Sanguinius qui terrifie tous les ennemis qui la voient. Elle inflige {0} de dégâts d'impulsion à toutes les unités ennemies dans un rayon de {1} case(s), et {2} de dégâts psychiques à toutes les unités ennemies dans un rayon de {3} case(s). Dégâts psychiques à toutes les unités ennemies dans un rayon de {3} case(s).||
+401|Dynamise la Soif Rouge d'une seule unité amie dans un rayon de {0} case(s).<br><br>{1}||
+402|Émet un cri perçant le long d'une ligne de {0} case(s) qui fait {1} de dégâts d'impulsion et {2} de dégâts psychiques.||
+403|Exerce la volonté de l'Esprit-Ruche sur toutes les unités amies dans un rayon de {0} case(s).<br><br>{1}||
+404|Connecte toutes les unités amies dans un rayon de {0} case(s) au réseau synaptique. Les unités connectées gagnent {1}. Cet effet peut se cumuler jusqu'à {2} fois.||
+405|Foi grandissante||
+406|Inflige {0} de dégâts à un seul modèle ennemi dans un rayon de {1} case(s) avec des dégâts d'éclaboussures supplémentaires.<br><br>Perforation d'armure : {2}||
+407|Affecte tous les alliés dans un rayon de {0} case(s)<br><br>{1}<br><br>{2}.||
+408|Affecte une seule cible alliée dans un rayon de {0} case<br><br>{1}<br><br>{2}.||
+409|Appliqué pendant que {0} est actif<br><br>{1}||
+410|{0}% de chances d'être appliqué lorsqu'un modèle d'unité ennemie est tué<br><br>{1}<br><br>+{2}. Point d'action||
+411|{0}% de chances d'être appliqué après avoir subi des dégâts<br><br>{1}.||
+412|L'unité sacrifie tous ses points de mouvement restants et effectue une attaque à distance qui inflige des dégâts par ricochet avec +{0}% de dégâts supplémentaires par PM dépensés.<br><br>Charges : {1}/{2}||
+413|L'unité sacrifie tous ses points de mouvement restants et effectue une attaque à distance qui inflige des dégâts par ricochet avec +{0}% de dégâts supplémentaires et +{1} de perforation d'armure par PM dépensés.<br><br>Charges:{2}/{3}.||
+414|Sergent Intercessor||
+415|Cible un seul allié mécanique dans un rayon de {0} case(s)<br><br>{1}.||
+416|Charge à travers plusieurs unités, infligeant {0} de dégâts avec {1} de perforation d'armure à la fois aux ennemis et aux alliés. Inflige {2} de dégâts avec {3} de perforation d'armure à la cible finale.||
+417|Saute sur un ennemi à {0} case de distance, infligeant des dégâts de mêlée avec +{1} de perforation d'armure. Ceci compte comme une attaque de charge.||
+418|Donne soit un bonus à distance, soit un bonus de mêlée aux alliés situés dans un rayon de {0} case(s). Utilisez cette capacité pour changer de mode<br><br>Bonus à distance<br>{1}<br><br>Bonus de mêlée<br>{2}.||
+419|Lance un Termagant allié avec -{0} PM à son premier tour.||
+420|Inflige {0} d'éclaboussures avec {1} de perforation d'armure à un ennemi situé à {2} case(s).||
+421|Creuse immédiatement un terrier vers un endroit situé jusqu'à {0} case(s) de distance.<br><br>{1}||
+422|Permet de gagner de l'impulsion indépendamment de la Créature Synapse, mais empêche également cette unité de gagner les bonus d'une Créature Synapse. Se cumule avec d'autres unités de Genestealer jusqu'à {0} fois.||
+423|L'unité ne peut pas utiliser l'action de repli.||
+424|Parmi les plus nobles des chapitres Space Marine, les Blood Angels luttent contre une sombre malédiction au sein de leur propre sang. C'est une faction qui se déplace rapidement et qui excelle dans les tactiques de mêlée et d'assaut.||
+425|Poussés par la volonté de leur Esprit-Ruche, les Tyranides n'ont qu'une seule directive imparable : se nourrir. Cette force Xenos s'appuie sur ses Créatures Synapses pour améliorer l'efficacité meurtrière de ses essaims.||
+426|<i>Une variante automatique du fusil bolter Primaris, utile pour éliminer les essaims.</i>||
+427|<i>Une relique privilégiée de l'Armurerie, lourde de l'histoire d'innombrables batailles passées.</i>||
+428|<i>Ne permettez à personne d'échapper à notre colère.</i>||
+429|<i>Exquis pistolets à fusion, donnés aux frères les plus dignes de confiance.</i>||
+430|<i>Améliore le profil de menace des Inceptors contre les ennemis modérément armés.</i>||
+431|<i>L'Aggressor remplace la salve du lanceur Fragstorm par un mur de flammes craché par ses poings.</i>||
+432|<i>L'instinct du tireur d'élite est nécessaire pour que le tir unique compte.</i>||
+433|<i>La priorité du tireur passe du maintien de l'ordre au chasseur en armure de haute volée.</i>||
+434|<i>Des réservoirs de prométhium plus grands donnent à ces flammes qui s'élèvent une plus grande portée que celles crachées par les poings.</i>||
+435|<i>Peu de gens peuvent résister au torrent purificateur de flammes.</i>||
+436|<i>Le Dreadnought rugit de mépris, entouré des cadavres en feu de ses ennemis.</i>||
+437|<i>Un fuseur anti-armure conçu spécifiquement pour le vénérable dreadnought.</i>||
+438|<i>Seule leur haine brûle plus intensément.</i>||
+439|<i>Avec le feu et la lame, nous purgerons les impurs.</i>||
+440|<i>Il n'y a pas que les Blood Angels qui maîtrisent ces fuseurs de la taille d'un pistolet.</i>||
+441|<i>Le bruit de la lame n'est qu'une harmonie de plus dans son chant de dévotion.</i>||
+442|Bondit sur un ennemi situé à {0} case(s) de distance, infligeant des dégâts de mêlée avec +{1} de perforation d'armure. Cela compte comme une attaque de charge.<br>Ne provoque pas de réaction des pistolets.||
+443|Avertissement : Va infliger un tir fratricide||
+444|L'unité sacrifie ses points de mouvement pour effectuer une attaque à distance avec +{0} de perforation d'armure et +{1}% de chance critique par PM dépensé.||
+445|{0}% de chances de se déclencher lorsque cette unité tue un modèle ennemi. Ne peut s'appliquer qu'une fois par tour.||
+446|<i>Éliminez les impurs !</i>||
+447|Affecte tous les alliés dans un rayon de {0} case(s)<br><br>{1}.||
+448|Donne soit un bonus à distance, soit un bonus de mêlée aux alliés se trouvant dans un rayon de {0} case(s). Utilisez cette capacité pour changer de mode<br><br>Bonus à distance<br>{1}<br><br>Bonus de mêlée<br>{2}<br><br>Ajoute un bonus supplémentaire aux alliés dans un rayon de {3} case(s)<br>{4}.||
+449|Aveugle et empoisonne l'ennemi avec une attaque à distance.||
+450|Réacteur dorsal Gravis||
+451|Effectue une attaque à distance avec +{0}% de dégâts et +{1} de perforation d'armure, mais chaque modèle a {2}% de chances de subir {3} de dégâts.||
+452|Affecte l'unité tirant à distance<br><br>{0}<br>Ne provoque pas de réactions des pistolet lors de la charge.||
+453|Annule l'élévation anti-gravité||
+454|Épuisé||
+455|Affecte l'unité tirant à distance<br><br>{0}<br><br>L'effet dure pendant un tour supplémentaire.||
+456|Guérit une unique cible alliée maintenant, et à nouveau au début de son prochain tour. La santé gagnée est partagée entre tous les modèles d'une unité.||
+457|Se cumule avec chaque unité adjacente d'Essaims tactiques, jusqu'à un maximum de {0} cumules.||
+458|Griffes éclair||
+459|Marteau tonnerre & Bouclier tempête||
+460|Boltgun Angelus||
+461|Hache Encarmine||
+462|Épée Encarmine||
+463|Griffes déchirantes monstrueuses||
+464|Canon choc||
+465|Canon empaleur||
+466|Seigneur des couvées||
+467|Seigneur des couvées Tyranide||
+468|Garde des ruches||
+469|Garde des ruches Tyranide||
+470|Terminators d'assaut||
+471|Terminators d'assaut Blood Angels||
+472|Garde sanguinienne||
+473|Garde sanguinienne Blood Angels||
+474|Épines de bête épineuse||
+475|Épines de canon choc||
+476|Frappe profonde Terminator||
+477|Téléporte l'unité jusqu'à {0} case(s). L'emplacement de téléportation doit être à portée visuelle et ne peut pas être adjacent à un ennemi.<br><br>Charges : {1}/{2}||
+478|Bouclier tempête||
+479|Télépathie des couvées évoluées||
+480|Paroxysme||
+481|Surcharge le système nerveux d'une seule unité cible dans un rayon de {0} case(s), infligeant {1} dégâts psychiques et empêchant toutes les attaques réactives (y compris Surveillance).<br><br>{2}<br>Supprime tous les cumuls de Surveillance.||
+482|Cette unité bénéficie d'un bonus d'impulsion de {0} pour les tués en mêlée et d'un bonus d'impulsion de {1} pour les tués à distance.<br><br>{2}||
+483|Héritiers d'Azkaellon||
+484|Notre sang s'enflamme !||
+485|Affecte l'unité de jet<br><br>{0}||
+486|Double tous les effets lorsque l'unité est adjacente au commandant du QG||
+487|<i>A ce jour, Azkaellon est honoré comme l'élu de Sanguinius ; la Garde maintient son nom et son devoir.</i>||
+488|<i>Le plasma est toujours une option.</i>||
+489|<i>Ni la peau de démon ni l'armure plaquée ne résisteront à une telle colère.</i>||
+490|<i>Il faut un millier de batailles pour manier une hache avec la grâce qu'elle mérite.</i>||
+491|<i>Où que nous soyons envoyés, cette bataille est déjà gagnée.</i>||
+492|<i>Inamovible. Impénétrable. Indomptable.</i>||
+493|Téléporté||
+494|Guerriers Nécrons||
+495|Écorcheur Gauss||
+496|Faucheuse Gauss||
+497|Dynastie du Métal-Vivant||
+498|Protocole de réanimation||
+499|Nécrons||
+500|Dépeceurs||
+501|Dépeceurs Nécrons||
+502|Dévoreur de chair||
+503|Griffes de dépeceur||
+504|Destroyer Skorpekh||
+505|Destroyer Skorpekh Nécron||
+506|Injection de plasmacyte||
+507|Fauchons d'hyperphase||
+508|Lame Faucheuse d'hyperphase||
+509|Destroyer Hexmark||
+510|Destroyer Hexmark Nécron||
+511|Pistolets désintégrateurs d'hostiles||
+512|Éliminateur de menaces multiples||
+513|Optimisation des cibles||
+514|Immortels||
+515|Immortels Nécrons||
+516|Foudre consciente||
+517|Éclateur Gauss||
+518|Carabine Tesla||
+519|Traqueurs||
+520|Traqueurs Nécrons||
+521|Désintégrateur synaptique||
+522|Marque du chasseur||
+523|Translocalisation dimensionnelle||
+524|Prétorien du Triarcat||
+525|Prétorien du Triarcat Nécron||
+526|Crosse d'Alliance||
+527|Paquetage antigravité||
+528|Marines premiers-nés||
+529|Destructeur Gauss||
+530|Exterminateur d'hostiles||
+531|Survol||
+532|Destroyers lourds Lokhust||
+533|Destroyers lourds Lokhust Nécrons||
+534|Effectue une attaque de charge alimentée par la rage, mais avec une chance de tuer l’un des destroyers.<br><br>Dégâts de mêlée +{0}%<br>Chance de crit +{1}%<br>{2}% de chance qu’un modèle de destroyer soit tué||
+535|Éclateur Gauss jumelé||
+536|Projecteur de particules||
+537|Carabine Tesla Jumelée||
+538|Mécanoptères||
+539|Macanoptères Nécrons||
+540|Engramme d'évasion||
+541|Nébuloscope||
+542|Cette unité bénéficie d'un bonus d'impulsion à la fin de son tour si elle s'est éloignée de sa position de départ.||
+543|Souverain||
+544|Souverain Nécron||
+545|Fauchard||
+546|Bâton de lumière||
+547|Épée d'hyperphase||
+548|Disrupteur de phase||
+549|Orbe de résurrection||
+550|Protocole de commandement||
+551|Voile des ténèbres||
+552|Plasmancien||
+553|Plasmancien Nécron||
+554|Lance plasmique||
+555|Orbe quantique||
+556|Émissaire de la destruction||
+557|Décharge d'onde Tesla||
+558|Factionnaire||
+559|Factionnaire Nécron||
+560|Épée d'hyperphase & Bouclier à dispersion||
+561|Protocoles du gardien||
+562|Bouclier à dispersion||
+563|Réclamer la galaxie||
+564|Les Nécrons sont une race immortelle d'androïdes de métal vivants, qui utilisent le pouvoir des étoiles pour tuer les races inférieures. Une faction au rythme lent avec des options de combat à distance dévastatrices, la victoire de la marche sans fin des Nécrons est inévitable.||
+565|Épée d'hyperphase||
+566|Donne {1}% de chances de ranimer jusqu'à {2} modèles de cette unité avec {0}% de PV, une fois par tour.||
+567|Nuée de scarabées Canoptek||
+568|Nuée de scarabées Canoptek Nécron||
+569|Mandibules||
+570|Protocole d'auto-destruction||
+571|Console d'annihilation||
+572|Console d'annihilation Nécron||
+573|Canon Gauss||
+574|Canon Tesla||
+575|Destructeur Tesla Jumelé||
+576|Bouclier quantique||
+577|Marque la cible de la mort, ce qui donne à cette unité une précision supplémentaire et une chance critique par rapport à la cible. Une seule marque peut être définie à la fois.<br><br>{0}||
+578|Téléporte l’unité jusqu’à {0} case(s). L’emplacement de la téléportion doit être à portée visuelle et ne peut pas être adjacent à un ennemi.<br><br>Charges : {1}/{2}||
+579|Scarabée tempête||
+580|Tempête d'éclairs Tesla||
+581|Rayon de mort faucheur||
+582|Leur faim grandit...<br><br>Il y a {0}% de chance de gagner un cumul lorsque cette unité tue un modèle organique. Max {1} cumul(s).||
+583|Le souverain manipule la réalité elle-même pour créer une barrière protectrice.||
+584|Invoque une unité de guerriers Nécrons.||
+585|Protocole du Passage des cycles||
+586|Protocole de la Volonté immuable||
+587|Protocole de l'Horizon infini||
+588|Bascule entre deux Protocoles de commandement <br><br>Protocole du Passage des cycles<br>{0}<br><br>Protocole de la volonté immuable<br>{1}||
+589|Bascule entre deux Protocoles de commandement et ajoute le Protocole de l'Horizon infini à toutes les unités dans un rayon de {0} case(s.<br><br>Protocole du Passage des cycles<br>{1}<br><br>Protocole de la volonté immuable<br>{2}<br><br>Protocol de l'Horizon infini<br>{3}||
+590|Le souverain passe entre les réalités pour se téléporter jusqu'à {0} case(s.||
+591|Le Plasmancier ouvre les sécurités de cet ancien appareil, libérant un pilier dévastateur d'énergie pure sur les cibles situées dans un rayon de {0} case(s. Il inflige {1} de dégâts avec {2} de perforation d'armure à la cible centrale, et {3} de dégâts avec {4} de perforation d'armure aux cibles adjacentes.||
+592|Canalise les énergies destructrices croissantes vers l'extérieur en un rayon annihilateur, infligeant {0} de dégâts d'éclaboussures avec {1} de perforation d'armure et {2}% de précision à toutes les cibles situées le long du rayon..||
+593|Puissance des arcs à toutes les unités alliées proches dans un rayon de {0} case(s).<br><br>{1}||
+594|Puissance des arcs à toutes les unités alliées proches dans un rayon de {0} case(s).<br><br>{1}||
+595|Protocoles du gardien désactivés||
+596|Réaction d'intercession pour une unité de commandement de QG proche ciblée par des attaques à distance.||
+597|Change de place avec les unités QG quand elles sont attaquées, fournit une unité QG à {1} cases. Cette unité prendra alors tous les dégâts attendus par l'unité QG. <br><br>{0}||
+598|Cible jusqu'à {0} unités avec une seule attaque, au prix d'une vitesse d'attaque plus lente et d'une précision à distance réduite.<br><br>{1}||
+599|Permet aux attaques à distance de tirer automatiquement, Draine les points de mouvement et booste la chance critique par point de mouvement dépensé. <br><br>{0}||
+600|Lance une attaque de mêlée avec des dégâts d'éclaboussures, mais sacrifie les scarabées dans le processus.||
+601|Marche implacable||
+602|Cette unité gagne un bonus d'impulsion à la fin du tour||
+603|Crée {0} unités sur la case cible. Si un ennemi se trouve sur la case, une attaque de charge sera effectuée et une unité {0} supplémentaire attaquera l'ennemi. Si la case est vide, une unité {0} supplémentaire sera créée sur une case adjacente aléatoire.||
+604|La faux du destin balaie le ciel et fait exploser {0} cibles avec ses deux destroyers Tesla. Elle inflige {1} de dégâts avec {2} de perforation d'armure.||
+605|Attention : inflige un Tir ami<br>Tire jusqu'à 4 cases sur la ligne de tir, infligeant {0} de dégâts par tir avec une perforation d'armure d'une valeur de {1}.||
+606|Machine de pénitence||
+607|Machine de pénitence Adepta Sororitas||
+608|Amplificateurs de tourment||
+609|Scies circulaires du pénitent||
+610|Lance-flammes lourds jumelés||
+611|Hellblade||
+612|Crocs gorgés de sang||
+613|Canon à crânes||
+614|Lame de sang||
+615|Sanguinaire||
+616|Sanguinaire de Khorne||
+617|Chiens de Khorne||
+618|Chiens de Khorne||
+619|Maître de Sang||
+620|Héraut du Maître de Sang de Khorne||
+621|Canon à crânes||
+622|Canon à crânes de Khorne||
+623|Du Sang pour le Dieu du Sang||
+624|Créatures malveillantes issues du Warp, les Démons du Chaos de Khorne sont une faction qui se déplace rapidement et se concentre sur la mêlée. Ils déferlent sur le champ de bataille à la recherche de sang à verser comme une dîme à leur maître, le Seigneur de la Rage.||
+625|Férocité instoppable||
+626|Rituel démoniaque||
+627|Locus de Khorne||
+628|Marée meurtrière||
+629|Odeur du sang||
+630|Rugissement ardent||
+631|Lien en cuivre et en os||
+632|Gorefeast écrasant||
+633|Augmente l'évasion après avoir été attaqué par Surveillance ou un tir de réaction<br>.||
+634|Crée une unité de Démon de Khorne dans un rayon de {0} cases.||
+635|Augmente l'Armure de {0}, la Pénétration d'Armure de {1} et les dégâts de {2}% pour les unités alliées Démon de Khorne dans un rayon de {3} cases.||
+636|Augmente la chance de Crit de {0}% pour chaque unité Sanguinaire alliée dans une case adjacente.||
+637|Effectue une attaque de charge contre un ennemi organique singulier, avec des points de mouvement de bonus {0}. <br> <br> donne un bonus pendant l'attaque <br> {1}||
+638|Effectue une attaque sonique contre un ennemi situé dans un rayon de {0} cases à {1} de pénétration d'armure pendant {2} tirs à {3} de dégâts par tir.||
+639|Diminue les dégâts subis de {0}%.||
+640|Affecte l'unité de jet||
+641|Capacités tactiques||
+642|Améliorations des armes à plasma||
+643|Grenades||
+644|Améliorations de l'arme Melta||
+645|Armes de puissance de mêlée||
+646|Bolter Condemnor||
+647|Lame bénie||
+648|Arco-fléau||
+649|Eviscerator de pénitent||
+650|Masse sacrée||
+651|Lame de guerre Parangon||
+652|Lance-missile||
+653|Lance-flammes immolation||
+654|Bolter lourd jumelé||
+655|Multi-fuseur jumelé||
+656|Chanoinesse||
+657|Adepta Sororitas Chanoinesse||
+658|Hospitalière||
+659|Adepta Sororitas Hospitalière||
+660|Arco Flagellants||
+661|Adepta Sororitas Arco Flagellants||
+662|Célestines||
+663|Adepta Sororitas Célestines||
+664|Sœurs Repentia||
+665|Adepta Sororitas Sœurs Repentia||
+666|Sacro-saintes célestines||
+667|Sacro-saintes célestines Adepta Sororitas||
+668|Retributors||
+669|Adepta Sororitas Retributors||
+670|Exo-harnais Parangon||
+671|Adepta Soritas Exo-harnais Parangon||
+672|Rhino||
+673|Adepta Sororitas Rhino||
+674|Exorcist||
+675|Adepta Sororitas Exorcist||
+676|Immolator||
+677|Adepta Sororitas Immolator||
+678|Transport||
+679|Serment de protection||
+680|Incantation glorieuse||
+681|Mot de mépris||
+682|Honorez les martyrs||
+683|Rosarius||
+684|Tempête de rétribution||
+685|Bouclier Sacro-saint||
+686|Martyre||
+687|Frénésie zélée||
+688|Medicus||
+689|Rites d'intercession||
+690|Auto-réparation||
+691|Refrain dévastateur||
+692|Missile traqueur||
+693|Lance grenades Parangon||
+694|Lance-flammes||
+695|À la mort, applique l'effet à toutes les unités alliées||
+696|L'unité sacrifie tous ses points de mouvement restants, et effectue une commande d'attaque à distance avec +{0}% d'attaques supplémentaires et +{1} de perforation d'armure par PM dépensé.||
+697|Charge l'ennemi.<br><br>{0}<br><br>Les Alliés à {1} case(s) gagnent {2} impulsion(s) par Martyr tombé.||
+698|L'unité sacrifie tous ses points de mouvement restants, et effectue une commande d'attaque à distance avec une perforation d'armure et des dégâts supplémentaires pour chaque PM dépensé.||
+699|Tire un missile infligeant {0} points de dégâts avec {1} points de pénétration dans l'armure et ayant une portée maximale de {2}.||
+700|Bras militant de l'Ecclésiarchie, les Adepta Sororitas sont des guerriers au zèle féroce qui consacrent leur vie au service du Maître de l'humanité.||
+701|Supprime tous les effets de statut négatifs.<br>+{0} de Santé||
+702|Ajoute {0} PA à une unité alliée (à l'exception des véhicules, des marcheurs et des Arco-Flagellants) dans un rayon de {1} case(s).||
+703|Esprit de l'Empereur||
+704|Direction divine||
+705|Jugement équitable||
+706|Buveur de sang||
+707|Buveur de sang de Khorne||
+708|Grande hache de Khorne||
+709|Démon supérieur||
+710|Rage incontrôlée||
+711|Ailes terrifiantes||
+712|Dévoreur d'âme||
+713|Dévoreur d'âme de Khorne||
+714|Canon moissonneur||
+715|Épée du warp||
+716|Griffe du warp||
+717|Griffe de fer||
+718|Équarisseur||
+719|Équarisseur de Khorne||
+720|Charge dévastatrice||
+721|Les Adepta Sororitas qui assistent à la mort d'une Chanoinesse sont poussées à de plus grands actes de courage et de sacrifice.<br>||
+722|Effectue une attaque d'écrasement avec la griffe de fer des broyeurs d'âme qui inflige {0} points de dégâts avec {1} de perforations ||
+723|Don de Khorne||
+724|<i>La présence d'un Buveur de sang incite les démons voisins à se livrer à de plus grands actes de violence et à faire couler le sang.</i><br>||
+725|<i>Avec un rugissement tonitruant, la fureur et la soif de sang du Buveur de sang atteignent un nouveau niveau d'apoplexie.</i><br><br> Augmente les dégâts de mêlée de {1}%, sur {0} tour(s) et effectue une attaque psychique sur toutes les unités ennemies dans un rayon de {2} cases pour {3} de dégâts psychiques et {4} de dégâts d'impulsion.||
+726|<i>Porté par des ailes massives, le Buveur de sang traverse rapidement le champ de bataille pour massacrer au nom de Khorne</i>.||
+727|Annuler les ailes terrifiantes||
+728|<i>L'Hospitalière fait calmement appel à une autre de ses Sœurs pour agir en son nom</i>.||
+729|<i>À travers le brouillard de la guerre, nous apportons le jugement de l'empereur</i>||
+730|<i>Les Sororitas sont imprégnées d'une source inépuisable de vigueur.</i>||
+731|<i>Voyant les faiblesses des défenses des ennemis, les Sœurs de Bataille frappent avec une précision infaillible</i>.||
+732|<i>Les Soroitas sont remplis d'une passion ardente pour porter les jugements de l'Empereur sur ses ennemis.</i>||
+733|<i>Les pieds fermement plantés et le mépris brûlant dans leur cœur, les Rétributors purgent la galaxie de l'hérésie</i>.||
+734|<i>Seul dans la mort on peut trouver la rédemption</i>||
+735|<i>L'artilleur joue un hymne d'adoration si puissant que l'esprit-machine de l'Exorciste est revigoré pour anéantir davantage l'ennemi.</i>||
+736|<i>Transformés en frénésie, les Arco-flagellants se jettent à corps perdu sur l'ennemi.</i>||
+737|<i>La condamnation de la chanoinesse résonne à travers le champ de bataille, secouant la cible de son mépris jusqu'au plus profond d'elle-même</i>.||
+738|<i>Cette charge utile triplement bénie s'élève haut avant de faire pleuvoir la mort sur les ennemis de l'Empereur.</i>||
+739|<i>Les quelques inhibiteurs de nerfs qui restent sont retirés, écrasant le pilote avec toute l'étendue des amplificateurs chimiques épissés dans son système nerveux.</i>||
+740|<i>Aucun mal ne peut arriver à ceux qui sont touchés par l'Empereur.</i>||
+741|Annuler le serment de protection||
+742|Change de place avec l'unité de commandement QG quand elles sont attaquéespar des armes de mêlée ou à distance. fournit une unité QG à {1} cases. Cette unité prendra alors tous les dégâts attendus par l'unité QG. <br><br>{0}||
+743|Infusion de vitalité||
+744|Accéléré||
+745|Tireur d'élite||
+746|Armure renforcée||
+747|Agent de destruction||
+748|Cible insaisissable||
+749|Duelliste brutal||
+750|Tueur efficace||
+751|Multiplicateur de force||
+752|Prêt au combat||
+753|Prince Démon||
+754|Prince démon de Khorne||
+755|Cultiste du Chaos||
+756|Cultiste du Chaos de Khorne||
+757|Griffes maléfiques||
+758|La puissance sur la magie||
+759|Épée forgée en enfer||
+760|Hache démoniaque||
+761|Autocanon cultistes||
+762|Mitrailleuse lourde||
+763|Warbiker||
+764|Warbiker Ork||
+765|Dakkgun||
+766|Nuage de fumée||
+767|Gro' bouton rouge||
+768|Boyz||
+769|Boyz Ork||
+770|Shoota||
+771|Big Shoota||
+772|Lance rokettes||
+773|Stikkbombz||
+774|S'enliser||
+775|Loi d'la bande||
+776|Stormboyz||
+777|Stormboyz Ork||
+778|Slugga||
+779|Choppa||
+780|Pak de rokettes||
+781|Frappe de Stormboyz||
+782|Armé pour la teuf||
+783|Burna Boyz||
+784|Burna||
+785|Pyromaniakz||
+786|Deffkopta||
+787|Deffkopta||
+788|Deffkopta Ork||
+789|Kopta rokettes||
+790|Mega-blasta kustom||
+791|Big bomb||
+792|Nobz||
+793|Nobz Ork||
+794|Big Choppa||
+795|Griffe puissante||
+796|Frappez plus fort||
+797|Flash Gitz||
+798|Flash Gitz Ork||
+799|Snazzgun||
+800|Flash ékraseur||
+801|Meganobz||
+802|Meganobz Ork||
+803|Kustom Shoota||
+804|Kombi rokettes||
+805|Kombi-skorcha||
+806|Lame de scie||
+807|Orks||
+808|Waaagh !||
+809|La race la plus belliqueuse de la galaxie, les Orks se soucient peu de leur préservation ou de leur stratégie de combat. Les Orks vivent pour le plaisir de la bataille, et le prochain Waaagh !||
+810|Warboss||
+811|Warboss Ork||
+812|Squig d'attak' ||
+813|Weirdboy||
+814|Weirdboy Ork||
+815|Bâton de Weirdboy||
+816|Eadbanger||
+817|Warpath||
+818|Jabbin' Fingerz||
+819|Big Mek||
+820|Big Mek Ork||
+821|Big Mekaniak||
+822|Armure Boosta||
+823|Champ de force Kustom||
+824|Painboy||
+825|Painboy Ork||
+826|Coup'os||
+827|Gretchin||
+828|Gretchin Ork||
+829|Grot Blasta||
+830|Lootas||
+831|Lootas Ork ||
+832|Deffgun shooty||
+833|La loi du plus fort||
+834|Deff Dread||
+835|Deff Dread Ork||
+836|Dread Mob||
+837|Pluz de Dakka !||
+838|Big shoota Strafe||
+839|Boom bomb||
+840|Scie de Dread||
+841|Skorcha||
+842|<i>Voyant les faiblesses des défenses ennemies, les Sœurs de Bataille situées dans un rayon de {0} cases du Commandant du QG frappent avec une précision infaillible.</i>||
+843|<i>Les Sororitas situées dans un rayon de {0} cases du Commandant du QG sont imprégnées d'une vigueur sans limite.</i>||
+844|<i>Les sœurs de combat situées dans un rayon de {0} cases du commandant du QG sont animées d'une passion brûlante pour porter les jugements de l'Empereur sur ses ennemis.</i>||
+845|Survole une cible et lâche une grosse bombe qui fait {0} de dégâts aux PA {1}, plus {2} de dégâts supplémentaires aux PA {3} aux cases environnantes. Attention : Provoque des tirs alliés.||
+846|Le Warbiker émet un nuage de fumée épaisse et sombre, ce qui en fait une cible plus difficile à atteindre.||
+847|Le Warbiker appuie sur le gro' bouton rouge et la machine de mort, déjà très rapide, passe à la vitesse supérieure et se déplace encore plus loin.||
+848|Da Boss veille||
+849|Affecte toutes les unités situées dans un rayon de {0} cases d'un Warboss ork.||
+850|Tire une rokette à une portée de {0} cases qui inflige {1} PV de dégâts d'explosion aux unités touchées, avec une résistance à l'armure de {2}.||
+851|Case ardente||
+852|Répare immédiatement {0} PV de dégâts à un véhicule allié, et donne +{1} d'Armure pendant {2} tours.||
+853|Affecte un seul allié dans une case adjacente<br><br>{0}||
+854|Deffgun laser||
+855|A {0}% de chances de soigner {1} PV par modèle pour un allié non-véhicule dans une case adjacente. En cas d'échec, un seul modèle de l'unité subit {2} PV de dégâts.||
+856|A {0}% de chances de soigner {1} PV par modèle pour un allié non-véhicule dans une case adjacente.||
+857|Effectue une attaque à distance avec {0}% de tirs supplémentaires et +{1} de perforation d'armure.||
+858|Se cumule à moins de {0} cases d'autres Deff Dreads, jusqu'à {1} cumuls.||
+859|Aveuglé||
+860|Le Weirdboy se concentre sur un ennemi situé dans un rayon de {0} cases, puis se plante dans l'œil de la cible, qui devient temporairement aveugle.||
+861|Tire un éclair d'énergie psychique brute qui inflige {0} PV de dégâts pour {1} de perforations d'armure.||
+862|Diminue les dégâts à distance reçus à moins de 2 cases d'un Big Mek doté d'un champ de force Kustom.||
+863|Diminue les dégâts reçus par le Big Mek de {0}% et les dégâts à distance reçus par les alliés à {2} cases de {1}%.||
+864|Le commandant du QG canalise la volonté de Gork et Mork pour exhorter les alliés à {0} case(s) à faire feu davantage.||
+865|Squig||
+866|Squig d'attak' Ork||
+867|Morsure de squig||
+868|Les mâchoires claquantes du Squig d'attak' du Warboss infligent {0} PV pour {1} de perforations d'armure.||
+869|<i>Les Boyz Ork n'aiment rien de plus que de se lancer dans une bonne bagarre !</i>||
+870|<i>Explosifs anti-infanterie rudimentaires mais efficaces</i>||
+871|<i>D'une simple pression sur un bouton, le moteur passe en surrégime et un nuage de fumée enveloppant le Warbiker</i>.||
+872|<i>Le Warbiker appuie sur le gros bouton rouge et l'engin de mort rapide passe à la vitesse supérieure et se déplace encore plus vite<i>.||
+873|<i>Waaagh vient du ciel<i>||
+874|<i>Orky know-wotz pour renforcer l'armure des ladz</i>||
+875|<i>Plus de dakka, kar La puissance cèt koul</i>||
+876|<i>Parfois, vous voulez juste ke votre Choppa les frappe plus fort</i>||
+877|<i>On n'a jamais assé de dakka</i>||
+878|<i>Le commandant du QG canalise la volonté de Gork et de Mork pour exhorter ses troupes à faire feu de tout bois</i>.||
+879|<i>Le Blitza-Bommer déclenche des fusillades de dakka mortelle à partir de ses Supa Shootas</i>||
+880|<i>Boom !</i>||
+881|<i>Maîtriser l'énergie du Waaagh</i>||
+882|<i>Une puissance psychique brute jaillit du Weirdboy, et la tête de l'ennemi explose</i>.||
+883|Annuler Pak Rokettes||
+884|Trukk Smasha||
+885|Da Dok Iz In||
+886|Applique {0} à toutes les unités alliées dans un rayon de {1} cases d'un Orc Painboy||
+887|Un coup de griffes tranchantes qui inflige {0} points de dégâts avec {1} de perforations d'armure à un maximum de {2} unités.||
+888|Sous le regard meurtrier du Prince démon, la rage qui couve chez les démons voisins se transforme en un véritable brasier <br><br>Précision au corps à corps +{0}<br>Dégâts au corps à corps +{1}%.||
+889|Canon infernal||
+890|Aura de terreur||
+891|Les échos d'une fureur sans fin||
+892|La dîme du sang||
+893|Le commandant du QG utilise l'influence du Warp pour réduire ses ennemis à un état de panique totale, les figeant et les empêchant de bouger ou de manier des armes.||
+894|Khorne et ses sbires sauvages inspirent une colère brûlante et une fureur sans fin. Des vagues brutales d'apoplexie émanent du commandant du QG, vidant les ennemis de la Légion de leur volonté de se battre. <br><br>Supprime toutes les accumulations de surveillances<br>{0} d'impulsion(s)||
+895|Canalisant le flot illimité de colère et de rage qui émane du Seigneur des Crânes, le Commandant du QG déclenche une attaque Warp qui inflige {0} de dégâts psychiques sur une large zone.||
+896|<i>La rage brûlante de Khorne<i>||
+897|<i>Il écrase les Dreadnoughts aussi facilement que les Space Marines</i>||
+898|<i>La rage inarrêtable de Khorne piétine tout sur son passage</i>||
+899|<i>Les horreurs du Warp apportent la folie et la terreur à tous</i>||
+900|<i>La rage apoplectique du commandant du QG anéantit la volonté de combattre de tous les ennemis de Khorne</i>.||
+901|<i>Du Sang pour le Dieu du Sang, des crânes pour le Trône des Crânes</i>||
+902|<i>Le Prince démon s'élance, et ses ennemis tombent</i>.||
+903|<i>La gueule a besoin d'être nourrie</i>||
+904|<i>La seule présence d'un sanguinaire attise la rage de la horde démoniaque</i>.||
+905|<i>Colère incessante, soif de sang sans fin</i>||
+906|<i>Seule une bataille pleine de rage peut rassasier l'appétit des légions de sang</i>||
+907|<i>invoquer les hordes infinies du Chaos</i>||
+908|T'au||
+909|Pour le Plus Grand Bien||
+910|Commandant T'au||
+911|Commandant||
+912|Combi-mecha||
+913|Maître de guerre||
+914|Armure renforcée||
+915|Manœuvres de grande vitesse||
+916|Drone compagnon||
+917|Drone bouclier||
+918|Drone d'artillerie||
+919|Drone marqueur||
+920|XV85 Enforcer||
+921|XV86 Coldstar||
+922|Canon à déflagration||
+923|Canon à déflagration haut débit||
+924|Cadre Lame de feu||
+925|Cadre Lame de feu T'au||
+926|Fusil à impulsion Lame de feu||
+927|Tir de volée||
+928|Cible en vue||
+929|Éthéré||
+930|Éthéré T'au||
+931|Lame d'honneur||
+932|Sens de roche||
+933|Grâce du zéphyr||
+934|Drones tactiques||
+935|Drones tactiques T'au||
+936|Carabine à impulsion||
+937|Lumière de repérage||
+938|Éclaireurs||
+939|Éclaireurs T'au||
+940|Fusil ionique||
+941|Surcharge||
+942|Escouade d'assaut de guerriers du feu||
+943|Escouade d'assaut de guerriers du feu T'au||
+944|Fusil à impulsion||
+945|Escouade de percée de guerriers du feu||
+946|Escouade de percée de guerriers du feu T'au||
+947|Canon à impulsion||
+948|Brèche et dégagement||
+949|Escouade de combi-mechas de crise||
+950|Escouade de combi-mechas de crise T'au||
+951|Canon à fusion||
+952|Capsule à missiles||
+953|Boost de jet||
+954|Escouade de combi-mechas furtives||
+955|Escouade de combi-mechas furtives T'au||
+956|Champ de camouflage||
+957|Combi-mecha Broadside||
+958|Combi-mecha Broadside T'au||
+959|Canon électrique lourd||
+960|Masse broyante||
+961|Ciblage avancé||
+962|Missile à tête chercheuse||
+963|Système de missiles intelligents||
+964|Combi-mecha Ghostkeel||
+965|Combi-mecha Ghostkeel T'au||
+966|Collisionneur à fusion||
+967|Poings Ghostkeel||
+968|Combi-mecha Riptide||
+969|Combi-mecha Riptide T'au||
+970|Canon à déflagration lourd||
+971|Accélérateur ionique||
+972|Fusils à plasma||
+973|Générateur de bouclier Riptide||
+974|Piranha||
+975|Piranha T'au||
+976|Canonnier Hammerhead||
+977|Canonnier Hammerhead T'au||
+978|Canon électrique||
+979|Canon ionique||
+980|Lance des attaques à distance qui ignorent les couvertures partielles.||
+981|Grenade à photons||
+982|Cette unité gagne {0} de bonus d'impulsion chaque fois qu'une unité alliée est tuée.||
+983|Recouvre la cible d'un faisceau lumineux sophistiqué, offrant ainsi aux alliés situés dans un rayon de {0} cases une plus grande précision sur celle-ci <br><br>{1}||
+984|Effectue une attaque à distance avec +{0} % de dégâts, +{1} de perforation d'armure et des dégâts d'éclaboussement supplémentaires, mais chaque modèle a {2} % de chances de subir {3} de dégâts.||
+985|Ignore les effets de perte de précision lors d'un engagement en mêlée.||
+986|Un missile anti-véhicule qui inflige {0} de dégâts avec {1} de perforation d'armure à une portée maximale de {2} cases.<br><br>Attaque automatiquement les cibles touchées de Lumière de repérage.||
+987|Affecte tous les alliés dans un rayon de {0} cases autour d'un commandant T'au.||
+988|Annule les manœuvres de grande vitesse||
+989|Affecte tous les alliés dans un rayon de {0} cases.<br><br>{1}||
+990|Frappe de missiles à tête chercheuse||
+991|Frappe Manta||
+992|Faisceau ionique orbital||
+993|Tire deux missiles anti-véhicules sur des cibles séparées de {0} cases max, chacun infligeant {1} à {2} de perforation d'armure.||
+994|Lance une escouade de combi-mechas de crise sur la case cible.||
+995|Un rayon d'énergie aveuglant chauffé à blanc frappe la cible, endommageant également les cases à proximité. Inflige {0} de dégâts avec {1} de perforations d'armure sur la cible centrale, et {2} de dégâts avec {3} de perforations d'armure sur les cibles adjacentes.||
+996|Combi-mecha Invictor des Blood Angels||
+997|Combi-mecha Invictor||
+998|Canon Incendium||
+999|Double autostubber Ironhail||
+1000|Double autocanon Ironhail||
+1001|Poing d'Invictor||
+1002|Attribue {0} d'évasion et {1} de précision à distance sur la cible, ainsi que {2} d'évasion et {3} de précision à distance sur les cases à proximité pendant {4} tour(s). Supprime également les cumuls de Surveillance.||
+1003|<i>Un drone contrôlé par l'IA qui projette un bouclier qui repousse les tirs ennemis</i>||
+1004|<i>Un drone contrôlé par l'IA équipé de deux fusils à impulsion</i>||
+1005|<i>Un drone contrôlé par l'IA qui peut peindre les unités ennemies pour une meilleure précision</i>||
+1006|<i>Variante plus imposante et plus lourdement blindée de la combi-mecha de crise</i>||
+1007|<i>Une combi-mecha très avancée à la vitesse et l'agilité exceptionnelles</i>||
+1008|<i>Laissez uniquement des cendres derrière vous.</i>||
+1009|La technologie de furtivité à spectre lumineux rend l'unité invisible pendant {0} tours de sorte qu'elle ne peut pas être attaquée et ne déclenche pas d'attaques de réaction ou de zone de contrôle.||
+1010|<i>Brécher et nettoyer</i>||
+1011|<i>Personne ne peut résister à un tel assaut</i>||
+1012|<i>Les T'au se déplacent rapidement et silencieusement sur le champ de bataille</i>||
+1013|<i>La mort tombe du ciel</i>||
+1014|<i>L'expertise née d'innombrables batailles</i>||
+1015|<i>Il n'y a nulle part où se cacher</i>||
+1016|<i>Endurance à travers toutes les épreuves</i>||
+1017|<i>Les renforts sont arrivés</i>||
+1018|<i>Calculer les solutions de tir</i>||
+1019|<i>Rien ne survivra</i>||
+1020|<i>On ne peut pas tuer ce qu'on ne voit pas</i>||
+1021|Inébranlables dans leur dévouement. Implacables dans leur avancée. L'Empire T'au est jeune mais féroce. Il utilise des armes de pointe et d'imposantes combinaisons de combat pour balayer toute résistance à sa promesse d'illumination et d'unité.||
+1022|Annulez le Jet-boost.||0|Wirbelfäuste||

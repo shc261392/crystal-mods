@@ -1,0 +1,1433 @@
+1|Zakończ turę|
+2|Tura frakcji: {0}|
+3|Unik: {0}|
+4|Impet: {0}|
+5|Ukryj|
+6|Następna nieużywana jednostka|
+7|Zdrowie|
+8|Przód: {0}|
+9|Prawa: {0}|
+10|Tył: {0}|
+11|Lewa: {0}|
+12|Celność: {0}%|
+13|Obrażenia: {0}|
+14|Ataki: {0}|
+15|Amunicja: {0} / {1}|
+16|Nowa kampania|
+17|Wczytaj grę|
+18|Potyczka|
+19|Wielu graczy|
+20|Samouczek|
+21|Opcje|
+22|Wyjdź|
+23|Interakcja|
+24|Przyrost impetu: {0}|
+25|Impet: {0}|
+26|Nie można użyć czuwania w walce wręcz|
+27|Nie żyje|
+28|Brak jednostki do zaatakowania|
+29|Nie można atakować jednostek w tej samej drużynie|
+30|Koniec amunicji|
+31|Za mało punktów akcji|
+32|Włączono tryb ognia zaporowego|
+33|Wróg jest za blisko|
+34|Wróg jest poza zasięgiem|
+35|Wróg jest za pełną osłoną|
+36|W tej turze użyto umiejętności niebędącej ruchem|
+37|Odrzuć|
+38|Zablokowany teren|
+39|Za mało punktów ruchu|
+40|Nie można przejść na pole, na którym znajduje się już jednostka|
+41|Balistyczne|
+42|Walka wręcz|
+43|Ogniowe|
+44|Artyleria|
+45|Celność ({0}): {1}|
+46|Obrażenia ({0}): {1}|
+47|Obroń jednostkę|
+48|Ta jama nie jest połączona z inną jamą|
+49|Pancerz: {0}/{1}|
+50|Pokaż na ekranie wczytywania|
+51|Lobby główne|
+52|Niewykorzystane punkty akcji|
+53|Niektóre z Twoich jednostek mają niewykorzystane punkty akcji i otrzymają karę do impetu. Czy chcesz teraz zakończyć turę?|
+54|Pozostało: {0}|
+55|Ponad limit: {0}|
+56|Moja armia|
+57|Celność na impet: {0}|
+58|Unik na impet: {0}|
+59|Celność: {0}|
+60|Obrażenia: {0}|
+61|Dodatkowe ataki: {0}|
+62|Ostatnia szansa|
+63|Czuwanie<br><br>Ustaw strefę reagowania ogniem. Na zakończenie tury jednostka otrzyma niewielką karę do impetu.|
+64|Anuluj Czuwanie|
+65|Potwierdź zmiany|
+66|Gracz {0} poprosił o wprowadzenie zmian|
+67|Wycofaj zmiany|
+68|Celność:|
+69|Modyfikator dystansowy: {0}%|
+70|Walka wręcz: {0}%|
+71|Pancerz: {0}|
+72|Pancerz:|
+73|Ta postać wita się ze śmiercią...|
+74|Obrażenia w walce wręcz: {0}|
+75|Unik: {0}|
+76|Zmień kierunek|
+77|Ruch|
+78|Koszt|
+79|Punkty ruchu|
+80|Obrażenia|
+81|Kara za osłonę|
+82|Szansa na trafienie|
+83|Celność podstawowa|
+84|Kara za odległość|
+85|Unik wroga|
+86|W trybie czuwania nie można używać innych akcji|
+87|Ta jednostka nie może używać jam|
+88|Panika|
+89|Ruch: {0}|
+90|Celność dystansowa: {0}|
+91|Włącza tryb ruchu skokami|
+92|Powstrzymano -{0} PR|
+93|Celność w walce wręcz: {0}|
+94|Nie można używać jam wroga|
+95|Różnica pancerza|
+96|Nie można używać tej umiejętności w pobliżu innych jam|
+97|Ważne postacie dostają drugą szansę, gdy umierają. To jest liczba PZ, którą mają ważne postacie po ożywieniu.|
+98|<i>Zmiany w meczu zostały zaakceptowane</i>|
+99|<i>Zmiany w meczu zostały odrzucone</i>|
+100|Jednostka jest zupełnie zablokowana i nie może się poruszyć|
+101|Na tym polu ma się pojawić inna jama|
+102|Minimalny zasięg ruchu: {0}|
+103|Poniżej zasięgu minimalnego|
+104|PA|
+105|Obrażenia dystansowe: {0}|
+106|PZ po ożywieniu przy Ostatniej szansie|
+107|Gdy zrekrutujesz więcej postaci w Bazie, zostaną udostępnione dodatkowe drzewka technologii.|
+108|Rozpoczynanie tury...|
+109|20 PZ|
+110|Pełne PZ|
+111|Wydawaj tokeny Bazy, aby odblokowywać nowe umiejętności, bronie i ulepszenia statystyk dla postaci z Bazy i pokrewnych jednostek.|
+112|Gotowe|
+113|Muzyka|
+114|Efekty dźwiękowe|
+115|Głos|
+116|Dźwięk|
+117|Kamera|
+118|Grafika|
+119|Sterowanie / interfejs|
+120|Różne|
+121|Język|
+122|Szybkość powiększenia|
+123|Szybkość przesuwania|
+124|Szybkość obracania|
+125|Rozdzielczość|
+126|Zmienić rozdzielczość?|
+127|Rozdzielczość została zmieniona na {0}. Czy potwierdzasz tę zmianę?|
+128|OK|
+129|Potwierdź|
+130|Anuluj|
+131|Przywróć|
+132|Przywracanie za {0} s|
+133|Przywracanie za {0} s|
+134|Pełny ekran|
+135|Broń zablokowana (oczekiwanie)|
+136|Pamiętaj, że każda broń ma swój optymalny zasięg. Broń jest najskuteczniejsza, gdy cel znajduje się w optymalnym zasięgu.|
+137|Przesuń do krawędzi ekranu|
+138|Odwróć oś Y|
+139|Odwróć oś X|
+140|Odwróć powiększenie|
+141|Pokazuj napisy podczas przerywników filmowych|
+142|Pokazuj napisy dla odzywek|
+143|Chroń Brata Aeturo|
+144|Za mało wolnych sąsiadujących pól|
+145|Nie można używać pod ziemią|
+146|Nie można używać nad ziemią|
+147|Naciśnij <color=#C8914F>P</color>, aby przejść do następnej dostępnej jednostki mającej jeszcze co najmniej jeden <color=#C65C34>punkt akcji</color> do wydania.<br><br>Możesz też przełączać się między wszystkimi jednostkami za pomocą klawisza <color=#C8914F>TAB</color>.|
+148|Brak sąsiednich pól, na które można uciec|
+149|Otrzymano obrażenia dystansowe od trucizny: {0}|
+150|Otrzymano obrażenia w walce wręcz od trucizny: {0}|
+151|Otrzymano obrażenia dystansowe: {0}|
+152|Poza zasięgiem umiejętności|
+153|Umiejętność jest już aktywna|
+154|Otrzymano obrażenia w walce wręcz: {0}|
+155|Aktywowane, jeśli jednostka nie ruszyła się w bieżącej lub poprzedniej turze.|
+156|Możesz szybko skierować kamerę na wybraną jednostkę, naciskając klawisz <color=#C8914F><b>.</b></color>|
+157|Penetracja pancerza: {0}|
+158|Brak celu w zasięgu|
+159|Impet: {0}|
+160|Przestaje działać po {0} turze|
+161|Przestaje działać po {0} turach|
+162|Pancerz dystansowy: {0}|
+163|Pancerz w walce wręcz: {0}|
+164|Może brać na cel tylko jednostki mechaniczne|
+165|** nieużywane **|
+166|Otrzymano podstawowe obrażenia dystansowe: {0}|
+167|Otrzymano podstawowe obrażenia w walce wręcz: {0}|
+168|Może być celem ataku artylerii z dowolnego dystansu|
+169|Penetracja pancerza tej jednostki przez artylerię: {0}|
+170|Penetracja pancerza tej jednostki przez podstawowe obrażenia dystansowe: {0}|
+171|Oznaczono|
+172|<b>Tokeny Bazy</b><br>Za pomyślnie ukończone misje będziesz dostawać tokeny Bazy. Możesz je wydawać w Centrum ulepszeń Bazy, aby ulepszać swoje jednostki.|
+173|<b>Ulepszono pojemność armii</b><br>Zwiększono limit punktów armii!<br>Zwiększono limit jednostek armii!|
+174|<b>Ulepszono pojemność armii</b><br>Zwiększono limit punktów armii!|
+175|<b>Zarządzanie armią</b><br>Na ekranie Zarządzanie armią możesz dodawać jednostki do swojego wojska.|
+176|Dodawaj jednostki, aby uzupełnić swoje wojsko. Wyślij jednostki do rezerwy, gdy chcesz zwolnić miejsce dla nowych jednostek.|
+177|{0:+#;-#;+0} PZ|
+178|Szansa aktywacji: {0} {2}|
+179|Cel ma już pełne zdrowie|
+180|Każda jednostka składa się na łączną liczbę punktów Twojej armii. Gdy jednostki zostaną wyposażone w nowo odblokowane bronie, ich koszt będzie większy.|
+181|** nieużywane **|
+182|Może brać na cel tylko jednostki organiczne|
+183|Zadano {0} pkt obrażeń na koniec tury|
+184|Przestaje działać na koniec tury|
+185|Trucizna|
+186|Zbierz genoziarna poległych braci|
+187|Zniszcz wszystkich Tyranidów|
+188|** nieużywane **|
+189|Naciśnij {0}, aby ponownie zablokować kamerę|
+190|** nieużywane **|
+191|** nieużywane **|
+192|Jednostka jest martwa przez zbyt długi czas|
+193|Wstecz|
+194|Kontynuuj|
+195|Rozegraj misję|
+196|Zarządzanie armią|
+197|Misja ukończona|
+198|Misja nieudana|
+199|Wróć do menu głównego|
+200|Wrócić do menu głównego?|
+201|Czy na pewno chcesz wrócić do menu głównego? Wszelkie niezapisane postępy zostaną utracone.|
+202|Poziom trudności|
+203|Astartes|
+204|Porucznik|
+205|Kapitan kompanii|
+206|Dodaj jednostkę|
+207|Lista rezerwy|
+208|Członkowie|
+209|PZ|
+210|Armia pełna|
+211|Twoja aktywna armia jest obecnie pełna. Zanim będzie można przenieść nowe jednostki do armii, konieczne będzie umieszczenie części jednostek na liście rezerwy.|
+212|Sprawdź|
+213|Ulepsz|
+214|Rezerwa|
+215|{0} pkt|
+216|Historia|
+217|Zestaw broni|
+218|Zmień|
+219|Ranga|
+220|PD|
+221|Zablokowano|
+222|Efekt statusu uniemożliwia ruch|
+223|Efekt statusu uniemożliwia atakowanie|
+224|Ulepszone|
+225|Nie odblokowano żadnych misji|
+226|Zablokowano możliwość ruchu|
+227|Zablokowano możliwość ataku|
+228|{0} pkt akcji|
+229|Pokaż listę jednostek|
+230|Menu główne|
+231|Frakcja|
+232|Rozpocznij potyczkę|
+233|Rozegraj ponownie misję z kampanii|
+234|Randomizuj|
+235|Rozpocznij|
+236|Cel|
+237|Mapa|
+238|Gracz|
+239|AI|
+240|Wielkość armii|
+241|Exterminatus|
+242|<b>Unicestwij wszystkich, co do jednego.</b><br><br>Zniszcz jednostki przeciwnika. Liczba punktów zdobywanych w meczu zależy od wartości punktów armii zniszczonej jednostki.|
+243|Zdobywca|
+244|<b>Kontroluj strefę celu, aby zapanować nad polem bitwy.</b><br><br>Na czasie fazy punktowania przyznawane są punkty zależnie od liczby jednostek w tej strefie:<br><br>• +5 pkt, jeśli kontrolujesz co najmniej jedną jednostkę w strefie<br><br>• +5 pkt, jeśli kontrolujesz więcej jednostek w strefie niż przeciwnik<br><br>• +5 pkt, jeśli przeciwnik nie ma żadnych jednostek w strefie<br><br>W jednej turze można zdobyć maksymalnie 15 pkt.|
+245|Dowództwo strategiczne|
+246|<b>Zajmuj punkty kontroli na polu bitwy.</b><br><br>Wchodź w interakcje z punktami kontroli, aby zajmować je dla swojego zespołu. Jeśli punkt kontroli jest niestrzeżony, może zostać zajęty przez jednostkę przeciwnika.<br><br>• +5 pkt za zabezpieczony punkt kontroli<br><br>Punkty są przyznawane w fazie punktowania. W jednej turze można zdobyć maksymalnie 25 pkt.|
+247|Strefa śmierci|
+248|Jednostki wroga będą starały się dotrzeć do punktu ewakuacyjnego. Aby zwyciężyć, zabij lub zniszcz jednostki warte 50% wartości punktów wroga, zanim zdołają uciec.|
+249|Ewakuacja|
+250|Punkt ewakuacyjny znajduje się po drugiej stronie mapy. Aby zwyciężyć, pomóż jednostkom wartym X punktów dotrzeć do punktu ewakuacyjnego.|
+251|Genoziarno|
+252|Na mapie znajdują się poległe Krwawe Anioły (użyj punktów dominacji). Aby zwyciężyć, Krwawy kapłan musi je zebrać. (Do armii gracza musi należeć Krwawy kapłan).|
+253|Relikt|
+254|Na mapie znajduje się święty relikt. Aby zwyciężyć, odzyskaj go i przynieś do punktu ewakuacyjnego. Jeśli jednostka niosąca relikt zostanie zabita, przedmiot zostanie upuszczony. Śmierć wszystkich jednostek oznacza przegraną.|
+255|Pożarcie|
+256|Zbieraj punkty zwycięstwa za każdego zabitego organicznego wroga. Aby zwyciężyć, musisz uzyskać pewną liczbę punktów zwycięstwa. Śmierć wszystkich jednostek oznacza przegraną.|
+257|Wielki rój|
+258|Aby zwyciężyć, musisz umieścić jednostki na wszystkich punktach dominacji na mapie.|
+259|Nie skonfigurowano armii|
+260|Żadna frakcja nie ma armii zawierającej jednostki. Dodaj jednostki do armii za pomocą przycisku Zarządzanie armią.|
+261|Nie skonfigurowano armii|
+262|Wybrana frakcja gracza nie ma żadnych jednostek w armii. Dodaj jednostki do armii za pomocą przycisku Zarządzanie armią.|
+263|Ten cel wymaga co najmniej jednej jednostki {0}|
+264|{1}% szansy na zadanie {0} pkt obrażeń sobie podczas ataku|
+265|Zasięg|
+266|{0} na pole|
+267|Pogorszenie celności|
+268|Obrażenia podstawowe|
+269|PR|
+270|{0} PR|
+271|{0} PP / {1} pkt pancerza|
+272|{0}% skuteczności|
+273|Premia jednostki|
+274|Zawsze trafia|
+275|Już użyto|
+276|Broń|
+277|Penetracja pancerza|
+278|Ignoruje kary za ruch w trudnym terenie|
+279|Zaskocz mnie|
+280|Nie można używać tej broni w walce wręcz|
+281|{0} PD|
+282|{0} PKT|
+283|Armia|
+284|{0}/{1} PKT|
+285|Przekroczono limit punktów|
+286|Liczba punktów jednostek przekracza limit punktów dla tej misji.|
+287|Niespełnione wymagania|
+288|Aby rozegrać tę misję, musisz mieć pewne jednostki w swojej armii:|
+289|Zapisz grę|
+290|Zapisz|
+291|Wczytaj|
+292|Zapisywać można tylko podczas tury gracza|
+293|Nie można zapisywać podczas fazy wyposażania|
+294|Nie można zapisywać przerywnika filmowego|
+295|Nie można zapisywać podczas ruchu jednostek|
+296|Zapis ręczny|
+297|Zapis automatyczny|
+298|Podgląd misji w kampanii|
+299|Bitwa podczas kampanii|
+300|Bitwa podczas potyczki|
+301|Puste|
+302|Filtry|
+303|Cele|
+304|Impet|
+305|Unik|
+306|Stabilność dystansowa|
+307|Celność w walce wręcz|
+308|Maks.|
+309|Wymagana ranga: {0}|
+310|Ranga: {0}|
+311|Dostępne PD: {0}|
+312|Zdobyte PD razem: {0}|
+313|Przydzielone PD: {0}|
+314|Poziom {0}|
+315|Gniazdo {0}|
+316|Brak|
+317|Statystyki|
+318|Bronie|
+319|Umiejętności|
+320|Resetuj|
+321|Zresetować rangi dla: {0}?|
+322|Czy na pewno chcesz zresetować rangi dla: {0}? Spowoduje to utratę {1}% ({2} PD) całkowitej liczby zdobytych PD tej jednostki.|
+323|Odbudowywanie jedności|
+324|Nazwa zapisu gry|
+325|Jak chcesz nazwać nowy zapis gry?|
+326|Ta jednostka jest obecnie zajęta i nie może przyjmować rozkazów|
+327|Przywróć|
+328|Liczba tur: {0}|
+329|{0} tura|
+330|Stabilność dystansowa: {0}|
+331|Maksymalne PZ: {0}|
+332|Bieżące PZ: {0}|
+333|Dodatkowe ataki wręcz: {0}|
+334|Szansa aktywacji: {0}|
+335|Dodatkowe ataki dystansowe: {0}|
+336|Nie można brać na cel pól, na których trwa walka wręcz|
+337|Cel jest za wysoko|
+338|Cel jest za nisko|
+339|Pudło|
+340|Pełne naładowanie|
+341|Strefa promieniowania|
+342|Nowe|
+343|Usuń armię|
+344|Usuń|
+345|Wybierz frakcję|
+346|Wybierz jednostkę|
+347|Usunąć jednostkę?|
+348|Czy na pewno chcesz usunąć tę jednostkę „{0}”?|
+349|Zmień nazwę armii|
+350|Wybierz nową nazwę dla armii|
+351|Usunąć armię?|
+352|Czy na pewno chcesz usunąć armię „{0}”?|
+353|Punkty|
+354|Nie można usunąć armii|
+355|Bieżąca armia jest ostatnią dostępną armią frakcji „{0}”, więc nie można jej usunąć.|
+356|Nowy profil|
+357|Wybierz nazwę nowego profilu|
+358|Profil już istnieje|
+359|Profil o tej samej nazwie już istnieje.|
+360|Profil|
+361|Armia|
+362|Logowanie do konta Slitherine|
+363|Wpisz poniżej nazwę użytkownika i hasło do konta Slitherine, aby się zalogować|
+364|Nazwa użytkownika|
+365|Hasło|
+366|Zaloguj się|
+367|Nieprawidłowa nazwa użytkownika lub hasło|
+368|Łączenie...|
+369|Utwórz mecz|
+370|Utwórz|
+371|Twoja frakcja|
+372|Nazwa meczu|
+373|Czasomierz tur|
+374|Mecz: {0} — {1}|
+375|Dołącz|
+376|Dołączanie...|
+377|Ochrona hasłem|
+378|Frakcja pretendująca|
+379|Pretendent|
+380|Hasło do meczu|
+381|Wpisz hasło do tego meczu.|
+382|Nie można dołączyć do meczu|
+383|Nieprawidłowe hasło do meczu.|
+384|Otwarte mecze|
+385|Aktywne mecze|
+386|Opuść|
+387|Kontynuuj|
+388|Opuścić mecz?|
+389|Czy na pewno chcesz opuścić ten mecz?|
+390|Opuszczanie...|
+391|Błąd podczas opuszczania meczu|
+392|Data ważności|
+393|Tura|
+394|Twoja tura|
+395|Gracz 1|
+396|Gracz 2|
+397|Tworzenie meczu...|
+398|Błąd podczas tworzenia meczu|
+399|Puste armie|
+400|Niektóre frakcje nie mają jednostek w armiach. Musisz dodać jednostki do co najmniej jednej armii każdej z tych frakcji:|
+401|Ten mecz został utworzony przez Ciebie. Nie możesz grać przeciwko sobie w meczu dla wielu graczy.|
+402|Filtry wyszukiwania|
+403|Frakcje pretendujące|
+404|Mecze publiczne|
+405|Mecze prywatne|
+406|Nie można zapisywać gry w trybie dla wielu graczy|
+407|Wybierz swoje wyposażenie|
+408|Kontynuowanie meczu...|
+409|Wysyłanie tury...|
+410|Drugi gracz wyszedł|
+411|Gracz 1 wygrał|
+412|Gracz 2 wygrał|
+413|Oczekiwanie na zakończenie akcji przez pozostałe jednostki|
+414|Wyposażenie — broń|
+415|Wykonano już ruch w tej turze.|
+416|Ścieżka jest zbyt złożona, aby można było wykonać szarżę. Ścieżka nie może przebiegać przez jednostki ani ściany. Nie może też być za bardzo kręta.|
+417|Przytłoczenie|
+418|Punkty akcji|
+419|Punkty ruchu|
+420|Pancerz|
+421|W walce|
+422|Celność dystansowa broni niebędących pistoletami: {0}|
+423|Bezpośredni atak z tyłu|
+424|Atak z flanki z tyłu|
+425|Wycofaj się|
+426|Brak dostępnych punktów akcji|
+427|Pole docelowe wycofania jest zablokowane|
+428|Brak dostępnych punktów ruchu|
+429|Zużywa wszystkie punkty ruchu|
+430|Statystyki zyskiwane przy wycofaniu|
+431|Szansa na trafienie krytyczne|
+432|Szansa na trafienie krytyczne: {0}|
+433|Szansa na trafienie krytyczne na impet: {0}|
+434|Draśnięcie|
+435|KRYTYK!|
+436|Wszystkie bronie zadają obrażenia rozpryskowe|
+437|Penetracja pancerza z dystansu: {0}|
+438|Penetracja pancerza w walce wręcz: {0}|
+439|Umożliwia latanie|
+440|Dodatkowe tury efektu {0}: +{1}|
+441|Nie można brać na cel tej frakcji|
+442|Pozwala reagować na ataki wręcz i szarże ze wszystkich stron.|
+443|Zdrowie na turę: {0}|
+444|Ściana|
+445|Tryb sterowania|
+446|Klawiatura i mysz|
+447|Kontroler|
+448|Zmienić tryb sterowania?|
+449|Tryb sterowania został zmieniony na: {0}. Czy potwierdzasz tę zmianę?|
+450|PKT|
+451|Zarezerwowane|
+452|Rozmieszczone|
+453|Hot Seat|
+454|Tryb asynchroniczny|
+455|Centrum ulepszeń Bazy|
+456|Umiejętność|
+457|Umiejętność rozkazu|
+458|Statystyka|
+459|Zdobyte tokeny|
+460|Misja ukończona|
+461|Cel dodatkowy|
+462|PZ na model: {0}|
+463|Zasięg wykrywania: {0}|
+464|Zasięg stożka wykrywania: {0}|
+465|Kąt stożka wykrywania: {0}|
+466|Ulepsz|
+467|Wyładuj|
+468|Dodaje status {0} po zakończeniu działania tego statusu|
+469|Odblokowano!|
+470|Ulepszenia dowództwa Bazy|
+471|Rozmieszczenie jednostki|
+472|Akceptuj|
+473|Umiejętności rozkazów|
+474|PR|
+475|Za mało punktów rozkazów|
+476|Nie możesz użyć tej umiejętności przeciwko wrogiej jednostce|
+477|Na tej mapie nie są dozwolone umiejętności rozkazów|
+478|Nawigacja|
+479|Wyjdź z grupy|
+480|Wejdź do grupy|
+481|Lista jednostek|
+482|Wybierz jednostkę|
+483|Zamknij listę|
+484|Mapa taktyczna|
+485|Zamknij mapę taktyczną|
+486|Nazwa jednostki|
+487|Wyeliminowani wrogowie|
+488|Nieprawidłowy numer seryjny|
+489|Numer seryjny|
+490|Wyloguj się|
+491|Ukryj sztandary jednostek|
+492|Zapisz zrzut ekranu|
+493|Ukryj interfejs|
+494|Tryb obracania|
+495|Pole widzenia|
+496|Przechył kamery|
+497|Odległość ostrości|
+498|Głębia ostrości|
+499|Przysłona|
+500|Ekspozycja|
+501|Nasycenie|
+502|Kontrast|
+503|Temperatura|
+504|Tryb fotograficzny — kamera|
+505|Obramowanie|
+506|Znak|
+507|Położenie znaku|
+508|Tryb fotograficzny — ostrość|
+509|Tryb fotograficzny — kolor|
+510|Tryb fotograficzny — ramka|
+511|Przywróć domyślne|
+512|Winieta|
+513|Naciśnij {0}, aby wyświetlić interfejs|
+514|Lewy górny róg|
+515|Prawy górny róg|
+516|Lewy dolny róg|
+517|Prawy dolny róg|
+518|Logo Battlesector|
+519|Logo Warhammer 40K|
+520|Paski kinowe|
+521|Niestandardowe|
+522|Żywe chłodne|
+523|Żywe ciepłe|
+524|Klasyczna czerń i biel|
+525|Noir|
+526|Orbita|
+527|Przelatywanie|
+528|Filmy|
+529|Zrzuty ekranu|
+530|Przeglądarka multimediów|
+531|Usunąć zrzut ekranu?|
+532|Czy na pewno chcesz usunąć ten zrzut ekranu?|
+533|{0}{1}{2}{3} Przesuwaj kamerę / {4} Skup się na celu / {5} Obróć / {6} Zapisz zrzut ekranu / {7} Ukryj interfejs / {8} Wyjdź / {9} Unieś kamerę / {10} Opuść kamerę|
+534|Przesuwaj kamerę|
+535|Skup się na celu|
+536|Obróć|
+537|aby wyświetlić interfejs|
+538|Naciśnij {0}, aby ukryć|
+539|aby ukryć|
+540|Tryb fotograficzny|
+541|Trwa|
+542|Oczekiwanie na drugiego gracza...|
+543|Gotowość|
+544|(Oczekiwanie na gracza)|
+545|Gospodarz wyszedł|
+546|Gospodarz opuścił mecz|
+547|Gracz wyszedł|
+548|Gracz opuścił mecz|
+549|Wycisz|
+550|Lobby|
+551|Bitwa|
+552|Brak aktywnej bitwy|
+553|Dodaj|
+554|Usuń|
+555|Rozłączono|
+556|Nastąpiła utrata połączenia. Próba ponownego połączenia... Pozostało: {0} s.|
+557|Inny gracz został rozłączony. Próba ponownego połączenia... Pozostało: {0} s.|
+558|Nastąpiło rozłączenie z bieżącym meczem|
+559|Gra jako <color=#{2}>{0}</color> <color=#{3}>{1}</color>|
+560|Pozostały czas: {0}|
+561|Online|
+562|Offline|
+563|∞|
+564|Odśwież|
+565|Umiejętność zablokowana (oczekiwanie)|
+566|Gracze|
+567|Pokaż szczegółowe informacje o wrogach|
+568|Wybierz|
+569|Wybierz rozkaz|
+570|Dostępne punkty rozkazów: {0}|
+571|Wyjść bez potwierdzenia zmian?|
+572|Czy na pewno chcesz wyjść bez potwierdzenia ulepszeń? Wszystkie niepotwierdzone zmiany zostaną zresetowane.|
+573|Kup|
+574|Ulepszenia Bazy|
+575|Ożyw: {0}|
+576|Aktywne jednostki|
+577|Rezerwy|
+578|Bronie|
+579|Umiejętności|
+580|{0} z {1}|
+581|Dodaj jednostkę do armii|
+582|Przenieś jednostkę do rezerwy|
+583|Przenieś jednostkę do armii|
+584|Usuń jednostkę|
+585|Przegląd|
+586|Kontrola armii|
+587|Utwórz nową armię|
+588|Usunąć profil?|
+589|Czy na pewno chcesz usunąć bieżący profil?|
+590|Nie można wziąć na cel martwej jednostki, gdy inna jednostka stoi na polu tej jednostki|
+591|Wykonuje atak dystansowy na wroga:|
+592|Wycisz czat w grze|
+593|Zaproś znajomego|
+594|Uruchom|
+595|Czat na żywo|
+596|Dostępne gry|
+597|Trwające gry|
+598|Lobby trybu dla wielu graczy na żywo|
+599|Lobby trybu asynchronicznego dla wielu graczy|
+600|Nazwa|
+601|Puste miejsce|
+602|Dane meczu|
+603|Dane wybranego meczu|
+604|Nie znaleziono meczów|
+605|Moja tura|
+606|Tura wroga|
+607|Kampania|
+608|Era Karmazynowego Świtu|
+609|Dostępne są nowe jednostki|
+610|Opcje kampanii|
+611|Ustawienia trudności|
+612|Posiłki|
+613|Ulepszone jednostki wroga|
+614|Koszty ulepszenia broni|
+615|Mniejsze nagrody za tokeny Bazy|
+616|Mniejsze limity punktów armii|
+617|Większy impet wroga|
+618|Mniejszy impet i wolniejszy przyrost PR|
+619|Poziom trudności AI wroga|
+620|Niski|
+621|Średni|
+622|Wysoki|
+623|Standardowy|
+624|Określa liczbę jednostek uzyskiwanych przez wrogów w ramach posiłków.|
+625|Zwiększa statystyki wrogich jednostek, aby bitwy były trudniejsze.|
+626|Wpływa na ilość impetu zyskiwanego przez wrogie jednostki podczas walki.|
+627|Zmienia zachowanie AI wroga, co wpływa na poziom trudności.|
+628|Wpływa na wartość punktów dodawaną przez ulepszenie broni jednostki do punktów armii.|
+629|Wpływa na liczbę tokenów Bazy otrzymywanych na zakończenie misji.|
+630|Wpływa na liczbę punktów, z którymi można zacząć misję.|
+631|Wpływa na ilość impetu zyskiwanego przez Twoje jednostki, a także na uzyskiwaną liczbę punktów rozkazów.|
+632|Przesuwaj kamerę za pomocą klawiszy <color=#C8914F><b>WASD</color></b> lub strzałek albo klikając i przeciągając lewym przyciskiem myszy.|
+633|Obracaj kamerę środkowym przyciskiem myszy, klawiszami <color=#C8914F><b>Q</b></color> i <color=#C8914F><b>E</b></color> lub poruszając myszą z naciśniętym klawiszem ALT.|
+634|Zaznacz jednostkę <color=#C8914F>lewym</color> przyciskiem myszy.|
+635|<b>RUCH</b><br><br>Skieruj jednostkę do <color=#C8914F>celu</color>, klikając pole prawym przyciskiem myszy. Obok kursora wyświetlany jest koszt w <color=#6380AD>punktach ruchu</color>.|
+636|ZNISZCZ WSZYSTKICH TYRANIDÓW|
+637|***NIEUŻYWANE***|
+638|<b>INTERAKCJA</b><br><br>Możesz wchodzić w interakcje z panelami sterowania i celami, stojąc na sąsiednim polu. Otwórz bramę, używając przycisku <color=#C8914F>Interakcja</color> lub klawisza dostępu <color=#C8914F><b>I</b></color>.|
+639|Przesuń (Z) jednostkę Orędownik na podświetlone pole.|
+640|<b>ZASIĘG WYKRYWANIA</b><br><br><color=#C8914F>Zasięg wykrywania</color> jednostki jest oznaczony <color=#37FCFA>linią na auspeksie</color>. Wrogie jednostki poza zasięgiem pozostaną ukryte.|
+641|Użyj opcji Zmień kierunek (<b><color=#C8914F>G</color></b>) z paska rozkazów i wybierz wskazane pole lub kliknij jednostkę prawym przyciskiem myszy i przeciągnij w kierunku, w którym ma być zwrócona.|
+642|<b>ATAKI DYSTANSOWE</b><br><br>Na skuteczność ataku dystansowego wpływają dwa czynniki: <color=#C8914F>linia wzroku</color> oraz <color=#C8914F>optymalny zasięg</color> broni.|
+643|Nie masz wroga bezpośrednio w zasięgu wzroku. Przesuń się na pole celu, klikając <color=#C8914F>prawym przyciskiem myszy</color>, aby mieć lepszą pozycję do ataku.|
+644|To optymalna pozycja do przeprowadzenia ataku Orędowników na osłabione hormagunty. <color=#C8914F>Kliknij prawym przyciskiem myszy</color> wroga, aby go zaatakować.|
+645|<b>ZAZNACZONA JEDNOSTKA</b><br><br>Panel zaznaczonej jednostki zawiera kluczowe informacje na temat tej jednostki, takie jak <color=#8CBA61>zdrowie</color>, <color=#45D8FF>impet</color> oraz dostępne <color=#6380AD>punkty ruchu</color> i <color=#C65C34>punkty akcji</color>.|
+646|***NIEUŻYWANE***|
+647|<b>CZUWANIE</b><br><br>Nie marnuj ataków na tchórzy kryjących się za osłoną! Użyj <color=#C8914F>Czuwania</color>, aby zaatakować pierwszego wroga, który wejdzie w strefę reagowania.|
+648|Wszystkie punkty akcji i ruchu zostały wykorzystane.<br>Czas zakończyć turę.|
+649|Niech Imperator zlituje się nad Twą duszą.|
+650|Przybliżaj kamerę kółkiem myszy lub klawiszami <color=#C8914F><b>R</b></color> i <color=#C8914F><b>F</b></color>.|
+651|Przesuń Orędowników w sąsiedztwo panelu sterowania.|
+652|Skieruj Orędowników do oznaczonej strefy kontroli wroga i wydaj rozkaz Wycofaj się.|
+653|<b>INFORMACJE O ATAKU</b><br><br><color=#C8914F>Kliknij lewym przyciskiem myszy</color> wroga, aby wyświetlić szczegółowe informacje o ataku.|
+654|<b>WYCOFAJ SIĘ</b><br><br>Twój Orędownik został zaatakowany i obecnie jest w stanie <color=#C8914F>walki</color>z hormaguntami.|
+655|***NIEUŻYWANE***|
+656|***NIEUŻYWANE***|
+657|Wyeliminuj hormagunty za pomocą umiejętności <color=#C8914F>Granat odłamkowy</color>.|
+658|Wybierz innego Orędownika (<color=#C8914F>klikając lewym przyciskiem myszy</color>) i skieruj go na pole celu.|
+659|Naciśnij <color=#C8914F><b>O</b></color> i ustaw strefę <color=#C8914F>czuwania</color> w optymalnym zasięgu karabinu bolterowego prawym przyciskiem myszy. Jednostka zacznie strzelać do pierwszego wroga, który wejdzie na dowolne pole w strefie.|
+660|Wydaj rozkaz Wycofaj się (<color=#C8914F><b>U</b></color>) i wskaż hormagunty. Poruszając się w kierunku przeciwnego pola, Orędownicy uzyskają dużą premię do obrony.|
+661|***NIEUŻYWANE***|
+662|<b>LISTA JEDNOSTEK</b><br><br>Lista jednostek umożliwia łatwe znajdowanie i wybieranie jednostek o różnych rolach.<br><br>Przejdź do roli Baza i wybierz Krwawego kapłana.|
+663|<b>UMIEJĘTNOŚCI DOWÓDZTWA BAZY</b><br><br>Jednostka głównodowodząca Twoich sił ma dostęp do umiejętności dowództwa Bazy, które są unikatowe dla każdej frakcji. Umiejętności te wymagają <color=#C8914F>punktów rozkazów</color>, które zyskuje się podczas bitwy.|
+664|Kliknij wskaźnik Umiejętności rozkazów (<color=#C8914F><b>C</b></color>), wybierz umiejętność Ostrzał z działka szturmowego i zabij hormagunty.|
+665|Możesz zakończyć bitwę tak, jak tylko chcesz.<br><br>Chwała Imperatorowi!|
+666|<b>WSKAZÓWKA:</b> Umiejętność Ostrzał z działka szturmowego działa na WSZYSTKIE jednostki na linii składającej się z czterech pól. Zaznacz pierwsze pole docelowe, a następnie drugie, oddalone o trzy pola. Postaraj się, aby w zaznaczonej strefie znalazło się jak najwięcej guntów.|
+667|***NIEUŻYWANE***|
+668|Skieruj pozostałego Orędownika do osłony korytarza.|
+669|Ulepszone|
+670|Ta jednostka jest w pełni naładowana. Wybierz, czy chcesz ulepszyć umiejętność czy zyskać status wyładowania w następnej turze (+1 PA).|
+671|Ta jednostka jest w pełni naładowana. W następnej turze uzyska +1 PA.|
+672|Członkowie jednostki|
+673|Jednostki z PA|
+674|Uzyskano punkt rozkazu|
+675|Ataki wręcz|
+676|Ataki dystansowe|
+677|Zabójstwa w tej bitwie i łączna liczba zabójstw w karierze|
+678|Zabójstwa w walce wręcz|
+679|Celność w walce wręcz|
+680|Zabójstwa w walce dystansowej|
+681|Celność w walce dystansowej|
+682|Użycia w tej bitwie i łączna liczba użyć w karierze|
+683|Naciśnij {0}, aby kontynuować|
+684|**Nie ustawiono**|
+685|Bieżący wybór języka|
+686|Wybiera losowo wszystkie opcje bitwy|
+687|Wybiera losowo wszystkie opcje i rozpoczyna bitwę|
+688|Utwórz nowy profil o nazwie:|
+689|Liczba pól ruchu tej jednostki. Poruszanie się po kolejnych polach zużywa punkty akcji.|
+690|Aktywowane, gdy przynajmniej połowa punktów ruchu jednostki została zużyta w bieżącej lub poprzedniej turze.|
+691|Liczba akcji, które może wykonać ta jednostka. Niektóre potężne umiejętności mogą kosztować więcej niż 1 PA.|
+692|Obniża obrażenia zadawane przez ataki wroga. Skuteczność pancerza zmniejsza statystyka broni Penetracja pancerza.|
+693|Gdy impet osiągnie 100, ta jednostka wejdzie w stan naładowania.|
+694|Jednostka Dowództwo Bazy armii zdobywa punkty rozkazów za każdym razem, gdy sojusznicza jednostka uzyskuje impet, zostaje zabita lub osiągnie cel.|
+695|To jest jednostka Dowództwo Bazy armii. Podczas bitwy będzie ona zdobywać punkty rozkazów, które można wykorzystać do aktywacji umiejętności rozkazów Bazy.|
+696|Ukryj/pokaż listę jednostek.|
+697|Przejdź do następnej nieużywanej jednostki.|
+698|Punkty rozkazów|
+699|Dowództwo Bazy|
+700|Ukryj listę jednostek|
+701|Brak umiejętności do wzmocnienia|
+702|Wybrano niewłaściwą frakcję|
+703|Wybierz armię {0}, aby rozegrać tę misję kampanii|
+704|Potrzebne jednostki obowiązkowe|
+705|Następujące jednostki obowiązkowe zostaną dodane do Twojej armii:|
+706|<i>Są Obrońcami Ludzkości i nie znają strachu.</i> <br><br>Domyślny poziom trudności w grze Battlesector. Do pokonania czekających Cię wyzwań będziesz potrzebować taktyki i siły.|
+707|<i>W ponurych ciemnościach dalekiej przyszłości jest tylko wojna.</i> <br><br>Misje będą trudniejsze, a nagrody — skromniejsze. Dodatkowe wyzwanie bez ingerowania w system walki.|
+708|<i>Krzykom niewinnych i błaganiom prawych towarzyszy okrutny śmiech Mrocznych Bogów.</i> <br><br>Wrogowie będą wytrzymalsi i będą atakować mocniej. Misje nie będą wybaczać błędów i wszystko sprzysięgnie się przeciw Tobie. Zalecane tylko dla doświadczonych graczy w Battlesector.|
+709|Dołącz do nas na Discordzie|
+710|Gracz {0} dołączył do lobby|
+711|Gracz {0} opuścił lobby|
+712|Gracz {0} dołączył do meczu|
+713|Użytkownik|
+714|Ukryj hasło|
+715|Włączone rozmycie ruchu|
+716|Włączona synchronizacja pionowa|
+717|Jakość|
+718|Zbierz|
+719|Naciśnij {0}, aby nie ukrywać|
+720|Pokazuj szczegółowe informacje bitewne podczas tury wroga|
+721|Naciśnij {0}, aby ukryć|
+722|Efekty cząsteczkowe w interfejsie|
+723|Strefa kontroli|
+724|Atak odwetowy pistoletem|
+725|{0}, aby zaznaczyć cel /|
+726|{0} na celu, aby uzyskać szczegółowe informacje /|
+727|{0} lub {1} na pustym polu, aby anulować|
+728|{0}, aby zaznaczyć sojusznika /|
+729|{0}, aby zaznaczyć wroga /|
+730|{0}, aby zaznaczyć pole /|
+731|Szansa trafienia|
+732|<i>W najczarniejszej godzinie są płonącym światłem nadziei.</i><br><br>Dla graczy, którzy dopiero zaczynają przygodę z grami strategicznymi lub chcą bezstresowo poznać fabułę kampanii.|
+733|Nowicjusz|
+734|Czuwanie|
+735|OMINIĘTO BARIERĘ BEZPIECZEŃSTWA|
+736|WYKRYTO WROGIE JEDNOSTKI|
+737|WROGIE JEDNOSTKI WYELIMINOWANE|
+738|WZMOCNIENIE JEDNOSTKI BAZY|
+739|POSIŁKI PIECHOTY|
+740|Normalna szybkość: {0}<br>Przewiń do przodu: {1}<br>Pomiń: {2}|
+741|Optymalne|
+742|Pomiń ramkę: {0}|
+743|Zaznacz/odznacz jednostkę|
+744|Wykonaj akcję|
+745|Następna jednostka|
+746|Przesuń kamerę w lewo|
+747|Przesuń kamerę w prawo|
+748|Przesuń kamerę do przodu|
+749|Przesuń kamerę do tyłu|
+750|Zmień przypisania sterowania|
+751|Błąd trybu dla wielu graczy|
+752|Wersja klienta {0} jest nieaktualna. Zaktualizuj grę, aby połączyć się z serwerem trybu dla wielu graczy.|
+753|Zmień przypisanie|
+754|Naciśnij klawisz, aby zmienić przypisanie akcji „{0}”<br>Przywrócenie za {1} s|
+755|Naciśnij przycisk myszy, aby zmienić przypisanie akcji „{0}”<br>Przywrócenie za {1} s|
+756|Zresetować sterowanie?|
+757|Czy na pewno chcesz zresetować wszystkie przypisania sterowania do ustawień domyślnych?|
+758|{0} i {1} mają przypisany ten sam klawisz|
+759|Obróć kamerę w lewo|
+760|Obróć kamerę w prawo|
+761|Przybliż|
+762|Oddal|
+763|Przejdź do trybu ruchu|
+764|Gniazdo broni/umiejętności 1|
+765|Gniazdo broni/umiejętności 2|
+766|Gniazdo broni/umiejętności 3|
+767|Gniazdo umiejętności 4|
+768|Gniazdo umiejętności 5|
+769|Gniazdo umiejętności 6|
+770|Gniazdo umiejętności 7|
+771|Uruchom/zamknij tryb fotograficzny|
+772|Pokaż/ukryj listę jednostek|
+773|Nagrody|
+774|Lista armii|
+775|Wybór mapy|
+776|Typ terenu|
+777|Wielkość mapy|
+778|Ruiny|
+779|Osada|
+780|Factorum|
+781|Jednostki elitarne|
+782|Cechy frakcji|
+783|Opis|
+784|<b>Zaawansowany samouczek bitewny</b><br>W tym samouczku poznasz pojęcia ataków z szarżą, kontrataków wręcz i <color=#45D8FF>impetu</color>.<br><br>Zaznacz wskazaną jednostkę hormaguntów.|
+785|<b>Szarża</b><br>Ataki z szarżą wymagają prostej drogi do odległego celu. Szarżujące jednostki zyskują +1 <color=#6380AD>punkt ruchu</color> i nie podlegają kontratakom wręcz.<br><br><color=#C8914F>Kliknij prawym przyciskiem myszy</color> tych Szturmowych marines, aby ich zaatakować z szarżą.|
+786|Przesuń hormagunta z powrotem na wskazane pole.|
+787|<b>Atak odwetowy pistoletem</b><br><color=#C8914F>Pistolety</color> zapewniają darmowy atak odwetowy przeciwko szarżom. Podobnie jak w przypadku czuwania, odpowiednia ilość obrażeń od trafień powoduje, że jednostka traci <color=#6380AD>punkty ruchu</color>.<br><br>Może to spowodować, że szarżująca jednostka nie osiągnie celu!|
+788|Przesuń te hormagunty, wykorzystując pozostały <color=#C65C34>punkt akcji</color> i skróć dystans do wroga.<br><br>Dzięki temu w następnej turze Szturmowi marines nie będą mogli szarżować.|
+789|Druga jednostka hormaguntów jest w dużo lepszej pozycji do szarży na swój cel.|
+790|Ataki wręcz i z szarżą od tyłu zapewniają dodatkową <color=#C8914F>celność</color> i <color=#C8914F>penetrację pancerza</color> oraz zadają więcej <color=#C8914F>obrażeń</color>.|
+791|<b>Kontrataki wręcz</b><br><br>Pozostała przy życiu jednostka zareaguje kontratakiem na każdy wrogi atak wręcz wyprowadzony ze swoich <color=#C8914F>stref kontroli</color>.|
+792|Pomiń|
+793|<b>Projekcja mapy</b><br><br><color=#9E6EA4>Przywódca synaptyczny</color> znalazł się na polu bitwy!<br><br>Naciśnij <color=#C8914F>M</color>, aby wyświetlić projekcję mapy i zaplanować następny ruch.|
+794|Naciśnij <color=#C8914F>M</color> ponownie, aby wrócić do bitwy.|
+795|Ci Wojownicy nie będą mogli uczestniczyć w bezpośredniej walce, ale mogą znaleźć się na tyle blisko, aby odwrócić losy bitwy.|
+796|<b>Impet</b><br>Jednostki otrzymują <color=#45D8FF>impet</color> za zabicie wroga. W zależności od <color=#C8914F>cechy frakcji</color> mogą uzyskać dodatkowy impet za typ broni, odległość od wroga lub różne wykonywane akcje.|
+797|Cecha Tyranidów <color=#9E6EA4>Wieczny głód</color> zapewnia dużą premię do impetu w przypadku zabicia wrogą bronią do walki wręcz i mniejszą premię w przypadku zabicia wrogą bronią dystansową.|
+798|Ta jednostka hormaguntów ma świetną pozycję, aby załatwić Szturmowych marines, ale nie brakuje jej dużo do uzyskania 100 punktów impetu i przejścia do fazy <color=#C65C34>pełnego naładowania</color>.|
+799|Zaznacz wskazaną jednostkę hormaguntów.|
+800|Najpierw przybliżymy Wojowników.|
+801|<b>Przywódcy synaptyczni</b><br><br><color=#9E6EA4>Przywódcy synaptyczni</color> występują tylko we frakcji Tyranidów. Generują aurę, która poprawia umiejętności bojowe mniejszych stworzeń wokół nich i zwiększa zyskiwany przez nie impet.|
+802|Przesuń tego Wojownika bliżej hormaguntów.|
+803|Czuwaj i potwierdź|
+804|Gdy jednostka jest <color=#9E6EA4>połączona</color> z przywódcą synaptycznym, otrzymuje dwukrotnie więcej impetu.|
+805|Wszystkie efekty statusu danej jednostki można przeglądać wraz z opisami u góry paska rozkazów.|
+806|Zabij Szturmowych marines, aby w pełni <color=#C65C34>naładować</color> tę jednostkę hormaguntów.|
+807|Ta jednostka jest teraz <color=#C65C34>w pełni naładowana</color>. Gdy jej wartość impetu osiąga poziom 100, uzyskuje ona +1 <color=#6380AD>punkt ruchu</color> oraz pełną premię za cechę frakcji.<br><br>W stanie pełnego naładowania nad paskiem rozkazów jednostki pojawią się dwie dodatkowe opcje: <color=#C8914F>Wzmocnij</color> i <color=#C8914F>Wyładuj</color>.|
+808|<b>Wzmocnienie</b><br><br>Wzmocnienie spowoduje wydanie 100 punktów impetu na potężne jednorazowe ulepszenie jednej umiejętności jednostki.|
+809|<b>Wyładowanie</b><br><br>Wyładowanie spowoduje wydanie 100 punktów impetu i natychmiastowe uzyskanie przez jednostkę +1 <color=#C65C34>punktu akcji</color> do wykorzystania w tej turze.|
+810|***Nieużywane***|
+811|Możesz zakończyć bitwę tak, jak tylko chcesz.<br><br>Umysł Roju nie będzie czekać...|
+812|Wydaj punkty impetu na <color=#C8914F>wzmocnienie</color> umiejętności Skok hormaguntów lub użyj <color=#C8914F>wyładowania</color>, aby wykonać dodatkowy atak w tej turze.|
+813|Ruch i rozkazy|
+814|Zaawansowane techniki bitewne|
+815|POZ. {0}|
+816|Trucizna|
+817|Kwasowe|
+818|Podstawowe|
+819|Psioniczne|
+820|Kliknij, aby wyświetlić/zmienić bronie|
+821|Utwórz konto Slitherine|
+822|Podaj poniżej dane nowego konta. Twoja nazwa użytkownika będzie widoczna dla innych graczy.|
+823|E-mail|
+824|Zarejestruj|
+825|Konto z tym adresem e-mail już istnieje.|
+826|Konto z tą nazwą użytkownika już istnieje.|
+827|Zmień konto|
+828|Konta Slitherine:<br><br> • Mogą uczestniczyć w turniejach.<br> • Będą otrzymywać powiadomienia e-mail dotyczące meczów korespondencyjnych.|
+829|To konto:<br><br> • Nie może uczestniczyć w turniejach.<br> • Nie będzie otrzymywać powiadomień e-mail dotyczących meczów korespondencyjnych.|
+830|Wybór konta|
+831|Hasła muszą się składać z co najmniej 3 znaków i mogą zawierać tylko cyfry i litery (bez spacji i znaków specjalnych).|
+832|Amunicja|
+833|Czas oczekiwania|
+834|Szukasz meczu? Dołącz do nas na Discordzie|
+835|Nie rozpoczęto samouczka|
+836|Część samouczków nie została jeszcze ukończona. Czy zanim przejdziesz dalej, chcesz rozegrać następny samouczek?|
+837|Tak|
+838|Nie|
+839|Możesz teraz zakończyć bitwę tak, jak tylko chcesz. Chwała Imperatorowi!|
+840|<b>Samouczek posługiwania się bronią</b><br>W tym samouczku dowiesz się, jak skutecznie posługiwać się pewnymi rodzajami broni jednostek Kosmicznych Marines.<br><br>Wybierz wskazaną jednostkę Szturmowych marines.|
+841|Ci Szturmowi marines są wyposażeni w ręczne miotacze ognia, które zadają znaczne obrażenia wszystkim jednostkom na danym polu. Przesuń ich na pole obok tych termagantów.|
+842|Teraz użyj ręcznego miotacza ognia przeciwko termagantom.|
+843|Znakomicie! Teraz wykończ hormaguntów za pomocą Predatora Baala. Wybierz Predatora Baala.|
+844|Podwójne działko szturmowe ma dużą siłę ognia i jest skuteczne przeciwko jednostkom roju. Przesuń się na wskazane pole, które znajduje się w optymalnym zasięgu względem celu.|
+845|Teraz użyj podwójnego działka szturmowego przeciwko hormaguntom.|
+846|Mamy tyrannofeksa! Te bestie mają gruby pancerz, przez który nie jest łatwo się przebić. Wybierz Predatora Baala.|
+847|Piekielnicy są wyposażeni w <color=#C8914F>spopielacze plazmowe</color>, które skutecznie penetrują pancerz i zadają duże obrażenia, ale mają mniejszą siłę ognia. Przesuń Piekielników na wskazane pole, które znajduje się w optymalnym zasięgu do użycia spopielacza plazmowego.|
+848|Teraz zaatakuj tyrannofeksa.|
+849|Drednot furioso jest wyposażony w pięść furioso, która jest bardzo skuteczna przeciwko jednostkom jednomodelowym. Wybierz Drednota furioso i przesuń go w zasięg ataku wręcz tyrannofeksa.|
+850|Poddaj się|
+851|Poddać się?|
+852|Czy na pewno chcesz się poddać?|
+853|Poddawanie się...|
+854|Przesuń się na wskazane pole i zaatakuj bolterem szturmowym.|
+855|Jak widzisz, pancerz tyrannofeksa <color=#C8914F>zablokował atak</color> bolterem szturmowym. Potrzebna jest broń z większą penetracją pancerza. Wybierz Piekielników.|
+856|Teraz zaatakuj tyrannofeksa pięścią furioso.|
+857|Broń i pancerz|
+858|Nie masz już punktów akcji. Czas zakończyć turę.|
+859|***Nieużywane***|
+860|***Nieużywane***|
+861|Drugi gracz poddał się|
+862|Drugi gracz poddał mecz|
+863|Masz mecze asynchroniczne z aktualizacjami.|
+864|Aktualizacja wyzwania|
+865|English|
+866|Deutsch|
+867|Français|
+868|Español|
+869|русский|
+870|中国人|
+871|Polski|
+872|português|
+873|한국어|
+874|Usuwane po jednym ruchu|
+875|Wzmocnione|
+876|Wzmocnij|
+877|Możesz uwieczniać swoje wyczyny i heroiczne chwile na polu bitwy, korzystając z trybu fotograficznego. Gdy tylko zechcesz, naciśnij klawisz Backspace, aby zatrzymać grę i przejść do tego trybu.|
+878|Oczekiwanie na wynik innych akcji|
+879|Historia kampanii|
+880|Wszystkie bronie zadają obrażenia na polach|
+881|Rozpryskowe|
+882|Obrażenia rozpryskowe|
+883|Zużywa {0} PR|
+884|Niewrażliwość na czuwanie|
+885|Niewrażliwość na ataki odwetowe pistoletem|
+886|Niewrażliwość na strefy kontroli walki wręcz|
+887|Niewrażliwość na strefy kontroli pistoletem|
+888|Atak z wycofaniem|
+889|Teraz zachowaj pozostały impet i zakończ turę. W następnej turze będzie okazja do użycia wyładowania.|
+890|Wygeneruj automatycznie|
+891|Limit tur|
+892|Docelowa liczba punktów|
+893|vs.|
+894|Ty|
+895|Wyposażenie|
+896|Wyniki|
+897|Rozstrzygnięcie — najwyższa liczba punktów pozostałych przy życiu jednostek: {0}|
+898|Rozstrzygnięcie — najniższa łączna liczba punktów armii: {0}|
+899|Rozstrzygnięcie — najwyższa średnia celność: {0}|
+900|Remis|
+901|Docelowa liczba punktów|
+902|Wybór celu|
+903|<b>Zdobywca</b><br><br>Przejmij kontrolę nad strefą celu|
+904|<b>Dowództwo strategiczne</b><br><br>Zabezpiecz punkty kontrolne|
+905|Synchronizuj ponownie|
+906|Zabito jednostkę|
+907|Jednostka w strefie kontrolnej|
+908|Więcej jednostek w strefie kontrolnej od przeciwnika|
+909|Brak jednostek przeciwnika w strefie kontrolnej|
+910|Przejęte punkty rozkazów|
+911|Aby użyć wybranego celu, musisz wybrać inną mapę|
+912|Armia wybrana dla AI jest większa niż dopuszczalna wielkość armii AI.|
+913|Bieżący cel wymaga konkretnych jednostek w armii|
+914|Jednostki zapewniają osłonę|
+915|Użyj {0}, aby poruszać kamerą.|
+916|Obracaj kamerą przy pomocy {0}.|
+917|Użyj {0}, aby przybliżyć kamerę.|
+918|Wybierz Orędowników, umieszczając celownik na jednostce i naciskając {0}.|
+919|<b>RUCH</b><br>Skieruj jednostkę do <color=#C8914F>celu</color>, naciskając {0} na polu. Obok kursora wyświetlany jest koszt w <color=#6380AD>punktach ruchu</color>.|
+920|<b>INTERAKCJA</b><br>Możesz wchodzić w interakcje z panelami sterowania i celami, stojąc na sąsiednim polu. Otwórz bramę, naciskając {0} na Orędownikach.|
+921|Możesz szybko skierować kamerę na wybraną jednostkę, naciskając {0}.|
+922|Użyj opcji Zmień kierunek {0} z paska rozkazów i wybierz wskazane pole.|
+923|Otwórz pasek rozkazów przy pomocy {0}.|
+924|<b>INFORMACJE O ATAKU</b><br><br>Umieść celownik nad wrogiem, aby wyświetlić szczegółowe informacje o ataku.|
+925|Nie masz wroga bezpośrednio w zasięgu wzroku. Przesuń się na pole celu przy pomocy {0}, aby mieć lepszą pozycję do ataku.|
+926|To optymalna pozycja do przeprowadzenia ataku Orędowników na osłabione hormagunty. Naciśnij {0} na wrogu, aby go zaatakować.|
+927|Wydaj rozkaz Wycofaj się i wskaż hormagunty. Poruszając się w kierunku przeciwnego pola, Orędownicy uzyskają dużą premię do obrony.|
+928|Użyj {0}, aby przejść do rozkazu <color=#C8914F>Wycofaj się</color>.|
+929|Naciśnij {0}, aby wydać rozkaz Wycofaj się, a następnie wskaż hormagunty.|
+930|Przytrzymaj {0}, aby zakończyć turę.|
+931|Wybierz innego Orędownika i skieruj go na pole celu.|
+932|Użyj {0}, aby przejść do następnej dostępnej jednostki z przynajmniej jednym <color=#C65C34>punktem akcji</color> do wykorzystania.|
+933|Z poziomu paska rozkazów {0} wybierz opcję <color=#C8914F>Czuwanie</color> i ustaw strefę czuwania w optymalnym zasięgu karabinu bolterowego. Jednostka zacznie strzelać do pierwszego wroga, który wejdzie na dowolne pole w strefie.|
+934|<b>LISTA JEDNOSTEK</b><br><br>Lista jednostek {0} pozwala łatwo znaleźć i wybrać jednostki o różnych rolach.|
+935|Naciśnij {0}, aby przejść do grupy jednostek Bazy, i wybierz Krwawego kapłana.|
+936|Naciśnij {0}, aby otworzyć umiejętności dowództwa Bazy.|
+937|{0} PR po opuszczeniu pola|
+938|{0} wygrywa|
+939|Ultra|
+940|<b>Szarża</b><br>Ataki z szarżą wymagają prostej drogi do odległego celu. Szarżujące jednostki zyskują +1 <color=#6380AD>punkt ruchu</color> i nie podlegają kontratakom wręcz.<br><br>Użyj {0}, aby zaatakować tych Szturmowych marines z szarżą.|
+941|<b>Projekcja mapy</b><br><br><color=#9E6EA4>Przywódca synaptyczny</color> znalazł się na polu bitwy!<br><br>Naciśnij {0}, aby wyświetlić projekcję mapy i zaplanować następny ruch.|
+942|Naciśnij {0}, aby wrócić do bitwy.|
+943|Sprawdź wskazaną jednostkę hormaguntów.|
+944|Użyj {0}, aby wyświetlić rozkazy Wzmocnij i Wyładuj.|
+945|Pozwala używać ulepszonej wersji umiejętności.|
+946|Daje +1 punkt akcji|
+947|Możesz uwieczniać swoje wyczyny i heroiczne chwile na polu bitwy, korzystając z trybu fotograficznego. Gdy tylko zechcesz, naciśnij {0}, aby zatrzymać grę i przejść do tego trybu.|
+948|Pomiń ramkę|
+949|Podnieś/obniż kamerę|
+950|Wszystkie efekty statusu jednostki są widoczne w informacjach o niej. Aby je zobaczyć, sprawdź jednostkę i naciśnij {0}.|
+951|Każde sąsiednie pole jest strefą kontroli|
+952|Droga jest zablokowana|
+953|Rozkazuje wszystkim jednostkom dystansowym z punktami akcji czuwać przy maksymalnym zasięgu|
+954|Przytrzymaj, aby pominąć|
+955|Polityka prywatności danych|
+956|Zrezygnuj z analityki|
+957|Walka z przeciwnikiem przez Internet. Obaj gracze muszą być online w tej samej chwili i widzą ruchy przeciwnika w czasie rzeczywistym.|
+958|Walka z przeciwnikiem poprzez serwer PBEM++. Gracze nie muszą być online w tej samej chwili i mogą wykonywać tury we własnym tempie.|
+959|Walka z przeciwnikiem na tym samym urządzeniu.|
+960|Obniża zasięg wzroku podczas używania broni dystansowej, jeśli na drodze stoją inne jednostki.|
+961|Nie można zapisać w samouczku|
+962|Nie można zapisać podczas ponownego rozgrywania misji z kampanii|
+963|Inicjowanie meczu|
+964|Kończenie tury|
+965|Rozpoczynanie meczu|
+966|Kończenie meczu|
+967|Naciśnij {0}, aby dołączyć.|
+968|Logowanie nie powiodło się. Spróbuj ponownie.|
+969|Automatyczne logowanie nie powiodło się|
+970|Armia zniszczona|
+971|Gracz {0} rozłączył się|
+972|Maksymalna liczba klatek na sekundę|
+973|Jasność|
+974|Bezpieczna strefa|
+975|Wyłącz|
+976|Jakość tekstur|
+977|Cienie|
+978|Jakość cieni|
+979|Antyaliasing|
+980|Bloom|
+981|Okluzja otoczenia|
+982|Zmień profil|
+983|Synchronizuje proces renderowania z częstotliwością odświeżania monitora, by uniknąć efektu rozrywania obrazu. Gdy synchronizacja pionowa jest włączona, ustawienie maksymalnej liczby klatek na sekundę nie jest dostępne.|
+984|Synchronizacja pionowa|
+985|Wpływa na liczbę jednostek, które można rekrutować między misjami.|
+986|Zapotrzebowania|
+987|Nieskończone|
+988|Zwykłe|
+989|Zmniejszone o połowę|
+990|Nie masz już żadnych akcji zapotrzebowań|
+991|Nie masz już żadnych akcji zapotrzebowań, dzięki którym można rekrutować jednostki. Akcje zapotrzebowań odnawiają się między misjami.|
+992|Jakość mgły|
+993|Jednostka odnawia się|
+994|Ta jednostka odnawia się i będzie znów dostępna po {1} misjach.|
+995|Ta jednostka odnawia się i będzie znów dostępna po {1} misji.|
+996|Nieograniczona liczba jednostek piechoty|
+997|Umożliwia rekrutowanie podstawowych jednostek piechoty bez akcji zapotrzebowań.|
+998|1 akcja zapotrzebowania|
+999|Nowa jednostka została przeniesiona do rezerwy|
+1000|Doświadczenie bojowe|
+1001|Turnieje|
+1002|Początek rundy|
+1003|Bieżąca runda|
+1004|Status|
+1005|{0} - RUNDA {1} przeciw {2}|
+1006|Turnieje otwarte|
+1007|Zakończony|
+1008|Nie znaleziono turniejów|
+1009|Sprawdź wyniki|
+1010|Otwarty|
+1011|W toku|
+1012|Nie można dołączyć do turnieju|
+1013|Chcesz dołączyć do turnieju?|
+1014|Czy na pewno chcesz dołączyć do turnieju?|
+1015|Dołączono|
+1016|Jeszcze nie wybrano|
+1017|Wybierz frakcję|
+1018|Wyniki|
+1019|Czas do zakończenia rundy|
+1020|Pozostały czas|
+1021|{0}d:{1:00}godz.:{2:00}m:{3:00}s|
+1022|Łącznie|
+1023|Runda {0}|
+1024|dowolny klawisz|
+1025|To jest twoja tura w meczu turniejowym.|
+1026|{0} Ignoruj kary za częściową osłonę|
+1027|Obrażenia dystansowe zadawane pojazdom: {0}|
+1028|Penetracja pancerza pojazdów z dystansu: {0}|
+1029|Szansa na trafienie krytyczne pojazdów z dystansu: {0}|
+1030|Może brać na cel tylko jednostki w widocznych polach|
+1031|Zbyt blisko wroga|
+1032|Pancerz: {0}|
+1033|Otrzymane obrażenia: {0}|
+1034|Uniemożliwia wszystkie ataki odwetowe|
+1035|Brak połączenia internetowego.|
+1036|Dodatkowe PZ: {0}|
+1037|Mecz jest pełen.|
+1038|{0} do wszystkich statystyk, gdy sąsiaduje z jednostką Dowódcy bazy|
+1039|{0} szansy na zyskanie PA po wyeliminowaniu modelu wroga|
+1040|Gra wieloosobowa nie jest dozwolona|
+1041|Polityka prywatności|
+1042|Twoje dane osobowe nigdy nie będą udostępniane podmiotom trzecim. Będziemy ich używać tylko do komunikowania się z Tobą w sprawach związanych z grami i usługami. Jeśli masz pytania dotyczące sposobu przechowywania Twoich danych, wyślij je na adres support@slitherine.co.uk.|
+1043|Rozłącz|
+1044|Zalogowano się jako|
+1045|Zezwalaj na grywalne jednostki z dodatków|
+1046|Umiejętność nadal się ładuje|
+1047|Czas ładowania|
+1048|Runda meczu|
+1049|Mecz turniejowy|
+1050|Dane dotyczące turnieju|
+1051|Rundy|
+1052|Rozpoczyna się za|
+1053|Runda|
+1054|Wynik|
+1055|Moderatorzy|
+1056|Ostatnia tura!|
+1057|Czat jest niedostępny|
+1058|Spójność armii|
+1059|Limit spójności armii|
+1060|Wielkość Twojej armia przekracza maksymalną dozwoloną wartość|
+1061|Twoja armia nie jest spójna. W tym meczu wymagane są spójne armie.|
+1062|Twoja armia jest spójna, co oznacza, że wszystkie jednostki otrzymają dodatkowe punkty impetu podczas bitew.|
+1063|Ta armia nie spełnia aktualnych wymagań w zakresie spójności, co oznacza, że jednostki nie otrzymają dodatkowych punktów impetu podczas bitew. Zredukuj liczbę wymienionych poniżej jednostek, aby zmienić ten stan.|
+1064|Limit punktów armii|
+1065|Zapisz armię|
+1066|Wymaga spójnych armii|
+1067|Wielkość armii sterowanej przez SI przekracza maksymalną dozwoloną wartość|
+1068|Amia sterowana przez SI nie jest spójna. W tym meczu wymagane są spójne armie.|
+1069|Wielkość armii gracza 1 przekracza maksymalną dozwoloną wartość|
+1070|Amia gracza 1 nie jest spójna. W tym meczu wymagane są spójne armie.|
+1071|Wielkość armii gracza 2 przekracza maksymalną dozwoloną wartość|
+1072|Amia gracza 2 nie jest spójna. W tym meczu wymagane są spójne armie.|
+1073|Nieodpowiednia nazwa użytkownika|
+1074|Nie udało się sprawdzić nazwy użytkownika przez sieć|
+1075|Sprawdzanie nazwy użytkownika...|
+1076|Ta nazwa użytkownika jest nieodpowiednia. Sprawdź, czy została wpisana poprawnie. Jeśli chcesz, możesz przesłać na adres support@slitherine.co.uk prośbę o zmianę nazwy użytkownika.|
+1077|Opuścić turniej?|
+1078|Czy na pewno chcesz opuścić ten turniej?|
+1079|Nie można opuścić turnieju|
+1080|Mecz turniejowy|
+1081|Premia za zwycięstwo|
+1082|Zwycięzca otrzymuje premię za zwycięstwo uzależnioną od wartości punktowej jego armii i liczby nierozegranych tur meczu.|
+1083|Usunąć zapis?|
+1084|Czy na pewno chcesz usunąć „{0}”?<br>{1} – {2}|
+1085|Plik zapisu zawiera jednostki z nieaktywnego dodatku.|
+1086|Dodatek jest nieaktywny|
+1087|Uzupełnij|
+1088|Zajmij|
+1089|Przekaźnik aparatu vox|
+1090|Manufaktura|
+1091|Skład amunicji|
+1092|Jednostki elitarne|
+1093|Znak honoru|
+1094|{0} pkt armii|
+1095|Czasy odnawiania rekwizycji: {0}|
+1096|Uzyskaj dostęp do elitarnych jednostek|
+1097|{0} PA po naładowaniu|
+1098|Mapa strategiczna|
+1099|Autom. rozstrzyganie|
+1100|Wycofanie|
+1101|Frakcja do grania podczas tej kampanii|
+1102|Siła oddziałów neutralnych|
+1103|Siła oddziałów SI|
+1104|Wynik docelowy bitwy frakcji|
+1105|Usprawnione jednostki neutralne|
+1106|Usprawnione jednostki SI|
+1107|Przełącza system spójności armii.|
+1108|Dostosowuje maks. wartość punktową armii dla wszystkich wrogich oddziałów niesprzymierzonych.|
+1109|Dostosowuje maks. wartość punktową armii dla wszystkich frakcji SI.|
+1110|Dostosowuje wynik docelowy dla celów Exterminatus przeciwko frakcjom SI.<br>Wyższe wartości oznaczają większe straty wojskowe w przypadku utraty kafelka.|
+1111|Nakłada efekt stanu usprawnionych jednostek na wrogie jednostki oddziałów niesprzymierzonych.|
+1112|Nakłada efekt stanu usprawnionych jednostek na jednostki frakcji SI.|
+1113|Masz jeszcze co najmniej jedną akcję. Czy na pewno chcesz zakończyć swoją turę?|
+1114|Biomasa|
+1115|Engram zwycięstwa|
+1116|Atakujący|
+1117|Obrońca|
+1118|{0} – rywalizacja: {1}!|
+1119|Możesz modyfikować swoje oddziały za darmo do następnej bitwy lub początku następnej tury.|
+1120|Nie masz innej dostępnej akcji, aby uzupełnić swoją armię. Musisz zakończyć swoją turę, zanim będziesz w stanie dokonać kolejnych zmian.|
+1121|Walcz|
+1122|Zwiększ siłę swoich oddziałów|
+1123|Jednostki stracone w celu osiągnięcia zwycięstwa. Jeśli bitwa się nie powiedzie, pojawi się więcej strat.|
+1124|{0}% szans na: {1}|
+1125|Przytłaczające zwycięstwo|
+1126|Mocne zwycięstwo|
+1127|Umiarkowane zwycięstwo|
+1128|Słabe zwycięstwo|
+1129|Nieuchronna porażka|
+1130|Utracone jednostki|
+1131|Obliczenie|
+1132|Zwycięstwo|
+1133|Porażka|
+1134|Nie można zapisywać podczas zdobywania lub uzupełniania|
+1135|To zepsuje spójność twojej armii. Czy na pewno chcesz zrekrutować tę jednostkę?|
+1136|W twojej armii nie ma żadnych jednostek|
+1137|Jednostka psuje spójność|
+1138|Brak jednostek|
+1139|Możesz wycofać się tylko wtedy, gdy nie zostały wydane żadne punkty akcji. Będziesz mieć opcję wycofania się na początku swojej następnej tury.|
+1140|Możesz wycofać się tylko podczas swojej tury.|
+1141|Wycofać się?|
+1142|Czy na pewno chcesz się wycofać?|
+1143|Bitwa: {0}|
+1144|Uzupełnienie!|
+1145|Wycofanie!|
+1146|{0} PZ na rozpęd|
+1147|{0} jedn. rozpędu po ruszeniu się o {2} szt. kafelków|
+1148|Umożliwia poruszanie się po krótkich przeszkodach i ignoruje kary za ruch wynikające z terenu.|
+1149|Każdy udany strzał z tej broni ma {0} skumulowanych szans na dotarcie do sąsiedniego wroga i zadanie mu {1} pkt obrażeń.|
+1150|{0} pkt obrażeń przeciwko jednostkom organicznym|
+1151|{0} pkt przebicia pancerza przeciwko jednostkom organicznym|
+1152|{0} {2} pkt zasięgu|
+1153|Odzwierciedla {0} pkt obrażeń z powrotem na atakujących w zwarciu|
+1154|{0} pkt strzałów|
+1155|Wybrane cele: {0} z {1}|
+1156|{0}, aby potwierdzić /|
+1157|Automatyczne trafienie broni dystansowej|
+1158|{0}, aby anulować|
+1159|Posiadacz|
+1160|Połączone z bazą|
+1161|Zasób|
+1162|Premia|
+1163|Nieznane|
+1164|Wyeliminowano|
+1165|Pochłonięto|
+1166|Unicestwiono|
+1167|Twoja armia ma niski poziom siły. Rozważ wezwanie posiłków.|
+1168|Wróg zbliża się do twojej bazy. Rozważ zdobycie pobliskiego terytorium.|
+1169|W zasięgu są niezdobyte kafelki. Pokonaj neutralne terytoria, aby zwiększyć limit punktów twojej armii.|
+1170|W zasięgu jest niezdobyty zasób. Zdobądź go, aby zyskać premię.|
+1171|W zasięgu jest kontrolowany przez wroga zasób Siła pomocnicza. Przechwyć go, aby zwiększyć limit swojej armii.|
+1172|W zasięgu jest kontrolowany przez wroga zasób Potężny autorytet. Przechwyć go, aby zwiększyć liczbę akcji na turę.|
+1173|W zasięgu jest kontrolowany przez wroga zasób Szybkie uzupełnienie zapasów. Przechwyć go, aby skrócić czasy odnawiania rekwizycji.|
+1174|Wszystkie akcje zostały użyte. Pora zakończyć swoją turę.|
+1175|Zamknij|
+1176|Baza zdobyta!|
+1177|Niezdobyte|
+1178|Korozja|
+1179|Walka z sojusznikami|
+1180|Po włączeniu frakcje, które normalnie są sojusznikami, mogą stać się przeciwnikami w tej kampanii.|
+1181|Walka|
+1182|Rozegrane tury|
+1183|Zdobyte pola|
+1184|Utracone pola|
+1185|Najwięcej posiadanych pól|
+1186|Zdobyte bazy|
+1187|Posiadane zasoby|
+1188|Łączna liczba zabitych jednostek|
+1189|Łączne zadane obrażenia|
+1190|Najkrótsza bitwa|
+1191|Najdłuższa bitwa|
+1192|Najskuteczniejsza jednostka|
+1193|Najlepszy współczynnik zabójstw/śmierci podczas misji|
+1194|Łączne przywrócone zdrowie|
+1195|Utracone/rozmieszczone jednostki|
+1196|Obrażenia wg kategorii broni|
+1197|Pobudzone jednostki|
+1198|Wzmocnione zdolności|
+1199|Najwięcej pobudzonych jednostek|
+1200|Najbardziej wzmocniona zdolność|
+1201|Ocena armii|
+1202|Przeciętna celność|
+1203|Zabójstwa: {0}|
+1204|Misje przetrwane pod rząd: {0}|
+1205|Przemierzone pola: {0}|
+1206|Współczynnik zabójstw/śmierci|
+1207|Pobudzenia: {0}|
+1208|Użycia: {0}|
+1209|Misja {0}|
+1210|Łączna liczba utraconych jednostek|
+1211|Zobacz fora|
+1212|Jednostka|
+1213|Ulepszenia wymagają PA|
+1214|Określa, czy zakup ulepszeń centrum dowodzenia wymaga punktu akcji.|
+1215|SI otrzymuje wszystkie ulepszenia|
+1216|Daje innym frakcjom SI wszystkie ulepszenia centrum dowodzenia.|
+1217|Jednostka niepodatna na ogień zaporowy|
+1218|{0} maks. zasięgu|
+1219|Odblokuj tę jednostkę|
+1220|Odblokowuje|
+1221|Dla jednostek|
+1222|Dostępne są ulepszenia dla twoich oddziałów. Rozważ odblokowanie ulepszeń centrum dowodzenia.|
+1223|{0} jedn. rozpędu za zabicie jednostek organicznych|
+1224|{0} pkt. obrażeń broni na impet|
+1225|Ta jednostka podlega obecnie czasowi odnawiania. Jej zakup będzie wymagał {0} pkt rekwizycji.|
+1226|Nie utracono jednostek|
+1227|Oblężenie|
+1228|<b>Atakuj punkty kontroli lub broń ich.</b><br><br>Jeden gracz zostaje wyznaczony na atakującego, podczas gdy drugi jest obrońcą:<br><br>• Za każdy zdobyty punkt kontroli atakujący otrzymuje +25 pkt. Obrońca nie może odzyskać punktu kontroli po tym, jak zdobył go atakujący.<br><br>• Zdobycie punktu kontroli trwa kilka tur. Jednostka zdobywająca punkt kontroli nie będzie mogła się w tym czasie poruszać, więc należy jej bronić.<br><br>• Obrońca zdobywa punkty za zabijanie jednostek atakującego. Tylko obrońca może otrzymywać punkty za takie działanie.<br><br>• Obrońca ma większy obszar rozmieszczenia jednostek, co pozwala mu na początku meczu na rozmieszczanie jednostek bliżej punktów kontroli.<br><br>• Obrońca automatycznie otrzyma posiłki na początku swojej tury, jeśli jego armia została niemal pokonana.|
+1229|Zdobądź|
+1230|Zdobywanie (pozostałe tury: {0})|
+1231|Tylko atakujący może stać na punkcie kontroli|
+1232|<b>Oblężenie</b><br><br>Zdobądź punkty kontroli|
+1233|<b>Oblężenie</b><br><br>Broń punktów kontroli|
+1234|<b>Oblężenie</b><br><br>Atakujący musi zdobyć punkty kontroli. Obrońca musi bronić punktów kontroli.|
+1235|Koszt z przyspieszeniem: {0} pkt rekwizycji|
+1236|Graj jako:|
+1237|Wsiądź|
+1238|Wysiądź|
+1239|Transportowiec jest pełny|
+1240|Już wystąpiło wysiadanie w tej turze.|
+1241|<b>Limity pojemności</b><br><br>Jednostka: {0}<br>Modele: {1}|
+1242|Dalej|
+1243|Punkty posiłków: {0}|
+1244|Przetrwane fale|
+1245|Zabite demony|
+1246|Wynik za zabite demony|
+1247|Mnożnik rozmiaru armii|
+1248|Premia za przetrwanie fali|
+1249|Wydane punkty posiłków|
+1250|Nie można wziąć na cel tej jednostki|
+1251|Ranking|
+1252|Świat|
+1253|Ty|
+1254|Znajomi|
+1255|Po włączeniu tej opcji fale demonów nigdy się nie przestaną się pojawiać, a gra się zakończy, dopiero gdy twoja armia zostanie pokonana.|
+1256|Wrogie frakcje|
+1257|Liczba punktów otrzymywanych do wydania na posiłki po każdej fali.|
+1258|Premia mniejszej armii|
+1259|Premia pozostałych tur|
+1260|Fala|
+1261|Fala ukończona|
+1262|Uzupełnij zapasy|
+1263|Brąz|
+1264|Srebro|
+1265|Złoto|
+1266|Pomoc na polu bitwy|
+1267|Domyślne|
+1268|Zmienia celność ataków wroga na podstawie rozmiaru i zwinności jednostki.|
+1269|{0} stabilności dystansowej na rozpęd|
+1270|{0} pkt przebicia pancerza na rozpęd|
+1271|Skala interfejsu|
+1272|{0} kary do rozpędu za niewykorzystane punkty akcji|
+1273|Analityka wyłączona|
+1274|Zrezygnuj z analityki|
+1275|Dane analityki są wykorzystywane wyłącznie w celu doskonalenia gry. Czy na pewno chcesz zrezygnować?|
+1276|Przejmij i kontroluj|
+1277|Rekwizycje SI|
+1278|Wpływa na liczbę jednostek, które SI może rekrutować pomiędzy misjami.|
+1279|Błąd uruchamiania|
+1280|W grze wystąpił błąd krytyczny. Jeśli problem nie ustąpi, zweryfikuj dane gry i/lub odinstaluj grę.|
+1281|Używaj domyślnie broni białej w walce z wrogami na sąsiednich kafelkach|
+1282|<b>Przejmij i kontroluj</b><br>Wyeliminuj wroga, zanim zajmie strefę kontroli|
+1283|<b>Przejmij i kontroluj</b><br>Atakujący zajmuje strefę kontroli, obrońca eliminuje atakującego|
+1284|<b>Przejmij i kontroluj</b><br>Okupuj strefę kontroli.|
+1285|Ładowanie|
+1286|Aktyw. +{0} PA|
+1287|Awans na polu bitwy|
+1288|Rozpęd: {0} na zabity model|
+1289|<b>Zajmij docelową strefę, aby przejąć ważny zasób.</b><br><br>Atakujący zyskuje 5 punktów za każdą jednostkę w strefie kontroli, minus 5 punktów za każdego znajdującego się tam obrońcę.<br><br>Obrońca zyskuje punkty za eliminowanie jednostek atakującego.|
+1290|Wrogowie w strefie kontroli|
+1291|Sojusznicy w strefie kontroli|
+1292|Łupy Łaaa!|
+1293|Następna jednostka z PR|
+1294|Broń jest przeładowywana|
+1295|Czas przeładowania amunicji|
+1296|Minimalny rozmiar armii dla inwazji wynosi {0}|
+1297|Dostępne po {0} falach|
+1298|Dostępne po następnej fali|
+1299|Wyświetlaj wskaźnik bezpośredniego ataku od tyłu|
+1300|Krwawy Hołd|
+1301|Teren|
+1302|Rozgrywka|
+1303|Atmosfera|
+1304|Obiekty|
+1305|Utwórz nową mapę|
+1306|Edytor map|
+1307|Szerokość|
+1308|Wysokość|
+1309|Szablon|
+1310|Niestandardowe strefy wyposażenia|
+1311|Obszary kontroli|
+1312|Punkty dominacji|
+1313|{0} pkt. obrażeń dystansowych na impet|
+1314|Celność dystansowa przeciwko tej jednostce: {0}|
+1315|Pogorszenie celności przeciwko tej jednostce: {0}|
+1316|Działa w zasięgu {0} pól|
+1317|Moje mapy|
+1318|Pobrane mapy|
+1319|Edytuj|
+1320|Przeglądaj online|
+1321|Duplikuj|
+1322|Czy na pewno chcesz usunąć „{0}”?|
+1323|Publikuj|
+1324|Przygotuj dziennik zmian, by poinformować graczy o nowościach w tej wersji.|
+1325|Szczegóły mapy|
+1326|Opis|
+1327|Błąd|
+1328|Sukces|
+1329|Udało się opublikować mapę.|
+1330|Nie zainstalowano niestandardowej mapy:<br>{0}|
+1331|Nie znaleziono lokalnej mapy:<br>{0}|
+1332|Włącz|
+1333|Dostępne pola: {0}|
+1334|Rozmiar|
+1335|Bardzo mały|
+1336|Mały|
+1337|Średni|
+1338|Duży|
+1339|Bardzo duży|
+1340|Natura|
+1341|Struktury|
+1342|Kategoria|
+1343|Ściany|
+1344|Obiekty|
+1345|Malowania|
+1346|Imperium|
+1347|Cywilne|
+1348|Naturalne|
+1349|Zabudowane|
+1350|Bujne|
+1351|Suche|
+1352|Nierówne|
+1353|Płaskie|
+1354|Niestandardowe mapy|
+1355|Rzadko|
+1356|Gęsto|
+1357|Wygenerowane mapy|
+1358|Zaprojektuj własną planetę|
+1359|Wszystkie tryby|
+1360|Nowy tryb|
+1361|Wymyśl nazwę dla nowego trybu gry. Dzięki temu mapa będzie dostępna w ramach rozgrywki dla jednego gracza.|
+1362|Jednostki|
+1363|Czy na pewno chcesz usunąć dane dla tego trybu gry? Tej akcji nie będzie można cofnąć.|
+1364|Nacisk pędzla|
+1365|Min. wysokość|
+1366|Maks. wysokość|
+1367|Skala|
+1368|Piasek|
+1369|Trawa|
+1370|Błoto|
+1371|Skała|
+1372|Sztuczne|
+1373|Azymut|
+1374|Zenit|
+1375|Słońce|
+1376|Czerwony|
+1377|Zielony|
+1378|Niebieski|
+1379|Mgła|
+1380|Kolor|
+1381|Postprocessing|
+1382|Gęstość|
+1383|Natężenie|
+1384|Użyj muzyki z trybu potyczki|
+1385|Poziom|
+1386|Zasięg|
+1387|Niebo|
+1388|Ziemia|
+1389|Liniowa|
+1390|Wykładnicza|
+1391|Wykładnicza kwadratowa|
+1392|Start|
+1393|Koniec|
+1394|Temperatura|
+1395|Balans bieli|
+1396|Odcień|
+1397|Barwa|
+1398|Ciemne|
+1399|Średnie|
+1400|Jasne|
+1401|Honor bitewny|
+1402|Otoczenie|
+1403|Wymagane logo|
+1404|Uruchom tryb gry i zrób zdjęcie, korzystając z trybu fotograficznego.|
+1405|Wersja|
+1406|Obiekty na pola|
+1407|Obiekty swobodne|
+1408|Zapisz zdjęcie mapy|
+1409|Rozmiar pędzla|
+1410|Pozycja|
+1411|Kierunek|
+1412|Pola|
+1413|Siatka|
+1414|Niestandardowa kampania|
+1415|Zarządzaj trybami|
+1416|Niestandardowe kampanie|
+1417|Moje kampanie|
+1418|Pobrane kampanie|
+1419|Stwórz nową kampanię|
+1420|Tworzenie meczu dla wielu graczy z wykorzystaniem mapy zapisanej lokalnie. Dołączą tylko gracze, którzy również posiadają tę samą, zapisaną lokalnie mapę.|
+1421|Ostrzeżenie|
+1422|Gracz wybiera frakcję|
+1423|(gracz lokalny)|
+1424|Dozwolone frakcje|
+1425|Czy na pewno chcesz usunąć „{0}”?|
+1426|Przesyłanie|
+1427|Uwierzytelnianie|
+1428|Odprawa do kampanii|
+1429|Odprawa do misji|
+1430|Misje|
+1431|Tytuł misji|
+1432|Tytuł kampanii|
+0|Уничтожьте всех врагов|
