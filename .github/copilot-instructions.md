@@ -15,6 +15,11 @@ This file mirrors them for GitHub Copilot's auto-loading convention. **Read
    (PCGW-sourced via `tools/python/pcgw-fetch/`).
 6. Windows 11 is primary, WSL2 is dev, Linux/Proton secondary — ship both
    `.ps1` and `.sh` deploy scripts.
+7. **Locale preservation (DoW DE TC mod)**: For `dawn-of-war-de/unofficial-tc-patch/`,
+   only access paths within this project directory and `Engine/Locale/Chinese/`
+   in the game installation. **`Engine/Locale/English/` is forbidden.** The game
+   ships with Chinese locale; all deployments must preserve this. For other
+   projects, apply locale preservation rules as appropriate to that game.
 
 ## Progressive disclosure index
 

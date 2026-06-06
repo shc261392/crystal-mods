@@ -2,7 +2,7 @@ font =
 {
 	type 		= "FreeType2";
 	name 		= "Noto Sans ExtraCondensed Medium";
-	file		= "NotoSans_ExtraCondensed-Medium.TTF";
+	file		= "notosanstc-medium.ttf";
 
 	sizeDefault 	= 34;
 	size640		= 32;	

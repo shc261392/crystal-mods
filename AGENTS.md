@@ -21,6 +21,11 @@ linked under "Progressive disclosure" below.
 5. **Respect platform priorities**: Windows 11 is primary, WSL2 is the dev
    environment, Linux/Proton is secondary. Every deploy script must ship a
    `.ps1` and a `.sh` variant.
+6. **Locale preservation (DoW DE TC mod)**: For `dawn-of-war-de/unofficial-tc-patch/`,
+   only access paths within this project directory and `Engine/Locale/Chinese/`
+   in the game installation. **`Engine/Locale/English/` is forbidden.** The game
+   ships with Chinese locale; all deployments must preserve this. For other
+   projects, apply locale preservation rules as appropriate to that game.
 
 ## Repository contract
 
