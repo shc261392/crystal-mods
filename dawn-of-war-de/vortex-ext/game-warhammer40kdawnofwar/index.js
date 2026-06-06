@@ -167,7 +167,18 @@ function testLocaleContent(files, gameId) {
  */
 function installLocaleContent(files) {
 	const norm = files.map((f) => f.replace(/\\/g, "/"));
-	const fileEntries = norm.filter((f) => !f.endsWith("/"));
+	let fileEntries = norm.filter((f) => !f.endsWith("/"));
+
+	// Filter out excluded files (backups, broken assets, etc.)
+	// See: docs/FONTDECOR_ROOT_CAUSE_ANALYSIS.md for fontdecor.gfx details
+	fileEntries = fileEntries.filter((f) => {
+		const basename = path.basename(f).toLowerCase();
+		// Exclude backup files (.bak)
+		if (basename.endsWith(".bak")) return false;
+		// Exclude fontdecor.gfx (broken in TC version; causes tofu boxes)
+		if (basename === "fontdecor.gfx") return false;
+		return true;
+	});
 
 	// Layout A — archive already has Engine/Locale/ prefix
 	if (fileEntries.some((f) => f.toLowerCase().includes("engine/locale/"))) {
