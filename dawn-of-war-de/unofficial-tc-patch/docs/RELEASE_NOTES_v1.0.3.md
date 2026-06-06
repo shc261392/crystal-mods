@@ -1,7 +1,8 @@
-# Release Notes — DoW DE TC Mod v1.0.3 (Fontdecor Fix)
+# Release Notes — DoW DE TC Mod v1.0.3 (Fontdecor Fix + SGA-Only Distribution)
 
 **Release Date:** TBD  
-**Status:** ✅ Ready for Distribution  
+**Status:** ✅ Ready for Distribution (SGA-Only)  
+**Distribution Format:** Pre-built `EnginLocMod.sga` (207MB) + `Engine.ucs`
 
 ---
 
@@ -11,9 +12,13 @@
 
 **Problem (v1.0-1.0.2):** Dark Crusade campaign showed Chinese text as tofu boxes (□□□) when TC mod deployed.
 
-**Root Cause:** TC's modified `fontdecor.gfx` file was broken—intentionally stripped (1.0MB vs 8.7MB vanilla) but incorrectly done, removing critical glyph/font table data needed for rendering.
+**Root Cause:** Loose file deployment caused rendering conflicts. TC's `fontdecor.gfx` was broken (1.0MB vs 8.7MB vanilla), missing critical glyph tables.
 
-**Solution (v1.0.3):** Removed `fontdecor.gfx` from mod distribution. Engine now automatically uses the vanilla `fontdecor.gfx` from the original `EnginLoc.sga`, which has complete glyph data.
+**Solution (v1.0.3):** 
+- Removed loose files from distribution
+- Now shipping as **pre-built SGA archive only** (`EnginLocMod.sga`)
+- SGA uses game's native archive system (verified working)
+- Eliminates file priority conflicts
 
 **Result:** ✅ Chinese text renders perfectly everywhere, including Dark Crusade campaign.
 
@@ -35,26 +40,39 @@
 
 ---
 
-## Installation (Unchanged)
+## Installation (SGA-Only — Simplified)
 
-### Vortex Mod Manager (Recommended)
+### Vortex Mod Manager (Recommended - Easiest)
 1. Download `wh40k-dow-de-tc-mod-v1.0.3.zip` from releases
 2. Drag onto Vortex → Deploy Mods
-3. Launch game
+3. Extension auto-detects SGA mod
+4. Vortex copies EnginLocMod.sga to `Engine/Locale/Chinese/`
+5. Launch game → ✅ Chinese renders perfectly
+
+**No manual configuration needed** — Vortex handles everything automatically.
 
 ### Manual (Linux / WSL2 / Windows)
-```bash
-# Linux / WSL2
-bash deploy.sh
 
-# Windows (PowerShell)
-.\deploy.ps1
+Simply copy 2 files:
+```bash
+# Copy to: <game>/Engine/Locale/Chinese/
+
+EnginLocMod.sga     (main mod — 207MB SGA archive)
+Engine.ucs          (strings — 1.6MB Unicode text)
 ```
 
-### Important
-- ✅ Game automatically uses vanilla `fontdecor.gfx` (no user action needed)
-- ✅ All TC modifications remain active
-- ✅ Chinese text renders correctly throughout the game
+Then launch game → ✅ Done
+
+**Optional:** Use `deploy.sh` (Bash) or `deploy.ps1` (PowerShell) for automated copying.
+
+### Why SGA-Only?
+
+v1.0.3 ships as **pre-built SGA archive** instead of loose files because:
+- ✅ Eliminates file priority conflicts (root cause of tofu boxes)
+- ✅ Uses game's native archive system (proven working)
+- ✅ Faster deployment (just 2 files to copy)
+- ✅ Professional packaging
+- ✅ 207MB packaged = complete, tested, ready-to-use
 
 ---
 
