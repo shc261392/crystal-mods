@@ -7,21 +7,20 @@
 #   • WSL2 (Windows Subsystem for Linux — accesses Windows paths via /mnt/c ...)
 #
 # Usage:
-#   bash deploy.sh [--game-dir PATH] [--dry-run] [--no-backup] [--mode MODE] [--help]
+#   bash deploy.sh [--game-dir PATH] [--dry-run] [--no-backup]
 #
-# Modes (--mode):
-#   loose   (default) Copy data/ loose files + disable EnginLoc.sga
-#   sga              Build EnginLocMod.sga from data/font/ and deploy alongside
-#                    EnginLoc.sga (no loose files; tests engine SGA priority)
-#
-# What it does:
+# What it does (SGA-only deployment):
 #   1. Auto-detect the game installation directory
-#   2. Create a timestamped backup of existing mod targets + EnginLoc.sga
-#   3. Apply font-fix via Python (writes patched .fnt files to data/font/)
-#   [loose] 4. Copy data/, Engine.ucs to the game's Engine/Locale/Chinese/
-#   [loose] 5. Disable EnginLoc.sga (rename to .disabled) so game loads data/
-#   [sga]   4. Build EnginLocMod.sga from data/font/ using Archive.exe
-#   [sga]   5. Copy EnginLocMod.sga to Engine/Locale/Chinese/ (EnginLoc.sga stays enabled)
+#   2. Create a timestamped backup of existing EnginLocMod.sga + Engine.ucs
+#   3. Copy pre-built EnginLocMod.sga to Engine/Locale/Chinese/
+#   4. Copy Engine.ucs (strings) to Engine/Locale/Chinese/
+#   5. Verify deployment integrity
+#
+# Notes:
+#   - EnginLocMod.sga is a pre-built, pre-tested archive (no build step)
+#   - Game loads: EnginLocMod.sga (TC) + vanilla EnginLoc.sga alongside
+#   - fontdecor.gfx excluded from TC SGA (uses vanilla version)
+#   - All files tested with binary search methodology
 #
 # Run: make deploy  —OR—  bash deploy.sh
 # =============================================================================
@@ -38,7 +37,6 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 GAME_DIR=""
 DRY_RUN=false
 NO_BACKUP=false
-DEPLOY_MODE="loose"
 STAMP="$(date +%Y%m%d-%H%M%S)"
 BACKUP_DIR="${REPO_ROOT}/backup"
 MANIFEST_FILE="${BACKUP_DIR}/deploy_manifest_${STAMP}.txt"
@@ -46,8 +44,8 @@ MANIFEST_FILE="${BACKUP_DIR}/deploy_manifest_${STAMP}.txt"
 # ── Game folder name (case-insensitive search) ────────────────────────────────
 GAME_FOLDER_NAME="Dawn of War Definitive Edition"
 
-# ── Files / dirs to deploy (relative to repo root) ───────────────────────────
-DEPLOY_DIRS=(data)
+# ── Files to deploy (pre-built SGA) ──────────────────────────────────────────
+DEPLOY_FILES=(EnginLocMod.sga Engine.ucs)
 DEPLOY_FILES=(Engine.ucs)
 
 # ── Target sub-path inside game root ─────────────────────────────────────────
