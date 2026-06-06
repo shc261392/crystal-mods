@@ -354,15 +354,17 @@ fi
 # 4 / 5. Mode-dependent file deployment
 if [[ "$DEPLOY_MODE" == "loose" ]]; then
     # 4. Copy mod directories (loose files)
+    # NOTE: Exclude fontdecor.gfx (known broken; causes tofu boxes in Dark Crusade)
+    #       See docs/FONTDECOR_ROOT_CAUSE_ANALYSIS.md for technical details
     for d in "${DEPLOY_DIRS[@]}"; do
         local_src="${REPO_ROOT}/${d}"
         [[ -d "$local_src" ]] || { warn "Source dir missing, skipping: $local_src"; continue; }
 
         log "Deploying ${d}/ → ${LOCALE_TARGET}/${d}/"
         if ! $DRY_RUN; then
-            rsync -a --exclude="*.bak" "${local_src}/" "${LOCALE_TARGET}/${d}/"
+            rsync -a --exclude="*.bak" --exclude="fontdecor.gfx" "${local_src}/" "${LOCALE_TARGET}/${d}/"
         else
-            rsync -a --dry-run --exclude="*.bak" "${local_src}/" "${LOCALE_TARGET}/${d}/" | grep -v "^sending" || true
+            rsync -a --dry-run --exclude="*.bak" --exclude="fontdecor.gfx" "${local_src}/" "${LOCALE_TARGET}/${d}/" | grep -v "^sending" || true
         fi
     done
 
@@ -381,15 +383,18 @@ elif [[ "$DEPLOY_MODE" == "sga" ]]; then
     build_and_deploy_sga
 
     # Also deploy non-font data/ subdirs (art, sound) as loose files
+    # NOTE: Exclude fontdecor.gfx (broken in TC version; causes tofu boxes)
+    #       The game engine will use the original fontdecor.gfx from EnginLoc.sga
     for subdir in art sound; do
         local_src="${REPO_ROOT}/data/${subdir}"
         [[ -d "$local_src" ]] || continue
         log "Deploying data/${subdir}/ → ${LOCALE_TARGET}/data/${subdir}/"
         if ! $DRY_RUN; then
             mkdir -p "${LOCALE_TARGET}/data/${subdir}"
-            rsync -a --exclude="*.bak" "${local_src}/" "${LOCALE_TARGET}/data/${subdir}/"
+            # Exclude: *.bak (backups), fontdecor.gfx (broken glyph table)
+            rsync -a --exclude="*.bak" --exclude="fontdecor.gfx" "${local_src}/" "${LOCALE_TARGET}/data/${subdir}/"
         else
-            rsync -a --dry-run --exclude="*.bak" "${local_src}/" "${LOCALE_TARGET}/data/${subdir}/" | grep -v "^sending" || true
+            rsync -a --dry-run --exclude="*.bak" --exclude="fontdecor.gfx" "${local_src}/" "${LOCALE_TARGET}/data/${subdir}/" | grep -v "^sending" || true
         fi
     done
 
