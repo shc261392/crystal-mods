@@ -112,7 +112,7 @@ uninstall: ## Revert deployment (restore backups, re-enable original SGA)
 	@bash uninstall.sh
 
 DIST_DIR  := dist
-VERSION   := $(shell python3 -c "import tomllib,pathlib; d=tomllib.loads(pathlib.Path('pyproject.toml').read_text()); print(d['project']['version'])" 2>/dev/null || echo "dev")
+VERSION   := $(shell python3 -c "import json,pathlib; print(json.loads(pathlib.Path('modinfo.json').read_text())['version'])" 2>/dev/null || echo "dev")
 PKG_NAME  := wh40k-dow-de-tc-mod-v$(VERSION)
 EXT_DIR   := vortex-ext/game-warhammer40kdawnofwar
 EXT_ID    := game-warhammer40kdawnofwar
@@ -124,16 +124,17 @@ EXT_NAME  := vortex-ext-$(EXT_ID)-v$(EXT_VER)
 # ─────────────────────────────────────────────────────────────────────────────
 
 .PHONY: package
-package: apply ## Build distributable mod archive (flat zip: data/ + Engine.ucs at root)
+package: ## Build distributable mod archive (flat zip: EnginLocMod.sga + Engine.ucs + metadata at root)
 	@echo "▶ Packaging $(PKG_NAME).zip ..."
 	@rm -rf "$(DIST_DIR)/$(PKG_NAME)" "$(DIST_DIR)/$(PKG_NAME).zip"
-	@mkdir -p "$(DIST_DIR)/$(PKG_NAME)/data/font" \
-	           "$(DIST_DIR)/$(PKG_NAME)/data/art" \
-	           "$(DIST_DIR)/$(PKG_NAME)/data/sound"
-	@rsync -a --exclude="*.bak" data/font/  "$(DIST_DIR)/$(PKG_NAME)/data/font/"
-	@rsync -a                   data/art/   "$(DIST_DIR)/$(PKG_NAME)/data/art/"
-	@rsync -a                   data/sound/ "$(DIST_DIR)/$(PKG_NAME)/data/sound/"
+	@mkdir -p "$(DIST_DIR)/$(PKG_NAME)"
+	@cp EnginLocMod.sga "$(DIST_DIR)/$(PKG_NAME)/"
 	@cp Engine.ucs "$(DIST_DIR)/$(PKG_NAME)/"
+	@cp modinfo.json README.md FONT_FIX_README.md "$(DIST_DIR)/$(PKG_NAME)/"
+	@cp deploy.sh deploy.ps1 uninstall.sh uninstall.ps1 "$(DIST_DIR)/$(PKG_NAME)/"
+	@cp Makefile "$(DIST_DIR)/$(PKG_NAME)/"
+	@rsync -a docs/ "$(DIST_DIR)/$(PKG_NAME)/docs/"
+	@rsync -a scripts/ "$(DIST_DIR)/$(PKG_NAME)/scripts/"
 	@cd "$(DIST_DIR)/$(PKG_NAME)" && zip -r "../$(PKG_NAME).zip" . -x "*.DS_Store"
 	@echo "✓ $(DIST_DIR)/$(PKG_NAME).zip"
 	@echo "  Size: $$(du -sh "$(DIST_DIR)/$(PKG_NAME).zip" | cut -f1)"
