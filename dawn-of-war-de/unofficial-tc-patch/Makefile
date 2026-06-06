@@ -128,7 +128,7 @@ package: ## Build distributable mod archive (files packaged with full deployment
 	@echo "▶ Packaging $(PKG_NAME).zip ..."
 	@rm -rf "$(DIST_DIR)/$(PKG_NAME)" "$(DIST_DIR)/$(PKG_NAME).zip"
 	@mkdir -p "$(DIST_DIR)/$(PKG_NAME)/Engine/Locale/Chinese"
-	@cp EnginLocMod.sga "$(DIST_DIR)/$(PKG_NAME)/Engine/Locale/Chinese/"
+	@cp EnginLocMod.sga "$(DIST_DIR)/$(PKG_NAME)/Engine/Locale/Chinese/EnginLoc.sga"
 	@cp Engine.ucs "$(DIST_DIR)/$(PKG_NAME)/Engine/Locale/Chinese/"
 	@cd "$(DIST_DIR)/$(PKG_NAME)" && zip -r "../$(PKG_NAME).zip" . -x "*.DS_Store"
 	@echo "✓ $(DIST_DIR)/$(PKG_NAME).zip"
