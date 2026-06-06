@@ -124,17 +124,12 @@ EXT_NAME  := vortex-ext-$(EXT_ID)-v$(EXT_VER)
 # ─────────────────────────────────────────────────────────────────────────────
 
 .PHONY: package
-package: ## Build distributable mod archive (flat zip: EnginLocMod.sga + Engine.ucs + metadata at root)
+package: ## Build distributable mod archive (only EnginLocMod.sga + Engine.ucs)
 	@echo "▶ Packaging $(PKG_NAME).zip ..."
 	@rm -rf "$(DIST_DIR)/$(PKG_NAME)" "$(DIST_DIR)/$(PKG_NAME).zip"
 	@mkdir -p "$(DIST_DIR)/$(PKG_NAME)"
 	@cp EnginLocMod.sga "$(DIST_DIR)/$(PKG_NAME)/"
 	@cp Engine.ucs "$(DIST_DIR)/$(PKG_NAME)/"
-	@cp modinfo.json README.md FONT_FIX_README.md "$(DIST_DIR)/$(PKG_NAME)/"
-	@cp deploy.sh deploy.ps1 uninstall.sh uninstall.ps1 "$(DIST_DIR)/$(PKG_NAME)/"
-	@cp Makefile "$(DIST_DIR)/$(PKG_NAME)/"
-	@rsync -a docs/ "$(DIST_DIR)/$(PKG_NAME)/docs/"
-	@rsync -a scripts/ "$(DIST_DIR)/$(PKG_NAME)/scripts/"
 	@cd "$(DIST_DIR)/$(PKG_NAME)" && zip -r "../$(PKG_NAME).zip" . -x "*.DS_Store"
 	@echo "✓ $(DIST_DIR)/$(PKG_NAME).zip"
 	@echo "  Size: $$(du -sh "$(DIST_DIR)/$(PKG_NAME).zip" | cut -f1)"
