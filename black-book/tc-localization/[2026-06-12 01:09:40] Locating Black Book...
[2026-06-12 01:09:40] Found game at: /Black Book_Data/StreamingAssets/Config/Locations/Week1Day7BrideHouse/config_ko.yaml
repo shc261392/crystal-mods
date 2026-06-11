@@ -1,0 +1,8 @@
+﻿Name: 포크챠 마을
+Description: 신부는 포크챠 마을 출신이었다. 옵데리하가 강기슭의 오래된 반야에서 납치한 것이다.
+ShortQuestDescr: 뒤바뀐 악마 처치하기
+LongQuestDescr: 18년 전 한 옵데리하가 사시나무 악마를 위해 아이 한 명을 바꿔치기 했습니다. 당신은 검은 책의 두 번째 봉인을 열기 위해 그 악마를 잡으러 나섭니다.
+LevelConfig:
+  Battle:
+    Name: 사시나무 장작개비
+

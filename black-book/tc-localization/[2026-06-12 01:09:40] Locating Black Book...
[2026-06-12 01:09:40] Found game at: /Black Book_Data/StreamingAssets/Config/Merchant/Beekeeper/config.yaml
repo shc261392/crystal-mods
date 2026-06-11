@@ -1,0 +1,29 @@
+﻿Name: Пасечник
+Id: Beekeper
+AssetName: SaltFisher
+DialogueName: TextQuest/Week2/Day6/SaltanForestTalk
+SoldItems:
+- ItemName: Sota
+  Quantity: 1
+- ItemName: Sota
+  Quantity: 1
+- ItemName: Sota
+  Quantity: 1
+- ItemName: Sota
+  Quantity: 1
+- ItemName: Sota
+  Quantity: 1
+- ItemName: Sota
+  Quantity: 1
+- ItemName: RoyalEyes
+  Quantity: 1
+- ItemName: RoyalEyes
+  Quantity: 1
+- ItemName: RoyalEyes
+  Quantity: 1
+- ItemName: RoyalEyes
+  Quantity: 1
+TearPageCost: 5
+ChangePageCost: 4
+DefaultInventoryView: Herb
+

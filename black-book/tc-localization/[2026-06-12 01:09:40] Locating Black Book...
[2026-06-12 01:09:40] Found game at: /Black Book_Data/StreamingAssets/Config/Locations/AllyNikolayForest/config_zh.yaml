@@ -1,0 +1,9 @@
+﻿Name: 咔嚓响的树林
+Description: 圣愚往这个方向去了。林子里的声响特别奇怪，咔嚓咔嚓，听着跟骨头断开似的！
+ShortQuestDescr: 追随逃跑之人
+LevelConfig:
+  Battle:
+    Name: 大木头
+  BattleAlternative:
+    Name: 巨大的原木
+

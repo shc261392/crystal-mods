@@ -1,0 +1,20 @@
+﻿IdName: Week1Day2Orlov
+Name: Орловская курья
+Description: Курья – это старое слово пермяцкое, то же, что и старица. То есть русло речное бывшее. Через него можно добраться и до старых бань, да только не знаю, что на дороге этой ночью повстречаешь.
+Scene: Forest_2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Чай чертокнижника
+    Enemies:
+    - Type: DemonBooker
+      LevelSpawnPointType: EnemyCenter
+    - Type: SamovarDemon
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day2/Orlov
+RequiredLocations:
+- Week1Day2VilgortChurch
+Secondary: Week1Day2OzeroKotjil
+

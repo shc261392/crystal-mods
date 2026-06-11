@@ -1,0 +1,31 @@
+﻿IdName: Week5Day2Yard
+Name: Чердынский дворик
+Description: Тут я срежу дорогу до полицейского участка.
+Scene: ZemskayaStation
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Battle:
+    Name: Дворовой
+    Enemies:
+    - Type: Domovoi
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day2/Yard/Intro
+  Exploration: Week5Day2Yard
+  CameraOverride: CMQuestCamera1
+  MusicOverride: event:/Music/ExploreLight
+  NoExplorerSpawn: true
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 2
+    PossiblePlayers:
+    - Domovoi
+    DialogueFoolWin: TextQuest/Durak/WinBattleUtil
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+LightingType: EVENING
+MoonType: NONE
+RequiredLocations:
+- Week5Day2Prokopiy
+

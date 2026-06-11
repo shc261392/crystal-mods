@@ -1,0 +1,22 @@
+﻿IdName: Week4Day2GrowingWoods
+Name: Разросшийся лес
+Description: 'Крестьяне не успевают с лесом бороться: растет как попало, словно хозяина у него нет.'
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Нечисть на дороге
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSmall
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day2/GrowingWoods
+LightingType: FOG_2
+MoonType: NONE
+

@@ -1,0 +1,7 @@
+﻿Name: 使われていない井戸
+Description: あの影はなに？ 井戸のように見える。
+ShortQuestDescr: 魔物のあとを追う
+LevelConfig:
+  Battle:
+    Name: 井戸の魔物
+

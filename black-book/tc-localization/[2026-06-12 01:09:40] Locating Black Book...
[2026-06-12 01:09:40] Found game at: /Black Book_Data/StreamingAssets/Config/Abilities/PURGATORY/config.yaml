@@ -1,0 +1,13 @@
+﻿Name: Чистилище
+AbilityType: PURGATORY_ROGUELIKE
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: PURGATORY
+Effects:
+- EffectType: FIRM_DESTROY
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true

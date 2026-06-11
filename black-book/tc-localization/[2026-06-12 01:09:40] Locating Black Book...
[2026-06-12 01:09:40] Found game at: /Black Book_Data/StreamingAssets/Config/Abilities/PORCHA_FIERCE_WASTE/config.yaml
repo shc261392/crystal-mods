@@ -1,0 +1,21 @@
+﻿Name: Лютая порча
+AbilityType: PORCHA_FIERCE_WASTE
+TargetType: ENEMY
+Intention: BUFF
+Sprite: FIERCE_PRIEST
+Sound: event:/Abilities/PORCHA_FIERCE_WASTE
+GoldCost: 6
+Effects:
+- EffectType: STATUS_FIERCE
+  MinValue: 6
+  MaxValue: 6
+  NumericData: 2
+  VisualEffect:
+    VisualEffectType: BITE
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 2
+    SkipReady: true
+  StatusEffectType: Waste
+

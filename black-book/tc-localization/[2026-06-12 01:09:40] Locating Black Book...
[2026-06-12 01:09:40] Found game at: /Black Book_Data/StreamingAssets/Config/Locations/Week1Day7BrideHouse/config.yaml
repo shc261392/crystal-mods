@@ -1,0 +1,27 @@
+﻿IdName: Week1Day7BrideHouse
+Name: Село Покча
+Description: Оказывается, невеста-то была из Покчинского села. Видимо, похитила ее обдериха со старых бань, что на речке стоят.
+ShortQuestDescr: Уничтожить нечисть-подменыша
+LongQuestDescr: Восемнадцать лет назад банница подменила ребенка на осиновое полено. Вы отправились за этой нечистью для того, чтобы открыть вторую печать Черной книги.
+Scene: IzbaBrideHouse
+LevelConfig:
+  MusicOverride: event:/Music/ExploreDark
+  MixerSnapshot: snapshot:/Room
+  Battle:
+    Name: Осиновое полено
+    Enemies:
+    - Type: AspenDemon
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/BattleBoss2
+  Quest:
+    DialogueSystemName: Exploration/Week1/WoodLog/QuestIntro
+    Outro: Exploration/Week1/WoodLog/BattleAftermath
+    IzbaAftermath: Exploration/Week1/WoodLog/IzbaAftermath
+RequiredLocations:
+- Week1Day7CherdTrakt
+OnomastikonItems:
+- Onomastikon/Tales/28
+

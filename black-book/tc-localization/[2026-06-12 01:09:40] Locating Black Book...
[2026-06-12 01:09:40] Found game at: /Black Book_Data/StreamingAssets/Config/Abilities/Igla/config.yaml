@@ -1,0 +1,19 @@
+﻿Name: Игла
+AbilityType: IGLA
+AbilityBookPartType: KEY
+Upgrade: IGLA_UP
+TargetType: SELF
+Color: WHITE
+Sprite: IGLA
+GoldCost: 5
+Effects:
+- EffectType: HEAL_SKLAD
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    ReadyTrigger: Word
+    SpellTrigger: GoodStatus
+    MissTrigger: GoodStatus
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

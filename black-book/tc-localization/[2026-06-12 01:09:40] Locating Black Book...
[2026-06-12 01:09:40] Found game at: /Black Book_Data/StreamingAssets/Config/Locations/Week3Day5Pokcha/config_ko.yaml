@@ -1,0 +1,6 @@
+﻿Name: 포크챠 마을
+Description: 신부를 확인해야겠다. 어제 그런 일을 겪었는데 괜찮으려나?
+LevelConfig:
+  Battle:
+    Name: 화난 군중
+

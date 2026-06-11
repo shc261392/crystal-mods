@@ -1,0 +1,6 @@
+﻿Name: 체르딘 외곽
+Description: 체르딘은 큰 마을이다. 페름은 이곳보다 크다고 하던데. 상상도 되지 않는다.
+LevelConfig:
+  Battle:
+    Name: 외곽의 초르트
+

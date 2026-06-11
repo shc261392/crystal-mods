@@ -1,0 +1,17 @@
+﻿Name: Удар наотмашь
+AbilityType: PEASANT_ATTACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: PEASANT_ATTACK
+GoldCost: 3
+Effects:
+- MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

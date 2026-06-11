@@ -1,0 +1,8 @@
+﻿Name: 水车磨坊
+Description: 不少人都觉得磨坊不是什么好地方，因为磨坊主经常跟沃佳诺伊打交道。
+ShortQuestDescr: 去见沃佳诺伊
+LongQuestDescr: 你在小酒馆碰见了那群土匪，结果他们居然是一帮雠特，该去告诉瓦库事情的真相了。
+LevelConfig:
+  Battle:
+    Name: 沃佳诺伊
+

@@ -1,0 +1,11 @@
+﻿Name: Закрытый киот
+InventoryItemName: KiotClosed
+Flavour: Ключа от него нет, что написано не знает никто
+Sprite: IconKiotClosed
+Cost: 125
+Effects:
+- Value: 2
+  Type: StatusBonus
+  StatusName: Prayer
+- Value: 2
+  Type: AdditionalSins

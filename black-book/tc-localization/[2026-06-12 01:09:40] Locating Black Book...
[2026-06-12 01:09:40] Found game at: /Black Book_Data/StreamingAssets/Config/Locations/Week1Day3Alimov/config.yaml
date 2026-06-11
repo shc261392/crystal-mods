@@ -1,0 +1,28 @@
+﻿IdName: Week1Day3Alimov
+Name: Алимовская роща
+Description: 'Про эту рощу я слышала, тут отшельник жил, башкир. Много че умел: расписывал двери да доски печные. Уж давно помер, а помнят.'
+Scene: Forest_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Черти в лесу
+    Enemies:
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyCenter
+    - Type: Demon
+    EnemyKillWin: true
+    HealthLoose: true
+  BattleAlternative:
+    Name: Черти в лесу
+    Enemies:
+    - Type: Ghost
+      LevelSpawnPointType: EnemyCenter
+    - Type: Demon
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day3/Alim
+    Outro: TextQuest/Week1/Day3/AlimOutro
+RequiredLocations:
+- Week1Day3Turgan
+

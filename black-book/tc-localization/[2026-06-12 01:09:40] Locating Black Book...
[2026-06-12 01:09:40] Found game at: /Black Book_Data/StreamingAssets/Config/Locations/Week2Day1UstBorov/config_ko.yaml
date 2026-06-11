@@ -1,0 +1,6 @@
+﻿Name: 우스티-보로프 마을
+Description: 공장 정착지. 노동자와 공장장의 가족이 산다.
+LevelConfig:
+  Battle:
+    Name: 외곽 초르트
+

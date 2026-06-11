@@ -1,0 +1,8 @@
+﻿Name: 西の森
+Description: この古い森は多くの人に広く知られている。この藪の中に、羊歯の花を探しにいくのだ。
+ShortQuestDescr: 羊歯の花を見つける
+LongQuestDescr: 儀式に必要な品は全て揃った。あとは、羊歯の花があるという藪にたどり着くだけだ。
+LevelConfig:
+  Battle:
+    Name: クパーラのチョルト
+

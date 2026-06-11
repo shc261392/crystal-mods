@@ -1,0 +1,23 @@
+﻿IdName: Week5Day4Market
+Name: Искорский рынок
+Description: На этом большом рынке раньше много чего продавали. Интересно, сейчас он открыт?
+LocationType: COMBAT
+Scene: Fair
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  MusicOverride: event:/Music/ExploreDark2
+  Battle:
+    Name: Черти-торговцы
+    Enemies:
+    - Type: Menqw
+      LevelSpawnPointType: EnemyCenter
+    - Type: Demon
+    - Type: SwampFire
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day4/Market/Intro
+RequiredLocations:
+- Week5Day4IskorVillage
+

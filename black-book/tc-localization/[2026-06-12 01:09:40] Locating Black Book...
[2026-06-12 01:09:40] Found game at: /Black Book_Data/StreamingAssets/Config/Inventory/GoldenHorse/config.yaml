@@ -1,0 +1,8 @@
+﻿Name: Золотой конь
+InventoryItemName: GoldenHorse
+Flavour: Говорят, что золотой конь под затопом в Каме. Так и не нашел его никто.
+Sprite: IconGoldenHorse
+Cost: 150
+Effects:
+  - Value: 1
+    Type: UnknownAlwaysChests

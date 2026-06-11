@@ -1,0 +1,12 @@
+﻿Name: Адамова голова
+InventoryItemName: AdamHead
+Type: Herb
+Flavour: Эта трава помогает от легких ран. Нужная вещь на любом пути-дороге.
+Sprite: AdamHead
+Expendable: true
+Cost: 12
+UseOutBattle: true
+Effects:
+- Value: 5
+  Type: Heal
+

@@ -1,0 +1,6 @@
+﻿Name: Ust-Borov Village
+Description: Plant settlement. The families of the workers and the manager live here.
+LevelConfig:
+  Battle:
+    Name: Outskirts Chorts
+

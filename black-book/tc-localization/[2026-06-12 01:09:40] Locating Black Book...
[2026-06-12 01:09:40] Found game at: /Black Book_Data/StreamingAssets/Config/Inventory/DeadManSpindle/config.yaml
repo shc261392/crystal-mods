@@ -1,0 +1,10 @@
+﻿Name: Веретено мертвеца
+InventoryItemName: DeadManSpindle
+Flavour: Веретено изъедено червями и пахнет смертью
+Sprite: DeadManSpindle
+Cost: 60
+Effects:
+- Value: 1
+  Type: AbilityOnBattleStart
+  StatusName: SPINDLE
+

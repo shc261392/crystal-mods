@@ -1,0 +1,6 @@
+﻿Unique: true
+Name: Сглаз
+Description: Снижает <sprite name="Damage"> на {Duration} (минимум 1)
+Sprite: StatusCursed
+Harmful: true
+

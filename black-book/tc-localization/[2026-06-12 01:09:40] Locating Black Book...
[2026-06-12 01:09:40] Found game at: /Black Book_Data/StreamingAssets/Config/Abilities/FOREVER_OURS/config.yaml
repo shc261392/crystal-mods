@@ -1,0 +1,28 @@
+﻿Name: Навеки наша
+AbilityType: FOREVER_OURS
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: FOREVER_OURS
+GoldCost: 26
+Effects:
+- EffectType: STATUS
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    WrapUpTime: 0.5
+    SkipReady: true
+  StatusEffectType: Prayer
+- EffectType: STATUS
+  MinValue: 10
+  MaxValue: 10
+  ForceTarget: ENEMY
+  StatusEffectType: Waste
+- EffectType: STATUS
+  MinValue: 5
+  MaxValue: 5
+  StatusEffectType: Blessed
+

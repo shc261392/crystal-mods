@@ -1,0 +1,10 @@
+﻿Name: Человеколось
+InventoryItemName: Mooseman
+Flavour: Старый бог пермяков. Много их раньше было, да куда сейчас девались, неизвестно. Может, стали нечистой силой?
+Sprite: Mooseman
+Cost: 280
+Effects:
+  - Value: 3
+    Type: StatusOnBattleStart
+    StatusName: Prayer
+

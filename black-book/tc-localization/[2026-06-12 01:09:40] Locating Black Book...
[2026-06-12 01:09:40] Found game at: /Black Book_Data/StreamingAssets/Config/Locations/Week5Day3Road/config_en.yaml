@@ -1,0 +1,6 @@
+﻿Name: Pyanteg Road
+Description: It's not that far from the village from here. But something tells me that the local kolduns left their chorts on this road.
+LevelConfig:
+  Battle:
+    Name: Chorts on the Way
+

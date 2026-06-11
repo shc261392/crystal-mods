@@ -1,0 +1,16 @@
+﻿Name: Адское пламя
+AbilityType: HELL_FIRE
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: HELL_FIRE
+Effects:
+- MinValue: 22
+  MaxValue: 22
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  RepeatCount: 2
+

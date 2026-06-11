@@ -1,0 +1,15 @@
+﻿Name: Ва-му
+AbilityType: MENQW_VAMU
+TargetType: SELF
+Sprite: MENQW_VAMU
+GoldCost: 18
+Effects:
+- EffectType: HEAL
+  MinValue: 33
+  MaxValue: 33
+  VisualEffect:
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 0.5
+

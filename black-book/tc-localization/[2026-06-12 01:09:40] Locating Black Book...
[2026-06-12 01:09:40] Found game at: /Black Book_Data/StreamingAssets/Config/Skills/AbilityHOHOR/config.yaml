@@ -1,0 +1,10 @@
+Name: HOHOR
+SkillName: AbilityHOHOR
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityBAD_EYE
+SpriteOffsetX: -48
+SpriteOffsetY: -42
+Effects:
+- Type: AbilityUnlock
+  StringData: HOHOR

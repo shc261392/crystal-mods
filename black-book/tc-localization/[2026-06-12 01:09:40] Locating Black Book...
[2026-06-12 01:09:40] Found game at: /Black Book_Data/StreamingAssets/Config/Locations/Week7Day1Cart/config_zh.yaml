@@ -1,0 +1,6 @@
+﻿Name: 铁马车
+Description: 有辆大马车卡焦油坑里了，这车是地狱出来的，但我感觉似曾相识。
+LevelConfig:
+  Battle:
+    Name: 罪人马车
+

@@ -1,0 +1,22 @@
+﻿IdName: Week2Day2LarNight
+Name: Соляной ларь
+Description: В соляном ларе хранят рассол перед вываркой. Эта изба закрыта наглухо – чем не жилье для нечистой силы?
+ShortQuestDescr: Прогнать нечистую силу с солеварни
+LongQuestDescr: Несколько заводских исчезли бесследно. Солевары подозревают происки нечистой силы; они попросили вас помочь.
+Scene: SaltFabric
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  MusicOverride: event:/Music/Explore2
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day2/LarNight/Intro
+  Exploration: Week2Day2LarNight
+RequiredLocations:
+- Week2Day2Varnitsa
+LockedAllies:
+- DedEgor
+- DedEgorLoyal
+- Nikolay
+- NikolayLoyal
+OnomastikonItems:
+- Onomastikon/Tales/32
+

@@ -1,0 +1,7 @@
+﻿Name: 로고보 마을
+Description: 알렉산더가 농부 여자아이를 치료하기 위해 찾아갔던 마을이다.
+ShortQuestDescr: 농부 치료하기
+LevelConfig:
+  Battle:
+    Name: 불 뱀
+

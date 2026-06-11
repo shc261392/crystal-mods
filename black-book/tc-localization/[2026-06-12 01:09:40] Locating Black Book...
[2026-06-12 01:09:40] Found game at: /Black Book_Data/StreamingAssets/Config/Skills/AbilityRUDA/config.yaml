@@ -1,0 +1,9 @@
+Name: RUDA
+SkillName: AbilityRUDA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+SpriteOffsetX: -46
+SpriteOffsetY: -34
+Effects:
+- Type: AbilityUnlock
+  StringData: RUDA

@@ -1,0 +1,8 @@
+﻿Name: 동쪽 숲
+Description: 콜바의 우각호 근처에 있는 숲은 아직 이름이 붙여지지 않았기 때문에 다들 그냥 동쪽 숲이라고 부른다.
+LevelConfig:
+  Battle:
+    Name: 사모바르 상인
+  BattleAlternative:
+    Name: 도움이 될 것이다
+

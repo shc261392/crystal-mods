@@ -1,0 +1,18 @@
+RandomAssets:
+  - Drowner
+  - Drowner2
+Health: 35
+HealthRandomAdd: 10
+Mana: 4
+Initiative: 1
+MoneyMin: 12
+MoneyMax: 18
+Experience: 150
+UnitAI: 
+  CastingType: CONSEQUITIVE
+  AIAbilities:
+    - AbilityType: DROWNER_PUZZLE_WASTE
+      TargetType: ENEMY
+Name: Утопленник
+ShortDescription: Короткое описание
+Description: Описание

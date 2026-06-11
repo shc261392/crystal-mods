@@ -1,0 +1,17 @@
+AssetName: DemonHealer
+Health: 100
+Mana: 4
+Initiative: 1
+MoneyMin: 12
+MoneyMax: 18
+Experience: 50
+UnitAI:
+  AIAbilities:
+  - AbilityType: HELL_CLAW
+    TargetType: ENEMY
+  - AbilityType: BURN_WOUNDS
+    TargetType: ALL_ALLIES
+  - AbilityType: CRUST_COVER
+    TargetType: ALL_ALLIES
+  CastingType: UNIT_HARDCODED
+Name: Бес-врачеватель

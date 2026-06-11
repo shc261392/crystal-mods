@@ -1,0 +1,8 @@
+﻿Name: 물레방아
+Description: 방아꾼이 보댜노이와 거래하는 일이 잦기 때문에, 물레방아는 종종 불길한 곳으로 여겨진다.
+ShortQuestDescr: 보댜노이에게 말 걸기
+LongQuestDescr: 당신은 선술집에서 강도들을 만났지만, 알고 보니 그들의 정체는 초르트였습니다. 바쿨에게 이 사건에 대해 알려줄 차례입니다.
+LevelConfig:
+  Battle:
+    Name: 보댜노이
+

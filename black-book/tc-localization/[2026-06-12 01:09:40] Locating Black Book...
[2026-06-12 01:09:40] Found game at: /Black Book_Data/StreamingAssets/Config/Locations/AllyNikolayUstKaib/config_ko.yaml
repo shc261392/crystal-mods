@@ -1,0 +1,7 @@
+﻿Name: 우스티-카이이프
+Description: 이고르 할아버지가 이곳 어딘가에 약초를 숨겨두셨다. 알려주신 대로 찾아보면 금방 찾을 수 있을 것이다!
+ShortQuestDescr: 이고르의 약초 가져가기
+LevelConfig:
+  Battle:
+    Name: 이고르의 비축물
+

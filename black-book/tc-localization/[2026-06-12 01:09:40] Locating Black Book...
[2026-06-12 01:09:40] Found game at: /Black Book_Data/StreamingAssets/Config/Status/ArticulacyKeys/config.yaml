@@ -1,0 +1,5 @@
+﻿Unique: true
+Name: Витийство (ключи)
+Description: Увеличивает количество <sprite name="Key"> в вашем заговоре на {Duration}
+Sprite: StatKeys
+

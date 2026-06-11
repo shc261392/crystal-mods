@@ -1,0 +1,9 @@
+﻿Name: 露莎卡湖
+Description: 这个地方是河水滞留形成的湖，风景如画，叫“露莎卡湖”是因为之前有人在这儿见过露莎卡，我是没亲眼见过。
+ShortQuestDescr: 赶走蛇
+LevelConfig:
+  Battle:
+    Name: 露莎卡湖的蛇
+  BattleAlternative:
+    Name: 露莎卡湖的蛇
+

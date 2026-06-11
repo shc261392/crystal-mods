@@ -1,0 +1,11 @@
+﻿IdName: Week1Day4UstUrol
+Name: Деревня Усть-Уролка
+Description: Деревня неподалеку от Камы
+Scene: Village3
+LevelConfig:
+  MusicOverride: event:/Music/ExploreLight
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day4/UstUrolNew
+RequiredLocations:
+- Week1Day4Abachkin
+

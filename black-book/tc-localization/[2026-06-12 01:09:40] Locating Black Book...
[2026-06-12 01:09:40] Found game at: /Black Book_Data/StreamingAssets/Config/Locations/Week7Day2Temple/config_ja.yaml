@@ -1,0 +1,8 @@
+﻿Name: 死神の神殿
+Description: 身の毛がよだつような場所だ…こんな場所からは、命のあるうちに脱出しないと。
+ShortQuestDescr: 願いを叶える
+LongQuestDescr: ヴァシリーサは盗人の王の試練を抜け、次の試練へと進んだ。この関所はヴァシリーサのために骨の老女自ら用意したものである。
+LevelConfig:
+  Battle:
+    Name: 死神
+

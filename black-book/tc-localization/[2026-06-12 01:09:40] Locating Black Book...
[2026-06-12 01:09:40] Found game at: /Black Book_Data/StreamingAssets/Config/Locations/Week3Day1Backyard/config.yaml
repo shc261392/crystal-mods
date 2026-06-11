@@ -1,0 +1,11 @@
+﻿IdName: Week3Day1Backyard
+Name: Во дворе
+Description: У нас всю работу по дому черти делают. Вот и сейчас слышно, как топором стучат.
+Scene: IzbaBackyard
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  MusicOverride: event:/Music/ExploreLight
+  Exploration: Week3Day1Backyard
+  CinematicIntro: true
+  NoExplorationMusic: true
+

@@ -1,0 +1,10 @@
+Name: GEORGY_WINNER_ROGUELIKE
+SkillName: AbilityGEORGY_WINNER_ROGUELIKE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityGEORGY_SHEPARD_SMALL
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: GEORGY_WINNER_ROGUELIKE

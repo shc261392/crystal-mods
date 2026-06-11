@@ -1,0 +1,7 @@
+﻿Name: 哥萨克客人
+Description: 看来地狱的雠特跟科尔敦处得还不错，怪不得那个雠特要我帮忙对付他们的不速之客。
+ShortQuestDescr: 决定哥萨克人的命运
+LevelConfig:
+  Battle:
+    Name: 惶恐的哥萨克人
+

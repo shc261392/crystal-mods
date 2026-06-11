@@ -1,0 +1,11 @@
+﻿Name: Черномазия
+InventoryItemName: BookBlack
+Flavour: Черномазия была ране, дак по имя лекарки-те и учились
+Sprite: BookBlack
+Cost: 180
+Effects:
+- Value: 2
+  Type: StatusBonus
+  StatusName: Decomposure
+- Value: 1
+  Type: AdditionalSins

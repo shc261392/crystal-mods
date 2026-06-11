@@ -1,0 +1,6 @@
+﻿Unique: true
+Name: Пошибка
+Description: Защита, оставшаяся в конце хода, наносит урон владельцу статуса
+Sprite: StatPoshibko
+Harmful: true
+

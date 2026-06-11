@@ -1,0 +1,23 @@
+﻿Name: Время огня
+AbilityType: FIRE_TIME
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: FIRE_TIME
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Blessed
+  MinValue: 12
+  MaxValue: 12
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+- EffectType: STATUS
+  StatusEffectType: Prayer
+  MinValue: 12
+  MaxValue: 12
+

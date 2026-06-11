@@ -1,0 +1,25 @@
+﻿Name: Дьявольская песня
+AbilityType: SUMMON_DEMON_BY_DEMON
+TargetType: SELF
+AbilitySpellType: SUMMON
+Sprite: SUMMON_DEMON_BY_DEMON
+GoldCost: 3
+Effects:
+- EffectType: SUMMON
+  MinValue: 1
+  MaxValue: 1
+  SummonEffectData:
+    UnitTypes:
+    - Demon
+    - DemonFierce
+    - DemonSmall
+    - DemonPoison
+    - DemonBooker
+    - SamovarDemon
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+

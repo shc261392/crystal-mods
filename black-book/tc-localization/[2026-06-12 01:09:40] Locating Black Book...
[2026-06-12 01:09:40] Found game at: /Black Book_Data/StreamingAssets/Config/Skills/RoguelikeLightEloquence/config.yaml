@@ -1,0 +1,1 @@
+Name: Светлое красноречиеSkillName: RoguelikeLightEloquenceSprite: LightEloquenceSkillDescription: Эффект складности белых слов увеличен на {CalculatedEffect}RequiredSkills:- AbilityFAITHFUL_HOPEEffects:- Value: 1  Type: AdditionalWhiteSklad

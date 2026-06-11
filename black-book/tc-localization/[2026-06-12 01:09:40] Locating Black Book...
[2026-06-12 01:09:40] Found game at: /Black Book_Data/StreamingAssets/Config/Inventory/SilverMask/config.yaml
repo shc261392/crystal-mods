@@ -1,0 +1,9 @@
+﻿Name: Серебряная маска
+InventoryItemName: SilverMask
+Flavour: Такими масками в древние времена покрывали лица умерших...
+Sprite: SilverMask
+Cost: 50
+Effects:
+- Value: 5
+  Type: AdditionalBattleReward
+

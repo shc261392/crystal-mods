@@ -1,0 +1,10 @@
+﻿Name: Склянка со слезами
+InventoryItemName: TearsBottle
+Flavour: 'В другой раз пойдешь на собрание, нет возможности рассказывать про свою жизнь: слезы долят'
+Sprite: TearsBottle
+Cost: 80
+Effects:
+  - Value: 2
+    Type: StatusOnBattleStart
+    StatusName: Poison
+

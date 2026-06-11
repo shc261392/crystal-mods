@@ -1,0 +1,34 @@
+﻿IdName: Week3Day2Fair
+Name: Ярмарка в Заболотной
+Description: Слышала, что сегодня торговцы будут в деревне этой.
+Scene: Fair
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Merchants:
+  - Peddler2
+  - Herbalist2
+  - BookKeeper2
+  - CardGame
+  Quest:
+    DialogueSystemName: TextQuest/Merchant/Fair
+  MusicOverride: event:/Ambient/Yarmarka
+  FoolGame:
+    TeamPlay: true
+    CardsCount: 36
+    PlayerCount: 4
+    PossiblePlayers:
+    - Peasant
+    - Peddler
+    - Peasant
+    - Peasant2
+    - Peasant3
+    - Peasant4
+    - Peasant5
+    - Peasant6
+    - Peasant7
+    - Peasant8
+    DialogueFoolWin: TextQuest/Durak/MerchantGameWin
+    DialogueFoolLose: TextQuest/Durak/MerchantGameLose
+RequiredLocations:
+- Week3Day2Kimzelka
+

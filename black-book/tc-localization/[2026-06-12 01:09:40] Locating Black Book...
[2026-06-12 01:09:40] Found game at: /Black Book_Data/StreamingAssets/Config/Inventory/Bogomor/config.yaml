@@ -1,0 +1,15 @@
+﻿Name: Богомор
+InventoryItemName: Bogomor
+Type: Herb
+Flavour: Ядовиты те грибы – бугомор, – на пленочке белые крупиночки
+Sprite: Bogomor
+Expendable: true
+TargetType: PLAYER
+Cost: 10
+Effects:
+- Value: 8
+  Type: Heal
+- Value: 3
+  Type: Status
+  StatusName: Waste
+

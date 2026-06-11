@@ -1,0 +1,9 @@
+﻿IdName: Week0Day0GraveIntro
+Name: Дорога на росстань
+Scene: GraveIntro
+LevelConfig:
+  Exploration: GraveIntro
+  CinematicIntro: true
+  NoExplorationMusic: true
+  MixerSnapshot: snapshot:/GraveIntro
+

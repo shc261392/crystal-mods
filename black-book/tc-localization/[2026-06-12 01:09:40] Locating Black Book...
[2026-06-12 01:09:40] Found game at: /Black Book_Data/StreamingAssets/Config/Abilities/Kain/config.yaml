@@ -1,0 +1,29 @@
+﻿Name: Каин
+AbilityType: KAIN
+Upgrade: KAIN_UP
+TargetType: ENEMY
+Intention: BUFF
+Sprite: Kain
+GoldCost: 16
+Effects:
+- EffectType: DAMAGE_SKLAD
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal2OrderBlack
+    MissTrigger: Seal2OrderBlack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+- MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  Syllable: true
+

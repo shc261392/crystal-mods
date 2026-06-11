@@ -1,0 +1,25 @@
+﻿AssetName: Ikota
+Health: 150
+HealthRandomAdd: 0
+Mana: 4
+Initiative: 1
+MoneyMin: 18
+MoneyMax: 24
+Experience: 700
+UnitAI:
+  AIAbilities:
+  - AbilityType: IKOTA_HIDE
+    TargetType: SELF
+  - AbilityType: IKOTA_STRENGTH
+    TargetType: SELF
+  - AbilityType: IKOTA_HEAL
+    TargetType: SELF
+  - AbilityType: IKOTA_ATTACK
+    TargetType: ENEMY
+  AllyActivatedAbility:
+    AbilityType: IKOTA_DEFENCE
+    TargetType: PLAYER
+  AllyActivatedAbilityTimeout: 6
+  CastingType: UNIT_HARDCODED
+Name: Икота Прошка
+

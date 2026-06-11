@@ -1,0 +1,6 @@
+﻿Name: 좁은 길거리
+Description: 이스코르스크 성채 위로 가려면 이 바위 두 개 사이로 걸어가야 한다. 사람들은 이곳을 좁은 길거리라고 부른다.
+LevelConfig:
+  Battle:
+    Name: 열병 하수인
+

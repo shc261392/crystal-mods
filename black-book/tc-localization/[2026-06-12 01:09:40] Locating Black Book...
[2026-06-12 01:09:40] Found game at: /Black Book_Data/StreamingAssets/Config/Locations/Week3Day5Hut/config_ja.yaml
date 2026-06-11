@@ -1,0 +1,7 @@
+﻿Name: 猟師の小屋
+Description: 猟師の小屋は街の郊外にあった。フェルバンクスが嘘をついていないといいけど。
+ShortQuestDescr: 小屋に向かう
+LevelConfig:
+  Battle:
+    Name: 狼の襲撃
+

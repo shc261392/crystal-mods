@@ -1,0 +1,9 @@
+﻿Name: Козичка
+InventoryItemName: Bag2
+Flavour: Мы раньше в школу книги носили в холщовых козичках. Во, здорово!
+Sprite: IconBag2
+Cost: 320
+Effects:
+  - Value: 2
+    Type: AdditionalItemsPerTurn
+

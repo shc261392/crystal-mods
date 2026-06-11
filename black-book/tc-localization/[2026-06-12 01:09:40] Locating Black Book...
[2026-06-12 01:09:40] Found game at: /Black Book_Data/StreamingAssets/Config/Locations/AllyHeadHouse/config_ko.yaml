@@ -1,0 +1,8 @@
+﻿Name: 레본티의 이즈바
+Description: 여기가 레본티의 이즈바다. 흥미롭다. 뭐라도 남은 게 있으려나? 누구 계세요?
+ShortQuestDescr: 레본티에게 나는 법 가르치기
+LongQuestDescr: 늙은 에레트닉이 다시 돌아다닐 방법을 생각해 냈습니다. 자기 이즈바에 틀어박힌 클라드닉을 찾아서 먹겠다고 합니다.
+LevelConfig:
+  Battle:
+    Name: 클라드닉
+

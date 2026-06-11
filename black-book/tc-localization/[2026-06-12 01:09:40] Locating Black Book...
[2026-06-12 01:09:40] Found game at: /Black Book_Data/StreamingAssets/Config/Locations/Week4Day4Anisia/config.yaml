@@ -1,0 +1,14 @@
+﻿IdName: Week4Day4Anisia
+Name: Усадьба Анисьи
+Description: Когда-то в этой усадьбе много людей жило. Сейчас одна Анисья.
+Scene: LostVillage
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day4/Anisia/Intro
+  Exploration: Outside
+  NoExplorerSpawn: true
+OnomastikonItems:
+- Onomastikon/Tales/21
+CanBeVisitedMultiple: true
+

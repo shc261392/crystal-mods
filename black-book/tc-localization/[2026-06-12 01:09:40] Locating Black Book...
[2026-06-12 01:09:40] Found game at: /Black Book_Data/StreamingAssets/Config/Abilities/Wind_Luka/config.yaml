@@ -1,0 +1,15 @@
+﻿Name: Ветер-Лука
+AbilityType: WIND_LUKA
+Upgrade: WIND_LUKA_UP
+TargetType: SELF
+Color: WHITE
+Sprite: WindLukaAbility
+GoldCost: 103
+Effects:
+- EffectType: ADD_EFFECT_TO_ZAGOVOR
+  MinValue: 5
+  MaxValue: 5
+  StringData: DEFENCE
+- EffectType: IMMEDIATE
+- EffectType: KRADA
+

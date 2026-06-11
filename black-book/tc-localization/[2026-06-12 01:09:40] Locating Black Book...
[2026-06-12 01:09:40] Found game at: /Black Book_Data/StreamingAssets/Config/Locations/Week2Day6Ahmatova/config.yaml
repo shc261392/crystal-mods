@@ -1,0 +1,18 @@
+﻿IdName: Week2Day6Ahmatova
+Name: Лог Ахматовой
+Description: Овраги часто бывают соединены с потусторонним миром. Дед Егор говорит, что тут порог есть какой-то.
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Нежить в логу
+    Enemies:
+    - Type: Ghost
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSmall
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+LightingType: DARK
+

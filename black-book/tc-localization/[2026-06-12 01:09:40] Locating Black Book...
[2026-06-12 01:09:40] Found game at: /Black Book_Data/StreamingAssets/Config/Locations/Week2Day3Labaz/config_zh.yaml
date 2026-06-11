@@ -1,0 +1,7 @@
+﻿Name: 狩猎台子
+Description: 我顺着邪灵的脚印找到了这个打猎的台子
+ShortQuestDescr: 找到邪灵
+LevelConfig:
+  Battle:
+    Name: 异尸
+

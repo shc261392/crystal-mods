@@ -1,0 +1,8 @@
+﻿Name: Человеческий клык
+InventoryItemName: HumanFang
+Flavour: Глаз меток, да зуб редок
+Sprite: HumanFang
+Cost: 100
+Effects:
+- Value: 30
+  Type: ExperienceMultiplier

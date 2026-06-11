@@ -1,0 +1,1 @@
+Name: Помощь святых IIISkillName: RoguelikeHelpOfSaints3Sprite: HelpOfSaints3SkillDescription: Увеличивает защиту в словах еще на {CalculatedEffect}RequiredSkills:- AbilityMIKHAIL_VOEVODAEffects:- Value: 1  Type: AdditionalDefence

@@ -1,0 +1,12 @@
+﻿Name: Гриб-Ерема
+InventoryItemName: EremaMushroom
+Type: Herb
+Flavour: Которы можно исть, дак матрены, а есть похожи на лисичку – еремы. Форма другая, внизу – юбочка, оне ядовитые
+Sprite: EremaMushroom
+Expendable: true
+Cost: 14
+TargetType: ENEMY
+Effects:
+- Value: 5
+  Type: Damage
+

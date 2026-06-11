@@ -1,0 +1,7 @@
+﻿Name: 废教堂
+Description: 这地方本来是圣地，是旧礼仪派教徒的小教堂吗？
+ShortQuestDescr: 调查教堂
+LevelConfig:
+  Battle:
+    Name: 硬币雠特
+

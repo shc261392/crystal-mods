@@ -1,0 +1,41 @@
+﻿IdName: Week2Day7WaterMill
+Name: Водяная мельница
+Description: Водяная мельница считается дурным местом. Все из-за мельников, которые часто имеют дело с водяными.
+ShortQuestDescr: Поговорить с водяным
+LongQuestDescr: В кабаке вы повстречались с разбойниками, которые оказались чертями. Пришло время рассказать Вакулю о произошедшем.
+Scene: Watermill
+LevelConfig:
+  MusicOverride: event:/Music/Explore2
+  Battle:
+    Name: Водяной
+    Enemies:
+    - Type: Merman
+      LevelSpawnPointType: EnemyCenter
+    Barks:
+    - Id: Battle/Vodyanoy/First
+      HealthPercent: 0.800000012
+      TargetUnit: Merman
+    - Id: Battle/Vodyanoy/Second
+      HealthPercent: 0.300000012
+      TargetUnit: Merman
+    QuestKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/BattleBoss2
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day7/WaterMill/Intro
+    Reward:
+      Money: 25
+      Experience: 1200
+      ItemRewards:
+        - Quantity: 1
+          Item: SaintHand
+    Outro: TextQuest/Week2/Day7/WaterMill/OutroChoice
+    IzbaAftermath: Izba/Week3/Day15
+  Exploration: Week2Day7WaterMill
+  CinematicIntro: true
+RequiredLocations:
+- Week2Day7Wine
+OnomastikonItems:
+- Onomastikon/Tales/5
+

@@ -1,0 +1,16 @@
+﻿Name: Залечить раны
+AbilityType: WEREWOLF_HEAL_WOUNDS
+TargetType: SELF
+Sprite: WEREWOLF_HEAL_WOUNDS
+Sound: event:/Units/Werewolf/WEREWOLF_HEAL_WOUNDS
+GoldCost: 6
+Effects:
+- EffectType: HEAL
+  MinValue: 40
+  MaxValue: 40
+  VisualEffect:
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 0.5
+

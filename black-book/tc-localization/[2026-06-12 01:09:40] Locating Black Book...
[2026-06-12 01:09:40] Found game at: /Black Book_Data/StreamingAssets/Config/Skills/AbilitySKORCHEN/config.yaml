@@ -1,0 +1,10 @@
+Name: SKORCHEN
+SkillName: AbilitySKORCHEN
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityKORKUSHA
+SpriteOffsetX: -34
+SpriteOffsetY: -59
+Effects:
+- Type: AbilityUnlock
+  StringData: SKORCHEN

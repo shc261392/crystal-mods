@@ -1,0 +1,17 @@
+Name: Ученица
+Description: Для тех, кто хочет погрузиться в мир игры, не испытывая сложностей в сражениях
+PrefixIcons: "<sprite name=\"SkullA\">"
+Sprite: DifficultyEasy
+Effects:
+  - Type: DAMAGE_COEFF
+    Value: -0.5
+  - Type: HEALTH_COEFF
+    Value: -0.5
+  - Type: HEAL_COEFF
+    Value: -0.5
+  - Type: DEFENCE_COEFF
+    Value: -0.5
+  - Type: STATUS_COEFF
+    Value: -0.5
+  - Type: CAN_SKIP_BATTLE
+    Value: 1

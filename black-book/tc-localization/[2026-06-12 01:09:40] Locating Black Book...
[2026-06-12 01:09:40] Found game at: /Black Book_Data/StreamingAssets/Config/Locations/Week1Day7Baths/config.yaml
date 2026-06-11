@@ -1,0 +1,14 @@
+IdName: Week1Day7Baths
+Name: Порошинские бани
+Description: Слышны песни, видать, вечорка какая устроена.
+Scene: Village
+LocationType: PRIEST
+RequiredLocations:
+  - Week1Day7Poroshin
+OnomastikonItems:
+  - Onomastikon/Songs/6
+LevelConfig:
+  MusicOverride: event:/Music/ExploreLight
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Singers/SingersUniversal/Intro

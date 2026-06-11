@@ -1,0 +1,11 @@
+﻿IdName: Week1Day1KamgortWoods
+Name: Камгортская роща
+Description: Сосновая роща к северу от Камгорта. Осенью тут грибов видимо-невидимо!
+Scene: Forest_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day1/KamgortWoods/Intro
+RequiredLocations:
+- Week1Day1Starica
+

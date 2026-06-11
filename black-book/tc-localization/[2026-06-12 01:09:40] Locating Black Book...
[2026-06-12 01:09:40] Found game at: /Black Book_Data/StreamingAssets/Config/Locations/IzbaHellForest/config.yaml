@@ -1,0 +1,24 @@
+IdName: IzbaHellForest
+Name: Передышка
+Scene: HellSinnersForestIzba
+IsIzba: true
+ForbiddenSpawnAllies:
+  - DedEgor
+  - DedEgorLoyal
+  - Nikolay
+  - NikolayLoyal
+  - Proshka
+  - ProshkaLoyal
+  - WhiteHead
+  - WhiteHeadLoyal
+  - Karnysh
+  - KarnyshLoyal
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  Exploration: IzbaHellForest
+  CinematicIntro: true
+  NoExplorerSpawn: true
+  MusicOverride: "event:/Music/IzbaHell"
+  IzbaJingleOverride: "event:/Music/ComingBackHell"
+  IzbaReceiveSoundOverride: "event:/Misc/VisitorHell"
+  SpecialLevel: true

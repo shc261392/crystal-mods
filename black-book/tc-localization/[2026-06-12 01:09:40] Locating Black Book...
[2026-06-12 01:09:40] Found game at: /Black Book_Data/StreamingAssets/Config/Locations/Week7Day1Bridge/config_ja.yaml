@@ -1,0 +1,6 @@
+﻿Name: 髪の毛橋
+Description: 燃え立つ崖には様々な橋が架かっているけど、どれも幅が違う。どれを渡ればいいのだろう？
+LevelConfig:
+  Battle:
+    Name: エンデル＝ドゥ
+

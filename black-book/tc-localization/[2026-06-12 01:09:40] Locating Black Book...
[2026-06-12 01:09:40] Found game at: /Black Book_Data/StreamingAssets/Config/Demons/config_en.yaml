@@ -1,0 +1,79 @@
+﻿DemonConfigs:
+  Mathew:
+    Name: Matvey
+    Description: An oprichnik during the reign of Ivan the Terrible, Matvey is now a fiend
+  Ivashka:
+    Name: Ivashka
+    Description: Fat Ivashka likes it when children starve
+  Fyodor:
+    Name: Fyodor One-Eye
+    Description: Lost his eye in a bet with a sinful lot who accepted bribes, now hates people even more
+  Makarko:
+    Name: Makarko
+    Description: He was once a susedko, until he killed his hosts.
+  Korovin:
+    Name: Korovin
+    Description: Long, long ago he used to sing of the wonders of creation in an angelic choir
+  Andropko:
+    Name: Andropko
+    Description: Where Andropko crawls, plague and fever spreads
+  Antipka:
+    Name: Antipka
+    Description: During his time as an ikota of Perm's governor, he learned the subtleties of political affairs
+  Muska:
+    Name: Mus'ka
+    Description: Brought discord to numerous families
+  ThirteenthBrother:
+    Name: Thirteenth Brother
+    Description: His favorite occupation is to interfere with the work of the peasants, so he knows all about housekeeping and farming
+  Andreiko:
+    Name: Andreiko
+    Description: Responsible for the 1840 famine in the Orlov gubernia. He is looking forward to a new age.
+  Mikolka:
+    Name: Mikolka
+    Description: Can turn the souls of sinners into horses
+  FireZmey:
+    Name: Fiery Snake
+    Description: Charms and then kills peasant girls
+  CursedIcon:
+    Name: Hell-drawn Demon
+    Description: Connoisseur of all kinds of arts, even the most morbid
+  Luvezelko:
+    Name: Luvezelko
+    Description: Commands cockroaches, but hopes to be promoted to command flies.
+LocationIdToJobLocation:
+  Solikamsk:
+    Name: Solikamsk
+  Cherdyn:
+    Name: Cherdyn
+  Vilgort:
+    Name: Vilgort
+  Pokcha:
+    Name: Pokcha
+  Nyrob:
+    Name: Nyrob
+  Yanidor:
+    Name: Yanidor
+  Kuznetsova:
+    Name: Kuznetsov
+  Verhneyazvinskoe:
+    Name: Verkhneyazvinsk
+  Govorlivskoe:
+    Name: Govorlivsk
+  Gainskoe:
+    Name: Gaynsk
+  VerhKosva:
+    Name: Upper Kosva
+  Usva:
+    Name: Yusva
+  Voskresenskoe:
+    Name: Voskresensk
+  Akchim:
+    Name: Akchim
+  MeaninglessLocation1:
+    Name: Meaningless Job
+  MeaninglessLocation2:
+    Name: Meaningless Job
+  MeaninglessLocation3:
+    Name: Meaningless Job
+

@@ -1,0 +1,19 @@
+﻿Name: Персты леса
+AbilityType: FILIMON_FINGER
+TargetType: SELF
+AbilitySpellType: SUMMON
+Sprite: FILIMON_FINGER
+GoldCost: 3
+Effects:
+- EffectType: SUMMON
+  MinValue: 2
+  MaxValue: 2
+  SummonEffectData:
+    UnitTypes:
+    - ForestDemonRoots
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Spell1
+    WrapUpTime: 0.5
+

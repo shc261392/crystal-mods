@@ -1,0 +1,17 @@
+﻿Name: Коготь брата
+AbilityType: ANDREIKO_CLAW
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: THIRTEENTH_CLAW
+GoldCost: 3
+Effects:
+- MinValue: 6
+  MaxValue: 6
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  RepeatCount: 2
+

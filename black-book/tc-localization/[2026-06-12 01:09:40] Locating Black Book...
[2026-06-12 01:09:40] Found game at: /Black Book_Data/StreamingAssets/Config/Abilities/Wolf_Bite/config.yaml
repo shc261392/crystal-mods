@@ -1,0 +1,19 @@
+﻿Name: Укус
+AbilityType: WOLF_BITE
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: Bite
+GoldCost: 3
+Effects:
+- EffectType: DAMAGE_FIERCE
+  MinValue: 7
+  MaxValue: 7
+  NumericData: 2
+  VisualEffect:
+    VisualEffectType: BITE
+    ReadyTrigger: Bite
+    SpellTrigger: Bite
+    MissTrigger: BiteMiss
+    WrapUpTime: 1
+    SkipReady: true
+

@@ -1,0 +1,10 @@
+﻿Name: Ключи II
+SkillName: Keys2
+Sprite: Keys2Skill
+Description: Получите дополнительное слово с ключом каждый ход в вашу руку
+RequiredSkills:
+- Keys1
+Effects:
+- Value: 1
+  Type: AdditionalBookmarkKey
+

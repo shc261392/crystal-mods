@@ -1,0 +1,10 @@
+﻿Name: Соль
+InventoryItemName: Salt
+Flavour: Так и наговаривали на соль голимую
+Sprite: IconSalt
+Cost: 160
+Effects:
+  - Value: 2
+    Type: StatusOnBattleStart
+    StatusName: DefenceKeep
+

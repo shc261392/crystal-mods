@@ -1,0 +1,30 @@
+﻿AssetName: Satan2
+Health: 666
+Mana: 4
+Initiative: 1
+MoneyMin: 180
+MoneyMax: 240
+Experience: 6666
+StartingStatusEffects:
+  - StatusEffectType: Curst
+    Duration: 1
+    Permanent: true
+    Unremovable: true
+  - StatusEffectType: Regeneration
+    Duration: 30
+    Unremovable: true
+    HardDifficulty: true
+  - StatusEffectType: Master
+    Duration: 999
+    Permanent: true
+    Unremovable: true
+UnitAI:
+  AIAbilities:
+    - AbilityType: HELL_RETRIBUTION
+      TargetType: ENEMY
+    - AbilityType: SINS_PAYMENT
+      TargetType: SELF
+    - AbilityType: SATANS_JOY
+      TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Сатана

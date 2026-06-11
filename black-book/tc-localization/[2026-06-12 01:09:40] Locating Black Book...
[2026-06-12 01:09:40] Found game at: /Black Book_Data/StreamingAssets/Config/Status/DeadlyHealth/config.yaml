@@ -1,0 +1,5 @@
+﻿Unique: true
+Name: Смертельное здоровье
+Description: Если вы убьете существо с этим статусом, то проиграете
+Sprite: StatusNutro
+HideCounterOnPermanent: true

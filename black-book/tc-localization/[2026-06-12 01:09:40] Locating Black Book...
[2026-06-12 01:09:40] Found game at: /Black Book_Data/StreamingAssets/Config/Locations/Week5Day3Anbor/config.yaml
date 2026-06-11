@@ -1,0 +1,16 @@
+﻿IdName: Week5Day3Anbor
+Name: Деревня Анбор
+Description: В этой деревне живет Марьюшка
+ShortQuestDescr: Извести кикимору
+Scene: Village
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  MusicOverride: event:/Music/Explore2
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day3/Anbor/Intro
+RequiredLocations:
+- Week5Day3Forests
+Secondary: Week5Day3Anbor
+OnomastikonItems:
+- Onomastikon/Encyclopedia/54
+

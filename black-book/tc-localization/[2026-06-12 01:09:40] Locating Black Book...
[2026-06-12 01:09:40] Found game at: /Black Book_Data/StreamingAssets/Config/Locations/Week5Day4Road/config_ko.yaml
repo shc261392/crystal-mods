@@ -1,0 +1,6 @@
+﻿Name: 니로프로 가는 길
+Description: 한때 어떤 차르가 이 길을 따라 자신의 사형대로 갔다고 한다. 왜 처형당했는지는 기억나지 않는다.
+LevelConfig:
+  Battle:
+    Name: 길 초르트
+

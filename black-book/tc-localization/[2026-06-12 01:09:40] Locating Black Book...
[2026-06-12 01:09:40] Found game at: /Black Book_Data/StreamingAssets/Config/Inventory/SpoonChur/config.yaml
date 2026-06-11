@@ -1,0 +1,11 @@
+﻿Name: Зачуранная ложка
+InventoryItemName: SpoonChur
+Flavour: Травы этой заваришь и ложку хлёбальную пьёшь.
+Sprite: IconSpoon1
+Cost: 150
+Effects:
+  - Value: 3
+    Type: StatusOnBattleStart
+    StatusName: Zachurat
+  - Value: 5
+    Type: IncreaseHealth

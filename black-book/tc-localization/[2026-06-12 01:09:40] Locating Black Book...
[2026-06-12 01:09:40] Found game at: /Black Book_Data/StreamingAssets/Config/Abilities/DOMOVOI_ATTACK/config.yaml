@@ -1,0 +1,16 @@
+﻿Name: Мохнатая шерсть
+AbilityType: DOMOVOI_ATTACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: DOMOVOI_ATTACK
+GoldCost: 3
+Effects:
+- MinValue: 10
+  MaxValue: 20
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

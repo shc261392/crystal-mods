@@ -1,0 +1,7 @@
+﻿Name: Lyulvin Swamps
+Description: Near the village of Yanidor there lie the beautiful Lyulvin Swamps. It's dangerous there. Old Egor says that demons dwell in these swamps. It means that I can catch them for my Book.
+ShortQuestDescr: Catch demons in the swamps
+LevelConfig:
+  Battle:
+    Name: Swamp Demons
+

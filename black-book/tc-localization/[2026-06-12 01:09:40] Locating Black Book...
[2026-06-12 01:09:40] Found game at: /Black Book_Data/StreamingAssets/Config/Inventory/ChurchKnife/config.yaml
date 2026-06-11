@@ -1,0 +1,12 @@
+﻿Name: Церковный нож
+InventoryItemName: ChurchKnife
+Flavour: Которая рука крест кладет, та и нож точит
+Sprite: ChurchKnife
+Cost: 260
+NotForSale: true
+CanNotBeDropped: true
+Effects:
+- Value: 3
+  Type: StatusBonus
+  StatusName: Blessed
+

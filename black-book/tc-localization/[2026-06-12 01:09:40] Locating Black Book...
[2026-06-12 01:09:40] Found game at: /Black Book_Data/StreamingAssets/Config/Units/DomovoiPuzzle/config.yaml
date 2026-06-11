@@ -1,0 +1,12 @@
+﻿AssetName: Domovoi
+Health: 9
+Mana: 4
+Initiative: 1
+MoneyMin: 15
+MoneyMax: 21
+Experience: 175
+UnitAI:
+  AIAbilities:
+  - AbilityType: DEMON_ATTACK_PUZZLE_1
+    TargetType: ENEMY
+Name: Домовой

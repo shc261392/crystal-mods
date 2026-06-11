@@ -1,0 +1,21 @@
+﻿AssetName: Pike
+Health: 350
+Mana: 4
+Initiative: 1
+MoneyMin: 30
+MoneyMax: 48
+Experience: 2000
+StartingStatusEffects:
+  - StatusEffectType: Zachurat
+    Duration: 5
+    HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: PIKE_REGENERATION
+    TargetType: SELF
+  - AbilityType: PIKE_BITE
+    TargetType: ENEMY
+  - AbilityType: PIKE_SILT
+    TargetType: ENEMY
+  CastingType: CONSEQUITIVE
+Name: Щука

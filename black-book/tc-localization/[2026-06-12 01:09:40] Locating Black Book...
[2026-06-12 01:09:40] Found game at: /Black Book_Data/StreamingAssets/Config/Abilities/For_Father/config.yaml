@@ -1,0 +1,22 @@
+﻿Name: Во имя отца
+AbilityType: FOR_FATHER
+AbilityBookPartType: KEY
+Upgrade: FOR_FATHER_UP
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+Sprite: FOR_FATHER
+GoldCost: 17
+Effects:
+- EffectType: FIRM
+  MinValue: 1
+  MaxValue: 1
+- EffectType: STATUS
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+  StatusEffectType: DefenceGive
+

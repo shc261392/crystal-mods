@@ -1,0 +1,15 @@
+﻿AssetName: WolfInitiator
+Health: 13
+Mana: 4
+Initiative: 1
+MoneyMin: 1
+MoneyMax: 2
+Experience: 50
+UnitAI:
+  AIAbilities:
+  - AbilityType: WOLF_BITE_TUTORIAL
+    TargetType: PLAYER
+    ConsequitiveRounds: 2
+  CastingType: RANDOM
+Name: Чёрт-посвятитель
+

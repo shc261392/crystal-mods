@@ -1,0 +1,19 @@
+﻿Name: Ржавый нож
+AbilityType: BAD_KNIFE
+AbilityBookPartType: KEY
+Upgrade: FIRM_KNIFE_UP
+TargetType: SELF
+Intention: ATTACK
+Sprite: FirmKnife
+GoldCost: 25
+Effects:
+- EffectType: SACRIFICE
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal2KeyBlack
+    MissTrigger: Seal2KeyBlack
+    WrapUpTime: 0.200000003
+    SkipReady: true

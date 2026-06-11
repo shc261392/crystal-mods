@@ -1,0 +1,73 @@
+﻿Name: Травница
+Id: Herbalist
+AssetName: Herbalist
+DialogueName: TextQuest/Merchant/Herbalist/Conversation
+SoldItems:
+- ItemName: AdamHead
+  Quantity: 1
+- ItemName: AdamHead
+  Quantity: 1
+RandomItems:
+- ItemName: ArhilinHerb
+  Quantity: 2
+  Probability: 0.800000012
+- ItemName: BreakHerb
+  Quantity: 2
+  Probability: 0.600000024
+- ItemName: CryingHerb
+  Quantity: 2
+  Probability: 0.600000024
+- ItemName: KolukaHerb
+  Quantity: 3
+  Probability: 0.600000024
+- ItemName: OdolenHerb
+  Quantity: 1
+  Probability: 0.400000006
+- ItemName: PetrovHerb
+  Quantity: 2
+  Probability: 0.800000012
+- ItemName: PrikryshHerb
+  Quantity: 2
+  Probability: 0.899999976
+- ItemName: TirlichHerb
+  Quantity: 2
+  Probability: 0.300000012
+- ItemName: IndiviaHerb
+  Quantity: 2
+  Probability: 0.699999988
+- ItemName: Braga
+  Quantity: 2
+  Probability: 0.200000003
+- ItemName: Sota
+  Quantity: 2
+  Probability: 0.100000001
+- ItemName: CuckooTears
+  Quantity: 1
+  Probability: 0.100000001
+- ItemName: WormwoodHerb
+  Quantity: 2
+  Probability: 0.699999988
+- ItemName: Razorva
+  Quantity: 2
+  Probability: 0.3
+- ItemName: Borvyak
+  Quantity: 1
+  Probability: 0.2
+- ItemName: LadanTrava
+  Quantity: 1
+  Probability: 0.2
+- ItemName: ShutemTrava
+  Quantity: 1
+  Probability: 0.2
+- ItemName: WhiteHeadTrava
+  Quantity: 1
+  Probability: 0.2
+- ItemName: SecretLeaveTrava
+  Quantity: 1
+  Probability: 0.2
+TearPageCost: 5
+ChangePageCost: 4
+Min: 12
+Max: 22
+DefaultInventoryView: Herb
+

@@ -1,0 +1,47 @@
+﻿IdName: Week6Day1Library
+Name: Библиотека
+Description: 'Интересно мне: какие книги держит в свой библиотеке знатный колдун?'
+Scene: AlexManorLibrary
+LevelConfig:
+  MixerSnapshot: snapshot:/Church
+  Battle:
+    Name: Чучело с бисяками
+    Enemies:
+    - Type: DemonPuzzle2
+      LevelSpawnPointType: EnemyCenter
+      HealthOverride: 20
+    - Type: DemonPuzzle2
+      HealthOverride: 7
+    NoShuffle: true
+    PuzzleDeck:
+    - PEREPOLOH
+    - MOON_BROTHERS
+    - JUDEA
+    - MOON_BROTHERS
+    - KILA
+    - AVOIL
+    - WIND_FIERCE
+    - SKY_HIGH
+    - KEY_TONGUE
+    - FOR_FATHER
+    - LOCK
+    - LOCK
+    - IGLA
+    PuzzleManaOverride:
+    - 3
+    - 2
+    PuzzleHandOverride:
+    - 7
+    - 3
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 1
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day1/Library/Intro
+  MusicOverride: event:/Music/AlexanderManor
+RequiredLocations:
+- Week6Day1Atrium
+OnomastikonItems:
+- Onomastikon/Encyclopedia/80
+HideBook: true
+

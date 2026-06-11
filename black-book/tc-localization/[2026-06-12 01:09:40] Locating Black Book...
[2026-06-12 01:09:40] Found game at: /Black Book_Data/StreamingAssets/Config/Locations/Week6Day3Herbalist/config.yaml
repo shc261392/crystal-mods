@@ -1,0 +1,12 @@
+﻿IdName: Week6Day3Herbalist
+Name: Травница
+Description: В купальскую ночь травницы собирают колдовские травы.
+LightingType: STORM
+Scene: Village7
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Merchants:
+    - Herbalist3
+CanBeVisitedNextDay: true
+RequiredLocations:
+  - Week6Day3Grave

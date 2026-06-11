@@ -1,0 +1,17 @@
+﻿Name: Стеклянные черти
+AbilityType: DEMON_SWARM
+TargetType: ALL_ENEMIES
+Intention: ATTACK
+Sprite: DEMON_SWARM
+GoldCost: 3
+Effects:
+- MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.0500000007
+    SkipReady: true
+

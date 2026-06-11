@@ -1,0 +1,23 @@
+﻿Name: Сатанович-бес
+AbilityType: SATANOVICH
+AbilityBookPartType: KEY
+Upgrade: SATANOVICH_UP
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: SATANOVICH
+GoldCost: 66
+Effects:
+- EffectType: STATUS
+  MinValue: 4
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal7OrderBlack
+    MissTrigger: Seal7OrderBlack
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: Eloquence
+

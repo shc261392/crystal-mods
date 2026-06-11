@@ -1,0 +1,10 @@
+﻿Name: "{Ability1} | {Ability2}"
+SkillName: RoguelikeSduRabaToOnceForever
+Sprite: SkilledDemonsSkill
+Description: Заменяет {Ability1} на {Ability2} в стартовой колоде
+RequiredSkills:
+  - AbilityDEMONS_DEATH
+Effects:
+- Value: 1
+  Type: RoguelikeStartingDeckUpgrade
+  StringData: RABA&ONCE_AND_FOREVER

@@ -1,0 +1,21 @@
+﻿Name: Сухота
+AbilityType: SUHOTA
+TargetType: ENEMY
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: SUHOTA
+GoldCost: 91
+Gesture: true
+Effects:
+- EffectType: STATUS_SKLAD
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal7OrderBlack
+    MissTrigger: Seal7OrderBlack
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: Waste
+

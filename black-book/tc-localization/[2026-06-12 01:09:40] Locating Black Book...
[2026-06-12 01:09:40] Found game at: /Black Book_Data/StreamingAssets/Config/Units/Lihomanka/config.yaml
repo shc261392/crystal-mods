@@ -1,0 +1,30 @@
+﻿AssetName: Lihomanka
+Health: 450
+Mana: 4
+Initiative: 1
+MoneyMin: 84
+MoneyMax: 144
+Experience: 750
+StartingStatusEffects:
+- StatusEffectType: Master
+  Duration: 999
+  Permanent: true
+  Unremovable: true
+- StatusEffectType: Imperishable
+  Duration: 999
+  Permanent: true
+- StatusEffectType: AttackAbsorb
+  Duration: 5
+  HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: PESTILENCE
+    TargetType: ALL
+  - AbilityType: ROTTEN_BREATH
+    TargetType: ENEMY
+  - AbilityType: DONT_HIDE
+    TargetType: ENEMY
+  - AbilityType: PESTILENCE_CLAWS
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Лихоманка

@@ -1,0 +1,11 @@
+﻿IdName: Week3Day6Village
+Name: Заброшенная деревня
+Description: Давно отсюда люди ушли. Печально смотреть на эти дома – словно я тут сама жила когда-то.
+Scene: Forest_5
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day6/Village/Intro
+  MusicOverride: event:/Music/Explore2
+OnomastikonItems:
+- Onomastikon/Tales/9
+

@@ -1,0 +1,10 @@
+Name: HUMAN_HAND_ROGUELIKE
+SkillName: AbilityHUMAN_HAND_ROGUELIKE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityRAZOIL_ROGUELIKE
+SpriteOffsetX: -10
+SpriteOffsetY: -52
+Effects:
+- Type: AbilityUnlock
+  StringData: HUMAN_HAND_ROGUELIKE

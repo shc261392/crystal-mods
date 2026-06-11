@@ -1,0 +1,29 @@
+﻿AssetName: Eretnik
+Health: 200
+Mana: 4
+Initiative: 1
+MoneyMin: 42
+MoneyMax: 60
+Experience: 750
+StartingStatusEffects:
+  - StatusEffectType: Master
+    Duration: 999
+    Permanent: true
+    Unremovable: true
+  - StatusEffectType: Ethereal
+    Duration: 999
+    Permanent: true
+    HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: ERETNIK_VAMP
+    TargetType: SELF
+  - AbilityType: ERETNIK_MULTISTRIKE
+    TargetType: ENEMY
+  - AbilityType: ERETNIK_STRIKE
+    TargetType: ENEMY
+  - AbilityType: ERETNIK_MULTISTRIKE
+    TargetType: ENEMY
+  CastingType: CONSEQUITIVE
+Name: Еретник
+

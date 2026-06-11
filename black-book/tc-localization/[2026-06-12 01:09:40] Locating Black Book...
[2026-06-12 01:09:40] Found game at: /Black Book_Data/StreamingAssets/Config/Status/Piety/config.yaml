@@ -1,0 +1,5 @@
+﻿Unique: true
+Name: Набожность
+Description: Увеличивает получаемую <sprite name="Defence"> на {Duration}
+Sprite: StatPiety
+

@@ -1,0 +1,18 @@
+﻿Name: Защита еретника
+AbilityType: PROKOPIY_DEFENCE
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: CHUDA_VODYANOY
+GoldCost: 24
+Effects:
+- EffectType: DEFENCE
+  MinValue: 33
+  MaxValue: 33
+  VisualEffect:
+    VisualEffectType: NONE
+    ReadyTrigger: Word
+    SpellTrigger: GoodStatus
+    MissTrigger: GoodStatus
+    WrapUpTime: 0.5
+

@@ -1,0 +1,10 @@
+Name: CHAINS_OF_FIRE
+SkillName: AbilityCHAINS_OF_FIRE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityIROD_BONES
+SpriteOffsetX: -3
+SpriteOffsetY: -82
+Effects:
+- Type: AbilityUnlock
+  StringData: CHAINS_OF_FIRE_ROGUELIKE

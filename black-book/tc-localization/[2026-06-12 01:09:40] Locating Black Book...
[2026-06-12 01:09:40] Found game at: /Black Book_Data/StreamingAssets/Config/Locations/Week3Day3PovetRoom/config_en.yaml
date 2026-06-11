@@ -1,0 +1,6 @@
+﻿Name: Room in the Attic
+Description: All kinds of evil spirits like to hide in the attic. I should check it out, just in case.
+LevelConfig:
+  Battle:
+    Name: Domovoi
+

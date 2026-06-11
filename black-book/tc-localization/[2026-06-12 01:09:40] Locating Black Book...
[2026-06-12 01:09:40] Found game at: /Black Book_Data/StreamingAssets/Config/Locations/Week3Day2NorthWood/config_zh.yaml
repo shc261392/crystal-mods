@@ -1,0 +1,7 @@
+﻿Name: 北边的村子
+Description: 亚历山大去的人家就在这个地方，我过去应该就能找到他。
+ShortQuestDescr: 去见亚历山大
+LevelConfig:
+  Battle:
+    Name: 火朋友
+

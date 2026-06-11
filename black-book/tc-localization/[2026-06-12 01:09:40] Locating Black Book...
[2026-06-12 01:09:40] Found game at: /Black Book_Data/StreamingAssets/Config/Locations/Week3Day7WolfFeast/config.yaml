@@ -1,0 +1,29 @@
+﻿IdName: Week3Day7WolfFeast
+Name: Волчий пир
+Description: Кровавый след ведет к этой поляне. Кажется, даже здесь слышен страшный хруст костей!
+ShortQuestDescr: По кровавому следу
+Scene: Forest_Bridge
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Стая чертей
+    Enemies:
+    - Type: WolfDeadly
+      LevelSpawnPointType: EnemyCenter
+    - Type: Wolf
+    - Type: Wolf
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+    DemonSwarm:
+    - Wolf
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day7/WolfFeast/Intro
+    Outro: TextQuest/Week3/Day7/WolfFeast/Outro
+RequiredLocations:
+- Week3Day7Blood
+Secondary: Week3Day7WolfFeast
+OnomastikonItems:
+- Onomastikon/Tales/54
+

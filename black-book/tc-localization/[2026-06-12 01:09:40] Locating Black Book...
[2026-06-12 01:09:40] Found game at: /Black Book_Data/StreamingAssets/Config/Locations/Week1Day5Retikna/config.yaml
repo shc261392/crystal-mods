@@ -1,0 +1,19 @@
+﻿IdName: Week1Day5Retikna
+Name: Кладбище у деревни Реткина
+Description: 'Деревня небольшая, а кладбище есть. Надо бы заглянуть: вдруг какую нечисть выловить удастся.'
+Scene: Cemetery
+LevelConfig:
+  MusicOverride: event:/Music/ExploreDark
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Копальщик
+    Enemies:
+    - Type: Peasant
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day5/Retkina/Intro
+RequiredLocations:
+- Week1Day5OldBarns
+

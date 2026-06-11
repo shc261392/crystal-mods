@@ -1,0 +1,21 @@
+﻿Name: Луны братья +
+AbilityType: MOON_BROTHERS_UP
+TargetType: SELF
+Intention: BUFF
+Description: >
+  Удваивает урон в заговоре. Восстановить {MinValue} жизни.
+Sprite: CrossAbility
+GoldCost: 8
+Effects:
+- EffectType: HEAL
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpell
+    MissTrigger: AttackSpell
+    WrapUpTime: 0.5
+- EffectType: DOUBLE_DAMAGE
+  MinValue: 4
+  MaxValue: 4
+

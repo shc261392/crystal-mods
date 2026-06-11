@@ -1,0 +1,15 @@
+﻿Name: Петров крест
+InventoryItemName: PetrovHerb
+Type: Herb
+Flavour: Корень сей растет по лугам да по ровным местам. А то и при морях и реках.
+Sprite: PetrovHerb
+Expendable: true
+Cost: 18
+Effects:
+- Value: 1
+  Type: RemoveStatus
+  StatusName: Poison
+- Value: 1
+  Type: RemoveStatus
+  StatusName: Waste
+

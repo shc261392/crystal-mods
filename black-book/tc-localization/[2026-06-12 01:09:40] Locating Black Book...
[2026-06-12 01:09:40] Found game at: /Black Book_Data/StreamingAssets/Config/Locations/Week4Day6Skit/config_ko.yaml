@@ -1,0 +1,7 @@
+﻿Name: 푸드바 스케테
+Description: 낡고 무너져 가는 이즈바다. 이곳 주민이 구교도들의 스케테에 대해 말했는데...
+ShortQuestDescr: 스케테에서 수상한 자 찾기
+LevelConfig:
+  Battle:
+    Name: 목사 초르트
+

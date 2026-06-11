@@ -1,0 +1,11 @@
+Name: Колдунья
+Description: Увеличенная сложность для опытных игроков в карточные игры
+PrefixIcons: "<sprite name=\"SkullC\">"
+Sprite: DifficultyHard
+Effects:
+  - Type: DAMAGE_COEFF
+    Value: 0.25
+  - Type: HEALTH_COEFF
+    Value: 0.1
+  - Type: GOLD_BONUS
+    Value: 0.1

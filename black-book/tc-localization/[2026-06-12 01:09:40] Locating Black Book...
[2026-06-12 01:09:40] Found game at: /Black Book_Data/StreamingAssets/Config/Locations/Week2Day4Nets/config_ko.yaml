@@ -1,0 +1,6 @@
+﻿Name: 낚시꾼의 그물
+Description: 낚시꾼이 그물을 설치해 놨다. 날 도운 그 낚시꾼들일지도 모른다.
+LevelConfig:
+  Battle:
+    Name: 어두컴컴한 정령
+

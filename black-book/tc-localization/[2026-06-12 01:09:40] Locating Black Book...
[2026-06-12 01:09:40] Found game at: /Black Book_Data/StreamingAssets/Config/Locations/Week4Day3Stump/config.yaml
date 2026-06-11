@@ -1,0 +1,28 @@
+﻿IdName: Week4Day3Stump
+Name: Куль-пу
+Description: Здесь это дерево, про которое толковал ворон. Крестьяне называют его чертовым.
+ShortQuestDescr: Добраться до лешачьего дерева
+LongQuestDescr: По словам ворона, пропавшую Галину леший держит возле старого дерева на юге от Немзи
+Scene: LeshiySonNest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day3/Stump/Intro
+  Exploration: Week4Day3Stump
+  CinematicIntro: true
+  NoExplorationMusic: true
+RequiredLocations:
+- Week4Day3BadPlace
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+- Proshka
+- ProshkaLoyal
+

@@ -1,0 +1,9 @@
+Name: SKORCHIT
+SkillName: AbilitySKORCHIT
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+SpriteOffsetX: 3.1
+SpriteOffsetY: -23
+Effects:
+- Type: AbilityUnlock
+  StringData: SKORCHIT

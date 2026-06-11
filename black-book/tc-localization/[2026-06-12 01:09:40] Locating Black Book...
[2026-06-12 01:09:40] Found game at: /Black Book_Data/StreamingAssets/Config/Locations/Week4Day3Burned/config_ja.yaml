@@ -1,0 +1,6 @@
+﻿Name: 焼け焦げた木
+Description: 村人たちは、迫りくる森と必死に戦っている。
+LevelConfig:
+  Battle:
+    Name: 焦げたチョルト
+

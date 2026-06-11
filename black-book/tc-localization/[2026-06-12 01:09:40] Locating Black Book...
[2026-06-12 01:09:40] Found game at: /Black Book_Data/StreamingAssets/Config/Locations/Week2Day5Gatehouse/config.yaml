@@ -1,0 +1,15 @@
+﻿IdName: Week2Day5Gatehouse
+Name: Сторожка
+Description: Рядом с тронным залом есть старая сторожка.
+Scene: LakeBottom
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day5/Gatehouse
+  Exploration: Week2Day5Gatehouse
+  MusicOverride: event:/Music/Underwater
+  MixerSnapshot: snapshot:/Underwater
+RequiredLocations:
+- Week2Day5NearThrone
+OnomastikonItems:
+- Onomastikon/Tales/34
+

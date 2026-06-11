@@ -1,0 +1,19 @@
+﻿Name: Посмотрил +
+AbilityType: POSMOTRIL
+Upgrade: POSMOTRIL_UP
+TargetType: SELF
+Intention: DEFENCE
+Sprite: AltarAbility
+GoldCost: 8
+Effects:
+- EffectType: DEFENCE
+  MinValue: 6
+  MaxValue: 6
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+- EffectType: SACRIFICE
+  MinValue: 2
+  MaxValue: 2
+

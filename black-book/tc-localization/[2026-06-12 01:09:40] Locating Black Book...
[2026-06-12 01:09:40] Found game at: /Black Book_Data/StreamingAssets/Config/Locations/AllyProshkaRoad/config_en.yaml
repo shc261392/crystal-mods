@@ -1,0 +1,6 @@
+﻿Name: Road to Yanidor
+Description: This road goes East to Vilgort. From there it's not far to Yanidor.
+LevelConfig:
+  Battle:
+    Name: Riddles in the Dark
+

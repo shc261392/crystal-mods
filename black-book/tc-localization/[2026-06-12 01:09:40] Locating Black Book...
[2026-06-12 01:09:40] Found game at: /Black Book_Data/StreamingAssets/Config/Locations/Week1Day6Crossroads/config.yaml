@@ -1,0 +1,11 @@
+﻿IdName: Week1Day6Crossroads
+Name: Михайловская росстань
+Description: Об этом перекрестке давно дурная слава ходит. Я-от на себе убедилась, что не случайно. Видать, дороги где пересекаются, там грань миров истончилась.
+Scene: CrossroadsExploration
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day6/Crossroads
+RequiredLocations:
+- Week1Day6MermaidWaters
+

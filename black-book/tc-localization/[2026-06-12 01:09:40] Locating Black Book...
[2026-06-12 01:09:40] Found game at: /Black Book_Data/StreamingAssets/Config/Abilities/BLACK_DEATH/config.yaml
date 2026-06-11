@@ -1,0 +1,17 @@
+﻿Name: Черная смерть
+AbilityType: BLACK_DEATH
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: BLACK_DEATH
+Effects:
+- EffectType: DAMAGE_BLACK
+  MinValue: 25
+  MaxValue: 25
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

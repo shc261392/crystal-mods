@@ -1,0 +1,5 @@
+﻿Unique: true
+Name: Упырь
+Description: Восстанавливает {Duration} <sprite name="Health">, когда противник теряет здоровье
+Sprite: StatVampirism
+

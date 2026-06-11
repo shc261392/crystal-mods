@@ -1,0 +1,8 @@
+﻿Name: クル＝プ
+Description: この道を進むと、あの古い木のところに戻れる。
+ShortQuestDescr: 牛飼いを捕まえる
+LongQuestDescr: フィリモンの正体は森のチョルトだった。彼を捕まえ、閉じ込められた村の呪いを解かなければならない。ついでに、封印を解くこともできるかもしれない。
+LevelConfig:
+  Battle:
+    Name: 牛飼いのフィリモン
+

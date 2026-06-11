@@ -1,0 +1,22 @@
+﻿Name: Огневица
+AbilityType: OGNEVITSA
+Upgrade: OGNEVITSA_UP
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: OGNEVITSA
+GoldCost: 21
+Effects:
+- EffectType: DAMAGE_SKLAD
+  MinValue: 7
+  MaxValue: 7
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal2OrderBlack
+    MissTrigger: Seal2OrderBlack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+- EffectType: SACRIFICE_SKLAD
+  MinValue: 1
+  MaxValue: 1
+

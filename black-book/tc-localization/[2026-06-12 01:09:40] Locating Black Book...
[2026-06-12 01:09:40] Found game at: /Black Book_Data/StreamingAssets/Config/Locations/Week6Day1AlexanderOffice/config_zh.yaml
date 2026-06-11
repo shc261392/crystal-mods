@@ -1,0 +1,8 @@
+﻿Name: 亚历山大的办公室
+Description: 亚历山大在办公室，不知道我逃出来了。
+ShortQuestDescr: 取回药草和法器
+LongQuestDescr: 亚历山大抢走了我的黑书，把我东西全都抢走了！我等会儿就去找织婆要黑书，现在先去找其他东西。
+LevelConfig:
+  Battle:
+    Name: 圣三一
+

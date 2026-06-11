@@ -1,0 +1,8 @@
+﻿Name: 死神大殿
+Description: 这个地方太吓人了……趁我还有命，得赶紧出去。
+ShortQuestDescr: 实现愿望
+LongQuestDescr: 你通过了万盗之王的考验，现在该去面对下一场考验了——瘦骨巫婆本尊。
+LevelConfig:
+  Battle:
+    Name: 死神
+

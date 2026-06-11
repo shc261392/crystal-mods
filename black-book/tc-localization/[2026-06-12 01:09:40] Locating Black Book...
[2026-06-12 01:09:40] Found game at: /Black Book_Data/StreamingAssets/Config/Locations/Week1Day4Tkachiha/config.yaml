@@ -1,0 +1,38 @@
+﻿IdName: Week1Day4Tkachiha
+Name: Изба Пряхи
+Description: Изба колдуньи стоит поодаль от села Пянтег. Пряха шибко знаткая, про нее слава и до Вильгорта дошла. Несколько девок за приворотом к ней ходили. Дед Егор-то не делает такое.
+ShortQuestDescr: Добыть опояску у Пряхи
+LongQuestDescr: Наговоренную опояску вы решили попросить у колдуньи по прозвищу Пряха. С вами вместе отправился Егор. Пряха-то колдунья сильная – возможно, вам понадобится его помощь.
+Scene: Tkachiha
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Нечистый покойник
+    Enemies:
+    - Type: Ghost
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    QuestKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: Exploration/Week1/Tkachiha/Intro
+    Outro: Exploration/Week1/Tkachiha/OutroBattle
+    IzbaAftermath: Exploration/Week1/Tkachiha/IzbaAftermath
+  Exploration: TkachihaApproachExploration
+  CinematicIntro: true
+  MusicOverride: event:/Music/ExploreDark
+RequiredLocations:
+- Week1Day4Vilisova
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- Proshka
+- ProshkaLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+ForceAlly: DedEgor
+OnomastikonItems:
+- Onomastikon/Tales/3
+

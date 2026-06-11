@@ -1,0 +1,17 @@
+﻿Name: Бабушка Адамушка
+AbilityType: BABUSHKA_ADAMUSHKA
+Upgrade: BABUSHKA_ADAMUSHKA_UP
+TargetType: SELF
+Intention: ATTACK
+Color: WHITE
+Sprite: BABUSHKA_ADAMUSHKA
+GoldCost: 54
+Effects:
+- EffectType: READ_ABILITY_AS_GESTURE
+  MinValue: 1
+  MaxValue: 1
+  StringData: ORDER
+- EffectType: KRADA
+  MinValue: 1
+  MaxValue: 1
+

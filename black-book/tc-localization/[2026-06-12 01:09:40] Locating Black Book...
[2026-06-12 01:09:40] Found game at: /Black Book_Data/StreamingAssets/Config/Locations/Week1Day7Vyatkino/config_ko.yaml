@@ -1,0 +1,7 @@
+﻿Name: 마을 묘지
+Description: 버려진 옛 묘지. 고대 사람들이 묻혀있다고 한다. 그렇다면 이곳에는 큰 힘이 깃들어 있을 것이다. 유용한 물건을 찾을 수 있지 않을까?
+ShortQuestDescr: 뱟킨스코 묘지 방문하기
+LevelConfig:
+  Battle:
+    Name: 만카의 초르트
+

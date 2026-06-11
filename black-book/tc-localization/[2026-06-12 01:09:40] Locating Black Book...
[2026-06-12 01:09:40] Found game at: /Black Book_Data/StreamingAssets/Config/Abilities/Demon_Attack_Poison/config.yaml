@@ -1,0 +1,20 @@
+﻿Name: Ядовитый коготь
+AbilityType: DEMON_ATTACK_POISON
+TargetType: ENEMY
+Intention: ATTACK_DEBUFF
+Sprite: DEMON_ATTACK_POISON
+GoldCost: 3
+Effects:
+- MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 1
+  StatusEffectType: Poison
+

@@ -1,0 +1,105 @@
+﻿Name: Коробейник
+Id: Peddler
+AssetName: Peddler
+DialogueName: TextQuest/Merchant/Peddler/Conversation
+SoldItems:
+- ItemName: Braga
+  Quantity: 1
+- ItemName: Sota
+  Quantity: 1
+RandomItems:
+- ItemName: AdamHead
+  Quantity: 1
+  Probability: 0.400000006
+- ItemName: Sota
+  Quantity: 1
+  Probability: 0.400000006
+- ItemName: Solodelik
+  Quantity: 1
+  Probability: 0.800000012
+- ItemName: MagicHerbs
+  Quantity: 1
+  Probability: 1
+- ItemName: BurstingBone
+  Quantity: 1
+  Probability: 1
+- ItemName: SingleBastShoes
+  Quantity: 1
+  Probability: 1
+- ItemName: Kochedyg
+  Quantity: 1
+  Probability: 1
+- ItemName: SteelBraidChip
+  Quantity: 1
+  Probability: 1
+- ItemName: Lock
+  Quantity: 1
+  Probability: 1
+- ItemName: Flint
+  Quantity: 1
+  Probability: 1
+- ItemName: RedThread
+  Quantity: 1
+  Probability: 1
+- ItemName: Wrap
+  Quantity: 1
+  Probability: 1
+- ItemName: OldKnife
+  Quantity: 1
+  Probability: 1
+- ItemName: Lubok
+  Quantity: 1
+  Probability: 1
+- ItemName: GermanChalk
+  Quantity: 1
+  Probability: 1
+- ItemName: TearsBottle
+  Quantity: 1
+  Probability: 1
+- ItemName: DriedPoshibka
+  Quantity: 1
+  Probability: 1
+- ItemName: Ring
+  Quantity: 1
+  Probability: 1
+- ItemName: Mahlushka
+  Quantity: 1
+  Probability: 1
+- ItemName: Salt
+  Quantity: 1
+  Probability: 1
+- ItemName: CoffinSliver
+  Quantity: 1
+  Probability: 1
+- ItemName: SvyatkiMask
+  Quantity: 1
+  Probability: 1
+- ItemName: Mixer
+  Quantity: 1
+  Probability: 1
+- ItemName: MermaidHair
+  Quantity: 1
+  Probability: 1
+- ItemName: Bag1
+  Quantity: 1
+  Probability: 1
+- ItemName: Lantern
+  Quantity: 1
+  Probability: 1
+- ItemName: OldHorseshoe
+  Quantity: 1
+  Probability: 1
+- ItemName: PrayerBook
+  Quantity: 1
+  Probability: 1
+- ItemName: Katseya
+  Quantity: 1
+  Probability: 1
+- ItemName: NicolaShoe
+  Quantity: 1
+  Probability: 1
+TearPageCost: 5
+ChangePageCost: 4
+Min: 12
+Max: 16
+

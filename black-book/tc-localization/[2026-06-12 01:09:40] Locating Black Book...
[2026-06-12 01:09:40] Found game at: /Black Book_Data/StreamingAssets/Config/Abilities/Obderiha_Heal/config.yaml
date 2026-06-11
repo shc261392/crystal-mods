@@ -1,0 +1,19 @@
+﻿Name: Прижечь раны
+AbilityType: OBDERIHA_HEAL
+TargetType: SELF
+Intention: BUFF
+Sprite: OBDERIHA_HEAL
+GoldCost: 3
+Effects:
+- EffectType: DEFENCE
+  MinValue: 15
+  MaxValue: 15  
+- EffectType: HEAL
+  MinValue: 15
+  MaxValue: 15
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Word
+    SpellTrigger: Word
+    MissTrigger: Miss
+    SkipReady: true

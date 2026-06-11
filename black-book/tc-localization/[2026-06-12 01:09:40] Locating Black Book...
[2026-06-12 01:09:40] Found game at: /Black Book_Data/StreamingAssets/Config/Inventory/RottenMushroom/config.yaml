@@ -1,0 +1,13 @@
+﻿Name: Поганый гриб
+InventoryItemName: RottenMushroom
+Type: Herb
+Flavour: Мы поганки в лесу обходим, это у нас мухоморы, бледные поганки, да все, кои не знаем, все поганки. Кто бы просветил!
+Sprite: RottenMushroom
+Expendable: true
+Cost: 2
+TargetType: PLAYER
+Effects:
+- Value: 7
+  Type: Status
+  StatusName: Waste
+

@@ -1,0 +1,17 @@
+﻿Name: Осиновая кора
+AbilityType: ASPEN_BARK
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: ASPEN_BARK
+GoldCost: 26
+Effects:
+- EffectType: STATUS
+  StatusEffectType: DefenceGive
+  MinValue: 20
+  MaxValue: 20
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+

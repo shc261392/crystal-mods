@@ -1,0 +1,8 @@
+﻿Name: ヴィルゴルトの三位一体教会
+Description: あともう少しで教会だ！
+ShortQuestDescr: 婚礼行列の護衛をする
+LongQuestDescr: 結婚式の妨害を企むコルドゥンがいるかもしれない。ヴァシリーサは行列を呪いから守りつつ、安全にヴィルゴルトまで護衛しなければならない。
+LevelConfig:
+  Battle:
+    Name: ズナートキ 対 ズナートキ
+

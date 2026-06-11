@@ -1,0 +1,13 @@
+﻿Name: Полынь-трава
+InventoryItemName: WormwoodHerb
+Type: Herb
+Flavour: Бросил он полынь-тавицу – все черти-то и разбежались.
+Sprite: WormwoodHerb
+Expendable: true
+Cost: 26
+TargetType: ENEMY
+Effects:
+- Value: 3
+  Type: Status
+  StatusName: Cursed
+

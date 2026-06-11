@@ -1,0 +1,12 @@
+﻿IdName: Week4Day4Herbalist
+Name: Травница
+Description: Травники есть во многих деревнях, да не все они колдуны.
+Scene: IzbaBattle
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  Merchants:
+  - Herbalist2
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day4/Herbalist/Intro
+CanBeVisitedMultiple: true
+

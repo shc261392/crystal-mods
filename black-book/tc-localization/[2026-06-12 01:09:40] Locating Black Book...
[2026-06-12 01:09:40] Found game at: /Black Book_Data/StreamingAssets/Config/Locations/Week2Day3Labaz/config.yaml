@@ -1,0 +1,23 @@
+﻿IdName: Week2Day3Labaz
+Name: Лабаз
+Description: К этому охотничьему складу ведут следы нечисти.
+ShortQuestDescr: Выследить нечисть
+Scene: Labaz
+LevelConfig:
+  MusicOverride: event:/Music/ExploreDark2
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Еретник
+    Enemies:
+    - Type: Eretnik
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day3/Labaz/Intro
+    Outro: TextQuest/Week2/Day3/Labaz/Outro
+  Exploration: Week2Day3Labaz
+RequiredLocations:
+- Week2Day3Nodia
+Secondary: Week2Day3Labaz
+

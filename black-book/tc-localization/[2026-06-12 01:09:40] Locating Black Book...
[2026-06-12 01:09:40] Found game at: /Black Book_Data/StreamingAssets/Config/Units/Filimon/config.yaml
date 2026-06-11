@@ -1,0 +1,30 @@
+﻿AssetName: Filimon
+Health: 200
+Mana: 4
+Initiative: 1
+MoneyMin: 60
+MoneyMax: 120
+Experience: 1000
+StartingStatusEffects:
+- StatusEffectType: Blackworder
+  Duration: 1
+  Permanent: true
+  HardDifficulty: true
+- StatusEffectType: Master
+  Duration: 999999
+  Permanent: true
+  Unremovable: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: FILIMON_ASPEN_PAW
+    TargetType: ENEMY
+  - AbilityType: FILIMON_FOREST_VORTEX
+    TargetType: ENEMY
+  - AbilityType: FILIMON_CLAPS
+    TargetType: SELF
+  - AbilityType: FILIMON_DRUMROLL
+    TargetType: ENEMY
+  - AbilityType: FILIMON_HELP
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Филимон-пастух

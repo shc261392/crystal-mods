@@ -1,0 +1,13 @@
+﻿IdName: AllyProshkaBridge
+Name: Восточный мост
+Description: Хлипкий тут мост; как бы ветром не сдуло...
+Scene: Forest_Bridge_2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/Proshka
+  Quest:
+    DialogueSystemName: TextQuest/AllyProshka/Bridge/Intro
+LightingType: WIND
+RequiredLocations:
+- AllyProshkaCrossroads
+

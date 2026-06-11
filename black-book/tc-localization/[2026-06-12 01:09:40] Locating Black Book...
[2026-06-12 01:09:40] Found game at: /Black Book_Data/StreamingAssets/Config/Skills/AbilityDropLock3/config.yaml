@@ -1,0 +1,9 @@
+﻿Name: Запечатать слова
+SkillName: AbilityDropLock3
+Sprite: SkillAbilityDropLock
+Description: Позволяет запечатать на {CalculatedEffect} слова больше
+RequiredSkills:
+  - AbilitySELAFIIL
+Effects:
+- Value: 2
+  Type: AbilityDropChanceLock

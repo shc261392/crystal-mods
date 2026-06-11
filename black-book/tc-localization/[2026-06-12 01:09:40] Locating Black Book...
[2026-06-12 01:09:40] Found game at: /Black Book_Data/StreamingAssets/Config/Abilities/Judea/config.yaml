@@ -1,0 +1,18 @@
+﻿Name: Юдея
+AbilityType: JUDEA
+TargetType: ENEMY
+Color: WHITE
+Sprite: JUDEA
+GoldCost: 34
+Effects:
+- EffectType: DAMAGE_ON_DEFENCE
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal5OrderWhite
+    MissTrigger: Seal5OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+

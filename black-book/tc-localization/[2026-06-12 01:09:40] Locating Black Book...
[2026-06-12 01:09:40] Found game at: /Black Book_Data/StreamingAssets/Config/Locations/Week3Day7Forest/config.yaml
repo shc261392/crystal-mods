@@ -1,0 +1,11 @@
+﻿IdName: Week3Day7Forest
+Name: Хмурый лес
+Description: Сосны с елками поднимаются ступенями. Расположились как на полках в баньке, только баньке этой конца и края не видать.
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day7/Forest/Intro
+RequiredLocations:
+- Week3Day7Footstones
+

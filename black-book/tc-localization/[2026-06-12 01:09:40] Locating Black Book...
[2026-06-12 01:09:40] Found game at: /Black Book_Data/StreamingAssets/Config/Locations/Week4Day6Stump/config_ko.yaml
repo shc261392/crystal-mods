@@ -1,0 +1,8 @@
+﻿Name: 쿨푸
+Description: 길이 다시 그 오래된 나무로 이어져 있다.
+ShortQuestDescr: 목동 붙잡기
+LongQuestDescr: 필리몬의 정체는 숲 초르트였습니다. 필리몬을 잡아 마을을 해방하게 만들어야 합니다. 그리고 필리몬을 시켜 봉인을 풀 수 있을지도 모릅니다.
+LevelConfig:
+  Battle:
+    Name: 목동 필리몬
+

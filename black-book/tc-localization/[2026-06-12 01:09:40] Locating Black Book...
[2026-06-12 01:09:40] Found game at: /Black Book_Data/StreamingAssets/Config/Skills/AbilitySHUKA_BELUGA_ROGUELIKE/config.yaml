@@ -1,0 +1,10 @@
+Name: SHUKA_BELUGA_ROGUELIKE
+SkillName: AbilitySHUKA_BELUGA_ROGUELIKE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityDEMONS_DEATH
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: SHUKA_BELUGA_ROGUELIKE

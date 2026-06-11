@@ -1,0 +1,7 @@
+﻿Name: 동쪽 다리
+Description: 동쪽 다리라는 뻔한 이름으로 불리는 이 다리는 동쪽과 늪지대를 이어준다. 밤이 되면 그곳에서 이상한 소리가 들린다고 한다. 확인해 봐야겠다.
+ShortQuestDescr: 동쪽 다리 거닐기
+LevelConfig:
+  Battle:
+    Name: 악마와 죄인
+

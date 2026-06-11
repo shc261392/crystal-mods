@@ -1,0 +1,11 @@
+﻿IdName: Week2Day1NigneeMoshevo
+Name: Село Нижнее Мошево
+Description: Телеграфная линия заканчивается в этом поселении.
+Scene: Village
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day1/Moshevo
+RequiredLocations:
+- Week2Day1TelegrafBroken
+

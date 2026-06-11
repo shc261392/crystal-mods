@@ -1,0 +1,20 @@
+﻿Name: Болезнь огненного змея
+AbilityType: FIRE_ZMEY_SUPPRESS
+TargetType: ENEMY
+Intention: DEBUFF
+AbilitySpellType: STATUS
+Sprite: FIRE_ZMEY_SUPPRESS
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Suppressed
+  StatusPermanent: true
+  MinValue: 7
+  MaxValue: 7
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

@@ -1,0 +1,12 @@
+﻿IdName: Week2Day7Gainskoe
+Name: Гаинское
+Description: От этого села недалеко и до мельницы.
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day7/Gainskoe
+LightingType: DARK
+RequiredLocations:
+- Week2Day7Fedorova
+

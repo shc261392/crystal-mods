@@ -1,0 +1,30 @@
+﻿IdName: Week5Day1OldBaths
+Name: Старые бани
+Description: Здесь мы с Коляном отведывали невесту его. Как будто много лет назад это случилось...
+Scene: Sauna
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Угли
+    Enemies:
+    - Type: ObderihaDemon
+      LevelSpawnPointType: EnemyCenter
+    - Type: ObderihaDemon
+    - Type: ObderihaDemon
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 3
+    DemonSwarm:
+    - ObderihaDemon
+    - ObderihaDemon
+    - ObderihaDemon
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day1/Baths/Intro
+  Exploration: Week5Day1OldBaths
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week5Day1Bridge
+Secondary: Week5Day1Ovins
+

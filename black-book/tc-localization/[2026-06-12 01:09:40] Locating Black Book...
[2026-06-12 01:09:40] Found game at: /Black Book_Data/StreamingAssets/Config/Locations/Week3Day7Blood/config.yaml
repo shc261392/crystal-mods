@@ -1,0 +1,11 @@
+﻿IdName: Week3Day7Blood
+Name: Кровавый след
+Description: Айрат заметил мрачные метки на траве и ветках. Нужно осмотреть внимательнее, что тут стряслось-то.
+Scene: Forest_Bridge_2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day7/Blood/Intro
+RequiredLocations:
+- Week3Day7Footstones
+

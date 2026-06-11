@@ -1,0 +1,7 @@
+﻿Name: 버려진 우물
+Description: 저 형체는 뭐지? 우물인가?
+ShortQuestDescr: 악령 추적하기
+LevelConfig:
+  Battle:
+    Name: 우물 정령
+

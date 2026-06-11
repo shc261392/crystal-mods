@@ -1,0 +1,10 @@
+﻿IdName: Week1Day6Izba
+Name: Изба деда Егора
+Description: Наши черти заметили колдовскую траву в роще возле избы. Нужно сходить и собрать ее, пока ночь на дворе.
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Herb/Adam
+LightingType: DARK
+

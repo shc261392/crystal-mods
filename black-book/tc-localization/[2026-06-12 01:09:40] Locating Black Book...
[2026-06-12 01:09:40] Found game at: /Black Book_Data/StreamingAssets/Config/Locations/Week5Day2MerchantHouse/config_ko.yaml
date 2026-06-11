@@ -1,0 +1,6 @@
+﻿Name: 상인의 집
+Description: 저 큰 집 근처에서 소동이 벌어졌다.
+LevelConfig:
+  Battle:
+    Name: 죽은 상인
+

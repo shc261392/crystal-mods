@@ -1,0 +1,9 @@
+﻿Name: Коровье копыто
+InventoryItemName: CowHoof
+Flavour: Старое копыто, наспех привязанное к палке
+Sprite: CowHoof
+Cost: 30
+Effects:
+- Value: -1
+  Type: IncreaseHealth
+

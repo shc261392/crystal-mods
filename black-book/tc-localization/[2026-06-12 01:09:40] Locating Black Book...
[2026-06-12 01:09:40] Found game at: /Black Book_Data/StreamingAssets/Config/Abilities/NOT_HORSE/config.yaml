@@ -1,0 +1,20 @@
+﻿Name: Я не конь!
+AbilityType: NOT_HORSE
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: NOT_HORSE
+GoldCost: 26
+Effects:
+- EffectType: STATUS
+  StatusEffectType: DefenceGive
+  MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: BITE
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 2
+    SkipReady: true
+

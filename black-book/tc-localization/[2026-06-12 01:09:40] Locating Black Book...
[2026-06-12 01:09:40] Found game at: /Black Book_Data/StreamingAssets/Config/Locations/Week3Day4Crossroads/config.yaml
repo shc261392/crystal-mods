@@ -1,0 +1,16 @@
+﻿IdName: Week3Day4Crossroads
+Name: Михайловская росстань
+Description: Росстань – нечистое место. Уж тем более Михайловская.
+Scene: CrossroadsExploration
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day4/Crossroads/Intro
+  Exploration: Week3Day4Crossroads
+  MusicOverride: event:/Music/ExploreDark
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week3Day4Forest
+OnomastikonItems:
+- Onomastikon/Encyclopedia/85
+

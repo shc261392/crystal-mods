@@ -1,0 +1,18 @@
+﻿Name: Болотный свет
+AbilityType: SWAMP_LIGHT
+TargetType: ENEMY
+Intention: BUFF
+Sprite: SWAMP_LIGHT
+GoldCost: 6
+Effects:
+- EffectType: REMOVE_ALL_STATUS
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: BITE
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 0.5
+    SkipReady: true
+

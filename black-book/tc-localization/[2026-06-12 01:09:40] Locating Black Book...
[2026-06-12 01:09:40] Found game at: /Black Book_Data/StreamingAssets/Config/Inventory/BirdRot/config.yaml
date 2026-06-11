@@ -1,0 +1,12 @@
+﻿Name: Птица гнили
+InventoryItemName: BirdRot
+Flavour: Чья-то курица в огороде клокчёт, примета то плохая
+Sprite: IconBIrdRot
+Cost: 150
+Effects:
+  - Value: 3
+    Type: StatusOnBattleStart
+    StatusName: Decomposure
+  - Value: 2
+    Type: StatusBonus
+    StatusName: Waste 

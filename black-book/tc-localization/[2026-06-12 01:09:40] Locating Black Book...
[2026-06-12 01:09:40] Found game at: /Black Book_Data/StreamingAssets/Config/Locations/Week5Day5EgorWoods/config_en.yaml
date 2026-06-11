@@ -1,0 +1,6 @@
+﻿Name: Woods Near the Izba
+Description: Our house on the outskirts of Vilgort often attracts chorts. They're sure to turn up today, at the eve of the solstice.
+LevelConfig:
+  Battle:
+    Name: Ivanov's Day Chorts
+

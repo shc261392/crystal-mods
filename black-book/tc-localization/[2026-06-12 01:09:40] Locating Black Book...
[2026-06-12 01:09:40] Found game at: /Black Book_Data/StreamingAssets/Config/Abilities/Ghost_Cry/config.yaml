@@ -1,0 +1,20 @@
+﻿Name: Замогильный плач
+AbilityType: GHOST_CRY
+TargetType: ENEMY
+Intention: DEBUFF
+AbilitySpellType: STATUS
+Sprite: GHOST_ATTACK
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+  StatusEffectType: Suppressed
+  StatusPermanent: true
+

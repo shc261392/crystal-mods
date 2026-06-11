@@ -1,0 +1,10 @@
+Name: GEORGY_BATUSHKA_ROGUELIKE
+SkillName: AbilityGEORGY_BATUSHKA_ROGUELIKE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityGEORGY_BRAVE
+SpriteOffsetX: -42.9
+SpriteOffsetY: -42.9
+Effects:
+- Type: AbilityUnlock
+  StringData: GEORGY_BATUSHKA_ROGUELIKE

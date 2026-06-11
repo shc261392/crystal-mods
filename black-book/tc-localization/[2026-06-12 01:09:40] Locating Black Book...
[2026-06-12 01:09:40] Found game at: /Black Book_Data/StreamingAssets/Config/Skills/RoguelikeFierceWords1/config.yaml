@@ -1,0 +1,1 @@
+Name: Лютые слова ISkillName: RoguelikeFierceWords1Sprite: FierceWords1SkillDescription: Увеличивает урон в словах на {CalculatedEffect}RequiredSkills:  - AbilityDropLock1Effects:- Value: 1  Type: AdditionalDamage

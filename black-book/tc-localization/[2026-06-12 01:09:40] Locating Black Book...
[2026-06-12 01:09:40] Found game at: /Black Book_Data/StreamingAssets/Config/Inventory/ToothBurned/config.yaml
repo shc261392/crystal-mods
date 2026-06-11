@@ -1,0 +1,10 @@
+﻿Name: Обгорелый клык
+InventoryItemName: ToothBurned
+Flavour: Черти-те падали с неба, дак от них одни огарыши остались
+Sprite: IconToothBurned
+Cost: 100
+Effects:
+- Value: 40
+  Type: ExperienceMultiplier
+- Value: 3
+  Type: AdditionalSins

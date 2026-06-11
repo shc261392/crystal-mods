@@ -1,0 +1,17 @@
+﻿IdName: Week4Day6Creek
+Name: Берег реки Пудьвы
+Description: К этой речке отправилась тень, которую я заметила на болоте.
+ShortQuestDescr: Догнать незнакомца
+Scene: River1
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark2
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day6/Creek/Intro
+  Exploration: Week4Day6Creek
+  NoExplorerSpawn: true
+LightingType: FOG_2
+RequiredLocations:
+- Week4Day6Lug
+Secondary: Week4Day6Creek
+

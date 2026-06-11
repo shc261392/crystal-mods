@@ -1,0 +1,7 @@
+﻿Name: プドヴァ修道院
+Description: 古い朽ちかけたイズバ。村人たちは、古い異教の修道院があるとか言っていたけど…
+ShortQuestDescr: 修道院で男を探す
+LevelConfig:
+  Battle:
+    Name: 牛飼いのチョルト
+

@@ -1,0 +1,6 @@
+﻿Name: Kachevo Lake
+Description: A curved lake on the left bank of the Kolva. They say two men drowned in it this year. Must be quite an unsafe place at night, aye.
+LevelConfig:
+  Battle:
+    Name: Demons at the Ridge
+

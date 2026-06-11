@@ -1,0 +1,208 @@
+Name: Черт-коробейник
+Id: DemonPeddler
+AssetName: DemonMerchant
+TearPageCost: 5
+ChangePageCost: 4
+Min: 40
+Max: 50
+SoldItems:
+  - ItemName: DevilKnife
+    Quantity: 1
+  - ItemName: ToothBurned
+    Quantity: 1
+RandomItems:
+  - ItemName: Poker
+    Quantity: 1
+    Probability: 1
+  - ItemName: BrotherHoof
+    Quantity: 1
+    Probability: 1
+  - ItemName: ArmyWorm
+    Quantity: 1
+    Probability: 1
+  - ItemName: BlueBoots
+    Quantity: 1
+    Probability: 1
+  - ItemName: Darochka
+    Quantity: 1
+    Probability: 1
+  - ItemName: StrawWithLice
+    Quantity: 1
+    Probability: 1
+  - ItemName: DeadWear
+    Quantity: 1
+    Probability: 1
+  - ItemName: UnchangeRuble
+    Quantity: 1
+    Probability: 1
+  - ItemName: OldArrow
+    Quantity: 1
+    Probability: 1
+  - ItemName: MagicHerbs
+    Quantity: 1
+    Probability: 1   
+  - ItemName: BurstingBone
+    Quantity: 1
+    Probability: 1 
+  - ItemName: SingleBastShoes
+    Quantity: 1
+    Probability: 1      
+  - ItemName: Kochedyg
+    Quantity: 1
+    Probability: 1     
+  - ItemName: SteelBraidChip
+    Quantity: 1
+    Probability: 1     
+  - ItemName: Lock
+    Quantity: 1
+    Probability: 1     
+  - ItemName: Flint
+    Quantity: 1
+    Probability: 1  
+  - ItemName: RedThread
+    Quantity: 1
+    Probability: 1     
+  - ItemName: Wrap
+    Quantity: 1
+    Probability: 1    
+  - ItemName: JerusalemWater
+    Quantity: 1
+    Probability: 1
+  - ItemName: Flag
+    Quantity: 1
+    Probability: 1
+  - ItemName: PaintedEgg
+    Quantity: 1
+    Probability: 1
+  - ItemName: TearsBottle
+    Quantity: 1
+    Probability: 1
+  - ItemName: DriedPoshibka
+    Quantity: 1
+    Probability: 1
+  - ItemName: Ring
+    Quantity: 1
+    Probability: 1
+  - ItemName: Mahlushka
+    Quantity: 1
+    Probability: 1
+  - ItemName: Salt
+    Quantity: 1
+    Probability: 1
+  - ItemName: CoffinSliver
+    Quantity: 1
+    Probability: 1
+  - ItemName: SvyatkiMask
+    Quantity: 1
+    Probability: 1
+  - ItemName: Mixer
+    Quantity: 1
+    Probability: 1
+  - ItemName: MermaidHair
+    Quantity: 1
+    Probability: 1
+  - ItemName: Bag1
+    Quantity: 1
+    Probability: 1
+  - ItemName: Lantern
+    Quantity: 1
+    Probability: 1
+  - ItemName: DemonFigurine
+    Quantity: 1
+    Probability: 1
+  - ItemName: BoughtIcon
+    Quantity: 1
+    Probability: 1
+  - ItemName: Broshka
+    Quantity: 1
+    Probability: 1
+  - ItemName: Varakul
+    Quantity: 1
+    Probability: 1
+  - ItemName: BurntStick
+    Quantity: 1
+    Probability: 1
+  - ItemName: CoffinNails
+    Quantity: 1
+    Probability: 1
+  - ItemName: Bag2
+    Quantity: 1
+    Probability: 1 
+  - ItemName: WhiteHead
+    Quantity: 1
+    Probability: 1
+  - ItemName: SinnerRib
+    Quantity: 1
+    Probability: 1
+  - ItemName: DuckEarrings
+    Quantity: 1
+    Probability: 1
+  - ItemName: Superik
+    Quantity: 1
+    Probability: 1
+  - ItemName: SharpStuff
+    Quantity: 1
+    Probability: 1
+  - ItemName: Bag3
+    Quantity: 1
+    Probability: 1
+  - ItemName: OldHorseshoe
+    Quantity: 1
+    Probability: 1
+  - ItemName: PrayerBook
+    Quantity: 1
+    Probability: 1
+  - ItemName: Katseya
+    Quantity: 1
+    Probability: 1
+  - ItemName: MagicBroom
+    Quantity: 1
+    Probability: 1
+  - ItemName: Kadilnitsa
+    Quantity: 1
+    Probability: 1
+  - ItemName: LifeStefan
+    Quantity: 1
+    Probability: 1
+  - ItemName: BookDead
+    Quantity: 1
+    Probability: 1
+  - ItemName: BookMagic
+    Quantity: 1
+    Probability: 1
+  - ItemName: SewnIcon
+    Quantity: 1
+    Probability: 1
+  - ItemName: HerbAmulet
+    Quantity: 1
+    Probability: 1
+  - ItemName: LifeParaskeva
+    Quantity: 1
+    Probability: 1
+  - ItemName: BookPsaltir
+    Quantity: 1
+    Probability: 1
+  - ItemName: BookBlack
+    Quantity: 1
+    Probability: 1
+  - ItemName: HeadSnake
+    Quantity: 1
+    Probability: 1
+  - ItemName: HeadDead
+    Quantity: 1
+    Probability: 1
+  - ItemName: HeadWorm
+    Quantity: 1
+    Probability: 1
+  - ItemName: HeadChud
+    Quantity: 1
+    Probability: 1
+  - ItemName: SpoonChur
+    Quantity: 1
+    Probability: 1
+  - ItemName: SpoonSave
+    Quantity: 1
+    Probability: 1
+  - ItemName: SpoonWood
+    Quantity: 1
+    Probability: 1

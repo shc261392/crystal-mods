@@ -1,0 +1,7 @@
+﻿Name: Iskorka River
+Description: In this hunting hut lives a man who didn't want to invite kolduns to his wedding. Now his house is full of cockroaches.
+ShortQuestDescr: Get Rid of the Cockroaches
+LevelConfig:
+  Battle:
+    Name: Diligent Chort
+

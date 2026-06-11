@@ -1,0 +1,18 @@
+﻿IdName: Week5Day5FernSpace
+Name: Звездная ночь
+Scene: FernDark
+LevelConfig:
+  Quest:
+    Outro: TextQuest/Week5/Day5/FernSpace/ArmCut
+  Battle:
+    Name: Цвет папора
+    Enemies:
+    - Type: FernColor
+      LevelSpawnPointType: EnemyCenter
+    WinCutscene: Week5Day5FernArmCut
+    EnemyKillWin: true
+    HealthLoose: true
+  Exploration: Week5Day5FernSpace
+  CinematicIntro: true
+  MixerSnapshot: snapshot:/FernSpace
+  NoExplorationMusic: true

@@ -1,0 +1,12 @@
+﻿IdName: Week6Day1Atrium
+Name: Атриум
+Description: Красивая комната в центре поместья. Вместо потолка – стекло!
+Scene: AlexManorAtrium
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day1/Atrium/Intro
+  MusicOverride: event:/Music/AlexanderManor
+RequiredLocations:
+- Week6Day1EntranceRoom
+HideBook: true
+

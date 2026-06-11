@@ -1,0 +1,16 @@
+﻿IdName: IzbaRoguelike
+Name: Бесконечные битвы
+Scene: IzbaRoguelike
+IsIzba: true
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  Exploration: IzbaRoguelike
+  CinematicIntro: true
+  NoExplorerSpawn: true
+  Roguelike: true
+  MusicOverride: "event:/Music/Map"
+  SpecialLevel: true
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 4
+

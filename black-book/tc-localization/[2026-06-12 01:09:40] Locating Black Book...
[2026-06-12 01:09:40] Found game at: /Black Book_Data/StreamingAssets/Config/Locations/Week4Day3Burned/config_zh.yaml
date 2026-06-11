@@ -1,0 +1,6 @@
+﻿Name: 烧焦的林地
+Description: 村里的乡亲想了各种办法对付侵占土地的树林。
+LevelConfig:
+  Battle:
+    Name: 烧红的雠特
+

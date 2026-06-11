@@ -1,0 +1,19 @@
+﻿Name: Адова защита
+AbilityType: HELL_DEFENCE
+TargetType: SELF
+Intention: BUFF
+Sprite: HELL_DEFENCE
+GoldCost: 10
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Spikes
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

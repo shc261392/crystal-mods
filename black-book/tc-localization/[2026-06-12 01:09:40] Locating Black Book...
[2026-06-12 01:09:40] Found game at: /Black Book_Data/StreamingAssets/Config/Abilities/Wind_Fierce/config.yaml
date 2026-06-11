@@ -1,0 +1,19 @@
+﻿Name: Ветры буйные
+AbilityType: WIND_FIERCE
+Upgrade: WIND_FIERCE_UP
+TargetType: ALL_ENEMIES
+Intention: ATTACK
+Sprite: WIND_FIERCE
+GoldCost: 47
+Effects:
+- EffectType: DAMAGE_SKLAD
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal6OrderBlack
+    MissTrigger: Seal6OrderBlack
+    WrapUpTime: 0.05
+    SkipReady: true
+

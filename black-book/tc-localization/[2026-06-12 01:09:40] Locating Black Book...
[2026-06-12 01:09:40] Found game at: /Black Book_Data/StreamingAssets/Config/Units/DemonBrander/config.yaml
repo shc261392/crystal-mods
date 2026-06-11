@@ -1,0 +1,17 @@
+﻿AssetName: DemonSigner
+Health: 100
+Mana: 4
+Initiative: -1
+MoneyMin: 18
+MoneyMax: 42
+Experience: 1000
+UnitAI:
+  AIAbilities:
+  - AbilityType: DEMON_BRANDER_HEAL
+    TargetType: ALL_ALLIES
+  - AbilityType: DEMON_BRANDER_BLESS
+    TargetType: ALLY
+  - AbilityType: DEMON_BRANDER_ATTACK
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Чёрт-клеймитель

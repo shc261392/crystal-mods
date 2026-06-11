@@ -1,0 +1,10 @@
+﻿Name: Крест русалки
+InventoryItemName: MermaidCross
+Flavour: Железный крест весь покрылся тиной и ржавчиной
+Sprite: MermaidCross
+Cost: 136
+Effects:
+- Value: 4
+  Type: StatusOnBattleStart
+  StatusName: DefenceGive
+

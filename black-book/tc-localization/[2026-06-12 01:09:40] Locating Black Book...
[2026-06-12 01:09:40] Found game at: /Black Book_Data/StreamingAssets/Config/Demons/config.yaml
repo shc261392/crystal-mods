@@ -1,0 +1,246 @@
+﻿FreeLocationDelta: 3
+HealthPerNotWorkingDemon: 3
+PlayerLevelToQuantity:
+  0: 0
+  1: 0
+  2: 0
+  3: 0
+  4: 3
+  5: 3
+  6: 3
+  7: 4
+  8: 4
+  9: 5
+  10: 5
+  11: 6
+  12: 6
+  13: 7
+  14: 7
+  15: 7
+  16: 7
+  17: 7
+  18: 7
+  19: 7
+  20: 7
+DemonConfigs:
+  Mathew:
+    SmallPortrait: DemonMathew
+    Name: Матвей
+    Description: Матвей был опричником при Иване Грозном, теперь дослужился до беса
+    RoubleBonus: 1
+    DayBonus: -1
+    LevelGranted: true
+    TormentEffects:
+      - Value: -1
+        Type: AdditionalDefence
+  Ivashka:
+    SmallPortrait: DemonIvashka
+    Name: Ивашка
+    Description: Толстый Ивашка любит, когда голодают дети
+    RoubleBonus: 1
+    SinBonus: 1
+    Specialization: ANIMALS
+    LevelGranted: true
+    TormentEffects:
+      - Value: -4
+        Type: IncreaseHealth
+  Fyodor:
+    SmallPortrait: DemonFyodor
+    Name: Федор Кривой
+    Description: Проспорил правый глаз грешникам-мздоимцам, теперь ненавидит людей пуще прежнего
+    RoubleBonus: 2
+    SinBonus: 3
+    Specialization: STRIFE
+    LevelGranted: true
+    TormentEffects:
+     - Value: -1
+       Type: AdditionalDamage
+  Makarko:
+    SmallPortrait: DemonMakarko
+    Name: Макарко
+    Description: Был суседкой, пока не задавил своих хозяев
+    SinBonus: 1
+    HerbBonus: 30
+    Specialization: HEARTH
+    LevelGranted: true
+    TormentEffects:
+      - Value: 2
+        Type: StatusOnBattleStart
+        StatusName: Waste
+  Korovin:
+    SmallPortrait: DemonKorovin
+    Name: Коровин
+    Description: Давным-давно пел в ангельском хоре о красоте мироздания
+    RoubleBonus: 4
+    Specialization: WEATHER
+    LevelGranted: true
+    TormentEffects:
+      - Value: 1
+        Type: StatusImmunity
+        StatusName: Immunity
+        StringData: Blessed
+        StatusPermanent: true
+        StatusUnremovable: true
+  Andropko:
+    SmallPortrait: DemonAndropko
+    Name: Андропко
+    Description: Там, где проползает бес Андропко, появляется мор и приходят лихорадки
+    RoubleBonus: 6
+    SinBonus: 2
+    Specialization: CURSE
+    LevelGranted: true
+    TormentEffects:
+      - Value: 1
+        Type: StatusImmunity
+        StatusName: Immunity
+        StringData: Regeneration
+        StatusPermanent: true
+        StatusUnremovable: true
+  Antipka:
+    SmallPortrait: DemonAntipka
+    Name: Антипка
+    Description: Сидел икотой у пермского губернатора. В деталях изучил тонкости политических интриг
+    HerbBonus: 50
+    Specialization: MIND
+    LevelGranted: true
+    TormentEffects:
+      - Value: -10
+        Type: AdditionalBattleReward
+  Muska:
+    SmallPortrait: DemonMuska
+    Name: Муська
+    Description: Внесла разлад в бесчисленное множество семей
+    RoubleBonus: 5
+    SinBonus: 5
+    Specialization: STRIFE
+    LevelGranted: true
+  ThirteenthBrother:
+    SmallPortrait: DemonThirteenthBrother
+    Name: Тринадцатый Брат
+    Description: Любимое занятие – мешать работе крестьян, поэтому знает все про ведение хозяйства
+    RoubleBonus: 5
+    SinBonus: 2
+    Specialization: HEARTH
+    TormentEffects:
+      - Value: 1
+        Type: StatusImmunity
+        StatusName: Immunity
+        StringData: DefenceGive
+        StatusPermanent: true
+        StatusUnremovable: true
+  Andreiko:
+    SmallPortrait: DemonAndreiko
+    Name: Андрейко
+    Description: Устроил голод в 1840 году в Орловской губернии. С нетерпением ждет следующий век
+    RoubleBonus: 5
+    SinBonus: 5
+    TormentEffects:
+      - Value: 3
+        Type: StatusOnBattleStart
+        StatusName: Poison
+  Mikolka:
+    SmallPortrait: DemonMikolka
+    Name: Миколка
+    Description: Умеет превращать души грешников в лошадей
+    RoubleBonus: 5
+    SinBonus: 5
+    Specialization: ANIMALS
+    TormentEffects:
+      - Value: -3
+        Type: AdditionalDamage
+  FireZmey:
+    SmallPortrait: FireZmeySmall
+    Name: Змей огненной
+    Description: Очаровывает, а затем убивает крестьянок
+    RoubleBonus: 5
+    SinBonus: 5
+    Specialization: MIND
+    TormentEffects:
+      - Value: -3
+        Type: AdditionalDefence
+  CursedIcon:
+    SmallPortrait: CursedIconSmall
+    Name: Адописный бес
+    Description: Ценитель искусств во всех проявлениях, даже самых мрачных
+    RoubleBonus: 7
+    SinBonus: 9
+    Specialization: CURSE
+    TormentEffects:
+      - Value: 2
+        Type: StatusImmunity
+        StatusName: Immunity
+        StringData: Piety
+        StatusPermanent: true
+        StatusUnremovable: true
+  Luvezelko:
+    SmallPortrait: LuvezelkoSmall
+    Name: Лувезелько
+    Description: Повелевает тараканами, надеется получить повышение и управлять мухами
+    RoubleBonus: 7
+    SinBonus: 9
+    Specialization: HEARTH
+    TormentEffects:
+      - Value: 2
+        Type: StatusImmunity
+        StatusName: Immunity
+        StringData: Spikes
+        StatusPermanent: true
+        StatusUnremovable: true
+LocationIdToJobLocation:
+  Solikamsk:
+    Name: Соликамск
+  Cherdyn:
+    Name: Чердынь
+  Vilgort:
+    Name: Вильгорт
+  Pokcha:
+    Name: Покча
+  Nyrob:
+    Name: Ныроб
+  Yanidor:
+    Name: Янидор
+  Kuznetsova:
+    Name: Кузнецова
+  Verhneyazvinskoe:
+    Name: Верхнеязьвинское
+  Govorlivskoe:
+    Name: Говорливское
+  Gainskoe:
+    Name: Гаинское
+  VerhKosva:
+    Name: Верх-Косьва
+  Usva:
+    Name: Юсьва
+  Voskresenskoe:
+    Name: Воскресенское
+  Akchim:
+    Name: Акчим
+  MeaninglessLocation1:
+    Name: Бессмысленная работа
+  MeaninglessLocation2:
+    Name: Бессмысленная работа
+  MeaninglessLocation3:
+    Name: Бессмысленная работа
+DurationToJob:
+  SHORT:
+    RoubleMin: 5
+    RoubleMax: 7
+    SinMin: 1
+    SinMax: 3
+    DayMin: 1
+    DayMax: 2
+  MEDIUM:
+    RoubleMin: 3
+    RoubleMax: 5
+    SinMin: 1
+    SinMax: 2
+    DayMin: 2
+    DayMax: 3
+  LONG:
+    RoubleMin: 1
+    RoubleMax: 3
+    SinMin: 1
+    SinMax: 1
+    DayMin: 3
+    DayMax: 4
+

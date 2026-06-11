@@ -1,0 +1,24 @@
+﻿AssetName: FireZmey
+Health: 100
+Mana: 4
+Initiative: 1
+MoneyMin: 30
+MoneyMax: 46
+Experience: 1000
+StartingStatusEffects:
+  - StatusEffectType: BlessOnHealthLoss
+    Duration: 5
+    HardDifficulty: true
+  - StatusEffectType: Blessed
+    Duration: 5
+UnitAI:
+  AIAbilities:
+  - AbilityType: FIRE_ZMEY_SUPPRESS
+    TargetType: ENEMY
+  - AbilityType: FIRE_ZMEY_ATTACK
+    TargetType: ENEMY
+  - AbilityType: FIRE_ZMEY_WASTE
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Огненный змей
+

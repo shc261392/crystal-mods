@@ -1,0 +1,29 @@
+﻿IdName: Week1Day5Bereg
+Name: Берег Колвы
+Description: Дорога в Вильгорт идет вдоль живописного берега Колвы.
+ShortQuestDescr: Прогнать чертей в логу
+Scene: Rift
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Гнилая компания
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonPoison
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day5/Bereg
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 3
+    PossiblePlayers:
+    - Demon
+    - Andropko
+    - Fyodor
+    DialogueFoolWin: TextQuest/Durak/WinBattleUtil
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+RequiredLocations:
+- Week1Day5MermaidWaters
+

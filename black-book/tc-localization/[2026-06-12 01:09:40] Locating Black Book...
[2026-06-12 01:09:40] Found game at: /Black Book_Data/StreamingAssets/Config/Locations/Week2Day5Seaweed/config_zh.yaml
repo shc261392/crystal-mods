@@ -1,0 +1,6 @@
+﻿Name: 水下丛林
+Description: 又是一片水下丛林，跟陆上的没啥两样。
+LevelConfig:
+  Battle:
+    Name: 牧鱼人
+

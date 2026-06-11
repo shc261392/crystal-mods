@@ -1,0 +1,8 @@
+﻿Name: Рогозка
+InventoryItemName: Bag1
+Flavour: По молодости я рогозки тыкала
+Sprite: IconBag1
+Cost: 180
+Effects:
+  - Value: 1
+    Type: AdditionalItemsPerTurn

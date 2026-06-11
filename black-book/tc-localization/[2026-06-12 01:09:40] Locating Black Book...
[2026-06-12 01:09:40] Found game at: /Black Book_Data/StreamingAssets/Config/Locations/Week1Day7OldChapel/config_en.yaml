@@ -1,0 +1,6 @@
+﻿Name: Old Church
+Description: This church was prominent long ago, but it is now abandoned. There may be demons or some enchanted items inside.
+LevelConfig:
+  Battle:
+    Name: Chorts of the Old Church
+

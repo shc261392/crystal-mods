@@ -1,0 +1,13 @@
+IdName: Week5Day5Song
+Name: Вильгортские посиделки
+Description: Не все празднуют у костра, часть в деревне вон, песни поют.
+Scene: Village
+LocationType: PRIEST
+RequiredLocations:
+  - Week5Day5Fair
+OnomastikonItems:
+  - Onomastikon/Songs/7
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Singers/SingersUniversal/Intro

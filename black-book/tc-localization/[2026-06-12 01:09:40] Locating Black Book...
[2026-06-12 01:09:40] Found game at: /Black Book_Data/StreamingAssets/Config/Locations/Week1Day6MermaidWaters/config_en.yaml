@@ -1,0 +1,6 @@
+﻿Name: Rusalka Backwater
+Description: The most picturesque road to Vilgort passes through the forest near Rusalka Backwater. It is a shame that it's such a dangerous place.
+LevelConfig:
+  Battle:
+    Name: Tracker Chort
+

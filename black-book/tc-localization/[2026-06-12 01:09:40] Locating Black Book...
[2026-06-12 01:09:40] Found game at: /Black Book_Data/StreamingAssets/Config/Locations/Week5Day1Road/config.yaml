@@ -1,0 +1,13 @@
+﻿IdName: Week5Day1Road
+Name: Дорога на Езова
+Description: Тракт идет от деревни, а потоль вдоль реки, а потом и вовсе теряется за горизонтом
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreLight
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day1/Road/Intro
+LightingType: EVENING
+RequiredLocations:
+- Week5Day1Bereg
+

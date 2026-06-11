@@ -1,0 +1,12 @@
+﻿Name: Чертово копыто
+InventoryItemName: BrotherHoof
+Flavour: Копыто, оставшееся от сгоревшего черта. Пахнет паленой шерстью.
+Sprite: BrotherHoof
+Cost: 100
+Effects:
+- Value: 1
+  Type: StatusImmunity
+  StatusName: Immunity
+  StringData: Cursed
+  StatusPermanent: true
+  StatusUnremovable: true

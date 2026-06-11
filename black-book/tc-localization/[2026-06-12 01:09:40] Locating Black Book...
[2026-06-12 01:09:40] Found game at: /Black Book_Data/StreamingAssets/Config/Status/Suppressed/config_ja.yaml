@@ -1,0 +1,3 @@
+﻿Name: 抑圧
+Description: 次の攻撃が <sprite name="Damage"> 1しか与えない。<sprite name="Damage"> を受けると減少する
+

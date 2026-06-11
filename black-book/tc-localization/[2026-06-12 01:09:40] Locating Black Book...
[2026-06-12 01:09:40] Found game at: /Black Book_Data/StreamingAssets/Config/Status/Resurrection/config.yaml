@@ -1,0 +1,4 @@
+Name: "Разживление"
+Unique: true
+Description: "Оживает через {Duration} раунда после смерти"
+Sprite: StatResurrection

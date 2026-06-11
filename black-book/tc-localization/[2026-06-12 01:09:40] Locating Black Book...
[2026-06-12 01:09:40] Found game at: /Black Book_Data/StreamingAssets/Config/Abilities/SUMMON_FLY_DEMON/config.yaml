@@ -1,0 +1,14 @@
+﻿Name: Работа бесам
+AbilityType: SUMMON_FLY_DEMON
+TargetType: SELF
+AbilitySpellType: SUMMON
+Sprite: SUMMON_FLY_DEMON
+GoldCost: 3
+Effects:
+- EffectType: SUMMON
+  MinValue: 1
+  MaxValue: 1
+  SummonEffectData:
+    UnitTypes:
+    - DemonFly
+

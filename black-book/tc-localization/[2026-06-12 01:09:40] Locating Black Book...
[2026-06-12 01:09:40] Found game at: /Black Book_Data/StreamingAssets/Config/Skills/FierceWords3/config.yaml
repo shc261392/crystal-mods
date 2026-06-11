@@ -1,0 +1,11 @@
+﻿Name: Лютые слова III
+SkillName: FierceWords3
+Sprite: FierceWords3Skill
+Description: Увеличивает урон в словах еще на {CalculatedEffect}
+RequiredSkills:
+- FierceWords2
+Effects:
+- Value: 1
+  Type: AdditionalDamage
+Level: 15
+

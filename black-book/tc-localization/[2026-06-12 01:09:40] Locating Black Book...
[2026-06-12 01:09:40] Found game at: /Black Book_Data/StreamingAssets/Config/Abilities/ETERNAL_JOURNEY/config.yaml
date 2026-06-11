@@ -1,0 +1,23 @@
+﻿Name: Вечный путь
+AbilityType: ETERNAL_JOURNEY
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: ETERNAL_JOURNEY
+GoldCost: 16
+Effects:
+- EffectType: STATUS
+  StatusEffectType: DefenceKeep
+  MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: CROSS
+    SpellTrigger: Word
+    MissTrigger: Word
+    WrapUpTime: 0.100000001
+    SkipReady: true
+- EffectType: STATUS
+  StatusEffectType: DefenceGive
+  MinValue: 15
+  MaxValue: 15
+

@@ -1,0 +1,8 @@
+﻿Name: Pokcha Village
+Description: It turns out that the bride is from the village of Pokcha. The obderikha kidnapped her from the old banyas along the riverbank.
+ShortQuestDescr: Destroy the changeling demon
+LongQuestDescr: Eighteen years ago an obderikha switched out a child for an aspen demon. You set forth to capture this demon in order to open the second seal of the Black Book.
+LevelConfig:
+  Battle:
+    Name: Aspen Log
+

@@ -1,0 +1,17 @@
+﻿Name: Когти
+AbilityType: WEREWOLF_CLAWS
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: WEREWOLF_CLAWS
+GoldCost: 3
+Effects:
+- MinValue: 4
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  RepeatCount: 4
+

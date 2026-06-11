@@ -1,0 +1,23 @@
+﻿IdName: Week4Day2Road
+Name: Замшелая дорога
+Description: По этой дороге и доберусь до перекрестка.
+Scene: Road
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Лесные духи
+    Enemies:
+    - Type: ForestDemon
+      LevelSpawnPointType: EnemyCenter
+    - Type: Demon
+    - Type: Demon
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day2/Road
+LightingType: FOG_2
+RequiredLocations:
+- Week4Day2FlockField
+

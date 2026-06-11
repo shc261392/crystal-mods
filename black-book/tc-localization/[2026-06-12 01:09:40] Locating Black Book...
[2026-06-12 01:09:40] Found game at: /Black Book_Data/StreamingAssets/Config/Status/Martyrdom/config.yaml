@@ -1,0 +1,6 @@
+﻿Unique: true
+Name: Мученичество
+Description: Потерять {Duration} <sprite name="Health"> за каждое слово с уроном
+Sprite: StatMuchinichestvo
+Harmful: true
+

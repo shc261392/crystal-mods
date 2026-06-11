@@ -1,0 +1,6 @@
+﻿Name: 저장고
+Description: 일종의 골베츠다. 유용한 게 있으려나?
+LevelConfig:
+  Battle:
+    Name: 지하실 초르트
+

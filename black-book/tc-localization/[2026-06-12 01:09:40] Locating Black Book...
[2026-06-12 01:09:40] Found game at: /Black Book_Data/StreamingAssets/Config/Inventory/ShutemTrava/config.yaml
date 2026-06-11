@@ -1,0 +1,11 @@
+﻿Name: Шутёмная трава
+InventoryItemName: ShutemTrava
+Type: Herb
+Flavour: Я не травница, дак не знаю, от чего пьют шутемну-ту траву
+Sprite: ShutemTrava
+Expendable: true
+Cost: 20
+Effects:
+- Value: 2
+  Type: Status
+  StatusName: BlessOnHealthLoss

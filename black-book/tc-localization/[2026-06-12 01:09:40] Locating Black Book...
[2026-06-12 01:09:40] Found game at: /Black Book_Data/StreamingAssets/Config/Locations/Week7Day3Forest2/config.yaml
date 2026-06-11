@@ -1,0 +1,9 @@
+IdName: Week7Day3Forest2
+Name: Чаща грешников
+Scene: HellSinnersForest2
+RequiredLocations:
+LevelConfig: 
+  MixerSnapshot: snapshot:/Cave
+  MusicOverride: event:/Music/ExploreHell
+  Exploration: Week7Day3Forest2
+  CinematicIntro: true

@@ -1,0 +1,34 @@
+﻿AssetName: DedEgor1Unit
+Health: 333
+Mana: 7
+Initiative: 2
+Experience: 500
+StartingStatusEffects:
+- StatusEffectType: Sorcerer
+  Duration: 999
+  Permanent: true
+  Unremovable: true
+- StatusEffectType: Immunity
+  Duration: 999
+  Permanent: true
+  StringData: Waste
+  HardDifficulty: true
+- StatusEffectType: Cunning
+  Duration: 1
+  Permanent: true
+- StatusEffectType: Curst
+  Duration: 1
+  Permanent: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: LIGHTNING_STRIKE
+    TargetType: ENEMY
+  - AbilityType: WATER_GOOD
+    TargetType: SELF
+  - AbilityType: SHONDI
+    TargetType: SELF
+  - AbilityType: SAVAN
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Дед Егор
+

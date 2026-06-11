@@ -1,0 +1,29 @@
+﻿IdName: Week4Day2Crossroads
+Name: Марьевские кресты
+Description: 'Лешие на росстани часто являются: это ведь граница между нашими мирами.'
+ShortQuestDescr: Отведать Галину
+LongQuestDescr: У немзинцев часто пропадают люди. Вот и сейчас исчезла крестьянка. Вам нужно заставить лешего вернуть ее на росстани.
+Scene: Forest_5
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day2/Crossroads/Intro
+  Exploration: Week4Day2Crossroads
+  CinematicIntro: true
+  MixerSnapshot: snapshot:/Forest
+LightingType: FOG_2
+RequiredLocations:
+- Week4Day2Road
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+- Proshka
+- ProshkaLoyal
+

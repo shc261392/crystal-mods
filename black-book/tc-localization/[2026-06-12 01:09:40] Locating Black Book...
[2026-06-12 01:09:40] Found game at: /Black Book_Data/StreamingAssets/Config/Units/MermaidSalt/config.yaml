@@ -1,0 +1,29 @@
+﻿AssetName: MermaidSalt
+Health: 200
+Mana: 4
+Initiative: 1
+MoneyMin: 42
+MoneyMax: 60
+Experience: 1500
+StartingStatusEffects:
+- StatusEffectType: Master
+  Duration: 999999
+  Permanent: true
+  Unremovable: true
+- StatusEffectType: Vampirism
+  Duration: 13
+  Permanent: true
+  HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: MERMAID_FRIENDS
+    TargetType: SELF
+  - AbilityType: MERMAID_ATTACK_YEARNING
+    TargetType: ENEMY
+  - AbilityType: MERMAID_CLAWS
+    TargetType: ENEMY
+  - AbilityType: MERMAID_SALT
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Солёная русалка
+

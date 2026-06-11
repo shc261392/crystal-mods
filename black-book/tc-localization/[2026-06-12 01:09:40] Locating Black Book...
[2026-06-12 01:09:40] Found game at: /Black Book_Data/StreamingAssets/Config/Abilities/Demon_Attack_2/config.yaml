@@ -1,0 +1,15 @@
+﻿Name: Мощный коготь
+AbilityType: DEMON_ATTACK_2
+TargetType: ENEMY
+Sprite: Bite
+GoldCost: 3
+Effects:
+- MinValue: 4
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

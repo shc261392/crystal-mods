@@ -1,0 +1,16 @@
+﻿Name: Порченая кудель
+AbilityType: TAINTED_TOW
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: TAINTED_TOW
+Effects:
+- MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  RepeatCount: 3
+

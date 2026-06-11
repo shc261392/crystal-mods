@@ -1,0 +1,18 @@
+﻿Name: Салманида
+AbilityType: SALMANIDA_ROGUELIKE
+Upgrade: SALMANIDA_UP
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+Sprite: Salamanida
+GoldCost: 9
+Effects:
+- EffectType: REMOVE_BAD_STATUS
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpell
+    MissTrigger: AttackSpell
+    WrapUpTime: 0.5
+

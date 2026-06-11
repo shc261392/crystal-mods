@@ -1,0 +1,1 @@
+Name: Большая сумаSkillName: RoguelikeInitialEquip1Sprite: RoguelikeInitialEquipDescription: Увеличивает количество надеваемых предметов из коллекции на {CalculatedEffect}RequiredSkills:  - AbilityCHEMER_ROGUELIKEEffects:- Value: 1  Type: RoguelikeInitialEquipUpgrade

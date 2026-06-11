@@ -1,0 +1,20 @@
+﻿Name: Попорченные ногти
+AbilityType: DROWNER_NAILS
+TargetType: ENEMY
+Intention: ATTACK_DEBUFF
+Sprite: DROWNER_NAILS
+GoldCost: 3
+Effects:
+- MinValue: 10
+  MaxValue: 15
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 2
+  StatusEffectType: Waste
+

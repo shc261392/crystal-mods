@@ -1,0 +1,7 @@
+﻿Name: 北の集落
+Description: この近くにアレクサンドルが向かった家がある。居場所はすぐに分かるはずだ。
+ShortQuestDescr: アレクサンドルと会う
+LevelConfig:
+  Battle:
+    Name: 火の眷族
+

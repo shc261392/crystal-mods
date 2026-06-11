@@ -1,0 +1,18 @@
+﻿AssetName: WolfHalf
+Health: 99
+Mana: 4
+Initiative: 1
+MoneyMin: 12
+MoneyMax: 18
+Experience: 250
+UnitAI:
+  AIAbilities:
+  - AbilityType: PLAYING_PIPE
+    TargetType: ALL_ALLIES_PLAYER
+  - AbilityType: FIRST_BROTHER_BITE
+    TargetType: ENEMY
+  - AbilityType: SECOND_BROTHER_WORD
+    TargetType: ALLY
+  CastingType: UNIT_HARDCODED
+Name: Полуволк
+

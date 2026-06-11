@@ -1,0 +1,13 @@
+﻿IdName: Week2Day7Wine
+Name: Винная лавка
+Description: Не то чтобы меня такие магазины-то заинтересовали. Просто мимо прохожу.
+Scene: Village
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Merchants:
+  - Wineseller
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day7/Wine
+RequiredLocations:
+- Week2Day7Gainskoe
+

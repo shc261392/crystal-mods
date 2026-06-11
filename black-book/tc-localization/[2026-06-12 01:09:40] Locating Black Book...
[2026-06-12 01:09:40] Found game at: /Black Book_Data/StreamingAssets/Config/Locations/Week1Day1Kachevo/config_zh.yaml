@@ -1,0 +1,6 @@
+﻿Name: 卡切沃湖
+Description: 这片弧形湖泊在科尔瓦河左岸。他们说今年湖里已经淹死两个人了，这个地方肯定一到夜里就不太平。
+LevelConfig:
+  Battle:
+    Name: 山梁上的魔鬼
+

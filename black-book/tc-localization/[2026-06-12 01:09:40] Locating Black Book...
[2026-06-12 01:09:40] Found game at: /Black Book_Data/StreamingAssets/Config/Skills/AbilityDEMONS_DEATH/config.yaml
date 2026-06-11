@@ -1,0 +1,10 @@
+Name: DEMONS_DEATH
+SkillName: AbilityDEMONS_DEATH
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityOKIAN_MORE
+SpriteOffsetX: -35.3
+SpriteOffsetY: -24.3
+Effects:
+- Type: AbilityUnlock
+  StringData: DEMONS_DEATH

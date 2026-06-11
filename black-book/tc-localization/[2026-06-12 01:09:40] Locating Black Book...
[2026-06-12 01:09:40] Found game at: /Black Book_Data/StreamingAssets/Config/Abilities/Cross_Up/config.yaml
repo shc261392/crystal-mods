@@ -1,0 +1,16 @@
+﻿Name: Крестное знамение +
+AbilityType: CROSS_UP
+TargetType: SELF
+Description: >
+  Увеличивает защиту на {MinValue}
+Sprite: CrossAbility
+GoldCost: 3
+Effects:
+- EffectType: DEFENCE
+  MinValue: 7
+  MaxValue: 7
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+

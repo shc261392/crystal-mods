@@ -1,0 +1,15 @@
+﻿IdName: Week6Day1Gallery
+Name: Галерея
+Description: В этой горнице он хранит картины и портреты.
+Scene: AlexManorGallery
+LevelConfig:
+  MixerSnapshot: snapshot:/Church
+  Exploration: Week6Day1Gallery
+  CameraOverride: CMMainDollyCamera
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day1/Gallery/Intro
+  MusicOverride: event:/Music/AlexanderManor
+RequiredLocations:
+- Week6Day1Library
+HideBook: true
+

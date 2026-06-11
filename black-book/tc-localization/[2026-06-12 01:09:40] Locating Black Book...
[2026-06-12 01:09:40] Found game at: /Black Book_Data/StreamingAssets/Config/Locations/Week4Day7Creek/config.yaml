@@ -1,0 +1,24 @@
+﻿IdName: Week4Day7Creek
+Name: Игнатьевский ручей
+Description: Вдоль ручья на деревьях ленты виднеются.
+Scene: River2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Нежить в ручье
+    Enemies:
+    - Type: Menqw
+      LevelSpawnPointType: EnemyCenter
+    - Type: Chud2
+    - Type: Chud1
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day7/Creek/Intro
+LightingType: FOG_2
+RequiredLocations:
+- Week4Day7Viam
+OnomastikonItems:
+- Onomastikon/Tales/49
+

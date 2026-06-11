@@ -1,0 +1,19 @@
+﻿Name: Укус первого брата
+AbilityType: FIRST_BROTHER_BITE
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: FIRST_BROTHER_BITE
+GoldCost: 3
+Effects:
+- EffectType: DAMAGE_FIERCE
+  MinValue: 15
+  MaxValue: 15
+  NumericData: 10
+  VisualEffect:
+    VisualEffectType: BITE
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    WrapUpTime: 0.100000001
+    SkipReady: true
+

@@ -1,0 +1,8 @@
+﻿Name: 악의 궁전
+Description: 독버섯이 무성하게 자란 신비로운 궁전이다. 악은 이곳에서 수백 년 간 살아왔다...
+ShortQuestDescr: 소원 이루기
+LongQuestDescr: 소원을 이루려면 지옥의 중심부로 가야 합니다. 당신을 가로막는 첫 장벽은 이 지옥의 영역을 다스리는 안드로마리우스입니다.
+LevelConfig:
+  Battle:
+    Name: 안드로마리우스
+

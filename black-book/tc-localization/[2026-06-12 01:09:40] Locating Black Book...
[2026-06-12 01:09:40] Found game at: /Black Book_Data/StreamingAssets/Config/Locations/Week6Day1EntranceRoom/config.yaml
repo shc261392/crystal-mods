@@ -1,0 +1,13 @@
+﻿IdName: Week6Day1EntranceRoom
+Name: Прихожая
+Description: Вот сени так сени! Я бы к таким мигом пообвыклась.
+Scene: AlexManorStairs
+LevelConfig:
+  MixerSnapshot: snapshot:/Church
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day1/EntranceRoom/Intro
+  MusicOverride: event:/Music/AlexanderManor
+OnomastikonItems:
+- Onomastikon/Encyclopedia/75
+HideBook: true
+

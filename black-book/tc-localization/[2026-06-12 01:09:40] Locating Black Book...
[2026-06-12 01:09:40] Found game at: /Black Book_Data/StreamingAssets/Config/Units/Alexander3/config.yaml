@@ -1,0 +1,29 @@
+﻿AssetName: Alexander
+Health: 350
+Mana: 4
+Initiative: 1
+MoneyMin: 60
+MoneyMax: 90
+Experience: 1000
+StartingStatusEffects:
+- StatusEffectType: Sorcerer
+  Duration: 999999
+  Permanent: true
+  Unremovable: true
+- StatusEffectType: Master
+  Duration: 999
+  Permanent: true
+  Unremovable: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: SKORCHIT_UP
+    TargetType: ENEMY
+  - AbilityType: OGNEVITSA
+    TargetType: ENEMY
+  - AbilityType: URAZI
+    TargetType: ENEMY
+  - AbilityType: KILA
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Александр
+

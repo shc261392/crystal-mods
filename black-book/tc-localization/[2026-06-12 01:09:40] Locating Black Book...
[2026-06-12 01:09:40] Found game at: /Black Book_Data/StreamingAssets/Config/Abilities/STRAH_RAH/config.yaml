@@ -1,0 +1,17 @@
+﻿Name: Страх-рах
+AbilityType: STRAH_RAH
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: STRAH_RAH
+Color: WHITE
+GoldCost: 16
+Effects:
+- EffectType: DEFENCE_DAMAGE
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

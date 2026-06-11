@@ -1,0 +1,8 @@
+﻿IdName: AllyHeadBigOchga
+Name: Деревня Большая Очга
+Description: Вот Вильгорт большой, а это так, одно название.
+Scene: Village3
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/AllyHead/Ochga/Intro
+

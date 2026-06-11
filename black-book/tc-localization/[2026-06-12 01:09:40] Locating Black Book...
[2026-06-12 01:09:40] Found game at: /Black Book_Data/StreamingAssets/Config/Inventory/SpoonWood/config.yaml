@@ -1,0 +1,12 @@
+﻿Name: Деревянная ложка
+InventoryItemName: SpoonWood
+Flavour: Леший-от тут исчез, ложка-то была перекрестанна, крест на ней поставили.
+Sprite: IconSpoon3
+Cost: 150
+Effects:
+  - Value: 3
+    Type: StatusOnBattleStart
+    StatusName: Imperishable
+  - Value: 3
+    Type: StatusOnBattleStart
+    StatusName: Waste

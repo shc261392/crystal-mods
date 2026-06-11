@@ -1,0 +1,6 @@
+﻿Name: 黒い土手
+Description: どういうわけか、この場所は黒い土手と呼ばれている。注意したほうが良さそうだ。
+LevelConfig:
+  Battle:
+    Name: 土手の魔物
+

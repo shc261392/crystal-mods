@@ -1,0 +1,37 @@
+﻿Name: Карныш
+AllyType: Karnysh
+Upgrade: KarnyshLoyal
+Unit: Karnysh
+Sprite: KarnyshFool
+IzbaDialogues:
+- Id: Izba/Karnysh/Conv1
+- Id: Izba/Karnysh/Conv2
+- Id: Izba/Karnysh/Conv3
+BanterProbability: 0.5
+LocationToSpecialDialogue:
+  IzbaHunterCampPrePryaha:
+    Id: Izba/Context/IzbaHunterCampPrePryaha/Karnysh
+  IzbaStorm:
+    Id: Izba/Context/IzbaStorm/Karnysh
+Quests:
+- QuestConversation: Izba/Karnysh/AllyQuestGive
+- QuestConversation: Izba/Karnysh/AllyQuestGiveSecondary
+- QuestConversation: Izba/Proshka/QuestFailure
+QuestRestrictedLocationNames:
+  - IzbaFabric
+  - IzbaPike
+  - IzbaBashkir
+  - IzbaHunterCampPolud
+  - IzbaHunterCamp
+  - IzbaHunterCampPreFilimon
+  - IzbaHunterCampPrePryaha
+  - IzbaStorm
+  - IzbaFoggyWoods
+  - IzbaFoggyVillage
+  - IzbaAlexanderPrison
+  - IzbaHellDeath
+  - IzbaHellForest
+  - IzbaHellGates
+QuestLocation: AllyKarnyshForest
+IzbaAsset: KarnyshIzbaRegular
+

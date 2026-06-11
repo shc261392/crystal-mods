@@ -1,0 +1,13 @@
+﻿IdName: Week2Day2Pump
+Name: Насосная башня
+Description: Эта башня защищает насос от непогоды. Тут, в земле, скважина, из которой рассол-то и добывают.
+Scene: SaltFabricPumpStation
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day2/Pump
+RequiredLocations:
+- Week2Day2Kontora
+OnomastikonItems:
+- Onomastikon/Encyclopedia/24
+

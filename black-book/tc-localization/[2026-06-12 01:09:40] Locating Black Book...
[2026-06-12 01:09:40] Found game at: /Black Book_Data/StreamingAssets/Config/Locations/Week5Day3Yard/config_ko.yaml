@@ -1,0 +1,6 @@
+﻿Name: 마랴의 이즈바
+Description: 마랴에게 돌아가 그녀의 키키모라를 찾아야 한다.
+LevelConfig:
+  Battle:
+    Name: 키키모라
+

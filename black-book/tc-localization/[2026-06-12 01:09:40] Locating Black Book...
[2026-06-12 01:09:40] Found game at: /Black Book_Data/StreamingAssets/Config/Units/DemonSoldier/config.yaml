@@ -1,0 +1,16 @@
+﻿AssetName: DemonSoldier
+Health: 66
+HealthRandomAdd: 5
+Mana: 4
+Initiative: 1
+MoneyMin: 15
+MoneyMax: 30
+Experience: 250
+UnitAI:
+  AIAbilities:
+    - AbilityType: SHOT
+      TargetType: ENEMY
+    - AbilityType: RELOAD
+      TargetType: SELF
+  CastingType: CONSEQUITIVE
+Name: Чёрт-солдат

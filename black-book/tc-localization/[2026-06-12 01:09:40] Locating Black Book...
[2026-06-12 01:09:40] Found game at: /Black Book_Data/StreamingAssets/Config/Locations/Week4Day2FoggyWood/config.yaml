@@ -1,0 +1,22 @@
+﻿IdName: Week4Day2FoggyWood
+Name: Туманная чаща
+Description: Можно заглянуть в лес, что растет вдоль дороги. Думаю, там нечисти – как тараканов за печью.
+Scene: Forest_old
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Чаще к бесам
+    Enemies:
+    - Type: ForestDemon
+      LevelSpawnPointType: EnemyCenter
+    - Type: Wolf
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day2/FoggyWood
+  CameraOverride: CMQuestCamera3
+LightingType: FOG_2
+MoonType: NONE
+RequiredLocations:
+  - Week4Day2FlockField

@@ -1,0 +1,9 @@
+﻿Name: Лубок
+InventoryItemName: Lubok
+Flavour: Раньше ниче и не было, по лубкам про мир-то и узнавали
+Sprite: Lubok
+Cost: 30
+Effects:
+- Value: 1
+  Type: AllyRecharge
+

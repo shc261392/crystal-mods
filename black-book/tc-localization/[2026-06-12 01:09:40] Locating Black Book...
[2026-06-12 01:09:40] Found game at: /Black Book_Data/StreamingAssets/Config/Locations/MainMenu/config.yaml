@@ -1,0 +1,8 @@
+﻿IdName: MainMenu
+Name: Главное меню
+Scene: MainMenu
+BlockScreenKeys: true
+LevelConfig:
+  MusicOverride: event:/Music/Title
+NoAutosave: true
+

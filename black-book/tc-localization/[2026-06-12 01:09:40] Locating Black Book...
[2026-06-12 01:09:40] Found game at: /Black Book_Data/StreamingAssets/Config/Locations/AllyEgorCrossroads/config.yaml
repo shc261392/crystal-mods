@@ -1,0 +1,12 @@
+﻿IdName: AllyEgorCrossroads
+Name: Михайловская росстань
+Description: Все дороги сходятся к Михайловской росстани как будто. Сколько еще раз я тут побываю?
+Scene: CrossroadsExploration
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/Explore2
+  Quest:
+    DialogueSystemName: TextQuest/AllyEgor/Crossroads/Intro
+RequiredLocations:
+- AllyEgorRoad
+

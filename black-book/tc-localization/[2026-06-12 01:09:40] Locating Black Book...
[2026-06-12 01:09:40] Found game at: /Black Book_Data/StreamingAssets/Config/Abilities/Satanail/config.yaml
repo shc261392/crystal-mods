@@ -1,0 +1,25 @@
+﻿Name: Сатанаил
+AbilityType: SATANAIL
+AbilityBookPartType: KEY
+Upgrade: SATANAIL_UP
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: SATANAIL
+GoldCost: 18
+Effects:  
+- EffectType: STATUS_SKLAD
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal3KeyBlack
+    MissTrigger: Seal3KeyBlack
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: EloquenceBlack
+- EffectType: SIN
+  MinValue: 1
+  MaxValue: 1
+

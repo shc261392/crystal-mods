@@ -1,0 +1,7 @@
+﻿Name: 콜바강의 둑
+Description: 빌고르트로 가는 길은 아름다운 콜바강의 둑을 따라 굽이굽이 이어진다.
+ShortQuestDescr: 협곡의 악마 퇴치하기
+LevelConfig:
+  Battle:
+    Name: 썩은 무리
+

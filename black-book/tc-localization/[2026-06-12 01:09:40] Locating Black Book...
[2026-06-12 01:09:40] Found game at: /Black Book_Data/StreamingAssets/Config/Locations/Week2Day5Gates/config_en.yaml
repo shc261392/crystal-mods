@@ -1,0 +1,6 @@
+﻿Name: Palace Gates
+Description: In the old fairy tales, the gates to a vodyanoi's palace are made of crystal. The reality is much different.
+LevelConfig:
+  Battle:
+    Name: At the Gates
+

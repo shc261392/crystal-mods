@@ -1,0 +1,10 @@
+﻿Name: Кадильница
+InventoryItemName: Kadilnitsa
+Flavour: Мы венчались, дак тоже нас градил, кадилом-то махал
+Sprite: Kadilnitsa
+Cost: 140
+Effects:
+  - Value: 3
+    Type: StatusOnBattleStart
+    StatusName: Piety
+

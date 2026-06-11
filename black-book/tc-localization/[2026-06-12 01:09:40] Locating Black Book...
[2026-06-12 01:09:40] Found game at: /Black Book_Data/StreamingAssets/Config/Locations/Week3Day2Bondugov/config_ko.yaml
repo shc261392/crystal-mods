@@ -1,0 +1,7 @@
+﻿Name: 본두고프 밭
+Description: 뱀이 남쪽의 밭을 향해 날아갔다. 서둘러야 한다!
+ShortQuestDescr: 뱀 잡기
+LevelConfig:
+  Battle:
+    Name: 불 뱀
+

@@ -1,0 +1,8 @@
+﻿Name: 수중 동굴
+Description: 이 동굴은 보댜노이의 영역 안쪽으로 이어진다.
+ShortQuestDescr: 동굴로 가기
+LongQuestDescr: 호수에 떨어진 당신은 보댜노이의 영역에 도착했습니다. 바쿨이 당신의 옛 지인인 인어를 길잡이로 보냈습니다. 이 여악마가 당신을 과연 어디로 이끌까요?
+LevelConfig:
+  Battle:
+    Name: 강꼬치고기
+

@@ -1,0 +1,10 @@
+Name: IROD_BONES
+SkillName: AbilityIROD_BONES
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityTRYASOVITSA
+SpriteOffsetX: -44
+SpriteOffsetY: -50
+Effects:
+- Type: AbilityUnlock
+  StringData: IROD_BONES_ROGUELIKE

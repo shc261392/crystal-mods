@@ -1,0 +1,96 @@
+﻿IdName: AllyNikolayForest
+Name: Хрустящая роща
+Description: 'Сюда побежала юродивая. Странные звуки какие-то раздаются из леса: как кости хрустят!'
+ShortQuestDescr: Догнать беглянку
+Scene: PolenoOld
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Огромное полено
+    Enemies:
+    - Type: OldChangelingPuzzle
+      LevelSpawnPointType: EnemyCenter
+      HealthOverride: 63
+    NoShuffle: true
+    OnlyNightmare: true
+    PuzzleDeck:
+    - RIZI
+    - ENAHA_DEMON
+    - SALMANIDA
+    - HEADLESS
+    - KORKUSHA
+    - HEADLESS
+    - URAZI
+    - URAZI
+    - KORKUSHA
+    - TRYASOVITSA
+    - URAZI
+    - IROD_BONES
+    - OSINA
+    - RUDA
+    - RABA
+    - RABA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    PuzzleManaOverride:
+    - 2
+    - 1
+    PuzzleHandOverride:
+    - 5
+    - 3
+    ForceAlly: Nikolay
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 3
+  BattleAlternative:
+    Name: Огромное полено
+    Enemies:
+    - Type: OldChangelingPuzzle
+      LevelSpawnPointType: EnemyCenter
+      HealthOverride: 26
+    NoShuffle: true
+    PuzzleDeck:
+    - RIZI
+    - KILA
+    - URAZI
+    - KILA
+    - URAZI
+    - KILA
+    - KILA
+    - KILA
+    - KILA
+    - KILA
+    - KILA
+    - KILA
+    - KILA
+    - DEMON_WIZARD
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    PuzzleManaOverride:
+    - 2
+    - 1
+    PuzzleHandOverride:
+    - 5
+    - 3
+    ForceAlly: Nikolay
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 2
+  Quest:
+    DialogueSystemName: TextQuest/AllyNikolay/Forest/Intro
+    Outro: TextQuest/AllyNikolay/Forest/Outro
+  Exploration: AllyNikolayForest
+  CinematicIntro: true
+  MusicOverride: event:/Music/ExploreDark
+  MixerSnapshot: snapshot:/Forest
+  NoExplorerSpawn: true
+RequiredLocations:
+- AllyNikolayBoloto
+Secondary: AllyNikolayForest
+

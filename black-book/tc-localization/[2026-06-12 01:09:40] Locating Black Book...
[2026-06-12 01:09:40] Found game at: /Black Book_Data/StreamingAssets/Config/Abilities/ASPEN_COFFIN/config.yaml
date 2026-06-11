@@ -1,0 +1,17 @@
+﻿Name: Осиновый гроб
+AbilityType: ASPEN_COFFIN
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: ASPEN_COFFIN
+GoldCost: 3
+RitualTime: 4
+Effects:
+- MinValue: 40
+  MaxValue: 40
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

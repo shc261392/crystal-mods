@@ -1,0 +1,7 @@
+﻿Name: 대장간
+Description: 도구를 형편없이 수리한 대장장이가 이곳에 산다.
+ShortQuestDescr: 대장장이에게 말 걸기
+LevelConfig:
+  Battle:
+    Name: 죄를 지은 몰이꾼
+

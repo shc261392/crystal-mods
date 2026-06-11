@@ -1,0 +1,7 @@
+﻿Name: 伊斯科尔河
+Description: 这个猎人小屋的主人闺女喜酒没请科尔敦，现在屋里到处爬的都是蟑螂。
+ShortQuestDescr: 赶走蟑螂
+LevelConfig:
+  Battle:
+    Name: 勤奋的雠特
+

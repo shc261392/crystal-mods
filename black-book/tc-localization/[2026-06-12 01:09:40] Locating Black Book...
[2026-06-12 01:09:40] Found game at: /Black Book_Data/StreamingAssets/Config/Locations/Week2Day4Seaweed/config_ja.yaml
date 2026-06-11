@@ -1,0 +1,6 @@
+﻿Name: 海草の森
+Description: ヴィルゴルトの近くにある森とよく似ている。
+LevelConfig:
+  Battle:
+    Name: 淀みの魔物
+

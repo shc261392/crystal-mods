@@ -1,0 +1,7 @@
+﻿Name: Smithy
+Description: The blacksmith who did such a poor job repairing the tool lives here.
+ShortQuestDescr: Talk to the Smith
+LevelConfig:
+  Battle:
+    Name: Sinner Herders
+

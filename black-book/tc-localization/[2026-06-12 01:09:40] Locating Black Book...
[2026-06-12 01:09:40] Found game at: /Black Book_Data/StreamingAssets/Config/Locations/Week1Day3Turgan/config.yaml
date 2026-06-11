@@ -1,0 +1,16 @@
+﻿IdName: Week1Day3Turgan
+Name: Турчанский тракт
+Description: От Вильгорта к Янидору ведет Турчанский тракт. Уж не знаю, почему его так назвали. В честь турков, Николай-то говорит.
+Scene: Road
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Битва с разбойником
+    Enemies:
+    - Type: Brigand
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day3/Turgan/Intro
+

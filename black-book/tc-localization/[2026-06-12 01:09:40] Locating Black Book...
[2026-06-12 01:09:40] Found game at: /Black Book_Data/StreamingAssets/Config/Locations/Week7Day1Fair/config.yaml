@@ -1,0 +1,26 @@
+IdName: Week7Day1Fair
+Name: Бесовская ярмарка
+Description: Здесь бесы торгуют своими адовыми товарами. С огненными ценами!
+Scene: FairHell
+RequiredLocations:
+  - Week7Day1Pits
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Util/Emtpy
+  MixerSnapshot: snapshot:/Cave
+  Merchants:
+    - DemonPeddler
+    - DemonHerbalist
+    - BookKeeper3
+    - CardGame
+  FoolGame:
+    DialogueFoolWin: TextQuest/Durak/MerchantGameWin
+    DialogueFoolLose: TextQuest/Durak/MerchantGameLose
+    TeamPlay: true
+    CardsCount: 36
+    PlayerCount: 4
+    PossiblePlayers:
+      - Demon
+      - Andropko
+      - Mikolko
+      - Sitri

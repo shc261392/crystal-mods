@@ -1,0 +1,19 @@
+﻿Name: Чары на ветер +
+AbilityType: WIND_UP
+TargetType: ENEMY
+Description: "{MinValue} урона \nПереворот слова"
+Sprite: WindAbility
+GoldCost: 9
+Effects:
+- MinValue: 7
+  MaxValue: 7
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpell
+    MissTrigger: AttackSpell
+    WrapUpTime: 2
+- EffectType: PAGE_TURN
+  MinValue: 1
+  MaxValue: 1
+

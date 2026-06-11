@@ -1,0 +1,25 @@
+﻿Name: Слово набожное
+AbilityType: WORD_PRAYER_ROGUELIKE
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: WORD_PRAYER
+GoldCost: 24
+Effects:
+- EffectType: KRADA  
+- EffectType: SACRIFICE_SKLAD
+  MinValue: 1
+  MaxValue: 1
+- EffectType: STATUS_SKLAD
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal4OrderWhite
+    MissTrigger: Seal4OrderWhite
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: Prayer
+

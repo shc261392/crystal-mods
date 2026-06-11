@@ -1,0 +1,7 @@
+﻿Name: チョルトの大鍋
+Description: あちらの方角から悲鳴が聞こえてくる。人間の魂が拷問されているようだ。
+ShortQuestDescr: 悪魔の招待
+LevelConfig:
+  Battle:
+    Name: 大鍋の中で
+

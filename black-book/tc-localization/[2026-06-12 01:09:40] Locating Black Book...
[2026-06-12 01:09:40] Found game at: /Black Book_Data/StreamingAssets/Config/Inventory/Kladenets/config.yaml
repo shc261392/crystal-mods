@@ -1,0 +1,9 @@
+﻿Name: Меч-кладенец
+InventoryItemName: Kladenets
+Flavour: На бедре сабля вострая, позади себя меч-кладенец
+Sprite: IconKladenets
+Cost: 222
+Effects:
+- Value: 999
+  Type: AdditionalDamage
+

@@ -1,0 +1,21 @@
+﻿Name: Подменыши
+AbilityType: ASPEN_SUMMON
+TargetType: SELF
+AbilitySpellType: SUMMON
+Sprite: ASPEN_SUMMON
+GoldCost: 6
+Effects:
+- EffectType: SUMMON
+  MinValue: 2
+  MaxValue: 2
+  SummonEffectData:
+    UnitTypes:
+    - AspenDemonChangeling
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 0.100000001
+    SkipReady: true
+

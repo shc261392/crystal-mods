@@ -1,0 +1,17 @@
+﻿Name: Щучий укус
+AbilityType: PIKE_BITE
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: PIKE_BITE
+GoldCost: 3
+RitualTime: 3
+Effects:
+- MinValue: 50
+  MaxValue: 50
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

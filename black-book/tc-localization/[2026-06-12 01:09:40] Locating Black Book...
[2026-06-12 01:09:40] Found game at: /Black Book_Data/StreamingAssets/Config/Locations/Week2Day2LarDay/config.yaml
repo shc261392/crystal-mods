@@ -1,0 +1,12 @@
+﻿IdName: Week2Day2LarDay
+Name: Соляной ларь
+Description: В соляном ларе хранят рассол перед вываркой. Эта изба закрыта наглухо – чем не жилье для нечистой силы?
+Scene: SaltHouseEntry
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day2/LarDay/Intro
+  Exploration: Week2Day2LarDay
+RequiredLocations:
+- Week2Day2Pump
+

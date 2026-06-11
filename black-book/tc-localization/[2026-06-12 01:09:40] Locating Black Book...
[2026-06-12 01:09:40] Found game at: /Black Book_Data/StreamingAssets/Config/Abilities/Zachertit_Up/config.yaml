@@ -1,0 +1,21 @@
+﻿Name: Зачертить +
+AbilityType: ZACHERTIT_UP
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Description: >-
+  Получить {MinValue} защиты
+
+  Жест
+Sprite: Zachertit
+GoldCost: 15
+Gesture: true
+Effects:
+- EffectType: DEFENCE_SKLAD
+  MinValue: 4
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+

@@ -1,0 +1,15 @@
+﻿Name: Потайной лист
+InventoryItemName: SecretLeaveTrava
+Type: Herb
+Flavour: От живота пьют его; низко ростёт, не видать его хорошо-то.
+Sprite: SecretLeaveTrava
+Expendable: true
+Cost: 19
+Effects:
+- Value: 1
+  Type: RemoveStatus
+  StatusName: Ailment
+- Value: 1
+  Type: RemoveStatus
+  StatusName: Suppressed 
+

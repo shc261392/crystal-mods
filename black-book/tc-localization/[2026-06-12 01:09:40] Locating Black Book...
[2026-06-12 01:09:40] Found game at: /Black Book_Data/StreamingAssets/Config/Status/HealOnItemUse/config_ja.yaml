@@ -1,0 +1,3 @@
+﻿Name: 治療薬
+Description: 薬草を使うたび、{Duration} <sprite name="Health"> を回復する
+

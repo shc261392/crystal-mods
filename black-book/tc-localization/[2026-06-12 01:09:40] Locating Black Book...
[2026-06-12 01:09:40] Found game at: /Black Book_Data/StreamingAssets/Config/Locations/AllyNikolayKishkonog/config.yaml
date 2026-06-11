@@ -1,0 +1,19 @@
+﻿IdName: AllyNikolayKishkonog
+Name: Слобода Кишконогова
+Description: Слободой называли раньше вольные от крепостничества деревни. Но тут-то и не было барей у нас в Чердыни. Поди разбери.
+ShortQuestDescr: Найти пропавшего друга Николая
+LongQuestDescr: Николай обеспокоен пропажей своего старого друга, охотника из слободы Кишконогова. Мы отправились на его поиски
+Scene: Village2
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Merchants:
+  - Peddler
+  Quest:
+    DialogueSystemName: TextQuest/AllyNikolay/Kishkonog/Intro
+    IzbaAftermath: TextQuest/AllyNikolay/Forest/Aftermath
+  CameraOverride: CMSauna
+  MusicOverride: event:/Music/ExploreDark
+RequiredLocations:
+- AllyNikolayBujdom
+ForceAlly: Nikolay
+

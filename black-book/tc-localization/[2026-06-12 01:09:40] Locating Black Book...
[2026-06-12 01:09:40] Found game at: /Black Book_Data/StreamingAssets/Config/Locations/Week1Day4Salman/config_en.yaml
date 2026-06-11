@@ -1,0 +1,8 @@
+﻿Name: Salman Marshes
+Description: People rarely venture into these marshes. Since they're not really inhabited by anyone, various spirits have made this area their dwelling.
+LevelConfig:
+  Battle:
+    Name: Salman's Battle
+  BattleAlternative:
+    Name: Salman's Battle
+

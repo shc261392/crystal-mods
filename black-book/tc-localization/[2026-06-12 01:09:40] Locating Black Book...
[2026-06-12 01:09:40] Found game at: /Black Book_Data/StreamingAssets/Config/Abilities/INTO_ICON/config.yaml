@@ -1,0 +1,23 @@
+﻿Name: Забраться в икону
+AbilityType: INTO_ICON
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: INTO_ICON
+GoldCost: 26
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Immortality
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    WrapUpTime: 0.5
+    SkipReady: true
+- EffectType: STATUS
+  StatusEffectType: Regeneration
+  MinValue: 10
+  MaxValue: 10
+

@@ -1,0 +1,28 @@
+﻿IdName: Week3Day2NorthWood
+Name: Северный поселок
+Description: Здесь где-то дом, куда отправился Александр. Думаю, легко его найти будет.
+ShortQuestDescr: Встретиться с Александром
+Scene: Izba_Peasant1
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  Battle:
+    Name: Огненные друзья
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyCenter
+    - Type: Demon
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day2/North/Intro
+    Outro: TextQuest/Week3/Day2/North/AfterFight
+  Exploration: Week3Day2NorthWood
+  MusicOverride: event:/Music/ExploreDark
+RequiredLocations:
+- Week3Day2Road
+Secondary: Week3Day2NorthWood
+OnomastikonItems:
+- Onomastikon/Encyclopedia/53
+

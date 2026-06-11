@@ -1,0 +1,6 @@
+﻿Unique: true
+Name: Уста колдовские
+Description: Получить {Duration} красноречия при каждой потере здоровья
+Sprite: StatWasteOnHealthLoss
+DecreaseOnStartTurn: true
+

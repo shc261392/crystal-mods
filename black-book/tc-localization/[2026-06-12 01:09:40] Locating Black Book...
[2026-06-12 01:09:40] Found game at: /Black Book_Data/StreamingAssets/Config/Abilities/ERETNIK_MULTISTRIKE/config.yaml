@@ -1,0 +1,17 @@
+﻿Name: Стекляшки
+AbilityType: ERETNIK_MULTISTRIKE
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: ERETNIK_MULTISTRIKE
+GoldCost: 3
+Effects:
+- MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  RepeatCount: 3
+

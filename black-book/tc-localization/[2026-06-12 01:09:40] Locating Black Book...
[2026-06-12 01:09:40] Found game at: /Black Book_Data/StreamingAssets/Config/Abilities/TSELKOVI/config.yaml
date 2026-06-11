@@ -1,0 +1,17 @@
+﻿Name: Целковый
+AbilityType: TSELKOVI
+TargetType: ENEMY
+Sprite: JUDEA
+GoldCost: 26
+Effects:
+- EffectType: GIVE_MONEY
+  MinValue: 25
+  MaxValue: 25
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

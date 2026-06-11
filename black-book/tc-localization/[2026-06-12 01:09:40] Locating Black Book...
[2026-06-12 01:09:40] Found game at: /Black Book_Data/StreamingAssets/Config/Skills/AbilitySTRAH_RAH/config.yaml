@@ -1,0 +1,10 @@
+Name: STRAH_RAH
+SkillName: AbilitySTRAH_RAH
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - RoguelikeHelpOfSaints3
+SpriteOffsetX: 15
+SpriteOffsetY: -38
+Effects:
+- Type: AbilityUnlock
+  StringData: STRAH_RAH

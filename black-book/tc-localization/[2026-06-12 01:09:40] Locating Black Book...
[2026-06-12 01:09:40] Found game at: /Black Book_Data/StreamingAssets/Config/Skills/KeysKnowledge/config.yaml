@@ -1,0 +1,10 @@
+﻿Name: Знание ключей
+SkillName: KeysKnowledge
+Sprite: KeysKnowledgeSkill
+Description: Увеличивает количество ключей в заговоре на {CalculatedEffect}
+Effects:
+- Value: 1
+  Type: AdditionalKey
+Level: 19
+AutoLearn: true
+

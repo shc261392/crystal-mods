@@ -1,0 +1,20 @@
+﻿Name: Нет смертушки
+AbilityType: DEMON_EGOR_NO_DEATH
+TargetType: SELF
+Intention: DEBUFF
+AbilitySpellType: STATUS
+Sprite: DEMON_EGOR_NO_DEATH
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Regeneration
+  MinValue: 30
+  MaxValue: 30
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 0.100000001
+    SkipReady: true
+

@@ -1,0 +1,6 @@
+﻿Name: Нет способности
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: Obderiha
+GoldCost: 3
+

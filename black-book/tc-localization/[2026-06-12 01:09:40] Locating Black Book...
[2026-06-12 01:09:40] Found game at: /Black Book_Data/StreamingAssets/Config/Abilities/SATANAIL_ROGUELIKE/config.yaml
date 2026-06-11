@@ -1,0 +1,25 @@
+﻿Name: Сатанаил
+AbilityType: SATANAIL_ROGUELIKE
+AbilityBookPartType: KEY
+Upgrade: SATANAIL_UP
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: SATANAIL
+GoldCost: 18
+Effects:  
+- EffectType: STATUS_SKLAD
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal3KeyBlack
+    MissTrigger: Seal3KeyBlack
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: EloquenceBlack
+- EffectType: KRADA
+- EffectType: SACRIFICE_SKLAD
+  MinValue: 3
+  MaxValue: 3  

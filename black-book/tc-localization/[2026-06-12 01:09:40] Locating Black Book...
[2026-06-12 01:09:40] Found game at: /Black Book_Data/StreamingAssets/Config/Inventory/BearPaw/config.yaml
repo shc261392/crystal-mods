@@ -1,0 +1,10 @@
+﻿Name: Медвежья лапа
+InventoryItemName: BearPaw
+Flavour: 'Было такое: на лапу медвежью бисяков сажали'
+Sprite: BearPaw
+Cost: 200
+Effects:
+- Value: 3
+  Type: StatusBonus
+  StatusName: Cursed
+

@@ -1,0 +1,9 @@
+﻿Name: Dog Creek
+Description: Something's not quite right about this creek. Things happen here. A peasant from the village asked you to check it out and deal with any spirits.
+ShortQuestDescr: Creek Waste
+LevelConfig:
+  Battle:
+    Name: Creek Chud'
+  BattleAlternative:
+    Name: Creek Chud'
+

@@ -1,0 +1,6 @@
+﻿Name: 레트킨 마을 근처 묘지
+Description: 이 마을은 작지만 따로 묘지가 있다. 그곳에서 악마를 잡을 수 있을지도 모르니 확인해 봐야겠다.
+LevelConfig:
+  Battle:
+    Name: 도굴꾼
+

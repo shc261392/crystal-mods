@@ -1,0 +1,8 @@
+﻿Name: 米哈耶尔十字路口
+Description: 都是打这儿开始的……我感觉到爷爷在那儿，爷爷在十字路口。
+ShortQuestDescr: 找到老叶戈尔
+LongQuestDescr: 黑书你拿回来了，就剩最后一道封印了！你准备去找老叶戈尔，让他帮你举行仪式。
+LevelConfig:
+  Battle:
+    Name: 叶戈尔真身
+

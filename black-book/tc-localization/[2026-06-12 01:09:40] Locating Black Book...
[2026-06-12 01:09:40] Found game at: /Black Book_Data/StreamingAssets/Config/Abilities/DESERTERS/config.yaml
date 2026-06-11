@@ -1,0 +1,16 @@
+﻿Name: Дезертиры!
+AbilityType: DESERTERS
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: DESERTERS
+Effects:
+- MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  RepeatCount: 3
+

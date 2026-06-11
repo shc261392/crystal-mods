@@ -1,0 +1,21 @@
+﻿Name: Царская стража
+AbilityType: ROYAL_GUARD_ROGUELIKE
+TargetType: SELF
+AbilitySpellType: SUMMON
+Sprite: ROYAL_GUARD
+Effects:
+- EffectType: SUMMON
+  MinValue: 2
+  MaxValue: 2
+  SummonEffectData:
+    UnitTypes:
+    - DemonFierceFire
+    - DemonFierce
+    - Demon
+    - DemonSmall
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    WrapUpTime: 0.5
+

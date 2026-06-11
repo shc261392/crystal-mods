@@ -1,0 +1,23 @@
+﻿AssetName: OldChangeling
+Health: 70
+Mana: 4
+Initiative: 1
+MoneyMin: 36
+MoneyMax: 54
+Experience: 2000
+StartingStatusEffects:
+- StatusEffectType: DefenceGive
+  Duration: 20
+UnitAI:
+  AIAbilities:
+  - AbilityType: ASPEN_BARK
+    TargetType: SELF
+  - AbilityType: ASPEN_COFFIN
+    TargetType: ENEMY
+  - AbilityType: NEW_SHOOTS
+    TargetType: SELF
+  - AbilityType: MOSS_WOUNDS
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Старый подменыш
+

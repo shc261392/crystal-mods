@@ -1,0 +1,12 @@
+Name: Бесконечные битвы
+PrefixIcons: "<sprite name=\"SkullC\">"
+Sprite: DifficultyHard
+Effects:
+  - Type: DAMAGE_COEFF
+    Value: 0
+  - Type: STATUS_COEFF
+    Value: 0
+  - Type: GOLD_BONUS
+    Value: 0
+  - Type: SPECIAL_STATUS
+    Value: 0    

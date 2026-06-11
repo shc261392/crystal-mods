@@ -1,0 +1,18 @@
+﻿Name: Удар наотмашь +
+AbilityType: NIKOLAY_STRIKE_UP
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: NIKOLAY_STRIKE
+GoldCost: 6
+Effects:
+- MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Attack
+    WrapUpTime: 1
+    SkipReady: true
+  RepeatCount: 1
+

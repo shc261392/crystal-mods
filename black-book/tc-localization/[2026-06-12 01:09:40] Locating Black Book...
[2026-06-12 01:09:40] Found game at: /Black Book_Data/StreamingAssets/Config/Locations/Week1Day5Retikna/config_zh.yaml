@@ -1,0 +1,6 @@
+﻿Name: 雷特金村附近的公墓
+Description: 村子不大，倒是有一块他们自己的墓地。我去看看，说不定能抓着几个魔鬼。
+LevelConfig:
+  Battle:
+    Name: 掘墓人
+

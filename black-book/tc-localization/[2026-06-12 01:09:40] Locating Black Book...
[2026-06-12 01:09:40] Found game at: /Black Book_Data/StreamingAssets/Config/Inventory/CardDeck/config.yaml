@@ -1,0 +1,11 @@
+Name: Атласная колода
+InventoryItemName: CardDeck
+Type: Artefact
+Flavour: Тройка, семерка, туз! Тройка, семерка, дама!
+Sprite: CardDeck
+Expendable: false
+Cost: 120
+Effects:
+  - Value: 1
+    Type: StatusOnBattleStart
+    StatusName: EloquenceBlack

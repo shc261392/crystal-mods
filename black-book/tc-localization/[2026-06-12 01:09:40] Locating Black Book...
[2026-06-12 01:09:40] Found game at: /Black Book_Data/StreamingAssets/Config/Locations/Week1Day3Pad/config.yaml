@@ -1,0 +1,10 @@
+﻿IdName: Week1Day3Pad
+Name: Стефанов камень
+Description: В этом овраге есть священный камень. Янидорцы говорят, что в нем оставил след Стефан Пермский.
+Scene: Rift
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day3/Pad
+RequiredLocations:
+- Week1Day3EastBridge
+

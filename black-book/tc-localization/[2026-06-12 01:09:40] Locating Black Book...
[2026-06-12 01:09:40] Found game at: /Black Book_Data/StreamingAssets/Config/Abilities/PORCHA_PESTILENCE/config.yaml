@@ -1,0 +1,24 @@
+﻿Name: Моровая порча
+AbilityType: PORCHA_PESTILENCE
+TargetType: ENEMY
+Intention: BUFF
+Sprite: PORCHA_PESTILENCE
+Sound: event:/Abilities/PORCHA_PESTILENCE
+GoldCost: 6
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Decomposure
+  MinValue: 4
+  MaxValue: 4
+- EffectType: STATUS
+  StatusEffectType: Waste
+  MinValue: 8
+  MaxValue: 8
+  VisualEffect:
+    VisualEffectType: BITE
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 2
+    SkipReady: true
+

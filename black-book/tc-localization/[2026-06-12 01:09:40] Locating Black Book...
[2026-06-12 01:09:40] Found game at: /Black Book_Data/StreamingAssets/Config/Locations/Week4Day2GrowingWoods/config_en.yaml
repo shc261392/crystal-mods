@@ -1,0 +1,6 @@
+﻿Name: Overgrown Forest
+Description: The peasants can't tame the forest here. It grows wild as if it has no master.
+LevelConfig:
+  Battle:
+    Name: Road Chorts
+

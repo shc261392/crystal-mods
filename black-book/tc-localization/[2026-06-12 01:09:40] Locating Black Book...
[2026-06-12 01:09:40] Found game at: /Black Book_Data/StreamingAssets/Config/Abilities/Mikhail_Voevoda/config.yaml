@@ -1,0 +1,20 @@
+﻿Name: Михаил Грозный Воевода
+AbilityType: MIKHAIL_VOEVODA
+Upgrade: MIKHAIL_VOEVODA_UP
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: MIKHAIL_VOEVODA
+GoldCost: 16
+Effects:
+- EffectType: DEFENCE_WITH_DOUBLE_ON_STATUS
+  MinValue: 5
+  MaxValue: 5
+  StatusEffectType: Cursed
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal2OrderWhite
+    MissTrigger: Seal2OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true

@@ -1,0 +1,6 @@
+﻿Name: 殿门
+Description: 以前的童话说，沃佳诺伊宫殿的大门是用水晶做的，其实根本不是那样。
+LevelConfig:
+  Battle:
+    Name: 大殿门口
+

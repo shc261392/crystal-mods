@@ -1,0 +1,6 @@
+﻿Name: Gorodishensky Ravine
+Description: It's said that the Chud' lived here. A dangerous and unholy place. The ravines are death traps at night. Falling into one will surely leave you crippled.
+LevelConfig:
+  Battle:
+    Name: Ravine Demons
+

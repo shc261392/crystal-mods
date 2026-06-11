@@ -1,0 +1,6 @@
+﻿Name: 物置
+Description: ここはゴルベツのような場所。使えるものが何か見つかるかもしれない。
+LevelConfig:
+  Battle:
+    Name: 地下室のチョルト
+

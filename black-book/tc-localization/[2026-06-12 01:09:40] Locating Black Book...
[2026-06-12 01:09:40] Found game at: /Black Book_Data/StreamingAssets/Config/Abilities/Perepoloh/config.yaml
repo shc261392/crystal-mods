@@ -1,0 +1,18 @@
+﻿Name: Переполох
+AbilityType: PEREPOLOH
+Upgrade: PEREPOLOH_UP
+TargetType: ALL_ENEMIES
+Intention: ATTACK
+Sprite: Perepoloh
+GoldCost: 14
+Effects:
+- MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.0500000007
+    SkipReady: true
+

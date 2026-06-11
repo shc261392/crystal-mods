@@ -1,0 +1,7 @@
+﻿Name: 깊은 자국
+Description: 수레가 깊은 바퀴 자국을 남기고 갔다. 짐을 얼마나 많이 실은 걸까?
+ShortQuestDescr: 농부에게 짐 돌려주기
+LevelConfig:
+  Battle:
+    Name: 가득 찬 수레
+

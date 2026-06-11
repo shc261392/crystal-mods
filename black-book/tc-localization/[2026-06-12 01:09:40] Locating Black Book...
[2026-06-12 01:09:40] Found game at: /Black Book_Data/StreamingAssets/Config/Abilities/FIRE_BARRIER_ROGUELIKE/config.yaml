@@ -1,0 +1,24 @@
+﻿Name: Огненный барьер
+AbilityType: FIRE_BARRIER
+TargetType: ENEMY
+Intention: DEBUFF
+Sprite: FIRE_BARRIER
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Spikes
+  MinValue: 6
+  MaxValue: 6
+- EffectType: STATUS
+  StatusEffectType: DefenceKeep
+  MinValue: 3
+  MaxValue: 3
+- EffectType: DEFENCE
+  MinValue: 33
+  MaxValue: 33
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+

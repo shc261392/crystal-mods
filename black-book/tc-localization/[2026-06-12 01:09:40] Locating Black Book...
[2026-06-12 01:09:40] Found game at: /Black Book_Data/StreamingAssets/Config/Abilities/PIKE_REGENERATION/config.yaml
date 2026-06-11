@@ -1,0 +1,19 @@
+﻿Name: Память о семерых
+AbilityType: PIKE_REGENERATION
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: PIKE_REGENERATION
+GoldCost: 5
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Regeneration
+  MinValue: 14
+  MaxValue: 14
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

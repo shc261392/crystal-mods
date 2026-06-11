@@ -1,0 +1,9 @@
+﻿Name: 개의 개울
+Description: 이 개울은 뭔가 심상치 않으며, 종종 사건이 벌어지곤 한다. 마을의 농부가 이 개울을 확인하고 정령이 있다면 처리해 달라고 부탁했다.
+ShortQuestDescr: 개울 사술
+LevelConfig:
+  Battle:
+    Name: 개울 추디
+  BattleAlternative:
+    Name: 개울 추디
+

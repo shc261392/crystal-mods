@@ -1,0 +1,8 @@
+﻿Name: 東の森
+Description: コルヴァ川の旧川床近くにある森には名前がついておらず、「東の森」とか「東の木立」などと、みんな思い思いに呼んでいる。
+LevelConfig:
+  Battle:
+    Name: サモワール商人
+  BattleAlternative:
+    Name: きっと役に立つ
+

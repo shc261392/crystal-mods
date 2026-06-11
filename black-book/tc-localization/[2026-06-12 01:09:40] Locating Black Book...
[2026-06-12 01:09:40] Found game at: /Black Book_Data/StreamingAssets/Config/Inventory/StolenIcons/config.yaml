@@ -1,0 +1,10 @@
+﻿Name: Украденные иконки
+InventoryItemName: StolenIcons
+Flavour: Кажется, образки смотрят с укором. Всего лишь игра света...
+Sprite: StolenIcons
+Cost: 60
+Effects:
+- Value: 1
+  Type: AbilityOnBattleStart
+  StatusName: STOLEN_ICONS_WASTE
+

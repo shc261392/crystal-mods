@@ -1,0 +1,49 @@
+﻿IdName: Week6Day1Passage
+Name: Коридор
+Description: Низкие потолки у этого подвала, а все равно просторнее любого голбца.
+Scene: PrisonReExploration
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  Battle:
+    Name: Рогатые сторожа
+    Enemies:
+    - Type: DemonPuzzle1
+      LevelSpawnPointType: EnemyCenter
+      HealthOverride: 10
+    - Type: DemonPuzzle1
+      HealthOverride: 8
+    NoShuffle: true
+    PuzzleDeck:
+    - KILA
+    - GRYJA
+    - PEREPOLOH
+    - GRYJA
+    - KILA
+    - KILA
+    - KILA
+    - KILA
+    - KILA
+    - KILA
+    - KILA
+    - KILA
+    - KEY_TONGUE
+    - DEMON_WIZARD
+    - RUDA
+    - RABA
+    - RABA
+    PuzzleManaOverride:
+    - 2
+    - 1
+    PuzzleHandOverride:
+    - 4
+    - 3
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day1/Passage/Intro
+  CameraOverride: CMHallCamera
+  MusicOverride: event:/Music/ExploreDark
+RequiredLocations:
+- Week6Day1Prison
+HideBook: true
+

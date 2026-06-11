@@ -1,0 +1,7 @@
+﻿Name: 버려진 교회
+Description: 이곳은 한때 신성한 곳이었다. 구교도들의 성지였을까?
+ShortQuestDescr: 교회 확인하기
+LevelConfig:
+  Battle:
+    Name: 동전 초르트
+

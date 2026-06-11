@@ -1,0 +1,29 @@
+﻿IdName: Week5Day1VilgortChurchFight
+Name: Венчание Николая
+LocationType: COMBAT
+Scene: ChurchVilgortYard
+LevelConfig:
+  Battle:
+    Name: Дока на доку
+    Enemies:
+    - Type: Alexander2
+      LevelSpawnPointType: EnemyCenter
+    Barks:
+    - Id: Battle/AlexanderChurch/First
+      HealthPercent: 0.800000012
+      TargetUnit: Alexander2
+    - Id: Battle/AlexanderChurch/Second
+      HealthPercent: 0.400000006
+      TargetUnit: Alexander2
+    EnemyKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/BattleBoss2
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day1/VilgortChurch/AlexanderIntro
+    Outro: TextQuest/Week5/Day1/VilgortChurch/AlexanderOutro
+  Exploration: Week5Day1VilgortChurchFight
+  CinematicIntro: true
+  MusicOverride: event:/Music/ExploreDark
+  NoExplorerSpawn: true
+

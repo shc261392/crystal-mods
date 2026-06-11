@@ -1,0 +1,6 @@
+﻿Name: ポクチャ村
+Description: 花嫁の様子を見ておこう。昨日の出来事のあと、どうしているのだろう。
+LevelConfig:
+  Battle:
+    Name: 暴徒
+

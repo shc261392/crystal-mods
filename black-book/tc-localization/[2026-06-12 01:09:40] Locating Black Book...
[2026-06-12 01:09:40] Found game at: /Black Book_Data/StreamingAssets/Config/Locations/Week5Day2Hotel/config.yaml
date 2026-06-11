@@ -1,0 +1,18 @@
+﻿IdName: Week5Day2Hotel
+Name: Гостиный двор
+Description: Тут живет тот мужик, который истории про нечисть собирает.
+ShortQuestDescr: Рассказать побывальщинку ученому
+Scene: PoliceStation
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day2/Hotel/Intro
+  CameraOverride: CMStreetCamera3
+  DialogueCameraOverride: CMDialogueCameraStreet
+  MusicOverride: event:/Music/ExploreLight
+LightingType: EVENING
+RequiredLocations:
+- Week5Day2SoborStreet
+Secondary: Week5Day2Hotel
+OnomastikonItems:
+- Onomastikon/Encyclopedia/4
+

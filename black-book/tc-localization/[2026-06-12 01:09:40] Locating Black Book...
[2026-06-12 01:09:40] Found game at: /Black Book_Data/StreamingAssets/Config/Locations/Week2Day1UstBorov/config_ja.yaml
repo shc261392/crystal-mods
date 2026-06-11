@@ -1,0 +1,6 @@
+﻿Name: ウスチ＝ボロフスク村
+Description: 製塩所のある村。労働者の家族と所長はここに住んでいる。
+LevelConfig:
+  Battle:
+    Name: 村はずれのチョルト
+

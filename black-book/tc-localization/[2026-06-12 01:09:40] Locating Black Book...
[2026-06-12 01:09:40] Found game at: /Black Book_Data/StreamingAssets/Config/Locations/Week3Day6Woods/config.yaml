@@ -1,0 +1,32 @@
+﻿IdName: Week3Day6Woods
+Name: Туманный овраг
+Description: Не вижу отсюда ничего. Что там скрывается в тумане? Кажется, тень какая-то промелькнула...
+ShortQuestDescr: По следам оборотней
+Scene: Pits
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Колдун-змеевик
+    Enemies:
+    - Type: SnakeSorcerer
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day6/Woods/Intro
+    Outro: TextQuest/Week3/Day6/Woods/Outro
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 2
+    PossiblePlayers:
+    - Zmeevik
+    DialogueFoolWin: TextQuest/Week3/Day6/Woods/Outro
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+  MixerSnapshot: snapshot:/Forest
+RequiredLocations:
+- Week3Day6Hunters
+Secondary: Week3Day6Woods
+OnomastikonItems:
+- Onomastikon/Tales/19
+

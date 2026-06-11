@@ -1,0 +1,4 @@
+﻿Unique: true
+Name: Каменные травы
+Description: За каждый использованный предмет получить {Duration} <sprite name="Defence">
+Sprite: StatusBlessed

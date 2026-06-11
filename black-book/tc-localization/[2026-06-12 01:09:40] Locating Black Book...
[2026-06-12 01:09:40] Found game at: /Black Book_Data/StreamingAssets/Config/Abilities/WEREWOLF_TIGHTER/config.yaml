@@ -1,0 +1,16 @@
+﻿Name: Вместе крепче
+AbilityType: WEREWOLF_TIGHTER
+TargetType: ALL_ALLIES
+Sprite: WEREWOLF_TIGHTER
+Sound: event:/Units/Werewolf/WEREWOLF_TIGHTER
+GoldCost: 6
+Effects:
+- EffectType: HEAL
+  MinValue: 20
+  MaxValue: 20
+  VisualEffect:
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 0.5
+

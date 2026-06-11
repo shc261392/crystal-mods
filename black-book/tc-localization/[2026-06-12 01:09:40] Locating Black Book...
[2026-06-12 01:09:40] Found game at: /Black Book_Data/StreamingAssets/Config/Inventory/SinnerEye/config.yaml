@@ -1,0 +1,11 @@
+﻿Name: Глаз грешника
+InventoryItemName: SinnerEye
+Flavour: Говорят, его бисяки и растащили по всему пеклу за его-то прегрешения!
+Sprite: SinnerEye
+Cost: 100
+Effects:
+- Value: 3
+  Type: AdditionalDamage
+- Value: 3
+  Type: AdditionalSins
+

@@ -1,0 +1,20 @@
+﻿Name: Укус жвалами
+AbilityType: STING_BITE
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: STING_BITE
+Effects:
+- MinValue: 7
+  MaxValue: 7
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  RepeatCount: 2
+- EffectType: STATUS
+  StatusEffectType: Poison
+  MinValue: 2
+  MaxValue: 2
+

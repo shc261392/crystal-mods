@@ -1,0 +1,10 @@
+Name: MIKHAIL_VOEVODA
+SkillName: AbilityMIKHAIL_VOEVODA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - RoguelikeHelpOfSaints1
+SpriteOffsetX: -48
+SpriteOffsetY: -48
+Effects:
+- Type: AbilityUnlock
+  StringData: MIKHAIL_VOEVODA

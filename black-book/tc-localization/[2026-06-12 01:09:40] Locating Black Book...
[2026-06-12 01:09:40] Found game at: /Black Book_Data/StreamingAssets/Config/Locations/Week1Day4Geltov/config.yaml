@@ -1,0 +1,13 @@
+﻿IdName: Week1Day4Geltov
+Name: Желтовские поселения
+Description: Рядом с Пянтегом среди лесов и рощиц выросло много деревень и деревушек. Видимо, место тут хорошее.
+ShortQuestDescr: Проверить петровские поля
+Scene: Fields
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day4/Geltov
+RequiredLocations:
+- Week1Day4Pyanteg
+Secondary: Week1Day4Geltov
+

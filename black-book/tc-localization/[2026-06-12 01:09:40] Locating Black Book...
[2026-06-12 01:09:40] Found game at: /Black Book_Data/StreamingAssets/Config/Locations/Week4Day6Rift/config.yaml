@@ -1,0 +1,18 @@
+﻿IdName: Week4Day6Rift
+Name: Непроглядный туман
+Description: Вон там фигура, среди дымки.
+Scene: PoludSideOverview
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark2
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day6/Rift/Intro
+  Exploration: Week4Day6Rift
+  CameraOverride: CMQuestCamera1
+  NoExplorerSpawn: true
+LightingType: FOG_2
+RequiredLocations:
+- Week4Day6TallTrees
+OnomastikonItems:
+- Onomastikon/Tales/52
+

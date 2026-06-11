@@ -1,0 +1,80 @@
+StartingStuff: # Day 0
+  UnlockAllAbilitiesFromSeal: false
+  StartingMoney: 10
+#  Ally: DedEgor
+#  StartingItems:
+#    - Type: DeadManSpindle
+#      Quantity: 1
+#    - Type: HeadSnake
+#      Quantity: 1
+#    - Type: HeadWorm
+#      Quantity: 1
+  StartingOnomasticonItems:
+    - Onomastikon/Encyclopedia/6
+    - Onomastikon/Encyclopedia/49
+    - Onomastikon/Encyclopedia/47
+    - Onomastikon/Tales/29
+    - Onomastikon/Tales/7
+  StartingOrders:
+    - URAZI
+    - AVDELAI
+    - AVDELAI
+    - URAZI
+    - URAZI
+    - AVDELAI
+    - SKORCHIT
+    - VARAHAIL
+    - SKORCHIT
+  StartingKeys:
+    - RABA
+    - RABA
+    - RUDA
+    - IGLA
+OrderDrawPerTurn: 4
+KeyDrawPerTurn: 2
+OrderCastPerTurn: 2
+KeyCastPerTurn: 1
+InventorySlots: 3
+#InitialLuaVariables:
+#  Week7Day3DeclinedMarrySatan: true
+#  Week7Day3AgreedMarrySatan: true
+ChapterToEvilSinValue:
+  1: 15
+  2: 40
+  3: 70
+  4: 100
+  5: 160
+  6: 200
+  7: 250
+ChapterToGoodSinValue:
+  1: 5
+  2: 10
+  3: 25
+  4: 50
+  5: 80
+  6: 130
+  7: 130
+HellGatesZnatkostCount: 13
+ExplorationAssetName: PlayerExploration
+ExperienceLevelThresholds:
+  - 0
+  - 1000
+  - 2000
+  - 3000
+  - 4000
+  - 6000
+  - 10000
+  - 14000
+  - 18000
+  - 22000
+  - 26000
+  - 30000
+  - 34000
+  - 40000
+  - 46000
+  - 52000
+  - 58000
+  - 64000
+  - 70000
+  - 80000
+HealthPerLevel: 5

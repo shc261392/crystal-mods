@@ -1,0 +1,8 @@
+﻿Name: Молва I
+SkillName: Rumor1
+Sprite: Rumor1Skill
+Description: Крестьяне приносят на {CalculatedEffect}<sprite name="Rouble"> больше в своих гостинцах
+Effects:
+- Value: 10
+  Type: AdditionalMoney
+

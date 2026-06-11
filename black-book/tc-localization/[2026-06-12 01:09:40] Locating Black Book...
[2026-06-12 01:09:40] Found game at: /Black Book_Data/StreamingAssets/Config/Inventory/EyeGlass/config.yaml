@@ -1,0 +1,10 @@
+Name: Стеклянный глаз
+InventoryItemName: EyeGlass
+Type: Artefact
+Flavour: На Анюшку-кривушку кто-то чё-то бросил, тожно без глаза
+Sprite: IconEyeGlass
+Expendable: false
+Cost: 300
+Effects:
+  - Value: 1
+    Type: AdditionalFoolLook 

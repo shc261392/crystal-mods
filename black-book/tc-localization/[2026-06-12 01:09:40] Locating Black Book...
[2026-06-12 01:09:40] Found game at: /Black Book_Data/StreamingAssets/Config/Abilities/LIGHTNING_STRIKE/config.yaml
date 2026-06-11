@@ -1,0 +1,17 @@
+﻿Name: Удар молнией
+AbilityType: LIGHTNING_STRIKE
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: LIGHTNING_STRIKE
+GoldCost: 10
+Effects:
+- MinValue: 7
+  MaxValue: 7
+  VisualEffect:
+    VisualEffectType: KILA
+    SpellTrigger: Attack
+    MissTrigger: Attack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  RepeatCount: 5
+

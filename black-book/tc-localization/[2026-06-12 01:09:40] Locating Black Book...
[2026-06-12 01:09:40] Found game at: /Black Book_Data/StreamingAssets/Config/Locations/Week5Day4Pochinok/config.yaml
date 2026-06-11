@@ -1,0 +1,13 @@
+﻿IdName: Week5Day4Pochinok
+Name: Полевской починок
+Description: В этой нарождающейся деревне стал шалить леший. Просит много бражки и украл соху у крестьянина.
+ShortQuestDescr: Разузнать о пропавшей курашимке
+Scene: Village2
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day4/Pochinok/Intro
+RequiredLocations:
+- Week5Day4BigField
+Secondary: Week5Day4Pochinok
+

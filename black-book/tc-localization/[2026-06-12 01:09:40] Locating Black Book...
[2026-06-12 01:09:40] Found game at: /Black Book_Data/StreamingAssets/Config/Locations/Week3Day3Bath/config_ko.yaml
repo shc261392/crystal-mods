@@ -1,0 +1,6 @@
+﻿Name: 반야
+Description: 오늘 저녁에 집회가 있다. 반야에 불을 떼야겠다. 내가 직접 하는 게 좋겠지.
+LevelConfig:
+  Battle:
+    Name: 반야 초르트
+

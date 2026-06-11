@@ -1,0 +1,16 @@
+﻿Name: Коготь в выси
+AbilityType: DEMON_FLY_ATTACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: DEMON_FLY_ATTACK
+GoldCost: 3
+Effects:
+- MinValue: 7
+  MaxValue: 14
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+

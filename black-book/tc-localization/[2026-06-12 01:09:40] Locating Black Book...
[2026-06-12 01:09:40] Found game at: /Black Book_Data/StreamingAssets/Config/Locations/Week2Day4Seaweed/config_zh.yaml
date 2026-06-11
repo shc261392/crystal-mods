@@ -1,0 +1,6 @@
+﻿Name: 水草丛
+Description: 这个地方还真的就跟树林似的。
+LevelConfig:
+  Battle:
+    Name: 浑水精怪
+

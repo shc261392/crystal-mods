@@ -1,0 +1,6 @@
+﻿Name: Black Riverbank
+Description: This place is called Black Riverbank for a reason. I should be careful.
+LevelConfig:
+  Battle:
+    Name: Riverbank Demons
+

@@ -1,0 +1,12 @@
+﻿IdName: Week5Day3Kozyr
+Name: Река Козырь
+Description: Через эту реку проложили деревянный мост. Какой-то праздник даже собрали, было дело.
+Scene: River
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day3/Kozyr/Intro
+  CameraOverride: CMQuestCamera2
+RequiredLocations:
+- Week5Day3Forests
+

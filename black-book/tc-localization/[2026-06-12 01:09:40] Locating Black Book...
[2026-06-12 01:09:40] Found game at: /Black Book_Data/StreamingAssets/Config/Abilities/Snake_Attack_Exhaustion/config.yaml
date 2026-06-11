@@ -1,0 +1,18 @@
+﻿Name: Истощающий укус
+AbilityType: SNAKE_ATTACK_EXHAUSTION
+TargetType: ENEMY
+Intention: DEBUFF
+Sprite: SNAKE_ATTACK_POISON
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  StatusEffectType: Cursed
+

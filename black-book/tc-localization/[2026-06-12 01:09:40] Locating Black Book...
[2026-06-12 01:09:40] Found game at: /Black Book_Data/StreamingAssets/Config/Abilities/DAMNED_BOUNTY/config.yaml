@@ -1,0 +1,16 @@
+﻿Name: Щедроты окаянного
+AbilityType: DAMNED_BOUNTY
+TargetType: ENEMY
+Sprite: DAMNED_BOUNTY
+Effects:
+- EffectType: GIVE_MONEY
+  MinValue: 100
+  MaxValue: 100
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

@@ -1,0 +1,21 @@
+﻿AssetName: SnakeGaduka
+Health: 16
+HealthRandomAdd: 3
+Mana: 4
+Initiative: 1
+MoneyMin: 2
+MoneyMax: 3
+Experience: 125
+UnitAI:
+  AISpecialAbilities:
+  - AbilityType: SNAKE_ATTACK_POISON
+    DecisionType: DOES_NOT_HAVE_STATUS
+    TargetType: PLAYER
+    SpecialData: Poison
+  AIAbilities:
+  - AbilityType: SNAKE_ATTACK
+    TargetType: ENEMY
+    ConsequitiveRounds: 2
+  CastingType: RANDOM
+Name: Змея-гадюка
+

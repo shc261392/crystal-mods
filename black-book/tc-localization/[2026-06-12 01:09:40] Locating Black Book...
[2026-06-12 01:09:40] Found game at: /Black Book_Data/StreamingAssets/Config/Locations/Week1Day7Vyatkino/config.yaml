@@ -1,0 +1,22 @@
+﻿IdName: Week1Day7Vyatkino
+Name: Деревенское кладбище
+Description: Кладбище старинное – уж им и пользоваться перестали. Говорят, хоронили тут еще в незапамятные времена. Значит, место сильное. Может, какой предмет полезный удастся найти?
+ShortQuestDescr: Посетить вяткинское кладбище
+Scene: Cemetery
+LevelConfig:
+  MusicOverride: event:/Music/ExploreDark
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Черти Маньки-икотницы
+    Enemies:
+    - Type: SamovarDemon
+    - Type: DemonPoison
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day7/Vyatkino
+RequiredLocations:
+- Week1Day7CherdTrakt
+Secondary: Week1Day7Vyatkino
+

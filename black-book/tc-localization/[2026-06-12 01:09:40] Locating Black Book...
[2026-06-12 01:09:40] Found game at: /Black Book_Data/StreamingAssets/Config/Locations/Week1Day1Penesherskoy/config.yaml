@@ -1,0 +1,11 @@
+﻿IdName: Week1Day1Penesherskoy
+Name: Овраг Пенешерской
+Description: 'Про этот овраг молва идет среди чердынских травниц: говорят, там можно с наговорами добрых трав набрать. Если, конечно, собиратель знаток.'
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Herb/Break
+RequiredLocations:
+- Week1Day1BigichiWoods
+

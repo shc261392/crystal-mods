@@ -1,0 +1,3 @@
+﻿Name: <sprite name="Defence"> 획득 시 피해
+Description: <sprite name="Defence"> 획득 시 무작위 적에게 {Duration} <sprite name="Damage">
+

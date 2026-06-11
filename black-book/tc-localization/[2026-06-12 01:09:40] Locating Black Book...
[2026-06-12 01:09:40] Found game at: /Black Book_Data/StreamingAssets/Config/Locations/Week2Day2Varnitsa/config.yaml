@@ -1,0 +1,14 @@
+﻿IdName: Week2Day2Varnitsa
+Name: Варница
+Description: В варнице кипятят рассол, чтобы воду выпарить, а соляной кристалл оставить.
+Scene: SaltVarnitsa
+LevelConfig:
+  MusicOverride: event:/Music/ExploreDark
+  MixerSnapshot: snapshot:/Church
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day2/Varnitsa
+RequiredLocations:
+- Week2Day2LarDay
+OnomastikonItems:
+- Onomastikon/Encyclopedia/25
+

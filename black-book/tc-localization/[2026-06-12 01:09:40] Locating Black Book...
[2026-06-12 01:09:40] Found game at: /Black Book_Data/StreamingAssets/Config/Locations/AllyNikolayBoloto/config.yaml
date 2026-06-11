@@ -1,0 +1,14 @@
+﻿IdName: AllyNikolayBoloto
+Name: Болото Касьяна
+Description: На этом смурном болоте выстроила свою избушку та баба, что мы встретили по дороге в слободу.
+ShortQuestDescr: Расспросить юродивую
+Scene: Marshes2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/AllyNikolay/Boloto/Intro
+  MusicOverride: event:/Music/ExploreDark
+RequiredLocations:
+- AllyNikolayKishkonog
+Secondary: AllyNikolayBoloto
+

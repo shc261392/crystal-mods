@@ -1,0 +1,1 @@
+Name: Понимание нечистиSkillName: RoguelikeEvilUnderstandSprite: EvilUnderstandSkillDescription: Возможность выбора из 4 слов  после битвыRequiredSkills:- RoguelikeFierceWords1Effects:- Value: 1  Type: AdditionalWordBattleReward

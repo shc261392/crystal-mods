@@ -1,0 +1,10 @@
+﻿IdName: Week1Day5OldBarns
+Name: Старые овины
+Description: Раньше тут все сено хранили да зерно молотили. А потом, лет тридцать назад, много тут овинов погорело. Решили, что место плохое. Теперь овины-то восточнее ставят, а эти все заброшенными стоят.
+Scene: Ovin
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day5/OldBarns
+RequiredLocations:
+- Week1Day5KolvaBridge
+

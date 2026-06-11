@@ -1,0 +1,10 @@
+Name: AMEN
+SkillName: AbilityAMEN
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityRABA
+SpriteOffsetX: -25
+SpriteOffsetY: -17
+Effects:
+- Type: AbilityUnlock
+  StringData: AMEN

@@ -1,0 +1,6 @@
+﻿Name: 저장고
+Description: 소금을 보관하는 저장소. 이곳의 소금은 나중에 배에 실어 노브고로드의 장터로 보낸다...
+LevelConfig:
+  Battle:
+    Name: 저장고 정령
+

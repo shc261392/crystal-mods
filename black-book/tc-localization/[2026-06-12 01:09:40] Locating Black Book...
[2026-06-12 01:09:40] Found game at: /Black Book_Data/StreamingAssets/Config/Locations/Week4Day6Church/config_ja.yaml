@@ -1,0 +1,7 @@
+﻿Name: 打ち捨てられた教会
+Description: かつて、ここは聖なる場所だった。古い異教徒たちのための場所だったのだろうか？
+ShortQuestDescr: 教会を調べる
+LevelConfig:
+  Battle:
+    Name: コインのチョルト
+

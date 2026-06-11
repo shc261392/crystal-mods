@@ -1,0 +1,18 @@
+﻿Name: Коркуша +
+AbilityType: KORKUSHA_UP
+TargetType: SELF
+Intention: BUFF
+Description: "Получите {MinValue} здоровья, когда противник теряет свое в любом количестве \nПродолжительность: {MaxValue} ходов."
+AbilitySpellType: STATUS
+Sprite: Korkusha
+GoldCost: 13
+Effects:
+- EffectType: STATUS
+  MinValue: 2
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+  StatusEffectType: Vampirism
+

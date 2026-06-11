@@ -1,0 +1,9 @@
+Name: LOCK
+SkillName: AbilityLOCK
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+SpriteOffsetX: 22
+SpriteOffsetY: 32
+Effects:
+- Type: AbilityUnlock
+  StringData: LOCK

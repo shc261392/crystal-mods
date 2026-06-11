@@ -1,0 +1,7 @@
+﻿Name: Bondugov Fields
+Description: The snake flew south, to the fields. I should hurry!
+ShortQuestDescr: Catch the Snake
+LevelConfig:
+  Battle:
+    Name: Fiery Snake
+

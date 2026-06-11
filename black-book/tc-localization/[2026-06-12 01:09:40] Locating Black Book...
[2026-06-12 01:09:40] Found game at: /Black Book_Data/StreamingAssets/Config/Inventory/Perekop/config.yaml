@@ -1,0 +1,12 @@
+﻿Name: Перекоп
+InventoryItemName: Perekop
+Type: Herb
+Flavour: Позволяет прочесть дополнительный ключ
+Sprite: Perekop
+Expendable: true
+Cost: 56
+Effects:
+- Value: 1
+  Type: Status
+  StatusName: ArticulacyKeys
+

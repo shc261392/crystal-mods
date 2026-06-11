@@ -1,0 +1,21 @@
+﻿IdName: Week1Day5KolvaBridge
+Name: Старый мост
+Description: Мосты соединяют два берега, поэтому они – тоже эдакая граница миров. А на границах миров, известно, любит всяческая нечисть селиться.
+ShortQuestDescr: Поймать черта под мостом
+Scene: Forest_Bridge_2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Черти под мостом
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonFierce
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day5/KolvaBridge
+    Outro: TextQuest/Week1/Day5/KolvaBridgeOutro
+RequiredLocations:
+- Week1Day5Bereg
+

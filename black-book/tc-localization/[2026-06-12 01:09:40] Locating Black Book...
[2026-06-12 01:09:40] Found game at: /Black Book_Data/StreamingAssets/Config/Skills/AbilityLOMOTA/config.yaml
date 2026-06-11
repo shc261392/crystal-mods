@@ -1,0 +1,10 @@
+Name: LOMOTA
+SkillName: AbilityLOMOTA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityDEAD_MAN_ROGUELIKE
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: LOMOTA

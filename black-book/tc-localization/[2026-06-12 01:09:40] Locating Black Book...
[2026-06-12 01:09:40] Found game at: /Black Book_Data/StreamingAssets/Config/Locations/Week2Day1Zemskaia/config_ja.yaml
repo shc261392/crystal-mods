@@ -1,0 +1,6 @@
+﻿Name: 宿駅
+Description: 宿駅は県の各所にある。休憩して馬を交換する場所だ。
+LevelConfig:
+  Battle:
+    Name: スセートコ
+

@@ -1,0 +1,11 @@
+Name: Золотая баба
+InventoryItemName: Goddess2
+Type: Artefact
+Flavour: Мы божков этих тут же отдавали городским, или выбрасывали их подальше, как находили-то. Плохая это примета.
+Sprite: Goddess2
+Expendable: false
+Cost: 200
+Effects:
+  - Value: 2
+    Type: StatusOnBattleStart
+    StatusName: Prayer

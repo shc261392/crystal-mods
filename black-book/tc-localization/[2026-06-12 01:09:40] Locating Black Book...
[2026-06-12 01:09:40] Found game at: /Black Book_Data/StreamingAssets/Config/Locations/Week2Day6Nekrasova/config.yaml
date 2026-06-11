@@ -1,0 +1,10 @@
+﻿IdName: Week2Day6Nekrasova
+Name: Деревня Некрасово
+Description: В этой деревне жил мужик, которого водяной поймал коров пасти. Тут можно за него молебен отслужить.
+ShortQuestDescr: Заказать молебен
+Scene: Village
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day6/Nekrasova
+Secondary: Week2Day6Nekrasova

@@ -1,0 +1,10 @@
+Name: RAZOIL_ROGUELIKE
+SkillName: AbilityRAZOIL_ROGUELIKE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityMOON_BROTHERS
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: RAZOIL_ROGUELIKE

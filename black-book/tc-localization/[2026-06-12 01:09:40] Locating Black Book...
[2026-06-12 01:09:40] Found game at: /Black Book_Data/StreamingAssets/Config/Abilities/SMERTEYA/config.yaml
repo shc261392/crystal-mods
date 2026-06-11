@@ -1,0 +1,24 @@
+﻿Name: Смертея
+AbilityType: SMERTEYA
+Upgrade: SMERTEYA_UP
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: SMERTEYA
+GoldCost: 36
+Effects:
+- EffectType: DAMAGE_FIERCE
+  MinValue: 7
+  MaxValue: 7
+  NumericData: 3
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal3OrderBlack
+    MissTrigger: Seal3OrderBlack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+- EffectType: SIN
+  MinValue: 1
+  MaxValue: 1
+  ForceTarget: SELF
+

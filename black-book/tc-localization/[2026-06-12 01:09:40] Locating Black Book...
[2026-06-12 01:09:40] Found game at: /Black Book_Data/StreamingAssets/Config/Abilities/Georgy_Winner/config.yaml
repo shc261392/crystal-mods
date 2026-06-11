@@ -1,0 +1,20 @@
+﻿Name: Егорий Победоносец
+AbilityType: GEORGY_WINNER
+Upgrade: GEORGY_WINNER_UP
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: GEORGY_WINNER
+GoldCost: 12
+Effects:
+- EffectType: STATUS_SKLAD
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpell
+    MissTrigger: AttackSpell
+    WrapUpTime: 0.5
+  StatusEffectType: Blessed
+

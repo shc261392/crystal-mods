@@ -1,0 +1,518 @@
+RoguelikeRequiredLocation: WindmillExploration
+PlayerTurnWaitSec: 1.2
+FakePlayerTurnWaitSec: 1.2
+FirstEnemyTurnWaitSec: 2.0
+RitualTurnWaitSec: 2
+EnemyAbilityResolveWaitSec: 0.5
+PlayerAbilityResolveWaitSec: 0
+PlayerEffectWrapupBonus: 0.1
+AttackCameraEffectChance: 0.3
+BattleEntryCameraEnabled: false
+StatusesResolveMaxWaitSec: 3
+DialogueVoiceoverPlayDelay: 0.5
+DialogueTextPlayDelay: 3
+TooltipFingerXOffsetLeft: -220
+TooltipFingerXOffsetRight: 120
+MaxSavesAmountDefault: 20
+MaxSavesAmountConsole: 10
+SkipBattlePuzzleCount: 2
+SkipBattleRegularCount: 4
+SkipBattleNightmareCoeff: 2
+SocialMediaURL:
+  Steam: "https://store.steampowered.com/app/1138660/Black_Book"
+  Twitter: "https://twitter.com/playblackbook"
+  Facebook: "https://www.facebook.com/playblackbook"
+  Discord: "https://discord.gg/T9XjCyf"
+  Vk: "https://vk.com/themooseman"
+  Kickstarter: "https://www.kickstarter.com/projects/morteshka/black-book-an-rpg-rooted-in-slavic-mythology"
+  SteamWishlist: "https://store.steampowered.com/app/1138660/Black_Book"
+AnimationSpeeds:
+  - Value: 1.2
+    MixerSnapshot: snapshot:/Speedup1.2
+    Label: "1x"
+    SecondaryValue: 1
+  - Value: 1.5
+    MixerSnapshot: snapshot:/Speedup1.5
+    Label: "1.5x"
+    SecondaryValue: 1.1
+  - Value: 2
+    MixerSnapshot: snapshot:/Speedup2
+    Label: "2x"
+    SecondaryValue: 1.3
+  - Value: 3
+    MixerSnapshot: snapshot:/Speedup2
+    Label: "3x"
+    SecondaryValue: 1.4
+  - Value: 4
+    MixerSnapshot: snapshot:/Speedup2
+    Label: "4x"
+    SecondaryValue: 2
+LowQualityFog:
+  DownSampling: 4
+  Stepping: 6
+  SteppingNear: 7
+  Dithering: true
+  DitherStrength: 1.7
+  TextureUpdate: 0.4
+  FogUpdate: 4
+PostEffectSettings:
+  QualityToPostEffects:
+    - false
+    - false
+    - true
+    - true
+    - true
+DefaultGameSettings:
+  Quality: -1
+  PostEffectsEnabledInCustom: true
+  TextureQuality: 0
+  Brightness: 0
+  HardwareCursor: false
+  Language: 
+  VoiceLanguage: 
+  SoundMain: 100
+  SoundEffects: 100
+  SoundMusic: 100
+  SoundVoice: 100
+  PenSound: true
+  AutoDialogues: false
+  WriterSpeed: 85
+  AnimationSpeed: 2
+  ExpandedTargetSelection: false
+  PlayerSkin: 0
+  KeyboardHints: false
+  PlatformSettings:
+    Platforms:
+    - WindowsPlayer
+    UIScalePercent: 0
+PlatformGameSettings:  
+  - Platforms:
+    - IPhonePlayer
+    - Android
+    UIScalePercent: 0.8
+ActorNameToVolume:
+  PlayerFake: -8
+  SaltWorker2: -2
+MinUIScale: 0
+MaxUIScale: 0.8
+AutoMoonPhase: true
+AutoMoonPhases:
+  - MaxDay: 1
+    Type: FULL
+  - MaxDay: 4
+    Type: WANING_GIBBOUS
+  - MaxDay: 7
+    Type: LAST_QUARTER
+  - MaxDay: 10
+    Type: WANING_CRESCENT
+  - MaxDay: 15
+    Type: WAXING_CRESCENT
+  - MaxDay: 18
+    Type: FIRST_QUARTER
+  - MaxDay: 21
+    Type: WAXING_GIBBOUS
+  - MaxDay: 28
+    Type: FIRST_QUARTER
+  - MaxDay: 30
+    Type: WAXING_GIBBOUS
+  - MaxDay: 90
+    Type: FULL
+NoEffectEntryTags:
+  - Akulina_582_8
+  - Akulina_961_24
+  - AkulinaSpell_1208_31
+  - AkulinaSpell_1208_36
+  - AkulinaSpell_1208_4
+  - Alexander_287_7
+  - Alexander_511_18
+  - Alexander_511_3
+  - Alexander_520_2
+  - Andreyko_172_32
+  - Andreyko_172_40
+  - Anisia_852_12
+  - Anisia_852_18
+  - Anisia_852_5
+  - Anisia_852_9
+  - Anisia_892_25
+  - Anisia_892_34
+  - Anisia_892_36
+  - Anisia_892_43
+  - Bannik_347_13
+  - Bashkir_645_29
+  - Bashkir_645_40
+  - Bashkir_665_1
+  - BathBrideHuman_196_17
+  - BathBrideHuman_196_7
+  - Blacksmith_477_3
+  - Carpenter_570_1
+  - Carpenter_570_18
+  - Carpenter_570_20
+  - ChurchGuard_1013_6
+  - ChurchGuard_1017_3
+  - ChurchGuard_1023_1
+  - ChurchGuard_1023_9
+  - CitizenGirl02_636_22
+  - CrazyWoman_1304_11
+  - DarkBathBride_177_11
+  - DarkBathBride_177_13
+  - DarkBathBride_177_2
+  - DarkBathBride_177_5
+  - Death_1280_11
+  - Death_1280_78
+  - DedEgor_1030_23
+  - DedEgor_11_2
+  - DedEgor_1156_20
+  - DedEgor_1160_21
+  - DedEgor_230_1
+  - DedEgor_584_6
+  - Demon_234_26
+  - Drowner1_393_36
+  - Drowner2_424_31
+  - EvilPriest_1007_41
+  - EvilPriest_1007_45
+  - FatherEfrem_169_14
+  - FatherEfrem_169_30
+  - FireSnake_404_8
+  - FireSnake_524_9
+  - Galina_887_26
+  - Galina_887_40
+  - GatesOfHell_1250_10
+  - GatesOfHell_1250_11
+  - Harmonist_445_36
+  - Harmonist_458_1
+  - HarmonistWedding_590_47
+  - HouseSpirit_221_10
+  - HouseSpirit_289_17
+  - HouseSpirit_345_19
+  - HouseSpirit_345_20
+  - HouseSpirit_566_23
+  - HumanSkull_1333_3
+  - HumanSkull_162_1
+  - HumanSkullBag_1371_1
+  - HunterCh4_853_19
+  - IkotaGirl_145_19
+  - IkotaGirl_145_5
+  - Marfa_889_33
+  - Marfa_889_44
+  - Mermaid_355_1
+  - Mermaid_355_15
+  - Mermaid_355_17
+  - Mermaid_363_6
+  - Mermaid_388_10
+  - Mermaid_405_2
+  - MermaidPolud_675_4
+  - Mikolka_466_23
+  - NemzyaYoung_894_26
+  - NemzyaYoung_894_27
+  - NemzyaYoung_899_3
+  - Nikolay_124_54
+  - Nikolay_190_9
+  - Nikolay_79_11
+  - Nikolay_79_12
+  - NikolaySaved_691_11
+  - Ovinnik_971_21
+  - Pasechnik_443_4
+  - Peasant_429_13
+  - Peasant_429_7
+  - Peasant_455_1
+  - Peasant2_298_9
+  - Peasant2_317_35
+  - Peasant2_317_45
+  - Peasant2_438_11
+  - Peasant2_81_7
+  - Peasant2_86_10
+  - PeasantBoy_543_4
+  - PeasantBoy_668_14
+  - PeasantBoy_681_6
+  - PeasantCock_471_13
+  - PeasantGrayHat_553_17
+  - Player_1007_12
+  - Player_1007_17
+  - Player_1007_19
+  - Player_1007_20
+  - Player_1007_27
+  - Player_1007_33
+  - Player_1007_39
+  - Player_1007_49
+  - Player_1012_13
+  - Player_1012_14
+  - Player_1012_15
+  - Player_1012_23
+  - Player_1013_21
+  - Player_1015_10
+  - Player_1015_11
+  - Player_1015_12
+  - Player_1015_13
+  - Player_1015_15
+  - Player_1015_8
+  - Player_1023_11
+  - Player_1023_13
+  - Player_1023_15
+  - Player_1023_16
+  - Player_1023_17
+  - Player_1036_24
+  - Player_1036_7
+  - Player_1036_8
+  - Player_1036_9
+  - Player_1038_3
+  - Player_1038_7
+  - Player_1041_8
+  - Player_1048_20
+  - Player_1063_21
+  - Player_1063_8
+  - Player_1067_23
+  - Player_1069_20
+  - Player_1069_21
+  - Player_1069_22
+  - Player_1069_27
+  - Player_1071_23
+  - Player_1077_19
+  - Player_1077_23
+  - Player_1077_24
+  - Player_1080_10
+  - Player_1080_11
+  - Player_1080_36
+  - Player_1080_42
+  - Player_1080_43
+  - Player_1080_50
+  - Player_1080_51
+  - Player_1080_52
+  - Player_1080_53
+  - Player_1080_54
+  - Player_1080_55
+  - Player_1080_56
+  - Player_1080_9
+  - Player_1109_20
+  - Player_1121_7
+  - Player_1158_2
+  - Player_1169_52
+  - Player_1169_53
+  - Player_1169_54
+  - Player_1169_55
+  - Player_1186_5
+  - Player_1204_4
+  - Player_1208_41
+  - Player_1217_1
+  - Player_1223_6
+  - Player_124_43
+  - Player_1250_17
+  - Player_1250_21
+  - Player_1250_9
+  - Player_1266_5
+  - Player_1273_42
+  - Player_1273_43
+  - Player_128_17
+  - Player_1294_0
+  - Player_1294_1
+  - Player_1294_10
+  - Player_1294_11
+  - Player_1294_14
+  - Player_1294_2
+  - Player_1294_3
+  - Player_1294_4
+  - Player_1294_5
+  - Player_1294_6
+  - Player_1294_7
+  - Player_1294_8
+  - Player_1294_9
+  - Player_135_64
+  - Player_1353_17
+  - Player_138_27
+  - Player_1391_9
+  - Player_145_29
+  - Player_162_17
+  - Player_162_25
+  - Player_162_73
+  - Player_162_95
+  - Player_162_96
+  - Player_169_18
+  - Player_172_50
+  - Player_172_6
+  - Player_196_12
+  - Player_196_13
+  - Player_196_14
+  - Player_196_15
+  - Player_196_16
+  - Player_196_9
+  - Player_2_2
+  - Player_20_21
+  - Player_204_5
+  - Player_234_35
+  - Player_239_26
+  - Player_239_27
+  - Player_239_28
+  - Player_239_29
+  - Player_239_30
+  - Player_239_33
+  - Player_239_6
+  - Player_241_22
+  - Player_241_23
+  - Player_241_30
+  - Player_241_39
+  - Player_289_6
+  - Player_289_8
+  - Player_298_6
+  - Player_303_36
+  - Player_31_51
+  - Player_317_42
+  - Player_317_47
+  - Player_341_4
+  - Player_350_11
+  - Player_350_21
+  - Player_350_6
+  - Player_355_26
+  - Player_367_11
+  - Player_367_7
+  - Player_39_17
+  - Player_393_27
+  - Player_420_21
+  - Player_420_45
+  - Player_424_19
+  - Player_436_5
+  - Player_440_10
+  - Player_440_19
+  - Player_440_27
+  - Player_440_9
+  - Player_445_34
+  - Player_447_22
+  - Player_448_2
+  - Player_448_3
+  - Player_457_10
+  - Player_457_11
+  - Player_464_11
+  - Player_464_14
+  - Player_464_16
+  - Player_464_2
+  - Player_466_18
+  - Player_466_19
+  - Player_471_15
+  - Player_471_2
+  - Player_471_3
+  - Player_471_4
+  - Player_471_5
+  - Player_471_6
+  - Player_471_7
+  - Player_477_20
+  - Player_485_13
+  - Player_486_52
+  - Player_498_2
+  - Player_521_12
+  - Player_521_13
+  - Player_521_14
+  - Player_521_15
+  - Player_521_2
+  - Player_524_10
+  - Player_524_11
+  - Player_524_12
+  - Player_527_10
+  - Player_538_10
+  - Player_538_11
+  - Player_543_12
+  - Player_553_21
+  - Player_570_13
+  - Player_579_15
+  - Player_579_2
+  - Player_579_20
+  - Player_582_11
+  - Player_583_2
+  - Player_583_4
+  - Player_584_3
+  - Player_598_2
+  - Player_598_3
+  - Player_598_4
+  - Player_598_7
+  - Player_621_12
+  - Player_621_13
+  - Player_621_20
+  - Player_629_1
+  - Player_630_5
+  - Player_636_11
+  - Player_636_13
+  - Player_636_14
+  - Player_636_15
+  - Player_636_9
+  - Player_637_10
+  - Player_637_6
+  - Player_645_16
+  - Player_645_30
+  - Player_645_31
+  - Player_645_32
+  - Player_645_33
+  - Player_645_34
+  - Player_645_36
+  - Player_658_2
+  - Player_664_14
+  - Player_664_7
+  - Player_665_10
+  - Player_675_17
+  - Player_675_3
+  - Player_684_10
+  - Player_684_18
+  - Player_684_2
+  - Player_688_16
+  - Player_691_12
+  - Player_75_11
+  - Player_81_10
+  - Player_831_6
+  - Player_831_8
+  - Player_831_9
+  - Player_852_6
+  - Player_852_7
+  - Player_868_4
+  - Player_891_8
+  - Player_899_13
+  - Player_899_22
+  - Player_899_24
+  - Player_899_4
+  - Player_924_63
+  - Player_953_29
+  - Player_971_7
+  - Player_975_11
+  - Player_976_11
+  - Player_983_22
+  - Player_998_18
+  - Policeman_1012_19
+  - Priest_64_9
+  - Proshka_1184_28
+  - Proshka_1375_6
+  - PumpWorker_335_20
+  - Raven_850_10
+  - Raven_850_14
+  - Raven_850_2
+  - Raven_850_4
+  - Raven_869_27
+  - Raven_910_2
+  - Raven_910_40
+  - Raven2_1204_30
+  - Raven2_1348_1
+  - Savely_1041_1
+  - Savely_1048_14
+  - Shepard_885_33
+  - Shepard_885_34
+  - Shepard_924_67
+  - SickGirl_303_3
+  - Sitri_1273_55
+  - Sitri_1280_80
+  - Skitnik_370_14
+  - SohaLeshy_1069_25
+  - SohaLeshyPesant1_1071_24
+  - SohaLeshyPesant2_1071_17
+  - Solevar_498_11
+  - TkachihaThrone_163_8
+  - Vakul_420_60
+  - Vakul_486_34
+  - Werewolf_664_1
+  - Werewolf_664_10
+  - Werewolf_664_12
+  - Werewolf_664_19
+  - Werewolf_664_23
+  - Werewolf_953_27
+  - WolfCub_664_13
+  - WolfCub_664_2
+  - WolfCub_664_21
+  - WolfTurned_684_1
+  - WolfTurned_684_15
+  - WolfTurned_684_23
+  - WolfTurned_684_24
+  - WolfTurned_684_7
+  - WolfTurned_684_8

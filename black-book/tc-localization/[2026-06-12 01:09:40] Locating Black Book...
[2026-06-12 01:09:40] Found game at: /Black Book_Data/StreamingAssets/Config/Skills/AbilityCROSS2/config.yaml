@@ -1,0 +1,8 @@
+Name: CROSS2
+SkillName: AbilityCROSS2
+Sprite: ConfusedDirectionsSkill
+SpriteOffsetX: -39 
+SpriteOffsetY: 60
+Effects:
+- Type: AbilityUnlock
+  StringData: CROSS2

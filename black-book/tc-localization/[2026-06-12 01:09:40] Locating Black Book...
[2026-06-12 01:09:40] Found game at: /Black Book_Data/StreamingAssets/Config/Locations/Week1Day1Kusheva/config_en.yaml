@@ -1,0 +1,7 @@
+﻿Name: Kusheva Village
+Description: A small village to the west of the Kolva. I've been there a couple of times with Old Egor when healing some's cows. This is the place he sent a chort for a job.
+ShortQuestDescr: Visit Kusheva Village
+LevelConfig:
+  Battle:
+    Name: Samovar Chort
+

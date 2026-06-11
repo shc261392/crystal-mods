@@ -1,0 +1,13 @@
+﻿Name: Николай
+AllyType: NikolayLoyal
+Unit: NikolayLoyal
+Sprite: NikolayFool
+IzbaDialogues:
+  - Id: Izba/Nikolay/ConvLoyal
+LocationToSpecialDialogue:
+  Izba:
+    Id: Izba/Context/AfterObderiha/Nikolay
+    DayRestricted: true
+    AvailableDay: 6
+IzbaAsset: NikolayIzbaRegular
+

@@ -1,0 +1,22 @@
+﻿Name: Прижечь раны
+AbilityType: BURN_WOUNDS
+TargetType: ALL_ALLIES
+Intention: BUFF
+Sprite: BURN_WOUNDS
+GoldCost: 3
+Effects:
+- EffectType: HEAL
+  MinValue: 15
+  MaxValue: 15
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+- EffectType: STATUS
+  StatusEffectType: BlessOnHealthLoss
+  MinValue: 2
+  MaxValue: 2
+  ForceTarget: SELF
+

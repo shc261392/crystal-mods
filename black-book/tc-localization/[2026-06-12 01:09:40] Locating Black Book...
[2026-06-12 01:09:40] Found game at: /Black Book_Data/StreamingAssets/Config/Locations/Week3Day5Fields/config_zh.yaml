@@ -1,0 +1,7 @@
+﻿Name: 阿列什金田野
+Description: 几个雠特闯进了这里，打搅了那个波列维。
+ShortQuestDescr: 赶走吵闹的雠特
+LevelConfig:
+  Battle:
+    Name: 吵闹的雠特
+

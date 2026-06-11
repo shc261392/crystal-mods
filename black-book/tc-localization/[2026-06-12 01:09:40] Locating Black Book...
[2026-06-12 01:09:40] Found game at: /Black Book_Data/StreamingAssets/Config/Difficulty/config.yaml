@@ -1,0 +1,24 @@
+DefaultDifficulty: Znatka
+DifficultyIds:
+  - Apprentice
+  - Znatka
+  - Koldunya
+  - Nightmare
+  - RoguelikeNormal
+  - Insane
+UISelectableDifficultyIds:
+  - Apprentice
+  - Znatka
+  - Koldunya
+  - Nightmare
+EffectTypeToDescrKey:
+  DAMAGE_COEFF: "DifficultyDAMAGE_COEFF"
+  HEALTH_COEFF: "DifficultyHEALTH_COEFF"
+  FOOL_CHEAT_BONUS: "DifficultyFOOL_CHEAT_BONUS"
+  STATUS_KEEP_CHANCE: "DifficultySTATUS_KEEP_CHANCE"
+  GOLD_BONUS: "DifficultyGOLD_BONUS"
+  HEAL_COEFF: "DifficultyHEAL_COEFF"
+  DEFENCE_COEFF: "DifficultyDEFENCE_COEFF"
+  STATUS_COEFF: "DifficultySTATUS_COEFF"
+  CAN_SKIP_BATTLE: "DifficultyCAN_SKIP_BATTLE"
+  SPECIAL_STATUS: "DifficultySPECIAL_STATUS"

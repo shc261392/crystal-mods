@@ -1,0 +1,23 @@
+﻿Name: Егорий Пастушок
+AbilityType: GEORGY_SHEPARD_SMALL
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: GEORGY_SHEPARD
+GoldCost: 16
+Effects:
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpell
+    MissTrigger: AttackSpell
+    WrapUpTime: 0.5
+  StatusEffectType: Blessed
+- EffectType: STATUS
+  MinValue: 2
+  MaxValue: 2
+  StatusEffectType: EloquenceWhite
+

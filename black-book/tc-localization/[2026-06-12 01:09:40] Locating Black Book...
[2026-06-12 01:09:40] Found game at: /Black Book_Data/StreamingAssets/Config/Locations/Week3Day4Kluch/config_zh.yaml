@@ -1,0 +1,6 @@
+﻿Name: 冷河滩
+Description: 这条河横穿路当中，这个地方绝对适合截接亲的队伍。
+LevelConfig:
+  Battle:
+    Name: 截道雠特
+

@@ -1,0 +1,7 @@
+﻿Unique: true
+Name: Порча
+Description: Наносит {Duration} <sprite name="Damage"> в начале хода, игнорируя <sprite name="Defence">
+Sprite: StatusPoison
+Harmful: true
+DecreaseOnStartTurn: true
+

@@ -1,0 +1,29 @@
+﻿IdName: Week3Day6Bereg
+Name: Берег Чудовой реки
+Description: Кажется, охотник заметил волчьи следы, ведущие к берегу.
+Scene: River2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/Explore2
+  Battle:
+    Name: Голодные волки
+    Enemies:
+    - Type: Wolf
+      LevelSpawnPointType: EnemyCenter
+    - Type: Wolf
+    - Type: Wolf
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+    DemonSwarm:
+    - Wolf
+    - Wolf
+    - Wolf
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day6/Bereg/Intro
+    Outro: TextQuest/Week3/Day6/Bereg/Outro
+RequiredLocations:
+- Week3Day6Birch
+OnomastikonItems:
+- Onomastikon/Encyclopedia/8
+

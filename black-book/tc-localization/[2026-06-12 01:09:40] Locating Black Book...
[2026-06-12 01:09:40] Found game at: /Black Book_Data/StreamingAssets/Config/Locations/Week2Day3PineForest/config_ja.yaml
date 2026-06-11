@@ -1,0 +1,8 @@
+﻿Name: 松林
+Description: 地獄湖の湿地帯は古い松林に囲まれている。
+LevelConfig:
+  Battle:
+    Name: 森のチョルト
+  BattleAlternative:
+    Name: 驚きのチョルト
+

@@ -1,0 +1,6 @@
+﻿Name: 안보르 숲
+Description: 안보르 마을 근처의 오래된 숲. 넴즈야와 무척 닮았다.
+LevelConfig:
+  Battle:
+    Name: 숲 초르트
+

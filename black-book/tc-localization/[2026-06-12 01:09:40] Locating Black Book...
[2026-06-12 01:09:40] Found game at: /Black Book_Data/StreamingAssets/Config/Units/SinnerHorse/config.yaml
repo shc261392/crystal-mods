@@ -1,0 +1,18 @@
+﻿AssetName: SinnerHorse
+Health: 20
+Mana: 4
+Initiative: 1
+MoneyMin: 18
+MoneyMax: 30
+Experience: 200
+UnitAI:
+  AIAbilities:
+  - AbilityType: DESPERATE_BLOW
+    TargetType: ENEMY
+  - AbilityType: NOT_HORSE
+    TargetType: SELF
+  - AbilityType: TO_FREEDOM
+    TargetType: ALL_ALLIES
+  CastingType: UNIT_HARDCODED
+Name: Грешник-конь
+

@@ -1,0 +1,10 @@
+﻿Name: Брошка горошком
+InventoryItemName: Broshka
+Flavour: Сноха-то на людях золотом одарит, а потом без людей – змея подколодная.
+Sprite: IconBroshka
+Cost: 200
+Effects:
+  - Value: 2
+    Type: StatusOnBattleStart
+    StatusName: Eloquence
+

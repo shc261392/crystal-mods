@@ -1,0 +1,7 @@
+﻿Name: The Kolva Bridge
+Description: Bridges connect two riverbanks, thus they act as a kind of a border between worlds. It's well known that borders are a favorite place for spirits to dwell.
+ShortQuestDescr: Catch a demon under the bridge
+LevelConfig:
+  Battle:
+    Name: Bridge Meeting
+

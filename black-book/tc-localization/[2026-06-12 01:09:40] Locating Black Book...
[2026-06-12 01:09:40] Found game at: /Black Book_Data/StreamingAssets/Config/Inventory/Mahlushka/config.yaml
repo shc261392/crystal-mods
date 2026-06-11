@@ -1,0 +1,12 @@
+﻿Name: Махлушка
+InventoryItemName: Mahlushka
+Flavour: С махлушкой-то умирать трудно, надо всё кому-то передать.
+Sprite: IconMahlushka
+Cost: 150
+Effects:
+  - Value: 2
+    Type: StatusOnBattleStart
+    StatusName: Vampirism
+  - Value: 12
+    Type: IncreaseHealth    
+

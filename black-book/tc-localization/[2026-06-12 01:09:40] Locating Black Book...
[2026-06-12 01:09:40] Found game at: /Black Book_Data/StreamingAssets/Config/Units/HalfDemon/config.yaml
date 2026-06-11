@@ -1,0 +1,19 @@
+﻿AssetName: HalfDemon
+Health: 23
+HealthRandomAdd: 7
+Mana: 4
+Initiative: 1
+MoneyMin: 3
+MoneyMax: 5
+Experience: 333
+UnitAI:
+  AIAbilities:
+  - AbilityType: HALF_DEMON_ATTACK
+    TargetType: ENEMY
+  - AbilityType: HALF_DEMON_ATTACK_DEF
+    TargetType: ENEMY
+  - AbilityType: DEMON_SEAL_STATUS
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Получёрт
+

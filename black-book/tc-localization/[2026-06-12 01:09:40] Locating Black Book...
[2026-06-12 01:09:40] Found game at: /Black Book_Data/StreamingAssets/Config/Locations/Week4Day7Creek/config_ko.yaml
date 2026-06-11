@@ -1,0 +1,6 @@
+﻿Name: 이그나티예프 개울
+Description: 개울을 따라 나무에 리본이 묶여 있다.
+LevelConfig:
+  Battle:
+    Name: 개울의 망자
+

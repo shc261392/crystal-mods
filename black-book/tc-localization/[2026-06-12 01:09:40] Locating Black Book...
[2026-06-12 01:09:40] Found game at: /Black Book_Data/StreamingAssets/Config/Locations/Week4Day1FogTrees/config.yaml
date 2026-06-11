@@ -1,0 +1,23 @@
+﻿IdName: Week4Day1FogTrees
+Name: Деревья в мареве
+Description: Только казалось, что тут просека или че ли. Нет, опять деревья.
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Нечисть в тумане
+    Enemies:
+    - Type: WolfHalf
+      LevelSpawnPointType: EnemyCenter
+    - Type: Demon
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day1/Map1/FogTrees
+  CameraOverride: CMQuestCamera3
+LightingType: FOG_3
+MoonType: NONE
+

@@ -1,0 +1,3 @@
+﻿Name: 治癒
+Description: 各ラウンドに{Duration} <sprite name="Health"> を与える
+

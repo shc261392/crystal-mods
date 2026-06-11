@@ -1,0 +1,7 @@
+﻿Name: 빌고르트의 메마른 헛간
+Description: 우리 집에 왔던 그 여자가 말한 헛간은 빌고르트 외곽에 있다.
+ShortQuestDescr: 오빈니크가 사람들을 겁주는 이유 알아내기
+LevelConfig:
+  Battle:
+    Name: 오빈니크
+

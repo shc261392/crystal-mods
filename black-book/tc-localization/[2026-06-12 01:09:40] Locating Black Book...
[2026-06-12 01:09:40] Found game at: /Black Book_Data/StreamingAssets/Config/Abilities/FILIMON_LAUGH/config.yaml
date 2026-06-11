@@ -1,0 +1,21 @@
+﻿Name: Грибной хохот
+AbilityType: FILIMON_LAUGH
+TargetType: SELF
+Intention: DEFENCE
+Sprite: FILIMON_LAUGH
+GoldCost: 3
+Effects:
+- EffectType: DEFENCE
+  MinValue: 100
+  MaxValue: 100
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    WrapUpTime: 0.5
+- EffectType: STATUS
+  StatusEffectType: DefenceGive
+  MinValue: 10
+  MaxValue: 10
+  ForceTarget: SELF
+

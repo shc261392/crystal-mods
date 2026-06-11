@@ -1,0 +1,9 @@
+﻿Name: Адово травничество
+SkillName: EvilHerbalism
+Sprite: EvilHerbalismSkill
+Description: Шанс того, что бес принесет траву при выполнении задания, увеличен на {CalculatedEffect}%
+RequiredSkills:
+- SkilledDemons
+Effects:
+- Value: 66
+  Type: ItemChanceIncrease

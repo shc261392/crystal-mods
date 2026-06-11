@@ -1,0 +1,17 @@
+﻿Name: Укус
+AbilityType: WOLF_BITE_TUTORIAL
+TargetType: PLAYER
+Intention: ATTACK
+Sprite: Bite
+GoldCost: 3
+Effects:
+- MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: BITE
+    ReadyTrigger: Bite
+    SpellTrigger: Bite
+    MissTrigger: BiteMiss
+    WrapUpTime: 0.100000001
+    SkipReady: true
+

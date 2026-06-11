@@ -1,0 +1,7 @@
+﻿Name: 사냥꾼의 오두막
+Description: 사냥꾼의 오두막은 마을 외곽에 있다. 페어뱅크가 거짓말한 것은 아니어야 할 텐데!
+ShortQuestDescr: 오두막으로 가기
+LevelConfig:
+  Battle:
+    Name: 늑대의 공격
+

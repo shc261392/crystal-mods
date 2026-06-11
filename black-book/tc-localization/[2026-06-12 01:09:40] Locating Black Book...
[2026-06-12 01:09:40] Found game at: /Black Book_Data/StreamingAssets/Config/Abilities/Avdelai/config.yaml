@@ -1,0 +1,17 @@
+﻿Name: Авделай
+AbilityType: AVDELAI
+Upgrade: AVDELAI_UP
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: AVDELAI
+GoldCost: 8
+Effects:
+- EffectType: DEFENCE
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+

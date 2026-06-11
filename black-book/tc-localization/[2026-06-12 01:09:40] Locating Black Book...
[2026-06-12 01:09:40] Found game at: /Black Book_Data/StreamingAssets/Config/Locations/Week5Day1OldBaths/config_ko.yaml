@@ -1,0 +1,6 @@
+﻿Name: 오래된 목욕탕
+Description: 니콜라이와 함께 그의 신부에게 걸린 마법을 푼 곳이다. 마치 오래전의 일 같다...
+LevelConfig:
+  Battle:
+    Name: 석탄
+

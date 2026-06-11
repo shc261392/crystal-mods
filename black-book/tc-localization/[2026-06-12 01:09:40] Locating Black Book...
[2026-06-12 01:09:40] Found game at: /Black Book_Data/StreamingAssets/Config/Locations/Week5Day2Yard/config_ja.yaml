@@ -1,0 +1,6 @@
+﻿Name: チェルディニ飼育場
+Description: 警察署へはここを近道して抜けていこう。
+LevelConfig:
+  Battle:
+    Name: 飼育場の魔物
+

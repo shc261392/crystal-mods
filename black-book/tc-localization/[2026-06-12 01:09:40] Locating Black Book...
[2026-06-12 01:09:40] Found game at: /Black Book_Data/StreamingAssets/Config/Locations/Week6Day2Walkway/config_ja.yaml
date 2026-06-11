@@ -1,0 +1,6 @@
+﻿Name: 狭い通路
+Description: 近くから黒の書の気配がする！
+LevelConfig:
+  Battle:
+    Name: 蜘蛛の巣のチョルト
+

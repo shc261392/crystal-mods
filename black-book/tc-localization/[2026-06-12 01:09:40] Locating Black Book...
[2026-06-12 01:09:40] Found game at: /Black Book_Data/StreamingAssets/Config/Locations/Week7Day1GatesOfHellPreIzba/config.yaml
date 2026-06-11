@@ -1,0 +1,14 @@
+﻿IdName: Week7Day1GatesOfHellPreIzba
+Name: Врата в ад
+Description: Чтобы исполнить желание, я должна пройти через само пекло! Я слишком далеко зашла, чтобы теперь остановиться.
+Scene: HellGates
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day1/BigichiWoods
+  Exploration: Week7Day1GatesOfHellPreIzba
+  CinematicIntro: true
+  MixerSnapshot: snapshot:/Cave
+  NoExplorationMusic: true
+  NoExplorerSpawn: true
+

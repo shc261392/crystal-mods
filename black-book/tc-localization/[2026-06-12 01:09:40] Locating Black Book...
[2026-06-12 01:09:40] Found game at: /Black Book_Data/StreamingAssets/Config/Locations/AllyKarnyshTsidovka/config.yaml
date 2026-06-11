@@ -1,0 +1,15 @@
+﻿IdName: AllyKarnyshTsidovka
+Name: Возле реки Цыдовки
+Description: Маленькая речка укутана сырым туманом. Только на холме были – там все видать. А тут затянуло.
+ShortQuestDescr: Пропавшие крестьяне
+Scene: River_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/AllyKarnysh/Tsidovka/Intro
+LightingType: FOG_2
+RequiredLocations:
+- AllyKarnyshBerezovski
+Secondary: AllyKarnyshTsidovka
+

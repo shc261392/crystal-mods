@@ -1,0 +1,22 @@
+﻿Name: Лешачья помощь
+AbilityType: FILIMON_HELP
+TargetType: SELF
+AbilitySpellType: SUMMON
+Sprite: FILIMON_HELP
+GoldCost: 3
+Effects:
+- EffectType: SUMMON
+  MinValue: 1
+  MaxValue: 1
+  SummonEffectData:
+    UnitTypes:
+    - ForestDemon
+    - Chud1
+    - Chud2
+    - Chud3
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    WrapUpTime: 0.5
+

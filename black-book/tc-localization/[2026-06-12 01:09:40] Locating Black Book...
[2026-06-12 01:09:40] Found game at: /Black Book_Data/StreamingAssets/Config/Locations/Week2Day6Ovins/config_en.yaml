@@ -1,0 +1,7 @@
+﻿Name: Barnyard
+Description: The merchant told me the children were performing divinations in the barnyard. Divinations at the wrong time can prove dangerous. It can't hurt to check on them.
+ShortQuestDescr: Check on the Divinators
+LevelConfig:
+  Battle:
+    Name: Ovinniks
+

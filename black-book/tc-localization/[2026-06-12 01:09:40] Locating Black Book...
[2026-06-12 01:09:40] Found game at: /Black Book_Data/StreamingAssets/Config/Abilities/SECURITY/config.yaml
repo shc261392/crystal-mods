@@ -1,0 +1,21 @@
+﻿Name: Охрана
+AbilityType: SECURITY
+TargetType: SELF
+AbilitySpellType: SUMMON
+Sprite: SECURITY
+Effects:
+- EffectType: SUMMON
+  MinValue: 2
+  MaxValue: 2
+  SummonEffectData:
+    UnitTypes:
+    - DemonFierce
+    - Demon
+    - DemonSmall
+    - DemonSummoner
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    WrapUpTime: 0.5
+

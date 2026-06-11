@@ -1,0 +1,12 @@
+﻿Name: Кудрявый дягиль
+InventoryItemName: Dagil
+Type: Herb
+Flavour: Такой травой колдуны сорок недугов напустят
+Sprite: Dagil
+Expendable: true
+Cost: 38
+Effects:
+- Value: 5
+  Type: Status
+  StatusName: Vampirism
+

@@ -1,0 +1,22 @@
+﻿Name: Помощь ада
+AbilityType: HELL_HELP
+TargetType: SELF
+Intention: DEFENCE
+Sprite: HELL_HELP
+GoldCost: 24
+Effects:
+- EffectType: STATUS
+  StatusEffectType: DefenceGive
+  MinValue: 3
+  MaxValue: 3
+- EffectType: STATUS
+  StatusEffectType: Blessed
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell2
+    SpellTrigger: Spell2
+    MissTrigger: Miss
+    SkipReady: true
+

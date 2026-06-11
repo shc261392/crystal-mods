@@ -1,0 +1,10 @@
+Name: PAVLUSHKA
+SkillName: AbilityPAVLUSHKA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityLOMEYA
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: PAVLUSHKA

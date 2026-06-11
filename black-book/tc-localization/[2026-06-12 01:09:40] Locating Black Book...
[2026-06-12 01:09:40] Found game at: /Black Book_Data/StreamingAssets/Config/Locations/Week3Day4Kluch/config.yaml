@@ -1,0 +1,26 @@
+﻿IdName: Week3Day4Kluch
+Name: Брод через Студеный ключ
+Description: Этот ручей пересекает дорогу; значит, тут легко и поезд остановить.
+Scene: Road_2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Черти у поезда
+    Enemies:
+    - Type: DemonPoison
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonPoison
+    - Type: Demon
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 7
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day4/Kluch/Intro
+    Outro: TextQuest/Week3/Day4/Kluch/Outro
+  Exploration: Week3Day4Kluch
+  MusicOverride: event:/Music/ExploreDark
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week3Day4Depart
+

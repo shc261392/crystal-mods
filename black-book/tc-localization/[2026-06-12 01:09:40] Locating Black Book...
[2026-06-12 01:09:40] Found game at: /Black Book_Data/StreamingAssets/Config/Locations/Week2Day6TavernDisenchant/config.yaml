@@ -1,0 +1,26 @@
+﻿IdName: Week2Day6TavernDisenchant
+Name: Истинный кабак
+Description: ''
+Scene: DrinkinHouse
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  MusicOverride: event:/Music/ExploreDark2
+  Battle:
+    Name: Питейные бесы
+    Enemies:
+    - Type: DemonBrander
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyRight
+    - Type: Demon
+    Barks:
+    - Id: Battle/Tavern/First
+      HealthPercent: 0.5
+      TargetUnit: DemonBrander
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 7 # Also changed from dialogue
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day6/TavernInside/CutsceneStarter
+    Outro: TextQuest/Week2/Day6/TavernInside/MikolkaBattleOutro
+

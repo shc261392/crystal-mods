@@ -1,0 +1,21 @@
+﻿IdName: Week4Day1StrangeRift
+Name: Странный овраг
+Description: Нужно быть осторожней в тумане – как бы меня в пропасть не завело.
+Scene: Rift
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Нечисть в тумане
+    Enemies:
+    - Type: ForestDemon
+      LevelSpawnPointType: EnemyCenter
+    - Type: Demon
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day1/Map1/StrangeRift
+  CameraOverride: CMQuestCamera1
+LightingType: FOG_2
+MoonType: NONE
+

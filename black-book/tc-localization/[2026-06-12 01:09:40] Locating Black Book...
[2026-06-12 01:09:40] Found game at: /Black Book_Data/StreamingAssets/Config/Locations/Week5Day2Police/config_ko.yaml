@@ -1,0 +1,8 @@
+﻿Name: 우예즈드 경찰서
+Description: 이곳에 가면 교회 관리인 니키포로비치와 얘기할 수 있을 것이다.
+ShortQuestDescr: 교회 칼 찾기
+LongQuestDescr: 쿠팔라 의례에 필요한 물건 중 하나는 교회 칼입니다. 관리인이 어딘가에 숨겨놨습니다.
+LevelConfig:
+  Battle:
+    Name: 경찰 수세드카
+

@@ -1,0 +1,19 @@
+﻿Name: Кила деревянная
+AbilityType: LESHAK_NEEDLE
+AbilityBookPartType: KEY
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: LESHAK_NEEDLE
+GoldCost: 10
+Effects:
+- MinValue: 20
+  MaxValue: 20
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Attack
+    MissTrigger: Attack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  RepeatCount: 1
+

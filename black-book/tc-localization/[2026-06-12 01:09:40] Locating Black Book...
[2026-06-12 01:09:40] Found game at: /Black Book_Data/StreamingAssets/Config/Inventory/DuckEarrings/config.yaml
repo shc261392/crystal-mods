@@ -1,0 +1,10 @@
+﻿Name: Сережки-уточки
+InventoryItemName: DuckEarrings
+Flavour: Пермяки-те тоже че-то да знали. Вон, весь мир у них от птицы водяной возник-то.
+Sprite: IconDuckEarrings
+Cost: 200
+Effects:
+- Value: 2
+  Type: StatusBonus
+  StatusName: Prayer
+

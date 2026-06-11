@@ -1,0 +1,8 @@
+﻿Name: 诅咒+
+Description: >-
+  诅咒
+
+  敌方造成的伤害减少{MinValue}点
+
+  持续时间：{MaxValue}回合
+

@@ -1,0 +1,26 @@
+﻿IdName: Week1Day5EastForest
+Name: Восточная роща
+Description: Леса рядом со старым течением Колвы пока что особого названия не получили, поэтому их так и называют, Восточными. Ну, или рощей Восточной.
+Scene: Forest_old
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Торговцы самоварами
+    Enemies:
+    - Type: SamovarDemon
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonFierce
+    EnemyKillWin: true
+    HealthLoose: true
+  BattleAlternative:
+    Name: В хозяйстве пригодится
+    Enemies:
+    - Type: DemonFierce
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day5/EastForest
+RequiredLocations:
+- Week1Day5KolvaBridge
+

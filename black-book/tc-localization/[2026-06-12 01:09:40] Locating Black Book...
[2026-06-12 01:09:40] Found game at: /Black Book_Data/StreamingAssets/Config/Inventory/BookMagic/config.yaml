@@ -1,0 +1,9 @@
+﻿Name: Магиева книга
+InventoryItemName: BookMagic
+Flavour: Говорят, у одного мужика магиевая книга была, дак он ее никому не казал
+Sprite: BookMagic
+Cost: 100
+Effects:
+- Value: 1
+  Type: StatusBonus
+  StatusName: Decomposure

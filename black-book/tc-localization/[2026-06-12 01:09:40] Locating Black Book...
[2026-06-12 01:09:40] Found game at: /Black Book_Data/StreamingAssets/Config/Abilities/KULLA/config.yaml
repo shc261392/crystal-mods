@@ -1,0 +1,20 @@
+﻿Name: Кулла
+AbilityType: KULLA
+TargetType: SELF
+Color: WHITE
+Sprite: KULLA
+GoldCost: 6
+Effects:
+- EffectType: SACRIFICE
+  MinValue: 13
+  MaxValue: 13
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+  StatusEffectType: Immortality
+- EffectType: KRADA  
+

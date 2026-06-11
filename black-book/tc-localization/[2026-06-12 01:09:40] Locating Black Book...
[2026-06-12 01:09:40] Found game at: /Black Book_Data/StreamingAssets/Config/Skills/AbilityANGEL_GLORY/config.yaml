@@ -1,0 +1,10 @@
+Name: ANGEL_GLORY
+SkillName: AbilityANGEL_GLORY
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilitySKY_HIGH
+SpriteOffsetX: -45
+SpriteOffsetY: -48
+Effects:
+- Type: AbilityUnlock
+  StringData: ANGEL_GLORY

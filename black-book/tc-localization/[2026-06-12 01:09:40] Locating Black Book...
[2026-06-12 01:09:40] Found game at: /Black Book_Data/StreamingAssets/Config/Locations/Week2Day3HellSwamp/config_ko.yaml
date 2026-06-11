@@ -1,0 +1,6 @@
+﻿Name: 지옥의 늪
+Description: 호수 주변 지역은 종종 물에 잠기며, 이로 인해 늪이 생겨났습니다.
+LevelConfig:
+  Battle:
+    Name: 익사체들
+

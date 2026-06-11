@@ -1,0 +1,10 @@
+﻿Name: Дарочка лешему
+InventoryItemName: Darochka
+Flavour: Лесовик-великан, пришел к тебе раб с поклоном; заведи с ним дружбу. Коль хошь, так топеря же иди, а не хошь – как хошь
+Sprite: Darochka
+Cost: 240
+Effects:
+- Value: 4
+  Type: StatusBonus
+  StatusName: Cursed
+

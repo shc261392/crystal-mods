@@ -1,0 +1,23 @@
+﻿IdName: Week1Day2OzeroKotjil
+Name: Озеро Котжильское
+Description: В лесу неподалеку от Котжильского озера ребята с Вильгорта видели странную поляну. Говорят, ямы там кто-то вырыл. Может, искали что? Стоит проверить.
+ShortQuestDescr: Осмотреть старые ямы
+Scene: Pits
+LevelConfig:
+  MusicOverride: event:/Music/ExploreDark2
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Призрак старой ямы
+    Enemies:
+    - Type: Ghost
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day2/Pits
+RequiredLocations:
+- Week1Day2Orlov
+Secondary: Week1Day2OzeroKotjil
+OnomastikonItems:
+- Onomastikon/Encyclopedia/15
+

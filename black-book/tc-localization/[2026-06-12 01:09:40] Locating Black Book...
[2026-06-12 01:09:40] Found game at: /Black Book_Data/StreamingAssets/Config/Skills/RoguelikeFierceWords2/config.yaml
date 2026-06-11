@@ -1,0 +1,1 @@
+Name: Лютые слова IISkillName: RoguelikeFierceWords2Sprite: FierceWords2SkillDescription: Увеличивает урон в словах еще на {CalculatedEffect}RequiredSkills:- AbilityKNIFEEffects:- Value: 1  Type: AdditionalDamage

@@ -1,0 +1,10 @@
+Name: BLUE_STONE
+SkillName: AbilityBLUE_STONE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityREVUN_SMALL
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: BLUE_STONE

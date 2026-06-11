@@ -1,0 +1,9 @@
+﻿Name: Вязь II
+SkillName: Vyaz2
+Sprite: Vyaz2Skill
+Description: Цена создания слов снижена еще на {CalculatedEffect}%
+RequiredSkills:
+- Vyaz1
+Effects:
+- Value: 40
+  Type: WordPriceDrop

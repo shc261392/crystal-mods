@@ -1,0 +1,10 @@
+Name: JUDEA
+SkillName: AbilityJUDEA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - RoguelikeHelpOfSaints3
+SpriteOffsetX: -44.3
+SpriteOffsetY: -3.2
+Effects:
+- Type: AbilityUnlock
+  StringData: JUDEA

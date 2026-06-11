@@ -1,0 +1,26 @@
+﻿Name: Никола Батюшка
+AbilityType: NIKOLA_BATUSHKA
+Upgrade: NIKOLA_BATUSHKA_UP
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: NIKOLA_BATUSHKA
+GoldCost: 119
+Effects:
+- EffectType: STATUS_SKLAD
+  MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal6OrderWhite
+    MissTrigger: Seal6OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: Piety
+- EffectType: STATUS_SKLAD
+  MinValue: 10
+  MaxValue: 10
+  StatusEffectType: DefenceGive
+

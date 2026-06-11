@@ -1,0 +1,23 @@
+﻿IdName: Week2Day2Bathhouses
+Name: Бани
+Description: Старая банька. Может, она тут еще со времен до того, как завод поставили?
+Scene: SaltSauna
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Банники
+    Enemies:
+    - Type: ObderihaDemon
+      LevelSpawnPointType: EnemyCenter
+    - Type: ObderihaDemon
+    - Type: ObderihaDemon
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day2/Bath
+    Outro: TextQuest/Week2/Day2/BathOutro
+RequiredLocations:
+- Week2Day2Varnitsa
+

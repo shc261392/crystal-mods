@@ -1,0 +1,7 @@
+﻿Name: Aleshkin Fields
+Description: This is the place chorts chose to inhabit and disturb the polevoi.
+ShortQuestDescr: Get Rid of Noisy Chorts
+LevelConfig:
+  Battle:
+    Name: Noisy Chorts
+

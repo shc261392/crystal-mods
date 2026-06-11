@@ -1,0 +1,10 @@
+Name: DEMON_WIZARD
+SkillName: AbilityDEMON_WIZARD
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityRUDA
+SpriteOffsetX: -20.3
+SpriteOffsetY: -38.8
+Effects:
+- Type: AbilityUnlock
+  StringData: DEMON_WIZARD

@@ -1,0 +1,11 @@
+﻿Name: Земляной ладан
+InventoryItemName: LadanTrava
+Type: Herb
+Flavour: Земляным ладаном от дикости тожё лечат. Он в земле ле чё ле ростёт.
+Sprite: LadanTrava
+Expendable: true
+Cost: 26
+Effects:
+- Value: 3
+  Type: Status
+  StatusName: Piety

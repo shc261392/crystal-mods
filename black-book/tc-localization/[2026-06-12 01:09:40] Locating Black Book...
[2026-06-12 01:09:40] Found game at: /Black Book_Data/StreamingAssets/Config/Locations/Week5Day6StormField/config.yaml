@@ -1,0 +1,22 @@
+﻿IdName: Week5Day6StormField
+Name: Гроза в поле
+Scene: Storm
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Окаянный вихрь
+    Enemies:
+    - Type: Tornado
+      LevelSpawnPointType: EnemyCenter
+    WinCutscene: Week5Day6StormFieldAlexander
+    LooseCutscene: Week5Day6StormFieldAlexander
+    EnemyKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/BattleBoss2
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day6/StormField/Intro
+  MusicOverride: event:/Music/DialogueSuspense
+LightingType: STORM
+MoonType: NONE
+

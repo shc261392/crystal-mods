@@ -1,0 +1,7 @@
+﻿Name: Road in Bonev Grove
+Description: Through these picturesque woods lies the road to Vilgort. Peasants say it's haunted. I'll have to inspect this road and get rid of any demons.
+ShortQuestDescr: Inspect Bonev Road
+LevelConfig:
+  Battle:
+    Name: Demon Horde
+

@@ -1,0 +1,13 @@
+﻿IdName: Week3Day7Cave
+Name: Безымянная пещера
+Description: Утопленница рассказала о старом трупе у истока родника. Кто это мог быть? Леший его водил, а он выход не нашел, наверно.
+ShortQuestDescr: Разыскать другого колдуна
+Scene: PoludTop
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day7/Cave/Intro
+RequiredLocations:
+- Week3Day7Creek
+Secondary: Week3Day7Cave
+

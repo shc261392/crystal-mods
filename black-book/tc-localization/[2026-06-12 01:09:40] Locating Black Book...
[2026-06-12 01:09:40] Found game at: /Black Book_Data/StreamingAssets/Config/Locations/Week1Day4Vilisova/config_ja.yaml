@@ -1,0 +1,7 @@
+﻿Name: ヴィリソフの森
+Description: 糸繰りの家のそばにある不気味な森。
+ShortQuestDescr: ヴィリソフの森に行く
+LevelConfig:
+  Battle:
+    Name: 森のチョルト
+

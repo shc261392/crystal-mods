@@ -1,0 +1,7 @@
+﻿Name: Old River Bed
+Description: At one time the Kolva flowed through here. Now this place is a swamp.
+ShortQuestDescr: Deal with the demons in the Old River Bed
+LevelConfig:
+  Battle:
+    Name: Chort at the River Bed
+

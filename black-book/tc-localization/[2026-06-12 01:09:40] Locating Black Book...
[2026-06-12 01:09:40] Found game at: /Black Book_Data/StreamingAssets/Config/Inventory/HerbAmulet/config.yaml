@@ -1,0 +1,10 @@
+﻿Name: Присказулька
+InventoryItemName: HerbAmulet
+Flavour: А чтобы уберечь себя от нечистой силы, бабушки наши произносили присказульки
+Sprite: HerbAmulet
+Cost: 130
+Effects:
+- Value: 3
+  Type: StatusBonus
+  StatusName: Regeneration
+

@@ -1,0 +1,10 @@
+﻿Name: Голова чуди
+InventoryItemName: HeadChud
+Flavour: Курица старую подвеску один раз выпурхала из земли.
+Sprite: IconAnimalFace4
+Cost: 160
+Effects:
+- Value: 1
+  Type: AbilityOnBattleStart
+  StatusName: LOTON_PLEASURE
+

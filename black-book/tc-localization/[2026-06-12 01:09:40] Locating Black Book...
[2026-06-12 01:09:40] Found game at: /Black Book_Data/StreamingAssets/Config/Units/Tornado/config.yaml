@@ -1,0 +1,22 @@
+﻿AssetName: Tornado
+Health: 250
+Mana: 4
+Initiative: 2
+MoneyMin: 72
+MoneyMax: 120
+Experience: 700
+StartingStatusEffects:
+- StatusEffectType: Master
+  Duration: 999
+  Permanent: true
+  Unremovable: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: VORTEX_DEMONS
+    TargetType: SELF
+  - AbilityType: TORNADO
+    TargetType: ENEMY
+  - AbilityType: TORNADO_STONES
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Кривой вихрь

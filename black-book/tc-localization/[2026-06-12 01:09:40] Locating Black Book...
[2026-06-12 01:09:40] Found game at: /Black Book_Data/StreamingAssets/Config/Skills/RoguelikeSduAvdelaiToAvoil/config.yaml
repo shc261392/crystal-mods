@@ -1,0 +1,10 @@
+﻿Name: "{Ability1} | {Ability2}"
+SkillName: RoguelikeSduAvdelaiToAvoil
+Sprite: SkilledDemonsSkill
+Description: Заменяет {Ability1} на {Ability2} в стартовой колоде
+RequiredSkills:
+  - AbilityDropLock3
+Effects:
+- Value: 1
+  Type: RoguelikeStartingDeckUpgrade
+  StringData: AVDELAI&AVOIL

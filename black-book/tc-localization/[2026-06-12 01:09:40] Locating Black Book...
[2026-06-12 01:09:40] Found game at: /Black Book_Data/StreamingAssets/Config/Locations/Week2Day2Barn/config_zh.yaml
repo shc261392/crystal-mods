@@ -1,0 +1,6 @@
+﻿Name: 盐仓
+Description: 厂里的盐就存在这个地方，然后再把盐装船送到诺夫哥罗德的盐市……
+LevelConfig:
+  Battle:
+    Name: 盐仓精怪
+

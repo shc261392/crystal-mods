@@ -1,0 +1,18 @@
+﻿Name: Черная кила
+AbilityType: KILA_BLACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: KilaAbility
+GoldCost: 10
+Effects:
+- EffectType: DAMAGE_BLACK
+  MinValue: 6
+  MaxValue: 6
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.2
+    SkipReady: true
+

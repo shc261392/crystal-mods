@@ -1,0 +1,43 @@
+﻿IdName: Week3Day5Cherdyn
+Name: Чердынь
+Description: Как-то раз я была тут с дедом. Огромный город, красивый. А церквей-то сколько!
+ShortQuestDescr: Разыскать охотника
+LongQuestDescr: Старый друг деда Егора должен мне помочь в поисках обернувшихся поезжан. Нужно торопиться!
+Scene: Cherdyn2
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Merchants:
+  - CherdynTrader
+  - CherdynTrader2
+  - Peddler2
+  - BookKeeper2
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day5/Cherdyn/Intro
+    Outro: TextQuest/Week3/Day4/Vilgort/Outro
+  Exploration: Week3Day5Cherdyn
+  CinematicIntro: true
+  MusicOverride: event:/Music/ExploreLight
+  FoolGame:
+    TeamPlay: true
+    CardsCount: 36
+    PlayerCount: 4
+    PossiblePlayers:
+      - Peddler
+      - Peasant
+      - Peasant2
+      - Peasant3
+      - Peasant4
+      - Peasant5
+      - Peasant6
+      - Peasant7
+      - Peasant8
+    DialogueFoolWin: TextQuest/Durak/MerchantGameWin
+    DialogueFoolLose: TextQuest/Durak/MerchantGameLose
+RequiredLocations:
+- Week3Day5Rift
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+

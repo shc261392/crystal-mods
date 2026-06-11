@@ -1,0 +1,23 @@
+﻿Name: Верным – защита
+AbilityType: FAITHFUL_PROTECTION
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: FAITHFUL_PROTECTION
+GoldCost: 107
+Gesture: true
+Effects:
+- EffectType: DEFENCE_SKLAD
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal6OrderWhite
+    MissTrigger: Seal6OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+- EffectType: FIRM
+  MinValue: 2
+  MaxValue: 2
+

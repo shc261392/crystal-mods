@@ -1,0 +1,33 @@
+﻿IdName: Week5Day4Gorodishe
+Name: Искорское городище
+Description: На вершину Искорского городища сбежала лихорадка. Нужно поторопиться, если я хочу прогнать ее из деревни!
+ShortQuestDescr: Догнать лихорадку
+Scene: IskorGorodisheTop
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Соломея
+    Enemies:
+    - Type: Lihomanka
+      LevelSpawnPointType: EnemyCenter
+    Barks:
+    - Id: Battle/Lihoradka/First
+      HealthPercent: 0.800000012
+      TargetUnit: Lihomanka
+    - Id: Battle/Lihoradka/Second
+      HealthPercent: 0.400000006
+      TargetUnit: Lihomanka
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day4/Gorodishe/Intro
+    Outro: TextQuest/Week5/Day4/Gorodishe/Outro
+  Exploration: Week5Day4Gorodishe
+  CinematicIntro: true
+  NoExplorationMusic: true
+  NoExplorerSpawn: true
+LightingType: STORM
+RequiredLocations:
+- Week5Day4Street
+Secondary: Week5Day4Gorodishe
+

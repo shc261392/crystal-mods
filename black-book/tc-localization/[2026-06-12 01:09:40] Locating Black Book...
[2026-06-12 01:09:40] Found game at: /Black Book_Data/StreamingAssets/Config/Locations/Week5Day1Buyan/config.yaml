@@ -1,0 +1,9 @@
+﻿IdName: Week5Day1Buyan
+Name: Одинокий остров
+Scene: Buyan
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Exploration: Week5Day1Buyan
+  CinematicIntro: true
+  NoExplorationMusic: true
+

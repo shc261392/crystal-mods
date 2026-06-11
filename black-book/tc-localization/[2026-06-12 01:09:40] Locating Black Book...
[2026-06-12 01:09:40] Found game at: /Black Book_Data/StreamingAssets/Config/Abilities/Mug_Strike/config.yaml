@@ -1,0 +1,19 @@
+﻿Name: Сзудить
+AbilityType: MUG_STRIKE
+TargetType: ENEMY
+Intention: DEBUFF
+Sprite: MUG_STRIKE
+GoldCost: 3
+Effects:
+- EffectType: MUG
+  MinValue: 5
+  MaxValue: 10
+  ForceTarget: PLAYER
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Mug
+    SpellTrigger: Mug
+    MissTrigger: Miss
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

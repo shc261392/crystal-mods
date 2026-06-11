@@ -1,0 +1,17 @@
+﻿Name: Готовсь!
+AbilityType: GET_READY
+TargetType: ALL_ALLIES
+AbilitySpellType: STATUS
+Sprite: GET_READY
+GoldCost: 6
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Blessed
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 0.5
+

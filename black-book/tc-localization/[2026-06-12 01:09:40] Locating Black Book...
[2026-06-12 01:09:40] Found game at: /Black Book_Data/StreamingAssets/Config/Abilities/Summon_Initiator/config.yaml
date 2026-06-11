@@ -1,0 +1,13 @@
+﻿Name: Призвать инициатора
+AbilityType: SUMMON_INITIATOR
+TargetType: SELF
+Description: >
+  Призвать черта-инициатора
+AbilitySpellType: SUMMON
+Sprite: SummonInitiatorAbility
+GoldCost: 3
+Effects:
+- EffectType: SUMMON
+  MinValue: 1
+  MaxValue: 1
+

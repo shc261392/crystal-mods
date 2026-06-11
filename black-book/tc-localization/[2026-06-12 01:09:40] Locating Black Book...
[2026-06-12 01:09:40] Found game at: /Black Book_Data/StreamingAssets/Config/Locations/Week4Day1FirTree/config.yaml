@@ -1,0 +1,15 @@
+﻿IdName: Week4Day1FirTree
+Name: Вывороченная ель
+Description: Господи, какую огромную ель грозой завалило – аж издалека ее ветки видны.
+Scene: Forest_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day1/Map3/FirTree
+  Exploration: Week4Day1FirTree
+  CameraOverride: CMQuestCamera1
+  NoExplorerSpawn: true
+LightingType: FOG_2
+MoonType: NONE
+

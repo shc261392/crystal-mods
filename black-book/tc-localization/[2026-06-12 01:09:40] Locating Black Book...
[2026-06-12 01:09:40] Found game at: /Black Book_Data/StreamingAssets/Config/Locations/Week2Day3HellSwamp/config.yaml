@@ -1,0 +1,20 @@
+﻿IdName: Week2Day3HellSwamp
+Name: Адово болото
+Description: Местность рядом с озером часто затапливается. Потому-то тут болото и образовалось.
+Scene: Marshes2
+LevelConfig:
+  MusicOverride: event:/Music/ExploreDark
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Утопцы
+    Enemies:
+    - Type: Drowner
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSmall
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day3/HellSwampIntro
+RequiredLocations:
+- Week2Day3VerhChugr
+

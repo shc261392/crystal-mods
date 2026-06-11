@@ -1,0 +1,55 @@
+﻿Name: Дед Егор
+AllyType: DedEgor
+Upgrade: DedEgorLoyal
+Unit: DedEgor
+Sprite: DedEgorFool
+IzbaDialogues:
+- Id: Izba/Egor/IzbaEgor1
+- Id: Izba/Egor/IzbaEgor2
+  DayBuffer: 1
+- Id: Izba/Egor/IzbaEgor3
+  DayBuffer: 1
+- Id: Izba/Egor/IzbaEgor4
+  DayBuffer: 2
+- Id: Izba/Egor/IzbaEgor5
+  DayBuffer: 3
+Banters:
+- Id: Izba/Banter/EgorNikolay
+  RequiredAlly: Nikolay
+- Id: Izba/Banter/EgorHead
+  RequiredAlly: WhiteHead
+  RequiredConversation: Izba/WhiteHead/Conv1
+- Id: Izba/Banter/EgorKarnysh
+  RequiredAlly: Karnysh
+BanterProbability: 0.5
+Quests:
+- QuestConversation: Izba/Egor/AllyQuestGive
+  Asset: Priest
+- QuestConversation: Izba/Egor/AllyQuestGiveSecondary
+- QuestConversation: Izba/Egor/ProkopiyQuestFailure
+QuestRestrictedLocationNames:
+- IzbaFabric
+- IzbaPike
+- IzbaBashkir
+- IzbaHunterCampPolud
+- IzbaHunterCamp
+- IzbaHunterCampPreFilimon
+- IzbaHunterCampPrePryaha
+- IzbaStorm
+- IzbaFoggyWoods
+- IzbaFoggyVillage
+- IzbaAlexanderPrison
+- IzbaHellDeath
+- IzbaHellForest
+- IzbaHellGates
+QuestLocation: AllyEgorCemetery
+IzbaAsset: DedEgorIzbaRegular
+DaysSelectionHide:
+- 0
+- 1
+DaysIzbaNoSpawn:
+- 33
+- 34
+- 35
+- 36
+

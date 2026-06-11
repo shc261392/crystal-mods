@@ -1,0 +1,9 @@
+﻿Name: ルサールカの淵
+Description: この美しい水辺は、かつて人魚が姿を現したという伝承から名前が付けられている。でも、私は人魚なんて見たこともない。
+ShortQuestDescr: 蛇を追い払う
+LevelConfig:
+  Battle:
+    Name: ルサールカの淵の蛇
+  BattleAlternative:
+    Name: ルサールカの淵の蛇
+

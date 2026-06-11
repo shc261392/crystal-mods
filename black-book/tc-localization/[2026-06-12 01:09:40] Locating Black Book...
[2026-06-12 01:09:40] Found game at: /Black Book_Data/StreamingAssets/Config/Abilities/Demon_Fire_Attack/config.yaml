@@ -1,0 +1,16 @@
+﻿Name: Раскаленный коготь
+AbilityType: DEMON_FIRE_ATTACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: DEMON_FIRE_ATTACK
+GoldCost: 3
+Effects:
+- MinValue: 15
+  MaxValue: 20
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

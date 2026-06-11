@@ -1,0 +1,21 @@
+﻿IdName: Week4Day1Silhouettes
+Name: Силуэты в дымке
+Description: Опять какие-то фигуры видны. Уж не бес ли меня водит?
+Scene: Forest_old
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Ветки-лапы
+    Enemies:
+    - Type: ForestDemonRoots
+      LevelSpawnPointType: EnemyCenter
+    - Type: ForestDemonRoots
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day1/Map2/Silhouettes
+  CameraOverride: CMQuestCamera2
+LightingType: FOG_2
+MoonType: NONE
+

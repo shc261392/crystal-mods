@@ -1,0 +1,10 @@
+Name: LAKE_DEPTH
+SkillName: AbilityLAKE_DEPTH
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityPEREPOLOH
+SpriteOffsetX: 91
+SpriteOffsetY: -44
+Effects:
+- Type: AbilityUnlock
+  StringData: LAKE_DEPTH

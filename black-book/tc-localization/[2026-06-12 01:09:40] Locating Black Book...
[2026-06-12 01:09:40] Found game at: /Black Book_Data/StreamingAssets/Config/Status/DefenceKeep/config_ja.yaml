@@ -1,0 +1,6 @@
+﻿Name: <sprite name="Defence"> 保持
+Description: >-
+  ターン終了時に <sprite name="Defence"> がなくならない
+
+  持続：{Duration}ターン
+

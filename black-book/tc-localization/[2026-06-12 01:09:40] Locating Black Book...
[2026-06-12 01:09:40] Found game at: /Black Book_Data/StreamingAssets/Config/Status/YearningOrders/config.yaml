@@ -1,0 +1,6 @@
+﻿Unique: true
+Name: Тоска (приказы)
+Description: 'Уменьшает количество приказов, которые вы можете прочесть в свой ход, на: {Duration}'
+Sprite: StatYearning
+Harmful: true
+

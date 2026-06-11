@@ -1,0 +1,17 @@
+﻿Name: Пли!
+AbilityType: FIRE
+TargetType: ALL_ALLIES
+AbilitySpellType: STATUS
+Sprite: FIRE
+GoldCost: 6
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Spikes
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 0.5
+

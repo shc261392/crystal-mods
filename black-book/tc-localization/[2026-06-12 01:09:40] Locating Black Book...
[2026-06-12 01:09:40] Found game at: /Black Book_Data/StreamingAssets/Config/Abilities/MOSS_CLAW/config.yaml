@@ -1,0 +1,16 @@
+﻿Name: Замшелый коготь
+AbilityType: MOSS_CLAW
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: MOSS_CLAW
+GoldCost: 3
+Effects:
+- MinValue: 20
+  MaxValue: 30
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

@@ -1,0 +1,11 @@
+﻿Name: Белоголовая трава
+InventoryItemName: WhiteHeadTrava
+Type: Herb
+Flavour: Белоголовую траву, ромашку-то, рвали, от многих болезней помогает
+Sprite: WhiteHeadTrava
+Expendable: true
+Cost: 8
+Effects:
+- Value: 2
+  Type: GiveDefence
+

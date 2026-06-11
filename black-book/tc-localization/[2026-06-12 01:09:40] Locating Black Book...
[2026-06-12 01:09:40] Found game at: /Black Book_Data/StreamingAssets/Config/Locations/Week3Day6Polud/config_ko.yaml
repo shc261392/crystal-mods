@@ -1,0 +1,10 @@
+﻿Name: 폴루트산
+Description: 폴루트라는 이름은 강력한 영웅으로부터 따 왔다고 한다. 적을 전부 물리친 폴루트는 지하로 내려가 세상에 다시 나올 날까지 잠들었다고 한다.
+ShortQuestDescr: 하객 추적하기
+LongQuestDescr: 알렉산더가 결혼식 행렬을 늑대로 바꿔버렸습니다! 늑대인간들을 전부 찾아 인간으로 되돌려야 합니다.
+LevelConfig:
+  Battle:
+    Name: 우두머리
+  BattleAlternative:
+    Name: 우두머리
+

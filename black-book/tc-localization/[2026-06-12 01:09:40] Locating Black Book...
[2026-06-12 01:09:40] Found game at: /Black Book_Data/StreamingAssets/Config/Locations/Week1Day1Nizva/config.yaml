@@ -1,0 +1,11 @@
+﻿IdName: Week1Day1Nizva
+Name: У реки Низовки
+Description: Эта река пересекает Полюдов кряж. Мне в Покче-то как-то рассказывали, что это слезы Полюдовы. Думаю, врут они это все.
+Scene: River_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day1/NizvaDevilFinger
+RequiredLocations:
+- Week1Day1Kachevo
+

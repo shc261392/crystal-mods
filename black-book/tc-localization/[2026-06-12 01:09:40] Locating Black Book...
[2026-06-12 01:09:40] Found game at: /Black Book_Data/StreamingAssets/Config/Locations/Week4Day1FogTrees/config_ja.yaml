@@ -1,0 +1,6 @@
+﻿Name: 霧の中の木々
+Description: 向こうに開けた場所があったような。違う、木々で開けてなんていない。
+LevelConfig:
+  Battle:
+    Name: 霧のチョルト
+

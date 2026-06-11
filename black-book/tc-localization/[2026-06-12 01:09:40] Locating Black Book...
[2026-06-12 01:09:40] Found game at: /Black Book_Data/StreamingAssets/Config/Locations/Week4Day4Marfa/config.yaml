@@ -1,0 +1,12 @@
+﻿IdName: Week4Day4Marfa
+Name: Дом Марфы
+Description: Здесь живет та знакомая девушка, которая мне гостинцы приносила.
+Scene: Izba_Peasant1
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day4/Marfa/Intro
+OnomastikonItems:
+- Onomastikon/Encyclopedia/60
+CanBeVisitedMultiple: true
+

@@ -1,0 +1,8 @@
+﻿Name: 萨尔曼湿地
+Description: 一般没人敢来这个湿地，根本没人住这儿，所以经常有各种邪灵出没。
+LevelConfig:
+  Battle:
+    Name: 萨尔曼的邪灵
+  BattleAlternative:
+    Name: 萨尔曼的邪灵
+

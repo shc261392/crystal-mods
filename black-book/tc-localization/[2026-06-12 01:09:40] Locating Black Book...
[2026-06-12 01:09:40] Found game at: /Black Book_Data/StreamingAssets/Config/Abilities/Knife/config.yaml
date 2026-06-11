@@ -1,0 +1,26 @@
+﻿Name: Ножовое вострие
+AbilityType: KNIFE
+AbilityBookPartType: KEY
+Upgrade: KNIFE_UP
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: KNIFE
+GoldCost: 45
+Gesture: true
+Effects:
+- EffectType: KRADA  
+- EffectType: STATUS_SKLAD
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: Cursed
+- EffectType: DAMAGE_SKLAD  
+  MinValue: 1
+  MaxValue: 1
+

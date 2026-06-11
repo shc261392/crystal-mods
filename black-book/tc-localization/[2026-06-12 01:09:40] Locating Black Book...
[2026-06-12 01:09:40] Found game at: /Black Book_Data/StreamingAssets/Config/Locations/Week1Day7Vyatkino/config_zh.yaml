@@ -1,0 +1,7 @@
+﻿Name: 扎布罗汀村墓地
+Description: 这片墓地早就荒了，听他们说，里边埋的都是古人，那这个地方的法力肯定不弱，我说不定能找着啥有用的东西？
+ShortQuestDescr: 去村里的墓地
+LevelConfig:
+  Battle:
+    Name: 曼卡的雠特
+

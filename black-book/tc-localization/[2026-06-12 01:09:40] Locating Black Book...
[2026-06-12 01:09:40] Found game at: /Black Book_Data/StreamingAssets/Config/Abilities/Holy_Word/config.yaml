@@ -1,0 +1,20 @@
+﻿Name: Святое слово
+AbilityType: HOLY_WORD
+Upgrade: HOLY_WORD_UP
+TargetType: ENEMY
+Sprite: HolyWordAbility
+GoldCost: 8
+Effects:
+- MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpell
+    MissTrigger: AttackSpell
+    WrapUpTime: 1
+- EffectType: DEFENCE
+  MinValue: 2
+  MaxValue: 2
+  ForceTarget: SELF
+

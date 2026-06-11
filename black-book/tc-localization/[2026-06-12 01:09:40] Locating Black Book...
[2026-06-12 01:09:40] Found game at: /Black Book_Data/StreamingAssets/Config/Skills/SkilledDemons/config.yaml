@@ -1,0 +1,9 @@
+﻿Name: Умелые черти
+SkillName: SkilledDemons
+Sprite: SkilledDemonsSkill
+Description: Увеличивает <sprite name="Sin"> за задания чертей на {CalculatedEffect}
+RequiredSkills:
+- ExactDirections
+Effects:
+- Value: 5
+  Type: DemonJobSin

@@ -1,0 +1,6 @@
+﻿Name: Knizhikh Village
+Description: I haven't heard anything about this village. What do they even do here, sell books, as the name implies?
+LevelConfig:
+  Battle:
+    Name: Undead Koldun
+

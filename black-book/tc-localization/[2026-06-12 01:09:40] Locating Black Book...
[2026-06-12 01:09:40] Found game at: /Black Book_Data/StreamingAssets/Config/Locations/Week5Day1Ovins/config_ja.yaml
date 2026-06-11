@@ -1,0 +1,7 @@
+﻿Name: ヴィルゴルトの乾燥納屋
+Description: 家に来た女性が話していた郊外の納屋とはここのことだ。
+ShortQuestDescr: オヴィンニクが人々を怖がらせる理由を知る
+LevelConfig:
+  Battle:
+    Name: オヴィンニク
+

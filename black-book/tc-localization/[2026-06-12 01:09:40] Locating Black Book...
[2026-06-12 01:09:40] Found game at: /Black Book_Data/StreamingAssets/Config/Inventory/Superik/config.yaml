@@ -1,0 +1,10 @@
+﻿Name: Суперик
+InventoryItemName: Superik
+Flavour: Больно баской у тя суперик-то!
+Sprite: IconSuperik
+Cost: 280
+Effects:
+  - Value: 3
+    Type: StatusOnBattleStart
+    StatusName: Eloquence
+

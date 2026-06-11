@@ -1,0 +1,6 @@
+﻿Name: 이스코르 시장
+Description: 이 시장에서는 한때 다양한 물건을 살 수 있었다. 아직도 열려 있으려나?
+LevelConfig:
+  Battle:
+    Name: 초르트 상인
+

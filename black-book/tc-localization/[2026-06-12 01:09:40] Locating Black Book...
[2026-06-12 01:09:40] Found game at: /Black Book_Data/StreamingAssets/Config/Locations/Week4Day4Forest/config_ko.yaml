@@ -1,0 +1,6 @@
+﻿Name: 숲 외곽
+Description: 인간의 영역이 끝나고 레쉬의 영역이 시작하는 곳이다.
+LevelConfig:
+  Battle:
+    Name: 숲의 사탄
+

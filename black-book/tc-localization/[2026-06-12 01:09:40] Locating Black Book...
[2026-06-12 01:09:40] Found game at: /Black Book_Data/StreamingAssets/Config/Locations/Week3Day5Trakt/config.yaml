@@ -1,0 +1,27 @@
+﻿IdName: Week3Day5Trakt
+Name: Чердынский тракт
+Description: Широкая дорога. Нечасто по таким ходить приходилось!
+Scene: Forest_2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Стая чертей
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSmall
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+    DemonSwarm:
+    - DemonSmall
+    - DemonSmall
+    - DemonSmall
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day5/Trakt/Intro
+    Outro: TextQuest/Week3/Day5/Trakt/Outro
+RequiredLocations:
+- Week3Day5Pokcha
+

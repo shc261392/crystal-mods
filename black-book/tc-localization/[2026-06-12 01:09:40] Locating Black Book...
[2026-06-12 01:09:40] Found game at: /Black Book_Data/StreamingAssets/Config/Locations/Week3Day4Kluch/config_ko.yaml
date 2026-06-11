@@ -1,0 +1,6 @@
+﻿Name: 차가운 개울의 여울
+Description: 이 시냇물이 길을 가로지르고 있다. 행렬을 멈춰 세우기 쉬운 곳이다.
+LevelConfig:
+  Battle:
+    Name: 행렬 근처의 초르트
+

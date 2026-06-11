@@ -1,0 +1,36 @@
+﻿IdName: Week1Day6RoadToVilgort
+Name: Дорога на Вильгорт
+Description: Здесь дорога проходит возле крутого обрыва в Колву. Случай был один. Как-то мужика леший водил да с обрыва-то этого чуть и не сбросил.
+ShortQuestDescr: Прогнать чертей с дороги
+Scene: Rift
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Черти на дороге
+    Enemies:
+    - Type: DemonSummoner
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSummoner
+    EnemyKillWin: true
+    HealthLoose: true
+  BattleAlternative:
+    Name: Черти на дороге
+    Enemies:
+    - Type: DemonSummoner
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day6/RoadToVilgort
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 3
+    PossiblePlayers:
+    - Demon
+    - Andropko
+    - Fyodor
+    DialogueFoolWin: TextQuest/Durak/WinBattleUtil
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+RequiredLocations:
+- Week1Day6MermaidWaters
+

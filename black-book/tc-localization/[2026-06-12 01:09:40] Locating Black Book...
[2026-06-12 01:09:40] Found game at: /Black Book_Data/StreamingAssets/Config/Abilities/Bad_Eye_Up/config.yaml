@@ -1,0 +1,21 @@
+﻿Name: Сглаз+
+AbilityType: BAD_EYE_UP
+TargetType: ENEMY
+Intention: DEBUFF
+Description: "Проклятие\nПротивник наносит на {MinValue} урона меньше \nПродолжительность: {MaxValue} хода."
+AbilitySpellType: STATUS
+Sprite: BadEyeAbility
+GoldCost: 12
+Effects:
+- EffectType: STATUS
+  MinValue: 3
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: Cursed
+

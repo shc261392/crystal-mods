@@ -1,0 +1,10 @@
+﻿Name: Светлое красноречие
+SkillName: LightEloquence
+Sprite: LightEloquenceSkill
+Description: Эффект складности белых слов увеличен на {CalculatedEffect}
+RequiredSkills:
+- HelpOfSaints3
+Effects:
+- Value: 1
+  Type: AdditionalWhiteSklad
+

@@ -1,0 +1,3 @@
+﻿Name: <sprite name="Defence"> 増加
+Description: あなたが生命力を失うたびに <sprite name="Defence"> が{Duration}増える
+

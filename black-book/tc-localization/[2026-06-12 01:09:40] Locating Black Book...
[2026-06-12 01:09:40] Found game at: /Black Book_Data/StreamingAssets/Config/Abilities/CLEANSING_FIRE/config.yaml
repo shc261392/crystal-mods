@@ -1,0 +1,20 @@
+﻿Name: Адское пламя
+AbilityType: CLEANSING_FIRE
+TargetType: SELF
+Intention: DEFENCE
+Sprite: CLEANSING_FIRE
+GoldCost: 24
+Effects:
+- EffectType: DEFENCE
+  MinValue: 10
+  MaxValue: 10
+- EffectType: REMOVE_ALL_BAD_STATUS
+  MinValue: 999
+  MaxValue: 999
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+

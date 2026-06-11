@@ -1,0 +1,50 @@
+﻿IdName: Week6Day2Walkway
+Name: Узкая тропа
+Description: Я чувствую, что книга уже рядом!
+Scene: TkachihaEntry
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  MusicOverride: event:/Music/ExploreDark2
+  Battle:
+    Name: Бесы в паутине
+    Enemies:
+    - Type: DemonPuzzle1
+      LevelSpawnPointType: EnemyCenter
+      HealthOverride: 64
+    NoShuffle: true
+    PuzzleDeck:
+    - BAD_EYE
+    - BAD_EYE
+    - HOHOR
+    - URAZI_UP
+    - URAZI_UP
+    - KAIN
+    - SEA_DEPTH
+    - RUDA
+    - NIKOLA_BATUSHKA
+    - SKY_HIGH
+    PuzzleManaOverride:
+    - 3
+    - 2
+    PuzzleHandOverride:
+    - 5
+    - 3
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 1
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day2/Walkway/Intro
+  CameraOverride: CMTonelsCamera
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 3
+    PossiblePlayers:
+    - Demon
+    - Andropko
+    - Fyodor
+    DialogueFoolWin: TextQuest/Durak/WinBattleUtil
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+RequiredLocations:
+- Week6Day2Web
+HideBook: true
+

@@ -1,0 +1,27 @@
+﻿AssetName: FernColor
+Health: 288
+Mana: 4
+Initiative: 2
+MoneyMin: 96
+MoneyMax: 180
+Experience: 750
+StartingStatusEffects:
+  - StatusEffectType: Ethereal
+    Duration: 13
+    HardDifficulty: true
+  - StatusEffectType: Imperishable
+    Duration: 13
+    HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: ONLY_MIDNIGHT
+    TargetType: ENEMY
+  - AbilityType: HOUR_STRUCK
+    TargetType: ENEMY
+  - AbilityType: FIRE_TIME
+    TargetType: SELF
+  - AbilityType: FIRE_WINGS
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Цвет папоротника
+

@@ -1,0 +1,30 @@
+﻿IdName: Week5Day4IskorVillage
+Name: Село Искор
+Description: Это большое и красивое село, да только сейчас, наверное, печально на него смотреть. Где живет лихорадка, все в упадок приходит.
+Scene: Village3
+LevelConfig:
+  MusicOverride: event:/Music/Explore2
+  Battle:
+    Name: Картежники
+    Enemies:
+    - Type: SnakeCopper
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonPoison
+    - Type: DemonFly
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day4/Iskor/Intro
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 3
+    PossiblePlayers:
+    - Demon
+    - Andropko
+    - Fyodor
+    DialogueFoolWin: TextQuest/Durak/WinBattleUtil
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+RequiredLocations:
+- Week5Day4BigField
+

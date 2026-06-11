@@ -1,0 +1,6 @@
+﻿Unique: true
+Name: Подавлен
+Description: Следующая атака наносит 1 <sprite name="Damage">. Уменьшается при получении <sprite name="Damage">
+Sprite: StatSuppressed
+Harmful: true
+

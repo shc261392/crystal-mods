@@ -1,0 +1,7 @@
+﻿Name: Vilisov Woods
+Description: Grim woods by the Spinner's house.
+ShortQuestDescr: Visit Vilisov Woods
+LevelConfig:
+  Battle:
+    Name: Chorts From the Woods
+

@@ -1,0 +1,10 @@
+﻿Name: Колечко серебром
+InventoryItemName: Ring
+Flavour: "Положить кольцо и заветить: покажется ли тебе жених."
+Sprite: IconRing
+Cost: 120
+Effects:
+  - Value: 1
+    Type: StatusOnBattleStart
+    StatusName: Eloquence
+

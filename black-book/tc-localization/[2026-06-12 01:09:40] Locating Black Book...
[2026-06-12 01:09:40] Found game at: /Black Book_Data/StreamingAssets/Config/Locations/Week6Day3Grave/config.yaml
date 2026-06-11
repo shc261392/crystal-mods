@@ -1,0 +1,16 @@
+﻿IdName: Week6Day3Grave
+Name: Одинокая могила
+Description: Может, забежать к нему на могилку?
+Scene: GraveIntro
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day3/Grave/Prichet
+    NoPortraitsIntro: true
+  Exploration: Week6Day3Grave
+  MusicOverride: event:/Music/Explore2
+  NoExplorationMusic: true
+  NoExplorerSpawn: true
+LightingType: STORM
+OnomastikonItems:
+- Onomastikon/Tales/37
+

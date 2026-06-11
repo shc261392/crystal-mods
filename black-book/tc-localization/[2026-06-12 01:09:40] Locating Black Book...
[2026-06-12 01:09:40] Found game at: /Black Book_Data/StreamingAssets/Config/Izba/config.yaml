@@ -1,0 +1,251 @@
+﻿QuestToVisitors:
+  Week5Day2Police:
+  - Day: 28
+    QuestConversation: Izba/Week5/Day28Niko
+    Asset: Nikolay
+  - Day: 28
+    QuestConversation: Izba/Week5/Day28Folklorist
+    Asset: PeasantWalker
+  Week5Day3Church:
+  - Day: 29
+    QuestConversation: Izba/Week5/Day29Kikimora
+    Asset: PeasantGirl
+  - Day: 29
+    QuestConversation: Izba/Week5/Day29NemzyaAftermath
+    Asset: PeasantWalker
+  Week5Day4Hospital:
+  - Day: 30
+    QuestConversation: Izba/Week5/Day30Volnuh
+    Asset: PeasantGirl
+  - Day: 30
+    QuestConversation: Izba/Week5/Day30Roaches
+    Asset: PeasantWalker
+  - Day: 30
+    QuestConversation: Izba/Week5/Day30Soha
+    Asset: PeasantWalker
+  Week1Day3IkotaVillage:
+  - Day: 3
+    QuestConversation: Izba/Week1/TarakanQuest
+    Asset: BoyWalker
+  Week1Day5Church:
+  - Day: 4
+    QuestConversation: Izba/Week1/TelegaQuest
+    Asset: DemonWalker
+  Week1Day6Bath1:
+  - Day: 6
+    QuestConversation: Izba/Week1/DemonsWithSinnerTelegaQuest
+    Asset: PeasantWalker
+  Week1Day7BrideHouse:
+  - Day: 7
+    QuestConversation: Izba/Week1/SusedkoAbandonedHut
+    Asset: DomovoiWalker
+DayToQuest:
+  37:
+  - Day: 38
+    QuestConversation: Izba/Week7/Day3Father
+    SkipVisitor: true
+  - Day: 38
+    QuestConversation: TextQuest/Week7/Day3/Altar/13thBrother
+    SkipVisitor: true
+    AppearVariable: Week1Day1MillDemonGot
+  - Day: 38
+    QuestConversation: TextQuest/Week7/Day3/Altar/Andreiko
+    SkipVisitor: true
+    AppearVariable: Week1GotAndreiko
+  - Day: 38
+    QuestConversation: TextQuest/Week7/Day3/Altar/Mikolka
+    SkipVisitor: true
+    AppearVariable: Week2Day6KabakGotDemon
+  36:
+  - Day: 37
+    QuestConversation: Izba/Week7/Day2Father
+    SkipVisitor: true
+  - Day: 37
+    QuestConversation: Izba/Week7/Day2Cauldron
+    Asset: DemonWalker
+  - Day: 37
+    QuestConversation: Izba/Week7/Day2Znatkost
+    Asset: DemonWalker
+  35:
+  - Day: 37 
+    QuestConversation: Izba/Week7/Day1Father
+    SkipVisitor: true
+  - Day: 36
+    QuestConversation: Izba/Week7/KazakQuest
+    Asset: DemonWalker
+  - Day: 36
+    QuestConversation: Izba/Week7/RunawayDevil
+    Asset: DemonWalker
+  32:
+  - Day: 33
+    QuestConversation: TextQuest/Week6/Day1/Prison/IntroAlex
+    SkipVisitor: true
+  31:
+  - Day: 32
+    QuestConversation: Izba/Week5/Day31KikimoraAftermath
+    Asset: # immediate conversation
+    CheckVariable: Week5Day3KilledKikimora
+    AlternativeAsset: PeasantGirl
+  - Day: 32
+    QuestConversation: Izba/Week5/Day28OvinnikAftermath
+    Asset: PeasantGirl
+  28:
+  - Day: 29
+    QuestConversation: Izba/Week5/Day28DedEgorQuestChoose
+    SkipVisitor: true
+  27:
+  - Day: 28
+    QuestConversation: Izba/Week5/Day27EgorIntro
+    SkipVisitor: true
+  - Day: 28
+    QuestConversation: Izba/Week5/Day27Niko
+    Asset: Nikolay
+  - Day: 28
+    QuestConversation: Izba/Week5/Day27BrideFriendsAftermath
+    Asset: PeasantGirl
+  - Day: 28
+    QuestConversation: Izba/Week5/Day27PetkaAftermath
+    Asset: GirlWalker
+  - Day: 28
+    QuestConversation: Izba/Week5/Day27FedkaAftermath
+    Asset: PeasantGirl
+    CheckVariable: Week3Day7SavedFedka
+    AlternativeAsset: HarmonistWalker
+  - Day: 28
+    QuestConversation: Izba/Week5/Day27Ovinniks
+    Asset: PeasantGirl
+  26:
+  - Day: 27
+    QuestConversation: Izba/Week4/Day27Thinking
+    SkipVisitor: true
+  25:
+  - Day: 26
+    QuestConversation: Izba/Week4/Day26Efim
+    SkipVisitor: true
+  24:
+  - Day: 25
+    QuestConversation: Izba/Week4/Day25Thinking
+    SkipVisitor: true
+  - Day: 25
+    QuestConversation: Izba/Week4/Day25Marfa
+    Asset: PeasantGirl
+  23:
+  - Day: 24
+    QuestConversation: Izba/Week4/Day24Anisia
+    Asset: PeasantGirl
+  - Day: 24
+    QuestConversation: Izba/Week4/Day24Efim
+    Asset: FilimonHumanoidWalker
+  - Day: 24
+    QuestConversation: Izba/Week4/Day24Marfa
+    Asset: PeasantGirl
+  - Day: 24
+    QuestConversation: Izba/Week4/Day24Peasant
+    Asset: PeasantWalker
+  22:
+  - Day: 23
+    QuestConversation: Izba/Week4/Day23Main
+    Asset: FilimonHumanoidWalker
+  - Day: 23
+    QuestConversation: Izba/Week4/Day23Telega
+    Asset: PeasantWalker
+  21:
+  - Day: 22
+    QuestConversation: Izba/Week4/Day22
+    SkipVisitor: true
+  18:
+  - Day: 19
+    QuestConversation: Izba/Week3/Day19
+    SkipVisitor: true
+  - Day: 19
+    QuestConversation: Izba/Quests/Week3Day4WolfQuest
+    Asset: PeasantWalker
+  17:
+  - Day: 18
+    QuestConversation: Izba/Quests/Week3Day4BrideFriend
+    Asset: PeasantGirl
+  16:
+  - Day: 17
+    QuestConversation: Izba/Quests/Week3Day3BrideFriend
+    Asset: PeasantGirl
+  - Day: 17
+    QuestConversation: Izba/Week3/SickHands
+    Asset: PeasantWalker
+  15:
+  - Day: 16
+    QuestConversation: Izba/Quests/Week3Day2Niko
+    Asset: Nikolay
+  - Day: 16
+    QuestConversation: Izba/Quests/Week3Day2Alex
+    Asset: AlexandrWalker
+  13:
+  - Day: 14
+    QuestConversation: Izba/Week2/Day14
+    SkipVisitor: true
+  - Day: 14
+    QuestConversation: Izba/Week3/Fisher
+    Asset: PeasantWalker
+  9:
+  - Day: 10
+    QuestConversation: Izba/Week2/Day10
+    Asset: Solevar
+  8:
+  - Day: 9
+    QuestConversation: Izba/Week2/Day9
+    Asset: Miller
+  7:
+  - Day: 8
+    QuestConversation: Izba/Quests/Week2Solevar
+    Asset: Solevar
+  2:
+  - Day: 3
+    QuestConversation: Izba/Week1/NikolayCardGift
+    SkipVisitor: true
+  1:
+  - Day: 2
+    QuestConversation: Izba/Week1/MillAftermathMiller
+    Asset: Miller
+  - Day: 2
+    QuestConversation: Izba/Week1/MogilevskyAftermath
+    Asset: PeasantWalker
+  - Day: 2
+    QuestConversation: Izba/Quests/IQMBodyBath1
+    Asset: Nikolay
+  - Day: 2
+    QuestConversation: Izba/Week1/KotjilQuest
+    Asset: PeasantGirl
+  0:
+  - Day: 1
+    QuestConversation: Izba/Tutorials/IzbaInit
+    SkipVisitor: true
+  - Day: 1
+    QuestConversation: Izba/Quests/IQMBodyMill
+    Asset: Miller
+DayToTitle:
+  1:
+    Date: Глава 1
+    Title: Как в бане подменяют
+    IzbaTitle: true
+  7:
+    Date: Глава 2
+    Title: Как к водяному в гости попасть
+  14:
+    Date: Глава 3
+    Title: Как колдуны свадьбы портят
+    IzbaTitle: true
+  21:
+    Date: Глава 4
+    Title: Как леший по лесу водит
+    IzbaTitle: true
+  26:
+    Date: Глава 5
+    Title: Как цветет папоротник
+    IzbaTitle: true
+  32:
+    Date: Глава 6
+    Title: Как колдуны умирают
+    IzbaTitle: true
+  35:
+    Date: Глава 7
+    Title: Как в аду грешники мучаются
+    IzbaTitle: true

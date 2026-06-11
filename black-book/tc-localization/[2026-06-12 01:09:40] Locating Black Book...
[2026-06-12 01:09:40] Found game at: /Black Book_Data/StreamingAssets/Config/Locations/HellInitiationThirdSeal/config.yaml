@@ -1,0 +1,11 @@
+﻿IdName: HellInitiationThirdSeal
+Name: Третья печать
+Scene: HellInitiation2
+LevelConfig:
+  Quest:
+    DialogueSystemName: Exploration/HellInitiation/Dialogue3
+  Exploration: HellInitiationThirdSeal
+  CinematicIntro: true
+  NoExplorationMusic: true
+  NoExplorerSpawn: true
+

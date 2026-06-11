@@ -1,0 +1,12 @@
+﻿IdName: Week4Day4Galina
+Name: Изба Галины
+Description: Это изба пропавшей, которую я на перекрестке отведывала.
+Scene: IzbaBattle
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day4/Galina/Intro
+OnomastikonItems:
+- Onomastikon/Tales/55
+CanBeVisitedMultiple: true
+

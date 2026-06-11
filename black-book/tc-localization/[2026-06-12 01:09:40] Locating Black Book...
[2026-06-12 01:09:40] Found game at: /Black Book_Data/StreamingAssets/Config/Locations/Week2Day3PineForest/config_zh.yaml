@@ -1,0 +1,8 @@
+﻿Name: 松树林
+Description: 地狱湖的沼泽地外边转圈是一片老松树林。
+LevelConfig:
+  Battle:
+    Name: 树林雠特
+  BattleAlternative:
+    Name: 昏迷的雠特
+

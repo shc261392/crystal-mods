@@ -1,0 +1,24 @@
+﻿Name: Старый взгляд
+AbilityType: FILIMON_OLD_VIEW
+AbilityBookPartType: KEY
+TargetType: ENEMY
+Intention: BUFF
+Sprite: FILIMON_OLD_VIEW
+GoldCost: 10
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Ailment
+  MinValue: 13
+  MaxValue: 13
+  VisualEffect:
+    VisualEffectType: BAD_STATUS
+    ReadyTrigger: Word
+    SpellTrigger: Attack
+    MissTrigger: Attack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+- EffectType: STATUS
+  StatusEffectType: Cursed
+  MinValue: 13
+  MaxValue: 13
+

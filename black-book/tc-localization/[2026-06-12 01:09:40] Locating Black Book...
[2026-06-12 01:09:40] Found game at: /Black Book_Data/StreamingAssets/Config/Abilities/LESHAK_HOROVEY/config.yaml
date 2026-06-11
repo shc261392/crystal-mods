@@ -1,0 +1,18 @@
+﻿Name: Лешак Хоровей
+AbilityType: LESHAK_HOROVEY
+Upgrade: LESHAK_HOROVEY_UP
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: LESHAK_HOROVEY
+GoldCost: 13
+Effects:
+- EffectType: STATUS
+  MinValue: 7
+  MaxValue: 7
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+  StatusEffectType: DamageOnItemUse
+

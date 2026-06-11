@@ -1,0 +1,8 @@
+﻿Name: Underwater crawlspace
+Description: This cave leads to the inner domain of the vodyanoi.
+ShortQuestDescr: Get to the Cave
+LongQuestDescr: You fell into the lake and have found yourself in the domain of the vodyanoi. Vakul has sent a mermaid, an old acquaintance of yours, as a guide. Where will this demoness lead you?
+LevelConfig:
+  Battle:
+    Name: Pike
+

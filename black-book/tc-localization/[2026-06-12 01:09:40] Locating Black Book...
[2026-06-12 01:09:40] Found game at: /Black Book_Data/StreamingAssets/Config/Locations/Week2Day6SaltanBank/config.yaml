@@ -1,0 +1,11 @@
+﻿IdName: Week2Day6SaltanBank
+Name: Берег Салтановки
+Description: Как бы на берегу меня водяной раньше времени не изловил. Я еще с разбойниками-то не поговорила.
+Scene: LakeBank
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day6/Bank/Intro
+RequiredLocations:
+- Week2Day6Saltanovo
+

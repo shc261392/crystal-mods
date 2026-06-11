@@ -1,0 +1,27 @@
+LocationToAchievement:
+  WindmillExploration:
+    INITIATION
+  Week1Day7BrideHouse: 
+    ASPEN_TREE
+  Week2Day7WaterMill: # Also is given in TextQuest/Week2/Day7/WaterMill/OutroChoice
+    WATER
+  Week3Day7Lair: # Also is given in TextQuest/Week3/Day7/Lair/Niko 
+    WOLF
+  Week4Day7Leshy: # TextQuest/Week4/Day7/Leshy/LeshyAwake 
+    PINE_TREE
+  Week5Day6StormField:
+    FERN
+  Week6Day3Crossroads:
+    DEAD_MAN
+  Week7Day3ThroneLava: # TextQuest/Week7/Day3/Throne/PrePahseTwo TextQuest/Week7/Day3/Throne/Outro
+    BLACK_SORCERER
+  Week7Day3EpilogueGrave:
+    BLACK_BOOK
+  AllyEgorCemetery:
+    EGOR_LOYAL
+  AllyProshkaChurch:
+    PROSHKA_LOYAL
+  AllyHeadHouse:
+    HEAD_LOYAL
+  AllyNikolayForest:
+    NIKOLAY_LOYAL

@@ -1,0 +1,16 @@
+﻿Name: Острый коготь
+AbilityType: HALF_DEMON_ATTACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: THIRTEENTH_CLAW
+GoldCost: 3
+Effects:
+- MinValue: 3
+  MaxValue: 7
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

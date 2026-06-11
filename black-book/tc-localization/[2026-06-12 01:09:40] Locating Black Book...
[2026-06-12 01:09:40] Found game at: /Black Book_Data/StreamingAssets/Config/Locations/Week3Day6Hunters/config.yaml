@@ -1,0 +1,11 @@
+﻿IdName: Week3Day6Hunters
+Name: Охотничья изба
+Description: В этой избушке останавливаются охотники, когда уходят на зимнюю добычу.
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day6/Hunters/Intro
+RequiredLocations:
+- Week3Day6Swamp
+

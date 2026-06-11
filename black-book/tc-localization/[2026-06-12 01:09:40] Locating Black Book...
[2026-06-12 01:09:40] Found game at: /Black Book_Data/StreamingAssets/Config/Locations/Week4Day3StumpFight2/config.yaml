@@ -1,0 +1,23 @@
+﻿IdName: Week4Day3StumpFight2
+Name: Второй лешачий замок
+Description: ''
+LocationType: COMBAT
+Scene: LeshiySonNest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Второй лешачий замок
+    Enemies:
+    - Type: ForestDemonRoots
+      LevelSpawnPointType: EnemyRight
+    - Type: ForestDemonRoots
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day3/Stump/Battle
+    Outro: TextQuest/Week4/Day3/Stump/BattleOutro2
+  CameraOverride: CMBattleCamera
+RequiredLocations:
+- Week4Day3BadPlace
+

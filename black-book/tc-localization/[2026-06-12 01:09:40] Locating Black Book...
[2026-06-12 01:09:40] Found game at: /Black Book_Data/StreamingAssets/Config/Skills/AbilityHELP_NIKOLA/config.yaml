@@ -1,0 +1,10 @@
+Name: HELP_NIKOLA
+SkillName: AbilityHELP_NIKOLA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityNIKOLA_MILOSTIV_ROGUELIKE
+SpriteOffsetX: -89
+SpriteOffsetY: 15
+Effects:
+- Type: AbilityUnlock
+  StringData: HELP_NIKOLA

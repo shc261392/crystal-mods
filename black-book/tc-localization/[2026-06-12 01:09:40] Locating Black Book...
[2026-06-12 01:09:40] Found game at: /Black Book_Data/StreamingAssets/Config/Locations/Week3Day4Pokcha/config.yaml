@@ -1,0 +1,11 @@
+﻿IdName: Week3Day4Pokcha
+Name: Прощание с красотой
+Description: Венчальный день начинается с долгого обряда.
+Scene: IzbaWedding
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day4/Pokcha/Intro
+  Exploration: Week3Day4Pokcha
+  MusicOverride: event:/Music/ExploreLight
+  NoExplorerSpawn: true
+

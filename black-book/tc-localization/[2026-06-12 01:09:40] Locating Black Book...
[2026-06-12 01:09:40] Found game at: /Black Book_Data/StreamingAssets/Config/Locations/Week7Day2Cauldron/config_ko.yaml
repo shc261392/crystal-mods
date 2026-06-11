@@ -1,0 +1,7 @@
+﻿Name: 초르트의 가마솥
+Description: 저 방향에서 비명이 들린다. 인간의 영혼들이 고문당하는 모양이다.
+ShortQuestDescr: 악마의 초대장
+LevelConfig:
+  Battle:
+    Name: 가마솥 사이에서
+

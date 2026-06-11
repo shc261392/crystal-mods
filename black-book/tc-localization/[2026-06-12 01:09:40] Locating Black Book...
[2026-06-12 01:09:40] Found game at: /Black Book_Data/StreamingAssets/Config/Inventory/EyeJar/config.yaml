@@ -1,0 +1,10 @@
+Name: Глаза в банке
+InventoryItemName: EyeJar
+Type: Artefact
+Flavour: Пошел вот мужик-от к разбойникам за золотом,  да  разбойники-то ему ишо и глаза выкопали.
+Sprite: IconEyeJar
+Expendable: false
+Cost: 400
+Effects:
+  - Value: 2
+    Type: AdditionalFoolLook 

@@ -1,0 +1,56 @@
+﻿IdName: AllyKarnyshWell
+Name: Заброшенный колодец
+Description: Что там за силуэт виднеется? Колодец ли, че ли?
+ShortQuestDescr: По следу нечисти
+Scene: ForestTall
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Колодезный
+    Enemies:
+    - Type: DemonPuzzleAttack1
+      LevelSpawnPointType: EnemyCenter
+      HealthOverride: 24
+    NoShuffle: true
+    PuzzleDeck:
+    - URAZI
+    - GEORGY_BATUSHKA
+    - WORD_PRAYER
+    - WORD_PRAYER
+    - GEORGY_BRAVE
+    - WORD_PRAYER
+    - WORD_PRAYER
+    - WORD_PRAYER
+    - WORD_PRAYER
+    - WORD_PRAYER
+    - WORD_PRAYER
+    - REVUN
+    - ONCE_AND_FOREVER
+    - AMEN
+    - LOCK
+    - LOCK
+    - LOCK
+    - LOCK
+    - LOCK
+    - LOCK
+    PuzzleManaOverride:
+    - 2
+    - 1
+    PuzzleHandOverride:
+    - 5
+    - 3
+    ForceAlly: Karnysh
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 2
+  Quest:
+    DialogueSystemName: TextQuest/AllyKarnysh/Well/Intro
+    Outro:  TextQuest/AllyKarnysh/Well/Outro
+  Exploration: AllyKarnyshWell
+  CameraOverride: CMQuestCamera
+  NoExplorerSpawn: true
+RequiredLocations:
+- AllyKarnyshTsidovka
+Secondary: AllyKarnyshWell
+

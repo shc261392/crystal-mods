@@ -1,0 +1,22 @@
+﻿IdName: Week5Day3Forests
+Name: Анборские леса
+Description: Старые леса возле деревни Анбор. Прямо Немзя-то вспоминается.
+Scene: Forest_2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Лесные бесы
+    Enemies:
+    - Type: SwampFire
+      LevelSpawnPointType: EnemyCenter
+    - Type: Chud3
+    - Type: Chud1
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day3/Forests/Intro
+OnomastikonItems:
+- Onomastikon/Tales/61
+

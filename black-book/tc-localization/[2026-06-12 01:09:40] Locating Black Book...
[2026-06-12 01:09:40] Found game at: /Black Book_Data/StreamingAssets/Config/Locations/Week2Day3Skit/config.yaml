@@ -1,0 +1,13 @@
+﻿IdName: Week2Day3Skit
+Name: Скит
+Description: Слышала, что где-то здесь живет монах-отшельник.
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day3/SkitIntro
+RequiredLocations:
+- Week2Day3VerhChugr
+OnomastikonItems:
+- Onomastikon/Encyclopedia/14
+

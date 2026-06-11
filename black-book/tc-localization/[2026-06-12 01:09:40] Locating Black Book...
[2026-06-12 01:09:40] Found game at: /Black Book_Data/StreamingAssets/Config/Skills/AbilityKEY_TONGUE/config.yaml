@@ -1,0 +1,10 @@
+Name: KEY_TONGUE
+SkillName: AbilityKEY_TONGUE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityRUDA
+SpriteOffsetX: 47
+SpriteOffsetY: 31
+Effects:
+- Type: AbilityUnlock
+  StringData: KEY_TONGUE

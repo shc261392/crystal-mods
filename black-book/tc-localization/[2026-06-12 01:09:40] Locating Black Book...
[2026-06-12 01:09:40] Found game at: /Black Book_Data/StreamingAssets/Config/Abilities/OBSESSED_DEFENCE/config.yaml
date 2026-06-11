@@ -1,0 +1,16 @@
+﻿Name: Защита одержимого
+AbilityType: OBSESSED_DEFENCE
+TargetType: SELF
+Intention: DEFENCE
+Sprite: OBSESSED_DEFENCE
+GoldCost: 3
+Effects:
+- EffectType: DEFENCE
+  MinValue: 15
+  MaxValue: 15
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    WrapUpTime: 0.5
+

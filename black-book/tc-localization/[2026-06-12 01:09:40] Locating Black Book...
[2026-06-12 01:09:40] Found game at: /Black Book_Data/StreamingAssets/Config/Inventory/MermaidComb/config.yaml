@@ -1,0 +1,9 @@
+﻿Name: Гребень нечистого
+InventoryItemName: MermaidComb
+Flavour: Эта расческа пахнет речным илом и, кажется, никогда не высыхает
+Sprite: MermaidComb
+Cost: 90
+Effects:
+- Value: 5
+  Type: IncreaseHealth
+

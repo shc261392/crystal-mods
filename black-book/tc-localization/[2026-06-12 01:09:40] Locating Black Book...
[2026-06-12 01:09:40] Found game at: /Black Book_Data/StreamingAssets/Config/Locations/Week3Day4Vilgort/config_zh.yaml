@@ -1,0 +1,8 @@
+﻿Name: 维葛特的圣三一教堂
+Description: 快到教堂了！
+ShortQuestDescr: 保护接亲队伍
+LongQuestDescr: 有个科尔敦想坏了新人的喜事儿。我得保护接亲的队伍，不让大家受了诅咒，然后把客人带到维葛特。
+LevelConfig:
+  Battle:
+    Name: 万事通对万事通
+

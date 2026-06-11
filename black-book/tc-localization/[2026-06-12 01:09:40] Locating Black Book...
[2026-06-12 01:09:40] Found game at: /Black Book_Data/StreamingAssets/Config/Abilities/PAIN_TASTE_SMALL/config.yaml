@@ -1,0 +1,29 @@
+﻿Name: Вкус боли
+AbilityType: PAIN_TASTE_SMALL
+TargetType: ENEMY
+Intention: DEBUFF
+Sprite: PAIN_TASTE
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Poison
+  MinValue: 5
+  MaxValue: 5
+- EffectType: STATUS
+  StatusEffectType: Waste
+  MinValue: 5
+  MaxValue: 5
+- EffectType: STATUS
+  StatusEffectType: Decomposure
+  MinValue: 5
+  MaxValue: 5
+- EffectType: STATUS
+  StatusEffectType: Cursed
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell2
+    SpellTrigger: Spell2
+    MissTrigger: Miss
+    SkipReady: true
+

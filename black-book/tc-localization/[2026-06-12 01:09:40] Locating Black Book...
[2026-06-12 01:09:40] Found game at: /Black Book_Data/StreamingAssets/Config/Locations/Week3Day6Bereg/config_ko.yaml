@@ -1,0 +1,6 @@
+﻿Name: 추디 강기슭
+Description: 사냥꾼이 기슭으로 이어지는 늑대의 흔적을 발견한 듯하다.
+LevelConfig:
+  Battle:
+    Name: 굶주린 늑대
+

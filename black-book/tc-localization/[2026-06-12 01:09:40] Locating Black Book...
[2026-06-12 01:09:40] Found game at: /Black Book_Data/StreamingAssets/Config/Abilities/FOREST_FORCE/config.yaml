@@ -1,0 +1,21 @@
+﻿Name: Сила – лесу
+AbilityType: FOREST_FORCE
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: FOREST_FORCE
+GoldCost: 8
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Vampirism
+  MinValue: 13
+  MaxValue: 13
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

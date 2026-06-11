@@ -1,0 +1,34 @@
+﻿IdName: IzbaHellGates
+Name: Врата преисподней
+Scene: HellGatesIzba
+IsIzba: true
+LevelConfig:
+  MixerSnapshot: "snapshot:/Cave"
+  Exploration: IzbaHellGates
+  CinematicIntro: true
+  CameraOverride: CMIzbaCamera
+  NoExplorationMusic: true
+  NoExplorerSpawn: true
+  MusicOverride: "event:/Music/IzbaHell"
+  IzbaJingleOverride: "event:/Music/ComingBackHell"
+  IzbaReceiveSoundOverride: "event:/Misc/VisitorHell"
+  SpecialLevel: true
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 4
+ForbiddenSpawnAllies:
+- DedEgor
+- DedEgorLoyal
+- Nikolay
+- NikolayLoyal
+- Proshka
+- ProshkaLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+AdditionalIzbaFoolPlayers:
+  - Sitri
+  - Demon
+  - Mikolko
+  - Andropko

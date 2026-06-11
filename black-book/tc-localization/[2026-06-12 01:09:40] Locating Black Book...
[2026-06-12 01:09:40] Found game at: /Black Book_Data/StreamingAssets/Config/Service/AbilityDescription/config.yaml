@@ -1,0 +1,141 @@
+EffectTypeToDescrKey:
+  DAMAGE:
+    Value: "{CalculatedEffect} <sprite name=\"Damage\">"
+  DAMAGE_BLACK:
+    Value: "%DamageBlack% {CalculatedEffect} <sprite name=\"Damage\">"
+  DAMAGE_SKLAD:
+    Value: "{ColorAccentStart}%Sklad%{ColorAccentEnd}\n{CalculatedEffect} <sprite name=\"Damage\">"
+  DAMAGE_FIERCE:
+    Value: "{ColorAccentStart}%Fierce%{ColorAccentEnd} {NumericData}\n{CalculatedEffect} <sprite name=\"Damage\">"
+  STATUS:
+    Value: "{ColorAccentStart}{StatusName}{ColorAccentEnd} {CalculatedEffect}"
+  DAMAGE_WITH_DOUBLE_ON_STATUS:
+    Value: "{CalculatedEffect} <sprite name=\"Damage\">\n%DoubleDamageOnStatus% {StatusName}"
+  DEFENCE_FOR_STATUS:
+    Value: "%DEFENCE_FOR_STATUS%"
+  DEFENCE_WITH_DOUBLE_ON_STATUS:
+    Value: "{CalculatedEffect} <sprite name=\"Defence\">\n %DoubleDefenceOnStatus% {StatusName}"
+  STATUS_MULTIPLIER:
+    Value: "%StatusMultiplier% {StatusName}"
+  STATUS_SKLAD:
+    Value: "{ColorAccentStart}%Sklad%{ColorAccentEnd}\n{ColorAccentStart}{StatusName}{ColorAccentEnd} {CalculatedEffect}"
+  DEFENCE:
+    Value: "{CalculatedEffect} <sprite name=\"Defence\">"
+  DEFENCE_SKLAD:
+    Value: "{ColorAccentStart}%Sklad%{ColorAccentEnd}\n{CalculatedEffect} <sprite name=\"Defence\">"
+  HEAL:
+    Value: "{CalculatedEffect} <sprite name=\"Health\">"
+  HEAL_SKLAD:
+    Value: "{ColorAccentStart}%Sklad%{ColorAccentEnd}\n{CalculatedEffect} <sprite name=\"Health\">"
+  KRADA:
+    Value: "{ColorAccentStart}%Krada%{ColorAccentEnd}"
+  FIRM:
+    Value: "{ColorAccentStart}%Firm%{ColorAccentEnd} {CalculatedEffect}"
+  FIRM_DESTROY:
+    Value: "%FirmDestroy%"
+  NEW_BOOKMARK:
+    Value: "%NewBookmark%"
+  REMOVE_ALL_BAD_STATUS:
+    Value: "%RemoveAllBadStatus%"
+  REMOVE_ALL_GOOD_STATUS:
+    Value: "%RemoveAllGoodStatus%"
+  REMOVE_ALL_STATUS:
+    Value: "%RemoveAllStatus%"
+  REMOVE_BAD_STATUS:
+    Value: "%RemoveBadStatus%"
+  REMOVE_GOOD_STATUS:
+    Value: "%RemoveGoodStatus%"
+  REMOVE_GOOD_STATUS_NO_DEF:
+    Value: "%RemoveGoodStatusNoDef%"
+  REMOVE_STATUS:
+    Value: "%RemoveStatus% {ColorAccentStart}{StatusName}{ColorAccentEnd}"
+  SACRIFICE:
+    Value: "{ColorAccentStart}%Sacrifice%{ColorAccentEnd} {CalculatedEffect}"
+  SACRIFICE_SKLAD:
+    Value: "{ColorAccentStart}%SacrificeSklad%{ColorAccentEnd} {CalculatedEffect}"
+  DAMAGE_ON_DEFENCE:
+    Value: "%DamageOnDefence%"
+  DAMAGE_ON_MONEY:
+    Value: "%DAMAGE_ON_MONEY% ({CalculatedEffect} <sprite name=\"Rouble\">)"
+  DAMAGE_ON_DAMAGE:
+    Value: "%DAMAGE_ON_DAMAGE% ({CalculatedEffect} <sprite name=\"Damage\">)"
+  DEFENCE_ON_MONEY:
+    Value: "%DEFENCE_ON_MONEY%\n({CalculatedEffect} <sprite name=\"Rouble\">)"
+  DAMAGE_ON_SINS:
+    Value: "%DAMAGE_ON_SINS% (%Minimum1% 1) ({CalculatedEffect} <sprite name=\"Damage\">)"
+  HEAL_ON_SINS:
+    Value: "%HEAL_ON_SINS% (%Minimum1% 1) ({CalculatedEffect} <sprite name=\"Health\">)"
+  STATUS_ON_SINS:
+    Value: "%STATUS_ON_SINS% (%Minimum1% 1) ({ColorAccentStart}{StatusName}{ColorAccentEnd} {CalculatedEffect})"
+  GIVE_MONEY:
+    Value: "%GIVE_MONEY% {CalculatedEffect} <sprite name=\"Rouble\">"
+  SUMMON:
+    Value: "%SummonEffect%"
+  FLEE:
+    Value: "%Flee%"
+  MUG:
+    Value: "%Mug% {CalculatedEffect}<sprite name=\"Rouble\">"
+  DEFENCE_DESTROY:
+    Value: "%DefenceDestroy%"
+  DOUBLE_DEFENCE:
+    Value: "%DoubleDefence%"
+  STATUS_DAMAGE:
+    Value: "%StatusDamage%"
+  DOUBLE_DAMAGE:
+    Value: "%DoubleDamage%"
+  SIN:
+    Value: "{CalculatedEffect} <sprite name=\"Sin\">"
+  DAMAGE_ALL_IF_DEAD:
+    Value: "%DamageAllIfDead%"
+  DAMAGE_FOR_NOT_WORKING_DEMONS:
+    Value: "{MinValue} <sprite name=\"Damage\"> %DamageForNotWorkingDemons% \n (%Minimum1% 1 <sprite name=\"Damage\">)"
+  ADD_EFFECT_TO_BOOK:
+    Value: "%AddEffectToBook% {StringData}"
+  ADD_EFFECT_TO_ZAGOVOR:
+    Value: "%AddEffectToZagovor% {StringData}"
+  READ_ABILITY_AS_GESTURE:
+    Value: "%Find% %AbilitySelectType{StringData}% %AndReadIt%"
+  ADD_GESTURE_TO_BOOK:
+    Value: "%AddGestureToBook%"
+  STATUS_FIERCE:
+    Value: "%StatusFierce1% {ColorAccentStart}{StatusName}{ColorAccentEnd} %StatusFierce2% {NumericData}\n{ColorAccentStart}{StatusName}{ColorAccentEnd} {CalculatedEffect}"
+  ZAGOVOR_DAMAGE:
+    Value: "%ZagovorDamage% x{MinValue}\n({CalculatedEffect}<sprite name=\"Damage\">)"
+  LOSS_HEALTH_DAMAGE:
+    Value: "%LossHealthDamage%\n({CalculatedEffect}<sprite name=\"Damage\">)"
+  LOSS_HEALTH_DEFENCE:
+    Value: "%LossHealthDefence%"
+  LOSS_HEALTH_DEFENCE_SKLAD:
+    Value: "{ColorAccentStart}%Sklad%{ColorAccentEnd}\n%LossHealthDefence%\n({CalculatedEffect}<sprite name=\"Defence\">)"
+  RESTORE_ALLY_ABILITIES:
+    Value: "%RestoreAllyAbilities%"
+  DEFENCE_KEEP_FOR_ENEMIES:
+    Value: "%DefenceForEnemies% {MinValue}<sprite name=\"Defence\">"
+  DEFENCE_FOR_KRADA_WORDS:
+    Value: "%DefenceForKradaWords1% {MinValue} <sprite name=\"Defence\"> %DefenceForKradaWords2%"
+  DEFENCE_FIERCE:
+    Value: "{ColorAccentStart}%Fierce%{ColorAccentEnd} {NumericData}\n{CalculatedEffect} <sprite name=\"Defence\">"
+  SUMMON_INSTEAD:
+    Value: "%SummonInsteadDesc%"
+  DEFENCE_DAMAGE:
+    Value: "%DefenceDamage%"
+  STATUS_DAMAGE_ALL:
+    Value: "%StatusDamageAll%"
+  NEW_BOOKMARK_SKLAD_ORDER:
+    Value: "%NewBookmarkOrder%"
+  NEW_BOOKMARK_SKLAD_KEY:
+    Value: "%NewBookmarkKey%"
+  GOLD_ON_TARGET_DEATH:
+    Value: "%GoldOnTargetDeath%"
+  LOOK_NEXT:
+    Value: "%LookNext%"
+  IMMEDIATE:
+    Value: "{ColorAccentStart}%Immediate%{ColorAccentEnd}"
+  TAKE:
+    Value: "%Take%"
+  TAKE_MAX:
+    Value: "%TakeMax%"
+  ZACHIN:
+    Value: "%Zachin%"
+  KRADA_RESTORE:
+    Value: "%KRADA_RESTORE%"

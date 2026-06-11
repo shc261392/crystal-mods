@@ -1,0 +1,19 @@
+﻿Name: Истощение
+AbilityType: EXHAUSTION
+TargetType: ENEMY
+Intention: DEBUFF
+AbilitySpellType: STATUS
+Sprite: EXHAUSTION
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Waste
+  MinValue: 20
+  MaxValue: 20
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    WrapUpTime: 0.100000001
+    SkipReady: true
+

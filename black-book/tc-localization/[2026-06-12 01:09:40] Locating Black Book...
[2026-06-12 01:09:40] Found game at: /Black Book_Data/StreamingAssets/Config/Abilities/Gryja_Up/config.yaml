@@ -1,0 +1,19 @@
+﻿Name: Грыжа +
+AbilityType: GRYJA_UP
+TargetType: ENEMY
+Intention: ATTACK
+Description: >
+  {MinValue} урона
+Sprite: GryjaAbility
+GoldCost: 10
+Effects:
+- MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

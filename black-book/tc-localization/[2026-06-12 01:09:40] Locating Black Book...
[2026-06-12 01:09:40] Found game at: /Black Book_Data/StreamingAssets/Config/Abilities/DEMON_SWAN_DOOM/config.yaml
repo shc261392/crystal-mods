@@ -1,0 +1,18 @@
+﻿Name: Лебединое огненное озеро
+AbilityType: DEMON_SWAN_DOOM
+TargetType: PLAYER
+Intention: DEBUFF
+Sprite: CrossAbility
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+  StatusEffectType: Doom
+

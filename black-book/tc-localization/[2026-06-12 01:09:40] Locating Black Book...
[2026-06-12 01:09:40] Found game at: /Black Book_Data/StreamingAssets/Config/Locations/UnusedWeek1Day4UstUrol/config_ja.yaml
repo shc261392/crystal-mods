@@ -1,0 +1,7 @@
+﻿Name: ウスチ＝ウロルカ村
+Description: この村の村人から、夜に墓地で誰かの話し声が聞こえると伝えられた。死者が生き返ったのだろうか？
+ShortQuestDescr: ウスチ＝ウロルカ村の墓地を調べる
+LevelConfig:
+  Battle:
+    Name: エリヤのチョルト
+

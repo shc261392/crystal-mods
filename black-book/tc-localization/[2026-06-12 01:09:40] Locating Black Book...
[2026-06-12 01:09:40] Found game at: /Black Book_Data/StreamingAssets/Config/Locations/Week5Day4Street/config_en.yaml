@@ -1,0 +1,6 @@
+﻿Name: Narrow Street
+Description: To get to the top of Iskorsk Hillfort, I need to walk between these two rocks. They call this crawlspace a narrow street
+LevelConfig:
+  Battle:
+    Name: Fever Servants
+

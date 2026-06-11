@@ -1,0 +1,8 @@
+﻿Name: 강가의 양조사
+Description: 강가의 커다란 솥에서 맥주를 만들고 있다.
+ShortQuestDescr: 맥주 저주 풀기
+LongQuestDescr: 누군가가 강가에서 결혼식을 위해 만들던 맥주에 저주를 내렸습니다. 옵데리하의 짓은 아닐까요?
+LevelConfig:
+  Battle:
+    Name: 맥주 저주
+

@@ -1,0 +1,7 @@
+﻿Name: 布罗斯科依山沟
+Description: 有老乡前几天在这个地方看见一个巨大的旋风，他们想让我去看看是怎么回事儿。
+ShortQuestDescr: 除掉山沟的魔鬼
+LevelConfig:
+  Battle:
+    Name: 雠特旋风
+

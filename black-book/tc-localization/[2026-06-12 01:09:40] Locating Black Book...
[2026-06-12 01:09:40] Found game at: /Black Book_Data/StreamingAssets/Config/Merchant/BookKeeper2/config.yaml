@@ -1,0 +1,10 @@
+﻿Name: Книжник
+Id: BookKeeper
+AssetName: BookKeeper
+DialogueName: TextQuest/Merchant/BookKeeper/Conversation
+TearPageCost: 5
+ChangePageCost: 4
+BookKeeper: true
+Min: 6
+Max: 6
+

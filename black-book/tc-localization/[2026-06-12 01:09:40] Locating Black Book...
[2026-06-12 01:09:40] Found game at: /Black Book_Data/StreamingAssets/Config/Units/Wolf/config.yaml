@@ -1,0 +1,21 @@
+﻿AssetName: Wolf
+Health: 30
+HealthRandomAdd: 10
+Mana: 4
+Initiative: 1
+MoneyMin: 12
+MoneyMax: 18
+Experience: 150
+UnitAI:
+  AIAbilities:
+  - AbilityType: WOLF_BITE
+    TargetType: ENEMY
+  - AbilityType: WOLF_FLEE
+    TargetType: SELF
+  - AbilityType: WOLF_YEARNING_ORDER
+    TargetType: PLAYER
+  - AbilityType: WOLF_YEARNING_KEY
+    TargetType: PLAYER
+  CastingType: UNIT_HARDCODED
+Name: Волк
+

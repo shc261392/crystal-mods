@@ -1,0 +1,8 @@
+﻿AssetName: Player
+Health: 13
+Mana: 3
+Initiative: 99
+Name: Василиса
+DamagedSound: event:/Units/Player/Damaged
+DefendedSound: event:/Units/Player/DamagedProtected
+

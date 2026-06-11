@@ -1,0 +1,20 @@
+﻿IdName: Week4Day4Forest
+Name: Лесная опушка
+Description: Тут заканчиваются владения людей и начинается царство лешего.
+Scene: Forest_4
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Лесной сатана
+    Enemies:
+    - Type: Menqw
+      LevelSpawnPointType: EnemyCenter
+    - Type: Chud1
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day4/Forest/Intro
+LightingType: FOG_2
+CanBeVisitedMultiple: true
+

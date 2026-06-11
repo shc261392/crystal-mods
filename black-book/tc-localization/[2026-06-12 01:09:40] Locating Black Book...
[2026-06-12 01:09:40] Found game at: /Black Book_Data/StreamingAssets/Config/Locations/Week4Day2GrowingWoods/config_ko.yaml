@@ -1,0 +1,6 @@
+﻿Name: 무성한 숲
+Description: 이 숲은 마치 주인이 없는 것처럼 마구잡이로 자라, 농부들의 힘으로는 길들일 수가 없다.
+LevelConfig:
+  Battle:
+    Name: 길 초르트
+

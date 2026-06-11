@@ -1,0 +1,13 @@
+﻿IdName: Week4Day1UnmovableWood
+Name: Бурелом
+Description: Как тут пробраться? Человеку здесь не место.
+Scene: Forest_old
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day1/Map2/UnmovableWood
+  CameraOverride: CMQuestCamera3
+LightingType: FOG_2
+MoonType: NONE
+

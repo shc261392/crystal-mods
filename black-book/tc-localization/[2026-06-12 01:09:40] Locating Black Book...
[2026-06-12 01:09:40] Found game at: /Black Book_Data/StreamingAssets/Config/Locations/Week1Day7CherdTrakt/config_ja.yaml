@@ -1,0 +1,7 @@
+﻿Name: ソリカムスク街道
+Description: この広い道はヴィルゴルトとチェルディニを結んでいる。そしてその先にいくつかの街があって、ペルミにまで続いている。
+ShortQuestDescr: 道にザゴヴォルを唱える
+LevelConfig:
+  Battle:
+    Name: 野盗
+

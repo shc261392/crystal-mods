@@ -1,0 +1,7 @@
+﻿Unique: true
+Name: Праведность
+Description: >-
+  Проклятые противники получают двойной <sprite name="Damage">
+  Ходов до завершения: {Duration}
+Sprite: StatDoubleDamageOnCursed
+

@@ -1,0 +1,16 @@
+﻿Name: Самоварный коготь
+AbilityType: DEMON_SAMOVAR_ATTACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: DEMON_SAMOVAR_ATTACK
+GoldCost: 3
+Effects:
+- MinValue: 1
+  MaxValue: 6
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

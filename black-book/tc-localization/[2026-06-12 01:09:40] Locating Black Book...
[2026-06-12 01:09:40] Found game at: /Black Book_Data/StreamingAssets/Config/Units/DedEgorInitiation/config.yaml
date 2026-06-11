@@ -1,0 +1,12 @@
+﻿AssetName: DedEgor
+Health: 33
+Mana: 7
+Initiative: 2
+UnitAI:
+  AISpecialAbilities:
+  - AbilityType: ALTAR2
+    TargetType: PLAYER
+    CheckValue: 6
+  CastingType: RANDOM
+Name: Дед Егор
+

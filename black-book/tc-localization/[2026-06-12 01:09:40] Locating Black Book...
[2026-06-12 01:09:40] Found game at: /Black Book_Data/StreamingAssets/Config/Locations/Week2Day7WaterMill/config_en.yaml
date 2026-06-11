@@ -1,0 +1,8 @@
+﻿Name: Watermill
+Description: Watermills are often considered to be bad places. This is because millers often strike deals with vodyanois.
+ShortQuestDescr: Talk to the vodyanoi
+LongQuestDescr: In the pothouse, you met bandits who turned out to be chorts. Time to tell Vakul the details of this incident.
+LevelConfig:
+  Battle:
+    Name: Vodyanoi
+

@@ -1,0 +1,13 @@
+﻿IdName: AllyProshkaSwamps
+Name: Люльвинские болота
+Description: С каждым днем как будто болота разрастаются. Того и гляди Янидор поглотят.
+Scene: Marshes2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/Proshka
+  Quest:
+    DialogueSystemName: TextQuest/AllyProshka/Swamps/Intro
+LightingType: WIND
+RequiredLocations:
+- AllyProshkaBridge
+

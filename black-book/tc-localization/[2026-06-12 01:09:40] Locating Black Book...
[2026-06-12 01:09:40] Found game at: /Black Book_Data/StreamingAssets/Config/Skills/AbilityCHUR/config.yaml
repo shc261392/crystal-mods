@@ -1,0 +1,10 @@
+Name: CHUR
+SkillName: AbilityCHUR
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityNIKOLA_MILOSTIV_ROGUELIKE
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: CHUR

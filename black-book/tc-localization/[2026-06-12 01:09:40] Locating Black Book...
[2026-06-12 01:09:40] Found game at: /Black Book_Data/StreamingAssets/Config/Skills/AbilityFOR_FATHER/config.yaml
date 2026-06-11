@@ -1,0 +1,10 @@
+Name: FOR_FATHER
+SkillName: AbilityFOR_FATHER
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityZACHERTIT
+SpriteOffsetX: -2
+SpriteOffsetY: -84
+Effects:
+- Type: AbilityUnlock
+  StringData: FOR_FATHER

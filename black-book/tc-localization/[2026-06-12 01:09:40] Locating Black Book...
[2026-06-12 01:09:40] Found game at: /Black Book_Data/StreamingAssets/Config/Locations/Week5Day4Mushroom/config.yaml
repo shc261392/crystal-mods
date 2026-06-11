@@ -1,0 +1,13 @@
+﻿IdName: Week5Day4Mushroom
+Name: Роща с волнухами
+Description: В этом лесу баба одна слышала какие-то завывания. Наверное, опять бесы лесные шутки свои шутят.
+ShortQuestDescr: Узнать, что за черт в грибной роще
+Scene: ForestBirch
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day4/Mushroom/Intro
+RequiredLocations:
+- Week5Day4Road
+Secondary: Week5Day4Mushroom
+

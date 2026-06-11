@@ -1,0 +1,7 @@
+﻿Name: 창고
+Description: 악마의 흔적이 이 사냥 창고로 이어져 있습니다.
+ShortQuestDescr: 악령 추적하기
+LevelConfig:
+  Battle:
+    Name: 에레트닉
+

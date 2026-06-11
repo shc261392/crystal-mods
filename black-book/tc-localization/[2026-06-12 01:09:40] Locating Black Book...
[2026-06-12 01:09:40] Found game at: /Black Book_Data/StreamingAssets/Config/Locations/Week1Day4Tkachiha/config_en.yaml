@@ -1,0 +1,8 @@
+﻿Name: The Spinner's Hut
+Description: There's a witch's hut just outside Pyanteg village. The Spinner is a powerful and famous knower. Even in Vilgort, people have heard of her. Some of the girls went to her for love potions. Old Egor doesn't offer such services.
+ShortQuestDescr: Get a belt from the Spinner
+LongQuestDescr: You have decided to obtain an enchanted belt from a witch called the Spinner. Old Egor has come along with you. The Spinner is a powerful witch to deal with, so you might need his help.
+LevelConfig:
+  Battle:
+    Name: Unholy Spirit
+

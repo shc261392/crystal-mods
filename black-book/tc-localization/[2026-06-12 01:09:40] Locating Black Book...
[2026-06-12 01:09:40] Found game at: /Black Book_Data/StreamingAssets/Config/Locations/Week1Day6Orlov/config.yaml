@@ -1,0 +1,9 @@
+﻿IdName: Week1Day6Orlov
+Name: Орловская роща
+Description: Лес, растущий у Орловской курьи, тоже называют Орловским. Тут часто можно найти полезные травы – для колдовского-то ремесла.
+Scene: Forest_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Herb/TirlichHerb
+

@@ -1,0 +1,9 @@
+IdName: RoguelikeVictory
+Name: Бесконечные битвы
+Scene: HellThroneLava
+LevelConfig: 
+  Exploration: RoguelikeVictory
+  MixerSnapshot: snapshot:/Cave
+  NoExplorationMusic: true
+  CameraOverride: CMRoguelikeWinCamera
+  Roguelike: true

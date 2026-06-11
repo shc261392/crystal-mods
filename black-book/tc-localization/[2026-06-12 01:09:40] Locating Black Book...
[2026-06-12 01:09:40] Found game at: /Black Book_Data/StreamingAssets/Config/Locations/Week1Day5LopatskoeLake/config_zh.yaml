@@ -1,0 +1,7 @@
+﻿Name: 罗帕斯科湖
+Description: 这片湖是个弧形，在科尔瓦河左岸。
+ShortQuestDescr: 归还鱼篓
+LevelConfig:
+  Battle:
+    Name: 湖边雠特
+

@@ -1,0 +1,16 @@
+﻿IdName: IzbaHunterCampPrePryaha
+Name: За Пряхой!
+Scene: HunterCampIzba
+IsIzba: true
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: "event:/Music/Izba"
+  SpecialLevel: true
+LightingType: STORM
+ForbiddenSpawnAllies:
+- DedEgor
+- DedEgorLoyal
+- Nikolay
+- NikolayLoyal
+HideBook: true
+

@@ -1,0 +1,10 @@
+﻿Name: ポリュドフ山
+Description: ポリュドフとは強き英雄の名だと言われる。すべての敵を打ち破ったポリュドフは、地下に潜って眠り、来たるべき時を待ったという。
+ShortQuestDescr: 来賓のあとを追う
+LongQuestDescr: アレクサンドルが婚礼行列を狼に変えてしまった。狼人間をすべて見つけて、人間の姿に戻してあげないと。
+LevelConfig:
+  Battle:
+    Name: 群れのリーダー
+  BattleAlternative:
+    Name: 群れのリーダー
+

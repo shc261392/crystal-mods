@@ -1,0 +1,7 @@
+﻿Name: ウスチ＝カイーブ
+Description: エゴールおじいちゃんはこの辺りのどこかに薬草を隠した。教えてくれたら、見つけるのに苦労しないのに！
+ShortQuestDescr: エゴールの薬草を手に入れる
+LevelConfig:
+  Battle:
+    Name: エゴールの隠し場所
+

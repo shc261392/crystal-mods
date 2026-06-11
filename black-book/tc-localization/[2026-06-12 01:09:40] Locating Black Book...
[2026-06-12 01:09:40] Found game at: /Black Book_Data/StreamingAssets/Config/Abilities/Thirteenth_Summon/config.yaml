@@ -1,0 +1,19 @@
+﻿Name: Чертово обещание
+AbilityType: THIRTEENTH_SUMMON
+TargetType: SELF
+AbilitySpellType: SUMMON
+Sprite: THIRTEENTH_SUMMON
+GoldCost: 3
+Effects:
+- EffectType: SUMMON
+  MinValue: 1
+  MaxValue: 1
+  SummonEffectData:
+    UnitTypes:
+    - Demon
+    - DemonFierce
+    - DemonSmall
+    - DemonPoison
+    - DemonBooker
+    - SamovarDemon
+

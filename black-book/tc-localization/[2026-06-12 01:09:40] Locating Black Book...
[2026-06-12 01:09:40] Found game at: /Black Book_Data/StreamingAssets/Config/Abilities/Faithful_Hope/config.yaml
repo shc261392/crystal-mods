@@ -1,0 +1,21 @@
+﻿Name: Верным – утверждение
+AbilityType: FAITHFUL_HOPE
+Upgrade: FAITHFUL_HOPE_UP
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+Sprite: FAITHFUL_HOPE
+GoldCost: 23
+Effects:
+- EffectType: STATUS_SKLAD
+  MinValue: 4
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal3OrderWhite
+    MissTrigger: Seal3OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: DefenceGive
+

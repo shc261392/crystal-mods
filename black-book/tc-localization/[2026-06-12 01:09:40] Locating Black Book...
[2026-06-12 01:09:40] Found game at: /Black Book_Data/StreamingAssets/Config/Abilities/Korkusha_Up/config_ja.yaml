@@ -1,0 +1,6 @@
+﻿Name: コルクーシャ+
+Description: >-
+  敵が生命力を失ったときに{MinValue}回復する
+
+  持続：{MaxValue}ターン
+

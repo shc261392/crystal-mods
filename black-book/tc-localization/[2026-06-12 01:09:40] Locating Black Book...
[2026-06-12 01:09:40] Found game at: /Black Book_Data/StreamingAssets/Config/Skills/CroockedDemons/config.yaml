@@ -1,0 +1,10 @@
+﻿Name: Кривые черти
+SkillName: CroockedDemons
+Sprite: CroockedDemonsSkill
+Description: Уменьшает <sprite name="Sin"> за задания чертей на {CalculatedEffect} (минимум до 1го)
+RequiredSkills:
+- ConfusedDirections
+Effects:
+- Value: -5
+  Type: DemonJobSin
+

@@ -1,0 +1,6 @@
+﻿Name: 怪树
+Description: 那些树看起来跟会动似的。
+LevelConfig:
+  Battle:
+    Name: 恶魔陷阱
+

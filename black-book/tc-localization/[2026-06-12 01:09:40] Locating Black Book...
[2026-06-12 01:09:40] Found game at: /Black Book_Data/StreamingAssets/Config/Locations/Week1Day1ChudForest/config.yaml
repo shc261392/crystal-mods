@@ -1,0 +1,19 @@
+﻿IdName: Week1Day1ChudForest
+Name: Чудской лес
+Description: 'Наверное, тут чудь жила, оттого и название такое. Тут находили всяческие бляшки чудские, да только примета это плохая: не христиане их делали-то.'
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Чудские черти
+    Enemies:
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSmall
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day1/ChudForestNew
+RequiredLocations:
+- Week1Day1Nizva
+

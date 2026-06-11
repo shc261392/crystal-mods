@@ -1,0 +1,19 @@
+﻿Name: Петькина дудка
+InventoryItemName: PetkaWhistle
+Flavour: Садился на бел-горюч камень и начал играть в гуселки яровчаты
+Sprite: PetkaWhistle
+Cost: 200
+Effects:
+  - Value: 1
+    Type: StatusImmunity
+    StatusName: Immunity
+    StringData: CrownWhite
+    StatusPermanent: true
+    StatusUnremovable: true
+  - Value: 1
+    Type: StatusImmunity
+    StatusName: Immunity
+    StringData: CrownBlack
+    StatusPermanent: true
+    StatusUnremovable: true
+

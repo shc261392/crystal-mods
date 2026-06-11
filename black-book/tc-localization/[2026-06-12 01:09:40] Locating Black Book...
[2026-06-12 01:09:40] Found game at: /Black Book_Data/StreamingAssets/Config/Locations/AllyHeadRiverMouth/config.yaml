@@ -1,0 +1,17 @@
+﻿IdName: AllyHeadRiverMouth
+Name: Устье Бондюжинки
+Description: 'Его схоронили за церковной оградой: тоже нечистый покойник... Ну, тут и сомневаться не будешь – только взглянешь на его глаз-то злобный.'
+ShortQuestDescr: Посетить могилу Левонтия
+Scene: River_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/Explore2
+  Quest:
+    DialogueSystemName: TextQuest/AllyHead/RiverMouth/Intro
+  Exploration: AllyHeadRiverMouth
+  CameraOverride: CMQuestCamera3
+  NoExplorerSpawn: true
+RequiredLocations:
+- AllyHeadBondug
+Secondary: AllyHeadRiverMouth
+

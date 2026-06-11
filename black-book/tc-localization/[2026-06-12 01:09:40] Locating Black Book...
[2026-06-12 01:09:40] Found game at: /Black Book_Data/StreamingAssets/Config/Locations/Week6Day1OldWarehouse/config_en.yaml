@@ -1,0 +1,8 @@
+﻿Name: Old Warehouse
+Description: Aha! Here's the basement exit!
+ShortQuestDescr: Break Free
+LongQuestDescr: Alexander and the Spinner have imprisoned you and have taken your Book. You need to free yourself and recover your artifacts!
+LevelConfig:
+  Battle:
+    Name: Sharp-Toothed Swan
+

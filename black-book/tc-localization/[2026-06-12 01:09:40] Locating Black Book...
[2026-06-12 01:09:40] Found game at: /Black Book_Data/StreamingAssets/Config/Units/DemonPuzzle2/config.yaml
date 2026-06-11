@@ -1,0 +1,16 @@
+﻿AssetName: Demon
+Health: 33
+Mana: 4
+Initiative: 1
+MoneyMin: 1
+MoneyMax: 2
+Experience: 200
+UnitAI:
+  AIAbilities:
+  - AbilityType: DEMON_SWAN_ATTACK
+    TargetType: ENEMY
+  CastingType: CONSEQUITIVE
+Name: Головоломный бес
+DeathSound: event:/Units/Demon/Death
+DamagedSound: event:/Units/Demon/Damaged
+

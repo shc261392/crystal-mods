@@ -1,0 +1,18 @@
+﻿Name: Чары на ветер
+AbilityType: WIND
+Upgrade: WIND_UP
+TargetType: ENEMY
+Description: '{MinValue} урона'
+Sprite: WindAbility
+GoldCost: 8
+Effects:
+- MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

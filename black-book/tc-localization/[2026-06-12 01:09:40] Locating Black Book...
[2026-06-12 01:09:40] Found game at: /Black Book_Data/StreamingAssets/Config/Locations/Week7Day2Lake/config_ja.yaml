@@ -1,0 +1,6 @@
+﻿Name: 火の海
+Description: 前方に光が見える。でも、何か不吉な予感がする。
+LevelConfig:
+  Battle:
+    Name: コンベア
+

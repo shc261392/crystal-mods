@@ -1,0 +1,16 @@
+﻿Name: Коготь
+AbilityType: DEMON_ATTACK_PUZZLE_DAMAGE_1
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: Obderiha
+GoldCost: 3
+Effects:
+- MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

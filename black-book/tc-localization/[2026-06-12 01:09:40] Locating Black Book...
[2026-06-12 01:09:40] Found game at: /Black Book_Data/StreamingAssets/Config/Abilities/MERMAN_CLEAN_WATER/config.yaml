@@ -1,0 +1,21 @@
+﻿Name: Чистая вода
+AbilityType: MERMAN_CLEAN_WATER
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+Sprite: MERMAN_CLEAN_WATER
+GoldCost: 12
+Effects:
+- EffectType: DEFENCE
+  MinValue: 33
+  MaxValue: 33
+- EffectType: REMOVE_ALL_BAD_STATUS
+  MinValue: 999
+  MaxValue: 999
+  VisualEffect:
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 0.5
+    SkipReady: true
+

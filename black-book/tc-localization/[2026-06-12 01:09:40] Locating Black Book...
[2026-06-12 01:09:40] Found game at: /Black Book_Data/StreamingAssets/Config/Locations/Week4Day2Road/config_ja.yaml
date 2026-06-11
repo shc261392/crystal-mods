@@ -1,0 +1,6 @@
+﻿Name: かび臭い道
+Description: 十字路に行くにはこの道を通ればいい。
+LevelConfig:
+  Battle:
+    Name: 森の魔物
+

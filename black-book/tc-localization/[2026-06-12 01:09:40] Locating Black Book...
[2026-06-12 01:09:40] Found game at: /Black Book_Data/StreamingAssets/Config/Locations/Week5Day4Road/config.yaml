@@ -1,0 +1,24 @@
+﻿IdName: Week5Day4Road
+Name: Дорога на Ныроб
+Description: Говорят, этой дорогой вели царя какого-то на смерть. Че-то там было такое в Ныробе, уж не помню.
+Scene: Road
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Путевые бесы
+    Enemies:
+    - Type: SwampFire
+      LevelSpawnPointType: EnemyCenter
+    - Type: Demon
+    - Type: DemonFierce
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+    DemonSwarm:
+    - SnakeGaduka
+    - SnakeCopper
+    - DemonFly
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day4/Road/Intro
+

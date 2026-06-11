@@ -1,0 +1,16 @@
+﻿IdName: Week5Day4BigField
+Name: Деревня Большое Поле
+Description: В этой деревне и дома большие, и поле у них большое, и живут-то зажиточно.
+Scene: Village
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  MusicOverride: event:/Music/ExploreLight
+  Merchants:
+  - Peddler3
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day4/BigField/Intro
+RequiredLocations:
+- Week5Day4Road
+OnomastikonItems:
+- Onomastikon/Encyclopedia/55
+

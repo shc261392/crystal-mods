@@ -1,0 +1,10 @@
+﻿Name: Хитрость II
+SkillName: Trick2
+Sprite: Trick2Skill
+Description: Можно послать еще {CalculatedEffect} черта на бессмысленную работу
+RequiredSkills:
+- Trick1
+Effects:
+- Value: 1
+  Type: DemonMeaninglessJob
+

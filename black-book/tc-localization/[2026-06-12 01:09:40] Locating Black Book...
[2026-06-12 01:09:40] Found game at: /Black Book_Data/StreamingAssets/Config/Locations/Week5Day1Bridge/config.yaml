@@ -1,0 +1,25 @@
+﻿IdName: Week5Day1Bridge
+Name: Мост через Приток
+Description: У мосточка этого часто блазнит. Наверно, водяные черти из Колвы приплывают
+Scene: Forest_Bridge_2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Мостовые черти
+    Enemies:
+    - Type: SwampFire
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonFly
+      LevelSpawnPointType: EnemyLeft
+    - Type: DemonFly
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day1/Bridge/Intro
+LightingType: EVENING
+MoonType: NONE
+RequiredLocations:
+- Week5Day1Bereg
+

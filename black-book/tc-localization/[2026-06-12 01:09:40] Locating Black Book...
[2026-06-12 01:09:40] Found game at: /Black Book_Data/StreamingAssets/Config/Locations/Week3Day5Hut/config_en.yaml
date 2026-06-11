@@ -1,0 +1,7 @@
+﻿Name: Hunter's Hut
+Description: The hunter's hut is on the outskirts of the town. I hope Fairbanks hasn't lied to me!
+ShortQuestDescr: Get to the Hut
+LevelConfig:
+  Battle:
+    Name: Wolf Assault
+

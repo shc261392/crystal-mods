@@ -1,0 +1,6 @@
+﻿Name: 狼人間のねぐら
+Description: この山の主がここに住んでいる。
+LevelConfig:
+  Battle:
+    Name: ポリュドフの狼
+

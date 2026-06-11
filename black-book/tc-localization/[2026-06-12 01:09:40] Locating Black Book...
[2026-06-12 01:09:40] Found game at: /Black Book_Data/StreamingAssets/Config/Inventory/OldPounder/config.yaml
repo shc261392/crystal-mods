@@ -1,0 +1,9 @@
+﻿Name: Старинная ступка
+InventoryItemName: OldPounder
+Flavour: Мельнику эта ступка досталась по наследству, наверное. Уж больно она старая. Чувствую, что наговоры на нее были прочитаны.
+Sprite: OldPounder
+Cost: 60
+Effects:
+- Value: 1
+  Type: AdditionalHeal
+

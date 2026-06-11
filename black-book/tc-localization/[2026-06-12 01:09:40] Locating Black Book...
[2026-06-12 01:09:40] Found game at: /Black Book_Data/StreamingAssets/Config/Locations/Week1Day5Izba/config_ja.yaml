@@ -1,0 +1,6 @@
+﻿Name: エゴールじいさんのイズバ
+Description: イズバの近くにある森へ行って、チョルトを見つけて倒さないと！
+LevelConfig:
+  Battle:
+    Name: イズバ近くのチョルト
+

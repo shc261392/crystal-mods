@@ -1,0 +1,17 @@
+﻿Name: Разоил +
+AbilityType: RAZOIL_UP
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: Razoil
+GoldCost: 13
+Effects:
+- EffectType: STATUS
+  MinValue: 3
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+  StatusEffectType: DefenceGive
+

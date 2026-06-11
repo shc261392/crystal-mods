@@ -1,0 +1,1 @@
+Name: Ловкость рук ISkillName: RoguelikeJuggle1Sprite: Juggle1SkillDescription: Увеличивает количество используемых предметов в ход на {CalculatedEffect}RequiredSkills:  - AbilityFISH_WHALEEffects:- Value: 1  Type: AdditionalItemUsage

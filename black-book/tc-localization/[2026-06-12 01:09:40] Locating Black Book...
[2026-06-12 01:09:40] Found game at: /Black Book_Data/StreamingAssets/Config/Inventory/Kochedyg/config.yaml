@@ -1,0 +1,10 @@
+﻿Name: Кочедыг
+InventoryItemName: Kochedyg
+Flavour: Клали коточик-то в гроб, дак пригодится в той жизни лапти-то делать
+Sprite: Kochedyg
+Cost: 160
+Effects:
+- Value: 2
+  Type: StatusBonus
+  StatusName: Cursed
+

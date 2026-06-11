@@ -1,0 +1,95 @@
+TypeToDefaultFormat:
+  Artefact: "+#;-#;0" 
+  Herb: "#;0"
+EffectTypeToDescrKey:
+  Status: 
+    Value: "{StatusName} {CalculatedEffect}"
+  AdditionalDamage: 
+    Value: "%InventoryAdditionalDamage%"
+  Heal:
+    Value: "%InventoryHeal%"
+  IncreaseHealth: 
+    Value: "{CalculatedEffect} <sprite name=\"Health\">"
+  ReduceDamage: 
+    Value: "%InventoryReduceDamage%"
+    Format: "#;0"    
+  AdditionalHeal: 
+    Value: "%InventoryAdditionalHeal%"
+  DamageOnLowHealth: 
+    Value: "%InventoryDamageOnLowHealth%"
+  DefenceOnBattleStart: 
+    Value: "%InventoryDefenceOnBattleStart%"
+    Format: "#;0"
+  RemoveDefence: 
+    Value: "%DefenceDestroy%"
+  GiveDefence: 
+    Value: "{CalculatedEffect} <sprite name=\"Defence\">"
+  RemoveHarmfulStatus: 
+    Value: "%InventoryRemoveHarmfulStatus%"
+  RemoveStatus: 
+    Value: "%InventoryRemoveStatus%"
+  WasteProtectionChance: 
+    Value: "%InventoryWasteProtectionChance%"
+    Format: "#;0"    
+  AdditionalBattleReward: 
+    Value: "%InventoryAdditionalBattleReward%"
+  InventoryItemUseFreeChance: 
+    Value: "%InventoryItemUseFreeChance%"
+    Format: "#;0"    
+  AdditionalItemsPerTurn: 
+    Value: "%InventoryAdditionalItemsPerTurn%"
+  HealOnBattleStart: 
+    Value: "%InventoryHealOnBattleStart%"
+    Format: "#;0"
+  StatusImmunity: 
+    Value: "%InventoryStatusImmunity%"
+  AbilityOnBattleStart: 
+    Value: "%InventoryAbilityOnBattleStart%"
+  StatusBonus: 
+    Value: "{StatusName} {CalculatedEffect}"
+  ExperienceMultiplier: 
+    Value: "%InventoryExperienceMultiplier%"
+  AdditionalDefence: 
+    Value: "%InventoryAdditionalDefence%"
+  Damage: 
+    Value: "{CalculatedEffect} <sprite name=\"Damage\">"
+  StatusOnBattleStart: 
+    Value: "%InventoryStatusOnBattleStart%"
+  ReduceDemons:
+    Value: "%InventoryReduceDemons%"
+    Format: "#;0"
+  StatusBonusChance:
+    Value: "%StatusBonusChance%"
+    Format: "#;0"
+  AdditionalDemonHealth:
+    Value: "%AdditionalDemonHealth%"
+    Format: "#;0"
+  AdditionalSins:
+    Value: "%AdditionalSins% {CalculatedEffect}"
+    Format: "#;0"
+  HealMultiplier:
+    Value: "%HealMultiplier%"
+    Format: "#;0"
+  KradaImmunityChance:
+    Value: "%KradaImmunityChance%"
+    Format: "#;0"
+  AllyRecharge:
+    Value: "%InventoryAllyRecharge%"
+    Format: "#;0"
+  SpikesDamageImmunity:
+    Value: "%SpikesDamageImmunity%"
+    Format: "#;0"
+  SpikesForAll:
+    Value: "%SpikesForAll%"
+    Format: "#;0"
+  RemoveNotHarmfulStatus:
+    Value: "%RemoveGoodStatus%"
+    Format: "#;0"
+  AdditionalFoolSwitch:
+    Value: "%AdditionalFoolSwitch%"
+    Format: "#;0"
+  AdditionalFoolLook:
+    Value: "%AdditionalFoolLook%"
+    Format: "#;0"
+  UnknownAlwaysChests:
+    Value: "%UnknownAlwaysChests%"

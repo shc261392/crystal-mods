@@ -1,0 +1,25 @@
+﻿IdName: Week5Day6LightiningOutskirt
+Name: Молнии на опушке
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Чертова погоня
+    Enemies:
+    - Type: DemonFly
+      LevelSpawnPointType: EnemyCenter
+    - Type: SwampFire
+    - Type: DemonFierce
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+    DemonSwarm:
+    - DemonFierce
+    - SwampFire
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day6/LightiningOutskirt/Intro
+    Outro: TextQuest/Week5/Day6/LightiningOutskirt/Outro
+  MusicOverride: event:/Music/DialogueSuspense
+LightingType: STORM
+MoonType: NONE
+

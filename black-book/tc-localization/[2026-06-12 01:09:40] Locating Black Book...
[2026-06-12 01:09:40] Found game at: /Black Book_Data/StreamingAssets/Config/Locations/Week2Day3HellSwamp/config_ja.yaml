@@ -1,0 +1,6 @@
+﻿Name: 地獄沼
+Description: 沼の周辺はよく洪水が起こる。この沼もそうしてできたものだ。
+LevelConfig:
+  Battle:
+    Name: ウトプリニク
+

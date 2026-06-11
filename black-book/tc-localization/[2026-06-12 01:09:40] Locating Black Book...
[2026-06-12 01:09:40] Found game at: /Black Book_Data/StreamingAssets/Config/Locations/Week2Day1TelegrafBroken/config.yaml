@@ -1,0 +1,14 @@
+﻿IdName: Week2Day1TelegrafBroken
+Name: Разорванный телеграф
+Description: Кто мог разорвать телеграф? Непогода, а может, и сила нечистая сопротивляется новинам?
+ShortQuestDescr: Найти беса, что порвал телеграф
+Scene: Telegraph
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day1/TelegraphBroken
+  Exploration: BrokenTelegraph
+RequiredLocations:
+- Week2Day1Telegraf
+Secondary: Week2Day1TelegrafBroken
+

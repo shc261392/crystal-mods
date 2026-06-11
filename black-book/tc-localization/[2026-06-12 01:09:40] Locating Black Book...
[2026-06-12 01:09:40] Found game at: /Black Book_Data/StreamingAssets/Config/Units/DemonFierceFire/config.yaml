@@ -1,0 +1,19 @@
+﻿AssetName: DemonFierceFire
+Health: 70
+HealthRandomAdd: 5
+Mana: 4
+Initiative: 1
+MoneyMin: 15
+MoneyMax: 30
+Experience: 250
+UnitAI:
+  AIAbilities:
+  - AbilityType: DEMON_FIERCE_OBEREG
+    TargetType: SELF
+    ConsequitiveRounds: 1
+  - AbilityType: DEMON_ATTACK_FIERCE_FIRE
+    TargetType: ENEMY
+    ConsequitiveRounds: 4
+  CastingType: RANDOM
+Name: Пылающий чёрт
+

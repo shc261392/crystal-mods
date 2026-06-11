@@ -1,0 +1,8 @@
+﻿Name: Приказы I
+SkillName: Orders1
+Sprite: Orders1Skill
+Description: Получите дополнительное слово с приказом каждый ход в вашу руку
+Effects:
+- Value: 1
+  Type: AdditionalBookmarkOrder
+

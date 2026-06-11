@@ -1,0 +1,11 @@
+﻿Name: Варакуль
+InventoryItemName: Varakul
+Flavour: У Мани Варакуль был. Это книга такая ворожить была.
+Sprite: IconIconVarakul
+Cost: 200
+Effects:
+  - Value: 3
+    Type: StatusOnBattleStart
+    StatusName: Vampirism
+  - Value: 3
+    Type: DamageOnLowHealth

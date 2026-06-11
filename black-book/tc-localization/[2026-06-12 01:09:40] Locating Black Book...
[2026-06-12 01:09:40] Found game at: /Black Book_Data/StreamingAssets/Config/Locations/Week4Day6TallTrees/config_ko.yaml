@@ -1,0 +1,6 @@
+﻿Name: 키 큰 전나무 숲
+Description: 또 숲이다. 이곳 나무는 무척 크다!
+LevelConfig:
+  Battle:
+    Name: 숲 초르트
+

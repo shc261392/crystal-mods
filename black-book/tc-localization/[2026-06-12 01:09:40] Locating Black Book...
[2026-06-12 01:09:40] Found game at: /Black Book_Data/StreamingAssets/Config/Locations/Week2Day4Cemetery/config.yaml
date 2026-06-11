@@ -1,0 +1,22 @@
+﻿IdName: Week2Day4Cemetery
+Name: Кладбище
+Description: 'Утопленники живут хоть и долго, да не вечно: кого рыбы съедят, а кто от тяжелой работы окончательно умирает.'
+Scene: LakeBottom
+LevelConfig:
+  Battle:
+    Name: Озерное кладбище
+    Enemies:
+    - Type: DemonSummoner
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonFierce
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day4/Cemetery
+  MusicOverride: event:/Music/Underwater
+  MixerSnapshot: snapshot:/Underwater
+RequiredLocations:
+- Week2Day4Village
+

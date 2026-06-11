@@ -1,0 +1,18 @@
+﻿IdName: Week7Day2Pits
+Name: Чертова яма
+Description: Не разглядеть, че там творится. Мрак один, всполохи пламени.
+Scene: HellTarPits
+LevelConfig:
+  Battle:
+    Name: Смоляные бесы
+    Enemies:
+    - Type: DemonSoldier
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSoldier
+      LevelSpawnPointType: EnemyLeft
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week7/Day2/Pits/Intro
+    Outro: TextQuest/Week7/Day2/Pits/Outro
+  MixerSnapshot: snapshot:/Cave

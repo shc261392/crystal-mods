@@ -1,0 +1,25 @@
+﻿IdName: Week4Day4Mir
+Name: Мирская сходка
+Description: Деревню выстроили вокруг амбаров, чтобы легче зерно брать. Тут я всех собрать могу, когда пойму, кто нечистым притворяется.
+ShortQuestDescr: Найти лешего
+LongQuestDescr: Вам нужно выбираться из этой Немзи! По словам ворона, единственный выход – одолеть лешего, который скрывается где-то в деревне под видом крестьянина или крестьянки.
+Scene: LostVillage
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day4/Mir/Intro
+  Exploration: Outside
+  NoExplorerSpawn: true
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+- Proshka
+- ProshkaLoyal
+CanBeVisitedMultiple: true
+

@@ -1,0 +1,11 @@
+IdName: Credits
+Name: Разработчики
+Scene: OutroGood
+BlockScreenKeys: true
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week7/Day3/Throne/CreditsSong
+  Exploration: Credits
+  NoExplorationMusic: true
+  NoExplorerSpawn: true
+  MusicOverride: "event:/Music/Songs/01_Kukushechka" 

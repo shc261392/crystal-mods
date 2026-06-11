@@ -1,0 +1,8 @@
+﻿Name: コルヴァ川河畔
+Description: 砂埃が舞うこの道は、コルヴァ川に沿って曲がりくねっている。
+LevelConfig:
+  Battle:
+    Name: 根のチョルト
+  BattleAlternative:
+    Name: 根のチョルト
+

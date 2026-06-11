@@ -1,0 +1,15 @@
+﻿IdName: Week5Day2SoborStreet
+Name: Соборная улица
+Description: Это, наверное, самая красивая улица. Церквей вон сколько.
+Scene: PoliceStation
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day2/SoborStreet/Intro
+  CameraOverride: CMStreetCamera2
+  DialogueCameraOverride: CMDialogueCameraStreet
+  MusicOverride: event:/Music/ExploreLight
+LightingType: EVENING
+RequiredLocations:
+- Week5Day2Prokopiy
+Secondary: Week5Day2Hotel
+

@@ -1,0 +1,25 @@
+﻿IdName: Week6Day2Book
+Name: Черная книга
+Description: Пряхин голбец не может тянуться далеко. Я должна отыскать эту старуху!
+ShortQuestDescr: Вернуть Черную книгу
+LongQuestDescr: Пряха отобрала ваш колдовской манускрипт! Вы отправились в ее избу, где нашли загадочный провал в горнице, и спустились вниз в поисках своего артефакта.
+Scene: TkachihaSpiderIntro
+LevelConfig:
+  Quest:
+    IzbaAftermath: Izba/Week6/PreEgor
+  Exploration: Week6Day2Book
+  CinematicIntro: true
+  CameraOverride: CMSneakBook
+  MusicOverride: event:/Music/Stealth
+  MixerSnapshot: snapshot:/Cave
+RequiredLocations:
+- Week6Day2Walkway
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+OnomastikonItems:
+- Onomastikon/Tales/35
+HideBook: true
+

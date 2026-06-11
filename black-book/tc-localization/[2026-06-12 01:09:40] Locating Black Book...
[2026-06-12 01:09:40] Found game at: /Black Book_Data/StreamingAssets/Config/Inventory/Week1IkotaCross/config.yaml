@@ -1,0 +1,7 @@
+﻿Name: Крест Акулины
+InventoryItemName: Week1IkotaCross
+Description: Один из предметов, необходимых для освобождения девушки из бани
+Flavour: Крест, который носила Акулина, одержимая Прошкой
+Sprite: Week1IkotaCross
+NotForSale: true
+CanNotBeDropped: true

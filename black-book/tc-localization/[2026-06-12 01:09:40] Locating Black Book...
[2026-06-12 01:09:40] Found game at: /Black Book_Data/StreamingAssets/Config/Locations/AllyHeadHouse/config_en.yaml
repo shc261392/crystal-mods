@@ -1,0 +1,8 @@
+﻿Name: Levonty's Izba
+Description: And there's the Levonty's izba. Interesting, is there anything left of it? Anyone home?
+ShortQuestDescr: Teach Levonty to fly
+LongQuestDescr: The old eretnik has devised a way to regain his mobility. He'll find the kladnik who's holed up in his izba and eat him.
+LevelConfig:
+  Battle:
+    Name: Kladnik
+

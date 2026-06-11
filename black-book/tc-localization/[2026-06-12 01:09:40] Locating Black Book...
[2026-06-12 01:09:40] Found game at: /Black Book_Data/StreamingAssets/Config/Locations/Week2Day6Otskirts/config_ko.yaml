@@ -1,0 +1,6 @@
+﻿Name: 정착지
+Description: 마을에서 멀리 떨어진 곳에 집 여러 채가 있다. 언젠가 새로운 마을로 성장할지도 모른다.
+LevelConfig:
+  Battle:
+    Name: 통 초르트
+

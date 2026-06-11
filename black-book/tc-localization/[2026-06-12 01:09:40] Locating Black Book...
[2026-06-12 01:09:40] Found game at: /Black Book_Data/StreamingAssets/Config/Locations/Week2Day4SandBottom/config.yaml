@@ -1,0 +1,12 @@
+﻿IdName: Week2Day4SandBottom
+Name: Песчаное дно
+Description: Я думала, что утонула! Оказывается, я могу дышать под водой не хуже, чем на суше.
+Scene: LakeBottom
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day4/SandBottom
+  MusicOverride: event:/Music/Underwater
+  MixerSnapshot: snapshot:/Underwater
+OnomastikonItems:
+- Onomastikon/Encyclopedia/30
+

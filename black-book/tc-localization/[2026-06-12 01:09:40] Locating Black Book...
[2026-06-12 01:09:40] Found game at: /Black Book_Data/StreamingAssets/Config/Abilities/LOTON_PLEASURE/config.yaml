@@ -1,0 +1,20 @@
+﻿Name: Лотон Угодник
+AbilityType: LOTON_PLEASURE
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: LOTON_PLEASURE
+GoldCost: 16
+Effects:
+- EffectType: RESTORE_ALLY_ABILITIES
+- EffectType: HEAL
+  MinValue: 4
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal2KeyWhite
+    MissTrigger: Seal2KeyWhite
+    WrapUpTime: 0.2
+    SkipReady: true

@@ -1,0 +1,11 @@
+﻿Name: Монастырева нить
+InventoryItemName: MonasteryNeedle
+Flavour: Ноне вера-то нитки клубок. Где по старой вере, где мирская – не поймешь толком
+Sprite: MonasteryNeedle
+NotForSale: true
+CanNotBeDropped: true
+Cost: 140
+Effects:
+- Value: 5
+  Type: AdditionalHeal
+

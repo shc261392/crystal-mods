@@ -1,0 +1,18 @@
+﻿AssetName: DemonFly
+Health: 13
+Mana: 4
+Initiative: 1
+MoneyMin: 9
+MoneyMax: 18
+Experience: 200
+StartingStatusEffects:
+- StatusEffectType: AttackAbsorb
+  Duration: 2
+UnitAI:
+  AIAbilities:
+  - AbilityType: DEMON_FLY_FLY
+    TargetType: SELF
+  - AbilityType: DEMON_FLY_ATTACK
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Летучий чёрт

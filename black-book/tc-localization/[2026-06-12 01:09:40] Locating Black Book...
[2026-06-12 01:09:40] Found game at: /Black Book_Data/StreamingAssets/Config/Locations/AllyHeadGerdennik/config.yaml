@@ -1,0 +1,15 @@
+﻿IdName: AllyHeadGerdennik
+Name: Жерденник
+Description: Так называют дорогу из маленьких жердей через болота всякие. Как бы ноги-то не переломать.
+ShortQuestDescr: Разыскать пропавших крестьян
+Scene: Marshes2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark2
+  Quest:
+    DialogueSystemName: TextQuest/AllyHead/Gerdennik/Intro
+  CameraOverride: CMQuestCamera1
+RequiredLocations:
+- AllyHeadBigOchga
+Secondary: AllyHeadSwamps
+

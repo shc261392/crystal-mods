@@ -1,0 +1,1 @@
+Name: Знание ключейSkillName: RoguelikeKeysKnowledgeSprite: KeysKnowledgeSkillCustomRequirementKey: RoguelikeBossNeeded2Description: Увеличивает количество ключей в заговоре на {CalculatedEffect}ResetBlock: trueEffects:- Value: 1  Type: AdditionalKey

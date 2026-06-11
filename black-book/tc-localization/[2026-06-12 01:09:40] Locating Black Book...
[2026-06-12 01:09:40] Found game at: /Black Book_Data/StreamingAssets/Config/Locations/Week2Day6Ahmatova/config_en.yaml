@@ -1,0 +1,6 @@
+﻿Name: Akhmatova Ravine
+Description: Ravines are often connected to the other world. Old Egor says this place is some kind of threshold.
+LevelConfig:
+  Battle:
+    Name: The Undead of the Ravine
+

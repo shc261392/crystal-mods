@@ -1,0 +1,18 @@
+﻿Name: Тлеющие кости
+AbilityType: FIRE_ZMEY_WASTE
+TargetType: ENEMY
+Intention: ATTACK_DEBUFF
+Sprite: FIRE_ZMEY_WASTE
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Waste
+  MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

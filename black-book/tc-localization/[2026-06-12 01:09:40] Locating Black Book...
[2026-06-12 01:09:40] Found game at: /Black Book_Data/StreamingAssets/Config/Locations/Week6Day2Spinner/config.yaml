@@ -1,0 +1,18 @@
+﻿IdName: Week6Day2Spinner
+Name: Старая прялка
+Description: Че это там? Не разгляжу никак. Уж не печка ли стоит?
+Scene: TkachihaEntry
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day2/Spinner/Intro
+  Exploration: Week6Day2Spinner
+  CameraOverride: CMTonelsCamera2
+  MusicOverride: event:/Music/ExploreDark2
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week6Day2Walkway
+OnomastikonItems:
+- Onomastikon/Encyclopedia/73
+HideBook: true
+

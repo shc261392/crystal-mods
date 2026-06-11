@@ -1,0 +1,6 @@
+﻿Name: At the Foot of Polud
+Description: Mount Polud looms over us. We'll reach the werewolves soon.
+LevelConfig:
+  Battle:
+    Name: Polud Guards
+

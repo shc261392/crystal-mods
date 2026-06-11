@@ -1,0 +1,7 @@
+﻿Name: 북쪽 정착지
+Description: 알렉산더가 향한 집이 이 근처 어딘가에 있다. 쉽게 찾을 수 있을 것이다.
+ShortQuestDescr: 알렉산더 만나기
+LevelConfig:
+  Battle:
+    Name: 불타는 친구들
+

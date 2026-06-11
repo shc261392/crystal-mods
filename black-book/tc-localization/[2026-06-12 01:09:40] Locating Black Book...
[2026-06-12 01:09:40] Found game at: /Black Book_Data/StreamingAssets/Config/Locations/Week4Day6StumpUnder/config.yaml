@@ -1,0 +1,30 @@
+﻿IdName: Week4Day6StumpUnder
+Name: Логово Филимона
+Scene: LeshiyUnderTree
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Пастух Филимон
+    Enemies:
+    - Type: FilimonDemon
+      LevelSpawnPointType: EnemyCenter
+    Barks:
+    - Id: Battle/FilimonDemon/First
+      HealthPercent: 0.800000012
+      TargetUnit: FilimonDemon
+    - Id: Battle/FilimonDemon/Second
+      HealthPercent: 0.5
+      TargetUnit: FilimonDemon
+    EnemyKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/BattleBoss2
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day6/StumpUnder/Intro
+    Outro: TextQuest/Week4/Day6/StumpUnder/Outro
+  Exploration: Week4Day6StumpUnder
+  CinematicIntro: true
+  NoExplorerSpawn: true
+LightingType: FOG
+

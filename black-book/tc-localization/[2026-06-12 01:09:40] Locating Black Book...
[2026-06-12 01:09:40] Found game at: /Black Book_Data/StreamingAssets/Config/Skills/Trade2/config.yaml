@@ -1,0 +1,10 @@
+﻿Name: Торговля II
+SkillName: Trade2
+Sprite: Trade2Skill
+Description: Цены в магазине снижены еще на {CalculatedEffect}%
+RequiredSkills:
+- Trade1
+Effects:
+- Value: 10
+  Type: ItemPriceDrop
+

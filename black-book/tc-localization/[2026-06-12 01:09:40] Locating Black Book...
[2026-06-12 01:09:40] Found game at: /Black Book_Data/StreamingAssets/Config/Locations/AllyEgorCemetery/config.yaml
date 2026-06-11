@@ -1,0 +1,26 @@
+﻿IdName: AllyEgorCemetery
+Name: Вильгортское кладбище
+Description: На этом кладбище всех вильгортских хоронят. Раньше людей, а теперь и скотина там умерла. Жуть.
+ShortQuestDescr: Поймать кладбищенского черта
+LongQuestDescr: Кто-то растерзал корову в часовне вильгортского кладбища. Вы отправились вместе с дедом Егором на место происшествия, чтобы выловить загадочного беса.
+Scene: ChurchVilgortOld
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day1/BigichiWoods
+    IzbaAftermath: Izba/Egor/Aftermath
+  Exploration: AllyEgorCemetery
+  CinematicIntro: true
+  MusicOverride: event:/Music/ExploreDark2
+RequiredLocations:
+- AllyEgorVilgort
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- Proshka
+- ProshkaLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+ForceAlly: DedEgor
+

@@ -1,0 +1,13 @@
+﻿Name: Одолень-трава
+InventoryItemName: OdolenHerb
+Type: Herb
+Flavour: Одолень-трава! Не я тебя поливал, не я тебя породил, а породила тебя мать сыра земля, поливали тебя девки простоволосыя, бабы-самокрутки.
+Sprite: OdolenHerb
+Expendable: true
+Cost: 38
+Effects:
+- Value: 1
+  Type: Status
+  StatusName: AttackAbsorb
+  StatusPermanent: true
+

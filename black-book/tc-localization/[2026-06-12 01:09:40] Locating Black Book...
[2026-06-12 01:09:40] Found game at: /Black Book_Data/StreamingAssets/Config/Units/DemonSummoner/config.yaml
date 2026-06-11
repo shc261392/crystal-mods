@@ -1,0 +1,18 @@
+﻿AssetName: DemonSummoner
+Health: 19
+HealthRandomAdd: 5
+Mana: 4
+Initiative: 1
+MoneyMin: 2
+MoneyMax: 5
+Experience: 75
+UnitAI:
+  AIAbilities:
+  - AbilityType: DEMON_ATTACK
+    TargetType: ENEMY
+  - AbilityType: SUMMON_DEMON_BY_DEMON
+    TargetType: SELF
+    DecisionType: SUMMON
+  CastingType: UNIT_HARDCODED
+Name: Чёрт-крикун
+

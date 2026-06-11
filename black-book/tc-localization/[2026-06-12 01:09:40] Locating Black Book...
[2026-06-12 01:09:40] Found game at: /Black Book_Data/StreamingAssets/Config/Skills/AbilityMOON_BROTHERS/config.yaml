@@ -1,0 +1,10 @@
+Name: MOON_BROTHERS
+SkillName: AbilityMOON_BROTHERS
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilitySELAFIIL
+SpriteOffsetX: -50.2
+SpriteOffsetY: -50.2
+Effects:
+- Type: AbilityUnlock
+  StringData: MOON_BROTHERS

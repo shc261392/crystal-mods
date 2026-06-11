@@ -1,0 +1,6 @@
+﻿Unique: true
+Name: Кривота
+Description: "Шанс промахнуться: {Value}% \nХодов до завершения: {Duration}"
+Sprite: StatusEther
+Harmful: true
+

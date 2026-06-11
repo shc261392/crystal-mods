@@ -1,0 +1,10 @@
+﻿Name: "{Ability1} | {Ability2}"
+SkillName: RoguelikeSduRudaKeyTongue
+Sprite: SkilledDemonsSkill
+Description: Заменяет {Ability1} на {Ability2} в стартовой колоде
+RequiredSkills:
+  - AbilityFIRM_KNIFE
+Effects:
+- Value: 1
+  Type: RoguelikeStartingDeckUpgrade
+  StringData: RUDA&KEY_TONGUE

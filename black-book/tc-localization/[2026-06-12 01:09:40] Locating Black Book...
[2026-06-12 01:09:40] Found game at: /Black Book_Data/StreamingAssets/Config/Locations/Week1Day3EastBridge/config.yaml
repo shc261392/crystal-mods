@@ -1,0 +1,20 @@
+﻿IdName: Week1Day3EastBridge
+Name: Восточный мост
+Description: С востока на болота можно попасть через мост, который так и называется. Говорят, шум там какой-то странный слышен. Надо проверить.
+ShortQuestDescr: Пройтись по Восточному мосту
+Scene: Forest_Bridge_2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Черт и грешник
+    Enemies:
+    - Type: DemonFierce
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSmall
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day3/DemonSinner
+RequiredLocations:
+- Week1Day3Alimov
+

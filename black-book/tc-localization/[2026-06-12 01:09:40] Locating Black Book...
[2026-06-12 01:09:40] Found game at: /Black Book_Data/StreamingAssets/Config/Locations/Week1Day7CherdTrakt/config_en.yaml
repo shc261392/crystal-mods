@@ -1,0 +1,7 @@
+﻿Name: Solikamsk Road
+Description: This wide road leads from Vilgort to Cherdyn. From there it continues on to other cities, even Perm.
+ShortQuestDescr: Put a zagovor on the road
+LevelConfig:
+  Battle:
+    Name: Brigands
+

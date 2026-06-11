@@ -1,0 +1,5 @@
+﻿Unique: true
+Name: Урон от крада
+Description: Наносит {Duration} <sprite name="Damage"> всем врагам при прочтении слов с крадой
+Sprite: StatusShieldUp
+

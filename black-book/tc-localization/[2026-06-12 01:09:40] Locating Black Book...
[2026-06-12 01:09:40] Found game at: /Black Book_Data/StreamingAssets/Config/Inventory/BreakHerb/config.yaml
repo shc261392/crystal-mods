@@ -1,0 +1,11 @@
+﻿Name: Разрыв-трава
+InventoryItemName: BreakHerb
+Type: Herb
+Flavour: Видала я разрыв-траву раза два. Захлопнули дверь-то, дак знаткой и пришел, отворял разрыв травой этой. Замки открывает.
+Sprite: BreakHerb
+Expendable: true
+Cost: 46
+TargetType: ENEMY
+Effects:
+- Type: RemoveDefence
+

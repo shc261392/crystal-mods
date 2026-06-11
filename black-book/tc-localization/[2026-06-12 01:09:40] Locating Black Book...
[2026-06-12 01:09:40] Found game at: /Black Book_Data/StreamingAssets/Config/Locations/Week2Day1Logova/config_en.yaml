@@ -1,0 +1,7 @@
+﻿Name: Logovo Village
+Description: This is the village Alexander visited to cure a peasant girl.
+ShortQuestDescr: Cure the Peasant
+LevelConfig:
+  Battle:
+    Name: Fiery Snake
+

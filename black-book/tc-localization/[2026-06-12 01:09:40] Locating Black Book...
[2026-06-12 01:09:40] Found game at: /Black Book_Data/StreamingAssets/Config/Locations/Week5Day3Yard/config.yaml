@@ -1,0 +1,20 @@
+﻿IdName: Week5Day3Yard
+Name: Марьина изба
+Description: Нужно вернуться к Марье и попытаться найти ее кикимору.
+LocationType: COMBAT
+Scene: IzbaBattle
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Кикимора
+    Enemies:
+    - Type: Kikimora
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day3/Yard/Intro
+RequiredLocations:
+- Week5Day3Carpenter
+

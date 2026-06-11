@@ -1,0 +1,6 @@
+﻿Name: 雾里的树
+Description: 刚好像看见那边有块空地，噢，不对，也只是一片树。
+LevelConfig:
+  Battle:
+    Name: 雾中雠特
+

@@ -1,0 +1,8 @@
+﻿Name: 빌고르트의 삼위일체의 교회
+Description: 교회에 거의 다 왔다!
+ShortQuestDescr: 신부 행렬 보호하기
+LongQuestDescr: 몇몇 콜둔이 결혼식을 방해할 것입니다. 행렬을 저주로부터 지키고 빌고르트까지 하객들을 데려가야 합니다.
+LevelConfig:
+  Battle:
+    Name: 현자 대 현자
+

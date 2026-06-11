@@ -1,0 +1,6 @@
+﻿Name: バーニャ
+Description: 今夜はたくさんの人が集まる。バーニャに火を入れておいたほうがいい。自分でやってしまおう。
+LevelConfig:
+  Battle:
+    Name: バーニャのチョルト
+

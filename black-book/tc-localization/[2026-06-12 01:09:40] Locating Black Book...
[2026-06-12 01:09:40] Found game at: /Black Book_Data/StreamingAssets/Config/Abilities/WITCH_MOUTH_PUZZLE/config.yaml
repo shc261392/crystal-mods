@@ -1,0 +1,22 @@
+﻿Name: Уста колдовские+
+AbilityType: WITCH_MOUTH_PUZZLE
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: WITCH_MOUTH
+GoldCost: 34
+Effects:
+- EffectType: STATUS
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal5OrderWhite
+    MissTrigger: Seal5OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: EloquenceOnHealthLoss
+  StatusPermanent: true

@@ -1,0 +1,22 @@
+﻿IdName: Week4Day3StumpFight1
+Name: Первый лешачий замок
+Description: ''
+LocationType: COMBAT
+Scene: LeshiySonNest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Первый лешачий замок
+    Enemies:
+    - Type: ForestDemon
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day3/Stump/Battle
+    Outro: TextQuest/Week4/Day3/Stump/BattleOutro1
+  CameraOverride: CMBattleCamera
+RequiredLocations:
+- Week4Day3BadPlace
+

@@ -1,0 +1,12 @@
+﻿Name: Царские очи
+InventoryItemName: RoyalEyes
+Type: Herb
+Flavour: Некоторые невежды, слывущие ворожеями, почитают ее приворотною травою и обманывают ею влюбленных слепцов
+Sprite: RoyalEyes
+Expendable: true
+UseOutBattle: true
+Cost: 42
+Effects:
+- Value: 20
+  Type: Heal
+

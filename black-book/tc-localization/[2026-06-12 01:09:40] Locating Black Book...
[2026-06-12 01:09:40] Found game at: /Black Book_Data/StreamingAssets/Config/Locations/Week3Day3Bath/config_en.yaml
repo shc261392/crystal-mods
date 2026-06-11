@@ -1,0 +1,6 @@
+﻿Name: Banya
+Description: We're having a gathering this evening. Better heat up the banya. I should probably do it myself.
+LevelConfig:
+  Battle:
+    Name: Banya Chorts
+

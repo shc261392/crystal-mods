@@ -1,0 +1,22 @@
+﻿Name: Нетленная смерть
+AbilityType: IMPERISHABLE_DEATH
+TargetType: SELF
+Intention: BUFF
+Sprite: IMPERISHABLE_DEATH
+Effects:
+- EffectType: HEAL
+  MinValue: 50
+  MaxValue: 50
+  VisualEffect:
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 1.5
+    SkipReady: true
+- EffectType: REMOVE_ALL_BAD_STATUS
+  MinValue: 999
+  MaxValue: 999
+- EffectType: REMOVE_ALL_GOOD_STATUS
+  MinValue: 999
+  MaxValue: 999
+  ForceTarget: PLAYER
+

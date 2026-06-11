@@ -1,0 +1,20 @@
+﻿IdName: Week3Day3Gorenka
+Name: Горенка
+Description: В горнице стол накрыт с угощениями. Сегодня посиденок, а завтра под венец поезд отправится.
+ShortQuestDescr: Сберечь свадьбу
+LongQuestDescr: 'Свадьбы – лакомый кусочек для колдунов: можно и молодых спортить, и силу свою показать. Мне нужно защитить Николая с подмененной невестой.'
+Scene: IzbaWedding
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day3/Gorenka/Intro
+  Exploration: Week3Day3Gorenka
+  NoExplorationMusic: true
+RequiredLocations:
+- Week3Day3Yard
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+

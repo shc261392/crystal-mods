@@ -1,0 +1,12 @@
+﻿IdName: Week1Day6BathUnderground2
+Name: Логово банницы
+Scene: ObderihasNest2
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  Quest:
+    DialogueSystemName: Exploration/Week1/Obderiha/Underground2Intro
+    Outro: Exploration/Week1/Obderiha/ObderihaWon
+  Exploration: BathFinalUnderground2
+  MusicOverride: event:/Music/ExploreDark
+  NoExplorerSpawn: true
+

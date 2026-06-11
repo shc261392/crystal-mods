@@ -1,0 +1,25 @@
+﻿Name: Зачертить
+AbilityType: ZACHERTIT
+AbilityBookPartType: KEY
+Upgrade: ZACHERTIT_UP
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: Zachertit
+GoldCost: 23
+Gesture: true
+Effects:
+- EffectType: DEFENCE
+  MinValue: 1
+  MaxValue: 1
+#  VisualEffect:
+#    VisualEffectType: CROSS
+#    ReadyTrigger: Word
+#    WrapUpTime: 0.5
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal2KeyWhite
+    MissTrigger: Seal2KeyWhite
+    WrapUpTime: 0.200000003
+    SkipReady: true

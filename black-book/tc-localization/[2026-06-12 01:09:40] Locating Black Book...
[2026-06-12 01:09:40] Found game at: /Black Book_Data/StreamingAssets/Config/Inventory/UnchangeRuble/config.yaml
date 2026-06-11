@@ -1,0 +1,9 @@
+﻿Name: Неразменный рубль
+InventoryItemName: UnchangeRuble
+Flavour: Сколько можно накупить прекрасных вещей за беспереводный рубль!
+Sprite: UnchangeRuble
+Cost: 46
+Effects:
+- Value: 3
+  Type: AdditionalBattleReward
+

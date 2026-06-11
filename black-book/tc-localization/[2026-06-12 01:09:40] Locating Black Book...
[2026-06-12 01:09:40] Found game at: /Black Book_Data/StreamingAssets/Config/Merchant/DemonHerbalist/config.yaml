@@ -1,0 +1,127 @@
+Name: Черт-травник
+Id: DemonHerbalist
+AssetName: DemonMerchant
+TearPageCost: 5
+ChangePageCost: 4
+DefaultInventoryView: Herb
+Min: 35
+Max: 35
+SoldItems:
+  - ItemName: AdamHead
+    Quantity: 1
+  - ItemName: AdamHead
+    Quantity: 1
+  - ItemName: CuckooTears
+    Quantity: 1
+RandomItems:
+  - ItemName: RoyalEyes
+    Quantity: 1
+    Probability: 0.8
+  - ItemName: Ladan
+    Quantity: 1
+    Probability: 0.6
+  - ItemName: SnakeHerb
+    Quantity: 1
+    Probability: 0.6
+  - ItemName: Dedovniki
+    Quantity: 1
+    Probability: 0.6
+  - ItemName: Perekop
+    Quantity: 1
+    Probability: 0.4
+  - ItemName: DungLips
+    Quantity: 1
+    Probability: 0.8
+  - ItemName: Dagil
+    Quantity: 3
+    Probability: 0.7    
+  - ItemName: ArhilinHerb
+    Quantity: 1
+    Probability: 0.8
+  - ItemName: BreakHerb
+    Quantity: 2
+    Probability: 0.6
+  - ItemName: CryingHerb
+    Quantity: 2
+    Probability: 0.6
+  - ItemName: KolukaHerb
+    Quantity: 1
+    Probability: 0.6
+  - ItemName: OdolenHerb
+    Quantity: 1
+    Probability: 0.4
+  - ItemName: PetrovHerb
+    Quantity: 1
+    Probability: 0.8
+  - ItemName: PrikryshHerb
+    Quantity: 2
+    Probability: 0.9
+  - ItemName: TirlichHerb
+    Quantity: 2
+    Probability: 0.3
+  - ItemName: IndiviaHerb
+    Quantity: 2
+    Probability: 0.7
+  - ItemName: Braga
+    Quantity: 2
+    Probability: 0.2
+  - ItemName: Sota
+    Quantity: 2
+    Probability: 0.1
+  - ItemName: CuckooTears
+    Quantity: 2
+    Probability: 0.9
+  - ItemName: WormwoodHerb
+    Quantity: 2
+    Probability: 0.2    
+  - ItemName: Bolotvik
+    Quantity: 3
+    Probability: 0.3 
+  - ItemName: Priputnik
+    Quantity: 2
+    Probability: 0.1
+  - ItemName: DreamHerb
+    Quantity: 2
+    Probability: 0.4
+  - ItemName: Suporijki
+    Quantity: 2
+    Probability: 0.4   
+  - ItemName: Bogomor
+    Quantity: 3
+    Probability: 0.3 
+  - ItemName: Solodelik
+    Quantity: 2
+    Probability: 0.2 
+  - ItemName: RottenMushroom
+    Quantity: 4
+    Probability: 0.1 
+  - ItemName: DogMushroom
+    Quantity: 3
+    Probability: 0.4     
+  - ItemName: EremaMushroom
+    Quantity: 3
+    Probability: 0.2
+  - ItemName: Razorva
+    Quantity: 2
+    Probability: 0.6
+  - ItemName: Borvyak
+    Quantity: 1
+    Probability: 0.6
+  - ItemName: LadanTrava
+    Quantity: 1
+    Probability: 0.2
+  - ItemName: ShutemTrava
+    Quantity: 1
+    Probability: 0.2
+  - ItemName: WhiteHeadTrava
+    Quantity: 1
+    Probability: 0.2
+  - ItemName: SecretLeaveTrava
+    Quantity: 1
+    Probability: 0.2
+  - ItemName: BessmertTrava
+    Quantity: 3
+    Probability: 0.8
+  - ItemName: Sivulist
+    Quantity: 2
+    Probability: 0.8

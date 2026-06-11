@@ -1,0 +1,8 @@
+﻿Name: 郡警察署
+Description: この場所で、教会の管理人、ミハイル・ニキフォロヴィチと話すことができる。
+ShortQuestDescr: 教会のナイフを見つける
+LongQuestDescr: クパーラの儀式を執り行うには、何よりも教会のナイフが必要だ。ナイフは管理人がどこかに隠したようだ。
+LevelConfig:
+  Battle:
+    Name: 警察署のスセートコ
+

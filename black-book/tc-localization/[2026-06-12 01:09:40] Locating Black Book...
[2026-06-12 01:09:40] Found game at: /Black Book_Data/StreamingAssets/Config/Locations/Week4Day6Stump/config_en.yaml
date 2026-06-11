@@ -1,0 +1,8 @@
+﻿Name: Kul-Pu
+Description: The road goes back to that old tree.
+ShortQuestDescr: Catch the Shepherd
+LongQuestDescr: Filimon turned out to be a forest chort. I need to catch him and make him free the village, and perhaps break the seal to boot.
+LevelConfig:
+  Battle:
+    Name: Filimon the Shepherd
+

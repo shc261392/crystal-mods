@@ -1,0 +1,7 @@
+﻿Name: 铁匠铺
+Description: 修不好锯子的铁匠就住在这个地方。
+ShortQuestDescr: 去见铁匠
+LevelConfig:
+  Battle:
+    Name: 赶罪人的邪灵
+

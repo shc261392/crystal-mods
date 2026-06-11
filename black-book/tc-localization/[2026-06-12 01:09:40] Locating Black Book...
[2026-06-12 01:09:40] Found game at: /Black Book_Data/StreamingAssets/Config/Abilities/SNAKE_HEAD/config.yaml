@@ -1,0 +1,17 @@
+﻿Name: Змея-голова
+AbilityType: SNAKE_HEAD
+TargetType: ENEMY
+Sprite: SNAKE_HEAD
+GoldCost: 24
+Effects:
+- EffectType: ZAGOVOR_DAMAGE
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal4OrderBlack
+    MissTrigger: Seal4OrderBlack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

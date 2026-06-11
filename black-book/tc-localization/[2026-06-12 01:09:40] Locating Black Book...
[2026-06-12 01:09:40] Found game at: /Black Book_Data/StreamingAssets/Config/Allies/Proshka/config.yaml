@@ -1,0 +1,57 @@
+﻿Name: Прошка
+AllyType: Proshka
+Upgrade: ProshkaLoyal
+Unit: Proshka
+Sprite: ProshkaFool
+IzbaDialogues:
+- Id: Izba/Proshka/Conv1
+  DayBuffer: 3
+- Id: Izba/Proshka/Conv2
+  DayBuffer: 3
+- Id: Izba/Proshka/Conv3
+  DayBuffer: 3
+Banters:
+- Id: Izba/Banter/ProshkaNikolay
+  RequiredAlly: Nikolay
+- Id: Izba/Banter/ProshkaEgor
+  RequiredAlly: DedEgor
+- Id: Izba/Banter/ProshkaKarnysh
+  RequiredAlly: Karnysh
+- Id: Izba/Banter/ProshkaHead
+  RequiredAlly: WhiteHead
+BanterProbability: 0.5
+LocationToSpecialDialogue:
+  IzbaFabric:
+    Id: Izba/Context/IzbaFabric/Proshka
+  IzbaPike:
+    Id: Izba/Context/IzbaPike/Proshka
+  IzbaBashkir:
+    Id: Izba/Context/IzbaBashkir/Proshka
+  IzbaHunterCampPolud:
+    Id: Izba/Context/IzbaHunterCampPolud/Proshka
+  IzbaHunterCampPrePryaha:
+    Id: Izba/Context/IzbaHunterCampPrePryaha/Proshka
+  IzbaStorm:
+    Id: Izba/Context/IzbaStorm/Proshka
+Quests:
+- QuestConversation: Izba/Proshka/AllyQuestGive
+- QuestConversation: Izba/Proshka/AllyQuestGiveSecondary
+- QuestConversation: Izba/Proshka/QuestFailure
+QuestRestrictedLocationNames:
+  - IzbaFabric
+  - IzbaPike
+  - IzbaBashkir
+  - IzbaHunterCampPolud
+  - IzbaHunterCamp
+  - IzbaHunterCampPreFilimon
+  - IzbaHunterCampPrePryaha
+  - IzbaStorm
+  - IzbaFoggyWoods
+  - IzbaFoggyVillage
+  - IzbaAlexanderPrison
+  - IzbaHellDeath
+  - IzbaHellForest
+  - IzbaHellGates
+QuestLocation: AllyProshkaChurch
+IzbaAsset: ProshkaIzbaRegular
+

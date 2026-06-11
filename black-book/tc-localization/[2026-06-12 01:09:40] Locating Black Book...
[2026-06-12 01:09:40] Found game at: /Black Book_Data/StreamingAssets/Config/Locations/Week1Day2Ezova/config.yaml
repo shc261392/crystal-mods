@@ -1,0 +1,10 @@
+﻿IdName: Week1Day2Ezova
+Name: Деревня Езова
+Description: В этой маленькой деревушке на речке Цыдовке хорошие души живут, часто к нам с дедом Егором за советом заглядывают. Не было еще такого, чтоб кого попортить просили!
+Scene: Village3
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day2/Ezova
+RequiredLocations:
+- Week1Day2Crossroads
+

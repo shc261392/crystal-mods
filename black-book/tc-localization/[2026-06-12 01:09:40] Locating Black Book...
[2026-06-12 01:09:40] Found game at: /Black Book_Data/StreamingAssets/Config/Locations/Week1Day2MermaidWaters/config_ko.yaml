@@ -1,0 +1,9 @@
+﻿Name: 루살카의 후미
+Description: 이 그림처럼 아름다운 강 후미의 이름은 옛날에 인어가 목격된 것에서 따 왔다. 하지만 나는 한 번도 인어를 본 적이 없다.
+ShortQuestDescr: 뱀 쫓아내기
+LevelConfig:
+  Battle:
+    Name: 루살카 후미의 뱀
+  BattleAlternative:
+    Name: 루살카 후미의 뱀
+

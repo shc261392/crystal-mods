@@ -1,0 +1,7 @@
+﻿Name: Aleshkino Village
+Description: I have to find Alexander. He won't get away with it!
+ShortQuestDescr: Find Alexander
+LevelConfig:
+  Battle:
+    Name: Well Spirit
+

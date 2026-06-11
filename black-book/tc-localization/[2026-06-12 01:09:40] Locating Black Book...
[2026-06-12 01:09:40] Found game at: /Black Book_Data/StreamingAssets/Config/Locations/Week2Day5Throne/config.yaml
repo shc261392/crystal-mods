@@ -1,0 +1,23 @@
+﻿IdName: Week2Day5Throne
+Name: Палаты водяного
+Description: Тут я и повстречаю Вакуля. Надеюсь, он мне печать-то и откроет сразу.
+ShortQuestDescr: Добраться до палат водяного
+LongQuestDescr: Русалка говорит, что до дворца Вакуля осталось совсем немного. Надеюсь, она не приведет меня в очередную ловушку!
+Scene: MermanHall
+LevelConfig:
+  Quest:
+    IzbaAftermath: Izba/Week2/Day13
+  Exploration: Week2Day5Throne
+  CinematicIntro: true
+  MusicOverride: event:/Music/Underwater
+  MixerSnapshot: snapshot:/Underwater
+RequiredLocations:
+- Week2Day5NearThrone
+LockedAllies:
+- DedEgor
+- DedEgorLoyal
+- Nikolay
+- NikolayLoyal
+OnomastikonItems:
+- Onomastikon/Encyclopedia/31
+

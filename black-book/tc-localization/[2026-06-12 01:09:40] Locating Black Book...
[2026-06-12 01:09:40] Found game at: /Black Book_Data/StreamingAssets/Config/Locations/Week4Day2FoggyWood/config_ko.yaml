@@ -1,0 +1,6 @@
+﻿Name: 안개 낀 숲
+Description: 길을 따라 자란 숲을 들여다 볼까? 저 안에 악령이 도사리고 있는 것 같다... 마치 화덕 뒤의 바퀴벌레처럼.
+LevelConfig:
+  Battle:
+    Name: 숲 초르트
+

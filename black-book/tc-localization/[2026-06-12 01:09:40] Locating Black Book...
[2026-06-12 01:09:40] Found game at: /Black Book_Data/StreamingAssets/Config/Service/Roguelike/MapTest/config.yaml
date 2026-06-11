@@ -1,0 +1,243 @@
+Id: MapTest
+StartingMap: true
+MinTextQuestGoldReward: 40
+MaxTextQuestGoldReward: 80
+IdToBlueprint:
+  Text:
+    Name: Text
+    Id: Text
+    Sprite: RGText
+    NodeType: Text
+    Scenes:
+      - Labaz
+    DialogueSystemNames:
+      - TextQuest/Roguelike/PageStartingItem
+  Church:
+    Name: Church
+    Id: Church
+    Sprite: RGChurch
+    NodeType: Church
+    NoExplorationMusic: true
+    Merchants:
+      - Priest
+    DialogueSystemNames:
+      - TextQuest/Priest/Priest1
+    Scenes:
+      - ChurchVilgort
+  Loot:
+    Name: Loot
+    Id: Loot
+    Sprite: RGLoot
+    NodeType: Loot
+    Scenes:
+      - Forest
+    Items:
+      - AdamHead
+    SpecialItems:
+      - AdamHead
+  RestSite:
+    Name: Rest Site
+    Id: RestSite
+    Sprite: RGCamp
+    NodeType: RestSite
+    DialogueSystemNames:
+      - TextQuest/Util/Rest
+    Scenes:
+      - Forest
+  Ally:
+    Name: Ally
+    Id: Ally
+    Sprite: RGFool
+    NodeType: Ally
+    DialogueSystemNames:
+      - TextQuest/Util/Ally
+    Scenes:
+      - Forest
+    Allies:
+      - DedEgor
+      - Karnysh
+      - Nikolay
+      - Proshka
+      - WhiteHead
+  SatanThirteenth:
+    Name: Satan
+    MusicOverride: event:/Music/Battle4
+    Id: SatanThirteenth
+    Sprite: RGMiniBoss
+    NodeType: Fight
+    IsBoss: true
+    ScaleCoeff: 2
+    EpicParticles: true
+    IsArtefactReward: true
+    SpReward: 2
+    Scenes:
+      - WindmillExploration
+    Enemies:
+      - - ThirteenthBrother
+        - Demon
+  Satan:
+    Name: Satan
+    MusicOverride: event:/Music/BattleSatan
+    Id: Satan
+    Sprite: RGSatan
+    NodeType: Fight
+    IsBoss: true
+    IsFinalBoss: true
+    ScaleCoeff: 2.5
+    EpicParticles: true
+    SpReward: 10
+    Scenes:
+      - HellThrone
+    Enemies:
+      - - Satan1
+  Booker:
+    Name: Booker
+    Id: Booker
+    Sprite: RGBooker
+    NodeType: Merchant
+    Scenes:
+      - Forest
+    Merchants:
+      - BookKeeper    
+  Fight1:
+    Id: Fight1
+    Sprite: RGFight
+    NodeType: Fight
+    Scenes:
+      - CrossroadsExploration
+      - Marshes2
+      - Forest_3
+      - River_3
+      - Forest_Bridge_2
+      - Forest_2
+      - Forest
+      - Rift
+      - Road
+      - Backwater
+      - Cemetery
+      - Forest_old
+      - Fields
+      - Forest_4
+      - Labaz
+    Enemies:
+      - - DemonSmall
+        - Wolf
+GridWidth: 7
+PreBossNodesMin: 2
+PreBossNodesMax: 3
+StartingNodesMin: 3
+StartingNodesMax: 5
+DistanceFromPreviousLayerMin: 9
+DistanceFromPreviousLayerMax: 10
+Layers:
+  - DefaultBlueprintId: Ally
+    NodesApartDistance: 5.4
+    RandomizePosition: 0
+    RandomizeNodes: 0
+  - DefaultBlueprintId: RestSite
+    NodesApartDistance: 5
+    RandomizePosition: 0.75
+    RandomizeNodes: 0
+  - DefaultBlueprintId: SatanThirteenth
+    NodesApartDistance: 5.4
+    RandomizePosition: 0
+    RandomizeNodes: 0
+    PossibleBlueprintsIds:
+      - SatanThirteenth    
+BattleWinBossItemRewards:
+  - Item: MagicHerbs
+    Quantity: 1
+BattleWinItemRewards:
+  - Item: AdamHead
+    Quantity: 1
+MerchantAbilities:
+  - ABEL
+  - ALTAR
+  - AMEN_ROGUELIKE
+  - ANGEL_GLORY
+  - ANTIPKA
+  - AVDELAI
+  - AVOIL
+  - BAD_EYE_ROGUELIKE
+  - BLACK_CARD
+  - BLOOD_BURN
+  - BLOOD_CLOTTED
+  - BLUE_STONE_ROGUELIKE
+  - BONE_EYE_ROGUELIKE
+  - GEORGY_WINNER_ROGUELIKE
+  - LESHAK_HOROVEY_ROGUELIKE
+  - BURNING_STONE
+  - CHAINS_OF_FIRE
+  - CHEMER_ROGUELIKE
+  - CHUR
+  - CIRCLE_BLADE_ROGUELIKE
+  - CROSS2
+  - DAMASK_STONE
+  - DEAD_MAN_ROGUELIKE
+  - DEMON_WIZARD
+  - DEMONS_DEATH
+  - FAITHFUL_HOPE
+  - FIRE_IMAGE
+  - FIRM_KNIFE
+  - FIRMER_STONE
+  - FISH_WHALE
+  - FOR_FATHER
+  - GEORGY_BATUSHKA_ROGUELIKE
+  - GEORGY_BRAVE
+  - GEORGY_SHEPARD_SMALL
+  - GRYJA
+  - HELP_NIKOLA
+  - HOHOR
+  - HUMAN_HAND_ROGUELIKE
+  - IROD_BONES_ROGUELIKE
+  - JUDEA
+  - IGLA
+  - KAIN
+  - KEY_TONGUE
+  - KILA
+  - KNIFE
+  - KORKOTEYA
+  - KORKUSHA
+  - KOSTOLOMISHE
+  - KULLA
+  - LAKE_DEPTH
+  - LOCK
+  - LOMEYA_ROGUELIKE
+  - LOMOTA
+  - MIKHAIL_VOEVODA
+  - MOON_BROTHERS
+  - NAVA
+  - NIKOLA_GEORGY
+  - NIKOLA_MILOSTIV_ROGUELIKE
+  - OGNEVITSA
+  - OGNEYASTRA
+  - OKIAN_MORE
+  - ONCE_AND_FOREVER
+  - PAVLUSHKA
+  - PEREPOLOH
+  - PRIZOR_STICKY
+  - RAZOIL_ROGUELIKE
+  - RED_SUN
+  - REVUN_SMALL
+  - RIZI_SMALL
+  - RUDA
+  - SALMANIDA_ROGUELIKE
+  - SATANAIL_ROGUELIKE
+  - SELAFIIL
+  - SHUKA_BELUGA_ROGUELIKE
+  - SILENT_AILMENT
+  - SKORCHEN
+  - SKORCHIT
+  - SKY_HIGH
+  - SNAKE_STING
+  - STRAH_RAH
+  - TOMASHIHA
+  - TRYASOVITSA
+  - UBEITSA
+  - UGASIIL
+  - URAZI
+  - VARAHAIL
+  - WIND_FIERCE
+  - WORD_PRAYER_ROGUELIKE
+  - WORMS
+  - ZACHERTIT    

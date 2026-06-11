@@ -1,0 +1,11 @@
+﻿Name: Береженая ложка
+InventoryItemName: SpoonSave
+Flavour: Челыш это какой-то бесовской. Черти пельмени им достают из воды.
+Sprite: IconSpoon2
+Cost: 150
+Effects:
+  - Value: 3
+    Type: StatusOnBattleStart
+    StatusName: Untouchable
+  - Value: 5
+    Type: HealOnBattleStart

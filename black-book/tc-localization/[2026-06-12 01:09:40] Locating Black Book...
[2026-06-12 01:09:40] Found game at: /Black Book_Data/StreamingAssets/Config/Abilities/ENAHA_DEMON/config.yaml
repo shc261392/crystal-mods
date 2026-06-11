@@ -1,0 +1,20 @@
+﻿Name: Енаха-бес
+AbilityType: ENAHA_DEMON
+AbilityBookPartType: KEY
+TargetType: ENEMY
+Intention: DEFENCE
+Color: WHITE
+Sprite: ENAHA_DEMON
+GoldCost: 47
+Effects:
+- EffectType: REMOVE_STATUS
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal5OrderWhite
+    MissTrigger: Seal5OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+

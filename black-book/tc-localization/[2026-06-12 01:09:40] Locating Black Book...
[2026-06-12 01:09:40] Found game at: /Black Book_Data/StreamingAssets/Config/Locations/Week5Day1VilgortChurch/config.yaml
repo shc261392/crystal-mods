@@ -1,0 +1,16 @@
+﻿IdName: Week5Day1VilgortChurch
+Name: Венчание Николая
+Description: 'Ходят слухи, что к этой белой церкви еще пристрой будет. Неудивительно: село-то вон какое большое.'
+ShortQuestDescr: Оборонить свадьбу
+LongQuestDescr: 'Николай и его невеста готовы обвенчаться, но Александр вынужден портить свадьбу и дальше: черти заставляют. Вы намерены защитить своих друзей и заодно разузнать про предметы для купальского обряда.'
+Scene: ChurchVilgortYard
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day1/VilgortChurch/Intro
+  Exploration: Week5Day1VilgortChurch
+  CinematicIntro: true
+  MusicOverride: event:/Music/ExploreLight
+LightingType: EVENING
+RequiredLocations:
+- Week5Day1Bridge
+

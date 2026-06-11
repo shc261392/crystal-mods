@@ -1,0 +1,10 @@
+﻿Name: Образок
+InventoryItemName: BoughtIcon
+Flavour: Мальчонка-то совсем обезножел, его икона в часовенке-то и вылечила. И такоё стало уверьё в её, кажной ходил туда лечиться.
+Sprite: IconBoughtIcon
+Cost: 130
+Effects:
+  - Value: 3
+    Type: StatusOnBattleStart
+    StatusName: Blessed
+

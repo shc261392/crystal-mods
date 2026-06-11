@@ -1,0 +1,3 @@
+﻿Name: Damage Absorption
+Description: Completely absorbs all <sprite name="Damage"> from the next {Duration} enemy attacks
+

@@ -1,0 +1,8 @@
+﻿Name: Eastern Woods
+Description: The woods near the old riverbed of the Kolva do not yet have a name of their own, so everyone just calls them the Eastern Woods or the Eastern Grove.
+LevelConfig:
+  Battle:
+    Name: Samovar Traders
+  BattleAlternative:
+    Name: It will come in handy
+

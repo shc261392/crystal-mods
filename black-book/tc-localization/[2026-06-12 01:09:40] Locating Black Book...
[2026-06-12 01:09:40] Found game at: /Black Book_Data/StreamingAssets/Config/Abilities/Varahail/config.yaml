@@ -1,0 +1,21 @@
+﻿Name: Варахаил
+AbilityType: VARAHAIL
+Upgrade: VARAHAIL_UP
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: Varahail
+GoldCost: 10
+Effects:
+- EffectType: DEFENCE
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+- EffectType: STATUS
+  MinValue: 2
+  MaxValue: 2
+  StatusEffectType: Blessed
+

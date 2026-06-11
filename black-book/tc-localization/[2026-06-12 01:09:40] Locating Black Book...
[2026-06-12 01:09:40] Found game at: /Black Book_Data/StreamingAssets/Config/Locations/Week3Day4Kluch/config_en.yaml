@@ -1,0 +1,6 @@
+﻿Name: Cold Creek Ford
+Description: This spring crosses the road. It would be easy to stop the procession here.
+LevelConfig:
+  Battle:
+    Name: Chorts by the Procession
+

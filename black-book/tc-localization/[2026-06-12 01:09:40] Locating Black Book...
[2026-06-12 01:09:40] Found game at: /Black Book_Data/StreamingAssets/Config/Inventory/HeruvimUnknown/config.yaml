@@ -1,0 +1,10 @@
+﻿Name: Неизвестный Херувим
+InventoryItemName: HeruvimUnknown
+Flavour: Из красного угла все смотрит. Не дело это, в церкве ему место.
+Sprite: IconHeruvimUnknown
+Cost: 200
+Effects:
+  - Value: 77
+    Type: StatusOnBattleStart
+    StatusName: Hefty
+

@@ -1,0 +1,10 @@
+﻿IdName: Week7Day3Forest
+Name: Лес грешников
+Description: Этот лес не похож ни на один из тех, что я видела.
+Scene: HellSinnersForest
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  MusicOverride: event:/Music/ExploreHell
+  Exploration: Week7Day3Forest
+  CinematicIntro: true
+

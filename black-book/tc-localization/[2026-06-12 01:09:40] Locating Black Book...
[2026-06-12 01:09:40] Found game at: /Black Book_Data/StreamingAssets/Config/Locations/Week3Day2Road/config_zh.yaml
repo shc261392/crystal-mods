@@ -1,0 +1,6 @@
+﻿Name: 波克恰路
+Description: 这条路旁边就是树林，我得多小心。
+LevelConfig:
+  Battle:
+    Name: 树林雠特
+

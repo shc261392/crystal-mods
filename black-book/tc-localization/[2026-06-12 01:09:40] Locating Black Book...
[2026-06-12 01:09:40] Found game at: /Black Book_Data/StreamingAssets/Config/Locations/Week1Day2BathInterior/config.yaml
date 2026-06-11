@@ -1,0 +1,9 @@
+﻿IdName: Week1Day2BathInterior
+Name: Внутри баньки
+Scene: Sauna
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  Exploration: Bath2Exploration
+  CinematicIntro: true
+  MusicOverride: event:/Music/ExploreDark
+

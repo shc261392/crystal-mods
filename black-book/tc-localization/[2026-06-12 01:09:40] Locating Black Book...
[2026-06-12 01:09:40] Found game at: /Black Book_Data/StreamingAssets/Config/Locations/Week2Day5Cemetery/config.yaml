@@ -1,0 +1,14 @@
+﻿IdName: Week2Day5Cemetery
+Name: Пещерное кладбище
+Description: К палатам водяного путь лежит через подводный погост. Не самая гостеприимная нечисть эти водяные.
+Scene: DrownCemetery
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day5/Cemetery/Intro
+  Exploration: Week2Day5Cemetery
+  CinematicIntro: true
+  MusicOverride: event:/Music/Underwater
+  MixerSnapshot: snapshot:/Underwater
+RequiredLocations:
+- Week2Day5Seaweed
+

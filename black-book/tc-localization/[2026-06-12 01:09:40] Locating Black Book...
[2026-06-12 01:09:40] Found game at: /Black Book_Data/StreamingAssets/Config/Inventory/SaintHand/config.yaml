@@ -1,0 +1,10 @@
+﻿Name: Рука для святого
+InventoryItemName: SaintHand
+Flavour: Пчела в руку полоснула, дак вот святой поправит
+Sprite: IconSaintHand
+Cost: 100
+Effects:
+  - Value: 3
+    Type: StatusOnBattleStart
+    StatusName: DefenceOnHealthLoss
+

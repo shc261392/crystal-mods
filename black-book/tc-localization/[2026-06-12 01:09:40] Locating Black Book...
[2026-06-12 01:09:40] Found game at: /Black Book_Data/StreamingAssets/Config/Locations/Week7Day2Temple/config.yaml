@@ -1,0 +1,38 @@
+﻿IdName: Week7Day2Temple
+Name: Храм смерти
+Description: Какое страшное место... Нужно быстрее выбираться отсюда, покуда жива!
+ShortQuestDescr: Исполнить желание
+LongQuestDescr: Вы преодолели испытание царя воров и отправились к следующему. Это мытарство вам приготовила сама костлявая старуха.
+Scene: HellDeathNest
+LevelConfig:
+  MusicOverride: event:/Music/ExploreHell
+  MixerSnapshot: snapshot:/Cave
+  Exploration: Week7Day2Temple
+  NoExplorerSpawn: true
+  CinematicIntro: true
+  Battle:
+    Name: Смерть
+    Enemies:
+    - Type: Death
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+#    WinCutscene: Week7Day2TempleDeathOutro
+  Quest:
+    DialogueSystemName: TextQuest/Week7/Day2/Temple/Intro
+    Outro: TextQuest/Week7/Day2/Temple/BattleWin
+RequiredLocations:
+- Week7Day2Lake
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+- Proshka
+- ProshkaLoyal
+OnomastikonItems:
+  - Onomastikon/Tales/42

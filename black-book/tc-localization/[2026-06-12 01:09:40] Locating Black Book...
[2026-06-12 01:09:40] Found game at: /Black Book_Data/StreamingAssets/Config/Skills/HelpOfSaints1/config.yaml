@@ -1,0 +1,9 @@
+﻿Name: Помощь святых I
+SkillName: HelpOfSaints1
+Sprite: HelpOfSaints1Skill
+Description: Увеличивает защиту в словах на {CalculatedEffect}
+Effects:
+- Value: 1
+  Type: AdditionalDefence
+Level: 3
+

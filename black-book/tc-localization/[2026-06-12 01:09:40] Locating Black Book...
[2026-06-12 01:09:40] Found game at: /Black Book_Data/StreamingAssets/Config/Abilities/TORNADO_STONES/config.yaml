@@ -1,0 +1,20 @@
+﻿Name: Камни в вихре
+AbilityType: TORNADO_STONES
+TargetType: SELF
+Intention: DEFENCE
+Sprite: TORNADO_STONES
+GoldCost: 3
+Effects:
+- EffectType: DEFENCE
+  MinValue: 100
+  MaxValue: 100
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    WrapUpTime: 0.5
+- EffectType: STATUS
+  StatusEffectType: DefenceKeep
+  MinValue: 3
+  MaxValue: 3
+

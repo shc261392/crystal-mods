@@ -1,0 +1,8 @@
+﻿Name: ミハイルの十字路
+Description: 全てが始まった場所…この十字路に、おじいちゃんはいる。
+ShortQuestDescr: エゴールじいさんを探す
+LongQuestDescr: ヴァシリーサは黒の書を取り戻した。破るべき封印はあと一つ。儀式に力を貸してもらうため、ヴァシリーサはエゴールじいさんを探しに家を出る。
+LevelConfig:
+  Battle:
+    Name: エゴールの真の姿
+

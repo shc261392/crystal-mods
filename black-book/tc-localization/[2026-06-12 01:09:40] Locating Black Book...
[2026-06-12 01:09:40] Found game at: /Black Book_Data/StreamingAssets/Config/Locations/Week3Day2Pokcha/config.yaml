@@ -1,0 +1,14 @@
+﻿IdName: Week3Day2Pokcha
+Name: Село Покча
+Description: Нужно узнать, где именно пивовары поставили котел. Не всю же ночь вдоль Колвы шататься!
+Scene: Village3
+LevelConfig:
+  Merchants:
+  - Wineseller
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day2/Pokcha/Intro
+RequiredLocations:
+- Week3Day2Kimzelka
+OnomastikonItems:
+- Onomastikon/Tales/16
+

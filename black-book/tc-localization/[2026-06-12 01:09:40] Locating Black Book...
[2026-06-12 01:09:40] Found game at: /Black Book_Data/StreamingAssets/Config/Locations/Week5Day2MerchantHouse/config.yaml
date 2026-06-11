@@ -1,0 +1,27 @@
+﻿IdName: Week5Day2MerchantHouse
+Name: Купеческий дом
+Description: Какой-то переполох у того большого дома образовался.
+LocationType: COMBAT
+Scene: IzbaBattle
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  MusicOverride: event:/Music/ExploreDark2
+  Battle:
+    Name: Покойный купец
+    Enemies:
+      - Type: DemonBrander
+        LevelSpawnPointType: EnemyCenter
+      - Type: WolfHalf
+        LevelSpawnPointType: EnemyLeft
+      - Type: WolfHalf
+        LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day2/MerchantHouse/Intro
+    Outro: TextQuest/Week5/Day2/MerchantHouse/Outro
+RequiredLocations:
+- Week5Day2CherdynMarket
+OnomastikonItems:
+- Onomastikon/Tales/36
+

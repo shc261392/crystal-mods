@@ -1,0 +1,12 @@
+﻿Name: Ладан
+InventoryItemName: Ladan
+Type: Herb
+Flavour: А там попадья на ладан дышит, все лицо ободрано, руки ободраны...
+Sprite: Ladan
+Expendable: true
+Cost: 53
+Effects:
+- Value: 5
+  Type: Status
+  StatusName: Blessed
+

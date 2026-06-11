@@ -1,0 +1,11 @@
+﻿Name: Венок обдерихи  
+InventoryItemName: ObderihaHat
+Flavour: "Чтоб банница не взяла тебя, вымоешься, обольешься со словами: с гуся вода, с меня худоба"
+Sprite: IconObderihaHat
+Cost: 300
+Effects:
+  - Value: 3
+    Type: StatusOnBattleStart
+    StatusName: Waste
+  - Value: 1
+    Type: AdditionalDamage

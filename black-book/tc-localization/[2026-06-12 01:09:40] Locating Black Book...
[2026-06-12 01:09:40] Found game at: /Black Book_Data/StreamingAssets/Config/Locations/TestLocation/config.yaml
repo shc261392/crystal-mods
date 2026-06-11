@@ -1,0 +1,17 @@
+﻿IdName: TestLocation
+Name: Михайловская росстань
+Scene: CrossroadsExploration
+LevelConfig:
+  Roguelike: true
+  Battle:
+    Name: Посвящение в колдуны
+    Enemies:
+      - Type: WolfInitiator
+        LevelSpawnPointType: EnemyCenter
+    NoShuffle: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Roguelike/ItemItem
+  SpecialLevel: true
+  
+  

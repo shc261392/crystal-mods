@@ -1,0 +1,36 @@
+﻿IdName: Week2Day4Hole
+Name: Подводный лаз
+Description: Через эту пещеру лежит дорога во внутренние владения царства водяного.
+ShortQuestDescr: Добраться до пещеры
+LongQuestDescr: Вы упали в озеро и оказались во владениях водяного. Вакуль послал русалку, вашу старую знакомую, как проводницу. Куда вас заведет эта чертовка?
+Scene: PikeNest
+LevelConfig:
+  Battle:
+    Name: Щука
+    Enemies:
+    - Type: Pike
+      LevelSpawnPointType: EnemyCenter
+    QuestKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/BattleBoss2
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day4/Hole/Intro
+    Reward:
+      Money: 20
+      Experience: 1500
+      ItemRewards:
+      - Quantity: 1
+        Item: PikeTooth
+    Outro: TextQuest/Week2/Day4/Hole/Outro
+    NightEndQuest: true
+  MusicOverride: event:/Music/Underwater
+  MixerSnapshot: snapshot:/Underwater
+RequiredLocations:
+- Week2Day4Circle
+LockedAllies:
+- DedEgor
+- DedEgorLoyal
+- Nikolay
+- NikolayLoyal
+

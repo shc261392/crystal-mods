@@ -1,0 +1,9 @@
+﻿Name: Флаг Пермской губернии
+InventoryItemName: Flag
+Flavour: Вдохновляет на свершения
+Sprite: Flag
+Cost: 60
+Effects:
+- Value: 2
+  Type: AllyRecharge
+

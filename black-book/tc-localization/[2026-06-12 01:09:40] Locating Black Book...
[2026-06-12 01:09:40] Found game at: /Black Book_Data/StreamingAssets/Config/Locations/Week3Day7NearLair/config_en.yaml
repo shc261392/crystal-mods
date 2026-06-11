@@ -1,0 +1,8 @@
+﻿Name: Near the Lair
+Description: I met a resident of Perm at one of the gatherings. He told me of the battle between Polud and Kolchim. They'd been throwing stones at each other for so long that God turned them both into mountains.
+ShortQuestDescr: Save the Guests
+LongQuestDescr: It seems that the werewolves were captured by the spirit of the Polud forest. I must free them before they are completely transformed into beasts.
+LevelConfig:
+  Battle:
+    Name: Wolfman
+

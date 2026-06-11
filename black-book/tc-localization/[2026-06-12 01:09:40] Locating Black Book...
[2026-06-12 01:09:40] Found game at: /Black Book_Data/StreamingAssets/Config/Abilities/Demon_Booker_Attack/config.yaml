@@ -1,0 +1,17 @@
+﻿Name: Чертово заклятие
+AbilityType: DEMON_BOOKER_ATTACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: DEMON_BOOKER_ATTACK
+GoldCost: 3
+RitualTime: 3
+Effects:
+- MinValue: 15
+  MaxValue: 15
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

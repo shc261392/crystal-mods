@@ -1,0 +1,14 @@
+﻿IdName: Week7Day1Hideout
+Name: Сизифова гора
+Description: Эта лысая гора возвышается над страшными адовыми полями. Отсюда все можно разглядеть...
+ShortQuestDescr: Добраться до Сизифовой горы
+Scene: HellZakutok
+LevelConfig:
+  MusicOverride: event:/Music/ExploreHell
+  MixerSnapshot: snapshot:/Cave
+  Quest:
+    DialogueSystemName: TextQuest/Week7/Day1/Hideout/Intro
+RequiredLocations:
+- Week7Day1Cart
+Secondary: Week7Day1Hideout
+

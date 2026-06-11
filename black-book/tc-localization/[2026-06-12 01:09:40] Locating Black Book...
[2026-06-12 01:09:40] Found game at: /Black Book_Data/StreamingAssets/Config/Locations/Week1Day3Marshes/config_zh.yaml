@@ -1,0 +1,7 @@
+﻿Name: 柳利维沼泽
+Description: 亚尼铎村附近有一个柳利维沼泽，那个地方景很美，但也很危险。叶戈尔爷爷说这个沼泽地里有邪灵，那我就可以把它们抓进书里。
+ShortQuestDescr: 抓住沼泽中的魔鬼
+LevelConfig:
+  Battle:
+    Name: 沼泽魔鬼
+

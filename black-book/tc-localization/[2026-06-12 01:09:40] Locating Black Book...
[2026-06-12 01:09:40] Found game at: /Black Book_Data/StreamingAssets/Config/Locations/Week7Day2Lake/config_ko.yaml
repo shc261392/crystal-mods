@@ -1,0 +1,6 @@
+﻿Name: 불의 호수
+Description: 앞에서 희미한 불이 비치지만, 저 불에서는 뭔가 사악한 기운이 느껴진다.
+LevelConfig:
+  Battle:
+    Name: 컨베이어
+

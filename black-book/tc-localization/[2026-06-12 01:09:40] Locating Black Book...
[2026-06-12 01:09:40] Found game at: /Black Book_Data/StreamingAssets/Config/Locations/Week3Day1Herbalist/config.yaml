@@ -1,0 +1,9 @@
+﻿IdName: Week3Day1Herbalist
+Name: Знахарка
+Description: В нашу округу пришла известная знахарка. Стоит посмотреть, какими травами она торгует.
+Scene: ForestBirch
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Merchants:
+  - Herbalist
+

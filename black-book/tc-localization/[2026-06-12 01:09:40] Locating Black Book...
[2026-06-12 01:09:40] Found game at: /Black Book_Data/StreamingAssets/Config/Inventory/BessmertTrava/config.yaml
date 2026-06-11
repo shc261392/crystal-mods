@@ -1,0 +1,11 @@
+﻿Name: Бессмертная трава
+InventoryItemName: BessmertTrava
+Type: Herb
+Flavour: Бессмертная трава на шутьмах ростёт. Высоконька, много отростелей, жёлтенька
+Sprite: BessmertTrava
+Expendable: true
+Cost: 44
+Effects:
+- Value: 20
+  Type: GiveDefence
+

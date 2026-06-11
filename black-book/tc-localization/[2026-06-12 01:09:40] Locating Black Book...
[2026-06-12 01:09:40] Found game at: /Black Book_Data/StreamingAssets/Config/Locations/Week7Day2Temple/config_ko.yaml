@@ -1,0 +1,8 @@
+﻿Name: 죽음의 신전
+Description: 끔찍한 곳이다... 목숨이 붙어있을 때 어서 여길 나가야 한다.
+ShortQuestDescr: 소원 이루기
+LongQuestDescr: 당신은 도둑의 왕이 낸 시험을 통과하고 다음 단계로 나아갔습니다. 이 시련은 앙상한 노파가 직접 당신을 위해 준비했습니다.
+LevelConfig:
+  Battle:
+    Name: 죽음
+

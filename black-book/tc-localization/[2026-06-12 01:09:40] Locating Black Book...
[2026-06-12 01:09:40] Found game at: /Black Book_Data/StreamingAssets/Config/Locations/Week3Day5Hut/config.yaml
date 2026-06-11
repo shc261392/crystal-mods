@@ -1,0 +1,24 @@
+﻿IdName: Week3Day5Hut
+Name: Хижина охотника
+Description: Хижина охотника стоит на окраине города. Надеюсь, Фэрбенкс не обманул!
+ShortQuestDescr: Добраться до хижины
+Scene: HunterCabin
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Нападение волков
+    Enemies:
+    - Type: Wolf
+      LevelSpawnPointType: EnemyCenter
+    - Type: Wolf
+    - Type: Wolf
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day5/Hut/Intro
+    Outro: TextQuest/Week3/Day5/Hut/Outro
+RequiredLocations:
+- Week3Day5Cherdyn
+Secondary: Week3Day5Hut
+

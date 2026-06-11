@@ -1,0 +1,6 @@
+﻿Name: チュヂの平原
+Description: 奇妙な場所だ。ずっと昔からある場所のようだが…
+LevelConfig:
+  Battle:
+    Name: チュヂ族
+

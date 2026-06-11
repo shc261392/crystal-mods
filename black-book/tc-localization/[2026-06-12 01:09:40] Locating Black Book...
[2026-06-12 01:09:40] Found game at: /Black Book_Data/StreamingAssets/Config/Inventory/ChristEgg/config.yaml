@@ -1,0 +1,9 @@
+﻿Name: Первохрестное яйцо
+InventoryItemName: ChristEgg
+Flavour: Вот, говорит, я яйцо беру, которым первым похристосовался. Потом иду в лес с этим яйцом...
+Sprite: ChristEgg
+Cost: 340
+Effects:
+- Value: 3
+  Type: AdditionalDefence
+

@@ -1,0 +1,12 @@
+﻿Name: Бессмертие
+InventoryItemName: Godmode
+Flavour: Рвать и кромсать
+Sprite: IconGodmode
+Cost: 666
+Effects:
+  - Value: 999
+    Type: StatusOnBattleStart
+    StatusName: Immortality
+  - Value: 999
+    Type: StatusOnBattleStart
+    StatusName: Untouchable

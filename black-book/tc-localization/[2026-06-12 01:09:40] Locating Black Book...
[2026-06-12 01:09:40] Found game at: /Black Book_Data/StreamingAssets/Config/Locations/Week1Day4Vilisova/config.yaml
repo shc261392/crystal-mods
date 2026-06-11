@@ -1,0 +1,23 @@
+﻿IdName: Week1Day4Vilisova
+Name: Роща Вилисова
+Description: Мрачная роща рядом с домом Пряхи.
+ShortQuestDescr: Посетить рощу Вилисова
+Scene: Road
+LevelConfig:
+  MusicOverride: event:/Music/ExploreDark
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Черти в роще
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyCenter
+    - Type: Demon
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day4/Vilisova
+RequiredLocations:
+- Week1Day4Girl
+OnomastikonItems:
+- Onomastikon/Encyclopedia/42
+

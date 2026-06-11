@@ -1,0 +1,13 @@
+﻿Name: Солоделик
+InventoryItemName: Solodelik
+Type: Herb
+Flavour: Пекли на поминки такие пирожки с солью-то, да. Покойника оберегают
+Sprite: Solodelik
+Expendable: true
+Cost: 53
+TargetType: ENEMY
+Effects:
+- Value: 5
+  Type: Status
+  StatusName: Ailment
+

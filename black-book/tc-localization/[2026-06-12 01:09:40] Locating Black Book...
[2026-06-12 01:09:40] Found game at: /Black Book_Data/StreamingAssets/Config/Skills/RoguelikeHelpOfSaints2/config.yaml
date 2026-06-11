@@ -1,0 +1,1 @@
+Name: Помощь святых IISkillName: RoguelikeHelpOfSaints2Sprite: HelpOfSaints2SkillDescription: Увеличивает защиту в словах еще на {CalculatedEffect}RequiredSkills:- AbilityCHUREffects:- Value: 1  Type: AdditionalDefence

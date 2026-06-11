@@ -1,0 +1,11 @@
+﻿Name: Святая вода
+InventoryItemName: SaintWater
+Type: Herb
+Flavour: В Иванов день скот обещали, святой водой брызгали, чтобы не падал
+Sprite: IconSaintWater
+Expendable: true
+Cost: 60
+Effects:
+- Value: 3
+  Type: Status
+  StatusName: Imperishable

@@ -1,0 +1,6 @@
+﻿Name: 科尔瓦河上的桥
+Description: 这个桥有时候闹鬼，不急是河里的雠特，他们经常在这个地方出没。
+LevelConfig:
+  Battle:
+    Name: 桥上雠特
+

@@ -1,0 +1,14 @@
+IdName: Week5Day3PyantegBaths
+Name: Пянтежские бани
+Description: Посиденок у пянтежских-то, похоже. Зайти, ли че ли? Да от песен-то еще грустнее сделается...
+Scene: Village
+LocationType: PRIEST
+RequiredLocations:
+  - Week5Day3Pyanteg
+OnomastikonItems:
+  - Onomastikon/Songs/14
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  MusicOverride: event:/Music/ExploreLight
+  Quest:
+    DialogueSystemName: TextQuest/Singers/SingersUniversal/Intro

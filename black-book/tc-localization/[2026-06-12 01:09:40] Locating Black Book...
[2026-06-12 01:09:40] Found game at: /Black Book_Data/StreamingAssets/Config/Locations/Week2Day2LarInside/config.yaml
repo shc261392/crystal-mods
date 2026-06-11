@@ -1,0 +1,31 @@
+﻿IdName: Week2Day2LarInside
+Name: Внутри ларя
+Scene: SaltHouse
+LevelConfig:
+  MusicOverride: event:/Music/ExploreDark2
+  Battle:
+    Name: Русалка в ларе
+    Enemies:
+    - Type: MermaidSalt
+      LevelSpawnPointType: EnemyCenter
+    Barks:
+    - Id: Battle/Mermaid/First
+      HealthPercent: 0.800000012
+      TargetUnit: MermaidSalt
+    - Id: Battle/Mermaid/Second
+      HealthPercent: 0.400000006
+      TargetUnit: MermaidSalt
+    QuestKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day2/LarInside/Intro
+    Reward:
+      Money: 20
+      Experience: 1000
+    Outro: TextQuest/Week2/Day2/LarInside/DialogueAfterBattle
+    IzbaAftermath: Izba/Week2/Day2Aftermath
+    NightEndQuest: true
+  Exploration: Week2Day2LarInside
+  CinematicIntro: true
+  MixerSnapshot: snapshot:/Church
+

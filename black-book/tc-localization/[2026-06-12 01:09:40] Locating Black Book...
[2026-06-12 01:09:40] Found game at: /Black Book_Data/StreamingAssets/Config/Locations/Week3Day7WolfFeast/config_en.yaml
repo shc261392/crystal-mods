@@ -1,0 +1,7 @@
+﻿Name: Wolf Feast
+Description: A bloody trail leads to this glade. I think I can hear the terrible sound of bones crunching!
+ShortQuestDescr: Following the Bloody Trail
+LevelConfig:
+  Battle:
+    Name: Chort Swarm
+

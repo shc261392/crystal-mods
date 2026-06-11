@@ -1,0 +1,15 @@
+﻿IdName: Week4Day6Icon
+Name: Тайник охотника
+Description: Ефим говорит, что тут есть образок, который мне помочь может.
+ShortQuestDescr: Найти икону охотника
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day6/Icon/Intro
+  CameraOverride: CMQuestCamera2
+LightingType: FOG_2
+RequiredLocations:
+- Week4Day6Fields
+Secondary: Week4Day6Icon
+

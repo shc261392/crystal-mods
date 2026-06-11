@@ -1,0 +1,7 @@
+﻿Name: 이스코르스크 성채
+Description: 열병이 이스코르스크 성채 위로 날아갔다. 마을에서 몰아내려면 서둘러야 한다!
+ShortQuestDescr: 열병 따라잡기
+LevelConfig:
+  Battle:
+    Name: 솔로미야
+

@@ -1,0 +1,6 @@
+﻿Name: クニージフ村
+Description: この村の話は何も知らない。村の名前（本好き）の通り、本を売ったりしているのだろうか？
+LevelConfig:
+  Battle:
+    Name: 不死者のコルドゥン
+

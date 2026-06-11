@@ -1,0 +1,9 @@
+﻿Name: Печина
+InventoryItemName: HearthClay
+Flavour: В куске печной глины есть тепло домашнего очага и забота незримых духов рода
+Sprite: HearthClay
+Cost: 60
+Effects:
+- Value: 5
+  Type: DefenceOnBattleStart
+

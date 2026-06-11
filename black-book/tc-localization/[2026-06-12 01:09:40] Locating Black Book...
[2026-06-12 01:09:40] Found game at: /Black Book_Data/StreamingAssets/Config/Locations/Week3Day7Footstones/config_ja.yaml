@@ -1,0 +1,6 @@
+﻿Name: ポリュドフ山の麓
+Description: 眼前にはポリュドフ山がそびえ立っている。狼人間は近い。
+LevelConfig:
+  Battle:
+    Name: ポリュドフの護衛
+

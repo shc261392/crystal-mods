@@ -1,0 +1,6 @@
+﻿Name: 老教堂
+Description: 以前方圆几里地的人都来这个教堂做礼拜，现在已经荒了，里面可能有邪灵或者附了巫法的东西。
+LevelConfig:
+  Battle:
+    Name: 老教堂的雠特
+

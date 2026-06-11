@@ -1,0 +1,6 @@
+﻿Name: 集落
+Description: 恐ろしい気配がする。魔物が近くにいるのだ。
+LevelConfig:
+  Battle:
+    Name: ヴォジャノーイの護衛
+

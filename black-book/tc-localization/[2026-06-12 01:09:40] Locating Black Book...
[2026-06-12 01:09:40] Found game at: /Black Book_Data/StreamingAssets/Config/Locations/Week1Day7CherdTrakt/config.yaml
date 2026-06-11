@@ -1,0 +1,20 @@
+﻿IdName: Week1Day7CherdTrakt
+Name: Чердынский тракт
+Description: Эта большая дорога ведет от Вильгорта до Чердыни. А там дальше и в другие города, и в Пермь даже.
+ShortQuestDescr: Сделать заговор на тракт
+Scene: Road_2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Разбойники
+    Enemies:
+    - Type: Brigand
+      LevelSpawnPointType: EnemyCenter
+    - Type: Brigand
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day7/CherdTrakt/Intro
+RequiredLocations:
+- Week1Day7OldChapel
+

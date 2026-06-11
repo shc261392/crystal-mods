@@ -1,0 +1,9 @@
+﻿IdName: Week2Day7Fedorova
+Name: Деревня Федорово
+Description: Обычная деревушка, я тут не была никогда. Может, все тут водяному поклоняются, как в прошлом было?
+Scene: Village7
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day7/Fedorovo
+

@@ -1,0 +1,20 @@
+﻿Name: Адово клеймо
+AbilityType: DEMON_BRANDER_ATTACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: DEMON_BRANDER_ATTACK
+GoldCost: 3
+Effects:
+- MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+- EffectType: STATUS
+  StatusEffectType: Waste
+  MinValue: 10
+  MaxValue: 10
+

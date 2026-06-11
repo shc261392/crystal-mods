@@ -1,0 +1,6 @@
+﻿Unique: true
+Name: Сон
+Description: Нельзя использовать способность союзника в течение {Duration} ходов
+Sprite: StatDream
+Harmful: true
+

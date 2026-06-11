@@ -1,0 +1,59 @@
+﻿IdName: AllyNikolayUstKaib
+Name: Деревня Усть-Каиб
+Description: Где-то тут дед Егор спрятал свои старые травяные запасы. Я по его указаниям быстро отыщу!
+ShortQuestDescr: Забрать Егоровы травы
+Scene: Road_2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Егоровы запасы
+    Enemies:
+    - Type: DemonPuzzle3
+      LevelSpawnPointType: EnemyCenter
+      HealthOverride: 15
+    NoShuffle: true
+    PuzzleDeck:
+    - KILA
+    - KILA
+    - AVDELAI
+    - AVDELAI
+    - AVDELAI
+    - AVDELAI
+    - AVDELAI
+    - AVDELAI
+    - AVDELAI
+    - AVDELAI
+    - AVDELAI
+    - AVDELAI
+    - RUDA
+    - DEMON_WIZARD
+    - RABA
+    - RABA
+    - RABA
+    - RABA
+    - RABA
+    PuzzleManaOverride:
+    - 2
+    - 1
+    PuzzleHandOverride:
+    - 5
+    - 3
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 2
+  Quest:
+    DialogueSystemName: TextQuest/AllyNikolay/UstKaib/Intro
+    Outro: TextQuest/AllyNikolay/UstKaib/Outro
+  MusicOverride: event:/Music/ExploreDark
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 3
+    PossiblePlayers:
+    - Demon
+    - Demon
+    DialogueFoolWin: TextQuest/Durak/WinBattleUtil
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+RequiredLocations:
+- AllyNikolayRoad
+Secondary: AllyNikolayUstKaib
+

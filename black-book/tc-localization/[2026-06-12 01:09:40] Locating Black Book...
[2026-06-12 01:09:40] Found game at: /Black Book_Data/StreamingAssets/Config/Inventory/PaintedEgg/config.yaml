@@ -1,0 +1,9 @@
+﻿Name: Крашеное яичко
+InventoryItemName: PaintedEgg
+Flavour: На божничку-то  мы  положили  крашеные яички.
+Sprite: PaintedEgg
+Cost: 240
+Effects:
+- Value: 2
+  Type: AdditionalDefence
+

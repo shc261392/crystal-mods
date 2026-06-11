@@ -1,0 +1,10 @@
+﻿Name: Про Параскеву Пятницу
+InventoryItemName: LifeParaskeva
+Flavour: В ноябре скотину окуривают, молебен служат, чтобы на скотину ускотья не было
+Sprite: LifeParaskeva
+Cost: 160
+Effects:
+- Value: 2
+  Type: StatusBonus
+  StatusName: Piety
+

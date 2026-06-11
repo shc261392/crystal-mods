@@ -1,0 +1,14 @@
+﻿Name: Угасиил +
+AbilityType: UGASIIL_UP
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Description: >
+  Слова с защитой в заговоре приносят на {MinValue} защиты больше
+Sprite: Ugasiil
+GoldCost: 5
+Effects:
+- EffectType: WORD_DEFENCE_INC
+  MinValue: 4
+  MaxValue: 4
+

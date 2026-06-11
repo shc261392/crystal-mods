@@ -1,0 +1,20 @@
+﻿Name: Коготь-уворот
+AbilityType: HALF_DEMON_ATTACK_DEF
+TargetType: ENEMY
+Intention: ATTACK_BUFF
+Sprite: THIRTEENTH_DEFENCE
+GoldCost: 3
+Effects:
+- MinValue: 2
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+- EffectType: DEFENCE
+  MinValue: 3
+  MaxValue: 3
+  ForceTarget: SELF
+

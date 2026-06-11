@@ -1,0 +1,6 @@
+﻿Name: Foggy Forest
+Description: I can take a peek into the forest that grows alongside the road. I think evil spirits lurk there...like cockroaches behind the stove.
+LevelConfig:
+  Battle:
+    Name: Forest Chorts
+

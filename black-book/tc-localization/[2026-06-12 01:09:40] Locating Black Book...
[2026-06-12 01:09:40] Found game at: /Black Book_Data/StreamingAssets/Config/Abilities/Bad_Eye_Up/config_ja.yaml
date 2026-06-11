@@ -1,0 +1,8 @@
+﻿Name: 呪詛+
+Description: >-
+  呪詛
+
+  敵が与えるダメージが{MinValue}減る
+
+  持続：{MaxValue}ターン
+

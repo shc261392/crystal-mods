@@ -1,0 +1,23 @@
+﻿IdName: Week4Day3Burned
+Name: Лесной поджег
+Description: Крестьяне борются с наступающим лесом как могут.
+Scene: Forest_4
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Горелые бесы
+    Enemies:
+    - Type: DemonBrander
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSmall
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day3/Burned
+  CameraOverride: CMQuestCamera2
+LightingType: FOG_2
+MoonType: NONE
+

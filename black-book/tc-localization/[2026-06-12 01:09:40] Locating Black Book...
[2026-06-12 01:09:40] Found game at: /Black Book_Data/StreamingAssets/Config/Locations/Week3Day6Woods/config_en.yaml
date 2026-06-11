@@ -1,0 +1,7 @@
+﻿Name: Misty Ravine
+Description: I can't see anything from here. What's hiding there? Was that a shadow just now?..
+ShortQuestDescr: Tracking Werewolves
+LevelConfig:
+  Battle:
+    Name: Snake Koldun
+

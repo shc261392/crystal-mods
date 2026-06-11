@@ -1,0 +1,7 @@
+﻿Name: 알레슈킨 밭
+Description: 초르트가 보금자리로 삼아 포레보이를 괴롭히기로 한 곳이다.
+ShortQuestDescr: 요란한 초르트 없애기
+LevelConfig:
+  Battle:
+    Name: 요란한 초르트
+

@@ -1,0 +1,27 @@
+﻿IdName: Week1Day1Kusheva
+Name: Деревня Кушева
+Description: Небольшая деревушка к западу от Колвы. Я там бывала несколько раз, коров ладили. Дед Егор отправил сюда своего беса на работу.
+ShortQuestDescr: Заглянуть в деревню Кушева
+Scene: Izba_Peasant1
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Черт из самовара
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyRight
+    - Type: SamovarDemon
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day1/Samovar/Explore
+    Outro: TextQuest/Week1/Day1/Samovar/Outro
+RequiredLocations:
+- Week1Day1Mogilevsky
+Secondary: Week1Day1Kusheva
+OnomastikonItems:
+- Onomastikon/Encyclopedia/45
+- Onomastikon/Encyclopedia/83
+

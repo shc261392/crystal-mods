@@ -1,0 +1,8 @@
+﻿Name: Brewing by the River
+Description: Beer is being brewed in a large pot by the river.
+ShortQuestDescr: Remove the Beer Curse
+LongQuestDescr: Someone cursed the beer that was being brewed by the river for the wedding. Could it be the obderikha's doing?
+LevelConfig:
+  Battle:
+    Name: Beer Curse
+

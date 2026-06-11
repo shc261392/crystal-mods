@@ -1,0 +1,9 @@
+﻿Name: 去维葛特的路
+Description: 这条路这块儿旁边就是个陡坡，下边是科尔瓦河。之前有个列希把一个小男孩儿引到这个地方，差一点儿就让他掉进河里了。
+ShortQuestDescr: 除掉路上的邪灵
+LevelConfig:
+  Battle:
+    Name: 路上邪灵
+  BattleAlternative:
+    Name: 路上邪灵
+

@@ -1,0 +1,13 @@
+﻿IdName: Week1Day6Kulyash
+Name: Усадьба Куляшова
+Description: Дурная слава Кривого лога на севере не помешала семье Куляшовых выстроить тут большую усадьбу. Насколько я слышала, живут они ладно.
+ShortQuestDescr: Поладить корову
+Scene: Village7
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  MusicOverride: event:/Music/ExploreLight
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day6/Kulyash
+RequiredLocations:
+- Week1Day6RoadToVilgort
+

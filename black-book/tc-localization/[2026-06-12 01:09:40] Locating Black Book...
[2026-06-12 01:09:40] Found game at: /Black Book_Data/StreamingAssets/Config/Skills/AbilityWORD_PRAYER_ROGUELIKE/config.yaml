@@ -1,0 +1,10 @@
+Name: WORD_PRAYER_ROGUELIKE
+SkillName: AbilityWORD_PRAYER_ROGUELIKE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - RoguelikeHelpOfSaints2
+SpriteOffsetX: 4
+SpriteOffsetY: 10
+Effects:
+- Type: AbilityUnlock
+  StringData: WORD_PRAYER_ROGUELIKE

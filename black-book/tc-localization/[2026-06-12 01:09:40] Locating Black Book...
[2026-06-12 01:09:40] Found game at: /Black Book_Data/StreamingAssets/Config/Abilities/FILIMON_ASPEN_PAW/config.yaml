@@ -1,0 +1,21 @@
+﻿Name: Осиновая лапа
+AbilityType: FILIMON_ASPEN_PAW
+TargetType: ENEMY
+Intention: ATTACK_DEBUFF
+Sprite: FILIMON_ASPEN_PAW
+GoldCost: 3
+Effects:
+- MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  RepeatCount: 2
+- EffectType: STATUS
+  StatusEffectType: Waste
+  MinValue: 5
+  MaxValue: 5
+

@@ -1,0 +1,1 @@
+Name: Большая сума ISkillName: RoguelikeEquipQuantity1Sprite: EquipQuantity1SkillDescription: Увеличивает количество надеваемых предметов на {CalculatedEffect}RequiredSkills:  - AbilityRABAEffects:- Value: 1  Type: EquipQuantity

@@ -1,0 +1,37 @@
+﻿AssetName: Andromalius
+Health: 500
+HealthRandomAdd: 5
+Mana: 4
+Initiative: 1
+MoneyMin: 180
+MoneyMax: 240
+Experience: 2000
+StartingStatusEffects:
+  - StatusEffectType: DefenceKeep
+    Duration: 99
+    Permanent: true
+    Unremovable: true
+  - StatusEffectType: Blessed
+    Duration: 33
+    HardDifficulty: true
+  - StatusEffectType: Imperishable
+    Duration: 333
+    Permanent: true
+    HardDifficulty: true
+UnitAI:
+  AIAbilities:
+    - AbilityType: DAMNED_BOUNTY
+      TargetType: ENEMY
+    - AbilityType: HEAVY_BURDEN
+      TargetType: ENEMY
+    - AbilityType: GOLDEN_ARMOR
+      TargetType: SELF
+    - AbilityType: PAY_OFF
+      TargetType: ENEMY
+    - AbilityType: SECURITY
+      TargetType: SELF
+    - AbilityType: BRIBE
+      TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Андромалиус
+

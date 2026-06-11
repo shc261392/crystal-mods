@@ -1,0 +1,17 @@
+﻿AssetName: TransparentUnit
+MultiUnit: Spider
+Health: 50
+Mana: 4
+Initiative: 2
+Experience: 50
+StartingStatusEffects:
+- StatusEffectType: Curst
+  Duration: 1
+  Permanent: true
+  Unremovable: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: POISONOUS_DISEASE
+    TargetType: ENEMY
+Name: Лапа Черани
+

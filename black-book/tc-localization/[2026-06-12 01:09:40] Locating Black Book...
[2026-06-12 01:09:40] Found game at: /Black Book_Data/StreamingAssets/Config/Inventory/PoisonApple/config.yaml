@@ -1,0 +1,12 @@
+﻿Name: Ядовитое яблочко  
+InventoryItemName: PoisonApple
+Type: Herb
+Flavour: "Открой, яблочко, дорожку в тридесятое царство"
+Sprite: IconPoisonApple
+Expendable: true
+Cost: 26
+TargetType: SELF
+Effects:
+- Value: 999
+  Type: Status
+  StatusName: Poison

@@ -1,0 +1,22 @@
+﻿Name: Бесы из вихря
+AbilityType: VORTEX_DEMONS
+TargetType: SELF
+AbilitySpellType: SUMMON
+Sprite: VORTEX_DEMONS
+GoldCost: 3
+Effects:
+- EffectType: SUMMON
+  MinValue: 2
+  MaxValue: 2
+  SummonEffectData:
+    UnitTypes:
+    - DemonFierce
+    - DemonBrander
+    - DemonPoison
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

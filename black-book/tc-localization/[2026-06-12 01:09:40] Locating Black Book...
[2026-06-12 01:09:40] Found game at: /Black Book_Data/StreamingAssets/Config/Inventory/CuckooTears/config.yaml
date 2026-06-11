@@ -1,0 +1,12 @@
+﻿Name: Кукушечьи слезы
+InventoryItemName: CuckooTears
+Type: Herb
+Flavour: Невеста кукушкой стала. Где она пролетает и слезы роняет, трава и растет. Оборотней эта трава может расколдовать.
+Sprite: CuckooTears
+Expendable: true
+Cost: 44
+Effects:
+- Value: 4
+  Type: Status
+  StatusName: Regeneration
+

@@ -1,0 +1,6 @@
+﻿Unique: true
+Name: Нескладь
+Description: Сглаз для статусных эффектов (уменьшает значение всех накладываемых эффектов на {Duration})
+Sprite: StatBadVersed
+Harmful: true
+

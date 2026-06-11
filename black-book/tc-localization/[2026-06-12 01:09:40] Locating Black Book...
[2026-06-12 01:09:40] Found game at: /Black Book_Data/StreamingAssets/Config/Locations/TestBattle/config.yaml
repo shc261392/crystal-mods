@@ -1,0 +1,15 @@
+﻿IdName: TestBattle
+Name: Сражение с чертями
+LocationType: COMBAT
+Scene: Forest
+LevelConfig:
+  Battle:
+    Name: Тестовое сражение    
+    Enemies:
+      - Type: Demon
+        LevelSpawnPointType: EnemyLeft
+      - Type: Demon
+        LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true    
+  MixerSnapshot: snapshot:/Forest  

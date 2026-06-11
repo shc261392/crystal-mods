@@ -1,0 +1,101 @@
+﻿IdName: AllyNikolayCreek
+Name: Собачий родник
+Description: 'На этом роднике что-то неладно: блазнить стало. Слободской крестьянин попросил проверить источник и разобраться с нечистым.'
+ShortQuestDescr: Родниковая порча
+Scene: River2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Родниковая чудь
+    Enemies:
+    - Type: Chud1
+      LevelSpawnPointType: EnemyCenter
+      HealthOverride: 14
+    - Type: ChudPuzzleBlack
+      HealthOverride: 30
+    - Type: DemonPuzzleAttack1
+      LevelSpawnPointType: EnemyRight
+      HealthOverride: 8
+    NoShuffle: true
+    OnlyNightmare: true    
+    PuzzleDeck:
+    - SKORCHEN
+    - KORKUSHA
+    - OGNEVITSA
+    - PEREPOLOH
+    - HEADLESS
+    - ALTAR
+    - AVDELAI
+    - AVDELAI
+    - AVDELAI
+    - AVDELAI
+    - AVDELAI
+    - BLOOD_BURN
+    - RUDA
+    - LAZAR
+    - LOCK
+    - LOCK
+    - LOCK
+    - LOCK
+    - LOCK
+    - LOCK
+    PuzzleManaOverride:
+    - 2
+    - 1
+    PuzzleHandOverride:
+    - 5
+    - 3
+    ForceAlly: Nikolay
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 3  
+  BattleAlternative:
+    Name: Родниковая чудь
+    Enemies:
+    - Type: DemonPuzzleAttack1
+      LevelSpawnPointType: EnemyCenter
+      HealthOverride: 8
+    - Type: DemonPuzzleAttack1
+      HealthOverride: 10
+    - Type: DemonPuzzleAttack1
+      LevelSpawnPointType: EnemyRight
+      HealthOverride: 8
+    NoShuffle: true
+    PuzzleDeck:
+    - PEREPOLOH
+    - UBEITSA
+    - KILA
+    - KILA
+    - AVDELAI
+    - AVDELAI
+    - AVDELAI
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    PuzzleManaOverride:
+    - 2
+    - 1
+    PuzzleHandOverride:
+    - 5
+    - 3
+    ForceAlly: Nikolay
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 1
+  Quest:
+    DialogueSystemName: TextQuest/AllyNikolay/Creek/Intro
+  MusicOverride: event:/Music/ExploreDark
+RequiredLocations:
+- AllyNikolayKishkonog
+Secondary: AllyNikolayCreek
+

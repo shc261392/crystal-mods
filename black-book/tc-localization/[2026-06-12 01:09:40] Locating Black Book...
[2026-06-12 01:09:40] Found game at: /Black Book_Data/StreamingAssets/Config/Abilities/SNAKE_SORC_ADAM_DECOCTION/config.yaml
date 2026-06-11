@@ -1,0 +1,16 @@
+﻿Name: Адамов отвар
+AbilityType: SNAKE_SORC_ADAM_DECOCTION
+TargetType: SELF
+Sprite: SNAKE_SORC_ADAM_DECOCTION
+GoldCost: 6
+Effects:
+- EffectType: HEAL
+  MinValue: 50
+  MaxValue: 50
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

@@ -1,0 +1,28 @@
+﻿AssetName: DedEgorDemon
+Health: 444
+Mana: 4
+Initiative: 2
+MoneyMin: 120
+MoneyMax: 180
+Experience: 3000
+StartingStatusEffects:
+- StatusEffectType: DefenceGive
+  Duration: 30
+  HardDifficulty: true
+- StatusEffectType: Spikes
+  Duration: 15
+- StatusEffectType: Hefty
+  Duration: 30
+  Permanent: true
+  Unremovable: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: DEMON_EGOR_FLESH
+    TargetType: ENEMY
+  - AbilityType: DEMON_EGOR_NAILS
+    TargetType: ENEMY
+  - AbilityType: DEMON_EGOR_NO_DEATH
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Кривой вихрь
+

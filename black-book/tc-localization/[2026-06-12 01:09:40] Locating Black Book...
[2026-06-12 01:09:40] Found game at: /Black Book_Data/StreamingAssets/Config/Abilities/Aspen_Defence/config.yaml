@@ -1,0 +1,18 @@
+﻿Name: Осиновая кора
+AbilityType: ASPEN_DEFENCE
+TargetType: SELF
+Intention: DEFENCE
+Sprite: ASPEN_DEFENCE
+GoldCost: 6
+Effects:
+- EffectType: DEFENCE
+  MinValue: 20
+  MaxValue: 20
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Protection
+    SpellTrigger: Protection
+    MissTrigger: Miss
+    WrapUpTime: 0.100000001
+    SkipReady: true
+

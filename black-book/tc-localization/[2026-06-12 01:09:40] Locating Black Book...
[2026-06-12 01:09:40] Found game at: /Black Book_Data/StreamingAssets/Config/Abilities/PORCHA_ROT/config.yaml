@@ -1,0 +1,20 @@
+﻿Name: Гниль
+AbilityType: PORCHA_ROT
+TargetType: ENEMY
+Intention: BUFF
+Sprite: PORCHA_ROT
+Sound: event:/Abilities/PORCHA_ROT
+GoldCost: 6
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Decomposure
+  MinValue: 8
+  MaxValue: 8
+  VisualEffect:
+    VisualEffectType: BITE
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 2
+    SkipReady: true
+

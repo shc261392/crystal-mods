@@ -1,0 +1,6 @@
+﻿Name: 保留<sprite name="Defence">
+Description: >-
+  <sprite name="Defence">的效果不会在回合结束时消失。
+
+  持续时间：{Duration}回合
+

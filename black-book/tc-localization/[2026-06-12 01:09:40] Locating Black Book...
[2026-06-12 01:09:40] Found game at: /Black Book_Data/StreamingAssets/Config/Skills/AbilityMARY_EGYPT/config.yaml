@@ -1,0 +1,10 @@
+Name: MARY_EGYPT
+SkillName: AbilityMARY_EGYPT
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityBLOOD_CLOTTED
+SpriteOffsetX: -21
+SpriteOffsetY: -35
+Effects:
+- Type: AbilityUnlock
+  StringData: MARY_EGYPT

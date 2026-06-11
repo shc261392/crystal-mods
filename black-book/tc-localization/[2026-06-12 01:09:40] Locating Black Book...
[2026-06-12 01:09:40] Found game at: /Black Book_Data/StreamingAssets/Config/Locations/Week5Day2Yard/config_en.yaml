@@ -1,0 +1,6 @@
+﻿Name: Cherdyn Yard
+Description: Here I'll cut a corner to the police station.
+LevelConfig:
+  Battle:
+    Name: Yard Spirit
+

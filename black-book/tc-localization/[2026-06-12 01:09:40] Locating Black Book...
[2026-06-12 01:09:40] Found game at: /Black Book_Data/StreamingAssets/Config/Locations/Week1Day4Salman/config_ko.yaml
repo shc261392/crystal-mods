@@ -1,0 +1,8 @@
+﻿Name: 살만 습지
+Description: 이 습지는 사람의 발길이 적다. 사람이 거의 살지 않다시피 하기 때문에 다양한 정령들이 이곳을 보금자리로 삼았다.
+LevelConfig:
+  Battle:
+    Name: 살만 전투
+  BattleAlternative:
+    Name: 살만 전투
+

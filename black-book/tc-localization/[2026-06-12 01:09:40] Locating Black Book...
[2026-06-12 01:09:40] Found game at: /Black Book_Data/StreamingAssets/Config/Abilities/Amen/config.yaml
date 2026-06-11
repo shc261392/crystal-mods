@@ -1,0 +1,24 @@
+﻿Name: Аминь
+AbilityType: AMEN
+AbilityBookPartType: KEY
+Upgrade: AMEN_UP
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: AMEN
+GoldCost: 15
+Effects:
+- EffectType: FIRM
+  MinValue: 1
+  MaxValue: 1
+- EffectType: STATUS
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpell
+    MissTrigger: AttackSpell
+    WrapUpTime: 0.5
+  StatusEffectType: Piety
+

@@ -1,0 +1,10 @@
+﻿Name: Старый нож
+InventoryItemName: OldKnife
+Flavour: Кажется, будто на ноже не только ржвачина, но и запекшаяся кровь.
+Sprite: OldKnife
+Cost: 60
+Effects:
+- Value: 1
+  Type: AbilityOnBattleStart
+  StatusName: OLD_KNIFE
+

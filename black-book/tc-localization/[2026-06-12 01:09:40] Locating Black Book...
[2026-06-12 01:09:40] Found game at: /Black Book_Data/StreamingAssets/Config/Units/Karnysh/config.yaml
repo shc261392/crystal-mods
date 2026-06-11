@@ -1,0 +1,13 @@
+﻿AssetName: KarnyshAlly
+Health: 9999
+HealthRandomAdd: 5
+Mana: 4
+Initiative: 2
+UnitAI:
+  AllyActivatedAbility:
+    AbilityType: KARNYSH_REGULAR
+    TargetType: PLAYER
+  AllyActivatedAbilityTimeout: 4
+  CastingType: RANDOM
+Name: Карныш
+

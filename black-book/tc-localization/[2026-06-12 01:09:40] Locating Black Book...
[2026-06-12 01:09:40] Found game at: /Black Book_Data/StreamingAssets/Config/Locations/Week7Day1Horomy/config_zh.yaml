@@ -1,0 +1,8 @@
+﻿Name: 邪恶宫殿
+Description: 马上就到了，这个宫殿可真神秘，上上下下都长了毒蘑菇，邪恶在这地方住了千万年了……
+ShortQuestDescr: 实现愿望
+LongQuestDescr: 许愿必须去地狱中央，去那边第一道障碍是冥界这片地方的领主——安杜马利乌士。
+LevelConfig:
+  Battle:
+    Name: 安杜马利乌士
+

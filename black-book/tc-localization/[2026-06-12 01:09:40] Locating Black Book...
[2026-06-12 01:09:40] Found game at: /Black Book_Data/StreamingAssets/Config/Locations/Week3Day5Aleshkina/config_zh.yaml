@@ -1,0 +1,7 @@
+﻿Name: 阿列什金村
+Description: 我必须找到亚历山大，绝对不能放过他！
+ShortQuestDescr: 找到亚历山大
+LevelConfig:
+  Battle:
+    Name: 水井精怪
+

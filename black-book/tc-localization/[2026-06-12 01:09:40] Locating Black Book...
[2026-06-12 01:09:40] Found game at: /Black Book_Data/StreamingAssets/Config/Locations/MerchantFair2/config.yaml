@@ -1,0 +1,33 @@
+﻿IdName: MerchantFair2
+Name: Ярмарка
+Description: На ярмарке можно и травы купить, и колдовских предметов у офень поискать.
+Scene: Fair
+LevelConfig:
+  Merchants:
+  - Peddler2
+  - Herbalist2
+  - BookKeeper2
+  - CardGame
+  Quest:
+    DialogueSystemName: TextQuest/Merchant/Fair
+  MusicOverride: event:/Ambient/Yarmarka
+  FoolGame:
+    TeamPlay: true
+    CardsCount: 36
+    PlayerCount: 4
+    RandomPlayerCount: true    
+    PossiblePlayers:
+    - Peasant
+    - Peddler
+    - Peasant
+    - Peasant2
+    - Peasant3
+    - Peasant4
+    - Peasant5
+    - Peasant6
+    - Peasant7
+    - Peasant8
+    DialogueFoolWin: TextQuest/Durak/MerchantGameWin
+    DialogueFoolLose: TextQuest/Durak/MerchantGameLose
+CanBeVisitedNextDay: true
+

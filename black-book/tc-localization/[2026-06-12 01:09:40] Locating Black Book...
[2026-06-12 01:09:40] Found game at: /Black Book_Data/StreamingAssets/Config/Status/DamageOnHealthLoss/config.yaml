@@ -1,0 +1,5 @@
+﻿Unique: true
+Name: Урон при потере здоровья
+Description: Наносит врагам {Duration} <sprite name="Damage">, когда вы теряете <sprite name="Health">
+Sprite: StatusShieldUp
+

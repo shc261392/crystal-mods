@@ -1,0 +1,19 @@
+﻿Name: На свободу!
+AbilityType: TO_FREEDOM
+TargetType: ALL_ALLIES
+Intention: BUFF
+Sprite: TO_FREEDOM
+GoldCost: 6
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Waste
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: BITE
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 2
+    SkipReady: true
+

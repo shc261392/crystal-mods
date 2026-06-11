@@ -1,0 +1,16 @@
+﻿Name: Проклятие
+AbilityType: DEMON_CURSE
+TargetType: ENEMY
+Sprite: Obderiha
+GoldCost: 3
+Effects:
+- MinValue: 2
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    WrapUpTime: 2
+    SkipReady: true
+

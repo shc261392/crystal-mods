@@ -1,0 +1,7 @@
+﻿Name: The Pudva Sketes
+Description: Old crumbling izbas. The locals mentioned something about the sketes of Old Believers...
+ShortQuestDescr: Find the Stranger in the Sketes
+LevelConfig:
+  Battle:
+    Name: Pastor-Chorts
+

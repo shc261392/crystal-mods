@@ -1,0 +1,12 @@
+﻿IdName: Week2Day7Godya
+Name: Годья
+Description: 'Небольшая речушка; про нее говорили, что часто топли тут люди. Ну, неудивительно: мельница близко.'
+Scene: Forest_4
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/Explore2
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day7/Godya
+RequiredLocations:
+- Week2Day7Viselok
+

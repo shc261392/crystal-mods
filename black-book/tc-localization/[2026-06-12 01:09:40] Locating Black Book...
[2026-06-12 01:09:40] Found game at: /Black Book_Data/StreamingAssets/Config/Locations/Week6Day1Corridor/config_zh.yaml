@@ -1,0 +1,6 @@
+﻿Name: 走廊
+Description: 马上就到了！过了这条长走廊就到了。
+LevelConfig:
+  Battle:
+    Name: 希希加走廊
+

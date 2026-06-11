@@ -1,0 +1,7 @@
+﻿Name: Black Swamps
+Description: Missing Ochga dwellers may be somewhere around here.
+ShortQuestDescr: Find the missing peasants
+LevelConfig:
+  Battle:
+    Name: Drowners
+

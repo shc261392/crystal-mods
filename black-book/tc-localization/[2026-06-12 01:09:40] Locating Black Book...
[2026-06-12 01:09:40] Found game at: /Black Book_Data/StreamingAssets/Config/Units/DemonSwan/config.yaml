@@ -1,0 +1,19 @@
+﻿AssetName: Swan
+Health: 33
+Mana: 4
+Initiative: 1
+MoneyMin: 90
+MoneyMax: 120
+Experience: 1000
+UnitAI:
+  AIAbilities:
+  - AbilityType: DEMON_SWAN_DOOM
+    TargetType: ENEMY
+  - AbilityType: DEMON_SWAN_ATTACK
+    TargetType: ENEMY
+    ConsequitiveRounds: 99
+  CastingType: CONSEQUITIVE
+Name: Лебедь зубастый
+DeathSound: event:/Units/Demon/Death
+DamagedSound: event:/Units/Demon/Damaged
+

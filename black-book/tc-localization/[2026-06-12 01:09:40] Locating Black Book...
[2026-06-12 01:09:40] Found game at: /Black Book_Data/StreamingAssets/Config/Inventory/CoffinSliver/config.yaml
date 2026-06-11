@@ -1,0 +1,10 @@
+﻿Name: Гробовая щепка
+InventoryItemName: CoffinSliver
+Flavour: Колдун, еретик, ябедник, режь свое тело, пей свою кровь, между нами бог
+Sprite: IconCoffinSliver
+Cost: 140
+Effects:
+  - Value: 5
+    Type: StatusOnBattleStart
+    StatusName: Spikes
+

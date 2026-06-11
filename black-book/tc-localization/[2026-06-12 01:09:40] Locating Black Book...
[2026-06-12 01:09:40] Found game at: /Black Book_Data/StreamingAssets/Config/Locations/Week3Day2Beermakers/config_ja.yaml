@@ -1,0 +1,8 @@
+﻿Name: 川沿いの醸造所
+Description: ビールは川沿いにある大きな鍋で醸造されている。
+ShortQuestDescr: ビールの呪いを解く
+LongQuestDescr: 結婚式に備えて醸造中だったビールに何者かが呪いをかけた。オブジェリーハの仕業だろうか？
+LevelConfig:
+  Battle:
+    Name: ビールの呪い
+

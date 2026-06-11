@@ -1,0 +1,12 @@
+﻿IdName: Week1Day4Tashkov
+Name: Обрыв Ташкова
+Description: Сколько ни путешествую по Чердынскому уезду, а конца и края обрывам да падям нету. А западнее-то, говорят, вообще горы есть.
+Scene: River_3
+LevelConfig:
+  MusicOverride: event:/Music/ExploreLight
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Herb/Adam
+RequiredLocations:
+- Week1Day4Pyanteg
+

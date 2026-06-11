@@ -1,0 +1,10 @@
+Name: PRIZOR_STICKY
+SkillName: AbilityPRIZOR_STICKY
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityLAKE_DEPTH
+SpriteOffsetX: -56
+SpriteOffsetY: -35
+Effects:
+- Type: AbilityUnlock
+  StringData: PRIZOR_STICKY

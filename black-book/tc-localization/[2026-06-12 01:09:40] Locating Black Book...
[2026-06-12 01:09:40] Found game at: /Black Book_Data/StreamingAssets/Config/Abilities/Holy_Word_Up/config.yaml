@@ -1,0 +1,20 @@
+﻿Name: Святое слово +
+AbilityType: HOLY_WORD_UP
+TargetType: ENEMY
+Description: "Наносит {MinValue} урона \n{MinValue} <sprite name=\"Defence\">"
+Sprite: HolyWordAbility
+GoldCost: 4
+Effects:
+- MinValue: 4
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpell
+    MissTrigger: AttackSpell
+    WrapUpTime: 1
+- EffectType: DEFENCE
+  MinValue: 4
+  MaxValue: 4
+  ForceTarget: SELF
+

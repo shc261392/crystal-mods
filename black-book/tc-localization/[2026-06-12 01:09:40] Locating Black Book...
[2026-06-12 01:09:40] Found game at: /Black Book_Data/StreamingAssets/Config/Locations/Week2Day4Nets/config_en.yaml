@@ -1,0 +1,6 @@
+﻿Name: Fishermen Nets
+Description: Fishermen have placed their nets here. They may be the same fishermen who helped me.
+LevelConfig:
+  Battle:
+    Name: Murky Spirits
+

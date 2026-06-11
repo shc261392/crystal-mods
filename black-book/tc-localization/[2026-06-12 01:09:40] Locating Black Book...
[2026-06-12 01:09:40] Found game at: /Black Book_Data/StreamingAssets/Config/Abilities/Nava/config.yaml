@@ -1,0 +1,21 @@
+﻿Name: Нава
+AbilityType: NAVA
+Upgrade: NAVA_UP
+TargetType: ENEMY
+Sprite: NavaAbility
+GoldCost: 21
+Effects:
+- EffectType: FIRM
+  MinValue: 1
+  MaxValue: 1
+- EffectType: DAMAGE_SKLAD
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

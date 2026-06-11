@@ -1,0 +1,10 @@
+Name: ANTIPKA
+SkillName: AbilityANTIPKA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - RoguelikeSduUraziToKila
+SpriteOffsetX: -15.3
+SpriteOffsetY: -46.7
+Effects:
+- Type: AbilityUnlock
+  StringData: ANTIPKA

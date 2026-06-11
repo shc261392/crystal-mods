@@ -1,0 +1,14 @@
+﻿IdName: Week1Day7Znahar
+Name: Ключ Студеный
+Description: Возле этого ключа живет известная в округе знахарка-травница.
+ShortQuestDescr: Купить трав у знахарки
+Scene: Izba_Peasant1
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  Merchants:
+  - Herbalist
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day7/Znahar
+RequiredLocations:
+- Week1Day7Abachkin
+

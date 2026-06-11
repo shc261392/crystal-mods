@@ -1,0 +1,8 @@
+﻿Name: 旧仓库
+Description: 啊哈！那边是地下室出口！
+ShortQuestDescr: 越狱
+LongQuestDescr: 亚历山大和织婆将你囚禁于此，还拿走了你的黑书。你必须自行脱身，取回法器！
+LevelConfig:
+  Battle:
+    Name: 尖牙天鹅
+

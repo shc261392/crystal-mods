@@ -1,0 +1,21 @@
+﻿Name: Прикос
+AbilityType: PRIKOS
+TargetType: ALL_ENEMIES
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: PRIKOS
+GoldCost: 71
+Effects:
+- EffectType: KRADA  
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal7OrderBlack
+    MissTrigger: Seal7OrderBlack
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: Suppressed
+  StatusPermanent: true

@@ -1,0 +1,11 @@
+﻿IdName: Week1Day3NorthWood
+Name: Северный лес
+Description: В лесу всегда опасно – хоть день, хоть ночь. В любом лесу есть свой хозяин, и не всегда он любит незваных гостей.
+Scene: Forest_old
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Herb/Adam
+RequiredLocations:
+- Week1Day3Turgan
+Secondary: Week1Day3Tarakan
+

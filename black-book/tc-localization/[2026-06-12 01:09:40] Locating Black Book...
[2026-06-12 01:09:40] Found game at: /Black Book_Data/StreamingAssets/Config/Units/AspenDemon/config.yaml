@@ -1,0 +1,24 @@
+﻿AssetName: AspenDemon
+Health: 80
+HealthRandomAdd: 15
+Mana: 4
+Initiative: 1
+MoneyMin: 18
+MoneyMax: 30
+Experience: 1500
+StartingStatusEffects:
+- StatusEffectType: Wooden
+  Duration: 999999
+  Permanent: true
+  Unremovable: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: ASPEN_SUMMON
+    TargetType: SELF
+  - AbilityType: ASPEN_ATTACK
+    TargetType: ENEMY
+  - AbilityType: ASPEN_DEFENCE
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Осиновое полено
+

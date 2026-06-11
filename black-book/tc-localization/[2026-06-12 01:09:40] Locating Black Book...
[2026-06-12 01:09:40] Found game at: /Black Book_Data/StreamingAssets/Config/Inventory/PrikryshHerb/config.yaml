@@ -1,0 +1,11 @@
+﻿Name: Прикрыш-трава
+InventoryItemName: PrikryshHerb
+Type: Herb
+Flavour: Люди, сведущие в чарованиях, защищают этой травой от разной порчи.
+Sprite: PrikryshHerb
+Expendable: true
+Cost: 14
+Effects:
+- Value: 5
+  Type: GiveDefence
+

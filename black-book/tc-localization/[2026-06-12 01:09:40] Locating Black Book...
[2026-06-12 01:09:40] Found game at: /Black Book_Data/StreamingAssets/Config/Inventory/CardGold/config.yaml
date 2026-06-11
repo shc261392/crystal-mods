@@ -1,0 +1,10 @@
+Name: Золотая карта
+InventoryItemName: CardGold
+Type: Artefact
+Flavour: На том свете все золотыми картами играют
+Sprite: IconCardGold
+Expendable: false
+Cost: 200
+Effects:
+  - Value: 2
+    Type: AdditionalFoolSwitch

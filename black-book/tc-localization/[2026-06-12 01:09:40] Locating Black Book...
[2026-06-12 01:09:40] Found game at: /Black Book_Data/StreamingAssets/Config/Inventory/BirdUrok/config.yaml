@@ -1,0 +1,12 @@
+﻿Name: Прица уроков
+InventoryItemName: BirdUrok
+Flavour: Эти фигурки-то сам окаянный и слепил, и в землю спрятал
+Sprite: IconBirdUrok
+Cost: 100
+Effects:
+  - Value: 3
+    Type: StatusOnBattleStart
+    StatusName: Waste
+  - Value: 1
+    Type: StatusBonus
+    StatusName: Waste 

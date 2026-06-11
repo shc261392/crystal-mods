@@ -1,0 +1,8 @@
+﻿Name: Старинная подкова
+InventoryItemName: OldHorseshoe
+Flavour: Кака нога, таку подковь подбирашь
+Sprite: OldHorseshoe
+Cost: 68
+Effects:
+- Value: 10
+  Type: StatusBonusChance

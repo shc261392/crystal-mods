@@ -1,0 +1,24 @@
+﻿AssetName: Menqw
+Health: 57
+HealthRandomAdd: 30
+Mana: 4
+Initiative: 1
+MoneyMin: 36
+MoneyMax: 48
+Experience: 200
+StartingStatusEffects:
+- StatusEffectType: UnitScale
+  Duration: 1
+  Permanent: true
+  Unremovable: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: MENQW_BYDMOM
+    TargetType: SELF
+  - AbilityType: MENQW_TYROB
+    TargetType: ENEMY
+  - AbilityType: MENQW_VAMU
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Менкв
+

@@ -1,0 +1,10 @@
+Name: OKIAN_MORE
+SkillName: AbilityOKIAN_MORE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - RoguelikeKeys2
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: OKIAN_MORE

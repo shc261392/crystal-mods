@@ -1,0 +1,8 @@
+﻿Name: 主显节教堂
+Description: 我见过的教堂就数这个最老，可能古时候就有了。
+ShortQuestDescr: 找到建堂节毛巾
+LongQuestDescr: 我要想办仪式，就得有一条特别的毛巾。听说皮亚涅教堂的那个萨韦利可能有这样的东西。
+LevelConfig:
+  Battle:
+    Name: 地狱圣像
+

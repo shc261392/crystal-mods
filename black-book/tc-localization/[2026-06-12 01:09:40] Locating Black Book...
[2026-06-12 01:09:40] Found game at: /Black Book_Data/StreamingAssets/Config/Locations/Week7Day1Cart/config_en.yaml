@@ -1,0 +1,6 @@
+﻿Name: Iron Cart
+Description: A huge cart got trapped in a tar trap. It's from Hell, but I still feel as if I've seen it somewhere.
+LevelConfig:
+  Battle:
+    Name: Sinner's Cart
+

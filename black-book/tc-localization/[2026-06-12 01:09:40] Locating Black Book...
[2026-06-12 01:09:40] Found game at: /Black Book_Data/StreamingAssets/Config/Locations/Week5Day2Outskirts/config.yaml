@@ -1,0 +1,19 @@
+﻿IdName: Week5Day2Outskirts
+Name: Окраина Чердыни
+Description: Чердынь огромная. Говорят, Пермь еще больше. Даже представить-то сложно.
+Scene: Forest_2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Бесы на окраине
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyCenter
+    - Type: Chud2
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day2/Outskirts/Intro
+LightingType: EVENING
+MoonType: NONE
+

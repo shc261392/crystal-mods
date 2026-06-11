@@ -1,0 +1,18 @@
+﻿AssetName: DemonFire
+Health: 77
+Mana: 4
+Initiative: 1
+MoneyMin: 12
+MoneyMax: 18
+Experience: 250
+UnitAI:
+  AIAbilities:
+  - AbilityType: DEMON_FIRE_ATTACK
+    TargetType: ENEMY
+    CheckValue: 70
+  - AbilityType: DEMON_FIRE_COALS
+    TargetType: ENEMY
+    CheckValue: 30
+  CastingType: RANDOM_LOADED
+Name: Огненный Чёрт
+

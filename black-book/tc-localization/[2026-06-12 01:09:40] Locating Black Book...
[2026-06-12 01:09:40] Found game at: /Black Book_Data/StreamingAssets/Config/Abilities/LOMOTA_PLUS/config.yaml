@@ -1,0 +1,19 @@
+﻿Name: Ломота +
+AbilityType: LOMOTA_PLUS
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: LOMOTA_PLUS
+GoldCost: 16
+Gesture: true
+Effects:
+- EffectType: DAMAGE_SKLAD
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

@@ -1,0 +1,20 @@
+﻿Name: Трескучая искра
+AbilityType: OBDERIHA_DEMON_ATTACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: OBDERIHA_DEMON_ATTACK
+GoldCost: 3
+Effects:
+- MinValue: 1
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+- EffectType: STATUS
+  StatusEffectType: Waste
+  MinValue: 1
+  MaxValue: 1
+

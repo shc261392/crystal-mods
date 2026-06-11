@@ -1,0 +1,16 @@
+﻿Name: Молитва
+AbilityType: PRAYER
+Upgrade: PRAYER_UP
+TargetType: SELF
+Sprite: PrayerAbility
+GoldCost: 6
+Effects:
+- EffectType: STATUS
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+  StatusEffectType: DefenceKeep
+

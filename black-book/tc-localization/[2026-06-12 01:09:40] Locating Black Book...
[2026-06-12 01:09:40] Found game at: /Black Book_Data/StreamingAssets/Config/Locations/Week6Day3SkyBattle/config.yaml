@@ -1,0 +1,35 @@
+﻿IdName: Week6Day3SkyBattle
+Name: Над Вильгортом
+Scene: FinalFight
+LightingType: STORM
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Дед Егор
+    Enemies:
+    - Type: DedEgor2
+      LevelSpawnPointType: EnemyCenter
+    PlayerAssetOverride: PlayerFly
+    Barks:
+    - Id: Battle/DedEgorPhase2/First
+      HealthPercent: 0.800000012
+      TargetUnit: DedEgor2
+    - Id: Battle/DedEgorPhase2/Second
+      HealthPercent: 0.300000012
+      TargetUnit: DedEgor2
+    WinCutscene: Week6Day3EgorHitInSky
+    EnemyKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/FinalBattle
+      SoundParam:
+        Name: FinalBattlePart
+        Value: 6
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day3/SkyBattle
+  Exploration: Week6Day3SkyBattle
+  DialogueCameraOverride: CMSkyCam
+  DialogueBgOverride: BGClouds
+  NoExplorationMusic: true
+  NoExplorerSpawn: true
+

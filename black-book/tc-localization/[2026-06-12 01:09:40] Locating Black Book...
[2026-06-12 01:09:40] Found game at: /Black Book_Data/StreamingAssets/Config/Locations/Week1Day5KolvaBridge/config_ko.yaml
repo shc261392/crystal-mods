@@ -1,0 +1,7 @@
+﻿Name: 콜바 다리
+Description: 다리는 양쪽 강기슭을 이어주기 때문에, 세계 사이의 경계로 작용한다. 그리고 정령들은 경계에 사는 걸 좋아한다는 건 잘 알려진 사실이다.
+ShortQuestDescr: 다리 밑 악마 잡기
+LevelConfig:
+  Battle:
+    Name: 다리에서의 만남
+

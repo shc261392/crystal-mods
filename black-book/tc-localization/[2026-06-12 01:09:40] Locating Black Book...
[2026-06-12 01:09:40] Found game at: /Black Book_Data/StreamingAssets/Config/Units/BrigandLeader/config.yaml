@@ -1,0 +1,21 @@
+﻿AssetName: Brigand
+Health: 25
+HealthRandomAdd: 10
+Mana: 4
+Initiative: 1
+MoneyMin: 10
+MoneyMax: 15
+Experience: 500
+UnitAI:
+  AIAbilities:
+  - AbilityType: MUG_STRIKE_SIMPLE_UP
+    TargetType: ENEMY
+  - AbilityType: MUG_STRIKE
+    TargetType: ENEMY
+  - AbilityType: MUG_DEFENCE_UP
+    TargetType: SELF
+  - AbilityType: MUG_FLEE_UP
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Атаман
+

@@ -1,0 +1,9 @@
+﻿Name: Ястребиное перо
+InventoryItemName: HawkFeather
+Flavour: Красна птица перьями, а человек ученьем
+Sprite: HawkFeather
+Cost: 120
+Effects:
+- Value: 50
+  Type: WasteProtectionChance
+

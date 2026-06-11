@@ -1,0 +1,18 @@
+﻿IdName: Week5Day2PoliceNight
+Name: Уездное полицейское управление
+Scene: PoliceStation
+LevelConfig:
+  Battle:
+    Name: Сторож
+    Enemies:
+    - Type: Peasant
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day2/Police/NightIntro
+    Outro: TextQuest/Week5/Day2/Police/ChurchGuardBattleOutro
+  CameraOverride: CMStreetCamera
+  DialogueCameraOverride: CMDialogueCameraOutside
+  MusicOverride: event:/Music/ExploreDark
+

@@ -1,0 +1,23 @@
+﻿Name: Чемер
+AbilityType: CHEMER_ROGUELIKE
+TargetType: ENEMY
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: CHEMER
+GoldCost: 119
+Gesture: true
+Effects:
+- EffectType: DAMAGE_SKLAD
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal7OrderBlack
+    MissTrigger: Seal7OrderBlack
+    WrapUpTime: 0.2
+    SkipReady: true
+- EffectType: FIRM
+  MinValue: 2
+  MaxValue: 2
+- EffectType: KRADA

@@ -1,0 +1,21 @@
+﻿Name: Уроки
+AbilityType: UROKI
+Upgrade: UROKI_UP
+TargetType: ENEMY
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: Uroki
+GoldCost: 34
+Effects:
+- EffectType: STATUS_SKLAD
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal3OrderBlack
+    MissTrigger: Seal3OrderBlack
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: Weakness
+

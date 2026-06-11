@@ -1,0 +1,7 @@
+﻿Name: 우스티-우롤카 마을
+Description: 이 마을에서 사람들이 찾아와서는 밤에 묘지에서 누군가의 대화 소리가 들린다며 도움을 요청했다. 혹시 언데드가 아닐까?
+ShortQuestDescr: 우스티-우롤카 마을 묘지 조사하기
+LevelConfig:
+  Battle:
+    Name: 일랴의 초르트
+

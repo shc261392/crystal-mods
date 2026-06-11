@@ -1,0 +1,35 @@
+﻿AssetName: Alexander
+Health: 350
+Mana: 4
+Initiative: 1
+MoneyMin: 72
+MoneyMax: 120
+Experience: 700
+StartingStatusEffects:
+- StatusEffectType: Sorcerer
+  Duration: 999999
+  Permanent: true
+  Unremovable: true
+- StatusEffectType: Master
+  Duration: 999
+  Permanent: true
+  Unremovable: true
+- StatusEffectType: DefenceGive
+  Duration: 40
+UnitAI:
+  AIAbilities:
+  - AbilityType: OGNEVITSA
+    TargetType: ENEMY
+  - AbilityType: SMERTEYA
+    TargetType: ENEMY
+  - AbilityType: ALTAR_UP
+    TargetType: SELF
+  - AbilityType: SUMMON_FLY_DEMON
+    TargetType: SELF
+  - AbilityType: CHUDA_VODYANOY
+    TargetType: SELF
+  - AbilityType: GEORGY_SHEPARD
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Александр
+

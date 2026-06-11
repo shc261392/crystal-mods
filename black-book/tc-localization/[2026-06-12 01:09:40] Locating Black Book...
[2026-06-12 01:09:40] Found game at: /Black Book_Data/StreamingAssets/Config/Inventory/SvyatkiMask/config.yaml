@@ -1,0 +1,8 @@
+﻿Name: Святочная маска
+InventoryItemName: SvyatkiMask
+Flavour: Ходят по деревне, рядятся, маски разные надевают, ворожат, в дома заходят.
+Sprite: IconSvyatkiMask
+Cost: 100
+Effects:
+  - Value: 1
+    Type: SpikesDamageImmunity

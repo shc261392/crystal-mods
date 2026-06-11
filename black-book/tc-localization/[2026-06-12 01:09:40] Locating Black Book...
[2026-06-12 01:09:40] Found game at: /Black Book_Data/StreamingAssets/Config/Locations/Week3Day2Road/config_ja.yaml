@@ -1,0 +1,6 @@
+﻿Name: ポクチャ街道
+Description: この道は森の近くを通っている。油断しないようにしないと。
+LevelConfig:
+  Battle:
+    Name: 森のチョルト
+

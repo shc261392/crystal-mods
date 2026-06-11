@@ -1,0 +1,13 @@
+﻿IdName: AllyProshkaCrossroads
+Name: Росстань
+Description: Ветер поднимается; как бы дождь не нагрянул. Кто знает, насколько мы в этом Янидоре застрянем тогда.
+Scene: Forest_5
+LevelConfig:
+  MusicOverride: event:/Music/Proshka
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/AllyProshka/Crossroads/Intro
+LightingType: WIND
+RequiredLocations:
+- AllyProshkaRoad
+

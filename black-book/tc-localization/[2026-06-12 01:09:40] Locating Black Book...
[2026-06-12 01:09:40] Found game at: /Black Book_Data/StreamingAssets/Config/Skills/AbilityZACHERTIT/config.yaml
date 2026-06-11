@@ -1,0 +1,10 @@
+Name: ZACHERTIT
+SkillName: AbilityZACHERTIT
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - RoguelikeKeys2
+SpriteOffsetX: -13.5
+SpriteOffsetY: -60.8
+Effects:
+- Type: AbilityUnlock
+  StringData: ZACHERTIT

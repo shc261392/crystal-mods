@@ -1,0 +1,9 @@
+﻿Name: 軋む森
+Description: 聖愚者はこの方向に逃げた。森から聞こえてくる音はかなり奇妙で、まるで骨が砕けるような音だ！
+ShortQuestDescr: 逃亡者を追う
+LevelConfig:
+  Battle:
+    Name: 巨大な丸太
+  BattleAlternative:
+    Name: 巨大な丸太
+

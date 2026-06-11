@@ -1,0 +1,10 @@
+﻿Name: Немецкий мел
+InventoryItemName: GermanChalk
+Flavour: Дак они-то там знают, как колдовские круги-то чертить, оттого-то и мел хороший
+Sprite: GermanChalk
+Cost: 64
+Effects:
+- Value: 1
+  Type: StatusBonus
+  StatusName: DefenceGive
+

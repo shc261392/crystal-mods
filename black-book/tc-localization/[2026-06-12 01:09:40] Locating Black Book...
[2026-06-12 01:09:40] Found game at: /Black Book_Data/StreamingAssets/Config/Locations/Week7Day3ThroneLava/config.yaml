@@ -1,0 +1,31 @@
+IdName: Week7Day3ThroneLava
+Name: Властитель геенны
+Scene: HellThroneLava
+LevelConfig: 
+  Exploration: Week7Day3ThroneLava
+  MixerSnapshot: snapshot:/Cave
+  NoExplorationMusic: true
+  CinematicIntro: true
+  Battle:
+    BattleMusic:
+      Name: event:/Music/BattleSatan
+    Name: Властитель геенны
+    Enemies:
+      - Type: Satan2
+        LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+    WinCutscene: Week7Day3LavaPhase2Win
+    Barks:
+      - Id: Battle/SatanPhase2/First
+        HealthPercent: 0.8
+        TargetUnit: Satan2
+      - Id: Battle/SatanPhase2/Second
+        HealthPercent: 0.6
+        TargetUnit: Satan2
+      - Id: Battle/SatanPhase2/Third
+        HealthPercent: 0.4
+        TargetUnit: Satan2
+      - Id: Battle/SatanPhase2/Fourth
+        HealthPercent: 0.2
+        TargetUnit: Satan2

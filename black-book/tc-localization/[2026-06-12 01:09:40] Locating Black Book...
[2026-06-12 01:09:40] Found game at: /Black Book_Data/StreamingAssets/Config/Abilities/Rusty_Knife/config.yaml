@@ -1,0 +1,20 @@
+﻿Name: Ржавый нож
+AbilityType: RUSTY_KNIFE
+TargetType: ENEMY
+Sprite: Obderiha
+GoldCost: 6
+Effects:
+- MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    WrapUpTime: 1
+    SkipReady: true
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 3
+  StatusEffectType: Poison
+

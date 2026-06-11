@@ -1,0 +1,11 @@
+IdName: Week7Day3ThroneOutro
+Name: Последняя встреча
+Scene: HellThroneOutro
+HideBook: true
+LevelConfig: 
+  Exploration: Week7Day3ThroneOutro
+  CinematicIntro: true
+  NoExplorationMusic: true
+  MixerSnapshot: snapshot:/FernSpace
+  MusicOverride: event:/Music/HellThroneOutro
+  

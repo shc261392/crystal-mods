@@ -1,0 +1,17 @@
+﻿Name: Острый сук
+AbilityType: ASPEN_ATTACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: ASPEN_ATTACK
+GoldCost: 6
+Effects:
+- MinValue: 10
+  MaxValue: 15
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    WrapUpTime: 0.00999999978
+    SkipReady: true
+

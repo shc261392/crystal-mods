@@ -1,0 +1,28 @@
+﻿RandomAssets:
+- Drowner
+- Drowner2
+Health: 35
+HealthRandomAdd: 10
+Mana: 4
+Initiative: 1
+MoneyMin: 12
+MoneyMax: 18
+Experience: 150
+StartingStatusEffects:
+  - StatusEffectType: Imperishable
+    Duration: 10
+    HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: DROWNER_NAILS
+    TargetType: ENEMY
+    CheckValue: 60
+  - AbilityType: DROWNER_FLESH
+    TargetType: ALLY
+    CheckValue: 20
+  - AbilityType: DROWNER_ROT
+    TargetType: ENEMY
+    CheckValue: 20
+  CastingType: RANDOM_LOADED
+Name: Утопленник
+

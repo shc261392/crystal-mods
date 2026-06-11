@@ -1,0 +1,12 @@
+﻿IdName: TkachihaIzba
+Name: Изба Пряхи
+Scene: TkachihaIzba
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  Quest:
+    DialogueSystemName: Exploration/Week1/Tkachiha/TkachihaConv
+  Exploration: TkachihaIzba
+  CinematicIntro: true
+  CameraOverride: CMExplore4Camera
+  MusicOverride: event:/Music/ExploreDark
+

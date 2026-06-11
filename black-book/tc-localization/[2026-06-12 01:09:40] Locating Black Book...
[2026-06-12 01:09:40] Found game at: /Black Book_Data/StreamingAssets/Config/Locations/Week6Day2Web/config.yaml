@@ -1,0 +1,16 @@
+﻿IdName: Week6Day2Web
+Name: Непроходимая паутина
+Description: Такими преградами меня не удержишь, Пряха!
+Scene: TkachihaEntry
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  MusicOverride: event:/Music/ExploreDark2
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day2/Web/Intro
+  Exploration: Week6Day2Web
+  CameraOverride: CMTonelsCamera3
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week6Day2Crawl
+HideBook: true
+

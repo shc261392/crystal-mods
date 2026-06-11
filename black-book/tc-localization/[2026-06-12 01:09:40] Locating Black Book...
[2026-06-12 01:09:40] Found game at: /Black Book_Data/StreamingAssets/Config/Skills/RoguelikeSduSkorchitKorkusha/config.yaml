@@ -1,0 +1,10 @@
+﻿Name: "{Ability1} | {Ability2}"
+SkillName: RoguelikeSduSkorchitKorkusha
+Sprite: SkilledDemonsSkill
+Description: Заменяет {Ability1} на {Ability2} в стартовой колоде
+RequiredSkills:
+  - AbilityTRYASOVITSA
+Effects:
+- Value: 1
+  Type: RoguelikeStartingDeckUpgrade
+  StringData: SKORCHIT&KORKUSHA

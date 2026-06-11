@@ -1,0 +1,9 @@
+﻿Name: Старый топор
+InventoryItemName: Week1Axe
+Flavour: Этот топор того и гляди развалится. Но разок рубануть им еще можно.
+Sprite: Week1Axe
+Cost: 50
+Effects:
+- Value: 1
+  Type: IncreaseHealth
+

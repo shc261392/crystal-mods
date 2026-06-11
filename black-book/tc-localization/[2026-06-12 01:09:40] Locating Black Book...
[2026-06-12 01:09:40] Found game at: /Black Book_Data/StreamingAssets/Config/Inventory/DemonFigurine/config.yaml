@@ -1,0 +1,10 @@
+﻿Name: Бесовская фигурка
+InventoryItemName: DemonFigurine
+Flavour: Там лес, худо жить — в небо дыра.
+Sprite: IconDemonFigurine
+Cost: 120
+Effects:
+- Value: 1
+  Type: StatusOnBattleStart
+  StatusName: Prayer
+

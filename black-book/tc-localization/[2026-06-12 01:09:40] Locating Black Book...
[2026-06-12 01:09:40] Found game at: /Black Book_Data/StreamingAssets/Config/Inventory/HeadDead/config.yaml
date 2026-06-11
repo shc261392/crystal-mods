@@ -1,0 +1,10 @@
+﻿Name: Голова мертвеца
+InventoryItemName: HeadDead
+Flavour: Еретник в зеркало глядел, да так и осталась морда его.
+Sprite: IconAnimalFace2
+Cost: 160
+Effects:
+- Value: 1
+  Type: AbilityOnBattleStart
+  StatusName: DEAD_MAN
+

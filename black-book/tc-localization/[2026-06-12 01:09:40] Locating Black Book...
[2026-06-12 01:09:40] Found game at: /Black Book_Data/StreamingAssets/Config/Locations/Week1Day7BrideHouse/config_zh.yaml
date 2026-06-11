@@ -1,0 +1,8 @@
+﻿Name: 波克恰村
+Description: 新娘原来是波克恰村的人，奥捷莉哈当初是在河边的老班尼亚把她给掳走的。
+ShortQuestDescr: 消灭换生灵雠特
+LongQuestDescr: 十八年前，一个奥捷莉哈用山杨精换走了一个孩子。你们为了解开黑书的第二道封印，现在要去抓住这个邪灵。
+LevelConfig:
+  Battle:
+    Name: 山杨木
+

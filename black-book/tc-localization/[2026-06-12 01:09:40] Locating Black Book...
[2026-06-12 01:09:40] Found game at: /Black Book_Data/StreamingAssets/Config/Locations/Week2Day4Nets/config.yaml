@@ -1,0 +1,31 @@
+﻿IdName: Week2Day4Nets
+Name: Рыбачьи сети
+Description: Рыбаки натянули здесь свои сети. Может быть, те самые рыбаки, что мне помогли?
+Scene: LakeBottom
+LevelConfig:
+  Battle:
+    Name: Донная нечисть
+    Enemies:
+    - Type: Drowner
+      LevelSpawnPointType: EnemyCenter
+    - Type: Drowner
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day4/Nets
+  MusicOverride: event:/Music/Underwater
+  MixerSnapshot: snapshot:/Underwater
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 3
+    PossiblePlayers:
+    - Drowner
+    - Drowner2
+    DialogueFoolWin: TextQuest/Durak/WinBattleUtil
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+RequiredLocations:
+- Week2Day4Circle
+Secondary: Week2Day4Sleigh
+OnomastikonItems:
+- Onomastikon/Encyclopedia/32
+

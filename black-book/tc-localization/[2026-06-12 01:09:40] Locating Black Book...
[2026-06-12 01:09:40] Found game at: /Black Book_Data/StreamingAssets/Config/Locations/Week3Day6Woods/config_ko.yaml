@@ -1,0 +1,7 @@
+﻿Name: 안개 낀 협곡
+Description: 여기서는 아무것도 보이지 않는다. 저기 무엇이 숨어있을까? 방금 형체가 보인 것 같은데...
+ShortQuestDescr: 늑대인간 추적하기
+LevelConfig:
+  Battle:
+    Name: 뱀 콜둔
+

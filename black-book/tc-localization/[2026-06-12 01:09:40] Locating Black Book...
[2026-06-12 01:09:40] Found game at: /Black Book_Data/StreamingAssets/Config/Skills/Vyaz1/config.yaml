@@ -1,0 +1,8 @@
+﻿Name: Вязь I
+SkillName: Vyaz1
+Sprite: Vyaz1Skill
+Description: Цена создания слов снижена на {CalculatedEffect}%
+Effects:
+- Value: 20
+  Type: WordPriceDrop
+

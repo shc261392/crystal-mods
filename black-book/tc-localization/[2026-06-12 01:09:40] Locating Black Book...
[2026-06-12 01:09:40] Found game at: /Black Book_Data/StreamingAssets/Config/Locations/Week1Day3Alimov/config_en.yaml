@@ -1,0 +1,8 @@
+﻿Name: Alimov Forest
+Description: I heard a hermit lived in these woods, of Bashkir origin. A handy fellow, he decorated doors and stoves and could do a lot of other different things. He died a while ago, but people still remember him.
+LevelConfig:
+  Battle:
+    Name: Forest Demons
+  BattleAlternative:
+    Name: Forest Demons
+

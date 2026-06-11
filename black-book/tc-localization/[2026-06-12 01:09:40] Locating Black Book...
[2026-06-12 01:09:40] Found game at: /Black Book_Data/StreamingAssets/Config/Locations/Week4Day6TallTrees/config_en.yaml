@@ -1,0 +1,6 @@
+﻿Name: Tall Fir Trees
+Description: Yet another forest. It sure has tall trees!
+LevelConfig:
+  Battle:
+    Name: Forest Chorts
+

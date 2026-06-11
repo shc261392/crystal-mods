@@ -1,0 +1,25 @@
+﻿Name: Коркотея
+AbilityType: KORKOTEYA
+Upgrade: KORKOTEYA_UP
+TargetType: ENEMY
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: KORKOTEYA
+GoldCost: 25
+Effects:
+- EffectType: DAMAGE_SKLAD
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal3OrderBlack
+    MissTrigger: Seal3OrderBlack
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: Decomposure
+- EffectType: GOLD_ON_TARGET_DEATH
+  MinValue: 15
+  MaxValue: 15
+  Conditional: true
+

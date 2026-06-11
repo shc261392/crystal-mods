@@ -1,0 +1,22 @@
+﻿Name: Егорий Храбрый
+AbilityType: GEORGY_BRAVE
+Upgrade: GEORGY_BRAVE_UP
+TargetType: ALL
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: GEORGY_BRAVE
+GoldCost: 25
+Effects:
+- EffectType: STATUS_SKLAD
+  MinValue: 6
+  MaxValue: 6
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal3OrderWhite
+    MissTrigger: Seal3OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: Blessed
+

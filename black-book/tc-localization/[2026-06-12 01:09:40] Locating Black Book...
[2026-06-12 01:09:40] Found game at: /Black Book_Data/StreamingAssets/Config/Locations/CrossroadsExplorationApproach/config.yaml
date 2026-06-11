@@ -1,0 +1,10 @@
+﻿IdName: CrossroadsExplorationApproach
+Name: Дорога на росстань
+Scene: CrossroadsExplorationApproach
+LevelConfig:
+  Quest:
+    DialogueSystemName: Exploration/CrossroadsApproach/QuestIntro
+  Exploration: CrossroadsExplorationApproach
+  CinematicIntro: true
+  NoExplorationMusic: true
+

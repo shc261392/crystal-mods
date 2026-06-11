@@ -1,0 +1,16 @@
+﻿Name: Болотный укус
+AbilityType: SWAMP_BIT
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: SWAMP_BIT
+GoldCost: 3
+Effects:
+- MinValue: 10
+  MaxValue: 15
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Word
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

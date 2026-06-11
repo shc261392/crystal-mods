@@ -1,0 +1,6 @@
+﻿Name: Bridge Over the Kolva
+Description: This bridge is sometimes haunted. It could be water chorts from the Kolva, who often turn up here.
+LevelConfig:
+  Battle:
+    Name: Bridge Chorts
+

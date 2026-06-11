@@ -1,0 +1,20 @@
+﻿Name: Озера глубина
+AbilityType: LAKE_DEPTH
+AbilityBookPartType: KEY
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: SEA_DEPTH
+GoldCost: 13
+Effects:
+- EffectType: STATUS_DAMAGE
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal2KeyBlack
+    MissTrigger: Seal2KeyBlack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: Cursed
+

@@ -1,0 +1,17 @@
+﻿AssetName: Chud1
+Health: 30
+HealthRandomAdd: 30
+Mana: 4
+Initiative: 1
+MoneyMin: 12
+MoneyMax: 18
+Experience: 100
+UnitAI:
+  AIAbilities:
+  - AbilityType: CHUD_SHEBRAS
+    TargetType: ALL_ALLIES
+  - AbilityType: CHUD_VIINI
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Чудь
+

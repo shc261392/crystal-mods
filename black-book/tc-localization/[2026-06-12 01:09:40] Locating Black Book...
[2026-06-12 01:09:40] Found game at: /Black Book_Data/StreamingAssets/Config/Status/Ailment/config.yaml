@@ -1,0 +1,6 @@
+﻿Unique: true
+Name: Хворь
+Description: Увеличивает <sprite name="Damage"> по существу на {Duration}
+Sprite: StatAilment
+Harmful: true
+

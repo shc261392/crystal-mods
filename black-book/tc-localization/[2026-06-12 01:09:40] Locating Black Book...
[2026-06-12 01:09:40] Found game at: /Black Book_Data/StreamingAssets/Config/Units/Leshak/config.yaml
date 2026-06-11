@@ -1,0 +1,22 @@
+﻿AssetName: Leshak
+Health: 150
+Mana: 4
+Initiative: 1
+MoneyMin: 60
+MoneyMax: 120
+Experience: 750
+StartingStatusEffects:
+  - StatusEffectType: Zachurat
+    Duration: 7
+    Permanent: true
+    HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: LESHAK_HIDE
+    TargetType: SELF
+  - AbilityType: LESHAK_ROOTS
+    TargetType: ENEMY
+  - AbilityType: LESHAK_NEEDLE
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Лешак

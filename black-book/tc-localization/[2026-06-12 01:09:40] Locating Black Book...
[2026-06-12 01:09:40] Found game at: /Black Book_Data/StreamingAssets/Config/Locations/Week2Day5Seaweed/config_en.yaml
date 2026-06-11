@@ -1,0 +1,6 @@
+﻿Name: Underwater Thicket
+Description: Another underwater thicket. Just like those at the surface.
+LevelConfig:
+  Battle:
+    Name: Fish herders
+

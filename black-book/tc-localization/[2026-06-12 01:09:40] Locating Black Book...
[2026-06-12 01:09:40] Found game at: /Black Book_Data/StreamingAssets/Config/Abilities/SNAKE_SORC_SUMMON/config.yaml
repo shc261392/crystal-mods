@@ -1,0 +1,21 @@
+﻿Name: Змеи-помощницы
+AbilityType: SNAKE_SORC_SUMMON
+TargetType: SELF
+AbilitySpellType: SUMMON
+Sprite: SNAKE_SORC_SUMMON
+GoldCost: 3
+Effects:
+- EffectType: SUMMON
+  MinValue: 1
+  MaxValue: 1
+  SummonEffectData:
+    UnitTypes:
+    - SnakeCopper
+    - SnakeGaduka
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    WrapUpTime: 2
+    SkipReady: true
+

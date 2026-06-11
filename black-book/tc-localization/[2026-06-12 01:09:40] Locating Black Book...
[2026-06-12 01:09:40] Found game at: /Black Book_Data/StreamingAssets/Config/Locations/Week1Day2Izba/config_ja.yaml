@@ -1,0 +1,8 @@
+﻿Name: イズバの隣の森木立
+Description: イズバの近くにある古い森は、人を不安にさせる。もっと言えば、近くにあるものは何でもそうだ。
+LevelConfig:
+  Battle:
+    Name: 歌う魔物
+  BattleAlternative:
+    Name: 歌う魔物
+

@@ -1,0 +1,7 @@
+﻿Name: 维葛特的粮仓
+Description: 家里今天来了个维葛特的女人，说粮仓有蹊跷，就是这个地方。
+ShortQuestDescr: 了解奥温聂为什么吓唬村民
+LevelConfig:
+  Battle:
+    Name: 奥温聂
+

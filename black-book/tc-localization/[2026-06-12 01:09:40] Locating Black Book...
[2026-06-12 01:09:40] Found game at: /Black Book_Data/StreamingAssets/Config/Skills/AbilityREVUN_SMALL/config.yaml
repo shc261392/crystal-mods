@@ -1,0 +1,10 @@
+Name: REVUN_SMALL
+SkillName: AbilityREVUN_SMALL
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityGEORGY_BRAVE
+SpriteOffsetX: -45.1
+SpriteOffsetY: -63.2
+Effects:
+- Type: AbilityUnlock
+  StringData: REVUN_SMALL

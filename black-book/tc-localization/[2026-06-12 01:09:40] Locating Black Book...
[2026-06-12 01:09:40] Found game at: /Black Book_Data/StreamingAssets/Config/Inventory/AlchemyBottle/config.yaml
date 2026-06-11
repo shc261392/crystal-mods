@@ -1,0 +1,10 @@
+﻿Name: Колдовская бутылка
+InventoryItemName: AlchemyBottle
+Flavour: Петро один всю бутылку выглохтал, никому не оставил
+Sprite: AlchemyBottle
+NotForSale: true
+Cost: 120
+Effects:
+- Value: 40
+  Type: InventoryItemUseFreeChance
+

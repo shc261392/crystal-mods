@@ -1,0 +1,31 @@
+﻿IdName: Week3Day7NearLair
+Name: Возле логова
+Description: Пермяк один на посиденке был, дак он сказывал, как Полюд сражался с Колчимом. Они так, мол, долго камни друг в друга кидали, что Бог их скалами-то и сделал.
+ShortQuestDescr: Спасти поезжан
+LongQuestDescr: Кажется, оборотней схватил дух леса Полюдова. Надо мне их вызволить побыстрее, пока они совсем не озверели.
+Scene: PoludTop
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Волколак
+    Enemies:
+    - Type: WolfFedka
+      LevelSpawnPointType: EnemyCenter
+    - Type: Wolf
+    - Type: Wolf
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    Outro: TextQuest/Week3/Day7/NearLair/Outro
+  Exploration: Week3Day7NearLair
+  CinematicIntro: true
+RequiredLocations:
+- Week3Day7SideOverview
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+

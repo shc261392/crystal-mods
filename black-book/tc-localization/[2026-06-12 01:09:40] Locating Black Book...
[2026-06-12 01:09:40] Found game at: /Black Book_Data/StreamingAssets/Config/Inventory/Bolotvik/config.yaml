@@ -1,0 +1,13 @@
+﻿Name: Болотвик
+InventoryItemName: Bolotvik
+Type: Herb
+Flavour: Люди-то у нас на сырых местах находят много болотвиков... а кто-то дак вообще подболотники находит!
+Sprite: Bolotvik
+Expendable: true
+Cost: 44
+TargetType: ENEMY
+Effects:
+- Value: 3
+  Type: Status
+  StatusName: Waste
+

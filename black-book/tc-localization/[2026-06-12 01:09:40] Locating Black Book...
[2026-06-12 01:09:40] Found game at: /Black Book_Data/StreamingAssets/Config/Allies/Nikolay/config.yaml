@@ -1,0 +1,37 @@
+﻿Name: Николай
+AllyType: Nikolay
+Upgrade: NikolayLoyal
+Unit: Nikolay
+Sprite: NikolayFool
+IzbaDialogues:
+- Id: Izba/Nikolay/Conv0
+- Id: Izba/Nikolay/Conv1
+- Id: Izba/Nikolay/Conv2
+- Id: Izba/Nikolay/Conv3
+LocationToSpecialDialogue:
+  Izba:
+    Id: Izba/Context/AfterObderiha/Nikolay
+    DayRestricted: true
+    AvailableDay: 6
+Quests:
+- QuestConversation: Izba/Nikolay/AllyQuestGive
+- QuestConversation: Izba/Nikolay/AllyQuestGiveSecondary
+- QuestConversation: Izba/Nikolay/QuestFailure
+QuestRestrictedLocationNames:
+  - IzbaFabric
+  - IzbaPike
+  - IzbaBashkir
+  - IzbaHunterCampPolud
+  - IzbaHunterCamp
+  - IzbaHunterCampPreFilimon
+  - IzbaHunterCampPrePryaha
+  - IzbaStorm
+  - IzbaFoggyWoods
+  - IzbaFoggyVillage
+  - IzbaAlexanderPrison
+  - IzbaHellDeath
+  - IzbaHellForest
+  - IzbaHellGates
+QuestLocation: AllyNikolayKishkonog
+IzbaAsset: NikolayIzbaRegular
+

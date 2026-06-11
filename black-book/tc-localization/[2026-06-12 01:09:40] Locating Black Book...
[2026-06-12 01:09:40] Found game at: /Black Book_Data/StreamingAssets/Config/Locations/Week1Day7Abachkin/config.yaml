@@ -1,0 +1,9 @@
+﻿IdName: Week1Day7Abachkin
+Name: Абачкинская роща
+Description: Густой лес раскинулся у Абачкинской заводи. Называется он так же, как и роща у Пянтега. Интересно, почему?
+Scene: Forest_old
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day7/Abachkin
+

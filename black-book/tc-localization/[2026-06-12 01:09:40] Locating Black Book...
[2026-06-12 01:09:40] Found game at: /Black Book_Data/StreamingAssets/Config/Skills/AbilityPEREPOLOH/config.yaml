@@ -1,0 +1,10 @@
+Name: PEREPOLOH
+SkillName: AbilityPEREPOLOH
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - RoguelikeSduUraziToKila
+SpriteOffsetX: -50
+SpriteOffsetY: -42
+Effects:
+- Type: AbilityUnlock
+  StringData: PEREPOLOH

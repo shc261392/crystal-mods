@@ -1,0 +1,8 @@
+﻿Name: Платок
+InventoryItemName: Wrap
+Flavour: Жоних-то поднял платок невесты. То примета плохая. Умер он потом
+Sprite: Wrap
+Cost: 60
+Effects:
+- Value: 2
+  Type: IncreaseHealth

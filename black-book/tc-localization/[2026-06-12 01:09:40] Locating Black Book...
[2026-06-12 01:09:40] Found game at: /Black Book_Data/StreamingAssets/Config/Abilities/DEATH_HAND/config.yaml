@@ -1,0 +1,16 @@
+﻿Name: Длань смерти
+AbilityType: DEATH_HAND
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: DEATH_HAND
+Effects:
+- MinValue: 7
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  RepeatCount: 4
+

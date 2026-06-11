@@ -1,0 +1,35 @@
+﻿IdName: Week1Day6BathUnderground3
+Name: Бой с обдерихой
+Scene: ObderihasNest3
+LevelConfig:
+  CinematicIntro: true
+  Exploration: Week1Day6BathUnderground3
+  NoExplorerSpawn: true
+  MixerSnapshot: snapshot:/Cave
+  Battle:
+    Name: Обдериха
+    Enemies:
+    - Type: Obderiha
+      LevelSpawnPointType: EnemyCenter
+    Barks:
+    - Id: Battle/Obderiha/First
+      HealthPercent: 0.800000012
+      TargetUnit: Obderiha
+    - Id: Battle/Obderiha/Second
+      HealthPercent: 0.400000006
+      TargetUnit: Obderiha
+    QuestKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/BattleBoss2
+  Quest:
+    Reward:
+      Money: 40
+      Experience: 1000
+      ItemRewards:
+        - Quantity: 1
+          Item: ObderihaHat
+    Outro: Exploration/Week1/Obderiha/ObderihaWon
+  MusicOverride: event:/Music/ExploreDark
+#  SpecialLevel: true
+

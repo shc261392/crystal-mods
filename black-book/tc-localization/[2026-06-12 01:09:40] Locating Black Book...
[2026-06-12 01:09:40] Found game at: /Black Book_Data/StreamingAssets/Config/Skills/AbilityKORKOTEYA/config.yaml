@@ -1,0 +1,10 @@
+Name: KORKOTEYA
+SkillName: AbilityKORKOTEYA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityANTIPKA
+SpriteOffsetX: 6
+SpriteOffsetY: -31
+Effects:
+- Type: AbilityUnlock
+  StringData: KORKOTEYA

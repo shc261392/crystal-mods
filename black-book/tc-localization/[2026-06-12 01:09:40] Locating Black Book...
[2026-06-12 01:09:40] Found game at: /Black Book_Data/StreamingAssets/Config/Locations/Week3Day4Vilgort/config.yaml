@@ -1,0 +1,39 @@
+﻿IdName: Week3Day4Vilgort
+Name: Троицкая церковь в Вильгорте
+Description: Почти добрались до церкви!
+ShortQuestDescr: Защитить свадебный поезд
+LongQuestDescr: Какой-то колдун намерился испортить свадьбу Николая. Нужно уберечь поезд от порчи и доставить поезжан в Вильгорт.
+Scene: TrainBattle
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Дока на доку
+    Enemies:
+    - Type: Alexander
+      LevelSpawnPointType: EnemyCenter
+    Barks:
+    - Id: Battle/AlexanderCart/First
+      HealthPercent: 0.800000012
+      TargetUnit: Alexander
+    - Id: Battle/AlexanderCart/Second
+      HealthPercent: 0.5
+      TargetUnit: Alexander
+    - Id: Battle/AlexanderCart/Third
+      HealthPercent: 0.300000012
+      TargetUnit: Alexander
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day4/Vilgort/Outro
+    Outro: TextQuest/Week3/Day4/Vilgort/Outro
+  Exploration: Week3Day4Vilgort
+  CinematicIntro: true
+  MusicOverride: event:/Music/ExploreDark
+  MixerSnapshot: snapshot:/Forest
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week3Day4Crossroads
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+

@@ -1,0 +1,20 @@
+﻿Name: Иродовы кости +
+AbilityType: IROD_BONES_UP
+AbilityBookPartType: KEY
+TargetType: ALL_ENEMIES
+Intention: ATTACK
+Sprite: IROD_BONES
+GoldCost: 16
+Effects:
+- EffectType: STATUS_MULTIPLIER
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: Waste
+

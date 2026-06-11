@@ -1,0 +1,22 @@
+﻿IdName: Week4Day6Lug
+Name: Бузеб-луг
+Description: Иногда говорят, когда много воды пьешь, бузгаешь, мол. Что за луг-то пьющий?
+Scene: Marshes2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Болотные лешаки
+    Enemies:
+    - Type: WolfHalf
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSmall
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day6/Lug/Intro
+RequiredLocations:
+- Week4Day6Forest
+

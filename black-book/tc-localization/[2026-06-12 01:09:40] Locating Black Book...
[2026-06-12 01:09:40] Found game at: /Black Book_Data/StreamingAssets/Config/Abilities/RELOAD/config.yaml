@@ -1,0 +1,19 @@
+﻿Name: Перезарядка
+AbilityType: RELOAD
+TargetType: SELF
+Intention: BUFF
+Sprite: RELOAD
+Effects:
+- EffectType: DEFENCE
+  MinValue: 33
+  MaxValue: 33
+- EffectType: HEAL
+  MinValue: 33
+  MaxValue: 33
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+

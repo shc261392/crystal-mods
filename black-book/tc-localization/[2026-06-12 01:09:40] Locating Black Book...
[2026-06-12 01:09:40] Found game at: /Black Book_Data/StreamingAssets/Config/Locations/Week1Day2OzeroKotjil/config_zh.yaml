@@ -1,0 +1,7 @@
+﻿Name: 科吉尔湖
+Description: 维葛特有人在科吉尔湖边的林子里发现了一块蹊跷的空地。他们说那个地方满地都是坑，是不是有人在挖什么东西？我得过去看看。
+ShortQuestDescr: 观察老坑
+LevelConfig:
+  Battle:
+    Name: 老坑幽灵
+

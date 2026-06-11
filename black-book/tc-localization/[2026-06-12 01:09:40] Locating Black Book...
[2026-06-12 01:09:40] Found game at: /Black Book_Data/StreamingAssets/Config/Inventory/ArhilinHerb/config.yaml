@@ -1,0 +1,12 @@
+﻿Name: Архилин-трава
+InventoryItemName: ArhilinHerb
+Type: Herb
+Flavour: Умываюсь я медяною росою, утираюсь солнцем, облекаюсь облаками, опоясываюсь частыми звездами
+Sprite: ArhilinHerb
+Expendable: true
+Cost: 6
+Effects:
+- Value: 1
+  Type: RemoveStatus
+  StatusName: Cursed
+

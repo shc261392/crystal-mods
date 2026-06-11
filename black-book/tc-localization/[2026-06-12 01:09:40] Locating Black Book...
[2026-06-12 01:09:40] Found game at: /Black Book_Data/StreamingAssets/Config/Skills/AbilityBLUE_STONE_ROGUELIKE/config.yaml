@@ -1,0 +1,10 @@
+Name: BLUE_STONE_ROGUELIKE 
+SkillName: AbilityBLUE_STONE_ROGUELIKE 
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityWORD_PRAYER_ROGUELIKE
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: BLUE_STONE_ROGUELIKE 

@@ -1,0 +1,7 @@
+﻿Name: イスコラ要塞
+Description: 熱病の元はイスコラ要塞の頂上へと逃げた。村を熱病から救いたいなら急がないと！
+ShortQuestDescr: 熱病の元を追う
+LevelConfig:
+  Battle:
+    Name: ソロミヤ
+

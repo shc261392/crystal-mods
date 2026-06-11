@@ -1,0 +1,3 @@
+﻿Name: 殉教
+Description: <sprite name="Damage"> を持つ頁を使うたび、{Duration} <sprite name = "Health "> を失う
+

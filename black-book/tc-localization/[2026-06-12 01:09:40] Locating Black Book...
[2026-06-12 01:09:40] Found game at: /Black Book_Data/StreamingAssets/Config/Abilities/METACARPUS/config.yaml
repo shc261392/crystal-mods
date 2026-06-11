@@ -1,0 +1,19 @@
+﻿Name: Адописная пясть
+AbilityType: METACARPUS
+AbilityBookPartType: KEY
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: METACARPUS
+GoldCost: 10
+Effects:
+- MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Attack
+    MissTrigger: Attack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  RepeatCount: 4
+

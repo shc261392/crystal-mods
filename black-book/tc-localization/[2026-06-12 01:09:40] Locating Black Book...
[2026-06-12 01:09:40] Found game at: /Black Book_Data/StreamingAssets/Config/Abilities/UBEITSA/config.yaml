@@ -1,0 +1,28 @@
+﻿Name: Убеица
+AbilityType: UBEITSA
+Upgrade: UBEITSA_UP
+TargetType: ENEMY
+Sprite: UBEITSA
+GoldCost: 23
+Effects:
+- MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal3OrderBlack
+    MissTrigger: Seal3OrderBlack
+    WrapUpTime: 0.05
+    SkipReady: true
+- EffectType: DAMAGE_ALL_IF_DEAD
+  MinValue: 5
+  MaxValue: 5
+  Conditional: true
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal3OrderBlack
+    MissTrigger: Seal3OrderBlack
+    WrapUpTime: 0.05
+    SkipReady: true
+

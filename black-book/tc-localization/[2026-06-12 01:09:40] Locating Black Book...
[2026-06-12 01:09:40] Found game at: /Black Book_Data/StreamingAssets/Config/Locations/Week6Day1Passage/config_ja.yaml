@@ -1,0 +1,6 @@
+﻿Name: 通路
+Description: この地下室の天井は確かに低いけど、今までに入ったことがあるどのゴルベツよりも広々としている。
+LevelConfig:
+  Battle:
+    Name: 角のある番人
+

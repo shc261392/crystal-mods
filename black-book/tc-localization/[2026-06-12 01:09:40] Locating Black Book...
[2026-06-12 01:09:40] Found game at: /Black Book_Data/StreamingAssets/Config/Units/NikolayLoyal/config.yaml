@@ -1,0 +1,13 @@
+﻿AssetName: NikolayUnit
+Health: 9999
+HealthRandomAdd: 5
+Mana: 4
+Initiative: 2
+UnitAI:
+  AllyActivatedAbility:
+    AbilityType: NIKOLAY_STRIKE_UP
+    TargetType: ENEMY
+  AllyActivatedAbilityTimeout: 4
+  CastingType: RANDOM
+Name: Николай
+

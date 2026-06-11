@@ -1,0 +1,4 @@
+PurchaseWaitingTime: 20.0
+Payments:
+  - PaymentType: FullGame
+    PurchaseId: "com.hypetraindigital.blackbook.fullGame"

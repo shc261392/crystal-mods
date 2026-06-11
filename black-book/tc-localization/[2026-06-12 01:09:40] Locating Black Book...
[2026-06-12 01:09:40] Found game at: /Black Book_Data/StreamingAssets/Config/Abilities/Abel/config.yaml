@@ -1,0 +1,25 @@
+﻿Name: Авель
+AbilityType: ABEL
+Upgrade: ABEL_UP
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: ABEL
+GoldCost: 21
+Effects:
+- EffectType: DEFENCE_SKLAD
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+- EffectType: DEFENCE
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+  Syllable: true
+

@@ -1,0 +1,12 @@
+﻿IdName: Week5Day5Fields
+Name: Дорога к косогору
+Description: Уже темнеет; отсюда недалеко до леса. Могу и к деревенским зайти, глянуть, че они там делают-то на праздник. Всегда у них весело.
+Scene: Storm
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day5/Fields/Intro
+  Exploration: Week5Day5Fields
+  CinematicIntro: true
+  NoExplorationMusic: true
+

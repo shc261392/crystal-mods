@@ -1,0 +1,6 @@
+﻿Name: 高潔
+Description: >-
+  呪詛を受けた敵が二倍の <sprite name="Damage"> を受ける
+
+  持続：{Duration}ターン
+

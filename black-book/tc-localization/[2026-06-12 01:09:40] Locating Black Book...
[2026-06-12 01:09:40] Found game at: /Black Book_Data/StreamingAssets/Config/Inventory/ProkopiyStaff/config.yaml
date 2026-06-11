@@ -1,0 +1,10 @@
+﻿Name: Прокопьев посох
+InventoryItemName: ProkopiyStaff
+Flavour: Пастух идет – батогами хлесь, хлесь! На коров керкат
+Sprite: ProkopiyStaff
+Cost: 136
+Effects:
+- Value: 4
+  Type: StatusBonus
+  StatusName: DefenceGive
+

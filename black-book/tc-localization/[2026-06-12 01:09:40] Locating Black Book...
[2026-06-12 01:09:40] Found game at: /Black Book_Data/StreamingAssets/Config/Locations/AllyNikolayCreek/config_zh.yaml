@@ -1,0 +1,9 @@
+﻿Name: 狗河
+Description: 这条河不大正常，出了点怪事儿。自由村有个农民让俺过去看看，万一发现邪灵了，就给撵走。
+ShortQuestDescr: 小河荒废
+LevelConfig:
+  Battle:
+    Name: 小河楚德
+  BattleAlternative:
+    Name: 小河楚德
+

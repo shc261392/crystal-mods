@@ -1,0 +1,7 @@
+﻿Name: 霧深い谷
+Description: ここからでは何も見えない。何が隠れているのだろうか？ いま影が動いたように見えたけど…
+ShortQuestDescr: 狼人間を追う
+LevelConfig:
+  Battle:
+    Name: 蛇のコルドゥン
+

@@ -1,0 +1,10 @@
+Name: TRYASOVITSA
+SkillName: AbilityTRYASOVITSA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilitySKORCHEN
+SpriteOffsetX: -43
+SpriteOffsetY: -51
+Effects:
+- Type: AbilityUnlock
+  StringData: TRYASOVITSA

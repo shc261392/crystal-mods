@@ -1,0 +1,10 @@
+Name: UBEITSA
+SkillName: AbilityUBEITSA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityANTIPKA
+SpriteOffsetX: -6
+SpriteOffsetY: -95
+Effects:
+- Type: AbilityUnlock
+  StringData: UBEITSA

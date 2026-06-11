@@ -1,0 +1,6 @@
+﻿Name: 서재
+Description: 호기심이 든다. 뛰어난 콜둔의 서재에는 어떤 책이 있을까?
+LevelConfig:
+  Battle:
+    Name: 초르트와 빙의된 동물 인형
+

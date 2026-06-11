@@ -1,0 +1,9 @@
+Name: AVDELAI
+SkillName: AbilityAVDELAI
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+SpriteOffsetX: -43
+SpriteOffsetY: -43
+Effects:
+- Type: AbilityUnlock
+  StringData: AVDELAI

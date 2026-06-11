@@ -1,0 +1,6 @@
+﻿Name: 聖なる言葉+
+Description: >-
+  {MinValue}ダメージを与える
+
+  <sprite name="Defence"> が{MinValue}増える
+

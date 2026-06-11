@@ -1,0 +1,10 @@
+﻿Name: Гусли-самогуды
+InventoryItemName: Gusli
+Flavour: Век бы слушал – не наслушался!..
+Sprite: IconGusli
+Cost: 222
+Effects:
+- Value: 18
+  Type: IncreaseHealth
+- Value: 1
+  Type: PlayRandomMusic

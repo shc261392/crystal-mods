@@ -1,0 +1,9 @@
+SkillName: FoolCheating2
+Name: Дурак II
+Sprite: FoolCheating2Skill
+Description: Ведовская уловка, позволяющая увидеть карты противника один раз за партию
+RequiredSkills:
+  - FoolCheating1
+Effects:
+  - Value: 1
+    Type: FoolSeeQuantity

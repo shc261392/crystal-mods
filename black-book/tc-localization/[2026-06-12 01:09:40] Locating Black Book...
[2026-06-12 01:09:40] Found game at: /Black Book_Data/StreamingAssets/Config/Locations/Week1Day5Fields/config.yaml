@@ -1,0 +1,32 @@
+﻿IdName: Week1Day5Fields
+Name: Поле неподалеку от Вильгорта
+LocationType: ATMOSPHERIC_QUEST
+Scene: Fields
+LevelConfig:
+  MusicOverride: event:/Music/Explore2
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Полевые черти
+    Enemies:
+    - Type: Andreiko
+      LevelSpawnPointType: EnemyCenter
+    Barks:
+    - Id: Battle/Andreiko/First
+      HealthPercent: 0.800000012
+      TargetUnit: Andreiko
+    QuestKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/BattleBoss2
+  Quest:
+    DialogueSystemName: Exploration/Week1/Name/BathNameField
+    Reward:
+      Money: 30
+      Experience: 100
+      ItemRewards:
+      - Quantity: 1
+        Item: Zalom
+    NightEndQuest: true
+OnomastikonItems:
+- Onomastikon/Encyclopedia/82
+

@@ -1,0 +1,10 @@
+Name: BURNING_STONE
+SkillName: AbilityBURNING_STONE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityFIRE_IMAGE
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: BURNING_STONE

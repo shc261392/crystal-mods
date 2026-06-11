@@ -1,0 +1,12 @@
+﻿IdName: AllyEgorRoad
+Name: Огород у избы
+Description: Какой-то шум у нашей избы. Уж не тот ли нечистый пробрался с кладбища?
+Scene: IzbaBackyard
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/AllyEgor/Garden/Intro
+LightingType: DARK
+OnomastikonItems:
+- Onomastikon/Tales/12
+

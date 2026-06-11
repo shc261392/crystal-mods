@@ -1,0 +1,21 @@
+﻿IdName: Week2Day2KamaBank
+Name: Берег Камы
+Description: 'Солеварные заводы у реки строят: и рассол легче добывается, и на баржи грузить удобно, чтоб на продажу соль везти.'
+Scene: SaltFabricBank
+LevelConfig:
+  MusicOverride: event:/Music/Explore2
+  MixerSnapshot: snapshot:/Forest
+  Merchants:
+  - SaltFisher
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day2/KamaBank
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 2
+    PossiblePlayers:
+    - PeasantFisherKamaBank
+    DialogueFoolWin: TextQuest/Week2/Day2/KamaBankDurakWin
+    DialogueFoolLose: TextQuest/Durak/EmptyGameLose
+RequiredLocations:
+- Week2Day2Bathhouses
+

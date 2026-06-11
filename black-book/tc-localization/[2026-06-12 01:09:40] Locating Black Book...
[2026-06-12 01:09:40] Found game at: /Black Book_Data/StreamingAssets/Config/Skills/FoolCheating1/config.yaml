@@ -1,0 +1,7 @@
+SkillName: FoolCheating1
+Name: Дурак I
+Sprite: FoolCheating1Skill
+Description: Колдовское умение, позволяющее заменить {CalculatedEffect} карту на козырную
+Effects:
+  - Value: 1
+    Type: FoolChangeQuantity

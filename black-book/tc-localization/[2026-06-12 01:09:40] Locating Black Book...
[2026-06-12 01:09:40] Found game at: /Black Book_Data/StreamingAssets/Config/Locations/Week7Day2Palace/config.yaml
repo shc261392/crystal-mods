@@ -1,0 +1,12 @@
+﻿IdName: Week7Day2Palace
+Name: Забытый дворец
+Description: В стороне от тропы виднеются какие-то развалины.
+Scene: HellLostPalace
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week7/Day2/Palace/Intro
+  MusicOverride: event:/Music/ExploreDark2
+  MixerSnapshot: snapshot:/Cave
+RequiredLocations:
+- Week7Day2Barracks
+

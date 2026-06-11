@@ -1,0 +1,19 @@
+﻿IdName: Week1Day4UstUrol
+Name: Деревня Усть-Уролка
+Description: Просители были из деревни этой. Говорят, что по ночам с кладбища доносятся какие-то разговоры. Неужто покойники оживают?
+ShortQuestDescr: Осмотреть кладбище Усть-Уролки
+Scene: Cemetery
+LevelConfig:
+  Battle:
+    Name: Ильин бес
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyCenter
+    - Type: Ghost
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day4/UstUrol/Intro
+RequiredLocations:
+- Week1Day4Abachkin
+

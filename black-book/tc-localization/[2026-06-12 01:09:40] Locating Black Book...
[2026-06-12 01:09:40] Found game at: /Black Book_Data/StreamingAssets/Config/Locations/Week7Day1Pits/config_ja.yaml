@@ -1,0 +1,6 @@
+﻿Name: タール坑
+Description: 教会にあったイコンに描かれた光景そのままだ。なんという名前だったっけ？ 聖チョルトの…？
+LevelConfig:
+  Battle:
+    Name: タールのチョルト
+

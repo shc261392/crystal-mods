@@ -1,0 +1,19 @@
+﻿AssetName: Domovoi
+Health: 45
+Mana: 4
+Initiative: 1
+MoneyMin: 15
+MoneyMax: 21
+Experience: 175
+StartingStatusEffects:
+  - StatusEffectType: Blessed
+    Duration: 10
+    HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: DOMOVOI_PARALIZE
+    TargetType: ENEMY
+  - AbilityType: DOMOVOI_ATTACK
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Домовой

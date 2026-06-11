@@ -1,0 +1,14 @@
+﻿Name: Возмездие ада
+AbilityType: HELL_RETRIBUTION
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: HELL_RETRIBUTION
+Effects:
+- EffectType: DAMAGE_ON_SINS
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

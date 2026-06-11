@@ -1,0 +1,8 @@
+﻿Name: Uyezd Police Station
+Description: Here I'll be able to talk to the church caretaker, Mikhail Nikiforovich.
+ShortQuestDescr: Find the Church Knife
+LongQuestDescr: To conduct the Kupala rite I need the church knife, among other things. The caretaker hid it somewhere.
+LevelConfig:
+  Battle:
+    Name: Police Susedkas
+

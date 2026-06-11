@@ -1,0 +1,12 @@
+﻿Name: Борвяк
+InventoryItemName: Borvyak
+Type: Herb
+Flavour: "Крепкий борвяк, он всему-то голова"
+Sprite: IconBorvyak
+Expendable: true
+Cost: 42
+TargetType: ENEMY
+RemovalTypeForDescription: true
+Effects:
+- Value: 1
+  Type: RemoveNotHarmfulStatus

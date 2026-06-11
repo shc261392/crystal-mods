@@ -1,0 +1,29 @@
+﻿AssetName: FilimonDemon
+Health: 333
+Mana: 4
+Initiative: 1
+MoneyMin: 72
+MoneyMax: 144
+Experience: 1500
+StartingStatusEffects:
+- StatusEffectType: Master
+  Duration: 999999
+  Permanent: true
+  Unremovable: true
+- StatusEffectType: DefenceKeep
+  Duration: 999
+  Permanent: true
+  HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: FILIMON_LAUGH
+    TargetType: SELF
+  - AbilityType: FILIMON_FINGER
+    TargetType: SELF
+  - AbilityType: FILIMON_OLD_VIEW
+    TargetType: ENEMY
+  - AbilityType: FILIMON_SHADOWS
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Филимон-бес
+

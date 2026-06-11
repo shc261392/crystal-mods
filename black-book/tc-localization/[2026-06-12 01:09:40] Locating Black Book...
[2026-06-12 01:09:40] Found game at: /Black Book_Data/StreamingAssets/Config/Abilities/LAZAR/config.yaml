@@ -1,0 +1,24 @@
+﻿Name: Лазарь
+AbilityType: LAZAR
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: LAZAR
+GoldCost: 44
+Effects:
+- EffectType: KRADA
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal5OrderWhite
+    MissTrigger: Seal5OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: Voskresnyy
+  StatusPermanent: true
+

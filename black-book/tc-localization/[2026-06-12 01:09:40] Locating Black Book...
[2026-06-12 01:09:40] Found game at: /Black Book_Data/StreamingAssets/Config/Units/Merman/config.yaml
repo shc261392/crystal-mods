@@ -1,0 +1,32 @@
+﻿AssetName: Merman
+Health: 333
+Mana: 4
+Initiative: 1
+MoneyMin: 72
+MoneyMax: 120
+Experience: 2500
+StartingStatusEffects:
+  - StatusEffectType: Master
+    Duration: 999
+    Permanent: true
+    Unremovable: true
+  - StatusEffectType: Ethereal
+    Duration: 999
+    Permanent: true
+    HardDifficulty: true
+UnitAI:
+  AIAbilities:
+    - AbilityType: MERMAN_CLEAN_WATER
+      TargetType: SELF
+    - AbilityType: MERMAN_RIVER_STORM
+      TargetType: ENEMY
+    - AbilityType: MERMAN_WATER_SPEAR
+      TargetType: ENEMY
+    - AbilityType: MERMAN_NEW_MERMAID
+      TargetType: ENEMY
+    - AbilityType: MERMAID_FRIENDS
+      DecisionType: SUMMON
+      TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Водяной
+

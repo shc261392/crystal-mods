@@ -1,0 +1,17 @@
+﻿Name: Алатырь
+AbilityType: ALTAR2
+TargetType: ALLY
+Intention: BUFF
+Sprite: AltarAbility
+GoldCost: 7
+Effects:
+- EffectType: HEAL
+  MinValue: 4
+  MaxValue: 4
+  ForceTarget: PLAYER
+  VisualEffect:
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 1.5
+    SkipReady: true
+

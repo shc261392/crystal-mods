@@ -1,0 +1,8 @@
+﻿Name: 水下矮洞
+Description: 这个洞另外一头出去就是沃佳诺伊的宫殿。
+ShortQuestDescr: 前往洞穴
+LongQuestDescr: 你掉到了湖底，发现自己来到了沃佳诺伊的领地。瓦库派了一条露莎卡给你带路，这个露莎卡和你是老熟人了。她会把你带去哪里呢？
+LevelConfig:
+  Battle:
+    Name: 白斑狗鱼
+

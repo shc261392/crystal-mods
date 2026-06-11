@@ -1,0 +1,10 @@
+﻿Name: Путаные указания
+SkillName: ConfusedDirections
+Sprite: ConfusedDirectionsSkill
+Description: Шанс эффективного завершения задания снижен на {CalculatedEffect}%
+RequiredSkills:
+- Demonology
+Effects:
+- Value: -50
+  Type: JobSuccessChance
+

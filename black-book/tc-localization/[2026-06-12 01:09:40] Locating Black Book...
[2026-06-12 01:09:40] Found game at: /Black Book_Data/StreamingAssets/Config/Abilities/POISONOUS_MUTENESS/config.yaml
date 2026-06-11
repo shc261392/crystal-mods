@@ -1,0 +1,19 @@
+﻿Name: Ядовитая немота
+AbilityType: POISONOUS_MUTENESS
+TargetType: ENEMY
+Intention: DEBUFF
+AbilitySpellType: STATUS
+Sprite: POISONOUS_MUTENESS
+Effects:
+- EffectType: STATUS
+  StatusEffectType: MouthSewn
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    WrapUpTime: 0.100000001
+    SkipReady: true
+

@@ -1,0 +1,36 @@
+﻿AssetName: Vekshitsa
+Health: 400
+Mana: 4
+Initiative: 2
+MoneyMin: 72
+MoneyMax: 120
+Experience: 500
+StartingStatusEffects:
+- StatusEffectType: Sorcerer
+  Duration: 999999
+  Permanent: true
+  Unremovable: true
+- StatusEffectType: Vampirism
+  Duration: 30
+  Permanent: true
+  HardDifficulty: true  
+UnitAI:
+  AIAbilities:
+  - AbilityType: BAD_EYE
+    TargetType: ENEMY
+  - AbilityType: BONE_EYE
+    TargetType: ENEMY
+  - AbilityType: BLOOD_BURN
+    TargetType: SELF
+  - AbilityType: DAVLEYA
+    TargetType: ENEMY
+  - AbilityType: DEAD_SNOUT
+    TargetType: ENEMY
+  - AbilityType: SEA_DEPTH
+    TargetType: ENEMY
+  - AbilityType: AVDELAI_UP
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Векшица
+
+

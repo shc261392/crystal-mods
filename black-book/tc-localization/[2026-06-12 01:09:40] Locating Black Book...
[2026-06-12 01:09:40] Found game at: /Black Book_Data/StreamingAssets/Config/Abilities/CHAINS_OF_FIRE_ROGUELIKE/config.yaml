@@ -1,0 +1,27 @@
+﻿Name: Цепи огненные
+AbilityType: CHAINS_OF_FIRE_ROGUELIKE
+AbilityBookPartType: KEY
+Upgrade: CHAINS_OF_FIRE_UP
+TargetType: ALL_ENEMIES
+Intention: ATTACK
+Sprite: FireChains
+GoldCost: 73
+Effects:
+- EffectType: FIRM
+  MinValue: 1
+  MaxValue: 1
+- EffectType: SACRIFICE
+  MinValue: 1
+  MaxValue: 1
+- EffectType: STATUS_SKLAD
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal6OrderBlack
+    MissTrigger: Seal6OrderBlack
+    WrapUpTime: 0.05
+    SkipReady: true
+  StatusEffectType: Waste
+

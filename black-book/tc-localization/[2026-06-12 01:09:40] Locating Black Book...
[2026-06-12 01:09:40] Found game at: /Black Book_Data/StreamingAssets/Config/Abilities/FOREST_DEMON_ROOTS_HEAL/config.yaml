@@ -1,0 +1,16 @@
+﻿Name: Затянуть кору
+AbilityType: FOREST_DEMON_ROOTS_HEAL
+TargetType: SELF
+Intention: DEBUFF
+Sprite: FOREST_DEMON_ROOTS_HEAL
+GoldCost: 18
+Effects:
+- EffectType: HEAL
+  MinValue: 10
+  MaxValue: 20
+  VisualEffect:
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 0.5
+

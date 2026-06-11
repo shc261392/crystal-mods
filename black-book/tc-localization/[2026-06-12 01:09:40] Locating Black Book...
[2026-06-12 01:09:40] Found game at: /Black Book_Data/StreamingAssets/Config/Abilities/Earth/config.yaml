@@ -1,0 +1,15 @@
+﻿Name: Земля
+AbilityType: EARTH
+AbilityBookPartType: KEY
+Upgrade: EARTH_UP
+TargetType: PLAYER
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: EARTH
+Color: WHITE
+GoldCost: 8
+Effects:
+- EffectType: FIRM
+  MinValue: 3
+  MaxValue: 3
+

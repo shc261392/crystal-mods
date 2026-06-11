@@ -1,0 +1,7 @@
+﻿Name: Cossack Guest
+Description: It seems in Hell kolduns and chorts are on friendly terms. That's why this chort asked me to help deal with his unexpected guest.
+ShortQuestDescr: Decide the Cossack's Fate
+LevelConfig:
+  Battle:
+    Name: Lost Cossack
+

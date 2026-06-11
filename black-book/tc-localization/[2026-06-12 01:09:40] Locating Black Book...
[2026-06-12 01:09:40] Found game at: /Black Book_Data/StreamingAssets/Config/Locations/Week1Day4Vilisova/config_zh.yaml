@@ -1,0 +1,7 @@
+﻿Name: 维利索夫树林
+Description: 这片树林特别瘆人，就在织婆家旁边。
+ShortQuestDescr: 去维利索夫树林
+LevelConfig:
+  Battle:
+    Name: 林间雠特
+

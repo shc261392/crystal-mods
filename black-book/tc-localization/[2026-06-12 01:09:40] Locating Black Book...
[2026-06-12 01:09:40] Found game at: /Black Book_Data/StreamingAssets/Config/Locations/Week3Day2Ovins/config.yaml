@@ -1,0 +1,14 @@
+IdName: Week3Day2Ovins
+Name: Заболотнинские овины
+Description: В овинах пока нечего сушить и молотить. Сейчас, вон, молодежь песни гуляет.
+Scene: Village
+LocationType: PRIEST
+RequiredLocations:
+  - Week3Day2Fair
+OnomastikonItems:
+  - Onomastikon/Songs/10
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  MusicOverride: event:/Music/ExploreLight
+  Quest:
+    DialogueSystemName: TextQuest/Singers/SingersUniversal/Intro

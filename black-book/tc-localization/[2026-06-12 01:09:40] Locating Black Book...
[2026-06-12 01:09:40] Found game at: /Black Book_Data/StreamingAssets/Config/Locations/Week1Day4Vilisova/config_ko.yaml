@@ -1,0 +1,7 @@
+﻿Name: 빌리소프 숲
+Description: 방적공의 집 근처의 음침한 숲.
+ShortQuestDescr: 빌리소프 숲 방문하기
+LevelConfig:
+  Battle:
+    Name: 숲에서 온 초르트
+

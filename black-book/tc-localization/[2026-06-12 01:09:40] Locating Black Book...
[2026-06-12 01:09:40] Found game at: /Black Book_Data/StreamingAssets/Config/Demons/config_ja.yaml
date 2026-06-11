@@ -1,0 +1,79 @@
+﻿DemonConfigs:
+  Mathew:
+    Name: マトヴェイ
+    Description: マトヴェイは、イヴァン雷帝の時代にはオプリーチニク（親衛隊員）だったが、今は魔物である
+  Ivashka:
+    Name: イヴァシュカ
+    Description: 太っちょのイヴァシュカは子供たちが飢えるのを好む
+  Fyodor:
+    Name: 一つ眼のフョードル
+    Description: 八百長の仕組まれた大きな賭けで負けて眼を失い、以前よりも人を憎むようになった
+  Makarko:
+    Name: マカルコ
+    Description: かつてはスセートコだったが、家主を殺してしまった
+  Korovin:
+    Name: コロヴィン
+    Description: はるか昔、コロヴィンは天使の聖歌隊で創造神話を歌っていた
+  Andropko:
+    Name: アンドロポコ
+    Description: アンドロポコの這い寄る場所には、疫病や熱病が広がる
+  Antipka:
+    Name: アンチープカ
+    Description: ペルミ県知事のイコタであったときに、アンチープカは政治の機微を学んだ
+  Muska:
+    Name: ムースカ
+    Description: 数え切れないほどの家庭に不和をもたらしてきた
+  ThirteenthBrother:
+    Name: トリナーチャチ
+    Description: 好きな仕事は村人の仕事の邪魔をすること。そのため、彼は家事と農業に精通している
+  Andreiko:
+    Name: アンドレイコ
+    Description: １８４０年にオリョール県で起きた飢饉の原因。新時代に希望を持っている
+  Mikolka:
+    Name: ミコルカ
+    Description: 罪びとの魂を馬に変えることができる
+  FireZmey:
+    Name: 火の蛇
+    Description: 村の少女を誘惑してから殺す
+  CursedIcon:
+    Name: 地獄絵の悪魔
+    Description: 芸術通で、およそ病的としか言いようのないものでさえ愛でる
+  Luvezelko:
+    Name: ルヴェゼルコ
+    Description: ゴキブリを率いているが、昇進してハエを率いたいと望んでいる
+LocationIdToJobLocation:
+  Solikamsk:
+    Name: ソリカムスク
+  Cherdyn:
+    Name: チェルディニ
+  Vilgort:
+    Name: ヴィルゴルト
+  Pokcha:
+    Name: ポクチャ
+  Nyrob:
+    Name: ニロブ
+  Yanidor:
+    Name: ヤニドル
+  Kuznetsova:
+    Name: クズネツォフ
+  Verhneyazvinskoe:
+    Name: ヴェルフネ＝ヤズヴィンスク
+  Govorlivskoe:
+    Name: ゴヴォルリフスク
+  Gainskoe:
+    Name: ガインスク
+  VerhKosva:
+    Name: 上コスヴァ
+  Usva:
+    Name: ユスヴァ
+  Voskresenskoe:
+    Name: ヴォスクレセンスク
+  Akchim:
+    Name: アクチム
+  MeaninglessLocation1:
+    Name: 無意味な雑用
+  MeaninglessLocation2:
+    Name: 無意味な雑用
+  MeaninglessLocation3:
+    Name: 無意味な雑用
+

@@ -1,0 +1,19 @@
+﻿Name: Третий пар
+AbilityType: OBDERIHA_DISENCHANT
+TargetType: SELF
+Intention: ATTACK_DEBUFF
+Sprite: OBDERIHA_DISENCHANT
+GoldCost: 3
+Effects:
+- MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  RepeatCount: 2
+- EffectType: REMOVE_GOOD_STATUS_NO_DEF
+  MinValue: 1
+  MaxValue: 1

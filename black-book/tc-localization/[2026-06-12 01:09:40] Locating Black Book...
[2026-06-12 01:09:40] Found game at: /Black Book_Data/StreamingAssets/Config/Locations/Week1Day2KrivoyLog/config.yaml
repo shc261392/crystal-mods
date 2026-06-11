@@ -1,0 +1,11 @@
+﻿IdName: Week1Day2KrivoyLog
+Name: Кривой лог
+Description: 'Лог этот как литовка изогнут, оттого и название. Случаев тут много было всяких: с лешим да че да. Место недоброе.'
+Scene: Forest_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day2/Krivoy
+RequiredLocations:
+- Week1Day2VilgortChurch
+

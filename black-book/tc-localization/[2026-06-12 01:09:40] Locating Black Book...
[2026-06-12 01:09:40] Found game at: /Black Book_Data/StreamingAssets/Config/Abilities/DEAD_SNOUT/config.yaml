@@ -1,0 +1,20 @@
+﻿Name: Мертвое рыло
+AbilityType: PESTILENCE_CLAWS
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: DEAD_SNOUT
+GoldCost: 3
+Effects:
+- MinValue: 15
+  MaxValue: 30
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+- EffectType: STATUS
+  StatusEffectType: Waste
+  MinValue: 20
+  MaxValue: 20
+

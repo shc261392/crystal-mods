@@ -1,0 +1,28 @@
+﻿AssetName: Andreiko
+Health: 150
+Mana: 4
+Initiative: 1
+MoneyMin: 18
+MoneyMax: 24
+Experience: 1000
+StartingStatusEffects:
+- StatusEffectType: Master
+  Duration: 999
+  Permanent: true
+  Unremovable: true
+- StatusEffectType: Blessed
+  Duration: 10
+  HardDifficulty: true  
+UnitAI:
+  AIAbilities:
+  - AbilityType: THIRTEENTH_SUMMON
+    TargetType: SELF
+  - AbilityType: ANDREIKO_CLAW
+    TargetType: ENEMY
+  - AbilityType: THIRTEENTH_SEAL
+    TargetType: SELF
+  - AbilityType: THIRTEENTH_DEFENCE
+    TargetType: ALL_ALLIES
+  CastingType: UNIT_HARDCODED
+Name: Андрейко
+

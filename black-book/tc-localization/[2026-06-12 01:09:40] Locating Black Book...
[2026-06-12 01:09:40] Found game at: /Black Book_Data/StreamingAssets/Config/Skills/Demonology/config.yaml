@@ -1,0 +1,8 @@
+﻿Name: Демонология
+SkillName: Demonology
+Sprite: DemonologySkill
+Description: Видны специальности чертей и типы заданий
+Effects:
+- Value: 1
+  Type: DemonSpecialties
+

@@ -1,0 +1,15 @@
+﻿IdName: Week2Day4Sleigh
+Name: Утопленные сани
+Description: Здесь много всяких бревен. Видать, все, что в воду пало, тут может очутиться.
+ShortQuestDescr: Найти имя русалки
+Scene: DrownSledge
+LevelConfig:
+  Exploration: Week2Day4Sleigh
+  MusicOverride: event:/Music/Underwater
+  MixerSnapshot: snapshot:/Underwater
+RequiredLocations:
+- Week2Day4Nets
+Secondary: Week2Day4Sleigh
+OnomastikonItems:
+- Onomastikon/Tales/6
+

@@ -1,0 +1,6 @@
+﻿Name: 복도
+Description: 거의 다 왔다! 이제 이 긴 복도를 걸어가기만 하면 된다.
+LevelConfig:
+  Battle:
+    Name: 복도 쉬쉬가
+

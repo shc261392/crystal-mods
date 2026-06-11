@@ -1,0 +1,7 @@
+﻿Name: 索利卡姆斯克路
+Description: 维葛特去切尔登就是走这条大路，这条路过了切尔登，还能去别的地方，甚至能到省城。
+ShortQuestDescr: 往路上施一道密咒
+LevelConfig:
+  Battle:
+    Name: 强盗
+

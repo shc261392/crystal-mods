@@ -1,0 +1,16 @@
+﻿Name: Удар посохом
+AbilityType: STAFF_STRIKE
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: STAFF_STRIKE
+GoldCost: 3
+Effects:
+- MinValue: 5
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

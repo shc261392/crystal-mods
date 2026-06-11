@@ -1,0 +1,8 @@
+﻿Name: Большая сума I
+SkillName: EquipQuantity1
+Sprite: EquipQuantity1Skill
+Description: Увеличивает количество надеваемых предметов на {CalculatedEffect}
+Effects:
+- Value: 1
+  Type: EquipQuantity
+

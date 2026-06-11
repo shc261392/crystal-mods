@@ -1,0 +1,6 @@
+﻿Name: Turchan Road
+Description: Turchan Road runs from Vilgort to Yanidor. I don't know the reason for the name. Nikolai says it was to honor the Turks.
+LevelConfig:
+  Battle:
+    Name: Fight with Brigands
+

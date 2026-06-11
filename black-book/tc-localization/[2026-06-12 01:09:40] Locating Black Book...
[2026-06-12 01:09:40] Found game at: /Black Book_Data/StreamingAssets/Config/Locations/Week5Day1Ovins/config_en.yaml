@@ -1,0 +1,7 @@
+﻿Name: Vilgort Drying Barns
+Description: These are the barns on the outskirts of Vilgort that woman was speaking about, the one who came to our house.
+ShortQuestDescr: Learn Why Ovinniks Scare People
+LevelConfig:
+  Battle:
+    Name: Ovinniks
+

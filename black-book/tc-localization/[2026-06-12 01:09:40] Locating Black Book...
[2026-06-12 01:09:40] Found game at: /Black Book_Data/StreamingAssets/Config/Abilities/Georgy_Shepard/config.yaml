@@ -1,0 +1,23 @@
+﻿Name: Егорий Пастух
+AbilityType: GEORGY_SHEPARD
+Upgrade: GEORGY_SHEPARD_Up
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: GEORGY_SHEPARD
+GoldCost: 16
+Effects:
+- EffectType: STATUS
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpell
+    MissTrigger: AttackSpell
+    WrapUpTime: 0.5
+  StatusEffectType: Blessed
+- EffectType: HEAL
+  MinValue: 5
+  MaxValue: 5
+

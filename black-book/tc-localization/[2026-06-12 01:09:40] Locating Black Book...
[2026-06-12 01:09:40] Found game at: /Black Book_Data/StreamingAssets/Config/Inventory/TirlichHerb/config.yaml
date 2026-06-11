@@ -1,0 +1,11 @@
+﻿Name: Тирлич-трава
+InventoryItemName: TirlichHerb
+Type: Herb
+Flavour: Кудесники и чародеи дорожат тирличем, как сокровищем.
+Sprite: TirlichHerb
+Expendable: true
+Cost: 56
+Effects:
+- Value: 1
+  Type: Status
+  StatusName: ArticulacyOrders

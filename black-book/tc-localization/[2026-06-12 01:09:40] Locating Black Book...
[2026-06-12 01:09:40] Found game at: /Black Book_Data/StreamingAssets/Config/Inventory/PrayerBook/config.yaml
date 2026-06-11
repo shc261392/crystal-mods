@@ -1,0 +1,10 @@
+﻿Name: Молитвенник
+InventoryItemName: PrayerBook
+Flavour: Дивью красу кто у себя хранил, в молитвеннике, а то которые кумушкам раздавали
+Sprite: PrayerBook
+Cost: 120
+Effects:
+- Value: 1
+  Type: StatusBonus
+  StatusName: Prayer
+

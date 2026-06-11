@@ -1,0 +1,6 @@
+﻿Name: 鬼营房
+Description: 这儿有几排像模像样的房子，住这里边也是生不如死。
+LevelConfig:
+  Battle:
+    Name: 雠特的计划
+

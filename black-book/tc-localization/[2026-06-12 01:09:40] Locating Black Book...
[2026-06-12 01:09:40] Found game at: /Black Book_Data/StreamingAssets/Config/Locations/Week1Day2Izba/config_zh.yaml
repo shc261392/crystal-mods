@@ -1,0 +1,8 @@
+﻿Name: 伊兹巴边上的树林
+Description: 我们家伊兹巴边上的这片老树林阴森极了，其实附近的东西都是这样。
+LevelConfig:
+  Battle:
+    Name: 唱歌的魔鬼
+  BattleAlternative:
+    Name: 唱歌的魔鬼
+

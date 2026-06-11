@@ -1,0 +1,6 @@
+﻿Name: 포크챠 길
+Description: 이 길은 숲과 가까우니 조심해야 한다!
+LevelConfig:
+  Battle:
+    Name: 숲 초르트
+

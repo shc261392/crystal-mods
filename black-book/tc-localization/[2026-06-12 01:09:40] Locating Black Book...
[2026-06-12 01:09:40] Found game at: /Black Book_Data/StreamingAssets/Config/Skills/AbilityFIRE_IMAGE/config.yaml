@@ -1,0 +1,10 @@
+Name: FIRE_IMAGE
+SkillName: AbilityFIRE_IMAGE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - RoguelikeFierceWords1
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: FIRE_IMAGE

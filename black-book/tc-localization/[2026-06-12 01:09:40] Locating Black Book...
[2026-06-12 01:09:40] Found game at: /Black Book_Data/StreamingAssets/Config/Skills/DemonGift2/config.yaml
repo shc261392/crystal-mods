@@ -1,0 +1,10 @@
+﻿Name: Бесячьи гостинцы II
+SkillName: DemonGift2
+Sprite: DemonGift2Skill
+Description: Черти приносят на {CalculatedEffect} <sprite name="Rouble"> больше
+RequiredSkills:
+- DemonGift1
+Effects:
+- Value: 10
+  Type: AdditionalDemonGift
+

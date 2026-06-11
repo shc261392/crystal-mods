@@ -1,0 +1,16 @@
+﻿Name: В складчину!
+AbilityType: TOGETHER
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: TOGETHER
+GoldCost: 3
+Effects:
+- MinValue: 15
+  MaxValue: 30
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

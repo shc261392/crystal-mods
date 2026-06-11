@@ -1,0 +1,20 @@
+﻿Name: Угли из каменки
+AbilityType: OBDERIHA_SUMMON
+TargetType: SELF
+AbilitySpellType: SUMMON
+Sprite: OBDERIHA_SUMMON
+GoldCost: 3
+Effects:
+- EffectType: SUMMON
+  MinValue: 1
+  MaxValue: 1
+  SummonEffectData:
+    UnitTypes:
+    - ObderihaDemon
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Summon
+    SpellTrigger: Summon
+    MissTrigger: Miss
+    SkipReady: true
+

@@ -1,0 +1,21 @@
+﻿Name: Рыба-кит
+AbilityType: FISH_WHALE
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: FISH_WHALE
+GoldCost: 34
+Effects:
+- EffectType: STATUS
+  MinValue: 6
+  MaxValue: 6
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal5OrderWhite
+    MissTrigger: Seal5OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: DefenceOnItemUse
+  StatusPermanent: true
+

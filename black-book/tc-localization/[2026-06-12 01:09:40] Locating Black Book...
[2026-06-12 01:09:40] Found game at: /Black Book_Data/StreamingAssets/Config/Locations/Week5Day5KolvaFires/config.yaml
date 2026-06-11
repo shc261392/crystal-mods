@@ -1,0 +1,27 @@
+﻿IdName: Week5Day5KolvaFires
+Name: Костры у Колвы
+Description: Вильгортские развели костер и водят хороводы. Девки-то, наверное, гадать будут. А я и без гаданий знаю, что мне уготовано!
+Scene: Fireplace
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day5/KolvaFires/Intro
+  Exploration: Week5Day5KolvaFires
+  MixerSnapshot: snapshot:/Forest
+  NoExplorationMusic: true
+  FoolGame:
+    TeamPlay: true
+    CardsCount: 36
+    PlayerCount: 4
+    PossiblePlayers:
+      - Peasant
+      - Samson
+      - Peasant2
+      - Peasant3
+      - Peasant4
+    DialogueFoolWin: TextQuest/Durak/MerchantGameWin
+    DialogueFoolLose: TextQuest/Durak/MerchantGameLose
+RequiredLocations:
+- Week5Day5Fields
+OnomastikonItems:
+- Onomastikon/Encyclopedia/69
+

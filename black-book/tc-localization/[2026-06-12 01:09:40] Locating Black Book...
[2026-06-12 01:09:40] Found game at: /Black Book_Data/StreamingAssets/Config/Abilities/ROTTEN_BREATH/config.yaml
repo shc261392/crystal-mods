@@ -1,0 +1,24 @@
+﻿Name: Гнилое дыхание
+AbilityType: PESTILENCE
+TargetType: ALL
+Intention: BUFF
+Sprite: ROTTEN_BREATH
+Sound: event:/Abilities/PORCHA_ROT
+GoldCost: 6
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Rot
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: BITE
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 2
+    SkipReady: true
+- EffectType: STATUS
+  StatusEffectType: Undead
+  MinValue: 5
+  MaxValue: 5
+

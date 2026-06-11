@@ -1,0 +1,12 @@
+﻿Name: Соты
+InventoryItemName: Sota
+Type: Herb
+Flavour: Твоими бы устами только мед пить
+Sprite: Sota
+Expendable: true
+Cost: 40
+Effects:
+- Value: 3
+  Type: Status
+  StatusName: Eloquence
+

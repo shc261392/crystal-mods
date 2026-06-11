@@ -1,0 +1,7 @@
+﻿Name: アリョシュキノ村
+Description: アレクサンドルを見つけないと。ただじゃ済まさないんだから！
+ShortQuestDescr: アレクサンドルを探す
+LevelConfig:
+  Battle:
+    Name: 井戸の魔物
+

@@ -1,0 +1,32 @@
+﻿IdName: Week3Day2Beermakers
+Name: Варка у реки
+Description: Пиво варят в большом котле на берегу реки.
+ShortQuestDescr: Снять пивную порчу
+LongQuestDescr: Кто-то навел порчу на свадебное пиво, что варили у реки. Может, обдериха замешана?
+LightingType: REGULAR_ALTERNATIVE
+Scene: BeerBank2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Пивная порча
+    Enemies:
+    - Type: Porcha
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/BattleBoss2
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day2/Beermakers/Intro
+    Outro: TextQuest/Week3/Day2/Beermakers/Outro
+    IzbaAftermath: Izba/Week3/Day17
+  Exploration: Week3Day2Beermakers
+  CinematicIntro: true
+  MusicOverride: event:/Music/ExploreDark
+  NoExplorationMusic: true
+RequiredLocations:
+- Week3Day2Pokcha
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+

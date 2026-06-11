@@ -1,0 +1,7 @@
+﻿Name: Abandoned Well
+Description: What's that silhouette? Could that be a well?
+ShortQuestDescr: Trailing Evil Spirits
+LevelConfig:
+  Battle:
+    Name: Well Spirit
+

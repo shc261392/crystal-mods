@@ -1,0 +1,6 @@
+﻿Name: 悪魔の犬小屋
+Description: ここにはいくつかの公営住宅が建っている。こんな家に住むこと自体が地獄だ。
+LevelConfig:
+  Battle:
+    Name: チョルトの計画
+

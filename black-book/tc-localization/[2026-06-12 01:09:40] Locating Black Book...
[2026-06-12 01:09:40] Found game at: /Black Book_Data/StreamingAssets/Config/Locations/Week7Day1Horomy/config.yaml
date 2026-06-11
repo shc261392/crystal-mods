@@ -1,0 +1,55 @@
+﻿IdName: Week7Day1Horomy
+Name: Хоромы нечисти
+Description: Вот они, таинственные хоромы, поросшие ядовитыми грибами. Должно быть, здесь столетиями пряталась нечисть...
+ShortQuestDescr: Исполнить желание
+LongQuestDescr: Чтобы исполнить желание, вам необходимо добраться до самого центра преисподней. Первым препятствием на пути выступает властелин этой адской области, Андромалиус.
+Scene: EvilMansion
+LevelConfig:
+  Battle:
+    Name: Андромалиус
+    Enemies:
+    - Type: Andromalius
+      LevelSpawnPointType: EnemyCenter
+    Barks:
+    - Id: Battle/Andromalius/First
+      HealthPercent: 0.800000012
+      TargetUnit: Andromalius
+    - Id: Battle/Andromalius/Second
+      HealthPercent: 0.400000006
+      TargetUnit: Andromalius
+#    WinCutscene: Week7Day1HoromyKill
+    EnemyKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/BattleBoss2
+  Quest:
+    DialogueSystemName: TextQuest/Week7/Day1/Horomy/Intro
+    Outro: TextQuest/Week7/Day1/Horomy/BattleWin
+  Exploration: Week7Day1Horomy
+  CinematicIntro: true
+  MusicOverride: event:/Music/ExploreDark2
+  MixerSnapshot: snapshot:/Church
+  NoExplorerSpawn: true
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 2
+    PossiblePlayers:
+    - Andromalius
+    DialogueFoolWin: TextQuest/Durak/WinBattleUtil
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+RequiredLocations:
+- Week7Day1Pits
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+- Proshka
+- ProshkaLoyal
+OnomastikonItems:
+  - Onomastikon/Encyclopedia/1
+  - Onomastikon/Encyclopedia/79

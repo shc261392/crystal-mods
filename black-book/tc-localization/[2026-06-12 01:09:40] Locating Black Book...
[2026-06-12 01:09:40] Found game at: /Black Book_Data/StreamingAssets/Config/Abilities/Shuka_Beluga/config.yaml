@@ -1,0 +1,24 @@
+﻿Name: Щука-белуга
+AbilityType: SHUKA_BELUGA
+AbilityBookPartType: KEY
+Upgrade: SHUKA_BELUGA_UP
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+Sprite: SHUKA_BELUGA
+GoldCost: 15
+Effects:
+- EffectType: STATUS_SKLAD
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal2KeyWhite
+    MissTrigger: Seal2KeyWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: EloquenceWhite
+- EffectType: SIN
+  MinValue: 1
+  MaxValue: 1

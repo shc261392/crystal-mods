@@ -1,0 +1,6 @@
+﻿Name: 切尔登的院子
+Description: 我能打这边抄近路去警察局。
+LevelConfig:
+  Battle:
+    Name: 院内精怪
+

@@ -1,0 +1,17 @@
+﻿IdName: Week5Day3Carpenter
+Name: Плотницкая артель
+Description: Неподалеку от Анбора плотники свой завод сделали. И кто у них покупает? Помочи же есть.
+ShortQuestDescr: Поговорить с плотниками
+Scene: SaltFabricHangar
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  MusicOverride: event:/Music/Explore2
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day3/Carpenter/Intro
+  CameraOverride: CMQuestCamera1
+  DialogueCameraOverride: CMDialogueCameraQuest1
+LightingType: DARK
+RequiredLocations:
+- Week5Day3Anbor
+Secondary: Week5Day3Carpenter
+

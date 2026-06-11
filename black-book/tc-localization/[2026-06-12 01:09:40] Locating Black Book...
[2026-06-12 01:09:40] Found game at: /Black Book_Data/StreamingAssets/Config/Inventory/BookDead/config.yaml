@@ -1,0 +1,11 @@
+﻿Name: Покойничная книга
+InventoryItemName: BookDead
+Flavour: "Умрет человек, обрядишь его – читать позовёшь: книги таки покойничные были"
+Sprite: BookDead
+Cost: 200
+Effects:
+- Value: 1
+  Type: StatusBonus
+  StatusName: EloquenceBlack
+- Value: 2
+  Type: AdditionalSins

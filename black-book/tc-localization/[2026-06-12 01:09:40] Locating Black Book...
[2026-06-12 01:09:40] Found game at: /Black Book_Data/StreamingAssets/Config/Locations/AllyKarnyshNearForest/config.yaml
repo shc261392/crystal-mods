@@ -1,0 +1,13 @@
+﻿IdName: AllyKarnyshNearForest
+Name: Заболоченная опушка
+Description: Опушка новой лешачьей рощи... Видно, как она без хозяина-то в запустенье пришла.
+Scene: Marshes2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/AllyKarnysh/NearForest/Intro
+LightingType: FOG
+RequiredLocations:
+- AllyKarnyshBerezovski
+

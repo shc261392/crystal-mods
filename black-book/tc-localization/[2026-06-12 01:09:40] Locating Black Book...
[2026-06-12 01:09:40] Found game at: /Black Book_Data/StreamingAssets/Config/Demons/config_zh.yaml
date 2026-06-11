@@ -1,0 +1,79 @@
+﻿DemonConfigs:
+  Mathew:
+    Name: 马特维
+    Description: 恐怖伊凡在位期间，马特维是禁军士兵，现在成了恶魔。
+  Ivashka:
+    Name: 伊瓦什卡
+    Description: 胖伊瓦什卡喜欢小孩儿挨饿。
+  Fyodor:
+    Name: 独眼费奥多
+    Description: 他跟一个收受贿赂的恶人打赌，结果输了一只眼睛，现在对人类更加恨之入骨。
+  Makarko:
+    Name: 马卡尔科
+    Description: 他本来是苏谢德科，后来害死了自己的主人。
+  Korovin:
+    Name: 科洛文
+    Description: 他很久很久以前在天使唱诗班歌唱造物的奇迹。
+  Andropko:
+    Name: 安德罗普科
+    Description: 有安德罗普科的地方，就有瘟疫和热疫肆虐。
+  Antipka:
+    Name: 安季普卡
+    Description: 他附身彼尔姆总督的时候，懂了政治的不少微妙之处。
+  Muska:
+    Name: 慕斯卡
+    Description: 破坏了不少家庭。
+  ThirteenthBrother:
+    Name: 第十三子
+    Description: 他最喜欢耽误农民干活，所以非常了解家务和农活儿。
+  Andreiko:
+    Name: 安德烈科
+    Description: 他盼望新时代，奥尔洛夫省1840年的饥荒就是他干的好事儿。
+  Mikolka:
+    Name: 米科卡
+    Description: 能把罪人的灵魂变成马。
+  FireZmey:
+    Name: 火蛇
+    Description: 能魅惑、害死农家女子。
+  CursedIcon:
+    Name: 地狱绘魔
+    Description: 擅长鉴赏各种美术，就算最病态的美术也不在话下。
+  Luvezelko:
+    Name: 路维泽克
+    Description: 能指挥蟑螂，但是希望晋升，想去指挥苍蝇。
+LocationIdToJobLocation:
+  Solikamsk:
+    Name: 索利卡姆
+  Cherdyn:
+    Name: 切尔登
+  Vilgort:
+    Name: 维葛特
+  Pokcha:
+    Name: 波克恰
+  Nyrob:
+    Name: 尼罗布
+  Yanidor:
+    Name: 亚尼铎
+  Kuznetsova:
+    Name: 库兹涅佐夫
+  Verhneyazvinskoe:
+    Name: 维克尼亚文
+  Govorlivskoe:
+    Name: 戈沃比夫
+  Gainskoe:
+    Name: 盖恩
+  VerhKosva:
+    Name: 上科斯瓦
+  Usva:
+    Name: 尤斯瓦
+  Voskresenskoe:
+    Name: 沃斯克雷森
+  Akchim:
+    Name: 埃奇姆
+  MeaninglessLocation1:
+    Name: 无意义的任务
+  MeaninglessLocation2:
+    Name: 无意义的任务
+  MeaninglessLocation3:
+    Name: 无意义的任务
+

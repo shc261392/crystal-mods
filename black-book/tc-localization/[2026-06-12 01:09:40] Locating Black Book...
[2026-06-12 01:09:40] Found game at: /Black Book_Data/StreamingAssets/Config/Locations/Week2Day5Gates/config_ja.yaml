@@ -1,0 +1,6 @@
+﻿Name: 宮殿の門
+Description: 古いおとぎ話には、ヴォジャノーイの宮殿の門は水晶で作られていると書かれていた。実際の姿とは全然違う。
+LevelConfig:
+  Battle:
+    Name: 門の前
+

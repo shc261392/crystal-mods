@@ -1,0 +1,10 @@
+Name: BLACK_CARD
+SkillName: AbilityBLACK_CARD
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityKOSTOLOMISHE
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: BLACK_CARD

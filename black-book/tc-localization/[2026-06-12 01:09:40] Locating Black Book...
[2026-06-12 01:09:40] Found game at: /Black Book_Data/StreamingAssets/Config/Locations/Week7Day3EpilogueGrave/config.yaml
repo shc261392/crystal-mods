@@ -1,0 +1,8 @@
+﻿IdName: Week7Day3EpilogueGrave
+Name: У могилы
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day1/BigichiWoods
+

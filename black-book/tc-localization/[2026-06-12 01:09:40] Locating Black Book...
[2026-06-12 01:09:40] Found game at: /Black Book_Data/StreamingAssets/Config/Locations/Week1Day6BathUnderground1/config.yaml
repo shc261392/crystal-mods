@@ -1,0 +1,20 @@
+﻿IdName: Week1Day6BathUnderground1
+Name: Под полком
+Scene: ObderihasNest
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  Battle:
+    Name: Черти углей
+    Enemies:
+    - Type: ObderihaDemon
+      LevelSpawnPointType: EnemyCenter
+    - Type: ObderihaDemon
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: Exploration/Week1/Obderiha/UndergroundIntro
+    Outro: Exploration/Week1/Obderiha/FirstBattleWon
+    IzbaAftermath: Exploration/Week1/Obderiha/IzbaAftermath
+  Exploration: BathFinalUnderground
+  MusicOverride: event:/Music/ExploreDark
+

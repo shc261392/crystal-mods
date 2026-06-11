@@ -1,0 +1,10 @@
+Name: DAMASK_STONE
+SkillName: AbilityDAMASK_STONE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityBLACK_CARD
+SpriteOffsetX: 6.6
+SpriteOffsetY: 3
+Effects:
+- Type: AbilityUnlock
+  StringData: DAMASK_STONE

@@ -1,0 +1,7 @@
+﻿Name: 헛간 마당
+Description: 상인에게 듣기로는 헛간 마당에서 아이들이 점을 쳤다고 한다. 점은 적절한 때에 치지 않으면 위험할 수 있다. 확인해 보는 게 좋겠다.
+ShortQuestDescr: 점 치는 아이들 확인하기
+LevelConfig:
+  Battle:
+    Name: 오빈니크
+

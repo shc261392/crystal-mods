@@ -1,0 +1,10 @@
+Name: NIKOLA_MILOSTIV
+SkillName: AbilityNIKOLA_MILOSTIV
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityNIKOLA_GEORGY
+SpriteOffsetX: -51
+SpriteOffsetY: -49
+Effects:
+- Type: AbilityUnlock
+  StringData: NIKOLA_MILOSTIV

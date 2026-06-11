@@ -1,0 +1,7 @@
+﻿Name: 科尔瓦桥
+Description: 桥能连上河两岸，所以也能算是两个世界之间的边界。而且众所周知，邪灵精怪就喜欢住在边界这种地方。
+ShortQuestDescr: 在桥下抓住一个魔鬼
+LevelConfig:
+  Battle:
+    Name: 桥上相会
+

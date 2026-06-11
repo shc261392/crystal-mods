@@ -1,0 +1,21 @@
+﻿Name: Селафиил
+AbilityType: SELAFIIL
+Upgrade: SELAFIIL_UP
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: SELAFIIL
+GoldCost: 28
+Effects:
+- EffectType: DEFENCE_FIERCE
+  MinValue: 4
+  MaxValue: 4
+  NumericData: 3
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal4OrderWhite
+    MissTrigger: Seal4OrderWhite
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

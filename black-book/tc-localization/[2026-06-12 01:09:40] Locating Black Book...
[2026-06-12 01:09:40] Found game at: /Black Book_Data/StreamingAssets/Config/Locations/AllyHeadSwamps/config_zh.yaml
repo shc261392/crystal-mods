@@ -1,0 +1,7 @@
+﻿Name: 黑沼泽
+Description: 奥奇加失踪的村民可能就在这附近。
+ShortQuestDescr: 找到失踪的农民
+LevelConfig:
+  Battle:
+    Name: 水鬼
+

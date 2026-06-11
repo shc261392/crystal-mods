@@ -1,0 +1,10 @@
+Name: ONCE_AND_FOREVER
+SkillName: AbilityONCE_AND_FOREVER
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityAMEN
+SpriteOffsetX: 36.5
+SpriteOffsetY: 36.5
+Effects:
+- Type: AbilityUnlock
+  StringData: ONCE_AND_FOREVER

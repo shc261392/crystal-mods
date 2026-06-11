@@ -1,0 +1,7 @@
+﻿Name: 东桥
+Description: 过了这座桥就能到沼泽地东边，大家就这么样把它叫成了东桥。据说桥上晚上有奇怪的动静，我应该过去看看。
+ShortQuestDescr: 走上东桥
+LevelConfig:
+  Battle:
+    Name: 魔鬼和罪人
+

@@ -1,0 +1,6 @@
+﻿Name: Iskor Village
+Description: This village is large and quite beautiful. Which makes it that much harder to look at. Such a tragic sight. Where fever thrives, everything starts to decay.
+LevelConfig:
+  Battle:
+    Name: Card Players
+

@@ -1,0 +1,11 @@
+﻿Name: Конёк-горбунок
+InventoryItemName: KonekGorbunok
+Flavour: ЭКСТРЕМАльная сложность в 1986 на ТИА-МЦ-1
+Sprite: IconKonek
+Cost: 222
+Effects:
+- Value: 8
+  Type: DefenceOnBattleStart
+- Value: 6
+  Type: ReduceDamage
+

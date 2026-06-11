@@ -1,0 +1,45 @@
+IdName: WindmillExploration
+Name: Старая мельница
+Description: Мельница стоит на границе между мирами, между селом и лесами. Не зря ведь говорят, что мельник тоже колдун, да только не такой сильный как дед Егор.
+ShortQuestDescr: Разобраться с чертями мельника
+LongQuestDescr: По словам вашего посетителя, черти перестали вращать жернова и портят мельницу. Вы решили проведать нечистого и наставить бесов на путь истинный.
+Scene: WindmillExploration
+LockedAllies:
+  - DedEgor
+RequiredLocations:
+  - Week1Day1Nizva
+OnomastikonItems:
+  - Onomastikon/Encyclopedia/62
+  - Onomastikon/Tales/4
+LevelConfig:
+  Quest:
+    DialogueSystemName: Exploration/Mill/Entry
+    Outro: Exploration/Mill/Outro
+    IzbaAftermath: Izba/Week1/MillAftermath
+    NightEndQuest: true
+    Reward:
+      Money: 20
+      Experience: 666
+      ItemRewards:
+        - Quantity: 1
+          Item: OldPounder
+  Exploration: WindmillExploration
+  MusicOverride: "event:/Music/ExploreDark"  
+  Battle:
+    Name: Чёрт мельника
+    Enemies:
+      - Type: ThirteenthBrother
+        LevelSpawnPointType: EnemyCenter
+    WinCutscene: Week1ThirteenthDeath
+    EnemyKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: "event:/Music/BattleBoss2"
+    Barks:
+      - Id: Battle/Thirteenth/First
+        HealthPercent: 0.8
+        TargetUnit: ThirteenthBrother
+      - Id: Battle/Thirteenth/Second
+        HealthPercent: 0.4
+        TargetUnit: ThirteenthBrother
+  CinematicIntro: true

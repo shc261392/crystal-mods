@@ -1,0 +1,10 @@
+Name: SILENT_AILMENT
+SkillName: AbilitySILENT_AILMENT
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityDAMASK_STONE
+SpriteOffsetX: 53
+SpriteOffsetY: 47
+Effects:
+- Type: AbilityUnlock
+  StringData: SILENT_AILMENT

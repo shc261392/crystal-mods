@@ -1,0 +1,11 @@
+﻿Name: Купальская мазь
+InventoryItemName: KupalaMaz
+Flavour: С помощью особых обрядов и тщательной подготовки колдуны изготавливают мазь из купальских трав, позволяющую летать по воздуху
+Sprite: KupalaMaz
+NotForSale: true
+Cost: 190
+Effects:
+- Value: 5
+  Type: StatusBonus
+  StatusName: Regeneration
+

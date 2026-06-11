@@ -1,0 +1,15 @@
+﻿IdName: Week2Day6SaltanForest
+Name: Салтановский лес
+Description: Рощица к востоку от села. Говорят, тут бортников много. Может, удастся что купить у них.
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Merchants:
+  - Beekeeper
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day6/SaltanForest
+RequiredLocations:
+- Week2Day6Saltanovo
+OnomastikonItems:
+- Onomastikon/Tales/47
+

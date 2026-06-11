@@ -1,0 +1,6 @@
+﻿Name: 기이한 나무
+Description: 이 나무들은 마치 살아있는 듯하다.
+LevelConfig:
+  Battle:
+    Name: 악마의 덫
+

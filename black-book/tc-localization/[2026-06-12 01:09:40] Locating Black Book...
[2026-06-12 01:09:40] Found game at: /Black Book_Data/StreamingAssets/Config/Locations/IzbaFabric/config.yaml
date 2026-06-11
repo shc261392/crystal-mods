@@ -1,0 +1,17 @@
+﻿IdName: IzbaFabric
+Name: Заводская изба
+Scene: IzbaFabric
+IsIzba: true
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  CinematicIntro: true
+  MusicOverride: "event:/Music/Izba"
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 4
+ForbiddenSpawnAllies:
+- DedEgor
+- DedEgorLoyal
+- Nikolay
+- NikolayLoyal
+

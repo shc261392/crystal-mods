@@ -1,0 +1,15 @@
+﻿Name: Мхом на рану
+AbilityType: MOSS_WOUNDS
+TargetType: SELF
+Sprite: MOSS_WOUNDS
+GoldCost: 18
+Effects:
+- EffectType: HEAL
+  MinValue: 40
+  MaxValue: 40
+  VisualEffect:
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 0.5
+

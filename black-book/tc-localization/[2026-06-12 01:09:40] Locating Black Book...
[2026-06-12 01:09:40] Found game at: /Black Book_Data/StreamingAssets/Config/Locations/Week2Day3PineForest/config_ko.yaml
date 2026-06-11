@@ -1,0 +1,8 @@
+﻿Name: 소나무 숲
+Description: 지옥의 호수의 늪지대는 오래된 소나무 숲으로 둘러싸여 있다.
+LevelConfig:
+  Battle:
+    Name: 숲 초르트
+  BattleAlternative:
+    Name: 기절한 초르트
+

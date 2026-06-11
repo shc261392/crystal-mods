@@ -1,0 +1,15 @@
+IdName: Week2Day6NekrasovBaths
+Name: Некрасовские бани
+Description: Кажется, звуки песни слышны. Уж не нечисть ли загуляла?
+Secondary: Week2Day6Nekrasova
+Scene: Village
+LocationType: PRIEST
+RequiredLocations:
+  - Week2Day6Nekrasova
+OnomastikonItems:
+  - Onomastikon/Songs/11
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  MusicOverride: event:/Music/ExploreLight
+  Quest:
+    DialogueSystemName: TextQuest/Singers/SingersUniversal/Intro

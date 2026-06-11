@@ -1,0 +1,12 @@
+﻿IdName: AllyEgorVilgort
+Name: Вильгорт
+Description: Нужно зайти к батюшке, расспросить его подробней про случай этот.
+Scene: ChurchVilgort
+LevelConfig:
+  MixerSnapshot: snapshot:/Church
+  Quest:
+    DialogueSystemName: TextQuest/AllyEgor/Vilgort/Talk
+  NoExplorationMusic: true
+RequiredLocations:
+- AllyEgorCrossroads
+

@@ -1,0 +1,37 @@
+﻿IdName: Week5Day3Church
+Name: Богоявленская церковь
+Description: Самая старая церква, которую я видела. Наверное, стоит тут еще с самых древних-то времен.
+ShortQuestDescr: Найти церковное полотенце
+LongQuestDescr: Для купальского обряда нужно специальное полотенце. Говорят, оно у Савелия, который в Пянтегской церкве че-то забыл.
+LocationType: COMBAT
+Scene: ChurchPyanteg
+LevelConfig:
+  MixerSnapshot: snapshot:/Church
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Адописная икона
+    Enemies:
+    - Type: HellIcon
+      LevelSpawnPointType: EnemyCenter
+    - Type: WoodenAngel
+    - Type: WoodenAngel
+      LevelSpawnPointType: EnemyRight
+    Barks:
+    - Id: Battle/CursedIcon/First
+      HealthPercent: 0.800000012
+      TargetUnit: HellIcon
+    - Id: Battle/CursedIcon/Second
+      HealthPercent: 0.400000006
+      TargetUnit: HellIcon
+    EnemyKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/BattleBoss2
+  Quest:
+    Outro: TextQuest/Week5/Day3/Church/OutroBattle
+    IzbaAftermath: Izba/Week5/Day30TowelAftermath
+  Exploration: Week5Day3Church
+  CinematicIntro: true
+RequiredLocations:
+- Week5Day3Pyanteg
+

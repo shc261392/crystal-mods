@@ -1,0 +1,26 @@
+﻿IdName: Week7Day3Throne
+Name: Трон преисподней
+Description: Наконец я у цели!
+ShortQuestDescr: Исполнить желание
+LongQuestDescr: Вы преодолели все испытания на вашем пути и наконец добрались до самого сердца ада, чтобы исполнить желание.
+Scene: HellThrone
+LevelConfig:
+  MusicOverride: event:/Music/ExploreHell
+  MixerSnapshot: snapshot:/Cave
+  CinematicIntro: true
+  Exploration: Week7Day3Throne
+RequiredLocations:
+- Week7Day3Altar
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+- Proshka
+- ProshkaLoyal
+OnomastikonItems:
+  - Onomastikon/Tales/14

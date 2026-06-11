@@ -1,0 +1,22 @@
+﻿IdName: Week2Day5NearThrone
+Name: Возле тронного зала
+Description: Совсем рядом с палатами водяного.
+Scene: LakeBottom
+LevelConfig:
+  Battle:
+    Name: Бесы во дворце
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonFierce
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day5/NearThrone
+  MusicOverride: event:/Music/Underwater
+  MixerSnapshot: snapshot:/Underwater
+RequiredLocations:
+- Week2Day5Gates
+

@@ -1,0 +1,24 @@
+﻿IdName: Week3Day5Rift
+Name: Анфиловский обрыв
+Description: Говорят, обрывы – места нечистые. Может, потому, что к пеклу близко?
+Scene: Pits
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark2
+  Battle:
+    Name: Старые призраки
+    Enemies:
+    - Type: Ghost
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSmall
+    - Type: Drowner
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day5/Rift/Intro
+  Exploration: Week3Day5Rift
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week3Day5Trakt
+

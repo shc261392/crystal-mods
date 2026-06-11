@@ -1,0 +1,6 @@
+﻿Name: 동쪽 늪
+Description: 비셰라강의 수원지였던 늪. 늪은 늘 사악한 기운이 감돌기 마련이다. 이곳에서는 특히 강력한 기운이 느껴진다.
+LevelConfig:
+  Battle:
+    Name: 반인반수
+

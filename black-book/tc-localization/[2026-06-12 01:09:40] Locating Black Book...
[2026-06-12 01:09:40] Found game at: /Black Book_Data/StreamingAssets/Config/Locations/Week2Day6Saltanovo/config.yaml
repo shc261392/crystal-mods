@@ -1,0 +1,13 @@
+﻿IdName: Week2Day6Saltanovo
+Name: Село Салтаново
+Description: Ладное село. Я тут много раз была, знакомых тоже много.
+Scene: Village3
+LevelConfig:
+  MusicOverride: event:/Music/ExploreLight
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day6/Saltanovo
+RequiredLocations:
+- Week2Day6Ahmatova
+OnomastikonItems:
+- Onomastikon/Encyclopedia/63
+

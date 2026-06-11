@@ -1,0 +1,9 @@
+﻿Name: Куколка
+InventoryItemName: Doll
+Flavour: Колдун-то мне и посадил кикимору сюда, меж крыльцев
+Sprite: Doll
+Cost: 84
+Effects:
+- Value: 30
+  Type: StatusBonusChance
+

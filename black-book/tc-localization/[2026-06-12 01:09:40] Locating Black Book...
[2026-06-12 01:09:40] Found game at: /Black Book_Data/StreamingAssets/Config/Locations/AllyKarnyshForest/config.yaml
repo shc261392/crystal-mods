@@ -1,0 +1,69 @@
+﻿IdName: AllyKarnyshForest
+Name: Роща Карныша
+Description: Поди доберись до центра этого леса. Ветки мешают, деревья угрюмые. Когда Карныш тут будет хозяином, все изменится, я думаю.
+ShortQuestDescr: Найти Карнышу собственный лес
+LongQuestDescr: Сын Ворсы давно мечтал о своей собственной роще. К счастью, неподалеку от Вильгорта оказался незанятый лешаками лес, куда вы и отправились со своим спутником.
+Scene: Karnysh
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Хозяева леса
+    Enemies:
+    - Type: DrownerPuzzle
+      LevelSpawnPointType: EnemyCenter
+      HealthOverride: 83
+    - Type: DrownerPuzzle
+      HealthOverride: 66
+    NoShuffle: true
+    PuzzleDeck:
+    - HEADLESS
+    - HEADLESS
+    - GEORGY_BATUSHKA
+    - GEORGY_BATUSHKA
+    - URAZI_UP
+    - URAZI_UP
+    - URAZI_UP
+    - URAZI_UP
+    - URAZI_UP
+    - URAZI_UP
+    - URAZI_UP
+    - LAZAR
+    - LAZAR
+    - REVUN
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    PuzzleManaOverride:
+    - 2
+    - 2
+    PuzzleHandOverride:
+    - 5
+    - 3
+    ForceAlly: Karnysh
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 3
+  Quest:
+    DialogueSystemName: TextQuest/AllyKarnysh/Forest/Intro
+    Outro: TextQuest/AllyKarnysh/Forest/Outro
+    IzbaAftermath: Izba/Karnysh/ConvAfterQuest
+  Exploration: AllyKarnyshForest
+  NoExplorerSpawn: true
+  FoolGame:
+    TeamPlay: true
+    CardsCount: 36
+    PlayerCount: 4
+    PossiblePlayers:
+    - Drowner
+    - Karnysh
+    - Drowner2
+    DialogueFoolWin: TextQuest/AllyKarnysh/Forest/Outro
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+RequiredLocations:
+- AllyKarnyshNearForest
+ForceAlly: Karnysh
+

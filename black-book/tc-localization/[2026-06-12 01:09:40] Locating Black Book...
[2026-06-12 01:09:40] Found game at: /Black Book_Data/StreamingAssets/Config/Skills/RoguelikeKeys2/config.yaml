@@ -1,0 +1,1 @@
+Name: Ключи IISkillName: RoguelikeKeys2Sprite: Keys2SkillDescription: Получите дополнительное слово с ключом каждый ход в вашу рукуRequiredSkills:- AbilityNIKOLA_MILOSTIV_ROGUELIKEEffects:- Value: 1  Type: AdditionalBookmarkKey

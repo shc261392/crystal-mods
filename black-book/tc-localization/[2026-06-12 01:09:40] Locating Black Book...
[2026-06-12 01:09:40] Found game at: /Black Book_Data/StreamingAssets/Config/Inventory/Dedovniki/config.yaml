@@ -1,0 +1,11 @@
+﻿Name: Дедовники
+InventoryItemName: Dedovniki
+Type: Herb
+Flavour: Волхвы приходят на Чистый четверг, на Егорий, на Ивана, на Пасху. Дедовники вырывают и в дворовых воротах закапывают, чтоб не спортили
+Sprite: Dedovniki
+Expendable: true
+Cost: 24
+Effects:
+- Value: 10
+  Type: GiveDefence
+

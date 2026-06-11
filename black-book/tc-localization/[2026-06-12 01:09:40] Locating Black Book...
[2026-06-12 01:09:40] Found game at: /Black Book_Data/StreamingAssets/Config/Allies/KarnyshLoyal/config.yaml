@@ -1,0 +1,18 @@
+Name: Карныш
+AllyType: KarnyshLoyal
+Unit: KarnyshLoyal
+Sprite: KarnyshFool
+IzbaDialogues: 
+  - Id: Izba/Karnysh/ConvAfterQuest
+BanterProbability: 0.5
+Banters:
+  - Id: Izba/Banter/EgorKarnysh
+    RequiredAlly: DedEgor
+  - Id: Izba/Banter/KarnyshHead
+    RequiredAlly: WhiteHead
+IzbaAsset: KarnyshIzbaRegular
+LocationToSpecialDialogue:
+  IzbaHunterCampPrePryaha:
+    Id: Izba/Context/IzbaHunterCampPrePryaha/Karnysh
+  IzbaStorm:
+    Id: Izba/Context/IzbaStorm/Karnysh

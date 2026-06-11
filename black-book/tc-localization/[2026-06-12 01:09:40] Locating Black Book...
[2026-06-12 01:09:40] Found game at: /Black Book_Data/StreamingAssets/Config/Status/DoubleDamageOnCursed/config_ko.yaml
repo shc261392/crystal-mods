@@ -1,0 +1,6 @@
+﻿Name: 정의
+Description: >-
+  저주받은 적이 받는 <sprite name="Damage"> 2배로 증가
+
+  지속 시간: {Duration}
+

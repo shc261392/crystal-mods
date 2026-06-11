@@ -1,0 +1,24 @@
+﻿Name: Никола да Егорий
+AbilityType: NIKOLA_GEORGY
+Upgrade: NIKOLA_GEORGY_UP
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: NIKOLA_GEORGY
+GoldCost: 15
+Effects:
+- EffectType: STATUS
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    ReadyTrigger: Word
+    SpellTrigger: Seal2OrderWhite
+    MissTrigger: Seal2OrderWhite
+    WrapUpTime: 0.1
+  StatusEffectType: Piety
+- EffectType: STATUS
+  MinValue: 2
+  MaxValue: 2
+  StatusEffectType: Blessed
+

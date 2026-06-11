@@ -1,0 +1,10 @@
+﻿IdName: Week1Day1Mogilevsky
+Name: Усадьба Могилевского
+Description: Неподалеку от Камгорта свою усадьбу выстроил зажиточный крестьянин Могилевский.
+Scene: Village
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day1/Mogilevsky/Intro
+Secondary: Week1Day1Kusheva
+

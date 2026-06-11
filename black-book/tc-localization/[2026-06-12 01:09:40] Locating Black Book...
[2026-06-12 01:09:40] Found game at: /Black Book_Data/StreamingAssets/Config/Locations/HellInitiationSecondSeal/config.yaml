@@ -1,0 +1,10 @@
+﻿IdName: HellInitiationSecondSeal
+Name: Вторая печать
+Scene: HellInitiation2
+LevelConfig:
+  Quest:
+    DialogueSystemName: Exploration/HellInitiation/Dialogue2
+  Exploration: HellInitiationSecondSeal
+  CinematicIntro: true
+  NoExplorationMusic: true
+  NoExplorerSpawn: true

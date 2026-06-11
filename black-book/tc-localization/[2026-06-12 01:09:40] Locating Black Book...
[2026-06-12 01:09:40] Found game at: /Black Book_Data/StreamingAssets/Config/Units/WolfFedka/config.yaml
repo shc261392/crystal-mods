@@ -1,0 +1,20 @@
+﻿AssetName: WolfChangeling
+Health: 77
+Mana: 4
+Initiative: 1
+MoneyMin: 36
+MoneyMax: 60
+Experience: 1000
+UnitAI:
+  AIAbilities:
+  - AbilityType: WOLF_BITE
+    TargetType: PLAYER
+    CheckValue: 70
+    ConsequitiveRounds: 2
+  - AbilityType: WEREWOLF_STRONGER
+    TargetType: ALL_ALLIES
+    CheckValue: 30
+    ConsequitiveRounds: 2
+  CastingType: RANDOM_LOADED
+Name: Перевёрнутый волк
+

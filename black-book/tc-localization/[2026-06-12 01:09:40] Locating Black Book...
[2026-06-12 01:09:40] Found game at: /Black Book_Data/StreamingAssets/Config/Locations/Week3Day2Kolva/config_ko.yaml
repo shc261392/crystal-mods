@@ -1,0 +1,8 @@
+﻿Name: 콜바강 근처
+Description: 이 먼지투성이 길은 콜바강을 따라 굽이굽이 이어진다.
+LevelConfig:
+  Battle:
+    Name: 뿌리 초르트
+  BattleAlternative:
+    Name: 뿌리 초르트
+

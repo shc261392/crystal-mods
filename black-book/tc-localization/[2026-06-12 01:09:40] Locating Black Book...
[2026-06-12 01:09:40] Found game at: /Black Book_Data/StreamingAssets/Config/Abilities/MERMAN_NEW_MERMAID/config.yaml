@@ -1,0 +1,24 @@
+﻿Name: Новая русалка
+AbilityType: MERMAN_NEW_MERMAID
+TargetType: ENEMY
+Intention: DEBUFF
+AbilitySpellType: STATUS
+Sprite: MERMAN_NEW_MERMAID
+GoldCost: 8
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Cursed
+  MinValue: 15
+  MaxValue: 15
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 0.200000003
+    SkipReady: true
+- EffectType: STATUS
+  StatusEffectType: Poison
+  MinValue: 2
+  MaxValue: 2
+

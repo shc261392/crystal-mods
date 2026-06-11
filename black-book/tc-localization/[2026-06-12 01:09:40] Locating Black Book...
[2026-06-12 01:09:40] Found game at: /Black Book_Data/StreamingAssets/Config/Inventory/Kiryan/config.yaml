@@ -1,0 +1,10 @@
+﻿Name: Кирьяновский Херувим
+InventoryItemName: Kiryan
+Flavour: У кажного андел-от был. Раньше бы моему анделу портрет-то делали бы.
+Sprite: IconKiryan
+Cost: 150
+Effects:
+  - Value: 7
+    Type: StatusOnBattleStart
+    StatusName: Regeneration
+

@@ -1,0 +1,28 @@
+﻿IdName: Week1Day6Bath1
+Name: Старые бани
+Description: 'В банях часто случаются пожары: топят-то их по-черному. Потому выстроены они на берегу реки. Сейчас тут и заброшенные появились бани.'
+ShortQuestDescr: Вызволить подмененную из бани
+LongQuestDescr: Вы собрали все предметы, которые нужны девушке, чтобы выбраться из власти обдерихи. Осталось добраться до старых бань и вызволить невесту Николая!
+Scene: Sauna
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  Quest:
+    DialogueSystemName: Exploration/Week1/Obderiha/BathFinalIntro
+    IzbaAftermath: Exploration/Week1/Obderiha/IzbaAftermath
+  Exploration: BathFinal
+  MusicOverride: event:/Music/ExploreDark
+RequiredLocations:
+- Week1Day6Kulyash
+LockedAllies:
+- DedEgor
+- DedEgorLoyal
+- Proshka
+- ProshkaLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+ForceAlly: Nikolay
+OnomastikonItems:
+- Onomastikon/Tales/26
+

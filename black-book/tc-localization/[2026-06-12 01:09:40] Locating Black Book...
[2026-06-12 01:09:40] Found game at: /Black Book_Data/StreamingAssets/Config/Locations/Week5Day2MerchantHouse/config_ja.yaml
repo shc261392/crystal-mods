@@ -1,0 +1,6 @@
+﻿Name: 商館
+Description: あの大きな館の近くで何かの騒ぎが起きている。
+LevelConfig:
+  Battle:
+    Name: 死んだ商人
+

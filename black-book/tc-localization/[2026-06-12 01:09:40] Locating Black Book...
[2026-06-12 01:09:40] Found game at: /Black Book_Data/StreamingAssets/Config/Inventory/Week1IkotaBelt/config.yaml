@@ -1,0 +1,8 @@
+﻿Name: Опояска
+InventoryItemName: Week1IkotaBelt
+Description: Один из предметов, необходимых для освобождения девушки из бани
+Flavour: Опояска, которую сшила колдунья по прозвищу Пряха
+Sprite: Week1IkotaBelt
+NotForSale: true
+CanNotBeDropped: true
+

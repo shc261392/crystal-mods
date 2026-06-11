@@ -1,0 +1,13 @@
+﻿IdName: Week5Day3Herbalist
+Name: Травница
+Description: Стоит зайти к местной травнице, пополнить запасы.
+Scene: Village2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Merchants:
+  - HerbalistYoung
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day3/Herbalist/Intro
+RequiredLocations:
+- Week5Day3Forests
+

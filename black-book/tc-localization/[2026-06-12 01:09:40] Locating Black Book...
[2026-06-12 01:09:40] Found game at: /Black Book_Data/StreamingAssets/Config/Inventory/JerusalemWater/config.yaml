@@ -1,0 +1,9 @@
+﻿Name: Иерусалимская вода
+InventoryItemName: JerusalemWater
+Flavour: И очутился той же ночью в Иерусалиме-граде, около церкви Святого Воскресения
+Sprite: JerusalemWater
+Cost: 100
+Effects:
+- Value: 30
+  Type: InventoryItemUseFreeChance
+

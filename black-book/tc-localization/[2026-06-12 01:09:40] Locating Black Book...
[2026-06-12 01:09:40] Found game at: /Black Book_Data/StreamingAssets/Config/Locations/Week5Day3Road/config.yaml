@@ -1,0 +1,21 @@
+﻿IdName: Week5Day3Road
+Name: Дорога на Пянтег
+Description: Отсюда недалеко до села. Но че-то, я чувствую, на дороге местные колдуны бесов оставили.
+Scene: Road
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Бесы на пути
+    Enemies:
+      - Type: SwampFire
+        LevelSpawnPointType: EnemyCenter
+      - Type: WolfHalf
+        LevelSpawnPointType: EnemyLeft
+      - Type: Menqw
+        LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+RequiredLocations:
+- Week5Day3Kozyr
+

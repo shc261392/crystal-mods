@@ -1,0 +1,6 @@
+﻿Name: Werewolf Lair
+Description: The master of the mountain lives here.
+LevelConfig:
+  Battle:
+    Name: Polud-Wolf
+

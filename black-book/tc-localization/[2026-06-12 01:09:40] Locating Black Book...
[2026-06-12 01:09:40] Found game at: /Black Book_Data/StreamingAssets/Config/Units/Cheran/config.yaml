@@ -1,0 +1,24 @@
+﻿AssetName: TransparentUnit
+MultiUnit: Spider
+Health: 999
+Mana: 4
+Initiative: 2
+MoneyMin: 150
+MoneyMax: 180
+Experience: 500
+StartingStatusEffects:
+- StatusEffectType: Curst
+  Duration: 1
+  Permanent: true
+  Unremovable: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: STING_BITE
+    TargetType: ENEMY
+  - AbilityType: SWOLLEN_TONGUE
+    TargetType: ENEMY
+  - AbilityType: EXHAUSTION
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Черань
+

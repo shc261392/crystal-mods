@@ -1,0 +1,14 @@
+﻿Name: Ладан-камень +
+AbilityType: STONE_LADAN_UP
+TargetType: ALL_ALLIES_PLAYER
+Sprite: StoneLadanAbility
+GoldCost: 8
+Effects:
+- EffectType: HEAL
+  MinValue: 4
+  MaxValue: 4
+  VisualEffect:
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpell
+    MissTrigger: AttackSpell
+

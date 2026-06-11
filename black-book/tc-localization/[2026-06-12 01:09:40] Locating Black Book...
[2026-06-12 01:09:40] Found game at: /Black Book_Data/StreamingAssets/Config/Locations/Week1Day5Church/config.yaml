@@ -1,0 +1,18 @@
+﻿IdName: Week1Day5Church
+Name: Троицкая церковь
+Description: Церковь стоит на северном косогоре, самом красивом месте в Вильгорте. Сама она вся белокаменная, даже ночью словно светится. А уж в лучах солнца вся аж сверкает.
+ShortQuestDescr: Получить имя из святцев
+LongQuestDescr: Христианам имена дают священники по святцам, поэтому вы отправились заполучить имя для невесты в Троицкую церковь в Вильгорте.
+LocationType: ATMOSPHERIC_QUEST
+Scene: ChurchVilgort
+LevelConfig:
+  MixerSnapshot: snapshot:/Church
+  Quest:
+    DialogueSystemName: Exploration/Week1/Name/BathNameIntro
+    IzbaAftermath: Exploration/Week1/Name/IzbaAftermath
+  NoExplorationMusic: true
+RequiredLocations:
+- Week1Day5KolvaBridge
+OnomastikonItems:
+- Onomastikon/Encyclopedia/13
+

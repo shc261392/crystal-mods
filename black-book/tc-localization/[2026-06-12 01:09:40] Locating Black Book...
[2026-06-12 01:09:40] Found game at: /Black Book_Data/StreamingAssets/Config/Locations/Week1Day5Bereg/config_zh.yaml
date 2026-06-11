@@ -1,0 +1,7 @@
+﻿Name: 科尔瓦河边
+Description: 去维葛特的路边上就是科尔瓦河，这河的景色不孬。
+ShortQuestDescr: 除掉河谷的魔鬼
+LevelConfig:
+  Battle:
+    Name: 坏同伴
+

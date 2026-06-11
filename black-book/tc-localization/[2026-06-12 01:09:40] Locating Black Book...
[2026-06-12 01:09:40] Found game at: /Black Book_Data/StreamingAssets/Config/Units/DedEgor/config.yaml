@@ -1,0 +1,12 @@
+﻿AssetName: DedEgor
+Health: 9999
+Mana: 7
+Initiative: 2
+UnitAI:
+  AllyActivatedAbility:
+    AbilityType: BAD_EYE_EGOR
+    TargetType: ENEMY
+  AllyActivatedAbilityTimeout: 4
+  CastingType: RANDOM
+Name: Дед Егор
+

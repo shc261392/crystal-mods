@@ -1,0 +1,11 @@
+﻿Name: Калоша Николы
+InventoryItemName: NicolaShoe
+Flavour: В деревне Зеленята скульптура-то все свои мокроступы за год изнашивает. Молятся на них.
+Sprite: IconNicolaShoe
+Cost: 150
+Effects:
+  - Value: 1
+    Type: StatusOnBattleStart
+    StatusName: Prayer
+  - Value: 5
+    Type: HealOnBattleStart

@@ -1,0 +1,47 @@
+﻿IdName: Week6Day1Corridor
+Name: Коридор
+Description: Совсем близко! Осталось через этот длинный коридор пробраться.
+Scene: AlexManorGallery
+LevelConfig:
+  MixerSnapshot: snapshot:/Church
+  Battle:
+    Name: Коридорные шишиги
+    Enemies:
+    - Type: DemonPuzzle2
+      LevelSpawnPointType: EnemyCenter
+      HealthOverride: 8
+    - Type: DemonPuzzle2
+      HealthOverride: 24
+    - Type: DemonPuzzle2
+      LevelSpawnPointType: EnemyRight
+      HealthOverride: 18
+    NoShuffle: true
+    PuzzleDeck:
+    - PEREPOLOH
+    - UBEITSA
+    - SNAKE_HEAD
+    - URAZI
+    - URAZI
+    - AVOIL
+    - TOMASHIHA
+    - RUDA
+    - WORMS
+    - LOCK
+    - LOCK
+    - IGLA
+    PuzzleManaOverride:
+    - 3
+    - 2
+    PuzzleHandOverride:
+    - 4
+    - 3
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 1
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day1/Corridor/Intro2
+  MusicOverride: event:/Music/AlexanderManor
+RequiredLocations:
+- Week6Day1Atrium
+HideBook: true
+

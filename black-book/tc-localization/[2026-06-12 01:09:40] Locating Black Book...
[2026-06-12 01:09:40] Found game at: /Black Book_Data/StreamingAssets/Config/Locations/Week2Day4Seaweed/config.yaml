@@ -1,0 +1,18 @@
+﻿IdName: Week2Day4Seaweed
+Name: Заросли водорослей
+Description: Тут словно лес дремучий. Не меньше, чем у нас под Вильгортом.
+Scene: LakeBottom
+LevelConfig:
+  Battle:
+    Name: Донная нечисть
+    Enemies:
+    - Type: Drowner
+      LevelSpawnPointType: EnemyCenter
+    - Type: Demon
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day4/Seaweed
+  MusicOverride: event:/Music/Underwater
+  MixerSnapshot: snapshot:/Underwater
+

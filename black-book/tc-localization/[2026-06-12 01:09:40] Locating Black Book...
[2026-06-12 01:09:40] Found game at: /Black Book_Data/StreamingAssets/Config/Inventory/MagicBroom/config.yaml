@@ -1,0 +1,10 @@
+﻿Name: Пареник
+InventoryItemName: MagicBroom
+Flavour: Пареник брали и обдёргивали. А листочки клали в гроб
+Sprite: MagicBroom
+Cost: 100
+Effects:
+- Value: 2
+  Type: StatusBonus
+  StatusName: Regeneration
+

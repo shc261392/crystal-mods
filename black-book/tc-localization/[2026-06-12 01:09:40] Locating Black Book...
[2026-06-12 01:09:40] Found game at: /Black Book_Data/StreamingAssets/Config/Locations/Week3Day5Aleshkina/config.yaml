@@ -1,0 +1,20 @@
+﻿IdName: Week3Day5Aleshkina
+Name: Деревня Алешкино
+Description: Нужно найти Александра. Ему это с рук не сойдет!
+ShortQuestDescr: Найти Александра
+Scene: Village3
+LevelConfig:
+  Battle:
+    Name: Колодезный
+    Enemies:
+    - Type: Domovoi
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day5/Aleshkina/Intro
+    Outro: TextQuest/Week3/Day5/Aleshkina/Outro
+RequiredLocations:
+- Week3Day5Knijih
+Secondary: Week3Day5Aleshkina
+

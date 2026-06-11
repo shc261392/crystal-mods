@@ -1,0 +1,6 @@
+﻿Name: 火湖
+Description: 前方有一缕一缕的光亮，不过我感觉那边有邪恶的气息。
+LevelConfig:
+  Battle:
+    Name: 输送装置
+

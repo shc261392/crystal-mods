@@ -1,0 +1,6 @@
+﻿Name: Eastern Swamp
+Description: The source of the Vishera has turned into a swamp. Swamps have always been evil places. This place even more so.
+LevelConfig:
+  Battle:
+    Name: Half-Wolf
+

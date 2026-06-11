@@ -1,0 +1,11 @@
+﻿Name: Плакун-трава
+InventoryItemName: CryingHerb
+Type: Herb
+Flavour: Плакун, плакун! Плакал ты долго и много, а выплакал мало. 
+Sprite: CryingHerb
+Expendable: true
+Cost: 34
+Effects:
+- Value: 1
+  Type: RemoveHarmfulStatus
+

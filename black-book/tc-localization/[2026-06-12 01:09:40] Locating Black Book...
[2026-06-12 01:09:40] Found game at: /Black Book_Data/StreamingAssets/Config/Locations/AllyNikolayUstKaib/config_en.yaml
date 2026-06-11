@@ -1,0 +1,7 @@
+﻿Name: Ust-Kayib
+Description: Old Egor hid his herb stash somewhere here. With his directions, I should have no trouble finding it!
+ShortQuestDescr: Take Egor's herbs
+LevelConfig:
+  Battle:
+    Name: Egor's Stash
+

@@ -1,0 +1,12 @@
+﻿IdName: Week4Day2FlockField
+Name: Поля Юйволадор
+Description: Хоть Немзя и закрыта бесами, а жить-то надо. Крестьяне работы продолжают на этом поле. Ночная северная сторона, если по-русски-то.
+Scene: FieldEvening
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day2/FlockField
+  CameraOverride: CMQuestCamera1
+LightingType: FOG_3
+RequiredLocations:
+  - Week4Day2GrowingWoods

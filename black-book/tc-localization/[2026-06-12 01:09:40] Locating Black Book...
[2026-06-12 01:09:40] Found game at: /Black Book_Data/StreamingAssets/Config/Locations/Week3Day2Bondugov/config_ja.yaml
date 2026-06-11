@@ -1,0 +1,7 @@
+﻿Name: ボンジュゴフ平原
+Description: 蛇は南の平原に向かって飛んでいった。急がないと！
+ShortQuestDescr: 蛇を捕まえる
+LevelConfig:
+  Battle:
+    Name: 火の蛇
+

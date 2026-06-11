@@ -1,0 +1,24 @@
+﻿Name: Гнилая кора
+AbilityType: OLD_CHANGELING_PUZZLE_WASTE
+TargetType: ENEMY
+Intention: DEBUFF
+AbilitySpellType: STATUS
+Sprite: OLD_CHANGELING_PUZZLE_WASTE
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Decomposure
+  MinValue: 999
+  MaxValue: 999
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 0.100000001
+    SkipReady: true
+- EffectType: STATUS
+  StatusEffectType: Waste
+  MinValue: 999
+  MaxValue: 999
+

@@ -1,0 +1,1 @@
+Name: Приказы ISkillName: RoguelikeOrders1Sprite: Orders1SkillDescription: Получите дополнительное слово с приказом каждый ход в вашу рукуRequiredSkills:  - AbilityKAINEffects:- Value: 1  Type: AdditionalBookmarkOrder

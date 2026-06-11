@@ -1,0 +1,11 @@
+﻿Name: Помощь святых II
+SkillName: HelpOfSaints2
+Sprite: HelpOfSaints2Skill
+Description: Увеличивает защиту в словах еще на {CalculatedEffect}
+RequiredSkills:
+- HelpOfSaints1
+Effects:
+- Value: 1
+  Type: AdditionalDefence
+Level: 9
+

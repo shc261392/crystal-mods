@@ -1,0 +1,6 @@
+﻿Name: 古怪的山沟
+Description: 雾这么大，我得多小心，不小心掉山沟里就坏了。
+LevelConfig:
+  Battle:
+    Name: 雾中雠特
+

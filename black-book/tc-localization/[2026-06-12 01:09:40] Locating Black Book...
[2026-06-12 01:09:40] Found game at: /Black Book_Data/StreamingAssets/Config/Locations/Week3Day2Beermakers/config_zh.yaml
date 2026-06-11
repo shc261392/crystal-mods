@@ -1,0 +1,8 @@
+﻿Name: 河边酿酒
+Description: 河边口大锅，正在咕嘟咕嘟煮啤酒的原料。
+ShortQuestDescr: 解除啤酒诅咒
+LongQuestDescr: 新娘的娘家雇人在河边酿婚礼用的啤酒，有人却对啤酒下了诅咒。会不会是奥捷莉哈干的？
+LevelConfig:
+  Battle:
+    Name: 啤酒诅咒
+

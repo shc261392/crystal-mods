@@ -1,0 +1,10 @@
+Name: UGASIIL
+SkillName: AbilityUGASIIL
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityABEL
+SpriteOffsetX: -55.8
+SpriteOffsetY: -55.8
+Effects:
+- Type: AbilityUnlock
+  StringData: UGASIIL

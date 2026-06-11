@@ -1,0 +1,11 @@
+﻿IdName: Week4Day1Village
+Name: Деревня в лесу
+Scene: LostVillage
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day1/Map3/Village/Intro
+  Exploration: Week4Day1Village
+  CinematicIntro: true
+  NoExplorerSpawn: true
+

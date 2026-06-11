@@ -1,0 +1,5 @@
+﻿Unique: true
+Name: Урон при получении защиты
+Description: Наносит {Duration} <sprite name="Damage"> случайному врагу при получении защиты
+Sprite: StatusShieldUp
+

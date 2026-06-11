@@ -1,0 +1,7 @@
+﻿Name: Kotjil Lake
+Description: In the forest near Lake Kotjil, some boys from Vilgort spotted a strange clearing. They say it's full of dug-up pits. Maybe someone was looking for something? I should investigate.
+ShortQuestDescr: Examine the old pits
+LevelConfig:
+  Battle:
+    Name: Ghost of an Old Pit
+

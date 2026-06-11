@@ -1,0 +1,9 @@
+﻿Name: Стреляная икона
+InventoryItemName: IconShot
+Flavour: Отхлестал ту икону-то розгами, чтоб служила лучше!
+Sprite: IconShot
+Cost: 70
+Effects:
+- Value: 2
+  Type: ReduceDemons
+

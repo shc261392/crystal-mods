@@ -1,0 +1,6 @@
+﻿Name: 해초 숲
+Description: 빌고르트 근처에 있는 곳만큼이나 무성한 숲이다.
+LevelConfig:
+  Battle:
+    Name: 어두컴컴한 정령
+

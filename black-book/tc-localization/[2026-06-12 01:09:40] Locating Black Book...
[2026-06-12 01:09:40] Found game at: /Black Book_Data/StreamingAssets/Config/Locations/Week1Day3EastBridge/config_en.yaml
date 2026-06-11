@@ -1,0 +1,7 @@
+﻿Name: Eastern Bridge
+Description: You can get to the swamps from the east via this bridge, conveniently called the Eastern Bridge. They say people hear strange noises at night over there. I should check it out.
+ShortQuestDescr: Walk the Eastern Bridge
+LevelConfig:
+  Battle:
+    Name: Demon and Sinner
+

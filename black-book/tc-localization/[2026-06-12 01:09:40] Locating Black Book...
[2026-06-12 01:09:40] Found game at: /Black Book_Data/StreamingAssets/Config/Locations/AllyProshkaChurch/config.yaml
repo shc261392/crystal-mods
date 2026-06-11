@@ -1,0 +1,27 @@
+﻿IdName: AllyProshkaChurch
+Name: Преображенская церковь
+Description: Старые церкви хранят много тайн. И, похоже, Преображенская рассказала еще не все свои секреты.
+ShortQuestDescr: Узнать о прошлом Прошки
+LongQuestDescr: Ваша кот-икота уже несколько дней тщетно пытается вспомнить о своем прошлом. Кажется, подвал янидорской церкви может скрывать напоминания о суседстве Прошки. Был ли он из чудского племени, или так и уродился нечистой силой?
+Scene: ChurchOld
+LevelConfig:
+  Quest:
+    IzbaAftermath: TextQuest/AllyProshka/IzbaAftermath
+  Exploration: AllyProshkaChurch
+  CinematicIntro: true
+  CameraOverride: CMProshkaEntryCamera
+  DialogueBgOverride: PlanksLow
+  MusicOverride: event:/Music/Proshka
+RequiredLocations:
+- AllyProshkaSwamps
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+ForceAlly: Proshka
+

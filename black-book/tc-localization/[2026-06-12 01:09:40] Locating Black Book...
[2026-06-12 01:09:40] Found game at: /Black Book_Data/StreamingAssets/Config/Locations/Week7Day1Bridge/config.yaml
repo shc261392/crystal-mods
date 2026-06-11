@@ -1,0 +1,28 @@
+﻿IdName: Week7Day1Bridge
+Name: Мост шириною в волос
+Description: Над пылающей пропастью раскинулись различные мосты, все разной ширины. Какой мне-то достанется?
+Scene: HellBridge
+LevelConfig:
+  Battle:
+    Name: Эндель-ду!
+    Enemies:
+    - Type: DemonPimped
+      LevelSpawnPointType: EnemyCenter
+    UnitsForResourceWarmup:
+      - Type: DemonButcher
+      - Type: DemonSpiked
+      - Type: DemonHealer
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week7/Day1/Bridge/Intro
+    Outro: TextQuest/Week7/Day1/Bridge/Outro
+  Exploration: Week7Day1Bridge
+  CinematicIntro: true
+  NoExplorerSpawn: true
+  MixerSnapshot: snapshot:/Cave
+  NoExplorationMusic: true
+RequiredLocations:
+- Week7Day1GatesOfHell
+OnomastikonItems:
+  - Onomastikon/Encyclopedia/66

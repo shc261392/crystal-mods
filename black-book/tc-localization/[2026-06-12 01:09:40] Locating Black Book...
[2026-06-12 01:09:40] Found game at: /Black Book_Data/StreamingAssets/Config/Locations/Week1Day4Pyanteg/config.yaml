@@ -1,0 +1,15 @@
+﻿IdName: Week1Day4Pyanteg
+Name: Село Пянтег
+Description: 'Это село богатое, большое. Центр Пянтежской волости. Тут церковь есть старая, Богоявленская. Про нее много че говорят: мол, блазнит там. А есть и новая, Ильи Пророка.'
+Scene: Village
+LevelConfig:
+  MusicOverride: event:/Music/ExploreLight
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Singers/Singers2/Intro
+RequiredLocations:
+- Week1Day4Vilisova
+Secondary: Week1Day4Geltov
+OnomastikonItems:
+- Onomastikon/Songs/9
+

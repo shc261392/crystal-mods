@@ -1,0 +1,10 @@
+Name: SNAKE_STING
+SkillName: AbilitySNAKE_STING
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityDEMON_WIZARD
+SpriteOffsetX: 33.1
+SpriteOffsetY: 22.3
+Effects:
+- Type: AbilityUnlock
+  StringData: SNAKE_STING

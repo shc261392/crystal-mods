@@ -1,0 +1,6 @@
+﻿Name: 漁網
+Description: 漁師が仕掛けた網がある。私を助けてくれた漁師と同じ人かもしれない。
+LevelConfig:
+  Battle:
+    Name: 淀みの魔物
+

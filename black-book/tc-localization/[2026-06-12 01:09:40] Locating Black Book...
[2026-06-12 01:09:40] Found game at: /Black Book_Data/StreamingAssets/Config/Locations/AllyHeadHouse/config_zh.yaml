@@ -1,0 +1,8 @@
+﻿Name: 列翁季的家
+Description: 这是列翁季的伊兹巴。有意思，不知道里边还有啥，有人吗？
+ShortQuestDescr: 教列翁季飞
+LongQuestDescr: 老异尸想到重获行动能力的办法。他要找到藏在自己伊兹巴的克拉捷聂，然后把他吃掉。
+LevelConfig:
+  Battle:
+    Name: 克拉捷聂
+

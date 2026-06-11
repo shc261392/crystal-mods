@@ -1,0 +1,9 @@
+﻿Name: Rusalka's Backwater
+Description: "This picturesque backwater got its name because of the mermaid sightings back in the day. I've never seen any myself, though. "
+ShortQuestDescr: Drive off the serpents
+LevelConfig:
+  Battle:
+    Name: Serpents of Rusalka Waters
+  BattleAlternative:
+    Name: Serpents of Rusalka Waters
+

@@ -1,0 +1,7 @@
+﻿Name: 보네프 숲의 길
+Description: 이 아름다운 숲에는 빌고르트로 가는 길이 지나간다. 농부들은 그 길에 귀신이 씌었다고 주장한다. 그 길을 확인하고 악마가 있으면 퇴치해야 한다.
+ShortQuestDescr: 보네프 길 확인하기
+LevelConfig:
+  Battle:
+    Name: 악마 무리
+

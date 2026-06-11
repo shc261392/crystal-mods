@@ -1,0 +1,10 @@
+﻿Name: Ожег
+InventoryItemName: BurntStick
+Flavour: "В Рождество гадали: надо было ожегом чертиться, а в баню-то идти страшно, а поворожить-то охота."
+Sprite: IconBurntStick
+Cost: 220
+Effects:
+  - Value: 3
+    Type: StatusOnBattleStart
+    StatusName: DefenceKeep
+

@@ -1,0 +1,6 @@
+﻿Name: Cherdyn High Road
+Description: This road is a wide one. I've rarely walked down one this big!
+LevelConfig:
+  Battle:
+    Name: Chort Swarm
+

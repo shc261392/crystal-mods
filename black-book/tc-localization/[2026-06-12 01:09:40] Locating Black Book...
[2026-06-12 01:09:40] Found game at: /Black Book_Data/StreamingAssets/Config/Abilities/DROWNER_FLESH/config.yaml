@@ -1,0 +1,17 @@
+﻿Name: Лишняя плоть
+AbilityType: DROWNER_FLESH
+TargetType: ALLY
+Intention: DEFENCE
+Sprite: DROWNER_FLESH
+GoldCost: 3
+Effects:
+- EffectType: DEFENCE
+  MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+

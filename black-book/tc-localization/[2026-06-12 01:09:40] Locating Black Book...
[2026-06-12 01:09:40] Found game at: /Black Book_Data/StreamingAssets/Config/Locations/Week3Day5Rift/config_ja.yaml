@@ -1,0 +1,6 @@
+﻿Name: アンフィロフの崖
+Description: 崖には魔物が出るという。地獄の炎により近い場所だからだろうか？
+LevelConfig:
+  Battle:
+    Name: 古代の霊
+

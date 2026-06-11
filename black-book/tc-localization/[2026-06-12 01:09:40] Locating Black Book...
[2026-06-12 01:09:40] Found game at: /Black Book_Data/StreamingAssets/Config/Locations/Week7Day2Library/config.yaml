@@ -1,0 +1,10 @@
+﻿IdName: Week7Day2Library
+Name: Дворцовая библиотека
+Scene: HellLostPalace
+LevelConfig:
+  MusicOverride: event:/Music/ExploreDark2
+  MixerSnapshot: snapshot:/Church
+  Quest:
+    DialogueSystemName: TextQuest/Week7/Day2/PalaceLibrary/Intro
+OnomastikonItems:
+  - Onomastikon/Encyclopedia/2

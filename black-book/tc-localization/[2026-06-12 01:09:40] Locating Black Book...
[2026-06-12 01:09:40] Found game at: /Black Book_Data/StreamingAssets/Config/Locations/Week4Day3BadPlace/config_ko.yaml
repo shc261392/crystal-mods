@@ -1,0 +1,6 @@
+﻿Name: 사악한 곳
+Description: 이 끔찍한 곳은 어떤 고대 악령의 거처라는 예감이 든다.
+LevelConfig:
+  Battle:
+    Name: 사악한 초르트
+

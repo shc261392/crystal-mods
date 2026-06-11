@@ -1,0 +1,23 @@
+﻿AssetName: Tkachiha
+Health: 200
+Mana: 4
+Initiative: 2
+MoneyMin: 150
+MoneyMax: 180
+Experience: 1000
+StartingStatusEffects:
+- StatusEffectType: AttackAbsorb
+  Duration: 3
+  Permanent: true
+  Unremovable: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: TAINTED_TOW
+    TargetType: ENEMY
+  - AbilityType: OLD_TRICK
+    TargetType: ENEMY
+  - AbilityType: SPIN_SPINDLE
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Ткачиха
+

@@ -1,0 +1,12 @@
+﻿IdName: Week1Day4Girl
+Name: Дорога на Пянтег
+Description: В болота эти мало кто захаживает. Места человеком не обжитые, а значит, заселила их всяческая нечисть.
+Scene: Forest_3
+LevelConfig:
+  MusicOverride: event:/Music/Explore2
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day4/Girl/Intro
+RequiredLocations:
+- Week1Day4UstUrol
+

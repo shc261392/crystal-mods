@@ -1,0 +1,6 @@
+﻿Name: レトキン村近くの墓地
+Description: 小さな村だが、村人のための墓地がある。魔物を捕まえられるかもしれないから調べてみよう。
+LevelConfig:
+  Battle:
+    Name: 墓荒らし
+

@@ -1,0 +1,9 @@
+﻿Name: Красная нить
+InventoryItemName: RedThread
+Flavour: Игла служит, пока уши, а люди, пока души
+Sprite: RedThread
+Cost: 100
+Effects:
+- Value: 3
+  Type: AdditionalHeal
+

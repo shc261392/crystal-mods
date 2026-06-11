@@ -1,0 +1,8 @@
+﻿Name: 老窝附近
+Description: 我以前夜会见过一个彼尔姆的人，听他说了泼留德和科齐姆打仗的故事。两边一个劲儿拿石头砸对家头，最后天神把两边都变成大山了。
+ShortQuestDescr: 拯救宾客
+LongQuestDescr: 狼人看样子是让泼留德森林的列希给引走了。我得去救他们，要不然他们就都得彻底变成野兽。
+LevelConfig:
+  Battle:
+    Name: 狼人
+

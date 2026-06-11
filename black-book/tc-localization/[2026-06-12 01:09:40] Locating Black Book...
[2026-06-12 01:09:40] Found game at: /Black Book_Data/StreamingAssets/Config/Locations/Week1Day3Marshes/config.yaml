@@ -1,0 +1,20 @@
+﻿IdName: Week1Day3Marshes
+Name: Люльвинские болота
+Description: Рядом с селом Янидорским раскинулись красивые Люльвинские болота. Опасно там, да дед Егор говорит, что черти там водятся. А значит, могу я их изловить для книги.
+ShortQuestDescr: Изловить черта на болотах
+Scene: Marshes2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Черти болотные
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyCenter
+    - Type: Demon
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day3/Marshes
+RequiredLocations:
+- Week1Day3EastBridge
+

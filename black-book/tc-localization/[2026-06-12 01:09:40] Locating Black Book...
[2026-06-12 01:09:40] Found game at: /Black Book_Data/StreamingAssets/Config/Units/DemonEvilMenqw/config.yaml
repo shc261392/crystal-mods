@@ -1,0 +1,23 @@
+﻿AssetName: DemonEvilMenqw
+Health: 57
+HealthRandomAdd: 30
+Mana: 4
+Initiative: 1
+MoneyMin: 30
+MoneyMax: 42
+Experience: 300
+StartingStatusEffects:
+  - StatusEffectType: UnitScale
+    Duration: 1
+    Permanent: true
+UnitAI:
+  AIAbilities:
+    - AbilityType: HELL_RISE
+      TargetType: SELF
+    - AbilityType: FORGOTTEN_BLOW
+      TargetType: ENEMY
+    - AbilityType: ROTTEN_WATER
+      TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Осатанелый менкв
+

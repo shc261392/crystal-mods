@@ -1,0 +1,22 @@
+﻿Name: Иудова осина
+AbilityType: OSINA_JUDAS
+AbilityBookPartType: KEY
+Upgrade: OSINA_JUDAS_UP
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: OSINA_JUDAS
+GoldCost: 77
+Effects:
+- EffectType: STATUS
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal6OrderWhite
+    MissTrigger: Seal6OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: Untouchable
+- EffectType: KRADA

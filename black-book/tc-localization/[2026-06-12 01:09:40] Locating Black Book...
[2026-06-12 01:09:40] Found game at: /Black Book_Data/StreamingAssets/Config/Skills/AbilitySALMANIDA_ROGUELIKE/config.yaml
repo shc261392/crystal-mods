@@ -1,0 +1,8 @@
+Name: SALMANIDA_ROGUELIKE
+SkillName: AbilitySALMANIDA_ROGUELIKE
+Sprite: ConfusedDirectionsSkill
+SpriteOffsetX: -11
+SpriteOffsetY: 30
+Effects:
+- Type: AbilityUnlock
+  StringData: SALMANIDA_ROGUELIKE

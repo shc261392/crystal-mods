@@ -1,0 +1,10 @@
+﻿Name: Приказы II
+SkillName: Orders2
+Sprite: Orders2Skill
+Description: Получите дополнительное слово с приказом каждый ход в вашу руку
+RequiredSkills:
+- Orders1
+Effects:
+- Value: 1
+  Type: AdditionalBookmarkOrder
+

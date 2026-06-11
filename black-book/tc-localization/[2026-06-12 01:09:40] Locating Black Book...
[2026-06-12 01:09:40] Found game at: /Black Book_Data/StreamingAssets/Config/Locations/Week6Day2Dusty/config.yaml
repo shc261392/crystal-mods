@@ -1,0 +1,15 @@
+﻿IdName: Week6Day2Dusty
+Name: Пыльный закуток
+Description: Какая-то тропа нехоженая. Стоит ли туда суваться-то?
+Scene: TkachihaEntry
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day2/Dusty/Intro
+  Exploration: Week6Day2Dusty
+  CameraOverride: CMTonelsCamera1
+  MusicOverride: event:/Music/ExploreDark2
+RequiredLocations:
+- Week6Day2Crawl
+HideBook: true
+

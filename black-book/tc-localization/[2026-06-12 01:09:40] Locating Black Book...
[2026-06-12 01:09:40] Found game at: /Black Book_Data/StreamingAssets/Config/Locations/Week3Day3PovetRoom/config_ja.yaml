@@ -1,0 +1,6 @@
+﻿Name: 屋根裏部屋
+Description: 魔物はおしなべて屋根裏に隠れることを好む。念のため、確認しておこう。
+LevelConfig:
+  Battle:
+    Name: ドモヴォーイ
+

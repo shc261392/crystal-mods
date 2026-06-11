@@ -1,0 +1,6 @@
+﻿Name: 야니도르로 가는 길
+Description: 이 길은 동쪽의 빌고르트로 이어진다. 빌고르트에서 야니도르까지는 금방이다.
+LevelConfig:
+  Battle:
+    Name: 어둠 속 수수께끼
+

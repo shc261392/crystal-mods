@@ -1,0 +1,13 @@
+﻿IdName: Week1Day2Zapolskih
+Name: Усадьба Запольских
+Description: Рядом с усадьбой богатого мужика Запольского образовалась своя вроде как деревня. Пока ей название не дали, так и зовут по фамилии Запольских. Так себе название.
+Scene: Village
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Singers/Singers1/Intro
+RequiredLocations:
+- Week1Day2OzeroKotjil
+OnomastikonItems:
+- Onomastikon/Songs/12
+

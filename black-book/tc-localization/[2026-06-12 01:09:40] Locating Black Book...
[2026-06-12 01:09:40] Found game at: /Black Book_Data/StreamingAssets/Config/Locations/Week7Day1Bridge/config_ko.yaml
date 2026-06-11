@@ -1,0 +1,6 @@
+﻿Name: 실낱같은 다리
+Description: 불타는 균열 위로 너비가 제각각인 다리들이 다양하게 걸쳐져 있다. 어떤 다리를 선택해야 할까?
+LevelConfig:
+  Battle:
+    Name: 옌델두!
+

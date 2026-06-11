@@ -1,0 +1,33 @@
+﻿IdName: Week6Day3Field
+Name: Поле
+Description: Если я на поле-то взлечу, все видно мне будет, весь уезд Чердынский!
+Scene: FinalFight
+LevelConfig:
+#  Quest:
+#    Outro: TextQuest/Week6/Day3/Field/PreBattle
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Дед Егор
+    Enemies:
+    - Type: DedEgor1
+      LevelSpawnPointType: EnemyCenter
+    Barks:
+    - Id: Battle/DedEgorPhase1/First
+      HealthPercent: 0.800000012
+      TargetUnit: DedEgor1
+    - Id: Battle/DedEgorPhase1/Second
+      HealthPercent: 0.300000012
+      TargetUnit: DedEgor1
+    WinCutscene: Week6Day3Battle1Win
+    EnemyKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/FinalBattle
+      SoundParam:
+        Name: FinalBattlePart
+        Value: 2
+  Exploration: Week6Day3Field
+  CinematicIntro: true
+  NoExplorationMusic: true
+  NoExplorerSpawn: true
+

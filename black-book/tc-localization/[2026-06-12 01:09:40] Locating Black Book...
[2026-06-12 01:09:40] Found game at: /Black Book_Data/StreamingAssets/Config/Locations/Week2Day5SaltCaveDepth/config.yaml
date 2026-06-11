@@ -1,0 +1,14 @@
+﻿IdName: Week2Day5SaltCaveDepth
+Name: В недрах пещеры
+Description: Узкий лаз ведет в мрачные глубины этой пещеры.
+ShortQuestDescr: Проникнуть вглубь пещеры
+Scene: SaltCave
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day5/Cave/AltarIntro
+  MusicOverride: event:/Music/Underwater
+  MixerSnapshot: snapshot:/Underwater
+RequiredLocations:
+- Week2Day5SaltCave
+Secondary: Week2Day5SaltCaveDepth
+

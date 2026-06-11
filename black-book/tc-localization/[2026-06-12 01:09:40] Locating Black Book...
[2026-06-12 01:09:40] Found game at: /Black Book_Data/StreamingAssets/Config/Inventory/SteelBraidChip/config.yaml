@@ -1,0 +1,9 @@
+﻿Name: Обломок стальной косы
+InventoryItemName: SteelBraidChip
+Flavour: Воткнешь под матицу обломок литовки – никакая нечисть не пристанет к дому
+Sprite: SteelBraidChip
+Cost: 140
+Effects:
+- Value: 1
+  Type: AdditionalDefence
+

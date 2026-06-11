@@ -1,0 +1,16 @@
+﻿IdName: Week4Day3RiverBank
+Name: Берег Глухой Вильвы
+Description: Этой рекой ограничиваются владения Лешего. Дальше хода нет
+ShortQuestDescr: Призрак на том берегу
+Scene: River1
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day3/RiverBank
+LightingType: FOG_2
+RequiredLocations:
+- Week4Day3DarkForest
+OnomastikonItems:
+- Onomastikon/Encyclopedia/21
+

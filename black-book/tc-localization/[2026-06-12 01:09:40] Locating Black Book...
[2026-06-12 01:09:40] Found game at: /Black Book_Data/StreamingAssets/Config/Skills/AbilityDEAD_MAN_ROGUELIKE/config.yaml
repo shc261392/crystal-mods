@@ -1,0 +1,10 @@
+Name: DEAD_MAN_ROGUELIKE
+SkillName: AbilityDEAD_MAN_ROGUELIKE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilitySKORCHEN
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: DEAD_MAN_ROGUELIKE

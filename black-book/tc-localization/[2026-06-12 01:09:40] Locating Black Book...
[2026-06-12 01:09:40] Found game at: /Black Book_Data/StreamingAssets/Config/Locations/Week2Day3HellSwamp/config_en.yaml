@@ -1,0 +1,6 @@
+﻿Name: Hell's Swamp
+Description: The area near the lake floods often. A swamp has formed here.
+LevelConfig:
+  Battle:
+    Name: Drowners
+

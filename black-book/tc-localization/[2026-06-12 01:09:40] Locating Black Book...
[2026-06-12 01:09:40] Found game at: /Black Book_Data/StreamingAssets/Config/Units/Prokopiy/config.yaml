@@ -1,0 +1,23 @@
+﻿AssetName: Prokopiy
+Health: 350
+Mana: 4
+Initiative: 1
+MoneyMin: 30
+MoneyMax: 60
+Experience: 700
+StartingStatusEffects:
+- StatusEffectType: Sorcerer
+  Duration: 999999
+  Permanent: true
+  Unremovable: true
+- StatusEffectType: DefenceGive
+  Duration: 50
+UnitAI:
+  AIAbilities:
+  - AbilityType: PROKOPIY_DEFENCE
+    TargetType: SELF
+  - AbilityType: KILA_BLACK
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Прокопий
+

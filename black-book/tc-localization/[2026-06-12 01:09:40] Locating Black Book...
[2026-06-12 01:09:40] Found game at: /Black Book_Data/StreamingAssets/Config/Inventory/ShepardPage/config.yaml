@@ -1,0 +1,9 @@
+﻿Name: Пастушья грамота
+InventoryItemName: ShepardPage
+Flavour: Прозьба на леснова царя. Не будешь пасти – буду большому подавать, Митрофану Митрофановичу
+Sprite: ShepardPage
+Cost: 140
+Effects:
+- Value: 2
+  Type: ReduceDamage
+

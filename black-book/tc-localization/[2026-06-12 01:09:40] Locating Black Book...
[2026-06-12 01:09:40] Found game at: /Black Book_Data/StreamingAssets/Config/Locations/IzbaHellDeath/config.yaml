@@ -1,0 +1,33 @@
+IdName: IzbaHellDeath
+Name: Обитель смерти
+Scene: HellDeathIzba
+IsIzba: true
+ForbiddenSpawnAllies:
+  - DedEgor
+  - DedEgorLoyal
+  - Nikolay
+  - NikolayLoyal
+  - Proshka
+  - ProshkaLoyal
+  - WhiteHead
+  - WhiteHeadLoyal
+  - Karnysh
+  - KarnyshLoyal
+AdditionalIzbaFoolPlayers:
+  - Sitri
+  - Demon
+  - Mikolko
+  - Andropko
+LevelConfig:
+  Exploration: IzbaHellDeath
+  CinematicIntro: true
+  CameraOverride: CMIzbaCamera
+  NoExplorerSpawn: true
+  SpecialLevel: true
+  MusicOverride: "event:/Music/IzbaHell"
+  IzbaJingleOverride: "event:/Music/ComingBackHell"
+  IzbaReceiveSoundOverride: "event:/Misc/VisitorHell"
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 4
+  MixerSnapshot: snapshot:/Cave

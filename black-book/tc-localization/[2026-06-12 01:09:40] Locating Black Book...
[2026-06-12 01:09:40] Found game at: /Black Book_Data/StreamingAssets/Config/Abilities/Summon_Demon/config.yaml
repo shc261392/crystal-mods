@@ -1,0 +1,16 @@
+﻿Name: Призвать черта
+AbilityType: SUMMON_DEMON
+TargetType: SELF
+Description: >
+  Призвать черта
+AbilitySpellType: SUMMON
+Sprite: SummonDemonAbility
+GoldCost: 3
+Effects:
+- EffectType: SUMMON
+  MinValue: 1
+  MaxValue: 1
+  SummonEffectData:
+    UnitTypes:
+    - Demon
+

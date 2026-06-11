@@ -1,0 +1,20 @@
+{
+  "id": "tc-localization",
+  "name": "Traditional Chinese Localization",
+  "game": "black-book",
+  "version": "1.0.0",
+  "author": "Community",
+  "category": "Localization",
+  "description": "Traditional Chinese (繁體中文) localization mod for Black Book. Replaces game UI text assets with TC translations using Noto Sans TC font support.",
+  "platforms": ["windows", "linux-proton"],
+  "supportedVersions": ["1.0"],
+  "locale": "zh-TW",
+  "vortex": {
+    "extensionId": "game-black-book",
+    "extensionPath": "../vortex-ext/game-black-book"
+  },
+  "links": {
+    "nexus": "https://www.nexusmods.com/blackbook/mods/xxxx",
+    "source": "https://github.com/shc261392/crystal-mods/tree/main/black-book/tc-localization"
+  }
+}

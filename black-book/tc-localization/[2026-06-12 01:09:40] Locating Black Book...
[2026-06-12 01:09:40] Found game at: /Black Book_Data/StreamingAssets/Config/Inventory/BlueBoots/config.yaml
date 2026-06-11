@@ -1,0 +1,12 @@
+﻿Name: Синие сапоги
+InventoryItemName: BlueBoots
+Flavour: Кожаные сапоги странного цвета. Сплошь покрыты растительными узорами.
+Sprite: BlueBoots
+Cost: 140
+Effects:
+- Value: 1
+  Type: StatusImmunity
+  StatusName: Immunity
+  StringData: Waste
+  StatusPermanent: true
+  StatusUnremovable: true

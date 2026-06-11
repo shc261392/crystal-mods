@@ -1,0 +1,16 @@
+﻿Name: Ветер-Моисей +
+AbilityType: WIND_MOSES_UP
+TargetType: SELF
+Description: "Увеличивает защиту на {MinValue} \nОткрывает случайную страницу"
+Sprite: WindMosesAbility
+GoldCost: 7
+Effects:
+- EffectType: DEFENCE
+  MinValue: 4
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+- EffectType: PAGE_RANDOM
+

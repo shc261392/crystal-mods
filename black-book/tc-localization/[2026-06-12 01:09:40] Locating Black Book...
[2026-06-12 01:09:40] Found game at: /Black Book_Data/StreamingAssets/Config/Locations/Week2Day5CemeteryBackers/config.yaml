@@ -1,0 +1,12 @@
+﻿IdName: Week2Day5CemeteryBackers
+Name: Пещерное кладбище
+Scene: DrownCemetery2
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day5/Cemetery/Intro
+  Exploration: Week2Day5CemeteryBackers
+  MusicOverride: event:/Music/Underwater
+  MixerSnapshot: snapshot:/Underwater
+RequiredLocations:
+- Week2Day5Seaweed
+

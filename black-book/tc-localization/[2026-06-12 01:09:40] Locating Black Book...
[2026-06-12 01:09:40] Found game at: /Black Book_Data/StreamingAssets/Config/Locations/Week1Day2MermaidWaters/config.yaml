@@ -1,0 +1,27 @@
+﻿IdName: Week1Day2MermaidWaters
+Name: Русалья заводь
+Description: Эта живописная заводь получила свое название оттого, что тут когда-то видели русалок. Я сколько живу, ни разу не встречала.
+ShortQuestDescr: Избавиться от змей в русальей заводи
+Scene: Backwater
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Змеи в русальей заводи
+    Enemies:
+    - Type: SnakeGaduka
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  BattleAlternative:
+    Name: Змеи в русальей заводи
+    Enemies:
+    - Type: SnakeGaduka
+      LevelSpawnPointType: EnemyCenter
+    - Type: SnakeGaduka
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day2/MermaidWaters
+RequiredLocations:
+- Week1Day2Izba
+

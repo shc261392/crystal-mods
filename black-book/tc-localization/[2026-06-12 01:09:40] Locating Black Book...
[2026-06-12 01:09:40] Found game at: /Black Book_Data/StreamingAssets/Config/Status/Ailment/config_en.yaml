@@ -1,0 +1,3 @@
+﻿Name: Ailment
+Description: Increases <sprite name="Damage"> received by enemy for {Duration}
+

@@ -1,0 +1,6 @@
+﻿Name: Passage
+Description: This basement sure has a low ceiling. Still, it's roomier than any golbets I've ever been in.
+LevelConfig:
+  Battle:
+    Name: Horned Guards
+

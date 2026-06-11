@@ -1,0 +1,12 @@
+﻿Name: Птица призора
+InventoryItemName: BirdCurse
+Flavour: Чудь схоронила, пусть там и лежит
+Sprite: IconBirdCurse
+Cost: 100
+Effects:
+  - Value: 3
+    Type: StatusOnBattleStart
+    StatusName: Cursed
+  - Value: 1
+    Type: StatusBonus
+    StatusName: Cursed

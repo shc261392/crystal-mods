@@ -1,0 +1,30 @@
+﻿Name: Ломота
+AbilityType: LOMOTA
+Upgrade: LOMOTA_UP
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: LOMOTA
+GoldCost: 67
+Gesture: true
+Effects:
+- EffectType: STATUS
+  MinValue: 3
+  MaxValue: 3
+  StringData: Cursed
+  StatusEffectType: ImmuneSuppression 
+- EffectType: STATUS
+  MinValue: 3
+  MaxValue: 3
+  StringData: Waste
+  StatusEffectType: ImmuneSuppression
+- MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal7OrderBlack
+    MissTrigger: Seal7OrderBlack
+    WrapUpTime: 0.2
+    SkipReady: true
+  Syllable: true
+

@@ -1,0 +1,12 @@
+﻿Name: Индивия-трава
+InventoryItemName: IndiviaHerb
+Type: Herb
+Flavour: Индивия-трава защищает и укрепляет, даже младенцу в утробе силу дает
+Sprite: IndiviaHerb
+Expendable: true
+Cost: 30
+Effects:
+- Value: 3
+  Type: Status
+  StatusName: DefenceGive
+

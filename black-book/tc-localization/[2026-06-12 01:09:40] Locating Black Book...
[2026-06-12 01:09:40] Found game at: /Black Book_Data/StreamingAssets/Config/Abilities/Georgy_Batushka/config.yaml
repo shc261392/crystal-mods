@@ -1,0 +1,21 @@
+﻿Name: Егорий Батюшка
+AbilityType: GEORGY_BATUSHKA
+Upgrade: GEORGY_BATUSHKA_UP
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: GEORGY_BATUSHKA
+GoldCost: 13
+Effects:
+- EffectType: STATUS_SKLAD
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: NONE
+    ReadyTrigger: Word
+    SpellTrigger: GoodStatus
+    MissTrigger: GoodStatus
+    WrapUpTime: 0.5
+  StatusEffectType: Blessed
+

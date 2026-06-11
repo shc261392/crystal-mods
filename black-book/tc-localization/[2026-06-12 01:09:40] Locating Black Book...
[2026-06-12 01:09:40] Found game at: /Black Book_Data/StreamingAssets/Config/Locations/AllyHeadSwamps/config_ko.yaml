@@ -1,0 +1,7 @@
+﻿Name: 검은 늪지대
+Description: 사라진 오치가 주민들이 이곳 어딘가에 있을지도 몰라.
+ShortQuestDescr: 사라진 농부 찾기
+LevelConfig:
+  Battle:
+    Name: 익사체들
+

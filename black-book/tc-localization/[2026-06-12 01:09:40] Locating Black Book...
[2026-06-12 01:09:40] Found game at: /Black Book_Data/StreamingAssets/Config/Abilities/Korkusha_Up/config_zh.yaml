@@ -1,0 +1,6 @@
+﻿Name: 科库莎+
+Description: >-
+  敌方损失生命时，恢复{MinValue}点生命
+
+  持续时间：{MaxValue}回合
+

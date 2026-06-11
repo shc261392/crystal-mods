@@ -1,0 +1,6 @@
+﻿Name: 伊斯科尔市场
+Description: 这个市场以前卖的东西可多了，现在不知道还有没有人卖东西。
+LevelConfig:
+  Battle:
+    Name: 雠特商人
+

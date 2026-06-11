@@ -1,0 +1,9 @@
+﻿IdName: Week1Day4Abachkin
+Name: Абачкинский лес
+Description: Небольшой лес раскинулся прямо на тракте от Вильгорта в Пянтег.
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Artefact/DeadManCross
+

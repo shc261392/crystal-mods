@@ -1,0 +1,8 @@
+﻿Name: Temple of Death
+Description: A terrifying place... I have to get out of here while I'm still alive.
+ShortQuestDescr: Make a Wish Come True
+LongQuestDescr: You passed the trial of the King of Thieves and moved on to the next one. This toll house was prepared for you by the Bony Crone herself.
+LevelConfig:
+  Battle:
+    Name: Death
+

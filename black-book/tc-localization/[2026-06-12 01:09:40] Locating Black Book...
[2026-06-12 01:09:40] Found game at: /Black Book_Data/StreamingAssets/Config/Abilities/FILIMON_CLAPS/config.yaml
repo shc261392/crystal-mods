@@ -1,0 +1,16 @@
+﻿Name: Хлопки в ладоши
+AbilityType: FILIMON_CLAPS
+TargetType: SELF
+Intention: ATTACK_DEBUFF
+Sprite: FILIMON_CLAPS
+GoldCost: 3
+Effects:
+- EffectType: DEFENCE
+  MinValue: 99
+  MaxValue: 99
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    WrapUpTime: 0.5
+

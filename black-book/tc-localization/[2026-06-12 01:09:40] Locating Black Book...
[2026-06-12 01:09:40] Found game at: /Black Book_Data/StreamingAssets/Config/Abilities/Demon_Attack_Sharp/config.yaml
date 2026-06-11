@@ -1,0 +1,16 @@
+﻿Name: Коготок
+AbilityType: DEMON_ATTACK_SHARP
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: DEMON_ATTACK_SHARP
+GoldCost: 3
+Effects:
+- MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

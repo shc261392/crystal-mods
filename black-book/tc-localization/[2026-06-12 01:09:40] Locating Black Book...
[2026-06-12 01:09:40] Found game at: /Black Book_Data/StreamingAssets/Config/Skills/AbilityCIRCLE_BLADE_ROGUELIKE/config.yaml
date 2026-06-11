@@ -1,0 +1,10 @@
+Name: CIRCLE_BLADE_ROGUELIKE
+SkillName: AbilityCIRCLE_BLADE_ROGUELIKE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityIROD_BONES
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: CIRCLE_BLADE_ROGUELIKE

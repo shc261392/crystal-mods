@@ -1,0 +1,19 @@
+﻿Name: Волос
+AbilityType: HAIR
+TargetType: ALL_ENEMIES
+Sprite: HAIR
+GoldCost: 33
+Color: WHITE
+Effects:
+- EffectType: STATUS_SKLAD
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal6OrderWhite
+    MissTrigger: Seal6OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: MouthSewn
+

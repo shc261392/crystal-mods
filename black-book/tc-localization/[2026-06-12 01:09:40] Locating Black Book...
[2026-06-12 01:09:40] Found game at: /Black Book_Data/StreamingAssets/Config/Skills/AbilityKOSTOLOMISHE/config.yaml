@@ -1,0 +1,10 @@
+Name: KOSTOLOMISHE
+SkillName: AbilityKOSTOLOMISHE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilitySATANAIL_ROGUELIKE
+SpriteOffsetX: -72.7
+SpriteOffsetY: -4.8
+Effects:
+- Type: AbilityUnlock
+  StringData: KOSTOLOMISHE

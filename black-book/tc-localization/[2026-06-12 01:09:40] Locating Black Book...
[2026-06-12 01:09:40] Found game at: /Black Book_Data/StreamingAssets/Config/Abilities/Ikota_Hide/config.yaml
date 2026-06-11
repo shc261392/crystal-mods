@@ -1,0 +1,19 @@
+﻿Name: Нутро
+AbilityType: IKOTA_HIDE
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: IKOTA_HIDE
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+  StatusEffectType: DeadlyHealth
+

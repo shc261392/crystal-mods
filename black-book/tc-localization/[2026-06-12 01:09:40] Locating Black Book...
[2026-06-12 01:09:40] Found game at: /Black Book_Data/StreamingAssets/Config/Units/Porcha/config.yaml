@@ -1,0 +1,31 @@
+﻿AssetName: Porcha
+Health: 250
+Mana: 4
+Initiative: 1
+MoneyMin: 60
+MoneyMax: 90
+Experience: 1500
+StartingStatusEffects:
+- StatusEffectType: DefenceKeep
+  Duration: 999
+  Permanent: true
+- StatusEffectType: Immunity
+  Duration: 999
+  Permanent: true
+  StringData: Waste
+  HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: PORCHA_FLESH_ARMOR
+    TargetType: SELF
+  - AbilityType: PORCHA_FIERCE_WASTE
+    TargetType: ENEMY
+  - AbilityType: PORCHA_ROT
+    TargetType: ENEMY
+  - AbilityType: PORCHA_PESTILENCE
+    TargetType: ENEMY
+  CastingType: CONSEQUITIVE
+Name: Порча
+DeathSound: event:/Units/Porcha/Death
+DamagedSound: event:/Units/Porcha/Damaged
+

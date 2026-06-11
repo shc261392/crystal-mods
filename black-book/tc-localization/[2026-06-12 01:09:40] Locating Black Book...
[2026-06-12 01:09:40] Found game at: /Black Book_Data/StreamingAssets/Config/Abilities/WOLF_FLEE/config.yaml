@@ -1,0 +1,8 @@
+﻿Name: Побег
+AbilityType: WOLF_FLEE
+TargetType: SELF
+Intention: BUFF
+Sprite: WOLF_FLEE
+Effects:
+- EffectType: FLEE
+

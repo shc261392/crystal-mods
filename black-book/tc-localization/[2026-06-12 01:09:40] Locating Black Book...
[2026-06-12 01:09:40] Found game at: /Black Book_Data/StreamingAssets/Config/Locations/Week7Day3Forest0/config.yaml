@@ -1,0 +1,12 @@
+IdName: Week7Day3Forest0
+Name: Лес грешников
+Description: Этот лес не похож ни на один из тех, что я видела. 
+Scene: HellSinnersForest0
+RequiredLocations:
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week7/Day3/Forest/Intro
+  Exploration: Week7Day3Forest0
+  NoExplorerSpawn: true
+  MusicOverride: event:/Music/ExploreHell
+  MixerSnapshot: snapshot:/Cave

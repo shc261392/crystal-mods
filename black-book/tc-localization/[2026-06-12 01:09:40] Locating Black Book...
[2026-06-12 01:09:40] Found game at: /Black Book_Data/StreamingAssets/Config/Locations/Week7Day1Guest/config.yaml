@@ -1,0 +1,37 @@
+﻿IdName: Week7Day1Guest
+Name: Казачий гость
+Description: В аду, видать, колдуны дружат с чертями. Оттого этот бес и попросил меня помочь им с нежданным гостем.
+ShortQuestDescr: Решить судьбу казака
+Scene: Hell
+LevelConfig:
+  MusicOverride: event:/Music/ExploreHell
+  MixerSnapshot: snapshot:/Cave
+  Battle:
+    Name: Потерянный казак
+    Enemies:
+      - Type: DemonFire
+        LevelSpawnPointType: EnemyLeft
+      - Type: DemonFierceFire
+        LevelSpawnPointType: EnemyCenter
+      - Type: DemonBrander
+        LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week7/Day1/Guest/Intro
+    Outro: TextQuest/Week7/Day1/Guest/Outro
+  FoolGame:
+    TeamPlay: true
+    CardsCount: 36
+    PlayerCount: 4
+    PossiblePlayers:
+    - Kazak
+    - Demon
+    - Andropko
+    DialogueFoolWin: TextQuest/Week7/Day1/Guest/OutroKazakDead
+    DialogueFoolLose: TextQuest/Week7/Day1/Guest/Outro
+RequiredLocations:
+- Week7Day1Pits
+Secondary: Week7Day1Guest
+OnomastikonItems:
+  - Onomastikon/Tales/41

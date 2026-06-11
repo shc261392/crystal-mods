@@ -1,0 +1,13 @@
+﻿IdName: Week4Day1Branches
+Name: Переплетение ветвей
+Description: Не разглядеть ничего в этой чаще. Словно двинулся кто между веток.
+Scene: Forest_old
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day1/Map2/Woods
+  CameraOverride: CMQuestCamera1
+LightingType: FOG_2
+MoonType: NONE
+

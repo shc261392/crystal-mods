@@ -1,0 +1,8 @@
+﻿Name: Evil Palace
+Description: Here it is, the mysterious palace, overgrown with poisonous mushrooms. Evil has been living here for hundreds of years...
+ShortQuestDescr: Make a Wish Come True
+LongQuestDescr: To make your wish come true, you must reach the very center of Hell. Your first obstacle is the lord of this hellish domain, Andromalius.
+LevelConfig:
+  Battle:
+    Name: Andromalius
+

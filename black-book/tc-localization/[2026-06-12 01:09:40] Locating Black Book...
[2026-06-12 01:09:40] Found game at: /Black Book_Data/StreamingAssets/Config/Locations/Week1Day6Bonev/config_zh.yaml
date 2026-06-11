@@ -1,0 +1,7 @@
+﻿Name: 波涅夫树林小路
+Description: 这条路的景色不孬，顺着它走出这片树林就是维葛特了。乡亲说这路上闹鬼了，我得去看看咋回事儿，有邪灵的话就顺手除了。
+ShortQuestDescr: 去波涅夫路看看
+LevelConfig:
+  Battle:
+    Name: 一群魔鬼
+

@@ -1,0 +1,26 @@
+﻿Name: Костоломище
+AbilityType: KOSTOLOMISHE
+TargetType: ENEMY
+Sprite: KOSTOLOMISHE
+GoldCost: 22
+Effects:
+- EffectType: SACRIFICE
+  MinValue: 1
+  MaxValue: 1
+- EffectType: SACRIFICE
+  MinValue: 1
+  MaxValue: 1
+- EffectType: SACRIFICE
+  MinValue: 1
+  MaxValue: 1
+- MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal5OrderBlack
+    MissTrigger: Seal5OrderBlack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  Syllable: true
+

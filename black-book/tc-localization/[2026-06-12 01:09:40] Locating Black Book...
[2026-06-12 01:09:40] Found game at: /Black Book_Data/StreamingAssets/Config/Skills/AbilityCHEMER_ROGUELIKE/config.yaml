@@ -1,0 +1,10 @@
+Name: CHEMER_ROGUELIKE
+SkillName: AbilityCHEMER_ROGUELIKE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityPAVLUSHKA
+SpriteOffsetX: -45
+SpriteOffsetY: 7
+Effects:
+- Type: AbilityUnlock
+  StringData: CHEMER_ROGUELIKE

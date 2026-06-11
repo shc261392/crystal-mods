@@ -1,0 +1,10 @@
+Name: NAVA
+SkillName: AbilityNAVA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityLOCK
+SpriteOffsetX: 10
+SpriteOffsetY: -16
+Effects:
+- Type: AbilityUnlock
+  StringData: NAVA

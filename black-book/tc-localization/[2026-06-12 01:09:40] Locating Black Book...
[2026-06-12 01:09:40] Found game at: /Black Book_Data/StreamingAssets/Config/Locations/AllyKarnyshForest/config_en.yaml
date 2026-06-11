@@ -1,0 +1,8 @@
+﻿Name: Karnysh's Forest
+Description: Reaching the heart of the forest is no easy task. The branches are in the way and the trees are gloomy. Hopefully, this will change once Karnysh becomes the master here.
+ShortQuestDescr: Find a forest for Karnysh
+LongQuestDescr: Vorsa's son has been dreaming of a grove of his own for a long time. Fortunately, there's a forest without leshiys not far from Vilgort. You and your companion head that way.
+LevelConfig:
+  Battle:
+    Name: Masters of the Forest
+

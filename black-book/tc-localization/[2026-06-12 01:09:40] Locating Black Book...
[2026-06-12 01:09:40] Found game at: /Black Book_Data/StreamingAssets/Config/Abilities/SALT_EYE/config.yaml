@@ -1,0 +1,16 @@
+﻿Name: Соль в глаз
+AbilityType: SALT_EYE
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+Sprite: SALT_EYE
+GoldCost: 36
+Effects:
+- EffectType: ADD_GESTURE_TO_BOOK
+  MinValue: 1
+  MaxValue: 1
+  StringData: ALL
+- EffectType: IMMEDIATE
+- EffectType: KRADA
+

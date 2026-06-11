@@ -1,0 +1,10 @@
+﻿Name: Чудская богиня
+InventoryItemName: Goddess
+Flavour: Нижний мир – в ногах, средний мир – в руках, верхний мир – над головою
+Sprite: Goddess
+Cost: 280
+Effects:
+- Value: 3
+  Type: StatusBonus
+  StatusName: Prayer
+

@@ -1,0 +1,7 @@
+﻿Name: 倉庫
+Description: 魔物の跡はこの狩猟用の倉庫まで続いている。
+ShortQuestDescr: 魔物のあとを追う
+LevelConfig:
+  Battle:
+    Name: エレトニク
+

@@ -1,0 +1,11 @@
+﻿Name: Шестокрыл
+InventoryItemName: Sixwing
+Flavour: Черная книга, отреченная!
+Sprite: Sixwing
+Cost: 400
+Effects:
+- Value: 6
+  Type: StatusOnBattleStart
+  StatusName: Vampirism
+- Value: 6
+  Type: ReduceDemons

@@ -1,0 +1,10 @@
+Name: RIZI_SMALL
+SkillName: AbilityRIZI_SMALL
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityBLUE_STONE_ROGUELIKE
+SpriteOffsetX: -35
+SpriteOffsetY: -30
+Effects:
+- Type: AbilityUnlock
+  StringData: RIZI_SMALL

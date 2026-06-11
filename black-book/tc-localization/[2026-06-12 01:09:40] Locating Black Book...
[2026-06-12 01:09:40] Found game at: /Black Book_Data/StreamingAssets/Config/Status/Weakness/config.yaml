@@ -1,0 +1,8 @@
+﻿Unique: true
+Name: Слабость
+Description: Увеличивает сглаз в начале хода на {Duration}
+Sprite: StatWeakness
+Harmful: true
+AdditionalStatusData: Cursed
+DecreaseOnStartTurn: true
+

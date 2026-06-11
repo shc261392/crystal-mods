@@ -1,0 +1,79 @@
+﻿DemonConfigs:
+  Mathew:
+    Name: 마트베이
+    Description: 뇌제 이반 4세 제위 당시 오프리치니크였던 마트베이는 이제 악마로 변해버렸다
+  Ivashka:
+    Name: 이바슈카
+    Description: 뚱보 이바슈카는 아이들이 굶을 때 기뻐한다
+  Fyodor:
+    Name: 외눈박이 표도르
+    Description: 뒷돈을 받은 악독한 패거리와의 내기에서 눈 한쪽을 잃은 후로 사람들을 더욱 증오하게 되었다
+  Makarko:
+    Name: 마카르코
+    Description: 한때 수세드코였으나, 자신이 깃든 집의 주인을 살해했다
+  Korovin:
+    Name: 코로빈
+    Description: 아주 오래전에는 창조의 경이에 대하여 천사와 같은 합창을 부르곤 했다.
+  Andropko:
+    Name: 안드롭코
+    Description: 안드롭코가 기어가는 곳마다 전염병와 열병이 창궐하곤 한다
+  Antipka:
+    Name: 안티프카
+    Description: 안티프카는 페름 구베르나토르의 이코타로 지내는 동안 미묘한 정치의 기술을 터득했다
+  Muska:
+    Name: 무시카
+    Description: 수많은 가정에 불화를 불러왔다
+  ThirteenthBrother:
+    Name: 열세 번째 형제
+    Description: 농부들의 일을 방해하는 것을 가장 좋아하며, 그 덕분에 집안일과 농사에 대해서라면 모르는 것이 없다
+  Andreiko:
+    Name: 안드레이코
+    Description: 1840년 오를로프 구베르니아에서 기근을 일으킨 장본인으로, 새 시대를 고대하고 있다
+  Mikolka:
+    Name: 미콜카
+    Description: 죄 지은 자의 영혼을 말로 변하게 할 수 있다
+  FireZmey:
+    Name: 불 뱀
+    Description: 농민 소녀들을 유혹한 후 살해한다
+  CursedIcon:
+    Name: 지옥의 그림 악마
+    Description: 온갖 예술에 능통하며, 아무리 소름 끼치는 예술이라도 예외는 아니다
+  Luvezelko:
+    Name: 루베젤코
+    Description: 바퀴벌레를 부리지만, 파리를 부릴 수 있게 승격되기를 고대한다
+LocationIdToJobLocation:
+  Solikamsk:
+    Name: 솔리캄스크
+  Cherdyn:
+    Name: 체르딘
+  Vilgort:
+    Name: 빌고르트
+  Pokcha:
+    Name: 포크챠
+  Nyrob:
+    Name: 니로프
+  Yanidor:
+    Name: 야니도르
+  Kuznetsova:
+    Name: 쿠즈네초프
+  Verhneyazvinskoe:
+    Name: 베르흐네야지빈스크
+  Govorlivskoe:
+    Name: 고보를립스크
+  Gainskoe:
+    Name: 가인스크
+  VerhKosva:
+    Name: 베르흐코스바
+  Usva:
+    Name: 유시바
+  Voskresenskoe:
+    Name: 보스크레센스크
+  Akchim:
+    Name: 악침
+  MeaninglessLocation1:
+    Name: 무의미한 일
+  MeaninglessLocation2:
+    Name: 무의미한 일
+  MeaninglessLocation3:
+    Name: 무의미한 일
+

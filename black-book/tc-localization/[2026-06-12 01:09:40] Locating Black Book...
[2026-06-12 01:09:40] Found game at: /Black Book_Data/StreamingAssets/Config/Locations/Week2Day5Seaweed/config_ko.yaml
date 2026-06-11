@@ -1,0 +1,6 @@
+﻿Name: 물속 숲
+Description: 또 다른 물속의 숲이다. 지상의 숲과 매우 비슷하다.
+LevelConfig:
+  Battle:
+    Name: 물고기 몰이꾼
+

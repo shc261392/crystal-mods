@@ -1,0 +1,11 @@
+﻿Name: Петушиные лапы
+InventoryItemName: CockLegs
+Flavour: Запеченная кровь отливает черным, совсем как человеческая
+Sprite: CockLegs
+Cost: 88
+Effects:
+  - Value: 2
+    Type: StatusBonus
+    StatusName: DefenceGive
+
+

@@ -1,0 +1,10 @@
+﻿Name: Псалтыри
+InventoryItemName: BookPsaltir
+Flavour: Не было нынче обедни, только часы читали
+Sprite: BookPsaltir
+Cost: 200
+Effects:
+- Value: 1
+  Type: StatusBonus
+  StatusName: EloquenceWhite
+

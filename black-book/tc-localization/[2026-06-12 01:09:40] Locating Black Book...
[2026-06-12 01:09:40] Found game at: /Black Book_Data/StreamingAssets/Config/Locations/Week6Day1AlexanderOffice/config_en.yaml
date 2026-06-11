@@ -1,0 +1,8 @@
+﻿Name: Alexander's Office
+Description: Alexander is in his office. He has no idea I've broken free.
+ShortQuestDescr: Get Back the Herbs and Artifacts
+LongQuestDescr: Alexander took my Book along with all of my property! I'll get my Book from the Spinner later, but right now I'll get back what's mine.
+LevelConfig:
+  Battle:
+    Name: Trinity
+

@@ -1,0 +1,9 @@
+﻿Name: Громовая стрела
+InventoryItemName: ThunderArrow
+Flavour: Носящий сей камень не убоится ни беса, ни беды, а силен будет, когда в руках у него Перун-камень.
+Sprite: ThunderArrow
+Cost: 140
+Effects:
+  - Value: 1
+    Type: StatusBonus
+    StatusName: Blessed

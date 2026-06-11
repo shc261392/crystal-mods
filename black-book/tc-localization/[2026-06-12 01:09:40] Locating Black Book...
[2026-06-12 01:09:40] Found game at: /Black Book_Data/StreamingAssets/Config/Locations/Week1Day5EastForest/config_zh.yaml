@@ -1,0 +1,8 @@
+﻿Name: 东树林
+Description: 这片林子离科尔瓦河以前的河道很近，现在还没名字，大家都直接叫东树林或者东边林子。
+LevelConfig:
+  Battle:
+    Name: 茶炊商人
+  BattleAlternative:
+    Name: 以后派得上用场
+

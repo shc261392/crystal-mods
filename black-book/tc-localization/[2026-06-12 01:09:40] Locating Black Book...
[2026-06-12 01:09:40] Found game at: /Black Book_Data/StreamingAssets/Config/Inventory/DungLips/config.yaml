@@ -1,0 +1,12 @@
+﻿Name: Навозные губы
+InventoryItemName: DungLips
+Type: Herb
+Flavour: Навозны-те губы у нас поганые считаются, их даже коровы не едят
+Sprite: DungLips
+Expendable: true
+UseOutBattle: true
+Cost: 6
+Effects:
+- Value: 2
+  Type: Heal
+

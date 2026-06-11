@@ -1,0 +1,15 @@
+﻿IdName: Week1Day2VilgortChurch
+Name: Троицкая церковь
+Description: В вильгортской церкви всегда можно Богу помолиться да сил набраться. Хороший там священник служит. Не взяточник, ниче. Да и не пьет особо.
+LocationType: PRIEST
+Scene: ChurchVilgort
+LevelConfig:
+  MixerSnapshot: snapshot:/Church
+  Merchants:
+  - PRIEST
+  Quest:
+    DialogueSystemName: TextQuest/Priest/Priest1
+  NoExplorationMusic: true
+RequiredLocations:
+- Week1Day2Ezova
+

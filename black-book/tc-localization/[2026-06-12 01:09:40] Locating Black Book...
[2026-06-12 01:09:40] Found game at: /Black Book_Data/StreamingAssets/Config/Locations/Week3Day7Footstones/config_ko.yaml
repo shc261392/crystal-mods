@@ -1,0 +1,6 @@
+﻿Name: 폴루트산 기슭
+Description: 폴루트산이 우뚝 서 있다. 곧 늑대인간들을 따라잡을 수 있을 것이다.
+LevelConfig:
+  Battle:
+    Name: 폴루트 경비병
+

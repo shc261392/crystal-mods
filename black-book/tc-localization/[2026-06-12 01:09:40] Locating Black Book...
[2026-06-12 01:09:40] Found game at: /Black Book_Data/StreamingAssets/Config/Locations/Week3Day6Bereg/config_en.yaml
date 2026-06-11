@@ -1,0 +1,6 @@
+﻿Name: Chud' Riverbank
+Description: It seems a hunter spotted some wolf tracks leading to the bank.
+LevelConfig:
+  Battle:
+    Name: Hungry Wolves
+

@@ -1,0 +1,10 @@
+Name: ABEL
+SkillName: AbilityABEL
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - RoguelikeHelpOfSaints1
+SpriteOffsetX: -51
+SpriteOffsetY: -51
+Effects:
+- Type: AbilityUnlock
+  StringData: ABEL

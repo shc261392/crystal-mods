@@ -1,0 +1,7 @@
+﻿Name: 東の橋
+Description: 東側から沼へ行くにはこの橋を渡る。都合よく、東の橋と呼ばれている。夜になると橋向こうから奇妙な音が聞こえるらしい。調べたほうが良さそうだ。
+ShortQuestDescr: 東の橋を歩く
+LevelConfig:
+  Battle:
+    Name: 魔物と罪びと
+

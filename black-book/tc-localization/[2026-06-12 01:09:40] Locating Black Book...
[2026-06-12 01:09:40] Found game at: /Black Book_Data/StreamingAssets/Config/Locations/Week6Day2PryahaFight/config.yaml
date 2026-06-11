@@ -1,0 +1,32 @@
+﻿IdName: Week6Day2PryahaFight
+Name: Паучья пряжа
+Scene: TkachihaSpider
+LevelConfig:
+  Battle:
+    Name: Паучья пряжа
+    Enemies:
+    - Type: Cheran
+      LevelSpawnPointType: EnemyCenter
+    - Type: CheranLeg1
+      LevelSpawnPointType: EnemyRight
+    - Type: CheranLeg2
+    - Type: Tkachiha
+      LevelSpawnPointType: None
+    Barks:
+    - Id: Battle/Pryaha/First
+      HealthPercent: 0.800000012
+      TargetUnit: Tkachiha
+    - Id: Battle/Pryaha/Second
+      HealthPercent: 0.300000012
+      TargetUnit: Tkachiha
+    WinCutscene: Week6Day2PryahaFightFinish
+    EnemyKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/BattleBoss2
+  Exploration: Week6Day2PryahaFight
+  CinematicIntro: true
+  MixerSnapshot: snapshot:/Cave
+  NoExplorationMusic: true
+  NoExplorerSpawn: true
+

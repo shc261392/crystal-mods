@@ -1,0 +1,20 @@
+﻿IdName: Week2Day6Otskirts
+Name: Выселок
+Description: Несколько изб в отдалении от села. Тут новая деревня может образоваться.
+Scene: Forest_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Бесы из бочонка
+    Enemies:
+    - Type: DemonFierce
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonFierce
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day6/Outskirts
+RequiredLocations:
+- Week2Day6SaltanBank
+

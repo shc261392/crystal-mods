@@ -1,0 +1,20 @@
+﻿Name: Украденные иконки
+AbilityType: STOLEN_ICONS_WASTE
+TargetType: ALL
+Intention: BUFF
+Sprite: SKORCHIT
+GoldCost: 5
+Gesture: true
+Effects:
+- EffectType: STATUS
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: Waste
+

@@ -1,0 +1,9 @@
+﻿Name: ヴィルゴルトに向かう道
+Description: 道はこの辺りで、コルヴァ川の急流に差し掛かる。昔、レーシィがここに若者たちを誘い出して、川に突き落とそうとしたことがあった。
+ShortQuestDescr: 魔物を道から追い払う
+LevelConfig:
+  Battle:
+    Name: 道での出会い
+  BattleAlternative:
+    Name: 道での出会い
+

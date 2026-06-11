@@ -1,0 +1,6 @@
+﻿Name: Pokcha Road
+Description: This road is close to the forest - I should keep an eye out!
+LevelConfig:
+  Battle:
+    Name: Forest Chorts
+

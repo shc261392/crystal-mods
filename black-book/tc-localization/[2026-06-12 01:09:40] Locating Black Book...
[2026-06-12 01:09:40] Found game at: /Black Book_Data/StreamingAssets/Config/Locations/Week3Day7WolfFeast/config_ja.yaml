@@ -1,0 +1,7 @@
+﻿Name: 狼の宴
+Description: 血の跡がこの木立まで続いている。骨を噛み砕くような音が聞こえる！
+ShortQuestDescr: 血の跡を辿る
+LevelConfig:
+  Battle:
+    Name: チョルトの群れ
+

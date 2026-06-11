@@ -1,0 +1,9 @@
+﻿IdName: Week2Day1TelegrafReturn
+Name: Телеграфная линия
+Scene: Road_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day1/TelegraphReturn
+  Exploration: TelegraphExploration
+

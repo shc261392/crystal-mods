@@ -1,0 +1,23 @@
+Black Book TC Localization - Extraction Report
+============================================================
+
+Total YAML config files: 1448
+Total localizable strings: 3479
+
+Sample strings (first 10):
+------------------------------------------------------------
+
+Abilities/AMEN_PLUS/config_zh.yaml:
+  Name:
+    SC: 阿门+
+    TC: 阿門+
+
+Abilities/AMEN_ROGUELIKE/config_zh.yaml:
+  Name:
+    SC: 阿门
+    TC: 阿門
+
+Abilities/ANDREIKO_CLAW/config_zh.yaml:
+  Name:
+    SC: 第十三爪
+    TC: 第十三爪

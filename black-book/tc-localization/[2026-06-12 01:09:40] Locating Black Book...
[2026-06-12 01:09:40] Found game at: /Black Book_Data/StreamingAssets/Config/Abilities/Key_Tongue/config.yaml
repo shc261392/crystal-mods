@@ -1,0 +1,20 @@
+﻿Name: Ключ – язык
+AbilityType: KEY_TONGUE
+AbilityBookPartType: KEY
+Upgrade: KEY_TONGUE_UP
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: KEY_TONGUE
+GoldCost: 18
+Gesture: true
+Effects:
+- MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

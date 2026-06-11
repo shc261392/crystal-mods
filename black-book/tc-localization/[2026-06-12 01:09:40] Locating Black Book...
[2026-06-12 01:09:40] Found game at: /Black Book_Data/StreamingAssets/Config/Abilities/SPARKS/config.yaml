@@ -1,0 +1,19 @@
+﻿Name: Искры
+AbilityType: SPARKS
+TargetType: SELF
+Intention: DEFENCE
+Sprite: SPARKS
+GoldCost: 24
+Effects:
+- EffectType: DEFENCE
+  MinValue: 10
+  MaxValue: 10
+- MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell2
+    SpellTrigger: Spell2
+    MissTrigger: Miss
+    SkipReady: true
+

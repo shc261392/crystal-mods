@@ -1,0 +1,7 @@
+﻿Name: 鍛冶場
+Description: ひどい修繕を施したという鍛冶はここに住んでいる。
+ShortQuestDescr: 鍛冶と話す
+LevelConfig:
+  Battle:
+    Name: 罪びとの世話人
+

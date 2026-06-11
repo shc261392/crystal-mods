@@ -1,0 +1,32 @@
+﻿IdName: Week1Day3IkotaChurch
+Name: Преображенская церковь
+LocationType: ATMOSPHERIC_QUEST
+Scene: ChurchOld
+LevelConfig:
+  # MixerSnapshot: snapshot:/Church (snapshots are activated in AmbientZones)
+  Battle:
+    Name: Прошка-икотка
+    Enemies:
+    - Type: Ikota
+      LevelSpawnPointType: EnemyCenter
+    Barks:
+    - Id: Battle/Ikota/First
+      HealthPercent: 0.800000012
+      TargetUnit: Ikota
+    - Id: Battle/Ikota/Second
+      HealthPercent: 0.400000006
+      TargetUnit: Ikota
+    QuestKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/BattleBoss2
+  Quest:
+    DialogueSystemName: Exploration/Week1/Ikota/ChurchIntro
+    Reward:
+      Money: 7
+      Experience: 700
+    Outro: Exploration/Week1/Ikota/Outro
+  Exploration: BathIkotaChurch
+  CinematicIntro: true
+  MusicOverride: event:/Music/ExploreDark
+

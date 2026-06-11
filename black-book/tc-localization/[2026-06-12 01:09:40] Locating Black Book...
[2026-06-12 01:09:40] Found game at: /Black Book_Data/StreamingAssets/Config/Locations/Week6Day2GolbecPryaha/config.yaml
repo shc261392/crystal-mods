@@ -1,0 +1,14 @@
+﻿IdName: Week6Day2GolbecPryaha
+Name: В избе Пряхи
+Scene: TkachihaEntry
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day2/IzbaPryaha/Entrance
+  Exploration: Week6Day2GolbecPryaha
+  CinematicIntro: true
+  CameraOverride: CMMainCamera
+  MusicOverride: event:/Music/ExploreDark2
+  NoExplorerSpawn: true
+HideBook: true
+

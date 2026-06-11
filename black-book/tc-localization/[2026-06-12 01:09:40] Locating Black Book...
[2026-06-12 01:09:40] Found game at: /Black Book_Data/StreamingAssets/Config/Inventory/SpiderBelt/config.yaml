@@ -1,0 +1,9 @@
+﻿Name: Опояска из паутины
+InventoryItemName: SpiderBelt
+Flavour: Раньше-то все опояски носили, а кто без нее, дак тот и распоясался
+Sprite: SpiderBelt
+Cost: 180
+Effects:
+- Value: 3
+  Type: ReduceDamage
+

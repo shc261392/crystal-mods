@@ -1,0 +1,28 @@
+﻿IdName: Week1Day3IkotaVillage
+Name: Янидор
+Description: В этом погосте народ живет своевольный. Раньше-то души приписаны были к заводам Походяшина, дак крестьяне бунтовали, что выходить на работы далеко да неудобно.
+ShortQuestDescr: Найти крест, что носил нечистый
+LongQuestDescr: Дед Егор рассказал, что в Янидоре появилась икотница. Вы отправились в это село вместе с Николаем, чтобы взять у икотницы ее крест для невесты из бани.
+LocationType: ATMOSPHERIC_QUEST
+Scene: Village6
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: Exploration/Week1/Ikota/MotherIntro
+    IzbaAftermath: Exploration/Week1/Ikota/IzbaAftermath
+  Exploration: Week1Day3IkotaVillage
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week1Day3Marshes
+LockedAllies:
+- DedEgor
+- DedEgorLoyal
+- Proshka
+- ProshkaLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+OnomastikonItems:
+- Onomastikon/Encyclopedia/35
+

@@ -1,0 +1,7 @@
+﻿Name: 폴로스코이 협곡
+Description: 며칠 전 농부들이 이 협곡에서 거대한 회오리바람을 목격했다며 확인해 달라고 부탁했다.
+ShortQuestDescr: 협곡의 악마 퇴치하기
+LevelConfig:
+  Battle:
+    Name: 초르트의 회오리바람
+

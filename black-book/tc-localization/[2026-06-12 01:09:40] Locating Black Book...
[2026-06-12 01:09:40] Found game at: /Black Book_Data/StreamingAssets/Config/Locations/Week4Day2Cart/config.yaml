@@ -1,0 +1,17 @@
+﻿IdName: Week4Day2Cart
+Name: Закопанная телега
+Description: Здесь телега того мужика и сошла с дороги. Выглядит так, будто она весь амбар везла.
+Scene: Forest_5
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day2/Cart
+  Exploration: Week4Day2Cart
+  CameraOverride: CMQuestCamera1
+  NoExplorerSpawn: true
+LightingType: FOG_2
+RequiredLocations:
+- Week4Day2Track
+OnomastikonItems:
+- Onomastikon/Tales/63
+

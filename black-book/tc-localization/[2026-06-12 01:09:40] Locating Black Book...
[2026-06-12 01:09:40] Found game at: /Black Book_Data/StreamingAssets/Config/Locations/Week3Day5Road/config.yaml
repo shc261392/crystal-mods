@@ -1,0 +1,13 @@
+﻿IdName: Week3Day5Road
+Name: Дорога у Клепникова
+Description: По этой тропе можно добраться до берега.
+Scene: Road
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day5/Road/Intro
+RequiredLocations:
+- Week3Day5Knijih
+Secondary: Week3Day5Bereg
+

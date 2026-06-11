@@ -1,0 +1,13 @@
+﻿Name: Разрывная кость
+InventoryItemName: BurstingBone
+Flavour: Черную кошку выварить, пока кость не останется, она-то и есть та самая
+Sprite: BurstingBone
+Cost: 140
+Effects:
+- Value: 2
+  Type: StatusOnBattleStart
+  StatusName: Ethereal
+- Value: 5
+  Type: StatusOnBattleStart
+  StatusName: Waste
+

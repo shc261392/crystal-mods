@@ -1,0 +1,18 @@
+﻿Name: Лютый коготь
+AbilityType: DEMON_ATTACK_FIERCE
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: DEMON_ATTACK_FIERCE
+GoldCost: 3
+Effects:
+- EffectType: DAMAGE_FIERCE
+  MinValue: 4
+  MaxValue: 4
+  NumericData: 1
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

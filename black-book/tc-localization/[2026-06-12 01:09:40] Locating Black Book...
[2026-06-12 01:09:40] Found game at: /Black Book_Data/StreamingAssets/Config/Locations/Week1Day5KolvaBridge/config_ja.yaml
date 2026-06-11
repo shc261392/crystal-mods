@@ -1,0 +1,7 @@
+﻿Name: コルヴァ橋
+Description: 橋は二つの土手を繋いでいて、世界を区切るある種の境界のような役割を持つ。そして、魔物が境界を好むというのは、よく知られていることだ。
+ShortQuestDescr: 橋の下で魔物を捕まえる
+LevelConfig:
+  Battle:
+    Name: 橋での出会い
+

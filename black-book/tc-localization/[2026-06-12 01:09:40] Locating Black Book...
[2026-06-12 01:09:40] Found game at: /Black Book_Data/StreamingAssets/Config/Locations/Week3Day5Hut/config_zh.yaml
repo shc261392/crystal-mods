@@ -1,0 +1,7 @@
+﻿Name: 猎手家
+Description: 费尔班克斯说猎手住县城边上，希望他没骗我！
+ShortQuestDescr: 去小屋那里
+LevelConfig:
+  Battle:
+    Name: 狼的袭击
+

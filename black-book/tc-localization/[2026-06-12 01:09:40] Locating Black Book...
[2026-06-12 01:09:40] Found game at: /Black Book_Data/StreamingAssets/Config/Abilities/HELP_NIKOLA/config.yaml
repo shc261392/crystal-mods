@@ -1,0 +1,34 @@
+﻿Name: Помогай Никола
+AbilityType: HELP_NIKOLA
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: HELP_NIKOLA
+GoldCost: 64
+Effects:
+- EffectType: STATUS_MULTIPLIER
+  MinValue: 2
+  MaxValue: 2
+  StatusEffectType: DefenceGive
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal5OrderWhite
+    MissTrigger: Seal5OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+- EffectType: STATUS_MULTIPLIER
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal5OrderWhite
+    MissTrigger: Seal5OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: Piety
+  Syllable: true
+

@@ -1,0 +1,22 @@
+﻿AssetName: ForestDemonRoots
+Health: 50
+Mana: 4
+Initiative: 1
+MoneyMin: 15
+MoneyMax: 24
+Experience: 250
+StartingStatusEffects:
+- StatusEffectType: Spikes
+  Duration: 3
+  HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: FOREST_DEMON_ROOTS_HEAL
+    TargetType: SELF
+  - AbilityType: FOREST_DEMON_ROOTS_WHIP
+    TargetType: ENEMY
+  - AbilityType: FOREST_DEMON_ROOTS_SPIKES
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Корни лешего
+

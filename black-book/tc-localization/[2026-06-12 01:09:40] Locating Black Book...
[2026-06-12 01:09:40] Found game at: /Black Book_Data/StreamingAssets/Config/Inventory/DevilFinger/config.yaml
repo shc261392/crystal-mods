@@ -1,0 +1,9 @@
+﻿Name: Чертов палец
+InventoryItemName: DevilFinger
+Flavour: Черти меняют свои когти, чтобы новые выросли острее и крепче прежних. Их старые пальцы превращаются в камень и имеют целебные свойства.
+Sprite: DevilFinger
+Cost: 80
+Effects:
+- Value: 4
+  Type: IncreaseHealth
+

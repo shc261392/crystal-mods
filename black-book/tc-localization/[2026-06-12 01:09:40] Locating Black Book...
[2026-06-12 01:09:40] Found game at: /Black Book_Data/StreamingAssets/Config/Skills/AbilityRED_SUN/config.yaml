@@ -1,0 +1,10 @@
+Name: RED_SUN
+SkillName: AbilityRED_SUN
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilitySHUKA_BELUGA_ROGUELIKE
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: RED_SUN

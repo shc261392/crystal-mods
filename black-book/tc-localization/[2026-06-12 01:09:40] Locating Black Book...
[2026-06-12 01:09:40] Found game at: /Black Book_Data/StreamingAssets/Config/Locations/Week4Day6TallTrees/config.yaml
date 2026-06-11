@@ -1,0 +1,31 @@
+﻿IdName: Week4Day6TallTrees
+Name: Высокие сосны
+Description: Еще одна роща лесового. Какие деревья высокие!
+Scene: Forest_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark2
+  Battle:
+    Name: Лесные бесы
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyCenter
+    - Type: ForestDemon
+    - Type: ForestDemon
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day6/TallTrees/Intro
+    Outro: TextQuest/Week4/Day6/TallTrees/Outro
+  Exploration: Week4Day5TallTrees
+  CinematicIntro: true
+  CameraOverride: CMQuestCamera2
+  NoExplorerSpawn: true
+LightingType: DARK
+MoonType: NONE
+RequiredLocations:
+- Week4Day6Swampy
+OnomastikonItems:
+- Onomastikon/Tales/51
+

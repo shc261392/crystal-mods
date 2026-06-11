@@ -1,0 +1,8 @@
+﻿Name: サルマン湿地
+Description: この湿地に近づく人はほとんどいない。住んでいる人もいないため、様々な魔物がここをねぐらとしている。
+LevelConfig:
+  Battle:
+    Name: サルマンの戦い
+  BattleAlternative:
+    Name: サルマンの戦い
+

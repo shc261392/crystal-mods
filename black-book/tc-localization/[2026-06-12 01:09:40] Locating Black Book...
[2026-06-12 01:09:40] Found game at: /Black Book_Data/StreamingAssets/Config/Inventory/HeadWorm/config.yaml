@@ -1,0 +1,10 @@
+﻿Name: Голова червей
+InventoryItemName: HeadWorm
+Flavour: "Эта медянка всякие факты прошла: и в воде, и в огне побывала."
+Sprite: IconAnimalFace3
+Cost: 160
+Effects:
+- Value: 1
+  Type: AbilityOnBattleStart
+  StatusName: WORMS
+

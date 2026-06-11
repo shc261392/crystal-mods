@@ -1,0 +1,7 @@
+﻿Name: 納屋の前
+Description: 商人は、若者たちが納屋の前で占いをしていると言っていた。占いも間違った方法で行うと危ない。様子を見に行ってみよう。
+ShortQuestDescr: 占いのことを調べる
+LevelConfig:
+  Battle:
+    Name: オヴィンニク
+

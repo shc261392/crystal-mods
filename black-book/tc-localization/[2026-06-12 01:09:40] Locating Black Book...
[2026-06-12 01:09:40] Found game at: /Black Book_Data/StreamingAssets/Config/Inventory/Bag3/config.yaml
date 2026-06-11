@@ -1,0 +1,9 @@
+﻿Name: Кошель
+InventoryItemName: Bag3
+Flavour: Сенной кошель плетеный был; из воровина, из мочал плели.
+Sprite: IconBag3
+Cost: 460
+Effects:
+  - Value: 3
+    Type: AdditionalItemsPerTurn
+

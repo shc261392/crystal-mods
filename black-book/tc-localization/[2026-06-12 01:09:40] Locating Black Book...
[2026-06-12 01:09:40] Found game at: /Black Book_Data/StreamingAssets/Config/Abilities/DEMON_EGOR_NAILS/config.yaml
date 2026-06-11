@@ -1,0 +1,16 @@
+﻿Name: Сожженные ногти
+AbilityType: DEMON_EGOR_NAILS
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: DEMON_EGOR_NAILS
+GoldCost: 10
+Effects:
+- MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    SpellTrigger: Attack
+    MissTrigger: Attack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  RepeatCount: 3
+

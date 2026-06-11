@@ -1,0 +1,6 @@
+﻿Name: 체르딘 뜰
+Description: 경찰서로 가는 지름길이다.
+LevelConfig:
+  Battle:
+    Name: 뜰 정령
+

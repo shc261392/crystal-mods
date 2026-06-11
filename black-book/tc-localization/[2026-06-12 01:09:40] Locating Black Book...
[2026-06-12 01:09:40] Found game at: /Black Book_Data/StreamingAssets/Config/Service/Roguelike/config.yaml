@@ -1,0 +1,86 @@
+LocationName: Бесконечные битвы
+IzbaLocationId: IzbaRoguelike
+PlayerHealth: 33
+LooseRunSkillPoints: 1
+StartingSkillPoints: 3
+AbilityLockInitialCount: 2
+AbilityNotTakeReward: 3
+AntiFarmBattleCount: 0
+StartingDifficulty: RoguelikeNormal
+EpicDifficulty: Insane
+DifficultyValueIncrease: 0.5
+EquipQuantity: 6
+HealthAdd: 0.3
+HealthRemove: -0.3
+DeathHealthBonus: 3
+DeathSpBonus: 1
+DeathRoubleBonus: 50
+DeathHerbCount: 3
+MerchantRemovePriceInitial: 50
+MerchantRemovePriceIncrement: 50
+SatanWinLocation: RoguelikeVictory
+Maps:
+#  - MapTest
+  - Map1
+  - Map2
+  - Map3
+MapHpBonus:
+  - 0
+  - 0
+  - 0
+BadPages:
+  - BAD_KNIFE
+StartingSkills:
+  - AbilityKILA
+  - AbilitySKORCHIT
+  - AbilityVARAHAIL
+  - AbilityAVOIL
+  - AbilitySALMANIDA_ROGUELIKE
+  - AbilityGRYJA
+  - AbilityKORKOTEYA
+  - AbilityNAVA
+  - AbilityBAD_EYE_ROGUELIKE
+  - AbilityHOHOR
+  - AbilityKEY_TONGUE
+  - AbilityDEMON_WIZARD
+  - AbilityFIRMER_STONE
+  - AbilitySNAKE_STING
+  - AbilityABEL
+  - AbilityUGASIIL
+  - AbilityNIKOLA_GEORGY
+  - AbilityGEORGY_BRAVE
+  - AbilityGEORGY_BATUSHKA_ROGUELIKE
+  - AbilityREVUN_SMALL
+  - AbilityALTAR
+  - AbilityAMEN
+  - AbilityONCE_AND_FOREVER
+  - AbilityZACHERTIT
+  - AbilityFOR_FATHER
+StartingOrders:
+  - AVDELAI
+  - URAZI
+  - URAZI
+  - AVDELAI
+  - SKORCHIT
+  - VARAHAIL
+StartingKeys:
+  - RABA
+  - RUDA
+GoodHerbs:
+  - Item: RoyalEyes
+    Quantity: 1
+  - Item: CryingHerb
+    Quantity: 1
+  - Item: Suporijki
+    Quantity: 1
+  - Item: Borvyak
+    Quantity: 1
+  - Item: BessmertTrava
+    Quantity: 1
+BadHerbs:
+  - Item: Razorva
+    Quantity: 1
+  - Item: Bogomor
+    Quantity: 1
+  - Item: RottenMushroom
+    Quantity: 1

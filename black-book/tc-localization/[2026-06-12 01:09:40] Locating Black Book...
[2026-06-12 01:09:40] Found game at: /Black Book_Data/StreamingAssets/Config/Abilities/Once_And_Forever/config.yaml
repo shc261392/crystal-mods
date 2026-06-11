@@ -1,0 +1,22 @@
+﻿Name: Отныне и довека
+AbilityType: ONCE_AND_FOREVER
+AbilityBookPartType: KEY
+Upgrade: ONCE_AND_FOREVER_UP
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: ONCE_AND_FOREVER
+GoldCost: 11
+Effects:
+- EffectType: FIRM
+  MinValue: 1
+  MaxValue: 1
+- EffectType: DEFENCE
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+

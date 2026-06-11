@@ -1,0 +1,8 @@
+﻿Name: 卡尼什看中的树林
+Description: 到这片林子中央可不是件容易事儿，又有树枝挡道，又有大树遮天蔽日。等这地方归卡尼什了，希望就能不这样了。
+ShortQuestDescr: 给卡尼什找一片树林
+LongQuestDescr: 沃萨的这个儿子一直都想有自己的树林，正好离维葛特不远的地方就有一片林子没有列希，你跟他准备过去看看。
+LevelConfig:
+  Battle:
+    Name: 森林主人
+

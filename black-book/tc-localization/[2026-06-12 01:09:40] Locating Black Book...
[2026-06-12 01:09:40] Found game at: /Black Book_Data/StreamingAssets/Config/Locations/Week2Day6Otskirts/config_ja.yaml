@@ -1,0 +1,6 @@
+﻿Name: 集落
+Description: 村から少し離れたところに数軒の家が集まっている。いずれ、彼らの村ができるのかもしれない。
+LevelConfig:
+  Battle:
+    Name: 樽のチョルト
+

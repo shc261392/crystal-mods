@@ -1,0 +1,7 @@
+﻿Name: 늑대의 만찬
+Description: 핏자국이 이 빈터로 이어져 있다. 뼈를 씹어먹는 끔찍한 소리가 들려오는 것 같다!
+ShortQuestDescr: 핏자국 따라가기
+LevelConfig:
+  Battle:
+    Name: 초르트 무리
+

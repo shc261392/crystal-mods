@@ -1,0 +1,8 @@
+﻿Name: The forest grove by our izba
+Description: The old forest that grows near our izba makes people ill at ease. As does everything else nearby, for that matter.
+LevelConfig:
+  Battle:
+    Name: Demon Singer
+  BattleAlternative:
+    Name: Demon Singer
+

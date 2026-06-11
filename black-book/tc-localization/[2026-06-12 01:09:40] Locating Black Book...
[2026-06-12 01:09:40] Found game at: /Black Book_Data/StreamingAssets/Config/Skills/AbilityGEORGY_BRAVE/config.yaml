@@ -1,0 +1,10 @@
+Name: GEORGY_BRAVE
+SkillName: AbilityGEORGY_BRAVE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - RoguelikeOrders2
+SpriteOffsetX: 36.7
+SpriteOffsetY: 17.8
+Effects:
+- Type: AbilityUnlock
+  StringData: GEORGY_BRAVE

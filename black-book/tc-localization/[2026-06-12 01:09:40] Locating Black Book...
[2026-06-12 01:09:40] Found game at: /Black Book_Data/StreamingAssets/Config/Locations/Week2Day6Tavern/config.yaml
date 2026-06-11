@@ -1,0 +1,22 @@
+﻿IdName: Week2Day6Tavern
+Name: Кабак
+Description: О питейных домах всегда плохие слухи ходят. У этого особо скверная репутация.
+ShortQuestDescr: Заставить разбойников приносить жертвы
+LongQuestDescr: Водяной согласился открыть печать, если вы сможете заставить разбойников вновь приносить ему жертвы.
+Scene: DrinkinHouseEvening
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day6/Tavern/Intro
+  Exploration: Week2Day6Tavern
+  CinematicIntro: true
+  NoExplorationMusic: true
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 2
+    PossiblePlayers:
+    - PeasantCheater
+    DialogueFoolWin: TextQuest/Week2/Day6/Tavern/BullyWin
+    DialogueFoolLose: TextQuest/Week2/Day6/Tavern/BullyLose
+RequiredLocations:
+- Week2Day6Otskirts
+

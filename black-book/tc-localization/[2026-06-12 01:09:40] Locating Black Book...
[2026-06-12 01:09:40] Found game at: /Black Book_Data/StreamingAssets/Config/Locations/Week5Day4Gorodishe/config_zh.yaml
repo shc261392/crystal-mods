@@ -1,0 +1,7 @@
+﻿Name: 伊斯科尔古城
+Description: 热妖逃上了伊斯科尔古城，我得赶紧过去，才能把它赶出伊斯科尔！
+ShortQuestDescr: 追上热妖
+LevelConfig:
+  Battle:
+    Name: 莎乐美
+

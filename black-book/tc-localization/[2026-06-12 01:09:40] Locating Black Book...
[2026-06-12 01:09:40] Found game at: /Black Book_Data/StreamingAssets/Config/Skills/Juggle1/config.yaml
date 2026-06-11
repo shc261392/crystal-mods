@@ -1,0 +1,8 @@
+﻿Name: Ловкость рук I
+SkillName: Juggle1
+Sprite: Juggle1Skill
+Description: Увеличивает количество используемых предметов в ход на {CalculatedEffect}
+Effects:
+- Value: 1
+  Type: AdditionalItemUsage
+

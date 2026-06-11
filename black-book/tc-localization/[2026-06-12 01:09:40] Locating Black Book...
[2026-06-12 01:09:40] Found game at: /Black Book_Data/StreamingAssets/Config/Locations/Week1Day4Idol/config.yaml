@@ -1,0 +1,12 @@
+﻿IdName: Week1Day4Idol
+Name: Старый идол
+Description: Ходят слухи, что в старой роще по сей день стоит поганый пермяцкий идол.
+Scene: Forest_old
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day4/Idol
+RequiredLocations:
+- Week1Day4UstUrol
+OnomastikonItems:
+- Onomastikon/Encyclopedia/12
+

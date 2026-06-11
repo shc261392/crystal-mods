@@ -1,0 +1,19 @@
+﻿Name: Синий камень
+AbilityType: BLUE_STONE_ROGUELIKE
+Upgrade: BLUE_STONE_UP
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+Sprite: BLUE_STONE
+GoldCost: 18
+Effects:
+- EffectType: KRADA
+- EffectType: STATUS_SKLAD
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+  StatusEffectType: Regeneration
+

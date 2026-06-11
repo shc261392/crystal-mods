@@ -1,0 +1,18 @@
+﻿IdName: IzbaHunterCamp
+Name: Привал в лесу
+Scene: HunterCampIzba
+IsIzba: true
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: "event:/Music/Izba"
+  SpecialLevel: true
+ForbiddenSpawnAllies:
+- DedEgor
+- DedEgorLoyal
+- Nikolay
+- NikolayLoyal
+- Proshka
+- ProshkaLoyal
+- WhiteHead
+- WhiteHeadLoyal
+

@@ -1,0 +1,6 @@
+﻿Name: 皮亚涅路
+Description: 这地方离村里不远，但我老是感觉当地科尔敦在这路上种了雠特。
+LevelConfig:
+  Battle:
+    Name: 拦路雠特
+

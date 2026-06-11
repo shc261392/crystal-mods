@@ -1,0 +1,29 @@
+﻿Name: Пряжа мертвеца
+AbilityType: DEAD_YARN
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: DEAD_YARN
+GoldCost: 26
+Effects:
+- EffectType: STATUS
+  StatusEffectType: DefenceGive
+  MinValue: 30
+  MaxValue: 30
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    WrapUpTime: 0.5
+    SkipReady: true
+- EffectType: STATUS
+  StatusEffectType: Immunity
+  MinValue: 10
+  MaxValue: 10
+  StringData: Suppressed
+- EffectType: STATUS
+  StatusEffectType: Immunity
+  MinValue: 3
+  MaxValue: 3
+  StringData: Cursed
+

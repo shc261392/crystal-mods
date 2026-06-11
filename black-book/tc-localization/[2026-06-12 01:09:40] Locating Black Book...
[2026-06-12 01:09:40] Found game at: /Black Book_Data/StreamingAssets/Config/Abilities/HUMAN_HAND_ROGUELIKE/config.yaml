@@ -1,0 +1,14 @@
+﻿Name: Человека рука
+AbilityType: HUMAN_HAND_ROGUELIKE
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+Sprite: HUMAN_HAND
+GoldCost: 59
+Gesture: true
+Effects:
+- EffectType: IMMEDIATE
+- EffectType: TAKE_MAX
+  MinValue: 1
+  MaxValue: 1
+

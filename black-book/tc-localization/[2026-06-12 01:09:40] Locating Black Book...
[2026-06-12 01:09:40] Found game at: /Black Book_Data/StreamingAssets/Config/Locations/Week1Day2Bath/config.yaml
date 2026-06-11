@@ -1,0 +1,29 @@
+﻿IdName: Week1Day2Bath
+Name: Банька на берегу
+Description: 'В банях часто случаются пожары: топят-то их по-черному. Потому выстроены они на берегу реки. Сейчас тут и заброшенные появились бани.'
+ShortQuestDescr: Поговорить с чертовкой из бани
+LongQuestDescr: Ваш посетитель пообещал чертовке из бани жениться на ней. Вы отправились в старые бани вместе с Николаем, чтобы поговорить с духом.
+Scene: River
+LevelConfig:
+  MusicOverride: event:/Music/ExploreDark
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    IzbaAftermath: Izba/Week1/Bath1Aftermath
+  Exploration: Bath1Exploration
+  CinematicIntro: true
+  NoExplorationMusic: true
+RequiredLocations:
+- Week1Day2BathBridge
+LockedAllies:
+- DedEgor
+- DedEgorLoyal
+- Proshka
+- ProshkaLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+ForceAlly: Nikolay
+OnomastikonItems:
+- Onomastikon/Encyclopedia/51
+

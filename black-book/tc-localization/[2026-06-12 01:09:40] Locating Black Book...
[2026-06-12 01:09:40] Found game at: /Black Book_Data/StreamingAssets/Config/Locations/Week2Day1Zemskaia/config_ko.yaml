@@ -1,0 +1,6 @@
+﻿Name: 역참
+Description: 이 구베르니아 곳곳에 이런 역참이 있다. 휴식을 취하고 말을 바꿔 타는 곳이다.
+LevelConfig:
+  Battle:
+    Name: 수세드코
+

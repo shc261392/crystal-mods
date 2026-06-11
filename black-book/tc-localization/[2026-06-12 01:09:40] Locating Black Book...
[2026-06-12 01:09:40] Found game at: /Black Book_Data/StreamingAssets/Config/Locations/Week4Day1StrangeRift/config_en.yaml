@@ -1,0 +1,6 @@
+﻿Name: Strange Rift
+Description: I should be careful in this fog. I don't want to fall into any ravines by accident.
+LevelConfig:
+  Battle:
+    Name: Fog Chorts
+

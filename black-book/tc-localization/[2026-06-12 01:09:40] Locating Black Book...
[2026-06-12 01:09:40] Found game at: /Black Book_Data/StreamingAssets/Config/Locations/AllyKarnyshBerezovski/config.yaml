@@ -1,0 +1,12 @@
+﻿IdName: AllyKarnyshBerezovski
+Name: Березовский берег
+Description: Дорога ведет вдоль тихого берега. Здесь я не чувствую присутствия нечисти.
+Scene: RavenForest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/AllyKarnysh/Berezovski/Intro
+RequiredLocations:
+- AllyKarnyshSimonova
+

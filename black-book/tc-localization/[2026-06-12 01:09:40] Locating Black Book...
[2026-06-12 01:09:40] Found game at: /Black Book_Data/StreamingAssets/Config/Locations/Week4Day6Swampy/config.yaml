@@ -1,0 +1,16 @@
+﻿IdName: Week4Day6Swampy
+Name: Болотистая роща
+Description: Деревья растут прямо в воде. Река разлилась, что ли?
+Scene: Backwater
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark2
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day6/Swampy/Intro
+  Exploration: Week4Day6Swampy
+  NoExplorerSpawn: true
+LightingType: FOG_2
+MoonType: NONE
+RequiredLocations:
+- Week4Day6Skit
+

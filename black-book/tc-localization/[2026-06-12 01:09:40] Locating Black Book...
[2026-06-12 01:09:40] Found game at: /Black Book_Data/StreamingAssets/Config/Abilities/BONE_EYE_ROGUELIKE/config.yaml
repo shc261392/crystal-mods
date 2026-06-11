@@ -1,0 +1,23 @@
+﻿Name: Костяной сглаз
+AbilityType: BONE_EYE_ROGUELIKE
+AbilityBookPartType: KEY
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: BONE_EYE
+GoldCost: 29
+Effects:
+- EffectType: SACRIFICE_SKLAD
+  MinValue: 5
+  MaxValue: 5
+- EffectType: STATUS_MULTIPLIER
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal3KeyBlack
+    MissTrigger: Seal3KeyBlack
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: Cursed
+

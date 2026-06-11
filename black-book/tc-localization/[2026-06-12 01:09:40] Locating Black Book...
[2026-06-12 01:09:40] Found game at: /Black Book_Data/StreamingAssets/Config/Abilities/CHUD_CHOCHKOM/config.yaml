@@ -1,0 +1,19 @@
+﻿Name: Чочком
+AbilityType: CHUD_CHOCHKOM
+TargetType: ENEMY
+Intention: BUFF
+Sprite: CHUD_CHOCHKOM
+GoldCost: 10
+Effects:
+- EffectType: STATUS
+  StatusEffectType: CrownWhite
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: BAD_STATUS
+    ReadyTrigger: Word
+    SpellTrigger: Attack
+    MissTrigger: Attack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

@@ -1,0 +1,25 @@
+﻿Name: Окиян-море
+AbilityType: OKIAN_MORE
+AbilityBookPartType: KEY
+Upgrade: OKIAN_MORE_UP
+TargetType: SELF
+Intention: DEBUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: OKIAN_MORE
+GoldCost: 21
+Effects:
+- EffectType: KRADA
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal3KeyWhite
+    MissTrigger: Seal3KeyWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: OberegOnHealthLoss
+  StatusPermanent: true
+

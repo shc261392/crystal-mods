@@ -1,0 +1,10 @@
+﻿Name: 泼留德山
+Description: 他们都说泼留德是个大英雄的名字。这人打败敌人之后，就跑地底下睡觉去了，啥时候需要他，他啥时候才会再来。
+ShortQuestDescr: 寻找婚礼来宾
+LongQuestDescr: 亚历山大把迎亲的人变成狼了！我得找着那些狼人，让他们变回人形。
+LevelConfig:
+  Battle:
+    Name: 领狼的人
+  BattleAlternative:
+    Name: 领狼的人
+

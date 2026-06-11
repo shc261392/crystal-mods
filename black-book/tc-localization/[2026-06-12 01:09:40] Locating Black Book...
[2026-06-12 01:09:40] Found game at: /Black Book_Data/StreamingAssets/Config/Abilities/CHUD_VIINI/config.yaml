@@ -1,0 +1,17 @@
+﻿Name: Вийны
+AbilityType: CHUD_VIINI
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: CHUD_VIINI
+GoldCost: 10
+Effects:
+- MinValue: 7
+  MaxValue: 20
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Attack
+    MissTrigger: Attack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

@@ -1,0 +1,12 @@
+﻿Name: Побег
+AbilityType: MUG_FLEE
+TargetType: SELF
+Intention: BUFF
+Sprite: MUG_STRIKE
+GoldCost: 3
+RitualTime: 2
+Effects:
+- EffectType: FLEE
+  MinValue: 15
+  MaxValue: 20
+

@@ -1,0 +1,12 @@
+﻿IdName: Week3Day7LairEntrance
+Name: Зев пещеры
+Description: Это порог чертога горного; там и живет хозяин, что оборотней держит.
+Scene: PoludTop
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day7/LairEntrance/Intro
+RequiredLocations:
+- Week3Day7Creek
+

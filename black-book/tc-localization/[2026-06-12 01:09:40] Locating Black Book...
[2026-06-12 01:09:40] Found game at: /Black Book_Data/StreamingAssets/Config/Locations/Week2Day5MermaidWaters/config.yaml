@@ -1,0 +1,10 @@
+﻿IdName: Week2Day5MermaidWaters
+Name: Русалья заводь
+Description: ''
+Scene: Backwater
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day5/MermaidWaters
+OnomastikonItems:
+- Onomastikon/Tales/46
+

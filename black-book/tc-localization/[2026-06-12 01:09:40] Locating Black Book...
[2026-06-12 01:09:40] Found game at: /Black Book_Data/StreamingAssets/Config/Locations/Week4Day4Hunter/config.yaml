@@ -1,0 +1,12 @@
+﻿IdName: Week4Day4Hunter
+Name: Домик охотника
+Description: Изба Ефима на окраине деревни.
+Scene: HunterCabin
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day4/Hunter/Intro
+OnomastikonItems:
+- Onomastikon/Encyclopedia/27
+CanBeVisitedMultiple: true
+

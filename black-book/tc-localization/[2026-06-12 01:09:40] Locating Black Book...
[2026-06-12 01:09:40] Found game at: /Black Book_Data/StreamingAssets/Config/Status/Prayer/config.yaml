@@ -1,0 +1,7 @@
+﻿Unique: true
+Name: Молитва
+Description: Увеличивает благословение в начале хода на {Duration}
+Sprite: StatPray
+AdditionalStatusData: Blessed
+DecreaseOnStartTurn: true
+

@@ -1,0 +1,9 @@
+﻿Name: 犬の小川
+Description: この小川はどこかおかしい。ここでは色々なことが起きるのだ。村人からここを調べて、魔物がいるなら退治してくれと頼まれた。
+ShortQuestDescr: 小川に捨てられたもの
+LevelConfig:
+  Battle:
+    Name: 小川のチュヂ族
+  BattleAlternative:
+    Name: 小川のチュヂ族
+

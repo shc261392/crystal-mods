@@ -1,0 +1,19 @@
+﻿IdName: Week4Day4AnisiaPovet
+Name: Под поветью у Анисьи
+Scene: Podpol
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Нечисть под поветью
+    Enemies:
+    - Type: Domovoi
+      LevelSpawnPointType: EnemyCenter
+    - Type: Demon
+    - Type: Demon
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day4/Anisia/PovetIntro
+

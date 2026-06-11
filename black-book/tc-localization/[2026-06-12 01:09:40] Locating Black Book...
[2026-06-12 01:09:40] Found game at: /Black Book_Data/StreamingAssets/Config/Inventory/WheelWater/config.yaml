@@ -1,0 +1,9 @@
+﻿Name: Вода из-под колеса
+InventoryItemName: WheelWater
+Flavour: Мельничная вода – живая, ладить людей помогает
+Sprite: WheelWater
+Cost: 80
+Effects:
+- Value: 20
+  Type: InventoryItemUseFreeChance
+

@@ -1,0 +1,19 @@
+﻿Name: Ломея
+AbilityType: LOMEYA
+Upgrade: LOMEYA_UP
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: LOMEYA
+GoldCost: 18
+Effects:
+  - MinValue: 1
+    MaxValue: 1
+    VisualEffect:
+      VisualEffectType: KILA
+      ReadyTrigger: Word
+      SpellTrigger: Seal5OrderBlack
+      MissTrigger: Seal5OrderBlack
+      WrapUpTime: 0.200000003
+      SkipReady: true
+    RepeatCount: 3
+

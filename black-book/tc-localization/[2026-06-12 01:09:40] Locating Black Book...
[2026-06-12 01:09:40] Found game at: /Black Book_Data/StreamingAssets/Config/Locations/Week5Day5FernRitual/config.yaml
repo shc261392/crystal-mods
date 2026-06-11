@@ -1,0 +1,13 @@
+﻿IdName: Week5Day5FernRitual
+Name: Как цветет папоротник
+Scene: Fern
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/Explore2
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day5/Fern/Intro
+  Exploration: Week5Day5FernRitual
+  CinematicIntro: true
+OnomastikonItems:
+- Onomastikon/Tales/40
+

@@ -1,0 +1,19 @@
+﻿Name: Укус перевертыша
+AbilityType: WOLF_BITE_DEADLY
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: WOLF_BITE_DEADLY
+GoldCost: 3
+Effects:
+- EffectType: DAMAGE_FIERCE
+  MinValue: 3
+  MaxValue: 3
+  NumericData: 1
+  VisualEffect:
+    VisualEffectType: BITE
+    ReadyTrigger: Bite
+    SpellTrigger: Bite
+    MissTrigger: BiteMiss
+    WrapUpTime: 1
+    SkipReady: true
+

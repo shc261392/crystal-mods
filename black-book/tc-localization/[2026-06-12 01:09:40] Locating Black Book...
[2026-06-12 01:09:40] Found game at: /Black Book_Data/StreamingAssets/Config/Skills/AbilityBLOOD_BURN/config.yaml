@@ -1,0 +1,10 @@
+Name: BLOOD_BURN
+SkillName: AbilityBLOOD_BURN
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityLAKE_DEPTH
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: BLOOD_BURN

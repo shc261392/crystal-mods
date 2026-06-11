@@ -1,0 +1,43 @@
+﻿IdName: Week4Day6Stump
+Name: Куль-пу
+Description: Вновь дорога ведет к тому старому дереву.
+ShortQuestDescr: Нагнать пастуха
+LongQuestDescr: Филимон оказался лесным бесом. Надо его поймать и заставить освободить деревню, а то и печать открыть.
+Scene: LeshiySonNest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Пастух Филимон
+    Enemies:
+    - Type: Filimon
+      LevelSpawnPointType: EnemyCenter
+    Barks:
+    - Id: Battle/Filimon/First
+      HealthPercent: 0.800000012
+      TargetUnit: Filimon
+    - Id: Battle/Filimon/Second
+      HealthPercent: 0.5
+      TargetUnit: Filimon
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day6/Stump/Intro
+    Outro: TextQuest/Week4/Day6/Stump/Outro
+  CameraOverride: CMMainCamera (1)
+RequiredLocations:
+- Week4Day6Lug
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+- Proshka
+- ProshkaLoyal
+OnomastikonItems:
+- Onomastikon/Encyclopedia/59
+

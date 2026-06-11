@@ -1,0 +1,16 @@
+﻿Name: Отчаянный удар
+AbilityType: DESPERATE_BLOW
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: DESPERATE_BLOW
+GoldCost: 3
+Effects:
+- MinValue: 1
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

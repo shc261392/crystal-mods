@@ -1,0 +1,9 @@
+﻿Name: Creaky Woods
+Description: The holy fool ran in this direction. The noises coming from the forest are rather strange. It sounds like bones crunching!
+ShortQuestDescr: Follow the runaway
+LevelConfig:
+  Battle:
+    Name: Huge log
+  BattleAlternative:
+    Name: Huge log
+

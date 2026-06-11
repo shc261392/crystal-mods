@@ -1,0 +1,11 @@
+﻿IdName: Week6Day2Stealth
+Name: Забрать книгу!
+Scene: TkachihaSpiderIntro
+LevelConfig:
+  Exploration: Week6Day2Stealth
+  CameraOverride: CMSneakFrontCam
+  MusicOverride: event:/Music/Stealth
+  MixerSnapshot: snapshot:/Cave
+HideBook: true
+InvisibleMaterial: true
+

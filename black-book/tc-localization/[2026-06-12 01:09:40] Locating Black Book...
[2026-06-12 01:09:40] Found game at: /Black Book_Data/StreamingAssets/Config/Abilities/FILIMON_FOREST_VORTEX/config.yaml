@@ -1,0 +1,16 @@
+﻿Name: Лесной вихрь
+AbilityType: FILIMON_FOREST_VORTEX
+TargetType: ENEMY
+Intention: ATTACK_DEBUFF
+Sprite: FILIMON_FOREST_VORTEX
+GoldCost: 3
+Effects:
+- MinValue: 30
+  MaxValue: 66
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+

@@ -1,0 +1,8 @@
+﻿Name: 古い倉庫
+Description: やった！ ここから地下を出られる！
+ShortQuestDescr: 脱出する
+LongQuestDescr: アレクサンドルと糸繰りはヴァシリーサを牢屋に入れて黒の書を奪った。牢屋を脱出して禁遺物を取り戻さねばならない。
+LevelConfig:
+  Battle:
+    Name: とがった歯の白鳥
+

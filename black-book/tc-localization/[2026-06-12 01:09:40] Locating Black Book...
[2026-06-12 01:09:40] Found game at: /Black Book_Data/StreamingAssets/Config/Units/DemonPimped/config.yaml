@@ -1,0 +1,15 @@
+﻿AssetName: DemonPimped
+Health: 300
+Mana: 4
+Initiative: 2
+MoneyMin: 18
+MoneyMax: 30
+Experience: 50
+UnitAI:
+  AIAbilities:
+  - AbilityType: TOGETHER
+    TargetType: ENEMY
+  - AbilityType: IN_LOOSE
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Развалюха

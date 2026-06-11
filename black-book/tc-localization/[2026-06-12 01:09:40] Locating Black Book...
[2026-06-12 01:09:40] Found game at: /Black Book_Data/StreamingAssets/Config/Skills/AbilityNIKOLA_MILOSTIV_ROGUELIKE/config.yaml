@@ -1,0 +1,10 @@
+Name: NIKOLA_MILOSTIV_ROGUELIKE 
+SkillName: AbilityNIKOLA_MILOSTIV_ROGUELIKE 
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityCROSS2
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: NIKOLA_MILOSTIV_ROGUELIKE 

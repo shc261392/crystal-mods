@@ -1,0 +1,224 @@
+MinCards: 13
+MaxCards: 33
+MaxCardsOfOneType: 4
+NewPageBattleEndQuantity: 3
+UpgradeToRegular:
+  AVOIL_UP: AVOIL
+  GRYJA_UP: GRYJA
+  VARAHAIL_UP: VARAHAIL
+  KILA_UP: KILA
+  SELAFIIL_UP: SELAFIIL
+  BAD_EYE_UP: BAD_EYE
+  ALTAR_UP: ALTAR
+  UROKI_UP: UROKI
+  MOON_BROTHERS_UP: MOON_BROTHERS
+  ZACHERTIT_UP: ZACHERTIT
+  POSMOTRIL_UP: POSMOTRIL
+  OGNEYASTRA_UP: OGNEYASTRA
+  BABUSHKA_ADAMUSHKA_UP: BABUSHKA_ADAMUSHKA
+  PEREPOLOH_UP: PEREPOLOH
+  KAIN_UP: KAIN
+  UGASIIL_UP: UGASIIL
+  RAZOIL_UP: RAZOIL
+  KORKUSHA_UP: KORKUSHA
+  SALMANIDA_UP: SALMANIDA
+SealToPages:
+  0:
+    # Black Orders 
+    - URAZI
+    - KILA
+    - GRYJA
+    - NAVA
+    - SKORCHIT
+    - PEREPOLOH
+    # Black Keys
+    - RUDA
+    - LOCK
+    - KEY_TONGUE
+    - FIRMER_STONE
+    - DEMON_WIZARD
+    # White Orders
+    - AVDELAI
+    - AVOIL
+    - GEORGY_BATUSHKA
+    - BABUSHKA_MANDALINA
+    - VARAHAIL
+    - SALMANIDA
+    # White Keys
+    - RABA
+    - IGLA
+    - AMEN
+    - ONCE_AND_FOREVER
+    - FOR_FATHER
+    - BABUSHKA_SERAFIMUSHKA
+  1:
+    # Black Orders
+    - KAIN
+    - BAD_EYE
+    - OGNEVITSA
+    - HOHOR
+    - LESHAK_HOROVEY
+    # Black Keys
+    - SEA_DEPTH
+    - FIRM_KNIFE
+    - BLOOD_BURN
+    - SNAKE_STING
+    - PRIZOR_STICKY
+    # White Orders
+    - ABEL
+    - MOON_BROTHERS
+    - BLUE_STONE
+    - MIKHAIL_VOEVODA
+    - NIKOLA_GEORGY
+    # White Keys
+    - ZACHERTIT
+    - DEMONS_DEATH
+    - LOTON_PLEASURE
+    - RED_SUN
+    - SHUKA_BELUGA
+  2:
+    # Black Orders
+    - UROKI
+    - KORKOTEYA
+    - SMERTEYA
+    - UBEITSA
+    - KORKUSHA
+    # Black Keys
+    - DAMASK_STONE
+    - NEW_CHAIN
+    - ERETNIK_SQUAD
+    - BONE_EYE
+    - SATANAIL
+    # White Orders
+    - GEORGY_BRAVE
+    - RAZOIL
+    - FAITHFUL_HOPE
+    - MIKHAIL_ARHISTRATIG
+    - UGASIIL
+    # White Keys
+    - SKY_HIGH
+    - OKIAN_MORE
+    - SALT_EYE
+    - STRONGER_STEEL
+    - MUSHROOM_BREAD
+  3:
+    # Black Orders
+    - OMUR_RIVER
+    - SNAKE_HEAD
+    - DEAD_MAN
+    - OGNEYASTRA
+    - PAVLUSHKA
+    # Black Keys
+    - FOREVER_AND_EVER
+    - WORMS
+    - WORDS_BURN
+    - BURNING_STONE
+    - FIRE_IMAGE
+    # White Orders
+    - SELAFIIL
+    - WORD_PRAYER
+    - CHUR
+    - BABUSHKA_YAGA
+    - NIKOLA_MILOSTIV
+    # White Keys
+    - BEAUTY_CHURCHES
+    - BLOOD_CLOTTED
+    - BABUSHKA_ATAMANUSHKA
+    - CROSS2
+  4:
+    # Black Orders
+    - TICKLING
+    - JUDEA
+    - SKORCHEN
+    - KOSTOLOMISHE
+    - TRYASOVITSA
+    # Black Keys
+    - IROD_BONES
+    - TOMASHIHA
+    - REVUN
+    - OSINA
+    # White Orders
+    - BABUSHKA_ADAMUSHKA
+    - HEADLESS
+    - RIZI
+    - ENAHA_DEMON
+    # White Keys
+    - HELP_NIKOLA
+    - LAZAR
+    - FISH_WHALE
+    - WITCH_MOUTH
+  5:
+    # Black Orders
+    - WIND_FIERCE
+    - VASILY_BOIL
+    - DAVLEYA
+    # Black Keys
+    - CHAINS_OF_FIRE
+    - CIRCLE_BLADE
+    - PRIZOR
+    # White Orders
+    - HAIR
+    - POSMOTRIL
+    - HUMAN_HAND
+    # White Keys
+    - ANGEL_GLORY
+    - OSINA_JUDAS
+    - DEDUSHKA_ADAMY
+  6:
+    # Black Orders
+    - SUHOTA
+    - SILENT_AILMENT
+    - CHEMER
+    # Black Keys
+    - SATANOVICH
+    - PRIKOS
+    - LOMOTA
+    # White Orders
+    - WIND_LUKA
+    - FAITHFUL_PROTECTION
+    - GEORGY_PRAYER
+    # White Keys
+    - WIND_MOSES
+    - GEORGY_FIRE
+    - NIKOLA_BATUSHKA
+UnlockedPagesByDefault:
+  0:
+    - URAZI
+    - KILA
+    - RUDA
+    - AVDELAI
+    - VARAHAIL
+    - RABA
+    - IGLA
+    - SKORCHIT
+  1:
+    - KAIN
+    - SNAKE_STING
+    - ABEL
+    - ZACHERTIT
+  2:
+    - KORKOTEYA
+    - DAMASK_STONE
+    - GEORGY_BRAVE
+    - SKY_HIGH
+  3:
+    - OMUR_RIVER
+    - SELAFIIL
+    - FOREVER_AND_EVER
+    - BABUSHKA_ATAMANUSHKA
+  4:
+    - TICKLING
+    - OSINA
+    - HEADLESS
+    - LAZAR
+  5:
+    - VASILY_BOIL
+    - DAVLEYA
+    - PRIZOR
+    - HAIR
+    - ANGEL_GLORY
+  6:
+    - SILENT_AILMENT
+    - LOMOTA
+    - GEORGY_PRAYER
+    - NIKOLA_BATUSHKA

@@ -1,0 +1,16 @@
+﻿IdName: Week4Day3DarkForest
+Name: Лес Карнышка
+Description: Еще одна непроходимая роща; тут ее самая глухая часть.
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day3/DarkForest
+LightingType: FOG_2
+MoonType: NONE
+RequiredLocations:
+- Week4Day3Burned
+OnomastikonItems:
+- Onomastikon/Encyclopedia/56
+

@@ -1,0 +1,17 @@
+﻿Name: Освежевать
+AbilityType: DEMON_SKIN
+TargetType: ENEMY
+Intention: DEBUFF
+Sprite: DEMON_SKIN
+GoldCost: 3
+Effects:
+- EffectType: REMOVE_GOOD_STATUS
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+

@@ -1,0 +1,12 @@
+﻿Name: Колюка-трава
+InventoryItemName: KolukaHerb
+Type: Herb
+Flavour: Есть колюка-трава, сбирается в Петров пост. Обкуришь ею стрелу – промаху не дашь.
+Sprite: KolukaHerb
+Expendable: true
+Cost: 35
+Effects:
+- Value: 3
+  Type: Status
+  StatusName: Blessed
+

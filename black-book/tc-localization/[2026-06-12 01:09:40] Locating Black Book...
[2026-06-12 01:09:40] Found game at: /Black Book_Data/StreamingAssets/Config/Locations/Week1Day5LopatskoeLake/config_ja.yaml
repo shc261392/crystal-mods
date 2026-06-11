@@ -1,0 +1,7 @@
+﻿Name: ロパツコエ湖
+Description: コルヴァ川の左岸にある湾曲した湖。
+ShortQuestDescr: 釣りの仕掛けを返す
+LevelConfig:
+  Battle:
+    Name: 湖のほとりのチョルト
+

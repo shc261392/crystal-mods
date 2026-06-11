@@ -1,0 +1,76 @@
+﻿Name: Батюшка
+Id: Priest
+AssetName: Priest
+DialogueName: TextQuest/Priest/PriestConversation
+SoldItems:
+- ItemName: Ladan
+  Quantity: 1
+- ItemName: Prosphora
+  Quantity: 1
+- ItemName: SaintWater
+  Quantity: 1  
+RandomItems:
+- ItemName: RedThread
+  Quantity: 1
+  Probability: 1
+- ItemName: Sota
+  Quantity: 1
+  Probability: 0.400000006
+- ItemName: Lock
+  Quantity: 1
+  Probability: 1
+- ItemName: JerusalemWater
+  Quantity: 1
+  Probability: 1
+- ItemName: Lantern
+  Quantity: 1
+  Probability: 1
+- ItemName: BoughtIcon
+  Quantity: 1
+  Probability: 1
+- ItemName: PrayerBook
+  Quantity: 1
+  Probability: 1
+- ItemName: Katseya
+  Quantity: 1
+  Probability: 1
+- ItemName: Kadilnitsa
+  Quantity: 1
+  Probability: 1
+- ItemName: LifeStefan
+  Quantity: 1
+  Probability: 1
+- ItemName: SewnIcon
+  Quantity: 1
+  Probability: 1
+- ItemName: LifeParaskeva
+  Quantity: 1
+  Probability: 1
+- ItemName: BookPsaltir
+  Quantity: 1
+  Probability: 1
+- ItemName: SaintWater
+  Quantity: 1
+  Probability: 1
+- ItemName: Kiryan
+  Quantity: 1
+  Probability: 1
+- ItemName: HeruvimUnknown
+  Quantity: 1
+  Probability: 1
+- ItemName: SaintLeg
+  Quantity: 1
+  Probability: 1
+- ItemName: SaintEye
+  Quantity: 1
+  Probability: 1
+- ItemName: SaintHand
+  Quantity: 1
+  Probability: 0.1
+TearPageCost: 5
+ChangePageCost: 4
+HealCost: 5
+CursedRemovalCost: 5
+Min: 3
+Max: 15
+

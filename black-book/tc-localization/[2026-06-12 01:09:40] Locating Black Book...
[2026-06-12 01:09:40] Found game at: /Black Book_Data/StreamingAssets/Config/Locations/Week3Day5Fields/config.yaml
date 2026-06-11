@@ -1,0 +1,33 @@
+﻿IdName: Week3Day5Fields
+Name: Алешкинские поля
+Description: Здесь-то и поселились черти, что полевому спокою не дают.
+ShortQuestDescr: Прогнать шумных бесов
+Scene: Fields
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Шумные бесы
+    Enemies:
+    - Type: DemonFierce
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonPoison
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day5/Fields/Intro
+    Outro: TextQuest/Week3/Day5/Fields/Outro
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 4
+    PossiblePlayers:
+      - Demon
+      - Andropko
+      - Fyodor
+    DialogueFoolWin: TextQuest/Durak/WinBattleUtil
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil    
+RequiredLocations:
+- Week3Day5Aleshkina
+Secondary: Week3Day5Fields
+

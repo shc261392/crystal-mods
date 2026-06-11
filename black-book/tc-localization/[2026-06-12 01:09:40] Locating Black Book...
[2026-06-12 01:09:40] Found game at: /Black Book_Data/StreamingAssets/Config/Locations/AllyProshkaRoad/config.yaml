@@ -1,0 +1,46 @@
+﻿IdName: AllyProshkaRoad
+Name: Дорога на Янидор
+Description: Эта дорога ведет на восток к Вильгорту. От этого места и до Янидора недалеко.
+Scene: Road
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/Proshka
+  Battle:
+    Name: Загадки во мраке
+    Enemies:
+      - Type: DemonPuzzle1
+        LevelSpawnPointType: EnemyCenter
+        HealthOverride: 25
+    NoShuffle: true
+    PuzzleDeck:
+      - KILA
+      - KILA
+      - AVDELAI
+      - AVDELAI
+      - KILA
+      - AVDELAI
+      - KILA
+      - AVDELAI
+      - KILA
+      - AVDELAI
+      - KILA
+      - AVDELAI
+      - RUDA
+      - DEMON_WIZARD
+      - LAZAR
+      - RABA
+      - RABA
+      - RABA
+      - RABA
+    PuzzleManaOverride:
+      - 2
+      - 1
+    PuzzleHandOverride:
+      - 5
+      - 3
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 2
+  Quest:
+    DialogueSystemName: TextQuest/AllyProshka/Road/Intro
+

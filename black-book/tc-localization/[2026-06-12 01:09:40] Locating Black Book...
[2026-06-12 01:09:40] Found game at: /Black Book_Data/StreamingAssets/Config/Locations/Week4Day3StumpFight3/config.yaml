@@ -1,0 +1,22 @@
+﻿IdName: Week4Day3StumpFight2
+Name: Третий лешачий замок
+Description: ''
+LocationType: COMBAT
+Scene: LeshiySonNest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Третий лешачий замок
+    Enemies:
+    - Type: Leshak
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day3/Stump/Battle
+    Outro: TextQuest/Week4/Day3/Stump/BattleOutro3
+  CameraOverride: CMBattleCamera
+RequiredLocations:
+- Week4Day3BadPlace
+

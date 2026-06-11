@@ -1,0 +1,13 @@
+﻿IdName: AllyProshkaHerbalist
+Name: Травница у камня
+Description: У Стефанова камня сегодня торгует травница.
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Merchants:
+  - Herbalist3
+  Quest:
+    DialogueSystemName: TextQuest/Merchant/Herbalist/Conversation
+RequiredLocations:
+- AllyProshkaBridge
+

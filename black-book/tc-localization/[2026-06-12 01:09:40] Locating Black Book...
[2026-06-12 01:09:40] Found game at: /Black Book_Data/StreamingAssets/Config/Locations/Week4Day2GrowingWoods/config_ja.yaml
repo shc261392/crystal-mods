@@ -1,0 +1,6 @@
+﻿Name: 鬱蒼とした森
+Description: この森の手入れは村人たちの手に負えない。木々が伸び放題になっている。
+LevelConfig:
+  Battle:
+    Name: 道のチョルト
+

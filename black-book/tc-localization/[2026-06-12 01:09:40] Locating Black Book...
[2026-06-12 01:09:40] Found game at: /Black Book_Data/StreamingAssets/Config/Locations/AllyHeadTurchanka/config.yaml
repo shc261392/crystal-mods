@@ -1,0 +1,62 @@
+﻿IdName: AllyHeadTurchanka
+Name: Деревня Турчанка
+Description: Не буду заходить в Турчанку-то, надо в Бондюг поторопиться.
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Родниковая чудь
+    Enemies:
+    - Type: DemonPuzzleAttack1
+      LevelSpawnPointType: EnemyCenter
+      HealthOverride: 24
+    - Type: DemonPuzzleAttack1
+      HealthOverride: 17
+    - Type: DemonPuzzleAttack1
+      LevelSpawnPointType: EnemyRight
+      HealthOverride: 17
+    NoShuffle: true
+    PuzzleDeck:
+    - AVDELAI
+    - AVDELAI
+    - AVDELAI
+    - KILA
+    - KILA
+    - KILA
+    - AVDELAI
+    - AVDELAI
+    - AVDELAI
+    - AVDELAI
+    - AVDELAI
+    - WITCH_MOUTH_PUZZLE
+    - RUDA
+    - LOCK
+    - LAZAR
+    - LAZAR
+    - LAZAR
+    - LAZAR
+    - LAZAR
+    - LAZAR
+    PuzzleManaOverride:
+    - 3
+    - 2
+    PuzzleHandOverride:
+    - 6
+    - 3
+    ForceAlly: WhiteHead
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 2
+  Quest:
+    DialogueSystemName: TextQuest/AllyHead/Turchanka/Intro
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 3
+    PossiblePlayers:
+    - Demon
+    - Demon
+    DialogueFoolWin: TextQuest/Durak/WinBattleUtil
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+RequiredLocations:
+- AllyHeadBigOchga
+

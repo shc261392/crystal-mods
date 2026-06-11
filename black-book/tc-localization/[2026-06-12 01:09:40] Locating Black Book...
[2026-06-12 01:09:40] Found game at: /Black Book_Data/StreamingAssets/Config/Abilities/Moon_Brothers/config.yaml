@@ -1,0 +1,24 @@
+﻿Name: Луны братья
+AbilityType: MOON_BROTHERS
+Upgrade: MOON_BROTHERS_UP
+TargetType: ENEMY
+Intention: BUFF
+Color: WHITE
+Sprite: MOON_BROTHERS
+GoldCost: 26
+Effects:
+- EffectType: DAMAGE_SKLAD
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal2OrderBlack
+    MissTrigger: Seal2OrderWhite
+    WrapUpTime: 0.200000003
+    SkipReady: true
+- EffectType: DEFENCE_SKLAD
+  MinValue: 3
+  MaxValue: 3
+  ForceTarget: PLAYER
+

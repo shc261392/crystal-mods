@@ -1,0 +1,14 @@
+﻿Name: Лихорадочные свечи
+InventoryItemName: SickCandles
+Flavour: Навстречу им двенадцать комух – антихристовых дочерей
+Sprite: SickCandles
+Cost: 220
+NotForSale: true
+CanNotBeDropped: true
+Effects:
+- Value: 4
+  Type: StatusBonus
+  StatusName: Waste
+- Value: 1
+  Type: AdditionalSins
+

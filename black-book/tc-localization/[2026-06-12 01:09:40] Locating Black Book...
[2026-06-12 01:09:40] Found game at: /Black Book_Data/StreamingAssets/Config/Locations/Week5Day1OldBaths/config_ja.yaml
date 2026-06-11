@@ -1,0 +1,6 @@
+﻿Name: 古いバーニャ
+Description: ここはニコライと一緒に花嫁の呪いを解いた場所だ。もうずっと昔のことのように思える…
+LevelConfig:
+  Battle:
+    Name: 炭
+

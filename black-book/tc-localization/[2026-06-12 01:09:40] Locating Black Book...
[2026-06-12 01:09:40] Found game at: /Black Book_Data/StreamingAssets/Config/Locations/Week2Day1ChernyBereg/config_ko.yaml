@@ -1,0 +1,6 @@
+﻿Name: 검은 강기슭
+Description: 이곳이 검은 강기슭이라 불리는 데에는 다 이유가 있다. 조심해야 한다.
+LevelConfig:
+  Battle:
+    Name: 강기슭 악마
+

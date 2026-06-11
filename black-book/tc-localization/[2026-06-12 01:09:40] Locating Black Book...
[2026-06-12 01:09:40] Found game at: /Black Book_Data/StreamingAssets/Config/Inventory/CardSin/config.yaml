@@ -1,0 +1,10 @@
+Name: Греховный туз
+InventoryItemName: CardSin
+Type: Artefact
+Flavour: В грехи играли. Кладешь парные карты - друг на друга, если непарные получатся - твой грех.
+Sprite: IconCardSin
+Expendable: false
+Cost: 120
+Effects:
+  - Value: 1
+    Type: AdditionalFoolSwitch

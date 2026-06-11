@@ -1,0 +1,17 @@
+﻿Name: Алатырь+
+AbilityType: ALTAR_UP
+TargetType: SELF
+Intention: BUFF
+Sprite: AltarAbility
+GoldCost: 7
+Effects:
+- EffectType: HEAL
+  MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    ReadyTrigger: Word
+    SpellTrigger: GoodStatus
+    MissTrigger: GoodStatus
+    WrapUpTime: 0.5
+    SkipReady: true
+

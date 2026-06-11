@@ -1,0 +1,21 @@
+﻿AssetName: Ghost
+Health: 13
+HealthRandomAdd: 5
+Mana: 4
+Initiative: 1
+MoneyMin: 3
+MoneyMax: 7
+Experience: 300
+StartingStatusEffects:
+- StatusEffectType: Ethereal
+  Duration: 3
+  HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: GHOST_ATTACK
+    TargetType: ENEMY
+  - AbilityType: GHOST_CRY
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Призрак
+

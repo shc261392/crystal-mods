@@ -1,0 +1,6 @@
+﻿Name: Cemetery
+Description: Drowners "live" quite a long time, but not forever. Some are eaten by fish and some die for good from hard work.
+LevelConfig:
+  Battle:
+    Name: Lake Cemetery
+

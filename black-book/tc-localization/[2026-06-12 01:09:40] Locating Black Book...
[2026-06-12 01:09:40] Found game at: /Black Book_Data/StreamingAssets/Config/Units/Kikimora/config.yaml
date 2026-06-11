@@ -1,0 +1,24 @@
+﻿AssetName: Kikimora
+Health: 200
+Mana: 4
+Initiative: 1
+MoneyMin: 60
+MoneyMax: 120
+Experience: 500
+StartingStatusEffects:
+- StatusEffectType: Ethereal
+  Duration: 999
+  Permanent: true
+  Unremovable: true
+  HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: DEAD_YARN
+    TargetType: SELF
+  - AbilityType: GRAVE_CLAWS
+    TargetType: ENEMY
+  - AbilityType: UNBAPTIZED_SISTER
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Кикимора
+

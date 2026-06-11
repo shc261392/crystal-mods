@@ -1,0 +1,11 @@
+﻿Name: Ребро грешника
+InventoryItemName: SinnerRib
+Flavour: 'Как помирать начал, дак его давай терзать шишига: не дает уйти на тот свет'
+Sprite: SinnerRib
+Cost: 320
+Effects:
+- Value: 2
+  Type: AdditionalDamage
+- Value: 2
+  Type: AdditionalSins
+

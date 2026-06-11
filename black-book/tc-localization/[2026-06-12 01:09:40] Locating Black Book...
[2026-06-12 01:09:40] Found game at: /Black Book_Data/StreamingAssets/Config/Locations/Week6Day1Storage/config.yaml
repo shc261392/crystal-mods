@@ -1,0 +1,47 @@
+﻿IdName: Week6Day1Storage
+Name: Кладовка
+Description: Это голбец местный. Может быть, удастся найти полезные припасы?
+Scene: PrisonReExploration
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  Battle:
+    Name: Подвальная нечисть
+    Enemies:
+    - Type: DomovoiPuzzle
+      LevelSpawnPointType: EnemyCenter
+    NoShuffle: true
+    PuzzleDeck:
+    - AVOIL
+    - GRYJA
+    - PEREPOLOH
+    - GRYJA
+    - KILA
+    - KILA
+    - KILA
+    - KILA
+    - KILA
+    - KILA
+    - KILA
+    - KILA
+    - RUDA
+    - DEMON_WIZARD
+    - RABA
+    - RABA
+    PuzzleManaOverride:
+    - 2
+    - 1
+    PuzzleHandOverride:
+    - 4
+    - 2
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day1/Storage/Intro
+  CameraOverride: CMHallCamera
+  DialogueCameraOverride: CMDialogueCamera2
+  MusicOverride: event:/Music/ExploreDark
+RequiredLocations:
+- Week6Day1Passage
+OnomastikonItems:
+- Onomastikon/Encyclopedia/44
+HideBook: true

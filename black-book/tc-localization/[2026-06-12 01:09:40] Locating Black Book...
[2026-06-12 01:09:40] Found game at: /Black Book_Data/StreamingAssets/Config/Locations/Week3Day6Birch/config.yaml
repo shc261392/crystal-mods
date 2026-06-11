@@ -1,0 +1,13 @@
+﻿IdName: Week3Day6Birch
+Name: Сосновая роща
+Description: Чем ближе к Полюду, тем страшнее лес. Быстрее бы отсюда выбраться – тут мир словно другой.
+Scene: Forest_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/Explore2
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day6/Birch/Intro
+  MusicOverride: event:/Music/Explore2
+RequiredLocations:
+- Week3Day6Village
+

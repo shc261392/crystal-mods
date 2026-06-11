@@ -1,0 +1,21 @@
+﻿IdName: Week5Day2Graveyard
+Name: Городское кладбище
+Scene: CherdynCemetery
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Battle:
+    Name: Векшица-дочка
+    Enemies:
+    - Type: Vekshitsa
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/BattleBoss2
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day2/Graveyard/Intro
+    Outro: TextQuest/Week5/Day2/Graveyard/Outro
+  Exploration: Week5Day2Graveyard
+  CinematicIntro: true
+  MusicOverride: event:/Music/ExploreDark
+  MixerSnapshot: snapshot:/Forest

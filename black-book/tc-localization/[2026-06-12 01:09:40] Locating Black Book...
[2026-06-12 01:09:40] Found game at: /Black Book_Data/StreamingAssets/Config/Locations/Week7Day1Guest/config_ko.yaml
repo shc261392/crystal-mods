@@ -1,0 +1,7 @@
+﻿Name: 카자크인 손님
+Description: 지옥의 콜둔과 초르트는 서로 우호적인 관계인 듯하다. 그래서 이 초르트도 불청객을 처리하는 데 도와달라고 부탁했다.
+ShortQuestDescr: 카자크인의 운명 결정하기
+LevelConfig:
+  Battle:
+    Name: 길을 잃은 카자크인
+

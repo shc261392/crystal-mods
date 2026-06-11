@@ -1,0 +1,24 @@
+AssetName: OldChangeling
+Health: 1
+Mana: 4
+Initiative: 1
+MoneyMin: 36
+MoneyMax: 54
+Experience: 2000
+SkillPoints: 0
+StartingStatusEffects:
+  - StatusEffectType: DefenceGive
+    Duration: 20
+UnitAI: 
+  CastingType: CONSEQUITIVE
+  AISpecialAbilities:
+  AIAbilities:
+    - AbilityType: OLD_CHANGELING_PUZZLE_WASTE
+      TargetType: ENEMY
+    - AbilityType: OLD_CHANGELING_PUZZLE_ATTACK
+      TargetType: ENEMY
+      ConsequitiveRounds: 10
+RewardAbilities:
+Name: Старый подменыш
+ShortDescription: Короткое описание
+Description: Описание

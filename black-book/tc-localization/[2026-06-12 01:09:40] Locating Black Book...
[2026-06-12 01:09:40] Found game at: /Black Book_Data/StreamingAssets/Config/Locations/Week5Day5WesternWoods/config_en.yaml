@@ -1,0 +1,8 @@
+﻿Name: Western Woods
+Description: These ancient woods are known far and wide. I'm going to find the Fern Flower in their thicket.
+ShortQuestDescr: Find the Fern Flower
+LongQuestDescr: You have all the items you need for the rite. The only thing left is to get to the thicket where the Flower can be found.
+LevelConfig:
+  Battle:
+    Name: Kupala Chorts
+

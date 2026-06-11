@@ -1,0 +1,19 @@
+﻿IdName: Week5Day5EgorWoods
+Name: Роща у избы
+Description: Наш дом на отшибе Вильгорта часто привлекает бесов. Сегодня, накануне солнцеворота, они точно заведутся.
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Ивановские бесы
+    Enemies:
+    - Type: DemonFly
+      LevelSpawnPointType: EnemyCenter
+    - Type: SnakeCopper
+    - Type: SnakeGaduka
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day5/EgorWoods/Intro
+

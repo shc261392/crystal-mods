@@ -1,0 +1,16 @@
+﻿IdName: Week4Day7Viam
+Name: Сухой Вьям
+Description: Старое заброшенное поле. Почему деревьев тут нету?
+Scene: Fields
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day7/Viam/Intro
+  Exploration: Week4Day7Viam
+  CameraOverride: CMQuestCamera2
+  NoExplorerSpawn: true
+LightingType: FOG
+OnomastikonItems:
+- Onomastikon/Encyclopedia/19
+

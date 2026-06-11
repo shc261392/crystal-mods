@@ -1,0 +1,13 @@
+﻿IdName: Week3Day2WestCut
+Name: Западная вырубка
+Description: Лес тут добывали недавно. Интересно, спросили ли разрешения у лешего?
+Scene: Forest_4
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Artefact/ArmyWorm
+RequiredLocations:
+- Week3Day2Bondugov
+OnomastikonItems:
+- Onomastikon/Tales/18
+

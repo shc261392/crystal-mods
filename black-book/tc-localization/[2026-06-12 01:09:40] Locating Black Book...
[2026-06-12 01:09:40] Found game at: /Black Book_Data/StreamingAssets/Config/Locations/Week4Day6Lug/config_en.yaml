@@ -1,0 +1,6 @@
+﻿Name: Guzzle Field
+Description: When you drink a lot of water, they call it guzzling. So what kind of a field is it? One that drinks a lot?
+LevelConfig:
+  Battle:
+    Name: Swamp Leshiy
+

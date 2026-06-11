@@ -1,0 +1,30 @@
+﻿IdName: Week2Day5Gates
+Name: Врата во дворец
+Description: В старых преданиях ворота у водяного из хрусталя. В реальности все оказывается не так, как в сказках.
+Scene: MermanGates2
+LevelConfig:
+  Battle:
+    Name: У ворот
+    Enemies:
+    - Type: Drowner
+      LevelSpawnPointType: EnemyCenter
+    - Type: Drowner
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day5/MermanGates
+  MusicOverride: event:/Music/Underwater
+  MixerSnapshot: snapshot:/Underwater
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 4
+    TeamPlay: true
+    PossiblePlayers:
+    - Drowner
+    - Mermaid
+    - Drowner2
+    DialogueFoolWin: TextQuest/Durak/WinBattleUtil
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+RequiredLocations:
+- Week2Day5Cemetery
+

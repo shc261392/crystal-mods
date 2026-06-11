@@ -1,0 +1,13 @@
+﻿Name: Припутник
+InventoryItemName: Priputnik
+Type: Herb
+Flavour: Тогда змея принесла припутника, пучок на другую сложила, та и воскресла, словно воз и не раздавил ее
+Sprite: Priputnik
+Expendable: true
+Cost: 38
+Effects:
+- Value: 1
+  Type: Status
+  StatusName: Voskresnyy
+  StatusPermanent: true
+

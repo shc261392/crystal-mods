@@ -1,0 +1,10 @@
+﻿Name: Глаз для святого
+InventoryItemName: SaintEye
+Flavour: Отдам серебро иконе-то, а то глаза все завешало
+Sprite: IconSaintEye
+Cost: 100
+Effects:
+  - Value: 1
+    Type: StatusOnBattleStart
+    StatusName: OberegOnHealthLoss
+

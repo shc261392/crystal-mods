@@ -1,0 +1,16 @@
+﻿Name: Окропить травами
+AbilityType: SNAKE_SORC_SPRINKLE_HERBS
+TargetType: ALL_ALLIES
+Sprite: SNAKE_SORC_SPRINKLE_HERBS
+GoldCost: 6
+Effects:
+- EffectType: HEAL
+  MinValue: 25
+  MaxValue: 25
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

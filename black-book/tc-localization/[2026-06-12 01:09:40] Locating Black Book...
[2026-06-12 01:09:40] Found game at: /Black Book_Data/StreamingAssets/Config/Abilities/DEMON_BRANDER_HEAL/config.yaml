@@ -1,0 +1,17 @@
+﻿Name: Заклеймить раны
+AbilityType: DEMON_BRANDER_HEAL
+TargetType: ALL_ALLIES
+Intention: BUFF
+Sprite: DEMON_BRANDER_HEAL
+GoldCost: 3
+Effects:
+- EffectType: HEAL
+  MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+

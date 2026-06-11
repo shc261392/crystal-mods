@@ -1,0 +1,7 @@
+﻿Name: 乌斯季-乌洛卡村
+Description: 这个村子有乡亲跑多远到俺家，给我说他们夜里听见墓地有人说话。莫非有人死而复生？
+ShortQuestDescr: 仔细查看乌斯季-乌洛卡村的墓地
+LevelConfig:
+  Battle:
+    Name: 伊利亚的雠特
+

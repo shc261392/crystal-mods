@@ -1,0 +1,8 @@
+﻿Name: Near the Kolva
+Description: This dusty road winds along the Kolva
+LevelConfig:
+  Battle:
+    Name: Root Chorts
+  BattleAlternative:
+    Name: Root Chorts
+

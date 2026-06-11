@@ -1,0 +1,10 @@
+Name: FIRMER_STONE
+SkillName: AbilityFIRMER_STONE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityKEY_TONGUE
+SpriteOffsetX: 10
+SpriteOffsetY: -64
+Effects:
+- Type: AbilityUnlock
+  StringData: FIRMER_STONE

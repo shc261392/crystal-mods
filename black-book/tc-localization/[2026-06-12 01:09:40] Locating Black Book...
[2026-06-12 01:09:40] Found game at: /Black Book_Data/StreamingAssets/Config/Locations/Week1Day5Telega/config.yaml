@@ -1,0 +1,17 @@
+﻿IdName: Week1Day5Telega
+Name: Разбитая телега
+Description: Кажется, с дороги телега какая-то съехала.
+ShortQuestDescr: Дорожно-тележное происшествие
+Scene: Forest_5
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day5/Telega
+  Exploration: Week4Day2Cart
+  CameraOverride: CMQuestCamera1
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week1Day5Crossroads
+Secondary: Week1Day5Telega
+OnomastikonItems:
+- Onomastikon/Tales/1
+

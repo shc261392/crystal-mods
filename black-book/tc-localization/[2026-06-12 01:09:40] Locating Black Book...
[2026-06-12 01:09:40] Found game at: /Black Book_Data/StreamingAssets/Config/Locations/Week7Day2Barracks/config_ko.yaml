@@ -1,0 +1,6 @@
+﻿Name: 악의 우리
+Description: 정부 소유의 집이 몇 채 있다. 여기서 사는 것도 지옥이나 마찬가지일 것이다.
+LevelConfig:
+  Battle:
+    Name: 초르트의 계획
+

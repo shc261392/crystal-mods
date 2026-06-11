@@ -1,0 +1,10 @@
+﻿Name: Точные указания
+SkillName: ExactDirections
+Sprite: ExactDirectionsSkill
+Description: Шанс эффективного завершения задания повышен на {CalculatedEffect}%
+RequiredSkills:
+- Demonology
+Effects:
+- Value: 50
+  Type: JobSuccessChance
+

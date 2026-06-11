@@ -1,0 +1,22 @@
+﻿Name: Еретничья порча +
+AbilityType: WHITE_HEAD_LOYAL
+TargetType: ENEMY
+Intention: DEBUFF
+Sprite: WHITE_HEAD_REGULAR
+GoldCost: 5
+Effects:
+- EffectType: STATUS
+  MinValue: 3
+  MaxValue: 3
+  StatusEffectType: Waste
+- EffectType: STATUS
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  StatusEffectType: Decomposure
+

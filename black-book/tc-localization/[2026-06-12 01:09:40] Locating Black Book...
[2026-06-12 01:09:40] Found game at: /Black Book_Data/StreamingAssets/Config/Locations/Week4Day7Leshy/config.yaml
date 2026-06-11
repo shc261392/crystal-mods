@@ -1,0 +1,23 @@
+﻿IdName: Week4Day7Leshy
+Name: Ворысь-син
+Description: Тут я с лешим и повстречаюсь.
+ShortQuestDescr: Разбудить лешего
+LongQuestDescr: Сын Ворсы-лешего разбудит его, когда вы доберетесь до его логова. Ворса освободит вас и откроет следующую печать Черной книги.
+Scene: LeshiyEye
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Exploration: Week4Day7Leshy
+  CinematicIntro: true
+RequiredLocations:
+- Week4Day7Idols
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Proshka
+- ProshkaLoyal
+

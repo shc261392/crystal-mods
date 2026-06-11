@@ -1,0 +1,23 @@
+﻿IdName: Week2Day1ChernyBereg
+Name: Черный берег
+Description: Это место не случайно назвали черным. Нужно быть начеку.
+Scene: River_3
+LevelConfig:
+  MusicOverride: event:/Music/ExploreDark
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Нечисть у реки
+    Enemies:
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyCenter
+    - Type: Drowner
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day1/ChernyBereg
+    Outro: TextQuest/Week2/Day1/ChernyBeregAftermath
+RequiredLocations:
+- Week2Day1Road
+OnomastikonItems:
+- Onomastikon/Tales/33
+

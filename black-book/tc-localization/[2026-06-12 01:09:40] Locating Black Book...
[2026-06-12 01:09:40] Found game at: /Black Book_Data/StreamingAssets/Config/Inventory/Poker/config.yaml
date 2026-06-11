@@ -1,0 +1,9 @@
+﻿Name: Железная кочерга
+InventoryItemName: Poker
+Flavour: Закаленная в охранительном пламени родного очага.
+Sprite: Poker
+Cost: 80
+Effects:
+- Value: 2
+  Type: HealMultiplier
+

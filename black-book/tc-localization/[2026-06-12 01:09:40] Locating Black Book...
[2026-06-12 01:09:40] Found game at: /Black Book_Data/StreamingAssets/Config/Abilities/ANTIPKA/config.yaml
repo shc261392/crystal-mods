@@ -1,0 +1,20 @@
+﻿Name: Антипка беспятой
+AbilityType: ANTIPKA
+TargetType: ENEMY
+Sprite: ANTIPKA
+GoldCost: 6
+Effects:
+- EffectType: DAMAGE_SKLAD
+  MinValue: 6
+  MaxValue: 6
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+- EffectType: SACRIFICE
+  MinValue: 2
+  MaxValue: 2
+

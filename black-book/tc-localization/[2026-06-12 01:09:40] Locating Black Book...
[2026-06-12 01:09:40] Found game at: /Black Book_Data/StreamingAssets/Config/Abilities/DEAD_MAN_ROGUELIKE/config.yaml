@@ -1,0 +1,24 @@
+﻿Name: Мертвец
+AbilityType: DEAD_MAN_ROGUELIKE
+TargetType: ENEMY
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: DEAD_MAN
+GoldCost: 21
+Effects:
+- EffectType: STATUS_SKLAD
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal4OrderBlack
+    MissTrigger: Seal4OrderBlack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: Decomposure
+- EffectType: KRADA
+- EffectType: SACRIFICE_SKLAD
+  MinValue: 1
+  MaxValue: 1    
+

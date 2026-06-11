@@ -1,0 +1,1126 @@
+Id: Map2
+MinTextQuestGoldReward: 40
+MaxTextQuestGoldReward: 80
+BossSkill: RoguelikeKeysKnowledge
+SatanItemRewardsCount: 2
+SatanHpReward: 5
+SatanSpReward: 2
+IdToBlueprint:
+  Fight1:
+    Id: Fight1
+    Sprite: RGFight
+    NodeType: Fight
+    AbilityDropType: Regular
+    Scenes:
+      - CrossroadsExploration
+      - Marshes2
+      - Forest_3
+      - River_3
+      - Forest_Bridge_2
+      - Forest_2
+      - Forest
+      - Rift
+      - Road
+      - Backwater
+      - Cemetery
+      - Forest_old
+      - Fields
+      - Forest_4
+      - Labaz
+      - LakeBottom
+    Enemies:
+      - - Drowner
+      - - Domovoi
+      - - DemonFierce
+        - DemonSmall
+  Fight2:
+    Id: Fight2
+    Sprite: RGFight
+    NodeType: Fight
+    AbilityDropType: Regular
+    Scenes:
+      - CrossroadsExploration
+      - Marshes2
+      - Forest_3
+      - River_3
+      - Forest_Bridge_2
+      - Forest_2
+      - Forest
+      - Rift
+      - Road
+      - Backwater
+      - Cemetery
+      - Fields
+      - Forest_4
+      - Labaz
+    Enemies:
+      - - Wolf
+        - DemonSmall
+      - - Ghost
+        - DemonSmall
+      - - DemonFly
+        - DemonSmall
+      - - Chud3
+        - DemonSmall
+      - - Drowner
+        - DemonSmall
+      - - Domovoi
+        - DemonSmall
+      - - SnakeGaduka
+        - DemonSmall
+        - DemonSmall
+      - - Demon
+        - DemonSmall
+        - DemonSmall
+      - - Brigand
+        - DemonSmall
+        - DemonSmall
+      - - DemonFierce
+        - DemonSmall
+        - DemonSmall
+      - - Wolf
+        - DemonSmall
+        - DemonSmall
+      - - Ghost
+        - DemonSmall
+        - DemonSmall
+      - - DemonFly
+        - DemonSmall
+        - DemonSmall
+      - - Chud3
+        - DemonSmall
+        - DemonSmall
+      - - DemonFierce
+        - SnakeGaduka
+      - - Wolf
+        - SnakeGaduka
+      - - Ghost
+        - SnakeGaduka
+      - - DemonFly
+        - SnakeGaduka
+      - - Chud3
+        - SnakeGaduka
+      - - Drowner
+        - SnakeGaduka
+      - - Domovoi
+        - SnakeGaduka
+      - - Demon
+        - Demon
+      - - Brigand
+        - Demon
+      - - DemonFierce
+        - Demon
+      - - Wolf
+        - Demon
+      - - Ghost
+        - Demon
+      - - DemonFly
+        - Demon
+      - - Chud3
+        - Demon
+      - - Drowner
+        - Demon
+      - - Domovoi
+        - Demon
+      - - Demon
+        - Demon
+        - Demon
+      - - Brigand
+        - Demon
+        - Demon
+      - - Brigand
+        - Brigand
+      - - DemonFierce
+        - Brigand
+      - - Wolf
+        - Brigand
+      - - Ghost
+        - Brigand
+      - - DemonFly
+        - Brigand
+      - - Chud3
+        - Brigand
+      - - Drowner
+        - Brigand
+      - - Domovoi
+        - Brigand
+      - - Brigand
+        - Brigand
+        - Brigand
+  Fight3:
+    Id: Fight3
+    Sprite: RGFight
+    NodeType: Fight
+    AbilityDropType: Regular
+    Scenes:
+      - CrossroadsExploration
+      - Marshes2
+      - Forest_3
+      - River_3
+      - Forest_Bridge_2
+      - Forest_2
+      - Forest
+      - Rift
+      - Road
+      - Backwater
+      - Cemetery
+      - Fields
+      - Forest_4
+      - Labaz
+    Enemies:
+      - - Wolf
+        - DemonSmall
+      - - Ghost
+        - DemonSmall
+      - - DemonFly
+        - DemonSmall
+      - - Chud3
+        - DemonSmall
+      - - Drowner
+        - DemonSmall
+      - - Domovoi
+        - DemonSmall
+      - - SnakeGaduka
+        - DemonSmall
+        - DemonSmall
+      - - Demon
+        - DemonSmall
+        - DemonSmall
+      - - Brigand
+        - DemonSmall
+        - DemonSmall
+      - - DemonFierce
+        - DemonSmall
+        - DemonSmall
+      - - Wolf
+        - DemonSmall
+        - DemonSmall
+      - - Ghost
+        - DemonSmall
+        - DemonSmall
+      - - DemonFly
+        - DemonSmall
+        - DemonSmall
+      - - Chud3
+        - DemonSmall
+        - DemonSmall
+      - - DemonFierce
+        - SnakeGaduka
+      - - Wolf
+        - SnakeGaduka
+      - - Ghost
+        - SnakeGaduka
+      - - DemonFly
+        - SnakeGaduka
+      - - Chud3
+        - SnakeGaduka
+      - - Drowner
+        - SnakeGaduka
+      - - Domovoi
+        - SnakeGaduka
+      - - Demon
+        - Demon
+      - - Brigand
+        - Demon
+      - - DemonFierce
+        - Demon
+      - - Wolf
+        - Demon
+      - - Ghost
+        - Demon
+      - - DemonFly
+        - Demon
+      - - Chud3
+        - Demon
+      - - Drowner
+        - Demon
+      - - Domovoi
+        - Demon
+      - - Demon
+        - Demon
+        - Demon
+      - - Brigand
+        - Demon
+        - Demon
+      - - Brigand
+        - Brigand
+      - - DemonFierce
+        - Brigand
+      - - Wolf
+        - Brigand
+      - - Ghost
+        - Brigand
+      - - DemonFly
+        - Brigand
+      - - Chud3
+        - Brigand
+      - - Drowner
+        - Brigand
+      - - Domovoi
+        - Brigand
+      - - Brigand
+        - Brigand
+        - Brigand
+  EliteFight:
+    Name: Elite Enemy
+    Id: EliteFight
+    Sprite: RGFightHard
+    NodeType: Fight
+    ScaleCoeff: 1.2
+    SpReward: 1
+    IsArtefactReward: true
+    AbilityDropType: RegularElite
+    Scenes:
+      - CrossroadsExploration
+      - Marshes2
+      - Forest_3
+      - River_3
+      - Forest_Bridge_2
+      - Forest_2
+      - Forest
+      - Rift
+      - Road
+      - Backwater
+      - Cemetery
+      - Forest_old
+      - Fields
+      - Forest_4
+      - Labaz
+    Enemies:
+      - - WolfHalf
+      - - FireZmey
+      - - MermaidSalt
+      - - ForestDemon
+        - DemonSmall
+      - - WolfHalf
+        - DemonSmall
+      - - Drowner
+        - DemonSmall
+        - DemonSmall
+      - - Domovoi
+        - DemonSmall
+        - DemonSmall
+      - - ForestDemonRoots
+        - DemonSmall
+        - DemonSmall
+      - - ForestDemon
+        - DemonSmall
+        - DemonSmall
+      - - DemonFierce
+        - ForestDemonRoots
+      - - Wolf
+        - ForestDemonRoots
+      - - Ghost
+        - ForestDemonRoots
+      - - DemonFly
+        - ForestDemonRoots
+      - - Chud3
+        - ForestDemonRoots
+      - - Drowner
+        - ForestDemonRoots
+      - - Domovoi
+        - ForestDemonRoots
+      - - ForestDemonRoots
+        - ForestDemonRoots
+      - - ForestDemon
+        - SnakeGaduka
+      - - WolfHalf
+        - SnakeGaduka
+      - - ForestDemon
+        - Demon
+      - - WolfHalf
+        - Demon
+      - - DemonFierce
+        - Demon
+        - Demon
+      - - Wolf
+        - Demon
+        - Demon
+      - - Ghost
+        - Demon
+        - Demon
+      - - DemonFly
+        - Demon
+        - Demon
+      - - Chud3
+        - Demon
+        - Demon
+      - - Drowner
+        - Demon
+        - Demon
+      - - Domovoi
+        - Demon
+        - Demon
+      - - ForestDemonRoots
+        - Demon
+        - Demon
+      - - ForestDemon
+        - Brigand
+      - - WolfHalf
+        - Brigand
+      - - DemonFierce
+        - Brigand
+        - Brigand
+      - - Wolf
+        - Brigand
+        - Brigand
+      - - Ghost
+        - Brigand
+        - Brigand
+      - - DemonFly
+        - Brigand
+        - Brigand
+      - - Chud3
+        - Brigand
+        - Brigand
+      - - Drowner
+        - Brigand
+        - Brigand
+      - - Domovoi
+        - Brigand
+        - Brigand
+      - - ForestDemonRoots
+        - Brigand
+        - Brigand
+  RestSite:
+    Name: Rest Site
+    Id: RestSite
+    Sprite: RGCamp
+    NodeType: RestSite
+    DialogueSystemNames:
+      - TextQuest/Util/Rest
+    Scenes:
+      - Forest
+  Loot:
+    Name: Loot
+    Id: Loot
+    Sprite: RGLoot
+    NodeType: Loot
+    Scenes:
+      - Forest
+    Items:
+      - AdamHead
+      - Braga
+      - Bogomor
+      - RoyalEyes
+      - PetrovHerb
+      - CryingHerb
+      - BreakHerb
+      - KolukaHerb
+      - TirlichHerb
+      - Perekop
+      - Sota
+      - CuckooTears
+      - DreamHerb
+      - Bolotvik
+      - Priputnik
+      - IndiviaHerb
+      - PrikryshHerb
+      - Solodelik
+      - EremaMushroom
+      - Dagil
+      - Borvyak
+      - LadanTrava
+      - Dedovniki
+    SpecialItems:
+      - DevilFinger
+      - MermaidComb
+      - KupalaWreath
+      - HeadSnake
+      - MermaidCross
+      - BrotherHoof
+      - ArmyWorm
+      - Seashell
+      - BurstingBone
+      - OldArrow
+      - StrawWithLice
+      - CemeterySoil
+      - SickCandles
+      - Kochedyg
+      - BlueBoots
+      - Doll
+      - SilverMask
+      - PikeTooth
+      - StolenIcons
+      - ColoredGlass
+      - Lock
+      - JerusalemWater
+      - PaintedEgg
+      - SpiderBelt
+      - SinnerRib
+      - CardDeck
+      - Goddess2
+      - BoughtIcon
+      - Broshka
+      - Mahlushka
+      - Salt
+      - CoffinSliver
+      - Bag2
+      - Kadilnitsa
+      - NicolaShoe
+      - BirdCurse
+      - BirdUrok
+      - BirdRot
+      - ObderihaHat
+      - SpoonChur
+      - GoldenHorse
+      - DevilBannerRoguelike
+  BigLoot:
+    Name: Big Loot
+    Id: BigLoot
+    Sprite: RGLootBig
+    NodeType: Loot
+    ScaleCoeff: 1.2
+    ArtefactCount: 1
+    Scenes:
+      - Forest
+    Items:
+      - Week1Axe
+    SpecialItems:
+      - DevilFinger
+      - DevilBannerRoguelike
+      - MermaidComb
+      - HeadSnake
+      - HeadDead
+      - SpoonWood
+      - GoldenHorse
+      - SpoonChur
+      - HeadWorm
+      - BrotherHoof
+      - ArmyWorm
+      - KupalaWreath
+      - MermaidCross
+      - Seashell
+      - BurstingBone
+      - OldArrow
+      - StrawWithLice
+      - CemeterySoil
+      - SickCandles
+      - Kochedyg
+      - BlueBoots
+      - Doll
+      - SilverMask
+      - PikeTooth
+      - StolenIcons
+      - ColoredGlass
+      - Lock
+      - JerusalemWater
+      - PaintedEgg
+      - SpiderBelt
+      - SinnerRib
+      - CardDeck
+      - Goddess2
+      - BoughtIcon
+      - Broshka
+      - Mahlushka
+      - Salt
+      - CoffinSliver
+      - Bag2
+      - Kadilnitsa
+      - NicolaShoe
+      - BirdCurse
+      - BirdUrok
+      - BirdRot
+      - ObderihaHat
+      - Gusli
+      - Morteshka
+  Merchant:
+    Name: Merchant
+    Id: Merchant
+    Sprite: RGMerchant
+    NodeType: Merchant
+    Scenes:
+      - Fair
+    DialogueSystemNames:
+      - TextQuest/Merchant/Fair
+    Merchants:
+      - Herbalist2
+      - Peddler2
+      - BookKeeper2
+  Merchant2:
+    Name: Merchant
+    Id: Merchant2
+    Sprite: RGMerchant
+    NodeType: Merchant
+    Scenes:
+      - Forest
+    Merchants:
+      - Peddler2
+  SatanPike:
+    Name: Satan
+    Id: SatanPike
+    Sprite: RGMiniBoss
+    MusicOverride: event:/Music/Battle4
+    NoExplorationMusic: true
+    NodeType: Fight
+    IsBoss: true
+    ScaleCoeff: 2
+    EpicParticles: true
+    IsArtefactReward: true
+    SpReward: 3
+    AbilityDropType: Boss
+    Scenes:
+      - PikeNest
+    Enemies:
+      - - Pike
+  SatanMerman:
+    Name: Satan
+    Id: SatanMerman
+    Sprite: RGMiniBoss
+    MusicOverride: event:/Music/Battle4
+    NoExplorationMusic: true
+    NodeType: Fight
+    IsBoss: true
+    ScaleCoeff: 2
+    EpicParticles: true
+    IsArtefactReward: true
+    SpReward: 3
+    AbilityDropType: Boss
+    Scenes:
+      - Watermill
+    Enemies:
+      - - Merman
+  SatanAlexander:
+    Name: Satan
+    Id: SatanAlexander
+    Sprite: RGMiniBoss
+    MusicOverride: event:/Music/Battle4
+    NoExplorationMusic: true
+    NodeType: Fight
+    IsBoss: true
+    ScaleCoeff: 2
+    EpicParticles: true
+    IsArtefactReward: true
+    SpReward: 3
+    Scenes:
+      - TrainBattle
+    Enemies:
+      - - Alexander
+  Unknown:
+    Name: Unknown
+    Id: Unknown
+    Sprite: RGUnknown
+    NodeType: Unknown
+    UnknownBlueprints:
+      - Fight2
+      - Loot
+      - Loot
+      - Loot
+      - BigLoot
+      - BigLoot
+      - Fight2
+      - Fight2
+      - Text
+      - Text
+      - Text
+      - Text
+      - Ally
+      - Ally
+  Booker:
+    Name: Booker
+    Id: Booker
+    Sprite: RGBooker
+    NodeType: Merchant
+    Scenes:
+      - Forest
+    Merchants:
+      - BookKeeper2
+  Church:
+    Name: Church
+    Id: Church
+    Sprite: RGChurch
+    NodeType: Church
+    NoExplorationMusic: true
+    Merchants:
+      - Priest
+    DialogueSystemNames:
+      - TextQuest/Priest/Priest1
+    Scenes:
+      - ChurchVilgort
+  Herbalist:
+    Name: Herbalist
+    Id: Herbalist
+    Sprite: RGHerbalist
+    NodeType: Merchant
+    Scenes:
+      - Forest
+    Merchants:
+      - Herbalist2
+  Ally:
+    Name: Ally
+    Id: Ally
+    Sprite: RGFool
+    NodeType: Ally
+    DialogueSystemNames:
+      - TextQuest/Util/Ally
+    Scenes:
+      - Forest
+    Allies:
+      - DedEgorLoyal
+      - KarnyshLoyal
+      - NikolayLoyal
+      - ProshkaLoyal
+      - WhiteHeadLoyal
+  Text:
+    Name: Text
+    Id: Text
+    Sprite: RGText
+    NodeType: Text
+    Scenes:
+      - Forest
+      - CrossroadsExploration
+      - Forest_3
+      - Marshes2
+      - Forest_Bridge_2
+      - Road
+      - Backwater
+      - Forest_3
+      - Cemetery
+      - Forest_5
+    DialogueSystemNames:
+      - TextQuest/Herb/Break
+      - TextQuest/Herb/OdolenHerb
+      - TextQuest/Herb/KolukaHerb
+      - TextQuest/Herb/PrikryshHerb
+      - TextQuest/Herb/TirlichHerb
+      - TextQuest/Herb/CryingHerb
+      - TextQuest/Herb/Adam
+      - TextQuest/Artefact/Poker
+      - TextQuest/Artefact/WhiteHead
+      - TextQuest/Artefact/DeadManCross
+      - TextQuest/Artefact/ArmyWorm
+      - TextQuest/Artefact/ThunderArrow
+      - TextQuest/Roguelike/ItemItem
+      - TextQuest/Roguelike/ItemHerb
+      - TextQuest/Roguelike/ItemPage
+      - TextQuest/Roguelike/ItemHealth
+      - TextQuest/Roguelike/ItemStartingItem
+      - TextQuest/Roguelike/ItemRemovePage
+      - TextQuest/Roguelike/ItemRouble
+      - TextQuest/Roguelike/HerbHerb
+      - TextQuest/Roguelike/HerbPage
+      - TextQuest/Roguelike/HerbHealth
+      - TextQuest/Roguelike/HerbStartingItem
+      - TextQuest/Roguelike/HerbRemovePage
+      - TextQuest/Roguelike/HerbRouble
+      - TextQuest/Roguelike/PagePage
+      - TextQuest/Roguelike/PageHealth
+      - TextQuest/Roguelike/PageStartingItem
+      - TextQuest/Roguelike/PageRemovePage
+      - TextQuest/Roguelike/PageRouble
+      - TextQuest/Roguelike/HealthHealth
+      - TextQuest/Roguelike/HealthStartingItem
+      - TextQuest/Roguelike/HealthRemovePage
+      - TextQuest/Roguelike/HealthRouble
+      - TextQuest/Roguelike/StartingItemStartingItem
+      - TextQuest/Roguelike/StartingItemRemovePage
+      - TextQuest/Roguelike/StartingItemRouble
+      - TextQuest/Roguelike/RemovePageRouble
+      - TextQuest/Roguelike/BadPageRemoveHealth
+      - TextQuest/Roguelike/BadHerbRemoveHealth
+      - TextQuest/Roguelike/BadHerbBadPage
+      - TextQuest/Roguelike/Item
+      - TextQuest/Roguelike/Herb
+      - TextQuest/Roguelike/Page
+      - TextQuest/Roguelike/Health
+      - TextQuest/Roguelike/StartingItem
+      - TextQuest/Roguelike/Trader
+      - TextQuest/Roguelike/Fair
+      - TextQuest/Roguelike/Rouble
+      - TextQuest/Roguelike/Treasure      
+GridWidth: 7
+PreBossNodesMin: 2
+PreBossNodesMax: 3
+StartingNodesMin: 3
+StartingNodesMax: 5
+DistanceFromPreviousLayerMin: 9
+DistanceFromPreviousLayerMax: 10
+Layers:
+  - DefaultBlueprintId: Fight1
+    NodesApartDistance: 5.4
+    RandomizePosition: 0
+    RandomizeNodes: 0
+  - DefaultBlueprintId: Fight1
+    PossibleBlueprintsIds:
+      - Fight1
+      - Fight1
+      - Text
+      - Loot
+      - Loot
+      - Loot
+      - Loot
+      - Loot
+      - Text
+      - Unknown
+      - Loot
+      - Ally
+      - Ally
+    NodesApartDistance: 5.4
+    RandomizePosition: 0.55
+    RandomizeNodes: 1
+  - DefaultBlueprintId: Fight2
+    PossibleBlueprintsIds:
+      - Fight2
+      - Fight2
+      - Fight2
+      - Fight2
+      - Fight2
+      - Fight2
+      - Fight2
+      - Fight2
+      - Unknown
+      - Unknown
+      - EliteFight
+      - EliteFight
+      - Fight2
+      - Unknown
+      - Fight2
+    NodesApartDistance: 5.4
+    RandomizePosition: 0.55
+    RandomizeNodes: 0.75
+  - DefaultBlueprintId: Fight2
+    PossibleBlueprintsIds:
+      - Fight2
+      - Fight2
+      - Fight2
+      - Fight2
+      - Fight2
+      - EliteFight
+      - EliteFight
+      - EliteFight
+      - Unknown
+      - Fight2
+      - Fight2
+      - Unknown
+    NodesApartDistance: 5.4
+    RandomizePosition: 0.55
+    RandomizeNodes: 1
+  - DefaultBlueprintId: Fight2
+    PossibleBlueprintsIds:
+      - Fight2
+      - Fight2
+      - Fight2
+      - Fight2
+      - Fight2
+      - Fight2
+      - Fight2
+    NodesApartDistance: 5.4
+    RandomizePosition: 0.55
+    RandomizeNodes: 1
+  - DefaultBlueprintId: Fight3
+    PossibleBlueprintsIds:
+      - Loot
+      - Loot
+      - Merchant
+      - Merchant
+      - Merchant
+      - Merchant
+      - Merchant
+      - Merchant
+      - Merchant
+      - EliteFight
+      - RestSite
+      - Merchant
+      - Merchant
+      - Ally
+      - Ally
+    NodesApartDistance: 5.4
+    RandomizePosition: 0.55
+    RandomizeNodes: 1
+  - DefaultBlueprintId: Fight3
+    PossibleBlueprintsIds:
+      - Fight3
+      - Fight3
+      - Fight3
+      - Fight3
+      - EliteFight
+      - EliteFight
+      - EliteFight
+      - EliteFight
+      - EliteFight
+      - Loot
+      - BigLoot
+      - Unknown
+      - Text
+      - Text
+      - Text
+    NodesApartDistance: 5.4
+    RandomizePosition: 0.55
+    RandomizeNodes: 1
+  - DefaultBlueprintId: Fight3
+    PossibleBlueprintsIds:
+      - Loot
+      - Loot
+      - Loot
+      - Herbalist
+      - Booker
+      - Loot
+      - Loot
+      - Loot
+      - Loot
+      - Loot
+      - BigLoot
+      - Unknown
+      - Text
+      - Text
+      - Text
+      - Church
+    NodesApartDistance: 5
+    RandomizePosition: 0.55
+    RandomizeNodes: 1
+  - DefaultBlueprintId: Fight3
+    PossibleBlueprintsIds:
+      - Fight3
+      - Fight3
+      - Fight3
+      - Fight3
+      - EliteFight
+      - EliteFight
+      - EliteFight
+      - EliteFight
+      - Unknown
+      - Fight3
+      - Fight3
+      - Unknown
+      - Text
+      - Text
+      - Text
+    NodesApartDistance: 5.4
+    RandomizePosition: 0.55
+    RandomizeNodes: 1
+  - DefaultBlueprintId: RestSite
+    NodesApartDistance: 5
+    RandomizePosition: 0.55
+    RandomizeNodes: 0
+  - DefaultBlueprintId: SatanMerman
+    NodesApartDistance: 5
+    RandomizePosition: 0
+    RandomizeNodes: 1
+    PossibleBlueprintsIds:
+      - SatanMerman
+      - SatanPike
+      - SatanAlexander
+BattleWinItemRewards:
+    - Item: AdamHead
+      Quantity: 2
+    - Item: CuckooTears
+      Quantity: 1
+    - Item: ArhilinHerb
+      Quantity: 1
+    - Item: BreakHerb
+      Quantity: 1
+    - Item: CryingHerb
+      Quantity: 1
+    - Item: KolukaHerb
+      Quantity: 1
+    - Item: OdolenHerb
+      Quantity: 1
+    - Item: PetrovHerb
+      Quantity: 1
+    - Item: PrikryshHerb
+      Quantity: 1
+    - Item: Sivulist
+      Quantity: 1
+    - Item: TirlichHerb
+      Quantity: 1
+    - Item: IndiviaHerb
+      Quantity: 1
+    - Item: Braga
+      Quantity: 1
+    - Item: Sota
+      Quantity: 1
+    - Item: CuckooTears
+      Quantity: 1
+    - Item: WormwoodHerb
+      Quantity: 1
+    - Item: Bolotvik
+      Quantity: 1
+    - Item: Priputnik
+      Quantity: 1
+    - Item: DreamHerb
+      Quantity: 1
+    - Item: Suporijki
+      Quantity: 1
+    - Item: Bogomor
+      Quantity: 1
+    - Item: Solodelik
+      Quantity: 1
+    - Item: RottenMushroom
+      Quantity: 1
+    - Item: DogMushroom
+      Quantity: 1
+    - Item: EremaMushroom
+      Quantity: 1
+    - Item: Dagil
+      Quantity: 1
+    - Item: Razorva
+      Quantity: 2
+    - Item: Borvyak
+      Quantity: 1
+    - Item: LadanTrava
+      Quantity: 1
+    - Item: ShutemTrava
+      Quantity: 1
+    - Item: WhiteHeadTrava
+      Quantity: 1
+    - Item: SecretLeaveTrava
+      Quantity: 1
+BattleWinBossItemRewards:
+  - Item: GoldenHorse
+    Quantity: 1
+  - Item: Broshka
+    Quantity: 1
+  - Item: Varakul
+    Quantity: 1
+  - Item: BurntStick
+    Quantity: 1
+  - Item: CoffinNails
+    Quantity: 1
+  - Item: Bag2
+    Quantity: 1
+  - Item: SinnerRib
+    Quantity: 1
+  - Item: DuckEarrings
+    Quantity: 1
+  - Item: Superik
+    Quantity: 1
+  - Item: SharpStuff
+    Quantity: 1
+  - Item: Bag3
+    Quantity: 1
+  - Item: OldHorseshoe
+    Quantity: 1
+  - Item: PrayerBook
+    Quantity: 1
+  - Item: Katseya
+    Quantity: 1
+  - Item: BrotherHoof
+    Quantity: 1
+  - Item: ArmyWorm
+    Quantity: 1
+  - Item: BlueBoots
+    Quantity: 1
+  - Item: MagicBroom
+    Quantity: 1
+  - Item: Kadilnitsa
+    Quantity: 1
+  - Item: LifeStefan
+    Quantity: 1
+  - Item: BookDead
+    Quantity: 1
+  - Item: BookMagic
+    Quantity: 1
+  - Item: SewnIcon
+    Quantity: 1
+  - Item: HerbAmulet
+    Quantity: 1
+  - Item: LifeParaskeva
+    Quantity: 1
+  - Item: BookPsaltir
+    Quantity: 1
+  - Item: BookBlack
+    Quantity: 1
+  - Item: NicolaShoe
+    Quantity: 1
+  - Item: BirdCurse
+    Quantity: 1
+  - Item: BirdUrok
+    Quantity: 1
+  - Item: BirdRot
+    Quantity: 1
+  - Item: KiotClosed
+    Quantity: 1
+  - Item: Volhid
+    Quantity: 1
+  - Item: SecretPage
+    Quantity: 1
+  - Item: DevilBannerRoguelike
+    Quantity: 1
+  - Item: Mooseman
+    Quantity: 1
+  - Item: Goddess
+    Quantity: 1
+  - Item: ProkopiyStaff
+    Quantity: 1
+  - Item: ChurchKnife
+    Quantity: 1
+  - Item: BearPaw
+    Quantity: 1
+  - Item: AlchemyBottle
+    Quantity: 1
+  - Item: ChristEgg
+    Quantity: 1
+  - Item: SinnerRib
+    Quantity: 1
+MerchantAbilities:
+  - UBEITSA
+  - KORKUSHA
+  - OGNEVITSA
+  - TOMASHIHA
+  - WIND_FIERCE
+  - ANTIPKA
+  - HOHOR
+  - KILA
+  - CROSS2
+  - KNIFE
+  - NAVA
+  - SELAFIIL
+  - MOON_BROTHERS
+  - WORMS
+  - RAZOIL
+  - FAITHFUL_HOPE
+  - AMEN
+  - FOR_FATHER
+  - NIKOLA_GEORGY
+  - IROD_BONES
+  - DEAD_MAN
+AbilityDropTypeToList:
+  Regular:
+    - UBEITSA
+    - SKORCHEN
+    - KORKUSHA
+    - WIND_FIERCE
+    - ANTIPKA
+    - HOHOR
+    - KILA
+    - CROSS2
+    - SKORCHIT
+    - FISH_WHALE
+    - ABEL
+    - AVOIL
+    - KORKOTEYA
+    - NAVA
+    - SELAFIIL
+    - MOON_BROTHERS
+    - WORMS
+    - FAITHFUL_HOPE
+    - AMEN
+    - FOR_FATHER
+    - NIKOLA_GEORGY
+    - TRYASOVITSA
+    - IROD_BONES
+    - DEAD_MAN
+  RegularElite:
+    - SKORCHEN
+    - KORKUSHA
+    - OGNEVITSA
+    - TOMASHIHA
+    - WIND_FIERCE
+    - CROSS2
+    - ABEL
+    - KNIFE
+    - AVOIL
+    - SELAFIIL
+    - MOON_BROTHERS
+    - WORMS
+    - RAZOIL
+    - FAITHFUL_HOPE
+  Boss:
+    - LOMOTA
+    - CHAINS_OF_FIRE
+    - KAIN
+    - KOSTOLOMISHE
+    - CHEMER
+    - UBEITSA
+    - SKORCHEN
+    - KORKUSHA

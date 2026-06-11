@@ -1,0 +1,51 @@
+﻿IdName: AllyEgorLair
+Name: Логово Прокопия
+Scene: ChurchVilgortOld
+LevelConfig:
+  NoExplorationMusic: true
+  Battle:
+    Name: Прокопий-еретник
+    Enemies:
+    - Type: Prokopiy
+      LevelSpawnPointType: EnemyCenter
+      HealthOverride: 25
+    NoShuffle: true
+    PuzzleDeck:
+    - OGNEVITSA
+    - KOSTOLOMISHE
+    - KOSTOLOMISHE
+    - DEAD_MAN
+    - HEADLESS
+    - HEADLESS
+    - HEADLESS
+    - URAZI_UP
+    - URAZI_UP
+    - URAZI_UP
+    - URAZI_UP
+    - FIRM_KNIFE
+    - RED_SUN
+    - BLOOD_BURN
+    - IROD_BONES
+    - LOCK
+    - LOCK
+    - RUDA
+    - RUDA
+    - RUDA
+    PuzzleManaOverride:
+    - 2
+    - 2
+    PuzzleHandOverride:
+    - 5
+    - 3
+    ForceAlly: DedEgor
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 4
+  Quest:
+    DialogueSystemName: TextQuest/AllyEgor/Cemetery/ProkopiyDialogue
+    Outro: TextQuest/AllyEgor/Cemetery/ProkopiyOutro
+  Exploration: AllyEgorLair
+  CinematicIntro: true
+  CameraOverride: CMCaveCamera
+  DialogueCameraOverride: CMDialogueCameraCave
+  MixerSnapshot: snapshot:/Cave

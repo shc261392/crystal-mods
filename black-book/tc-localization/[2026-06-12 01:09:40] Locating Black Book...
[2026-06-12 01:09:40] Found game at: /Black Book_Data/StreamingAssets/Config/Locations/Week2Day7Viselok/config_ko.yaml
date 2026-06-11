@@ -1,0 +1,6 @@
+﻿Name: 정착지
+Description: 약간 두려운 마음이 든다. 근처에 악령이 있다.
+LevelConfig:
+  Battle:
+    Name: 보댜노이의 수행원
+

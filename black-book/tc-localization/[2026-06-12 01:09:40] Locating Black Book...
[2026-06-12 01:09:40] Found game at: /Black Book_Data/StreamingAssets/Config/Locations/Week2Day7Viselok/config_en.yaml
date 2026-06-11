@@ -1,0 +1,6 @@
+﻿Name: Settlement
+Description: I feel somewhat frightened. Evil spirits are close.
+LevelConfig:
+  Battle:
+    Name: Vodyanoi's escort
+

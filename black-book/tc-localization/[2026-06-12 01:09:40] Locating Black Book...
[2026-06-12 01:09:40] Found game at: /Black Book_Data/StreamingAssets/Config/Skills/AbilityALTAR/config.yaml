@@ -1,0 +1,10 @@
+Name: ALTAR
+SkillName: AbilityALTAR
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityRABA
+SpriteOffsetX: 12.8
+SpriteOffsetY: -69.7
+Effects:
+- Type: AbilityUnlock
+  StringData: ALTAR

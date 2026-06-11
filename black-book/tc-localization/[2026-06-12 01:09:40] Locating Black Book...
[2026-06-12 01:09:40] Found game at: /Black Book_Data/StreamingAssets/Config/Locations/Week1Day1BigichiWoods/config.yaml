@@ -1,0 +1,12 @@
+﻿IdName: Week1Day1BigichiWoods
+Name: Лес у Бигичей
+Description: Через реку Колву от деревни Бигичи расположился старый лес. У этой чащи есть свой хозяин. У любого леса есть.
+ShortQuestDescr: Проверить лес у Бигичей
+Scene: ForestBirch
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day1/BigichiWoods
+RequiredLocations:
+- Week1Day1Starica
+

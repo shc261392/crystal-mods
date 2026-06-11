@@ -1,0 +1,6 @@
+﻿Name: アンボルの森
+Description: アンボル村の近くにある古い森。ネムズィヤの記憶が鮮明によみがえる。
+LevelConfig:
+  Battle:
+    Name: 森のチョルト
+

@@ -1,0 +1,11 @@
+﻿IdName: MerchantKorob2
+Name: Коробейник
+Description: Коробейник – это такой купец-странник. Он продает разные товары, среди которых иногда попадаются и заговоренные.
+Scene: ForestBirch
+LevelConfig:
+  Merchants:
+  - Peddler2
+  Quest:
+    DialogueSystemName: TextQuest/Merchant/Peddler/Conversation
+CanBeVisitedNextDay: true
+

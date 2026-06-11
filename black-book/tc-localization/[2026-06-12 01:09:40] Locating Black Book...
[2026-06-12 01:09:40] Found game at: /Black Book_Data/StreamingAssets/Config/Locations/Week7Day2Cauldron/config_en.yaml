@@ -1,0 +1,7 @@
+﻿Name: Chort's Cauldrons
+Description: I can hear screams coming from that direction. Sounds like human souls being tortured.
+ShortQuestDescr: Devil's Invitation
+LevelConfig:
+  Battle:
+    Name: Among Cauldrons
+

@@ -1,0 +1,16 @@
+﻿Name: Осиновый гроб
+AbilityType: OLD_CHANGELING_PUZZLE_ATTACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: OLD_CHANGELING_PUZZLE_ATTACK
+GoldCost: 3
+Effects:
+- MinValue: 999
+  MaxValue: 999
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

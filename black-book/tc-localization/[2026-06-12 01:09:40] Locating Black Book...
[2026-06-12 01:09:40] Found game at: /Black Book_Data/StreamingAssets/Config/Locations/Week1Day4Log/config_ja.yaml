@@ -1,0 +1,7 @@
+﻿Name: プロスコイの谷
+Description: 数日前、村人たちがこの谷で大きなつむじ風を見かけたため、調べてほしいと頼まれた。
+ShortQuestDescr: 谷の魔物を倒す
+LevelConfig:
+  Battle:
+    Name: チョルトのつむじ風
+

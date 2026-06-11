@@ -1,0 +1,27 @@
+﻿AssetName: Werewolf
+Health: 175
+Mana: 4
+Initiative: -1
+MoneyMin: 60
+MoneyMax: 120
+Experience: 3000
+StartingStatusEffects:
+- StatusEffectType: PackLeader
+  Duration: 999
+  Permanent: true
+  HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: WEREWOLF_HOWL
+    TargetType: SELF
+  - AbilityType: WEREWOLF_STRONGER
+    TargetType: ALL_ALLIES
+  - AbilityType: WEREWOLF_TIGHTER
+    TargetType: ALL_ALLIES
+  - AbilityType: WEREWOLF_CLAWS
+    TargetType: ENEMY
+  - AbilityType: WEREWOLF_HEAL_WOUNDS
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Оборотень
+

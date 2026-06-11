@@ -1,0 +1,6 @@
+﻿Name: 森の端
+Description: 人間の土地はここまでで、ここから先はレーシィの土地だ。
+LevelConfig:
+  Battle:
+    Name: 森の悪魔
+

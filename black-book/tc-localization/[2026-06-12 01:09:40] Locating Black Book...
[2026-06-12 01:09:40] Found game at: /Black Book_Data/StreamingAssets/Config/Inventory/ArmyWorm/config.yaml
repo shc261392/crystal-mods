@@ -1,0 +1,12 @@
+﻿Name: Ратная червь
+InventoryItemName: ArmyWorm
+Flavour: Ратную червь собрать в платок да высушить. А там и людей ею ладить можно.
+Sprite: ArmyWorm
+Cost: 180
+Effects:
+- Value: 1
+  Type: StatusImmunity
+  StatusName: Immunity
+  StringData: Poison
+  StatusPermanent: true
+  StatusUnremovable: true

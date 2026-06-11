@@ -1,0 +1,14 @@
+﻿IdName: Week4Day7CreekBase
+Name: Исток ручья
+Description: Здесь и заканчивается ручей тот.
+Scene: Sauna
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  MusicOverride: event:/Music/ExploreDark2
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day7/CreekBase/Intro
+RequiredLocations:
+- Week4Day7Creek
+OnomastikonItems:
+- Onomastikon/Tales/50
+

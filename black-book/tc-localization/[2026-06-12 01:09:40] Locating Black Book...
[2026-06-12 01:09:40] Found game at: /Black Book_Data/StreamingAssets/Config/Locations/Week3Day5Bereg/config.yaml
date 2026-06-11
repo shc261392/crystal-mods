@@ -1,0 +1,14 @@
+﻿IdName: Week3Day5Bereg
+Name: Затуманенный берег
+Description: Здесь волки напали на пастуха. Наверняка поезжане!
+ShortQuestDescr: Выследить волков
+Scene: LakeBank
+LevelConfig:
+  MusicOverride: event:/Music/Explore2
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day5/Bereg/Intro
+RequiredLocations:
+- Week3Day5Road
+Secondary: Week3Day5Bereg
+

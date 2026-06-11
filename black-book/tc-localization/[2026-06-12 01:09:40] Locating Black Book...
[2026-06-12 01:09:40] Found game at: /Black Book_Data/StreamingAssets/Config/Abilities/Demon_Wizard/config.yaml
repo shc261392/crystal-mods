@@ -1,0 +1,23 @@
+﻿Name: Бес-колдун
+AbilityType: DEMON_WIZARD
+AbilityBookPartType: KEY
+Upgrade: DEMON_WIZARD_UP
+TargetType: ENEMY
+Intention: BUFF
+Sprite: DEMON_WIZARD
+GoldCost: 12
+Effects:
+- EffectType: REMOVE_GOOD_STATUS
+  MinValue: 1
+  MaxValue: 1
+- EffectType: DAMAGE_SKLAD
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

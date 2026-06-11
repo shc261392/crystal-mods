@@ -1,0 +1,25 @@
+﻿IdName: Week7Day2Barracks
+Name: Окаянные бараки
+Description: Тут выстроены какие-то казенные дома. В таких человеку сама жизнь мукой покажется.
+Scene: HellBarracks
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  NoExplorationMusic: true
+  Battle:
+    Name: План бесов
+    Enemies:
+      - Type: DemonSoldier
+        LevelSpawnPointType: EnemyLeft
+      - Type: DemonSoldierLeader
+        LevelSpawnPointType: EnemyCenter
+      - Type: DemonSoldier
+        LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week7/Day2/Barracks/Intro
+    Outro: TextQuest/Week7/Day2/Barracks/Outro
+RequiredLocations:
+- Week7Day2Pits
+OnomastikonItems:
+  - Onomastikon/Tales/43

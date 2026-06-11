@@ -1,0 +1,29 @@
+﻿IdName: Week5Day2Police
+Name: Уездное полицейское управление
+Description: Тут я смогу поговорить с церковным сторожем, Михал-то Никифоровичем.
+ShortQuestDescr: Найти церковный нож
+LongQuestDescr: Чтобы провести купальский обряд, мне нужен церковный нож и прочее. Нож куда-то спрятал церковный сторож.
+Scene: PoliceStation
+LevelConfig:
+  Battle:
+    Name: Суседки полиции
+    Enemies:
+    - Type: Domovoi
+      LevelSpawnPointType: EnemyCenter
+    - Type: Demon
+    - Type: DemonFly
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day2/Police/Intro
+    Outro: TextQuest/Week5/Day2/Police/DevilsTalkOutro
+    IzbaAftermath: Izba/Week5/Day29KnifeAftermath
+  Exploration: Week5Day2Police
+  CinematicIntro: true
+LightingType: EVENING
+RequiredLocations:
+- Week5Day2Yard
+OnomastikonItems:
+- Onomastikon/Encyclopedia/3
+

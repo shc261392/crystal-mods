@@ -1,0 +1,14 @@
+﻿IdName: Week4Day2Clearing
+Name: Визясты
+Description: Местные называют это место Полосатым озером, на пермяцком-то.
+Scene: LeshiyWay
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day2/Clearing
+  CameraOverride: CMQuestCamera1
+RequiredLocations:
+- Week4Day2FlockField
+OnomastikonItems:
+- Onomastikon/Tales/56
+

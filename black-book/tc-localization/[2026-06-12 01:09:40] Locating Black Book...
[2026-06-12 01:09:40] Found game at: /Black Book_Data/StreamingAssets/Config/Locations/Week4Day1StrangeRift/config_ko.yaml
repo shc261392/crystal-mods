@@ -1,0 +1,6 @@
+﻿Name: 기이한 균열
+Description: 이 안개에서는 조심해야 한다. 실수로 협곡으로 떨어져서는 안 되니까.
+LevelConfig:
+  Battle:
+    Name: 안개 초르트
+

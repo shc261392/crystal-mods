@@ -1,0 +1,20 @@
+﻿Name: Томашиха
+AbilityType: TOMASHIHA
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: BUFF
+Sprite: TOMASHIHA
+GoldCost: 37
+Effects:
+- EffectType: STATUS
+  MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal5OrderBlack
+    MissTrigger: Seal5OrderBlack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: Spikes
+

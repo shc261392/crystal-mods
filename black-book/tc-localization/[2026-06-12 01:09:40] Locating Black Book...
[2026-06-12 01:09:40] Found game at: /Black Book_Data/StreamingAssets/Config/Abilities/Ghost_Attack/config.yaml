@@ -1,0 +1,16 @@
+﻿Name: Бесплотная атака
+AbilityType: GHOST_ATTACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: GHOST_ATTACK
+GoldCost: 3
+Effects:
+- MinValue: 5
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

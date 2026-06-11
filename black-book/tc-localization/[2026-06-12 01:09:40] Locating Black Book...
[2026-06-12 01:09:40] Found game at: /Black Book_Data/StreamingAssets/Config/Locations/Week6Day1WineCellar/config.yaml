@@ -1,0 +1,14 @@
+﻿IdName: Week6Day1WineCellar
+Name: Винный погреб
+Description: В таких комнатушках дворяне хранят свои запасы вина. Хоть кабак открывай!
+Scene: PrisonReExploration
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day1/WineCellar/Intro
+  CameraOverride: CMHallCamera
+  MusicOverride: event:/Music/ExploreDark
+RequiredLocations:
+- Week6Day1Passage
+HideBook: true
+

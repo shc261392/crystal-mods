@@ -1,0 +1,7 @@
+﻿Name: Ploskoy Ravine
+Description: Peasants spotted a great whirlwind in this ravine a few days ago and asked me to check it out.
+ShortQuestDescr: Get rid of the demons in the ravine
+LevelConfig:
+  Battle:
+    Name: Chort's Whirlwind
+

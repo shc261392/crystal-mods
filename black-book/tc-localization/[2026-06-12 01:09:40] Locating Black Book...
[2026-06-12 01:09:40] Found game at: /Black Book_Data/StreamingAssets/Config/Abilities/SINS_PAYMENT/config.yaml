@@ -1,0 +1,19 @@
+﻿Name: Плата за грехи
+AbilityType: SINS_PAYMENT
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: SINS_PAYMENT
+GoldCost: 5
+Effects:
+- EffectType: STATUS_ON_SINS
+  StatusEffectType: Blessed
+- EffectType: STATUS_ON_SINS
+  StatusEffectType: DefenceGive
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+

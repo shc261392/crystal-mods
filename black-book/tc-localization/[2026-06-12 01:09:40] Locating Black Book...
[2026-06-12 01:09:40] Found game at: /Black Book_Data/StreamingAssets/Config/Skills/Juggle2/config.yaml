@@ -1,0 +1,11 @@
+﻿Name: Ловкость рук II
+SkillName: Juggle2
+Sprite: Juggle2Skill
+Description: Увеличивает количество используемых предметов в ход на {CalculatedEffect}
+RequiredSkills:
+- Juggle1
+Effects:
+- Value: 1
+  Type: AdditionalItemUsage
+Level: 7
+

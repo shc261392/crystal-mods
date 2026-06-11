@@ -1,0 +1,8 @@
+Name: SELAFIIL
+SkillName: AbilitySELAFIIL
+Sprite: ConfusedDirectionsSkill
+SpriteOffsetX: -52
+SpriteOffsetY: -46
+Effects:
+- Type: AbilityUnlock
+  StringData: SELAFIIL

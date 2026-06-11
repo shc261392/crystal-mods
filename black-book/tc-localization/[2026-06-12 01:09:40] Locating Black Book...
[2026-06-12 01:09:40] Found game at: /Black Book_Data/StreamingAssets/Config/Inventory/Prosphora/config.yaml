@@ -1,0 +1,9 @@
+﻿Name: Просфора
+InventoryItemName: Prosphora
+Flavour: 'Та девка взяла кусок просфоры, спустилась в голбец, и видит: суседко сидит'
+Sprite: Prosphora
+Cost: 50
+Effects:
+- Value: 1
+  Type: ReduceDemons
+

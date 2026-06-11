@@ -1,0 +1,18 @@
+﻿IdName: Week2Day1UstBorovPlant
+Name: Усть-Боровской завод
+Description: Солеварный завод на берегу Камы. Последнее время тут нечистая сила блазнит, вся округа знает.
+ShortQuestDescr: Добраться до завода
+LongQuestDescr: Управляющий завода попросил вас отправиться на Усть-Боровской завод и прогнать нечистую силу
+Scene: SaltFabric
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day1/UstBorovPlant
+RequiredLocations:
+- Week2Day1UstBorov
+LockedAllies:
+- DedEgor
+- DedEgorLoyal
+- Nikolay
+- NikolayLoyal
+

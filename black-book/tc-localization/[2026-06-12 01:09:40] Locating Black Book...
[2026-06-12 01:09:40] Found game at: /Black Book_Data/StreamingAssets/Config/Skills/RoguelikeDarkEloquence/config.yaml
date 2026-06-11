@@ -1,0 +1,1 @@
+Name: Темное красноречиеSkillName: RoguelikeDarkEloquenceSprite: DarkEloquenceSkillDescription: Эффект складности черных слов увеличен на {CalculatedEffect}RequiredSkills:- AbilitySILENT_AILMENTEffects:- Value: 1  Type: AdditionalBlackSklad

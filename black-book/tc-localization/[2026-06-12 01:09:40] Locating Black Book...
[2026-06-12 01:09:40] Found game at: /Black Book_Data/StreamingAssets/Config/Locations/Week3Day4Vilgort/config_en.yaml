@@ -1,0 +1,8 @@
+﻿Name: Trinity Church in Vilgort
+Description: We've nearly made it to the church!
+ShortQuestDescr: Protect the Bridal Procession
+LongQuestDescr: Some koldun is intent on disrupting the wedding. I need to protect the procession from curses and bring the guests to Vilgort.
+LevelConfig:
+  Battle:
+    Name: Knower versus Knower
+

@@ -1,0 +1,25 @@
+﻿Name: Варахаил +
+AbilityType: VARAHAIL_UP
+TargetType: SELF
+Intention: DEFENCE
+Sprite: Varahail
+GoldCost: 7
+Effects:
+- EffectType: DEFENCE
+  MinValue: 7
+  MaxValue: 7
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+- EffectType: STATUS
+  MinValue: 4
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: NONE
+    ReadyTrigger: Word
+    SpellTrigger: GoodStatus
+    MissTrigger: GoodStatus
+    WrapUpTime: 0.5
+  StatusEffectType: Blessed
+

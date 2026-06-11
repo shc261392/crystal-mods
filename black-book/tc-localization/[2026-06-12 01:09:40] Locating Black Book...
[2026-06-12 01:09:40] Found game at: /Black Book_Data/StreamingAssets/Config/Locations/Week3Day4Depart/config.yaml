@@ -1,0 +1,13 @@
+﻿IdName: Week3Day4Depart
+Name: Отъезд поезда
+Description: Все приготовления сделаны – можно и в дорогу поезд отправлять.
+Scene: WeddingTrain
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Exploration: Week3Day4Depart
+  CinematicIntro: true
+  MusicOverride: event:/Music/Explore2
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week3Day4Yard
+

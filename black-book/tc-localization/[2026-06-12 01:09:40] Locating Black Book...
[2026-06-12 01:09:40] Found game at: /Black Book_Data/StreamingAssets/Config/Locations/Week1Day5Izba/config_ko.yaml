@@ -1,0 +1,6 @@
+﻿Name: 이고르 할아버지의 이즈바
+Description: 이즈바 근처의 숲에서 악령을 찾아 초르트를 전부 퇴치해야 한다!
+LevelConfig:
+  Battle:
+    Name: 이즈바 근처의 초르트
+

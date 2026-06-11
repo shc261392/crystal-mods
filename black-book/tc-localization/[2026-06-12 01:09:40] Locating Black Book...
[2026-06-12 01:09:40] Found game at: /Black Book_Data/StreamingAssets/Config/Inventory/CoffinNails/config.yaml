@@ -1,0 +1,10 @@
+﻿Name: Гробовые гвозди
+InventoryItemName: CoffinNails
+Flavour: Килуны-то, колдуны, умирают страшно, шибко мучаются
+Sprite: IconCoffinNails
+Cost: 180
+Effects:
+  - Value: 7
+    Type: StatusOnBattleStart
+    StatusName: Spikes
+

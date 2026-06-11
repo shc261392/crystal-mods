@@ -1,0 +1,21 @@
+﻿IdName: Week2Day2Barn
+Name: Амбар
+Description: В амбаре хранят соль после выварки. Потом из него грузят на баржи – и в Новгород, на ярмарку...
+Scene: SaltFabricHangar
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  MusicOverride: event:/Music/ExploreDark2
+  Battle:
+    Name: Амбарники
+    Enemies:
+    - Type: Domovoi
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSmall
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day2/Barn
+    Outro: TextQuest/Week2/Day2/BarnTalk
+RequiredLocations:
+- Week2Day2Varnitsa
+

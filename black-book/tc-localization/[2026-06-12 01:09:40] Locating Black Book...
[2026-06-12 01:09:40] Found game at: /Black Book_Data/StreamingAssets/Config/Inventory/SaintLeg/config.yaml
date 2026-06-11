@@ -1,0 +1,10 @@
+﻿Name: Нога для святого
+InventoryItemName: SaintLeg
+Flavour: Сказано было привесов к образам не привешивать
+Sprite: IconSaintLeg
+Cost: 100
+Effects:
+  - Value: 1
+    Type: StatusOnBattleStart
+    StatusName: BlessOnHealthLoss
+

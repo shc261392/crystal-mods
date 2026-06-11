@@ -1,0 +1,7 @@
+﻿Name: 废井
+Description: 那是啥东西？是井吗？
+ShortQuestDescr: 跟踪邪灵
+LevelConfig:
+  Battle:
+    Name: 水井精怪
+

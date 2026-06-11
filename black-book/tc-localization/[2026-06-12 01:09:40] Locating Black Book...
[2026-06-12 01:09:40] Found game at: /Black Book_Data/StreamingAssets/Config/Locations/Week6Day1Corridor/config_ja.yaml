@@ -1,0 +1,6 @@
+﻿Name: 廊下
+Description: もう少し！ あとは、この長い廊下を抜けるだけだ。
+LevelConfig:
+  Battle:
+    Name: 廊下のシシガ
+

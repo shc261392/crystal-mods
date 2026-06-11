@@ -1,0 +1,15 @@
+﻿IdName: Week4Day1FoggyForest
+Name: Туманный лес
+Description: Я такого тумана давно не видела. Что-то странное тут творится.
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day1/Map1/Woods
+  Exploration: Week4Day1ForestView
+  CameraOverride: CMQuestCamera5
+  NoExplorerSpawn: true
+LightingType: FOG
+MoonType: NONE
+

@@ -1,0 +1,21 @@
+﻿IdName: Week6Day2IzbaPryaha
+Name: Изба Пряхи
+Description: Снова эта проклятая изба... Некогда дедушкиной помощи ждать, сама книгу верну!
+ShortQuestDescr: Вернуть Черную книгу
+LongQuestDescr: Пряха отобрала ваш колдовской манускрипт! Вы отправились в логово колдуньи, чтобы вернуть самый ценный артефакт во всей губернии.
+Scene: Tkachiha
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day2/IzbaPryaha/Intro
+LightingType: STORM
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+OnomastikonItems:
+- Onomastikon/Encyclopedia/72
+HideBook: true
+

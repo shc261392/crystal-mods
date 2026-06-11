@@ -1,0 +1,19 @@
+﻿IdName: Week4Day6Fields
+Name: Поля Лунволадор
+Description: Это, значит, поля на дневной южной стороне, по-пермяцки-то.
+Scene: Fields
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Battle:
+    Name: Приспешники пастуха
+    Enemies:
+    - Type: ForestDemon
+      LevelSpawnPointType: EnemyCenter
+    - Type: WolfHalf
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day6/Fields/Intro
+LightingType: FOG
+

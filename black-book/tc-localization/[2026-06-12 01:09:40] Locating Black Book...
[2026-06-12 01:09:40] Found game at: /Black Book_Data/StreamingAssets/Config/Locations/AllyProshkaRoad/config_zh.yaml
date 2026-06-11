@@ -1,0 +1,6 @@
+﻿Name: 去亚尼铎的路
+Description: 这条往东走的路是去维葛特的，到了那边，离亚尼铎就不远了。
+LevelConfig:
+  Battle:
+    Name: 暗处的谜语
+

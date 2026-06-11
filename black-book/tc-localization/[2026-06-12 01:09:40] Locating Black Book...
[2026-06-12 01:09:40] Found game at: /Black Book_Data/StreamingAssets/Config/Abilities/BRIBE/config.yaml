@@ -1,0 +1,20 @@
+﻿Name: Взятка
+AbilityType: BRIBE
+TargetType: ENEMY
+Intention: DEFENCE
+Sprite: ENAHA_DEMON
+Effects:
+  - EffectType: DEFENCE
+    MinValue: 99
+    MaxValue: 99
+  - EffectType: GIVE_MONEY
+    MinValue: 99
+    MaxValue: 99
+    VisualEffect:
+      VisualEffectType: CROSS
+      ReadyTrigger: Word
+      SpellTrigger: Spell
+      MissTrigger: Spell
+      WrapUpTime: 0.2
+      SkipReady: true
+

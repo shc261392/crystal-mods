@@ -1,0 +1,8 @@
+Name: AVOIL
+SkillName: AbilityAVOIL
+Sprite: ConfusedDirectionsSkill
+SpriteOffsetX: -43
+SpriteOffsetY: -62
+Effects:
+- Type: AbilityUnlock
+  StringData: AVOIL

@@ -1,0 +1,14 @@
+﻿IdName: Week2Day4Village
+Name: Подводная деревня
+Description: Вакуль ведет свое хозяйство, а в работниках у него утопни.
+Scene: DrownVillage
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day4/Village
+  MusicOverride: event:/Music/Underwater
+  MixerSnapshot: snapshot:/Underwater
+RequiredLocations:
+- Week2Day4SandBottomFight
+OnomastikonItems:
+- Onomastikon/Tales/45
+

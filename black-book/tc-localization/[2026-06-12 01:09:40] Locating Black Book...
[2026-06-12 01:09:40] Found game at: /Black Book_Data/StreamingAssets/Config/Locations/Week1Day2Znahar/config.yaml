@@ -1,0 +1,12 @@
+﻿IdName: Week1Day2Znahar
+Name: Знахарка перехожая
+Description: В нашу округу пришла известная знахарка. Стоит посмотреть, какими травами она торгует.
+ShortQuestDescr: Купить трав у знахарки
+Scene: Village7
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Merchants:
+  - Herbalist
+RequiredLocations:
+- Week1Day2Crossroads
+

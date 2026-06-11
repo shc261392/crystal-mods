@@ -1,0 +1,10 @@
+﻿Name: Лампада
+InventoryItemName: Lantern
+Flavour: Нашепчут, перед богом лампадка-та стоит. В лампадку наливали елей, как масло, ну, лампостное масло.
+Sprite: IconLantern
+Cost: 100
+Effects:
+  - Value: 2
+    Type: StatusOnBattleStart
+    StatusName: Blessed
+

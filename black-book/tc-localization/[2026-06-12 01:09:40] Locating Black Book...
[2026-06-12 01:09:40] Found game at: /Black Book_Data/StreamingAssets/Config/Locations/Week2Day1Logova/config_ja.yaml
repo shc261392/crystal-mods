@@ -1,0 +1,7 @@
+﻿Name: ロゴヴォ村
+Description: アレクサンドルが村人の娘の治療に訪れたのはこの村だ。
+ShortQuestDescr: 村人を治療する
+LevelConfig:
+  Battle:
+    Name: 火の蛇
+

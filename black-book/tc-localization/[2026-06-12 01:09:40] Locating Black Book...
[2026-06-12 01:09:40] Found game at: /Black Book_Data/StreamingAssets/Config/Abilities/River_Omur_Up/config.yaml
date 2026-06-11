@@ -1,0 +1,15 @@
+﻿Name: Река Омур +
+AbilityType: RIVER_OMUR_UP
+TargetType: SELF
+Sprite: CrossAbility
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  MinValue: 4
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+  StatusEffectType: AllyDamageIncrease
+

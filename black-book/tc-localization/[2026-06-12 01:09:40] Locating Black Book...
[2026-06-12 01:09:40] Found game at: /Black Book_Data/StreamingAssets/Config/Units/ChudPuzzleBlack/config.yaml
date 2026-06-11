@@ -1,0 +1,16 @@
+﻿AssetName: Chud2
+Health: 30
+HealthRandomAdd: 30
+Mana: 4
+Initiative: 1
+MoneyMin: 18
+MoneyMax: 24
+Experience: 100
+UnitAI:
+  AIAbilities:
+  - AbilityType: CHUD_SYOD
+    TargetType: ENEMY
+  - AbilityType: DEMON_ATTACK_PUZZLE_DAMAGE_10
+    TargetType: ENEMY
+  CastingType: CONSEQUITIVE
+Name: Чудь

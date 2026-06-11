@@ -1,0 +1,10 @@
+Name: WIND_FIERCE
+SkillName: AbilityWIND_FIERCE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityPEREPOLOH
+SpriteOffsetX: -77
+SpriteOffsetY: 8
+Effects:
+- Type: AbilityUnlock
+  StringData: WIND_FIERCE

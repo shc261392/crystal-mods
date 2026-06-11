@@ -1,0 +1,6 @@
+﻿Name: チュヂの土手
+Description: 土手に向かって狼の足跡が続いていたのを猟師が見つけたらしい。
+LevelConfig:
+  Battle:
+    Name: 飢えた狼
+

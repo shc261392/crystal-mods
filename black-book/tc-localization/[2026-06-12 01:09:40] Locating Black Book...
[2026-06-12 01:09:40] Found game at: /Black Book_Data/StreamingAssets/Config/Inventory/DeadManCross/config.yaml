@@ -1,0 +1,10 @@
+﻿Name: Крест покойника
+InventoryItemName: DeadManCross
+Flavour: Обычный крест защищает от нечистой силы. Крест мертвеца защищает вдвойне.
+Sprite: DeadManCross
+Cost: 50
+Effects:
+- Value: 2
+  Type: StatusOnBattleStart
+  StatusName: DefenceGive
+

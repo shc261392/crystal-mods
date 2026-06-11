@@ -1,0 +1,6 @@
+﻿Name: 圣词+
+Description: >-
+  造成{MinValue}点伤害
+
+  <sprite name="Defence">增加{MinValue}点
+

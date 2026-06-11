@@ -1,0 +1,15 @@
+﻿Name: Новая цепь
+AbilityType: NEW_CHAIN
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: BUFF
+Sprite: NEW_CHAIN
+GoldCost: 21
+Effects:
+- EffectType: ADD_EFFECT_TO_BOOK
+  MinValue: 1
+  MaxValue: 1
+  StringData: DAMAGE
+- EffectType: IMMEDIATE
+- EffectType: KRADA
+

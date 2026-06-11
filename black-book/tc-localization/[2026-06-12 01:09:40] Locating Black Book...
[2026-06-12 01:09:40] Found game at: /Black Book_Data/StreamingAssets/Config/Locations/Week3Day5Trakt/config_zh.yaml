@@ -1,0 +1,6 @@
+﻿Name: 切尔登公路
+Description: 这条路可真宽，我还没咋走过这么宽的路呢！
+LevelConfig:
+  Battle:
+    Name: 雠特群
+

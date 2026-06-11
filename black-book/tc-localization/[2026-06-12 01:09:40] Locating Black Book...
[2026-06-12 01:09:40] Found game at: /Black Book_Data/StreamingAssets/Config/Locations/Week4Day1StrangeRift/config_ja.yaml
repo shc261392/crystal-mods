@@ -1,0 +1,6 @@
+﻿Name: 奇怪な浅瀬
+Description: 霧の中だから気をつけないと。うっかり谷底になんて落ちたくない。
+LevelConfig:
+  Battle:
+    Name: 霧のチョルト
+

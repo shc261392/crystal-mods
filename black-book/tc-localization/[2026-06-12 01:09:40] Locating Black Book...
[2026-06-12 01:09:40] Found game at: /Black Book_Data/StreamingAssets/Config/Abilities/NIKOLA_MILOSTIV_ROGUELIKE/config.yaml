@@ -1,0 +1,22 @@
+﻿Name: Никола Милостивый
+AbilityType: NIKOLA_MILOSTIV_ROGUELIKE
+Upgrade: NIKOLA_MILOSTIV_UP
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: NIKOLA_MILOSTIV
+GoldCost: 27
+Effects:
+- EffectType: STATUS_SKLAD
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal4OrderWhite
+    MissTrigger: Seal4OrderWhite
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: Piety
+

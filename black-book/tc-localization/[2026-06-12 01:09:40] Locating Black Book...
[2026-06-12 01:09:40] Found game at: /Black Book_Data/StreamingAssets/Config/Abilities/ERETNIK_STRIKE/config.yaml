@@ -1,0 +1,16 @@
+﻿Name: Окостенелая рука
+AbilityType: ERETNIK_STRIKE
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: ERETNIK_STRIKE
+GoldCost: 3
+Effects:
+- MinValue: 15
+  MaxValue: 35
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

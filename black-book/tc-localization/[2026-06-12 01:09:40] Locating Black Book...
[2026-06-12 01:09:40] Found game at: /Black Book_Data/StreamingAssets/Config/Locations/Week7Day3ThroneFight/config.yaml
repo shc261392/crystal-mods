@@ -1,0 +1,37 @@
+﻿IdName: Week7Day3ThroneFight
+Name: Трон преисподней
+Scene: HellThrone
+LevelConfig:
+  MusicOverride: event:/Music/ExploreHell
+  MixerSnapshot: snapshot:/Cave
+  Battle:
+    BattleMusic:
+      Name: event:/Music/BattleSatan
+    Name: Сатана
+    Enemies:
+    - Type: Satan1
+      LevelSpawnPointType: EnemyCenter
+    Barks:
+    - Id: Battle/SatanPhase1/First
+      HealthPercent: 0.80
+      TargetUnit: Satan1
+    - Id: Battle/SatanPhase1/Second
+      HealthPercent: 0.60
+      TargetUnit: Satan1
+    - Id: Battle/SatanPhase1/Third
+      HealthPercent: 0.40
+      TargetUnit: Satan1
+    WinCutscene: Week7Day3ThronePhase1Win
+    EnemyKillWin: true
+    HealthLoose: true
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+- Proshka
+- ProshkaLoyal

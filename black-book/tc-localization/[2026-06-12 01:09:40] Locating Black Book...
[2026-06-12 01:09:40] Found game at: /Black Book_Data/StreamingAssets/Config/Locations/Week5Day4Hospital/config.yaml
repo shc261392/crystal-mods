@@ -1,0 +1,19 @@
+﻿IdName: Week5Day4Hospital
+Name: Фельдшерский пункт
+Description: 'В этом селе выстроили большой фельдшерский пункт, где якобы болезни лечат. Понятное дело, что у них мало что получается: они-то не колдуны. Теперь и до лихорадок долечились.'
+ShortQuestDescr: Сделать лихорадочные свечи
+LongQuestDescr: Говорят, лихорадка поселилась в Искоре. А где живет лихорадка, там и мертвецов достаточно.
+Scene: Hospital
+LevelConfig:
+  Quest:
+    IzbaAftermath: Izba/Week5/Day31LihomankaAftermath
+    NightEndQuest: true
+  Exploration: Week5Day4Hospital
+  CinematicIntro: true
+  MusicOverride: event:/Music/ExploreDark2
+LightingType: DARK
+RequiredLocations:
+- Week5Day4IskorVillage
+OnomastikonItems:
+- Onomastikon/Encyclopedia/7
+

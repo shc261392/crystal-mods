@@ -1,0 +1,8 @@
+﻿Unique: true
+Name: Гниль
+Description: Увеличивает яд в начале хода на {Duration}
+Sprite: StatRot
+Harmful: true
+AdditionalStatusData: Poison
+DecreaseOnStartTurn: true
+

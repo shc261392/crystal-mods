@@ -1,0 +1,10 @@
+﻿Name: Бесовой нож
+InventoryItemName: DevilKnife
+Flavour: Сделан для мучения, а не убийства
+Sprite: DevilKnife
+Cost: 140
+Effects:
+- Value: 5
+  Type: StatusBonus
+  StatusName: Spikes
+

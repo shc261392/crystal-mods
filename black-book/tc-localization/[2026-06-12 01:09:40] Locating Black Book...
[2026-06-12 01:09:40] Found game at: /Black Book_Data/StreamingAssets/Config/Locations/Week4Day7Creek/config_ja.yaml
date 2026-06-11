@@ -1,0 +1,6 @@
+﻿Name: イグナチェフ川
+Description: 川沿いの木々に、リボンが結び付けられているのが見える。
+LevelConfig:
+  Battle:
+    Name: 小川の死者
+

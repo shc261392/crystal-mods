@@ -1,0 +1,6 @@
+﻿Name: チェルディニ郊外
+Description: チェルディニは大きい。ペルミはもっと大きいらしい。まったく想像もつかないな。
+LevelConfig:
+  Battle:
+    Name: 郊外のチョルト
+

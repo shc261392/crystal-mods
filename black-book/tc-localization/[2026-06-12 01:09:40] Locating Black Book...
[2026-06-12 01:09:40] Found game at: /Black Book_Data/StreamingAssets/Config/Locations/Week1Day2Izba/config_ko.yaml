@@ -1,0 +1,8 @@
+﻿Name: 우리 이즈바 옆의 숲
+Description: 우리 이즈바 옆에 있는 오래된 숲은 사람들을 불안하게 한다. 물론 이 근방의 모든 것이 그렇지만.
+LevelConfig:
+  Battle:
+    Name: 노래하는 악마
+  BattleAlternative:
+    Name: 노래하는 악마
+

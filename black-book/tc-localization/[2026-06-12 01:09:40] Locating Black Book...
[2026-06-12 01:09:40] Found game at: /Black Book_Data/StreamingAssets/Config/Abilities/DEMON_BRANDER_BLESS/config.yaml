@@ -1,0 +1,21 @@
+﻿Name: Адова мотивация
+AbilityType: DEMON_BRANDER_BLESS
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: DEMON_BRANDER_BLESS
+GoldCost: 5
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Blessed
+  MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+- MinValue: 1
+  MaxValue: 1
+

@@ -1,0 +1,6 @@
+﻿Name: 다락방
+Description: 다락에는 온갖 악령이 숨곤 한다. 혹시 모르니 확인해 봐야겠다.
+LevelConfig:
+  Battle:
+    Name: 도모보이
+

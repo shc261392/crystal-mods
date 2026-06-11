@@ -1,0 +1,19 @@
+﻿AssetName: WolfChangeling
+Health: 20
+Mana: 4
+Initiative: 1
+MoneyMin: 6
+MoneyMax: 12
+Experience: 100
+StartingStatusEffects:
+- StatusEffectType: DeadlyHealth
+  Duration: 999999
+  Permanent: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: WOLF_BITE_DEADLY
+    TargetType: PLAYER
+    ConsequitiveRounds: 2
+  CastingType: RANDOM
+Name: Перевёрнутый волк
+

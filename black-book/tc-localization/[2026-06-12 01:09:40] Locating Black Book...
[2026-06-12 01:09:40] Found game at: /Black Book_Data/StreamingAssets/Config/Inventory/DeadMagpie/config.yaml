@@ -1,0 +1,9 @@
+﻿Name: Мертвая сорока
+InventoryItemName: DeadMagpie
+Flavour: Говорят, раньше домовые в виде сорок являлись
+Sprite: DeadMagpie
+Cost: 80
+Effects:
+- Value: 2
+  Type: AdditionalHeal
+

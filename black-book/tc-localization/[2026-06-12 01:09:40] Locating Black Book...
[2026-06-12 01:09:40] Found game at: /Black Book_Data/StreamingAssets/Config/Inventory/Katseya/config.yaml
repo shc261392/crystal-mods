@@ -1,0 +1,10 @@
+﻿Name: Кацея
+InventoryItemName: Katseya
+Flavour: Поп-от поет, приговариват, машет кадилом
+Sprite: Katseya
+Cost: 80
+Effects:
+  - Value: 2
+    Type: StatusOnBattleStart
+    StatusName: Piety
+

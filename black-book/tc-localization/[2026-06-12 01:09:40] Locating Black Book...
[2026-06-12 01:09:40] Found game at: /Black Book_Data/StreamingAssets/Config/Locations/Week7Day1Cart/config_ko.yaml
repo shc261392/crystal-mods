@@ -1,0 +1,6 @@
+﻿Name: 무쇠 수레
+Description: 커다란 수레가 역청 함정에 빠져 있다. 지옥의 수레이지만 마치 어딘가에서 본 것 같다.
+LevelConfig:
+  Battle:
+    Name: 죄인의 수레
+

@@ -1,0 +1,3 @@
+﻿Name: Damage on gaining <sprite name="Defence">
+Description: Deal {Duration} <sprite name="Damage"> to random enemy when gaining <sprite name="Defence">
+

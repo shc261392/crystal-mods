@@ -1,0 +1,11 @@
+﻿IdName: AllyKarnyshSimonova
+Name: Деревня Симонова
+Description: В деревне можно поподробнее о лесе том вороньевом разузнать.
+Scene: Village3
+LevelConfig:
+  MusicOverride: event:/Music/ExploreLight
+  Merchants:
+  - Peddler2
+  Quest:
+    DialogueSystemName: TextQuest/AllyKarnysh/Simonova/Intro
+

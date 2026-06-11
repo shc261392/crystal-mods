@@ -1,0 +1,22 @@
+﻿Name: Лешак Хоровей
+AbilityType: LESHAK_HOROVEY_ROGUELIKE
+Upgrade: LESHAK_HOROVEY_UP
+TargetType: SELF
+Color: WHITE
+Intention: BUFF
+AbilitySpellType: STATUS
+AbilityBookPartType: KEY
+Sprite: LESHAK_HOROVEY
+GoldCost: 43
+Effects:
+- EffectType: KRADA
+- EffectType: STATUS_SKLAD
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+  StatusEffectType: DamageOnItemUse
+  StatusPermanent: true
+

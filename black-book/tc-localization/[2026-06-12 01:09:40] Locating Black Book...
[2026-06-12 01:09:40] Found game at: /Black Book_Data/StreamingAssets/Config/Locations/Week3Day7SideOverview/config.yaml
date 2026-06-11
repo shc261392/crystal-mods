@@ -1,0 +1,14 @@
+﻿IdName: Week3Day7SideOverview
+Name: Обрыв над долиной
+Description: С этого обрыва открывается вид на все окрестные земли. Баско-то как!..
+Scene: PoludSideOverview
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day7/SideOverview/Intro
+  Exploration: Week3Day7SideOverview
+RequiredLocations:
+- Week3Day7Creek
+OnomastikonItems:
+- Onomastikon/Tales/11
+

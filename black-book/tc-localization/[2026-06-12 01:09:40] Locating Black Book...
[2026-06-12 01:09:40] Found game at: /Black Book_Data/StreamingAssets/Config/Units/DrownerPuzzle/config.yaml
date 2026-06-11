@@ -1,0 +1,17 @@
+﻿RandomAssets:
+- Drowner
+- Drowner2
+Health: 35
+HealthRandomAdd: 10
+Mana: 4
+Initiative: 1
+MoneyMin: 12
+MoneyMax: 18
+Experience: 150
+UnitAI:
+  AIAbilities:
+  - AbilityType: DEMON_ATTACK_PUZZLE_1
+    TargetType: ENEMY
+  CastingType: CONSEQUITIVE
+Name: Утопленник
+

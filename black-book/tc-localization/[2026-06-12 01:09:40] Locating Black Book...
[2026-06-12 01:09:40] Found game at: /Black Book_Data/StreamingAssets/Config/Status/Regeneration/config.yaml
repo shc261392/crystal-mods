@@ -1,0 +1,6 @@
+﻿Unique: true
+Name: Регенерация
+Description: Восстанавливет {Duration} <sprite name="Health"> в начале хода
+Sprite: StatRegeneration
+DecreaseOnStartTurn: true
+

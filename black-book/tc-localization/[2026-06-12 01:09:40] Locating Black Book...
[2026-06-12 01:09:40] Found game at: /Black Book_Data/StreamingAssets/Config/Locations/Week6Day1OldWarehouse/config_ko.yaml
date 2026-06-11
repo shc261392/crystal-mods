@@ -1,0 +1,8 @@
+﻿Name: 오래된 창고
+Description: 아! 여기 지하실 출구가 있다!
+ShortQuestDescr: 탈출하기
+LongQuestDescr: 알렉산더와 방적공이 당신을 감금한 후 책을 빼앗았습니다. 탈출하여 유물을 되찾아야 합니다!
+LevelConfig:
+  Battle:
+    Name: 날카로운 이빨의 백조
+

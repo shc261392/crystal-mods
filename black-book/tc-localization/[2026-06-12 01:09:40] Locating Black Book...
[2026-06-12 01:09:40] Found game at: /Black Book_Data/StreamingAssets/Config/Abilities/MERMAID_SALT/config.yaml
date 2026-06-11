@@ -1,0 +1,17 @@
+﻿Name: Соль на раны
+AbilityType: MERMAID_SALT
+TargetType: SELF
+Intention: BUFF
+Sprite: MERMAID_CLAWS
+GoldCost: 3
+Effects:
+- EffectType: HEAL
+  MinValue: 25
+  MaxValue: 35
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

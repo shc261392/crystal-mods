@@ -1,0 +1,8 @@
+﻿Name: 미하일의 교차로
+Description: 전부 여기서 시작했지... 저기 교차로에서 할아버지가 느껴져.
+ShortQuestDescr: 이고르 할아버지 찾기
+LongQuestDescr: 검은 책을 되찾았습니다. 이제 봉인을 하나만 더 풀면 됩니다! 당신은 의식에 도움을 받기 위해 이고르 할아버지를 찾아 나섭니다.
+LevelConfig:
+  Battle:
+    Name: 이고르의 정체
+

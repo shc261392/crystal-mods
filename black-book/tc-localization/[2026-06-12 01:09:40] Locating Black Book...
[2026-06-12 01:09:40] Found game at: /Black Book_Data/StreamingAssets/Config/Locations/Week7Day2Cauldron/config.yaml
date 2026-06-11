@@ -1,0 +1,26 @@
+﻿IdName: Week7Day2Cauldron
+Name: Котлы бесов
+Description: Слышу крики с той стороны; видно, мучают души людские.
+ShortQuestDescr: Дьявольское приглашение
+Secondary: Week7Day2Cauldron
+Scene: Hell
+RequiredLocations:
+  - Week7Day2Pits
+LevelConfig:
+  Battle:
+    Name: Среди котлов
+    Enemies:
+      - Type: DemonFire
+        LevelSpawnPointType: EnemyLeft
+      - Type: DemonFierceFire
+        LevelSpawnPointType: EnemyCenter
+      - Type: DemonBrander
+        LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week7/Day2/Cauldron/Intro
+    Outro: TextQuest/Week7/Day2/Cauldron/Outro
+  MixerSnapshot: snapshot:/Cave
+OnomastikonItems:
+  - Onomastikon/Encyclopedia/67

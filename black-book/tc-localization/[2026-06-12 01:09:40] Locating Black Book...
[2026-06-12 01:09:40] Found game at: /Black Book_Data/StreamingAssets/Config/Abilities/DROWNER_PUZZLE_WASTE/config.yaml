@@ -1,0 +1,18 @@
+﻿Name: Головоломная порча
+AbilityType: DROWNER_NAILS
+TargetType: ENEMY
+Intention: ATTACK_DEBUFF
+Sprite: Obderiha
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  MinValue: 999
+  MaxValue: 999
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  StatusEffectType: Waste
+

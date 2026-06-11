@@ -1,0 +1,10 @@
+Name: BAD_EYE_ROGUELIKE
+SkillName: AbilityBAD_EYE_ROGUELIKE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityDropLock1
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: BAD_EYE_ROGUELIKE

@@ -1,0 +1,10 @@
+﻿Name: Темное красноречие
+SkillName: DarkEloquence
+Sprite: DarkEloquenceSkill
+Description: Эффект складности черных слов увеличен на {CalculatedEffect}
+RequiredSkills:
+- FierceWords3
+Effects:
+- Value: 1
+  Type: AdditionalBlackSklad
+

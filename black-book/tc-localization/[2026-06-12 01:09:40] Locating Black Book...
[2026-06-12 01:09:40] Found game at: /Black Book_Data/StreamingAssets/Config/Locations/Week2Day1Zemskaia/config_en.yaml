@@ -1,0 +1,6 @@
+﻿Name: Post Station
+Description: You can find these stations all over the gubernia. A place to rest and change horses.
+LevelConfig:
+  Battle:
+    Name: Susedko
+

@@ -1,0 +1,21 @@
+﻿AssetName: SnakeCopper
+Health: 20
+HealthRandomAdd: 3
+Mana: 4
+Initiative: 1
+MoneyMin: 2
+MoneyMax: 3
+Experience: 125
+UnitAI:
+  AISpecialAbilities:
+  - AbilityType: SNAKE_ATTACK_EXHAUSTION
+    DecisionType: DOES_NOT_HAVE_STATUS
+    TargetType: PLAYER
+    SpecialData: Cursed
+  AIAbilities:
+  - AbilityType: SNAKE_ATTACK
+    TargetType: ENEMY
+    ConsequitiveRounds: 2
+  CastingType: RANDOM
+Name: Змея-медяница
+

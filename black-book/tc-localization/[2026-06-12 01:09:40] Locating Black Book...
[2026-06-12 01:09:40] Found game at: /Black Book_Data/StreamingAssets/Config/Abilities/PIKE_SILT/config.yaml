@@ -1,0 +1,17 @@
+﻿Name: Речной ил
+AbilityType: PIKE_SILT
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: PIKE_SILT
+GoldCost: 3
+Effects:
+- MinValue: 6
+  MaxValue: 6
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  RepeatCount: 2
+

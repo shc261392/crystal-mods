@@ -1,0 +1,8 @@
+﻿Name: 县警察局
+Description: 我到了这地方，就能见到教堂门房米哈耶尔·尼基福罗维奇了。
+ShortQuestDescr: 找到圣矛
+LongQuestDescr: 要办库帕拉的仪式，就得有圣矛，不知道教堂门房把它藏啥地方去了。
+LevelConfig:
+  Battle:
+    Name: 警局苏谢德科
+

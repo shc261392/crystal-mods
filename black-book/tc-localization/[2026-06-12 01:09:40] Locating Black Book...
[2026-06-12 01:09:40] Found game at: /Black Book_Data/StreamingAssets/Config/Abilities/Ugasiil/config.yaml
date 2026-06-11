@@ -1,0 +1,24 @@
+﻿Name: Угасиил
+AbilityType: UGASIIL
+Upgrade: UGASIIL_UP
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: Ugasiil
+GoldCost: 29
+Effects:
+- EffectType: DEFENCE
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal3OrderWhite
+    MissTrigger: Seal3OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+- EffectType: REMOVE_BAD_STATUS
+  MinValue: 1
+  MaxValue: 1
+  Syllable: true
+

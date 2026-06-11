@@ -1,0 +1,16 @@
+﻿Name: Чирей Василий +
+AbilityType: VASILY_BOIL_UP
+TargetType: ALL_ENEMIES
+Description: >
+  {MinValue} урона всем противникам
+Sprite: VasilyAbility
+GoldCost: 3
+Effects:
+- MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpell
+    MissTrigger: AttackSpell
+

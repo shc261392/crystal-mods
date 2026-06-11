@@ -1,0 +1,18 @@
+﻿Name: Шаянье
+AbilityType: OBDERIHA_DEMON_POISON
+TargetType: ENEMY
+Intention: DEBUFF
+Sprite: OBDERIHA_DEMON_POISON
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Waste
+  MinValue: 1
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

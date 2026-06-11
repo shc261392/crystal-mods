@@ -1,0 +1,15 @@
+﻿IdName: Week2Day5SaltCave
+Name: Соляная пещера
+Description: Подводная пещера к западу от кладбища. Что за тайны там могут быть у водяного?
+ShortQuestDescr: Исследовать пещеру
+Scene: SaltCave
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day5/SaltCave
+  Exploration: Week2Day5SaltCave
+  MusicOverride: event:/Music/Underwater
+  MixerSnapshot: snapshot:/Underwater
+RequiredLocations:
+- Week2Day5Cemetery
+Secondary: Week2Day5SaltCave
+

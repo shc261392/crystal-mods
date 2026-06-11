@@ -1,0 +1,16 @@
+﻿Name: Покрыть коркой
+AbilityType: CRUST_COVER
+TargetType: ALL_ALLIES
+Intention: DEFENCE
+Sprite: CRUST_COVER
+GoldCost: 3
+Effects:
+- EffectType: DEFENCE
+  MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    WrapUpTime: 0.5
+

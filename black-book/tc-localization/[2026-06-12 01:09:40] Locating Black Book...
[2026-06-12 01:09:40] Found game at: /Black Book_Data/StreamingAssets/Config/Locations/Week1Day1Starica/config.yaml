@@ -1,0 +1,21 @@
+﻿IdName: Week1Day1Starica
+Name: Старица
+Description: Дорога ведет через болотистое ущелье. Думаю, тут раньше Колва была.
+ShortQuestDescr: Справиться с чертями в старице
+Scene: Marshes2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Черт в старице
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyCenter
+    SpecialCardRewards:
+    - KILA
+    - LOCK
+    - NAVA
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day1/Starica
+

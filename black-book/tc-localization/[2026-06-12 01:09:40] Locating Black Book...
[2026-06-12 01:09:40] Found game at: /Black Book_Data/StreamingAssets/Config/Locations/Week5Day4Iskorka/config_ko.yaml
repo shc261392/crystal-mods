@@ -1,0 +1,7 @@
+﻿Name: 이스코르카 강
+Description: 이 사냥꾼 오두막에는 결혼식에 콜둔을 초대하고 싶지 않았던 남자가 산다. 이제 그의 집은 바퀴벌레로 가득하다.
+ShortQuestDescr: 바퀴벌레 퇴치하기
+LevelConfig:
+  Battle:
+    Name: 부지런한 초르트
+

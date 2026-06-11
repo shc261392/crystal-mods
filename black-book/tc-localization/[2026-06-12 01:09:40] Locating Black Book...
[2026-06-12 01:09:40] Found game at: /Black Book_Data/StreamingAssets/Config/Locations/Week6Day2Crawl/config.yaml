@@ -1,0 +1,14 @@
+﻿IdName: Week6Day2Crawl
+Name: Подземный лаз
+Description: Куда ведут эти туннели? Как бы не заблудиться!
+Scene: TkachihaEntry
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day2/Crawl/Intro
+  Exploration: Week6Day2Crawl
+  CameraOverride: CMTonelsCamera
+  MixerSnapshot: snapshot:/Cave
+  MusicOverride: event:/Music/ExploreDark2
+  NoExplorerSpawn: true
+HideBook: true
+

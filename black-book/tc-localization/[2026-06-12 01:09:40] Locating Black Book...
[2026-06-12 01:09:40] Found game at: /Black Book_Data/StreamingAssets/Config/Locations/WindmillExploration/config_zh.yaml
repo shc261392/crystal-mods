@@ -1,0 +1,8 @@
+﻿Name: 老风车磨坊
+Description: 这个风车磨坊位于村子和树林这两个世界的交界，据说磨坊主自己就是个巫师，只是法力没有叶戈尔爷爷那么强。
+ShortQuestDescr: 对付磨坊主的雠特
+LongQuestDescr: 你的客人说自己的雠特不推磨石，开始在磨坊大搞破坏。你决定过去看看，让这些雠特回归正道。
+LevelConfig:
+  Battle:
+    Name: 磨坊主的雠特
+

@@ -1,0 +1,12 @@
+﻿IdName: Week4Day4Shepard
+Name: Стога сена
+Description: Какое-то сено насобирали. Тут, говорят, пастуха найти можно.
+Scene: Hays
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day4/Shepard/Intro
+OnomastikonItems:
+- Onomastikon/Encyclopedia/57
+CanBeVisitedMultiple: true
+

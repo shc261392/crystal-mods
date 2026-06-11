@@ -1,0 +1,1 @@
+Name: Приказы IISkillName: RoguelikeOrders2Sprite: Orders2SkillDescription: Получите дополнительное слово с приказом каждый ход в вашу рукуRequiredSkills:- AbilityHELP_NIKOLAEffects:- Value: 1  Type: AdditionalBookmarkOrder

@@ -1,0 +1,20 @@
+﻿Name: Ревун
+AbilityType: REVUN
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: BUFF
+Sprite: REVUN
+GoldCost: 27
+Effects:
+- EffectType: STATUS
+  MinValue: 7
+  MaxValue: 7
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal5OrderBlack
+    MissTrigger: Seal5OrderBlack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: BlessOnHealthLoss
+

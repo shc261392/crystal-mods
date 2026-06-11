@@ -1,0 +1,19 @@
+﻿Name: Сьöд
+AbilityType: CHUD_SYOD
+TargetType: ENEMY
+Intention: BUFF
+Sprite: CHUD_SYOD
+GoldCost: 10
+Effects:
+- EffectType: STATUS
+  StatusEffectType: CrownBlack
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: BAD_STATUS
+    ReadyTrigger: Word
+    SpellTrigger: Attack
+    MissTrigger: Attack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

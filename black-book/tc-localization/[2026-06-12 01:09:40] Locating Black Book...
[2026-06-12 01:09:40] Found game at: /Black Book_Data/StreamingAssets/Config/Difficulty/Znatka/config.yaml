@@ -1,0 +1,4 @@
+Name: Знатка
+Description: Обычная сложность, сбалансированная для первого прохождения игры
+PrefixIcons: "<sprite name=\"SkullB\">"
+Sprite: DifficultyNormal

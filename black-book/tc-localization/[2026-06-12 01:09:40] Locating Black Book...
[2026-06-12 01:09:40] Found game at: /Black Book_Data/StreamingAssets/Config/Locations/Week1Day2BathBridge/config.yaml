@@ -1,0 +1,15 @@
+﻿IdName: Week1Day2BathBridge
+Name: Мосток к баням
+Description: Уже близко до банек. Дорога тоже старая, в негодность приходит.
+Scene: River
+LevelConfig:
+  MusicOverride: event:/Music/ExploreDark
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day2/BathBridge
+  Exploration: Week1Day2BathBridge
+  CameraOverride: CMQuestCamera1
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week1Day2VilgortChurch
+

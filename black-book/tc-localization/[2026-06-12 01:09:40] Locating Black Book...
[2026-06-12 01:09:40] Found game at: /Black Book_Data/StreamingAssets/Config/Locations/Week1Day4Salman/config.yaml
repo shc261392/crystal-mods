@@ -1,0 +1,33 @@
+﻿IdName: Week1Day4Salman
+Name: Салманские болота
+Description: В болота эти мало кто захаживает. Места человеком не обжитые, а значит, заселила их всяческая нечисть.
+Scene: Marshes2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Салманская нечисть
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyCenter
+    - Type: SnakeGaduka
+    EnemyKillWin: true
+    HealthLoose: true
+  BattleAlternative:
+    Name: Салманская нечисть
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day4/Salman
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 2
+    PossiblePlayers:
+    - Demon
+    DialogueFoolWin: TextQuest/Durak/WinBattleUtil
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+RequiredLocations:
+- Week1Day4Abachkin
+

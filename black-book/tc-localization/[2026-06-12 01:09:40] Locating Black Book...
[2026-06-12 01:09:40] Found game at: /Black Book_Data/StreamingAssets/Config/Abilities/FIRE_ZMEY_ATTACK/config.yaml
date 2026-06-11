@@ -1,0 +1,16 @@
+﻿Name: Ожег
+AbilityType: FIRE_ZMEY_ATTACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: FIRE_ZMEY_ATTACK
+GoldCost: 3
+Effects:
+- MinValue: 15
+  MaxValue: 30
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

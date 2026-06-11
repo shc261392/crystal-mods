@@ -1,0 +1,8 @@
+﻿Name: Old Windmill
+Description: The windmill stands at the border of worlds, between the village and the forest. It is said that the miller is a koldun himself, but not as strong as Old Egor.
+ShortQuestDescr: Deal with the Miller's Chorts
+LongQuestDescr: Your supplicant says that his chorts stopped working the grindstones and started to damage the mill. You have decided to pay the chorts a visit and set them down the righteous path.
+LevelConfig:
+  Battle:
+    Name: Miller's Chort
+

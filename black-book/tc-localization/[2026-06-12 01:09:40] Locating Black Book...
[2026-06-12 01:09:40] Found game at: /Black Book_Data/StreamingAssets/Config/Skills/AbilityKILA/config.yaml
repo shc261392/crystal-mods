@@ -1,0 +1,8 @@
+Name: KILA
+SkillName: AbilityKILA
+Sprite: ConfusedDirectionsSkill
+SpriteOffsetX: -59
+SpriteOffsetY: -35
+Effects:
+- Type: AbilityUnlock
+  StringData: KILA

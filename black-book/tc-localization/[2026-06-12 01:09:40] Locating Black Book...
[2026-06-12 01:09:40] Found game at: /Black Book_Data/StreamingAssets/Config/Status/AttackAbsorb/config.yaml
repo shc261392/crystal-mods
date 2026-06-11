@@ -1,0 +1,5 @@
+﻿Unique: true
+Name: Поглощение урона
+Description: Полностью поглощает <sprite name="Damage"> от {Duration} атак противника
+Sprite: StatusShieldUp
+

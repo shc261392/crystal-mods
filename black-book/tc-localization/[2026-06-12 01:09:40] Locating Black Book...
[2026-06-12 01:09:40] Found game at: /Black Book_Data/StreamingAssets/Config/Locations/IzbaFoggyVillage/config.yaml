@@ -1,0 +1,23 @@
+﻿IdName: IzbaFoggyVillage
+Name: Немзя
+Scene: LostVillage
+IsIzba: true
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  Exploration: IzbaFoggyVillage
+  CinematicIntro: true
+  CameraOverride: CMIzbaCamera
+  MusicOverride: "event:/Music/Izba"
+  NoExplorerSpawn: true
+  SpecialLevel: true
+LightingType: FOG_2
+ForbiddenSpawnAllies:
+- DedEgor
+- DedEgorLoyal
+- Nikolay
+- NikolayLoyal
+- Proshka
+- ProshkaLoyal
+- WhiteHead
+- WhiteHeadLoyal
+

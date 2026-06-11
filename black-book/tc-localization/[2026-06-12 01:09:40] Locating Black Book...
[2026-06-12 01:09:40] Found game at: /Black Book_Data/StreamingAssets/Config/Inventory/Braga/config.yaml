@@ -1,0 +1,15 @@
+﻿Name: Бражка
+InventoryItemName: Braga
+Type: Herb
+Flavour: Что ели – кашку, что пили – бражку...
+Sprite: Braga
+Expendable: true
+TargetType: PLAYER
+Cost: 10
+Effects:
+- Value: 5
+  Type: Heal
+- Value: 2
+  Type: Status
+  StatusName: Paralize
+

@@ -1,0 +1,25 @@
+﻿IdName: Week2Day1Logova
+Name: Деревня Логово
+Description: В эту деревню направился Александр, чтобы вылечить крестьянку.
+ShortQuestDescr: Поладить крестьянку
+LocationType: COMBAT
+Scene: IzbaBattle
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Огненный змей
+    Enemies:
+    - Type: FireZmey
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day1/Logova
+    Outro: TextQuest/Week2/Day1/LogovaOutro
+RequiredLocations:
+- Week2Day1Kokarin
+Secondary: Week2Day1Logova
+OnomastikonItems:
+- Onomastikon/Encyclopedia/84
+

@@ -1,0 +1,27 @@
+﻿IdName: Week4Day1Hay
+Name: Непроглядная дымка
+Description: Чувствую, где дымка непрогляднее, там и дорогу нужную найду.
+ShortQuestDescr: Выбраться из леса
+LongQuestDescr: Вы потеряли сознание и очнулись в незнакомом лесу. Теперь нужно найти из него выход.
+Scene: LeshiyWay
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day1/Map3/Hay/Intro
+  Exploration: Week4Day1Hay
+  CinematicIntro: true
+  NoExplorationMusic: true
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+- Proshka
+- ProshkaLoyal
+SkipNotification: true
+NoHighlight: true
+

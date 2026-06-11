@@ -1,0 +1,22 @@
+﻿Name: Лешачье благословение +
+AbilityType: KARNYSH_LOYAL
+TargetType: PLAYER
+Intention: BUFF
+Sprite: KARNYSH_REGULAR
+GoldCost: 5
+Effects:
+- EffectType: STATUS
+  MinValue: 5
+  MaxValue: 5
+  StatusEffectType: Piety
+- EffectType: STATUS
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  StatusEffectType: Blessed
+

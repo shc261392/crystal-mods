@@ -1,0 +1,20 @@
+﻿Name: Гнилая вода
+AbilityType: ROTTEN_WATER
+TargetType: SELF
+Intention: BUFF
+Sprite: ROTTEN_WATER
+Effects:
+- EffectType: HEAL
+  MinValue: 33
+  MaxValue: 33
+  VisualEffect:
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 1.5
+    SkipReady: true
+- EffectType: STATUS
+  StatusEffectType: Waste
+  MinValue: 5
+  MaxValue: 5
+  ForceTarget: ENEMY
+

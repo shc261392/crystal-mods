@@ -1,0 +1,17 @@
+﻿Name: Водяное копье
+AbilityType: MERMAN_WATER_SPEAR
+TargetType: SELF
+Intention: ATTACK_DEBUFF
+Sprite: MERMAN_WATER_SPEAR
+GoldCost: 3
+Effects:
+- MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  RepeatCount: 3
+

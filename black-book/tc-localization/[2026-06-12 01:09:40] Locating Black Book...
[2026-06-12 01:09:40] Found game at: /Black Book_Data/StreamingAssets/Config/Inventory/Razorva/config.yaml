@@ -1,0 +1,13 @@
+﻿Name: Разорва
+InventoryItemName: Razorva
+Type: Herb
+Flavour: "Она ядовитая: одинова разорву съела скотина – и подохла"
+Sprite: IconRazorva
+Expendable: true
+Cost: 26
+TargetType: SELF
+Effects:
+- Value: 1
+  Type: Status
+  StatusName: Poison
+

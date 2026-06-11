@@ -1,0 +1,14 @@
+﻿Name: Разоил
+AbilityType: RAZOIL
+Upgrade: RAZOIL_UP
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: Razoil
+GoldCost: 44
+Effects:
+- EffectType: TAKE
+  MinValue: 2
+- EffectType: IMMEDIATE
+

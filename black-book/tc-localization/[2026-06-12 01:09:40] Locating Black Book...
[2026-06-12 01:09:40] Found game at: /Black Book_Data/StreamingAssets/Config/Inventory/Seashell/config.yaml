@@ -1,0 +1,9 @@
+﻿Name: Речная раковина
+InventoryItemName: Seashell
+Flavour: Пермяки говорят, что речные раковины когда-то были ушами бога...
+Sprite: Seashell
+Cost: 68
+Effects:
+- Value: 7
+  Type: DefenceOnBattleStart
+

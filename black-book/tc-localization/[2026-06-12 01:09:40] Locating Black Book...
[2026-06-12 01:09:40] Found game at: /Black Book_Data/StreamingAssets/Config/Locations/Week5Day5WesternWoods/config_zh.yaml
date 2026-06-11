@@ -1,0 +1,8 @@
+﻿Name: 西边树林
+Description: 这片林子年头远了，附近的村子都知道，我就是要去这边找蕨花。
+ShortQuestDescr: 找到蕨花
+LongQuestDescr: 你找到了仪式需要的东西，现在就差去林子里找蕨花了。
+LevelConfig:
+  Battle:
+    Name: 库帕拉雠特
+

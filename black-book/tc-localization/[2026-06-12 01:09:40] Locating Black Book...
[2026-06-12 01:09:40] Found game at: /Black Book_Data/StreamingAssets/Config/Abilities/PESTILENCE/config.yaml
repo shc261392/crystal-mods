@@ -1,0 +1,23 @@
+﻿Name: Моровое поветрие
+AbilityType: PESTILENCE
+TargetType: ALL
+Intention: BUFF
+Sprite: PESTILENCE
+GoldCost: 6
+Effects:
+- EffectType: STATUS
+  MinValue: 15
+  MaxValue: 15
+  VisualEffect:
+    VisualEffectType: BITE
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 2
+    SkipReady: true
+  StatusEffectType: Decomposure
+- EffectType: STATUS
+  MinValue: 15
+  MaxValue: 15
+  StatusEffectType: Waste
+

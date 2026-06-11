@@ -1,0 +1,24 @@
+﻿IdName: Week1Day2Izba
+Name: Роща у нашей избы
+Description: Лес возле избы деда Егора очень старый. Здесь, как и рядом с избой, обычному люду не по себе.
+Scene: Road
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Крикун возле избы
+    Enemies:
+    - Type: DemonSummoner
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  BattleAlternative:
+    Name: Крикун возле избы
+    Enemies:
+    - Type: DemonSummoner
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSmall
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day2/Izba
+

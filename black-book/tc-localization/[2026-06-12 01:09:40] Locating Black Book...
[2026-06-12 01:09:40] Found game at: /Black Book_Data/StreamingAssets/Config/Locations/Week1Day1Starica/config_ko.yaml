@@ -1,0 +1,7 @@
+﻿Name: 우각호
+Description: 한때는 콜바강이 이곳을 통과했지만, 이제는 늪으로 변해버렸다.
+ShortQuestDescr: 우각호의 악마들 처리하기
+LevelConfig:
+  Battle:
+    Name: 우각호의 초르트
+

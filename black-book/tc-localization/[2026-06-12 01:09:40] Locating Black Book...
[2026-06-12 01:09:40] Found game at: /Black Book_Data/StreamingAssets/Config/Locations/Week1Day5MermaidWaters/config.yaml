@@ -1,0 +1,9 @@
+﻿IdName: Week1Day5MermaidWaters
+Name: Русалья заводь
+Description: 'Змей в этой заводи уж пару дней как не замечали: значит, отвадила я эту напасть. Теперь тихое должно быть местечко, можно и прогуляться по рощице рядом с заводью.'
+Scene: Backwater
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Herb/PrikryshHerb
+

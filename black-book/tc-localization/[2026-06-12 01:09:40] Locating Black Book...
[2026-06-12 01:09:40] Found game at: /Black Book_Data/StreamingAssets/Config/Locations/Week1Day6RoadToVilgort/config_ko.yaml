@@ -1,0 +1,9 @@
+﻿Name: 빌고르트로 가는 길
+Description: 이 길 구간은 콜바강 위의 가파른 절벽 근처를 지나간다. 예전에 한 레쉬가 사람들을 이곳으로 유인해 강으로 떨어뜨릴 뻔한 적이 있다.
+ShortQuestDescr: 길의 악마 쫓아내기
+LevelConfig:
+  Battle:
+    Name: 길에서의 만남
+  BattleAlternative:
+    Name: 길에서의 만남
+

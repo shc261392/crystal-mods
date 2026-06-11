@@ -1,0 +1,33 @@
+﻿AssetName: HellIcon
+Health: 333
+Mana: 4
+Initiative: 2
+MoneyMin: 60
+MoneyMax: 90
+Experience: 666
+StartingStatusEffects:
+- StatusEffectType: Master
+  Duration: 999
+  Permanent: true
+  Unremovable: true
+- StatusEffectType: BlackBooker
+  Duration: 999
+  Permanent: true
+  HardDifficulty: true
+- StatusEffectType: Zachurat
+  Duration: 13
+  Permanent: true
+  HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: FOREVER_OURS
+    TargetType: SELF
+  - AbilityType: METACARPUS
+    TargetType: ENEMY
+  - AbilityType: NEW_HELPERS
+    TargetType: SELF
+  - AbilityType: INTO_ICON
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Адописная Икона
+

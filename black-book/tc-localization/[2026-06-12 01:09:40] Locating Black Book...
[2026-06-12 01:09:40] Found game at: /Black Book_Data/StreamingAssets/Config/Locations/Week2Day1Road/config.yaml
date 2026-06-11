@@ -1,0 +1,13 @@
+﻿IdName: Week2Day1Road
+Name: Дорога на Усть-Боровское
+Description: Отсюда уже и до завода недалеко.
+Scene: Road
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day1/Road
+RequiredLocations:
+- Week2Day1Zemskaia
+OnomastikonItems:
+- Onomastikon/Encyclopedia/26
+

@@ -1,0 +1,23 @@
+﻿Name: Кора деревянная
+AbilityType: LESHAK_HIDE
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: LESHAK_HIDE
+GoldCost: 5
+Effects:
+- EffectType: DEFENCE
+  MinValue: 90
+  MaxValue: 90
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 0.100000001
+    SkipReady: true
+- EffectType: STATUS
+  StatusEffectType: DefenceKeep
+  MinValue: 3
+  MaxValue: 3
+

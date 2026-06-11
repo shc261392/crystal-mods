@@ -1,0 +1,7 @@
+﻿Name: Iskorsk Hillfort
+Description: Fever fled to the top of the Iskorsk Hillfort. I should hurry if I want to drive it from the village!
+ShortQuestDescr: Catch up to the Fever
+LevelConfig:
+  Battle:
+    Name: Solomiya
+

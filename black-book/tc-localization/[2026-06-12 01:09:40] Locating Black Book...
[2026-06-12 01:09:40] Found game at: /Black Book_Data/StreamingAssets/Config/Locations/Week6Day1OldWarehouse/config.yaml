@@ -1,0 +1,71 @@
+﻿IdName: Week6Day1OldWarehouse
+Name: Старый склад
+Description: Ага, вот и выход из подвала!
+ShortQuestDescr: Выбраться на свободу
+LongQuestDescr: Вас пленили Александр с Пряхой и забрали книгу. Вам нужно выбраться из заточения и вернуть все свои артефакты!
+Scene: PrisonReSwan
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  Battle:
+    Name: Лебедь зубастый
+    Enemies:
+    - Type: DemonSwan
+      LevelSpawnPointType: EnemyCenter
+    NoShuffle: true
+    PuzzleDeck:
+    - KILA
+    - URAZI
+    - NAVA
+    - URAZI
+    - URAZI
+    - AVOIL
+    - AVOIL
+    - AVOIL
+    - AVOIL
+    - AVOIL
+    - AVOIL
+    - AVOIL
+    - AVOIL
+    - AVOIL
+    - LOCK
+    - RUDA
+    - FOR_FATHER
+    - LOCK
+    - LOCK
+    - IGLA
+    - IGLA
+    - IGLA
+    - IGLA
+    - IGLA
+    - IGLA
+    - IGLA
+    - IGLA
+    - IGLA
+    - IGLA
+    PuzzleManaOverride:
+    - 2
+    - 1
+    PuzzleHandOverride:
+    - 5
+    - 5
+    WinCutscene: Week6Day1SwanBattleWon
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day1/OldWarehouse/Intro
+    Outro: TextQuest/Week6/Day1/CellarEntrance/Intro
+  Exploration: Week6Day1OldWarehouse
+  CameraOverride: CMHallCamera
+  MusicOverride: event:/Music/ExploreDark
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week6Day1Passage
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+OnomastikonItems:
+- Onomastikon/Tales/31
+HideBook: true
+

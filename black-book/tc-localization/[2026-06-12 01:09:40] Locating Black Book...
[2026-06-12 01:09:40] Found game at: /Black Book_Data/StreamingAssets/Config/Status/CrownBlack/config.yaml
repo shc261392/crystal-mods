@@ -1,0 +1,6 @@
+﻿Unique: true
+Name: Черный венец
+Description: Игрок не может использовать черные слова
+Sprite: StatCrownBlack
+Harmful: true
+

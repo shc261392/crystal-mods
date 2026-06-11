@@ -1,0 +1,10 @@
+Name: SATANAIL_ROGUELIKE
+SkillName: AbilitySATANAIL_ROGUELIKE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - RoguelikeFierceWords1
+SpriteOffsetX: -33
+SpriteOffsetY: -73
+Effects:
+- Type: AbilityUnlock
+  StringData: SATANAIL_ROGUELIKE

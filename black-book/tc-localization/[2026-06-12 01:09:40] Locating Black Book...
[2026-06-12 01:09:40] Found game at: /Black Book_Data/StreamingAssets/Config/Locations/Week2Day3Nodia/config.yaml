@@ -1,0 +1,15 @@
+﻿IdName: Week2Day3Nodia
+Name: Лагерь охотников
+Description: Здесь, по словам отшельника, была охотничья стоянка.
+ShortQuestDescr: Узнать судьбу охотников
+Scene: HunterCamp
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/Explore2
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day3/Camp/Intro
+  Exploration: Week2Day3Nodia
+RequiredLocations:
+- Week2Day3Skit
+Secondary: Week2Day3Nodia
+

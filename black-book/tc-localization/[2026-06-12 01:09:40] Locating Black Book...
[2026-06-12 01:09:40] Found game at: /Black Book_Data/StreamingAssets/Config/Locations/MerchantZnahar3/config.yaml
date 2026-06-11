@@ -1,0 +1,11 @@
+﻿IdName: MerchantZnahar3
+Name: Знахарка перехожая
+Description: У знахарки я могу купить разные травы в дорогу.
+Scene: Village7
+LevelConfig:
+  Merchants:
+  - Herbalist3
+  Quest:
+    DialogueSystemName: TextQuest/Merchant/Herbalist/Conversation
+CanBeVisitedNextDay: true
+

@@ -1,0 +1,6 @@
+﻿Name: Merchant House
+Description: There's some kind of ruckus over there, near that big house.
+LevelConfig:
+  Battle:
+    Name: Dead Merchant
+

@@ -1,0 +1,7 @@
+﻿Name: Lopatskoye Lake
+Description: A curved lake on the left bank of the Kolva.
+ShortQuestDescr: Return a fish trap
+LevelConfig:
+  Battle:
+    Name: Chorts by the Lake
+

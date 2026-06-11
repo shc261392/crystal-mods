@@ -1,0 +1,10 @@
+﻿Name: Знание приказов
+SkillName: OrdersKnowledge
+Sprite: OrdersKnowledgeSkill
+Description: Увеличивает количество приказов в заговоре на {CalculatedEffect}
+Effects:
+- Value: 1
+  Type: AdditionalOrder
+Level: 5
+AutoLearn: true
+

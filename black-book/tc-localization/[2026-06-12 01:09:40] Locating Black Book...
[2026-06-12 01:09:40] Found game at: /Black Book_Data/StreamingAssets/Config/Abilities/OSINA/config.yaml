@@ -1,0 +1,22 @@
+﻿Name: Осина
+AbilityType: OSINA
+AbilityBookPartType: KEY
+Upgrade: OSINA_UP
+TargetType: SELF
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: OSINA_JUDAS
+GoldCost: 30
+Effects:
+- EffectType: STATUS_SKLAD
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal5OrderBlack
+    MissTrigger: Seal5OrderBlack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: Vampirism
+

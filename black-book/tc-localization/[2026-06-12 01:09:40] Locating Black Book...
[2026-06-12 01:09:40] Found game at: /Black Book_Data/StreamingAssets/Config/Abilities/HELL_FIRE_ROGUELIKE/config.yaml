@@ -1,0 +1,16 @@
+﻿Name: Адское пламя
+AbilityType: HELL_FIRE_ROGUELIKE
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: HELL_FIRE
+Effects:
+- MinValue: 11
+  MaxValue: 11
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  RepeatCount: 2
+

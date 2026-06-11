@@ -1,0 +1,15 @@
+﻿IdName: Week5Day2Prokopiy
+Name: Прокопьевская улица
+Description: Хорошо, что лето уже. А то, наверное, тут от грязи не пройдешь – столько лошадей-то.
+Scene: Cherdyn2
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day2/Prokopiy/Intro
+  CameraOverride: CMQuestCamera1
+  MusicOverride: event:/Music/ExploreLight
+LightingType: EVENING
+MoonType: NONE
+RequiredLocations:
+- Week5Day2Outskirts
+

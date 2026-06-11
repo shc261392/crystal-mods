@@ -1,0 +1,11 @@
+﻿Name: Свечи
+InventoryItemName: Candles
+Flavour: Старые наговоренные свечи деда Егора. Позволяют чертить круги, защищающие от нечистого.
+Sprite: Candles
+NotForSale: false
+CanNotBeDropped: true
+Cost: 52
+Effects:
+- Value: 3
+  Type: DefenceOnBattleStart
+

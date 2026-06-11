@@ -1,0 +1,10 @@
+﻿IdName: Week6Day1Prison
+Name: Темница
+Description: Александр думает удержать меня замками и колдовством. Не на ту напал!
+Scene: PrisonReExploration
+LevelConfig:
+  Exploration: Week6Day1Prison
+  MusicOverride: event:/Music/ExploreDark
+  MixerSnapshot: snapshot:/Cave
+HideBook: true
+

@@ -1,0 +1,11 @@
+﻿IdName: Week7Day3Altar
+Name: Разбитый алатырь
+Description: Я такой камень уже видела на том острове...
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day1/BigichiWoods
+RequiredLocations:
+- Week7Day3Forest
+

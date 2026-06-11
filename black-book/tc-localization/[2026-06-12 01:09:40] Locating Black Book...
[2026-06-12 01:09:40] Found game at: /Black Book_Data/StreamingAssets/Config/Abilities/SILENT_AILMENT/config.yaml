@@ -1,0 +1,18 @@
+﻿Name: Тихая хворь
+AbilityType: SILENT_AILMENT
+TargetType: ALL_ENEMIES
+Sprite: SILENT_AILMENT
+GoldCost: 56
+Effects:
+- EffectType: STATUS_SKLAD
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal7OrderBlack
+    MissTrigger: Seal7OrderBlack
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: Liho
+

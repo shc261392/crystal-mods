@@ -1,0 +1,20 @@
+﻿IdName: IzbaHunterCampPolud
+Name: Привал в лесу
+Scene: HunterCampIzba
+IsIzba: true
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Exploration: IzbaHunterCampPolud
+  NoExplorerSpawn: true
+  MusicOverride: "event:/Music/Izba"
+  SpecialLevel: true
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 4
+ForbiddenSpawnAllies:
+- DedEgor
+- DedEgorLoyal
+- Nikolay
+- NikolayLoyal
+AdditionalIzbaFoolPlayers:
+  - Airat

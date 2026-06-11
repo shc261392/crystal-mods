@@ -1,0 +1,49 @@
+﻿AssetName: Satan
+Health: 666
+Mana: 4
+Initiative: 1
+MoneyMin: 180
+MoneyMax: 240
+Experience: 6666
+StartingStatusEffects:
+  - StatusEffectType: Sorcerer
+    Duration: 1
+    Permanent: true
+    Unremovable: true
+  - StatusEffectType: BlackBooker
+    Duration: 1
+    Permanent: true
+    Unremovable: true
+    HardDifficulty: true
+  - StatusEffectType: Untouchable
+    Duration: 1
+    Permanent: true
+    Unremovable: true
+  - StatusEffectType: Master
+    Duration: 999
+    Permanent: true
+    Unremovable: true
+UnitAI:
+  AIAbilities:
+    - AbilityType: ROYAL_GUARD
+      TargetType: SELF
+    - AbilityType: HELL_FIRE
+      TargetType: ENEMY
+    - AbilityType: PURGATORY
+      TargetType: ENEMY
+    - AbilityType: PAIN_TASTE
+      TargetType: ENEMY
+    - AbilityType: PAIN_TASTE_SMALL
+      TargetType: ENEMY
+    - AbilityType: PAIN_TASTE_SMALLEST
+      TargetType: ENEMY
+    - AbilityType: FIRE_BARRIER
+      TargetType: SELF
+    - AbilityType: CLEANSING_FIRE
+      TargetType: SELF
+    - AbilityType: HELL_HELP
+      TargetType: SELF
+    - AbilityType: SPARKS
+      TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Сатана

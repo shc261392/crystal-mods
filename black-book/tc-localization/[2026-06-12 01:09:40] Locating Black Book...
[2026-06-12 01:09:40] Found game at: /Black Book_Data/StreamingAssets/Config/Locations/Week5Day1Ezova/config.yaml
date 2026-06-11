@@ -1,0 +1,10 @@
+﻿IdName: Week5Day1Ezova
+Name: Деревня Езова
+Description: Эта деревня недалеко от Вильгорта, потому и знакомы тут многие
+Scene: Village3
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/Artefact/DevilsBag/Intro
+RequiredLocations:
+- Week5Day1Road
+

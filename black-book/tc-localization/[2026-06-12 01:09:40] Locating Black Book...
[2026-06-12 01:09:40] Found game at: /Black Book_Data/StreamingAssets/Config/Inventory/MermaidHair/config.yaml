@@ -1,0 +1,10 @@
+﻿Name: Волосы утопленницы
+InventoryItemName: MermaidHair
+Flavour: Сидит русалка, вся черемная, волосы-то распустила, как сажа.
+Sprite: IconMermaidHair
+Cost: 80
+Effects:
+  - Value: 1
+    Type: StatusBonus
+    StatusName: Waste
+

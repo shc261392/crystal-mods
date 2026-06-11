@@ -1,0 +1,14 @@
+﻿IdName: Week5Day3Obuhov
+Name: Обуховские заросли
+Description: Еще одна лешачья рощица. Че-то не уверена, стоит ли туда заглядывать.
+Scene: Forest_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day3/Obuhov/Intro
+RequiredLocations:
+- Week5Day3Road
+OnomastikonItems:
+- Onomastikon/Tales/62
+

@@ -1,0 +1,8 @@
+﻿Name: Epiphany Church
+Description: The oldest church I've ever seen. It's probably stood here since ancient times.
+ShortQuestDescr: Find the Church Towel
+LongQuestDescr: I need a special kind of towel for the rite. I heard Saveliy, the man I met in Pyanteg church, might have one.
+LevelConfig:
+  Battle:
+    Name: Helldrawn Icon
+

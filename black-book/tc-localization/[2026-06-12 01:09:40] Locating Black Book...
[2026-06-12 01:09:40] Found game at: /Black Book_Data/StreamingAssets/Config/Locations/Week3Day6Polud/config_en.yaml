@@ -1,0 +1,10 @@
+﻿Name: Polud Mountain
+Description: They say that Polud was the name of a mighty hero. When he defeated all of his enemies, he went underground to sleep, waiting for his time to return.
+ShortQuestDescr: Track the Guests
+LongQuestDescr: Alexander turned the wedding procession into wolves! I should find all of the werewolves and turn them back into people.
+LevelConfig:
+  Battle:
+    Name: Pack Leader
+  BattleAlternative:
+    Name: Pack Leader
+

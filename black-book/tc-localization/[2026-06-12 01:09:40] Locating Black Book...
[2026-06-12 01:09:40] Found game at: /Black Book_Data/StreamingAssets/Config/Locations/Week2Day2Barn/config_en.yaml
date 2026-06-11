@@ -1,0 +1,6 @@
+﻿Name: Storehouse
+Description: This storehouse is where the salt is kept. Later it's loaded onto barges and sent to the fair in Novgorod...
+LevelConfig:
+  Battle:
+    Name: Storehouse spirits
+

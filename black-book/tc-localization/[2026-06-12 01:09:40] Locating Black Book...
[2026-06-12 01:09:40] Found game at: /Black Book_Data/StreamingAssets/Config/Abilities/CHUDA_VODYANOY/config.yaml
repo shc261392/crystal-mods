@@ -1,0 +1,21 @@
+﻿Name: Чуда Водяной
+AbilityType: CHUDA_VODYANOY
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: CHUDA_VODYANOY
+GoldCost: 24
+Effects:
+- EffectType: DEFENCE
+  MinValue: 10
+  MaxValue: 10
+- EffectType: REMOVE_ALL_BAD_STATUS
+  MinValue: 999
+  MaxValue: 999
+  VisualEffect:
+    VisualEffectType: NONE
+    ReadyTrigger: Word
+    SpellTrigger: GoodStatus
+    MissTrigger: GoodStatus
+    WrapUpTime: 0.5
+

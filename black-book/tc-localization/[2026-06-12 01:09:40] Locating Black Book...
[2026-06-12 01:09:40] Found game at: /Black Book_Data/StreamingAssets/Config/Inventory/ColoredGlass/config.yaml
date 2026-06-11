@@ -1,0 +1,10 @@
+﻿Name: Шкатулочка
+InventoryItemName: ColoredGlass
+Flavour: А в шкатулочке стеклышки разноцветные, ровно как леденцы
+Sprite: ColoredGlass
+Cost: 60
+Effects:
+- Value: 1
+  Type: AbilityOnBattleStart
+  StatusName: DEMON_SWARM
+

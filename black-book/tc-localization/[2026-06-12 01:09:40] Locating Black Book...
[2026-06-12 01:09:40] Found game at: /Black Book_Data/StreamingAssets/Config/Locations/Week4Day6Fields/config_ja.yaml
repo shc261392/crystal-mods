@@ -1,0 +1,6 @@
+﻿Name: ルンヴォラドルの畑
+Description: ペルミ語でルンヴォラドルとは、「昼の南側」という意味だ。
+LevelConfig:
+  Battle:
+    Name: 牛飼いの手下
+

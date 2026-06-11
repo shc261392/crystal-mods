@@ -1,0 +1,10 @@
+﻿Name: Житие Стефана
+InventoryItemName: LifeStefan
+Flavour: Раньше-то люди какие-то благоверные были, по ним книги есть
+Sprite: LifeStefan
+Cost: 120
+Effects:
+- Value: 1
+  Type: StatusBonus
+  StatusName: Piety
+

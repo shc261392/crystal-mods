@@ -1,0 +1,48 @@
+IdName: FoolGame
+Name: Игра в дурака
+Scene: Forest
+LocationType: COMBAT
+NoAutosave: true
+LevelConfig:
+  Merchants:
+    - CardGame
+  MixerSnapshot: "snapshot:/Room"
+  Roguelike: true
+  FoolGame:
+    CustomSettings: true
+    PossiblePlayers:
+      - NikolayLoyal
+      - DedEgorLoyal
+      - Proshka
+      - ProshkaLoyal
+      - WhiteHeadLoyal
+      - KarnyshLoyal
+      - Airat
+      - Alexander
+      - Andromalius
+      - Andropko
+      - Demon
+      - Domovoi
+      - Drowner
+      - Drowner2
+      - Fyodor
+      - Kazak
+      - Mermaid
+      - Mermaid2
+      - Mikolko
+      - Ovinnik
+      - Peasant
+      - Peasant2
+      - Peasant3
+      - Peasant4
+      - Peasant5
+      - Peasant6
+      - Peasant7
+      - Peasant8
+      - PeasantCheater
+      - PeasantFisher
+      - PeasantFisherKamaBank
+      - Peddler
+      - Samson
+      - Sitri
+      - Zmeevik

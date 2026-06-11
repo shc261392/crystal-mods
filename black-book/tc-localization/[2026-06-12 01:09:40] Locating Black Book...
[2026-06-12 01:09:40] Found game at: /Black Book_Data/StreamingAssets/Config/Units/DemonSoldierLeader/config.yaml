@@ -1,0 +1,20 @@
+﻿AssetName: DemonSoldier
+Health: 120
+HealthRandomAdd: 5
+Mana: 4
+Initiative: 1
+MoneyMin: 30
+MoneyMax: 42
+Experience: 500
+UnitAI:
+  AIAbilities:
+    - AbilityType: GET_READY
+      TargetType: ALL_ALLIES
+    - AbilityType: FIRE
+      TargetType: ALL_ALLIES
+    - AbilityType: KEEP_IN_LINE
+      TargetType: ALL_ALLIES
+    - AbilityType: DESERTERS
+      TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Чёртов лейтенант

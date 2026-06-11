@@ -1,0 +1,15 @@
+﻿Name: Забытый удар
+AbilityType: FORGOTTEN_BLOW
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: FORGOTTEN_BLOW
+Effects:
+- MinValue: 10
+  MaxValue: 15
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

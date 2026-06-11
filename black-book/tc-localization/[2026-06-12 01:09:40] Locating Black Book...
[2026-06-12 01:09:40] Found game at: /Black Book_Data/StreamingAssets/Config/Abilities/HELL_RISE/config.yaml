@@ -1,0 +1,20 @@
+﻿Name: Адов рост
+AbilityType: HELL_RISE
+TargetType: ENEMY
+Intention: BUFF
+Sprite: HELL_RISE
+GoldCost: 10
+Effects:
+- EffectType: STATUS
+  StatusEffectType: UnitScale
+  StatusPermanent: true
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

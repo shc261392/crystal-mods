@@ -1,0 +1,1 @@
+Name: Ключи ISkillName: RoguelikeKeys1Sprite: Keys1SkillDescription: Получите дополнительное слово с ключом каждый ход в вашу рукуRequiredSkills:  - AbilityLOCKEffects:- Value: 1  Type: AdditionalBookmarkKey

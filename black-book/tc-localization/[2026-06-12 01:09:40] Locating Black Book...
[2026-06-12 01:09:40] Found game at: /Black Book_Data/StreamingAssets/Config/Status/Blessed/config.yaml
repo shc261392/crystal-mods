@@ -1,0 +1,5 @@
+﻿Unique: true
+Name: Благословение
+Description: Увеличивает <sprite name="Damage"> на {Duration}
+Sprite: StatusBlessed
+

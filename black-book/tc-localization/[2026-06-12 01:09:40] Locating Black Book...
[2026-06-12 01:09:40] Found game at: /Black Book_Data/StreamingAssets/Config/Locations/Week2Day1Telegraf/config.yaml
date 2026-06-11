@@ -1,0 +1,12 @@
+﻿IdName: Week2Day1Telegraf
+Name: Телеграфная линия
+Description: К телеграфу отправился помощник Самсона вместе со старостой.
+Scene: Road_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day1/Telegraph
+  Exploration: TelegraphExploration
+RequiredLocations:
+- Week2Day1Road
+

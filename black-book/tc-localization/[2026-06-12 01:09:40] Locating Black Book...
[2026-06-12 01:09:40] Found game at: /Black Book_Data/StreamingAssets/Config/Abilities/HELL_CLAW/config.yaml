@@ -1,0 +1,16 @@
+﻿Name: Адов коготь
+AbilityType: HELL_CLAW
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: HELL_CLAW
+GoldCost: 3
+Effects:
+- MinValue: 8
+  MaxValue: 12
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Word
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

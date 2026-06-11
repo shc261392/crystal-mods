@@ -1,0 +1,24 @@
+﻿IdName: Week5Day4Street
+Name: Узкая улочка
+Description: Чтобы добраться до вершины Искорского городища, нужно пройти между тесными скалами. Этот лаз называют узкой улочкой.
+Scene: IskorGorodishe
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Battle:
+    Name: Слуги лихорадки
+    Enemies:
+    - Type: DemonFierce
+      LevelSpawnPointType: EnemyCenter
+    - Type: Menqw
+    - Type: Menqw
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day4/Street/Intro
+LightingType: STORM
+MoonType: NONE
+RequiredLocations:
+- Week5Day4Hospital
+Secondary: Week5Day4Gorodishe
+

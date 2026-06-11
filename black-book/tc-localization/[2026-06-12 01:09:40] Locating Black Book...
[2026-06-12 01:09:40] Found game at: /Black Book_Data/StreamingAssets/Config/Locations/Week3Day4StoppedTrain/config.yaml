@@ -1,0 +1,13 @@
+﻿IdName: Week3Day4StoppedTrain
+Name: У разбитого поезда
+Scene: WeddingTrainStop
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day4/Stopped/Intro
+  Exploration: Week3Day4StoppedTrain
+  CinematicIntro: true
+  NoExplorationMusic: true
+OnomastikonItems:
+- Onomastikon/Tales/23
+

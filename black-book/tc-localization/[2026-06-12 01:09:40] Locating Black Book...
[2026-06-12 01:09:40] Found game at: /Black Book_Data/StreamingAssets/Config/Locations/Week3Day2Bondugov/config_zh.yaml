@@ -1,0 +1,7 @@
+﻿Name: 邦杜哥夫田野
+Description: 那蛇往南边地里飞了，我得赶紧！
+ShortQuestDescr: 抓住火蛇
+LevelConfig:
+  Battle:
+    Name: 火蛇
+

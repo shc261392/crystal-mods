@@ -1,0 +1,6 @@
+﻿Name: 窄路
+Description: 我想上伊斯科尔古城最顶上，就得从这两块石头中间钻过去。叫这个地方他们叫“窄路”。
+LevelConfig:
+  Battle:
+    Name: 热妖仆从
+

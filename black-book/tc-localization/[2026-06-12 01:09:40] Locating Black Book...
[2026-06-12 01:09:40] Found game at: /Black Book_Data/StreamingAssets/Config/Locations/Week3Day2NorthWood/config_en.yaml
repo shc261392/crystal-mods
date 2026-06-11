@@ -1,0 +1,7 @@
+﻿Name: Northern Settlement
+Description: Somewhere around here is the house Alexander went to. He should be easy to find.
+ShortQuestDescr: Meet Alexander
+LevelConfig:
+  Battle:
+    Name: Fiery Friends
+

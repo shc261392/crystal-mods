@@ -1,0 +1,10 @@
+﻿Name: Земля с угла
+InventoryItemName: DeadManGround
+Flavour: Осыпень во сне привидится – дак покойник будет
+Sprite: DeadManGround
+Cost: 220
+Effects:
+- Value: 3
+  Type: StatusBonus
+  StatusName: Decomposure
+

@@ -1,0 +1,23 @@
+﻿IdName: Week7Day1Pits
+Name: Смоляные ямы
+Description: Всё как на иконах в церкве нашей. Что-то я и забывать стала, как она называлась, Свято-чертовская?..
+Scene: Hell
+LevelConfig:
+  MusicOverride: event:/Music/ExploreHell
+  MixerSnapshot: snapshot:/Church
+  Battle:
+    Name: Смоляные черти
+    Enemies:
+    - Type: DemonFire
+      LevelSpawnPointType: EnemyLeft
+    - Type: DemonFierceFire
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonFire
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week7/Day1/Pits/Intro
+RequiredLocations:
+- Week7Day1Bridge
+

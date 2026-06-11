@@ -1,0 +1,9 @@
+﻿Name: Road to Vilgort
+Description: This part of the road passes close to a steep drop over the Kolva. Once a leshiy led some lad around here and nearly caused him to fall into the river.
+ShortQuestDescr: Drive off the demons on the road
+LevelConfig:
+  Battle:
+    Name: Meeting on the Road
+  BattleAlternative:
+    Name: Meeting on the Road
+

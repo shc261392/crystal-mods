@@ -1,0 +1,54 @@
+﻿IdName: AllyHeadSwamps
+Name: Черные болота
+Description: Где-то тут могут быть исчезнувшие очгинцы.
+ShortQuestDescr: Разыскать пропавших крестьян
+Scene: Marshes2
+LevelConfig:
+  MusicOverride: event:/Music/ExploreDark2
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Утопленники
+    Enemies:
+    - Type: DrownerPuzzle2
+      LevelSpawnPointType: EnemyCenter
+      HealthOverride: 44
+    - Type: DemonPuzzleAttack1
+      HealthOverride: 5
+    NoShuffle: true
+    PuzzleDeck:
+    - SALMANIDA
+    - CHUR
+    - GRYJA
+    - GRYJA
+    - GEORGY_BATUSHKA
+    - GRYJA
+    - GRYJA
+    - GRYJA
+    - GRYJA
+    - GRYJA
+    - GRYJA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    - RUDA
+    PuzzleManaOverride:
+    - 3
+    - 1
+    PuzzleHandOverride:
+    - 5
+    - 3
+    ForceAlly: WhiteHead
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/AllyHead/Swamps/Intro
+    Outro: TextQuest/AllyHead/Swamps/Outro
+RequiredLocations:
+- AllyHeadGerdennik
+Secondary: AllyHeadSwamps
+

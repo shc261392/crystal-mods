@@ -1,0 +1,10 @@
+﻿Name: Лапти-одноковырки
+InventoryItemName: SingleBastShoes
+Flavour: 'Его в тех лаптях схоронили. Потом, когда вырыли, они сношены все: ходил он'
+Sprite: SingleBastShoes
+Cost: 120
+Effects:
+- Value: 1
+  Type: StatusBonus
+  StatusName: Cursed
+

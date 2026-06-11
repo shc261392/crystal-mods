@@ -1,0 +1,8 @@
+﻿Name: Pine Grove
+Description: The swampy part of Hell's Lake is surrounded by an old pine forest
+LevelConfig:
+  Battle:
+    Name: Forest Chorts
+  BattleAlternative:
+    Name: Stunned Chort
+

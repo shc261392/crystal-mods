@@ -1,0 +1,10 @@
+Name: GRYJA
+SkillName: AbilityGRYJA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityURAZI
+SpriteOffsetX: -54
+SpriteOffsetY: -28
+Effects:
+- Type: AbilityUnlock
+  StringData: GRYJA

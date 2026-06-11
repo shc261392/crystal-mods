@@ -1,0 +1,13 @@
+﻿IdName: Week2Day1Kokarin
+Name: Кокаринская роща
+Description: Дорога в деревню Логово пролегает через эту рощу
+Scene: Forest_3
+LevelConfig:
+  MusicOverride: event:/Music/ExploreDark
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day1/KokarinFire
+RequiredLocations:
+- Week2Day1Road
+Secondary: Week2Day1Logova
+

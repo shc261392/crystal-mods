@@ -1,0 +1,18 @@
+﻿Name: Снять шкуру
+AbilityType: TAKE_OFF_SKIN
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: TAKE_OFF_SKIN
+GoldCost: 3
+Effects:
+- EffectType: DEFENCE_DESTROY
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

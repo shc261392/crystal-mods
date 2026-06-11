@@ -1,0 +1,3 @@
+﻿Name: 피해 흡수
+Description: 다음 {Duration}번의 공격으로부터 받는 모든 <sprite name="Damage"> 흡수
+

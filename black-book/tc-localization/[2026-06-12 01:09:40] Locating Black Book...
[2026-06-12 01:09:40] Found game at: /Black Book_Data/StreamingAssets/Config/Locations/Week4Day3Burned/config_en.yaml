@@ -1,0 +1,6 @@
+﻿Name: Burned Wood
+Description: The peasants fight the encroaching forest as best they can.
+LevelConfig:
+  Battle:
+    Name: Burned Chorts
+

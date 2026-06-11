@@ -1,0 +1,10 @@
+Name: KULLA
+SkillName: AbilityKULLA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityBLUE_STONE_ROGUELIKE
+SpriteOffsetX: -25
+SpriteOffsetY: -25
+Effects:
+- Type: AbilityUnlock
+  StringData: KULLA

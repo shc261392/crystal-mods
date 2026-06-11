@@ -1,0 +1,32 @@
+﻿AssetName: SnakeSorcerer
+Health: 90
+Mana: 4
+Initiative: 1
+MoneyMin: 48
+MoneyMax: 72
+Experience: 500
+StartingStatusEffects:
+- StatusEffectType: Master
+  Duration: 999999
+  Permanent: true
+  Unremovable: true
+- StatusEffectType: Sorcerer
+  Duration: 999999
+  Permanent: true
+  Unremovable: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: SNAKE_SORC_ATTACK
+    TargetType: ENEMY
+  - AbilityType: SNAKE_SORC_SUMMON
+    DecisionType: SUMMON
+    TargetType: SELF
+  - AbilityType: SNAKE_SORC_OBEREG
+    TargetType: ALL_ALLIES
+  - AbilityType: SNAKE_SORC_ADAM_DECOCTION
+    TargetType: SELF
+  - AbilityType: SNAKE_SORC_SPRINKLE_HERBS
+    TargetType: ALL_ALLIES
+  CastingType: UNIT_HARDCODED
+Name: Колдун-змеевик
+

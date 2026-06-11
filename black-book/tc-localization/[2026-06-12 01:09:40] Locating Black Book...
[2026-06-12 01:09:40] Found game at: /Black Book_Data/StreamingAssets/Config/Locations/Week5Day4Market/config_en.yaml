@@ -1,0 +1,6 @@
+﻿Name: Iskor Market
+Description: This market used to sell a multitude of things. I wonder if it's still open?
+LevelConfig:
+  Battle:
+    Name: Chorts-Vendors
+

@@ -1,0 +1,7 @@
+﻿Name: Village Cemetery
+Description: This old cemetery is abandoned. It's said that people from ancient times are buried here. That means that this is a powerful place. Maybe I could find some useful items?
+ShortQuestDescr: Visit Vyatkino's cemetery
+LevelConfig:
+  Battle:
+    Name: Manka's Chorts
+

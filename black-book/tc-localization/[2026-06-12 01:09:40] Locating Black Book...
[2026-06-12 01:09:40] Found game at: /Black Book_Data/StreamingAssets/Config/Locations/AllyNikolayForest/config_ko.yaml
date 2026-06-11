@@ -1,0 +1,9 @@
+﻿Name: 삐걱대는 숲
+Description: 독실한 얼간이가 이쪽으로 달려갔다. 숲에서 마치 뼈가 으스러지는 듯한 이상한 소리가 들려온다.
+ShortQuestDescr: 도망자 따라가기
+LevelConfig:
+  Battle:
+    Name: 거대한 통나무
+  BattleAlternative:
+    Name: 거대한 통나무
+

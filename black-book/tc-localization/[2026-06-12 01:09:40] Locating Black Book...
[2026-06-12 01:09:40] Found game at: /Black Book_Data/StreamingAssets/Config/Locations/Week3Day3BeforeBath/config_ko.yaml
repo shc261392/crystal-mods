@@ -1,0 +1,6 @@
+﻿Name: 신부의 안마당
+Description: 신부의 반야 의식 전에 애도를 하는 게 좋겠다. 그리고 반야를 리본과 자작나무 가지로 장식해야 한다.
+LevelConfig:
+  Battle:
+    Name: 도모보이
+

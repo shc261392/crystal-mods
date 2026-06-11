@@ -1,0 +1,6 @@
+﻿Unique: true
+Name: Яд
+Description: Каждое прочтенное слово (кроме жестов) наносит вам {Duration} <sprite name="Damage">
+Sprite: StatusPoison
+Harmful: true
+

@@ -1,0 +1,16 @@
+﻿AssetName: DemonFierce
+Health: 15
+HealthRandomAdd: 5
+Mana: 4
+Initiative: 1
+MoneyMin: 3
+MoneyMax: 7
+Experience: 150
+UnitAI:
+  AIAbilities:
+  - AbilityType: DEMON_ATTACK_FIERCE
+    TargetType: ENEMY
+    ConsequitiveRounds: 2
+  CastingType: RANDOM
+Name: Лютый чёрт
+

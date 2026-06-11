@@ -1,0 +1,30 @@
+﻿IdName: Week4Day1Crosses
+Name: Фигуры под пеленою
+Description: Там какие-то силуэты виднеются. Крестьяне на полевые работы идут?
+ShortQuestDescr: Выбраться из леса
+LongQuestDescr: Вы потеряли сознание и очнулись в незнакомом лесу. Теперь нужно найти из него выход.
+Scene: Fields
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day1/Map1/Exit
+  Exploration: Week4Day1Crosses
+  CameraOverride: CMQuestCamera1
+  NoExplorerSpawn: true
+LightingType: FOG
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Karnysh
+- KarnyshLoyal
+- Proshka
+- ProshkaLoyal
+OnomastikonItems:
+- Onomastikon/Encyclopedia/28
+NoHighlight: true
+

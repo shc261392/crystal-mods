@@ -1,0 +1,1 @@
+Name: Торговля IISkillName: RoguelikeTrade2Sprite: Trade2SkillDescription: Цены в магазине снижены еще на {CalculatedEffect}%RequiredSkills:- RoguelikeTrade1Effects:- Value: 10  Type: ItemPriceDrop

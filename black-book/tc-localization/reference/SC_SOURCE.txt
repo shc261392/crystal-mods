@@ -1,0 +1,36 @@
+# Source SC Translation (Simplified Chinese)
+
+This file should contain the original Simplified Chinese translation source.
+
+## Steps to populate:
+
+1. **Extract game strings** from Black Book using one of:
+   - UnityPy to scan game assets
+   - XUnity AutoTranslator existing dump (if available)
+   - Community SC translation (if available from forums)
+
+2. **Place SC translation** in this file (one line per entry):
+   ```
+   key=Original Simplified Chinese translation
+   ```
+
+3. **Run conversion**:
+   ```bash
+   python3 scripts/convert_sc_to_tc.py reference/SC_SOURCE.txt
+   ```
+
+4. **Manual edits**:
+   - Review converted output in `payload/AutoTranslator/Translation/zh-TW/Text/_Translations.txt`
+   - Edit terminology using reference/TERMINOLOGY.md as guide
+   - Run validation: `make validate`
+
+## Example format:
+
+```
+ui_start=開始
+ui_menu_options=選項設定
+item_description_sword=這把劍非常鋒利
+npc_dialogue_1=你好，旅行者
+```
+
+**Note**: This file is used only during build/conversion. The final translation is in `payload/AutoTranslator/Translation/zh-TW/Text/_Translations.txt`.

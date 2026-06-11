@@ -1,0 +1,5 @@
+﻿Unique: true
+Name: Лечебные травы
+Description: За каждый использованный предмет восстановить {Duration} <sprite name="Health">
+Sprite: StatHealOnItemUse
+

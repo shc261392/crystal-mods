@@ -1,0 +1,6 @@
+﻿Name: 走廊
+Description: 这个地下室天花板真矮，不过还是比我待过的篝贝茨都要宽敞。
+LevelConfig:
+  Battle:
+    Name: 有角守卫
+

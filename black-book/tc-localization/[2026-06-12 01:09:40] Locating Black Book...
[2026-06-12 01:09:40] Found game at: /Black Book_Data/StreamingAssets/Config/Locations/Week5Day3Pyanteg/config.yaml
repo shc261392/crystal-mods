@@ -1,0 +1,14 @@
+﻿IdName: Week5Day3Pyanteg
+Name: Село Пянтег
+Description: В этом селе-то кроме Богоявленки есть еще одна церква, поновее. А еще школу недавно выстроили. Хотела бы я в школе-то настоящей поучиться.
+Scene: Village3
+LevelConfig:
+  Merchants:
+  - Wineseller
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day3/Pyanteg/Intro
+  Exploration: ChurchPyanteg
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week5Day3Road
+

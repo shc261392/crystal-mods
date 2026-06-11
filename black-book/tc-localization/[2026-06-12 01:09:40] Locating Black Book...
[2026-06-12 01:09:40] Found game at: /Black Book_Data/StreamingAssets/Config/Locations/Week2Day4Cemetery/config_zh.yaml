@@ -1,0 +1,6 @@
+﻿Name: 墓地
+Description: 水鬼“寿命”很长，但也不是“长生不死”。有的最后葬身鱼腹，有的最后“活活”累死了。
+LevelConfig:
+  Battle:
+    Name: 湖底墓地
+

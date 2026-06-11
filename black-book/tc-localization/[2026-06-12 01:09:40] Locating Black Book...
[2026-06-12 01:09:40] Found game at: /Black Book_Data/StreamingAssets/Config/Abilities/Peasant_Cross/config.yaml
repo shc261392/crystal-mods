@@ -1,0 +1,17 @@
+﻿Name: Крестное знамение
+AbilityType: PEASANT_CROSS
+TargetType: SELF
+Intention: DEFENCE
+Sprite: CrossAbility
+GoldCost: 6
+Effects:
+- EffectType: DEFENCE
+  MinValue: 4
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    SpellTrigger: Cross
+    MissTrigger: Cross
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

@@ -1,0 +1,15 @@
+﻿Name: Слова, разожгитесь
+AbilityType: WORDS_BURN
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: BUFF
+Color: BLACK
+Sprite: WORDS_BURN
+GoldCost: 30
+Effects:
+  - EffectType: ADD_EFFECT_TO_ZAGOVOR
+    MinValue: 1
+    StringData: KRADA
+  - EffectType: IMMEDIATE
+  - EffectType: KRADA
+

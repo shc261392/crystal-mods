@@ -1,0 +1,30 @@
+﻿IdName: Week2Day3HellLake
+Name: Адово озеро
+Description: Про него мне дед Егор рассказывал. На этом озере часто всяческую нечисть видели, а все потому, что тут граница между мирами тонкая.
+ShortQuestDescr: Найти вход в царство водяного
+LongQuestDescr: Вы прогнали русалку, но вместе с ней ушел и рассол. Печать тоже закрыта. Кажется, открыть ее сможет только хозяин водной стихии.
+Scene: LakeBank
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day3/HellLake/Intro
+  Exploration: Week2Day3HellLake
+  CinematicIntro: true
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 3
+    PossiblePlayers:
+    - PeasantFisher
+    - Peasant
+    DialogueFoolWin: TextQuest/Week2/Day3/HellLake/DialogueCardWin
+    DialogueFoolLose: TextQuest/Week2/Day3/HellLake/DialogueCardLose
+RequiredLocations:
+- Week2Day3HellSwamp
+LockedAllies:
+- DedEgor
+- DedEgorLoyal
+- Nikolay
+- NikolayLoyal
+OnomastikonItems:
+- Onomastikon/Tales/48
+

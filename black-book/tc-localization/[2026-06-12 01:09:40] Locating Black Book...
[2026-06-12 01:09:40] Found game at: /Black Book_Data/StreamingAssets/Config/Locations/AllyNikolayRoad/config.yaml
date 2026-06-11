@@ -1,0 +1,15 @@
+﻿IdName: AllyNikolayRoad
+Name: Огиб на Каиб
+Description: Дорога немного окольная. Прямая-то, говорят, совсем заросла. Не пользуются!
+Scene: Road
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Merchants:
+  - BookKeeper
+  Quest:
+    DialogueSystemName: TextQuest/AllyNikolay/Road/Intro
+  MusicOverride: event:/Music/ExploreDark
+RequiredLocations:
+- AllyNikolayPantina
+Secondary: AllyNikolayUstKaib
+

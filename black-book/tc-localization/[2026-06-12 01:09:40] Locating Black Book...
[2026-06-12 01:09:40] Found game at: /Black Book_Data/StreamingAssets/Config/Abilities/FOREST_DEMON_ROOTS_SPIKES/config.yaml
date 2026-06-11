@@ -1,0 +1,19 @@
+﻿Name: Шипы
+AbilityType: FOREST_DEMON_ROOTS_SPIKES
+TargetType: SELF
+Intention: BUFF
+Sprite: FOREST_DEMON_ROOTS_SPIKES
+GoldCost: 10
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Spikes
+  MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Attack
+    MissTrigger: Attack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

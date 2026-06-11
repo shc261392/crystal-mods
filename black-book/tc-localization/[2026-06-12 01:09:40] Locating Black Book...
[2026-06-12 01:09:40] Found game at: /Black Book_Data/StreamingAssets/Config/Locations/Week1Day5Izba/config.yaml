@@ -1,0 +1,15 @@
+﻿IdName: Week1Day5Izba
+Name: Изба деда Егора
+Description: Проверить можно, что в лесу у избы завелось-то. Бесов повывести!
+Scene: Road
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Черти у избы
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSmall
+    EnemyKillWin: true
+    HealthLoose: true
+

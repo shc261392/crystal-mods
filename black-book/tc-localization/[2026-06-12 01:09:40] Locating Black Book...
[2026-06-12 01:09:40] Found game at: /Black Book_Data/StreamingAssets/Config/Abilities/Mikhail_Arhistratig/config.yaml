@@ -1,0 +1,21 @@
+﻿Name: Михаил Архистратиг
+AbilityType: MIKHAIL_ARHISTRATIG
+Upgrade: MIKHAIL_ARHISTRATIG_UP
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: MIKHAIL_ARHISTRATIG
+GoldCost: 21
+ForceNonZeroDescription: true
+Effects:
+- EffectType: DEFENCE_FOR_STATUS
+  MinValue: 8
+  MaxValue: 8
+  StatusEffectType: Cursed
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal3OrderWhite
+    MissTrigger: Seal3OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true

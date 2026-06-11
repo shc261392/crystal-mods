@@ -1,0 +1,8 @@
+﻿Name: 알리모프 숲
+Description: 이 숲에는 바시키르 출신의 은둔자가 살았는데, 솜씨가 좋아서 문과 화덕을 장식하는 등 할 수 있는 게 많았다고 한다. 그는 세상을 떠난지 오래됐지만, 사람들은 아직 그를 기억하고 있다.
+LevelConfig:
+  Battle:
+    Name: 숲의 악마
+  BattleAlternative:
+    Name: 숲의 악마
+

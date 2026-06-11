@@ -1,0 +1,13 @@
+﻿IdName: Week1Day7Poroshin
+Name: Выселок
+Description: Небольшая деревня возле Покчи. Я как-то слышала, что покойники ходили прямо по улицам ее среди ночи. Чего-от только не быват!
+Scene: Village6
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day7/Poroshin
+RequiredLocations:
+- Week1Day7OldChapel
+OnomastikonItems:
+- Onomastikon/Encyclopedia/16
+

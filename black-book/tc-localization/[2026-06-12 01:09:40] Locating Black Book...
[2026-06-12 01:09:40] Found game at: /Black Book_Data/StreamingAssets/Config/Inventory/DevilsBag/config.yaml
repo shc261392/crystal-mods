@@ -1,0 +1,13 @@
+﻿Name: Торба с чертями
+InventoryItemName: DevilsBag
+Flavour: Черти постоянно шевелятся в торбе и не дают сосредоточиться.
+Sprite: DevilsBag
+Cost: 150
+Effects:
+- Value: 2
+  Type: AdditionalDamage  
+- Value: 1
+  Type: AdditionalDemonHealth
+- Value: 1
+  Type: AdditionalSins
+

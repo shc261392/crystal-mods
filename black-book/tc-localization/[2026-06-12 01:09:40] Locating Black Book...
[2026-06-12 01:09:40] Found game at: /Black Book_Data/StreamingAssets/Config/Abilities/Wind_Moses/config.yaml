@@ -1,0 +1,17 @@
+﻿Name: Ветер-Моисей
+AbilityType: WIND_MOSES
+Upgrade: WIND_MOSES_UP
+AbilityBookPartType: KEY
+TargetType: SELF
+Color: WHITE
+Sprite: WindMosesAbility
+GoldCost: 103
+Gesture: true
+Effects:
+- EffectType: ADD_EFFECT_TO_ZAGOVOR
+  MinValue: 1
+  MaxValue: 1
+  StringData: FIRM
+- EffectType: IMMEDIATE
+- EffectType: KRADA
+

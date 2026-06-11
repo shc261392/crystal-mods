@@ -1,0 +1,29 @@
+﻿IdName: Week7Day1GatesOfHell
+Name: Врата в ад
+Description: Чтобы исполнить желание, я должна пройти через само пекло! Я слишком далеко зашла, чтобы теперь остановиться.
+Scene: HellGates
+LevelConfig:
+  Battle:
+    Name: Живой ад
+    Enemies:
+    - Type: Demon
+      LevelSpawnPointType: EnemyCenter
+    Barks:
+    - Id: Battle/HellGates/First
+      HealthPercent: 0.800000012
+      TargetUnit: ThirteenthBrother
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week7/Day1/GatesOfHell/Intro
+    Outro: TextQuest/Week7/Day1/GatesOfHell/Outro
+  Exploration: Week7Day1GatesOfHell
+  CinematicIntro: true
+  CameraOverride: CMMainCameraHellGatesClose
+  DialogueCameraOverride: CMDiallgueGates
+  MixerSnapshot: snapshot:/Cave
+  NoExplorationMusic: true
+  NoExplorerSpawn: true
+  MixerSnapshot: snapshot:/Cave
+  MusicOverride: event:/Music/ExploreHell
+

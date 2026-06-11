@@ -1,0 +1,8 @@
+﻿Name: Mikhail's Crossroads
+Description: This is where it all began... I sense grandpa there, at the crossroads.
+ShortQuestDescr: Find Old Egor
+LongQuestDescr: You took back the Black Book. There's only one seal left to break! You go forth in search of Old Egor so that he can help you with the ceremony.
+LevelConfig:
+  Battle:
+    Name: Egor's True Form
+

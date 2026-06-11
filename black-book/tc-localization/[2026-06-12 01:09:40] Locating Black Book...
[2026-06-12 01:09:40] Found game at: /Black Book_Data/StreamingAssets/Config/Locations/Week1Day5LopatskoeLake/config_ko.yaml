@@ -1,0 +1,7 @@
+﻿Name: 로파츠코예 호수
+Description: 콜바강 왼편에 있는 굽어 있는 호수.
+ShortQuestDescr: 통발 돌려주기
+LevelConfig:
+  Battle:
+    Name: 호수 근처의 초르트
+

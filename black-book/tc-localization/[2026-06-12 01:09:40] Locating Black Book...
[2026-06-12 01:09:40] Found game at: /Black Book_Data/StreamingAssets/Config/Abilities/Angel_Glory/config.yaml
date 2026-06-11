@@ -1,0 +1,23 @@
+﻿Name: Ангелам – слава
+AbilityType: ANGEL_GLORY
+AbilityBookPartType: KEY
+Upgrade: ANGEL_GLORY_UP
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: ANGEL_GLORY
+GoldCost: 26
+Effects:
+- EffectType: KRADA
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal6OrderWhite
+    MissTrigger: Seal6OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: Ethereal
+

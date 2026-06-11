@@ -1,0 +1,6 @@
+﻿Name: Settlement
+Description: There are several houses some distance away from the village. Some day they may form a village of their own.
+LevelConfig:
+  Battle:
+    Name: Barrel Chorts
+

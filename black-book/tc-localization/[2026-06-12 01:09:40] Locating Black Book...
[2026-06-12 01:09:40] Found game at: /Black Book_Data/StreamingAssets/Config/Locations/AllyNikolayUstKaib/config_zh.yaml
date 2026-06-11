@@ -1,0 +1,7 @@
+﻿Name: 乌斯季-卡伊布村
+Description: 叶戈尔爷爷在这个地方藏了点儿药草。照他白天说的办法找，应该不难找着！
+ShortQuestDescr: 拿到叶戈尔的药草
+LevelConfig:
+  Battle:
+    Name: 叶戈尔藏的东西
+

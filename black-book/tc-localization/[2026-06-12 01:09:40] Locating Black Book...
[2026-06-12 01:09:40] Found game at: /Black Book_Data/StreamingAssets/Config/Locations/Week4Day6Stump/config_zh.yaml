@@ -1,0 +1,8 @@
+﻿Name: 库尔普
+Description: 走这条路能到那棵老树那儿。
+ShortQuestDescr: 抓住牛倌
+LongQuestDescr: 菲利蒙竟然是树林里的雠特。我得抓住他，让他放了这个村子，说不定他还能帮我破了封印。
+LevelConfig:
+  Battle:
+    Name: 牛倌菲利蒙
+

@@ -1,0 +1,26 @@
+﻿IdName: Week4Day6Church
+Name: Заброшенная часовня
+Description: Какое-то место тут было святое. Староверское, что ли?
+ShortQuestDescr: Осмотреть часовню
+Scene: ChurchEmpty
+LevelConfig:
+  MixerSnapshot: snapshot:/Church
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Черти на монетах
+    Enemies:
+    - Type: WolfHalf
+      LevelSpawnPointType: EnemyCenter
+    - Type: WolfHalf
+      LevelSpawnPointType: EnemyLeft
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day6/Church/Intro
+LightingType: FOG_2
+RequiredLocations:
+- Week4Day6Skit
+Secondary: Week4Day6Church
+OnomastikonItems:
+- Onomastikon/Encyclopedia/61
+

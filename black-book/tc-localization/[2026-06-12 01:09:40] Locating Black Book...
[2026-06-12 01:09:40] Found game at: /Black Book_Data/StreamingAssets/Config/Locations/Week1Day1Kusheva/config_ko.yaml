@@ -1,0 +1,7 @@
+﻿Name: 쿠셰바 마을
+Description: 콜바강 서쪽의 작은 마을. 어떤 사람의 소를 치료할 때 이고르 할아버지와 몇 번 가본 적이 있다. 할아버지가 초르트를 보내 일을 시킨 곳이다.
+ShortQuestDescr: 쿠셰바 마을 방문하기
+LevelConfig:
+  Battle:
+    Name: 사모바르 초르트
+

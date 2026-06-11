@@ -1,0 +1,16 @@
+﻿Name: Крепче стали
+AbilityType: STRONGER_STEEL
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+Sprite: STRONGER_STEEL
+GoldCost: 49
+Effects:
+- EffectType: ADD_EFFECT_TO_BOOK
+  MinValue: 1
+  MaxValue: 1
+  StringData: FIRM
+- EffectType: IMMEDIATE
+- EffectType: KRADA
+

@@ -1,0 +1,15 @@
+﻿Name: Золотая броня
+AbilityType: GOLDEN_ARMOR
+TargetType: ENEMY
+Intention: DEFENCE
+Sprite: GOLDEN_ARMOR
+Effects:
+- EffectType: DEFENCE_ON_MONEY
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

@@ -1,0 +1,5 @@
+﻿Unique: true
+Name: Сохранение защиты
+Description: "<sprite name=\"Defence\"> не исчезает в конце хода. \nХодов до завершения: {Duration}"
+Sprite: StatusShieldUp
+

@@ -1,0 +1,25 @@
+﻿Name: Дыхание смерти
+AbilityType: DEATH_BREATH
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: DEATH_BREATH
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Waste
+  MinValue: 10
+  MaxValue: 10
+- EffectType: STATUS
+  StatusEffectType: Waste
+  MinValue: 30
+  MaxValue: 30
+- EffectType: STATUS
+  StatusEffectType: Decomposure
+  MinValue: 30
+  MaxValue: 30
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+

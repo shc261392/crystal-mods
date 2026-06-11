@@ -1,0 +1,31 @@
+﻿AssetName: Death
+Health: 444
+HealthRandomAdd: 0
+Mana: 4
+Initiative: 1
+MoneyMin: 180
+MoneyMax: 240
+Experience: 2500
+StartingStatusEffects:
+  - StatusEffectType: Ethereal
+    Duration: 999
+    Permanent: true
+    Unremovable: true
+  - StatusEffectType: Imperishable
+    Duration: 333
+    Permanent: true
+    HardDifficulty: true    
+UnitAI:
+  AIAbilities:
+    - AbilityType: DEATH_HAND
+      TargetType: ENEMY
+    - AbilityType: DEATH_BREATH
+      TargetType: ENEMY
+    - AbilityType: BLACK_DEATH
+      TargetType: ENEMY
+    - AbilityType: IMPERISHABLE_DEATH
+      TargetType: SELF
+    - AbilityType: AT_GRAVE
+      TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Смерть

@@ -1,0 +1,25 @@
+﻿Name: Солнце красное
+AbilityType: RED_SUN
+AbilityBookPartType: KEY
+Upgrade: RED_SUN_UP
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: RED_SUN
+GoldCost: 15
+Effects:
+- EffectType: KRADA
+- EffectType: DOUBLE_DEFENCE
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal2KeyWhite
+    MissTrigger: Seal2KeyWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+- EffectType: SACRIFICE
+  MinValue: 3
+  MaxValue: 3
+

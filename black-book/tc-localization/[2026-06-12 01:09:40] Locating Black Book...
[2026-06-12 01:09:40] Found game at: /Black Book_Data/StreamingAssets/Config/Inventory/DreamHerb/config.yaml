@@ -1,0 +1,13 @@
+﻿Name: Сон-трава
+InventoryItemName: DreamHerb
+Type: Herb
+Flavour: Замутилось у него в очах, лег он на сырую землю и крепко-крепко заснул
+Sprite: DreamHerb
+Expendable: true
+Cost: 38
+TargetType: ENEMY
+Effects:
+- Value: 5
+  Type: Status
+  StatusName: Cursed
+

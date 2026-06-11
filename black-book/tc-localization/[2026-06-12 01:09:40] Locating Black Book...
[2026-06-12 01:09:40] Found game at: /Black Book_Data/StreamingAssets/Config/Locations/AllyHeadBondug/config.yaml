@@ -1,0 +1,13 @@
+﻿IdName: AllyHeadBondug
+Name: Село Бондюгское
+Description: Тут земли-то бедные. Народ больше лесоповалом промышляет да разным всяким.
+Scene: Village6
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Merchants:
+  - Peddler2
+  Quest:
+    DialogueSystemName: TextQuest/AllyHead/Bondug/Intro
+RequiredLocations:
+- AllyHeadTurchanka
+

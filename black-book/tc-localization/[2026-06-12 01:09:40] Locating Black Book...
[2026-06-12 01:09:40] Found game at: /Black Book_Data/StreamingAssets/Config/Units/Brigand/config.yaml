@@ -1,0 +1,22 @@
+﻿AssetName: Brigand
+Health: 30
+HealthRandomAdd: 5
+Mana: 4
+Initiative: 1
+MoneyMin: 2
+MoneyMax: 5
+Experience: 100
+UnitAI:
+  AIAbilities:
+  - AbilityType: MUG_STRIKE_SIMPLE
+    TargetType: ENEMY
+  - AbilityType: MUG_STRIKE
+    TargetType: ENEMY
+  - AbilityType: MUG_DEFENCE
+    TargetType: SELF
+  - AbilityType: MUG_FLEE
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Разбойник
+DamagedSound: event:/Units/Brigand/Damaged
+

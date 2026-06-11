@@ -1,0 +1,9 @@
+Name: VARAHAIL
+SkillName: AbilityVARAHAIL
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+SpriteOffsetX: -5
+SpriteOffsetY: -45
+Effects:
+- Type: AbilityUnlock
+  StringData: VARAHAIL

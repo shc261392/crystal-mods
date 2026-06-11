@@ -1,0 +1,7 @@
+﻿Name: 旧川床
+Description: 昔はコルヴァ川がこの辺りを流れていた。今は沼になっている。
+ShortQuestDescr: 旧川床にいる魔物に対処する
+LevelConfig:
+  Battle:
+    Name: 川床のチョルト
+

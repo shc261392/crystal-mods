@@ -1,0 +1,21 @@
+﻿Name: Бабушка Яга
+AbilityType: BABUSHKA_YAGA
+Upgrade: BABUSHKA_YAGA_UP
+TargetType: SELF
+Color: WHITE
+Sprite: BABUSHKA_YAGA
+GoldCost: 27
+Effects:
+- EffectType: KRADA
+- EffectType: STATUS
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal4OrderWhite
+    MissTrigger: Seal4OrderWhite
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: ArticulacyOrders
+

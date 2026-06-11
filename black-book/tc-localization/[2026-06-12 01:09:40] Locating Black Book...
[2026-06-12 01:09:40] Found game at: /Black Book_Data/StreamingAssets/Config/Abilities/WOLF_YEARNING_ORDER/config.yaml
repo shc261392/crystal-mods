@@ -1,0 +1,19 @@
+﻿Name: Тоскливый вой
+AbilityType: WOLF_YEARNING_ORDER
+TargetType: ENEMY
+Intention: DEBUFF
+Sprite: WOLF_YEARNING
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Bite
+    SpellTrigger: Bite
+    MissTrigger: Miss
+    WrapUpTime: 0.5
+    SkipReady: true
+  StatusEffectType: YearningOrders
+

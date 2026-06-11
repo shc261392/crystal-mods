@@ -1,0 +1,11 @@
+﻿Name: Фаланга грешника
+InventoryItemName: SinnerFinger
+Flavour: Про того-то говорили, что он с чертом знается
+Sprite: SinnerFinger
+Cost: 160
+Effects:
+- Value: 1
+  Type: AdditionalDamage
+- Value: 1
+  Type: AdditionalSins
+

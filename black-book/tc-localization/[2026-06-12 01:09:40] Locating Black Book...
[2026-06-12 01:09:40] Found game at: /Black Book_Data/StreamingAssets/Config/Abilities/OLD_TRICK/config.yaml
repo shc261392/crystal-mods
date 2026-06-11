@@ -1,0 +1,16 @@
+﻿Name: Старый трюк
+AbilityType: OLD_TRICK
+TargetType: SELF
+Intention: DEBUFF
+Sprite: OLD_TRICK
+Effects:
+- EffectType: REMOVE_ALL_GOOD_STATUS
+  MinValue: 999
+  MaxValue: 999
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

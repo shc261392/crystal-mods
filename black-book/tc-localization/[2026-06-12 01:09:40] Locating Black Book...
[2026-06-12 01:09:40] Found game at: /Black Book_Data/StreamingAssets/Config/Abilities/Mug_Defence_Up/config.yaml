@@ -1,0 +1,23 @@
+﻿Name: Защитная стойка +
+AbilityType: MUG_DEFENCE_UP
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: MUG_DEFENCE
+GoldCost: 5
+Effects:
+- EffectType: DEFENCE
+  MinValue: 20
+  MaxValue: 20
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    WrapUpTime: 0.100000001
+    SkipReady: true
+- EffectType: STATUS
+  MinValue: 9999
+  MaxValue: 9999
+  StatusEffectType: DefenceKeep
+

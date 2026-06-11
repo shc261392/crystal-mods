@@ -1,0 +1,69 @@
+﻿IdName: Week6Day1AlexanderOffice
+Name: Кабинет Александра
+Description: Александр у себя в кабинете. Он и не подозревает, что я на свободе.
+ShortQuestDescr: Вернуть травы и артефакты
+LongQuestDescr: Александр отобрал у меня книгу и все мое добро! За книгой я пойду к пряхе, но для начала верну вещи.
+Scene: AlexanderManor
+LevelConfig:
+  Battle:
+    Name: Троица
+    Enemies:
+    - Type: Alexander3
+      LevelSpawnPointType: EnemyCenter
+      HealthOverride: 28
+    NoShuffle: true
+    Barks:
+    - Id: Battle/AlexanderMansion/First
+      HealthPercent: 0.800000012
+      TargetUnit: Alexander3
+    - Id: Battle/AlexanderMansion/Second
+      HealthPercent: 0.400000006
+      TargetUnit: Alexander3
+    PuzzleDeck:
+    - CHUR
+    - HEADLESS
+    - KAIN
+    - KAIN
+    - DEAD_MAN
+    - AVDELAI
+    - PAVLUSHKA
+    - NIKOLA_GEORGY
+    - NIKOLA_GEORGY
+    - NIKOLA_GEORGY
+    - NIKOLA_GEORGY
+    - NIKOLA_GEORGY
+    - SNAKE_STING
+    - RUDA
+    - FIRM_KNIFE
+    - FOR_FATHER
+    - PRIZOR_STICKY
+    - RABA
+    - RABA
+    - RABA
+    PuzzleManaOverride:
+    - 2
+    - 1
+    PuzzleHandOverride:
+    - 6
+    - 4
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 3
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day1/AlexanderOffice/Intro
+    Outro: TextQuest/Week6/Day1/AlexanderOffice/Outro
+    IzbaAftermath: Izba/Week6/PrePryaha
+  Exploration: Week6Day1AlexanderOffice
+  CinematicIntro: true
+  MusicOverride: event:/Music/AlexanderManor
+  MixerSnapshot: snapshot:/Room
+RequiredLocations:
+- Week6Day1Corridor
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+HideBook: true
+InvisibleMaterial: true
+

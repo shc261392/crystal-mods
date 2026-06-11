@@ -1,0 +1,20 @@
+﻿Name: Призор
+AbilityType: PRIZOR
+Upgrade: PRIZOR_UP
+TargetType: ALL_ENEMIES
+Intention: ATTACK
+Sprite: PRIZOR
+GoldCost: 15
+Effects:
+- EffectType: STATUS
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal6OrderBlack
+    MissTrigger: Seal6OrderBlack
+    WrapUpTime: 0.05
+    SkipReady: true
+  StatusEffectType: Zamorochit
+

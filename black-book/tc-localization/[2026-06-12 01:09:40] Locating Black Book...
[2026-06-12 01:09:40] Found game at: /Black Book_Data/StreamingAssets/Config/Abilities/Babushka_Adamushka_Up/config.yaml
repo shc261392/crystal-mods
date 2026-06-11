@@ -1,0 +1,21 @@
+﻿Name: Бабушка Адамушка +
+AbilityType: BABUSHKA_ADAMUSHKA_UP
+TargetType: ENEMY
+Intention: ATTACK
+Color: WHITE
+Description: >-
+  Скопировать предыдущее слово
+
+  {MinValue} <sprite name="Defence">
+Sprite: KilaAbility
+GoldCost: 8
+Effects:
+- EffectType: DEFENCE
+  MinValue: 4
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.5
+- EffectType: COPY_PREV
+

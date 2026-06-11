@@ -1,0 +1,6 @@
+﻿Name: 冷たい小川の浅瀬
+Description: 湧き水が道を横切っている。この場所なら、行列の足を止めるのも簡単だが…
+LevelConfig:
+  Battle:
+    Name: 行列を狙ったチョルト
+

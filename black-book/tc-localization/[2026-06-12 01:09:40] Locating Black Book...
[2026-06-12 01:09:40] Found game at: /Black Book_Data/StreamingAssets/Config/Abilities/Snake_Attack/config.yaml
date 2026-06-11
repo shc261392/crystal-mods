@@ -1,0 +1,16 @@
+﻿Name: Змеиный укус
+AbilityType: SNAKE_ATTACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: SNAKE_ATTACK
+GoldCost: 6
+Effects:
+- MinValue: 2
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

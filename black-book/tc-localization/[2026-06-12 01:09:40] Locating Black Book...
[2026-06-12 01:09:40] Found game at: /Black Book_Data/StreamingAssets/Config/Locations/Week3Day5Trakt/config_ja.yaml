@@ -1,0 +1,6 @@
+﻿Name: チェルディニ街道
+Description: 大きな道だ。こんなに広い道はほとんど歩いたことがない。
+LevelConfig:
+  Battle:
+    Name: チョルトの群れ
+

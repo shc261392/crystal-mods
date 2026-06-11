@@ -1,0 +1,6 @@
+﻿Name: 통로
+Description: 이 지하실은 천장이 무척 낮다. 그래도 내가 지금껏 본 골베츠 중에 가장 널찍하다.
+LevelConfig:
+  Battle:
+    Name: 뿔 달린 경비병
+

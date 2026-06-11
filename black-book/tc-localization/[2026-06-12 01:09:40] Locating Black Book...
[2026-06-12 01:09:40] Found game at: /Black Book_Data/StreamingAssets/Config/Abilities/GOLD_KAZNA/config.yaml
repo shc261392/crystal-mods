@@ -1,0 +1,19 @@
+Name: Золотая казна
+AbilityType: GOLD_KAZNA
+TargetType: ENEMY
+AbilitySpellType: SPELL
+Color: BLACK
+AbilityBookPartType: KEY
+Sprite: JUDEA
+GoldCost: 26
+Effects:
+  - EffectType: DAMAGE_ON_MONEY
+    MinValue: 0
+    MaxValue: 0
+    VisualEffect:
+      VisualEffectType: KILA
+      ReadyTrigger: Word
+      SpellTrigger: AttackSpellSimple
+      MissTrigger: AttackSpellSimple
+      WrapUpTime: 0.2
+      SkipReady: true    

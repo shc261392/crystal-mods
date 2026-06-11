@@ -1,0 +1,19 @@
+﻿Name: Броня из плоти
+AbilityType: PORCHA_FLESH_ARMOR
+TargetType: SELF
+Intention: DEFENCE
+Sprite: PORCHA_FLESH_ARMOR
+Sound: event:/Abilities/PORCHA_FLESH_ARMOR
+GoldCost: 10
+Effects:
+- EffectType: DEFENCE
+  MinValue: 30
+  MaxValue: 40
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 2
+    SkipReady: true
+

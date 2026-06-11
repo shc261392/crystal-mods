@@ -1,0 +1,7 @@
+﻿Name: Bank of the Kolva
+Description: The road to Vilgort winds along the picturesque bank of the Kolva River.
+ShortQuestDescr: Get rid of demons in the ravine
+LevelConfig:
+  Battle:
+    Name: Rotten Company
+

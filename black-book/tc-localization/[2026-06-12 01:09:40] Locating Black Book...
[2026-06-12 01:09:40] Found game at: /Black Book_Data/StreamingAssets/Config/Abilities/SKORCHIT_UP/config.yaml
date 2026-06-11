@@ -1,0 +1,19 @@
+﻿Name: Скорчить +
+AbilityType: SKORCHIT_UP
+TargetType: ENEMY
+Intention: DEBUFF
+Sprite: SKORCHIT
+GoldCost: 10
+Effects:
+- EffectType: STATUS
+  MinValue: 77
+  MaxValue: 77
+  VisualEffect:
+    VisualEffectType: BAD_STATUS
+    ReadyTrigger: Word
+    SpellTrigger: BadStatus
+    MissTrigger: BadStatus
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: Waste
+

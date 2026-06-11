@@ -1,0 +1,19 @@
+﻿Name: Образ огненный
+AbilityType: FIRE_IMAGE
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: DEFENCE
+Sprite: FIRE_IMAGE
+GoldCost: 12
+Effects:
+- EffectType: DEFENCE_FOR_KRADA_WORDS
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal4OrderBlack
+    MissTrigger: Seal4OrderBlack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

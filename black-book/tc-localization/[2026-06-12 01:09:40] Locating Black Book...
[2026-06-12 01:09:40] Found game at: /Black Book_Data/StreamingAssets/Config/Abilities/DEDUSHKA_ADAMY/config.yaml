@@ -1,0 +1,15 @@
+﻿Name: Дедушка Адамий
+AbilityType: DEDUSHKA_ADAMY
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+Sprite: DEDUSHKA_ADAMY
+GoldCost: 59
+Effects:
+- EffectType: READ_ABILITY_AS_GESTURE
+  MinValue: 1
+  MaxValue: 1
+  StringData: KEY
+- EffectType: KRADA
+

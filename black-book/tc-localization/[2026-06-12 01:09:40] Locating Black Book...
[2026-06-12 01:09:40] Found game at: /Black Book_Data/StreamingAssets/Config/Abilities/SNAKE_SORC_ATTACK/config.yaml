@@ -1,0 +1,18 @@
+﻿Name: Молвит ядом
+AbilityType: SNAKE_SORC_ATTACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: SNAKE_SORC_ATTACK
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Poison
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

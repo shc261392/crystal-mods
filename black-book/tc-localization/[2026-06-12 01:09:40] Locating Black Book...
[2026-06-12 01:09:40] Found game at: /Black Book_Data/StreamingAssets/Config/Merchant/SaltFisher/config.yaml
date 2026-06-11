@@ -1,0 +1,35 @@
+﻿Name: Рыбак
+Id: SaltFisher
+AssetName: SaltFisher
+DialogueName: TextQuest/Week2/Day2/KamaBankTalk
+SoldItems:
+- ItemName: BrotherHoof
+  Quantity: 1
+- ItemName: PetrovHerb
+  Quantity: 1
+- ItemName: PetrovHerb
+  Quantity: 1
+- ItemName: PetrovHerb
+  Quantity: 1
+- ItemName: Braga
+  Quantity: 1
+RandomItems:
+- ItemName: Bolotvik
+  Quantity: 3
+  Probability: 0.800000012
+- ItemName: Bogomor
+  Quantity: 3
+  Probability: 0.699999988
+- ItemName: RottenMushroom
+  Quantity: 4
+  Probability: 0.5
+- ItemName: DogMushroom
+  Quantity: 3
+  Probability: 0.400000006
+- ItemName: EremaMushroom
+  Quantity: 3
+  Probability: 0.699999988
+Min: 4
+Max: 8
+DefaultInventoryView: Herb
+

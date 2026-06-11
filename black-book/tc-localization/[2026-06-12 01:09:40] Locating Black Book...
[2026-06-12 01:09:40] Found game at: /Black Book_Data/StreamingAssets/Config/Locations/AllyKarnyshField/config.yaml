@@ -1,0 +1,12 @@
+﻿IdName: AllyKarnyshField
+Name: Окраина поля
+Description: Карныш говорит, что у местных лесов нет хозяина. Но разве его нет и в полях? Может, тут управляет полевой?
+Scene: Fields
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/AllyKarnysh/Field/Intro
+RequiredLocations:
+- AllyKarnyshBerezovski
+

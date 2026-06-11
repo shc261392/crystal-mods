@@ -1,0 +1,12 @@
+﻿IdName: AllyNikolayBujdom
+Name: Буждом
+Description: Этот осыпавшийся берег называют по-пермяцки. Много таких слов-то прижилось в уезде. Шутём еще, про старое поле говорят.
+Scene: River_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/AllyNikolay/Bujdom/Intro
+  MusicOverride: event:/Music/ExploreDark
+RequiredLocations:
+- AllyNikolayPantina
+

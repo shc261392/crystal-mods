@@ -1,0 +1,11 @@
+﻿IdName: Week3Day1PryahaCutscene
+Name: Изба Пряхи
+Scene: Tkachiha
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  Exploration: Week3Day1PryahaCutscene
+  CinematicIntro: true
+  DialogueCameraOverride: CMInteriorDialogueCamera
+  MusicOverride: event:/Music/ExploreDark
+  NoExplorerSpawn: true
+

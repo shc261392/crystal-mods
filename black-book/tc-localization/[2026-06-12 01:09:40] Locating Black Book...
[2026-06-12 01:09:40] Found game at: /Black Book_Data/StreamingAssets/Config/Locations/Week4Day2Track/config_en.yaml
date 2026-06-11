@@ -1,0 +1,7 @@
+﻿Name: Deep Tracks
+Description: Tracks left by the cart, deep ones. How much wares was it carrying?
+ShortQuestDescr: Return the wares to the peasant.
+LevelConfig:
+  Battle:
+    Name: Full Cart
+

@@ -1,0 +1,27 @@
+﻿IdName: Week3Day7Creek
+Name: Слезы Вишеры
+Description: Говорят, что Полюда-богатыря как-то любила девка одна, Вишера. Не помню, че там было, теперь только слезы ее остались. Ручей так зовется.
+Scene: River1
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/Explore2
+  Battle:
+    Name: Полюдова русалка
+    Enemies:
+    - Type: MermaidSalt
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day7/Creek/Intro
+    Outro: TextQuest/Week3/Day7/Creek/Outro
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 2
+    PossiblePlayers:
+    - Mermaid2
+    DialogueFoolWin: TextQuest/Week3/Day7/Creek/FoolWin
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+RequiredLocations:
+- Week3Day7Forest
+

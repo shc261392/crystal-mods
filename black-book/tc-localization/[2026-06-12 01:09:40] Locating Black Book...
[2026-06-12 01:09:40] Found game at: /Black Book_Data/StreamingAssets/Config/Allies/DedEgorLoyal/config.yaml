@@ -1,0 +1,22 @@
+﻿Name: Дед Егор
+AllyType: DedEgorLoyal
+Unit: DedEgorLoyal
+Sprite: DedEgorFool
+IzbaDialogues:
+- Id: Izba/Egor/AfterQuestCompletionRegular
+BanterProbability: 0.5
+Banters:
+- Id: Izba/Banter/EgorNikolay
+  RequiredAlly: Nikolay
+- Id: Izba/Banter/EgorHead
+  RequiredAlly: WhiteHead
+  RequiredConversation: Izba/WhiteHead/Conv1
+- Id: Izba/Banter/EgorKarnysh
+  RequiredAlly: Karnysh
+IzbaAsset: DedEgorIzbaRegular
+DaysIzbaNoSpawn:
+- 33
+- 34
+- 35
+- 36
+

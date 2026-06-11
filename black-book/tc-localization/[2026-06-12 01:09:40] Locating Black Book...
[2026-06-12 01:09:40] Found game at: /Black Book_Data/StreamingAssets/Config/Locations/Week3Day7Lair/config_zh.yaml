@@ -1,0 +1,6 @@
+﻿Name: 狼人巢穴
+Description: 这座山的主宰住这儿。
+LevelConfig:
+  Battle:
+    Name: 泼留德狼
+

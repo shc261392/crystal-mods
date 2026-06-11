@@ -1,0 +1,32 @@
+﻿IdName: Week2Day6Ovins
+Name: Овины
+Description: Купец сказал, что дети отправились гадать в овины. Гадание в неположенное время может быть опасным. Думаю, стоит проверить.
+ShortQuestDescr: Проверить ворожей
+Scene: Ovin
+LevelConfig:
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Овинники
+    Enemies:
+    - Type: Domovoi
+      LevelSpawnPointType: EnemyCenter
+    - Type: Domovoi
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day6/Ovins
+    Outro: TextQuest/Week2/Day6/OvinsAftermath
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 3
+    PossiblePlayers:
+    - Ovinnik
+    - Ovinnik
+    DialogueFoolWin: TextQuest/Week2/Day6/OvinsAftermath
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+RequiredLocations:
+- Week2Day6Saltanovo
+Secondary: Week2Day6Ovins
+OnomastikonItems:
+- Onomastikon/Encyclopedia/64
+

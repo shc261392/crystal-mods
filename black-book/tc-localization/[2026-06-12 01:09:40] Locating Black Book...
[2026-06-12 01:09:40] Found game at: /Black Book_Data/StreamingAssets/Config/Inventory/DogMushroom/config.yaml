@@ -1,0 +1,12 @@
+﻿Name: Собачий гриб
+InventoryItemName: DogMushroom
+Type: Herb
+Flavour: Эти грибы не надо, они у нас собачьи считаются
+Sprite: DogMushroom
+Expendable: true
+Cost: 10
+TargetType: ALL_ENEMIES
+Effects:
+- Value: 3
+  Type: Damage
+

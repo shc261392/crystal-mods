@@ -1,0 +1,9 @@
+﻿Name: Венок из волшебных трав
+InventoryItemName: MagicHerbs
+Flavour: Бросали венки в воду. Чей потонет, та и умрет в этом году
+Sprite: MagicHerbs
+Cost: 46
+Effects:
+- Value: 1
+  Type: HealOnBattleStart
+

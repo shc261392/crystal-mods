@@ -1,0 +1,15 @@
+﻿IdName: Week6Day2Pyanteg
+Name: Пянтег
+Description: Может, к тоговцу заглянуть-то? Без трав-то, поди, туго с Пряхой придется.
+Scene: Village3
+LevelConfig:
+  Merchants:
+  - Peddler3
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day2/Pyanteg/Intro
+  Exploration: ChurchPyanteg
+  NoExplorerSpawn: true
+LightingType: STORM
+MoonType: NONE
+HideBook: true
+

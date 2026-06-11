@@ -1,0 +1,10 @@
+Name: NIKOLA_GEORGY
+SkillName: AbilityNIKOLA_GEORGY
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityVARAHAIL
+SpriteOffsetX: -4
+SpriteOffsetY: -4
+Effects:
+- Type: AbilityUnlock
+  StringData: NIKOLA_GEORGY

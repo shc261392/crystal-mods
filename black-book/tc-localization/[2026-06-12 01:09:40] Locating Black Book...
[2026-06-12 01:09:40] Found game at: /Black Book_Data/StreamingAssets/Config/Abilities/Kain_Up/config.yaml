@@ -1,0 +1,13 @@
+﻿Name: Каин +
+AbilityType: KAIN_UP
+TargetType: SELF
+Intention: BUFF
+Description: >
+  Слова с уроном в заговоре наносят на {MinValue} урона больше
+Sprite: Kain
+GoldCost: 6
+Effects:
+- EffectType: WORD_DAMAGE_INC
+  MinValue: 4
+  MaxValue: 4
+

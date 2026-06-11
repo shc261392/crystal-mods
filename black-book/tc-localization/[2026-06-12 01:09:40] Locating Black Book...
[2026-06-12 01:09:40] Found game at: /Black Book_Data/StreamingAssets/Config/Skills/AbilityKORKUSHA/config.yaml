@@ -1,0 +1,10 @@
+Name: KORKUSHA
+SkillName: AbilityKORKUSHA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityBLOOD_BURN
+SpriteOffsetX: -59
+SpriteOffsetY: -16
+Effects:
+- Type: AbilityUnlock
+  StringData: KORKUSHA

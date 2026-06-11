@@ -1,0 +1,7 @@
+﻿Name: 洛戈维村
+Description: 亚历山大要治的那个女的就住在这个村。
+ShortQuestDescr: 治好农民
+LevelConfig:
+  Battle:
+    Name: 火蛇
+

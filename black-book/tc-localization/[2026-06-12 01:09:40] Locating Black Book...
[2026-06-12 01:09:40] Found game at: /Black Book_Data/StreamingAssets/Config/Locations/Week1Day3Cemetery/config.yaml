@@ -1,0 +1,16 @@
+﻿IdName: Week1Day3Cemetery
+Name: Старое кладбище
+Description: 'Это кладбище далеко от Янидора, а потому им почти не пользуются. Теперь есть поновее да поближе. А мне это и на руку: могу своими делами заняться.'
+ShortQuestDescr: Набрать кладбищенской земли
+Scene: Cemetery
+LevelConfig:
+  MusicOverride: event:/Music/Explore2
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Artefact/CemeterySoil
+RequiredLocations:
+- Week1Day3Alimov
+Secondary: Week1Day3Cemetery
+OnomastikonItems:
+- Onomastikon/Encyclopedia/34
+

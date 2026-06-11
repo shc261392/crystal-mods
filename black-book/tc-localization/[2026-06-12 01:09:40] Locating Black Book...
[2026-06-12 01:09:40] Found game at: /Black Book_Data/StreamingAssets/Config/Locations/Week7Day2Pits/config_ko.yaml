@@ -1,0 +1,6 @@
+﻿Name: 악마 구덩이
+Description: 여기서는 어둠과 불덩이 외에는 아무것도 보이지 않는다.
+LevelConfig:
+  Battle:
+    Name: 역청 초르트
+

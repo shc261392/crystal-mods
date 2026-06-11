@@ -1,0 +1,24 @@
+﻿IdName: Week4Day4Abandoned
+Name: Заброшенные избы
+Description: В избах, где не осталось хозяина, молодежь собирается в свободное время.
+Scene: LostVillage
+OnomastikonItems:
+  - Onomastikon/Songs/13
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  MusicOverride: event:/Music/Explore2
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day4/YoungFolk/Intro
+  CameraOverride: CMQuestCamera1
+  FoolGame:
+    RandomPlayerCount: true
+    CardsCount: 36
+    PlayerCount: 4
+    PossiblePlayers:
+    - Peasant
+    - Peasant2
+    - Peasant3
+  Exploration: Outside
+  NoExplorerSpawn: true
+CanBeVisitedMultiple: true
+

@@ -1,0 +1,9 @@
+﻿Name: Складень
+InventoryItemName: SewnIcon
+Flavour: В Пантелеймоны ходили с иконами на поля. Поп нёс воду и икону. Там молебствовали, чтоб был дождь.
+Sprite: SewnIcon
+Cost: 240
+Effects:
+- Value: 10
+  Type: AdditionalHeal
+

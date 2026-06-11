@@ -1,0 +1,15 @@
+﻿IdName: Week3Day4Yard
+Name: Поезд собирается
+Description: Пока продолжаются плачи, проверю-ко я двор еще раз. Как бы новая порча не объявилась.
+Scene: WeddingSaunaEvening
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day4/Yard/Intro
+  Exploration: Week3Day4Yard
+  MusicOverride: event:/Music/Explore2
+RequiredLocations:
+- Week3Day4Pokcha
+OnomastikonItems:
+- Onomastikon/Encyclopedia/78
+

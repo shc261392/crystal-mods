@@ -1,0 +1,8 @@
+﻿Name: Чертово знамя
+InventoryItemName: DevilBannerRoguelike
+Flavour: Верно говорят, что бесовские подарки в хозяйстве не пригодятся
+Sprite: DevilBanner
+Cost: 70
+Effects:
+- Value: 1
+  Type: SpikesForAll

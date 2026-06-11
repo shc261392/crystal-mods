@@ -1,0 +1,12 @@
+﻿Name: Тайная страница
+InventoryItemName: SecretPage
+Flavour: В псталтыри на тайной странице можно много че узнать, как с окаянным справиться
+Sprite: IconSecretPage
+Cost: 300
+Effects:
+  - Value: 1
+    Type: StatusOnBattleStart
+    StatusName: ArticulacyOrders
+  - Value: 1
+    Type: StatusOnBattleStart
+    StatusName: ArticulacyKeys

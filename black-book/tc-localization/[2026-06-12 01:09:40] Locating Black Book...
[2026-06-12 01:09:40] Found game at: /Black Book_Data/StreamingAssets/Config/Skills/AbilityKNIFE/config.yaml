@@ -1,0 +1,10 @@
+Name: KNIFE
+SkillName: AbilityKNIFE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityPRIZOR_STICKY
+SpriteOffsetX: 5
+SpriteOffsetY: 2
+Effects:
+- Type: AbilityUnlock
+  StringData: KNIFE

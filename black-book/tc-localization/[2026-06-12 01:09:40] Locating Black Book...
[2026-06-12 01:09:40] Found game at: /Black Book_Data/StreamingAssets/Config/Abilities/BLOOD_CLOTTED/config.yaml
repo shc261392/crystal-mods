@@ -1,0 +1,22 @@
+﻿Name: Кровь, запекись
+AbilityType: BLOOD_CLOTTED
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: BLOOD_CLOTTED
+GoldCost: 18
+Effects:
+- EffectType: LOSS_HEALTH_DEFENCE_SKLAD
+  MinValue: 0
+  MaxValue: 0
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal4OrderWhite
+    MissTrigger: Seal4OrderWhite
+    WrapUpTime: 0.200000003
+    SkipReady: true
+
+

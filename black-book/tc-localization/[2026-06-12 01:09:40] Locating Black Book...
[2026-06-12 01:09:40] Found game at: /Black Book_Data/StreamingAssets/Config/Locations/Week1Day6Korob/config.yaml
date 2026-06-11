@@ -1,0 +1,16 @@
+﻿IdName: Week1Day6Korob
+Name: Коробейники в деревне Езова
+Description: Говорят, возле деревни коробейники устроили небольшую ярмарку. Думаю, несколько торговцев осталось даже в такой поздний час.
+Scene: Fair
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Merchants:
+  - Peddler
+  - Herbalist
+  - BookKeeper
+  Quest:
+    DialogueSystemName: TextQuest/Merchant/Korob
+  MusicOverride: event:/Ambient/Yarmarka
+RequiredLocations:
+- Week1Day6RoadToVilgort
+

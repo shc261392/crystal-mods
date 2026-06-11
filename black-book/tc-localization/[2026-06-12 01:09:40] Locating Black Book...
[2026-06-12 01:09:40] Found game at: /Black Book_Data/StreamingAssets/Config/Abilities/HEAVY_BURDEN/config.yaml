@@ -1,0 +1,16 @@
+﻿Name: Тяжёлая ноша
+AbilityType: HEAVY_BURDEN
+AbilityBookPartType: KEY
+TargetType: ENEMY
+Sprite: HEAVY_BURDEN
+GoldCost: 26
+Effects:
+- EffectType: DAMAGE_ON_MONEY
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Attack
+    MissTrigger: Attack
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

@@ -1,0 +1,3 @@
+﻿Name: 尖刺
+Description: 受到<sprite name="Damage">时，造成{Duration}点<sprite name="Damage">
+

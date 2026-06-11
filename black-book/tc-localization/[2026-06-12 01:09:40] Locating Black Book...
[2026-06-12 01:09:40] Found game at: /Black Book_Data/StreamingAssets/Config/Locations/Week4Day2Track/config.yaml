@@ -1,0 +1,23 @@
+﻿IdName: Week4Day2Track
+Name: Глубокий след
+Description: След от телеги, да такой глубокий. Сколько же товаров он вез?
+ShortQuestDescr: Вернуть товары крестьянину
+Scene: Forest_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Полна повозка
+    Enemies:
+    - Type: ForestDemon
+      LevelSpawnPointType: EnemyCenter
+    - Type: ForestDemon
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day2/Track
+  CameraOverride: CMQuestCamera1
+LightingType: FOG_2
+RequiredLocations:
+- Week4Day2Road
+Secondary: Week4Day2Track
+

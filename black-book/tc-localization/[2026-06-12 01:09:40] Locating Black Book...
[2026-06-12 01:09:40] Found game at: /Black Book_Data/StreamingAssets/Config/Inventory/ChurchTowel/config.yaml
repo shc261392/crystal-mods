@@ -1,0 +1,11 @@
+﻿Name: Церковное полотенце
+InventoryItemName: ChurchTowel
+Flavour: Старинны-те полотенца не вешу, держу токо напоглядку
+Sprite: ChurchTowel
+Cost: 70
+NotForSale: true
+CanNotBeDropped: true
+Effects:
+- Value: 3
+  Type: ReduceDemons
+

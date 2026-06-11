@@ -1,0 +1,16 @@
+﻿AssetName: SwampFire
+Health: 50
+Mana: 4
+Initiative: 1
+MoneyMin: 18
+MoneyMax: 30
+Experience: 100
+UnitAI:
+  AIAbilities:
+  - AbilityType: SWAMP_LIGHT
+    TargetType: ENEMY
+  - AbilityType: SWAMP_BIT
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Болотный Огонь
+

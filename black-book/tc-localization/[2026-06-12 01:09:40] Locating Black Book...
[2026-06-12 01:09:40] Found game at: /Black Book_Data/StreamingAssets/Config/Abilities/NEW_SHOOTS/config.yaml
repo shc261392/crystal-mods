@@ -1,0 +1,14 @@
+﻿Name: Новые побеги
+AbilityType: NEW_SHOOTS
+TargetType: SELF
+AbilitySpellType: SUMMON
+Sprite: NEW_SHOOTS
+GoldCost: 6
+Effects:
+- EffectType: SUMMON
+  MinValue: 2
+  MaxValue: 2
+  SummonEffectData:
+    UnitTypes:
+    - AspenDemonChangeling
+

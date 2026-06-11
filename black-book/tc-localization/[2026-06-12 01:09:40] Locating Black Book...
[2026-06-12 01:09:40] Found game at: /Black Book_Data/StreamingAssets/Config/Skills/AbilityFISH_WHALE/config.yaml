@@ -1,0 +1,10 @@
+Name: FISH_WHALE
+SkillName: AbilityFISH_WHALE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - RoguelikeKeys2
+SpriteOffsetX: 38
+SpriteOffsetY: -32
+Effects:
+- Type: AbilityUnlock
+  StringData: FISH_WHALE

@@ -1,0 +1,13 @@
+﻿Name: Чирей Василий
+AbilityType: VASILY_BOIL
+Upgrade: VASILY_BOIL_UP
+TargetType: ENEMY
+Sprite: VasilyAbility
+GoldCost: 88
+Effects:
+- EffectType: STATUS
+  MinValue: 7
+  MaxValue: 7
+  StatusEffectType: Waste
+- EffectType: IMMEDIATE
+

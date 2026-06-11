@@ -1,0 +1,19 @@
+﻿IdName: Week1Day1Gorodishenskoy
+Name: Лог Городищенской
+Description: Опасно здесь, место нечистое. Да и свалиться ночь в лог-то можно так, что ног потом не соберешь.
+Scene: Rift
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Нечисть в логу
+    Enemies:
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonBooker
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day1/Gorodishenskoy
+RequiredLocations:
+- Week1Day1Nizva
+

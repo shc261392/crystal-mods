@@ -1,0 +1,7 @@
+﻿Name: 粮仓
+Description: 商店老板说几个孩子正在粮仓后院算命。算命的时间要是选错了，命都有可能搭进去，我得过去看一眼。
+ShortQuestDescr: 看一看占卜的小孩
+LevelConfig:
+  Battle:
+    Name: 奥温聂
+

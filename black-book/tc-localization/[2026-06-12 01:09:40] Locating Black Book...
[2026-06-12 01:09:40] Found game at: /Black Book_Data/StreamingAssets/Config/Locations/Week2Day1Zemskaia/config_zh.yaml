@@ -1,0 +1,6 @@
+﻿Name: 驿站
+Description: 全省各地都有这种驿站，供人休息换马。
+LevelConfig:
+  Battle:
+    Name: 苏谢德科
+

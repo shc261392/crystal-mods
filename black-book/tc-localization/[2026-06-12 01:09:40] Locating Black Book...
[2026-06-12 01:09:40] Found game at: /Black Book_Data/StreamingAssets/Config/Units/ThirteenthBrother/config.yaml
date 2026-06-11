@@ -1,0 +1,23 @@
+﻿AssetName: ThirteenthBrother
+Health: 50
+Mana: 4
+Initiative: 1
+MoneyMin: 20
+MoneyMax: 20
+Experience: 666
+StartingStatusEffects:
+  - StatusEffectType: Master
+    Duration: 999
+    Permanent: true
+    Unremovable: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: THIRTEENTH_CLAW
+    TargetType: ENEMY
+  - AbilityType: THIRTEENTH_SEAL
+    TargetType: SELF
+  - AbilityType: THIRTEENTH_DEFENCE
+    TargetType: ALL_ALLIES
+  CastingType: UNIT_HARDCODED
+Name: Тринадцатый брат
+

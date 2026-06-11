@@ -1,0 +1,12 @@
+﻿IdName: Week2Day3VerhChugr
+Name: Верхне-Чугрумское болото
+Description: Болото заросло мхами. Кажется, будто это спина огромного зверя, что лежит под землей. Я что-то слышала про Манг-Онта. Может, это он и есть?
+Scene: Marshes2
+LevelConfig:
+  MusicOverride: event:/Music/Explore2
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Artefact/ThunderArrow
+RequiredLocations:
+- Week2Day3PineForest
+

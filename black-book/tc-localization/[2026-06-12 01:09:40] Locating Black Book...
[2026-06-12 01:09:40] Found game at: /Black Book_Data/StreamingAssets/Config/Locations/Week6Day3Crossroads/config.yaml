@@ -1,0 +1,49 @@
+﻿IdName: Week6Day3Crossroads
+Name: Михайловская росстань
+Description: Тут все и началось... Чувствую, что дедушка там, на росстани.
+ShortQuestDescr: Найти деда Егора
+LongQuestDescr: Вы вернули Черную книгу. Осталось открыть последнюю печать! Вы отправились на поиски деда Егора, чтобы он помог разобраться с обрядом.
+Scene: CrossroadsFinalRain
+LevelConfig:
+  Quest:
+    Outro: TextQuest/Week6/Day3/Crossroads/BattleWin
+  Battle:
+    Name: Истинный облик Егора
+    Enemies:
+    - Type: DedEgor3
+      LevelSpawnPointType: EnemyCenter
+    Barks:
+    - Id: Battle/DedEgorPhase3/First
+      HealthPercent: 0.800000012
+      TargetUnit: DedEgor3
+    - Id: Battle/DedEgorPhase3/Second
+      HealthPercent: 0.300000012
+      TargetUnit: DedEgor3
+#    WinCutscene: Week6Day3CrossroadsWin
+    EnemyKillWin: true
+    HealthLoose: true
+    BattleMusic:
+      Name: event:/Music/FinalBattle
+      SoundParam:
+        Name: FinalBattlePart
+        Value: 10
+  Exploration: Week6Day3Crossroads
+  CinematicIntro: true
+  NoExplorationMusic: true
+  NoExplorerSpawn: true
+  NoVictoryMusic: true
+  MixerSnapshot: snapshot:/Forest
+RequiredLocations:
+- Week6Day3Field
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+- WhiteHead
+- WhiteHeadLoyal
+- Proshka
+- ProshkaLoyal
+- Karnysh
+- KarnyshLoyal
+

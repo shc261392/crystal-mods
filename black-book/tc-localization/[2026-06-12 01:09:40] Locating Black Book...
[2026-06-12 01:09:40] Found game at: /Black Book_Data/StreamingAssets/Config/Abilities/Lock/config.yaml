@@ -1,0 +1,14 @@
+﻿Name: Замок
+AbilityType: LOCK
+AbilityBookPartType: KEY
+Upgrade: LOCK_UP
+TargetType: PLAYER
+Intention: BUFF
+AbilitySpellType: STATUS
+Sprite: LOCK
+GoldCost: 6
+Effects:
+- EffectType: FIRM
+  MinValue: 3
+  MaxValue: 3
+

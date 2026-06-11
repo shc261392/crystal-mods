@@ -1,0 +1,18 @@
+﻿Name: Раба
+AbilityType: RABA
+AbilityBookPartType: KEY
+Upgrade: RABA_UP
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: RABA
+GoldCost: 5
+Effects:
+- EffectType: DEFENCE
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.200000003
+

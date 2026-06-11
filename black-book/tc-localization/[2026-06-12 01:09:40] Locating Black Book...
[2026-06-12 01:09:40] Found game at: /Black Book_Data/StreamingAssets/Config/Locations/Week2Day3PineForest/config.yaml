@@ -1,0 +1,29 @@
+﻿IdName: Week2Day3PineForest
+Name: Сосновая роща
+Description: К болотистой округе Адова озера вплотную подступила старинная сосновая роща
+Scene: Forest_4
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Лесные бесы
+    Enemies:
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyCenter
+    - Type: SnakeCopper
+    - Type: DemonBooker
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  BattleAlternative:
+    Name: Оглушенный бес
+    Enemies:
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyCenter
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day3/PineForestIntro
+RequiredLocations:
+- Week2Day3VerhOnil
+

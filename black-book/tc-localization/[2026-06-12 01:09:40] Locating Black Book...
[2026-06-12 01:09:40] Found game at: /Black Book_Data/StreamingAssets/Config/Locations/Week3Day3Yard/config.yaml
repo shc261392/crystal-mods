@@ -1,0 +1,16 @@
+﻿IdName: Week3Day3Yard
+Name: Поезд приехал
+Description: Скоро должны поезжане приехать, в Вильгорт отправимся на венчание.
+Scene: WeddingSaunaEvening
+LevelConfig:
+  NoExplorationMusic: true
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day3/Yard/Intro
+  Exploration: Week3Day3Yard
+RequiredLocations:
+- Week3Day3Bath
+OnomastikonItems:
+- Onomastikon/Tales/17
+- Onomastikon/Songs/5
+

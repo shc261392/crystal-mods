@@ -1,0 +1,17 @@
+﻿AssetName: SamovarDemon
+Health: 10
+HealthRandomAdd: 3
+Mana: 4
+MoneyMin: 1
+MoneyMax: 3
+Experience: 75
+UnitAI:
+  AISpecialAbilities:
+  - AbilityType: DEMON_DEFENCE
+    TargetType: ALLY
+    CheckValue: 555555
+  AIAbilities:
+  - AbilityType: DEMON_SAMOVAR_ATTACK
+    TargetType: ENEMY
+  CastingType: RANDOM
+Name: Самоварный чёрт

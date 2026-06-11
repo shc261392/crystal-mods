@@ -1,0 +1,13 @@
+﻿Name: Змеица
+InventoryItemName: SnakeHerb
+Type: Herb
+Flavour: А где скоморохи играют, кинуть траву змеицу под ноги им – и они передерутся и гудки все переломают
+Sprite: SnakeHerb
+Expendable: true
+Cost: 44
+TargetType: ENEMY
+Effects:
+- Value: 2
+  Type: Status
+  StatusName: Zamorochit
+

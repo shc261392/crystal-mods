@@ -1,0 +1,26 @@
+﻿IdName: Week2Day7Forge
+Name: Кузница
+Description: Тут живет кузнец, который плохо починил инструмент.
+ShortQuestDescr: Поговорить с кузнецом
+Scene: Village6
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  MusicOverride: event:/Music/Explore2
+  Battle:
+    Name: Погонщики грешников
+    Enemies:
+    - Type: SinnerHorse
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSummoner
+      LevelSpawnPointType: EnemyLeft
+    - Type: DemonSummoner
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day7/Forge
+    Outro: TextQuest/Week2/Day7/ForgeSolved
+RequiredLocations:
+- Week2Day7Viselok
+Secondary: Week2Day7Forge
+

@@ -1,0 +1,1 @@
+Name: Знание приказовSkillName: RoguelikeOrdersKnowledgeSprite: OrdersKnowledgeSkillCustomRequirementKey: RoguelikeBossNeeded1Description: Увеличивает количество приказов в заговоре на {CalculatedEffect}ResetBlock: trueEffects:- Value: 1  Type: AdditionalOrder

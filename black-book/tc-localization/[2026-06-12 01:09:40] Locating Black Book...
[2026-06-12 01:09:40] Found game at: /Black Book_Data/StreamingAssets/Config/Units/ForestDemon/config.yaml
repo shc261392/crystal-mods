@@ -1,0 +1,22 @@
+﻿AssetName: ForestDemon
+Health: 66
+Mana: 4
+Initiative: 1
+MoneyMin: 24
+MoneyMax: 30
+Experience: 250
+StartingStatusEffects:
+- StatusEffectType: Vampirism
+  Duration: 13
+  HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: FOREST_FORCE
+    TargetType: SELF
+  - AbilityType: FORESTS_FORCE
+    TargetType: ENEMY
+  - AbilityType: MOSS_CLAW
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Лесной Бес
+

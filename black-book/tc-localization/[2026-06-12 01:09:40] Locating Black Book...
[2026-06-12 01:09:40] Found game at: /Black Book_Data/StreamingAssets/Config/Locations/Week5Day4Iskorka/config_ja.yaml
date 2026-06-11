@@ -1,0 +1,7 @@
+﻿Name: イスコラ川
+Description: この猟師小屋には、自らの結婚式にコルドゥンを招こうとしなかった男が住んでいる。今、彼の家はゴキブリに占拠されている。
+ShortQuestDescr: ゴキブリを退治する
+LevelConfig:
+  Battle:
+    Name: 勤勉なチョルト
+

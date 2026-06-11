@@ -1,0 +1,17 @@
+﻿Name: Авоил
+AbilityType: AVOIL
+Upgrade: AVOIL_UP
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: Avoil
+GoldCost: 12
+Effects:
+- EffectType: DEFENCE_SKLAD
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    WrapUpTime: 0.100000001
+

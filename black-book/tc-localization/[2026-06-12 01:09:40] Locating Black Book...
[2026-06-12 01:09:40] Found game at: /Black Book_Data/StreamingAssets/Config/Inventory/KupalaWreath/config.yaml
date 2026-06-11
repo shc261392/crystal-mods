@@ -1,0 +1,9 @@
+﻿Name: Купальский венок
+InventoryItemName: KupalaWreath
+Flavour: Суженый, ряженый, явися ко мне сам! Я тебе украшенный венок свой отдам!
+Sprite: KupalaWreath
+Cost: 100
+Effects:
+- Value: 10
+  Type: HealOnBattleStart
+

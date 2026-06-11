@@ -1,0 +1,10 @@
+﻿Name: Энциклопедические знания
+SkillName: Encyclopedia
+Sprite: EncyclopediaSkill
+Description: Открытие подсказки не снижает опыта за верный ответ знаткости
+RequiredSkills:
+- Vyaz2
+Effects:
+- Value: 1
+  Type: KnowledgeUsagePriceDrop
+

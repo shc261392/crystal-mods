@@ -1,0 +1,3 @@
+﻿Name: ダメージ吸収
+Description: 次の{Duration}回の敵の攻撃による <sprite name="Damage"> を完全に吸収する
+

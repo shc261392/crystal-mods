@@ -1,0 +1,6 @@
+﻿Name: 피안테그 길
+Description: 여기서 마을까지는 그리 멀지 않지만, 이곳 콜둔들이 이 길에 초르트를 남겨두고 갔다는 예감이 든다.
+LevelConfig:
+  Battle:
+    Name: 길의 초르트
+

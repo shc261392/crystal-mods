@@ -1,0 +1,16 @@
+﻿IdName: Week2Day1Booker
+Name: Мрачный лес
+Description: Что-то неладное чувствую среди ветвей.
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Merchants:
+  - BookKeeper
+  Quest:
+    DialogueSystemName: TextQuest/Merchant/BookKeeper/Quest1
+  CameraOverride: CMQuestCamera6
+LightingType: DARK
+RequiredLocations:
+- Week2Day1ChernyBereg
+CanBeVisitedNextDay: true
+

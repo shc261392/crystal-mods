@@ -1,0 +1,18 @@
+﻿Name: Ядовитые гланды
+AbilityType: SNAKE_ATTACK_POISON
+TargetType: ENEMY
+Intention: DEBUFF
+Sprite: SNAKE_ATTACK_POISON
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  StatusEffectType: Poison
+

@@ -1,0 +1,22 @@
+﻿IdName: Week4Day7Chud
+Name: Чудской луг
+Description: Странное место, старинное.
+Scene: Mooseman
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/Mooseman
+  Battle:
+    Name: Чудь
+    Enemies:
+    - Type: Chud1
+      LevelSpawnPointType: EnemyCenter
+    - Type: Chud2
+    - Type: Chud3
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day7/Chud/Intro
+RequiredLocations:
+- Week4Day7Viam
+

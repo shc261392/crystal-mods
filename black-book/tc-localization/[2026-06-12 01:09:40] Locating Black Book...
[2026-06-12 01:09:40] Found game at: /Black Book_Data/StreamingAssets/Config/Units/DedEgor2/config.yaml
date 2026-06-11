@@ -1,0 +1,45 @@
+﻿AssetName: DedEgorFly
+Health: 200
+Mana: 7
+Initiative: 2
+Experience: 1000
+RewardAbilities:
+- STRAH_RAH
+- STRAH_RAH
+- STRAH_RAH
+StartingStatusEffects:
+- StatusEffectType: Sorcerer
+  Duration: 999
+  Permanent: true
+  Unremovable: true
+- StatusEffectType: Immunity
+  Duration: 999
+  Permanent: true
+  StringData: Waste
+  HardDifficulty: true
+- StatusEffectType: Immunity
+  Duration: 999
+  Permanent: true
+  StringData: Cursed
+- StatusEffectType: Untouchable
+  Duration: 1
+  Permanent: true
+- StatusEffectType: BlackBooker
+  Duration: 1
+  Permanent: true
+  HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: STRAH_RAH
+    TargetType: ENEMY
+  - AbilityType: OLOVO
+    TargetType: ENEMY
+  - AbilityType: SIR_U
+    TargetType: ENEMY
+  - AbilityType: SHONDI
+    TargetType: SELF
+  - AbilityType: ETERNAL_JOURNEY
+    TargetType: SELF
+  CastingType: UNIT_HARDCODED
+Name: Дед Егор
+

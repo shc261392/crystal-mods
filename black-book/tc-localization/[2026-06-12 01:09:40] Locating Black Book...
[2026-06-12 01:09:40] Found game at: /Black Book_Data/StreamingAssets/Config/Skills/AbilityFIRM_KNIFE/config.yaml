@@ -1,0 +1,10 @@
+Name: FIRM_KNIFE
+SkillName: AbilityFIRM_KNIFE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - RoguelikeKeys1
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: FIRM_KNIFE

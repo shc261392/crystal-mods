@@ -1,0 +1,7 @@
+﻿Name: Ust-Urolka Village
+Description: Supplicants came from this village and told me that people hear someone talking in the cemetery at night. The living dead, perhaps?
+ShortQuestDescr: Inspect the Ust-Urolka village cemetery
+LevelConfig:
+  Battle:
+    Name: Ilya's chort
+

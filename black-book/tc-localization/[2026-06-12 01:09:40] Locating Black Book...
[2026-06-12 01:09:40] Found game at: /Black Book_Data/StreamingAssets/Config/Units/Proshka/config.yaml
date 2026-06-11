@@ -1,0 +1,13 @@
+﻿AssetName: Proshka
+Health: 9999
+HealthRandomAdd: 5
+Mana: 4
+Initiative: 2
+UnitAI:
+  AllyActivatedAbility:
+    AbilityType: PROSHKA_DEFENCE
+    TargetType: PLAYER
+  AllyActivatedAbilityTimeout: 4
+  CastingType: RANDOM
+Name: Прошка
+

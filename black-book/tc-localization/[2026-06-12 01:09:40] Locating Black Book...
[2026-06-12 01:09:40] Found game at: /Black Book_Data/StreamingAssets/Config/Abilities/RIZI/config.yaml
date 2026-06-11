@@ -1,0 +1,21 @@
+﻿Name: Ризы нетленные
+AbilityType: RIZI
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: RIZI
+GoldCost: 22
+Effects:
+- EffectType: STATUS_SKLAD
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal5OrderWhite
+    MissTrigger: Seal5OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: Imperishable
+

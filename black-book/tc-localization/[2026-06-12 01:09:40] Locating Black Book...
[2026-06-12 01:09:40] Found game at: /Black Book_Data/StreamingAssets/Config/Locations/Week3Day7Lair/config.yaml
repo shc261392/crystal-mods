@@ -1,0 +1,23 @@
+﻿IdName: Week3Day7Lair
+Name: Логово оборотня
+Description: Здесь и живет хозяин горы.
+Scene: PoludCave
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Полюд-волк
+    Enemies:
+    - Type: Werewolf
+      LevelSpawnPointType: EnemyCenter
+    - Type: WolfDeadly
+    - Type: Wolf
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day7/Lair/Intro
+    Outro: TextQuest/Week3/Day7/Lair/Outro
+RequiredLocations:
+- Week3Day7NearLair
+

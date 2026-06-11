@@ -1,0 +1,7 @@
+﻿Name: Warehouse
+Description: Demon tracks lead to this hunting warehouse
+ShortQuestDescr: Track the Evil Spirits
+LevelConfig:
+  Battle:
+    Name: Eretnik
+

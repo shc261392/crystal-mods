@@ -1,0 +1,6 @@
+﻿Name: Field
+Description: If I fly up over the field, I'll be able to see the entire Cherdyn Uyezd!
+LevelConfig:
+  Battle:
+    Name: Old Egor
+

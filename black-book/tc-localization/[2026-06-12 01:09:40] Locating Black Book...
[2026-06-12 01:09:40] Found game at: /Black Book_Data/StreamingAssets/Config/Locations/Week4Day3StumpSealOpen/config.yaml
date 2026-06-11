@@ -1,0 +1,17 @@
+﻿IdName: Week4Day3StumpSealOpen
+Name: Кульпа
+Description: Описание
+ShortQuestDescr: Описание
+LongQuestDescr: Описание
+Scene: LeshiySonNest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day3/Stump/Intro
+  Exploration: Week4Day3StumpSealOpen
+  CinematicIntro: true
+  NoExplorationMusic: true
+RequiredLocations:
+- Week4Day3BadPlace
+

@@ -1,0 +1,9 @@
+IdName: Outro
+Name: Послесловие
+Scene: GameOutro
+BlockScreenKeys: true
+LevelConfig:
+  Exploration: GameOutro
+  NoExplorationMusic: true
+  NoExplorerSpawn: true
+  MusicOverride: event:/Music/OutroCards

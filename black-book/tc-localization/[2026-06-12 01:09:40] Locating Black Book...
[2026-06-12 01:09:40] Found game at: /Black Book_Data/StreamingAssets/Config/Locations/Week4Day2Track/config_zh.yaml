@@ -1,0 +1,7 @@
+﻿Name: 车轮印
+Description: 这是马车的车轮印，这么深，这车上装了多少货？
+ShortQuestDescr: 帮车夫找回货物
+LevelConfig:
+  Battle:
+    Name: 满载的马车
+

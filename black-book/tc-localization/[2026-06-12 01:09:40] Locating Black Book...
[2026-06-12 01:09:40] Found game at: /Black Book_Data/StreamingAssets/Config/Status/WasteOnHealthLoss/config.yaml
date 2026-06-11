@@ -1,0 +1,5 @@
+﻿Unique: true
+Name: Горящая кровь
+Description: Порча на врагах увеличивается на {Duration} при каждой потере здоровья
+Sprite: StatWasteOnHealthLoss
+

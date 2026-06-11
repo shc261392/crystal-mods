@@ -1,0 +1,16 @@
+﻿Name: Могильные кости
+AbilityType: GRAVE_CLAWS
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: GRAVE_CLAWS
+GoldCost: 3
+Effects:
+- MinValue: 30
+  MaxValue: 50
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Word
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

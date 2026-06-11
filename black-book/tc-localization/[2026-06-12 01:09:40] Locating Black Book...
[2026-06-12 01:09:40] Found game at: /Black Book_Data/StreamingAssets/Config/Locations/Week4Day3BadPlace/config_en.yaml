@@ -1,0 +1,6 @@
+﻿Name: Bad Place
+Description: This morbid place is home to some sort of evil spirits, ancient ones at that. I can just feel it.
+LevelConfig:
+  Battle:
+    Name: Bad Chorts
+

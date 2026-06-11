@@ -1,0 +1,14 @@
+﻿IdName: Week2Day6ForestCut
+Name: Вырубка
+Description: Тут, говорят, разбойники лесом промышляли. Может, что о них узнать удастся.
+ShortQuestDescr: Узнать, что с бандитами
+Scene: Forest_4
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark2
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day6/ForestCut
+RequiredLocations:
+- Week2Day6Nekrasova
+Secondary: Week2Day6ForestCut
+

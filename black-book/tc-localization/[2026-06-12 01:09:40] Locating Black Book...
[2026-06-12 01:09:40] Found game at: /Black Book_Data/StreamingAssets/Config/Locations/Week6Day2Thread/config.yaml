@@ -1,0 +1,16 @@
+﻿IdName: Week6Day2Thread
+Name: Сожженные нити
+Description: Горелым от этого прохода пахнет. Че там Пряха, костры на Купалу тоже жгла, че ли?
+Scene: TkachihaEntry
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day2/Thread/Intro
+  Exploration: Week6Day2Thread
+  CameraOverride: CMTonelsCamera4
+  MusicOverride: event:/Music/ExploreDark2
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week6Day2Web
+HideBook: true
+

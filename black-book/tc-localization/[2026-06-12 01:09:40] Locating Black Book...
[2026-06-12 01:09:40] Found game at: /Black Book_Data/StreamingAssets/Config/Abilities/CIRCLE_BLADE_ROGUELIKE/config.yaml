@@ -1,0 +1,19 @@
+﻿Name: Лезвие круга
+AbilityType: CIRCLE_BLADE_ROGUELIKE
+AbilityBookPartType: KEY
+TargetType: ENEMY
+Sprite: CIRCLE_BLADE
+GoldCost: 42
+Effects:
+- EffectType: KRADA
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal6OrderBlack
+    MissTrigger: Seal6OrderBlack
+    WrapUpTime: 0.05
+    SkipReady: true
+  StatusEffectType: Suppressed

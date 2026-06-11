@@ -1,0 +1,11 @@
+﻿IdName: Week1Day7Fields
+Name: Ахматовские поля
+Description: Поля возле лога Ахматовой, посему и название такое получили. Его с выселок возделывают крестьяне.
+Scene: Fields
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day7/Fields
+RequiredLocations:
+- Week1Day7Poroshin
+

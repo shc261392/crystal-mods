@@ -1,0 +1,18 @@
+﻿Name: Сушеная пошибка
+InventoryItemName: DriedPoshibka
+Flavour: Пошибка у меня в животе была, так знахарка за три дня вылечила
+Sprite: IconDriedPoshibka
+Cost: 80
+Effects:
+  - Value: 1
+    Type: StatusImmunity
+    StatusName: Immunity
+    StringData: SpellDisease
+    StatusPermanent: true
+    StatusUnremovable: true
+  - Value: 1
+    Type: StatusImmunity
+    StatusName: Immunity
+    StringData: Paralize
+    StatusPermanent: true
+    StatusUnremovable: true

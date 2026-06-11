@@ -1,0 +1,17 @@
+﻿Name: Уразы +
+AbilityType: URAZI_UP
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: URAZI
+GoldCost: 8
+Effects:
+- MinValue: 20
+  MaxValue: 20
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

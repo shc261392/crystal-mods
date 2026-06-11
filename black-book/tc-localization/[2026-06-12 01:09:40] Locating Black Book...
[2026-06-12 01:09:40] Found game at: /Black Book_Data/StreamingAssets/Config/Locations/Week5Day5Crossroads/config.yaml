@@ -1,0 +1,13 @@
+﻿IdName: Week5Day5Crossroads
+Name: Михайловская росстань
+Description: Тут я проходила посвящение. Как будто уже сотня лет прошла, так все изменилось.
+Scene: CrossroadsExploration
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day5/Crossroads/Intro
+RequiredLocations:
+- Week5Day5KolvaFires
+OnomastikonItems:
+- Onomastikon/Encyclopedia/50
+

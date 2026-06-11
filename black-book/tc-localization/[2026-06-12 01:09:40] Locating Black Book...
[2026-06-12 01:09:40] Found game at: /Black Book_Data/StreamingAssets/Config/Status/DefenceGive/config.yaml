@@ -1,0 +1,6 @@
+﻿Unique: true
+Name: Оберег
+Description: Увеличивает <sprite name="Defence"> на {Duration} в начале хода
+Sprite: StatObereg
+DecreaseOnStartTurn: true
+

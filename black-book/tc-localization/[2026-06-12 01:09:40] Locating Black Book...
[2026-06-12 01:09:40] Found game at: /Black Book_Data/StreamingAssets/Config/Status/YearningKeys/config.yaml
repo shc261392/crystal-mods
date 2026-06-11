@@ -1,0 +1,6 @@
+﻿Unique: true
+Name: Тоска (ключи)
+Description: 'Уменьшает количество ключей, которые вы можете прочесть в свой ход на: {Duration}'
+Sprite: StatYearning
+Harmful: true
+

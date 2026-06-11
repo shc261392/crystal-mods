@@ -1,0 +1,18 @@
+﻿Name: Чертова дюжина
+AbilityType: THIRTEENTH_DEFENCE
+TargetType: ALL_ALLIES
+Intention: DEFENCE
+Sprite: THIRTEENTH_DEFENCE
+GoldCost: 3
+Effects:
+- EffectType: DEFENCE
+  MinValue: 13
+  MaxValue: 13
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 0.100000001
+    SkipReady: true
+

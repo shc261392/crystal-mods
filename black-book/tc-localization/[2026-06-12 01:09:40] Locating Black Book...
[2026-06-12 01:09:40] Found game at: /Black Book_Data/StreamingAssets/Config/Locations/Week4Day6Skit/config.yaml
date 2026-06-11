@@ -1,0 +1,33 @@
+﻿IdName: Week4Day6Skit
+Name: Пудьвинские скиты
+Description: Старые разрушенные избы. Вроде местные про скиты староверские упоминали...
+ShortQuestDescr: Найти незнакомца в скитах
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Бесы-пастыри
+    Enemies:
+    - Type: Leshak
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSmall
+    - Type: Demon
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day6/Skit/Intro
+    Outro: TextQuest/Week4/Day6/Skit/Outro
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 3
+    PossiblePlayers:
+    - Demon
+    - Andropko
+    DialogueFoolWin: TextQuest/Durak/WinBattleUtil
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+LightingType: FOG_2
+RequiredLocations:
+- Week4Day6Creek
+Secondary: Week4Day6Skit
+

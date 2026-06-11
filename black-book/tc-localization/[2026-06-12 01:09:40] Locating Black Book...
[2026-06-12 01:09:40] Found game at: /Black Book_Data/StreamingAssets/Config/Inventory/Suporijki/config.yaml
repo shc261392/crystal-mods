@@ -1,0 +1,13 @@
+﻿Name: Супорыжки
+InventoryItemName: Suporijki
+Type: Herb
+Flavour: Запасливые хозяева при постройке мельницы, где будет дверь, зарывали три супорыжки
+Sprite: Suporijki
+Expendable: true
+Cost: 60
+Effects:
+- Value: 1
+  Type: Status
+  StatusName: Zachurat
+  StatusPermanent: true
+

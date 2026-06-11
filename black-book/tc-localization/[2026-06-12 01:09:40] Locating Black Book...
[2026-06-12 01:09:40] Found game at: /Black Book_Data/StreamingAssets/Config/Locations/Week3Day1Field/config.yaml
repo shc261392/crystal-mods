@@ -1,0 +1,13 @@
+﻿IdName: Week3Day1Field
+Name: Дорога к могиле
+Description: Через поле нужно пройти, к островку деревьев.
+Scene: FieldEvening
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Exploration: Week3Day1Field
+  NoExplorationMusic: true
+RequiredLocations:
+- Week3Day1Backyard
+OnomastikonItems:
+- Onomastikon/Songs/1
+

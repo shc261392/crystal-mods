@@ -1,0 +1,11 @@
+﻿Name: Волхидные записи
+InventoryItemName: Volhid
+Flavour: Он старик волхидной, может че и сделать с человеком, а может и поладить
+Sprite: IconVolhid
+Cost: 300
+Effects:
+  - Value: 4
+    Type: StatusOnBattleStart
+    StatusName: Vampirism
+  - Value: 4
+    Type: HealMultiplier

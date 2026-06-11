@@ -1,0 +1,15 @@
+﻿IdName: Week1Day3Tarakan
+Name: Дом у реки Таракановки
+Description: Мальчишки рассказывали про какой-то страшный заброшенный дом на западе от Янидора. Может, что ценное там удастся сыскать?
+ShortQuestDescr: Заброшенный дом
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/ExploreDark2
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day3/Tarakan
+LightingType: DARK
+RequiredLocations:
+- Week1Day3NorthWood
+Secondary: Week1Day3Tarakan
+

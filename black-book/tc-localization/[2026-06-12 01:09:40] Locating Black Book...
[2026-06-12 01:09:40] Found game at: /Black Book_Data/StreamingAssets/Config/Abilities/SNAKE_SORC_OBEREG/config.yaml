@@ -1,0 +1,16 @@
+﻿Name: Бесам – защита
+AbilityType: SNAKE_SORC_OBEREG
+TargetType: ALL_ALLIES
+Intention: DEFENCE
+Sprite: SNAKE_SORC_OBEREG
+GoldCost: 3
+Effects:
+- EffectType: DEFENCE
+  MinValue: 30
+  MaxValue: 30
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    WrapUpTime: 2
+    SkipReady: true

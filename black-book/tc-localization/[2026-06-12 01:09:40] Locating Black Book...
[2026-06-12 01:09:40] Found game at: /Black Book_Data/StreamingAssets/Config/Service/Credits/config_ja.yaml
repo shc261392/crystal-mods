@@ -1,0 +1,998 @@
+﻿StartingElements:
+- Name: Morteshka
+  Title: Game developed by
+- Name: Vladimir Beletsky
+  Title: Game Design & Writing
+- Name: Ildar Alimov
+  Title: Art Direction
+- Name: Andrey Khudozhidkov
+  Title: Programming
+- Name: Mikhail Shvachko
+  Title: Music & Sound Design
+- Name: Darya Solonets
+  Title: Animation
+Developers:
+  Header: Development Team
+  People:
+  - Name: Vladimir Beletsky
+    Titles:
+    - Title: Game Design
+    - Title: Project Management
+    - Title: Programming
+    - Title: Writing
+    - Title: Additional Art
+    - Title: Porting to Consoles
+  - Name: Ildar Alimov
+    Titles:
+    - Title: Art Direction
+    - Title: Environment
+    - Title: Characters
+  - Name: Andrey Khudozhidkov
+    Titles:
+    - Title: Programming
+    - Title: Porting to Consoles
+  - Name: Mikhail Shvachko
+    Titles:
+    - Title: Music
+    - Title: Sound Design
+    - Title: Voices of Demons
+  - Name: Darya Solonets
+    Titles:
+    - Title: Animation
+  - Name: Sergey Bikeev
+    Titles:
+    - Title: Quality Control
+  - Name: Konstantin Shumov
+    Titles:
+    - Title: Scientific Consulting
+    - Title: Entries in Onomasticon
+  - Name: Ivan Seliverstov
+    Titles:
+    - Title: Editing and Correction of Russian Texts
+  - Name: Anatoly Nelyubin
+    Titles:
+    - Title: English Translation
+  - Name: Timothy Sean Ray
+    Titles:
+    - Title: Editing of English Texts
+  - Name: Juila Kosykh
+    Titles:
+    - Title: Community Management
+  - Name: Elena Kononenko
+    Titles:
+      - Title: Additional Portraits
+  - Name: Roman Bamburin
+    Titles:
+      - Title: Introduction Video
+  - Name: Evgeny Yarovoy
+    Titles:
+      - Title: Modelling and Shading for
+      - Title: Introduction Video
+  - Name: Utelo
+    Titles:
+      - Title: Additional Sounds        
+HypetrainLogo:
+  Sprite: HypetrainCreditsLogo
+Publishers:
+  Header: Publishing Team
+  People:
+  - Name: Alexey Mikhailov
+    Titles:
+    - Title: Founder
+  - Name: Ivan Belousov
+    Titles:
+    - Title: Head of Publishing Division
+  - Name: Leo Hellenbrand
+    Titles:
+    - Title: Producer
+  - Name: Alina Petrosova
+    Titles:
+    - Title: PR-manager
+Music:
+  Header: Music
+  People:
+  - Name: Folk Songs
+    Titles:
+    - Title: Performed by Studen Choir
+    - Title: of Perm College of Arts and Culture
+    - Title: Conducted by Larisa Beletskaya
+RussianVoiceover:
+  Header: Russian Voiceover - GamesVoice
+  People:
+    - Name: Yaroslav Egorov
+      Titles:
+        - Title: Scoring Curator
+        - Title: Sound Engineer
+        - Title: Casting
+    - Name: Sergey Petrov
+      Titles:
+        - Title: Voiceover Director
+    - Name: Igor Popov
+      Titles:
+        - Title: Voiceover Director
+    - Name: Victor Voron
+      Titles:
+        - Title: Voiceover Director
+    - Name: Filip Robozerov
+      Titles:
+        - Title: Additional Casting
+    - Name: Alexander Kiselev
+      Titles:
+        - Title: Text Programmer
+    - Name: Vladimir Vorobyev
+      Titles:
+        - Title: Text Cleanup
+    - Name: Ravencat
+      Titles:
+        - Title: Voiceover Studio
+    - Name: Christina Sherman
+      Titles:
+        - Title: Vasilisa
+    - Name: Sergey Chikhachev
+      Titles:
+        - Title: Old Egor
+    - Name: Alexey Nikitin
+      Titles:
+        - Title: Storyteller
+    - Name: Sergey Ponomarev
+      Titles:
+        - Title: Nikolay
+    - Name: Ivan Kalinin
+      Titles:
+        - Title: Proshka
+        - Title: Sergey Nicolaevich
+        - Title: Hell-written Demon
+    - Name: Leonid Belozorovich
+      Titles:
+        - Title: Levonty
+    - Name: Daniil Eldarov
+      Titles:
+        - Title: Karnysh
+    - Name: Alexander Skidanov
+      Titles:
+        - Title: Alexander
+    - Name: Mikhail Georgiou
+      Titles:
+        - Title: Satan
+        - Title: Mikhail Nikiforovich
+        - Title: Bald Drowner
+        - Title: Salt Bearer
+    - Name: Mikhail Kryanin
+      Titles:
+        - Title: Pahom
+    - Name: Alyona Andronova
+      Titles:
+        - Title: Mermaid Evdokiya
+    - Name: Viktor Rechkalov
+      Titles:
+        - Title: Peasant 1
+        - Title: Ferbanks
+    - Name: Alexander Gavrilin
+      Titles:
+        - Title: Prince Sitri
+        - Title: Book Keeper
+    - Name: Konstantin Fedoseev
+      Titles:
+        - Title: Storyteller during intro and outro
+        - Title: Peasant 2
+    - Name: Viktor Mamonov
+      Titles:
+        - Title: Efim
+    - Name: Vladimir Konev
+      Titles:
+        - Title: Vakul
+    - Name: Alexander Kovrizhnykh
+      Titles:
+        - Title: Filimon the Shepard
+        - Title: Fedka
+        - Title: Ovinnik
+        - Title: Brigand
+    - Name: Nikolay Zozulin
+      Titles:
+        - Title: Unholy Spirit
+        - Title: Smart Drowner
+    - Name: Zoya Yudina
+      Titles:
+        - Title: Bath Bride
+    - Name: Andrey Waltz
+      Titles:
+        - Title: Airat
+    - Name: Pyotr Kovrizhnykh
+      Titles:
+        - Title: Petka
+        - Title: Salt Brewer
+        - Title: Iliya
+        - Title: Weaver Demon
+    - Name: Valery Storozhik
+      Titles:
+        - Title: Peasant 3
+        - Title: Andromalius
+        - Title: Priest
+        - Title: Miller
+        - Title: Paper Seller
+    - Name: Vladimir Antonik
+      Titles:
+        - Title: Father Efrem
+        - Title: Samson
+        - Title: Peasant 4
+        - Title: Gates of Hell
+        - Title: Peddler
+    - Name: Victoria Shanina
+      Titles:
+        - Title: Spinner
+    - Name: Igor Popov
+      Titles:
+        - Title: Luvezelko
+        - Title: Prokopy
+        - Title: Butler Demon
+        - Title: Peasant 5
+    - Name: Aliya Nasyrova
+      Titles:
+        - Title: Marfa
+        - Title: Bride Friend 1
+        - Title: Crazy Woman
+        - Title: Sick Girl
+        - Title: Young Folk
+        - Title: Uglans
+    - Name: Tatyana Argunova
+      Titles:
+        - Title: Anisya Ivanovna
+        - Title: Beggar
+        - Title: Nurse
+    - Name: Nina Bereng
+      Titles:
+        - Title: Akulina
+        - Title: Nemzya Girl
+    - Name: Evgeny But-Gusaim
+      Titles:
+        - Title: Thirteenth Brother
+        - Title: Evil Priest
+    - Name: Natalia Kaznacheeva
+      Titles:
+        - Title: Death
+        - Title: Agafia Filippovna
+        - Title: Evdokiya Fokovna
+    - Name: Maria Fortunatova
+      Titles:
+        - Title: Obderiha
+        - Title: Bride Friend 2
+        - Title: River Mermaid
+    - Name: Ilya Slyudachev
+      Titles:
+        - Title: Fisher
+        - Title: Mikolka
+    - Name: Olga Zubkova
+      Titles:
+        - Title: Lihoradka
+        - Title: Galina
+        - Title: Herbalist 1
+    - Name: Andrey Mishutin
+      Titles:
+        - Title: Efrem
+        - Title: Beekeeper
+        - Title: Lower Leshy
+        - Title: Bannik
+        - Title: Polevoy
+        - Title: Demon 1
+        - Title: Bellman
+    - Name: Alexey Gneushev
+      Titles:
+        - Title: Andreyko
+        - Title: Peasant 6
+        - Title: Peasant 7
+        - Title: Tihon
+    - Name: Irina Protasova
+      Titles:
+        - Title: Maryushka
+    - Name: Mikhail Glushkovsky
+      Titles:
+        - Title: Mechanic
+        - Title: Werewolf
+        - Title: Soldier Chort
+        - Title: Elder
+        - Title: Policeman
+        - Title: Blacksmith
+        - Title: Upper Leshy
+        - Title: Demon 2
+    - Name: Andrey Kazakov
+      Titles:
+        - Title: Dyak Savely
+    - Name: Alexander Kasparov
+      Titles:
+        - Title: Peasant 8
+        - Title: Horned One
+    - Name: Ruta Novikova
+      Titles:
+        - Title: Peasant 1
+        - Title: Aksinya
+        - Title: Townswoman 2
+        - Title: Peasant 3
+        - Title: Herbalist 2
+    - Name: Artem Yaksanov
+      Titles:
+        - Title: Fire Snake
+    - Name: Konstantin Romanenko
+      Titles:
+        - Title: Terenty
+        - Title: Student Chort
+    - Name: Maxim Lukin
+      Titles:
+        - Title: Bes
+    - Name: Maxim Popkov
+      Titles:
+        - Title: Drinking House Guard
+    - Name: Igor Staroseltsev
+      Titles:
+        - Title: Snake Sorcerer
+    - Name: Dmitry Medvedenko
+      Titles:
+        - Title: Piere
+EnglishVoiceover:
+  Header: English Voiceover
+  People:
+    - Name: Kristina Sherman
+      Titles:
+        - Title: Vasilisa
+        - Title: Lihoradka
+        - Title: Herbalist 1
+    - Name: Sergey Chikhachev
+      Titles:
+        - Title: Old Egor
+    - Name: Adam James Muskin
+      Titles:
+        - Title: Storyteller
+    - Name: Sergey Ponomarev
+      Titles:
+        - Title: Nikolay
+        - Title: Levonty
+        - Title: Satan
+        - Title: Thirteenth Brother
+        - Title: Soldier Chort
+        - Title: Peasant 1
+        - Title: Elder
+        - Title: Snake Sorcerer
+        - Title: Peddler
+    - Name: Ivan Chaban
+      Titles:
+        - Title: Proshka
+        - Title: Alexander
+    - Name: Dmitry Medvedenko
+      Titles:
+        - Title: Pahom
+        - Title: Storyteller during intro and outro
+        - Title: Filimon the Shepard
+        - Title: Samson
+        - Title: Pier
+        - Title: Fisher
+        - Title: Sergey Nicolaevich
+        - Title: Mikolka
+        - Title: Peasant 2
+        - Title: Priest
+        - Title: Miller
+        - Title: Peasant 3
+        - Title: Terenty
+        - Title: Beekeeper
+        - Title: Upper Leshy
+        - Title: Bes
+    - Name: Ksenia Berelet
+      Titles:
+        - Title: Mermaid Evdokiya
+        - Title: Marfa
+        - Title: Bath Bride
+        - Title: Evodkiya Fokovna
+        - Title: Peasant 1
+        - Title: Bride Friend 1
+        - Title: Crazy Woman
+        - Title: Sick Girl
+        - Title: Townswoman 1
+        - Title: Aksinya
+        - Title: Peasant 2
+        - Title: Young Folk
+        - Title: Peasant 3
+        - Title: Uglan
+        - Title: Herbalist 2
+    - Name: Jerry Lenin
+      Titles:
+        - Title: Karnysg
+        - Title: Peasant 4
+        - Title: Hell-written Demon
+        - Title: Ferbanks
+    - Name: Maxim Popkov
+      Titles:
+        - Title: Father Efrem
+        - Title: Peasant 5
+        - Title: Fedka
+        - Title: Mikhail Nikiforovich
+        - Title: Efrem
+        - Title: Andreyko
+        - Title: Peasant 6
+        - Title: Policeman
+        - Title: Salt Brewer
+        - Title: Evil Priest
+        - Title: Bannik
+        - Title: Tihon
+        - Title: Demon 1
+    - Name: Mikhail Khrustalev
+      Titles:
+        - Title: Efim
+        - Title: Vakul
+        - Title: Mechanic
+        - Title: Dyak Savely
+        - Title: Werewolf
+        - Title: Bald Drowner
+        - Title: Gates of Hell
+        - Title: Salt Bearer
+        - Title: Brigand
+    - Name: Margaret Korsch
+      Titles:
+        - Title: Spinner
+        - Title: Anisya Ivanovna
+        - Title: Akulina
+        - Title: Death
+        - Title: Obderiha
+        - Title: Agafia Filippovna
+        - Title: Maryushka
+        - Title: Nemzya Girl
+        - Title: Galina
+        - Title: Beggar
+        - Title: Bride Friend 2
+        - Title: Nurse
+    - Name: Alexander Gavrilin
+      Titles:
+        - Title: Prince Sitri
+        - Title: Demon 2
+        - Title: Book Keeper
+    - Name: Igor Popov
+      Titles:
+        - Title: Luvezelko
+        - Title: Prokoly
+        - Title: Butler Demon
+        - Title: Paper Seller
+        - Title: Blacksmith
+        - Title: Peasant 7
+    - Name: Nikolay Zozulin
+      Titles:
+        - Title: Unholy Spirit
+        - Title: Lower Leshy
+        - Title: Demon Student
+        - Title: Illya
+    - Name: Pyotr Kovrizhnykh
+      Titles:
+        - Title: Petka
+        - Title: Peasant 8
+        - Title: Airat
+        - Title: Andromalius
+        - Title: Bellman
+    - Name: Nikita Karikov
+      Titles:
+        - Title: Ovinnik
+        - Title: Fire Snake
+        - Title: Polevoy
+        - Title: Horned One
+        - Title: Weaver Demon
+    - Name: Alexandra Kijaeva
+      Titles:
+        - Title: River Mermaid
+        - Title: Townswoman
+ChineseLocalization:
+  Header: Simplified Chinese Localization
+  People:
+    - Name: Albert Wei
+      Titles:
+        - Title: Localization Lead
+    - Name: Carl Du
+      Titles:
+        - Title: Localization
+    - Name: Sharon Shao
+      Titles:
+        - Title: Localization
+    - Name: Yiling Tang
+      Titles:
+        - Title: Localization
+    - Name: Hannah Lu
+      Titles:
+        - Title: Proofreading
+    - Name: 鬼翅融
+      Titles:
+        - Title: Proofreading
+JapaneseLocalization:
+  Header: Japanese Localization
+  People:
+    - Name: Iori Honda
+      Titles:
+        - Title: Localization
+    - Name: Hitomi Yamamura
+      Titles:
+        - Title: Localization
+    - Name: Masaru Funahashi
+      Titles:
+        - Title: Localization
+    - Name: Rie Ihara
+      Titles:
+        - Title: Localization
+    - Name: Slack
+      Titles:
+        - Title: Localization
+SuperBackers:
+  Name: Super-Backers
+  Titles:
+    - Title: Aaron Bennett
+    - Title: Aaron Van K
+    - Title: Abdiel Diesra
+    - Title: Adam Fox, Samantha Fox
+    - Title: Adekola Omole
+    - Title: Aisha Laury, Lucas Heinsheimer
+    - Title: AJ
+    - Title: Alejandro Fernández V
+    - Title: Aleksei Safin
+    - Title: Aleksey "svchk" Pazdnikov
+    - Title: Alex LeAnnais
+    - Title: Alexander Bazhan
+    - Title: Alexander Rinck
+    - Title: Alexandra Muryzhnikova, Jaroslav Muryzhnikov
+    - Title: Alexandra Vanzo; Shannon Corcoran
+    - Title: Alexandria Lennox
+    - Title: Alfinfrance
+    - Title: Alice Still
+    - Title: Aliza Hasan, Alex Sennert
+    - Title: Amanda Duke Or Aisling O’Grogan
+    - Title: Amanda Searle
+    - Title: Amberestelle
+    - Title: Amy Selwach, John Selwach
+    - Title: Anders 'Ray' Skrydstrup
+    - Title: Andrea Batchelor
+    - Title: Andrea Sorcinelli
+    - Title: Andrew & Alexis Molnar-Ortiz
+    - Title: Anna Dake
+    - Title: Anthony “DO$” Dean
+    - Title: Antoine Port
+    - Title: Anton "Homyakin" Lavrentev
+    - Title: Anton Golukhov
+    - Title: Anya Lee
+    - Title: Apocripheri , Borlmax
+    - Title: Art Belov
+    - Title: Arthur Miner
+    - Title: Ash Monogue
+    - Title: Ashley Turcotte
+    - Title: August Haas
+    - Title: Aurelio Carballeda Estévez
+    - Title: Autumn Kaviak
+    - Title: Averie Lustremoore
+    - Title: Bayrae, Rachael Vessar
+    - Title: Beau Schuette
+    - Title: Becca (tagrberry)
+    - Title: Becca Geoppinger Bryan
+    - Title: Becky Deihl
+    - Title: Benjamin James Taylor
+    - Title: Benny McFalls
+    - Title: Bethany Sromovsky
+    - Title: Betsy - The Wandering Chaos
+    - Title: Billie Brisbane Collet
+    - Title: Binnorie Minnorie (Ryan Cahill)
+    - Title: Blair Younghusband
+    - Title: Blatherbeard
+    - Title: Bloodripk, Caleb Reep
+    - Title: Boyd Critz V
+    - Title: Brad Maestas
+    - Title: Brandon C
+    - Title: Brandon Craft
+    - Title: Brandon Evans
+    - Title: Brandon Fox & Lisa Quinley
+    - Title: Brandy Nobles
+    - Title: Brezelkorb
+    - Title: Brian Daniel
+    - Title: Brittany Faulkner
+    - Title: Bubba <3 Linda
+    - Title: C. Emmett
+    - Title: Caidi Zariya Hodge
+    - Title: Caleb and Emilee
+    - Title: Caleb Busby
+    - Title: Caligneous
+    - Title: Carolyn Wise
+    - Title: Casey Bonno
+    - Title: Charles D. Moisant (silverphoenix.net)
+    - Title: Charles Vincent-Barr
+    - Title: Chelsea Atherton
+    - Title: Christabella Humphryes
+    - Title: Christel Bertemes-Henchoz
+    - Title: Christer "SwedishKiwiGuy" Eriksson, Mia "Morana" Lovatt
+    - Title: Christopher Bryan McCarthy II
+    - Title: Christopher Cotto
+    - Title: Christopher Gardner & Michael Lloyd
+    - Title: Christopher Helmke
+    - Title: Christopher ROUZIER
+    - Title: Christopher Wilkinson
+    - Title: Christopher Wolf
+    - Title: Clint Gamble/GumblePlays
+    - Title: CM Healy
+    - Title: Cody J Garcia
+    - Title: Collin Smith
+    - Title: Commakazi1 & The_Fruit_Slicer
+    - Title: Connor "Makuta" Romanic
+    - Title: Connor M. Pfisterer
+    - Title: Corbineau Alexandre
+    - Title: Corey Grimes and René Grimes
+    - Title: Cori Bennett
+    - Title: Corinne McDonald and The Wayfinder Experience
+    - Title: Cory "LateNightHunter" Grant
+    - Title: Courtney Guagliardo
+    - Title: Craig Watcher
+    - Title: Odile Purcell O’Byrne
+    - Title: Crystal Przybyciel
+    - Title: Cygany Toravich
+    - Title: D&D Polsky
+    - Title: D.J. Cole
+    - Title: Dallas Crow
+    - Title: Daniel Ortiz
+    - Title: Daria & Hayden
+    - Title: Daria Smirnova
+    - Title: David Altier
+    - Title: David BeCam
+    - Title: David Cooke
+    - Title: David Lee
+    - Title: David Lee Wenberg
+    - Title: David Lopez
+    - Title: Dawn Upson
+    - Title: Dean D Flyte
+    - Title: Dean Michael Bazzani
+    - Title: Den Yarullin (mforv)
+    - Title: Derek Chapman
+    - Title: Des
+    - Title: Devan Asbell
+    - Title: Devin Rust, Zodrician
+    - Title: Devonte Billiter
+    - Title: Diem-Sylvan Von-Pratt
+    - Title: Dominic Rumsey
+    - Title: Don Chaneaux
+    - Title: Dr. Peter T. De Simone
+    - Title: Dylan McAdam
+    - Title: Edwin Payne
+    - Title: Elaine Barlow
+    - Title: Ember James, Surtr Ledrhals
+    - Title: Emelie Haigh
+    - Title: Emilie Wyqued
+    - Title: Emily Rose Daniels
+    - Title: Emily Sandoval
+    - Title: Emily Strong
+    - Title: EP Eriksson
+    - Title: Erik Michael Martinez
+    - Title: Erin Garrett
+    - Title: Ethan Barnes
+    - Title: Ethan Crace
+    - Title: EthericMaahes
+    - Title: Eva Merete Bang
+    - Title: Ezekiel Vizzer
+    - Title: Faithfulkitsune
+    - Title: FLETCHER xD
+    - Title: Galina Murina
+    - Title: Garpid
+    - Title: Garrett Silvers Credits( Id like Mirania in-Game)
+    - Title: Genevieve Greystern
+    - Title: Gerivaereth & Luna
+    - Title: Giovanni Valentino
+    - Title: Grave Indignation
+    - Title: Grayson Vangeloff, Y.V. Vangeloff
+    - Title: Greg Principato & Rebecca Strang
+    - Title: Griffin
+    - Title: Guardian Gerald the Yle
+    - Title: Gwendolyn
+    - Title: Hallie Walck
+    - Title: Hannah G.
+    - Title: Hannelore Mattausch
+    - Title: HarleyDave
+    - Title: Harmony Schmitt
+    - Title: HASTUR THE YELLOW DOG
+    - Title: Hattrixn
+    - Title: Heather C
+    - Title: Heather Ceana Craig
+    - Title: Heather Clay
+    - Title: Heather Floyd
+    - Title: Héctor R. A. - Mariam B. C.
+    - Title: HeroOfTheKing
+    - Title: HODL
+    - Title: Hub Kusters
+    - Title: Hugo Raven
+    - Title: Hurri Cain
+    - Title: Ian
+    - Title: Ian Caudill
+    - Title: Ice Satyr
+    - Title: Ido Schwartz
+    - Title: Indy Saggu
+    - Title: Irina & Randall Dorn
+    - Title: Ironwing Icarus
+    - Title: Isaac Lee
+    - Title: Issa Kabeer
+    - Title: Jacalyn Letzler
+    - Title: jace esseln and mason herron
+    - Title: Jack Coleman
+    - Title: Jacob H or Jake the Dawg⁷
+    - Title: Jacquelynn and Anthony Nigro
+    - Title: Jake Spies
+    - Title: Jamie Dubiak
+    - Title: Jamie Hewitt
+    - Title: Jared Epstein
+    - Title: Jasmine Simone
+    - Title: JD - ParkedHampster
+    - Title: Jeanine Davi
+    - Title: Jeff Bryer
+    - Title: Jeff Lininger
+    - Title: Jeff Muse & Ginnie German
+    - Title: Jemalie Regier
+    - Title: Jen & Mike Starfury
+    - Title: Jerod L Reyes
+    - Title: Jesse Hatfield
+    - Title: Jessica and Christian
+    - Title: Jessica Yaschur, Patricia Mara
+    - Title: Joe Chan
+    - Title: Joey Magnuson
+    - Title: Johannes Paulus Cornelis Wiggers
+    - Title: John "GamerMind" Löfvenius
+    - Title: John A. Blue / Иван синий
+    - Title: John T Morton
+    - Title: Johnathan Scanlon
+    - Title: Jonathan "AngelusDaeva" Ambriz
+    - Title: Jonathan Kade
+    - Title: Joost Vaneker
+    - Title: Jordan carter
+    - Title: Joseph ONeal
+    - Title: Josh Lowry
+    - Title: Joshua Camp
+    - Title: Joy L.
+    - Title: Julani Erentusk
+    - Title: Justin Edenfield (Tacklebox82)
+    - Title: K.J. Brule
+    - Title: Kaela Woolsey
+    - Title: Kai Hansen
+    - Title: Kamil Knapczyk
+    - Title: Karguer
+    - Title: Kat McDonald
+    - Title: Kati Stunkard and/or Kati Venneman
+    - Title: Katie Moore
+    - Title: Katrina Kanski
+    - Title: Katya Burns
+    - Title: Kayden MacKay
+    - Title: Kellen Lucas
+    - Title: Kelly “Buggs” Budd
+    - Title: Kelly John Cooke
+    - Title: Kelson Astley
+    - Title: Kiet Tran Ho
+    - Title: KingDuck
+    - Title: Koop
+    - Title: Kori Kasai, Bryce Bell
+    - Title: Kreendar Baere
+    - Title: Krista & Shannon & Robyn
+    - Title: kyton786
+    - Title: Laura Beth Davis
+    - Title: LauraJane and Mr. Cyne
+    - Title: LEBuwu
+    - Title: Lenan of the Black Rose
+    - Title: Libbi Ghost
+    - Title: Lin - [xypt]
+    - Title: Lollix Phase
+    - Title: LordOrgodemir
+    - Title: Luca DeXter Mazzoleni
+    - Title: Luke “Badger” Smith. And Ruby “Roo” Lister
+    - Title: Lux de Lumine
+    - Title: Lysoria
+    - Title: Magdalena Kessler
+    - Title: Maha
+    - Title: Marcus Yancey; Knotty Productions
+    - Title: Marie-Catherine Gagnon
+    - Title: Mario K Sasso
+    - Title: Marr-Randall Umali
+    - Title: Martha Downey
+    - Title: Marty Chodorek
+    - Title: Marvin "Angus" Haworth
+    - Title: Mathspy
+    - Title: Matt B
+    - Title: Matthew "Drank Bong Water" Gaddie
+    - Title: Matthew Gorsky
+    - Title: Matthew Wayne
+    - Title: Maurizio Sadutto
+    - Title: Max Reinhold
+    - Title: Maximilian Mantz
+    - Title: Megan Dobrovics
+    - Title: meifish
+    - Title: metashurick
+    - Title: Michael Baker
+    - Title: Michael E. Torres II and Ivaniel Reyes
+    - Title: Michael Gaddie
+    - Title: Michael Lane Thompson
+    - Title: Michael Oncken
+    - Title: Mika Adams; Sara Adams
+    - Title: Mike Armour
+    - Title: Mike Danylchuk
+    - Title: Mikhail Trifonov
+    - Title: Milena&Myles
+    - Title: Mindy Graves
+    - Title: Misha Latyshev
+    - Title: Morgan Childs
+    - Title: Mr. Hector Geoffrey Dokopoulos Hamilton
+    - Title: Mr.Z
+    - Title: Nakel Marissa
+    - Title: Nanash
+    - Title: Naomi S. Cahn
+    - Title: Nathan Huffman
+    - Title: Nathanael Marquardt
+    - Title: Nausikah
+    - Title: Nazih "King Ozimandus" Fares
+    - Title: Nelrom
+    - Title: Nerdyglitterbug
+    - Title: Nick Fazio
+    - Title: Nicolas Gengler
+    - Title: Nicole Stanford
+    - Title: Nicole Terc
+    - Title: Nikita Shpakov aka Giltanas
+    - Title: Nikolai Grigorevich Petrov
+    - Title: Nini / оранжевый
+    - Title: Novikov Sergey, Innok
+    - Title: Nuppmiddt
+    - Title: OBraveLadyRobin
+    - Title: Paolino Maisto
+    - Title: Patrick Bicket
+    - Title: Patrick Ervin
+    - Title: Patrick Hamilton
+    - Title: Patrick Line, Jason James
+    - Title: Patrick McCall
+    - Title: Patrick 'Wyscot' McConnell
+    - Title: Paul Dulski | Everything Horror Podcast
+    - Title: Payton Weber
+    - Title: Peter "Panda" Esslinger
+    - Title: Peter H. K. Louis
+    - Title: PhaedraLyn and CodesX100
+    - Title: Philipp Einheuser ( Àrvalin )
+    - Title: Phill
+    - Title: Phillip Tran / Briar Stone
+    - Title: Piotr Kociubiński
+    - Title: pointingdevice
+    - Title: Pompedus
+    - Title: prof_scratch
+    - Title: R.D. DeMoss
+    - Title: Radek Richtr
+    - Title: Radu Tanasie
+    - Title: Raelee
+    - Title: Rafa "Da Turtle" Sampang
+    - Title: Rainy Rabbit
+    - Title: Ramiro Flores
+    - Title: Ratibor Kri
+    - Title: Ravenna Degenaro
+    - Title: Rayen Jonke
+    - Title: Razzle and Wraith Nephilidus
+    - Title: RC
+    - Title: Redbeard Sean O'Leary
+    - Title: RedTuesday666
+    - Title: Reijo-Kalevi Chen + Garrison Copeland
+    - Title: Renmeleon
+    - Title: Rew King
+    - Title: Robert
+    - Title: Robert Alexandar Holbrook
+    - Title: Robert Simms
+    - Title: Robin J
+    - Title: Roman & Maya
+    - Title: Russell Lim Chee Phung
+    - Title: Ryan Garcia or Zoskian
+    - Title: Ryan Garner
+    - Title: Ryan Harrison Breuer
+    - Title: S A Frollo
+    - Title: S. E. A.
+    - Title: Sabina Lind-Åkerblom
+    - Title: Sade Kondelin
+    - Title: Saleana Judd, BR0WNC0AT13
+    - Title: Sam Frasier
+    - Title: Samuel "Salem" Williams
+    - Title: Sara Boone
+    - Title: Sarah Nevling
+    - Title: Sarina
+    - Title: Scott Born and Josh Bull
+    - Title: Sean McLoughlin
+    - Title: Sean Vi
+    - Title: Sean Watson
+    - Title: SebasDThamuz
+    - Title: Sena Sarwari
+    - Title: Sergey Chapaev
+    - Title: Sergey Koptev
+    - Title: Sergey Kudria
+    - Title: Sergey Morozov
+    - Title: Shane & Madra
+    - Title: Shane William Cutlip
+    - Title: Sho Endo
+    - Title: Sir Aaron of Clan Shaefer; Aaron Shaefer
+    - Title: SirFlipsALot
+    - Title: Sisifo Renner, Jonathan Renner
+    - Title: Stefania Bertucci
+    - Title: Stephan Vladimir Bugaj
+    - Title: Stephanie Royer
+    - Title: Stephen Funk
+    - Title: Steve Bracco
+    - Title: Steven (Realmers) Alexander
+    - Title: Sunil Jethwa
+    - Title: SuvorovTV
+    - Title: Sven Vdv
+    - Title: Sylionis
+    - Title: TalisX
+    - Title: Tamara Turton
+    - Title: Tanya Kostochka
+    - Title: Tarak Oran (T.M. Smith)
+    - Title: Terry 'Doc' Jordan
+    - Title: The Mad Yokai
+    - Title: Tim Guy
+    - Title: Tim Kuter
+    - Title: Tim Totten
+    - Title: Tobias Hodges
+    - Title: Tobias Klopf, Lara Räth
+    - Title: Tom Kopczynski and Jennifer Allen
+    - Title: Val Štekláč
+    - Title: Valentina Andreevna
+    - Title: Vasilisa Pozdnyakova
+    - Title: Verbal Howitzer
+    - Title: Veronika Aifeld, Aonghas Shearer-Boyd
+    - Title: Victor "The152Cat" Campa
+    - Title: Victor Mark
+    - Title: Vladimir Dzundza
+    - Title: Vladislav "Belkins" Podolyako
+    - Title: Vladlen Manshin, Anastasiia Manshina
+    - Title: Waaslandwolfs
+    - Title: wangmauler
+    - Title: Warren Pope
+    - Title: Whiteglovesnsugarcubes, Lisa Duarte
+    - Title: Wil Bastion
+    - Title: Will P. Alfrigg
+    - Title: William Howard Slabe III
+    - Title: winged_crocodile
+    - Title: Wojciech Marian Czarnecki
+    - Title: Wqrwialka
+    - Title: Yevgeniya and Garrett
+    - Title: Zach Stables
+    - Title: Zhugobstuvie
+    - Title: Zing Moua
+    - Title: zoe of doom
+    - Title: Zoë Wissner
+    - Title: Zsolt Putnoki Agnes Putnoki
+    - Title: Zulamandi
+    - Title: Zybko and Bros. Band
+    - Title: Андрей Трубецкой
+    - Title: Владислав Леонтьев
+    - Title: Гоша Копьев
+    - Title: Грищ / TheGrishch
+    - Title: Дмитрий "handyfirst" Сухоручкин
+    - Title: Иван Тверды, Nekorais.
+    - Title: Леонид Плешкин, Полина Плешкина
+    - Title: Сергей Юлин, Sergey Yulin
+    - Title: Тимошенко Александр
+Backers:
+  Name: Backers
+  Titles:
+    - Title: "Modestas Micė, Detail, !nVeRT, \"Daniel Isaac George\", \"Dotheren Grey\", \"Sunraiser\" - April Lynne Robichaud, (ObrA), @allofthenorth, @elxris, @katekyonni, “Cheese, T.”, 1001cranes, 1st Name: MedDivine / 2nd Name: LordJohnny, 22011, 9thimmortal, A & J Hawks, A Dobosz, A. E. Moseley, A. Luhrsen, A.G., Aaron Cartterfield, Aaron Crow, Aaron Leong, Aaron W B, Aarron Phillips, aasimarr, Abdiel Casanas, Abi Dear, Abigail Bufkin, Abigail Marceluk Parker, Abigail Shepherd, Abraham Pernicka, Abygail & LexiBoop, AC, Accelerator Ray, Achamian, acolyte, ActurusX (Tobias Winter), Ada U, Adam, Adam & Michele, Adam B, Adam Bean, Adam Blair, Adam Carlson, Adam Flagg, Adam Hecl, Adam Holden, Adam Intriago, Adam K. Bogert, Adam Klagues, Adam Kutter, Adam M Shaw, Adam R, Adam Reynolds, Adam Sagefors, Adam Steere, Adam Teece, Adam Walton, Adam Zielinski, Adison Chang, Adrian Astley, Adrian Blötscher, Adrian Felix, Adrián Figueira, Adrián Letanec, Adrian Ramirez, Adrian Sobieszczak, Adrianna Tan, Adriano Valle, Adrien Nivaggioli, Adrienne Lee, Adrienne Rusinko, adventure21mc, AdventuRyn, Aeleshath, Aerissy, Agaton Vilfred Skantz, Agnes Crimson, Agnesiite, Aibaldy, Aida Baguette, Aidan Kirvan, Aidan Zingler, Aiglamion, Aika Shoji, Eduardo Elizarraraz, Aimee O., AJ Stidham, Akehir, Akemiapple, Akiko Elric, Al. W, Alai, Alain Wackbar, Alan Berfield, Alan Brent Cochran Bond, Alan Elford, Alan Southerill, Alaura Shefchik & Sam Butler, Albert “Bert” Garcia, Albert van Os, Alec James Radecki, Alejañdro, Alejandro Serrano, Aleks Jekic, Aleksandr Kovalev, Aleksei Ladanov (aka vonadala) feat. Evgeniia Ladanova & Liubov Ladanova, Aleksei LAS Lebedev, Aleksei Latypov, Alerian83, Alessandro Abbadini, Alessandro Settenvini, Alex, Alex \"flyer303\" T., Alex and Irina Neupert, Alex Astrox, Alex Atomoaie, Alex Balko, Alex Bell, Alex Boschmans, Alex Boshko, Alex Cahill, Alex Cromett, Alex Didenko, Alex et Romich, Alex F., Alex Fellman, Alex Figueroa, Alex Filimonov, Alex Koza, Alex Leong, Alex Maben, Alex Polozov, Alex Robinson, Alex Shalenko, Alex Steel, Alex Strapková, Alex Szenczy Nicehunter, Alex63, Alexa Justice, Alexander \"Thorandor\" Rehm, Alexander Aas, Alexander Galtsev, Alexander Iwanuch, Alexander Kasyanenko, Alexander Mejia, Alexander Moriarty, Alexander Ospin, Alexander Piletich, Alexander Rapohin, Alexander Shevchenko, Alexander Shibley, Alexander Smith, Alexander Stirling, Alexander Vasilyev (Или просто \"Васильев Александр\", если возможен русский вариант), Alexander Vogel, Alexander Waldren, Alexandr Tsvetkov (Александр Цветков), Alexandra Astafourova, Alexandra 'Blaqstone' Busch, Alexandra Borgzinner, Alexandra Jocic, Alexandra Lion, Alexandra Long, Alexandra Maevskaya, Alexandre Francoeur-Barbeau, Alexandre Jannuzzi, Alexandyr Rycroft, Alexei Lesnic, Alexei Madison, Alexey Ermoshkin, Alexey Reutov, Alexnadre Su, algorythm, Ali, Ali Thorngren, Alia Melange, Alice Mar, Alice Norton, Alicja Tamulewicz pcheła1980, Alieksij, alimaren, Alin R., Alisselisa, Alix Z, Alizandra Plantin >>Itzatribute<<, Alkazar, Allan Nørgaard Dinesen, Allan Part, Allen Sun, Allie Kieras, Allison Arthur, Allison Block, Allison Hetter, Allison Whitley, Alloran Deschain, AllTheKingsHam, Ally Hammond, Ally Webb, Allyson, Alok Baikadi, Alon Tsin, Alon Tsin, Aloys, Alpha Fox, Alton Capps, Alvin Wu, Alyssa Aileen Oliver, Alyssa Arce, Alyssa Neslusan, Michael McRae, Amabel Radleigh, Amac McCann, Amalija Vitezović & Mihajlo Vitezović, Amancio Cifuentes Fernández, Amanda and Jason Tryon, Amanda Billy, Amanda Dalton, Amanda J. Larkin, Amanda Kondrashova, Amanda Lea Erickson, Amanda McKinsey-Gholson, Amanda Perodeau, Amanda Turlington, Amaranth, Amawyn, Ambear, Amber Baron, Amber LaFille, Ambra Tieszen, amelia, Amelia B, Amelia Boots, Amelie Lamoureux, Amenich, AMKoenig, Amoebic, Amused Ace, Amy Barker, Amy Bill, Amy Bugg, Jake Woodman, Amy Denham, Amy Ngo, Amy Renaud, Amy Scerri - Malta, Ana, Ana Ovtcharova, Anastasia Radzievska, Anastasia S., Anastasios, Chung, Michael & Fran, Anastasiya D, And Bai, Ande Thomas, Anders Lerum Alme, Anders Svensson, Anderson McDuffee, André Boucher, Andre Gehlings, Andrea & Morgan Welker, Andrea (Faewyn) Plulikova, Andrea Galassi, Andrea GH, Andrea Migone, Andrea Tatjana, Andreas \"Skaw\" Maurer, Andrei Apanasik, Andrei Lavrenov, Andrei Vaganov, AndrejZ & Viktorija, Andres Ponte Perez, Andrew, Andrew \"The Golux\" Fitzgibbons, Andrew Bowers, Andrew Chida, Andrew Cook, Andrew Guarnaccia, Andrew Hauptman, Andrew J Wright, Andrew J. Petracca, Andrew Miner, Andrew Morris, Andrew Mosqueda-Jones, Andrew Nolan, Andrew O'Neil, Andrew Paschal, Andrew Peregrine, Andrew Richardson, Andrew Rockwell, Andrew SaT Shikhov, Andrew Suchy, Andrew Weiss, Andrew White (Andyanimates), Andrew Williams, Andrew Zaninovich, Andrey \"fR0z3nS0u1\" Boyarshinov, Andrey Dobrikov, Andrey Sitnik, Andrey Skripkin, Andrey Tkachenko, Andrey Tsvetkov, Andromeda Taylor-Wallace, Andry S.T (or just Andry), Andy Bradbury, Andy Cook, Andy Jones, Andy McGlinn, Andy S, Ángel Jiménez, Angela Hampton, Angelfrost, Angelica and Violet Alexander, Angelica Prichard, Angelique, Angelo R., Angus 'Cowbacca' Goldsmith, Anh Dang, Anias Fenne, Anick Lavictoire, Anika Immelman, AninA, Anna Bradley, Anna Brownlee, Anna Danielson, Anna Goldberg, Anna Kateryna, Anna Ognibene, Anna Stevens, Anna Yanushkevich, Anne and Joe, Anne Cooper, Anne McKee, Anne-Sophie Sicotte, Anni Banani, Annika, Anon E. Mouse, anonymous, anonymous, anonymous, Anonymous, Anonymous, Anonymous, Anrisa Ryn, Anthony Christou, Dean Hatedakis, Anthony F, Anthony Fissel, Anthony Haevermaet, Anthony Holabird and Monika Holabird, Anthony Machin, Anthony Thacker, Anton, Anton Fox, Anton Sergeev, Antoni Ferragut, Antonia Geiger, Antonio (Torko) Aletic, Antonis Koursoumis, Tony Dovar, apple, April Patch, Ara Wyer, Aradgaver, Arcel Guerra, Arden, Ardskel, Arec Rain, Arete No ; ibndoom, ARG Verret, Argama Witch, Argon, Ariel Martin, Ariel Twilight_Thorn, Arius Knight, Arlington Pike, Armani Lomax, Armeg, Arnaud Pagès, Arnaud Ramenos, Arnaud Satre-Buisson, Aroheim, Arran Weddle, Arsenic Wafer, Artem Holubiev, Artem Safarov, Arthur Natishan, Artur Somov (Der Artur), Arty Viaz, Artyom Demidovsky, Artyom Dubanov, Artyom Warlock, Arwyn Atreides, Ash, Ash (Pigeon), Ash Dietz, Ash Meisel, Ashe, Ashe Arala, Ashendark, Ashleigh G, Ashleigh Rogers, Ashley, Ashley 'Athenessa' Rust, Ashley Bonner, Ashley C, Ashley Coridan, Ashley Mae, Ashley Marsha, Ashley Nguyen, Ashley Novreske, Ashley Ortiz, Ashley Valencia, Ashley Warren, Ashton and Conrad Deemer, asodrober, ASR Gamers, astorminaugust, Astra Goblin, Atarnia, Athena Lategano, Atrolock, Atticus77, Audr Fox, Audrey Degiorgio, Audrey Lau, Audrey Sulkanen, Aurora Asteria, Aurora Rae, Aurora Smith, Aurore de la Ferte, Ausha, AussieATL, Austin Alexander, Austin Clark, Austin Hammond, Austin Matthews, Austin McKee, Austin Savarese, Austin Siagian, Autolycus, Autumn Brown, Ava Dahl, Ava Diskett, Ava Koponen, Avalon Feiler, AvalonInk, Averie Clifton, Averin & Devo, Avery Davenport, Avion Blackstone, Awkward Bun, Axel, Axel Lenard, Axel zd, Axon, Ayana DTS, Aydan Turner, Ayden Duarte, Ayden Exell, Aylan Sol, Aymeric Goutain, Ayuri, Azuaron, AzureXignus, B Oshust, B. T. Quiggins, Baba Yaga, BabushkaCCCP, BabyKosh, backbiter, badluckbread69, Bailey, Bailey Brewster, Balatkar, Balazs Fejes, Balint Erdos, Bara Stastna, Bára Vosátková, Barbara S, Barnaby O’Brien, Baron Batman, Baron Helix, Barry Switzer OU#1, Bartuof, Bastien Durel, Bastwood, BatFred, Batu., Bauchschuss_Bert, bea, Bear franklin, Beaushek, Beautiful Doubt, Bec A, Becca Freeman, Becky & Matt Straple-Sovers, Becky & Neil Courington, Becky Grace, Beh Kok Seng, Bekah D, Beks D, Bekah Walker, Believeshdow Gaming, Ben \"Fitzwick\" Pease, Ben Balder, Ben Blais, Ben Chason-Sokol, Ben Hudson, Ben Larson, Ben Loukota, Ben N, Ben Trigg, Benjamin & Chrissy Jones, Benjamin coates, Benjamin Hill, Benjamin Salqvist, Benoit Cecyre, Bernard Marsh, BERNARD Pierre, Berserker2107, Beth C., Beth Whitmore, Bethany Alexoff, Bethany and Jake Hampton, Bethany Gerlach, Bethany Wood, Betsy Hathaway, Bex S., Bianca Poroliseanu, Big Daddy Graper, Big Glee, Bill Pace, Billy Brandon, Bishop Andros, Bitter Sweetie, Björn Danneberg, Björn Friedrichsen, Bjourk, Blab, Blair and Selah Descoteaux-Driver, Bledcyan, Bleezei, Blesker, Blob, BluePringlez, Blunderdoom, Bnomei, Board Games and Battlegrounds, Boat, Bob Dole & Dr. Nash, Bob Gilkeson, Bob Hoffman, Bobby Brown, Bogdan Cirlan, Bohdandan, Boleslav Horák, Bolverk14, Bookbluff, BoolaBoolaBoola or Ashlyn Keefe, Boonchoak Kongsang, Boonwattana, P., Boopipoop, Boris II the Great, Boris Karl, Boris Pöhlmann, Boris Romanov, Botanicactus, Brad Castles, Brad Chavis, Brad Gallaway, Brad McMullen, Brad Roberts, Brad Thompson, Brad Wall, Brandewyn, Brandon A., Brandon Bisson, Brandon Carey, Brandon Vazquez, Brannadov and Ryu, braskier, Breanna H, Bree Paulsen, Brendan Noble, Brendan Souvenir, Brendon Prohaska, Brenna, Brenton Buchanan, Brett Schwartz, Brevin Morris, Bri Weiss, Bria F., Brian Bachler, Brian Coolidge and Emily Coolidge, Brian Dysart, Brian Hendricks, Brian Miller, Brian Misamore, Brian Mortensen, Brian Sidlauskas, Brian Thompson, Brian Weisberg, Brianda Stevens, Brice Panda, Bridge of Khazad-DOOM, Sasha, Bridget Yeager, Brielle Harrison, Brink, BrinklesD, Brit \"Beesknees\" O, Brittany \"Moon\" Duncan, Broltimer, BroodyBird, BroodyElf22, Brooke (Kios), Brooke Marie Miller, Bryan Burr, Bryan Nagle, Bryce Norsen, Brynn Kingsley, Buck Deatherage, Bucky B!, Buggeara Chuong, Bujnóczki Ádám, Bun Bun and Nimiander, Bunra Long, buntehose, BurntToast, Bushrizzlez, butterschnapps, C Arnoldus, C Conley, C. R., C.Kara Dill, C.R. Fahey, Cade \"CadeRageous\" Peterson, Caeden Crotty, caffeine_elemental, Caitlin Cieslewska, Caitlin Dunne, Caitlin Leu, Caitlin Rice, Caitlyn “Koenig” Smith, Caitlyn Finton, Cakeboy von Kayzor, Caleb Muller, caledonia curry, Calitra, callenalaw, Calliope Thundergrave, Calpey, Calvin DaSilva and Caroline Kimbles, Calvin Harlow, Calvin Mickel, Cam Dow, Cameron Aroz, Cameron Youngs, Camille Dent, Campari, Camrin Arreseigor, Candace Brereton, Candi Lawrence, Candie Syphrit, Candlehearts, Candlejack, Candy Daniels, Capainmuffen, CaptainCurls, CaptainZhiba, Carey Williams, Carina, Carissa Widseth, Carla Modesto, Carlo M. Pelacani, Carlos Dussek (Madkoda), Carlos Rojas H., Carly, Carly Dwyer and Intramersive Media LLC, Carmen Lee Valente, Carol Dolgon, Caroline Bayley, Caroline Coriell, Caroline Cz, Caroliona, Carolyn Chrisman, Carolyn Johnson, Carson Wright, Carsten 'Gohan' Schulze, Casey Borders, Casey Marie, Casey Sherman, Cassidy Wells, Cassie Devereaux, Casstform, Castor and Kristen, Cat, Cat Hunter, Cat Markwood, Catalyst1k, Catherine Slavova, Catherine Swinford, CatherineHG, cathy, Cathy Shepherd, Catie Childress, Catl Wedel, CatnGeek, Cattie, Caudi, Caveloot.com, Caz Bennett Calaguas, Cécile Y, Cedric Kulacz, Celeste de Blois and Solange de Blois, Celestialius, Céline Moro, Cente, Cerie, Certified Ginger, Ceruri Cosplay, Cessily Ramos, Chad \"Draithe\" Doyle, Chad \"Zenaficus\" Valdes, Chalky Paws Adventurecat and Zorya, Chance & Megan, Chandler Faas AKA N7xDante, Chaotic_Sans, ChaoticFreyja, Chapmage, Charbi, Charlene Treeleaf Summerstream, Charles, Charles Dority, Charles E. Leiserson, Jr., Charles Hammond, Charles Kamen, Charles Tsao, Charley Sharp, Charline Moncoucut, Charlotte \"Chapus\" Gonzalez Legendre, Charlotte & Neil Robinson, Charlotte Bohers Nguyen, Charlotte K., Charlotte Nachtegael, Charlotte Salter, Chase Hopper, Chay Kittell, Chaylub X and Roblobster94, Chee Lup Wan, Cheesecake, Chelsea Anderson, Chelsea K. Troost, Chelsea Shafer, Chelsea Wolf, Chelsea Zhao, Cherepachick, Cherie, Chesney O, Chester15, Cheyenne Baker, Cheyenne Baum, Cheyenne Withers, Chi Ho, Chimes5678, Vardia5678, Chloe Miller, Chop, Chris, Chris \"Pesti\" S., Chris (PlanetDagon) Hill, Chris A. Barney, Chris and Dan Brewer, Chris and Elsa, Chris and Jenna Froelich-Biag, Chris Bates, Chris Bernardo, Chris Eadie, Chris Frazier, Chris Giesy, Chris Gill, Chris H, Chris Hayward, Chris Heilman, Chris Hepburn, Chris Holgate, Chris John, Chris L'Etoile, Chris Luminello, Chris Navta, Chris Nehring, Chris Nolan & Christina Davidson, Chris S, Chris S, Chris Zelldeb, Chris Ziegler, Christa Hribar, Christian, Christian Kukli, Christian Quinn, Christian Schröder, Christian Zehring, Christina Eschbach, Christina Pagan, Christina S., Christofer Levall, Christoffer Bjerregaard Jensen, Christopher A Huddleston, Christopher Bowyer, Christopher Chavez, Christopher Conner, Christopher Curry, Christopher Hulsey, Christopher Koenig, Christopher L. Villegas, Christopher Lam, Christopher Lui, Christopher McDonough, Christopher Rogers, Christopher Samuel Goad, Christopher Stieha, Christopher Thayer, Chuck Callahan, churromancer, Cickány, Ciel Grimpeur, Citrus Delight, CJ, CJ, CJ Raulli, CJL, Claire Conway, Claire Purbrick, Clara Collett, Clara Torode, Clarabelle Chong, Clarence Dass, Classical Crow, Claudia Kürschner, Clayton E. Campbell, ClémentD, JoeJohns, Clémentine Negroni & Nicolas Thouvenot, Clifton Roberts, Clonk Stebens, Codes, Pamela Agnes, Cody \"Cluven\", Cody A., Cody Black, Coldheifer, Colin Osborne, Colin Vettier, Collin Delape, Collin Hunter, Colton Blomker, Colton Meinecke, Coltpixy, Columbcille, Connor Freer, Connor Spice, Connor Tomasko, Connorchap & Vigil, Conor McNamara, Constance Caparas and Adam Spaugy, Constance Moreau, Cookie C,, Cookie Fivefourtwo, CookieQuantum, Cordinia, Corina Becker, Corinna Clanton, Cory, Cory Sands, Cory Shane Davis, Cosmonari, Courtelia, Courtnee Hill, Courtney & Mike Beaver, Courtney Shipley, Craig Arsenault, Craig Sutherland, Cranky Curmudgeon, CrazySwiss, Creepieprowlie, Cristina Conforti, Crounk Family, Crow Williams, Cryophoenix107, Crystal A. Hamilton, Crystal Eio, Crystal Etchells Alex Fontes, Crystal Katsu, Crystal Weber, Cuddly Kraken, Curtis Ball, Cutter, Cynk, Cyprien Galan, Czernbog, D. L., D+, dae, Daenris, Dahlia \"Frost\" P., Dakota Archdekin, dallon tyler, Damian, Damian Cooper, Damian Gordon, Damon Lyonne Phelps, Dan Baver, Dan Cowart, Dan Edwards, Dan Henderson, Dan Hess / onwardtowaffles - your choice!, Dan Kupka, Dan Marsala, Dan Marushechka, Dan Pierson, Dan Santoro, Dan Suptic, Dan Van Kooten, Dan Winograd-Cort, Dan, Golden Spider, Dan33410, Dana B, Dana Cordelia Morgan, Danella I. Regis, DangerousButtons, Daniel \"Svaard\" Flores, Daniel & Caroline, Daniel Bailey, Daniel Bohuslav, Daniel Bungert, Daniel Gossman, Daniel Lenois, Daniel ME Rogers, Daniel Merom, Daniel Moore Hinton, Daniel Saevus, Daniel Sanchez, Daniel Schaefer, Daniel Senecal, Daniel Stevic, Daniel T., Daniel Templin, Daniela Serban, Daniele Danio Quero, Daniele Maranzano, Danielle Dupuis, Danielle Huard, Danielle Krasner, Danielle Seitz and Kendall Kidney, Danielle Williamson, DanielShrugs, Danii Goldstein, Danijel (astrobiolog), Daphne Ong, Darby, Darcie Cotton, Darcy Denhartog, Darina K, Darius Foltete, Dark Lord, Darklogic, Darksnake289, Darla Ramirez, Daron233, Darren Flavelle, Dasha, Dasha Bullet, Dat Do, Dave Cummins, Dave Gold, Dave Pickett, Dave Sigley, Dave Tomczyk, Dave Wilson, daveroo, Davey Nuckolls, Davi Almeida, Davi Blight, David, David \"Malk\"iewicz, David \"nef\" RPE, David A. Pearson, David Brown, David Dashifen Kees, David Freund, David Gagliardi, David Goei, David J Prokopetz, David Martin, David McLaughlin, David Michalek, David Morgen, David N Dow, David Poker, David Poulton, David R, David R., David Resetti, David Sanchez, David Strong, David W Anderson, Dawn Howell, Dawni Everett, Dayna Vickery, Deadlone, Deadw8, DeathWorld, Deb Longoria, Debbie Crookston, Deborah Anderson, Deborah López Rivas, Decarnin, Decayed Jellyfish, Dee Hensley, Deeply Dippy, defubar, Deirdre Clark, Deirdre Jimenez, Demo Dixon, Denis Clement, Denis Mattos, Denis Sadowski, Denis V. Emelyanov, Denise Greene, Dennys Antunish, Denver Harward, Denys Belevantsev, Deonna Knight, Derek & Maša, Derek Ayala Smith, Derek Devereaux Smith, Derek Flora, Derek Hubbard, Derek Kuper, Derek Sherman, Desahra, Desiree D'Alessandro, Destinea Perkins, Devan Franchini, Devilogical, Devin perry, Devin Rollyson, Dhira Atman, Dian, Dianté Jaquan Storm Hill, Dibella Caminsky, Dilbo Faggins, Ethan Ralph, Andy Warski Dick Masterson, Metokur, Gator, Bibble, Flamenco, Sam Hyde., Dimitri Magnin, Dimitris, DisabledDemiGod, DiscardedStatue, Djalil VAVODA, Djinn Mansoor, Dmitri Sotnikov, Dmitriy, Dmitriy Filipenko, Dmitriy Shamaev, Dmitry Belyaev, Dmitry Grinshteyn, Dmitry Makedon, Dmitry Zakharin, Doc Burford, Doc Galahan, Docahbear and Yaoguaife, Doctor Pavlov, Dog Squid, Dom Drake, Domagoj Lucic, Domenic Umberto Raso, Dominic De La O, Dominik Hälg, Dominik Pich, Don Kuzenko, Donald Bumbu, Gonosz Pepe, Donna-Marie H, Donovan Baldwin, Donovan Drane, DONUT SUPLEX, Doodledibob, Dorville, Doug Blume, Doug M, Doughnut Erik, Douglas Meserve, Douglas Mota, Dr Shawn C. Rowlands, Dr. Cultist, Dr. D, Dr. Nick Wessler, Dr_Som, Drake Mordecai, DramaticFox, Drea Delariyala, Dremcyfer, Drew, Drew, Drew McParlan, Drew887, Dria Dohoney, Drucifer Watsonia, DrukkL, DuckInADungeon, Dugald Lowis, Duke Silver, dukebarman, DurryThon, Dusk Sky, Dustflower, Dustin Harris, Dustin Kahn, Dustin Pereira, Dustin Risley, Dustin Willcox, Dusty Pilgrim, Dylan Guidry, Dylan Harris, Dylan Liebert, Dylan Morris (Salvatordahli), Dyon Puts, Dzerh, E C Freeman (greedlo), Ea Malmberg, Eamonn Byrne, Earth Apple, Ebelio Mondragon, Eben Wassermann, ECH0, Eckwyl, Ed, Ed, Ed & Henry Dubiel, Ed Freeman, Ed Lo, Ed Prevenslik, Eddie Joo, Eddy Dauber, Edem Honyiglo, Eden Marques, Edgar McDuff, Edi, edomaur, Edward Collier, Edward Drummond, Lee Williamson, Edwin Bryer, Edwin Keecha, Efren Gonzalez, Egor, Eihples, Eileen, Eir Peturs, Eirikr Grimsson, eiseis91, Ekaterina Mulyukova, El_Thotho, Elaine, Elaine d'Ete, Elaugaufein, Elayna L, elchristo, Eleanor Behm & Robert Zavada, Eleanor Hingley, Electropuff, Elena Bryleva, Elena Morgado Martinez, Eleri Davies, Eli Baum & Viv Tanner, Eli Brodsky, Eli Weyant, ChillGamesToRelaxTo, Elias F, Elie \"Beulicat\" Louvrié, Elina Sevele, Elisa Rass, Elise B., Elise Hart, Eliseo Ferrante, Elivin Mendez, Elizabeth Davis of Dead Fish Books, Elizabeth Hackler, Elizabeth Hasara, Elizabeth Jones, Elizabeth Lightfoot, Elizabeth Linn-Paris, Elizabeth Noyes, Elizabeth Rose Winner, Elizabeth Swanser and Master Soak, Ellie, Ellie Beck, Ellie Mac, Ellie Theo, Ellie West, Elliott & Auden Roe, Ellirra, Eloy Verdú, Elrith Geln, Elsie Lee, Emalyg01, Emily & Justin Kern-Weinberger, Emily & Michael Thompson, Emily Berthelet, Emily Boucher, Emily Duncan, Emily Edwards, Emily Gardiner, Emily Hill, Emily Jane Odell, Emily Rose, EmJay, Emma Applegate, Emma Bringel, Emma Partridge, Emma Pratt & Philip Baxter, Emmanuel Comte, Emmeline Davidson, Gavin Davidson, Endeavor7, Ender, Ender and Dante, Enholio, Enterstellar Studios, Entropy, Eoin Brennan, Eraith, EREIUS, Eri, Eric \"Reyom\" Moyer, Eric C. Sizemore, Eric Christensen, Eric Dierking, Eric Doudrick, Eric Easterly, Eric Gee, Eric Harms, Eric Lachowski, Eric Paterson and Eirikr Aela, Eric Schulzetenberg, Erich Wilkerson, Erick Huck, Erik Fischer, Erik Tinberg, Erika Johnson, Erika Kilmer, Erika Peabody, Erin Cormier (Harleen Kitty Kat), Erin Gardner, Erin Kennedy, Erin Lytle, Erin O'Loughlin, Erin Ratelle, Erin Riggsmith, Erin Stone, Eris V. Krejsa, Ernest Stefan-Matyus, Ernestotaku (Ernesto Vergés), Esteban Gaspar Silva, Eternum, Ethan and Meghan Kaye, Ethan Rowe, Étienne Bégin, Eugene Chessher, Eugene Rodikov, Eugene Wheeler, Eustachy, EVA KONIC, Eva Ondová & Lukáš Komárek, Evan Danger Fowler, Evan Haines, Evan Lindsay, Evangelia Fahantidou, EvenyShi-avery byington, Evgeni Shevtsov, Evgenia Pashkova, Evgeny Lipatov, EvilVengence, Exidy, Ezra K, Ezra Vidas, f_givi, Fabia Sans, Fabian \"throtran\" Otte, Fabian Bach, Fabian W., Fabien Bonali, FaerieRhona, Faewood, FalseWinds, Falusi Sanyi & Soós Zoli, Fárbás Tamás, Farland, Farnaz Ohadi, Father James Cairns, Faye W, FCS, FD Wei, Federico & Marco, Federico Micheli, Felicia Welton, Felix, Felix Dritz, Fenric Cayne, Fenrir_heart, Fer Yuvre, Fermin Serena Hortas, Fernando \"Darthjee\" Favini, Ferovax, ferry, Fesquishety, Feyd Aran, Fhonix, FightingFurball, Filip Lozic, Fimi, Finley & Zack Attack, Fiona Frank, Fiona Ravenheart Lucas, FJ, Flaming Meeple Games, Florence Di Ruocco, Florence 'Fleur Ange', Florian Emmerich, Florian Krohn, Florian Maillard, Floz, flypirat, Forrest Dowling, Forrest Family, Forrest Hopkins, Forstle, fossilbios, Fox & Kitty Grey Sparkes, Fox Fesler, Foxh, Fran 'ComputDragon' Reyes, Fran sShum, Frances Dale, Francesca Itrillade, Francine Swann, Francis Leo Tabios, Francisco Martínez, François \"Zyniel\" CABANNES, Frank & Candice Vanderstreet, Frank Bath, Frank Lam, Frank Serio, FrankIA, Franny Mai, Fred Pertkin, Frédéric Benoit, Frederic S. Bacon IV, Frédérick Bergeron, Frederick Ostrander, Fredrik Mortensen, Fredusdiem, Freyaldo, Verminora, FreyaMaluk, Freyja Fisher, Frigelsnart, frogF33T, Frooshbot, Frost Aegis, Frosty, frumpopotamus, Für Lois, fushaplusha, G_theCubed, G0ldnFen1x, Gabriel Bourdua, Gabriel Harju, Gabriel Kaminsky, Gabriel Karaś, Marta Górska, Gabriel Karl Pralle, Gabriella Poirier (EllaCupcake), Gaël Boulay, Gael PERIAC, Galadhil & MoronBro, Galya Grikhunter, Garnet Fox, Garrett, Garth BeMiller, Garth LaPointe, Gary James, Gaspare Carollo, Gaston Marian, Gaulmoth, Gautam Srikishan, Gavin Koh, Gemanoneko, Geneviève Paquin, Geoff G Turner, Geoffrey Kwan, Geoffrey Moxley, George Sklavounos, Georgia Geddes, Georgia Monk, Georgii, Gerald Asher, gerbil, Gerry-AAB, Ghost Mittens, Ghost Moose, GhostPaprika, Gideon Kalve Jarvis, Gilbêrt \"BIOCHEM1STRY\" Dumont, Gilbert York, Gilgalad00, Gillian Amos, Gina H., Gina Mahon, Ginevra Servi, Ginger Streusel, GismOru VVP, GLAUGHZOONJAH 10%, Glen Brixey, Glenn Hedemann Petersen, Glenn Van Meter, GL-itch, Glombie Daws, Gloria H. Manderfeld, Glorious Dan, Gmy-gmy, Goatframe, Goda Greivyte, Golau Milwr, Goldie & Gunde, Goldson, Michael Goldobin, Gorcyn, Gort, Gosia Martyniak, Grace Careaga-Moylan, Granny Peco, Grant ‘Hyliaeon’ Mathis, Grant B., Grant S, Grant Williams, Grazinglikeacow, greatape51, Greg Barden, Greg Freeman, Greg Gosselin, Greg King, Greg McCarthy Jr & David Dudney, Greg Woodhouse, Gregg Schwartz, Gregory Gallet, Gremore, Greyhardt, Griebenow Andreas, Grimjack27, Grimm Locke, Grimnir, GrimSock, Grrys, grubbyllama, Gryfin Talon Corvus Raven, Guest 1383522970, Guest 265174043, Guest 399237646, Guido Maas, Guillaume Brunelle, Guillaume Sénéchal, Guillaume Sor, Gummibear1983, Gustaf Renström, Guy Reisman, Gwendolyn, gythgone, H Lynnea Johnson, H0lyhandgrenade, Haascore, Haelyn, Haihami, Håkon Mølstre, Halasimov, Haley Flores, Hannah Garvey, Hannah Myers, Hannah Ripley, Hans Petter Farstad, HappinessTwin, Harald Windisch, Harlan \"HarliKatt\", Harley Mace, Harlithe Inuyuki, Harriet Pilcher, Harrison Chea, Harry \"Vampirate\" Moore, Harsha Tolappa, Harvey Dretzka, Harzpain, HashedZ & Miri, HateTheNoise, hawkeye1002, Hayley or ChocyMuffin, Hayo, Hazel, Heath Bingman, Heather and Eric Windsor, Heather B, Heather Gudaz, Heather M, Heather Simpson, HeikarGaming, Heikel’s, Hel Lyon, Helder Araújo, Helloaylee, hellokat, Henry Mantel, Hermann, Hermi65, Hervé Filkir, HesitantPidgeon, Hesmah, Hi im Davi, Hias Matt Salchner, Hillabeans, Hillary Miller, Hioneils_wraith, Hipciu, Hirokazu Tago, hirowix333, Hlavaty Beroldingen, Hmadghatter, Hobboth, Hoid, Hoi-Fung Ma, Holden Fra, Holly & Justin Kraft, Holly Decker, Holly E. Holt, Holly R., Holly Young, Holub, Homer Lindsay Dyer IV, Honigwasser, Hoppysparrow (Yolanda), Horror Brew Podcast, Hoshtera, HpCriticAll, Bryan ODell, hsinister, Hugo Folinx, Hugo Morango, Hunter “AVery” Christoforatos, Hunter Jandecka, huntsmaster, Hurston, Hypersho74, Hyunsoo Kim, I. \"Arxsen\" Green, I.S.Sabal, Iaan Adams, Iaga, Iain Bridge, IamCorvus, Ian Dunbar, Ian Hopkins, Ian Magee, Ian McFarlin, Iaroslav Gashuk, Icek00l, Icewine Rose & DooMkopf, Icky Peggicorn, Idiosyncrazy, Igler, IgneousGuikas, Igor, Igor Chuprov, Igor Elman, Igor Krutyakov, Igor Melnikov aka Meligan, Igor Perepilitsyn, Igor Wołowski, Igor Yovenko or IgorZilla, Igorminous, Igotspawned, Iiris Jarva, Ike-eki, iki, Il Principe di Firenze, Ilaria Calabrese, ilikewater, Ilya Sokolov, Iman H. Moujtahed, Steven Soroushian, IN49, Ineffable Audrey, Infamous Audra, Ingrid Emilsson, Ingrid Ringler, Ingrid Solberg, inosen, Inquoate, Insharai, Inukisama, Íris hafthórsdóttir, Isaac (Wolffer28) Gutierrez, Isaac Carr, Isaac Griess, Isaac R., Isaac Saxon, Isaac Smyth, Isaac Thimbleby, Isabell Düwel, Isabelle Potvin, Isis Alexander, Ismael Perez, Ivan, Iván Freire, Ivan Gutierrez-Rivera, Ivan Kondrashov, Ivan Martianov, Iván Vadim Pina Molina, ivankot, ivelchild, Ivy, Izzi Kat, J Heidenreich, J Matthew Jakes, Shannon W Yen, J Michelle Eby, J Penn Wiggins, J Turner-Flanders, J&D, J. R. Butler, J.D., J.K and D.o.c.s., J.Lynn Wise, Jac Cordray, Jac❤Jes, Jace B., Jack, Jack foster, Jack Gonzalez, Jack Hamblin, Jack McClintock, JackDirt, Jackie Grieff, Jackie Johnson, Jacob & Luke Dreiling, Jacob Dill, Jacob Hatcher, Jacob Ross, Jacob Schwartz, Jacob van Bentum, Jacob W, Jade J., Jade Turta, Jae Jun Lee, jae victoria grace prystupa, Jaeda Reed, Jaggy, Jajo, Jake McGovern (Abaddon), Jake Romigh, Jakob Spoerk, Jakobz, Jambolti414, James and Danielle Smith, James C. Ross, James D Balmer, James Fadeley, Thunderbird Studios, James Fitch, James Hinks, James Kabrhel, James Kanceruk, James Meredith, James Olsen, James P. Tacogdoy, James Piiparinen, James R. Crowley, James Read, James Robinson, James Tintin McCarthy, JameSerus, Jamey Weare, Jamie Jones, Jamie Potts, Jamie Schirms, Jamie Tabaka, Jamie Waters, Jamin Barnes, Jan Frederik Maas, Jan Jilek, Jan Johnson, Jan Lauritzen, Jan Škrle, Jana Bergevin, Jana M. Hall, Jane Klyne, Janealisse and Nick, Janelle DuFresne, Janet Houck, Janice Carello, Janne Kuosa, Jannsik, Jaqi D, Jared Ethan Moreno, Jared Lovett, Jared 'Pirate' Foley, Jarek Kolar, Jarno \"Dices\" Willems, Jarno Deroeck, Jasmine Edgel (and Lauren Dixon in spirit), Jason, Jason, Jason and Nicole Wall, Jason and Samantha G, Jason Bliss, Jason Dittmann, Hayden Dittmann, Jason Furie, Jason Geanuracos, Jason Hair, Jason Italiano, Jason Monaghan, Jason O' Mahony, Jason Place, Jason R Ring, Jason Spencer, Jason Stenger, Jason Wotzko, Jason, Sandra & Aislin Gordon, Jasper Smythe, Javier Prieto-Duenas, Jax, Jay Adler, Jaye Cornell, Jayme Horne, Jazmin Merckel, JD Martz, J-EA, Jean K., Jean-Gabriel Rego-Kirk, Jean-Michel Gabbardo, Jeanne Frenken, Jeannine Martell & Christopher Morris, Jeff Blackshear, Jeff George, Jeff Shouse, Jeff Tao, Jeff Tyler, Jeff Vaicunas, Jeff Vista, Jeff Williamson, Jeffrey C. Gilbert, Jeffrey De Vries, Jeffrey Hayes, Jeffrey Hellrung, Jen & Joe Puckett, Jen A., Jen Cowitz, Jen Edwards, Jen Leeper, Jenn Dzoga, Jenn Longrie, Jenna Spitale, Jennie Weyman, Jennifer \"OnyxPanthyr\" Menite, Jennifer Anne, Jennifer Bradley, Jennifer Genova, Jennifer Irwin, Jennifer L. Pierce, Jennifer Logan, Jennifer Losi, Jennifer McFarmer, Jennifer S., Jennifer Whyte, Jennifer Wilson, Jennity, Jenny Svatek, Jens D. Racherbäumer, Schnuppe, Jenzilla the Destroyer, Jeremiah Acosta, Jeremiah Johnson, Jeremy Altheide, Jeremy Auerbach, Jeremy DeBottis, Jeremy Howard, Jeremy Martin, Jérémy Mouchoux, jeremy smith, Jeremy Strzynski, Jerhard Evangelista, Jerry Gray, Jerry Marsden, Jerynn Barbary, Jess B. Fossil, Jess Downing, Jess Lam, Jess May, Jess Meakin, Jess Platter, Jessa, Jessa Rose, Jesse, Jesse and Sara Stein, Jesse Baruffi, Jesse DeRose, Jesse Farrell, Jesse Gardner, Jesse Green, Jesse Huff, Jesse Louis Hathaway, Jessi Johnson, Jessi Tatum, Jessica Angelini, Jessica Bickis, Jessica Clement, Jessica Foxhat, Jessica Laurent, Maria Blowers, Jessica McGuinness, Jessica Munzlinger, Jessica Smither, Jessie Marston, Jessy Nergy, Jezebel, Jezzkittycat, Jill Aksamit, Jill Doyle and Jason Bonser, Jim Bo, jim castrillon, Jim O'Sullivan, Jim T. Nguyen, Jimmy Smiley Jr, Jindra Jungmannu, Jiyeon, Jj, Joanna Lewandowska, Joanna Schaff, Joanna Zaczek and Rowland Cooney, Joanne Thomson, Joaquin Quijano, Jocelyn Day, Jocelyn Schielke, Jochen Wiesner, Jody, Joe & Justin Wetterling, Joe Back, Joe Freemer, Joe Hollowell, Joe Lenczewski, Joe Parello, Joe Wiederman, Joel Brown, Joel Hoo, Joel Mizzoni, Elena WIll, Joel Paulsson, Joel Philart, Joel Plott, Joel Releford, Joelle and Nalani, Joerg Mosthaf, Joethan Williams, Joey Leong Zhong Wei, Joey Martin, Joey Taylor, Johan Ente, Johan Hermansson, Johanna Gotter, Johanna Jouppila, Johanna Schwartz, Ethan Schwartz, John (crazyjdog) Dziendziel, John Banovetz, John Conibear, John DeJordy, John Dwyer, John Golden, John Horgan, John K, John Klein, John Loner, John R. Belliston, John Robertson, John Rodriguez, John Swanson, John V, John Valdez, Johnathan Henson, JohnnySeb, John-Paul Chalykoff, Jomelson Co, Jon and Emma, Jon B Lewis, Jon Harris, Jon Hickey, Jon Murphy, Jon Schneider, Jon Taylor, Jon Yule, Jonah Loshadkin, Jonah Wallerstein, Jonas Hansson, Jonas Lejon, Jonas Myhren Larsen, Jonas Stocke Gleason, Jonathan (Kleinervampi) Tschoek, Jonathan A. Cuellar, Jonathan Alvear, Jonathan Boyt, Jonathan Calderón Soriano, Jonathan D'Silva, Jonathan Green, Jonathan Hallsted, Jonathan July, Jonathan Ouimette, Jonathan Spader, Jonathan Venezian, Jonathan Wallander, Jonathan Yelle, Jonathon Cabbs, Jonathon Layton, Jonna B, Jono Ward, Jon-Paul Query, Jon-Pierre Ward, Jop Peeters, Jordan H, Jordan McDaniel, Jordan Nelson, Jordan Smith, Jordan Springer, Jordan Teasdale, Jorden Hiscock, Joren Peeters, Jorge Gonzalez, Darks Legacy, Jormungandr, Jos Hornsey, José Chamorro, Jose Cruz (jggboy), Jose Manuel Chust Balaguer, Jose Montesinos 'Monty', Joseby, Joseph \"OrigamiGuy\" Keith, Joseph Cellucci, Joseph Dante, Joseph Kiesgen, Joseph Queen, Joseph Rodriguez, Joseph Santi, Josh Bailey, Josh Beane, Josh Buyarski, Josh Carlton, Josh Edgar, Josh Ginzberg, Josh Hall, Josh Mitchell, Josh Ratelle, Josh Ryder, Josh Turner, Joshua, Joshua Downes, Joshua Dunann, Joshua Huerta, Joshua Mamaclay, Joshua Manning, Joshua N Johnson, Joshua Sotello, JoT, Joy Phillips, Jozo Mafijozo, JP Estey, JP Rindfleisch IX, JP Sugarbroad, jPseudo, JTVSauber, or Josh Sauber, Juan Blanco, Juan Lemus, Juan Oliveira Martinez, Juergen Graebner, Jul Gorm, Jules Kai, Julia Fleming, Julia Mitteregger, Julia Pluta, Juliane Purves, Juliane Schotte, Julianne Clifton, Julie Herman, Julie Thilgen, Julie Wolf-Geers, Julie-Anne Borgias, Julien Berrier, Juliette C, Jun Park, Juno M., JunSia, Jupke, Juri Tokarski, just_deli, Justice Eats Trees, Justin, Justin, Justin \"Lonig\" Claspill, Justin Agin, Justin Hobrock (Revin), Justin King, Justin Kruk, Justin Maggiori, Justin Morfitt, Justin Pelletier, Justin Tidwell-Davis, Justin Tokmak, Jordan Binnom, Justin Whitman, Justin Willow, Justin Yeo, Justinas Marozas, Justine di Giovanni, K, K. & M. Merman-Sharks, K. Dudzinski, K. Lisbet Winters, K. Partyka, K. Rousseau, Kaaren Spiesz, Kaazavon, kagechi, Kai, Kai Holmes / Aedan Holmes, Kai Olson, Kai Shields, Kaia, Ka'ihe Mati Fisher, KaiidthVida, Kaiju Louise, Kaitlin Boswell (ChronicOffbeat), Kaitlin Green, Kaitlyn Gulock, Kaleb Eskridge, Kalvin \"Specter\" Ellis, Kalvin Aguilar, KamahI, Kanade Hikaru, Kaourantin, Kara Garibian, Kara Killam, Karalie Hensley, Karelian, Karen Atkinson, Karen Shull, Karen W, Karen Yiu, Kareya Fleek, Karjan Amahel, Karl Anderson, Karol Rybaltowski, Karoline Hanley, Karolyne W, Karsten Müller-Bier, Kasha, Kasia Zubrzycki, kasiii, Kassandra B., Kaszreyene Apps, Kat & Oz Lauderbaugh, Kat M, Kat M, KataiAkuma, Kate N, Kate Wilkins, Katelin & Alexander Kalathia, Katelyn Jobes, Katelyn Perkins -- Andriothia, Katerina Polyakova, Katharina Lucas, Katherine & Kerrigan MacLeod, Katherine Paxton-Williams, Kathleen Durocher, Kathleen Parker, Katia Zalkind, Katie Alleena, Katie Burkhalter, Gregory Burkhalter, Katie Griffiths, Katie Jean, Katrin Lang, Katrina Fereday, Katrina ZD, Katsiaryna Alexandrova, Katya B, Kay Barker, Kaya Kepa, Kaye Ciana Scott, Kayla B. Wacaster, Kayla Gasperec, Kayla Kolean, Kayla L., Kayla Miller, Kayla Thomas, KDimi, KEB, Keebee, Keevin L, Kei26, Keiji Miashin, KeikoKristin, Keith ’Hurley’ Frampton, Keith Burke, Kelcie, Kelerm, Kelevra, Misha, Kellen Myers, Kelley, Kelley Chance, Kelley Jabr, Kelley V, Kelly Andrew, Kelly Rutherford, Kelp, Kelsey Meyer & Robert Mitchell, Kemosh, Kempton Sosa, Ken Grazier, Ken Kawahara, Kencho, Kenneth Khau, Kenny Holden, Kenny Kostik, Kenyeda Adams, Keresztény László, Keri Kent, Kerry Braisted, Kevin Clark, Kevin Dombrowski, Kevin Lefebvre, Kevin Liu, Kevin Looney, Kevin Lowell, Kevin Pfeiffer, Kevin Schneider, Kevin Schulz & Anastasia Kudinov, Kevin Wheeler, Kiara / Aries, Kiba, Kieran Dean, Kikinak, Kim, Kim Dyer, Kim Rasmussen, Kimantha, Kimball Finigan, Kimberly and Steven Davis, Kimberly Brown, King Burgermeister Nani / Honkykong, Kingport Kuo, Kino Johl, Kintran Valgrige, Kira Laufer, Kira Nelsen, Kira Ordabajeva, Kirei Kobayashi, Kiri Bear, Kiri L., Kirill Fedorov, Kirill Ivanov, Kirin Riki, Kiros and Lexenos, Kirsten Johnson, Kirsten Weiss, KisakiJun (Frances), kismit jax, k. scott, kissingthepixel, Kit Farmer, Kit Kooiker, Kitty Dobson, Kiya Nicoll, KKnight, Klara Chmelarova and Tereza Chmelarova, Klaus, kliwete, kllr, Knight of Words, Knight Thomas, Koen G, kokuu, Koley Varady, Komorebi, Konarovic, Konstantin Kitmanov, KonstantinVU (oTripTV); GrayAve, Konton Owari/Todd Hangos, Koruth, Kosen, Kosmos Uzuki, Kostusha, Kothoga, Kourtney Brady, Lucy Doggo, Kra 'LiMarko, Kragevalgt, Krazykat, Kris (Morning Amnesia), Kris and Josh, Kris Feric, Kris Kulin, Krisfireball, KrisOfTheDead, Kristen \"Voudka\" Wood, Kristen Ciccarelli, Kristen Graham, Kristen Hayes, Kristian Axelsund, Kristie Matheson, Kristin Petroske, Kristina Cantrell, Kristine 'Cake' MacLeod, Kristofer Andersson, Kristoffer Seneger, Krisztián Csobályka, Krofes, Krueger, Krzysztof Wytrykowski, Ksenia Zuy, KT ♡ Easton, Kyle McKenna, Kyle Nadeau, Kyle Neal, Kyle Peet, Kyle Peplow, Kyle 'Thistle' Schlegel, Kylie Hill, Kyndrin, Kynerae, Kyra Toomey, Kyriel, L. Alden, L. Behrendt, L. Luciel Miller, LaceyShadows, Lady Lillian KIngsbury, Lady Rachell Diane Spencer, LadyMcBite, Lamia Daerva, Lana Nguyen, Lana T., Lance, Lane Anthony Flores, Lang Troyan, Lapaduza, Lara Denton, Lara Jollimore, LArchaon, Laresgod, Larissa Garcia-Baab, Larissa Klein Bennink, Larke Galyan, Larry K, Lars, Lars Grabowski, Lars Hoffmann, Lars Maijenburg, lasershow, Laura, Laura and Abrams, Laura and Jenny Osteen, Laura B., Laura Bennett, Laura Dittmeier, Laura Edit Gunnváardóttir, Laura Hamill & Sonia Caramello, Laura MacDonald, Laurandru Degeratu, Laurel Smith, Lauren Billings, Lauren Moore, Lauren Nalepa, Laurence Dallas, Lauretha, Lawaina, Lawrence J Ernest Jr, Layton Funk, Le Gamer Masqué, Le Guin the Cat, Le Nguyen Khac Vu, Leah Kiczula, Leah Russell, Leah Warren, Leanidas92, Leanne Manna, Lee Darby, LEE HUGHES, JENNIFER CONSIDINE, Lee Phelan, Lee Pielacha, Legacy: Fables, Leif Rafngard, Leigh Ingram, Leigh Truitt, Leila Rose, Léna Hoschek, Lenore K Pedicord, Lenore Katz, Lensman, Leroy Krind Jr., Les Schrader, Leslie Crane, Lester Lee, Lev Goldiner, Levi Adam Dollinger, Levi Andringa, Lexi Abbey, Lexi Luke, Lexi Stevens, Leyla Mamedova, Liam and Julia McAloon, Liam Edward Marek Wilson, Liam Rinehart, Liam Routt, Liam X Fawks, Liam Zev, Libby Lehmkuhl, Liko, Lilith Wasmundt, Orshelack, Lillie Fairweather, Lillith, Limbsey, Limlug, LincolnOnion, Lindsay Goto, Lindsey and Claire Busiere, Lindsey and Jake Hall, Lindsey Ann, Lindsey Hunt, Lindsey Smith, Linfan Kashaa, Linnea Holmström Ljung, Linus Käll, Lisa & Pedro, Lisa Andrew, Lisa Black, Lisa Michanol, Lisa Nowinki, Lisa Ohanian, Lisa Olsen, Lisa Rowald, Lisa Wolf, litllewitch, Little Mushy Bear, Living Gently, Liz, Liz Carnell, Liz Petrick, Llexu, Llythium, Lndail, Lobotomyfail, Logan \"Logaesthetic\" Kovach, Logan (ITA), Logan McCulloch, Logan Townsend, Nick Skaggs, Logibear, LogiMOX, Logodaedalus, Loïc Blazek, Loiroi, Lola and B Charney, Lollipop, Longin, Lonnie \"Captain\" Smith, Lord Scratch, Lord'Jin, Lordphnx2, Lorea Bas, Loreena Ruin, Loren \"The Champ\" Champlin, Loris, Lothar Kaiser, Lotte Busch, Lotusbluete, Louis Coyle, Louis-David Houle, Louise Hardison, LtGeneral Andrew, Luana & Ella Saitta, Lucas \"kanard\", Lucas Brady, Lucille Haen and Caleb Del Rio, Ludi Valentine, Ludophiles, Ludovic Boissard, Ludovic Cancelier, Ludwig Lorenzo, Luis Alonso, Luka Marinković, Lukas Rosenberger, Lukayleon, Luke Kernan, Luke Turley, Luke Veninga, PF Anderson, Lumenadducere, Lumi Pehkonen, Luna, Luna, Luna Fox, Lux Dinaari, Lyana, Lyana Morton, Lydia Saranina, Lyman, Lynette Terrill, Lynn Winter and Cully Smutzler, Lynue, Lyo Trueba, Lyon Lepht, Lyras Lynx, Lyttleton Callender, M Azevedo, M. McGraw, M. Travis, M. van Maldegem, M. Zarling, M.K. Parsons, mac15444, Maciatko, Maciej Gajewski, Maciej Kasicki, Madeline Rose, Madi Moser, Madison \"Greymalkin\" B, Madison Cromwell, Madita, Magda M., MageEnclave, MageInTraining, Maggie Anderson, Maggie McManus, Maggie Moncrief, Maggie Nizich, Maggie Rose-Tsai, Michelle Tsai-Allen, Magic Step, magui, mahavoid, Maik Peter, County Bounty, Maïlis C, Maite Moyano, Makimou, Mako0511 Jerry, Maks Schlueter, Maksenton, Malachai80, Malarpuppet, Malcom Parker, Maleesha Thompson, Malin N. Jensen, Manarelle, Maniak, Manon Wright, Mansion Games, Manuel \"Geeklich\" Martinez, Manuel D. De Sousa, Mara Corvinus, Mara Gerety, Mara Ward Bailey, Marc Eyraud, Marcel, Marcelo Plata, Marco Andrade, Marco Dennstädt, Marcus, Marcus Gabriel Fors, Marcus Horejsi, Marcy Brown, Marek Benes, Marek Papericko, MareK Švec, Mari Tovar, Maria S, Maria Storm Smith, Maria Terentieva & B, Maria Yefimova, Mariah Griffin, Mariah M., Mariah Rustin, Mariah Wheeler, Mariah Wolfe, Marie Melodie, Marie Monier, Marie Piasecki, Marie Portejoie, Marie Walker-Smith, Marie-Claude Valcourt, Marie-Eve*, Marijn Hubert, Marina Chernikova, Marina Kerre, Marinna Smith, Mario \"Tholrin\" Firszt, Mario Dettinger, Mario Mudrinic, Marisa \"Darkeiko\" P., Marissa Starr, Mariya Lozovich, Mariya Prytula, Mariya Sorrel, Marjorie Grimm, Mark Adair, Mark Angliss, Mark C. Baumann, Mark Douglas, Mark G, Mark Hartsuyker, Mark Jones, Mark Marple, Cylinder Bois, Mark Mueller, Mark Paddon, Mark Rizik, Mark Roberts, Mark Showalter, Mark Strazhari, Mark Volny, Mark Wallace, Markus Ayers, Markus Laurila, Markus Lukkarinen, Markus Magnitz, Marlene Hodgkins, Marley Moyer, marmin, Marock Bierlej, Marq Malade, Marria Daniels, Marsh Hock, Marta \"Minakie\" Afonso, Marta Dragoeva, MartaPesci, Martin \"Cisar\" Meľuch, Martin (Mort) Villarreal, Martin „TKundNobody“, Martin Baudart, Martin 'caubert' Kauber, Martin Forsman, Martin Jäger, Martin Järlemyr, Martin Lacek, Martin M., Martin Pfahler, Martin Rapic, Martin Siesto, Martin Wijaya, Martin Wilhelm, Martyna \"marichetti\" Gotfryd, Marvin Novelo, Mary Allen, Mary Jane Morgan, Mary M Medlin, Timothy B Medlin, Mary Margaret Healy, Mary Pukenis, Mary Stanish, Maryah Corson, Maryse Simard, Samantha Simard, Masha Vasilchikova Masha Lepire, MashedPopoto, Mason Stone, Masterdkassovic, Mat Bluck, Matei Vasilache, Matej Čuček Gerbec (magecu), Matej Kubriczky, Lenka Kubriczka, Matek, Mateusz Serafiński, Mathaplo, Mathew McCaskey, Mathias Olsen, Matic Smolej, Matrix, Matsurugi, Matt Appuhn, Matt Batten, Matt Carlson, Matt Dickman, Matt Gibbins, Matt Koballa, Matt Molanare, Matt Overton, Matt Penning, Matteo Bongiorno, Matteo Domeniconi, Matthew Aiu, Matthew and John Royal, Matthew Bates, Matthew C, Matthew Causebrook, Matthew Cicchillo, Matthew DiGeorgio, Matthew Dimalanta, Matthew Gagan, Matthew Lokot, Matthew Maranian, Matthew Mitchell, Matthew Owen, Matthew Paquin, Matthew Rosenbaum, Matthew 'Senjak' Goldman, Matthew Vorhies, Matthew Walker , HermesSandals, Matthew Wiebe, Matthias Behrens, Matthias Lamm, Matti Mali, MAWorLessGaming, Max Barrow, Max Brown, Max Burtsev, Max CB, Max Jacob Olsen, Max Rose, Max Spitsyn, Max Walsh, Maxim Gorkovskiy, Maxime Garcia, Maxwell Stevenson, Mayasma, MayContainHyjinks, Mazer Rackham, MB, McAnder, M-chan, McKenna Willis, mdkragon, MDUEmporium, Meagan M. Downing, Meg Callaghan, Megan Faith, Megan McNaughton, Megan Taylor or if someone has the same name, Meg Taylor, Megan Wiggers, Meghan Tress, Meher S, MeIsWinter, Mel \"Bliny\" Z, Melanie Glavic, Melanie Grenier-Brusse/Bill Pirrone-Brusse, Melina family, Melinda Gramnaes, Melissa & Daria, Melissa & Mark, Melissa Johnson, Melissa Maxwell, Melissa Pearson, Melissa Tate, Melissa Teeter, Melly, Melly C., MelodiousAccord, Melody (theDarkFey), Melody Haren Anderson, Meowlan, Merce Covarrubias, Merit \"Badger\" Burgett, Mesona, Mezentine, MHellman, Mia Judd, Mia K, Micah \"Johnny Two Legs\" Cain, Michael, Michael “lmk” Winkler, Michael A. Scott, Michael and Christopher Witting, Michael Anthony Clemmer, Michael Antony Bernabo, Michael Beurskens, Michael Bizzotto, Michael Byrd, Michaël Cliche, Michael Corr, Michael D. Csurics, Michael David Anderson, Michael De La Morena, Michael Fox, Michael Garelja, Michael GRANGER, Michael Hawley, Michael Hoskins, Michael Karman, Michael Koch and Becky Welch, Michael Latham, Michael Moskalev, Michael N Mitchell, Michael Naylor, Michael R. Kingston, Michael Stevens, Michael Tohill, Michaela Doukaki, Michał \"Mrozie\" Mróz, Michal Belovoj Záň, Michal Golebiowski, Michele Zalukar, Michelle, Michelle \"Masha\" O'Brien, Michelle Anne Roxas, Michelle Bias, Michelle Plunkett, John Plunkett, Michelle Vucko, Michelle W. (Geekielady), Mickaël Pesquet, Mieke & Koentje, Might and Delight, Miguel A. Chateloin, Miguel Camponez, Miguel Courchesne-Perras, Miguel Reyes, Miguel Salinas, Mihail Miklashevitch, Mikael Ljungholm & Maria Görman, Mikaila Haldane, Mike & Dollie, Mike BC, Mike DeKlavon, Mike Dominguez, Mike Gachuz, Mike kemp, Mike Ratliff, Mike V, mikevomis, MikeyKey, Mikhail M, Miki Hawkins, Mikkel Kongstad, Mikkel Lunnemann, Mikolaj Z. R., Mikyla, Mikyla and Colten Meyer, Milan Jirkovsky, Milana Stanic, Mildra The Monk, Miles Diem, Daddy-O, Miles M Davis, Milo Pascal, Mina, Minerva, Minsk, Minus, Mira Jourdan, Miranda Payne, Miri Mogilevsky, Mirjana Kanajeva, Miroslav Vajs, Mischa Rose, Misha, Misha and Blaine Coplon, MishMish, Misinformer, Miss Münster, MissBigshot, Mitch Browne, Mitch Deg, Mitchell Beckenbach, Mitchell Bernal, Mitchell Holland, Mitesh \"simbucky\" Shah, Mitokens, MJBell, MKXellos, Mobius Circus, Mochkaput, Modlisznik, Mogan, Mogsta, Mohammed Almahmeed, monchoco, Monica Thompson, Monika Ferencz, Monkhound, Montana Jaro, Monty from Bohemia, Moorkh, MOPKOBKA, Morgan Mulberry, Morgan Null, Morgan Powers, Morgel, Morki's Lair, Mormord, Morrigath, Morrison Woods, Mouse Nell, Dender Cage, Mr. E, Panda, Mr. Rice, Mr. Shoe, Mr.Grey, MrBarry, MrHydier, MrNowhere, MrsGoldenNeckbeard, MrsTahlly, MsSabbo, MultipleNerdgasm, Murray Kendrick, Musely, Musicalmoonwolf, Musicatalina, mxb0, Myar and Dama, Mykola Rybak, Mylo Brehm, mymuffyincat, Kaitlyn Cottrell, Myriam El Hounihi-Dehaudt, Myriam S. Perron, Myrlin, Mythical Kiwi, n/a, n/a, N/a, N/A, N/A, N/A, N/A, na, NA, NA, Na-cia Bell. Or Bell., Nadein Rex, Nadiim ‘Dimo’ Nafei, Naesaki, Nakisa Donnelly, Nalatroz, Nanci A. See, Nancy Hutchins, naomi-nami, Naomitd, Narknit, Narnesh, Narsha, Narumi, Naryko, Nassnass, Natalia 'Elle' Orlova, Natalie Bircakovic, Natalie Canfield, Natalie June, Nataliia Blyzniuk, Natalya Grey, Natascha, Natasha Borders, Natasha Cwalina, Natasha Hedeker, Natasha Ryan Williams, Nate McCann, Nate Munson, Nathakorn Soontornworachan, Nathalie & Margaretha Andersson, Nathan Axel, Nathan Cooke, Nathan Evans, Nathan Gray, Nathan Hilditch, Nathan K., Nathan Kjos, Keeper of Bees, Nathan Lin, Nathan Strausser, Nathan W. Pitts, Nathan Weller, Nathan Zoebl, Nathaniel, Nathaniel Alson Hatten, Nayland Blake, Nchatxu Vang, Neal Fryling, neanngis, NeedlesD, Negisanmatou, Neidhart, Neil Sampson, Nekarra, Neko Griffinheart, Neko Natum, Nekotigerfire, Neli M., Nélio D. P. Ramos, Nelson Ruger, Neorider, NepNepington, Nerea Rodriguez Arce, Nert, Nevakanezza, Nevva, Newman, Nexus, Nguyễn Tuấn Hùng, Nichelle Hammer, Nicholai Avigdor Melamed, Nicholas, Nicholas Cappo, Nicholas Collins, Nicholas Eldritch McIlvride, Nicholas Gantner, Nicholas Koopman, Nicholas Liffert, Nicholas P Brueggemann, Nicholas Zakhar, Nick, Nick Barker, Nick Boughton, Nick Coish, Nick Hughes, Nick Keirle, Nick Levitsky & Abby Haines, Nick Marchenko, Nick Parenti, Nick Pawlowski, Nick Satckok, Nick Wine, Nicky P. Smalley, Nico Wenshøj, Nicola Boegli, Nicolai Worsøe, NicolaiV, Nicolas Mignon, Nicolas\"Kanata\"scalfi, Nicole Andelfinger, Nicole Cameron, Nicole Evensen, Nicole Horlings, Nicole Pillipow, Nicole S, Nicole Sands, Nicole Vickery, NightGod473, Nik Sylvan, Nika Kondratyeva, Niki and Ben!, Nikita AmicusNS Semenov, Nikita Gryzlov, Nikita Hetherington, Nikita Lashuk, Nikitas Rodatis, Nikki Earls, Nikki Flores, Nikki R Watt, Niklas Bastian, Niklas Raunio, Niko Gurule, Niko Pinard, Nikolas Wereszczyński, Nikolay Skinteev, Nikoli, Nina Angileri, Nina H, Nina Ritter, Ninhursag, Nissa Clark, Nivation, No Name, No thanks, Noah Kihata, Noah Mullette-Gillman, Nobo Bhowmik, Noctael, Noel, Noel (Ella) Willett, Noelle Sammour, Nokiry, Noklan, Nolan Barrett, Nomi Jade, none, none, none, None, None, None, None, None Needed, nonomat / nono_hero, Nora Ballard, NorD, Normin721, Norret, Norseman00, NoteNatural, Nour Tanak, NtsDK, nurseybushc, Nutmeg, Nyessia and Cirdan Drachenara, Nyusz, Nyx Redfield, OfficeLadyXD, Ohgg Gorilla emperor of earth, Okkork Kaddy, Ole Sandbæk Jørgensen, Oleg Fischer, Oleg Maksimov, Oleg Rezonenko, Ole-Morten Larsen, Olga Strizhevskaya, Oliver Hjelm, Oliver Porter, Olivia Sadler, Olivia Viola, Ollie W, Olyn, Omer Golan-Joel, OmniJerBear, Omry Shapira, Ondrej Balaz, Ondřej Havran Černý, Oneiromancy Toy Works, Onion_Ring, oniphy, Or Segal, Oscar, Oscar the wizard cat, Oskar 'Skar' van Velden, Otter Kohl, Otto Schellekens, Ox Bellows, Ozen.Maelstrom, P. Garr, Pablo MenchacaNoriega, PaBSTpAbst, Pacle Ilijašević, Paige and Travis Mazur, Painglue, Palax, PA-Leana, Pamela Shigeoka, Panda Yvan, pandalolly, Pantadeas, Papa Yomoghadodo, Paramythi, parared, parcival42, Pardodo, Pascal Tremblay, Patience Harvard, Patrick \"ThndrMge\" Cottingham, Patrick (GreyMyst538), Patrick Lawitzky, Patrick M. Loveland, Patrick Müller, Patrick P. (Xeoeon), Patrick Riley, Patrik \"ghoztkilla\" Carlvik, Patrik Spånning Westerlund, Patrizio Palluzzi, Patryk Majgat, paul, Paul \"Normy\" Normansell, Paul Davies, Paul F. Volpe, Paul Grigorenko, Paul Kramer, Paul Lange, Paul Lynch, Paul Petyo, Paul Popiel, Paul Strocko, Paul Ukhanov, Paul Völsch, Paul Williams, Paul Willing, Paul Woodard, Paula Auld, Paulo Schepeler, Paulthagorean, Paul-Thomas Ferguson, Pavel Kolesnikov, Pavel Samsonov, Pavel Shorikov, Pavel Sotnikov, Pavla V., Pavlovna, Pawel Warnenski, Paweł Zagawa, pdog117, Pedro Almeida (ExileCast), Pekka Rasanen, Periculum Mystfire, Perry A Kelly, Perry Hirst, perseph0neia, Petar Duric, Pete Repeat, Peter Hefele, Peter Igel, Peter Rausse, Peter Romano, Peter Rootham-Smith, Peter Savransky, Peter Taucher, Peter Vertesi, Petr, Petr R., Pit4Pit, Petra Fregar Dlugosova, Petra Pavlíková, Petru Cepoida, Peyton Cherry, Phantom C5, Phi-Hung Nguyen, Phil \"Doc\" Fracica, Phil Riches, Phil+Adam, Philip Curcuru, Philip Leth Møller, Philip O’Connell, Philip Ronald Sanzone, Philip Uzunov, Philipp M. & Daniel W., Philippe Donati, Philleas Possum, Phillip Baker, Phoe, Phoebe Harris, Phooka, Pier-Luc Ouellet, Pierre Kleindl, Pierre-Alexandre Yacoub, Pierre-Antoine Thévenin, Pineleaf Needles, Ping Yee, PinkFrog, Pipling, Piszczan Thomas, Pivowyn, Pixie Walker, PixieCutter, Pixing, PJ Kaszas, PlayerCharacter, Please do not include my name in credits., Please exclude me from the credits., Polina Arteev, Polly, Poppy Elizabeth Carpenter Lockwood, PossumCoffee, Pramme, PRIMARY TOWER, Princess Bob & Elder Keithulhu, Prisca, Przemysław Drozd, Pudgy Budgie, Pudgy Francis, Puppet of Fate, Pymtastic, Pytman, Q, QdNox, Qesque, Queenie2300, QueerBluenoser, Quentin Romanelli, Quickphix.ch, Quiet Vessel, Quinn Bailey, Qwynjamin (on Twitch and Facebook!), R D K Cogman, R Linwood, R. Alexander Spoerer, R. Hernandez, R. Uzzo, R.I.O.T., R.Jazeel, RabidRabbit221, Rachael Dosen, Rachael McCormick, Rachel and Nick, Rachel B., Rachel Cook, Rachel Heslin, Leif Ericson, Rachel Johnson, Rachel Lunan, Rachel M. Patterson, Rachel Mandelstam, Rachel Matthews, Rachel O, Rachel Rothenberg, Rachel Strauss, Racist Pumpkin, radio, Radka Ondrejková, Rafael Mondragón, Rafael Raposo, rafe hates caleb, Rafi Rodriguez, Ragdesalp, Rage, Ragnar Hill, Ragnos320, Rahayu, Rahkeem Wright, Rain King Studios, Raith Winters, rajdo, Rakudajin, Rami Saarinen, Ramona Tilley, Rand Kiessig, Randi Anderson, Randi Stocking, Randy Margolis, ranlam, Raphael Ekiert, Raphael Georges, Raquel Goldman, Raquel Megino Vicente, RaSaky, Ratanak Lun, Raven Daegmorgan, Raven Tongue, RavenMadGeo, Ray, Ray “vKit” Zhao, Ray Gibbs, Ray Heijne, Ray Lamb, Raymond Mazza, Raymundo Uribe Coronado, Reaglet, Real Atomsk, Rebeca Ares, Rebecca Blackmore, Rebecca Carter, Rebecca Godwin aka Chamerion, Rebecca List, Rebecca Powell, Rebecca Tengelyová-Evans, Rebecca Warren, Rebekkah Patriarche, RebeMotos, Reece, ReGee, Rehael, Reinhardt Zelkova, Remnant, Renan N. Neori, Renato Quelhas, Rene Garcia, Renee & Murphy, Renzo Leopoldo Rosado Flores, RepentantSky, Resihell, Rexor400, Rh, RhinoMouse Deer, Rhyleah, Rhys ap Ishmael, Ria Patterson, Ribbondream, Ricardo De La Cruz (BiqqHappy-), Ricardo Taboada Magallanes, Rich Bonomo, Richard \"KShots\" Ostrow, Richard C, Richard Dearth, Richard Garcia, Richard Lewis, Richard Little, Richard Nenoff, Richard Raghoo, RichterImp, Rick Tap, RickBEAR Grayson, Ricky A, Ricky Anthony Lopez, Riggswolfe, Rik Tuijnman, Riley Shea, Rin Seilhan, Rinara Aquino, ringtaleferret (Jamie Donka), Rinna F, Riva Arecol, rJ, RJ, Rob, Rob Chase, Rob 'decepticreep' Dougall, Rob Falconi, Rob Gibble, Rob Hennessy, Rob Lorino, Rob Lowry, Rob Thomasson, Rob Wallace, Robbie, Robert \"Seeker\" Kupcek, Robert Buurman, Robert Drennan, Robert E. Schmitz, Robert Fraser, Robert Hatch, Robert Massengale, Robert Pusok, Robert Reid, Robert Riggs, Robert S. Paul, Robert Sigafoos, Robert Solly, Robert Wetherall, Roberto Guerra Echavarria, Robin, robin @acccent, Robin Gonzales, Robin H., Robin Lee Chadwick, Robin Remmers, Robin Stanberry, Robyn Leigh Shipton, Rocky Patek, Rodabaugh, Rodolfo \"Peshk\" Forge, Rodrigo Losada, Rodrigo Santos, Rodrigue Delrue, Roee Lopata, Roger Haxton, Roger Morneau, rogue fithp, Rogulynx, Roild, Roksana Salamon, Roland Rząsa, Rolf S. from Bocholt/Germany, Rollin Salabery, Romain Delelis, Roman \"Mango\" Ostrovsky, Romana Gruber, Romans Malinovskis, Ron Bialkowski, Ron S, Ron Z, Ronald Madplume, Ronan Plessis, Roni \"The Gainz Goblin\" Ortolan, Roofus98, Rooster Hogfish, Rootfireember, Rorudo, Rosalumina, Rosanna Johansson, Rose Denose, Rose Moxley, Rosie Devlin, Ross Dougan, Ross Holmes, Rowan Lee, Roxana S, Roxanne Rebusit, roxy the jester, Roy Morgan, Royal Vizier: Yusuf, RPGabelin, Pixel, Pumpky, RTGGary, Rubén Illodo Brea, Rudy Martin, ruffywhy, Rule of Three, Rumena & Azad, Rune, runicmagitek, Ruslana S, Ruston Ropac, Rusty Katt, Rusty Waldrup, Ruth Gibbs, Ruth Thorne, Ry and Denise Moore, Ryan \"Dragon Dracini\" von Rosenberg, Ryan 'Azreal' W, Ryan Cunningham, Ryan Ellison, Ryan Kent, Ryan Krejcik, Ryan Sanford, Ryan Schoonover, Ryan Seymour, Ryan Sharp, Ryan Sigurdson, Ryan Thompson, Ryan Wade, Ryan Winston, Ryan Wooten, Ryan Young, Ryder Johnson, Rye, Ryhia, rykaine, S. L. Padilla, Sabin Riokusa, Sabina Walter, Sabine Lehnertz, Sabrina Dunn, Sabrina Lindsay, Sachal Ali, sadwick, Safi A. Credlin, Sage Pirotess, Sailor Trashface, Saira Shapman (TheMuttArtist), SaiZaro, Salem O'Rourke, Sally, Sam \"morphlogic\" Shaw, Sam dc, Sam Linde, Sam Loesch, Sam Pennifold, Sam Recker, Sam Woodward, Sam Zuckerman, Samantha Gebbie, Samantha H, Samantha Hamilton, Samantha Helwig, Samantha Leigh, Samantha Stamper-Sousa, SamanthaBee, Sami Grant, Samteddeh, Samuel Blais, Samuel Parsons, Samuele Ragazzini, Samus Burke, Sander de Graaf, Sandra Lensen, Sandwich, Sandy \"Athyna\" Jordan, Sandy Davidson, Sanguis Blue, Sanju, SansSkill, Santa Vucina, SapphireSeas, Sappho Thornback, Sara \"Bagel\" Nagel, Sara Desharnais, Sara Gales, Sara Giovenco, Sara Glassman, Sara Gulbin, Sara Maxine, Sarah (EarlGreyJedi), Sarah Bitteker, Sarah Brantley, Sarah Elkins, Sarah Fellabick, Sarah Gardiner, Sarah Glaser, sarah han, Sarah Hunt, Simon Inglis, Sarah J Brown, Sarah Kingdred, Sarah Leach, Sarah Meyers, Sarah Moody, Sarah Powell, Sarah Roberts, Sarah S, Sarah Stern, Sarai Blake, Saras Bad Ideas, SarcasticQueen4u, Sasha Rivera, Saskia Reiser, Satap, Saúl Mostacero, saurfang, Savannah D., Sayri Daniel Yépez Izurieta, Schmurtz, Scott D Schaffer, Scott Dockery, Scott Galbraith, Scott Johnson, Scott L Howell, Scott Mohnkern, Scott Nendick, Scott Wiggins, Scout K, Seaghda, Sean \"Ashen Temper\" Dahlberg, Sean \"Peef\" Green, Sean 'Ariamaki' Riedinger, Sean Dooley, Sean Everette, Sean Hough, Sean Koelling, Sean P. Wallace, Sean Pelkey, SeanBahamut, Sebastian Boothroyd, Sebastian Montano, Sebastien Crete, Sef McCarter, Seír Fortún, Seiromem, Selim13, Semy Sin, Senerio, Senoj Tegdirb, Sentient Waffle, Seow Wan Yi, Serafina_X, Seraphim_Fallen, Seraphina Malizia, Seregeth, Serenity Rockwood, Serenity X, Sergei Avdeev, Sergey Droba, Sergey Vlasenko, Sergey Volkov, Sergi Puerta, Serhat Türkel, Sermara2809, serpentes, Seth, Seth \"saertahr\" Arar, Seth Davis, Seth Hanon, Seth Richardson, Sh1bbyl4n3, Shad Bolling, Sham \"Dantallian\" Suri, ShaMan-H_Fel, Shamax, Shane Kelley, Shannon Hillman, Shannon Saldin, Shardt, Sharp End of the Dog, Sharra Fitzgerald, Shasta Foley, Shawman465, Shawn Fortier, Shawn Kays, Shawn Smith, Shawyn moller, Shay J, ShayHulud, Shayna DeRienzo, Shbai, Sh'Baniel al Ruff, Sheldon Palmer and Meghan Lamsey, Sheogorath, Shids, shimoda, Shinka GLKT, Shtocil', Shu Chen, ShuraKuya, Shylia See, Sigvalk Blackthorne, Silent, Sillymoose, Silmael, Silmarie, Silshad, Silvan Wendland, Simon \"Plantrex\" Cox, Simon \"Tywele\" Bingel, Simon Locke, Simon SUDRE, Simone Ammazzalorso, Sindar, Sinead, Sini, Siobhan and Hella Woods, Sir Dohnok Maplewood & Sir N0ohk no0HK, SirBibbles, SirGeebz (Gavin Kucera), SJPaladin, SkebbZ, Skeleton, skinnedteen, SKnowles, Skylos, Slade Eide-ettaro, Slipy, Slyfox, Smaoh, SMIBBO, smileanja, Smiley McCloseToDeath, SneakyWeasel, Snuggle luffs, Sodori, Sofia Franksdatter, Sofia Giammalva, Sofia Z, Soft Shoe, SoftTofuNing, Sokolov Vladimir, SolemnPaladin (Daniel Howard), Solstorm, Sonja Tapio, Sonntam, Sonny Kingwell, SonNyan, Sophia Derugen-Toomey, Sophia Mathias-Porter, Sophia Openshaw, Sophie and Henry Poore, Sophie Cook, Sophie Dameron, Sophie Long, Sorce | Joel, sorenthewild, Souhaib Haouache, Sparkle_Salsa, Sparrowhawk, Special Summon, Spencer Rubin, Spenser, SpiderMafia, Spike Schwab, Spira, spiritbane, SpitefulFox, Spoony the Bard, Spudmonster, Spyros Lalos, Squig, sssupersssnake, Stacia, Stacie Arellano, Stacy Psaros, Stanislav Starykh, Star DeVine, Stary.arts, Stefan Alexander, Stefan Bold, Stefan Milenkovic, Stefan Rosenkranz, Stefan Schreiber, Stefan Severin, Stefan Sumsky, Stefan Wolters, steffan knott, Steodog, Steph & Dan Stanley, Steph Krahe, Stephan Drewianka, Stephan Lemire, Stephanie G, Stephanie Habicht, Stéphanie Huxley, Stephanie Rapp, Stephanie Sinclaire, Stephen Breeding, Stephen C.S. Frizzell, stephen coyle, Stephen M Accetta, Stephen Tyler, steriletech, Sterling Wild Pigeon Treadwell, Steve & Vicki Baylus, Steve “smoth” Smith, Steve Acheson, Steve Fostet, Steve Godrich, Steve Hands, Steve Keiser, Steve Leo Ranson, Steven Auyeung, Steven Correia, Steven Eaddy, Steven Goldman, Steven Lietaert, Steven Moy, Steven Nicklas Vistoft Nielsen, Steven Walker, Stitch77100, StoakedGamer, StrangeCat, Stras A, Stratavos, Stuart McKay, Stuart Wright, Studio & Mochi, Studio Mothmen, Su'ad Shoukri (Allyenna), Substanz-Alpha, Suellen Almeida, Sugpah, Suicidemon, sunincinerator, Sunni Kibou, supertnt, surtweig, Sven Wiese, Sweetkala, Swoggles, SwordFirey, Syndicare, Syster, Szturmowy, Szumilas MD, T. Chan, T.tv/grimlockt, Taelsin, Tamara d'Auvergne, Tamas Krasznai, Tamsin Page, Tanel Tiits, TangentPine7767, Tania Kurbessoian, TankTheta, Tannyerz, Táňucha, Tanya George, Tanya Itkin, Valery Belayev, Tao, taopug, Tapio Berschewsky, Tarnumius, Taryn Pirelli, Tasha Rothrock, Tatiana “Bootz” MacGregor, Tatiana Pagan, Tats Hernandez, Tatterdemalion, Taylor, Taylor & Hunter Huckstep, tcmsurfer, Teagrrs, TeamOnionBun, tecegirl, TechnoDruid, Ted Kremenek, TehVau, tengokujin, Tensileae, Terin Altari, TerraIncogvano, Teseros, Peter Patrnčiak, Tess LaCoil, Tetyana Nizhelovska, Texakan, TG, Thaddeus Awotunde, ThanatosHusky, ThatsTheSpirit, The Brotherhood of the Gray Wolf, The Cedar Witch, The Communist Cockatoo, The Crowbar, The Great Leveler, The Great Wizard Ardent, The Greatest Seal, The Iron Witch, THE Kevin, The Nebulous Newbauers, The One They Call E, The RPGenius, The Tafoyas, the115project, Thea Flurry, Thea Nelson, TheEpicPuDDinG, TheHoudhini, Thelonius Bashford, Theo Gerome, Theodore Tkaczevski, Therese, TheSnowedOne, Thiago Borne, ThisIsShawn, Thomas, Thomas Barnes, Thomas Chambin, thomas delrue, Thomas Edmund, Thomas K, Thomas 'Kranodor' Hahn, Thomas Martin, Thomas Shakespeare, Thomas Soenen, Thomas Waymouth, Thomas Willenbrock, Thraish, Threemoons, thrinari, Thuin, Thunder Manatee, Thyra wetzels, TiannaMortis, Tianyi \"Venceremos\" Wang, Tib Roe, Tidal Resonance, Tieg Zaharia, TigBidE, tiinimarini, Tim Franklin, Tim Frobisher, Tim M, Tim Mushel, Tim Runde, Tim Strange, Timm Thaler, Timothor, Timothy Esposito, Timothy Garvin, Timothy Merrill Goh, Timur Valiev, Tina, Tina Nigmatullina, Tirso Fernandez, TisGavin, Tj Leach, tlegg, tobes31415, Tobi Tanni, Tobias Dalton, Tobias Gasser, Tobias Kahlenberg, Todd Bean, Todd S., Tom & Sharon Hurst, Tom Davidson, Tom Grant, Tom Lichtenberg, Tom Mischief, Tom Tafeit, Tom Whiteley, Tom Wiener, Toman_tsk, Tomaraya, Tomas Filadelfia, Tommy Rollo, Tony \"Frosty\" Welch, Tony & Lilette, Tony Li, TonyNStark, Tori Thomason, Tóth \"YTheon\" József, Tracey Shrier, Dorian Heller, Tracy Hirano, Tracy-Anne Moore, Traized, Travis Swenson, Travis Wade Smith, TrebleMaika, Trent Brossman, Trent Stollery, Trevor J-B, Trevor Perry, Trevor Randall, Trina Kurilla and William Hopp, Trish Pettinati, Tristan \"Twitchy\" Wolfe DeRoches, TristaR Tristan PIETROPAOLI, Troxking, Troy Davis, Troy Robinson, Truga, Tsukiyuri, Tsvetelina Čížek, Tuesdae Cheyenne, Tully McKinley, TunnelDump, Tuomo Vayrynen, Twilight historian, TwinMinds, Ty Larson, Ty Wildwood, Tyger Cohen and Anya Kashtanova, tyler burns, Tyler Cox, Tyler Hinkley, Tyler Maximus Dean, Tyler Menadue, Tyler Potter, Tyler Sherman, Tyler Sternbach, Tyler Wood, Tylerutsu, Tyshasha, Ulrike \"HeavensRevenge\" Georgi, Unaru, Unraveler, Uriah Blatherwick, Uros Tojagic, Ushankapotato, Vadakuma, Vajda Adrian Botond, Val Palmer, Valdacil, Valentin \"Cie Kite\" V., Valentin Marin, Valeriya Bortsova, Valkyrie and the Bear, Vanarius, Vanella Mead, Vanessa Espinosa, Vanessa Olivares, VanLazarus, Vasilis Kioustelidis, Vayne, Vee Lewandowski, Veilleur, Velin Markov, Velthur Pendell, Venita Pereira, Venron, Vénus Bejeur, Vera, Verity and Isabella Koxvold, Verneri Åberg, Veronica Smith, Veronica/Hornet, Veronika Sereda, Vicki \"Mystyeyes\" Heilbronn, Vicky Bacon, Victor \"Plukh\" Denisov (or, if Cyrillic is possible, Victor \"Плюх\" Denisov), Víctor Álvarez Lera, Victor Zhivotovskii, Victoria Hoyle, Victoria Misener, Victoria Sawyer, Victus Brown, Vidákovics Bálint, Vieil Ogre, VikAva, Viktor Budusov, Vin Villon, Vince Malatesta, Vincent, Vincent Nicopolsky, Violet Flohr, Virginia Vega, Virginie G-D, Viridian, VIRULICHT, Vitalii, Vitaly Matviyuk, vitaly.levykin, Vittoria Manfredi, VJ Virtanen, Vladimir, Vladimir BeheSQ Suvarina, Vladimir Ermakov, Vladimir Pavlov, Vladimir Tuchin, Vlasij Bulcsu, Vögte, Vojtěch \"Fafrin\" Pikal, Volkert de Villeneuve, Votigern Apmorten, Vrakil, Vrbalek, VTC, Co,, Vyacheslav Skripin, Vylains, W. A. Boyer, W. Dean Thrasher, Wade \"SFLUFAN\" Steel, Wade Jones, WalruScrote, waterdragon511, WaywardWorldhopper, Weed, Frey, Weisseritter, Welwø, Wendi Kidd & Rigel, Wenny Patricia T., Wesley Hurt, Whit Barringer, Whit Johnson, Whitney Pace, Wick, Wicksell Metellus, wieldymouse, Will, Will & Mel, Will (Won't), Will C, Will Venden, Willard Brannen, Katherine Shaw, William \"Bill\" Murphy, William Adams, Mika Hafter, William English III, William King, William Lamberti, William Leung, William Meeks, William Miille, willie and claire, Willie Escaba, Willis Ellis III, Willow, Willow River, Winkie Boy, Winston \"4th3ist\" Chang, Winter and Nova, WLC, Wolfger Vlad, Wolftitties, Wolfy, Woodyflash, Worlds of Cyn, Wubbles, Wurmish, wywern, X, Xan Larson, Xavier Lambercy, Xena Hiwatari, Xeno, Xhanior, XiXi, Xorph, Xtine, Xtrykyx, Y. K. Lee, Yahuda, Yan Feng Low, Yana & Myshkin, Yang Kaerien, Yangas, Yanick Maltais, Yanina Wolfe, Yanko Spasov, Yann Gosset, Yannick Romey, Yanphi, Yasmeen and Nick, Yen Adamenkova, Yes, I am Chris, Yiota Vasileiadi + Christos Vrouvas, Yoana \"SammyYes\" Badzheva, yole, YonPoe, YourAveragePsych, Ysh, Yu Evaery, Yuri Klebanov, Yuriy Gorodilov, Z, Zach Danyluk, Zach Thelen, Zach Wheat, Zachary Borovicka, Zachary Chin, Zachary Senchuk, Zack \"Lrbearclaw\" Kirback, Zack & Bethany Risley, Zack Samuels, Zackery N Dierking, Zaddum, Zadia Valenze, Zagregarian88, ZahanMara, Zahhy, Zahra H, Zaira Bravo Sánchez, Zak Klehr, Zalev, Zalintha, Zanania, Zanshlou Carmina Hood, ZapNightGaming, Zeb Berryman, Zeb L. West, ZelAira, Zelda Dreamweaver, Zena Cultrera and Caroline Yates, Zeph Phillips, Zerlina Zsolczay, Zersumae, Zessquarra, Zharmad, Ziffy ~ Zifnabbe (Tom Deprez), Zlicak, Zoë Ambrosia, Zoe Brodsky, Zoe Y., Zorzamoth, Zosia Pilecka, Zugeva, Zunhwyvar, zuypikamon, Zuzanna K, Zuzanna Żak, Zvigez, Алексеев Андрей Геннадьевич, Алексей Пузевич, Аро́н, Владимир Куляшов, Георгий Минералов, Дмитрий Муратов, Дмитрий Мячин, Елена Чистова, Живляков Руслан, Игорь Калашников, Константин Кудрявцев, Максим \"Watcher\" Крылов - Maxim \"Watcher\" Krylov, Мария (Пирожочек), Михаил Данилов, Михаил Моргунов, Петр Безуглый /Petr Bezuglyy, Юрьев Виталик, Аня, 四谷ディノ, 堀江 郁子, 夏谷実"
+Literature:
+  Name: Literature
+  Titles:
+    - Title: Shumov K.E. «Bailichkas and Byvalschinas» – Permskoe knizhnoye izdatelstvo, 1991
+    - Title: Borisova A.N., Prokosheva K.N. «Dictionary of Perm Dialects» – Permskiy Gosudarstvennyy Pedagogicheskiy Universitet, 1999
+    - Title: Chernykh A.V. «Russian Folk Tales of the Perm Krai» - Mamtov, 2012
+    - Title: Chernykh A.V. «Bailichkas of Kuyeda» - Uralskoe otdelenie Rossiyskoi Akademii Nauk, 2004
+    - Title: Krinichnaya N.A. «Russian Mythology» – Akademicheskii proekt, 2004
+    - Title: Krinichnaya N.A. «The Peasant and the Nature in the Light of Mythology» – Russkii fond Sodeistviya Obrazovaniju i Nauke, 2011
+    - Title: Serebrennikov V.N. «Vernakular Zagovors Recorded in Okhansky Uyezd of Perm Gubernia» – Perm, 1918
+    - Title: Teplouhov O.A. «Kabbalah or Petition to the Forest Tsar (from the Permian Superstitions)» – Perm, 1895
+    - Title: Rybakov B.А. «Paganism of the Early Slavic People» – Akademicheskii proekt, 2013
+    - Title: Saharov I.P. «The Legends of the Russian People» – Institut russkoi tsyvilizatsii, 2013
+    - Title: Gromyko М.М. «The World of the Russian Village» – Molodaya gvardiya, 1991
+    - Title: Chagin G.N. «History of the Urals before the End of the XIX Century» – Permskiy Gosudarstvennyy Universitet, 2007
+    - Title: Maksimov S.V. «Unholy, unknown and holy forces» – Etnograficheskoe bjuro knyazya V.N. Tenisheva, 1903
+    - Title: Zinoviev V.P. «Mythological Stories of the Russian Population of the Eastern Siberia» – Nauka, 1987
+    - Title: Cherepanova О.А. «Mythological Stories and Legends of the Russian North» – Saint Petersburg, 1996
+    - Title: Medvedev Y.М. «How a Muzhik Caught a Witch» – Nizhny Novgorod, 1992
+    - Title: Tihov V. «Scary Stories» – Ural-Press, 1993
+    - Title: Hristoforova O.B. «Kolduns and Their Victims» – Rossiyskiy gosudarstvennyy gumanitarnyy universitet, 2010
+    - Title: Terehina N.N. «Wedding Songs of the Great Perm» – Permskiy Gosudarstvennyy Pedagogicheskiy Universitet, 2011
+    - Title: Antonov D.I., Maizuls М.R. «Anatomy of Hell – a Guide to the Old Russian Visual Demonology» – Forum, Neolit, 2013
+    - Title: Afanasjev А.N. «The Witcher and the Witch» – Tipografiya Aleksandra Semyona na Sofiiskoi ulitse, 1851
+    - Title: Yudin А.V. «Onomasticon of Russian Zagovors» – Moskow, 1997
+    - Title: Rusinova I.I. «The Images of Sorcery and Witch Doctors in the Dictionaries of Perm Dialects» – Vestnik PGU, 2011
+    - Title: Podjukov I.А. «The Symbolism of the Instruments of the Peasant Labour in the National Culture of Perm Krai» – Trudy KAEE PGGPU, 2019, issue XV
+    - Title: Petkevich А.V. «The Water Sacrifice in Russian Cultural Tradition» – Zhivaya starina, 2006, issue 3
+    - Title: Podjukov I.А., Permyakova L.А. «The Mushrooms of Prikamye in the National Denominations and Descriptions» – PGPU, 2012
+Thanks:
+  Name: Thanks
+  Titles:
+  - Title: to Perm State College of Arts and Culture, Perm Historical Museum, Architecture-ethnographical museum "Khokhlovka", Alexander Vasilyevich Chernykch, Mathew Beletsky for appearing in this world, Mariya Oreshkina and all players, that helped to find ingame bugs, our loved ones and relatives, and you for finishing the game and reading through all the credits! 

@@ -1,0 +1,27 @@
+﻿IdName: Week3Day3LoudRoom
+Name: Шумная горница
+Description: Какой-то шум доносится. Уж не черти ли завелись?
+Scene: WeddingSaunaEvening
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  MusicOverride: event:/Music/ExploreLight
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day3/Loud/Intro
+  Exploration: Week3Day3LoudRoom
+  NoExplorationMusic: true
+  CameraOverride: CMSutkiCamera
+  FoolGame:
+    TeamPlay: true
+    CardsCount: 36
+    PlayerCount: 4
+    PossiblePlayers:
+    - Peasant
+    - Samson
+    - Peasant2
+    - Peasant3
+    - Peasant4
+    DialogueFoolWin: TextQuest/Durak/MerchantGameWin
+    DialogueFoolLose: TextQuest/Durak/MerchantGameLose
+RequiredLocations:
+- Week3Day3Yard
+

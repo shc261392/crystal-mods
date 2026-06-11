@@ -1,0 +1,7 @@
+﻿Name: 狼的盛宴
+Description: 这一道血一直进了林子里边的这片空地。我好像听到骨头嘎吱嘎吱响的声音，太吓人了！
+ShortQuestDescr: 跟着血迹走
+LevelConfig:
+  Battle:
+    Name: 雠特群
+

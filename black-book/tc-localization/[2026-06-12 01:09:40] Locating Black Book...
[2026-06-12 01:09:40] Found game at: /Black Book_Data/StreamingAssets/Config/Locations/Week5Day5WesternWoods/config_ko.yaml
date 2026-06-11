@@ -1,0 +1,8 @@
+﻿Name: 서쪽 숲
+Description: 이 오래된 숲은 매우 넓은 것으로 잘 알려져 있다. 여기서 고사리 꽃을 찾아봐야겠다.
+ShortQuestDescr: 고사리 꽃 찾기
+LongQuestDescr: 의례에 필요한 물건을 전부 손에 넣었습니다. 이제 꽃을 찾을 수 있는 숲으로 가기만 하면 됩니다.
+LevelConfig:
+  Battle:
+    Name: 쿠팔라 초르트
+

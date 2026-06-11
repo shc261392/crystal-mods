@@ -1,0 +1,6 @@
+﻿Name: Corridor
+Description: I'm close! All that's left is to walk down this long corridor.
+LevelConfig:
+  Battle:
+    Name: Corridor Shishigas
+

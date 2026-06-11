@@ -1,0 +1,6 @@
+﻿Name: 퀴퀴한 길
+Description: 이 길을 따라 교차로로 갈 수 있다.
+LevelConfig:
+  Battle:
+    Name: 숲 정령
+

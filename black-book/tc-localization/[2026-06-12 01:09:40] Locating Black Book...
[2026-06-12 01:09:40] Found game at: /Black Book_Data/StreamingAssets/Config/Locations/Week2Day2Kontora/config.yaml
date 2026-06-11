@@ -1,0 +1,12 @@
+﻿IdName: Week2Day2Kontora
+Name: Контора Усть-Боровского завода
+Description: В этом здании управляющий работает, заводом заведует.
+Scene: SaltFabricCabinet
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  NoExplorationMusic: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day2/Kontora
+OnomastikonItems:
+- Onomastikon/Encyclopedia/22
+

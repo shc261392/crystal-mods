@@ -1,0 +1,15 @@
+﻿Name: Разоил
+AbilityType: RAZOIL_ROGUELIKE
+Upgrade: RAZOIL_UP
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: Razoil
+GoldCost: 44
+Gesture: true
+Effects:
+- EffectType: TAKE
+  MinValue: 2
+- EffectType: IMMEDIATE
+

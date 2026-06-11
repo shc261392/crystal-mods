@@ -1,0 +1,27 @@
+﻿IdName: Week1Day7OldChapel
+Name: Старая церковь
+Description: Раньше в этой деревянной церкви службы служили, а сейчас она заброшенной стоит. Может в ней и нечисть сидеть, могут и колдовские предметы быть.
+Scene: ChurchEmpty
+LevelConfig:
+  MixerSnapshot: snapshot:/Church
+  Battle:
+    Name: Черти заброшенной церкви
+    Enemies:
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonBooker
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day7/OldChurch
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 3
+    PossiblePlayers:
+      - Demon
+      - Demon
+    DialogueFoolWin: TextQuest/Durak/WinBattleUtil
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+RequiredLocations:
+- Week1Day7Abachkin
+

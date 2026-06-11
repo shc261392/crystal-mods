@@ -1,0 +1,6 @@
+﻿Name: 들판
+Description: 들판 위로 날아가면 온 체르딘 우예즈드가 한눈에 들어올 거다!
+LevelConfig:
+  Battle:
+    Name: 이고르 할아버지
+

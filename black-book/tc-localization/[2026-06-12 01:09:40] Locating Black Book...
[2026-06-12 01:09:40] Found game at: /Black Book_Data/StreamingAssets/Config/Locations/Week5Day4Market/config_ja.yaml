@@ -1,0 +1,6 @@
+﻿Name: イスコラの市場
+Description: かつて、この市場にはたくさんの物が売っていた。市場は今も開いているのだろうか？
+LevelConfig:
+  Battle:
+    Name: チョルトの商人
+

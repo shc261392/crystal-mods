@@ -1,0 +1,8 @@
+﻿Name: 알렉산더의 사무실
+Description: 알렉산더가 사무실에 있다. 내가 풀려난 줄은 꿈에도 모른다.
+ShortQuestDescr: 약초와 유물로 돌아가기
+LongQuestDescr: 알렉산더가 당신의 모든 재산과 함께 검은 책을 가져갔습니다다! 책은 나중에 방적공에게서 받으면 되지만, 일단은 당신의 물건을 되찾아야 합니다.
+LevelConfig:
+  Battle:
+    Name: 삼위일체
+

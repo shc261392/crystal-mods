@@ -1,0 +1,6 @@
+﻿Name: Bride's courtyard
+Description: Some lamenting should be done before the bride's banya ritual. It's also proper to decorate the banya with ribbons and birch branches.
+LevelConfig:
+  Battle:
+    Name: Domovoi
+

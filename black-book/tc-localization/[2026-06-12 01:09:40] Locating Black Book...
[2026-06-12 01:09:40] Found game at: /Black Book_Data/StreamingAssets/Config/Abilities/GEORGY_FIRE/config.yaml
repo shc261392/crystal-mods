@@ -1,0 +1,25 @@
+﻿Name: Егорий Огненный
+AbilityType: GEORGY_FIRE
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+Sprite: GEORGY_FIRE
+GoldCost: 131
+Effects:
+- EffectType: STATUS
+  MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal6OrderWhite
+    MissTrigger: Seal6OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: Prayer
+- EffectType: SACRIFICE
+  MinValue: 10
+  MaxValue: 10
+- EffectType: KRADA
+

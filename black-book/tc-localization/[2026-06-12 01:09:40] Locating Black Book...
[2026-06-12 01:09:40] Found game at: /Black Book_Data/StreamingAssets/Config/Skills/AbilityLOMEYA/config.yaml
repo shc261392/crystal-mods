@@ -1,0 +1,10 @@
+Name: LOMEYA
+SkillName: AbilityLOMEYA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityOGNEVITSA
+SpriteOffsetX: -34.4
+SpriteOffsetY: -34.4
+Effects:
+- Type: AbilityUnlock
+  StringData: LOMEYA_ROGUELIKE

@@ -1,0 +1,1 @@
+Name: Помощь святых ISkillName: RoguelikeHelpOfSaints1Sprite: HelpOfSaints1SkillDescription: Увеличивает защиту в словах на {CalculatedEffect}RequiredSkills:  - AbilitySELAFIILEffects:- Value: 1  Type: AdditionalDefence

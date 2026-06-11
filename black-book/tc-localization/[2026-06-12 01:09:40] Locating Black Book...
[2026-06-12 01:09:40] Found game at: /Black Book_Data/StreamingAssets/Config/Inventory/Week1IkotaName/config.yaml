@@ -1,0 +1,7 @@
+﻿Name: Имя из святцев
+InventoryItemName: Week1IkotaName
+Description: Один из предметов, необходимых для освобождения девушки из бани
+Flavour: Имя из святцев, которое вы получили в Вильгорте
+Sprite: Week1IkotaName
+NotForSale: true
+CanNotBeDropped: true

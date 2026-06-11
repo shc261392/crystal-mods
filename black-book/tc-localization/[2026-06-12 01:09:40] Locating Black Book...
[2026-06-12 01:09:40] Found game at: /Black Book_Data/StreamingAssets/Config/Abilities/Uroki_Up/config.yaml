@@ -1,0 +1,17 @@
+﻿Name: Уроки +
+AbilityType: UROKI_UP
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: Uroki
+GoldCost: 13
+Effects:
+- MinValue: 4
+  MaxValue: 4
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

@@ -1,0 +1,9 @@
+Name: IGLA
+SkillName: AbilityIGLA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: IGLA

@@ -1,0 +1,9 @@
+﻿Name: Мутовка
+InventoryItemName: Mixer
+Flavour: Раньше-то всяко диканилися, чудили. Маскарованные снаряжались, бегали по домам-то, мутовкой ворожили.
+Sprite: IconMixer
+Cost: 100
+Effects:
+- Value: 1
+  Type: ReduceDamage
+

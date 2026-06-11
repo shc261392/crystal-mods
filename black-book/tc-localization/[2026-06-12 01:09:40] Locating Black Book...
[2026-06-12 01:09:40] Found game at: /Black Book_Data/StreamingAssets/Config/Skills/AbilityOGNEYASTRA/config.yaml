@@ -1,0 +1,10 @@
+Name: OGNEYASTRA
+SkillName: AbilityOGNEYASTRA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityUBEITSA
+SpriteOffsetX: 0
+SpriteOffsetY: 0
+Effects:
+- Type: AbilityUnlock
+  StringData: OGNEYASTRA

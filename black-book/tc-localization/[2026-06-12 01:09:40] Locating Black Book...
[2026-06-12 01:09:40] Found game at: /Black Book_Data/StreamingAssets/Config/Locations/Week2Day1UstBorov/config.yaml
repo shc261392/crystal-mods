@@ -1,0 +1,24 @@
+﻿IdName: Week2Day1UstBorov
+Name: Село Усть-Боровское
+Description: Заводское поселение. Тут живут семьи рабочих и управляющий.
+Scene: Forest_5
+LevelConfig:
+  MusicOverride: event:/Music/ExploreLight
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Черти на окраине
+    Enemies:
+    - Type: DemonPoison
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonBooker
+    - Type: DemonSmall
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day1/UstBorov
+RequiredLocations:
+- Week2Day1Telegraf
+OnomastikonItems:
+- Onomastikon/Songs/3
+

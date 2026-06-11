@@ -1,0 +1,31 @@
+﻿AssetName: Obderiha
+Health: 150
+Mana: 4
+Initiative: 1
+MoneyMin: 36
+MoneyMax: 54
+Experience: 1500
+StartingStatusEffects:
+- StatusEffectType: Master
+  Duration: 999999
+  Permanent: true
+  Unremovable: true
+- StatusEffectType: DefenceGive
+  Duration: 5
+  Permanent: true
+  Unremovable: true
+  HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: OBDERIHA_ATTACK
+    TargetType: ENEMY
+  - AbilityType: OBDERIHA_SUMMON
+    DecisionType: SUMMON
+    TargetType: SELF
+  - AbilityType: OBDERIHA_HEAL
+    TargetType: SELF
+  - AbilityType: OBDERIHA_DISENCHANT
+    TargetType: ENEMY
+  CastingType: UNIT_HARDCODED
+Name: Обдериха
+

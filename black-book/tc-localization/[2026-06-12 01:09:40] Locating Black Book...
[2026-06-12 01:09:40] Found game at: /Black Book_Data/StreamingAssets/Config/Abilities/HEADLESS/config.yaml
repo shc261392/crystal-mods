@@ -1,0 +1,25 @@
+﻿Name: Без головы
+AbilityType: HEADLESS
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: HEADLESS
+GoldCost: 43
+Effects:
+- EffectType: KRADA
+- EffectType: DEFENCE
+  MinValue: 6
+  MaxValue: 6
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal5OrderWhite
+    MissTrigger: Seal5OrderWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 1
+  StatusEffectType: AttackAbsorb
+  StatusPermanent: true
+

@@ -1,0 +1,22 @@
+﻿Name: Камень булатный
+AbilityType: DAMASK_STONE
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: DEBUFF
+AbilitySpellType: STATUS
+Sprite: DAMASK_STONE
+GoldCost: 26
+Effects:
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal3KeyBlack
+    MissTrigger: Seal3KeyBlack
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: DamageOnDefence
+  StatusPermanent: true
+

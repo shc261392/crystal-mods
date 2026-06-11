@@ -1,0 +1,25 @@
+﻿Name: Откупиться
+AbilityType: PAY_OFF
+AbilityBookPartType: KEY
+TargetType: ENEMY
+Intention: DEBUFF
+Sprite: PAY_OFF
+Effects:
+- EffectType: HEAL
+  MinValue: 99
+  MaxValue: 99
+  ForceTarget: SELF
+- EffectType: REMOVE_STATUS
+  MinValue: 99
+  MaxValue: 99
+- EffectType: GIVE_MONEY
+  MinValue: 99
+  MaxValue: 99
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

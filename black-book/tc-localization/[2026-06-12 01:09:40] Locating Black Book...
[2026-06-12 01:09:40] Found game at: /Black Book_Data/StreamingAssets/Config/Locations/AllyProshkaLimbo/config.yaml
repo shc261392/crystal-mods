@@ -1,0 +1,9 @@
+﻿IdName: AllyProshkaLimbo
+Name: Северный ветер
+Scene: Limbo
+LevelConfig:
+  Exploration: AllyProshkaLimbo
+  CinematicIntro: true
+  MusicOverride: event:/Music/Voipel
+  MixerSnapshot: snapshot:/Limbo
+

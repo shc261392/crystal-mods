@@ -1,0 +1,24 @@
+﻿Name: Красованье церквам
+AbilityType: BEAUTY_CHURCHES
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: BEAUTY_CHURCHES
+GoldCost: 24
+Effects:
+- EffectType: STATUS
+  MinValue: 6
+  MaxValue: 6
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal4OrderWhite
+    MissTrigger: Seal4OrderWhite
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: KradaDefence
+  StatusPermanent: true
+- EffectType: KRADA
+

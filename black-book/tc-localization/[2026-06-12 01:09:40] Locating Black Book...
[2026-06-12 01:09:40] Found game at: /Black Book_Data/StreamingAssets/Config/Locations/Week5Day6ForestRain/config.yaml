@@ -1,0 +1,23 @@
+﻿IdName: Week5Day6ForestRain
+Name: Ливень в чаще
+Scene: Forest_3
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Нечистая сила
+    Enemies:
+    - Type: DemonFly
+      LevelSpawnPointType: EnemyCenter
+    - Type: SwampFire
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day6/ForestRain/Intro
+    Outro: TextQuest/Week5/Day6/ForestRain/Outro
+  Exploration: Week5Day6ForestRain
+  CinematicIntro: true
+  MusicOverride: event:/Music/DialogueSuspense
+  NoExplorerSpawn: true
+LightingType: STORM
+MoonType: NONE
+

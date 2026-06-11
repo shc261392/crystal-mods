@@ -1,0 +1,19 @@
+﻿Name: Атака теней
+AbilityType: FILIMON_SHADOWS
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: FILIMON_SHADOWS
+GoldCost: 3
+Effects:
+- EffectType: DAMAGE_FIERCE
+  MinValue: 6
+  MaxValue: 6
+  NumericData: 2
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+  RepeatCount: 2
+

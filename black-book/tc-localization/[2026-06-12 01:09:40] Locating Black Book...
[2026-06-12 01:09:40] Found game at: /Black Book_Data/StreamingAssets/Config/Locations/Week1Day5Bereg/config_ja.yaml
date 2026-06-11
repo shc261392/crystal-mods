@@ -1,0 +1,7 @@
+﻿Name: コルヴァ川の土手
+Description: ヴィルゴルトに向かう道はコルヴァ川の土手に沿って蛇行していて、まるで風景画のようだ。
+ShortQuestDescr: 谷の魔物を倒す
+LevelConfig:
+  Battle:
+    Name: 不良仲間
+

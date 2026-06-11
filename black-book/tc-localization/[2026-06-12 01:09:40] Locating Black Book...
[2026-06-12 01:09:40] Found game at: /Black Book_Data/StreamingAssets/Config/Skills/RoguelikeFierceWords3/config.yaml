@@ -1,0 +1,1 @@
+Name: Лютые слова IIISkillName: RoguelikeFierceWords3Sprite: FierceWords3SkillDescription: Увеличивает урон в словах еще на {CalculatedEffect}RequiredSkills:- AbilityOGNEVITSAEffects:- Value: 1  Type: AdditionalDamage

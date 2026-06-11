@@ -1,0 +1,6 @@
+﻿Unique: true
+Name: Рот – зашит
+Description: Уменьшает на {Duration} получаемую <sprite name="Defence"> (минимум 1)
+Sprite: StatMouth
+Harmful: true
+

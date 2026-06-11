@@ -1,0 +1,10 @@
+Name: SKY_HIGH
+SkillName: AbilitySKY_HIGH
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilitySHUKA_BELUGA_ROGUELIKE
+SpriteOffsetX: 71.3
+SpriteOffsetY: 13.8
+Effects:
+- Type: AbilityUnlock
+  StringData: SKY_HIGH

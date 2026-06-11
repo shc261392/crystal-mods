@@ -1,0 +1,22 @@
+﻿Name: Крепче камня
+AbilityType: FIRMER_STONE
+AbilityBookPartType: KEY
+Upgrade: FIRMER_STONE_UP
+TargetType: ALL_ENEMIES
+Intention: ATTACK
+Sprite: FIRMER_STONE
+GoldCost: 21
+Effects:
+- EffectType: FIRM
+  MinValue: 1
+  MaxValue: 1
+- MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

@@ -1,0 +1,7 @@
+﻿Name: 黒い沼
+Description: 行方不明になったオチュガ村の村人は、この辺りのどこかにいるかもしれない。
+ShortQuestDescr: 行方不明の村人を見つける
+LevelConfig:
+  Battle:
+    Name: ウトプリニク
+

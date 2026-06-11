@@ -1,0 +1,3 @@
+﻿Name: 悴败
+Description: 每回合造成{Duration}点<sprite name="Damage">，无视<sprite name="Defence">
+

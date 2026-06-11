@@ -1,0 +1,16 @@
+﻿Name: Полет
+AbilityType: DEMON_FLY_FLY
+TargetType: SELF
+Intention: BUFF
+Sprite: DEMON_FLY_FLY
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  StatusEffectType: AttackAbsorb
+  MinValue: 3
+  MaxValue: 3
+  VisualEffect:
+    VisualEffectType: CROSS
+    SpellTrigger: Spell
+    WrapUpTime: 0.5
+

@@ -1,0 +1,6 @@
+﻿Name: 콜바강 다리
+Description: 이 다리에는 때때로 악령이 출몰한다. 종종 이곳에 나타나는 콜바강에서 나온 물 초르트일지도 모른다.
+LevelConfig:
+  Battle:
+    Name: 다리 초르트
+

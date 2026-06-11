@@ -1,0 +1,11 @@
+IdName: CreditsBad
+Name: Разработчики
+Scene: OutroBad
+BlockScreenKeys: true
+LevelConfig:
+#  Quest:
+#    DialogueSystemName: TextQuest/Week7/Day3/Throne/CreditsSong
+  Exploration: Credits
+  NoExplorationMusic: true
+  NoExplorerSpawn: true
+  MusicOverride: "event:/Music/BattleSatan" 

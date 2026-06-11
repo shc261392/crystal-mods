@@ -1,0 +1,26 @@
+﻿IdName: Week5Day4Iskorka
+Name: Река Искорка
+Description: В охотничьей избе живет мужик, который не хотел звать колдунов на свадьбу. Теперь у него полон дом тараканов.
+ShortQuestDescr: Прогнать тараканов
+Scene: Forest_5
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Старательный бес
+    Enemies:
+      - Type: WolfHalf
+        LevelSpawnPointType: EnemyCenter
+      - Type: Chud1
+        LevelSpawnPointType: EnemyLeft
+      - Type: Chud2
+        LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day4/Iskorka/Intro
+RequiredLocations:
+- Week5Day4IskorVillage
+Secondary: Week5Day4Iskorka
+OnomastikonItems:
+- Onomastikon/Tales/22
+

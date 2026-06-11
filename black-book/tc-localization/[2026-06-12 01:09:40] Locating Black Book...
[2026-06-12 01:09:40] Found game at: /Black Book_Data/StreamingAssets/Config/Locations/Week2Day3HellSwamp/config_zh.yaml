@@ -1,0 +1,6 @@
+﻿Name: 地狱沼泽
+Description: 湖里的水经常漫出来，所以湖旁边这片地方就变成了沼泽。
+LevelConfig:
+  Battle:
+    Name: 水鬼
+

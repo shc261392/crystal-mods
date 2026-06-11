@@ -1,0 +1,10 @@
+﻿Name: Стрела
+InventoryItemName: OldArrow
+Flavour: Из этой тучи вылетает стрела огненна. Куда она полетела?
+Sprite: OldArrow
+Cost: 200
+Effects:
+- Value: 2
+  Type: StatusBonus
+  StatusName: Blessed
+

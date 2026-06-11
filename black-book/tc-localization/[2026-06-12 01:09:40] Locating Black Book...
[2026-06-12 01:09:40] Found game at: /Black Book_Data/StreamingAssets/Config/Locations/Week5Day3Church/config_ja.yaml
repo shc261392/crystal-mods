@@ -1,0 +1,8 @@
+﻿Name: 神現祭教会
+Description: 今まで見た中で一番古い教会。おそらくは、大昔からここに建っていたのだろう。
+ShortQuestDescr: 教会の手拭いを見つける
+LongQuestDescr: 儀式に使う特別な手拭いが必要だ。聞いた話によれば、ピャンテクの教会で会ったサヴィエリという男が持っているかもしれないという。
+LevelConfig:
+  Battle:
+    Name: 地獄絵のイコン
+

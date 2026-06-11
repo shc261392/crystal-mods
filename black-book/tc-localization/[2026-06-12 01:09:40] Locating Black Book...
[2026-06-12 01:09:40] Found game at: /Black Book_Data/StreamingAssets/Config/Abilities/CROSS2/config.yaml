@@ -1,0 +1,40 @@
+﻿Name: Крест
+AbilityType: CROSS2
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+Sprite: CrossAbility
+GoldCost: 54
+Effects:
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 1
+  StringData: Waste
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal4OrderWhite
+    MissTrigger: Seal4OrderWhite
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: Immunity
+  StatusPermanent: true
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 1
+  StringData: Poison
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal4OrderWhite
+    MissTrigger: Seal4OrderWhite
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: Immunity
+  StatusPermanent: true
+- EffectType: DEFENCE
+  MinValue: 5
+  MaxValue: 5
+  Syllable: true
+

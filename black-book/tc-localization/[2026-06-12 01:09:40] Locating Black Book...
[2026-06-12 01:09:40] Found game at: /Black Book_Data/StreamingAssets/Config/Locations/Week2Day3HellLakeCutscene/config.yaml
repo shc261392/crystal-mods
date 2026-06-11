@@ -1,0 +1,11 @@
+﻿IdName: Week2Day3HellLakeCutscene
+Name: В центре озера
+Description: ''
+Scene: LakeCenter
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week2/Day3/HellLake/Intro
+  CinematicIntro: true
+  NoExplorationMusic: true
+

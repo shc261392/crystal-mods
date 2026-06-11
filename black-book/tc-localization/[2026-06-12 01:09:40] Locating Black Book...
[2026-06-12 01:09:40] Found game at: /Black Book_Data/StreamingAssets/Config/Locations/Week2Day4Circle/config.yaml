@@ -1,0 +1,12 @@
+﻿IdName: Week2Day4Circle
+Name: Круг утопленников
+Description: Мертвецы ходят тут по кругу. Почему? Об этом русалка мне не рассказывала.
+Scene: DrownCircle
+LevelConfig:
+  Exploration: Week2Day4Circle
+  CinematicIntro: true
+  MusicOverride: event:/Music/Underwater
+  MixerSnapshot: snapshot:/Underwater
+RequiredLocations:
+- Week2Day4Village
+

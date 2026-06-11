@@ -1,0 +1,10 @@
+Name: KAIN
+SkillName: AbilityKAIN
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityUBEITSA
+SpriteOffsetX: 18.8
+SpriteOffsetY: -44.5
+Effects:
+- Type: AbilityUnlock
+  StringData: KAIN

@@ -1,0 +1,6 @@
+﻿Name: Musty Road
+Description: I'll use this road to get to the crossroads.
+LevelConfig:
+  Battle:
+    Name: Forest Spirits
+

@@ -1,0 +1,10 @@
+﻿IdName: Week5Day4PochinokReturn
+Name: Полевской починок
+Scene: Village2
+LevelConfig:
+  MixerSnapshot: snapshot:/Village
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day4/PochinokReturn/Intro
+RequiredLocations:
+- Week5Day4BigField
+

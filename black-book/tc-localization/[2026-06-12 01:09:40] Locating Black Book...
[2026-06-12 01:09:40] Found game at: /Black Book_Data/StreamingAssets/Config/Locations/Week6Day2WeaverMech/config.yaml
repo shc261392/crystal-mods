@@ -1,0 +1,19 @@
+﻿IdName: Week6Day2WeaverMech
+Name: Ткацкий станок
+Description: Какие-то звуки оттуда доносятся, будто кто на ткацком станке работает.
+Scene: TkachihaEntry
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  MusicOverride: event:/Music/ExploreDark2
+  Quest:
+    DialogueSystemName: TextQuest/Week6/Day2/WeaverMech/Intro
+  Exploration: Week6Day2WeaverMech
+  CameraOverride: CMTonelsCamera4
+  MixerSnapshot: snapshot:/Cave
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week6Day2Crawl
+OnomastikonItems:
+- Onomastikon/Encyclopedia/70
+HideBook: true
+

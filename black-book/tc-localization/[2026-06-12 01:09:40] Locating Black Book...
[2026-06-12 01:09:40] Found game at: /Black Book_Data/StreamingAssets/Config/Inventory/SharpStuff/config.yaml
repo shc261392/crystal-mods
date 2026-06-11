@@ -1,0 +1,12 @@
+﻿Name: Шпильё
+InventoryItemName: SharpStuff
+Flavour: "В косяки шпильё понатыкали, иголки да чё да, чтобы колдун из дому не мог выйти."
+Sprite: IconSharpStuff
+Cost: 180
+Effects:
+  - Value: 5
+    Type: StatusBonus
+    StatusName: Spikes
+  - Value: 2
+    Type: StatusBonus
+    StatusName: Weakness

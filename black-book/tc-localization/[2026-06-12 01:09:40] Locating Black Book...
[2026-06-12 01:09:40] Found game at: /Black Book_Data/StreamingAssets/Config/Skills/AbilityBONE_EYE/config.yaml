@@ -1,0 +1,10 @@
+Name: BONE_EYE
+SkillName: AbilityBONE_EYE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityLAKE_DEPTH
+SpriteOffsetX: 15.9
+SpriteOffsetY: 6.6
+Effects:
+- Type: AbilityUnlock
+  StringData: BONE_EYE_ROGUELIKE

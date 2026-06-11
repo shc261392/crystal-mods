@@ -1,0 +1,7 @@
+﻿Name: 雠特的大锅
+Description: 我听见那个方向有人鬼哭狼嚎，听着估计是有人类灵魂在受折磨。
+ShortQuestDescr: 恶魔的邀请
+LevelConfig:
+  Battle:
+    Name: 大锅之间
+

@@ -1,0 +1,16 @@
+﻿Name: У гробовой доски
+AbilityType: AT_GRAVE
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: AT_GRAVE
+Effects:
+- EffectType: DAMAGE_ON_DAMAGE
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

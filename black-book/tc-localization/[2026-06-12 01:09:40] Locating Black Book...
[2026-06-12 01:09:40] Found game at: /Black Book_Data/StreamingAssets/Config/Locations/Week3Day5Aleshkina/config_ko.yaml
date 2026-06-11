@@ -1,0 +1,7 @@
+﻿Name: 알레슈키노 마을
+Description: 알렉산더를 찾아야 한다. 도망치게 두지는 않을 거다!
+ShortQuestDescr: 알렉산더 찾기
+LevelConfig:
+  Battle:
+    Name: 우물 정령
+

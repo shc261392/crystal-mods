@@ -1,0 +1,6 @@
+﻿Name: 미하일의 교차로
+Description: 내가 최근에 입문식을 치른 교차로다. 이곳에서는 정말 길은 물론 인간의 운명도 교차한다.
+LevelConfig:
+  Battle:
+    Name: 맹렬한 한 쌍
+

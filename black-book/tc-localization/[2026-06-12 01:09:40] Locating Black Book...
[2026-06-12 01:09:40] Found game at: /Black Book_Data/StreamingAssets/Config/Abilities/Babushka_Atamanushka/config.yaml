@@ -1,0 +1,22 @@
+﻿Name: Атаманушка Бабушка
+AbilityType: BABUSHKA_ATAMANUSHKA
+AbilityBookPartType: KEY
+Upgrade: BABUSHKA_ATAMANUSHKA_UP
+TargetType: SELF
+Color: WHITE
+Sprite: BABUSHKA_ATAMANUSHKA
+GoldCost: 27
+Effects:
+- EffectType: KRADA
+- EffectType: STATUS
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal4OrderWhite
+    MissTrigger: Seal4OrderWhite
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: ArticulacyKeys
+

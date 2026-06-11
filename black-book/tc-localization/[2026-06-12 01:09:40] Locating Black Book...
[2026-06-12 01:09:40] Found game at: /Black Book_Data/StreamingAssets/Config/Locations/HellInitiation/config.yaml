@@ -1,0 +1,11 @@
+﻿IdName: HellInitiation
+Name: Как в колдуны посвящают
+Scene: HellInitiation2
+LevelConfig:
+  MixerSnapshot: snapshot:/Cave
+  Quest:
+    DialogueSystemName: Exploration/HellInitiation/Dialogue
+  Exploration: HellInitiation
+  CinematicIntro: true
+  NoExplorationMusic: true
+

@@ -1,0 +1,10 @@
+﻿Name: Щучий зуб
+InventoryItemName: PikeTooth
+Flavour: Огромный зуб исполинской щуки
+Sprite: PikeTooth
+Cost: 80
+Effects:
+- Value: 1
+  Type: AbilityOnBattleStart
+  StatusName: PIKE_TOOTH_BITE
+

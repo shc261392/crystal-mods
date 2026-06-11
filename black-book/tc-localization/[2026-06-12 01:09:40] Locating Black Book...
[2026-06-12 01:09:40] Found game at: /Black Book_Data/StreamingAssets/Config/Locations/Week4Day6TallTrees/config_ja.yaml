@@ -1,0 +1,6 @@
+﻿Name: 背の高いモミの木
+Description: また森がある。本当に高い木ばかりだ！
+LevelConfig:
+  Battle:
+    Name: 森のチョルト
+

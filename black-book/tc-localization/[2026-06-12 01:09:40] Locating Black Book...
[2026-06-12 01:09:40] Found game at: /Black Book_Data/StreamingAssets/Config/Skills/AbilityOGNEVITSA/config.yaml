@@ -1,0 +1,10 @@
+Name: OGNEVITSA
+SkillName: AbilityOGNEVITSA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - AbilityOGNEYASTRA
+SpriteOffsetX: -51
+SpriteOffsetY: -51
+Effects:
+- Type: AbilityUnlock
+  StringData: OGNEVITSA

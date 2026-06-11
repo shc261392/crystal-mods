@@ -1,0 +1,8 @@
+﻿Name: 科尔瓦河附近
+Description: 这条路就在科尔瓦河边上，尘土大得很。
+LevelConfig:
+  Battle:
+    Name: 树根雠特
+  BattleAlternative:
+    Name: 树根雠特
+

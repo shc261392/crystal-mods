@@ -1,0 +1,21 @@
+﻿Name: Егоров сглаз +
+AbilityType: BAD_EYE_EGOR_UP
+TargetType: ENEMY
+Intention: DEBUFF
+AbilitySpellType: STATUS
+Sprite: BAD_EYE_EGOR
+GoldCost: 16
+Effects:
+- EffectType: STATUS
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    WrapUpTime: 1.5
+    SkipReady: true
+  StatusEffectType: Cursed
+- MinValue: 5
+  MaxValue: 5

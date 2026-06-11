@@ -1,0 +1,23 @@
+﻿Name: Черная карта
+AbilityType: BLACK_CARD
+TargetType: SELF
+Intention: DEFENCE
+Color: BLACK
+Sprite: BLACK_CARD
+GoldCost: 24
+Effects:
+- EffectType: SACRIFICE
+  MinValue: 10
+  MaxValue: 10
+- EffectType: STATUS
+  MinValue: 1
+  MaxValue: 1
+  StatusPermanent: true
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.200000003
+    SkipReady: true
+  StatusEffectType: AttackAbsorb

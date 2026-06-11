@@ -1,0 +1,6 @@
+﻿Name: 좁은 통로
+Description: 책이 가까이 있다는 예감이 든다!
+LevelConfig:
+  Battle:
+    Name: 거미줄 속의 초르트
+

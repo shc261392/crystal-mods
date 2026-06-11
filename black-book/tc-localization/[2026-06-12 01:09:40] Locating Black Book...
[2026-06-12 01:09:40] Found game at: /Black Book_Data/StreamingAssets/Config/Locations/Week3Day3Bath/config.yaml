@@ -1,0 +1,23 @@
+﻿IdName: Week3Day3Bath
+Name: Баня
+Description: Вечером посиденок; значит, нужно баню затопить. Лучше мне самой этим заняться...
+Scene: SaltSauna
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  MusicOverride: event:/Music/ExploreDark
+  Battle:
+    Name: Банные черти
+    Enemies:
+    - Type: DemonFierce
+      LevelSpawnPointType: EnemyCenter
+    - Type: ObderihaDemon
+    - Type: ObderihaDemon
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day3/Bath/Intro
+    Outro: TextQuest/Week3/Day3/Bath/Outro
+RequiredLocations:
+- Week3Day3BeforeBath
+

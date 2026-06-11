@@ -1,0 +1,18 @@
+﻿IdName: Week4Day6Forest
+Name: Буйный лес
+Description: И тут лес разросся. Все лешему неймется. Откуда сил только взял?
+Scene: RavenForest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/LeshiyForest
+  Quest:
+    DialogueSystemName: TextQuest/Week4/Day6/Forest/Intro
+  Exploration: Week4Day6Forest
+  CinematicIntro: true
+  CameraOverride: CMQuestCamera4
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week4Day6Fields
+OnomastikonItems:
+- Onomastikon/Tales/53
+

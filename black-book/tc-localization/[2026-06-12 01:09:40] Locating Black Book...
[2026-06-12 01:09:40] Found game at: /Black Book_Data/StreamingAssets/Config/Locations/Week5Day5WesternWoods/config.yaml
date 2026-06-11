@@ -1,0 +1,31 @@
+﻿IdName: Week5Day5WesternWoods
+Name: Западный лес
+Description: Эти леса старинные в народе известны. Тут-то я и найду папоротник в самой его чаще.
+ShortQuestDescr: Найти цветок папоротника
+LongQuestDescr: Вы нашли все предметы для обряда. Осталось добраться до самой чащи, где будет цвести папоротник
+Scene: Forest_2
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: event:/Music/Explore2
+  Battle:
+    Name: Купальские черти
+    Enemies:
+    - Type: DemonPoison
+      LevelSpawnPointType: EnemyCenter
+    - Type: SnakeCopper
+    - Type: SnakeCopper
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day5/WesternWoods/Intro
+    Outro: TextQuest/Week5/Day5/WesternWoods/Outro
+LightingType: DARK
+RequiredLocations:
+- Week5Day5Crossroads
+LockedAllies:
+- Nikolay
+- NikolayLoyal
+- DedEgor
+- DedEgorLoyal
+

@@ -1,0 +1,20 @@
+﻿Name: Не скрыться
+AbilityType: DONT_HIDE
+TargetType: ALL
+Intention: BUFF
+Sprite: DONT_HIDE
+GoldCost: 6
+Effects:
+- EffectType: STATUS
+  StatusEffectType: ImmuneSuppression
+  MinValue: 10
+  MaxValue: 10
+  StringData: Waste
+  VisualEffect:
+    VisualEffectType: BITE
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 2
+    SkipReady: true
+

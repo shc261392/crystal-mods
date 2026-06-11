@@ -1,0 +1,18 @@
+﻿Name: Сивулист
+InventoryItemName: Sivulist
+Type: Herb
+Flavour: От всякой хвори
+Sprite: IconSivulist
+Expendable: true
+Cost: 18
+Effects:
+- Value: 1
+  Type: RemoveStatus
+  StatusName: Rot
+- Value: 1
+  Type: RemoveStatus
+  StatusName: Undead
+- Value: 1
+  Type: RemoveStatus
+  StatusName: Decomposure
+

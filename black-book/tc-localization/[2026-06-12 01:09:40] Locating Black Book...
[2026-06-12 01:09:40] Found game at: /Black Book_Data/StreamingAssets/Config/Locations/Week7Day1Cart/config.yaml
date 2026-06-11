@@ -1,0 +1,25 @@
+﻿IdName: Week7Day1Cart
+Name: Чугунная телега
+Description: Здоровенная телега увязла в смоляной ловушке. Она хоть и адова, но будто где-то я ее видала.
+Scene: HellTelega
+LevelConfig:
+  MusicOverride: event:/Music/ExploreHell
+  MixerSnapshot: snapshot:/Cave
+  Battle:
+    Name: Телега грешников
+    Enemies:
+    - Type: DemonBrander
+      LevelSpawnPointType: EnemyCenter
+    - Type: SinnerHorse
+      LevelSpawnPointType: EnemyLeft
+    - Type: SinnerHorse
+      LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week7/Day1/Cart/Intro
+    Outro: TextQuest/Week7/Day1/Cart/Outro
+RequiredLocations:
+- Week7Day1Bridge
+OnomastikonItems:
+  - Onomastikon/Tales/15

@@ -1,0 +1,19 @@
+﻿Name: Выстрел
+AbilityType: SHOT
+TargetType: ENEMY
+Intention: ATTACK_DEBUFF
+Sprite: SHOT
+Effects:
+- MinValue: 33
+  MaxValue: 33
+- EffectType: STATUS
+  StatusEffectType: Waste
+  MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

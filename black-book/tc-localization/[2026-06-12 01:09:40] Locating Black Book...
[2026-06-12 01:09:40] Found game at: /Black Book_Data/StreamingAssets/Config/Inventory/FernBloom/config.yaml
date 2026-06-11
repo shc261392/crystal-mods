@@ -1,0 +1,24 @@
+﻿Name: Цвет папоротника
+InventoryItemName: FernBloom
+Flavour: Он пошел ночью в лес, сорвал цветок папоротника и решил на месте и переночевать. Снились ему черти, их дикий крик
+Sprite: FernBloom
+Cost: 420
+Effects:
+- Value: 1
+  Type: StatusImmunity
+  StatusName: Immunity
+  StringData: Waste
+  StatusPermanent: true
+  StatusUnremovable: true
+- Value: 1
+  Type: StatusImmunity
+  StatusName: Immunity
+  StringData: Cursed
+  StatusPermanent: true
+  StatusUnremovable: true
+- Value: 1
+  Type: StatusImmunity
+  StatusName: Immunity
+  StringData: Poison
+  StatusPermanent: true
+  StatusUnremovable: true

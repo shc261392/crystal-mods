@@ -1,0 +1,19 @@
+﻿IdName: CrossroadsExploration
+Name: Михайловская росстань
+Scene: CrossroadsExploration
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Посвящение в колдуны
+    Enemies:
+    - Type: WolfInitiator
+      LevelSpawnPointType: EnemyCenter
+    UnitsForResourceWarmup:
+      - Type: DedEgorInitiation
+    NoShuffle: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: Tutorial/Initiation/InitiationIntro
+  Exploration: CrossroadsExploration
+  SpecialLevel: true
+

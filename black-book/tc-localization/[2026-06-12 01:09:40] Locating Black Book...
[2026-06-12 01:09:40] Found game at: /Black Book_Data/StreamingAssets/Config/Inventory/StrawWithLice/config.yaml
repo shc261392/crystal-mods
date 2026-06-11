@@ -1,0 +1,10 @@
+﻿Name: Соломка со вшами
+InventoryItemName: StrawWithLice
+Flavour: Если надо проверить кого, колдун он или нет, то, когда тот человек придет, в соломинку вшей натолкать и на порог положить; он не сможет выйти, колдун-от
+Sprite: StrawWithLice
+Cost: 112
+Effects:
+- Value: 3
+  Type: StatusBonus
+  StatusName: DefenceGive
+

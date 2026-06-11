@@ -1,0 +1,15 @@
+﻿Name: Русальи когти
+AbilityType: MERMAID_CLAWS
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: MERMAID_CLAWS
+GoldCost: 3
+Effects:
+- MinValue: 15
+  MaxValue: 25
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true

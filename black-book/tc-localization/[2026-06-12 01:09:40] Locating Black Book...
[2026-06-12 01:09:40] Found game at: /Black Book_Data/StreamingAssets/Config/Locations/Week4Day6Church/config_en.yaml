@@ -1,0 +1,7 @@
+﻿Name: Abandoned Church
+Description: There used to be a holy place here. Was it for the Old Believers?
+ShortQuestDescr: Inspect the Church
+LevelConfig:
+  Battle:
+    Name: Coin Chorts
+

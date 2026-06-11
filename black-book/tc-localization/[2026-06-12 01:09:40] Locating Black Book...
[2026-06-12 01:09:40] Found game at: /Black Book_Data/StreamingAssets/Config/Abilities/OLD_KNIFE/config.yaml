@@ -1,0 +1,17 @@
+﻿Name: Старый нож
+AbilityType: OLD_KNIFE
+TargetType: ALL_ENEMIES
+Intention: ATTACK
+Sprite: KNIFE
+GoldCost: 3
+Effects:
+- MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpellSimple
+    MissTrigger: AttackSpellSimple
+    WrapUpTime: 0.0500000007
+    SkipReady: true
+

@@ -1,0 +1,19 @@
+﻿Name: Игра на дуде
+AbilityType: PLAYING_PIPE
+TargetType: ALL_ALLIES_PLAYER
+Intention: DEBUFF
+Sprite: PLAYING_PIPE
+GoldCost: 3
+Effects:
+- EffectType: STATUS
+  StatusEffectType: Dream
+  MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

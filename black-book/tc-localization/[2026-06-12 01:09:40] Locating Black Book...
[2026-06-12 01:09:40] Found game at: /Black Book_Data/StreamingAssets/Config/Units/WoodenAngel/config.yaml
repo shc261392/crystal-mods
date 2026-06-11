@@ -1,0 +1,19 @@
+﻿AssetName: WoodenAngel
+Health: 50
+Mana: 4
+Initiative: 2
+MoneyMin: 6
+MoneyMax: 9
+Experience: 50
+StartingStatusEffects:
+  - StatusEffectType: Regeneration
+    Duration: 10
+    HardDifficulty: true
+UnitAI:
+  AIAbilities:
+  - AbilityType: STAFF_STRIKE
+    TargetType: ENEMY
+  - AbilityType: OBSESSED_DEFENCE
+    TargetType: ALLY
+  CastingType: UNIT_HARDCODED
+Name: Деревянный Ангел

@@ -1,0 +1,10 @@
+Name: GEORGY_SHEPARD_SMALL
+SkillName: AbilityGEORGY_SHEPARD_SMALL
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - RoguelikeHelpOfSaints2
+SpriteOffsetX: -12.1
+SpriteOffsetY: -52.6
+Effects:
+- Type: AbilityUnlock
+  StringData: GEORGY_SHEPARD_SMALL

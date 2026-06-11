@@ -1,0 +1,6 @@
+﻿Name: 林子外圈
+Description: 人类的地盘到此为止，再往外就是列希的地界了。
+LevelConfig:
+  Battle:
+    Name: 树林撒旦
+

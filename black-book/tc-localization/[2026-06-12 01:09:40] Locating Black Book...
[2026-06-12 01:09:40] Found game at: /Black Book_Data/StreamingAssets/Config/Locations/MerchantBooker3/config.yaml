@@ -1,0 +1,13 @@
+﻿IdName: MerchantBooker3
+Name: Книжник
+Description: Иногда этот странный мужик продавал заговоры деду Егору.
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Merchants:
+  - BookKeeper3
+  Quest:
+    DialogueSystemName: TextQuest/Merchant/BookKeeper/Conversation
+  CameraOverride: CMQuestCamera6
+LightingType: DARK
+CanBeVisitedNextDay: true

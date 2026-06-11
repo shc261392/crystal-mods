@@ -1,0 +1,996 @@
+﻿StartingElements:
+- Name: Morteshka
+  Title: 游戏开发：
+- Name: Vladimir Beletsky
+  Title: 游戏设计与文案
+- Name: Ildar Alimov
+  Title: 美术指导
+- Name: Andrey Khudozhidkov
+  Title: 程序设计
+- Name: Mikhail Shvachko
+  Title: 音乐与音效设计
+- Name: Darya Solonets
+  Title: 动画
+Developers:
+  Header: 开发团队
+  People:
+  - Name: Vladimir Beletsky
+    Titles:
+    - Title: 游戏设计
+    - Title: 项目管理
+    - Title: 程序计
+    - Title: 文案
+    - Title: 美术辅助
+    - Title: 主机移植
+  - Name: Ildar Alimov
+    Titles:
+    - Title: 美术指导
+    - Title: 环境
+    - Title: 角色
+  - Name: Andrey Khudozhidkov
+    Titles:
+    - Title: 程序设计
+    - Title: 主机移植
+  - Name: Mikhail Shvachko
+    Titles:
+    - Title: 音乐
+    - Title: 音效设计
+    - Title: 魔鬼配音
+  - Name: Darya Solonets
+    Titles:
+    - Title: 动画
+  - Name: Sergey Bikeev
+    Titles:
+    - Title: 质量控制
+  - Name: Konstantin Shumov
+    Titles:
+    - Title: 科学顾问
+    - Title: 专名辞表条目
+  - Name: Ivan Seliverstov
+    Titles:
+    - Title: 俄语文本编辑与校正
+  - Name: Anatoly Nelyubin
+    Titles:
+    - Title: 英语翻译
+  - Name: Timothy Sean Ray
+    Titles:
+    - Title: 英语文本编辑
+  - Name: Juila Kosykh
+    Titles:
+    - Title: 社区管理
+  - Name: Elena Kononenko
+    Titles:
+    - Title: 肖像辅助
+  - Name: Roman Bamburin
+    Titles:
+    - Title: 开场视频
+  - Name: Evgeny Yarovoy
+    Titles:
+    - Title: 以下内容的建模与渲染
+    - Title: 开场视频
+  - Name: Utelo
+    Titles:
+    - Title: 声音辅助
+RussianVoiceover:
+  Header: 俄语配音 - GamesVoice
+  People:
+  - Name: Yaroslav Egorov
+    Titles:
+    - Title: 配音演员管理
+    - Title: 音效工程
+    - Title: 选角
+  - Name: Sergey Petrov
+    Titles:
+    - Title: 配音指导
+  - Name: Igor Popov
+    Titles:
+    - Title: 配音指导
+  - Name: Victor Voron
+    Titles:
+    - Title: 配音指导
+  - Name: Filip Robozerov
+    Titles:
+    - Title: 选角辅助
+  - Name: Alexander Kiselev
+    Titles:
+    - Title: 文本程序设计
+  - Name: Vladimir Vorobyev
+    Titles:
+    - Title: 文本整理
+  - Name: Ravencat
+    Titles:
+    - Title: 配音工作室
+  - Name: Christina Sherman
+    Titles:
+    - Title: 瓦西里莎
+  - Name: Sergey Chikhachev
+    Titles:
+    - Title: 老叶戈尔
+  - Name: Alexey Nikitin
+    Titles:
+    - Title: 旁白
+  - Name: Sergey Ponomarev
+    Titles:
+    - Title: 尼古拉
+  - Name: Ivan Kalinin
+    Titles:
+    - Title: 普罗什卡
+    - Title: 谢尔盖·尼古拉耶维奇
+    - Title: 地狱绘魔
+  - Name: Leonid Belozorovich
+    Titles:
+    - Title: 列翁季
+  - Name: Daniil Eldarov
+    Titles:
+    - Title: 卡尼什
+  - Name: Alexander Skidanov
+    Titles:
+    - Title: 亚历山大
+  - Name: Mikhail Georgiou
+    Titles:
+    - Title: 撒旦
+    - Title: 米哈耶尔·尼基福罗维奇
+    - Title: 谢顶水鬼
+    - Title: 驼盐工
+  - Name: Mikhail Kryanin
+    Titles:
+    - Title: 帕洪
+  - Name: Alyona Andronova
+    Titles:
+    - Title: 人鱼叶夫多基娅
+  - Name: Viktor Rechkalov
+    Titles:
+    - Title: 农民甲
+    - Title: 费尔班克斯
+  - Name: Alexander Gavrilin
+    Titles:
+    - Title: 西迪贵公子
+    - Title: 书商
+  - Name: Konstantin Fedoseev
+    Titles:
+    - Title: 开场与结尾旁白
+    - Title: 农民乙
+  - Name: Viktor Mamonov
+    Titles:
+    - Title: 叶菲姆
+  - Name: Vladimir Konev
+    Titles:
+    - Title: 瓦库
+  - Name: Alexander Kovrizhnykh
+    Titles:
+    - Title: 牧人菲利蒙
+    - Title: 费季卡
+    - Title: 奥温聂
+    - Title: 强盗
+  - Name: Nikolay Zozulin
+    Titles:
+    - Title: 不祥之灵
+    - Title: 机智水鬼
+  - Name: Zoya Yudina
+    Titles:
+    - Title: 澡堂新娘
+  - Name: Andrey Waltz
+    Titles:
+    - Title: 艾拉特
+  - Name: Pyotr Kovrizhnykh
+    Titles:
+    - Title: 佩特卡
+    - Title: 熬盐工
+    - Title: 伊利亚
+    - Title: 织魔
+  - Name: Valery Storozhik
+    Titles:
+    - Title: 农民丙
+    - Title: 安杜马利乌士
+    - Title: 神父
+    - Title: 磨坊主
+    - Title: 卖书人
+  - Name: Vladimir Antonik
+    Titles:
+    - Title: 叶夫列姆神父
+    - Title: 萨姆松
+    - Title: 农民丁
+    - Title: 地狱之门
+    - Title: 小贩
+  - Name: Victoria Shanina
+    Titles:
+    - Title: 织婆
+  - Name: Igor Popov
+    Titles:
+    - Title: 路维泽克
+    - Title: 普罗科皮
+    - Title: 雠特管家
+    - Title: 农民戊
+  - Name: Aliya Nasyrova
+    Titles:
+    - Title: 玛法
+    - Title: 新娘的朋友甲
+    - Title: 疯女人
+    - Title: 生病女人
+    - Title: 年轻人
+    - Title: 乌格兰斯
+  - Name: Tatyana Argunova
+    Titles:
+    - Title: 阿尼西娅·伊万诺夫娜
+    - Title: 乞丐
+    - Title: 护士
+  - Name: Nina Bereng
+    Titles:
+    - Title: 阿库林娜
+    - Title: 涅姆津亚女孩
+  - Name: Evgeny But-Gusaim
+    Titles:
+    - Title: 第十三子
+    - Title: 邪恶神父
+  - Name: Natalia Kaznacheeva
+    Titles:
+    - Title: 死神
+    - Title: 阿加菲娅·菲力波维娜
+    - Title: 叶夫多基娅·弗科夫纳
+  - Name: Maria Fortunatova
+    Titles:
+    - Title: 奥捷莉哈
+    - Title: 新娘的朋友乙
+    - Title: 河边人鱼
+  - Name: Ilya Slyudachev
+    Titles:
+    - Title: 渔民
+    - Title: 米科卡
+  - Name: Olga Zubkova
+    Titles:
+    - Title: 热疫女妖
+    - Title: 加林娜
+    - Title: 药师甲
+  - Name: Andrey Mishutin
+    Titles:
+    - Title: 叶夫列姆
+    - Title: 养蜂人
+    - Title: 列希下身
+    - Title: 班聂
+    - Title: 波列维
+    - Title: 魔鬼甲
+    - Title: 贝尔曼
+  - Name: Alexey Gneushev
+    Titles:
+    - Title: 安德烈科
+    - Title: 农民己
+    - Title: 农民庚
+    - Title: 吉洪
+  - Name: Irina Protasova
+    Titles:
+    - Title: 玛留什卡
+  - Name: Mikhail Glushkovsky
+    Titles:
+    - Title: 机修工
+    - Title: 狼人
+    - Title: 雠特士兵
+    - Title: 村长
+    - Title: 警察
+    - Title: 铁匠
+    - Title: 列希上身
+    - Title: 魔鬼乙
+  - Name: Andrey Kazakov
+    Titles:
+    - Title: 季亚科·萨韦利
+  - Name: Alexander Kasparov
+    Titles:
+    - Title: 农民辛
+    - Title: 角魔
+  - Name: Ruta Novikova
+    Titles:
+    - Title: 农民甲
+    - Title: 阿克西妮娅
+    - Title: 县城女人乙
+    - Title: 农民丙
+    - Title: 药师乙
+  - Name: Artem Yaksanov
+    Titles:
+    - Title: 火蛇
+  - Name: Konstantin Romanenko
+    Titles:
+    - Title: 捷连季
+    - Title: 雠特学生
+  - Name: Maxim Lukin
+    Titles:
+    - Title: 狞魔
+  - Name: Maxim Popkov
+    Titles:
+    - Title: 喝酒的守卫
+  - Name: Igor Staroseltsev
+    Titles:
+      - Title: Snake Sorcerer
+  - Name: Dmitry Medvedenko
+    Titles:
+      - Title: Piere      
+EnglishVoiceover:
+  Header: 英语配音
+  People:
+  - Name: Kristina Sherman
+    Titles:
+    - Title: 瓦西里莎
+    - Title: 热疫女妖
+    - Title: 药师甲
+  - Name: Sergey Chikhachev
+    Titles:
+    - Title: 老叶戈尔
+  - Name: Adam James Muskin
+    Titles:
+    - Title: 旁白
+  - Name: Sergey Ponomarev
+    Titles:
+    - Title: 尼古拉
+    - Title: 列翁季
+    - Title: 撒旦
+    - Title: 第十三子
+    - Title: 雠特士兵
+    - Title: 农民甲
+    - Title: 村长
+    - Title: 弄蛇术士
+    - Title: 小贩
+  - Name: Ivan Chaban
+    Titles:
+    - Title: 普罗什卡
+    - Title: 亚历山大
+  - Name: Dmitry Medvedenko
+    Titles:
+    - Title: 帕洪
+    - Title: 开场与结尾旁白
+    - Title: 牧人菲利蒙
+    - Title: 萨姆松
+    - Title: 皮埃尔
+    - Title: 渔民
+    - Title: 谢尔盖·尼古拉耶维奇
+    - Title: 米科卡
+    - Title: 农民乙
+    - Title: 神父
+    - Title: 磨坊主
+    - Title: 农民丙
+    - Title: 捷连季
+    - Title: 养蜂人
+    - Title: 列希上身
+    - Title: 狞魔
+  - Name: Ksenia Berelet
+    Titles:
+    - Title: 人鱼叶夫多基娅
+    - Title: 玛法
+    - Title: 澡堂新娘
+    - Title: 叶夫多基娅·弗科夫纳
+    - Title: 农民甲
+    - Title: 新娘的朋友甲
+    - Title: 疯女人
+    - Title: 生病女人
+    - Title: 县城女人甲
+    - Title: 阿克西妮娅
+    - Title: 农民乙
+    - Title: 年轻人
+    - Title: 农民丙
+    - Title: 乌格兰斯
+    - Title: 药师乙
+  - Name: Jerry Lenin
+    Titles:
+    - Title: 卡尼什
+    - Title: 农民丁
+    - Title: 地狱绘魔
+    - Title: 费尔班克斯
+  - Name: Maxim Popkov
+    Titles:
+    - Title: 叶夫列姆神父
+    - Title: 农民戊
+    - Title: 费季卡
+    - Title: 米哈耶尔·尼基福罗维奇
+    - Title: 叶夫列姆
+    - Title: 安德烈科
+    - Title: 农民己
+    - Title: 警察
+    - Title: 熬盐工
+    - Title: 邪恶神父
+    - Title: 班聂
+    - Title: 吉洪
+    - Title: 魔鬼甲
+  - Name: Mikhail Khrustalev
+    Titles:
+    - Title: 叶菲姆
+    - Title: 瓦库
+    - Title: 机修工
+    - Title: 季亚科·萨韦利
+    - Title: 狼人
+    - Title: 谢顶水鬼
+    - Title: 地狱之门
+    - Title: 驼盐工
+    - Title: 强盗
+  - Name: Margaret Korsch
+    Titles:
+    - Title: 织婆
+    - Title: 阿尼西娅·伊万诺夫娜
+    - Title: 阿库林娜
+    - Title: 死神
+    - Title: 奥捷莉哈
+    - Title: 阿加菲娅·菲力波维娜
+    - Title: 玛留什卡
+    - Title: 涅姆津亚女孩
+    - Title: 加林娜
+    - Title: 乞丐
+    - Title: 新娘的朋友乙
+    - Title: 护士
+  - Name: Alexander Gavrilin
+    Titles:
+    - Title: 西迪贵公子
+    - Title: 魔鬼乙
+    - Title: 书商
+  - Name: Igor Popov
+    Titles:
+    - Title: 路维泽克
+    - Title: 普罗科皮
+    - Title: 雠特管家
+    - Title: 卖书人
+    - Title: 铁匠
+    - Title: 农民庚
+  - Name: Nikolay Zozulin
+    Titles:
+    - Title: 不祥之灵
+    - Title: 列希下身
+    - Title: 雠特学生
+    - Title: 伊利亚
+  - Name: Pyotr Kovrizhnykh
+    Titles:
+    - Title: 佩特卡
+    - Title: 农民辛
+    - Title: 艾拉特
+    - Title: 安杜马利乌士
+    - Title: 贝尔曼
+  - Name: Nikita Karikov
+    Titles:
+    - Title: 奥温聂
+    - Title: 火蛇
+    - Title: 波列维
+    - Title: 角魔
+    - Title: 织魔
+  - Name: Alexandra Kijaeva
+    Titles:
+    - Title: 河边人鱼
+    - Title: 县城女人
+ChineseLocalization:
+  Header: 简体中文本地化
+  People:
+  - Name: Albert Wei
+    Titles:
+    - Title: 本地化管理
+  - Name: Carl Du
+    Titles:
+    - Title: 本地化
+  - Name: Sharon Shao
+    Titles:
+    - Title: 本地化
+  - Name: Yiling Tang
+    Titles:
+    - Title: 本地化
+  - Name: Hannah Lu
+    Titles:
+    - Title: 校对
+  - Name: 鬼翅融
+    Titles:
+    - Title: 校对
+JapaneseLocalization:
+  Header: Japanese Localization
+  People:
+    - Name: Iori Honda
+      Titles:
+        - Title: Localization
+    - Name: Hitomi Yamamura
+      Titles:
+        - Title: Localization
+    - Name: Masaru Funahashi
+      Titles:
+        - Title: Localization
+    - Name: Rie Ihara
+      Titles:
+        - Title: Localization
+    - Name: Slack
+      Titles:
+        - Title: Localization
+Publishers:
+  Header: 发行团队
+  People:
+  - Name: Alexey Mikhailov
+    Titles:
+    - Title: 创始人
+  - Name: Ivan Belousov
+    Titles:
+    - Title: 发行部负责人
+  - Name: Leo Hellenbrand
+    Titles:
+      - Title: 制作人 
+  - Name: Alina Petrosova
+    Titles:
+    - Title: 公关经理
+Music:
+  Header: 音乐
+  People:
+  - Name: 民谣
+    Titles:
+    - Title: 演奏者：Studen Choir
+    - Title: 来自彼尔姆艺术与文化学院
+    - Title: 指挥：Larisa Beletskaya
+SuperBackers:
+  Name: 超级资助玩家
+  Titles:
+  - Title: Aaron Bennett
+  - Title: Aaron Van K
+  - Title: Abdiel Diesra
+  - Title: Adam Fox, Samantha Fox
+  - Title: Adekola Omole
+  - Title: Aisha Laury, Lucas Heinsheimer
+  - Title: AJ
+  - Title: Alejandro Fernández V
+  - Title: Aleksei Safin
+  - Title: Aleksey "svchk" Pazdnikov
+  - Title: Alex LeAnnais
+  - Title: Alexander Bazhan
+  - Title: Alexander Rinck
+  - Title: Alexandra Muryzhnikova, Jaroslav Muryzhnikov
+  - Title: Alexandra Vanzo; Shannon Corcoran
+  - Title: Alexandria Lennox
+  - Title: Alfinfrance
+  - Title: Alice Still
+  - Title: Aliza Hasan, Alex Sennert
+  - Title: Amanda Duke Or Aisling O’Grogan
+  - Title: Amanda Searle
+  - Title: Amberestelle
+  - Title: Amy Selwach, John Selwach
+  - Title: Anders 'Ray' Skrydstrup
+  - Title: Andrea Batchelor
+  - Title: Andrea Sorcinelli
+  - Title: Andrew & Alexis Molnar-Ortiz
+  - Title: Anna Dake
+  - Title: Anthony “DO$” Dean
+  - Title: Antoine Port
+  - Title: Anton "Homyakin" Lavrentev
+  - Title: Anton Golukhov
+  - Title: Anya Lee
+  - Title: Apocripheri , Borlmax
+  - Title: Art Belov
+  - Title: Arthur Miner
+  - Title: Ash Monogue
+  - Title: Ashley Turcotte
+  - Title: August Haas
+  - Title: Aurelio Carballeda Estévez
+  - Title: Autumn Kaviak
+  - Title: Averie Lustremoore
+  - Title: Bayrae, Rachael Vessar
+  - Title: Beau Schuette
+  - Title: Becca (tagrberry)
+  - Title: Becca Geoppinger Bryan
+  - Title: Becky Deihl
+  - Title: Benjamin James Taylor
+  - Title: Benny McFalls
+  - Title: Bethany Sromovsky
+  - Title: Betsy - The Wandering Chaos
+  - Title: Billie Brisbane Collet
+  - Title: Binnorie Minnorie (Ryan Cahill)
+  - Title: Blair Younghusband
+  - Title: Blatherbeard
+  - Title: Bloodripk, Caleb Reep
+  - Title: Boyd Critz V
+  - Title: Brad Maestas
+  - Title: Brandon C
+  - Title: Brandon Craft
+  - Title: Brandon Evans
+  - Title: Brandon Fox & Lisa Quinley
+  - Title: Brandy Nobles
+  - Title: Brezelkorb
+  - Title: Brian Daniel
+  - Title: Brittany Faulkner
+  - Title: Bubba <3 Linda
+  - Title: C. Emmett
+  - Title: Caidi Zariya Hodge
+  - Title: Caleb and Emilee
+  - Title: Caleb Busby
+  - Title: Caligneous
+  - Title: Carolyn Wise
+  - Title: Casey Bonno
+  - Title: Charles D. Moisant (silverphoenix.net)
+  - Title: Charles Vincent-Barr
+  - Title: Chelsea Atherton
+  - Title: Christabella Humphryes
+  - Title: Christel Bertemes-Henchoz
+  - Title: Christer "SwedishKiwiGuy" Eriksson, Mia "Morana" Lovatt
+  - Title: Christopher Bryan McCarthy II
+  - Title: Christopher Cotto
+  - Title: Christopher Gardner & Michael Lloyd
+  - Title: Christopher Helmke
+  - Title: Christopher ROUZIER
+  - Title: Christopher Wilkinson
+  - Title: Christopher Wolf
+  - Title: Clint Gamble/GumblePlays
+  - Title: CM Healy
+  - Title: Cody J Garcia
+  - Title: Collin Smith
+  - Title: Commakazi1 & The_Fruit_Slicer
+  - Title: Connor "Makuta" Romanic
+  - Title: Connor M. Pfisterer
+  - Title: Corbineau Alexandre
+  - Title: Corey Grimes and René Grimes
+  - Title: Cori Bennett
+  - Title: Corinne McDonald and The Wayfinder Experience
+  - Title: Cory "LateNightHunter" Grant
+  - Title: Courtney Guagliardo
+  - Title: Craig Watcher
+  - Title: Odile Purcell O’Byrne
+  - Title: Crystal Przybyciel
+  - Title: Cygany Toravich
+  - Title: D&D Polsky
+  - Title: D.J. Cole
+  - Title: Dallas Crow
+  - Title: Daniel Ortiz
+  - Title: Daria & Hayden
+  - Title: Daria Smirnova
+  - Title: David Altier
+  - Title: David BeCam
+  - Title: David Cooke
+  - Title: David Lee
+  - Title: David Lee Wenberg
+  - Title: David Lopez
+  - Title: Dawn Upson
+  - Title: Dean D Flyte
+  - Title: Dean Michael Bazzani
+  - Title: Den Yarullin (mforv)
+  - Title: Derek Chapman
+  - Title: Des
+  - Title: Devan Asbell
+  - Title: Devin Rust, Zodrician
+  - Title: Devonte Billiter
+  - Title: Diem-Sylvan Von-Pratt
+  - Title: Dominic Rumsey
+  - Title: Don Chaneaux
+  - Title: Dr. Peter T. De Simone
+  - Title: Dylan McAdam
+  - Title: Edwin Payne
+  - Title: Elaine Barlow
+  - Title: Ember James, Surtr Ledrhals
+  - Title: Emelie Haigh
+  - Title: Emilie Wyqued
+  - Title: Emily Rose Daniels
+  - Title: Emily Sandoval
+  - Title: Emily Strong
+  - Title: EP Eriksson
+  - Title: Erik Michael Martinez
+  - Title: Erin Garrett
+  - Title: Ethan Barnes
+  - Title: Ethan Crace
+  - Title: EthericMaahes
+  - Title: Eva Merete Bang
+  - Title: Ezekiel Vizzer
+  - Title: Faithfulkitsune
+  - Title: FLETCHER xD
+  - Title: Galina Murina
+  - Title: Garpid
+  - Title: Garrett Silvers Credits( Id like Mirania in-Game)
+  - Title: Genevieve Greystern
+  - Title: Gerivaereth & Luna
+  - Title: Giovanni Valentino
+  - Title: Grave Indignation
+  - Title: Grayson Vangeloff, Y.V. Vangeloff
+  - Title: Greg Principato & Rebecca Strang
+  - Title: Griffin
+  - Title: Guardian Gerald the Yle
+  - Title: Gwendolyn
+  - Title: Hallie Walck
+  - Title: Hannah G.
+  - Title: Hannelore Mattausch
+  - Title: HarleyDave
+  - Title: Harmony Schmitt
+  - Title: HASTUR THE YELLOW DOG
+  - Title: Hattrixn
+  - Title: Heather C
+  - Title: Heather Ceana Craig
+  - Title: Heather Clay
+  - Title: Heather Floyd
+  - Title: Héctor R. A. - Mariam B. C.
+  - Title: HeroOfTheKing
+  - Title: HODL
+  - Title: Hub Kusters
+  - Title: Hugo Raven
+  - Title: Hurri Cain
+  - Title: Ian
+  - Title: Ian Caudill
+  - Title: Ice Satyr
+  - Title: Ido Schwartz
+  - Title: Indy Saggu
+  - Title: Irina & Randall Dorn
+  - Title: Ironwing Icarus
+  - Title: Isaac Lee
+  - Title: Issa Kabeer
+  - Title: Jacalyn Letzler
+  - Title: jace esseln and mason herron
+  - Title: Jack Coleman
+  - Title: Jacob H or Jake the Dawg⁷
+  - Title: Jacquelynn and Anthony Nigro
+  - Title: Jake Spies
+  - Title: Jamie Dubiak
+  - Title: Jamie Hewitt
+  - Title: Jared Epstein
+  - Title: Jasmine Simone
+  - Title: JD - ParkedHampster
+  - Title: Jeanine Davi
+  - Title: Jeff Bryer
+  - Title: Jeff Lininger
+  - Title: Jeff Muse & Ginnie German
+  - Title: Jemalie Regier
+  - Title: Jen & Mike Starfury
+  - Title: Jerod L Reyes
+  - Title: Jesse Hatfield
+  - Title: Jessica and Christian
+  - Title: Jessica Yaschur, Patricia Mara
+  - Title: Joe Chan
+  - Title: Joey Magnuson
+  - Title: Johannes Paulus Cornelis Wiggers
+  - Title: John "GamerMind" Löfvenius
+  - Title: John A. Blue / Иван синий
+  - Title: John T Morton
+  - Title: Johnathan Scanlon
+  - Title: Jonathan "AngelusDaeva" Ambriz
+  - Title: Jonathan Kade
+  - Title: Joost Vaneker
+  - Title: Jordan carter
+  - Title: Joseph ONeal
+  - Title: Josh Lowry
+  - Title: Joshua Camp
+  - Title: Joy L.
+  - Title: Julani Erentusk
+  - Title: Justin Edenfield (Tacklebox82)
+  - Title: K.J. Brule
+  - Title: Kaela Woolsey
+  - Title: Kai Hansen
+  - Title: Kamil Knapczyk
+  - Title: Karguer
+  - Title: Kat McDonald
+  - Title: Kati Stunkard and/or Kati Venneman
+  - Title: Katie Moore
+  - Title: Katrina Kanski
+  - Title: Katya Burns
+  - Title: Kayden MacKay
+  - Title: Kellen Lucas
+  - Title: Kelly “Buggs” Budd
+  - Title: Kelly John Cooke
+  - Title: Kelson Astley
+  - Title: Kiet Tran Ho
+  - Title: KingDuck
+  - Title: Koop
+  - Title: Kori Kasai, Bryce Bell
+  - Title: Kreendar Baere
+  - Title: Krista & Shannon & Robyn
+  - Title: kyton786
+  - Title: Laura Beth Davis
+  - Title: LauraJane and Mr. Cyne
+  - Title: LEBuwu
+  - Title: Lenan of the Black Rose
+  - Title: Libbi Ghost
+  - Title: Lin - [xypt]
+  - Title: Lollix Phase
+  - Title: LordOrgodemir
+  - Title: Luca DeXter Mazzoleni
+  - Title: Luke “Badger” Smith. And Ruby “Roo” Lister
+  - Title: Lux de Lumine
+  - Title: Lysoria
+  - Title: Magdalena Kessler
+  - Title: Maha
+  - Title: Marcus Yancey; Knotty Productions
+  - Title: Marie-Catherine Gagnon
+  - Title: Mario K Sasso
+  - Title: Marr-Randall Umali
+  - Title: Martha Downey
+  - Title: Marty Chodorek
+  - Title: Marvin "Angus" Haworth
+  - Title: Mathspy
+  - Title: Matt B
+  - Title: Matthew "Drank Bong Water" Gaddie
+  - Title: Matthew Gorsky
+  - Title: Matthew Wayne
+  - Title: Maurizio Sadutto
+  - Title: Max Reinhold
+  - Title: Maximilian Mantz
+  - Title: Megan Dobrovics
+  - Title: meifish
+  - Title: metashurick
+  - Title: Michael Baker
+  - Title: Michael E. Torres II and Ivaniel Reyes
+  - Title: Michael Gaddie
+  - Title: Michael Lane Thompson
+  - Title: Michael Oncken
+  - Title: Mika Adams; Sara Adams
+  - Title: Mike Armour
+  - Title: Mike Danylchuk
+  - Title: Mikhail Trifonov
+  - Title: Milena&Myles
+  - Title: Mindy Graves
+  - Title: Misha Latyshev
+  - Title: Morgan Childs
+  - Title: Mr. Hector Geoffrey Dokopoulos Hamilton
+  - Title: Mr.Z
+  - Title: Nakel Marissa
+  - Title: Nanash
+  - Title: Naomi S. Cahn
+  - Title: Nathan Huffman
+  - Title: Nathanael Marquardt
+  - Title: Nausikah
+  - Title: Nazih "King Ozimandus" Fares
+  - Title: Nelrom
+  - Title: Nerdyglitterbug
+  - Title: Nick Fazio
+  - Title: Nicolas Gengler
+  - Title: Nicole Stanford
+  - Title: Nicole Terc
+  - Title: Nikita Shpakov aka Giltanas
+  - Title: Nikolai Grigorevich Petrov
+  - Title: Nini / оранжевый
+  - Title: Novikov Sergey, Innok
+  - Title: Nuppmiddt
+  - Title: OBraveLadyRobin
+  - Title: Paolino Maisto
+  - Title: Patrick Bicket
+  - Title: Patrick Ervin
+  - Title: Patrick Hamilton
+  - Title: Patrick Line, Jason James
+  - Title: Patrick McCall
+  - Title: Patrick 'Wyscot' McConnell
+  - Title: Paul Dulski | Everything Horror Podcast
+  - Title: Payton Weber
+  - Title: Peter "Panda" Esslinger
+  - Title: Peter H. K. Louis
+  - Title: PhaedraLyn and CodesX100
+  - Title: Philipp Einheuser ( Àrvalin )
+  - Title: Phill
+  - Title: Phillip Tran / Briar Stone
+  - Title: Piotr Kociubiński
+  - Title: pointingdevice
+  - Title: Pompedus
+  - Title: prof_scratch
+  - Title: R.D. DeMoss
+  - Title: Radek Richtr
+  - Title: Radu Tanasie
+  - Title: Raelee
+  - Title: Rafa "Da Turtle" Sampang
+  - Title: Rainy Rabbit
+  - Title: Ramiro Flores
+  - Title: Ratibor Kri
+  - Title: Ravenna Degenaro
+  - Title: Rayen Jonke
+  - Title: Razzle and Wraith Nephilidus
+  - Title: RC
+  - Title: Redbeard Sean O'Leary
+  - Title: RedTuesday666
+  - Title: Reijo-Kalevi Chen + Garrison Copeland
+  - Title: Renmeleon
+  - Title: Rew King
+  - Title: Robert
+  - Title: Robert Alexandar Holbrook
+  - Title: Robert Simms
+  - Title: Robin J
+  - Title: Roman & Maya
+  - Title: Russell Lim Chee Phung
+  - Title: Ryan Garcia or Zoskian
+  - Title: Ryan Garner
+  - Title: Ryan Harrison Breuer
+  - Title: S A Frollo
+  - Title: S. E. A.
+  - Title: Sabina Lind-Åkerblom
+  - Title: Sade Kondelin
+  - Title: Saleana Judd, BR0WNC0AT13
+  - Title: Sam Frasier
+  - Title: Samuel "Salem" Williams
+  - Title: Sara Boone
+  - Title: Sarah Nevling
+  - Title: Sarina
+  - Title: Scott Born and Josh Bull
+  - Title: Sean McLoughlin
+  - Title: Sean Vi
+  - Title: Sean Watson
+  - Title: SebasDThamuz
+  - Title: Sena Sarwari
+  - Title: Sergey Chapaev
+  - Title: Sergey Koptev
+  - Title: Sergey Kudria
+  - Title: Sergey Morozov
+  - Title: Shane & Madra
+  - Title: Shane William Cutlip
+  - Title: Sho Endo
+  - Title: Sir Aaron of Clan Shaefer; Aaron Shaefer
+  - Title: SirFlipsALot
+  - Title: Sisifo Renner, Jonathan Renner
+  - Title: Stefania Bertucci
+  - Title: Stephan Vladimir Bugaj
+  - Title: Stephanie Royer
+  - Title: Stephen Funk
+  - Title: Steve Bracco
+  - Title: Steven (Realmers) Alexander
+  - Title: Sunil Jethwa
+  - Title: SuvorovTV
+  - Title: Sven Vdv
+  - Title: Sylionis
+  - Title: TalisX
+  - Title: Tamara Turton
+  - Title: Tanya Kostochka
+  - Title: Tarak Oran (T.M. Smith)
+  - Title: Terry 'Doc' Jordan
+  - Title: The Mad Yokai
+  - Title: Tim Guy
+  - Title: Tim Kuter
+  - Title: Tim Totten
+  - Title: Tobias Hodges
+  - Title: Tobias Klopf, Lara Räth
+  - Title: Tom Kopczynski and Jennifer Allen
+  - Title: Val Štekláč
+  - Title: Valentina Andreevna
+  - Title: Vasilisa Pozdnyakova
+  - Title: Verbal Howitzer
+  - Title: Veronika Aifeld, Aonghas Shearer-Boyd
+  - Title: Victor "The152Cat" Campa
+  - Title: Victor Mark
+  - Title: Vladimir Dzundza
+  - Title: Vladislav "Belkins" Podolyako
+  - Title: Vladlen Manshin, Anastasiia Manshina
+  - Title: Waaslandwolfs
+  - Title: wangmauler
+  - Title: Warren Pope
+  - Title: Whiteglovesnsugarcubes, Lisa Duarte
+  - Title: Wil Bastion
+  - Title: Will P. Alfrigg
+  - Title: William Howard Slabe III
+  - Title: winged_crocodile
+  - Title: Wojciech Marian Czarnecki
+  - Title: Wqrwialka
+  - Title: Yevgeniya and Garrett
+  - Title: Zach Stables
+  - Title: Zhugobstuvie
+  - Title: Zing Moua
+  - Title: zoe of doom
+  - Title: Zoë Wissner
+  - Title: Zsolt Putnoki Agnes Putnoki
+  - Title: Zulamandi
+  - Title: Zybko and Bros. Band
+  - Title: Андрей Трубецкой
+  - Title: Владислав Леонтьев
+  - Title: Гоша Копьев
+  - Title: Грищ / TheGrishch
+  - Title: Дмитрий "handyfirst" Сухоручкин
+  - Title: Иван Тверды, Nekorais.
+  - Title: Леонид Плешкин, Полина Плешкина
+  - Title: Сергей Юлин, Sergey Yulin
+  - Title: Тимошенко Александр
+Backers:
+  Name: 资助玩家
+  Titles: []
+Literature:
+  Name: 参考文献
+  Titles:
+  - Title: Shumov K.E. «Bailichkas and Byvalschinas» – Permskoe knizhnoye izdatelstvo, 1991
+  - Title: Borisova A.N., Prokosheva K.N. «Dictionary of Perm Dialects» – Permskiy Gosudarstvennyy Pedagogicheskiy Universitet, 1999
+  - Title: Chernykh A.V. «Russian Folk Tales of the Perm Krai» - Mamtov, 2012
+  - Title: Chernykh A.V. «Bailichkas of Kuyeda» - Uralskoe otdelenie Rossiyskoi Akademii Nauk, 2004
+  - Title: Krinichnaya N.A. «Russian Mythology» – Akademicheskii proekt, 2004
+  - Title: Krinichnaya N.A. «The Peasant and the Nature in the Light of Mythology» – Russkii fond Sodeistviya Obrazovaniju i Nauke, 2011
+  - Title: Serebrennikov V.N. «Vernakular Zagovors Recorded in Okhansky Uyezd of Perm Gubernia» – Perm, 1918
+  - Title: Teplouhov O.A. «Kabbalah or Petition to the Forest Tsar (from the Permian Superstitions)» – Perm, 1895
+  - Title: Rybakov B.А. «Paganism of the Early Slavic People» – Akademicheskii proekt, 2013
+  - Title: Saharov I.P. «The Legends of the Russian People» – Institut russkoi tsyvilizatsii, 2013
+  - Title: Gromyko М.М. «The World of the Russian Village» – Molodaya gvardiya, 1991
+  - Title: Chagin G.N. «History of the Urals before the End of the XIX Century» – Permskiy Gosudarstvennyy Universitet, 2007
+  - Title: Maksimov S.V. «Unholy, unknown and holy forces» – Etnograficheskoe bjuro knyazya V.N. Tenisheva, 1903
+  - Title: Zinoviev V.P. «Mythological Stories of the Russian Population of the Eastern Siberia» – Nauka, 1987
+  - Title: Cherepanova О.А. «Mythological Stories and Legends of the Russian North» – Saint Petersburg, 1996
+  - Title: Medvedev Y.М. «How a Muzhik Caught a Witch» – Nizhny Novgorod, 1992
+  - Title: Tihov V. «Scary Stories» – Ural-Press, 1993
+  - Title: Hristoforova O.B. «Kolduns and Their Victims» – Rossiyskiy gosudarstvennyy gumanitarnyy universitet, 2010
+  - Title: Terehina N.N. «Wedding Songs of the Great Perm» – Permskiy Gosudarstvennyy Pedagogicheskiy Universitet, 2011
+  - Title: Antonov D.I., Maizuls М.R. «Anatomy of Hell – a Guide to the Old Russian Visual Demonology» – Forum, Neolit, 2013
+  - Title: Afanasjev А.N. «The Witcher and the Witch» – Tipografiya Aleksandra Semyona na Sofiiskoi ulitse, 1851
+  - Title: Yudin А.V. «Onomasticon of Russian Zagovors» – Moskow, 1997
+  - Title: Rusinova I.I. «The Images of Sorcery and Witch Doctors in the Dictionaries of Perm Dialects» – Vestnik PGU, 2011
+  - Title: Podjukov I.А. «The Symbolism of the Instruments of the Peasant Labour in the National Culture of Perm Krai» – Trudy KAEE PGGPU, 2019, issue XV
+  - Title: Petkevich А.V. «The Water Sacrifice in Russian Cultural Tradition» – Zhivaya starina, 2006, issue 3
+  - Title: Podjukov I.А., Permyakova L.А. «The Mushrooms of Prikamye in the National Denominations and Descriptions» – PGPU, 2012
+Thanks:
+  Name: 致谢
+  Titles:
+  - Title: 感谢彼尔姆国立艺术文化学校、彼尔姆历史博物馆、建筑保护基地Khokhlovka、Alexander Vasilyevich Chernykch、Mariya Oreshkina和所有玩家，感谢你们指出游戏里的漏洞和错误，感谢我们的家人朋友，也感谢你圆满通关并看完了整个制作人员名单！
+

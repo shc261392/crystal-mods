@@ -1,0 +1,16 @@
+﻿Name: Коготь
+AbilityType: DEMON_ATTACK
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: Bite
+GoldCost: 3
+Effects:
+- MinValue: 3
+  MaxValue: 6
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

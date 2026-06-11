@@ -1,0 +1,9 @@
+Name: RABA
+SkillName: AbilityRABA
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+SpriteOffsetX: -46
+SpriteOffsetY: -53
+Effects:
+- Type: AbilityUnlock
+  StringData: RABA

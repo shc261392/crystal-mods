@@ -1,0 +1,19 @@
+﻿AssetName: Peasant
+Health: 16
+HealthRandomAdd: 4
+Mana: 4
+Initiative: 1
+MoneyMin: 1
+MoneyMax: 2
+Experience: 25
+UnitAI:
+  AIAbilities:
+  - AbilityType: PEASANT_ATTACK
+    TargetType: ENEMY
+    ConsequitiveRounds: 2
+  - AbilityType: PEASANT_CROSS
+    TargetType: SELF
+  CastingType: CONSEQUITIVE
+Name: Крестьянин
+DamagedSound: event:/Units/Peasant/Damaged
+

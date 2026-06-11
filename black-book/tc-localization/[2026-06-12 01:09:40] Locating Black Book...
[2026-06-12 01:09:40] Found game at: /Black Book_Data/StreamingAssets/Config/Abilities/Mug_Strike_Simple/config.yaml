@@ -1,0 +1,17 @@
+﻿Name: Бандитский нож
+AbilityType: MUG_STRIKE_SIMPLE
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: MUG_STRIKE_SIMPLE
+GoldCost: 3
+Effects:
+- MinValue: 6
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    WrapUpTime: 0.200000003
+    SkipReady: true
+

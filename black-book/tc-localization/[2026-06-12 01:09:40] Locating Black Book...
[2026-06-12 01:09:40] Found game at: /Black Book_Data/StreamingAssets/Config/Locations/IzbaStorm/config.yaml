@@ -1,0 +1,18 @@
+﻿IdName: IzbaStorm
+Name: Изба деда Егора
+Scene: Izba_EgorIntro2
+IsIzba: true
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  Exploration: IzbaStorm
+  CinematicIntro: true
+  MusicOverride: "event:/Music/Izba"
+  NoExplorerSpawn: true
+  SpecialLevel: true
+LightingType: STORM
+ForbiddenSpawnAllies:
+- DedEgor
+- DedEgorLoyal
+- Nikolay
+- NikolayLoyal
+

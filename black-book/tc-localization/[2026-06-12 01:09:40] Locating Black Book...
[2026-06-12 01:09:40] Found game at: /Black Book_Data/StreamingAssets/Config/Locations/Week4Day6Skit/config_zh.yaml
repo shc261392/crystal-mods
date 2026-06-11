@@ -1,0 +1,7 @@
+﻿Name: 普季瓦隐修所
+Description: 几个老伊兹巴马上就要散架了似的，本地人以前提过旧礼仪派教徒的这些隐修所……
+ShortQuestDescr: 找到隐修所的陌生人
+LevelConfig:
+  Battle:
+    Name: 牧师雠特
+

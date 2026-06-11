@@ -1,0 +1,6 @@
+﻿Name: 불에 탄 나무
+Description: 농부들이 좁혀오는 숲에 맞서 최선을 다해 싸우고 있다.
+LevelConfig:
+  Battle:
+    Name: 불에 탄 초르트
+

@@ -1,0 +1,6 @@
+﻿Name: 草原
+Description: 草原の空高く飛べば、チェルディニ郡の一帯を見渡せるはず！
+LevelConfig:
+  Battle:
+    Name: エゴールじいさん
+

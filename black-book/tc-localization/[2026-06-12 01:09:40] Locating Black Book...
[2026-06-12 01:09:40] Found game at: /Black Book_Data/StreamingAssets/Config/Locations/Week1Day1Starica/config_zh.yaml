@@ -1,0 +1,7 @@
+﻿Name: 老河床
+Description: 这里曾有科尔瓦河流过，如今已是一片沼泽。
+ShortQuestDescr: 消灭老河床的魔鬼
+LevelConfig:
+  Battle:
+    Name: 老河床的雠特
+

@@ -1,0 +1,6 @@
+﻿Name: 楚德河河边
+Description: 猎手好像发现了几头狼的爪子印，看样子是去河边了。
+LevelConfig:
+  Battle:
+    Name: 饿狼
+

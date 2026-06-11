@@ -1,0 +1,6 @@
+﻿Name: <sprite name="Defence"> 유지
+Description: >-
+  차례 종료 시 <sprite name="Defence">가 사라지지 않음
+
+  지속 시간: {Duration}
+

@@ -1,0 +1,18 @@
+﻿Name: Шонди
+AbilityType: SHONDI
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: SHONDI
+GoldCost: 16
+Effects:
+- EffectType: DEFENCE
+  MinValue: 30
+  MaxValue: 30
+  VisualEffect:
+    VisualEffectType: CROSS
+    SpellTrigger: Word
+    MissTrigger: Word
+    WrapUpTime: 0.100000001
+    SkipReady: true
+

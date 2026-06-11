@@ -1,0 +1,22 @@
+﻿Name: Грибной хлеб
+AbilityType: MUSHROOM_BREAD
+AbilityBookPartType: KEY
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilitySpellType: STATUS
+Sprite: MUSHROOM_BREAD
+GoldCost: 12
+Effects:
+- EffectType: STATUS
+  MinValue: 7
+  MaxValue: 7
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal3KeyWhite
+    MissTrigger: Seal3KeyWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: HealOnItemUse
+

@@ -1,0 +1,13 @@
+﻿IdName: Week5Day4SmallField
+Name: Починковское поле
+Description: Здесь крестьянин оставляет дарочки своему лешему.
+ShortQuestDescr: Поговорить с лешим
+Scene: Forest
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day4/SmallField/Intro
+RequiredLocations:
+- Week5Day4Pochinok
+Secondary: Week5Day4SmallField
+

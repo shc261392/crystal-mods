@@ -1,0 +1,8 @@
+﻿Name: 阿里莫夫树林
+Description: 听说这片树林以前煮了个巴什基尔族的隐士，这人手艺很好，会漆门板和炉板，还会做不少别的活。他死了有一段时间了，不过人到现在都还记着他。
+LevelConfig:
+  Battle:
+    Name: 树林魔鬼
+  BattleAlternative:
+    Name: 树林魔鬼
+

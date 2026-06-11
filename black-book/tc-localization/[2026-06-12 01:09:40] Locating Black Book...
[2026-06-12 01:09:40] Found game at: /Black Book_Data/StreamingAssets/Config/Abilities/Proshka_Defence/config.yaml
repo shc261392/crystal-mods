@@ -1,0 +1,17 @@
+﻿Name: Прошкина защита
+AbilityType: PROSHKA_DEFENCE
+TargetType: PLAYER
+Intention: DEFENCE
+Sprite: PROSHKA_DEFENCE
+GoldCost: 5
+Effects:
+- EffectType: DEFENCE
+  MinValue: 5
+  MaxValue: 5
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

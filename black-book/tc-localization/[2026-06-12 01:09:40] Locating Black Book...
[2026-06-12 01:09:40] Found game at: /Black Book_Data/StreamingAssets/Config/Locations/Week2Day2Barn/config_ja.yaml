@@ -1,0 +1,6 @@
+﻿Name: 倉庫
+Description: 塩はこの倉庫に保管されている。あとで荷船に積み込まれてノヴゴロドの市場へと送られるのだ。
+LevelConfig:
+  Battle:
+    Name: 倉庫の魔物
+

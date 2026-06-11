@@ -1,0 +1,19 @@
+﻿IdName: Week1Day2Crossroads
+Name: Михайловская росстань
+Description: На этой росстани я намедни прошла посвящение. Сходятся тут и дороги, и судьбы человеческие.
+Scene: CrossroadsExploration
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Battle:
+    Name: Лютая парочка
+    Enemies:
+    - Type: DemonFierce
+      LevelSpawnPointType: EnemyCenter
+    - Type: DemonSmall
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week1/Day2/Crossroads
+RequiredLocations:
+- Week1Day2MermaidWaters
+

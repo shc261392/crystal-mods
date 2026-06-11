@@ -1,0 +1,32 @@
+﻿IdName: Week7Day2Lake
+Name: Огненное озеро
+Description: Впереди проблеск света, только от него веет чем-то недобрым.
+Scene: HellTarPits
+LevelConfig:
+  Battle:
+    Name: Конвеер
+    Enemies:
+      - Type: DemonEvilMenqw
+        LevelSpawnPointType: EnemyLeft
+      - Type: DemonFierceFire
+        LevelSpawnPointType: EnemyCenter
+      - Type: DemonEvilMenqw
+        LevelSpawnPointType: EnemyRight
+    EnemyKillWin: true
+    HealthLoose: true
+  Quest:
+    DialogueSystemName: TextQuest/Week7/Day2/Lake/Intro
+    Outro: TextQuest/Week7/Day2/Lake/Outro
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 4
+    PossiblePlayers:
+    - Andromalius
+    DialogueFoolWin: TextQuest/Durak/WinBattleUtil
+    DialogueFoolLose: TextQuest/Durak/LooseBattleUtil
+  MusicOverride: event:/Music/ExploreHell
+  MixerSnapshot: snapshot:/Cave
+RequiredLocations:
+- Week7Day2Barracks
+OnomastikonItems:
+  - Onomastikon/Tales/44

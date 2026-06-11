@@ -1,0 +1,13 @@
+﻿Name: Сатане в радость
+AbilityType: SATANS_JOY
+TargetType: SELF
+Intention: BUFF
+Sprite: SATANS_JOY
+Effects:
+- EffectType: HEAL_ON_SINS
+  VisualEffect:
+    SpellTrigger: Spell
+    MissTrigger: Spell
+    WrapUpTime: 1
+    SkipReady: true
+

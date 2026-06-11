@@ -1,0 +1,19 @@
+Name: Осатанение!
+Description: На этом уровне сложности силы зла властвуют безраздельно
+PrefixIcons: "<sprite name=\"SkullD\">"
+Sprite: DifficultyCrazy
+Effects:
+  - Type: DAMAGE_COEFF
+    Value: 0.66
+  - Type: HEALTH_COEFF
+    Value: 0.25
+  - Type: STATUS_COEFF
+    Value: 0.2
+  - Type: STATUS_KEEP_CHANCE
+    Value: 0.1
+  - Type: GOLD_BONUS
+    Value: 0.2
+  - Type: FOOL_CHEAT_BONUS
+    Value: 0.041
+  - Type: SPECIAL_STATUS
+    Value: 1

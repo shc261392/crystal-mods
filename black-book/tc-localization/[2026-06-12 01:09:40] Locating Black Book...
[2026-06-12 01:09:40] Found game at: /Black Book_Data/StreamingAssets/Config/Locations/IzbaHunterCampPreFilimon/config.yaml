@@ -1,0 +1,20 @@
+﻿IdName: IzbaHunterCampPreFilimon
+Name: Леший найден!
+Scene: HunterCampIzba
+IsIzba: true
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  MusicOverride: "event:/Music/Izba"
+  SpecialLevel: true
+LightingType: FOG
+ForbiddenSpawnAllies:
+- DedEgor
+- DedEgorLoyal
+- Nikolay
+- NikolayLoyal
+- Proshka
+- ProshkaLoyal
+- WhiteHead
+- WhiteHeadLoyal
+HideBook: true
+

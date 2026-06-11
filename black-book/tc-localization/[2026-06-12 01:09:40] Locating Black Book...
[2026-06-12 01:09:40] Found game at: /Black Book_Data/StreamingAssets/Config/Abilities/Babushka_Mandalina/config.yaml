@@ -1,0 +1,20 @@
+﻿Name: Бабушка Мандалина
+AbilityType: BABUSHKA_MANDALINA
+Upgrade: BABUSHKA_MANDALINA_UP
+TargetType: SELF
+Color: WHITE
+Sprite: BABUSHKA_MANDALINA
+GoldCost: 14
+Effects:
+- EffectType: NEW_BOOKMARK_SKLAD_ORDER
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    ReadyTrigger: Word
+    SpellTrigger: AttackSpell
+    MissTrigger: AttackSpell
+    WrapUpTime: 0.5
+- EffectType: HEAL
+  MinValue: 1
+  MaxValue: 1
+

@@ -1,0 +1,28 @@
+﻿Name: Летучий Левонтий
+AllyType: WhiteHeadLoyal
+Unit: WhiteHeadLoyal
+Sprite: WhiteHeadLoyalFool
+IzbaDialogues:
+- Id: Izba/WhiteHead/Conv5AfterQuest
+BanterProbability: 0.5
+Banters:
+  - Id: Izba/Banter/NikolayHead
+    RequiredAlly: Nikolay
+  - Id: Izba/Banter/KarnyshHead
+    RequiredAlly: Karnysh
+LocationToSpecialDialogue:
+  IzbaFabric:
+    Id: Izba/Context/IzbaFabric/Head
+  IzbaPike:
+    Id: Izba/Context/IzbaPike/Head
+  IzbaBashkir:
+    Id: Izba/Context/IzbaBashkir/Head
+  IzbaHunterCampPolud:
+    Id: Izba/Context/IzbaHunterCampPolud/Head
+  IzbaHunterCampPrePryaha:
+    Id: Izba/Context/IzbaHunterCampPrePryaha/Head
+  IzbaStorm:
+    Id: Izba/Context/IzbaStorm/Head
+QuestLocation: AllyProshkaChurch
+IzbaAsset: LevontyIzbaRegular
+

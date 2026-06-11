@@ -1,0 +1,7 @@
+﻿Name: 库舍瓦村
+Description: 这个小村庄坐落在科尔瓦河西边，叶戈尔爷爷以前带我来过几次。这个地方的事情他一般是派雠特来做。
+ShortQuestDescr: 去库舍瓦村
+LevelConfig:
+  Battle:
+    Name: 茶炊雠特
+

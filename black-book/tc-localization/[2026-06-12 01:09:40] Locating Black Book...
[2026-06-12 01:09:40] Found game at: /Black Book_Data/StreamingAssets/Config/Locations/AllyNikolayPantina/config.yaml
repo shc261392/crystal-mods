@@ -1,0 +1,9 @@
+﻿IdName: AllyNikolayPantina
+Name: Деревня Пантина
+Description: Дорога идет мимо пантинской деревни. Как-то я тут уже бывала, на покосе че-то дед зашептывал.
+Scene: Village3
+LevelConfig:
+  Quest:
+    DialogueSystemName: TextQuest/AllyNikolay/Pantina/Intro
+  MusicOverride: event:/Music/ExploreDark
+

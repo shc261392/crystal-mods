@@ -1,0 +1,9 @@
+﻿Name: Волчий клык
+InventoryItemName: WolfFang
+Flavour: Волчий зуб и с корнем вон
+Sprite: WolfFang
+Cost: 80
+Effects:
+- Value: 20
+  Type: ExperienceMultiplier
+

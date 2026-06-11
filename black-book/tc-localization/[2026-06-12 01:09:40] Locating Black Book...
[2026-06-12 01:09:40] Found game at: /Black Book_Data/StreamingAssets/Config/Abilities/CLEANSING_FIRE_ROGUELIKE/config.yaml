@@ -1,0 +1,17 @@
+﻿Name: Очищающий огонь
+AbilityType: CLEANSING_FIRE
+TargetType: SELF
+Intention: DEFENCE
+Sprite: CLEANSING_FIRE
+GoldCost: 24
+Effects:
+- EffectType: REMOVE_BAD_STATUS
+  MinValue: 2
+  MaxValue: 2
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Spell
+    SpellTrigger: Spell
+    MissTrigger: Miss
+    SkipReady: true
+

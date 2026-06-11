@@ -1,0 +1,16 @@
+﻿Name: Лесной хлыст
+AbilityType: FOREST_DEMON_ROOTS_WHIP
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: FOREST_DEMON_ROOTS_WHIP
+GoldCost: 3
+Effects:
+- MinValue: 13
+  MaxValue: 23
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

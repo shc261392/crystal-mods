@@ -1,0 +1,19 @@
+﻿IdName: IzbaBashkir
+Name: Изба Айрата
+Scene: AyratIzba
+IsIzba: true
+LevelConfig:
+  MixerSnapshot: snapshot:/Room
+  MusicOverride: "event:/Music/Izba"
+  SpecialLevel: true
+  FoolGame:
+    CardsCount: 36
+    PlayerCount: 4
+AdditionalIzbaFoolPlayers:
+  - Airat
+ForbiddenSpawnAllies:
+- DedEgor
+- DedEgorLoyal
+- Nikolay
+- NikolayLoyal
+

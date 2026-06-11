@@ -1,0 +1,10 @@
+﻿Name: Залом
+InventoryItemName: Zalom
+Flavour: Стебли закручены в узел и посыпаны золой, солью у корней, свежей землей с кладбища, яичной скорлупой и распаренными зернами
+Sprite: Zalom
+Cost: 120
+Effects:
+- Value: 2
+  Type: StatusBonus
+  StatusName: Waste
+

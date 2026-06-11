@@ -1,0 +1,15 @@
+﻿IdName: Week5Day2Church
+Name: Успенская церковь
+Description: Красивые церкви в Чердыни... Зашла бы во все, да времени нет.
+LocationType: PRIEST
+Scene: ChurchVilgort
+LevelConfig:
+  Merchants:
+  - PRIEST
+  Quest:
+    DialogueSystemName: TextQuest/Week5/Day2/UspenChurch/Intro
+  CameraOverride: CMIsoCamera
+  NoExplorationMusic: true
+RequiredLocations:
+- Week5Day2SoborStreet
+

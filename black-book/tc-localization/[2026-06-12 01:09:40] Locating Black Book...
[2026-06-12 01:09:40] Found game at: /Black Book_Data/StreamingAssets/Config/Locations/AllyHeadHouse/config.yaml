@@ -1,0 +1,48 @@
+﻿IdName: AllyHeadHouse
+Name: Изба Левонтия
+Description: Вот и изба Левонтия... Интересно, что от нее осталось? Живет ли кто?
+ShortQuestDescr: Научить Левонтия летать
+LongQuestDescr: Старый еретник придумал, как вернуть себе способность перемещаться. Он собирается выследить кладника, который должен был поселиться в его избе, и сожрать его.
+Scene: LarionHouse
+LevelConfig:
+  MusicOverride: event:/Music/Explore2
+  Quest:
+    DialogueSystemName: TextQuest/AllyHead/House/Intro
+    Outro: TextQuest/AllyHead/House/Outro
+  Battle:
+    Name: Кладник
+    Enemies:
+    - Type: CowTreasure
+      LevelSpawnPointType: EnemyCenter
+      HealthOverride: 78
+    NoShuffle: true
+    PuzzleDeck:
+    - TSELKOVI
+    - TSELKOVI
+    - JUDEA
+    - AVOIL_UP
+    - AVOIL_UP
+    - AVOIL_UP
+    - AVOIL_UP
+    - AVOIL_UP
+    - AVOIL_UP
+    - GOLD_KAZNA
+    - RUDA
+    - RABA
+    - RABA
+    - RABA
+    - RABA
+    PuzzleManaOverride:
+    - 2
+    - 1
+    PuzzleHandOverride:
+    - 5
+    - 3
+    ForceAlly: WhiteHead
+    EnemyKillWin: true
+    HealthLoose: true
+    LimitedTime: 2
+RequiredLocations:
+- AllyHeadBondug
+ForceAlly: WhiteHead
+

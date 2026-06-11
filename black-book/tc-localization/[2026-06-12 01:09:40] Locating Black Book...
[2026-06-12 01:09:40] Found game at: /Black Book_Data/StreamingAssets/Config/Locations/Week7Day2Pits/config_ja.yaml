@@ -1,0 +1,6 @@
+﻿Name: 悪魔の穴
+Description: 何かがいるようには見えない。ただ暗闇と燃える炎のみがそこにある。
+LevelConfig:
+  Battle:
+    Name: タールのチョルト
+

@@ -1,0 +1,10 @@
+﻿Name: Понимание нечисти
+SkillName: EvilUnderstand
+Sprite: EvilUnderstandSkill
+Description: Возможность выбора из 4 слов  после битвы
+RequiredSkills:
+- Vyaz1
+Effects:
+- Value: 1
+  Type: AdditionalWordBattleReward
+

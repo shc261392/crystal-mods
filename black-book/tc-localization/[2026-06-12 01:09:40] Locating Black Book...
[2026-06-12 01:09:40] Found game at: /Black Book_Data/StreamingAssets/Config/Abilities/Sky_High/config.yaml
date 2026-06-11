@@ -1,0 +1,22 @@
+﻿Name: Небес высота
+AbilityType: SKY_HIGH
+AbilityBookPartType: KEY
+Upgrade: SKY_HIGH_UP
+TargetType: SELF
+Intention: DEFENCE
+Color: WHITE
+Sprite: SKY_HIGH
+GoldCost: 18
+Effects:
+- EffectType: STATUS_SKLAD
+  MinValue: 1
+  MaxValue: 1
+  VisualEffect:
+    VisualEffectType: CROSS
+    ReadyTrigger: Word
+    SpellTrigger: Seal3KeyWhite
+    MissTrigger: Seal3KeyWhite
+    WrapUpTime: 0.2
+    SkipReady: true
+  StatusEffectType: DefenceKeep
+

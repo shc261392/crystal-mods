@@ -1,0 +1,9 @@
+﻿Name: Мертвая лопоть
+InventoryItemName: DeadWear
+Flavour: Щас-то «одежда» говорят, а раньше лопотью звали
+Sprite: DeadWear
+Cost: 76
+Effects:
+- Value: 20
+  Type: StatusBonusChance
+

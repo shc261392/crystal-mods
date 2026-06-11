@@ -1,0 +1,6 @@
+﻿Name: Fire Lake
+Description: There's a glimpse of light coming from the front, but I feel something sinister coming from it.
+LevelConfig:
+  Battle:
+    Name: Conveyor
+

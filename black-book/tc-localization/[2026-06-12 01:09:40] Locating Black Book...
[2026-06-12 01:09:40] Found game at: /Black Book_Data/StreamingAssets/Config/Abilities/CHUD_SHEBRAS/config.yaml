@@ -1,0 +1,17 @@
+﻿Name: Шебрас
+AbilityType: CHUD_SHEBRAS
+TargetType: ALL_ALLIES
+Intention: BUFF
+Sprite: CHUD_SHEBRAS
+GoldCost: 3
+Effects:
+- EffectType: HEAL
+  MinValue: 10
+  MaxValue: 10
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

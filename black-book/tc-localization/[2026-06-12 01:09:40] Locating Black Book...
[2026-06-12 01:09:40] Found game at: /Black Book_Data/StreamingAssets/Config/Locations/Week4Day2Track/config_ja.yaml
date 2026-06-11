@@ -1,0 +1,7 @@
+﻿Name: 深い轍
+Description: 荷車の残した深い轍。どれくらいの荷物を運んでいたのだろう？
+ShortQuestDescr: 荷物を取り戻して村人に返す
+LevelConfig:
+  Battle:
+    Name: 満載の荷車
+

@@ -1,0 +1,19 @@
+﻿Name: Давлея
+AbilityType: DAVLEYA
+Upgrade: DAVLEYA_UP
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: DAVLEYA
+GoldCost: 85
+RitualTime: 2
+Effects:
+- MinValue: 30
+  MaxValue: 30
+  VisualEffect:
+    VisualEffectType: KILA
+    ReadyTrigger: Word
+    SpellTrigger: Seal6OrderBlack
+    MissTrigger: Seal6OrderBlack
+    WrapUpTime: 0.05
+    SkipReady: true
+

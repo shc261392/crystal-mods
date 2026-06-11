@@ -1,0 +1,17 @@
+﻿Name: Смерч
+AbilityType: TORNADO
+TargetType: ENEMY
+Intention: ATTACK
+Sprite: TORNADO
+GoldCost: 3
+RitualTime: 2
+Effects:
+- MinValue: 100
+  MaxValue: 100
+  VisualEffect:
+    VisualEffectType: SIMPLE_ATTACK
+    ReadyTrigger: Attack
+    SpellTrigger: Attack
+    MissTrigger: Miss
+    SkipReady: true
+

@@ -1,0 +1,6 @@
+﻿Name: 東の沼
+Description: ヴィシェーラ川の水源は沼地と化してしまった。沼は魔物たちの領域だ。この場所も例外ではない。
+LevelConfig:
+  Battle:
+    Name: 狼人間
+

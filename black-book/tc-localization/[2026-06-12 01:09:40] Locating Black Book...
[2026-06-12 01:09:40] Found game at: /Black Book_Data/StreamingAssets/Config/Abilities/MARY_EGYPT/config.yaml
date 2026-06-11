@@ -1,0 +1,20 @@
+﻿Name: Мария Египетская
+AbilityType: MARY_EGYPT
+TargetType: SELF
+Intention: BUFF
+Color: WHITE
+AbilityBookPartType: KEY
+AbilitySpellType: STATUS
+Sprite: MARY_EGYPT
+GoldCost: 69
+Effects:
+  - EffectType: KRADA_RESTORE
+    MinValue: 1
+    MaxValue: 1
+    VisualEffect:
+      VisualEffectType: CROSS
+      ReadyTrigger: Word
+      SpellTrigger: Seal6OrderWhite
+      MissTrigger: Seal6OrderWhite
+      WrapUpTime: 0.2
+      SkipReady: true

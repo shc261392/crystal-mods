@@ -1,0 +1,12 @@
+﻿Name: Мортёшка
+InventoryItemName: Morteshka
+Flavour: На широких крыльях песни унесу вас в край преданий
+Sprite: IconMorteshka
+Cost: 222
+Effects:
+  - Value: 3
+    Type: StatusOnBattleStart
+    StatusName: Undead
+  - Value: 1
+    Type: PlaySound
+    StringData: event:/UI_Menu/MorteshkaLogo

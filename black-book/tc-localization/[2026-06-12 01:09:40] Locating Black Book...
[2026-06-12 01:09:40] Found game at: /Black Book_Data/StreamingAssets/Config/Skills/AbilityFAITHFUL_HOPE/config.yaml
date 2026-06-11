@@ -1,0 +1,10 @@
+Name: FAITHFUL_HOPE
+SkillName: AbilityFAITHFUL_HOPE
+Sprite: ConfusedDirectionsSkill
+RequiredSkills:
+  - RoguelikeHelpOfSaints3
+SpriteOffsetX: 35.7
+SpriteOffsetY: -43.4
+Effects:
+- Type: AbilityUnlock
+  StringData: FAITHFUL_HOPE

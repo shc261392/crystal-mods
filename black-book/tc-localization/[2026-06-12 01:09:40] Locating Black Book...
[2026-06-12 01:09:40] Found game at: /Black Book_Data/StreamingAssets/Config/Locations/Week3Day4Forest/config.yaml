@@ -1,0 +1,14 @@
+﻿IdName: Week3Day4Forest
+Name: У Кривого леса
+Description: Пока мы свадьбой занимались, силой Кривого леса мог и тот колдун воспользоваться.
+Scene: Road
+LevelConfig:
+  MixerSnapshot: snapshot:/Forest
+  Quest:
+    DialogueSystemName: TextQuest/Week3/Day4/Forest/Intro
+  Exploration: Week3Day4Forest
+  MusicOverride: event:/Music/ExploreDark
+  NoExplorerSpawn: true
+RequiredLocations:
+- Week3Day4Kluch
+
