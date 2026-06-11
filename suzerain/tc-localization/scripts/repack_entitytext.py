@@ -35,6 +35,12 @@ console = Console()
 _STEP_RE = re.compile(r"([^\.\[\]]+)|\[(\d+)\]")
 _RUNTIME_ID_FIELDS = {"StoryPackDataJson", "AppBundleDataJson"}
 
+# Map field names (after Json strip) to TextAsset m_Names (where names differ)
+# e.g., CodexEntriesData (field) -> CodexEntryData (TextAsset)
+_ASSET_NAME_MAPPING = {
+    "CodexEntriesData": "CodexEntryData",  # Plural field -> singular TextAsset
+}
+
 
 def _parse_path(path: str) -> list[object]:
     steps: list[object] = []
@@ -147,6 +153,8 @@ def _patch_database(
                 continue
 
             asset_name = key[: -len("Json")]
+            # Apply mapping for field names that differ from TextAsset m_Names
+            asset_name = _ASSET_NAME_MAPPING.get(asset_name, asset_name)
             pairs = by_asset_name.get(asset_name)
             if not pairs:
                 continue

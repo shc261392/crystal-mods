@@ -137,6 +137,30 @@ if ($DryRun) {
     Write-Ok "Deployed patched scene bundles -> $(Join-Path $TargetDir $SceneGlob)"
 }
 
+# -- Clear Addressables cache --------------------------------------------------
+$CacheDir = Join-Path $TargetDir 'Cache'
+if (Test-Path $CacheDir) {
+    if ($DryRun) {
+        Write-Step "[dry-run] would delete cache: $CacheDir"
+    } else {
+        Remove-Item -Path $CacheDir -Recurse -Force
+        Write-Ok "Cleared Addressables cache -> $CacheDir"
+    }
+}
+
+# -- Clear Unity/Il2CPP runtime cache (if present) ----------------------------
+$GameDataDir = Join-Path $GameDir 'Suzerain_Data'
+if (Test-Path $GameDataDir) {
+    $BundleCache = Join-Path $GameDataDir 'StreamingAssets\aa\AssetBundleCache'
+    if (Test-Path $BundleCache) {
+        if ($DryRun) {
+            Write-Step "[dry-run] would delete: $BundleCache"
+        } else {
+            Remove-Item -Path $BundleCache -Recurse -Force
+            Write-Ok "Cleared AssetBundleCache -> $BundleCache"
+        }
+    }
+}
+
 Write-Ok "Done. Launch Suzerain and verify the Traditional Chinese text."
-Write-Warn "If text appears blank/garbled or reverts to English, the Addressables"
-Write-Warn "catalogue may verify bundle CRC. Run uninstall.ps1 to restore, and report it."
+Write-Warn "Cache was cleared. Game will reload bundles on next start."

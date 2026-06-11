@@ -148,6 +148,30 @@ else
     ok "Deployed patched scene bundles → ${TARGET_DIR}/${SCENE_GLOB}"
 fi
 
+# ── Clear Addressables cache ─────────────────────────────────────────────────
+CACHE_DIR="${TARGET_DIR}/Cache"
+if [[ -d "${CACHE_DIR}" ]]; then
+    if ${DRY_RUN}; then
+        log "[dry-run] would delete cache: ${CACHE_DIR}"
+    else
+        rm -rf "${CACHE_DIR}"
+        ok "Cleared Addressables cache → ${CACHE_DIR}"
+    fi
+fi
+
+# ── Clear Unity/Il2CPP runtime cache (platform-specific) ─────────────────────
+GAME_DATA_DIR="${GAME_DIR}/Suzerain_Data"
+if [[ -d "${GAME_DATA_DIR}" ]]; then
+    BUNDLE_CACHE="${GAME_DATA_DIR}/StreamingAssets/aa/AssetBundleCache"
+    if [[ -d "${BUNDLE_CACHE}" ]]; then
+        if ${DRY_RUN}; then
+            log "[dry-run] would delete: ${BUNDLE_CACHE}"
+        else
+            rm -rf "${BUNDLE_CACHE}"
+            ok "Cleared AssetBundleCache → ${BUNDLE_CACHE}"
+        fi
+    fi
+fi
+
 ok "Done. Launch Suzerain and verify the Traditional Chinese text."
-warn "If text appears blank/garbled or reverts to English, the Addressables"
-warn "catalogue may verify bundle CRC. Run uninstall.sh to restore, and report it."
+warn "Cache was cleared. Game will reload bundles on next start."
