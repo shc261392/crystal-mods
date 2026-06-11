@@ -1,0 +1,7 @@
+{
+  "name": "Black Book",
+  "author": "Community",
+  "version": "1.0.0",
+  "description": "Adds support for Black Book (Steam App 1138660). Handles localization mods and font assets by intelligently routing files to AutoTranslator/Translation/<LOCALE>/, Fonts/, and game root.",
+  "url": "https://www.nexusmods.com/site/mods/xxxx"
+}
