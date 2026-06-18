@@ -10,45 +10,48 @@ Automatically discovers the game installation via Steam (App ID `3556750`) and r
 
 ---
 
-## Mod Installers
+## Mod Installer
 
-### Locale Mod Installer *(priority 20)*
+### Generic File Replacement Installer *(priority 20)*
 
-Handles Traditional Chinese, Simplified Chinese, Japanese, Korean, Russian, and all other locale mods.
+Handles **all mod types** by deploying files to their game-root-relative paths. Supports:
 
-**Detection** — an archive is identified as a locale mod when it contains any of:
-- `Engine.ucs` or `EnginLoc.sga` (by filename)
-- `data/font/`, `data/art/ui/`, or `data/sound/` (by path segment)
-- An `Engine/Locale/` prefix already in the archive
-- A known locale folder at the archive root (e.g. `Chinese/`, `English/`, `Japanese/`, …)
+- Localization mods (`Engine/Locale/*/`)
+- Campaign data (`W40k/`, `WXP/`, `DXP2/`, `DXP3/`)
+- UI/Art assets (`Engine/Data/`, `DoWDE/`)
+- Tools and editors (`Tools/`, `Dev/`)
 
-**Three archive layouts are handled automatically:**
+**Two archive layouts are supported automatically:**
 
-| Layout | Example archive path | Deployed to |
-|--------|----------------------|-------------|
-| Full path present | `Engine/Locale/Chinese/Engine.ucs` | Deployed as-is (game-root-relative) |
-| Locale folder at root | `Chinese/Engine.ucs` | `Engine/Locale/Chinese/Engine.ucs` |
-| Files at locale root | `Engine.ucs`, `data/font/…` | `Engine/Locale/Chinese/Engine.ucs`, etc. |
+| Layout | Example archive structure | Result |
+|--------|---------------------------|--------|
+| **Game-root-relative** | `Engine/Locale/Chinese/Engine.ucs`<br>`DXP2/data/attrib/gameplay.lua` | Deployed as-is (paths preserved) |
+| **Wrapper folder** | `my-mod-v1.0/`<br>`  Engine/Locale/Chinese/Engine.ucs`<br>`  DXP2/data/attrib/gameplay.lua` | Wrapper stripped → files deploy to game root |
 
-### Root Mod Installer *(priority 50 — fallback)*
+**Edge cases handled:**
+- ✅ Single files at root (`readme.txt`) — deployed to game root, not treated as wrapper
+- ✅ Lowercase directory names (`engine/locale/`) — case-insensitive matching ensures correct detection
+- ✅ Mixed content — falls back to deploying everything to game root
 
-Handles all other mod types: SGA archives, race packs, map packs, gameplay scripts, and loose-file mods.
-
-A single wrapper folder is automatically detected and stripped, so both wrapped (`MyMod/W40k/data/…`) and already-correct (`W40k/data/…`) archive layouts work without manual adjustment.
+**Recognized game directories:**  
+`W40k`, `WXP`, `DXP2`, `DXP3`, `DoWDE`, `Engine`, `Dev`, `Tools`
 
 ---
 
-## Automatic SGA State Management
+## Technical Details
 
-Dawn of War DE ships a packed locale archive (`EnginLoc.sga`) that takes priority over loose files. This extension hooks into Vortex's deploy/purge lifecycle to manage that automatically:
+**Implementation:** Simple, maintainable CommonJS module using Vortex API
 
-- **On deploy** — if loose locale mod files are present under `Engine/Locale/Chinese/data/`, `EnginLoc.sga` is renamed to `EnginLoc.sga.disabled` so the engine reads the loose files instead of the pack.
-- **On purge** — `EnginLoc.sga.disabled` is restored to `EnginLoc.sga`, returning the game to its vanilla state.
+**Key features:**
+- Case-insensitive directory matching for cross-platform compatibility
+- Uses `path.posix.relative()` for robust wrapper stripping
+- Guards against edge cases identified in Vortex code review
+- No special processing or file exclusions — deploy as-is
 
-A Vortex notification is displayed whenever the SGA state changes.
+**Version:** 1.0.4 (June 2026)
 
 ---
 
 ## Source Code
 
-<https://github.com/shc261392/wh40k-dow-de-tc-mod/tree/master/vortex-ext/game-warhammer40kdawnofwar>
+<https://github.com/shc261392/crystal-mods/tree/main/dawn-of-war-de/vortex-ext/game-warhammer40kdawnofwar>

@@ -28,6 +28,22 @@
       "recommended": true
     }
   },
+  "overrides": [
+    {
+      "include": ["**/vortex-ext/**/*.js"],
+      "linter": {
+        "rules": {
+          "style": {
+            "useNodejsImportProtocol": "off",
+            "useTemplate": "off"
+          },
+          "suspicious": {
+            "noRedundantUseStrict": "off"
+          }
+        }
+      }
+    }
+  ],
   "javascript": {
     "formatter": {
       "quoteStyle": "single",

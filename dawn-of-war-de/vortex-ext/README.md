@@ -3,291 +3,211 @@
 A [Vortex](https://www.nexusmods.com/about/vortex/) game extension for  
 **Warhammer 40,000: Dawn of War – Definitive Edition** (Steam App ID `3556750`).
 
-The extension is currently under Vortex review, so install it by dragging the zip onto Vortex's **Extensions** tab.
-
 ## Features
 
-- Auto-discovers the game through Steam (App ID `3556750`)
-- Installs **locale mods** (`.ucs`, `.fnt`, `.gfx`, sound files) to  
-  `Engine/Locale/<Locale>/`, defaulting to `Chinese` when no locale is specified
-- Installs **general game-root mods** (SGA archives, race packs, map packs,  
-  gameplay scripts) to the game root, stripping a single wrapper folder where needed
-- Automatically excludes backup files (`.bak`) and broken assets (`fontdecor.gfx`)
-- Two installers run in priority order — the locale installer fires first;  
-  unmatched mods fall through to the root installer
+- **Auto-discovers** the game through Steam (App ID `3556750`)
+- **Generic mod installer** handles any file replacement mod
+- **Smart layout detection**:
+  - Recognizes game-root-relative paths (`Engine/`, `W40k/`, `DXP2/`, `DXP3/`, etc.)
+  - Auto-strips single wrapper folders when present
+  - Falls back to deploying files as-is
+- **Case-insensitive** directory matching (handles `engine/`, `Engine/`, `ENGINE/` equally)
+- **Production-ready**: Addresses all known edge cases from Vortex code review
 
 ## Installation
 
-1. Download `vortex-ext-game-warhammer40kdawnofwar-v*.zip` from Nexus Mods.
-2. Open Vortex, drag the zip onto the **Extensions** tab, and click *Enable*.
-3. Re-open Vortex — **Warhammer 40,000: Dawn of War - Definitive Edition**  
-  will appear under *Supported Games*.
+1. Download the extension ZIP from [GitHub Releases](https://github.com/shc261392/crystal-mods/releases)
+2. Open Vortex → **Extensions** tab
+3. Drag the ZIP onto the Extensions area (or use *Install from file*)
+4. Click **Enable**
+5. Restart Vortex
 
----
+The game will appear under **Manage → Warhammer 40,000: Dawn of War - Definitive Edition**.
 
-## ⚠️ Locale Mods: Required Setup Step
+## Supported Mod Types
 
-When deploying **locale mods** (e.g., Traditional Chinese Patch), you must choose one approach:
+The extension handles **any mod** packaged with game-root-relative paths:
 
-### Option A: Loose Files (Recommended)
+- **Localization mods**: `Engine/Locale/Chinese/Engine.ucs`, `.fnt`, `.gfx`, `.sga`
+- **Campaign data**: `W40k/`, `WXP/`, `DXP2/`, `DXP3/`
+- **UI/Art assets**: `Engine/Data/art/`, `DoWDE/`
+- **Tools**: `Tools/`, `Dev/`
 
-1. **ONE-TIME SETUP:** Disable the vanilla locale SGA:
-   ```
-   Engine/Locale/Chinese/EnginLoc.sga  →  EnginLoc.sga.disabled
-   ```
-   
-2. **Deploy:** Use Vortex normally
-   - Extension auto-detects locale mod
-   - Files deploy to `Engine/Locale/Chinese/data/`, `Engine/Locale/Chinese/Engine.ucs`
-   - Game loads loose files with priority over vanilla SGA
+Mods can be packaged in two ways:
 
-3. **Optional:** Run deploy script for advanced features:
-   ```bash
-   # Linux/WSL: apply font fixes, migrate saves, etc.
-   bash deploy.sh
-   
-   # Windows (PowerShell):
-   .\deploy.ps1
-   ```
+### Layout A: Game-Root-Relative
 
-**✅ Advantages:**
-- Simple setup
-- Vortex handles all deployment
-- Easy to inspect/modify files
-- Automatic file exclusions
-
-**ℹ️ Note:** Backup files (`.bak`) and broken assets (`fontdecor.gfx`) are automatically excluded.
-
----
-
-### Option B: SGA-Packaged Mode (Advanced Users)
-
-If you prefer compact, archived deployment (60–80MB compressed vs 200MB+ loose files):
-
-#### Step 1: Prepare Buildfile
-
-Create `build.txt` (**CRITICAL: Use CRLF line endings, not LF**):
+Files already start with recognized game directories:
 
 ```
-Archive
-TOCStart alias="data" relativeroot="."
-FileSettingsStart defcompression="1"
-    Override wildcard=".*(gfx)$" minsize="-1" maxsize="-1" ct="1"
-    Override wildcard=".*(fnt)$" minsize="-1" maxsize="-1" ct="2"
-    Override wildcard=".*(ttf|ttc|ucs)$" minsize="-1" maxsize="-1" ct="0"
-FileSettingsEnd
-TOCEnd
+my-mod-v1.0.zip
+├── Engine/Locale/Chinese/Engine.ucs
+├── Engine/Locale/Chinese/data/font/font.fnt
+└── W40k/data/attrib/gameplay.lua
 ```
 
-**Compression Types:**
-- `ct="0"` → Store (no compression) — fonts, UCS
-- `ct="1"` → Compress Stream — `.gfx` files
-- `ct="2"` → Compress Buffer — `.fnt` files
+**→ Deploys as-is** (paths preserved)
 
-#### Step 2: Pack the SGA
+### Layout B: Wrapper Folder
 
-```bash
-# Copy Archive.exe from game installation
-Archive.exe -c build.txt -r wh40k-dow-de-tc-mod-v1.0.3 -a EnginLocMod.sga
-```
-
-**Output:** `EnginLocMod.sga` (~60–80MB)
-
-#### Step 3: Create Vortex Package
+Mod content wrapped in a single top-level folder:
 
 ```
-wh40k-dow-de-tc-mod-v1.0.3.zip
-└── wh40k-dow-de-tc-mod-v1.0.3/
-    ├── EnginLocMod.sga
-    └── modinfo.json
+my-mod-v1.0.zip
+└── my-mod-v1.0/
+    ├── Engine/Locale/Chinese/Engine.ucs
+    └── DXP2/data/attrib/gameplay.lua
 ```
 
-#### Step 4: Deploy via Vortex
+**→ Wrapper stripped** → deploys `Engine/...` and `DXP2/...` to game root
 
-- Drag zip onto Vortex
-- Extension detects as locale SGA mod
-- Vortex copies `EnginLocMod.sga` to `Engine/Locale/Chinese/`
-- Engine loads it alongside vanilla SGA
+### Edge Cases Handled
 
-**✅ Advantages:**
-- Compact (60–80MB vs 200MB+)
-- Professional packaging
-- Preserves mod integrity
+✅ **Single file at root** (e.g., `readme.txt`)  
+→ Deploys to game root, not treated as wrapper
 
-**⚠️ Trade-offs:**
-- Requires Archive.exe + buildfile setup
-- CRLF line endings mandatory (LF fails silently)
-- Not easily inspectable once packed
+✅ **Lowercase paths** (e.g., `engine/locale/`)  
+→ Correctly recognized via case-insensitive matching
 
----
+✅ **Mixed content**  
+→ Fallback deploys everything to game root if layout is unclear
 
-## Mod Archive Layouts
-
-The extension detects mod type from archive content:
-
-| Archive content | Detected as | Install target |
-|---|---|---|
-| Contains `Engine.ucs` or `EnginLoc.sga` | Locale mod | `Engine/Locale/Chinese/` |
-| Contains `data/font/`, `data/art/ui/`, or `data/sound/` paths | Locale mod | `Engine/Locale/Chinese/` |
-| Paths begin with `Engine/Locale/<name>/` | Locale mod | `Engine/Locale/<name>/` (preserved) |
-| Top-level folder is a known locale (`Chinese`, `English`, …) | Locale mod | `Engine/Locale/<name>/` |
-| Paths begin with `W40k/`, `WXP/`, `Engine/`, `DXP2/`, … | Root mod | Game root (preserved) |
-| Single wrapper folder around game content | Root mod | Game root (wrapper stripped) |
-| Everything else | Root mod | Game root |
-
-## Game Structure Reference
+## Game Directory Structure
 
 ```
 Dawn of War Definitive Edition/
-├── W40k.exe                    ← main executable
+├── W40k.exe                    ← Main executable
 ├── W40kME.exe                  ← Mission Editor
-├── W40k/                       ← base game data
-├── WXP/                        ← Winter Assault
-├── DXP2/                       ← Dark Crusade
-├── DXP3/                       ← Soulstorm
-├── DoWDE/                      ← Definitive Edition extras
-└── Engine/
-    └── Locale/
-        ├── Chinese/            ← Traditional Chinese locale
-        │   ├── Engine.ucs      ← string table (our mod replaces this)
-        │   ├── EnginLoc.sga    ← packed locale archive (must be disabled)
-        │   └── data/
-        │       ├── font/       ← FNT descriptor files
-        │       ├── art/ui/swf/ ← GFX/SWF UI assets
-        │       └── sound/      ← audio banks
-        ├── English/
-        └── … (13 locales total)
+├── W40k/                       ← Base game (DoW 2004)
+├── WXP/                        ← Winter Assault expansion
+├── DXP2/                       ← Dark Crusade expansion
+├── DXP3/                       ← Soulstorm expansion
+├── DoWDE/                      ← Definitive Edition content
+├── Engine/
+│   ├── Locale/
+│   │   ├── Chinese/            ← Traditional Chinese locale
+│   │   ├── English/            ← English locale
+│   │   └── ... (13 locales total)
+│   └── Data/
+├── Dev/                        ← DevMode tools
+└── Tools/                      ← Modding utilities
 ```
+
+Recognized root directories: `W40k`, `WXP`, `DXP2`, `DXP3`, `DoWDE`, `Engine`, `Dev`, `Tools`
 
 ## Development
 
-This extension is a plain CommonJS module — **no build step is required**.  
-Edit `index.js` directly and reload Vortex to test changes.
+This extension is a plain **CommonJS module** — no build step required.
 
-To extend support (e.g. auto-disable `EnginLoc.sga` on deploy, or add  
-launch tool registration for `W40kME.exe`), refer to the  
-[Vortex Extension API wiki](https://github.com/Nexus-Mods/Vortex/wiki/MODDINGWIKI-Developers-General-Introduction-to-Vortex-extensions).
+**Quick start:**
 
----
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/shc261392/crystal-mods.git
+   cd crystal-mods/dawn-of-war-de/vortex-ext
+   ```
 
-## Archive.exe Reference
+2. Edit `game-warhammer40kdawnofwar/index.js`
 
-**Location in Game:** `<game>/archive/Archive.exe`
+3. Package for testing:
+   ```bash
+   make package
+   ```
 
-**Command Syntax:**
-```bash
-Archive.exe [-a <archive.sga> [-c <buildfile> -r <rootpath>] | -e <target> | -l | -t]
-```
+4. Install to Vortex:
+   - Drag `dist/vortex-warhammer40kdawnofwar-v*.zip` onto Vortex Extensions tab
+   - Restart Vortex to test
 
-| Flag | Purpose | Example |
-|------|---------|---------|
-| `-a` | Create or list archive | `Archive.exe -a mod.sga` |
-| `-c` | Buildfile path | `Archive.exe -c build.txt` |
-| `-r` | Root directory to pack | `Archive.exe -r ./data` |
-| `-e` | Extract to folder | `Archive.exe -a mod.sga -e ./extract` |
-| `-l` | List archive contents | `Archive.exe -a mod.sga -l` |
-| `-t` | Test archive integrity | `Archive.exe -a mod.sga -t` |
+**Resources:**
 
-**Important:**
-- Buildfile **must** have CRLF (Windows) line endings — LF fails silently
-- Paths with spaces must be quoted
-- Test all builds with `-t` before deployment
-- Maximum SGA size: 4 GB
-
----
+- [Vortex Extension API](https://github.com/Nexus-Mods/Vortex/wiki/MODDINGWIKI-Developers-General-Introduction-to-Vortex-extensions)
+- [Example extensions](https://github.com/Nexus-Mods/vortex-games)
+- [Steam App ID lookup](https://steamdb.info/)
 
 ## Troubleshooting
 
-### Tofu Boxes (□□□) in Game
+### Game Not Detected
 
-**Cause:** Broken `fontdecor.gfx` file (missing glyph tables)
+**Symptoms:** DoW:DE doesn't appear in Vortex supported games list
 
-**Fix:**
-1. Ensure `fontdecor.gfx` is NOT included in deployment
-2. Verify vanilla `fontdecor.gfx` (8.7MB) exists in game installation
-3. See [FONTDECOR_ROOT_CAUSE_ANALYSIS.md](../unofficial-tc-patch/docs/FONTDECOR_ROOT_CAUSE_ANALYSIS.md) for technical details
+**Solutions:**
+1. Verify Steam installation:
+   - Open Steam → Library → Warhammer 40,000: Dawn of War - Definitive Edition
+   - Right-click → Properties → Local Files → Browse
+   - Confirm `W40k.exe` exists in the folder
+2. Check Vortex settings:
+   - Settings → Games → Scan for games
+   - Manually add game path if auto-detection fails
+3. Verify extension is enabled:
+   - Extensions tab → ensure "Dawn of War - Definitive Edition" is enabled
+   - Restart Vortex after enabling
 
-### Chinese Text Not Displaying
+### Mod Files Not Deploying
 
-**Check:**
-1. All font files (`.ttf`/`.ttc`) are deployed to `data/font/`
-2. `Engine.ucs` is present in `Engine/Locale/Chinese/`
-3. Game files are not corrupted (Steam Verify)
+**Symptoms:** Mod shows as active in Vortex but files don't appear in game
 
-**Reset:**
-1. Disable mod in Vortex
-2. Verify game files (right-click game in Steam → Properties → Verify)
-3. Re-enable mod
+**Solutions:**
+1. Check deployment path:
+   - Mods tab → click mod → *Open in File Manager*
+   - Verify files deployed to correct location (compare with game directory structure)
+2. Verify game directory permissions:
+   - Right-click game folder → Properties → Security (Windows)
+   - Ensure your user account has *Write* permission
+3. Try manual deployment:
+   - Disable deployment in Vortex
+   - Deploy again (Vortex will re-create symlinks/hardlinks)
+4. Check for conflicts:
+   - Vortex notification panel may show file conflicts
+   - Resolve via conflict resolution dialog
 
-### Mod Fails to Deploy in Vortex
+### Mod Shows Errors in Vortex
 
-**Possible Causes:**
-- Archive format unrecognized
-- Missing `modinfo.json` metadata
-- File permissions issue
+**Common issues:**
 
-**Solution:**
-1. Check Vortex notification panel for detailed error
-2. Verify archive structure: files at mod root (not nested)
-3. Ensure `modinfo.json` is valid JSON (use online validator if unsure)
-4. Try deploying manually to `Mods/` folder
+1. **"Invalid archive format"**
+   - Archive likely corrupted during download
+   - Re-download and try again
+   
+2. **"No valid installation path found"**
+   - Mod packaged incorrectly (missing game-root directories)
+   - Check with mod author or try manual installation
+   
+3. **"Permission denied"**
+   - Game directory is read-only or in protected location
+   - Run Vortex as administrator (Windows) or fix permissions (Linux)
 
-### SGA Build Fails with Archive.exe
+### Extension Development Issues
 
-**Error: "Cannot open buildfile"**
-- Ensure buildfile has CRLF line endings (not LF)
-- Use Windows Notepad or online CRLF converter
-- Quote paths with spaces
+**Debugging:**
 
-**Error: "Invalid compression type"**
-- Compression values: `ct="0"` (Store), `ct="1"` (Stream), `ct="2"` (Buffer)
-- Check syntax for typos
-
-**Error: "File not found"**
-- Root path (`-r`) must point to existing directory
-- Use absolute paths or verify relative path
-
----
-
-## File Exclusion Rules (Locale Mods)
-
-| File | Include? | Reason |
-|------|----------|--------|
-| `.ttf`, `.ttc` | ✅ YES | Required for text rendering |
-| `.fnt` | ✅ YES | Font configuration |
-| `.gfx` (except fontdecor.gfx) | ✅ YES | UI assets |
-| `fontdecor.gfx` | ❌ NO | Broken in TC version (use vanilla) |
-| `.bak` | ❌ NO | Backup files, not needed |
-| `.ucs` | ✅ YES | Unicode strings |
-| `.fda`, `.rat` | ✅ YES | Audio banks |
-
----
-
-## Technical Specifications
-
-| Property | Value |
-|----------|-------|
-| **Engine** | Relic Essence Engine (DirectX 9, 32-bit) |
-| **Archive Format** | `.sga` (Relic binary, max 4GB) |
-| **UI Format** | `.gfx` (Scaleform Flash 8.x bytecode) |
-| **Font Format** | `.ttf`/`.ttc` (TrueType) |
-| **String Format** | `.ucs` (UTF-16 LE Unicode) |
-| **Config Format** | `.fnt` (text-based font metadata) |
-| **Audio Format** | `.fda`/`.rat` (Relic audio banks) |
+1. Enable Vortex developer console:
+   - Settings → Interface → Enable Advanced Mode
+   - Help → Toggle Developer Tools (F12)
+   
+2. Check extension logs:
+   - `%APPDATA%/Vortex/vortex.log` (Windows)
+   - `~/.config/Vortex/vortex.log` (Linux)
+   
+3. Test with sample mod:
+   - Create test archive: `test-mod.zip` containing `Engine/test.txt`
+   - Install via Vortex
+   - Check deployment to `<game>/Engine/test.txt`
 
 ---
 
 ## Support
 
-**For Extension Issues:**
-1. Review mod package structure
-2. Check Vortex notification panel (Settings → Notifications)
-3. Consult [FONTDECOR_ROOT_CAUSE_ANALYSIS.md](../unofficial-tc-patch/docs/FONTDECOR_ROOT_CAUSE_ANALYSIS.md)
-4. Report with:
-   - Archive structure (list files)
-   - Vortex version
-   - Extension version
-   - Error message (screenshots helpful)
+**Extension Issues:**
+- GitHub Issues: [https://github.com/shc261392/crystal-mods/issues](https://github.com/shc261392/crystal-mods/issues)
+- Include: Vortex version, extension version, error messages, mod archive structure
+
+**Vortex General Help:**
+- [Vortex Support Wiki](https://wiki.nexusmods.com/index.php/Vortex)
+- [Nexus Mods Forums](https://forums.nexusmods.com/index.php?/forum/4306-vortex-support/)
+
+**Dawn of War Modding:**
+- [Relicnews Modding Forums](https://www.relicnews.com/forums/)
+- [PCGamingWiki: Dawn of War](https://www.pcgamingwiki.com/wiki/Warhammer_40,000:_Dawn_of_War)
 
 ---
 
@@ -295,8 +215,10 @@ Archive.exe [-a <archive.sga> [-c <buildfile> -r <rootpath>] | -e <target> | -l 
 
 MIT — See [LICENSE](../../LICENSE)
 
+---
+
 ## Version
 
-- **Extension Version:** 1.1.0
-- **Vortex Compatibility:** 1.10+
-- **Game:** Steam App ID 3556750
+**Extension:** 1.0.4  
+**Vortex Compatibility:** 1.10+  
+**Game:** Steam App ID 3556750 (Warhammer 40,000: Dawn of War - Definitive Edition)

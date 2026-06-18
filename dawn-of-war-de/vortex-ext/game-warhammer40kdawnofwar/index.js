@@ -11,10 +11,10 @@
  *  relative to the game root. The extension deploys them as-is.
  *
  *  Examples:
- *    - Locale mods: Engine/Locale/Chinese/Engine.ucs
+ *    - Localization: Engine/Locale/Chinese/Engine.ucs
+ *    - Game data: W40k/, WXP/, DXP2/, DXP3/, DoWDE/
  *    - SGA archives: Engine/Locale/English/EnginLoc.sga
- *    - Game data: W40k/data/…
- *    - Tool/editor files: Tools/…
+ *    - Tools/editors: Tools/…, Dev/…
  *
  *  The extension simply deploys files to the paths they specify, with optional
  *  wrapper folder stripping for convenience.
@@ -53,12 +53,13 @@ function findGame() {
 // ---------------------------------------------------------------------------
 
 /**
- * Ensures key game directories exist so that Vortex can deploy mod files to them.
+ * Ensures the game directory is writable so Vortex can deploy mods.
+ * Vortex will auto-create subdirectories during deployment.
  *
  * @param {object} discovery  IDiscoveryResult — contains `.path`
  */
 function prepareForModding(discovery) {
-  return fs.ensureDirWritableAsync(path.join(discovery.path, 'Engine', 'Locale'));
+  return fs.ensureDirWritableAsync(discovery.path);
 }
 
 // ---------------------------------------------------------------------------
@@ -82,55 +83,66 @@ function testModContent(files, gameId) {
 /**
  * Installs mod files by deploying them to their specified paths.
  *
- * Two archive layouts are handled:
+ * Handles two archive layouts:
  *
- *   A) Already game-root-relative (starts with a known game subfolder):
+ *   A) Game-root-relative (files start with known game directories):
  *        Engine/Locale/Chinese/Engine.ucs  →  Engine/Locale/Chinese/Engine.ucs
- *        W40k/data/…                       →  W40k/data/…
+ *        DXP2/data/attrib/…                →  DXP2/data/attrib/…
+ *        W40k/Scenarios/…                  →  W40k/Scenarios/…
  *
- *   B) Wrapped in a single top-level folder (auto-strip):
+ *   B) Wrapped in a single top-level folder (auto-strips wrapper):
  *        wh40k-dow-de-tc-mod-v1.0.3/Engine/Locale/Chinese/Engine.ucs
  *        → Engine/Locale/Chinese/Engine.ucs
  *
  * @param {string[]} files  Archive file list.
  */
 function installModContent(files) {
-  const norm = files.map((f) => f.replace(/\\/g, '/'));
-  const fileEntries = norm.filter((f) => !f.endsWith('/'));
+  // Normalize all paths to forward slashes (Vortex internal format)
+  const normalized = files.map((f) => f.replace(/\\/g, '/')).filter((f) => !f.endsWith('/'));
 
-  // Layout A — archive paths already start with a known game directory or full path
-  if (fileEntries.some((f) => ROOT_GAME_DIRS.some((dir) => f.startsWith(dir + '/')))) {
+  // Helper: Check if path starts with a known game directory (case-insensitive)
+  const startsWithGameDir = (filePath) =>
+    ROOT_GAME_DIRS.some((dir) => filePath.toLowerCase().startsWith(`${dir.toLowerCase()}/`));
+
+  // Layout A — Files already start with game root directories
+  if (normalized.some(startsWithGameDir)) {
     return Promise.resolve({
-      instructions: fileEntries.map((f) => ({
+      instructions: normalized.map((source) => ({
         type: 'copy',
-        source: f,
-        destination: path.normalize(f),
+        source,
+        destination: path.normalize(source),
       })),
     });
   }
 
-  // Layout B — detect single wrapper folder and strip it
-  const topDirs = [...new Set(fileEntries.map((f) => f.split('/')[0]))].filter(Boolean);
-  if (topDirs.length === 1) {
-    const wrapper = topDirs[0];
-    const prefixLen = wrapper.length + 1;
-    const stripped = fileEntries.map((f) => f.substring(prefixLen));
+  // Detect potential wrapper folder
+  const topLevelDirs = [...new Set(normalized.map((f) => f.split('/')[0]))].filter(Boolean);
+  const hasSingleWrapper = topLevelDirs.length === 1;
+  const hasNestedContent = normalized.some((f) => f.includes('/'));
+
+  // Layout B — Single wrapper folder containing actual mod files
+  if (hasSingleWrapper && hasNestedContent) {
+    const wrapper = topLevelDirs[0];
 
     return Promise.resolve({
-      instructions: fileEntries.map((f, i) => ({
-        type: 'copy',
-        source: f,
-        destination: path.normalize(stripped[i]),
-      })),
+      instructions: normalized.map((source) => {
+        // Strip the wrapper folder using path.posix.relative
+        const relative = path.posix.relative(wrapper, source);
+        return {
+          type: 'copy',
+          source,
+          destination: path.normalize(relative),
+        };
+      }),
     });
   }
 
-  // Fallback — deploy files as-is to root
+  // Fallback — Deploy files as-is
   return Promise.resolve({
-    instructions: fileEntries.map((f) => ({
+    instructions: normalized.map((source) => ({
       type: 'copy',
-      source: f,
-      destination: path.normalize(f),
+      source,
+      destination: path.normalize(source),
     })),
   });
 }

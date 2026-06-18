@@ -114,6 +114,7 @@ uninstall: ## Revert deployment (restore backups, re-enable original SGA)
 DIST_DIR  := dist
 VERSION   := $(shell python3 -c "import json,pathlib; print(json.loads(pathlib.Path('modinfo.json').read_text())['version'])" 2>/dev/null || echo "dev")
 PKG_NAME  := wh40k-dow-de-tc-mod-v$(VERSION)
+RELEASE_SGA  ?= ../../.copilot_workspace/dowde_campaign_bisect_20260608/sga/EnginLocTC_release_20260609_bigfont_tofu_safe.sga
 EXT_DIR   := vortex-ext/game-warhammer40kdawnofwar
 EXT_ID    := game-warhammer40kdawnofwar
 EXT_VER   := $(shell python3 -c "import json,pathlib; print(json.loads(pathlib.Path('$(EXT_DIR)/info.json').read_text())['version'])" 2>/dev/null || echo "dev")
@@ -134,6 +135,20 @@ package: ## Build distributable mod archive (files packaged with full deployment
 	@echo "✓ $(DIST_DIR)/$(PKG_NAME).zip"
 	@echo "  Size: $$(du -sh "$(DIST_DIR)/$(PKG_NAME).zip" | cut -f1)"
 	@echo "  Files: $$(find "$(DIST_DIR)/$(PKG_NAME)" -type f | wc -l)"
+
+
+.PHONY: finalize-release
+finalize-release: ## Sync validated release SGA to EnginLocMod.sga
+	@test -f "$(RELEASE_SGA)" || (echo "✗ Release SGA not found: $(RELEASE_SGA)" && exit 1)
+	@cp -f "$(RELEASE_SGA)" EnginLocMod.sga
+	@echo "✓ EnginLocMod.sga updated from release SGA: $(RELEASE_SGA)"
+	@echo "  SHA256: $$(sha256sum EnginLocMod.sga | awk '{print $$1}')"
+
+.PHONY: package-release
+package-release: finalize-release package ## Standard release path: sync validated SGA then package zip
+
+.PHONY: package-rc20
+package-rc20: package-release ## Backward-compatible alias (deprecated)
 
 .PHONY: package-ext
 package-ext: ## Build Vortex extension zip (.copilot_workspace/dist/vortex-ext-*.zip)
