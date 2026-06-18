@@ -47,6 +47,16 @@ dist/
 # EXCEPTION: Official release ZIPs (v1.0.3 and later)
 !dist/wh40k-dow-de-tc-mod-v*.zip
 
+# ── Binary game files (NEVER COMMIT - not mergeable, breaks git best practices)
+# Build these from source using Makefiles when needed. Store built assets separately.
+*.sga
+*.ucs
+*.pak
+*.bin
+*.assets
+*.unity3d
+*.assetbundle
+
 out/
 
 # ── Game / mod artifacts ─────────────────────────────────────────────────────
