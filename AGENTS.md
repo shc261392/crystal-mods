@@ -26,6 +26,22 @@ linked under "Progressive disclosure" below.
    in the game installation. **`Engine/Locale/English/` is forbidden.** The game
    ships with Chinese locale; all deployments must preserve this. For other
    projects, apply locale preservation rules as appropriate to that game.
+7. **CRITICAL: Credential safety**: **NEVER read `.env` files or credentials
+   into agent context.** Access secrets only via scripts/environment variables.
+   If a task requires credentials, instruct the user to run the script directly
+   or pass values via environment variables. Reading credentials into LLM context
+   risks exposure through conversation logs, debug output, or model training.
+8. **CRITICAL: Unrecoverable actions require dual verification**:
+   - **Research FIRST**: before running ANY tool that modifies git history,
+     deletes files, or performs system-wide changes, research the tool's behavior
+     thoroughly (read docs, check man pages, verify examples).
+   - **Test on dummy files**: create a test directory with sample files and run
+     the command with a dry-run flag or on test data first.
+   - **Human approval AFTER showing consequences**: present the test results,
+     explain exactly what will happen (including side effects like local file
+     deletion), and get explicit user approval before proceeding.
+   - **Examples requiring this process**: `git-filter-repo`, `git push --force`,
+     `rm -rf`, database migrations, production deployments, batch file operations.
 
 ## Repository contract
 
