@@ -43,9 +43,8 @@ node_modules/
 .nuxt/
 .cache/
 dist/
-
-# EXCEPTION: Official release ZIPs (v1.0.3 and later)
-!dist/wh40k-dow-de-tc-mod-v*.zip
+build/
+build.*/
 
 # ── Binary game files (NEVER COMMIT - not mergeable, breaks git best practices)
 # Build these from source using Makefiles when needed. Store built assets separately.
@@ -56,6 +55,13 @@ dist/
 *.assets
 *.unity3d
 *.assetbundle
+*.bundle
+
+# Font files - download from official sources instead
+*.ttf
+*.ttc
+*.otf
+hybrid_fonts_tc/
 
 out/
 
