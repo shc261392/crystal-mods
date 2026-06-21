@@ -7,7 +7,7 @@ extracted out of the Unity asset bundles.
 ## Stack
 
 - **Framework**: Astro 5 (`output: 'static'` — every page prerendered)
-- **Deployment**: Cloudflare Pages (static `dist/`)
+- **Deployment**: Cloudflare Workers (static assets via `wrangler deploy --assets`)
 - **Styling**: Tailwind CSS v4 (`@tailwindcss/vite`)
 - **Language**: TypeScript (strict mode, `noUncheckedIndexedAccess`)
 - **Linter/Formatter**: Biome
@@ -37,7 +37,7 @@ pnpm preview
 pnpm lint
 pnpm format
 
-# Deploy to Cloudflare Pages
+# Deploy to Cloudflare Worker (serving static assets from dist/)
 pnpm deploy
 ```
 
