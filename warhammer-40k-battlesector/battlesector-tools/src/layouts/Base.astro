@@ -1,0 +1,68 @@
+---
+import Nav from '../components/Nav.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  /** Optional path for canonical/OG URL, e.g. "/units/1006-tyranid-termagant". */
+  path?: string;
+  ogType?: string;
+}
+
+const {
+  title,
+  description = 'Web tools for Warhammer 40,000: Battlesector — browse units, weapons and abilities, build army lists, and calculate damage.',
+  path = '',
+  ogType = 'website',
+} = Astro.props;
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const canonical = `${site}${path}`;
+const fullTitle = title === 'Battlesector Tools' ? title : `${title} · Battlesector Tools`;
+---
+
+<!doctype html>
+<html lang="en" style="color-scheme: dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#15171f" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {canonical && <link rel="canonical" href={canonical} />}
+
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content="Battlesector Tools" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    {canonical && <meta property="og:url" content={canonical} />}
+    <meta property="og:image" content={`${site}/og.svg`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${site}/og.svg`} />
+
+    <link rel="preconnect" href="https://rsms.me" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  </head>
+  <body>
+    <Nav />
+    <main class="container-page py-8 md:py-10 fade-up">
+      <slot />
+    </main>
+    <footer class="border-t border-[var(--color-border)] mt-16">
+      <div class="container-page py-8 text-sm text-[var(--color-faint)] flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+        <p>
+          Battlesector Tools · Unofficial fan project. Game data extracted for
+          reference and analysis.
+        </p>
+        <p>
+          Warhammer 40,000: Battlesector © Games Workshop / Black Lab Games.
+          Not affiliated.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

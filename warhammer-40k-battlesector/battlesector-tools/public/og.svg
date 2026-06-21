@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#15171f"/>
+      <stop offset="1" stop-color="#0d0e13"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6b84a"/>
+      <stop offset="1" stop-color="#b22a22"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.8" cy="0.1" r="0.6">
+      <stop offset="0" stop-color="#e6b84a" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#e6b84a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g transform="translate(96 200)">
+    <rect x="0" y="-96" width="96" height="96" rx="20" fill="url(#gold)"/>
+    <text x="20" y="-22" font-family="Inter, system-ui, sans-serif" font-size="68" font-weight="900" fill="#15171f">B</text>
+    <text x="0" y="64" font-family="Inter, system-ui, sans-serif" font-size="40" font-weight="700" letter-spacing="6" fill="#c8a04a">WARHAMMER 40,000: BATTLESECTOR</text>
+    <text x="0" y="150" font-family="Inter, system-ui, sans-serif" font-size="84" font-weight="900" fill="#f5efe0">Battlesector Tools</text>
+    <text x="0" y="218" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="500" fill="#9aa0ad">Unit &amp; weapon database · army builder · damage calculator</text>
+  </g>
+</svg>

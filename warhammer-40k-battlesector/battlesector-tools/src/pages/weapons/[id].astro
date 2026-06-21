@@ -1,0 +1,124 @@
+---
+import Base from '../../layouts/Base.astro';
+import { damagePerHit } from '../../lib/combat';
+import { getWeapon, idFromSlug, unitSlug, units, weaponSlug, weapons } from '../../lib/data';
+
+export function getStaticPaths() {
+  return weapons.map((w) => ({
+    params: { id: weaponSlug(w) },
+    props: { weaponId: w.id },
+  }));
+}
+
+const { weaponId } = Astro.props;
+const weapon = getWeapon(weaponId) ?? getWeapon(idFromSlug(Astro.params.id));
+if (!weapon) {
+  return Astro.redirect('/weapons');
+}
+
+// Damage vs armor table (armor 0..9), accounting for armor piercing.
+const armorTable = Array.from({ length: 10 }, (_, armor) => ({
+  armor,
+  dmg: damagePerHit(weapon.damage, armor, weapon.armorPiercing),
+}));
+
+// Units that can take this weapon.
+const carriers = units
+  .filter((u) =>
+    u.weaponSlots.some((slot) => slot.options.some((opt) => opt.weaponId === weapon.id)),
+  )
+  .sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<Base
+  title={weapon.name}
+  description={`${weapon.name} — ${weapon.damage} damage, ${weapon.accuracy}% accuracy. Battlesector weapon stats and carriers.`}
+  path={`/weapons/${weaponSlug(weapon)}`}
+  ogType="article"
+>
+  <nav class="text-sm text-[var(--color-faint)] mb-5">
+    <a href="/weapons" class="hover:text-[var(--color-gold-dim)]">Weapons</a>
+    <span class="mx-1.5">/</span>
+    <span class="text-[var(--color-muted)]">{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
+  </nav>
+
+  <div class="surface p-6 md:p-8">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+      <div>
+        <div class="flex flex-wrap items-center gap-2 mb-2">
+          <span class="chip">{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
+          {weapon.armorPiercing > 0 && <span class="chip">AP {weapon.armorPiercing}</span>}
+        </div>
+        <h1 class="text-3xl md:text-4xl font-black">{weapon.name}</h1>
+      </div>
+      <div class="flex gap-6">
+        <div class="text-center">
+          <p class="text-4xl font-black text-[var(--color-gold)] leading-none">{weapon.damage}</p>
+          <p class="text-xs text-[var(--color-faint)] uppercase tracking-wide mt-1.5">Damage</p>
+        </div>
+        <div class="text-center">
+          <p class="text-4xl font-black leading-none">{weapon.accuracy}%</p>
+          <p class="text-xs text-[var(--color-faint)] uppercase tracking-wide mt-1.5">Accuracy</p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5 flex flex-wrap gap-2">
+      <button id="copy-link" type="button" class="btn" data-url={`/weapons/${weaponSlug(weapon)}`}>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>
+        <span>Copy link</span>
+      </button>
+      <a href={`/calculator?weapon=${weapon.id}`} class="btn btn-primary">Open in calculator</a>
+    </div>
+  </div>
+
+  <div class="grid gap-4 md:grid-cols-2 mt-4">
+    <!-- Damage vs armor -->
+    <section class="surface p-5">
+      <h2 class="text-lg font-bold mb-1">Damage vs Armor</h2>
+      <p class="text-sm text-[var(--color-faint)] mb-4">
+        Per hit. Minimum 1 damage always applies{weapon.armorPiercing > 0 ? `; armor piercing ${weapon.armorPiercing} factored in` : ''}.
+      </p>
+      <div class="space-y-1.5">
+        {armorTable.map((row) => (
+          <div class="flex items-center gap-3">
+            <span class="text-xs text-[var(--color-faint)] w-14 shrink-0">Armor {row.armor}</span>
+            <div class="statbar flex-1"><span style={`width:${Math.round((row.dmg / weapon.damage || 0) * 100)}%`}></span></div>
+            <span class="text-sm font-bold tabular-nums w-8 text-right">{row.dmg}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Carriers -->
+    <section class="surface p-5">
+      <h2 class="text-lg font-bold mb-4">
+        Carried by <span class="text-[var(--color-faint)] font-normal text-base">({carriers.length})</span>
+      </h2>
+      {carriers.length === 0 ? (
+        <p class="text-sm text-[var(--color-faint)]">No units in the dataset reference this weapon.</p>
+      ) : (
+        <div class="space-y-1.5 max-h-[22rem] overflow-y-auto pr-1">
+          {carriers.map((u) => (
+            <a href={`/units/${unitSlug(u)}`} class="flex items-center justify-between gap-3 rounded-lg px-3 py-2 hover:bg-[var(--color-base)] transition-colors">
+              <span class="flex items-center gap-2.5 min-w-0">
+                <span class="w-1 h-7 rounded-full shrink-0" style={`background:${u.roleColor}`}></span>
+                <span class="min-w-0">
+                  <span class="font-semibold text-sm truncate block">{u.name}</span>
+                  <span class="text-xs text-[var(--color-faint)]">{u.factionName}</span>
+                </span>
+              </span>
+              <span class="text-xs text-[var(--color-faint)] shrink-0">{u.pointCost} pts</span>
+            </a>
+          ))}
+        </div>
+      )}
+    </section>
+  </div>
+
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 hidden surface px-4 py-2.5 text-sm font-semibold z-[120]"></div>
+
+  <script>
+    import { initUnitDetail } from '../../scripts/unit-detail';
+    initUnitDetail();
+  </script>
+</Base>

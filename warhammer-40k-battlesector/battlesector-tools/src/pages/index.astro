@@ -1,0 +1,137 @@
+---
+import Base from '../layouts/Base.astro';
+import { factions, roles, summary, units } from '../lib/data';
+
+const tools = [
+  {
+    href: '/units',
+    title: 'Unit Database',
+    desc: 'Browse all 190 units with full stats, armor, weapons and abilities. Filter instantly by faction, role and points.',
+    icon: '◈',
+    accent: 'var(--color-gold)',
+  },
+  {
+    href: '/weapons',
+    title: 'Weapon Database',
+    desc: 'Every weapon with damage and accuracy. Sort and filter to find the right tool for the job.',
+    icon: '⚔',
+    accent: 'var(--color-blood)',
+  },
+  {
+    href: '/army-builder',
+    title: 'Army Builder',
+    desc: 'Compose a list, track points live, and share it with a single URL. Saved automatically in your browser.',
+    icon: '▦',
+    accent: 'var(--color-plasma)',
+  },
+  {
+    href: '/calculator',
+    title: 'Damage Calculator',
+    desc: 'Model damage vs armor, hit chance and expected casualties using the real in-game formulas.',
+    icon: '∑',
+    accent: 'var(--color-toxin)',
+  },
+  {
+    href: '/compare',
+    title: 'Unit Comparison',
+    desc: 'Put units side by side and see every stat difference at a glance. Linkable for sharing matchups.',
+    icon: '⇄',
+    accent: 'var(--color-warp)',
+  },
+];
+
+const topUnits = [...units].sort((a, b) => b.totalHealth - a.totalHealth).slice(0, 6);
+---
+
+<Base title="Battlesector Tools">
+  <!-- Hero -->
+  <section class="relative overflow-hidden surface px-6 py-12 md:px-12 md:py-16">
+    <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full blur-3xl opacity-30" style="background: radial-gradient(circle, var(--color-gold), transparent 70%)"></div>
+    <div class="relative max-w-3xl">
+      <p class="eyebrow mb-3">Warhammer 40,000: Battlesector</p>
+      <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-[1.05]">
+        The complete <span class="gold-text">tactical toolkit</span> for Battlesector
+      </h1>
+      <p class="mt-5 text-lg text-[var(--color-muted)] max-w-2xl">
+        Browse extracted in-game data, build army lists, run damage calculations
+        and compare units — all in one fast, mobile-friendly app.
+      </p>
+      <div class="mt-7 flex flex-wrap gap-3">
+        <a href="/units" class="btn btn-primary">Explore units</a>
+        <a href="/army-builder" class="btn">Build an army</a>
+      </div>
+
+      <dl class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl">
+        <div>
+          <dt class="label">Units</dt>
+          <dd class="text-2xl font-bold">{summary.unitCount}</dd>
+        </div>
+        <div>
+          <dt class="label">Weapons</dt>
+          <dd class="text-2xl font-bold">{summary.weaponCount}</dd>
+        </div>
+        <div>
+          <dt class="label">Factions</dt>
+          <dd class="text-2xl font-bold">{factions.length}</dd>
+        </div>
+        <div>
+          <dt class="label">Roles</dt>
+          <dd class="text-2xl font-bold">{roles.length}</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Tools grid -->
+  <section class="mt-12">
+    <h2 class="text-xl font-bold mb-5">Tools</h2>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {tools.map((t) => (
+        <a href={t.href} class="surface surface-hover p-6 group relative overflow-hidden">
+          <div class="flex items-start gap-4">
+            <span class="grid place-items-center w-11 h-11 rounded-xl text-xl font-bold shrink-0" style={`background: color-mix(in oklab, ${t.accent} 20%, transparent); color: ${t.accent}`}>{t.icon}</span>
+            <div>
+              <h3 class="font-bold text-lg group-hover:text-[var(--color-gold)] transition-colors">{t.title}</h3>
+              <p class="mt-1.5 text-sm text-[var(--color-muted)] leading-relaxed">{t.desc}</p>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Factions -->
+  <section class="mt-12">
+    <h2 class="text-xl font-bold mb-5">Factions</h2>
+    <div class="flex flex-wrap gap-2.5">
+      {summary.factions.map((f) => (
+        <a href={`/units?faction=${encodeURIComponent(f)}`} class="chip text-sm py-1.5 px-3.5 hover:border-[var(--color-gold-dim)] hover:text-[var(--color-ink)] transition-colors">
+          {f}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Toughest units preview -->
+  <section class="mt-12">
+    <div class="flex items-center justify-between mb-5">
+      <h2 class="text-xl font-bold">Toughest units</h2>
+      <a href="/units" class="text-sm font-semibold text-[var(--color-gold-dim)] hover:text-[var(--color-gold)]">View all →</a>
+    </div>
+    <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      {topUnits.map((u) => (
+        <a href={`/units/${u.id}-${u.name.toLowerCase().replace(/['’]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')}`} class="surface surface-hover p-4 flex items-center gap-3">
+          <span class="w-1 h-12 rounded-full shrink-0" style={`background:${u.roleColor}`}></span>
+          <div class="min-w-0 flex-1">
+            <p class="font-semibold truncate">{u.name}</p>
+            <p class="text-xs text-[var(--color-faint)]">{u.factionName} · {u.roleName}</p>
+          </div>
+          <div class="text-right shrink-0">
+            <p class="font-bold text-[var(--color-gold)]">{u.totalHealth}</p>
+            <p class="text-[10px] text-[var(--color-faint)] uppercase tracking-wide">HP</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

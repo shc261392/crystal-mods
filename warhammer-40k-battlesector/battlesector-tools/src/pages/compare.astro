@@ -1,0 +1,46 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Unit Comparison"
+  description="Compare Warhammer 40,000: Battlesector units side by side. Every stat difference at a glance, shareable by link."
+  path="/compare"
+>
+  <header class="mb-6">
+    <p class="eyebrow mb-2">Tool</p>
+    <h1 class="text-3xl md:text-4xl font-black">Unit Comparison</h1>
+    <p class="mt-2 text-[var(--color-muted)] max-w-2xl">
+      Add up to four units to compare every stat. The best value in each row is
+      highlighted. Share the matchup with a link.
+    </p>
+  </header>
+
+  <div class="surface p-4 mb-4 flex flex-wrap items-end gap-3">
+    <div class="flex-1 min-w-[14rem]">
+      <label class="label block mb-1.5" for="add-unit">Add unit</label>
+      <select id="add-unit" class="select"></select>
+    </div>
+    <button id="add-btn" type="button" class="btn btn-primary h-[42px]">Add</button>
+    <button id="share-btn" type="button" class="btn h-[42px]">Copy link</button>
+    <button id="clear-btn" type="button" class="btn btn-ghost h-[42px]">Clear</button>
+  </div>
+
+  <div id="empty" class="surface p-12 text-center text-[var(--color-faint)]">
+    Add units above to start comparing.
+  </div>
+
+  <div id="compare-wrap" class="hidden overflow-x-auto surface">
+    <table class="w-full border-collapse text-sm">
+      <thead id="compare-head"></thead>
+      <tbody id="compare-body"></tbody>
+    </table>
+  </div>
+
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 hidden surface px-4 py-2.5 text-sm font-semibold z-[120]"></div>
+
+  <script>
+    import { initCompare } from '../scripts/compare';
+    initCompare();
+  </script>
+</Base>

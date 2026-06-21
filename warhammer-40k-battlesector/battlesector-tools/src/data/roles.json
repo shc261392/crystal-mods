@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "HQ", "color": "#ffab51", "sort": 0 },
+  { "id": 2, "name": "Troop", "color": "#cc6161", "sort": 5 },
+  { "id": 3, "name": "Elite", "color": "#bb89e5", "sort": 1 },
+  { "id": 4, "name": "Flyer", "color": "#b03446", "sort": 4 },
+  { "id": 5, "name": "Fast Attack", "color": "#6b9f2e", "sort": 3 },
+  { "id": 6, "name": "Heavy Support", "color": "#5c9fec", "sort": 2 },
+  { "id": 7, "name": "Dedicated Transport", "color": "#ffd555", "sort": 6 },
+  { "id": 8, "name": "Fortification", "color": "#ff00ff", "sort": 1000 },
+  { "id": 9, "name": "Lord of War", "color": "#ff00ff", "sort": 1000 },
+  { "id": 10, "name": "Trap", "color": "#763e19", "sort": 999 }
+]

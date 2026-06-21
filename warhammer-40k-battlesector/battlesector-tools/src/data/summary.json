@@ -1,0 +1,21 @@
+{
+  "unitCount": 190,
+  "weaponCount": 442,
+  "factionCount": 11,
+  "factions": [
+    "Adepta Sororitas",
+    "Astra Militarum",
+    "Black Legion",
+    "Blood Angels",
+    "Daemons of Khorne",
+    "Mephrit Necrons",
+    "Necrons",
+    "Orks",
+    "T'au",
+    "Tyranid",
+    "Ultramarines"
+  ],
+  "maxDamage": 220,
+  "maxHealth": 600,
+  "maxPoints": 400
+}

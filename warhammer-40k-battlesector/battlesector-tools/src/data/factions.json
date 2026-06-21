@@ -1,0 +1,13 @@
+[
+  { "id": 0, "name": "Blood Angels", "slogan": "For the Emperor and Sanguinius" },
+  { "id": 1, "name": "Tyranid", "slogan": "Kill or be consumed" },
+  { "id": 2, "name": "Adepta Sororitas", "slogan": "The Emperor Protects" },
+  { "id": 3, "name": "Necrons", "slogan": "Reclaim the galaxy" },
+  { "id": 4, "name": "Mephrit Necrons", "slogan": "Reclaim the galaxy" },
+  { "id": 5, "name": "Daemons of Khorne", "slogan": "Blood for the Blood God!" },
+  { "id": 8, "name": "Orks", "slogan": "Waaagh!" },
+  { "id": 9, "name": "T'au", "slogan": "For the Greater Good" },
+  { "id": 7, "name": "Astra Militarum", "slogan": "Cadia Stands!" },
+  { "id": 10, "name": "Black Legion", "slogan": "Let the Galaxy burn!" },
+  { "id": 11, "name": "Ultramarines", "slogan": "For the glory of Macragge!" }
+]

@@ -1,0 +1,33 @@
+# build output
+dist/
+.output/
+
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# environment variables / dotenvx secrets
+.env
+.env.*
+.env.keys
+.env.vault
+!.env.example
+
+# macOS-specific files
+.DS_Store
+
+# wrangler
+.wrangler/
+.dev.vars
+
+# IDE
+.vscode/
+.idea/

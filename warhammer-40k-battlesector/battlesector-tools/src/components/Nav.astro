@@ -1,0 +1,110 @@
+---
+const links = [
+  { href: '/units', label: 'Units' },
+  { href: '/weapons', label: 'Weapons' },
+  { href: '/army-builder', label: 'Army Builder' },
+  { href: '/calculator', label: 'Calculator' },
+  { href: '/compare', label: 'Compare' },
+];
+
+const current = Astro.url.pathname;
+function isActive(href: string): boolean {
+  return current === href || current.startsWith(`${href}/`);
+}
+---
+
+<header class="sticky top-0 z-50 border-b border-[var(--color-border)] backdrop-blur-xl bg-[color-mix(in_oklab,var(--color-void)_72%,transparent)]">
+  <div class="container-page flex items-center gap-4 h-16">
+    <a href="/" class="flex items-center gap-2.5 shrink-0">
+      <span class="grid place-items-center w-9 h-9 rounded-lg bg-gradient-to-br from-[var(--color-gold)] to-[var(--color-blood)] text-[var(--color-void)] font-black text-lg">B</span>
+      <span class="font-extrabold tracking-tight text-[15px] hidden sm:block">
+        Battlesector<span class="text-[var(--color-gold-dim)]"> Tools</span>
+      </span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-1 ml-2">
+      {links.map((l) => (
+        <a
+          href={l.href}
+          class:list={[
+            'px-3 py-2 rounded-lg text-sm font-semibold transition-colors',
+            isActive(l.href)
+              ? 'text-[var(--color-gold)] bg-[color-mix(in_oklab,var(--color-gold)_12%,transparent)]'
+              : 'text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:bg-[var(--color-elevated)]',
+          ]}
+        >
+          {l.label}
+        </a>
+      ))}
+    </nav>
+
+    <div class="ml-auto flex items-center gap-2">
+      <button
+        type="button"
+        id="search-open"
+        class="btn btn-ghost text-sm h-9 px-3"
+        aria-label="Search units and weapons"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <span class="hidden sm:inline text-[var(--color-faint)]">Search</span>
+        <kbd class="hidden sm:inline text-[10px] px-1.5 py-0.5 rounded border border-[var(--color-border)] text-[var(--color-faint)]">⌘K</kbd>
+      </button>
+
+      <button
+        type="button"
+        id="menu-toggle"
+        class="btn btn-ghost md:hidden h-9 w-9 !px-0"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="md:hidden hidden border-t border-[var(--color-border)]">
+    <nav class="container-page py-3 flex flex-col gap-1">
+      {links.map((l) => (
+        <a
+          href={l.href}
+          class:list={[
+            'px-3 py-2.5 rounded-lg text-sm font-semibold',
+            isActive(l.href)
+              ? 'text-[var(--color-gold)] bg-[color-mix(in_oklab,var(--color-gold)_12%,transparent)]'
+              : 'text-[var(--color-muted)]',
+          ]}
+        >
+          {l.label}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>
+
+<!-- Command palette search overlay -->
+<div
+  id="search-overlay"
+  class="fixed inset-0 z-[100] hidden items-start justify-center pt-[12vh] px-4 bg-[oklch(0.1_0.01_265_/_0.7)] backdrop-blur-sm"
+>
+  <div class="surface w-full max-w-xl overflow-hidden" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="flex items-center gap-2 px-4 border-b border-[var(--color-border)]">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-[var(--color-faint)]" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input
+        id="search-input"
+        type="text"
+        class="flex-1 bg-transparent py-3.5 outline-none text-[15px]"
+        placeholder="Search units and weapons…"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <kbd class="text-[10px] px-1.5 py-0.5 rounded border border-[var(--color-border)] text-[var(--color-faint)]">ESC</kbd>
+    </div>
+    <ul id="search-results" class="max-h-[50vh] overflow-y-auto py-2"></ul>
+  </div>
+</div>
+
+<script>
+  import { initNav } from '../scripts/nav';
+  initNav();
+</script>

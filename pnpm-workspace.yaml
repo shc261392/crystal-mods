@@ -1,4 +1,6 @@
 packages:
   - "tools/node/*"
+  # Per-game web apps / tools sites
+  - "*/battlesector-tools"
   # Future: per-game Vortex extension TS packages can be added as
   #   - "*/vortex-ext"

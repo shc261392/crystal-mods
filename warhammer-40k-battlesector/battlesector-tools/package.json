@@ -1,0 +1,27 @@
+{
+  "name": "battlesector-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "deploy": "pnpm build && wrangler pages deploy ./dist",
+    "cf-typegen": "wrangler types",
+    "check": "astro check",
+    "lint": "biome check .",
+    "format": "biome format --write ."
+  },
+  "dependencies": {
+    "astro": "^5.3.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@biomejs/biome": "^1.9.4",
+    "@tailwindcss/vite": "^4.0.6",
+    "tailwindcss": "^4.0.6",
+    "typescript": "^5.7.3",
+    "wrangler": "^4.12.0"
+  }
+}
