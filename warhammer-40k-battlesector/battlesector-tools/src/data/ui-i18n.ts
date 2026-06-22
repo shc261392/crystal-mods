@@ -119,6 +119,9 @@ const rawUiI18n = {
     'unitDetail.section.mobility': 'Mobility',
     'unitDetail.section.combat': 'Combat',
     'unitDetail.section.weaponLoadout': 'Weapon Loadout',
+    'unitDetail.loadout.subtitle':
+      "Weapons aren't free picks. Each slot is a choice — some options cost extra requisition points or must be unlocked with an HQ upgrade.",
+    'unitDetail.loadout.chooseOne': 'Choose one',
     'unitDetail.section.directionalArmor': 'Directional Armor',
     'unitDetail.armor.front': 'Front',
     'unitDetail.armor.left': 'Left',

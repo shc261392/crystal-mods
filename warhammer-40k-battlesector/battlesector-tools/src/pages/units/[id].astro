@@ -11,7 +11,7 @@ import {
   units,
   weaponSlug,
 } from '../../lib/data';
-import { getFactionEmblem, getUnitPortrait } from '../../scripts/images';
+import { getFactionEmblem, getUnitPortrait, getWeaponTypeIcon } from '../../scripts/images';
 
 export function getStaticPaths() {
   return units.map((u) => ({
@@ -254,26 +254,40 @@ const vitals = [
   <!-- Weapon loadout -->
   {unit.weaponSlots.length > 0 && (
     <section class="surface p-5 md:p-6 mt-4">
-      <h2 class="text-lg font-bold mb-4" data-i18n-ui="unitDetail.section.weaponLoadout">Weapon Loadout</h2>
+      <h2 class="text-lg font-bold" data-i18n-ui="unitDetail.section.weaponLoadout">Weapon Loadout</h2>
+      <p class="text-sm text-[var(--color-muted)] mt-1 mb-4 max-w-2xl" data-i18n-ui="unitDetail.loadout.subtitle">
+        Weapons aren't free picks. Each slot is a choice — some options cost extra requisition points or must be unlocked with an HQ upgrade.
+      </p>
       <div class="space-y-4">
         {unit.weaponSlots.map((slot, i) => (
           <div>
-            <p class="label mb-2"><span data-i18n-ui="unitDetail.slotPrefix">Slot</span> {i + 1}</p>
+            <p class="label mb-2 flex items-center gap-2">
+              <span><span data-i18n-ui="unitDetail.slotPrefix">Slot</span> {i + 1}</span>
+              {slot.options.length > 1 && (
+                <span class="text-[10px] font-semibold text-[var(--color-faint)] normal-case" data-i18n-ui="unitDetail.loadout.chooseOne">Choose one</span>
+              )}
+            </p>
             <div class="grid gap-2 sm:grid-cols-2">
               {slot.options.map((opt) => {
                 const w = getWeapon(opt.weaponId);
+                const typeIcon = w ? getWeaponTypeIcon(w.isMelee) : null;
                 return (
                   <a
                     href={w ? `/weapons/${weaponSlug(w)}` : '#'}
                     class="flex items-center justify-between gap-3 rounded-lg bg-[var(--color-base)] border border-[var(--color-border)] px-3.5 py-2.5 hover:border-[var(--color-border-strong)] transition-colors"
                   >
-                    <span class="min-w-0">
-                      <span class="font-semibold text-sm truncate block" data-i18n-weapon={opt.weaponId} data-i18n-fallback={opt.name}>{opt.name}</span>
-                      {w && (
-                        <span class="text-xs text-[var(--color-faint)]">
-                          {w.damage} <span data-i18n-ui="common.damageShort">dmg</span> · {w.accuracy}% <span data-i18n-ui="common.accuracyShort">acc</span>
-                        </span>
+                    <span class="flex items-center gap-2.5 min-w-0">
+                      {typeIcon && (
+                        <img src={typeIcon} alt="" width="22" height="22" loading="lazy" class="w-5 h-5 shrink-0 object-contain opacity-80" />
                       )}
+                      <span class="min-w-0">
+                        <span class="font-semibold text-sm truncate block" data-i18n-weapon={opt.weaponId} data-i18n-fallback={opt.name}>{opt.name}</span>
+                        {w && (
+                          <span class="text-xs text-[var(--color-faint)]">
+                            {w.damage} <span data-i18n-ui="common.damageShort">dmg</span> · {w.accuracy}% <span data-i18n-ui="common.accuracyShort">acc</span>
+                          </span>
+                        )}
+                      </span>
                     </span>
                     <span class="flex items-center gap-2 shrink-0">
                       {opt.startsLocked && <span class="chip !py-0.5 !px-1.5 text-[10px]" data-i18n-ui="common.locked">Locked</span>}

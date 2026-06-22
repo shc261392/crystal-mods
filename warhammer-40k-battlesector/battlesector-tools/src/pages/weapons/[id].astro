@@ -14,7 +14,7 @@ export function getStaticPaths() {
 const { weaponId } = Astro.props;
 const weapon = getWeapon(weaponId) ?? getWeapon(idFromSlug(Astro.params.id));
 if (!weapon) {
-  return Astro.redirect('/weapons');
+  return Astro.redirect('/units');
 }
 
 // Damage vs armor table (armor 0..9), accounting for armor piercing.
@@ -40,7 +40,7 @@ const typeIcon = getWeaponTypeIcon(weapon.isMelee);
   ogType="article"
 >
   <nav class="text-sm text-[var(--color-faint)] mb-5">
-    <a href="/weapons" class="hover:text-[var(--color-gold-dim)]" data-i18n-ui="nav.weapons">Weapons</a>
+    <a href="/units" class="hover:text-[var(--color-gold-dim)]" data-i18n-ui="nav.units">Units</a>
     <span class="mx-1.5">/</span>
     <span class="text-[var(--color-muted)]" data-i18n-ui={weapon.isMelee ? 'common.melee' : 'common.ranged'}>{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
   </nav>
