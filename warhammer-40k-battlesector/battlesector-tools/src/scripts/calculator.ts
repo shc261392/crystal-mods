@@ -18,7 +18,19 @@ function $(id: string): HTMLInputElement {
 export function initCalculator(): void {
   const weaponSel = document.getElementById('weapon') as HTMLSelectElement;
   const unitSel = document.getElementById('unit') as HTMLSelectElement;
-  if (!weaponSel || !unitSel) return;
+  const attackerUnitSel = document.getElementById('attacker-unit') as HTMLSelectElement;
+  if (!weaponSel || !unitSel || !attackerUnitSel) return;
+
+  const weaponById = new Map(weapons.map((w) => [w.id, w]));
+  function loadoutWeaponIds(u: Unit): number[] {
+    const ids: number[] = [];
+    for (const slot of u.weaponSlots) {
+      for (const opt of slot.options) {
+        if (!ids.includes(opt.weaponId) && weaponById.has(opt.weaponId)) ids.push(opt.weaponId);
+      }
+    }
+    return ids;
+  }
 
   const damage = $('damage');
   const accuracy = $('accuracy');
@@ -33,19 +45,48 @@ export function initCalculator(): void {
   const curhp = $('curhp');
   const lost = $('lost');
 
-  function renderOptions(): void {
-    const currentW = weaponSel.value;
-    const currentU = unitSel.value;
-    weaponSel.innerHTML = `<option value="">${t('common.customValues')}</option>${[...weapons]
-      .sort((a, b) => weaponName(a.id, a.name).localeCompare(weaponName(b.id, b.name)))
-      .map((w) => `<option value="${w.id}">${weaponName(w.id, w.name)} (${w.damage} dmg)</option>`)
-      .join('')}`;
-    unitSel.innerHTML = `<option value="">${t('common.customValues')}</option>${[...units]
+  function unitOptionsHtml(): string {
+    return [...units]
       .sort((a, b) => unitName(a.id, a.name).localeCompare(unitName(b.id, b.name)))
       .map((u) => `<option value="${u.id}">${unitName(u.id, u.name)}</option>`)
-      .join('')}`;
-    if (currentW) weaponSel.value = currentW;
+      .join('');
+  }
+
+  // Weapon list is the selected attacker unit's loadout; with no unit chosen
+  // ('Custom values') it falls back to the full weapon list.
+  function populateWeapons(): void {
+    const u = units.find((x) => x.id === Number(attackerUnitSel.value));
+    const current = weaponSel.value;
+    if (u) {
+      weaponSel.innerHTML = loadoutWeaponIds(u)
+        .map((id) => {
+          const w = weaponById.get(id);
+          return w
+            ? `<option value="${id}">${weaponName(w.id, w.name)} (${w.damage} dmg)</option>`
+            : '';
+        })
+        .join('');
+    } else {
+      weaponSel.innerHTML = `<option value="">${t('common.customValues')}</option>${[...weapons]
+        .sort((a, b) => weaponName(a.id, a.name).localeCompare(weaponName(b.id, b.name)))
+        .map(
+          (w) => `<option value="${w.id}">${weaponName(w.id, w.name)} (${w.damage} dmg)</option>`,
+        )
+        .join('')}`;
+    }
+    if (current && weaponSel.querySelector(`option[value="${current}"]`)) {
+      weaponSel.value = current;
+    }
+  }
+
+  function renderOptions(): void {
+    const currentA = attackerUnitSel.value;
+    const currentU = unitSel.value;
+    attackerUnitSel.innerHTML = `<option value="">${t('common.customValues')}</option>${unitOptionsHtml()}`;
+    unitSel.innerHTML = `<option value="">${t('common.customValues')}</option>${unitOptionsHtml()}`;
+    if (currentA) attackerUnitSel.value = currentA;
     if (currentU) unitSel.value = currentU;
+    populateWeapons();
   }
 
   renderOptions();
@@ -114,6 +155,7 @@ export function initCalculator(): void {
 
   function syncUrl(): void {
     const p = new URLSearchParams();
+    if (attackerUnitSel.value) p.set('attacker', attackerUnitSel.value);
     if (weaponSel.value) p.set('weapon', weaponSel.value);
     if (unitSel.value) p.set('unit', unitSel.value);
     const qs = p.toString();
@@ -122,6 +164,11 @@ export function initCalculator(): void {
     copy?.setAttribute('data-url', `${location.pathname}${qs ? `?${qs}` : ''}`);
   }
 
+  attackerUnitSel.addEventListener('change', () => {
+    populateWeapons();
+    if (weaponSel.value) applyWeapon(Number(weaponSel.value));
+    compute();
+  });
   weaponSel.addEventListener('change', () => {
     if (weaponSel.value) applyWeapon(Number(weaponSel.value));
     compute();
@@ -172,11 +219,24 @@ export function initCalculator(): void {
   const params = new URLSearchParams(location.search);
   const wParam = params.get('weapon');
   const uParam = params.get('unit');
+  const aParam = params.get('attacker');
+  if (aParam && units.some((u) => u.id === Number(aParam))) {
+    attackerUnitSel.value = aParam;
+  } else if (!wParam && attackerUnitSel.options.length > 1) {
+    // Default the attacker to the first unit's loadout.
+    attackerUnitSel.selectedIndex = 1;
+  }
+  populateWeapons();
+  if (wParam && weaponSel.querySelector(`option[value="${wParam}"]`) === null) {
+    // A deep-linked weapon that isn't in the chosen loadout: use the full list.
+    attackerUnitSel.value = '';
+    populateWeapons();
+  }
   if (wParam) {
     weaponSel.value = wParam;
     applyWeapon(Number(wParam));
-  } else {
-    applyWeapon(weapons[0]?.id ?? -1);
+  } else if (weaponSel.value) {
+    applyWeapon(Number(weaponSel.value));
   }
   if (uParam) {
     unitSel.value = uParam;
