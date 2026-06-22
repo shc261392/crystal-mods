@@ -18,7 +18,7 @@ export interface ImageInfo {
 export function getImageUrl(category: ImageCategory, name: string): string | null {
   const categoryData = imageUrls[category];
   if (!categoryData) return null;
-  
+
   const imageInfo = categoryData[name as keyof typeof categoryData];
   return imageInfo ? (imageInfo as ImageInfo).url : null;
 }
@@ -36,12 +36,12 @@ export function getCategoryImages(category: ImageCategory): Record<string, Image
 export function findImageByName(category: ImageCategory, partialName: string): ImageInfo | null {
   const categoryData = imageUrls[category];
   if (!categoryData) return null;
-  
+
   const lowerSearch = partialName.toLowerCase();
-  const entry = Object.entries(categoryData).find(([name]) => 
-    name.toLowerCase().includes(lowerSearch)
+  const entry = Object.entries(categoryData).find(([name]) =>
+    name.toLowerCase().includes(lowerSearch),
   );
-  
+
   return entry ? (entry[1] as ImageInfo) : null;
 }
 
