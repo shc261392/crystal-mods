@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { factionColor, roles, unitSlug, units } from '../../lib/data';
+import { getFactionEmblem, getUnitPortrait } from '../../scripts/images';
 
 const factionNames = [...new Set(units.map((u) => u.factionName))].sort();
 const roleNames = [...roles]
@@ -79,7 +80,9 @@ const sorted = [...units].sort((a, b) => a.name.localeCompare(b.name));
 
   <!-- Grid -->
   <div id="grid" class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-    {sorted.map((u) => (
+    {sorted.map((u) => {
+      const thumb = getUnitPortrait(u.name) ?? getFactionEmblem(u.faction);
+      return (
       <a
         href={`/units/${unitSlug(u)}`}
         class="unit-card surface surface-hover p-4 block"
@@ -96,6 +99,11 @@ const sorted = [...units].sort((a, b) => a.name.localeCompare(b.name));
       >
         <div class="flex items-start gap-3">
           <span class="w-1 self-stretch rounded-full shrink-0" style={`background:${u.roleColor}`}></span>
+          {thumb ? (
+            <img src={thumb} alt="" width="40" height="40" loading="lazy" class="w-10 h-10 rounded-lg object-contain bg-black/30 border border-[var(--color-border)] p-0.5 shrink-0" />
+          ) : (
+            <div class="w-10 h-10 rounded-lg grid place-items-center font-black text-xs shrink-0 border border-[var(--color-border)]" style={`background:${factionColor(u.factionName)}1f; color:${factionColor(u.factionName)}`} aria-hidden="true">{u.factionName.slice(0, 1)}</div>
+          )}
           <div class="min-w-0 flex-1">
             <div class="flex items-center gap-2">
               <h3 class="font-bold truncate" data-i18n-unit={u.id} data-i18n-fallback={u.name}>{u.name}</h3>
@@ -130,7 +138,8 @@ const sorted = [...units].sort((a, b) => a.name.localeCompare(b.name));
           </div>
         </div>
       </a>
-    ))}
+      );
+    })}
   </div>
 
   <p id="empty" class="hidden text-center text-[var(--color-faint)] py-16" data-i18n-ui="units.empty.noMatches">

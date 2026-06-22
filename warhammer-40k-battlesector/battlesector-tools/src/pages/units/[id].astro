@@ -11,6 +11,7 @@ import {
   units,
   weaponSlug,
 } from '../../lib/data';
+import { getFactionEmblem, getUnitPortrait } from '../../scripts/images';
 
 export function getStaticPaths() {
   return units.map((u) => ({
@@ -75,6 +76,9 @@ const tags = [
 ].filter(Boolean) as { key: string; label: string }[];
 
 const accent = factionColor(unit.factionName);
+const portrait = getUnitPortrait(unit.name);
+const emblem = getFactionEmblem(unit.faction);
+const heroImage = portrait ?? emblem;
 
 const vitals = [
   {
@@ -131,7 +135,18 @@ const vitals = [
     <div class="absolute -top-24 -right-20 w-72 h-72 rounded-full blur-3xl opacity-25 pointer-events-none" style={`background:radial-gradient(circle, ${accent}, transparent 70%)`}></div>
     <div class="absolute top-0 left-0 w-1.5 h-full" style={`background:${unit.roleColor}`}></div>
     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-5">
-      <div>
+      <div class="flex items-start gap-4 md:gap-5 min-w-0">
+        {heroImage && (
+          <img
+            src={heroImage}
+            alt=""
+            width="112"
+            height="112"
+            loading="lazy"
+            class={`shrink-0 rounded-xl object-contain border border-[var(--color-border)] bg-black/30 ${portrait ? 'w-24 h-24 md:w-28 md:h-28 p-1' : 'w-16 h-16 p-2.5'}`}
+          />
+        )}
+        <div class="min-w-0">
         <div class="flex flex-wrap items-center gap-2 mb-2">
           <span class="chip" style={`color:${unit.roleColor}; border-color:${unit.roleColor}`} data-i18n-role={unit.role} data-i18n-fallback={unit.roleName}>{unit.roleName}</span>
           <span class="chip" data-i18n-faction={unit.faction} data-i18n-fallback={unit.factionName}>{unit.factionName}</span>
@@ -143,6 +158,7 @@ const vitals = [
           <span class="text-2xl font-bold text-[var(--color-gold)]">{unit.pointCost}</span>
           <span class="text-sm" data-i18n-ui="common.requisitionPoints"> requisition points</span>
         </p>
+        </div>
       </div>
       <div class="flex flex-wrap gap-2">
         <button id="copy-link" type="button" class="btn" data-url={`/units/${unitSlug(unit)}`}>

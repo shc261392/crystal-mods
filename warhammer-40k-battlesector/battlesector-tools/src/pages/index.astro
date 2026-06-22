@@ -1,6 +1,11 @@
 ---
 import Base from '../layouts/Base.astro';
-import { factions, roles, summary, units } from '../lib/data';
+import { factionColor, factions, roles, summary, units } from '../lib/data';
+import { getFactionEmblem } from '../scripts/images';
+
+const factionCards = factions
+  .filter((f) => summary.factions.includes(f.name))
+  .sort((a, b) => a.name.localeCompare(b.name));
 
 const tools = [
   {
@@ -113,12 +118,24 @@ const topUnits = [...units].sort((a, b) => b.totalHealth - a.totalHealth).slice(
   <!-- Factions -->
   <section class="mt-12">
     <h2 class="text-xl font-bold mb-5" data-i18n-ui="home.section.factions">Factions</h2>
-    <div class="flex flex-wrap gap-2.5">
-      {summary.factions.map((f) => (
-        <a href={`/units?faction=${encodeURIComponent(f)}`} class="chip text-sm py-1.5 px-3.5 hover:border-[var(--color-gold-dim)] hover:text-[var(--color-ink)] transition-colors">
-          {f}
+    <div class="grid gap-3 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+      {factionCards.map((f) => {
+        const emblem = getFactionEmblem(f.id);
+        const color = factionColor(f.name);
+        return (
+        <a href={`/units?faction=${encodeURIComponent(f.name)}`} class="surface surface-hover p-3 flex items-center gap-3">
+          {emblem ? (
+            <img src={emblem} alt="" width="44" height="44" loading="lazy" class="w-11 h-11 rounded-lg object-contain bg-black/30 border border-[var(--color-border)] p-0.5 shrink-0" />
+          ) : (
+            <div class="w-11 h-11 rounded-lg grid place-items-center font-black shrink-0 border border-[var(--color-border)]" style={`background:${color}1f; color:${color}`} aria-hidden="true">{f.name.slice(0, 1)}</div>
+          )}
+          <div class="min-w-0">
+            <p class="font-semibold truncate text-sm" data-i18n-faction={f.id} data-i18n-fallback={f.name}>{f.name}</p>
+            <p class="text-xs text-[var(--color-faint)] truncate">{f.slogan}</p>
+          </div>
         </a>
-      ))}
+        );
+      })}
     </div>
   </section>
 

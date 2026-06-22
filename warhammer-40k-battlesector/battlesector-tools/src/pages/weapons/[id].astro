@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { damagePerHit } from '../../lib/combat';
 import { getWeapon, idFromSlug, unitSlug, units, weaponSlug, weapons } from '../../lib/data';
+import { getWeaponTypeIcon } from '../../scripts/images';
 
 export function getStaticPaths() {
   return weapons.map((w) => ({
@@ -28,6 +29,8 @@ const carriers = units
     u.weaponSlots.some((slot) => slot.options.some((opt) => opt.weaponId === weapon.id)),
   )
   .sort((a, b) => a.name.localeCompare(b.name));
+
+const typeIcon = getWeaponTypeIcon(weapon.isMelee);
 ---
 
 <Base
@@ -44,12 +47,17 @@ const carriers = units
 
   <div class="surface p-6 md:p-8">
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
-      <div>
-        <div class="flex flex-wrap items-center gap-2 mb-2">
-          <span class="chip" data-i18n-ui={weapon.isMelee ? 'common.melee' : 'common.ranged'}>{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
-          {weapon.armorPiercing > 0 && <span class="chip">AP {weapon.armorPiercing}</span>}
+      <div class="flex items-center gap-4 min-w-0">
+        {typeIcon && (
+          <img src={typeIcon} alt="" width="48" height="48" loading="lazy" class="w-12 h-12 shrink-0 object-contain rounded-lg bg-black/30 border border-[var(--color-border)] p-1.5" />
+        )}
+        <div class="min-w-0">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="chip" data-i18n-ui={weapon.isMelee ? 'common.melee' : 'common.ranged'}>{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
+            {weapon.armorPiercing > 0 && <span class="chip">AP {weapon.armorPiercing}</span>}
+          </div>
+          <h1 class="text-3xl md:text-4xl font-black" data-i18n-weapon={weapon.id} data-i18n-fallback={weapon.name}>{weapon.name}</h1>
         </div>
-        <h1 class="text-3xl md:text-4xl font-black" data-i18n-weapon={weapon.id} data-i18n-fallback={weapon.name}>{weapon.name}</h1>
       </div>
       <div class="flex gap-6">
         <div class="text-center">

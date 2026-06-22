@@ -72,3 +72,52 @@ export function getFactionAsset(assetName: string): string | null {
 export function hasImage(category: ImageCategory, name: string): boolean {
   return getImageUrl(category, name) !== null;
 }
+
+/**
+ * Faction emblem artwork keyed by faction id. Only factions whose crest was
+ * shipped as a standalone texture are mapped; the rest fall back to a styled
+ * monogram badge rendered in the faction accent color.
+ */
+const FACTION_EMBLEMS: Record<number, { category: ImageCategory; key: string }> = {
+  0: { category: 'factions', key: '3CCUI_side_column_factionSelect-BloodAngels' },
+  2: { category: 'factions', key: '3CCUI_side_column_factionSelect-BattleSisters' },
+  3: { category: 'factions', key: '3CCUI_side_column_factionSelect-Necrons' },
+  4: { category: 'factions', key: '3CCUI_side_column_factionSelect-Necrons' },
+  8: { category: 'factions', key: '3CCUI_side_column_factionSelect-Orks' },
+  9: { category: 'units', key: 'TauIconDecal' },
+};
+
+/** Resolve a faction's emblem URL, or null when no crest texture exists. */
+export function getFactionEmblem(factionId: number): string | null {
+  const ref = FACTION_EMBLEMS[factionId];
+  if (!ref) return null;
+  return getImageUrl(ref.category, ref.key);
+}
+
+/**
+ * Unit portrait rules. Battlesector renders most units as 3D models with no
+ * standalone portrait texture, so only a handful of units have real artwork.
+ * Rules are evaluated in order; the first matching pattern wins.
+ */
+const PORTRAIT_RULES: Array<[RegExp, string]> = [
+  [/intercessor/i, 'IntercessorIcon'],
+  [/assault (squad|terminators?|marines?)/i, 'AssualtMarineIcon'],
+  [/librarian dreadnought/i, 'LibrarianDreadnoughtIcon-small'],
+  [/inceptor/i, 'InceptorIcon-small'],
+  [/techmarine/i, 'TechmarineIcon'],
+  [/hormagaunt/i, 'HormagauntIcon'],
+  [/gladiator lancer/i, 'GladiatorLancerIcon'],
+];
+
+/** Resolve a unit's portrait URL by name, or null when none exists. */
+export function getUnitPortrait(unitName: string): string | null {
+  for (const [pattern, key] of PORTRAIT_RULES) {
+    if (pattern.test(unitName)) return getImageUrl('units', key);
+  }
+  return null;
+}
+
+/** Icon used to denote a weapon's attack type (melee vs ranged/ballistic). */
+export function getWeaponTypeIcon(isMelee: boolean): string | null {
+  return getImageUrl('units', isMelee ? 'MeleeDamageIcon' : 'BalisticDamageIcon');
+}
