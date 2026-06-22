@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Image URL Mapping",
+  "description": "Maps game asset names to R2 URLs for units, weapons, and factions",
+  "type": "object",
+  "properties": {
+    "units": {
+      "type": "object",
+      "description": "Unit icon URLs keyed by asset name",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "r2_key": { "type": "string" },
+          "source": { "type": "string" }
+        },
+        "required": ["url", "r2_key"]
+      }
+    },
+    "weapons": {
+      "type": "object",
+      "description": "Weapon texture URLs keyed by asset name",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "r2_key": { "type": "string" },
+          "source": { "type": "string" }
+        },
+        "required": ["url", "r2_key"]
+      }
+    },
+    "factions": {
+      "type": "object",
+      "description": "Faction banner/icon URLs keyed by asset name",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "r2_key": { "type": "string" },
+          "source": { "type": "string" }
+        },
+        "required": ["url", "r2_key"]
+      }
+    },
+    "icons": {
+      "type": "object",
+      "description": "Generic game icon URLs",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "r2_key": { "type": "string" },
+          "source": { "type": "string" }
+        },
+        "required": ["url", "r2_key"]
+      }
+    },
+    "other": {
+      "type": "object",
+      "description": "Other game assets (terrain, props, etc.)",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "r2_key": { "type": "string" },
+          "source": { "type": "string" }
+        },
+        "required": ["url", "r2_key"]
+      }
+    }
+  },
+  "required": ["units", "weapons", "factions"]
+}

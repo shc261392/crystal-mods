@@ -1,5 +1,6 @@
 // Behaviour for the unit detail page: copy link + add to army builder.
 import { addToArmy } from './army-store';
+import { t, tf } from './i18n';
 
 function toast(message: string): void {
   const el = document.getElementById('toast');
@@ -16,7 +17,7 @@ export function initUnitDetail(): void {
     const url = `${location.origin}${path}`;
     try {
       await navigator.clipboard.writeText(url);
-      toast('Link copied to clipboard');
+      toast(t('toast.linkCopiedClipboard'));
     } catch {
       toast(url);
     }
@@ -30,6 +31,6 @@ export function initUnitDetail(): void {
     const faction = addBtn.getAttribute('data-faction') ?? '';
     if (!Number.isFinite(id)) return;
     addToArmy({ id, name, points, faction });
-    toast(`${name} added to army`);
+    toast(tf('toast.addedToArmy', { name }));
   });
 }

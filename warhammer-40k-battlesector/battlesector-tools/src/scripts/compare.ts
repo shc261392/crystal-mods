@@ -3,7 +3,7 @@
 
 import unitsData from '../data/units.json';
 import type { Unit } from '../lib/types';
-import { factionName, roleName, unitName } from './i18n';
+import { factionName, roleName, t, tf, unitName } from './i18n';
 
 const units = unitsData as Unit[];
 const unitById = new Map(units.map((u) => [u.id, u]));
@@ -17,18 +17,22 @@ interface Row {
 }
 
 const rows: Row[] = [
-  { label: 'Faction', get: (u) => factionName(u.faction, u.factionName), best: null },
-  { label: 'Role', get: (u) => roleName(u.role, u.roleName), best: null },
-  { label: 'Points', get: (u) => u.pointCost, best: 'low' },
-  { label: 'Total Health', get: (u) => u.totalHealth, best: 'high' },
-  { label: 'Health / model', get: (u) => u.maxHealth, best: 'high' },
-  { label: 'Models', get: (u) => u.members, best: 'high' },
-  { label: 'Armor', get: (u) => (u.armorProfile === 1 ? u.armorFront : u.armor), best: 'high' },
+  { label: 'common.faction', get: (u) => factionName(u.faction, u.factionName), best: null },
+  { label: 'common.role', get: (u) => roleName(u.role, u.roleName), best: null },
+  { label: 'common.points', get: (u) => u.pointCost, best: 'low' },
+  { label: 'compare.row.totalHealth', get: (u) => u.totalHealth, best: 'high' },
+  { label: 'compare.row.healthPerModel', get: (u) => u.maxHealth, best: 'high' },
+  { label: 'common.models', get: (u) => u.members, best: 'high' },
+  {
+    label: 'common.armor',
+    get: (u) => (u.armorProfile === 1 ? u.armorFront : u.armor),
+    best: 'high',
+  },
   { label: 'Evasion', get: (u) => u.evasion, best: 'high' },
-  { label: 'Movement', get: (u) => u.maxMovementPoints, best: 'high' },
+  { label: 'common.movement', get: (u) => u.maxMovementPoints, best: 'high' },
   { label: 'Action Points', get: (u) => u.maxActionPoints, best: 'high' },
   { label: 'Melee Accuracy', get: (u) => u.meleeAccuracy, best: 'high' },
-  { label: 'Momentum / kill', get: (u) => u.momentumPerModelDeath, best: 'high' },
+  { label: 'compare.row.momentumPerKill', get: (u) => u.momentumPerModelDeath, best: 'high' },
 ];
 
 function unitSlug(u: Unit): string {
@@ -96,13 +100,13 @@ export function initCompare(): void {
     }
 
     headEl.innerHTML = `<tr>
-      <th class="text-left p-3 sticky left-0 bg-[var(--color-surface)] z-10 label">Stat</th>
+      <th class="text-left p-3 sticky left-0 bg-[var(--color-surface)] z-10 label">${t('compare.table.stat')}</th>
       ${selected
         .map(
           (u) => `<th class="p-3 text-left min-w-[10rem]">
             <a href="/units/${unitSlug(u)}" class="font-bold hover:text-[var(--color-gold)] block">${unitName(u.id, u.name)}</a>
             <span class="text-xs text-[var(--color-faint)] font-normal">${factionName(u.faction, u.factionName)}</span>
-            <button type="button" data-remove="${u.id}" class="block mt-1 text-xs text-[var(--color-faint)] hover:text-[var(--color-blood)]">remove</button>
+            <button type="button" data-remove="${u.id}" class="block mt-1 text-xs text-[var(--color-faint)] hover:text-[var(--color-blood)]">${t('compare.button.remove')}</button>
           </th>`,
         )
         .join('')}
@@ -121,7 +125,7 @@ export function initCompare(): void {
           })
           .join('');
         return `<tr class="${i % 2 ? 'bg-[color-mix(in_oklab,var(--color-base)_50%,transparent)]' : ''}">
-          <td class="p-3 text-[var(--color-muted)] sticky left-0 bg-[var(--color-surface)] z-10 font-medium">${row.label}</td>
+          <td class="p-3 text-[var(--color-muted)] sticky left-0 bg-[var(--color-surface)] z-10 font-medium">${t(row.label)}</td>
           ${cells}
         </tr>`;
       })
@@ -132,11 +136,11 @@ export function initCompare(): void {
 
   function add(id: number): void {
     if (ids.includes(id)) {
-      toast('Already added');
+      toast(t('compare.toast.alreadyAdded'));
       return;
     }
     if (ids.length >= MAX) {
-      toast(`Maximum ${MAX} units`);
+      toast(tf('compare.toast.maximum', { max: MAX }));
       return;
     }
     ids.push(id);
@@ -162,13 +166,13 @@ export function initCompare(): void {
 
   document.getElementById('share-btn')?.addEventListener('click', async () => {
     if (ids.length === 0) {
-      toast('Add units first');
+      toast(t('toast.addUnitsFirst'));
       return;
     }
     const url = `${location.origin}/compare?ids=${ids.join(',')}`;
     try {
       await navigator.clipboard.writeText(url);
-      toast('Link copied');
+      toast(t('toast.linkCopied'));
     } catch {
       toast(url);
     }

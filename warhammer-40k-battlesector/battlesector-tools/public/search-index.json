@@ -478,14 +478,6 @@
   },
   {
     "t": "unit",
-    "id": 999,
-    "n": "Unknown Unit 999",
-    "s": "999-unknown-unit-999",
-    "f": 0,
-    "m": "Blood Angels"
-  },
-  {
-    "t": "unit",
     "id": 3,
     "n": "Blood Angels Death Company",
     "s": "3-blood-angels-death-company",
@@ -837,22 +829,6 @@
     "m": "Orks"
   },
   { "t": "unit", "id": 8005, "n": "Ork Gretchin", "s": "8005-ork-gretchin", "f": 8, "m": "Orks" },
-  {
-    "t": "unit",
-    "id": 8015,
-    "n": "Unknown Unit 8015",
-    "s": "8015-unknown-unit-8015",
-    "f": 8,
-    "m": "Orks"
-  },
-  {
-    "t": "unit",
-    "id": 8016,
-    "n": "Unknown Unit 8016",
-    "s": "8016-unknown-unit-8016",
-    "f": 8,
-    "m": "Orks"
-  },
   {
     "t": "unit",
     "id": 8020,
@@ -1351,8 +1327,6 @@
     "f": 11,
     "m": "Ultramarines"
   },
-  { "t": "weapon", "id": 4022, "n": "** Unused **", "s": "4022-unused", "m": "32 dmg" },
-  { "t": "weapon", "id": 4020, "n": "** Unused **", "s": "4020-unused", "m": "50 dmg" },
   {
     "t": "weapon",
     "id": 9005,
@@ -2770,7 +2744,6 @@
     "m": "8 dmg"
   },
   { "t": "weapon", "id": 100000, "n": "Unarmed", "s": "100000-unarmed", "m": "5 dmg" },
-  { "t": "weapon", "id": 16, "n": "Unknown Weapon 16", "s": "16-unknown-weapon-16", "m": "0 dmg" },
   {
     "t": "weapon",
     "id": 7030,

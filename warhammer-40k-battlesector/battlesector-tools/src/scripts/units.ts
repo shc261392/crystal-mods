@@ -4,7 +4,7 @@
 
 type SortKey = 'name' | 'points-desc' | 'points-asc' | 'hp-desc' | 'armor-desc' | 'move-desc';
 
-import { applyI18n, factionName, roleName } from './i18n';
+import { applyI18n, factionName, roleName, tf } from './i18n';
 
 function num(el: HTMLElement, key: string): number {
   return Number(el.dataset[key] ?? 0);
@@ -100,7 +100,12 @@ export function initUnitsBrowser(): void {
       .sort((a, b) => compare(a, b, (sort?.value as SortKey) ?? 'name'));
     for (const c of ordered) grid?.appendChild(c);
 
-    if (count) count.textContent = `${visible} of ${cards.length} units`;
+    if (count) {
+      count.textContent = tf('common.count.unitsVisible', {
+        visible,
+        total: cards.length,
+      });
+    }
     empty?.classList.toggle('hidden', visible !== 0);
     syncUrl();
   }

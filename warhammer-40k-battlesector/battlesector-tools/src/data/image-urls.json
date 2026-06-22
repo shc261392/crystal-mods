@@ -1,0 +1,3925 @@
+{
+  "units": {
+    "battlesector_logo": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/battlesector_logo.png",
+      "r2_key": "units/battlesector_logo.png",
+      "source": "sharedassets0.assets"
+    },
+    "Knob": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Knob.png",
+      "r2_key": "units/Knob.png",
+      "source": "sharedassets1.assets"
+    },
+    "GladiatorLancerIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/GladiatorLancerIcon.png",
+      "r2_key": "units/GladiatorLancerIcon.png",
+      "source": "sharedassets1.assets"
+    },
+    "armypointcap_icon_gold": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/armypointcap_icon_gold.png",
+      "r2_key": "units/armypointcap_icon_gold.png",
+      "source": "sharedassets1.assets"
+    },
+    "SaveIcon_default": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SaveIcon_default.png",
+      "r2_key": "units/SaveIcon_default.png",
+      "source": "sharedassets1.assets"
+    },
+    "TournamentSmallIcon2": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TournamentSmallIcon2.png",
+      "r2_key": "units/TournamentSmallIcon2.png",
+      "source": "sharedassets1.assets"
+    },
+    "UnitIcon Selection Edge_highlight_ModelViewer": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UnitIcon Selection Edge_highlight_ModelViewer.png",
+      "r2_key": "units/UnitIcon Selection Edge_highlight_ModelViewer.png",
+      "source": "sharedassets1.assets"
+    },
+    "cover_icons": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/cover_icons.png",
+      "r2_key": "units/cover_icons.png",
+      "source": "sharedassets1.assets"
+    },
+    "SaveIcon_hover": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SaveIcon_hover.png",
+      "r2_key": "units/SaveIcon_hover.png",
+      "source": "sharedassets1.assets"
+    },
+    "ErrorIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ErrorIcon.png",
+      "r2_key": "units/ErrorIcon.png",
+      "source": "sharedassets1.assets"
+    },
+    "icon_FailedImage": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/icon_FailedImage.png",
+      "r2_key": "units/icon_FailedImage.png",
+      "source": "sharedassets1.assets"
+    },
+    "RedThirstIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/RedThirstIcon.png",
+      "r2_key": "units/RedThirstIcon.png",
+      "source": "sharedassets1.assets"
+    },
+    "SaveIcon_pressed": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SaveIcon_pressed.png",
+      "r2_key": "units/SaveIcon_pressed.png",
+      "source": "sharedassets1.assets"
+    },
+    "ArmyPopInceaseIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ArmyPopInceaseIcon.png",
+      "r2_key": "units/ArmyPopInceaseIcon.png",
+      "source": "sharedassets1.assets"
+    },
+    "modio-icon-color": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/modio-icon-color.png",
+      "r2_key": "units/modio-icon-color.png",
+      "source": "sharedassets1.assets"
+    },
+    "AssualtMarineIcon-small": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/AssualtMarineIcon-small.png",
+      "r2_key": "units/AssualtMarineIcon-small.png",
+      "source": "sharedassets1.assets"
+    },
+    "UnitIcon_MidGradient_modelVeiwer": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UnitIcon_MidGradient_modelVeiwer.png",
+      "r2_key": "units/UnitIcon_MidGradient_modelVeiwer.png",
+      "source": "sharedassets1.assets"
+    },
+    "UI_WPN_BLA_BPL_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UI_WPN_BLA_BPL_Icon.png",
+      "r2_key": "units/UI_WPN_BLA_BPL_Icon.png",
+      "source": "sharedassets1.assets"
+    },
+    "UnitIcon_UnitMask_modelVeiwer": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UnitIcon_UnitMask_modelVeiwer.png",
+      "r2_key": "units/UnitIcon_UnitMask_modelVeiwer.png",
+      "source": "sharedassets1.assets"
+    },
+    "ArmyManagementIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ArmyManagementIcon.png",
+      "r2_key": "units/ArmyManagementIcon.png",
+      "source": "sharedassets1.assets"
+    },
+    "FolderIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/FolderIcon.png",
+      "r2_key": "units/FolderIcon.png",
+      "source": "sharedassets1.assets"
+    },
+    "GoUpFolderIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/GoUpFolderIcon.png",
+      "r2_key": "units/GoUpFolderIcon.png",
+      "source": "sharedassets1.assets"
+    },
+    "action Point slot icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/action Point slot icon.png",
+      "r2_key": "units/action Point slot icon.png",
+      "source": "sharedassets1.assets"
+    },
+    "3CCUI_traystatusICON-LOCKED": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/3CCUI_traystatusICON-LOCKED.png",
+      "r2_key": "units/3CCUI_traystatusICON-LOCKED.png",
+      "source": "sharedassets1.assets"
+    },
+    "LibrarianDreadnoughtIcon-small": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/LibrarianDreadnoughtIcon-small.png",
+      "r2_key": "units/LibrarianDreadnoughtIcon-small.png",
+      "source": "sharedassets1.assets"
+    },
+    "DeathFromAboveIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/DeathFromAboveIcon.png",
+      "r2_key": "units/DeathFromAboveIcon.png",
+      "source": "sharedassets1.assets"
+    },
+    "TournamentSmallIcon3": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TournamentSmallIcon3.png",
+      "r2_key": "units/TournamentSmallIcon3.png",
+      "source": "sharedassets1.assets"
+    },
+    "UnitIconBG_modelVeiwer": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UnitIconBG_modelVeiwer.png",
+      "r2_key": "units/UnitIconBG_modelVeiwer.png",
+      "source": "sharedassets1.assets"
+    },
+    "AssualtMarineIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/AssualtMarineIcon.png",
+      "r2_key": "units/AssualtMarineIcon.png",
+      "source": "sharedassets1.assets"
+    },
+    "InteractIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/InteractIcon.png",
+      "r2_key": "units/InteractIcon.png",
+      "source": "sharedassets1.assets"
+    },
+    "TournamentSmallIcon1": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TournamentSmallIcon1.png",
+      "r2_key": "units/TournamentSmallIcon1.png",
+      "source": "sharedassets1.assets"
+    },
+    "reqCooldownIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/reqCooldownIcon.png",
+      "r2_key": "units/reqCooldownIcon.png",
+      "source": "sharedassets1.assets"
+    },
+    "check_thin_icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/check_thin_icon.png",
+      "r2_key": "units/check_thin_icon.png",
+      "source": "sharedassets1.assets"
+    },
+    "ActionPointSml_icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ActionPointSml_icon.png",
+      "r2_key": "units/ActionPointSml_icon.png",
+      "source": "sharedassets1.assets"
+    },
+    "clipboard_icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/clipboard_icon.png",
+      "r2_key": "units/clipboard_icon.png",
+      "source": "sharedassets1.assets"
+    },
+    "X_icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/X_icon.png",
+      "r2_key": "units/X_icon.png",
+      "source": "sharedassets1.assets"
+    },
+    "icon_search": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/icon_search.png",
+      "r2_key": "units/icon_search.png",
+      "source": "sharedassets1.assets"
+    },
+    "error_icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/error_icon.png",
+      "r2_key": "units/error_icon.png",
+      "source": "sharedassets1.assets"
+    },
+    "icon_mail": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/icon_mail.png",
+      "r2_key": "units/icon_mail.png",
+      "source": "sharedassets1.assets"
+    },
+    "icon_user_logged-out": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/icon_user_logged-out.png",
+      "r2_key": "units/icon_user_logged-out.png",
+      "source": "sharedassets1.assets"
+    },
+    "icon_mobile_24x24": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/icon_mobile_24x24.png",
+      "r2_key": "units/icon_mobile_24x24.png",
+      "source": "sharedassets1.assets"
+    },
+    "BaalforaWaterTank-Single-Metal_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BaalforaWaterTank-Single-Metal_D.png",
+      "r2_key": "units/BaalforaWaterTank-Single-Metal_D.png",
+      "source": "sharedassets10.assets"
+    },
+    "Prop_BaalforaWaterTank-Triple_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_BaalforaWaterTank-Triple_N.png",
+      "r2_key": "units/Prop_BaalforaWaterTank-Triple_N.png",
+      "source": "sharedassets10.assets"
+    },
+    "BaalforaWaterTank-Single-Metal_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BaalforaWaterTank-Single-Metal_N.png",
+      "r2_key": "units/BaalforaWaterTank-Single-Metal_N.png",
+      "source": "sharedassets10.assets"
+    },
+    "Prop_BaalforaWaterTank-Triple_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_BaalforaWaterTank-Triple_D.png",
+      "r2_key": "units/Prop_BaalforaWaterTank-Triple_D.png",
+      "source": "sharedassets10.assets"
+    },
+    "Prop_BaalforaWaterTank-Triple_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_BaalforaWaterTank-Triple_S.png",
+      "r2_key": "units/Prop_BaalforaWaterTank-Triple_S.png",
+      "source": "sharedassets10.assets"
+    },
+    "BaalforaWaterTank-Single-Metal_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BaalforaWaterTank-Single-Metal_S.png",
+      "r2_key": "units/BaalforaWaterTank-Single-Metal_S.png",
+      "source": "sharedassets10.assets"
+    },
+    "BaalforaWaterTank-Single-Painted_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BaalforaWaterTank-Single-Painted_N.png",
+      "r2_key": "units/BaalforaWaterTank-Single-Painted_N.png",
+      "source": "sharedassets13.assets"
+    },
+    "BaalforaWaterTank-Single-Painted_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BaalforaWaterTank-Single-Painted_S.png",
+      "r2_key": "units/BaalforaWaterTank-Single-Painted_S.png",
+      "source": "sharedassets13.assets"
+    },
+    "BaalforaWaterTank-Single-Painted_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BaalforaWaterTank-Single-Painted_D.png",
+      "r2_key": "units/BaalforaWaterTank-Single-Painted_D.png",
+      "source": "sharedassets13.assets"
+    },
+    "activeIcon_additive_00059": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00059.png",
+      "r2_key": "units/activeIcon_additive_00059.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00001": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00001.png",
+      "r2_key": "units/activeIcon_additive_00001.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00004": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00004.png",
+      "r2_key": "units/activeIcon_additive_00004.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00021": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00021.png",
+      "r2_key": "units/activeIcon_additive_00021.png",
+      "source": "sharedassets2.assets"
+    },
+    "3CCUI_audioICON_chat-mute": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/3CCUI_audioICON_chat-mute.png",
+      "r2_key": "units/3CCUI_audioICON_chat-mute.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00023": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00023.png",
+      "r2_key": "units/activeIcon_additive_00023.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00016": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00016.png",
+      "r2_key": "units/activeIcon_additive_00016.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00026": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00026.png",
+      "r2_key": "units/activeIcon_additive_00026.png",
+      "source": "sharedassets2.assets"
+    },
+    "TacticalMapUnitTile": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TacticalMapUnitTile.png",
+      "r2_key": "units/TacticalMapUnitTile.png",
+      "source": "sharedassets2.assets"
+    },
+    "iconFlash_00005": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/iconFlash_00005.png",
+      "r2_key": "units/iconFlash_00005.png",
+      "source": "sharedassets2.assets"
+    },
+    "MoveIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/MoveIcon.png",
+      "r2_key": "units/MoveIcon.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00029": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00029.png",
+      "r2_key": "units/activeIcon_additive_00029.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00040": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00040.png",
+      "r2_key": "units/activeIcon_additive_00040.png",
+      "source": "sharedassets2.assets"
+    },
+    "iconFlash_00000": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/iconFlash_00000.png",
+      "r2_key": "units/iconFlash_00000.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00018": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00018.png",
+      "r2_key": "units/activeIcon_additive_00018.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00036": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00036.png",
+      "r2_key": "units/activeIcon_additive_00036.png",
+      "source": "sharedassets2.assets"
+    },
+    "select_gray_icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/select_gray_icon.png",
+      "r2_key": "units/select_gray_icon.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00051": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00051.png",
+      "r2_key": "units/activeIcon_additive_00051.png",
+      "source": "sharedassets2.assets"
+    },
+    "IWUI-infoICON": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/IWUI-infoICON.png",
+      "r2_key": "units/IWUI-infoICON.png",
+      "source": "sharedassets2.assets"
+    },
+    "iconFlash_00003": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/iconFlash_00003.png",
+      "r2_key": "units/iconFlash_00003.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00053": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00053.png",
+      "r2_key": "units/activeIcon_additive_00053.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00038": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00038.png",
+      "r2_key": "units/activeIcon_additive_00038.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00013": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00013.png",
+      "r2_key": "units/activeIcon_additive_00013.png",
+      "source": "sharedassets2.assets"
+    },
+    "select_red_icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/select_red_icon.png",
+      "r2_key": "units/select_red_icon.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00039": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00039.png",
+      "r2_key": "units/activeIcon_additive_00039.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00033": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00033.png",
+      "r2_key": "units/activeIcon_additive_00033.png",
+      "source": "sharedassets2.assets"
+    },
+    "iconFlash_00009": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/iconFlash_00009.png",
+      "r2_key": "units/iconFlash_00009.png",
+      "source": "sharedassets2.assets"
+    },
+    "iconFlash_00008": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/iconFlash_00008.png",
+      "r2_key": "units/iconFlash_00008.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00047": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00047.png",
+      "r2_key": "units/activeIcon_additive_00047.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00024": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00024.png",
+      "r2_key": "units/activeIcon_additive_00024.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00042": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00042.png",
+      "r2_key": "units/activeIcon_additive_00042.png",
+      "source": "sharedassets2.assets"
+    },
+    "iconFlash_00006": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/iconFlash_00006.png",
+      "r2_key": "units/iconFlash_00006.png",
+      "source": "sharedassets2.assets"
+    },
+    "KrakGrenadeIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/KrakGrenadeIcon.png",
+      "r2_key": "units/KrakGrenadeIcon.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00044": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00044.png",
+      "r2_key": "units/activeIcon_additive_00044.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00000": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00000.png",
+      "r2_key": "units/activeIcon_additive_00000.png",
+      "source": "sharedassets2.assets"
+    },
+    "IntercessorIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/IntercessorIcon.png",
+      "r2_key": "units/IntercessorIcon.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00011": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00011.png",
+      "r2_key": "units/activeIcon_additive_00011.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00034": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00034.png",
+      "r2_key": "units/activeIcon_additive_00034.png",
+      "source": "sharedassets2.assets"
+    },
+    "IntercessorIcon-small": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/IntercessorIcon-small.png",
+      "r2_key": "units/IntercessorIcon-small.png",
+      "source": "sharedassets2.assets"
+    },
+    "select_gold_icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/select_gold_icon.png",
+      "r2_key": "units/select_gold_icon.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00019": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00019.png",
+      "r2_key": "units/activeIcon_additive_00019.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00012": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00012.png",
+      "r2_key": "units/activeIcon_additive_00012.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00022": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00022.png",
+      "r2_key": "units/activeIcon_additive_00022.png",
+      "source": "sharedassets2.assets"
+    },
+    "iconFlash_00004": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/iconFlash_00004.png",
+      "r2_key": "units/iconFlash_00004.png",
+      "source": "sharedassets2.assets"
+    },
+    "select_light_icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/select_light_icon.png",
+      "r2_key": "units/select_light_icon.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00007": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00007.png",
+      "r2_key": "units/activeIcon_additive_00007.png",
+      "source": "sharedassets2.assets"
+    },
+    "HalfCoverIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HalfCoverIcon.png",
+      "r2_key": "units/HalfCoverIcon.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00048": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00048.png",
+      "r2_key": "units/activeIcon_additive_00048.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00027": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00027.png",
+      "r2_key": "units/activeIcon_additive_00027.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00035": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00035.png",
+      "r2_key": "units/activeIcon_additive_00035.png",
+      "source": "sharedassets2.assets"
+    },
+    "iconFlash_00002": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/iconFlash_00002.png",
+      "r2_key": "units/iconFlash_00002.png",
+      "source": "sharedassets2.assets"
+    },
+    "TechmarineIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TechmarineIcon.png",
+      "r2_key": "units/TechmarineIcon.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00043": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00043.png",
+      "r2_key": "units/activeIcon_additive_00043.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00049": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00049.png",
+      "r2_key": "units/activeIcon_additive_00049.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00056": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00056.png",
+      "r2_key": "units/activeIcon_additive_00056.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00041": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00041.png",
+      "r2_key": "units/activeIcon_additive_00041.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00010": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00010.png",
+      "r2_key": "units/activeIcon_additive_00010.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00003": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00003.png",
+      "r2_key": "units/activeIcon_additive_00003.png",
+      "source": "sharedassets2.assets"
+    },
+    "corossionStatusIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/corossionStatusIcon.png",
+      "r2_key": "units/corossionStatusIcon.png",
+      "source": "sharedassets2.assets"
+    },
+    "FragGrenadeIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/FragGrenadeIcon.png",
+      "r2_key": "units/FragGrenadeIcon.png",
+      "source": "sharedassets2.assets"
+    },
+    "AssaultSquadStrike": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/AssaultSquadStrike.png",
+      "r2_key": "units/AssaultSquadStrike.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00008": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00008.png",
+      "r2_key": "units/activeIcon_additive_00008.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00055": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00055.png",
+      "r2_key": "units/activeIcon_additive_00055.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00002": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00002.png",
+      "r2_key": "units/activeIcon_additive_00002.png",
+      "source": "sharedassets2.assets"
+    },
+    "TacticalMapObjectiveTile": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TacticalMapObjectiveTile.png",
+      "r2_key": "units/TacticalMapObjectiveTile.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00052": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00052.png",
+      "r2_key": "units/activeIcon_additive_00052.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00032": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00032.png",
+      "r2_key": "units/activeIcon_additive_00032.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00050": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00050.png",
+      "r2_key": "units/activeIcon_additive_00050.png",
+      "source": "sharedassets2.assets"
+    },
+    "ExpandIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ExpandIcon.png",
+      "r2_key": "units/ExpandIcon.png",
+      "source": "sharedassets2.assets"
+    },
+    "MVPIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/MVPIcon.png",
+      "r2_key": "units/MVPIcon.png",
+      "source": "sharedassets2.assets"
+    },
+    "iconFlash_00001": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/iconFlash_00001.png",
+      "r2_key": "units/iconFlash_00001.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00028": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00028.png",
+      "r2_key": "units/activeIcon_additive_00028.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00030": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00030.png",
+      "r2_key": "units/activeIcon_additive_00030.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00046": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00046.png",
+      "r2_key": "units/activeIcon_additive_00046.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00031": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00031.png",
+      "r2_key": "units/activeIcon_additive_00031.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00017": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00017.png",
+      "r2_key": "units/activeIcon_additive_00017.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00025": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00025.png",
+      "r2_key": "units/activeIcon_additive_00025.png",
+      "source": "sharedassets2.assets"
+    },
+    "IWUI-alertICON": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/IWUI-alertICON.png",
+      "r2_key": "units/IWUI-alertICON.png",
+      "source": "sharedassets2.assets"
+    },
+    "SuppressionFireIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SuppressionFireIcon.png",
+      "r2_key": "units/SuppressionFireIcon.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00054": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00054.png",
+      "r2_key": "units/activeIcon_additive_00054.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00006": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00006.png",
+      "r2_key": "units/activeIcon_additive_00006.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00045": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00045.png",
+      "r2_key": "units/activeIcon_additive_00045.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00037": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00037.png",
+      "r2_key": "units/activeIcon_additive_00037.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00020": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00020.png",
+      "r2_key": "units/activeIcon_additive_00020.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00009": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00009.png",
+      "r2_key": "units/activeIcon_additive_00009.png",
+      "source": "sharedassets2.assets"
+    },
+    "iconFlash_00007": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/iconFlash_00007.png",
+      "r2_key": "units/iconFlash_00007.png",
+      "source": "sharedassets2.assets"
+    },
+    "HormagauntIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HormagauntIcon.png",
+      "r2_key": "units/HormagauntIcon.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00005": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00005.png",
+      "r2_key": "units/activeIcon_additive_00005.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00057": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00057.png",
+      "r2_key": "units/activeIcon_additive_00057.png",
+      "source": "sharedassets2.assets"
+    },
+    "CollapseIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/CollapseIcon.png",
+      "r2_key": "units/CollapseIcon.png",
+      "source": "sharedassets2.assets"
+    },
+    "MuteIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/MuteIcon.png",
+      "r2_key": "units/MuteIcon.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00015": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00015.png",
+      "r2_key": "units/activeIcon_additive_00015.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00058": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00058.png",
+      "r2_key": "units/activeIcon_additive_00058.png",
+      "source": "sharedassets2.assets"
+    },
+    "activeIcon_additive_00014": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00014.png",
+      "r2_key": "units/activeIcon_additive_00014.png",
+      "source": "sharedassets2.assets"
+    },
+    "tt-icontray-level1(bronze)": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/tt-icontray-level1(bronze).png",
+      "r2_key": "units/tt-icontray-level1(bronze).png",
+      "source": "sharedassets3.assets"
+    },
+    "InceptorIcon-small": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/InceptorIcon-small.png",
+      "r2_key": "units/InceptorIcon-small.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-icontray-level4(platinum)": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/tt-icontray-level4(platinum).png",
+      "r2_key": "units/tt-icontray-level4(platinum).png",
+      "source": "sharedassets3.assets"
+    },
+    "techtree_icon_4_resized": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/techtree_icon_4_resized.png",
+      "r2_key": "units/techtree_icon_4_resized.png",
+      "source": "sharedassets3.assets"
+    },
+    "techtree_icon_2_resized": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/techtree_icon_2_resized.png",
+      "r2_key": "units/techtree_icon_2_resized.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-icontray-level2(silver)": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/tt-icontray-level2(silver).png",
+      "r2_key": "units/tt-icontray-level2(silver).png",
+      "source": "sharedassets3.assets"
+    },
+    "newMissionIcon_Active": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/newMissionIcon_Active.png",
+      "r2_key": "units/newMissionIcon_Active.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-icontray-level5(supergold)": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/tt-icontray-level5(supergold).png",
+      "r2_key": "units/tt-icontray-level5(supergold).png",
+      "source": "sharedassets3.assets"
+    },
+    "techtree_icon_1_resized": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/techtree_icon_1_resized.png",
+      "r2_key": "units/techtree_icon_1_resized.png",
+      "source": "sharedassets3.assets"
+    },
+    "techtree_icon_3_resized": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/techtree_icon_3_resized.png",
+      "r2_key": "units/techtree_icon_3_resized.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-icontray-level3(gold)": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/tt-icontray-level3(gold).png",
+      "r2_key": "units/tt-icontray-level3(gold).png",
+      "source": "sharedassets3.assets"
+    },
+    "Prop_SistersWall_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_SistersWall_N.png",
+      "r2_key": "units/Prop_SistersWall_N.png",
+      "source": "sharedassets32.assets"
+    },
+    "Prop_SistersWall_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_SistersWall_S.png",
+      "r2_key": "units/Prop_SistersWall_S.png",
+      "source": "sharedassets32.assets"
+    },
+    "Prop_SistersWall_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_SistersWall_AO.png",
+      "r2_key": "units/Prop_SistersWall_AO.png",
+      "source": "sharedassets32.assets"
+    },
+    "Prop_DoubleSisterWall_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_DoubleSisterWall_E.png",
+      "r2_key": "units/Prop_DoubleSisterWall_E.png",
+      "source": "sharedassets32.assets"
+    },
+    "Prop_DoubleSisterWall_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_DoubleSisterWall_N.png",
+      "r2_key": "units/Prop_DoubleSisterWall_N.png",
+      "source": "sharedassets32.assets"
+    },
+    "Prop_DoubleSisterWall_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_DoubleSisterWall_AO.png",
+      "r2_key": "units/Prop_DoubleSisterWall_AO.png",
+      "source": "sharedassets32.assets"
+    },
+    "Prop_SistersWall_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_SistersWall_D.png",
+      "r2_key": "units/Prop_SistersWall_D.png",
+      "source": "sharedassets32.assets"
+    },
+    "Prop_DoubleSisterWall_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_DoubleSisterWall_S.png",
+      "r2_key": "units/Prop_DoubleSisterWall_S.png",
+      "source": "sharedassets32.assets"
+    },
+    "Prop_SistersBannerFlags_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_SistersBannerFlags_D.png",
+      "r2_key": "units/Prop_SistersBannerFlags_D.png",
+      "source": "sharedassets32.assets"
+    },
+    "Prop_SistersBannerFlags_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_SistersBannerFlags_N.png",
+      "r2_key": "units/Prop_SistersBannerFlags_N.png",
+      "source": "sharedassets32.assets"
+    },
+    "Prop_DoubleSisterWall_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_DoubleSisterWall_D.png",
+      "r2_key": "units/Prop_DoubleSisterWall_D.png",
+      "source": "sharedassets32.assets"
+    },
+    "Prop_SistersBannerFlags_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_SistersBannerFlags_AO.png",
+      "r2_key": "units/Prop_SistersBannerFlags_AO.png",
+      "source": "sharedassets32.assets"
+    },
+    "Prop_SistersBannerFlags_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_SistersBannerFlags_S.png",
+      "r2_key": "units/Prop_SistersBannerFlags_S.png",
+      "source": "sharedassets32.assets"
+    },
+    "orkBoyz_2_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/orkBoyz_2_N.png",
+      "r2_key": "units/orkBoyz_2_N.png",
+      "source": "sharedassets33.assets"
+    },
+    "orkBoyz_2_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/orkBoyz_2_S.png",
+      "r2_key": "units/orkBoyz_2_S.png",
+      "source": "sharedassets33.assets"
+    },
+    "ORKBOY_1_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORKBOY_1_S.png",
+      "r2_key": "units/ORKBOY_1_S.png",
+      "source": "sharedassets33.assets"
+    },
+    "orkBoyz_2_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/orkBoyz_2_AO.png",
+      "r2_key": "units/orkBoyz_2_AO.png",
+      "source": "sharedassets33.assets"
+    },
+    "ORKBOY_1_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORKBOY_1_AO.png",
+      "r2_key": "units/ORKBOY_1_AO.png",
+      "source": "sharedassets33.assets"
+    },
+    "orkboy_parts_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/orkboy_parts_S.png",
+      "r2_key": "units/orkboy_parts_S.png",
+      "source": "sharedassets33.assets"
+    },
+    "ORKBOY_1_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORKBOY_1_D.png",
+      "r2_key": "units/ORKBOY_1_D.png",
+      "source": "sharedassets33.assets"
+    },
+    "orkboy_parts_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/orkboy_parts_AO.png",
+      "r2_key": "units/orkboy_parts_AO.png",
+      "source": "sharedassets33.assets"
+    },
+    "orkboy_parts_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/orkboy_parts_D.png",
+      "r2_key": "units/orkboy_parts_D.png",
+      "source": "sharedassets33.assets"
+    },
+    "ORKBOY_1_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORKBOY_1_N.png",
+      "r2_key": "units/ORKBOY_1_N.png",
+      "source": "sharedassets33.assets"
+    },
+    "orkBoy_3_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/orkBoy_3_D.png",
+      "r2_key": "units/orkBoy_3_D.png",
+      "source": "sharedassets33.assets"
+    },
+    "orkBoy_3_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/orkBoy_3_S.png",
+      "r2_key": "units/orkBoy_3_S.png",
+      "source": "sharedassets33.assets"
+    },
+    "orkBoyz_2_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/orkBoyz_2_D.png",
+      "r2_key": "units/orkBoyz_2_D.png",
+      "source": "sharedassets33.assets"
+    },
+    "orkboy_parts_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/orkboy_parts_N.png",
+      "r2_key": "units/orkboy_parts_N.png",
+      "source": "sharedassets33.assets"
+    },
+    "orkBoy_3_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/orkBoy_3_N.png",
+      "r2_key": "units/orkBoy_3_N.png",
+      "source": "sharedassets33.assets"
+    },
+    "orkBoy_3_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/orkBoy_3_AO.png",
+      "r2_key": "units/orkBoy_3_AO.png",
+      "source": "sharedassets33.assets"
+    },
+    "Prop_OrkMetalProps_Red_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_OrkMetalProps_Red_D.png",
+      "r2_key": "units/Prop_OrkMetalProps_Red_D.png",
+      "source": "sharedassets34.assets"
+    },
+    "Prop_TankTrackLattice_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_TankTrackLattice_D.png",
+      "r2_key": "units/Prop_TankTrackLattice_D.png",
+      "source": "sharedassets34.assets"
+    },
+    "Prop_TankTrackLattice_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_TankTrackLattice_S.png",
+      "r2_key": "units/Prop_TankTrackLattice_S.png",
+      "source": "sharedassets34.assets"
+    },
+    "Prop_OrkMetalProps_Red_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_OrkMetalProps_Red_AO.png",
+      "r2_key": "units/Prop_OrkMetalProps_Red_AO.png",
+      "source": "sharedassets34.assets"
+    },
+    "Prop_TankTrackLattice_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_TankTrackLattice_AO.png",
+      "r2_key": "units/Prop_TankTrackLattice_AO.png",
+      "source": "sharedassets34.assets"
+    },
+    "Prop_TankTrackLattice_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_TankTrackLattice_N.png",
+      "r2_key": "units/Prop_TankTrackLattice_N.png",
+      "source": "sharedassets34.assets"
+    },
+    "Prop_OrkMetalProps_Red_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_OrkMetalProps_Red_N.png",
+      "r2_key": "units/Prop_OrkMetalProps_Red_N.png",
+      "source": "sharedassets34.assets"
+    },
+    "Prop_OrkMetalProps_Red_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_OrkMetalProps_Red_S.png",
+      "r2_key": "units/Prop_OrkMetalProps_Red_S.png",
+      "source": "sharedassets34.assets"
+    },
+    "Prop_SistersCarpet_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_SistersCarpet_D.png",
+      "r2_key": "units/Prop_SistersCarpet_D.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_SisterSpire_Stone_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_SisterSpire_Stone_D.png",
+      "r2_key": "units/Prop_SisterSpire_Stone_D.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_TankTrackLatticeMetal_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_TankTrackLatticeMetal_D.png",
+      "r2_key": "units/Prop_TankTrackLatticeMetal_D.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_SistersCarpet_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_SistersCarpet_S.png",
+      "r2_key": "units/Prop_SistersCarpet_S.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkMetalProps_Yellow_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_OrkMetalProps_Yellow_S.png",
+      "r2_key": "units/Prop_OrkMetalProps_Yellow_S.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkMetalProps_Yellow_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_OrkMetalProps_Yellow_D.png",
+      "r2_key": "units/Prop_OrkMetalProps_Yellow_D.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkMetalProps_Yellow_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_OrkMetalProps_Yellow_AO.png",
+      "r2_key": "units/Prop_OrkMetalProps_Yellow_AO.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_SistersCarpet_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_SistersCarpet_N.png",
+      "r2_key": "units/Prop_SistersCarpet_N.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_SisterSpire_Stone_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_SisterSpire_Stone_N.png",
+      "r2_key": "units/Prop_SisterSpire_Stone_N.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_SisterSpire_Stone_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_SisterSpire_Stone_S.png",
+      "r2_key": "units/Prop_SisterSpire_Stone_S.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_SistersCarpet_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_SistersCarpet_AO.png",
+      "r2_key": "units/Prop_SistersCarpet_AO.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_SisterSpire_Stone_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_SisterSpire_Stone_AO.png",
+      "r2_key": "units/Prop_SisterSpire_Stone_AO.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkMetalProps_Yellow_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_OrkMetalProps_Yellow_N.png",
+      "r2_key": "units/Prop_OrkMetalProps_Yellow_N.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkTankerYellow_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_OrkTankerYellow_D.png",
+      "r2_key": "units/Prop_OrkTankerYellow_D.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_DropPod_Destroyed_Ultramarine_Body_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_DropPod_Destroyed_Ultramarine_Body_S.png",
+      "r2_key": "units/Prop_DropPod_Destroyed_Ultramarine_Body_S.png",
+      "source": "sharedassets37.assets"
+    },
+    "Prop_DropPod_Destroyed_Ultramarine_Body_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_DropPod_Destroyed_Ultramarine_Body_D.png",
+      "r2_key": "units/Prop_DropPod_Destroyed_Ultramarine_Body_D.png",
+      "source": "sharedassets37.assets"
+    },
+    "Prop_DropPod_Destroyed_Ultramarine_Body_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_DropPod_Destroyed_Ultramarine_Body_N.png",
+      "r2_key": "units/Prop_DropPod_Destroyed_Ultramarine_Body_N.png",
+      "source": "sharedassets37.assets"
+    },
+    "Prop_DropPod_Destroyed_Ultramarine_Doors_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_DropPod_Destroyed_Ultramarine_Doors_N.png",
+      "r2_key": "units/Prop_DropPod_Destroyed_Ultramarine_Doors_N.png",
+      "source": "sharedassets37.assets"
+    },
+    "Prop_DropPod_Destroyed_Ultramarine_Doors_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_DropPod_Destroyed_Ultramarine_Doors_S.png",
+      "r2_key": "units/Prop_DropPod_Destroyed_Ultramarine_Doors_S.png",
+      "source": "sharedassets37.assets"
+    },
+    "Prop_DropPod_Destroyed_Ultramarine_Doors_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_DropPod_Destroyed_Ultramarine_Doors_D.png",
+      "r2_key": "units/Prop_DropPod_Destroyed_Ultramarine_Doors_D.png",
+      "source": "sharedassets37.assets"
+    },
+    "TauIconDecal": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TauIconDecal.png",
+      "r2_key": "units/TauIconDecal.png",
+      "source": "sharedassets38.assets"
+    },
+    "PadlockIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/PadlockIcon.png",
+      "r2_key": "units/PadlockIcon.png",
+      "source": "sharedassets4.assets"
+    },
+    "PredatorDestroyed_Ultramarine_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/PredatorDestroyed_Ultramarine_N.png",
+      "r2_key": "units/PredatorDestroyed_Ultramarine_N.png",
+      "source": "sharedassets40.assets"
+    },
+    "PredatorDestroyed_Ultramarine_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/PredatorDestroyed_Ultramarine_AO.png",
+      "r2_key": "units/PredatorDestroyed_Ultramarine_AO.png",
+      "source": "sharedassets40.assets"
+    },
+    "PredatorDestroyed_Ultramarine_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/PredatorDestroyed_Ultramarine_D.png",
+      "r2_key": "units/PredatorDestroyed_Ultramarine_D.png",
+      "source": "sharedassets40.assets"
+    },
+    "PredatorDestroyed_Ultramarine_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/PredatorDestroyed_Ultramarine_S.png",
+      "r2_key": "units/PredatorDestroyed_Ultramarine_S.png",
+      "source": "sharedassets40.assets"
+    },
+    "ORK_DEF_Arms_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DEF_Arms_D.png",
+      "r2_key": "units/ORK_DEF_Arms_D.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_BLB_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_BLB_AO.png",
+      "r2_key": "units/ORK_BLB_AO.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_DEF_Body_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DEF_Body_AO.png",
+      "r2_key": "units/ORK_DEF_Body_AO.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_DEF_Body_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DEF_Body_N.png",
+      "r2_key": "units/ORK_DEF_Body_N.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_BLB_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_BLB_D.png",
+      "r2_key": "units/ORK_BLB_D.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_BLB_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_BLB_N.png",
+      "r2_key": "units/ORK_BLB_N.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_BLB_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_BLB_E.png",
+      "r2_key": "units/ORK_BLB_E.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_DEF_Arms_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DEF_Arms_S.png",
+      "r2_key": "units/ORK_DEF_Arms_S.png",
+      "source": "sharedassets41.assets"
+    },
+    "Decal_OrkFlooring_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Decal_OrkFlooring_S.png",
+      "r2_key": "units/Decal_OrkFlooring_S.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_WBK_BiKE_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_WBK_BiKE_D.png",
+      "r2_key": "units/ORK_WBK_BiKE_D.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_BLB_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_BLB_S.png",
+      "r2_key": "units/ORK_BLB_S.png",
+      "source": "sharedassets41.assets"
+    },
+    "Decal_OrkFlooring_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Decal_OrkFlooring_D.png",
+      "r2_key": "units/Decal_OrkFlooring_D.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_DEF_Arms_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DEF_Arms_N.png",
+      "r2_key": "units/ORK_DEF_Arms_N.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_WBK_BiKE_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_WBK_BiKE_S.png",
+      "r2_key": "units/ORK_WBK_BiKE_S.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_WBK_BiKE_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_WBK_BiKE_E.png",
+      "r2_key": "units/ORK_WBK_BiKE_E.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_DEF_Body_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DEF_Body_D.png",
+      "r2_key": "units/ORK_DEF_Body_D.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_WBK_BiKE_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_WBK_BiKE_AO.png",
+      "r2_key": "units/ORK_WBK_BiKE_AO.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_DEF_Arms_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DEF_Arms_AO.png",
+      "r2_key": "units/ORK_DEF_Arms_AO.png",
+      "source": "sharedassets41.assets"
+    },
+    "prop_ORK_MetalPlates_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/prop_ORK_MetalPlates_D.png",
+      "r2_key": "units/prop_ORK_MetalPlates_D.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_DEF_Body_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DEF_Body_S.png",
+      "r2_key": "units/ORK_DEF_Body_S.png",
+      "source": "sharedassets41.assets"
+    },
+    "Decal_OrkFlooring_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Decal_OrkFlooring_N.png",
+      "r2_key": "units/Decal_OrkFlooring_N.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_WBK_BiKE_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_WBK_BiKE_N.png",
+      "r2_key": "units/ORK_WBK_BiKE_N.png",
+      "source": "sharedassets41.assets"
+    },
+    "ORK_GRE_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_GRE_AO.png",
+      "r2_key": "units/ORK_GRE_AO.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_BOZ_m1_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_BOZ_m1_N.png",
+      "r2_key": "units/ORK_BOZ_m1_N.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_2_mat_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_2_mat_D.png",
+      "r2_key": "units/ORK_DWK_2_mat_D.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_3_mat_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_3_mat_AO.png",
+      "r2_key": "units/ORK_DWK_3_mat_AO.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_3_mat_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_3_mat_D.png",
+      "r2_key": "units/ORK_DWK_3_mat_D.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_1_mat_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_1_mat_N.png",
+      "r2_key": "units/ORK_DWK_1_mat_N.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_BOZ_m1_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_BOZ_m1_S.png",
+      "r2_key": "units/ORK_BOZ_m1_S.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_BOZ_m2_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_BOZ_m2_AO.png",
+      "r2_key": "units/ORK_BOZ_m2_AO.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_1_mat_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_1_mat_D.png",
+      "r2_key": "units/ORK_DWK_1_mat_D.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_3_mat_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_3_mat_S.png",
+      "r2_key": "units/ORK_DWK_3_mat_S.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_D_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_D_N.png",
+      "r2_key": "units/ORK_DWK_D_N.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_3_mat_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_3_mat_E.png",
+      "r2_key": "units/ORK_DWK_3_mat_E.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_2_mat_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_2_mat_S.png",
+      "r2_key": "units/ORK_DWK_2_mat_S.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_BOZ_m2_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_BOZ_m2_D.png",
+      "r2_key": "units/ORK_BOZ_m2_D.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_BOZ_m2_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_BOZ_m2_S.png",
+      "r2_key": "units/ORK_BOZ_m2_S.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_1_mat_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_1_mat_AO.png",
+      "r2_key": "units/ORK_DWK_1_mat_AO.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_2_mat_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_2_mat_E.png",
+      "r2_key": "units/ORK_DWK_2_mat_E.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_2_mat_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_2_mat_AO.png",
+      "r2_key": "units/ORK_DWK_2_mat_AO.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_BOZ_m1_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_BOZ_m1_D.png",
+      "r2_key": "units/ORK_BOZ_m1_D.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_1_mat_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_1_mat_S.png",
+      "r2_key": "units/ORK_DWK_1_mat_S.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_2_mat_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_2_mat_N.png",
+      "r2_key": "units/ORK_DWK_2_mat_N.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_GRE_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_GRE_S.png",
+      "r2_key": "units/ORK_GRE_S.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_1_mat_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_1_mat_E.png",
+      "r2_key": "units/ORK_DWK_1_mat_E.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_GRE_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_GRE_E.png",
+      "r2_key": "units/ORK_GRE_E.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_3_mat_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_3_mat_N.png",
+      "r2_key": "units/ORK_DWK_3_mat_N.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_D_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_D_S.png",
+      "r2_key": "units/ORK_DWK_D_S.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_BOZ_m2_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_BOZ_m2_N.png",
+      "r2_key": "units/ORK_BOZ_m2_N.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_GRE_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_GRE_N.png",
+      "r2_key": "units/ORK_GRE_N.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_D_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_D_D.png",
+      "r2_key": "units/ORK_DWK_D_D.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_DWK_D_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_DWK_D_AO.png",
+      "r2_key": "units/ORK_DWK_D_AO.png",
+      "source": "sharedassets42.assets"
+    },
+    "ORK_GRE_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ORK_GRE_D.png",
+      "r2_key": "units/ORK_GRE_D.png",
+      "source": "sharedassets42.assets"
+    },
+    "refreshIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/refreshIcon.png",
+      "r2_key": "units/refreshIcon.png",
+      "source": "sharedassets5.assets"
+    },
+    "trophyIconLrg": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/trophyIconLrg.png",
+      "r2_key": "units/trophyIconLrg.png",
+      "source": "sharedassets5.assets"
+    },
+    "trophyIconSmall": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/trophyIconSmall.png",
+      "r2_key": "units/trophyIconSmall.png",
+      "source": "sharedassets5.assets"
+    },
+    "sand test_baseColor_Ork_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/sand test_baseColor_Ork_D.png",
+      "r2_key": "units/sand test_baseColor_Ork_D.png",
+      "source": "sharedassets56.assets"
+    },
+    "Prop_BannerUltramarine_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_BannerUltramarine_AO.png",
+      "r2_key": "units/Prop_BannerUltramarine_AO.png",
+      "source": "sharedassets60.assets"
+    },
+    "Prop_BannerUltramarineLampPost_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_BannerUltramarineLampPost_D.png",
+      "r2_key": "units/Prop_BannerUltramarineLampPost_D.png",
+      "source": "sharedassets60.assets"
+    },
+    "Prop_BannerUltramarineLampPost_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_BannerUltramarineLampPost_N.png",
+      "r2_key": "units/Prop_BannerUltramarineLampPost_N.png",
+      "source": "sharedassets60.assets"
+    },
+    "Prop_BannerUltramarineLampPost_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_BannerUltramarineLampPost_AO.png",
+      "r2_key": "units/Prop_BannerUltramarineLampPost_AO.png",
+      "source": "sharedassets60.assets"
+    },
+    "Prop_BannerUltramarine_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_BannerUltramarine_D.png",
+      "r2_key": "units/Prop_BannerUltramarine_D.png",
+      "source": "sharedassets60.assets"
+    },
+    "Prop_BannerUltramarineLampPost_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_BannerUltramarineLampPost_S.png",
+      "r2_key": "units/Prop_BannerUltramarineLampPost_S.png",
+      "source": "sharedassets60.assets"
+    },
+    "Prop_BannerUltramarine_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_BannerUltramarine_S.png",
+      "r2_key": "units/Prop_BannerUltramarine_S.png",
+      "source": "sharedassets60.assets"
+    },
+    "Prop_BannerUltramarine_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Prop_BannerUltramarine_N.png",
+      "r2_key": "units/Prop_BannerUltramarine_N.png",
+      "source": "sharedassets60.assets"
+    },
+    "BalisticDamageIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BalisticDamageIcon.png",
+      "r2_key": "units/BalisticDamageIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "killsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/killsIcon.png",
+      "r2_key": "units/killsIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "kdrIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/kdrIcon.png",
+      "r2_key": "units/kdrIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "ShortestDurationIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ShortestDurationIcon.png",
+      "r2_key": "units/ShortestDurationIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "victory banner icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/victory banner icon.png",
+      "r2_key": "units/victory banner icon.png",
+      "source": "sharedassets66.assets"
+    },
+    "LongestDurationIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/LongestDurationIcon.png",
+      "r2_key": "units/LongestDurationIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "deathsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/deathsIcon.png",
+      "r2_key": "units/deathsIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "AcidDamageIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/AcidDamageIcon.png",
+      "r2_key": "units/AcidDamageIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "ObjectiveIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ObjectiveIcon.png",
+      "r2_key": "units/ObjectiveIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "missionIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/missionIcon.png",
+      "r2_key": "units/missionIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "action point icon stratgey": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/action point icon stratgey.png",
+      "r2_key": "units/action point icon stratgey.png",
+      "source": "sharedassets66.assets"
+    },
+    "FireDamageIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/FireDamageIcon.png",
+      "r2_key": "units/FireDamageIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "MeleeDamageIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/MeleeDamageIcon.png",
+      "r2_key": "units/MeleeDamageIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "PoisonDamageIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/PoisonDamageIcon.png",
+      "r2_key": "units/PoisonDamageIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "lostDeployedIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/lostDeployedIcon.png",
+      "r2_key": "units/lostDeployedIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "PsychicDamageIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/PsychicDamageIcon.png",
+      "r2_key": "units/PsychicDamageIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "SurgedIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SurgedIcon.png",
+      "r2_key": "units/SurgedIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "CameraResetIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/CameraResetIcon.png",
+      "r2_key": "units/CameraResetIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "ConquestResourceIconsAtlas": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ConquestResourceIconsAtlas.png",
+      "r2_key": "units/ConquestResourceIconsAtlas.png",
+      "source": "sharedassets66.assets"
+    },
+    "HealsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HealsIcon.png",
+      "r2_key": "units/HealsIcon.png",
+      "source": "sharedassets66.assets"
+    },
+    "ConquestResourceIconsAtlas_1": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ConquestResourceIconsAtlas_1.png",
+      "r2_key": "units/ConquestResourceIconsAtlas_1.png",
+      "source": "sharedassets66.assets"
+    },
+    "ConquestResourceIconsAtlas_0": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ConquestResourceIconsAtlas_0.png",
+      "r2_key": "units/ConquestResourceIconsAtlas_0.png",
+      "source": "sharedassets66.assets"
+    },
+    "ConquestResourceIconsAtlas_2": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ConquestResourceIconsAtlas_2.png",
+      "r2_key": "units/ConquestResourceIconsAtlas_2.png",
+      "source": "sharedassets66.assets"
+    },
+    "ConquestResourceIconsAtlas_4": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ConquestResourceIconsAtlas_4.png",
+      "r2_key": "units/ConquestResourceIconsAtlas_4.png",
+      "source": "sharedassets66.assets"
+    },
+    "ConquestResourceIconsAtlas_3": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ConquestResourceIconsAtlas_3.png",
+      "r2_key": "units/ConquestResourceIconsAtlas_3.png",
+      "source": "sharedassets66.assets"
+    },
+    "capturesIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/capturesIcon.png",
+      "r2_key": "units/capturesIcon.png",
+      "source": "sharedassets68.assets"
+    },
+    "prop_ImpAntiTank_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/prop_ImpAntiTank_S.png",
+      "r2_key": "units/prop_ImpAntiTank_S.png",
+      "source": "sharedassets9.assets"
+    },
+    "prop_ImpAntiTank_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/prop_ImpAntiTank_D.png",
+      "r2_key": "units/prop_ImpAntiTank_D.png",
+      "source": "sharedassets9.assets"
+    },
+    "prop_ImpAntiTank_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/prop_ImpAntiTank_N.png",
+      "r2_key": "units/prop_ImpAntiTank_N.png",
+      "source": "sharedassets9.assets"
+    }
+  },
+  "weapons": {
+    "plasma_ring0035": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0035.png",
+      "r2_key": "weapons/plasma_ring0035.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0145": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0145.png",
+      "r2_key": "weapons/plasma_ring0145.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0086": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0086.png",
+      "r2_key": "weapons/plasma_ring0086.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0133": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0133.png",
+      "r2_key": "weapons/plasma_ring0133.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0058": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0058.png",
+      "r2_key": "weapons/plasma_ring0058.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0011": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0011.png",
+      "r2_key": "weapons/plasma_ring0011.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0023": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0023.png",
+      "r2_key": "weapons/plasma_ring0023.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0112": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0112.png",
+      "r2_key": "weapons/plasma_ring0112.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0121": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0121.png",
+      "r2_key": "weapons/plasma_ring0121.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0152": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0152.png",
+      "r2_key": "weapons/plasma_ring0152.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0132": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0132.png",
+      "r2_key": "weapons/plasma_ring0132.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0103": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0103.png",
+      "r2_key": "weapons/plasma_ring0103.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0000": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0000.png",
+      "r2_key": "weapons/plasma_ring0000.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0127": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0127.png",
+      "r2_key": "weapons/plasma_ring0127.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0140": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0140.png",
+      "r2_key": "weapons/plasma_ring0140.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0046": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0046.png",
+      "r2_key": "weapons/plasma_ring0046.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0139": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0139.png",
+      "r2_key": "weapons/plasma_ring0139.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0041": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0041.png",
+      "r2_key": "weapons/plasma_ring0041.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0146": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0146.png",
+      "r2_key": "weapons/plasma_ring0146.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0014": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0014.png",
+      "r2_key": "weapons/plasma_ring0014.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0129": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0129.png",
+      "r2_key": "weapons/plasma_ring0129.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0142": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0142.png",
+      "r2_key": "weapons/plasma_ring0142.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0001": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0001.png",
+      "r2_key": "weapons/plasma_ring0001.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0022": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0022.png",
+      "r2_key": "weapons/plasma_ring0022.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0143": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0143.png",
+      "r2_key": "weapons/plasma_ring0143.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0053": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0053.png",
+      "r2_key": "weapons/plasma_ring0053.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0038": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0038.png",
+      "r2_key": "weapons/plasma_ring0038.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0096": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0096.png",
+      "r2_key": "weapons/plasma_ring0096.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0107": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0107.png",
+      "r2_key": "weapons/plasma_ring0107.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0034": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0034.png",
+      "r2_key": "weapons/plasma_ring0034.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0113": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0113.png",
+      "r2_key": "weapons/plasma_ring0113.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0036": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0036.png",
+      "r2_key": "weapons/plasma_ring0036.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0155": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0155.png",
+      "r2_key": "weapons/plasma_ring0155.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0010": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0010.png",
+      "r2_key": "weapons/plasma_ring0010.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0116": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0116.png",
+      "r2_key": "weapons/plasma_ring0116.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0061": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0061.png",
+      "r2_key": "weapons/plasma_ring0061.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0075": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0075.png",
+      "r2_key": "weapons/plasma_ring0075.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0012": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0012.png",
+      "r2_key": "weapons/plasma_ring0012.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0156": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0156.png",
+      "r2_key": "weapons/plasma_ring0156.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0066": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0066.png",
+      "r2_key": "weapons/plasma_ring0066.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0134": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0134.png",
+      "r2_key": "weapons/plasma_ring0134.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0028": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0028.png",
+      "r2_key": "weapons/plasma_ring0028.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0051": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0051.png",
+      "r2_key": "weapons/plasma_ring0051.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0131": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0131.png",
+      "r2_key": "weapons/plasma_ring0131.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0094": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0094.png",
+      "r2_key": "weapons/plasma_ring0094.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0009": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0009.png",
+      "r2_key": "weapons/plasma_ring0009.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0101": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0101.png",
+      "r2_key": "weapons/plasma_ring0101.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0125": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0125.png",
+      "r2_key": "weapons/plasma_ring0125.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0108": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0108.png",
+      "r2_key": "weapons/plasma_ring0108.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0021": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0021.png",
+      "r2_key": "weapons/plasma_ring0021.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0039": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0039.png",
+      "r2_key": "weapons/plasma_ring0039.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0109": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0109.png",
+      "r2_key": "weapons/plasma_ring0109.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0085": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0085.png",
+      "r2_key": "weapons/plasma_ring0085.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0054": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0054.png",
+      "r2_key": "weapons/plasma_ring0054.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0115": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0115.png",
+      "r2_key": "weapons/plasma_ring0115.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0114": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0114.png",
+      "r2_key": "weapons/plasma_ring0114.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0082": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0082.png",
+      "r2_key": "weapons/plasma_ring0082.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0149": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0149.png",
+      "r2_key": "weapons/plasma_ring0149.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0050": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0050.png",
+      "r2_key": "weapons/plasma_ring0050.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0147": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0147.png",
+      "r2_key": "weapons/plasma_ring0147.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0084": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0084.png",
+      "r2_key": "weapons/plasma_ring0084.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0018": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0018.png",
+      "r2_key": "weapons/plasma_ring0018.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0047": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0047.png",
+      "r2_key": "weapons/plasma_ring0047.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0079": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0079.png",
+      "r2_key": "weapons/plasma_ring0079.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0064": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0064.png",
+      "r2_key": "weapons/plasma_ring0064.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0043": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0043.png",
+      "r2_key": "weapons/plasma_ring0043.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0130": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0130.png",
+      "r2_key": "weapons/plasma_ring0130.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0099": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0099.png",
+      "r2_key": "weapons/plasma_ring0099.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0136": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0136.png",
+      "r2_key": "weapons/plasma_ring0136.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0063": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0063.png",
+      "r2_key": "weapons/plasma_ring0063.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0078": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0078.png",
+      "r2_key": "weapons/plasma_ring0078.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0067": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0067.png",
+      "r2_key": "weapons/plasma_ring0067.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0150": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0150.png",
+      "r2_key": "weapons/plasma_ring0150.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0158": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0158.png",
+      "r2_key": "weapons/plasma_ring0158.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0017": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0017.png",
+      "r2_key": "weapons/plasma_ring0017.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0027": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0027.png",
+      "r2_key": "weapons/plasma_ring0027.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0119": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0119.png",
+      "r2_key": "weapons/plasma_ring0119.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0148": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0148.png",
+      "r2_key": "weapons/plasma_ring0148.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0019": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0019.png",
+      "r2_key": "weapons/plasma_ring0019.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0154": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0154.png",
+      "r2_key": "weapons/plasma_ring0154.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0057": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0057.png",
+      "r2_key": "weapons/plasma_ring0057.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0024": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0024.png",
+      "r2_key": "weapons/plasma_ring0024.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0122": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0122.png",
+      "r2_key": "weapons/plasma_ring0122.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0025": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0025.png",
+      "r2_key": "weapons/plasma_ring0025.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0102": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0102.png",
+      "r2_key": "weapons/plasma_ring0102.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0003": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0003.png",
+      "r2_key": "weapons/plasma_ring0003.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0040": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0040.png",
+      "r2_key": "weapons/plasma_ring0040.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0137": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0137.png",
+      "r2_key": "weapons/plasma_ring0137.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0045": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0045.png",
+      "r2_key": "weapons/plasma_ring0045.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0091": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0091.png",
+      "r2_key": "weapons/plasma_ring0091.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0032": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0032.png",
+      "r2_key": "weapons/plasma_ring0032.png",
+      "source": "sharedassets0.assets"
+    },
+    "warhammer40k-logo": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/warhammer40k-logo.png",
+      "r2_key": "weapons/warhammer40k-logo.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0004": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0004.png",
+      "r2_key": "weapons/plasma_ring0004.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0052": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0052.png",
+      "r2_key": "weapons/plasma_ring0052.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0093": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0093.png",
+      "r2_key": "weapons/plasma_ring0093.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0106": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0106.png",
+      "r2_key": "weapons/plasma_ring0106.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0081": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0081.png",
+      "r2_key": "weapons/plasma_ring0081.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0006": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0006.png",
+      "r2_key": "weapons/plasma_ring0006.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0069": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0069.png",
+      "r2_key": "weapons/plasma_ring0069.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0077": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0077.png",
+      "r2_key": "weapons/plasma_ring0077.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0068": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0068.png",
+      "r2_key": "weapons/plasma_ring0068.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0049": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0049.png",
+      "r2_key": "weapons/plasma_ring0049.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0110": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0110.png",
+      "r2_key": "weapons/plasma_ring0110.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0118": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0118.png",
+      "r2_key": "weapons/plasma_ring0118.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0123": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0123.png",
+      "r2_key": "weapons/plasma_ring0123.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0100": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0100.png",
+      "r2_key": "weapons/plasma_ring0100.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0097": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0097.png",
+      "r2_key": "weapons/plasma_ring0097.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0105": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0105.png",
+      "r2_key": "weapons/plasma_ring0105.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0138": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0138.png",
+      "r2_key": "weapons/plasma_ring0138.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0060": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0060.png",
+      "r2_key": "weapons/plasma_ring0060.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0153": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0153.png",
+      "r2_key": "weapons/plasma_ring0153.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0020": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0020.png",
+      "r2_key": "weapons/plasma_ring0020.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0080": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0080.png",
+      "r2_key": "weapons/plasma_ring0080.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0159": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0159.png",
+      "r2_key": "weapons/plasma_ring0159.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0090": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0090.png",
+      "r2_key": "weapons/plasma_ring0090.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0111": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0111.png",
+      "r2_key": "weapons/plasma_ring0111.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0070": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0070.png",
+      "r2_key": "weapons/plasma_ring0070.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0055": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0055.png",
+      "r2_key": "weapons/plasma_ring0055.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0092": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0092.png",
+      "r2_key": "weapons/plasma_ring0092.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0056": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0056.png",
+      "r2_key": "weapons/plasma_ring0056.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0071": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0071.png",
+      "r2_key": "weapons/plasma_ring0071.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0151": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0151.png",
+      "r2_key": "weapons/plasma_ring0151.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0005": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0005.png",
+      "r2_key": "weapons/plasma_ring0005.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0042": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0042.png",
+      "r2_key": "weapons/plasma_ring0042.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0135": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0135.png",
+      "r2_key": "weapons/plasma_ring0135.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0015": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0015.png",
+      "r2_key": "weapons/plasma_ring0015.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0048": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0048.png",
+      "r2_key": "weapons/plasma_ring0048.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0037": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0037.png",
+      "r2_key": "weapons/plasma_ring0037.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0128": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0128.png",
+      "r2_key": "weapons/plasma_ring0128.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0124": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0124.png",
+      "r2_key": "weapons/plasma_ring0124.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0074": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0074.png",
+      "r2_key": "weapons/plasma_ring0074.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0030": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0030.png",
+      "r2_key": "weapons/plasma_ring0030.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0144": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0144.png",
+      "r2_key": "weapons/plasma_ring0144.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0083": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0083.png",
+      "r2_key": "weapons/plasma_ring0083.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0031": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0031.png",
+      "r2_key": "weapons/plasma_ring0031.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0044": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0044.png",
+      "r2_key": "weapons/plasma_ring0044.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0073": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0073.png",
+      "r2_key": "weapons/plasma_ring0073.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0065": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0065.png",
+      "r2_key": "weapons/plasma_ring0065.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0104": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0104.png",
+      "r2_key": "weapons/plasma_ring0104.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0008": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0008.png",
+      "r2_key": "weapons/plasma_ring0008.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0026": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0026.png",
+      "r2_key": "weapons/plasma_ring0026.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0007": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0007.png",
+      "r2_key": "weapons/plasma_ring0007.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0087": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0087.png",
+      "r2_key": "weapons/plasma_ring0087.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0076": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0076.png",
+      "r2_key": "weapons/plasma_ring0076.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0117": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0117.png",
+      "r2_key": "weapons/plasma_ring0117.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0089": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0089.png",
+      "r2_key": "weapons/plasma_ring0089.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0029": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0029.png",
+      "r2_key": "weapons/plasma_ring0029.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0095": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0095.png",
+      "r2_key": "weapons/plasma_ring0095.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0120": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0120.png",
+      "r2_key": "weapons/plasma_ring0120.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0062": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0062.png",
+      "r2_key": "weapons/plasma_ring0062.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0157": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0157.png",
+      "r2_key": "weapons/plasma_ring0157.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0141": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0141.png",
+      "r2_key": "weapons/plasma_ring0141.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0033": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0033.png",
+      "r2_key": "weapons/plasma_ring0033.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0088": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0088.png",
+      "r2_key": "weapons/plasma_ring0088.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0016": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0016.png",
+      "r2_key": "weapons/plasma_ring0016.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0126": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0126.png",
+      "r2_key": "weapons/plasma_ring0126.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0002": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0002.png",
+      "r2_key": "weapons/plasma_ring0002.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0013": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0013.png",
+      "r2_key": "weapons/plasma_ring0013.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0059": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0059.png",
+      "r2_key": "weapons/plasma_ring0059.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0098": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0098.png",
+      "r2_key": "weapons/plasma_ring0098.png",
+      "source": "sharedassets0.assets"
+    },
+    "plasma_ring0072": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/plasma_ring0072.png",
+      "r2_key": "weapons/plasma_ring0072.png",
+      "source": "sharedassets0.assets"
+    },
+    "sactx-0-512x256-DXT5|BC3-UpgradeIconsAtlas-7fd2f92c": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/sactx-0-512x256-DXT5|BC3-UpgradeIconsAtlas-7fd2f92c.png",
+      "r2_key": "weapons/sactx-0-512x256-DXT5|BC3-UpgradeIconsAtlas-7fd2f92c.png",
+      "source": "sharedassets1.assets"
+    },
+    "BLA_WPN_HFL_HandFlamer_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/BLA_WPN_HFL_HandFlamer_N.png",
+      "r2_key": "weapons/BLA_WPN_HFL_HandFlamer_N.png",
+      "source": "sharedassets10.assets"
+    },
+    "BLA_WPN_HFL_HandFlamer_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/BLA_WPN_HFL_HandFlamer_S.png",
+      "r2_key": "weapons/BLA_WPN_HFL_HandFlamer_S.png",
+      "source": "sharedassets10.assets"
+    },
+    "BLA_WPN_HFL_HandFlamer_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/BLA_WPN_HFL_HandFlamer_E.png",
+      "r2_key": "weapons/BLA_WPN_HFL_HandFlamer_E.png",
+      "source": "sharedassets10.assets"
+    },
+    "BLA_WPN_HFL_HandFlamer_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/BLA_WPN_HFL_HandFlamer_D.png",
+      "r2_key": "weapons/BLA_WPN_HFL_HandFlamer_D.png",
+      "source": "sharedassets10.assets"
+    },
+    "ADS_WPN_PWS_PowerSword_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/ADS_WPN_PWS_PowerSword_E.png",
+      "r2_key": "weapons/ADS_WPN_PWS_PowerSword_E.png",
+      "source": "sharedassets12.assets"
+    },
+    "ADS_WPN_PWS_PowerSword_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/ADS_WPN_PWS_PowerSword_S.png",
+      "r2_key": "weapons/ADS_WPN_PWS_PowerSword_S.png",
+      "source": "sharedassets12.assets"
+    },
+    "ADS_WPN_PWS_PowerSword_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/ADS_WPN_PWS_PowerSword_N.png",
+      "r2_key": "weapons/ADS_WPN_PWS_PowerSword_N.png",
+      "source": "sharedassets12.assets"
+    },
+    "ADS_WPN_PWS_PowerSword_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/ADS_WPN_PWS_PowerSword_D.png",
+      "r2_key": "weapons/ADS_WPN_PWS_PowerSword_D.png",
+      "source": "sharedassets12.assets"
+    },
+    "prop_sword_shovel_halberd_01_d": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/prop_sword_shovel_halberd_01_d.png",
+      "r2_key": "weapons/prop_sword_shovel_halberd_01_d.png",
+      "source": "sharedassets23.assets"
+    },
+    "prop_sword_shovel_halberd_01_n": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/prop_sword_shovel_halberd_01_n.png",
+      "r2_key": "weapons/prop_sword_shovel_halberd_01_n.png",
+      "source": "sharedassets23.assets"
+    },
+    "prop_sword_shovel_halberd_01_o": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/prop_sword_shovel_halberd_01_o.png",
+      "r2_key": "weapons/prop_sword_shovel_halberd_01_o.png",
+      "source": "sharedassets23.assets"
+    },
+    "prop_sword_shovel_halberd_01_sg": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/prop_sword_shovel_halberd_01_sg.png",
+      "r2_key": "weapons/prop_sword_shovel_halberd_01_sg.png",
+      "source": "sharedassets23.assets"
+    },
+    "Prop_IG_Pickaxe_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/Prop_IG_Pickaxe_AO.png",
+      "r2_key": "weapons/Prop_IG_Pickaxe_AO.png",
+      "source": "sharedassets31.assets"
+    },
+    "Prop_IG_Pickaxe_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/Prop_IG_Pickaxe_D.png",
+      "r2_key": "weapons/Prop_IG_Pickaxe_D.png",
+      "source": "sharedassets31.assets"
+    },
+    "Prop_IG_Pickaxe_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/Prop_IG_Pickaxe_S.png",
+      "r2_key": "weapons/Prop_IG_Pickaxe_S.png",
+      "source": "sharedassets31.assets"
+    },
+    "Prop_IG_Pickaxe_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/Prop_IG_Pickaxe_N.png",
+      "r2_key": "weapons/Prop_IG_Pickaxe_N.png",
+      "source": "sharedassets31.assets"
+    },
+    "PlasmaLightning_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/PlasmaLightning_D.png",
+      "r2_key": "weapons/PlasmaLightning_D.png",
+      "source": "sharedassets37.assets"
+    },
+    "TAU_CEB_CCR_ArmsLegsGuns_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/TAU_CEB_CCR_ArmsLegsGuns_AO.png",
+      "r2_key": "weapons/TAU_CEB_CCR_ArmsLegsGuns_AO.png",
+      "source": "sharedassets39.assets"
+    },
+    "TAU_CEB_CCR_ArmsLegsGuns_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/TAU_CEB_CCR_ArmsLegsGuns_E.png",
+      "r2_key": "weapons/TAU_CEB_CCR_ArmsLegsGuns_E.png",
+      "source": "sharedassets39.assets"
+    },
+    "TAU_CEB_CCR_ArmsLegsGuns_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/TAU_CEB_CCR_ArmsLegsGuns_N.png",
+      "r2_key": "weapons/TAU_CEB_CCR_ArmsLegsGuns_N.png",
+      "source": "sharedassets39.assets"
+    },
+    "TAU_HHG_Guns_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/TAU_HHG_Guns_S.png",
+      "r2_key": "weapons/TAU_HHG_Guns_S.png",
+      "source": "sharedassets39.assets"
+    },
+    "TAU_HHG_Guns_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/TAU_HHG_Guns_E.png",
+      "r2_key": "weapons/TAU_HHG_Guns_E.png",
+      "source": "sharedassets39.assets"
+    },
+    "TAU_CEB_CCR_ArmsLegsGuns_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/TAU_CEB_CCR_ArmsLegsGuns_D.png",
+      "r2_key": "weapons/TAU_CEB_CCR_ArmsLegsGuns_D.png",
+      "source": "sharedassets39.assets"
+    },
+    "TAU_HHG_Guns_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/TAU_HHG_Guns_D.png",
+      "r2_key": "weapons/TAU_HHG_Guns_D.png",
+      "source": "sharedassets39.assets"
+    },
+    "TAU_HHG_Guns_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/TAU_HHG_Guns_N.png",
+      "r2_key": "weapons/TAU_HHG_Guns_N.png",
+      "source": "sharedassets39.assets"
+    },
+    "TAU_CEB_CCR_ArmsLegsGuns_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/TAU_CEB_CCR_ArmsLegsGuns_S.png",
+      "r2_key": "weapons/TAU_CEB_CCR_ArmsLegsGuns_S.png",
+      "source": "sharedassets39.assets"
+    },
+    "TAU_HHG_Guns_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/TAU_HHG_Guns_AO.png",
+      "r2_key": "weapons/TAU_HHG_Guns_AO.png",
+      "source": "sharedassets39.assets"
+    },
+    "Prop_FoR_Guns_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/Prop_FoR_Guns_N.png",
+      "r2_key": "weapons/Prop_FoR_Guns_N.png",
+      "source": "sharedassets52.assets"
+    },
+    "Prop_FoR_Guns_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/Prop_FoR_Guns_AO.png",
+      "r2_key": "weapons/Prop_FoR_Guns_AO.png",
+      "source": "sharedassets52.assets"
+    },
+    "Prop_FoR_Guns_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/Prop_FoR_Guns_S.png",
+      "r2_key": "weapons/Prop_FoR_Guns_S.png",
+      "source": "sharedassets52.assets"
+    },
+    "Prop_FoR_Guns_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/Prop_FoR_Guns_D.png",
+      "r2_key": "weapons/Prop_FoR_Guns_D.png",
+      "source": "sharedassets52.assets"
+    },
+    "BolterShells_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/BolterShells_N.png",
+      "r2_key": "weapons/BolterShells_N.png",
+      "source": "sharedassets9.assets"
+    },
+    "BolterShells_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/BolterShells_S.png",
+      "r2_key": "weapons/BolterShells_S.png",
+      "source": "sharedassets9.assets"
+    },
+    "BolterShells_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/BolterShells_E.png",
+      "r2_key": "weapons/BolterShells_E.png",
+      "source": "sharedassets9.assets"
+    },
+    "BolterShells_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/BolterShells_D.png",
+      "r2_key": "weapons/BolterShells_D.png",
+      "source": "sharedassets9.assets"
+    }
+  },
+  "factions": {
+    "BloodAngelsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/BloodAngelsIcon.png",
+      "r2_key": "factions/BloodAngelsIcon.png",
+      "source": "sharedassets1.assets"
+    },
+    "bloodangels color": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/bloodangels color.png",
+      "r2_key": "factions/bloodangels color.png",
+      "source": "sharedassets1.assets"
+    },
+    "3CCUI_side_column_factionSelect-BloodAngels": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/3CCUI_side_column_factionSelect-BloodAngels.png",
+      "r2_key": "factions/3CCUI_side_column_factionSelect-BloodAngels.png",
+      "source": "sharedassets1.assets"
+    },
+    "3CCUI_side_column_factionSelect-Necrons": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/3CCUI_side_column_factionSelect-Necrons.png",
+      "r2_key": "factions/3CCUI_side_column_factionSelect-Necrons.png",
+      "source": "sharedassets1.assets"
+    },
+    "3CCUI_side_column_factionSelect-BattleSisters": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/3CCUI_side_column_factionSelect-BattleSisters.png",
+      "r2_key": "factions/3CCUI_side_column_factionSelect-BattleSisters.png",
+      "source": "sharedassets1.assets"
+    },
+    "chapter03_overview": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/chapter03_overview.png",
+      "r2_key": "factions/chapter03_overview.png",
+      "source": "sharedassets1.assets"
+    },
+    "chapter04R_overview": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/chapter04R_overview.png",
+      "r2_key": "factions/chapter04R_overview.png",
+      "source": "sharedassets1.assets"
+    },
+    "Wingedskull": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Wingedskull.png",
+      "r2_key": "factions/Wingedskull.png",
+      "source": "sharedassets1.assets"
+    },
+    "Prop_TyranidCorpseSmall_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_TyranidCorpseSmall_D.png",
+      "r2_key": "factions/Prop_TyranidCorpseSmall_D.png",
+      "source": "sharedassets11.assets"
+    },
+    "Prop_TyranidCorpseSmallest_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_TyranidCorpseSmallest_N.png",
+      "r2_key": "factions/Prop_TyranidCorpseSmallest_N.png",
+      "source": "sharedassets11.assets"
+    },
+    "Prop_TyranidCorpseSmall_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_TyranidCorpseSmall_N.png",
+      "r2_key": "factions/Prop_TyranidCorpseSmall_N.png",
+      "source": "sharedassets11.assets"
+    },
+    "Prop_TyranidCorpseSmallest_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_TyranidCorpseSmallest_D.png",
+      "r2_key": "factions/Prop_TyranidCorpseSmallest_D.png",
+      "source": "sharedassets11.assets"
+    },
+    "Prop_TyranidCorpseSmallest_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_TyranidCorpseSmallest_S.png",
+      "r2_key": "factions/Prop_TyranidCorpseSmallest_S.png",
+      "source": "sharedassets11.assets"
+    },
+    "Prop_TyranidCorpseSmall_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_TyranidCorpseSmall_S.png",
+      "r2_key": "factions/Prop_TyranidCorpseSmall_S.png",
+      "source": "sharedassets11.assets"
+    },
+    "shellsTyranid_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/shellsTyranid_E.png",
+      "r2_key": "factions/shellsTyranid_E.png",
+      "source": "sharedassets12.assets"
+    },
+    "shellsTyranid_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/shellsTyranid_S.png",
+      "r2_key": "factions/shellsTyranid_S.png",
+      "source": "sharedassets12.assets"
+    },
+    "shellsTyranid_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/shellsTyranid_D.png",
+      "r2_key": "factions/shellsTyranid_D.png",
+      "source": "sharedassets12.assets"
+    },
+    "shellsTyranid_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/shellsTyranid_N.png",
+      "r2_key": "factions/shellsTyranid_N.png",
+      "source": "sharedassets12.assets"
+    },
+    "Fog soft tyranid_burrow_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Fog soft tyranid_burrow_D.png",
+      "r2_key": "factions/Fog soft tyranid_burrow_D.png",
+      "source": "sharedassets16.assets"
+    },
+    "Tyranids color": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Tyranids color.png",
+      "r2_key": "factions/Tyranids color.png",
+      "source": "sharedassets2.assets"
+    },
+    "Prop_TyranidCorpseLarge_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_TyranidCorpseLarge_S.png",
+      "r2_key": "factions/Prop_TyranidCorpseLarge_S.png",
+      "source": "sharedassets24.assets"
+    },
+    "Prop_TyranidCorpseLarge_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_TyranidCorpseLarge_D.png",
+      "r2_key": "factions/Prop_TyranidCorpseLarge_D.png",
+      "source": "sharedassets24.assets"
+    },
+    "Prop_TyranidCorpseLarge_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_TyranidCorpseLarge_N.png",
+      "r2_key": "factions/Prop_TyranidCorpseLarge_N.png",
+      "source": "sharedassets24.assets"
+    },
+    "Prop_SkullSpagetti_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_SkullSpagetti_D.png",
+      "r2_key": "factions/Prop_SkullSpagetti_D.png",
+      "source": "sharedassets26.assets"
+    },
+    "Prop_SkullSpagetti_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_SkullSpagetti_S.png",
+      "r2_key": "factions/Prop_SkullSpagetti_S.png",
+      "source": "sharedassets26.assets"
+    },
+    "Prop_SkullSpagetti_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_SkullSpagetti_N.png",
+      "r2_key": "factions/Prop_SkullSpagetti_N.png",
+      "source": "sharedassets26.assets"
+    },
+    "tt-pipeworks-joint-TeeRight-default": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-joint-TeeRight-default.png",
+      "r2_key": "factions/tt-pipeworks-joint-TeeRight-default.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-level4(platinum)-medal-disabled": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-level4(platinum)-medal-disabled.png",
+      "r2_key": "factions/tt-pipeworks-level4(platinum)-medal-disabled.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-nodePipe": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-nodePipe.png",
+      "r2_key": "factions/tt-pipeworks-nodePipe.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-joint-LeftUp-default": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-joint-LeftUp-default.png",
+      "r2_key": "factions/tt-pipeworks-joint-LeftUp-default.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-joint-RightUp-default": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-joint-RightUp-default.png",
+      "r2_key": "factions/tt-pipeworks-joint-RightUp-default.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-level1(bronze)-medal": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-level1(bronze)-medal.png",
+      "r2_key": "factions/tt-pipeworks-level1(bronze)-medal.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-lock": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-lock.png",
+      "r2_key": "factions/tt-pipeworks-lock.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-level4(platinum)-medal": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-level4(platinum)-medal.png",
+      "r2_key": "factions/tt-pipeworks-level4(platinum)-medal.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-level2(silver)-medal": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-level2(silver)-medal.png",
+      "r2_key": "factions/tt-pipeworks-level2(silver)-medal.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-joint-TeeLeft-default": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-joint-TeeLeft-default.png",
+      "r2_key": "factions/tt-pipeworks-joint-TeeLeft-default.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-anotherchaptericon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-anotherchaptericon.png",
+      "r2_key": "factions/tt-anotherchaptericon.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-joint-TeeDown-default": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-joint-TeeDown-default.png",
+      "r2_key": "factions/tt-pipeworks-joint-TeeDown-default.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-hubcap-default": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-hubcap-default.png",
+      "r2_key": "factions/tt-pipeworks-hubcap-default.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-joint-TeeUp-default": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-joint-TeeUp-default.png",
+      "r2_key": "factions/tt-pipeworks-joint-TeeUp-default.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-level2(silver)-medal-disabled": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-level2(silver)-medal-disabled.png",
+      "r2_key": "factions/tt-pipeworks-level2(silver)-medal-disabled.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-level3(gold)-medal": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-level3(gold)-medal.png",
+      "r2_key": "factions/tt-pipeworks-level3(gold)-medal.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-level5(supergold)-medal": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-level5(supergold)-medal.png",
+      "r2_key": "factions/tt-pipeworks-level5(supergold)-medal.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-joint-LeftDown-default": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-joint-LeftDown-default.png",
+      "r2_key": "factions/tt-pipeworks-joint-LeftDown-default.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-level3(gold)-medal-disabled": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-level3(gold)-medal-disabled.png",
+      "r2_key": "factions/tt-pipeworks-level3(gold)-medal-disabled.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-joint-Left45-default": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-joint-Left45-default.png",
+      "r2_key": "factions/tt-pipeworks-joint-Left45-default.png",
+      "source": "sharedassets3.assets"
+    },
+    "tt-pipeworks-joint-RightDown-default": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/tt-pipeworks-joint-RightDown-default.png",
+      "r2_key": "factions/tt-pipeworks-joint-RightDown-default.png",
+      "source": "sharedassets3.assets"
+    },
+    "Prop_Skull_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Skull_N.png",
+      "r2_key": "factions/Prop_Skull_N.png",
+      "source": "sharedassets31.assets"
+    },
+    "Prop_OrkSheets_Black_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSheets_Black_S.png",
+      "r2_key": "factions/Prop_OrkSheets_Black_S.png",
+      "source": "sharedassets31.assets"
+    },
+    "Prop_OrkSheets_Black_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSheets_Black_AO.png",
+      "r2_key": "factions/Prop_OrkSheets_Black_AO.png",
+      "source": "sharedassets31.assets"
+    },
+    "Prop_Skull_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Skull_AO.png",
+      "r2_key": "factions/Prop_Skull_AO.png",
+      "source": "sharedassets31.assets"
+    },
+    "Prop_Skull_Clean_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Skull_Clean_D.png",
+      "r2_key": "factions/Prop_Skull_Clean_D.png",
+      "source": "sharedassets31.assets"
+    },
+    "Prop_Skull_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Skull_S.png",
+      "r2_key": "factions/Prop_Skull_S.png",
+      "source": "sharedassets31.assets"
+    },
+    "Prop_OrkSheets_Black_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSheets_Black_N.png",
+      "r2_key": "factions/Prop_OrkSheets_Black_N.png",
+      "source": "sharedassets31.assets"
+    },
+    "Prop_OrkSheets_Black_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSheets_Black_D.png",
+      "r2_key": "factions/Prop_OrkSheets_Black_D.png",
+      "source": "sharedassets31.assets"
+    },
+    "Prop_Skull_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Skull_D.png",
+      "r2_key": "factions/Prop_Skull_D.png",
+      "source": "sharedassets31.assets"
+    },
+    "Prop_OrkSpire_Pallet_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSpire_Pallet_D.png",
+      "r2_key": "factions/Prop_OrkSpire_Pallet_D.png",
+      "source": "sharedassets34.assets"
+    },
+    "Prop_OrkSpire_Pallet_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSpire_Pallet_N.png",
+      "r2_key": "factions/Prop_OrkSpire_Pallet_N.png",
+      "source": "sharedassets34.assets"
+    },
+    "Prop_OrkSheets_Red_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSheets_Red_AO.png",
+      "r2_key": "factions/Prop_OrkSheets_Red_AO.png",
+      "source": "sharedassets34.assets"
+    },
+    "Prop_OrkSpire_Pallet_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSpire_Pallet_AO.png",
+      "r2_key": "factions/Prop_OrkSpire_Pallet_AO.png",
+      "source": "sharedassets34.assets"
+    },
+    "Prop_OrkSpire_Pallet_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSpire_Pallet_S.png",
+      "r2_key": "factions/Prop_OrkSpire_Pallet_S.png",
+      "source": "sharedassets34.assets"
+    },
+    "Prop_OrkSheets_Red_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSheets_Red_S.png",
+      "r2_key": "factions/Prop_OrkSheets_Red_S.png",
+      "source": "sharedassets34.assets"
+    },
+    "Prop_OrkSheets_Red_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSheets_Red_N.png",
+      "r2_key": "factions/Prop_OrkSheets_Red_N.png",
+      "source": "sharedassets34.assets"
+    },
+    "Prop_OrkSheets_Red_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSheets_Red_D.png",
+      "r2_key": "factions/Prop_OrkSheets_Red_D.png",
+      "source": "sharedassets34.assets"
+    },
+    "Prop_Necron_StairsStraight_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_StairsStraight_S.png",
+      "r2_key": "factions/Prop_Necron_StairsStraight_S.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkSheets_Yellow_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSheets_Yellow_N.png",
+      "r2_key": "factions/Prop_OrkSheets_Yellow_N.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkSheets_Yellow_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSheets_Yellow_D.png",
+      "r2_key": "factions/Prop_OrkSheets_Yellow_D.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkSandbag_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSandbag_AO.png",
+      "r2_key": "factions/Prop_OrkSandbag_AO.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkSandbag_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSandbag_S.png",
+      "r2_key": "factions/Prop_OrkSandbag_S.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkSheets_Rust_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSheets_Rust_S.png",
+      "r2_key": "factions/Prop_OrkSheets_Rust_S.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkSheets_Rust_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSheets_Rust_AO.png",
+      "r2_key": "factions/Prop_OrkSheets_Rust_AO.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkSandbag_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSandbag_N.png",
+      "r2_key": "factions/Prop_OrkSandbag_N.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkSandbag_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSandbag_D.png",
+      "r2_key": "factions/Prop_OrkSandbag_D.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkSheets_Rust_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSheets_Rust_N.png",
+      "r2_key": "factions/Prop_OrkSheets_Rust_N.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkSheets_Yellow_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSheets_Yellow_AO.png",
+      "r2_key": "factions/Prop_OrkSheets_Yellow_AO.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_Necron_StairsStraight_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_StairsStraight_D.png",
+      "r2_key": "factions/Prop_Necron_StairsStraight_D.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkSheets_Rust_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSheets_Rust_D.png",
+      "r2_key": "factions/Prop_OrkSheets_Rust_D.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_Necron_StairsStraight_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_StairsStraight_AO.png",
+      "r2_key": "factions/Prop_Necron_StairsStraight_AO.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_Necron_StairsStraight_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_StairsStraight_N.png",
+      "r2_key": "factions/Prop_Necron_StairsStraight_N.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_OrkSheets_Yellow_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSheets_Yellow_S.png",
+      "r2_key": "factions/Prop_OrkSheets_Yellow_S.png",
+      "source": "sharedassets36.assets"
+    },
+    "Prop_SkullPile_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_SkullPile_AO.png",
+      "r2_key": "factions/Prop_SkullPile_AO.png",
+      "source": "sharedassets39.assets"
+    },
+    "Prop_SkullPile_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_SkullPile_S.png",
+      "r2_key": "factions/Prop_SkullPile_S.png",
+      "source": "sharedassets39.assets"
+    },
+    "Prop_SkullPile_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_SkullPile_D.png",
+      "r2_key": "factions/Prop_SkullPile_D.png",
+      "source": "sharedassets39.assets"
+    },
+    "Prop_SkullPile_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_SkullPile_N.png",
+      "r2_key": "factions/Prop_SkullPile_N.png",
+      "source": "sharedassets39.assets"
+    },
+    "3CCUI_side_column_mapimageFactionicon-BloodAngels": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/3CCUI_side_column_mapimageFactionicon-BloodAngels.png",
+      "r2_key": "factions/3CCUI_side_column_mapimageFactionicon-BloodAngels.png",
+      "source": "sharedassets4.assets"
+    },
+    "Prop_OrkSpire_Tower_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSpire_Tower_S.png",
+      "r2_key": "factions/Prop_OrkSpire_Tower_S.png",
+      "source": "sharedassets41.assets"
+    },
+    "Prop_OrkSpire_Tower_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSpire_Tower_D.png",
+      "r2_key": "factions/Prop_OrkSpire_Tower_D.png",
+      "source": "sharedassets41.assets"
+    },
+    "PredatorDestroyed_BloodAngels_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/PredatorDestroyed_BloodAngels_D.png",
+      "r2_key": "factions/PredatorDestroyed_BloodAngels_D.png",
+      "source": "sharedassets41.assets"
+    },
+    "Prop_OrkSpire_Tower_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSpire_Tower_E.png",
+      "r2_key": "factions/Prop_OrkSpire_Tower_E.png",
+      "source": "sharedassets41.assets"
+    },
+    "PredatorDestroyed_BloodAngels_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/PredatorDestroyed_BloodAngels_S.png",
+      "r2_key": "factions/PredatorDestroyed_BloodAngels_S.png",
+      "source": "sharedassets41.assets"
+    },
+    "PredatorDestroyed_BloodAngels_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/PredatorDestroyed_BloodAngels_N.png",
+      "r2_key": "factions/PredatorDestroyed_BloodAngels_N.png",
+      "source": "sharedassets41.assets"
+    },
+    "PredatorDestroyed_BloodAngels_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/PredatorDestroyed_BloodAngels_AO.png",
+      "r2_key": "factions/PredatorDestroyed_BloodAngels_AO.png",
+      "source": "sharedassets41.assets"
+    },
+    "Prop_OrkSpire_Tower_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSpire_Tower_N.png",
+      "r2_key": "factions/Prop_OrkSpire_Tower_N.png",
+      "source": "sharedassets41.assets"
+    },
+    "Prop_OrkSpire_Tower_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_OrkSpire_Tower_AO.png",
+      "r2_key": "factions/Prop_OrkSpire_Tower_AO.png",
+      "source": "sharedassets41.assets"
+    },
+    "Prop_DropPod_BloodAngels_Doors_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_DropPod_BloodAngels_Doors_S.png",
+      "r2_key": "factions/Prop_DropPod_BloodAngels_Doors_S.png",
+      "source": "sharedassets52.assets"
+    },
+    "Prop_DropPod_BloodAngels_Doors_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_DropPod_BloodAngels_Doors_D.png",
+      "r2_key": "factions/Prop_DropPod_BloodAngels_Doors_D.png",
+      "source": "sharedassets52.assets"
+    },
+    "Prop_DropPod_BloodAngels_Body_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_DropPod_BloodAngels_Body_D.png",
+      "r2_key": "factions/Prop_DropPod_BloodAngels_Body_D.png",
+      "source": "sharedassets52.assets"
+    },
+    "BloodAngelsLogoDecalDirty_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/BloodAngelsLogoDecalDirty_S.png",
+      "r2_key": "factions/BloodAngelsLogoDecalDirty_S.png",
+      "source": "sharedassets52.assets"
+    },
+    "Prop_DropPod_BloodAngels_Body_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_DropPod_BloodAngels_Body_S.png",
+      "r2_key": "factions/Prop_DropPod_BloodAngels_Body_S.png",
+      "source": "sharedassets52.assets"
+    },
+    "Prop_DropPod_BloodAngels_Body_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_DropPod_BloodAngels_Body_N.png",
+      "r2_key": "factions/Prop_DropPod_BloodAngels_Body_N.png",
+      "source": "sharedassets52.assets"
+    },
+    "Prop_DropPod_BloodAngels_Doors_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_DropPod_BloodAngels_Doors_N.png",
+      "r2_key": "factions/Prop_DropPod_BloodAngels_Doors_N.png",
+      "source": "sharedassets52.assets"
+    },
+    "BloodAngelsLogoDecalDirty_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/BloodAngelsLogoDecalDirty_D.png",
+      "r2_key": "factions/BloodAngelsLogoDecalDirty_D.png",
+      "source": "sharedassets52.assets"
+    },
+    "Prop_Skull_LowPoly_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Skull_LowPoly_D.png",
+      "r2_key": "factions/Prop_Skull_LowPoly_D.png",
+      "source": "sharedassets53.assets"
+    },
+    "Prop_Skull_LowPoly_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Skull_LowPoly_N.png",
+      "r2_key": "factions/Prop_Skull_LowPoly_N.png",
+      "source": "sharedassets53.assets"
+    },
+    "Prop_Skull_LowPoly_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Skull_LowPoly_AO.png",
+      "r2_key": "factions/Prop_Skull_LowPoly_AO.png",
+      "source": "sharedassets53.assets"
+    },
+    "Prop_Skull_LowPoly_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Skull_LowPoly_S.png",
+      "r2_key": "factions/Prop_Skull_LowPoly_S.png",
+      "source": "sharedassets53.assets"
+    },
+    "Prop_Necron_Pyramid_Top_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Pyramid_Top_N.png",
+      "r2_key": "factions/Prop_Necron_Pyramid_Top_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_GroundCaps4_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_GroundCaps4_AO.png",
+      "r2_key": "factions/Prop_Necron_GroundCaps4_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Crate_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Crate_AO.png",
+      "r2_key": "factions/Prop_Necron_Crate_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Pyramid_Bot_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Pyramid_Bot_N.png",
+      "r2_key": "factions/Prop_Necron_Pyramid_Bot_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Column_Bottom_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Column_Bottom_S.png",
+      "r2_key": "factions/Prop_Necron_Column_Bottom_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_WarpInhibitor_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_WarpInhibitor_N.png",
+      "r2_key": "factions/Prop_Necron_WarpInhibitor_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_CraneColumn_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_CraneColumn_S.png",
+      "r2_key": "factions/Prop_Necron_CraneColumn_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Crate_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Crate_E.png",
+      "r2_key": "factions/Prop_Necron_Crate_E.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Barrel_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Barrel_D.png",
+      "r2_key": "factions/Prop_Necron_Barrel_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Staircase_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Staircase_D.png",
+      "r2_key": "factions/Prop_Necron_Staircase_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallArch_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallArch_S.png",
+      "r2_key": "factions/Prop_NecronWallArch_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Monolith_Peripherals_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Monolith_Peripherals_D.png",
+      "r2_key": "factions/Prop_Necron_Monolith_Peripherals_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Crate_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Crate_N.png",
+      "r2_key": "factions/Prop_Necron_Crate_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Necron_Column_Top_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Necron_Column_Top_AO.png",
+      "r2_key": "factions/Necron_Column_Top_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Staircase_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Staircase_N.png",
+      "r2_key": "factions/Prop_Necron_Staircase_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Crate_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Crate_D.png",
+      "r2_key": "factions/Prop_Necron_Crate_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Generator_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Generator_E.png",
+      "r2_key": "factions/Prop_Necron_Generator_E.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_ShortPylon_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_ShortPylon_AO.png",
+      "r2_key": "factions/Prop_Necron_ShortPylon_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Barrel_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Barrel_AO.png",
+      "r2_key": "factions/Prop_Necron_Barrel_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "NECRON FLOOR LOW_necronTiles_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/NECRON FLOOR LOW_necronTiles_AO.png",
+      "r2_key": "factions/NECRON FLOOR LOW_necronTiles_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_WarpInhibitor_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_WarpInhibitor_AO.png",
+      "r2_key": "factions/Prop_Necron_WarpInhibitor_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Monolith_Peripherals_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Monolith_Peripherals_AO.png",
+      "r2_key": "factions/Prop_Necron_Monolith_Peripherals_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_GroundCaps2_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_GroundCaps2_N.png",
+      "r2_key": "factions/Prop_Necron_GroundCaps2_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_GroundCaps2_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_GroundCaps2_AO.png",
+      "r2_key": "factions/Prop_Necron_GroundCaps2_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Necron_Column_Top_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Necron_Column_Top_N.png",
+      "r2_key": "factions/Necron_Column_Top_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Pyramid_Bot_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Pyramid_Bot_AO.png",
+      "r2_key": "factions/Prop_Necron_Pyramid_Bot_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallLong_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallLong_N.png",
+      "r2_key": "factions/Prop_NecronWallLong_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_GroundCaps3_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_GroundCaps3_S.png",
+      "r2_key": "factions/Prop_Necron_GroundCaps3_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallCorner_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallCorner_S.png",
+      "r2_key": "factions/Prop_NecronWallCorner_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Entrance2_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Entrance2_N.png",
+      "r2_key": "factions/Prop_Necron_Entrance2_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Column_Bottom_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Column_Bottom_D.png",
+      "r2_key": "factions/Prop_Necron_Column_Bottom_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_GroundCaps1_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_GroundCaps1_AO.png",
+      "r2_key": "factions/Prop_Necron_GroundCaps1_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "NecronGlyphAlpha_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/NecronGlyphAlpha_D.png",
+      "r2_key": "factions/NecronGlyphAlpha_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Monolith_Externals_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Monolith_Externals_E.png",
+      "r2_key": "factions/Prop_Necron_Monolith_Externals_E.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallArch_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallArch_AO.png",
+      "r2_key": "factions/Prop_NecronWallArch_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_GroundCaps1_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_GroundCaps1_D.png",
+      "r2_key": "factions/Prop_Necron_GroundCaps1_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Monolith_Externals_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Monolith_Externals_D.png",
+      "r2_key": "factions/Prop_Necron_Monolith_Externals_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Staircase_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Staircase_AO.png",
+      "r2_key": "factions/Prop_Necron_Staircase_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "NECRON FLOOR LOW_necronTiles_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/NECRON FLOOR LOW_necronTiles_D.png",
+      "r2_key": "factions/NECRON FLOOR LOW_necronTiles_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_StairsInvertedCorner_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_StairsInvertedCorner_D.png",
+      "r2_key": "factions/Prop_Necron_StairsInvertedCorner_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_GroundCaps2_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_GroundCaps2_S.png",
+      "r2_key": "factions/Prop_Necron_GroundCaps2_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_GroundCaps3_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_GroundCaps3_AO.png",
+      "r2_key": "factions/Prop_Necron_GroundCaps3_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Monolith_Internals_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Monolith_Internals_AO.png",
+      "r2_key": "factions/Prop_Necron_Monolith_Internals_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Pyramid_Top_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Pyramid_Top_S.png",
+      "r2_key": "factions/Prop_Necron_Pyramid_Top_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Pyramid_Top_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Pyramid_Top_E.png",
+      "r2_key": "factions/Prop_Necron_Pyramid_Top_E.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_CraneColumn_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_CraneColumn_D.png",
+      "r2_key": "factions/Prop_Necron_CraneColumn_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallShort_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallShort_D.png",
+      "r2_key": "factions/Prop_NecronWallShort_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Entrance2_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Entrance2_D.png",
+      "r2_key": "factions/Prop_Necron_Entrance2_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Pyramid_Bot_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Pyramid_Bot_E.png",
+      "r2_key": "factions/Prop_Necron_Pyramid_Bot_E.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_CrownedObelisk_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_CrownedObelisk_S.png",
+      "r2_key": "factions/Prop_Necron_CrownedObelisk_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Entrance1_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Entrance1_AO.png",
+      "r2_key": "factions/Prop_Necron_Entrance1_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Necron_Column_Top_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Necron_Column_Top_D.png",
+      "r2_key": "factions/Necron_Column_Top_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallShort_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallShort_AO.png",
+      "r2_key": "factions/Prop_NecronWallShort_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_GroundCaps3_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_GroundCaps3_D.png",
+      "r2_key": "factions/Prop_Necron_GroundCaps3_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Pyramid_Bot_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Pyramid_Bot_S.png",
+      "r2_key": "factions/Prop_Necron_Pyramid_Bot_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_StairsInvertedCorner_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_StairsInvertedCorner_AO.png",
+      "r2_key": "factions/Prop_Necron_StairsInvertedCorner_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Monolith_Externals_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Monolith_Externals_N.png",
+      "r2_key": "factions/Prop_Necron_Monolith_Externals_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallArch_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallArch_D.png",
+      "r2_key": "factions/Prop_NecronWallArch_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Pyramid_Bot_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Pyramid_Bot_D.png",
+      "r2_key": "factions/Prop_Necron_Pyramid_Bot_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallShort_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallShort_N.png",
+      "r2_key": "factions/Prop_NecronWallShort_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "NECRON FLOOR LOW_necronTiles_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/NECRON FLOOR LOW_necronTiles_N.png",
+      "r2_key": "factions/NECRON FLOOR LOW_necronTiles_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Entrance1_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Entrance1_S.png",
+      "r2_key": "factions/Prop_Necron_Entrance1_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallColumnCorner_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallColumnCorner_D.png",
+      "r2_key": "factions/Prop_NecronWallColumnCorner_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Barrel_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Barrel_E.png",
+      "r2_key": "factions/Prop_Necron_Barrel_E.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Generator_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Generator_D.png",
+      "r2_key": "factions/Prop_Necron_Generator_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Barrel_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Barrel_N.png",
+      "r2_key": "factions/Prop_Necron_Barrel_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_WarpInhibitor_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_WarpInhibitor_S.png",
+      "r2_key": "factions/Prop_Necron_WarpInhibitor_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Trim_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Trim_S.png",
+      "r2_key": "factions/Prop_Necron_Trim_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Monolith_Internals_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Monolith_Internals_S.png",
+      "r2_key": "factions/Prop_Necron_Monolith_Internals_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Trim_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Trim_AO.png",
+      "r2_key": "factions/Prop_Necron_Trim_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_ShortPylon_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_ShortPylon_E.png",
+      "r2_key": "factions/Prop_Necron_ShortPylon_E.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallColumnCorner_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallColumnCorner_N.png",
+      "r2_key": "factions/Prop_NecronWallColumnCorner_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Generator_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Generator_N.png",
+      "r2_key": "factions/Prop_Necron_Generator_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallColumnCorner_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallColumnCorner_AO.png",
+      "r2_key": "factions/Prop_NecronWallColumnCorner_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Monolith_Internals_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Monolith_Internals_E.png",
+      "r2_key": "factions/Prop_Necron_Monolith_Internals_E.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Staircase_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Staircase_S.png",
+      "r2_key": "factions/Prop_Necron_Staircase_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_GroundCaps4_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_GroundCaps4_N.png",
+      "r2_key": "factions/Prop_Necron_GroundCaps4_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Column_Bottom_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Column_Bottom_AO.png",
+      "r2_key": "factions/Prop_Necron_Column_Bottom_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Necron_Column_Top_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Necron_Column_Top_S.png",
+      "r2_key": "factions/Necron_Column_Top_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallCorner_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallCorner_N.png",
+      "r2_key": "factions/Prop_NecronWallCorner_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Entrance1_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Entrance1_N.png",
+      "r2_key": "factions/Prop_Necron_Entrance1_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Necronpipes_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Necronpipes_S.png",
+      "r2_key": "factions/Necronpipes_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Entrance2_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Entrance2_AO.png",
+      "r2_key": "factions/Prop_Necron_Entrance2_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_GroundCaps3_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_GroundCaps3_N.png",
+      "r2_key": "factions/Prop_Necron_GroundCaps3_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Pyramid_Top_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Pyramid_Top_AO.png",
+      "r2_key": "factions/Prop_Necron_Pyramid_Top_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallLong_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallLong_AO.png",
+      "r2_key": "factions/Prop_NecronWallLong_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Pyramid_Top_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Pyramid_Top_D.png",
+      "r2_key": "factions/Prop_Necron_Pyramid_Top_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_StairsCorner_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_StairsCorner_D.png",
+      "r2_key": "factions/Prop_Necron_StairsCorner_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_GroundCaps1_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_GroundCaps1_N.png",
+      "r2_key": "factions/Prop_Necron_GroundCaps1_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_ShortPylon_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_ShortPylon_N.png",
+      "r2_key": "factions/Prop_Necron_ShortPylon_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Monolith_Peripherals_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Monolith_Peripherals_S.png",
+      "r2_key": "factions/Prop_Necron_Monolith_Peripherals_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_WarpInhibitor_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_WarpInhibitor_E.png",
+      "r2_key": "factions/Prop_Necron_WarpInhibitor_E.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Column_Bottom_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Column_Bottom_E.png",
+      "r2_key": "factions/Prop_Necron_Column_Bottom_E.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallLong_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallLong_D.png",
+      "r2_key": "factions/Prop_NecronWallLong_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_CrownedObelisk_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_CrownedObelisk_D.png",
+      "r2_key": "factions/Prop_Necron_CrownedObelisk_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallCorner_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallCorner_AO.png",
+      "r2_key": "factions/Prop_NecronWallCorner_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Monolith_Peripherals_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Monolith_Peripherals_E.png",
+      "r2_key": "factions/Prop_Necron_Monolith_Peripherals_E.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallShort_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallShort_S.png",
+      "r2_key": "factions/Prop_NecronWallShort_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Monolith_Internals_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Monolith_Internals_N.png",
+      "r2_key": "factions/Prop_Necron_Monolith_Internals_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Crate_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Crate_S.png",
+      "r2_key": "factions/Prop_Necron_Crate_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Monolith_Peripherals_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Monolith_Peripherals_N.png",
+      "r2_key": "factions/Prop_Necron_Monolith_Peripherals_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_ShortPylon_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_ShortPylon_S.png",
+      "r2_key": "factions/Prop_Necron_ShortPylon_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Trim_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Trim_N.png",
+      "r2_key": "factions/Prop_Necron_Trim_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Column_Bottom_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Column_Bottom_N.png",
+      "r2_key": "factions/Prop_Necron_Column_Bottom_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_StairsCorner_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_StairsCorner_S.png",
+      "r2_key": "factions/Prop_Necron_StairsCorner_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_GroundCaps4_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_GroundCaps4_S.png",
+      "r2_key": "factions/Prop_Necron_GroundCaps4_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_GroundCaps4_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_GroundCaps4_D.png",
+      "r2_key": "factions/Prop_Necron_GroundCaps4_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_GroundCaps1_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_GroundCaps1_S.png",
+      "r2_key": "factions/Prop_Necron_GroundCaps1_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallArch_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallArch_N.png",
+      "r2_key": "factions/Prop_NecronWallArch_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_StairsCorner_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_StairsCorner_N.png",
+      "r2_key": "factions/Prop_Necron_StairsCorner_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_CrownedObelisk_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_CrownedObelisk_AO.png",
+      "r2_key": "factions/Prop_Necron_CrownedObelisk_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_CrownedObelisk_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_CrownedObelisk_N.png",
+      "r2_key": "factions/Prop_Necron_CrownedObelisk_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Trim_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Trim_D.png",
+      "r2_key": "factions/Prop_Necron_Trim_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallCorner_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallCorner_D.png",
+      "r2_key": "factions/Prop_NecronWallCorner_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_WarpInhibitor_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_WarpInhibitor_D.png",
+      "r2_key": "factions/Prop_Necron_WarpInhibitor_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_CraneColumn_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_CraneColumn_E.png",
+      "r2_key": "factions/Prop_Necron_CraneColumn_E.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_GroundCaps2_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_GroundCaps2_D.png",
+      "r2_key": "factions/Prop_Necron_GroundCaps2_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Monolith_Externals_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Monolith_Externals_S.png",
+      "r2_key": "factions/Prop_Necron_Monolith_Externals_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_StairsCorner_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_StairsCorner_AO.png",
+      "r2_key": "factions/Prop_Necron_StairsCorner_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallColumnCorner_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallColumnCorner_S.png",
+      "r2_key": "factions/Prop_NecronWallColumnCorner_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Entrance1_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Entrance1_D.png",
+      "r2_key": "factions/Prop_Necron_Entrance1_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_CraneColumn_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_CraneColumn_AO.png",
+      "r2_key": "factions/Prop_Necron_CraneColumn_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_CrownedObelisk_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_CrownedObelisk_E.png",
+      "r2_key": "factions/Prop_Necron_CrownedObelisk_E.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Monolith_Internals_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Monolith_Internals_D.png",
+      "r2_key": "factions/Prop_Necron_Monolith_Internals_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Monolith_Externals_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Monolith_Externals_AO.png",
+      "r2_key": "factions/Prop_Necron_Monolith_Externals_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_CraneColumn_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_CraneColumn_N.png",
+      "r2_key": "factions/Prop_Necron_CraneColumn_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_StairsInvertedCorner_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_StairsInvertedCorner_S.png",
+      "r2_key": "factions/Prop_Necron_StairsInvertedCorner_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_StairsInvertedCorner_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_StairsInvertedCorner_N.png",
+      "r2_key": "factions/Prop_Necron_StairsInvertedCorner_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Entrance2_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Entrance2_S.png",
+      "r2_key": "factions/Prop_Necron_Entrance2_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Barrel_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Barrel_S.png",
+      "r2_key": "factions/Prop_Necron_Barrel_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_NecronWallLong_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_NecronWallLong_S.png",
+      "r2_key": "factions/Prop_NecronWallLong_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Generator_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Generator_S.png",
+      "r2_key": "factions/Prop_Necron_Generator_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_ShortPylon_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_ShortPylon_D.png",
+      "r2_key": "factions/Prop_Necron_ShortPylon_D.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_Necron_Generator_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_Necron_Generator_AO.png",
+      "r2_key": "factions/Prop_Necron_Generator_AO.png",
+      "source": "sharedassets54.assets"
+    },
+    "NECRON FLOOR LOW_necronTiles_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/NECRON FLOOR LOW_necronTiles_S.png",
+      "r2_key": "factions/NECRON FLOOR LOW_necronTiles_S.png",
+      "source": "sharedassets54.assets"
+    },
+    "Necronpipes_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Necronpipes_N.png",
+      "r2_key": "factions/Necronpipes_N.png",
+      "source": "sharedassets54.assets"
+    },
+    "Prop_SkullAltar_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_SkullAltar_D.png",
+      "r2_key": "factions/Prop_SkullAltar_D.png",
+      "source": "sharedassets57.assets"
+    },
+    "Prop_SkullAltar_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_SkullAltar_AO.png",
+      "r2_key": "factions/Prop_SkullAltar_AO.png",
+      "source": "sharedassets57.assets"
+    },
+    "Prop_SkullAltar_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_SkullAltar_N.png",
+      "r2_key": "factions/Prop_SkullAltar_N.png",
+      "source": "sharedassets57.assets"
+    },
+    "Prop_SkullAltar_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_SkullAltar_S.png",
+      "r2_key": "factions/Prop_SkullAltar_S.png",
+      "source": "sharedassets57.assets"
+    },
+    "chapter01_overview": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/chapter01_overview.png",
+      "r2_key": "factions/chapter01_overview.png",
+      "source": "sharedassets6.assets"
+    },
+    "chapter10_overview": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/chapter10_overview.png",
+      "r2_key": "factions/chapter10_overview.png",
+      "source": "sharedassets6.assets"
+    },
+    "chapter04_overview": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/chapter04_overview.png",
+      "r2_key": "factions/chapter04_overview.png",
+      "source": "sharedassets6.assets"
+    },
+    "chapter07_overview": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/chapter07_overview.png",
+      "r2_key": "factions/chapter07_overview.png",
+      "source": "sharedassets6.assets"
+    },
+    "chapter05_overview": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/chapter05_overview.png",
+      "r2_key": "factions/chapter05_overview.png",
+      "source": "sharedassets6.assets"
+    },
+    "chapter11_overview": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/chapter11_overview.png",
+      "r2_key": "factions/chapter11_overview.png",
+      "source": "sharedassets6.assets"
+    },
+    "chapter09_overview": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/chapter09_overview.png",
+      "r2_key": "factions/chapter09_overview.png",
+      "source": "sharedassets6.assets"
+    },
+    "chapter06_overview": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/chapter06_overview.png",
+      "r2_key": "factions/chapter06_overview.png",
+      "source": "sharedassets6.assets"
+    },
+    "chapter02_overview": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/chapter02_overview.png",
+      "r2_key": "factions/chapter02_overview.png",
+      "source": "sharedassets6.assets"
+    },
+    "chapter08_overview": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/chapter08_overview.png",
+      "r2_key": "factions/chapter08_overview.png",
+      "source": "sharedassets6.assets"
+    },
+    "chapter12_overview": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/chapter12_overview.png",
+      "r2_key": "factions/chapter12_overview.png",
+      "source": "sharedassets6.assets"
+    },
+    "BigSkullPileBaked_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/BigSkullPileBaked_AO.png",
+      "r2_key": "factions/BigSkullPileBaked_AO.png",
+      "source": "sharedassets62.assets"
+    },
+    "BigSkullPileBaked_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/BigSkullPileBaked_D.png",
+      "r2_key": "factions/BigSkullPileBaked_D.png",
+      "source": "sharedassets62.assets"
+    },
+    "BigSkullPileBaked_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/BigSkullPileBaked_N.png",
+      "r2_key": "factions/BigSkullPileBaked_N.png",
+      "source": "sharedassets62.assets"
+    },
+    "BigSkullPileBaked_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/BigSkullPileBaked_S.png",
+      "r2_key": "factions/BigSkullPileBaked_S.png",
+      "source": "sharedassets62.assets"
+    },
+    "Necron tle_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Necron tle_S.png",
+      "r2_key": "factions/Necron tle_S.png",
+      "source": "sharedassets66.assets"
+    },
+    "playerskullBanner": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/playerskullBanner.png",
+      "r2_key": "factions/playerskullBanner.png",
+      "source": "sharedassets66.assets"
+    },
+    "Necron tle_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Necron tle_D.png",
+      "r2_key": "factions/Necron tle_D.png",
+      "source": "sharedassets66.assets"
+    },
+    "skullRailTop tile": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/skullRailTop tile.png",
+      "r2_key": "factions/skullRailTop tile.png",
+      "source": "sharedassets66.assets"
+    },
+    "skullRailbot": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/skullRailbot.png",
+      "r2_key": "factions/skullRailbot.png",
+      "source": "sharedassets66.assets"
+    },
+    "Necron tle_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Necron tle_N.png",
+      "r2_key": "factions/Necron tle_N.png",
+      "source": "sharedassets66.assets"
+    },
+    "Necron tle_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Necron tle_AO.png",
+      "r2_key": "factions/Necron tle_AO.png",
+      "source": "sharedassets66.assets"
+    },
+    "Prop_ServoSkulls_S": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_ServoSkulls_S.png",
+      "r2_key": "factions/Prop_ServoSkulls_S.png",
+      "source": "sharedassets69.assets"
+    },
+    "Prop_ServoSkulls_N": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_ServoSkulls_N.png",
+      "r2_key": "factions/Prop_ServoSkulls_N.png",
+      "source": "sharedassets69.assets"
+    },
+    "Prop_ServoSkulls_E": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_ServoSkulls_E.png",
+      "r2_key": "factions/Prop_ServoSkulls_E.png",
+      "source": "sharedassets69.assets"
+    },
+    "Prop_ServoSkulls_D": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_ServoSkulls_D.png",
+      "r2_key": "factions/Prop_ServoSkulls_D.png",
+      "source": "sharedassets69.assets"
+    },
+    "Prop_ServoSkulls_AO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/Prop_ServoSkulls_AO.png",
+      "r2_key": "factions/Prop_ServoSkulls_AO.png",
+      "source": "sharedassets69.assets"
+    },
+    "3CCUI_side_column_factionSelect-Orks": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/3CCUI_side_column_factionSelect-Orks.png",
+      "r2_key": "factions/3CCUI_side_column_factionSelect-Orks.png",
+      "source": "sharedassets71.assets"
+    }
+  },
+  "icons": {},
+  "other": {}
+}

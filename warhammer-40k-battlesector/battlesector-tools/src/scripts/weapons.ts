@@ -1,6 +1,6 @@
 // Client-side filtering/sorting for the weapons browser.
 
-import { applyI18n } from './i18n';
+import { applyI18n, tf } from './i18n';
 
 type SortKey = 'name' | 'damage-desc' | 'damage-asc' | 'acc-desc';
 
@@ -65,7 +65,12 @@ export function initWeaponsBrowser(): void {
       .sort((a, b) => compare(a, b, (sort?.value as SortKey) ?? 'name'));
     for (const c of ordered) grid?.appendChild(c);
 
-    if (count) count.textContent = `${visible} of ${cards.length} weapons`;
+    if (count) {
+      count.textContent = tf('common.count.weaponsVisible', {
+        visible,
+        total: cards.length,
+      });
+    }
     empty?.classList.toggle('hidden', visible !== 0);
     syncUrl();
   }

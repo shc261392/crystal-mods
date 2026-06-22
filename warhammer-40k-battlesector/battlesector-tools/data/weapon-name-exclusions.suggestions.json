@@ -1,0 +1,493 @@
+{
+  "locale": "zh-TW",
+  "generatedAt": "2026-06-22T07:40:15.970Z",
+  "candidateCount": 81,
+  "candidates": [
+    {
+      "id": 1039,
+      "nameId": 1032,
+      "canonicalName": "Spore Mine Launcher",
+      "localized": "{0}護甲"
+    },
+    {
+      "id": 1040,
+      "nameId": 1037,
+      "canonicalName": "Flamespurt",
+      "localized": "比賽人數已滿."
+    },
+    {
+      "id": 1042,
+      "nameId": 1037,
+      "canonicalName": "Flamespurt",
+      "localized": "比賽人數已滿."
+    },
+    {
+      "id": 2031,
+      "nameId": 1272,
+      "canonicalName": "Castigator Battlecannon",
+      "localized": "{0}未使用動作勢能懲罰"
+    },
+    {
+      "id": 5032,
+      "nameId": 1277,
+      "canonicalName": "Snagga Klaw",
+      "localized": "AI徵召"
+    },
+    {
+      "id": 5033,
+      "nameId": 1278,
+      "canonicalName": "Boomstikks",
+      "localized": "影響不同任務中AI能夠招募的單位數量."
+    },
+    {
+      "id": 5035,
+      "nameId": 1283,
+      "canonicalName": "Kustom Shokk Rifle",
+      "localized": "<b>奪取並控制</b><br>進攻方佔領控制區, 防守方消滅進攻方"
+    },
+    {
+      "id": 5037,
+      "nameId": 1284,
+      "canonicalName": "Saw Blades",
+      "localized": "<b>奪取並控制</b><br>佔領控制區."
+    },
+    {
+      "id": 5039,
+      "nameId": 1286,
+      "canonicalName": "Burna Exhausts",
+      "localized": "啟用. +{0}動作點數"
+    },
+    {
+      "id": 7002,
+      "nameId": 1061,
+      "canonicalName": "Power Fist",
+      "localized": "你的部隊尚未整合. 該遊戲需要整合後的單位."
+    },
+    {
+      "id": 7003,
+      "nameId": 1062,
+      "canonicalName": "Lasgun with Bayonet",
+      "localized": "該部隊已整合完畢, 每個單位在戰鬥中都將獲得勢能加成."
+    },
+    {
+      "id": 7004,
+      "nameId": 1063,
+      "canonicalName": "Ripper Gun Bayonet",
+      "localized": "該部隊不符合當前整合設定, 因此將不會在戰鬥中獲得勢能加成. 減少如下單位即可調整."
+    },
+    {
+      "id": 7005,
+      "nameId": 1064,
+      "canonicalName": "Force Stave",
+      "localized": "部隊點數上限"
+    },
+    {
+      "id": 7007,
+      "nameId": 1065,
+      "canonicalName": "Laspistol",
+      "localized": "儲存部隊"
+    },
+    {
+      "id": 7009,
+      "nameId": 1066,
+      "canonicalName": "Ripper Gun",
+      "localized": "需要整合後的部隊"
+    },
+    {
+      "id": 7010,
+      "nameId": 1067,
+      "canonicalName": "Lasgun",
+      "localized": "AI部隊超過最大部隊限制"
+    },
+    {
+      "id": 7011,
+      "nameId": 1068,
+      "canonicalName": "Hot-Shot Lasgun",
+      "localized": "AI部隊未整合. 該比賽需要整合後的部隊."
+    },
+    {
+      "id": 7012,
+      "nameId": 1069,
+      "canonicalName": "Hot-Shot Volleygun",
+      "localized": "玩家1部隊超過最大部隊限制"
+    },
+    {
+      "id": 7013,
+      "nameId": 1070,
+      "canonicalName": "Leman Russ Battle Cannon",
+      "localized": "玩家1部隊未整合. 該比賽需要整合後的部隊."
+    },
+    {
+      "id": 7014,
+      "nameId": 1071,
+      "canonicalName": "Lascannon",
+      "localized": "玩家2部隊超過最大部隊限制"
+    },
+    {
+      "id": 7018,
+      "nameId": 1072,
+      "canonicalName": "Plasma Cannon",
+      "localized": "玩家2部隊未整合. 該比賽需要整合後的部隊."
+    },
+    {
+      "id": 7019,
+      "nameId": 1073,
+      "canonicalName": "Autocannon",
+      "localized": "無效的使用者名稱"
+    },
+    {
+      "id": 7020,
+      "nameId": 1074,
+      "canonicalName": "Missile Launcher (Frag)",
+      "localized": "無法透過網路驗證使用者名稱"
+    },
+    {
+      "id": 7021,
+      "nameId": 1075,
+      "canonicalName": "Missile Launcher (Krak)",
+      "localized": "正在驗證使用者名稱…"
+    },
+    {
+      "id": 7022,
+      "nameId": 1076,
+      "canonicalName": "Militarum Multi-Laser",
+      "localized": "使用者名稱無效. 請檢查你的輸入內容. 你可以聯絡support@slitherine.co.uk申請更改使用者名稱."
+    },
+    {
+      "id": 7026,
+      "nameId": 1080,
+      "canonicalName": "Castigator Gatling Cannon",
+      "localized": "錦標賽比賽"
+    },
+    {
+      "id": 7028,
+      "nameId": 1082,
+      "canonicalName": "Heavy Stubbers",
+      "localized": "獲勝者將根據其部隊的點數值和未比賽的回合數獲得對應的獎勵."
+    },
+    {
+      "id": 7029,
+      "nameId": 1083,
+      "canonicalName": "Demolisher Battle Cannon",
+      "localized": "刪除已儲存的遊戲?"
+    },
+    {
+      "id": 7030,
+      "nameId": 1084,
+      "canonicalName": "Vanquisher Battle Cannon",
+      "localized": "確認刪除\"{0}\"?<br>{1} - {2}"
+    },
+    {
+      "id": 7031,
+      "nameId": 1085,
+      "canonicalName": "Punisher Gatling Cannon",
+      "localized": "儲存檔案中包含未啟用的附加單位."
+    },
+    {
+      "id": 7032,
+      "nameId": 1076,
+      "canonicalName": "Militarum Multi-Laser",
+      "localized": "使用者名稱無效. 請檢查你的輸入內容. 你可以聯絡support@slitherine.co.uk申請更改使用者名稱."
+    },
+    {
+      "id": 7033,
+      "nameId": 1174,
+      "canonicalName": "Bayonet",
+      "localized": "所有的動作都已執行. 現在可以結束你的回合."
+    },
+    {
+      "id": 7034,
+      "nameId": 1171,
+      "canonicalName": "Dozer Blade",
+      "localized": "附近有一支由敵人控制的輔助部隊. 佔領它以增加你的部隊上限."
+    },
+    {
+      "id": 7037,
+      "nameId": 1071,
+      "canonicalName": "Lascannon",
+      "localized": "玩家2部隊超過最大部隊限制"
+    },
+    {
+      "id": 7038,
+      "nameId": 1072,
+      "canonicalName": "Plasma Cannon",
+      "localized": "玩家2部隊未整合. 該比賽需要整合後的部隊."
+    },
+    {
+      "id": 7043,
+      "nameId": 1076,
+      "canonicalName": "Militarum Multi-Laser",
+      "localized": "使用者名稱無效. 請檢查你的輸入內容. 你可以聯絡support@slitherine.co.uk申請更改使用者名稱."
+    },
+    {
+      "id": 7046,
+      "nameId": 1065,
+      "canonicalName": "Laspistol",
+      "localized": "儲存部隊"
+    },
+    {
+      "id": 7047,
+      "nameId": 1070,
+      "canonicalName": "Leman Russ Battle Cannon",
+      "localized": "玩家1部隊未整合. 該比賽需要整合後的部隊."
+    },
+    {
+      "id": 8000,
+      "nameId": 1305,
+      "canonicalName": "Accursed Chainaxe",
+      "localized": "建立新地圖"
+    },
+    {
+      "id": 8001,
+      "nameId": 1306,
+      "canonicalName": "Accursed Maul",
+      "localized": "地圖生成器"
+    },
+    {
+      "id": 8008,
+      "nameId": 1313,
+      "canonicalName": "Autopistol",
+      "localized": "{0}遠端傷害每勢能"
+    },
+    {
+      "id": 8009,
+      "nameId": 1314,
+      "canonicalName": "Autostubbers",
+      "localized": "{0}對該單位遠端準確度"
+    },
+    {
+      "id": 8010,
+      "nameId": 1315,
+      "canonicalName": "Heavy Autostubbers",
+      "localized": "{0}對該單位準確度遞減"
+    },
+    {
+      "id": 8011,
+      "nameId": 1316,
+      "canonicalName": "Boltgun",
+      "localized": "適用於{0}格範圍內"
+    },
+    {
+      "id": 8012,
+      "nameId": 1061,
+      "canonicalName": "Power Fist",
+      "localized": "你的部隊尚未整合. 該遊戲需要整合後的單位."
+    },
+    {
+      "id": 8013,
+      "nameId": 1317,
+      "canonicalName": "Combi-Flamer",
+      "localized": "我的地圖"
+    },
+    {
+      "id": 8014,
+      "nameId": 1318,
+      "canonicalName": "Combi-Plasma",
+      "localized": "已下載地圖"
+    },
+    {
+      "id": 8015,
+      "nameId": 1316,
+      "canonicalName": "Boltgun",
+      "localized": "適用於{0}格範圍內"
+    },
+    {
+      "id": 8020,
+      "nameId": 1322,
+      "canonicalName": "Astartes Chainsword",
+      "localized": "確定刪除\"{0}\"嗎?"
+    },
+    {
+      "id": 8022,
+      "nameId": 1324,
+      "canonicalName": "Havoc Missile Launcher (Frag)",
+      "localized": "輸入更新日誌以告訴其他玩家此版本中的新增內容."
+    },
+    {
+      "id": 8023,
+      "nameId": 1325,
+      "canonicalName": "Havoc Reaper Chaincannon",
+      "localized": "地圖詳情"
+    },
+    {
+      "id": 8029,
+      "nameId": 1072,
+      "canonicalName": "Plasma Cannon",
+      "localized": "玩家2部隊未整合. 該比賽需要整合後的部隊."
+    },
+    {
+      "id": 8030,
+      "nameId": 1329,
+      "canonicalName": "Crushing Fist",
+      "localized": "地圖釋出成功."
+    },
+    {
+      "id": 8031,
+      "nameId": 1330,
+      "canonicalName": "Fleshmetal Guns - Meltagun",
+      "localized": "未安裝自定義地圖:<br>{0}"
+    },
+    {
+      "id": 8032,
+      "nameId": 1331,
+      "canonicalName": "Fleshmetal Guns - Heavy Plasma",
+      "localized": "未找到本地地圖:<br>{0}"
+    },
+    {
+      "id": 8034,
+      "nameId": 1333,
+      "canonicalName": "Soulflayer Tendrils",
+      "localized": "{0}格可用"
+    },
+    {
+      "id": 9000,
+      "nameId": 1488,
+      "canonicalName": "Relic Blade",
+      "localized": "{0}命中率"
+    },
+    {
+      "id": 9004,
+      "nameId": 1478,
+      "canonicalName": "Reductor Pistol",
+      "localized": "退出表格將清除所有資料. 是否確定?"
+    },
+    {
+      "id": 9007,
+      "nameId": 1508,
+      "canonicalName": "Occulus Bolt Carbine",
+      "localized": "已獲得目標分數. 玩家2補償得分:"
+    },
+    {
+      "id": 9009,
+      "nameId": 1506,
+      "canonicalName": "Heavy Bolt Rifle",
+      "localized": "已守衛控制區"
+    },
+    {
+      "id": 9010,
+      "nameId": 1486,
+      "canonicalName": "Master-crafted Power Sword",
+      "localized": "受到攻擊時有{0}的機率被擦傷, 每勢能"
+    },
+    {
+      "id": 9015,
+      "nameId": 1061,
+      "canonicalName": "Power Fist",
+      "localized": "你的部隊尚未整合. 該遊戲需要整合後的單位."
+    },
+    {
+      "id": 9017,
+      "nameId": 1514,
+      "canonicalName": "Onslaught Gatling Cannon",
+      "localized": "{0}指揮點數粒子獲取"
+    },
+    {
+      "id": 9025,
+      "nameId": 1496,
+      "canonicalName": "Melta Rifle",
+      "localized": "按{0}以進入拍照模式"
+    },
+    {
+      "id": 9027,
+      "nameId": 1493,
+      "canonicalName": "Bolt Sniper Rifle",
+      "localized": "部隊點數"
+    },
+    {
+      "id": 9029,
+      "nameId": 1511,
+      "canonicalName": "Macro Plasma Incinerator",
+      "localized": "這裡遭到混沌腐化, 如今已成為黑色軍團繼續對帝國發動遠徵的據點."
+    },
+    {
+      "id": 9033,
+      "nameId": 1514,
+      "canonicalName": "Onslaught Gatling Cannon",
+      "localized": "{0}指揮點數粒子獲取"
+    },
+    {
+      "id": 9035,
+      "nameId": 1484,
+      "canonicalName": "Twin Storm Bolter",
+      "localized": "回合結束時對所有單位造成{0}點傷害"
+    },
+    {
+      "id": 9036,
+      "nameId": 1481,
+      "canonicalName": "Ballistus Missile Launcher",
+      "localized": "無法傳送. 提交前請填寫所有內容"
+    },
+    {
+      "id": 9037,
+      "nameId": 1481,
+      "canonicalName": "Ballistus Missile Launcher",
+      "localized": "無法傳送. 提交前請填寫所有內容"
+    },
+    {
+      "id": 9039,
+      "nameId": 1484,
+      "canonicalName": "Twin Storm Bolter",
+      "localized": "回合結束時對所有單位造成{0}點傷害"
+    },
+    {
+      "id": 9043,
+      "nameId": 1504,
+      "canonicalName": "Tempest Bolter",
+      "localized": "已獲得分數 (自回合{0})"
+    },
+    {
+      "id": 9046,
+      "nameId": 1491,
+      "canonicalName": "Crozius Arcanum",
+      "localized": "擦傷機率: {0}"
+    },
+    {
+      "id": 9048,
+      "nameId": 1322,
+      "canonicalName": "Astartes Chainsword",
+      "localized": "確定刪除\"{0}\"嗎?"
+    },
+    {
+      "id": 9049,
+      "nameId": 1479,
+      "canonicalName": "Heavy Bolt Pistol",
+      "localized": "向Battlesector開發人員提交表格. 點選確認以傳送."
+    },
+    {
+      "id": 9053,
+      "nameId": 1517,
+      "canonicalName": "Special Issue Bolt Pistol",
+      "localized": "部隊包含來自未啟用的擴充套件包內容單位."
+    },
+    {
+      "id": 9064,
+      "nameId": 1515,
+      "canonicalName": "Icarus Rocket Pods",
+      "localized": "{0}指揮點數粒子"
+    },
+    {
+      "id": 9066,
+      "nameId": 1486,
+      "canonicalName": "Master-crafted Power Sword",
+      "localized": "受到攻擊時有{0}的機率被擦傷, 每勢能"
+    },
+    {
+      "id": 9069,
+      "nameId": 1515,
+      "canonicalName": "Icarus Rocket Pods",
+      "localized": "{0}指揮點數粒子"
+    },
+    {
+      "id": 9070,
+      "nameId": 1515,
+      "canonicalName": "Icarus Rocket Pods",
+      "localized": "{0}指揮點數粒子"
+    },
+    {
+      "id": 9071,
+      "nameId": 1322,
+      "canonicalName": "Astartes Chainsword",
+      "localized": "確定刪除\"{0}\"嗎?"
+    }
+  ]
+}

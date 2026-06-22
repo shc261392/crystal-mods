@@ -58,7 +58,7 @@ function render(results: HTMLElement, query: string): void {
   const items = filtered.slice(0, 30);
   if (items.length === 0) {
     results.innerHTML = `<li class="px-4 py-6 text-center text-sm text-[var(--color-faint)]">${
-      query ? 'No matches found' : 'Type to search units & weapons'
+      query ? t('search.empty.noMatches') : t('search.empty.startTyping')
     }</li>`;
     return;
   }

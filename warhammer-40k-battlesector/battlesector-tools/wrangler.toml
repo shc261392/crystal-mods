@@ -1,5 +1,12 @@
 name = "battlesector-tools"
 compatibility_date = "2025-01-01"
+pages_build_output_dir = "./dist"
 
 [observability]
 enabled = true
+
+# R2 bucket binding for game images
+# After creating the 'battlesector-assets' bucket in R2, uncomment this:
+# [[r2_buckets]]
+# binding = "ASSETS"
+# bucket_name = "battlesector-assets"

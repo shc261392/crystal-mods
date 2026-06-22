@@ -1,31 +1,5 @@
 [
   {
-    "id": 4022,
-    "nameId": 1575,
-    "name": "** Unused **",
-    "damage": 32,
-    "accuracy": 90,
-    "numAttacks": 1,
-    "shotsPerAttack": 1,
-    "burstSize": 1,
-    "armorPiercing": 0,
-    "isMelee": false,
-    "isRanged": true
-  },
-  {
-    "id": 4020,
-    "nameId": 1576,
-    "name": "** Unused **",
-    "damage": 50,
-    "accuracy": 95,
-    "numAttacks": 1,
-    "shotsPerAttack": 1,
-    "burstSize": 1,
-    "armorPiercing": 0,
-    "isMelee": false,
-    "isRanged": true
-  },
-  {
     "id": 9005,
     "nameId": 1477,
     "name": "Absolvor Bolt Pistol",
@@ -5647,19 +5621,6 @@
     "name": "Unarmed",
     "damage": 5,
     "accuracy": 100,
-    "numAttacks": 1,
-    "shotsPerAttack": 1,
-    "burstSize": 1,
-    "armorPiercing": 0,
-    "isMelee": false,
-    "isRanged": true
-  },
-  {
-    "id": 16,
-    "nameId": 111,
-    "name": "Unknown Weapon 16",
-    "damage": 0,
-    "accuracy": 50,
     "numAttacks": 1,
     "shotsPerAttack": 1,
     "burstSize": 1,

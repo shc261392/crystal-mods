@@ -12,7 +12,7 @@ import {
   totalModels,
   totalPoints,
 } from './army-store';
-import { factionName, unitName } from './i18n';
+import { factionName, t, tf, unitName } from './i18n';
 
 const units = unitsData as Unit[];
 const unitById = new Map(units.map((u) => [u.id, u]));
@@ -39,7 +39,7 @@ export function initArmyBuilder(): void {
     .sort((a, b) => unitName(a.id, a.name).localeCompare(unitName(b.id, b.name)))
     .map(
       (u) =>
-        `<option value="${u.id}">${unitName(u.id, u.name)} — ${u.pointCost} pts (${factionName(u.faction, u.factionName)})</option>`,
+        `<option value="${u.id}">${unitName(u.id, u.name)} — ${u.pointCost} ${t('common.pointsShort')} (${factionName(u.faction, u.factionName)})</option>`,
     )
     .join('');
 
@@ -74,15 +74,15 @@ export function initArmyBuilder(): void {
         return `<li class="flex items-center gap-3 rounded-lg bg-[var(--color-base)] border border-[var(--color-border)] px-3 py-2.5" data-id="${e.id}">
           <span class="flex-1 min-w-0">
             <a href="${href}" class="font-semibold text-sm truncate block hover:text-[var(--color-gold)]">${displayName}</a>
-            <span class="text-xs text-[var(--color-faint)]">${displayFaction} · ${e.points} pts each</span>
+            <span class="text-xs text-[var(--color-faint)]">${displayFaction} · ${tf('army.item.pointsEach', { points: e.points })}</span>
           </span>
           <span class="flex items-center gap-1.5 shrink-0">
-            <button type="button" data-act="dec" class="btn btn-ghost !px-2 !py-1 text-base leading-none" aria-label="Decrease">−</button>
+            <button type="button" data-act="dec" class="btn btn-ghost !px-2 !py-1 text-base leading-none" aria-label="${t('common.decrease')}">−</button>
             <span class="w-7 text-center font-bold tabular-nums">${e.qty}</span>
-            <button type="button" data-act="inc" class="btn btn-ghost !px-2 !py-1 text-base leading-none" aria-label="Increase">+</button>
+            <button type="button" data-act="inc" class="btn btn-ghost !px-2 !py-1 text-base leading-none" aria-label="${t('common.increase')}">+</button>
           </span>
           <span class="w-16 text-right font-bold text-[var(--color-gold-dim)] tabular-nums shrink-0">${e.points * e.qty}</span>
-          <button type="button" data-act="del" class="text-[var(--color-faint)] hover:text-[var(--color-blood)] shrink-0" aria-label="Remove">✕</button>
+          <button type="button" data-act="del" class="text-[var(--color-faint)] hover:text-[var(--color-blood)] shrink-0" aria-label="${t('common.remove')}">✕</button>
         </li>`;
       })
       .join('');
@@ -97,7 +97,7 @@ export function initArmyBuilder(): void {
     const box = document.getElementById('faction-breakdown');
     if (!box) return;
     if (army.length === 0) {
-      box.innerHTML = '<p class="text-sm text-[var(--color-faint)]">No factions yet.</p>';
+      box.innerHTML = `<p class="text-sm text-[var(--color-faint)]">${t('army.factions.none')}</p>`;
       return;
     }
     const totals = new Map<string, number>();
@@ -106,7 +106,7 @@ export function initArmyBuilder(): void {
       const label = u ? factionName(u.faction, u.factionName) : e.faction;
       totals.set(label, (totals.get(label) ?? 0) + e.points * e.qty);
     }
-    box.innerHTML = `<p class="label mb-1">By faction</p>${[...totals.entries()]
+    box.innerHTML = `<p class="label mb-1">${t('common.byFaction')}</p>${[...totals.entries()]
       .sort((a, b) => b[1] - a[1])
       .map(
         ([name, pts]) =>
@@ -149,13 +149,13 @@ export function initArmyBuilder(): void {
 
   document.getElementById('share-btn')?.addEventListener('click', async () => {
     if (army.length === 0) {
-      toast('Add units first');
+      toast(t('toast.addUnitsFirst'));
       return;
     }
     const url = `${location.origin}/army-builder?ids=${encodeArmy(army)}`;
     try {
       await navigator.clipboard.writeText(url);
-      toast('Share link copied');
+      toast(t('toast.shareLinkCopied'));
     } catch {
       toast(url);
     }
@@ -172,7 +172,7 @@ export function initArmyBuilder(): void {
       .sort((a, b) => unitName(a.id, a.name).localeCompare(unitName(b.id, b.name)))
       .map(
         (u) =>
-          `<option value="${u.id}">${unitName(u.id, u.name)} — ${u.pointCost} pts (${factionName(u.faction, u.factionName)})</option>`,
+          `<option value="${u.id}">${unitName(u.id, u.name)} — ${u.pointCost} ${t('common.pointsShort')} (${factionName(u.faction, u.factionName)})</option>`,
       )
       .join('');
     render();

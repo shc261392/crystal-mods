@@ -8,8 +8,8 @@ import Base from '../layouts/Base.astro';
   path="/compare"
 >
   <header class="mb-6">
-    <p class="eyebrow mb-2">Tool</p>
-    <h1 class="text-3xl md:text-4xl font-black">Unit Comparison</h1>
+    <p class="eyebrow mb-2" data-i18n-ui="common.tool">Tool</p>
+    <h1 class="text-3xl md:text-4xl font-black" data-i18n-ui="nav.compare">Unit Comparison</h1>
     <p class="mt-2 text-[var(--color-muted)] max-w-2xl">
       Add up to four units to compare every stat. The best value in each row is
       highlighted. Share the matchup with a link.
@@ -18,15 +18,15 @@ import Base from '../layouts/Base.astro';
 
   <div class="surface p-4 mb-4 flex flex-wrap items-end gap-3">
     <div class="flex-1 min-w-[14rem]">
-      <label class="label block mb-1.5" for="add-unit">Add unit</label>
+      <label class="label block mb-1.5" for="add-unit" data-i18n-ui="compare.addUnit">Add unit</label>
       <select id="add-unit" class="select"></select>
     </div>
-    <button id="add-btn" type="button" class="btn btn-primary h-[42px]">Add</button>
-    <button id="share-btn" type="button" class="btn h-[42px]">Copy link</button>
-    <button id="clear-btn" type="button" class="btn btn-ghost h-[42px]">Clear</button>
+    <button id="add-btn" type="button" class="btn btn-primary h-[42px]" data-i18n-ui="common.add">Add</button>
+    <button id="share-btn" type="button" class="btn h-[42px]" data-i18n-ui="common.copyLink">Copy link</button>
+    <button id="clear-btn" type="button" class="btn btn-ghost h-[42px]" data-i18n-ui="common.clear">Clear</button>
   </div>
 
-  <div id="empty" class="surface p-12 text-center text-[var(--color-faint)]">
+  <div id="empty" class="surface p-12 text-center text-[var(--color-faint)]" data-i18n-ui="compare.empty">
     Add units above to start comparing.
   </div>
 

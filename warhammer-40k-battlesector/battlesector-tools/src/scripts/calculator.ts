@@ -6,7 +6,7 @@ import unitsData from '../data/units.json';
 import weaponsData from '../data/weapons.json';
 import { damagePerHit, expectedDamage, hitChance, modelsKilled } from '../lib/combat';
 import type { Unit, Weapon } from '../lib/types';
-import { unitName, weaponName } from './i18n';
+import { t, unitName, weaponName } from './i18n';
 
 const weapons = weaponsData as Weapon[];
 const units = unitsData as Unit[];
@@ -33,11 +33,11 @@ export function initCalculator(): void {
   function renderOptions(): void {
     const currentW = weaponSel.value;
     const currentU = unitSel.value;
-    weaponSel.innerHTML = `<option value="">Custom values…</option>${[...weapons]
+    weaponSel.innerHTML = `<option value="">${t('common.customValues')}</option>${[...weapons]
       .sort((a, b) => weaponName(a.id, a.name).localeCompare(weaponName(b.id, b.name)))
       .map((w) => `<option value="${w.id}">${weaponName(w.id, w.name)} (${w.damage} dmg)</option>`)
       .join('')}`;
-    unitSel.innerHTML = `<option value="">Custom values…</option>${[...units]
+    unitSel.innerHTML = `<option value="">${t('common.customValues')}</option>${[...units]
       .sort((a, b) => unitName(a.id, a.name).localeCompare(unitName(b.id, b.name)))
       .map((u) => `<option value="${u.id}">${unitName(u.id, u.name)}</option>`)
       .join('')}`;
@@ -128,7 +128,7 @@ export function initCalculator(): void {
     const url = `${location.origin}${location.pathname}${location.search}`;
     try {
       await navigator.clipboard.writeText(url);
-      showToast('Link copied');
+      showToast(t('toast.linkCopied'));
     } catch {
       showToast(url);
     }

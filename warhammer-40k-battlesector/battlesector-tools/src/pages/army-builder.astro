@@ -8,8 +8,8 @@ import Base from '../layouts/Base.astro';
   path="/army-builder"
 >
   <header class="mb-6">
-    <p class="eyebrow mb-2">Tool</p>
-    <h1 class="text-3xl md:text-4xl font-black">Army Builder</h1>
+    <p class="eyebrow mb-2" data-i18n-ui="common.tool">Tool</p>
+    <h1 class="text-3xl md:text-4xl font-black" data-i18n-ui="nav.armyBuilder">Army Builder</h1>
     <p class="mt-2 text-[var(--color-muted)] max-w-2xl">
       Add units, adjust quantities and watch your point total update live. Your
       list is saved in this browser and can be shared with a link.
@@ -21,33 +21,33 @@ import Base from '../layouts/Base.astro';
     <section class="surface p-5 order-2 lg:order-1">
       <div class="flex items-center gap-3 mb-4">
         <div class="flex-1">
-          <label class="label block mb-1.5" for="add-unit">Add a unit</label>
+          <label class="label block mb-1.5" for="add-unit" data-i18n-ui="army.addUnit">Add a unit</label>
           <select id="add-unit" class="select"></select>
         </div>
-        <button id="add-btn" type="button" class="btn btn-primary self-end h-[42px]">Add</button>
+        <button id="add-btn" type="button" class="btn btn-primary self-end h-[42px]" data-i18n-ui="common.add">Add</button>
       </div>
 
       <ul id="army-list" class="space-y-2"></ul>
-      <p id="empty" class="text-center text-[var(--color-faint)] py-12">
+      <p id="empty" class="text-center text-[var(--color-faint)] py-12" data-i18n-ui="army.empty">
         Your army is empty. Add a unit to begin.
       </p>
     </section>
 
     <!-- Summary -->
     <aside class="surface p-5 order-1 lg:order-2 lg:sticky lg:top-[4.5rem] self-start">
-      <h2 class="text-lg font-bold mb-4">Summary</h2>
+      <h2 class="text-lg font-bold mb-4" data-i18n-ui="common.summary">Summary</h2>
       <div class="space-y-3">
         <div>
-          <p class="label">Total points</p>
+          <p class="label" data-i18n-ui="army.summary.totalPoints">Total points</p>
           <p id="sum-points" class="text-4xl font-black text-[var(--color-gold)] tabular-nums">0</p>
         </div>
         <div class="flex gap-6">
           <div>
-            <p class="label">Units</p>
+            <p class="label" data-i18n-ui="army.summary.units">Units</p>
             <p id="sum-units" class="text-xl font-bold tabular-nums">0</p>
           </div>
           <div>
-            <p class="label">Models</p>
+            <p class="label" data-i18n-ui="army.summary.models">Models</p>
             <p id="sum-models" class="text-xl font-bold tabular-nums">0</p>
           </div>
         </div>
@@ -56,8 +56,8 @@ import Base from '../layouts/Base.astro';
       <div id="faction-breakdown" class="mt-4 pt-4 border-t border-[var(--color-border)] space-y-1.5"></div>
 
       <div class="mt-5 space-y-2">
-        <button id="share-btn" type="button" class="btn btn-primary w-full">Copy share link</button>
-        <button id="clear-btn" type="button" class="btn btn-ghost w-full">Clear army</button>
+        <button id="share-btn" type="button" class="btn btn-primary w-full" data-i18n-ui="common.copyShareLink">Copy share link</button>
+        <button id="clear-btn" type="button" class="btn btn-ghost w-full" data-i18n-ui="army.button.clearArmy">Clear army</button>
       </div>
     </aside>
   </div>

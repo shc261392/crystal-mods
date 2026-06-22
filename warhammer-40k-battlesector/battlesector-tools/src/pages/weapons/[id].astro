@@ -37,16 +37,16 @@ const carriers = units
   ogType="article"
 >
   <nav class="text-sm text-[var(--color-faint)] mb-5">
-    <a href="/weapons" class="hover:text-[var(--color-gold-dim)]">Weapons</a>
+    <a href="/weapons" class="hover:text-[var(--color-gold-dim)]" data-i18n-ui="nav.weapons">Weapons</a>
     <span class="mx-1.5">/</span>
-    <span class="text-[var(--color-muted)]">{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
+    <span class="text-[var(--color-muted)]" data-i18n-ui={weapon.isMelee ? 'common.melee' : 'common.ranged'}>{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
   </nav>
 
   <div class="surface p-6 md:p-8">
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
       <div>
         <div class="flex flex-wrap items-center gap-2 mb-2">
-          <span class="chip">{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
+          <span class="chip" data-i18n-ui={weapon.isMelee ? 'common.melee' : 'common.ranged'}>{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
           {weapon.armorPiercing > 0 && <span class="chip">AP {weapon.armorPiercing}</span>}
         </div>
         <h1 class="text-3xl md:text-4xl font-black" data-i18n-weapon={weapon.id} data-i18n-fallback={weapon.name}>{weapon.name}</h1>
@@ -54,34 +54,34 @@ const carriers = units
       <div class="flex gap-6">
         <div class="text-center">
           <p class="text-4xl font-black text-[var(--color-gold)] leading-none">{weapon.damage}</p>
-          <p class="text-xs text-[var(--color-faint)] uppercase tracking-wide mt-1.5">Damage</p>
+          <p class="text-xs text-[var(--color-faint)] uppercase tracking-wide mt-1.5" data-i18n-ui="common.damage">Damage</p>
         </div>
         <div class="text-center">
           <p class="text-4xl font-black leading-none">{weapon.accuracy}%</p>
-          <p class="text-xs text-[var(--color-faint)] uppercase tracking-wide mt-1.5">Accuracy</p>
+          <p class="text-xs text-[var(--color-faint)] uppercase tracking-wide mt-1.5" data-i18n-ui="common.accuracy">Accuracy</p>
         </div>
       </div>
     </div>
     <div class="mt-5 flex flex-wrap gap-2">
       <button id="copy-link" type="button" class="btn" data-url={`/weapons/${weaponSlug(weapon)}`}>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>
-        <span>Copy link</span>
+        <span data-i18n-ui="common.copyLink">Copy link</span>
       </button>
-      <a href={`/calculator?weapon=${weapon.id}`} class="btn btn-primary">Open in calculator</a>
+      <a href={`/calculator?weapon=${weapon.id}`} class="btn btn-primary" data-i18n-ui="weaponDetail.action.openInCalculator">Open in calculator</a>
     </div>
   </div>
 
   <div class="grid gap-4 md:grid-cols-2 mt-4">
     <!-- Damage vs armor -->
     <section class="surface p-5">
-      <h2 class="text-lg font-bold mb-1">Damage vs Armor</h2>
-      <p class="text-sm text-[var(--color-faint)] mb-4">
+      <h2 class="text-lg font-bold mb-1" data-i18n-ui="weaponDetail.section.damageVsArmor">Damage vs Armor</h2>
+      <p class="text-sm text-[var(--color-faint)] mb-4" data-i18n-ui="weaponDetail.note.perHit">
         Per hit. Minimum 1 damage always applies{weapon.armorPiercing > 0 ? `; armor piercing ${weapon.armorPiercing} factored in` : ''}.
       </p>
       <div class="space-y-1.5">
         {armorTable.map((row) => (
           <div class="flex items-center gap-3">
-            <span class="text-xs text-[var(--color-faint)] w-14 shrink-0">Armor {row.armor}</span>
+            <span class="text-xs text-[var(--color-faint)] w-14 shrink-0"><span data-i18n-ui="common.armor">Armor</span> {row.armor}</span>
             <div class="statbar flex-1"><span style={`width:${Math.round((row.dmg / weapon.damage || 0) * 100)}%`}></span></div>
             <span class="text-sm font-bold tabular-nums w-8 text-right">{row.dmg}</span>
           </div>
@@ -92,10 +92,10 @@ const carriers = units
     <!-- Carriers -->
     <section class="surface p-5">
       <h2 class="text-lg font-bold mb-4">
-        Carried by <span class="text-[var(--color-faint)] font-normal text-base">({carriers.length})</span>
+        <span data-i18n-ui="weaponDetail.section.carriedBy">Carried by</span> <span class="text-[var(--color-faint)] font-normal text-base">({carriers.length})</span>
       </h2>
       {carriers.length === 0 ? (
-        <p class="text-sm text-[var(--color-faint)]">No units in the dataset reference this weapon.</p>
+        <p class="text-sm text-[var(--color-faint)]" data-i18n-ui="weaponDetail.empty.noUnits">No units in the dataset reference this weapon.</p>
       ) : (
         <div class="space-y-1.5 max-h-[22rem] overflow-y-auto pr-1">
           {carriers.map((u) => (
@@ -107,7 +107,7 @@ const carriers = units
                   <span class="text-xs text-[var(--color-faint)]" data-i18n-faction={u.faction} data-i18n-fallback={u.factionName}>{u.factionName}</span>
                 </span>
               </span>
-              <span class="text-xs text-[var(--color-faint)] shrink-0">{u.pointCost} pts</span>
+              <span class="text-xs text-[var(--color-faint)] shrink-0">{u.pointCost} <span data-i18n-ui="common.pointsShort">pts</span></span>
             </a>
           ))}
         </div>

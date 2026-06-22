@@ -46,6 +46,24 @@ const fullTitle = title === 'Battlesector Tools' ? title : `${title} · Battlese
 
     <link rel="preconnect" href="https://rsms.me" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <script is:inline>
+      (() => {
+        const KEY = 'bs.locale.v1';
+        const params = new URLSearchParams(location.search);
+        const fromUrl = params.get('lang');
+        const stored = localStorage.getItem(KEY);
+        const locale = fromUrl || stored || 'en';
+        document.documentElement.lang = locale;
+        if (locale !== 'en') {
+          document.documentElement.classList.add('i18n-pending');
+        }
+      })();
+    </script>
+    <style>
+      html.i18n-pending body {
+        visibility: hidden;
+      }
+    </style>
   </head>
   <body>
     <Nav />
@@ -55,12 +73,16 @@ const fullTitle = title === 'Battlesector Tools' ? title : `${title} · Battlese
     <footer class="border-t border-[var(--color-border)] mt-16">
       <div class="container-page py-8 text-sm text-[var(--color-faint)] flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
         <p>
+          <span data-i18n-ui="footer.disclaimer.main">
           Battlesector Tools · Unofficial fan project. Game data extracted for
           reference and analysis.
+          </span>
         </p>
         <p>
+          <span data-i18n-ui="footer.disclaimer.copyright">
           Warhammer 40,000: Battlesector © Games Workshop / Black Lab Games.
           Not affiliated.
+          </span>
         </p>
       </div>
     </footer>

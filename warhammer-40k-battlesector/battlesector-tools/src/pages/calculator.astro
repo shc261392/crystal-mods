@@ -8,8 +8,8 @@ import Base from '../layouts/Base.astro';
   path="/calculator"
 >
   <header class="mb-6">
-    <p class="eyebrow mb-2">Tool</p>
-    <h1 class="text-3xl md:text-4xl font-black">Damage Calculator</h1>
+    <p class="eyebrow mb-2" data-i18n-ui="common.tool">Tool</p>
+    <h1 class="text-3xl md:text-4xl font-black" data-i18n-ui="nav.calculator">Damage Calculator</h1>
     <p class="mt-2 text-[var(--color-muted)] max-w-2xl">
       Pick an attacking weapon and a target, or enter custom values. Results use
       the extracted formulas: damage minus effective armor (min 1), hit chance
@@ -20,17 +20,17 @@ import Base from '../layouts/Base.astro';
   <div class="grid gap-4 lg:grid-cols-[1fr_1fr_1.1fr]">
     <!-- Attacker -->
     <section class="surface p-5">
-      <h2 class="text-lg font-bold mb-4">Attacker</h2>
-      <label class="label block mb-1.5" for="weapon">Weapon</label>
+      <h2 class="text-lg font-bold mb-4" data-i18n-ui="common.attacker">Attacker</h2>
+      <label class="label block mb-1.5" for="weapon" data-i18n-ui="common.weapon">Weapon</label>
       <select id="weapon" class="select mb-4"></select>
 
       <div class="grid grid-cols-2 gap-3">
         <div>
-          <label class="label block mb-1.5" for="damage">Damage</label>
+          <label class="label block mb-1.5" for="damage" data-i18n-ui="common.damage">Damage</label>
           <input id="damage" class="input" type="number" min="0" inputmode="numeric" />
         </div>
         <div>
-          <label class="label block mb-1.5" for="accuracy">Accuracy %</label>
+          <label class="label block mb-1.5" for="accuracy" data-i18n-ui="common.accuracy">Accuracy %</label>
           <input id="accuracy" class="input" type="number" min="0" max="100" inputmode="numeric" />
         </div>
         <div>
@@ -50,13 +50,13 @@ import Base from '../layouts/Base.astro';
 
     <!-- Target -->
     <section class="surface p-5">
-      <h2 class="text-lg font-bold mb-4">Target</h2>
-      <label class="label block mb-1.5" for="unit">Unit</label>
+      <h2 class="text-lg font-bold mb-4" data-i18n-ui="common.target">Target</h2>
+      <label class="label block mb-1.5" for="unit" data-i18n-ui="common.unit">Unit</label>
       <select id="unit" class="select mb-4"></select>
 
       <div class="grid grid-cols-2 gap-3">
         <div>
-          <label class="label block mb-1.5" for="armor">Armor</label>
+          <label class="label block mb-1.5" for="armor" data-i18n-ui="common.armor">Armor</label>
           <input id="armor" class="input" type="number" min="0" inputmode="numeric" value="0" />
         </div>
         <div>
@@ -64,11 +64,11 @@ import Base from '../layouts/Base.astro';
           <input id="evasion" class="input" type="number" inputmode="numeric" value="0" />
         </div>
         <div>
-          <label class="label block mb-1.5" for="hpmodel">HP / model</label>
+          <label class="label block mb-1.5" for="hpmodel" data-i18n-ui="compare.row.healthPerModel">HP / model</label>
           <input id="hpmodel" class="input" type="number" min="1" inputmode="numeric" value="20" />
         </div>
         <div>
-          <label class="label block mb-1.5" for="members">Models</label>
+          <label class="label block mb-1.5" for="members" data-i18n-ui="common.models">Models</label>
           <input id="members" class="input" type="number" min="1" inputmode="numeric" value="1" />
         </div>
       </div>
@@ -77,35 +77,35 @@ import Base from '../layouts/Base.astro';
     <!-- Results -->
     <section class="surface p-5 lg:row-span-1 relative overflow-hidden">
       <div class="absolute -top-16 -right-16 w-48 h-48 rounded-full blur-3xl opacity-20" style="background:radial-gradient(circle,var(--color-toxin),transparent 70%)"></div>
-      <h2 class="text-lg font-bold mb-4">Results</h2>
+      <h2 class="text-lg font-bold mb-4" data-i18n-ui="common.results">Results</h2>
       <div class="space-y-3 relative">
         <div class="flex items-baseline justify-between">
-          <span class="text-sm text-[var(--color-muted)]">Damage per hit</span>
+          <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.damagePerHit">Damage per hit</span>
           <span id="r-perhit" class="text-2xl font-black text-[var(--color-gold)] tabular-nums">—</span>
         </div>
         <div class="flex items-baseline justify-between">
-          <span class="text-sm text-[var(--color-muted)]">Hit chance</span>
+          <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.hitChance">Hit chance</span>
           <span id="r-hit" class="text-xl font-bold tabular-nums">—</span>
         </div>
         <div class="flex items-baseline justify-between">
-          <span class="text-sm text-[var(--color-muted)]">Damage per attack</span>
+          <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.damagePerAttack">Damage per attack</span>
           <span id="r-attack" class="text-xl font-bold tabular-nums">—</span>
         </div>
         <div class="flex items-baseline justify-between">
-          <span class="text-sm text-[var(--color-muted)]">Expected (× hit %)</span>
+          <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.expected">Expected (× hit %)</span>
           <span id="r-expected" class="text-xl font-bold tabular-nums">—</span>
         </div>
         <div class="border-t border-[var(--color-border)] my-3"></div>
         <div class="flex items-baseline justify-between">
-          <span class="text-sm text-[var(--color-muted)]">Models killed (raw)</span>
+          <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.modelsKilledRaw">Models killed (raw)</span>
           <span id="r-killed" class="text-xl font-bold tabular-nums">—</span>
         </div>
         <div class="flex items-baseline justify-between">
-          <span class="text-sm text-[var(--color-muted)]">Target total HP</span>
+          <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.targetTotalHp">Target total HP</span>
           <span id="r-totalhp" class="text-base font-semibold tabular-nums text-[var(--color-faint)]">—</span>
         </div>
       </div>
-      <button id="copy-link" type="button" class="btn w-full mt-5" data-url="">
+      <button id="copy-link" type="button" class="btn w-full mt-5" data-url="" data-i18n-ui="common.copyShareableLink">
         Copy shareable link
       </button>
     </section>

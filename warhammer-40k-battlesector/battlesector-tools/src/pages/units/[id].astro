@@ -28,51 +28,63 @@ if (!unit) {
 const armor =
   unit.armorProfile === 1
     ? [
-        { label: 'Front', value: unit.armorFront },
-        { label: 'Left', value: unit.armorLeft },
-        { label: 'Right', value: unit.armorRight },
-        { label: 'Rear', value: unit.armorRear },
+        { key: 'unitDetail.armor.front', label: 'Front', value: unit.armorFront },
+        { key: 'unitDetail.armor.left', label: 'Left', value: unit.armorLeft },
+        { key: 'unitDetail.armor.right', label: 'Right', value: unit.armorRight },
+        { key: 'unitDetail.armor.rear', label: 'Rear', value: unit.armorRear },
       ]
     : null;
 
 const defenseStats = [
-  { label: 'Total Health', value: unit.totalHealth, hint: `${unit.maxHealth} × ${unit.members}` },
-  { label: 'Health / model', value: unit.maxHealth },
-  { label: 'Models', value: unit.members },
-  { label: 'Armor', value: unit.armorProfile === 1 ? '—' : unit.armor },
-  { label: 'Evasion', value: unit.evasion },
+  {
+    key: 'common.totalHealth',
+    label: 'Total Health',
+    value: unit.totalHealth,
+    hint: `${unit.maxHealth} × ${unit.members}`,
+  },
+  { key: 'common.healthPerModel', label: 'Health / model', value: unit.maxHealth },
+  { key: 'common.models', label: 'Models', value: unit.members },
+  { key: 'common.armor', label: 'Armor', value: unit.armorProfile === 1 ? '—' : unit.armor },
+  { key: 'common.evasion', label: 'Evasion', value: unit.evasion },
 ];
 
 const mobilityStats = [
-  { label: 'Movement', value: unit.maxMovementPoints },
-  { label: 'Action Points', value: unit.maxActionPoints },
-  { label: 'Unit Height', value: unit.unitHeight },
+  { key: 'common.movement', label: 'Movement', value: unit.maxMovementPoints },
+  { key: 'common.actionPoints', label: 'Action Points', value: unit.maxActionPoints },
+  { key: 'common.unitHeight', label: 'Unit Height', value: unit.unitHeight },
 ];
 
 const combatStats = [
-  { label: 'Melee Accuracy', value: unit.meleeAccuracy ? `${unit.meleeAccuracy}%` : '—' },
   {
+    key: 'unitDetail.stat.meleeAccuracy',
+    label: 'Melee Accuracy',
+    value: unit.meleeAccuracy ? `${unit.meleeAccuracy}%` : '—',
+  },
+  {
+    key: 'unitDetail.stat.rangedAccuracyMod',
     label: 'Ranged Acc. Mod',
     value: `${unit.rangedAccuracyModifier >= 0 ? '+' : ''}${unit.rangedAccuracyModifier}`,
   },
-  { label: 'Momentum / kill', value: unit.momentumPerModelDeath },
+  { key: 'common.momentumPerKill', label: 'Momentum / kill', value: unit.momentumPerModelDeath },
 ];
 
 const tags = [
-  unit.isLarge ? 'Large' : null,
-  unit.canMeleeReact ? 'Melee Reaction' : null,
-  unit.canFallback ? 'Can Fall Back' : null,
-].filter(Boolean) as string[];
+  unit.isLarge ? { key: 'common.large', label: 'Large' } : null,
+  unit.canMeleeReact ? { key: 'unitDetail.tag.meleeReaction', label: 'Melee Reaction' } : null,
+  unit.canFallback ? { key: 'unitDetail.tag.canFallBack', label: 'Can Fall Back' } : null,
+].filter(Boolean) as { key: string; label: string }[];
 
 const accent = factionColor(unit.factionName);
 
 const vitals = [
   {
+    key: 'common.health',
     label: 'Health',
     value: unit.totalHealth,
     pct: clamp((unit.totalHealth / STAT_MAX.health) * 100, 0, 100),
   },
   {
+    key: 'common.armor',
     label: 'Armor',
     value: unit.armorProfile === 1 ? unit.armorFront : unit.armor,
     pct: clamp(
@@ -82,16 +94,19 @@ const vitals = [
     ),
   },
   {
+    key: 'common.evasion',
     label: 'Evasion',
     value: unit.evasion,
     pct: clamp((unit.evasion / STAT_MAX.evasion) * 100, 0, 100),
   },
   {
+    key: 'common.movement',
     label: 'Movement',
     value: unit.maxMovementPoints,
     pct: clamp((unit.maxMovementPoints / STAT_MAX.movement) * 100, 0, 100),
   },
   {
+    key: 'common.actionPoints',
     label: 'Action Points',
     value: unit.maxActionPoints,
     pct: clamp((unit.maxActionPoints / STAT_MAX.actionPoints) * 100, 0, 100),
@@ -106,7 +121,7 @@ const vitals = [
   ogType="article"
 >
   <nav class="text-sm text-[var(--color-faint)] mb-5">
-    <a href="/units" class="hover:text-[var(--color-gold-dim)]">Units</a>
+    <a href="/units" class="hover:text-[var(--color-gold-dim)]" data-i18n-ui="nav.units">Units</a>
     <span class="mx-1.5">/</span>
     <span class="text-[var(--color-muted)]">{unit.factionName}</span>
   </nav>
@@ -121,18 +136,18 @@ const vitals = [
           <span class="chip" style={`color:${unit.roleColor}; border-color:${unit.roleColor}`} data-i18n-role={unit.role} data-i18n-fallback={unit.roleName}>{unit.roleName}</span>
           <span class="chip" data-i18n-faction={unit.faction} data-i18n-fallback={unit.factionName}>{unit.factionName}</span>
           <span class="chip">{unit.substanceName}</span>
-          {tags.map((t) => <span class="chip">{t}</span>)}
+          {tags.map((t) => <span class="chip" data-i18n-ui={t.key}>{t.label}</span>)}
         </div>
         <h1 class="text-3xl md:text-4xl font-black" data-i18n-unit={unit.id} data-i18n-fallback={unit.name}>{unit.name}</h1>
         <p class="mt-2 text-[var(--color-muted)]">
           <span class="text-2xl font-bold text-[var(--color-gold)]">{unit.pointCost}</span>
-          <span class="text-sm"> requisition points</span>
+          <span class="text-sm" data-i18n-ui="common.requisitionPoints"> requisition points</span>
         </p>
       </div>
       <div class="flex flex-wrap gap-2">
         <button id="copy-link" type="button" class="btn" data-url={`/units/${unitSlug(unit)}`}>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>
-          <span>Copy link</span>
+          <span data-i18n-ui="common.copyLink">Copy link</span>
         </button>
         <button
           id="add-army"
@@ -143,9 +158,9 @@ const vitals = [
           data-points={unit.pointCost}
           data-faction={unit.factionName}
         >
-          + Army Builder
+          <span data-i18n-ui="unitDetail.action.armyBuilder">+ Army Builder</span>
         </button>
-        <a href={`/compare?ids=${unit.id}`} class="btn btn-ghost">Compare</a>
+        <a href={`/compare?ids=${unit.id}`} class="btn btn-ghost" data-i18n-ui="unitDetail.action.compare">Compare</a>
       </div>
     </div>
   </div>
@@ -156,7 +171,7 @@ const vitals = [
       {vitals.map((v) => (
         <div>
           <div class="flex items-baseline justify-between mb-1.5">
-            <span class="label">{v.label}</span>
+            <span class="label" data-i18n-ui={v.key}>{v.label}</span>
             <span class="font-bold tabular-nums">{v.value}</span>
           </div>
           <div class="statbar"><span style={`width:${v.pct}%`}></span></div>
@@ -168,11 +183,11 @@ const vitals = [
   <!-- Stat groups -->
   <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mt-4">
     <section class="surface p-5">
-      <h2 class="label mb-3">Defense</h2>
+      <h2 class="label mb-3" data-i18n-ui="unitDetail.section.defense">Defense</h2>
       <dl class="space-y-2.5">
         {defenseStats.map((s) => (
           <div class="flex items-baseline justify-between gap-3">
-            <dt class="text-sm text-[var(--color-muted)]">{s.label}</dt>
+            <dt class="text-sm text-[var(--color-muted)]" data-i18n-ui={s.key}>{s.label}</dt>
             <dd class="font-bold tabular-nums">
               {s.value}
               {'hint' in s && s.hint && <span class="text-xs text-[var(--color-faint)] font-normal ml-1">({s.hint})</span>}
@@ -182,12 +197,12 @@ const vitals = [
       </dl>
       {armor && (
         <div class="mt-4 pt-4 border-t border-[var(--color-border)]">
-          <p class="label mb-2">Directional Armor</p>
+          <p class="label mb-2" data-i18n-ui="unitDetail.section.directionalArmor">Directional Armor</p>
           <div class="grid grid-cols-4 gap-2 text-center">
             {armor.map((a) => (
               <div class="rounded-lg bg-[var(--color-base)] py-2">
                 <p class="font-bold tabular-nums">{a.value}</p>
-                <p class="text-[10px] text-[var(--color-faint)] uppercase">{a.label}</p>
+                <p class="text-[10px] text-[var(--color-faint)] uppercase" data-i18n-ui={a.key}>{a.label}</p>
               </div>
             ))}
           </div>
@@ -196,11 +211,11 @@ const vitals = [
     </section>
 
     <section class="surface p-5">
-      <h2 class="label mb-3">Mobility</h2>
+      <h2 class="label mb-3" data-i18n-ui="unitDetail.section.mobility">Mobility</h2>
       <dl class="space-y-2.5">
         {mobilityStats.map((s) => (
           <div class="flex items-baseline justify-between gap-3">
-            <dt class="text-sm text-[var(--color-muted)]">{s.label}</dt>
+            <dt class="text-sm text-[var(--color-muted)]" data-i18n-ui={s.key}>{s.label}</dt>
             <dd class="font-bold tabular-nums">{s.value}</dd>
           </div>
         ))}
@@ -208,11 +223,11 @@ const vitals = [
     </section>
 
     <section class="surface p-5">
-      <h2 class="label mb-3">Combat</h2>
+      <h2 class="label mb-3" data-i18n-ui="unitDetail.section.combat">Combat</h2>
       <dl class="space-y-2.5">
         {combatStats.map((s) => (
           <div class="flex items-baseline justify-between gap-3">
-            <dt class="text-sm text-[var(--color-muted)]">{s.label}</dt>
+            <dt class="text-sm text-[var(--color-muted)]" data-i18n-ui={s.key}>{s.label}</dt>
             <dd class="font-bold tabular-nums">{s.value}</dd>
           </div>
         ))}
@@ -223,11 +238,11 @@ const vitals = [
   <!-- Weapon loadout -->
   {unit.weaponSlots.length > 0 && (
     <section class="surface p-5 md:p-6 mt-4">
-      <h2 class="text-lg font-bold mb-4">Weapon Loadout</h2>
+      <h2 class="text-lg font-bold mb-4" data-i18n-ui="unitDetail.section.weaponLoadout">Weapon Loadout</h2>
       <div class="space-y-4">
         {unit.weaponSlots.map((slot, i) => (
           <div>
-            <p class="label mb-2">Slot {i + 1}</p>
+            <p class="label mb-2"><span data-i18n-ui="unitDetail.slotPrefix">Slot</span> {i + 1}</p>
             <div class="grid gap-2 sm:grid-cols-2">
               {slot.options.map((opt) => {
                 const w = getWeapon(opt.weaponId);
@@ -240,12 +255,12 @@ const vitals = [
                       <span class="font-semibold text-sm truncate block" data-i18n-weapon={opt.weaponId} data-i18n-fallback={opt.name}>{opt.name}</span>
                       {w && (
                         <span class="text-xs text-[var(--color-faint)]">
-                          {w.damage} dmg · {w.accuracy}% acc
+                          {w.damage} <span data-i18n-ui="common.damageShort">dmg</span> · {w.accuracy}% <span data-i18n-ui="common.accuracyShort">acc</span>
                         </span>
                       )}
                     </span>
                     <span class="flex items-center gap-2 shrink-0">
-                      {opt.startsLocked && <span class="chip !py-0.5 !px-1.5 text-[10px]">Locked</span>}
+                      {opt.startsLocked && <span class="chip !py-0.5 !px-1.5 text-[10px]" data-i18n-ui="common.locked">Locked</span>}
                       {opt.pointCost > 0 && <span class="text-xs font-bold text-[var(--color-gold-dim)]">+{opt.pointCost}</span>}
                     </span>
                   </a>
