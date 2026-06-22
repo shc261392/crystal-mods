@@ -83,3 +83,18 @@ export interface Summary {
   maxHealth: number;
   maxPoints: number;
 }
+
+export interface LocaleInfo {
+  code: string;
+  label: string;
+  native: string;
+}
+
+export interface I18nBundle {
+  locales: LocaleInfo[];
+  ui: Record<string, Record<string, string>>;
+  unitNames: Record<string, Record<string, string>>;
+  weaponNames: Record<string, Record<string, string>>;
+  factionNames: Record<string, Record<string, string>>;
+  roleNames: Record<string, Record<string, string>>;
+}

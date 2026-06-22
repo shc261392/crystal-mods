@@ -1,6 +1,7 @@
 [
   {
     "id": 4022,
+    "nameId": 1575,
     "name": "** Unused **",
     "damage": 32,
     "accuracy": 90,
@@ -13,6 +14,7 @@
   },
   {
     "id": 4020,
+    "nameId": 1576,
     "name": "** Unused **",
     "damage": 50,
     "accuracy": 95,
@@ -25,6 +27,7 @@
   },
   {
     "id": 9005,
+    "nameId": 1477,
     "name": "Absolvor Bolt Pistol",
     "damage": 8,
     "accuracy": 90,
@@ -37,6 +40,7 @@
   },
   {
     "id": 9047,
+    "nameId": 1477,
     "name": "Absolvor Bolt Pistol",
     "damage": 8,
     "accuracy": 90,
@@ -49,6 +53,7 @@
   },
   {
     "id": 8016,
+    "nameId": 1320,
     "name": "Accursed Chain Weapons",
     "damage": 13,
     "accuracy": 100,
@@ -61,6 +66,7 @@
   },
   {
     "id": 8000,
+    "nameId": 1305,
     "name": "Accursed Chainaxe",
     "damage": 95,
     "accuracy": 100,
@@ -73,6 +79,7 @@
   },
   {
     "id": 8001,
+    "nameId": 1306,
     "name": "Accursed Maul",
     "damage": 100,
     "accuracy": 95,
@@ -85,6 +92,7 @@
   },
   {
     "id": 8017,
+    "nameId": 1321,
     "name": "Accursed Power Weapons",
     "damage": 20,
     "accuracy": 95,
@@ -97,6 +105,7 @@
   },
   {
     "id": 1013,
+    "nameId": 25,
     "name": "Acid Spray",
     "damage": 9,
     "accuracy": 100,
@@ -109,6 +118,7 @@
   },
   {
     "id": 57,
+    "nameId": 460,
     "name": "Angelus Boltgun",
     "damage": 3,
     "accuracy": 90,
@@ -121,6 +131,7 @@
   },
   {
     "id": 2010,
+    "nameId": 648,
     "name": "Arco-flails",
     "damage": 7,
     "accuracy": 0,
@@ -133,6 +144,7 @@
   },
   {
     "id": 2,
+    "nameId": 123,
     "name": "Assault Bolter",
     "damage": 4,
     "accuracy": 95,
@@ -145,6 +157,7 @@
   },
   {
     "id": 21,
+    "nameId": 33,
     "name": "Assault Cannon",
     "damage": 4,
     "accuracy": 85,
@@ -157,6 +170,7 @@
   },
   {
     "id": 9065,
+    "nameId": 33,
     "name": "Assault Cannon",
     "damage": 4,
     "accuracy": 85,
@@ -169,6 +183,7 @@
   },
   {
     "id": 8020,
+    "nameId": 1322,
     "name": "Astartes Chainsword",
     "damage": 24,
     "accuracy": 85,
@@ -181,6 +196,7 @@
   },
   {
     "id": 9048,
+    "nameId": 1322,
     "name": "Astartes Chainsword",
     "damage": 24,
     "accuracy": 0,
@@ -193,6 +209,7 @@
   },
   {
     "id": 9071,
+    "nameId": 1322,
     "name": "Astartes Chainsword",
     "damage": 24,
     "accuracy": 0,
@@ -205,6 +222,7 @@
   },
   {
     "id": 25,
+    "nameId": 73,
     "name": "Auto Bolt Rifle",
     "damage": 4,
     "accuracy": 80,
@@ -217,6 +235,7 @@
   },
   {
     "id": 7019,
+    "nameId": 1073,
     "name": "Autocannon",
     "damage": 30,
     "accuracy": 60,
@@ -229,6 +248,7 @@
   },
   {
     "id": 4010,
+    "nameId": 761,
     "name": "Autogun",
     "damage": 4,
     "accuracy": 75,
@@ -241,6 +261,7 @@
   },
   {
     "id": 8008,
+    "nameId": 1313,
     "name": "Autopistol",
     "damage": 3,
     "accuracy": 85,
@@ -253,6 +274,7 @@
   },
   {
     "id": 8009,
+    "nameId": 1314,
     "name": "Autostubbers",
     "damage": 4,
     "accuracy": 85,
@@ -265,6 +287,7 @@
   },
   {
     "id": 8005,
+    "nameId": 1310,
     "name": "Axe of Dismemberment",
     "damage": 120,
     "accuracy": 100,
@@ -277,6 +300,7 @@
   },
   {
     "id": 8006,
+    "nameId": 1311,
     "name": "Balefire Pike",
     "damage": 7,
     "accuracy": 100,
@@ -289,6 +313,7 @@
   },
   {
     "id": 8043,
+    "nameId": 1311,
     "name": "Balefire Pike",
     "damage": 3,
     "accuracy": 100,
@@ -301,6 +326,7 @@
   },
   {
     "id": 9038,
+    "nameId": 1483,
     "name": "Ballistus Lascannon",
     "damage": 65,
     "accuracy": 90,
@@ -313,6 +339,7 @@
   },
   {
     "id": 9036,
+    "nameId": 1481,
     "name": "Ballistus Missile Launcher",
     "damage": 12,
     "accuracy": 60,
@@ -325,6 +352,7 @@
   },
   {
     "id": 9037,
+    "nameId": 1481,
     "name": "Ballistus Missile Launcher",
     "damage": 23,
     "accuracy": 80,
@@ -337,6 +365,7 @@
   },
   {
     "id": 7033,
+    "nameId": 1174,
     "name": "Bayonet",
     "damage": 10,
     "accuracy": 0,
@@ -349,6 +378,7 @@
   },
   {
     "id": 5023,
+    "nameId": 854,
     "name": "Beamy Deffgun",
     "damage": 20,
     "accuracy": 80,
@@ -361,6 +391,7 @@
   },
   {
     "id": 5001,
+    "nameId": 794,
     "name": "Big Choppa",
     "damage": 22,
     "accuracy": 0,
@@ -373,6 +404,7 @@
   },
   {
     "id": 5009,
+    "nameId": 771,
     "name": "Big Shoota",
     "damage": 5,
     "accuracy": 70,
@@ -385,6 +417,7 @@
   },
   {
     "id": 5024,
+    "nameId": 771,
     "name": "Big Shoota",
     "damage": 5,
     "accuracy": 85,
@@ -397,6 +430,7 @@
   },
   {
     "id": 1009,
+    "nameId": 129,
     "name": "Bioplasmic Cannon",
     "damage": 90,
     "accuracy": 80,
@@ -409,6 +443,7 @@
   },
   {
     "id": 4003,
+    "nameId": 614,
     "name": "Blade of Blood",
     "damage": 70,
     "accuracy": 90,
@@ -421,6 +456,7 @@
   },
   {
     "id": 2009,
+    "nameId": 647,
     "name": "Blessed Blade",
     "damage": 70,
     "accuracy": 0,
@@ -433,6 +469,7 @@
   },
   {
     "id": 1024,
+    "nameId": 90,
     "name": "Blinding Venom",
     "damage": 5,
     "accuracy": 100,
@@ -445,6 +482,7 @@
   },
   {
     "id": 3,
+    "nameId": 27,
     "name": "Bolt Pistol",
     "damage": 5,
     "accuracy": 90,
@@ -457,6 +495,7 @@
   },
   {
     "id": 42,
+    "nameId": 27,
     "name": "Bolt Pistol",
     "damage": 7,
     "accuracy": 90,
@@ -469,6 +508,7 @@
   },
   {
     "id": 45,
+    "nameId": 27,
     "name": "Bolt Pistol",
     "damage": 4,
     "accuracy": 90,
@@ -481,6 +521,7 @@
   },
   {
     "id": 7006,
+    "nameId": 27,
     "name": "Bolt Pistol",
     "damage": 4,
     "accuracy": 90,
@@ -493,6 +534,7 @@
   },
   {
     "id": 2003,
+    "nameId": 27,
     "name": "Bolt Pistol",
     "damage": 4,
     "accuracy": 90,
@@ -505,6 +547,7 @@
   },
   {
     "id": 2035,
+    "nameId": 27,
     "name": "Bolt Pistol",
     "damage": 4,
     "accuracy": 90,
@@ -517,6 +560,7 @@
   },
   {
     "id": 8018,
+    "nameId": 27,
     "name": "Bolt Pistol",
     "damage": 5,
     "accuracy": 90,
@@ -529,6 +573,7 @@
   },
   {
     "id": 1,
+    "nameId": 72,
     "name": "Bolt Rifle",
     "damage": 5,
     "accuracy": 85,
@@ -541,6 +586,7 @@
   },
   {
     "id": 9027,
+    "nameId": 1493,
     "name": "Bolt Sniper Rifle",
     "damage": 40,
     "accuracy": 90,
@@ -553,6 +599,7 @@
   },
   {
     "id": 8011,
+    "nameId": 1316,
     "name": "Boltgun",
     "damage": 5,
     "accuracy": 85,
@@ -565,6 +612,7 @@
   },
   {
     "id": 8015,
+    "nameId": 1316,
     "name": "Boltgun",
     "damage": 6,
     "accuracy": 85,
@@ -577,6 +625,7 @@
   },
   {
     "id": 9,
+    "nameId": 61,
     "name": "Boltstorm Gauntlet",
     "damage": 3,
     "accuracy": 75,
@@ -589,6 +638,7 @@
   },
   {
     "id": 26,
+    "nameId": 61,
     "name": "Boltstorm Gauntlet",
     "damage": 60,
     "accuracy": 0,
@@ -601,6 +651,7 @@
   },
   {
     "id": 9056,
+    "nameId": 61,
     "name": "Boltstorm Gauntlet",
     "damage": 3,
     "accuracy": 75,
@@ -613,6 +664,7 @@
   },
   {
     "id": 9054,
+    "nameId": 61,
     "name": "Boltstorm Gauntlet",
     "damage": 60,
     "accuracy": 0,
@@ -625,6 +677,7 @@
   },
   {
     "id": 9003,
+    "nameId": 61,
     "name": "Boltstorm Gauntlet",
     "damage": 4,
     "accuracy": 90,
@@ -637,6 +690,7 @@
   },
   {
     "id": 9002,
+    "nameId": 61,
     "name": "Boltstorm Gauntlet",
     "damage": 125,
     "accuracy": 85,
@@ -649,6 +703,7 @@
   },
   {
     "id": 1025,
+    "nameId": 148,
     "name": "Boneswords",
     "damage": 55,
     "accuracy": 0,
@@ -661,6 +716,7 @@
   },
   {
     "id": 1030,
+    "nameId": 148,
     "name": "Boneswords",
     "damage": 50,
     "accuracy": 0,
@@ -673,6 +729,7 @@
   },
   {
     "id": 5033,
+    "nameId": 1278,
     "name": "Boomstikks",
     "damage": 35,
     "accuracy": 75,
@@ -685,6 +742,7 @@
   },
   {
     "id": 8007,
+    "nameId": 1312,
     "name": "Brutal Assault Weapon",
     "damage": 10,
     "accuracy": 0,
@@ -697,6 +755,7 @@
   },
   {
     "id": 5013,
+    "nameId": 785,
     "name": "Burna",
     "damage": 3,
     "accuracy": 100,
@@ -709,6 +768,7 @@
   },
   {
     "id": 5039,
+    "nameId": 1286,
     "name": "Burna Exhausts",
     "damage": 9,
     "accuracy": 100,
@@ -721,6 +781,7 @@
   },
   {
     "id": 4024,
+    "nameId": 1572,
     "name": "Burning Blood",
     "damage": 7,
     "accuracy": 100,
@@ -733,6 +794,7 @@
   },
   {
     "id": 4004,
+    "nameId": 630,
     "name": "Burning Roar",
     "damage": 2,
     "accuracy": 100,
@@ -745,6 +807,7 @@
   },
   {
     "id": 6013,
+    "nameId": 922,
     "name": "Burst Cannon",
     "damage": 6,
     "accuracy": 80,
@@ -757,6 +820,7 @@
   },
   {
     "id": 6023,
+    "nameId": 922,
     "name": "Burst Cannon",
     "damage": 8,
     "accuracy": 80,
@@ -769,6 +833,7 @@
   },
   {
     "id": 6009,
+    "nameId": 922,
     "name": "Burst Cannon",
     "damage": 6,
     "accuracy": 80,
@@ -781,6 +846,7 @@
   },
   {
     "id": 6000,
+    "nameId": 922,
     "name": "Burst Cannon",
     "damage": 9,
     "accuracy": 80,
@@ -793,6 +859,7 @@
   },
   {
     "id": 2032,
+    "nameId": 1271,
     "name": "Castigator Autocannon",
     "damage": 48,
     "accuracy": 90,
@@ -805,6 +872,7 @@
   },
   {
     "id": 2031,
+    "nameId": 1272,
     "name": "Castigator Battlecannon",
     "damage": 125,
     "accuracy": 85,
@@ -817,6 +885,7 @@
   },
   {
     "id": 7026,
+    "nameId": 1080,
     "name": "Castigator Gatling Cannon",
     "damage": 4,
     "accuracy": 80,
@@ -829,6 +898,7 @@
   },
   {
     "id": 9016,
+    "nameId": 1531,
     "name": "Chainfist",
     "damage": 85,
     "accuracy": 75,
@@ -841,6 +911,7 @@
   },
   {
     "id": 13,
+    "nameId": 30,
     "name": "Chainsword",
     "damage": 24,
     "accuracy": 0,
@@ -853,6 +924,7 @@
   },
   {
     "id": 22,
+    "nameId": 30,
     "name": "Chainsword",
     "damage": 45,
     "accuracy": 0,
@@ -865,6 +937,7 @@
   },
   {
     "id": 24,
+    "nameId": 30,
     "name": "Chainsword",
     "damage": 45,
     "accuracy": 0,
@@ -877,6 +950,7 @@
   },
   {
     "id": 2001,
+    "nameId": 30,
     "name": "Chainsword",
     "damage": 90,
     "accuracy": 0,
@@ -889,6 +963,7 @@
   },
   {
     "id": 41,
+    "nameId": 30,
     "name": "Chainsword",
     "damage": 14,
     "accuracy": 0,
@@ -901,6 +976,7 @@
   },
   {
     "id": 51,
+    "nameId": 30,
     "name": "Chainsword",
     "damage": 45,
     "accuracy": 0,
@@ -913,6 +989,7 @@
   },
   {
     "id": 52,
+    "nameId": 30,
     "name": "Chainsword",
     "damage": 80,
     "accuracy": 0,
@@ -925,6 +1002,7 @@
   },
   {
     "id": 53,
+    "nameId": 30,
     "name": "Chainsword",
     "damage": 65,
     "accuracy": 0,
@@ -937,6 +1015,7 @@
   },
   {
     "id": 7000,
+    "nameId": 30,
     "name": "Chainsword",
     "damage": 45,
     "accuracy": 0,
@@ -949,6 +1028,7 @@
   },
   {
     "id": 7044,
+    "nameId": 30,
     "name": "Chainsword",
     "damage": 30,
     "accuracy": 0,
@@ -961,6 +1041,7 @@
   },
   {
     "id": 7045,
+    "nameId": 30,
     "name": "Chainsword",
     "damage": 45,
     "accuracy": 0,
@@ -973,6 +1054,7 @@
   },
   {
     "id": 5006,
+    "nameId": 779,
     "name": "Choppa",
     "damage": 10,
     "accuracy": 0,
@@ -985,6 +1067,7 @@
   },
   {
     "id": 5029,
+    "nameId": 779,
     "name": "Choppa",
     "damage": 10,
     "accuracy": 0,
@@ -997,6 +1080,7 @@
   },
   {
     "id": 9052,
+    "nameId": 1518,
     "name": "Combat Knife",
     "damage": 36,
     "accuracy": 0,
@@ -1009,6 +1093,7 @@
   },
   {
     "id": 8013,
+    "nameId": 1317,
     "name": "Combi-Flamer",
     "damage": 3,
     "accuracy": 100,
@@ -1021,6 +1106,7 @@
   },
   {
     "id": 8014,
+    "nameId": 1318,
     "name": "Combi-Plasma",
     "damage": 25,
     "accuracy": 85,
@@ -1033,6 +1119,7 @@
   },
   {
     "id": 2008,
+    "nameId": 646,
     "name": "Condemnor Boltgun",
     "damage": 5,
     "accuracy": 85,
@@ -1045,6 +1132,7 @@
   },
   {
     "id": 9046,
+    "nameId": 1491,
     "name": "Crozius Arcanum",
     "damage": 50,
     "accuracy": 0,
@@ -1057,6 +1145,7 @@
   },
   {
     "id": 6016,
+    "nameId": 960,
     "name": "Crushing Bulk",
     "damage": 80,
     "accuracy": 0,
@@ -1069,6 +1158,7 @@
   },
   {
     "id": 8030,
+    "nameId": 1329,
     "name": "Crushing Fist",
     "damage": 40,
     "accuracy": 0,
@@ -1081,6 +1171,7 @@
   },
   {
     "id": 9013,
+    "nameId": 1529,
     "name": "Cyclone Missile Launcher (Frag)",
     "damage": 8,
     "accuracy": 80,
@@ -1093,6 +1184,7 @@
   },
   {
     "id": 9014,
+    "nameId": 1530,
     "name": "Cyclone Missile Launcher (Krak)",
     "damage": 18,
     "accuracy": 80,
@@ -1105,6 +1197,7 @@
   },
   {
     "id": 8002,
+    "nameId": 1307,
     "name": "Daemon Hammer",
     "damage": 125,
     "accuracy": 90,
@@ -1117,6 +1210,7 @@
   },
   {
     "id": 4013,
+    "nameId": 760,
     "name": "Daemonic Axe - Strike",
     "damage": 120,
     "accuracy": 90,
@@ -1129,6 +1223,7 @@
   },
   {
     "id": 4021,
+    "nameId": 1574,
     "name": "Daemonic Axe - Sweep",
     "damage": 55,
     "accuracy": 90,
@@ -1141,6 +1236,7 @@
   },
   {
     "id": 5016,
+    "nameId": 765,
     "name": "Dakkagun",
     "damage": 5,
     "accuracy": 80,
@@ -1153,6 +1249,7 @@
   },
   {
     "id": 1003,
+    "nameId": 94,
     "name": "Deathspitter",
     "damage": 7,
     "accuracy": 85,
@@ -1165,6 +1262,7 @@
   },
   {
     "id": 1010,
+    "nameId": 155,
     "name": "Deathspitter with slimer maggots",
     "damage": 16,
     "accuracy": 80,
@@ -1177,6 +1275,7 @@
   },
   {
     "id": 7029,
+    "nameId": 1083,
     "name": "Demolisher Battle Cannon",
     "damage": 120,
     "accuracy": 95,
@@ -1189,6 +1288,7 @@
   },
   {
     "id": 1027,
+    "nameId": 278,
     "name": "Detonate",
     "damage": 90,
     "accuracy": 100,
@@ -1201,6 +1301,7 @@
   },
   {
     "id": 1043,
+    "nameId": 278,
     "name": "Detonate",
     "damage": 60,
     "accuracy": 100,
@@ -1213,6 +1314,7 @@
   },
   {
     "id": 1001,
+    "nameId": 165,
     "name": "Devourer",
     "damage": 3,
     "accuracy": 75,
@@ -1225,6 +1327,7 @@
   },
   {
     "id": 1033,
+    "nameId": 165,
     "name": "Devourer",
     "damage": 5,
     "accuracy": 75,
@@ -1237,6 +1340,7 @@
   },
   {
     "id": 1012,
+    "nameId": 154,
     "name": "Devourer with brainleech worms",
     "damage": 6,
     "accuracy": 75,
@@ -1249,6 +1353,7 @@
   },
   {
     "id": 7034,
+    "nameId": 1171,
     "name": "Dozer Blade",
     "damage": 30,
     "accuracy": 0,
@@ -1261,6 +1366,7 @@
   },
   {
     "id": 5018,
+    "nameId": 840,
     "name": "Dread Klaw",
     "damage": 140,
     "accuracy": 0,
@@ -1273,6 +1379,7 @@
   },
   {
     "id": 7023,
+    "nameId": 1077,
     "name": "Earthshaker Cannon",
     "damage": 70,
     "accuracy": 60,
@@ -1285,6 +1392,7 @@
   },
   {
     "id": 8038,
+    "nameId": 1337,
     "name": "Ectoplasma Cannon",
     "damage": 40,
     "accuracy": 80,
@@ -1297,6 +1405,7 @@
   },
   {
     "id": 8044,
+    "nameId": 1467,
     "name": "Ectoplasma Cannon - Jaws",
     "damage": 60,
     "accuracy": 100,
@@ -1309,6 +1418,7 @@
   },
   {
     "id": 61,
+    "nameId": 461,
     "name": "Encarmine Axe",
     "damage": 50,
     "accuracy": 0,
@@ -1321,6 +1431,7 @@
   },
   {
     "id": 62,
+    "nameId": 461,
     "name": "Encarmine Axe",
     "damage": 30,
     "accuracy": 0,
@@ -1333,6 +1444,7 @@
   },
   {
     "id": 60,
+    "nameId": 462,
     "name": "Encarmine Sword",
     "damage": 23,
     "accuracy": 0,
@@ -1345,6 +1457,7 @@
   },
   {
     "id": 3006,
+    "nameId": 511,
     "name": "Enmitic Disintegrator Pistols",
     "damage": 10,
     "accuracy": 90,
@@ -1357,6 +1470,7 @@
   },
   {
     "id": 3504,
+    "nameId": 511,
     "name": "Enmitic Disintegrator Pistols",
     "damage": 12,
     "accuracy": 90,
@@ -1369,6 +1483,7 @@
   },
   {
     "id": 3020,
+    "nameId": 530,
     "name": "Enmitic Exterminator",
     "damage": 18,
     "accuracy": 85,
@@ -1381,6 +1496,7 @@
   },
   {
     "id": 8035,
+    "nameId": 1334,
     "name": "Excruciator Cannon",
     "damage": 8,
     "accuracy": 80,
@@ -1393,6 +1509,7 @@
   },
   {
     "id": 3021,
+    "nameId": 569,
     "name": "Feeder Mandibles",
     "damage": 4,
     "accuracy": 0,
@@ -1405,6 +1522,7 @@
   },
   {
     "id": 6003,
+    "nameId": 926,
     "name": "Fireblade Pulse Rifle",
     "damage": 8,
     "accuracy": 90,
@@ -1417,6 +1535,7 @@
   },
   {
     "id": 2011,
+    "nameId": 694,
     "name": "Flamer",
     "damage": 3,
     "accuracy": 100,
@@ -1429,6 +1548,7 @@
   },
   {
     "id": 6018,
+    "nameId": 694,
     "name": "Flamer",
     "damage": 5,
     "accuracy": 100,
@@ -1441,6 +1561,7 @@
   },
   {
     "id": 6010,
+    "nameId": 694,
     "name": "Flamer",
     "damage": 4,
     "accuracy": 100,
@@ -1453,6 +1574,7 @@
   },
   {
     "id": 6002,
+    "nameId": 694,
     "name": "Flamer",
     "damage": 8,
     "accuracy": 100,
@@ -1465,6 +1587,7 @@
   },
   {
     "id": 1040,
+    "nameId": 1037,
     "name": "Flamespurt",
     "damage": 8,
     "accuracy": 100,
@@ -1477,6 +1600,7 @@
   },
   {
     "id": 1042,
+    "nameId": 1037,
     "name": "Flamespurt",
     "damage": 9,
     "accuracy": 100,
@@ -1489,6 +1613,7 @@
   },
   {
     "id": 37,
+    "nameId": 160,
     "name": "Flamestorm Cannon",
     "damage": 6,
     "accuracy": 100,
@@ -1501,6 +1626,7 @@
   },
   {
     "id": 10,
+    "nameId": 62,
     "name": "Flamestorm Gauntlet",
     "damage": 3,
     "accuracy": 100,
@@ -1513,6 +1639,7 @@
   },
   {
     "id": 27,
+    "nameId": 62,
     "name": "Flamestorm Gauntlet",
     "damage": 60,
     "accuracy": 0,
@@ -1525,6 +1652,7 @@
   },
   {
     "id": 9057,
+    "nameId": 62,
     "name": "Flamestorm Gauntlet",
     "damage": 3,
     "accuracy": 100,
@@ -1537,6 +1665,7 @@
   },
   {
     "id": 9055,
+    "nameId": 62,
     "name": "Flamestorm Gauntlet",
     "damage": 60,
     "accuracy": 0,
@@ -1549,6 +1678,7 @@
   },
   {
     "id": 3014,
+    "nameId": 503,
     "name": "Flayer Claws",
     "damage": 14,
     "accuracy": 0,
@@ -1561,6 +1691,7 @@
   },
   {
     "id": 1002,
+    "nameId": 26,
     "name": "Fleshborer",
     "damage": 5,
     "accuracy": 80,
@@ -1573,6 +1704,7 @@
   },
   {
     "id": 8042,
+    "nameId": 1428,
     "name": "Fleshmetal Guns - Heavy Bolter",
     "damage": 7,
     "accuracy": 85,
@@ -1585,6 +1717,7 @@
   },
   {
     "id": 8032,
+    "nameId": 1331,
     "name": "Fleshmetal Guns - Heavy Plasma",
     "damage": 30,
     "accuracy": 80,
@@ -1597,6 +1730,7 @@
   },
   {
     "id": 8031,
+    "nameId": 1330,
     "name": "Fleshmetal Guns - Meltagun",
     "damage": 35,
     "accuracy": 80,
@@ -1609,6 +1743,7 @@
   },
   {
     "id": 8033,
+    "nameId": 1332,
     "name": "Fleshmetal Guns - Storm Bolter",
     "damage": 4,
     "accuracy": 90,
@@ -1621,6 +1756,7 @@
   },
   {
     "id": 33,
+    "nameId": 119,
     "name": "Force Halberd",
     "damage": 120,
     "accuracy": 0,
@@ -1633,6 +1769,7 @@
   },
   {
     "id": 7005,
+    "nameId": 1064,
     "name": "Force Stave",
     "damage": 45,
     "accuracy": 0,
@@ -1645,6 +1782,7 @@
   },
   {
     "id": 8004,
+    "nameId": 1309,
     "name": "Force Stave",
     "damage": 95,
     "accuracy": 0,
@@ -1657,6 +1795,7 @@
   },
   {
     "id": 39,
+    "nameId": 220,
     "name": "Force Sword",
     "damage": 35,
     "accuracy": 0,
@@ -1669,6 +1808,7 @@
   },
   {
     "id": 8036,
+    "nameId": 1335,
     "name": "Forgefiend Jaws",
     "damage": 85,
     "accuracy": 90,
@@ -1681,6 +1821,7 @@
   },
   {
     "id": 11,
+    "nameId": 63,
     "name": "Fragstorm Grenade Launcher",
     "damage": 10,
     "accuracy": 100,
@@ -1693,6 +1834,7 @@
   },
   {
     "id": 67,
+    "nameId": 63,
     "name": "Fragstorm Grenade Launcher",
     "damage": 10,
     "accuracy": 100,
@@ -1705,6 +1847,7 @@
   },
   {
     "id": 9058,
+    "nameId": 63,
     "name": "Fragstorm Grenade Launcher",
     "damage": 10,
     "accuracy": 100,
@@ -1717,6 +1860,7 @@
   },
   {
     "id": 9063,
+    "nameId": 63,
     "name": "Fragstorm Grenade Launcher",
     "damage": 10,
     "accuracy": 100,
@@ -1729,6 +1873,7 @@
   },
   {
     "id": 9034,
+    "nameId": 63,
     "name": "Fragstorm Grenade Launcher",
     "damage": 10,
     "accuracy": 100,
@@ -1741,6 +1886,7 @@
   },
   {
     "id": 9019,
+    "nameId": 63,
     "name": "Fragstorm Grenade Launcher",
     "damage": 10,
     "accuracy": 90,
@@ -1753,6 +1899,7 @@
   },
   {
     "id": 35,
+    "nameId": 134,
     "name": "Furioso Fists",
     "damage": 90,
     "accuracy": 0,
@@ -1765,6 +1912,7 @@
   },
   {
     "id": 6014,
+    "nameId": 951,
     "name": "Fusion Blaster",
     "damage": 80,
     "accuracy": 85,
@@ -1777,6 +1925,7 @@
   },
   {
     "id": 6024,
+    "nameId": 951,
     "name": "Fusion Blaster",
     "damage": 150,
     "accuracy": 85,
@@ -1789,6 +1938,7 @@
   },
   {
     "id": 6011,
+    "nameId": 951,
     "name": "Fusion Blaster",
     "damage": 40,
     "accuracy": 85,
@@ -1801,6 +1951,7 @@
   },
   {
     "id": 6017,
+    "nameId": 966,
     "name": "Fusion Collider",
     "damage": 150,
     "accuracy": 80,
@@ -1813,6 +1964,7 @@
   },
   {
     "id": 3009,
+    "nameId": 517,
     "name": "Gauss Blaster",
     "damage": 13,
     "accuracy": 85,
@@ -1825,6 +1977,7 @@
   },
   {
     "id": 3025,
+    "nameId": 573,
     "name": "Gauss Cannon",
     "damage": 50,
     "accuracy": 80,
@@ -1837,6 +1990,7 @@
   },
   {
     "id": 3019,
+    "nameId": 529,
     "name": "Gauss Destructor",
     "damage": 110,
     "accuracy": 80,
@@ -1849,6 +2003,7 @@
   },
   {
     "id": 3007,
+    "nameId": 495,
     "name": "Gauss Flayer",
     "damage": 9,
     "accuracy": 80,
@@ -1861,6 +2016,7 @@
   },
   {
     "id": 3500,
+    "nameId": 495,
     "name": "Gauss Flayer",
     "damage": 10,
     "accuracy": 80,
@@ -1873,6 +2029,7 @@
   },
   {
     "id": 3008,
+    "nameId": 496,
     "name": "Gauss Reaper",
     "damage": 20,
     "accuracy": 80,
@@ -1885,6 +2042,7 @@
   },
   {
     "id": 3501,
+    "nameId": 496,
     "name": "Gauss Reaper",
     "damage": 16,
     "accuracy": 80,
@@ -1897,6 +2055,7 @@
   },
   {
     "id": 6019,
+    "nameId": 967,
     "name": "Ghostkeel Fists",
     "damage": 65,
     "accuracy": 0,
@@ -1909,6 +2068,7 @@
   },
   {
     "id": 2000,
+    "nameId": 195,
     "name": "Godwyn De'az Pattern Bolter",
     "damage": 4,
     "accuracy": 80,
@@ -1921,6 +2081,7 @@
   },
   {
     "id": 2002,
+    "nameId": 195,
     "name": "Godwyn De'az Pattern Bolter",
     "damage": 6,
     "accuracy": 95,
@@ -1933,6 +2094,7 @@
   },
   {
     "id": 2036,
+    "nameId": 195,
     "name": "Godwyn De'az Pattern Bolter",
     "damage": 4,
     "accuracy": 80,
@@ -1945,6 +2107,7 @@
   },
   {
     "id": 4001,
+    "nameId": 612,
     "name": "Gore-drenched Fangs",
     "damage": 12,
     "accuracy": 90,
@@ -1957,6 +2120,7 @@
   },
   {
     "id": 4005,
+    "nameId": 708,
     "name": "Great Axe of Khorne - Strike",
     "damage": 150,
     "accuracy": 90,
@@ -1969,6 +2133,7 @@
   },
   {
     "id": 4006,
+    "nameId": 708,
     "name": "Great Axe of Khorne - Strike",
     "damage": 85,
     "accuracy": 95,
@@ -1981,6 +2146,7 @@
   },
   {
     "id": 4019,
+    "nameId": 1573,
     "name": "Great Axe of Khorne - Sweep",
     "damage": 60,
     "accuracy": 95,
@@ -1993,6 +2159,7 @@
   },
   {
     "id": 5007,
+    "nameId": 829,
     "name": "Grot Blasta",
     "damage": 4,
     "accuracy": 75,
@@ -2005,6 +2172,7 @@
   },
   {
     "id": 8037,
+    "nameId": 1336,
     "name": "Hades Autocannon",
     "damage": 5,
     "accuracy": 85,
@@ -2017,6 +2185,7 @@
   },
   {
     "id": 2014,
+    "nameId": 650,
     "name": "Hallowed Mace",
     "damage": 30,
     "accuracy": 0,
@@ -2029,6 +2198,7 @@
   },
   {
     "id": 9020,
+    "nameId": 1524,
     "name": "Hammerstrike Missile Launcher",
     "damage": 50,
     "accuracy": 85,
@@ -2041,6 +2211,7 @@
   },
   {
     "id": 6,
+    "nameId": 37,
     "name": "Hand Flamer",
     "damage": 2,
     "accuracy": 100,
@@ -2053,6 +2224,7 @@
   },
   {
     "id": 43,
+    "nameId": 37,
     "name": "Hand Flamer",
     "damage": 2,
     "accuracy": 100,
@@ -2065,6 +2237,7 @@
   },
   {
     "id": 46,
+    "nameId": 37,
     "name": "Hand Flamer",
     "damage": 2,
     "accuracy": 100,
@@ -2077,6 +2250,7 @@
   },
   {
     "id": 9050,
+    "nameId": 37,
     "name": "Hand Flamer",
     "damage": 2,
     "accuracy": 100,
@@ -2089,6 +2263,7 @@
   },
   {
     "id": 4007,
+    "nameId": 714,
     "name": "Harvester Cannon",
     "damage": 35,
     "accuracy": 85,
@@ -2101,6 +2276,7 @@
   },
   {
     "id": 8040,
+    "nameId": 1471,
     "name": "Havoc Launcher",
     "damage": 12,
     "accuracy": 75,
@@ -2113,6 +2289,7 @@
   },
   {
     "id": 8022,
+    "nameId": 1324,
     "name": "Havoc Missile Launcher (Frag)",
     "damage": 12,
     "accuracy": 70,
@@ -2125,6 +2302,7 @@
   },
   {
     "id": 8045,
+    "nameId": 1468,
     "name": "Havoc Missile Launcher (Krak)",
     "damage": 40,
     "accuracy": 70,
@@ -2137,6 +2315,7 @@
   },
   {
     "id": 8023,
+    "nameId": 1325,
     "name": "Havoc Reaper Chaincannon",
     "damage": 4,
     "accuracy": 80,
@@ -2149,6 +2328,7 @@
   },
   {
     "id": 8010,
+    "nameId": 1315,
     "name": "Heavy Autostubbers",
     "damage": 12,
     "accuracy": 80,
@@ -2161,6 +2341,7 @@
   },
   {
     "id": 9049,
+    "nameId": 1479,
     "name": "Heavy Bolt Pistol",
     "damage": 5,
     "accuracy": 90,
@@ -2173,6 +2354,7 @@
   },
   {
     "id": 9009,
+    "nameId": 1506,
     "name": "Heavy Bolt Rifle",
     "damage": 6,
     "accuracy": 85,
@@ -2185,6 +2367,7 @@
   },
   {
     "id": 14,
+    "nameId": 32,
     "name": "Heavy Bolter",
     "damage": 7,
     "accuracy": 65,
@@ -2197,6 +2380,7 @@
   },
   {
     "id": 18,
+    "nameId": 32,
     "name": "Heavy Bolter",
     "damage": 8,
     "accuracy": 90,
@@ -2209,6 +2393,7 @@
   },
   {
     "id": 2025,
+    "nameId": 32,
     "name": "Heavy Bolter",
     "damage": 8,
     "accuracy": 90,
@@ -2221,6 +2406,7 @@
   },
   {
     "id": 2015,
+    "nameId": 32,
     "name": "Heavy Bolter",
     "damage": 6,
     "accuracy": 80,
@@ -2233,6 +2419,7 @@
   },
   {
     "id": 2021,
+    "nameId": 32,
     "name": "Heavy Bolter",
     "damage": 8,
     "accuracy": 90,
@@ -2245,6 +2432,7 @@
   },
   {
     "id": 2026,
+    "nameId": 32,
     "name": "Heavy Bolter",
     "damage": 8,
     "accuracy": 80,
@@ -2257,6 +2445,7 @@
   },
   {
     "id": 66,
+    "nameId": 32,
     "name": "Heavy Bolter",
     "damage": 9,
     "accuracy": 80,
@@ -2269,6 +2458,7 @@
   },
   {
     "id": 7015,
+    "nameId": 32,
     "name": "Heavy Bolter",
     "damage": 8,
     "accuracy": 90,
@@ -2281,6 +2471,7 @@
   },
   {
     "id": 7035,
+    "nameId": 32,
     "name": "Heavy Bolter",
     "damage": 8,
     "accuracy": 85,
@@ -2293,6 +2484,7 @@
   },
   {
     "id": 7039,
+    "nameId": 32,
     "name": "Heavy Bolter",
     "damage": 8,
     "accuracy": 85,
@@ -2305,6 +2497,7 @@
   },
   {
     "id": 7041,
+    "nameId": 32,
     "name": "Heavy Bolter",
     "damage": 8,
     "accuracy": 90,
@@ -2317,6 +2510,7 @@
   },
   {
     "id": 8021,
+    "nameId": 32,
     "name": "Heavy Bolter",
     "damage": 7,
     "accuracy": 75,
@@ -2329,6 +2523,7 @@
   },
   {
     "id": 8027,
+    "nameId": 32,
     "name": "Heavy Bolter",
     "damage": 8,
     "accuracy": 85,
@@ -2341,6 +2536,7 @@
   },
   {
     "id": 9008,
+    "nameId": 32,
     "name": "Heavy Bolter",
     "damage": 7,
     "accuracy": 75,
@@ -2353,6 +2549,7 @@
   },
   {
     "id": 6020,
+    "nameId": 970,
     "name": "Heavy Burst Cannon",
     "damage": 14,
     "accuracy": 85,
@@ -2365,6 +2562,7 @@
   },
   {
     "id": 15,
+    "nameId": 34,
     "name": "Heavy Flamer",
     "damage": 0,
     "accuracy": 50,
@@ -2377,6 +2575,7 @@
   },
   {
     "id": 19,
+    "nameId": 34,
     "name": "Heavy Flamer",
     "damage": 9,
     "accuracy": 50,
@@ -2389,6 +2588,7 @@
   },
   {
     "id": 31,
+    "nameId": 34,
     "name": "Heavy Flamer",
     "damage": 9,
     "accuracy": 100,
@@ -2401,6 +2601,7 @@
   },
   {
     "id": 2016,
+    "nameId": 34,
     "name": "Heavy Flamer",
     "damage": 4,
     "accuracy": 100,
@@ -2413,6 +2614,7 @@
   },
   {
     "id": 2027,
+    "nameId": 34,
     "name": "Heavy Flamer",
     "damage": 5,
     "accuracy": 100,
@@ -2425,6 +2627,7 @@
   },
   {
     "id": 7016,
+    "nameId": 34,
     "name": "Heavy Flamer",
     "damage": 9,
     "accuracy": 100,
@@ -2437,6 +2640,7 @@
   },
   {
     "id": 7036,
+    "nameId": 34,
     "name": "Heavy Flamer",
     "damage": 9,
     "accuracy": 100,
@@ -2449,6 +2653,7 @@
   },
   {
     "id": 7042,
+    "nameId": 34,
     "name": "Heavy Flamer",
     "damage": 9,
     "accuracy": 100,
@@ -2461,6 +2666,7 @@
   },
   {
     "id": 9032,
+    "nameId": 34,
     "name": "Heavy Flamer",
     "damage": 9,
     "accuracy": 100,
@@ -2473,6 +2679,7 @@
   },
   {
     "id": 9012,
+    "nameId": 34,
     "name": "Heavy Flamer",
     "damage": 4,
     "accuracy": 100,
@@ -2485,6 +2692,7 @@
   },
   {
     "id": 9030,
+    "nameId": 1512,
     "name": "Heavy Onslaught Gatling Cannon",
     "damage": 3,
     "accuracy": 85,
@@ -2497,6 +2705,7 @@
   },
   {
     "id": 28,
+    "nameId": 85,
     "name": "Heavy Plasma Incinerator",
     "damage": 55,
     "accuracy": 80,
@@ -2509,6 +2718,7 @@
   },
   {
     "id": 6015,
+    "nameId": 959,
     "name": "Heavy Rail Rifle",
     "damage": 160,
     "accuracy": 80,
@@ -2521,6 +2731,7 @@
   },
   {
     "id": 7028,
+    "nameId": 1082,
     "name": "Heavy Stubbers",
     "damage": 3,
     "accuracy": 80,
@@ -2533,6 +2744,7 @@
   },
   {
     "id": 1007,
+    "nameId": 217,
     "name": "Heavy Venom Cannon",
     "damage": 80,
     "accuracy": 95,
@@ -2545,6 +2757,7 @@
   },
   {
     "id": 8024,
+    "nameId": 1326,
     "name": "Helbrute Fist",
     "damage": 90,
     "accuracy": 90,
@@ -2557,6 +2770,7 @@
   },
   {
     "id": 8026,
+    "nameId": 1328,
     "name": "Helbrute Hammer",
     "damage": 130,
     "accuracy": 90,
@@ -2569,6 +2783,7 @@
   },
   {
     "id": 4000,
+    "nameId": 611,
     "name": "Hellblade",
     "damage": 12,
     "accuracy": 85,
@@ -2581,6 +2796,7 @@
   },
   {
     "id": 4018,
+    "nameId": 611,
     "name": "Hellblade",
     "damage": 12,
     "accuracy": 85,
@@ -2593,6 +2809,7 @@
   },
   {
     "id": 4023,
+    "nameId": 1567,
     "name": "Hellfire Breath",
     "damage": 5,
     "accuracy": 100,
@@ -2605,6 +2822,7 @@
   },
   {
     "id": 4012,
+    "nameId": 759,
     "name": "Hellforged Sword",
     "damage": 60,
     "accuracy": 95,
@@ -2617,6 +2835,7 @@
   },
   {
     "id": 4014,
+    "nameId": 759,
     "name": "Hellforged Sword",
     "damage": 40,
     "accuracy": 0,
@@ -2629,6 +2848,7 @@
   },
   {
     "id": 6001,
+    "nameId": 923,
     "name": "High-output Burst Cannon",
     "damage": 9,
     "accuracy": 80,
@@ -2641,6 +2861,7 @@
   },
   {
     "id": 6004,
+    "nameId": 931,
     "name": "Honour Stave",
     "damage": 40,
     "accuracy": 0,
@@ -2653,6 +2874,7 @@
   },
   {
     "id": 6030,
+    "nameId": 931,
     "name": "Honour Stave",
     "damage": 40,
     "accuracy": 0,
@@ -2665,6 +2887,7 @@
   },
   {
     "id": 7011,
+    "nameId": 1068,
     "name": "Hot-Shot Lasgun",
     "damage": 5,
     "accuracy": 90,
@@ -2677,6 +2900,7 @@
   },
   {
     "id": 7012,
+    "nameId": 1069,
     "name": "Hot-Shot Volleygun",
     "damage": 5,
     "accuracy": 80,
@@ -2689,6 +2913,7 @@
   },
   {
     "id": 3000,
+    "nameId": 547,
     "name": "Hyperphase Glaive",
     "damage": 50,
     "accuracy": 0,
@@ -2701,6 +2926,7 @@
   },
   {
     "id": 3031,
+    "nameId": 547,
     "name": "Hyperphase Glaive",
     "damage": 40,
     "accuracy": 0,
@@ -2713,6 +2939,7 @@
   },
   {
     "id": 3018,
+    "nameId": 508,
     "name": "Hyperphase Reap-blade",
     "damage": 60,
     "accuracy": 0,
@@ -2725,6 +2952,7 @@
   },
   {
     "id": 3503,
+    "nameId": 508,
     "name": "Hyperphase Reap-blade",
     "damage": 60,
     "accuracy": 0,
@@ -2737,6 +2965,7 @@
   },
   {
     "id": 3012,
+    "nameId": 560,
     "name": "Hyperphase Sword & Dispersion Shield",
     "damage": 30,
     "accuracy": 0,
@@ -2749,6 +2978,7 @@
   },
   {
     "id": 3017,
+    "nameId": 507,
     "name": "Hyperphase Threshers",
     "damage": 18,
     "accuracy": 0,
@@ -2761,6 +2991,7 @@
   },
   {
     "id": 3030,
+    "nameId": 507,
     "name": "Hyperphase Threshers",
     "damage": 45,
     "accuracy": 0,
@@ -2773,6 +3004,7 @@
   },
   {
     "id": 3502,
+    "nameId": 507,
     "name": "Hyperphase Threshers",
     "damage": 18,
     "accuracy": 0,
@@ -2785,6 +3017,7 @@
   },
   {
     "id": 3508,
+    "nameId": 507,
     "name": "Hyperphase Threshers",
     "damage": 45,
     "accuracy": 0,
@@ -2797,6 +3030,7 @@
   },
   {
     "id": 9064,
+    "nameId": 1515,
     "name": "Icarus Rocket Pods",
     "damage": 30,
     "accuracy": 85,
@@ -2809,6 +3043,7 @@
   },
   {
     "id": 9069,
+    "nameId": 1515,
     "name": "Icarus Rocket Pods",
     "damage": 32,
     "accuracy": 85,
@@ -2821,6 +3056,7 @@
   },
   {
     "id": 9070,
+    "nameId": 1515,
     "name": "Icarus Rocket Pods",
     "damage": 20,
     "accuracy": 85,
@@ -2833,6 +3069,7 @@
   },
   {
     "id": 2022,
+    "nameId": 653,
     "name": "Immolation Flamers",
     "damage": 8,
     "accuracy": 100,
@@ -2845,6 +3082,7 @@
   },
   {
     "id": 1036,
+    "nameId": 465,
     "name": "Impaler Cannon",
     "damage": 20,
     "accuracy": 75,
@@ -2857,6 +3095,7 @@
   },
   {
     "id": 64,
+    "nameId": 998,
     "name": "Incendium Cannon",
     "damage": 9,
     "accuracy": 100,
@@ -2869,6 +3108,7 @@
   },
   {
     "id": 9061,
+    "nameId": 998,
     "name": "Incendium Cannon",
     "damage": 9,
     "accuracy": 100,
@@ -2881,6 +3121,7 @@
   },
   {
     "id": 4015,
+    "nameId": 889,
     "name": "Infernal Cannon",
     "damage": 30,
     "accuracy": 95,
@@ -2893,6 +3134,7 @@
   },
   {
     "id": 8041,
+    "nameId": 1370,
     "name": "Infernal Gaze",
     "damage": 60,
     "accuracy": 100,
@@ -2905,6 +3147,7 @@
   },
   {
     "id": 34,
+    "nameId": 126,
     "name": "Inferno Pistol",
     "damage": 40,
     "accuracy": 80,
@@ -2917,6 +3160,7 @@
   },
   {
     "id": 44,
+    "nameId": 126,
     "name": "Inferno Pistol",
     "damage": 40,
     "accuracy": 80,
@@ -2929,6 +3173,7 @@
   },
   {
     "id": 47,
+    "nameId": 126,
     "name": "Inferno Pistol",
     "damage": 20,
     "accuracy": 80,
@@ -2941,6 +3186,7 @@
   },
   {
     "id": 59,
+    "nameId": 126,
     "name": "Inferno Pistol",
     "damage": 40,
     "accuracy": 80,
@@ -2953,6 +3199,7 @@
   },
   {
     "id": 68,
+    "nameId": 1001,
     "name": "Invictor Fist",
     "damage": 75,
     "accuracy": 95,
@@ -2965,6 +3212,7 @@
   },
   {
     "id": 9059,
+    "nameId": 1001,
     "name": "Invictor Fist",
     "damage": 75,
     "accuracy": 95,
@@ -2977,6 +3225,7 @@
   },
   {
     "id": 6021,
+    "nameId": 971,
     "name": "Ion Accelerator",
     "damage": 30,
     "accuracy": 90,
@@ -2989,6 +3238,7 @@
   },
   {
     "id": 6026,
+    "nameId": 979,
     "name": "Ion Cannon",
     "damage": 80,
     "accuracy": 90,
@@ -3001,6 +3251,7 @@
   },
   {
     "id": 6006,
+    "nameId": 940,
     "name": "Ion Rifle",
     "damage": 14,
     "accuracy": 80,
@@ -3013,6 +3264,7 @@
   },
   {
     "id": 4017,
+    "nameId": 717,
     "name": "Iron Claw",
     "damage": 100,
     "accuracy": 90,
@@ -3025,6 +3277,7 @@
   },
   {
     "id": 5034,
+    "nameId": 1279,
     "name": "Killa Jet",
     "damage": 7,
     "accuracy": 100,
@@ -3037,6 +3290,7 @@
   },
   {
     "id": 5012,
+    "nameId": 806,
     "name": "Killsaw",
     "damage": 60,
     "accuracy": 0,
@@ -3049,6 +3303,7 @@
   },
   {
     "id": 5000,
+    "nameId": 804,
     "name": "Kombi-rokkit",
     "damage": 40,
     "accuracy": 90,
@@ -3061,6 +3316,7 @@
   },
   {
     "id": 5027,
+    "nameId": 804,
     "name": "Kombi-rokkit",
     "damage": 80,
     "accuracy": 100,
@@ -3073,6 +3329,7 @@
   },
   {
     "id": 5011,
+    "nameId": 805,
     "name": "Kombi-skorcha",
     "damage": 5,
     "accuracy": 100,
@@ -3085,6 +3342,7 @@
   },
   {
     "id": 5019,
+    "nameId": 789,
     "name": "Kopta Rokkits",
     "damage": 55,
     "accuracy": 90,
@@ -3097,6 +3355,7 @@
   },
   {
     "id": 9021,
+    "nameId": 1525,
     "name": "Krakstorm Grenade Launcher",
     "damage": 36,
     "accuracy": 85,
@@ -3109,6 +3368,7 @@
   },
   {
     "id": 5003,
+    "nameId": 790,
     "name": "Kustom Mega-blasta",
     "damage": 95,
     "accuracy": 90,
@@ -3121,6 +3381,7 @@
   },
   {
     "id": 5030,
+    "nameId": 790,
     "name": "Kustom Mega-blasta",
     "damage": 95,
     "accuracy": 90,
@@ -3133,6 +3394,7 @@
   },
   {
     "id": 5035,
+    "nameId": 1283,
     "name": "Kustom Shokk Rifle",
     "damage": 150,
     "accuracy": 90,
@@ -3145,6 +3407,7 @@
   },
   {
     "id": 5020,
+    "nameId": 803,
     "name": "Kustom Shoota",
     "damage": 5,
     "accuracy": 90,
@@ -3157,6 +3420,7 @@
   },
   {
     "id": 9040,
+    "nameId": 1501,
     "name": "Lancer Laser Destroyer",
     "damage": 170,
     "accuracy": 90,
@@ -3169,6 +3433,7 @@
   },
   {
     "id": 9028,
+    "nameId": 1494,
     "name": "Las Fusil",
     "damage": 74,
     "accuracy": 90,
@@ -3181,6 +3446,7 @@
   },
   {
     "id": 7014,
+    "nameId": 1071,
     "name": "Lascannon",
     "damage": 100,
     "accuracy": 60,
@@ -3193,6 +3459,7 @@
   },
   {
     "id": 7037,
+    "nameId": 1071,
     "name": "Lascannon",
     "damage": 100,
     "accuracy": 90,
@@ -3205,6 +3472,7 @@
   },
   {
     "id": 7010,
+    "nameId": 1067,
     "name": "Lasgun",
     "damage": 4,
     "accuracy": 80,
@@ -3217,6 +3485,7 @@
   },
   {
     "id": 7003,
+    "nameId": 1062,
     "name": "Lasgun with Bayonet",
     "damage": 4,
     "accuracy": 65,
@@ -3229,6 +3498,7 @@
   },
   {
     "id": 7007,
+    "nameId": 1065,
     "name": "Laspistol",
     "damage": 3,
     "accuracy": 90,
@@ -3241,6 +3511,7 @@
   },
   {
     "id": 7046,
+    "nameId": 1065,
     "name": "Laspistol",
     "damage": 3,
     "accuracy": 90,
@@ -3253,6 +3524,7 @@
   },
   {
     "id": 7013,
+    "nameId": 1070,
     "name": "Leman Russ Battle Cannon",
     "damage": 125,
     "accuracy": 85,
@@ -3265,6 +3537,7 @@
   },
   {
     "id": 7047,
+    "nameId": 1070,
     "name": "Leman Russ Battle Cannon",
     "damage": 125,
     "accuracy": 85,
@@ -3277,6 +3550,7 @@
   },
   {
     "id": 54,
+    "nameId": 458,
     "name": "Lightning Claws",
     "damage": 21,
     "accuracy": 0,
@@ -3289,6 +3563,7 @@
   },
   {
     "id": 9029,
+    "nameId": 1511,
     "name": "Macro Plasma Incinerator",
     "damage": 45,
     "accuracy": 80,
@@ -3301,6 +3576,7 @@
   },
   {
     "id": 4016,
+    "nameId": 757,
     "name": "Malefic Talons",
     "damage": 35,
     "accuracy": 100,
@@ -3313,6 +3589,7 @@
   },
   {
     "id": 1021,
+    "nameId": 79,
     "name": "Massive Crushing Claws",
     "damage": 90,
     "accuracy": 0,
@@ -3325,6 +3602,7 @@
   },
   {
     "id": 1019,
+    "nameId": 151,
     "name": "Massive Scything Talons",
     "damage": 120,
     "accuracy": 0,
@@ -3337,6 +3615,7 @@
   },
   {
     "id": 5,
+    "nameId": 64,
     "name": "Master-crafted Bolt Pistol",
     "damage": 8,
     "accuracy": 90,
@@ -3349,6 +3628,7 @@
   },
   {
     "id": 50,
+    "nameId": 64,
     "name": "Master-crafted Bolt Pistol",
     "damage": 8,
     "accuracy": 90,
@@ -3361,6 +3641,7 @@
   },
   {
     "id": 9010,
+    "nameId": 1486,
     "name": "Master-crafted Power Sword",
     "damage": 25,
     "accuracy": 90,
@@ -3373,6 +3654,7 @@
   },
   {
     "id": 9066,
+    "nameId": 1486,
     "name": "Master-crafted Power Sword",
     "damage": 100,
     "accuracy": 0,
@@ -3385,6 +3667,7 @@
   },
   {
     "id": 9006,
+    "nameId": 1476,
     "name": "Melee Attack",
     "damage": 45,
     "accuracy": 0,
@@ -3397,6 +3680,7 @@
   },
   {
     "id": 9022,
+    "nameId": 1526,
     "name": "Melta Destroyer",
     "damage": 65,
     "accuracy": 80,
@@ -3409,6 +3693,7 @@
   },
   {
     "id": 9025,
+    "nameId": 1496,
     "name": "Melta Rifle",
     "damage": 75,
     "accuracy": 90,
@@ -3421,6 +3706,7 @@
   },
   {
     "id": 23,
+    "nameId": 38,
     "name": "Meltagun",
     "damage": 0,
     "accuracy": 50,
@@ -3433,6 +3719,7 @@
   },
   {
     "id": 32,
+    "nameId": 38,
     "name": "Meltagun",
     "damage": 180,
     "accuracy": 80,
@@ -3445,6 +3732,7 @@
   },
   {
     "id": 2012,
+    "nameId": 38,
     "name": "Meltagun",
     "damage": 30,
     "accuracy": 80,
@@ -3457,6 +3745,7 @@
   },
   {
     "id": 7022,
+    "nameId": 1076,
     "name": "Militarum Multi-Laser",
     "damage": 16,
     "accuracy": 80,
@@ -3469,6 +3758,7 @@
   },
   {
     "id": 7032,
+    "nameId": 1076,
     "name": "Militarum Multi-Laser",
     "damage": 16,
     "accuracy": 80,
@@ -3481,6 +3771,7 @@
   },
   {
     "id": 7043,
+    "nameId": 1076,
     "name": "Militarum Multi-Laser",
     "damage": 16,
     "accuracy": 80,
@@ -3493,6 +3784,7 @@
   },
   {
     "id": 2020,
+    "nameId": 652,
     "name": "Missile Launcher",
     "damage": 70,
     "accuracy": 75,
@@ -3505,6 +3797,7 @@
   },
   {
     "id": 7020,
+    "nameId": 1074,
     "name": "Missile Launcher (Frag)",
     "damage": 25,
     "accuracy": 60,
@@ -3517,6 +3810,7 @@
   },
   {
     "id": 7021,
+    "nameId": 1075,
     "name": "Missile Launcher (Krak)",
     "damage": 60,
     "accuracy": 60,
@@ -3529,6 +3823,7 @@
   },
   {
     "id": 6012,
+    "nameId": 952,
     "name": "Missile Pod",
     "damage": 30,
     "accuracy": 100,
@@ -3541,6 +3836,7 @@
   },
   {
     "id": 1034,
+    "nameId": 463,
     "name": "Monstrous Rending Claws",
     "damage": 40,
     "accuracy": 0,
@@ -3553,6 +3849,7 @@
   },
   {
     "id": 1035,
+    "nameId": 463,
     "name": "Monstrous Rending Claws",
     "damage": 30,
     "accuracy": 0,
@@ -3565,6 +3862,7 @@
   },
   {
     "id": 1023,
+    "nameId": 158,
     "name": "Monstrous Scything Talons",
     "damage": 120,
     "accuracy": 0,
@@ -3577,6 +3875,7 @@
   },
   {
     "id": 1032,
+    "nameId": 158,
     "name": "Monstrous Scything Talons",
     "damage": 38,
     "accuracy": 0,
@@ -3589,6 +3888,7 @@
   },
   {
     "id": 20,
+    "nameId": 35,
     "name": "Multi-melta",
     "damage": 150,
     "accuracy": 80,
@@ -3601,6 +3901,7 @@
   },
   {
     "id": 17,
+    "nameId": 35,
     "name": "Multi-melta",
     "damage": 75,
     "accuracy": 80,
@@ -3613,6 +3914,7 @@
   },
   {
     "id": 2017,
+    "nameId": 35,
     "name": "Multi-melta",
     "damage": 45,
     "accuracy": 80,
@@ -3625,6 +3927,7 @@
   },
   {
     "id": 2028,
+    "nameId": 35,
     "name": "Multi-melta",
     "damage": 75,
     "accuracy": 80,
@@ -3637,6 +3940,7 @@
   },
   {
     "id": 7017,
+    "nameId": 35,
     "name": "Multi-melta",
     "damage": 75,
     "accuracy": 80,
@@ -3649,6 +3953,7 @@
   },
   {
     "id": 7040,
+    "nameId": 35,
     "name": "Multi-melta",
     "damage": 75,
     "accuracy": 80,
@@ -3661,6 +3966,7 @@
   },
   {
     "id": 8028,
+    "nameId": 35,
     "name": "Multi-melta",
     "damage": 90,
     "accuracy": 80,
@@ -3673,6 +3979,7 @@
   },
   {
     "id": 9026,
+    "nameId": 35,
     "name": "Multi-melta",
     "damage": 45,
     "accuracy": 80,
@@ -3685,6 +3992,7 @@
   },
   {
     "id": 9045,
+    "nameId": 35,
     "name": "Multi-melta",
     "damage": 55,
     "accuracy": 80,
@@ -3697,6 +4005,7 @@
   },
   {
     "id": 9067,
+    "nameId": 1533,
     "name": "Neo-Volkite Pistol",
     "damage": 80,
     "accuracy": 90,
@@ -3709,6 +4018,7 @@
   },
   {
     "id": 9007,
+    "nameId": 1508,
     "name": "Occulus Bolt Carbine",
     "damage": 5,
     "accuracy": 95,
@@ -3721,6 +4031,7 @@
   },
   {
     "id": 9033,
+    "nameId": 1514,
     "name": "Onslaught Gatling Cannon",
     "damage": 3,
     "accuracy": 80,
@@ -3733,6 +4044,7 @@
   },
   {
     "id": 9017,
+    "nameId": 1514,
     "name": "Onslaught Gatling Cannon",
     "damage": 3,
     "accuracy": 80,
@@ -3745,6 +4057,7 @@
   },
   {
     "id": 7024,
+    "nameId": 1078,
     "name": "Oppressor Cannon",
     "damage": 120,
     "accuracy": 90,
@@ -3757,6 +4070,7 @@
   },
   {
     "id": 2029,
+    "nameId": 693,
     "name": "Paragon Grenade Launcher",
     "damage": 30,
     "accuracy": 90,
@@ -3769,6 +4083,7 @@
   },
   {
     "id": 2018,
+    "nameId": 651,
     "name": "Paragon War Blade",
     "damage": 60,
     "accuracy": 0,
@@ -3781,6 +4096,7 @@
   },
   {
     "id": 3023,
+    "nameId": 536,
     "name": "Particle Beamer",
     "damage": 8,
     "accuracy": 90,
@@ -3793,6 +4109,7 @@
   },
   {
     "id": 3506,
+    "nameId": 536,
     "name": "Particle Beamer",
     "damage": 8,
     "accuracy": 95,
@@ -3805,6 +4122,7 @@
   },
   {
     "id": 2006,
+    "nameId": 609,
     "name": "Penitent Buzz-blades",
     "damage": 70,
     "accuracy": 0,
@@ -3817,6 +4135,7 @@
   },
   {
     "id": 2013,
+    "nameId": 649,
     "name": "Penitent Eviscerator",
     "damage": 50,
     "accuracy": 0,
@@ -3829,6 +4148,7 @@
   },
   {
     "id": 7018,
+    "nameId": 1072,
     "name": "Plasma Cannon",
     "damage": 50,
     "accuracy": 80,
@@ -3841,6 +4161,7 @@
   },
   {
     "id": 7038,
+    "nameId": 1072,
     "name": "Plasma Cannon",
     "damage": 50,
     "accuracy": 80,
@@ -3853,6 +4174,7 @@
   },
   {
     "id": 8029,
+    "nameId": 1072,
     "name": "Plasma Cannon",
     "damage": 40,
     "accuracy": 80,
@@ -3865,6 +4187,7 @@
   },
   {
     "id": 12,
+    "nameId": 216,
     "name": "Plasma Exterminator",
     "damage": 6,
     "accuracy": 85,
@@ -3877,6 +4200,7 @@
   },
   {
     "id": 8,
+    "nameId": 84,
     "name": "Plasma Incinerator",
     "damage": 9,
     "accuracy": 80,
@@ -3889,6 +4213,7 @@
   },
   {
     "id": 48,
+    "nameId": 287,
     "name": "Plasma Pistol",
     "damage": 30,
     "accuracy": 85,
@@ -3901,6 +4226,7 @@
   },
   {
     "id": 58,
+    "nameId": 287,
     "name": "Plasma Pistol",
     "damage": 12,
     "accuracy": 85,
@@ -3913,6 +4239,7 @@
   },
   {
     "id": 7008,
+    "nameId": 287,
     "name": "Plasma Pistol",
     "damage": 30,
     "accuracy": 85,
@@ -3925,6 +4252,7 @@
   },
   {
     "id": 8003,
+    "nameId": 287,
     "name": "Plasma Pistol",
     "damage": 35,
     "accuracy": 85,
@@ -3937,6 +4265,7 @@
   },
   {
     "id": 8019,
+    "nameId": 287,
     "name": "Plasma Pistol",
     "damage": 12,
     "accuracy": 85,
@@ -3949,6 +4278,7 @@
   },
   {
     "id": 9051,
+    "nameId": 287,
     "name": "Plasma Pistol",
     "damage": 12,
     "accuracy": 85,
@@ -3961,6 +4291,7 @@
   },
   {
     "id": 6022,
+    "nameId": 972,
     "name": "Plasma Rifles",
     "damage": 9,
     "accuracy": 90,
@@ -3973,6 +4304,7 @@
   },
   {
     "id": 3004,
+    "nameId": 554,
     "name": "Plasmic Lance",
     "damage": 24,
     "accuracy": 80,
@@ -3985,6 +4317,7 @@
   },
   {
     "id": 3005,
+    "nameId": 554,
     "name": "Plasmic Lance",
     "damage": 80,
     "accuracy": 0,
@@ -3997,6 +4330,7 @@
   },
   {
     "id": 29,
+    "nameId": 116,
     "name": "Power Axe",
     "damage": 70,
     "accuracy": 0,
@@ -4009,6 +4343,7 @@
   },
   {
     "id": 7002,
+    "nameId": 1061,
     "name": "Power Fist",
     "damage": 125,
     "accuracy": 0,
@@ -4021,6 +4356,7 @@
   },
   {
     "id": 8012,
+    "nameId": 1061,
     "name": "Power Fist",
     "damage": 64,
     "accuracy": 0,
@@ -4033,6 +4369,7 @@
   },
   {
     "id": 9015,
+    "nameId": 1061,
     "name": "Power Fist",
     "damage": 60,
     "accuracy": 85,
@@ -4045,6 +4382,7 @@
   },
   {
     "id": 5004,
+    "nameId": 795,
     "name": "Power Klaw",
     "damage": 75,
     "accuracy": 0,
@@ -4057,6 +4395,7 @@
   },
   {
     "id": 5021,
+    "nameId": 795,
     "name": "Power Klaw",
     "damage": 125,
     "accuracy": 0,
@@ -4069,6 +4408,7 @@
   },
   {
     "id": 5028,
+    "nameId": 795,
     "name": "Power Klaw",
     "damage": 70,
     "accuracy": 0,
@@ -4081,6 +4421,7 @@
   },
   {
     "id": 5031,
+    "nameId": 795,
     "name": "Power Klaw",
     "damage": 50,
     "accuracy": 0,
@@ -4093,6 +4434,7 @@
   },
   {
     "id": 8025,
+    "nameId": 1327,
     "name": "Power Scourge",
     "damage": 60,
     "accuracy": 0,
@@ -4105,6 +4447,7 @@
   },
   {
     "id": 4,
+    "nameId": 28,
     "name": "Power Sword",
     "damage": 110,
     "accuracy": 0,
@@ -4117,6 +4460,7 @@
   },
   {
     "id": 7001,
+    "nameId": 28,
     "name": "Power Sword",
     "damage": 110,
     "accuracy": 0,
@@ -4129,6 +4473,7 @@
   },
   {
     "id": 2030,
+    "nameId": 28,
     "name": "Power Sword",
     "damage": 30,
     "accuracy": 0,
@@ -4141,6 +4486,7 @@
   },
   {
     "id": 1022,
+    "nameId": 29,
     "name": "Powerful Limbs",
     "damage": 80,
     "accuracy": 0,
@@ -4153,6 +4499,7 @@
   },
   {
     "id": 1038,
+    "nameId": 12,
     "name": "Powerful Limbs",
     "damage": 20,
     "accuracy": 0,
@@ -4165,6 +4512,7 @@
   },
   {
     "id": 1041,
+    "nameId": 12,
     "name": "Powerful Limbs",
     "damage": 15,
     "accuracy": 0,
@@ -4177,6 +4525,7 @@
   },
   {
     "id": 6008,
+    "nameId": 947,
     "name": "Pulse Blaster",
     "damage": 22,
     "accuracy": 80,
@@ -4189,6 +4538,7 @@
   },
   {
     "id": 6005,
+    "nameId": 936,
     "name": "Pulse Carbine",
     "damage": 4,
     "accuracy": 85,
@@ -4201,6 +4551,7 @@
   },
   {
     "id": 6027,
+    "nameId": 936,
     "name": "Pulse Carbine",
     "damage": 5,
     "accuracy": 85,
@@ -4213,6 +4564,7 @@
   },
   {
     "id": 6028,
+    "nameId": 936,
     "name": "Pulse Carbine",
     "damage": 3,
     "accuracy": 85,
@@ -4225,6 +4577,7 @@
   },
   {
     "id": 6031,
+    "nameId": 936,
     "name": "Pulse Carbine",
     "damage": 3,
     "accuracy": 85,
@@ -4237,6 +4590,7 @@
   },
   {
     "id": 6007,
+    "nameId": 944,
     "name": "Pulse Rifle",
     "damage": 7,
     "accuracy": 85,
@@ -4249,6 +4603,7 @@
   },
   {
     "id": 7027,
+    "nameId": 1081,
     "name": "Pulveriser Cannon",
     "damage": 80,
     "accuracy": 95,
@@ -4261,6 +4616,7 @@
   },
   {
     "id": 7031,
+    "nameId": 1085,
     "name": "Punisher Gatling Cannon",
     "damage": 4,
     "accuracy": 80,
@@ -4273,6 +4629,7 @@
   },
   {
     "id": 6025,
+    "nameId": 978,
     "name": "Railgun",
     "damage": 220,
     "accuracy": 80,
@@ -4285,6 +4642,7 @@
   },
   {
     "id": 9031,
+    "nameId": 1513,
     "name": "Redemptor Fist",
     "damage": 90,
     "accuracy": 90,
@@ -4297,6 +4655,7 @@
   },
   {
     "id": 9004,
+    "nameId": 1478,
     "name": "Reductor Pistol",
     "damage": 60,
     "accuracy": 90,
@@ -4309,6 +4668,7 @@
   },
   {
     "id": 9000,
+    "nameId": 1488,
     "name": "Relic Blade",
     "damage": 115,
     "accuracy": 90,
@@ -4321,6 +4681,7 @@
   },
   {
     "id": 9001,
+    "nameId": 1489,
     "name": "Relic Chainsword",
     "damage": 55,
     "accuracy": 100,
@@ -4333,6 +4694,7 @@
   },
   {
     "id": 3032,
+    "nameId": 1025,
     "name": "Relic Gauss Blaster",
     "damage": 18,
     "accuracy": 95,
@@ -4345,6 +4707,7 @@
   },
   {
     "id": 3033,
+    "nameId": 1025,
     "name": "Relic Gauss Blaster",
     "damage": 35,
     "accuracy": 0,
@@ -4357,6 +4720,7 @@
   },
   {
     "id": 1016,
+    "nameId": 147,
     "name": "Rending Claws",
     "damage": 22,
     "accuracy": 0,
@@ -4369,6 +4733,7 @@
   },
   {
     "id": 1031,
+    "nameId": 147,
     "name": "Rending Claws",
     "damage": 8,
     "accuracy": 0,
@@ -4381,6 +4746,7 @@
   },
   {
     "id": 7009,
+    "nameId": 1066,
     "name": "Ripper Gun",
     "damage": 15,
     "accuracy": 75,
@@ -4393,6 +4759,7 @@
   },
   {
     "id": 7004,
+    "nameId": 1063,
     "name": "Ripper Gun Bayonet",
     "damage": 60,
     "accuracy": 0,
@@ -4405,6 +4772,7 @@
   },
   {
     "id": 5038,
+    "nameId": 1285,
     "name": "Rivet Kannon",
     "damage": 24,
     "accuracy": 80,
@@ -4417,6 +4785,7 @@
   },
   {
     "id": 3015,
+    "nameId": 526,
     "name": "Rod of Covenant",
     "damage": 16,
     "accuracy": 80,
@@ -4429,6 +4798,7 @@
   },
   {
     "id": 3016,
+    "nameId": 526,
     "name": "Rod of Covenant",
     "damage": 26,
     "accuracy": 0,
@@ -4441,6 +4811,7 @@
   },
   {
     "id": 5010,
+    "nameId": 772,
     "name": "Rokkit Launcha",
     "damage": 30,
     "accuracy": 90,
@@ -4453,6 +4824,7 @@
   },
   {
     "id": 5036,
+    "nameId": 772,
     "name": "Rokkit Launcha",
     "damage": 33,
     "accuracy": 90,
@@ -4465,6 +4837,7 @@
   },
   {
     "id": 5037,
+    "nameId": 1284,
     "name": "Saw Blades",
     "damage": 80,
     "accuracy": 0,
@@ -4477,6 +4850,7 @@
   },
   {
     "id": 1017,
+    "nameId": 31,
     "name": "Scything Talons",
     "damage": 12,
     "accuracy": 0,
@@ -4489,6 +4863,7 @@
   },
   {
     "id": 1026,
+    "nameId": 31,
     "name": "Scything Talons",
     "damage": 19,
     "accuracy": 0,
@@ -4501,6 +4876,7 @@
   },
   {
     "id": 1029,
+    "nameId": 31,
     "name": "Scything Talons",
     "damage": 25,
     "accuracy": 0,
@@ -4513,6 +4889,7 @@
   },
   {
     "id": 49,
+    "nameId": 172,
     "name": "Servo Arm",
     "damage": 20,
     "accuracy": 100,
@@ -4525,6 +4902,7 @@
   },
   {
     "id": 1037,
+    "nameId": 464,
     "name": "Shockcannon",
     "damage": 50,
     "accuracy": 70,
@@ -4537,6 +4915,7 @@
   },
   {
     "id": 5008,
+    "nameId": 770,
     "name": "Shoota",
     "damage": 4,
     "accuracy": 70,
@@ -4549,6 +4928,7 @@
   },
   {
     "id": 5022,
+    "nameId": 770,
     "name": "Shoota",
     "damage": 8,
     "accuracy": 90,
@@ -4561,6 +4941,7 @@
   },
   {
     "id": 5025,
+    "nameId": 770,
     "name": "Shoota",
     "damage": 4,
     "accuracy": 80,
@@ -4573,6 +4954,7 @@
   },
   {
     "id": 5014,
+    "nameId": 832,
     "name": "Shooty Deffgun",
     "damage": 5,
     "accuracy": 80,
@@ -4585,6 +4967,7 @@
   },
   {
     "id": 5017,
+    "nameId": 841,
     "name": "Skorcha",
     "damage": 9,
     "accuracy": 100,
@@ -4597,6 +4980,7 @@
   },
   {
     "id": 4002,
+    "nameId": 621,
     "name": "Skull Cannon",
     "damage": 45,
     "accuracy": 80,
@@ -4609,6 +4993,7 @@
   },
   {
     "id": 5005,
+    "nameId": 778,
     "name": "Slugga",
     "damage": 5,
     "accuracy": 90,
@@ -4621,6 +5006,7 @@
   },
   {
     "id": 9068,
+    "nameId": 1549,
     "name": "Smite",
     "damage": 6,
     "accuracy": 100,
@@ -4633,6 +5019,7 @@
   },
   {
     "id": 5032,
+    "nameId": 1277,
     "name": "Snagga Klaw",
     "damage": 110,
     "accuracy": 0,
@@ -4645,6 +5032,7 @@
   },
   {
     "id": 5015,
+    "nameId": 799,
     "name": "Snazzgun",
     "damage": 9,
     "accuracy": 79,
@@ -4657,6 +5045,7 @@
   },
   {
     "id": 8034,
+    "nameId": 1333,
     "name": "Soulflayer Tendrils",
     "damage": 50,
     "accuracy": 90,
@@ -4669,6 +5058,7 @@
   },
   {
     "id": 9053,
+    "nameId": 1517,
     "name": "Special Issue Bolt Pistol",
     "damage": 5,
     "accuracy": 90,
@@ -4681,6 +5071,7 @@
   },
   {
     "id": 8039,
+    "nameId": 1338,
     "name": "Spiked Hull",
     "damage": 35,
     "accuracy": 0,
@@ -4693,6 +5084,7 @@
   },
   {
     "id": 1000,
+    "nameId": 0,
     "name": "Spinefists",
     "damage": 3,
     "accuracy": 90,
@@ -4705,6 +5097,7 @@
   },
   {
     "id": 6029,
+    "nameId": 0,
     "name": "Spinefists",
     "damage": 100,
     "accuracy": 50,
@@ -4717,6 +5110,7 @@
   },
   {
     "id": 1039,
+    "nameId": 1032,
     "name": "Spore Mine Launcher",
     "damage": 60,
     "accuracy": 80,
@@ -4729,6 +5123,7 @@
   },
   {
     "id": 5026,
+    "nameId": 867,
     "name": "Squig Bite",
     "damage": 1,
     "accuracy": 90,
@@ -4741,6 +5136,7 @@
   },
   {
     "id": 3001,
+    "nameId": 546,
     "name": "Staff of Light",
     "damage": 18,
     "accuracy": 85,
@@ -4753,6 +5149,7 @@
   },
   {
     "id": 3002,
+    "nameId": 546,
     "name": "Staff of Light",
     "damage": 40,
     "accuracy": 0,
@@ -4765,6 +5162,7 @@
   },
   {
     "id": 30,
+    "nameId": 120,
     "name": "Storm Bolter",
     "damage": 4,
     "accuracy": 90,
@@ -4777,6 +5175,7 @@
   },
   {
     "id": 38,
+    "nameId": 120,
     "name": "Storm Bolter",
     "damage": 4,
     "accuracy": 90,
@@ -4789,6 +5188,7 @@
   },
   {
     "id": 2019,
+    "nameId": 120,
     "name": "Storm Bolter",
     "damage": 4,
     "accuracy": 90,
@@ -4801,6 +5201,7 @@
   },
   {
     "id": 2034,
+    "nameId": 120,
     "name": "Storm Bolter",
     "damage": 4,
     "accuracy": 80,
@@ -4813,6 +5214,7 @@
   },
   {
     "id": 9041,
+    "nameId": 120,
     "name": "Storm Bolter",
     "damage": 6,
     "accuracy": 90,
@@ -4825,6 +5227,7 @@
   },
   {
     "id": 9011,
+    "nameId": 120,
     "name": "Storm Bolter",
     "damage": 6,
     "accuracy": 90,
@@ -4837,6 +5240,7 @@
   },
   {
     "id": 9023,
+    "nameId": 1527,
     "name": "Stormfury Missiles",
     "damage": 100,
     "accuracy": 90,
@@ -4849,6 +5253,7 @@
   },
   {
     "id": 3013,
+    "nameId": 521,
     "name": "Synaptic Disintegrator",
     "damage": 25,
     "accuracy": 80,
@@ -4861,6 +5266,7 @@
   },
   {
     "id": 9043,
+    "nameId": 1504,
     "name": "Tempest Bolter",
     "damage": 8,
     "accuracy": 85,
@@ -4873,6 +5279,7 @@
   },
   {
     "id": 3026,
+    "nameId": 574,
     "name": "Tesla Cannon",
     "damage": 16,
     "accuracy": 85,
@@ -4885,6 +5292,7 @@
   },
   {
     "id": 3010,
+    "nameId": 518,
     "name": "Tesla Carbine",
     "damage": 10,
     "accuracy": 90,
@@ -4897,6 +5305,7 @@
   },
   {
     "id": 3028,
+    "nameId": 580,
     "name": "Tesla Lightning Storm",
     "damage": 14,
     "accuracy": 95,
@@ -4909,6 +5318,7 @@
   },
   {
     "id": 40,
+    "nameId": 284,
     "name": "Thunder Hammer",
     "damage": 115,
     "accuracy": 0,
@@ -4921,6 +5331,7 @@
   },
   {
     "id": 56,
+    "nameId": 284,
     "name": "Thunder Hammer",
     "damage": 40,
     "accuracy": 0,
@@ -4933,6 +5344,7 @@
   },
   {
     "id": 55,
+    "nameId": 459,
     "name": "Thunder Hammer & Storm Shield",
     "damage": 68,
     "accuracy": 0,
@@ -4945,6 +5357,7 @@
   },
   {
     "id": 9024,
+    "nameId": 1528,
     "name": "Thunderstrike Las-talon",
     "damage": 115,
     "accuracy": 90,
@@ -4957,6 +5370,7 @@
   },
   {
     "id": 1018,
+    "nameId": 36,
     "name": "Toxic Lash",
     "damage": 50,
     "accuracy": 95,
@@ -4969,6 +5383,7 @@
   },
   {
     "id": 36,
+    "nameId": 159,
     "name": "Twin Assault Cannon",
     "damage": 4,
     "accuracy": 90,
@@ -4981,6 +5396,7 @@
   },
   {
     "id": 7025,
+    "nameId": 1079,
     "name": "Twin Battle Cannon",
     "damage": 60,
     "accuracy": 85,
@@ -4993,6 +5409,7 @@
   },
   {
     "id": 3022,
+    "nameId": 535,
     "name": "Twin Gauss Blaster",
     "damage": 6,
     "accuracy": 80,
@@ -5005,6 +5422,7 @@
   },
   {
     "id": 3505,
+    "nameId": 535,
     "name": "Twin Gauss Blaster",
     "damage": 6,
     "accuracy": 80,
@@ -5017,6 +5435,7 @@
   },
   {
     "id": 2023,
+    "nameId": 654,
     "name": "Twin Heavy Bolter",
     "damage": 8,
     "accuracy": 85,
@@ -5029,6 +5448,7 @@
   },
   {
     "id": 2033,
+    "nameId": 654,
     "name": "Twin Heavy Bolter",
     "damage": 8,
     "accuracy": 85,
@@ -5041,6 +5461,7 @@
   },
   {
     "id": 2007,
+    "nameId": 610,
     "name": "Twin Heavy Flamers",
     "damage": 9,
     "accuracy": 100,
@@ -5053,6 +5474,7 @@
   },
   {
     "id": 63,
+    "nameId": 1000,
     "name": "Twin Ironhail Autocannon",
     "damage": 7,
     "accuracy": 90,
@@ -5065,6 +5487,7 @@
   },
   {
     "id": 9060,
+    "nameId": 1000,
     "name": "Twin Ironhail Autocannon",
     "damage": 7,
     "accuracy": 90,
@@ -5077,6 +5500,7 @@
   },
   {
     "id": 65,
+    "nameId": 999,
     "name": "Twin Ironhail Autostubber",
     "damage": 3,
     "accuracy": 80,
@@ -5089,6 +5513,7 @@
   },
   {
     "id": 9062,
+    "nameId": 999,
     "name": "Twin Ironhail Autostubber",
     "damage": 3,
     "accuracy": 80,
@@ -5101,6 +5526,7 @@
   },
   {
     "id": 9018,
+    "nameId": 1523,
     "name": "Twin Ironhail Heavy Stubber",
     "damage": 4,
     "accuracy": 85,
@@ -5113,6 +5539,7 @@
   },
   {
     "id": 9044,
+    "nameId": 1503,
     "name": "Twin Las-talon",
     "damage": 90,
     "accuracy": 90,
@@ -5125,6 +5552,7 @@
   },
   {
     "id": 2024,
+    "nameId": 655,
     "name": "Twin Multi-melta",
     "damage": 75,
     "accuracy": 80,
@@ -5137,6 +5565,7 @@
   },
   {
     "id": 9042,
+    "nameId": 1502,
     "name": "Twin Onslaught Heavy Gatling Cannon",
     "damage": 3,
     "accuracy": 85,
@@ -5149,6 +5578,7 @@
   },
   {
     "id": 9039,
+    "nameId": 1484,
     "name": "Twin Storm Bolter",
     "damage": 4,
     "accuracy": 85,
@@ -5161,6 +5591,7 @@
   },
   {
     "id": 9035,
+    "nameId": 1484,
     "name": "Twin Storm Bolter",
     "damage": 4,
     "accuracy": 85,
@@ -5173,6 +5604,7 @@
   },
   {
     "id": 3024,
+    "nameId": 537,
     "name": "Twin Tesla Carbine",
     "damage": 8,
     "accuracy": 75,
@@ -5185,6 +5617,7 @@
   },
   {
     "id": 3507,
+    "nameId": 537,
     "name": "Twin Tesla Carbine",
     "damage": 8,
     "accuracy": 75,
@@ -5197,6 +5630,7 @@
   },
   {
     "id": 3027,
+    "nameId": 575,
     "name": "Twin Tesla Destructor",
     "damage": 8,
     "accuracy": 85,
@@ -5209,6 +5643,7 @@
   },
   {
     "id": 100000,
+    "nameId": 226,
     "name": "Unarmed",
     "damage": 5,
     "accuracy": 100,
@@ -5221,6 +5656,7 @@
   },
   {
     "id": 16,
+    "nameId": 111,
     "name": "Unknown Weapon 16",
     "damage": 0,
     "accuracy": 50,
@@ -5233,6 +5669,7 @@
   },
   {
     "id": 7030,
+    "nameId": 1084,
     "name": "Vanquisher Battle Cannon",
     "damage": 200,
     "accuracy": 85,
@@ -5245,6 +5682,7 @@
   },
   {
     "id": 4008,
+    "nameId": 716,
     "name": "Warpclaw",
     "damage": 60,
     "accuracy": 90,
@@ -5257,6 +5695,7 @@
   },
   {
     "id": 4009,
+    "nameId": 715,
     "name": "Warpsword",
     "damage": 80,
     "accuracy": 0,
@@ -5269,6 +5708,7 @@
   },
   {
     "id": 3003,
+    "nameId": 545,
     "name": "Warscythe",
     "damage": 60,
     "accuracy": 0,
@@ -5281,6 +5721,7 @@
   },
   {
     "id": 3011,
+    "nameId": 545,
     "name": "Warscythe",
     "damage": 40,
     "accuracy": 0,
@@ -5293,6 +5734,7 @@
   },
   {
     "id": 5002,
+    "nameId": 815,
     "name": "Weirdboy Staff",
     "damage": 40,
     "accuracy": 0,

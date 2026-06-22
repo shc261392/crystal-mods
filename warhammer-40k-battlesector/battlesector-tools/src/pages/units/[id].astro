@@ -118,12 +118,12 @@ const vitals = [
     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-5">
       <div>
         <div class="flex flex-wrap items-center gap-2 mb-2">
-          <span class="chip" style={`color:${unit.roleColor}; border-color:${unit.roleColor}`}>{unit.roleName}</span>
-          <span class="chip">{unit.factionName}</span>
+          <span class="chip" style={`color:${unit.roleColor}; border-color:${unit.roleColor}`} data-i18n-role={unit.role} data-i18n-fallback={unit.roleName}>{unit.roleName}</span>
+          <span class="chip" data-i18n-faction={unit.faction} data-i18n-fallback={unit.factionName}>{unit.factionName}</span>
           <span class="chip">{unit.substanceName}</span>
           {tags.map((t) => <span class="chip">{t}</span>)}
         </div>
-        <h1 class="text-3xl md:text-4xl font-black">{unit.name}</h1>
+        <h1 class="text-3xl md:text-4xl font-black" data-i18n-unit={unit.id} data-i18n-fallback={unit.name}>{unit.name}</h1>
         <p class="mt-2 text-[var(--color-muted)]">
           <span class="text-2xl font-bold text-[var(--color-gold)]">{unit.pointCost}</span>
           <span class="text-sm"> requisition points</span>
@@ -237,7 +237,7 @@ const vitals = [
                     class="flex items-center justify-between gap-3 rounded-lg bg-[var(--color-base)] border border-[var(--color-border)] px-3.5 py-2.5 hover:border-[var(--color-border-strong)] transition-colors"
                   >
                     <span class="min-w-0">
-                      <span class="font-semibold text-sm truncate block">{opt.name}</span>
+                      <span class="font-semibold text-sm truncate block" data-i18n-weapon={opt.weaponId} data-i18n-fallback={opt.name}>{opt.name}</span>
                       {w && (
                         <span class="text-xs text-[var(--color-faint)]">
                           {w.damage} dmg · {w.accuracy}% acc

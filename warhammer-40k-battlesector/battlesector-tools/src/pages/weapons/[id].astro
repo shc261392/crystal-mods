@@ -49,7 +49,7 @@ const carriers = units
           <span class="chip">{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
           {weapon.armorPiercing > 0 && <span class="chip">AP {weapon.armorPiercing}</span>}
         </div>
-        <h1 class="text-3xl md:text-4xl font-black">{weapon.name}</h1>
+        <h1 class="text-3xl md:text-4xl font-black" data-i18n-weapon={weapon.id} data-i18n-fallback={weapon.name}>{weapon.name}</h1>
       </div>
       <div class="flex gap-6">
         <div class="text-center">
@@ -103,8 +103,8 @@ const carriers = units
               <span class="flex items-center gap-2.5 min-w-0">
                 <span class="w-1 h-7 rounded-full shrink-0" style={`background:${u.roleColor}`}></span>
                 <span class="min-w-0">
-                  <span class="font-semibold text-sm truncate block">{u.name}</span>
-                  <span class="text-xs text-[var(--color-faint)]">{u.factionName}</span>
+                  <span class="font-semibold text-sm truncate block" data-i18n-unit={u.id} data-i18n-fallback={u.name}>{u.name}</span>
+                  <span class="text-xs text-[var(--color-faint)]" data-i18n-faction={u.faction} data-i18n-fallback={u.factionName}>{u.factionName}</span>
                 </span>
               </span>
               <span class="text-xs text-[var(--color-faint)] shrink-0">{u.pointCost} pts</span>

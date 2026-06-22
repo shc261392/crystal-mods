@@ -2,17 +2,20 @@
 // pages, so there is no runtime data fetching for static content.
 
 import factionsData from '../data/factions.json';
+import i18nData from '../data/i18n.json';
 import rolesData from '../data/roles.json';
 import summaryData from '../data/summary.json';
 import unitsData from '../data/units.json';
 import weaponsData from '../data/weapons.json';
-import type { Faction, Role, Summary, Unit, Weapon } from './types';
+import type { Faction, I18nBundle, Role, Summary, Unit, Weapon } from './types';
 
 export const units = unitsData as Unit[];
 export const weapons = weaponsData as Weapon[];
 export const factions = factionsData as Faction[];
 export const roles = rolesData as Role[];
 export const summary = summaryData as Summary;
+export const i18n = i18nData as I18nBundle;
+export const locales = i18n.locales;
 
 const unitById = new Map(units.map((u) => [u.id, u]));
 const weaponById = new Map(weapons.map((w) => [w.id, w]));

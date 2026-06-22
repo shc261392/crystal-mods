@@ -1,6 +1,7 @@
 [
   {
     "id": 2022,
+    "nameId": 1247,
     "name": "Canoness Selicia",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -49,6 +50,7 @@
   },
   {
     "id": 2023,
+    "nameId": 1251,
     "name": "Sister Hospitaller Dorentia",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -90,6 +92,7 @@
   },
   {
     "id": 2021,
+    "nameId": 1250,
     "name": "Sister Imagifier Leona",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -136,6 +139,7 @@
   },
   {
     "id": 2024,
+    "nameId": 1250,
     "name": "Sister Imagifier Leona",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -182,6 +186,7 @@
   },
   {
     "id": 2025,
+    "nameId": 1250,
     "name": "Sister Imagifier Leona",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -228,6 +233,7 @@
   },
   {
     "id": 2013,
+    "nameId": 225,
     "name": "Sister Verity",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -281,6 +287,7 @@
   },
   {
     "id": 2014,
+    "nameId": 660,
     "name": "Adepta Sororitas Arco Flagellants",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -322,6 +329,7 @@
   },
   {
     "id": 2006,
+    "nameId": 196,
     "name": "Adepta Sororitas Battle Sisters",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -368,6 +376,7 @@
   },
   {
     "id": 2002,
+    "nameId": 127,
     "name": "Adepta Sororitas Seraphim",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -411,6 +420,7 @@
   },
   {
     "id": 2005,
+    "nameId": 662,
     "name": "Adepta Sororitas Celestians",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -459,6 +469,7 @@
   },
   {
     "id": 2003,
+    "nameId": 1217,
     "name": "Adepta Sororitas Dominions",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -502,6 +513,7 @@
   },
   {
     "id": 2020,
+    "nameId": 1252,
     "name": "Adepta Sororitas Zephyrim",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -548,6 +560,7 @@
   },
   {
     "id": 2007,
+    "nameId": 664,
     "name": "Adepta Sororitas Sisters Repentia",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -594,6 +607,7 @@
   },
   {
     "id": 2017,
+    "nameId": 666,
     "name": "Adepta Sororitas Celestian Sacresants",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -640,6 +654,7 @@
   },
   {
     "id": 2004,
+    "nameId": 668,
     "name": "Adepta Sororitas Retributors",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -683,6 +698,7 @@
   },
   {
     "id": 2009,
+    "nameId": 658,
     "name": "Adepta Sororitas Hospitaller",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -724,6 +740,7 @@
   },
   {
     "id": 2012,
+    "nameId": 606,
     "name": "Adepta Sororitas Penitent Engine",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -775,6 +792,7 @@
   },
   {
     "id": 2001,
+    "nameId": 200,
     "name": "Adepta Sororitas Sister Superior",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -828,6 +846,7 @@
   },
   {
     "id": 2016,
+    "nameId": 672,
     "name": "Adepta Sororitas Rhino",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -869,6 +888,7 @@
   },
   {
     "id": 2018,
+    "nameId": 1249,
     "name": "Adepta Sororitas Imagifier",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -915,6 +935,7 @@
   },
   {
     "id": 2015,
+    "nameId": 670,
     "name": "Adepta Sororitas Paragon Warsuits",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -963,6 +984,7 @@
   },
   {
     "id": 2011,
+    "nameId": 676,
     "name": "Adepta Sororitas Immolator",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -1011,6 +1033,7 @@
   },
   {
     "id": 2000,
+    "nameId": 656,
     "name": "Adepta Sororitas Canoness",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -1059,6 +1082,7 @@
   },
   {
     "id": 2019,
+    "nameId": 1254,
     "name": "Adepta Sororitas Castigator",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -1116,6 +1140,7 @@
   },
   {
     "id": 2010,
+    "nameId": 674,
     "name": "Adepta Sororitas Exorcist",
     "faction": 2,
     "factionName": "Adepta Sororitas",
@@ -1162,6 +1187,7 @@
   },
   {
     "id": 7018,
+    "nameId": 1116,
     "name": "Melta Mine",
     "faction": 7,
     "factionName": "Astra Militarum",
@@ -1197,6 +1223,7 @@
   },
   {
     "id": 7016,
+    "nameId": 1256,
     "name": "Tank Commander Korad Rigge",
     "faction": 7,
     "factionName": "Astra Militarum",
@@ -1256,6 +1283,7 @@
   },
   {
     "id": 7003,
+    "nameId": 1049,
     "name": "Cadian Shock Troops",
     "faction": 7,
     "factionName": "Astra Militarum",
@@ -1304,6 +1332,7 @@
   },
   {
     "id": 7000,
+    "nameId": 1215,
     "name": "Cadian Sergeant",
     "faction": 7,
     "factionName": "Astra Militarum",
@@ -1350,6 +1379,7 @@
   },
   {
     "id": 7010,
+    "nameId": 1053,
     "name": "Kasrkin",
     "faction": 7,
     "factionName": "Astra Militarum",
@@ -1392,6 +1422,7 @@
   },
   {
     "id": 7007,
+    "nameId": 1050,
     "name": "Heavy Weapons Squad",
     "faction": 7,
     "factionName": "Astra Militarum",
@@ -1451,6 +1482,7 @@
   },
   {
     "id": 7009,
+    "nameId": 1052,
     "name": "Primaris Psyker",
     "faction": 7,
     "factionName": "Astra Militarum",
@@ -1492,6 +1524,7 @@
   },
   {
     "id": 7011,
+    "nameId": 1054,
     "name": "Armoured Sentinel",
     "faction": 7,
     "factionName": "Astra Militarum",
@@ -1540,6 +1573,7 @@
   },
   {
     "id": 7008,
+    "nameId": 1051,
     "name": "Ogryn Squad",
     "faction": 7,
     "factionName": "Astra Militarum",
@@ -1586,6 +1620,7 @@
   },
   {
     "id": 7006,
+    "nameId": 1048,
     "name": "Commissar",
     "faction": 7,
     "factionName": "Astra Militarum",
@@ -1633,6 +1668,7 @@
   },
   {
     "id": 7017,
+    "nameId": 1060,
     "name": "Chimera",
     "faction": 7,
     "factionName": "Astra Militarum",
@@ -1691,6 +1727,7 @@
   },
   {
     "id": 7004,
+    "nameId": 1046,
     "name": "Cadian Castellan",
     "faction": 7,
     "factionName": "Astra Militarum",
@@ -1740,6 +1777,7 @@
   },
   {
     "id": 7012,
+    "nameId": 1055,
     "name": "Basilisk",
     "faction": 7,
     "factionName": "Astra Militarum",
@@ -1786,6 +1824,7 @@
   },
   {
     "id": 7001,
+    "nameId": 1126,
     "name": "Leman Russ Battle Tank",
     "faction": 7,
     "factionName": "Astra Militarum",
@@ -1863,6 +1902,7 @@
   },
   {
     "id": 7005,
+    "nameId": 1047,
     "name": "Tank Commander",
     "faction": 7,
     "factionName": "Astra Militarum",
@@ -1922,6 +1962,7 @@
   },
   {
     "id": 7013,
+    "nameId": 1056,
     "name": "Rogal Dorn Battle Tank",
     "faction": 7,
     "factionName": "Astra Militarum",
@@ -1986,6 +2027,7 @@
   },
   {
     "id": 10005,
+    "nameId": 1340,
     "name": "Chaos Cultists Warband",
     "faction": 10,
     "factionName": "Black Legion",
@@ -2025,6 +2067,7 @@
   },
   {
     "id": 10004,
+    "nameId": 1339,
     "name": "Chaos Cultists Mob",
     "faction": 10,
     "factionName": "Black Legion",
@@ -2076,6 +2119,7 @@
   },
   {
     "id": 10006,
+    "nameId": 1348,
     "name": "Legionaries",
     "faction": 10,
     "factionName": "Black Legion",
@@ -2115,6 +2159,7 @@
   },
   {
     "id": 10009,
+    "nameId": 1351,
     "name": "Raptors",
     "faction": 10,
     "factionName": "Black Legion",
@@ -2162,6 +2207,7 @@
   },
   {
     "id": 10003,
+    "nameId": 1344,
     "name": "Cultist Firebrand",
     "faction": 10,
     "factionName": "Black Legion",
@@ -2203,6 +2249,7 @@
   },
   {
     "id": 10008,
+    "nameId": 1343,
     "name": "Chosen",
     "faction": 10,
     "factionName": "Black Legion",
@@ -2261,6 +2308,7 @@
   },
   {
     "id": 10010,
+    "nameId": 1346,
     "name": "Havocs",
     "faction": 10,
     "factionName": "Black Legion",
@@ -2325,6 +2373,7 @@
   },
   {
     "id": 10015,
+    "nameId": 1342,
     "name": "Chaos Rhino",
     "faction": 10,
     "factionName": "Black Legion",
@@ -2366,6 +2415,7 @@
   },
   {
     "id": 10011,
+    "nameId": 1347,
     "name": "Helbrute",
     "faction": 10,
     "factionName": "Black Legion",
@@ -2415,6 +2465,7 @@
   },
   {
     "id": 10002,
+    "nameId": 1349,
     "name": "Master of Executions",
     "faction": 10,
     "factionName": "Black Legion",
@@ -2461,6 +2512,7 @@
   },
   {
     "id": 10013,
+    "nameId": 1354,
     "name": "Venomcrawler",
     "faction": 10,
     "factionName": "Black Legion",
@@ -2507,6 +2559,7 @@
   },
   {
     "id": 10012,
+    "nameId": 1350,
     "name": "Obliterators",
     "faction": 10,
     "factionName": "Black Legion",
@@ -2588,6 +2641,7 @@
   },
   {
     "id": 10000,
+    "nameId": 1341,
     "name": "Chaos Lord",
     "faction": 10,
     "factionName": "Black Legion",
@@ -2636,6 +2690,7 @@
   },
   {
     "id": 10007,
+    "nameId": 1353,
     "name": "Chaos Terminators",
     "faction": 10,
     "factionName": "Black Legion",
@@ -2686,6 +2741,7 @@
   },
   {
     "id": 10001,
+    "nameId": 1352,
     "name": "Chaos Sorcerer",
     "faction": 10,
     "factionName": "Black Legion",
@@ -2727,6 +2783,7 @@
   },
   {
     "id": 10014,
+    "nameId": 1345,
     "name": "Forgefiend",
     "faction": 10,
     "factionName": "Black Legion",
@@ -2784,6 +2841,7 @@
   },
   {
     "id": 102,
+    "nameId": 222,
     "name": "Brother Aeturo",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -2833,6 +2891,7 @@
   },
   {
     "id": 104,
+    "nameId": 224,
     "name": "Brother Quindar",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -2879,6 +2938,7 @@
   },
   {
     "id": 101,
+    "nameId": 221,
     "name": "Lieutenant Carleon",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -2932,6 +2992,7 @@
   },
   {
     "id": 100,
+    "nameId": 15,
     "name": "Sergeant Carleon",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -2985,6 +3046,7 @@
   },
   {
     "id": 103,
+    "nameId": 223,
     "name": "Techmarine Croginax",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3034,6 +3096,7 @@
   },
   {
     "id": 13,
+    "nameId": 14,
     "name": "Blood Angels Assault Squad",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3080,6 +3143,7 @@
   },
   {
     "id": 8,
+    "nameId": 3,
     "name": "Blood Angels Intercessors",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3122,6 +3186,7 @@
   },
   {
     "id": 999,
+    "nameId": -1,
     "name": "Unknown Unit 999",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3170,6 +3235,7 @@
   },
   {
     "id": 3,
+    "nameId": 218,
     "name": "Blood Angels Death Company",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3215,6 +3281,7 @@
   },
   {
     "id": 40,
+    "nameId": 17,
     "name": "Blood Angels Land Speeder",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3257,6 +3324,7 @@
   },
   {
     "id": 9,
+    "nameId": 86,
     "name": "Blood Angels Hellblasters",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3304,6 +3372,7 @@
   },
   {
     "id": 5,
+    "nameId": 124,
     "name": "Blood Angels Inceptor",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3346,6 +3415,7 @@
   },
   {
     "id": 10,
+    "nameId": 74,
     "name": "Blood Angels Aggressors",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3405,6 +3475,7 @@
   },
   {
     "id": 105,
+    "nameId": 286,
     "name": "Blood Angels Land Speeder Tornado",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3453,6 +3524,7 @@
   },
   {
     "id": 2,
+    "nameId": 19,
     "name": "Blood Angels Sanguinary Priest",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3502,6 +3574,7 @@
   },
   {
     "id": 17,
+    "nameId": 117,
     "name": "Blood Angels Techmarine",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3551,6 +3624,7 @@
   },
   {
     "id": 30,
+    "nameId": 132,
     "name": "Blood Angels Furioso Dreadnought",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3599,6 +3673,7 @@
   },
   {
     "id": 0,
+    "nameId": 1,
     "name": "Blood Angels Lieutenant",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3652,6 +3727,7 @@
   },
   {
     "id": 107,
+    "nameId": 472,
     "name": "Blood Angels Sanguinary Guard",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3701,6 +3777,7 @@
   },
   {
     "id": 1,
+    "nameId": 9,
     "name": "Blood Angels Librarian",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3752,6 +3829,7 @@
   },
   {
     "id": 106,
+    "nameId": 470,
     "name": "Blood Angels Assault Terminators",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3799,6 +3877,7 @@
   },
   {
     "id": 108,
+    "nameId": 997,
     "name": "Blood Angels Invictor Warsuit",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3876,6 +3955,7 @@
   },
   {
     "id": 36,
+    "nameId": 161,
     "name": "Blood Angels Baal Predator",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3923,6 +4003,7 @@
   },
   {
     "id": 33,
+    "nameId": 121,
     "name": "Blood Angels Librarian Dreadnought",
     "faction": 0,
     "factionName": "Blood Angels",
@@ -3969,6 +4050,7 @@
   },
   {
     "id": 5002,
+    "nameId": 615,
     "name": "Khorne Bloodletter",
     "faction": 5,
     "factionName": "Daemons of Khorne",
@@ -4010,6 +4092,7 @@
   },
   {
     "id": 5004,
+    "nameId": 617,
     "name": "Khorne Flesh Hound",
     "faction": 5,
     "factionName": "Daemons of Khorne",
@@ -4056,6 +4139,7 @@
   },
   {
     "id": 5003,
+    "nameId": 619,
     "name": "Herald of Khorne Bloodmaster",
     "faction": 5,
     "factionName": "Daemons of Khorne",
@@ -4097,6 +4181,7 @@
   },
   {
     "id": 5006,
+    "nameId": 718,
     "name": "Khorne Bloodcrusher",
     "faction": 5,
     "factionName": "Daemons of Khorne",
@@ -4138,6 +4223,7 @@
   },
   {
     "id": 5001,
+    "nameId": 621,
     "name": "Khorne Skull Cannon",
     "faction": 5,
     "factionName": "Daemons of Khorne",
@@ -4179,6 +4265,7 @@
   },
   {
     "id": 5008,
+    "nameId": 753,
     "name": "Khorne Daemon Prince",
     "faction": 5,
     "factionName": "Daemons of Khorne",
@@ -4247,6 +4334,7 @@
   },
   {
     "id": 5005,
+    "nameId": 712,
     "name": "Khorne Soul Grinder",
     "faction": 5,
     "factionName": "Daemons of Khorne",
@@ -4294,6 +4382,7 @@
   },
   {
     "id": 5000,
+    "nameId": 706,
     "name": "Khorne Bloodthirster",
     "faction": 5,
     "factionName": "Daemons of Khorne",
@@ -4355,6 +4444,7 @@
   },
   {
     "id": 4000,
+    "nameId": 95,
     "name": "Necron Warriors",
     "faction": 4,
     "factionName": "Mephrit Necrons",
@@ -4397,6 +4487,7 @@
   },
   {
     "id": 4003,
+    "nameId": 538,
     "name": "Necron Tomb Blades",
     "faction": 4,
     "factionName": "Mephrit Necrons",
@@ -4445,6 +4536,7 @@
   },
   {
     "id": 4002,
+    "nameId": 504,
     "name": "Necron Skorpekh Destroyer",
     "faction": 4,
     "factionName": "Mephrit Necrons",
@@ -4497,6 +4589,7 @@
   },
   {
     "id": 4001,
+    "nameId": 509,
     "name": "Necron Hexmark Destroyer",
     "faction": 4,
     "factionName": "Mephrit Necrons",
@@ -4543,6 +4636,7 @@
   },
   {
     "id": 3011,
+    "nameId": 567,
     "name": "Necron Canoptek Scarab Swarm",
     "faction": 3,
     "factionName": "Necrons",
@@ -4584,6 +4678,7 @@
   },
   {
     "id": 3003,
+    "nameId": 95,
     "name": "Necron Warriors",
     "faction": 3,
     "factionName": "Necrons",
@@ -4626,6 +4721,7 @@
   },
   {
     "id": 3007,
+    "nameId": 500,
     "name": "Necron Flayed Ones",
     "faction": 3,
     "factionName": "Necrons",
@@ -4667,6 +4763,7 @@
   },
   {
     "id": 3006,
+    "nameId": 519,
     "name": "Necron Deathmarks",
     "faction": 3,
     "factionName": "Necrons",
@@ -4713,6 +4810,7 @@
   },
   {
     "id": 3004,
+    "nameId": 514,
     "name": "Necron Immortals",
     "faction": 3,
     "factionName": "Necrons",
@@ -4755,6 +4853,7 @@
   },
   {
     "id": 3012,
+    "nameId": 538,
     "name": "Necron Tomb Blades",
     "faction": 3,
     "factionName": "Necrons",
@@ -4798,6 +4897,7 @@
   },
   {
     "id": 3008,
+    "nameId": 524,
     "name": "Necron Triarch Praetorian",
     "faction": 3,
     "factionName": "Necrons",
@@ -4844,6 +4944,7 @@
   },
   {
     "id": 3010,
+    "nameId": 532,
     "name": "Necron Lokhust Heavy Destroyers",
     "faction": 3,
     "factionName": "Necrons",
@@ -4891,6 +4992,7 @@
   },
   {
     "id": 3005,
+    "nameId": 558,
     "name": "Necron Lychguard",
     "faction": 3,
     "factionName": "Necrons",
@@ -4938,6 +5040,7 @@
   },
   {
     "id": 3009,
+    "nameId": 504,
     "name": "Necron Skorpekh Destroyer",
     "faction": 3,
     "factionName": "Necrons",
@@ -4990,6 +5093,7 @@
   },
   {
     "id": 3002,
+    "nameId": 509,
     "name": "Necron Hexmark Destroyer",
     "faction": 3,
     "factionName": "Necrons",
@@ -5036,6 +5140,7 @@
   },
   {
     "id": 3015,
+    "nameId": 1024,
     "name": "Necron Royal Warden",
     "faction": 3,
     "factionName": "Necrons",
@@ -5077,6 +5182,7 @@
   },
   {
     "id": 3013,
+    "nameId": 571,
     "name": "Necron Annihilation Barge",
     "faction": 3,
     "factionName": "Necrons",
@@ -5129,6 +5235,7 @@
   },
   {
     "id": 3001,
+    "nameId": 552,
     "name": "Necron Plasmancer",
     "faction": 3,
     "factionName": "Necrons",
@@ -5175,6 +5282,7 @@
   },
   {
     "id": 3000,
+    "nameId": 543,
     "name": "Necron Overlord",
     "faction": 3,
     "factionName": "Necrons",
@@ -5225,6 +5333,7 @@
   },
   {
     "id": 8021,
+    "nameId": 1260,
     "name": "Dakkadak Batzblitza",
     "faction": 8,
     "factionName": "Orks",
@@ -5276,6 +5385,7 @@
   },
   {
     "id": 8005,
+    "nameId": 827,
     "name": "Ork Gretchin",
     "faction": 8,
     "factionName": "Orks",
@@ -5317,6 +5427,7 @@
   },
   {
     "id": 8015,
+    "nameId": -1,
     "name": "Unknown Unit 8015",
     "faction": 8,
     "factionName": "Orks",
@@ -5358,6 +5469,7 @@
   },
   {
     "id": 8016,
+    "nameId": -1,
     "name": "Unknown Unit 8016",
     "faction": 8,
     "factionName": "Orks",
@@ -5393,6 +5505,7 @@
   },
   {
     "id": 8020,
+    "nameId": 1258,
     "name": "Ork Boyz wiv Choppa",
     "faction": 8,
     "factionName": "Orks",
@@ -5433,6 +5546,7 @@
   },
   {
     "id": 8006,
+    "nameId": 768,
     "name": "Ork Boyz",
     "faction": 8,
     "factionName": "Orks",
@@ -5476,6 +5590,7 @@
   },
   {
     "id": 8009,
+    "nameId": 783,
     "name": "Ork Burna Boyz",
     "faction": 8,
     "factionName": "Orks",
@@ -5513,6 +5628,7 @@
   },
   {
     "id": 8004,
+    "nameId": 776,
     "name": "Ork Stormboyz",
     "faction": 8,
     "factionName": "Orks",
@@ -5553,6 +5669,7 @@
   },
   {
     "id": 8012,
+    "nameId": 763,
     "name": "Warbiker",
     "faction": 8,
     "factionName": "Orks",
@@ -5592,6 +5709,7 @@
   },
   {
     "id": 8003,
+    "nameId": 824,
     "name": "Ork Painboy",
     "faction": 8,
     "factionName": "Orks",
@@ -5633,6 +5751,7 @@
   },
   {
     "id": 8007,
+    "nameId": 792,
     "name": "Ork Nobz",
     "faction": 8,
     "factionName": "Orks",
@@ -5679,6 +5798,7 @@
   },
   {
     "id": 8010,
+    "nameId": 830,
     "name": "Ork Lootas",
     "faction": 8,
     "factionName": "Orks",
@@ -5721,6 +5841,7 @@
   },
   {
     "id": 8001,
+    "nameId": 813,
     "name": "Ork Weirdboy",
     "faction": 8,
     "factionName": "Orks",
@@ -5762,6 +5883,7 @@
   },
   {
     "id": 8014,
+    "nameId": 787,
     "name": "Ork Deffkopta",
     "faction": 8,
     "factionName": "Orks",
@@ -5804,6 +5926,7 @@
   },
   {
     "id": 8019,
+    "nameId": 1262,
     "name": "Kustom Boosta-Blasta",
     "faction": 8,
     "factionName": "Orks",
@@ -5850,6 +5973,7 @@
   },
   {
     "id": 8011,
+    "nameId": 797,
     "name": "Ork Flash Gitz",
     "faction": 8,
     "factionName": "Orks",
@@ -5889,6 +6013,7 @@
   },
   {
     "id": 8002,
+    "nameId": 819,
     "name": "Ork Big Mek",
     "faction": 8,
     "factionName": "Orks",
@@ -5935,6 +6060,7 @@
   },
   {
     "id": 8008,
+    "nameId": 801,
     "name": "Ork Meganobz",
     "faction": 8,
     "factionName": "Orks",
@@ -5988,6 +6114,7 @@
   },
   {
     "id": 8013,
+    "nameId": 834,
     "name": "Ork Deff Dread",
     "faction": 8,
     "factionName": "Orks",
@@ -6035,6 +6162,7 @@
   },
   {
     "id": 8018,
+    "nameId": 1261,
     "name": "Shokkjump Dragsta",
     "faction": 8,
     "factionName": "Orks",
@@ -6086,6 +6214,7 @@
   },
   {
     "id": 8000,
+    "nameId": 810,
     "name": "Ork Warboss",
     "faction": 8,
     "factionName": "Orks",
@@ -6135,6 +6264,7 @@
   },
   {
     "id": 8017,
+    "nameId": 1259,
     "name": "Deffkilla Wartrike",
     "faction": 8,
     "factionName": "Orks",
@@ -6184,6 +6314,7 @@
   },
   {
     "id": 9003,
+    "nameId": 934,
     "name": "T'au Tactical Drones",
     "faction": 9,
     "factionName": "T'au",
@@ -6225,6 +6356,7 @@
   },
   {
     "id": 9016,
+    "nameId": 918,
     "name": "Gun Drone",
     "faction": 9,
     "factionName": "T'au",
@@ -6266,6 +6398,7 @@
   },
   {
     "id": 9015,
+    "nameId": 919,
     "name": "Marker Drone",
     "faction": 9,
     "factionName": "T'au",
@@ -6301,6 +6434,7 @@
   },
   {
     "id": 9014,
+    "nameId": 917,
     "name": "Shield Drone",
     "faction": 9,
     "factionName": "T'au",
@@ -6336,6 +6470,7 @@
   },
   {
     "id": 9005,
+    "nameId": 942,
     "name": "T'au Fire Warrior Strike Team",
     "faction": 9,
     "factionName": "T'au",
@@ -6378,6 +6513,7 @@
   },
   {
     "id": 9006,
+    "nameId": 945,
     "name": "T'au Fire Warrior Breacher Team",
     "faction": 9,
     "factionName": "T'au",
@@ -6419,6 +6555,7 @@
   },
   {
     "id": 9004,
+    "nameId": 938,
     "name": "T'au Pathfinders",
     "faction": 9,
     "factionName": "T'au",
@@ -6461,6 +6598,7 @@
   },
   {
     "id": 9012,
+    "nameId": 974,
     "name": "T'au Piranha",
     "faction": 9,
     "factionName": "T'au",
@@ -6508,6 +6646,7 @@
   },
   {
     "id": 9002,
+    "nameId": 929,
     "name": "T'au Ethereal",
     "faction": 9,
     "factionName": "T'au",
@@ -6549,6 +6688,7 @@
   },
   {
     "id": 9008,
+    "nameId": 954,
     "name": "T'au Stealth Battlesuit Team",
     "faction": 9,
     "factionName": "T'au",
@@ -6591,6 +6731,7 @@
   },
   {
     "id": 9001,
+    "nameId": 924,
     "name": "T'au Cadre Fireblade",
     "faction": 9,
     "factionName": "T'au",
@@ -6637,6 +6778,7 @@
   },
   {
     "id": 9010,
+    "nameId": 964,
     "name": "T'au Ghostkeel Battlesuit",
     "faction": 9,
     "factionName": "T'au",
@@ -6686,6 +6828,7 @@
   },
   {
     "id": 9007,
+    "nameId": 949,
     "name": "T'au Crisis Battlesuit Team",
     "faction": 9,
     "factionName": "T'au",
@@ -6734,6 +6877,7 @@
   },
   {
     "id": 9009,
+    "nameId": 957,
     "name": "T'au Broadside Battlesuit",
     "faction": 9,
     "factionName": "T'au",
@@ -6780,6 +6924,7 @@
   },
   {
     "id": 9000,
+    "nameId": 911,
     "name": "T'au Commander",
     "faction": 9,
     "factionName": "T'au",
@@ -6828,6 +6973,7 @@
   },
   {
     "id": 9013,
+    "nameId": 976,
     "name": "T'au Hammerhead Gunship",
     "faction": 9,
     "factionName": "T'au",
@@ -6875,6 +7021,7 @@
   },
   {
     "id": 9011,
+    "nameId": 968,
     "name": "T'au Riptide Battlesuit",
     "faction": 9,
     "factionName": "T'au",
@@ -6922,6 +7069,7 @@
   },
   {
     "id": 1029,
+    "nameId": 276,
     "name": "Tyranid Spore Mine",
     "faction": 1,
     "factionName": "Tyranid",
@@ -6961,6 +7109,7 @@
   },
   {
     "id": 1035,
+    "nameId": 276,
     "name": "Tyranid Spore Mine",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7000,6 +7149,7 @@
   },
   {
     "id": 1006,
+    "nameId": 5,
     "name": "Tyranid Termagant",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7043,6 +7193,7 @@
   },
   {
     "id": 1009,
+    "nameId": 22,
     "name": "Tyranid Hormagaunt",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7084,6 +7235,7 @@
   },
   {
     "id": 1030,
+    "nameId": 22,
     "name": "Tyranid Hormagaunt",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7125,6 +7277,7 @@
   },
   {
     "id": 1011,
+    "nameId": 88,
     "name": "Tyranid Gargoyle",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7171,6 +7324,7 @@
   },
   {
     "id": 1027,
+    "nameId": 163,
     "name": "Tyranid Genestealer",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7212,6 +7366,7 @@
   },
   {
     "id": 1010,
+    "nameId": 24,
     "name": "Tyranid Venomthrope",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7253,6 +7408,7 @@
   },
   {
     "id": 1000,
+    "nameId": 95,
     "name": "Tyranid Warriors",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7300,6 +7456,7 @@
   },
   {
     "id": 1033,
+    "nameId": 1036,
     "name": "Tyranid Pyrovore",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7341,6 +7498,7 @@
   },
   {
     "id": 1018,
+    "nameId": 156,
     "name": "Tyranid Thornback",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7403,6 +7561,7 @@
   },
   {
     "id": 1032,
+    "nameId": 468,
     "name": "Tyranid Hive Guard",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7445,6 +7604,7 @@
   },
   {
     "id": 1034,
+    "nameId": 1031,
     "name": "Tyranid Biovore",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7486,6 +7646,7 @@
   },
   {
     "id": 1012,
+    "nameId": 152,
     "name": "Tyranid Trygon",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7532,6 +7693,7 @@
   },
   {
     "id": 1017,
+    "nameId": 130,
     "name": "Tyranid Exocrine",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7578,6 +7740,7 @@
   },
   {
     "id": 1028,
+    "nameId": 149,
     "name": "Tyranid Prime",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7619,6 +7782,7 @@
   },
   {
     "id": 1022,
+    "nameId": 7,
     "name": "Tyranid Tyrannofex",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7665,6 +7829,7 @@
   },
   {
     "id": 1031,
+    "nameId": 466,
     "name": "Tyranid Broodlord",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7711,6 +7876,7 @@
   },
   {
     "id": 1015,
+    "nameId": 80,
     "name": "Tyranid Tervigon",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7757,6 +7923,7 @@
   },
   {
     "id": 1025,
+    "nameId": 78,
     "name": "Tyranid Hive Tyrant",
     "faction": 1,
     "factionName": "Tyranid",
@@ -7808,6 +7975,7 @@
   },
   {
     "id": 11022,
+    "nameId": 1595,
     "name": "Haywire Mine",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -7843,6 +8011,7 @@
   },
   {
     "id": 11007,
+    "nameId": 3,
     "name": "Intercessors",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -7885,6 +8054,7 @@
   },
   {
     "id": 11006,
+    "nameId": 1509,
     "name": "Assault Intercessors",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -7934,6 +8104,7 @@
   },
   {
     "id": 11004,
+    "nameId": 1507,
     "name": "Incursors",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -7980,6 +8151,7 @@
   },
   {
     "id": 11012,
+    "nameId": 1516,
     "name": "Reivers",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8031,6 +8203,7 @@
   },
   {
     "id": 11016,
+    "nameId": 1492,
     "name": "Eliminators",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8073,6 +8246,7 @@
   },
   {
     "id": 11005,
+    "nameId": 1505,
     "name": "Heavy Intercessors",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8115,6 +8289,7 @@
   },
   {
     "id": 11020,
+    "nameId": 86,
     "name": "Hellblasters",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8162,6 +8337,7 @@
   },
   {
     "id": 11013,
+    "nameId": 124,
     "name": "Inceptor",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8204,6 +8380,7 @@
   },
   {
     "id": 11010,
+    "nameId": 74,
     "name": "Aggressors",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8263,6 +8440,7 @@
   },
   {
     "id": 11001,
+    "nameId": 1475,
     "name": "Apothecary",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8314,6 +8492,7 @@
   },
   {
     "id": 11008,
+    "nameId": 1485,
     "name": "Bladeguard Veterans",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8360,6 +8539,7 @@
   },
   {
     "id": 11015,
+    "nameId": 1495,
     "name": "Eradicators",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8401,6 +8581,7 @@
   },
   {
     "id": 11021,
+    "nameId": 1,
     "name": "Lieutenant",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8448,6 +8629,7 @@
   },
   {
     "id": 11018,
+    "nameId": 1480,
     "name": "Ballistus Dreadnought",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8504,6 +8686,7 @@
   },
   {
     "id": 11003,
+    "nameId": 1490,
     "name": "Chaplain",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8555,6 +8738,7 @@
   },
   {
     "id": 11002,
+    "nameId": 9,
     "name": "Librarian",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8607,6 +8791,7 @@
   },
   {
     "id": 11014,
+    "nameId": 1519,
     "name": "Storm Speeder",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8694,6 +8879,7 @@
   },
   {
     "id": 11011,
+    "nameId": 997,
     "name": "Invictor Warsuit",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8771,6 +8957,7 @@
   },
   {
     "id": 11009,
+    "nameId": 1532,
     "name": "Terminators",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8842,6 +9029,7 @@
   },
   {
     "id": 11000,
+    "nameId": 1487,
     "name": "Captain",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8889,6 +9077,7 @@
   },
   {
     "id": 11017,
+    "nameId": 1510,
     "name": "Redemptor Dreadnought",
     "faction": 11,
     "factionName": "Ultramarines",
@@ -8973,6 +9162,7 @@
   },
   {
     "id": 11019,
+    "nameId": 1497,
     "name": "Gladiator",
     "faction": 11,
     "factionName": "Ultramarines",

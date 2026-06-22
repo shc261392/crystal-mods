@@ -12,6 +12,7 @@ import {
   totalModels,
   totalPoints,
 } from './army-store';
+import { factionName, unitName } from './i18n';
 
 const units = unitsData as Unit[];
 const unitById = new Map(units.map((u) => [u.id, u]));
@@ -35,9 +36,10 @@ export function initArmyBuilder(): void {
   const listEl = list;
 
   select.innerHTML = [...units]
-    .sort((a, b) => a.name.localeCompare(b.name))
+    .sort((a, b) => unitName(a.id, a.name).localeCompare(unitName(b.id, b.name)))
     .map(
-      (u) => `<option value="${u.id}">${u.name} — ${u.pointCost} pts (${u.factionName})</option>`,
+      (u) =>
+        `<option value="${u.id}">${unitName(u.id, u.name)} — ${u.pointCost} pts (${factionName(u.faction, u.factionName)})</option>`,
     )
     .join('');
 
@@ -67,10 +69,12 @@ export function initArmyBuilder(): void {
       .map((e) => {
         const u = unitById.get(e.id);
         const href = u ? `/units/${unitSlug(u)}` : '#';
+        const displayName = u ? unitName(u.id, u.name) : unitName(e.id, e.name);
+        const displayFaction = u ? factionName(u.faction, u.factionName) : e.faction;
         return `<li class="flex items-center gap-3 rounded-lg bg-[var(--color-base)] border border-[var(--color-border)] px-3 py-2.5" data-id="${e.id}">
           <span class="flex-1 min-w-0">
-            <a href="${href}" class="font-semibold text-sm truncate block hover:text-[var(--color-gold)]">${e.name}</a>
-            <span class="text-xs text-[var(--color-faint)]">${e.faction} · ${e.points} pts each</span>
+            <a href="${href}" class="font-semibold text-sm truncate block hover:text-[var(--color-gold)]">${displayName}</a>
+            <span class="text-xs text-[var(--color-faint)]">${displayFaction} · ${e.points} pts each</span>
           </span>
           <span class="flex items-center gap-1.5 shrink-0">
             <button type="button" data-act="dec" class="btn btn-ghost !px-2 !py-1 text-base leading-none" aria-label="Decrease">−</button>
@@ -98,7 +102,9 @@ export function initArmyBuilder(): void {
     }
     const totals = new Map<string, number>();
     for (const e of army) {
-      totals.set(e.faction, (totals.get(e.faction) ?? 0) + e.points * e.qty);
+      const u = unitById.get(e.id);
+      const label = u ? factionName(u.faction, u.factionName) : e.faction;
+      totals.set(label, (totals.get(label) ?? 0) + e.points * e.qty);
     }
     box.innerHTML = `<p class="label mb-1">By faction</p>${[...totals.entries()]
       .sort((a, b) => b[1] - a[1])
@@ -158,6 +164,17 @@ export function initArmyBuilder(): void {
   document.getElementById('clear-btn')?.addEventListener('click', () => {
     army = [];
     persist();
+    render();
+  });
+
+  window.addEventListener('bs:locale-changed', () => {
+    select.innerHTML = [...units]
+      .sort((a, b) => unitName(a.id, a.name).localeCompare(unitName(b.id, b.name)))
+      .map(
+        (u) =>
+          `<option value="${u.id}">${unitName(u.id, u.name)} — ${u.pointCost} pts (${factionName(u.faction, u.factionName)})</option>`,
+      )
+      .join('');
     render();
   });
 

@@ -1,5 +1,7 @@
 // Client-side filtering/sorting for the weapons browser.
 
+import { applyI18n } from './i18n';
+
 type SortKey = 'name' | 'damage-desc' | 'damage-asc' | 'acc-desc';
 
 function num(el: HTMLElement, key: string): number {
@@ -8,6 +10,10 @@ function num(el: HTMLElement, key: string): number {
 
 function text(el: HTMLElement, key: string): string {
   return el.dataset[key] ?? '';
+}
+
+function displayName(el: HTMLElement): string {
+  return el.querySelector('h3')?.textContent?.trim() ?? text(el, 'name');
 }
 
 export function initWeaponsBrowser(): void {
@@ -42,7 +48,7 @@ export function initWeaponsBrowser(): void {
       case 'acc-desc':
         return num(b, 'acc') - num(a, 'acc');
       default:
-        return text(a, 'name').localeCompare(text(b, 'name'));
+        return displayName(a).localeCompare(displayName(b));
     }
   }
 
@@ -50,7 +56,7 @@ export function initWeaponsBrowser(): void {
     const term = q?.value.trim().toLowerCase() ?? '';
     let visible = 0;
     for (const card of cards) {
-      const matches = !term || text(card, 'name').includes(term);
+      const matches = !term || displayName(card).toLowerCase().includes(term);
       card.style.display = matches ? '' : 'none';
       if (matches) visible++;
     }
@@ -72,5 +78,11 @@ export function initWeaponsBrowser(): void {
     apply();
   });
 
+  window.addEventListener('bs:locale-changed', () => {
+    applyI18n();
+    apply();
+  });
+
+  applyI18n();
   apply();
 }

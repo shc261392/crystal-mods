@@ -1,10 +1,12 @@
 ---
+import { locales } from '../lib/data';
+
 const links = [
-  { href: '/units', label: 'Units' },
-  { href: '/weapons', label: 'Weapons' },
-  { href: '/army-builder', label: 'Army Builder' },
-  { href: '/calculator', label: 'Calculator' },
-  { href: '/compare', label: 'Compare' },
+  { href: '/units', label: 'Units', key: 'nav.units' },
+  { href: '/weapons', label: 'Weapons', key: 'nav.weapons' },
+  { href: '/army-builder', label: 'Army Builder', key: 'nav.armyBuilder' },
+  { href: '/calculator', label: 'Calculator', key: 'nav.calculator' },
+  { href: '/compare', label: 'Compare', key: 'nav.compare' },
 ];
 
 const current = Astro.url.pathname;
@@ -33,12 +35,18 @@ function isActive(href: string): boolean {
               : 'text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:bg-[var(--color-elevated)]',
           ]}
         >
-          {l.label}
+          <span data-i18n-ui={l.key}>{l.label}</span>
         </a>
       ))}
     </nav>
 
     <div class="ml-auto flex items-center gap-2">
+      <label class="sr-only" for="lang-select" data-i18n-ui="lang.label">Language</label>
+      <select id="lang-select" class="select h-9 !py-0 text-xs min-w-[9rem] hidden sm:block">
+        {locales.map((locale) => (
+          <option value={locale.code}>{locale.native}</option>
+        ))}
+      </select>
       <button
         type="button"
         id="search-open"
@@ -46,7 +54,7 @@ function isActive(href: string): boolean {
         aria-label="Search units and weapons"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-        <span class="hidden sm:inline text-[var(--color-faint)]">Search</span>
+        <span class="hidden sm:inline text-[var(--color-faint)]" data-i18n-ui="nav.search">Search</span>
         <kbd class="hidden sm:inline text-[10px] px-1.5 py-0.5 rounded border border-[var(--color-border)] text-[var(--color-faint)]">⌘K</kbd>
       </button>
 
@@ -75,7 +83,7 @@ function isActive(href: string): boolean {
               : 'text-[var(--color-muted)]',
           ]}
         >
-          {l.label}
+          <span data-i18n-ui={l.key}>{l.label}</span>
         </a>
       ))}
     </nav>
@@ -95,6 +103,7 @@ function isActive(href: string): boolean {
         type="text"
         class="flex-1 bg-transparent py-3.5 outline-none text-[15px]"
         placeholder="Search units and weapons…"
+        data-i18n-ui-placeholder="common.search"
         autocomplete="off"
         spellcheck="false"
       />

@@ -3,6 +3,7 @@
 
 import unitsData from '../data/units.json';
 import type { Unit } from '../lib/types';
+import { factionName, roleName, unitName } from './i18n';
 
 const units = unitsData as Unit[];
 const unitById = new Map(units.map((u) => [u.id, u]));
@@ -16,8 +17,8 @@ interface Row {
 }
 
 const rows: Row[] = [
-  { label: 'Faction', get: (u) => u.factionName, best: null },
-  { label: 'Role', get: (u) => u.roleName, best: null },
+  { label: 'Faction', get: (u) => factionName(u.faction, u.factionName), best: null },
+  { label: 'Role', get: (u) => roleName(u.role, u.roleName), best: null },
   { label: 'Points', get: (u) => u.pointCost, best: 'low' },
   { label: 'Total Health', get: (u) => u.totalHealth, best: 'high' },
   { label: 'Health / model', get: (u) => u.maxHealth, best: 'high' },
@@ -54,8 +55,11 @@ export function initCompare(): void {
   const emptyEl = empty;
 
   select.innerHTML = [...units]
-    .sort((a, b) => a.name.localeCompare(b.name))
-    .map((u) => `<option value="${u.id}">${u.name} (${u.factionName})</option>`)
+    .sort((a, b) => unitName(a.id, a.name).localeCompare(unitName(b.id, b.name)))
+    .map(
+      (u) =>
+        `<option value="${u.id}">${unitName(u.id, u.name)} (${factionName(u.faction, u.factionName)})</option>`,
+    )
     .join('');
 
   let ids: number[] = [];
@@ -96,8 +100,8 @@ export function initCompare(): void {
       ${selected
         .map(
           (u) => `<th class="p-3 text-left min-w-[10rem]">
-            <a href="/units/${unitSlug(u)}" class="font-bold hover:text-[var(--color-gold)] block">${u.name}</a>
-            <span class="text-xs text-[var(--color-faint)] font-normal">${u.factionName}</span>
+            <a href="/units/${unitSlug(u)}" class="font-bold hover:text-[var(--color-gold)] block">${unitName(u.id, u.name)}</a>
+            <span class="text-xs text-[var(--color-faint)] font-normal">${factionName(u.faction, u.factionName)}</span>
             <button type="button" data-remove="${u.id}" class="block mt-1 text-xs text-[var(--color-faint)] hover:text-[var(--color-blood)]">remove</button>
           </th>`,
         )
@@ -168,6 +172,19 @@ export function initCompare(): void {
     } catch {
       toast(url);
     }
+  });
+
+  window.addEventListener('bs:locale-changed', () => {
+    const current = select.value;
+    select.innerHTML = [...units]
+      .sort((a, b) => unitName(a.id, a.name).localeCompare(unitName(b.id, b.name)))
+      .map(
+        (u) =>
+          `<option value="${u.id}">${unitName(u.id, u.name)} (${factionName(u.faction, u.factionName)})</option>`,
+      )
+      .join('');
+    if (current) select.value = current;
+    render();
   });
 
   function toast(message: string): void {

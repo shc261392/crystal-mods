@@ -29,21 +29,35 @@ const sorted = [...units].sort((a, b) => a.name.localeCompare(b.name));
   <div class="surface p-4 mb-6 sticky top-[4.5rem] z-30">
     <div class="grid gap-3 md:grid-cols-[1fr_auto_auto_auto] md:items-end">
       <div>
-        <label class="label block mb-1.5" for="q">Search</label>
-        <input id="q" class="input" type="search" placeholder="Search by name…" autocomplete="off" />
+        <label class="label block mb-1.5" for="q" data-i18n-ui="common.search">Search</label>
+        <input id="q" class="input" type="search" placeholder="Search by name…" data-i18n-ui-placeholder="common.search" autocomplete="off" />
       </div>
       <div>
-        <label class="label block mb-1.5" for="faction">Faction</label>
+        <label class="label block mb-1.5" for="faction" data-i18n-ui="common.faction">Faction</label>
         <select id="faction" class="select min-w-[10rem]">
           <option value="">All factions</option>
-          {factionNames.map((f) => <option value={f}>{f}</option>)}
+          {factionNames.map((f) => {
+            const sample = units.find((u) => u.factionName === f);
+            return (
+              <option value={f} data-faction-id={sample?.faction ?? ''}>
+                {f}
+              </option>
+            );
+          })}
         </select>
       </div>
       <div>
-        <label class="label block mb-1.5" for="role">Role</label>
+        <label class="label block mb-1.5" for="role" data-i18n-ui="common.role">Role</label>
         <select id="role" class="select min-w-[9rem]">
           <option value="">All roles</option>
-          {roleNames.map((r) => <option value={r}>{r}</option>)}
+          {roleNames.map((r) => {
+            const sample = units.find((u) => u.roleName === r);
+            return (
+              <option value={r} data-role-id={sample?.role ?? ''}>
+                {r}
+              </option>
+            );
+          })}
         </select>
       </div>
       <div>
@@ -71,6 +85,9 @@ const sorted = [...units].sort((a, b) => a.name.localeCompare(b.name));
         href={`/units/${unitSlug(u)}`}
         class="unit-card surface surface-hover p-4 block"
         data-name={u.name.toLowerCase()}
+        data-id={u.id}
+        data-faction-id={u.faction}
+        data-role-id={u.role}
         data-faction={u.factionName}
         data-role={u.roleName}
         data-points={u.pointCost}
@@ -82,12 +99,12 @@ const sorted = [...units].sort((a, b) => a.name.localeCompare(b.name));
           <span class="w-1 self-stretch rounded-full shrink-0" style={`background:${u.roleColor}`}></span>
           <div class="min-w-0 flex-1">
             <div class="flex items-center gap-2">
-              <h3 class="font-bold truncate">{u.name}</h3>
+              <h3 class="font-bold truncate" data-i18n-unit={u.id} data-i18n-fallback={u.name}>{u.name}</h3>
               {u.isLarge && <span class="chip !py-0.5 !px-1.5 text-[10px]">Large</span>}
             </div>
             <p class="text-xs text-[var(--color-faint)] mt-0.5 flex items-center gap-1.5">
               <span class="w-1.5 h-1.5 rounded-full shrink-0" style={`background:${factionColor(u.factionName)}`}></span>
-              {u.factionName} · {u.roleName}
+              <span data-i18n-faction={u.faction} data-i18n-fallback={u.factionName}>{u.factionName}</span> · <span data-i18n-role={u.role} data-i18n-fallback={u.roleName}>{u.roleName}</span>
             </p>
           </div>
           <div class="text-right shrink-0">

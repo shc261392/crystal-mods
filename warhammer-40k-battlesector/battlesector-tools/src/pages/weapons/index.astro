@@ -22,8 +22,8 @@ const maxDamage = Math.max(...weapons.map((w) => w.damage));
   <div class="surface p-4 mb-6 sticky top-[4.5rem] z-30">
     <div class="grid gap-3 md:grid-cols-[1fr_auto] md:items-end">
       <div>
-        <label class="label block mb-1.5" for="q">Search</label>
-        <input id="q" class="input" type="search" placeholder="Search by name…" autocomplete="off" />
+        <label class="label block mb-1.5" for="q" data-i18n-ui="common.search">Search</label>
+        <input id="q" class="input" type="search" placeholder="Search by name…" data-i18n-ui-placeholder="common.search" autocomplete="off" />
       </div>
       <div>
         <label class="label block mb-1.5" for="sort">Sort</label>
@@ -48,12 +48,13 @@ const maxDamage = Math.max(...weapons.map((w) => w.damage));
         <a
           href={`/weapons/${weaponSlug(w)}`}
           class="weapon-card surface surface-hover p-4 block"
+            data-id={w.id}
           data-name={w.name.toLowerCase()}
           data-damage={w.damage}
           data-acc={w.accuracy}
         >
           <div class="flex items-center justify-between gap-3">
-            <h3 class="font-bold truncate">{w.name}</h3>
+              <h3 class="font-bold truncate" data-i18n-weapon={w.id} data-i18n-fallback={w.name}>{w.name}</h3>
             <span class="chip !py-0.5 shrink-0">{w.isMelee ? 'Melee' : 'Ranged'}</span>
           </div>
           <div class="mt-3 flex items-end justify-between gap-4">

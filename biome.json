@@ -3,6 +3,7 @@
   "files": {
     "ignore": [
       ".copilot_workspace/**",
+      "**/.astro/**",
       "**/node_modules/**",
       "**/dist/**",
       "**/.venv/**",

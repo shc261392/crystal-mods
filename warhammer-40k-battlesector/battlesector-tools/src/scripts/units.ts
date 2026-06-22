@@ -4,12 +4,18 @@
 
 type SortKey = 'name' | 'points-desc' | 'points-asc' | 'hp-desc' | 'armor-desc' | 'move-desc';
 
+import { applyI18n, factionName, roleName } from './i18n';
+
 function num(el: HTMLElement, key: string): number {
   return Number(el.dataset[key] ?? 0);
 }
 
 function text(el: HTMLElement, key: string): string {
   return el.dataset[key] ?? '';
+}
+
+function displayName(el: HTMLElement): string {
+  return el.querySelector('h3')?.textContent?.trim() ?? text(el, 'name');
 }
 
 export function initUnitsBrowser(): void {
@@ -22,6 +28,8 @@ export function initUnitsBrowser(): void {
   const empty = document.getElementById('empty');
   const reset = document.getElementById('reset');
   if (!grid || !q || !faction || !role || !sort) return;
+  const factionSelect = faction;
+  const roleSelect = role;
 
   const cards = Array.from(grid.querySelectorAll<HTMLElement>('.unit-card'));
 
@@ -55,7 +63,20 @@ export function initUnitsBrowser(): void {
       case 'move-desc':
         return num(b, 'move') - num(a, 'move');
       default:
-        return text(a, 'name').localeCompare(text(b, 'name'));
+        return displayName(a).localeCompare(displayName(b));
+    }
+  }
+
+  function localizeSelectOptions(): void {
+    for (const opt of Array.from(factionSelect.options)) {
+      const id = Number(opt.getAttribute('data-faction-id'));
+      if (!Number.isFinite(id)) continue;
+      opt.textContent = factionName(id, opt.value);
+    }
+    for (const opt of Array.from(roleSelect.options)) {
+      const id = Number(opt.getAttribute('data-role-id'));
+      if (!Number.isFinite(id)) continue;
+      opt.textContent = roleName(id, opt.value);
     }
   }
 
@@ -67,7 +88,7 @@ export function initUnitsBrowser(): void {
 
     for (const card of cards) {
       const matches =
-        (!term || text(card, 'name').includes(term)) &&
+        (!term || displayName(card).toLowerCase().includes(term)) &&
         (!fac || text(card, 'faction') === fac) &&
         (!rol || text(card, 'role') === rol);
       card.style.display = matches ? '' : 'none';
@@ -96,5 +117,13 @@ export function initUnitsBrowser(): void {
     apply();
   });
 
+  window.addEventListener('bs:locale-changed', () => {
+    applyI18n();
+    localizeSelectOptions();
+    apply();
+  });
+
+  applyI18n();
+  localizeSelectOptions();
   apply();
 }
