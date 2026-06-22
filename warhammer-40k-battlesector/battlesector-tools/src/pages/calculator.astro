@@ -113,8 +113,102 @@ import Base from '../layouts/Base.astro';
 
   <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 hidden surface px-4 py-2.5 text-sm font-semibold z-[120]"></div>
 
+  <!-- Combat Simulator -->
+  <section class="surface p-5 md:p-6 mt-6 relative overflow-hidden">
+    <div class="absolute -top-20 -left-16 w-56 h-56 rounded-full blur-3xl opacity-20" style="background:radial-gradient(circle,var(--color-blood),transparent 70%)"></div>
+    <div class="relative">
+      <h2 class="text-xl font-black" data-i18n-ui="combatSim.title">Combat Simulator</h2>
+      <p class="text-sm text-[var(--color-muted)] mt-1 mb-5 max-w-3xl" data-i18n-ui="combatSim.subtitle">
+        Pit two squads against each other. Each dot is a model: the red bar is current
+        health, blue is bonus HP (e.g. a Commissar's shield), and a dimmed dot is a
+        casualty. Press play to auto-resolve the fight with dice rolls.
+      </p>
+
+      <div class="grid gap-4 md:grid-cols-2">
+        <!-- Squad A -->
+        <div class="rounded-xl border border-[var(--color-border)] p-4" style="border-left:3px solid var(--color-plasma)">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-bold" data-i18n-ui="combatSim.squadA">Squad A</h3>
+            <span id="simA-count" class="text-xs text-[var(--color-faint)] tabular-nums"></span>
+          </div>
+          <div class="grid gap-2.5">
+            <select id="simA-unit" class="select" aria-label="Squad A unit"></select>
+            <select id="simA-weapon" class="select" aria-label="Squad A weapon"></select>
+            <label class="label flex items-center justify-between gap-2 normal-case">
+              <span data-i18n-ui="combatSim.bonusHp">Bonus HP / model</span>
+              <input id="simA-bonus" class="input w-24" type="number" min="0" value="0" inputmode="numeric" />
+            </label>
+          </div>
+          <div id="simA-field" class="flex flex-wrap gap-1.5 mt-4 min-h-[2.25rem]"></div>
+        </div>
+        <!-- Squad B -->
+        <div class="rounded-xl border border-[var(--color-border)] p-4" style="border-left:3px solid var(--color-blood)">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-bold" data-i18n-ui="combatSim.squadB">Squad B</h3>
+            <span id="simB-count" class="text-xs text-[var(--color-faint)] tabular-nums"></span>
+          </div>
+          <div class="grid gap-2.5">
+            <select id="simB-unit" class="select" aria-label="Squad B unit"></select>
+            <select id="simB-weapon" class="select" aria-label="Squad B weapon"></select>
+            <label class="label flex items-center justify-between gap-2 normal-case">
+              <span data-i18n-ui="combatSim.bonusHp">Bonus HP / model</span>
+              <input id="simB-bonus" class="input w-24" type="number" min="0" value="0" inputmode="numeric" />
+            </label>
+          </div>
+          <div id="simB-field" class="flex flex-wrap gap-1.5 mt-4 min-h-[2.25rem]"></div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3 mt-5">
+        <button id="sim-play" type="button" class="btn btn-primary min-w-[7rem]">
+          <span id="sim-play-label" data-i18n-ui="combatSim.play">▶ Play</span>
+        </button>
+        <button id="sim-revert" type="button" class="btn">
+          <span data-i18n-ui="combatSim.revert">↺ Revert</span>
+        </button>
+        <div class="ml-auto text-sm text-[var(--color-muted)]">
+          <span data-i18n-ui="combatSim.turn">Turn</span>
+          <span id="sim-turn" class="font-bold tabular-nums">0</span>
+        </div>
+      </div>
+      <p id="sim-outcome" class="mt-3 font-semibold min-h-[1.5rem]"></p>
+      <ol id="sim-log" class="mt-2 space-y-1 text-xs text-[var(--color-muted)] max-h-44 overflow-y-auto"></ol>
+    </div>
+  </section>
+
+  <style is:global>
+    .sim-dot {
+      position: relative;
+      width: 20px;
+      height: 30px;
+      border-radius: 5px;
+      overflow: hidden;
+      background: var(--color-base);
+      border: 1px solid var(--color-border);
+      display: flex;
+      flex-direction: column-reverse;
+      transition: opacity 0.3s ease, filter 0.3s ease;
+    }
+    .sim-dot.dead {
+      opacity: 0.22;
+      filter: grayscale(1);
+    }
+    .sim-dot > .hp {
+      width: 100%;
+      background: linear-gradient(to top, #d63b35, #ff6b63);
+      transition: height 0.35s ease;
+    }
+    .sim-dot > .bonus {
+      width: 100%;
+      background: linear-gradient(to top, #2f6fe0, #5fa3ff);
+      transition: height 0.35s ease;
+    }
+  </style>
+
   <script>
     import { initCalculator } from '../scripts/calculator';
+    import { initCombatSim } from '../scripts/combat-sim';
     initCalculator();
+    initCombatSim();
   </script>
 </Base>
