@@ -17,6 +17,13 @@ import Base from '../layouts/Base.astro';
     </p>
   </header>
 
+  <!-- Mode toggle -->
+  <div class="inline-flex gap-1 surface !p-1 mb-5" role="tablist" aria-label="Calculator mode">
+    <button id="mode-oneround-btn" type="button" role="tab" class="mode-btn px-4 py-2 rounded-lg text-sm font-bold transition-colors" data-i18n-ui="calculator.mode.oneRound">One-round test</button>
+    <button id="mode-battle-btn" type="button" role="tab" class="mode-btn px-4 py-2 rounded-lg text-sm font-bold transition-colors text-[var(--color-muted)]" data-i18n-ui="calculator.mode.battle">Battle simulation</button>
+  </div>
+
+  <div id="mode-oneround">
   <div class="grid gap-4 lg:grid-cols-[1fr_1fr_1.1fr]">
     <!-- Attacker -->
     <section class="surface p-5">
@@ -45,6 +52,10 @@ import Base from '../layouts/Base.astro';
           <label class="label block mb-1.5" for="shots">Shots / attack</label>
           <input id="shots" class="input" type="number" min="1" inputmode="numeric" value="1" />
         </div>
+        <div>
+          <label class="label block mb-1.5" for="dmgmod" data-i18n-ui="calculator.buff.damageMod">Damage modifier</label>
+          <input id="dmgmod" class="input" type="number" inputmode="numeric" value="0" />
+        </div>
       </div>
     </section>
 
@@ -70,6 +81,14 @@ import Base from '../layouts/Base.astro';
         <div>
           <label class="label block mb-1.5" for="members" data-i18n-ui="common.models">Models</label>
           <input id="members" class="input" type="number" min="1" inputmode="numeric" value="1" />
+        </div>
+        <div>
+          <label class="label block mb-1.5" for="curhp" data-i18n-ui="calculator.target.currentHp">Front model HP</label>
+          <input id="curhp" class="input" type="number" min="0" inputmode="numeric" placeholder="full" data-i18n-ui-placeholder="calculator.target.fullHp" />
+        </div>
+        <div>
+          <label class="label block mb-1.5" for="lost" data-i18n-ui="calculator.target.modelsLost">Models lost</label>
+          <input id="lost" class="input" type="number" min="0" inputmode="numeric" value="0" />
         </div>
       </div>
     </section>
@@ -104,6 +123,10 @@ import Base from '../layouts/Base.astro';
           <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.targetTotalHp">Target total HP</span>
           <span id="r-totalhp" class="text-base font-semibold tabular-nums text-[var(--color-faint)]">—</span>
         </div>
+        <div class="flex items-baseline justify-between">
+          <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.targetRemainingHp">Target remaining HP</span>
+          <span id="r-remaining" class="text-base font-semibold tabular-nums text-[var(--color-faint)]">—</span>
+        </div>
       </div>
       <button id="copy-link" type="button" class="btn w-full mt-5" data-url="" data-i18n-ui="common.copyShareableLink">
         Copy shareable link
@@ -111,8 +134,37 @@ import Base from '../layouts/Base.astro';
     </section>
   </div>
 
+  <!-- Battlefield modifiers (values not yet verified in game data — disabled) -->
+  <section class="surface p-5 mt-4">
+    <div class="flex items-center gap-2 mb-1">
+      <h2 class="text-lg font-bold" data-i18n-ui="calculator.section.battlefield">Battlefield modifiers</h2>
+      <span class="chip !py-0.5 !px-2 text-[10px] uppercase tracking-wide" data-i18n-ui="common.comingSoon">Coming soon</span>
+    </div>
+    <p class="text-sm text-[var(--color-faint)] mb-4" data-i18n-ui="calculator.section.battlefieldNote">Cover, range and momentum need values we haven't verified in the game data yet — disabled for now so nothing shows made-up numbers.</p>
+    <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <label class="label block mb-1.5" data-i18n-ui="calculator.adv.cover">Cover</label>
+        <select class="select" disabled><option data-i18n-ui="common.comingSoon">Coming soon</option></select>
+      </div>
+      <div>
+        <label class="label block mb-1.5" data-i18n-ui="calculator.adv.distance">Tile distance</label>
+        <input class="input" type="number" disabled placeholder="Coming soon" data-i18n-ui-placeholder="common.comingSoon" />
+      </div>
+      <div>
+        <label class="label block mb-1.5" data-i18n-ui="calculator.adv.momentum">Momentum</label>
+        <input class="input" type="number" disabled placeholder="Coming soon" data-i18n-ui-placeholder="common.comingSoon" />
+      </div>
+      <div>
+        <label class="label block mb-1.5" data-i18n-ui="calculator.adv.presets">Preset buffs</label>
+        <select class="select" disabled><option data-i18n-ui="common.comingSoon">Coming soon</option></select>
+      </div>
+    </div>
+  </section>
+  </div>
+
   <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 hidden surface px-4 py-2.5 text-sm font-semibold z-[120]"></div>
 
+  <div id="mode-battle" class="hidden">
   <!-- Combat Simulator -->
   <section class="surface p-5 md:p-6 mt-6 relative overflow-hidden">
     <div class="absolute -top-20 -left-16 w-56 h-56 rounded-full blur-3xl opacity-20" style="background:radial-gradient(circle,var(--color-blood),transparent 70%)"></div>
@@ -175,6 +227,7 @@ import Base from '../layouts/Base.astro';
       <ol id="sim-log" class="mt-2 space-y-1 text-xs text-[var(--color-muted)] max-h-44 overflow-y-auto"></ol>
     </div>
   </section>
+  </div>
 
   <style is:global>
     .sim-dot {

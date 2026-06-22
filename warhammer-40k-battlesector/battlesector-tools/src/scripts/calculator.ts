@@ -29,6 +29,9 @@ export function initCalculator(): void {
   const evasion = $('evasion');
   const hpmodel = $('hpmodel');
   const members = $('members');
+  const dmgmod = $('dmgmod');
+  const curhp = $('curhp');
+  const lost = $('lost');
 
   function renderOptions(): void {
     const currentW = weaponSel.value;
@@ -65,6 +68,8 @@ export function initCalculator(): void {
     evasion.value = String(u.evasion);
     hpmodel.value = String(u.maxHealth);
     members.value = String(u.members);
+    curhp.value = '';
+    lost.value = '0';
   }
 
   function compute(): void {
@@ -73,24 +78,32 @@ export function initCalculator(): void {
     const pierce = Number(ap.value) || 0;
     const mod = Number(accmod.value) || 0;
     const shotCount = Math.max(1, Number(shots.value) || 1);
+    const dmgModifier = Number(dmgmod.value) || 0;
     const arm = Number(armor.value) || 0;
     const eva = Number(evasion.value) || 0;
     const hp = Math.max(1, Number(hpmodel.value) || 1);
     const mem = Math.max(1, Number(members.value) || 1);
+    const lostModels = Math.min(mem, Math.max(0, Number(lost.value) || 0));
+    const aliveModels = Math.max(0, mem - lostModels);
+    const frontHp = curhp.value === '' ? hp : Math.max(0, Math.min(hp, Number(curhp.value) || 0));
 
-    const perHit = damagePerHit(dmg, arm, pierce);
+    const effDamage = Math.max(0, dmg + dmgModifier);
+    const perHit = damagePerHit(effDamage, arm, pierce);
     const hit = hitChance(acc, mod, eva);
     const perAttack = perHit * shotCount;
     const expected = expectedDamage(perAttack, hit);
-    const killed = modelsKilled(perAttack, hp);
+    const killed = Math.min(modelsKilled(perAttack, hp), aliveModels);
     const totalHp = hp * mem;
+    // Remaining HP accounts for already-lost models and a wounded front model.
+    const remainingHp = Math.max(0, aliveModels * hp - (hp - frontHp));
 
     setText('r-perhit', String(perHit));
     setText('r-hit', `${Math.round(hit)}%`);
     setText('r-attack', String(perAttack));
     setText('r-expected', String(expected));
-    setText('r-killed', `${Math.min(killed, mem)} / ${mem}`);
+    setText('r-killed', `${killed} / ${aliveModels}`);
     setText('r-totalhp', String(totalHp));
+    setText('r-remaining', String(remainingHp));
     syncUrl();
   }
 
@@ -117,7 +130,20 @@ export function initCalculator(): void {
     if (unitSel.value) applyUnit(Number(unitSel.value));
     compute();
   });
-  for (const el of [damage, accuracy, ap, accmod, shots, armor, evasion, hpmodel, members]) {
+  for (const el of [
+    damage,
+    accuracy,
+    ap,
+    accmod,
+    shots,
+    dmgmod,
+    armor,
+    evasion,
+    hpmodel,
+    members,
+    curhp,
+    lost,
+  ]) {
     el.addEventListener('input', () => {
       // Manual edits detach from the preset selection.
       compute();
@@ -157,6 +183,28 @@ export function initCalculator(): void {
     applyUnit(Number(uParam));
   }
   compute();
+
+  // Mode toggle: one-round attack test (default) vs battle simulation.
+  const oneRoundBtn = document.getElementById('mode-oneround-btn');
+  const battleBtn = document.getElementById('mode-battle-btn');
+  const oneRoundPane = document.getElementById('mode-oneround');
+  const battlePane = document.getElementById('mode-battle');
+  const MODE_ACTIVE = ['bg-[var(--color-gold)]', '!text-[var(--color-void)]', 'shadow'];
+  function setMode(battle: boolean): void {
+    oneRoundPane?.classList.toggle('hidden', battle);
+    battlePane?.classList.toggle('hidden', !battle);
+    for (const c of MODE_ACTIVE) {
+      oneRoundBtn?.classList.toggle(c, !battle);
+      battleBtn?.classList.toggle(c, battle);
+    }
+    oneRoundBtn?.classList.toggle('text-[var(--color-muted)]', battle);
+    battleBtn?.classList.toggle('text-[var(--color-muted)]', !battle);
+    oneRoundBtn?.setAttribute('aria-selected', battle ? 'false' : 'true');
+    battleBtn?.setAttribute('aria-selected', battle ? 'true' : 'false');
+  }
+  oneRoundBtn?.addEventListener('click', () => setMode(false));
+  battleBtn?.addEventListener('click', () => setMode(true));
+  setMode(false);
 
   window.addEventListener('bs:locale-changed', () => {
     renderOptions();

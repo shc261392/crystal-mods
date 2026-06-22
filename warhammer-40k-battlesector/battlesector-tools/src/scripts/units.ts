@@ -4,7 +4,7 @@
 
 type SortKey = 'name' | 'points-desc' | 'points-asc' | 'hp-desc' | 'armor-desc' | 'move-desc';
 
-import { applyI18n, factionName, roleName, tf } from './i18n';
+import { applyI18n, roleName, tf } from './i18n';
 
 function num(el: HTMLElement, key: string): number {
   return Number(el.dataset[key] ?? 0);
@@ -21,29 +21,52 @@ function displayName(el: HTMLElement): string {
 export function initUnitsBrowser(): void {
   const grid = document.getElementById('grid');
   const q = document.getElementById('q') as HTMLInputElement | null;
-  const faction = document.getElementById('faction') as HTMLSelectElement | null;
+  const factionBar = document.getElementById('faction-bar');
   const role = document.getElementById('role') as HTMLSelectElement | null;
   const sort = document.getElementById('sort') as HTMLSelectElement | null;
   const count = document.getElementById('count');
   const empty = document.getElementById('empty');
   const reset = document.getElementById('reset');
-  if (!grid || !q || !faction || !role || !sort) return;
-  const factionSelect = faction;
+  if (!grid || !q || !factionBar || !role || !sort) return;
   const roleSelect = role;
 
   const cards = Array.from(grid.querySelectorAll<HTMLElement>('.unit-card'));
+  const factionBtns = Array.from(factionBar.querySelectorAll<HTMLButtonElement>('.faction-btn'));
+
+  // Classes applied to the active faction button.
+  const ACTIVE = [
+    '!text-[var(--color-gold)]',
+    '!border-[var(--color-gold-dim)]',
+    'bg-[color-mix(in_oklab,var(--color-gold)_14%,transparent)]',
+  ];
+
+  // Leftmost button is Blood Angels (faction id 0) and is the default view.
+  const defaultFaction = factionBtns[0] ? text(factionBtns[0], 'faction') : '';
+  let activeFaction = defaultFaction;
 
   // Hydrate controls from URL
   const params = new URLSearchParams(location.search);
   if (params.get('q')) q.value = params.get('q') ?? '';
-  if (params.get('faction')) faction.value = params.get('faction') ?? '';
+  const urlFaction = params.get('faction');
+  if (urlFaction && factionBtns.some((b) => text(b, 'faction') === urlFaction)) {
+    activeFaction = urlFaction;
+  }
   if (params.get('role')) role.value = params.get('role') ?? '';
   if (params.get('sort')) sort.value = params.get('sort') ?? 'name';
+
+  function paintFactionButtons(): void {
+    for (const b of factionBtns) {
+      const on = text(b, 'faction') === activeFaction;
+      b.classList.toggle('is-active', on);
+      for (const c of ACTIVE) b.classList.toggle(c, on);
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+    }
+  }
 
   function syncUrl(): void {
     const p = new URLSearchParams();
     if (q?.value) p.set('q', q.value);
-    if (faction?.value) p.set('faction', faction.value);
+    if (activeFaction && activeFaction !== defaultFaction) p.set('faction', activeFaction);
     if (role?.value) p.set('role', role.value);
     if (sort && sort.value !== 'name') p.set('sort', sort.value);
     const qs = p.toString();
@@ -67,12 +90,7 @@ export function initUnitsBrowser(): void {
     }
   }
 
-  function localizeSelectOptions(): void {
-    for (const opt of Array.from(factionSelect.options)) {
-      const id = Number(opt.getAttribute('data-faction-id'));
-      if (!Number.isFinite(id)) continue;
-      opt.textContent = factionName(id, opt.value);
-    }
+  function localizeRoleOptions(): void {
     for (const opt of Array.from(roleSelect.options)) {
       const id = Number(opt.getAttribute('data-role-id'));
       if (!Number.isFinite(id)) continue;
@@ -82,14 +100,16 @@ export function initUnitsBrowser(): void {
 
   function apply(): void {
     const term = q?.value.trim().toLowerCase() ?? '';
-    const fac = faction?.value ?? '';
     const rol = role?.value ?? '';
     let visible = 0;
+    let factionTotal = 0;
 
     for (const card of cards) {
+      const inFaction = text(card, 'faction') === activeFaction;
+      if (inFaction) factionTotal++;
       const matches =
+        inFaction &&
         (!term || displayName(card).toLowerCase().includes(term)) &&
-        (!fac || text(card, 'faction') === fac) &&
         (!rol || text(card, 'role') === rol);
       card.style.display = matches ? '' : 'none';
       if (matches) visible++;
@@ -103,32 +123,40 @@ export function initUnitsBrowser(): void {
     if (count) {
       count.textContent = tf('common.count.unitsVisible', {
         visible,
-        total: cards.length,
+        total: factionTotal,
       });
     }
     empty?.classList.toggle('hidden', visible !== 0);
     syncUrl();
   }
 
+  for (const b of factionBtns) {
+    b.addEventListener('click', () => {
+      activeFaction = text(b, 'faction') || activeFaction;
+      paintFactionButtons();
+      apply();
+    });
+  }
   q.addEventListener('input', apply);
-  faction.addEventListener('change', apply);
   role.addEventListener('change', apply);
   sort.addEventListener('change', apply);
   reset?.addEventListener('click', () => {
     q.value = '';
-    faction.value = '';
+    activeFaction = defaultFaction;
     role.value = '';
     sort.value = 'name';
+    paintFactionButtons();
     apply();
   });
 
   window.addEventListener('bs:locale-changed', () => {
     applyI18n();
-    localizeSelectOptions();
+    localizeRoleOptions();
     apply();
   });
 
   applyI18n();
-  localizeSelectOptions();
+  localizeRoleOptions();
+  paintFactionButtons();
   apply();
 }

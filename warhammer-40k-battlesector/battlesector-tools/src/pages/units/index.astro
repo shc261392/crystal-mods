@@ -1,9 +1,13 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { factionColor, roles, unitSlug, units } from '../../lib/data';
+import { factionColor, factions, roles, unitSlug, units } from '../../lib/data';
 import { getFactionEmblem, getUnitPortrait } from '../../scripts/images';
 
-const factionNames = [...new Set(units.map((u) => u.factionName))].sort();
+// Faction buttons ordered by in-game faction id: Blood Angels (0) leftmost,
+// Ultramarines (11) rightmost. Only factions that actually field units appear.
+const factionButtons = factions
+  .filter((f) => units.some((u) => u.faction === f.id))
+  .sort((a, b) => a.id - b.id);
 const roleNames = [...roles]
   .sort((a, b) => a.sort - b.sort)
   .map((r) => r.name)
@@ -27,24 +31,24 @@ const sorted = [...units].sort((a, b) => a.name.localeCompare(b.name));
 
   <!-- Controls -->
   <div class="surface p-4 mb-6 sticky top-[4.5rem] z-30">
-    <div class="grid gap-3 md:grid-cols-[1fr_auto_auto_auto] md:items-end">
+    <div id="faction-bar" class="flex gap-1.5 overflow-x-auto pb-1.5 mb-3" role="tablist" aria-label="Faction">
+      {factionButtons.map((f) => (
+        <button
+          type="button"
+          class="faction-btn shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-semibold border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:border-[var(--color-border-strong)] whitespace-nowrap transition-colors"
+          data-faction={f.name}
+          data-faction-id={f.id}
+          role="tab"
+        >
+          <span class="w-1.5 h-1.5 rounded-full shrink-0" style={`background:${factionColor(f.name)}`}></span>
+          <span data-i18n-faction={f.id} data-i18n-fallback={f.name}>{f.name}</span>
+        </button>
+      ))}
+    </div>
+    <div class="grid gap-3 md:grid-cols-[1fr_auto_auto] md:items-end">
       <div>
         <label class="label block mb-1.5" for="q" data-i18n-ui="common.search">Search</label>
         <input id="q" class="input" type="search" placeholder="Search by name…" data-i18n-ui-placeholder="common.searchPlaceholder" autocomplete="off" />
-      </div>
-      <div>
-        <label class="label block mb-1.5" for="faction" data-i18n-ui="common.faction">Faction</label>
-        <select id="faction" class="select min-w-[10rem]">
-          <option value="" data-i18n-ui="units.filter.allFactions">All factions</option>
-          {factionNames.map((f) => {
-            const sample = units.find((u) => u.factionName === f);
-            return (
-              <option value={f} data-faction-id={sample?.faction ?? ''}>
-                {f}
-              </option>
-            );
-          })}
-        </select>
       </div>
       <div>
         <label class="label block mb-1.5" for="role" data-i18n-ui="common.role">Role</label>

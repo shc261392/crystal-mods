@@ -254,10 +254,7 @@ const vitals = [
   <!-- Weapon loadout -->
   {unit.weaponSlots.length > 0 && (
     <section class="surface p-5 md:p-6 mt-4">
-      <h2 class="text-lg font-bold" data-i18n-ui="unitDetail.section.weaponLoadout">Weapon Loadout</h2>
-      <p class="text-sm text-[var(--color-muted)] mt-1 mb-4 max-w-2xl" data-i18n-ui="unitDetail.loadout.subtitle">
-        Weapons aren't free picks. Each slot is a choice — some options cost extra requisition points or must be unlocked with an HQ upgrade.
-      </p>
+      <h2 class="text-lg font-bold mb-4" data-i18n-ui="unitDetail.section.weaponLoadout">Weapon Loadout</h2>
       <div class="space-y-4">
         {unit.weaponSlots.map((slot, i) => (
           <div>
