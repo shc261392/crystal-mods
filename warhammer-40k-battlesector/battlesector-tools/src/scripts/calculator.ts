@@ -2,11 +2,28 @@
 // unit datasets are imported (bundled by Vite) so selecting one auto-fills the
 // inputs. State is reflected in the URL for sharing.
 
+import buffsData from '../data/buffs.json';
 import unitsData from '../data/units.json';
 import weaponsData from '../data/weapons.json';
 import { damagePerHit, expectedDamage, hitChance, modelsKilled } from '../lib/combat';
 import type { Unit, Weapon } from '../lib/types';
 import { t, unitName, weaponName } from './i18n';
+
+interface BuffEffect {
+  accuracy?: number;
+  damage?: number;
+  ap?: number;
+  armor?: number;
+  evasion?: number;
+}
+interface Buff {
+  id: number;
+  name: string;
+  effects: BuffEffect;
+}
+const buffs = buffsData as { attacker: Buff[]; target: Buff[] };
+const atkBuffById = new Map(buffs.attacker.map((b) => [String(b.id), b]));
+const tgtBuffById = new Map(buffs.target.map((b) => [String(b.id), b]));
 
 const weapons = weaponsData as Weapon[];
 const units = unitsData as Unit[];
@@ -44,6 +61,61 @@ export function initCalculator(): void {
   const dmgmod = $('dmgmod');
   const curhp = $('curhp');
   const lost = $('lost');
+  const coverSel = document.getElementById('cover') as HTMLSelectElement | null;
+  const atkBuffSel = document.getElementById('atk-buff') as HTMLSelectElement | null;
+  const tgtBuffSel = document.getElementById('tgt-buff') as HTMLSelectElement | null;
+  const distance = $('distance');
+  const rangeInfo = document.getElementById('range-info');
+
+  function describeBuff(e: BuffEffect): string {
+    const parts: string[] = [];
+    if (e.accuracy) parts.push(`${e.accuracy > 0 ? '+' : ''}${e.accuracy} acc`);
+    if (e.damage) parts.push(`${e.damage > 0 ? '+' : ''}${e.damage} dmg`);
+    if (e.ap) parts.push(`${e.ap > 0 ? '+' : ''}${e.ap} AP`);
+    if (e.armor) parts.push(`${e.armor > 0 ? '+' : ''}${e.armor} armor`);
+    if (e.evasion) parts.push(`${e.evasion > 0 ? '+' : ''}${e.evasion} eva`);
+    return parts.join(', ');
+  }
+
+  function populateBuffs(): void {
+    const none = `<option value="">${t('calculator.buff.none')}</option>`;
+    if (atkBuffSel) {
+      const cur = atkBuffSel.value;
+      atkBuffSel.innerHTML =
+        none +
+        buffs.attacker
+          .map((b) => `<option value="${b.id}">${b.name} (${describeBuff(b.effects)})</option>`)
+          .join('');
+      atkBuffSel.value = cur;
+    }
+    if (tgtBuffSel) {
+      const cur = tgtBuffSel.value;
+      tgtBuffSel.innerHTML =
+        none +
+        buffs.target
+          .map((b) => `<option value="${b.id}">${b.name} (${describeBuff(b.effects)})</option>`)
+          .join('');
+      tgtBuffSel.value = cur;
+    }
+  }
+
+  function updateRangeInfo(): void {
+    if (!rangeInfo) return;
+    const w = weaponById.get(Number(weaponSel.value));
+    if (!w || !w.isRanged || w.isMelee || !w.rangeMax) {
+      rangeInfo.textContent = '';
+      return;
+    }
+    const parts = [
+      `${t('calculator.range.optimal')} ${w.rangeOptimal}, ${t('calculator.range.max')} ${w.rangeMax} ${t('calculator.range.tiles')}`,
+    ];
+    if (w.accuracyFalloff) parts.push(`${t('weaponDetail.range.accFalloff')} ${w.accuracyFalloff}`);
+    const d = distance.value === '' ? null : Number(distance.value);
+    if (d !== null && d > w.rangeMax) parts.push(t('calculator.range.outOfRange'));
+    else if (d !== null && d > w.rangeOptimal)
+      parts.push(`${d - w.rangeOptimal} ${t('calculator.range.beyondOptimal')}`);
+    rangeInfo.textContent = parts.join(' · ');
+  }
 
   function unitOptionsHtml(): string {
     return [...units]
@@ -90,6 +162,7 @@ export function initCalculator(): void {
   }
 
   renderOptions();
+  populateBuffs();
 
   function applyWeapon(id: number): void {
     const w = weapons.find((x) => x.id === id);
@@ -129,8 +202,16 @@ export function initCalculator(): void {
     const frontHp = curhp.value === '' ? hp : Math.max(0, Math.min(hp, Number(curhp.value) || 0));
 
     const effDamage = Math.max(0, dmg + dmgModifier);
-    const perHit = damagePerHit(effDamage, arm, pierce);
-    const hit = hitChance(acc, mod, eva);
+    const cover = Number(coverSel?.value) || 0;
+    const ab = atkBuffSel ? atkBuffById.get(atkBuffSel.value)?.effects : undefined;
+    const tb = tgtBuffSel ? tgtBuffById.get(tgtBuffSel.value)?.effects : undefined;
+    const finalDamage = Math.max(0, effDamage + (ab?.damage ?? 0));
+    const finalAp = pierce + (ab?.ap ?? 0);
+    const finalArmor = Math.max(0, arm + cover + (tb?.armor ?? 0));
+    const finalEva = eva + (tb?.evasion ?? 0);
+    const finalAcc = acc + (ab?.accuracy ?? 0);
+    const perHit = damagePerHit(finalDamage, finalArmor, finalAp);
+    const hit = hitChance(finalAcc, mod, finalEva);
     const perAttack = perHit * shotCount;
     const expected = expectedDamage(perAttack, hit);
     const killed = Math.min(modelsKilled(perAttack, hp), aliveModels);
@@ -145,6 +226,7 @@ export function initCalculator(): void {
     setText('r-killed', `${killed} / ${aliveModels}`);
     setText('r-totalhp', String(totalHp));
     setText('r-remaining', String(remainingHp));
+    updateRangeInfo();
     syncUrl();
   }
 
@@ -190,12 +272,16 @@ export function initCalculator(): void {
     members,
     curhp,
     lost,
+    distance,
   ]) {
     el.addEventListener('input', () => {
       // Manual edits detach from the preset selection.
       compute();
     });
   }
+  coverSel?.addEventListener('change', compute);
+  atkBuffSel?.addEventListener('change', compute);
+  tgtBuffSel?.addEventListener('change', compute);
 
   document.getElementById('copy-link')?.addEventListener('click', async () => {
     const url = `${location.origin}${location.pathname}${location.search}`;
@@ -268,5 +354,6 @@ export function initCalculator(): void {
 
   window.addEventListener('bs:locale-changed', () => {
     renderOptions();
+    populateBuffs();
   });
 }

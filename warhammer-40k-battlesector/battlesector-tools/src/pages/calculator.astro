@@ -136,31 +136,37 @@ import Base from '../layouts/Base.astro';
     </section>
   </div>
 
-  <!-- Battlefield modifiers (values not yet verified in game data — disabled) -->
+  <!-- Battlefield modifiers (real data: cover armor + buff presets + range info) -->
   <section class="surface p-5 mt-4">
-    <div class="flex items-center gap-2 mb-1">
-      <h2 class="text-lg font-bold" data-i18n-ui="calculator.section.battlefield">Battlefield modifiers</h2>
-      <span class="chip !py-0.5 !px-2 text-[10px] uppercase tracking-wide" data-i18n-ui="common.comingSoon">Coming soon</span>
-    </div>
-    <p class="text-sm text-[var(--color-faint)] mb-4" data-i18n-ui="calculator.section.battlefieldNote">Cover, range and momentum need values we haven't verified in the game data yet — disabled for now so nothing shows made-up numbers.</p>
+    <h2 class="text-lg font-bold mb-1" data-i18n-ui="calculator.section.battlefield">Battlefield modifiers</h2>
+    <p class="text-sm text-[var(--color-faint)] mb-4" data-i18n-ui="calculator.section.battlefieldNote">
+      Cover applies the real ranged-armor bonus and buff presets use real in-game stat
+      changes. Distance shows the weapon's real range; the exact accuracy penalty from
+      cover/distance isn't applied because that formula lives in native game code.
+    </p>
     <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
       <div>
-        <label class="label block mb-1.5" data-i18n-ui="calculator.adv.cover">Cover</label>
-        <select class="select" disabled><option data-i18n-ui="common.comingSoon">Coming soon</option></select>
+        <label class="label block mb-1.5" for="cover" data-i18n-ui="calculator.adv.cover">Cover</label>
+        <select id="cover" class="select">
+          <option value="0" data-i18n-ui="calculator.cover.none">None</option>
+          <option value="1" data-i18n-ui="calculator.cover.light">Light (+1 ranged armor)</option>
+          <option value="2" data-i18n-ui="calculator.cover.heavy">Heavy (+2 ranged armor)</option>
+        </select>
       </div>
       <div>
-        <label class="label block mb-1.5" data-i18n-ui="calculator.adv.distance">Tile distance</label>
-        <input class="input" type="number" disabled placeholder="Coming soon" data-i18n-ui-placeholder="common.comingSoon" />
+        <label class="label block mb-1.5" for="atk-buff" data-i18n-ui="calculator.buff.attacker">Attacker buff</label>
+        <select id="atk-buff" class="select"></select>
       </div>
       <div>
-        <label class="label block mb-1.5" data-i18n-ui="calculator.adv.momentum">Momentum</label>
-        <input class="input" type="number" disabled placeholder="Coming soon" data-i18n-ui-placeholder="common.comingSoon" />
+        <label class="label block mb-1.5" for="tgt-buff" data-i18n-ui="calculator.buff.target">Target buff</label>
+        <select id="tgt-buff" class="select"></select>
       </div>
       <div>
-        <label class="label block mb-1.5" data-i18n-ui="calculator.adv.presets">Preset buffs</label>
-        <select class="select" disabled><option data-i18n-ui="common.comingSoon">Coming soon</option></select>
+        <label class="label block mb-1.5" for="distance" data-i18n-ui="calculator.adv.distance">Tile distance</label>
+        <input id="distance" class="input" type="number" min="0" inputmode="numeric" placeholder="—" />
       </div>
     </div>
+    <p id="range-info" class="text-xs text-[var(--color-faint)] mt-3"></p>
   </section>
   </div>
 
