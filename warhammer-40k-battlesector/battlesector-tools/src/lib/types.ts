@@ -59,6 +59,12 @@ export interface Weapon {
   armorPiercing: number;
   isMelee: boolean;
   isRanged: boolean;
+  rangeMin: number;
+  rangeOptimal: number;
+  rangeMax: number;
+  accuracyFalloff: number;
+  damageFalloff: number;
+  ignoresRangePenalty: boolean;
 }
 
 export interface Faction {
