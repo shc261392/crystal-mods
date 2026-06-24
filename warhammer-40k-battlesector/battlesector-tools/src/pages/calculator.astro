@@ -168,6 +168,29 @@ import Base from '../layouts/Base.astro';
     </div>
     <p id="range-info" class="text-xs text-[var(--color-faint)] mt-3"></p>
   </section>
+
+  <!-- Momentum & faction passive (real per-momentum effects from game data) -->
+  <section class="surface p-5 mt-4">
+    <h2 class="text-lg font-bold mb-1" data-i18n-ui="calculator.momentum.title">Momentum &amp; faction passive</h2>
+    <p class="text-sm text-[var(--color-faint)] mb-4" data-i18n-ui="calculator.momentum.note">
+      Every faction has one army-wide momentum passive. Pick a faction and a momentum value
+      to apply its real per-momentum effects. Effects that don't map to the damage maths
+      (crit, evasion, graze) are listed as information only.
+    </p>
+    <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      <div>
+        <label class="label block mb-1.5" for="mom-faction" data-i18n-ui="calculator.momentum.faction">Faction</label>
+        <select id="mom-faction" class="select"></select>
+      </div>
+      <div>
+        <label class="label block mb-1.5" for="momentum" data-i18n-ui="calculator.momentum.value">Momentum</label>
+        <input id="momentum" class="input" type="number" min="0" max="100" value="0" inputmode="numeric" />
+      </div>
+    </div>
+    <p id="mom-passive" class="text-sm font-semibold mt-3"></p>
+    <ul id="mom-effects" class="text-sm text-[var(--color-muted)] mt-2 space-y-1"></ul>
+    <p id="mom-notes" class="text-xs text-[var(--color-faint)] mt-3 space-y-1"></p>
+  </section>
   </div>
 
   <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 hidden surface px-4 py-2.5 text-sm font-semibold z-[120]"></div>

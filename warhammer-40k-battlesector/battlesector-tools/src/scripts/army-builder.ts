@@ -14,7 +14,7 @@ import {
 } from './army-store';
 import { factionName, t, tf, unitName } from './i18n';
 
-const units = unitsData as Unit[];
+const units = (unitsData as Unit[]).filter((u) => u.faction !== 4);
 const unitById = new Map(units.map((u) => [u.id, u]));
 
 function unitSlug(u: Unit): string {

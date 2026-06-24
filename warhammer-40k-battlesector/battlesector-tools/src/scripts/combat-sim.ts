@@ -8,7 +8,7 @@ import { damagePerHit, hitChance } from '../lib/combat';
 import type { Unit, Weapon } from '../lib/types';
 import { t, unitName, weaponName } from './i18n';
 
-const units = unitsData as Unit[];
+const units = (unitsData as Unit[]).filter((u) => u.faction !== 4);
 const weapons = weaponsData as Weapon[];
 const weaponById = new Map(weapons.map((w) => [w.id, w]));
 

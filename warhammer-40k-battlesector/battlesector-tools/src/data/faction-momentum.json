@@ -1,0 +1,96 @@
+{
+  "_source": "Verified from status_effects.json (StatusEffectDataTable) + decompiled StatChangeType enum. See .copilot_workspace/battlesector-data/docs_momentum_faction_mapping.md",
+  "baseCritPerMomentum": null,
+  "baseCritNote": "Every faction also benefits from momentum's shared base crit-chance bonus, but that value is a hardcoded native game constant and is not present in any extractable asset (DamageCalculationConfig is empty; CPPPerMomentum is Command-Points, not crit). It is intentionally left unknown rather than guessed.",
+  "factions": {
+    "0": {
+      "passive": "Red Thirst",
+      "statusEffectId": 1,
+      "effects": [
+        { "stat": "criticalChance", "perMomentum": 0.4, "unit": "percent", "affectsCalc": false }
+      ]
+    },
+    "1": {
+      "passive": "Endless Hunger",
+      "statusEffectId": 36,
+      "effects": [
+        { "stat": "accuracy", "perMomentum": 0.3, "unit": "flat", "affectsCalc": true },
+        { "stat": "criticalChance", "perMomentum": 0.1, "unit": "percent", "affectsCalc": false }
+      ]
+    },
+    "2": {
+      "passive": "Devotion",
+      "statusEffectId": 37,
+      "effects": [
+        { "stat": "criticalChance", "perMomentum": 0.2, "unit": "percent", "affectsCalc": false },
+        { "stat": "evasion", "perMomentum": 0.2, "unit": "flat", "affectsCalc": false }
+      ]
+    },
+    "3": {
+      "passive": "Dynasty of Living Metal",
+      "statusEffectId": null,
+      "noCalcEffect": true,
+      "note": "Necron momentum fuels reanimation/healing and momentum-if-moved, not an attack bonus. Shown for completeness; it does not change the damage calculation.",
+      "effects": [{ "stat": "heal", "perMomentum": null, "unit": "special", "affectsCalc": false }]
+    },
+    "5": {
+      "passive": "Blood for the Blood God!",
+      "statusEffectId": 97,
+      "effects": [
+        { "stat": "damageMul", "perMomentum": 0.005, "unit": "percentMul", "affectsCalc": true }
+      ]
+    },
+    "7": {
+      "passive": "Born Soldiers",
+      "statusEffectId": 192,
+      "effects": [
+        { "stat": "criticalChance", "perMomentum": 0.3, "unit": "percent", "affectsCalc": false },
+        { "stat": "outgoingGraze", "perMomentum": -0.3, "unit": "percent", "affectsCalc": false }
+      ]
+    },
+    "8": {
+      "passive": "Armed To Da Teef",
+      "statusEffectId": 139,
+      "effects": [
+        { "stat": "armorPiercing", "perMomentum": 0.02, "unit": "flat", "affectsCalc": true },
+        { "stat": "criticalChance", "perMomentum": 0.2, "unit": "percent", "affectsCalc": false },
+        { "stat": "rangeStability", "perMomentum": 0.075, "unit": "flat", "affectsCalc": false }
+      ]
+    },
+    "9": {
+      "passive": "For the Greater Good",
+      "statusEffectId": 164,
+      "tooltipDiscrepancy": true,
+      "effects": [
+        { "stat": "rangeStability", "perMomentum": 0.15, "unit": "flat", "affectsCalc": false },
+        {
+          "stat": "rangedDamageMul",
+          "perMomentum": 0.0025,
+          "unit": "percentMul",
+          "affectsCalc": true
+        }
+      ]
+    },
+    "10": {
+      "passive": "Veterans of the Long War + Dark Pacts",
+      "statusEffectId": 248,
+      "special": "favouredOfChaos",
+      "noCalcEffect": true,
+      "note": "Black Legion gains momentum via Veterans of the Long War; Dark Pacts grants Favoured of Chaos once every 20 momentum: +10% critical chance and +5% graze chance when attacked (defensive). This is a threshold buff, not a smooth per-momentum curve, so it does not feed the linear calculation.",
+      "effects": [
+        { "stat": "criticalChance", "perMomentum": null, "unit": "threshold", "affectsCalc": false }
+      ]
+    },
+    "11": {
+      "passive": "Codex Discipline",
+      "statusEffectId": 293,
+      "conditional": {
+        "name": "Oath Fulfilled",
+        "note": "When triggered: +30 momentum, +10% momentum gains, +0.2% critical chance per momentum."
+      },
+      "effects": [
+        { "stat": "criticalChance", "perMomentum": 0.4, "unit": "percent", "affectsCalc": false }
+      ]
+    }
+  }
+}

@@ -5,7 +5,7 @@ import unitsData from '../data/units.json';
 import type { Unit } from '../lib/types';
 import { factionName, roleName, t, tf, unitName } from './i18n';
 
-const units = unitsData as Unit[];
+const units = (unitsData as Unit[]).filter((u) => u.faction !== 4);
 const unitById = new Map(units.map((u) => [u.id, u]));
 const MAX = 4;
 

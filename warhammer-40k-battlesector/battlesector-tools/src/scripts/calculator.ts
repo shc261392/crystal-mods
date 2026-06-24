@@ -3,6 +3,8 @@
 // inputs. State is reflected in the URL for sharing.
 
 import buffsData from '../data/buffs.json';
+import factionMomentumData from '../data/faction-momentum.json';
+import factionsData from '../data/factions.json';
 import unitsData from '../data/units.json';
 import weaponsData from '../data/weapons.json';
 import { damagePerHit, expectedDamage, hitChance, modelsKilled } from '../lib/combat';
@@ -21,12 +23,36 @@ interface Buff {
   name: string;
   effects: BuffEffect;
 }
+
+interface MomEffect {
+  stat: string;
+  perMomentum: number | null;
+  unit: string;
+  affectsCalc: boolean;
+}
+interface MomFaction {
+  passive: string;
+  statusEffectId: number | null;
+  effects: MomEffect[];
+  note?: string;
+  noCalcEffect?: boolean;
+  tooltipDiscrepancy?: boolean;
+  special?: string;
+  conditional?: { name: string; note: string };
+}
+const factionMomentum = factionMomentumData as {
+  baseCritNote: string;
+  factions: Record<string, MomFaction>;
+};
+const factionNames = factionsData as { id: number; name: string }[];
+
 const buffs = buffsData as { attacker: Buff[]; target: Buff[] };
 const atkBuffById = new Map(buffs.attacker.map((b) => [String(b.id), b]));
 const tgtBuffById = new Map(buffs.target.map((b) => [String(b.id), b]));
 
 const weapons = weaponsData as Weapon[];
-const units = unitsData as Unit[];
+// Mephrit Necrons (faction 4) is a hidden duplicate of Necrons.
+const units = (unitsData as Unit[]).filter((u) => u.faction !== 4);
 
 function $(id: string): HTMLInputElement {
   return document.getElementById(id) as HTMLInputElement;
@@ -66,6 +92,11 @@ export function initCalculator(): void {
   const tgtBuffSel = document.getElementById('tgt-buff') as HTMLSelectElement | null;
   const distance = $('distance');
   const rangeInfo = document.getElementById('range-info');
+  const momFactionSel = document.getElementById('mom-faction') as HTMLSelectElement | null;
+  const momentumInput = $('momentum');
+  const momPassive = document.getElementById('mom-passive');
+  const momEffects = document.getElementById('mom-effects');
+  const momNotes = document.getElementById('mom-notes');
 
   function describeBuff(e: BuffEffect): string {
     const parts: string[] = [];
@@ -97,6 +128,87 @@ export function initCalculator(): void {
           .join('');
       tgtBuffSel.value = cur;
     }
+  }
+
+  function populateMomFactions(): void {
+    if (!momFactionSel) return;
+    const cur = momFactionSel.value;
+    const ids = Object.keys(factionMomentum.factions)
+      .map(Number)
+      .sort((a, b) => a - b);
+    const opts = ids
+      .map((id) => {
+        const name = factionNames.find((f) => f.id === id)?.name ?? `Faction ${id}`;
+        return `<option value="${id}">${name}</option>`;
+      })
+      .join('');
+    momFactionSel.innerHTML = `<option value="">${t('calculator.momentum.none')}</option>${opts}`;
+    momFactionSel.value = cur;
+  }
+
+  // Per-momentum effects that map to the damage maths (the rest are info only).
+  function momentumMods(isRanged: boolean): { accAdd: number; apAdd: number; dmgFactor: number } {
+    let accAdd = 0;
+    let apAdd = 0;
+    let dmgMul = 0;
+    const fid = momFactionSel?.value ?? '';
+    const mom = Math.max(0, Number(momentumInput.value) || 0);
+    const f = fid ? factionMomentum.factions[fid] : undefined;
+    if (f && mom > 0) {
+      for (const e of f.effects) {
+        if (!e.affectsCalc || e.perMomentum == null) continue;
+        if (e.stat === 'accuracy') accAdd += e.perMomentum * mom;
+        else if (e.stat === 'armorPiercing') apAdd += e.perMomentum * mom;
+        else if (e.stat === 'damageMul') dmgMul += e.perMomentum * mom;
+        else if (e.stat === 'rangedDamageMul' && isRanged) dmgMul += e.perMomentum * mom;
+      }
+    }
+    return { accAdd, apAdd, dmgFactor: 1 + dmgMul };
+  }
+
+  function fmt(n: number): string {
+    return Number(n.toFixed(2)).toString();
+  }
+
+  function renderMomentum(): void {
+    if (!momPassive || !momEffects || !momNotes) return;
+    const fid = momFactionSel?.value ?? '';
+    const mom = Math.max(0, Number(momentumInput.value) || 0);
+    const f = fid ? factionMomentum.factions[fid] : undefined;
+    if (!f) {
+      momPassive.textContent = '';
+      momEffects.innerHTML = '';
+      momNotes.textContent = '';
+      return;
+    }
+    momPassive.textContent = `${t('calculator.momentum.passive')}: ${f.passive}`;
+    momEffects.innerHTML = f.effects
+      .map((e) => {
+        const label = t(`calculator.momentum.stat.${e.stat}`);
+        const badge = e.affectsCalc
+          ? `<span class="text-[var(--color-toxin)]">(${t('calculator.momentum.applied')})</span>`
+          : `<span class="text-[var(--color-faint)]">(${t('calculator.momentum.info')})</span>`;
+        const tip =
+          e.stat === 'rangeStability'
+            ? ` title="${t('calculator.momentum.rangeStabilityTip')}"`
+            : '';
+        if (e.perMomentum == null) {
+          return `<li${tip}><span class="underline decoration-dotted">${label}</span> — ${f.special === 'favouredOfChaos' ? 'threshold' : 'special'} ${badge}</li>`;
+        }
+        const per = e.unit === 'percentMul' ? e.perMomentum * 100 : e.perMomentum;
+        const total = per * mom;
+        const sign = per >= 0 ? '+' : '';
+        const suffix = e.unit === 'percent' || e.unit === 'percentMul' ? '%' : '';
+        const atTxt = t('calculator.momentum.at').replace('{n}', String(mom));
+        return `<li${tip}><span class="underline decoration-dotted">${label}</span>: ${sign}${fmt(per)}${suffix} / mom = <strong>${sign}${fmt(total)}${suffix}</strong> ${atTxt} ${badge}</li>`;
+      })
+      .join('');
+    const notes: string[] = [];
+    if (f.note) notes.push(f.note);
+    if (f.tooltipDiscrepancy) notes.push(t('calculator.momentum.tauDiscrepancy'));
+    if (f.conditional) notes.push(`${f.conditional.name}: ${f.conditional.note}`);
+    notes.push(factionMomentum.baseCritNote);
+    momNotes.innerHTML = notes.map((n) => `<span class="block">• ${n}</span>`).join('');
   }
 
   function updateRangeInfo(): void {
@@ -163,6 +275,7 @@ export function initCalculator(): void {
 
   renderOptions();
   populateBuffs();
+  populateMomFactions();
 
   function applyWeapon(id: number): void {
     const w = weapons.find((x) => x.id === id);
@@ -205,11 +318,14 @@ export function initCalculator(): void {
     const cover = Number(coverSel?.value) || 0;
     const ab = atkBuffSel ? atkBuffById.get(atkBuffSel.value)?.effects : undefined;
     const tb = tgtBuffSel ? tgtBuffById.get(tgtBuffSel.value)?.effects : undefined;
-    const finalDamage = Math.max(0, effDamage + (ab?.damage ?? 0));
-    const finalAp = pierce + (ab?.ap ?? 0);
+    const selWeapon = weaponById.get(Number(weaponSel.value));
+    const isRangedW = !!selWeapon && selWeapon.isRanged && !selWeapon.isMelee;
+    const mm = momentumMods(isRangedW);
+    const finalDamage = Math.max(0, (effDamage + (ab?.damage ?? 0)) * mm.dmgFactor);
+    const finalAp = pierce + (ab?.ap ?? 0) + mm.apAdd;
     const finalArmor = Math.max(0, arm + cover + (tb?.armor ?? 0));
     const finalEva = eva + (tb?.evasion ?? 0);
-    const finalAcc = acc + (ab?.accuracy ?? 0);
+    const finalAcc = acc + (ab?.accuracy ?? 0) + mm.accAdd;
     const perHit = damagePerHit(finalDamage, finalArmor, finalAp);
     const hit = hitChance(finalAcc, mod, finalEva);
     const perAttack = perHit * shotCount;
@@ -227,6 +343,7 @@ export function initCalculator(): void {
     setText('r-totalhp', String(totalHp));
     setText('r-remaining', String(remainingHp));
     updateRangeInfo();
+    renderMomentum();
     syncUrl();
   }
 
@@ -282,6 +399,8 @@ export function initCalculator(): void {
   coverSel?.addEventListener('change', compute);
   atkBuffSel?.addEventListener('change', compute);
   tgtBuffSel?.addEventListener('change', compute);
+  momFactionSel?.addEventListener('change', compute);
+  momentumInput.addEventListener('input', compute);
 
   document.getElementById('copy-link')?.addEventListener('click', async () => {
     const url = `${location.origin}${location.pathname}${location.search}`;
@@ -355,5 +474,7 @@ export function initCalculator(): void {
   window.addEventListener('bs:locale-changed', () => {
     renderOptions();
     populateBuffs();
+    populateMomFactions();
+    compute();
   });
 }

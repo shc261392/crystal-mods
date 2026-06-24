@@ -9,9 +9,13 @@ import unitsData from '../data/units.json';
 import weaponsData from '../data/weapons.json';
 import type { Faction, I18nBundle, Role, Summary, Unit, Weapon } from './types';
 
-export const units = unitsData as Unit[];
+// Mephrit Necrons (faction 4) is an unused duplicate of Necrons (its 4 units are
+// dupes already present under Necrons), so it is hidden everywhere.
+const HIDDEN_FACTION_IDS = new Set<number>([4]);
+
+export const units = (unitsData as Unit[]).filter((u) => !HIDDEN_FACTION_IDS.has(u.faction));
 export const weapons = weaponsData as Weapon[];
-export const factions = factionsData as Faction[];
+export const factions = (factionsData as Faction[]).filter((f) => !HIDDEN_FACTION_IDS.has(f.id));
 export const roles = rolesData as Role[];
 export const summary = summaryData as Summary;
 export const i18n = i18nData as I18nBundle;
