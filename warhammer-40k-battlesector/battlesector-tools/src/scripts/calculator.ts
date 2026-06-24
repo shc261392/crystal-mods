@@ -92,7 +92,7 @@ export function initCalculator(): void {
   const tgtBuffSel = document.getElementById('tgt-buff') as HTMLSelectElement | null;
   const distance = $('distance');
   const rangeInfo = document.getElementById('range-info');
-  const momFactionSel = document.getElementById('mom-faction') as HTMLSelectElement | null;
+  const momFactionName = document.getElementById('mom-faction-name');
   const momentumInput = $('momentum');
   const momPassive = document.getElementById('mom-passive');
   const momEffects = document.getElementById('mom-effects');
@@ -131,19 +131,16 @@ export function initCalculator(): void {
   }
 
   function populateMomFactions(): void {
-    if (!momFactionSel) return;
-    const cur = momFactionSel.value;
-    const ids = Object.keys(factionMomentum.factions)
-      .map(Number)
-      .sort((a, b) => a - b);
-    const opts = ids
-      .map((id) => {
-        const name = factionNames.find((f) => f.id === id)?.name ?? `Faction ${id}`;
-        return `<option value="${id}">${name}</option>`;
-      })
-      .join('');
-    momFactionSel.innerHTML = `<option value="">${t('calculator.momentum.none')}</option>${opts}`;
-    momFactionSel.value = cur;
+    // Faction is derived from the attacker unit; nothing to populate.
+  }
+
+  // The momentum passive is taken from the attacker unit's faction. Units never
+  // belong to more than one faction, so the faction is unambiguous.
+  function attackerFactionId(): string {
+    const u = units.find((x) => x.id === Number(attackerUnitSel.value));
+    if (!u) return '';
+    const fid = String(u.faction);
+    return factionMomentum.factions[fid] ? fid : '';
   }
 
   // Per-momentum effects that map to the damage maths (the rest are info only).
@@ -151,7 +148,7 @@ export function initCalculator(): void {
     let accAdd = 0;
     let apAdd = 0;
     let dmgMul = 0;
-    const fid = momFactionSel?.value ?? '';
+    const fid = attackerFactionId();
     const mom = Math.max(0, Number(momentumInput.value) || 0);
     const f = fid ? factionMomentum.factions[fid] : undefined;
     if (f && mom > 0) {
@@ -172,9 +169,14 @@ export function initCalculator(): void {
 
   function renderMomentum(): void {
     if (!momPassive || !momEffects || !momNotes) return;
-    const fid = momFactionSel?.value ?? '';
+    const fid = attackerFactionId();
     const mom = Math.max(0, Number(momentumInput.value) || 0);
     const f = fid ? factionMomentum.factions[fid] : undefined;
+    if (momFactionName) {
+      momFactionName.textContent = fid
+        ? (factionNames.find((x) => x.id === Number(fid))?.name ?? '—')
+        : t('calculator.momentum.selectUnit');
+    }
     if (!f) {
       momPassive.textContent = '';
       momEffects.innerHTML = '';
@@ -399,7 +401,6 @@ export function initCalculator(): void {
   coverSel?.addEventListener('change', compute);
   atkBuffSel?.addEventListener('change', compute);
   tgtBuffSel?.addEventListener('change', compute);
-  momFactionSel?.addEventListener('change', compute);
   momentumInput.addEventListener('input', compute);
 
   document.getElementById('copy-link')?.addEventListener('click', async () => {

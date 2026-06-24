@@ -191,10 +191,11 @@ const rawUiI18n = {
     'calculator.range.outOfRange': 'beyond maximum range',
     'calculator.momentum.title': 'Momentum & faction passive',
     'calculator.momentum.note':
-      "Every faction has one army-wide momentum passive. Pick a faction and a momentum value to apply its real per-momentum effects. Effects that don't map to the damage maths (crit, evasion, graze) are listed as information only.",
+      "Every faction has one army-wide momentum passive, taken automatically from the attacker unit's faction. Set a momentum value to apply its real per-momentum effects. Effects that don't map to the damage maths (crit, evasion, graze) are listed as information only.",
     'calculator.momentum.faction': 'Faction',
     'calculator.momentum.value': 'Momentum',
     'calculator.momentum.none': 'None',
+    'calculator.momentum.selectUnit': 'Select an attacker unit',
     'calculator.momentum.passive': 'Passive',
     'calculator.momentum.applied': 'applied',
     'calculator.momentum.info': 'info only',
