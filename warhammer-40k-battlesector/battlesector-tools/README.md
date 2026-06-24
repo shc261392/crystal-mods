@@ -41,6 +41,21 @@ pnpm format
 pnpm deploy
 ```
 
+## Deployment & infrastructure
+
+**This site is a Cloudflare _Worker_ with Static Assets — NOT Cloudflare Pages.**
+
+- **Target:** Worker `battlesector-tools` (account `Shc261392@gmail.com`,
+  id `d9421d2507858cad0374ca8bb31e752c`). Config: [`wrangler.toml`](wrangler.toml)
+  (`[assets] directory = "./dist"`).
+- **Deploy:** always `pnpm deploy` (runs `astro build` then
+  `dotenvx run -f .env.production -- wrangler deploy`). Credentials
+  (`CLOUDFLARE_API_TOKEN`) live in the dotenvx-encrypted `.env.production`; never
+  read that file directly.
+- **Do NOT use `wrangler pages deploy`** or create a Pages project. Pages and the
+  Worker would collide on the same name and split traffic across two URLs.
+- `pnpm run deploy:dry` validates a deploy without publishing.
+
 ## Features
 
 - **Unit Database** (`/units`) — all 190 units with full stats. Instant

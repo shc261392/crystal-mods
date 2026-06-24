@@ -1,6 +1,10 @@
 name = "battlesector-tools"
 compatibility_date = "2025-01-01"
-pages_build_output_dir = "./dist"
+
+# Deployed as a Cloudflare Worker with Static Assets (NOT Cloudflare Pages).
+# The built Astro site in ./dist is served directly by the Worker assets runtime.
+[assets]
+directory = "./dist"
 
 [observability]
 enabled = true
