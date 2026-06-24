@@ -11,9 +11,9 @@ import Base from '../layouts/Base.astro';
     <p class="eyebrow mb-2" data-i18n-ui="common.tool">Tool</p>
     <h1 class="text-3xl md:text-4xl font-black" data-i18n-ui="nav.calculator">Damage Calculator</h1>
     <p class="mt-2 text-[var(--color-muted)] max-w-2xl">
-      Pick an attacking weapon and a target, or enter custom values. Results use
-      the extracted formulas: damage minus effective armor (min 1), hit chance
-      clamped 0–100%, and no overflow between models.
+      Pick an attacking weapon and a target, or enter custom values. Damage is the
+      in-game range (min = 75% of max), hit chance = accuracy − evasion, and armour
+      raises graze/crit chance rather than subtracting damage.
     </p>
   </header>
 
@@ -58,6 +58,20 @@ import Base from '../layouts/Base.astro';
           <label class="label block mb-1.5" for="dmgmod" data-i18n-ui="calculator.buff.damageMod">Damage modifier</label>
           <input id="dmgmod" class="input" type="number" inputmode="numeric" value="0" />
         </div>
+      </div>
+
+      <!-- Momentum & faction passive (auto from this unit's faction) -->
+      <div class="mt-4 pt-4 border-t border-[var(--color-border)]">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-sm stat-label" data-i18n-ui="calculator.momentum.title">Momentum &amp; faction passive</span>
+          <span id="mom-faction-name" class="text-xs text-[var(--color-gold)] font-semibold">—</span>
+        </div>
+        <label class="label block mb-1.5" for="momentum" data-i18n-ui="calculator.momentum.value">Momentum</label>
+        <input id="momentum" class="input" type="number" min="0" max="100" value="0" inputmode="numeric" />
+        <div class="hud-bar mt-2"><span id="mom-bar-fill" class="fill mom" style="width:0%"></span><span id="mom-bar-label" class="label">0/100</span></div>
+        <p id="mom-passive" class="text-sm font-semibold mt-2"></p>
+        <ul id="mom-effects" class="text-xs text-[var(--color-muted)] mt-1.5 space-y-1"></ul>
+        <p id="mom-notes" class="text-[0.7rem] text-[var(--color-faint)] mt-2"></p>
       </div>
     </section>
 
@@ -110,19 +124,19 @@ import Base from '../layouts/Base.astro';
         </div>
         <div class="flex items-baseline justify-between pl-3">
           <span class="text-xs stat-sublabel" data-i18n-ui="calculator.result.damagePerAttack">Damage per attack</span>
-          <span id="r-attack" class="text-base font-bold tabular-nums">—</span>
+          <span id="r-attack" class="text-lg font-bold tabular-nums text-[var(--color-ink)]">—</span>
         </div>
         <div class="flex items-baseline justify-between">
           <span class="text-sm stat-label" data-i18n-ui="calculator.result.critChance">Critical chance</span>
-          <span id="r-crit" class="text-base font-bold tabular-nums text-[var(--color-gold)]">—</span>
+          <span id="r-crit" class="text-lg font-bold tabular-nums text-[var(--color-gold)]">—</span>
         </div>
         <div class="flex items-baseline justify-between">
           <span class="text-sm stat-label" data-i18n-ui="calculator.result.grazeChance">Graze chance</span>
-          <span id="r-graze" class="text-base font-bold tabular-nums text-[var(--color-momentum)]">—</span>
+          <span id="r-graze" class="text-lg font-bold tabular-nums text-[var(--color-momentum)]">—</span>
         </div>
         <div class="flex items-baseline justify-between">
           <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.expected">Expected (× hit %)</span>
-          <span id="r-expected" class="text-base font-bold tabular-nums">—</span>
+          <span id="r-expected" class="text-lg font-bold tabular-nums text-[var(--color-ink)]">—</span>
         </div>
         <div class="border-t border-[var(--color-border)] my-3"></div>
         <div class="flex items-baseline justify-between">
@@ -131,7 +145,7 @@ import Base from '../layouts/Base.astro';
         </div>
         <div class="flex items-baseline justify-between">
           <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.targetTotalHp">Target total HP</span>
-          <span id="r-totalhp" class="text-base font-semibold tabular-nums text-[var(--color-muted)]">—</span>
+          <span id="r-totalhp" class="text-base font-semibold tabular-nums text-[var(--color-ink)]">—</span>
         </div>
         <div class="flex items-baseline justify-between">
           <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.targetRemainingHp">Target remaining HP</span>
@@ -179,31 +193,6 @@ import Base from '../layouts/Base.astro';
       </div>
     </div>
     <p id="range-info" class="text-xs text-[var(--color-faint)] mt-3"></p>
-  </section>
-
-  <!-- Momentum & faction passive (real per-momentum effects from game data) -->
-  <section class="surface p-5 mt-4">
-    <h2 class="text-lg font-bold mb-1" data-i18n-ui="calculator.momentum.title">Momentum &amp; faction passive</h2>
-    <p class="text-sm text-[var(--color-faint)] mb-4" data-i18n-ui="calculator.momentum.note">
-      Every faction has one army-wide momentum passive. The passive is taken from the
-      attacker unit's faction automatically. Set a momentum value to apply its real
-      per-momentum effects. Effects that don't map to the damage maths (crit, evasion,
-      graze) are listed as information only.
-    </p>
-    <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-      <div>
-        <span class="label block mb-1.5" data-i18n-ui="calculator.momentum.faction">Faction</span>
-        <p id="mom-faction-name" class="input flex items-center !cursor-default text-[var(--color-muted)]">—</p>
-      </div>
-      <div>
-        <label class="label block mb-1.5" for="momentum" data-i18n-ui="calculator.momentum.value">Momentum</label>
-        <input id="momentum" class="input" type="number" min="0" max="100" value="0" inputmode="numeric" />
-      </div>
-    </div>
-    <div class="hud-bar mt-3"><span id="mom-bar-fill" class="fill mom" style="width:0%"></span><span id="mom-bar-label" class="label">0/100</span></div>
-    <p id="mom-passive" class="text-sm font-semibold mt-3"></p>
-    <ul id="mom-effects" class="text-sm text-[var(--color-muted)] mt-2 space-y-1"></ul>
-    <p id="mom-notes" class="text-xs text-[var(--color-faint)] mt-3 space-y-1"></p>
   </section>
   </div>
 

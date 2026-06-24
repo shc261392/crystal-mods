@@ -66,6 +66,13 @@ function $(id: string): HTMLInputElement {
   return document.getElementById(id) as HTMLInputElement;
 }
 
+/** Dropdown label: in-game damage range and shot count. */
+function weaponLabel(w: Weapon): string {
+  const dr = damageRange(w.damage);
+  const shots = Math.max(1, w.numAttacks);
+  return `${dr.min}\u2013${dr.max} dmg${shots > 1 ? ` \u00d7${shots}` : ''}`;
+}
+
 export function initCalculator(): void {
   const weaponSel = document.getElementById('weapon') as HTMLSelectElement;
   const unitSel = document.getElementById('unit') as HTMLSelectElement;
@@ -260,7 +267,7 @@ export function initCalculator(): void {
         .map((id) => {
           const w = weaponById.get(id);
           return w
-            ? `<option value="${id}">${weaponName(w.id, w.name)} (${w.damage} dmg)</option>`
+            ? `<option value="${id}">${weaponName(w.id, w.name)} (${weaponLabel(w)})</option>`
             : '';
         })
         .join('');
@@ -268,7 +275,7 @@ export function initCalculator(): void {
       weaponSel.innerHTML = `<option value="">${t('common.customValues')}</option>${[...weapons]
         .sort((a, b) => weaponName(a.id, a.name).localeCompare(weaponName(b.id, b.name)))
         .map(
-          (w) => `<option value="${w.id}">${weaponName(w.id, w.name)} (${w.damage} dmg)</option>`,
+          (w) => `<option value="${w.id}">${weaponName(w.id, w.name)} (${weaponLabel(w)})</option>`,
         )
         .join('')}`;
     }
