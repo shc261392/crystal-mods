@@ -99,36 +99,48 @@ import Base from '../layouts/Base.astro';
     <section class="surface p-5 lg:row-span-1 relative overflow-hidden">
       <div class="absolute -top-16 -right-16 w-48 h-48 rounded-full blur-3xl opacity-20" style="background:radial-gradient(circle,var(--color-toxin),transparent 70%)"></div>
       <h2 class="text-lg font-bold mb-4" data-i18n-ui="common.results">Results</h2>
-      <div class="space-y-3 relative">
+      <div class="space-y-2.5 relative">
         <div class="flex items-baseline justify-between">
-          <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.damagePerHit">Damage per hit</span>
-          <span id="r-perhit" class="text-2xl font-black text-[var(--color-gold)] tabular-nums">—</span>
+          <span class="text-sm stat-label" data-i18n-ui="calculator.result.hitChance">Hit chance</span>
+          <span id="r-hit" class="text-2xl font-black tabular-nums">—</span>
         </div>
         <div class="flex items-baseline justify-between">
-          <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.hitChance">Hit chance</span>
-          <span id="r-hit" class="text-xl font-bold tabular-nums">—</span>
+          <span class="text-sm stat-label" data-i18n-ui="common.damage">Damage</span>
+          <span id="r-perhit" class="text-2xl font-black text-[var(--color-gold)] tabular-nums whitespace-nowrap">—</span>
+        </div>
+        <div class="flex items-baseline justify-between pl-3">
+          <span class="text-xs stat-sublabel" data-i18n-ui="calculator.result.damagePerAttack">Damage per attack</span>
+          <span id="r-attack" class="text-base font-bold tabular-nums">—</span>
         </div>
         <div class="flex items-baseline justify-between">
-          <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.damagePerAttack">Damage per attack</span>
-          <span id="r-attack" class="text-xl font-bold tabular-nums">—</span>
+          <span class="text-sm stat-label" data-i18n-ui="calculator.result.critChance">Critical chance</span>
+          <span id="r-crit" class="text-base font-bold tabular-nums text-[var(--color-gold)]">—</span>
+        </div>
+        <div class="flex items-baseline justify-between">
+          <span class="text-sm stat-label" data-i18n-ui="calculator.result.grazeChance">Graze chance</span>
+          <span id="r-graze" class="text-base font-bold tabular-nums text-[var(--color-momentum)]">—</span>
         </div>
         <div class="flex items-baseline justify-between">
           <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.expected">Expected (× hit %)</span>
-          <span id="r-expected" class="text-xl font-bold tabular-nums">—</span>
+          <span id="r-expected" class="text-base font-bold tabular-nums">—</span>
         </div>
         <div class="border-t border-[var(--color-border)] my-3"></div>
         <div class="flex items-baseline justify-between">
           <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.modelsKilledRaw">Models killed (raw)</span>
-          <span id="r-killed" class="text-xl font-bold tabular-nums">—</span>
+          <span id="r-killed" class="text-xl font-bold tabular-nums text-[var(--color-hp)]">—</span>
         </div>
         <div class="flex items-baseline justify-between">
           <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.targetTotalHp">Target total HP</span>
-          <span id="r-totalhp" class="text-base font-semibold tabular-nums text-[var(--color-faint)]">—</span>
+          <span id="r-totalhp" class="text-base font-semibold tabular-nums text-[var(--color-muted)]">—</span>
         </div>
         <div class="flex items-baseline justify-between">
           <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.targetRemainingHp">Target remaining HP</span>
-          <span id="r-remaining" class="text-base font-semibold tabular-nums text-[var(--color-faint)]">—</span>
+          <span id="r-remaining" class="text-base font-semibold tabular-nums text-[var(--color-hp)]">—</span>
         </div>
+        <p class="text-[0.7rem] text-[var(--color-faint)] pt-1" data-i18n-ui="calculator.result.assumptionNote">
+          Damage is the in-game range (min = 75% of max). Crit/graze chances assume 1% per
+          point of armor-vs-penetration difference — an estimate pending calibration.
+        </p>
       </div>
       <button id="copy-link" type="button" class="btn w-full mt-5" data-url="" data-i18n-ui="common.copyShareableLink">
         Copy shareable link
@@ -188,6 +200,7 @@ import Base from '../layouts/Base.astro';
         <input id="momentum" class="input" type="number" min="0" max="100" value="0" inputmode="numeric" />
       </div>
     </div>
+    <div class="hud-bar mt-3"><span id="mom-bar-fill" class="fill mom" style="width:0%"></span><span id="mom-bar-label" class="label">0/100</span></div>
     <p id="mom-passive" class="text-sm font-semibold mt-3"></p>
     <ul id="mom-effects" class="text-sm text-[var(--color-muted)] mt-2 space-y-1"></ul>
     <p id="mom-notes" class="text-xs text-[var(--color-faint)] mt-3 space-y-1"></p>

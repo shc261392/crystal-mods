@@ -7,7 +7,15 @@ import factionMomentumData from '../data/faction-momentum.json';
 import factionsData from '../data/factions.json';
 import unitsData from '../data/units.json';
 import weaponsData from '../data/weapons.json';
-import { damagePerHit, expectedDamage, hitChance, modelsKilled } from '../lib/combat';
+import {
+  critChance,
+  damagePerHit,
+  damageRange,
+  expectedDamage,
+  grazeChance,
+  hitChance,
+  modelsKilled,
+} from '../lib/combat';
 import type { Unit, Weapon } from '../lib/types';
 import { t, unitName, weaponName } from './i18n';
 
@@ -168,9 +176,13 @@ export function initCalculator(): void {
   }
 
   function renderMomentum(): void {
+    const mom = Math.max(0, Number(momentumInput.value) || 0);
+    const barFill = document.getElementById('mom-bar-fill');
+    const barLabel = document.getElementById('mom-bar-label');
+    if (barFill) barFill.style.width = `${Math.min(100, mom)}%`;
+    if (barLabel) barLabel.textContent = `${mom}/100`;
     if (!momPassive || !momEffects || !momNotes) return;
     const fid = attackerFactionId();
-    const mom = Math.max(0, Number(momentumInput.value) || 0);
     const f = fid ? factionMomentum.factions[fid] : undefined;
     if (momFactionName) {
       momFactionName.textContent = fid
@@ -328,8 +340,11 @@ export function initCalculator(): void {
     const finalArmor = Math.max(0, arm + cover + (tb?.armor ?? 0));
     const finalEva = eva + (tb?.evasion ?? 0);
     const finalAcc = acc + (ab?.accuracy ?? 0) + mm.accAdd;
-    const perHit = damagePerHit(finalDamage, finalArmor, finalAp);
+    const perHit = damagePerHit(finalDamage);
+    const dr = damageRange(finalDamage);
     const hit = hitChance(finalAcc, mod, finalEva);
+    const graze = grazeChance(finalAp, finalArmor);
+    const crit = critChance(0, finalAp, finalArmor);
     const perAttack = perHit * shotCount;
     const expected = expectedDamage(perAttack, hit);
     const killed = Math.min(modelsKilled(perAttack, hp), aliveModels);
@@ -337,9 +352,11 @@ export function initCalculator(): void {
     // Remaining HP accounts for already-lost models and a wounded front model.
     const remainingHp = Math.max(0, aliveModels * hp - (hp - frontHp));
 
-    setText('r-perhit', String(perHit));
+    setText('r-perhit', `${dr.min}\u2013${dr.max}`);
     setText('r-hit', `${Math.round(hit)}%`);
-    setText('r-attack', String(perAttack));
+    setText('r-crit', `${Math.round(crit)}%`);
+    setText('r-graze', `${Math.round(graze)}%`);
+    setText('r-attack', `${dr.min * shotCount}\u2013${dr.max * shotCount}`);
     setText('r-expected', String(expected));
     setText('r-killed', `${killed} / ${aliveModels}`);
     setText('r-totalhp', String(totalHp));

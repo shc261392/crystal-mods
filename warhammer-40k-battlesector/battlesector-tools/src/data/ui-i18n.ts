@@ -161,10 +161,17 @@ const rawUiI18n = {
     'calculator.result.damagePerHit': 'Damage per hit',
     'calculator.result.hitChance': 'Hit chance',
     'calculator.result.damagePerAttack': 'Damage per attack',
+    'calculator.result.critChance': 'Critical chance',
+    'calculator.result.grazeChance': 'Graze chance',
+    'calculator.result.assumptionNote':
+      'Damage is the in-game range (min = 75% of max). Crit/graze chances assume 1% per point of armor-vs-penetration difference — an estimate pending calibration.',
     'calculator.result.expected': 'Expected (× hit %)',
     'calculator.result.modelsKilledRaw': 'Models killed (raw)',
     'calculator.result.targetTotalHp': 'Target total HP',
     'calculator.result.targetRemainingHp': 'Target remaining HP',
+    'weaponDetail.section.grazeVsArmor': 'Graze chance vs Armor',
+    'weaponDetail.note.graze':
+      "When target armor exceeds this weapon's armor piercing, hits start to graze for reduced damage. Assumes 1% graze per point of difference (an estimate).",
     'calculator.mode.oneRound': 'One-round test',
     'calculator.mode.battle': 'Battle simulation',
     'calculator.buff.damageMod': 'Damage modifier',
@@ -406,7 +413,7 @@ const rawUiI18n = {
     'calculator.range.outOfRange': 'außerhalb der Maximalreichweite',
     'calculator.momentum.title': 'Momentum & Fraktionspassiv',
     'calculator.momentum.note':
-      'Jede Fraktion hat ein armeeweites Momentum-Passiv. Wähle eine Fraktion und einen Momentum-Wert, um die echten Effekte pro Momentum anzuwenden. Effekte ohne Einfluss auf die Schadensberechnung (Krit, Ausweichen, Streifschuss) werden nur als Information angezeigt.',
+      'Jede Fraktion hat ein armeeweites Momentum-Passiv, das automatisch von der Fraktion der angreifenden Einheit übernommen wird. Lege einen Momentum-Wert fest, um die echten Effekte pro Momentum anzuwenden. Effekte ohne Einfluss auf die Schadensberechnung (Krit, Ausweichen, Streifschuss) werden nur als Information angezeigt.',
     'calculator.momentum.faction': 'Fraktion',
     'calculator.momentum.value': 'Momentum',
     'calculator.momentum.none': 'Keine',
@@ -615,7 +622,7 @@ const rawUiI18n = {
     'calculator.range.outOfRange': 'más allá del alcance máximo',
     'calculator.momentum.title': 'Impulso y pasiva de facción',
     'calculator.momentum.note':
-      'Cada facción tiene una pasiva de impulso para todo el ejército. Elige una facción y un valor de impulso para aplicar sus efectos reales por impulso. Los efectos que no afectan al cálculo de daño (crítico, evasión, roce) se muestran solo como información.',
+      'Cada facción tiene una pasiva de impulso para todo el ejército, tomada automáticamente de la facción de la unidad atacante. Indica un valor de impulso para aplicar sus efectos reales por impulso. Los efectos que no afectan al cálculo de daño (crítico, evasión, roce) se muestran solo como información.',
     'calculator.momentum.faction': 'Facción',
     'calculator.momentum.value': 'Impulso',
     'calculator.momentum.none': 'Ninguna',
@@ -825,7 +832,7 @@ const rawUiI18n = {
     'calculator.range.outOfRange': 'au-delà de la portée maximale',
     'calculator.momentum.title': 'Momentum et passif de faction',
     'calculator.momentum.note':
-      "Chaque faction possède un passif de momentum à l'échelle de l'armée. Choisissez une faction et une valeur de momentum pour appliquer ses effets réels par momentum. Les effets sans impact sur le calcul des dégâts (critique, esquive, éraflure) sont indiqués à titre d'information uniquement.",
+      "Chaque faction possède un passif de momentum à l'échelle de l'armée, repris automatiquement de la faction de l'unité attaquante. Indiquez une valeur de momentum pour appliquer ses effets réels par momentum. Les effets sans impact sur le calcul des dégâts (critique, esquive, éraflure) sont indiqués à titre d'information uniquement.",
     'calculator.momentum.faction': 'Faction',
     'calculator.momentum.value': 'Momentum',
     'calculator.momentum.none': 'Aucune',
@@ -1030,7 +1037,7 @@ const rawUiI18n = {
     'calculator.range.outOfRange': '최대 사거리 초과',
     'calculator.momentum.title': '모멘텀 및 진영 패시브',
     'calculator.momentum.note':
-      '각 진영에는 군대 전체에 적용되는 모멘텀 패시브가 하나 있습니다. 진영과 모멘텀 값을 선택하면 모멘텀당 실제 효과가 적용됩니다. 피해 계산에 반영되지 않는 효과(치명타, 회피, 스침)는 정보로만 표시됩니다.',
+      '각 진영에는 군대 전체에 적용되는 모멘텀 패시브가 하나 있으며, 공격 유닛의 진영에서 자동으로 가져옵니다. 모멘텀 값을 입력하면 모멘텀당 실제 효과가 적용됩니다. 피해 계산에 반영되지 않는 효과(치명타, 회피, 스침)는 정보로만 표시됩니다.',
     'calculator.momentum.faction': '진영',
     'calculator.momentum.value': '모멘텀',
     'calculator.momentum.none': '없음',
@@ -1236,7 +1243,7 @@ const rawUiI18n = {
     'calculator.range.outOfRange': 'poza maksymalnym zasięgiem',
     'calculator.momentum.title': 'Momentum i pasywka frakcji',
     'calculator.momentum.note':
-      'Każda frakcja ma jedną pasywkę momentum dla całej armii. Wybierz frakcję i wartość momentum, aby zastosować jej rzeczywiste efekty na punkt momentum. Efekty niewpływające na obliczenia obrażeń (kryt, unik, muśnięcie) są pokazywane tylko informacyjnie.',
+      'Każda frakcja ma jedną pasywkę momentum dla całej armii, pobieraną automatycznie z frakcji atakującej jednostki. Podaj wartość momentum, aby zastosować jej rzeczywiste efekty na punkt momentum. Efekty niewpływające na obliczenia obrażeń (kryt, unik, muśnięcie) są pokazywane tylko informacyjnie.',
     'calculator.momentum.faction': 'Frakcja',
     'calculator.momentum.value': 'Momentum',
     'calculator.momentum.none': 'Brak',
@@ -1443,7 +1450,7 @@ const rawUiI18n = {
     'calculator.range.outOfRange': 'além do alcance máximo',
     'calculator.momentum.title': 'Momentum e passiva de facção',
     'calculator.momentum.note':
-      'Cada facção tem uma passiva de momentum para todo o exército. Escolha uma facção e um valor de momentum para aplicar seus efeitos reais por momentum. Efeitos que não afetam o cálculo de dano (crítico, evasão, raspão) são listados apenas como informação.',
+      'Cada facção tem uma passiva de momentum para todo o exército, obtida automaticamente da facção da unidade atacante. Defina um valor de momentum para aplicar seus efeitos reais por momentum. Efeitos que não afetam o cálculo de dano (crítico, evasão, raspão) são listados apenas como informação.',
     'calculator.momentum.faction': 'Facção',
     'calculator.momentum.value': 'Momentum',
     'calculator.momentum.none': 'Nenhuma',
@@ -1650,7 +1657,7 @@ const rawUiI18n = {
     'calculator.range.outOfRange': 'за пределами макс. дальности',
     'calculator.momentum.title': 'Импульс и пассив фракции',
     'calculator.momentum.note':
-      'У каждой фракции есть один общеармейский пассив импульса. Выберите фракцию и значение импульса, чтобы применить реальные эффекты за единицу импульса. Эффекты, не влияющие на расчёт урона (крит, уклонение, скользящий удар), показаны только как информация.',
+      'У каждой фракции есть один общеармейский пассив импульса, который автоматически берётся из фракции атакующего отряда. Укажите значение импульса, чтобы применить реальные эффекты за единицу импульса. Эффекты, не влияющие на расчёт урона (крит, уклонение, скользящий удар), показаны только как информация.',
     'calculator.momentum.faction': 'Фракция',
     'calculator.momentum.value': 'Импульс',
     'calculator.momentum.none': 'Нет',
@@ -1854,7 +1861,7 @@ const rawUiI18n = {
     'calculator.range.outOfRange': '超出最大射程',
     'calculator.momentum.title': '势能与阵营被动',
     'calculator.momentum.note':
-      '每个阵营都有一个全军通用的势能被动。选择阵营和势能值即可应用其每点势能的真实效果。不影响伤害计算的效果（暴击、闪避、擦伤）仅作信息显示。',
+      '每个阵营都有一个全军通用的势能被动，自动取自攻击单位的阵营。输入势能值即可应用其每点势能的真实效果。不影响伤害计算的效果（暴击、闪避、擦伤）仅作信息显示。',
     'calculator.momentum.faction': '阵营',
     'calculator.momentum.value': '势能',
     'calculator.momentum.none': '无',
@@ -2084,7 +2091,7 @@ const rawUiI18n = {
     'calculator.range.outOfRange': '超出最大射程',
     'calculator.momentum.title': '勢能與陣營被動',
     'calculator.momentum.note':
-      '每個陣營都有一個全軍通用的勢能被動。選擇陣營與勢能值即可套用其每點勢能的真實效果。不影響傷害計算的效果（暴擊、閃避、擦傷）僅作資訊顯示。',
+      '每個陣營都有一個全軍通用的勢能被動，自動取自攻擊單位的陣營。輸入勢能值即可套用其每點勢能的真實效果。不影響傷害計算的效果（暴擊、閃避、擦傷）僅作資訊顯示。',
     'calculator.momentum.faction': '陣營',
     'calculator.momentum.value': '勢能',
     'calculator.momentum.none': '無',

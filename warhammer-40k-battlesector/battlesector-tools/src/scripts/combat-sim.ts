@@ -4,7 +4,7 @@
 
 import unitsData from '../data/units.json';
 import weaponsData from '../data/weapons.json';
-import { damagePerHit, hitChance } from '../lib/combat';
+import { damageRange, grazeChance, hitChance } from '../lib/combat';
 import type { Unit, Weapon } from '../lib/types';
 import { t, unitName, weaponName } from './i18n';
 
@@ -193,7 +193,11 @@ export function initCombatSim(): void {
         if (!defender.models.some(modelAlive)) break;
         if (Math.random() * 100 < chance) {
           hits++;
-          const dmg = damagePerHit(attacker.weaponDamage, defender.armor, attacker.armorPiercing);
+          // Damage is a range [0.75x, x]; a graze (chance rises with armour over
+          // penetration) deals the minimum, otherwise roll uniformly in range.
+          const { min, max } = damageRange(attacker.weaponDamage);
+          const grazed = Math.random() * 100 < grazeChance(attacker.armorPiercing, defender.armor);
+          const dmg = grazed ? min : Math.round(min + Math.random() * (max - min));
           if (applyHit(defender, dmg)) kills++;
         }
       }

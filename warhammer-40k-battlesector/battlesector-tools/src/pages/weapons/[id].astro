@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { damagePerHit } from '../../lib/combat';
+import { damageRange, grazeChance } from '../../lib/combat';
 import { getWeapon, idFromSlug, unitSlug, units, weaponSlug, weapons } from '../../lib/data';
 import { getWeaponTypeIcon } from '../../scripts/images';
 
@@ -17,10 +17,12 @@ if (!weapon) {
   return Astro.redirect('/units');
 }
 
-// Damage vs armor table (armor 0..9), accounting for armor piercing.
+// Damage is a range [0.75x, x]. Armour no longer subtracts damage; instead it
+// raises the graze chance once it exceeds the weapon's armour piercing.
+const dmgRange = damageRange(weapon.damage);
 const armorTable = Array.from({ length: 10 }, (_, armor) => ({
   armor,
-  dmg: damagePerHit(weapon.damage, armor, weapon.armorPiercing),
+  graze: grazeChance(weapon.armorPiercing, armor),
 }));
 
 // Units that can take this weapon.
@@ -61,7 +63,7 @@ const typeIcon = getWeaponTypeIcon(weapon.isMelee);
       </div>
       <div class="flex gap-6">
         <div class="text-center">
-          <p class="text-4xl font-black text-[var(--color-gold)] leading-none">{weapon.damage}</p>
+          <p class="text-4xl font-black text-[var(--color-gold)] leading-none whitespace-nowrap">{dmgRange.min}–{dmgRange.max}</p>
           <p class="text-xs text-[var(--color-faint)] uppercase tracking-wide mt-1.5" data-i18n-ui="common.damage">Damage</p>
         </div>
         <div class="text-center">
@@ -80,18 +82,19 @@ const typeIcon = getWeaponTypeIcon(weapon.isMelee);
   </div>
 
   <div class="grid gap-4 md:grid-cols-2 mt-4">
-    <!-- Damage vs armor -->
+    <!-- Graze chance vs armor -->
     <section class="surface p-5">
-      <h2 class="text-lg font-bold mb-1" data-i18n-ui="weaponDetail.section.damageVsArmor">Damage vs Armor</h2>
-      <p class="text-sm text-[var(--color-faint)] mb-4" data-i18n-ui="weaponDetail.note.perHit">
-        Per hit. Minimum 1 damage always applies{weapon.armorPiercing > 0 ? `; armor piercing ${weapon.armorPiercing} factored in` : ''}.
+      <h2 class="text-lg font-bold mb-1" data-i18n-ui="weaponDetail.section.grazeVsArmor">Graze chance vs Armor</h2>
+      <p class="text-sm text-[var(--color-faint)] mb-4" data-i18n-ui="weaponDetail.note.graze">
+        When target armor exceeds this weapon's armor piercing ({weapon.armorPiercing}), hits start
+        to graze for reduced damage. Assumes 1% graze per point of difference (see notes).
       </p>
       <div class="space-y-1.5">
         {armorTable.map((row) => (
           <div class="flex items-center gap-3">
             <span class="text-xs text-[var(--color-faint)] w-14 shrink-0"><span data-i18n-ui="common.armor">Armor</span> {row.armor}</span>
-            <div class="statbar flex-1"><span style={`width:${Math.round((row.dmg / weapon.damage || 0) * 100)}%`}></span></div>
-            <span class="text-sm font-bold tabular-nums w-8 text-right">{row.dmg}</span>
+            <div class="hud-bar flex-1"><span class="fill mom" style={`width:${Math.round(row.graze)}%`}></span></div>
+            <span class="text-sm font-bold tabular-nums w-10 text-right">{Math.round(row.graze)}%</span>
           </div>
         ))}
       </div>
