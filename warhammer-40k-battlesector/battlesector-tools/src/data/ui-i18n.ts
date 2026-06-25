@@ -224,7 +224,6 @@ const rawUiI18n = {
     'calculator.momentum.stat.heal': 'reanimation / heal',
     'common.comingSoon': 'Coming soon',
     'common.campaignOnly': 'Campaign only',
-    'common.large': 'Large',
     'unitDetail.largeTip':
       'Large units (vehicles/monsters) have a big footprint: they block flamer and line attacks, are easier to hit when firing into a melee, and cannot be screened like infantry.',
     'unitDetail.heightTip':
