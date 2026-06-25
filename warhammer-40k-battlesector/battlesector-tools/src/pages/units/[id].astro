@@ -70,6 +70,7 @@ const combatStats = [
 ];
 
 const tags = [
+  unit.campaignOnly ? { key: 'common.campaignOnly', label: 'Campaign only' } : null,
   unit.isLarge ? { key: 'common.large', label: 'Large' } : null,
   unit.canMeleeReact ? { key: 'unitDetail.tag.meleeReaction', label: 'Melee Reaction' } : null,
   unit.canFallback ? { key: 'unitDetail.tag.canFallBack', label: 'Can Fall Back' } : null,

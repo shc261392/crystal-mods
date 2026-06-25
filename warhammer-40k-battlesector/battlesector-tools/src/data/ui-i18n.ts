@@ -223,6 +223,12 @@ const rawUiI18n = {
     'calculator.momentum.stat.rangeStability': 'range stability',
     'calculator.momentum.stat.heal': 'reanimation / heal',
     'common.comingSoon': 'Coming soon',
+    'common.campaignOnly': 'Campaign only',
+    'common.large': 'Large',
+    'unitDetail.largeTip':
+      'Large units (vehicles/monsters) have a big footprint: they block flamer and line attacks, are easier to hit when firing into a melee, and cannot be screened like infantry.',
+    'unitDetail.heightTip':
+      "Model height feeds cover and line-of-sight: taller units can see and shoot over low cover, and cover's effect depends on the relative heights of shooter, cover and target.",
     'army.addUnit': 'Add a unit',
     'army.loadout': 'Loadout',
     'army.empty': 'Your army is empty. Add a unit to begin.',

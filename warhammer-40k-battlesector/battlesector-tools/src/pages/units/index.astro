@@ -112,6 +112,7 @@ const sorted = [...units].sort((a, b) => a.name.localeCompare(b.name));
             <div class="flex items-center gap-2">
               <h3 class="font-bold truncate" data-i18n-unit={u.id} data-i18n-fallback={u.name}>{u.name}</h3>
               {u.isLarge && <span class="chip !py-0.5 !px-1.5 text-[10px]" data-i18n-ui="common.large">Large</span>}
+              {u.campaignOnly && <span class="chip !py-0.5 !px-1.5 text-[10px] !text-[var(--color-warp)] !border-[color-mix(in_oklab,var(--color-warp)_40%,transparent)]" data-i18n-ui="common.campaignOnly">Campaign only</span>}
             </div>
             <p class="text-xs text-[var(--color-faint)] mt-0.5 flex items-center gap-1.5">
               <span class="w-1.5 h-1.5 rounded-full shrink-0" style={`background:${factionColor(u.factionName)}`}></span>

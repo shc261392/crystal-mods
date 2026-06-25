@@ -40,6 +40,7 @@ export interface Unit {
   momentumPerModelDeath: number;
   unitHeight: number;
   isLarge: boolean;
+  campaignOnly?: boolean;
   canMeleeReact: boolean;
   canFallback: boolean;
   activationRange: number;
