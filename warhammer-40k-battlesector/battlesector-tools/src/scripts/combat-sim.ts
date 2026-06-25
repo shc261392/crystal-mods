@@ -193,12 +193,12 @@ export function initCombatSim(): void {
         if (!defender.models.some(modelAlive)) break;
         if (Math.random() * 100 < chance) {
           hits++;
-          // Damage is a range [0.75x, x]; a graze (chance rises with armour over
-          // penetration) deals the minimum, otherwise roll uniformly in range.
+          // Damage is a range [0.75x, x]; a graze (3% per point of armour over
+          // penetration) deals NO damage, otherwise roll uniformly in range.
           const { min, max } = damageRange(attacker.weaponDamage);
           const grazed = Math.random() * 100 < grazeChance(attacker.armorPiercing, defender.armor);
-          const dmg = grazed ? min : Math.round(min + Math.random() * (max - min));
-          if (applyHit(defender, dmg)) kills++;
+          const dmg = grazed ? 0 : Math.round(min + Math.random() * (max - min));
+          if (dmg > 0 && applyHit(defender, dmg)) kills++;
         }
       }
     }

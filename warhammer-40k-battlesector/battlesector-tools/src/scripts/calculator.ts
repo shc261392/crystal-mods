@@ -49,7 +49,6 @@ interface MomFaction {
   conditional?: { name: string; note: string };
 }
 const factionMomentum = factionMomentumData as {
-  baseCritNote: string;
   factions: Record<string, MomFaction>;
 };
 const factionNames = factionsData as { id: number; name: string }[];
@@ -228,7 +227,6 @@ export function initCalculator(): void {
     if (f.note) notes.push(f.note);
     if (f.tooltipDiscrepancy) notes.push(t('calculator.momentum.tauDiscrepancy'));
     if (f.conditional) notes.push(`${f.conditional.name}: ${f.conditional.note}`);
-    notes.push(factionMomentum.baseCritNote);
     momNotes.innerHTML = notes.map((n) => `<span class="block">• ${n}</span>`).join('');
   }
 
@@ -354,7 +352,8 @@ export function initCalculator(): void {
     const graze = grazeChance(finalAp, finalArmor);
     const crit = critChance(0, finalAp, finalArmor);
     const perAttack = perHit * shotCount;
-    const expected = expectedDamage(perAttack, hit);
+    // A graze deals no damage, so it reduces expected output proportionally.
+    const expected = Math.round(expectedDamage(perAttack, hit) * (1 - graze / 100));
     const killed = Math.min(modelsKilled(perAttack, hp), aliveModels);
     const totalHp = hp * mem;
     // HP left in the unit after this attack: pre-existing damage (lost models +

@@ -87,7 +87,7 @@ const typeIcon = getWeaponTypeIcon(weapon.isMelee);
       <h2 class="text-lg font-bold mb-1" data-i18n-ui="weaponDetail.section.grazeVsArmor">Graze chance vs Armor</h2>
       <p class="text-sm text-[var(--color-faint)] mb-4" data-i18n-ui="weaponDetail.note.graze">
         When target armor exceeds this weapon's armor piercing ({weapon.armorPiercing}), hits start
-        to graze for reduced damage. Assumes 1% graze per point of difference (see notes).
+        to graze (3% per point of difference) and a graze deals no damage.
       </p>
       <div class="space-y-1.5">
         {armorTable.map((row) => (

@@ -165,14 +165,14 @@ const rawUiI18n = {
     'calculator.result.grazeChance': 'Graze chance',
     'calculator.attacker.totalShots': 'Total shots (squad)',
     'calculator.result.assumptionNote':
-      'Damage is the in-game range (min = 75% of max). Crit/graze chances assume 1% per point of armor-vs-penetration difference — an estimate pending calibration.',
+      'Damage is the in-game range (min = 75% of max). Critical chance = base + 5% per point of armour piercing above armour; graze chance = 3% per point of armour above piercing and a graze deals NO damage. The critical damage multiplier is a native value and is not modelled.',
     'calculator.result.expected': 'Expected (× hit %)',
     'calculator.result.modelsKilledRaw': 'Models killed (raw)',
     'calculator.result.targetTotalHp': 'Target total HP',
     'calculator.result.targetRemainingHp': 'Target remaining HP',
     'weaponDetail.section.grazeVsArmor': 'Graze chance vs Armor',
     'weaponDetail.note.graze':
-      "When target armor exceeds this weapon's armor piercing, hits start to graze for reduced damage. Assumes 1% graze per point of difference (an estimate).",
+      "When target armor exceeds this weapon's armor piercing, hits start to graze (3% per point of difference) and a graze deals no damage.",
     'calculator.mode.oneRound': 'One-round test',
     'calculator.mode.battle': 'Battle simulation',
     'calculator.buff.damageMod': 'Damage modifier',

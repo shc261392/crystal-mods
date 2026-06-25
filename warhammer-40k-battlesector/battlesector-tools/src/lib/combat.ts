@@ -10,12 +10,16 @@
 export const MIN_DAMAGE_MULT = 0.75;
 
 /**
- * Graze/critical chance gained per point of armour differential (|AP − armour|).
- * ASSUMPTION: 1% per point. The real GrazeDifferentialFactor /
- * CriticalDifferentialFactor are native and not extractable; calibrate here when
- * known (see the formula doc).
+ * Critical chance gained per point of armour piercing ABOVE the target's armour.
+ * 5% per point (all factions). The base weapon crit is added on top.
  */
-export const DIFFERENTIAL_FACTOR = 1;
+export const CRIT_FACTOR = 5;
+
+/**
+ * Graze chance gained per point of armour ABOVE the weapon's armour piercing.
+ * 3% per point (all factions). A graze deals NO damage.
+ */
+export const GRAZE_FACTOR = 3;
 
 /** The in-game damage range of a weapon: [0.75 × max, max]. */
 export function damageRange(maxDamage: number): { min: number; max: number } {
@@ -29,22 +33,18 @@ export function damagePerHit(maxDamage: number): number {
   return Math.round((min + max) / 2);
 }
 
-/** Graze chance (%): rises as the target's armour exceeds armour piercing. */
+/** Graze chance (%): 3% per point of target armour above armour piercing. Graze = no damage. */
 export function grazeChance(armorPiercing: number, targetArmor: number): number {
-  return clamp(Math.max(0, targetArmor - armorPiercing) * DIFFERENTIAL_FACTOR, 0, 100);
+  return clamp(Math.max(0, targetArmor - armorPiercing) * GRAZE_FACTOR, 0, 100);
 }
 
-/** Critical chance (%): base weapon crit + bonus as AP exceeds armour. */
+/** Critical chance (%): base weapon crit + 5% per point of AP above armour. */
 export function critChance(
   baseCritChance: number,
   armorPiercing: number,
   targetArmor: number,
 ): number {
-  return clamp(
-    baseCritChance + Math.max(0, armorPiercing - targetArmor) * DIFFERENTIAL_FACTOR,
-    0,
-    100,
-  );
+  return clamp(baseCritChance + Math.max(0, armorPiercing - targetArmor) * CRIT_FACTOR, 0, 100);
 }
 
 /** Final hit chance clamped to 0..100. */

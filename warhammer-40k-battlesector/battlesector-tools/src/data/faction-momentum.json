@@ -1,7 +1,5 @@
 {
   "_source": "Verified from status_effects.json (StatusEffectDataTable) + decompiled StatChangeType enum. See .copilot_workspace/battlesector-data/docs_momentum_faction_mapping.md",
-  "baseCritPerMomentum": null,
-  "baseCritNote": "Every faction also benefits from momentum's shared base crit-chance bonus, but that value is a hardcoded native game constant and is not present in any extractable asset (DamageCalculationConfig is empty; CPPPerMomentum is Command-Points, not crit). It is intentionally left unknown rather than guessed.",
   "factions": {
     "0": {
       "passive": "Red Thirst",

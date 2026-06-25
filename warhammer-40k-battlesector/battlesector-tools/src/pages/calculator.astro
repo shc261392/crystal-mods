@@ -152,8 +152,9 @@ import Base from '../layouts/Base.astro';
           <span id="r-remaining" class="text-xl font-black tabular-nums text-[var(--color-hp)]">—</span>
         </div>
         <p class="text-[0.7rem] text-[var(--color-faint)] pt-1" data-i18n-ui="calculator.result.assumptionNote">
-          Damage is the in-game range (min = 75% of max). Crit/graze chances assume 1% per
-          point of armor-vs-penetration difference — an estimate pending calibration.
+          Damage is the in-game range (min = 75% of max). Critical chance = base + 5% per point
+          of armour piercing above armour; graze chance = 3% per point of armour above piercing
+          and a graze deals no damage. The critical damage multiplier is native and not modelled.
         </p>
       </div>
       <button id="copy-link" type="button" class="btn w-full mt-5" data-url="" data-i18n-ui="common.copyShareableLink">
