@@ -19,12 +19,17 @@ import Base from '../layouts/Base.astro';
   <div class="grid gap-4 lg:grid-cols-[1fr_20rem]">
     <!-- List -->
     <section class="surface p-5 order-2 lg:order-1">
-      <div class="flex items-center gap-3 mb-4">
-        <div class="flex-1">
-          <label class="label block mb-1.5" for="add-unit" data-i18n-ui="army.addUnit">Add a unit</label>
+      <div class="grid gap-3 mb-4">
+        <div>
+          <label class="label block mb-1.5" for="army-faction" data-i18n-ui="calculator.momentum.faction">Faction</label>
+          <select id="army-faction" class="select"></select>
+        </div>
+        <div>
+          <label class="label block mb-1.5" for="add-unit" data-i18n-ui="common.unit">Unit</label>
           <select id="add-unit" class="select"></select>
         </div>
-        <button id="add-btn" type="button" class="btn btn-primary self-end h-[42px]" data-i18n-ui="common.add">Add</button>
+        <div id="loadout-config" class="space-y-2"></div>
+        <button id="add-btn" type="button" class="btn btn-primary w-full" data-i18n-ui="army.addUnit">Add a unit</button>
       </div>
 
       <ul id="army-list" class="space-y-2"></ul>

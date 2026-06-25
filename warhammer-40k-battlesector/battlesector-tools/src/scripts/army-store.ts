@@ -9,6 +9,8 @@ export interface ArmyEntry {
   points: number;
   faction: string;
   qty: number;
+  /** Selected weapon ids (one per slot). Absent = default loadout. */
+  loadout?: number[];
 }
 
 const KEY = 'bs.army.v1';
@@ -48,18 +50,24 @@ export function totalModels(army: ArmyEntry[]): number {
   return army.reduce((sum, e) => sum + e.qty, 0);
 }
 
-/** Encode the army as a compact, URL-safe string: "id.qty_id.qty". */
+/** Encode the army as a compact, URL-safe string: "id.qty.w-w_id.qty". */
 export function encodeArmy(army: ArmyEntry[]): string {
-  return army.map((e) => `${e.id}.${e.qty}`).join('_');
+  return army
+    .map((e) => {
+      const lo = e.loadout?.length ? `.${e.loadout.join('-')}` : '';
+      return `${e.id}.${e.qty}${lo}`;
+    })
+    .join('_');
 }
 
-/** Parse the "ids" share param into [id, qty] pairs. */
-export function decodeArmy(value: string): Array<[number, number]> {
+/** Parse the "ids" share param into [id, qty, loadout] tuples. */
+export function decodeArmy(value: string): Array<[number, number, number[]]> {
   return value
     .split('_')
-    .map((part): [number, number] => {
-      const [id, qty] = part.split('.');
-      return [Number(id), Math.max(1, Number(qty) || 1)];
+    .map((part): [number, number, number[]] => {
+      const [id, qty, lo] = part.split('.');
+      const loadout = lo ? lo.split('-').map(Number).filter(Number.isFinite) : [];
+      return [Number(id), Math.max(1, Number(qty) || 1), loadout];
     })
     .filter(([id]) => Number.isFinite(id) && id >= 0);
 }

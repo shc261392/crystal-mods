@@ -224,6 +224,7 @@ const rawUiI18n = {
     'calculator.momentum.stat.heal': 'reanimation / heal',
     'common.comingSoon': 'Coming soon',
     'army.addUnit': 'Add a unit',
+    'army.loadout': 'Loadout',
     'army.empty': 'Your army is empty. Add a unit to begin.',
     'army.summary.totalPoints': 'Total points',
     'army.summary.units': 'Units',
