@@ -200,6 +200,19 @@ const vitals = [
         </div>
       ))}
     </div>
+    <div class="mt-5 pt-4 border-t border-[var(--color-border)]">
+      <div class="flex items-baseline justify-between mb-2">
+        <span class="label" data-i18n-ui="common.models">Models</span>
+        <span class="text-sm text-[var(--color-muted)]">
+          {unit.members} × {unit.maxHealth} HP = <span class="text-[var(--color-hp)] font-bold tabular-nums">{unit.totalHealth}</span>
+        </span>
+      </div>
+      <div class="flex flex-wrap gap-1">
+        {Array.from({ length: Math.min(unit.members, 40) }).map(() => (
+          <div class="hud-bar !h-3.5 grow basis-8"><span class="fill hp" style="width:100%"></span></div>
+        ))}
+      </div>
+    </div>
   </section>
 
   <!-- Stat groups -->

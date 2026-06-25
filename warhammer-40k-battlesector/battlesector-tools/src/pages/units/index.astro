@@ -41,6 +41,9 @@ const sorted = [...units].sort((a, b) => a.name.localeCompare(b.name));
           role="tab"
         >
           <span class="w-1.5 h-1.5 rounded-full shrink-0" style={`background:${factionColor(f.name)}`}></span>
+          {getFactionEmblem(f.id) && (
+            <img src={getFactionEmblem(f.id)} alt="" width="16" height="16" loading="lazy" class="w-4 h-4 object-contain shrink-0" />
+          )}
           <span data-i18n-faction={f.id} data-i18n-fallback={f.name}>{f.name}</span>
         </button>
       ))}

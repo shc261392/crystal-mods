@@ -1,5 +1,10 @@
 ---
 import Base from '../layouts/Base.astro';
+import { factionColor, factions } from '../lib/data';
+import { getFactionEmblem } from '../scripts/images';
+
+// Single-faction army: faction picker mirrors the unit browser's filter pills.
+const factionPills = [...factions].sort((a, b) => a.name.localeCompare(b.name));
 ---
 
 <Base
@@ -21,8 +26,23 @@ import Base from '../layouts/Base.astro';
     <section class="surface p-5 order-2 lg:order-1">
       <div class="grid gap-3 mb-4">
         <div>
-          <label class="label block mb-1.5" for="army-faction" data-i18n-ui="calculator.momentum.faction">Faction</label>
-          <select id="army-faction" class="select"></select>
+          <span class="label block mb-1.5" data-i18n-ui="calculator.momentum.faction">Faction</span>
+          <div id="army-faction-bar" class="flex gap-1.5 overflow-x-auto pb-1.5" role="tablist" aria-label="Faction">
+            {factionPills.map((f) => (
+              <button
+                type="button"
+                class="faction-btn shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-semibold border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:border-[var(--color-border-strong)] whitespace-nowrap transition-colors"
+                data-faction-id={f.id}
+                role="tab"
+              >
+                <span class="w-1.5 h-1.5 rounded-full shrink-0" style={`background:${factionColor(f.name)}`}></span>
+                {getFactionEmblem(f.id) && (
+                  <img src={getFactionEmblem(f.id)} alt="" width="16" height="16" loading="lazy" class="w-4 h-4 object-contain shrink-0" />
+                )}
+                <span data-i18n-faction={f.id} data-i18n-fallback={f.name}>{f.name}</span>
+              </button>
+            ))}
+          </div>
         </div>
         <div>
           <label class="label block mb-1.5" for="add-unit" data-i18n-ui="common.unit">Unit</label>

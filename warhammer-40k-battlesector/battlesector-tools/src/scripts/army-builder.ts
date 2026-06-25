@@ -51,16 +51,22 @@ function loadoutCost(u: Unit, loadout: number[]): number {
 }
 
 export function initArmyBuilder(): void {
-  const factionSel = document.getElementById('army-faction') as HTMLSelectElement | null;
+  const factionBar = document.getElementById('army-faction-bar');
   const select = document.getElementById('add-unit') as HTMLSelectElement | null;
   const loadoutBox = document.getElementById('loadout-config');
   const addBtn = document.getElementById('add-btn');
   const list = document.getElementById('army-list');
   const empty = document.getElementById('empty');
-  if (!factionSel || !select || !list) return;
+  if (!factionBar || !select || !list) return;
   const listEl = list;
-  const facSel = factionSel;
   const unitSel = select;
+  const barEl = factionBar;
+  let selectedFactionId: number | null = null;
+  const PILL_ACTIVE = [
+    '!border-[var(--color-gold)]',
+    '!text-[var(--color-gold)]',
+    'bg-[color-mix(in_oklab,var(--color-gold)_12%,transparent)]',
+  ];
 
   let army: ArmyEntry[] = getArmy();
 
@@ -94,16 +100,21 @@ export function initArmyBuilder(): void {
 
   function populateFactions(): void {
     const locked = armyFaction();
-    const cur = facSel.value;
-    facSel.innerHTML = factions
-      .map((f) => `<option value="${f.id}">${factionName(f.id, f.name)}</option>`)
-      .join('');
-    facSel.value = locked !== null ? String(locked) : cur || String(factions[0]?.id ?? '');
-    facSel.disabled = locked !== null;
+    if (locked !== null) selectedFactionId = locked;
+    else if (selectedFactionId === null) selectedFactionId = factions[0]?.id ?? null;
+    for (const b of barEl.querySelectorAll<HTMLButtonElement>('button[data-faction-id]')) {
+      const id = Number(b.getAttribute('data-faction-id'));
+      const isActive = id === selectedFactionId;
+      for (const c of PILL_ACTIVE) b.classList.toggle(c, isActive);
+      const disabled = locked !== null && id !== locked;
+      b.disabled = disabled;
+      b.classList.toggle('opacity-40', disabled);
+      b.classList.toggle('cursor-not-allowed', disabled);
+    }
   }
 
   function populateUnits(): void {
-    const fid = Number(facSel.value);
+    const fid = selectedFactionId ?? -1;
     const inFaction = units
       .filter((u) => u.faction === fid)
       .sort((a, b) => unitName(a.id, a.name).localeCompare(unitName(b.id, b.name)));
@@ -196,7 +207,7 @@ export function initArmyBuilder(): void {
     setText('sum-models', String(totalModels(army)));
     renderFactions();
     populateFactions();
-    if (!facSel.disabled) populateUnits();
+    populateUnits();
   }
 
   function renderFactions(): void {
@@ -238,7 +249,15 @@ export function initArmyBuilder(): void {
     render();
   }
 
-  facSel.addEventListener('change', populateUnits);
+  barEl.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest(
+      'button[data-faction-id]',
+    ) as HTMLButtonElement | null;
+    if (!btn || btn.disabled) return;
+    selectedFactionId = Number(btn.getAttribute('data-faction-id'));
+    populateFactions();
+    populateUnits();
+  });
   unitSel.addEventListener('change', renderLoadoutConfig);
   addBtn?.addEventListener('click', add);
 
