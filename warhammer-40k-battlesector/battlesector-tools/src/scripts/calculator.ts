@@ -111,6 +111,11 @@ export function initCalculator(): void {
   const momPassive = document.getElementById('mom-passive');
   const momEffects = document.getElementById('mom-effects');
   const momNotes = document.getElementById('mom-notes');
+  const atkBuffList = document.getElementById('atk-buff-list');
+  const tgtBuffList = document.getElementById('tgt-buff-list');
+  // Stacking buffs/debuffs: multiple can be active on each side.
+  const atkBuffIds: string[] = [];
+  const tgtBuffIds: string[] = [];
 
   function describeBuff(e: BuffEffect): string {
     const parts: string[] = [];
@@ -122,25 +127,75 @@ export function initCalculator(): void {
     return parts.join(', ');
   }
 
+  const BUFF_KEYS: (keyof BuffEffect)[] = ['accuracy', 'damage', 'ap', 'armor', 'evasion'];
+
+  /** Combined effect of every active buff/debuff on one side. */
+  function sumBuffs(ids: string[], map: Map<string, Buff>): BuffEffect {
+    const e: BuffEffect = {};
+    for (const id of ids) {
+      const b = map.get(id);
+      if (!b) continue;
+      for (const k of BUFF_KEYS) {
+        const v = b.effects[k];
+        if (v) e[k] = (e[k] ?? 0) + v;
+      }
+    }
+    return e;
+  }
+
+  function renderBuffChips(ids: string[], map: Map<string, Buff>, el: HTMLElement | null): void {
+    if (!el) return;
+    el.innerHTML = ids
+      .map((id) => {
+        const b = map.get(id);
+        if (!b) return '';
+        return `<span class="chip">${b.name} (${describeBuff(b.effects)}) <button type="button" class="ml-0.5 text-[var(--color-blood)] font-bold" data-remove-buff="${id}" aria-label="remove">×</button></span>`;
+      })
+      .join('');
+  }
+
+  function addBuff(
+    ids: string[],
+    id: string,
+    map: Map<string, Buff>,
+    el: HTMLElement | null,
+  ): void {
+    if (!id || ids.includes(id)) return;
+    ids.push(id);
+    renderBuffChips(ids, map, el);
+  }
+
+  function removeBuff(
+    ids: string[],
+    id: string,
+    map: Map<string, Buff>,
+    el: HTMLElement | null,
+  ): void {
+    const i = ids.indexOf(id);
+    if (i >= 0) ids.splice(i, 1);
+    renderBuffChips(ids, map, el);
+  }
+
   function populateBuffs(): void {
-    const none = `<option value="">${t('calculator.buff.none')}</option>`;
+    const add = `<option value="">${t('calculator.buff.add')}</option>`;
+    const sorted = (list: Buff[]) => [...list].sort((a, b) => a.name.localeCompare(b.name));
     if (atkBuffSel) {
-      const cur = atkBuffSel.value;
       atkBuffSel.innerHTML =
-        none +
-        buffs.attacker
+        add +
+        sorted(buffs.attacker)
           .map((b) => `<option value="${b.id}">${b.name} (${describeBuff(b.effects)})</option>`)
           .join('');
-      atkBuffSel.value = cur;
+      atkBuffSel.value = '';
+      renderBuffChips(atkBuffIds, atkBuffById, atkBuffList);
     }
     if (tgtBuffSel) {
-      const cur = tgtBuffSel.value;
       tgtBuffSel.innerHTML =
-        none +
-        buffs.target
+        add +
+        sorted(buffs.target)
           .map((b) => `<option value="${b.id}">${b.name} (${describeBuff(b.effects)})</option>`)
           .join('');
-      tgtBuffSel.value = cur;
+      tgtBuffSel.value = '';
+      renderBuffChips(tgtBuffIds, tgtBuffById, tgtBuffList);
     }
   }
 
@@ -336,8 +391,8 @@ export function initCalculator(): void {
 
     const effDamage = Math.max(0, dmg + dmgModifier);
     const cover = Number(coverSel?.value) || 0;
-    const ab = atkBuffSel ? atkBuffById.get(atkBuffSel.value)?.effects : undefined;
-    const tb = tgtBuffSel ? tgtBuffById.get(tgtBuffSel.value)?.effects : undefined;
+    const ab = sumBuffs(atkBuffIds, atkBuffById);
+    const tb = sumBuffs(tgtBuffIds, tgtBuffById);
     const selWeapon = weaponById.get(Number(weaponSel.value));
     const isRangedW = !!selWeapon && selWeapon.isRanged && !selWeapon.isMelee;
     const mm = momentumMods(isRangedW);
@@ -425,8 +480,34 @@ export function initCalculator(): void {
     });
   }
   coverSel?.addEventListener('change', compute);
-  atkBuffSel?.addEventListener('change', compute);
-  tgtBuffSel?.addEventListener('change', compute);
+  atkBuffSel?.addEventListener('change', () => {
+    addBuff(atkBuffIds, atkBuffSel.value, atkBuffById, atkBuffList);
+    atkBuffSel.value = '';
+    compute();
+  });
+  tgtBuffSel?.addEventListener('change', () => {
+    addBuff(tgtBuffIds, tgtBuffSel.value, tgtBuffById, tgtBuffList);
+    tgtBuffSel.value = '';
+    compute();
+  });
+  atkBuffList?.addEventListener('click', (e) => {
+    const id = (e.target as HTMLElement)
+      .closest('[data-remove-buff]')
+      ?.getAttribute('data-remove-buff');
+    if (id) {
+      removeBuff(atkBuffIds, id, atkBuffById, atkBuffList);
+      compute();
+    }
+  });
+  tgtBuffList?.addEventListener('click', (e) => {
+    const id = (e.target as HTMLElement)
+      .closest('[data-remove-buff]')
+      ?.getAttribute('data-remove-buff');
+    if (id) {
+      removeBuff(tgtBuffIds, id, tgtBuffById, tgtBuffList);
+      compute();
+    }
+  });
   momentumInput.addEventListener('input', compute);
 
   document.getElementById('copy-link')?.addEventListener('click', async () => {
