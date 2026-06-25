@@ -1,8 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { clamp, damageRange } from '../../lib/combat';
+import { damageRange } from '../../lib/combat';
 import {
-  STAT_MAX,
   factionColor,
   getUnit,
   getWeapon,
@@ -52,7 +51,12 @@ const defenseStats = [
 const mobilityStats = [
   { key: 'common.movement', label: 'Movement', value: unit.maxMovementPoints },
   { key: 'common.actionPoints', label: 'Action Points', value: unit.maxActionPoints },
-  { key: 'common.unitHeight', label: 'Unit Height', value: unit.unitHeight },
+  {
+    key: 'common.unitHeight',
+    label: 'Unit Height',
+    value: unit.unitHeight,
+    tip: 'Model height, used for cover and line-of-sight: taller units can see and shoot over low cover, and cover effectiveness depends on the relative heights of shooter, cover and target.',
+  },
 ];
 
 const combatStats = [
@@ -86,40 +90,31 @@ const vitals = [
     key: 'common.health',
     label: 'Health',
     value: unit.totalHealth,
-    pct: clamp((unit.totalHealth / STAT_MAX.health) * 100, 0, 100),
-    color: 'linear-gradient(180deg,var(--color-hp),var(--color-hp-dim))',
+    accent: 'var(--color-hp)',
   },
   {
     key: 'common.armor',
     label: 'Armor',
     value: unit.armorProfile === 1 ? unit.armorFront : unit.armor,
-    pct: clamp(
-      ((unit.armorProfile === 1 ? unit.armorFront : unit.armor) / STAT_MAX.armor) * 100,
-      0,
-      100,
-    ),
-    color: 'linear-gradient(180deg,var(--color-shield),var(--color-momentum-dim))',
+    accent: 'var(--color-shield)',
   },
   {
     key: 'common.evasion',
     label: 'Evasion',
     value: unit.evasion,
-    pct: clamp((unit.evasion / STAT_MAX.evasion) * 100, 0, 100),
-    color: 'linear-gradient(90deg,var(--color-gold-dim),var(--color-gold))',
+    accent: 'var(--color-gold)',
   },
   {
     key: 'common.movement',
     label: 'Movement',
     value: unit.maxMovementPoints,
-    pct: clamp((unit.maxMovementPoints / STAT_MAX.movement) * 100, 0, 100),
-    color: 'linear-gradient(90deg,var(--color-gold-dim),var(--color-gold))',
+    accent: 'var(--color-ink)',
   },
   {
     key: 'common.actionPoints',
     label: 'Action Points',
     value: unit.maxActionPoints,
-    pct: clamp((unit.maxActionPoints / STAT_MAX.actionPoints) * 100, 0, 100),
-    color: 'linear-gradient(90deg,var(--color-gold-dim),var(--color-gold))',
+    accent: 'var(--color-ink)',
   },
 ];
 ---
@@ -189,14 +184,11 @@ const vitals = [
 
   <!-- Vitals -->
   <section class="surface p-5 md:p-6 mt-4">
-    <div class="grid gap-x-6 gap-y-4 sm:grid-cols-2 lg:grid-cols-5">
+    <div class="grid gap-x-6 gap-y-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
       {vitals.map((v) => (
-        <div>
-          <div class="flex items-baseline justify-between mb-1.5">
-            <span class="label" data-i18n-ui={v.key}>{v.label}</span>
-            <span class="font-bold tabular-nums">{v.value}</span>
-          </div>
-          <div class="statbar"><span style={`width:${v.pct}%;background:${v.color}`}></span></div>
+        <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] px-3 py-2.5 text-center">
+          <p class="text-2xl font-black tabular-nums" style={`color:${v.accent}`}>{v.value}</p>
+          <p class="label mt-1" data-i18n-ui={v.key}>{v.label}</p>
         </div>
       ))}
     </div>
@@ -209,7 +201,10 @@ const vitals = [
       </div>
       <div class="flex flex-wrap gap-1">
         {Array.from({ length: Math.min(unit.members, 40) }).map(() => (
-          <div class="hud-bar !h-3.5 grow basis-8"><span class="fill hp" style="width:100%"></span></div>
+          <div class="hud-bar !h-5 grow basis-10">
+            <span class="fill hp" style="width:100%"></span>
+            <span class="label">{unit.maxHealth}</span>
+          </div>
         ))}
       </div>
     </div>
@@ -250,7 +245,14 @@ const vitals = [
       <dl class="space-y-2.5">
         {mobilityStats.map((s) => (
           <div class="flex items-baseline justify-between gap-3">
-            <dt class="text-sm text-[var(--color-muted)]" data-i18n-ui={s.key}>{s.label}</dt>
+            <dt
+              class:list={[
+                'text-sm text-[var(--color-muted)]',
+                'tip' in s && s.tip ? 'underline decoration-dotted cursor-help' : '',
+              ]}
+              title={'tip' in s ? s.tip : undefined}
+              data-i18n-ui={s.key}
+            >{s.label}</dt>
             <dd class="font-bold tabular-nums">{s.value}</dd>
           </div>
         ))}
@@ -299,8 +301,14 @@ const vitals = [
                       <span class="min-w-0">
                         <span class="font-semibold text-sm truncate block" data-i18n-weapon={opt.weaponId} data-i18n-fallback={opt.name}>{opt.name}</span>
                         {w && (
-                          <span class="text-xs text-[var(--color-faint)]">
-                            {damageRange(w.damage).min}–{damageRange(w.damage).max} <span data-i18n-ui="common.damageShort">dmg</span>{w.numAttacks > 1 ? ` ×${w.numAttacks}` : ''} · {w.accuracy}% <span data-i18n-ui="common.accuracyShort">acc</span>
+                          <span class="text-xs text-[var(--color-faint)] flex flex-wrap items-center gap-x-2 gap-y-0.5 mt-0.5">
+                            <span class={`chip !py-0 !px-1.5 text-[9px] ${w.isMelee ? '!text-[var(--color-blood)]' : '!text-[var(--color-plasma)]'}`} data-i18n-ui={w.isMelee ? 'common.melee' : 'common.ranged'}>{w.isMelee ? 'Melee' : 'Ranged'}</span>
+                            <span>{damageRange(w.damage).min}–{damageRange(w.damage).max} <span data-i18n-ui="common.damageShort">dmg</span>{w.numAttacks > 1 ? ` ×${w.numAttacks}` : ''}</span>
+                            <span>{w.accuracy}% <span data-i18n-ui="common.accuracyShort">acc</span></span>
+                            {w.armorPiercing > 0 && <span>AP {w.armorPiercing}</span>}
+                            {!w.isMelee && w.rangeMax > 0 && (
+                              <span>{w.rangeMin}–{w.rangeMax} <span data-i18n-ui="calculator.range.tiles">tiles</span> (<span data-i18n-ui="calculator.range.optimal">opt</span> {w.rangeOptimal})</span>
+                            )}
                           </span>
                         )}
                       </span>
