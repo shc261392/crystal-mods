@@ -67,6 +67,13 @@ export interface Weapon {
   accuracyFalloff: number;
   damageFalloff: number;
   ignoresRangePenalty: boolean;
+  icon?: string;
+  pistol?: boolean;
+  impactType?: 'single' | 'tile' | 'splash';
+  splashModels?: number;
+  splashFalloff?: number;
+  splashHeavyAll?: boolean;
+  targetType?: 'redistribute' | 'fixedPerMember' | 'fixedEntireUnit';
 }
 
 export interface Faction {

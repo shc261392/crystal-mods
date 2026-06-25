@@ -1,6 +1,15 @@
 name = "battlesector-tools"
 compatibility_date = "2025-01-01"
 
+# Keep the workers.dev URL live alongside the custom domain below.
+workers_dev = true
+
+# Custom domain (Cloudflare-managed). The zone crystalgametools.org must live in
+# the same Cloudflare account; wrangler provisions the DNS record + TLS cert.
+routes = [
+  { pattern = "wh40k-battlesector.crystalgametools.org", custom_domain = true },
+]
+
 # Deployed as a Cloudflare Worker with Static Assets (NOT Cloudflare Pages).
 # The built Astro site in ./dist is served directly by the Worker assets runtime.
 [assets]

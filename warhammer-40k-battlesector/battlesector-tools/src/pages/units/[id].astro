@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import { getFactionPassive, passiveEffectLines } from '../../lib/abilities';
 import { damageRange } from '../../lib/combat';
 import {
   factionColor,
@@ -14,6 +15,7 @@ import {
   getFactionEmblem,
   getStatIcon,
   getUnitPortrait,
+  getWeaponPortrait,
   getWeaponTypeIcon,
 } from '../../scripts/images';
 
@@ -89,6 +91,11 @@ const accent = factionColor(unit.factionName);
 const portrait = getUnitPortrait(unit.name, unit.portrait);
 const emblem = getFactionEmblem(unit.faction);
 const heroImage = portrait ?? emblem;
+
+// Faction momentum passive (verified). Shown first in the Abilities section.
+const factionPassive = getFactionPassive(unit.faction);
+const passiveLines = factionPassive ? passiveEffectLines(factionPassive) : [];
+const passiveNote = factionPassive?.note ?? factionPassive?.conditional?.note ?? null;
 
 const vitals = [
   {
@@ -197,11 +204,13 @@ const vitals = [
     <div class="grid gap-x-6 gap-y-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
       {vitals.map((v) => (
         <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] px-3 py-2.5 text-center">
-          {getStatIcon(v.stat) && (
-            <img src={getStatIcon(v.stat)} alt="" width="22" height="22" loading="lazy" class="w-5 h-5 mx-auto mb-1 object-contain opacity-90" />
-          )}
-          <p class="text-2xl font-black tabular-nums" style={`color:${v.accent}`}>{v.value}</p>
-          <p class="label mt-1" data-i18n-ui={v.key}>{v.label}</p>
+          <div class="flex items-center justify-center gap-1.5">
+            {getStatIcon(v.stat) && (
+              <img src={getStatIcon(v.stat)} alt="" width="22" height="22" loading="lazy" class="w-5 h-5 shrink-0 object-contain opacity-90" />
+            )}
+            <p class="label" data-i18n-ui={v.key}>{v.label}</p>
+          </div>
+          <p class="text-2xl font-black tabular-nums mt-1" style={`color:${v.accent}`}>{v.value}</p>
         </div>
       ))}
     </div>
@@ -285,6 +294,34 @@ const vitals = [
     </section>
   </div>
 
+  <!-- Abilities -->
+  {factionPassive && (
+    <section class="surface p-5 md:p-6 mt-4">
+      <h2 class="text-lg font-bold mb-4" data-i18n-ui="unitDetail.section.abilities">Abilities</h2>
+      <div class="rounded-lg bg-[var(--color-base)] border border-[var(--color-border)] p-4">
+        <div class="flex items-start gap-3">
+          {emblem && (
+            <img src={emblem} alt="" width="40" height="40" loading="lazy" class="w-10 h-10 shrink-0 object-contain rounded bg-black/30 border border-[var(--color-border)] p-1" />
+          )}
+          <div class="min-w-0">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="font-bold">{factionPassive.passive}</span>
+              <span class="chip !py-0 !px-1.5 text-[9px] !text-[var(--color-gold-dim)]" data-i18n-ui="unitDetail.factionPassive">Faction passive</span>
+            </div>
+            {passiveLines.length > 0 && (
+              <ul class="mt-1.5 text-sm text-[var(--color-muted)] space-y-0.5">
+                {passiveLines.map((line) => <li>{line}</li>)}
+              </ul>
+            )}
+            {passiveNote && (
+              <p class="mt-1.5 text-xs text-[var(--color-faint)]">{passiveNote}</p>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
   <!-- Weapon loadout -->
   {unit.weaponSlots.length > 0 && (
     <section class="surface p-5 md:p-6 mt-4">
@@ -301,15 +338,15 @@ const vitals = [
             <div class="grid gap-2 sm:grid-cols-2">
               {slot.options.map((opt) => {
                 const w = getWeapon(opt.weaponId);
-                const typeIcon = w ? getWeaponTypeIcon(w.isMelee) : null;
+                const wIcon = w ? (getWeaponPortrait(w.icon) ?? getWeaponTypeIcon(w.isMelee)) : null;
                 return (
                   <a
                     href={w ? `/weapons/${weaponSlug(w)}` : '#'}
                     class="flex items-center justify-between gap-3 rounded-lg bg-[var(--color-base)] border border-[var(--color-border)] px-3.5 py-2.5 hover:border-[var(--color-border-strong)] transition-colors"
                   >
                     <span class="flex items-center gap-2.5 min-w-0">
-                      {typeIcon && (
-                        <img src={typeIcon} alt="" width="22" height="22" loading="lazy" class="w-5 h-5 shrink-0 object-contain opacity-80" />
+                      {wIcon && (
+                        <img src={wIcon} alt="" width="28" height="28" loading="lazy" class="w-7 h-7 shrink-0 object-contain rounded bg-black/30 border border-[var(--color-border)] p-0.5" />
                       )}
                       <span class="min-w-0">
                         <span class="font-semibold text-sm truncate block" data-i18n-weapon={opt.weaponId} data-i18n-fallback={opt.name}>{opt.name}</span>
@@ -317,8 +354,11 @@ const vitals = [
                           <span class="text-xs text-[var(--color-faint)] flex flex-wrap items-center gap-x-2 gap-y-0.5 mt-0.5">
                             <span class={`chip !py-0 !px-1.5 text-[9px] ${w.isMelee ? '!text-[var(--color-blood)]' : '!text-[var(--color-plasma)]'}`} data-i18n-ui={w.isMelee ? 'common.melee' : 'common.ranged'}>{w.isMelee ? 'Melee' : 'Ranged'}</span>
                             <span>{damageRange(w.damage).min}–{damageRange(w.damage).max} <span data-i18n-ui="common.damageShort">dmg</span>{w.numAttacks > 1 ? ` ×${w.numAttacks}` : ''}</span>
-                            <span>{w.accuracy}% <span data-i18n-ui="common.accuracyShort">acc</span></span>
+                            <span>{w.isMelee && w.accuracy <= 0 ? unit.meleeAccuracy : w.accuracy}% <span data-i18n-ui="common.accuracyShort">acc</span></span>
                             {w.armorPiercing > 0 && <span>AP {w.armorPiercing}</span>}
+                            {w.impactType === 'splash' && (w.splashModels ?? 0) > 1 && (
+                              <span class="!text-[var(--color-plasma)]"><span data-i18n-ui="common.splash">Splash</span> ×{w.splashModels}</span>
+                            )}
                             {!w.isMelee && w.rangeMax > 0 && (
                               <span>{w.rangeMin}–{w.rangeMax} <span data-i18n-ui="calculator.range.tiles">tiles</span> (<span data-i18n-ui="calculator.range.optimal">opt</span> {w.rangeOptimal})</span>
                             )}

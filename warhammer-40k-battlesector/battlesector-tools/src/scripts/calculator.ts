@@ -101,7 +101,7 @@ export function initCalculator(): void {
   const dmgmod = $('dmgmod');
   const curhp = $('curhp');
   const lost = $('lost');
-  const coverSel = document.getElementById('cover') as HTMLSelectElement | null;
+  const coverSel = document.getElementById('cover') as HTMLInputElement | null;
   const atkBuffSel = document.getElementById('atk-buff') as HTMLSelectElement | null;
   const tgtBuffSel = document.getElementById('tgt-buff') as HTMLSelectElement | null;
   const distance = $('distance');
@@ -355,10 +355,14 @@ export function initCalculator(): void {
     const w = weapons.find((x) => x.id === id);
     if (!w) return;
     damage.value = String(w.damage);
-    accuracy.value = String(w.accuracy);
-    ap.value = String(w.armorPiercing);
     // Total shots = the weapon's Attacks x every model in the attacking squad.
     const au = units.find((x) => x.id === Number(attackerUnitSel.value));
+    // Melee weapons carry no own accuracy (they hit with the wielder's
+    // MeleeAccuracy). Use the weapon's accuracy when it has one, otherwise fall
+    // back to the attacker's melee accuracy so the hit chance is never 0%.
+    const meleeAcc = au && au.meleeAccuracy > 0 ? au.meleeAccuracy : 85;
+    accuracy.value = String(w.isMelee && w.accuracy <= 0 ? meleeAcc : w.accuracy);
+    ap.value = String(w.armorPiercing);
     const models = au ? Math.max(1, au.members) : 1;
     shots.value = String(Math.max(1, w.numAttacks) * models);
   }
@@ -390,7 +394,11 @@ export function initCalculator(): void {
     const frontHp = curhp.value === '' ? hp : Math.max(0, Math.min(hp, Number(curhp.value) || 0));
 
     const effDamage = Math.max(0, dmg + dmgModifier);
+    // Cover level 0..4 (none, 1/4, 1/2, 3/4, full). Cover reduces the attacker's
+    // accuracy; full cover (4) blocks the attack entirely.
     const cover = Number(coverSel?.value) || 0;
+    const coverAccPenalty = [0, 15, 30, 45, 0][cover] ?? 0;
+    const blocked = cover >= 4;
     const ab = sumBuffs(atkBuffIds, atkBuffById);
     const tb = sumBuffs(tgtBuffIds, tgtBuffById);
     const selWeapon = weaponById.get(Number(weaponSel.value));
@@ -398,12 +406,12 @@ export function initCalculator(): void {
     const mm = momentumMods(isRangedW);
     const finalDamage = Math.max(0, (effDamage + (ab?.damage ?? 0)) * mm.dmgFactor);
     const finalAp = pierce + (ab?.ap ?? 0) + mm.apAdd;
-    const finalArmor = Math.max(0, arm + cover + (tb?.armor ?? 0));
+    const finalArmor = Math.max(0, arm + (tb?.armor ?? 0));
     const finalEva = eva + (tb?.evasion ?? 0);
-    const finalAcc = acc + (ab?.accuracy ?? 0) + mm.accAdd;
+    const finalAcc = acc + (ab?.accuracy ?? 0) + mm.accAdd - coverAccPenalty;
     const perHit = damagePerHit(finalDamage);
     const dr = damageRange(finalDamage);
-    const hit = hitChance(finalAcc, mod, finalEva);
+    const hit = blocked ? 0 : hitChance(finalAcc, mod, finalEva);
     const graze = grazeChance(finalAp, finalArmor);
     const crit = critChance(0, finalAp, finalArmor);
     const perAttack = perHit * shotCount;
@@ -417,7 +425,7 @@ export function initCalculator(): void {
     const remainingHp = Math.max(0, currentHp - expected);
 
     setText('r-perhit', `${dr.min}\u2013${dr.max}`);
-    setText('r-hit', `${Math.round(hit)}%`);
+    setText('r-hit', blocked ? t('calculator.cover.blocked') : `${Math.round(hit)}%`);
     setText('r-crit', `${Math.round(crit)}%`);
     setText('r-graze', `${Math.round(graze)}%`);
     setText('r-attack', `${dr.min * shotCount}\u2013${dr.max * shotCount}`);
@@ -480,6 +488,21 @@ export function initCalculator(): void {
     });
   }
   coverSel?.addEventListener('change', compute);
+  // Cover is chosen via a segmented-shield button group backed by the hidden
+  // #cover input.
+  const coverGroup = document.getElementById('cover-group');
+  const coverButtons = coverGroup?.querySelectorAll<HTMLButtonElement>('.cover-btn');
+  if (coverButtons) {
+    for (const btn of coverButtons) {
+      btn.addEventListener('click', () => {
+        if (coverSel) coverSel.value = btn.getAttribute('data-cover') ?? '0';
+        for (const b of coverButtons) {
+          b.setAttribute('aria-checked', b === btn ? 'true' : 'false');
+        }
+        compute();
+      });
+    }
+  }
   atkBuffSel?.addEventListener('change', () => {
     addBuff(atkBuffIds, atkBuffSel.value, atkBuffById, atkBuffList);
     atkBuffSel.value = '';

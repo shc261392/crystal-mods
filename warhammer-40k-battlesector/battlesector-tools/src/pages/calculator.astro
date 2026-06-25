@@ -1,4 +1,5 @@
 ---
+import CoverShield from '../components/CoverShield.astro';
 import Base from '../layouts/Base.astro';
 ---
 
@@ -163,22 +164,38 @@ import Base from '../layouts/Base.astro';
     </section>
   </div>
 
-  <!-- Battlefield modifiers (real data: cover armor + buff presets + range info) -->
+  <!-- Battlefield modifiers (real data: cover accuracy penalty + buff presets + range info) -->
   <section class="surface p-5 mt-4">
     <h2 class="text-lg font-bold mb-1" data-i18n-ui="calculator.section.battlefield">Battlefield modifiers</h2>
     <p class="text-sm text-[var(--color-faint)] mb-4" data-i18n-ui="calculator.section.battlefieldNote">
-      Cover applies the real ranged-armor bonus and buff presets use real in-game stat
-      changes. Distance shows the weapon's real range; the exact accuracy penalty from
-      cover/distance isn't applied because that formula lives in native game code.
+      Cover reduces the attacker's accuracy; full cover blocks the attack entirely. Buff
+      presets use real in-game stat changes, and distance shows the weapon's real range.
     </p>
     <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-      <div>
-        <label class="label block mb-1.5" for="cover" data-i18n-ui="calculator.adv.cover">Cover</label>
-        <select id="cover" class="select">
-          <option value="0" data-i18n-ui="calculator.cover.none">None</option>
-          <option value="1" data-i18n-ui="calculator.cover.light">Light (+1 ranged armor)</option>
-          <option value="2" data-i18n-ui="calculator.cover.heavy">Heavy (+2 ranged armor)</option>
-        </select>
+      <div class="sm:col-span-2 lg:col-span-4">
+        <span class="label block mb-1.5" data-i18n-ui="calculator.adv.cover">Cover</span>
+        <input type="hidden" id="cover" value="0" />
+        <div id="cover-group" class="flex flex-wrap gap-2" role="radiogroup">
+          <button type="button" class="cover-btn" data-cover="0" aria-checked="true">
+            <span class="text-xs font-semibold" data-i18n-ui="calculator.cover.none">None</span>
+          </button>
+          <button type="button" class="cover-btn" data-cover="1" aria-checked="false">
+            <CoverShield level={1} size={22} />
+            <span class="text-xs font-semibold">¼ <span class="text-[var(--color-faint)]">−15%</span></span>
+          </button>
+          <button type="button" class="cover-btn" data-cover="2" aria-checked="false">
+            <CoverShield level={2} size={22} />
+            <span class="text-xs font-semibold">½ <span class="text-[var(--color-faint)]">−30%</span></span>
+          </button>
+          <button type="button" class="cover-btn" data-cover="3" aria-checked="false">
+            <CoverShield level={3} size={22} />
+            <span class="text-xs font-semibold">¾ <span class="text-[var(--color-faint)]">−45%</span></span>
+          </button>
+          <button type="button" class="cover-btn" data-cover="4" aria-checked="false">
+            <CoverShield level={4} size={22} />
+            <span class="text-xs font-semibold" data-i18n-ui="calculator.cover.full">Full</span>
+          </button>
+        </div>
       </div>
       <div>
         <label class="label block mb-1.5" for="atk-buff" data-i18n-ui="calculator.buff.attacker">Attacker buff</label>

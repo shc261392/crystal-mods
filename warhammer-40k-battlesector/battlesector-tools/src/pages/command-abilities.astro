@@ -1,0 +1,108 @@
+---
+import commandRows from '../data/command-hq-abilities.json';
+import Base from '../layouts/Base.astro';
+import { unitSlug, units } from '../lib/data';
+
+interface CommandRow {
+  id: number;
+  category: string;
+  text: string;
+}
+
+const rows = (commandRows as CommandRow[]).map((r) => ({
+  ...r,
+  text: r.text.replace(/<[^>]+>/g, '').trim(),
+}));
+
+const hqUnits = units.filter((u) => u.roleName === 'HQ');
+const byFaction = new Map<
+  string,
+  {
+    faction: string;
+    unitCount: number;
+    abilities: number[];
+    units: { id: number; name: string; slug: string }[];
+  }
+>();
+
+for (const u of hqUnits) {
+  const current = byFaction.get(u.factionName) ?? {
+    faction: u.factionName,
+    unitCount: 0,
+    abilities: [],
+    units: [],
+  };
+  current.unitCount += 1;
+  current.units.push({ id: u.id, name: u.name, slug: unitSlug(u) });
+  for (const aid of u.abilityIds) {
+    if (!current.abilities.includes(aid)) current.abilities.push(aid);
+  }
+  byFaction.set(u.factionName, current);
+}
+
+const factions = [...byFaction.values()]
+  .map((f) => ({ ...f, abilities: [...f.abilities].sort((a, b) => a - b) }))
+  .sort((a, b) => a.faction.localeCompare(b.faction));
+---
+
+<Base
+  title="Command / HQ Abilities"
+  description="Research view for command and HQ abilities in Battlesector, with verified command-related text and faction HQ ability ID sets."
+  path="/command-abilities"
+>
+  <header class="mb-6">
+    <p class="eyebrow mb-2">Research</p>
+    <h1 class="text-3xl md:text-4xl font-black">Command / HQ Abilities</h1>
+    <p class="mt-2 text-[var(--color-muted)] max-w-3xl">
+      Verified from extracted game text tables and HQ unit records. This page is a
+      browse/reference tab for ongoing command-ability research.
+    </p>
+  </header>
+
+  <section class="surface p-5 md:p-6">
+    <h2 class="text-lg font-bold mb-3">HQ units by faction (ability ID coverage)</h2>
+    <p class="text-sm text-[var(--color-faint)] mb-4">
+      Source: <code>src/data/units.json</code>. IDs below are the exact ability IDs linked to each faction's HQ units.
+    </p>
+    <div class="grid gap-3 md:grid-cols-2">
+      {factions.map((f) => (
+        <article class="rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] p-3.5">
+          <div class="flex items-center justify-between gap-2 mb-2">
+            <h3 class="font-bold">{f.faction}</h3>
+            <span class="chip !text-[var(--color-gold-dim)]">{f.unitCount} HQ units</span>
+          </div>
+          <p class="text-xs text-[var(--color-faint)] mb-2">Units</p>
+          <div class="flex flex-wrap gap-1.5 mb-3">
+            {f.units.map((u) => (
+              <a href={`/units/${u.slug}`} class="chip hover:!text-[var(--color-gold)]">{u.name}</a>
+            ))}
+          </div>
+          <p class="text-xs text-[var(--color-faint)] mb-1.5">Ability IDs ({f.abilities.length})</p>
+          <div class="flex flex-wrap gap-1.5">
+            {f.abilities.map((id) => (
+              <span class="chip !py-0.5 !px-1.5 text-[10px]">{id}</span>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="surface p-5 md:p-6 mt-4">
+    <h2 class="text-lg font-bold mb-3">Verified command/HQ text entries</h2>
+    <p class="text-sm text-[var(--color-faint)] mb-4">
+      Source: extracted localization table entries filtered by command/HQ terms.
+    </p>
+    <div class="space-y-2.5">
+      {rows.map((r) => (
+        <article class="rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] px-3.5 py-3">
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="chip !py-0.5 !px-1.5 text-[10px]">ID {r.id}</span>
+            <span class="text-xs text-[var(--color-faint)]">{r.category}</span>
+          </div>
+          <p class="text-sm text-[var(--color-muted)]">{r.text}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</Base>

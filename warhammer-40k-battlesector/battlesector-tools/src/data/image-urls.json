@@ -3586,6 +3586,1871 @@
       "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/BolterShells_D.png",
       "r2_key": "weapons/BolterShells_D.png",
       "source": "sharedassets9.assets"
+    },
+    "UI_WPN_ADS_BBL_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_BBL_Icon.png",
+      "r2_key": "weapons/UI_WPN_ADS_BBL_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_BOL_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_BOL_Icon.png",
+      "r2_key": "weapons/UI_WPN_ADS_BOL_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_BPL_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_BPL_Icon.png",
+      "r2_key": "weapons/UI_WPN_ADS_BPL_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_BZB_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_BZB_Icon.png",
+      "r2_key": "weapons/UI_WPN_ADS_BZB_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_CBG_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_CBG_Icon.png",
+      "r2_key": "weapons/UI_WPN_ADS_CBG_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_CSW_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_CSW_Icon.png",
+      "r2_key": "weapons/UI_WPN_ADS_CSW_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_CastigatorAutocannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_CastigatorAutocannon.png",
+      "r2_key": "weapons/UI_WPN_ADS_CastigatorAutocannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_CastigatorBattlecannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_CastigatorBattlecannon.png",
+      "r2_key": "weapons/UI_WPN_ADS_CastigatorBattlecannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_CastigatorHeavyBolter": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_CastigatorHeavyBolter.png",
+      "r2_key": "weapons/UI_WPN_ADS_CastigatorHeavyBolter.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_EXM": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_EXM.png",
+      "r2_key": "weapons/UI_WPN_ADS_EXM.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_FIL": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_FIL.png",
+      "r2_key": "weapons/UI_WPN_ADS_FIL.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_FLA": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_FLA.png",
+      "r2_key": "weapons/UI_WPN_ADS_FLA.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_HFL_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_HFL_Icon.png",
+      "r2_key": "weapons/UI_WPN_ADS_HFL_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_HLM": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_HLM.png",
+      "r2_key": "weapons/UI_WPN_ADS_HLM.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_HVB": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_HVB.png",
+      "r2_key": "weapons/UI_WPN_ADS_HVB.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_HVF": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_HVF.png",
+      "r2_key": "weapons/UI_WPN_ADS_HVF.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_INF_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_INF_Icon.png",
+      "r2_key": "weapons/UI_WPN_ADS_INF_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_MEL": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_MEL.png",
+      "r2_key": "weapons/UI_WPN_ADS_MEL.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_MME": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_MME.png",
+      "r2_key": "weapons/UI_WPN_ADS_MME.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_PEN": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_PEN.png",
+      "r2_key": "weapons/UI_WPN_ADS_PEN.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_PLP_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_PLP_Icon.png",
+      "r2_key": "weapons/UI_WPN_ADS_PLP_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_PWS_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_PWS_Icon.png",
+      "r2_key": "weapons/UI_WPN_ADS_PWS_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_ParagonBolter": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_ParagonBolter.png",
+      "r2_key": "weapons/UI_WPN_ADS_ParagonBolter.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_ParagonFlamer": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_ParagonFlamer.png",
+      "r2_key": "weapons/UI_WPN_ADS_ParagonFlamer.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_ParagonMultimelta": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_ParagonMultimelta.png",
+      "r2_key": "weapons/UI_WPN_ADS_ParagonMultimelta.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_ParagonSword": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_ParagonSword.png",
+      "r2_key": "weapons/UI_WPN_ADS_ParagonSword.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_Rhino": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_Rhino.png",
+      "r2_key": "weapons/UI_WPN_ADS_Rhino.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_StormBolter": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_StormBolter.png",
+      "r2_key": "weapons/UI_WPN_ADS_StormBolter.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_TBO": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_TBO.png",
+      "r2_key": "weapons/UI_WPN_ADS_TBO.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_TFL": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_TFL.png",
+      "r2_key": "weapons/UI_WPN_ADS_TFL.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_THF_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_THF_Icon.png",
+      "r2_key": "weapons/UI_WPN_ADS_THF_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_TMM": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_TMM.png",
+      "r2_key": "weapons/UI_WPN_ADS_TMM.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ADS_Tank_HVB": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ADS_Tank_HVB.png",
+      "r2_key": "weapons/UI_WPN_ADS_Tank_HVB.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_AutoCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_AutoCannon.png",
+      "r2_key": "weapons/UI_WPN_AM_AutoCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_BoltPistol": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_BoltPistol.png",
+      "r2_key": "weapons/UI_WPN_AM_BoltPistol.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_CastigatorGattlingCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_CastigatorGattlingCannon.png",
+      "r2_key": "weapons/UI_WPN_AM_CastigatorGattlingCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_Chainsword": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_Chainsword.png",
+      "r2_key": "weapons/UI_WPN_AM_Chainsword.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_ChimeraHeavyBolter": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_ChimeraHeavyBolter.png",
+      "r2_key": "weapons/UI_WPN_AM_ChimeraHeavyBolter.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_ChimeraHeavyFlamer": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_ChimeraHeavyFlamer.png",
+      "r2_key": "weapons/UI_WPN_AM_ChimeraHeavyFlamer.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_ChimeraMultiLaser": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_ChimeraMultiLaser.png",
+      "r2_key": "weapons/UI_WPN_AM_ChimeraMultiLaser.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_DemolisherCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_DemolisherCannon.png",
+      "r2_key": "weapons/UI_WPN_AM_DemolisherCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_DozerBlades": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_DozerBlades.png",
+      "r2_key": "weapons/UI_WPN_AM_DozerBlades.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_EarthshakerCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_EarthshakerCannon.png",
+      "r2_key": "weapons/UI_WPN_AM_EarthshakerCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_ForceStaff": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_ForceStaff.png",
+      "r2_key": "weapons/UI_WPN_AM_ForceStaff.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_HeavyBolterI_RogalDorn": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_HeavyBolterI_RogalDorn.png",
+      "r2_key": "weapons/UI_WPN_AM_HeavyBolterI_RogalDorn.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_HeavyBolter_LemanRuss": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_HeavyBolter_LemanRuss.png",
+      "r2_key": "weapons/UI_WPN_AM_HeavyBolter_LemanRuss.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_HeavyFlamer_ArmoredSentinel": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_HeavyFlamer_ArmoredSentinel.png",
+      "r2_key": "weapons/UI_WPN_AM_HeavyFlamer_ArmoredSentinel.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_HeavyFlamer_LemanRuss": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_HeavyFlamer_LemanRuss.png",
+      "r2_key": "weapons/UI_WPN_AM_HeavyFlamer_LemanRuss.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_HeavyStubbers": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_HeavyStubbers.png",
+      "r2_key": "weapons/UI_WPN_AM_HeavyStubbers.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_HotShotLasgun": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_HotShotLasgun.png",
+      "r2_key": "weapons/UI_WPN_AM_HotShotLasgun.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_HotShotVolleyGun": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_HotShotVolleyGun.png",
+      "r2_key": "weapons/UI_WPN_AM_HotShotVolleyGun.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_LasPistol": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_LasPistol.png",
+      "r2_key": "weapons/UI_WPN_AM_LasPistol.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_Lascannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_Lascannon.png",
+      "r2_key": "weapons/UI_WPN_AM_Lascannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_Lasgun": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_Lasgun.png",
+      "r2_key": "weapons/UI_WPN_AM_Lasgun.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_LasgunBayonet": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_LasgunBayonet.png",
+      "r2_key": "weapons/UI_WPN_AM_LasgunBayonet.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_Lasgun_LemanRuss": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_Lasgun_LemanRuss.png",
+      "r2_key": "weapons/UI_WPN_AM_Lasgun_LemanRuss.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_Lasgun_NB": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_Lasgun_NB.png",
+      "r2_key": "weapons/UI_WPN_AM_Lasgun_NB.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_LemanRussBattleCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_LemanRussBattleCannon.png",
+      "r2_key": "weapons/UI_WPN_AM_LemanRussBattleCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_MissileLauncherFrag": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_MissileLauncherFrag.png",
+      "r2_key": "weapons/UI_WPN_AM_MissileLauncherFrag.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_MissileLauncherKrak": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_MissileLauncherKrak.png",
+      "r2_key": "weapons/UI_WPN_AM_MissileLauncherKrak.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_MultiLaser": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_MultiLaser.png",
+      "r2_key": "weapons/UI_WPN_AM_MultiLaser.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_Multimelta": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_Multimelta.png",
+      "r2_key": "weapons/UI_WPN_AM_Multimelta.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_OppressorCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_OppressorCannon.png",
+      "r2_key": "weapons/UI_WPN_AM_OppressorCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_PlasmaCannon_ArmoredSentinel": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_PlasmaCannon_ArmoredSentinel.png",
+      "r2_key": "weapons/UI_WPN_AM_PlasmaCannon_ArmoredSentinel.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_PlasmaCannon_LemanRuss": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_PlasmaCannon_LemanRuss.png",
+      "r2_key": "weapons/UI_WPN_AM_PlasmaCannon_LemanRuss.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_PlasmaPistol": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_PlasmaPistol.png",
+      "r2_key": "weapons/UI_WPN_AM_PlasmaPistol.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_PowerFist": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_PowerFist.png",
+      "r2_key": "weapons/UI_WPN_AM_PowerFist.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_PowerSword": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_PowerSword.png",
+      "r2_key": "weapons/UI_WPN_AM_PowerSword.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_PulveriserCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_PulveriserCannon.png",
+      "r2_key": "weapons/UI_WPN_AM_PulveriserCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_PunisherCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_PunisherCannon.png",
+      "r2_key": "weapons/UI_WPN_AM_PunisherCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_RipperGun": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_RipperGun.png",
+      "r2_key": "weapons/UI_WPN_AM_RipperGun.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_RipperGunBayonet": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_RipperGunBayonet.png",
+      "r2_key": "weapons/UI_WPN_AM_RipperGunBayonet.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_TwinBattleCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_TwinBattleCannon.png",
+      "r2_key": "weapons/UI_WPN_AM_TwinBattleCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_AM_VanquisherCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_AM_VanquisherCannon.png",
+      "r2_key": "weapons/UI_WPN_AM_VanquisherCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_ABR_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_ABR_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_ABR_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_ACM_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_ACM_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_ACM_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_API_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_API_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_API_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_ASB_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_ASB_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_ASB_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_AngelusBoltgunSanguinaryGuard": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_AngelusBoltgunSanguinaryGuard.png",
+      "r2_key": "weapons/UI_WPN_BLA_AngelusBoltgunSanguinaryGuard.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_BPB_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_BPB_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_BPB_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_BRF_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_BRF_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_BRF_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_Boltstorm": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_Boltstorm.png",
+      "r2_key": "weapons/UI_WPN_BLA_Boltstorm.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_BoltstormMelee": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_BoltstormMelee.png",
+      "r2_key": "weapons/UI_WPN_BLA_BoltstormMelee.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_CSW_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_CSW_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_CSW_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_DEA_BPL_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_DEA_BPL_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_DEA_BPL_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_DEA_CSW_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_DEA_CSW_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_DEA_CSW_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_DEA_INF_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_DEA_INF_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_DEA_INF_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_DreadBolter_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_DreadBolter_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_DreadBolter_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_DreadFlamer_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_DreadFlamer_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_DreadFlamer_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_DreadInferno_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_DreadInferno_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_DreadInferno_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_EncarmineAxeSanguinaryGuard": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_EncarmineAxeSanguinaryGuard.png",
+      "r2_key": "weapons/UI_WPN_BLA_EncarmineAxeSanguinaryGuard.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_EncarmineSwordSanguinaryGuard": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_EncarmineSwordSanguinaryGuard.png",
+      "r2_key": "weapons/UI_WPN_BLA_EncarmineSwordSanguinaryGuard.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_FSW_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_FSW_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_FSW_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_FlameCannon_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_FlameCannon_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_FlameCannon_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_Flamestorm": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_Flamestorm.png",
+      "r2_key": "weapons/UI_WPN_BLA_Flamestorm.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_FlamestormMelee": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_FlamestormMelee.png",
+      "r2_key": "weapons/UI_WPN_BLA_FlamestormMelee.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_ForceHalbard_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_ForceHalbard_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_ForceHalbard_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_FragStorm_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_FragStorm_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_FragStorm_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_FragstormGrenadeLauncherIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_FragstormGrenadeLauncherIcon.png",
+      "r2_key": "weapons/UI_WPN_BLA_FragstormGrenadeLauncherIcon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_FuriosoFist_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_FuriosoFist_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_FuriosoFist_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_HBM_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_HBM_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_HBM_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_HFM_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_HFM_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_HFM_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_HPI_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_HPI_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_HPI_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_HandFlamer": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_HandFlamer.png",
+      "r2_key": "weapons/UI_WPN_BLA_HandFlamer.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_HandFlamer_DeathCompany": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_HandFlamer_DeathCompany.png",
+      "r2_key": "weapons/UI_WPN_BLA_HandFlamer_DeathCompany.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_HeavyBolterPistol_icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_HeavyBolterPistol_icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_HeavyBolterPistol_icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_INP_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_INP_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_INP_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_IncendiumCannon_icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_IncendiumCannon_icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_IncendiumCannon_icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_InfernoPistolSanguinaryGuard": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_InfernoPistolSanguinaryGuard.png",
+      "r2_key": "weapons/UI_WPN_BLA_InfernoPistolSanguinaryGuard.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_InvictorFist_icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_InvictorFist_icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_InvictorFist_icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_IronHailAutoCannon_icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_IronHailAutoCannon_icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_IronHailAutoCannon_icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_LightningClawAssaultTerminator": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_LightningClawAssaultTerminator.png",
+      "r2_key": "weapons/UI_WPN_BLA_LightningClawAssaultTerminator.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_MMM_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_MMM_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_MMM_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_MountedBolt_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_MountedBolt_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_MountedBolt_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_PAX_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_PAX_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_PAX_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_PlasmaPistolSanguinaryGuard": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_PlasmaPistolSanguinaryGuard.png",
+      "r2_key": "weapons/UI_WPN_BLA_PlasmaPistolSanguinaryGuard.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_SPC_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_SPC_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_SPC_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_THM_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_THM_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_THM_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_ThunderHammerAssaultTerminator": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_ThunderHammerAssaultTerminator.png",
+      "r2_key": "weapons/UI_WPN_BLA_ThunderHammerAssaultTerminator.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_TwinAssCannon_Icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_TwinAssCannon_Icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_TwinAssCannon_Icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLA_TwinStubber_icon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLA_TwinStubber_icon.png",
+      "r2_key": "weapons/UI_WPN_BLA_TwinStubber_icon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_AccursedChainaxe": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_AccursedChainaxe.png",
+      "r2_key": "weapons/UI_WPN_BLE_AccursedChainaxe.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_AccursedChainsword": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_AccursedChainsword.png",
+      "r2_key": "weapons/UI_WPN_BLE_AccursedChainsword.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_AccursedMaul": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_AccursedMaul.png",
+      "r2_key": "weapons/UI_WPN_BLE_AccursedMaul.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_AccursedPowerSword": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_AccursedPowerSword.png",
+      "r2_key": "weapons/UI_WPN_BLE_AccursedPowerSword.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_Autopistol": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_Autopistol.png",
+      "r2_key": "weapons/UI_WPN_BLE_Autopistol.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_Autostubbers": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_Autostubbers.png",
+      "r2_key": "weapons/UI_WPN_BLE_Autostubbers.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_AxeOfDismemberment": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_AxeOfDismemberment.png",
+      "r2_key": "weapons/UI_WPN_BLE_AxeOfDismemberment.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_BalefirePike": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_BalefirePike.png",
+      "r2_key": "weapons/UI_WPN_BLE_BalefirePike.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_BoltPistol": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_BoltPistol.png",
+      "r2_key": "weapons/UI_WPN_BLE_BoltPistol.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_Bolter": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_Bolter.png",
+      "r2_key": "weapons/UI_WPN_BLE_Bolter.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_BrutalAssaultWeapon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_BrutalAssaultWeapon.png",
+      "r2_key": "weapons/UI_WPN_BLE_BrutalAssaultWeapon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_ChaosAstartesChainsword": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_ChaosAstartesChainsword.png",
+      "r2_key": "weapons/UI_WPN_BLE_ChaosAstartesChainsword.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_ChaosPlasmaPistol": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_ChaosPlasmaPistol.png",
+      "r2_key": "weapons/UI_WPN_BLE_ChaosPlasmaPistol.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_ChaosPlasmaPistolChaosLord": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_ChaosPlasmaPistolChaosLord.png",
+      "r2_key": "weapons/UI_WPN_BLE_ChaosPlasmaPistolChaosLord.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_CombiBolterAttachement": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_CombiBolterAttachement.png",
+      "r2_key": "weapons/UI_WPN_BLE_CombiBolterAttachement.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_CombiFlamer": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_CombiFlamer.png",
+      "r2_key": "weapons/UI_WPN_BLE_CombiFlamer.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_CombiPlasma": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_CombiPlasma.png",
+      "r2_key": "weapons/UI_WPN_BLE_CombiPlasma.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_CrushingFist": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_CrushingFist.png",
+      "r2_key": "weapons/UI_WPN_BLE_CrushingFist.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_DaemonHammer": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_DaemonHammer.png",
+      "r2_key": "weapons/UI_WPN_BLE_DaemonHammer.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_EctoplasmaCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_EctoplasmaCannon.png",
+      "r2_key": "weapons/UI_WPN_BLE_EctoplasmaCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_ExcruciatorCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_ExcruciatorCannon.png",
+      "r2_key": "weapons/UI_WPN_BLE_ExcruciatorCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_FleshmetalHeavyBolter": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_FleshmetalHeavyBolter.png",
+      "r2_key": "weapons/UI_WPN_BLE_FleshmetalHeavyBolter.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_FleshmetalHeavyPlasma": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_FleshmetalHeavyPlasma.png",
+      "r2_key": "weapons/UI_WPN_BLE_FleshmetalHeavyPlasma.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_FleshmetalMeltagun": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_FleshmetalMeltagun.png",
+      "r2_key": "weapons/UI_WPN_BLE_FleshmetalMeltagun.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_FleshmetalStormBolter": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_FleshmetalStormBolter.png",
+      "r2_key": "weapons/UI_WPN_BLE_FleshmetalStormBolter.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_ForceStave": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_ForceStave.png",
+      "r2_key": "weapons/UI_WPN_BLE_ForceStave.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_ForgefiendJaws": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_ForgefiendJaws.png",
+      "r2_key": "weapons/UI_WPN_BLE_ForgefiendJaws.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_ForgefiendMouthPlasma": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_ForgefiendMouthPlasma.png",
+      "r2_key": "weapons/UI_WPN_BLE_ForgefiendMouthPlasma.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_HadesAutocannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_HadesAutocannon.png",
+      "r2_key": "weapons/UI_WPN_BLE_HadesAutocannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_HavocHeavyBolter": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_HavocHeavyBolter.png",
+      "r2_key": "weapons/UI_WPN_BLE_HavocHeavyBolter.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_HavocMissileLauncherFrag": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_HavocMissileLauncherFrag.png",
+      "r2_key": "weapons/UI_WPN_BLE_HavocMissileLauncherFrag.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_HavocMissileLauncherKrak": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_HavocMissileLauncherKrak.png",
+      "r2_key": "weapons/UI_WPN_BLE_HavocMissileLauncherKrak.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_HavocMissileLauncherRhino": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_HavocMissileLauncherRhino.png",
+      "r2_key": "weapons/UI_WPN_BLE_HavocMissileLauncherRhino.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_HavocReaperChaincannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_HavocReaperChaincannon.png",
+      "r2_key": "weapons/UI_WPN_BLE_HavocReaperChaincannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_HeavyAutostubbers": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_HeavyAutostubbers.png",
+      "r2_key": "weapons/UI_WPN_BLE_HeavyAutostubbers.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_HeavyBolter": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_HeavyBolter.png",
+      "r2_key": "weapons/UI_WPN_BLE_HeavyBolter.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_HelbruteFist": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_HelbruteFist.png",
+      "r2_key": "weapons/UI_WPN_BLE_HelbruteFist.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_HelbruteHammer": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_HelbruteHammer.png",
+      "r2_key": "weapons/UI_WPN_BLE_HelbruteHammer.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_Multi-Melta": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_Multi-Melta.png",
+      "r2_key": "weapons/UI_WPN_BLE_Multi-Melta.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_PlasmaCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_PlasmaCannon.png",
+      "r2_key": "weapons/UI_WPN_BLE_PlasmaCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_PowerFist": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_PowerFist.png",
+      "r2_key": "weapons/UI_WPN_BLE_PowerFist.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_PowerScourge": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_PowerScourge.png",
+      "r2_key": "weapons/UI_WPN_BLE_PowerScourge.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_SoulflayerTendrils": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_SoulflayerTendrils.png",
+      "r2_key": "weapons/UI_WPN_BLE_SoulflayerTendrils.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_BLE_SpikedHull": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_BLE_SpikedHull.png",
+      "r2_key": "weapons/UI_WPN_BLE_SpikedHull.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_CDK_BladeOfBlood": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_CDK_BladeOfBlood.png",
+      "r2_key": "weapons/UI_WPN_CDK_BladeOfBlood.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_CDK_BurningBlood": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_CDK_BurningBlood.png",
+      "r2_key": "weapons/UI_WPN_CDK_BurningBlood.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_CDK_DaemonicAxe": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_CDK_DaemonicAxe.png",
+      "r2_key": "weapons/UI_WPN_CDK_DaemonicAxe.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_CDK_GoreDrenchedFangs": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_CDK_GoreDrenchedFangs.png",
+      "r2_key": "weapons/UI_WPN_CDK_GoreDrenchedFangs.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_CDK_GreatAxeOfKhorne": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_CDK_GreatAxeOfKhorne.png",
+      "r2_key": "weapons/UI_WPN_CDK_GreatAxeOfKhorne.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_CDK_HarvestCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_CDK_HarvestCannon.png",
+      "r2_key": "weapons/UI_WPN_CDK_HarvestCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_CDK_Hellblade": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_CDK_Hellblade.png",
+      "r2_key": "weapons/UI_WPN_CDK_Hellblade.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_CDK_HellfireBreath": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_CDK_HellfireBreath.png",
+      "r2_key": "weapons/UI_WPN_CDK_HellfireBreath.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_CDK_HellforgedSword": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_CDK_HellforgedSword.png",
+      "r2_key": "weapons/UI_WPN_CDK_HellforgedSword.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_CDK_InfernalCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_CDK_InfernalCannon.png",
+      "r2_key": "weapons/UI_WPN_CDK_InfernalCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_CDK_SkullCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_CDK_SkullCannon.png",
+      "r2_key": "weapons/UI_WPN_CDK_SkullCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_CDK_WarpClaw": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_CDK_WarpClaw.png",
+      "r2_key": "weapons/UI_WPN_CDK_WarpClaw.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_EnmeticExterminator": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_EnmeticExterminator.png",
+      "r2_key": "weapons/UI_WPN_NEC_EnmeticExterminator.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_EnmiticDistintegatorPistol": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_EnmiticDistintegatorPistol.png",
+      "r2_key": "weapons/UI_WPN_NEC_EnmiticDistintegatorPistol.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_EnmiticDistintegatorPistol_MEPHRIT": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_EnmiticDistintegatorPistol_MEPHRIT.png",
+      "r2_key": "weapons/UI_WPN_NEC_EnmiticDistintegatorPistol_MEPHRIT.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_FeederManibles": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_FeederManibles.png",
+      "r2_key": "weapons/UI_WPN_NEC_FeederManibles.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_FlayerClaws": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_FlayerClaws.png",
+      "r2_key": "weapons/UI_WPN_NEC_FlayerClaws.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_GaussBlaster": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_GaussBlaster.png",
+      "r2_key": "weapons/UI_WPN_NEC_GaussBlaster.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_GaussCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_GaussCannon.png",
+      "r2_key": "weapons/UI_WPN_NEC_GaussCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_GaussDestructor": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_GaussDestructor.png",
+      "r2_key": "weapons/UI_WPN_NEC_GaussDestructor.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_GaussFlayer": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_GaussFlayer.png",
+      "r2_key": "weapons/UI_WPN_NEC_GaussFlayer.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_GaussFlayer_MEPHRIT": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_GaussFlayer_MEPHRIT.png",
+      "r2_key": "weapons/UI_WPN_NEC_GaussFlayer_MEPHRIT.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_GaussReaper": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_GaussReaper.png",
+      "r2_key": "weapons/UI_WPN_NEC_GaussReaper.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_GaussReaper_MEPHRIT": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_GaussReaper_MEPHRIT.png",
+      "r2_key": "weapons/UI_WPN_NEC_GaussReaper_MEPHRIT.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_HyperphaseGlaive": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_HyperphaseGlaive.png",
+      "r2_key": "weapons/UI_WPN_NEC_HyperphaseGlaive.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_HyperphaseReapBlade": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_HyperphaseReapBlade.png",
+      "r2_key": "weapons/UI_WPN_NEC_HyperphaseReapBlade.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_HyperphaseReapBlade_MEPHRIT": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_HyperphaseReapBlade_MEPHRIT.png",
+      "r2_key": "weapons/UI_WPN_NEC_HyperphaseReapBlade_MEPHRIT.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_HyperphaseSwordLychguard": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_HyperphaseSwordLychguard.png",
+      "r2_key": "weapons/UI_WPN_NEC_HyperphaseSwordLychguard.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_HyperphaseThreshers": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_HyperphaseThreshers.png",
+      "r2_key": "weapons/UI_WPN_NEC_HyperphaseThreshers.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_HyperphaseThreshers_MEPHRIT": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_HyperphaseThreshers_MEPHRIT.png",
+      "r2_key": "weapons/UI_WPN_NEC_HyperphaseThreshers_MEPHRIT.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_ParticleBeam": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_ParticleBeam.png",
+      "r2_key": "weapons/UI_WPN_NEC_ParticleBeam.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_ParticleBeam_MEPHRIT": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_ParticleBeam_MEPHRIT.png",
+      "r2_key": "weapons/UI_WPN_NEC_ParticleBeam_MEPHRIT.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_PlasmicLance": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_PlasmicLance.png",
+      "r2_key": "weapons/UI_WPN_NEC_PlasmicLance.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_PlasmicLanceRanged": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_PlasmicLanceRanged.png",
+      "r2_key": "weapons/UI_WPN_NEC_PlasmicLanceRanged.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_RelicGaussBlaster": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_RelicGaussBlaster.png",
+      "r2_key": "weapons/UI_WPN_NEC_RelicGaussBlaster.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_RodOfCovenent": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_RodOfCovenent.png",
+      "r2_key": "weapons/UI_WPN_NEC_RodOfCovenent.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_RodOfCovenent_Ranged": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_RodOfCovenent_Ranged.png",
+      "r2_key": "weapons/UI_WPN_NEC_RodOfCovenent_Ranged.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_StaffOfLight": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_StaffOfLight.png",
+      "r2_key": "weapons/UI_WPN_NEC_StaffOfLight.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_StaffOfLightRanged": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_StaffOfLightRanged.png",
+      "r2_key": "weapons/UI_WPN_NEC_StaffOfLightRanged.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_SynapticDisitegrator": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_SynapticDisitegrator.png",
+      "r2_key": "weapons/UI_WPN_NEC_SynapticDisitegrator.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_TeslaCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_TeslaCannon.png",
+      "r2_key": "weapons/UI_WPN_NEC_TeslaCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_TeslaCarbine": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_TeslaCarbine.png",
+      "r2_key": "weapons/UI_WPN_NEC_TeslaCarbine.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_TwinGaussBlaster": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_TwinGaussBlaster.png",
+      "r2_key": "weapons/UI_WPN_NEC_TwinGaussBlaster.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_TwinGaussBlaster_MEPHRIT": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_TwinGaussBlaster_MEPHRIT.png",
+      "r2_key": "weapons/UI_WPN_NEC_TwinGaussBlaster_MEPHRIT.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_TwinTeslaCarbine": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_TwinTeslaCarbine.png",
+      "r2_key": "weapons/UI_WPN_NEC_TwinTeslaCarbine.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_TwinTeslaCarbine_MEPHRIT": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_TwinTeslaCarbine_MEPHRIT.png",
+      "r2_key": "weapons/UI_WPN_NEC_TwinTeslaCarbine_MEPHRIT.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_TwinTeslaDestructor": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_TwinTeslaDestructor.png",
+      "r2_key": "weapons/UI_WPN_NEC_TwinTeslaDestructor.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_WarscytheLychguard": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_WarscytheLychguard.png",
+      "r2_key": "weapons/UI_WPN_NEC_WarscytheLychguard.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_NEC_WarscytheOverlord": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_NEC_WarscytheOverlord.png",
+      "r2_key": "weapons/UI_WPN_NEC_WarscytheOverlord.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_BMK_KustomMB": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_BMK_KustomMB.png",
+      "r2_key": "weapons/UI_WPN_ORK_BMK_KustomMB.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_BMK_Powerklaw": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_BMK_Powerklaw.png",
+      "r2_key": "weapons/UI_WPN_ORK_BMK_Powerklaw.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_BOY_BigShoota": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_BOY_BigShoota.png",
+      "r2_key": "weapons/UI_WPN_ORK_BOY_BigShoota.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_BOY_Rokkit": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_BOY_Rokkit.png",
+      "r2_key": "weapons/UI_WPN_ORK_BOY_Rokkit.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_BOY_Shoota": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_BOY_Shoota.png",
+      "r2_key": "weapons/UI_WPN_ORK_BOY_Shoota.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_BRN_Burna": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_BRN_Burna.png",
+      "r2_key": "weapons/UI_WPN_ORK_BRN_Burna.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_Boomstikks": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_Boomstikks.png",
+      "r2_key": "weapons/UI_WPN_ORK_Boomstikks.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_BurnaExhaust": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_BurnaExhaust.png",
+      "r2_key": "weapons/UI_WPN_ORK_BurnaExhaust.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_DEF_DreadKlaw": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_DEF_DreadKlaw.png",
+      "r2_key": "weapons/UI_WPN_ORK_DEF_DreadKlaw.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_DEF_Shoota": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_DEF_Shoota.png",
+      "r2_key": "weapons/UI_WPN_ORK_DEF_Shoota.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_DEF_Skorcha": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_DEF_Skorcha.png",
+      "r2_key": "weapons/UI_WPN_ORK_DEF_Skorcha.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_DEK_Rokkits": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_DEK_Rokkits.png",
+      "r2_key": "weapons/UI_WPN_ORK_DEK_Rokkits.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_FLG_Snazzgun": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_FLG_Snazzgun.png",
+      "r2_key": "weapons/UI_WPN_ORK_FLG_Snazzgun.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_GRE_GrotBlasta": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_GRE_GrotBlasta.png",
+      "r2_key": "weapons/UI_WPN_ORK_GRE_GrotBlasta.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_KillaJet": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_KillaJet.png",
+      "r2_key": "weapons/UI_WPN_ORK_KillaJet.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_KustomShokkRifle": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_KustomShokkRifle.png",
+      "r2_key": "weapons/UI_WPN_ORK_KustomShokkRifle.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_LOO_BeamyDeffgun": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_LOO_BeamyDeffgun.png",
+      "r2_key": "weapons/UI_WPN_ORK_LOO_BeamyDeffgun.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_LOO_ShootyDeffgun": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_LOO_ShootyDeffgun.png",
+      "r2_key": "weapons/UI_WPN_ORK_LOO_ShootyDeffgun.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_MNB_Killsaw": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_MNB_Killsaw.png",
+      "r2_key": "weapons/UI_WPN_ORK_MNB_Killsaw.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_MNB_KustomShoota": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_MNB_KustomShoota.png",
+      "r2_key": "weapons/UI_WPN_ORK_MNB_KustomShoota.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_MNB_Rokkit": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_MNB_Rokkit.png",
+      "r2_key": "weapons/UI_WPN_ORK_MNB_Rokkit.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_MNB_Shoota": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_MNB_Shoota.png",
+      "r2_key": "weapons/UI_WPN_ORK_MNB_Shoota.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_MNB_Skorcha": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_MNB_Skorcha.png",
+      "r2_key": "weapons/UI_WPN_ORK_MNB_Skorcha.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_NOB_Choppa": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_NOB_Choppa.png",
+      "r2_key": "weapons/UI_WPN_ORK_NOB_Choppa.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_NOB_MegaChoppa": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_NOB_MegaChoppa.png",
+      "r2_key": "weapons/UI_WPN_ORK_NOB_MegaChoppa.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_NOB_PowerKlaw": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_NOB_PowerKlaw.png",
+      "r2_key": "weapons/UI_WPN_ORK_NOB_PowerKlaw.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_PAI_Powerklaw": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_PAI_Powerklaw.png",
+      "r2_key": "weapons/UI_WPN_ORK_PAI_Powerklaw.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_RivetKannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_RivetKannon.png",
+      "r2_key": "weapons/UI_WPN_ORK_RivetKannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_RokkitLauncha": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_RokkitLauncha.png",
+      "r2_key": "weapons/UI_WPN_ORK_RokkitLauncha.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_SBY_Choppa": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_SBY_Choppa.png",
+      "r2_key": "weapons/UI_WPN_ORK_SBY_Choppa.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_SBY_Sluggar": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_SBY_Sluggar.png",
+      "r2_key": "weapons/UI_WPN_ORK_SBY_Sluggar.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_SnaggaKlaw": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_SnaggaKlaw.png",
+      "r2_key": "weapons/UI_WPN_ORK_SnaggaKlaw.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_WAR_KombiShoota": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_WAR_KombiShoota.png",
+      "r2_key": "weapons/UI_WPN_ORK_WAR_KombiShoota.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_WAR_Powerklaw": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_WAR_Powerklaw.png",
+      "r2_key": "weapons/UI_WPN_ORK_WAR_Powerklaw.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_WBK_Dakkagun": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_WBK_Dakkagun.png",
+      "r2_key": "weapons/UI_WPN_ORK_WBK_Dakkagun.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ORK_WRD": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ORK_WRD.png",
+      "r2_key": "weapons/UI_WPN_ORK_WRD.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_BurstCannonCrisisBattelsuit": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_BurstCannonCrisisBattelsuit.png",
+      "r2_key": "weapons/UI_WPN_TAU_BurstCannonCrisisBattelsuit.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_BurstCannonEnforcer": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_BurstCannonEnforcer.png",
+      "r2_key": "weapons/UI_WPN_TAU_BurstCannonEnforcer.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_BurstCannonPiranha": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_BurstCannonPiranha.png",
+      "r2_key": "weapons/UI_WPN_TAU_BurstCannonPiranha.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_BurstCannonStealthBattlesuit": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_BurstCannonStealthBattlesuit.png",
+      "r2_key": "weapons/UI_WPN_TAU_BurstCannonStealthBattlesuit.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_CadrePulseRifle": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_CadrePulseRifle.png",
+      "r2_key": "weapons/UI_WPN_TAU_CadrePulseRifle.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_CrushingBulk": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_CrushingBulk.png",
+      "r2_key": "weapons/UI_WPN_TAU_CrushingBulk.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_FlamerCommander": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_FlamerCommander.png",
+      "r2_key": "weapons/UI_WPN_TAU_FlamerCommander.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_FlamerCrisisBattlesuit": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_FlamerCrisisBattlesuit.png",
+      "r2_key": "weapons/UI_WPN_TAU_FlamerCrisisBattlesuit.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_FlamersGhostkeel": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_FlamersGhostkeel.png",
+      "r2_key": "weapons/UI_WPN_TAU_FlamersGhostkeel.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_FusionBlasterCrisisBattlesuit": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_FusionBlasterCrisisBattlesuit.png",
+      "r2_key": "weapons/UI_WPN_TAU_FusionBlasterCrisisBattlesuit.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_FusionBlasterPiranha": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_FusionBlasterPiranha.png",
+      "r2_key": "weapons/UI_WPN_TAU_FusionBlasterPiranha.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_FusionBlasterStealthBattlesuit": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_FusionBlasterStealthBattlesuit.png",
+      "r2_key": "weapons/UI_WPN_TAU_FusionBlasterStealthBattlesuit.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_FusionCollider": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_FusionCollider.png",
+      "r2_key": "weapons/UI_WPN_TAU_FusionCollider.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_GhostkeelFists": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_GhostkeelFists.png",
+      "r2_key": "weapons/UI_WPN_TAU_GhostkeelFists.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_HeavyBurstCannonRiptide": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_HeavyBurstCannonRiptide.png",
+      "r2_key": "weapons/UI_WPN_TAU_HeavyBurstCannonRiptide.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_HeavyRailRifle": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_HeavyRailRifle.png",
+      "r2_key": "weapons/UI_WPN_TAU_HeavyRailRifle.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_HeavyRailRifleHammerhead": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_HeavyRailRifleHammerhead.png",
+      "r2_key": "weapons/UI_WPN_TAU_HeavyRailRifleHammerhead.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_HighOutputBurstCannonEnforcer": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_HighOutputBurstCannonEnforcer.png",
+      "r2_key": "weapons/UI_WPN_TAU_HighOutputBurstCannonEnforcer.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_HonourStave": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_HonourStave.png",
+      "r2_key": "weapons/UI_WPN_TAU_HonourStave.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_IonAccelerator": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_IonAccelerator.png",
+      "r2_key": "weapons/UI_WPN_TAU_IonAccelerator.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_IonCannonHammerhead": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_IonCannonHammerhead.png",
+      "r2_key": "weapons/UI_WPN_TAU_IonCannonHammerhead.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_IonRifle": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_IonRifle.png",
+      "r2_key": "weapons/UI_WPN_TAU_IonRifle.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_MissilePodCrisisBattlesuit": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_MissilePodCrisisBattlesuit.png",
+      "r2_key": "weapons/UI_WPN_TAU_MissilePodCrisisBattlesuit.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_PlasmaRifleRiptide": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_PlasmaRifleRiptide.png",
+      "r2_key": "weapons/UI_WPN_TAU_PlasmaRifleRiptide.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_PulseBlaster": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_PulseBlaster.png",
+      "r2_key": "weapons/UI_WPN_TAU_PulseBlaster.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_PulseCarbine": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_PulseCarbine.png",
+      "r2_key": "weapons/UI_WPN_TAU_PulseCarbine.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_PulseCarbinePiranha": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_PulseCarbinePiranha.png",
+      "r2_key": "weapons/UI_WPN_TAU_PulseCarbinePiranha.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_PulseCarbineTacticalDrones": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_PulseCarbineTacticalDrones.png",
+      "r2_key": "weapons/UI_WPN_TAU_PulseCarbineTacticalDrones.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TAU_PulseRifle": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TAU_PulseRifle.png",
+      "r2_key": "weapons/UI_WPN_TAU_PulseRifle.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_AcidSpray": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_AcidSpray.png",
+      "r2_key": "weapons/UI_WPN_TYR_AcidSpray.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_BiovoreSporeMine": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_BiovoreSporeMine.png",
+      "r2_key": "weapons/UI_WPN_TYR_BiovoreSporeMine.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_BoiPlasmicCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_BoiPlasmicCannon.png",
+      "r2_key": "weapons/UI_WPN_TYR_BoiPlasmicCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_BoneSword": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_BoneSword.png",
+      "r2_key": "weapons/UI_WPN_TYR_BoneSword.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_DeathspitterWarrior": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_DeathspitterWarrior.png",
+      "r2_key": "weapons/UI_WPN_TYR_DeathspitterWarrior.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_DeathspitterWithSlimerMaggots": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_DeathspitterWithSlimerMaggots.png",
+      "r2_key": "weapons/UI_WPN_TYR_DeathspitterWithSlimerMaggots.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_DevourerTermagaunt": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_DevourerTermagaunt.png",
+      "r2_key": "weapons/UI_WPN_TYR_DevourerTermagaunt.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_DevourerThornback": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_DevourerThornback.png",
+      "r2_key": "weapons/UI_WPN_TYR_DevourerThornback.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_DevourerWarrior": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_DevourerWarrior.png",
+      "r2_key": "weapons/UI_WPN_TYR_DevourerWarrior.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_Flamespurt": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_Flamespurt.png",
+      "r2_key": "weapons/UI_WPN_TYR_Flamespurt.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_FleshBorerTermagant": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_FleshBorerTermagant.png",
+      "r2_key": "weapons/UI_WPN_TYR_FleshBorerTermagant.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_HeavyVenomCannonHiveTyrant": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_HeavyVenomCannonHiveTyrant.png",
+      "r2_key": "weapons/UI_WPN_TYR_HeavyVenomCannonHiveTyrant.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_ImpalerCannonHiveGuard": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_ImpalerCannonHiveGuard.png",
+      "r2_key": "weapons/UI_WPN_TYR_ImpalerCannonHiveGuard.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_MassiveCrushingClaws": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_MassiveCrushingClaws.png",
+      "r2_key": "weapons/UI_WPN_TYR_MassiveCrushingClaws.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_MassiveScythingTalons": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_MassiveScythingTalons.png",
+      "r2_key": "weapons/UI_WPN_TYR_MassiveScythingTalons.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_MonstrousRendingClawsBroodLord": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_MonstrousRendingClawsBroodLord.png",
+      "r2_key": "weapons/UI_WPN_TYR_MonstrousRendingClawsBroodLord.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_MonstrousScythingTalonsHiveTyrant": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_MonstrousScythingTalonsHiveTyrant.png",
+      "r2_key": "weapons/UI_WPN_TYR_MonstrousScythingTalonsHiveTyrant.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_MonstrousScythingTalonsThornback": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_MonstrousScythingTalonsThornback.png",
+      "r2_key": "weapons/UI_WPN_TYR_MonstrousScythingTalonsThornback.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_PowerfulLimbs": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_PowerfulLimbs.png",
+      "r2_key": "weapons/UI_WPN_TYR_PowerfulLimbs.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_RendingClaws": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_RendingClaws.png",
+      "r2_key": "weapons/UI_WPN_TYR_RendingClaws.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_ScythingTalonTrygon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_ScythingTalonTrygon.png",
+      "r2_key": "weapons/UI_WPN_TYR_ScythingTalonTrygon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_ScythingTalonsWarrior": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_ScythingTalonsWarrior.png",
+      "r2_key": "weapons/UI_WPN_TYR_ScythingTalonsWarrior.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_ShockCannonHiveGuard": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_ShockCannonHiveGuard.png",
+      "r2_key": "weapons/UI_WPN_TYR_ShockCannonHiveGuard.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_Spinefists": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_Spinefists.png",
+      "r2_key": "weapons/UI_WPN_TYR_Spinefists.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_SporeMine": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_SporeMine.png",
+      "r2_key": "weapons/UI_WPN_TYR_SporeMine.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_SporeMineLauncher": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_SporeMineLauncher.png",
+      "r2_key": "weapons/UI_WPN_TYR_SporeMineLauncher.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_TYR_ToxixLash": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_TYR_ToxixLash.png",
+      "r2_key": "weapons/UI_WPN_TYR_ToxixLash.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_AbsolvorBoltPistol": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_AbsolvorBoltPistol.png",
+      "r2_key": "weapons/UI_WPN_ULT_AbsolvorBoltPistol.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_ApothecaryPunch": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_ApothecaryPunch.png",
+      "r2_key": "weapons/UI_WPN_ULT_ApothecaryPunch.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_AssaultCannonTerminators": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_AssaultCannonTerminators.png",
+      "r2_key": "weapons/UI_WPN_ULT_AssaultCannonTerminators.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_AstartesChainsword": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_AstartesChainsword.png",
+      "r2_key": "weapons/UI_WPN_ULT_AstartesChainsword.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_BallistusLascannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_BallistusLascannon.png",
+      "r2_key": "weapons/UI_WPN_ULT_BallistusLascannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_BallistusMissileLauncher": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_BallistusMissileLauncher.png",
+      "r2_key": "weapons/UI_WPN_ULT_BallistusMissileLauncher.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_BallistusMissileLauncherKrak": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_BallistusMissileLauncherKrak.png",
+      "r2_key": "weapons/UI_WPN_ULT_BallistusMissileLauncherKrak.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_BallistusTwinStormBolter": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_BallistusTwinStormBolter.png",
+      "r2_key": "weapons/UI_WPN_ULT_BallistusTwinStormBolter.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_BoltSniperRifle": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_BoltSniperRifle.png",
+      "r2_key": "weapons/UI_WPN_ULT_BoltSniperRifle.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_BoltstormGauntletFireCaptain": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_BoltstormGauntletFireCaptain.png",
+      "r2_key": "weapons/UI_WPN_ULT_BoltstormGauntletFireCaptain.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_BoltstormGauntletFireUltAggressors": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_BoltstormGauntletFireUltAggressors.png",
+      "r2_key": "weapons/UI_WPN_ULT_BoltstormGauntletFireUltAggressors.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_BoltstormGauntletMeleeCaptain": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_BoltstormGauntletMeleeCaptain.png",
+      "r2_key": "weapons/UI_WPN_ULT_BoltstormGauntletMeleeCaptain.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_BoltstormGauntletMeleeUltAggressors": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_BoltstormGauntletMeleeUltAggressors.png",
+      "r2_key": "weapons/UI_WPN_ULT_BoltstormGauntletMeleeUltAggressors.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_ChainfistTerminators": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_ChainfistTerminators.png",
+      "r2_key": "weapons/UI_WPN_ULT_ChainfistTerminators.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_ChaplainAbsolvorBoltPistol": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_ChaplainAbsolvorBoltPistol.png",
+      "r2_key": "weapons/UI_WPN_ULT_ChaplainAbsolvorBoltPistol.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_CombatKnife": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_CombatKnife.png",
+      "r2_key": "weapons/UI_WPN_ULT_CombatKnife.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_CroziusArcanum": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_CroziusArcanum.png",
+      "r2_key": "weapons/UI_WPN_ULT_CroziusArcanum.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_CycloneMissileLauncherFrag": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_CycloneMissileLauncherFrag.png",
+      "r2_key": "weapons/UI_WPN_ULT_CycloneMissileLauncherFrag.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_CycloneMissileLauncherKrak": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_CycloneMissileLauncherKrak.png",
+      "r2_key": "weapons/UI_WPN_ULT_CycloneMissileLauncherKrak.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_FlamestormGauntletFireUltAggressors": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_FlamestormGauntletFireUltAggressors.png",
+      "r2_key": "weapons/UI_WPN_ULT_FlamestormGauntletFireUltAggressors.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_FlamestormGauntletMeleeUltAggressors": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_FlamestormGauntletMeleeUltAggressors.png",
+      "r2_key": "weapons/UI_WPN_ULT_FlamestormGauntletMeleeUltAggressors.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_FragstormGrenadeLauncherStormspeeder": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_FragstormGrenadeLauncherStormspeeder.png",
+      "r2_key": "weapons/UI_WPN_ULT_FragstormGrenadeLauncherStormspeeder.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_FragstormGrenadeLauncherUltAggressors": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_FragstormGrenadeLauncherUltAggressors.png",
+      "r2_key": "weapons/UI_WPN_ULT_FragstormGrenadeLauncherUltAggressors.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_GladiatorMultiMelta": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_GladiatorMultiMelta.png",
+      "r2_key": "weapons/UI_WPN_ULT_GladiatorMultiMelta.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_GladiatorStormBolter": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_GladiatorStormBolter.png",
+      "r2_key": "weapons/UI_WPN_ULT_GladiatorStormBolter.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_HammerstrikeMissileLauncher": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_HammerstrikeMissileLauncher.png",
+      "r2_key": "weapons/UI_WPN_ULT_HammerstrikeMissileLauncher.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_HandFlamerUltramarines": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_HandFlamerUltramarines.png",
+      "r2_key": "weapons/UI_WPN_ULT_HandFlamerUltramarines.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_HeavyBoltPistol": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_HeavyBoltPistol.png",
+      "r2_key": "weapons/UI_WPN_ULT_HeavyBoltPistol.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_HeavyBoltRifle": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_HeavyBoltRifle.png",
+      "r2_key": "weapons/UI_WPN_ULT_HeavyBoltRifle.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_HeavyBolterIntercessors": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_HeavyBolterIntercessors.png",
+      "r2_key": "weapons/UI_WPN_ULT_HeavyBolterIntercessors.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_HeavyFlamerRedemptor": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_HeavyFlamerRedemptor.png",
+      "r2_key": "weapons/UI_WPN_ULT_HeavyFlamerRedemptor.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_HeavyFlamerTerminators": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_HeavyFlamerTerminators.png",
+      "r2_key": "weapons/UI_WPN_ULT_HeavyFlamerTerminators.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_HeavyOnslaughtGatlingCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_HeavyOnslaughtGatlingCannon.png",
+      "r2_key": "weapons/UI_WPN_ULT_HeavyOnslaughtGatlingCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_IncendiumCannonUlt": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_IncendiumCannonUlt.png",
+      "r2_key": "weapons/UI_WPN_ULT_IncendiumCannonUlt.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_InvictorFistUlt": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_InvictorFistUlt.png",
+      "r2_key": "weapons/UI_WPN_ULT_InvictorFistUlt.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_InvictorFragstormGrenadeLauncherUlt": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_InvictorFragstormGrenadeLauncherUlt.png",
+      "r2_key": "weapons/UI_WPN_ULT_InvictorFragstormGrenadeLauncherUlt.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_KrakstormGrenadeLauncher": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_KrakstormGrenadeLauncher.png",
+      "r2_key": "weapons/UI_WPN_ULT_KrakstormGrenadeLauncher.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_LancerLaserDestroyer": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_LancerLaserDestroyer.png",
+      "r2_key": "weapons/UI_WPN_ULT_LancerLaserDestroyer.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_LasFusil": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_LasFusil.png",
+      "r2_key": "weapons/UI_WPN_ULT_LasFusil.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_MacroPlasmaIncinerator": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_MacroPlasmaIncinerator.png",
+      "r2_key": "weapons/UI_WPN_ULT_MacroPlasmaIncinerator.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_MasterCraftedPowerSword": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_MasterCraftedPowerSword.png",
+      "r2_key": "weapons/UI_WPN_ULT_MasterCraftedPowerSword.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_MasterCraftedPowerSwordLieutenant": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_MasterCraftedPowerSwordLieutenant.png",
+      "r2_key": "weapons/UI_WPN_ULT_MasterCraftedPowerSwordLieutenant.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_MeltaDestroyer": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_MeltaDestroyer.png",
+      "r2_key": "weapons/UI_WPN_ULT_MeltaDestroyer.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_MeltaRifleEradicators": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_MeltaRifleEradicators.png",
+      "r2_key": "weapons/UI_WPN_ULT_MeltaRifleEradicators.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_MultiMeltaEradicators": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_MultiMeltaEradicators.png",
+      "r2_key": "weapons/UI_WPN_ULT_MultiMeltaEradicators.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_NeoVolkitePistol": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_NeoVolkitePistol.png",
+      "r2_key": "weapons/UI_WPN_ULT_NeoVolkitePistol.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_OcculusBoltCarbine": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_OcculusBoltCarbine.png",
+      "r2_key": "weapons/UI_WPN_ULT_OcculusBoltCarbine.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_OnslaughtGatlingCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_OnslaughtGatlingCannon.png",
+      "r2_key": "weapons/UI_WPN_ULT_OnslaughtGatlingCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_PlasmaPistolUltramarines": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_PlasmaPistolUltramarines.png",
+      "r2_key": "weapons/UI_WPN_ULT_PlasmaPistolUltramarines.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_PowerFistTerminators": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_PowerFistTerminators.png",
+      "r2_key": "weapons/UI_WPN_ULT_PowerFistTerminators.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_RedemptorFist": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_RedemptorFist.png",
+      "r2_key": "weapons/UI_WPN_ULT_RedemptorFist.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_RedemptorFragstormGrenadeLauncher": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_RedemptorFragstormGrenadeLauncher.png",
+      "r2_key": "weapons/UI_WPN_ULT_RedemptorFragstormGrenadeLauncher.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_RedemptorOnslaughtGatlingCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_RedemptorOnslaughtGatlingCannon.png",
+      "r2_key": "weapons/UI_WPN_ULT_RedemptorOnslaughtGatlingCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_ReductorPistol": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_ReductorPistol.png",
+      "r2_key": "weapons/UI_WPN_ULT_ReductorPistol.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_RelicBlade": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_RelicBlade.png",
+      "r2_key": "weapons/UI_WPN_ULT_RelicBlade.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_RelicChainsword": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_RelicChainsword.png",
+      "r2_key": "weapons/UI_WPN_ULT_RelicChainsword.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_SpecialIssueBoltPistol": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_SpecialIssueBoltPistol.png",
+      "r2_key": "weapons/UI_WPN_ULT_SpecialIssueBoltPistol.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_StormBolterTerminators": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_StormBolterTerminators.png",
+      "r2_key": "weapons/UI_WPN_ULT_StormBolterTerminators.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_StormfuryMissiles": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_StormfuryMissiles.png",
+      "r2_key": "weapons/UI_WPN_ULT_StormfuryMissiles.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_TempestBolter": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_TempestBolter.png",
+      "r2_key": "weapons/UI_WPN_ULT_TempestBolter.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_ThunderstrikeLasTalon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_ThunderstrikeLasTalon.png",
+      "r2_key": "weapons/UI_WPN_ULT_ThunderstrikeLasTalon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_TwinIronhailAutostubberUlt": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_TwinIronhailAutostubberUlt.png",
+      "r2_key": "weapons/UI_WPN_ULT_TwinIronhailAutostubberUlt.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_TwinIronhailHeavyStubbers": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_TwinIronhailHeavyStubbers.png",
+      "r2_key": "weapons/UI_WPN_ULT_TwinIronhailHeavyStubbers.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_TwinIronhillAutocannonUlt": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_TwinIronhillAutocannonUlt.png",
+      "r2_key": "weapons/UI_WPN_ULT_TwinIronhillAutocannonUlt.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_TwinLasTalon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_TwinLasTalon.png",
+      "r2_key": "weapons/UI_WPN_ULT_TwinLasTalon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_TwinOnslaughtHeavyGatlingCannon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_TwinOnslaughtHeavyGatlingCannon.png",
+      "r2_key": "weapons/UI_WPN_ULT_TwinOnslaughtHeavyGatlingCannon.png",
+      "source": "WeaponIcons"
+    },
+    "UI_WPN_ULT_TwinStormBolter": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/weapons/UI_WPN_ULT_TwinStormBolter.png",
+      "r2_key": "weapons/UI_WPN_ULT_TwinStormBolter.png",
+      "source": "WeaponIcons"
     }
   },
   "factions": {

@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { damageRange, grazeChance } from '../../lib/combat';
 import { getWeapon, idFromSlug, unitSlug, units, weaponSlug, weapons } from '../../lib/data';
-import { getWeaponTypeIcon } from '../../scripts/images';
+import { getWeaponPortrait, getWeaponTypeIcon } from '../../scripts/images';
 
 export function getStaticPaths() {
   return weapons.map((w) => ({
@@ -33,6 +33,7 @@ const carriers = units
   .sort((a, b) => a.name.localeCompare(b.name));
 
 const typeIcon = getWeaponTypeIcon(weapon.isMelee);
+const weaponIcon = getWeaponPortrait(weapon.icon) ?? typeIcon;
 ---
 
 <Base
@@ -50,13 +51,20 @@ const typeIcon = getWeaponTypeIcon(weapon.isMelee);
   <div class="panel-gilded p-6 md:p-8">
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
       <div class="flex items-center gap-4 min-w-0">
-        {typeIcon && (
-          <img src={typeIcon} alt="" width="48" height="48" loading="lazy" class="w-12 h-12 shrink-0 object-contain rounded-lg bg-black/30 border border-[var(--color-border)] p-1.5" />
+        {weaponIcon && (
+          <img src={weaponIcon} alt="" width="48" height="48" loading="lazy" class="w-12 h-12 shrink-0 object-contain rounded-lg bg-black/30 border border-[var(--color-border)] p-1.5" />
         )}
         <div class="min-w-0">
           <div class="flex flex-wrap items-center gap-2 mb-2">
             <span class="chip" data-i18n-ui={weapon.isMelee ? 'common.melee' : 'common.ranged'}>{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
+            {weapon.pistol && <span class="chip" data-i18n-ui="common.pistol">Pistol</span>}
             {weapon.armorPiercing > 0 && <span class="chip">AP {weapon.armorPiercing}</span>}
+            {weapon.impactType === 'splash' && (weapon.splashModels ?? 0) > 1 && (
+              <span class="chip !text-[var(--color-plasma)]">
+                <span data-i18n-ui="common.splash">Splash</span> ×{weapon.splashModels}
+              </span>
+            )}
+            {weapon.impactType === 'tile' && <span class="chip !text-[var(--color-plasma)]" data-i18n-ui="weaponDetail.impact.tile">Hits all models</span>}
           </div>
           <h1 class="text-3xl md:text-4xl font-black" data-i18n-weapon={weapon.id} data-i18n-fallback={weapon.name}>{weapon.name}</h1>
         </div>
@@ -67,7 +75,11 @@ const typeIcon = getWeaponTypeIcon(weapon.isMelee);
           <p class="text-xs text-[var(--color-faint)] uppercase tracking-wide mt-1.5" data-i18n-ui="common.damage">Damage</p>
         </div>
         <div class="text-center">
-          <p class="text-4xl font-black leading-none">{weapon.accuracy}%</p>
+          {weapon.isMelee && weapon.accuracy <= 0 ? (
+            <p class="text-3xl font-black leading-none mt-1.5" data-i18n-ui="common.melee">Melee</p>
+          ) : (
+            <p class="text-4xl font-black leading-none">{weapon.accuracy}%</p>
+          )}
           <p class="text-xs text-[var(--color-faint)] uppercase tracking-wide mt-1.5" data-i18n-ui="common.accuracy">Accuracy</p>
         </div>
       </div>
@@ -125,6 +137,37 @@ const typeIcon = getWeaponTypeIcon(weapon.isMelee);
       )}
     </section>
   </div>
+
+  <!-- Targeting & splash mechanics -->
+  <section class="surface p-5 mt-4">
+    <h2 class="text-lg font-bold mb-3" data-i18n-ui="weaponDetail.section.targeting">Targeting &amp; splash</h2>
+    <dl class="space-y-2.5 text-sm">
+      <div class="flex items-baseline justify-between gap-3">
+        <dt class="text-[var(--color-muted)]" data-i18n-ui="weaponDetail.impact.label">Impact</dt>
+        <dd class="font-semibold text-right">
+          {weapon.impactType === 'splash' ? (
+            <span><span data-i18n-ui="weaponDetail.impact.splash">Splash</span> — {weapon.splashModels} <span data-i18n-ui="weaponDetail.impact.models">models</span>, −{Math.round((weapon.splashFalloff ?? 0) * 100)}% <span data-i18n-ui="weaponDetail.impact.toSecondary">to secondary</span></span>
+          ) : weapon.impactType === 'tile' ? (
+            <span data-i18n-ui="weaponDetail.impact.tileFull">Every hit damages all models in the unit</span>
+          ) : (
+            <span data-i18n-ui="weaponDetail.impact.singleFull">Each hit damages a single model</span>
+          )}
+        </dd>
+      </div>
+      <div class="flex items-baseline justify-between gap-3">
+        <dt class="text-[var(--color-muted)]" data-i18n-ui="weaponDetail.targeting.label">Post-kill targeting</dt>
+        <dd class="font-semibold text-right max-w-[60%]">
+          {weapon.targetType === 'fixedEntireUnit' ? (
+            <span data-i18n-ui="weaponDetail.targeting.fixedEntireUnit">Whole unit focuses one target; shots are wasted if it dies early</span>
+          ) : weapon.targetType === 'redistribute' ? (
+            <span data-i18n-ui="weaponDetail.targeting.redistribute">Attacks retarget to living models</span>
+          ) : (
+            <span data-i18n-ui="weaponDetail.targeting.fixedPerMember">Each attacker locks one target; its shots are wasted if that target dies</span>
+          )}
+        </dd>
+      </div>
+    </dl>
+  </section>
 
   {weapon.isRanged && !weapon.isMelee && weapon.rangeMax > 0 && (
     <section class="surface p-5 mt-4">

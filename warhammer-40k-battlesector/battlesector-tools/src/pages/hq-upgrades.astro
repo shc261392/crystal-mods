@@ -1,0 +1,60 @@
+---
+import { hqUpgrades } from '../data/hq-upgrades';
+import Base from '../layouts/Base.astro';
+
+const tierOrder = ['base', 'uncommon', 'rare', 'legendary', 'enemy', 'zone'] as const;
+const tierTitle: Record<(typeof tierOrder)[number], string> = {
+  base: 'Base',
+  uncommon: 'Uncommon',
+  rare: 'Rare',
+  legendary: 'Legendary',
+  enemy: 'Enemy',
+  zone: 'Zone modifier',
+};
+
+const grouped = tierOrder.map((tier) => ({
+  tier,
+  title: tierTitle[tier],
+  rows: hqUpgrades.filter((r) => r.tier === tier),
+}));
+---
+
+<Base
+  title="HQ Upgrades / Tech Tree"
+  description="Research tab for Battlesector HQ upgrade cards and tech-tree related warzone upgrades."
+  path="/hq-upgrades"
+>
+  <header class="mb-6">
+    <p class="eyebrow mb-2">Research</p>
+    <h1 class="text-3xl md:text-4xl font-black">HQ Upgrades / Tech Tree</h1>
+    <p class="mt-2 text-[var(--color-muted)] max-w-3xl">
+      Verified from the warzone upgrades table (135 cards), mapped from GUIDs to
+      known asset names. This is a browse tab for upgrade-card coverage.
+    </p>
+  </header>
+
+  <section class="surface p-5 md:p-6">
+    <p class="text-sm text-[var(--color-faint)] mb-4">
+      Source chain: <code>warzone_upgrades.json</code> + GUID mapping through
+      extracted meta files. IDs and labels are preserved from extracted assets.
+    </p>
+    <div class="grid gap-4 lg:grid-cols-2">
+      {grouped.map((group) => (
+        <article class="rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] p-3.5">
+          <div class="flex items-center justify-between mb-2.5">
+            <h2 class="font-bold">{group.title}</h2>
+            <span class="chip !text-[var(--color-gold-dim)]">{group.rows.length}</span>
+          </div>
+          <div class="space-y-1.5 max-h-[22rem] overflow-auto pr-1">
+            {group.rows.map((r) => (
+              <div class="flex items-center justify-between gap-2 rounded border border-[var(--color-border)]/60 px-2.5 py-1.5">
+                <span class="text-sm text-[var(--color-muted)] break-all">{r.label}</span>
+                <span class="text-xs text-[var(--color-faint)] tabular-nums shrink-0">#{r.id}</span>
+              </div>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</Base>

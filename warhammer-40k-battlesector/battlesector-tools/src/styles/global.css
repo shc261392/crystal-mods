@@ -169,6 +169,29 @@ a {
   color: var(--color-muted);
 }
 
+.cover-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.7rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-base);
+  color: var(--color-muted);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.cover-btn:hover {
+  border-color: var(--color-border-strong);
+}
+
+.cover-btn[aria-checked="true"] {
+  border-color: var(--color-hp);
+  background: color-mix(in srgb, var(--color-hp) 12%, var(--color-base));
+  color: var(--color-ink);
+}
+
 .input,
 .select {
   width: 100%;

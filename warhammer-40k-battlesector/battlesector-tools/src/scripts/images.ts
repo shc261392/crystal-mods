@@ -144,3 +144,9 @@ export function getUnitPortrait(unitName: string, portraitKey?: string): string 
 export function getWeaponTypeIcon(isMelee: boolean): string | null {
   return getImageUrl('units', isMelee ? 'MeleeDamageIcon' : 'BalisticDamageIcon');
 }
+
+/** Resolve a weapon's in-game icon (the UI_WPN_* sprite) by its icon key. */
+export function getWeaponPortrait(iconKey?: string): string | null {
+  if (!iconKey) return null;
+  return getImageUrl('weapons', iconKey);
+}

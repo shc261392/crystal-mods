@@ -1,0 +1,127 @@
+[
+  {
+    "id": 486,
+    "category": "Ability description (Heirs of Azkaellon)",
+    "text": "Double all effects while unit is adjacent to HQ Commander"
+  },
+  {
+    "id": 550,
+    "category": "Ability Title (Overlord)",
+    "text": "Command Protocol"
+  },
+  {
+    "id": 585,
+    "category": "Status Effect Title (Overlord Command Protocol)",
+    "text": "Protocol of Passing Seasons"
+  },
+  {
+    "id": 586,
+    "category": "Status Effect Title (Overlord Command Protocol)",
+    "text": "Protocol of Unbending Will"
+  },
+  {
+    "id": 587,
+    "category": "Status Effect Title (Overlord Command Protocol)",
+    "text": "Protocol of the Infinite Horizon"
+  },
+  {
+    "id": 588,
+    "category": "Ability Description (Overlord Command Protocols)",
+    "text": "Toggle between two command protocols<br><br>Protocol of Passing Seasons<br>{0}<br><br>Protocol of Unbending Will<br>{1}"
+  },
+  {
+    "id": 589,
+    "category": "Ability Description (Empowered Overlord Command Protocols)",
+    "text": "Toggle between two command protocols and adds the Protocol of the Infinite Horizon to all units within {0} tiles.<br><br>Protocol of Passing Seasons<br>{1}<br><br>Protocol of Unbending Will<br>{2}<br><br>Protocol of the Infinite Horizon<br>{3}"
+  },
+  {
+    "id": 730,
+    "category": "HQ Command Flavour Text - Spirit of the Emperor",
+    "text": "<i>The Sororitas are imbued with a boundless font of vigour.</i>"
+  },
+  {
+    "id": 731,
+    "category": "HQ Command Flavour Text - Divine Guidance",
+    "text": "<i>Seeing the weaknesses in the enemies’ defenses, the Sisters of Battle strike with unerring accuracy</i>"
+  },
+  {
+    "id": 732,
+    "category": "HQ Command Flavour Text - Righteous Judgement",
+    "text": "<i>The Sororitas are filled with a burning passion to bring the Emperor’s judgements upon His enemies.</i> "
+  },
+  {
+    "id": 842,
+    "category": "Ability Description",
+    "text": "<i>Seeing the weaknesses in the enemy's defences, the Sisters of Battle within {0} tiles of the HQ Commander strike with unerring accuracy.</i>"
+  },
+  {
+    "id": 843,
+    "category": "Ability Description",
+    "text": "<i>The Sororitas within {0} tiles of the HQ Commander are imbued with a boundless font of vigour.</i>"
+  },
+  {
+    "id": 844,
+    "category": "Ability Description",
+    "text": "<i>The Battle Sisters within {0} tiles of the HQ Commander are filled with a burning passion to bring the Emperor’s judgements upon His enemies.</i>"
+  },
+  {
+    "id": 864,
+    "category": "Command ability description",
+    "text": "The HQ Commander channels the will of Gork and Mork to exhort allies within {0} tiles to lay down more fire."
+  },
+  {
+    "id": 878,
+    "category": "HQ Command Flavour Text - More Dakka",
+    "text": "<i>The HQ Commander channels the will of Gork and Mork to exhort his charges to lay down more fire</i>"
+  },
+  {
+    "id": 879,
+    "category": "HQ Command Flavour Text - Big Shoota Strafe",
+    "text": "<i>The Blitza-Bommer unleashes fusillades of deadly dakka from its Supa Shootas</i>"
+  },
+  {
+    "id": 880,
+    "category": "HQ Command Flavour Text - Boom Bomb",
+    "text": "<i>Boom!</i>"
+  },
+  {
+    "id": 893,
+    "category": "Ability Description (HQ)",
+    "text": "The HQ Commander uses the influence of the Warp to reduce its foes to a state of utter panic, frozen and less able to move or wield weaponry."
+  },
+  {
+    "id": 895,
+    "category": "Ability Description (HQ)",
+    "text": "Channelling the boundless font of anger and rage that emanates from the Lord of Skulls, the HQ Commander unleashes an attack from the Warp that inflicts {0} psychic damage across a wide area."
+  },
+  {
+    "id": 900,
+    "category": "Ability Flavour Text - Echoes of Endless Fury",
+    "text": "<i>The HQ Commander's apoplectic rage shatters the will to fight in every enemy of Khorne</i>"
+  },
+  {
+    "id": 913,
+    "category": "Ability Title",
+    "text": "Master of War"
+  },
+  {
+    "id": 987,
+    "category": "Ability Description - Master of War",
+    "text": "Affects all allies within {0} tiles of a T'au Commander"
+  },
+  {
+    "id": 1014,
+    "category": "Flavour Text - Master of War",
+    "text": "<i>Expertise born of countless battles</i>"
+  },
+  {
+    "id": 1096,
+    "category": "Ability - Title",
+    "text": "Voice of Command"
+  },
+  {
+    "id": 1195,
+    "category": "Ability - Desc - Voice of Command",
+    "text": "Units that start their turn in a Battleline with the Cadian Castellan receive +{0} Accuracy and +{1} Damage until the start of their next turn"
+  }
+]

@@ -1,0 +1,44 @@
+---
+// Segmented "cover" shield icon. Mirrors the in-game green shield with four
+// quadrant fills. Fill order (per game UI): top-right, then top-left, then
+// bottom-left, then bottom-right.
+//   level 1 = 1/4 (TR)        level 2 = 1/2 (TR+TL)
+//   level 3 = 3/4 (+BL)       level 4 = full (all)
+interface Props {
+  level: number;
+  size?: number;
+  class?: string;
+}
+const { level, size = 24, class: cls = '' } = Astro.props;
+const tr = level >= 1;
+const tl = level >= 2;
+const bl = level >= 3;
+const br = level >= 4;
+const lit = 'var(--color-hp)';
+const dim = 'color-mix(in srgb, var(--color-hp) 16%, transparent)';
+// Shield outline; quadrants are clipped to this shape.
+const shield = 'M4 4 H20 V13 C20 19 16 22.5 12 24 C8 22.5 4 19 4 13 Z';
+const clipId = `cs-${Math.random().toString(36).slice(2, 8)}`;
+---
+
+<svg
+  width={size}
+  height={size}
+  viewBox="0 0 24 26"
+  fill="none"
+  aria-hidden="true"
+  class={cls}
+>
+  <defs>
+    <clipPath id={clipId}><path d={shield} /></clipPath>
+  </defs>
+  <g clip-path={`url(#${clipId})`}>
+    <rect x="12" y="0" width="12" height="13" fill={tr ? lit : dim} />
+    <rect x="0" y="0" width="12" height="13" fill={tl ? lit : dim} />
+    <rect x="0" y="13" width="12" height="13" fill={bl ? lit : dim} />
+    <rect x="12" y="13" width="12" height="13" fill={br ? lit : dim} />
+    <line x1="12" y1="0" x2="12" y2="26" stroke="rgba(0,0,0,0.45)" stroke-width="1" />
+    <line x1="0" y1="13" x2="24" y2="13" stroke="rgba(0,0,0,0.45)" stroke-width="1" />
+  </g>
+  <path d={shield} stroke="var(--color-hp)" stroke-width="1.5" />
+</svg>
