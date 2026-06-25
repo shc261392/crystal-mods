@@ -47,7 +47,7 @@ const typeIcon = getWeaponTypeIcon(weapon.isMelee);
     <span class="text-[var(--color-muted)]" data-i18n-ui={weapon.isMelee ? 'common.melee' : 'common.ranged'}>{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
   </nav>
 
-  <div class="surface p-6 md:p-8">
+  <div class="panel-gilded p-6 md:p-8">
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
       <div class="flex items-center gap-4 min-w-0">
         {typeIcon && (
