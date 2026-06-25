@@ -2574,6 +2574,31 @@
       "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/skullcannonIcon.png",
       "r2_key": "units/skullcannonIcon.png",
       "source": "Selection portraits"
+    },
+    "hudUI_panelIcon-HEALTH": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/hudUI_panelIcon-HEALTH.png",
+      "r2_key": "units/hudUI_panelIcon-HEALTH.png",
+      "source": "Texture2D"
+    },
+    "hudUI_panelIcon-SHIELD": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/hudUI_panelIcon-SHIELD.png",
+      "r2_key": "units/hudUI_panelIcon-SHIELD.png",
+      "source": "Texture2D"
+    },
+    "hudUI_panelIcon-EVADE": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/hudUI_panelIcon-EVADE.png",
+      "r2_key": "units/hudUI_panelIcon-EVADE.png",
+      "source": "Texture2D"
+    },
+    "hudUI_panelIcon-MOVE": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/hudUI_panelIcon-MOVE.png",
+      "r2_key": "units/hudUI_panelIcon-MOVE.png",
+      "source": "Texture2D"
+    },
+    "hudUI_panelIcon-ACTION": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/hudUI_panelIcon-ACTION.png",
+      "r2_key": "units/hudUI_panelIcon-ACTION.png",
+      "source": "Texture2D"
     }
   },
   "weapons": {

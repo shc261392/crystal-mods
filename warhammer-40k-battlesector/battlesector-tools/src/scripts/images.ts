@@ -99,6 +99,19 @@ export function getFactionEmblem(factionId: number): string | null {
   return getImageUrl(ref.category, ref.key);
 }
 
+/** In-game unit-panel stat icons (health, armor/shield, evasion, move, AP). */
+const STAT_ICONS: Record<string, string> = {
+  health: 'hudUI_panelIcon-HEALTH',
+  armor: 'hudUI_panelIcon-SHIELD',
+  evasion: 'hudUI_panelIcon-EVADE',
+  movement: 'hudUI_panelIcon-MOVE',
+  actionPoints: 'hudUI_panelIcon-ACTION',
+};
+export function getStatIcon(stat: string): string | null {
+  const key = STAT_ICONS[stat];
+  return key ? getImageUrl('units', key) : null;
+}
+
 /**
  * Unit portrait rules. Battlesector renders most units as 3D models with no
  * standalone portrait texture, so only a handful of units have real artwork.

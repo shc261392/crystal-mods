@@ -10,7 +10,12 @@ import {
   units,
   weaponSlug,
 } from '../../lib/data';
-import { getFactionEmblem, getUnitPortrait, getWeaponTypeIcon } from '../../scripts/images';
+import {
+  getFactionEmblem,
+  getStatIcon,
+  getUnitPortrait,
+  getWeaponTypeIcon,
+} from '../../scripts/images';
 
 export function getStaticPaths() {
   return units.map((u) => ({
@@ -91,30 +96,35 @@ const vitals = [
     label: 'Health',
     value: unit.totalHealth,
     accent: 'var(--color-hp)',
+    stat: 'health',
   },
   {
     key: 'common.armor',
     label: 'Armor',
     value: unit.armorProfile === 1 ? unit.armorFront : unit.armor,
     accent: 'var(--color-shield)',
+    stat: 'armor',
   },
   {
     key: 'common.evasion',
     label: 'Evasion',
     value: unit.evasion,
     accent: 'var(--color-gold)',
+    stat: 'evasion',
   },
   {
     key: 'common.movement',
     label: 'Movement',
     value: unit.maxMovementPoints,
     accent: 'var(--color-ink)',
+    stat: 'movement',
   },
   {
     key: 'common.actionPoints',
     label: 'Action Points',
     value: unit.maxActionPoints,
     accent: 'var(--color-ink)',
+    stat: 'actionPoints',
   },
 ];
 ---
@@ -187,6 +197,9 @@ const vitals = [
     <div class="grid gap-x-6 gap-y-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
       {vitals.map((v) => (
         <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] px-3 py-2.5 text-center">
+          {getStatIcon(v.stat) && (
+            <img src={getStatIcon(v.stat)} alt="" width="22" height="22" loading="lazy" class="w-5 h-5 mx-auto mb-1 object-contain opacity-90" />
+          )}
           <p class="text-2xl font-black tabular-nums" style={`color:${v.accent}`}>{v.value}</p>
           <p class="label mt-1" data-i18n-ui={v.key}>{v.label}</p>
         </div>
