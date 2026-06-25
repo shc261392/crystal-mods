@@ -80,11 +80,16 @@ export function hasImage(category: ImageCategory, name: string): boolean {
  */
 const FACTION_EMBLEMS: Record<number, { category: ImageCategory; key: string }> = {
   0: { category: 'factions', key: '3CCUI_side_column_factionSelect-BloodAngels' },
+  1: { category: 'factions', key: '3CCUI_side_column_factionSelect-Tyranids' },
   2: { category: 'factions', key: '3CCUI_side_column_factionSelect-BattleSisters' },
   3: { category: 'factions', key: '3CCUI_side_column_factionSelect-Necrons' },
   4: { category: 'factions', key: '3CCUI_side_column_factionSelect-Necrons' },
+  5: { category: 'factions', key: '3CCUI_side_column_factionSelect-KhorneDaemons' },
+  7: { category: 'factions', key: '3CCUI_side_column_factionSelect-AstraMilitarum' },
   8: { category: 'factions', key: '3CCUI_side_column_factionSelect-Orks' },
-  9: { category: 'units', key: 'TauIconDecal' },
+  9: { category: 'factions', key: '3CCUI_side_column_factionSelect-Tau' },
+  10: { category: 'factions', key: '3CCUI_side_column_factionSelect-BlackLegion' },
+  11: { category: 'factions', key: '3CCUI_side_column_factionSelect-Ultramarines' },
 };
 
 /** Resolve a faction's emblem URL, or null when no crest texture exists. */
@@ -109,8 +114,13 @@ const PORTRAIT_RULES: Array<[RegExp, string]> = [
   [/gladiator lancer/i, 'GladiatorLancerIcon'],
 ];
 
-/** Resolve a unit's portrait URL by name, or null when none exists. */
-export function getUnitPortrait(unitName: string): string | null {
+/** Resolve a unit's portrait URL. Prefers the unit's own portrait key (from the
+ * Selection-portraits set), falling back to name-pattern rules. */
+export function getUnitPortrait(unitName: string, portraitKey?: string): string | null {
+  if (portraitKey) {
+    const url = getImageUrl('units', portraitKey);
+    if (url) return url;
+  }
   for (const [pattern, key] of PORTRAIT_RULES) {
     if (pattern.test(unitName)) return getImageUrl('units', key);
   }

@@ -85,7 +85,7 @@ const sorted = [...units].sort((a, b) => a.name.localeCompare(b.name));
   <!-- Grid -->
   <div id="grid" class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
     {sorted.map((u) => {
-      const thumb = getUnitPortrait(u.name) ?? getFactionEmblem(u.faction);
+      const thumb = getUnitPortrait(u.name, u.portrait) ?? getFactionEmblem(u.faction);
       return (
       <a
         href={`/units/${unitSlug(u)}`}
@@ -116,6 +116,9 @@ const sorted = [...units].sort((a, b) => a.name.localeCompare(b.name));
             </div>
             <p class="text-xs text-[var(--color-faint)] mt-0.5 flex items-center gap-1.5">
               <span class="w-1.5 h-1.5 rounded-full shrink-0" style={`background:${factionColor(u.factionName)}`}></span>
+              {getFactionEmblem(u.faction) && (
+                <img src={getFactionEmblem(u.faction)} alt="" width="14" height="14" loading="lazy" class="w-3.5 h-3.5 object-contain shrink-0" />
+              )}
               <span data-i18n-faction={u.faction} data-i18n-fallback={u.factionName}>{u.factionName}</span> · <span data-i18n-role={u.role} data-i18n-fallback={u.roleName}>{u.roleName}</span>
             </p>
           </div>

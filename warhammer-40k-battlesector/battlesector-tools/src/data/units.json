@@ -47,7 +47,8 @@
         ]
       }
     ],
-    "abilityIds": [20040, 20011, 20012, 20032, 20003, 20013, 20001, 20033]
+    "abilityIds": [20040, 20011, 20012, 20032, 20003, 20013, 20001, 20033],
+    "portrait": "CanonessSeliciaIcon"
   },
   {
     "id": 2023,
@@ -90,7 +91,8 @@
         ]
       }
     ],
-    "abilityIds": [20014, 20015, 20041, 20001, 20033]
+    "abilityIds": [20014, 20015, 20041, 20001, 20033],
+    "portrait": "HospitallerIcon"
   },
   {
     "id": 2021,
@@ -138,7 +140,8 @@
         ]
       }
     ],
-    "abilityIds": [20042, 20001, 20033]
+    "abilityIds": [20042, 20001, 20033],
+    "portrait": "ImagifierIcon"
   },
   {
     "id": 2024,
@@ -186,7 +189,8 @@
         ]
       }
     ],
-    "abilityIds": [20042, 20043, 20001, 20033]
+    "abilityIds": [20042, 20043, 20001, 20033],
+    "portrait": "ImagifierIcon"
   },
   {
     "id": 2025,
@@ -234,7 +238,8 @@
         ]
       }
     ],
-    "abilityIds": [20042, 20043, 20044, 20001, 20033]
+    "abilityIds": [20042, 20043, 20044, 20001, 20033],
+    "portrait": "ImagifierIcon"
   },
   {
     "id": 2013,
@@ -289,7 +294,8 @@
         ]
       }
     ],
-    "abilityIds": [20002, 20007, 20032, 20003, 20001, 20033]
+    "abilityIds": [20002, 20007, 20032, 20003, 20001, 20033],
+    "portrait": "VerityIcon"
   },
   {
     "id": 2014,
@@ -332,7 +338,8 @@
         ]
       }
     ],
-    "abilityIds": [20018, 20031]
+    "abilityIds": [20018, 20031],
+    "portrait": "ArcoFlagellantIcon"
   },
   {
     "id": 2006,
@@ -380,7 +387,8 @@
         ]
       }
     ],
-    "abilityIds": [12, 20001, 20033, 20000]
+    "abilityIds": [12, 20001, 20033, 20000],
+    "portrait": "BattleSisterIcon"
   },
   {
     "id": 2002,
@@ -425,7 +433,8 @@
         ]
       }
     ],
-    "abilityIds": [20005, 20006, 20001, 20033]
+    "abilityIds": [20005, 20006, 20001, 20033],
+    "portrait": "SeraphimIcon"
   },
   {
     "id": 2005,
@@ -475,7 +484,8 @@
         ]
       }
     ],
-    "abilityIds": [20016, 20030, 20001, 20033]
+    "abilityIds": [20016, 20030, 20001, 20033],
+    "portrait": "CelestianIcon"
   },
   {
     "id": 2003,
@@ -520,7 +530,8 @@
         ]
       }
     ],
-    "abilityIds": [11, 20034, 20001, 20033]
+    "abilityIds": [11, 20034, 20001, 20033],
+    "portrait": "DominionsIcon"
   },
   {
     "id": 2020,
@@ -568,7 +579,8 @@
         ]
       }
     ],
-    "abilityIds": [20005, 20006, 20047, 20001, 20033]
+    "abilityIds": [20005, 20006, 20047, 20001, 20033],
+    "portrait": "ZephyrimIcon"
   },
   {
     "id": 2007,
@@ -616,7 +628,8 @@
         ]
       }
     ],
-    "abilityIds": [20035, 20031]
+    "abilityIds": [20035, 20031],
+    "portrait": "RepentiaIcon"
   },
   {
     "id": 2017,
@@ -664,7 +677,8 @@
         ]
       }
     ],
-    "abilityIds": [20025, 20016, 20030, 20001, 20033]
+    "abilityIds": [20025, 20016, 20030, 20001, 20033],
+    "portrait": "CelestianIcon"
   },
   {
     "id": 2004,
@@ -709,7 +723,8 @@
         ]
       }
     ],
-    "abilityIds": [20036, 20001, 20033]
+    "abilityIds": [20036, 20001, 20033],
+    "portrait": "RetributorIcon"
   },
   {
     "id": 2009,
@@ -752,7 +767,8 @@
         ]
       }
     ],
-    "abilityIds": [20014, 20015, 20041, 20001, 20033]
+    "abilityIds": [20014, 20015, 20041, 20001, 20033],
+    "portrait": "HospitallerIcon"
   },
   {
     "id": 2012,
@@ -805,7 +821,8 @@
         ]
       }
     ],
-    "abilityIds": [20008, 20031]
+    "abilityIds": [20008, 20031],
+    "portrait": "PenitentEngineIcon"
   },
   {
     "id": 2001,
@@ -860,7 +877,8 @@
         ]
       }
     ],
-    "abilityIds": [20002, 20007, 20032, 20003, 20001, 20033]
+    "abilityIds": [20002, 20007, 20032, 20003, 20001, 20033],
+    "portrait": "SisterSuperiorIcon"
   },
   {
     "id": 2016,
@@ -903,7 +921,8 @@
         ]
       }
     ],
-    "abilityIds": [20009, 24, 20024, 20029, 23]
+    "abilityIds": [20009, 24, 20024, 20029, 23],
+    "portrait": "RhinoIcon"
   },
   {
     "id": 2018,
@@ -951,7 +970,8 @@
         ]
       }
     ],
-    "abilityIds": [20042, 20043, 20044, 20001, 20033]
+    "abilityIds": [20042, 20043, 20044, 20001, 20033],
+    "portrait": "ImagifierIcon"
   },
   {
     "id": 2015,
@@ -1001,7 +1021,8 @@
         ]
       }
     ],
-    "abilityIds": [20022, 20030, 20001, 20033]
+    "abilityIds": [20022, 20030, 20001, 20033],
+    "portrait": "ParagonWarsuitIcon"
   },
   {
     "id": 2011,
@@ -1051,7 +1072,8 @@
         ]
       }
     ],
-    "abilityIds": [20009, 20029, 23]
+    "abilityIds": [20009, 20029, 23],
+    "portrait": "ImmolatorIcon"
   },
   {
     "id": 2000,
@@ -1101,7 +1123,8 @@
         ]
       }
     ],
-    "abilityIds": [20040, 20011, 20012, 20032, 20003, 20013, 20001, 20033]
+    "abilityIds": [20040, 20011, 20012, 20032, 20003, 20013, 20001, 20033],
+    "portrait": "CanonessIcon"
   },
   {
     "id": 2019,
@@ -1160,7 +1183,8 @@
         ]
       }
     ],
-    "abilityIds": [20029, 23]
+    "abilityIds": [20029, 23],
+    "portrait": "CastigatorIcon"
   },
   {
     "id": 2010,
@@ -1208,7 +1232,8 @@
         ]
       }
     ],
-    "abilityIds": [20020, 20021, 20029, 23]
+    "abilityIds": [20020, 20021, 20029, 23],
+    "portrait": "ExorcistIcon"
   },
   {
     "id": 7018,
@@ -1245,7 +1270,8 @@
     "activationRange": 1,
     "awarenessRange": 0,
     "weaponSlots": [],
-    "abilityIds": [80025]
+    "abilityIds": [80025],
+    "portrait": "MeltaMineIcon"
   },
   {
     "id": 7016,
@@ -1306,7 +1332,8 @@
         ]
       }
     ],
-    "abilityIds": [80000, 80008, 80010, 80009, 80003, 80041, 80043]
+    "abilityIds": [80000, 80008, 80010, 80009, 80003, 80041, 80043],
+    "portrait": "TankCommanderKoradIcon"
   },
   {
     "id": 7003,
@@ -1404,7 +1431,8 @@
         ]
       }
     ],
-    "abilityIds": [80000, 80001, 80045, 80046, 80047, 80041]
+    "abilityIds": [80000, 80001, 80045, 80046, 80047, 80041],
+    "portrait": "CadianSergeantIcon"
   },
   {
     "id": 7010,
@@ -1448,7 +1476,8 @@
         ]
       }
     ],
-    "abilityIds": [80039]
+    "abilityIds": [80039],
+    "portrait": "KasrkinIcon"
   },
   {
     "id": 7007,
@@ -1552,7 +1581,8 @@
         ]
       }
     ],
-    "abilityIds": [80001, 80023, 80022, 80021]
+    "abilityIds": [80001, 80023, 80022, 80021],
+    "portrait": "PsykerIcon"
   },
   {
     "id": 7011,
@@ -1602,7 +1632,8 @@
         ]
       }
     ],
-    "abilityIds": []
+    "abilityIds": [],
+    "portrait": "ArmouredSentinelMultiLaserIcon"
   },
   {
     "id": 7008,
@@ -1650,7 +1681,8 @@
         ]
       }
     ],
-    "abilityIds": [80039, 80018, 80020, 80019]
+    "abilityIds": [80039, 80018, 80020, 80019],
+    "portrait": "OgrynsIcon"
   },
   {
     "id": 7006,
@@ -1699,7 +1731,8 @@
         ]
       }
     ],
-    "abilityIds": [80000, 80001, 80011, 80013, 80012, 80041]
+    "abilityIds": [80000, 80001, 80011, 80013, 80012, 80041],
+    "portrait": "CommissarIcon"
   },
   {
     "id": 7017,
@@ -1759,7 +1792,8 @@
         ]
       }
     ],
-    "abilityIds": [80034, 80003]
+    "abilityIds": [80034, 80003],
+    "portrait": "ChimeraIcon"
   },
   {
     "id": 7004,
@@ -1810,7 +1844,8 @@
         ]
       }
     ],
-    "abilityIds": [80000, 80001, 80005, 80006, 80007, 80041]
+    "abilityIds": [80000, 80001, 80005, 80006, 80007, 80041],
+    "portrait": "CadianCastellanIcon"
   },
   {
     "id": 7012,
@@ -1858,7 +1893,8 @@
         ]
       }
     ],
-    "abilityIds": [80004, 80033, 80031, 80032]
+    "abilityIds": [80004, 80033, 80031, 80032],
+    "portrait": "BasiliskIcon"
   },
   {
     "id": 7001,
@@ -1937,7 +1973,8 @@
         ]
       }
     ],
-    "abilityIds": [80003, 80043]
+    "abilityIds": [80003, 80043],
+    "portrait": "LemanRussBattleTankIcon"
   },
   {
     "id": 7005,
@@ -1998,7 +2035,8 @@
         ]
       }
     ],
-    "abilityIds": [80000, 80008, 80010, 80009, 80003, 80041, 80043]
+    "abilityIds": [80000, 80008, 80010, 80009, 80003, 80041, 80043],
+    "portrait": "TankCommanderIcon"
   },
   {
     "id": 7013,
@@ -2064,7 +2102,8 @@
         ]
       }
     ],
-    "abilityIds": [80003, 80044]
+    "abilityIds": [80003, 80044],
+    "portrait": "RogalDornBattleTankIcon"
   },
   {
     "id": 10005,
@@ -2105,7 +2144,8 @@
         "options": [{ "weaponId": 4010, "name": "Autogun", "pointCost": 0, "startsLocked": false }]
       }
     ],
-    "abilityIds": [90020, 90019]
+    "abilityIds": [90020, 90019],
+    "portrait": "ChaosCultistsWarbandIcon"
   },
   {
     "id": 10004,
@@ -2158,7 +2198,8 @@
         ]
       }
     ],
-    "abilityIds": [90017, 90019]
+    "abilityIds": [90017, 90019],
+    "portrait": "ChaosCultistsMobIcon"
   },
   {
     "id": 10006,
@@ -2199,7 +2240,8 @@
         "options": [{ "weaponId": 8011, "name": "Boltgun", "pointCost": 0, "startsLocked": false }]
       }
     ],
-    "abilityIds": [90021, 12, 11]
+    "abilityIds": [90021, 12, 11],
+    "portrait": "ChaosLegionariesIcon"
   },
   {
     "id": 10009,
@@ -2248,7 +2290,8 @@
         ]
       }
     ],
-    "abilityIds": [90026, 90027]
+    "abilityIds": [90026, 90027],
+    "portrait": "RaptorsIcon"
   },
   {
     "id": 10003,
@@ -2291,7 +2334,8 @@
         ]
       }
     ],
-    "abilityIds": [90015, 90016, 90019, 90014]
+    "abilityIds": [90015, 90016, 90019, 90014],
+    "portrait": "cultistIcon"
   },
   {
     "id": 10008,
@@ -2351,7 +2395,8 @@
         ]
       }
     ],
-    "abilityIds": [90023]
+    "abilityIds": [90023],
+    "portrait": "ChosenIcon"
   },
   {
     "id": 10010,
@@ -2417,7 +2462,8 @@
         ]
       }
     ],
-    "abilityIds": [90028]
+    "abilityIds": [90028],
+    "portrait": "HavocsChaincannonIcon"
   },
   {
     "id": 10015,
@@ -2460,7 +2506,8 @@
         ]
       }
     ],
-    "abilityIds": [20009, 20024, 90037, 23]
+    "abilityIds": [20009, 20024, 90037, 23],
+    "portrait": "ChaosRhinoIcon"
   },
   {
     "id": 10011,
@@ -2511,7 +2558,8 @@
         ]
       }
     ],
-    "abilityIds": [90029, 23]
+    "abilityIds": [90029, 23],
+    "portrait": "HelbruteIcon"
   },
   {
     "id": 10002,
@@ -2559,7 +2607,8 @@
         ]
       }
     ],
-    "abilityIds": [90012, 90013, 90011]
+    "abilityIds": [90012, 90013, 90011],
+    "portrait": "MasterOfExecutionsIcon"
   },
   {
     "id": 10013,
@@ -2607,7 +2656,8 @@
         ]
       }
     ],
-    "abilityIds": [90033, 90032, 90034, 23]
+    "abilityIds": [90033, 90032, 90034, 23],
+    "portrait": "VenomcrawlerIcon"
   },
   {
     "id": 10012,
@@ -2690,7 +2740,8 @@
         ]
       }
     ],
-    "abilityIds": [90041, 90030, 90031]
+    "abilityIds": [90041, 90030, 90031],
+    "portrait": "ObliteratorIcon"
   },
   {
     "id": 10000,
@@ -2740,7 +2791,8 @@
         ]
       }
     ],
-    "abilityIds": [90005, 90003, 90004]
+    "abilityIds": [90005, 90003, 90004],
+    "portrait": "ChaosLordIcon"
   },
   {
     "id": 10007,
@@ -2792,7 +2844,8 @@
         ]
       }
     ],
-    "abilityIds": [90022]
+    "abilityIds": [90022],
+    "portrait": "ChaosTerminatorsIcon"
   },
   {
     "id": 10001,
@@ -2835,7 +2888,8 @@
         ]
       }
     ],
-    "abilityIds": [90010, 90007, 90009, 90006, 90008]
+    "abilityIds": [90010, 90007, 90009, 90006, 90008],
+    "portrait": "ChaosSorcererIcon"
   },
   {
     "id": 10014,
@@ -2894,7 +2948,8 @@
         ]
       }
     ],
-    "abilityIds": [23]
+    "abilityIds": [23],
+    "portrait": "ForgefiendAutocannonIcon"
   },
   {
     "id": 102,
@@ -2945,7 +3000,8 @@
         "options": [{ "weaponId": 22, "name": "Chainsword", "pointCost": 0, "startsLocked": false }]
       }
     ],
-    "abilityIds": [7, 9, 10]
+    "abilityIds": [7, 9, 10],
+    "portrait": "BrotherAeturoIcon"
   },
   {
     "id": 104,
@@ -3048,7 +3104,8 @@
         ]
       }
     ],
-    "abilityIds": [1, 2, 3, 4]
+    "abilityIds": [1, 2, 3, 4],
+    "portrait": "LieutenantIcon"
   },
   {
     "id": 100,
@@ -3154,7 +3211,8 @@
         "options": [{ "weaponId": 29, "name": "Power Axe", "pointCost": 0, "startsLocked": false }]
       }
     ],
-    "abilityIds": [16, 17, 18]
+    "abilityIds": [16, 17, 18],
+    "portrait": "TechmarineIcon"
   },
   {
     "id": 13,
@@ -3246,7 +3304,8 @@
         ]
       }
     ],
-    "abilityIds": [13, 12]
+    "abilityIds": [13, 12],
+    "portrait": "AssaultIntercessorsIcon"
   },
   {
     "id": 3,
@@ -3293,7 +3352,8 @@
         "options": [{ "weaponId": 41, "name": "Chainsword", "pointCost": 0, "startsLocked": false }]
       }
     ],
-    "abilityIds": [1, 32, 33]
+    "abilityIds": [1, 32, 33],
+    "portrait": "DeathCompanyIcon"
   },
   {
     "id": 40,
@@ -3337,7 +3397,8 @@
         ]
       }
     ],
-    "abilityIds": [5, 6, 30010]
+    "abilityIds": [5, 6, 30010],
+    "portrait": "LandspeederIcon"
   },
   {
     "id": 9,
@@ -3386,7 +3447,8 @@
         ]
       }
     ],
-    "abilityIds": [15]
+    "abilityIds": [15],
+    "portrait": "UltramarinesHellblastersIcon"
   },
   {
     "id": 5,
@@ -3430,7 +3492,8 @@
         ]
       }
     ],
-    "abilityIds": [38, 27]
+    "abilityIds": [38, 27],
+    "portrait": "InceptorIcon"
   },
   {
     "id": 10,
@@ -3491,7 +3554,8 @@
         ]
       }
     ],
-    "abilityIds": [14]
+    "abilityIds": [14],
+    "portrait": "UltramarinesAggressorsIcon"
   },
   {
     "id": 105,
@@ -3541,7 +3605,8 @@
         ]
       }
     ],
-    "abilityIds": [6, 30010]
+    "abilityIds": [6, 30010],
+    "portrait": "LandspeederTornadoIcon"
   },
   {
     "id": 2,
@@ -3592,7 +3657,8 @@
         "options": [{ "weaponId": 22, "name": "Chainsword", "pointCost": 0, "startsLocked": false }]
       }
     ],
-    "abilityIds": [7, 9, 10]
+    "abilityIds": [7, 9, 10],
+    "portrait": "SanguinaryPriestIcon"
   },
   {
     "id": 17,
@@ -3643,7 +3709,8 @@
         "options": [{ "weaponId": 29, "name": "Power Axe", "pointCost": 0, "startsLocked": false }]
       }
     ],
-    "abilityIds": [16, 17, 18]
+    "abilityIds": [16, 17, 18],
+    "portrait": "TechmarineIcon"
   },
   {
     "id": 30,
@@ -3693,7 +3760,8 @@
         ]
       }
     ],
-    "abilityIds": [26, 23]
+    "abilityIds": [26, 23],
+    "portrait": "FuriosoDreadnoughtIcon"
   },
   {
     "id": 0,
@@ -3748,7 +3816,8 @@
         ]
       }
     ],
-    "abilityIds": [1, 2, 3, 4]
+    "abilityIds": [1, 2, 3, 4],
+    "portrait": "LieutenantIcon"
   },
   {
     "id": 107,
@@ -3799,7 +3868,8 @@
         ]
       }
     ],
-    "abilityIds": [1, 40]
+    "abilityIds": [1, 40],
+    "portrait": "SanguinaryGuardIcon"
   },
   {
     "id": 1,
@@ -3852,7 +3922,8 @@
         ]
       }
     ],
-    "abilityIds": [29, 30, 31]
+    "abilityIds": [29, 30, 31],
+    "portrait": "LibrarianDreadnoughtIcon"
   },
   {
     "id": 106,
@@ -3901,7 +3972,8 @@
         ]
       }
     ],
-    "abilityIds": [39]
+    "abilityIds": [39],
+    "portrait": "AssaultTerminatorIcon"
   },
   {
     "id": 108,
@@ -3980,7 +4052,8 @@
         ]
       }
     ],
-    "abilityIds": []
+    "abilityIds": [],
+    "portrait": "InvictorWarsuitIcon"
   },
   {
     "id": 36,
@@ -4029,7 +4102,8 @@
         ]
       }
     ],
-    "abilityIds": [34, 23]
+    "abilityIds": [34, 23],
+    "portrait": "BaalPredatorIcon"
   },
   {
     "id": 33,
@@ -4077,7 +4151,8 @@
         ]
       }
     ],
-    "abilityIds": [20, 22, 21, 23]
+    "abilityIds": [20, 22, 21, 23],
+    "portrait": "LibrarianDreadnoughtIcon"
   },
   {
     "id": 5002,
@@ -4120,7 +4195,8 @@
         ]
       }
     ],
-    "abilityIds": [50005, 50006]
+    "abilityIds": [50005, 50006],
+    "portrait": "BloodLetterIcon"
   },
   {
     "id": 5004,
@@ -4168,7 +4244,8 @@
         ]
       }
     ],
-    "abilityIds": [50000, 50006]
+    "abilityIds": [50000, 50006],
+    "portrait": "FleshHoundIcon"
   },
   {
     "id": 5003,
@@ -4211,7 +4288,8 @@
         ]
       }
     ],
-    "abilityIds": [50004, 50003, 50006, 50005]
+    "abilityIds": [50004, 50003, 50006, 50005],
+    "portrait": "BloodMasterIcon"
   },
   {
     "id": 5006,
@@ -4254,7 +4332,8 @@
         ]
       }
     ],
-    "abilityIds": [50013, 50006]
+    "abilityIds": [50013, 50006],
+    "portrait": "BloodcrusherIcon"
   },
   {
     "id": 5001,
@@ -4297,7 +4376,8 @@
         ]
       }
     ],
-    "abilityIds": [50007, 50008, 50006]
+    "abilityIds": [50007, 50008, 50006],
+    "portrait": "skullcannonIcon"
   },
   {
     "id": 5008,
@@ -4367,7 +4447,8 @@
         ]
       }
     ],
-    "abilityIds": [50004, 50015, 50006]
+    "abilityIds": [50004, 50015, 50006],
+    "portrait": "DaemonPrinceIcon"
   },
   {
     "id": 5005,
@@ -4416,7 +4497,8 @@
         "options": [{ "weaponId": 4017, "name": "Iron Claw", "pointCost": 0, "startsLocked": true }]
       }
     ],
-    "abilityIds": [23, 50006]
+    "abilityIds": [23, 50006],
+    "portrait": "SoulGrinderIcon"
   },
   {
     "id": 5000,
@@ -4479,7 +4561,8 @@
         ]
       }
     ],
-    "abilityIds": [50004, 50009, 50010, 50011, 50006]
+    "abilityIds": [50004, 50009, 50010, 50011, 50006],
+    "portrait": "BloodthirsterIcon"
   },
   {
     "id": 4000,
@@ -4523,7 +4606,8 @@
         ]
       }
     ],
-    "abilityIds": [30001]
+    "abilityIds": [30001],
+    "portrait": "NecronWarriorIcon"
   },
   {
     "id": 4003,
@@ -4573,7 +4657,8 @@
         ]
       }
     ],
-    "abilityIds": [30010, 30011, 30012]
+    "abilityIds": [30010, 30011, 30012],
+    "portrait": "TombBladeIcon"
   },
   {
     "id": 4002,
@@ -4627,7 +4712,8 @@
         ]
       }
     ],
-    "abilityIds": [30028, 30003]
+    "abilityIds": [30028, 30003],
+    "portrait": "SkorpekhDestroyerIcon"
   },
   {
     "id": 4001,
@@ -4675,7 +4761,8 @@
         ]
       }
     ],
-    "abilityIds": [30004, 30005]
+    "abilityIds": [30004, 30005],
+    "portrait": "HexmarkIcon"
   },
   {
     "id": 3011,
@@ -4718,7 +4805,8 @@
         ]
       }
     ],
-    "abilityIds": [30021, 30010]
+    "abilityIds": [30021, 30010],
+    "portrait": "CanoptekScarabSwarmIcon"
   },
   {
     "id": 3003,
@@ -4762,7 +4850,8 @@
         ]
       }
     ],
-    "abilityIds": [30001]
+    "abilityIds": [30001],
+    "portrait": "NecronWarriorIcon"
   },
   {
     "id": 3007,
@@ -4805,7 +4894,8 @@
         ]
       }
     ],
-    "abilityIds": [30001, 30008, 30002]
+    "abilityIds": [30001, 30008, 30002],
+    "portrait": "FlayedOnesIcon"
   },
   {
     "id": 3006,
@@ -4853,7 +4943,8 @@
         ]
       }
     ],
-    "abilityIds": [30001, 30007, 30008]
+    "abilityIds": [30001, 30007, 30008],
+    "portrait": "DeathmarkIcon"
   },
   {
     "id": 3004,
@@ -4897,7 +4988,8 @@
         ]
       }
     ],
-    "abilityIds": [30001]
+    "abilityIds": [30001],
+    "portrait": "NecronImmortalIcon"
   },
   {
     "id": 3012,
@@ -4942,7 +5034,8 @@
         ]
       }
     ],
-    "abilityIds": [30028, 30011, 30012, 30010]
+    "abilityIds": [30028, 30011, 30012, 30010],
+    "portrait": "TombBladeIcon"
   },
   {
     "id": 3008,
@@ -4990,7 +5083,8 @@
         ]
       }
     ],
-    "abilityIds": [30001, 30009]
+    "abilityIds": [30001, 30009],
+    "portrait": "TriarchPraetorianIcon"
   },
   {
     "id": 3010,
@@ -5142,7 +5236,8 @@
         ]
       }
     ],
-    "abilityIds": [30028, 30003]
+    "abilityIds": [30028, 30003],
+    "portrait": "SkorpekhDestroyerIcon"
   },
   {
     "id": 3002,
@@ -5190,7 +5285,8 @@
         ]
       }
     ],
-    "abilityIds": [30004, 30005]
+    "abilityIds": [30004, 30005],
+    "portrait": "HexmarkIcon"
   },
   {
     "id": 3015,
@@ -5233,7 +5329,8 @@
         ]
       }
     ],
-    "abilityIds": [30030, 30029]
+    "abilityIds": [30030, 30029],
+    "portrait": "RoyalWardenIcon"
   },
   {
     "id": 3013,
@@ -5287,7 +5384,8 @@
         ]
       }
     ],
-    "abilityIds": [30022, 30010, 30027]
+    "abilityIds": [30022, 30010, 30027],
+    "portrait": "AnnihilationBargeIcon"
   },
   {
     "id": 3001,
@@ -5335,7 +5433,8 @@
         ]
       }
     ],
-    "abilityIds": [30017, 30018, 30019, 30010]
+    "abilityIds": [30017, 30018, 30019, 30010],
+    "portrait": "PlasmancerIcon"
   },
   {
     "id": 3000,
@@ -5387,7 +5486,8 @@
         ]
       }
     ],
-    "abilityIds": [30013, 30014, 30015, 30016]
+    "abilityIds": [30013, 30014, 30015, 30016],
+    "portrait": "OverlordIcon"
   },
   {
     "id": 8021,
@@ -5440,7 +5540,8 @@
         ]
       }
     ],
-    "abilityIds": [60034, 60032, 60033]
+    "abilityIds": [60034, 60032, 60033],
+    "portrait": "DakkadakBatzblitzaIcon"
   },
   {
     "id": 8005,
@@ -5483,7 +5584,8 @@
         ]
       }
     ],
-    "abilityIds": [60001]
+    "abilityIds": [60001],
+    "portrait": "Gretchin"
   },
   {
     "id": 8020,
@@ -5570,7 +5672,8 @@
         ]
       }
     ],
-    "abilityIds": [60001, 60015, 60016]
+    "abilityIds": [60001, 60015, 60016],
+    "portrait": "Boyz"
   },
   {
     "id": 8009,
@@ -5609,7 +5712,8 @@
     "weaponSlots": [
       { "options": [{ "weaponId": 5013, "name": "Burna", "pointCost": 0, "startsLocked": false }] }
     ],
-    "abilityIds": [60001, 60017]
+    "abilityIds": [60001, 60017],
+    "portrait": "BurnaBoyz"
   },
   {
     "id": 8004,
@@ -5651,7 +5755,8 @@
       },
       { "options": [{ "weaponId": 5006, "name": "Choppa", "pointCost": 0, "startsLocked": false }] }
     ],
-    "abilityIds": [60001, 60013, 60014]
+    "abilityIds": [60001, 60013, 60014],
+    "portrait": "Stormboyz"
   },
   {
     "id": 8012,
@@ -5692,7 +5797,8 @@
         "options": [{ "weaponId": 5016, "name": "Dakkagun", "pointCost": 0, "startsLocked": false }]
       }
     ],
-    "abilityIds": [60021, 60022, 60028]
+    "abilityIds": [60021, 60022, 60028],
+    "portrait": "Warbiker"
   },
   {
     "id": 8003,
@@ -5735,7 +5841,8 @@
         ]
       }
     ],
-    "abilityIds": [60012, 60030]
+    "abilityIds": [60012, 60030],
+    "portrait": "Painboy"
   },
   {
     "id": 8007,
@@ -5783,7 +5890,8 @@
         ]
       }
     ],
-    "abilityIds": [60001, 60002]
+    "abilityIds": [60001, 60002],
+    "portrait": "Nobz"
   },
   {
     "id": 8010,
@@ -5827,7 +5935,8 @@
         ]
       }
     ],
-    "abilityIds": [60001, 60018]
+    "abilityIds": [60001, 60018],
+    "portrait": "Lootas"
   },
   {
     "id": 8001,
@@ -5870,7 +5979,8 @@
         ]
       }
     ],
-    "abilityIds": [60008, 60007, 60006]
+    "abilityIds": [60008, 60007, 60006],
+    "portrait": "Weirdboy"
   },
   {
     "id": 8014,
@@ -5914,7 +6024,8 @@
         ]
       }
     ],
-    "abilityIds": [60024, 60029, 60028]
+    "abilityIds": [60024, 60029, 60028],
+    "portrait": "Deffkoptas"
   },
   {
     "id": 8019,
@@ -5962,7 +6073,8 @@
         ]
       }
     ],
-    "abilityIds": [60036, 60028]
+    "abilityIds": [60036, 60028],
+    "portrait": "KustomBoostaBlastaIcon"
   },
   {
     "id": 8011,
@@ -6003,7 +6115,8 @@
         "options": [{ "weaponId": 5015, "name": "Snazzgun", "pointCost": 0, "startsLocked": false }]
       }
     ],
-    "abilityIds": [60001, 60020]
+    "abilityIds": [60001, 60020],
+    "portrait": "FlashGitz"
   },
   {
     "id": 8002,
@@ -6051,7 +6164,8 @@
         ]
       }
     ],
-    "abilityIds": [60009, 60011, 60010]
+    "abilityIds": [60009, 60011, 60010],
+    "portrait": "BigMek"
   },
   {
     "id": 8008,
@@ -6106,7 +6220,8 @@
         "options": [{ "weaponId": 5012, "name": "Killsaw", "pointCost": 0, "startsLocked": false }]
       }
     ],
-    "abilityIds": [60001, 60002]
+    "abilityIds": [60001, 60002],
+    "portrait": "Meganobz"
   },
   {
     "id": 8013,
@@ -6155,7 +6270,8 @@
         ]
       }
     ],
-    "abilityIds": [60023, 60028]
+    "abilityIds": [60023, 60028],
+    "portrait": "DeffDread"
   },
   {
     "id": 8018,
@@ -6208,7 +6324,8 @@
         ]
       }
     ],
-    "abilityIds": [60037, 60035, 60028]
+    "abilityIds": [60037, 60035, 60028],
+    "portrait": "ShokkjumpDragstaIcon"
   },
   {
     "id": 8000,
@@ -6259,7 +6376,8 @@
         ]
       }
     ],
-    "abilityIds": [60004, 60005]
+    "abilityIds": [60004, 60005],
+    "portrait": "Warboss"
   },
   {
     "id": 8017,
@@ -6310,7 +6428,8 @@
         "options": [{ "weaponId": 5034, "name": "Killa Jet", "pointCost": 0, "startsLocked": true }]
       }
     ],
-    "abilityIds": [60034, 60033, 60028]
+    "abilityIds": [60034, 60033, 60028],
+    "portrait": "DeffkillaWartrikeIcon"
   },
   {
     "id": 9003,
@@ -6353,7 +6472,8 @@
         ]
       }
     ],
-    "abilityIds": [30010]
+    "abilityIds": [30010],
+    "portrait": "TacticalDrones"
   },
   {
     "id": 9016,
@@ -6514,7 +6634,8 @@
         ]
       }
     ],
-    "abilityIds": [70004]
+    "abilityIds": [70004],
+    "portrait": "StrikeTeam"
   },
   {
     "id": 9006,
@@ -6557,7 +6678,8 @@
         ]
       }
     ],
-    "abilityIds": [70022]
+    "abilityIds": [70022],
+    "portrait": "BreacherTeam"
   },
   {
     "id": 9004,
@@ -6601,7 +6723,8 @@
         ]
       }
     ],
-    "abilityIds": [70004]
+    "abilityIds": [70004],
+    "portrait": "Pathfinders"
   },
   {
     "id": 9012,
@@ -6650,7 +6773,8 @@
         ]
       }
     ],
-    "abilityIds": [30010, 70003]
+    "abilityIds": [30010, 70003],
+    "portrait": "Piranha"
   },
   {
     "id": 9002,
@@ -6693,7 +6817,8 @@
         ]
       }
     ],
-    "abilityIds": [70011, 70012, 30010]
+    "abilityIds": [70011, 70012, 30010],
+    "portrait": "Ethereal"
   },
   {
     "id": 9008,
@@ -6785,7 +6910,8 @@
         ]
       }
     ],
-    "abilityIds": [70009, 70010]
+    "abilityIds": [70009, 70010],
+    "portrait": "CadreFireblade"
   },
   {
     "id": 9010,
@@ -6836,7 +6962,8 @@
         ]
       }
     ],
-    "abilityIds": [70001, 70005, 70003]
+    "abilityIds": [70001, 70005, 70003],
+    "portrait": "Ghostkeel"
   },
   {
     "id": 9007,
@@ -6886,7 +7013,8 @@
         ]
       }
     ],
-    "abilityIds": [70001, 70014]
+    "abilityIds": [70001, 70014],
+    "portrait": "Crisis"
   },
   {
     "id": 9009,
@@ -6934,7 +7062,8 @@
         ]
       }
     ],
-    "abilityIds": [70001, 70015, 70017, 70016]
+    "abilityIds": [70001, 70015, 70017, 70016],
+    "portrait": "Broadside"
   },
   {
     "id": 9000,
@@ -6984,7 +7113,8 @@
       },
       { "options": [{ "weaponId": 6002, "name": "Flamer", "pointCost": 0, "startsLocked": false }] }
     ],
-    "abilityIds": [70001, 70006]
+    "abilityIds": [70001, 70006],
+    "portrait": "Commander"
   },
   {
     "id": 9013,
@@ -7033,7 +7163,8 @@
         ]
       }
     ],
-    "abilityIds": [30010, 70003]
+    "abilityIds": [30010, 70003],
+    "portrait": "Hammerhead"
   },
   {
     "id": 9011,
@@ -7082,7 +7213,8 @@
         ]
       }
     ],
-    "abilityIds": [70001, 70018, 70003]
+    "abilityIds": [70001, 70018, 70003],
+    "portrait": "Riptide"
   },
   {
     "id": 1029,
@@ -7123,7 +7255,8 @@
         "options": [{ "weaponId": 1027, "name": "Detonate", "pointCost": 0, "startsLocked": false }]
       }
     ],
-    "abilityIds": [10028]
+    "abilityIds": [10028],
+    "portrait": "SporeMineIcon"
   },
   {
     "id": 1035,
@@ -7164,7 +7297,8 @@
         "options": [{ "weaponId": 1043, "name": "Detonate", "pointCost": 0, "startsLocked": false }]
       }
     ],
-    "abilityIds": [10028]
+    "abilityIds": [10028],
+    "portrait": "SporeMineIcon"
   },
   {
     "id": 1006,
@@ -7252,7 +7386,8 @@
         ]
       }
     ],
-    "abilityIds": [10000, 10007]
+    "abilityIds": [10000, 10007],
+    "portrait": "HormagauntIcon"
   },
   {
     "id": 1030,
@@ -7295,7 +7430,8 @@
         ]
       }
     ],
-    "abilityIds": [10000, 10007]
+    "abilityIds": [10000, 10007],
+    "portrait": "HormagauntIcon"
   },
   {
     "id": 1011,
@@ -7343,7 +7479,8 @@
         ]
       }
     ],
-    "abilityIds": [10004, 10005, 10000]
+    "abilityIds": [10004, 10005, 10000],
+    "portrait": "GargoyleIcon"
   },
   {
     "id": 1027,
@@ -7386,7 +7523,8 @@
         ]
       }
     ],
-    "abilityIds": [10000, 10022]
+    "abilityIds": [10000, 10022],
+    "portrait": "GenestealerIcon"
   },
   {
     "id": 1010,
@@ -7429,7 +7567,8 @@
         ]
       }
     ],
-    "abilityIds": [10001, 10002]
+    "abilityIds": [10001, 10002],
+    "portrait": "VenomthropeIcon"
   },
   {
     "id": 1000,
@@ -7478,7 +7617,8 @@
         ]
       }
     ],
-    "abilityIds": [10006, 10003]
+    "abilityIds": [10006, 10003],
+    "portrait": "WarriorIcon"
   },
   {
     "id": 1033,
@@ -7521,7 +7661,8 @@
         ]
       }
     ],
-    "abilityIds": [10033, 23]
+    "abilityIds": [10033, 23],
+    "portrait": "PyrovoreIcon"
   },
   {
     "id": 1018,
@@ -7585,7 +7726,8 @@
         ]
       }
     ],
-    "abilityIds": [10013, 10014]
+    "abilityIds": [10013, 10014],
+    "portrait": "ThornbackIcon"
   },
   {
     "id": 1032,
@@ -7629,7 +7771,8 @@
         ]
       }
     ],
-    "abilityIds": []
+    "abilityIds": [],
+    "portrait": "HiveGuardIcon"
   },
   {
     "id": 1034,
@@ -7672,7 +7815,8 @@
         ]
       }
     ],
-    "abilityIds": [10032, 23]
+    "abilityIds": [10032, 23],
+    "portrait": "BiovoreIcon"
   },
   {
     "id": 1012,
@@ -7720,7 +7864,8 @@
         ]
       }
     ],
-    "abilityIds": [10023, 10029]
+    "abilityIds": [10023, 10029],
+    "portrait": "TrygonIcon"
   },
   {
     "id": 1017,
@@ -7768,7 +7913,8 @@
         ]
       }
     ],
-    "abilityIds": [10008, 10009]
+    "abilityIds": [10008, 10009],
+    "portrait": "ExocrineIcon"
   },
   {
     "id": 1028,
@@ -7811,7 +7957,8 @@
         ]
       }
     ],
-    "abilityIds": [10006, 10003]
+    "abilityIds": [10006, 10003],
+    "portrait": "PrimeIcon"
   },
   {
     "id": 1022,
@@ -7859,7 +8006,8 @@
         ]
       }
     ],
-    "abilityIds": [10012]
+    "abilityIds": [10012],
+    "portrait": "TyrannofexIcon"
   },
   {
     "id": 1031,
@@ -7907,7 +8055,8 @@
         ]
       }
     ],
-    "abilityIds": [10030, 10031]
+    "abilityIds": [10030, 10031],
+    "portrait": "BroodlordIcon"
   },
   {
     "id": 1015,
@@ -7955,7 +8104,8 @@
         ]
       }
     ],
-    "abilityIds": [10019, 10020, 10021, 10003]
+    "abilityIds": [10019, 10020, 10021, 10003],
+    "portrait": "TervigonIcon"
   },
   {
     "id": 1025,
@@ -8008,7 +8158,8 @@
         ]
       }
     ],
-    "abilityIds": [10016, 10017, 10018, 10003, 10005]
+    "abilityIds": [10016, 10017, 10018, 10003, 10005],
+    "portrait": "HiveTyrantIcon"
   },
   {
     "id": 11022,
@@ -8045,7 +8196,8 @@
     "activationRange": 1,
     "awarenessRange": 0,
     "weaponSlots": [],
-    "abilityIds": [100022]
+    "abilityIds": [100022],
+    "portrait": "HaywireMineIcon"
   },
   {
     "id": 11007,
@@ -8089,7 +8241,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 100053, 12]
+    "abilityIds": [100047, 100053, 12],
+    "portrait": "AssaultIntercessorsIcon"
   },
   {
     "id": 11006,
@@ -8140,7 +8293,8 @@
         ]
       }
     ],
-    "abilityIds": [100047]
+    "abilityIds": [100047],
+    "portrait": "AssaultIntercessorsIcon"
   },
   {
     "id": 11004,
@@ -8188,7 +8342,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 100020, 100021, 100023]
+    "abilityIds": [100047, 100020, 100021, 100023],
+    "portrait": "IncursorsIcon"
   },
   {
     "id": 11012,
@@ -8241,7 +8396,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 100034, 100035, 100036]
+    "abilityIds": [100047, 100034, 100035, 100036],
+    "portrait": "ReiversIcon"
   },
   {
     "id": 11016,
@@ -8285,7 +8441,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 100039, 100040]
+    "abilityIds": [100047, 100039, 100040],
+    "portrait": "EliminatorsIcon"
   },
   {
     "id": 11005,
@@ -8329,7 +8486,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 100024, 100025]
+    "abilityIds": [100047, 100024, 100025],
+    "portrait": "HeavyIntercessorsIcon"
   },
   {
     "id": 11020,
@@ -8378,7 +8536,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 15]
+    "abilityIds": [100047, 15],
+    "portrait": "UltramarinesHellblastersIcon"
   },
   {
     "id": 11013,
@@ -8422,7 +8581,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 100056, 100057]
+    "abilityIds": [100047, 100056, 100057],
+    "portrait": "InceptorIcon"
   },
   {
     "id": 11010,
@@ -8483,7 +8643,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 100054]
+    "abilityIds": [100047, 100054],
+    "portrait": "UltramarinesAggressorsIcon"
   },
   {
     "id": 11001,
@@ -8536,7 +8697,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 7, 100005, 100006]
+    "abilityIds": [100047, 7, 100005, 100006],
+    "portrait": "ApothecaryIcon"
   },
   {
     "id": 11008,
@@ -8584,7 +8746,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 100028, 100030, 100029, 100050]
+    "abilityIds": [100047, 100028, 100030, 100029, 100050],
+    "portrait": "BladeguardVeteransIcon"
   },
   {
     "id": 11015,
@@ -8627,7 +8790,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 100037, 100038]
+    "abilityIds": [100047, 100037, 100038],
+    "portrait": "EradicatorsIcon"
   },
   {
     "id": 11021,
@@ -8676,7 +8840,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 100019, 100018]
+    "abilityIds": [100047, 100019, 100018],
+    "portrait": "LieutenantIcon"
   },
   {
     "id": 11018,
@@ -8734,7 +8899,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 100045, 100046, 23]
+    "abilityIds": [100047, 100045, 100046, 23],
+    "portrait": "BallistusDreadnoughtIcon"
   },
   {
     "id": 11003,
@@ -8787,7 +8953,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 100013, 100010, 100011, 100012]
+    "abilityIds": [100047, 100013, 100010, 100011, 100012],
+    "portrait": "ChaplainIcon"
   },
   {
     "id": 11002,
@@ -8841,7 +9008,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 100008, 100009]
+    "abilityIds": [100047, 100008, 100009],
+    "portrait": "LibrarianDreadnoughtIcon"
   },
   {
     "id": 11014,
@@ -8930,7 +9098,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 30010, 23]
+    "abilityIds": [100047, 30010, 23],
+    "portrait": "StormSpeederHailstrikeIcon"
   },
   {
     "id": 11011,
@@ -9009,7 +9178,8 @@
         ]
       }
     ],
-    "abilityIds": [100047]
+    "abilityIds": [100047],
+    "portrait": "InvictorWarsuitIcon"
   },
   {
     "id": 11009,
@@ -9082,7 +9252,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 100032, 100033]
+    "abilityIds": [100047, 100032, 100033],
+    "portrait": "ChaosTerminatorsIcon"
   },
   {
     "id": 11000,
@@ -9131,7 +9302,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 100001, 100003, 100004]
+    "abilityIds": [100047, 100001, 100003, 100004],
+    "portrait": "CaptainIcon"
   },
   {
     "id": 11017,
@@ -9217,7 +9389,8 @@
         ]
       }
     ],
-    "abilityIds": [100047, 100044, 23]
+    "abilityIds": [100047, 100044, 23],
+    "portrait": "RedemptorDreadnoughtIcon"
   },
   {
     "id": 11019,
@@ -9279,6 +9452,7 @@
         ]
       }
     ],
-    "abilityIds": [100047, 30010, 23]
+    "abilityIds": [100047, 30010, 23],
+    "portrait": "GladiatorLancerIcon"
   }
 ]

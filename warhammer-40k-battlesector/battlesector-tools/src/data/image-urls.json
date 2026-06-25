@@ -13,7 +13,7 @@
     "GladiatorLancerIcon": {
       "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/GladiatorLancerIcon.png",
       "r2_key": "units/GladiatorLancerIcon.png",
-      "source": "sharedassets1.assets"
+      "source": "Selection portraits"
     },
     "armypointcap_icon_gold": {
       "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/armypointcap_icon_gold.png",
@@ -143,7 +143,7 @@
     "AssualtMarineIcon": {
       "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/AssualtMarineIcon.png",
       "r2_key": "units/AssualtMarineIcon.png",
-      "source": "sharedassets1.assets"
+      "source": "Selection portraits"
     },
     "InteractIcon": {
       "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/InteractIcon.png",
@@ -428,7 +428,7 @@
     "IntercessorIcon": {
       "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/IntercessorIcon.png",
       "r2_key": "units/IntercessorIcon.png",
-      "source": "sharedassets2.assets"
+      "source": "Selection portraits"
     },
     "activeIcon_additive_00011": {
       "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00011.png",
@@ -508,7 +508,7 @@
     "TechmarineIcon": {
       "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TechmarineIcon.png",
       "r2_key": "units/TechmarineIcon.png",
-      "source": "sharedassets2.assets"
+      "source": "Selection portraits"
     },
     "activeIcon_additive_00043": {
       "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00043.png",
@@ -683,7 +683,7 @@
     "HormagauntIcon": {
       "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HormagauntIcon.png",
       "r2_key": "units/HormagauntIcon.png",
-      "source": "sharedassets2.assets"
+      "source": "Selection portraits"
     },
     "activeIcon_additive_00005": {
       "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/activeIcon_additive_00005.png",
@@ -1559,6 +1559,1021 @@
       "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/prop_ImpAntiTank_N.png",
       "r2_key": "units/prop_ImpAntiTank_N.png",
       "source": "sharedassets9.assets"
+    },
+    "AggressorIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/AggressorIcon.png",
+      "r2_key": "units/AggressorIcon.png",
+      "source": "Selection portraits"
+    },
+    "AnnihilationBargeIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/AnnihilationBargeIcon.png",
+      "r2_key": "units/AnnihilationBargeIcon.png",
+      "source": "Selection portraits"
+    },
+    "ApothecaryIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ApothecaryIcon.png",
+      "r2_key": "units/ApothecaryIcon.png",
+      "source": "Selection portraits"
+    },
+    "ArcoFlagellantIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ArcoFlagellantIcon.png",
+      "r2_key": "units/ArcoFlagellantIcon.png",
+      "source": "Selection portraits"
+    },
+    "ArmouredSentinelHeavyFlamerIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ArmouredSentinelHeavyFlamerIcon.png",
+      "r2_key": "units/ArmouredSentinelHeavyFlamerIcon.png",
+      "source": "Selection portraits"
+    },
+    "ArmouredSentinelMultiLaserIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ArmouredSentinelMultiLaserIcon.png",
+      "r2_key": "units/ArmouredSentinelMultiLaserIcon.png",
+      "source": "Selection portraits"
+    },
+    "ArmouredSentinelPlasmaCannonIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ArmouredSentinelPlasmaCannonIcon.png",
+      "r2_key": "units/ArmouredSentinelPlasmaCannonIcon.png",
+      "source": "Selection portraits"
+    },
+    "AssaultIntercessorsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/AssaultIntercessorsIcon.png",
+      "r2_key": "units/AssaultIntercessorsIcon.png",
+      "source": "Selection portraits"
+    },
+    "AssaultTerminatorIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/AssaultTerminatorIcon.png",
+      "r2_key": "units/AssaultTerminatorIcon.png",
+      "source": "Selection portraits"
+    },
+    "BaalPredatorIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BaalPredatorIcon.png",
+      "r2_key": "units/BaalPredatorIcon.png",
+      "source": "Selection portraits"
+    },
+    "BallistusDreadnoughtIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BallistusDreadnoughtIcon.png",
+      "r2_key": "units/BallistusDreadnoughtIcon.png",
+      "source": "Selection portraits"
+    },
+    "BasiliskIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BasiliskIcon.png",
+      "r2_key": "units/BasiliskIcon.png",
+      "source": "Selection portraits"
+    },
+    "BattleSisterIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BattleSisterIcon.png",
+      "r2_key": "units/BattleSisterIcon.png",
+      "source": "Selection portraits"
+    },
+    "BigMek": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BigMek.png",
+      "r2_key": "units/BigMek.png",
+      "source": "Selection portraits"
+    },
+    "BiovoreIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BiovoreIcon.png",
+      "r2_key": "units/BiovoreIcon.png",
+      "source": "Selection portraits"
+    },
+    "BiovoreSporeMineIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BiovoreSporeMineIcon.png",
+      "r2_key": "units/BiovoreSporeMineIcon.png",
+      "source": "Selection portraits"
+    },
+    "BladeguardVeteransIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BladeguardVeteransIcon.png",
+      "r2_key": "units/BladeguardVeteransIcon.png",
+      "source": "Selection portraits"
+    },
+    "BloodLetterIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BloodLetterIcon.png",
+      "r2_key": "units/BloodLetterIcon.png",
+      "source": "Selection portraits"
+    },
+    "BloodMasterIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BloodMasterIcon.png",
+      "r2_key": "units/BloodMasterIcon.png",
+      "source": "Selection portraits"
+    },
+    "BloodcrusherIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BloodcrusherIcon.png",
+      "r2_key": "units/BloodcrusherIcon.png",
+      "source": "Selection portraits"
+    },
+    "BloodthirsterIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BloodthirsterIcon.png",
+      "r2_key": "units/BloodthirsterIcon.png",
+      "source": "Selection portraits"
+    },
+    "Boyz": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Boyz.png",
+      "r2_key": "units/Boyz.png",
+      "source": "Selection portraits"
+    },
+    "BoyzWithChoppaIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BoyzWithChoppaIcon.png",
+      "r2_key": "units/BoyzWithChoppaIcon.png",
+      "source": "Selection portraits"
+    },
+    "BreacherTeam": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BreacherTeam.png",
+      "r2_key": "units/BreacherTeam.png",
+      "source": "Selection portraits"
+    },
+    "Broadside": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Broadside.png",
+      "r2_key": "units/Broadside.png",
+      "source": "Selection portraits"
+    },
+    "BroodlordIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BroodlordIcon.png",
+      "r2_key": "units/BroodlordIcon.png",
+      "source": "Selection portraits"
+    },
+    "BrotherAeturoIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BrotherAeturoIcon.png",
+      "r2_key": "units/BrotherAeturoIcon.png",
+      "source": "Selection portraits"
+    },
+    "BurnaBoyz": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BurnaBoyz.png",
+      "r2_key": "units/BurnaBoyz.png",
+      "source": "Selection portraits"
+    },
+    "CadianCastellanIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/CadianCastellanIcon.png",
+      "r2_key": "units/CadianCastellanIcon.png",
+      "source": "Selection portraits"
+    },
+    "CadianSergeantIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/CadianSergeantIcon.png",
+      "r2_key": "units/CadianSergeantIcon.png",
+      "source": "Selection portraits"
+    },
+    "CadreFireblade": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/CadreFireblade.png",
+      "r2_key": "units/CadreFireblade.png",
+      "source": "Selection portraits"
+    },
+    "CanonessIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/CanonessIcon.png",
+      "r2_key": "units/CanonessIcon.png",
+      "source": "Selection portraits"
+    },
+    "CanonessSeliciaIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/CanonessSeliciaIcon.png",
+      "r2_key": "units/CanonessSeliciaIcon.png",
+      "source": "Selection portraits"
+    },
+    "CanoptekScarabSwarmIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/CanoptekScarabSwarmIcon.png",
+      "r2_key": "units/CanoptekScarabSwarmIcon.png",
+      "source": "Selection portraits"
+    },
+    "CaptainIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/CaptainIcon.png",
+      "r2_key": "units/CaptainIcon.png",
+      "source": "Selection portraits"
+    },
+    "CastigatorBattleCannonIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/CastigatorBattleCannonIcon.png",
+      "r2_key": "units/CastigatorBattleCannonIcon.png",
+      "source": "Selection portraits"
+    },
+    "CastigatorIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/CastigatorIcon.png",
+      "r2_key": "units/CastigatorIcon.png",
+      "source": "Selection portraits"
+    },
+    "CelestianIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/CelestianIcon.png",
+      "r2_key": "units/CelestianIcon.png",
+      "source": "Selection portraits"
+    },
+    "ChaosCultistsMobIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ChaosCultistsMobIcon.png",
+      "r2_key": "units/ChaosCultistsMobIcon.png",
+      "source": "Selection portraits"
+    },
+    "ChaosCultistsWarbandIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ChaosCultistsWarbandIcon.png",
+      "r2_key": "units/ChaosCultistsWarbandIcon.png",
+      "source": "Selection portraits"
+    },
+    "ChaosLegionariesIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ChaosLegionariesIcon.png",
+      "r2_key": "units/ChaosLegionariesIcon.png",
+      "source": "Selection portraits"
+    },
+    "ChaosLordIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ChaosLordIcon.png",
+      "r2_key": "units/ChaosLordIcon.png",
+      "source": "Selection portraits"
+    },
+    "ChaosRhinoIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ChaosRhinoIcon.png",
+      "r2_key": "units/ChaosRhinoIcon.png",
+      "source": "Selection portraits"
+    },
+    "ChaosSorcererIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ChaosSorcererIcon.png",
+      "r2_key": "units/ChaosSorcererIcon.png",
+      "source": "Selection portraits"
+    },
+    "ChaosTerminatorsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ChaosTerminatorsIcon.png",
+      "r2_key": "units/ChaosTerminatorsIcon.png",
+      "source": "Selection portraits"
+    },
+    "ChaplainIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ChaplainIcon.png",
+      "r2_key": "units/ChaplainIcon.png",
+      "source": "Selection portraits"
+    },
+    "ChimeraDozerIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ChimeraDozerIcon.png",
+      "r2_key": "units/ChimeraDozerIcon.png",
+      "source": "Selection portraits"
+    },
+    "ChimeraIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ChimeraIcon.png",
+      "r2_key": "units/ChimeraIcon.png",
+      "source": "Selection portraits"
+    },
+    "ChosenIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ChosenIcon.png",
+      "r2_key": "units/ChosenIcon.png",
+      "source": "Selection portraits"
+    },
+    "Commander": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Commander.png",
+      "r2_key": "units/Commander.png",
+      "source": "Selection portraits"
+    },
+    "CommissarIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/CommissarIcon.png",
+      "r2_key": "units/CommissarIcon.png",
+      "source": "Selection portraits"
+    },
+    "Crisis": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Crisis.png",
+      "r2_key": "units/Crisis.png",
+      "source": "Selection portraits"
+    },
+    "CultistsFirebrandIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/CultistsFirebrandIcon.png",
+      "r2_key": "units/CultistsFirebrandIcon.png",
+      "source": "Selection portraits"
+    },
+    "DaemonPrinceIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/DaemonPrinceIcon.png",
+      "r2_key": "units/DaemonPrinceIcon.png",
+      "source": "Selection portraits"
+    },
+    "DakkadakBatzblitzaIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/DakkadakBatzblitzaIcon.png",
+      "r2_key": "units/DakkadakBatzblitzaIcon.png",
+      "source": "Selection portraits"
+    },
+    "DeathCompanyIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/DeathCompanyIcon.png",
+      "r2_key": "units/DeathCompanyIcon.png",
+      "source": "Selection portraits"
+    },
+    "DeathmarkIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/DeathmarkIcon.png",
+      "r2_key": "units/DeathmarkIcon.png",
+      "source": "Selection portraits"
+    },
+    "DeffDread": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/DeffDread.png",
+      "r2_key": "units/DeffDread.png",
+      "source": "Selection portraits"
+    },
+    "DeffkillaWartrikeIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/DeffkillaWartrikeIcon.png",
+      "r2_key": "units/DeffkillaWartrikeIcon.png",
+      "source": "Selection portraits"
+    },
+    "Deffkoptas": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Deffkoptas.png",
+      "r2_key": "units/Deffkoptas.png",
+      "source": "Selection portraits"
+    },
+    "DominionsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/DominionsIcon.png",
+      "r2_key": "units/DominionsIcon.png",
+      "source": "Selection portraits"
+    },
+    "EliminatorsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/EliminatorsIcon.png",
+      "r2_key": "units/EliminatorsIcon.png",
+      "source": "Selection portraits"
+    },
+    "EmptyUnitIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/EmptyUnitIcon.png",
+      "r2_key": "units/EmptyUnitIcon.png",
+      "source": "Selection portraits"
+    },
+    "EradicatorsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/EradicatorsIcon.png",
+      "r2_key": "units/EradicatorsIcon.png",
+      "source": "Selection portraits"
+    },
+    "Ethereal": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Ethereal.png",
+      "r2_key": "units/Ethereal.png",
+      "source": "Selection portraits"
+    },
+    "ExocrineIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ExocrineIcon.png",
+      "r2_key": "units/ExocrineIcon.png",
+      "source": "Selection portraits"
+    },
+    "ExorcistIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ExorcistIcon.png",
+      "r2_key": "units/ExorcistIcon.png",
+      "source": "Selection portraits"
+    },
+    "FlashGitz": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/FlashGitz.png",
+      "r2_key": "units/FlashGitz.png",
+      "source": "Selection portraits"
+    },
+    "FlayedOnesIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/FlayedOnesIcon.png",
+      "r2_key": "units/FlayedOnesIcon.png",
+      "source": "Selection portraits"
+    },
+    "FleshHoundIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/FleshHoundIcon.png",
+      "r2_key": "units/FleshHoundIcon.png",
+      "source": "Selection portraits"
+    },
+    "ForgefiendAutocannonIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ForgefiendAutocannonIcon.png",
+      "r2_key": "units/ForgefiendAutocannonIcon.png",
+      "source": "Selection portraits"
+    },
+    "ForgefiendEctoplasmaIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ForgefiendEctoplasmaIcon.png",
+      "r2_key": "units/ForgefiendEctoplasmaIcon.png",
+      "source": "Selection portraits"
+    },
+    "FuriosoDreadnoughtIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/FuriosoDreadnoughtIcon.png",
+      "r2_key": "units/FuriosoDreadnoughtIcon.png",
+      "source": "Selection portraits"
+    },
+    "GargoyleIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/GargoyleIcon.png",
+      "r2_key": "units/GargoyleIcon.png",
+      "source": "Selection portraits"
+    },
+    "GenestealerIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/GenestealerIcon.png",
+      "r2_key": "units/GenestealerIcon.png",
+      "source": "Selection portraits"
+    },
+    "Ghostkeel": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Ghostkeel.png",
+      "r2_key": "units/Ghostkeel.png",
+      "source": "Selection portraits"
+    },
+    "GladiatorReaperIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/GladiatorReaperIcon.png",
+      "r2_key": "units/GladiatorReaperIcon.png",
+      "source": "Selection portraits"
+    },
+    "GladiatorValiantIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/GladiatorValiantIcon.png",
+      "r2_key": "units/GladiatorValiantIcon.png",
+      "source": "Selection portraits"
+    },
+    "Gretchin": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Gretchin.png",
+      "r2_key": "units/Gretchin.png",
+      "source": "Selection portraits"
+    },
+    "GuardsmenBayonetIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/GuardsmenBayonetIcon.png",
+      "r2_key": "units/GuardsmenBayonetIcon.png",
+      "source": "Selection portraits"
+    },
+    "GuardsmenIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/GuardsmenIcon.png",
+      "r2_key": "units/GuardsmenIcon.png",
+      "source": "Selection portraits"
+    },
+    "Hammerhead": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Hammerhead.png",
+      "r2_key": "units/Hammerhead.png",
+      "source": "Selection portraits"
+    },
+    "HavocsChaincannonIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HavocsChaincannonIcon.png",
+      "r2_key": "units/HavocsChaincannonIcon.png",
+      "source": "Selection portraits"
+    },
+    "HavocsHeavyBolterIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HavocsHeavyBolterIcon.png",
+      "r2_key": "units/HavocsHeavyBolterIcon.png",
+      "source": "Selection portraits"
+    },
+    "HavocsMissileLauncherIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HavocsMissileLauncherIcon.png",
+      "r2_key": "units/HavocsMissileLauncherIcon.png",
+      "source": "Selection portraits"
+    },
+    "HaywireMineIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HaywireMineIcon.png",
+      "r2_key": "units/HaywireMineIcon.png",
+      "source": "Selection portraits"
+    },
+    "HeavyIntercessorsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HeavyIntercessorsIcon.png",
+      "r2_key": "units/HeavyIntercessorsIcon.png",
+      "source": "Selection portraits"
+    },
+    "HeavyWeaponSquadAutocannonIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HeavyWeaponSquadAutocannonIcon.png",
+      "r2_key": "units/HeavyWeaponSquadAutocannonIcon.png",
+      "source": "Selection portraits"
+    },
+    "HeavyWeaponSquadLascannonIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HeavyWeaponSquadLascannonIcon.png",
+      "r2_key": "units/HeavyWeaponSquadLascannonIcon.png",
+      "source": "Selection portraits"
+    },
+    "HeavyWeaponSquadMissileLauncherIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HeavyWeaponSquadMissileLauncherIcon.png",
+      "r2_key": "units/HeavyWeaponSquadMissileLauncherIcon.png",
+      "source": "Selection portraits"
+    },
+    "HelbruteIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HelbruteIcon.png",
+      "r2_key": "units/HelbruteIcon.png",
+      "source": "Selection portraits"
+    },
+    "HellblasterIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HellblasterIcon.png",
+      "r2_key": "units/HellblasterIcon.png",
+      "source": "Selection portraits"
+    },
+    "HexmarkIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HexmarkIcon.png",
+      "r2_key": "units/HexmarkIcon.png",
+      "source": "Selection portraits"
+    },
+    "HexmarkIcon_Mephrit SML": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HexmarkIcon_Mephrit SML.png",
+      "r2_key": "units/HexmarkIcon_Mephrit SML.png",
+      "source": "Selection portraits"
+    },
+    "HexmarkIcon_Mephrit": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HexmarkIcon_Mephrit.png",
+      "r2_key": "units/HexmarkIcon_Mephrit.png",
+      "source": "Selection portraits"
+    },
+    "HiveGuardIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HiveGuardIcon.png",
+      "r2_key": "units/HiveGuardIcon.png",
+      "source": "Selection portraits"
+    },
+    "HiveTyrantIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HiveTyrantIcon.png",
+      "r2_key": "units/HiveTyrantIcon.png",
+      "source": "Selection portraits"
+    },
+    "HospitallerIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HospitallerIcon.png",
+      "r2_key": "units/HospitallerIcon.png",
+      "source": "Selection portraits"
+    },
+    "ImagifierIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ImagifierIcon.png",
+      "r2_key": "units/ImagifierIcon.png",
+      "source": "Selection portraits"
+    },
+    "ImmolatorIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ImmolatorIcon.png",
+      "r2_key": "units/ImmolatorIcon.png",
+      "source": "Selection portraits"
+    },
+    "InceptorIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/InceptorIcon.png",
+      "r2_key": "units/InceptorIcon.png",
+      "source": "Selection portraits"
+    },
+    "IncursorsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/IncursorsIcon.png",
+      "r2_key": "units/IncursorsIcon.png",
+      "source": "Selection portraits"
+    },
+    "InvictorWarsuitIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/InvictorWarsuitIcon.png",
+      "r2_key": "units/InvictorWarsuitIcon.png",
+      "source": "Selection portraits"
+    },
+    "KasrkinIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/KasrkinIcon.png",
+      "r2_key": "units/KasrkinIcon.png",
+      "source": "Selection portraits"
+    },
+    "KustomBoostaBlastaIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/KustomBoostaBlastaIcon.png",
+      "r2_key": "units/KustomBoostaBlastaIcon.png",
+      "source": "Selection portraits"
+    },
+    "LandspeederIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/LandspeederIcon.png",
+      "r2_key": "units/LandspeederIcon.png",
+      "source": "Selection portraits"
+    },
+    "LandspeederTornadoIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/LandspeederTornadoIcon.png",
+      "r2_key": "units/LandspeederTornadoIcon.png",
+      "source": "Selection portraits"
+    },
+    "LemanRussBattleTankIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/LemanRussBattleTankIcon.png",
+      "r2_key": "units/LemanRussBattleTankIcon.png",
+      "source": "Selection portraits"
+    },
+    "LemanRussDemolisherIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/LemanRussDemolisherIcon.png",
+      "r2_key": "units/LemanRussDemolisherIcon.png",
+      "source": "Selection portraits"
+    },
+    "LemanRussPunisherIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/LemanRussPunisherIcon.png",
+      "r2_key": "units/LemanRussPunisherIcon.png",
+      "source": "Selection portraits"
+    },
+    "LemanRussVanquisherIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/LemanRussVanquisherIcon.png",
+      "r2_key": "units/LemanRussVanquisherIcon.png",
+      "source": "Selection portraits"
+    },
+    "LibrarianDreadnoughtIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/LibrarianDreadnoughtIcon.png",
+      "r2_key": "units/LibrarianDreadnoughtIcon.png",
+      "source": "Selection portraits"
+    },
+    "LieutenantIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/LieutenantIcon.png",
+      "r2_key": "units/LieutenantIcon.png",
+      "source": "Selection portraits"
+    },
+    "LokhurstHeavyDestroyerIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/LokhurstHeavyDestroyerIcon.png",
+      "r2_key": "units/LokhurstHeavyDestroyerIcon.png",
+      "source": "Selection portraits"
+    },
+    "Lootas": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Lootas.png",
+      "r2_key": "units/Lootas.png",
+      "source": "Selection portraits"
+    },
+    "LtCarleonIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/LtCarleonIcon.png",
+      "r2_key": "units/LtCarleonIcon.png",
+      "source": "Selection portraits"
+    },
+    "LynchguardIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/LynchguardIcon.png",
+      "r2_key": "units/LynchguardIcon.png",
+      "source": "Selection portraits"
+    },
+    "MasterOfExecutionsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/MasterOfExecutionsIcon.png",
+      "r2_key": "units/MasterOfExecutionsIcon.png",
+      "source": "Selection portraits"
+    },
+    "Meganobz": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Meganobz.png",
+      "r2_key": "units/Meganobz.png",
+      "source": "Selection portraits"
+    },
+    "MeltaMineIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/MeltaMineIcon.png",
+      "r2_key": "units/MeltaMineIcon.png",
+      "source": "Selection portraits"
+    },
+    "NecronImmortalIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/NecronImmortalIcon.png",
+      "r2_key": "units/NecronImmortalIcon.png",
+      "source": "Selection portraits"
+    },
+    "NecronWarriorIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/NecronWarriorIcon.png",
+      "r2_key": "units/NecronWarriorIcon.png",
+      "source": "Selection portraits"
+    },
+    "NecronWarriorIcon_Mephrit sml": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/NecronWarriorIcon_Mephrit sml.png",
+      "r2_key": "units/NecronWarriorIcon_Mephrit sml.png",
+      "source": "Selection portraits"
+    },
+    "NecronWarriorIcon_Mephrit": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/NecronWarriorIcon_Mephrit.png",
+      "r2_key": "units/NecronWarriorIcon_Mephrit.png",
+      "source": "Selection portraits"
+    },
+    "Nobz": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Nobz.png",
+      "r2_key": "units/Nobz.png",
+      "source": "Selection portraits"
+    },
+    "ObliteratorIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ObliteratorIcon.png",
+      "r2_key": "units/ObliteratorIcon.png",
+      "source": "Selection portraits"
+    },
+    "OgrynsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/OgrynsIcon.png",
+      "r2_key": "units/OgrynsIcon.png",
+      "source": "Selection portraits"
+    },
+    "OverlordIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/OverlordIcon.png",
+      "r2_key": "units/OverlordIcon.png",
+      "source": "Selection portraits"
+    },
+    "Painboy": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Painboy.png",
+      "r2_key": "units/Painboy.png",
+      "source": "Selection portraits"
+    },
+    "ParagonWarsuitIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ParagonWarsuitIcon.png",
+      "r2_key": "units/ParagonWarsuitIcon.png",
+      "source": "Selection portraits"
+    },
+    "Pathfinders": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Pathfinders.png",
+      "r2_key": "units/Pathfinders.png",
+      "source": "Selection portraits"
+    },
+    "PenitentEngineIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/PenitentEngineIcon.png",
+      "r2_key": "units/PenitentEngineIcon.png",
+      "source": "Selection portraits"
+    },
+    "Piranha": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Piranha.png",
+      "r2_key": "units/Piranha.png",
+      "source": "Selection portraits"
+    },
+    "PlasmancerIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/PlasmancerIcon.png",
+      "r2_key": "units/PlasmancerIcon.png",
+      "source": "Selection portraits"
+    },
+    "PrimarisLibrarian": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/PrimarisLibrarian.png",
+      "r2_key": "units/PrimarisLibrarian.png",
+      "source": "Selection portraits"
+    },
+    "PrimeIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/PrimeIcon.png",
+      "r2_key": "units/PrimeIcon.png",
+      "source": "Selection portraits"
+    },
+    "PsykerIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/PsykerIcon.png",
+      "r2_key": "units/PsykerIcon.png",
+      "source": "Selection portraits"
+    },
+    "PyrovoreIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/PyrovoreIcon.png",
+      "r2_key": "units/PyrovoreIcon.png",
+      "source": "Selection portraits"
+    },
+    "RaptorsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/RaptorsIcon.png",
+      "r2_key": "units/RaptorsIcon.png",
+      "source": "Selection portraits"
+    },
+    "RedemptorDreadnoughtIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/RedemptorDreadnoughtIcon.png",
+      "r2_key": "units/RedemptorDreadnoughtIcon.png",
+      "source": "Selection portraits"
+    },
+    "ReiversIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ReiversIcon.png",
+      "r2_key": "units/ReiversIcon.png",
+      "source": "Selection portraits"
+    },
+    "RepentiaIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/RepentiaIcon.png",
+      "r2_key": "units/RepentiaIcon.png",
+      "source": "Selection portraits"
+    },
+    "RetributorFlamerIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/RetributorFlamerIcon.png",
+      "r2_key": "units/RetributorFlamerIcon.png",
+      "source": "Selection portraits"
+    },
+    "RetributorIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/RetributorIcon.png",
+      "r2_key": "units/RetributorIcon.png",
+      "source": "Selection portraits"
+    },
+    "RetributorMeltaIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/RetributorMeltaIcon.png",
+      "r2_key": "units/RetributorMeltaIcon.png",
+      "source": "Selection portraits"
+    },
+    "RhinoIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/RhinoIcon.png",
+      "r2_key": "units/RhinoIcon.png",
+      "source": "Selection portraits"
+    },
+    "Riptide": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Riptide.png",
+      "r2_key": "units/Riptide.png",
+      "source": "Selection portraits"
+    },
+    "RogalDornBattleTankIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/RogalDornBattleTankIcon.png",
+      "r2_key": "units/RogalDornBattleTankIcon.png",
+      "source": "Selection portraits"
+    },
+    "RoyalWardenIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/RoyalWardenIcon.png",
+      "r2_key": "units/RoyalWardenIcon.png",
+      "source": "Selection portraits"
+    },
+    "SacresantIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SacresantIcon.png",
+      "r2_key": "units/SacresantIcon.png",
+      "source": "Selection portraits"
+    },
+    "SanguinaryGuardIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SanguinaryGuardIcon.png",
+      "r2_key": "units/SanguinaryGuardIcon.png",
+      "source": "Selection portraits"
+    },
+    "SanguinaryPriestIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SanguinaryPriestIcon.png",
+      "r2_key": "units/SanguinaryPriestIcon.png",
+      "source": "Selection portraits"
+    },
+    "SeraphimIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SeraphimIcon.png",
+      "r2_key": "units/SeraphimIcon.png",
+      "source": "Selection portraits"
+    },
+    "SgtCarleonIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SgtCarleonIcon.png",
+      "r2_key": "units/SgtCarleonIcon.png",
+      "source": "Selection portraits"
+    },
+    "ShokkjumpDragstaIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ShokkjumpDragstaIcon.png",
+      "r2_key": "units/ShokkjumpDragstaIcon.png",
+      "source": "Selection portraits"
+    },
+    "SisterDorentiaIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SisterDorentiaIcon.png",
+      "r2_key": "units/SisterDorentiaIcon.png",
+      "source": "Selection portraits"
+    },
+    "SisterLeonaIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SisterLeonaIcon.png",
+      "r2_key": "units/SisterLeonaIcon.png",
+      "source": "Selection portraits"
+    },
+    "SisterSuperiorIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SisterSuperiorIcon.png",
+      "r2_key": "units/SisterSuperiorIcon.png",
+      "source": "Selection portraits"
+    },
+    "SisterSuperiorIcon_sml": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SisterSuperiorIcon_sml.png",
+      "r2_key": "units/SisterSuperiorIcon_sml.png",
+      "source": "Selection portraits"
+    },
+    "SkorpekhDestroyerIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SkorpekhDestroyerIcon.png",
+      "r2_key": "units/SkorpekhDestroyerIcon.png",
+      "source": "Selection portraits"
+    },
+    "SkorpekhDestroyerIcon_Mephrit SML": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SkorpekhDestroyerIcon_Mephrit SML.png",
+      "r2_key": "units/SkorpekhDestroyerIcon_Mephrit SML.png",
+      "source": "Selection portraits"
+    },
+    "SkorpekhDestroyerIcon_Mephrit": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SkorpekhDestroyerIcon_Mephrit.png",
+      "r2_key": "units/SkorpekhDestroyerIcon_Mephrit.png",
+      "source": "Selection portraits"
+    },
+    "SoulGrinderIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SoulGrinderIcon.png",
+      "r2_key": "units/SoulGrinderIcon.png",
+      "source": "Selection portraits"
+    },
+    "SporeMineIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/SporeMineIcon.png",
+      "r2_key": "units/SporeMineIcon.png",
+      "source": "Selection portraits"
+    },
+    "StealthTeam": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/StealthTeam.png",
+      "r2_key": "units/StealthTeam.png",
+      "source": "Selection portraits"
+    },
+    "StormSpeederHailstrikeIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/StormSpeederHailstrikeIcon.png",
+      "r2_key": "units/StormSpeederHailstrikeIcon.png",
+      "source": "Selection portraits"
+    },
+    "StormSpeederHammerstrikeIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/StormSpeederHammerstrikeIcon.png",
+      "r2_key": "units/StormSpeederHammerstrikeIcon.png",
+      "source": "Selection portraits"
+    },
+    "StormSpeederThunderstrikeIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/StormSpeederThunderstrikeIcon.png",
+      "r2_key": "units/StormSpeederThunderstrikeIcon.png",
+      "source": "Selection portraits"
+    },
+    "Stormboyz": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Stormboyz.png",
+      "r2_key": "units/Stormboyz.png",
+      "source": "Selection portraits"
+    },
+    "StrikeTeam": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/StrikeTeam.png",
+      "r2_key": "units/StrikeTeam.png",
+      "source": "Selection portraits"
+    },
+    "TacticalDrones": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TacticalDrones.png",
+      "r2_key": "units/TacticalDrones.png",
+      "source": "Selection portraits"
+    },
+    "TankCommanderIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TankCommanderIcon.png",
+      "r2_key": "units/TankCommanderIcon.png",
+      "source": "Selection portraits"
+    },
+    "TankCommanderKoradIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TankCommanderKoradIcon.png",
+      "r2_key": "units/TankCommanderKoradIcon.png",
+      "source": "Selection portraits"
+    },
+    "TermagauntIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TermagauntIcon.png",
+      "r2_key": "units/TermagauntIcon.png",
+      "source": "Selection portraits"
+    },
+    "TervigonIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TervigonIcon.png",
+      "r2_key": "units/TervigonIcon.png",
+      "source": "Selection portraits"
+    },
+    "ThornbackIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ThornbackIcon.png",
+      "r2_key": "units/ThornbackIcon.png",
+      "source": "Selection portraits"
+    },
+    "TombBladeIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TombBladeIcon.png",
+      "r2_key": "units/TombBladeIcon.png",
+      "source": "Selection portraits"
+    },
+    "TombBladeIcon_mephrit SML": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TombBladeIcon_mephrit SML.png",
+      "r2_key": "units/TombBladeIcon_mephrit SML.png",
+      "source": "Selection portraits"
+    },
+    "TombBladeIcon_mephrit": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TombBladeIcon_mephrit.png",
+      "r2_key": "units/TombBladeIcon_mephrit.png",
+      "source": "Selection portraits"
+    },
+    "TriarchPraetorianIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TriarchPraetorianIcon.png",
+      "r2_key": "units/TriarchPraetorianIcon.png",
+      "source": "Selection portraits"
+    },
+    "TrygonIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TrygonIcon.png",
+      "r2_key": "units/TrygonIcon.png",
+      "source": "Selection portraits"
+    },
+    "TyrannofexIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/TyrannofexIcon.png",
+      "r2_key": "units/TyrannofexIcon.png",
+      "source": "Selection portraits"
+    },
+    "UltramarinesAggressorsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UltramarinesAggressorsIcon.png",
+      "r2_key": "units/UltramarinesAggressorsIcon.png",
+      "source": "Selection portraits"
+    },
+    "UltramarinesHellblastersIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UltramarinesHellblastersIcon.png",
+      "r2_key": "units/UltramarinesHellblastersIcon.png",
+      "source": "Selection portraits"
+    },
+    "UltramarinesInceptorsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UltramarinesInceptorsIcon.png",
+      "r2_key": "units/UltramarinesInceptorsIcon.png",
+      "source": "Selection portraits"
+    },
+    "UltramarinesIntercessorsIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UltramarinesIntercessorsIcon.png",
+      "r2_key": "units/UltramarinesIntercessorsIcon.png",
+      "source": "Selection portraits"
+    },
+    "UltramarinesInvictorWarsuitIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UltramarinesInvictorWarsuitIcon.png",
+      "r2_key": "units/UltramarinesInvictorWarsuitIcon.png",
+      "source": "Selection portraits"
+    },
+    "UltramarinesLibrarianIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UltramarinesLibrarianIcon.png",
+      "r2_key": "units/UltramarinesLibrarianIcon.png",
+      "source": "Selection portraits"
+    },
+    "UltramarinesLieutenantSwordIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UltramarinesLieutenantSwordIcon.png",
+      "r2_key": "units/UltramarinesLieutenantSwordIcon.png",
+      "source": "Selection portraits"
+    },
+    "UltramarinesLieutenantVolkiteIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UltramarinesLieutenantVolkiteIcon.png",
+      "r2_key": "units/UltramarinesLieutenantVolkiteIcon.png",
+      "source": "Selection portraits"
+    },
+    "UltramarinesTerminatorsAssaultCannonIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UltramarinesTerminatorsAssaultCannonIcon.png",
+      "r2_key": "units/UltramarinesTerminatorsAssaultCannonIcon.png",
+      "source": "Selection portraits"
+    },
+    "UltramarinesTerminatorsHeavyFlamerIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UltramarinesTerminatorsHeavyFlamerIcon.png",
+      "r2_key": "units/UltramarinesTerminatorsHeavyFlamerIcon.png",
+      "source": "Selection portraits"
+    },
+    "UltramarinesTerminatorsStormBolterIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UltramarinesTerminatorsStormBolterIcon.png",
+      "r2_key": "units/UltramarinesTerminatorsStormBolterIcon.png",
+      "source": "Selection portraits"
+    },
+    "VenomcrawlerIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/VenomcrawlerIcon.png",
+      "r2_key": "units/VenomcrawlerIcon.png",
+      "source": "Selection portraits"
+    },
+    "VenomthropeIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/VenomthropeIcon.png",
+      "r2_key": "units/VenomthropeIcon.png",
+      "source": "Selection portraits"
+    },
+    "VerityIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/VerityIcon.png",
+      "r2_key": "units/VerityIcon.png",
+      "source": "Selection portraits"
+    },
+    "Warbiker": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Warbiker.png",
+      "r2_key": "units/Warbiker.png",
+      "source": "Selection portraits"
+    },
+    "Warboss": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Warboss.png",
+      "r2_key": "units/Warboss.png",
+      "source": "Selection portraits"
+    },
+    "WarriorIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/WarriorIcon.png",
+      "r2_key": "units/WarriorIcon.png",
+      "source": "Selection portraits"
+    },
+    "Weirdboy": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/Weirdboy.png",
+      "r2_key": "units/Weirdboy.png",
+      "source": "Selection portraits"
+    },
+    "ZephyrimIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/ZephyrimIcon.png",
+      "r2_key": "units/ZephyrimIcon.png",
+      "source": "Selection portraits"
+    },
+    "cultistIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/cultistIcon.png",
+      "r2_key": "units/cultistIcon.png",
+      "source": "Selection portraits"
+    },
+    "skullcannonIcon": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/skullcannonIcon.png",
+      "r2_key": "units/skullcannonIcon.png",
+      "source": "Selection portraits"
     }
   },
   "weapons": {
@@ -3918,6 +4933,36 @@
       "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/3CCUI_side_column_factionSelect-Orks.png",
       "r2_key": "factions/3CCUI_side_column_factionSelect-Orks.png",
       "source": "sharedassets71.assets"
+    },
+    "3CCUI_side_column_factionSelect-AstraMilitarum": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/3CCUI_side_column_factionSelect-AstraMilitarum.png",
+      "r2_key": "factions/3CCUI_side_column_factionSelect-AstraMilitarum.png",
+      "source": "Texture2D"
+    },
+    "3CCUI_side_column_factionSelect-BlackLegion": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/3CCUI_side_column_factionSelect-BlackLegion.png",
+      "r2_key": "factions/3CCUI_side_column_factionSelect-BlackLegion.png",
+      "source": "Texture2D"
+    },
+    "3CCUI_side_column_factionSelect-KhorneDaemons": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/3CCUI_side_column_factionSelect-KhorneDaemons.png",
+      "r2_key": "factions/3CCUI_side_column_factionSelect-KhorneDaemons.png",
+      "source": "Texture2D"
+    },
+    "3CCUI_side_column_factionSelect-Tau": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/3CCUI_side_column_factionSelect-Tau.png",
+      "r2_key": "factions/3CCUI_side_column_factionSelect-Tau.png",
+      "source": "Texture2D"
+    },
+    "3CCUI_side_column_factionSelect-Tyranids": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/3CCUI_side_column_factionSelect-Tyranids.png",
+      "r2_key": "factions/3CCUI_side_column_factionSelect-Tyranids.png",
+      "source": "Texture2D"
+    },
+    "3CCUI_side_column_factionSelect-Ultramarines": {
+      "url": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/factions/3CCUI_side_column_factionSelect-Ultramarines.png",
+      "r2_key": "factions/3CCUI_side_column_factionSelect-Ultramarines.png",
+      "source": "Texture2D"
     }
   },
   "icons": {},

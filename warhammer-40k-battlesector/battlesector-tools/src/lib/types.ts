@@ -41,6 +41,7 @@ export interface Unit {
   unitHeight: number;
   isLarge: boolean;
   campaignOnly?: boolean;
+  portrait?: string;
   canMeleeReact: boolean;
   canFallback: boolean;
   activationRange: number;

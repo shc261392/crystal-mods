@@ -77,7 +77,7 @@ const tags = [
 ].filter(Boolean) as { key: string; label: string }[];
 
 const accent = factionColor(unit.factionName);
-const portrait = getUnitPortrait(unit.name);
+const portrait = getUnitPortrait(unit.name, unit.portrait);
 const emblem = getFactionEmblem(unit.faction);
 const heroImage = portrait ?? emblem;
 
