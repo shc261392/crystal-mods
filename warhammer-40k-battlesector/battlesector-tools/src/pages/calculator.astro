@@ -51,7 +51,7 @@ import Base from '../layouts/Base.astro';
           <input id="accmod" class="input" type="number" inputmode="numeric" value="0" />
         </div>
         <div>
-          <label class="label block mb-1.5" for="shots">Shots / attack</label>
+          <label class="label block mb-1.5" for="shots" data-i18n-ui="calculator.attacker.totalShots">Total shots (squad)</label>
           <input id="shots" class="input" type="number" min="1" inputmode="numeric" value="1" />
         </div>
         <div>
@@ -145,11 +145,11 @@ import Base from '../layouts/Base.astro';
         </div>
         <div class="flex items-baseline justify-between">
           <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.targetTotalHp">Target total HP</span>
-          <span id="r-totalhp" class="text-base font-semibold tabular-nums text-[var(--color-ink)]">—</span>
+          <span id="r-totalhp" class="text-xl font-bold tabular-nums text-[var(--color-ink)]">—</span>
         </div>
         <div class="flex items-baseline justify-between">
           <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.targetRemainingHp">Target remaining HP</span>
-          <span id="r-remaining" class="text-base font-semibold tabular-nums text-[var(--color-hp)]">—</span>
+          <span id="r-remaining" class="text-xl font-black tabular-nums text-[var(--color-hp)]">—</span>
         </div>
         <p class="text-[0.7rem] text-[var(--color-faint)] pt-1" data-i18n-ui="calculator.result.assumptionNote">
           Damage is the in-game range (min = 75% of max). Crit/graze chances assume 1% per

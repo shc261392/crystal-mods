@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { clamp } from '../../lib/combat';
+import { clamp, damageRange } from '../../lib/combat';
 import {
   STAT_MAX,
   factionColor,
@@ -86,6 +86,7 @@ const vitals = [
     label: 'Health',
     value: unit.totalHealth,
     pct: clamp((unit.totalHealth / STAT_MAX.health) * 100, 0, 100),
+    color: 'linear-gradient(180deg,var(--color-hp),var(--color-hp-dim))',
   },
   {
     key: 'common.armor',
@@ -96,24 +97,28 @@ const vitals = [
       0,
       100,
     ),
+    color: 'linear-gradient(180deg,var(--color-shield),var(--color-momentum-dim))',
   },
   {
     key: 'common.evasion',
     label: 'Evasion',
     value: unit.evasion,
     pct: clamp((unit.evasion / STAT_MAX.evasion) * 100, 0, 100),
+    color: 'linear-gradient(90deg,var(--color-gold-dim),var(--color-gold))',
   },
   {
     key: 'common.movement',
     label: 'Movement',
     value: unit.maxMovementPoints,
     pct: clamp((unit.maxMovementPoints / STAT_MAX.movement) * 100, 0, 100),
+    color: 'linear-gradient(90deg,var(--color-gold-dim),var(--color-gold))',
   },
   {
     key: 'common.actionPoints',
     label: 'Action Points',
     value: unit.maxActionPoints,
     pct: clamp((unit.maxActionPoints / STAT_MAX.actionPoints) * 100, 0, 100),
+    color: 'linear-gradient(90deg,var(--color-gold-dim),var(--color-gold))',
   },
 ];
 ---
@@ -190,7 +195,7 @@ const vitals = [
             <span class="label" data-i18n-ui={v.key}>{v.label}</span>
             <span class="font-bold tabular-nums">{v.value}</span>
           </div>
-          <div class="statbar"><span style={`width:${v.pct}%`}></span></div>
+          <div class="statbar"><span style={`width:${v.pct}%;background:${v.color}`}></span></div>
         </div>
       ))}
     </div>
@@ -281,7 +286,7 @@ const vitals = [
                         <span class="font-semibold text-sm truncate block" data-i18n-weapon={opt.weaponId} data-i18n-fallback={opt.name}>{opt.name}</span>
                         {w && (
                           <span class="text-xs text-[var(--color-faint)]">
-                            {w.damage} <span data-i18n-ui="common.damageShort">dmg</span> · {w.accuracy}% <span data-i18n-ui="common.accuracyShort">acc</span>
+                            {damageRange(w.damage).min}–{damageRange(w.damage).max} <span data-i18n-ui="common.damageShort">dmg</span>{w.numAttacks > 1 ? ` ×${w.numAttacks}` : ''} · {w.accuracy}% <span data-i18n-ui="common.accuracyShort">acc</span>
                           </span>
                         )}
                       </span>

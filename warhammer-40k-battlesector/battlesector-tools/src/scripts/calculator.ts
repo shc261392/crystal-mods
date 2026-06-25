@@ -304,9 +304,10 @@ export function initCalculator(): void {
     damage.value = String(w.damage);
     accuracy.value = String(w.accuracy);
     ap.value = String(w.armorPiercing);
-    shots.value = String(
-      Math.max(1, w.numAttacks) * Math.max(1, w.shotsPerAttack) * Math.max(1, w.burstSize),
-    );
+    // Total shots = the weapon's Attacks x every model in the attacking squad.
+    const au = units.find((x) => x.id === Number(attackerUnitSel.value));
+    const models = au ? Math.max(1, au.members) : 1;
+    shots.value = String(Math.max(1, w.numAttacks) * models);
   }
 
   function applyUnit(id: number): void {
@@ -356,8 +357,10 @@ export function initCalculator(): void {
     const expected = expectedDamage(perAttack, hit);
     const killed = Math.min(modelsKilled(perAttack, hp), aliveModels);
     const totalHp = hp * mem;
-    // Remaining HP accounts for already-lost models and a wounded front model.
-    const remainingHp = Math.max(0, aliveModels * hp - (hp - frontHp));
+    // HP left in the unit after this attack: pre-existing damage (lost models +
+    // a wounded front model) minus the expected damage this attack deals.
+    const currentHp = Math.max(0, aliveModels * hp - (hp - frontHp));
+    const remainingHp = Math.max(0, currentHp - expected);
 
     setText('r-perhit', `${dr.min}\u2013${dr.max}`);
     setText('r-hit', `${Math.round(hit)}%`);

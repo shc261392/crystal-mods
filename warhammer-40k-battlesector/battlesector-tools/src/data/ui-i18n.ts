@@ -163,6 +163,7 @@ const rawUiI18n = {
     'calculator.result.damagePerAttack': 'Damage per attack',
     'calculator.result.critChance': 'Critical chance',
     'calculator.result.grazeChance': 'Graze chance',
+    'calculator.attacker.totalShots': 'Total shots (squad)',
     'calculator.result.assumptionNote':
       'Damage is the in-game range (min = 75% of max). Crit/graze chances assume 1% per point of armor-vs-penetration difference — an estimate pending calibration.',
     'calculator.result.expected': 'Expected (× hit %)',
