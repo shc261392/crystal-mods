@@ -115,13 +115,17 @@ export function initCompare(): void {
     bodyEl.innerHTML = rows
       .map((row, i) => {
         const best = bestValue(row, selected);
+        const isHp = row.label.includes('Health');
         const cells = selected
           .map((u) => {
             const v = row.get(u);
             const isBest = best !== null && v === best;
-            return `<td class="p-3 tabular-nums ${
-              isBest ? 'text-[var(--color-gold)] font-bold' : ''
-            }">${v}${isBest ? ' ★' : ''}</td>`;
+            const color = isBest
+              ? 'text-[var(--color-gold)] font-bold'
+              : isHp
+                ? 'text-[var(--color-hp)] font-semibold'
+                : '';
+            return `<td class="p-3 tabular-nums ${color}">${v}${isBest ? ' ★' : ''}</td>`;
           })
           .join('');
         return `<tr class="${i % 2 ? 'bg-[color-mix(in_oklab,var(--color-base)_50%,transparent)]' : ''}">
