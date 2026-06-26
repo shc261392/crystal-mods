@@ -1,127 +1,367 @@
 [
   {
-    "id": 486,
-    "category": "Ability description (Heirs of Azkaellon)",
-    "text": "Double all effects while unit is adjacent to HQ Commander"
+    "faction": "Adepta Sororitas",
+    "abilities": [
+      {
+        "name": "Spirit of the Emperor",
+        "costCp": 1,
+        "costAp": 1,
+        "effect": "The Sororitas within {0} tiles of the HQ Commander are imbued with a boundless font of vigour.",
+        "source": "Faction command IDs: 20026 / 20027 / 20028",
+        "titleTextId": 703,
+        "descriptionTextId": 843,
+        "abilityId": 20026
+      },
+      {
+        "name": "Divine Guidance",
+        "costCp": 2,
+        "costAp": 1,
+        "effect": "Seeing the weaknesses in the enemy's defences, the Sisters of Battle within {0} tiles of the HQ Commander strike with unerring accuracy.",
+        "source": "Faction command IDs: 20026 / 20027 / 20028",
+        "titleTextId": 704,
+        "descriptionTextId": 842,
+        "abilityId": 20027
+      },
+      {
+        "name": "Righteous Judgement",
+        "costCp": 3,
+        "costAp": 1,
+        "effect": "The Battle Sisters within {0} tiles of the HQ Commander are filled with a burning passion to bring the Emperor's judgements upon His enemies.",
+        "source": "Faction command IDs: 20026 / 20027 / 20028",
+        "titleTextId": 705,
+        "descriptionTextId": 844,
+        "abilityId": 20028
+      }
+    ],
+    "notes": [
+      "These are faction HQ command abilities, not individual HQ unit active abilities.",
+      "Costs are represented as CP 1/2/3 and AP 1 to match command tiers used on this page."
+    ]
   },
   {
-    "id": 550,
-    "category": "Ability Title (Overlord)",
-    "text": "Command Protocol"
+    "faction": "Astra Militarum",
+    "abilities": [
+      {
+        "name": "Valkyrie Transport",
+        "costCp": 1,
+        "costAp": 1,
+        "effect": "Select a unit to board the Valkyrie Transport. This unit can be redeployed by the HQ Commander, and will heal {0}% Health. If the HQ commander dies then the Valkyrie will automatically return the unit.",
+        "source": "Faction command IDs: 80036 / 80037 / 80038",
+        "titleTextId": 1148,
+        "descriptionTextId": 1191,
+        "abilityId": 80036
+      },
+      {
+        "name": "Valkyrie Strafing Run",
+        "costCp": 2,
+        "costAp": 1,
+        "effect": "Warning: Deals Friendly Fire. Fires {0} times per tile for {1} tiles in a line, dealing {2} damage per shot with an accuracy of {3} and armor piercing value of {4}.",
+        "source": "Faction command IDs: 80036 / 80037 / 80038",
+        "titleTextId": 1149,
+        "descriptionTextId": 1190,
+        "abilityId": 80037
+      },
+      {
+        "name": "Deathstrike Missile",
+        "costCp": 3,
+        "costAp": 1,
+        "effect": "Warning: Deals Friendly Fire. Deals {0} damage with {1} armor piercing to all models in the center tile, with a {2}% chance to deal {3} damage with {4} armor piercing to adjacent tiles, and {5} damage to remaining targets in a 5x5 area.",
+        "source": "Faction command IDs: 80036 / 80037 / 80038",
+        "titleTextId": 1125,
+        "descriptionTextId": 1192,
+        "abilityId": 80038
+      }
+    ],
+    "notes": [
+      "Validated against local HQ Command text entries (type: HQ Command) in parsed_data/other.json and command bark IDs in extracted_text_assets/text_repository-barks.txt."
+    ]
   },
   {
-    "id": 585,
-    "category": "Status Effect Title (Overlord Command Protocol)",
-    "text": "Protocol of Passing Seasons"
+    "faction": "Black Legion",
+    "abilities": [
+      {
+        "name": "Aura of Terror",
+        "costCp": 1,
+        "costAp": 1,
+        "effect": "The HQ Commander uses the influence of the Warp to reduce its foes to a state of utter panic, frozen and less able to move or wield weaponry.",
+        "source": "Faction command IDs: 90038 / 90039 / 90040",
+        "titleTextId": 890,
+        "descriptionTextId": 893,
+        "abilityId": 90038
+      },
+      {
+        "name": "Echoes of Endless Fury",
+        "costCp": 2,
+        "costAp": 1,
+        "effect": "Empower the legions of Khorne and weaken your enemies. To allies: +{1} Momentum. To enemies: {0} Momentum and remove Overwatch.",
+        "source": "Faction command IDs: 90038 / 90039 / 90040",
+        "titleTextId": 891,
+        "descriptionTextId": 894,
+        "abilityId": 90039
+      },
+      {
+        "name": "Blood Tithe",
+        "costCp": 3,
+        "costAp": 1,
+        "effect": "Channelling the boundless font of anger and rage that emanates from the Lord of Skulls, the HQ Commander unleashes an attack from the Warp that inflicts {0} psychic damage across a wide area.",
+        "source": "Faction command IDs: 90038 / 90039 / 90040",
+        "titleTextId": 892,
+        "descriptionTextId": 895,
+        "abilityId": 90040
+      }
+    ]
   },
   {
-    "id": 586,
-    "category": "Status Effect Title (Overlord Command Protocol)",
-    "text": "Protocol of Unbending Will"
+    "faction": "Blood Angels",
+    "abilities": [
+      {
+        "name": "Assault Cannon Strafe",
+        "costCp": 1,
+        "costAp": 1,
+        "effect": "Fires 36 times per tile for 4 tiles in a line, dealing 6-8 damage per shot with 85 accuracy and armor piercing 2. Deals friendly fire.",
+        "source": "Faction command IDs: 35 / 36 / 37",
+        "titleTextId": 257,
+        "descriptionTextId": 275,
+        "abilityId": 35
+      },
+      {
+        "name": "Assault Marine Strike",
+        "costCp": 2,
+        "costAp": 1,
+        "effect": "Spawns one Assault Squad unit at the target tile. If an enemy is on the targeted tile, they automatically perform a charge attack.",
+        "source": "Faction command IDs: 35 / 36 / 37",
+        "titleTextId": 258,
+        "descriptionTextId": 274,
+        "abilityId": 36
+      },
+      {
+        "name": "Typhoon Missiles",
+        "costCp": 3,
+        "costAp": 1,
+        "effect": "Applies 187-250 damage to the target in the selected tile, and 37-50 damage to targets in surrounding tiles. Deals friendly fire.",
+        "source": "Faction command IDs: 35 / 36 / 37",
+        "titleTextId": 259,
+        "descriptionTextIds": [272, 273],
+        "abilityId": 37
+      }
+    ]
   },
   {
-    "id": 587,
-    "category": "Status Effect Title (Overlord Command Protocol)",
-    "text": "Protocol of the Infinite Horizon"
+    "faction": "Daemons of Khorne",
+    "abilities": [
+      {
+        "name": "Blood for the Blood God!",
+        "costCp": 1,
+        "costAp": 1,
+        "effect": "Surging across the battlefield, the Daemons of Khorne search for blood to spill as a tithe to their master, the Lord of Rage.",
+        "source": "Faction command IDs: 50016 / 50017 / 50018",
+        "titleTextId": 623,
+        "descriptionTextId": 1568,
+        "abilityId": 50016
+      },
+      {
+        "name": "Murderous Tide",
+        "costCp": 2,
+        "costAp": 1,
+        "effect": "Gains the {0} status and makes a charge attack against target enemy unit, cascading through linked units with the same ability.",
+        "source": "Faction command IDs: 50016 / 50017 / 50018",
+        "titleTextId": 628,
+        "descriptionTextId": 1569,
+        "abilityId": 50017
+      },
+      {
+        "name": "Bound in Brass and Bone",
+        "costCp": 3,
+        "costAp": 1,
+        "effect": "At the start of each turn, this unit gains stacks of {0}; stacks are removed when attacked.",
+        "source": "Faction command IDs: 50016 / 50017 / 50018",
+        "titleTextId": 631,
+        "descriptionTextId": 1570,
+        "abilityId": 50018
+      }
+    ],
+    "notes": [
+      "Text IDs for this set are drawn from the local Khorne entries in parsed repositories."
+    ]
   },
   {
-    "id": 588,
-    "category": "Ability Description (Overlord Command Protocols)",
-    "text": "Toggle between two command protocols<br><br>Protocol of Passing Seasons<br>{0}<br><br>Protocol of Unbending Will<br>{1}"
+    "faction": "Necrons",
+    "abilities": [
+      {
+        "name": "Scarab Tempest",
+        "costCp": 1,
+        "costAp": 1,
+        "effect": "Spawns {0} units at the target tile. If there is an enemy at the tile, a charge attack will be done and an additional {0} unit will attack the enemy.",
+        "source": "Faction command IDs: 30023 / 30024 / 30025",
+        "titleTextId": 579,
+        "descriptionTextId": 603,
+        "abilityId": 30023
+      },
+      {
+        "name": "Tesla Lightning Storm",
+        "costCp": 2,
+        "costAp": 1,
+        "effect": "The Doom Scythe sweeps overhead, blasting {0} targets with its Twin Tesla Destructors.",
+        "source": "Faction command IDs: 30023 / 30024 / 30025",
+        "titleTextId": 580,
+        "descriptionTextId": 604,
+        "abilityId": 30024
+      },
+      {
+        "name": "Scything Death Ray",
+        "costCp": 3,
+        "costAp": 1,
+        "effect": "Warning: Deals friendly fire. Fires at 4 tiles in a line, dealing {0} damage per shot with armour piercing {1}.",
+        "source": "Faction command IDs: 30023 / 30024 / 30025",
+        "titleTextId": 581,
+        "descriptionTextId": 605,
+        "abilityId": 30025
+      }
+    ]
   },
   {
-    "id": 589,
-    "category": "Ability Description (Empowered Overlord Command Protocols)",
-    "text": "Toggle between two command protocols and adds the Protocol of the Infinite Horizon to all units within {0} tiles.<br><br>Protocol of Passing Seasons<br>{1}<br><br>Protocol of Unbending Will<br>{2}<br><br>Protocol of the Infinite Horizon<br>{3}"
+    "faction": "Orks",
+    "abilities": [
+      {
+        "name": "More Dakka!",
+        "costCp": 1,
+        "costAp": 1,
+        "effect": "The HQ Commander channels the will of Gork and Mork to exhort allies within {0} tiles to lay down more fire.",
+        "source": "Faction command IDs: 60025 / 60026 / 60027",
+        "titleTextId": 837,
+        "descriptionTextId": 864,
+        "abilityId": 60025
+      },
+      {
+        "name": "Big Shoota Strafe",
+        "costCp": 2,
+        "costAp": 1,
+        "effect": "Fires {0} times per tile for 4 tiles in a line, dealing {1} damage per shot with accuracy {2} and armour piercing {3}.",
+        "source": "Faction command IDs: 60025 / 60026 / 60027",
+        "titleTextId": 838,
+        "descriptionTextId": 275,
+        "abilityId": 60026
+      },
+      {
+        "name": "Boom Bomb",
+        "costCp": 3,
+        "costAp": 1,
+        "effect": "Applies {0} damage to target in the center tile and {0} damage to targets in surrounding tiles.",
+        "source": "Faction command IDs: 60025 / 60026 / 60027",
+        "titleTextId": 839,
+        "descriptionTextIds": [272, 273],
+        "abilityId": 60027
+      }
+    ]
   },
   {
-    "id": 730,
-    "category": "HQ Command Flavour Text - Spirit of the Emperor",
-    "text": "<i>The Sororitas are imbued with a boundless font of vigour.</i>"
+    "faction": "Tyranids",
+    "abilities": [
+      {
+        "name": "Venom Cannon Strafe",
+        "costCp": 1,
+        "costAp": 1,
+        "effect": "Fires {0} times per tile for 4 tiles in a line, dealing {1} damage per shot with an accuracy of {2} and armour piercing value of {3}.",
+        "source": "Faction command IDs: 10025 / 10026 / 10027",
+        "titleTextId": 260,
+        "descriptionTextId": 275,
+        "abilityId": 10025
+      },
+      {
+        "name": "Sonic Screech",
+        "costCp": 2,
+        "costAp": 1,
+        "effect": "Reduces Momentum by 50% and removes Overwatch actions from enemies in a 3x3 area.",
+        "source": "Faction command IDs: 10025 / 10026 / 10027",
+        "titleTextId": 261,
+        "descriptionTextId": 280,
+        "abilityId": 10026
+      },
+      {
+        "name": "Spore Mines",
+        "costCp": 3,
+        "costAp": 1,
+        "effect": "Spawns 4 spore mines at random positions in a 3x3 area. If a spore mine lands on an enemy it detonates immediately.",
+        "source": "Faction command IDs: 10025 / 10026 / 10027",
+        "titleTextId": 262,
+        "descriptionTextId": 282,
+        "abilityId": 10027
+      }
+    ]
   },
   {
-    "id": 731,
-    "category": "HQ Command Flavour Text - Divine Guidance",
-    "text": "<i>Seeing the weaknesses in the enemies’ defenses, the Sisters of Battle strike with unerring accuracy</i>"
+    "faction": "T'au",
+    "abilities": [
+      {
+        "name": "Seeker Missile Strike",
+        "costCp": 1,
+        "costAp": 1,
+        "effect": "Fires two anti-vehicle missiles at separate targets up to {0} tiles apart, each dealing {1} at {2} armour piercing.",
+        "source": "Faction command IDs: 70019 / 70020 / 70021",
+        "titleTextId": 990,
+        "descriptionTextId": 993,
+        "abilityId": 70019
+      },
+      {
+        "name": "Battlesuit Strike",
+        "costCp": 2,
+        "costAp": 1,
+        "effect": "Spawns a Crisis Battlesuit team at the target tile.",
+        "source": "Faction command IDs: 70019 / 70020 / 70021",
+        "titleTextId": 991,
+        "descriptionTextId": 994,
+        "abilityId": 70020
+      },
+      {
+        "name": "Orbital Ion Beam",
+        "costCp": 3,
+        "costAp": 1,
+        "effect": "A blinding beam of white-hot energy strikes the target and surrounding tiles.",
+        "source": "Faction command IDs: 70019 / 70020 / 70021",
+        "titleTextId": 992,
+        "descriptionTextId": 995,
+        "abilityId": 70021
+      }
+    ],
+    "notes": [
+      "Faction table exposes two explicit command bark IDs for T'au in this extraction; the third command is retained from local command title/description text data."
+    ]
   },
   {
-    "id": 732,
-    "category": "HQ Command Flavour Text - Righteous Judgement",
-    "text": "<i>The Sororitas are filled with a burning passion to bring the Emperor’s judgements upon His enemies.</i> "
-  },
-  {
-    "id": 842,
-    "category": "Ability Description",
-    "text": "<i>Seeing the weaknesses in the enemy's defences, the Sisters of Battle within {0} tiles of the HQ Commander strike with unerring accuracy.</i>"
-  },
-  {
-    "id": 843,
-    "category": "Ability Description",
-    "text": "<i>The Sororitas within {0} tiles of the HQ Commander are imbued with a boundless font of vigour.</i>"
-  },
-  {
-    "id": 844,
-    "category": "Ability Description",
-    "text": "<i>The Battle Sisters within {0} tiles of the HQ Commander are filled with a burning passion to bring the Emperor’s judgements upon His enemies.</i>"
-  },
-  {
-    "id": 864,
-    "category": "Command ability description",
-    "text": "The HQ Commander channels the will of Gork and Mork to exhort allies within {0} tiles to lay down more fire."
-  },
-  {
-    "id": 878,
-    "category": "HQ Command Flavour Text - More Dakka",
-    "text": "<i>The HQ Commander channels the will of Gork and Mork to exhort his charges to lay down more fire</i>"
-  },
-  {
-    "id": 879,
-    "category": "HQ Command Flavour Text - Big Shoota Strafe",
-    "text": "<i>The Blitza-Bommer unleashes fusillades of deadly dakka from its Supa Shootas</i>"
-  },
-  {
-    "id": 880,
-    "category": "HQ Command Flavour Text - Boom Bomb",
-    "text": "<i>Boom!</i>"
-  },
-  {
-    "id": 893,
-    "category": "Ability Description (HQ)",
-    "text": "The HQ Commander uses the influence of the Warp to reduce its foes to a state of utter panic, frozen and less able to move or wield weaponry."
-  },
-  {
-    "id": 895,
-    "category": "Ability Description (HQ)",
-    "text": "Channelling the boundless font of anger and rage that emanates from the Lord of Skulls, the HQ Commander unleashes an attack from the Warp that inflicts {0} psychic damage across a wide area."
-  },
-  {
-    "id": 900,
-    "category": "Ability Flavour Text - Echoes of Endless Fury",
-    "text": "<i>The HQ Commander's apoplectic rage shatters the will to fight in every enemy of Khorne</i>"
-  },
-  {
-    "id": 913,
-    "category": "Ability Title",
-    "text": "Master of War"
-  },
-  {
-    "id": 987,
-    "category": "Ability Description - Master of War",
-    "text": "Affects all allies within {0} tiles of a T'au Commander"
-  },
-  {
-    "id": 1014,
-    "category": "Flavour Text - Master of War",
-    "text": "<i>Expertise born of countless battles</i>"
-  },
-  {
-    "id": 1096,
-    "category": "Ability - Title",
-    "text": "Voice of Command"
-  },
-  {
-    "id": 1195,
-    "category": "Ability - Desc - Voice of Command",
-    "text": "Units that start their turn in a Battleline with the Cadian Castellan receive +{0} Accuracy and +{1} Damage until the start of their next turn"
+    "faction": "Ultramarines",
+    "abilities": [
+      {
+        "name": "Oath of Moment",
+        "costCp": 1,
+        "costAp": 1,
+        "effect": "Target enemy receives {0}; this unit receives {2}. This ability then enters cooldown for allied Ultramarine units.",
+        "source": "Faction command IDs: 100048 / 100049 / 100051",
+        "titleTextId": 1565,
+        "descriptionTextId": 1566,
+        "abilityId": 100048
+      },
+      {
+        "name": "The Imperium's Sword",
+        "costCp": 2,
+        "costAp": 1,
+        "effect": "Ultramarines command ability text for this slot remains only partially resolved in extracted repositories; this entry preserves the command ID and title mapping.",
+        "source": "Faction command IDs: 100048 / 100049 / 100051",
+        "titleTextId": 1580,
+        "abilityId": 100049
+      },
+      {
+        "name": "Blade of Ultramar",
+        "costCp": 3,
+        "costAp": 1,
+        "effect": "Ultramarines command ability text for this slot remains only partially resolved in extracted repositories; this entry preserves the command ID and title mapping.",
+        "source": "Faction command IDs: 100048 / 100049 / 100051",
+        "titleTextId": 1581,
+        "abilityId": 100051
+      }
+    ],
+    "notes": [
+      "All three faction command IDs are included.",
+      "Two Ultramarines effect bodies are pending deeper local text-link extraction."
+    ]
   }
 ]

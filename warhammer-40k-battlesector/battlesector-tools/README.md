@@ -92,6 +92,17 @@ python3 ../../.copilot_workspace/battlesector-data/prepare_website_data.py
 The combat formulas (`src/lib/combat.ts`) are documented in the data-mining
 analysis under `../../.copilot_workspace/battlesector-data/`.
 
+## Research source policy (truth-grounding)
+
+When extending mechanics or localization logic, use this precedence:
+
+1. Extracted game data/tables/text under `../../.copilot_workspace/battlesector-data/`
+2. zh-TW TC mod source under `../tc-localization/translation/zh-TW/source/zh-TW/`
+3. Official manual PDF `../../.copilot_workspace/battlesector-data/Battlesector_manual_EBOOK.pdf`
+
+If any conflict appears, **extracted data overrides manual wording**.
+Manual content is a conceptual aid, not a higher-priority numeric source.
+
 ## Disclaimer
 
 Unofficial fan project. Warhammer 40,000: Battlesector © Games Workshop / Black

@@ -52,16 +52,22 @@ function loadoutCost(u: Unit, loadout: number[]): number {
 
 export function initArmyBuilder(): void {
   const factionBar = document.getElementById('army-faction-bar');
-  const select = document.getElementById('add-unit') as HTMLSelectElement | null;
+  const unitGrid = document.getElementById('unit-grid');
+  const unitSearch = document.getElementById('unit-search') as HTMLInputElement | null;
+  const unitSort = document.getElementById('unit-sort') as HTMLSelectElement | null;
   const loadoutBox = document.getElementById('loadout-config');
+  const loadoutTotal = document.getElementById('loadout-total');
+  const selectedUnitChip = document.getElementById('selected-unit-chip');
   const addBtn = document.getElementById('add-btn');
   const list = document.getElementById('army-list');
   const empty = document.getElementById('empty');
-  if (!factionBar || !select || !list) return;
+  if (!factionBar || !unitGrid || !list) return;
   const listEl = list;
-  const unitSel = select;
+  const gridEl = unitGrid;
   const barEl = factionBar;
   let selectedFactionId: number | null = null;
+  let selectedUnitId: number | null = null;
+  const selectedLoadouts = new Map<number, number[]>();
   const PILL_ACTIVE = [
     '!border-[var(--color-gold)]',
     '!text-[var(--color-gold)]',
@@ -115,26 +121,68 @@ export function initArmyBuilder(): void {
 
   function populateUnits(): void {
     const fid = selectedFactionId ?? -1;
-    const inFaction = units
-      .filter((u) => u.faction === fid)
-      .sort((a, b) => unitName(a.id, a.name).localeCompare(unitName(b.id, b.name)));
-    unitSel.innerHTML = inFaction
-      .map(
-        (u) =>
-          `<option value="${u.id}">${unitName(u.id, u.name)} — ${u.pointCost} ${t('common.pointsShort')}</option>`,
-      )
-      .join('');
+    const query = unitSearch?.value.trim().toLowerCase() ?? '';
+    const cards = [...gridEl.querySelectorAll<HTMLElement>('[data-unit-id][data-faction-id]')];
+    const sortMode = unitSort?.value ?? 'name';
+    let firstVisibleUnit: number | null = null;
+    for (const card of cards) {
+      const cardFactionId = Number(card.getAttribute('data-faction-id'));
+      const cardUnitId = Number(card.getAttribute('data-unit-id'));
+      const cardName = card.getAttribute('data-unit-name') ?? '';
+      const visible = cardFactionId === fid && (!query || cardName.includes(query));
+      card.classList.toggle('hidden', !visible);
+      if (visible && firstVisibleUnit === null) firstVisibleUnit = cardUnitId;
+    }
+
+    cards.sort((a, b) => {
+      const aName = a.getAttribute('data-unit-name') ?? '';
+      const bName = b.getAttribute('data-unit-name') ?? '';
+      const aPoints = Number(a.getAttribute('data-unit-points'));
+      const bPoints = Number(b.getAttribute('data-unit-points'));
+      if (sortMode === 'points-desc') return bPoints - aPoints || aName.localeCompare(bName);
+      if (sortMode === 'points-asc') return aPoints - bPoints || aName.localeCompare(bName);
+      return aName.localeCompare(bName) || aPoints - bPoints;
+    });
+    for (const card of cards) gridEl.appendChild(card);
+
+    const stillVisible = cards.some(
+      (card) =>
+        !card.classList.contains('hidden') && Number(card.getAttribute('data-unit-id')) === selectedUnitId,
+    );
+    if (!stillVisible) selectedUnitId = firstVisibleUnit;
+    renderSelectedUnitCards();
     renderLoadoutConfig();
+  }
+
+  function renderSelectedUnitCards(): void {
+    for (const card of gridEl.querySelectorAll<HTMLElement>('[data-unit-id]')) {
+      const id = Number(card.getAttribute('data-unit-id'));
+      const selected = id === selectedUnitId;
+      card.classList.toggle('!border-[var(--color-gold)]', selected);
+      card.classList.toggle('bg-[color-mix(in_oklab,var(--color-gold)_10%,transparent)]', selected);
+      card.setAttribute('aria-pressed', selected ? 'true' : 'false');
+    }
+    const u = selectedUnitId !== null ? unitById.get(selectedUnitId) : undefined;
+    if (!selectedUnitChip) return;
+    if (!u) {
+      selectedUnitChip.classList.add('hidden');
+      selectedUnitChip.textContent = '';
+      return;
+    }
+    const pts = loadoutCost(u, currentLoadout(u));
+    selectedUnitChip.classList.remove('hidden');
+    selectedUnitChip.textContent = `${t('common.unit')}: ${unitName(u.id, u.name)} · ${pts} ${t('common.pointsShort')}`;
   }
 
   function renderLoadoutConfig(): void {
     if (!loadoutBox) return;
-    const u = unitById.get(Number(unitSel.value));
+    const u = selectedUnitId !== null ? unitById.get(selectedUnitId) : undefined;
     if (!u) {
       loadoutBox.innerHTML = '';
+      if (loadoutTotal) loadoutTotal.textContent = '';
       return;
     }
-    const def = defaultLoadout(u);
+    const def = [...(selectedLoadouts.get(u.id) ?? defaultLoadout(u))];
     const slots = u.weaponSlots
       .map((slot, i) => {
         if (slot.options.length <= 1) return '';
@@ -151,16 +199,35 @@ export function initArmyBuilder(): void {
     for (const sel of loadoutBox.querySelectorAll<HTMLSelectElement>('select[data-slot]')) {
       const i = Number(sel.getAttribute('data-slot'));
       sel.value = String(def[i]);
+      sel.addEventListener('change', updateLoadoutTotal);
     }
+    selectedLoadouts.set(u.id, def);
+    updateLoadoutTotal();
+  }
+
+  function updateLoadoutTotal(): void {
+    if (!loadoutTotal) return;
+    const u = selectedUnitId !== null ? unitById.get(selectedUnitId) : undefined;
+    if (!u) {
+      loadoutTotal.textContent = '';
+      return;
+    }
+    const pts = loadoutCost(u, currentLoadout(u));
+    const delta = pts - u.pointCost;
+    loadoutTotal.textContent =
+      delta > 0
+        ? `${pts} ${t('common.pointsShort')} (base ${u.pointCost} +${delta})`
+        : `${pts} ${t('common.pointsShort')}`;
   }
 
   function currentLoadout(u: Unit): number[] {
-    const def = defaultLoadout(u);
+    const def = [...(selectedLoadouts.get(u.id) ?? defaultLoadout(u))];
     if (!loadoutBox) return def;
     for (const sel of loadoutBox.querySelectorAll<HTMLSelectElement>('select[data-slot]')) {
       const i = Number(sel.getAttribute('data-slot'));
       def[i] = Number(sel.value);
     }
+    selectedLoadouts.set(u.id, def);
     return def;
   }
 
@@ -172,6 +239,10 @@ export function initArmyBuilder(): void {
       })
       .filter(Boolean)
       .join(', ');
+  }
+
+  function entryKey(e: ArmyEntry): string {
+    return `${e.id}:${(e.loadout ?? []).join('-')}`;
   }
 
   function persist(): void {
@@ -186,7 +257,7 @@ export function initArmyBuilder(): void {
         const href = u ? `/units/${unitSlug(u)}` : '#';
         const displayName = u ? unitName(u.id, u.name) : unitName(e.id, e.name);
         const lo = u && e.loadout ? loadoutSummary(u, e.loadout) : '';
-        return `<li class="flex items-center gap-3 rounded-lg bg-[var(--color-base)] border border-[var(--color-border)] px-3 py-2.5" data-id="${e.id}">
+        return `<li class="flex items-center gap-3 rounded-lg bg-[var(--color-base)] border border-[var(--color-border)] px-3 py-2.5" data-key="${entryKey(e)}">
           <span class="flex-1 min-w-0">
             <a href="${href}" class="font-semibold text-sm truncate block hover:text-[var(--color-gold)]">${displayName}</a>
             <span class="text-xs text-[var(--color-faint)]">${lo ? `${lo} · ` : ''}${tf('army.item.pointsEach', { points: e.points })}</span>
@@ -229,7 +300,7 @@ export function initArmyBuilder(): void {
   }
 
   function add(): void {
-    const u = unitById.get(Number(unitSel.value));
+    const u = selectedUnitId !== null ? unitById.get(selectedUnitId) : undefined;
     if (!u) return;
     const loadout = currentLoadout(u);
     const existing = army.find(
@@ -258,15 +329,23 @@ export function initArmyBuilder(): void {
     populateFactions();
     populateUnits();
   });
-  unitSel.addEventListener('change', renderLoadoutConfig);
+  gridEl.addEventListener('click', (e) => {
+    const card = (e.target as HTMLElement).closest('[data-unit-id]') as HTMLElement | null;
+    if (!card || card.classList.contains('hidden')) return;
+    selectedUnitId = Number(card.getAttribute('data-unit-id'));
+    renderSelectedUnitCards();
+    renderLoadoutConfig();
+  });
+  unitSearch?.addEventListener('input', populateUnits);
+  unitSort?.addEventListener('change', populateUnits);
   addBtn?.addEventListener('click', add);
 
   list.addEventListener('click', (ev) => {
     const btn = (ev.target as HTMLElement).closest('button[data-act]');
     if (!btn) return;
     const li = btn.closest('li');
-    const id = Number(li?.getAttribute('data-id'));
-    const entry = army.find((e) => e.id === id);
+    const key = li?.getAttribute('data-key');
+    const entry = army.find((e) => entryKey(e) === key);
     if (!entry) return;
     const act = btn.getAttribute('data-act');
     if (act === 'inc') entry.qty += 1;

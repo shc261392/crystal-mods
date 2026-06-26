@@ -1,86 +1,375 @@
 ---
+import { existsSync, readFileSync } from 'node:fs';
+import path from 'node:path';
+
 import commandRows from '../data/command-hq-abilities.json';
+import factionsData from '../data/factions.json';
+import i18nData from '../data/i18n.json';
 import Base from '../layouts/Base.astro';
-import { unitSlug, units } from '../lib/data';
 
-interface CommandRow {
-  id: number;
-  category: string;
-  text: string;
+interface CommandAbility {
+  name: string;
+  costCp: number;
+  costAp: number;
+  effect: string;
+  source: string;
+  titleTextId?: number;
+  descriptionTextId?: number;
+  descriptionTextIds?: number[];
+  abilityId?: number;
 }
 
-const rows = (commandRows as CommandRow[]).map((r) => ({
-  ...r,
-  text: r.text.replace(/<[^>]+>/g, '').trim(),
-}));
-
-const hqUnits = units.filter((u) => u.roleName === 'HQ');
-const byFaction = new Map<
-  string,
-  {
-    faction: string;
-    unitCount: number;
-    abilities: number[];
-    units: { id: number; name: string; slug: string }[];
-  }
->();
-
-for (const u of hqUnits) {
-  const current = byFaction.get(u.factionName) ?? {
-    faction: u.factionName,
-    unitCount: 0,
-    abilities: [],
-    units: [],
-  };
-  current.unitCount += 1;
-  current.units.push({ id: u.id, name: u.name, slug: unitSlug(u) });
-  for (const aid of u.abilityIds) {
-    if (!current.abilities.includes(aid)) current.abilities.push(aid);
-  }
-  byFaction.set(u.factionName, current);
+interface FactionCommandSet {
+  faction: string;
+  abilities: CommandAbility[];
+  notes?: string[];
 }
 
-const factions = [...byFaction.values()]
-  .map((f) => ({ ...f, abilities: [...f.abilities].sort((a, b) => a - b) }))
+interface CommandAbilityView extends CommandAbility {
+  commandKey: string;
+}
+
+interface FactionCommandSetView {
+  faction: string;
+  abilities: CommandAbilityView[];
+  notes?: string[];
+}
+
+const sourceFactions = (commandRows as FactionCommandSet[])
+  .map((f) => ({
+    ...f,
+    abilities: f.abilities.map((a, index) => ({
+      ...a,
+      commandKey: `${f.faction}::${a.abilityId ?? a.titleTextId ?? index}`,
+    })),
+  }))
   .sort((a, b) => a.faction.localeCompare(b.faction));
+
+const factions = sourceFactions as FactionCommandSetView[];
+
+const localeCodes = ['en', 'de', 'es', 'fr', 'ko', 'pl', 'pt-BR', 'ru', 'zh-CN', 'zh-TW'] as const;
+
+const textSuffixByLocale: Record<(typeof localeCodes)[number], string> = {
+  en: '',
+  de: '_german',
+  es: '_spanish',
+  fr: '_french',
+  ko: '_korean',
+  pl: '_polish',
+  'pt-BR': '_brazilianportuguese',
+  ru: '_russian',
+  'zh-CN': '_chinese',
+  'zh-TW': '',
+};
+
+const commandTextIds = new Set<number>();
+for (const faction of factions) {
+  for (const ability of faction.abilities) {
+    if (ability.titleTextId !== undefined) commandTextIds.add(ability.titleTextId);
+    if (ability.descriptionTextId !== undefined) commandTextIds.add(ability.descriptionTextId);
+    if (ability.descriptionTextIds !== undefined) {
+      for (const textId of ability.descriptionTextIds) commandTextIds.add(textId);
+    }
+  }
+}
+
+const projectRoot = new URL('..', import.meta.url).pathname;
+const extractedTextRoot = path.resolve(
+  projectRoot,
+  '../../.copilot_workspace/battlesector-data/extracted_text_assets',
+);
+const tcModZhTwRoot = path.resolve(
+  projectRoot,
+  '../tc-localization/translation/zh-TW/source/zh-TW',
+);
+
+const textRepositoryBases = [
+  'units',
+  'units-external',
+  'barks',
+  'barks-external',
+  'campaign',
+  'campaign-external',
+  'default',
+  'default-external',
+];
+
+function parseIdTextFile(filePath: string, wantedIds: Set<number>): Map<number, string> {
+  const map = new Map<number, string>();
+  if (existsSync(filePath) === false) return map;
+
+  const lines = readFileSync(filePath, 'utf8').split(/\r?\n/);
+  for (const line of lines) {
+    const firstPipe = line.indexOf('|');
+    if (firstPipe < 1) continue;
+
+    const id = Number(line.slice(0, firstPipe));
+    if (Number.isInteger(id) === false || wantedIds.has(id) === false) continue;
+
+    const secondPipe = line.indexOf('|', firstPipe + 1);
+    const text = (
+      secondPipe === -1 ? line.slice(firstPipe + 1) : line.slice(firstPipe + 1, secondPipe)
+    ).trim();
+    if (text.length === 0 || map.has(id)) continue;
+    map.set(id, text);
+  }
+
+  return map;
+}
+
+function buildLocaleTextMap(locale: (typeof localeCodes)[number]): Map<number, string> {
+  const map = new Map<number, string>();
+
+  if (locale === 'zh-TW') {
+    for (const fileName of ['units.txt', 'ui.txt', 'barks.txt']) {
+      const parsed = parseIdTextFile(path.join(tcModZhTwRoot, fileName), commandTextIds);
+      for (const [id, text] of parsed) {
+        if (map.has(id) === false) map.set(id, text);
+      }
+    }
+    return map;
+  }
+
+  const suffix = textSuffixByLocale[locale];
+  for (const baseName of textRepositoryBases) {
+    const filePath = path.join(extractedTextRoot, `text_repository-${baseName}${suffix}.txt`);
+    const parsed = parseIdTextFile(filePath, commandTextIds);
+    for (const [id, text] of parsed) {
+      if (map.has(id) === false) map.set(id, text);
+    }
+  }
+
+  return map;
+}
+
+function extractTemplateTokens(input: string): string[] {
+  const tokens = input.match(/\{\d+\}/g) ?? [];
+  return [...new Set(tokens)];
+}
+
+function makeTokenTemplateRegex(template: string): { regex: RegExp; tokens: string[] } | undefined {
+  const tokens = extractTemplateTokens(template);
+  if (tokens.length === 0) return undefined;
+
+  const escaped = template.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const pattern = escaped.replace(/\\\{\d+\\\}/g, '([\\s\\S]+?)');
+  return { regex: new RegExp(`^${pattern}$`), tokens };
+}
+
+function extractResolvedTokenValuesFromFallback(
+  templateWithTokens: string,
+  fallbackWithoutTokens: string,
+): Record<string, string> | undefined {
+  const tokenized = makeTokenTemplateRegex(templateWithTokens);
+  if (tokenized === undefined) return undefined;
+  if (extractTemplateTokens(fallbackWithoutTokens).length > 0) return undefined;
+
+  const match = fallbackWithoutTokens.match(tokenized.regex);
+  if (match === null) return undefined;
+
+  const result: Record<string, string> = {};
+  for (let i = 0; i < tokenized.tokens.length; i += 1) {
+    const token = tokenized.tokens[i];
+    if (token === undefined) return undefined;
+    const value = match[i + 1]?.trim();
+    if (value === undefined || value.length === 0) return undefined;
+    result[token] = value;
+  }
+
+  return result;
+}
+
+function applyResolvedTokens(input: string, tokenValues: Record<string, string>): string {
+  let output = input;
+  for (const [token, value] of Object.entries(tokenValues)) {
+    if (output.includes(token)) {
+      output = output.split(token).join(value);
+    }
+  }
+  return output;
+}
+
+function textForIds(localeMap: Map<number, string>, ids: number[]): string | undefined {
+  const values = ids
+    .map((id) => localeMap.get(id))
+    .filter((v): v is string => typeof v === 'string' && v.length > 0);
+  if (values.length === 0) return undefined;
+  return values.join(' ');
+}
+
+const localeTextMaps = Object.fromEntries(
+  localeCodes.map((locale) => [locale, buildLocaleTextMap(locale)]),
+) as Record<(typeof localeCodes)[number], Map<number, string>>;
+
+const resolvedTokenValuesByDescriptionId = new Map<number, Record<string, string>>();
+const conflictingResolvedTokenIds = new Set<number>();
+
+for (const faction of factions) {
+  for (const ability of faction.abilities) {
+    if (ability.descriptionTextId === undefined) continue;
+
+    const enTemplate = localeTextMaps.en.get(ability.descriptionTextId);
+    if (enTemplate === undefined) continue;
+
+    const resolved = extractResolvedTokenValuesFromFallback(enTemplate, ability.effect);
+    if (resolved === undefined) continue;
+
+    const existing = resolvedTokenValuesByDescriptionId.get(ability.descriptionTextId);
+    if (existing === undefined) {
+      resolvedTokenValuesByDescriptionId.set(ability.descriptionTextId, resolved);
+      continue;
+    }
+
+    const hasConflict = Object.keys({ ...existing, ...resolved }).some(
+      (token) => existing[token] !== undefined && resolved[token] !== undefined && existing[token] !== resolved[token],
+    );
+
+    if (hasConflict) {
+      conflictingResolvedTokenIds.add(ability.descriptionTextId);
+      resolvedTokenValuesByDescriptionId.delete(ability.descriptionTextId);
+    }
+  }
+}
+
+for (const conflictingId of conflictingResolvedTokenIds) {
+  resolvedTokenValuesByDescriptionId.delete(conflictingId);
+}
+
+const factionNameIdByName = new Map(
+  (factionsData as { name: string; nameId: number }[]).map((f) => [f.name, f.nameId]),
+);
+
+const i18nFactionNames = (i18nData as { factionNames: Record<string, Record<string, string>> })
+  .factionNames;
+
+const commandLocalePayload = {
+  defaultLocale: 'en',
+  abilities: {} as Record<
+    string,
+    {
+      nameByLocale: Partial<Record<(typeof localeCodes)[number], string>>;
+      effectByLocale: Partial<Record<(typeof localeCodes)[number], string>>;
+      unresolvedTokensByLocale: Partial<Record<(typeof localeCodes)[number], string[]>>;
+    }
+  >,
+  factionNamesByLocale: {} as Record<(typeof localeCodes)[number], Record<string, string>>,
+};
+
+for (const locale of localeCodes) {
+  const translatedFactionNames: Record<string, string> = {};
+  for (const faction of factions) {
+    const nameId = factionNameIdByName.get(faction.faction);
+    const translated =
+      nameId !== undefined
+        ? (i18nFactionNames[locale]?.[String(nameId)] ?? faction.faction)
+        : faction.faction;
+    translatedFactionNames[faction.faction] = translated;
+  }
+  commandLocalePayload.factionNamesByLocale[locale] = translatedFactionNames;
+}
+
+for (const faction of factions) {
+  for (const ability of faction.abilities) {
+    const descIds: number[] = [];
+    if (ability.descriptionTextId !== undefined) descIds.push(ability.descriptionTextId);
+    if (ability.descriptionTextIds !== undefined) descIds.push(...ability.descriptionTextIds);
+
+    const entry = {
+      nameByLocale: {} as Partial<Record<(typeof localeCodes)[number], string>>,
+      effectByLocale: {} as Partial<Record<(typeof localeCodes)[number], string>>,
+      unresolvedTokensByLocale: {} as Partial<Record<(typeof localeCodes)[number], string[]>>,
+    };
+
+    for (const locale of localeCodes) {
+      const localeMap = localeTextMaps[locale];
+      const enMap = localeTextMaps.en;
+
+      const localizedName =
+        ability.titleTextId !== undefined
+          ? (localeMap.get(ability.titleTextId) ?? enMap.get(ability.titleTextId) ?? ability.name)
+          : ability.name;
+
+      const localizedEffect =
+        descIds.length > 0
+          ? (textForIds(localeMap, descIds) ?? textForIds(enMap, descIds) ?? ability.effect)
+          : ability.effect;
+
+      let tokenResolvedEffect = localizedEffect;
+      for (const descId of descIds) {
+        const tokenValues = resolvedTokenValuesByDescriptionId.get(descId);
+        if (tokenValues !== undefined) {
+          tokenResolvedEffect = applyResolvedTokens(tokenResolvedEffect, tokenValues);
+        }
+      }
+
+      entry.nameByLocale[locale] = localizedName;
+      entry.effectByLocale[locale] = tokenResolvedEffect;
+      entry.unresolvedTokensByLocale[locale] = extractTemplateTokens(tokenResolvedEffect);
+    }
+
+    commandLocalePayload.abilities[ability.commandKey] = entry;
+  }
+}
 ---
 
 <Base
-  title="Command / HQ Abilities"
-  description="Research view for command and HQ abilities in Battlesector, with verified command-related text and faction HQ ability ID sets."
+  title="Faction Command Abilities"
+  description="Research view for faction HQ command abilities in Battlesector, including CP/AP costs and extracted effects."
   path="/command-abilities"
 >
   <header class="mb-6">
     <p class="eyebrow mb-2">Research</p>
-    <h1 class="text-3xl md:text-4xl font-black">Command / HQ Abilities</h1>
+    <h1 class="text-3xl md:text-4xl font-black">Faction Command Abilities</h1>
     <p class="mt-2 text-[var(--color-muted)] max-w-3xl">
-      Verified from extracted game text tables and HQ unit records. This page is a
-      browse/reference tab for ongoing command-ability research.
+      This tab lists <strong>true faction HQ command abilities</strong> (not HQ unit
+      active-ability lists), with CP/AP costs and extracted effect summaries.
     </p>
   </header>
 
   <section class="surface p-5 md:p-6">
-    <h2 class="text-lg font-bold mb-3">HQ units by faction (ability ID coverage)</h2>
+    <h2 class="text-lg font-bold mb-3">Faction HQ command abilities</h2>
     <p class="text-sm text-[var(--color-faint)] mb-4">
-      Source: <code>src/data/units.json</code>. IDs below are the exact ability IDs linked to each faction's HQ units.
+      Source: extracted in-repo game text IDs and command mappings.
     </p>
-    <div class="grid gap-3 md:grid-cols-2">
+    <p class="text-xs text-[var(--color-faint)] mb-4">
+      Placeholder token audit is locale-aware: when source text still contains runtime
+      tokens like <code>{'{0}'}</code>, the card shows a warning badge.
+    </p>
+    <div class="grid gap-3 lg:grid-cols-2">
       {factions.map((f) => (
         <article class="rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] p-3.5">
-          <div class="flex items-center justify-between gap-2 mb-2">
-            <h3 class="font-bold">{f.faction}</h3>
-            <span class="chip !text-[var(--color-gold-dim)]">{f.unitCount} HQ units</span>
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <h3 class="font-bold" data-command-faction={f.faction}>
+              {f.faction}
+            </h3>
           </div>
-          <p class="text-xs text-[var(--color-faint)] mb-2">Units</p>
-          <div class="flex flex-wrap gap-1.5 mb-3">
-            {f.units.map((u) => (
-              <a href={`/units/${u.slug}`} class="chip hover:!text-[var(--color-gold)]">{u.name}</a>
-            ))}
-          </div>
-          <p class="text-xs text-[var(--color-faint)] mb-1.5">Ability IDs ({f.abilities.length})</p>
-          <div class="flex flex-wrap gap-1.5">
-            {f.abilities.map((id) => (
-              <span class="chip !py-0.5 !px-1.5 text-[10px]">{id}</span>
+          <div class="space-y-2.5">
+            {f.abilities.map((a) => (
+              <article class="rounded border border-[var(--color-border)]/60 px-3 py-2.5">
+                <div class="flex flex-wrap items-center gap-2 mb-1.5">
+                  <h4 class="font-semibold" data-command-name-key={a.commandKey}>
+                    {a.name}
+                  </h4>
+                  <span class="chip !py-0.5 !px-1.5 text-[10px]">{a.costCp} CP</span>
+                  <span class="chip !py-0.5 !px-1.5 text-[10px]">{a.costAp} AP</span>
+                  <span
+                    class="chip !py-0.5 !px-1.5 text-[10px] !text-orange-200 hidden"
+                    data-command-token-key={a.commandKey}
+                  ></span>
+                </div>
+                <p class="text-sm text-[var(--color-muted)]" data-command-effect-key={a.commandKey}>
+                  {a.effect}
+                </p>
+                <div class="mt-1.5 flex flex-wrap gap-1.5 text-[10px] text-[var(--color-faint)]">
+                  {a.titleTextId !== undefined && <span class="chip !py-0.5 !px-1.5">Title ID {a.titleTextId}</span>}
+                  {a.descriptionTextId !== undefined && (
+                    <span class="chip !py-0.5 !px-1.5">Desc ID {a.descriptionTextId}</span>
+                  )}
+                  {a.descriptionTextIds !== undefined && (
+                    <span class="chip !py-0.5 !px-1.5">Desc IDs {a.descriptionTextIds.join(', ')}</span>
+                  )}
+                </div>
+              </article>
             ))}
           </div>
         </article>
@@ -88,21 +377,73 @@ const factions = [...byFaction.values()]
     </div>
   </section>
 
-  <section class="surface p-5 md:p-6 mt-4">
-    <h2 class="text-lg font-bold mb-3">Verified command/HQ text entries</h2>
-    <p class="text-sm text-[var(--color-faint)] mb-4">
-      Source: extracted localization table entries filtered by command/HQ terms.
-    </p>
-    <div class="space-y-2.5">
-      {rows.map((r) => (
-        <article class="rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] px-3.5 py-3">
-          <div class="flex items-center gap-2 mb-1.5">
-            <span class="chip !py-0.5 !px-1.5 text-[10px]">ID {r.id}</span>
-            <span class="text-xs text-[var(--color-faint)]">{r.category}</span>
-          </div>
-          <p class="text-sm text-[var(--color-muted)]">{r.text}</p>
-        </article>
-      ))}
-    </div>
-  </section>
+  <script type="module" define:vars={{ commandLocalePayload }}>
+    import { getLocale } from '../scripts/i18n';
+
+    function pickLocale(locale) {
+      if (locale in commandLocalePayload.factionNamesByLocale) return locale;
+      return commandLocalePayload.defaultLocale;
+    }
+
+    function renderUnresolvedTokens(tokens) {
+      return `Unresolved: ${tokens.join(', ')}`;
+    }
+
+    function applyCommandLocale(rawLocale) {
+      const locale = pickLocale(rawLocale);
+      const fallbackLocale = commandLocalePayload.defaultLocale;
+
+      for (const node of document.querySelectorAll('[data-command-faction]')) {
+        const key = node.dataset.commandFaction;
+        if (!key) continue;
+        const byLocale = commandLocalePayload.factionNamesByLocale[locale] ?? {};
+        const byFallback = commandLocalePayload.factionNamesByLocale[fallbackLocale] ?? {};
+        node.textContent = byLocale[key] ?? byFallback[key] ?? key;
+      }
+
+      for (const node of document.querySelectorAll('[data-command-name-key]')) {
+        const key = node.dataset.commandNameKey;
+        if (!key) continue;
+        const entry = commandLocalePayload.abilities[key];
+        if (!entry) continue;
+        node.textContent = entry.nameByLocale[locale] ?? entry.nameByLocale[fallbackLocale] ?? node.textContent;
+      }
+
+      for (const node of document.querySelectorAll('[data-command-effect-key]')) {
+        const key = node.dataset.commandEffectKey;
+        if (!key) continue;
+        const entry = commandLocalePayload.abilities[key];
+        if (!entry) continue;
+        node.textContent = entry.effectByLocale[locale] ?? entry.effectByLocale[fallbackLocale] ?? node.textContent;
+      }
+
+      for (const node of document.querySelectorAll('[data-command-token-key]')) {
+        const key = node.dataset.commandTokenKey;
+        if (!key) continue;
+        const entry = commandLocalePayload.abilities[key];
+        if (!entry) continue;
+
+        const tokens =
+          entry.unresolvedTokensByLocale[locale] ?? entry.unresolvedTokensByLocale[fallbackLocale] ?? [];
+
+        if (tokens.length > 0) {
+          node.textContent = renderUnresolvedTokens(tokens);
+          node.classList.remove('hidden');
+        } else {
+          node.textContent = '';
+          node.classList.add('hidden');
+        }
+      }
+    }
+
+    const applyCurrentLocale = () => {
+      applyCommandLocale(getLocale());
+    };
+
+    applyCurrentLocale();
+    window.addEventListener('bs:locale-changed', (event) => {
+      const detail = event && typeof event === 'object' && 'detail' in event ? event.detail : undefined;
+      applyCommandLocale(detail?.locale ?? getLocale());
+    });
+  </script>
 </Base>

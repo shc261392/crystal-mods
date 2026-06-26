@@ -1,10 +1,11 @@
 ---
 import Base from '../layouts/Base.astro';
-import { factionColor, factions } from '../lib/data';
-import { getFactionEmblem } from '../scripts/images';
+import { factionColor, factions, units } from '../lib/data';
+import { getFactionEmblem, getUnitPortrait } from '../scripts/images';
 
 // Single-faction army: faction picker mirrors the unit browser's filter pills.
 const factionPills = [...factions].sort((a, b) => a.name.localeCompare(b.name));
+const sortedUnits = [...units].sort((a, b) => a.name.localeCompare(b.name));
 ---
 
 <Base
@@ -45,10 +46,59 @@ const factionPills = [...factions].sort((a, b) => a.name.localeCompare(b.name));
           </div>
         </div>
         <div>
-          <label class="label block mb-1.5" for="add-unit" data-i18n-ui="common.unit">Unit</label>
-          <select id="add-unit" class="select"></select>
+          <label class="label block mb-1.5" for="unit-search" data-i18n-ui="common.search">Search</label>
+          <input
+            id="unit-search"
+            class="input"
+            type="search"
+            placeholder="Search by name…"
+            data-i18n-ui-placeholder="common.searchPlaceholder"
+            autocomplete="off"
+          />
         </div>
+        <div>
+          <label class="label block mb-1.5" for="unit-sort" data-i18n-ui="common.sort">Sort</label>
+          <select id="unit-sort" class="select">
+            <option value="name">Name (A–Z)</option>
+            <option value="points-desc">Points (high→low)</option>
+            <option value="points-asc">Points (low→high)</option>
+          </select>
+        </div>
+        <div id="unit-grid" class="grid gap-2 sm:grid-cols-2 max-h-[22rem] overflow-y-auto pr-1">
+          {sortedUnits.map((u) => {
+            const thumb = getUnitPortrait(u.name, u.portrait) ?? getFactionEmblem(u.faction);
+            return (
+              <button
+                type="button"
+                class="unit-pick-card surface p-3 text-left w-full border border-[var(--color-border)] transition-colors hover:border-[var(--color-border-strong)]"
+                data-unit-id={u.id}
+                data-faction-id={u.faction}
+                data-unit-name={u.name.toLowerCase()}
+                data-unit-points={u.pointCost}
+              >
+                <div class="flex items-start gap-2.5">
+                  <span class="w-1 self-stretch rounded-full shrink-0" style={`background:${u.roleColor}`}></span>
+                  {thumb ? (
+                    <img src={thumb} alt="" width="36" height="36" loading="lazy" class="w-9 h-9 rounded-lg object-contain bg-black/30 border border-[var(--color-border)] p-0.5 shrink-0" />
+                  ) : (
+                    <div class="w-9 h-9 rounded-lg grid place-items-center font-black text-xs shrink-0 border border-[var(--color-border)]" style={`background:${factionColor(u.factionName)}1f; color:${factionColor(u.factionName)}`} aria-hidden="true">{u.factionName.slice(0, 1)}</div>
+                  )}
+                  <span class="min-w-0 flex-1">
+                    <span class="font-semibold text-sm truncate block" data-i18n-unit={u.id} data-i18n-fallback={u.name}>{u.name}</span>
+                    <span class="text-xs text-[var(--color-faint)]"><span data-i18n-role={u.role} data-i18n-fallback={u.roleName}>{u.roleName}</span></span>
+                  </span>
+                  <span class="text-right shrink-0">
+                    <span class="font-bold text-[var(--color-gold)] leading-none">{u.pointCost}</span>
+                    <span class="text-[10px] text-[var(--color-faint)] uppercase tracking-wide block mt-0.5" data-i18n-ui="common.pointsShort">pts</span>
+                  </span>
+                </div>
+              </button>
+            );
+          })}
+        </div>
+        <div id="selected-unit-chip" class="hidden chip justify-between gap-2 px-3 py-2 text-xs"></div>
         <div id="loadout-config" class="space-y-2"></div>
+        <p id="loadout-total" class="text-sm text-[var(--color-faint)]"></p>
         <button id="add-btn" type="button" class="btn btn-primary w-full" data-i18n-ui="army.addUnit">Add a unit</button>
       </div>
 

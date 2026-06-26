@@ -10,6 +10,40 @@ Source data: AssetRipper export at
 (method bodies are AssetRipper stubs — field/struct layout is reliable, logic is
 not).
 
+## Truth-grounding hierarchy & progressive disclosure (NEW)
+
+Use sources in this order when documenting or implementing mechanics:
+
+1. **Extracted game data (authoritative):**
+   - `.copilot_workspace/battlesector-data/complete_stats/**`
+   - `.copilot_workspace/battlesector-data/extracted_text_assets/**`
+   - `.copilot_workspace/battlesector-data/parsed_data/**`
+2. **TC localization source (zh-TW display source):**
+   - `../tc-localization/translation/zh-TW/source/zh-TW/**`
+3. **Official PDF manual (conceptual fallback only):**
+   - `.copilot_workspace/battlesector-data/Battlesector_manual_EBOOK.pdf`
+
+If sources conflict, **extracted data always wins over manual text**.
+
+Progressive disclosure rule for research work:
+
+- Default to extracted tables/text for implementation.
+- Pull from the manual only when a mechanic is conceptually unclear in extracted
+  data (turn flow intent, definitions, terminology).
+- Record unresolved runtime-only placeholders (`{0}`, `{1}`, ...) explicitly; do
+  not invent values not present in extracted data.
+
+### Manual review notes (current)
+
+After full manual pass plus tooling review:
+
+- Manual is useful for conceptual framing (HQ command tiers, turn sequence,
+  overwatch/momentum intent).
+- Manual does **not** provide reliable per-ability token payload values for all
+  command templates.
+- Numeric token substitution remains bounded by what can be proven from extracted
+  assets/text; unresolved tokens must remain flagged.
+
 ## Damage (verified earlier)
 
 - `Damage` = the **maximum** of a damage range. Minimum = `0.75 × max`
@@ -113,21 +147,20 @@ simplification.)_
 Bolt Pistol, gauntlets, hand flamers). Used to refine melee detection:
 **melee = `rangeMax ≤ 1.5` AND not `Pistol`** (143 melee).
 
-## Command / HQ abilities (research tab added)
+## Command abilities (research tab corrected)
 
-Reliable command/HQ data extraction remains **partially constrained** by
-asset-linking gaps, but we now have a verified browse dataset from extracted
-text tables plus HQ-unit ability-id coverage:
+The command tab is now explicitly modeled as **faction HQ command abilities**
+(not HQ unit active-ability IDs).
 
-- Verified command/HQ text rows surfaced (e.g. `Voice of Command`,
-  `Command Protocol`, `Master of War`, and multiple HQ command flavour/desc
-  entries)
-- HQ unit ability-id sets are grouped per faction from `units.json`
-  (exact IDs, no guessing)
 - New tab: `/command-abilities`
+- Data source: extracted in-repo text IDs and command mappings
+- Current verified set includes Blood Angels:
+  - `Assault Cannon Strafe` — `1 CP, 1 AP` (title ID 257, desc ID 275)
+  - `Assault Marine Strike` — `2 CP, 1 AP` (title ID 258, desc ID 274)
+  - `Typhoon Missiles` — `3 CP, 1 AP` (title ID 259, desc IDs 272/273)
 
-Known limitation: ability IDs are not yet fully resolvable to a complete
-name+icon+description graph for every faction command entry.
+Known limitation: the page currently presents the verified faction command
+entries we have normalized; broader faction coverage is still being expanded.
 
 ## HQ upgrades / tech tree (research tab added)
 

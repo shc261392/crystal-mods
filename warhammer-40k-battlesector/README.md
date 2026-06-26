@@ -74,3 +74,10 @@ warhammer-40k-battlesector/
 - **Nexus Mods:** [WH40K Battlesector Mods](https://www.nexusmods.com/warhammer40kbattlesector)
 - **PCGamingWiki:** [Warhammer 40,000: Battlesector](https://www.pcgamingwiki.com/wiki/Warhammer_40%2C000%3A_Battlesector)
 
+## Research provenance (for contributors)
+
+- Manual reference source: `.copilot_workspace/battlesector-data/Battlesector_manual_EBOOK.pdf`
+- Structured mechanics/localization source: `.copilot_workspace/battlesector-data/**`
+- Precedence rule: when manual text conflicts with extracted game data,
+  **extracted game data is authoritative**.
+

@@ -20,16 +20,20 @@ const grouped = tierOrder.map((tier) => ({
 ---
 
 <Base
-  title="HQ Upgrades / Tech Tree"
-  description="Research tab for Battlesector HQ upgrade cards and tech-tree related warzone upgrades."
+  title="Crusade Data (Experimental)"
+  description="Experimental research tab showing Battlesector Crusade mode upgrade options and zone modifiers."
   path="/hq-upgrades"
 >
   <header class="mb-6">
     <p class="eyebrow mb-2">Research</p>
-    <h1 class="text-3xl md:text-4xl font-black">HQ Upgrades / Tech Tree</h1>
+    <div class="flex flex-wrap items-center gap-2">
+      <h1 class="text-3xl md:text-4xl font-black">Crusade Data</h1>
+      <span class="chip !text-[var(--color-gold-dim)]">Experimental</span>
+    </div>
     <p class="mt-2 text-[var(--color-muted)] max-w-3xl">
-      Verified from the warzone upgrades table (135 cards), mapped from GUIDs to
-      known asset names. This is a browse tab for upgrade-card coverage.
+      This page currently displays <strong>Crusade mode</strong> upgrade options and
+      zone modifiers from extracted warzone tables. Coverage and interpretation are
+      still WIP.
     </p>
   </header>
 

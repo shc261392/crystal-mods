@@ -106,6 +106,35 @@ const topUnits = [...units].sort((a, b) => b.totalHealth - a.totalHealth).slice(
     </div>
   </section>
 
+  <!-- Roadmap -->
+  <section class="mt-12">
+    <h2 class="text-xl font-bold mb-5">Roadmap</h2>
+    <div class="grid gap-4 lg:grid-cols-2">
+      <article class="surface p-5">
+        <h3 class="font-bold text-[var(--color-toxin)] mb-3">Done</h3>
+        <ul class="space-y-2 text-sm text-[var(--color-muted)] list-disc pl-5">
+          <li>Published unit and weapon databases with search, sort, and multi-language support.</li>
+          <li>Released calculator, compare tools, and momentum modeling for battle estimation.</li>
+          <li>Added army builder with share links, faction locking, and loadout point calculations.</li>
+          <li>Improved UI consistency (card layouts, faction visuals, and faster browsing workflows).</li>
+        </ul>
+      </article>
+
+      <article class="surface p-5">
+        <h3 class="font-bold text-[var(--color-gold)] mb-3">Missing / In progress</h3>
+        <ul class="space-y-2 text-sm text-[var(--color-muted)] list-disc pl-5">
+          <li>Review all unit stat and weapon stat.</li>
+          <li>Add unit abilities (active and passive).</li>
+          <li>Add mechanism explanation for unit/weapon tags and combat formula.</li>
+          <li>Add crticial hit multiplier in Calculator.</li>
+          <li>Revise Army builder and Weapons page.</li>
+          <li>Allow unit/weapon browser to filter by tags.</li>
+          <li>Allow user comments and user uploading screenshots.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
   <!-- Factions -->
   <section class="mt-12">
     <h2 class="text-xl font-bold mb-5" data-i18n-ui="home.section.factions">Factions</h2>
