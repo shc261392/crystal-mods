@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd">
+  <moduleName>Unofficial Traditional Chinese Patch</moduleName>
+  <installSteps order="Explicit">
+    <installStep name="Font Size Profile">
+      <optionalFileGroups order="Explicit">
+        <group name="Choose one profile" type="SelectExactlyOne">
+          <plugins order="Explicit">
+            <plugin name="Vanilla size">
+              <description>Uses the original game font sizing. Best if you want stock UI scale.</description>
+              <files>
+                <folder source="00-vanilla" destination="" priority="0" />
+              </files>
+              <typeDescriptor>
+                <type name="Optional" />
+              </typeDescriptor>
+            </plugin>
+            <plugin name="Recommended for 1920x1080 or above">
+              <description>Default recommended profile. Slightly larger than stock while keeping original per-resolution scale buckets.</description>
+              <files>
+                <folder source="01-1080p-plus" destination="" priority="0" />
+              </files>
+              <typeDescriptor>
+                <type name="Recommended" />
+              </typeDescriptor>
+            </plugin>
+            <plugin name="Recommended for 4K or above">
+              <description>Larger sizeDefault for high-resolution displays. Use this if 1080p+ still looks too small.</description>
+              <files>
+                <folder source="02-4k-plus" destination="" priority="0" />
+              </files>
+              <typeDescriptor>
+                <type name="Optional" />
+              </typeDescriptor>
+            </plugin>
+          </plugins>
+        </group>
+      </optionalFileGroups>
+    </installStep>
+  </installSteps>
+</config>

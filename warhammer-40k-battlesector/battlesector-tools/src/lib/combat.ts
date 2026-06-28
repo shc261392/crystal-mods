@@ -33,6 +33,35 @@ export function damagePerHit(maxDamage: number): number {
   return Math.round((min + max) / 2);
 }
 
+/** Effective armor after AP mitigation. */
+export function effectiveArmor(targetArmor: number, armorPiercing: number): number {
+  return Math.max(0, Math.round(targetArmor - armorPiercing));
+}
+
+/** Damage range after subtracting effective armor from both min/max damage. */
+export function damageRangeAfterArmor(
+  maxDamage: number,
+  targetArmor: number,
+  armorPiercing: number,
+): { min: number; max: number } {
+  const base = damageRange(maxDamage);
+  const reduction = effectiveArmor(targetArmor, armorPiercing);
+  return {
+    min: Math.max(0, base.min - reduction),
+    max: Math.max(0, base.max - reduction),
+  };
+}
+
+/** Average damage of a single hit after armor subtraction, before hit chance/graze. */
+export function damagePerHitAfterArmor(
+  maxDamage: number,
+  targetArmor: number,
+  armorPiercing: number,
+): number {
+  const { min, max } = damageRangeAfterArmor(maxDamage, targetArmor, armorPiercing);
+  return Math.round((min + max) / 2);
+}
+
 /** Graze chance (%): 3% per point of target armour above armour piercing. Graze = no damage. */
 export function grazeChance(armorPiercing: number, targetArmor: number): number {
   return clamp(Math.max(0, targetArmor - armorPiercing) * GRAZE_FACTOR, 0, 100);

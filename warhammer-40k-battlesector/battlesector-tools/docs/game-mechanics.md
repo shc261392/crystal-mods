@@ -48,9 +48,11 @@ After full manual pass plus tooling review:
 
 - `Damage` = the **maximum** of a damage range. Minimum = `0.75 × max`
   (`MinDamageMultiplier`). A hit rolls uniformly in `[0.75·max, max]`.
+- Current calculator/website model applies **effective armor subtraction** before
+  hit/graze scaling: `effectiveArmor = max(0, armor - AP)`.
 - **Critical chance** = base + `5%` per point of armour piercing above target
-  armour. **Graze chance** = `3%` per point of target armour above piercing; a
-  graze deals **no** damage. Critical damage multiplier is native/unextractable.
+  armour. **Graze chance** = `3%` per point of target armour above piercing.
+  Critical damage multiplier is native/unextractable.
 
 ## Melee vs ranged classification (NEW — fixes the 0% accuracy bug)
 

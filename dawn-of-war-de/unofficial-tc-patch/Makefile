@@ -18,9 +18,10 @@ SCRIPTS  := scripts
 
 # ── Font / size defaults (override on CLI: make apply FONT=noto-serif-tc SIZE=36)
 FONT     ?= noto-sans-tc
-SIZE     ?= 34
+SIZE     ?= 36
 PROFILE  ?=
 MODE     ?= fallback-only
+SIZE_4K  ?= 38
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Setup
@@ -76,7 +77,8 @@ list-fonts: ## List font replacement options (--replace-font-file / --replace-fo
 
 .PHONY: list-profiles
 list-profiles: ## Show size/mode options
-	@echo "Size: set via SIZE=N (default: 34)  Mode: fallback-only | all (default: fallback-only)"
+	@echo "Size: set via SIZE=N (default: 36)  Mode: fallback-only | all (default: fallback-only)"
+	@echo "Vortex presets: vanilla | 1080p+ (sizeDefault=$(SIZE)) | 4k+ (sizeDefault=$(SIZE_4K))"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # SGA archive tools (optional, Windows/Wine)
@@ -166,7 +168,11 @@ package-ext: ## Build Vortex extension zip (.copilot_workspace/dist/vortex-ext-*
 	@echo "  Files: $$(unzip -l "$(DIST_DIR)/$(EXT_NAME).zip" | tail -1)"
 
 .PHONY: package-all
-package-all: package package-ext package-keybinds ## Build both the mod archive and Vortex extension zip
+package-all: package package-ext package-keybinds package-vortex-profiles ## Build the mod archive, Vortex extension zip, keybind zips, and Vortex profile bundle
+
+.PHONY: package-vortex-profiles
+package-vortex-profiles: ## Build Vortex FOMOD mod zip with vanilla / 1080p+ / 4k+ font-size options
+	@DEFAULT_SIZE=$(SIZE) SIZE_4K=$(SIZE_4K) bash scripts/package_vortex_font_profiles.sh
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Keybinding Overhaul mod (separate, ships standalone)
@@ -221,5 +227,5 @@ help: ## Show this help message
 	@grep -E '^[a-zA-Z_-]+:.*##' $(MAKEFILE_LIST) \
 	    | sort \
 	    | awk 'BEGIN{FS=":.*## "}; {printf "  \033[36m%-18s\033[0m %s\n", $$1, $$2}'
-	@printf "\nOverridable variables: FONT (default: $(FONT)), SIZE (default: $(SIZE)), MODE (default: $(MODE)), PROFILE\n"
+	@printf "\nOverridable variables: FONT (default: $(FONT)), SIZE (default: $(SIZE)), SIZE_4K (default: $(SIZE_4K)), MODE (default: $(MODE)), PROFILE\n"
 	@printf "Example: make apply FONT=noto-serif-tc SIZE=36\n"

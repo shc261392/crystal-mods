@@ -1,8 +1,16 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { damageRange, grazeChance } from '../../lib/combat';
+import Tooltip from '../../components/Tooltip.astro';
+import { critChance, damagePerHitAfterArmor, damageRange, grazeChance } from '../../lib/combat';
 import { getWeapon, idFromSlug, unitSlug, units, weaponSlug, weapons } from '../../lib/data';
-import { getWeaponPortrait, getWeaponTypeIcon } from '../../scripts/images';
+import { WEAPON_TAG_TOOLTIPS } from '../../lib/tag-tooltips';
+import {
+  getFactionEmblem,
+  getStatIcon,
+  getUnitPortrait,
+  getWeaponPortrait,
+  getWeaponTypeIcon,
+} from '../../scripts/images';
 
 export function getStaticPaths() {
   return weapons.map((w) => ({
@@ -17,13 +25,19 @@ if (!weapon) {
   return Astro.redirect('/units');
 }
 
-// Damage is a range [0.75x, x]. Armour no longer subtracts damage; instead it
-// raises the graze chance once it exceeds the weapon's armour piercing.
 const dmgRange = damageRange(weapon.damage);
-const armorTable = Array.from({ length: 10 }, (_, armor) => ({
-  armor,
-  graze: grazeChance(weapon.armorPiercing, armor),
-}));
+const armorTable = Array.from({ length: 10 }, (_, armor) => {
+  const crit = critChance(0, weapon.armorPiercing, armor);
+  const graze = grazeChance(weapon.armorPiercing, armor);
+  const avgAfterArmor = damagePerHitAfterArmor(weapon.damage, armor, weapon.armorPiercing);
+  const avgDamage = Math.round((avgAfterArmor * (100 - graze)) / 100);
+  return {
+    armor,
+    crit,
+    graze,
+    avgDamage,
+  };
+});
 
 // Units that can take this weapon.
 const carriers = units
@@ -34,6 +48,39 @@ const carriers = units
 
 const typeIcon = getWeaponTypeIcon(weapon.isMelee);
 const weaponIcon = getWeaponPortrait(weapon.icon) ?? typeIcon;
+const HP_ICON = getStatIcon('health');
+const AP_ICON = getStatIcon('actionPoints');
+const MP_ICON = getStatIcon('movement');
+const ARMOR_ICON = getStatIcon('armor');
+const DODGE_ICON = getStatIcon('evasion');
+
+function tierMeta(roleName: string, fallbackColor: string): { label: string; bg: string; ink: string } {
+  if (roleName === 'HQ') return { label: 'HQ', bg: '#d4af37', ink: '#1b1206' };
+  if (roleName === 'Elite') return { label: 'Elite', bg: '#7e57c2', ink: '#f8f6ff' };
+  if (roleName === 'Heavy Support') return { label: 'Heavy', bg: '#3b82f6', ink: '#f3f8ff' };
+  if (roleName === 'Fast Attack' || roleName === 'Flyer') return { label: 'Fast', bg: '#22c55e', ink: '#f4fff7' };
+  if (roleName === 'Troop') return { label: 'Troop', bg: '#dc2626', ink: '#fff6f6' };
+  return { label: roleName, bg: fallbackColor, ink: '#f8f8f8' };
+}
+
+function hpBreakdown(total: number, perModel: number, models: number): string {
+  return models > 1 ? `${total} (${perModel} x ${models})` : `${total}`;
+}
+
+function iconTintStyle(color: string): string {
+  switch (color) {
+    case '#39904B':
+      return 'filter: brightness(0) saturate(100%) invert(43%) sepia(28%) saturate(917%) hue-rotate(83deg) brightness(94%) contrast(90%);';
+    case '#8F5B36':
+      return 'filter: brightness(0) saturate(100%) invert(39%) sepia(18%) saturate(1430%) hue-rotate(342deg) brightness(96%) contrast(86%);';
+    case '#2662AA':
+      return 'filter: brightness(0) saturate(100%) invert(30%) sepia(72%) saturate(1459%) hue-rotate(197deg) brightness(90%) contrast(94%);';
+    case '#6299B8':
+      return 'filter: brightness(0) saturate(100%) invert(64%) sepia(13%) saturate(1108%) hue-rotate(159deg) brightness(87%) contrast(87%);';
+    default:
+      return 'filter: brightness(0) saturate(100%) invert(55%) sepia(19%) saturate(585%) hue-rotate(358deg) brightness(93%) contrast(88%);';
+  }
+}
 ---
 
 <Base
@@ -43,7 +90,7 @@ const weaponIcon = getWeaponPortrait(weapon.icon) ?? typeIcon;
   ogType="article"
 >
   <nav class="text-sm text-[var(--color-faint)] mb-5">
-    <a href="/units" class="hover:text-[var(--color-gold-dim)]" data-i18n-ui="nav.units">Units</a>
+    <a href="/weapons/" class="hover:text-[var(--color-gold-dim)]" data-i18n-ui="nav.weapons">Weapons</a>
     <span class="mx-1.5">/</span>
     <span class="text-[var(--color-muted)]" data-i18n-ui={weapon.isMelee ? 'common.melee' : 'common.ranged'}>{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
   </nav>
@@ -56,15 +103,31 @@ const weaponIcon = getWeaponPortrait(weapon.icon) ?? typeIcon;
         )}
         <div class="min-w-0">
           <div class="flex flex-wrap items-center gap-2 mb-2">
-            <span class="chip" data-i18n-ui={weapon.isMelee ? 'common.melee' : 'common.ranged'}>{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
-            {weapon.pistol && <span class="chip" data-i18n-ui="common.pistol">Pistol</span>}
-            {weapon.armorPiercing > 0 && <span class="chip">AP {weapon.armorPiercing}</span>}
-            {weapon.impactType === 'splash' && (weapon.splashModels ?? 0) > 1 && (
-              <span class="chip !text-[var(--color-plasma)]">
-                <span data-i18n-ui="common.splash">Splash</span> ×{weapon.splashModels}
-              </span>
+            <Tooltip text={weapon.isMelee ? WEAPON_TAG_TOOLTIPS.melee : WEAPON_TAG_TOOLTIPS.ranged}>
+              <span class="chip" data-i18n-ui={weapon.isMelee ? 'common.melee' : 'common.ranged'}>{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
+            </Tooltip>
+            {weapon.pistol && (
+              <Tooltip text={WEAPON_TAG_TOOLTIPS.pistol}>
+                <span class="chip" data-i18n-ui="common.pistol">Pistol</span>
+              </Tooltip>
             )}
-            {weapon.impactType === 'tile' && <span class="chip !text-[var(--color-plasma)]" data-i18n-ui="weaponDetail.impact.tile">Hits all models</span>}
+            {weapon.armorPiercing > 0 && (
+              <Tooltip text={WEAPON_TAG_TOOLTIPS.ap}>
+                <span class="chip">AP {weapon.armorPiercing}</span>
+              </Tooltip>
+            )}
+            {weapon.impactType === 'splash' && (weapon.splashModels ?? 0) > 1 && (
+              <Tooltip text={WEAPON_TAG_TOOLTIPS.splash}>
+                <span class="chip !text-[var(--color-plasma)]">
+                  <span data-i18n-ui="common.splash">Splash</span> ×{weapon.splashModels}
+                </span>
+              </Tooltip>
+            )}
+            {weapon.impactType === 'tile' && (
+              <Tooltip text={WEAPON_TAG_TOOLTIPS.tile}>
+                <span class="chip !text-[var(--color-plasma)]" data-i18n-ui="weaponDetail.impact.tile">Hits all models</span>
+              </Tooltip>
+            )}
           </div>
           <h1 class="text-3xl md:text-4xl font-black" data-i18n-weapon={weapon.id} data-i18n-fallback={weapon.name}>{weapon.name}</h1>
         </div>
@@ -94,22 +157,43 @@ const weaponIcon = getWeaponPortrait(weapon.icon) ?? typeIcon;
   </div>
 
   <div class="grid gap-4 md:grid-cols-2 mt-4">
-    <!-- Graze chance vs armor -->
+    <!-- Critical chance vs armor -->
     <section class="surface p-5">
-      <h2 class="text-lg font-bold mb-1" data-i18n-ui="weaponDetail.section.grazeVsArmor">Graze chance vs Armor</h2>
-      <p class="text-sm text-[var(--color-faint)] mb-4" data-i18n-ui="weaponDetail.note.graze">
-        When target armor exceeds this weapon's armor piercing ({weapon.armorPiercing}), hits start
-        to graze (3% per point of difference) and a graze deals no damage.
+      <h2 class="text-lg font-bold mb-1">Critical chance vs Armor</h2>
+      <p class="text-sm text-[var(--color-faint)] mb-4">
+        AP above target armor grants +5% critical chance per point. (Base weapon critical chance is not exposed in extracted data.)
       </p>
       <div class="space-y-1.5">
         {armorTable.map((row) => (
           <div class="flex items-center gap-3">
             <span class="text-xs text-[var(--color-faint)] w-14 shrink-0"><span data-i18n-ui="common.armor">Armor</span> {row.armor}</span>
-            <div class="hud-bar flex-1"><span class="fill mom" style={`width:${Math.round(row.graze)}%`}></span></div>
-            <span class="text-sm font-bold tabular-nums w-10 text-right">{Math.round(row.graze)}%</span>
+            <div class="hud-bar flex-1"><span class="fill hp" style={`width:${Math.round(row.crit)}%`}></span></div>
+            <span class="text-sm font-bold tabular-nums w-10 text-right">{Math.round(row.crit)}%</span>
           </div>
         ))}
       </div>
+    </section>
+
+    <!-- Graze chance + expected damage vs armor -->
+    <section class="surface p-5">
+      <h2 class="text-lg font-bold mb-1" data-i18n-ui="weaponDetail.section.grazeVsArmor">Graze chance vs Armor</h2>
+      <p class="text-sm text-[var(--color-faint)] mb-4">
+        Expected damage uses armor subtraction first (effective armor = armor − AP, min 0),
+        then applies graze chance.
+      </p>
+      <div class="space-y-1.5">
+        {armorTable.map((row) => (
+          <div class="flex items-center gap-2.5">
+            <span class="text-xs text-[var(--color-faint)] w-14 shrink-0"><span data-i18n-ui="common.armor">Armor</span> {row.armor}</span>
+            <div class="hud-bar flex-1"><span class="fill mom" style={`width:${Math.round(row.graze)}%`}></span></div>
+            <span class="text-sm font-bold tabular-nums w-10 text-right">{Math.round(row.graze)}%</span>
+            <span class="text-xs text-[var(--color-muted)] w-24 text-right tabular-nums">exp {row.avgDamage}</span>
+          </div>
+        ))}
+      </div>
+      <p class="text-xs text-[var(--color-faint)] mt-3">
+        Critical bonus damage is not included (base crit damage multiplier is unknown in extracted data).
+      </p>
     </section>
 
     <!-- Carriers -->
@@ -120,19 +204,74 @@ const weaponIcon = getWeaponPortrait(weapon.icon) ?? typeIcon;
       {carriers.length === 0 ? (
         <p class="text-sm text-[var(--color-faint)]" data-i18n-ui="weaponDetail.empty.noUnits">No units in the dataset reference this weapon.</p>
       ) : (
-        <div class="space-y-1.5 max-h-[22rem] overflow-y-auto pr-1">
-          {carriers.map((u) => (
-            <a href={`/units/${unitSlug(u)}`} class="flex items-center justify-between gap-3 rounded-lg px-3 py-2 hover:bg-[var(--color-base)] transition-colors">
-              <span class="flex items-center gap-2.5 min-w-0">
-                <span class="w-1 h-7 rounded-full shrink-0" style={`background:${u.roleColor}`}></span>
-                <span class="min-w-0">
-                  <span class="font-semibold text-sm truncate block" data-i18n-unit={u.id} data-i18n-fallback={u.name}>{u.name}</span>
-                  <span class="text-xs text-[var(--color-faint)]" data-i18n-faction={u.faction} data-i18n-fallback={u.factionName}>{u.factionName}</span>
-                </span>
-              </span>
-              <span class="text-xs text-[var(--color-faint)] shrink-0">{u.pointCost} <span data-i18n-ui="common.pointsShort">pts</span></span>
-            </a>
-          ))}
+        <div class="space-y-2 max-h-[34rem] overflow-y-auto pr-1">
+          {carriers.map((u) => {
+            const thumb = getUnitPortrait(u.name, u.portrait) ?? getFactionEmblem(u.faction);
+            const tier = tierMeta(u.roleName, u.roleColor);
+            return (
+              <a href={`/units/${unitSlug(u)}`} class="surface block p-0 overflow-hidden border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-colors">
+                <div class="grid grid-cols-[1fr_1fr] min-h-[14.5rem]">
+                  <div class="p-3 flex flex-col gap-2 bg-[var(--color-base)] border-r border-[var(--color-border)]">
+                    <div class="w-12 h-12 rounded-lg grid place-items-center border border-black/25 p-1 shrink-0" style={`background:${tier.bg}; color:${tier.ink}`}>
+                      {thumb ? (
+                        <img src={thumb} alt="" width="48" height="48" loading="lazy" class="w-full h-full rounded object-contain" />
+                      ) : (
+                        <div class="w-full h-full rounded grid place-items-center font-black text-base" aria-hidden="true">{u.factionName.slice(0, 1)}</div>
+                      )}
+                    </div>
+                    <span class="font-extrabold text-sm leading-tight line-clamp-2" data-i18n-unit={u.id} data-i18n-fallback={u.name}>{u.name}</span>
+                    <span class="text-[11px] leading-tight text-[var(--color-muted)]" data-i18n-faction={u.faction} data-i18n-fallback={u.factionName}>{u.factionName}</span>
+                    <span class="text-[11px] font-bold uppercase tracking-wide" style={`color:${tier.bg}`}>{tier.label}</span>
+                  </div>
+
+                  <div class="p-3.5 flex flex-col">
+                    <div class="ml-auto text-right">
+                      <p class="text-[10px] uppercase tracking-wide text-[var(--color-faint)]">Unit PTS</p>
+                      <p class="font-black text-lg text-[var(--color-gold)] leading-none">{u.pointCost}</p>
+                    </div>
+
+                    <dl class="mt-2.5 space-y-1.5">
+                      <div class="flex items-center justify-between gap-2 rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-2 py-1.5">
+                        <dt class="text-xs inline-flex items-center gap-1.5" style="color:#39904B">
+                          {HP_ICON && <img src={HP_ICON} alt="" width="14" height="14" loading="lazy" class="w-3.5 h-3.5 object-contain shrink-0" style={iconTintStyle('#39904B')} />}
+                          HP
+                        </dt>
+                        <dd class="text-xs font-bold tabular-nums">{hpBreakdown(u.totalHealth, u.maxHealth, u.members)}</dd>
+                      </div>
+                      <div class="flex items-center justify-between gap-2 rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-2 py-1.5">
+                        <dt class="text-xs inline-flex items-center gap-1.5" style="color:#8F5B36">
+                          {AP_ICON && <img src={AP_ICON} alt="" width="14" height="14" loading="lazy" class="w-3.5 h-3.5 object-contain shrink-0" style={iconTintStyle('#8F5B36')} />}
+                          AP
+                        </dt>
+                        <dd class="text-xs font-bold tabular-nums">{u.maxActionPoints}</dd>
+                      </div>
+                      <div class="flex items-center justify-between gap-2 rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-2 py-1.5">
+                        <dt class="text-xs inline-flex items-center gap-1.5" title="Movement Point (Move)" style="color:#2662AA">
+                          {MP_ICON && <img src={MP_ICON} alt="" width="14" height="14" loading="lazy" class="w-3.5 h-3.5 object-contain shrink-0" style={iconTintStyle('#2662AA')} />}
+                          MP
+                        </dt>
+                        <dd class="text-xs font-bold tabular-nums">{u.maxMovementPoints}</dd>
+                      </div>
+                      <div class="flex items-center justify-between gap-2 rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-2 py-1.5">
+                        <dt class="text-xs inline-flex items-center gap-1.5" style="color:#6299B8">
+                          {ARMOR_ICON && <img src={ARMOR_ICON} alt="" width="14" height="14" loading="lazy" class="w-3.5 h-3.5 object-contain shrink-0" style={iconTintStyle('#6299B8')} />}
+                          Armor
+                        </dt>
+                        <dd class="text-xs font-bold tabular-nums">{u.armorProfile === 1 ? u.armorFront : u.armor}</dd>
+                      </div>
+                      <div class="flex items-center justify-between gap-2 rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-2 py-1.5">
+                        <dt class="text-xs inline-flex items-center gap-1.5" style="color:#9F895A">
+                          {DODGE_ICON && <img src={DODGE_ICON} alt="" width="14" height="14" loading="lazy" class="w-3.5 h-3.5 object-contain shrink-0" style={iconTintStyle('#9F895A')} />}
+                          Dodge
+                        </dt>
+                        <dd class="text-xs font-bold tabular-nums">{u.evasion}</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            );
+          })}
         </div>
       )}
     </section>

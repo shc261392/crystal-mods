@@ -9,8 +9,9 @@ import unitsData from '../data/units.json';
 import weaponsData from '../data/weapons.json';
 import {
   critChance,
-  damagePerHit,
+  damagePerHitAfterArmor,
   damageRange,
+  damageRangeAfterArmor,
   expectedDamage,
   grazeChance,
   hitChance,
@@ -409,15 +410,15 @@ export function initCalculator(): void {
     const finalArmor = Math.max(0, arm + (tb?.armor ?? 0));
     const finalEva = eva + (tb?.evasion ?? 0);
     const finalAcc = acc + (ab?.accuracy ?? 0) + mm.accAdd - coverAccPenalty;
-    const perHit = damagePerHit(finalDamage);
-    const dr = damageRange(finalDamage);
+    const perHit = damagePerHitAfterArmor(finalDamage, finalArmor, finalAp);
+    const dr = damageRangeAfterArmor(finalDamage, finalArmor, finalAp);
     const hit = blocked ? 0 : hitChance(finalAcc, mod, finalEva);
     const graze = grazeChance(finalAp, finalArmor);
     const crit = critChance(0, finalAp, finalArmor);
-    const perAttack = perHit * shotCount;
-    // A graze deals no damage, so it reduces expected output proportionally.
-    const expected = Math.round(expectedDamage(perAttack, hit) * (1 - graze / 100));
-    const killed = Math.min(modelsKilled(perAttack, hp), aliveModels);
+    const perAttackAvg = perHit * shotCount;
+    // Expected one-round damage = average post-armor damage × hit chance × non-graze share.
+    const expected = Math.round(expectedDamage(perAttackAvg, hit) * (1 - graze / 100));
+    const killed = Math.min(modelsKilled(perAttackAvg, hp), aliveModels);
     const totalHp = hp * mem;
     // HP left in the unit after this attack: pre-existing damage (lost models +
     // a wounded front model) minus the expected damage this attack deals.

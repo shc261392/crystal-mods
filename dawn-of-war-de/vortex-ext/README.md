@@ -10,6 +10,7 @@ A [Vortex](https://www.nexusmods.com/about/vortex/) game extension for
 - **Smart layout detection**:
   - Recognizes game-root-relative paths (`Engine/`, `W40k/`, `DXP2/`, `DXP3/`, etc.)
   - Auto-strips single wrapper folders when present
+   - Defers `fomod/` installer archives to Vortex's built-in installer UI
   - Falls back to deploying files as-is
 - **Case-insensitive** directory matching (handles `engine/`, `Engine/`, `ENGINE/` equally)
 - **Production-ready**: Addresses all known edge cases from Vortex code review
@@ -65,6 +66,9 @@ my-mod-v1.0.zip
 
 ✅ **Single file at root** (e.g., `readme.txt`)  
 → Deploys to game root, not treated as wrapper
+
+✅ **FOMOD installer archives** (`fomod/ModuleConfig.xml`)  
+→ Not handled by the generic installer; Vortex presents the installer choices instead
 
 ✅ **Lowercase paths** (e.g., `engine/locale/`)  
 → Correctly recognized via case-insensitive matching

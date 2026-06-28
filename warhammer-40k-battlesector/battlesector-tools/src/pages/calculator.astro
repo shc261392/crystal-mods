@@ -13,8 +13,8 @@ import Base from '../layouts/Base.astro';
     <h1 class="text-3xl md:text-4xl font-black" data-i18n-ui="nav.calculator">Damage Calculator</h1>
     <p class="mt-2 text-[var(--color-muted)] max-w-2xl">
       Pick an attacking weapon and a target, or enter custom values. Damage is the
-      in-game range (min = 75% of max), hit chance = accuracy − evasion, and armour
-      raises graze/crit chance rather than subtracting damage.
+      in-game range (min = 75% of max), then reduced by effective armor
+      (target armor − AP, minimum 0). Hit chance = accuracy − evasion.
     </p>
   </header>
 
@@ -152,10 +152,10 @@ import Base from '../layouts/Base.astro';
           <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.targetRemainingHp">Target remaining HP</span>
           <span id="r-remaining" class="text-xl font-black tabular-nums text-[var(--color-hp)]">—</span>
         </div>
-        <p class="text-[0.7rem] text-[var(--color-faint)] pt-1" data-i18n-ui="calculator.result.assumptionNote">
-          Damage is the in-game range (min = 75% of max). Critical chance = base + 5% per point
-          of armour piercing above armour; graze chance = 3% per point of armour above piercing
-          and a graze deals no damage. The critical damage multiplier is native and not modelled.
+        <p class="text-[0.7rem] text-[var(--color-faint)] pt-1">
+          Model used: per-hit damage range is reduced by effective armor (armor − AP, min 0),
+          then expected damage applies hit chance and graze chance. Critical chance is shown
+          separately; critical bonus damage is not included.
         </p>
       </div>
       <button id="copy-link" type="button" class="btn w-full mt-5" data-url="" data-i18n-ui="common.copyShareableLink">

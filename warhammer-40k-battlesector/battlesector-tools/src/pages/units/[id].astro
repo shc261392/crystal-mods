@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Tooltip from '../../components/Tooltip.astro';
 import { getFactionPassive, passiveEffectLines } from '../../lib/abilities';
 import { damageRange } from '../../lib/combat';
 import {
@@ -11,6 +12,7 @@ import {
   units,
   weaponSlug,
 } from '../../lib/data';
+import { UNIT_TAG_TOOLTIPS } from '../../lib/tag-tooltips';
 import {
   getFactionEmblem,
   getStatIcon,
@@ -81,11 +83,35 @@ const combatStats = [
 ];
 
 const tags = [
-  unit.campaignOnly ? { key: 'common.campaignOnly', label: 'Campaign only' } : null,
-  unit.isLarge ? { key: 'common.large', label: 'Large' } : null,
-  unit.canMeleeReact ? { key: 'unitDetail.tag.meleeReaction', label: 'Melee Reaction' } : null,
-  unit.canFallback ? { key: 'unitDetail.tag.canFallBack', label: 'Can Fall Back' } : null,
-].filter(Boolean) as { key: string; label: string }[];
+  unit.campaignOnly
+    ? {
+        key: 'common.campaignOnly',
+        label: 'Campaign only',
+        tip: UNIT_TAG_TOOLTIPS.campaignOnly,
+      }
+    : null,
+  unit.isLarge
+    ? {
+        key: 'common.large',
+        label: 'Large',
+        tip: UNIT_TAG_TOOLTIPS.large,
+      }
+    : null,
+  unit.canMeleeReact
+    ? {
+        key: 'unitDetail.tag.meleeReaction',
+        label: 'Melee Reaction',
+        tip: UNIT_TAG_TOOLTIPS.meleeReaction,
+      }
+    : null,
+  unit.canFallback
+    ? {
+        key: 'unitDetail.tag.canFallBack',
+        label: 'Can Fall Back',
+        tip: UNIT_TAG_TOOLTIPS.fallback,
+      }
+    : null,
+].filter(Boolean) as { key: string; label: string; tip: string }[];
 
 const accent = factionColor(unit.factionName);
 const portrait = getUnitPortrait(unit.name, unit.portrait);
@@ -169,7 +195,11 @@ const vitals = [
           <span class="chip" style={`color:${unit.roleColor}; border-color:${unit.roleColor}`} data-i18n-role={unit.role} data-i18n-fallback={unit.roleName}>{unit.roleName}</span>
           <span class="chip" data-i18n-faction={unit.faction} data-i18n-fallback={unit.factionName}>{unit.factionName}</span>
           <span class="chip">{unit.substanceName}</span>
-          {tags.map((t) => <span class="chip" data-i18n-ui={t.key}>{t.label}</span>)}
+          {tags.map((t) => (
+            <Tooltip text={t.tip}>
+              <span class="chip" data-i18n-ui={t.key}>{t.label}</span>
+            </Tooltip>
+          ))}
         </div>
         <h1 class="text-3xl md:text-4xl font-black" data-i18n-unit={unit.id} data-i18n-fallback={unit.name}>{unit.name}</h1>
         <p class="mt-2 text-[var(--color-muted)]">
@@ -267,14 +297,15 @@ const vitals = [
       <dl class="space-y-2.5">
         {mobilityStats.map((s) => (
           <div class="flex items-baseline justify-between gap-3">
-            <dt
-              class:list={[
-                'text-sm text-[var(--color-muted)]',
-                'tip' in s && s.tip ? 'underline decoration-dotted cursor-help' : '',
-              ]}
-              title={'tip' in s ? s.tip : undefined}
-              data-i18n-ui={s.key}
-            >{s.label}</dt>
+            <dt class="text-sm text-[var(--color-muted)]">
+              {'tip' in s && s.tip ? (
+                <Tooltip text={s.tip}>
+                  <span class="underline decoration-dotted cursor-help" data-i18n-ui={s.key}>{s.label}</span>
+                </Tooltip>
+              ) : (
+                <span data-i18n-ui={s.key}>{s.label}</span>
+              )}
+            </dt>
             <dd class="font-bold tabular-nums">{s.value}</dd>
           </div>
         ))}

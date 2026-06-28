@@ -22,6 +22,11 @@ Fixes font size/weight, subtitle artifacts, and applies text corrections to `Eng
 
 2. **Add the mod** — drag `wh40k-dow-de-tc-mod-v*.zip` onto Vortex.
 
+  If you use the Vortex profile bundle (`wh40k-dow-de-tc-mod-v*-vortex.zip`), Vortex will show a font-size installer with three choices:
+  - **Vanilla size**
+  - **Recommended for 1920×1080 or above**
+  - **Recommended for 4K or above**
+
 3. **Deploy** — click *Deploy Mods* in Vortex.  
    Vortex automatically renames `EnginLoc.sga` → `EnginLoc.sga.disabled` so the patched files take priority.
 
@@ -271,7 +276,7 @@ The DoW DE Vortex extension is still under Vortex review, so install it by dragg
 make list-fonts      # show all font presets
 make list-profiles   # show size profiles (1080p, 4k)
 
-make apply FONT=noto-sans-tc   SIZE=34   # default
+make apply FONT=noto-sans-tc   SIZE=36   # default
 make apply FONT=noto-serif-tc  SIZE=36
 make apply FONT=msyh           MODE=all
 ```

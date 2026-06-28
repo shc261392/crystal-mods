@@ -3,6 +3,7 @@ import { locales } from '../lib/data';
 
 const links = [
   { href: '/units', label: 'Units', key: 'nav.units' },
+  { href: '/weapons/', label: 'Weapons', key: 'nav.weapons' },
   { href: '/army-builder', label: 'Army Builder', key: 'nav.armyBuilder' },
   { href: '/calculator', label: 'Calculator', key: 'nav.calculator' },
   { href: '/compare', label: 'Compare', key: 'nav.compare' },
@@ -25,7 +26,7 @@ function isActive(href: string): boolean {
       </span>
     </a>
 
-    <nav class="hidden md:flex items-center gap-1 ml-2">
+    <nav class="hidden xl:flex items-center gap-1 ml-2 min-w-0">
       {links.map((l) => (
         <a
           href={l.href}
@@ -51,19 +52,19 @@ function isActive(href: string): boolean {
       <button
         type="button"
         id="search-open"
-        class="btn btn-ghost text-sm h-9 px-3"
+        class="btn btn-ghost text-sm h-9 px-3 whitespace-nowrap flex-nowrap"
         aria-label="Search units and weapons"
         data-i18n-ui-aria-label="nav.searchAria"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-        <span class="hidden sm:inline text-[var(--color-faint)]" data-i18n-ui="nav.search">Search</span>
-        <kbd class="hidden sm:inline text-[10px] px-1.5 py-0.5 rounded border border-[var(--color-border)] text-[var(--color-faint)]">⌘K</kbd>
+        <span class="hidden sm:inline text-[var(--color-faint)] whitespace-nowrap" data-i18n-ui="nav.search">Search</span>
+        <kbd class="hidden sm:inline text-[10px] px-1.5 py-0.5 rounded border border-[var(--color-border)] text-[var(--color-faint)] whitespace-nowrap">⌘K</kbd>
       </button>
 
       <button
         type="button"
         id="menu-toggle"
-        class="btn btn-ghost md:hidden h-9 w-9 !px-0"
+        class="btn btn-ghost xl:hidden h-9 w-9 !px-0"
         aria-label="Toggle navigation menu"
         data-i18n-ui-aria-label="nav.menuToggleAria"
         aria-expanded="false"
@@ -74,7 +75,7 @@ function isActive(href: string): boolean {
   </div>
 
   <!-- Mobile menu -->
-  <div id="mobile-menu" class="md:hidden hidden border-t border-[var(--color-border)]">
+  <div id="mobile-menu" class="xl:hidden hidden border-t border-[var(--color-border)]">
     <nav class="container-page py-3 flex flex-col gap-1">
       {links.map((l) => (
         <a

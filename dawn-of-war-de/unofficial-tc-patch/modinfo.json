@@ -2,7 +2,7 @@
   "id": "unofficial-tc-patch",
   "name": "Unofficial Traditional Chinese Patch",
   "game": "dawn-of-war-de",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Community",
   "category": "Localization",
   "platforms": ["windows", "linux-proton"],

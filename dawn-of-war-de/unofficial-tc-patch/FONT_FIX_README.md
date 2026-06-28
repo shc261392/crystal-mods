@@ -29,14 +29,20 @@ Run in PowerShell from this folder:
 - `./unpack_chinese_locale.ps1`
 
 3) Preview font edits:
-- `./.venv-relic/Scripts/python.exe ./apply_font_fix.py --dry-run --restore-from-bak --mode fallback-only --size 34`
+- `./.venv-relic/Scripts/python.exe ./apply_font_fix.py --dry-run --restore-from-bak --mode fallback-only --size 36`
 
 4) Apply font edits:
-- `./.venv-relic/Scripts/python.exe ./apply_font_fix.py --restore-from-bak --mode fallback-only --size 34`
+- `./.venv-relic/Scripts/python.exe ./apply_font_fix.py --restore-from-bak --mode fallback-only --size 36`
 
 ### Stronger visible size profile (if fallback-only still looks too small)
 
 - `./.venv-relic/Scripts/python.exe ./apply_font_fix.py --restore-from-bak --mode all --size 32`
+
+### Recommended packaged profiles
+
+- **Vanilla size** — original game scale
+- **1080p+** — `sizeDefault = 36` (default recommendation)
+- **4K+** — `sizeDefault = 38`
 
 ### Replace Chinese font with Microsoft YaHei
 
@@ -63,7 +69,7 @@ Like your reference mod says, the game can load unpacked folder content directly
 - Every changed `.fnt` gets a `.bak` backup next to it.
 - Unpack script also writes `.sga` backup into `backup\`.
 - If a `.fnt` file has an unknown syntax, it is skipped and reported.
-- `fallback-only` mode changes only `sizeDefault` (best for 4K fallback and less clipping).
+- `fallback-only` mode changes only `sizeDefault` (best for preserving original UI scale buckets while improving readability).
 - `all` mode changes all `size*` keys and can cause clipping if size is too high.
-- If text still clips, try: `--size 30` or `--size 32`.
+- If text still clips, try: `--size 34` or lower.
 - `--replace-font-file` lets you swap the `file = "..."` entries in `.fnt` files (for example `msyh.ttc`).

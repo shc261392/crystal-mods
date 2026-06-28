@@ -1,0 +1,12 @@
+---
+interface Props {
+  text: string;
+  class?: string;
+}
+
+const { text, class: className } = Astro.props;
+---
+
+<span class:list={['tooltip-target inline-flex', className]} data-tooltip={text}>
+  <slot />
+</span>

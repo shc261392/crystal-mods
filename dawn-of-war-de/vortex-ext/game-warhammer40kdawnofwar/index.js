@@ -62,6 +62,16 @@ function prepareForModding(discovery) {
   return fs.ensureDirWritableAsync(discovery.path);
 }
 
+function hasFomodInstaller(files) {
+  return files.some((filePath) => {
+    const normalized = filePath.replace(/\\/g, '/');
+    return (
+      path.basename(normalized).toLowerCase() === 'moduleconfig.xml'
+      && path.basename(path.dirname(normalized)).toLowerCase() === 'fomod'
+    );
+  });
+}
+
 // ---------------------------------------------------------------------------
 // Installer: generic mod  (priority 20)
 // ---------------------------------------------------------------------------
@@ -74,6 +84,13 @@ function prepareForModding(discovery) {
  * @param {string}   gameId  Active game ID.
  */
 function testModContent(files, gameId) {
+  if (hasFomodInstaller(files)) {
+    return Promise.resolve({
+      supported: false,
+      requiredFiles: [],
+    });
+  }
+
   return Promise.resolve({
     supported: gameId === GAME_ID,
     requiredFiles: [],
@@ -172,7 +189,9 @@ function main(context) {
     },
   });
 
-  // Generic mod installer — handles all mod types by deploying to specified paths
+  // Generic mod installer — handles all non-FOMOD replacement mods by deploying
+  // files to their specified paths. FOMOD archives are intentionally declined
+  // in testModContent() so Vortex can show its built-in installer UI.
   context.registerInstaller('dow-mod', 20, testModContent, installModContent);
 
   return true;

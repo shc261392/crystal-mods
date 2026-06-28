@@ -110,7 +110,7 @@ def restore_from_backup(path: Path, dry_run: bool = False) -> bool:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Patch Dawn of War font files to a larger size.")
     parser.add_argument("--root", default=".", help="Locale root directory (default: current directory)")
-    parser.add_argument("--size", type=int, default=34, help="Target font size (default: 34)")
+    parser.add_argument("--size", type=int, default=36, help="Target font size (default: 36)")
     parser.add_argument(
         "--mode",
         choices=("fallback-only", "all"),

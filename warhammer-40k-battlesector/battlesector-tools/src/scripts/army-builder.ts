@@ -13,7 +13,7 @@ import {
   totalModels,
   totalPoints,
 } from './army-store';
-import { factionName, t, tf, unitName, weaponName } from './i18n';
+import { applyI18n, factionName, roleName, t, tf, unitName, weaponName } from './i18n';
 
 const units = (unitsData as Unit[]).filter((u) => u.faction !== 4);
 const unitById = new Map(units.map((u) => [u.id, u]));
@@ -55,6 +55,9 @@ export function initArmyBuilder(): void {
   const unitGrid = document.getElementById('unit-grid');
   const unitSearch = document.getElementById('unit-search') as HTMLInputElement | null;
   const unitSort = document.getElementById('unit-sort') as HTMLSelectElement | null;
+  const unitRole = document.getElementById('unit-role') as HTMLSelectElement | null;
+  const showCampaignUnits = document.getElementById('show-campaign-units') as HTMLInputElement | null;
+  const tagFilter = document.getElementById('army-unit-tag-filter');
   const loadoutBox = document.getElementById('loadout-config');
   const loadoutTotal = document.getElementById('loadout-total');
   const selectedUnitChip = document.getElementById('selected-unit-chip');
@@ -73,6 +76,7 @@ export function initArmyBuilder(): void {
     '!text-[var(--color-gold)]',
     'bg-[color-mix(in_oklab,var(--color-gold)_12%,transparent)]',
   ];
+  const selectedTags = new Set<string>();
 
   let army: ArmyEntry[] = getArmy();
 
@@ -122,14 +126,28 @@ export function initArmyBuilder(): void {
   function populateUnits(): void {
     const fid = selectedFactionId ?? -1;
     const query = unitSearch?.value.trim().toLowerCase() ?? '';
+    const role = unitRole?.value ?? '';
+    const campaignVisible = showCampaignUnits?.checked ?? false;
     const cards = [...gridEl.querySelectorAll<HTMLElement>('[data-unit-id][data-faction-id]')];
-    const sortMode = unitSort?.value ?? 'name';
+    const sortMode = unitSort?.value ?? 'tier-name';
     let firstVisibleUnit: number | null = null;
     for (const card of cards) {
       const cardFactionId = Number(card.getAttribute('data-faction-id'));
       const cardUnitId = Number(card.getAttribute('data-unit-id'));
       const cardName = card.getAttribute('data-unit-name') ?? '';
-      const visible = cardFactionId === fid && (!query || cardName.includes(query));
+      const cardRole = card.getAttribute('data-role') ?? '';
+      const cardTags = new Set(
+        (card.getAttribute('data-tags') ?? '')
+          .split(',')
+          .map((t) => t.trim())
+          .filter(Boolean),
+      );
+      const visible =
+        cardFactionId === fid &&
+        (!query || cardName.includes(query)) &&
+        (!role || cardRole === role) &&
+        (campaignVisible || !cardTags.has('campaign')) &&
+        [...selectedTags].every((tag) => cardTags.has(tag));
       card.classList.toggle('hidden', !visible);
       if (visible && firstVisibleUnit === null) firstVisibleUnit = cardUnitId;
     }
@@ -139,15 +157,32 @@ export function initArmyBuilder(): void {
       const bName = b.getAttribute('data-unit-name') ?? '';
       const aPoints = Number(a.getAttribute('data-unit-points'));
       const bPoints = Number(b.getAttribute('data-unit-points'));
+      const aTier = Number(a.getAttribute('data-tier-rank') ?? 99);
+      const bTier = Number(b.getAttribute('data-tier-rank') ?? 99);
+      const aHp = Number(a.getAttribute('data-hp') ?? 0);
+      const bHp = Number(b.getAttribute('data-hp') ?? 0);
+      const aArmor = Number(a.getAttribute('data-armor') ?? 0);
+      const bArmor = Number(b.getAttribute('data-armor') ?? 0);
+      const aMove = Number(a.getAttribute('data-move') ?? 0);
+      const bMove = Number(b.getAttribute('data-move') ?? 0);
       if (sortMode === 'points-desc') return bPoints - aPoints || aName.localeCompare(bName);
       if (sortMode === 'points-asc') return aPoints - bPoints || aName.localeCompare(bName);
+      if (sortMode === 'name-desc') return bName.localeCompare(aName);
+      if (sortMode === 'hp-desc') return bHp - aHp || aName.localeCompare(bName);
+      if (sortMode === 'hp-asc') return aHp - bHp || aName.localeCompare(bName);
+      if (sortMode === 'armor-desc') return bArmor - aArmor || aName.localeCompare(bName);
+      if (sortMode === 'armor-asc') return aArmor - bArmor || aName.localeCompare(bName);
+      if (sortMode === 'move-desc') return bMove - aMove || aName.localeCompare(bName);
+      if (sortMode === 'move-asc') return aMove - bMove || aName.localeCompare(bName);
+      if (sortMode === 'tier-name') return aTier - bTier || aName.localeCompare(bName);
       return aName.localeCompare(bName) || aPoints - bPoints;
     });
     for (const card of cards) gridEl.appendChild(card);
 
     const stillVisible = cards.some(
       (card) =>
-        !card.classList.contains('hidden') && Number(card.getAttribute('data-unit-id')) === selectedUnitId,
+        !card.classList.contains('hidden') &&
+        Number(card.getAttribute('data-unit-id')) === selectedUnitId,
     );
     if (!stillVisible) selectedUnitId = firstVisibleUnit;
     renderSelectedUnitCards();
@@ -172,6 +207,27 @@ export function initArmyBuilder(): void {
     const pts = loadoutCost(u, currentLoadout(u));
     selectedUnitChip.classList.remove('hidden');
     selectedUnitChip.textContent = `${t('common.unit')}: ${unitName(u.id, u.name)} · ${pts} ${t('common.pointsShort')}`;
+  }
+
+  function paintTagButtons(): void {
+    if (!tagFilter) return;
+    for (const b of tagFilter.querySelectorAll<HTMLButtonElement>('button[data-tag]')) {
+      const tag = b.getAttribute('data-tag') ?? '';
+      const on = selectedTags.has(tag);
+      b.classList.toggle('!text-[var(--color-gold)]', on);
+      b.classList.toggle('!border-[var(--color-gold-dim)]', on);
+      b.classList.toggle('bg-[color-mix(in_oklab,var(--color-gold)_14%,transparent)]', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+  }
+
+  function localizeRoleOptions(): void {
+    if (!unitRole) return;
+    for (const opt of Array.from(unitRole.options)) {
+      const id = Number(opt.getAttribute('data-role-id'));
+      if (!Number.isFinite(id)) continue;
+      opt.textContent = roleName(id, opt.value);
+    }
   }
 
   function renderLoadoutConfig(): void {
@@ -336,8 +392,32 @@ export function initArmyBuilder(): void {
     renderSelectedUnitCards();
     renderLoadoutConfig();
   });
+  gridEl.addEventListener('keydown', (e) => {
+    const ke = e as KeyboardEvent;
+    if (ke.key !== 'Enter' && ke.key !== ' ') return;
+    const card = (e.target as HTMLElement).closest('[data-unit-id]') as HTMLElement | null;
+    if (!card || card.classList.contains('hidden')) return;
+    ke.preventDefault();
+    selectedUnitId = Number(card.getAttribute('data-unit-id'));
+    renderSelectedUnitCards();
+    renderLoadoutConfig();
+  });
   unitSearch?.addEventListener('input', populateUnits);
   unitSort?.addEventListener('change', populateUnits);
+  unitRole?.addEventListener('change', populateUnits);
+  showCampaignUnits?.addEventListener('change', populateUnits);
+  tagFilter?.addEventListener('click', (event) => {
+    const btn = (event.target as HTMLElement).closest(
+      'button[data-tag]',
+    ) as HTMLButtonElement | null;
+    if (!btn) return;
+    const tag = btn.getAttribute('data-tag');
+    if (!tag) return;
+    if (selectedTags.has(tag)) selectedTags.delete(tag);
+    else selectedTags.add(tag);
+    paintTagButtons();
+    populateUnits();
+  });
   addBtn?.addEventListener('click', add);
 
   list.addEventListener('click', (ev) => {
@@ -375,7 +455,12 @@ export function initArmyBuilder(): void {
     render();
   });
 
-  window.addEventListener('bs:locale-changed', render);
+  window.addEventListener('bs:locale-changed', () => {
+    applyI18n();
+    localizeRoleOptions();
+    render();
+    paintTagButtons();
+  });
 
   function toast(message: string): void {
     const el = document.getElementById('toast');
@@ -385,6 +470,9 @@ export function initArmyBuilder(): void {
     window.setTimeout(() => el.classList.add('hidden'), 1600);
   }
 
+  applyI18n();
+  localizeRoleOptions();
+  paintTagButtons();
   populateFactions();
   populateUnits();
   render();
