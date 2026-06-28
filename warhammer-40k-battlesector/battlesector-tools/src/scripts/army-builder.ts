@@ -56,7 +56,9 @@ export function initArmyBuilder(): void {
   const unitSearch = document.getElementById('unit-search') as HTMLInputElement | null;
   const unitSort = document.getElementById('unit-sort') as HTMLSelectElement | null;
   const unitRole = document.getElementById('unit-role') as HTMLSelectElement | null;
-  const showCampaignUnits = document.getElementById('show-campaign-units') as HTMLInputElement | null;
+  const showCampaignUnits = document.getElementById(
+    'show-campaign-units',
+  ) as HTMLInputElement | null;
   const tagFilter = document.getElementById('army-unit-tag-filter');
   const loadoutBox = document.getElementById('loadout-config');
   const loadoutTotal = document.getElementById('loadout-total');
