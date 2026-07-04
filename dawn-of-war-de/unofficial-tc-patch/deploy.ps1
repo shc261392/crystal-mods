@@ -3,16 +3,17 @@
     WH40K DoW:DE — Traditional Chinese Locale Mod Deployer (Windows native)
 
 .DESCRIPTION
-    Deploys the TC locale mod to the game installation on Windows.
+    Deploys the pre-built TC locale mod SGA to the game installation on Windows.
     Auto-detects Steam game directory from registry and common library paths.
     Creates a timestamped backup before deploying.
 
     Actions:
       1. Auto-detect game installation directory
-      2. Apply font-fix patches via Python (patching data/font/*.fnt in repo)
-      3. Backup existing locale files
-      4. Copy data/ and Engine.ucs to Engine\Locale\Chinese\
-      5. Disable EnginLoc.sga (rename to .disabled) so game loads data/ instead
+      2. Backup existing locale files
+      3. Copy EnginLocMod.sga and Engine.ucs to Engine\Locale\Chinese\
+      4. Verify deployment integrity
+
+    Note: Loose data deployment has been removed (obsolete since v1.0.4).
 
 .PARAMETER GameDir
     Override the auto-detected game installation directory.
@@ -44,8 +45,7 @@ $BackupRoot = Join-Path $ScriptRoot "backup"
 $DeployStateDir = Join-Path $ScriptRoot ".copilot_workspace"
 $DeployStateFile = Join-Path $DeployStateDir "last_deploy_win.env"
 
-$DeployDirs  = @("data")
-$DeployFiles = @("Engine.ucs")
+$DeployFiles = @("EnginLocMod.sga", "Engine.ucs")
 
 # ─────────────────────────────────────────────────────────────────────────────
 function Write-Step  { param([string]$Msg) Write-Host "▶ $Msg" -ForegroundColor Cyan }
@@ -102,22 +102,13 @@ function Get-SteamLibraryRoots {
         }
     }
 
-    # 4. Scan all drive roots for SteamLibrary folders
-    $drives = Get-PSDrive -PSProvider FileSystem | Where-Object { $_.Root -match '^[A-Z]:\\$' }
-    foreach ($drv in $drives) {
-        foreach ($candidate in @("SteamLibrary", "Steam", "Games\Steam")) {
-            $path = Join-Path $drv.Root $candidate
-            if (Test-Path $path) { $roots.Add($path) }
-        }
-    }
-
-    return $roots | Sort-Object -Unique
+    return ($roots | Select-Object -Unique)
 }
 
 function Find-GameDir {
     $roots = Get-SteamLibraryRoots
-    foreach ($root in $roots) {
-        $candidate = Join-Path $root "steamapps\common\$GameFolderName"
+    foreach ($lib in $roots) {
+        $candidate = Join-Path $lib "steamapps\common\$GameFolderName"
         if (Test-Path $candidate) {
             return $candidate
         }
@@ -126,162 +117,93 @@ function Find-GameDir {
 }
 
 # ─────────────────────────────────────────────────────────────────────────────
-Write-Host ""
-Write-Host "WH40K DoW:DE — Traditional Chinese Locale Mod Deployer (Windows)" -ForegroundColor White -BackgroundColor DarkBlue
-Write-Host "Repo: $ScriptRoot"
-Write-Host ""
+# Main Deploy Logic
+# ─────────────────────────────────────────────────────────────────────────────
 
-if ($DryRun) { Write-Warn "[DRY RUN — no files will be written]" }
+Write-Host ""
+Write-Host "WH40K DoW:DE — Traditional Chinese Locale Mod Deployer" -ForegroundColor White
+Write-Host "Repo: $ScriptRoot"
+Write-Host "Mode: SGA-only (pre-built archives)"
+Write-Host ""
 
 # 1. Resolve game directory
-if ([string]::IsNullOrWhiteSpace($GameDir)) {
-    $GameDir = $env:DOW_GAME_DIR
-}
-if ([string]::IsNullOrWhiteSpace($GameDir)) {
+if (-not $GameDir) {
     Write-Step "Auto-detecting game installation..."
     $GameDir = Find-GameDir
-    if ([string]::IsNullOrWhiteSpace($GameDir)) {
+    if (-not $GameDir) {
         Write-Fail "Could not auto-detect game directory."
-        Write-Host "Set DOW_GAME_DIR environment variable or use -GameDir parameter." -ForegroundColor Red
-        Write-Host "Example: -GameDir 'D:\SteamLibrary\steamapps\common\Dawn of War Definitive Edition'"
+        Write-Host "Please provide -GameDir parameter." -ForegroundColor Red
         exit 1
     }
     Write-Ok "Found: $GameDir"
 } else {
-    if (-not (Test-Path $GameDir)) { throw "Specified GameDir does not exist: $GameDir" }
+    if (-not (Test-Path $GameDir)) {
+        Write-Fail "Specified game dir does not exist: $GameDir"
+        exit 1
+    }
     Write-Ok "Using provided: $GameDir"
 }
 
 $LocaleTarget = Join-Path $GameDir $LocaleSubPath
 if (-not (Test-Path $LocaleTarget)) {
-    throw "Expected locale directory missing: $LocaleTarget"
+    Write-Fail "Expected locale directory missing: $LocaleTarget"
+    exit 1
 }
-Write-Host "Target: $LocaleTarget"
+
+Write-Host ""
+Write-Host "Target: $LocaleTarget" -ForegroundColor White
+if ($DryRun) { Write-Host "[DRY RUN — no files will be written]" -ForegroundColor Yellow }
 Write-Host ""
 
-# 2. Apply font-fix patches
-Write-Step "Applying font-fix patches (data/font/*.fnt)..."
-$PythonExe = $null
-$uvExe = Get-Command uv -ErrorAction SilentlyContinue
-$py3Exe = Get-Command python -ErrorAction SilentlyContinue
-
-if ($uvExe) {
-    $applyArgs = @(
-        "run", "python",
-        (Join-Path $ScriptRoot "scripts\apply_font_fix.py"),
-        "--root", $ScriptRoot,
-        "--font", "noto-sans-tc",
-        "--restore-from-bak",
-        "--mode", "fallback-only",
-        "--size", "34"
-    )
-    if ($DryRun) { $applyArgs += "--dry-run" }
-    if (-not $DryRun) {
-        & uv @applyArgs
-    } else {
-        & uv @applyArgs 2>$null
-    }
-} elseif ($py3Exe) {
-    $applyArgs = @(
-        (Join-Path $ScriptRoot "scripts\apply_font_fix.py"),
-        "--root", $ScriptRoot,
-        "--font", "noto-sans-tc",
-        "--restore-from-bak",
-        "--mode", "fallback-only",
-        "--size", "34"
-    )
-    if ($DryRun) { $applyArgs += "--dry-run" }
-    & python @applyArgs
-} else {
-    Write-Warn "Python not found. Skipping font-fix patch — deploying pre-existing .fnt files."
-}
-
-# 3. Backup existing files
+# 2. Backup existing files
 if (-not $NoBackup -and -not $DryRun) {
-    $BackupStampDir = Join-Path $BackupRoot $Stamp
-    New-Item -ItemType Directory -Force -Path $BackupStampDir | Out-Null
-    Write-Step "Backing up to $BackupStampDir ..."
-
-    foreach ($d in $DeployDirs) {
-        $src = Join-Path $LocaleTarget $d
-        if (Test-Path $src) {
-            Copy-Item -Recurse -Force $src (Join-Path $BackupStampDir $d)
-        }
-    }
+    Write-Step "Creating backup ($BackupRoot\$Stamp)..."
+    $BackupDir = Join-Path $BackupRoot $Stamp
+    New-Item -ItemType Directory -Path $BackupDir -Force | Out-Null
+    
     foreach ($f in $DeployFiles) {
         $src = Join-Path $LocaleTarget $f
         if (Test-Path $src) {
-            Copy-Item -Force $src (Join-Path $BackupStampDir $f)
+            $dst = Join-Path $BackupDir $f
+            Copy-Item -Path $src -Destination $dst -Force
         }
     }
-    foreach ($sgaName in @("EnginLoc.sga", "EnginLoc.sga.disabled")) {
-        $src = Join-Path $LocaleTarget $sgaName
-        if (Test-Path $src) {
-            Copy-Item -Force $src (Join-Path $BackupStampDir $sgaName)
-        }
-    }
-    Write-Ok "Backup done."
+    Write-Ok "Backup written to $BackupDir"
 }
 
-# 4. Deploy directories
-foreach ($d in $DeployDirs) {
-    $src  = Join-Path $ScriptRoot $d
-    $dest = Join-Path $LocaleTarget $d
-    if (-not (Test-Path $src)) { Write-Warn "Source missing, skipping: $src"; continue }
-
-    Write-Step "Deploying $d\ → $dest\"
-    if (-not $DryRun) {
-        if (-not (Test-Path $dest)) { New-Item -ItemType Directory -Force -Path $dest | Out-Null }
-        # Robocopy: mirror without deleting extra files, exclude .bak
-        $rcArgs = @($src, $dest, "/E", "/XF", "*.bak", "/NJH", "/NJS")
-        $rc = Start-Process -FilePath "robocopy" -ArgumentList $rcArgs -Wait -PassThru -NoNewWindow
-        # robocopy exit codes: 0-7 are success (see docs)
-        if ($rc.ExitCode -ge 8) { throw "robocopy failed with exit code $($rc.ExitCode)" }
-    }
-}
-
-# 5. Deploy files
+# 3. Deploy SGA and UCS files
 foreach ($f in $DeployFiles) {
-    $src  = Join-Path $ScriptRoot $f
-    $dest = Join-Path $LocaleTarget $f
-    if (-not (Test-Path $src)) { Write-Warn "Source missing, skipping: $src"; continue }
-
-    Write-Step "Deploying $f"
-    if (-not $DryRun) { Copy-Item -Force $src $dest }
-}
-
-# 6. Disable EnginLoc.sga
-$sgaActive   = Join-Path $LocaleTarget "EnginLoc.sga"
-$sgaDisabled = Join-Path $LocaleTarget "EnginLoc.sga.disabled"
-
-if (Test-Path $sgaActive) {
-    Write-Step "Disabling EnginLoc.sga..."
-    if (-not $DryRun) {
-        Rename-Item -Path $sgaActive -NewName "EnginLoc.sga.disabled" -Force
-        Write-Ok "Renamed EnginLoc.sga → EnginLoc.sga.disabled"
-    } else {
-        Write-Warn "[DRY RUN] Would rename: EnginLoc.sga → EnginLoc.sga.disabled"
+    $src = Join-Path $ScriptRoot $f
+    if (-not (Test-Path $src)) {
+        Write-Fail "Source file missing: $src"
+        exit 1
     }
-} elseif (Test-Path $sgaDisabled) {
-    Write-Ok "EnginLoc.sga already disabled"
-} else {
-    Write-Warn "EnginLoc.sga not found — game may load stale packed locale"
+
+    Write-Step "Deploying $f → $LocaleTarget\$f"
+    if (-not $DryRun) {
+        Copy-Item -Path $src -Destination (Join-Path $LocaleTarget $f) -Force
+        Write-Ok "Deployed $f"
+    } else {
+        Write-Warn "[DRY RUN] Would copy: $f"
+    }
 }
 
-# 7. Save deploy state
+# 4. Record deployment state
 if (-not $DryRun) {
-    New-Item -ItemType Directory -Force -Path $DeployStateDir | Out-Null
+    if (-not (Test-Path $DeployStateDir)) {
+        New-Item -ItemType Directory -Path $DeployStateDir -Force | Out-Null
+    }
     @"
 GAME_DIR=$GameDir
 LOCALE_TARGET=$LocaleTarget
 BACKUP_STAMP=$Stamp
 BACKUP_DIR=$(Join-Path $BackupRoot $Stamp)
-"@ | Set-Content $DeployStateFile -Encoding UTF8
+"@ | Out-File -FilePath $DeployStateFile -Encoding utf8 -Force
     Write-Ok "Deploy state saved: $DeployStateFile"
 }
 
 Write-Host ""
-Write-Host "Deployment complete!" -ForegroundColor Green -NoNewline
+Write-Host "Deployment complete\!" -ForegroundColor Green
 Write-Host "  Launch DoW:DE and verify Chinese text rendering."
 Write-Host "  To revert: .\uninstall.ps1"
 Write-Host ""

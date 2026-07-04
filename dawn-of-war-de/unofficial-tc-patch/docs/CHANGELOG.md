@@ -2,6 +2,24 @@
 
 All notable user-facing changes to the DoW DE Traditional Chinese patch are documented here.
 
+## 2026-07-04 — Architecture cleanup (loose data deployment removed)
+
+### BREAKING CHANGES
+- **Removed all loose data deployment code** (obsolete since v1.0.4)
+- Deploy scripts now only support SGA-only deployment
+- Removed `--mode` flags and `DEPLOY_MODE` variable from deploy.sh/deploy.ps1
+- Simplified uninstall scripts to remove only SGA files (no more data/ directory handling)
+
+### Documentation Updates
+- Updated README.md manual install instructions (no longer requires EnginLoc.sga renaming)
+- Clarified FONT_FIX_README.md is for development use only
+- Updated Makefile to remove loose-mode deployment targets
+
+### Rationale
+- v1.0.4 established SGA-only deployment as the canonical method
+- Loose data deployment was a legacy workflow from early development
+- Removing obsolete code paths prevents future confusion and maintenance burden
+
 ## 2026-06-27 — Upstream game-update sync (Engine.ucs rebase)
 
 ### Changed
@@ -26,12 +44,12 @@ All notable user-facing changes to the DoW DE Traditional Chinese patch are docu
 - Fix in rebuilt `v1.0.5`: restored vanilla `size640..size1600` per font and kept only `sizeDefault = 34` (fallback-only profile).
 - Verification: only 13 `sizeDefault` deltas remain vs vanilla; no `size640..size1600` inflation deltas remain.
 
-### Font profile update
-- Increased the default recommended profile slightly: `sizeDefault` is now `36` for the standard mod package.
-- Added a Vortex FOMOD profile bundle with three install-time choices:
-  - **Vanilla size**
-  - **Recommended for 1920×1080 or above** (`sizeDefault = 36`)
-  - **Recommended for 4K or above** (`sizeDefault = 38`)
+### Font size adjustment (2026-07-04)
+- Increased `sizeDefault` from 34 to 36 for improved readability.
+- All `.fnt` files confirmed using NotoSansTC font family (notosanstc-*.ttf).
+- **Font size variants:**
+  - `wh40k-dow-de-tc-mod-v1.0.5.zip` — standard variant (sizeDefault=36)
+  - `wh40k-dow-de-tc-mod-v1.0.5-font48.zip` — large font variant (sizeDefault=48) for users who need extra-large text
 
 ### Release
 - Version bumped to `1.0.5`.

@@ -18,10 +18,9 @@ SCRIPTS  := scripts
 
 # ── Font / size defaults (override on CLI: make apply FONT=noto-serif-tc SIZE=36)
 FONT     ?= noto-sans-tc
-SIZE     ?= 36
+SIZE     ?= 34
 PROFILE  ?=
 MODE     ?= fallback-only
-SIZE_4K  ?= 38
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Setup
@@ -34,7 +33,7 @@ setup: ## Install Python environment (no relic SGA tools needed for most workflo
 	@echo "✓ Python env ready.  Run 'make help' to see available commands."
 
 .PHONY: setup-sga
-setup-sga: ## Install relic SGA tools (required only for SGA repack; Windows/Wine only)
+setup-sga: ## Install relic SGA tools (optional; Archive.exe via WSL interop is standard)
 	uv sync --extra sga
 	@echo "✓ relic-tool-sga installed.  Use 'make unpack-sga' to extract the archive."
 
@@ -77,37 +76,28 @@ list-fonts: ## List font replacement options (--replace-font-file / --replace-fo
 
 .PHONY: list-profiles
 list-profiles: ## Show size/mode options
-	@echo "Size: set via SIZE=N (default: 36)  Mode: fallback-only | all (default: fallback-only)"
-	@echo "Vortex presets: vanilla | 1080p+ (sizeDefault=$(SIZE)) | 4k+ (sizeDefault=$(SIZE_4K))"
+	@echo "Size: set via SIZE=N (default: 34)  Mode: fallback-only | all (default: fallback-only)"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # SGA archive tools (optional, Windows/Wine)
 # ─────────────────────────────────────────────────────────────────────────────
 
 .PHONY: unpack-sga
-unpack-sga: ## Unpack EnginLoc.sga → data/ (requires setup-sga; Windows/Wine only)
-	@echo "Unpack is Windows-only (PowerShell + relic.exe)."
-	@echo "On Linux use: uv run python scripts/apply_font_fix.py directly (no SGA needed)."
+unpack-sga: ## Unpack EnginLoc.sga → data/ (Archive.exe via WSL interop is the standard method)
+	@echo "Standard method: use scripts/rebuild_sga_auto.sh which calls Archive.exe via WSL interop"
+	@echo "Alternative: Python relic-tool-sga (requires setup-sga; experimental)"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Deployment
 # ─────────────────────────────────────────────────────────────────────────────
 
 .PHONY: deploy
-deploy: ## Deploy mod (loose-file mode, default) — copies data/, disables EnginLoc.sga
+deploy: ## Deploy mod to game installation (SGA-only)
 	@bash deploy.sh
 
-.PHONY: deploy-sga
-deploy-sga: ## Deploy mod (sga mode) — builds EnginLocMod.sga, keeps EnginLoc.sga active
-	@bash deploy.sh --mode sga
-
 .PHONY: deploy-dry
-deploy-dry: ## Dry-run the default (loose) deploy without writing anything
+deploy-dry: ## Dry-run deployment without writing anything
 	@bash deploy.sh --dry-run
-
-.PHONY: deploy-sga-dry
-deploy-sga-dry: ## Dry-run the sga deploy without writing anything
-	@bash deploy.sh --mode sga --dry-run
 
 .PHONY: uninstall
 uninstall: ## Revert deployment (restore backups, re-enable original SGA)
@@ -168,11 +158,7 @@ package-ext: ## Build Vortex extension zip (.copilot_workspace/dist/vortex-ext-*
 	@echo "  Files: $$(unzip -l "$(DIST_DIR)/$(EXT_NAME).zip" | tail -1)"
 
 .PHONY: package-all
-package-all: package package-ext package-keybinds package-vortex-profiles ## Build the mod archive, Vortex extension zip, keybind zips, and Vortex profile bundle
-
-.PHONY: package-vortex-profiles
-package-vortex-profiles: ## Build Vortex FOMOD mod zip with vanilla / 1080p+ / 4k+ font-size options
-	@DEFAULT_SIZE=$(SIZE) SIZE_4K=$(SIZE_4K) bash scripts/package_vortex_font_profiles.sh
+package-all: package package-ext package-keybinds ## Build both the mod archive and Vortex extension zip
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Keybinding Overhaul mod (separate, ships standalone)
@@ -227,5 +213,5 @@ help: ## Show this help message
 	@grep -E '^[a-zA-Z_-]+:.*##' $(MAKEFILE_LIST) \
 	    | sort \
 	    | awk 'BEGIN{FS=":.*## "}; {printf "  \033[36m%-18s\033[0m %s\n", $$1, $$2}'
-	@printf "\nOverridable variables: FONT (default: $(FONT)), SIZE (default: $(SIZE)), SIZE_4K (default: $(SIZE_4K)), MODE (default: $(MODE)), PROFILE\n"
+	@printf "\nOverridable variables: FONT (default: $(FONT)), SIZE (default: $(SIZE)), MODE (default: $(MODE)), PROFILE\n"
 	@printf "Example: make apply FONT=noto-serif-tc SIZE=36\n"

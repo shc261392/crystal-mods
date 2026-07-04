@@ -22,11 +22,6 @@ Fixes font size/weight, subtitle artifacts, and applies text corrections to `Eng
 
 2. **Add the mod** — drag `wh40k-dow-de-tc-mod-v*.zip` onto Vortex.
 
-  If you use the Vortex profile bundle (`wh40k-dow-de-tc-mod-v*-vortex.zip`), Vortex will show a font-size installer with three choices:
-  - **Vanilla size**
-  - **Recommended for 1920×1080 or above**
-  - **Recommended for 4K or above**
-
 3. **Deploy** — click *Deploy Mods* in Vortex.  
    Vortex automatically renames `EnginLoc.sga` → `EnginLoc.sga.disabled` so the patched files take priority.
 
@@ -40,13 +35,11 @@ To uninstall: click *Purge Mods* in Vortex. The original `EnginLoc.sga` is resto
 
 1. Download `wh40k-dow-de-tc-mod-v*.zip` from [Releases](https://github.com/shc261392/wh40k-dow-de-tc-mod/releases/latest).
 2. Find your game folder (see above), open the `Engine\Locale\Chinese\` subfolder, and extract the zip there.
-3. In that same folder, **rename** `EnginLoc.sga` to `EnginLoc.sga.disabled`.
-4. Launch the game. Done!
+3. Launch the game. Done!
 
 **To uninstall:**
 1. Go to your game's `Engine\Locale\Chinese\` folder.
-2. Delete the `data\` folder and `Engine.ucs` (the files from this mod).
-3. Rename `EnginLoc.sga.disabled` back to `EnginLoc.sga`.
+2. Delete `EnginLocMod.sga` and `Engine.ucs` (the files from this mod).
 
 ---
 
@@ -108,13 +101,11 @@ bash uninstall.sh   # Linux / WSL2
 
 1. 從 [Releases](https://github.com/shc261392/wh40k-dow-de-tc-mod/releases/latest) 下載 `wh40k-dow-de-tc-mod-v*.zip`。
 2. 使用上方說明找到遊戲根目錄，進入 `Engine\Locale\Chinese\` 子資料夾，將壓縮檔解壓縮至此處。
-3. 在同一個資料夾內，找到 `EnginLoc.sga`，將它**重新命名**為 `EnginLoc.sga.disabled`。
-4. 啟動遊戲，完成！
+3. 啟動遊戲，完成！
 
 **解除安裝：**
 1. 回到遊戲的 `Engine\Locale\Chinese\` 資料夾。
-2. 刪除 `data\` 資料夾以及 `Engine.ucs`（本模組的檔案）。
-3. 將 `EnginLoc.sga.disabled` 重新命名回 `EnginLoc.sga`。
+2. 刪除 `EnginLocMod.sga` 以及 `Engine.ucs`（本模組的檔案）。
 
 ---
 
@@ -276,7 +267,7 @@ The DoW DE Vortex extension is still under Vortex review, so install it by dragg
 make list-fonts      # show all font presets
 make list-profiles   # show size profiles (1080p, 4k)
 
-make apply FONT=noto-sans-tc   SIZE=36   # default
+make apply FONT=noto-sans-tc   SIZE=34   # default
 make apply FONT=noto-serif-tc  SIZE=36
 make apply FONT=msyh           MODE=all
 ```
@@ -388,3 +379,28 @@ When `uninstall.sh` / `uninstall.ps1` restore from a timestamped backup, it uses
 To force restoration to the true vanilla state, either:
 1. Verify files via Steam (see above), or
 2. Manually compare backup hashes against the table above and reject non-matching entries.
+
+---
+
+## For Developers: Building from Source
+
+**Complete build documentation:** [`docs/BUILD_GUIDE.md`](docs/BUILD_GUIDE.md)
+
+The build guide provides step-by-step instructions for reproducing the standard build process, including:
+- Font size patching workflow
+- SGA repacking with Archive.exe (WSL2 environment)
+- Creating distribution packages
+- Troubleshooting sandbox and WSL interop issues
+- Build verification checklist
+
+**Quick build (SIZE=36):**
+```bash
+cd /home/shado/crystal-mods/dawn-of-war-de/unofficial-tc-patch
+python3 scripts/apply_font_fix.py --root . --size 36 --mode fallback-only
+bash scripts/rebuild_sga_auto.sh  # Requires unsandboxed execution if automated
+make package
+```
+
+**Output:** `dist/wh40k-dow-de-tc-mod-v1.0.5.zip`
+
+See the [BUILD_GUIDE.md](docs/BUILD_GUIDE.md) for complete details.

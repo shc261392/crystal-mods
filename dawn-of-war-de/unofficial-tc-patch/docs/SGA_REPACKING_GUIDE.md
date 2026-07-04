@@ -6,6 +6,14 @@ This guide documents how to repack loose files back into Relic Archive (.sga) fo
 
 **Key Finding:** Repacking is possible using `Archive.exe` with a structured buildfile.
 
+> **⚠️ CRITICAL: Sandbox Requirements**  
+> Archive.exe requires WSL interop and **MUST run outside VS Code's terminal sandbox**.  
+> If running from automation tools (VS Code Copilot, CI/CD), request unsandboxed execution.  
+> **Symptom of sandboxed execution:** `<3>WSL (N) ERROR: UtilConnectUnix:524: socket failed 1`  
+> **Solution:** Use `requestUnsandboxedExecution=true` in tool parameters or run from standard WSL2 terminal.
+>
+> See [`BUILD_GUIDE.md`](BUILD_GUIDE.md) for complete build process documentation.
+
 ## Process Summary
 
 ### 1. Extract Original SGA
