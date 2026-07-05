@@ -59,26 +59,56 @@ cp -r backup/20260604-144320/data .
 
 ### 2. Patch Font Sizes
 
-Change `sizeDefault` value in all 13 `.fnt` font configuration files:
+**⚠️ CRITICAL:** You MUST use `--mode all` to patch ALL font size fields!
+
+#### Why `--mode all` is Required
+
+The game engine uses **resolution-specific font size fields** (`size640`, `size800`, `size1024`, `size1280`, `size1600`) instead of `sizeDefault` at common resolutions (640×480 and higher). Most players at 1920×1080 or higher use the `size1600` field.
+
+- **`--mode fallback-only`** ❌ (default): Only patches `sizeDefault` → **All variants look the same in-game!**
+  - Replacements: 13 (1 per .fnt file)
+  - Result: size640-1600 fields remain at 32, fonts don't change
+  
+- **`--mode all`** ✅ (required): Patches ALL size fields → **Variants render at different sizes**
+  - Replacements: 75-78 (6 per .fnt file)
+  - Result: All size fields updated consistently
+
+**See** [`.copilot_workspace/FONT_SIZE_RCA.md`](../.copilot_workspace/FONT_SIZE_RCA.md) for detailed root cause analysis.
+
+#### Patch Commands
 
 ```bash
 # For standard variant (SIZE=36)
-python3 scripts/apply_font_fix.py --root . --size 36 --mode fallback-only
+python3 scripts/apply_font_fix.py --root . --size 36 --mode all
 
 # For large font variant (SIZE=48)
-python3 scripts/apply_font_fix.py --root . --size 48 --mode fallback-only
+python3 scripts/apply_font_fix.py --root . --size 48 --mode all
+
+# For any custom size (32-48 tested and verified)
+python3 scripts/apply_font_fix.py --root . --size 40 --mode all
 ```
 
 **What it does:**
 - Finds all `.fnt` files in `data/font/`
-- Replaces `sizeDefault = <old_value>;` with `sizeDefault = 36;` (or 48)
+- Replaces `sizeDefault`, `size640`, `size800`, `size1024`, `size1280`, `size1600` with new value
 - Creates `.fnt.bak` backups before modifying
 
-**Verify:**
+**Verify ALL size fields were patched:**
 ```bash
-grep "sizeDefault" data/font/notosans_m_16_xc.fnt
-# Should show: sizeDefault = 36;  (or 48)
+grep -E "(sizeDefault|size640|size800|size1024|size1280|size1600)" data/font/notosans_m_16_xc.fnt
+
+# Expected output (for SIZE=36):
+#   sizeDefault = 36;
+#   size640     = 36;
+#   size800     = 36;
+#   size1024    = 36;
+#   size1280    = 36;
+#   size1600    = 36;
 ```
+
+**If you see mixed values (e.g., sizeDefault=48 but size640=32):**
+- ❌ You used `--mode fallback-only` by mistake
+- ✅ Re-run with `--mode all`
 
 ### 3. Rebuild SGA Archive
 

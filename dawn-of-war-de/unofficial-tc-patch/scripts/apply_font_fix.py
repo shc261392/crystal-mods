@@ -17,7 +17,6 @@ import argparse
 import re
 from pathlib import Path
 
-
 SIZE_KEYS = r"(?:font_?size|fontsize|size(?:default|\d+)?|lineheight)"
 ASSIGNMENT = re.compile(
     rf"(?i)(?P<prefix>\b)(?P<key>{SIZE_KEYS})(?P<sep>\s*[:=]\s*)(?P<q>['\"]?)(?P<num>-?\d+)(?P=q)"
@@ -78,7 +77,9 @@ def patch_file(
                 old_name = m.group("name")
                 if font_match_re is None or font_match_re.search(old_name):
                     new_line = FILE_ASSIGNMENT.sub(
-                        lambda mm: f"{mm.group('prefix')}{mm.group('q')}{replace_font_file}{mm.group('q')}",
+                        lambda mm: (
+                            f"{mm.group('prefix')}{mm.group('q')}{replace_font_file}{mm.group('q')}"
+                        ),
                         new_line,
                         count=1,
                     )
@@ -109,7 +110,9 @@ def restore_from_backup(path: Path, dry_run: bool = False) -> bool:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Patch Dawn of War font files to a larger size.")
-    parser.add_argument("--root", default=".", help="Locale root directory (default: current directory)")
+    parser.add_argument(
+        "--root", default=".", help="Locale root directory (default: current directory)"
+    )
     parser.add_argument("--size", type=int, default=36, help="Target font size (default: 36)")
     parser.add_argument(
         "--mode",
@@ -125,14 +128,16 @@ def main() -> int:
     parser.add_argument(
         "--replace-font-file",
         default=None,
-        help="Optional font filename to set in `file = \"...\"` entries (e.g. msyh.ttc).",
+        help='Optional font filename to set in `file = "..."` entries (e.g. msyh.ttc).',
     )
     parser.add_argument(
         "--replace-font-match",
         default=r"NotoSansTC|Gulim",
         help="Regex filter for existing `file` names to replace (default: NotoSansTC|Gulim).",
     )
-    parser.add_argument("--dry-run", action="store_true", help="Show what would change without writing files")
+    parser.add_argument(
+        "--dry-run", action="store_true", help="Show what would change without writing files"
+    )
     args = parser.parse_args()
 
     root = Path(args.root).resolve()

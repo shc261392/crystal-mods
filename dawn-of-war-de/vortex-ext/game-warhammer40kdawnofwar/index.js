@@ -66,8 +66,8 @@ function hasFomodInstaller(files) {
   return files.some((filePath) => {
     const normalized = filePath.replace(/\\/g, '/');
     return (
-      path.basename(normalized).toLowerCase() === 'moduleconfig.xml'
-      && path.basename(path.dirname(normalized)).toLowerCase() === 'fomod'
+      path.basename(normalized).toLowerCase() === 'moduleconfig.xml' &&
+      path.basename(path.dirname(normalized)).toLowerCase() === 'fomod'
     );
   });
 }
