@@ -113,3 +113,10 @@ reference/extracted/
 # ── Tool caches ──────────────────────────────────────────────────────────────
 .tool-versions.local
 *.log
+
+# Broad ignore for game-data dump dirs (extracted assets, build payloads, etc.).
+# NOTE: the curated Battlesector site data under src/data/ is an explicit
+# exception below — it is hand-authored and must stay git-tracked.
+data/
+!warhammer-40k-battlesector/battlesector-tools/src/data/
+*.sga

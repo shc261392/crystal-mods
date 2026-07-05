@@ -1,0 +1,24 @@
+---
+/**
+ * Player field-note editor field. Brief play-test observations (~100 words).
+ * `rowId` scopes the icon/notes selector uniqueness within a row.
+ */
+interface Props {
+  value: string | undefined;
+}
+const { value } = Astro.props;
+---
+
+<label class="block">
+  <span class="block text-[11px] font-semibold uppercase tracking-wide text-[var(--color-gold-dim)] mb-1">
+    Field notes <span class="text-[var(--color-faint)] normal-case font-normal">(play-test observations, not game data)</span>
+  </span>
+  <textarea
+    class="input resize-y text-sm"
+    data-field="notes"
+    rows="2"
+    placeholder="e.g. Overperforms vs light infantry; keep out of melee."
+    maxlength="600"
+  >{value ?? ''}</textarea>
+  <span class="block text-[11px] text-[var(--color-faint)] mt-1" data-note-count></span>
+</label>

@@ -8,13 +8,39 @@ import summaryData from '../data/summary.json';
 import unitsData from '../data/units.json';
 import weaponsData from '../data/weapons.json';
 import type { Faction, I18nBundle, Role, Summary, Unit, Weapon } from './types';
+import { resolveWeaponType } from './weapon-display';
 
 // Mephrit Necrons (faction 4) is an unused duplicate of Necrons (its 4 units are
 // dupes already present under Necrons), so it is hidden everywhere.
 const HIDDEN_FACTION_IDS = new Set<number>([4]);
 
-export const units = (unitsData as Unit[]).filter((u) => !HIDDEN_FACTION_IDS.has(u.faction));
-export const weapons = weaponsData as Weapon[];
+/** Ensure weaponType is populated and isMelee/isRanged stay consistent with it. */
+function normalizeWeapon(w: Weapon): Weapon {
+  const weaponType = resolveWeaponType(w);
+  return { ...w, weaponType, isMelee: weaponType === 'melee', isRanged: weaponType !== 'melee' };
+}
+
+// Faction-filtered but NOT hidden-filtered — the editor needs every editable row
+// (including hidden ones, so they can be un-hidden).
+export const allUnits = (unitsData as Unit[]).filter((u) => !HIDDEN_FACTION_IDS.has(u.faction));
+
+// Public site: hidden units are excluded.
+export const units = allUnits.filter((u) => !u.hidden);
+
+const usedWeaponIds = new Set<number>();
+for (const unit of allUnits) {
+  for (const slot of unit.weaponSlots) {
+    for (const opt of slot.options) usedWeaponIds.add(opt.weaponId);
+  }
+}
+
+const allWeaponsNormalized = (weaponsData as Weapon[]).map(normalizeWeapon);
+
+// Editor list: every weapon used by a (non-dupe) unit, including hidden ones.
+export const allWeapons = allWeaponsNormalized.filter((w) => usedWeaponIds.has(w.id));
+
+// Public site: hidden weapons excluded.
+export const weapons = allWeapons.filter((w) => !w.hidden);
 export const factions = (factionsData as Faction[]).filter((f) => !HIDDEN_FACTION_IDS.has(f.id));
 export const roles = rolesData as Role[];
 export const summary = summaryData as Summary;

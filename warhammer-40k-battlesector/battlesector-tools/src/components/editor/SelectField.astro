@@ -1,0 +1,22 @@
+---
+interface Option {
+  value: string;
+  label: string;
+}
+interface Props {
+  field: string;
+  label: string;
+  value: string | undefined;
+  options: Option[];
+}
+const { field, label, value, options } = Astro.props;
+---
+
+<label class="block">
+  <span class="block text-[11px] font-semibold uppercase tracking-wide text-[var(--color-faint)] mb-1">{label}</span>
+  <select class="input" data-field={field}>
+    {options.map((o) => (
+      <option value={o.value} selected={o.value === value}>{o.label}</option>
+    ))}
+  </select>
+</label>

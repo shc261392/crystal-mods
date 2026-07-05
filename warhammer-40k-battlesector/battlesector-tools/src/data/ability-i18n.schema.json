@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Ability i18n Data",
+  "description": "Multi-language localization data for Battlesector unit abilities",
+  "type": "object",
+  "required": ["generatedAt", "source", "stats", "abilities"],
+  "properties": {
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp when this file was generated"
+    },
+    "source": {
+      "type": "string",
+      "description": "Description of data sources used to generate this file"
+    },
+    "stats": {
+      "type": "object",
+      "description": "Summary statistics about the matching process",
+      "required": ["totalAbilities", "matched", "exact", "fuzzy", "manual", "needsReview"],
+      "properties": {
+        "totalAbilities": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of curated abilities in source"
+        },
+        "matched": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of abilities successfully matched to game text"
+        },
+        "exact": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of exact matches (100% confidence)"
+        },
+        "fuzzy": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of fuzzy matches (≥95% confidence)"
+        },
+        "manual": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of abilities requiring manual verification"
+        },
+        "needsReview": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of abilities flagged for manual review"
+        }
+      }
+    },
+    "abilities": {
+      "type": "array",
+      "description": "Array of ability localization entries",
+      "items": {
+        "$ref": "#/definitions/abilityEntry"
+      }
+    }
+  },
+  "definitions": {
+    "abilityEntry": {
+      "type": "object",
+      "description": "Localization data for a single ability",
+      "required": ["abilityId", "locales", "confidence"],
+      "properties": {
+        "abilityId": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Ability ID from ability-overrides.source.json"
+        },
+        "textId": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Game text repository ID (null if no match found)"
+        },
+        "locales": {
+          "type": "object",
+          "description": "Translations indexed by locale code",
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "$ref": "#/definitions/localeData"
+            }
+          },
+          "minProperties": 1
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["exact", "fuzzy", "manual"],
+          "description": "Confidence level of the text match"
+        },
+        "notes": {
+          "type": ["string", "null"],
+          "description": "Optional notes about matching issues or manual verification needed"
+        }
+      }
+    },
+    "localeData": {
+      "type": "object",
+      "description": "Localized text for a specific language",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Localized ability title/name"
+        },
+        "description": {
+          "type": "string",
+          "description": "Localized ability description with effects"
+        }
+      },
+      "minProperties": 1
+    }
+  }
+}

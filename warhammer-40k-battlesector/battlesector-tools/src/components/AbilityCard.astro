@@ -1,0 +1,173 @@
+---
+import type { Ability } from '../lib/ability-types';
+
+export type Props = Ability & { compact?: boolean };
+
+const { title, icon, description, kind, actionPoints, cooldown, compact = false } = Astro.props;
+
+const isActive = kind === 'active';
+
+// Parse description into an optional "targets" lead line + effect lines.
+// Only treat the first line as a target/lead line when there are further effect
+// lines beneath it; a single-line description (e.g. a passive like Volatile) is
+// the effect itself and belongs in the effects zone, not the header.
+const lines = description.split('\n').filter((line) => line.trim());
+const leadKeywords = [
+  'Affects',
+  'Targets',
+  'Heals',
+  'Energies',
+  'Applies',
+  'Summon',
+  'Throws',
+  'Explodes',
+];
+const targets =
+  lines.length > 1 && lines[0] && leadKeywords.some((k) => lines[0]?.startsWith(k))
+    ? lines[0]
+    : null;
+const effects = targets ? lines.slice(1) : lines;
+const noteText = Astro.props.notes?.trim();
+---
+
+<article class="ability-card surface p-0 overflow-hidden">
+  <!-- Header: icon + title + optional target line -->
+  <div class="flex items-start gap-3 p-3.5 pb-3">
+    {icon && (
+      <img
+        src={icon}
+        alt=""
+        width="44"
+        height="44"
+        loading="lazy"
+        decoding="async"
+        class="ability-icon w-11 h-11 shrink-0 object-contain rounded-lg bg-black/30 border border-[var(--color-border)] p-1"
+      />
+    )}
+    <div class="min-w-0 flex-1">
+      <h3 class="font-bold text-sm leading-tight">{title}</h3>
+      {targets && (
+        <p class="mt-1 text-[11px] leading-snug text-[var(--color-faint)] italic">{targets}</p>
+      )}
+    </div>
+  </div>
+
+  <!-- Dedicated stat zone: always-present labelled cells (no wrapping pills) -->
+  <div class={`ability-stats grid ${isActive ? 'grid-cols-3' : 'grid-cols-1'}`}>
+    <div class="stat-cell">
+      <span class="stat-label" data-i18n-ui="abilityCard.type">Type</span>
+      <span class={`stat-value ${isActive ? 'text-[var(--color-plasma)]' : 'text-[var(--color-gold)]'}`}>
+        {isActive ? (
+          <span data-i18n-ui="abilityCard.active">Active</span>
+        ) : (
+          <span data-i18n-ui="abilityCard.passive">Passive</span>
+        )}
+      </span>
+    </div>
+    {isActive && (
+      <>
+        <div class="stat-cell">
+          <span class="stat-label" data-i18n-ui="abilityCard.ap">AP</span>
+          <span class="stat-value tabular-nums text-[var(--color-gold-dim)]">{actionPoints}</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-label" data-i18n-ui="abilityCard.cd">CD</span>
+          <span class="stat-value tabular-nums text-[var(--color-momentum)]">{cooldown}</span>
+        </div>
+      </>
+    )}
+  </div>
+
+  <!-- Effects -->
+  {effects.length > 0 && (
+    <div class="p-3.5 pt-3">
+      {compact ? (
+        <p class="text-xs text-[var(--color-muted)] ability-clamp">{effects.join(' · ')}</p>
+      ) : (
+        <ul class="space-y-1">
+          {effects.map((effect) => {
+            const trimmed = effect.trim();
+            const isBuff = /^[+\-−]/.test(trimmed);
+            const isMeta =
+              /expires|charge time/i.test(trimmed) ||
+              /will not provoke/i.test(trimmed) ||
+              /ignores movement/i.test(trimmed);
+            return (
+              <li
+                class={`flex items-start gap-1.5 text-xs leading-snug ${isBuff ? 'text-[var(--color-ink)] font-medium' : isMeta ? 'text-[var(--color-faint)]' : 'text-[var(--color-muted)]'}`}
+              >
+                {isBuff && (
+                  <span
+                    class="mt-1 h-1 w-1 shrink-0 rounded-full bg-[var(--color-gold-dim)]"
+                    aria-hidden="true"
+                  ></span>
+                )}
+                <span>{trimmed}</span>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </div>
+  )}
+
+  {noteText && (
+    <div class="px-3.5 pb-3.5">
+      <div class="rounded-md border-l-[3px] border-[var(--color-gold)] bg-[color-mix(in_oklab,var(--color-gold)_10%,transparent)] px-2.5 py-1.5">
+        <span class="text-[10px] font-bold uppercase tracking-wide text-[var(--color-gold-dim)]" data-i18n-ui="fieldNotes.label">Field notes</span>
+        <p class="text-[11px] leading-snug text-[var(--color-muted)] whitespace-pre-line mt-0.5">{noteText}</p>
+      </div>
+    </div>
+  )}
+</article>
+
+<style>
+  .ability-card {
+    display: flex;
+    flex-direction: column;
+    container-type: inline-size;
+  }
+
+  /* Dedicated stat zone — bordered strip of always-present cells */
+  .ability-stats {
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    background: color-mix(in oklab, var(--color-base) 55%, transparent);
+  }
+
+  .stat-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.15rem;
+    padding: 0.5rem 0.375rem;
+    text-align: center;
+  }
+
+  .ability-stats.grid-cols-3 .stat-cell + .stat-cell {
+    border-left: 1px solid var(--color-border);
+  }
+
+  .stat-label {
+    font-size: 0.5625rem;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-faint);
+  }
+
+  .stat-value {
+    font-size: 0.875rem;
+    line-height: 1;
+    font-weight: 800;
+  }
+
+  .ability-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

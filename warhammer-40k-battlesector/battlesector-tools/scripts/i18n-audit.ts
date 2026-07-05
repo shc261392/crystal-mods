@@ -5,14 +5,14 @@ const ROOT = process.cwd();
 const SRC_DIR = path.join(ROOT, 'src');
 const UI_I18N_PATH = path.join(SRC_DIR, 'data', 'ui-i18n.ts');
 
-const bannedCopy = [
+const bannedCopy: string[] = [
   'Filtering is instant',
   'Filter instantly',
   'no page reloads',
   'fast, mobile-friendly app',
 ];
 
-function walk(dir, out = []) {
+function walk(dir: string, out: string[] = []): string[] {
   for (const entry of readdirSync(dir)) {
     const p = path.join(dir, entry);
     const s = statSync(p);
@@ -26,14 +26,14 @@ function walk(dir, out = []) {
   return out;
 }
 
-function parseUiLocaleKeys(source) {
-  const byLocale = new Map();
-  let currentLocale = null;
+function parseUiLocaleKeys(source: string): Map<string, Set<string>> {
+  const byLocale = new Map<string, Set<string>>();
+  let currentLocale: string | null = null;
   for (const line of source.split('\n')) {
     const localeMatch = line.match(/^\s{2}(?:'([^']+)'|([A-Za-z0-9-]+)):\s*\{$/);
     if (localeMatch) {
-      currentLocale = localeMatch[1] ?? localeMatch[2];
-      byLocale.set(currentLocale, new Set());
+      currentLocale = localeMatch[1] ?? localeMatch[2] ?? null;
+      if (currentLocale) byLocale.set(currentLocale, new Set());
       continue;
     }
     if (currentLocale && /^\s{2}\},?$/.test(line)) {
@@ -42,40 +42,51 @@ function parseUiLocaleKeys(source) {
     }
     if (!currentLocale) continue;
     const keyMatch = line.match(/^\s{4}'([^']+)':/);
-    if (keyMatch) byLocale.get(currentLocale).add(keyMatch[1]);
+    if (keyMatch?.[1]) byLocale.get(currentLocale)?.add(keyMatch[1]);
   }
   return byLocale;
 }
 
-function extractReferencedKeys(content) {
-  const keys = new Set();
+function extractReferencedKeys(content: string): Set<string> {
+  const keys = new Set<string>();
 
   for (const m of content.matchAll(/data-i18n-ui(?:-placeholder|-aria-label)?="([^"]+)"/g)) {
-    keys.add(m[1]);
+    if (m[1]) keys.add(m[1]);
   }
 
   for (const m of content.matchAll(/data-i18n-ui=\{([^}]+)\}/g)) {
-    for (const q of m[1].matchAll(/'([^']+)'/g)) keys.add(q[1]);
+    if (!m[1]) continue;
+    for (const q of m[1].matchAll(/'([^']+)'/g)) {
+      if (q[1]) keys.add(q[1]);
+    }
   }
 
   for (const m of content.matchAll(/(?:\bt|\btf)\(\s*'([^']+)'/g)) {
-    keys.add(m[1]);
+    if (m[1]) keys.add(m[1]);
   }
 
   return keys;
 }
 
-function relative(p) {
-  return path.relative(ROOT, p).replaceAll('\\\\', '/');
+function relative(p: string): string {
+  return path.relative(ROOT, p).replaceAll('\\', '/');
+}
+
+interface LocaleReport {
+  locale: string;
+  used: number;
+  covered: number;
+  coveragePct: number;
+  unresolved: string[];
 }
 
 const uiSource = readFileSync(UI_I18N_PATH, 'utf8');
 const keysByLocale = parseUiLocaleKeys(uiSource);
-const enKeys = keysByLocale.get('en') ?? new Set();
+const enKeys = keysByLocale.get('en') ?? new Set<string>();
 
 const files = walk(SRC_DIR);
-const usedKeys = new Set();
-const bannedHits = [];
+const usedKeys = new Set<string>();
+const bannedHits: { file: string; phrase: string }[] = [];
 for (const file of files) {
   const content = readFileSync(file, 'utf8');
   for (const key of extractReferencedKeys(content)) usedKeys.add(key);
@@ -87,8 +98,8 @@ for (const file of files) {
 const locales = [...keysByLocale.keys()].sort();
 const missingInEn = [...usedKeys].filter((k) => !enKeys.has(k));
 
-const localeReports = locales.map((locale) => {
-  const localeKeys = keysByLocale.get(locale) ?? new Set();
+const localeReports: LocaleReport[] = locales.map((locale) => {
+  const localeKeys = keysByLocale.get(locale) ?? new Set<string>();
   const unresolved = [...usedKeys].filter((k) => !localeKeys.has(k) && !enKeys.has(k));
   const covered = usedKeys.size - unresolved.length;
   return {

@@ -1,0 +1,37 @@
+---
+/**
+ * Reusable icon-picker modal for the editor suite. Embeds the merged icon
+ * catalog as JSON; the client (scripts/editor/icon-picker.ts) reads it and
+ * wires any button carrying `data-open-icon-picker data-target-input="<sel>"`.
+ */
+import type { IconOption } from '../../lib/editor-icons';
+
+interface Props {
+  catalog: IconOption[];
+}
+
+const { catalog } = Astro.props;
+---
+
+<script id="editor-icon-catalog" type="application/json" set:html={JSON.stringify(catalog)}></script>
+
+<div
+  id="icon-picker"
+  class="fixed inset-0 z-[150] hidden items-start justify-center pt-[8vh] px-4 bg-[oklch(0.1_0.01_265_/_0.7)] backdrop-blur-sm"
+  aria-hidden="true"
+>
+  <div class="surface w-full max-w-4xl max-h-[80vh] flex flex-col overflow-hidden" role="dialog" aria-modal="true" aria-label="Choose an icon">
+    <div class="flex items-center gap-3 p-4 border-b border-[var(--color-border)]">
+      <input
+        id="icon-picker-search"
+        type="search"
+        class="input flex-1"
+        placeholder="Search icons by name or source…"
+        autocomplete="off"
+      />
+      <span id="icon-picker-count" class="text-xs text-[var(--color-faint)] whitespace-nowrap"></span>
+      <button id="icon-picker-close" type="button" class="btn btn-ghost h-9 px-3">Close</button>
+    </div>
+    <div id="icon-picker-grid" class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-2 p-4 overflow-y-auto"></div>
+  </div>
+</div>

@@ -238,6 +238,13 @@ a {
   background: linear-gradient(90deg, var(--color-gold-dim), var(--color-gold));
 }
 
+/* Small UI icons can look soft after browser resampling.
+   Prefer crisper scaling for portrait/weapon emblem badges. */
+.asset-icon {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
 .eyebrow {
   font-size: 0.78rem;
   font-weight: 700;
@@ -360,7 +367,8 @@ a {
   color: var(--color-ink);
   font-size: 0.76rem;
   line-height: 1.35;
-  box-shadow: 0 12px 30px oklch(0 0 0 / 0.35), inset 0 1px 0 color-mix(in oklab, var(--color-gold) 16%, transparent);
+  box-shadow: 0 12px 30px oklch(0 0 0 / 0.35), inset 0 1px 0
+    color-mix(in oklab, var(--color-gold) 16%, transparent);
   pointer-events: none;
   white-space: normal;
   backdrop-filter: blur(10px);
@@ -369,4 +377,3 @@ a {
 .ui-tooltip.hidden {
   display: none;
 }
-

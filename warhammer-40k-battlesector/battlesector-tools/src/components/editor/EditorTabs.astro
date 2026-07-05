@@ -1,0 +1,36 @@
+---
+/**
+ * Shared tab bar for the local editor suite. DEV-only pages, so labels are
+ * plain English (no i18n needed for a curator tool).
+ */
+interface Props {
+  active: 'hub' | 'units' | 'weapons' | 'abilities';
+}
+const { active } = Astro.props;
+
+const tabs = [
+  { key: 'hub', href: '/editor', label: 'Overview' },
+  { key: 'units', href: '/editor/units', label: 'Units' },
+  { key: 'weapons', href: '/editor/weapons', label: 'Weapons' },
+  { key: 'abilities', href: '/editor/abilities', label: 'Abilities' },
+] as const;
+---
+
+<nav class="flex flex-wrap gap-1.5 mb-6 border-b border-[var(--color-border)] pb-3">
+  {tabs.map((t) => (
+    <a
+      href={t.href}
+      class:list={[
+        'px-3.5 py-2 rounded-lg text-sm font-semibold transition-colors',
+        active === t.key
+          ? 'text-[var(--color-gold)] bg-[color-mix(in_oklab,var(--color-gold)_14%,transparent)] ring-1 ring-[color-mix(in_oklab,var(--color-gold)_38%,transparent)]'
+          : 'text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:bg-[var(--color-elevated)]',
+      ]}
+    >
+      {t.label}
+    </a>
+  ))}
+  <span class="ml-auto self-center text-xs text-[var(--color-faint)]">
+    Saves write directly to <code>src/data/*.json</code>
+  </span>
+</nav>

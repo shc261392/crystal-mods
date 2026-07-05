@@ -1,5 +1,6 @@
 ---
 import Nav from '../components/Nav.astro';
+import buildMeta from '../data/build-meta.json';
 import '../styles/global.css';
 
 interface Props {
@@ -75,6 +76,7 @@ const fullTitle = title === 'Battlesector Tools' ? title : `${title} · Battlese
     <main class="container-page py-8 md:py-10 fade-up">
       <slot />
     </main>
+    <slot name="modals" />
     <footer class="border-t border-[var(--color-border)] mt-16">
       <div class="container-page py-8 text-sm text-[var(--color-faint)] flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
         <p>
@@ -89,6 +91,11 @@ const fullTitle = title === 'Battlesector Tools' ? title : `${title} · Battlese
           Not affiliated.
           </span>
         </p>
+        <nav class="flex items-center gap-4 shrink-0">
+          <a href="/privacy" class="hover:text-[var(--color-gold-dim)] transition-colors" data-i18n-ui="footer.privacy">Privacy</a>
+          <a href="mailto:shadowevor@proton.me" class="hover:text-[var(--color-gold-dim)] transition-colors" data-i18n-ui="footer.contact">Contact</a>
+          <span class="text-[var(--color-faint)] tabular-nums" title="Build version">v{buildMeta.version}+{buildMeta.hash}</span>
+        </nav>
       </div>
     </footer>
 

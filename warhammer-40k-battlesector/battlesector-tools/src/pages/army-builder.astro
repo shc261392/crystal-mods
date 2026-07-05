@@ -1,19 +1,14 @@
 ---
-import Base from '../layouts/Base.astro';
-import Tooltip from '../components/Tooltip.astro';
 import UnitSplitCard from '../components/UnitSplitCard.astro';
-import { factions, roles, units } from '../lib/data';
-import { UNIT_TAG_TOOLTIPS } from '../lib/tag-tooltips';
+import UnitFilterFields from '../components/filters/UnitFilterFields.astro';
+import Base from '../layouts/Base.astro';
+import { factions, units } from '../lib/data';
 import { getFactionEmblem } from '../scripts/images';
 
 // Single-faction army: faction picker mirrors the unit browser's filter pills.
 const factionPills = factions
   .filter((f) => units.some((u) => u.faction === f.id))
   .sort((a, b) => a.id - b.id);
-const roleNames = [...roles]
-  .sort((a, b) => a.sort - b.sort)
-  .map((r) => r.name)
-  .filter((n) => units.some((u) => u.roleName === n));
 function tierRank(roleName: string): number {
   if (roleName === 'HQ') return 0;
   if (roleName === 'Elite') return 1;
@@ -26,7 +21,6 @@ function tierRank(roleName: string): number {
 const sortedUnits = [...units].sort(
   (a, b) => tierRank(a.roleName) - tierRank(b.roleName) || a.name.localeCompare(b.name),
 );
-
 ---
 
 <Base
@@ -37,10 +31,6 @@ const sortedUnits = [...units].sort(
   <header class="mb-6">
     <p class="eyebrow mb-2" data-i18n-ui="common.tool">Tool</p>
     <h1 class="text-3xl md:text-4xl font-black" data-i18n-ui="nav.armyBuilder">Army Builder</h1>
-    <p class="mt-2 text-[var(--color-muted)] max-w-2xl">
-      Add units, adjust quantities and watch your point total update live. Your
-      list is saved in this browser and can be shared with a link.
-    </p>
   </header>
 
   <div class="grid gap-4 lg:grid-cols-[1fr_20rem]">
@@ -76,67 +66,13 @@ const sortedUnits = [...units].sort(
             autocomplete="off"
           />
         </div>
-        <div>
-          <label class="label block mb-1.5" for="unit-sort" data-i18n-ui="common.sort">Sort</label>
-          <select id="unit-sort" class="select">
-            <option value="tier-name">Tier (HQ→Troop), Name (A–Z)</option>
-            <option value="name">Name (A–Z)</option>
-            <option value="name-desc">Name (Z–A)</option>
-            <option value="points-desc">Points (high→low)</option>
-            <option value="points-asc">Points (low→high)</option>
-            <option value="hp-desc">Health (high→low)</option>
-            <option value="hp-asc">Health (low→high)</option>
-            <option value="armor-desc">Armor (high→low)</option>
-            <option value="armor-asc">Armor (low→high)</option>
-            <option value="move-desc">Movement (high→low)</option>
-            <option value="move-asc">Movement (low→high)</option>
-          </select>
-        </div>
-        <div>
-          <label class="label block mb-1.5" for="unit-role" data-i18n-ui="common.role">Role</label>
-          <select id="unit-role" class="select">
-            <option value="" data-i18n-ui="units.filter.allRoles">All roles</option>
-            {roleNames.map((r) => {
-              const sample = units.find((u) => u.roleName === r);
-              return (
-                <option value={r} data-role-id={sample?.role ?? ''}>
-                  {r}
-                </option>
-              );
-            })}
-          </select>
-        </div>
-        <div>
-          <label class="label inline-flex items-center gap-2 cursor-pointer select-none" for="show-campaign-units">
-            <input id="show-campaign-units" type="checkbox" class="accent-[var(--color-gold)]" />
-            <span>Show campaign units</span>
-          </label>
-        </div>
-        <div>
-          <p class="label mb-1.5">Tags</p>
-          <div id="army-unit-tag-filter" class="flex flex-wrap gap-2">
-            <button type="button" class="chip cursor-pointer" data-tag="hq">
-              <Tooltip text={UNIT_TAG_TOOLTIPS.hq}><span>HQ</span></Tooltip>
-            </button>
-            <button type="button" class="chip cursor-pointer" data-tag="large">
-              <Tooltip text={UNIT_TAG_TOOLTIPS.large}><span data-i18n-ui="common.large">Large</span></Tooltip>
-            </button>
-            <button type="button" class="chip cursor-pointer" data-tag="campaign">
-              <Tooltip text={UNIT_TAG_TOOLTIPS.campaignOnly}><span data-i18n-ui="common.campaignOnly">Campaign only</span></Tooltip>
-            </button>
-            <button type="button" class="chip cursor-pointer" data-tag="melee-reaction">
-              <Tooltip text={UNIT_TAG_TOOLTIPS.meleeReaction}><span data-i18n-ui="unitDetail.tag.meleeReaction">Melee Reaction</span></Tooltip>
-            </button>
-            <button type="button" class="chip cursor-pointer" data-tag="fallback">
-              <Tooltip text={UNIT_TAG_TOOLTIPS.fallback}><span data-i18n-ui="unitDetail.tag.canFallBack">Can Fall Back</span></Tooltip>
-            </button>
-          </div>
-        </div>
+        <UnitFilterFields roleId="unit-role" sortId="unit-sort" campaignId="show-campaign-units" tagFilterId="army-unit-tag-filter" />
         <div id="unit-grid" class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 w-full min-w-0 max-w-full max-h-[32rem] overflow-y-auto pr-1">
           {sortedUnits.map((u) => {
             return (
               <UnitSplitCard
                 unit={u}
+                variant="wide"
                 className="unit-pick-card text-left w-full cursor-pointer"
                 dataAttrs={{
                   'data-unit-id': u.id,

@@ -1,0 +1,82 @@
+---
+import { roles, units } from '../../lib/data';
+import { UNIT_TAG_TOOLTIPS } from '../../lib/tag-tooltips';
+// Shared unit filter fields (role, sort, campaign toggle, tag chips) used by the
+// Units browser and the Army Builder so the two stay DRY. The Army Builder's
+// stacked layout is the base. Element IDs are passed in per page because each
+// page's client script wires them to its own behaviour.
+import Tooltip from '../Tooltip.astro';
+
+interface Props {
+  roleId: string;
+  sortId: string;
+  campaignId: string;
+  tagFilterId: string;
+}
+
+const { roleId, sortId, campaignId, tagFilterId } = Astro.props as Props;
+
+const roleNames = [...roles]
+  .sort((a, b) => a.sort - b.sort)
+  .map((r) => r.name)
+  .filter((n) => units.some((u) => u.roleName === n));
+---
+
+<div class="grid gap-3">
+  <div class="grid gap-3 sm:grid-cols-2">
+    <div>
+      <label class="label block mb-1.5" for={roleId} data-i18n-ui="common.role">Role</label>
+      <select id={roleId} class="select w-full">
+        <option value="" data-i18n-ui="units.filter.allRoles">All roles</option>
+        {roleNames.map((r) => {
+          const sample = units.find((u) => u.roleName === r);
+          return (
+            <option value={r} data-role-id={sample?.role ?? ''}>{r}</option>
+          );
+        })}
+      </select>
+    </div>
+    <div>
+      <label class="label block mb-1.5" for={sortId} data-i18n-ui="common.sort">Sort</label>
+      <select id={sortId} class="select w-full">
+        <option value="tier-name">Tier (HQ→Troop), Name (A–Z)</option>
+        <option value="name" data-i18n-ui="units.sort.name">Name (A–Z)</option>
+        <option value="name-desc">Name (Z–A)</option>
+        <option value="points-desc" data-i18n-ui="units.sort.pointsDesc">Points (high→low)</option>
+        <option value="points-asc" data-i18n-ui="units.sort.pointsAsc">Points (low→high)</option>
+        <option value="hp-desc" data-i18n-ui="units.sort.hpDesc">Health (high→low)</option>
+        <option value="hp-asc">Health (low→high)</option>
+        <option value="armor-desc" data-i18n-ui="units.sort.armorDesc">Armor (high→low)</option>
+        <option value="armor-asc">Armor (low→high)</option>
+        <option value="move-desc" data-i18n-ui="units.sort.moveDesc">Movement (high→low)</option>
+        <option value="move-asc">Movement (low→high)</option>
+      </select>
+    </div>
+  </div>
+
+  <label class="label inline-flex items-center gap-2 cursor-pointer select-none" for={campaignId}>
+    <input id={campaignId} type="checkbox" class="accent-[var(--color-gold)]" />
+    <span>Show campaign units</span>
+  </label>
+
+  <div>
+    <p class="label mb-1.5">Tags</p>
+    <div id={tagFilterId} class="flex flex-wrap gap-2">
+      <button type="button" class="chip cursor-pointer" data-tag="hq">
+        <Tooltip text={UNIT_TAG_TOOLTIPS.hq}><span>HQ</span></Tooltip>
+      </button>
+      <button type="button" class="chip cursor-pointer" data-tag="large">
+        <Tooltip text={UNIT_TAG_TOOLTIPS.large}><span data-i18n-ui="common.large">Large</span></Tooltip>
+      </button>
+      <button type="button" class="chip cursor-pointer" data-tag="campaign">
+        <Tooltip text={UNIT_TAG_TOOLTIPS.campaignOnly}><span data-i18n-ui="common.campaignOnly">Campaign only</span></Tooltip>
+      </button>
+      <button type="button" class="chip cursor-pointer" data-tag="melee-reaction">
+        <Tooltip text={UNIT_TAG_TOOLTIPS.meleeReaction}><span data-i18n-ui="unitDetail.tag.meleeReaction">Melee Reaction</span></Tooltip>
+      </button>
+      <button type="button" class="chip cursor-pointer" data-tag="fallback">
+        <Tooltip text={UNIT_TAG_TOOLTIPS.fallback}><span data-i18n-ui="unitDetail.tag.canFallBack">Can Fall Back</span></Tooltip>
+      </button>
+    </div>
+  </div>
+</div>

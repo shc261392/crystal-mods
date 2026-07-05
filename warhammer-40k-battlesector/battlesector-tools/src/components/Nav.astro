@@ -1,6 +1,8 @@
 ---
 import { locales } from '../lib/data';
 
+// The Editor Suite is a local-only curation tool — never expose it in
+// production builds (it is also stripped from the deploy output).
 const links = [
   { href: '/units', label: 'Units', key: 'nav.units' },
   { href: '/weapons/', label: 'Weapons', key: 'nav.weapons' },
@@ -8,6 +10,7 @@ const links = [
   { href: '/calculator', label: 'Calculator', key: 'nav.calculator' },
   { href: '/compare', label: 'Compare', key: 'nav.compare' },
   { href: '/command-abilities', label: 'Command HQ' },
+  ...(import.meta.env.DEV ? [{ href: '/editor', label: 'Editor' }] : []),
   { href: '/hq-upgrades', label: 'Crusade Data (Experimental)' },
 ];
 

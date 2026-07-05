@@ -1,0 +1,13 @@
+---
+interface Props {
+  field: string;
+  label: string;
+  checked: boolean;
+}
+const { field, label, checked } = Astro.props;
+---
+
+<label class="inline-flex items-center gap-2 cursor-pointer select-none text-sm">
+  <input type="checkbox" class="accent-[var(--color-gold)]" data-field={field} checked={checked} />
+  <span>{label}</span>
+</label>

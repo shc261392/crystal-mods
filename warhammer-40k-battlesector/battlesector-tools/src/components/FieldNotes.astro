@@ -1,0 +1,30 @@
+---
+/**
+ * Consistent display for curated player field notes (play-test observations
+ * that are not part of the extracted game data). Renders nothing when empty.
+ */
+interface Props {
+  note: string | undefined;
+  compact?: boolean;
+}
+const { note, compact = false } = Astro.props;
+const text = note?.trim();
+---
+
+{text && (
+  <aside
+    class:list={[
+      'rounded-lg border-l-4 bg-[color-mix(in_oklab,var(--color-gold)_10%,transparent)] border-[var(--color-gold)]',
+      compact ? 'p-2.5' : 'p-3.5',
+    ]}
+  >
+    <div class="flex items-center gap-1.5 mb-1">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M10 2v7.5L4.2 18.3A2 2 0 0 0 6 21h12a2 2 0 0 0 1.8-2.7L14 9.5V2"/>
+        <path d="M8.5 2h7"/>
+      </svg>
+      <span class="text-[11px] font-bold uppercase tracking-wide text-[var(--color-gold-dim)]" data-i18n-ui="fieldNotes.label">Field notes</span>
+    </div>
+    <p class="text-sm text-[var(--color-muted)] whitespace-pre-line">{text}</p>
+  </aside>
+)}

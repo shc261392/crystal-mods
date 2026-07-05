@@ -140,9 +140,10 @@ export function getUnitPortrait(unitName: string, portraitKey?: string): string 
   return null;
 }
 
-/** Icon used to denote a weapon's attack type (melee vs ranged/ballistic). */
-export function getWeaponTypeIcon(isMelee: boolean): string | null {
-  return getImageUrl('units', isMelee ? 'MeleeDamageIcon' : 'BalisticDamageIcon');
+/** Icon used to denote a weapon's attack type. Only melee vs ranged art exists,
+ * so flame/artillery/ballistic all share the ballistic icon. */
+export function getWeaponTypeIcon(weaponType: string): string | null {
+  return getImageUrl('units', weaponType === 'melee' ? 'MeleeDamageIcon' : 'BalisticDamageIcon');
 }
 
 /** Resolve a weapon's in-game icon (the UI_WPN_* sprite) by its icon key. */

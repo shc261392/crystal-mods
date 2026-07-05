@@ -1,184 +1,30 @@
 ---
-import Tooltip from './Tooltip.astro';
-import { UNIT_TAG_TOOLTIPS } from '../lib/tag-tooltips';
 import type { Unit } from '../lib/types';
-import { getFactionEmblem, getUnitPortrait } from '../scripts/images';
+import UnitSplitCardBody from './UnitSplitCardBody.astro';
 
 interface Props {
   unit: Unit;
   href?: string;
   className?: string;
+  variant?: 'tall' | 'wide';
   dataAttrs?: Record<string, string | number | boolean | null | undefined>;
 }
 
-const { unit, href, className = '', dataAttrs = {} } = Astro.props as Props;
+const { unit, href, className = '', variant = 'tall', dataAttrs = {} } = Astro.props as Props;
 
-function tierMeta(roleName: string, fallbackColor: string): { label: string; bg: string; ink: string } {
-  if (roleName === 'HQ') return { label: 'HQ', bg: '#d4af37', ink: '#1b1206' };
-  if (roleName === 'Elite') return { label: 'Elite', bg: '#7e57c2', ink: '#f8f6ff' };
-  if (roleName === 'Heavy Support') return { label: 'Heavy', bg: '#3b82f6', ink: '#f3f8ff' };
-  if (roleName === 'Fast Attack' || roleName === 'Flyer') return { label: 'Fast', bg: '#22c55e', ink: '#f4fff7' };
-  if (roleName === 'Troop') return { label: 'Troop', bg: '#dc2626', ink: '#fff6f6' };
-  return { label: roleName, bg: fallbackColor, ink: '#f8f8f8' };
-}
-
-function hpBreakdown(total: number, perModel: number, models: number): string {
-  return models > 1 ? `${total} (${perModel} x ${models})` : `${total}`;
-}
-
-const thumb = getUnitPortrait(unit.name, unit.portrait) ?? getFactionEmblem(unit.faction);
-const tier = tierMeta(unit.roleName, unit.roleColor);
 const attrs = Object.fromEntries(
   Object.entries(dataAttrs).filter(([, value]) => value !== undefined && value !== null),
 );
+
+const cardClass = `unit-card surface surface-hover block p-0 overflow-hidden ${variant === 'wide' ? 'min-h-[14rem]' : 'min-h-[16rem]'} ${className}`;
 ---
 
 {href ? (
-  <a href={href} class={`unit-card surface surface-hover block p-0 overflow-hidden min-h-[16.5rem] ${className}`} {...attrs}>
-    <div class="grid h-full grid-cols-[1fr_1fr]">
-      <div class="p-3 flex flex-col gap-2 bg-[var(--color-base)] border-r border-[var(--color-border)]">
-        <div class="w-14 h-14 rounded-lg grid place-items-center border border-black/25 p-1 shrink-0" style={`background:${tier.bg}; color:${tier.ink}`}>
-          {thumb ? (
-            <img src={thumb} alt="" width="56" height="56" loading="lazy" class="w-full h-full rounded object-contain" />
-          ) : (
-            <div class="w-full h-full rounded grid place-items-center font-black text-lg" aria-hidden="true">{unit.factionName.slice(0, 1)}</div>
-          )}
-        </div>
-        <h3 class="font-extrabold leading-tight text-sm line-clamp-2" data-i18n-unit={unit.id} data-i18n-fallback={unit.name}>{unit.name}</h3>
-        <p class="text-[11px] leading-tight text-[var(--color-muted)]" data-i18n-faction={unit.faction} data-i18n-fallback={unit.factionName}>{unit.factionName}</p>
-        <p class="text-[11px] font-bold uppercase tracking-wide" style={`color:${tier.bg}`}>{tier.label}</p>
-        <div class="mt-auto flex flex-wrap gap-1.5">
-          {unit.isLarge && (
-            <Tooltip text={UNIT_TAG_TOOLTIPS.large}>
-              <span class="chip !py-0.5 !px-1.5 text-[10px] !bg-black/20 !border-black/25 !text-inherit" data-i18n-ui="common.large">Large</span>
-            </Tooltip>
-          )}
-          {unit.campaignOnly && (
-            <Tooltip text={UNIT_TAG_TOOLTIPS.campaignOnly}>
-              <span class="chip !py-0.5 !px-1.5 text-[10px] !bg-black/20 !border-black/25 !text-inherit" data-i18n-ui="common.campaignOnly">Campaign only</span>
-            </Tooltip>
-          )}
-        </div>
-      </div>
-
-      <div class="p-4 flex flex-col">
-        <div class="ml-auto text-right">
-          <p class="text-[10px] uppercase tracking-wide text-[var(--color-faint)]">Unit PTS</p>
-          <p class="font-black text-xl text-[var(--color-gold)] leading-none">{unit.pointCost}</p>
-        </div>
-
-        <dl class="mt-3 space-y-2">
-          <div class="flex items-center justify-between gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-2.5 py-1.5">
-            <dt class="text-xs inline-flex items-center gap-1.5" style="color:#39904B">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5 shrink-0" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.33-8.1C.65 10.03 1.62 5.8 5.2 4.5A5.3 5.3 0 0 1 12 6.3a5.3 5.3 0 0 1 6.8-1.8c3.58 1.3 4.55 5.53 2.53 8.4C18.7 16.65 12 21 12 21z"/></svg>
-              HP
-            </dt>
-            <dd class="text-sm font-bold tabular-nums">{hpBreakdown(unit.totalHealth, unit.maxHealth, unit.members)}</dd>
-          </div>
-          <div class="flex items-center justify-between gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-2.5 py-1.5">
-            <dt class="text-xs inline-flex items-center gap-1.5" style="color:#8F5B36">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5 shrink-0" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
-              AP
-            </dt>
-            <dd class="text-sm font-bold tabular-nums">{unit.maxActionPoints}</dd>
-          </div>
-          <div class="flex items-center justify-between gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-2.5 py-1.5">
-            <dt class="text-xs inline-flex items-center gap-1.5" title="Movement Point (Move)" style="color:#2662AA">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5 shrink-0" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-              MP
-            </dt>
-            <dd class="text-sm font-bold tabular-nums">{unit.maxMovementPoints}</dd>
-          </div>
-          <div class="flex items-center justify-between gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-2.5 py-1.5">
-            <dt class="text-xs inline-flex items-center gap-1.5" style="color:#6299B8">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5 shrink-0" aria-hidden="true"><path d="M12 3 5 6v6c0 5 3.5 7.8 7 9 3.5-1.2 7-4 7-9V6z"/></svg>
-              Armor
-            </dt>
-            <dd class="text-sm font-bold tabular-nums">{unit.armorProfile === 1 ? unit.armorFront : unit.armor}</dd>
-          </div>
-          <div class="flex items-center justify-between gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-2.5 py-1.5">
-            <dt class="text-xs inline-flex items-center gap-1.5" style="color:#9F895A">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5 shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="1.5"/></svg>
-              Dodge
-            </dt>
-            <dd class="text-sm font-bold tabular-nums">{unit.evasion}</dd>
-          </div>
-        </dl>
-      </div>
-    </div>
+  <a href={href} class={cardClass} {...attrs}>
+    <UnitSplitCardBody unit={unit} variant={variant} />
   </a>
 ) : (
-  <div class={`unit-card surface surface-hover block p-0 overflow-hidden min-h-[16.5rem] ${className}`} role="button" tabindex="0" aria-pressed="false" {...attrs}>
-    <div class="grid h-full grid-cols-[1fr_1fr]">
-      <div class="p-3 flex flex-col gap-2 bg-[var(--color-base)] border-r border-[var(--color-border)]">
-        <div class="w-14 h-14 rounded-lg grid place-items-center border border-black/25 p-1 shrink-0" style={`background:${tier.bg}; color:${tier.ink}`}>
-          {thumb ? (
-            <img src={thumb} alt="" width="56" height="56" loading="lazy" class="w-full h-full rounded object-contain" />
-          ) : (
-            <div class="w-full h-full rounded grid place-items-center font-black text-lg" aria-hidden="true">{unit.factionName.slice(0, 1)}</div>
-          )}
-        </div>
-        <h3 class="font-extrabold leading-tight text-sm line-clamp-2" data-i18n-unit={unit.id} data-i18n-fallback={unit.name}>{unit.name}</h3>
-        <p class="text-[11px] leading-tight text-[var(--color-muted)]" data-i18n-faction={unit.faction} data-i18n-fallback={unit.factionName}>{unit.factionName}</p>
-        <p class="text-[11px] font-bold uppercase tracking-wide" style={`color:${tier.bg}`}>{tier.label}</p>
-        <div class="mt-auto flex flex-wrap gap-1.5">
-          {unit.isLarge && (
-            <Tooltip text={UNIT_TAG_TOOLTIPS.large}>
-              <span class="chip !py-0.5 !px-1.5 text-[10px] !bg-black/20 !border-black/25 !text-inherit" data-i18n-ui="common.large">Large</span>
-            </Tooltip>
-          )}
-          {unit.campaignOnly && (
-            <Tooltip text={UNIT_TAG_TOOLTIPS.campaignOnly}>
-              <span class="chip !py-0.5 !px-1.5 text-[10px] !bg-black/20 !border-black/25 !text-inherit" data-i18n-ui="common.campaignOnly">Campaign only</span>
-            </Tooltip>
-          )}
-        </div>
-      </div>
-
-      <div class="p-4 flex flex-col">
-        <div class="ml-auto text-right">
-          <p class="text-[10px] uppercase tracking-wide text-[var(--color-faint)]">Unit PTS</p>
-          <p class="font-black text-xl text-[var(--color-gold)] leading-none">{unit.pointCost}</p>
-        </div>
-
-        <dl class="mt-3 space-y-2">
-          <div class="flex items-center justify-between gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-2.5 py-1.5">
-            <dt class="text-xs inline-flex items-center gap-1.5" style="color:#39904B">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5 shrink-0" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.33-8.1C.65 10.03 1.62 5.8 5.2 4.5A5.3 5.3 0 0 1 12 6.3a5.3 5.3 0 0 1 6.8-1.8c3.58 1.3 4.55 5.53 2.53 8.4C18.7 16.65 12 21 12 21z"/></svg>
-              HP
-            </dt>
-            <dd class="text-sm font-bold tabular-nums">{hpBreakdown(unit.totalHealth, unit.maxHealth, unit.members)}</dd>
-          </div>
-          <div class="flex items-center justify-between gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-2.5 py-1.5">
-            <dt class="text-xs inline-flex items-center gap-1.5" style="color:#8F5B36">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5 shrink-0" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
-              AP
-            </dt>
-            <dd class="text-sm font-bold tabular-nums">{unit.maxActionPoints}</dd>
-          </div>
-          <div class="flex items-center justify-between gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-2.5 py-1.5">
-            <dt class="text-xs inline-flex items-center gap-1.5" title="Movement Point (Move)" style="color:#2662AA">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5 shrink-0" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-              MP
-            </dt>
-            <dd class="text-sm font-bold tabular-nums">{unit.maxMovementPoints}</dd>
-          </div>
-          <div class="flex items-center justify-between gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-2.5 py-1.5">
-            <dt class="text-xs inline-flex items-center gap-1.5" style="color:#6299B8">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5 shrink-0" aria-hidden="true"><path d="M12 3 5 6v6c0 5 3.5 7.8 7 9 3.5-1.2 7-4 7-9V6z"/></svg>
-              Armor
-            </dt>
-            <dd class="text-sm font-bold tabular-nums">{unit.armorProfile === 1 ? unit.armorFront : unit.armor}</dd>
-          </div>
-          <div class="flex items-center justify-between gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-2.5 py-1.5">
-            <dt class="text-xs inline-flex items-center gap-1.5" style="color:#9F895A">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5 shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="1.5"/></svg>
-              Dodge
-            </dt>
-            <dd class="text-sm font-bold tabular-nums">{unit.evasion}</dd>
-          </div>
-        </dl>
-      </div>
-    </div>
+  <div class={cardClass} role="button" tabindex="0" aria-pressed="false" {...attrs}>
+    <UnitSplitCardBody unit={unit} variant={variant} />
   </div>
 )}

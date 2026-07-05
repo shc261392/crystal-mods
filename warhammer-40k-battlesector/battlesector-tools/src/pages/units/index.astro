@@ -1,9 +1,8 @@
 ---
-import Base from '../../layouts/Base.astro';
-import Tooltip from '../../components/Tooltip.astro';
 import UnitSplitCard from '../../components/UnitSplitCard.astro';
-import { factions, roles, unitSlug, units } from '../../lib/data';
-import { UNIT_TAG_TOOLTIPS } from '../../lib/tag-tooltips';
+import UnitFilterFields from '../../components/filters/UnitFilterFields.astro';
+import Base from '../../layouts/Base.astro';
+import { factions, unitSlug, units } from '../../lib/data';
 import { getFactionEmblem } from '../../scripts/images';
 
 // Faction buttons ordered by in-game faction id: Blood Angels (0) leftmost,
@@ -11,10 +10,6 @@ import { getFactionEmblem } from '../../scripts/images';
 const factionButtons = factions
   .filter((f) => units.some((u) => u.faction === f.id))
   .sort((a, b) => a.id - b.id);
-const roleNames = [...roles]
-  .sort((a, b) => a.sort - b.sort)
-  .map((r) => r.name)
-  .filter((n) => units.some((u) => u.roleName === n));
 
 function tierRank(roleName: string): number {
   if (roleName === 'HQ') return 0;
@@ -28,7 +23,6 @@ function tierRank(roleName: string): number {
 const sorted = [...units].sort(
   (a, b) => tierRank(a.roleName) - tierRank(b.roleName) || a.name.localeCompare(b.name),
 );
-
 ---
 
 <Base
@@ -39,17 +33,15 @@ const sorted = [...units].sort(
   <header class="mb-6">
     <p class="eyebrow mb-2" data-i18n-ui="common.database">Database</p>
     <h1 class="text-3xl md:text-4xl font-black" data-i18n-ui="nav.units">Units</h1>
-    <p class="mt-2 text-[var(--color-muted)]" data-i18n-ui="units.header.subtitle">
-      Browse unit stats, roles, and wargear to plan your next deployment.
-    </p>
   </header>
 
   <!-- Controls -->
-  <div class="surface p-4 mb-6 sticky top-[4.5rem] z-30">
-    <div id="faction-bar" class="flex flex-wrap gap-1.5 pb-1.5 mb-3" role="tablist" aria-label="Faction">
+  <div class="surface p-3 md:p-4 mb-6 relative md:sticky md:top-[4.5rem] md:z-30">
+    <!-- Faction bar: all factions visible, wraps onto multiple rows (no scroll). -->
+    <div id="faction-bar" class="flex flex-wrap gap-1.5 mb-2 md:mb-3" role="tablist" aria-label="Faction">
       <button
         type="button"
-        class="faction-btn shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-semibold border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:border-[var(--color-border-strong)] whitespace-nowrap transition-colors"
+        class="faction-btn shrink-0 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs md:text-sm font-semibold border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:border-[var(--color-border-strong)] whitespace-nowrap transition-colors"
         data-faction=""
         data-faction-id=""
         role="tab"
@@ -59,74 +51,47 @@ const sorted = [...units].sort(
       {factionButtons.map((f) => (
         <button
           type="button"
-          class="faction-btn shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-semibold border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:border-[var(--color-border-strong)] whitespace-nowrap transition-colors"
+          class="faction-btn shrink-0 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs md:text-sm font-semibold border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:border-[var(--color-border-strong)] whitespace-nowrap transition-colors"
           data-faction={f.name}
           data-faction-id={f.id}
           role="tab"
         >
           {getFactionEmblem(f.id) && (
-            <img src={getFactionEmblem(f.id)} alt="" width="16" height="16" loading="lazy" class="w-4 h-4 object-contain shrink-0" />
+            <img src={getFactionEmblem(f.id)} alt="" width="16" height="16" loading="lazy" class="w-3.5 h-3.5 object-contain shrink-0" />
           )}
           <span data-i18n-faction={f.id} data-i18n-fallback={f.name}>{f.name}</span>
         </button>
       ))}
     </div>
-    <div class="grid gap-3 md:grid-cols-[1fr_auto_auto] md:items-end">
-      <div>
-        <label class="label block mb-1.5" for="q" data-i18n-ui="common.search">Search</label>
+
+    <!-- Search + mobile filter toggle -->
+    <div class="flex items-end gap-2">
+      <div class="flex-1 min-w-0">
+        <label class="label mb-1.5 sr-only md:not-sr-only md:block" for="q" data-i18n-ui="common.search">Search</label>
         <input id="q" class="input" type="search" placeholder="Search by name…" data-i18n-ui-placeholder="common.searchPlaceholder" autocomplete="off" />
       </div>
-      <div>
-        <label class="label block mb-1.5" for="role" data-i18n-ui="common.role">Role</label>
-        <select id="role" class="select min-w-[9rem]">
-          <option value="" data-i18n-ui="units.filter.allRoles">All roles</option>
-          {roleNames.map((r) => {
-            const sample = units.find((u) => u.roleName === r);
-            return (
-              <option value={r} data-role-id={sample?.role ?? ''}>
-                {r}
-              </option>
-            );
-          })}
-        </select>
-      </div>
-      <div>
-        <label class="label block mb-1.5" for="sort" data-i18n-ui="common.sort">Sort</label>
-        <select id="sort" class="select min-w-[10rem]">
-          <option value="tier-name">Tier (HQ→Troop), Name (A–Z)</option>
-          <option value="name" data-i18n-ui="units.sort.name">Name (A–Z)</option>
-          <option value="name-desc">Name (Z–A)</option>
-          <option value="points-desc" data-i18n-ui="units.sort.pointsDesc">Points (high→low)</option>
-          <option value="points-asc" data-i18n-ui="units.sort.pointsAsc">Points (low→high)</option>
-          <option value="hp-desc" data-i18n-ui="units.sort.hpDesc">Health (high→low)</option>
-          <option value="hp-asc">Health (low→high)</option>
-          <option value="armor-desc" data-i18n-ui="units.sort.armorDesc">Armor (high→low)</option>
-          <option value="armor-asc">Armor (low→high)</option>
-          <option value="move-desc" data-i18n-ui="units.sort.moveDesc">Movement (high→low)</option>
-          <option value="move-asc">Movement (low→high)</option>
-        </select>
+      <button
+        id="filters-toggle"
+        type="button"
+        class="shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold border border-[var(--color-border)] text-[var(--color-ink)] hover:border-[var(--color-border-strong)] transition-colors"
+        aria-expanded="false"
+        aria-controls="filters-body"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+        <span data-i18n-ui="common.filters">Filters</span>
+        <span id="filters-count-badge" class="hidden min-w-[1.25rem] h-5 px-1 inline-flex items-center justify-center rounded-full bg-[var(--color-gold)] text-[var(--color-void)] text-[11px] font-bold tabular-nums"></span>
+      </button>
+    </div>
+
+    <!-- Collapsible filter body. On mobile it floats as a dropdown overlay so
+         the persistent controls (faction bar + search) stay under ~1/5 of the
+         viewport; on md+ it expands inline. -->
+    <div id="filters-body" class="hidden absolute left-0 right-0 top-full z-40 mt-1 p-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-2xl max-h-[62vh] overflow-y-auto md:static md:z-auto md:mt-0 md:p-0 md:border-0 md:bg-transparent md:shadow-none md:max-h-none md:overflow-visible md:rounded-none">
+      <div class="mt-0 md:mt-3">
+        <UnitFilterFields roleId="role" sortId="sort" campaignId="show-campaign-units-browser" tagFilterId="unit-tag-filter" />
       </div>
     </div>
-    <div class="mt-3">
-      <p class="label mb-1.5">Tags</p>
-      <div id="unit-tag-filter" class="flex flex-wrap gap-2">
-        <button type="button" class="chip cursor-pointer" data-tag="hq">
-          <Tooltip text={UNIT_TAG_TOOLTIPS.hq}><span>HQ</span></Tooltip>
-        </button>
-        <button type="button" class="chip cursor-pointer" data-tag="large">
-          <Tooltip text={UNIT_TAG_TOOLTIPS.large}><span data-i18n-ui="common.large">Large</span></Tooltip>
-        </button>
-        <button type="button" class="chip cursor-pointer" data-tag="campaign">
-          <Tooltip text={UNIT_TAG_TOOLTIPS.campaignOnly}><span data-i18n-ui="common.campaignOnly">Campaign only</span></Tooltip>
-        </button>
-        <button type="button" class="chip cursor-pointer" data-tag="melee-reaction">
-          <Tooltip text={UNIT_TAG_TOOLTIPS.meleeReaction}><span data-i18n-ui="unitDetail.tag.meleeReaction">Melee Reaction</span></Tooltip>
-        </button>
-        <button type="button" class="chip cursor-pointer" data-tag="fallback">
-          <Tooltip text={UNIT_TAG_TOOLTIPS.fallback}><span data-i18n-ui="unitDetail.tag.canFallBack">Can Fall Back</span></Tooltip>
-        </button>
-      </div>
-    </div>
+
     <div class="mt-3 flex items-center justify-between">
       <p id="count" class="text-sm text-[var(--color-faint)]"></p>
       <button id="reset" type="button" class="text-sm font-semibold text-[var(--color-gold-dim)] hover:text-[var(--color-gold)]" data-i18n-ui="common.resetFilters">Reset filters</button>
@@ -139,6 +104,7 @@ const sorted = [...units].sort(
       return (
         <UnitSplitCard
           unit={u}
+          variant="tall"
           href={`/units/${unitSlug(u)}`}
           dataAttrs={{
             'data-name': u.name.toLowerCase(),
@@ -176,3 +142,18 @@ const sorted = [...units].sort(
     initUnitsBrowser();
   </script>
 </Base>
+
+<style>
+  /* Slim, unobtrusive scrollbar for the swipeable faction bar on mobile. */
+  .filter-scroll {
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+  .filter-scroll::-webkit-scrollbar {
+    height: 4px;
+  }
+  .filter-scroll::-webkit-scrollbar-thumb {
+    background: var(--color-border-strong);
+    border-radius: 9999px;
+  }
+</style>

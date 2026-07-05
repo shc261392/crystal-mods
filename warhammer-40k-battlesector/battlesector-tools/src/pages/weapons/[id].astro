@@ -1,9 +1,17 @@
 ---
-import Base from '../../layouts/Base.astro';
+import FieldNotes from '../../components/FieldNotes.astro';
 import Tooltip from '../../components/Tooltip.astro';
-import { critChance, damagePerHitAfterArmor, damageRange, grazeChance } from '../../lib/combat';
+import Base from '../../layouts/Base.astro';
+import {
+  critChance,
+  damagePerHitAfterArmor,
+  damageRange,
+  grazeChance,
+  splashDamage,
+} from '../../lib/combat';
 import { getWeapon, idFromSlug, unitSlug, units, weaponSlug, weapons } from '../../lib/data';
 import { WEAPON_TAG_TOOLTIPS } from '../../lib/tag-tooltips';
+import { resolveWeaponType, weaponTypeMeta } from '../../lib/weapon-display';
 import {
   getFactionEmblem,
   getStatIcon,
@@ -46,19 +54,25 @@ const carriers = units
   )
   .sort((a, b) => a.name.localeCompare(b.name));
 
-const typeIcon = getWeaponTypeIcon(weapon.isMelee);
+const typeIcon = getWeaponTypeIcon(resolveWeaponType(weapon));
 const weaponIcon = getWeaponPortrait(weapon.icon) ?? typeIcon;
+const wType = weaponTypeMeta(weapon);
+const splash = splashDamage(weapon);
 const HP_ICON = getStatIcon('health');
 const AP_ICON = getStatIcon('actionPoints');
 const MP_ICON = getStatIcon('movement');
 const ARMOR_ICON = getStatIcon('armor');
 const DODGE_ICON = getStatIcon('evasion');
 
-function tierMeta(roleName: string, fallbackColor: string): { label: string; bg: string; ink: string } {
+function tierMeta(
+  roleName: string,
+  fallbackColor: string,
+): { label: string; bg: string; ink: string } {
   if (roleName === 'HQ') return { label: 'HQ', bg: '#d4af37', ink: '#1b1206' };
   if (roleName === 'Elite') return { label: 'Elite', bg: '#7e57c2', ink: '#f8f6ff' };
   if (roleName === 'Heavy Support') return { label: 'Heavy', bg: '#3b82f6', ink: '#f3f8ff' };
-  if (roleName === 'Fast Attack' || roleName === 'Flyer') return { label: 'Fast', bg: '#22c55e', ink: '#f4fff7' };
+  if (roleName === 'Fast Attack' || roleName === 'Flyer')
+    return { label: 'Fast', bg: '#22c55e', ink: '#f4fff7' };
   if (roleName === 'Troop') return { label: 'Troop', bg: '#dc2626', ink: '#fff6f6' };
   return { label: roleName, bg: fallbackColor, ink: '#f8f8f8' };
 }
@@ -92,19 +106,19 @@ function iconTintStyle(color: string): string {
   <nav class="text-sm text-[var(--color-faint)] mb-5">
     <a href="/weapons/" class="hover:text-[var(--color-gold-dim)]" data-i18n-ui="nav.weapons">Weapons</a>
     <span class="mx-1.5">/</span>
-    <span class="text-[var(--color-muted)]" data-i18n-ui={weapon.isMelee ? 'common.melee' : 'common.ranged'}>{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
+    <span class="text-[var(--color-muted)]" data-i18n-ui={wType.i18nKey}>{wType.label}</span>
   </nav>
 
   <div class="panel-gilded p-6 md:p-8">
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
       <div class="flex items-center gap-4 min-w-0">
         {weaponIcon && (
-          <img src={weaponIcon} alt="" width="48" height="48" loading="lazy" class="w-12 h-12 shrink-0 object-contain rounded-lg bg-black/30 border border-[var(--color-border)] p-1.5" />
+          <img src={weaponIcon} alt="" width="48" height="48" loading="lazy" class="asset-icon w-12 h-12 shrink-0 object-contain rounded-lg bg-black/30 border border-[var(--color-border)] p-1.5" />
         )}
         <div class="min-w-0">
           <div class="flex flex-wrap items-center gap-2 mb-2">
-            <Tooltip text={weapon.isMelee ? WEAPON_TAG_TOOLTIPS.melee : WEAPON_TAG_TOOLTIPS.ranged}>
-              <span class="chip" data-i18n-ui={weapon.isMelee ? 'common.melee' : 'common.ranged'}>{weapon.isMelee ? 'Melee' : 'Ranged'}</span>
+            <Tooltip text={WEAPON_TAG_TOOLTIPS[wType.type]}>
+              <span class="chip" style={`color:${wType.color}`} data-i18n-ui={wType.i18nKey}>{wType.label}</span>
             </Tooltip>
             {weapon.pistol && (
               <Tooltip text={WEAPON_TAG_TOOLTIPS.pistol}>
@@ -119,7 +133,7 @@ function iconTintStyle(color: string): string {
             {weapon.impactType === 'splash' && (weapon.splashModels ?? 0) > 1 && (
               <Tooltip text={WEAPON_TAG_TOOLTIPS.splash}>
                 <span class="chip !text-[var(--color-plasma)]">
-                  <span data-i18n-ui="common.splash">Splash</span> ×{weapon.splashModels}
+                  <span data-i18n-ui="common.splash">Splash</span>
                 </span>
               </Tooltip>
             )}
@@ -145,6 +159,12 @@ function iconTintStyle(color: string): string {
           )}
           <p class="text-xs text-[var(--color-faint)] uppercase tracking-wide mt-1.5" data-i18n-ui="common.accuracy">Accuracy</p>
         </div>
+        {splash && (
+          <div class="text-center">
+            <p class="text-3xl font-black leading-none mt-1 text-[var(--color-toxin)] whitespace-nowrap">{splash.min}–{splash.max} <span class="text-xl">×{splash.models}</span></p>
+            <p class="text-xs text-[var(--color-faint)] uppercase tracking-wide mt-1.5" data-i18n-ui="weaponStat.splash">Splash</p>
+          </div>
+        )}
       </div>
     </div>
     <div class="mt-5 flex flex-wrap gap-2">
@@ -155,6 +175,18 @@ function iconTintStyle(color: string): string {
       <a href={`/calculator?weapon=${weapon.id}`} class="btn btn-primary" data-i18n-ui="weaponDetail.action.openInCalculator">Open in calculator</a>
     </div>
   </div>
+
+  {weapon.description && (
+    <section class="surface p-5 mt-4">
+      <p class="text-sm text-[var(--color-muted)] whitespace-pre-line">{weapon.description}</p>
+    </section>
+  )}
+
+  {weapon.notes && (
+    <section class="mt-4">
+      <FieldNotes note={weapon.notes} />
+    </section>
+  )}
 
   <div class="grid gap-4 md:grid-cols-2 mt-4">
     <!-- Critical chance vs armor -->

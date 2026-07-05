@@ -11,12 +11,18 @@ import Base from '../layouts/Base.astro';
   <header class="mb-6">
     <p class="eyebrow mb-2" data-i18n-ui="common.tool">Tool</p>
     <h1 class="text-3xl md:text-4xl font-black" data-i18n-ui="nav.calculator">Damage Calculator</h1>
-    <p class="mt-2 text-[var(--color-muted)] max-w-2xl">
-      Pick an attacking weapon and a target, or enter custom values. Damage is the
-      in-game range (min = 75% of max), then reduced by effective armor
-      (target armor − AP, minimum 0). Hit chance = accuracy − evasion.
-    </p>
   </header>
+
+  <!-- WIP disclaimer -->
+  <div class="mb-6 flex items-start gap-3 rounded-xl border border-[var(--color-gold-dim)]/50 bg-[color-mix(in_oklab,var(--color-gold)_10%,transparent)] p-4">
+    <svg class="w-5 h-5 shrink-0 text-[var(--color-gold)] mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+      <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+    </svg>
+    <p class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.wipBanner">
+      Work in progress: this calculator is still being refined. Some formulas are approximations, so results may differ from the actual in-game outcome.
+    </p>
+  </div>
 
   <!-- Mode toggle -->
   <div class="inline-flex gap-1 surface !p-1 mb-5" role="tablist" aria-label="Calculator mode">
@@ -33,6 +39,11 @@ import Base from '../layouts/Base.astro';
       <select id="attacker-unit" class="select mb-3"></select>
       <label class="label block mb-1.5" for="weapon" data-i18n-ui="common.weapon">Weapon</label>
       <select id="weapon" class="select mb-4"></select>
+
+      <label class="label inline-flex items-center gap-2 cursor-pointer select-none mb-4" for="show-campaign-units-calculator">
+        <input id="show-campaign-units-calculator" type="checkbox" class="accent-[var(--color-gold)]" />
+        <span>Show campaign units</span>
+      </label>
 
       <div class="grid grid-cols-2 gap-3">
         <div>
@@ -139,6 +150,10 @@ import Base from '../layouts/Base.astro';
           <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.expected">Expected (× hit %)</span>
           <span id="r-expected" class="text-lg font-bold tabular-nums text-[var(--color-ink)]">—</span>
         </div>
+        <div class="flex items-baseline justify-between pl-3">
+          <span class="text-xs text-[var(--color-faint)]">Reconstruction expected</span>
+          <span id="r-expected-model" class="text-base font-bold tabular-nums text-[var(--color-toxin)]">—</span>
+        </div>
         <div class="border-t border-[var(--color-border)] my-3"></div>
         <div class="flex items-baseline justify-between">
           <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.modelsKilledRaw">Models killed (raw)</span>
@@ -157,6 +172,21 @@ import Base from '../layouts/Base.astro';
           then expected damage applies hit chance and graze chance. Critical chance is shown
           separately; critical bonus damage is not included.
         </p>
+
+        <div class="mt-4 rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] p-3.5">
+          <div class="flex items-center justify-between gap-2">
+            <p class="text-sm font-semibold text-[var(--color-gold)]">Formula reconstruction card</p>
+            <button id="formula-copy-report" type="button" class="chip !py-0.5 !px-2 text-[11px]">Copy test report</button>
+          </div>
+          <label class="label block mt-2 mb-1" for="formula-model">Best-guess model</label>
+          <select id="formula-model" class="select text-sm">
+            <option value="floor-first">A · Floor-first chain (user-order style)</option>
+            <option value="post-armor-swing">B · Post-armor swing (weighted ranges)</option>
+            <option value="graze-null">C · Graze-null branch (grazes can be 0)</option>
+          </select>
+          <p id="formula-model-note" class="text-xs text-[var(--color-faint)] mt-2"></p>
+          <ol id="formula-steps" class="mt-2 space-y-1 text-xs text-[var(--color-muted)] list-decimal list-inside"></ol>
+        </div>
       </div>
       <button id="copy-link" type="button" class="btn w-full mt-5" data-url="" data-i18n-ui="common.copyShareableLink">
         Copy shareable link

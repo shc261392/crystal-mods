@@ -1,0 +1,22 @@
+---
+interface Props {
+  field: string;
+  label: string;
+  value: number | undefined;
+  step?: number;
+  min?: number;
+}
+const { field, label, value, step = 1, min = 0 } = Astro.props;
+---
+
+<label class="block">
+  <span class="block text-[11px] font-semibold uppercase tracking-wide text-[var(--color-faint)] mb-1">{label}</span>
+  <input
+    type="number"
+    class="input"
+    data-field={field}
+    step={step}
+    min={min}
+    value={value ?? ''}
+  />
+</label>

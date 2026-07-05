@@ -1,0 +1,106 @@
+---
+import BoolField from '../../components/editor/BoolField.astro';
+import EditorTabs from '../../components/editor/EditorTabs.astro';
+import IconField from '../../components/editor/IconField.astro';
+import IconPickerModal from '../../components/editor/IconPickerModal.astro';
+import NotesField from '../../components/editor/NotesField.astro';
+import NumField from '../../components/editor/NumField.astro';
+import Base from '../../layouts/Base.astro';
+import { allUnits } from '../../lib/data';
+import { buildIconCatalog, resolveIconUrl } from '../../lib/editor-icons';
+
+const catalog = await buildIconCatalog();
+const sorted = [...allUnits].sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<Base
+  title="Unit Editor"
+  description="Local-only editor for Battlesector unit stats, portraits, and notes."
+  path="/editor/units"
+>
+  <header class="mb-4">
+    <p class="eyebrow mb-2">Editor</p>
+    <h1 class="text-3xl md:text-4xl font-black">Unit Editor</h1>
+    <p class="mt-2 text-[var(--color-muted)] max-w-3xl text-sm">
+      Edit unit stats, portrait icon, and player field notes. Changes save
+      straight to <code>src/data/units.json</code>.
+    </p>
+  </header>
+
+  <EditorTabs active="units" />
+
+  <div class="surface p-4 mb-4 flex flex-wrap items-end gap-3">
+    <label class="flex-1 min-w-[240px]">
+      <span class="label block mb-1.5">Search</span>
+      <input id="editor-search" class="input" type="search" placeholder="Search by unit, faction, or role…" autocomplete="off" />
+    </label>
+    <span id="editor-count" class="text-sm text-[var(--color-faint)]"></span>
+  </div>
+
+  <div id="editor-list" class="space-y-4">
+    {sorted.map((u) => (
+      <article
+        data-editor-row
+        data-editor-target="unit"
+        data-editor-id={u.id}
+        data-search={`${u.id} ${u.name} ${u.factionName} ${u.roleName}`.toLowerCase()}
+        class="surface p-4"
+      >
+        <div class="flex items-center justify-between gap-3 mb-3">
+          <div class="flex items-center gap-2 min-w-0">
+            <span class="text-[var(--color-gold)] font-bold text-sm shrink-0">#{u.id}</span>
+            <h2 class="font-bold truncate">{u.name}</h2>
+            <span class="chip shrink-0">{u.factionName}</span>
+            <span class="chip shrink-0">{u.roleName}</span>
+            {u.hidden && <span class="chip shrink-0 !text-[var(--color-blood)]">Hidden</span>}
+          </div>
+        </div>
+
+        <div class="grid gap-4 lg:grid-cols-[220px_1fr]">
+          <div class="space-y-3">
+            <div>
+              <span class="block text-[11px] font-semibold uppercase tracking-wide text-[var(--color-faint)] mb-1">Portrait</span>
+              <IconField field="portrait" rowId={u.id} value={u.portrait} previewUrl={resolveIconUrl(u.portrait, 'units')} />
+            </div>
+            <label class="block">
+              <span class="block text-[11px] font-semibold uppercase tracking-wide text-[var(--color-faint)] mb-1">Name</span>
+              <input class="input" data-field="name" value={u.name} />
+            </label>
+            <div class="flex flex-wrap gap-3 pt-1">
+              <BoolField field="isLarge" label="Large" checked={u.isLarge} />
+              <BoolField field="campaignOnly" label="Campaign only" checked={Boolean(u.campaignOnly)} />
+              <BoolField field="canMeleeReact" label="Melee react" checked={u.canMeleeReact} />
+              <BoolField field="canFallback" label="Can fall back" checked={u.canFallback} />
+              <BoolField field="hidden" label="Hide from site" checked={Boolean(u.hidden)} />
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <div class="grid grid-cols-3 sm:grid-cols-4 gap-3">
+              <NumField field="pointCost" label="Points" value={u.pointCost} />
+              <NumField field="members" label="Models" value={u.members} />
+              <NumField field="maxHealth" label="HP / model" value={u.maxHealth} />
+              <NumField field="totalHealth" label="Total HP" value={u.totalHealth} />
+              <NumField field="evasion" label="Evasion" value={u.evasion} />
+              <NumField field="armor" label="Armor" value={u.armor} />
+              <NumField field="meleeAccuracy" label="Melee acc" value={u.meleeAccuracy} />
+              <NumField field="rangedAccuracyModifier" label="Ranged mod" value={u.rangedAccuracyModifier} />
+              <NumField field="maxActionPoints" label="Action pts" value={u.maxActionPoints} />
+              <NumField field="maxMovementPoints" label="Move pts" value={u.maxMovementPoints} />
+              <NumField field="armorFront" label="Armor F" value={u.armorFront} />
+              <NumField field="armorRear" label="Armor R" value={u.armorRear} />
+            </div>
+            <NotesField value={u.notes} />
+          </div>
+        </div>
+      </article>
+    ))}
+  </div>
+
+  <IconPickerModal slot="modals" catalog={catalog} />
+
+  <script>
+    import { initEntityEditor } from '../../scripts/editor/entity-editor';
+    initEntityEditor();
+  </script>
+</Base>

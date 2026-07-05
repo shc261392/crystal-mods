@@ -58,9 +58,28 @@ const buffs = buffsData as { attacker: Buff[]; target: Buff[] };
 const atkBuffById = new Map(buffs.attacker.map((b) => [String(b.id), b]));
 const tgtBuffById = new Map(buffs.target.map((b) => [String(b.id), b]));
 
-const weapons = weaponsData as Weapon[];
 // Mephrit Necrons (faction 4) is a hidden duplicate of Necrons.
-const units = (unitsData as Unit[]).filter((u) => u.faction !== 4);
+const allUnits = (unitsData as Unit[]).filter((u) => u.faction !== 4);
+const usedWeaponIds = new Set<number>();
+for (const u of allUnits) {
+  for (const slot of u.weaponSlots) {
+    for (const opt of slot.options) usedWeaponIds.add(opt.weaponId);
+  }
+}
+const weapons = (weaponsData as Weapon[]).filter((w) => usedWeaponIds.has(w.id));
+
+const CRIT_DAMAGE_MULT = 1.5;
+const GRAZE_DAMAGE_MULT = 0.25;
+
+type FormulaModelId = 'floor-first' | 'post-armor-swing' | 'graze-null';
+
+interface FormulaModelResult {
+  id: FormulaModelId;
+  label: string;
+  note: string;
+  steps: string[];
+  expected: number;
+}
 
 function $(id: string): HTMLInputElement {
   return document.getElementById(id) as HTMLInputElement;
@@ -107,6 +126,13 @@ export function initCalculator(): void {
   const tgtBuffSel = document.getElementById('tgt-buff') as HTMLSelectElement | null;
   const distance = $('distance');
   const rangeInfo = document.getElementById('range-info');
+  const formulaModelSel = document.getElementById('formula-model') as HTMLSelectElement | null;
+  const showCampaignUnits = document.getElementById(
+    'show-campaign-units-calculator',
+  ) as HTMLInputElement | null;
+  const formulaModelNote = document.getElementById('formula-model-note');
+  const formulaSteps = document.getElementById('formula-steps');
+  const formulaCopyReport = document.getElementById('formula-copy-report');
   const momFactionName = document.getElementById('mom-faction-name');
   const momentumInput = $('momentum');
   const momPassive = document.getElementById('mom-passive');
@@ -114,6 +140,19 @@ export function initCalculator(): void {
   const momNotes = document.getElementById('mom-notes');
   const atkBuffList = document.getElementById('atk-buff-list');
   const tgtBuffList = document.getElementById('tgt-buff-list');
+  const params = new URLSearchParams(location.search);
+  if (showCampaignUnits) {
+    showCampaignUnits.checked = params.get('campaign') === '1';
+    const attFromUrl = allUnits.find((u) => u.id === Number(params.get('attacker')));
+    const tgtFromUrl = allUnits.find((u) => u.id === Number(params.get('unit')));
+    if ((attFromUrl?.campaignOnly || tgtFromUrl?.campaignOnly) && !showCampaignUnits.checked) {
+      showCampaignUnits.checked = true;
+    }
+  }
+
+  function listedUnits(): Unit[] {
+    return showCampaignUnits?.checked ? allUnits : allUnits.filter((u) => !u.campaignOnly);
+  }
   // Stacking buffs/debuffs: multiple can be active on each side.
   const atkBuffIds: string[] = [];
   const tgtBuffIds: string[] = [];
@@ -207,7 +246,7 @@ export function initCalculator(): void {
   // The momentum passive is taken from the attacker unit's faction. Units never
   // belong to more than one faction, so the faction is unambiguous.
   function attackerFactionId(): string {
-    const u = units.find((x) => x.id === Number(attackerUnitSel.value));
+    const u = allUnits.find((x) => x.id === Number(attackerUnitSel.value));
     if (!u) return '';
     const fid = String(u.faction);
     return factionMomentum.factions[fid] ? fid : '';
@@ -236,6 +275,100 @@ export function initCalculator(): void {
   function fmt(n: number): string {
     return Number(n.toFixed(2)).toString();
   }
+
+  function pickFormulaModel(): FormulaModelId {
+    const v = formulaModelSel?.value as FormulaModelId | undefined;
+    if (v === 'floor-first' || v === 'post-armor-swing' || v === 'graze-null') return v;
+    return 'floor-first';
+  }
+
+  function resolveSpecialBuckets(
+    critPercent: number,
+    grazePercent: number,
+  ): { crit: number; graze: number; normal: number } {
+    const c = Math.max(0, Math.min(1, critPercent / 100));
+    const g = Math.max(0, Math.min(1, grazePercent / 100));
+    if (c + g <= 1) return { crit: c, graze: g, normal: 1 - c - g };
+    const sum = c + g;
+    const scale = sum > 0 ? 1 / sum : 0;
+    const crit = c * scale;
+    const graze = g * scale;
+    return { crit, graze, normal: 0 };
+  }
+
+  function reconstructionExpected(
+    model: FormulaModelId,
+    dr: { min: number; max: number },
+    shots: number,
+    hit: number,
+    crit: number,
+    graze: number,
+  ): FormulaModelResult {
+    const hitFactor = Math.max(0, Math.min(1, hit / 100));
+    const buckets = resolveSpecialBuckets(crit, graze);
+    const baseAvg = (dr.min + dr.max) / 2;
+    const critAvg = (Math.round(dr.min + 1) + Math.round(dr.max * CRIT_DAMAGE_MULT)) / 2;
+    const grazeAvg = (dr.min * GRAZE_DAMAGE_MULT + dr.max * GRAZE_DAMAGE_MULT) / 2;
+
+    if (model === 'floor-first') {
+      const onHit = Math.floor(
+        baseAvg * buckets.normal +
+          baseAvg * CRIT_DAMAGE_MULT * buckets.crit +
+          baseAvg * GRAZE_DAMAGE_MULT * buckets.graze,
+      );
+      const perAttack = Math.floor(onHit * shots);
+      const expected = Math.floor(perAttack * hitFactor);
+      return {
+        id: model,
+        label: 'A · Floor-first chain',
+        note: 'Applies crit=1.5x and graze=0.25x on a floored base average, with floor rounding at each major stage.',
+        steps: [
+          'Take max damage as base, derive min as 75% of max (floor).',
+          'Apply attacker-side stacking mods first; then flat bonuses.',
+          'Apply armor shaping to get post-armor range.',
+          'Apply crit/graze weighted multiplier (crit 1.5x, graze 0.25x).',
+          'Apply hit chance to get final expected damage.',
+        ],
+        expected,
+      };
+    }
+
+    if (model === 'post-armor-swing') {
+      const onHit = baseAvg * buckets.normal + critAvg * buckets.crit + grazeAvg * buckets.graze;
+      const perAttack = Math.round(onHit * shots);
+      const expected = Math.round(perAttack * hitFactor);
+      return {
+        id: model,
+        label: 'B · Post-armor swing',
+        note: 'Treats crit/graze as separate post-armor outcome bands, then blends by their probabilities.',
+        steps: [
+          'Compute post-armor normal damage range.',
+          'Compute crit band: min+1, max×1.5.',
+          'Compute graze band: range×0.25.',
+          'Blend normal/crit/graze bands by chance weights.',
+          'Apply hit chance at the end.',
+        ],
+        expected,
+      };
+    }
+
+    const onHitNoGraze = baseAvg * (1 - buckets.crit) + critAvg * buckets.crit;
+    const expected = Math.round(onHitNoGraze * shots * hitFactor * (1 - buckets.graze));
+    return {
+      id: model,
+      label: 'C · Graze-null branch',
+      note: 'Assumes many grazes collapse to 0 final damage; crit bonus is still 1.5x when non-graze hits crit.',
+      steps: [
+        'Build post-armor base range (normal hit).',
+        'Apply crit uplift only on non-graze branch (1.5x max, +1 min).',
+        'Treat graze as a null branch (0 damage) at probability level.',
+        'Apply hit chance and graze-null branch factor.',
+      ],
+      expected,
+    };
+  }
+
+  let lastFormulaResult: FormulaModelResult | null = null;
 
   function renderMomentum(): void {
     const mom = Math.max(0, Number(momentumInput.value) || 0);
@@ -305,7 +438,7 @@ export function initCalculator(): void {
   }
 
   function unitOptionsHtml(): string {
-    return [...units]
+    return [...listedUnits()]
       .sort((a, b) => unitName(a.id, a.name).localeCompare(unitName(b.id, b.name)))
       .map((u) => `<option value="${u.id}">${unitName(u.id, u.name)}</option>`)
       .join('');
@@ -314,7 +447,7 @@ export function initCalculator(): void {
   // Weapon list is the selected attacker unit's loadout; with no unit chosen
   // ('Custom values') it falls back to the full weapon list.
   function populateWeapons(): void {
-    const u = units.find((x) => x.id === Number(attackerUnitSel.value));
+    const u = allUnits.find((x) => x.id === Number(attackerUnitSel.value));
     const current = weaponSel.value;
     if (u) {
       weaponSel.innerHTML = loadoutWeaponIds(u)
@@ -357,7 +490,7 @@ export function initCalculator(): void {
     if (!w) return;
     damage.value = String(w.damage);
     // Total shots = the weapon's Attacks x every model in the attacking squad.
-    const au = units.find((x) => x.id === Number(attackerUnitSel.value));
+    const au = allUnits.find((x) => x.id === Number(attackerUnitSel.value));
     // Melee weapons carry no own accuracy (they hit with the wielder's
     // MeleeAccuracy). Use the weapon's accuracy when it has one, otherwise fall
     // back to the attacker's melee accuracy so the hit chance is never 0%.
@@ -369,7 +502,7 @@ export function initCalculator(): void {
   }
 
   function applyUnit(id: number): void {
-    const u = units.find((x) => x.id === id);
+    const u = allUnits.find((x) => x.id === id);
     if (!u) return;
     armor.value = String(u.armorProfile === 1 ? u.armorFront : u.armor);
     evasion.value = String(u.evasion);
@@ -418,6 +551,15 @@ export function initCalculator(): void {
     const perAttackAvg = perHit * shotCount;
     // Expected one-round damage = average post-armor damage × hit chance × non-graze share.
     const expected = Math.round(expectedDamage(perAttackAvg, hit) * (1 - graze / 100));
+    const formulaResult = reconstructionExpected(
+      pickFormulaModel(),
+      dr,
+      shotCount,
+      hit,
+      crit,
+      graze,
+    );
+    lastFormulaResult = formulaResult;
     const killed = Math.min(modelsKilled(perAttackAvg, hp), aliveModels);
     const totalHp = hp * mem;
     // HP left in the unit after this attack: pre-existing damage (lost models +
@@ -431,9 +573,18 @@ export function initCalculator(): void {
     setText('r-graze', `${Math.round(graze)}%`);
     setText('r-attack', `${dr.min * shotCount}\u2013${dr.max * shotCount}`);
     setText('r-expected', String(expected));
+    const formulaLabel = (formulaResult.label ?? '').split('·')[0]?.trim() ?? '';
+    setText(
+      'r-expected-model',
+      `${formulaResult.expected}${formulaLabel ? ` (${formulaLabel})` : ''}`,
+    );
     setText('r-killed', `${killed} / ${aliveModels}`);
     setText('r-totalhp', String(totalHp));
     setText('r-remaining', String(remainingHp));
+    if (formulaModelNote) formulaModelNote.textContent = formulaResult.note;
+    if (formulaSteps) {
+      formulaSteps.innerHTML = formulaResult.steps.map((s) => `<li>${s}</li>`).join('');
+    }
     updateRangeInfo();
     renderMomentum();
     syncUrl();
@@ -449,6 +600,7 @@ export function initCalculator(): void {
     if (attackerUnitSel.value) p.set('attacker', attackerUnitSel.value);
     if (weaponSel.value) p.set('weapon', weaponSel.value);
     if (unitSel.value) p.set('unit', unitSel.value);
+    if (showCampaignUnits?.checked) p.set('campaign', '1');
     const qs = p.toString();
     history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
     const copy = document.getElementById('copy-link');
@@ -533,6 +685,41 @@ export function initCalculator(): void {
     }
   });
   momentumInput.addEventListener('input', compute);
+  showCampaignUnits?.addEventListener('change', () => {
+    const oldA = attackerUnitSel.value;
+    const oldU = unitSel.value;
+    renderOptions();
+    if (oldA && attackerUnitSel.querySelector(`option[value="${oldA}"]`)) {
+      attackerUnitSel.value = oldA;
+    }
+    if (oldU && unitSel.querySelector(`option[value="${oldU}"]`)) {
+      unitSel.value = oldU;
+      applyUnit(Number(oldU));
+    }
+    populateWeapons();
+    compute();
+  });
+  formulaModelSel?.addEventListener('change', compute);
+  formulaCopyReport?.addEventListener('click', async () => {
+    const model = lastFormulaResult;
+    if (!model) return;
+    const lines = [
+      `Model: ${model.label}`,
+      `Expected damage (reconstruction): ${model.expected}`,
+      `Crit multiplier: ${CRIT_DAMAGE_MULT}x`,
+      `Graze multiplier: ${GRAZE_DAMAGE_MULT}x`,
+      `Inputs -> dmg:${damage.value || '0'}, acc:${accuracy.value || '0'}, ap:${ap.value || '0'}, shots:${shots.value || '1'}, armor:${armor.value || '0'}, evasion:${evasion.value || '0'}`,
+      'Order assumptions:',
+      ...model.steps.map((s, i) => `${i + 1}. ${s}`),
+    ];
+    const payload = lines.join('\n');
+    try {
+      await navigator.clipboard.writeText(payload);
+      showToast('Reconstruction report copied');
+    } catch {
+      showToast(payload);
+    }
+  });
 
   document.getElementById('copy-link')?.addEventListener('click', async () => {
     const url = `${location.origin}${location.pathname}${location.search}`;
@@ -553,11 +740,10 @@ export function initCalculator(): void {
   }
 
   // Hydrate from URL
-  const params = new URLSearchParams(location.search);
   const wParam = params.get('weapon');
   const uParam = params.get('unit');
   const aParam = params.get('attacker');
-  if (aParam && units.some((u) => u.id === Number(aParam))) {
+  if (aParam && allUnits.some((u) => u.id === Number(aParam))) {
     attackerUnitSel.value = aParam;
   } else if (!wParam && attackerUnitSel.options.length > 1) {
     // Default the attacker to the first unit's loadout.

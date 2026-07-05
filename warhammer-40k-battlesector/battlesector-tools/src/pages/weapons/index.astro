@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import { damageRange } from '../../lib/combat';
 import { weaponSlug, weapons } from '../../lib/data';
 import { WEAPON_TAG_TOOLTIPS } from '../../lib/tag-tooltips';
+import { resolveWeaponType, weaponTypeMeta } from '../../lib/weapon-display';
 import { getWeaponPortrait, getWeaponTypeIcon } from '../../scripts/images';
 
 const sorted = [...weapons].sort((a, b) => a.name.localeCompare(b.name));
@@ -17,9 +18,6 @@ const sorted = [...weapons].sort((a, b) => a.name.localeCompare(b.name));
   <header class="mb-6">
     <p class="eyebrow mb-2" data-i18n-ui="common.database">Database</p>
     <h1 class="text-3xl md:text-4xl font-black" data-i18n-ui="nav.weapons">Weapons</h1>
-    <p class="mt-2 text-[var(--color-muted)]" data-i18n-ui="weapons.header.subtitle">
-      Review weapon profiles, damage output, and accuracy before battle.
-    </p>
   </header>
 
   <div class="surface p-4 mb-6 sticky top-[4.5rem] z-30">
@@ -48,10 +46,16 @@ const sorted = [...weapons].sort((a, b) => a.name.localeCompare(b.name));
       <p class="label mb-1.5">Tags</p>
       <div id="weapon-tag-filter" class="flex flex-wrap gap-2">
         <button type="button" class="chip cursor-pointer" data-tag="melee">
-          <Tooltip text={WEAPON_TAG_TOOLTIPS.melee}><span>Melee</span></Tooltip>
+          <Tooltip text={WEAPON_TAG_TOOLTIPS.melee}><span data-i18n-ui="common.melee">Melee</span></Tooltip>
         </button>
-        <button type="button" class="chip cursor-pointer" data-tag="ranged">
-          <Tooltip text={WEAPON_TAG_TOOLTIPS.ranged}><span>Ranged</span></Tooltip>
+        <button type="button" class="chip cursor-pointer" data-tag="ballistic">
+          <Tooltip text={WEAPON_TAG_TOOLTIPS.ballistic}><span data-i18n-ui="common.ballistic">Ballistic</span></Tooltip>
+        </button>
+        <button type="button" class="chip cursor-pointer" data-tag="flame">
+          <Tooltip text={WEAPON_TAG_TOOLTIPS.flame}><span data-i18n-ui="common.flame">Flame</span></Tooltip>
+        </button>
+        <button type="button" class="chip cursor-pointer" data-tag="artillery">
+          <Tooltip text={WEAPON_TAG_TOOLTIPS.artillery}><span data-i18n-ui="common.artillery">Artillery</span></Tooltip>
         </button>
         <button type="button" class="chip cursor-pointer" data-tag="pistol">
           <Tooltip text={WEAPON_TAG_TOOLTIPS.pistol}><span>Pistol</span></Tooltip>
@@ -77,11 +81,11 @@ const sorted = [...weapons].sort((a, b) => a.name.localeCompare(b.name));
   <div id="grid" class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
     {sorted.map((w) => {
       const dmg = damageRange(w.damage);
-      const icon = getWeaponPortrait(w.icon) ?? getWeaponTypeIcon(w.isMelee);
+      const wType = weaponTypeMeta(w);
+      const icon = getWeaponPortrait(w.icon) ?? getWeaponTypeIcon(resolveWeaponType(w));
       const hits = w.numAttacks * Math.max(1, w.shotsPerAttack || 1);
       const tags = [
-        w.isMelee ? 'melee' : null,
-        w.isRanged ? 'ranged' : null,
+        resolveWeaponType(w),
         w.pistol ? 'pistol' : null,
         w.impactType === 'splash' ? 'splash' : null,
         w.impactType === 'tile' ? 'tile' : null,
@@ -103,13 +107,13 @@ const sorted = [...weapons].sort((a, b) => a.name.localeCompare(b.name));
         >
           <div class="flex items-start gap-3">
             {icon && (
-              <img src={icon} alt="" width="40" height="40" loading="lazy" class="w-10 h-10 rounded-lg object-contain bg-black/30 border border-[var(--color-border)] p-1 shrink-0" />
+              <img src={icon} alt="" width="40" height="40" loading="lazy" class="asset-icon w-10 h-10 rounded-lg object-contain bg-black/30 border border-[var(--color-border)] p-1 shrink-0" />
             )}
             <div class="min-w-0 flex-1">
               <div class="flex items-center gap-2 flex-wrap">
                 <h3 class="font-bold truncate" data-i18n-weapon={w.id} data-i18n-fallback={w.name}>{w.name}</h3>
-                <Tooltip text={w.isMelee ? WEAPON_TAG_TOOLTIPS.melee : WEAPON_TAG_TOOLTIPS.ranged}>
-                  <span class={`chip !py-0.5 !px-1.5 text-[10px] ${w.isMelee ? '!text-[var(--color-blood)]' : '!text-[var(--color-plasma)]'}`} data-i18n-ui={w.isMelee ? 'common.melee' : 'common.ranged'}>{w.isMelee ? 'Melee' : 'Ranged'}</span>
+                <Tooltip text={WEAPON_TAG_TOOLTIPS[wType.type]}>
+                  <span class="chip !py-0.5 !px-1.5 text-[10px]" style={`color:${wType.color}`} data-i18n-ui={wType.i18nKey}>{wType.label}</span>
                 </Tooltip>
                 {w.pistol && (
                   <Tooltip text={WEAPON_TAG_TOOLTIPS.pistol}>

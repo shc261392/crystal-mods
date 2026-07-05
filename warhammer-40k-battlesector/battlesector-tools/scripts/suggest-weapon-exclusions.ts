@@ -1,6 +1,19 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 
+interface Weapon {
+  id: number;
+  nameId: number;
+  name: string;
+}
+
+interface Candidate {
+  id: number;
+  nameId: number;
+  canonicalName: string;
+  localized: string;
+}
+
 const ROOT = process.cwd();
 const I18N_PATH = path.join(ROOT, 'src', 'data', 'i18n.json');
 const WEAPONS_PATH = path.join(ROOT, 'src', 'data', 'weapons.json');
@@ -8,12 +21,14 @@ const OUT_PATH = path.join(ROOT, 'data', 'weapon-name-exclusions.suggestions.jso
 
 const locale = process.argv[2] ?? 'zh-TW';
 
-const i18n = JSON.parse(readFileSync(I18N_PATH, 'utf8'));
-const weapons = JSON.parse(readFileSync(WEAPONS_PATH, 'utf8'));
+const i18n = JSON.parse(readFileSync(I18N_PATH, 'utf8')) as {
+  weaponNames?: Record<string, Record<string, string>>;
+};
+const weapons = JSON.parse(readFileSync(WEAPONS_PATH, 'utf8')) as Weapon[];
 
-const names = i18n.weaponNames?.[locale] ?? {};
+const names: Record<string, string> = i18n.weaponNames?.[locale] ?? {};
 
-const phraseKeywords = [
+const phraseKeywords: string[] = [
   'AI',
   '部隊',
   '比賽',
@@ -29,7 +44,7 @@ const phraseKeywords = [
   '<b>',
 ];
 
-const looksSuspicious = (s) => {
+const looksSuspicious = (s: string): boolean => {
   if (!s || typeof s !== 'string') return true;
   if (phraseKeywords.some((k) => s.includes(k))) return true;
   if (/\{\d+\}/.test(s)) return true;
@@ -39,7 +54,7 @@ const looksSuspicious = (s) => {
   return false;
 };
 
-const candidates = [];
+const candidates: Candidate[] = [];
 for (const w of weapons) {
   const localized = (names[String(w.id)] ?? '').trim();
   if (!looksSuspicious(localized)) continue;

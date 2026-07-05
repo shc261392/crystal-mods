@@ -307,6 +307,43 @@ export function initArmyBuilder(): void {
     saveArmy(army);
   }
 
+  function unitQtyInArmy(unitId: number): number {
+    return army.filter((e) => e.id === unitId).reduce((sum, e) => sum + e.qty, 0);
+  }
+
+  function decrementUnitQuick(unitId: number): void {
+    const entry = army.find((e) => e.id === unitId);
+    if (!entry) return;
+    if (entry.qty > 1) entry.qty -= 1;
+    else army = army.filter((e) => e !== entry);
+    persist();
+    render();
+  }
+
+  function renderCardQtyControls(): void {
+    const cards = gridEl.querySelectorAll<HTMLElement>('[data-unit-id]');
+    for (const card of cards) {
+      const unitId = Number(card.getAttribute('data-unit-id'));
+      const qty = unitQtyInArmy(unitId);
+      const leftPane = card.querySelector<HTMLElement>('[data-card-actions-anchor]') ?? card;
+      let bar = leftPane.querySelector<HTMLElement>('[data-card-qty-bar]');
+      if (!bar) {
+        bar = document.createElement('div');
+        bar.setAttribute('data-card-qty-bar', '1');
+        bar.className =
+          'mt-2 inline-flex items-center gap-1.5 rounded-md border border-[var(--color-border)] bg-black/25 px-1.5 py-1 text-xs';
+        bar.innerHTML = `
+          <button type="button" data-act-card="dec" class="w-6 h-6 rounded border border-[var(--color-border)] hover:border-[var(--color-border-strong)]">−</button>
+          <span data-card-qty class="w-6 text-center tabular-nums font-bold">0</span>
+          <button type="button" data-act-card="inc" class="w-6 h-6 rounded border border-[var(--color-border)] hover:border-[var(--color-border-strong)]">+</button>
+        `;
+        leftPane.appendChild(bar);
+      }
+      const qtyEl = bar.querySelector<HTMLElement>('[data-card-qty]');
+      if (qtyEl) qtyEl.textContent = String(qty);
+    }
+  }
+
   function render(): void {
     if (empty) empty.style.display = army.length ? 'none' : '';
     listEl.innerHTML = army
@@ -337,6 +374,7 @@ export function initArmyBuilder(): void {
     renderFactions();
     populateFactions();
     populateUnits();
+    renderCardQtyControls();
   }
 
   function renderFactions(): void {
@@ -388,6 +426,23 @@ export function initArmyBuilder(): void {
     populateUnits();
   });
   gridEl.addEventListener('click', (e) => {
+    const actBtn = (e.target as HTMLElement).closest(
+      'button[data-act-card]',
+    ) as HTMLButtonElement | null;
+    if (actBtn) {
+      e.preventDefault();
+      e.stopImmediatePropagation?.();
+      const card = actBtn.closest('[data-unit-id]') as HTMLElement | null;
+      if (!card || card.classList.contains('hidden')) return;
+      const unitId = Number(card.getAttribute('data-unit-id'));
+      selectedUnitId = unitId;
+      renderSelectedUnitCards();
+      renderLoadoutConfig();
+      const act = actBtn.getAttribute('data-act-card');
+      if (act === 'inc') add();
+      else if (act === 'dec') decrementUnitQuick(unitId);
+      return;
+    }
     const card = (e.target as HTMLElement).closest('[data-unit-id]') as HTMLElement | null;
     if (!card || card.classList.contains('hidden')) return;
     selectedUnitId = Number(card.getAttribute('data-unit-id'));
@@ -477,5 +532,6 @@ export function initArmyBuilder(): void {
   paintTagButtons();
   populateFactions();
   populateUnits();
+  renderCardQtyControls();
   render();
 }

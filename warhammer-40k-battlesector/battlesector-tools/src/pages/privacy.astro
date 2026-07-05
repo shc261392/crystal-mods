@@ -1,0 +1,48 @@
+---
+import Base from '../layouts/Base.astro';
+
+const updated = '2026-07-05';
+const sections = [
+  { titleKey: 'privacy.noPii.title', bodyKey: 'privacy.noPii.body' },
+  { titleKey: 'privacy.local.title', bodyKey: 'privacy.local.body' },
+  { titleKey: 'privacy.analytics.title', bodyKey: 'privacy.analytics.body' },
+  { titleKey: 'privacy.thirdParty.title', bodyKey: 'privacy.thirdParty.body' },
+] as const;
+---
+
+<Base
+  title="Privacy Policy"
+  description="Battlesector Tools privacy policy — we do not collect any personal information."
+  path="/privacy"
+>
+  <article class="max-w-3xl mx-auto">
+    <header class="mb-6">
+      <h1 class="text-3xl md:text-4xl font-black" data-i18n-ui="privacy.title">Privacy Policy</h1>
+      <p class="mt-3 text-[var(--color-muted)]" data-i18n-ui="privacy.intro">
+        Battlesector Tools is a static, unofficial fan project. We do not
+        collect, store, or share any personal information.
+      </p>
+    </header>
+
+    <div class="space-y-5">
+      {sections.map((s) => (
+        <section class="surface p-5">
+          <h2 class="font-bold text-lg mb-1.5" data-i18n-ui={s.titleKey}></h2>
+          <p class="text-sm text-[var(--color-muted)]" data-i18n-ui={s.bodyKey}></p>
+        </section>
+      ))}
+
+      <section class="surface p-5">
+        <h2 class="font-bold text-lg mb-1.5" data-i18n-ui="privacy.contact.title">Contact</h2>
+        <p class="text-sm text-[var(--color-muted)]">
+          <span data-i18n-ui="privacy.contact.body">Questions about this policy? Email us at</span>
+          <a href="mailto:shadowevor@proton.me" class="text-[var(--color-gold-dim)] hover:underline">shadowevor@proton.me</a>.
+        </p>
+      </section>
+    </div>
+
+    <p class="mt-6 text-xs text-[var(--color-faint)]">
+      <span data-i18n-ui="privacy.updated">Last updated</span>: {updated}
+    </p>
+  </article>
+</Base>

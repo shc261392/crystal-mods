@@ -1,0 +1,118 @@
+---
+import BoolField from '../../components/editor/BoolField.astro';
+import EditorTabs from '../../components/editor/EditorTabs.astro';
+import IconField from '../../components/editor/IconField.astro';
+import IconPickerModal from '../../components/editor/IconPickerModal.astro';
+import NotesField from '../../components/editor/NotesField.astro';
+import NumField from '../../components/editor/NumField.astro';
+import SelectField from '../../components/editor/SelectField.astro';
+import Base from '../../layouts/Base.astro';
+import { allWeapons } from '../../lib/data';
+import { buildIconCatalog, resolveIconUrl } from '../../lib/editor-icons';
+import { resolveWeaponType } from '../../lib/weapon-display';
+
+const catalog = await buildIconCatalog();
+const sorted = [...allWeapons].sort((a, b) => a.name.localeCompare(b.name));
+
+const WEAPON_TYPE_OPTIONS = [
+  { value: 'melee', label: 'Melee' },
+  { value: 'ballistic', label: 'Ballistic' },
+  { value: 'flame', label: 'Flame' },
+  { value: 'artillery', label: 'Artillery' },
+];
+---
+
+<Base
+  title="Weapon Editor"
+  description="Local-only editor for Battlesector weapon properties, descriptions, icons, and notes."
+  path="/editor/weapons"
+>
+  <header class="mb-4">
+    <p class="eyebrow mb-2">Editor</p>
+    <h1 class="text-3xl md:text-4xl font-black">Weapon Editor</h1>
+    <p class="mt-2 text-[var(--color-muted)] max-w-3xl text-sm">
+      Edit weapon properties, descriptive text, icon, and player field notes.
+      Changes save straight to <code>src/data/weapons.json</code>.
+    </p>
+  </header>
+
+  <EditorTabs active="weapons" />
+
+  <div class="surface p-4 mb-4 flex flex-wrap items-end gap-3">
+    <label class="flex-1 min-w-[240px]">
+      <span class="label block mb-1.5">Search</span>
+      <input id="editor-search" class="input" type="search" placeholder="Search by weapon name or id…" autocomplete="off" />
+    </label>
+    <span id="editor-count" class="text-sm text-[var(--color-faint)]"></span>
+  </div>
+
+  <div id="editor-list" class="space-y-4">
+    {sorted.map((w) => (
+      <article
+        data-editor-row
+        data-editor-target="weapon"
+        data-editor-id={w.id}
+        data-search={`${w.id} ${w.name} ${resolveWeaponType(w)}`.toLowerCase()}
+        class="surface p-4"
+      >
+        <div class="flex items-center gap-2 mb-3 min-w-0">
+          <span class="text-[var(--color-gold)] font-bold text-sm shrink-0">#{w.id}</span>
+          <h2 class="font-bold truncate">{w.name}</h2>
+          <span class="chip shrink-0 capitalize">{resolveWeaponType(w)}</span>
+          {w.pistol && <span class="chip shrink-0">Pistol</span>}
+          {w.hidden && <span class="chip shrink-0 !text-[var(--color-blood)]">Hidden</span>}
+        </div>
+
+        <div class="grid gap-4 lg:grid-cols-[220px_1fr]">
+          <div class="space-y-3">
+            <div>
+              <span class="block text-[11px] font-semibold uppercase tracking-wide text-[var(--color-faint)] mb-1">Icon</span>
+              <IconField field="icon" rowId={w.id} value={w.icon} previewUrl={resolveIconUrl(w.icon, 'weapons')} />
+            </div>
+            <label class="block">
+              <span class="block text-[11px] font-semibold uppercase tracking-wide text-[var(--color-faint)] mb-1">Name</span>
+              <input class="input" data-field="name" value={w.name} />
+            </label>
+            <SelectField field="weaponType" label="Weapon type" value={resolveWeaponType(w)} options={WEAPON_TYPE_OPTIONS} />
+            <div class="flex flex-wrap gap-3 pt-1">
+              <BoolField field="pistol" label="Pistol" checked={Boolean(w.pistol)} />
+              <BoolField field="ignoresRangePenalty" label="Ignores range pen." checked={w.ignoresRangePenalty} />
+              <BoolField field="hidden" label="Hide from site" checked={Boolean(w.hidden)} />
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <div class="grid grid-cols-3 sm:grid-cols-4 gap-3">
+              <NumField field="damage" label="Damage" value={w.damage} step={0.1} />
+              <NumField field="accuracy" label="Accuracy" value={w.accuracy} />
+              <NumField field="armorPiercing" label="Armor pierce" value={w.armorPiercing} />
+              <NumField field="numAttacks" label="Attacks" value={w.numAttacks} />
+              <NumField field="shotsPerAttack" label="Shots/atk" value={w.shotsPerAttack} />
+              <NumField field="burstSize" label="Burst" value={w.burstSize} />
+              <NumField field="rangeMin" label="Range min" value={w.rangeMin} step={0.1} />
+              <NumField field="rangeOptimal" label="Range opt" value={w.rangeOptimal} step={0.1} />
+              <NumField field="rangeMax" label="Range max" value={w.rangeMax} step={0.1} />
+              <NumField field="accuracyFalloff" label="Acc falloff" value={w.accuracyFalloff} step={0.1} />
+              <NumField field="splashModels" label="Splash models" value={w.splashModels} />
+              <NumField field="splashFalloff" label="Splash falloff" value={w.splashFalloff} step={0.05} />
+              <NumField field="splashMin" label="Splash min" value={w.splashMin} />
+              <NumField field="splashMax" label="Splash max" value={w.splashMax} />
+            </div>
+            <label class="block">
+              <span class="block text-[11px] font-semibold uppercase tracking-wide text-[var(--color-faint)] mb-1">Descriptive text</span>
+              <textarea class="input resize-y text-sm" data-field="description" rows="2" placeholder="Optional flavour / mechanical description shown on the weapon page.">{w.description ?? ''}</textarea>
+            </label>
+            <NotesField value={w.notes} />
+          </div>
+        </div>
+      </article>
+    ))}
+  </div>
+
+  <IconPickerModal slot="modals" catalog={catalog} />
+
+  <script>
+    import { initEntityEditor } from '../../scripts/editor/entity-editor';
+    initEntityEditor();
+  </script>
+</Base>

@@ -1,0 +1,46 @@
+---
+/**
+ * Icon field: text input + catalog picker button + live preview. `field` is the
+ * JSON key ("portrait" for units, "icon" for weapons). `rowId` makes the picker
+ * target selector unique per row.
+ */
+interface Props {
+  field: 'portrait' | 'icon';
+  rowId: string | number;
+  value: string | undefined;
+  previewUrl?: string | undefined;
+}
+const { field, rowId, value, previewUrl } = Astro.props;
+const inputId = `icon-input-${field}-${rowId}`;
+const hasPreview = Boolean(previewUrl);
+---
+
+<div class="flex items-start gap-2">
+  <div class="grid place-items-center w-12 h-12 shrink-0 rounded border border-[var(--color-border)] bg-[var(--color-base)] overflow-hidden">
+    <img
+      data-icon-preview
+      src={previewUrl ?? ''}
+      alt=""
+      class:list={['max-h-11 max-w-full object-contain', { hidden: !hasPreview }]}
+    />
+    <span data-icon-empty class:list={['text-[10px] text-[var(--color-faint)]', { hidden: hasPreview }]}>none</span>
+  </div>
+  <div class="flex-1 min-w-0 space-y-1">
+    <input
+      id={inputId}
+      type="search"
+      class="input"
+      data-field={field}
+      value={value ?? ''}
+      placeholder="Icon key or URL"
+    />
+    <button
+      type="button"
+      class="btn btn-ghost text-xs px-2 py-1"
+      data-open-icon-picker
+      data-target-input={`#${inputId}`}
+    >
+      Choose from catalog
+    </button>
+  </div>
+</div>

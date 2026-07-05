@@ -53,6 +53,7 @@ const rawUiI18n = {
     'common.sort': 'Sort',
     'common.reset': 'Reset',
     'common.resetFilters': 'Reset filters',
+    'common.filters': 'Filters',
     'common.clear': 'Clear',
     'common.add': 'Add',
     'common.decrease': 'Decrease',
@@ -91,6 +92,9 @@ const rawUiI18n = {
     'common.locked': 'Locked',
     'common.melee': 'Melee',
     'common.ranged': 'Ranged',
+    'common.ballistic': 'Ballistic',
+    'common.flame': 'Flame',
+    'common.artillery': 'Artillery',
     'common.pistol': 'Pistol',
     'common.splash': 'Splash',
     'common.requisitionPoints': 'requisition points',
@@ -146,6 +150,18 @@ const rawUiI18n = {
     'unitDetail.section.weaponLoadout': 'Weapon Loadout',
     'unitDetail.section.abilities': 'Abilities',
     'unitDetail.factionPassive': 'Faction passive',
+    'abilityCard.type': 'Type',
+    'abilityCard.active': 'Active',
+    'abilityCard.passive': 'Passive',
+    'abilityCard.ap': 'AP',
+    'abilityCard.cd': 'CD',
+    'weaponStat.type': 'Type',
+    'weaponStat.dmg': 'DMG',
+    'weaponStat.acc': 'ACC',
+    'weaponStat.ap': 'AP',
+    'weaponStat.rng': 'RNG',
+    'weaponStat.splash': 'Splash',
+    'unitCard.weapons': 'Weapons',
     'unitDetail.loadout.subtitle':
       "Weapons aren't free picks. Each slot is a choice — some options cost extra requisition points or must be unlocked with an HQ upgrade.",
     'unitDetail.loadout.chooseOne': 'Choose one',
@@ -193,6 +209,8 @@ const rawUiI18n = {
       "When target armor exceeds this weapon's armor piercing, hits start to graze (3% per point of difference) and a graze deals no damage.",
     'calculator.mode.oneRound': 'One-round test',
     'calculator.mode.battle': 'Battle simulation',
+    'calculator.wipBanner':
+      'Work in progress: this calculator is still being refined. Some formulas are approximations, so results may differ from the actual in-game outcome.',
     'calculator.buff.damageMod': 'Damage modifier',
     'calculator.target.currentHp': 'Front model HP',
     'calculator.target.fullHp': 'full',
@@ -276,6 +294,27 @@ const rawUiI18n = {
       'Battlesector Tools · Unofficial fan project. Game data extracted for reference and analysis.',
     'footer.disclaimer.copyright':
       'Warhammer 40,000: Battlesector © Games Workshop / Black Lab Games. Not affiliated.',
+    'footer.contact': 'Contact',
+    'footer.privacy': 'Privacy',
+    'fieldNotes.label': 'Field notes',
+    'privacy.title': 'Privacy Policy',
+    'privacy.intro':
+      'Battlesector Tools is a static, unofficial fan project. We do not collect, store, or share any personal information.',
+    'privacy.noPii.title': 'No personal data collected',
+    'privacy.noPii.body':
+      'This site has no accounts, no sign-up, and no server-side database of visitors. We do not ask for your name, email, or any other personally identifiable information (PII).',
+    'privacy.local.title': 'Local storage only',
+    'privacy.local.body':
+      'Preferences such as your chosen language and any army lists you build are stored only in your own browser (localStorage). They never leave your device and are not transmitted to us.',
+    'privacy.analytics.title': 'No tracking or advertising',
+    'privacy.analytics.body':
+      'We do not use analytics, advertising, tracking pixels, or third-party marketing cookies.',
+    'privacy.thirdParty.title': 'Third-party assets',
+    'privacy.thirdParty.body':
+      'Some images and fonts are served from a content delivery network. These providers may see standard request data (such as your IP address) solely to deliver the file, as with any website.',
+    'privacy.contact.title': 'Contact',
+    'privacy.contact.body': 'Questions about this policy? Email us at',
+    'privacy.updated': 'Last updated',
   },
   de: {
     'nav.units': 'Einheiten',

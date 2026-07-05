@@ -1,0 +1,71 @@
+---
+import EditorTabs from '../../components/editor/EditorTabs.astro';
+import Base from '../../layouts/Base.astro';
+import { units, weapons } from '../../lib/data';
+
+const unitCount = units.length;
+const weaponCount = weapons.length;
+const unitNotes = units.filter((u) => u.notes && u.notes.trim().length > 0).length;
+const weaponNotes = weapons.filter((w) => w.notes && w.notes.trim().length > 0).length;
+
+const cards = [
+  {
+    href: '/editor/units',
+    title: 'Unit Editor',
+    desc: 'Edit unit stats, portrait icons, and player field notes.',
+    stat: `${unitCount} units · ${unitNotes} noted`,
+  },
+  {
+    href: '/editor/weapons',
+    title: 'Weapon Editor',
+    desc: 'Edit weapon properties, descriptive text, icons, and notes.',
+    stat: `${weaponCount} weapons · ${weaponNotes} noted`,
+  },
+  {
+    href: '/editor/abilities',
+    title: 'Ability Editor',
+    desc: 'Curate ability titles, descriptions, icons, type, AP/CD, and notes.',
+    stat: 'Writes ability-overrides.source.json',
+  },
+];
+---
+
+<Base
+  title="Editor Suite"
+  description="Local-only editor suite for curating Battlesector unit, weapon, and ability data."
+  path="/editor"
+>
+  <header class="mb-6">
+    <p class="eyebrow mb-2">Tools</p>
+    <h1 class="text-3xl md:text-4xl font-black">Editor Suite</h1>
+    <p class="mt-2 text-[var(--color-muted)] max-w-3xl">
+      Local-only curation tools. Every save writes straight into the git-tracked
+      JSON under <code>src/data/</code> — there is no export/import step. This
+      suite is available in <strong>development only</strong> and is stripped
+      from the production build.
+    </p>
+  </header>
+
+  <EditorTabs active="hub" />
+
+  <div class="grid gap-4 md:grid-cols-3">
+    {cards.map((c) => (
+      <a href={c.href} class="surface surface-hover p-5 block">
+        <h2 class="font-bold text-lg mb-1.5">{c.title}</h2>
+        <p class="text-sm text-[var(--color-muted)]">{c.desc}</p>
+        <p class="mt-3 text-xs text-[var(--color-faint)]">{c.stat}</p>
+      </a>
+    ))}
+  </div>
+
+  <section class="surface p-5 mt-6">
+    <h2 class="font-bold mb-2">How saving works</h2>
+    <ul class="text-sm text-[var(--color-muted)] list-disc pl-5 space-y-1.5">
+      <li>Edits auto-save ~350ms after you stop typing, and immediately on blur.</li>
+      <li>A dev-server endpoint (<code>POST /__editor/save</code>) writes the change to the repo JSON.</li>
+      <li>Ability edits also regenerate <code>src/lib/unit-abilities.ts</code> so pages update live.</li>
+      <li><strong>Field notes</strong> are your own play-test observations (max ~100 words); they are not game data.</li>
+      <li>Commit the changed JSON files to persist your curation in git.</li>
+    </ul>
+  </section>
+</Base>

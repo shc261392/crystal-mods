@@ -13,6 +13,8 @@ type SortKey =
   | 'hits-desc'
   | 'hits-asc';
 
+const DATASET_TAGS_KEY: keyof DOMStringMap = 'tags';
+
 function num(el: HTMLElement, key: string): number {
   return Number(el.dataset[key] ?? 0);
 }
@@ -96,7 +98,7 @@ export function initWeaponsBrowser(): void {
     let visible = 0;
     for (const card of cards) {
       const cardTags = new Set(
-        (card.dataset['tags'] ?? '')
+        (card.dataset[DATASET_TAGS_KEY] ?? '')
           .split(',')
           .map((t) => t.trim())
           .filter(Boolean),

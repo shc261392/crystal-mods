@@ -1,0 +1,157 @@
+{
+  "1": {
+    "title": "Jump Pack",
+    "icon": "/ability-icons/JumpPackIcon.png",
+    "description": "Affects casting unit\n\n+2 Movement\n-20% Ranged Accuracy\nIgnores movement penalties from terrain\nExpires in 1 Turn\nWill not provoke pistol reactions when charging",
+    "kind": "active",
+    "actionPoints": 0,
+    "cooldown": 2
+  },
+  "2": {
+    "title": "Tactical Precision",
+    "icon": "/ability-icons/TacticalPrecisionIcon.png",
+    "description": "Affects single target ally within 2 tiles\n\n+20% Melee Accuracy\n+20% Ranged Accuracy\n+1 Armor Piercing\nExpires in 1 Turn",
+    "kind": "active",
+    "actionPoints": 1,
+    "cooldown": 1
+  },
+  "3": {
+    "title": "Graces of the Angel",
+    "icon": "/ability-icons/GracesOfTheAngelIcon.png",
+    "description": "Affects all allies within a range of 2 tiles\n\n+50% Momentum Gains\nExpires in 2 Turns",
+    "kind": "active",
+    "actionPoints": 1,
+    "cooldown": 3
+  },
+  "4": {
+    "title": "Sword of Sanguinius",
+    "icon": "/ability-icons/SwordOfSanguiniusIcon.png",
+    "description": "Affects casting unit\n\n+50% Damage\n+2 Movement\n-15 Evasion\nExpires in 1 Turn",
+    "kind": "active",
+    "actionPoints": 1,
+    "cooldown": 2
+  },
+  "5": {
+    "title": "Datalink Telemetry",
+    "icon": "/ability-icons/DataLinkTelemetryIcon.png",
+    "kind": "active",
+    "actionPoints": 1,
+    "cooldown": 2
+  },
+  "6": {
+    "title": "Anti-Grav Uplift",
+    "icon": "/ability-icons/AntiGravIcon.png",
+    "kind": "active",
+    "actionPoints": 1,
+    "cooldown": 2
+  },
+  "7": {
+    "title": "Heal Thy Brother",
+    "icon": "/ability-icons/HealThyBrotherIcon.png",
+    "description": "Heals a single non-vehicle ally within 1 tile for 35 HP.",
+    "kind": "active",
+    "actionPoints": 1,
+    "cooldown": 1
+  },
+  "9": {
+    "title": "Righteous Exhortation",
+    "description": "Affects all allies within a range of 1 tile\n\n+25% Melee Damage\nExpires in 2 Turns",
+    "kind": "active",
+    "actionPoints": 1,
+    "cooldown": 2
+  },
+  "10": {
+    "title": "Embrace the Blood",
+    "description": "Energies the Red Thirst of a single friendly unit within 2 tiles.\n\n+40 Momentum\nExpires in 2 Turns",
+    "kind": "active",
+    "actionPoints": 1,
+    "cooldown": 2
+  },
+  "13": {
+    "title": "Blinding Venom",
+    "icon": "/ability-icons/BlindingVenomIcon.png"
+  },
+  "16": {
+    "title": "Omnissiah's Touch",
+    "description": "Heals a single mechanical ally within 1 tile for 75 HP.",
+    "kind": "active",
+    "actionPoints": 1,
+    "cooldown": 1
+  },
+  "17": {
+    "title": "Blessings of the Omnissiah",
+    "description": "Affects single target ally within 2 tiles\n\n+1 Ranged Armor\n+1 Melee Armor\nExpires in 1 Turn",
+    "kind": "active",
+    "actionPoints": 1,
+    "cooldown": 2
+  },
+  "18": {
+    "title": "Invoke the Machine Spirit",
+    "description": "Targets a single mechanical ally within 1 tile\n\n+15% Accuracy\n+25% Damage\nExpires in 1 Turn",
+    "kind": "active",
+    "actionPoints": 1,
+    "cooldown": 2
+  },
+  "20": {
+    "title": "Shield of Sanguinius",
+    "description": "Affects single target ally within 2 tiles\n\n+25% Bonus HP\n+1 Melee Armour\nExpires in 2 Turns",
+    "kind": "active",
+    "actionPoints": 1,
+    "cooldown": 2
+  },
+  "21": {
+    "title": "Shifting Sands",
+    "icon": "/ability-icons/ShiftingSandsIcon.png",
+    "description": "Applies Shifting Sands status effect to tiles in range:\n\n-1 MP when leaving tile\n-10 Evasion\nExpires in 2 Turns",
+    "kind": "active",
+    "actionPoints": 1,
+    "cooldown": 2
+  },
+  "22": {
+    "title": "Quickening",
+    "icon": "/ability-icons/quickeningIcon.png",
+    "description": "Affects casting unit\n\n+2 Movement\n+5% Evasion\nExpires in 1 Turn\n\nCharge Time: 2",
+    "kind": "active",
+    "actionPoints": 0,
+    "cooldown": 3
+  },
+  "23": {
+    "title": "Volatile",
+    "description": "Explodes on death, dealing 52-70 damage at 3 armour piercing to units within 1 tile.",
+    "kind": "passive",
+    "actionPoints": 0,
+    "cooldown": 0
+  },
+  "25": {
+    "title": "Connected"
+  },
+  "27": {
+    "title": "Symbiotic Targeting",
+    "icon": "/ability-icons/SymbioticTargetingIcon.png"
+  },
+  "29": {
+    "title": "Wings of Sanguinius",
+    "description": "Affects casting unit\n\n+2 Movement\n+20 Evasion\nIgnores movement penalties from terrain\n+1 Ranged Armour\nExpires in 1 Turn\nWill not provoke pistol reactions when charging",
+    "kind": "active",
+    "actionPoints": 1,
+    "cooldown": 1
+  },
+  "30": {
+    "title": "Vision of Angelic Fury",
+    "description": "Summon a vision of Sanguinius that terrifies all enemies who see it. Does 20 Momentum damage to all enemy units within 2 tiles, and 18-25 Psychic damage to all enemy units within 1 tile.",
+    "kind": "active",
+    "actionPoints": 1,
+    "cooldown": 2
+  },
+  "31": {
+    "title": "Blood Lance",
+    "description": "Throws a lance that damages enemy units along the path to the target (maximum range: 2). Deals 37-50 splash damage with 4 armor piercing to up to 6 targets per tile.",
+    "kind": "active",
+    "actionPoints": 1,
+    "cooldown": 2
+  },
+  "40": {
+    "title": "Strategic Adaptation - Ranged",
+    "icon": "/ability-icons/StrategicAdaptationRangedIcon.png"
+  }
+}

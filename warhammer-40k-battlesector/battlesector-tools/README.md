@@ -48,10 +48,13 @@ pnpm deploy
 - **Target:** Worker `battlesector-tools` (account `Shc261392@gmail.com`,
   id `d9421d2507858cad0374ca8bb31e752c`). Config: [`wrangler.toml`](wrangler.toml)
   (`[assets] directory = "./dist"`).
-- **Deploy:** always `pnpm deploy` (runs `astro build` then
-  `dotenvx run -f .env.production -- wrangler deploy`). Credentials
+- **Deploy:** always `pnpm deploy`. This runs, in order:
+  `predeploy-check` (validate every data JSON, regenerate ability modules, and
+  refresh `src/data/build-meta.json` with a content hash + version) →
+  `lint` → `astro build` → strip local-only editor pages →
+  `dotenvx run -f .env.production -- wrangler deploy`. Credentials
   (`CLOUDFLARE_API_TOKEN`) live in the dotenvx-encrypted `.env.production`; never
-  read that file directly.
+  read that file directly. The build version/hash is shown in the site footer.
 - **Do NOT use `wrangler pages deploy`** or create a Pages project. Pages and the
   Worker would collide on the same name and split traffic across two URLs.
 - `pnpm run deploy:dry` validates a deploy without publishing.
@@ -73,6 +76,33 @@ pnpm deploy
   value per stat highlighted. Shareable via `?ids=`.
 - **Command palette** — `⌘K` / `Ctrl+K` global search across units and weapons.
 - Fully responsive, mobile-first, dark grimdark theme.
+
+## Editor Suite (local-only)
+
+A unified curation UI lives under `/editor` and is available **in `pnpm dev`
+only** — it is gated out of the nav in production and physically stripped from
+`dist/` before deploy (see [`scripts/strip-local-pages.ts`](scripts/strip-local-pages.ts)).
+
+Tabs: **Units**, **Weapons**, **Abilities**. Each editor lets you curate stats,
+descriptive text, catalog icons, and **player field notes** (brief play-test
+observations, ≤100 words — not part of the extracted game data).
+
+How saving works:
+
+- Every edit auto-saves (~350 ms debounce, plus immediate save on blur/change).
+- A dev-only middleware endpoint (`POST /__editor/save`, added by the
+  [`editorApi`](scripts/editor-integration.ts) Astro integration) writes the
+  change straight into the git-tracked JSON under `src/data/`:
+  - units → `src/data/units.json`
+  - weapons → `src/data/weapons.json`
+  - abilities → `src/data/ability-overrides.source.json` (then
+    `src/lib/unit-abilities.ts` is regenerated so pages update live)
+- There is **no export/import** — the repo JSON is the single source of truth.
+- Only the edited entity's object is rewritten, so saves produce small,
+  localized diffs. Commit the changed JSON to persist your curation.
+
+Field notes render in a consistent "Field notes" card on the unit and weapon
+detail pages and inside each ability card ([`FieldNotes.astro`](src/components/FieldNotes.astro)).
 
 ## Data pipeline
 

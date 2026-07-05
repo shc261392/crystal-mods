@@ -1,6 +1,9 @@
 // Shared domain types for Battlesector game data.
 // These mirror the structure produced by the data extraction pipeline.
 
+/** Attack-delivery classification shown to players. */
+export type WeaponType = 'melee' | 'ballistic' | 'flame' | 'artillery';
+
 export interface WeaponOption {
   weaponId: number;
   name: string;
@@ -48,6 +51,10 @@ export interface Unit {
   awarenessRange: number;
   weaponSlots: WeaponSlot[];
   abilityIds: number[];
+  /** Player field-test note (not in game data). Curated locally via the editor. */
+  notes?: string;
+  /** When true, the unit is excluded from the public site (editor-only). */
+  hidden?: boolean;
 }
 
 export interface Weapon {
@@ -61,6 +68,8 @@ export interface Weapon {
   armorPiercing: number;
   isMelee: boolean;
   isRanged: boolean;
+  /** Player-facing attack classification. Defaults from isMelee when absent. */
+  weaponType?: WeaponType;
   rangeMin: number;
   rangeOptimal: number;
   rangeMax: number;
@@ -73,7 +82,16 @@ export interface Weapon {
   splashModels?: number;
   splashFalloff?: number;
   splashHeavyAll?: boolean;
+  /** Explicit splash damage range. When unset, derived from damage + splashFalloff. */
+  splashMin?: number;
+  splashMax?: number;
   targetType?: 'redistribute' | 'fixedPerMember' | 'fixedEntireUnit';
+  /** Curated descriptive text (not in extracted game data). Editable locally. */
+  description?: string;
+  /** Player field-test note (not in game data). Curated locally via the editor. */
+  notes?: string;
+  /** When true, the weapon is excluded from the public site (editor-only). */
+  hidden?: boolean;
 }
 
 export interface Faction {

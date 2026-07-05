@@ -9,7 +9,13 @@ import type { Unit, Weapon } from '../lib/types';
 import { t, unitName, weaponName } from './i18n';
 
 const units = (unitsData as Unit[]).filter((u) => u.faction !== 4);
-const weapons = weaponsData as Weapon[];
+const usedWeaponIds = new Set<number>();
+for (const u of units) {
+  for (const slot of u.weaponSlots) {
+    for (const opt of slot.options) usedWeaponIds.add(opt.weaponId);
+  }
+}
+const weapons = (weaponsData as Weapon[]).filter((w) => usedWeaponIds.has(w.id));
 const weaponById = new Map(weapons.map((w) => [w.id, w]));
 
 const MAX_TURNS = 25;

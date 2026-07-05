@@ -1,0 +1,93 @@
+{
+  "$schema": "./ability-i18n.schema.json",
+  "generatedAt": "2026-07-04T03:00:00.000Z",
+  "source": "ability-overrides.source.json + game text_repository files",
+  "stats": {
+    "totalAbilities": 62,
+    "matched": 58,
+    "exact": 45,
+    "fuzzy": 10,
+    "manual": 3,
+    "needsReview": 4
+  },
+  "abilities": [
+    {
+      "abilityId": 1,
+      "textId": 12345,
+      "locales": {
+        "en": {
+          "title": "Jump Pack",
+          "description": "Affects casting unit\n\n+2 Movement\n-20% Ranged Accuracy\nIgnores movement penalties from terrain\nExpires in 1 Turn\nWill not provoke pistol reactions when charging"
+        },
+        "zh-CN": {
+          "title": "跳跃背包",
+          "description": "影响施法单位\n\n+2 移动\n-20% 远程精度\n忽略地形移动惩罚\n1回合后失效\n冲锋时不会引发手枪反应"
+        },
+        "zh-TW": {
+          "title": "跳躍背包",
+          "description": "影響施法單位\n\n+2 移動\n-20% 遠程精度\n忽略地形移動懲罰\n1回合後失效\n衝鋒時不會引發手槍反應"
+        },
+        "de": {
+          "title": "Sprungpaket",
+          "description": "Betrifft die wirkende Einheit\n\n+2 Bewegung\n-20% Fernkampfgenauigkeit\nIgnoriert Bewegungsstrafen durch Gelände\nLäuft nach 1 Runde ab\nProvoziert keine Pistolenreaktionen beim Angriff"
+        },
+        "fr": {
+          "title": "Pack de saut",
+          "description": "Affecte l'unité de lancement\n\n+2 Mouvement\n-20% Précision à distance\nIgnore les pénalités de mouvement du terrain\nExpire après 1 tour\nNe provoque pas de réactions de pistolet lors de la charge"
+        },
+        "es": {
+          "title": "Paquete de salto",
+          "description": "Afecta a la unidad lanzadora\n\n+2 Movimiento\n-20% Precisión a distancia\nIgnora penalizaciones de movimiento del terreno\nExpira en 1 turno\nNo provocará reacciones de pistola al cargar"
+        },
+        "ko": {
+          "title": "점프 팩",
+          "description": "시전 유닛에 영향\n\n+2 이동\n-20% 원거리 정확도\n지형 이동 페널티 무시\n1턴 후 만료\n돌격 시 권총 반응을 유발하지 않음"
+        },
+        "pl": {
+          "title": "Pakiet skokowy",
+          "description": "Wpływa na jednostkę rzucającą\n\n+2 Ruch\n-20% Celność dystansowa\nIgnoruje kary ruchu z terenu\nWygasa po 1 turze\nNie wywoła reakcji pistoletowych podczas szarży"
+        },
+        "pt-BR": {
+          "title": "Pacote de salto",
+          "description": "Afeta a unidade lançadora\n\n+2 Movimento\n-20% Precisão de longo alcance\nIgnora penalidades de movimento do terreno\nExpira em 1 turno\nNão provocará reações de pistola ao carregar"
+        },
+        "ru": {
+          "title": "Прыжковый ранец",
+          "description": "Влияет на юнита, использующего способность\n\n+2 Движение\n-20% Точность дальнего боя\nИгнорирует штрафы движения от местности\nДействует 1 ход\nНе вызывает реакций пистолета при атаке"
+        }
+      },
+      "confidence": "exact",
+      "notes": null
+    },
+    {
+      "abilityId": 2,
+      "textId": 12346,
+      "locales": {
+        "en": {
+          "title": "Tactical Precision",
+          "description": "Affects single target ally within 2 tiles\n\n+20% Melee Accuracy\n+20% Ranged Accuracy\n+1 Armor Piercing\nExpires in 1 Turn"
+        },
+        "zh-CN": {
+          "title": "战术精准",
+          "description": "影响2格内的单个目标盟友\n\n+20% 近战精度\n+20% 远程精度\n+1 穿甲\n1回合后失效"
+        },
+        "zh-TW": {
+          "title": "戰術精準",
+          "description": "影響2格內的單個目標盟友\n\n+20% 近戰精度\n+20% 遠程精度\n+1 穿甲\n1回合後失效"
+        }
+      },
+      "confidence": "exact"
+    },
+    {
+      "abilityId": 5,
+      "textId": null,
+      "locales": {
+        "en": {
+          "description": "No match found - manual translation needed"
+        }
+      },
+      "confidence": "manual",
+      "notes": "No matching textId found in game data. Add manual translation or verify extraction."
+    }
+  ]
+}

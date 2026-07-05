@@ -221,7 +221,10 @@ for (const faction of factions) {
     }
 
     const hasConflict = Object.keys({ ...existing, ...resolved }).some(
-      (token) => existing[token] !== undefined && resolved[token] !== undefined && existing[token] !== resolved[token],
+      (token) =>
+        existing[token] !== undefined &&
+        resolved[token] !== undefined &&
+        existing[token] !== resolved[token],
     );
 
     if (hasConflict) {

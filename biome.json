@@ -8,6 +8,7 @@
       "**/dist/**",
       "**/.venv/**",
       "reference/**",
+      "**/src/lib/unit-abilities.ts",
       "**/*.sga",
       "**/*.pak"
     ]

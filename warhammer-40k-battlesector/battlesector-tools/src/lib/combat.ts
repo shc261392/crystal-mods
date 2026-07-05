@@ -2,6 +2,8 @@
 // and the in-game unit panel. Pure functions, shared by pages and tools.
 // See .copilot_workspace/battlesector-data/docs_damage_armor_formula.md
 
+import type { Weapon } from './types';
+
 /**
  * Minimum damage as a fraction of maximum damage. The weapon's `damage` stat is
  * the MAXIMUM; the minimum is `MIN_DAMAGE_MULT * max`. Confirmed = 0.75 from the
@@ -33,7 +35,31 @@ export function damagePerHit(maxDamage: number): number {
   return Math.round((min + max) / 2);
 }
 
-/** Effective armor after AP mitigation. */
+/** Splash damage dealt to secondary models, and how many receive it. */
+export interface SplashInfo {
+  min: number;
+  max: number;
+  /** Number of secondary models that take splash (primary takes full damage). */
+  models: number;
+}
+
+/**
+ * Resolve a weapon's splash damage range. Uses explicit splashMin/splashMax when
+ * set; otherwise derives them from the weapon's damage range and splash falloff:
+ * `splash = floor(damage × (1 − splashFalloff))` for both min and max.
+ * Returns null for non-splash weapons or those hitting only the primary model.
+ */
+export function splashDamage(weapon: Weapon): SplashInfo | null {
+  if (weapon.impactType !== 'splash') return null;
+  const models = Math.max(0, (weapon.splashModels ?? 0) - 1);
+  if (models < 1) return null;
+  const falloff = weapon.splashFalloff ?? 0;
+  const dr = damageRange(weapon.damage);
+  const min = weapon.splashMin ?? Math.floor(dr.min * (1 - falloff));
+  const max = weapon.splashMax ?? Math.floor(dr.max * (1 - falloff));
+  return { min, max, models };
+}
+
 export function effectiveArmor(targetArmor: number, armorPiercing: number): number {
   return Math.max(0, Math.round(targetArmor - armorPiercing));
 }

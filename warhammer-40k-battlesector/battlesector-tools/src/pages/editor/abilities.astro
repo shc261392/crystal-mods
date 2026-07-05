@@ -1,0 +1,138 @@
+---
+import EditorTabs from '../../components/editor/EditorTabs.astro';
+import IconField from '../../components/editor/IconField.astro';
+import IconPickerModal from '../../components/editor/IconPickerModal.astro';
+import NotesField from '../../components/editor/NotesField.astro';
+import abilitySource from '../../data/ability-overrides.source.json';
+import Base from '../../layouts/Base.astro';
+import { units } from '../../lib/data';
+import { buildIconCatalog } from '../../lib/editor-icons';
+
+const catalog = await buildIconCatalog();
+
+type AbilityEntry = {
+  title?: string;
+  icon?: string;
+  description?: string;
+  kind?: 'active' | 'passive';
+  actionPoints?: number;
+  cooldown?: number;
+  notes?: string;
+};
+const entries = abilitySource.entries as Record<string, AbilityEntry>;
+
+// Collect every ability id referenced by a unit, plus any already curated.
+const usageMap = new Map<number, Set<string>>();
+for (const unit of units) {
+  for (const abilityId of unit.abilityIds ?? []) {
+    if (!Number.isInteger(abilityId)) continue;
+    if (!usageMap.has(abilityId)) usageMap.set(abilityId, new Set());
+    usageMap.get(abilityId)?.add(unit.name);
+  }
+}
+const allIds = new Set<number>([...usageMap.keys(), ...Object.keys(entries).map(Number)]);
+const abilities = [...allIds]
+  .sort((a, b) => a - b)
+  .map((id) => ({
+    id,
+    entry: entries[String(id)] ?? {},
+    units: [...(usageMap.get(id) ?? [])].sort((a, b) => a.localeCompare(b)),
+  }));
+
+function iconPreview(icon: string | undefined): string | undefined {
+  if (!icon) return undefined;
+  return icon.startsWith('/') || icon.startsWith('http') ? icon : undefined;
+}
+---
+
+<Base
+  title="Ability Editor"
+  description="Local-only editor for Battlesector ability titles, descriptions, icons, and notes."
+  path="/editor/abilities"
+>
+  <header class="mb-4">
+    <p class="eyebrow mb-2">Editor</p>
+    <h1 class="text-3xl md:text-4xl font-black">Ability Editor</h1>
+    <p class="mt-2 text-[var(--color-muted)] max-w-3xl text-sm">
+      Curate ability titles, descriptions, icons, type, AP/CD, and player field
+      notes. Saving writes <code>src/data/ability-overrides.source.json</code> and
+      regenerates the ability data the site uses.
+    </p>
+  </header>
+
+  <EditorTabs active="abilities" />
+
+  <div class="surface p-4 mb-4 flex flex-wrap items-end gap-3">
+    <label class="flex-1 min-w-[240px]">
+      <span class="label block mb-1.5">Search</span>
+      <input id="editor-search" class="input" type="search" placeholder="Search by id, title, or unit…" autocomplete="off" />
+    </label>
+    <span id="editor-count" class="text-sm text-[var(--color-faint)]"></span>
+  </div>
+
+  <div id="editor-list" class="space-y-4">
+    {abilities.map((a) => (
+      <article
+        data-editor-row
+        data-editor-target="ability"
+        data-editor-id={a.id}
+        data-search={`${a.id} ${a.entry.title ?? ''} ${a.units.join(' ')}`.toLowerCase()}
+        class="surface p-4"
+      >
+        <div class="flex items-center gap-2 mb-3 min-w-0">
+          <span class="text-[var(--color-gold)] font-bold text-sm shrink-0">#{a.id}</span>
+          <h2 class="font-bold truncate">{a.entry.title || `Ability ${a.id}`}</h2>
+          {a.units.length > 0 && (
+            <span class="chip shrink-0" title={a.units.join(', ')}>{a.units.length} unit{a.units.length === 1 ? '' : 's'}</span>
+          )}
+        </div>
+
+        <div class="grid gap-4 lg:grid-cols-[220px_1fr]">
+          <div class="space-y-3">
+            <div>
+              <span class="block text-[11px] font-semibold uppercase tracking-wide text-[var(--color-faint)] mb-1">Icon</span>
+              <IconField field="icon" rowId={a.id} value={a.entry.icon} previewUrl={iconPreview(a.entry.icon)} />
+            </div>
+            <label class="block">
+              <span class="block text-[11px] font-semibold uppercase tracking-wide text-[var(--color-faint)] mb-1">Title</span>
+              <input class="input" data-field="title" value={a.entry.title ?? ''} placeholder={`Ability ${a.id}`} />
+            </label>
+            <div class="grid grid-cols-3 gap-2">
+              <label class="block">
+                <span class="block text-[11px] font-semibold uppercase tracking-wide text-[var(--color-faint)] mb-1">Type</span>
+                <select class="input text-xs px-1" data-field="kind">
+                  <option value="" selected={!a.entry.kind}>—</option>
+                  <option value="active" selected={a.entry.kind === 'active'}>Active</option>
+                  <option value="passive" selected={a.entry.kind === 'passive'}>Passive</option>
+                </select>
+              </label>
+              <label class="block">
+                <span class="block text-[11px] font-semibold uppercase tracking-wide text-[var(--color-faint)] mb-1">AP</span>
+                <input type="number" min="0" step="1" class="input" data-field="actionPoints" value={a.entry.actionPoints ?? ''} />
+              </label>
+              <label class="block">
+                <span class="block text-[11px] font-semibold uppercase tracking-wide text-[var(--color-faint)] mb-1">CD</span>
+                <input type="number" min="0" step="1" class="input" data-field="cooldown" value={a.entry.cooldown ?? ''} />
+              </label>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <label class="block">
+              <span class="block text-[11px] font-semibold uppercase tracking-wide text-[var(--color-faint)] mb-1">Description (EN)</span>
+              <textarea class="input resize-y text-sm" data-field="description" rows="4" placeholder="Full English description…">{a.entry.description ?? ''}</textarea>
+            </label>
+            <NotesField value={a.entry.notes} />
+          </div>
+        </div>
+      </article>
+    ))}
+  </div>
+
+  <IconPickerModal slot="modals" catalog={catalog} />
+
+  <script>
+    import { initEntityEditor } from '../../scripts/editor/entity-editor';
+    initEntityEditor();
+  </script>
+</Base>
