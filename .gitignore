@@ -119,4 +119,5 @@ reference/extracted/
 # exception below — it is hand-authored and must stay git-tracked.
 data/
 !warhammer-40k-battlesector/battlesector-tools/src/data/
+warhammer-40k-battlesector/battlesector-tools/public/ability-icons/
 *.sga
