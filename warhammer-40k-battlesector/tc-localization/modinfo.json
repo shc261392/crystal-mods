@@ -6,7 +6,7 @@
   "author": "Community",
   "category": "Localization",
   "platforms": ["windows", "linux-proton"],
-  "supportedVersions": ["1.3.0"],
+  "supportedVersions": ["1.7.4"],
   "vortex": {
     "extensionId": "game-warhammer40kbattlesector",
     "extensionPath": "../vortex-ext/game-warhammer40kbattlesector"
