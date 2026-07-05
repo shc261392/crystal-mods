@@ -1,162 +1,197 @@
-/*
- * Vortex extension for Warhammer 40,000: Battlesector.
+/**
+ * Vortex Game Extension — Warhammer 40,000: Battlesector
  *
- * - Detects Steam + GOG installs.
- * - Ensures the game data folder is writable.
- * - One-time backup of sharedassets1.assets so users can always revert.
- * - Custom mod type + installer for "asset replacement" mods that ship a
- *   replacement sharedassets1.assets (which is how the WH40K BS modding
- *   community typically distributes localisation / text mods today).
+ * Steam App ID : 1295500
+ * GOG App ID   : 1248481392
+ * Nexus domain : warhammer40kbattlesector
+ * Main exe     : Warhammer 40K Battlesector.exe
  *
- * Reference: https://github.com/Nexus-Mods/Vortex/wiki/How-to-package-a-game-extension
+ * Supported mod types
+ * -------------------
+ *  Generic replacement mods: files packaged with their full deployment paths
+ *  relative to the game root. The extension deploys them as-is.
+ *
+ *  Examples:
+ *    - Data files: Warhammer 40K Battlesector_Data/sharedassets1.assets
+ *    - Bundles: Warhammer 40K Battlesector_Data/*.bundle
+ *    - Catalogs: Warhammer 40K Battlesector_Data/catalog.bin
+ *
+ *  The extension deploys files to the paths they specify, with optional
+ *  wrapper folder stripping for convenience.
+ *
+ *  Backup/restore of overwritten game files (e.g. sharedassets1.assets) is
+ *  handled automatically by Vortex's linking deployment: the original file is
+ *  renamed to `<file>.vortex_backup` on deploy and renamed back on purge. The
+ *  extension therefore does NOT implement its own backup.
  */
+
+'use strict';
 
 const path = require('path');
 const { fs, util } = require('vortex-api');
 
+// ---------------------------------------------------------------------------
+// Constants
+// ---------------------------------------------------------------------------
+
 const GAME_ID = 'warhammer40kbattlesector';
 const STEAM_APP_ID = '1295500';
 const GOG_APP_ID = '1248481392';
-
+const GAME_NAME = 'Warhammer 40,000: Battlesector';
 const GAME_EXE = 'Warhammer 40K Battlesector.exe';
 const DATA_DIR = 'Warhammer 40K Battlesector_Data';
 const SHARED_ASSETS = 'sharedassets1.assets';
-const BACKUP_SUFFIX = '.vortex-backup';
+
+/**
+ * Known first-level game directories used to detect game-root-relative
+ * archives (layout already correct, no stripping needed).
+ */
+const ROOT_GAME_DIRS = [
+  'D3D12',
+  'dotnet',
+  'Launcher',
+  'Manuals',
+  'Wallpapers',
+  'Warhammer 40K Battlesector_Data',
+];
+
+// ---------------------------------------------------------------------------
+// Game discovery
+// ---------------------------------------------------------------------------
 
 function findGame() {
-  return util.GameStoreHelper.findByAppId([STEAM_APP_ID, GOG_APP_ID])
-    .then(game => game.gamePath);
+  return util.GameStoreHelper.findByAppId([STEAM_APP_ID, GOG_APP_ID]).then((game) => game.gamePath);
 }
 
-function dataDirOf(discovery) {
-  return path.join(discovery.path, DATA_DIR);
+// ---------------------------------------------------------------------------
+// Setup / prepare
+// ---------------------------------------------------------------------------
+
+/**
+ * Ensures the game directory is writable so Vortex can deploy mods.
+ * Vortex auto-creates subdirectories during deployment and automatically
+ * backs up any overwritten original files as `<file>.vortex_backup`,
+ * restoring them on purge — so no manual backup is required here.
+ *
+ * @param {object} discovery  IDiscoveryResult — contains `.path`
+ */
+function prepareForModding(discovery) {
+  return fs.ensureDirWritableAsync(discovery.path);
 }
 
-async function backupSharedAssets(api, discovery) {
-  const target = path.join(dataDirOf(discovery), SHARED_ASSETS);
-  const backup = target + BACKUP_SUFFIX;
-  try {
-    await fs.statAsync(backup);
-    return; // already have a backup, never overwrite it
-  } catch (err) {
-    // backup missing -> create it
-  }
-  try {
-    await fs.statAsync(target);
-  } catch (err) {
-    // original file missing — nothing to back up; treat as soft failure
-    api.sendNotification({
-      id: 'wh40k-bs-no-asset',
-      type: 'warning',
-      message: `${SHARED_ASSETS} not found in game data folder. Re-verify game files via Steam/GOG.`,
-      allowSuppress: true,
+// ---------------------------------------------------------------------------
+// Installer: generic mod  (priority 20)
+// ---------------------------------------------------------------------------
+
+/**
+ * Accepts all mods for this game. The extension handles any file layout
+ * by deploying files to their specified paths (with optional wrapper stripping).
+ *
+ * @param {string[]} files   List of paths inside the archive.
+ * @param {string}   gameId  Active game ID.
+ */
+function testModContent(files, gameId) {
+  return Promise.resolve({
+    supported: gameId === GAME_ID,
+    requiredFiles: [],
+  });
+}
+
+/**
+ * Installs mod files by deploying them to their specified paths.
+ *
+ * Handles two archive layouts:
+ *
+ *   A) Game-root-relative (files start with known game directories):
+ *        Warhammer 40K Battlesector_Data/sharedassets1.assets  →  Warhammer 40K Battlesector_Data/sharedassets1.assets
+ *        Warhammer 40K Battlesector_Data/catalog.bin           →  Warhammer 40K Battlesector_Data/catalog.bin
+ *
+ *   B) Wrapped in a single top-level folder (auto-strips wrapper):
+ *        wh40k-battlesector-tc-v1.0/Warhammer 40K Battlesector_Data/sharedassets1.assets
+ *        → Warhammer 40K Battlesector_Data/sharedassets1.assets
+ *
+ * @param {string[]} files  Archive file list.
+ */
+function installModContent(files) {
+  // Normalize all paths to forward slashes (Vortex internal format)
+  const normalized = files.map((f) => f.replace(/\\/g, '/')).filter((f) => !f.endsWith('/'));
+
+  // Helper: Check if path starts with a known game directory (case-insensitive)
+  const startsWithGameDir = (filePath) =>
+    ROOT_GAME_DIRS.some((dir) => filePath.toLowerCase().startsWith(`${dir.toLowerCase()}/`));
+
+  // Layout A — Files already start with game root directories
+  if (normalized.some(startsWithGameDir)) {
+    return Promise.resolve({
+      instructions: normalized.map((source) => ({
+        type: 'copy',
+        source,
+        destination: path.normalize(source),
+      })),
     });
-    return;
   }
-  try {
-    await fs.copyAsync(target, backup);
-    api.sendNotification({
-      id: 'wh40k-bs-backup-done',
-      type: 'info',
-      message: `Backed up ${SHARED_ASSETS} (so you can always revert).`,
-      displayMS: 6000,
+
+  // Detect potential wrapper folder
+  const topLevelDirs = [...new Set(normalized.map((f) => f.split('/')[0]))].filter(Boolean);
+  const hasSingleWrapper = topLevelDirs.length === 1;
+  const hasNestedContent = normalized.some((f) => f.includes('/'));
+
+  // Layout B — Single wrapper folder containing actual mod files
+  if (hasSingleWrapper && hasNestedContent) {
+    const wrapper = topLevelDirs[0];
+
+    return Promise.resolve({
+      instructions: normalized.map((source) => {
+        // Strip the wrapper folder using path.posix.relative
+        const relative = path.posix.relative(wrapper, source);
+        return {
+          type: 'copy',
+          source,
+          destination: path.normalize(relative),
+        };
+      }),
     });
-  } catch (err) {
-    api.showErrorNotification(
-      `Failed to back up ${SHARED_ASSETS}`,
-      err,
-      { allowReport: false }
-    );
   }
-}
 
-async function prepareForModding(api, discovery) {
-  await fs.ensureDirWritableAsync(dataDirOf(discovery));
-  await backupSharedAssets(api, discovery);
-}
-
-// Mod type: a mod is treated as an "asset replacement" mod if it contains
-// a sharedassets1.assets at the archive root. We route the file into the
-// game's *_Data folder by reporting that path as the mod root.
-function getAssetModPath(api) {
-  const state = api.store.getState();
-  const discovery = util.getSafe(state, ['settings', 'gameMode', 'discovered', GAME_ID], undefined);
-  if (!discovery || !discovery.path) {
-    return undefined;
-  }
-  return dataDirOf(discovery);
-}
-
-function isAssetReplacementMod(instructions) {
-  return Promise.resolve(
-    instructions.some(inst =>
-      inst.type === 'copy'
-      && inst.destination
-      && path.basename(inst.destination).toLowerCase() === SHARED_ASSETS
-    )
-  );
-}
-
-function testSharedAssetsArchive(files, gameId) {
-  if (gameId !== GAME_ID) {
-    return Promise.resolve({ supported: false, requiredFiles: [] });
-  }
-  const hit = files.find(f =>
-    path.basename(f).toLowerCase() === SHARED_ASSETS
-  );
-  return Promise.resolve({ supported: !!hit, requiredFiles: [] });
-}
-
-function installSharedAssetsArchive(files) {
-  // Flatten: take everything from the archive and place it relative to the
-  // mod root. The shared-assets mod type then maps mod root -> game _Data.
-  const instructions = files
-    .filter(f => !f.endsWith(path.sep))
-    .map(f => ({
+  // Fallback — Deploy files as-is
+  return Promise.resolve({
+    instructions: normalized.map((source) => ({
       type: 'copy',
-      source: f,
-      // strip any leading folder so sharedassets1.assets lands at the root
-      destination: path.basename(f),
-    }));
-  return Promise.resolve({ instructions });
+      source,
+      destination: path.normalize(source),
+    })),
+  });
 }
+
+// ---------------------------------------------------------------------------
+// Main entry point
+// ---------------------------------------------------------------------------
 
 function main(context) {
   context.registerGame({
     id: GAME_ID,
-    name: 'Warhammer 40,000: Battlesector',
+    name: GAME_NAME,
     mergeMods: true,
     queryPath: findGame,
+    supportedTools: [],
     queryModPath: () => '.',
-    logo: 'gameart.png',
+    logo: 'gameart.jpg',
     executable: () => GAME_EXE,
-    requiredFiles: [
-      GAME_EXE,
-      path.join(DATA_DIR, SHARED_ASSETS),
-    ],
-    setup: (discovery) => prepareForModding(context.api, discovery),
-    environment: { SteamAPPId: STEAM_APP_ID },
+    requiredFiles: [GAME_EXE, path.join(DATA_DIR, SHARED_ASSETS)],
+    setup: prepareForModding,
+    environment: {
+      SteamAPPId: STEAM_APP_ID,
+    },
     details: {
       steamAppId: parseInt(STEAM_APP_ID, 10),
       gogAppId: GOG_APP_ID,
+      nexusPageId: GAME_ID,
     },
   });
 
-  context.registerModType(
-    'wh40k-bs-shared-assets',
-    25,
-    (gameId) => gameId === GAME_ID,
-    () => getAssetModPath(context.api),
-    isAssetReplacementMod,
-    { mergeMods: false, name: 'Shared Assets Replacement' }
-  );
-
-  context.registerInstaller(
-    'wh40k-bs-sharedassets-installer',
-    25,
-    testSharedAssetsArchive,
-    installSharedAssetsArchive
-  );
+  // Generic mod installer — handles all replacement mods by deploying
+  // files to their specified paths.
+  context.registerInstaller('battlesector-mod', 20, testModContent, installModContent);
 
   return true;
 }
