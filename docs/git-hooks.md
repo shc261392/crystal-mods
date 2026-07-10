@@ -59,7 +59,13 @@ The hook is already installed in this repository. If you clone to a new location
 ### Purpose
 Enforces visual verification for UI changes to prevent broken deployments.
 
-**AGENTS.md Rule #9**: AI agents must visually verify UI changes using browser tools before claiming completion.
+**AGENTS.md Rule #9**: AI agents must:
+1. Visually verify UI changes using browser tools
+2. Take screenshot showing the working feature
+3. **Show screenshot to user and get explicit approval**
+4. Include verification evidence in commit message
+
+**Human approval is required** - agents can misinterpret visual results.
 
 ### How It Works
 1. Detects if commit modifies UI files:

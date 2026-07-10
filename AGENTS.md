@@ -47,10 +47,12 @@ linked under "Progressive disclosure" below.
    - **MUST use browser tools** (`open_browser_page`, `screenshot_page`) to verify
      changes visually before claiming completion
    - **MUST take screenshot** showing the working feature as proof
+   - **MUST show screenshot to user and get explicit approval** before committing
    - **MUST include verification evidence** in commit message: `[verified]`,
      `screenshot:`, `tested in browser:`, `dev server:`, or `visual test:`
-   - **Claiming "done" without browser verification is a critical error**
-   - The commit-msg hook enforces this - commits without evidence will be blocked
+   - **Claiming "done" without browser verification + human approval is a critical error**
+   - The commit-msg hook enforces commit message evidence
+   - Human review is the final gatekeeper - agents can make visual interpretation mistakes
 
 ## Repository contract
 

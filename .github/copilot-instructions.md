@@ -21,8 +21,8 @@ This file mirrors them for GitHub Copilot's auto-loading convention. **Read
    ships with Chinese locale; all deployments must preserve this. For other
    projects, apply locale preservation rules as appropriate to that game.
 8. **UI changes require browser verification**: Changes to pages/components/layouts
-   MUST be verified visually using browser tools before claiming completion.
-   Include `[verified]` or verification description in commit messages.
+   MUST be verified visually using browser tools, screenshot shown to user for
+   approval, then include `[verified]` in commit message. Human approval required.
 
 ## Progressive disclosure index
 
