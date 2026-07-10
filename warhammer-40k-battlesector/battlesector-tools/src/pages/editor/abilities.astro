@@ -4,6 +4,7 @@ import IconField from '../../components/editor/IconField.astro';
 import IconPickerModal from '../../components/editor/IconPickerModal.astro';
 import NotesField from '../../components/editor/NotesField.astro';
 import abilitySource from '../../data/ability-overrides.source.json';
+import imageUrls from '../../data/image-urls.json';
 import Base from '../../layouts/Base.astro';
 import { units } from '../../lib/data';
 import { buildIconCatalog } from '../../lib/editor-icons';
@@ -140,6 +141,8 @@ function iconPreview(icon: string | undefined): string | undefined {
   </div>
 
   <IconPickerModal slot="modals" catalog={catalog} />
+  <!-- Embed image URL mapping for client-side icon resolution -->
+  <script id="editor-image-urls" type="application/json" set:html={JSON.stringify(imageUrls)}></script>
 
   <script>
     import { initEntityEditor } from '../../scripts/editor/entity-editor';

@@ -6,6 +6,7 @@ import IconPickerModal from '../../components/editor/IconPickerModal.astro';
 import NotesField from '../../components/editor/NotesField.astro';
 import NumField from '../../components/editor/NumField.astro';
 import SelectField from '../../components/editor/SelectField.astro';
+import imageUrls from '../../data/image-urls.json';
 import Base from '../../layouts/Base.astro';
 import { allUnits, allWeapons } from '../../lib/data';
 import { buildIconCatalog, resolveIconUrl } from '../../lib/editor-icons';
@@ -136,6 +137,8 @@ const WEAPON_TYPE_OPTIONS = [
   </div>
 
   <IconPickerModal slot="modals" catalog={catalog} />
+  <!-- Embed image URL mapping for client-side icon resolution -->
+  <script id="editor-image-urls" type="application/json" set:html={JSON.stringify(imageUrls)}></script>
 
   <script>
     import { initEntityEditor } from '../../scripts/editor/entity-editor';

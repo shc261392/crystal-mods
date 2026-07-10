@@ -14,6 +14,38 @@ import { migrateStorage } from './migrate-storage.ts';
 
 const NOTE_WORD_LIMIT = 100;
 
+/** Read embedded image URLs mapping for client-side icon resolution */
+interface ImageUrlMap {
+  units?: Record<string, { url: string; source?: string }>;
+  weapons?: Record<string, { url: string; source?: string }>;
+}
+
+let imageUrlsCache: ImageUrlMap | null = null;
+
+function getImageUrls(): ImageUrlMap {
+  if (imageUrlsCache) return imageUrlsCache;
+  const el = document.getElementById('editor-image-urls');
+  if (!el) return {};
+  try {
+    imageUrlsCache = JSON.parse(el.textContent ?? '{}') as ImageUrlMap;
+    return imageUrlsCache;
+  } catch {
+    return {};
+  }
+}
+
+/** Resolve icon key to URL (client-side version of resolveIconUrl) */
+function resolveIconKey(value: string, kind: 'units' | 'weapons'): string {
+  // Already a full URL or path
+  if (value.startsWith('/') || value.startsWith('http')) return value;
+
+  // Try to resolve from image-urls mapping
+  const urls = getImageUrls();
+  const map = urls[kind] ?? {};
+  const resolved = map[value];
+  return resolved?.url ?? '';
+}
+
 /** Storage key for entity data: bs-editor-data:weapon */
 function storageKey(target: EditorTarget): string {
   return `bs-editor-data:${target}`;
@@ -106,12 +138,27 @@ function updateIconPreview(row: HTMLElement): void {
   const img = row.querySelector<HTMLImageElement>('[data-icon-preview]');
   const empty = row.querySelector<HTMLElement>('[data-icon-empty]');
   if (!input || !img || !empty) return;
+
   const val = input.value.trim();
-  if (val.length > 0) {
-    img.src = val.startsWith('/') || val.startsWith('http') ? val : '';
-    img.classList.toggle('hidden', img.src === '');
-    empty.classList.toggle('hidden', img.src !== '');
+  if (val.length === 0) {
+    img.classList.add('hidden');
+    empty.classList.remove('hidden');
+    return;
+  }
+
+  // Determine entity type from field name
+  const isUnitPortrait = ds(input, 'field') === 'portrait';
+  const kind: 'units' | 'weapons' = isUnitPortrait ? 'units' : 'weapons';
+
+  // Resolve icon key to URL
+  const resolvedUrl = resolveIconKey(val, kind);
+
+  if (resolvedUrl.length > 0) {
+    img.src = resolvedUrl;
+    img.classList.remove('hidden');
+    empty.classList.add('hidden');
   } else {
+    // Couldn't resolve - hide icon
     img.classList.add('hidden');
     empty.classList.remove('hidden');
   }
