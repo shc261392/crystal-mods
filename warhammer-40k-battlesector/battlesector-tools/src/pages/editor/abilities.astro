@@ -5,9 +5,11 @@ import IconPickerModal from '../../components/editor/IconPickerModal.astro';
 import NotesField from '../../components/editor/NotesField.astro';
 import abilitySource from '../../data/ability-overrides.source.json';
 import imageUrls from '../../data/image-urls.json';
+import weaponsData from '../../data/weapons.json';
 import Base from '../../layouts/Base.astro';
-import { units, weapons } from '../../lib/data';
+import { units } from '../../lib/data';
 import { buildIconCatalog } from '../../lib/editor-icons';
+import type { Weapon } from '../../lib/types';
 
 const catalog = await buildIconCatalog();
 
@@ -33,7 +35,8 @@ for (const unit of units) {
 }
 
 const weaponUsageMap = new Map<number, Set<string>>();
-for (const weapon of weapons) {
+const allWeapons = weaponsData as Weapon[];
+for (const weapon of allWeapons) {
   for (const ability of weapon.abilities ?? []) {
     const abilityId = ability.Ability;
     if (!Number.isInteger(abilityId)) continue;
