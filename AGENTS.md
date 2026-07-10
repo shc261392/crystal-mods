@@ -42,6 +42,15 @@ linked under "Progressive disclosure" below.
      deletion), and get explicit user approval before proceeding.
    - **Examples requiring this process**: `git-filter-repo`, `git push --force`,
      `rm -rf`, database migrations, production deployments, batch file operations.
+9. **CRITICAL: UI verification mandate**: For any change to `src/pages/`,
+   `src/components/`, `src/layouts/`, or stylesheets:
+   - **MUST use browser tools** (`open_browser_page`, `screenshot_page`) to verify
+     changes visually before claiming completion
+   - **MUST take screenshot** showing the working feature as proof
+   - **MUST include verification evidence** in commit message: `[verified]`,
+     `screenshot:`, `tested in browser:`, `dev server:`, or `visual test:`
+   - **Claiming "done" without browser verification is a critical error**
+   - The commit-msg hook enforces this - commits without evidence will be blocked
 
 ## Repository contract
 
