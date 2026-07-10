@@ -130,6 +130,13 @@ const sorted = [...weapons].sort((a, b) => a.name.localeCompare(b.name));
                     <span class="chip !py-0.5 !px-1.5 text-[10px] !text-[var(--color-plasma)]">Tile-hit</span>
                   </Tooltip>
                 )}
+                {w.abilities && w.abilities.length > 0 && (
+                  <Tooltip text={`Has ${w.abilities.length} ${w.abilities.length === 1 ? 'ability' : 'abilities'}`}>
+                    <span class="chip !py-0.5 !px-1.5 text-[10px] !text-[var(--color-plasma)]">
+                      ⚡ {w.abilities.length}
+                    </span>
+                  </Tooltip>
+                )}
               </div>
               <p class="text-xs text-[var(--color-faint)] mt-1">
                 {dmg.min}–{dmg.max} <span data-i18n-ui="common.damageShort">dmg</span>

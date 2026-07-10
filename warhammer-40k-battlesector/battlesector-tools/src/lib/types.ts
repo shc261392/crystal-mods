@@ -92,6 +92,8 @@ export interface Weapon {
   notes?: string;
   /** When true, the weapon is excluded from the public site (editor-only). */
   hidden?: boolean;
+  /** Weapon abilities (extracted from game data, optional). */
+  abilities?: Array<{ Ability: number; StartsLocked: number }>;
 }
 
 export interface Faction {
