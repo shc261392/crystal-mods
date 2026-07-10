@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
+    "editor": "astro dev --port 4324",
+    "prebuild": "node ./scripts/generate-ability-ui.ts",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "predeploy-check": "node ./scripts/predeploy-check.ts",
@@ -21,7 +23,8 @@
     "format": "biome format --write . --vcs-enabled=true --vcs-use-ignore-file=true"
   },
   "dependencies": {
-    "astro": "^5.3.4"
+    "astro": "^5.3.4",
+    "katex": "^0.17.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",

@@ -7,12 +7,24 @@ import NotesField from '../../components/editor/NotesField.astro';
 import NumField from '../../components/editor/NumField.astro';
 import SelectField from '../../components/editor/SelectField.astro';
 import Base from '../../layouts/Base.astro';
-import { allWeapons } from '../../lib/data';
+import { allUnits, allWeapons } from '../../lib/data';
 import { buildIconCatalog, resolveIconUrl } from '../../lib/editor-icons';
 import { resolveWeaponType } from '../../lib/weapon-display';
 
 const catalog = await buildIconCatalog();
 const sorted = [...allWeapons].sort((a, b) => a.name.localeCompare(b.name));
+
+const weaponCarrierNames = new Map<number, string[]>();
+for (const unit of allUnits) {
+  for (const slot of unit.weaponSlots) {
+    for (const opt of slot.options) {
+      const existing = weaponCarrierNames.get(opt.weaponId) ?? [];
+      if (!existing.includes(unit.name)) existing.push(unit.name);
+      weaponCarrierNames.set(opt.weaponId, existing);
+    }
+  }
+}
+for (const names of weaponCarrierNames.values()) names.sort((a, b) => a.localeCompare(b));
 
 const WEAPON_TYPE_OPTIONS = [
   { value: 'melee', label: 'Melee' },
@@ -46,13 +58,20 @@ const WEAPON_TYPE_OPTIONS = [
     <span id="editor-count" class="text-sm text-[var(--color-faint)]"></span>
   </div>
 
-  <div id="editor-list" class="space-y-4">
+  <div id="editor-list" class="space-y-4" style="display:none">
     {sorted.map((w) => (
+      (() => {
+        const carriers = weaponCarrierNames.get(w.id) ?? [];
+        const carrierInfo =
+          carriers.length > 0
+            ? carriers.join(', ')
+            : 'No unit in the game is currently associated with this weapon.';
+        return (
       <article
         data-editor-row
         data-editor-target="weapon"
         data-editor-id={w.id}
-        data-search={`${w.id} ${w.name} ${resolveWeaponType(w)}`.toLowerCase()}
+        data-search={`${w.id} ${w.name} ${resolveWeaponType(w)} ${carriers.join(' ')}`.toLowerCase()}
         class="surface p-4"
       >
         <div class="flex items-center gap-2 mb-3 min-w-0">
@@ -62,6 +81,11 @@ const WEAPON_TYPE_OPTIONS = [
           {w.pistol && <span class="chip shrink-0">Pistol</span>}
           {w.hidden && <span class="chip shrink-0 !text-[var(--color-blood)]">Hidden</span>}
         </div>
+
+        <p class="text-xs text-[var(--color-faint)] mb-3">
+          <span class="font-semibold text-[var(--color-muted)]">Carried by: </span>
+          {carrierInfo}
+        </p>
 
         <div class="grid gap-4 lg:grid-cols-[220px_1fr]">
           <div class="space-y-3">
@@ -106,6 +130,8 @@ const WEAPON_TYPE_OPTIONS = [
           </div>
         </div>
       </article>
+        );
+      })()
     ))}
   </div>
 

@@ -51,13 +51,35 @@ DIST_DIR        = os.environ.get("MOD_DIST_DIR", os.path.join(REPO_ROOT, "transl
 
 SA_REL = os.path.join("Warhammer 40K Battlesector_Data", "StreamingAssets")
 
-BUNDLE_NAME = "mapbuildertools_assets_all.bundle"
+MAPBUILDER_BUNDLE_CANDIDATES = [
+    "mapbuilder-tools_assets_all.bundle",
+    "mapbuildertools_assets_all.bundle",
+]
+UA_BUNDLE_CANDIDATES = [
+    "startup_assets_all.bundle",
+    "unknownassets_assets_all_12cf1b4aeb7c9355f8487758e37a43d2.bundle",
+]
+
+
+def _resolve_bundle_name(candidates: list[str]) -> str:
+    for candidate in candidates:
+        if os.path.isfile(os.path.join(DIST_DIR, candidate)):
+            return candidate
+        if os.path.isfile(os.path.join(MOD_BACKUP_DIR, SA_REL, candidate)):
+            return candidate
+        if os.path.isfile(os.path.join(GAME_DIR, SA_REL, candidate)):
+            return candidate
+    return candidates[0]
+
+
+BUNDLE_NAME = _resolve_bundle_name(MAPBUILDER_BUNDLE_CANDIDATES)
+UA_BUNDLE_NAME = _resolve_bundle_name(UA_BUNDLE_CANDIDATES)
+
 # Read the pristine mapbuildertools bundle from the installation backup so
 # repeated runs always start from the original game data.
 BUNDLE_SRC  = os.path.join(MOD_BACKUP_DIR, SA_REL, BUNDLE_NAME)
 BUNDLE_DIST = os.path.join(DIST_DIR, BUNDLE_NAME)
 
-UA_BUNDLE_NAME = "unknownassets_assets_all_12cf1b4aeb7c9355f8487758e37a43d2.bundle"
 UA_DIST = os.path.join(DIST_DIR, UA_BUNDLE_NAME)
 
 # NotoSansCJKjp-Regular Font object (binary) in unknownassets bundle

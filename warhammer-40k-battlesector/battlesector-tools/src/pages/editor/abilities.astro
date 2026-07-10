@@ -70,8 +70,14 @@ function iconPreview(icon: string | undefined): string | undefined {
     <span id="editor-count" class="text-sm text-[var(--color-faint)]"></span>
   </div>
 
-  <div id="editor-list" class="space-y-4">
+  <div id="editor-list" class="space-y-4" style="display:none">
     {abilities.map((a) => (
+      (() => {
+        const usedByInfo =
+          a.units.length > 0
+            ? a.units.join(', ')
+            : 'No unit in the game is currently associated with this ability.';
+        return (
       <article
         data-editor-row
         data-editor-target="ability"
@@ -82,10 +88,12 @@ function iconPreview(icon: string | undefined): string | undefined {
         <div class="flex items-center gap-2 mb-3 min-w-0">
           <span class="text-[var(--color-gold)] font-bold text-sm shrink-0">#{a.id}</span>
           <h2 class="font-bold truncate">{a.entry.title || `Ability ${a.id}`}</h2>
-          {a.units.length > 0 && (
-            <span class="chip shrink-0" title={a.units.join(', ')}>{a.units.length} unit{a.units.length === 1 ? '' : 's'}</span>
-          )}
         </div>
+
+        <p class="text-xs text-[var(--color-faint)] mb-3">
+          <span class="font-semibold text-[var(--color-muted)]">Used by: </span>
+          {usedByInfo}
+        </p>
 
         <div class="grid gap-4 lg:grid-cols-[220px_1fr]">
           <div class="space-y-3">
@@ -126,6 +134,8 @@ function iconPreview(icon: string | undefined): string | undefined {
           </div>
         </div>
       </article>
+        );
+      })()
     ))}
   </div>
 

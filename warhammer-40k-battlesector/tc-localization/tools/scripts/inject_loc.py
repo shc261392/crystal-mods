@@ -51,7 +51,22 @@ MOD_BACKUP_DIR  = os.environ.get("MOD_BACKUP_DIR", os.path.join(GAME_DIR, ".zh-t
 GAME_DATA_REL = "Warhammer 40K Battlesector_Data"
 SA_REL        = os.path.join(GAME_DATA_REL, "StreamingAssets")
 
-BUNDLE_FILENAME = "unknownassets_assets_all_12cf1b4aeb7c9355f8487758e37a43d2.bundle"
+BUNDLE_CANDIDATES = [
+    "startup_assets_all.bundle",
+    "unknownassets_assets_all_12cf1b4aeb7c9355f8487758e37a43d2.bundle",
+]
+
+
+def _resolve_bundle_filename() -> str:
+    for candidate in BUNDLE_CANDIDATES:
+        backup_candidate = os.path.join(MOD_BACKUP_DIR, SA_REL, candidate)
+        game_candidate = os.path.join(GAME_DIR, SA_REL, candidate)
+        if os.path.isfile(backup_candidate) or os.path.isfile(game_candidate):
+            return candidate
+    return BUNDLE_CANDIDATES[0]
+
+
+BUNDLE_FILENAME = _resolve_bundle_filename()
 LOC_PATH_ID = 3644
 
 # All inputs come from the installation backup (pristine originals).
@@ -59,6 +74,7 @@ ASSETS_FILE       = os.path.join(MOD_BACKUP_DIR, GAME_DATA_REL, "sharedassets1.a
 BUNDLE_FILE       = os.path.join(MOD_BACKUP_DIR, SA_REL, BUNDLE_FILENAME)
 CATALOG_FILE      = os.path.join(MOD_BACKUP_DIR, SA_REL, "aa", "catalog.bin")
 CATALOG_HASH_FILE = os.path.join(MOD_BACKUP_DIR, SA_REL, "aa", "catalog.hash")
+ENABLE_CATALOG_PATCH = os.environ.get("MOD_ENABLE_CATALOG_PATCH", "0") == "1"
 
 # UnityFS data block starts after 16-byte-aligned blocks_info; for this bundle
 # the data block begins at file offset 160.  Unity computes CRC32 over these bytes.
@@ -392,9 +408,14 @@ def main() -> None:
 
             print(f"  Bundle size: {len(bundle_raw):,} bytes (unchanged)")
 
-            # Patch catalog.bin CRC32 to match the new bundle data
-            print(f"\n  Patching catalog CRC32...")
-            _patch_catalog(bundle_raw, DIST_DIR)
+            # Catalog patching is disabled by default because incorrect binary
+            # offsets can corrupt catalog.bin and hard-freeze startup.
+            if ENABLE_CATALOG_PATCH:
+                print(f"\n  Patching catalog CRC32...")
+                _patch_catalog(bundle_raw, DIST_DIR)
+            else:
+                print("\n  Skipping catalog patch (MOD_ENABLE_CATALOG_PATCH!=1).")
+                print("  deploy.sh will use pristine catalog.bin/catalog.hash from backup.")
     else:
         print(f"\nNOTE: Bundle not found at expected path — skipping bundle patch.")
         print(f"  {BUNDLE_FILE}")

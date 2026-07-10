@@ -131,6 +131,10 @@ const PORTRAIT_RULES: Array<[RegExp, string]> = [
  * Selection-portraits set), falling back to name-pattern rules. */
 export function getUnitPortrait(unitName: string, portraitKey?: string): string | null {
   if (portraitKey) {
+    // If portraitKey is already a full URL (from editor), return it directly
+    if (portraitKey.startsWith('http://') || portraitKey.startsWith('https://')) {
+      return portraitKey;
+    }
     const url = getImageUrl('units', portraitKey);
     if (url) return url;
   }
@@ -149,5 +153,9 @@ export function getWeaponTypeIcon(weaponType: string): string | null {
 /** Resolve a weapon's in-game icon (the UI_WPN_* sprite) by its icon key. */
 export function getWeaponPortrait(iconKey?: string): string | null {
   if (!iconKey) return null;
+  // If iconKey is already a full URL (from editor), return it directly
+  if (iconKey.startsWith('http://') || iconKey.startsWith('https://')) {
+    return iconKey;
+  }
   return getImageUrl('weapons', iconKey);
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T21:04:47.422Z",
+  "generatedAt": "2026-07-10T09:14:14.794Z",
   "storageKey": "bs.ability-overrides.v1",
   "entries": {
     "1": {
@@ -8,7 +8,8 @@
       "description": "Affects casting unit\n\n+2 Movement\n-20% Ranged Accuracy\nIgnores movement penalties from terrain\nExpires in 1 Turn\nWill not provoke pistol reactions when charging",
       "kind": "active",
       "actionPoints": 0,
-      "cooldown": 2
+      "cooldown": 2,
+      "notes": "- Cancellable: can be cancelled until actual moving the unit. Player can always activate the ability and preview how far the unit can move and which terrain it can bypass and cancel it by clicking it again or deselect the unit."
     },
     "2": {
       "title": "Tactical Precision",
@@ -80,7 +81,8 @@
       "description": "Deals 67-90 damage to a single enemy model within 3 tiles with additional splash damage.\n\nArmor Piercing: 7\n\nAmmunition: 2/2",
       "kind": "active",
       "actionPoints": 1,
-      "cooldown": 2
+      "cooldown": 2,
+      "notes": "- Can target empty tile"
     },
     "12": {
       "title": "Frag Grenade",
@@ -232,7 +234,8 @@
       "description": "Has a 35% chance to trigger when the Death Company unit kills an enemy model. Stacks up to 5 times.\n\n+5 Melee Damage\n-10 Ranged Accuracy\n-10 Evasion",
       "kind": "passive",
       "actionPoints": 0,
-      "cooldown": 0
+      "cooldown": 0,
+      "notes": "- Can be triggered by both ranged and melee attack. An useful tip is to use the flamer to kill weak mob unit to stack this ability."
     },
     "33": {
       "title": "Fearless",
@@ -256,7 +259,8 @@
       "description": "Uses the unit's jump pack to dive onto an enemy, dealing 30-40 splash damage with 2 armor piercing against up to 6 models. This counts as a charge attack.",
       "kind": "active",
       "actionPoints": 1,
-      "cooldown": 3
+      "cooldown": 3,
+      "notes": "- Consumes MP: as it counts as a charge attack, moving with this ability consumes the unit's MP like a charge attack."
     },
     "39": {
       "title": "Terminator Deep Strike",
@@ -485,6 +489,70 @@
       "kind": "active",
       "actionPoints": 1,
       "cooldown": 1
+    },
+    "20000": {
+      "actionPoints": 0,
+      "cooldown": 3,
+      "icon": "/ability-icons/BlessedAmmunitionIcon.png",
+      "title": "Blessed Ammunition",
+      "description": "Affects casting unit\n\n+50% Ranged Damage\n-10 Graze Chance when attacking\nExpires in 1 Turn\n\nAmmunition: 2/2",
+      "kind": "active"
+    },
+    "20001": {
+      "title": "Shield of Faith",
+      "actionPoints": 0,
+      "cooldown": 0,
+      "icon": "/ability-icons/ShieldOfFaithIcon.png",
+      "description": "When an enemy unit targets this unit with a weapon attack, this unit immediately gains a stack of Shield of Faith, which gives:\n\n+0.6 Ranged Armor\n+0.6 Melee Armor\nExpires in 2 Turns.\n\nStacks up to 3 times.",
+      "kind": "passive"
+    },
+    "20009": {
+      "actionPoints": 0,
+      "cooldown": 0,
+      "description": "Capacity limits\n\nUnit: 3\nModels: 11",
+      "icon": "/ability-icons/transportIcon.png",
+      "title": "Transport",
+      "kind": "passive"
+    },
+    "20018": {
+      "actionPoints": 0,
+      "cooldown": 1,
+      "title": "Zealous Frenzy",
+      "kind": "active",
+      "description": "This unit enters a zealous frenzy. Each member has a 30% chance to attack itself for 15-20 damage and also gains:\n\n+1 Movement\n+1 Armor Piercing\n-15 Evasion\nCannot be Suppressed\nExpires in 1 Turn",
+      "icon": "/ability-icons/ZealousFrenzyIcon.png"
+    },
+    "20024": {
+      "actionPoints": 0,
+      "cooldown": 0,
+      "kind": "passive",
+      "title": "Self Repair",
+      "icon": "/ability-icons/SelfRepairIcon.png",
+      "description": "+30 Health Per Turn"
+    },
+    "20029": {
+      "actionPoints": 0,
+      "cooldown": 0,
+      "title": "Blessed Hull",
+      "kind": "passive",
+      "icon": "/ability-icons/BlessedHullIcon.png",
+      "description": "When hit by an enemy attack, this unit gains a stack of Blessed Hull giving:\n\n-3% Damage Received\nExpires in 2 Turns.\n\nStacks up to 5 times."
+    },
+    "20031": {
+      "title": "Absolution In Battle",
+      "actionPoints": 0,
+      "cooldown": 0,
+      "kind": "passive",
+      "description": "Whenever this unit makes a weapon attack OR whenever a model in this unit is killed, it will gain a stack of Absolution In Battle, which gives:\n\n+5 Melee Accuracy\n+5 Graze Chance when attacked.\n\nPenitent Engines gain two stacks when making a weapon attack\n\nStacks up to 5 times.",
+      "icon": "/ability-icons/AbsolutionInBattleIcon.png"
+    },
+    "20033": {
+      "actionPoints": 0,
+      "cooldown": 1,
+      "icon": "/ability-icons/DivineInspirationIcon.png",
+      "title": "Divine Inspiration",
+      "description": "Convert all Shield of Faith stacks into Divine Inspiration stacks, which give:\n\n+10 Momentum per stack for 1 turn.",
+      "kind": "active"
     },
     "30010": {
       "title": "Hover",

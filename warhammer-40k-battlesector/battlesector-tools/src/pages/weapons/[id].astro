@@ -1,16 +1,17 @@
 ---
+import katex from 'katex';
 import FieldNotes from '../../components/FieldNotes.astro';
-import Tooltip from '../../components/Tooltip.astro';
 import Base from '../../layouts/Base.astro';
 import {
   critChance,
   damagePerHitAfterArmor,
   damageRange,
+  damageRangeAfterArmor,
+  expectedDamagePerHit,
   grazeChance,
   splashDamage,
 } from '../../lib/combat';
 import { getWeapon, idFromSlug, unitSlug, units, weaponSlug, weapons } from '../../lib/data';
-import { WEAPON_TAG_TOOLTIPS } from '../../lib/tag-tooltips';
 import { resolveWeaponType, weaponTypeMeta } from '../../lib/weapon-display';
 import {
   getFactionEmblem,
@@ -38,12 +39,36 @@ const armorTable = Array.from({ length: 10 }, (_, armor) => {
   const crit = critChance(0, weapon.armorPiercing, armor);
   const graze = grazeChance(weapon.armorPiercing, armor);
   const avgAfterArmor = damagePerHitAfterArmor(weapon.damage, armor, weapon.armorPiercing);
-  const avgDamage = Math.round((avgAfterArmor * (100 - graze)) / 100);
+  const avgDamage = expectedDamagePerHit(avgAfterArmor, crit, graze);
+
+  // Build detailed formulas for tooltips
+  const { min: dmgMin, max: dmgMax } = damageRangeAfterArmor(
+    weapon.damage,
+    armor,
+    weapon.armorPiercing,
+  );
+  const normalProb = 1 - crit / 100 - graze / 100;
+
+  // Expected damage formula: shows armor subtraction and crit/graze calculation
+  const expDmgFormula = `[(${dmgMin}+${dmgMax})/2] × [${normalProb.toFixed(2)}×1.0 + ${(crit / 100).toFixed(2)}×1.5 + ${(graze / 100).toFixed(2)}×0.25] = ${avgDamage.toFixed(2)}`;
+
+  // Total damage output per attack (all shots/attacks on single model)
+  const baseAcc = weapon.isMelee && weapon.accuracy <= 0 ? 80 : weapon.accuracy;
+  const totalShots = weapon.numAttacks * weapon.shotsPerAttack * weapon.burstSize;
+  const expectedHits = (totalShots * baseAcc) / 100;
+  const totalDamage = expectedHits * avgDamage;
+
+  // Total damage formula: full attack chain
+  const totalDmgFormula = `${totalShots} shots × ${baseAcc}% acc × ${avgDamage.toFixed(2)} exp.dmg = ${totalDamage.toFixed(2)}`;
+
   return {
     armor,
     crit,
     graze,
     avgDamage,
+    totalDamage,
+    expDmgFormula,
+    totalDmgFormula,
   };
 });
 
@@ -95,6 +120,55 @@ function iconTintStyle(color: string): string {
       return 'filter: brightness(0) saturate(100%) invert(55%) sepia(19%) saturate(585%) hue-rotate(358deg) brightness(93%) contrast(88%);';
   }
 }
+
+// Pre-calculate display strings to avoid template literal issues in JSX
+const splashPct = weapon.splashFalloff ? Math.round(weapon.splashFalloff * 100) : 0;
+const impactDisplay =
+  weapon.impactType === 'splash'
+    ? `${weapon.splashModels ?? 0} models, −${splashPct}% to secondary`
+    : '';
+const weaponTypeStyle = `color:${wType.color}; background:${wType.color}20`;
+const accuracyDisplay = weapon.isMelee && weapon.accuracy <= 0 ? '80%' : `${weapon.accuracy}%`;
+const totalShots = weapon.numAttacks * weapon.shotsPerAttack * weapon.burstSize;
+
+// KaTeX rendered formulas
+const katexOptions = { throwOnError: false, displayMode: false };
+
+// Step 1: Armor reduction formula
+const step1Formula = katex.renderToString(
+  String.raw`d_{\text{range}} = (\max(d_{\text{max}} - a, 0),\, \max(0.75 \times d_{\text{max}} - a, 0))`,
+  katexOptions,
+);
+
+// Step 2a: Crit chance
+const step2aFormula = katex.renderToString(
+  String.raw`P_{\mathrm{crit}} = 0.05 \times \max(0, \text{AP} - a)`,
+  katexOptions,
+);
+
+// Step 2b: Graze chance
+const step2bFormula = katex.renderToString(
+  String.raw`P_{\mathrm{graze}} = 0.03 \times \max(0, a - \text{AP})`,
+  katexOptions,
+);
+
+// Step 2c: Normal chance
+const step2cFormula = katex.renderToString(
+  String.raw`P_{\mathrm{normal}} = 1 - P_{\mathrm{crit}} - P_{\mathrm{graze}}`,
+  katexOptions,
+);
+
+// Step 3: Expected damage
+const step3Formula = katex.renderToString(
+  String.raw`\text{E}[d] = \text{avg}(d_{\text{range}}) \times [P_{\mathrm{normal}} \times 1.0 + P_{\mathrm{crit}} \times 1.5 + P_{\mathrm{graze}} \times 0.25]`,
+  katexOptions,
+);
+
+// Total damage formula
+const totalDmgLatex = katex.renderToString(
+  String.raw`D_{\text{total}} = (n_{\text{attacks}} \times n_{\text{shots}} \times n_{\text{burst}}) \times \frac{\text{accuracy}}{100} \times \text{E}[d]`,
+  katexOptions,
+);
 ---
 
 <Base
@@ -109,70 +183,115 @@ function iconTintStyle(color: string): string {
     <span class="text-[var(--color-muted)]" data-i18n-ui={wType.i18nKey}>{wType.label}</span>
   </nav>
 
-  <div class="panel-gilded p-6 md:p-8">
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
-      <div class="flex items-center gap-4 min-w-0">
-        {weaponIcon && (
-          <img src={weaponIcon} alt="" width="48" height="48" loading="lazy" class="asset-icon w-12 h-12 shrink-0 object-contain rounded-lg bg-black/30 border border-[var(--color-border)] p-1.5" />
-        )}
-        <div class="min-w-0">
-          <div class="flex flex-wrap items-center gap-2 mb-2">
-            <Tooltip text={WEAPON_TAG_TOOLTIPS[wType.type]}>
-              <span class="chip" style={`color:${wType.color}`} data-i18n-ui={wType.i18nKey}>{wType.label}</span>
-            </Tooltip>
-            {weapon.pistol && (
-              <Tooltip text={WEAPON_TAG_TOOLTIPS.pistol}>
-                <span class="chip" data-i18n-ui="common.pistol">Pistol</span>
-              </Tooltip>
-            )}
-            {weapon.armorPiercing > 0 && (
-              <Tooltip text={WEAPON_TAG_TOOLTIPS.ap}>
-                <span class="chip">AP {weapon.armorPiercing}</span>
-              </Tooltip>
-            )}
-            {weapon.impactType === 'splash' && (weapon.splashModels ?? 0) > 1 && (
-              <Tooltip text={WEAPON_TAG_TOOLTIPS.splash}>
-                <span class="chip !text-[var(--color-plasma)]">
-                  <span data-i18n-ui="common.splash">Splash</span>
-                </span>
-              </Tooltip>
-            )}
-            {weapon.impactType === 'tile' && (
-              <Tooltip text={WEAPON_TAG_TOOLTIPS.tile}>
-                <span class="chip !text-[var(--color-plasma)]" data-i18n-ui="weaponDetail.impact.tile">Hits all models</span>
-              </Tooltip>
-            )}
+  <!-- Hero card: Info-dense weapon stats -->
+  <div class="surface p-5 md:p-6">
+    <div class="flex items-start gap-4 mb-4">
+      {weaponIcon && (
+        <img src={weaponIcon} alt="" width="56" height="56" loading="lazy" class="asset-icon w-14 h-14 shrink-0 object-contain rounded-lg bg-black/30 border border-[var(--color-border)] p-2" />
+      )}
+      <div class="min-w-0 flex-1">
+        <div class="flex items-baseline gap-2 mb-1">
+          <h1 class="text-2xl font-black" data-i18n-weapon={weapon.id} data-i18n-fallback={weapon.name}>{weapon.name}</h1>
+          <span class="text-sm font-bold px-2 py-0.5 rounded" style={weaponTypeStyle} data-i18n-ui={wType.i18nKey}>{wType.label}</span>
+          {weapon.pistol && <span class="text-xs font-semibold text-[var(--color-faint)]" data-i18n-ui="common.pistol">Pistol</span>}
+        </div>
+        
+        <!-- Core stats row -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-2 mt-3">
+          <div class="bg-[var(--color-base)] border border-[var(--color-border)] rounded-lg px-2.5 py-2 text-center">
+            <div class="text-[10px] uppercase tracking-wide text-[var(--color-faint)] mb-0.5" data-i18n-ui="common.damage">Damage</div>
+            <div class="text-lg font-black text-[var(--color-hp)] leading-none tabular-nums">{dmgRange.min}–{dmgRange.max}</div>
+            {weapon.numAttacks > 1 && <div class="text-[10px] text-[var(--color-muted)] mt-0.5">×{weapon.numAttacks} atk</div>}
           </div>
-          <h1 class="text-3xl md:text-4xl font-black" data-i18n-weapon={weapon.id} data-i18n-fallback={weapon.name}>{weapon.name}</h1>
-        </div>
-      </div>
-      <div class="flex gap-6">
-        <div class="text-center">
-          <p class="text-4xl font-black text-[var(--color-gold)] leading-none whitespace-nowrap">{dmgRange.min}–{dmgRange.max}</p>
-          <p class="text-xs text-[var(--color-faint)] uppercase tracking-wide mt-1.5" data-i18n-ui="common.damage">Damage</p>
-        </div>
-        <div class="text-center">
-          {weapon.isMelee && weapon.accuracy <= 0 ? (
-            <p class="text-3xl font-black leading-none mt-1.5" data-i18n-ui="common.melee">Melee</p>
-          ) : (
-            <p class="text-4xl font-black leading-none">{weapon.accuracy}%</p>
+          
+          {splash && (
+            <div class="bg-[var(--color-base)] border border-[var(--color-border)] rounded-lg px-2.5 py-2 text-center">
+              <div class="text-[10px] uppercase tracking-wide text-[var(--color-faint)] mb-0.5" data-i18n-ui="weaponStat.splash">Splash</div>
+              <div class="text-lg font-black text-[var(--color-toxin)] leading-none tabular-nums">{splash.min}–{splash.max}</div>
+              <div class="text-[10px] text-[var(--color-muted)] mt-0.5">×{splash.models} models</div>
+            </div>
           )}
-          <p class="text-xs text-[var(--color-faint)] uppercase tracking-wide mt-1.5" data-i18n-ui="common.accuracy">Accuracy</p>
-        </div>
-        {splash && (
-          <div class="text-center">
-            <p class="text-3xl font-black leading-none mt-1 text-[var(--color-toxin)] whitespace-nowrap">{splash.min}–{splash.max} <span class="text-xl">×{splash.models}</span></p>
-            <p class="text-xs text-[var(--color-faint)] uppercase tracking-wide mt-1.5" data-i18n-ui="weaponStat.splash">Splash</p>
+          
+          {weapon.armorPiercing > 0 && (
+            <div class="bg-[var(--color-base)] border border-[var(--color-border)] rounded-lg px-2.5 py-2 text-center">
+              <div class="text-[10px] uppercase tracking-wide text-[var(--color-faint)] mb-0.5">AP</div>
+              <div class="text-lg font-black text-[var(--color-gold-dim)] leading-none tabular-nums">{weapon.armorPiercing}</div>
+            </div>
+          )}
+          
+          <div class="bg-[var(--color-base)] border border-[var(--color-border)] rounded-lg px-2.5 py-2 text-center">
+            <div class="text-[10px] uppercase tracking-wide text-[var(--color-faint)] mb-0.5" data-i18n-ui="common.accuracy">Accuracy</div>
+            {weapon.isMelee && weapon.accuracy <= 0 ? (
+              <div class="text-sm font-bold leading-none mt-1" data-i18n-ui="common.melee">Melee</div>
+            ) : (
+              <>
+                <div class="text-lg font-black text-[var(--color-gold)] leading-none tabular-nums">{weapon.accuracy}%</div>
+                {weapon.isRanged && !weapon.isMelee && weapon.accuracyFalloff > 0 && (
+                  <div class="text-[10px] text-[var(--color-muted)] mt-0.5">−{weapon.accuracyFalloff}/tile</div>
+                )}
+              </>
+            )}
           </div>
-        )}
+          
+          {weapon.isRanged && !weapon.isMelee && weapon.rangeMax > 0 && (
+            <div class="bg-[var(--color-base)] border border-[var(--color-border)] rounded-lg px-2.5 py-2 text-center">
+              <div class="text-[10px] uppercase tracking-wide text-[var(--color-faint)] mb-0.5" data-i18n-ui="common.range">Range</div>
+              <div class="text-lg font-black leading-none tabular-nums">
+                {weapon.rangeMin > 0 ? `${weapon.rangeMin}–${weapon.rangeMax}` : weapon.rangeMax}
+              </div>
+              {weapon.rangeOptimal !== weapon.rangeMax && (
+                <div class="text-[10px] text-[var(--color-momentum)] mt-0.5">optimal: {weapon.rangeOptimal}</div>
+              )}
+            </div>
+          )}
+        </div>
+        
+        <!-- Mechanics info -->
+        <div class="mt-3 grid gap-1.5 text-xs">
+          {weapon.impactType && (
+            <div class="flex items-baseline gap-2">
+              <span class="text-[var(--color-faint)] min-w-[4.5rem]" data-i18n-ui="weaponDetail.impact.label">Impact:</span>
+              <span class="font-semibold">
+                {weapon.impactType === 'splash' && impactDisplay}
+                {weapon.impactType === 'tile' && (
+                  <span data-i18n-ui="weaponDetail.impact.tileFull">Every hit damages all models in the unit</span>
+                )}
+                {weapon.impactType === 'single' && (
+                  <span data-i18n-ui="weaponDetail.impact.singleFull">Single model per hit</span>
+                )}
+              </span>
+            </div>
+          )}
+          {weapon.targetType && (
+            <div class="flex items-baseline gap-2">
+              <span class="text-[var(--color-faint)] min-w-[4.5rem]" data-i18n-ui="weaponDetail.targeting.label">Targeting:</span>
+              <span class="font-semibold">
+                {weapon.targetType === 'fixedEntireUnit' ? (
+                  <span data-i18n-ui="weaponDetail.targeting.fixedEntireUnit">Fixed (shots wasted if target dies early)</span>
+                ) : weapon.targetType === 'redistribute' ? (
+                  <span data-i18n-ui="weaponDetail.targeting.redistribute">Redistributes to living models</span>
+                ) : (
+                  <span data-i18n-ui="weaponDetail.targeting.fixedPerMember">Fixed per attacker</span>
+                )}
+              </span>
+            </div>
+          )}
+          {weapon.isRanged && !weapon.isMelee && weapon.damageFalloff > 0 && (
+            <div class="flex items-baseline gap-2">
+              <span class="text-[var(--color-faint)] min-w-[4.5rem]">Dmg falloff:</span>
+              <span class="font-semibold">−{weapon.damageFalloff}/tile beyond optimal range</span>
+            </div>
+          )}
+        </div>
       </div>
     </div>
-    <div class="mt-5 flex flex-wrap gap-2">
-      <button id="copy-link" type="button" class="btn" data-url={`/weapons/${weaponSlug(weapon)}`}>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>
+    
+    <div class="flex flex-wrap gap-2 pt-3 border-t border-[var(--color-border)]">
+      <button id="copy-link" type="button" class="btn btn-sm" data-url={`/weapons/${weaponSlug(weapon)}`}>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>
         <span data-i18n-ui="common.copyLink">Copy link</span>
       </button>
-      <a href={`/calculator?weapon=${weapon.id}`} class="btn btn-primary" data-i18n-ui="weaponDetail.action.openInCalculator">Open in calculator</a>
+      <a href={`/calculator?weapon=${weapon.id}`} class="btn btn-sm btn-primary" data-i18n-ui="weaponDetail.action.openInCalculator">Open in calculator</a>
     </div>
   </div>
 
@@ -188,51 +307,102 @@ function iconTintStyle(color: string): string {
     </section>
   )}
 
-  <div class="grid gap-4 md:grid-cols-2 mt-4">
-    <!-- Critical chance vs armor -->
+  <div class="grid gap-4 lg:grid-cols-2 mt-4">
+    <!-- Combined Crit/Graze/Expected Damage table -->
     <section class="surface p-5">
-      <h2 class="text-lg font-bold mb-1">Critical chance vs Armor</h2>
-      <p class="text-sm text-[var(--color-faint)] mb-4">
-        AP above target armor grants +5% critical chance per point. (Base weapon critical chance is not exposed in extracted data.)
+      <h2 class="text-lg font-bold mb-1">Critical & Graze vs Armor</h2>
+      <p class="text-sm text-[var(--color-faint)] mb-3">
+        Expected damage per hit accounts for armor reduction and crit/graze probabilities.
       </p>
-      <div class="space-y-1.5">
-        {armorTable.map((row) => (
-          <div class="flex items-center gap-3">
-            <span class="text-xs text-[var(--color-faint)] w-14 shrink-0"><span data-i18n-ui="common.armor">Armor</span> {row.armor}</span>
-            <div class="hud-bar flex-1"><span class="fill hp" style={`width:${Math.round(row.crit)}%`}></span></div>
-            <span class="text-sm font-bold tabular-nums w-10 text-right">{Math.round(row.crit)}%</span>
-          </div>
-        ))}
+      
+      <!-- Mathematical formulas -->
+      <div class="bg-[var(--color-base)] border border-[var(--color-border)] rounded-lg p-3 mb-4 text-sm">
+        <div class="mb-2 text-xs text-[var(--color-faint)]">Step 1: Armor reduction</div>
+        <div class="mb-3 ml-2" set:html={step1Formula} />
+        
+        <div class="mb-2 text-xs text-[var(--color-faint)]">Step 2: Probabilities</div>
+        <div class="mb-1 ml-2" set:html={step2aFormula} />
+        <div class="mb-1 ml-2" set:html={step2bFormula} />
+        <div class="mb-3 ml-2" set:html={step2cFormula} />
+        
+        <div class="mb-2 text-xs text-[var(--color-faint)]">Step 3: Expected damage</div>
+        <div class="ml-2" set:html={step3Formula} />
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="text-[10px] text-[var(--color-faint)] uppercase tracking-wide border-b border-[var(--color-border)]">
+              <th class="text-left pb-2" data-i18n-ui="common.armor">Armor</th>
+              <th class="text-right pb-2">Crit %</th>
+              <th class="text-right pb-2">Graze %</th>
+              <th class="text-right pb-2">Exp DMG</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-[var(--color-border)]">
+            {armorTable.map((row) => (
+              <tr>
+                <td class="py-2 font-semibold">{row.armor}</td>
+                <td class="py-2 text-right tabular-nums">
+                  <span class="font-bold text-[var(--color-hp)]">{Math.round(row.crit)}%</span>
+                </td>
+                <td class="py-2 text-right tabular-nums">
+                  <span class="font-bold text-[var(--color-momentum)]">{Math.round(row.graze)}%</span>
+                </td>
+                <td class="py-2 text-right tabular-nums">
+                  <span class="font-bold" title={row.expDmgFormula}>{row.avgDamage.toFixed(2)}</span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </section>
 
-    <!-- Graze chance + expected damage vs armor -->
+    <!-- Total damage output estimate -->
     <section class="surface p-5">
-      <h2 class="text-lg font-bold mb-1" data-i18n-ui="weaponDetail.section.grazeVsArmor">Graze chance vs Armor</h2>
-      <p class="text-sm text-[var(--color-faint)] mb-4">
-        Expected damage uses armor subtraction first (effective armor = armor − AP, min 0),
-        then applies graze chance.
+      <h2 class="text-lg font-bold mb-1">Estimated Total Damage Output</h2>
+      <p class="text-sm text-[var(--color-faint)] mb-3">
+        Total damage from a full attack sequence on a single target.
       </p>
-      <div class="space-y-1.5">
-        {armorTable.map((row) => (
-          <div class="flex items-center gap-2.5">
-            <span class="text-xs text-[var(--color-faint)] w-14 shrink-0"><span data-i18n-ui="common.armor">Armor</span> {row.armor}</span>
-            <div class="hud-bar flex-1"><span class="fill mom" style={`width:${Math.round(row.graze)}%`}></span></div>
-            <span class="text-sm font-bold tabular-nums w-10 text-right">{Math.round(row.graze)}%</span>
-            <span class="text-xs text-[var(--color-muted)] w-24 text-right tabular-nums">exp {row.avgDamage}</span>
-          </div>
-        ))}
+      
+      <!-- Mathematical formula -->
+      <div class="bg-[var(--color-base)] border border-[var(--color-border)] rounded-lg p-3 mb-4 text-sm">
+        <div class="mb-2 text-xs text-[var(--color-faint)]">Attack chain formula:</div>
+        <div class="ml-2 mb-2" set:html={totalDmgLatex} />
+        <div class="ml-2 text-[10px] text-[var(--color-muted)]">
+          where <span set:html={katex.renderToString('E[d]', katexOptions)} /> is the expected damage per hit from the table above
+        </div>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="text-[10px] text-[var(--color-faint)] uppercase tracking-wide border-b border-[var(--color-border)]">
+              <th class="text-left pb-2" data-i18n-ui="common.armor">Armor</th>
+              <th class="text-right pb-2">Total DMG</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-[var(--color-border)]">
+            {armorTable.map((row) => (
+              <tr>
+                <td class="py-2 font-semibold">{row.armor}</td>
+                <td class="py-2 text-right tabular-nums">
+                  <span class="font-black text-lg text-[var(--color-gold)]" title={row.totalDmgFormula}>{row.totalDamage.toFixed(2)}</span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
       <p class="text-xs text-[var(--color-faint)] mt-3">
-        Critical bonus damage is not included (base crit damage multiplier is unknown in extracted data).
+        Based on {weapon.numAttacks} attacks × {weapon.shotsPerAttack} shots × {weapon.burstSize} burst = {totalShots} total shots at {accuracyDisplay} accuracy.
       </p>
     </section>
+  </div>
 
-    <!-- Carriers -->
-    <section class="surface p-5">
-      <h2 class="text-lg font-bold mb-4">
-        <span data-i18n-ui="weaponDetail.section.carriedBy">Carried by</span> <span class="text-[var(--color-faint)] font-normal text-base">({carriers.length})</span>
-      </h2>
+  <section class="surface p-5 mt-4">
+    <h2 class="text-lg font-bold mb-4">
+      <span data-i18n-ui="weaponDetail.section.carriedBy">Carried by</span> <span class="text-[var(--color-faint)] font-normal text-base">({carriers.length})</span>
+    </h2>
       {carriers.length === 0 ? (
         <p class="text-sm text-[var(--color-faint)]" data-i18n-ui="weaponDetail.empty.noUnits">No units in the dataset reference this weapon.</p>
       ) : (
@@ -240,11 +410,13 @@ function iconTintStyle(color: string): string {
           {carriers.map((u) => {
             const thumb = getUnitPortrait(u.name, u.portrait) ?? getFactionEmblem(u.faction);
             const tier = tierMeta(u.roleName, u.roleColor);
+            const tierBoxStyle = 'background:' + tier.bg + '; color:' + tier.ink;
+            const tierLabelStyle = 'color:' + tier.bg;
             return (
               <a href={`/units/${unitSlug(u)}`} class="surface block p-0 overflow-hidden border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-colors">
                 <div class="grid grid-cols-[1fr_1fr] min-h-[14.5rem]">
                   <div class="p-3 flex flex-col gap-2 bg-[var(--color-base)] border-r border-[var(--color-border)]">
-                    <div class="w-12 h-12 rounded-lg grid place-items-center border border-black/25 p-1 shrink-0" style={`background:${tier.bg}; color:${tier.ink}`}>
+                    <div class="w-12 h-12 rounded-lg grid place-items-center border border-black/25 p-1 shrink-0" style={tierBoxStyle}>
                       {thumb ? (
                         <img src={thumb} alt="" width="48" height="48" loading="lazy" class="w-full h-full rounded object-contain" />
                       ) : (
@@ -253,7 +425,7 @@ function iconTintStyle(color: string): string {
                     </div>
                     <span class="font-extrabold text-sm leading-tight line-clamp-2" data-i18n-unit={u.id} data-i18n-fallback={u.name}>{u.name}</span>
                     <span class="text-[11px] leading-tight text-[var(--color-muted)]" data-i18n-faction={u.faction} data-i18n-fallback={u.factionName}>{u.factionName}</span>
-                    <span class="text-[11px] font-bold uppercase tracking-wide" style={`color:${tier.bg}`}>{tier.label}</span>
+                    <span class="text-[11px] font-bold uppercase tracking-wide" style={tierLabelStyle}>{tier.label}</span>
                   </div>
 
                   <div class="p-3.5 flex flex-col">
@@ -307,75 +479,6 @@ function iconTintStyle(color: string): string {
         </div>
       )}
     </section>
-  </div>
-
-  <!-- Targeting & splash mechanics -->
-  <section class="surface p-5 mt-4">
-    <h2 class="text-lg font-bold mb-3" data-i18n-ui="weaponDetail.section.targeting">Targeting &amp; splash</h2>
-    <dl class="space-y-2.5 text-sm">
-      <div class="flex items-baseline justify-between gap-3">
-        <dt class="text-[var(--color-muted)]" data-i18n-ui="weaponDetail.impact.label">Impact</dt>
-        <dd class="font-semibold text-right">
-          {weapon.impactType === 'splash' ? (
-            <span><span data-i18n-ui="weaponDetail.impact.splash">Splash</span> — {weapon.splashModels} <span data-i18n-ui="weaponDetail.impact.models">models</span>, −{Math.round((weapon.splashFalloff ?? 0) * 100)}% <span data-i18n-ui="weaponDetail.impact.toSecondary">to secondary</span></span>
-          ) : weapon.impactType === 'tile' ? (
-            <span data-i18n-ui="weaponDetail.impact.tileFull">Every hit damages all models in the unit</span>
-          ) : (
-            <span data-i18n-ui="weaponDetail.impact.singleFull">Each hit damages a single model</span>
-          )}
-        </dd>
-      </div>
-      <div class="flex items-baseline justify-between gap-3">
-        <dt class="text-[var(--color-muted)]" data-i18n-ui="weaponDetail.targeting.label">Post-kill targeting</dt>
-        <dd class="font-semibold text-right max-w-[60%]">
-          {weapon.targetType === 'fixedEntireUnit' ? (
-            <span data-i18n-ui="weaponDetail.targeting.fixedEntireUnit">Whole unit focuses one target; shots are wasted if it dies early</span>
-          ) : weapon.targetType === 'redistribute' ? (
-            <span data-i18n-ui="weaponDetail.targeting.redistribute">Attacks retarget to living models</span>
-          ) : (
-            <span data-i18n-ui="weaponDetail.targeting.fixedPerMember">Each attacker locks one target; its shots are wasted if that target dies</span>
-          )}
-        </dd>
-      </div>
-    </dl>
-  </section>
-
-  {weapon.isRanged && !weapon.isMelee && weapon.rangeMax > 0 && (
-    <section class="surface p-5 mt-4">
-      <h2 class="text-lg font-bold mb-1" data-i18n-ui="weaponDetail.section.range">Range &amp; falloff</h2>
-      <p class="text-sm text-[var(--color-faint)] mb-4" data-i18n-ui="weaponDetail.note.range">
-        Distances in tiles. Accuracy and damage are best within optimal range and drop off toward maximum range.
-      </p>
-      <div class="grid grid-cols-3 gap-3 text-center">
-        <div class="rounded-lg bg-[var(--color-base)] border border-[var(--color-border)] p-3">
-          <p class="text-2xl font-black tabular-nums">{weapon.rangeMin}</p>
-          <p class="text-[10px] uppercase tracking-wide text-[var(--color-faint)] mt-1" data-i18n-ui="weaponDetail.range.min">Min range</p>
-        </div>
-        <div class="rounded-lg bg-[var(--color-base)] border border-[var(--color-gold-dim)] p-3">
-          <p class="text-2xl font-black tabular-nums text-[var(--color-gold)]">{weapon.rangeOptimal}</p>
-          <p class="text-[10px] uppercase tracking-wide text-[var(--color-faint)] mt-1" data-i18n-ui="weaponDetail.range.optimal">Optimal</p>
-        </div>
-        <div class="rounded-lg bg-[var(--color-base)] border border-[var(--color-border)] p-3">
-          <p class="text-2xl font-black tabular-nums">{weapon.rangeMax}</p>
-          <p class="text-[10px] uppercase tracking-wide text-[var(--color-faint)] mt-1" data-i18n-ui="weaponDetail.range.max">Max range</p>
-        </div>
-      </div>
-      <div class="mt-3 flex flex-wrap gap-2 text-xs">
-        {weapon.accuracyFalloff > 0 && (
-          <span class="chip"><span data-i18n-ui="weaponDetail.range.accFalloff">Accuracy falloff</span>: {weapon.accuracyFalloff}</span>
-        )}
-        {weapon.damageFalloff > 0 && (
-          <span class="chip"><span data-i18n-ui="weaponDetail.range.dmgFalloff">Damage falloff</span>: {weapon.damageFalloff}</span>
-        )}
-        {weapon.ignoresRangePenalty && <span class="chip" data-i18n-ui="weaponDetail.range.ignores">Ignores range penalty</span>}
-      </div>
-    </section>
-  )}
 
   <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 hidden surface px-4 py-2.5 text-sm font-semibold z-[120]"></div>
-
-  <script>
-    import { initUnitDetail } from '../../scripts/unit-detail';
-    initUnitDetail();
-  </script>
 </Base>

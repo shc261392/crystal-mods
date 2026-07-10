@@ -1372,18 +1372,41 @@
     "weaponSlots": [
       {
         "options": [
-          { "weaponId": 7010, "name": "Lasgun", "pointCost": 0, "startsLocked": false },
-          { "weaponId": 7003, "name": "Lasgun with Bayonet", "pointCost": 0, "startsLocked": true }
+          {
+            "weaponId": 7010,
+            "name": "Lasgun",
+            "pointCost": 0,
+            "startsLocked": false
+          },
+          {
+            "weaponId": 7003,
+            "name": "Lasgun with Bayonet",
+            "pointCost": 0,
+            "startsLocked": true
+          }
         ]
       },
       {
         "options": [
-          { "weaponId": 0, "name": "Weapon 0", "pointCost": 0, "startsLocked": false },
-          { "weaponId": 7033, "name": "Bayonet", "pointCost": 0, "startsLocked": true }
+          {
+            "weaponId": 0,
+            "name": "Weapon 0",
+            "pointCost": 0,
+            "startsLocked": false
+          },
+          {
+            "weaponId": 7033,
+            "name": "Bayonet",
+            "pointCost": 0,
+            "startsLocked": true
+          }
         ]
       }
     ],
-    "abilityIds": [80039]
+    "abilityIds": [
+      80039
+    ],
+    "portrait": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/GuardsmenIcon.png"
   },
   {
     "id": 7000,
@@ -1522,8 +1545,18 @@
             "pointCost": 0,
             "startsLocked": false
           },
-          { "weaponId": 7019, "name": "Autocannon", "pointCost": 0, "startsLocked": true },
-          { "weaponId": 7014, "name": "Lascannon", "pointCost": 0, "startsLocked": true }
+          {
+            "weaponId": 7019,
+            "name": "Autocannon",
+            "pointCost": 0,
+            "startsLocked": true
+          },
+          {
+            "weaponId": 7014,
+            "name": "Lascannon",
+            "pointCost": 0,
+            "startsLocked": true
+          }
         ]
       },
       {
@@ -1534,11 +1567,20 @@
             "pointCost": 0,
             "startsLocked": false
           },
-          { "weaponId": 0, "name": "Weapon 0", "pointCost": 0, "startsLocked": false }
+          {
+            "weaponId": 0,
+            "name": "Weapon 0",
+            "pointCost": 0,
+            "startsLocked": false
+          }
         ]
       }
     ],
-    "abilityIds": [80039, 80015]
+    "abilityIds": [
+      80039,
+      80015
+    ],
+    "portrait": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HeavyWeaponSquadMissileLauncherIcon.png"
   },
   {
     "id": 7009,
@@ -3299,13 +3341,26 @@
     "weaponSlots": [
       {
         "options": [
-          { "weaponId": 1, "name": "Bolt Rifle", "pointCost": 0, "startsLocked": false },
-          { "weaponId": 25, "name": "Auto Bolt Rifle", "pointCost": 10, "startsLocked": true }
+          {
+            "weaponId": 1,
+            "name": "Bolt Rifle",
+            "pointCost": 0,
+            "startsLocked": false
+          },
+          {
+            "weaponId": 25,
+            "name": "Auto Bolt Rifle",
+            "pointCost": 10,
+            "startsLocked": true
+          }
         ]
       }
     ],
-    "abilityIds": [13, 12],
-    "portrait": "AssaultIntercessorsIcon"
+    "abilityIds": [
+      13,
+      12
+    ],
+    "portrait": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/IntercessorIcon.png"
   },
   {
     "id": 3,
@@ -3437,7 +3492,12 @@
     "weaponSlots": [
       {
         "options": [
-          { "weaponId": 8, "name": "Plasma Incinerator", "pointCost": 0, "startsLocked": false },
+          {
+            "weaponId": 8,
+            "name": "Plasma Incinerator",
+            "pointCost": 0,
+            "startsLocked": false
+          },
           {
             "weaponId": 28,
             "name": "Heavy Plasma Incinerator",
@@ -3447,8 +3507,10 @@
         ]
       }
     ],
-    "abilityIds": [15],
-    "portrait": "UltramarinesHellblastersIcon"
+    "abilityIds": [
+      15
+    ],
+    "portrait": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/HellblasterIcon.png"
   },
   {
     "id": 5,
@@ -3532,8 +3594,18 @@
     "weaponSlots": [
       {
         "options": [
-          { "weaponId": 9, "name": "Boltstorm Gauntlet", "pointCost": 0, "startsLocked": false },
-          { "weaponId": 10, "name": "Flamestorm Gauntlet", "pointCost": 20, "startsLocked": true }
+          {
+            "weaponId": 9,
+            "name": "Boltstorm Gauntlet",
+            "pointCost": 0,
+            "startsLocked": false
+          },
+          {
+            "weaponId": 10,
+            "name": "Flamestorm Gauntlet",
+            "pointCost": 20,
+            "startsLocked": true
+          }
         ]
       },
       {
@@ -3544,18 +3616,35 @@
             "pointCost": 0,
             "startsLocked": false
           },
-          { "weaponId": 0, "name": "Weapon 0", "pointCost": 0, "startsLocked": false }
+          {
+            "weaponId": 0,
+            "name": "Weapon 0",
+            "pointCost": 0,
+            "startsLocked": false
+          }
         ]
       },
       {
         "options": [
-          { "weaponId": 26, "name": "Boltstorm Gauntlet", "pointCost": 0, "startsLocked": false },
-          { "weaponId": 27, "name": "Flamestorm Gauntlet", "pointCost": 0, "startsLocked": false }
+          {
+            "weaponId": 26,
+            "name": "Boltstorm Gauntlet",
+            "pointCost": 0,
+            "startsLocked": false
+          },
+          {
+            "weaponId": 27,
+            "name": "Flamestorm Gauntlet",
+            "pointCost": 0,
+            "startsLocked": false
+          }
         ]
       }
     ],
-    "abilityIds": [14],
-    "portrait": "UltramarinesAggressorsIcon"
+    "abilityIds": [
+      14
+    ],
+    "portrait": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/AggressorIcon.png"
   },
   {
     "id": 105,
@@ -3918,12 +4007,21 @@
       },
       {
         "options": [
-          { "weaponId": 39, "name": "Force Sword", "pointCost": 0, "startsLocked": false }
+          {
+            "weaponId": 39,
+            "name": "Force Sword",
+            "pointCost": 0,
+            "startsLocked": false
+          }
         ]
       }
     ],
-    "abilityIds": [29, 30, 31],
-    "portrait": "LibrarianDreadnoughtIcon"
+    "abilityIds": [
+      29,
+      30,
+      31
+    ],
+    "portrait": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/PrimarisLibrarian.png"
   },
   {
     "id": 106,
@@ -5129,11 +5227,20 @@
             "pointCost": 0,
             "startsLocked": false
           },
-          { "weaponId": 3019, "name": "Gauss Destructor", "pointCost": 30, "startsLocked": true }
+          {
+            "weaponId": 3019,
+            "name": "Gauss Destructor",
+            "pointCost": 30,
+            "startsLocked": true
+          }
         ]
       }
     ],
-    "abilityIds": [30028, 30010]
+    "abilityIds": [
+      30028,
+      30010
+    ],
+    "portrait": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/LokhurstHeavyDestroyerIcon.png"
   },
   {
     "id": 3005,
@@ -5178,11 +5285,20 @@
             "pointCost": 0,
             "startsLocked": false
           },
-          { "weaponId": 3011, "name": "Warscythe", "pointCost": 15, "startsLocked": true }
+          {
+            "weaponId": 3011,
+            "name": "Warscythe",
+            "pointCost": 15,
+            "startsLocked": true
+          }
         ]
       }
     ],
-    "abilityIds": [30001, 30020]
+    "abilityIds": [
+      30001,
+      30020
+    ],
+    "portrait": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/LynchguardIcon.png"
   },
   {
     "id": 3009,
@@ -5623,11 +5739,31 @@
     "awarenessRange": 2.8,
     "weaponSlots": [
       {
-        "options": [{ "weaponId": 5005, "name": "Slugga", "pointCost": 0, "startsLocked": false }]
+        "options": [
+          {
+            "weaponId": 5005,
+            "name": "Slugga",
+            "pointCost": 0,
+            "startsLocked": false
+          }
+        ]
       },
-      { "options": [{ "weaponId": 5006, "name": "Choppa", "pointCost": 0, "startsLocked": false }] }
+      {
+        "options": [
+          {
+            "weaponId": 5006,
+            "name": "Choppa",
+            "pointCost": 0,
+            "startsLocked": false
+          }
+        ]
+      }
     ],
-    "abilityIds": [60001, 60015]
+    "abilityIds": [
+      60001,
+      60015
+    ],
+    "portrait": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/BoyzWithChoppaIcon.png"
   },
   {
     "id": 8006,
@@ -6857,12 +6993,26 @@
     "weaponSlots": [
       {
         "options": [
-          { "weaponId": 6013, "name": "Burst Cannon", "pointCost": 0, "startsLocked": false },
-          { "weaponId": 6014, "name": "Fusion Blaster", "pointCost": 30, "startsLocked": true }
+          {
+            "weaponId": 6013,
+            "name": "Burst Cannon",
+            "pointCost": 0,
+            "startsLocked": false
+          },
+          {
+            "weaponId": 6014,
+            "name": "Fusion Blaster",
+            "pointCost": 30,
+            "startsLocked": true
+          }
         ]
       }
     ],
-    "abilityIds": [70014, 70005]
+    "abilityIds": [
+      70014,
+      70005
+    ],
+    "portrait": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/StealthTeam.png"
   },
   {
     "id": 9001,
@@ -8236,13 +8386,27 @@
     "weaponSlots": [
       {
         "options": [
-          { "weaponId": 1, "name": "Bolt Rifle", "pointCost": 0, "startsLocked": false },
-          { "weaponId": 25, "name": "Auto Bolt Rifle", "pointCost": 10, "startsLocked": true }
+          {
+            "weaponId": 1,
+            "name": "Bolt Rifle",
+            "pointCost": 0,
+            "startsLocked": false
+          },
+          {
+            "weaponId": 25,
+            "name": "Auto Bolt Rifle",
+            "pointCost": 10,
+            "startsLocked": true
+          }
         ]
       }
     ],
-    "abilityIds": [100047, 100053, 12],
-    "portrait": "AssaultIntercessorsIcon"
+    "abilityIds": [
+      100047,
+      100053,
+      12
+    ],
+    "portrait": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UltramarinesIntercessorsIcon.png"
   },
   {
     "id": 11006,
@@ -8576,13 +8740,27 @@
     "weaponSlots": [
       {
         "options": [
-          { "weaponId": 2, "name": "Assault Bolter", "pointCost": 0, "startsLocked": false },
-          { "weaponId": 12, "name": "Plasma Exterminator", "pointCost": 10, "startsLocked": true }
+          {
+            "weaponId": 2,
+            "name": "Assault Bolter",
+            "pointCost": 0,
+            "startsLocked": false
+          },
+          {
+            "weaponId": 12,
+            "name": "Plasma Exterminator",
+            "pointCost": 10,
+            "startsLocked": true
+          }
         ]
       }
     ],
-    "abilityIds": [100047, 100056, 100057],
-    "portrait": "InceptorIcon"
+    "abilityIds": [
+      100047,
+      100056,
+      100057
+    ],
+    "portrait": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UltramarinesInceptorsIcon.png"
   },
   {
     "id": 11010,
@@ -9001,15 +9179,33 @@
           }
         ]
       },
-      { "options": [{ "weaponId": 9068, "name": "Smite", "pointCost": 0, "startsLocked": false }] },
       {
         "options": [
-          { "weaponId": 39, "name": "Force Sword", "pointCost": 0, "startsLocked": false }
+          {
+            "weaponId": 9068,
+            "name": "Smite",
+            "pointCost": 0,
+            "startsLocked": false
+          }
+        ]
+      },
+      {
+        "options": [
+          {
+            "weaponId": 39,
+            "name": "Force Sword",
+            "pointCost": 0,
+            "startsLocked": false
+          }
         ]
       }
     ],
-    "abilityIds": [100047, 100008, 100009],
-    "portrait": "LibrarianDreadnoughtIcon"
+    "abilityIds": [
+      100047,
+      100008,
+      100009
+    ],
+    "portrait": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UltramarinesLibrarianIcon.png"
   },
   {
     "id": 11014,
@@ -9144,12 +9340,22 @@
             "pointCost": 0,
             "startsLocked": false
           },
-          { "weaponId": 9061, "name": "Incendium Cannon", "pointCost": 30, "startsLocked": true }
+          {
+            "weaponId": 9061,
+            "name": "Incendium Cannon",
+            "pointCost": 30,
+            "startsLocked": true
+          }
         ]
       },
       {
         "options": [
-          { "weaponId": 9059, "name": "Invictor Fist", "pointCost": 0, "startsLocked": false }
+          {
+            "weaponId": 9059,
+            "name": "Invictor Fist",
+            "pointCost": 0,
+            "startsLocked": false
+          }
         ]
       },
       {
@@ -9164,7 +9370,12 @@
       },
       {
         "options": [
-          { "weaponId": 66, "name": "Heavy Bolter", "pointCost": 0, "startsLocked": false }
+          {
+            "weaponId": 66,
+            "name": "Heavy Bolter",
+            "pointCost": 0,
+            "startsLocked": false
+          }
         ]
       },
       {
@@ -9178,8 +9389,10 @@
         ]
       }
     ],
-    "abilityIds": [100047],
-    "portrait": "InvictorWarsuitIcon"
+    "abilityIds": [
+      100047
+    ],
+    "portrait": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UltramarinesInvictorWarsuitIcon.png"
   },
   {
     "id": 11009,
@@ -9218,14 +9431,34 @@
     "weaponSlots": [
       {
         "options": [
-          { "weaponId": 9011, "name": "Storm Bolter", "pointCost": 0, "startsLocked": false },
-          { "weaponId": 9012, "name": "Heavy Flamer", "pointCost": 0, "startsLocked": true },
-          { "weaponId": 9065, "name": "Assault Cannon", "pointCost": 0, "startsLocked": true }
+          {
+            "weaponId": 9011,
+            "name": "Storm Bolter",
+            "pointCost": 0,
+            "startsLocked": false
+          },
+          {
+            "weaponId": 9012,
+            "name": "Heavy Flamer",
+            "pointCost": 0,
+            "startsLocked": true
+          },
+          {
+            "weaponId": 9065,
+            "name": "Assault Cannon",
+            "pointCost": 0,
+            "startsLocked": true
+          }
         ]
       },
       {
         "options": [
-          { "weaponId": 0, "name": "Weapon 0", "pointCost": 0, "startsLocked": false },
+          {
+            "weaponId": 0,
+            "name": "Weapon 0",
+            "pointCost": 0,
+            "startsLocked": false
+          },
           {
             "weaponId": 9013,
             "name": "Cyclone Missile Launcher (Frag)",
@@ -9236,7 +9469,12 @@
       },
       {
         "options": [
-          { "weaponId": 0, "name": "Weapon 0", "pointCost": 0, "startsLocked": false },
+          {
+            "weaponId": 0,
+            "name": "Weapon 0",
+            "pointCost": 0,
+            "startsLocked": false
+          },
           {
             "weaponId": 9014,
             "name": "Cyclone Missile Launcher (Krak)",
@@ -9247,13 +9485,27 @@
       },
       {
         "options": [
-          { "weaponId": 9015, "name": "Power Fist", "pointCost": 0, "startsLocked": false },
-          { "weaponId": 9016, "name": "Chainfist", "pointCost": 10, "startsLocked": true }
+          {
+            "weaponId": 9015,
+            "name": "Power Fist",
+            "pointCost": 0,
+            "startsLocked": false
+          },
+          {
+            "weaponId": 9016,
+            "name": "Chainfist",
+            "pointCost": 10,
+            "startsLocked": true
+          }
         ]
       }
     ],
-    "abilityIds": [100047, 100032, 100033],
-    "portrait": "ChaosTerminatorsIcon"
+    "abilityIds": [
+      100047,
+      100032,
+      100033
+    ],
+    "portrait": "https://pub-8aef1ac0e5c34cf4b4ece60640fe773c.r2.dev/units/UltramarinesTerminatorsStormBolterIcon.png"
   },
   {
     "id": 11000,

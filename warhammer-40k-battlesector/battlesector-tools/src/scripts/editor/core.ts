@@ -1,9 +1,12 @@
 /**
- * Shared client core for the local editor suite (units, weapons, abilities).
+ * LOCAL-FIRST EDITOR CORE
  *
- * All three editors persist through the dev-only middleware at
- * `POST /__editor/save`, which writes directly into the git-tracked JSON under
- * `src/data/`. There is no export/import — every save is the source of truth.
+ * Save flow:
+ * 1. Entity editor updates localStorage on every input
+ * 2. This module syncs localStorage → server (debounced)
+ * 3. If save fails: show error, localStorage still valid for retry
+ *
+ * localStorage is the source of truth, server is async backup.
  */
 
 export type EditorTarget = 'unit' | 'weapon' | 'ability';
@@ -11,6 +14,7 @@ export type EditorTarget = 'unit' | 'weapon' | 'ability';
 export interface SaveResult {
   ok: boolean;
   changed?: string[];
+  wrote?: boolean; // Server reports if disk write actually happened
   message?: string;
 }
 
@@ -71,8 +75,11 @@ export function showToast(message: string, kind: ToastKind = 'ok'): void {
 }
 
 /**
- * Per-id debounced saver. Coalesces rapid edits, exposes an immediate flush for
- * blur/change events, and reports status through the optional callback.
+ * Per-id debounced saver. Syncs localStorage → server.
+ *
+ * - Coalesces rapid edits (debounced)
+ * - Retries on network failure
+ * - Shows errors if save fails (localStorage still valid)
  */
 export function createSaver(
   target: EditorTarget,
@@ -81,16 +88,48 @@ export function createSaver(
 ) {
   const debounceMs = opts.debounceMs ?? 350;
   const timers = new Map<string, ReturnType<typeof setTimeout>>();
+  const lastSavedPayload = new Map<string, string>();
+  const inFlight = new Set<string>();
+  const rerun = new Set<string>();
 
   const run = async (id: string): Promise<void> => {
-    const patch = collect(id);
+    const patch = collect(id); // Now reads from localStorage
     if (!patch) return;
-    const result = await postSave(target, id, patch);
+    const payload = JSON.stringify(patch);
+    if (lastSavedPayload.get(id) === payload) return; // Already synced
+    if (inFlight.has(id)) {
+      rerun.add(id);
+      return;
+    }
+    inFlight.add(id);
+
+    // Retry up to 3 times on failure (network issues, etc.)
+    let result: SaveResult = { ok: false };
+    let attempts = 0;
+    const maxAttempts = 3;
+    while (attempts < maxAttempts) {
+      result = await postSave(target, id, patch);
+      if (result.ok) break;
+      attempts++;
+      if (attempts < maxAttempts) {
+        // Exponential backoff: 500ms, 1000ms
+        await new Promise((r) => setTimeout(r, 500 * attempts));
+      }
+    }
+
+    inFlight.delete(id);
     opts.onStatus?.(id, result);
     if (result.ok) {
-      showToast('Saved to repo');
-    } else {
-      showToast(result.message ?? 'Save failed', 'error');
+      lastSavedPayload.set(id, payload);
+      // Only show success toast if actually wrote (not a no-op)
+      if (result.wrote) {
+        showToast('Synced to server');
+      }
+    }
+    // Error toast is shown by onStatus callback in entity-editor.ts
+    if (rerun.has(id)) {
+      rerun.delete(id);
+      void run(id);
     }
   };
 
@@ -115,5 +154,9 @@ export function createSaver(
     void run(id);
   };
 
-  return { schedule, flush };
+  const hasPending = (): boolean => {
+    return timers.size > 0 || inFlight.size > 0;
+  };
+
+  return { schedule, flush, hasPending };
 }

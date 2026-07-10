@@ -1,39 +1,91 @@
 /**
- * Generic client for the unit and weapon editors. Both share the same markup
- * contract so a single implementation drives them:
+ * LOCAL-FIRST EDITOR
  *
- *   [data-editor-row][data-editor-target][data-editor-id][data-search]
- *     ...inputs carrying [data-field="<jsonKey>"]
- *     optional icon input [data-field="portrait"|"icon"] + [data-open-icon-picker]
- *     optional notes textarea [data-field="notes"] + [data-note-count]
- *
- * Edits auto-save (debounced) to the repo through the dev middleware.
+ * Architecture (per user's teaching):
+ * 1. localStorage is the SOURCE OF TRUTH
+ * 2. Server JSON is FALLBACK when localStorage empty
+ * 3. All reads from localStorage
+ * 4. All writes update BOTH (localStorage immediately + server async)
+ * 5. If save fails: show error, localStorage still valid
  */
 import { type EditorTarget, createSaver, showToast } from './core.ts';
 import { initIconPicker } from './icon-picker.ts';
+import { migrateStorage } from './migrate-storage.ts';
 
 const NOTE_WORD_LIMIT = 100;
+
+/** Storage key for entity data: bs-editor-data:weapon */
+function storageKey(target: EditorTarget): string {
+  return `bs-editor-data:${target}`;
+}
 
 /** Read a data-* attribute via a variable key (satisfies strict TS + Biome). */
 function ds(el: HTMLElement, key: string): string | undefined {
   return el.dataset[key];
 }
 
-function collectPatch(row: HTMLElement): Record<string, unknown> {
-  const patch: Record<string, unknown> = {};
+/** Load all entities from localStorage. Returns null if not initialized. */
+function loadFromStorage(target: EditorTarget): Record<string, Record<string, unknown>> | null {
+  try {
+    const raw = localStorage.getItem(storageKey(target));
+    if (!raw) return null;
+    return JSON.parse(raw) as Record<string, Record<string, unknown>>;
+  } catch (err) {
+    console.error('Failed to load from localStorage:', err);
+    showToast('Error loading data from browser storage', 'error');
+    return null;
+  }
+}
+
+/** Save all entities to localStorage. */
+function saveToStorage(target: EditorTarget, data: Record<string, Record<string, unknown>>): void {
+  try {
+    localStorage.setItem(storageKey(target), JSON.stringify(data));
+  } catch (err) {
+    console.error('Failed to save to localStorage:', err);
+    showToast('CRITICAL: Storage save failed - your changes may be lost!', 'error');
+  }
+}
+
+/** Extract entity data from server-rendered HTML rows. */
+function extractServerData(rows: HTMLElement[]): Record<string, Record<string, unknown>> {
+  const data: Record<string, Record<string, unknown>> = {};
+  for (const row of rows) {
+    const id = ds(row, 'editorId');
+    if (!id) continue;
+    const entity: Record<string, unknown> = { id: Number(id) || id };
+    const fields = row.querySelectorAll<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>(
+      '[data-field]',
+    );
+    for (const el of fields) {
+      const key = ds(el, 'field');
+      if (!key) continue;
+      if (el instanceof HTMLInputElement && el.type === 'checkbox') {
+        entity[key] = el.checked;
+      } else {
+        entity[key] = el.value;
+      }
+    }
+    data[id] = entity;
+  }
+  return data;
+}
+
+/** Populate row inputs from entity data. */
+function populateRow(row: HTMLElement, entity: Record<string, unknown>): void {
   const fields = row.querySelectorAll<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>(
     '[data-field]',
   );
   for (const el of fields) {
     const key = ds(el, 'field');
-    if (!key) continue;
+    if (!key || !(key in entity)) continue;
+    const value = entity[key];
     if (el instanceof HTMLInputElement && el.type === 'checkbox') {
-      patch[key] = el.checked;
+      el.checked = Boolean(value);
     } else {
-      patch[key] = el.value;
+      el.value = String(value ?? '');
     }
   }
-  return patch;
 }
 
 function countWords(value: string): number {
@@ -66,29 +118,65 @@ function updateIconPreview(row: HTMLElement): void {
 }
 
 export function initEntityEditor(): void {
+  // Clean up obsolete draft keys from old architecture
+  migrateStorage();
+
   const rows = Array.from(document.querySelectorAll<HTMLElement>('[data-editor-row]'));
   if (rows.length === 0) return;
+
+  const editorList = document.getElementById('editor-list');
 
   const rowById = new Map<string, HTMLElement>();
   for (const row of rows) {
     const id = ds(row, 'editorId');
     if (id) rowById.set(id, row);
-    updateNoteCount(row);
   }
 
   // Target is uniform per page; read it from the first row.
   const target = ((rows[0] ? ds(rows[0], 'editorTarget') : undefined) ?? 'unit') as EditorTarget;
 
+  // LOCAL-FIRST: Load from localStorage first, fallback to server JSON
+  let data = loadFromStorage(target);
+  if (!data) {
+    // First load: extract from SSR HTML, save to localStorage
+    data = extractServerData(rows);
+    console.log(`[editor] First load: extracted ${Object.keys(data).length} entities from server`);
+    saveToStorage(target, data);
+    showToast('Data loaded from server and cached locally', 'info');
+  } else {
+    // Subsequent load: populate rows from localStorage (SSR values are stale)
+    console.log(`[editor] Loading ${Object.keys(data).length} entities from localStorage`);
+    for (const [id, row] of rowById) {
+      if (data[id]) {
+        populateRow(row, data[id]);
+      }
+    }
+    showToast('Loaded from local cache', 'info');
+  }
+
+  // Show editor list after data loaded (prevents SSR flash)
+  if (editorList) editorList.style.display = '';
+
+  // Update UI indicators (note: icon previews already correct from SSR)
+  for (const row of rows) {
+    updateNoteCount(row);
+  }
+
   const saver = createSaver(
     target,
     (id) => {
-      const row = rowById.get(id);
-      return row ? collectPatch(row) : null;
+      // Read from localStorage, not DOM
+      return data[id] ?? null;
     },
     {
-      onStatus: (id) => {
+      onStatus: (id, result) => {
         const row = rowById.get(id);
         if (row) updateIconPreview(row);
+
+        // Show errors
+        if (!result.ok) {
+          showToast(result.message ?? 'Server sync failed - data safe in local storage', 'error');
+        }
       },
     },
   );
@@ -105,8 +193,30 @@ export function initEntityEditor(): void {
     if (!el) return;
     const id = rowIdFrom(el);
     if (!id) return;
-    if (el.matches('[data-field="notes"]')) updateNoteCount(rowById.get(id) ?? el);
-    saver.schedule(id);
+    const field = ds(el, 'field');
+
+    if (
+      field &&
+      (el instanceof HTMLInputElement ||
+        el instanceof HTMLTextAreaElement ||
+        el instanceof HTMLSelectElement)
+    ) {
+      // LOCAL-FIRST: Update localStorage IMMEDIATELY
+      if (!data[id]) data[id] = { id };
+      if (el instanceof HTMLInputElement && el.type === 'checkbox') {
+        data[id][field] = el.checked;
+      } else {
+        data[id][field] = el.value;
+      }
+      console.log(`[editor] Updated localStorage: ${id}.${field} =`, data[id][field]);
+      saveToStorage(target, data);
+
+      // Schedule async server sync
+      saver.schedule(id);
+    }
+
+    const row = rowById.get(id);
+    if (el.matches('[data-field="notes"]') && row) updateNoteCount(row);
   });
 
   container.addEventListener('change', (event) => {
@@ -123,11 +233,20 @@ export function initEntityEditor(): void {
     if (id) saver.flush(id);
   });
 
-  // Icon picker wiring: on pick, update preview + save immediately.
+  // Icon picker wiring: on pick, update localStorage + save immediately.
   initIconPicker((input) => {
     const row = input.closest<HTMLElement>('[data-editor-row]');
     const id = row ? ds(row, 'editorId') : undefined;
     if (!id) return;
+
+    const field = ds(input, 'field');
+    if (field) {
+      // Update localStorage immediately
+      if (!data[id]) data[id] = { id };
+      data[id][field] = input.value;
+      saveToStorage(target, data);
+    }
+
     if (row) updateIconPreview(row);
     saver.flush(id);
   });
@@ -149,5 +268,12 @@ export function initEntityEditor(): void {
   search?.addEventListener('input', applyFilter);
   applyFilter();
 
-  showToast('Editor ready — edits save to repo', 'info');
+  // Warn before navigating away if data in localStorage (might not be synced to server yet)
+  window.addEventListener('beforeunload', (e) => {
+    // Check if there are any pending saves (in debounce queue or in-flight)
+    if (saver.hasPending()) {
+      e.preventDefault();
+      e.returnValue = 'Changes are being saved, please wait...';
+    }
+  });
 }

@@ -33,9 +33,9 @@ const sortedUnits = [...units].sort(
     <h1 class="text-3xl md:text-4xl font-black" data-i18n-ui="nav.armyBuilder">Army Builder</h1>
   </header>
 
-  <div class="grid gap-4 lg:grid-cols-[1fr_20rem]">
+  <div class="grid gap-4 xl:grid-cols-[1fr_20rem]">
     <!-- List -->
-    <section class="surface p-5 order-2 lg:order-1 min-w-0">
+    <section class="surface p-5 min-w-0">
       <div class="grid gap-3 mb-4 w-full min-w-0">
         <div>
           <span class="label block mb-1.5" data-i18n-ui="calculator.momentum.faction">Faction</span>
@@ -67,12 +67,12 @@ const sortedUnits = [...units].sort(
           />
         </div>
         <UnitFilterFields roleId="unit-role" sortId="unit-sort" campaignId="show-campaign-units" tagFilterId="army-unit-tag-filter" />
-        <div id="unit-grid" class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 w-full min-w-0 max-w-full max-h-[32rem] overflow-y-auto pr-1">
+        <div id="unit-grid" class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 2xl:grid-cols-3 w-full min-w-0 max-w-full">
           {sortedUnits.map((u) => {
             return (
               <UnitSplitCard
                 unit={u}
-                variant="wide"
+                variant="tall"
                 className="unit-pick-card text-left w-full cursor-pointer"
                 dataAttrs={{
                   'data-unit-id': u.id,
@@ -98,10 +98,6 @@ const sortedUnits = [...units].sort(
             );
           })}
         </div>
-        <div id="selected-unit-chip" class="hidden chip justify-between gap-2 px-3 py-2 text-xs"></div>
-        <div id="loadout-config" class="space-y-2"></div>
-        <p id="loadout-total" class="text-sm text-[var(--color-faint)]"></p>
-        <button id="add-btn" type="button" class="btn btn-primary w-full" data-i18n-ui="army.addUnit">Add a unit</button>
       </div>
 
       <ul id="army-list" class="space-y-2"></ul>
@@ -111,8 +107,15 @@ const sortedUnits = [...units].sort(
     </section>
 
     <!-- Summary -->
-    <aside class="surface p-5 order-1 lg:order-2 lg:sticky lg:top-[4.5rem] self-start min-w-0">
-      <h2 class="text-lg font-bold mb-4" data-i18n-ui="common.summary">Summary</h2>
+    <aside
+      id="army-summary-panel"
+      class="hidden surface p-5 min-w-0 fixed right-4 top-[5.5rem] left-auto w-[22rem] max-w-[calc(100vw-2rem)] z-[120] max-h-[70vh] overflow-y-auto xl:block xl:sticky xl:right-auto xl:top-[4.5rem] xl:w-auto xl:max-w-none xl:z-auto xl:max-h-none xl:overflow-visible self-start"
+    >
+      <div class="xl:hidden mb-3 flex items-center justify-between">
+        <h2 class="text-base font-bold" data-i18n-ui="common.summary">Summary</h2>
+        <button id="summary-close-btn" type="button" class="btn btn-ghost !px-2 !py-1" aria-label="Close summary">✕</button>
+      </div>
+      <h2 class="hidden xl:block text-lg font-bold mb-4" data-i18n-ui="common.summary">Summary</h2>
       <div class="space-y-3">
         <div>
           <p class="label" data-i18n-ui="army.summary.totalPoints">Total points</p>
@@ -139,10 +142,67 @@ const sortedUnits = [...units].sort(
     </aside>
   </div>
 
+  <button
+    id="summary-fab"
+    type="button"
+    class="fixed top-[4.75rem] right-4 z-[110] btn btn-primary !inline-flex xl:!hidden"
+    aria-controls="army-summary-panel"
+    aria-expanded="false"
+  >
+    <span data-i18n-ui="common.summary">Summary</span>
+  </button>
+
   <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 hidden surface px-4 py-2.5 text-sm font-semibold z-[120]"></div>
 
   <script>
     import { initArmyBuilder } from '../scripts/army-builder';
     initArmyBuilder();
+
+    const panel = document.getElementById('army-summary-panel');
+    const fab = document.getElementById('summary-fab');
+    const closeBtn = document.getElementById('summary-close-btn');
+    if (panel && fab) {
+      const placeFloatingPanel = () => {
+        if (window.innerWidth >= 1280) {
+          panel.style.top = '';
+          panel.style.right = '';
+          panel.style.left = '';
+          return;
+        }
+        panel.style.top = `${window.scrollY + 88}px`;
+        panel.style.right = '16px';
+        panel.style.left = 'auto';
+      };
+
+      const openPanel = () => {
+        placeFloatingPanel();
+        panel.classList.remove('hidden');
+        fab.setAttribute('aria-expanded', 'true');
+      };
+      const closePanel = () => {
+        panel.classList.add('hidden');
+        fab.setAttribute('aria-expanded', 'false');
+      };
+      fab.addEventListener('click', () => {
+        if (panel.classList.contains('hidden')) openPanel();
+        else closePanel();
+      });
+      closeBtn?.addEventListener('click', closePanel);
+      window.addEventListener('resize', () => {
+        if (window.innerWidth >= 1280) {
+          panel.style.top = '';
+          panel.style.right = '';
+          panel.style.left = '';
+          panel.classList.remove('hidden');
+        } else {
+          closePanel();
+        }
+      });
+      window.addEventListener('scroll', () => {
+        if (window.innerWidth < 1280 && !panel.classList.contains('hidden')) {
+          placeFloatingPanel();
+        }
+      });
+    }
   </script>
 </Base>

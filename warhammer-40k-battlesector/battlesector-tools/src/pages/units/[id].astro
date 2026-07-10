@@ -338,45 +338,6 @@ const vitals = [
     </section>
   </div>
 
-  <!-- Abilities -->
-  {(factionPassive || unitAbilities.length > 0) && (
-    <section class="surface p-5 md:p-6 mt-4">
-      <h2 class="text-lg font-bold mb-4" data-i18n-ui="unitDetail.section.abilities">Abilities</h2>
-      
-      {factionPassive && (
-        <div class="rounded-lg bg-[var(--color-base)] border border-[var(--color-border)] p-4 mb-4">
-          <div class="flex items-start gap-3">
-            {emblem && (
-              <img src={emblem} alt="" width="40" height="40" loading="lazy" class="asset-icon w-10 h-10 shrink-0 object-contain rounded bg-black/30 border border-[var(--color-border)] p-1" />
-            )}
-            <div class="min-w-0">
-              <div class="flex flex-wrap items-center gap-2">
-                <span class="font-bold">{factionPassive.passive}</span>
-                <span class="chip !py-0 !px-1.5 text-[9px] !text-[var(--color-gold-dim)]" data-i18n-ui="unitDetail.factionPassive">Faction passive</span>
-              </div>
-              {passiveLines.length > 0 && (
-                <ul class="mt-1.5 text-sm text-[var(--color-muted)] space-y-0.5">
-                  {passiveLines.map((line) => <li>{line}</li>)}
-                </ul>
-              )}
-              {passiveNote && (
-                <p class="mt-1.5 text-xs text-[var(--color-faint)]">{passiveNote}</p>
-              )}
-            </div>
-          </div>
-        </div>
-      )}
-
-      {unitAbilities.length > 0 && (
-        <div class="grid gap-3 sm:grid-cols-2">
-          {unitAbilities.map((ability) => (
-            <AbilityCard {...ability} />
-          ))}
-        </div>
-      )}
-    </section>
-  )}
-
   <!-- Weapon loadout -->
   {unit.weaponSlots.length > 0 && (
     <section class="surface p-5 md:p-6 mt-4">
@@ -423,6 +384,45 @@ const vitals = [
           </div>
         ))}
       </div>
+    </section>
+  )}
+
+  <!-- Abilities -->
+  {(factionPassive || unitAbilities.length > 0) && (
+    <section class="surface p-5 md:p-6 mt-4">
+      <h2 class="text-lg font-bold mb-4" data-i18n-ui="unitDetail.section.abilities">Abilities</h2>
+      
+      {factionPassive && (
+        <div class="rounded-lg bg-[var(--color-base)] border border-[var(--color-border)] p-4 mb-4">
+          <div class="flex items-start gap-3">
+            {emblem && (
+              <img src={emblem} alt="" width="40" height="40" loading="lazy" class="asset-icon w-10 h-10 shrink-0 object-contain rounded bg-black/30 border border-[var(--color-border)] p-1" />
+            )}
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="font-bold">{factionPassive.passive}</span>
+                <span class="chip !py-0 !px-1.5 text-[9px] !text-[var(--color-gold-dim)]" data-i18n-ui="unitDetail.factionPassive">Faction passive</span>
+              </div>
+              {passiveLines.length > 0 && (
+                <ul class="mt-1.5 text-sm text-[var(--color-muted)] space-y-0.5">
+                  {passiveLines.map((line) => <li>{line}</li>)}
+                </ul>
+              )}
+              {passiveNote && (
+                <p class="mt-1.5 text-xs text-[var(--color-faint)]">{passiveNote}</p>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {unitAbilities.length > 0 && (
+        <div class="grid gap-3 sm:grid-cols-2">
+          {unitAbilities.map((ability) => (
+            <AbilityCard {...ability} />
+          ))}
+        </div>
+      )}
     </section>
   )}
 

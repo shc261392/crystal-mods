@@ -17,6 +17,9 @@ importers:
       astro:
         specifier: ^5.3.4
         version: 5.18.2(@types/node@26.0.1)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.2)(typescript@5.9.3)(yaml@2.9.0)
+      katex:
+        specifier: ^0.17.0
+        version: 0.17.0
     devDependencies:
       '@astrojs/check':
         specifier: ^0.9.9
@@ -1361,6 +1364,10 @@ packages:
     resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
     engines: {node: '>=16'}
 
+  commander@8.3.0:
+    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
+    engines: {node: '>= 12'}
+
   common-ancestor-path@1.0.1:
     resolution: {integrity: sha512-L3sHRo1pXXEqX8VU28kfgUY+YGsk09hPqZiZmLacNib6XNTCM8ubYeT7ryXQw8asB1sKgcU5lkB7ONug08aB8w==}
 
@@ -1730,6 +1737,10 @@ packages:
 
   jsonc-parser@3.3.1:
     resolution: {integrity: sha512-HUgH65KyejrUFPvHFPbqOY0rsFip3Bo5wb4ngvdi1EpCYWUQDC5V+Y7mZws+DLkr4M//zQJoanu1SP+87Dv1oQ==}
+
+  katex@0.17.0:
+    resolution: {integrity: sha512-Vdw0ATsQ9V+LuegM/BTwQqV/6cTl5lbGcIrU+BCgLxyf6bo38ybOr372tuSIxir3CN720flu1meYR6XzNMwQnw==}
+    hasBin: true
 
   kleur@3.0.3:
     resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
@@ -3798,6 +3809,8 @@ snapshots:
 
   commander@11.1.0: {}
 
+  commander@8.3.0: {}
+
   common-ancestor-path@1.0.1: {}
 
   conf@10.2.0:
@@ -4246,6 +4259,10 @@ snapshots:
   jsonc-parser@2.3.1: {}
 
   jsonc-parser@3.3.1: {}
+
+  katex@0.17.0:
+    dependencies:
+      commander: 8.3.0
 
   kleur@3.0.3: {}
 

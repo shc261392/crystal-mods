@@ -201,10 +201,10 @@ function spliceElement(
   file: string,
   id: number,
   mutate: (obj: Record<string, unknown>) => void,
-): boolean {
+): { found: boolean; wrote: boolean } {
   const text = readFileSync(file, 'utf8');
   const span = findElementSpan(text, id);
-  if (!span) return false;
+  if (!span) return { found: false, wrote: false };
   const [start, end] = span;
 
   const obj = JSON.parse(text.slice(start, end + 1)) as Record<string, unknown>;
@@ -215,12 +215,18 @@ function spliceElement(
   const baseIndent = text.slice(lineStart, start);
 
   const replacement = serializeElement(obj, baseIndent);
+  const original = text.slice(start, end + 1);
+  if (replacement === original) return { found: true, wrote: false };
   writeFileSync(file, text.slice(0, start) + replacement + text.slice(end + 1), 'utf8');
-  return true;
+  return { found: true, wrote: true };
 }
 
 function writeJson(file: string, data: unknown): void {
   writeFileSync(file, `${JSON.stringify(data, null, 2)}\n`, 'utf8');
+}
+
+function stableJson(value: unknown): string {
+  return JSON.stringify(value);
 }
 
 /** Remove empty-string / empty-note keys so we don't persist blank fields. */
@@ -242,6 +248,7 @@ export interface ApplyResult {
   target: EditorTarget;
   id: string | number;
   changed: string[];
+  wrote?: boolean; // GOLDEN RULE: Report if disk write actually happened
   message?: string;
 }
 
@@ -257,18 +264,25 @@ export function applyPatch(
 ): ApplyResult {
   if (target === 'unit') {
     const clean = coercePatch(UNIT_FIELDS, patch);
-    const ok = spliceElement(UNITS_PATH, Number(id), (unit) => {
+    const write = spliceElement(UNITS_PATH, Number(id), (unit) => {
       Object.assign(unit, clean);
       stripEmpty(unit, ['notes']);
       stripFalse(unit, ['hidden']);
     });
-    if (!ok) return { ok: false, target, id, changed: [], message: `Unit ${id} not found` };
-    return { ok: true, target, id, changed: Object.keys(clean) };
+    if (!write.found)
+      return { ok: false, target, id, changed: [], message: `Unit ${id} not found` };
+    return {
+      ok: true,
+      target,
+      id,
+      changed: write.wrote ? Object.keys(clean) : [],
+      wrote: write.wrote,
+    };
   }
 
   if (target === 'weapon') {
     const clean = coercePatch(WEAPON_FIELDS, patch);
-    const ok = spliceElement(WEAPONS_PATH, Number(id), (weapon) => {
+    const write = spliceElement(WEAPONS_PATH, Number(id), (weapon) => {
       Object.assign(weapon, clean);
       // Keep the legacy melee/ranged flags consistent with the new weaponType.
       // Variable keys satisfy both ts(4111) index-signature and Biome useLiteralKeys.
@@ -283,8 +297,15 @@ export function applyPatch(
       stripEmpty(weapon, ['notes', 'description', 'weaponType', 'splashMin', 'splashMax']);
       stripFalse(weapon, ['hidden']);
     });
-    if (!ok) return { ok: false, target, id, changed: [], message: `Weapon ${id} not found` };
-    return { ok: true, target, id, changed: Object.keys(clean) };
+    if (!write.found)
+      return { ok: false, target, id, changed: [], message: `Weapon ${id} not found` };
+    return {
+      ok: true,
+      target,
+      id,
+      changed: write.wrote ? Object.keys(clean) : [],
+      wrote: write.wrote,
+    };
   }
 
   // ability
@@ -300,10 +321,13 @@ export function applyPatch(
   const existing = source.entries[key] ?? {};
   const merged = { ...existing, ...clean };
   stripEmpty(merged, ['notes', 'icon', 'description', 'title']);
+  if (stableJson(existing) === stableJson(merged)) {
+    return { ok: true, target, id, changed: [], wrote: false }; // No-op: ability not in source
+  }
   source.entries[key] = merged;
   source.generatedAt = new Date().toISOString();
   writeJson(ABILITY_SOURCE_PATH, source);
   // Regenerate the TS modules the site consumes.
   generateAbilityUi(ABILITY_SOURCE_PATH);
-  return { ok: true, target, id, changed: Object.keys(clean) };
+  return { ok: true, target, id, changed: Object.keys(clean), wrote: true };
 }

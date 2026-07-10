@@ -34,8 +34,19 @@ const cells: Cell[] = [
     value: w.numAttacks > 1 ? `${dmg} ×${w.numAttacks}` : dmg,
     color: 'var(--color-hp)',
   },
-  { key: 'weaponStat.acc', label: 'ACC', value: `${acc}%`, color: 'var(--color-gold)' },
 ];
+
+// Splash between DMG and AP (user requested order)
+if (splash) {
+  cells.push({
+    key: 'weaponStat.splash',
+    label: 'SPLASH',
+    value: `${splash.min}–${splash.max} ×${splash.models}`,
+    color: 'var(--color-toxin)',
+  });
+}
+
+// AP before ACC (user requested this order)
 if (w.armorPiercing > 0) {
   cells.push({
     key: 'weaponStat.ap',
@@ -44,20 +55,20 @@ if (w.armorPiercing > 0) {
     color: 'var(--color-gold-dim)',
   });
 }
+
+cells.push({ key: 'weaponStat.acc', label: 'ACC', value: `${acc}%`, color: 'var(--color-gold)' });
+
 if (hasRange) {
+  // Show range with optimal value (user requested: "Range: 1-3 (Optimal: 1)")
+  const rangeDisplay =
+    w.rangeOptimal > 0 && w.rangeOptimal !== w.rangeMax
+      ? `${w.rangeMin}–${w.rangeMax} (${w.rangeOptimal})`
+      : `${w.rangeMin}–${w.rangeMax}`;
   cells.push({
     key: 'weaponStat.rng',
     label: 'RNG',
-    value: `${w.rangeMin}–${w.rangeMax}`,
+    value: rangeDisplay,
     color: 'var(--color-momentum)',
-  });
-}
-if (splash) {
-  cells.push({
-    key: 'weaponStat.splash',
-    label: 'SPLASH',
-    value: `${splash.min}–${splash.max} ×${splash.models}`,
-    color: 'var(--color-toxin)',
   });
 }
 

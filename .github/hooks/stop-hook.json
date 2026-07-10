@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "type": "command",
+        "command": ".github/hooks/test-suite-stop.sh",
+        "timeout": 120
+      }
+    ]
+  }
+}

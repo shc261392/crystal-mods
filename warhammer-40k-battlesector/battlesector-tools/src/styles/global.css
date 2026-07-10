@@ -172,6 +172,88 @@ a {
   color: var(--color-muted);
 }
 
+.weapon-option-card {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  gap: 0.55rem;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  border: 1px solid var(--color-border);
+  background: color-mix(in oklab, var(--color-elevated) 62%, transparent);
+  color: var(--color-ink);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+.weapon-option-card:hover {
+  border-color: var(--color-border-strong);
+  background: color-mix(in oklab, var(--color-elevated) 78%, transparent);
+  transform: translateY(-1px);
+}
+.weapon-option-card.is-selected {
+  border-color: var(--color-gold);
+  background: color-mix(in oklab, var(--color-gold) 14%, var(--color-elevated));
+}
+.weapon-option-icon {
+  width: 2.35rem;
+  height: 2.35rem;
+  flex: 0 0 auto;
+  border-radius: 0.55rem;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: rgba(0, 0, 0, 0.28);
+  display: grid;
+  place-items: center;
+}
+.weapon-option-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.25rem;
+}
+.weapon-option-body {
+  display: flex;
+  min-width: 0;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.18rem;
+  text-align: left;
+}
+.weapon-option-name {
+  min-width: 0;
+  font-size: 0.86rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.weapon-option-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.72rem;
+  line-height: 1;
+}
+.weapon-option-stats {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.68rem;
+  line-height: 1.15;
+  color: var(--color-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.weapon-option-type {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.weapon-option-cost {
+  color: var(--color-faint);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .cover-btn {
   display: inline-flex;
   align-items: center;

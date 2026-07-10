@@ -3,7 +3,10 @@
 // a chosen weapon loadout (which affects the point cost).
 
 import unitsData from '../data/units.json';
+import { damageRange } from '../lib/combat';
+import { getWeapon } from '../lib/data';
 import type { Unit } from '../lib/types';
+import { resolveWeaponType, weaponTypeMeta } from '../lib/weapon-display';
 import {
   type ArmyEntry,
   decodeArmy,
@@ -14,6 +17,7 @@ import {
   totalPoints,
 } from './army-store';
 import { applyI18n, factionName, roleName, t, tf, unitName, weaponName } from './i18n';
+import { getFactionEmblem, getUnitPortrait, getWeaponPortrait, getWeaponTypeIcon } from './images';
 
 const units = (unitsData as Unit[]).filter((u) => u.faction !== 4);
 const unitById = new Map(units.map((u) => [u.id, u]));
@@ -22,15 +26,6 @@ const unitById = new Map(units.map((u) => [u.id, u]));
 const factions = [...new Map(units.map((u) => [u.faction, u.factionName])).entries()]
   .map(([id, name]) => ({ id, name }))
   .sort((a, b) => factionName(a.id, a.name).localeCompare(factionName(b.id, b.name)));
-
-function unitSlug(u: Unit): string {
-  const s = u.name
-    .toLowerCase()
-    .replace(/['’]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
-  return `${u.id}-${s}`;
-}
 
 /** The default loadout: the zero-cost option in each weapon slot. */
 function defaultLoadout(u: Unit): number[] {
@@ -50,6 +45,12 @@ function loadoutCost(u: Unit, loadout: number[]): number {
   return pts;
 }
 
+function normalizeLoadout(u: Unit, loadout?: number[]): number[] {
+  const base = [...(loadout?.length ? loadout : defaultLoadout(u))];
+  while (base.length < u.weaponSlots.length) base.push(defaultLoadout(u)[base.length] ?? -1);
+  return base;
+}
+
 export function initArmyBuilder(): void {
   const factionBar = document.getElementById('army-faction-bar');
   const unitGrid = document.getElementById('unit-grid');
@@ -60,10 +61,6 @@ export function initArmyBuilder(): void {
     'show-campaign-units',
   ) as HTMLInputElement | null;
   const tagFilter = document.getElementById('army-unit-tag-filter');
-  const loadoutBox = document.getElementById('loadout-config');
-  const loadoutTotal = document.getElementById('loadout-total');
-  const selectedUnitChip = document.getElementById('selected-unit-chip');
-  const addBtn = document.getElementById('add-btn');
   const list = document.getElementById('army-list');
   const empty = document.getElementById('empty');
   if (!factionBar || !unitGrid || !list) return;
@@ -72,7 +69,6 @@ export function initArmyBuilder(): void {
   const barEl = factionBar;
   let selectedFactionId: number | null = null;
   let selectedUnitId: number | null = null;
-  const selectedLoadouts = new Map<number, number[]>();
   const PILL_ACTIVE = [
     '!border-[var(--color-gold)]',
     '!text-[var(--color-gold)]',
@@ -188,7 +184,6 @@ export function initArmyBuilder(): void {
     );
     if (!stillVisible) selectedUnitId = firstVisibleUnit;
     renderSelectedUnitCards();
-    renderLoadoutConfig();
   }
 
   function renderSelectedUnitCards(): void {
@@ -199,16 +194,6 @@ export function initArmyBuilder(): void {
       card.classList.toggle('bg-[color-mix(in_oklab,var(--color-gold)_10%,transparent)]', selected);
       card.setAttribute('aria-pressed', selected ? 'true' : 'false');
     }
-    const u = selectedUnitId !== null ? unitById.get(selectedUnitId) : undefined;
-    if (!selectedUnitChip) return;
-    if (!u) {
-      selectedUnitChip.classList.add('hidden');
-      selectedUnitChip.textContent = '';
-      return;
-    }
-    const pts = loadoutCost(u, currentLoadout(u));
-    selectedUnitChip.classList.remove('hidden');
-    selectedUnitChip.textContent = `${t('common.unit')}: ${unitName(u.id, u.name)} · ${pts} ${t('common.pointsShort')}`;
   }
 
   function paintTagButtons(): void {
@@ -230,73 +215,6 @@ export function initArmyBuilder(): void {
       if (!Number.isFinite(id)) continue;
       opt.textContent = roleName(id, opt.value);
     }
-  }
-
-  function renderLoadoutConfig(): void {
-    if (!loadoutBox) return;
-    const u = selectedUnitId !== null ? unitById.get(selectedUnitId) : undefined;
-    if (!u) {
-      loadoutBox.innerHTML = '';
-      if (loadoutTotal) loadoutTotal.textContent = '';
-      return;
-    }
-    const def = [...(selectedLoadouts.get(u.id) ?? defaultLoadout(u))];
-    const slots = u.weaponSlots
-      .map((slot, i) => {
-        if (slot.options.length <= 1) return '';
-        const opts = slot.options
-          .map(
-            (o) =>
-              `<option value="${o.weaponId}">${weaponName(o.weaponId, o.name)}${o.pointCost ? ` (+${o.pointCost})` : ''}</option>`,
-          )
-          .join('');
-        return `<div><span class="label block mb-1">${t('unitDetail.slotPrefix')} ${i + 1}</span><select data-slot="${i}" class="select text-sm">${opts}</select></div>`;
-      })
-      .join('');
-    loadoutBox.innerHTML = slots ? `<p class="label">${t('army.loadout')}</p>${slots}` : '';
-    for (const sel of loadoutBox.querySelectorAll<HTMLSelectElement>('select[data-slot]')) {
-      const i = Number(sel.getAttribute('data-slot'));
-      sel.value = String(def[i]);
-      sel.addEventListener('change', updateLoadoutTotal);
-    }
-    selectedLoadouts.set(u.id, def);
-    updateLoadoutTotal();
-  }
-
-  function updateLoadoutTotal(): void {
-    if (!loadoutTotal) return;
-    const u = selectedUnitId !== null ? unitById.get(selectedUnitId) : undefined;
-    if (!u) {
-      loadoutTotal.textContent = '';
-      return;
-    }
-    const pts = loadoutCost(u, currentLoadout(u));
-    const delta = pts - u.pointCost;
-    loadoutTotal.textContent =
-      delta > 0
-        ? `${pts} ${t('common.pointsShort')} (base ${u.pointCost} +${delta})`
-        : `${pts} ${t('common.pointsShort')}`;
-  }
-
-  function currentLoadout(u: Unit): number[] {
-    const def = [...(selectedLoadouts.get(u.id) ?? defaultLoadout(u))];
-    if (!loadoutBox) return def;
-    for (const sel of loadoutBox.querySelectorAll<HTMLSelectElement>('select[data-slot]')) {
-      const i = Number(sel.getAttribute('data-slot'));
-      def[i] = Number(sel.value);
-    }
-    selectedLoadouts.set(u.id, def);
-    return def;
-  }
-
-  function loadoutSummary(u: Unit, loadout: number[]): string {
-    return u.weaponSlots
-      .map((slot, i) => {
-        const opt = slot.options.find((o) => o.weaponId === loadout[i]);
-        return opt ? weaponName(opt.weaponId, opt.name) : '';
-      })
-      .filter(Boolean)
-      .join(', ');
   }
 
   function entryKey(e: ArmyEntry): string {
@@ -325,19 +243,22 @@ export function initArmyBuilder(): void {
     for (const card of cards) {
       const unitId = Number(card.getAttribute('data-unit-id'));
       const qty = unitQtyInArmy(unitId);
-      const leftPane = card.querySelector<HTMLElement>('[data-card-actions-anchor]') ?? card;
-      let bar = leftPane.querySelector<HTMLElement>('[data-card-qty-bar]');
+      const qtyAnchor =
+        card.querySelector<HTMLElement>('[data-card-qty-anchor]') ??
+        card.querySelector<HTMLElement>('[data-card-actions-anchor]') ??
+        card;
+      let bar = qtyAnchor.querySelector<HTMLElement>('[data-card-qty-bar]');
       if (!bar) {
         bar = document.createElement('div');
         bar.setAttribute('data-card-qty-bar', '1');
         bar.className =
-          'mt-2 inline-flex items-center gap-1.5 rounded-md border border-[var(--color-border)] bg-black/25 px-1.5 py-1 text-xs';
+          'mt-2 flex w-full items-center justify-between gap-1.5 rounded-md border border-[var(--color-border)] bg-black/25 px-1.5 py-1 text-xs';
         bar.innerHTML = `
-          <button type="button" data-act-card="dec" class="w-6 h-6 rounded border border-[var(--color-border)] hover:border-[var(--color-border-strong)]">−</button>
-          <span data-card-qty class="w-6 text-center tabular-nums font-bold">0</span>
-          <button type="button" data-act-card="inc" class="w-6 h-6 rounded border border-[var(--color-border)] hover:border-[var(--color-border-strong)]">+</button>
+          <button type="button" data-act-card="dec" class="w-8 h-6 rounded border border-[var(--color-border)] hover:border-[var(--color-border-strong)]">−</button>
+          <span data-card-qty class="flex-1 text-center tabular-nums font-bold">0</span>
+          <button type="button" data-act-card="inc" class="w-8 h-6 rounded border border-[var(--color-border)] hover:border-[var(--color-border-strong)]">+</button>
         `;
-        leftPane.appendChild(bar);
+        qtyAnchor.appendChild(bar);
       }
       const qtyEl = bar.querySelector<HTMLElement>('[data-card-qty]');
       if (qtyEl) qtyEl.textContent = String(qty);
@@ -349,21 +270,61 @@ export function initArmyBuilder(): void {
     listEl.innerHTML = army
       .map((e) => {
         const u = unitById.get(e.id);
-        const href = u ? `/units/${unitSlug(u)}` : '#';
         const displayName = u ? unitName(u.id, u.name) : unitName(e.id, e.name);
-        const lo = u && e.loadout ? loadoutSummary(u, e.loadout) : '';
-        return `<li class="flex items-center gap-3 rounded-lg bg-[var(--color-base)] border border-[var(--color-border)] px-3 py-2.5" data-key="${entryKey(e)}">
-          <span class="flex-1 min-w-0">
-            <a href="${href}" class="font-semibold text-sm truncate block hover:text-[var(--color-gold)]">${displayName}</a>
-            <span class="text-xs text-[var(--color-faint)]">${lo ? `${lo} · ` : ''}${tf('army.item.pointsEach', { points: e.points })}</span>
-          </span>
-          <span class="flex items-center gap-1.5 shrink-0">
+        const icon = u
+          ? (getUnitPortrait(u.name, u.portrait) ?? getFactionEmblem(u.faction))
+          : null;
+        const loadout = u ? normalizeLoadout(u, e.loadout) : [...(e.loadout ?? [])];
+        const slotControls = u
+          ? u.weaponSlots
+              .map((slot, i) => {
+                if (slot.options.length <= 1) return '';
+                const options = slot.options
+                  .map((o) => {
+                    const w = getWeapon(o.weaponId);
+                    const icon = w
+                      ? (getWeaponPortrait(w.icon) ?? getWeaponTypeIcon(resolveWeaponType(w)))
+                      : null;
+                    const type = w ? weaponTypeMeta(w) : null;
+                    const dmg = w ? damageRange(w.damage) : null;
+                    const selected = loadout[i] === o.weaponId;
+                    const iconHtml = icon
+                      ? ['<img src="', icon, '" alt="" />'].join('')
+                      : '<span>?</span>';
+                    return `<button type="button" data-act-loadout="1" data-slot="${i}" data-weapon-id="${o.weaponId}" class="weapon-option-card ${selected ? 'is-selected' : ''}">
+                          <span class="weapon-option-icon">${iconHtml}</span>
+                          <span class="weapon-option-body">
+                            <span class="weapon-option-name">${weaponName(o.weaponId, o.name)}</span>
+                            <span class="weapon-option-meta">
+                              <span class="weapon-option-type" style="color:${type?.color ?? 'var(--color-faint)'}">${type?.label ?? ''}</span>
+                              <span class="weapon-option-cost">${o.pointCost ? `+${o.pointCost}` : 'free'}</span>
+                            </span>
+                            ${w ? `<span class="weapon-option-stats">DMG ${dmg?.min ?? w.damage}–${dmg?.max ?? w.damage} · ACC ${w.accuracy}% · AP ${w.armorPiercing} · RNG ${w.rangeMin}-${w.rangeOptimal}-${w.rangeMax}${w.pistol ? ' · PISTOL' : ''}${w.impactType && w.impactType !== 'single' ? ` · ${w.impactType.toUpperCase()}` : ''}</span>` : ''}
+                          </span>
+                        </button>`;
+                  })
+                  .join('');
+                return `<div class="block"><span class="label !text-[10px]">${t('unitDetail.slotPrefix')} ${i + 1}</span><div class="mt-1 grid gap-2">${options}</div></div>`;
+              })
+              .filter(Boolean)
+              .join('')
+          : '';
+        return `<li class="rounded-lg bg-[var(--color-base)] border border-[var(--color-border)] px-3 py-2.5" data-key="${entryKey(e)}">
+          <div class="flex items-start gap-3">
+            ${icon ? `<img src="${icon}" alt="" class="w-10 h-10 rounded object-cover shrink-0 border border-[var(--color-border)]"/>` : `<span class="w-10 h-10 rounded grid place-items-center text-xs border border-[var(--color-border)] text-[var(--color-faint)] shrink-0">?</span>`}
+            <span class="flex-1 min-w-0">
+              <span class="font-semibold text-sm truncate block">${displayName}</span>
+              <span class="text-xs text-[var(--color-faint)]">${tf('army.item.pointsEach', { points: e.points })}</span>
+              ${slotControls ? `<div class="mt-2 grid gap-2">${slotControls}</div>` : ''}
+            </span>
+            <span class="flex items-center gap-1.5 shrink-0">
             <button type="button" data-act="dec" class="btn btn-ghost !px-2 !py-1 text-base leading-none" aria-label="${t('common.decrease')}">−</button>
             <span class="w-7 text-center font-bold tabular-nums">${e.qty}</span>
             <button type="button" data-act="inc" class="btn btn-ghost !px-2 !py-1 text-base leading-none" aria-label="${t('common.increase')}">+</button>
           </span>
           <span class="w-16 text-right font-bold text-[var(--color-gold-dim)] tabular-nums shrink-0">${e.points * e.qty}</span>
           <button type="button" data-act="del" class="text-[var(--color-faint)] hover:text-[var(--color-blood)] shrink-0" aria-label="${t('common.remove')}">✕</button>
+          </div>
         </li>`;
       })
       .join('');
@@ -398,7 +359,7 @@ export function initArmyBuilder(): void {
   function add(): void {
     const u = selectedUnitId !== null ? unitById.get(selectedUnitId) : undefined;
     if (!u) return;
-    const loadout = currentLoadout(u);
+    const loadout = defaultLoadout(u);
     const existing = army.find(
       (e) => e.id === u.id && (e.loadout ?? []).join('-') === loadout.join('-'),
     );
@@ -437,7 +398,6 @@ export function initArmyBuilder(): void {
       const unitId = Number(card.getAttribute('data-unit-id'));
       selectedUnitId = unitId;
       renderSelectedUnitCards();
-      renderLoadoutConfig();
       const act = actBtn.getAttribute('data-act-card');
       if (act === 'inc') add();
       else if (act === 'dec') decrementUnitQuick(unitId);
@@ -447,7 +407,6 @@ export function initArmyBuilder(): void {
     if (!card || card.classList.contains('hidden')) return;
     selectedUnitId = Number(card.getAttribute('data-unit-id'));
     renderSelectedUnitCards();
-    renderLoadoutConfig();
   });
   gridEl.addEventListener('keydown', (e) => {
     const ke = e as KeyboardEvent;
@@ -457,7 +416,6 @@ export function initArmyBuilder(): void {
     ke.preventDefault();
     selectedUnitId = Number(card.getAttribute('data-unit-id'));
     renderSelectedUnitCards();
-    renderLoadoutConfig();
   });
   unitSearch?.addEventListener('input', populateUnits);
   unitSort?.addEventListener('change', populateUnits);
@@ -475,8 +433,6 @@ export function initArmyBuilder(): void {
     paintTagButtons();
     populateUnits();
   });
-  addBtn?.addEventListener('click', add);
-
   list.addEventListener('click', (ev) => {
     const btn = (ev.target as HTMLElement).closest('button[data-act]');
     if (!btn) return;
@@ -488,6 +444,37 @@ export function initArmyBuilder(): void {
     if (act === 'inc') entry.qty += 1;
     else if (act === 'dec') entry.qty = Math.max(1, entry.qty - 1);
     else if (act === 'del') army = army.filter((e) => e !== entry);
+    persist();
+    render();
+  });
+
+  list.addEventListener('click', (ev) => {
+    const btn = (ev.target as HTMLElement).closest(
+      'button[data-act-loadout]',
+    ) as HTMLButtonElement | null;
+    if (!btn) return;
+    ev.preventDefault();
+    const li = btn.closest('li');
+    const key = li?.getAttribute('data-key');
+    const entry = army.find((e) => entryKey(e) === key);
+    if (!entry) return;
+    const u = unitById.get(entry.id);
+    if (!u) return;
+    const slot = Number(btn.getAttribute('data-slot'));
+    const weaponId = Number(btn.getAttribute('data-weapon-id'));
+    if (!Number.isFinite(slot) || !Number.isFinite(weaponId)) return;
+    const next = normalizeLoadout(u, entry.loadout);
+    next[slot] = weaponId;
+    const duplicate = army.find(
+      (e) => e !== entry && e.id === entry.id && (e.loadout ?? []).join('-') === next.join('-'),
+    );
+    if (duplicate) {
+      duplicate.qty += entry.qty;
+      army = army.filter((e) => e !== entry);
+    } else {
+      entry.loadout = next;
+      entry.points = loadoutCost(u, next);
+    }
     persist();
     render();
   });

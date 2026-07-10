@@ -18,10 +18,20 @@ export const MIN_DAMAGE_MULT = 0.75;
 export const CRIT_FACTOR = 5;
 
 /**
+ * Critical damage multiplier: crits deal 1.5× damage (50% bonus).
+ */
+export const CRIT_DAMAGE_MULT = 1.5;
+
+/**
  * Graze chance gained per point of armour ABOVE the weapon's armour piercing.
- * 3% per point (all factions). A graze deals NO damage.
+ * 3% per point (all factions).
  */
 export const GRAZE_FACTOR = 3;
+
+/**
+ * Graze damage multiplier: grazes deal 0.25× damage (75% reduction).
+ */
+export const GRAZE_DAMAGE_MULT = 0.25;
 
 /** The in-game damage range of a weapon: [0.75 × max, max]. */
 export function damageRange(maxDamage: number): { min: number; max: number } {
@@ -85,7 +95,23 @@ export function damagePerHitAfterArmor(
   armorPiercing: number,
 ): number {
   const { min, max } = damageRangeAfterArmor(maxDamage, targetArmor, armorPiercing);
-  return Math.round((min + max) / 2);
+  return (min + max) / 2;
+}
+
+/**
+ * Expected damage per hit accounting for crit/graze probabilities.
+ * Formula: avgDmg × [(1 - crit% - graze%) + (crit% × 1.5) + (graze% × 0.25)]
+ * Returns exact decimal value (no rounding).
+ */
+export function expectedDamagePerHit(
+  avgDamage: number,
+  critPercent: number,
+  grazePercent: number,
+): number {
+  const crit = critPercent / 100;
+  const graze = grazePercent / 100;
+  const normal = 1 - crit - graze;
+  return avgDamage * (normal + crit * CRIT_DAMAGE_MULT + graze * GRAZE_DAMAGE_MULT);
 }
 
 /** Graze chance (%): 3% per point of target armour above armour piercing. Graze = no damage. */

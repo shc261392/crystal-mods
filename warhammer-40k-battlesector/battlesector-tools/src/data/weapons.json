@@ -24,7 +24,8 @@
     "splashModels": 2,
     "splashFalloff": 0.4,
     "splashHeavyAll": false,
-    "targetType": "fixedPerMember"
+    "targetType": "fixedPerMember",
+    "weaponType": "ballistic"
   },
   {
     "id": 9047,
@@ -4550,7 +4551,8 @@
     "splashModels": 2,
     "splashFalloff": 0.4,
     "splashHeavyAll": false,
-    "targetType": "fixedPerMember"
+    "targetType": "fixedPerMember",
+    "weaponType": "flame"
   },
   {
     "id": 43,
@@ -4577,7 +4579,8 @@
     "splashModels": 2,
     "splashFalloff": 0.4,
     "splashHeavyAll": false,
-    "targetType": "fixedPerMember"
+    "targetType": "fixedPerMember",
+    "weaponType": "flame"
   },
   {
     "id": 46,
@@ -4604,7 +4607,8 @@
     "splashModels": 2,
     "splashFalloff": 0.4,
     "splashHeavyAll": false,
-    "targetType": "fixedPerMember"
+    "targetType": "fixedPerMember",
+    "weaponType": "flame"
   },
   {
     "id": 9050,
@@ -4617,8 +4621,8 @@
     "burstSize": 1,
     "armorPiercing": 2,
     "criticalChance": 0,
-    "isMelee": true,
-    "isRanged": false,
+    "isMelee": false,
+    "isRanged": true,
     "rangeMin": 1,
     "rangeOptimal": 1,
     "rangeMax": 1.5,
@@ -4631,7 +4635,8 @@
     "splashModels": 2,
     "splashFalloff": 0.4,
     "splashHeavyAll": false,
-    "targetType": "fixedPerMember"
+    "targetType": "fixedPerMember",
+    "weaponType": "flame"
   },
   {
     "id": 4007,

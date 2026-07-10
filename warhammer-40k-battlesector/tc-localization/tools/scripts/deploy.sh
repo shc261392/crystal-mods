@@ -20,8 +20,31 @@ GAME_DATA_REL="Warhammer 40K Battlesector_Data"
 SA_REL="$GAME_DATA_REL/StreamingAssets"
 LAUNCHER_REL="Launcher/Localization"
 
-BUNDLE_NAME="unknownassets_assets_all_12cf1b4aeb7c9355f8487758e37a43d2.bundle"
-MAPBUILDER_NAME="mapbuildertools_assets_all.bundle"
+UNKNOWN_BUNDLE_CANDIDATES=(
+    "startup_assets_all.bundle"
+    "unknownassets_assets_all_12cf1b4aeb7c9355f8487758e37a43d2.bundle"
+)
+MAPBUILDER_BUNDLE_CANDIDATES=(
+    "mapbuilder-tools_assets_all.bundle"
+    "mapbuildertools_assets_all.bundle"
+)
+
+resolve_bundle_name() {
+    local base_dir="$1"; shift
+    local candidates=("$@")
+    local candidate
+    for candidate in "${candidates[@]}"; do
+        if [[ -f "$base_dir/$SA_REL/$candidate" ]]; then
+            echo "$candidate"
+            return 0
+        fi
+    done
+    # fallback to first candidate so script remains deterministic
+    echo "${candidates[0]}"
+}
+
+BUNDLE_NAME="$(resolve_bundle_name "$GAME_DIR" "${UNKNOWN_BUNDLE_CANDIDATES[@]}")"
+MAPBUILDER_NAME="$(resolve_bundle_name "$GAME_DIR" "${MAPBUILDER_BUNDLE_CANDIDATES[@]}")"
 
 # All files the patch touches, paths RELATIVE to $GAME_DIR.
 # Used by both deploy.sh (backup + restore-for-patching) and uninstall.sh.
@@ -46,6 +69,9 @@ if [[ ! -d "$GAME_DIR" ]]; then
     echo "       Edit GAME_DIR in tools/scripts/deploy.sh" >&2
     exit 1
 fi
+
+echo "Using startup bundle: $BUNDLE_NAME"
+echo "Using mapbuilder bundle: $MAPBUILDER_NAME"
 
 # Ensure UnityPy is available
 if ! python3 -c "import UnityPy" 2>/dev/null; then
@@ -142,6 +168,10 @@ echo ""
 echo "=== Step 7: Patch launcher TC strings ==="
 python3 "$SCRIPT_DIR/patch_launcher.py"
 
+echo ""
+echo "=== Step 7.5: Leave Addressables catalog files untouched (safety) ==="
+echo "  Skipping catalog.bin/hash deploy to avoid root/aa catalog mismatch."
+
 # ── Phase 4: deploy dist → game ──────────────────────────────────────────────
 echo ""
 echo "=== Step 8: Deploy patched files to game ==="
@@ -159,11 +189,11 @@ deploy_file "$DIST_DIR/sharedassets1.assets"          "$GAME_DIR/$GAME_DATA_REL/
 deploy_file "$DIST_DIR/resources.assets"              "$GAME_DIR/$GAME_DATA_REL/resources.assets"
 deploy_file "$DIST_DIR/$BUNDLE_NAME"                  "$GAME_DIR/$SA_REL/$BUNDLE_NAME"
 deploy_file "$DIST_DIR/$MAPBUILDER_NAME"              "$GAME_DIR/$SA_REL/$MAPBUILDER_NAME"
-deploy_file "$DIST_DIR/catalog.bin"                   "$GAME_DIR/$SA_REL/catalog.bin"
-deploy_file "$DIST_DIR/catalog.bin"                   "$GAME_DIR/$SA_REL/aa/catalog.bin"
-deploy_file "$DIST_DIR/catalog.hash"                  "$GAME_DIR/$SA_REL/catalog.hash"
-deploy_file "$DIST_DIR/catalog.hash"                  "$GAME_DIR/$SA_REL/aa/catalog.hash"
 deploy_file "$DIST_DIR/stringsChinese.resx"           "$GAME_DIR/$LAUNCHER_REL/stringsChinese.resx"
+echo "  skipped: $SA_REL/catalog.bin"
+echo "  skipped: $SA_REL/catalog.hash"
+echo "  skipped: $SA_REL/aa/catalog.bin"
+echo "  skipped: $SA_REL/aa/catalog.hash"
 
 # ── Clear Unity asset cache to force fresh bundle load ──────────────────────
 # Without cache clearing, Unity loads cached bundle on next launch instead of

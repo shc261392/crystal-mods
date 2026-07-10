@@ -37,7 +37,29 @@ REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 DIST_DIR = os.path.join(REPO_ROOT, "translation/zh-TW/dist")
 PATCHED_DIR = os.path.join(REPO_ROOT, "translation/zh-TW/patched")
 
-BUNDLE_NAME = "unknownassets_assets_all_12cf1b4aeb7c9355f8487758e37a43d2.bundle"
+DEFAULT_GAME_DIR = "/mnt/d/SteamLibrary/steamapps/common/Warhammer 40000 Battlesector"
+GAME_DIR = os.environ.get("MOD_GAME_DIR", DEFAULT_GAME_DIR)
+MOD_BACKUP_DIR = os.environ.get("MOD_BACKUP_DIR", os.path.join(GAME_DIR, ".zh-tw-mod-backup"))
+SA_REL = os.path.join("Warhammer 40K Battlesector_Data", "StreamingAssets")
+
+BUNDLE_CANDIDATES = [
+    "startup_assets_all.bundle",
+    "unknownassets_assets_all_12cf1b4aeb7c9355f8487758e37a43d2.bundle",
+]
+
+
+def _resolve_bundle_name() -> str:
+    for candidate in BUNDLE_CANDIDATES:
+        if os.path.isfile(os.path.join(DIST_DIR, candidate)):
+            return candidate
+        if os.path.isfile(os.path.join(MOD_BACKUP_DIR, SA_REL, candidate)):
+            return candidate
+        if os.path.isfile(os.path.join(GAME_DIR, SA_REL, candidate)):
+            return candidate
+    return BUNDLE_CANDIDATES[0]
+
+
+BUNDLE_NAME = _resolve_bundle_name()
 BUNDLE_DIST = os.path.join(DIST_DIR, BUNDLE_NAME)
 CATALOG_DIST = os.path.join(DIST_DIR, "catalog.bin")
 CATALOG_HASH_DIST = os.path.join(DIST_DIR, "catalog.hash")
@@ -1789,6 +1811,77 @@ NOTO_NU_MATERIAL_PID  = -6068476065370780780  # NotoSansCJKjp-Regular SDF Materi
 _NOTO_NU_RES_S_KEY = "CAB-be8dbf1298107e31652b994c6db02e50.resS"
 
 
+def _force_futura_to_noto(env) -> int:
+    """Force futura TMP font to use Noto No-Underlay data as primary renderer.
+
+    This is a deterministic, Vortex-safe strategy for TC rendering stability:
+      - futura keeps its path/name identity (UI references remain valid)
+      - but its Character/Glyph tables and atlas references are replaced with
+        NotoSansCJKjp No-Underlay tables/atlas (already patched for TC)
+
+    Returns 1 if changed, 0 if already in forced-Noto state.
+    """
+    futura_obj = None
+    noto_obj = None
+    for obj in env.objects:
+        if obj.path_id == FUTURA_TMP_PID:
+            futura_obj = obj
+        elif obj.path_id == NO_UNDERLAY_FONT_PATH_ID:
+            noto_obj = obj
+        if futura_obj and noto_obj:
+            break
+
+    if not futura_obj or not noto_obj:
+        print("  Force Noto: futura or NotoNU TMP font not found — skipping.")
+        return 0
+
+    futura_tt = futura_obj.read_typetree()
+    noto_tt = noto_obj.read_typetree()
+
+    futura_chars = futura_tt.get("m_CharacterTable", [])
+    noto_chars = noto_tt.get("m_CharacterTable", [])
+
+    # Idempotency: same atlas source + same/greater char coverage
+    futura_atlases = futura_tt.get("m_AtlasTextures", []) or []
+    forced_already = (
+        len(futura_atlases) > 0
+        and futura_atlases[0].get("m_PathID", 0) == NO_UNDERLAY_ATLAS_PATH_ID
+        and len(futura_chars) >= len(noto_chars)
+    )
+    if forced_already:
+        print(f"  Force Noto: futura already using Noto atlas/tables ({len(futura_chars)} chars), skipping.")
+        return 0
+
+    futura_tt["m_CharacterTable"] = [dict(c) for c in noto_tt.get("m_CharacterTable", [])]
+    futura_tt["m_GlyphTable"] = [dict(g) for g in noto_tt.get("m_GlyphTable", [])]
+    futura_tt["m_AtlasTextures"] = [dict(a) for a in noto_tt.get("m_AtlasTextures", [])]
+    futura_tt["m_AtlasWidth"] = noto_tt.get("m_AtlasWidth", FUTURA_NEW_W)
+    futura_tt["m_AtlasHeight"] = noto_tt.get("m_AtlasHeight", FUTURA_NEW_H)
+    futura_tt["m_AtlasPopulationMode"] = 0
+    futura_tt["m_IsMultiAtlasTexturesEnabled"] = 0
+    futura_tt["m_FallbackFontAssetTable"] = [
+        {"m_FileID": 0, "m_PathID": GENERATED_FONT_PATH_ID},
+        {"m_FileID": 0, "m_PathID": ROBOTO_FONT_PATH_ID},
+    ]
+
+    # Keep source font local + resolvable if present
+    src = noto_tt.get("m_SourceFontFile")
+    if isinstance(src, dict):
+        futura_tt["m_SourceFontFile"] = dict(src)
+
+    # Character table binary-search safety
+    futura_tt["m_CharacterTable"] = sorted(
+        futura_tt["m_CharacterTable"], key=lambda c: c.get("m_Unicode", 0)
+    )
+
+    futura_obj.save_typetree(futura_tt)
+    print(
+        f"  Force Noto: futura now mirrors NotoNU tables ({len(futura_tt['m_CharacterTable'])} chars, "
+        f"{len(futura_tt['m_GlyphTable'])} glyphs)."
+    )
+    return 1
+
+
 def _load_external_otf_characters(otf_path: str) -> list:
     """Extract character table from external OTF font file for Futura substitution.
     
@@ -2430,6 +2523,16 @@ def main() -> None:
     n_noto_nu_bake = _bake_tc_into_noto_no_underlay(env, _noto_nu_bytes)
     if n_noto_nu_bake > 0:
         patched += 1
+
+    # ── Step 10: Force futura to Noto tables/atlas (default ON) ──
+    # User-facing stability mode for TC: keep UI references to futura intact,
+    # but render with Noto No-Underlay glyph data directly.
+    if os.environ.get("MOD_FORCE_NOTO_FUTURA", "1") == "1":
+        n_force_noto = _force_futura_to_noto(env)
+        if n_force_noto > 0:
+            patched += 1
+    else:
+        print("  Step 10: Force Noto for futura disabled (MOD_FORCE_NOTO_FUTURA=0).")
 
     if patched == 0:
         print("No TMP font assets needed patching.")

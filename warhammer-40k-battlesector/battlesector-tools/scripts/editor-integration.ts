@@ -1,3 +1,4 @@
+import path from 'node:path';
 /**
  * Dev-only editor API integration.
  *
@@ -16,6 +17,16 @@ import { type EditorTarget, applyPatch } from './editor-store.ts';
 const SAVE_ROUTE = '/__editor/save';
 const HEALTH_ROUTE = '/__editor/health';
 const VALID_TARGETS: EditorTarget[] = ['unit', 'weapon', 'ability'];
+
+// Files the editor modifies — must not trigger HMR reload during edit sessions
+const EDITOR_MANAGED_FILES = [
+  path.join('src', 'data', 'units.json'),
+  path.join('src', 'data', 'weapons.json'),
+  path.join('src', 'data', 'ability-overrides.source.json'),
+  path.join('src', 'data', 'abilities.json'),
+  path.join('src', 'lib', 'ability-types.ts'),
+  path.join('src', 'lib', 'unit-abilities.ts'),
+];
 
 function readBody(req: import('node:http').IncomingMessage): Promise<string> {
   return new Promise((resolve, reject) => {
@@ -38,6 +49,10 @@ export function editorApi(): AstroIntegration {
     name: 'battlesector-editor-api',
     hooks: {
       'astro:server:setup': ({ server, logger }) => {
+        // Prevent HMR reload when editor saves to these files
+        const unwatchPaths = EDITOR_MANAGED_FILES.map((p) => path.resolve(process.cwd(), p));
+        server.watcher.unwatch(unwatchPaths);
+
         server.middlewares.use((req, res, next) => {
           const url = req.url ?? '';
 
@@ -87,7 +102,8 @@ export function editorApi(): AstroIntegration {
           })();
         });
 
-        logger.info('editor API ready at POST /__editor/save (dev only)');
+        logger.info('editor API: POST /__editor/save (dev only)');
+        logger.info(`editor API: unwatched ${unwatchPaths.length} files to prevent HMR reload`);
       },
     },
   };

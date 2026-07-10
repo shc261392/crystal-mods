@@ -37,7 +37,7 @@ const sorted = [...allUnits].sort((a, b) => a.name.localeCompare(b.name));
     <span id="editor-count" class="text-sm text-[var(--color-faint)]"></span>
   </div>
 
-  <div id="editor-list" class="space-y-4">
+  <div id="editor-list" class="space-y-4" style="display:none">
     {sorted.map((u) => (
       <article
         data-editor-row
