@@ -82,10 +82,13 @@ const carriers = units
   .sort((a, b) => a.name.localeCompare(b.name));
 
 // Weapon abilities (if any)
-const weaponAbilities = weapon.abilities?.map((a) => {
-  const ability = getAbility(a.Ability);
-  return ability ? { ...ability, startsLocked: a.StartsLocked === 1 } : null;
-}).filter(Boolean) ?? [];
+const weaponAbilities =
+  weapon.abilities
+    ?.map((a) => {
+      const ability = getAbility(a.Ability);
+      return ability ? { ...ability, startsLocked: a.StartsLocked === 1 } : null;
+    })
+    .filter(Boolean) ?? [];
 
 const typeIcon = getWeaponTypeIcon(resolveWeaponType(weapon));
 const weaponIcon = getWeaponPortrait(weapon.icon) ?? typeIcon;
