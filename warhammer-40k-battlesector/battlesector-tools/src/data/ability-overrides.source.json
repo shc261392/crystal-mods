@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T09:14:14.794Z",
+  "generatedAt": "2026-07-10T12:29:36.428Z",
   "storageKey": "bs.ability-overrides.v1",
   "entries": {
     "1": {
@@ -506,6 +506,22 @@
       "description": "When an enemy unit targets this unit with a weapon attack, this unit immediately gains a stack of Shield of Faith, which gives:\n\n+0.6 Ranged Armor\n+0.6 Melee Armor\nExpires in 2 Turns.\n\nStacks up to 3 times.",
       "kind": "passive"
     },
+    "20005": {
+      "title": "Seraphim Wings",
+      "actionPoints": 0,
+      "cooldown": 2,
+      "kind": "active",
+      "description": "Affects casting unit\n\n+2 Movement\nExpires in 1 Turn",
+      "icon": "/ability-icons/SeraphimWingsIcons.png"
+    },
+    "20006": {
+      "title": "Grace",
+      "actionPoints": 0,
+      "cooldown": 0,
+      "kind": "passive",
+      "icon": "/ability-icons/GraceIcon.png",
+      "description": "Applied while Seraphim Wings is active\n\n+10 Ranged Accuracy\n+10 Evasion"
+    },
     "20009": {
       "actionPoints": 0,
       "cooldown": 0,
@@ -553,6 +569,19 @@
       "title": "Divine Inspiration",
       "description": "Convert all Shield of Faith stacks into Divine Inspiration stacks, which give:\n\n+10 Momentum per stack for 1 turn.",
       "kind": "active"
+    },
+    "20036": {
+      "title": "Bastion of the Fai",
+      "actionPoints": 0,
+      "cooldown": 0
+    },
+    "20047": {
+      "title": "Righteous Aura",
+      "actionPoints": 1,
+      "cooldown": 3,
+      "kind": "active",
+      "description": "Unit makes a single charge attack and for the duration of this attack only, this unit gains:\n\n+10% Melee Accuracy\n+10% Critical Chance",
+      "icon": "/ability-icons/RighteousAuraIcon.png"
     },
     "30010": {
       "title": "Hover",

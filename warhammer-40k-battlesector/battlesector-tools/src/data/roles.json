@@ -1,12 +1,1 @@
-[
-  { "id": 1, "name": "HQ", "nameId": 97, "color": "#ffab51", "sort": 0 },
-  { "id": 2, "name": "Troop", "nameId": 98, "color": "#cc6161", "sort": 5 },
-  { "id": 3, "name": "Elite", "nameId": 99, "color": "#bb89e5", "sort": 1 },
-  { "id": 4, "name": "Flyer", "nameId": 100, "color": "#b03446", "sort": 4 },
-  { "id": 5, "name": "Fast Attack", "nameId": 101, "color": "#6b9f2e", "sort": 3 },
-  { "id": 6, "name": "Heavy Support", "nameId": 102, "color": "#5c9fec", "sort": 2 },
-  { "id": 7, "name": "Dedicated Transport", "nameId": 103, "color": "#ffd555", "sort": 6 },
-  { "id": 8, "name": "Fortification", "nameId": 104, "color": "#ff00ff", "sort": 1000 },
-  { "id": 9, "name": "Lord of War", "nameId": 105, "color": "#ff00ff", "sort": 1000 },
-  { "id": 10, "name": "Trap", "nameId": 1188, "color": "#763e19", "sort": 999 }
-]
+[{"id":1,"name":"HQ","nameId":97,"color":"#ffab51","sort":0},{"id":2,"name":"Troop","nameId":98,"color":"#cc6161","sort":5},{"id":3,"name":"Elite","nameId":99,"color":"#bb89e5","sort":1},{"id":4,"name":"Flyer","nameId":100,"color":"#b03446","sort":4},{"id":5,"name":"Fast Attack","nameId":101,"color":"#6b9f2e","sort":3},{"id":6,"name":"Heavy Support","nameId":102,"color":"#5c9fec","sort":2},{"id":7,"name":"Dedicated Transport","nameId":103,"color":"#ffd555","sort":6},{"id":8,"name":"Fortification","nameId":104,"color":"#ff00ff","sort":1000},{"id":9,"name":"Lord of War","nameId":105,"color":"#ff00ff","sort":1000},{"id":10,"name":"Trap","nameId":1188,"color":"#763e19","sort":999}]
