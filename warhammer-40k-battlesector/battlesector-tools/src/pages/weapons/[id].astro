@@ -2,6 +2,7 @@
 import katex from 'katex';
 import AbilityCard from '../../components/AbilityCard.astro';
 import FieldNotes from '../../components/FieldNotes.astro';
+import StatHexagon from '../../components/StatHexagon.astro';
 import Base from '../../layouts/Base.astro';
 import {
   critChance,
@@ -305,6 +306,8 @@ const totalDmgLatex = katex.renderToString(
       <a href={`/calculator?weapon=${weapon.id}`} class="btn btn-sm btn-primary" data-i18n-ui="weaponDetail.action.openInCalculator">Open in calculator</a>
     </div>
   </div>
+
+  <StatHexagon kind="weapon" id={weapon.id} class="mt-4 max-w-md mx-auto" />
 
   {weapon.description && (
     <section class="surface p-5 mt-4">

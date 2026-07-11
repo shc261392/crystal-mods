@@ -1,0 +1,51 @@
+---
+/**
+ * Stat hexagon panel ("六邊形能力指數圖"). Renders how a unit or weapon ranks
+ * against the whole roster on 6 percentile-graded axes. Ranks are precomputed at
+ * build time by scripts/generate-stat-ranks.ts.
+ *
+ * The SVG is produced by a pure string builder (src/lib/render/stat-hexagon.ts)
+ * so the exact same markup is reused client-side by the explorer detail pane.
+ */
+import unitRanks from '../data/unit-ranks.json';
+import weaponRanks from '../data/weapon-ranks.json';
+import {
+  type RankRecord,
+  UNIT_HEX_AXES,
+  WEAPON_HEX_AXES,
+  statHexagonHTML,
+} from '../lib/render/stat-hexagon';
+
+interface Props {
+  kind: 'unit' | 'weapon';
+  id: number;
+  class?: string;
+}
+
+const { kind, id, class: className = '' } = Astro.props;
+const table = (kind === 'unit' ? unitRanks : weaponRanks) as Record<string, RankRecord>;
+const axes = kind === 'unit' ? UNIT_HEX_AXES : WEAPON_HEX_AXES;
+const rank = table[String(id)];
+const svg = rank ? statHexagonHTML(rank, axes) : '';
+const kindLabel = kind === 'unit' ? 'units' : 'weapons';
+---
+
+{
+  svg && (
+    <div class={`surface p-4 flex flex-col items-center ${className}`}>
+      <div class="w-full flex items-baseline justify-between mb-1">
+        <span class="eyebrow" data-i18n-ui="hex.title">
+          Stat Index
+        </span>
+        <span class="text-[11px] text-[var(--color-faint)]">
+          <span data-i18n-ui="hex.gradeScale">grade 1–5</span>
+        </span>
+      </div>
+      <Fragment set:html={svg} />
+      <p class="mt-1 text-[11px] text-[var(--color-faint)] text-center">
+        <span data-i18n-ui="hex.subtitle">Percentile rank across the roster</span>
+        <span class="sr-only">{kindLabel}</span>
+      </p>
+    </div>
+  )
+}

@@ -17,6 +17,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { generateAbilityUi } from './generate-ability-ui.ts';
+import { generateStatRanks } from './generate-stat-ranks.ts';
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.join(scriptDir, '..');
@@ -85,6 +86,10 @@ console.log(
   `  ✓ ${genSummary.total} abilities (${genSummary.active} active, ${genSummary.passive} passive)`,
 );
 
+console.log('▸ Regenerating stat-rank hexagon data…');
+const rankSummary = generateStatRanks();
+console.log(`  ✓ ${rankSummary.units} unit ranks, ${rankSummary.weapons} weapon ranks`);
+
 console.log('▸ Computing content hash…');
 const hashFiles = [
   path.join(dataDir, 'units.json'),
@@ -92,6 +97,8 @@ const hashFiles = [
   path.join(dataDir, 'ability-overrides.source.json'),
   path.join(dataDir, 'i18n.json'),
   path.join(dataDir, 'image-urls.json'),
+  path.join(dataDir, 'unit-ranks.json'),
+  path.join(dataDir, 'weapon-ranks.json'),
   path.join(libDir, 'unit-abilities.ts'),
 ];
 const hasher = createHash('sha256');

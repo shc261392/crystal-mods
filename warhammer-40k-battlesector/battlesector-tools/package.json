@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "editor": "astro dev --port 4324",
-    "prebuild": "node ./scripts/generate-ability-ui.ts",
+    "prebuild": "node ./scripts/generate-ability-ui.ts && node ./scripts/generate-stat-ranks.ts",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "predeploy-check": "node ./scripts/predeploy-check.ts",
@@ -15,6 +15,7 @@
     "cf-typegen": "wrangler types",
     "check": "astro check",
     "gen:abilities": "node ./scripts/generate-ability-ui.ts",
+    "gen:ranks": "node ./scripts/generate-stat-ranks.ts",
     "i18n:audit": "node ./scripts/i18n-audit.ts",
     "i18n:integrate-abilities": "node ./scripts/integrate-ability-i18n.ts",
     "i18n:integrate-abilities:dry": "node ./scripts/integrate-ability-i18n.ts --dry-run",

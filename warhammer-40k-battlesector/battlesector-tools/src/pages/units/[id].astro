@@ -1,6 +1,7 @@
 ---
 import AbilityCard from '../../components/AbilityCard.astro';
 import FieldNotes from '../../components/FieldNotes.astro';
+import StatHexagon from '../../components/StatHexagon.astro';
 import Tooltip from '../../components/Tooltip.astro';
 import WeaponStatZone from '../../components/WeaponStatZone.astro';
 import Base from '../../layouts/Base.astro';
@@ -133,8 +134,8 @@ const unitAbilities = unit.abilityIds ? getAbilities(unit.abilityIds) : [];
 const vitals = [
   {
     label: 'HP',
-    value: unit.totalHealth,
-    sub: unit.members > 1 ? `${unit.maxHealth} × ${unit.members}` : null,
+    value: unit.maxHealth,
+    sub: unit.members > 1 ? `× ${unit.members}` : null,
     accent: '#39904B',
     stat: 'health',
   },
@@ -232,8 +233,9 @@ const vitals = [
     </div>
   </div>
 
-  <!-- Vitals -->
-  <section class="surface p-5 md:p-6 mt-4">
+  <!-- Vitals + Stat Index hexagon -->
+  <div class="grid gap-4 mt-4 lg:grid-cols-[1fr_300px] items-start">
+  <section class="surface p-5 md:p-6">
     <div class="grid gap-x-6 gap-y-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
       {vitals.map((v) => (
         <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] px-3 py-2.5 text-center">
@@ -274,6 +276,8 @@ const vitals = [
       </div>
     </div>
   </section>
+    <StatHexagon kind="unit" id={unit.id} />
+  </div>
 
   <!-- Stat groups -->
   <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mt-4">
