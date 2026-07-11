@@ -1,5 +1,6 @@
 ---
 import { ClientRouter } from 'astro:transitions';
+import ArmyDrawer from '../components/ArmyDrawer.astro';
 import Nav from '../components/Nav.astro';
 import buildMeta from '../data/build-meta.json';
 import '../styles/global.css';
@@ -105,9 +106,14 @@ const fullTitle = title === 'Battlesector Tools' ? title : `${title} · Battlese
       </footer>
     </div>
 
+    <ArmyDrawer />
+
     <script>
       import { initTooltips } from '../scripts/tooltip';
+      import { onPageLoad } from '../scripts/reinit';
+      import { initArmyDrawer } from '../scripts/army-drawer';
       initTooltips();
+      onPageLoad(initArmyDrawer);
     </script>
   </body>
 </html>

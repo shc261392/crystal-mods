@@ -31,6 +31,7 @@ export function initUnitDetail(): void {
     const faction = addBtn.getAttribute('data-faction') ?? '';
     if (!Number.isFinite(id)) return;
     addToArmy({ id, name, points, faction });
+    document.dispatchEvent(new CustomEvent('bs:army-changed'));
     toast(tf('toast.addedToArmy', { name }));
   });
 }

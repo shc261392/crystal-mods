@@ -1,0 +1,78 @@
+---
+// Global army drawer: a persistent right-side panel for managing multiple named
+// armies. Rendered as a static shell; contents are populated client-side from
+// the localStorage-backed multi-army store (scripts/army-drawer.ts). Uses
+// transition:persist so it survives ClientRouter navigations.
+---
+<div
+  id="army-drawer-root"
+  transition:persist
+  class="fixed inset-0 z-[130] hidden"
+  data-army-drawer
+  aria-hidden="true"
+>
+  <!-- Backdrop -->
+  <div data-army-backdrop class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-200"></div>
+
+  <!-- Panel -->
+  <aside
+    data-army-panel
+    role="dialog"
+    aria-label="Army list"
+    class="absolute right-0 top-0 h-full w-full max-w-[400px] translate-x-full transition-transform duration-200 ease-out bg-[var(--color-base)] border-l border-[var(--color-border)] flex flex-col shadow-2xl"
+  >
+    <header class="p-3 border-b border-[var(--color-border)] flex items-center gap-2">
+      <span class="eyebrow" data-i18n-ui="army.title">Army</span>
+      <div class="flex-1"></div>
+      <button type="button" data-army-close class="btn btn-ghost h-8 w-8 !px-0" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </header>
+
+    <!-- Army switcher -->
+    <div class="p-3 border-b border-[var(--color-border)] flex items-center gap-2">
+      <select data-army-switcher class="select h-9 flex-1 min-w-0" aria-label="Select army"></select>
+      <button type="button" data-army-new class="btn btn-ghost h-9 !px-2.5 shrink-0" title="New army" aria-label="New army">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+      </button>
+    </div>
+
+    <!-- Rename + delete row -->
+    <div class="px-3 pt-3 flex items-center gap-2">
+      <input
+        data-army-name
+        type="text"
+        maxlength="30"
+        class="input h-9 flex-1 min-w-0"
+        aria-label="Army name"
+        placeholder="Army name"
+      />
+      <button type="button" data-army-delete class="btn btn-ghost h-9 w-9 !px-0 text-[var(--color-blood)]" title="Delete army" aria-label="Delete army">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M9 7V5h6v2M6 7l1 13h10l1-13"/></svg>
+      </button>
+    </div>
+
+    <!-- Entries -->
+    <div data-army-entries class="flex-1 overflow-y-auto p-3 flex flex-col gap-2"></div>
+
+    <!-- Empty state -->
+    <div data-army-empty class="hidden flex-1 grid place-items-center p-6 text-center text-sm text-[var(--color-faint)]">
+      <p data-i18n-ui="army.empty">No units yet. Add units from their detail page.</p>
+    </div>
+
+    <!-- Footer totals + actions -->
+    <footer class="p-3 border-t border-[var(--color-border)] flex flex-col gap-2.5">
+      <div class="flex items-center justify-between text-sm">
+        <span class="text-[var(--color-faint)]" data-i18n-ui="army.totals">Total</span>
+        <span class="tabular-nums font-semibold">
+          <span data-army-total-points>0</span> <span data-i18n-ui="army.points">pts</span>
+          · <span data-army-total-models>0</span> <span data-i18n-ui="army.models">models</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-2">
+        <button type="button" data-army-share class="btn btn-ghost h-9 flex-1" data-i18n-ui="army.share">Copy link</button>
+        <button type="button" data-army-clear class="btn btn-ghost h-9 flex-1 text-[var(--color-blood)]" data-i18n-ui="army.clear">Clear</button>
+      </div>
+    </footer>
+  </aside>
+</div>
