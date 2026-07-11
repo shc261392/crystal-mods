@@ -107,17 +107,12 @@ function search(query: string): void {
 
 export function initNav(): void {
   applyI18n();
-  initI18nSelector(document.getElementById('lang-select') as HTMLSelectElement | null);
-
-  const menuToggle = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
-  menuToggle?.addEventListener('click', () => {
-    const open = mobileMenu?.classList.toggle('hidden') === false;
-    menuToggle.setAttribute('aria-expanded', String(open));
-  });
+  for (const sel of document.querySelectorAll<HTMLSelectElement>('select.lang-select')) {
+    initI18nSelector(sel);
+  }
 
   const overlay = document.getElementById('search-overlay');
-  const openBtn = document.getElementById('search-open');
+  const openButtons = document.querySelectorAll<HTMLElement>('[data-search-open]');
   const input = document.getElementById('search-input') as HTMLInputElement | null;
   const results = document.getElementById('search-results');
   if (!overlay || !input || !results) return;
@@ -140,7 +135,7 @@ export function initNav(): void {
     document.body.style.overflow = '';
   };
 
-  openBtn?.addEventListener('click', open);
+  for (const btn of openButtons) btn.addEventListener('click', open);
 
   input.addEventListener('input', () => {
     activeIndex = 0;

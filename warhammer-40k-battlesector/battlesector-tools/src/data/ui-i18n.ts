@@ -10,6 +10,8 @@ const rawUiI18n = {
     'nav.search': 'Search',
     'nav.factions': 'Factions',
     'nav.mechanics': 'Game Mechanics',
+    'nav.mechanicsShort': 'Mechanics',
+    'nav.calculatorShort': 'Calc',
     'nav.home': 'Home',
     'hex.title': 'Stat Index',
     'hex.subtitle': 'Percentile rank across the roster',

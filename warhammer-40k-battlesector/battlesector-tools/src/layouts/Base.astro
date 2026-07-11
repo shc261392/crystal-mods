@@ -69,36 +69,38 @@ const fullTitle = title === 'Battlesector Tools' ? title : `${title} · Battlese
   </head>
   <body>
     <Nav />
-    <div class="border-y border-[color-mix(in_oklab,var(--color-gold)_45%,var(--color-border))] bg-[color-mix(in_oklab,var(--color-gold)_14%,transparent)]">
-      <div class="container-page py-2.5 text-sm font-semibold text-[var(--color-ink)]">
-        The website is WIP. Some data may be wrong or missing.
+    <div class="lg:pl-[76px] pb-20 lg:pb-0">
+      <div class="border-y border-[color-mix(in_oklab,var(--color-gold)_45%,var(--color-border))] bg-[color-mix(in_oklab,var(--color-gold)_14%,transparent)]">
+        <div class="container-page py-2.5 text-sm font-semibold text-[var(--color-ink)]">
+          The website is WIP. Some data may be wrong or missing.
+        </div>
       </div>
+      <main class="container-page py-8 md:py-10 fade-up">
+        <slot />
+      </main>
+      <slot name="modals" />
+      <footer class="border-t border-[var(--color-border)] mt-16">
+        <div class="container-page py-8 text-sm text-[var(--color-faint)] flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+          <p>
+            <span data-i18n-ui="footer.disclaimer.main">
+            Battlesector Tools · Unofficial fan project. Game data extracted for
+            reference and analysis.
+            </span>
+          </p>
+          <p>
+            <span data-i18n-ui="footer.disclaimer.copyright">
+            Warhammer 40,000: Battlesector © Games Workshop / Black Lab Games.
+            Not affiliated.
+            </span>
+          </p>
+          <nav class="flex items-center gap-4 shrink-0">
+            <a href="/privacy" class="hover:text-[var(--color-gold-dim)] transition-colors" data-i18n-ui="footer.privacy">Privacy</a>
+            <a href="mailto:shadowevor@proton.me" class="hover:text-[var(--color-gold-dim)] transition-colors" data-i18n-ui="footer.contact">Contact</a>
+            <span class="text-[var(--color-faint)] tabular-nums" title="Build version">v{buildMeta.version}+{buildMeta.hash}</span>
+          </nav>
+        </div>
+      </footer>
     </div>
-    <main class="container-page py-8 md:py-10 fade-up">
-      <slot />
-    </main>
-    <slot name="modals" />
-    <footer class="border-t border-[var(--color-border)] mt-16">
-      <div class="container-page py-8 text-sm text-[var(--color-faint)] flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
-        <p>
-          <span data-i18n-ui="footer.disclaimer.main">
-          Battlesector Tools · Unofficial fan project. Game data extracted for
-          reference and analysis.
-          </span>
-        </p>
-        <p>
-          <span data-i18n-ui="footer.disclaimer.copyright">
-          Warhammer 40,000: Battlesector © Games Workshop / Black Lab Games.
-          Not affiliated.
-          </span>
-        </p>
-        <nav class="flex items-center gap-4 shrink-0">
-          <a href="/privacy" class="hover:text-[var(--color-gold-dim)] transition-colors" data-i18n-ui="footer.privacy">Privacy</a>
-          <a href="mailto:shadowevor@proton.me" class="hover:text-[var(--color-gold-dim)] transition-colors" data-i18n-ui="footer.contact">Contact</a>
-          <span class="text-[var(--color-faint)] tabular-nums" title="Build version">v{buildMeta.version}+{buildMeta.hash}</span>
-        </nav>
-      </div>
-    </footer>
 
     <script>
       import { initTooltips } from '../scripts/tooltip';

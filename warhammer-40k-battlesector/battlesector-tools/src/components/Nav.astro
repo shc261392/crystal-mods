@@ -1,103 +1,164 @@
 ---
 import { locales } from '../lib/data';
 
-// The Editor Suite is a local-only curation tool — never expose it in
-// production builds (it is also stripped from the deploy output).
-const links = [
-  { href: '/units', label: 'Units', key: 'nav.units' },
-  { href: '/weapons/', label: 'Weapons', key: 'nav.weapons' },
-  { href: '/army-builder', label: 'Army Builder', key: 'nav.armyBuilder' },
-  { href: '/calculator', label: 'Calculator', key: 'nav.calculator' },
-  { href: '/compare', label: 'Compare', key: 'nav.compare' },
-  { href: '/command-abilities', label: 'Command HQ' },
-  ...(import.meta.env.DEV ? [{ href: '/editor', label: 'Editor' }] : []),
-  { href: '/hq-upgrades', label: 'Crusade Data (Experimental)' },
+// Primary destinations for the app-shell rail (desktop) and bottom tab bar
+// (mobile). Compare + Army Builder are integrated into the Units page; Command
+// HQ is superseded by Factions.
+interface RailLink {
+  href: string;
+  label: string;
+  key: string;
+  short: string;
+  shortKey: string;
+  icon: string;
+}
+
+// Inline Lucide-style icons (stroke = currentColor).
+const ICONS = {
+  units:
+    '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+  factions:
+    '<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/>',
+  weapons:
+    '<path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6"/><path d="m16 16 4 4"/><path d="m19 21 2-2"/>',
+  mechanics:
+    '<path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/>',
+  calculator:
+    '<rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="8" x2="8" y1="10" y2="10"/><line x1="12" x2="12" y1="10" y2="10"/><line x1="16" x2="16" y1="10" y2="10"/><line x1="8" x2="8" y1="14" y2="14"/><line x1="12" x2="12" y1="14" y2="14"/><line x1="16" x2="16" y1="14" y2="18"/><line x1="8" x2="12" y1="18" y2="18"/>',
+} as const;
+
+const links: RailLink[] = [
+  {
+    href: '/units',
+    label: 'Units',
+    key: 'nav.units',
+    short: 'Units',
+    shortKey: 'nav.units',
+    icon: ICONS.units,
+  },
+  {
+    href: '/factions',
+    label: 'Factions',
+    key: 'nav.factions',
+    short: 'Factions',
+    shortKey: 'nav.factions',
+    icon: ICONS.factions,
+  },
+  {
+    href: '/weapons/',
+    label: 'Weapons',
+    key: 'nav.weapons',
+    short: 'Weapons',
+    shortKey: 'nav.weapons',
+    icon: ICONS.weapons,
+  },
+  {
+    href: '/mechanics',
+    label: 'Game Mechanics',
+    key: 'nav.mechanics',
+    short: 'Mechanics',
+    shortKey: 'nav.mechanicsShort',
+    icon: ICONS.mechanics,
+  },
+  {
+    href: '/calculator',
+    label: 'Calculator',
+    key: 'nav.calculator',
+    short: 'Calc',
+    shortKey: 'nav.calculatorShort',
+    icon: ICONS.calculator,
+  },
 ];
 
 const current = Astro.url.pathname;
 function isActive(href: string): boolean {
-  return current === href || current.startsWith(`${href}/`);
+  const clean = href.replace(/\/$/, '');
+  if (clean === '') return current === '/';
+  return current === clean || current.startsWith(`${clean}/`);
 }
+
+const searchIcon =
+  '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>';
+const armyIcon =
+  '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h10"/></svg>';
 ---
 
-<header class="sticky top-0 z-50 border-b border-[var(--color-border)] backdrop-blur-xl bg-[color-mix(in_oklab,var(--color-void)_72%,transparent)]">
-  <div class="container-page flex items-center gap-4 h-16">
-    <a href="/" class="flex items-center gap-2.5 shrink-0">
-      <span class="grid place-items-center w-9 h-9 rounded-lg bg-gradient-to-br from-[var(--color-gold)] to-[var(--color-blood)] text-[var(--color-void)] font-black text-lg">B</span>
-      <span class="font-extrabold tracking-tight text-[15px] hidden sm:block">
-        Battlesector<span class="text-[var(--color-gold-dim)]"> Tools</span>
-      </span>
+<!-- ===== Desktop left rail ===== -->
+<aside
+  class="hidden lg:flex fixed left-0 top-0 z-50 h-dvh w-[76px] flex-col items-center border-r border-[var(--color-border)] bg-[color-mix(in_oklab,var(--color-void)_86%,transparent)] backdrop-blur-xl"
+>
+  <a href="/" class="grid place-items-center h-16 w-full shrink-0" aria-label="Battlesector Tools home">
+    <span class="grid place-items-center w-10 h-10 rounded-lg bg-gradient-to-br from-[var(--color-gold)] to-[var(--color-blood)] text-[var(--color-void)] font-black text-lg">B</span>
+  </a>
+
+  <nav class="flex-1 flex flex-col items-center gap-1.5 pt-2 w-full" aria-label="Primary">
+    {links.map((l) => (
+      <a
+        href={l.href}
+        class:list={[
+          'group relative grid place-items-center w-12 h-12 rounded-xl transition-colors',
+          isActive(l.href)
+            ? 'text-[var(--color-gold)] bg-[color-mix(in_oklab,var(--color-gold)_16%,transparent)] ring-1 ring-[color-mix(in_oklab,var(--color-gold)_40%,transparent)]'
+            : 'text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:bg-[var(--color-elevated)]',
+        ]}
+        aria-current={isActive(l.href) ? 'page' : undefined}
+      >
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={l.icon} />
+        <span class="pointer-events-none absolute left-[64px] px-2 py-1 rounded-md text-xs font-semibold whitespace-nowrap bg-[var(--color-elevated)] border border-[var(--color-border)] text-[var(--color-ink)] opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all z-10" data-i18n-ui={l.key}>{l.label}</span>
+      </a>
+    ))}
+  </nav>
+
+  <div class="flex flex-col items-center gap-1.5 pb-3 w-full">
+    <button type="button" data-search-open class="grid place-items-center w-12 h-12 rounded-xl text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:bg-[var(--color-elevated)] transition-colors" aria-label="Search" data-i18n-ui-aria-label="nav.searchAria" set:html={searchIcon} />
+    <button type="button" data-army-toggle class="relative grid place-items-center w-12 h-12 rounded-xl text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:bg-[var(--color-elevated)] transition-colors" aria-label="Army" set:html={armyIcon} />
+    <label class="sr-only" for="lang-select" data-i18n-ui="lang.label">Language</label>
+    <select id="lang-select" class="lang-select select !h-8 !py-0 !px-1 text-[10px] w-[60px] text-center">
+      {locales.map((locale) => (
+        <option value={locale.code}>{locale.code.toUpperCase()}</option>
+      ))}
+    </select>
+    {import.meta.env.DEV && (
+      <a href="/editor" class:list={['grid place-items-center w-12 h-9 rounded-xl text-xs font-bold transition-colors', isActive('/editor') ? 'text-[var(--color-gold)]' : 'text-[var(--color-faint)] hover:text-[var(--color-ink)] hover:bg-[var(--color-elevated)]']} title="Editor (dev)">Ed</a>
+    )}
+  </div>
+</aside>
+
+<!-- ===== Mobile top strip ===== -->
+<div class="lg:hidden sticky top-0 z-40 flex items-center gap-3 h-14 px-4 border-b border-[var(--color-border)] bg-[color-mix(in_oklab,var(--color-void)_82%,transparent)] backdrop-blur-xl">
+  <a href="/" class="flex items-center gap-2 shrink-0" aria-label="Battlesector Tools home">
+    <span class="grid place-items-center w-8 h-8 rounded-lg bg-gradient-to-br from-[var(--color-gold)] to-[var(--color-blood)] text-[var(--color-void)] font-black">B</span>
+    <span class="font-extrabold tracking-tight text-sm">Battlesector<span class="text-[var(--color-gold-dim)]"> Tools</span></span>
+  </a>
+  <div class="ml-auto flex items-center gap-1.5">
+    <button type="button" data-search-open class="btn btn-ghost h-9 w-9 !px-0" aria-label="Search" data-i18n-ui-aria-label="nav.searchAria" set:html={searchIcon} />
+    <button type="button" data-army-toggle class="btn btn-ghost h-9 w-9 !px-0" aria-label="Army" set:html={armyIcon} />
+    <select class="lang-select select !h-9 !py-0 text-xs w-[64px] text-center" aria-label="Language">
+      {locales.map((locale) => (
+        <option value={locale.code}>{locale.code.toUpperCase()}</option>
+      ))}
+    </select>
+  </div>
+</div>
+
+<!-- ===== Mobile bottom tab bar ===== -->
+<nav class="lg:hidden fixed bottom-0 inset-x-0 z-50 grid grid-cols-5 h-16 border-t border-[var(--color-border)] bg-[color-mix(in_oklab,var(--color-void)_88%,transparent)] backdrop-blur-xl" aria-label="Primary">
+  {links.map((l) => (
+    <a
+      href={l.href}
+      class:list={[
+        'flex flex-col items-center justify-center gap-1 text-[10px] font-semibold transition-colors',
+        isActive(l.href) ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted)]',
+      ]}
+      aria-current={isActive(l.href) ? 'page' : undefined}
+    >
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={l.icon} />
+      <span class="leading-none truncate max-w-full px-0.5" data-i18n-ui={l.shortKey}>{l.short}</span>
     </a>
+  ))}
+</nav>
 
-    <nav class="hidden xl:flex items-center gap-1 ml-2 min-w-0">
-      {links.map((l) => (
-        <a
-          href={l.href}
-          class:list={[
-            'px-3 py-2 rounded-lg text-sm font-semibold transition-colors',
-            isActive(l.href)
-              ? 'text-[var(--color-gold)] bg-[color-mix(in_oklab,var(--color-gold)_14%,transparent)] ring-1 ring-[color-mix(in_oklab,var(--color-gold)_38%,transparent)]'
-              : 'text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:bg-[var(--color-elevated)]',
-          ]}
-        >
-          {l.key ? <span data-i18n-ui={l.key}>{l.label}</span> : <span>{l.label}</span>}
-        </a>
-      ))}
-    </nav>
-
-    <div class="ml-auto flex items-center gap-2">
-      <label class="sr-only" for="lang-select" data-i18n-ui="lang.label">Language</label>
-      <select id="lang-select" class="select h-9 !py-0 text-xs min-w-[9rem] hidden sm:block">
-        {locales.map((locale) => (
-          <option value={locale.code}>{locale.native}</option>
-        ))}
-      </select>
-      <button
-        type="button"
-        id="search-open"
-        class="btn btn-ghost text-sm h-9 px-3 whitespace-nowrap flex-nowrap"
-        aria-label="Search units and weapons"
-        data-i18n-ui-aria-label="nav.searchAria"
-      >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-        <span class="hidden sm:inline text-[var(--color-faint)] whitespace-nowrap" data-i18n-ui="nav.search">Search</span>
-        <kbd class="hidden sm:inline text-[10px] px-1.5 py-0.5 rounded border border-[var(--color-border)] text-[var(--color-faint)] whitespace-nowrap">⌘K</kbd>
-      </button>
-
-      <button
-        type="button"
-        id="menu-toggle"
-        class="btn btn-ghost xl:hidden h-9 w-9 !px-0"
-        aria-label="Toggle navigation menu"
-        data-i18n-ui-aria-label="nav.menuToggleAria"
-        aria-expanded="false"
-      >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-      </button>
-    </div>
-  </div>
-
-  <!-- Mobile menu -->
-  <div id="mobile-menu" class="xl:hidden hidden border-t border-[var(--color-border)]">
-    <nav class="container-page py-3 flex flex-col gap-1">
-      {links.map((l) => (
-        <a
-          href={l.href}
-          class:list={[
-            'px-3 py-2.5 rounded-lg text-sm font-semibold',
-            isActive(l.href)
-              ? 'text-[var(--color-gold)] bg-[color-mix(in_oklab,var(--color-gold)_12%,transparent)]'
-              : 'text-[var(--color-muted)]',
-          ]}
-        >
-          {l.key ? <span data-i18n-ui={l.key}>{l.label}</span> : <span>{l.label}</span>}
-        </a>
-      ))}
-    </nav>
-  </div>
-</header>
-
-<!-- Command palette search overlay -->
+<!-- ===== Command palette search overlay ===== -->
 <div
   id="search-overlay"
   class="fixed inset-0 z-[100] hidden items-start justify-center pt-[12vh] px-4 bg-[oklch(0.1_0.01_265_/_0.7)] backdrop-blur-sm"
