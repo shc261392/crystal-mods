@@ -355,7 +355,6 @@ export function initUnitsBrowser(): void {
       const result = addToArmyLocked({ id, name, points, faction });
       if (result.ok) {
         document.dispatchEvent(new CustomEvent('bs:army-changed'));
-        document.dispatchEvent(new CustomEvent('bs:army-open'));
         flashAdd(add, true);
       } else {
         flashAdd(add, false);

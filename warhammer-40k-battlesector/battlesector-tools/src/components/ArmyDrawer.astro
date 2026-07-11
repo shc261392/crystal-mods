@@ -4,6 +4,23 @@
 // the localStorage-backed multi-army store (scripts/army-drawer.ts). Uses
 // transition:persist so it survives ClientRouter navigations.
 ---
+<!-- Persistent army mini-bar: always visible (on every page) while the active
+     army has units, so a build in progress is never hidden. Opens the drawer. -->
+<button
+  id="army-mini-bar"
+  type="button"
+  transition:persist
+  data-army-mini
+  class="fixed z-[120] bottom-24 right-4 lg:bottom-6 lg:right-6 hidden items-center gap-2 pl-2.5 pr-3.5 py-2 rounded-full bg-[var(--color-gold)] text-[var(--color-void)] font-bold shadow-2xl hover:brightness-110 transition-[filter]"
+  aria-label="Open army list"
+>
+  <span class="grid place-items-center w-6 h-6 rounded-full bg-black/15">
+    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M17 11h4M19 9v4"/></svg>
+  </span>
+  <span class="text-sm max-w-[9rem] truncate" data-army-mini-name>Army</span>
+  <span class="text-sm tabular-nums opacity-80" data-army-mini-stats></span>
+</button>
+
 <div
   id="army-drawer-root"
   transition:persist

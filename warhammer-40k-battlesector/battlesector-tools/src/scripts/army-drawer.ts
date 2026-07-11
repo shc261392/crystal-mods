@@ -162,6 +162,7 @@ function open(root: HTMLElement): void {
   root.classList.remove('hidden');
   root.setAttribute('aria-hidden', 'false');
   render(root);
+  updateMiniBar();
   // Next frame so the transition runs from the hidden state.
   requestAnimationFrame(() => {
     qs<HTMLElement>(root, '[data-army-backdrop]')?.classList.add('opacity-100');
@@ -174,7 +175,10 @@ function close(root: HTMLElement): void {
   qs<HTMLElement>(root, '[data-army-backdrop]')?.classList.remove('opacity-100');
   qs<HTMLElement>(root, '[data-army-panel]')?.classList.add('translate-x-full');
   root.setAttribute('aria-hidden', 'true');
-  window.setTimeout(() => root.classList.add('hidden'), 200);
+  window.setTimeout(() => {
+    root.classList.add('hidden');
+    updateMiniBar();
+  }, 200);
 }
 
 function isOpen(root: HTMLElement): boolean {
@@ -332,12 +336,22 @@ export function initArmyDrawer(): void {
   // progress is always visible while building.
   document.addEventListener('bs:army-open', () => open(root), { signal });
 
+  // The persistent mini-bar opens the full drawer.
+  document.addEventListener(
+    'click',
+    (e) => {
+      if ((e.target as HTMLElement).closest('[data-army-mini]')) open(root);
+    },
+    { signal },
+  );
+
   updateArmyBadge();
 }
 
 /** Reflect the active army's model count on the nav army button(s). */
 function updateArmyBadge(): void {
-  const count = totalModels(getActiveArmy().entries);
+  const active = getActiveArmy();
+  const count = totalModels(active.entries);
   for (const btn of document.querySelectorAll<HTMLElement>('[data-army-toggle]')) {
     let badge = btn.querySelector<HTMLElement>('[data-army-badge]');
     if (count > 0) {
@@ -352,5 +366,27 @@ function updateArmyBadge(): void {
     } else if (badge) {
       badge.remove();
     }
+  }
+  updateMiniBar();
+}
+
+/** Show a persistent mini-bar while the army has units and the drawer is closed. */
+function updateMiniBar(): void {
+  const bar = document.getElementById('army-mini-bar');
+  if (!bar) return;
+  const active = getActiveArmy();
+  const models = totalModels(active.entries);
+  const root = document.getElementById('army-drawer-root');
+  const drawerOpen = root ? !root.classList.contains('hidden') : false;
+  if (models > 0 && !drawerOpen) {
+    bar.classList.remove('hidden');
+    bar.classList.add('flex');
+    const nameEl = bar.querySelector<HTMLElement>('[data-army-mini-name]');
+    const statsEl = bar.querySelector<HTMLElement>('[data-army-mini-stats]');
+    if (nameEl) nameEl.textContent = active.name;
+    if (statsEl) statsEl.textContent = `${models} · ${totalPoints(active.entries)} pts`;
+  } else {
+    bar.classList.add('hidden');
+    bar.classList.remove('flex');
   }
 }
