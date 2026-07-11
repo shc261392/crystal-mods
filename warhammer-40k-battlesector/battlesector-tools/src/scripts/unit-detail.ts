@@ -1,5 +1,5 @@
 // Behaviour for the unit detail page: copy link + add to army builder.
-import { addToArmy } from './army-store';
+import { addToArmyLocked } from './army-store';
 import { t, tf } from './i18n';
 
 function toast(message: string): void {
@@ -30,8 +30,13 @@ export function initUnitDetail(): void {
     const points = Number(addBtn.getAttribute('data-points'));
     const faction = addBtn.getAttribute('data-faction') ?? '';
     if (!Number.isFinite(id)) return;
-    addToArmy({ id, name, points, faction });
-    document.dispatchEvent(new CustomEvent('bs:army-changed'));
-    toast(tf('toast.addedToArmy', { name }));
+    const result = addToArmyLocked({ id, name, points, faction });
+    if (result.ok) {
+      document.dispatchEvent(new CustomEvent('bs:army-changed'));
+      document.dispatchEvent(new CustomEvent('bs:army-open'));
+      toast(tf('toast.addedToArmy', { name }));
+    } else {
+      toast(tf('army.lockedToast', { faction: result.lockedTo }));
+    }
   });
 }

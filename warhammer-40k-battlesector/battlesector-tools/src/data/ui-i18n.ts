@@ -19,6 +19,7 @@ const rawUiI18n = {
     'army.models': 'models',
     'army.share': 'Copy link',
     'army.clear': 'Clear',
+    'army.lockedToast': 'This army is {faction} only',
     'hex.title': 'Stat Index',
     'hex.subtitle': 'Percentile rank across the roster',
     'hex.gradeScale': 'grade 1–5',

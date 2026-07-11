@@ -7,24 +7,67 @@ interface Props {
   href?: string;
   className?: string;
   variant?: 'tall' | 'wide';
+  /** Render a floating "+ Army" quick-add control (list view). */
+  armyAdd?: boolean;
   dataAttrs?: Record<string, string | number | boolean | null | undefined>;
 }
 
-const { unit, href, className = '', variant = 'tall', dataAttrs = {} } = Astro.props as Props;
+const {
+  unit,
+  href,
+  className = '',
+  variant = 'tall',
+  armyAdd = false,
+  dataAttrs = {},
+} = Astro.props as Props;
 
 const attrs = Object.fromEntries(
   Object.entries(dataAttrs).filter(([, value]) => value !== undefined && value !== null),
 );
 
-const cardClass = `unit-card surface surface-hover block p-0 overflow-hidden ${variant === 'wide' ? 'min-h-[14rem]' : 'min-h-[16rem]'} ${className}`;
+const cardClass = `unit-card surface surface-hover relative block p-0 overflow-hidden ${variant === 'wide' ? 'min-h-[14rem]' : 'min-h-[16rem]'} ${className}`;
+
+const addClass =
+  'absolute top-2 right-2 z-10 grid place-items-center w-8 h-8 rounded-lg border border-[var(--color-border)] bg-[color-mix(in_oklab,var(--color-base)_80%,transparent)] text-[var(--color-muted)] hover:text-[var(--color-gold)] hover:border-[var(--color-gold)] transition-colors backdrop-blur-sm';
 ---
 
 {href ? (
   <a href={href} class={cardClass} {...attrs}>
     <UnitSplitCardBody unit={unit} variant={variant} />
+    {armyAdd && (
+      <span
+        data-army-add
+        data-army-id={unit.id}
+        data-army-name={unit.name}
+        data-army-points={unit.pointCost}
+        data-army-faction={unit.factionName}
+        role="button"
+        tabindex="0"
+        aria-label={`Add ${unit.name} to army`}
+        class={addClass}
+      >
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+      </span>
+    )}
   </a>
 ) : (
   <div class={cardClass} role="button" tabindex="0" aria-pressed="false" {...attrs}>
     <UnitSplitCardBody unit={unit} variant={variant} />
+    {armyAdd && (
+      <span
+        data-army-add
+        data-army-id={unit.id}
+        data-army-name={unit.name}
+        data-army-points={unit.pointCost}
+        data-army-faction={unit.factionName}
+        role="button"
+        tabindex="0"
+        aria-label={`Add ${unit.name} to army`}
+        class={addClass}
+      >
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+      </span>
+    )}
   </div>
 )}
+

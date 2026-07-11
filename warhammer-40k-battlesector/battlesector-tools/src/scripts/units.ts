@@ -15,10 +15,36 @@ type SortKey =
   | 'move-desc'
   | 'move-asc';
 
+import { addToArmyLocked } from './army-store';
 import { applyI18n, roleName, tf } from './i18n';
 import { pageSignal } from './reinit';
 
 const DATASET_TAGS_KEY: keyof DOMStringMap = 'tags';
+
+/** Briefly flash a card's add control green (success) or red (rejected). */
+function flashAdd(el: HTMLElement, ok: boolean): void {
+  const cls = ok ? 'text-[var(--color-gold)]' : 'text-[var(--color-blood)]';
+  el.classList.add(cls, 'scale-110');
+  window.setTimeout(() => el.classList.remove(cls, 'scale-110'), 600);
+}
+
+/** Transient bottom toast (created on demand; shared across calls). */
+function showArmyToast(message: string): void {
+  let toast = document.getElementById('army-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'army-toast';
+    toast.className =
+      'fixed bottom-24 lg:bottom-6 left-1/2 -translate-x-1/2 z-[140] px-4 py-2 rounded-lg bg-[var(--color-elevated)] border border-[var(--color-border)] text-sm font-semibold shadow-2xl transition-opacity duration-200';
+    document.body.appendChild(toast);
+  }
+  toast.textContent = message;
+  toast.classList.remove('opacity-0');
+  window.clearTimeout((toast as HTMLElement & { _t?: number })._t);
+  (toast as HTMLElement & { _t?: number })._t = window.setTimeout(() => {
+    toast?.classList.add('opacity-0');
+  }, 2000);
+}
 
 function num(el: HTMLElement, key: string): number {
   return Number(el.dataset[key] ?? 0);
@@ -300,6 +326,8 @@ export function initUnitsBrowser(): void {
     });
   }
 
+  const signal = pageSignal('units');
+
   window.addEventListener(
     'bs:locale-changed',
     () => {
@@ -307,7 +335,34 @@ export function initUnitsBrowser(): void {
       localizeRoleOptions();
       apply();
     },
-    { signal: pageSignal('units') },
+    { signal },
+  );
+
+  // Quick "+ Army" on each card: add to the active army (faction-locked) without
+  // opening the detail page, then reveal the army drawer.
+  grid.addEventListener(
+    'click',
+    (event) => {
+      const add = (event.target as HTMLElement).closest<HTMLElement>('[data-army-add]');
+      if (!add) return;
+      event.preventDefault();
+      event.stopPropagation();
+      const id = num(add, 'armyId');
+      const name = text(add, 'armyName');
+      const points = num(add, 'armyPoints');
+      const faction = text(add, 'armyFaction');
+      if (!Number.isFinite(id) || id <= 0) return;
+      const result = addToArmyLocked({ id, name, points, faction });
+      if (result.ok) {
+        document.dispatchEvent(new CustomEvent('bs:army-changed'));
+        document.dispatchEvent(new CustomEvent('bs:army-open'));
+        flashAdd(add, true);
+      } else {
+        flashAdd(add, false);
+        showArmyToast(tf('army.lockedToast', { faction: result.lockedTo }));
+      }
+    },
+    { signal },
   );
 
   applyI18n();

@@ -7,6 +7,8 @@
 // Document-level listeners (toggle button, Escape) are re-bound each navigation
 // through pageSignal so they never target a stale/removed node.
 
+import unitsData from '../data/units.json';
+import type { Unit } from '../lib/types';
 import {
   type ArmyEntry,
   createArmy,
@@ -17,10 +19,36 @@ import {
   renameArmy,
   saveArmy,
   setActiveArmy,
+  setEntryLoadout,
   totalModels,
   totalPoints,
 } from './army-store';
 import { pageSignal } from './reinit';
+
+const unitById = new Map((unitsData as Unit[]).map((u) => [u.id, u]));
+
+/** The default loadout: the zero-cost option in each weapon slot. */
+function defaultLoadout(u: Unit): number[] {
+  return u.weaponSlots.map((slot) => {
+    const free = slot.options.find((o) => (o.pointCost ?? 0) === 0) ?? slot.options[0];
+    return free?.weaponId ?? -1;
+  });
+}
+
+/** Total points for a unit with a given loadout = base + selected upgrade costs. */
+function loadoutCost(u: Unit, loadout: number[]): number {
+  let pts = u.pointCost;
+  u.weaponSlots.forEach((slot, i) => {
+    const opt = slot.options.find((o) => o.weaponId === loadout[i]);
+    if (opt) pts += opt.pointCost ?? 0;
+  });
+  return pts;
+}
+
+/** True when a unit has at least one slot offering a real choice. */
+function hasLoadoutChoice(u: Unit): boolean {
+  return u.weaponSlots.some((slot) => slot.options.length > 1);
+}
 
 function qs<T extends HTMLElement>(root: ParentNode, sel: string): T | null {
   return root.querySelector<T>(sel);
@@ -72,21 +100,55 @@ function render(root: HTMLElement): void {
 }
 
 function entryRow(e: ArmyEntry): string {
+  const unit = unitById.get(e.id);
+  const showLoadout = unit ? hasLoadoutChoice(unit) : false;
+  const loadout = unit ? normalizeLoadout(unit, e.loadout) : [];
+  const loadoutBtn = showLoadout
+    ? `<button type="button" data-entry-loadout-toggle class="btn btn-ghost h-7 w-7 !px-0" aria-label="Loadout" title="Loadout">
+         <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.5 3.5 3 15v6h6L20.5 9.5M14.5 3.5 20.5 9.5M14.5 3.5 18 0l6 6-3.5 3.5"/></svg>
+       </button>`
+    : '';
+  const loadoutPanel =
+    showLoadout && unit
+      ? `<div data-entry-loadout class="hidden mt-2 pt-2 border-t border-[var(--color-border)] flex flex-col gap-1.5">${unit.weaponSlots
+          .map((slot, i) => {
+            if (slot.options.length <= 1) return '';
+            const opts = slot.options
+              .map((o) => {
+                const cost = o.pointCost ? ` (+${o.pointCost})` : '';
+                const sel = o.weaponId === loadout[i] ? ' selected' : '';
+                return `<option value="${o.weaponId}"${sel}>${escapeHtml(o.name)}${cost}</option>`;
+              })
+              .join('');
+            return `<select data-entry-slot="${i}" class="select h-8 text-xs">${opts}</select>`;
+          })
+          .join('')}</div>`
+      : '';
   return `
-    <div class="surface flex items-center gap-2 p-2" data-entry-id="${e.id}">
-      <div class="min-w-0 flex-1">
-        <p class="text-sm font-semibold truncate">${escapeHtml(e.name)}</p>
-        <p class="text-xs text-[var(--color-faint)] truncate">${escapeHtml(e.faction)} · ${
-          e.points
-        } pts</p>
+    <div class="surface p-2" data-entry-id="${e.id}">
+      <div class="flex items-center gap-2">
+        <div class="min-w-0 flex-1">
+          <p class="text-sm font-semibold truncate">${escapeHtml(e.name)}</p>
+          <p class="text-xs text-[var(--color-faint)] truncate">${escapeHtml(e.faction)} · ${
+            e.points
+          } pts</p>
+        </div>
+        <div class="flex items-center gap-1 shrink-0">
+          ${loadoutBtn}
+          <button type="button" data-entry-dec class="btn btn-ghost h-7 w-7 !px-0" aria-label="Decrease">−</button>
+          <span class="tabular-nums text-sm w-6 text-center" data-entry-qty>${e.qty}</span>
+          <button type="button" data-entry-inc class="btn btn-ghost h-7 w-7 !px-0" aria-label="Increase">+</button>
+          <button type="button" data-entry-remove class="btn btn-ghost h-7 w-7 !px-0 text-[var(--color-blood)]" aria-label="Remove">×</button>
+        </div>
       </div>
-      <div class="flex items-center gap-1 shrink-0">
-        <button type="button" data-entry-dec class="btn btn-ghost h-7 w-7 !px-0" aria-label="Decrease">−</button>
-        <span class="tabular-nums text-sm w-6 text-center" data-entry-qty>${e.qty}</span>
-        <button type="button" data-entry-inc class="btn btn-ghost h-7 w-7 !px-0" aria-label="Increase">+</button>
-        <button type="button" data-entry-remove class="btn btn-ghost h-7 w-7 !px-0 text-[var(--color-blood)]" aria-label="Remove">×</button>
-      </div>
+      ${loadoutPanel}
     </div>`;
+}
+
+function normalizeLoadout(u: Unit, loadout?: number[]): number[] {
+  const base = [...(loadout?.length ? loadout : defaultLoadout(u))];
+  while (base.length < u.weaponSlots.length) base.push(defaultLoadout(u)[base.length] ?? -1);
+  return base;
 }
 
 function escapeHtml(s: string): string {
@@ -179,7 +241,7 @@ function bindOnce(root: HTMLElement): void {
     }
   });
 
-  // Entry qty/remove via delegation.
+  // Entry qty/remove/loadout-toggle via delegation.
   qs<HTMLElement>(root, '[data-army-entries]')?.addEventListener('click', (e) => {
     const target = e.target as HTMLElement;
     const rowEl = target.closest<HTMLElement>('[data-entry-id]');
@@ -188,6 +250,11 @@ function bindOnce(root: HTMLElement): void {
     const active = getActiveArmy();
     const entry = active.entries.find((x) => x.id === id);
     if (!entry) return;
+    // Loadout expand/collapse doesn't mutate the store — toggle in place.
+    if (target.closest('[data-entry-loadout-toggle]')) {
+      qs<HTMLElement>(rowEl, '[data-entry-loadout]')?.classList.toggle('hidden');
+      return;
+    }
     if (target.closest('[data-entry-inc]')) entry.qty += 1;
     else if (target.closest('[data-entry-dec]')) entry.qty = Math.max(0, entry.qty - 1);
     else if (target.closest('[data-entry-remove]')) entry.qty = 0;
@@ -195,6 +262,31 @@ function bindOnce(root: HTMLElement): void {
     const next: ArmyEntry[] = active.entries.filter((x) => (x.id === id ? entry.qty > 0 : true));
     saveArmy(next);
     render(root);
+  });
+
+  // Weapon-loadout change: recompute the entry's points, keep the panel open.
+  qs<HTMLElement>(root, '[data-army-entries]')?.addEventListener('change', (e) => {
+    const sel = (e.target as HTMLElement).closest<HTMLSelectElement>('[data-entry-slot]');
+    if (!sel) return;
+    const rowEl = sel.closest<HTMLElement>('[data-entry-id]');
+    if (!rowEl) return;
+    const id = Number(rowEl.getAttribute('data-entry-id'));
+    const unit = unitById.get(id);
+    if (!unit) return;
+    const loadout = [...rowEl.querySelectorAll<HTMLSelectElement>('[data-entry-slot]')].reduce(
+      (acc, s) => {
+        acc[Number(s.getAttribute('data-entry-slot'))] = Number(s.value);
+        return acc;
+      },
+      normalizeLoadout(unit),
+    );
+    setEntryLoadout(id, loadout, loadoutCost(unit, loadout));
+    render(root);
+    // Re-expand the panel we were editing (render replaced the DOM).
+    qs<HTMLElement>(
+      qs<HTMLElement>(root, `[data-entry-id="${id}"]`) ?? root,
+      '[data-entry-loadout]',
+    )?.classList.remove('hidden');
   });
 }
 
@@ -226,6 +318,39 @@ export function initArmyDrawer(): void {
     { signal },
   );
 
-  // Refresh when other pages mutate the army (e.g. unit-detail "+ Army").
-  document.addEventListener('bs:army-changed', () => render(root), { signal });
+  // Refresh (and badge) when other pages mutate the army (e.g. list/detail "+").
+  document.addEventListener(
+    'bs:army-changed',
+    () => {
+      render(root);
+      updateArmyBadge();
+    },
+    { signal },
+  );
+
+  // Reveal the drawer when a unit is added from the list, so the army in
+  // progress is always visible while building.
+  document.addEventListener('bs:army-open', () => open(root), { signal });
+
+  updateArmyBadge();
+}
+
+/** Reflect the active army's model count on the nav army button(s). */
+function updateArmyBadge(): void {
+  const count = totalModels(getActiveArmy().entries);
+  for (const btn of document.querySelectorAll<HTMLElement>('[data-army-toggle]')) {
+    let badge = btn.querySelector<HTMLElement>('[data-army-badge]');
+    if (count > 0) {
+      if (!badge) {
+        badge = document.createElement('span');
+        badge.setAttribute('data-army-badge', '');
+        badge.className =
+          'absolute -top-1 -right-1 min-w-[1.1rem] h-[1.1rem] px-1 grid place-items-center rounded-full bg-[var(--color-gold)] text-[var(--color-void)] text-[10px] font-bold tabular-nums pointer-events-none';
+        btn.appendChild(badge);
+      }
+      badge.textContent = String(count);
+    } else if (badge) {
+      badge.remove();
+    }
+  }
 }

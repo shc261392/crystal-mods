@@ -132,7 +132,7 @@ const armyIcon =
   </a>
   <div class="ml-auto flex items-center gap-1.5">
     <button type="button" data-search-open class="btn btn-ghost h-9 w-9 !px-0" aria-label="Search" data-i18n-ui-aria-label="nav.searchAria" set:html={searchIcon} />
-    <button type="button" data-army-toggle class="btn btn-ghost h-9 w-9 !px-0" aria-label="Army" set:html={armyIcon} />
+    <button type="button" data-army-toggle class="btn btn-ghost relative h-9 w-9 !px-0" aria-label="Army" set:html={armyIcon} />
     <select class="lang-select select !h-9 !py-0 text-xs w-[64px] text-center" aria-label="Language">
       {locales.map((locale) => (
         <option value={locale.code}>{locale.code.toUpperCase()}</option>

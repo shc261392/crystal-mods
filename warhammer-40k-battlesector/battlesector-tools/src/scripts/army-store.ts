@@ -191,6 +191,36 @@ export function addToArmy(entry: Omit<ArmyEntry, 'qty'>): ArmyEntry[] {
   return army;
 }
 
+/** The faction the active army is locked to (its first entry), or null if empty. */
+export function getActiveArmyFaction(): string | null {
+  return getActiveArmy().entries[0]?.faction ?? null;
+}
+
+/**
+ * Add a unit to the active army with faction locking: an army may only contain
+ * one faction. Returns { ok, reason } — reason='faction' when rejected.
+ */
+export function addToArmyLocked(
+  entry: Omit<ArmyEntry, 'qty'>,
+): { ok: true } | { ok: false; reason: 'faction'; lockedTo: string } {
+  const locked = getActiveArmyFaction();
+  if (locked !== null && locked !== entry.faction) {
+    return { ok: false, reason: 'faction', lockedTo: locked };
+  }
+  addToArmy(entry);
+  return { ok: true };
+}
+
+/** Replace an entry's loadout (weapon selection) and recomputed point cost. */
+export function setEntryLoadout(id: number, loadout: number[], points: number): void {
+  const army = getArmy();
+  const entry = army.find((e) => e.id === id);
+  if (!entry) return;
+  entry.loadout = loadout;
+  entry.points = points;
+  saveArmy(army);
+}
+
 export function totalPoints(army: ArmyEntry[]): number {
   return army.reduce((sum, e) => sum + e.points * e.qty, 0);
 }
