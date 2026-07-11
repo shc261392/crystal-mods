@@ -81,6 +81,7 @@ const rawUiI18n = {
     'common.remove': 'Remove',
     'common.copyLink': 'Copy link',
     'common.copyShareLink': 'Copy share link',
+    'common.back': 'Back',
     'common.copyShareableLink': 'Copy shareable link',
     'common.summary': 'Summary',
     'common.byFaction': 'By faction',

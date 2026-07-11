@@ -94,6 +94,11 @@ export function initWeaponsBrowser(): void {
     }
   }
 
+  // Server renders cards already in the default 'name' order — avoid re-appending
+  // them on initial load (that causes a visible reflow). Reorder only once a
+  // non-default sort is chosen.
+  let domReordered = false;
+
   function apply(): void {
     const term = q?.value.trim().toLowerCase() ?? '';
     let visible = 0;
@@ -109,10 +114,14 @@ export function initWeaponsBrowser(): void {
       card.style.display = matches ? '' : 'none';
       if (matches) visible++;
     }
-    const ordered = [...cards]
-      .filter((c) => c.style.display !== 'none')
-      .sort((a, b) => compare(a, b, (sort?.value as SortKey) ?? 'name'));
-    for (const c of ordered) grid?.appendChild(c);
+    const sortKey = (sort?.value as SortKey) ?? 'name';
+    if (sortKey !== 'name' || domReordered) {
+      const ordered = [...cards]
+        .filter((c) => c.style.display !== 'none')
+        .sort((a, b) => compare(a, b, sortKey));
+      for (const c of ordered) grid?.appendChild(c);
+      domReordered = sortKey !== 'name';
+    }
 
     if (count) {
       count.textContent = tf('common.count.weaponsVisible', {

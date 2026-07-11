@@ -199,6 +199,11 @@ export function initUnitsBrowser(): void {
     }
   }
 
+  // The server renders cards already in the default 'tier-name' order, so we
+  // must NOT re-append them on initial load (that causes a visible reflow/jump).
+  // Only physically reorder the DOM once a non-default sort has been applied.
+  let domReordered = false;
+
   function apply(): void {
     const term = q?.value.trim().toLowerCase() ?? '';
     const rol = role?.value ?? '';
@@ -225,10 +230,14 @@ export function initUnitsBrowser(): void {
       if (matches) visible++;
     }
 
-    const ordered = [...cards]
-      .filter((c) => c.style.display !== 'none')
-      .sort((a, b) => compare(a, b, (sort?.value as SortKey) ?? 'tier-name'));
-    for (const c of ordered) grid?.appendChild(c);
+    const sortKey = (sort?.value as SortKey) ?? 'tier-name';
+    if (sortKey !== 'tier-name' || domReordered) {
+      const ordered = [...cards]
+        .filter((c) => c.style.display !== 'none')
+        .sort((a, b) => compare(a, b, sortKey));
+      for (const c of ordered) grid?.appendChild(c);
+      domReordered = sortKey !== 'tier-name';
+    }
 
     if (count) {
       count.textContent = tf('common.count.unitsVisible', {

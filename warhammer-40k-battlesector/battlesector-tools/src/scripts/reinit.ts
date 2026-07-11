@@ -24,3 +24,18 @@ export function pageSignal(key: string): AbortSignal {
 export function onPageLoad(init: () => void): void {
   document.addEventListener('astro:page-load', init);
 }
+
+// Count client-side (ClientRouter) navigations so a "back" control can tell
+// whether the user reached the current page from within the app (precise
+// history.back() with scroll restoration) or via a direct/deep-linked visit.
+let clientNavCount = 0;
+if (typeof document !== 'undefined') {
+  document.addEventListener('astro:after-swap', () => {
+    clientNavCount += 1;
+  });
+}
+
+/** True when at least one in-app client navigation has occurred this session. */
+export function hasInAppHistory(): boolean {
+  return clientNavCount > 0;
+}

@@ -10,7 +10,7 @@ import {
   unitName,
   weaponName,
 } from './i18n';
-import { pageSignal } from './reinit';
+import { hasInAppHistory, pageSignal } from './reinit';
 
 interface SearchEntry {
   t: 'unit' | 'weapon';
@@ -138,6 +138,24 @@ export function initNav(): void {
   };
 
   for (const btn of openButtons) btn.addEventListener('click', open);
+
+  // Delegated "back" control. With ClientRouter, history.back() restores the
+  // previous page AND its scroll position (precise return to the list anchor).
+  // Falls back to the element's data-back href on a fresh/deep-linked visit.
+  document.addEventListener(
+    'click',
+    (e) => {
+      const back = (e.target as HTMLElement).closest<HTMLElement>('[data-back]');
+      if (!back) return;
+      e.preventDefault();
+      const fallback = back.getAttribute('data-back') || '/';
+      // Precise return (restores scroll) when we navigated here within the app;
+      // otherwise (direct/deep-linked visit) go to the list URL.
+      if (hasInAppHistory()) window.history.back();
+      else window.location.href = fallback;
+    },
+    { signal },
+  );
 
   input.addEventListener('input', () => {
     activeIndex = 0;
