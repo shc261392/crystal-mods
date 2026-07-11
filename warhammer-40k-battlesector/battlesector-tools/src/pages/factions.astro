@@ -1,9 +1,231 @@
 ---
-// Placeholder — full Factions experience is built in redesign P5.
+import commandRows from '../data/command-hq-abilities.json';
 import Base from '../layouts/Base.astro';
+import { getFactionPassive, passiveEffectLines } from '../lib/abilities';
+import { factionColor, factions, unitSlug, units } from '../lib/data';
+import { getFactionEmblem, getUnitPortrait } from '../scripts/images';
+
+interface CommandAbility {
+  name: string;
+  costCp: number;
+  costAp: number;
+  effect: string;
+}
+interface FactionCommandSet {
+  faction: string;
+  abilities: CommandAbility[];
+  notes?: string[];
+}
+
+const commandSets = commandRows as FactionCommandSet[];
+
+// Faction names differ slightly across sources (e.g. "Tyranid" vs "Tyranids");
+// normalise by lowercasing and dropping a trailing plural "s".
+function normName(name: string): string {
+  return name.toLowerCase().replace(/s$/, '').trim();
+}
+const commandByName = new Map(commandSets.map((c) => [normName(c.faction), c]));
+
+// Only factions that field units, ordered by in-game id.
+const factionList = factions
+  .filter((f) => units.some((u) => u.faction === f.id))
+  .sort((a, b) => a.id - b.id)
+  .map((f) => {
+    const passive = getFactionPassive(f.id);
+    return {
+      ...f,
+      accent: factionColor(f.name),
+      emblem: getFactionEmblem(f.id),
+      passive,
+      passiveLines: passive ? passiveEffectLines(passive) : [],
+      command: commandByName.get(normName(f.name)) ?? null,
+      units: units.filter((u) => u.faction === f.id).sort((a, b) => a.name.localeCompare(b.name)),
+    };
+  });
+
+const firstId = factionList[0]?.id ?? 0;
 ---
 
-<Base title="Factions" description="Warhammer 40,000: Battlesector factions — passives, command HQ abilities, and rosters.">
-  <h1 class="text-3xl font-black mb-2" data-i18n-ui="nav.factions">Factions</h1>
-  <p class="text-[var(--color-muted)]">Coming soon.</p>
+<Base
+  title="Factions"
+  description="Warhammer 40,000: Battlesector factions — momentum passives, command HQ abilities, and full unit rosters."
+  path="/factions"
+>
+  <header class="mb-6">
+    <p class="eyebrow mb-2" data-i18n-ui="common.database">Database</p>
+    <h1 class="text-3xl md:text-4xl font-black" data-i18n-ui="nav.factions">Factions</h1>
+  </header>
+
+  <!-- Faction picker -->
+  <div class="surface p-3 md:p-4 mb-6 md:sticky md:top-[4.5rem] md:z-30">
+    <div id="faction-pills" class="flex flex-wrap gap-2">
+      {
+        factionList.map((f) => (
+          <button
+            type="button"
+            class="faction-pill chip"
+            data-faction-id={f.id}
+            style={`--accent:${f.accent}`}
+            aria-pressed={f.id === firstId ? 'true' : 'false'}
+          >
+            {f.emblem && (
+              <img
+                src={f.emblem}
+                alt=""
+                width="16"
+                height="16"
+                loading="lazy"
+                class="w-3.5 h-3.5 object-contain shrink-0"
+              />
+            )}
+            <span data-i18n-faction={f.id} data-i18n-fallback={f.name}>
+              {f.name}
+            </span>
+          </button>
+        ))
+      }
+    </div>
+  </div>
+
+  {
+    factionList.map((f) => (
+      <section
+        class="faction-panel"
+        data-faction-panel={f.id}
+        hidden={f.id !== firstId}
+        aria-label={f.name}
+      >
+        <div class="surface p-5 md:p-6 relative overflow-hidden mb-4">
+          <div class="absolute top-0 left-0 w-1.5 h-full" style={`background:${f.accent}`} />
+          <div class="flex items-center gap-4">
+            {f.emblem && (
+              <img
+                src={f.emblem}
+                alt=""
+                width="56"
+                height="56"
+                loading="lazy"
+                class="w-14 h-14 object-contain shrink-0"
+              />
+            )}
+            <div>
+              <h2
+                class="text-2xl md:text-3xl font-black"
+                data-i18n-faction={f.id}
+                data-i18n-fallback={f.name}
+              >
+                {f.name}
+              </h2>
+              <p class="text-sm text-[var(--color-faint)]">
+                {f.units.length}
+                <span data-i18n-ui="factions.unitsLabel"> units</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid gap-4 lg:grid-cols-2">
+          {/* Momentum passive */}
+          <div class="surface p-5">
+            <p class="eyebrow mb-2" data-i18n-ui="factions.passive">Momentum Passive</p>
+            {f.passive ? (
+              <>
+                <p class="font-bold mb-2">{f.passive.passive}</p>
+                {f.passiveLines.length > 0 && (
+                  <ul class="space-y-1.5 text-sm text-[var(--color-muted)]">
+                    {f.passiveLines.map((line) => (
+                      <li class="flex gap-2">
+                        <span class="text-[var(--color-momentum)] shrink-0" aria-hidden="true">
+                          ▸
+                        </span>
+                        <span>{line}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {f.passive.note && (
+                  <p class="mt-2 text-xs text-[var(--color-faint)]">{f.passive.note}</p>
+                )}
+              </>
+            ) : (
+              <p class="text-sm text-[var(--color-faint)]" data-i18n-ui="factions.noPassive">
+                No verified passive data.
+              </p>
+            )}
+          </div>
+
+          {/* Command HQ abilities */}
+          <div class="surface p-5">
+            <p class="eyebrow mb-2" data-i18n-ui="factions.commandHq">Command HQ Abilities</p>
+            {f.command && f.command.abilities.length > 0 ? (
+              <ul class="space-y-3">
+                {f.command.abilities.map((a) => (
+                  <li class="border-b border-[var(--color-border)] pb-3 last:border-0 last:pb-0">
+                    <div class="flex items-center justify-between gap-2">
+                      <span class="font-bold">{a.name}</span>
+                      <span class="flex gap-1.5 shrink-0 text-[11px] font-bold">
+                        <span class="chip !py-0.5" style="color:var(--color-momentum)">
+                          {a.costCp} CP
+                        </span>
+                        <span class="chip !py-0.5" style="color:var(--color-gold)">
+                          {a.costAp} AP
+                        </span>
+                      </span>
+                    </div>
+                    {a.effect && (
+                      <p class="mt-1 text-sm text-[var(--color-muted)]">{a.effect}</p>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p class="text-sm text-[var(--color-faint)]" data-i18n-ui="factions.noCommand">
+                No command HQ data.
+              </p>
+            )}
+          </div>
+        </div>
+
+        {/* Unit roster */}
+        <div class="surface p-5 mt-4">
+          <p class="eyebrow mb-3" data-i18n-ui="factions.roster">Roster</p>
+          <div class="grid gap-2.5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+            {f.units.map((u) => {
+              const portrait = getUnitPortrait(u.name, u.portrait) ?? f.emblem;
+              return (
+                <a
+                  href={`/units/${unitSlug(u)}`}
+                  class="surface surface-hover flex items-center gap-2.5 p-2"
+                >
+                  {portrait && (
+                    <img
+                      src={portrait}
+                      alt=""
+                      width="36"
+                      height="36"
+                      loading="lazy"
+                      class="w-9 h-9 rounded object-contain bg-black/25 shrink-0"
+                    />
+                  )}
+                  <span
+                    class="text-xs font-semibold leading-tight line-clamp-2"
+                    data-i18n-unit={u.id}
+                    data-i18n-fallback={u.name}
+                  >
+                    {u.name}
+                  </span>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+    ))
+  }
+
+  <script>
+    import { initFactions } from '../scripts/factions';
+    import { onPageLoad } from '../scripts/reinit';
+    onPageLoad(initFactions);
+  </script>
 </Base>
