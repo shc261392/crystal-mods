@@ -28,7 +28,7 @@ const attrs = Object.fromEntries(
 const cardClass = `unit-card surface surface-hover relative block p-0 overflow-hidden ${variant === 'wide' ? 'min-h-[14rem]' : 'min-h-[16rem]'} ${className}`;
 
 const addClass =
-  'absolute top-2 right-2 z-10 grid place-items-center w-8 h-8 rounded-lg border border-[var(--color-border)] bg-[color-mix(in_oklab,var(--color-base)_80%,transparent)] text-[var(--color-muted)] hover:text-[var(--color-gold)] hover:border-[var(--color-gold)] transition-colors backdrop-blur-sm';
+  'absolute top-2 left-2 z-10 grid place-items-center w-8 h-8 rounded-lg border border-[var(--color-border)] bg-[color-mix(in_oklab,var(--color-void)_78%,transparent)] text-[var(--color-ink)] hover:text-[var(--color-gold)] hover:border-[var(--color-gold)] transition-colors backdrop-blur-sm shadow-lg';
 ---
 
 {href ? (
