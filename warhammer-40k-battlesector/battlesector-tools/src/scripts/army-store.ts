@@ -36,6 +36,9 @@ const KEY_V2 = 'bs.armies.v2';
 export const ARMY_NAME_MIN = 1;
 export const ARMY_NAME_MAX = 30;
 
+/** Maximum number of units (sum of quantities) an army may contain. */
+export const ARMY_UNIT_CAP = 30;
+
 function uid(): string {
   return `a${Date.now().toString(36)}${Math.random().toString(36).slice(2, 7)}`;
 }
@@ -197,15 +200,21 @@ export function getActiveArmyFaction(): string | null {
 }
 
 /**
- * Add a unit to the active army with faction locking: an army may only contain
- * one faction. Returns { ok, reason } — reason='faction' when rejected.
+ * Add a unit to the active army with faction locking and the unit cap. Returns
+ * { ok } or a rejection with a reason: 'faction' (wrong faction) or 'cap' (full).
  */
 export function addToArmyLocked(
   entry: Omit<ArmyEntry, 'qty'>,
-): { ok: true } | { ok: false; reason: 'faction'; lockedTo: string } {
+):
+  | { ok: true }
+  | { ok: false; reason: 'faction'; lockedTo: string }
+  | { ok: false; reason: 'cap'; cap: number } {
   const locked = getActiveArmyFaction();
   if (locked !== null && locked !== entry.faction) {
     return { ok: false, reason: 'faction', lockedTo: locked };
+  }
+  if (totalUnits(getArmy()) >= ARMY_UNIT_CAP) {
+    return { ok: false, reason: 'cap', cap: ARMY_UNIT_CAP };
   }
   addToArmy(entry);
   return { ok: true };
@@ -226,6 +235,11 @@ export function totalPoints(army: ArmyEntry[]): number {
 }
 
 export function totalModels(army: ArmyEntry[]): number {
+  return army.reduce((sum, e) => sum + e.qty, 0);
+}
+
+/** Number of units in an army (sum of quantities) — the army-cap metric. */
+export function totalUnits(army: ArmyEntry[]): number {
   return army.reduce((sum, e) => sum + e.qty, 0);
 }
 

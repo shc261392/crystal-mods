@@ -20,6 +20,8 @@ const rawUiI18n = {
     'army.share': 'Copy link',
     'army.clear': 'Clear',
     'army.lockedToast': 'This army is {faction} only',
+    'army.units': 'units',
+    'army.capToast': 'Army is full ({cap} units max)',
     'hex.title': 'Stat Index',
     'hex.subtitle': 'Percentile rank across the roster',
     'hex.gradeScale': 'grade 1–5',

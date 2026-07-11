@@ -358,7 +358,11 @@ export function initUnitsBrowser(): void {
         flashAdd(add, true);
       } else {
         flashAdd(add, false);
-        showArmyToast(tf('army.lockedToast', { faction: result.lockedTo }));
+        showArmyToast(
+          result.reason === 'cap'
+            ? tf('army.capToast', { cap: result.cap })
+            : tf('army.lockedToast', { faction: result.lockedTo }),
+        );
       }
     },
     { signal },

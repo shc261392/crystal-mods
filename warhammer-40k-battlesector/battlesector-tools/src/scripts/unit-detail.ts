@@ -35,6 +35,8 @@ export function initUnitDetail(): void {
       document.dispatchEvent(new CustomEvent('bs:army-changed'));
       document.dispatchEvent(new CustomEvent('bs:army-open'));
       toast(tf('toast.addedToArmy', { name }));
+    } else if (result.reason === 'cap') {
+      toast(tf('army.capToast', { cap: result.cap }));
     } else {
       toast(tf('army.lockedToast', { faction: result.lockedTo }));
     }

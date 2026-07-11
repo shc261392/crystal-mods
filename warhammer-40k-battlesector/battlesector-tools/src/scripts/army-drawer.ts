@@ -10,6 +10,7 @@
 import unitsData from '../data/units.json';
 import type { Unit } from '../lib/types';
 import {
+  ARMY_UNIT_CAP,
   type ArmyEntry,
   createArmy,
   deleteArmy,
@@ -21,10 +22,10 @@ import {
   saveArmy,
   setActiveArmy,
   setEntryLoadout,
-  totalModels,
   totalPoints,
+  totalUnits,
 } from './army-store';
-import { getFactionEmblem } from './images';
+import { getFactionEmblem, getUnitPortrait } from './images';
 import { pageSignal } from './reinit';
 
 const unitById = new Map((unitsData as Unit[]).map((u) => [u.id, u]));
@@ -86,25 +87,6 @@ function render(root: HTMLElement): void {
   const nameInput = qs<HTMLInputElement>(root, '[data-army-name]');
   if (nameInput && document.activeElement !== nameInput) nameInput.value = active.name;
 
-  // Faction lock indicator
-  const faction = getActiveArmyFaction();
-  const factionEmblem = qs<HTMLImageElement>(root, '[data-army-faction-emblem]');
-  const factionLabel = qs<HTMLElement>(root, '[data-army-faction-label]');
-  const emblemUrl = factionEmblemForName(faction);
-  if (factionEmblem) {
-    if (emblemUrl) {
-      factionEmblem.src = emblemUrl;
-      factionEmblem.classList.remove('hidden');
-    } else {
-      factionEmblem.classList.add('hidden');
-    }
-  }
-  if (factionLabel) {
-    factionLabel.textContent = faction
-      ? `${faction} · faction locked`
-      : 'Any faction — the first unit sets the lock';
-  }
-
   // Entries
   const list = qs<HTMLElement>(root, '[data-army-entries]');
   const empty = qs<HTMLElement>(root, '[data-army-empty]');
@@ -122,19 +104,34 @@ function render(root: HTMLElement): void {
     }
   }
 
-  // Totals
+  // Totals: unit count out of the cap, plus points.
   const pts = qs<HTMLElement>(root, '[data-army-total-points]');
-  const models = qs<HTMLElement>(root, '[data-army-total-models]');
+  const units = qs<HTMLElement>(root, '[data-army-total-units]');
   if (pts) pts.textContent = String(totalPoints(active.entries));
-  if (models) models.textContent = String(totalModels(active.entries));
+  if (units) units.textContent = `${totalUnits(active.entries)}/${ARMY_UNIT_CAP}`;
 }
 
 function entryRow(e: ArmyEntry): string {
   const unit = unitById.get(e.id);
   const showLoadout = unit ? hasLoadoutChoice(unit) : false;
   const loadout = unit ? normalizeLoadout(unit, e.loadout) : [];
+  const portrait = unit ? (getUnitPortrait(unit.name, unit.portrait) ?? '') : '';
+  const roleColor = unit?.roleColor ?? 'var(--color-border)';
+  // The chosen weapons, shown as the subtitle so the built loadout is visible
+  // (and different loadouts = different points).
+  const loadoutSummary = unit
+    ? unit.weaponSlots
+        .map((slot, i) => slot.options.find((o) => o.weaponId === loadout[i])?.name)
+        .filter(Boolean)
+        .join(', ')
+    : '';
+  const icon = portrait
+    ? `<img src="${portrait}" alt="" width="40" height="40" class="w-full h-full object-cover object-top" />`
+    : `<span class="grid place-items-center w-full h-full text-xs font-black" style="background:${roleColor}">${escapeHtml(
+        e.name.slice(0, 1),
+      )}</span>`;
   const loadoutBtn = showLoadout
-    ? `<button type="button" data-entry-loadout-toggle class="btn btn-ghost h-7 w-7 !px-0" aria-label="Loadout" title="Loadout">
+    ? `<button type="button" data-entry-loadout-toggle class="btn btn-ghost h-7 w-7 !px-0" aria-label="Loadout" title="Change loadout">
          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.5 3.5 3 15v6h6L20.5 9.5M14.5 3.5 20.5 9.5M14.5 3.5 18 0l6 6-3.5 3.5"/></svg>
        </button>`
     : '';
@@ -145,7 +142,7 @@ function entryRow(e: ArmyEntry): string {
             if (slot.options.length <= 1) return '';
             const opts = slot.options
               .map((o) => {
-                const cost = o.pointCost ? ` (+${o.pointCost})` : '';
+                const cost = o.pointCost ? ` (+${o.pointCost})` : ' (+0)';
                 const sel = o.weaponId === loadout[i] ? ' selected' : '';
                 return `<option value="${o.weaponId}"${sel}>${escapeHtml(o.name)}${cost}</option>`;
               })
@@ -156,19 +153,21 @@ function entryRow(e: ArmyEntry): string {
       : '';
   return `
     <div class="surface p-2" data-entry-id="${e.id}">
-      <div class="flex items-center gap-2">
+      <div class="flex items-center gap-2.5">
+        <span class="w-10 h-10 rounded-md overflow-hidden shrink-0 border-2" style="border-color:${roleColor}">${icon}</span>
         <div class="min-w-0 flex-1">
           <p class="text-sm font-semibold truncate">${escapeHtml(e.name)}</p>
-          <p class="text-xs text-[var(--color-faint)] truncate">${escapeHtml(e.faction)} · ${
-            e.points
-          } pts</p>
+          <p class="text-xs text-[var(--color-faint)] truncate">${escapeHtml(loadoutSummary)}</p>
         </div>
-        <div class="flex items-center gap-1 shrink-0">
-          ${loadoutBtn}
-          <button type="button" data-entry-dec class="btn btn-ghost h-7 w-7 !px-0" aria-label="Decrease">−</button>
-          <span class="tabular-nums text-sm w-6 text-center" data-entry-qty>${e.qty}</span>
-          <button type="button" data-entry-inc class="btn btn-ghost h-7 w-7 !px-0" aria-label="Increase">+</button>
-          <button type="button" data-entry-remove class="btn btn-ghost h-7 w-7 !px-0 text-[var(--color-blood)]" aria-label="Remove">×</button>
+        <div class="flex flex-col items-end gap-1 shrink-0">
+          <span class="text-base font-black text-[var(--color-gold)] leading-none tabular-nums">${e.points}</span>
+          <div class="flex items-center gap-0.5">
+            ${loadoutBtn}
+            <button type="button" data-entry-dec class="btn btn-ghost h-7 w-7 !px-0" aria-label="Decrease">−</button>
+            <span class="tabular-nums text-sm w-6 text-center" data-entry-qty>${e.qty}</span>
+            <button type="button" data-entry-inc class="btn btn-ghost h-7 w-7 !px-0" aria-label="Increase">+</button>
+            <button type="button" data-entry-remove class="btn btn-ghost h-7 w-7 !px-0 text-[var(--color-blood)]" aria-label="Remove">×</button>
+          </div>
         </div>
       </div>
       ${loadoutPanel}
@@ -289,8 +288,10 @@ function bindOnce(root: HTMLElement): void {
       qs<HTMLElement>(rowEl, '[data-entry-loadout]')?.classList.toggle('hidden');
       return;
     }
-    if (target.closest('[data-entry-inc]')) entry.qty += 1;
-    else if (target.closest('[data-entry-dec]')) entry.qty = Math.max(0, entry.qty - 1);
+    if (target.closest('[data-entry-inc]')) {
+      if (totalUnits(active.entries) >= ARMY_UNIT_CAP) return;
+      entry.qty += 1;
+    } else if (target.closest('[data-entry-dec]')) entry.qty = Math.max(0, entry.qty - 1);
     else if (target.closest('[data-entry-remove]')) entry.qty = 0;
     else return;
     const next: ArmyEntry[] = active.entries.filter((x) => (x.id === id ? entry.qty > 0 : true));
@@ -378,10 +379,10 @@ export function initArmyDrawer(): void {
   updateArmyBadge();
 }
 
-/** Reflect the active army's model count on the nav army button(s). */
+/** Reflect the active army's unit count on the nav army button(s). */
 function updateArmyBadge(): void {
   const active = getActiveArmy();
-  const count = totalModels(active.entries);
+  const count = totalUnits(active.entries);
   for (const btn of document.querySelectorAll<HTMLElement>('[data-army-toggle]')) {
     let badge = btn.querySelector<HTMLElement>('[data-army-badge]');
     if (count > 0) {
@@ -405,10 +406,10 @@ function updateMiniBar(): void {
   const bar = document.getElementById('army-mini-bar');
   if (!bar) return;
   const active = getActiveArmy();
-  const models = totalModels(active.entries);
+  const units = totalUnits(active.entries);
   const root = document.getElementById('army-drawer-root');
   const drawerOpen = root ? !root.classList.contains('hidden') : false;
-  if (models > 0 && !drawerOpen) {
+  if (units > 0 && !drawerOpen) {
     bar.classList.remove('hidden');
     bar.classList.add('flex');
     const nameEl = bar.querySelector<HTMLElement>('[data-army-mini-name]');
@@ -426,9 +427,9 @@ function updateMiniBar(): void {
         iconSvg.classList.remove('hidden');
       }
     }
-    // Show faction so the lock is legible; fall back to the army name.
-    if (nameEl) nameEl.textContent = getActiveArmyFaction() ?? active.name;
-    if (statsEl) statsEl.textContent = `· ${models} · ${totalPoints(active.entries)} pts`;
+    // Faction is conveyed by the emblem; show the cap progress + points.
+    if (nameEl) nameEl.textContent = `${units}/${ARMY_UNIT_CAP}`;
+    if (statsEl) statsEl.textContent = `· ${totalPoints(active.entries)} pts`;
   } else {
     bar.classList.add('hidden');
     bar.classList.remove('flex');

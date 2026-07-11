@@ -70,14 +70,6 @@
       </button>
     </div>
 
-    <!-- Faction lock indicator -->
-    <div class="px-3 pt-2">
-      <div data-army-faction-row class="flex items-center gap-2 text-xs text-[var(--color-faint)]">
-        <img data-army-faction-emblem alt="" width="16" height="16" class="w-4 h-4 object-contain hidden" />
-        <span data-army-faction-label></span>
-      </div>
-    </div>
-
     <!-- Entries -->
     <div data-army-entries class="flex-1 overflow-y-auto p-3 flex flex-col gap-2"></div>
 
@@ -88,11 +80,12 @@
 
     <!-- Footer totals + actions -->
     <footer class="p-3 border-t border-[var(--color-border)] flex flex-col gap-2.5">
-      <div class="flex items-center justify-between text-sm">
-        <span class="text-[var(--color-faint)]" data-i18n-ui="army.totals">Total</span>
-        <span class="tabular-nums font-semibold">
-          <span data-army-total-points>0</span> <span data-i18n-ui="army.points">pts</span>
-          · <span data-army-total-models>0</span> <span data-i18n-ui="army.models">models</span>
+      <div class="flex items-center justify-between">
+        <span class="text-sm text-[var(--color-faint)] tabular-nums">
+          <span data-army-total-units>0/30</span> <span data-i18n-ui="army.units">units</span>
+        </span>
+        <span class="tabular-nums font-black text-lg text-[var(--color-gold)] leading-none">
+          <span data-army-total-points>0</span> <span class="text-sm font-bold" data-i18n-ui="army.points">pts</span>
         </span>
       </div>
       <div class="flex items-center gap-2">
