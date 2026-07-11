@@ -27,6 +27,7 @@ interface RawUnit {
   id: number;
   faction: number;
   hidden?: boolean;
+  members: number;
   maxHealth: number;
   armor: number;
   armorFront: number;
@@ -91,10 +92,11 @@ function weaponHits(w: RawWeapon): number {
   return Math.max(1, (w.numAttacks || 1) * (w.shotsPerAttack || 1) * (w.burstSize || 1));
 }
 
-/** Models effectively struck: flame/template → 20, splash → splashModels, else 1. */
-function effectiveSplashModels(w: RawWeapon): number {
-  if (FLAME_RE.test(w.name)) return 20;
-  if (w.impactType === 'tile') return 20;
+/** Models effectively struck: flame/template → the game's largest unit size,
+ *  splash → splashModels, else 1. `maxUnitSize` is derived from the roster. */
+function effectiveSplashModels(w: RawWeapon, maxUnitSize: number): number {
+  if (FLAME_RE.test(w.name)) return maxUnitSize;
+  if (w.impactType === 'tile') return maxUnitSize;
   if (w.impactType === 'splash') return Math.max(1, w.splashModels ?? 1);
   return 1;
 }
@@ -180,12 +182,15 @@ export function generateStatRanks(): RankSummary {
   const rawWeapons = readJson<RawWeapon[]>('weapons.json').filter(
     (w) => !w.hidden && usedWeaponIds.has(w.id),
   );
+  // Flame/template weapons hit an entire squad; cap that at the largest unit in
+  // the game rather than an arbitrary constant.
+  const maxUnitSize = fullUnits.reduce((m, u) => Math.max(m, u.members ?? 1), 1);
   const weaponRanks = buildRecords(rawWeapons, {
     dmg3: (w) => dmgAfterArmor(w, 3),
     dmg6: (w) => dmgAfterArmor(w, 6),
     dmg9: (w) => dmgAfterArmor(w, 9),
     range: (w) => w.rangeMax,
-    splash: (w) => effectiveSplashModels(w),
+    splash: (w) => effectiveSplashModels(w, maxUnitSize),
     hits: (w) => weaponHits(w),
   });
 

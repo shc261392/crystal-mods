@@ -25,17 +25,18 @@ export function onPageLoad(init: () => void): void {
   document.addEventListener('astro:page-load', init);
 }
 
-// Count client-side (ClientRouter) navigations so a "back" control can tell
-// whether the user reached the current page from within the app (precise
-// history.back() with scroll restoration) or via a direct/deep-linked visit.
-let clientNavCount = 0;
+// Track the path we navigated FROM, so a "back" control can decide whether the
+// previous history entry is the list it should return to (precise history.back()
+// with scroll restoration) or whether it should navigate to the list directly.
+let previousPath = '';
 if (typeof document !== 'undefined') {
-  document.addEventListener('astro:after-swap', () => {
-    clientNavCount += 1;
+  document.addEventListener('astro:before-preparation', () => {
+    // Fires on the page being left, while its URL is still current.
+    previousPath = location.pathname;
   });
 }
 
-/** True when at least one in-app client navigation has occurred this session. */
-export function hasInAppHistory(): boolean {
-  return clientNavCount > 0;
+/** The pathname of the page navigated away from most recently (in-app). */
+export function getPreviousPath(): string {
+  return previousPath;
 }

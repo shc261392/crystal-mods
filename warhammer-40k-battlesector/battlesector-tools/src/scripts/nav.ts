@@ -1,6 +1,7 @@
 // Navigation behaviour: mobile menu toggle + command-palette search.
 // The search index is fetched lazily on first open to keep per-page JS minimal.
 
+import { navigate } from 'astro:transitions/client';
 import {
   applyI18n,
   factionName,
@@ -10,7 +11,7 @@ import {
   unitName,
   weaponName,
 } from './i18n';
-import { hasInAppHistory, pageSignal } from './reinit';
+import { getPreviousPath, pageSignal } from './reinit';
 
 interface SearchEntry {
   t: 'unit' | 'weapon';
@@ -148,11 +149,12 @@ export function initNav(): void {
       const back = (e.target as HTMLElement).closest<HTMLElement>('[data-back]');
       if (!back) return;
       e.preventDefault();
-      const fallback = back.getAttribute('data-back') || '/';
-      // Precise return (restores scroll) when we navigated here within the app;
-      // otherwise (direct/deep-linked visit) go to the list URL.
-      if (hasInAppHistory()) window.history.back();
-      else window.location.href = fallback;
+      const target = back.getAttribute('data-back') || '/';
+      const norm = (p: string): string => p.replace(/\/+$/, '') || '/';
+      // If we arrived here straight from the target list, history.back() restores
+      // its exact scroll position; otherwise navigate to the list (client-side).
+      if (norm(getPreviousPath()) === norm(target)) window.history.back();
+      else void navigate(target);
     },
     { signal },
   );
