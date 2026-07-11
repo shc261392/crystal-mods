@@ -255,7 +255,7 @@ export function initCombatSim(): void {
     renderField(sideA);
     renderField(sideB);
     log(
-      `${t('combatSim.turn')} ${turn}: ${a.label} → ${ra.hits} ${t('combatSim.log.hits')}, ${ra.kills} ${t('combatSim.log.kills')} · ${b.label} → ${rb.hits} ${t('combatSim.log.hits')}, ${rb.kills} ${t('combatSim.log.kills')}`,
+      `${t('combatSim.turn')} ${turn}: ${a.label} → ${ra.hits} ${t('combatSim.log.hits')}, ${ra.kills} ${t('combatSim.log.kills')}; ${b.label} → ${rb.hits} ${t('combatSim.log.hits')}, ${rb.kills} ${t('combatSim.log.kills')}`,
     );
     setOutcome();
   }

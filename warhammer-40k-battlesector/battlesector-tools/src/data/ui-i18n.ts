@@ -31,9 +31,9 @@ const rawUiI18n = {
     'hex.u.armor': 'Armor',
     'hex.u.dodge': 'Dodge',
     'hex.u.pts': 'Points',
-    'hex.w.dmg3': 'Dmg·A3',
-    'hex.w.dmg6': 'Dmg·A6',
-    'hex.w.dmg9': 'Dmg·A9',
+    'hex.w.dmg3': 'Dmg A3',
+    'hex.w.dmg6': 'Dmg A6',
+    'hex.w.dmg9': 'Dmg A9',
     'hex.w.range': 'Range',
     'hex.w.splash': 'Splash',
     'hex.w.hits': 'Hits',
@@ -333,7 +333,7 @@ const rawUiI18n = {
     'toast.addedToArmy': '{name} added to army',
     'common.customValues': 'Custom values…',
     'footer.disclaimer.main':
-      'Battlesector Tools · Unofficial fan project. Game data extracted for reference and analysis.',
+      'An unofficial Battlesector Tools fan project. Game data extracted for reference and analysis.',
     'footer.disclaimer.copyright':
       'Warhammer 40,000: Battlesector © Games Workshop / Black Lab Games. Not affiliated.',
     'footer.contact': 'Contact',
@@ -2335,7 +2335,7 @@ const rawUiI18n = {
     'toast.linkCopiedClipboard': '連結已複製到剪貼簿',
     'toast.addedToArmy': '{name} 已加入軍隊',
     'common.customValues': '自訂數值…',
-    'footer.disclaimer.main': 'Battlesector Tools · 非官方粉絲專案。遊戲資料僅供參考與分析。',
+    'footer.disclaimer.main': 'Battlesector Tools 非官方粉絲專案。遊戲資料僅供參考與分析。',
     'footer.disclaimer.copyright':
       'Warhammer 40,000: Battlesector © Games Workshop / Black Lab Games。與官方無關。',
   },

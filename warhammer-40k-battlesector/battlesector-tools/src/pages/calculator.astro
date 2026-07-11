@@ -180,9 +180,9 @@ import Base from '../layouts/Base.astro';
           </div>
           <label class="label block mt-2 mb-1" for="formula-model">Best-guess model</label>
           <select id="formula-model" class="select text-sm">
-            <option value="floor-first">A · Floor-first chain (user-order style)</option>
-            <option value="post-armor-swing">B · Post-armor swing (weighted ranges)</option>
-            <option value="graze-null">C · Graze-null branch (grazes can be 0)</option>
+            <option value="floor-first">A: Floor-first chain (user-order style)</option>
+            <option value="post-armor-swing">B: Post-armor swing (weighted ranges)</option>
+            <option value="graze-null">C: Graze-null branch (grazes can be 0)</option>
           </select>
           <p id="formula-model-note" class="text-xs text-[var(--color-faint)] mt-2"></p>
           <ol id="formula-steps" class="mt-2 space-y-1 text-xs text-[var(--color-muted)] list-decimal list-inside"></ol>
@@ -242,7 +242,7 @@ import Base from '../layouts/Base.astro';
         <input id="distance" class="input" type="number" min="0" inputmode="numeric" placeholder="—" />
       </div>
     </div>
-    <p id="range-info" class="text-xs text-[var(--color-faint)] mt-3"></p>
+    <p id="range-info" class="text-xs text-[var(--color-faint)] mt-3 whitespace-pre-line"></p>
   </section>
   </div>
 

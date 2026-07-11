@@ -22,7 +22,7 @@ const {
 
 const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const canonical = `${site}${path}`;
-const fullTitle = title === 'Battlesector Tools' ? title : `${title} · Battlesector Tools`;
+const fullTitle = title === 'Battlesector Tools' ? title : `${title} — Battlesector Tools`;
 ---
 
 <!doctype html>
@@ -87,7 +87,7 @@ const fullTitle = title === 'Battlesector Tools' ? title : `${title} · Battlese
         <div class="container-page py-8 text-sm text-[var(--color-faint)] flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
           <p>
             <span data-i18n-ui="footer.disclaimer.main">
-            Battlesector Tools · Unofficial fan project. Game data extracted for
+            An unofficial Battlesector Tools fan project. Game data extracted for
             reference and analysis.
             </span>
           </p>

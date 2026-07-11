@@ -321,7 +321,7 @@ export function initCalculator(): void {
       const expected = Math.floor(perAttack * hitFactor);
       return {
         id: model,
-        label: 'A · Floor-first chain',
+        label: 'A: Floor-first chain',
         note: 'Applies crit=1.5x and graze=0.25x on a floored base average, with floor rounding at each major stage.',
         steps: [
           'Take max damage as base, derive min as 75% of max (floor).',
@@ -340,7 +340,7 @@ export function initCalculator(): void {
       const expected = Math.round(perAttack * hitFactor);
       return {
         id: model,
-        label: 'B · Post-armor swing',
+        label: 'B: Post-armor swing',
         note: 'Treats crit/graze as separate post-armor outcome bands, then blends by their probabilities.',
         steps: [
           'Compute post-armor normal damage range.',
@@ -357,7 +357,7 @@ export function initCalculator(): void {
     const expected = Math.round(onHitNoGraze * shots * hitFactor * (1 - buckets.graze));
     return {
       id: model,
-      label: 'C · Graze-null branch',
+      label: 'C: Graze-null branch',
       note: 'Assumes many grazes collapse to 0 final damage; crit bonus is still 1.5x when non-graze hits crit.',
       steps: [
         'Build post-armor base range (normal hit).',
@@ -435,7 +435,7 @@ export function initCalculator(): void {
     if (d !== null && d > w.rangeMax) parts.push(t('calculator.range.outOfRange'));
     else if (d !== null && d > w.rangeOptimal)
       parts.push(`${d - w.rangeOptimal} ${t('calculator.range.beyondOptimal')}`);
-    rangeInfo.textContent = parts.join(' · ');
+    rangeInfo.textContent = parts.join('\n');
   }
 
   function unitOptionsHtml(): string {
@@ -574,7 +574,7 @@ export function initCalculator(): void {
     setText('r-graze', `${Math.round(graze)}%`);
     setText('r-attack', `${dr.min * shotCount}\u2013${dr.max * shotCount}`);
     setText('r-expected', String(expected));
-    const formulaLabel = (formulaResult.label ?? '').split('·')[0]?.trim() ?? '';
+    const formulaLabel = (formulaResult.label ?? '').split(':')[0]?.trim() ?? '';
     setText(
       'r-expected-model',
       `${formulaResult.expected}${formulaLabel ? ` (${formulaLabel})` : ''}`,

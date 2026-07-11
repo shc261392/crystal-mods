@@ -37,9 +37,9 @@ export const UNIT_HEX_AXES: HexAxis[] = [
 const dmgFmt = (v: number): string => (Number.isInteger(v) ? String(v) : v.toFixed(1));
 
 export const WEAPON_HEX_AXES: HexAxis[] = [
-  { key: 'dmg3', label: 'Dmg·A3', i18nKey: 'hex.w.dmg3', fmt: dmgFmt },
-  { key: 'dmg6', label: 'Dmg·A6', i18nKey: 'hex.w.dmg6', fmt: dmgFmt },
-  { key: 'dmg9', label: 'Dmg·A9', i18nKey: 'hex.w.dmg9', fmt: dmgFmt },
+  { key: 'dmg3', label: 'Dmg A3', i18nKey: 'hex.w.dmg3', fmt: dmgFmt },
+  { key: 'dmg6', label: 'Dmg A6', i18nKey: 'hex.w.dmg6', fmt: dmgFmt },
+  { key: 'dmg9', label: 'Dmg A9', i18nKey: 'hex.w.dmg9', fmt: dmgFmt },
   { key: 'range', label: 'Range', i18nKey: 'hex.w.range' },
   { key: 'splash', label: 'Splash', i18nKey: 'hex.w.splash' },
   { key: 'hits', label: 'Hits', i18nKey: 'hex.w.hits' },

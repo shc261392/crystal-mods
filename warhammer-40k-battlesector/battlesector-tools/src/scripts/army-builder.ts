@@ -300,7 +300,7 @@ export function initArmyBuilder(): void {
                               <span class="weapon-option-type" style="color:${type?.color ?? 'var(--color-faint)'}">${type?.label ?? ''}</span>
                               <span class="weapon-option-cost">${o.pointCost ? `+${o.pointCost}` : 'free'}</span>
                             </span>
-                            ${w ? `<span class="weapon-option-stats">DMG ${dmg?.min ?? w.damage}–${dmg?.max ?? w.damage} · ACC ${w.accuracy}% · AP ${w.armorPiercing} · RNG ${w.rangeMin}-${w.rangeOptimal}-${w.rangeMax}${w.pistol ? ' · PISTOL' : ''}${w.impactType && w.impactType !== 'single' ? ` · ${w.impactType.toUpperCase()}` : ''}</span>` : ''}
+                            ${w ? `<span class="weapon-option-stats"><span>${dmg?.min ?? w.damage}–${dmg?.max ?? w.damage} dmg</span><span>${w.isMelee && w.accuracy <= 0 ? 'Melee' : `${w.accuracy}%`}</span><span>${w.numAttacks * Math.max(1, w.shotsPerAttack || 1)} hits</span><span>AP ${w.armorPiercing}</span>${w.pistol ? '<span>Pistol</span>' : ''}</span>` : ''}
                           </span>
                         </button>`;
                   })

@@ -76,9 +76,10 @@ function render(results: HTMLElement, query: string): void {
           <span class="text-[var(--color-gold-dim)] w-4 text-center">${icon}</span>
           <span class="flex-1 min-w-0">
             <span class="block text-sm font-semibold truncate">${localizedName(e)}</span>
-            <span class="block text-xs text-[var(--color-faint)]">${
-              kind
-            } · ${localizedMeta(e)}</span>
+            <span class="flex items-center gap-x-2 text-xs text-[var(--color-faint)]">
+              <span>${kind}</span>
+              <span class="opacity-70 truncate">${localizedMeta(e)}</span>
+            </span>
           </span>
         </a>
       </li>`;

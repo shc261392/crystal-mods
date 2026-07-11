@@ -1,7 +1,7 @@
 ---
 import Tooltip from '../../components/Tooltip.astro';
 import Base from '../../layouts/Base.astro';
-import { damageRange } from '../../lib/combat';
+import { damageRange, splashDamage } from '../../lib/combat';
 import { weaponSlug, weapons } from '../../lib/data';
 import { WEAPON_TAG_TOOLTIPS } from '../../lib/tag-tooltips';
 import { resolveWeaponType, weaponTypeMeta } from '../../lib/weapon-display';
@@ -81,6 +81,7 @@ const sorted = [...weapons].sort((a, b) => a.name.localeCompare(b.name));
   <div id="grid" class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
     {sorted.map((w) => {
       const dmg = damageRange(w.damage);
+      const splash = splashDamage(w);
       const wType = weaponTypeMeta(w);
       const icon = getWeaponPortrait(w.icon) ?? getWeaponTypeIcon(resolveWeaponType(w));
       const hits = w.numAttacks * Math.max(1, w.shotsPerAttack || 1);
@@ -96,7 +97,7 @@ const sorted = [...weapons].sort((a, b) => a.name.localeCompare(b.name));
       return (
         <a
           href={`/weapons/${weaponSlug(w)}`}
-          class="weapon-card surface surface-hover p-4 block"
+          class="weapon-card surface surface-hover p-3 flex flex-col gap-2.5 h-full"
           data-name={w.name.toLowerCase()}
           data-id={w.id}
           data-damage={w.damage}
@@ -105,13 +106,20 @@ const sorted = [...weapons].sort((a, b) => a.name.localeCompare(b.name));
           data-hits={hits}
           data-tags={tags}
         >
-          <div class="flex items-start gap-3">
-            {icon && (
-              <img src={icon} alt="" width="40" height="40" loading="lazy" class="asset-icon w-10 h-10 rounded-lg object-contain bg-black/30 border border-[var(--color-border)] p-1 shrink-0" />
-            )}
+          <div class="flex items-start gap-3 flex-1 min-h-0">
+            <div
+              class="w-14 h-14 shrink-0 rounded-lg overflow-hidden border grid place-items-center p-1.5"
+              style={`border-color:color-mix(in oklab, ${wType.color} 45%, var(--color-border)); background:color-mix(in oklab, ${wType.color} 12%, var(--color-base))`}
+            >
+              {icon ? (
+                <img src={icon} alt="" width="56" height="56" loading="lazy" class="asset-icon w-full h-full object-contain" />
+              ) : (
+                <span class="text-lg text-[var(--color-faint)]" aria-hidden="true">?</span>
+              )}
+            </div>
             <div class="min-w-0 flex-1">
-              <div class="flex items-center gap-2 flex-wrap">
-                <h3 class="font-bold truncate" data-i18n-weapon={w.id} data-i18n-fallback={w.name}>{w.name}</h3>
+              <h3 class="font-extrabold leading-tight text-sm line-clamp-2" data-i18n-weapon={w.id} data-i18n-fallback={w.name}>{w.name}</h3>
+              <div class="mt-1.5 flex flex-wrap items-center gap-1.5">
                 <Tooltip text={WEAPON_TAG_TOOLTIPS[wType.type]}>
                   <span class="chip !py-0.5 !px-1.5 text-[10px]" style={`color:${wType.color}`} data-i18n-ui={wType.i18nKey}>{wType.label}</span>
                 </Tooltip>
@@ -132,26 +140,38 @@ const sorted = [...weapons].sort((a, b) => a.name.localeCompare(b.name));
                 )}
                 {w.abilities && w.abilities.length > 0 && (
                   <Tooltip text={`Has ${w.abilities.length} ${w.abilities.length === 1 ? 'ability' : 'abilities'}`}>
-                    <span class="chip !py-0.5 !px-1.5 text-[10px] !text-[var(--color-plasma)]">
-                      ⚡ {w.abilities.length}
-                    </span>
+                    <span class="chip !py-0.5 !px-1.5 text-[10px] !text-[var(--color-plasma)]">Special Ability</span>
                   </Tooltip>
                 )}
               </div>
-              <p class="text-xs text-[var(--color-faint)] mt-1">
-                {dmg.min}–{dmg.max} <span data-i18n-ui="common.damageShort">dmg</span>
-                {' · '}
-                {w.isMelee && w.accuracy <= 0 ? <span data-i18n-ui="common.melee">Melee</span> : `${w.accuracy}%`}
-                {' · '}
-                {hits} <span class="uppercase">hits</span>
-              </p>
             </div>
-            <div class="text-right shrink-0">
-              <Tooltip text={WEAPON_TAG_TOOLTIPS.ap}>
-                <p class="font-bold text-[var(--color-gold)] leading-none">AP {w.armorPiercing}</p>
-              </Tooltip>
-              <p class="text-[10px] text-[var(--color-faint)] uppercase tracking-wide mt-1">{hits} hits</p>
+          </div>
+
+          <dl class={`grid gap-1 ${splash ? 'grid-cols-4' : 'grid-cols-3'}`}>
+            <div class="flex flex-col items-center rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-1 py-1.5">
+              <dt class="text-[9px] font-semibold uppercase tracking-wide text-[var(--color-blood)]" data-i18n-ui="common.damageShort">dmg</dt>
+              <dd class="text-sm font-bold tabular-nums leading-tight mt-0.5">{dmg.min}–{dmg.max}{hits > 1 ? ` (×${hits})` : ''}</dd>
             </div>
+            {splash && (
+              <div class="flex flex-col items-center rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-1 py-1.5">
+                <dt class="text-[9px] font-semibold uppercase tracking-wide text-[var(--color-toxin)]">Splash</dt>
+                <dd class="text-sm font-bold tabular-nums leading-tight mt-0.5 text-[var(--color-toxin)]">{splash.min}–{splash.max} (×{splash.models})</dd>
+              </div>
+            )}
+            <div class="flex flex-col items-center rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-1 py-1.5 tooltip-target" data-tooltip={WEAPON_TAG_TOOLTIPS.ap}>
+              <dt class="text-[9px] font-semibold uppercase tracking-wide text-[var(--color-gold)]">AP</dt>
+              <dd class="text-sm font-bold tabular-nums leading-tight mt-0.5 text-[var(--color-gold)]">{w.armorPiercing}</dd>
+            </div>
+            <div class="flex flex-col items-center rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-1 py-1.5">
+              <dt class="text-[9px] font-semibold uppercase tracking-wide text-[var(--color-plasma)]">Acc</dt>
+              <dd class="text-sm font-bold tabular-nums leading-tight mt-0.5">{w.isMelee && w.accuracy <= 0 ? <span data-i18n-ui="common.melee">Melee</span> : `${w.accuracy}%`}</dd>
+            </div>
+          </dl>
+          <div class="flex items-center justify-between rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-2 py-1.5">
+            <span class="text-[9px] font-semibold uppercase tracking-wide text-[#6299B8]">Range</span>
+            <span class="text-xs font-bold tabular-nums">
+              {w.rangeMin !== w.rangeMax ? `${w.rangeMin}–${w.rangeMax} (Optimal: ${w.rangeOptimal})` : `${w.rangeMax}`}
+            </span>
           </div>
         </a>
       );

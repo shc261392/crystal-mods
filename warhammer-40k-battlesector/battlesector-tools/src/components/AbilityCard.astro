@@ -82,7 +82,7 @@ const noteText = Astro.props.notes?.trim();
   {effects.length > 0 && (
     <div class="p-3.5 pt-3">
       {compact ? (
-        <p class="text-xs text-[var(--color-muted)] ability-clamp">{effects.join(' · ')}</p>
+        <p class="text-xs text-[var(--color-muted)] ability-clamp">{effects.join(', ')}</p>
       ) : (
         <ul class="space-y-1">
           {effects.map((effect) => {

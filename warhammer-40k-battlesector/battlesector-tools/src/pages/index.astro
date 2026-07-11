@@ -180,7 +180,7 @@ const topUnits = [...units].sort((a, b) => b.totalHealth - a.totalHealth).slice(
           <span class="w-1 h-12 rounded-full shrink-0" style={`background:${u.roleColor}`}></span>
           <div class="min-w-0 flex-1">
             <p class="font-semibold truncate" data-i18n-unit={u.id} data-i18n-fallback={u.name}>{u.name}</p>
-            <p class="text-xs text-[var(--color-faint)]"><span data-i18n-faction={u.faction} data-i18n-fallback={u.factionName}>{u.factionName}</span> · <span data-i18n-role={u.role} data-i18n-fallback={u.roleName}>{u.roleName}</span></p>
+            <p class="text-xs text-[var(--color-faint)] flex flex-wrap items-center gap-x-2"><span data-i18n-faction={u.faction} data-i18n-fallback={u.factionName}>{u.factionName}</span><span class="opacity-60" data-i18n-role={u.role} data-i18n-fallback={u.roleName}>{u.roleName}</span></p>
           </div>
           <div class="text-right shrink-0">
             <p class="font-bold text-[var(--color-gold)]">{u.totalHealth}</p>

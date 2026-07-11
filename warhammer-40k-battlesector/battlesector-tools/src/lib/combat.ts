@@ -33,10 +33,11 @@ export const GRAZE_FACTOR = 3;
  */
 export const GRAZE_DAMAGE_MULT = 0.25;
 
-/** The in-game damage range of a weapon: [0.75 × max, max]. */
+/** The in-game damage range of a weapon: [floor(0.75 × max), max]. The minimum
+ * is floored to match the in-game display (e.g. max 70 → min 52, not 53). */
 export function damageRange(maxDamage: number): { min: number; max: number } {
   const max = Math.max(0, Math.round(maxDamage));
-  return { min: Math.round(max * MIN_DAMAGE_MULT), max };
+  return { min: Math.floor(max * MIN_DAMAGE_MULT), max };
 }
 
 /** Average (expected) damage of a single hit, before hit chance. */

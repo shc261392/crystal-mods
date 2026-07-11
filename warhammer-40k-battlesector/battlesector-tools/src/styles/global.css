@@ -234,7 +234,9 @@ a {
   line-height: 1;
 }
 .weapon-option-stats {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.6rem;
   margin-top: 0.1rem;
   font-size: 0.68rem;
   line-height: 1.15;
