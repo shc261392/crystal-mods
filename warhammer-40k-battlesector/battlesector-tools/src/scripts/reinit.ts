@@ -25,13 +25,15 @@ export function onPageLoad(init: () => void): void {
   document.addEventListener('astro:page-load', init);
 }
 
-// Track the path we navigated FROM, so a "back" control can decide whether the
-// previous history entry is the list it should return to (precise history.back()
-// with scroll restoration) or whether it should navigate to the list directly.
+// Track the path we navigated FROM so a "back" control can decide whether
+// history.back() returns to its list (scroll restoration is handled natively
+// by ClientRouter once page scripts preserve history.state on replaceState).
 let previousPath = '';
+
 if (typeof document !== 'undefined') {
   document.addEventListener('astro:before-preparation', () => {
-    // Fires on the page being left, while its URL is still current.
+    // Fires on the page being left, while its URL is still current — record it
+    // so a "back" control can decide whether history.back() returns to its list.
     previousPath = location.pathname;
   });
 }

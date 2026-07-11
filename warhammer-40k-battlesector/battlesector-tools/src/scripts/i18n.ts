@@ -30,7 +30,7 @@ function upsertLangInUrl(locale: string): void {
   const url = new URL(location.href);
   if (locale === DEFAULT_LOCALE) url.searchParams.delete('lang');
   else url.searchParams.set('lang', locale);
-  history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
+  history.replaceState(history.state, '', `${url.pathname}${url.search}${url.hash}`);
 }
 
 export function setLocale(locale: string): void {

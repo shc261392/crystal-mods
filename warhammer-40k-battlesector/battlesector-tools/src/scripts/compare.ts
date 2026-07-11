@@ -79,7 +79,7 @@ export function initCompare(): void {
 
   function syncUrl(): void {
     const qs = ids.length ? `?ids=${ids.join(',')}` : '';
-    history.replaceState(null, '', `${location.pathname}${qs}`);
+    history.replaceState(history.state, '', `${location.pathname}${qs}`);
   }
 
   function bestValue(row: Row, selected: Unit[]): number | null {

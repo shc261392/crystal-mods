@@ -57,7 +57,8 @@ export function initWeaponsBrowser(): void {
     if (sort && sort.value !== 'name') p.set('sort', sort.value);
     if (selectedTags.size > 0) p.set('tags', [...selectedTags].sort().join(','));
     const qs = p.toString();
-    history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+    // Preserve ClientRouter's history.state (nulling it breaks back-nav swaps).
+    history.replaceState(history.state, '', qs ? `?${qs}` : location.pathname);
   }
 
   function compare(a: HTMLElement, b: HTMLElement, key: SortKey): number {

@@ -26,7 +26,7 @@ export function initFactions(): void {
     }
     const params = new URLSearchParams(location.search);
     params.set('faction', id);
-    history.replaceState(null, '', `?${params.toString()}`);
+    history.replaceState(history.state, '', `?${params.toString()}`);
   }
 
   for (const pill of pills) {

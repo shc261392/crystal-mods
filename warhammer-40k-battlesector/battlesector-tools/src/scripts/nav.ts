@@ -151,8 +151,9 @@ export function initNav(): void {
       e.preventDefault();
       const target = back.getAttribute('data-back') || '/';
       const norm = (p: string): string => p.replace(/\/+$/, '') || '/';
-      // If we arrived here straight from the target list, history.back() restores
-      // its exact scroll position; otherwise navigate to the list (client-side).
+      // If we arrived here straight from the target list, history.back() lets
+      // ClientRouter restore the list AND its exact scroll position; otherwise
+      // navigate to the list (client-side, scrolls to top).
       if (norm(getPreviousPath()) === norm(target)) window.history.back();
       else void navigate(target);
     },

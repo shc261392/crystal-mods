@@ -98,7 +98,7 @@ export function initArmyBuilder(): void {
       })
       .filter((e): e is ArmyEntry => e !== null);
     saveArmy(army);
-    history.replaceState(null, '', location.pathname);
+    history.replaceState(history.state, '', location.pathname);
   }
 
   // Single-faction: the army's faction is fixed once it has units.

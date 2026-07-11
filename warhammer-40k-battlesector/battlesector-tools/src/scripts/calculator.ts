@@ -603,7 +603,7 @@ export function initCalculator(): void {
     if (unitSel.value) p.set('unit', unitSel.value);
     if (showCampaignUnits?.checked) p.set('campaign', '1');
     const qs = p.toString();
-    history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+    history.replaceState(history.state, '', qs ? `?${qs}` : location.pathname);
     const copy = document.getElementById('copy-link');
     copy?.setAttribute('data-url', `${location.pathname}${qs ? `?${qs}` : ''}`);
   }
