@@ -15,7 +15,7 @@ type SortKey =
   | 'move-desc'
   | 'move-asc';
 
-import { addToArmyLocked } from './army-store';
+import { addToArmyLocked, getActiveArmyFaction } from './army-store';
 import { applyI18n, roleName, tf } from './i18n';
 import { pageSignal } from './reinit';
 
@@ -364,11 +364,28 @@ export function initUnitsBrowser(): void {
     { signal },
   );
 
+  // Dim the "+" on cards that can't be added because the active army is locked
+  // to another faction, so the lock is obvious before clicking.
+  function updateAddButtons(): void {
+    const locked = getActiveArmyFaction();
+    for (const btn of document.querySelectorAll<HTMLElement>('#grid [data-army-add]')) {
+      const disabled = locked !== null && text(btn, 'armyFaction') !== locked;
+      btn.classList.toggle('opacity-30', disabled);
+      btn.classList.toggle('grayscale', disabled);
+      btn.setAttribute(
+        'title',
+        disabled ? tf('army.lockedToast', { faction: locked }) : 'Add to army',
+      );
+    }
+  }
+  document.addEventListener('bs:army-changed', updateAddButtons, { signal });
+
   applyI18n();
   localizeRoleOptions();
   paintFactionButtons();
   paintTagButtons();
   apply();
+  updateAddButtons();
   // Preload images for a faction that was pre-selected via the URL.
   if (activeFaction) preloadFactionImages(activeFaction);
 }

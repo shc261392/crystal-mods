@@ -15,6 +15,7 @@ import {
   deleteArmy,
   encodeArmy,
   getActiveArmy,
+  getActiveArmyFaction,
   getArmies,
   renameArmy,
   saveArmy,
@@ -23,9 +24,19 @@ import {
   totalModels,
   totalPoints,
 } from './army-store';
+import { getFactionEmblem } from './images';
 import { pageSignal } from './reinit';
 
 const unitById = new Map((unitsData as Unit[]).map((u) => [u.id, u]));
+// Faction name -> id, so we can resolve an army's faction emblem from its
+// stored faction name.
+const factionIdByName = new Map((unitsData as Unit[]).map((u) => [u.factionName, u.faction]));
+
+function factionEmblemForName(name: string | null): string | null {
+  if (!name) return null;
+  const id = factionIdByName.get(name);
+  return id === undefined ? null : getFactionEmblem(id);
+}
 
 /** The default loadout: the zero-cost option in each weapon slot. */
 function defaultLoadout(u: Unit): number[] {
@@ -74,6 +85,25 @@ function render(root: HTMLElement): void {
   // Name input
   const nameInput = qs<HTMLInputElement>(root, '[data-army-name]');
   if (nameInput && document.activeElement !== nameInput) nameInput.value = active.name;
+
+  // Faction lock indicator
+  const faction = getActiveArmyFaction();
+  const factionEmblem = qs<HTMLImageElement>(root, '[data-army-faction-emblem]');
+  const factionLabel = qs<HTMLElement>(root, '[data-army-faction-label]');
+  const emblemUrl = factionEmblemForName(faction);
+  if (factionEmblem) {
+    if (emblemUrl) {
+      factionEmblem.src = emblemUrl;
+      factionEmblem.classList.remove('hidden');
+    } else {
+      factionEmblem.classList.add('hidden');
+    }
+  }
+  if (factionLabel) {
+    factionLabel.textContent = faction
+      ? `${faction} · faction locked`
+      : 'Any faction — the first unit sets the lock';
+  }
 
   // Entries
   const list = qs<HTMLElement>(root, '[data-army-entries]');
@@ -383,8 +413,22 @@ function updateMiniBar(): void {
     bar.classList.add('flex');
     const nameEl = bar.querySelector<HTMLElement>('[data-army-mini-name]');
     const statsEl = bar.querySelector<HTMLElement>('[data-army-mini-stats]');
-    if (nameEl) nameEl.textContent = active.name;
-    if (statsEl) statsEl.textContent = `${models} · ${totalPoints(active.entries)} pts`;
+    const emblemImg = bar.querySelector<HTMLImageElement>('[data-army-mini-emblem]');
+    const iconSvg = bar.querySelector<HTMLElement>('[data-army-mini-icon]');
+    const emblemUrl = factionEmblemForName(getActiveArmyFaction());
+    if (emblemImg && iconSvg) {
+      if (emblemUrl) {
+        emblemImg.src = emblemUrl;
+        emblemImg.classList.remove('hidden');
+        iconSvg.classList.add('hidden');
+      } else {
+        emblemImg.classList.add('hidden');
+        iconSvg.classList.remove('hidden');
+      }
+    }
+    // Show faction so the lock is legible; fall back to the army name.
+    if (nameEl) nameEl.textContent = getActiveArmyFaction() ?? active.name;
+    if (statsEl) statsEl.textContent = `· ${models} · ${totalPoints(active.entries)} pts`;
   } else {
     bar.classList.add('hidden');
     bar.classList.remove('flex');
