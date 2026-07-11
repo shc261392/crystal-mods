@@ -82,6 +82,12 @@ const rawUiI18n = {
     'common.copyLink': 'Copy link',
     'common.copyShareLink': 'Copy share link',
     'common.back': 'Back',
+    'common.reference': 'Reference',
+    'mechanics.intro':
+      'Core rules and combat maths, grounded in the extracted game data. Search a keyword to jump to it.',
+    'mechanics.searchPlaceholder': 'Search mechanics…',
+    'mechanics.countLabel': ' mechanics',
+    'mechanics.empty': 'No mechanics match your search.',
     'common.copyShareableLink': 'Copy shareable link',
     'common.summary': 'Summary',
     'common.byFaction': 'By faction',

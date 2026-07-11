@@ -1,9 +1,95 @@
 ---
-// Placeholder — full Game Mechanics reference is built in redesign P6.
+import { MECHANIC_CATEGORY_LABEL, type Mechanic, mechanics } from '../data/mechanics';
 import Base from '../layouts/Base.astro';
+
+const CATEGORY_COLOR: Record<string, string> = {
+  combat: 'var(--color-blood)',
+  defense: 'var(--color-shield)',
+  movement: 'var(--color-toxin)',
+  resource: 'var(--color-momentum)',
+};
+
+// Precompute the search haystack per mechanic (term + summary + details + keywords).
+function haystack(m: Mechanic): string {
+  return [m.term, m.summary, ...m.details, ...(m.keywords ?? [])].join(' ').toLowerCase();
+}
 ---
 
-<Base title="Game Mechanics" description="Warhammer 40,000: Battlesector game mechanics reference — critical, armor, graze, momentum and more.">
-  <h1 class="text-3xl font-black mb-2" data-i18n-ui="nav.mechanics">Game Mechanics</h1>
-  <p class="text-[var(--color-muted)]">Coming soon.</p>
+<Base
+  title="Game Mechanics"
+  description="Warhammer 40,000: Battlesector game mechanics reference — critical, armour, armour piercing, graze, fallback, pistol reaction, charge attack and momentum."
+  path="/mechanics"
+>
+  <header class="mb-6">
+    <p class="eyebrow mb-2" data-i18n-ui="common.reference">Reference</p>
+    <h1 class="text-3xl md:text-4xl font-black" data-i18n-ui="nav.mechanics">Game Mechanics</h1>
+    <p class="mt-2 text-[var(--color-muted)] max-w-2xl" data-i18n-ui="mechanics.intro">
+      Core rules and combat maths, grounded in the extracted game data. Search a keyword to jump to it.
+    </p>
+  </header>
+
+  <div class="surface p-3 md:p-4 mb-6 md:sticky md:top-[4.5rem] md:z-30">
+    <label class="label block mb-1.5" for="mech-search" data-i18n-ui="common.search">Search</label>
+    <input
+      id="mech-search"
+      type="text"
+      class="input w-full"
+      placeholder="Search mechanics…"
+      data-i18n-ui-placeholder="mechanics.searchPlaceholder"
+      autocomplete="off"
+      spellcheck="false"
+    />
+    <p class="mt-2 text-sm text-[var(--color-faint)]">
+      <span id="mech-count">{mechanics.length}</span>
+      <span data-i18n-ui="mechanics.countLabel"> mechanics</span>
+    </p>
+  </div>
+
+  <div id="mech-grid" class="grid gap-4 md:grid-cols-2">
+    {
+      mechanics.map((m) => (
+        <article
+          id={m.id}
+          data-mech={haystack(m)}
+          class="surface p-5 scroll-mt-24"
+          style={`border-left:3px solid ${CATEGORY_COLOR[m.category]}`}
+        >
+          <div class="flex items-center justify-between gap-2 mb-1.5">
+            <h2 class="text-xl font-black">{m.term}</h2>
+            <span
+              class="chip shrink-0"
+              style={`color:${CATEGORY_COLOR[m.category]}; border-color:${CATEGORY_COLOR[m.category]}`}
+            >
+              {MECHANIC_CATEGORY_LABEL[m.category]}
+            </span>
+          </div>
+          <p class="text-[var(--color-muted)] mb-3">{m.summary}</p>
+          <ul class="space-y-1.5 text-sm text-[var(--color-ink)]">
+            {m.details.map((d) => (
+              <li class="flex gap-2">
+                <span class="text-[var(--color-gold-dim)] shrink-0" aria-hidden="true">
+                  ▸
+                </span>
+                <span>{d}</span>
+              </li>
+            ))}
+          </ul>
+        </article>
+      ))
+    }
+  </div>
+
+  <p
+    id="mech-empty"
+    class="hidden text-center text-[var(--color-faint)] py-16"
+    data-i18n-ui="mechanics.empty"
+  >
+    No mechanics match your search.
+  </p>
+
+  <script>
+    import { initMechanics } from '../scripts/mechanics';
+    import { onPageLoad } from '../scripts/reinit';
+    onPageLoad(initMechanics);
+  </script>
 </Base>
