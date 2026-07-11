@@ -164,6 +164,7 @@ const sorted = [...weapons].sort((a, b) => a.name.localeCompare(b.name));
 
   <script>
     import { initWeaponsBrowser } from '../../scripts/weapons';
-    initWeaponsBrowser();
+    import { onPageLoad } from '../../scripts/reinit';
+    onPageLoad(initWeaponsBrowser);
   </script>
 </Base>

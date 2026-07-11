@@ -156,12 +156,15 @@ const sortedUnits = [...units].sort(
 
   <script>
     import { initArmyBuilder } from '../scripts/army-builder';
-    initArmyBuilder();
+    import { onPageLoad, pageSignal } from '../scripts/reinit';
+    onPageLoad(() => {
+      initArmyBuilder();
 
-    const panel = document.getElementById('army-summary-panel');
-    const fab = document.getElementById('summary-fab');
-    const closeBtn = document.getElementById('summary-close-btn');
-    if (panel && fab) {
+      const panel = document.getElementById('army-summary-panel');
+      const fab = document.getElementById('summary-fab');
+      const closeBtn = document.getElementById('summary-close-btn');
+      if (!panel || !fab) return;
+      const signal = pageSignal('army-panel');
       const placeFloatingPanel = () => {
         if (window.innerWidth >= 1280) {
           panel.style.top = '';
@@ -188,21 +191,29 @@ const sortedUnits = [...units].sort(
         else closePanel();
       });
       closeBtn?.addEventListener('click', closePanel);
-      window.addEventListener('resize', () => {
-        if (window.innerWidth >= 1280) {
-          panel.style.top = '';
-          panel.style.right = '';
-          panel.style.left = '';
-          panel.classList.remove('hidden');
-        } else {
-          closePanel();
-        }
-      });
-      window.addEventListener('scroll', () => {
-        if (window.innerWidth < 1280 && !panel.classList.contains('hidden')) {
-          placeFloatingPanel();
-        }
-      });
-    }
+      window.addEventListener(
+        'resize',
+        () => {
+          if (window.innerWidth >= 1280) {
+            panel.style.top = '';
+            panel.style.right = '';
+            panel.style.left = '';
+            panel.classList.remove('hidden');
+          } else {
+            closePanel();
+          }
+        },
+        { signal },
+      );
+      window.addEventListener(
+        'scroll',
+        () => {
+          if (window.innerWidth < 1280 && !panel.classList.contains('hidden')) {
+            placeFloatingPanel();
+          }
+        },
+        { signal },
+      );
+    });
   </script>
 </Base>

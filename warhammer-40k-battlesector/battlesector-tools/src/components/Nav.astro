@@ -183,5 +183,6 @@ const armyIcon =
 
 <script>
   import { initNav } from '../scripts/nav';
-  initNav();
+  import { onPageLoad } from '../scripts/reinit';
+  onPageLoad(initNav);
 </script>

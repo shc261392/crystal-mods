@@ -19,6 +19,7 @@ import {
 } from '../lib/combat';
 import type { Unit, Weapon } from '../lib/types';
 import { t, unitName, weaponName } from './i18n';
+import { pageSignal } from './reinit';
 
 interface BuffEffect {
   accuracy?: number;
@@ -789,10 +790,14 @@ export function initCalculator(): void {
   battleBtn?.addEventListener('click', () => setMode(true));
   setMode(false);
 
-  window.addEventListener('bs:locale-changed', () => {
-    renderOptions();
-    populateBuffs();
-    populateMomFactions();
-    compute();
-  });
+  window.addEventListener(
+    'bs:locale-changed',
+    () => {
+      renderOptions();
+      populateBuffs();
+      populateMomFactions();
+      compute();
+    },
+    { signal: pageSignal('calculator') },
+  );
 }

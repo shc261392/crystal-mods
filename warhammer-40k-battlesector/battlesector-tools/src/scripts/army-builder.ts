@@ -18,6 +18,7 @@ import {
 } from './army-store';
 import { applyI18n, factionName, roleName, t, tf, unitName, weaponName } from './i18n';
 import { getFactionEmblem, getUnitPortrait, getWeaponPortrait, getWeaponTypeIcon } from './images';
+import { pageSignal } from './reinit';
 
 const units = (unitsData as Unit[]).filter((u) => u.faction !== 4);
 const unitById = new Map(units.map((u) => [u.id, u]));
@@ -499,12 +500,16 @@ export function initArmyBuilder(): void {
     render();
   });
 
-  window.addEventListener('bs:locale-changed', () => {
-    applyI18n();
-    localizeRoleOptions();
-    render();
-    paintTagButtons();
-  });
+  window.addEventListener(
+    'bs:locale-changed',
+    () => {
+      applyI18n();
+      localizeRoleOptions();
+      render();
+      paintTagButtons();
+    },
+    { signal: pageSignal('army-builder') },
+  );
 
   function toast(message: string): void {
     const el = document.getElementById('toast');

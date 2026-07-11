@@ -440,6 +440,7 @@ const vitals = [
 
   <script>
     import { initUnitDetail } from '../../scripts/unit-detail';
-    initUnitDetail();
+    import { onPageLoad } from '../../scripts/reinit';
+    onPageLoad(initUnitDetail);
   </script>
 </Base>

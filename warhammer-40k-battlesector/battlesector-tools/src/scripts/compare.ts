@@ -4,6 +4,7 @@
 import unitsData from '../data/units.json';
 import type { Unit } from '../lib/types';
 import { factionName, roleName, t, tf, unitName } from './i18n';
+import { pageSignal } from './reinit';
 
 const units = (unitsData as Unit[]).filter((u) => u.faction !== 4);
 const unitById = new Map(units.map((u) => [u.id, u]));
@@ -182,18 +183,22 @@ export function initCompare(): void {
     }
   });
 
-  window.addEventListener('bs:locale-changed', () => {
-    const current = select.value;
-    select.innerHTML = [...units]
-      .sort((a, b) => unitName(a.id, a.name).localeCompare(unitName(b.id, b.name)))
-      .map(
-        (u) =>
-          `<option value="${u.id}">${unitName(u.id, u.name)} (${factionName(u.faction, u.factionName)})</option>`,
-      )
-      .join('');
-    if (current) select.value = current;
-    render();
-  });
+  window.addEventListener(
+    'bs:locale-changed',
+    () => {
+      const current = select.value;
+      select.innerHTML = [...units]
+        .sort((a, b) => unitName(a.id, a.name).localeCompare(unitName(b.id, b.name)))
+        .map(
+          (u) =>
+            `<option value="${u.id}">${unitName(u.id, u.name)} (${factionName(u.faction, u.factionName)})</option>`,
+        )
+        .join('');
+      if (current) select.value = current;
+      render();
+    },
+    { signal: pageSignal('compare') },
+  );
 
   function toast(message: string): void {
     const el = document.getElementById('toast');

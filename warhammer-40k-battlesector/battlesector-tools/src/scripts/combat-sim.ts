@@ -7,6 +7,7 @@ import weaponsData from '../data/weapons.json';
 import { damageRange, grazeChance, hitChance } from '../lib/combat';
 import type { Unit, Weapon } from '../lib/types';
 import { t, unitName, weaponName } from './i18n';
+import { pageSignal } from './reinit';
 
 const units = (unitsData as Unit[]).filter((u) => u.faction !== 4);
 const usedWeaponIds = new Set<number>();
@@ -318,13 +319,17 @@ export function initCombatSim(): void {
   sideB.bonusInput.addEventListener('input', reset);
   playBtn.addEventListener('click', play);
   revertBtn.addEventListener('click', reset);
-  window.addEventListener('bs:locale-changed', () => {
-    populateUnits(sideA);
-    populateUnits(sideB);
-    populateWeapons(sideA);
-    populateWeapons(sideB);
-    reset();
-  });
+  window.addEventListener(
+    'bs:locale-changed',
+    () => {
+      populateUnits(sideA);
+      populateUnits(sideB);
+      populateWeapons(sideA);
+      populateWeapons(sideB);
+      reset();
+    },
+    { signal: pageSignal('combat-sim') },
+  );
 
   // Initial population: default to two different units for an interesting fight.
   populateUnits(sideA);

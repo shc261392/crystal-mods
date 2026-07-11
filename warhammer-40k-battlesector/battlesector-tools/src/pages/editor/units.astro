@@ -104,6 +104,7 @@ const sorted = [...allUnits].sort((a, b) => a.name.localeCompare(b.name));
 
   <script>
     import { initEntityEditor } from '../../scripts/editor/entity-editor';
-    initEntityEditor();
+    import { onPageLoad } from '../../scripts/reinit';
+    onPageLoad(initEntityEditor);
   </script>
 </Base>

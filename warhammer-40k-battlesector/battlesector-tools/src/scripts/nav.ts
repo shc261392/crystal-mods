@@ -10,6 +10,7 @@ import {
   unitName,
   weaponName,
 } from './i18n';
+import { pageSignal } from './reinit';
 
 interface SearchEntry {
   t: 'unit' | 'weapon';
@@ -106,6 +107,7 @@ function search(query: string): void {
 }
 
 export function initNav(): void {
+  const signal = pageSignal('nav');
   applyI18n();
   for (const sel of document.querySelectorAll<HTMLSelectElement>('select.lang-select')) {
     initI18nSelector(sel);
@@ -164,23 +166,31 @@ export function initNav(): void {
     if (e.target === overlay) close();
   });
 
-  document.addEventListener('keydown', (e) => {
-    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
-      e.preventDefault();
-      if (overlay.classList.contains('hidden')) void open();
-      else close();
-    } else if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
-      close();
-    }
-  });
+  document.addEventListener(
+    'keydown',
+    (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        if (overlay.classList.contains('hidden')) void open();
+        else close();
+      } else if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
+        close();
+      }
+    },
+    { signal },
+  );
 
-  window.addEventListener('bs:locale-changed', () => {
-    applyI18n();
-    if (!overlay.classList.contains('hidden')) {
-      search(input.value);
-      render(results, input.value);
-    }
-  });
+  window.addEventListener(
+    'bs:locale-changed',
+    () => {
+      applyI18n();
+      if (!overlay.classList.contains('hidden')) {
+        search(input.value);
+        render(results, input.value);
+      }
+    },
+    { signal },
+  );
 
   // Ensure initial URL/storage locale gets applied immediately.
   const currentLocale = getLocale();

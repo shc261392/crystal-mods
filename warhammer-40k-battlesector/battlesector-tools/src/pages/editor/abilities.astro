@@ -176,6 +176,7 @@ function iconPreview(icon: string | undefined): string | undefined {
 
   <script>
     import { initEntityEditor } from '../../scripts/editor/entity-editor';
-    initEntityEditor();
+    import { onPageLoad } from '../../scripts/reinit';
+    onPageLoad(initEntityEditor);
   </script>
 </Base>

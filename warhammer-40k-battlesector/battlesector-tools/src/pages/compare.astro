@@ -37,6 +37,7 @@ import Base from '../layouts/Base.astro';
 
   <script>
     import { initCompare } from '../scripts/compare';
-    initCompare();
+    import { onPageLoad } from '../scripts/reinit';
+    onPageLoad(initCompare);
   </script>
 </Base>

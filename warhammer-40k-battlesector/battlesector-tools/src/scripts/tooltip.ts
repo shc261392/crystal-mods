@@ -16,6 +16,7 @@ export function initTooltips(): void {
   initialized = true;
 
   const root = ensureTooltipRoot();
+  let liveRoot = root;
   let activeEl: HTMLElement | null = null;
   let showTimer: number | null = null;
 
@@ -24,14 +25,14 @@ export function initTooltips(): void {
       window.clearTimeout(showTimer);
       showTimer = null;
     }
-    root.classList.add('hidden');
+    liveRoot.classList.add('hidden');
     activeEl = null;
   };
 
   const position = (target: HTMLElement): void => {
     const gap = 10;
     const rect = target.getBoundingClientRect();
-    const tipRect = root.getBoundingClientRect();
+    const tipRect = liveRoot.getBoundingClientRect();
     const vw = window.innerWidth;
 
     let left = rect.left + rect.width / 2 - tipRect.width / 2;
@@ -40,15 +41,17 @@ export function initTooltips(): void {
     let top = rect.top - tipRect.height - gap;
     if (top < 8) top = rect.bottom + gap;
 
-    root.style.left = `${left + window.scrollX}px`;
-    root.style.top = `${top + window.scrollY}px`;
+    liveRoot.style.left = `${left + window.scrollX}px`;
+    liveRoot.style.top = `${top + window.scrollY}px`;
   };
 
   const show = (target: HTMLElement): void => {
     const text = target.getAttribute('data-tooltip')?.trim();
     if (!text) return;
-    root.textContent = text;
-    root.classList.remove('hidden');
+    // ClientRouter swaps the <body>, removing #ui-tooltip; recreate on demand.
+    liveRoot = ensureTooltipRoot();
+    liveRoot.textContent = text;
+    liveRoot.classList.remove('hidden');
     position(target);
     activeEl = target;
   };
@@ -95,12 +98,12 @@ export function initTooltips(): void {
   window.addEventListener(
     'scroll',
     () => {
-      if (activeEl && !root.classList.contains('hidden')) position(activeEl);
+      if (activeEl && !liveRoot.classList.contains('hidden')) position(activeEl);
     },
     { passive: true },
   );
 
   window.addEventListener('resize', () => {
-    if (activeEl && !root.classList.contains('hidden')) position(activeEl);
+    if (activeEl && !liveRoot.classList.contains('hidden')) position(activeEl);
   });
 }

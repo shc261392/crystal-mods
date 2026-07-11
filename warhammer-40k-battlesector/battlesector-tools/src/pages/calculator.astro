@@ -345,7 +345,10 @@ import Base from '../layouts/Base.astro';
   <script>
     import { initCalculator } from '../scripts/calculator';
     import { initCombatSim } from '../scripts/combat-sim';
-    initCalculator();
-    initCombatSim();
+    import { onPageLoad } from '../scripts/reinit';
+    onPageLoad(() => {
+      initCalculator();
+      initCombatSim();
+    });
   </script>
 </Base>

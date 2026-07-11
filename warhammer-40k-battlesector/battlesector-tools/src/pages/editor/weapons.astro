@@ -142,6 +142,7 @@ const WEAPON_TYPE_OPTIONS = [
 
   <script>
     import { initEntityEditor } from '../../scripts/editor/entity-editor';
-    initEntityEditor();
+    import { onPageLoad } from '../../scripts/reinit';
+    onPageLoad(initEntityEditor);
   </script>
 </Base>

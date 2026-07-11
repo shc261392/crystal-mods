@@ -16,6 +16,7 @@ type SortKey =
   | 'move-asc';
 
 import { applyI18n, roleName, tf } from './i18n';
+import { pageSignal } from './reinit';
 
 const DATASET_TAGS_KEY: keyof DOMStringMap = 'tags';
 
@@ -289,11 +290,15 @@ export function initUnitsBrowser(): void {
     });
   }
 
-  window.addEventListener('bs:locale-changed', () => {
-    applyI18n();
-    localizeRoleOptions();
-    apply();
-  });
+  window.addEventListener(
+    'bs:locale-changed',
+    () => {
+      applyI18n();
+      localizeRoleOptions();
+      apply();
+    },
+    { signal: pageSignal('units') },
+  );
 
   applyI18n();
   localizeRoleOptions();

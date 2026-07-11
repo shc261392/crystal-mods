@@ -1,6 +1,7 @@
 // Client-side filtering/sorting for the weapons browser.
 
 import { applyI18n, tf } from './i18n';
+import { pageSignal } from './reinit';
 
 type SortKey =
   | 'name'
@@ -146,10 +147,14 @@ export function initWeaponsBrowser(): void {
     apply();
   });
 
-  window.addEventListener('bs:locale-changed', () => {
-    applyI18n();
-    apply();
-  });
+  window.addEventListener(
+    'bs:locale-changed',
+    () => {
+      applyI18n();
+      apply();
+    },
+    { signal: pageSignal('weapons') },
+  );
 
   applyI18n();
   paintTagButtons();
