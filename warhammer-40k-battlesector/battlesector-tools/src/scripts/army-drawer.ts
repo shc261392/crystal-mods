@@ -147,21 +147,21 @@ function entryRow(e: ArmyEntry): string {
                 return `<option value="${o.weaponId}"${sel}>${escapeHtml(o.name)}${cost}</option>`;
               })
               .join('');
-            return `<select data-entry-slot="${i}" class="select h-8 text-xs">${opts}</select>`;
+            return `<select data-entry-slot="${i}" class="select h-9 text-xs leading-tight">${opts}</select>`;
           })
           .join('')}</div>`
       : '';
   return `
     <div class="surface p-2" data-entry-id="${e.id}">
-      <div class="flex items-center gap-2.5">
+      <div class="flex items-start gap-2.5">
         <span class="w-10 h-10 rounded-md overflow-hidden shrink-0 border-2" style="border-color:${roleColor}">${icon}</span>
         <div class="min-w-0 flex-1">
-          <p class="text-sm font-semibold truncate">${escapeHtml(e.name)}</p>
+          <div class="flex items-start justify-between gap-2">
+            <p class="text-sm font-semibold truncate">${escapeHtml(e.name)}</p>
+            <span class="text-base font-black text-[var(--color-gold)] leading-tight tabular-nums shrink-0">${e.points}</span>
+          </div>
           <p class="text-xs text-[var(--color-faint)] truncate">${escapeHtml(loadoutSummary)}</p>
-        </div>
-        <div class="flex flex-col items-end gap-1 shrink-0">
-          <span class="text-base font-black text-[var(--color-gold)] leading-none tabular-nums">${e.points}</span>
-          <div class="flex items-center gap-0.5">
+          <div class="flex items-center justify-end gap-0.5 mt-1.5">
             ${loadoutBtn}
             <button type="button" data-entry-dec class="btn btn-ghost h-7 w-7 !px-0" aria-label="Decrease">−</button>
             <span class="tabular-nums text-sm w-6 text-center" data-entry-qty>${e.qty}</span>
