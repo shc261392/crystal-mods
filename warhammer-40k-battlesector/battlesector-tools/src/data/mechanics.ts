@@ -1,6 +1,11 @@
-// Seed content for the Game Mechanics reference page. Values are grounded in the
-// shared combat formulas (src/lib/combat.ts) and the truth-notes in
-// src/lib/tag-tooltips.ts. Copy is intentionally editable — refine over time.
+// Reference content for the Game Mechanics page.
+//
+// GROUND-TRUTH POLICY: entries state only facts derived from extracted game
+// data — the combat constants in src/lib/combat.ts (from the decompiled
+// DamageCalculationConfig) and the literal data flags/buff strings in the unit
+// and hq-upgrade data. Mechanics whose exact rules are not yet extracted say so
+// explicitly rather than inferring behaviour. Do not add tactical advice or
+// inferred explanations without ground truth.
 
 export type MechanicCategory = 'combat' | 'defense' | 'movement' | 'resource';
 
@@ -31,8 +36,7 @@ export const mechanics: Mechanic[] = [
     summary: 'A boosted hit dealing 1.5× damage; chance scales with armour piercing over armour.',
     details: [
       'Critical chance = the weapon’s base critical chance + 5% for every point of Armour Piercing above the target’s effective armour.',
-      'A critical hit deals 1.5× the rolled damage (a +50% bonus).',
-      'Because AP-over-armour drives the bonus, high-AP weapons crit far more often against lightly-armoured targets.',
+      'A critical hit deals 1.5× the rolled damage.',
     ],
     keywords: ['crit', 'chance', 'multiplier', '1.5x', 'ap'],
   },
@@ -44,7 +48,7 @@ export const mechanics: Mechanic[] = [
     details: [
       'Effective armour = max(0, unit armour − attacker Armour Piercing).',
       'The effective armour value is subtracted from each hit’s damage (both the minimum and maximum of the damage range).',
-      'Vehicles/monsters can have directional armour (front/side/rear); the facing struck determines the value used.',
+      'Some units use directional armour (front / left / right / rear); the facing struck determines the value used.',
     ],
     keywords: ['armour', 'reduction', 'mitigation', 'directional'],
   },
@@ -52,11 +56,11 @@ export const mechanics: Mechanic[] = [
     id: 'armor-piercing',
     term: 'Armor Piercing',
     category: 'combat',
-    summary: 'Reduces the target’s effective armour and fuels critical / suppresses graze.',
+    summary: 'Reduces the target’s effective armour and drives critical / graze chance.',
     details: [
-      'Armour Piercing (AP) lowers effective armour to max(0, armour − AP), so more of each hit’s damage lands.',
+      'Armour Piercing (AP) lowers effective armour to max(0, armour − AP).',
       'AP above the target’s armour adds critical chance (+5% per point).',
-      'AP also reduces graze chance (graze is driven by armour above AP).',
+      'Armour above AP adds graze chance (+3% per point).',
     ],
     keywords: ['ap', 'penetration', 'pierce'],
   },
@@ -67,8 +71,7 @@ export const mechanics: Mechanic[] = [
     summary: 'A glancing hit dealing only 0.25× damage; likelier against heavy armour.',
     details: [
       'Graze chance = 3% for every point of target armour above the weapon’s Armour Piercing.',
-      'A graze deals 0.25× the rolled damage (a 75% reduction).',
-      'Raising AP toward the target’s armour value shrinks graze chance and grows critical chance.',
+      'A graze deals 0.25× the rolled damage.',
     ],
     keywords: ['glance', 'reduced', '0.25x'],
   },
@@ -76,11 +79,10 @@ export const mechanics: Mechanic[] = [
     id: 'fallback',
     term: 'Fallback',
     category: 'movement',
-    summary: 'Eligible units can disengage from melee instead of being pinned.',
+    summary: 'A unit data flag governing whether a unit can disengage from melee.',
     details: [
-      'Units with the “Can Fall Back” data flag may retreat out of base contact with an enemy.',
-      'Use it to reposition fragile ranged units that get charged, or to break a bad melee.',
-      'Units without the flag are locked in melee until the engagement resolves.',
+      'Units carry a “Can Fall Back” flag in the game data.',
+      'Exact fall-back rules are not yet extracted from game data.',
     ],
     keywords: ['fall back', 'retreat', 'disengage', 'melee'],
   },
@@ -88,11 +90,11 @@ export const mechanics: Mechanic[] = [
     id: 'pistol-reaction',
     term: 'Pistol Reaction',
     category: 'combat',
-    summary: 'Pistol weapons can fire in melee and react to adjacent enemies.',
+    summary: 'A reaction mechanic referenced in the game data.',
     details: [
-      'Weapons flagged as Pistol may be used while in melee, unlike other ranged weapons.',
-      'This lets a model contribute ranged damage even when locked in base contact.',
-      'Pistols therefore double as melee-viable sidearms on many loadouts.',
+      'Weapons carry a “Pistol” flag, and units carry a melee-reaction flag in the game data.',
+      'The game data references a pistol charge reaction (the “IgnorePistolChargeReaction” buff).',
+      'The exact rules for this reaction are not yet extracted from game data.',
     ],
     keywords: ['pistol', 'react', 'reaction', 'melee'],
   },
@@ -100,11 +102,10 @@ export const mechanics: Mechanic[] = [
     id: 'charge-attack',
     term: 'Charge Attack',
     category: 'combat',
-    summary: 'Moving into melee contact triggers a charge with attack bonuses.',
+    summary: 'A charge mechanic referenced in the game data.',
     details: [
-      'Closing the distance into base contact lets a unit make a charge (melee) attack.',
-      'Charging units gain the initiative of striking as they engage.',
-      'Pair charges with high-momentum turns and melee buffs for maximum impact.',
+      'The game data references a charge reaction (the “IgnorePistolChargeReaction” buff).',
+      'The exact charge rules and bonuses are not yet extracted from game data.',
     ],
     keywords: ['charge', 'melee', 'assault'],
   },
@@ -112,11 +113,10 @@ export const mechanics: Mechanic[] = [
     id: 'momentum',
     term: 'Momentum',
     category: 'resource',
-    summary: 'A faction resource earned from kills that powers faction passives.',
+    summary: 'A faction resource earned from model deaths that powers faction passives.',
     details: [
-      'Momentum builds up over the battle — each unit contributes momentum when its models die (per-model value).',
-      'The current momentum total feeds each faction’s passive (e.g. scaling critical chance, damage, or armour piercing).',
-      'See a unit’s detail page and the calculator’s momentum slider to preview passive effects at a given momentum.',
+      'Each unit has a per-model momentum value (momentumPerModelDeath) contributed when its models die.',
+      'The current momentum total feeds each faction’s passive effect.',
     ],
     keywords: ['momentum', '勢能', 'passive', 'faction', 'resource'],
   },

@@ -182,9 +182,17 @@ export function saveArmy(army: ArmyEntry[]): void {
   writeState(state);
 }
 
+/** Loadout signature used to distinguish entries of the same unit. */
+function loadoutSig(loadout?: number[]): string {
+  return (loadout ?? []).join('-');
+}
+
 export function addToArmy(entry: Omit<ArmyEntry, 'qty'>): ArmyEntry[] {
   const army = getArmy();
-  const existing = army.find((e) => e.id === entry.id);
+  // Match on unit id AND loadout so the same unit with a different loadout
+  // forms a separate entry (mirrors the standalone army builder).
+  const sig = loadoutSig(entry.loadout);
+  const existing = army.find((e) => e.id === entry.id && loadoutSig(e.loadout) === sig);
   if (existing) {
     existing.qty += 1;
   } else {
@@ -220,11 +228,26 @@ export function addToArmyLocked(
   return { ok: true };
 }
 
-/** Replace an entry's loadout (weapon selection) and recomputed point cost. */
-export function setEntryLoadout(id: number, loadout: number[], points: number): void {
+/** Replace an entry's loadout (weapon selection) and recomputed point cost.
+ * Targets the entry by its current loadout signature; merges into a duplicate
+ * (same unit + resulting loadout) when one already exists. */
+export function setEntryLoadout(
+  id: number,
+  oldLoadout: number[],
+  loadout: number[],
+  points: number,
+): void {
   const army = getArmy();
-  const entry = army.find((e) => e.id === id);
+  const oldSig = loadoutSig(oldLoadout);
+  const entry = army.find((e) => e.id === id && loadoutSig(e.loadout) === oldSig);
   if (!entry) return;
+  const newSig = loadoutSig(loadout);
+  const dup = army.find((e) => e !== entry && e.id === id && loadoutSig(e.loadout) === newSig);
+  if (dup) {
+    dup.qty += entry.qty;
+    saveArmy(army.filter((e) => e !== entry));
+    return;
+  }
   entry.loadout = loadout;
   entry.points = points;
   saveArmy(army);

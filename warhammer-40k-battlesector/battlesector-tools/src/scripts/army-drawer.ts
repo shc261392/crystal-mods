@@ -8,7 +8,10 @@
 // through pageSignal so they never target a stale/removed node.
 
 import unitsData from '../data/units.json';
-import type { Unit } from '../lib/types';
+import weaponsData from '../data/weapons.json';
+import { damageRange } from '../lib/combat';
+import type { Unit, Weapon } from '../lib/types';
+import { resolveWeaponType, weaponTypeMeta } from '../lib/weapon-display';
 import {
   ARMY_UNIT_CAP,
   type ArmyEntry,
@@ -25,13 +28,44 @@ import {
   totalPoints,
   totalUnits,
 } from './army-store';
-import { getFactionEmblem, getUnitPortrait } from './images';
+import { unitName } from './i18n';
+import { getFactionEmblem, getUnitPortrait, getWeaponPortrait, getWeaponTypeIcon } from './images';
 import { pageSignal } from './reinit';
 
 const unitById = new Map((unitsData as Unit[]).map((u) => [u.id, u]));
+const weaponById = new Map((weaponsData as Weapon[]).map((w) => [w.id, w]));
 // Faction name -> id, so we can resolve an army's faction emblem from its
 // stored faction name.
 const factionIdByName = new Map((unitsData as Unit[]).map((u) => [u.factionName, u.faction]));
+
+/** Stable per-entry key: unit id + loadout, so the same unit with different
+ * loadouts are distinct rows. */
+function entryKey(e: ArmyEntry): string {
+  return `${e.id}:${(e.loadout ?? []).join('-')}`;
+}
+
+/** A weapon's in-game icon, falling back to its type icon. */
+function weaponIcon(w: Weapon): string | null {
+  return getWeaponPortrait(w.icon) ?? getWeaponTypeIcon(resolveWeaponType(w));
+}
+
+/** Multiline weapon stat summary shown on hover — mirrors the weapon card's
+ * notation (damage range, accuracy, hits, AP). One value per line. */
+function weaponStatText(w: Weapon): string {
+  const dmg = damageRange(w.damage);
+  const hits = w.numAttacks * Math.max(1, w.shotsPerAttack || 1);
+  const acc = w.isMelee && w.accuracy <= 0 ? 'Melee' : `${w.accuracy}%`;
+  const lines = [
+    w.name,
+    weaponTypeMeta(w).label,
+    `${dmg.min}–${dmg.max} dmg`,
+    acc,
+    `${hits} hits`,
+    `AP ${w.armorPiercing}`,
+  ];
+  if (w.pistol) lines.push('Pistol');
+  return lines.join('\n');
+}
 
 function factionEmblemForName(name: string | null): string | null {
   if (!name) return null;
@@ -117,51 +151,59 @@ function entryRow(e: ArmyEntry): string {
   const loadout = unit ? normalizeLoadout(unit, e.loadout) : [];
   const portrait = unit ? (getUnitPortrait(unit.name, unit.portrait) ?? '') : '';
   const roleColor = unit?.roleColor ?? 'var(--color-border)';
-  // The chosen weapons, shown as the subtitle so the built loadout is visible
-  // (and different loadouts = different points).
-  const loadoutSummary = unit
-    ? unit.weaponSlots
-        .map((slot, i) => slot.options.find((o) => o.weaponId === loadout[i])?.name)
-        .filter(Boolean)
-        .join(', ')
-    : '';
+  // Display the localized short name (matches the unit card), not the raw
+  // faction-prefixed data name.
+  const displayName = unitName(e.id, e.name);
   const icon = portrait
     ? `<img src="${portrait}" alt="" width="40" height="40" class="w-full h-full object-cover object-top" />`
     : `<span class="grid place-items-center w-full h-full text-xs font-black" style="background:${roleColor}">${escapeHtml(
-        e.name.slice(0, 1),
+        displayName.slice(0, 1),
       )}</span>`;
   const loadoutBtn = showLoadout
     ? `<button type="button" data-entry-loadout-toggle class="btn btn-ghost h-7 w-7 !px-0" aria-label="Loadout" title="Change loadout">
          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.5 3.5 3 15v6h6L20.5 9.5M14.5 3.5 20.5 9.5M14.5 3.5 18 0l6 6-3.5 3.5"/></svg>
        </button>`
     : '';
+  // Icon-based weapon selection (no dropdown). Each option shows the weapon
+  // icon + point cost; hover reveals its stats via the shared tooltip system.
   const loadoutPanel =
     showLoadout && unit
-      ? `<div data-entry-loadout class="hidden mt-2 pt-2 border-t border-[var(--color-border)] flex flex-col gap-1.5">${unit.weaponSlots
+      ? `<div data-entry-loadout class="hidden mt-2 pt-2 border-t border-[var(--color-border)] flex flex-col gap-2">${unit.weaponSlots
           .map((slot, i) => {
             if (slot.options.length <= 1) return '';
             const opts = slot.options
               .map((o) => {
-                const cost = o.pointCost ? ` (+${o.pointCost})` : ' (+0)';
-                const sel = o.weaponId === loadout[i] ? ' selected' : '';
-                return `<option value="${o.weaponId}"${sel}>${escapeHtml(o.name)}${cost}</option>`;
+                const w = weaponById.get(o.weaponId);
+                const wIcon = w ? weaponIcon(w) : null;
+                const selected = o.weaponId === loadout[i];
+                const tip = w ? weaponStatText(w) : o.name;
+                const cost = o.pointCost ? `+${o.pointCost}` : '';
+                const inner = wIcon
+                  ? `<img src="${wIcon}" alt="" class="w-8 h-8 object-contain p-0.5" />`
+                  : `<span class="text-[10px] font-bold">${escapeHtml(o.name.slice(0, 2))}</span>`;
+                const costBadge = cost
+                  ? `<span class="absolute -bottom-1 -right-1 text-[9px] font-bold leading-none px-1 py-px rounded bg-[var(--color-elevated)] border border-[var(--color-border)] tabular-nums">${cost}</span>`
+                  : '';
+                return `<button type="button" data-entry-slot="${i}" data-weapon-id="${o.weaponId}" aria-pressed="${selected}" aria-label="${escapeHtml(o.name)}" class="tooltip-target relative grid place-items-center w-11 h-11 rounded-md border-2 bg-black/30 ${selected ? 'border-[var(--color-gold)]' : 'border-[var(--color-border)] hover:border-[var(--color-border-strong)]'}" data-tooltip="${escapeHtml(tip)}">${inner}${costBadge}</button>`;
               })
               .join('');
-            return `<select data-entry-slot="${i}" class="select h-9 text-xs leading-tight">${opts}</select>`;
+            return `<div class="flex flex-col gap-1"><span class="text-[10px] uppercase tracking-wide text-[var(--color-faint)]">Slot ${i + 1}</span><div class="flex flex-wrap gap-1.5">${opts}</div></div>`;
           })
           .join('')}</div>`
       : '';
   return `
-    <div class="surface p-2" data-entry-id="${e.id}">
+    <div class="surface p-2" data-entry-key="${entryKey(e)}">
       <div class="flex items-start gap-2.5">
         <span class="w-10 h-10 rounded-md overflow-hidden shrink-0 border-2" style="border-color:${roleColor}">${icon}</span>
         <div class="min-w-0 flex-1">
           <div class="flex items-start justify-between gap-2">
-            <p class="text-sm font-semibold truncate">${escapeHtml(e.name)}</p>
-            <span class="text-base font-black text-[var(--color-gold)] leading-tight tabular-nums shrink-0">${e.points}</span>
+            <p class="text-sm font-semibold truncate mt-0.5">${escapeHtml(displayName)}</p>
+            <div class="text-right shrink-0">
+              <p class="text-[9px] uppercase tracking-wide text-[var(--color-faint)] leading-none">PTS</p>
+              <p class="font-black text-lg text-[var(--color-gold)] leading-tight tabular-nums">${e.points}</p>
+            </div>
           </div>
-          <p class="text-xs text-[var(--color-faint)] truncate">${escapeHtml(loadoutSummary)}</p>
-          <div class="flex items-center justify-end gap-0.5 mt-1.5">
+          <div class="flex items-center justify-end gap-0.5 mt-1">
             ${loadoutBtn}
             <button type="button" data-entry-dec class="btn btn-ghost h-7 w-7 !px-0" aria-label="Decrease">−</button>
             <span class="tabular-nums text-sm w-6 text-center" data-entry-qty>${e.qty}</span>
@@ -274,18 +316,43 @@ function bindOnce(root: HTMLElement): void {
     }
   });
 
-  // Entry qty/remove/loadout-toggle via delegation.
+  // Entry qty/remove/loadout-toggle/weapon-select via delegation.
   qs<HTMLElement>(root, '[data-army-entries]')?.addEventListener('click', (e) => {
     const target = e.target as HTMLElement;
-    const rowEl = target.closest<HTMLElement>('[data-entry-id]');
+    const rowEl = target.closest<HTMLElement>('[data-entry-key]');
     if (!rowEl) return;
-    const id = Number(rowEl.getAttribute('data-entry-id'));
+    const key = rowEl.getAttribute('data-entry-key');
     const active = getActiveArmy();
-    const entry = active.entries.find((x) => x.id === id);
+    const entry = active.entries.find((x) => entryKey(x) === key);
     if (!entry) return;
     // Loadout expand/collapse doesn't mutate the store — toggle in place.
     if (target.closest('[data-entry-loadout-toggle]')) {
       qs<HTMLElement>(rowEl, '[data-entry-loadout]')?.classList.toggle('hidden');
+      return;
+    }
+    // Weapon icon selection: change this entry's loadout (merging duplicates).
+    const optBtn = target.closest<HTMLElement>('[data-entry-slot]');
+    if (optBtn) {
+      const unit = unitById.get(entry.id);
+      if (!unit) return;
+      const slot = Number(optBtn.getAttribute('data-entry-slot'));
+      const weaponId = Number(optBtn.getAttribute('data-weapon-id'));
+      if (!Number.isFinite(slot) || !Number.isFinite(weaponId)) return;
+      const current = normalizeLoadout(unit, entry.loadout);
+      const next = [...current];
+      next[slot] = weaponId;
+      // Match on the entry's stored loadout signature (may be the empty
+      // default) — not the normalized form — so the right row is found.
+      setEntryLoadout(entry.id, entry.loadout ?? [], next, loadoutCost(unit, next));
+      render(root);
+      updateMiniBar();
+      updateArmyBadge();
+      // Re-expand the (possibly re-keyed / merged) row we were editing.
+      const newKey = `${entry.id}:${next.join('-')}`;
+      qs<HTMLElement>(
+        qs<HTMLElement>(root, `[data-entry-key="${newKey}"]`) ?? root,
+        '[data-entry-loadout]',
+      )?.classList.remove('hidden');
       return;
     }
     if (target.closest('[data-entry-inc]')) {
@@ -294,34 +361,13 @@ function bindOnce(root: HTMLElement): void {
     } else if (target.closest('[data-entry-dec]')) entry.qty = Math.max(0, entry.qty - 1);
     else if (target.closest('[data-entry-remove]')) entry.qty = 0;
     else return;
-    const next: ArmyEntry[] = active.entries.filter((x) => (x.id === id ? entry.qty > 0 : true));
+    const next: ArmyEntry[] = active.entries.filter((x) =>
+      entryKey(x) === key ? entry.qty > 0 : true,
+    );
     saveArmy(next);
     render(root);
-  });
-
-  // Weapon-loadout change: recompute the entry's points, keep the panel open.
-  qs<HTMLElement>(root, '[data-army-entries]')?.addEventListener('change', (e) => {
-    const sel = (e.target as HTMLElement).closest<HTMLSelectElement>('[data-entry-slot]');
-    if (!sel) return;
-    const rowEl = sel.closest<HTMLElement>('[data-entry-id]');
-    if (!rowEl) return;
-    const id = Number(rowEl.getAttribute('data-entry-id'));
-    const unit = unitById.get(id);
-    if (!unit) return;
-    const loadout = [...rowEl.querySelectorAll<HTMLSelectElement>('[data-entry-slot]')].reduce(
-      (acc, s) => {
-        acc[Number(s.getAttribute('data-entry-slot'))] = Number(s.value);
-        return acc;
-      },
-      normalizeLoadout(unit),
-    );
-    setEntryLoadout(id, loadout, loadoutCost(unit, loadout));
-    render(root);
-    // Re-expand the panel we were editing (render replaced the DOM).
-    qs<HTMLElement>(
-      qs<HTMLElement>(root, `[data-entry-id="${id}"]`) ?? root,
-      '[data-entry-loadout]',
-    )?.classList.remove('hidden');
+    updateMiniBar();
+    updateArmyBadge();
   });
 }
 
@@ -429,7 +475,7 @@ function updateMiniBar(): void {
     }
     // Faction is conveyed by the emblem; show the cap progress + points.
     if (nameEl) nameEl.textContent = `${units}/${ARMY_UNIT_CAP}`;
-    if (statsEl) statsEl.textContent = `· ${totalPoints(active.entries)} pts`;
+    if (statsEl) statsEl.textContent = `${totalPoints(active.entries)} pts`;
   } else {
     bar.classList.add('hidden');
     bar.classList.remove('flex');
