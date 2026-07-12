@@ -324,6 +324,7 @@ const rawUiI18n = {
     'compare.empty': 'Add units above to start comparing.',
     'compare.pickPrompt': 'Click units in the list to compare them side by side.',
     'compare.redirecting': 'Redirecting to the Units page…',
+    'commandAbilities.redirecting': 'Redirecting to the Factions page…',
     'compare.table.stat': 'Stat',
     'compare.button.remove': 'remove',
     'compare.row.totalHealth': 'Total Health',
