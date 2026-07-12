@@ -11,18 +11,10 @@ import Base from '../layouts/Base.astro';
   <header class="mb-6">
     <p class="eyebrow mb-2" data-i18n-ui="common.tool">Tool</p>
     <h1 class="text-3xl md:text-4xl font-black" data-i18n-ui="nav.calculator">Damage Calculator</h1>
-  </header>
-
-  <!-- WIP disclaimer -->
-  <div class="mb-6 flex items-start gap-3 rounded-xl border border-[var(--color-gold-dim)]/50 bg-[color-mix(in_oklab,var(--color-gold)_10%,transparent)] p-4">
-    <svg class="w-5 h-5 shrink-0 text-[var(--color-gold)] mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-      <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-      <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
-    </svg>
-    <p class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.wipBanner">
-      Work in progress: this calculator is still being refined. Some formulas are approximations, so results may differ from the actual in-game outcome.
+    <p class="mt-2 text-sm text-[var(--color-faint)]" data-i18n-ui="calculator.wipBanner">
+      Work in progress: some formulas are approximations, so results may differ from the actual in-game outcome.
     </p>
-  </div>
+  </header>
 
   <!-- Mode toggle -->
   <div class="inline-flex gap-1 surface !p-1 mb-5" role="tablist" aria-label="Calculator mode">
@@ -39,6 +31,7 @@ import Base from '../layouts/Base.astro';
       <select id="attacker-unit" class="select mb-3"></select>
       <label class="label block mb-1.5" for="weapon" data-i18n-ui="common.weapon">Weapon</label>
       <select id="weapon" class="select mb-4"></select>
+      <div id="weapon-hex"></div>
 
       <label class="label inline-flex items-center gap-2 cursor-pointer select-none mb-4" for="show-campaign-units-calculator">
         <input id="show-campaign-units-calculator" type="checkbox" class="accent-[var(--color-gold)]" />
@@ -92,6 +85,7 @@ import Base from '../layouts/Base.astro';
       <h2 class="text-lg font-bold mb-4" data-i18n-ui="common.target">Target</h2>
       <label class="label block mb-1.5" for="unit" data-i18n-ui="common.unit">Unit</label>
       <select id="unit" class="select mb-4"></select>
+      <div id="unit-hex"></div>
 
       <div class="grid grid-cols-2 gap-3">
         <div>

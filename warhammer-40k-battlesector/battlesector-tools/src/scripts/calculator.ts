@@ -5,7 +5,9 @@
 import buffsData from '../data/buffs.json';
 import factionMomentumData from '../data/faction-momentum.json';
 import factionsData from '../data/factions.json';
+import unitRanksData from '../data/unit-ranks.json';
 import unitsData from '../data/units.json';
+import weaponRanksData from '../data/weapon-ranks.json';
 import weaponsData from '../data/weapons.json';
 import {
   critChance,
@@ -17,9 +19,18 @@ import {
   hitChance,
   modelsKilled,
 } from '../lib/combat';
+import {
+  type RankRecord,
+  UNIT_HEX_AXES,
+  WEAPON_HEX_AXES,
+  statHexagonHTML,
+} from '../lib/render/stat-hexagon';
 import type { Unit, Weapon } from '../lib/types';
 import { t, unitName, weaponName } from './i18n';
 import { pageSignal } from './reinit';
+
+const unitRanks = unitRanksData as Record<string, RankRecord>;
+const weaponRanks = weaponRanksData as Record<string, RankRecord>;
 
 interface BuffEffect {
   accuracy?: number;
@@ -513,6 +524,35 @@ export function initCalculator(): void {
     lost.value = '0';
   }
 
+  // Compact stat-index hexagon panels beside the pickers (same builder as the
+  // unit/weapon detail pages). They appear only when a catalog weapon/unit with
+  // a rank record is selected.
+  const weaponHexBox = document.getElementById('weapon-hex');
+  const unitHexBox = document.getElementById('unit-hex');
+
+  function hexPanel(svg: string): string {
+    return `<div class="surface p-3 mt-3 flex flex-col items-center">
+      <div class="w-full flex items-baseline justify-between mb-1">
+        <span class="eyebrow">${t('hex.title')}</span>
+        <span class="text-[11px] text-[var(--color-faint)]">${t('hex.gradeScale')}</span>
+      </div>
+      ${svg}
+    </div>`;
+  }
+
+  function renderWeaponHex(): void {
+    if (!weaponHexBox) return;
+    const w = weaponById.get(Number(weaponSel.value));
+    const rank = w ? weaponRanks[String(w.id)] : undefined;
+    weaponHexBox.innerHTML = rank ? hexPanel(statHexagonHTML(rank, WEAPON_HEX_AXES)) : '';
+  }
+
+  function renderUnitHex(): void {
+    if (!unitHexBox) return;
+    const rank = unitSel.value ? unitRanks[unitSel.value] : undefined;
+    unitHexBox.innerHTML = rank ? hexPanel(statHexagonHTML(rank, UNIT_HEX_AXES)) : '';
+  }
+
   function compute(): void {
     const dmg = Number(damage.value) || 0;
     const acc = Number(accuracy.value) || 0;
@@ -611,14 +651,17 @@ export function initCalculator(): void {
   attackerUnitSel.addEventListener('change', () => {
     populateWeapons();
     if (weaponSel.value) applyWeapon(Number(weaponSel.value));
+    renderWeaponHex();
     compute();
   });
   weaponSel.addEventListener('change', () => {
     if (weaponSel.value) applyWeapon(Number(weaponSel.value));
+    renderWeaponHex();
     compute();
   });
   unitSel.addEventListener('change', () => {
     if (unitSel.value) applyUnit(Number(unitSel.value));
+    renderUnitHex();
     compute();
   });
   for (const el of [
@@ -698,6 +741,8 @@ export function initCalculator(): void {
       applyUnit(Number(oldU));
     }
     populateWeapons();
+    renderWeaponHex();
+    renderUnitHex();
     compute();
   });
   formulaModelSel?.addEventListener('change', compute);
@@ -767,6 +812,8 @@ export function initCalculator(): void {
     applyUnit(Number(uParam));
   }
   compute();
+  renderWeaponHex();
+  renderUnitHex();
 
   // Mode toggle: one-round attack test (default) vs battle simulation.
   const oneRoundBtn = document.getElementById('mode-oneround-btn');
@@ -796,6 +843,8 @@ export function initCalculator(): void {
       renderOptions();
       populateBuffs();
       populateMomFactions();
+      renderWeaponHex();
+      renderUnitHex();
       compute();
     },
     { signal: pageSignal('calculator') },
