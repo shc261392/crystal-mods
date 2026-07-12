@@ -3,6 +3,7 @@ import katex from 'katex';
 import AbilityCard from '../../components/AbilityCard.astro';
 import FieldNotes from '../../components/FieldNotes.astro';
 import StatHexagon from '../../components/StatHexagon.astro';
+import WeaponRail from '../../components/WeaponRail.astro';
 import Base from '../../layouts/Base.astro';
 import {
   critChance,
@@ -189,6 +190,11 @@ const totalDmgLatex = katex.renderToString(
   path={`/weapons/${weaponSlug(weapon)}`}
   ogType="article"
 >
+  <div class="lg:grid lg:grid-cols-[minmax(340px,380px)_1fr] lg:gap-5 lg:items-start" data-weapons-view="detail">
+    <div class="weapons-rail-col hidden lg:block lg:sticky lg:top-4 lg:h-[calc(100dvh-2rem)]">
+      <WeaponRail currentSlug={weaponSlug(weapon)} />
+    </div>
+    <div class="weapons-detail-col min-w-0">
   <div class="flex items-center gap-3 mb-5">
     <button type="button" data-back="/weapons/" class="btn btn-ghost btn-sm shrink-0" aria-label="Back to weapons">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
@@ -517,4 +523,12 @@ const totalDmgLatex = katex.renderToString(
     </section>
 
   <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 hidden surface px-4 py-2.5 text-sm font-semibold z-[120]"></div>
+    </div>
+  </div>
+
+  <script>
+    import { initWeaponsBrowser } from '../../scripts/weapons';
+    import { onPageLoad } from '../../scripts/reinit';
+    onPageLoad(initWeaponsBrowser);
+  </script>
 </Base>

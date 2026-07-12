@@ -1,0 +1,55 @@
+---
+import { damageRange } from '../lib/combat';
+import type { Weapon } from '../lib/types';
+import { resolveWeaponType, weaponTypeMeta } from '../lib/weapon-display';
+import { getWeaponPortrait, getWeaponTypeIcon } from '../scripts/images';
+
+interface Props {
+  weapon: Weapon;
+  href: string;
+  current?: boolean;
+  dataAttrs?: Record<string, string | number | boolean | null | undefined>;
+}
+
+const { weapon, href, current = false, dataAttrs = {} } = Astro.props as Props;
+
+const attrs = Object.fromEntries(
+  Object.entries(dataAttrs).filter(([, value]) => value !== undefined && value !== null),
+);
+
+const wType = weaponTypeMeta(weapon);
+const icon = getWeaponPortrait(weapon.icon) ?? getWeaponTypeIcon(resolveWeaponType(weapon));
+const dmg = damageRange(weapon.damage);
+const hits = weapon.numAttacks * Math.max(1, weapon.shotsPerAttack || 1);
+---
+
+<a
+  href={href}
+  class="weapon-card weapon-row group relative flex items-center gap-2.5 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] hover:border-[var(--color-border-strong)] px-2 py-1.5 transition-colors aria-[current=page]:border-[var(--color-gold-dim)] aria-[current=page]:bg-[color-mix(in_oklab,var(--color-gold)_12%,transparent)]"
+  aria-current={current ? 'page' : undefined}
+  {...attrs}
+>
+  <span
+    class="w-10 h-10 shrink-0 rounded-md overflow-hidden border grid place-items-center p-1"
+    style={`border-color:color-mix(in oklab, ${wType.color} 45%, var(--color-border)); background:color-mix(in oklab, ${wType.color} 12%, var(--color-base))`}
+  >
+    {icon ? (
+      <img src={icon} alt="" width="40" height="40" loading="lazy" decoding="async" class="asset-icon w-full h-full object-contain" />
+    ) : (
+      <span class="text-sm text-[var(--color-faint)]" aria-hidden="true">?</span>
+    )}
+  </span>
+
+  <span class="min-w-0 flex-1">
+    <h3 class="text-xs font-semibold leading-tight truncate" data-i18n-weapon={weapon.id} data-i18n-fallback={weapon.name}>{weapon.name}</h3>
+    <span class="mt-0.5 flex items-center gap-x-1.5 text-[10px] leading-tight text-[var(--color-faint)]">
+      <span class="truncate" style={`color:${wType.color}`} data-i18n-ui={wType.i18nKey}>{wType.label}</span>
+      <span class="opacity-60 shrink-0 tabular-nums">{dmg.min}–{dmg.max}{hits > 1 ? ` ×${hits}` : ''}</span>
+    </span>
+  </span>
+
+  <span class="shrink-0 text-right leading-none">
+    <span class="block text-[8px] uppercase tracking-wide text-[var(--color-faint)]">AP</span>
+    <span class="block text-xs font-black text-[var(--color-gold)] tabular-nums">{weapon.armorPiercing}</span>
+  </span>
+</a>
