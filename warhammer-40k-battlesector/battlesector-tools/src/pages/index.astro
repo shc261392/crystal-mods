@@ -56,6 +56,47 @@ const tools = [
 ];
 
 const topUnits = [...units].sort((a, b) => b.totalHealth - a.totalHealth).slice(0, 6);
+
+// Per-faction DATA verification status — the thing players care about most:
+// which factions' stats have been checked against the game. Everything else
+// defaults to "not yet reviewed".
+type DataStatus = 'verified' | 'progress' | 'pending';
+const DATA_STATUS: Record<string, DataStatus> = {
+  'Blood Angels': 'verified',
+  Tyranid: 'verified',
+  'Adepta Sororitas': 'progress',
+};
+const STATUS_RANK: Record<DataStatus, number> = { verified: 0, progress: 1, pending: 2 };
+const STATUS_META: Record<
+  DataStatus,
+  { labelKey: string; label: string; color: string; icon: string }
+> = {
+  verified: {
+    labelKey: 'home.data.verified',
+    label: 'Verified',
+    color: 'var(--color-toxin)',
+    icon: '✓',
+  },
+  progress: {
+    labelKey: 'home.data.progress',
+    label: 'In progress',
+    color: 'var(--color-gold)',
+    icon: '◐',
+  },
+  pending: {
+    labelKey: 'home.data.pending',
+    label: 'Not yet reviewed',
+    color: 'var(--color-faint)',
+    icon: '○',
+  },
+};
+const factionStatus = factionCards
+  .map((f) => ({ faction: f, status: DATA_STATUS[f.name] ?? ('pending' as DataStatus) }))
+  .sort(
+    (a, b) =>
+      STATUS_RANK[a.status] - STATUS_RANK[b.status] || a.faction.name.localeCompare(b.faction.name),
+  );
+const verifiedCount = factionStatus.filter((s) => s.status === 'verified').length;
 ---
 
 <Base title="Battlesector Tools">
@@ -115,30 +156,67 @@ const topUnits = [...units].sort((a, b) => b.totalHealth - a.totalHealth).slice(
     </div>
   </section>
 
+  <!-- Data verification status -->
+  <section class="mt-12">
+    <div class="flex flex-wrap items-baseline justify-between gap-2 mb-2">
+      <h2 class="text-xl font-bold" data-i18n-ui="home.section.dataStatus">Data verification</h2>
+      <span class="text-sm text-[var(--color-faint)]">
+        <span class="font-bold text-[var(--color-toxin)]">{verifiedCount}</span>/{factionStatus.length} <span data-i18n-ui="home.data.factionsVerified">factions verified against the game</span>
+      </span>
+    </div>
+    <p class="text-sm text-[var(--color-muted)] mb-5" data-i18n-ui="home.data.intro">
+      Stats are extracted automatically, then hand-checked faction by faction. Verified factions are safe to trust; others may still contain extraction errors.
+    </p>
+    <div class="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      {factionStatus.map(({ faction: f, status }) => {
+        const emblem = getFactionEmblem(f.id);
+        const meta = STATUS_META[status];
+        return (
+          <a
+            href={`/units?faction=${encodeURIComponent(f.name)}`}
+            class="surface surface-hover p-4 flex items-center gap-3"
+            style={status === 'verified' ? `border-color:color-mix(in oklab, ${meta.color} 40%, var(--color-border))` : undefined}
+          >
+            {emblem ? (
+              <img src={emblem} alt="" width="40" height="40" loading="lazy" class="w-10 h-10 rounded-lg object-contain bg-black/30 border border-[var(--color-border)] p-0.5 shrink-0" />
+            ) : (
+              <div class="w-10 h-10 rounded-lg grid place-items-center font-black shrink-0 border border-[var(--color-border)]" aria-hidden="true">{f.name.slice(0, 1)}</div>
+            )}
+            <div class="min-w-0 flex-1">
+              <p class="font-semibold truncate text-sm" data-i18n-faction={f.id} data-i18n-fallback={f.name}>{f.name}</p>
+              <p class="text-xs font-semibold flex items-center gap-1" style={`color:${meta.color}`}>
+                <span aria-hidden="true">{meta.icon}</span>
+                <span data-i18n-ui={meta.labelKey}>{meta.label}</span>
+              </p>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </section>
+
   <!-- Roadmap -->
   <section class="mt-12">
-    <h2 class="text-xl font-bold mb-5">Roadmap</h2>
+    <h2 class="text-xl font-bold mb-5" data-i18n-ui="home.section.roadmap">Roadmap</h2>
     <div class="grid gap-4 lg:grid-cols-2">
       <article class="surface p-5">
-        <h3 class="font-bold text-[var(--color-toxin)] mb-3">Done</h3>
+        <h3 class="font-bold text-[var(--color-toxin)] mb-3" data-i18n-ui="home.roadmap.done">Done</h3>
         <ul class="space-y-2 text-sm text-[var(--color-muted)] list-disc pl-5">
-          <li>Published unit and weapon databases with search, sort, and multi-language support.</li>
-          <li>Released calculator, compare tools, and momentum modeling for battle estimation.</li>
-          <li>Added army builder with share links, faction locking, and loadout point calculations.</li>
-          <li>Improved UI consistency (card layouts, faction visuals, and faster browsing workflows).</li>
+          <li>Unit & weapon databases with search, filters, sort, and 10 languages.</li>
+          <li>Verified stats for Blood Angels and Tyranids (see Data verification above).</li>
+          <li>Stat-index hexagons, damage calculator, momentum modeling, and unit compare.</li>
+          <li>Whole-site army builder with share links, faction locking, and loadout points.</li>
         </ul>
       </article>
 
       <article class="surface p-5">
-        <h3 class="font-bold text-[var(--color-gold)] mb-3">Missing / In progress</h3>
+        <h3 class="font-bold text-[var(--color-gold)] mb-3" data-i18n-ui="home.roadmap.next">In progress &amp; next</h3>
         <ul class="space-y-2 text-sm text-[var(--color-muted)] list-disc pl-5">
-          <li>Review all unit stat and weapon stat (Blood Angels and Tyranids fully reviewed).</li>
-          <li>Add unit abilities (active and passive).</li>
-          <li>Add mechanism explanation for unit/weapon tags and combat formula.</li>
-          <li>Add crticial hit multiplier in Calculator.</li>
-          <li>Revise Army builder and Weapons page.</li>
-          <li>Allow unit/weapon browser to filter by tags.</li>
-          <li>Allow user comments and user uploading screenshots.</li>
+          <li><span class="font-semibold text-[var(--color-gold)]">Verifying Adepta Sororitas (Battle Sisters) stats</span> — in progress.</li>
+          <li>Verify the remaining factions' unit & weapon stats.</li>
+          <li>Complete unit abilities (active and passive) coverage.</li>
+          <li>Expand the game-mechanics glossary and combat-formula notes.</li>
+          <li>Community features: comments and screenshot uploads.</li>
         </ul>
       </article>
     </div>
