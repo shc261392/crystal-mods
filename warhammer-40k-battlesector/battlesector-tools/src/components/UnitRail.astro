@@ -1,0 +1,143 @@
+---
+import { factions, unitSlug, units } from '../lib/data';
+import type { Unit } from '../lib/types';
+import { getFactionEmblem } from '../scripts/images';
+import UnitListRow from './UnitListRow.astro';
+import UnitFilterFields from './filters/UnitFilterFields.astro';
+
+interface Props {
+  /** Slug of the currently-open unit (for selection highlight), if any. */
+  currentSlug?: string;
+}
+const { currentSlug } = Astro.props as Props;
+
+const factionButtons = factions
+  .filter((f) => units.some((u) => u.faction === f.id))
+  .sort((a, b) => a.id - b.id);
+
+function tierRank(roleName: string): number {
+  if (roleName === 'HQ') return 0;
+  if (roleName === 'Elite') return 1;
+  if (roleName === 'Heavy Support') return 2;
+  if (roleName === 'Fast Attack' || roleName === 'Flyer') return 3;
+  if (roleName === 'Troop') return 4;
+  return 99;
+}
+
+const sorted = [...units].sort(
+  (a, b) => tierRank(a.roleName) - tierRank(b.roleName) || a.name.localeCompare(b.name),
+);
+
+function rowAttrs(u: Unit): Record<string, string | number> {
+  return {
+    'data-name': u.name.toLowerCase(),
+    'data-id': u.id,
+    'data-faction-id': u.faction,
+    'data-role-id': u.role,
+    'data-faction': u.factionName,
+    'data-role': u.roleName,
+    'data-tier-rank': tierRank(u.roleName),
+    'data-points': u.pointCost,
+    'data-hp': u.totalHealth,
+    'data-armor': u.armor,
+    'data-move': u.maxMovementPoints,
+    'data-tags': [
+      u.roleName === 'HQ' ? 'hq' : null,
+      u.isLarge ? 'large' : null,
+      u.campaignOnly ? 'campaign' : null,
+      u.canMeleeReact ? 'melee-reaction' : null,
+      u.canFallback ? 'fallback' : null,
+    ]
+      .filter(Boolean)
+      .join(','),
+  };
+}
+---
+
+<div class="flex flex-col lg:h-full" transition:persist="units-rail" data-units-rail>
+  <!-- Controls -->
+  <div class="surface p-3 shrink-0 relative">
+    <div id="faction-bar" class="flex flex-wrap gap-1.5 mb-2" role="tablist" aria-label="Faction">
+      <button type="button" class="faction-btn shrink-0 inline-flex items-center gap-1.5 px-2 py-1 rounded-lg text-xs font-semibold border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:border-[var(--color-border-strong)] whitespace-nowrap transition-colors" data-faction="" data-faction-id="" role="tab">
+        All
+      </button>
+      {factionButtons.map((f) => (
+        <button type="button" class="faction-btn shrink-0 inline-flex items-center gap-1.5 px-2 py-1 rounded-lg text-xs font-semibold border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:border-[var(--color-border-strong)] whitespace-nowrap transition-colors" data-faction={f.name} data-faction-id={f.id} role="tab">
+          {getFactionEmblem(f.id) && (
+            <img src={getFactionEmblem(f.id)} alt="" width="14" height="14" loading="lazy" class="w-3.5 h-3.5 object-contain shrink-0" />
+          )}
+          <span data-i18n-faction={f.id} data-i18n-fallback={f.name}>{f.name}</span>
+        </button>
+      ))}
+    </div>
+
+    <div class="flex items-end gap-2">
+      <div class="flex-1 min-w-0">
+        <label class="label mb-1.5 sr-only" for="q" data-i18n-ui="common.search">Search</label>
+        <input id="q" class="input" type="search" placeholder="Search by name…" data-i18n-ui-placeholder="common.searchPlaceholder" autocomplete="off" />
+      </div>
+      <button id="filters-toggle" type="button" class="shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold border border-[var(--color-border)] text-[var(--color-ink)] hover:border-[var(--color-border-strong)] transition-colors" aria-expanded="false" aria-controls="filters-body">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+        <span data-i18n-ui="common.filters">Filters</span>
+        <span id="filters-count-badge" class="hidden min-w-[1.25rem] h-5 px-1 inline-flex items-center justify-center rounded-full bg-[var(--color-gold)] text-[var(--color-void)] text-[11px] font-bold tabular-nums"></span>
+      </button>
+    </div>
+
+    <div id="filters-body" class="hidden absolute left-0 right-0 top-full z-40 mt-1 p-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-2xl max-h-[62vh] overflow-y-auto">
+      <UnitFilterFields roleId="role" sortId="sort" campaignId="show-campaign-units-browser" tagFilterId="unit-tag-filter" />
+    </div>
+
+    <div class="mt-2 flex items-center justify-between">
+      <p id="count" class="text-xs text-[var(--color-faint)]"></p>
+      <button id="reset" type="button" class="text-xs font-semibold text-[var(--color-gold-dim)] hover:text-[var(--color-gold)]" data-i18n-ui="common.resetFilters">Reset filters</button>
+    </div>
+  </div>
+
+  <!-- Scrollable list -->
+  <div id="grid" class="flex flex-col gap-1 mt-2 lg:overflow-y-auto lg:flex-1 lg:min-h-0 pr-0.5">
+    {sorted.map((u) => (
+      <UnitListRow unit={u} href={`/units/${unitSlug(u)}`} current={unitSlug(u) === currentSlug} armyAdd dataAttrs={rowAttrs(u)} />
+    ))}
+  </div>
+  <p id="empty" class="hidden text-center text-[var(--color-faint)] py-16 text-sm" data-i18n-ui="units.empty.noMatches">
+    No units match your filters.
+  </p>
+</div>
+
+<style is:global>
+  /*
+   * Two-pane units view: keep the LEFT list rail perfectly static during client
+   * navigation and animate ONLY the right-hand detail pane.
+   *
+   * The rail DOM node is preserved via `transition:persist`, but by default the
+   * whole page is captured in one `root` view-transition snapshot that
+   * cross-fades — visibly flashing the rail even though its DOM never changes.
+   * So on units pages we DISABLE the root cross-fade (the persisted rail then
+   * swaps instantly = no flash, no re-render, no scroll) and give the detail
+   * pane its own `view-transition-name` so it alone animates. Other pages keep
+   * the normal page transition (scoped via `:has()`). Desktop-only: on mobile
+   * the rail and detail are separate full-screen views that transition normally.
+   */
+  @media (min-width: 1024px) {
+    :root:has([data-units-view])::view-transition-old(root),
+    :root:has([data-units-view])::view-transition-new(root) {
+      animation: none !important;
+    }
+
+    [data-units-view] .units-detail-col {
+      view-transition-name: units-detail;
+    }
+  }
+
+  /*
+   * The global `.fade-up` entrance animation on <main> replays on every
+   * ClientRouter navigation; because the persisted rail lives inside <main>,
+   * it would visually re-animate (fade + slide) with it. Suppress it on units
+   * pages so the rail stays perfectly still — the detail pane still animates via
+   * its own `units-detail` view transition. Other pages keep their entrance.
+   */
+  main:has([data-units-view]) {
+    animation: none !important;
+  }
+</style>
+

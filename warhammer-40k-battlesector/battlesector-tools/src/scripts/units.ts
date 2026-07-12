@@ -58,8 +58,59 @@ function displayName(el: HTMLElement): string {
   return el.querySelector('h3')?.textContent?.trim() ?? text(el, 'name');
 }
 
+// The list scroll position captured when a rail row is pressed, so it can be
+// restored verbatim after a client navigation (the persisted rail must not move
+// at all — no focus-scroll nudge, no reflow shift).
+let railSavedScroll: number | null = null;
+
+/**
+ * The rail is a persisted island (`transition:persist`), so its server-baked
+ * `aria-current` highlight is stale after a client navigation. Recompute the
+ * selected row from the current URL. Only scroll it into view on the very first
+ * (deep-link) load — never on later navigations, so the list stays completely
+ * still when switching units.
+ */
+function syncCurrentRow(grid: HTMLElement, scrollIntoView: boolean): void {
+  const path = location.pathname.replace(/\/$/, '');
+  let current: HTMLElement | null = null;
+  for (const row of grid.querySelectorAll<HTMLElement>('.unit-card')) {
+    const href = row.getAttribute('href')?.replace(/\/$/, '');
+    if (href && href === path) {
+      row.setAttribute('aria-current', 'page');
+      current = row;
+    } else {
+      row.removeAttribute('aria-current');
+    }
+  }
+  if (scrollIntoView && current) {
+    const gRect = grid.getBoundingClientRect();
+    const rRect = current.getBoundingClientRect();
+    grid.scrollTop += rRect.top - gRect.top - (grid.clientHeight - current.clientHeight) / 2;
+  } else if (!scrollIntoView && railSavedScroll !== null) {
+    // Navigation: pin the list exactly where it was when the row was pressed,
+    // undoing any focus-scroll nudge or reflow so the rail never moves.
+    grid.scrollTop = railSavedScroll;
+  }
+}
+
 export function initUnitsBrowser(): void {
   const grid = document.getElementById('grid');
+  if (!grid) return;
+
+  // Whether this is the first initialization of the persisted rail.
+  const firstInit = grid.getAttribute('data-rail-init') !== '1';
+
+  // Keep the selected-row highlight in sync on every navigation, WITHOUT
+  // scrolling — switching units must leave the list scroll position untouched.
+  // (The one-time deep-link scroll happens after filters apply, below.)
+  syncCurrentRow(grid, false);
+
+  // The rail persists across client navigations, so its elements are NOT
+  // replaced and their listeners survive. Bind them (and hydrate filter state)
+  // only once to avoid stacking duplicate handlers on every navigation.
+  if (!firstInit) return;
+  grid.setAttribute('data-rail-init', '1');
+
   const q = document.getElementById('q') as HTMLInputElement | null;
   const factionBar = document.getElementById('faction-bar');
   const role = document.getElementById('role') as HTMLSelectElement | null;
@@ -116,8 +167,14 @@ export function initUnitsBrowser(): void {
   const selectedTags = new Set<string>();
   const tagButtons = Array.from(tagFilter.querySelectorAll<HTMLButtonElement>('button[data-tag]'));
 
-  // Hydrate controls from URL
-  const params = new URLSearchParams(location.search);
+  // Hydrate controls from the URL on the list page, or from the session-stored
+  // filter state (so the rail stays filtered when navigating to a detail page).
+  const urlParams = new URLSearchParams(location.search);
+  const FILTER_KEYS = ['q', 'faction', 'role', 'sort', 'campaign', 'tags'];
+  const hasUrlFilters = FILTER_KEYS.some((k) => urlParams.has(k));
+  const params = hasUrlFilters
+    ? urlParams
+    : new URLSearchParams(sessionStorage.getItem('bs.units.filters') ?? '');
   if (params.get('q')) q.value = params.get('q') ?? '';
   const urlFaction = params.get('faction');
   if (urlFaction && factionBtns.some((b) => text(b, 'faction') === urlFaction)) {
@@ -150,8 +207,16 @@ export function initUnitsBrowser(): void {
     if (showCampaignInput.checked) p.set('campaign', '1');
     if (selectedTags.size > 0) p.set('tags', [...selectedTags].sort().join(','));
     const qs = p.toString();
-    // Preserve ClientRouter's history.state (nulling it breaks back-nav swaps).
-    history.replaceState(history.state, '', qs ? `?${qs}` : location.pathname);
+    try {
+      sessionStorage.setItem('bs.units.filters', qs);
+    } catch {
+      // sessionStorage may be unavailable; filtering still works in-page.
+    }
+    // Only reflect filters in the URL on the list page, not on a unit's detail
+    // URL. Preserve ClientRouter's history.state (nulling it breaks back-nav).
+    if (location.pathname.replace(/\/$/, '') === '/units') {
+      history.replaceState(history.state, '', qs ? `?${qs}` : location.pathname);
+    }
   }
 
   function compare(a: HTMLElement, b: HTMLElement, key: SortKey): number {
@@ -328,6 +393,16 @@ export function initUnitsBrowser(): void {
 
   const signal = pageSignal('units');
 
+  // Record the list scroll position when a row is pressed, so syncCurrentRow can
+  // restore it verbatim after the client navigation (rail must not move at all).
+  grid.addEventListener(
+    'pointerdown',
+    () => {
+      railSavedScroll = grid.scrollTop;
+    },
+    { signal },
+  );
+
   window.addEventListener(
     'bs:locale-changed',
     () => {
@@ -390,6 +465,9 @@ export function initUnitsBrowser(): void {
   paintTagButtons();
   apply();
   updateAddButtons();
+  // One-time deep-link scroll: centre the current unit's row after filters have
+  // been applied. Only runs on first init (later navigations return early).
+  syncCurrentRow(grid, true);
   // Preload images for a faction that was pre-selected via the URL.
   if (activeFaction) preloadFactionImages(activeFaction);
 }

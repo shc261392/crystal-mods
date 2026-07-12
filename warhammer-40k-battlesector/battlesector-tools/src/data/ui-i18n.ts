@@ -145,6 +145,7 @@ const rawUiI18n = {
     'units.filter.allFactions': 'All factions',
     'units.filter.allRoles': 'All roles',
     'units.empty.noMatches': 'No units match your filters.',
+    'units.selectPrompt': 'Select a unit to view its full stats.',
     'units.header.subtitle': 'Browse unit stats, roles, and wargear to plan your next deployment.',
     'units.sort.name': 'Name (A–Z)',
     'units.sort.pointsDesc': 'Points (high→low)',

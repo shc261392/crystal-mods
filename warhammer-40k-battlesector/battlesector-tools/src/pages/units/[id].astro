@@ -3,6 +3,7 @@ import AbilityCard from '../../components/AbilityCard.astro';
 import FieldNotes from '../../components/FieldNotes.astro';
 import StatHexagon from '../../components/StatHexagon.astro';
 import Tooltip from '../../components/Tooltip.astro';
+import UnitRail from '../../components/UnitRail.astro';
 import WeaponStatZone from '../../components/WeaponStatZone.astro';
 import Base from '../../layouts/Base.astro';
 import { getFactionPassive, passiveEffectLines } from '../../lib/abilities';
@@ -172,6 +173,11 @@ const vitals = [
   path={`/units/${unitSlug(unit)}`}
   ogType="article"
 >
+  <div class="lg:grid lg:grid-cols-[minmax(340px,380px)_1fr] lg:gap-5 lg:items-start" data-units-view="detail">
+    <div class="units-rail-col hidden lg:block lg:sticky lg:top-4 lg:h-[calc(100dvh-2rem)]">
+      <UnitRail currentSlug={unitSlug(unit)} />
+    </div>
+    <div class="units-detail-col min-w-0">
   <div class="flex items-center gap-3 mb-5">
     <button type="button" data-back="/units" class="btn btn-ghost btn-sm shrink-0" aria-label="Back to units">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
@@ -443,10 +449,14 @@ const vitals = [
   )}
 
   <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 hidden surface px-4 py-2.5 text-sm font-semibold z-[120]"></div>
+    </div>
+  </div>
 
   <script>
     import { initUnitDetail } from '../../scripts/unit-detail';
+    import { initUnitsBrowser } from '../../scripts/units';
     import { onPageLoad } from '../../scripts/reinit';
     onPageLoad(initUnitDetail);
+    onPageLoad(initUnitsBrowser);
   </script>
 </Base>

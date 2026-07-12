@@ -1,0 +1,78 @@
+---
+import type { Unit } from '../lib/types';
+import { getFactionEmblem, getUnitPortrait } from '../scripts/images';
+
+interface Props {
+  unit: Unit;
+  href: string;
+  current?: boolean;
+  /** Render a "+ Army" quick-add control. */
+  armyAdd?: boolean;
+  dataAttrs?: Record<string, string | number | boolean | null | undefined>;
+}
+
+const { unit, href, current = false, armyAdd = false, dataAttrs = {} } = Astro.props as Props;
+
+const attrs = Object.fromEntries(
+  Object.entries(dataAttrs).filter(([, value]) => value !== undefined && value !== null),
+);
+
+const thumb = getUnitPortrait(unit.name, unit.portrait) ?? getFactionEmblem(unit.faction);
+
+function tierMeta(roleName: string, fallback: string): { bg: string; ink: string } {
+  if (roleName === 'HQ') return { bg: '#d4af37', ink: '#1b1206' };
+  if (roleName === 'Elite') return { bg: '#7e57c2', ink: '#f8f6ff' };
+  if (roleName === 'Heavy Support') return { bg: '#3b82f6', ink: '#f3f8ff' };
+  if (roleName === 'Fast Attack' || roleName === 'Flyer') return { bg: '#22c55e', ink: '#f4fff7' };
+  if (roleName === 'Troop') return { bg: '#dc2626', ink: '#fff6f6' };
+  return { bg: fallback, ink: '#f8f8f8' };
+}
+const tier = tierMeta(unit.roleName, unit.roleColor);
+---
+
+<a
+  href={href}
+  class="unit-card unit-row group relative flex items-center gap-2.5 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] hover:border-[var(--color-border-strong)] px-2 py-1.5 transition-colors aria-[current=page]:border-[var(--color-gold-dim)] aria-[current=page]:bg-[color-mix(in_oklab,var(--color-gold)_12%,transparent)]"
+  aria-current={current ? 'page' : undefined}
+  {...attrs}
+>
+  <span
+    class="w-10 h-10 shrink-0 rounded-md overflow-hidden border border-black/25"
+    style={`background:${tier.bg}; color:${tier.ink}`}
+  >
+    {thumb ? (
+      <img src={thumb} alt="" width="40" height="40" loading="lazy" decoding="async" class="w-full h-full object-cover object-top" />
+    ) : (
+      <span class="w-full h-full grid place-items-center font-black text-sm" aria-hidden="true">{unit.factionName.slice(0, 1)}</span>
+    )}
+  </span>
+
+  <span class="min-w-0 flex-1">
+    <h3 class="text-xs font-semibold leading-tight truncate" data-i18n-unit={unit.id} data-i18n-fallback={unit.name}>{unit.name}</h3>
+    <span class="mt-0.5 flex items-center gap-x-1.5 text-[10px] leading-tight text-[var(--color-faint)]">
+      <span class="truncate" data-i18n-faction={unit.faction} data-i18n-fallback={unit.factionName}>{unit.factionName}</span>
+      <span class="opacity-60 shrink-0" data-i18n-role={unit.role} data-i18n-fallback={unit.roleName}>{unit.roleName}</span>
+    </span>
+  </span>
+
+  <span class="shrink-0 text-right leading-none">
+    <span class="block text-[8px] uppercase tracking-wide text-[var(--color-faint)]">Pts</span>
+    <span class="block text-xs font-black text-[var(--color-gold)] tabular-nums">{unit.pointCost}</span>
+  </span>
+
+  {armyAdd && (
+    <span
+      data-army-add
+      data-army-id={unit.id}
+      data-army-name={unit.name}
+      data-army-points={unit.pointCost}
+      data-army-faction={unit.factionName}
+      role="button"
+      tabindex="0"
+      aria-label={`Add ${unit.name} to army`}
+      class="shrink-0 grid place-items-center w-7 h-7 rounded-md border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-gold)] hover:border-[var(--color-gold)] transition-colors"
+    >
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+    </span>
+  )}
+</a>
