@@ -13,19 +13,22 @@ import Base from '../../layouts/Base.astro';
       <UnitRail />
     </div>
     <div class="units-detail-col hidden lg:block">
-      <div class="surface grid place-items-center min-h-[70vh] text-center p-8">
+      <div data-compare-prompt class="surface grid place-items-center min-h-[70vh] text-center p-8">
         <div>
           <p class="eyebrow mb-2" data-i18n-ui="nav.units">Units</p>
           <p class="text-lg font-semibold text-[var(--color-muted)]" data-i18n-ui="units.selectPrompt">Select a unit to view its full stats.</p>
         </div>
       </div>
+      <div data-compare-panel class="hidden"></div>
     </div>
   </div>
 
   <script>
     import { initUnitsBrowser } from '../../scripts/units';
+    import { initCompareMode } from '../../scripts/compare-mode';
     import { onPageLoad } from '../../scripts/reinit';
     onPageLoad(initUnitsBrowser);
+    onPageLoad(initCompareMode);
   </script>
 </Base>
 

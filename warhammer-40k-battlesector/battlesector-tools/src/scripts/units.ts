@@ -213,9 +213,14 @@ export function initUnitsBrowser(): void {
       // sessionStorage may be unavailable; filtering still works in-page.
     }
     // Only reflect filters in the URL on the list page, not on a unit's detail
-    // URL. Preserve ClientRouter's history.state (nulling it breaks back-nav).
+    // URL. Preserve ClientRouter's history.state (nulling it breaks back-nav)
+    // AND any non-filter params owned by compare mode (compare, ids).
     if (location.pathname.replace(/\/$/, '') === '/units') {
-      history.replaceState(history.state, '', qs ? `?${qs}` : location.pathname);
+      const url = new URLSearchParams(location.search);
+      for (const k of FILTER_KEYS) url.delete(k);
+      for (const [k, v] of p) url.set(k, v);
+      const merged = url.toString();
+      history.replaceState(history.state, '', merged ? `?${merged}` : location.pathname);
     }
   }
 

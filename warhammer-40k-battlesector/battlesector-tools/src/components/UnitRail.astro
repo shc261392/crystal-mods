@@ -81,6 +81,18 @@ function rowAttrs(u: Unit): Record<string, string | number> {
         <span data-i18n-ui="common.filters">Filters</span>
         <span id="filters-count-badge" class="hidden min-w-[1.25rem] h-5 px-1 inline-flex items-center justify-center rounded-full bg-[var(--color-gold)] text-[var(--color-void)] text-[11px] font-bold tabular-nums"></span>
       </button>
+      <button data-compare-toggle type="button" class="shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold border border-[var(--color-border)] text-[var(--color-ink)] hover:border-[var(--color-border-strong)] transition-colors aria-pressed:!border-[var(--color-gold-dim)] aria-pressed:!text-[var(--color-gold)] aria-pressed:bg-[color-mix(in_oklab,var(--color-gold)_14%,transparent)]" aria-pressed="false" title="Compare units">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg>
+        <span data-i18n-ui="nav.compare">Compare</span>
+      </button>
+    </div>
+
+    <!-- Compare selection bar (visible only in compare mode) -->
+    <div data-compare-bar class="hidden mt-2 flex items-center gap-2 rounded-lg border border-[var(--color-gold-dim)] bg-[color-mix(in_oklab,var(--color-gold)_10%,transparent)] px-2.5 py-1.5">
+      <span class="text-xs font-semibold text-[var(--color-gold)]"><span data-compare-count>0</span>/4</span>
+      <span class="text-[11px] text-[var(--color-muted)] flex-1 min-w-0 truncate" data-compare-hint>Click units to compare</span>
+      <button type="button" data-compare-copy class="text-[11px] font-semibold text-[var(--color-gold-dim)] hover:text-[var(--color-gold)]" data-i18n-ui="common.copyLink">Copy link</button>
+      <button type="button" data-compare-clear class="text-[11px] font-semibold text-[var(--color-faint)] hover:text-[var(--color-blood)]" data-i18n-ui="common.clear">Clear</button>
     </div>
 
     <div id="filters-body" class="hidden absolute left-0 right-0 top-full z-40 mt-1 p-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-2xl max-h-[62vh] overflow-y-auto">
@@ -138,6 +150,25 @@ function rowAttrs(u: Unit): Record<string, string | number> {
    */
   main:has([data-units-view]) {
     animation: none !important;
+  }
+
+  /* Compare mode: rail rows become multi-select; selected rows get a gold ring
+     and a check badge (the anchor is `relative`, so ::after positions inside). */
+  body[data-compare-mode] [data-units-rail] .unit-card {
+    cursor: pointer;
+  }
+  body[data-compare-mode] [data-units-rail] .unit-card[data-compare-selected] {
+    border-color: var(--color-gold-dim);
+    background: color-mix(in oklab, var(--color-gold) 16%, transparent);
+  }
+  body[data-compare-mode] [data-units-rail] .unit-card[data-compare-selected]::after {
+    content: '✓';
+    position: absolute;
+    top: 3px;
+    right: 6px;
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--color-gold);
   }
 </style>
 

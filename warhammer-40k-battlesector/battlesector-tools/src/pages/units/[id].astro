@@ -455,8 +455,10 @@ const vitals = [
   <script>
     import { initUnitDetail } from '../../scripts/unit-detail';
     import { initUnitsBrowser } from '../../scripts/units';
+    import { initCompareMode } from '../../scripts/compare-mode';
     import { onPageLoad } from '../../scripts/reinit';
     onPageLoad(initUnitDetail);
     onPageLoad(initUnitsBrowser);
+    onPageLoad(initCompareMode);
   </script>
 </Base>

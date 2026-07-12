@@ -1,43 +1,24 @@
 ---
+// The standalone comparison tool has moved into the Units page (Compare mode).
+// This route now redirects, preserving any shared ?ids= selection.
 import Base from '../layouts/Base.astro';
 ---
 
 <Base
   title="Unit Comparison"
-  description="Compare Warhammer 40,000: Battlesector units side by side. Every stat difference at a glance, shareable by link."
+  description="Compare Warhammer 40,000: Battlesector units side by side, now built into the Units page."
   path="/compare"
 >
-  <header class="mb-6">
-    <p class="eyebrow mb-2" data-i18n-ui="common.tool">Tool</p>
-    <h1 class="text-3xl md:text-4xl font-black" data-i18n-ui="nav.compare">Unit Comparison</h1>
-  </header>
-
-  <div class="surface p-4 mb-4 flex flex-wrap items-end gap-3">
-    <div class="flex-1 min-w-[14rem]">
-      <label class="label block mb-1.5" for="add-unit" data-i18n-ui="compare.addUnit">Add unit</label>
-      <select id="add-unit" class="select"></select>
-    </div>
-    <button id="add-btn" type="button" class="btn btn-primary h-[42px]" data-i18n-ui="common.add">Add</button>
-    <button id="share-btn" type="button" class="btn h-[42px]" data-i18n-ui="common.copyLink">Copy link</button>
-    <button id="clear-btn" type="button" class="btn btn-ghost h-[42px]" data-i18n-ui="common.clear">Clear</button>
+  <div class="surface p-12 text-center text-[var(--color-faint)]">
+    <p data-i18n-ui="compare.redirecting">Redirecting to the Units page…</p>
+    <p class="mt-2"><a href="/units?compare=1" class="text-[var(--color-gold-dim)] hover:text-[var(--color-gold)] font-semibold" data-i18n-ui="nav.units">Units</a></p>
   </div>
-
-  <div id="empty" class="surface p-12 text-center text-[var(--color-faint)]" data-i18n-ui="compare.empty">
-    Add units above to start comparing.
-  </div>
-
-  <div id="compare-wrap" class="hidden overflow-x-auto surface">
-    <table class="w-full border-collapse text-sm">
-      <thead id="compare-head"></thead>
-      <tbody id="compare-body"></tbody>
-    </table>
-  </div>
-
-  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 hidden surface px-4 py-2.5 text-sm font-semibold z-[120]"></div>
 
   <script>
-    import { initCompare } from '../scripts/compare';
-    import { onPageLoad } from '../scripts/reinit';
-    onPageLoad(initCompare);
+    const params = new URLSearchParams(location.search);
+    const ids = params.get('ids');
+    const target = `/units?compare=1${ids ? `&ids=${encodeURIComponent(ids)}` : ''}`;
+    location.replace(target);
   </script>
 </Base>
+
