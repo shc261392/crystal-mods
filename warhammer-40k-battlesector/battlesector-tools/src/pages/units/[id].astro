@@ -248,12 +248,12 @@ const vitals = [
   <!-- Vitals + Stat Index hexagon -->
   <div class="grid gap-4 mt-4 lg:grid-cols-[1fr_300px] items-start">
   <section class="surface p-5 md:p-6">
-    <div class="grid gap-x-6 gap-y-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
+    <div class="grid gap-2.5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
       {vitals.map((v) => (
-        <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] px-3 py-2.5 text-center">
-          <div class="flex items-center justify-center gap-1.5">
+        <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] px-3.5 py-3 text-center">
+          <div class="flex items-center justify-center gap-1">
             {getStatIcon(v.stat) && (
-              <svg class="w-5 h-5 shrink-0" viewBox="0 0 20 20" aria-hidden="true">
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 20 20" aria-hidden="true">
                 <defs>
                   <mask id={`vital-mask-${v.stat}`} maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
                     <image href={getStatIcon(v.stat)!} x="0" y="0" width="20" height="20" preserveAspectRatio="xMidYMid meet" />
