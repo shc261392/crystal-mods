@@ -196,7 +196,7 @@ const totalDmgLatex = katex.renderToString(
     </div>
     <div class="weapons-detail-col min-w-0">
   <div class="flex items-center gap-3 mb-5">
-    <button type="button" data-back="/weapons/" class="btn btn-ghost btn-sm shrink-0" aria-label="Back to weapons">
+    <button type="button" data-back="/weapons/" class="btn btn-ghost btn-sm shrink-0 lg:!hidden" aria-label="Back to weapons">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
       <span data-i18n-ui="common.back">Back</span>
     </button>
@@ -465,7 +465,7 @@ const totalDmgLatex = katex.renderToString(
                         <div class="w-full h-full rounded grid place-items-center font-black text-base" aria-hidden="true">{u.factionName.slice(0, 1)}</div>
                       )}
                     </div>
-                    <span class="font-extrabold text-sm leading-tight line-clamp-2" data-i18n-unit={u.id} data-i18n-fallback={u.name}>{u.name}</span>
+                    <span class="font-extrabold text-sm leading-tight" data-i18n-unit={u.id} data-i18n-fallback={u.name}>{u.name}</span>
                     <span class="text-[11px] leading-tight text-[var(--color-muted)]" data-i18n-faction={u.faction} data-i18n-fallback={u.factionName}>{u.factionName}</span>
                     <span class="text-[11px] font-bold uppercase tracking-wide" style={tierLabelStyle}>{tier.label}</span>
                   </div>

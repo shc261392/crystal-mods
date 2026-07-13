@@ -52,7 +52,7 @@ function rowAttrs(w: Weapon): Record<string, string | number> {
       </button>
     </div>
 
-    <div id="filters-body" class="hidden absolute left-0 right-0 top-full z-40 mt-1 p-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-2xl max-h-[62vh] overflow-y-auto">
+    <div id="filters-body" class="hidden mt-2.5 pt-3 border-t border-[var(--color-border)]">
       <div>
         <label class="label block mb-1.5" for="sort" data-i18n-ui="common.sort">Sort</label>
         <select id="sort" class="select w-full">
@@ -98,9 +98,12 @@ function rowAttrs(w: Weapon): Record<string, string | number> {
       </div>
     </div>
 
-    <div class="mt-2 flex items-center justify-between">
-      <p id="count" class="text-xs text-[var(--color-faint)]"></p>
-      <button id="reset" type="button" class="text-xs font-semibold text-[var(--color-gold-dim)] hover:text-[var(--color-gold)]" data-i18n-ui="common.resetFilters">Reset filters</button>
+    <div class="mt-2 flex items-center justify-between gap-2.5 min-w-0">
+      <p id="count" class="text-xs text-[var(--color-faint)] truncate"></p>
+      <div class="flex items-center gap-2.5 shrink-0">
+        <button id="copy-filters" type="button" class="text-xs font-semibold text-[var(--color-gold-dim)] hover:text-[var(--color-gold)]" data-i18n-ui="common.copyLink">Copy link</button>
+        <button id="reset" type="button" class="text-xs font-semibold text-[var(--color-gold-dim)] hover:text-[var(--color-gold)]" data-i18n-ui="common.resetFilters">Reset filters</button>
+      </div>
     </div>
   </div>
 

@@ -16,7 +16,7 @@ type SortKey =
   | 'move-asc';
 
 import { addToArmyLocked, getActiveArmyFaction } from './army-store';
-import { applyI18n, roleName, tf } from './i18n';
+import { applyI18n, roleName, t, tf } from './i18n';
 import { pageSignal } from './reinit';
 
 const DATASET_TAGS_KEY: keyof DOMStringMap = 'tags';
@@ -63,6 +63,40 @@ function displayName(el: HTMLElement): string {
 // at all — no focus-scroll nudge, no reflow shift).
 let railSavedScroll: number | null = null;
 
+// Filter params owned by the units browser. Kept at module scope so the URL
+// reflector below can run outside the main initializer closure.
+const UNITS_FILTER_KEYS = ['q', 'faction', 'role', 'sort', 'campaign', 'tags'];
+
+/** True on the units list page or any unit detail page (`/units` or `/units/…`). */
+function inUnitsArea(): boolean {
+  const path = location.pathname.replace(/\/$/, '');
+  return path === '/units' || path.startsWith('/units/');
+}
+
+/**
+ * Reflect the active filters (stored in sessionStorage) in the URL — on the
+ * list page AND on a unit's detail page. This keeps the filter shareable when a
+ * unit is selected (e.g. /units/2000-…?faction=Necrons) and reapplies it after
+ * each client navigation, while preserving any non-filter params (compare/ids).
+ */
+function reflectFiltersInUrl(): void {
+  if (!inUnitsArea()) return;
+  let stored = '';
+  try {
+    stored = sessionStorage.getItem('bs.units.filters') ?? '';
+  } catch {
+    stored = '';
+  }
+  const params = new URLSearchParams(location.search);
+  for (const k of UNITS_FILTER_KEYS) params.delete(k);
+  for (const [k, v] of new URLSearchParams(stored)) params.set(k, v);
+  const qs = params.toString();
+  const nextSearch = qs ? `?${qs}` : '';
+  if (location.search !== nextSearch) {
+    history.replaceState(history.state, '', `${location.pathname}${nextSearch}`);
+  }
+}
+
 /**
  * The rail is a persisted island (`transition:persist`), so its server-baked
  * `aria-current` highlight is stale after a client navigation. Recompute the
@@ -82,6 +116,10 @@ function syncCurrentRow(grid: HTMLElement, scrollIntoView: boolean): void {
       row.removeAttribute('aria-current');
     }
   }
+  // Keep the filter query on the URL after every navigation (incl. detail
+  // pages). Skipped on the very first load — see initUnitsBrowser, which runs
+  // this only after filter state has been hydrated (otherwise it would wipe a
+  // deep-linked ?faction=… before it is read).
   if (scrollIntoView && current) {
     const gRect = grid.getBoundingClientRect();
     const rRect = current.getBoundingClientRect();
@@ -108,7 +146,12 @@ export function initUnitsBrowser(): void {
   // The rail persists across client navigations, so its elements are NOT
   // replaced and their listeners survive. Bind them (and hydrate filter state)
   // only once to avoid stacking duplicate handlers on every navigation.
-  if (!firstInit) return;
+  if (!firstInit) {
+    // On a client navigation (e.g. selecting a unit), carry the already-loaded
+    // filters onto the new URL so the filter stays shareable on detail pages.
+    reflectFiltersInUrl();
+    return;
+  }
   grid.setAttribute('data-rail-init', '1');
 
   const q = document.getElementById('q') as HTMLInputElement | null;
@@ -212,16 +255,10 @@ export function initUnitsBrowser(): void {
     } catch {
       // sessionStorage may be unavailable; filtering still works in-page.
     }
-    // Only reflect filters in the URL on the list page, not on a unit's detail
-    // URL. Preserve ClientRouter's history.state (nulling it breaks back-nav)
-    // AND any non-filter params owned by compare mode (compare, ids).
-    if (location.pathname.replace(/\/$/, '') === '/units') {
-      const url = new URLSearchParams(location.search);
-      for (const k of FILTER_KEYS) url.delete(k);
-      for (const [k, v] of p) url.set(k, v);
-      const merged = url.toString();
-      history.replaceState(history.state, '', merged ? `?${merged}` : location.pathname);
-    }
+    // Reflect the filters in the URL — on the list page AND on a unit's detail
+    // page — so the filter is always shareable. Preserves history.state and any
+    // non-filter params (compare/ids).
+    reflectFiltersInUrl();
   }
 
   function compare(a: HTMLElement, b: HTMLElement, key: SortKey): number {
@@ -404,6 +441,36 @@ export function initUnitsBrowser(): void {
     'pointerdown',
     () => {
       railSavedScroll = grid.scrollTop;
+    },
+    { signal },
+  );
+
+  // Copy a shareable link that reproduces the current filters. Uses the same
+  // filter query the URL/sessionStorage carry, so it works from a detail page
+  // too (where the address bar shows the unit, not the filters).
+  document.getElementById('copy-filters')?.addEventListener(
+    'click',
+    async () => {
+      // On the list page, copy exactly what's in the address bar (the live
+      // filter query). On a detail page, rebuild it from the stored filters.
+      let qs = '';
+      const onList = location.pathname.replace(/\/$/, '') === '/units';
+      if (onList) {
+        qs = location.search.replace(/^\?/, '');
+      } else {
+        try {
+          qs = sessionStorage.getItem('bs.units.filters') ?? '';
+        } catch {
+          qs = '';
+        }
+      }
+      const url = `${location.origin}/units${qs ? `?${qs}` : ''}`;
+      try {
+        await navigator.clipboard.writeText(url);
+        showArmyToast(t('toast.linkCopied'));
+      } catch {
+        showArmyToast(url);
+      }
     },
     { signal },
   );

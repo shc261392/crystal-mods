@@ -1,6 +1,6 @@
 // Client-side filtering/sorting for the weapons browser.
 
-import { applyI18n, tf } from './i18n';
+import { applyI18n, t, tf } from './i18n';
 import { pageSignal } from './reinit';
 
 type SortKey =
@@ -31,6 +31,39 @@ function displayName(el: HTMLElement): string {
 // The list scroll captured on row press, restored after a client navigation so
 // the persisted rail never moves (no focus-scroll nudge / reflow shift).
 let railSavedScroll: number | null = null;
+
+// Filter params owned by the weapons browser (module scope so the URL reflector
+// can run outside the main initializer closure).
+const WEAPONS_FILTER_KEYS = ['q', 'sort', 'tags'];
+
+/** True on the weapons list page or any weapon detail page. */
+function inWeaponsArea(): boolean {
+  const path = location.pathname.replace(/\/$/, '');
+  return path === '/weapons' || path.startsWith('/weapons/');
+}
+
+/**
+ * Reflect the active filters (stored in sessionStorage) in the URL — on the
+ * list page AND on a weapon's detail page — so the filter stays shareable when a
+ * weapon is selected, and reapplies after each client navigation.
+ */
+function reflectFiltersInUrl(): void {
+  if (!inWeaponsArea()) return;
+  let stored = '';
+  try {
+    stored = sessionStorage.getItem('bs.weapons.filters') ?? '';
+  } catch {
+    stored = '';
+  }
+  const params = new URLSearchParams(location.search);
+  for (const k of WEAPONS_FILTER_KEYS) params.delete(k);
+  for (const [k, v] of new URLSearchParams(stored)) params.set(k, v);
+  const qs = params.toString();
+  const nextSearch = qs ? `?${qs}` : '';
+  if (location.search !== nextSearch) {
+    history.replaceState(history.state, '', `${location.pathname}${nextSearch}`);
+  }
+}
 
 /**
  * The rail is a persisted island (`transition:persist`), so its server-baked
@@ -71,7 +104,12 @@ export function initWeaponsBrowser(): void {
 
   // Persisted rail: elements (and their listeners) survive navigations — bind
   // once and hydrate filter state once.
-  if (!firstInit) return;
+  if (!firstInit) {
+    // Carry the already-loaded filters onto the new URL so the filter stays
+    // shareable on weapon detail pages.
+    reflectFiltersInUrl();
+    return;
+  }
   grid.setAttribute('data-rail-init', '1');
 
   const q = document.getElementById('q') as HTMLInputElement | null;
@@ -116,11 +154,9 @@ export function initWeaponsBrowser(): void {
     } catch {
       // sessionStorage may be unavailable; filtering still works in-page.
     }
-    // Only reflect filters in the URL on the list page, not on a weapon's detail
-    // URL. Preserve ClientRouter's history.state (nulling it breaks back-nav).
-    if (location.pathname.replace(/\/$/, '') === '/weapons') {
-      history.replaceState(history.state, '', qs ? `?${qs}` : location.pathname);
-    }
+    // Reflect the filters in the URL — on the list page AND on a weapon's detail
+    // page — so the filter is always shareable. Preserves history.state.
+    reflectFiltersInUrl();
   }
 
   function updateFilterBadge(): void {
@@ -245,6 +281,45 @@ export function initWeaponsBrowser(): void {
     'pointerdown',
     () => {
       railSavedScroll = grid.scrollTop;
+    },
+    { signal },
+  );
+
+  // Copy a shareable link that reproduces the current filters (works from a
+  // weapon detail page too, via the session-stored filter query).
+  document.getElementById('copy-filters')?.addEventListener(
+    'click',
+    async () => {
+      // On the list page, copy the live address-bar query; on a detail page,
+      // rebuild from the stored filters.
+      let qs = '';
+      const onList = location.pathname.replace(/\/$/, '') === '/weapons';
+      if (onList) {
+        qs = location.search.replace(/^\?/, '');
+      } else {
+        try {
+          qs = sessionStorage.getItem('bs.weapons.filters') ?? '';
+        } catch {
+          qs = '';
+        }
+      }
+      const url = `${location.origin}/weapons${qs ? `?${qs}` : ''}`;
+      let toast = document.getElementById('weapons-toast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'weapons-toast';
+        toast.className =
+          'fixed bottom-24 lg:bottom-6 left-1/2 -translate-x-1/2 z-[140] px-4 py-2 rounded-lg bg-[var(--color-elevated)] border border-[var(--color-border)] text-sm font-semibold shadow-2xl transition-opacity duration-200';
+        document.body.appendChild(toast);
+      }
+      try {
+        await navigator.clipboard.writeText(url);
+        toast.textContent = t('toast.linkCopied');
+      } catch {
+        toast.textContent = url;
+      }
+      toast.classList.remove('opacity-0');
+      window.setTimeout(() => toast?.classList.add('opacity-0'), 1800);
     },
     { signal },
   );

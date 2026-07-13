@@ -41,9 +41,9 @@ const hits = weapon.numAttacks * Math.max(1, weapon.shotsPerAttack || 1);
   </span>
 
   <span class="min-w-0 flex-1">
-    <h3 class="text-xs font-semibold leading-tight truncate" data-i18n-weapon={weapon.id} data-i18n-fallback={weapon.name}>{weapon.name}</h3>
-    <span class="mt-0.5 flex items-center gap-x-1.5 text-[10px] leading-tight text-[var(--color-faint)]">
-      <span class="truncate" style={`color:${wType.color}`} data-i18n-ui={wType.i18nKey}>{wType.label}</span>
+    <h3 class="text-xs font-semibold leading-tight" data-i18n-weapon={weapon.id} data-i18n-fallback={weapon.name}>{weapon.name}</h3>
+    <span class="mt-0.5 flex flex-wrap items-center gap-x-1.5 text-[10px] leading-tight text-[var(--color-faint)]">
+      <span style={`color:${wType.color}`} data-i18n-ui={wType.i18nKey}>{wType.label}</span>
       <span class="opacity-60 shrink-0 tabular-nums">{dmg.min}–{dmg.max}{hits > 1 ? ` ×${hits}` : ''}</span>
     </span>
   </span>

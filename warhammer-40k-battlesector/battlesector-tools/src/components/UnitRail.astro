@@ -56,52 +56,59 @@ function rowAttrs(u: Unit): Record<string, string | number> {
 
 <div class="flex flex-col lg:h-full" transition:persist="units-rail" data-units-rail>
   <!-- Controls -->
-  <div class="surface p-3 shrink-0 relative">
-    <div id="faction-bar" class="flex flex-wrap gap-1.5 mb-2" role="tablist" aria-label="Faction">
-      <button type="button" class="faction-btn shrink-0 inline-flex items-center gap-1.5 px-2 py-1 rounded-lg text-xs font-semibold border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:border-[var(--color-border-strong)] whitespace-nowrap transition-colors" data-faction="" data-faction-id="" role="tab">
-        All
-      </button>
-      {factionButtons.map((f) => (
-        <button type="button" class="faction-btn shrink-0 inline-flex items-center gap-1.5 px-2 py-1 rounded-lg text-xs font-semibold border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:border-[var(--color-border-strong)] whitespace-nowrap transition-colors" data-faction={f.name} data-faction-id={f.id} role="tab">
-          {getFactionEmblem(f.id) && (
-            <img src={getFactionEmblem(f.id)} alt="" width="14" height="14" loading="lazy" class="w-3.5 h-3.5 object-contain shrink-0" />
-          )}
-          <span data-i18n-faction={f.id} data-i18n-fallback={f.name}>{f.name}</span>
-        </button>
-      ))}
-    </div>
-
-    <div class="flex items-end gap-2">
+  <div class="surface p-3 shrink-0">
+    <!-- Search + Compare toggle -->
+    <div class="flex items-center gap-2">
       <div class="flex-1 min-w-0">
-        <label class="label mb-1.5 sr-only" for="q" data-i18n-ui="common.search">Search</label>
+        <label class="sr-only" for="q" data-i18n-ui="common.search">Search</label>
         <input id="q" class="input" type="search" placeholder="Search by name…" data-i18n-ui-placeholder="common.searchPlaceholder" autocomplete="off" />
       </div>
-      <button id="filters-toggle" type="button" class="shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold border border-[var(--color-border)] text-[var(--color-ink)] hover:border-[var(--color-border-strong)] transition-colors" aria-expanded="false" aria-controls="filters-body">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
-        <span data-i18n-ui="common.filters">Filters</span>
-        <span id="filters-count-badge" class="hidden min-w-[1.25rem] h-5 px-1 inline-flex items-center justify-center rounded-full bg-[var(--color-gold)] text-[var(--color-void)] text-[11px] font-bold tabular-nums"></span>
-      </button>
-      <button data-compare-toggle type="button" class="shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold border border-[var(--color-border)] text-[var(--color-ink)] hover:border-[var(--color-border-strong)] transition-colors aria-pressed:!border-[var(--color-gold-dim)] aria-pressed:!text-[var(--color-gold)] aria-pressed:bg-[color-mix(in_oklab,var(--color-gold)_14%,transparent)]" aria-pressed="false" title="Compare units">
+      <button data-compare-toggle type="button" class="shrink-0 inline-flex items-center gap-1.5 h-9 px-3 rounded-lg text-sm font-semibold border border-[var(--color-border)] text-[var(--color-ink)] hover:border-[var(--color-border-strong)] transition-colors aria-pressed:!border-[var(--color-gold-dim)] aria-pressed:!text-[var(--color-gold)] aria-pressed:bg-[color-mix(in_oklab,var(--color-gold)_14%,transparent)]" aria-pressed="false" title="Compare units">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg>
         <span data-i18n-ui="nav.compare">Compare</span>
       </button>
     </div>
 
+    <!-- Faction filter: aligned 3-column grid -->
+    <div id="faction-bar" class="mt-2.5 grid grid-cols-3 gap-1.5" role="tablist" aria-label="Faction">
+      <button type="button" class="faction-btn col-span-3 inline-flex items-center justify-center gap-1.5 px-2 py-1.5 rounded-lg text-xs font-semibold border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:border-[var(--color-border-strong)] transition-colors" data-faction="" data-faction-id="" role="tab">
+        <span data-i18n-ui="units.filter.allFactions">All factions</span>
+      </button>
+      {factionButtons.map((f) => (
+        <button type="button" class="faction-btn w-full min-w-0 flex flex-col items-center justify-start gap-1 px-1 py-2 rounded-lg text-[11px] font-semibold border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-ink)] hover:border-[var(--color-border-strong)] transition-colors text-center leading-tight" data-faction={f.name} data-faction-id={f.id} role="tab">
+          {getFactionEmblem(f.id) && (
+            <img src={getFactionEmblem(f.id)} alt="" width="20" height="20" loading="lazy" class="w-5 h-5 object-contain shrink-0" />
+          )}
+          <span class="leading-tight" data-i18n-faction={f.id} data-i18n-fallback={f.name}>{f.name}</span>
+        </button>
+      ))}
+    </div>
+
     <!-- Compare selection bar (visible only in compare mode) -->
-    <div data-compare-bar class="hidden mt-2 flex items-center gap-2 rounded-lg border border-[var(--color-gold-dim)] bg-[color-mix(in_oklab,var(--color-gold)_10%,transparent)] px-2.5 py-1.5">
+    <div data-compare-bar class="hidden mt-2.5 flex items-center gap-2 rounded-lg border border-[var(--color-gold-dim)] bg-[color-mix(in_oklab,var(--color-gold)_10%,transparent)] px-2.5 py-1.5">
       <span class="text-xs font-semibold text-[var(--color-gold)]"><span data-compare-count>0</span>/4</span>
       <span class="text-[11px] text-[var(--color-muted)] flex-1 min-w-0 truncate" data-compare-hint>Click units to compare</span>
       <button type="button" data-compare-copy class="text-[11px] font-semibold text-[var(--color-gold-dim)] hover:text-[var(--color-gold)]" data-i18n-ui="common.copyLink">Copy link</button>
       <button type="button" data-compare-clear class="text-[11px] font-semibold text-[var(--color-faint)] hover:text-[var(--color-blood)]" data-i18n-ui="common.clear">Clear</button>
     </div>
 
-    <div id="filters-body" class="hidden absolute left-0 right-0 top-full z-40 mt-1 p-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-2xl max-h-[62vh] overflow-y-auto">
-      <UnitFilterFields roleId="role" sortId="sort" campaignId="show-campaign-units-browser" tagFilterId="unit-tag-filter" />
+    <!-- Secondary filters toggle + count/reset -->
+    <div class="mt-2.5 flex items-center justify-between gap-2">
+      <button id="filters-toggle" type="button" class="shrink-0 inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold border border-[var(--color-border)] text-[var(--color-ink)] hover:border-[var(--color-border-strong)] transition-colors aria-expanded:!border-[var(--color-gold-dim)] aria-expanded:!text-[var(--color-gold)]" aria-expanded="false" aria-controls="filters-body">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+        <span data-i18n-ui="common.filters">Filters</span>
+        <span id="filters-count-badge" class="hidden min-w-[1.125rem] h-4 px-1 inline-flex items-center justify-center rounded-full bg-[var(--color-gold)] text-[var(--color-void)] text-[10px] font-bold tabular-nums"></span>
+      </button>
+      <div class="flex items-center gap-2.5 min-w-0">
+        <p id="count" class="text-xs text-[var(--color-faint)] truncate"></p>
+        <button id="copy-filters" type="button" class="shrink-0 text-xs font-semibold text-[var(--color-gold-dim)] hover:text-[var(--color-gold)]" data-i18n-ui="common.copyLink">Copy link</button>
+        <button id="reset" type="button" class="shrink-0 text-xs font-semibold text-[var(--color-gold-dim)] hover:text-[var(--color-gold)]" data-i18n-ui="common.resetFilters">Reset filters</button>
+      </div>
     </div>
 
-    <div class="mt-2 flex items-center justify-between">
-      <p id="count" class="text-xs text-[var(--color-faint)]"></p>
-      <button id="reset" type="button" class="text-xs font-semibold text-[var(--color-gold-dim)] hover:text-[var(--color-gold)]" data-i18n-ui="common.resetFilters">Reset filters</button>
+    <!-- Inline secondary filters (expand in place — no overlay/z-index issues) -->
+    <div id="filters-body" class="hidden mt-2.5 pt-3 border-t border-[var(--color-border)]">
+      <UnitFilterFields roleId="role" sortId="sort" campaignId="show-campaign-units-browser" tagFilterId="unit-tag-filter" />
     </div>
   </div>
 

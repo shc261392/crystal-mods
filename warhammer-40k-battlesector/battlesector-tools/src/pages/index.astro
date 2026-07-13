@@ -183,7 +183,7 @@ const verifiedCount = factionStatus.filter((s) => s.status === 'verified').lengt
               <div class="w-10 h-10 rounded-lg grid place-items-center font-black shrink-0 border border-[var(--color-border)]" aria-hidden="true">{f.name.slice(0, 1)}</div>
             )}
             <div class="min-w-0 flex-1">
-              <p class="font-semibold truncate text-sm" data-i18n-faction={f.id} data-i18n-fallback={f.name}>{f.name}</p>
+              <p class="font-semibold text-sm" data-i18n-faction={f.id} data-i18n-fallback={f.name}>{f.name}</p>
               <p class="text-xs font-semibold flex items-center gap-1" style={`color:${meta.color}`}>
                 <span aria-hidden="true">{meta.icon}</span>
                 <span data-i18n-ui={meta.labelKey}>{meta.label}</span>
@@ -237,8 +237,8 @@ const verifiedCount = factionStatus.filter((s) => s.status === 'verified').lengt
             <div class="w-11 h-11 rounded-lg grid place-items-center font-black shrink-0 border border-[var(--color-border)]" style={`background:${color}1f; color:${color}`} aria-hidden="true">{f.name.slice(0, 1)}</div>
           )}
           <div class="min-w-0">
-            <p class="font-semibold truncate text-sm" data-i18n-faction={f.id} data-i18n-fallback={f.name}>{f.name}</p>
-            <p class="text-xs text-[var(--color-faint)] truncate">{f.slogan}</p>
+            <p class="font-semibold text-sm" data-i18n-faction={f.id} data-i18n-fallback={f.name}>{f.name}</p>
+            <p class="text-xs text-[var(--color-faint)]">{f.slogan}</p>
           </div>
         </a>
         );
@@ -257,7 +257,7 @@ const verifiedCount = factionStatus.filter((s) => s.status === 'verified').lengt
         <a href={`/units/${u.id}-${u.name.toLowerCase().replace(/['’]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')}`} class="surface surface-hover p-4 flex items-center gap-3">
           <span class="w-1 h-12 rounded-full shrink-0" style={`background:${u.roleColor}`}></span>
           <div class="min-w-0 flex-1">
-            <p class="font-semibold truncate" data-i18n-unit={u.id} data-i18n-fallback={u.name}>{u.name}</p>
+            <p class="font-semibold" data-i18n-unit={u.id} data-i18n-fallback={u.name}>{u.name}</p>
             <p class="text-xs text-[var(--color-faint)] flex flex-wrap items-center gap-x-2"><span data-i18n-faction={u.faction} data-i18n-fallback={u.factionName}>{u.factionName}</span><span class="opacity-60" data-i18n-role={u.role} data-i18n-fallback={u.roleName}>{u.roleName}</span></p>
           </div>
           <div class="text-right shrink-0">

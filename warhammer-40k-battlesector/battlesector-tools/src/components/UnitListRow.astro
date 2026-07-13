@@ -48,9 +48,9 @@ const tier = tierMeta(unit.roleName, unit.roleColor);
   </span>
 
   <span class="min-w-0 flex-1">
-    <h3 class="text-xs font-semibold leading-tight truncate" data-i18n-unit={unit.id} data-i18n-fallback={unit.name}>{unit.name}</h3>
-    <span class="mt-0.5 flex items-center gap-x-1.5 text-[10px] leading-tight text-[var(--color-faint)]">
-      <span class="truncate" data-i18n-faction={unit.faction} data-i18n-fallback={unit.factionName}>{unit.factionName}</span>
+    <h3 class="text-xs font-semibold leading-tight" data-i18n-unit={unit.id} data-i18n-fallback={unit.name}>{unit.name}</h3>
+    <span class="mt-0.5 flex flex-wrap items-center gap-x-1.5 text-[10px] leading-tight text-[var(--color-faint)]">
+      <span data-i18n-faction={unit.faction} data-i18n-fallback={unit.factionName}>{unit.factionName}</span>
       <span class="opacity-60 shrink-0" data-i18n-role={unit.role} data-i18n-fallback={unit.roleName}>{unit.roleName}</span>
     </span>
   </span>
