@@ -41,6 +41,8 @@ function rowAttrs(u: Unit): Record<string, string | number> {
     'data-hp': u.totalHealth,
     'data-armor': u.armor,
     'data-move': u.maxMovementPoints,
+    'data-dodge': u.evasion,
+    'data-ap': u.maxActionPoints,
     'data-tags': [
       u.roleName === 'HQ' ? 'hq' : null,
       u.isLarge ? 'large' : null,

@@ -5,6 +5,8 @@ import { pageSignal } from './reinit';
 
 type SortKey =
   | 'name'
+  | 'total-desc'
+  | 'total-asc'
   | 'damage-desc'
   | 'damage-asc'
   | 'acc-desc'
@@ -34,7 +36,7 @@ let railSavedScroll: number | null = null;
 
 // Filter params owned by the weapons browser (module scope so the URL reflector
 // can run outside the main initializer closure).
-const WEAPONS_FILTER_KEYS = ['q', 'sort', 'tags'];
+const WEAPONS_FILTER_KEYS = ['q', 'sort', 'tags', 'faction'];
 
 /** True on the weapons list page or any weapon detail page. */
 function inWeaponsArea(): boolean {
@@ -115,6 +117,8 @@ export function initWeaponsBrowser(): void {
   const q = document.getElementById('q') as HTMLInputElement | null;
   const sort = document.getElementById('sort') as HTMLSelectElement | null;
   const tagFilter = document.getElementById('weapon-tag-filter');
+  const typeFilter = document.getElementById('weapon-type-filter');
+  const factionBar = document.getElementById('faction-bar');
   const count = document.getElementById('count');
   const empty = document.getElementById('empty');
   const reset = document.getElementById('reset');
@@ -125,18 +129,33 @@ export function initWeaponsBrowser(): void {
 
   const cards = Array.from(grid.querySelectorAll<HTMLElement>('.weapon-card'));
   const selectedTags = new Set<string>();
-  const tagButtons = Array.from(tagFilter.querySelectorAll<HTMLButtonElement>('button[data-tag]'));
+  // Tag + type chips share the same data-tag filtering; collect both groups.
+  const tagContainers = [typeFilter, tagFilter].filter((el): el is HTMLElement => el !== null);
+  const tagButtons = tagContainers.flatMap((c) =>
+    Array.from(c.querySelectorAll<HTMLButtonElement>('button[data-tag]')),
+  );
+  const factionBtns = factionBar
+    ? Array.from(factionBar.querySelectorAll<HTMLButtonElement>('.faction-btn'))
+    : [];
+  let activeFactionId = '';
+
+  const ACTIVE = [
+    '!text-[var(--color-gold)]',
+    '!border-[var(--color-gold-dim)]',
+    'bg-[color-mix(in_oklab,var(--color-gold)_14%,transparent)]',
+  ];
 
   // Hydrate controls from the URL on the list page, or from the session-stored
   // filter state (so the rail stays filtered when navigating to a detail page).
   const urlParams = new URLSearchParams(location.search);
-  const FILTER_KEYS = ['q', 'sort', 'tags'];
+  const FILTER_KEYS = ['q', 'sort', 'tags', 'faction'];
   const hasUrlFilters = FILTER_KEYS.some((k) => urlParams.has(k));
   const params = hasUrlFilters
     ? urlParams
     : new URLSearchParams(sessionStorage.getItem('bs.weapons.filters') ?? '');
   if (params.get('q')) q.value = params.get('q') ?? '';
   if (params.get('sort')) sort.value = params.get('sort') ?? 'name';
+  if (params.get('faction')) activeFactionId = params.get('faction') ?? '';
   const tags = (params.get('tags') ?? '')
     .split(',')
     .map((t) => t.trim())
@@ -147,6 +166,7 @@ export function initWeaponsBrowser(): void {
     const p = new URLSearchParams();
     if (q?.value) p.set('q', q.value);
     if (sort && sort.value !== 'name') p.set('sort', sort.value);
+    if (activeFactionId) p.set('faction', activeFactionId);
     if (selectedTags.size > 0) p.set('tags', [...selectedTags].sort().join(','));
     const qs = p.toString();
     try {
@@ -161,13 +181,26 @@ export function initWeaponsBrowser(): void {
 
   function updateFilterBadge(): void {
     if (!filtersCountBadge) return;
-    const active = selectedTags.size + (sort && sort.value !== 'name' ? 1 : 0);
+    const active =
+      selectedTags.size + (sort && sort.value !== 'name' ? 1 : 0) + (activeFactionId ? 1 : 0);
     filtersCountBadge.textContent = String(active);
     filtersCountBadge.classList.toggle('hidden', active === 0);
   }
 
+  function paintFactionButtons(): void {
+    for (const b of factionBtns) {
+      const on = (b.getAttribute('data-faction-id') ?? '') === activeFactionId;
+      for (const c of ACTIVE) b.classList.toggle(c, on);
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+    }
+  }
+
   function compare(a: HTMLElement, b: HTMLElement, key: SortKey): number {
     switch (key) {
+      case 'total-desc':
+        return num(b, 'total') - num(a, 'total');
+      case 'total-asc':
+        return num(a, 'total') - num(b, 'total');
       case 'damage-desc':
         return num(b, 'damage') - num(a, 'damage');
       case 'damage-asc':
@@ -215,8 +248,16 @@ export function initWeaponsBrowser(): void {
           .map((t) => t.trim())
           .filter(Boolean),
       );
+      const cardFactions = new Set(
+        text(card, 'factionIds')
+          .split(',')
+          .map((f) => f.trim())
+          .filter(Boolean),
+      );
       const matchesTags = [...selectedTags].every((tag) => cardTags.has(tag));
-      const matches = (!term || displayName(card).toLowerCase().includes(term)) && matchesTags;
+      const matchesFaction = !activeFactionId || cardFactions.has(activeFactionId);
+      const matches =
+        (!term || displayName(card).toLowerCase().includes(term)) && matchesTags && matchesFaction;
       card.style.display = matches ? '' : 'none';
       if (matches) visible++;
     }
@@ -246,22 +287,34 @@ export function initWeaponsBrowser(): void {
     q.value = '';
     sort.value = 'name';
     selectedTags.clear();
+    activeFactionId = '';
     paintTagButtons();
+    paintFactionButtons();
     apply();
   });
 
-  tagFilter.addEventListener('click', (event) => {
-    const btn = (event.target as HTMLElement).closest(
-      'button[data-tag]',
-    ) as HTMLButtonElement | null;
-    if (!btn) return;
-    const tag = btn.getAttribute('data-tag');
-    if (!tag) return;
-    if (selectedTags.has(tag)) selectedTags.delete(tag);
-    else selectedTags.add(tag);
-    paintTagButtons();
-    apply();
-  });
+  for (const container of tagContainers) {
+    container.addEventListener('click', (event) => {
+      const btn = (event.target as HTMLElement).closest(
+        'button[data-tag]',
+      ) as HTMLButtonElement | null;
+      if (!btn) return;
+      const tag = btn.getAttribute('data-tag');
+      if (!tag) return;
+      if (selectedTags.has(tag)) selectedTags.delete(tag);
+      else selectedTags.add(tag);
+      paintTagButtons();
+      apply();
+    });
+  }
+
+  for (const b of factionBtns) {
+    b.addEventListener('click', () => {
+      activeFactionId = b.getAttribute('data-faction-id') ?? '';
+      paintFactionButtons();
+      apply();
+    });
+  }
 
   // Collapsible filter body (so the narrow rail isn't cluttered).
   if (filtersToggle && filtersBody) {
@@ -335,6 +388,7 @@ export function initWeaponsBrowser(): void {
 
   applyI18n();
   paintTagButtons();
+  paintFactionButtons();
   apply();
   // One-time deep-link scroll: centre the current weapon's row after filters.
   syncCurrentRow(grid, true);

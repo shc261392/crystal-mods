@@ -12,6 +12,10 @@ type SortKey =
   | 'hp-asc'
   | 'armor-desc'
   | 'armor-asc'
+  | 'dodge-desc'
+  | 'dodge-asc'
+  | 'ap-desc'
+  | 'ap-asc'
   | 'move-desc'
   | 'move-asc';
 
@@ -275,6 +279,14 @@ export function initUnitsBrowser(): void {
         return num(b, 'armor') - num(a, 'armor');
       case 'armor-asc':
         return num(a, 'armor') - num(b, 'armor');
+      case 'dodge-desc':
+        return num(b, 'dodge') - num(a, 'dodge');
+      case 'dodge-asc':
+        return num(a, 'dodge') - num(b, 'dodge');
+      case 'ap-desc':
+        return num(b, 'ap') - num(a, 'ap');
+      case 'ap-asc':
+        return num(a, 'ap') - num(b, 'ap');
       case 'move-desc':
         return num(b, 'move') - num(a, 'move');
       case 'move-asc':
