@@ -2,6 +2,7 @@
 // weapon detail page, unit loadout, and the weapon stat zone so the label,
 // colour, and i18n key stay consistent everywhere.
 
+import { critChance, damagePerHitAfterArmor, expectedDamagePerHit, grazeChance } from './combat';
 import type { Weapon, WeaponType } from './types';
 
 interface WeaponTypeMeta {
@@ -69,3 +70,32 @@ export function weaponTypeMeta(
 }
 
 export const WEAPON_TYPES: WeaponType[] = ['melee', 'ballistic', 'flame', 'artillery'];
+
+/**
+ * Expected total damage a weapon deals to a single model of the given armour
+ * value, across a full attack (all shots × accuracy × per-hit damage after
+ * armour, crit and graze). Mirrors the armour table on the weapon detail page,
+ * so sorting by A3/A6/A9 matches the numbers shown there.
+ */
+export function totalDamageVsArmor(
+  weapon: Pick<
+    Weapon,
+    | 'damage'
+    | 'armorPiercing'
+    | 'accuracy'
+    | 'isMelee'
+    | 'numAttacks'
+    | 'shotsPerAttack'
+    | 'burstSize'
+  >,
+  armor: number,
+): number {
+  const crit = critChance(0, weapon.armorPiercing, armor);
+  const graze = grazeChance(weapon.armorPiercing, armor);
+  const avgAfterArmor = damagePerHitAfterArmor(weapon.damage, armor, weapon.armorPiercing);
+  const avgDamage = expectedDamagePerHit(avgAfterArmor, crit, graze);
+  const baseAcc = weapon.isMelee && weapon.accuracy <= 0 ? 80 : weapon.accuracy;
+  const totalShots = weapon.numAttacks * weapon.shotsPerAttack * weapon.burstSize;
+  const expectedHits = (totalShots * baseAcc) / 100;
+  return expectedHits * avgDamage;
+}

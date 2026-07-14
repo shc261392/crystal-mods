@@ -7,6 +7,12 @@ type SortKey =
   | 'name'
   | 'total-desc'
   | 'total-asc'
+  | 'a3-desc'
+  | 'a3-asc'
+  | 'a6-desc'
+  | 'a6-asc'
+  | 'a9-desc'
+  | 'a9-asc'
   | 'damage-desc'
   | 'damage-asc'
   | 'acc-desc'
@@ -201,6 +207,18 @@ export function initWeaponsBrowser(): void {
         return num(b, 'total') - num(a, 'total');
       case 'total-asc':
         return num(a, 'total') - num(b, 'total');
+      case 'a3-desc':
+        return num(b, 'a3') - num(a, 'a3');
+      case 'a3-asc':
+        return num(a, 'a3') - num(b, 'a3');
+      case 'a6-desc':
+        return num(b, 'a6') - num(a, 'a6');
+      case 'a6-asc':
+        return num(a, 'a6') - num(b, 'a6');
+      case 'a9-desc':
+        return num(b, 'a9') - num(a, 'a9');
+      case 'a9-asc':
+        return num(a, 'a9') - num(b, 'a9');
       case 'damage-desc':
         return num(b, 'damage') - num(a, 'damage');
       case 'damage-asc':

@@ -2,7 +2,7 @@
 import { factions, units, weaponSlug, weapons } from '../lib/data';
 import { WEAPON_TAG_TOOLTIPS } from '../lib/tag-tooltips';
 import type { Weapon } from '../lib/types';
-import { weaponClass } from '../lib/weapon-display';
+import { totalDamageVsArmor, weaponClass } from '../lib/weapon-display';
 import { getFactionEmblem } from '../scripts/images';
 import Tooltip from './Tooltip.astro';
 import WeaponListRow from './WeaponListRow.astro';
@@ -56,6 +56,9 @@ function rowAttrs(w: Weapon): Record<string, string | number> {
     'data-ap': w.armorPiercing,
     'data-hits': hits,
     'data-total': totalDamage,
+    'data-a3': +totalDamageVsArmor(w, 3).toFixed(2),
+    'data-a6': +totalDamageVsArmor(w, 6).toFixed(2),
+    'data-a9': +totalDamageVsArmor(w, 9).toFixed(2),
     'data-faction-ids': [...(weaponFactions.get(w.id) ?? [])].join(','),
     'data-tags': tags,
   };
@@ -99,6 +102,12 @@ function rowAttrs(w: Weapon): Record<string, string | number> {
           <option value="name" data-i18n-ui="weapons.sort.name">Name (A–Z)</option>
           <option value="total-desc" data-i18n-ui="weapons.sort.totalDesc">Total damage (high→low)</option>
           <option value="total-asc" data-i18n-ui="weapons.sort.totalAsc">Total damage (low→high)</option>
+          <option value="a3-desc" data-i18n-ui="weapons.sort.a3Desc">Dmg vs Armor 3 (high→low)</option>
+          <option value="a3-asc" data-i18n-ui="weapons.sort.a3Asc">Dmg vs Armor 3 (low→high)</option>
+          <option value="a6-desc" data-i18n-ui="weapons.sort.a6Desc">Dmg vs Armor 6 (high→low)</option>
+          <option value="a6-asc" data-i18n-ui="weapons.sort.a6Asc">Dmg vs Armor 6 (low→high)</option>
+          <option value="a9-desc" data-i18n-ui="weapons.sort.a9Desc">Dmg vs Armor 9 (high→low)</option>
+          <option value="a9-asc" data-i18n-ui="weapons.sort.a9Asc">Dmg vs Armor 9 (low→high)</option>
           <option value="damage-desc" data-i18n-ui="weapons.sort.damageDesc">Damage/hit (high→low)</option>
           <option value="damage-asc" data-i18n-ui="weapons.sort.damageAsc">Damage/hit (low→high)</option>
           <option value="acc-desc" data-i18n-ui="weapons.sort.accDesc">Accuracy (high→low)</option>
