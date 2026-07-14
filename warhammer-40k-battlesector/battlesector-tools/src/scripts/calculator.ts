@@ -319,7 +319,9 @@ export function initCalculator(): void {
     const hitFactor = Math.max(0, Math.min(1, hit / 100));
     const buckets = resolveSpecialBuckets(crit, graze);
     const baseAvg = (dr.min + dr.max) / 2;
-    const critAvg = (Math.round(dr.min + 1) + Math.round(dr.max * CRIT_DAMAGE_MULT)) / 2;
+    // Crit band from post-armour MAX: [max+1, round(1.5×max)] (normal rounding, clamped).
+    const critMin = dr.max + 1;
+    const critAvg = (critMin + Math.max(critMin, Math.round(dr.max * CRIT_DAMAGE_MULT))) / 2;
     const grazeAvg = (dr.min * GRAZE_DAMAGE_MULT + dr.max * GRAZE_DAMAGE_MULT) / 2;
 
     if (model === 'floor-first') {
@@ -355,7 +357,7 @@ export function initCalculator(): void {
         note: 'Treats crit/graze as separate post-armor outcome bands, then blends by their probabilities.',
         steps: [
           'Compute post-armor normal damage range.',
-          'Compute crit band: min+1, max×1.5.',
+          'Compute crit band: max+1, round(1.5×max).',
           'Compute graze band: range×0.25.',
           'Blend normal/crit/graze bands by chance weights.',
           'Apply hit chance at the end.',
@@ -372,7 +374,7 @@ export function initCalculator(): void {
       note: 'Assumes many grazes collapse to 0 final damage; crit bonus is still 1.5x when non-graze hits crit.',
       steps: [
         'Build post-armor base range (normal hit).',
-        'Apply crit uplift only on non-graze branch (1.5x max, +1 min).',
+        'Apply crit uplift only on non-graze branch (crit band max+1 … round(1.5×max)).',
         'Treat graze as a null branch (0 damage) at probability level.',
         'Apply hit chance and graze-null branch factor.',
       ],

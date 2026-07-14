@@ -2,7 +2,7 @@
 // weapon detail page, unit loadout, and the weapon stat zone so the label,
 // colour, and i18n key stay consistent everywhere.
 
-import { critChance, damagePerHitAfterArmor, expectedDamagePerHit, grazeChance } from './combat';
+import { critChance, damageRangeAfterArmor, expectedDamagePerHit, grazeChance } from './combat';
 import type { Weapon, WeaponType } from './types';
 
 interface WeaponTypeMeta {
@@ -92,8 +92,8 @@ export function totalDamageVsArmor(
 ): number {
   const crit = critChance(0, weapon.armorPiercing, armor);
   const graze = grazeChance(weapon.armorPiercing, armor);
-  const avgAfterArmor = damagePerHitAfterArmor(weapon.damage, armor, weapon.armorPiercing);
-  const avgDamage = expectedDamagePerHit(avgAfterArmor, crit, graze);
+  const range = damageRangeAfterArmor(weapon.damage, armor, weapon.armorPiercing);
+  const avgDamage = expectedDamagePerHit(range, crit, graze);
   const baseAcc = weapon.isMelee && weapon.accuracy <= 0 ? 80 : weapon.accuracy;
   const totalShots = weapon.numAttacks * weapon.shotsPerAttack * weapon.burstSize;
   const expectedHits = (totalShots * baseAcc) / 100;

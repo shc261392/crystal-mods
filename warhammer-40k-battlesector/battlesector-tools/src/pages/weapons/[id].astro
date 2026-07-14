@@ -7,7 +7,6 @@ import WeaponRail from '../../components/WeaponRail.astro';
 import Base from '../../layouts/Base.astro';
 import {
   critChance,
-  damagePerHitAfterArmor,
   damageRange,
   damageRangeAfterArmor,
   expectedDamagePerHit,
@@ -42,19 +41,24 @@ const dmgRange = damageRange(weapon.damage);
 const armorTable = Array.from({ length: 10 }, (_, armor) => {
   const crit = critChance(0, weapon.armorPiercing, armor);
   const graze = grazeChance(weapon.armorPiercing, armor);
-  const avgAfterArmor = damagePerHitAfterArmor(weapon.damage, armor, weapon.armorPiercing);
-  const avgDamage = expectedDamagePerHit(avgAfterArmor, crit, graze);
-
-  // Build detailed formulas for tooltips
   const { min: dmgMin, max: dmgMax } = damageRangeAfterArmor(
     weapon.damage,
     armor,
     weapon.armorPiercing,
   );
-  const normalProb = 1 - crit / 100 - graze / 100;
+  const avgDamage = expectedDamagePerHit({ min: dmgMin, max: dmgMax }, crit, graze);
 
-  // Expected damage formula: shows armor subtraction and crit/graze calculation
-  const expDmgFormula = `[(${dmgMin}+${dmgMax})/2] × [${normalProb.toFixed(2)}×1.0 + ${(crit / 100).toFixed(2)}×1.5 + ${(graze / 100).toFixed(2)}×0.25] = ${avgDamage.toFixed(2)}`;
+  const normalProb = 1 - crit / 100 - graze / 100;
+  const normalAvg = (dmgMin + dmgMax) / 2;
+  // Crit band from post-armour MAX: [max+1, round(1.5×max)] (normal rounding,
+  // clamped so it never inverts on tiny post-armour damage).
+  const critMin = dmgMax + 1;
+  const critMax = Math.max(critMin, Math.round(dmgMax * 1.5));
+  const critAvg = (critMin + critMax) / 2;
+  const grazeAvg = normalAvg * 0.25;
+
+  // Expected damage tooltip: probability-weighted normal / crit / graze bands.
+  const expDmgFormula = `N ${normalProb.toFixed(2)}×${normalAvg} + Crit ${(crit / 100).toFixed(2)}×${critAvg} + Graze ${(graze / 100).toFixed(2)}×${grazeAvg.toFixed(2)} = ${avgDamage.toFixed(2)}`;
 
   // Total damage output per attack (all shots/attacks on single model)
   const baseAcc = weapon.isMelee && weapon.accuracy <= 0 ? 80 : weapon.accuracy;
@@ -73,6 +77,11 @@ const armorTable = Array.from({ length: 10 }, (_, armor) => {
     totalDamage,
     expDmgFormula,
     totalDmgFormula,
+    dmgMin,
+    dmgMax,
+    critMin,
+    critMax,
+    shots: totalShots,
   };
 });
 
@@ -163,9 +172,10 @@ const totalShots = weapon.numAttacks * weapon.shotsPerAttack * weapon.burstSize;
 // KaTeX rendered formulas
 const katexOptions = { throwOnError: false, displayMode: false };
 
-// Step 1: Armor reduction formula
+// Step 1: Armor reduction formula (multiplicative: each point of effective
+// armour removes 10% of max damage; min is 0.75 x the reduced max).
 const step1Formula = katex.renderToString(
-  String.raw`d_{\text{range}} = (\max(d_{\text{max}} - a, 0),\, \max(0.75 \times d_{\text{max}} - a, 0))`,
+  String.raw`d_{\text{max}}' = \left\lfloor d_{\text{max}} \times \left(1 - \tfrac{\max(0,\, a - \text{AP})}{10}\right) \right\rfloor,\quad d_{\text{min}}' = \left\lfloor 0.75 \times d_{\text{max}}' \right\rfloor`,
   katexOptions,
 );
 
@@ -187,9 +197,10 @@ const step2cFormula = katex.renderToString(
   katexOptions,
 );
 
-// Step 3: Expected damage
+// Step 3: Expected damage (probability-weighted normal / crit / graze bands).
+// Crit max uses NORMAL rounding; armour reduction and min damage use floor.
 const step3Formula = katex.renderToString(
-  String.raw`\text{E}[d] = \text{avg}(d_{\text{range}}) \times [P_{\mathrm{normal}} \times 1.0 + P_{\mathrm{crit}} \times 1.5 + P_{\mathrm{graze}} \times 0.25]`,
+  String.raw`\text{E}[d] = P_{\mathrm{normal}} \cdot \overline{d} + P_{\mathrm{crit}} \cdot \overline{\text{crit}} + P_{\mathrm{graze}} \cdot 0.25\,\overline{d},\quad \text{crit} \in [\,d_{\text{max}}'+1,\ \operatorname{round}(1.5\,d_{\text{max}}')\,]`,
   katexOptions,
 );
 
@@ -378,6 +389,7 @@ const totalDmgLatex = katex.renderToString(
           <thead>
             <tr class="text-[10px] text-[var(--color-faint)] uppercase tracking-wide border-b border-[var(--color-border)]">
               <th class="text-left pb-2" data-i18n-ui="common.armor">Armor</th>
+              <th class="text-right pb-2">DMG</th>
               <th class="text-right pb-2">Crit %</th>
               <th class="text-right pb-2">Graze %</th>
               <th class="text-right pb-2">Exp DMG</th>
@@ -387,7 +399,11 @@ const totalDmgLatex = katex.renderToString(
             {armorTable.map((row) => (
               <tr>
                 <td class="py-2 font-semibold">{row.armor}</td>
-                <td class="py-2 text-right tabular-nums">
+                <td class="py-2 text-right tabular-nums" title="Damage range per hit after armour × number of hits, before crit/graze/accuracy">
+                  <span class="font-semibold text-[var(--color-hp)]">{row.dmgMin}–{row.dmgMax}</span>
+                  <span class="text-[var(--color-faint)]"> ×{row.shots}</span>
+                </td>
+                <td class="py-2 text-right tabular-nums" title={`Critical damage band: ${row.critMin}–${row.critMax}`}>
                   <span class="font-bold text-[var(--color-hp)]">{Math.round(row.crit)}%</span>
                 </td>
                 <td class="py-2 text-right tabular-nums">
@@ -423,6 +439,7 @@ const totalDmgLatex = katex.renderToString(
           <thead>
             <tr class="text-[10px] text-[var(--color-faint)] uppercase tracking-wide border-b border-[var(--color-border)]">
               <th class="text-left pb-2" data-i18n-ui="common.armor">Armor</th>
+              <th class="text-right pb-2">DMG</th>
               <th class="text-right pb-2">Total DMG</th>
             </tr>
           </thead>
@@ -430,6 +447,10 @@ const totalDmgLatex = katex.renderToString(
             {armorTable.map((row) => (
               <tr>
                 <td class="py-2 font-semibold">{row.armor}</td>
+                <td class="py-2 text-right tabular-nums" title="Damage range per hit after armour × number of hits, before accuracy/crit/graze">
+                  <span class="font-semibold">{row.dmgMin}–{row.dmgMax}</span>
+                  <span class="text-[var(--color-faint)]"> (×{row.shots})</span>
+                </td>
                 <td class="py-2 text-right tabular-nums">
                   <span class="font-black text-lg text-[var(--color-gold)]" title={row.totalDmgFormula}>{row.totalDamage.toFixed(2)}</span>
                 </td>

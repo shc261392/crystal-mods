@@ -1,6 +1,6 @@
 // Combat formulas derived from the decompiled DamageCalculationConfig tooltips
 // and the in-game unit panel. Pure functions, shared by pages and tools.
-// See .copilot_workspace/battlesector-data/docs_damage_armor_formula.md
+// Full model + worked examples: docs/damage-formula.md
 
 import type { Weapon } from './types';
 
@@ -71,22 +71,32 @@ export function splashDamage(weapon: Weapon): SplashInfo | null {
   return { min, max, models };
 }
 
+/** Effective armour after piercing: `max(0, armour − AP)`. Never negative. */
 export function effectiveArmor(targetArmor: number, armorPiercing: number): number {
   return Math.max(0, Math.round(targetArmor - armorPiercing));
 }
 
-/** Damage range after subtracting effective armor from both min/max damage. */
+/**
+ * Damage range after armour, using the in-game multiplicative model: each point
+ * of effective armour (armour − AP, floored at 0) removes 10% of the weapon's
+ * MAX damage. The reduced max is floored; the min is then 0.75 × that max,
+ * floored:
+ *   maxAfter = floor(maxDamage × (1 − effArmour/10))
+ *   minAfter = floor(0.75 × maxAfter)
+ * At effArmour = 0 this reduces to the base range [floor(0.75×max), max].
+ */
 export function damageRangeAfterArmor(
   maxDamage: number,
   targetArmor: number,
   armorPiercing: number,
 ): { min: number; max: number } {
-  const base = damageRange(maxDamage);
-  const reduction = effectiveArmor(targetArmor, armorPiercing);
-  return {
-    min: Math.max(0, base.min - reduction),
-    max: Math.max(0, base.max - reduction),
-  };
+  const effArmor = effectiveArmor(targetArmor, armorPiercing);
+  const baseMax = Math.max(0, Math.round(maxDamage));
+  // Integer-safe: (10 − effArmour)/10 avoids float error (1 − 9/10 = 0.0999…).
+  const remaining = Math.max(0, 10 - effArmor);
+  const max = Math.floor((baseMax * remaining) / 10);
+  const min = Math.floor(max * MIN_DAMAGE_MULT);
+  return { min: Math.max(0, min), max: Math.max(0, max) };
 }
 
 /** Average damage of a single hit after armor subtraction, before hit chance/graze. */
@@ -100,19 +110,35 @@ export function damagePerHitAfterArmor(
 }
 
 /**
- * Expected damage per hit accounting for crit/graze probabilities.
- * Formula: avgDmg × [(1 - crit% - graze%) + (crit% × 1.5) + (graze% × 0.25)]
- * Returns exact decimal value (no rounding).
+ * Critical-hit damage range, derived from the post-armour MAX damage:
+ *   critMin = normalMax + 1                     (integer)
+ *   critMax = round(normalMax × 1.5)            (NORMAL rounding, not floor)
+ * The band is clamped so it never inverts on tiny post-armour damage.
+ */
+export function critDamageRange(postArmorMax: number): { min: number; max: number } {
+  const min = postArmorMax + 1;
+  const max = Math.max(min, Math.round(postArmorMax * CRIT_DAMAGE_MULT));
+  return { min, max };
+}
+
+/**
+ * Expected damage per hit: probability-weighted blend of the normal, critical
+ * and graze damage bands (all post-armour). Normal = avg(range); crit uses the
+ * dedicated crit band (max+1 … 1.5×max); graze = 0.25 × normal average.
  */
 export function expectedDamagePerHit(
-  avgDamage: number,
+  range: { min: number; max: number },
   critPercent: number,
   grazePercent: number,
 ): number {
   const crit = critPercent / 100;
   const graze = grazePercent / 100;
   const normal = 1 - crit - graze;
-  return avgDamage * (normal + crit * CRIT_DAMAGE_MULT + graze * GRAZE_DAMAGE_MULT);
+  const normalAvg = (range.min + range.max) / 2;
+  const critBand = critDamageRange(range.max);
+  const critAvg = (critBand.min + critBand.max) / 2;
+  const grazeAvg = normalAvg * GRAZE_DAMAGE_MULT;
+  return normal * normalAvg + crit * critAvg + graze * grazeAvg;
 }
 
 /** Graze chance (%): 3% per point of target armour above armour piercing. Graze = no damage. */

@@ -162,9 +162,10 @@ import Base from '../layouts/Base.astro';
           <span id="r-remaining" class="text-xl font-black tabular-nums text-[var(--color-hp)]">—</span>
         </div>
         <p class="text-[0.7rem] text-[var(--color-faint)] pt-1">
-          Model used: per-hit damage range is reduced by effective armor (armor − AP, min 0),
-          then expected damage applies hit chance and graze chance. Critical chance is shown
-          separately; critical bonus damage is not included.
+          Model used: each point of effective armor (armor − AP, min 0) removes 10% of the
+          weapon's max damage (max floored, then min = 0.75 × max floored). Expected damage
+          then applies hit chance and graze chance. Critical chance is shown separately;
+          critical bonus damage is not included.
         </p>
 
         <div class="mt-4 rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] p-3.5">
