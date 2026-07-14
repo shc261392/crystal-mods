@@ -97,9 +97,19 @@ const factionStatus = factionCards
       STATUS_RANK[a.status] - STATUS_RANK[b.status] || a.faction.name.localeCompare(b.faction.name),
   );
 const verifiedCount = factionStatus.filter((s) => s.status === 'verified').length;
+
+const ogSite = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const websiteLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Battlesector Tools',
+  url: `${ogSite}/`,
+  description:
+    'Web tools for Warhammer 40,000: Battlesector — browse units, weapons and abilities, build army lists, and calculate damage.',
+};
 ---
 
-<Base title="Battlesector Tools">
+<Base title="Battlesector Tools" jsonLd={websiteLd}>
   <!-- Hero -->
   <section class="relative overflow-hidden surface px-6 py-12 md:px-12 md:py-16">
     <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full blur-3xl opacity-30" style="background: radial-gradient(circle, var(--color-gold), transparent 70%)"></div>

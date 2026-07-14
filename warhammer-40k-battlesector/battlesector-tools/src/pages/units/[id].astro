@@ -124,6 +124,22 @@ const portrait = getUnitPortrait(unit.name, unit.portrait);
 const emblem = getFactionEmblem(unit.faction);
 const heroImage = portrait ?? emblem;
 
+const ogSite = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${ogSite}/` },
+    { '@type': 'ListItem', position: 2, name: 'Units', item: `${ogSite}/units` },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: unit.name,
+      item: `${ogSite}/units/${unitSlug(unit)}`,
+    },
+  ],
+};
+
 // Faction momentum passive (verified). Shown first in the Abilities section.
 const factionPassive = getFactionPassive(unit.faction);
 const passiveLines = factionPassive ? passiveEffectLines(factionPassive) : [];
@@ -172,6 +188,10 @@ const vitals = [
   description={`${unit.name} — ${unit.factionName} ${unit.roleName}. ${unit.totalHealth} HP, ${unit.armorProfile === 1 ? 'directional armor' : `armor ${unit.armor}`}, ${unit.maxMovementPoints} movement, ${unit.pointCost} points.`}
   path={`/units/${unitSlug(unit)}`}
   ogType="article"
+  ogImage={`/og/units/${unitSlug(unit)}.png`}
+  ogImageAlt={`${unit.name} — ${unit.factionName} unit card with stats, weapons and abilities`}
+  themeColor={accent}
+  jsonLd={breadcrumbLd}
 >
   <div class="lg:grid lg:grid-cols-[minmax(340px,380px)_1fr] lg:gap-5 lg:items-start" data-units-view="detail">
     <div class="units-rail-col hidden lg:block lg:sticky lg:top-4 lg:h-[calc(100dvh-2rem)]">

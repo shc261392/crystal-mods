@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wh40k-battlesector.crystalgametools.org/sitemap-index.xml

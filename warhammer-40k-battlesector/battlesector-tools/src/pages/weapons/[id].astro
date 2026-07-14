@@ -98,6 +98,22 @@ const wType = weaponTypeMeta(weapon);
 const splash = splashDamage(weapon);
 const HP_ICON = getStatIcon('health');
 const AP_ICON = getStatIcon('actionPoints');
+
+const ogSite = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${ogSite}/` },
+    { '@type': 'ListItem', position: 2, name: 'Weapons', item: `${ogSite}/weapons` },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: weapon.name,
+      item: `${ogSite}/weapons/${weaponSlug(weapon)}`,
+    },
+  ],
+};
 const MP_ICON = getStatIcon('movement');
 const ARMOR_ICON = getStatIcon('armor');
 const DODGE_ICON = getStatIcon('evasion');
@@ -189,6 +205,9 @@ const totalDmgLatex = katex.renderToString(
   description={`${weapon.name} — ${weapon.damage} damage, ${weapon.accuracy}% accuracy. Battlesector weapon stats and carriers.`}
   path={`/weapons/${weaponSlug(weapon)}`}
   ogType="article"
+  ogImage={`/og/weapons/${weaponSlug(weapon)}.png`}
+  ogImageAlt={`${weapon.name} — Battlesector weapon card with damage, accuracy and range`}
+  jsonLd={breadcrumbLd}
 >
   <div class="lg:grid lg:grid-cols-[minmax(340px,380px)_1fr] lg:gap-5 lg:items-start" data-weapons-view="detail">
     <div class="weapons-rail-col hidden lg:block lg:sticky lg:top-4 lg:h-[calc(100dvh-2rem)]">

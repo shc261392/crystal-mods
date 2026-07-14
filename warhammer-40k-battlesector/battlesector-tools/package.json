@@ -24,6 +24,7 @@
     "format": "biome format --write . --vcs-enabled=true --vcs-use-ignore-file=true"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
     "astro": "^5.3.4",
     "katex": "^0.17.0"
   },
@@ -31,8 +32,11 @@
     "@astrojs/check": "^0.9.9",
     "@biomejs/biome": "^1.9.4",
     "@dotenvx/dotenvx": "^1.49.0",
+    "@fontsource/inter": "^5.2.8",
+    "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/vite": "^4.0.6",
     "@types/node": "^26.0.1",
+    "satori": "^0.26.0",
     "tailwindcss": "^4.0.6",
     "typescript": "^5.7.3",
     "wrangler": "^4.12.0"
