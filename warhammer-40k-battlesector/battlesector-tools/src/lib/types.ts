@@ -85,7 +85,7 @@ export interface Weapon {
   /** Explicit splash damage range. When unset, derived from damage + splashFalloff. */
   splashMin?: number;
   splashMax?: number;
-  targetType?: 'redistribute' | 'fixedPerMember' | 'fixedEntireUnit';
+  targetType?: 'fixedPerMember' | 'fixedEntireUnit';
   /** Curated descriptive text (not in extracted game data). Editable locally. */
   description?: string;
   /** Player field-test note (not in game data). Curated locally via the editor. */

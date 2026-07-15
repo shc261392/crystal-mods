@@ -38,8 +38,11 @@ export function resolveWeaponType(weapon: Pick<Weapon, 'weaponType' | 'isMelee'>
 }
 
 // Names that identify flame weapons (same heuristic as the stat-ranks script,
-// since weaponType is not present in the extracted data).
-const FLAME_RE = /flame|flamer|burna|incinerat|immolat|inferno|skorcha|conflagrat/i;
+// since weaponType is not present in the extracted data). Only genuine
+// flamethrowers: `flame` covers all *Flamer/Flamespurt/Flamestorm/Immolation
+// Flamers; `burna`/`skorcha` are the Ork flamethrowers. Do NOT match `incinerat`
+// (plasma incinerators), `inferno` (Inferno Pistol = melta) or `immolat`.
+const FLAME_RE = /flame|burna|skorcha/i;
 // Names/impacts that identify artillery (indirect-fire / blast) weapons.
 const ARTILLERY_RE =
   /mortar|earthshaker|bombard|whirlwind|basilisk|manticore|deathstrike|battle cannon|siege|demolisher|artiller|thunderfire|griffon|wyvern/i;

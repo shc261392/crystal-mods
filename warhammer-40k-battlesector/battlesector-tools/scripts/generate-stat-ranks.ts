@@ -64,7 +64,9 @@ type RankRecord = Record<string, AxisEntry>;
 
 const HIDDEN_FACTION_IDS = new Set<number>([4]);
 const MIN_DAMAGE_MULT = 0.75;
-const FLAME_RE = /flame|flamer|burna|incinerat|immolat|inferno|skorcha|conflagrat/i;
+// Genuine flamethrowers only (see lib/weapon-display.ts). Excludes plasma
+// incinerators (`incinerat`) and the Inferno Pistol (`inferno` = melta).
+const FLAME_RE = /flame|burna|skorcha/i;
 
 function readJson<T>(file: string): T {
   return JSON.parse(readFileSync(path.join(dataDir, file), 'utf8')) as T;

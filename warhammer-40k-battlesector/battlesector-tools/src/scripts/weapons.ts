@@ -42,7 +42,7 @@ let railSavedScroll: number | null = null;
 
 // Filter params owned by the weapons browser (module scope so the URL reflector
 // can run outside the main initializer closure).
-const WEAPONS_FILTER_KEYS = ['q', 'sort', 'tags', 'faction'];
+const WEAPONS_FILTER_KEYS = ['q', 'sort', 'tags', 'faction', 'impact', 'targeting'];
 
 /** True on the weapons list page or any weapon detail page. */
 function inWeaponsArea(): boolean {
@@ -145,6 +145,17 @@ export function initWeaponsBrowser(): void {
     : [];
   let activeFactionId = '';
 
+  const impactFilter = document.getElementById('weapon-impact-filter');
+  const targetingFilter = document.getElementById('weapon-targeting-filter');
+  const impactBtns = impactFilter
+    ? Array.from(impactFilter.querySelectorAll<HTMLButtonElement>('button[data-impact]'))
+    : [];
+  const targetingBtns = targetingFilter
+    ? Array.from(targetingFilter.querySelectorAll<HTMLButtonElement>('button[data-targeting]'))
+    : [];
+  let activeImpact = '';
+  let activeTargeting = '';
+
   const ACTIVE = [
     '!text-[var(--color-gold)]',
     '!border-[var(--color-gold-dim)]',
@@ -154,7 +165,7 @@ export function initWeaponsBrowser(): void {
   // Hydrate controls from the URL on the list page, or from the session-stored
   // filter state (so the rail stays filtered when navigating to a detail page).
   const urlParams = new URLSearchParams(location.search);
-  const FILTER_KEYS = ['q', 'sort', 'tags', 'faction'];
+  const FILTER_KEYS = ['q', 'sort', 'tags', 'faction', 'impact', 'targeting'];
   const hasUrlFilters = FILTER_KEYS.some((k) => urlParams.has(k));
   const params = hasUrlFilters
     ? urlParams
@@ -162,6 +173,8 @@ export function initWeaponsBrowser(): void {
   if (params.get('q')) q.value = params.get('q') ?? '';
   if (params.get('sort')) sort.value = params.get('sort') ?? 'name';
   if (params.get('faction')) activeFactionId = params.get('faction') ?? '';
+  if (params.get('impact')) activeImpact = params.get('impact') ?? '';
+  if (params.get('targeting')) activeTargeting = params.get('targeting') ?? '';
   const tags = (params.get('tags') ?? '')
     .split(',')
     .map((t) => t.trim())
@@ -173,6 +186,8 @@ export function initWeaponsBrowser(): void {
     if (q?.value) p.set('q', q.value);
     if (sort && sort.value !== 'name') p.set('sort', sort.value);
     if (activeFactionId) p.set('faction', activeFactionId);
+    if (activeImpact) p.set('impact', activeImpact);
+    if (activeTargeting) p.set('targeting', activeTargeting);
     if (selectedTags.size > 0) p.set('tags', [...selectedTags].sort().join(','));
     const qs = p.toString();
     try {
@@ -188,7 +203,11 @@ export function initWeaponsBrowser(): void {
   function updateFilterBadge(): void {
     if (!filtersCountBadge) return;
     const active =
-      selectedTags.size + (sort && sort.value !== 'name' ? 1 : 0) + (activeFactionId ? 1 : 0);
+      selectedTags.size +
+      (sort && sort.value !== 'name' ? 1 : 0) +
+      (activeFactionId ? 1 : 0) +
+      (activeImpact ? 1 : 0) +
+      (activeTargeting ? 1 : 0);
     filtersCountBadge.textContent = String(active);
     filtersCountBadge.classList.toggle('hidden', active === 0);
   }
@@ -200,6 +219,17 @@ export function initWeaponsBrowser(): void {
       b.setAttribute('aria-selected', on ? 'true' : 'false');
     }
   }
+
+  function paintSegmented(btns: HTMLButtonElement[], attr: string, active: string): void {
+    for (const b of btns) {
+      const on = (b.getAttribute(attr) ?? '') === active;
+      for (const c of ACTIVE) b.classList.toggle(c, on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+  }
+  const paintImpactButtons = () => paintSegmented(impactBtns, 'data-impact', activeImpact);
+  const paintTargetingButtons = () =>
+    paintSegmented(targetingBtns, 'data-targeting', activeTargeting);
 
   function compare(a: HTMLElement, b: HTMLElement, key: SortKey): number {
     switch (key) {
@@ -274,8 +304,14 @@ export function initWeaponsBrowser(): void {
       );
       const matchesTags = [...selectedTags].every((tag) => cardTags.has(tag));
       const matchesFaction = !activeFactionId || cardFactions.has(activeFactionId);
+      const matchesImpact = !activeImpact || text(card, 'impact') === activeImpact;
+      const matchesTargeting = !activeTargeting || text(card, 'targeting') === activeTargeting;
       const matches =
-        (!term || displayName(card).toLowerCase().includes(term)) && matchesTags && matchesFaction;
+        (!term || displayName(card).toLowerCase().includes(term)) &&
+        matchesTags &&
+        matchesFaction &&
+        matchesImpact &&
+        matchesTargeting;
       card.style.display = matches ? '' : 'none';
       if (matches) visible++;
     }
@@ -306,8 +342,12 @@ export function initWeaponsBrowser(): void {
     sort.value = 'name';
     selectedTags.clear();
     activeFactionId = '';
+    activeImpact = '';
+    activeTargeting = '';
     paintTagButtons();
     paintFactionButtons();
+    paintImpactButtons();
+    paintTargetingButtons();
     apply();
   });
 
@@ -325,6 +365,26 @@ export function initWeaponsBrowser(): void {
       apply();
     });
   }
+
+  impactFilter?.addEventListener('click', (event) => {
+    const btn = (event.target as HTMLElement).closest(
+      'button[data-impact]',
+    ) as HTMLButtonElement | null;
+    if (!btn) return;
+    activeImpact = btn.getAttribute('data-impact') ?? '';
+    paintImpactButtons();
+    apply();
+  });
+
+  targetingFilter?.addEventListener('click', (event) => {
+    const btn = (event.target as HTMLElement).closest(
+      'button[data-targeting]',
+    ) as HTMLButtonElement | null;
+    if (!btn) return;
+    activeTargeting = btn.getAttribute('data-targeting') ?? '';
+    paintTargetingButtons();
+    apply();
+  });
 
   for (const b of factionBtns) {
     b.addEventListener('click', () => {
@@ -407,6 +467,8 @@ export function initWeaponsBrowser(): void {
   applyI18n();
   paintTagButtons();
   paintFactionButtons();
+  paintImpactButtons();
+  paintTargetingButtons();
   apply();
   // One-time deep-link scroll: centre the current weapon's row after filters.
   syncCurrentRow(grid, true);

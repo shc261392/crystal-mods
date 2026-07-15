@@ -126,24 +126,33 @@ row on the weapon page. The original parser's `AreaOfEffect`/`SplashDamage`
 field names do **not** exist in the asset (returned 0); the real fields are
 `ImpactType` + `SplashDamageSettings`.
 
-## Post-kill targeting / wasted attacks (RESEARCHED)
+## Targeting method (enum RESEARCHED; behaviour player-confirmed)
 
-`WeaponData.BallisticWeaponTargetType` governs what happens when a target model
-dies mid-attack (the "wasted attacks" behaviour):
+`WeaponData.BallisticWeaponTargetType` selects how an attacking squad distributes
+its shots across the target unit's models. **Only two values occur in the data**
+(the enum names, values and counts are from the decompiled asset; the *behaviour*
+below is confirmed from gameplay, not from the decompiled targeting code):
 
-- `None` (0) — redistributes to living models. _(No weapon uses this; surfaced
-  as "redistribute" for completeness.)_
-- `FixedTargetPerMember` (1) — each attacking member locks one enemy member; if
-  that member dies, the attacker **stops** (remaining shots wasted). 429 weapons
-  — the default.
-- `FixedTargetForEntireUnit` (2) — every member targets the same highest-health
-  enemy member; if it dies, the **whole unit** stops. 13 weapons.
+- `FixedTargetPerMember` (1) — each attacking member independently targets the
+  **least-targeted** enemy model; members spread across the target unit. **426
+  weapons** — the default.
+- `FixedTargetForEntireUnit` (2) — the whole squad focuses the **same** model
+  (lowest index first), moving to the next model when it dies. **13 weapons**
+  (Lascannon, Hot-Shot Lasgun, Castigator Autocannon, …).
 
-Overkill is generally wasted (FixedTargetPerMember); 13 weapons waste even more
-(whole unit focus-fires one model). Surfaced as a "Post-kill targeting" row on
-the weapon page. _(Not yet modelled in the calculator's expected-damage math —
-the one-round calc still assumes overkill carries; documented as a known
-simplification.)_
+Both methods **retarget to another living model when the current one dies** —
+overkill is not wasted (redistribution is always on). Surfaced as a "Targeting"
+row on the weapon page and as a filter on the weapons index.
+
+> Correction: an earlier draft described a `None` (0) → "redistribute" value and
+> claimed shots were *wasted* on a kill. No weapon uses value 0, and the "wasted
+> attacks" reading contradicted gameplay — both have been removed. The
+> `redistribute` variant is gone from the code.
+
+Modelled in the calculator's attack simulation (`src/lib/attack-sim.ts`): each
+member locks a target and retargets on a kill; `FixedTargetForEntireUnit`
+focus-fires lowest-index-first. See [damage-formula.md](damage-formula.md) for
+the per-hit maths.
 
 `WeaponData.Pistol` (bool) = ranged weapon usable in melee (46 weapons, e.g.
 Bolt Pistol, gauntlets, hand flamers). Used to refine melee detection:

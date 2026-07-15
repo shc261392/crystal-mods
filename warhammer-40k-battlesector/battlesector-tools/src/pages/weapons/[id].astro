@@ -321,11 +321,9 @@ const totalDmgLatex = katex.renderToString(
               <span class="text-[var(--color-faint)] min-w-[4.5rem]" data-i18n-ui="weaponDetail.targeting.label">Targeting:</span>
               <span class="font-semibold">
                 {weapon.targetType === 'fixedEntireUnit' ? (
-                  <span data-i18n-ui="weaponDetail.targeting.fixedEntireUnit">Fixed (shots wasted if target dies early)</span>
-                ) : weapon.targetType === 'redistribute' ? (
-                  <span data-i18n-ui="weaponDetail.targeting.redistribute">Redistributes to living models</span>
+                  <span data-i18n-ui="weaponDetail.targeting.fixedEntireUnit">Whole unit focuses one model at a time (lowest first), advancing on a kill</span>
                 ) : (
-                  <span data-i18n-ui="weaponDetail.targeting.fixedPerMember">Fixed per attacker</span>
+                  <span data-i18n-ui="weaponDetail.targeting.fixedPerMember">Each member targets the least-targeted enemy model, retargeting on a kill</span>
                 )}
               </span>
             </div>
