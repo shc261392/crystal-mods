@@ -463,6 +463,40 @@ export function initCalculator(): void {
   // kills range. Uses the shared attack-sim (group fire + splash + targeting).
   const simPanel = document.getElementById('sim-panel');
 
+  // Impact + targeting badges shown under the weapon picker, each with a
+  // hover tooltip explaining the mechanic (uses the site-wide data-tooltip).
+  const weaponMetaEl = document.getElementById('weapon-meta');
+
+  function renderWeaponMeta(w: Weapon | undefined): void {
+    if (!weaponMetaEl) return;
+    if (!w) {
+      weaponMetaEl.innerHTML = '';
+      return;
+    }
+    const impact = w.impactType ?? 'single';
+    const impactLabel =
+      impact === 'splash' ? 'Splash' : impact === 'tile' ? 'Tile' : 'Single target';
+    const impactTip =
+      impact === 'splash'
+        ? 'Splash: hits the primary model, then spills reduced damage onto nearby models in the target unit (never single-model targets).'
+        : impact === 'tile'
+          ? 'Tile: the shot hits every model in the target unit.'
+          : 'Single target: each shot damages one model.';
+
+    const targeting = w.targetType ?? 'fixedPerMember';
+    const targetingLabel = targeting === 'fixedEntireUnit' ? 'Entire unit' : 'Per model';
+    const targetingTip =
+      targeting === 'fixedEntireUnit'
+        ? 'Entire unit: the whole squad focus-fires one model at a time (lowest HP index first), advancing to the next when it dies. Overkill never carries over.'
+        : 'Per model: each attacking model targets the least-targeted enemy model, retargeting when its target dies. Overkill never carries over.';
+
+    const badge = (label: string, tip: string, splash = false) =>
+      `<span class="tooltip-target inline-flex items-center gap-1 rounded-full border border-[var(--color-border-strong)] ${splash ? 'bg-[color-mix(in_srgb,var(--color-hp)_18%,transparent)] text-[var(--color-hp)]' : 'bg-[var(--color-base)] text-[var(--color-muted)]'} px-2 py-0.5 text-[0.7rem] font-semibold cursor-help" data-tooltip="${tip.replace(/"/g, '&quot;')}">${label}</span>`;
+
+    weaponMetaEl.innerHTML =
+      badge(impactLabel, impactTip, impact === 'splash') + badge(targetingLabel, targetingTip);
+  }
+
   function renderSimPanel(opts: {
     weapon: Weapon | undefined;
     finalDamage: number;
@@ -478,6 +512,7 @@ export function initCalculator(): void {
   }): void {
     if (!simPanel) return;
     const w = opts.weapon;
+    renderWeaponMeta(w);
     const simWeapon: AttackWeapon = {
       damage: opts.finalDamage,
       armorPiercing: opts.finalAp,
@@ -522,8 +557,12 @@ export function initCalculator(): void {
       .join('');
 
     const splashRow =
-      res.splashTargetsPerShot > 0
-        ? `<div class="flex items-baseline justify-between"><span class="text-[var(--color-muted)]">Splash / hit</span><span class="tabular-nums font-semibold">${res.splashMin}\u2013${res.splashMax} <span class="text-[var(--color-faint)]">(\u00d7${res.splashTargetsPerShot})</span></span></div>`
+      w?.impactType === 'splash' && (w?.splashModels ?? 0) > 1
+        ? `<div class="flex items-baseline justify-between"><span class="text-[var(--color-muted)]">Splash / hit</span><span class="tabular-nums font-semibold">${res.splashMin}\u2013${res.splashMax} <span class="text-[var(--color-faint)]">(\u00d7${res.splashTargetsPerShot})</span></span></div>${
+            res.splashTargetsPerShot === 0
+              ? '<p class="text-[0.7rem] text-[var(--color-faint)] -mt-1">Splash needs a multi-model target to spill onto.</p>'
+              : ''
+          }`
         : '';
 
     simPanel.innerHTML = `
