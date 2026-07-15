@@ -31,16 +31,15 @@ const grouped = tierOrder.map((tier) => ({
       <span class="chip !text-[var(--color-gold-dim)]">Experimental</span>
     </div>
     <p class="mt-2 text-[var(--color-muted)] max-w-3xl">
-      This page currently displays <strong>Crusade mode</strong> upgrade options and
-      zone modifiers from extracted warzone tables. Coverage and interpretation are
-      still WIP.
+      This page shows <strong>Crusade mode</strong> upgrade options and zone
+      modifiers. Coverage is still being expanded.
     </p>
   </header>
 
   <section class="surface p-5 md:p-6">
     <p class="text-sm text-[var(--color-faint)] mb-4">
-      Source chain: <code>warzone_upgrades.json</code> + GUID mapping through
-      extracted meta files. IDs and labels are preserved from extracted assets.
+      These values come straight from the game's Crusade upgrade data. Some labels
+      may be incomplete while coverage is expanded.
     </p>
     <div class="grid gap-4 lg:grid-cols-2">
       {grouped.map((group) => (

@@ -47,7 +47,7 @@ const rawUiI18n = {
     'home.eyebrow': 'Warhammer 40,000: Battlesector',
     'home.hero.title': 'The complete tactical toolkit for Battlesector',
     'home.hero.subtitle':
-      'Plan armies, evaluate damage, and compare units using extracted in-game data.',
+      'Plan armies, evaluate damage, and compare units using real in-game data.',
     'home.cta.exploreUnits': 'Explore units',
     'home.cta.buildArmy': 'Build an army',
     'home.stats.units': 'Units',
@@ -60,7 +60,7 @@ const rawUiI18n = {
     'home.section.roadmap': 'Roadmap',
     'home.data.factionsVerified': 'factions verified against the game',
     'home.data.intro':
-      'Stats are extracted automatically, then hand-checked faction by faction. Verified factions are safe to trust; others may still contain extraction errors.',
+      'Stats are pulled from the game, then hand-checked faction by faction. Verified factions are safe to trust; others may still contain errors.',
     'home.data.verified': 'Verified',
     'home.data.progress': 'In progress',
     'home.data.pending': 'Not yet reviewed',
@@ -104,7 +104,7 @@ const rawUiI18n = {
     'common.back': 'Back',
     'common.reference': 'Reference',
     'mechanics.intro':
-      'Core rules and combat maths, grounded in the extracted game data. Search a keyword to jump to it.',
+      'Core rules and combat maths, grounded in the game\u2019s own data. Search a keyword to jump to it.',
     'mechanics.searchPlaceholder': 'Search mechanics…',
     'mechanics.countLabel': ' mechanics',
     'mechanics.empty': 'No mechanics match your search.',

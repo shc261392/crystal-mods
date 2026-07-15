@@ -37,12 +37,12 @@ export interface AttackWeapon {
   shotsPerAttack: number;
   burstSize: number;
   isMelee: boolean;
-  impactType?: 'single' | 'tile' | 'splash';
-  targetType?: TargetingType;
-  splashModels?: number;
-  splashFalloff?: number;
-  splashMin?: number;
-  splashMax?: number;
+  impactType?: 'single' | 'tile' | 'splash' | undefined;
+  targetType?: TargetingType | undefined;
+  splashModels?: number | undefined;
+  splashFalloff?: number | undefined;
+  splashMin?: number | undefined;
+  splashMax?: number | undefined;
 }
 
 export interface TargetUnit {

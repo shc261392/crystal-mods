@@ -5,10 +5,9 @@
 import buffsData from '../data/buffs.json';
 import factionMomentumData from '../data/faction-momentum.json';
 import factionsData from '../data/factions.json';
-import unitRanksData from '../data/unit-ranks.json';
 import unitsData from '../data/units.json';
-import weaponRanksData from '../data/weapon-ranks.json';
 import weaponsData from '../data/weapons.json';
+import { type AttackWeapon, type TargetUnit, simulateAttack } from '../lib/attack-sim';
 import {
   critChance,
   damagePerHitAfterArmor,
@@ -17,20 +16,10 @@ import {
   expectedDamage,
   grazeChance,
   hitChance,
-  modelsKilled,
 } from '../lib/combat';
-import {
-  type RankRecord,
-  UNIT_HEX_AXES,
-  WEAPON_HEX_AXES,
-  statHexagonHTML,
-} from '../lib/render/stat-hexagon';
 import type { Unit, Weapon } from '../lib/types';
 import { t, unitName, weaponName } from './i18n';
 import { pageSignal } from './reinit';
-
-const unitRanks = unitRanksData as Record<string, RankRecord>;
-const weaponRanks = weaponRanksData as Record<string, RankRecord>;
 
 interface BuffEffect {
   accuracy?: number;
@@ -38,6 +27,8 @@ interface BuffEffect {
   ap?: number;
   armor?: number;
   evasion?: number;
+  /** Percentage bonus to ranged weapon damage, applied before armour. */
+  rangedDamagePct?: number;
 }
 interface Buff {
   id: number;
@@ -79,19 +70,6 @@ for (const u of allUnits) {
   }
 }
 const weapons = (weaponsData as Weapon[]).filter((w) => usedWeaponIds.has(w.id));
-
-const CRIT_DAMAGE_MULT = 1.5;
-const GRAZE_DAMAGE_MULT = 0.25;
-
-type FormulaModelId = 'floor-first' | 'post-armor-swing' | 'graze-null';
-
-interface FormulaModelResult {
-  id: FormulaModelId;
-  label: string;
-  note: string;
-  steps: string[];
-  expected: number;
-}
 
 function $(id: string): HTMLInputElement {
   return document.getElementById(id) as HTMLInputElement;
@@ -138,13 +116,9 @@ export function initCalculator(): void {
   const tgtBuffSel = document.getElementById('tgt-buff') as HTMLSelectElement | null;
   const distance = $('distance');
   const rangeInfo = document.getElementById('range-info');
-  const formulaModelSel = document.getElementById('formula-model') as HTMLSelectElement | null;
   const showCampaignUnits = document.getElementById(
     'show-campaign-units-calculator',
   ) as HTMLInputElement | null;
-  const formulaModelNote = document.getElementById('formula-model-note');
-  const formulaSteps = document.getElementById('formula-steps');
-  const formulaCopyReport = document.getElementById('formula-copy-report');
   const momFactionName = document.getElementById('mom-faction-name');
   const momentumInput = $('momentum');
   const momPassive = document.getElementById('mom-passive');
@@ -176,10 +150,19 @@ export function initCalculator(): void {
     if (e.ap) parts.push(`${e.ap > 0 ? '+' : ''}${e.ap} AP`);
     if (e.armor) parts.push(`${e.armor > 0 ? '+' : ''}${e.armor} armor`);
     if (e.evasion) parts.push(`${e.evasion > 0 ? '+' : ''}${e.evasion} eva`);
+    if (e.rangedDamagePct)
+      parts.push(`${e.rangedDamagePct > 0 ? '+' : ''}${e.rangedDamagePct}% ranged dmg`);
     return parts.join(', ');
   }
 
-  const BUFF_KEYS: (keyof BuffEffect)[] = ['accuracy', 'damage', 'ap', 'armor', 'evasion'];
+  const BUFF_KEYS: (keyof BuffEffect)[] = [
+    'accuracy',
+    'damage',
+    'ap',
+    'armor',
+    'evasion',
+    'rangedDamagePct',
+  ];
 
   /** Combined effect of every active buff/debuff on one side. */
   function sumBuffs(ids: string[], map: Map<string, Buff>): BuffEffect {
@@ -287,102 +270,6 @@ export function initCalculator(): void {
   function fmt(n: number): string {
     return Number(n.toFixed(2)).toString();
   }
-
-  function pickFormulaModel(): FormulaModelId {
-    const v = formulaModelSel?.value as FormulaModelId | undefined;
-    if (v === 'floor-first' || v === 'post-armor-swing' || v === 'graze-null') return v;
-    return 'floor-first';
-  }
-
-  function resolveSpecialBuckets(
-    critPercent: number,
-    grazePercent: number,
-  ): { crit: number; graze: number; normal: number } {
-    const c = Math.max(0, Math.min(1, critPercent / 100));
-    const g = Math.max(0, Math.min(1, grazePercent / 100));
-    if (c + g <= 1) return { crit: c, graze: g, normal: 1 - c - g };
-    const sum = c + g;
-    const scale = sum > 0 ? 1 / sum : 0;
-    const crit = c * scale;
-    const graze = g * scale;
-    return { crit, graze, normal: 0 };
-  }
-
-  function reconstructionExpected(
-    model: FormulaModelId,
-    dr: { min: number; max: number },
-    shots: number,
-    hit: number,
-    crit: number,
-    graze: number,
-  ): FormulaModelResult {
-    const hitFactor = Math.max(0, Math.min(1, hit / 100));
-    const buckets = resolveSpecialBuckets(crit, graze);
-    const baseAvg = (dr.min + dr.max) / 2;
-    // Crit band from post-armour MAX: [max+1, round(1.5×max)] (normal rounding, clamped).
-    const critMin = dr.max + 1;
-    const critAvg = (critMin + Math.max(critMin, Math.round(dr.max * CRIT_DAMAGE_MULT))) / 2;
-    const grazeAvg = (dr.min * GRAZE_DAMAGE_MULT + dr.max * GRAZE_DAMAGE_MULT) / 2;
-
-    if (model === 'floor-first') {
-      const onHit = Math.floor(
-        baseAvg * buckets.normal +
-          baseAvg * CRIT_DAMAGE_MULT * buckets.crit +
-          baseAvg * GRAZE_DAMAGE_MULT * buckets.graze,
-      );
-      const perAttack = Math.floor(onHit * shots);
-      const expected = Math.floor(perAttack * hitFactor);
-      return {
-        id: model,
-        label: 'A: Floor-first chain',
-        note: 'Applies crit=1.5x and graze=0.25x on a floored base average, with floor rounding at each major stage.',
-        steps: [
-          'Take max damage as base, derive min as 75% of max (floor).',
-          'Apply attacker-side stacking mods first; then flat bonuses.',
-          'Apply armor shaping to get post-armor range.',
-          'Apply crit/graze weighted multiplier (crit 1.5x, graze 0.25x).',
-          'Apply hit chance to get final expected damage.',
-        ],
-        expected,
-      };
-    }
-
-    if (model === 'post-armor-swing') {
-      const onHit = baseAvg * buckets.normal + critAvg * buckets.crit + grazeAvg * buckets.graze;
-      const perAttack = Math.round(onHit * shots);
-      const expected = Math.round(perAttack * hitFactor);
-      return {
-        id: model,
-        label: 'B: Post-armor swing',
-        note: 'Treats crit/graze as separate post-armor outcome bands, then blends by their probabilities.',
-        steps: [
-          'Compute post-armor normal damage range.',
-          'Compute crit band: max+1, round(1.5×max).',
-          'Compute graze band: range×0.25.',
-          'Blend normal/crit/graze bands by chance weights.',
-          'Apply hit chance at the end.',
-        ],
-        expected,
-      };
-    }
-
-    const onHitNoGraze = baseAvg * (1 - buckets.crit) + critAvg * buckets.crit;
-    const expected = Math.round(onHitNoGraze * shots * hitFactor * (1 - buckets.graze));
-    return {
-      id: model,
-      label: 'C: Graze-null branch',
-      note: 'Assumes many grazes collapse to 0 final damage; crit bonus is still 1.5x when non-graze hits crit.',
-      steps: [
-        'Build post-armor base range (normal hit).',
-        'Apply crit uplift only on non-graze branch (crit band max+1 … round(1.5×max)).',
-        'Treat graze as a null branch (0 damage) at probability level.',
-        'Apply hit chance and graze-null branch factor.',
-      ],
-      expected,
-    };
-  }
-
-  let lastFormulaResult: FormulaModelResult | null = null;
 
   function renderMomentum(): void {
     const mom = Math.max(0, Number(momentumInput.value) || 0);
@@ -526,33 +413,91 @@ export function initCalculator(): void {
     lost.value = '0';
   }
 
-  // Compact stat-index hexagon panels beside the pickers (same builder as the
-  // unit/weapon detail pages). They appear only when a catalog weapon/unit with
-  // a rank record is selected.
-  const weaponHexBox = document.getElementById('weapon-hex');
-  const unitHexBox = document.getElementById('unit-hex');
+  // Engine-driven per-model outcome panel: green HP bars showing each target
+  // model's best→worst remaining HP, plus primary/splash damage ranges and the
+  // kills range. Uses the shared attack-sim (group fire + splash + targeting).
+  const simPanel = document.getElementById('sim-panel');
 
-  function hexPanel(svg: string): string {
-    return `<div class="surface p-3 mt-3 flex flex-col items-center">
-      <div class="w-full flex items-baseline justify-between mb-1">
-        <span class="eyebrow">${t('hex.title')}</span>
-        <span class="text-[11px] text-[var(--color-faint)]">${t('hex.gradeScale')}</span>
-      </div>
-      ${svg}
-    </div>`;
-  }
+  function renderSimPanel(opts: {
+    weapon: Weapon | undefined;
+    finalDamage: number;
+    finalAp: number;
+    finalAcc: number;
+    accMod: number;
+    finalArmor: number;
+    finalEva: number;
+    blocked: boolean;
+    attackerModels: number;
+    hpPerModel: number;
+    targetModels: number;
+  }): void {
+    if (!simPanel) return;
+    const w = opts.weapon;
+    const simWeapon: AttackWeapon = {
+      damage: opts.finalDamage,
+      armorPiercing: opts.finalAp,
+      accuracy: opts.finalAcc,
+      numAttacks: w?.numAttacks ?? Math.max(1, Number(shots.value) || 1),
+      shotsPerAttack: w?.shotsPerAttack ?? 1,
+      burstSize: w?.burstSize ?? 1,
+      isMelee: w?.isMelee ?? false,
+      impactType: w?.impactType,
+      targetType: w?.targetType,
+      splashModels: w?.splashModels,
+      splashFalloff: w?.splashFalloff,
+      splashMin: w?.splashMin,
+      splashMax: w?.splashMax,
+    };
+    const target: TargetUnit = {
+      models: Math.max(1, opts.targetModels),
+      hpPerModel: Math.max(1, opts.hpPerModel),
+      armor: opts.finalArmor,
+      evasion: opts.finalEva,
+    };
+    const res = simulateAttack(simWeapon, target, {
+      attackerModels: opts.attackerModels,
+      accuracyMod: opts.accMod,
+    });
+    const shownHit = opts.blocked ? 0 : res.hitChance;
 
-  function renderWeaponHex(): void {
-    if (!weaponHexBox) return;
-    const w = weaponById.get(Number(weaponSel.value));
-    const rank = w ? weaponRanks[String(w.id)] : undefined;
-    weaponHexBox.innerHTML = rank ? hexPanel(statHexagonHTML(rank, WEAPON_HEX_AXES)) : '';
-  }
+    const bars = res.models
+      .map((m) => {
+        const bestPct = Math.max(0, Math.min(100, Math.round((m.remainingBest / m.hpMax) * 100)));
+        const worstPct = Math.max(0, Math.min(100, Math.round((m.remainingWorst / m.hpMax) * 100)));
+        const dead = m.remainingBest <= 0;
+        return `<div class="flex items-center gap-2 text-xs">
+          <span class="w-7 shrink-0 text-[var(--color-faint)] tabular-nums">M${m.index + 1}</span>
+          <div class="flex-1 h-3 rounded bg-[var(--color-base)] overflow-hidden relative border border-[var(--color-border)]">
+            <span class="absolute inset-y-0 left-0 bg-[var(--color-hp)] opacity-40" style="width:${bestPct}%"></span>
+            <span class="absolute inset-y-0 left-0 bg-[var(--color-hp)]" style="width:${worstPct}%"></span>
+          </div>
+          <span class="w-24 shrink-0 text-right tabular-nums ${dead ? 'text-[var(--color-blood)] font-bold' : ''}">${m.remainingWorst}\u2013${m.remainingBest}<span class="text-[var(--color-faint)]">/${m.hpMax}</span></span>
+        </div>`;
+      })
+      .join('');
 
-  function renderUnitHex(): void {
-    if (!unitHexBox) return;
-    const rank = unitSel.value ? unitRanks[unitSel.value] : undefined;
-    unitHexBox.innerHTML = rank ? hexPanel(statHexagonHTML(rank, UNIT_HEX_AXES)) : '';
+    const splashRow =
+      res.splashTargetsPerShot > 0
+        ? `<div class="flex items-baseline justify-between"><span class="text-[var(--color-muted)]">Splash / hit</span><span class="tabular-nums font-semibold">${res.splashMin}\u2013${res.splashMax} <span class="text-[var(--color-faint)]">(\u00d7${res.splashTargetsPerShot})</span></span></div>`
+        : '';
+
+    simPanel.innerHTML = `
+      <div class="space-y-2 text-sm">
+        <div class="flex items-baseline justify-between">
+          <span class="text-[var(--color-muted)]">Damage / hit</span>
+          <span class="tabular-nums font-bold text-[var(--color-gold)]">${res.primaryMin}\u2013${res.primaryMax} <span class="text-[var(--color-faint)]">(\u00d7${res.totalShots})</span></span>
+        </div>
+        ${splashRow}
+        <div class="flex items-baseline justify-between text-xs text-[var(--color-faint)]">
+          <span>${opts.attackerModels} model${opts.attackerModels === 1 ? '' : 's'} \u00b7 hit ${Math.round(shownHit)}% \u00b7 crit ${Math.round(res.critChance)}% \u00b7 graze ${Math.round(res.grazeChance)}%</span>
+        </div>
+        <div class="flex items-baseline justify-between pt-1">
+          <span class="text-[var(--color-muted)]">Models killed</span>
+          <span class="tabular-nums font-black text-lg text-[var(--color-hp)]">${res.killsWorst === res.killsBest ? res.killsWorst : `${res.killsBest}\u2013${res.killsWorst}`} / ${target.models}</span>
+        </div>
+        <div class="pt-1 space-y-1">${bars}</div>
+        <p class="text-[0.7rem] text-[var(--color-faint)] pt-1">Bars show best\u2192worst remaining HP per model (discrete). Solid = guaranteed damage, light = uncertain band. Accuracy/crit/graze shown separately, not folded into the range.</p>
+      </div>`;
   }
 
   function compute(): void {
@@ -568,7 +513,6 @@ export function initCalculator(): void {
     const mem = Math.max(1, Number(members.value) || 1);
     const lostModels = Math.min(mem, Math.max(0, Number(lost.value) || 0));
     const aliveModels = Math.max(0, mem - lostModels);
-    const frontHp = curhp.value === '' ? hp : Math.max(0, Math.min(hp, Number(curhp.value) || 0));
 
     const effDamage = Math.max(0, dmg + dmgModifier);
     // Cover level 0..4 (none, 1/4, 1/2, 3/4, full). Cover reduces the attacker's
@@ -581,7 +525,12 @@ export function initCalculator(): void {
     const selWeapon = weaponById.get(Number(weaponSel.value));
     const isRangedW = !!selWeapon && selWeapon.isRanged && !selWeapon.isMelee;
     const mm = momentumMods(isRangedW);
-    const finalDamage = Math.max(0, (effDamage + (ab?.damage ?? 0)) * mm.dmgFactor);
+    // Ranged damage % buffs (e.g. Master of War +15%) apply before armour.
+    const buffRangedFactor = isRangedW && ab?.rangedDamagePct ? 1 + ab.rangedDamagePct / 100 : 1;
+    const finalDamage = Math.max(
+      0,
+      (effDamage + (ab?.damage ?? 0)) * mm.dmgFactor * buffRangedFactor,
+    );
     const finalAp = pierce + (ab?.ap ?? 0) + mm.apAdd;
     const finalArmor = Math.max(0, arm + (tb?.armor ?? 0));
     const finalEva = eva + (tb?.evasion ?? 0);
@@ -594,21 +543,6 @@ export function initCalculator(): void {
     const perAttackAvg = perHit * shotCount;
     // Expected one-round damage = average post-armor damage × hit chance × non-graze share.
     const expected = Math.round(expectedDamage(perAttackAvg, hit) * (1 - graze / 100));
-    const formulaResult = reconstructionExpected(
-      pickFormulaModel(),
-      dr,
-      shotCount,
-      hit,
-      crit,
-      graze,
-    );
-    lastFormulaResult = formulaResult;
-    const killed = Math.min(modelsKilled(perAttackAvg, hp), aliveModels);
-    const totalHp = hp * mem;
-    // HP left in the unit after this attack: pre-existing damage (lost models +
-    // a wounded front model) minus the expected damage this attack deals.
-    const currentHp = Math.max(0, aliveModels * hp - (hp - frontHp));
-    const remainingHp = Math.max(0, currentHp - expected);
 
     setText('r-perhit', `${dr.min}\u2013${dr.max}`);
     setText('r-hit', blocked ? t('calculator.cover.blocked') : `${Math.round(hit)}%`);
@@ -616,18 +550,21 @@ export function initCalculator(): void {
     setText('r-graze', `${Math.round(graze)}%`);
     setText('r-attack', `${dr.min * shotCount}\u2013${dr.max * shotCount}`);
     setText('r-expected', String(expected));
-    const formulaLabel = (formulaResult.label ?? '').split(':')[0]?.trim() ?? '';
-    setText(
-      'r-expected-model',
-      `${formulaResult.expected}${formulaLabel ? ` (${formulaLabel})` : ''}`,
-    );
-    setText('r-killed', `${killed} / ${aliveModels}`);
-    setText('r-totalhp', String(totalHp));
-    setText('r-remaining', String(remainingHp));
-    if (formulaModelNote) formulaModelNote.textContent = formulaResult.note;
-    if (formulaSteps) {
-      formulaSteps.innerHTML = formulaResult.steps.map((s) => `<li>${s}</li>`).join('');
-    }
+
+    const atkUnit = allUnits.find((u) => u.id === Number(attackerUnitSel.value));
+    renderSimPanel({
+      weapon: selWeapon,
+      finalDamage,
+      finalAp,
+      finalAcc,
+      accMod: mod,
+      finalArmor,
+      finalEva,
+      blocked,
+      attackerModels: Math.max(1, atkUnit?.members ?? 1),
+      hpPerModel: hp,
+      targetModels: aliveModels,
+    });
     updateRangeInfo();
     renderMomentum();
     syncUrl();
@@ -653,17 +590,14 @@ export function initCalculator(): void {
   attackerUnitSel.addEventListener('change', () => {
     populateWeapons();
     if (weaponSel.value) applyWeapon(Number(weaponSel.value));
-    renderWeaponHex();
     compute();
   });
   weaponSel.addEventListener('change', () => {
     if (weaponSel.value) applyWeapon(Number(weaponSel.value));
-    renderWeaponHex();
     compute();
   });
   unitSel.addEventListener('change', () => {
     if (unitSel.value) applyUnit(Number(unitSel.value));
-    renderUnitHex();
     compute();
   });
   for (const el of [
@@ -743,30 +677,7 @@ export function initCalculator(): void {
       applyUnit(Number(oldU));
     }
     populateWeapons();
-    renderWeaponHex();
-    renderUnitHex();
     compute();
-  });
-  formulaModelSel?.addEventListener('change', compute);
-  formulaCopyReport?.addEventListener('click', async () => {
-    const model = lastFormulaResult;
-    if (!model) return;
-    const lines = [
-      `Model: ${model.label}`,
-      `Expected damage (reconstruction): ${model.expected}`,
-      `Crit multiplier: ${CRIT_DAMAGE_MULT}x`,
-      `Graze multiplier: ${GRAZE_DAMAGE_MULT}x`,
-      `Inputs -> dmg:${damage.value || '0'}, acc:${accuracy.value || '0'}, ap:${ap.value || '0'}, shots:${shots.value || '1'}, armor:${armor.value || '0'}, evasion:${evasion.value || '0'}`,
-      'Order assumptions:',
-      ...model.steps.map((s, i) => `${i + 1}. ${s}`),
-    ];
-    const payload = lines.join('\n');
-    try {
-      await navigator.clipboard.writeText(payload);
-      showToast('Reconstruction report copied');
-    } catch {
-      showToast(payload);
-    }
   });
 
   document.getElementById('copy-link')?.addEventListener('click', async () => {
@@ -814,8 +725,6 @@ export function initCalculator(): void {
     applyUnit(Number(uParam));
   }
   compute();
-  renderWeaponHex();
-  renderUnitHex();
 
   // Mode toggle: one-round attack test (default) vs battle simulation.
   const oneRoundBtn = document.getElementById('mode-oneround-btn');
@@ -845,8 +754,6 @@ export function initCalculator(): void {
       renderOptions();
       populateBuffs();
       populateMomFactions();
-      renderWeaponHex();
-      renderUnitHex();
       compute();
     },
     { signal: pageSignal('calculator') },

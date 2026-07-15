@@ -1,6 +1,24 @@
 ---
+import katex from 'katex';
 import CoverShield from '../components/CoverShield.astro';
 import Base from '../layouts/Base.astro';
+
+const kx = (s: string) => katex.renderToString(s, { throwOnError: false, displayMode: false });
+const fArmor = kx(
+  String.raw`d_{\max}' = \left\lfloor d_{\max}\cdot\tfrac{10-\max(0,\,a-\text{AP})}{10}\right\rfloor,\quad d_{\min}' = \left\lfloor 0.75\,d_{\max}'\right\rfloor`,
+);
+const fCrit = kx(
+  String.raw`P_{\text{crit}} = 5\%\cdot\max(0,\text{AP}-a),\quad \text{crit}\in[\,d_{\max}'+1,\ \operatorname{round}(1.5\,d_{\max}')\,]`,
+);
+const fGraze = kx(
+  String.raw`P_{\text{graze}} = 3\%\cdot\max(0,\,a-\text{AP}),\quad \text{graze dmg} = 0.25\,\overline{d}`,
+);
+const fThroughput = kx(
+  String.raw`\text{shots} = n_\text{models}\cdot n_\text{attacks}\cdot n_\text{shots}\cdot n_\text{burst}`,
+);
+const fSplash = kx(
+  String.raw`\text{splash}\in[\,\lfloor 0.8\,d_{\min}'\rfloor,\ \lfloor(1-\text{falloff})\,d_{\max}'\rfloor\,]`,
+);
 ---
 
 <Base
@@ -31,7 +49,6 @@ import Base from '../layouts/Base.astro';
       <select id="attacker-unit" class="select mb-3"></select>
       <label class="label block mb-1.5" for="weapon" data-i18n-ui="common.weapon">Weapon</label>
       <select id="weapon" class="select mb-4"></select>
-      <div id="weapon-hex"></div>
 
       <label class="label inline-flex items-center gap-2 cursor-pointer select-none mb-4" for="show-campaign-units-calculator">
         <input id="show-campaign-units-calculator" type="checkbox" class="accent-[var(--color-gold)]" />
@@ -72,7 +89,7 @@ import Base from '../layouts/Base.astro';
           <span id="mom-faction-name" class="text-xs text-[var(--color-gold)] font-semibold">—</span>
         </div>
         <label class="label block mb-1.5" for="momentum" data-i18n-ui="calculator.momentum.value">Momentum</label>
-        <input id="momentum" class="input" type="number" min="0" max="100" value="0" inputmode="numeric" />
+        <input id="momentum" type="range" min="0" max="100" value="0" step="1" class="w-full accent-[var(--color-gold)] cursor-pointer" />
         <div class="hud-bar mt-2"><span id="mom-bar-fill" class="fill mom" style="width:0%"></span><span id="mom-bar-label" class="label">0/100</span></div>
         <p id="mom-passive" class="text-sm font-semibold mt-2"></p>
         <ul id="mom-effects" class="text-xs text-[var(--color-muted)] mt-1.5 space-y-1"></ul>
@@ -85,7 +102,6 @@ import Base from '../layouts/Base.astro';
       <h2 class="text-lg font-bold mb-4" data-i18n-ui="common.target">Target</h2>
       <label class="label block mb-1.5" for="unit" data-i18n-ui="common.unit">Unit</label>
       <select id="unit" class="select mb-4"></select>
-      <div id="unit-hex"></div>
 
       <div class="grid grid-cols-2 gap-3">
         <div>
@@ -144,44 +160,29 @@ import Base from '../layouts/Base.astro';
           <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.expected">Expected (× hit %)</span>
           <span id="r-expected" class="text-lg font-bold tabular-nums text-[var(--color-ink)]">—</span>
         </div>
-        <div class="flex items-baseline justify-between pl-3">
-          <span class="text-xs text-[var(--color-faint)]">Reconstruction expected</span>
-          <span id="r-expected-model" class="text-base font-bold tabular-nums text-[var(--color-toxin)]">—</span>
-        </div>
         <div class="border-t border-[var(--color-border)] my-3"></div>
-        <div class="flex items-baseline justify-between">
-          <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.modelsKilledRaw">Models killed (raw)</span>
-          <span id="r-killed" class="text-xl font-bold tabular-nums text-[var(--color-hp)]">—</span>
-        </div>
-        <div class="flex items-baseline justify-between">
-          <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.targetTotalHp">Target total HP</span>
-          <span id="r-totalhp" class="text-xl font-bold tabular-nums text-[var(--color-ink)]">—</span>
-        </div>
-        <div class="flex items-baseline justify-between">
-          <span class="text-sm text-[var(--color-muted)]" data-i18n-ui="calculator.result.targetRemainingHp">Target remaining HP</span>
-          <span id="r-remaining" class="text-xl font-black tabular-nums text-[var(--color-hp)]">—</span>
-        </div>
-        <p class="text-[0.7rem] text-[var(--color-faint)] pt-1">
-          Model used: each point of effective armor (armor − AP, min 0) removes 10% of the
-          weapon's max damage (max floored, then min = 0.75 × max floored). Expected damage
-          then applies hit chance and graze chance. Critical chance is shown separately;
-          critical bonus damage is not included.
-        </p>
+        <div id="sim-panel"></div>
 
-        <div class="mt-4 rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] p-3.5">
-          <div class="flex items-center justify-between gap-2">
-            <p class="text-sm font-semibold text-[var(--color-gold)]">Formula reconstruction card</p>
-            <button id="formula-copy-report" type="button" class="chip !py-0.5 !px-2 text-[11px]">Copy test report</button>
+        <details class="mt-4 rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] p-3.5">
+          <summary class="cursor-pointer text-sm font-semibold text-[var(--color-gold)]">Calculation method</summary>
+          <div class="mt-3 space-y-3 text-xs text-[var(--color-muted)]">
+            <p>Damage is discrete: the weapon's <span class="font-semibold">damage</span> stat is the max; the min is 75% of it (floored). Each point of effective armour (armour − AP, min 0) removes 10% of the max damage:</p>
+            <div class="overflow-x-auto py-1" set:html={fArmor} />
+            <p>Crit and graze are shown as separate probabilities (not folded into the damage range). Crit's upper bound uses normal rounding; armour and min use floor:</p>
+            <div class="overflow-x-auto py-1" set:html={fCrit} />
+            <div class="overflow-x-auto py-1" set:html={fGraze} />
+            <p>A full attack fires <span class="font-semibold">models × shots</span> projectiles, distributed across the target's models (see targeting below):</p>
+            <div class="overflow-x-auto py-1" set:html={fThroughput} />
+            <p class="text-[var(--color-faint)]">
+              <span class="text-[var(--color-toxin)] font-semibold">Hypothetical (unconfirmed):</span>
+              splash secondary damage is the post-armour range reduced by the weapon's falloff, floored, and applied to the N least-targeted secondary models (never single-model targets, never the primary):
+            </p>
+            <div class="overflow-x-auto py-1" set:html={fSplash} />
+            <p class="text-[var(--color-faint)]">
+              Targeting: <span class="font-semibold">Per Model</span> = each attacking model targets the least-targeted enemy model, retargeting when it dies; <span class="font-semibold">Entire Unit</span> = the whole squad focus-fires one model at a time. Overkill never carries between models.
+            </p>
           </div>
-          <label class="label block mt-2 mb-1" for="formula-model">Best-guess model</label>
-          <select id="formula-model" class="select text-sm">
-            <option value="floor-first">A: Floor-first chain (user-order style)</option>
-            <option value="post-armor-swing">B: Post-armor swing (weighted ranges)</option>
-            <option value="graze-null">C: Graze-null branch (grazes can be 0)</option>
-          </select>
-          <p id="formula-model-note" class="text-xs text-[var(--color-faint)] mt-2"></p>
-          <ol id="formula-steps" class="mt-2 space-y-1 text-xs text-[var(--color-muted)] list-decimal list-inside"></ol>
-        </div>
+        </details>
       </div>
       <button id="copy-link" type="button" class="btn w-full mt-5" data-url="" data-i18n-ui="common.copyShareableLink">
         Copy shareable link

@@ -20,7 +20,7 @@
     { "id": 59, "name": "Jump Pack", "effects": { "accuracy": -20 } },
     { "id": 102, "name": "Locus of Khorne - Rage", "effects": { "ap": 3 } },
     { "id": 166, "name": "Markerlight", "effects": { "accuracy": 40 } },
-    { "id": 176, "name": "Master of War", "effects": { "accuracy": 10 } },
+    { "id": 176, "name": "Master of War", "effects": { "accuracy": 10, "rangedDamagePct": 15 } },
     { "id": 262, "name": "Masters Are Watching", "effects": { "accuracy": 5 } },
     { "id": 198, "name": "Mental Shackles", "effects": { "accuracy": -80 } },
     { "id": 65, "name": "Paroxysm", "effects": { "accuracy": -55 } },
