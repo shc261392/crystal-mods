@@ -7,9 +7,17 @@ import factionMomentumData from '../data/faction-momentum.json';
 import factionsData from '../data/factions.json';
 import unitsData from '../data/units.json';
 import weaponsData from '../data/weapons.json';
-import { type AttackWeapon, type TargetUnit, simulateAttack } from '../lib/attack-sim';
 import {
+  type AttackWeapon,
+  type RollResult,
+  type TargetUnit,
+  rollAttack,
+  simulateAttack,
+} from '../lib/attack-sim';
+import {
+  GRAZE_DAMAGE_MULT,
   critChance,
+  critDamageRange,
   damagePerHitAfterArmor,
   damageRange,
   damageRangeAfterArmor,
@@ -463,6 +471,30 @@ export function initCalculator(): void {
   // kills range. Uses the shared attack-sim (group fire + splash + targeting).
   const simPanel = document.getElementById('sim-panel');
 
+  // Whether the min/max band includes crit/graze extremes (toggle in the panel).
+  let simExtremes = false;
+  // Last sim inputs, captured so the dice-roll button can re-run one trial.
+  let lastSim: {
+    weapon: AttackWeapon;
+    target: TargetUnit;
+    mods: { attackerModels: number; accuracyMod: number };
+  } | null = null;
+
+  // A unit-detail-style HP bar: green fill + white HP number centred on the bar
+  // (no red). Solid fill = guaranteed remaining HP, lighter fill = uncertain band.
+  function hpBar(idx: number, worst: number, best: number, hpMax: number): string {
+    const pct = (v: number) => Math.max(0, Math.min(100, Math.round((v / hpMax) * 100)));
+    const label = worst === best ? `${worst}` : `${worst}\u2013${best}`;
+    return `<div class="flex items-center gap-2">
+      <span class="w-7 shrink-0 text-[var(--color-faint)] tabular-nums text-xs">M${idx}</span>
+      <div class="hud-bar !h-5 flex-1">
+        <span class="fill hp opacity-40" style="width:${pct(best)}%"></span>
+        <span class="fill hp" style="width:${pct(worst)}%"></span>
+        <span class="label">${label}<span class="font-normal opacity-70">/${hpMax}</span></span>
+      </div>
+    </div>`;
+  }
+
   // Impact + targeting badges shown under the weapon picker, each with a
   // hover tooltip explaining the mechanic (uses the site-wide data-tooltip).
   const weaponMetaEl = document.getElementById('weapon-meta');
@@ -534,31 +566,28 @@ export function initCalculator(): void {
       armor: opts.finalArmor,
       evasion: opts.finalEva,
     };
-    const res = simulateAttack(simWeapon, target, {
+    const simMods = {
       attackerModels: opts.attackerModels,
       accuracyMod: opts.accMod,
-    });
+    };
+    // Keep the current sim inputs so the dice-roll button can re-run one trial.
+    lastSim = { weapon: simWeapon, target, mods: simMods };
+    const res = simulateAttack(simWeapon, target, { ...simMods, extremes: simExtremes });
     const shownHit = opts.blocked ? 0 : res.hitChance;
 
     const bars = res.models
-      .map((m) => {
-        const bestPct = Math.max(0, Math.min(100, Math.round((m.remainingBest / m.hpMax) * 100)));
-        const worstPct = Math.max(0, Math.min(100, Math.round((m.remainingWorst / m.hpMax) * 100)));
-        const dead = m.remainingBest <= 0;
-        return `<div class="flex items-center gap-2 text-xs">
-          <span class="w-7 shrink-0 text-[var(--color-faint)] tabular-nums">M${m.index + 1}</span>
-          <div class="flex-1 h-3 rounded bg-[var(--color-base)] overflow-hidden relative border border-[var(--color-border)]">
-            <span class="absolute inset-y-0 left-0 bg-[var(--color-hp)] opacity-40" style="width:${bestPct}%"></span>
-            <span class="absolute inset-y-0 left-0 bg-[var(--color-hp)]" style="width:${worstPct}%"></span>
-          </div>
-          <span class="w-24 shrink-0 text-right tabular-nums ${dead ? 'text-[var(--color-blood)] font-bold' : ''}">${m.remainingWorst}\u2013${m.remainingBest}<span class="text-[var(--color-faint)]">/${m.hpMax}</span></span>
-        </div>`;
-      })
+      .map((m) => hpBar(m.index + 1, m.remainingWorst, m.remainingBest, m.hpMax))
       .join('');
+
+    // Damage range shown; with crit/graze it widens to graze-of-min … crit-of-max.
+    const dmgMin = simExtremes ? Math.floor(res.primaryMin * GRAZE_DAMAGE_MULT) : res.primaryMin;
+    const dmgMax = simExtremes ? critDamageRange(res.primaryMax).max : res.primaryMax;
+    const splMin = simExtremes ? Math.floor(res.splashMin * GRAZE_DAMAGE_MULT) : res.splashMin;
+    const splMax = simExtremes ? critDamageRange(res.splashMax).max : res.splashMax;
 
     const splashRow =
       w?.impactType === 'splash' && (w?.splashModels ?? 0) > 1
-        ? `<div class="flex items-baseline justify-between"><span class="text-[var(--color-muted)]">Splash / hit</span><span class="tabular-nums font-semibold">${res.splashMin}\u2013${res.splashMax} <span class="text-[var(--color-faint)]">(\u00d7${res.splashTargetsPerShot})</span></span></div>${
+        ? `<div class="flex items-baseline justify-between"><span class="text-[var(--color-muted)]">Splash / hit</span><span class="tabular-nums font-semibold">${splMin}\u2013${splMax} <span class="text-[var(--color-faint)]">(\u00d7${res.splashTargetsPerShot})</span></span></div>${
             res.splashTargetsPerShot === 0
               ? '<p class="text-[0.7rem] text-[var(--color-faint)] -mt-1">Splash needs a multi-model target to spill onto.</p>'
               : ''
@@ -569,19 +598,55 @@ export function initCalculator(): void {
       <div class="space-y-2 text-sm">
         <div class="flex items-baseline justify-between">
           <span class="text-[var(--color-muted)]">Damage / hit</span>
-          <span class="tabular-nums font-bold text-[var(--color-gold)]">${res.primaryMin}\u2013${res.primaryMax} <span class="text-[var(--color-faint)]">(\u00d7${res.totalShots})</span></span>
+          <span class="tabular-nums font-bold text-[var(--color-gold)]">${dmgMin}\u2013${dmgMax} <span class="text-[var(--color-faint)]">(\u00d7${res.totalShots})</span></span>
         </div>
         ${splashRow}
         <div class="flex items-baseline justify-between text-xs text-[var(--color-faint)]">
           <span>${opts.attackerModels} model${opts.attackerModels === 1 ? '' : 's'} \u00b7 hit ${Math.round(shownHit)}% \u00b7 crit ${Math.round(res.critChance)}% \u00b7 graze ${Math.round(res.grazeChance)}%</span>
         </div>
-        <div class="flex items-baseline justify-between pt-1">
+        <div class="flex items-center justify-between pt-1 gap-2">
           <span class="text-[var(--color-muted)]">Models killed</span>
           <span class="tabular-nums font-black text-lg text-[var(--color-hp)]">${res.killsWorst === res.killsBest ? res.killsWorst : `${res.killsBest}\u2013${res.killsWorst}`} / ${target.models}</span>
         </div>
+        <label class="flex items-center justify-end gap-1.5 text-xs text-[var(--color-muted)] cursor-pointer select-none">
+          <input type="checkbox" data-sim-extremes class="accent-[var(--color-gold)]" ${simExtremes ? 'checked' : ''} />
+          <span>Include crit / graze in range</span>
+        </label>
         <div class="pt-1 space-y-1">${bars}</div>
-        <p class="text-[0.7rem] text-[var(--color-faint)] pt-1">Bars show best\u2192worst remaining HP per model (discrete). Solid = guaranteed damage, light = uncertain band. Accuracy/crit/graze shown separately, not folded into the range.</p>
+        <p class="text-[0.7rem] text-[var(--color-faint)] pt-1">${
+          simExtremes
+            ? 'Range now spans a graze of the lowest roll to a crit of the highest. Lighter bar = uncertain band, solid = guaranteed remaining HP.'
+            : 'Normal damage only. Toggle crit/graze to see the true min\u2013max. Lighter bar = uncertain band, solid = guaranteed remaining HP.'
+        }</p>
       </div>`;
+  }
+
+  const diceResult = document.getElementById('dice-result');
+
+  // Render one random dice-roll trial into the dice card.
+  function renderDiceRoll(): void {
+    if (!diceResult) return;
+    if (!lastSim) {
+      diceResult.innerHTML =
+        '<p class="text-xs text-[var(--color-faint)]">Pick an attacker weapon and target first.</p>';
+      return;
+    }
+    const roll: RollResult = rollAttack(lastSim.weapon, lastSim.target, lastSim.mods);
+    const bars = roll.models
+      .map((m) => hpBar(m.index + 1, m.remaining, m.remaining, m.hpMax))
+      .join('');
+    const stat = (label: string, value: string, cls = '') =>
+      `<div class="flex flex-col"><span class="text-[0.65rem] uppercase tracking-wide text-[var(--color-faint)]">${label}</span><span class="tabular-nums font-bold ${cls}">${value}</span></div>`;
+    diceResult.innerHTML = `
+      <div class="grid grid-cols-3 gap-2 mb-3">
+        ${stat('Hits', `${roll.hits}/${roll.shots}`)}
+        ${stat('Crits', String(roll.crits), 'text-[var(--color-gold)]')}
+        ${stat('Grazes', String(roll.grazes), 'text-[var(--color-momentum)]')}
+        ${stat('Misses', String(roll.misses))}
+        ${stat('Damage', String(roll.totalDamage))}
+        ${stat('Killed', `${roll.kills} / ${roll.models.length}`, 'text-[var(--color-hp)]')}
+      </div>
+      <div class="space-y-1">${bars}</div>`;
   }
 
   function compute(): void {
@@ -685,6 +750,17 @@ export function initCalculator(): void {
     if (unitSel.value) applyUnit(Number(unitSel.value));
     compute();
   });
+
+  // Crit/graze extremes toggle (delegated — the sim panel is re-rendered).
+  simPanel?.addEventListener('change', (e) => {
+    const cb = (e.target as HTMLElement)?.closest<HTMLInputElement>('[data-sim-extremes]');
+    if (!cb) return;
+    simExtremes = cb.checked;
+    compute();
+  });
+  // Dice-roll button: one random trial using the current sim inputs.
+  document.getElementById('dice-roll')?.addEventListener('click', renderDiceRoll);
+
   for (const el of [
     damage,
     accuracy,

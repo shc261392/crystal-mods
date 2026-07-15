@@ -184,6 +184,15 @@ const fSplash = kx(
             </p>
           </div>
         </details>
+
+        <div class="mt-4 rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] p-3.5">
+          <div class="flex items-center justify-between gap-3 mb-1">
+            <span class="text-sm font-semibold text-[var(--color-gold)]">Dice roll test</span>
+            <button id="dice-roll" type="button" class="btn text-sm !py-1.5 !px-3">🎲 Roll dice</button>
+          </div>
+          <p class="text-xs text-[var(--color-faint)]">One random trial using the real hit, crit and graze probabilities — each shot rolls its own damage.</p>
+          <div id="dice-result" class="mt-3"></div>
+        </div>
       </div>
       <button id="copy-link" type="button" class="btn w-full mt-5" data-url="" data-i18n-ui="common.copyShareableLink">
         Copy shareable link

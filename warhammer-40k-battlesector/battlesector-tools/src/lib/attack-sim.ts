@@ -16,7 +16,13 @@
  * × (1 − falloff), floored, applied to secondary models only) is HYPOTHETICAL
  * and pending confirmation against the game.
  */
-import { critChance, damageRangeAfterArmor, grazeChance } from './combat';
+import {
+  GRAZE_DAMAGE_MULT,
+  critChance,
+  critDamageRange,
+  damageRangeAfterArmor,
+  grazeChance,
+} from './combat';
 
 /**
  * Post-kill targeting method (game enum `BallisticWeaponTargetType`). Only two
@@ -63,6 +69,13 @@ export interface AttackModifiers {
   accuracyMod?: number;
   /** Number of models in the attacking squad, each firing the weapon. */
   attackerModels?: number;
+  /**
+   * When true, the min/max remaining-HP band accounts for crit and graze:
+   * the best case (defender survives most) uses a graze of the minimum roll,
+   * and the worst case uses a crit of the maximum roll. Default false = the
+   * plain normal damage range.
+   */
+  extremes?: boolean;
 }
 
 export interface ModelOutcome {
@@ -258,13 +271,22 @@ export function simulateAttack(
   const shotsPerModel = weaponShots(weapon);
   const targeting: TargetingType = weapon.targetType ?? 'fixedPerMember';
 
+  // With `extremes`, the best case (defender survives most) uses a GRAZE of the
+  // minimum roll (0.25× floored) and the worst case uses a CRIT of the maximum
+  // roll — so the band shows the true lowest/highest damage the game can roll.
+  const extremes = mods.extremes ?? false;
+  const bestPrimary = extremes ? Math.floor(primaryMin * GRAZE_DAMAGE_MULT) : primaryMin;
+  const bestSplash = extremes ? Math.floor(splash.min * GRAZE_DAMAGE_MULT) : splash.min;
+  const worstPrimary = extremes ? critDamageRange(primaryMax).max : primaryMax;
+  const worstSplash = extremes && splash.max > 0 ? critDamageRange(splash.max).max : splash.max;
+
   // Best case for the defender = every shot rolls MIN damage; worst = MAX.
   const best = distributePass(
     target,
     attackerModels,
     shotsPerModel,
-    primaryMin,
-    splash.min,
+    bestPrimary,
+    bestSplash,
     splashTargetsPerShot,
     targeting,
   );
@@ -272,8 +294,8 @@ export function simulateAttack(
     target,
     attackerModels,
     shotsPerModel,
-    primaryMax,
-    splash.max,
+    worstPrimary,
+    worstSplash,
     splashTargetsPerShot,
     targeting,
   );
@@ -304,5 +326,170 @@ export function simulateAttack(
     models,
     killsBest: best.filter((m) => m.hp <= 0).length,
     killsWorst: worst.filter((m) => m.hp <= 0).length,
+  };
+}
+
+export interface RollModelOutcome {
+  index: number;
+  hpMax: number;
+  remaining: number;
+  primaryHits: number;
+  splashHits: number;
+}
+
+export interface RollResult {
+  models: RollModelOutcome[];
+  kills: number;
+  /** Primary shots fired by the whole squad. */
+  shots: number;
+  hits: number;
+  misses: number;
+  /** Crit / graze / normal counts across all damage instances (primary + splash). */
+  crits: number;
+  grazes: number;
+  normals: number;
+  totalDamage: number;
+}
+
+function randInt(a: number, b: number): number {
+  if (b <= a) return a;
+  return a + Math.floor(Math.random() * (b - a + 1));
+}
+
+/**
+ * Roll ONE random trial of the attack using the real probabilities: each primary
+ * shot rolls to hit (accuracy − evasion), and every landing hit (primary and each
+ * splash) independently rolls crit / graze / normal and a discrete damage value.
+ * Returns the resulting per-model HP plus a tally of hits/crits/grazes. Unlike
+ * simulateAttack (which reports the deterministic best→worst band), this is a
+ * single stochastic sample for the dice-roll button.
+ */
+export function rollAttack(
+  weapon: AttackWeapon,
+  target: TargetUnit,
+  mods: AttackModifiers = {},
+): RollResult {
+  const damage = Math.max(0, weapon.damage + (mods.damageBonus ?? 0));
+  const ap = Math.max(0, weapon.armorPiercing + (mods.apBonus ?? 0));
+  const attackerModels = Math.max(1, mods.attackerModels ?? 1);
+  const { min: pMin, max: pMax } = damageRangeAfterArmor(damage, target.armor, ap);
+  const pCrit = critDamageRange(pMax);
+  const withSplash = hasSplash(weapon);
+  const splash = withSplash ? splashRange(weapon, pMin, pMax) : { min: 0, max: 0 };
+  const sCrit = withSplash ? critDamageRange(splash.max) : { min: 0, max: 0 };
+  const splashTargets = withSplash
+    ? Math.min((weapon.splashModels ?? 1) - 1, Math.max(0, target.models - 1))
+    : 0;
+  const baseAcc = weapon.isMelee && weapon.accuracy <= 0 ? 80 : weapon.accuracy;
+  const hit = Math.max(0, Math.min(100, baseAcc + (mods.accuracyMod ?? 0) - target.evasion));
+  const crit = critChance(0, ap, target.armor);
+  const graze = grazeChance(ap, target.armor);
+  const targeting: TargetingType = weapon.targetType ?? 'fixedPerMember';
+  const shotsPerModel = weaponShots(weapon);
+
+  const models: PassModel[] = Array.from({ length: target.models }, () => ({
+    hp: target.hpPerModel,
+    targeted: 0,
+    primaryHits: 0,
+    splashHits: 0,
+  }));
+
+  const stats = { shots: 0, hits: 0, misses: 0, crits: 0, grazes: 0, normals: 0, totalDamage: 0 };
+
+  const rollDamage = (
+    minV: number,
+    maxV: number,
+    critBand: { min: number; max: number },
+  ): number => {
+    const r = Math.random() * 100;
+    if (r < crit) {
+      stats.crits++;
+      return randInt(critBand.min, critBand.max);
+    }
+    if (r < crit + graze) {
+      stats.grazes++;
+      return Math.floor(randInt(minV, maxV) * GRAZE_DAMAGE_MULT);
+    }
+    stats.normals++;
+    return randInt(minV, maxV);
+  };
+
+  const applySplash = (primaryIdx: number): void => {
+    if (splashTargets <= 0) return;
+    const localHit = new Set<number>([primaryIdx]);
+    let placed = 0;
+    while (placed < splashTargets) {
+      const pick = leastTargeted(models, localHit);
+      const sm = models[pick];
+      if (!sm) break;
+      const dmg = rollDamage(splash.min, splash.max, sCrit);
+      const dealt = Math.min(dmg, sm.hp);
+      sm.hp = Math.max(0, sm.hp - dmg);
+      stats.totalDamage += dealt;
+      sm.splashHits++;
+      sm.targeted++;
+      localHit.add(pick);
+      placed++;
+    }
+  };
+
+  const fireShot = (i: number): void => {
+    const pm = models[i];
+    if (!pm) return;
+    stats.shots++;
+    pm.targeted++;
+    if (Math.random() * 100 >= hit) {
+      stats.misses++;
+      return;
+    }
+    stats.hits++;
+    pm.primaryHits++;
+    const dmg = rollDamage(pMin, pMax, pCrit);
+    const dealt = Math.min(dmg, pm.hp);
+    pm.hp = Math.max(0, pm.hp - dmg);
+    stats.totalDamage += dealt;
+    applySplash(i);
+  };
+
+  const noExclude = new Set<number>();
+  if (targeting === 'fixedEntireUnit') {
+    const totalShots = attackerModels * shotsPerModel;
+    for (let s = 0; s < totalShots; s++) {
+      let t = -1;
+      for (let i = 0; i < target.models; i++) {
+        const m = models[i];
+        if (m && m.hp > 0) {
+          t = i;
+          break;
+        }
+      }
+      if (t === -1) break;
+      fireShot(t);
+    }
+  } else {
+    for (let m = 0; m < attackerModels; m++) {
+      let t = leastTargeted(models, noExclude);
+      if (t === -1) break;
+      for (let s = 0; s < shotsPerModel; s++) {
+        const cur = models[t];
+        if (!cur || cur.hp <= 0) {
+          t = leastTargeted(models, noExclude);
+          if (t === -1) break;
+        }
+        fireShot(t);
+      }
+    }
+  }
+
+  return {
+    models: models.map((m, i) => ({
+      index: i,
+      hpMax: target.hpPerModel,
+      remaining: m.hp,
+      primaryHits: m.primaryHits,
+      splashHits: m.splashHits,
+    })),
+    kills: models.filter((m) => m.hp <= 0).length,
+    ...stats,
   };
 }
