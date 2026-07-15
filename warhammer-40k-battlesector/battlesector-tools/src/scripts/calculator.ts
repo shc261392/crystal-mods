@@ -17,9 +17,12 @@ import {
   grazeChance,
   hitChance,
 } from '../lib/combat';
+import { factionColor } from '../lib/data';
 import type { Unit, Weapon } from '../lib/types';
 import { t, unitName, weaponName } from './i18n';
+import { getFactionEmblem, getUnitPortrait, getWeaponPortrait } from './images';
 import { pageSignal } from './reinit';
+import { type ItemMeta, enhanceSelect } from './unit-combobox';
 
 interface BuffEffect {
   accuracy?: number;
@@ -386,6 +389,48 @@ export function initCalculator(): void {
   populateBuffs();
   populateMomFactions();
 
+  // Filterable icon+name pickers layered over the native unit/weapon selects.
+  const unitMeta = (value: string): ItemMeta => {
+    const u = allUnits.find((x) => x.id === Number(value));
+    if (!u) return {};
+    return {
+      icon: getUnitPortrait(u.name, u.portrait) ?? getFactionEmblem(u.faction),
+      factionId: String(u.faction),
+      factionName: u.factionName,
+    };
+  };
+  const weaponMeta = (value: string): ItemMeta => {
+    const wp = weaponById.get(Number(value));
+    return { icon: wp ? getWeaponPortrait(wp.icon) : null };
+  };
+  const unitFactions = [...new Map(allUnits.map((u) => [u.faction, u.factionName])).entries()]
+    .map(([id, name]) => ({ id: String(id), name, color: factionColor(name) }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+  const searchPh = t('common.searchPlaceholder');
+  const allLabel = t('common.all');
+  const attackerCombo = enhanceSelect(attackerUnitSel, {
+    metaFor: unitMeta,
+    factions: unitFactions,
+    searchPlaceholder: searchPh,
+    allLabel,
+  });
+  const targetCombo = enhanceSelect(unitSel, {
+    metaFor: unitMeta,
+    factions: unitFactions,
+    searchPlaceholder: searchPh,
+    allLabel,
+  });
+  const weaponCombo = enhanceSelect(weaponSel, {
+    metaFor: weaponMeta,
+    searchPlaceholder: searchPh,
+    allLabel,
+  });
+  function refreshCombos(): void {
+    attackerCombo.refresh();
+    targetCombo.refresh();
+    weaponCombo.refresh();
+  }
+
   function applyWeapon(id: number): void {
     const w = weapons.find((x) => x.id === id);
     if (!w) return;
@@ -567,6 +612,7 @@ export function initCalculator(): void {
     });
     updateRangeInfo();
     renderMomentum();
+    refreshCombos();
     syncUrl();
   }
 
