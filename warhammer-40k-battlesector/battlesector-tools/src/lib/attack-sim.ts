@@ -267,18 +267,23 @@ export function simulateAttack(
 
   const baseAcc = weapon.isMelee && weapon.accuracy <= 0 ? 80 : weapon.accuracy;
   const hit = Math.max(0, Math.min(100, baseAcc + (mods.accuracyMod ?? 0) - target.evasion));
+  const critPct = critChance(0, ap, target.armor);
+  const grazePct = grazeChance(ap, target.armor);
 
   const shotsPerModel = weaponShots(weapon);
   const targeting: TargetingType = weapon.targetType ?? 'fixedPerMember';
 
   // With `extremes`, the best case (defender survives most) uses a GRAZE of the
   // minimum roll (0.25× floored) and the worst case uses a CRIT of the maximum
-  // roll — so the band shows the true lowest/highest damage the game can roll.
+  // roll — but only for outcomes that can actually occur: graze widens the min
+  // only when graze chance > 0, and crit widens the max only when crit chance > 0.
   const extremes = mods.extremes ?? false;
-  const bestPrimary = extremes ? Math.floor(primaryMin * GRAZE_DAMAGE_MULT) : primaryMin;
-  const bestSplash = extremes ? Math.floor(splash.min * GRAZE_DAMAGE_MULT) : splash.min;
-  const worstPrimary = extremes ? critDamageRange(primaryMax).max : primaryMax;
-  const worstSplash = extremes && splash.max > 0 ? critDamageRange(splash.max).max : splash.max;
+  const useGraze = extremes && grazePct > 0;
+  const useCrit = extremes && critPct > 0;
+  const bestPrimary = useGraze ? Math.floor(primaryMin * GRAZE_DAMAGE_MULT) : primaryMin;
+  const bestSplash = useGraze ? Math.floor(splash.min * GRAZE_DAMAGE_MULT) : splash.min;
+  const worstPrimary = useCrit ? critDamageRange(primaryMax).max : primaryMax;
+  const worstSplash = useCrit && splash.max > 0 ? critDamageRange(splash.max).max : splash.max;
 
   // Best case for the defender = every shot rolls MIN damage; worst = MAX.
   const best = distributePass(
@@ -316,8 +321,8 @@ export function simulateAttack(
   return {
     totalShots,
     hitChance: hit,
-    critChance: critChance(0, ap, target.armor),
-    grazeChance: grazeChance(ap, target.armor),
+    critChance: critPct,
+    grazeChance: grazePct,
     primaryMin,
     primaryMax,
     splashMin: splash.min,

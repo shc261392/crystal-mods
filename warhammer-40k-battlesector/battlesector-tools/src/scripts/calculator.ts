@@ -579,11 +579,15 @@ export function initCalculator(): void {
       .map((m) => hpBar(m.index + 1, m.remainingWorst, m.remainingBest, m.hpMax))
       .join('');
 
-    // Damage range shown; with crit/graze it widens to graze-of-min … crit-of-max.
-    const dmgMin = simExtremes ? Math.floor(res.primaryMin * GRAZE_DAMAGE_MULT) : res.primaryMin;
-    const dmgMax = simExtremes ? critDamageRange(res.primaryMax).max : res.primaryMax;
-    const splMin = simExtremes ? Math.floor(res.splashMin * GRAZE_DAMAGE_MULT) : res.splashMin;
-    const splMax = simExtremes ? critDamageRange(res.splashMax).max : res.splashMax;
+    // Damage range shown; with crit/graze it widens to graze-of-min … crit-of-max,
+    // but only for outcomes that can occur (graze% > 0 widens the min, crit% > 0
+    // the max). If neither can happen, the toggle leaves the normal range as-is.
+    const canGraze = simExtremes && res.grazeChance > 0;
+    const canCrit = simExtremes && res.critChance > 0;
+    const dmgMin = canGraze ? Math.floor(res.primaryMin * GRAZE_DAMAGE_MULT) : res.primaryMin;
+    const dmgMax = canCrit ? critDamageRange(res.primaryMax).max : res.primaryMax;
+    const splMin = canGraze ? Math.floor(res.splashMin * GRAZE_DAMAGE_MULT) : res.splashMin;
+    const splMax = canCrit ? critDamageRange(res.splashMax).max : res.splashMax;
 
     const splashRow =
       w?.impactType === 'splash' && (w?.splashModels ?? 0) > 1
@@ -615,7 +619,15 @@ export function initCalculator(): void {
         <div class="pt-1 space-y-1">${bars}</div>
         <p class="text-[0.7rem] text-[var(--color-faint)] pt-1">${
           simExtremes
-            ? 'Range now spans a graze of the lowest roll to a crit of the highest. Lighter bar = uncertain band, solid = guaranteed remaining HP.'
+            ? `${
+                canGraze && canCrit
+                  ? 'Range spans a graze of the lowest roll to a crit of the highest.'
+                  : canGraze
+                    ? 'Range includes a graze of the lowest roll (crit can\u2019t occur here).'
+                    : canCrit
+                      ? 'Range includes a crit of the highest roll (graze can\u2019t occur here).'
+                      : 'Neither crit nor graze can occur here, so the range is unchanged.'
+              } Lighter bar = uncertain band, solid = guaranteed remaining HP.`
             : 'Normal damage only. Toggle crit/graze to see the true min\u2013max. Lighter bar = uncertain band, solid = guaranteed remaining HP.'
         }</p>
       </div>`;
