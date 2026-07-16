@@ -121,3 +121,5 @@ data/
 !warhammer-40k-battlesector/battlesector-tools/src/data/
 warhammer-40k-battlesector/battlesector-tools/public/ability-icons/
 *.sga
+# Intent-First workflow data (ephemeral — do not commit)
+.intent-first/workflows/

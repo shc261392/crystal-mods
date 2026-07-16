@@ -32,3 +32,5 @@ This file mirrors them for GitHub Copilot's auto-loading convention. **Read
 - Unity / BepInEx → [`docs/modding/unity-bepinex.md`](../docs/modding/unity-bepinex.md)
 - Unreal → [`docs/modding/unreal.md`](../docs/modding/unreal.md)
 - Roadmap → [`docs/roadmap/crystal-mod-manager.md`](../docs/roadmap/crystal-mod-manager.md)
+
+For the Intent-First Agentic Workflow, see `.intent-first/rules.md`.
