@@ -126,7 +126,7 @@ function installModContent(files) {
       instructions: normalized.map((source) => ({
         type: 'copy',
         source,
-        destination: path.normalize(source),
+        destination: source,
       })),
     });
   }
@@ -147,18 +147,18 @@ function installModContent(files) {
         return {
           type: 'copy',
           source,
-          destination: path.normalize(relative),
+          destination: relative,
         };
       }),
     });
   }
 
-  // Fallback — Deploy files as-is
+  // Fallback — Deploy files as-is (forward slashes for consistency)
   return Promise.resolve({
     instructions: normalized.map((source) => ({
       type: 'copy',
       source,
-      destination: path.normalize(source),
+      destination: source,
     })),
   });
 }

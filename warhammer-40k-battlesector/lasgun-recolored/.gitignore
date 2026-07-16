@@ -1,0 +1,6 @@
+# Build artifacts — never commit large patched bundles or zips
+payload/
+dist/
+vanilla/
+*.bundle
+__pycache__/

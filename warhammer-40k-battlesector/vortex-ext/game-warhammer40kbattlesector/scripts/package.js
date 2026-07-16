@@ -23,7 +23,7 @@ fs.mkdirSync(distDir, { recursive: true });
 const out = path.join(distDir, `${slug}-${version}.zip`);
 try { fs.unlinkSync(out); } catch (e) { /* not present */ }
 
-const files = ['info.json', 'index.js', 'gameart.png', 'README.md'];
+const files = ['info.json', 'index.js', 'gameart.jpg', 'README.md'];
 for (const f of files) {
   if (!fs.existsSync(path.join(here, f))) {
     if (f === 'README.md') continue; // README is optional
