@@ -16,7 +16,15 @@ linked under "Progressive disclosure" below.
 3. **No silent guessing**: if your confidence in a fact (file path, API shape,
    command flag, game identifier, mod compatibility) is **below 90%**, stop and
    verify — read the source, fetch the doc, or ask the user.
-4. **Reversibility first**: prefer non-destructive operations. For anything
+4. **Validate before implementing**: during debugging/investigation, gather data
+   and validate hypotheses BEFORE implementing fixes. If you find yourself
+   creating automated fix scripts during root cause analysis, STOP and ask the
+   user. Debugging requires patience; "done" must mean "correct," not just "fast."
+5. **Data modifications require approval**: NEVER modify game data files
+   (Engine.ucs, .sga, fonts, save files, configs) without explicit user approval,
+   especially during debugging. Always maintain backups, document changes, and
+   test manually before automating.
+6. **Reversibility first**: prefer non-destructive operations. For anything
    irreversible (force push, public repo flip, deleting backups, dropping
    `.sga`/`.pak` originals) confirm with the user.
 5. **Respect platform priorities**: Windows 11 is primary, WSL2 is the dev
