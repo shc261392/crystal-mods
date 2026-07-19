@@ -134,9 +134,8 @@ your game directory.
 
 ## Notes / limitations
 
-- Balance: 50 shots × 8 damage is intentionally extreme (sandbox/fun mod).
-- Multiplayer: all players would need the same mod; use in singleplayer.
-- Game updates that repackage the bundles will require rebuilding from the new
-  vanilla files.
-- Requires Battlesector **1.7.4**. Weapon id / path ids were verified against
-  that build; other versions may differ.
+- **Multiplayer**: Mod modifies core game files. **NOT tested, NOT recommended** for multiplayer — disable before playing online. Using in multiplayer is **entirely at your own risk**.
+- Visual: The recolour has not been tested in-game yet — the shade/brightness may need tuning.
+- Balance: The optional stat boost (50 shots × 8 damage × 2 AP) is intentionally extreme (sandbox/fun mod).
+- Game updates that repackage the bundles will require rebuilding from the new vanilla files.
+- Requires Battlesector **1.7.4**. Weapon id / path ids were verified against that build; other versions may differ.

@@ -21,6 +21,7 @@ FONT     ?= noto-sans-tc
 SIZE     ?= 34
 PROFILE  ?=
 MODE     ?= fallback-only
+FONT_SIZE_INCREASE ?= 4  ## Font size adjustment (+4 = size 36, matches v1.0.5 readability; 0=vanilla size 32)
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Setup
@@ -113,11 +114,36 @@ EXT_VER   := $(shell python3 -c "import json,pathlib; print(json.loads(pathlib.P
 EXT_NAME  := vortex-ext-$(EXT_ID)-v$(EXT_VER)
 
 # ─────────────────────────────────────────────────────────────────────────────
+# Linting & Formatting
+# ─────────────────────────────────────────────────────────────────────────────
+
+.PHONY: lint
+lint: ## Lint and format all Python scripts with Ruff
+	@echo "▶ Running Ruff linter and formatter..."
+	@cd $(CURDIR)/../.. && /home/shado/.local/bin/uv tool run ruff check --fix dawn-of-war-de/unofficial-tc-patch/$(SCRIPTS)/*.py
+	@cd $(CURDIR)/../.. && /home/shado/.local/bin/uv tool run ruff format dawn-of-war-de/unofficial-tc-patch/$(SCRIPTS)/*.py
+	@echo "✓ All Python scripts linted and formatted"
+
+.PHONY: lint-check
+lint-check: ## Check linting without fixing
+	@cd $(CURDIR)/../.. && /home/shado/.local/bin/uv tool run ruff check dawn-of-war-de/unofficial-tc-patch/$(SCRIPTS)/*.py
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SGA Build
+# ─────────────────────────────────────────────────────────────────────────────
+
+.PHONY: rebuild
+rebuild: ## Rebuild EnginLocMod.sga from vanilla Chinese locale SGA
+	@echo "▶ Rebuilding SGA (FONT_SIZE_INCREASE=$(FONT_SIZE_INCREASE))..."
+	@FONT_SIZE_INCREASE=$(FONT_SIZE_INCREASE) bash scripts/build_sga.sh
+	@echo "✓ EnginLocMod.sga rebuilt"
+
+# ─────────────────────────────────────────────────────────────────────────────
 # Packaging
 # ─────────────────────────────────────────────────────────────────────────────
 
-.PHONY: package
-package: ## Build distributable mod archive (files packaged with full deployment paths)
+.PHONY: build
+build: rebuild ## Build complete distribution (rebuild SGA + package ZIP)
 	@echo "▶ Packaging $(PKG_NAME).zip ..."
 	@rm -rf "$(DIST_DIR)/$(PKG_NAME)" "$(DIST_DIR)/$(PKG_NAME).zip"
 	@mkdir -p "$(DIST_DIR)/$(PKG_NAME)/Engine/Locale/Chinese"
@@ -127,6 +153,9 @@ package: ## Build distributable mod archive (files packaged with full deployment
 	@echo "✓ $(DIST_DIR)/$(PKG_NAME).zip"
 	@echo "  Size: $$(du -sh "$(DIST_DIR)/$(PKG_NAME).zip" | cut -f1)"
 	@echo "  Files: $$(find "$(DIST_DIR)/$(PKG_NAME)" -type f | wc -l)"
+
+.PHONY: package
+package: build ## Alias for 'build' (backward compatibility)
 
 
 .PHONY: finalize-release

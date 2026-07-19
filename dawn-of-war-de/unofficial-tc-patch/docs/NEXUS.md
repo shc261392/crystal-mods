@@ -11,7 +11,7 @@ Copy each section into the corresponding Nexus Mods field.
 
 | File | Where to get it |
 |------|----------------|
-| `wh40k-dow-de-tc-mod-v1.0.2.zip` | Run `make package` → `.copilot_workspace/dist/` |
+| `wh40k-dow-de-tc-mod-v1.0.7.zip` | Run `make build` → `dist/` |
 
 **Do NOT upload the Vortex extension zip to Nexus** — that goes separately (see Section 2).
 
@@ -20,10 +20,10 @@ Copy each section into the corresponding Nexus Mods field.
 1. Go to <https://www.nexusmods.com/warhammerdawnofwardefinitiveedition>
 2. Log in → click **Upload a mod**
 3. Fill in the fields using the content below
-4. Under **Files**, click **Add file** → upload `wh40k-dow-de-tc-mod-v1.0.2.zip`
-   - File name: `wh40k-dow-de-tc-mod-v1.0.2`
-   - Version: `1.0.2`
-   - Description: `Main mod archive — unofficial TC patch (fonts, art, sound, Engine.ucs)`
+4. Under **Files**, click **Add file** → upload `wh40k-dow-de-tc-mod-v1.0.7.zip`
+   - File name: `wh40k-dow-de-tc-mod-v1.0.7`
+   - Version: `1.0.7`
+   - Description: `Main mod archive — unofficial TC patch (fonts, localization, SGA)`
 5. Publish the mod
 6. Note the mod ID from the URL (e.g. `.../mods/42` → ID is `42`)
 7. Update `mod/info.json` with the real mod ID
@@ -37,12 +37,12 @@ The Vortex game extension is hosted on Nexus Mods, not the main mod page, and is
 ### Steps
 
 1. Go to <https://www.nexusmods.com/site/mods/1934>
-2. Confirm that `vortex-ext-game-warhammer40kdawnofwar-v1.0.2.zip` is attached
+2. Confirm that `vortex-ext-game-warhammer40kdawnofwar-v1.0.6.zip` is attached
 3. Tell users to install the extension from Nexus Mods, then enable it in Vortex before installing the mod archive.
 
 4. Link to it from the Nexus mod description (link is already in the BBCode below)
 
-To rebuild the extension zip: `make package-ext`
+To rebuild the extension zip: `make package-vortex-ext`
 
 ---
 
@@ -202,7 +202,7 @@ Common paths:
 
 ### Vortex Mod Manager
 
-Vortex support currently requires the DoW DE game extension to be installed manually first. Download `vortex-ext-game-warhammer40kdawnofwar-v1.0.2.zip` from Nexus Mods, drag it onto Vortex's **Extensions** tab, and click *Enable*. Then enable **Warhammer 40,000: Dawn of War - Definitive Edition** and install the mod archive.
+Vortex support currently requires the DoW DE game extension to be installed manually first. Download `vortex-ext-game-warhammer40kdawnofwar-v1.0.6.zip` from Nexus Mods, drag it onto Vortex's **Extensions** tab, and click *Enable*. Then enable **Warhammer 40,000: Dawn of War - Definitive Edition** and install the mod archive.
 
 ---
 
@@ -214,6 +214,37 @@ After installing, the game may ask "Do you want to play the tutorial?" when you 
 ---
 
 ## Changelog
+
+### v1.0.6 — 2026-07-18
+
+**Fixed:**
+- Tofu box regression eliminated — restored correct Chinese locale SGA source
+- Campaign text now renders correctly across all campaigns
+
+**New:**
+- Font size adjustment system — build with customizable font sizing
+- Unified build system via `make build`
+- Ruff linting integration for code quality
+- Project cleanup (removed 18 outdated files)
+
+**Technical:**
+- Distribution: 184MB SGA → 122MB ZIP
+- Source: `Engine/Locale/Chinese/EnginLoc.sga` (vanilla Chinese locale)
+
+### v1.0.5 — 2026-07-04
+
+- Increased base font size for improved readability
+- Font size variants available (standard and large)
+
+### v1.0.4 — 2026-06-27
+
+- Rebased TC `Engine.ucs` onto latest upstream game file
+- Established SGA-only deployment as canonical method
+
+### v1.0.3 — 2026-06-09
+
+- Campaign readability improvements
+- Tofu stability fixes
 
 ### v1.0.2 — 2026-05-28
 

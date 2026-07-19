@@ -2,6 +2,45 @@
 
 All notable user-facing changes to the DoW DE Traditional Chinese patch are documented here.
 
+## 2026-07-18 — v1.0.7 Subtitle gibberish fix
+
+### Fixed
+- **Dialogue subtitle gibberish eliminated** — automated font reference correction in build process prevents Unicode U+0000 glyph artifact
+- `gillsans_11b.fnt` (dialogue subtitle font) now references `NotoSansTC-Medium.ttf` instead of Bold variant
+- Build script now automatically fixes font references after vanilla SGA extraction
+
+### Technical
+- Added post-extraction font reference fix in `build_sga.sh`
+- Prevents rendering of visible null terminator glyph (緝, U+7DC9) from Bold font
+- Fix is automated and repeatable — no manual intervention needed
+
+## 2026-07-18 — v1.0.6 Tofu fix + font adjustment system
+
+### Fixed
+- **Tofu box regression eliminated** — restored correct Chinese locale SGA source (`Engine/Locale/Chinese/EnginLoc.sga`) as the canonical base for all builds. Previous versions accidentally used English locale sources which caused campaign text rendering failures.
+
+### Added
+- **Font size adjustment system** — new `adjust_font_sizes.py` script allows configurable font sizing:
+  - Adjusts all size fields (`sizeDefault`, `size640`-`size1600`) in `.fnt` files
+  - Build command: `make build FONT_SIZE_INCREASE=6` (adjusts font sizes +6 points)
+  - Default behavior: no adjustment (preserves vanilla Chinese locale font sizes)
+- **Unified build system** — `make build` now runs the complete pipeline:
+  1. Font size adjustment (optional via `FONT_SIZE_INCREASE` parameter)
+  2. TC corrections application
+  3. SGA rebuild via `build_sga.sh`
+  4. Distribution package creation
+- **Quality gates** — `make lint` runs Ruff linting on all Python scripts
+- **Font structure documentation** — new `docs/FONT_STRUCTURE.md` documents font metrics and adjustment behavior
+
+### Changed
+- **Script consolidation** — `rebuild_sga_auto.sh` renamed to `build_sga.sh` for clarity
+- **Project cleanup** — removed 18 outdated files (old bisection tools, deprecated scripts, stale documentation)
+
+### Release
+- Version: `1.0.6`
+- Distribution: `dist/wh40k-dow-de-tc-mod-v1.0.6.zip` (184MB SGA → 122MB ZIP)
+- Source SGA: `Engine/Locale/Chinese/EnginLoc.sga` (vanilla Chinese locale, 192MB)
+
 ## 2026-07-04 — Architecture cleanup (loose data deployment removed)
 
 ### BREAKING CHANGES

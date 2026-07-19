@@ -1,11 +1,8 @@
 #!/usr/bin/env node
 /*
- * Build a Nexus-compliant Vortex extension archive.
+ * Build a Nexus-compliant Vortex extension archive for DoW DE.
  *
- * Output: vortex-ext/dist/game-warhammer40kbattlesector-<version>.zip
- *
- * The archive layout is FLAT (no nested wrapper folder) which is the most
- * common review failure. We enforce that here.
+ * Output: vortex-ext/dist/game-warhammer40kdawnofwar-<version>.zip
  */
 const fs = require('fs');
 const path = require('path');
@@ -15,7 +12,7 @@ const here = path.resolve(__dirname, '..');
 const repoRoot = path.resolve(__dirname, '..', '..', '..');
 const info = JSON.parse(fs.readFileSync(path.join(here, 'info.json'), 'utf8'));
 const version = info.version;
-const slug = 'game-warhammer40kbattlesector';
+const slug = 'game-warhammer40kdawnofwar';
 
 const distDir = path.resolve(here, '..', '..', 'vortex-ext', 'dist');
 fs.mkdirSync(distDir, { recursive: true });
@@ -27,10 +24,10 @@ try {
   /* not present */
 }
 
-const files = ['info.json', 'index.js', 'gameart.jpg', 'README.md'];
+const files = ['info.json', 'index.js', 'gameart.jpg', 'DESCRIPTION.md'];
 for (const f of files) {
   if (!fs.existsSync(path.join(here, f))) {
-    if (f === 'README.md') continue; // README is optional
+    if (f === 'DESCRIPTION.md') continue; // DESCRIPTION is optional
     console.error(`MISSING required file: ${f}`);
     process.exit(1);
   }
@@ -46,10 +43,9 @@ execSync(
   },
 );
 
-// Verify flat layout — zero directories inside the archive.
+// Verify flat layout
 const listing = execSync(`unzip -l "${out}"`, { encoding: 'utf8' });
 if (/\//.test(listing.replace(/^.*Archive:.*$/m, ''))) {
-  // crude check; zip -j strips paths so this should never trip, but better safe
   console.error('Archive contains nested folders — fix packaging script.');
   process.exit(1);
 }

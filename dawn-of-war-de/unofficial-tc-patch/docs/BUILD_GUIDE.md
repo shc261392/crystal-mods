@@ -57,48 +57,42 @@ cp -r backup/20260604-144320/data .
 
 **Result:** 58 files in `data/` directory (fonts, graphics, audio)
 
-### 2. Patch Font Sizes
+### 2. Adjust Font Sizes (Optional)
 
-**⚠️ CRITICAL:** You MUST use `--mode all` to patch ALL font size fields!
+**New in v1.0.6:** Unified font size adjustment via `adjust_font_sizes.py`.
 
-#### Why `--mode all` is Required
-
-The game engine uses **resolution-specific font size fields** (`size640`, `size800`, `size1024`, `size1280`, `size1600`) instead of `sizeDefault` at common resolutions (640×480 and higher). Most players at 1920×1080 or higher use the `size1600` field.
-
-- **`--mode fallback-only`** ❌ (default): Only patches `sizeDefault` → **All variants look the same in-game!**
-  - Replacements: 13 (1 per .fnt file)
-  - Result: size640-1600 fields remain at 32, fonts don't change
-  
-- **`--mode all`** ✅ (required): Patches ALL size fields → **Variants render at different sizes**
-  - Replacements: 75-78 (6 per .fnt file)
-  - Result: All size fields updated consistently
-
-**See** [`.copilot_workspace/FONT_SIZE_RCA.md`](../.copilot_workspace/FONT_SIZE_RCA.md) for detailed root cause analysis.
-
-#### Patch Commands
+The build system now supports configurable font sizing through a single parameter:
 
 ```bash
-# For standard variant (SIZE=36)
-python3 scripts/apply_font_fix.py --root . --size 36 --mode all
+# Build with default +4 increase (size 36, matches v1.0.5 readability)
+make build
 
-# For large font variant (SIZE=48)
-python3 scripts/apply_font_fix.py --root . --size 48 --mode all
+# Build with no adjustment (vanilla size 32)
+make build FONT_SIZE_INCREASE=0
 
-# For any custom size (32-48 tested and verified)
-python3 scripts/apply_font_fix.py --root . --size 40 --mode all
+# Build with +6 point increase (size 38)
+make build FONT_SIZE_INCREASE=6
+
+# Build with custom increase (any integer value)
+make build FONT_SIZE_INCREASE=10
 ```
 
-**What it does:**
-- Finds all `.fnt` files in `data/font/`
-- Replaces `sizeDefault`, `size640`, `size800`, `size1024`, `size1280`, `size1600` with new value
-- Creates `.fnt.bak` backups before modifying
+**Default behavior:** `make build` applies +4 point increase to vanilla Chinese locale fonts (32 → 36), matching v1.0.5's readability while using the correct Chinese locale source to prevent tofu boxes.
 
-**Verify ALL size fields were patched:**
+**What it does:**
+- Adjusts ALL font size fields in `.fnt` files: `sizeDefault`, `size640`, `size800`, `size1024`, `size1280`, `size1600`
+- By default, adds +4 to vanilla Chinese locale font sizes (32 → 36)
+- Creates backups before modifying
+- Preserves correct Chinese locale baseline (fixes tofu box regressions)
+
+**See** [`docs/FONT_STRUCTURE.md`](FONT_STRUCTURE.md) for font metrics documentation.
+
+**Verify adjustments:**
 ```bash
 grep -E "(sizeDefault|size640|size800|size1024|size1280|size1600)" data/font/notosans_m_16_xc.fnt
 
-# Expected output (for SIZE=36):
-#   sizeDefault = 36;
+# Example output with default FONT_SIZE_INCREASE=4:
+#   sizeDefault = 36;  (32 + 4)
 #   size640     = 36;
 #   size800     = 36;
 #   size1024    = 36;
@@ -106,29 +100,39 @@ grep -E "(sizeDefault|size640|size800|size1024|size1280|size1600)" data/font/not
 #   size1600    = 36;
 ```
 
-**If you see mixed values (e.g., sizeDefault=48 but size640=32):**
-- ❌ You used `--mode fallback-only` by mistake
-- ✅ Re-run with `--mode all`
+### 3. Build the Mod
 
-### 3. Rebuild SGA Archive
+**New in v1.0.6:** Unified build system via `make build`.
+
+#### Recommended Method: Using Make
+
+```bash
+# Standard build (vanilla font sizes)
+make build
+
+# Build with font size adjustment
+make build FONT_SIZE_INCREASE=6
+```
+
+**What it does:**
+1. Adjusts font sizes if `FONT_SIZE_INCREASE` is specified
+2. Applies TC corrections to `Engine.ucs`
+3. Rebuilds SGA via `build_sga.sh`
+4. Creates distribution package in `dist/`
+
+**Build time:** ~60-80 seconds total
+
+#### Method B: Manual Script Execution
+
+```bash
+bash scripts/build_sga.sh
+```
 
 **CRITICAL:** Archive.exe must run **OUTSIDE the VS Code terminal sandbox**.
 
-#### Why Sandbox Matters
-- Archive.exe is a Windows executable that requires WSL interop
-- VS Code's terminal sandbox blocks WSL's ability to call Windows executables
-- **Symptom:** `<3>WSL (N) ERROR: UtilConnectUnix:524: socket failed 1`
-- **Solution:** Request unsandboxed execution when running via automation tools
-
-#### Method A: Using the Automated Script
-
-```bash
-bash scripts/rebuild_sga_auto.sh
-```
-
 **If running from VS Code / automation tool:** Request unsandboxed execution or the Archive.exe call will fail.
 
-**The script performs:**
+**The `build_sga.sh` script performs:**
 1. Verifies `data/` directory exists
 2. Creates Archive.exe buildfile with CRLF line endings
 3. Converts Linux paths to Windows UNC format:
@@ -198,7 +202,7 @@ make package
 ```
 
 **What it does:**
-1. Creates `dist/wh40k-dow-de-tc-mod-v1.0.5/` directory structure:
+1. Creates `dist/wh40k-dow-de-tc-mod-v1.0.7/` directory structure:
    ```
    Engine/
      Locale/
@@ -207,32 +211,33 @@ make package
          Engine.ucs
    ```
 2. Zips the directory
-3. Reports size (~130M compressed from 205M SGA + 1.5M UCS)
+3. Reports size (~122M compressed from 184M SGA + 1.5M UCS)
 
-**Output:** `dist/wh40k-dow-de-tc-mod-v1.0.5.zip`
+**Output:** `dist/wh40k-dow-de-tc-mod-v1.0.7.zip`
 
 ### 5. Build Font Size Variants
 
-To create both standard (36) and large (48) variants:
+To create multiple font size variants:
 
 ```bash
-# Standard variant (SIZE=36)
-python3 scripts/apply_font_fix.py --root . --size 36 --mode fallback-only
-bash scripts/rebuild_sga_auto.sh  # (request unsandboxed if automated)
-make package
-# Result: dist/wh40k-dow-de-tc-mod-v1.0.5.zip
+# Standard build (+4 = size 36, default)
+make build
+# Result: dist/wh40k-dow-de-tc-mod-v1.0.7.zip
 
-# Large font variant (SIZE=48)
-python3 scripts/apply_font_fix.py --root . --size 48 --mode fallback-only
-bash scripts/rebuild_sga_auto.sh  # (request unsandboxed if automated)
-make package
-mv dist/wh40k-dow-de-tc-mod-v1.0.5.zip dist/wh40k-dow-de-tc-mod-v1.0.5-font48.zip
+# Vanilla fonts (no adjustment, size 32)
+make build FONT_SIZE_INCREASE=0
+mv dist/wh40k-dow-de-tc-mod-v1.0.7.zip dist/wh40k-dow-de-tc-mod-v1.0.7-vanilla.zip
+
+# Extra large fonts (+12 = size 44)
+make build FONT_SIZE_INCREASE=12
+mv dist/wh40k-dow-de-tc-mod-v1.0.7.zip dist/wh40k-dow-de-tc-mod-v1.0.7-font+12.zip
 ```
 
 **Final artifacts:**
 ```
-dist/wh40k-dow-de-tc-mod-v1.0.5.zip         (130M, SIZE=36)
-dist/wh40k-dow-de-tc-mod-v1.0.5-font48.zip  (130M, SIZE=48)
+dist/wh40k-dow-de-tc-mod-v1.0.7.zip          (122M, size 36, default)
+dist/wh40k-dow-de-tc-mod-v1.0.7-vanilla.zip  (122M, size 32, no adjustment)
+dist/wh40k-dow-de-tc-mod-v1.0.7-font+12.zip  (122M, size 44, extra large)
 ```
 
 ---
@@ -285,7 +290,7 @@ cp -r backup/20260604-144320/data .
    ```bash
    grep "sizeDefault" data/font/*.fnt
    ```
-2. Rebuild SGA: `bash scripts/rebuild_sga_auto.sh`
+2. Rebuild SGA: `bash scripts/build_sga.sh` (or `make build`)
 3. Verify SGA timestamp is recent: `ls -lh EnginLocMod.sga`
 4. Repackage: `make package`
 
@@ -309,15 +314,15 @@ cp -r backup/20260604-144320/data .
 
 3. **Package exists:**
    ```bash
-   ls -lh dist/wh40k-dow-de-tc-mod-v1.0.5.zip
-   # Size: ~130M
+   ls -lh dist/wh40k-dow-de-tc-mod-v1.0.7.zip
+   # Size: ~122M
    ```
 
 4. **Package contents are correct:**
    ```bash
-   unzip -l dist/wh40k-dow-de-tc-mod-v1.0.5.zip
+   unzip -l dist/wh40k-dow-de-tc-mod-v1.0.7.zip
    # Should list:
-   #   Engine/Locale/Chinese/EnginLoc.sga  (~192M)
+   #   Engine/Locale/Chinese/EnginLoc.sga  (~184M)
    #   Engine/Locale/Chinese/Engine.ucs    (~1.5M)
    ```
 
@@ -355,8 +360,8 @@ The `_linux_to_win()` function in scripts handles this conversion automatically.
 
 | Component | File Count | Notes |
 |-----------|------------|-------|
-| Font config (`.fnt`) | 13 | Patched with `sizeDefault` |
-| Font config backups (`.fnt.bak`) | 13 | Created by apply_font_fix.py |
+| Font config (`.fnt`) | 13 | Patched with font size adjustments |
+| Font config backups (`.fnt.bak`) | 13 | Created by adjust_font_sizes.py |
 | Font files (`.ttf`/`.ttc`) | 24 | NotoSansTC, NotoSerifTC, gulim, msyh, gakmob |
 | Graphics (`.gfx`) | 5 | fonthead, fontbody, fontaux, fontdecor, font_glyphs |
 | Audio (`.fda`/`.rat`) | 4 | _default, dow_intro |
@@ -385,7 +390,7 @@ The `_linux_to_win()` function in scripts handles this conversion automatically.
 **Reality:** Loose data deployment is **obsolete since v1.0.4**. All deployment scripts have been purged of loose mode logic. SGA-only is the canonical method.
 
 ### ❌ Forgetting to rebuild SGA after font changes
-**Reality:** Editing `data/` fonts does NOT automatically update `EnginLocMod.sga`. You must explicitly run `rebuild_sga_auto.sh` for changes to take effect in-game.
+**Reality:** Editing `data/` fonts does NOT automatically update `EnginLocMod.sga`. You must explicitly run `build_sga.sh` (or `make build`) for changes to take effect in-game.
 
 ### ❌ Using LF-only line endings in buildfile
 **Reality:** Archive.exe **requires CRLF** line endings in buildfiles. Use `sed -i 's/$/\r/'` to convert.
@@ -394,21 +399,24 @@ The `_linux_to_win()` function in scripts handles this conversion automatically.
 
 ## Quick Reference
 
-### One-Command Build (Standard SIZE=36)
+### One-Command Build (Standard, +4 = size 36)
 ```bash
-cd /home/shado/crystal-mods/dawn-of-war-de/unofficial-tc-patch && \
-python3 scripts/apply_font_fix.py --root . --size 36 --mode fallback-only && \
-bash scripts/rebuild_sga_auto.sh && \
-make package
+cd /home/shado/crystal-mods/dawn-of-war-de/unofficial-tc-patch && make build
 ```
 
-### One-Command Build (Large SIZE=48)
+### One-Command Build (Vanilla, no adjustment)
 ```bash
-cd /home/shado/crystal-mods/dawn-of-war-de/unofficial-tc-patch && \
-python3 scripts/apply_font_fix.py --root . --size 48 --mode fallback-only && \
-bash scripts/rebuild_sga_auto.sh && \
-make package && \
-mv dist/wh40k-dow-de-tc-mod-v1.0.5.zip dist/wh40k-dow-de-tc-mod-v1.0.5-font48.zip
+cd /home/shado/crystal-mods/dawn-of-war-de/unofficial-tc-patch && make build FONT_SIZE_INCREASE=0
+```
+
+### One-Command Build (Large, +12 = size 44)
+```bash
+cd /home/shado/crystal-mods/dawn-of-war-de/unofficial-tc-patch && make build FONT_SIZE_INCREASE=12
+```
+
+### Quality Check
+```bash
+cd /home/shado/crystal-mods/dawn-of-war-de/unofficial-tc-patch && make lint
 ```
 
 ### File Locations Summary
@@ -423,15 +431,16 @@ Repository Root:
   │   ├── art/*.gfx            (5 graphics files)
   │   └── sound/*.fda/*.rat    (4 audio files)
   ├── scripts/
-  │   ├── apply_font_fix.py           (patches .fnt sizeDefault values)
-  │   └── rebuild_sga_auto.sh         (automates SGA repacking)
+  │   ├── adjust_font_sizes.py        (adjusts .fnt font size fields)
+  │   ├── apply_tc_corrections.py     (applies TC corrections to Engine.ucs)
+  │   ├── build_sga.sh                (rebuilds SGA via Archive.exe)
+  │   └── migrate_campaign_states.py  (campaign save migration)
   └── dist/                    (build output)
-      ├── wh40k-dow-de-tc-mod-v1.0.5.zip        (130M, SIZE=36)
-      └── wh40k-dow-de-tc-mod-v1.0.5-font48.zip (130M, SIZE=48)
+      └── wh40k-dow-de-tc-mod-v1.0.7.zip (122M)
 ```
 
 ---
 
-**Last Updated:** 2026-07-04  
-**Build System Version:** v1.0.5  
+**Last Updated:** 2026-07-18  
+**Build System Version:** v1.0.6  
 **Tested Environment:** WSL2 (Ubuntu 22.04) on Windows 11, DoW DE via Steam

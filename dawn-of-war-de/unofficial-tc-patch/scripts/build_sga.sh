@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # =============================================================================
-# rebuild_sga_auto.sh — Automated SGA rebuild for WSL2
-# 
+# build_sga.sh — Automated SGA rebuild for WSL2
+#
 # This script uses the PROVEN WSL2 build approach with proper path conversion.
 # No Windows-native execution required!
 #
 # Usage:
-#   ./rebuild_sga_auto.sh                           # Vanilla font sizes
-#   ./rebuild_sga_auto.sh --font-size-increase 6    # Increase fonts by +6
-#   FONT_SIZE_INCREASE=6 ./rebuild_sga_auto.sh      # Via environment
+#   ./build_sga.sh                           # Vanilla font sizes
+#   ./build_sga.sh --font-size-increase 6    # Increase fonts by +6
+#   FONT_SIZE_INCREASE=6 ./build_sga.sh      # Via environment
 # =============================================================================
 set -euo pipefail
 
@@ -142,6 +142,21 @@ if [[ -f "$DATA_DIR/font/notosanstc-regular.ttf" ]]; then
 else
     warn "Noto Sans TC fonts not found (unexpected)"
 fi
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Fix subtitle font references (prevent U+0000 glyph artifact)
+# ─────────────────────────────────────────────────────────────────────────────
+# CRITICAL: NotoSansTC-Bold.ttf and NotoSansTC-Regular.ttf have visible glyphs
+# at Unicode U+0000 (null terminator). DoW's subtitle renderer includes null
+# terminators → renders as gibberish characters (緝 U+7DC9 / 餘 U+9918)
+# Solution: Reference NotoSansTC-Medium.ttf instead (no visible U+0000 glyph)
+log "Fixing subtitle font references..."
+sed -i \
+    -e 's/file[[:space:]]*=[[:space:]]*"NotoSansTC-Bold\.ttf"/file = "NotoSansTC-Medium.ttf"/g' \
+    -e 's/file[[:space:]]*=[[:space:]]*"NotoSansTC-Regular\.ttf"/file = "NotoSansTC-Medium.ttf"/g' \
+    "$DATA_DIR/font/gillsans_11b.fnt" \
+    "$DATA_DIR/font/gillsans_bold_16.fnt"
+ok "Subtitle fonts now reference NotoSansTC-Medium.ttf (U+0000-safe)"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Optional: Adjust font sizes

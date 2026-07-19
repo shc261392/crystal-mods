@@ -9,6 +9,7 @@ linked under "Progressive disclosure" below.
 1. **Scratch space**: use `./.copilot_workspace/` for any temporary content
    (downloads, intermediate extracts, generated artifacts you're inspecting).
    **Never use `/tmp`.** The directory is gitignored and safe to write to.
+   **Distribution packages MUST use the project's `dist/` folder**, not temp folders.
 2. **Iterate with the user**: after completing any non-trivial task, call the
    `vscode_askQuestions` tool to request review / approval, or to clarify the
    next step. Do not assume "continue".
@@ -26,12 +27,21 @@ linked under "Progressive disclosure" below.
    in the game installation. **`Engine/Locale/English/` is forbidden.** The game
    ships with Chinese locale; all deployments must preserve this. For other
    projects, apply locale preservation rules as appropriate to that game.
-7. **CRITICAL: Credential safety**: **NEVER read `.env` files or credentials
+7. **DOWDE deployment is FORBIDDEN**: For ALL `dawn-of-war-de/` projects, agent
+   deployment to game folder is **FORBIDDEN**. Only build the Vortex-installable
+   ZIP deliverable in `dist/`. User handles deployment manually. **NEVER ask for
+   deployment approval or offer to deploy.**
+8. **CRITICAL: Engine.ucs contains mixed content**: For `dawn-of-war-de/unofficial-tc-patch/`,
+   `Engine.ucs` contains BOTH Chinese localization AND English game mode keys
+   (e.g., "Dark Crusade", "Soulstorm"). **English keys are internal identifiers -
+   translating them BREAKS THE GAME.** **NEVER edit Engine.ucs without explicit
+   user approval.** See `dawn-of-war-de/unofficial-tc-patch/docs/ENGINE_UCS_STRUCTURE.md`.
+9. **CRITICAL: Credential safety**: **NEVER read `.env` files or credentials
    into agent context.** Access secrets only via scripts/environment variables.
    If a task requires credentials, instruct the user to run the script directly
    or pass values via environment variables. Reading credentials into LLM context
    risks exposure through conversation logs, debug output, or model training.
-8. **CRITICAL: Unrecoverable actions require dual verification**:
+9. **CRITICAL: Unrecoverable actions require dual verification**:
    - **Research FIRST**: before running ANY tool that modifies git history,
      deletes files, or performs system-wide changes, research the tool's behavior
      thoroughly (read docs, check man pages, verify examples).
@@ -42,7 +52,7 @@ linked under "Progressive disclosure" below.
      deletion), and get explicit user approval before proceeding.
    - **Examples requiring this process**: `git-filter-repo`, `git push --force`,
      `rm -rf`, database migrations, production deployments, batch file operations.
-9. **CRITICAL: UI verification mandate**: For any change to `src/pages/`,
+10. **CRITICAL: UI verification mandate**: For any change to `src/pages/`,
    `src/components/`, `src/layouts/`, or stylesheets:
    - **MUST use browser tools** (`open_browser_page`, `screenshot_page`) to verify
      changes visually before claiming completion

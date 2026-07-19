@@ -50,6 +50,7 @@ Usage
 
 Exit codes: 0 = success, 1 = error
 """
+
 from __future__ import annotations
 
 import argparse
@@ -68,8 +69,8 @@ from pathlib import Path
 # All known non-TC statenames -> TC statename  (forward: any locale -> TC mod)
 _FORWARD_MAP: dict[str, str] = {
     # Simplified Chinese SGA (original bundled locale)
-    "\u8ecd\u968a\u7d00\u5f8b": "\u79e9\u5e8f\u9663\u71df",   # WXP Forces of Order
-    "\u8ecd\u968a\u6df7\u4e82": "\u6df7\u4e82\u9663\u71df",   # WXP Forces of Disorder
+    "\u8ecd\u968a\u7d00\u5f8b": "\u79e9\u5e8f\u9663\u71df",  # WXP Forces of Order
+    "\u8ecd\u968a\u6df7\u4e82": "\u6df7\u4e82\u9663\u71df",  # WXP Forces of Disorder
     # English -- covers players who previously played in English
     "Forces of Order": "\u79e9\u5e8f\u9663\u71df",
     "Forces of Disorder": "\u6df7\u4e82\u9663\u71df",
@@ -88,6 +89,7 @@ _REPO_ROOT = Path(__file__).resolve().parent.parent
 # ---------------------------------------------------------------------------
 # AppData discovery
 # ---------------------------------------------------------------------------
+
 
 def find_dow_appdata() -> Path | None:
     """Auto-detect the DoW AppData directory."""
@@ -120,6 +122,7 @@ def find_dow_appdata() -> Path | None:
 # Lua helpers -- surgical read/write (avoids full parse/reformat)
 # ---------------------------------------------------------------------------
 
+
 def _read_lua(path: Path) -> str:
     """Read a Lua file trying UTF-8-BOM, UTF-16, Latin-1 in order."""
     for enc in ("utf-8-sig", "utf-16", "latin-1"):
@@ -134,7 +137,7 @@ def _extract_value(content: str, key: str) -> str | None:
     """Extract a quoted or unquoted Lua assignment value for `key`."""
     if m := re.search(rf'^{re.escape(key)}\s*=\s*"([^"]*)"', content, re.MULTILINE):
         return m.group(1)
-    if m := re.search(rf'^{re.escape(key)}\s*=\s*(\S+)', content, re.MULTILINE):
+    if m := re.search(rf"^{re.escape(key)}\s*=\s*(\S+)", content, re.MULTILINE):
         return m.group(1)
     return None
 
@@ -143,7 +146,7 @@ def _replace_statename(content: str, new_statename: str) -> str:
     """Replace only the statename value; all other lines are untouched."""
     return re.sub(
         r'(statename\s*=\s*")[^"]*(")',
-        rf'\g<1>{new_statename}\2',
+        rf"\g<1>{new_statename}\2",
         content,
         flags=re.MULTILINE,
     )
@@ -161,6 +164,7 @@ def _maxmission(content: str) -> int:
 # Backup helpers
 # ---------------------------------------------------------------------------
 
+
 def _backup_campaign_dir(
     campaign_dir: Path,
     stamp: str,
@@ -170,7 +174,7 @@ def _backup_campaign_dir(
     """Copy all state files to <repo>/backup/campaign_states/<stamp>/... ."""
     # Build relative path from Profiles/ downward for a descriptive subdir
     try:
-        profiles_parent = campaign_dir.parents[3]   # .../Profiles/
+        profiles_parent = campaign_dir.parents[3]  # .../Profiles/
         rel = campaign_dir.relative_to(profiles_parent)
     except ValueError:
         rel = Path(campaign_dir.name)
@@ -185,7 +189,7 @@ def _backup_campaign_dir(
             shutil.copy2(src, dst_dir / "campaignstate.lua")
 
     log_fn(f"  Backup : {backup_root}")
-    log_fn(f"  Recover: copy files from the backup directory back to:")
+    log_fn("  Recover: copy files from the backup directory back to:")
     log_fn(f"           {campaign_dir}")
     return backup_root
 
@@ -193,6 +197,7 @@ def _backup_campaign_dir(
 # ---------------------------------------------------------------------------
 # Core migration logic
 # ---------------------------------------------------------------------------
+
 
 def _load_states(campaign_dir: Path, log_fn) -> list[dict]:
     states: list[dict] = []
@@ -202,13 +207,15 @@ def _load_states(campaign_dir: Path, log_fn) -> list[dict]:
         except ValueError as exc:
             log_fn(f"  WARN: could not read {f}: {exc}")
             continue
-        states.append({
-            "path": f,
-            "content": content,
-            "statename": _extract_value(content, "statename") or "",
-            "campaignid": _extract_value(content, "campaignid") or "",
-            "maxmission": _maxmission(content),
-        })
+        states.append(
+            {
+                "path": f,
+                "content": content,
+                "statename": _extract_value(content, "statename") or "",
+                "campaignid": _extract_value(content, "campaignid") or "",
+                "maxmission": _maxmission(content),
+            }
+        )
     return states
 
 
@@ -218,7 +225,7 @@ def _write_state(
     new_statename: str,
     stamp: str,
     dry_run: bool,
-    log_fn,  # noqa: ARG001
+    log_fn,
 ) -> None:
     """Overwrite dst_file with src's progress data, updating statename."""
     new_content = _replace_statename(src["content"], new_statename)
@@ -242,10 +249,7 @@ def _migrate_forward(
         for src in [s for s in states if s["statename"] == src_name]:
             cid = src["campaignid"]
             src_progress = src["maxmission"]
-            tc_matches = [
-                s for s in states
-                if s["campaignid"] == cid and s["statename"] == tc_name
-            ]
+            tc_matches = [s for s in states if s["campaignid"] == cid and s["statename"] == tc_name]
 
             if tc_matches:
                 tc = tc_matches[0]
@@ -286,7 +290,7 @@ def _migrate_forward(
 
 def _migrate_reverse(
     states: list[dict],
-    campaign_dir: Path,  # noqa: ARG001
+    campaign_dir: Path,
     stamp: str,
     dry_run: bool,
     log_fn,
@@ -302,8 +306,7 @@ def _migrate_reverse(
 
         # All non-TC states for same campaign (any legacy locale)
         legacy_states = [
-            s for s in states
-            if s["campaignid"] == cid and s["statename"] not in _TC_STATENAMES
+            s for s in states if s["campaignid"] == cid and s["statename"] not in _TC_STATENAMES
         ]
 
         if not legacy_states:
@@ -357,24 +360,28 @@ def migrate_expansion(
 # CLI entry point
 # ---------------------------------------------------------------------------
 
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    parser.add_argument("--dry-run", action="store_true",
-        help="Show what would change without writing any files")
-    parser.add_argument("--reverse", action="store_true",
-        help="Sync TC mod progress back into all non-TC state slots (use on uninstall)")
-    parser.add_argument("--appdata-dir", metavar="PATH",
-        help="Override auto-detected DoW AppData directory")
-    parser.add_argument("--profile", default="Profile1",
-        help="Profile name (default: Profile1)")
+    parser.add_argument(
+        "--dry-run", action="store_true", help="Show what would change without writing any files"
+    )
+    parser.add_argument(
+        "--reverse",
+        action="store_true",
+        help="Sync TC mod progress back into all non-TC state slots (use on uninstall)",
+    )
+    parser.add_argument(
+        "--appdata-dir", metavar="PATH", help="Override auto-detected DoW AppData directory"
+    )
+    parser.add_argument("--profile", default="Profile1", help="Profile name (default: Profile1)")
     args = parser.parse_args()
 
     direction_label = (
-        "TC -> all locales (uninstall sync)" if args.reverse
-        else "SC/EN -> TC (deploy sync)"
+        "TC -> all locales (uninstall sync)" if args.reverse else "SC/EN -> TC (deploy sync)"
     )
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 

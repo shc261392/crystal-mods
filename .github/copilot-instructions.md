@@ -6,8 +6,10 @@ This file mirrors them for GitHub Copilot's auto-loading convention. **Read
 
 ## TL;DR for any task
 
-1. Temp files and scratch work MUST go in `./.copilot_workspace/`.
-   `/tmp` is forbidden.
+1. **Scratch space rules**:
+   - Temp files and scratch work MUST go in `./.copilot_workspace/`
+   - `/tmp` is forbidden
+   - **Distribution packages MUST use the project's `dist/` folder**, not temp folders
 2. After finishing a task, ask the user for review via `vscode_askQuestions`.
 3. If confidence < 90% on anything (path, flag, identifier), stop and verify.
 4. Confirm before irreversible actions (force-push, public-flip, delete backups).
@@ -20,7 +22,16 @@ This file mirrors them for GitHub Copilot's auto-loading convention. **Read
    in the game installation. **`Engine/Locale/English/` is forbidden.** The game
    ships with Chinese locale; all deployments must preserve this. For other
    projects, apply locale preservation rules as appropriate to that game.
-8. **UI changes require browser verification**: Changes to pages/components/layouts
+8. **DOWDE deployment is FORBIDDEN**: For ALL `dawn-of-war-de/` projects, agent
+   deployment to game folder is **FORBIDDEN**. Only build the Vortex-installable
+   ZIP deliverable in `dist/`. User handles deployment manually. **NEVER ask for
+   deployment approval or offer to deploy.**
+9. **CRITICAL: Engine.ucs contains mixed content**: `Engine.ucs` has BOTH Chinese
+   localization AND English game mode keys (e.g., "Dark Crusade", "Soulstorm").
+   **English keys are internal identifiers - translating them BREAKS THE GAME.**
+   **NEVER edit Engine.ucs without explicit user approval.** See
+   `dawn-of-war-de/unofficial-tc-patch/docs/ENGINE_UCS_STRUCTURE.md` for details.
+10. **UI changes require browser verification**: Changes to pages/components/layouts
    MUST be verified visually using browser tools, screenshot shown to user for
    approval, then include `[verified]` in commit message. Human approval required.
 

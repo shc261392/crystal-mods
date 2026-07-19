@@ -28,22 +28,26 @@ Per the [Vortex wiki](https://github.com/Nexus-Mods/Vortex/wiki/How-to-package-a
 the archive MUST contain the files at the top level (no nested wrapper folder):
 
 ```
-game-warhammer40kbattlesector-0.1.0.zip
+game-warhammer40kbattlesector-0.1.1.zip
 ├── info.json
-├── gameart.png
+├── gameart.jpg
 ├── index.js
 └── README.md          (optional)
 ```
 
-Build the archive (run from this directory):
+### Build and package
 
-```bash
-zip -r ../../dist/game-warhammer40kbattlesector-$(jq -r .version info.json).zip \
-    info.json gameart.png index.js README.md
-```
-
-Then submit per
-[How to submit a game extension for review](https://github.com/Nexus-Mods/Vortex/wiki/How-to-submit-a-game-extension-for-review).
+1. Increment `version` in `info.json` (semver)
+2. Run the package script (from this directory):
+   ```bash
+   npm run package
+   ```
+   This produces `dist/game-warhammer40kbattlesector-<version>.zip` at the repo root.
+3. Verify the archive contains only the 4 files above (no `package.json`, `node_modules`, or scripts):
+   ```bash
+   unzip -l dist/game-warhammer40kbattlesector-*.zip
+   ```
+4. Submit the zip per [How to submit a game extension for review](https://github.com/Nexus-Mods/Vortex/wiki/How-to-submit-a-game-extension-for-review).
 
 ## Files
 
@@ -51,12 +55,12 @@ Then submit per
 | ------------- | -------- | ------------------------------------------------------- |
 | `info.json`   | yes      | Metadata. `version` must match the Nexus upload exactly |
 | `index.js`    | yes      | Extension entry point                                   |
-| `gameart.png` | yes      | 640×360 PNG, ≤1 MB, no text overlay                     |
+| `gameart.jpg` | yes      | 640×360 JPG, ≤1 MB, no text overlay                     |
 | `README.md`   | no       | Useful for the Nexus mod page                           |
 
-## Important: gameart.png
+## Important: gameart.jpg
 
-The repo ships a placeholder `gameart.png`. **Replace it with proper game
+The repo ships a placeholder `gameart.jpg`. **Replace it with proper game
 art before submitting to Nexus** (640×360, 16:9, dark-bg-safe, no text — Vortex
 overlays the game name automatically). See
 [SteamGridDB](https://www.steamgriddb.com/) for source images.

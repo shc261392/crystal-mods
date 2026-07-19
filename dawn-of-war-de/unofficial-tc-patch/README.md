@@ -387,20 +387,32 @@ To force restoration to the true vanilla state, either:
 **Complete build documentation:** [`docs/BUILD_GUIDE.md`](docs/BUILD_GUIDE.md)
 
 The build guide provides step-by-step instructions for reproducing the standard build process, including:
-- Font size patching workflow
+- Font size adjustment system (new in v1.0.6)
+- Unified build workflow via `make build`
 - SGA repacking with Archive.exe (WSL2 environment)
 - Creating distribution packages
 - Troubleshooting sandbox and WSL interop issues
 - Build verification checklist
 
-**Quick build (SIZE=36):**
+**Quick build:**
 ```bash
 cd /home/shado/crystal-mods/dawn-of-war-de/unofficial-tc-patch
-python3 scripts/apply_font_fix.py --root . --size 36 --mode fallback-only
-bash scripts/rebuild_sga_auto.sh  # Requires unsandboxed execution if automated
-make package
+
+# Standard build (size 36, matches v1.0.5)
+make build
+
+# Vanilla fonts (size 32)
+make build FONT_SIZE_INCREASE=0
+
+# Large fonts (size 38)
+make build FONT_SIZE_INCREASE=6
 ```
 
-**Output:** `dist/wh40k-dow-de-tc-mod-v1.0.5.zip`
+**Output:** `dist/wh40k-dow-de-tc-mod-v1.0.7.zip`
+
+**Quality check:**
+```bash
+make lint  # Runs Ruff linting on all Python scripts
+```
 
 See the [BUILD_GUIDE.md](docs/BUILD_GUIDE.md) for complete details.

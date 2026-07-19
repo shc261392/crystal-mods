@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# ruff: noqa: RUF001, RUF002, RUF003
+# ^ Intentional use of fullwidth punctuation for Traditional Chinese localization
 """
 Apply Traditional Chinese localization corrections to Engine.ucs.
 
@@ -136,9 +138,7 @@ def apply_corrections(content: str, dry_run: bool) -> tuple[str, int]:
             elif old in text:
                 text = text.replace(old, new, 1)
             else:
-                print(
-                    f"  MISMATCH ID {lid}: expected\n    {old!r}\n  got\n    {parts[1]!r}"
-                )
+                print(f"  MISMATCH ID {lid}: expected\n    {old!r}\n  got\n    {parts[1]!r}")
 
         # 2. Global: ! → ！  (Chinese-containing lines only)
         if has_chinese(text) and "!" in text:
@@ -188,9 +188,7 @@ def main() -> int:
     print(f"Reading {ucs_path} ...")
     content = ucs_path.read_bytes().decode("utf-16")
 
-    print(
-        f"Applying corrections{'  [DRY RUN — no file written]' if args.dry_run else ''} ...\n"
-    )
+    print(f"Applying corrections{'  [DRY RUN — no file written]' if args.dry_run else ''} ...\n")
     new_content, changed = apply_corrections(content, args.dry_run)
 
     print(f"\nTotal lines changed: {changed}")
