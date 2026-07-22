@@ -40,8 +40,23 @@ TypeTreeHelper.read_typetree_boost = False
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 GAME_ROOT = os.environ.get("MOD_GAME_DIR", "/mnt/d/SteamLibrary/steamapps/common/Warhammer 40000 Battlesector")
 DATA = os.path.join(GAME_ROOT, "Warhammer 40K Battlesector_Data")
-SA_VANILLA = os.path.join(DATA, "sharedassets1.assets.vortex_backup")
-RESS_VANILLA = os.path.join(DATA, "sharedassets1.assets.resS")
+
+# Prefer a pristine snapshot (MOD_BACKUP_DIR) as the vanilla font source. This
+# avoids the trap of reading a stale ".vortex_backup" left over from a previous
+# game version. Falls back to the in-place game files if no snapshot is set.
+_BACKUP = os.environ.get("MOD_BACKUP_DIR", "")
+
+
+def _vanilla_src(rel_in_data: str, fallback: str) -> str:
+    if _BACKUP:
+        p = os.path.join(_BACKUP, "Warhammer 40K Battlesector_Data", rel_in_data)
+        if os.path.isfile(p):
+            return p
+    return fallback
+
+
+SA_VANILLA = _vanilla_src("sharedassets1.assets", os.path.join(DATA, "sharedassets1.assets.vortex_backup"))
+RESS_VANILLA = _vanilla_src("sharedassets1.assets.resS", os.path.join(DATA, "sharedassets1.assets.resS"))
 FONT_OTF = os.path.join(REPO, ".copilot_workspace", "fonts", "NotoSansCJKjp-Regular.otf")
 RES_PATCHED = os.path.join(REPO, "translation", "zh-TW", "dist", "resources.assets")
 OUT_DIR = os.path.join(REPO, ".copilot_workspace", "font_bake_out")
