@@ -3,6 +3,7 @@
 **Date:** 2026-07-23
 **Author:** Crystal Mods maintainer (agent-assisted analysis)
 **Status:** Stable baseline **built** (v0.2.0) — text + main UI font + launcher. Bundle fonts deferred pending baseline test.
+**Update (v0.2.1):** baseline confirmed launching; added the description-text fix (startup bundle static font bake). See §11.
 **Game version:** 1.7.7 (Unity `6000.0.62f1`, build-guid `233ee0a952e84e97b2e5c5d62fdf0dc3`, patched 2026-07-22)
 
 ---
@@ -226,3 +227,37 @@ the map-builder tool UI — to be addressed after the baseline is validated.
   committed, reproducible **build-only** script (no deploy) as part of this update.
 - **Provenance** — keep the clean vanilla 1.7.7 snapshot hashes recorded so future
   updates can diff cleanly and avoid another contaminated backup.
+
+## 11. v0.2.1 — description-text fix (startup bundle)
+
+**Symptom (v0.2.0):** every short/label string rendered perfect TC (main `pid 3644`
+font), but the **long description body** (campaign/crusade selection, army
+management, unit cards) showed **garbled** glyphs — a mix of tofu and wrong
+characters (川/屹/眉). Root cause: that text uses the startup bundle's chain
+`futura → Generated → No Underlay → Roboto`; missing TC codepoints fell to the
+**dynamic** "No Underlay" font whose source can't resolve, so it emitted garbage
+glyph indices.
+
+**Fix:** `tools/scripts/bake_startup_generated.py` bakes the 939 missing TC glyphs
+into the **static** "Generated" font (`pid -6634277187469610597`) inside
+`startup_assets_all.bundle`, keeping `m_AtlasPopulationMode = 0` (Static). Because
+Generated precedes the broken dynamic fallback and now covers all TC codepoints,
+text resolves there and never reaches the garbage path. (The old `patch_font.py`
+failed here specifically because it flipped Generated to **dynamic** — pop=1.)
+
+- Atlas is Alpha8 (SDF in the alpha channel), 2048×2048, streamed inside the bundle.
+  Edited via UnityPy's `Texture2D.image` and saved with
+  `env.file.save(packer="original")` (`dataflags=579`, `_block_info_flags=64`).
+- **Verified:** saved bundle `pop=0`, CharacterTable **3295 → 4234**, new glyphs
+  (聲/遠/征/聖) carry SDF pixels, existing glyphs (中/文/一) preserved.
+
+**Catalog / CRC decision:** the old pipeline's hardcoded `catalog.bin` CRC offset
+(173069) is **invalid for 1.7.7** (the value stored there is unrelated to the
+startup bundle). More importantly, the proven 1.7.4 deploy shipped the patched
+bundle **without any catalog change** and it still loaded, so **the local bundle CRC
+is not enforced.** Therefore v0.2.1 ships the patched bundle **without** a catalog
+file. (The baker gates catalog writes behind `MOD_UPDATE_CATALOG=1`, off by default.)
+
+**Deliverable:** `warhammer-40k-battlesector/dist/wh40k-battlesector-tc-localization-v0.2.1.zip`
+(132 MB) = v0.2.0 set **plus** patched `startup_assets_all.bundle`. `modinfo` → v0.2.1.
+The map-builder tool UI is still deferred (low priority).

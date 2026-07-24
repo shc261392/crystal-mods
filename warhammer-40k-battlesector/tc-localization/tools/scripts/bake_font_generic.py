@@ -150,6 +150,12 @@ def main():
     aw, ah = int(tree["m_AtlasWidth"]), int(tree["m_AtlasHeight"])
     atlas_pptr = (tree["m_AtlasTextures"] or [])[0]
     tex_pid = atlas_pptr["m_PathID"]
+    # Optionally force Static so TMP uses the pre-baked CharacterTable and never
+    # triggers broken runtime (dynamic) glyph generation (garbled glyphs).
+    if os.environ.get("MOD_FORCE_STATIC", "0") == "1":
+        if int(tree.get("m_AtlasPopulationMode", 0)) != 0:
+            print("  forcing Static (m_AtlasPopulationMode -> 0)")
+        tree["m_AtlasPopulationMode"] = 0
     print(f"font {font_pid}: {tree.get('m_Name')} pointSize={point_size} pad={padding} atlas={aw}x{ah} texpid={tex_pid}")
 
     baked = {int(c["m_Unicode"]) for c in tree["m_CharacterTable"]}
