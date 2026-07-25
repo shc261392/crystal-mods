@@ -31,6 +31,8 @@ namespace TCDiag
 
         private float _timer;
         private readonly HashSet<string> _seen = new HashSet<string>();
+        private readonly HashSet<string> _fbLogged = new HashSet<string>();
+        private static readonly int[] SampleCps = { 0x5C07 /*將*/, 0x9818 /*領*/, 0x9060 /*遠*/, 0x773E /*眾*/, 0x5728 /*在*/ };
 
         private void Update()
         {
@@ -107,11 +109,36 @@ namespace TCDiag
                     log.LogInfo("   font='" + fn + "' pop=" + pop + " chars=" + chars);
 
                     // Sample TC-specific glyphs (the exact garbled ones) — does the runtime font resolve them?
-                    foreach (int cp in new[] { 0x5C07 /*將*/, 0x9818 /*領*/, 0x9060 /*遠*/, 0x773E /*眾*/, 0x5728 /*在*/ })
+                    foreach (int cp in SampleCps)
                     {
                         bool has = false;
                         try { has = f.HasCharacter(cp); } catch { }
                         log.LogInfo("      U+" + cp.ToString("X4") + " HasCharacter=" + has);
+                    }
+
+                    // Fallback chain — log once per font name to reveal what provides CJK.
+                    if (_fbLogged.Add(fn))
+                    {
+                        try
+                        {
+                            var fb = f.fallbackFontAssetTable;
+                            if (fb != null && fb.Count > 0)
+                                for (int k = 0; k < fb.Count; k++)
+                                    LogCoverage("   [" + fn + "] fallback[" + k + "]", fb[k]);
+                            else
+                                log.LogInfo("   [" + fn + "] no local fallback table");
+                        }
+                        catch (Exception e) { log.LogInfo("   fallback read err: " + e.Message); }
+                        try
+                        {
+                            var g = TMP_Settings.fallbackFontAssets;
+                            if (g != null && g.Count > 0)
+                                for (int k = 0; k < g.Count; k++)
+                                    LogCoverage("   GLOBAL fallback[" + k + "]", g[k]);
+                            else
+                                log.LogInfo("   GLOBAL fallback: (empty)");
+                        }
+                        catch (Exception e) { log.LogInfo("   global fallback read err: " + e.Message); }
                     }
                 }
 
@@ -136,6 +163,20 @@ namespace TCDiag
         private static string SafeName(UnityEngine.Object o)
         {
             try { return o.name; } catch { return "?"; }
+        }
+
+        private static void LogCoverage(string label, TMP_FontAsset f)
+        {
+            var log = Plugin.Log;
+            if (f == null) { log.LogInfo(label + " = null"); return; }
+            string nm = SafeName(f);
+            int pop = -1; try { pop = (int)f.atlasPopulationMode; } catch { }
+            int chars = -1; try { chars = f.characterTable.Count; } catch { }
+            bool has5C07 = false, has5728 = false;
+            try { has5C07 = f.HasCharacter(0x5C07); } catch { }
+            try { has5728 = f.HasCharacter(0x5728); } catch { }
+            log.LogInfo(label + " '" + nm + "' pop=" + pop + " chars=" + chars +
+                        " 將=" + has5C07 + " 在=" + has5728);
         }
     }
 }
