@@ -65,8 +65,8 @@ Vortex：清除（purge）／移除兩個模組，原始遊戲檔案會自動還
 ### 製作資訊與原始碼
 
 - 文字轉換使用 OpenCC（s2tw）。字型基於 Noto Sans CJK。
-- **`TCFix` 外掛原始碼隨附於本模組 ZIP 內的 `TCFix-source/` 資料夾**（`Plugin.cs`、
-  `TCFix.csproj`、`README.md`），可自由審閱與重建。
+- **`TCFix` 外掛為開源軟體，原始碼公開於 GitHub 供審閱與自行編譯**：
+  <https://github.com/shc261392/crystal-mods/tree/main/warhammer-40k-battlesector/tc-localization/bepinex/TCFix>
 - **Core (BepInEx6)** 為 **BepInEx 6（IL2CPP, Bleeding Edge）** 官方建置，未經修改重打包。
   官方來源（可自行下載驗證）：
   - BepInEx（LGPL-2.1）：<https://github.com/BepInEx/BepInEx>
@@ -125,8 +125,8 @@ Vortex: purge/remove both mods — originals restore automatically. Manual: dele
 ### Credits & source
 
 - Text via OpenCC (s2tw). Fonts based on Noto Sans CJK.
-- **`TCFix` plugin source is bundled inside this mod's ZIP** under `TCFix-source/`
-  (`Plugin.cs`, `TCFix.csproj`, `README.md`) — free to audit and rebuild.
+- **`TCFix` plugin is open source** — audit or build it yourself from the repository:
+  <https://github.com/shc261392/crystal-mods/tree/main/warhammer-40k-battlesector/tc-localization/bepinex/TCFix>
 - **Core (BepInEx6)** is an unmodified repackage of the official **BepInEx 6
   (IL2CPP, Bleeding Edge)** build. Verify/download from source:
   - BepInEx (LGPL-2.1): <https://github.com/BepInEx/BepInEx>

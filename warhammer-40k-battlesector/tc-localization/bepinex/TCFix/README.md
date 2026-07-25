@@ -1,11 +1,11 @@
 # TCFix — runtime description-font fix (plugin source)
 
-`TCFix` 是本繁體中文化模組隨附的開源 BepInEx 6（IL2CPP）外掛。它在遊戲執行期把
+`TCFix` 是本繁體中文化模組使用的開源 BepInEx 6（IL2CPP）外掛。它在遊戲執行期把
 用來算繪**單位／戰役描述**的字型 `futura medium condensed bt SDF - No Underlay`
 （沒有中文字符、會把繁體字算繪成亂碼）換成完整含繁體字的
 `futura medium condensed bt SDF`。此為修正描述亂碼的關鍵，無法只靠修改遊戲檔案達成。
 
-`TCFix` is the open-source BepInEx 6 (IL2CPP) plugin bundled with this Traditional
+`TCFix` is the open-source BepInEx 6 (IL2CPP) plugin used by this Traditional
 Chinese localization. At runtime it swaps the CJK-less description font
 `futura medium condensed bt SDF - No Underlay` (which garbles Traditional-Chinese
 glyphs) for the full-TC `futura medium condensed bt SDF` on all affected
