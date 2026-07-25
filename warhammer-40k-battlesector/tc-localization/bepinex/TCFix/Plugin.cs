@@ -8,24 +8,25 @@ using TMPro;
 
 namespace TCFix
 {
-    // BepInEx 6 (IL2CPP) runtime fix: swap the CJK-less description font
-    // "futura medium condensed bt SDF - No Underlay" (renders TC garbled via a
-    // broken fallback chain) to the working full-TC font
-    // "futura medium condensed bt SDF" on all affected TMP_Text components.
-    [BepInPlugin(GUID, "TC Description Font Fix", "1.0.0")]
+    // BepInEx 6 (IL2CPP) runtime fix. Several screens render Traditional-Chinese
+    // text through fonts that lack the Traditional-specific glyphs (the built-in
+    // "futura ... No Underlay" description font, plus modal/zone-modifier fonts),
+    // producing garbled output. This plugin scans on-screen TMP text and, for any
+    // text whose current font cannot render one of its CJK characters, swaps that
+    // text to the full-Traditional font "futura medium condensed bt SDF" (785).
+    [BepInPlugin(GUID, "TC Font Fix", "1.1.0")]
     public class Plugin : BasePlugin
     {
         public const string GUID = "com.crystalmods.tcfix";
         internal static new ManualLogSource Log;
 
-        // Source (broken) and target (working) font asset names.
-        internal const string BrokenFontName = "futura medium condensed bt SDF - No Underlay";
+        // Target (working, full-Traditional) font asset name.
         internal const string GoodFontName = "futura medium condensed bt SDF";
 
         public override void Load()
         {
             Log = base.Log;
-            Log.LogInfo("TCFix loaded. Swapping '" + BrokenFontName + "' -> '" + GoodFontName + "' on TMP text.");
+            Log.LogInfo("TCFix 1.1.0 loaded. Swapping any CJK text whose font lacks the glyphs -> '" + GoodFontName + "'.");
             ClassInjector.RegisterTypeInIl2Cpp<FixBehaviour>();
             AddComponent<FixBehaviour>();
         }
@@ -35,16 +36,16 @@ namespace TCFix
     {
         public FixBehaviour(IntPtr ptr) : base(ptr) { }
 
+        // Scan active text ~20x/second so a newly-shown modal is corrected within
+        // a frame or two (no visible 1-second gibberish flash) while keeping cost low.
+        private const float ScanInterval = 0.05f;
+
         private TMP_FontAsset _good;
         private float _timer;
         private int _swaps;
 
         private void Update()
         {
-            _timer += Time.deltaTime;
-            if (_timer < 1.0f) return;
-            _timer = 0f;
-
             if (_good == null)
             {
                 _good = FindGoodFont();
@@ -52,8 +53,14 @@ namespace TCFix
                 Plugin.Log.LogInfo("Found target font '" + _good.name + "' chars=" + SafeChars(_good));
             }
 
+            _timer += Time.deltaTime;
+            if (_timer < ScanInterval) return;
+            _timer = 0f;
+
+            // Active scene text only (cheaper than FindObjectsOfTypeAll and exactly
+            // what is on screen).
             TMP_Text[] all;
-            try { all = Resources.FindObjectsOfTypeAll<TMP_Text>(); }
+            try { all = UnityEngine.Object.FindObjectsOfType<TMP_Text>(); }
             catch { return; }
             if (all == null) return;
 
@@ -63,23 +70,43 @@ namespace TCFix
                 if (t == null) continue;
                 TMP_FontAsset f;
                 try { f = t.font; } catch { continue; }
-                if (f == null) continue;
-                string fn;
-                try { fn = f.name; } catch { continue; }
-                if (fn != Plugin.BrokenFontName) continue;
+                if (f == null || ReferenceEquals(f, _good)) continue;
+
+                string text;
+                try { text = t.text; } catch { continue; }
+                if (!FontMissesCjk(f, text)) continue;
 
                 try
                 {
+                    string oldName = SafeName(f);
                     t.font = _good;
-                    // Force a re-layout/re-render with the new font.
                     t.SetAllDirty();
                     t.ForceMeshUpdate(false, false);
                     _swaps++;
-                    if (_swaps <= 20 || _swaps % 50 == 0)
-                        Plugin.Log.LogInfo("Swapped font on GO='" + SafeName(t) + "' (total " + _swaps + ")");
+                    if (_swaps <= 40 || _swaps % 100 == 0)
+                        Plugin.Log.LogInfo("Swapped GO='" + SafeName(t) + "' (was font '" + oldName + "') total=" + _swaps);
                 }
                 catch (Exception e) { Plugin.Log.LogWarning("swap err: " + e.Message); }
             }
+        }
+
+        // True if the text contains at least one CJK character that the font's own
+        // character table cannot render (so it would garble / fall back badly).
+        private static bool FontMissesCjk(TMP_FontAsset f, string text)
+        {
+            if (string.IsNullOrEmpty(text)) return false;
+            int checkedCount = 0;
+            for (int i = 0; i < text.Length; i++)
+            {
+                int c = text[i];
+                bool cjk = (c >= 0x3400 && c <= 0x9FFF) || (c >= 0xF900 && c <= 0xFAFF);
+                if (!cjk) continue;
+                bool has;
+                try { has = f.HasCharacter(c); } catch { return false; }
+                if (!has) return true;
+                if (++checkedCount >= 32) break; // cap work per text object
+            }
+            return false;
         }
 
         private static TMP_FontAsset FindGoodFont()
