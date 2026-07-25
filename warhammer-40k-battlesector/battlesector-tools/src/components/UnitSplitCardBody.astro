@@ -135,7 +135,7 @@ const statRows = [
   <!-- Stats: single compact row (< 1/4 of the card). -->
   <dl class="grid grid-cols-5 gap-1">
     {statRows.map((row) => (
-      <div class="flex flex-col items-center rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-1 py-1.5">
+      <div class="flex flex-col items-center rounded-md border border-[var(--color-border)] bg-[var(--color-base)] px-1.5 py-1.5">
         <dt class="inline-flex items-center gap-0.5 text-[9px] font-semibold uppercase tracking-wide" style={`color:${row.color}`}>
           {getStatIcon(row.stat) && (
             <svg class="w-3 h-3 shrink-0" viewBox="0 0 14 14" aria-hidden="true">
