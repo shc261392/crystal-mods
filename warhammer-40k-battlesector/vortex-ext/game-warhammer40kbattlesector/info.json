@@ -1,6 +1,6 @@
 {
   "name": "Warhammer 40,000: Battlesector",
   "author": "shadowevor",
-  "version": "1.0.0",
-  "description": "Vortex extension for Warhammer 40,000: Battlesector (Steam / GOG). Adds game detection and a mod type for asset-replacement mods. Overwritten game files are backed up and restored automatically by Vortex on purge."
+  "version": "1.1.0",
+  "description": "Vortex extension for Warhammer 40,000: Battlesector (Steam / GOG). Adds game detection and a mod type for asset-replacement AND BepInEx runtime mods (deploys winhttp.dll + BepInEx/ + dotnet/ + asset files to the game root). Overwritten game files are backed up and restored automatically by Vortex on purge."
 }

@@ -45,8 +45,14 @@ const SHARED_ASSETS = 'sharedassets1.assets';
 /**
  * Known first-level game directories used to detect game-root-relative
  * archives (layout already correct, no stripping needed).
+ *
+ * Includes BepInEx directories so combined mods that ship the BepInEx runtime
+ * modding framework (winhttp.dll + BepInEx/ + dotnet/) alongside asset files
+ * deploy correctly to the game root. BepInEx generates interop/config/cache/log
+ * files itself at runtime; those are not part of the mod and are left untouched.
  */
 const ROOT_GAME_DIRS = [
+  'BepInEx',
   'D3D12',
   'dotnet',
   'Launcher',
@@ -54,6 +60,12 @@ const ROOT_GAME_DIRS = [
   'Wallpapers',
   'Warhammer 40K Battlesector_Data',
 ];
+
+/**
+ * Loose root-level files that also indicate a game-root-relative archive
+ * (e.g. the BepInEx UnityDoorstop proxy shipped at the game root).
+ */
+const ROOT_GAME_FILES = ['winhttp.dll', 'doorstop_config.ini', '.doorstop_version'];
 
 // ---------------------------------------------------------------------------
 // Game discovery
@@ -117,8 +129,10 @@ function installModContent(files) {
   const normalized = files.map((f) => f.replace(/\\/g, '/')).filter((f) => !f.endsWith('/'));
 
   // Helper: Check if path starts with a known game directory (case-insensitive)
+  // or is a known root-level game file (e.g. the BepInEx doorstop proxy).
   const startsWithGameDir = (filePath) =>
-    ROOT_GAME_DIRS.some((dir) => filePath.toLowerCase().startsWith(`${dir.toLowerCase()}/`));
+    ROOT_GAME_DIRS.some((dir) => filePath.toLowerCase().startsWith(`${dir.toLowerCase()}/`)) ||
+    ROOT_GAME_FILES.some((f) => filePath.toLowerCase() === f.toLowerCase());
 
   // Layout A — Files already start with game root directories
   if (normalized.some(startsWithGameDir)) {
