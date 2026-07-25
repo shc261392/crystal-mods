@@ -20,17 +20,18 @@ Outputs (into OUT_DIR):
   - sharedassets1.assets.resS       atlas-edited copy (same size)
   - bake_report.json                summary
 """
+
 import json
 import math
 import os
 import struct
 import sys
 
-import numpy as np
 import freetype
-from scipy.ndimage import distance_transform_edt
-from PIL import Image
+import numpy as np
 import UnityPy
+from PIL import Image
+from scipy.ndimage import distance_transform_edt
 from UnityPy.helpers import TypeTreeHelper
 from UnityPy.helpers.TypeTreeGenerator import TypeTreeGenerator
 from UnityPy.helpers.TypeTreeNode import TypeTreeNode
@@ -38,7 +39,9 @@ from UnityPy.helpers.TypeTreeNode import TypeTreeNode
 TypeTreeHelper.read_typetree_boost = False
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-GAME_ROOT = os.environ.get("MOD_GAME_DIR", "/mnt/d/SteamLibrary/steamapps/common/Warhammer 40000 Battlesector")
+GAME_ROOT = os.environ.get(
+    "MOD_GAME_DIR", "/mnt/d/SteamLibrary/steamapps/common/Warhammer 40000 Battlesector"
+)
 DATA = os.path.join(GAME_ROOT, "Warhammer 40K Battlesector_Data")
 
 # Prefer a pristine snapshot (MOD_BACKUP_DIR) as the vanilla font source. This
@@ -55,9 +58,13 @@ def _vanilla_src(rel_in_data: str, fallback: str) -> str:
     return fallback
 
 
-SA_VANILLA = _vanilla_src("sharedassets1.assets", os.path.join(DATA, "sharedassets1.assets.vortex_backup"))
-RESS_VANILLA = _vanilla_src("sharedassets1.assets.resS", os.path.join(DATA, "sharedassets1.assets.resS"))
-FONT_OTF = os.path.join(REPO, ".copilot_workspace", "fonts", "NotoSansCJKjp-Regular.otf")
+SA_VANILLA = _vanilla_src(
+    "sharedassets1.assets", os.path.join(DATA, "sharedassets1.assets.vortex_backup")
+)
+RESS_VANILLA = _vanilla_src(
+    "sharedassets1.assets.resS", os.path.join(DATA, "sharedassets1.assets.resS")
+)
+FONT_OTF = os.environ.get("MOD_FONT_OTF", os.path.join(REPO, ".copilot_workspace", "fonts", "NotoSansCJKjp-Regular.otf"))
 RES_PATCHED = os.path.join(REPO, "translation", "zh-TW", "dist", "resources.assets")
 OUT_DIR = os.path.join(REPO, ".copilot_workspace", "font_bake_out")
 
@@ -69,16 +76,23 @@ OVERSAMPLE = 4
 UNITY_VERSION = "6000.0.62f1"
 
 CHINESE = {
-    "text_repository-barks_chinese", "text_repository-campaign_chinese",
-    "text_repository-campaign-external_chinese", "text_repository-default_chinese",
-    "text_repository-default-external_chinese", "text_repository-units_chinese",
+    "text_repository-barks_chinese",
+    "text_repository-campaign_chinese",
+    "text_repository-campaign-external_chinese",
+    "text_repository-default_chinese",
+    "text_repository-default-external_chinese",
+    "text_repository-units_chinese",
     "text_repository-units-external_chinese",
 }
 
 
 def is_relevant(cp):
-    return (0x3400 <= cp <= 0x9FFF or 0xF900 <= cp <= 0xFAFF
-            or 0x3000 <= cp <= 0x303F or 0xFF00 <= cp <= 0xFFEF)
+    return (
+        0x3400 <= cp <= 0x9FFF
+        or 0xF900 <= cp <= 0xFAFF
+        or 0x3000 <= cp <= 0x303F
+        or 0xFF00 <= cp <= 0xFFEF
+    )
 
 
 def generate_sdf(face, cp):
@@ -125,8 +139,11 @@ def generate_sdf(face, cp):
 
 class RectPacker:
     """Guillotine best-area-fit over a list of free rects (atlas pixel coords)."""
+
     def __init__(self, free_rects):
-        self.free = [dict(x=r["m_X"], y=r["m_Y"], w=r["m_Width"], h=r["m_Height"]) for r in free_rects]
+        self.free = [
+            dict(x=r["m_X"], y=r["m_Y"], w=r["m_Width"], h=r["m_Height"]) for r in free_rects
+        ]
 
     def place(self, bw, bh):
         best = None
@@ -150,7 +167,9 @@ class RectPacker:
         return x, y
 
     def remaining(self):
-        return [{"m_X": r["x"], "m_Y": r["y"], "m_Width": r["w"], "m_Height": r["h"]} for r in self.free]
+        return [
+            {"m_X": r["x"], "m_Y": r["y"], "m_Width": r["w"], "m_Height": r["h"]} for r in self.free
+        ]
 
 
 def main():
@@ -159,9 +178,9 @@ def main():
     gen = TypeTreeGenerator(UNITY_VERSION)
     gen.load_local_game(GAME_ROOT)
     base = gen.get_nodes("Unity.TextMeshPro", "TMPro.TMP_FontAsset")
-    node = TypeTreeNode.from_list([
-        TypeTreeNode(b.m_Level, b.m_Type, b.m_Name, 0, 0, m_MetaFlag=b.m_MetaFlag) for b in base
-    ])
+    node = TypeTreeNode.from_list(
+        [TypeTreeNode(b.m_Level, b.m_Type, b.m_Name, 0, 0, m_MetaFlag=b.m_MetaFlag) for b in base]
+    )
 
     env = UnityPy.load(SA_VANILLA)
     obj = next(o for o in env.objects if o.path_id == FONT_PID)
@@ -191,7 +210,11 @@ def main():
     # Atlas pixel buffer from .resS (bottom-up, Alpha8)
     with open(RESS_VANILLA, "rb") as f:
         ress = bytearray(f.read())
-    atlas = np.frombuffer(bytes(ress[:ATLAS_W * ATLAS_H]), dtype=np.uint8).reshape(ATLAS_H, ATLAS_W).copy()
+    atlas = (
+        np.frombuffer(bytes(ress[: ATLAS_W * ATLAS_H]), dtype=np.uint8)
+        .reshape(ATLAS_H, ATLAS_W)
+        .copy()
+    )
 
     face = freetype.Face(FONT_OTF)
 
@@ -219,25 +242,27 @@ def main():
             continue
         px, py = pos
         # blit flipped (top-down sdf -> bottom-up atlas)
-        atlas[py:py + ph, px:px + pw] = np.flipud(sdf)
+        atlas[py : py + ph, px : px + pw] = np.flipud(sdf)
         # glyphRect = content box (exclude padding), Y from bottom
         gr = {"m_X": px + PADDING, "m_Y": py + PADDING, "m_Width": cw, "m_Height": ch}
         gi = next_index
         next_index += 1
-        new_glyphs.append({
-            "m_Index": gi,
-            "m_Metrics": {
-                "m_Width": metrics["m_Width"],
-                "m_Height": metrics["m_Height"],
-                "m_HorizontalBearingX": metrics["m_HorizontalBearingX"],
-                "m_HorizontalBearingY": metrics["m_HorizontalBearingY"],
-                "m_HorizontalAdvance": float(metrics["m_HorizontalAdvance"]),
-            },
-            "m_GlyphRect": gr,
-            "m_Scale": 1.0,
-            "m_AtlasIndex": 0,
-            "m_ClassDefinitionType": 0,
-        })
+        new_glyphs.append(
+            {
+                "m_Index": gi,
+                "m_Metrics": {
+                    "m_Width": metrics["m_Width"],
+                    "m_Height": metrics["m_Height"],
+                    "m_HorizontalBearingX": metrics["m_HorizontalBearingX"],
+                    "m_HorizontalBearingY": metrics["m_HorizontalBearingY"],
+                    "m_HorizontalAdvance": float(metrics["m_HorizontalAdvance"]),
+                },
+                "m_GlyphRect": gr,
+                "m_Scale": 1.0,
+                "m_AtlasIndex": 0,
+                "m_ClassDefinitionType": 0,
+            }
+        )
         new_chars.append({"m_ElementType": 1, "m_Unicode": cp, "m_GlyphIndex": gi, "m_Scale": 1.0})
         new_used_rects.append({"m_X": px, "m_Y": py, "m_Width": pw, "m_Height": ph})
         placed += 1
@@ -258,6 +283,7 @@ def main():
 
     # Serialize modified MonoBehaviour to bytes
     from UnityPy.streams import EndianBinaryWriter
+
     endian = "<"
     w = EndianBinaryWriter(endian=endian)
     TypeTreeHelper.write_typetree(tree, node, w)
@@ -267,7 +293,7 @@ def main():
     print(f"pid3644.bin: {len(new_bytes):,} bytes (was 6,271,524)")
 
     # Write edited .resS (atlas region replaced in place, same total size)
-    ress[:ATLAS_W * ATLAS_H] = atlas.tobytes()
+    ress[: ATLAS_W * ATLAS_H] = atlas.tobytes()
     out_ress = os.path.join(OUT_DIR, "sharedassets1.assets.resS")
     with open(out_ress, "wb") as f:
         f.write(ress)
