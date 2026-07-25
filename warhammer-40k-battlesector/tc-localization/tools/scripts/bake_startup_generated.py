@@ -23,17 +23,18 @@ This mirrors the proven pid 3644 bake (bake_fonts_174.py) but targets a bundle:
 
 Env: MOD_GAME_DIR, MOD_DIST_DIR (defaults match the repo layout).
 """
+
 import math
 import os
 import struct
 import sys
 import zlib
 
-import numpy as np
 import freetype
-from scipy.ndimage import distance_transform_edt
-from PIL import Image
+import numpy as np
 import UnityPy
+from PIL import Image
+from scipy.ndimage import distance_transform_edt
 from UnityPy.helpers import TypeTreeHelper
 from UnityPy.helpers.TypeTreeGenerator import TypeTreeGenerator
 from UnityPy.helpers.TypeTreeNode import TypeTreeNode
@@ -41,9 +42,11 @@ from UnityPy.helpers.TypeTreeNode import TypeTreeNode
 TypeTreeHelper.read_typetree_boost = False
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-GAME_ROOT = os.environ.get("MOD_GAME_DIR", "/mnt/d/SteamLibrary/steamapps/common/Warhammer 40000 Battlesector")
+GAME_ROOT = os.environ.get(
+    "MOD_GAME_DIR", "/mnt/d/SteamLibrary/steamapps/common/Warhammer 40000 Battlesector"
+)
 DIST_DIR = os.environ.get("MOD_DIST_DIR", os.path.join(REPO, "translation", "zh-TW", "dist"))
-FONT_OTF = os.path.join(REPO, ".copilot_workspace", "fonts", "NotoSansCJKjp-Regular.otf")
+FONT_OTF = os.environ.get("MOD_FONT_OTF", os.path.join(REPO, ".copilot_workspace", "fonts", "NotoSansCJKjp-Regular.otf"))
 RES_PATCHED = os.path.join(DIST_DIR, "resources.assets")
 
 BUNDLE_DIST = os.path.join(DIST_DIR, "startup_assets_all.bundle")
@@ -61,16 +64,23 @@ BUNDLE_DATA_OFFSET = 160
 CATALOG_CRC_OFFSET = 173069
 
 CHINESE = {
-    "text_repository-barks_chinese", "text_repository-campaign_chinese",
-    "text_repository-campaign-external_chinese", "text_repository-default_chinese",
-    "text_repository-default-external_chinese", "text_repository-units_chinese",
+    "text_repository-barks_chinese",
+    "text_repository-campaign_chinese",
+    "text_repository-campaign-external_chinese",
+    "text_repository-default_chinese",
+    "text_repository-default-external_chinese",
+    "text_repository-units_chinese",
     "text_repository-units-external_chinese",
 }
 
 
 def is_relevant(cp):
-    return (0x3400 <= cp <= 0x9FFF or 0xF900 <= cp <= 0xFAFF
-            or 0x3000 <= cp <= 0x303F or 0xFF00 <= cp <= 0xFFEF)
+    return (
+        0x3400 <= cp <= 0x9FFF
+        or 0xF900 <= cp <= 0xFAFF
+        or 0x3000 <= cp <= 0x303F
+        or 0xFF00 <= cp <= 0xFFEF
+    )
 
 
 def generate_sdf(face, cp, point_size, padding):
@@ -113,8 +123,11 @@ def generate_sdf(face, cp, point_size, padding):
 
 class RectPacker:
     """Guillotine best-area-fit over free rects (Unity bottom-up atlas coords)."""
+
     def __init__(self, free_rects):
-        self.free = [dict(x=r["m_X"], y=r["m_Y"], w=r["m_Width"], h=r["m_Height"]) for r in free_rects]
+        self.free = [
+            dict(x=r["m_X"], y=r["m_Y"], w=r["m_Width"], h=r["m_Height"]) for r in free_rects
+        ]
 
     def place(self, bw, bh):
         best, best_area = None, None
@@ -136,7 +149,9 @@ class RectPacker:
         return x, y
 
     def remaining(self):
-        return [{"m_X": r["x"], "m_Y": r["y"], "m_Width": r["w"], "m_Height": r["h"]} for r in self.free]
+        return [
+            {"m_X": r["x"], "m_Y": r["y"], "m_Width": r["w"], "m_Height": r["h"]} for r in self.free
+        ]
 
 
 def tc_used_codepoints():
@@ -168,9 +183,11 @@ def bake_one(env, byid, tmp_node, font_pid, all_used, face):
     padding = int(tree["m_AtlasPadding"])
     aw, ah = int(tree["m_AtlasWidth"]), int(tree["m_AtlasHeight"])
     tex_pid = (tree["m_AtlasTextures"] or [])[0]["m_PathID"]
-    print(f"\n[{name}] pid={font_pid} pop={pop} pointSize={point_size} pad={padding} "
-          f"atlas={aw}x{ah} texpid={tex_pid} chars={len(tree['m_CharacterTable'])} "
-          f"free={len(tree.get('m_FreeGlyphRects') or [])}")
+    print(
+        f"\n[{name}] pid={font_pid} pop={pop} pointSize={point_size} pad={padding} "
+        f"atlas={aw}x{ah} texpid={tex_pid} chars={len(tree['m_CharacterTable'])} "
+        f"free={len(tree.get('m_FreeGlyphRects') or [])}"
+    )
     if pop != 0:
         print(f"  forcing Static (pop {pop} -> 0)")
         tree["m_AtlasPopulationMode"] = 0
@@ -226,7 +243,7 @@ def bake_one(env, byid, tmp_node, font_pid, all_used, face):
     # the top rows [0, cur_h-ah). Bottom-up glyph coords are preserved.
     if cur_h != ah:
         new_plane = np.zeros((cur_h, aw), dtype=np.uint8)
-        new_plane[cur_h - ah:, :] = plane
+        new_plane[cur_h - ah :, :] = plane
         plane = new_plane
         ah = cur_h
         tree["m_AtlasWidth"] = aw
@@ -237,15 +254,33 @@ def bake_one(env, byid, tmp_node, font_pid, all_used, face):
     for cp, sdf, cw, ch, metrics, px, py_bu in placements:
         ph, pw = sdf.shape
         top = ah - py_bu - ph  # top-down row of the footprint
-        plane[top:top + ph, px:px + pw] = sdf
+        plane[top : top + ph, px : px + pw] = sdf
         gi = next_index
         next_index += 1
-        new_glyphs.append({
-            "m_Index": gi,
-            "m_Metrics": {k: metrics[k] for k in ("m_Width", "m_Height", "m_HorizontalBearingX", "m_HorizontalBearingY", "m_HorizontalAdvance")},
-            "m_GlyphRect": {"m_X": px + padding, "m_Y": py_bu + padding, "m_Width": cw, "m_Height": ch},
-            "m_Scale": 1.0, "m_AtlasIndex": 0, "m_ClassDefinitionType": 0,
-        })
+        new_glyphs.append(
+            {
+                "m_Index": gi,
+                "m_Metrics": {
+                    k: metrics[k]
+                    for k in (
+                        "m_Width",
+                        "m_Height",
+                        "m_HorizontalBearingX",
+                        "m_HorizontalBearingY",
+                        "m_HorizontalAdvance",
+                    )
+                },
+                "m_GlyphRect": {
+                    "m_X": px + padding,
+                    "m_Y": py_bu + padding,
+                    "m_Width": cw,
+                    "m_Height": ch,
+                },
+                "m_Scale": 1.0,
+                "m_AtlasIndex": 0,
+                "m_ClassDefinitionType": 0,
+            }
+        )
         new_chars.append({"m_ElementType": 1, "m_Unicode": cp, "m_GlyphIndex": gi, "m_Scale": 1.0})
         new_used.append({"m_X": px, "m_Y": py_bu, "m_Width": pw, "m_Height": ph})
     print(f"  placed {len(new_glyphs)}  unplaced {len(unplaced)}  final_atlas={aw}x{ah}")
@@ -289,9 +324,9 @@ def main():
     gen = TypeTreeGenerator(UNITY_VERSION)
     gen.load_local_game(GAME_ROOT)
     base = gen.get_nodes("Unity.TextMeshPro", "TMPro.TMP_FontAsset")
-    tmp_node = TypeTreeNode.from_list([
-        TypeTreeNode(b.m_Level, b.m_Type, b.m_Name, 0, 0, m_MetaFlag=b.m_MetaFlag) for b in base
-    ])
+    tmp_node = TypeTreeNode.from_list(
+        [TypeTreeNode(b.m_Level, b.m_Type, b.m_Name, 0, 0, m_MetaFlag=b.m_MetaFlag) for b in base]
+    )
 
     env = UnityPy.load(BUNDLE_DIST)
     byid = {o.path_id: o for o in env.objects}
@@ -331,8 +366,10 @@ def main():
             f.write(catalog)
         print(f"catalog.bin CRC @0x{CATALOG_CRC_OFFSET:X}: 0x{old_crc:08X} -> 0x{new_crc:08X}")
     else:
-        print(f"catalog.bin left UNTOUCHED (CRC not enforced for local bundles). "
-              f"Patched bundle CRC=0x{new_crc:08X}.")
+        print(
+            f"catalog.bin left UNTOUCHED (CRC not enforced for local bundles). "
+            f"Patched bundle CRC=0x{new_crc:08X}."
+        )
 
 
 if __name__ == "__main__":

@@ -17,16 +17,17 @@ A separate C# AssetsTools.NET step swaps the raw bytes into the .assets file.
 Usage:
   python3 tools/scripts/bake_font_generic.py <assets_path> <font_pid> <out_subdir>
 """
+
 import json
 import math
 import os
 import sys
 
-import numpy as np
 import freetype
-from scipy.ndimage import distance_transform_edt
-from PIL import Image
+import numpy as np
 import UnityPy
+from PIL import Image
+from scipy.ndimage import distance_transform_edt
 from UnityPy.helpers import TypeTreeHelper
 from UnityPy.helpers.TypeTreeGenerator import TypeTreeGenerator
 from UnityPy.helpers.TypeTreeNode import TypeTreeNode
@@ -35,23 +36,32 @@ from UnityPy.streams import EndianBinaryWriter
 TypeTreeHelper.read_typetree_boost = False
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-GAME_ROOT = os.environ.get("MOD_GAME_DIR", "/mnt/d/SteamLibrary/steamapps/common/Warhammer 40000 Battlesector")
-FONT_OTF = os.path.join(REPO, ".copilot_workspace", "fonts", "NotoSansCJKjp-Regular.otf")
+GAME_ROOT = os.environ.get(
+    "MOD_GAME_DIR", "/mnt/d/SteamLibrary/steamapps/common/Warhammer 40000 Battlesector"
+)
+FONT_OTF = os.environ.get("MOD_FONT_OTF", os.path.join(REPO, ".copilot_workspace", "fonts", "NotoSansCJKjp-Regular.otf"))
 RES_PATCHED = os.path.join(REPO, "translation", "zh-TW", "dist", "resources.assets")
 OVERSAMPLE = 4
 UNITY_VERSION = "6000.0.62f1"
 
 CHINESE = {
-    "text_repository-barks_chinese", "text_repository-campaign_chinese",
-    "text_repository-campaign-external_chinese", "text_repository-default_chinese",
-    "text_repository-default-external_chinese", "text_repository-units_chinese",
+    "text_repository-barks_chinese",
+    "text_repository-campaign_chinese",
+    "text_repository-campaign-external_chinese",
+    "text_repository-default_chinese",
+    "text_repository-default-external_chinese",
+    "text_repository-units_chinese",
     "text_repository-units-external_chinese",
 }
 
 
 def is_relevant(cp):
-    return (0x3400 <= cp <= 0x9FFF or 0xF900 <= cp <= 0xFAFF
-            or 0x3000 <= cp <= 0x303F or 0xFF00 <= cp <= 0xFFEF)
+    return (
+        0x3400 <= cp <= 0x9FFF
+        or 0xF900 <= cp <= 0xFAFF
+        or 0x3000 <= cp <= 0x303F
+        or 0xFF00 <= cp <= 0xFFEF
+    )
 
 
 def generate_sdf(face, cp, point_size, padding):
@@ -93,7 +103,9 @@ def generate_sdf(face, cp, point_size, padding):
 
 class RectPacker:
     def __init__(self, free_rects):
-        self.free = [dict(x=r["m_X"], y=r["m_Y"], w=r["m_Width"], h=r["m_Height"]) for r in free_rects]
+        self.free = [
+            dict(x=r["m_X"], y=r["m_Y"], w=r["m_Width"], h=r["m_Height"]) for r in free_rects
+        ]
 
     def place(self, bw, bh):
         best, best_area = None, None
@@ -115,7 +127,9 @@ class RectPacker:
         return x, y
 
     def remaining(self):
-        return [{"m_X": r["x"], "m_Y": r["y"], "m_Width": r["w"], "m_Height": r["h"]} for r in self.free]
+        return [
+            {"m_X": r["x"], "m_Y": r["y"], "m_Width": r["w"], "m_Height": r["h"]} for r in self.free
+        ]
 
 
 def get_image_bytes(td):
@@ -137,9 +151,9 @@ def main():
     gen = TypeTreeGenerator(UNITY_VERSION)
     gen.load_local_game(GAME_ROOT)
     base = gen.get_nodes("Unity.TextMeshPro", "TMPro.TMP_FontAsset")
-    node = TypeTreeNode.from_list([
-        TypeTreeNode(b.m_Level, b.m_Type, b.m_Name, 0, 0, m_MetaFlag=b.m_MetaFlag) for b in base
-    ])
+    node = TypeTreeNode.from_list(
+        [TypeTreeNode(b.m_Level, b.m_Type, b.m_Name, 0, 0, m_MetaFlag=b.m_MetaFlag) for b in base]
+    )
 
     env = UnityPy.load(assets_path)
     fobj = next(o for o in env.objects if o.path_id == font_pid)
@@ -156,7 +170,9 @@ def main():
         if int(tree.get("m_AtlasPopulationMode", 0)) != 0:
             print("  forcing Static (m_AtlasPopulationMode -> 0)")
         tree["m_AtlasPopulationMode"] = 0
-    print(f"font {font_pid}: {tree.get('m_Name')} pointSize={point_size} pad={padding} atlas={aw}x{ah} texpid={tex_pid}")
+    print(
+        f"font {font_pid}: {tree.get('m_Name')} pointSize={point_size} pad={padding} atlas={aw}x{ah} texpid={tex_pid}"
+    )
 
     baked = {int(c["m_Unicode"]) for c in tree["m_CharacterTable"]}
     next_index = max(int(g["m_Index"]) for g in tree["m_GlyphTable"]) + 1
@@ -183,14 +199,20 @@ def main():
     inline = not (sd.get("path"))
     if inline:
         buf = get_image_bytes(td)
-        assert len(buf) >= aw * ah, f"inline image {len(buf)} < {aw*ah}"
-        atlas = np.frombuffer(bytes(buf[:aw * ah]), dtype=np.uint8).reshape(ah, aw).copy()
+        assert len(buf) >= aw * ah, f"inline image {len(buf)} < {aw * ah}"
+        atlas = np.frombuffer(bytes(buf[: aw * ah]), dtype=np.uint8).reshape(ah, aw).copy()
     else:
-        ress_path = assets_path + ".resS" if os.path.isfile(assets_path + ".resS") else os.path.join(os.path.dirname(assets_path), sd["path"])
+        ress_path = (
+            assets_path + ".resS"
+            if os.path.isfile(assets_path + ".resS")
+            else os.path.join(os.path.dirname(assets_path), sd["path"])
+        )
         off = int(sd["offset"])
         with open(ress_path, "rb") as f:
             ress = bytearray(f.read())
-        atlas = np.frombuffer(bytes(ress[off:off + aw * ah]), dtype=np.uint8).reshape(ah, aw).copy()
+        atlas = (
+            np.frombuffer(bytes(ress[off : off + aw * ah]), dtype=np.uint8).reshape(ah, aw).copy()
+        )
 
     face = freetype.Face(FONT_OTF)
     rendered = []
@@ -232,15 +254,33 @@ def main():
     new_glyphs, new_chars, new_used = [], [], []
     for cp, sdf, cw, ch, metrics, px, py in placements:
         ph, pw = sdf.shape
-        atlas[py:py + ph, px:px + pw] = np.flipud(sdf)
+        atlas[py : py + ph, px : px + pw] = np.flipud(sdf)
         gi = next_index
         next_index += 1
-        new_glyphs.append({
-            "m_Index": gi,
-            "m_Metrics": {k: metrics[k] for k in ("m_Width", "m_Height", "m_HorizontalBearingX", "m_HorizontalBearingY", "m_HorizontalAdvance")},
-            "m_GlyphRect": {"m_X": px + padding, "m_Y": py + padding, "m_Width": cw, "m_Height": ch},
-            "m_Scale": 1.0, "m_AtlasIndex": 0, "m_ClassDefinitionType": 0,
-        })
+        new_glyphs.append(
+            {
+                "m_Index": gi,
+                "m_Metrics": {
+                    k: metrics[k]
+                    for k in (
+                        "m_Width",
+                        "m_Height",
+                        "m_HorizontalBearingX",
+                        "m_HorizontalBearingY",
+                        "m_HorizontalAdvance",
+                    )
+                },
+                "m_GlyphRect": {
+                    "m_X": px + padding,
+                    "m_Y": py + padding,
+                    "m_Width": cw,
+                    "m_Height": ch,
+                },
+                "m_Scale": 1.0,
+                "m_AtlasIndex": 0,
+                "m_ClassDefinitionType": 0,
+            }
+        )
         new_chars.append({"m_ElementType": 1, "m_Unicode": cp, "m_GlyphIndex": gi, "m_Scale": 1.0})
         new_used.append({"m_X": px, "m_Y": py, "m_Width": pw, "m_Height": ph})
 
@@ -277,16 +317,26 @@ def main():
         print(f"tex_{tex_pid}.bin: {len(tex_bytes):,} (m_Height={ah})")
     else:
         assert ah == int(tree["m_AtlasHeight"]) or True  # resS expansion unsupported here
-        ress[off:off + aw * ah] = atlas.tobytes()
+        ress[off : off + aw * ah] = atlas.tobytes()
         base_ress = os.path.basename(assets_path) + ".resS"
         with open(os.path.join(out_dir, base_ress), "wb") as f:
             f.write(ress)
         print(f"{base_ress}: {len(ress):,}")
 
     with open(os.path.join(out_dir, "report.json"), "w", encoding="utf-8") as f:
-        json.dump({"font_pid": font_pid, "tex_pid": tex_pid, "inline": inline,
-                   "placed": len(new_glyphs), "unplaced": len(unplaced),
-                   "unplaced_chars": "".join(chr(c) for c in unplaced)}, f, ensure_ascii=False, indent=2)
+        json.dump(
+            {
+                "font_pid": font_pid,
+                "tex_pid": tex_pid,
+                "inline": inline,
+                "placed": len(new_glyphs),
+                "unplaced": len(unplaced),
+                "unplaced_chars": "".join(chr(c) for c in unplaced),
+            },
+            f,
+            ensure_ascii=False,
+            indent=2,
+        )
     print("done")
 
 
