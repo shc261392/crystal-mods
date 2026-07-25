@@ -62,10 +62,17 @@ Vortex：清除（purge）／移除兩個模組，原始遊戲檔案會自動還
 - 部分標點目前為半形；計畫改為全形中文標點。
 - 部分強調字（粗體）目前偏粗。
 
-### 製作資訊
+### 製作資訊與原始碼
 
 - 文字轉換使用 OpenCC（s2tw）。字型基於 Noto Sans CJK。
-- BepInEx 由 BepInEx 團隊開發（LGPL-2.1）。`TCFix`／`TCDiag` 外掛原始碼隨附，可供審閱。
+- **`TCFix` 外掛原始碼隨附於本模組 ZIP 內的 `TCFix-source/` 資料夾**（`Plugin.cs`、
+  `TCFix.csproj`、`README.md`），可自由審閱與重建。
+- **Core (BepInEx6)** 為 **BepInEx 6（IL2CPP, Bleeding Edge）** 官方建置，未經修改重打包。
+  官方來源（可自行下載驗證）：
+  - BepInEx（LGPL-2.1）：<https://github.com/BepInEx/BepInEx>
+  - Bleeding Edge builds：<https://builds.bepinex.dev/projects/bepinex_be>
+  - 使用版本：**#785**，commit `6abdba4`
+  重打包 ZIP 的 SHA-256 與原始建置雜湊值皆記載於模組內的 `docs/BEPINEX_SETUP.md`。
 
 ---
 
@@ -115,7 +122,15 @@ Vortex: purge/remove both mods — originals restore automatically. Manual: dele
 - Some punctuation is half-width; full-width CJK punctuation planned.
 - Bold weight on some emphasized words is a little heavy.
 
-### Credits
+### Credits & source
 
-- Text via OpenCC (s2tw). Fonts based on Noto Sans CJK. BepInEx by the BepInEx team
-  (LGPL-2.1). Plugin source included for auditing.
+- Text via OpenCC (s2tw). Fonts based on Noto Sans CJK.
+- **`TCFix` plugin source is bundled inside this mod's ZIP** under `TCFix-source/`
+  (`Plugin.cs`, `TCFix.csproj`, `README.md`) — free to audit and rebuild.
+- **Core (BepInEx6)** is an unmodified repackage of the official **BepInEx 6
+  (IL2CPP, Bleeding Edge)** build. Verify/download from source:
+  - BepInEx (LGPL-2.1): <https://github.com/BepInEx/BepInEx>
+  - Bleeding Edge builds: <https://builds.bepinex.dev/projects/bepinex_be>
+  - Build used: **#785**, commit `6abdba4`
+  The repackaged ZIP's SHA-256 and the original build hash are recorded in the mod's
+  `docs/BEPINEX_SETUP.md`.
