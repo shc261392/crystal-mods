@@ -9,8 +9,13 @@ using TMPro;
 
 namespace TCDiag
 {
-    // BepInEx 6 (IL2CPP) diagnostic plugin.
-    [BepInPlugin(GUID, "TC Description Font Diagnostic", "1.0.0")]
+    // BepInEx 6 (IL2CPP) diagnostic: capture every ON-SCREEN TMP text whose font
+    // cannot render one of its CJK characters (i.e. every gibberish instance), so
+    // the culprit fonts can be identified. Does NOT swap fonts (so the true runtime
+    // font is observed). Deduplicated + capped to stay light over a long session.
+    //
+    // Grep the log for "[TCGIB]" to get one line per distinct gibberish instance.
+    [BepInPlugin(GUID, "TC Gibberish Scanner", "2.0.0")]
     public class Plugin : BasePlugin
     {
         public const string GUID = "com.crystalmods.tcdiag";
@@ -19,7 +24,7 @@ namespace TCDiag
         public override void Load()
         {
             Log = base.Log;
-            Log.LogInfo("TCDiag loaded. Auto-scans TMP CJK text every 3s; also press F8 to force a dump.");
+            Log.LogInfo("TCDiag 2.0 loaded. Scanning on-screen CJK text for missing-glyph gibberish every 1s. Grep '[TCGIB]'.");
             ClassInjector.RegisterTypeInIl2Cpp<DiagBehaviour>();
             AddComponent<DiagBehaviour>();
         }
@@ -30,153 +35,110 @@ namespace TCDiag
         public DiagBehaviour(IntPtr ptr) : base(ptr) { }
 
         private float _timer;
+        private float _hbTimer;
+        private int _distinct;
+        private const int MaxDistinct = 1200;    // hard cap so we never flood
         private readonly HashSet<string> _seen = new HashSet<string>();
-        private readonly HashSet<string> _fbLogged = new HashSet<string>();
-        private static readonly int[] SampleCps = { 0x5C07 /*將*/, 0x9818 /*領*/, 0x9060 /*遠*/, 0x773E /*眾*/, 0x5728 /*在*/ };
 
         private void Update()
         {
-            // Manual trigger (legacy input may be disabled; wrapped in try/catch).
-            try
-            {
-                if (Input.GetKeyDown(KeyCode.F8))
-                {
-                    _seen.Clear();
-                    Scan(true);
-                    return;
-                }
-            }
-            catch { /* new input system — ignore */ }
-
             _timer += Time.deltaTime;
-            if (_timer >= 3f)
+            _hbTimer += Time.deltaTime;
+            if (_hbTimer >= 30f)
             {
-                _timer = 0f;
-                Scan(false);
+                _hbTimer = 0f;
+                Plugin.Log.LogInfo("[TCHB] distinct gibberish instances so far: " + _distinct);
             }
+            if (_timer < 1f) return;
+            _timer = 0f;
+            if (_distinct >= MaxDistinct) return;
+            Scan();
         }
 
-        private static bool HasCjk(string s)
+        private static bool IsCjk(int c)
         {
-            if (string.IsNullOrEmpty(s)) return false;
-            foreach (char c in s)
-                if (c >= 0x3400 && c <= 0x9FFF) return true;
-            return false;
+            return (c >= 0x3400 && c <= 0x9FFF) || (c >= 0xF900 && c <= 0xFAFF);
         }
 
-        private void Scan(bool force)
+        private void Scan()
         {
             TMP_Text[] all;
             try { all = Resources.FindObjectsOfTypeAll<TMP_Text>(); }
-            catch (Exception e) { Plugin.Log.LogError("FindObjectsOfTypeAll<TMP_Text> failed: " + e.Message); return; }
+            catch (Exception e) { Plugin.Log.LogError("scan failed: " + e.Message); return; }
             if (all == null) return;
 
-            for (int i = 0; i < all.Length; i++)
+            for (int i = 0; i < all.Length && _distinct < MaxDistinct; i++)
             {
                 TMP_Text t = all[i];
                 if (t == null) continue;
+
+                // Only text actually shown on screen.
+                bool active;
+                try { active = t.isActiveAndEnabled && t.gameObject.activeInHierarchy; }
+                catch { continue; }
+                if (!active) continue;
+
                 string text;
                 try { text = t.text; } catch { continue; }
-                if (!HasCjk(text)) continue;
+                if (string.IsNullOrEmpty(text)) continue;
 
+                // Find the first CJK char the font cannot render (own table).
+                TMP_FontAsset f;
+                try { f = t.font; } catch { continue; }
+
+                int missCp = -1;
+                for (int k = 0; k < text.Length; k++)
+                {
+                    int c = text[k];
+                    if (!IsCjk(c)) continue;
+                    bool has = false;
+                    if (f != null)
+                    {
+                        try { has = f.HasCharacter(c); } catch { has = false; }
+                    }
+                    if (!has) { missCp = c; break; }
+                }
+                if (missCp < 0) continue; // renders fine (or no CJK) — not gibberish
+
+                string fontName = f != null ? SafeName(f) : "<NULL>";
                 string goName;
                 try { goName = t.gameObject.name; } catch { goName = "?"; }
 
-                // dedup by (object name + first 12 chars of text)
-                string key = goName + "|" + (text.Length > 12 ? text.Substring(0, 12) : text);
-                if (!force && !_seen.Add(key)) continue;
-                if (force) _seen.Add(key);
+                string key = fontName + "|" + goName + "|" + missCp;
+                if (!_seen.Add(key)) continue; // already logged this instance
+                _distinct++;
 
-                DumpOne(t, goName, text);
-            }
-        }
-
-        private void DumpOne(TMP_Text t, string goName, string text)
-        {
-            var log = Plugin.Log;
-            try
-            {
-                string preview = text.Length > 40 ? text.Substring(0, 40) : text;
-                log.LogInfo("==== TMP CJK text ==== GO='" + goName + "' text='" + preview + "'");
-
-                TMP_FontAsset f = t.font;
-                if (f == null) { log.LogInfo("   font = NULL (uses default)"); }
-                else
+                int pop = -1, chars = -1;
+                if (f != null)
                 {
-                    string fn = SafeName(f);
-                    int pop = -1; try { pop = (int)f.atlasPopulationMode; } catch { }
-                    int chars = -1; try { chars = f.characterTable.Count; } catch { }
-                    log.LogInfo("   font='" + fn + "' pop=" + pop + " chars=" + chars);
-
-                    // Sample TC-specific glyphs (the exact garbled ones) — does the runtime font resolve them?
-                    foreach (int cp in SampleCps)
-                    {
-                        bool has = false;
-                        try { has = f.HasCharacter(cp); } catch { }
-                        log.LogInfo("      U+" + cp.ToString("X4") + " HasCharacter=" + has);
-                    }
-
-                    // Fallback chain — log once per font name to reveal what provides CJK.
-                    if (_fbLogged.Add(fn))
-                    {
-                        try
-                        {
-                            var fb = f.fallbackFontAssetTable;
-                            if (fb != null && fb.Count > 0)
-                                for (int k = 0; k < fb.Count; k++)
-                                    LogCoverage("   [" + fn + "] fallback[" + k + "]", fb[k]);
-                            else
-                                log.LogInfo("   [" + fn + "] no local fallback table");
-                        }
-                        catch (Exception e) { log.LogInfo("   fallback read err: " + e.Message); }
-                        try
-                        {
-                            var g = TMP_Settings.fallbackFontAssets;
-                            if (g != null && g.Count > 0)
-                                for (int k = 0; k < g.Count; k++)
-                                    LogCoverage("   GLOBAL fallback[" + k + "]", g[k]);
-                            else
-                                log.LogInfo("   GLOBAL fallback: (empty)");
-                        }
-                        catch (Exception e) { log.LogInfo("   global fallback read err: " + e.Message); }
-                    }
+                    try { pop = (int)f.atlasPopulationMode; } catch { }
+                    try { chars = f.characterTable.Count; } catch { }
                 }
-
-                // Material + main texture actually sampled
+                string matName = "?"; int tw = -1, th = -1;
                 try
                 {
                     Material m = t.fontSharedMaterial;
-                    if (m == null) log.LogInfo("   sharedMaterial = NULL");
-                    else
+                    if (m != null)
                     {
+                        matName = SafeName(m);
                         Texture tex = m.mainTexture;
-                        string tn = tex != null ? tex.name : "null";
-                        int tw = tex != null ? tex.width : -1, th = tex != null ? tex.height : -1;
-                        log.LogInfo("   material='" + SafeName(m) + "' mainTex='" + tn + "' " + tw + "x" + th);
+                        if (tex != null) { tw = tex.width; th = tex.height; }
                     }
                 }
-                catch (Exception e) { log.LogInfo("   material read err: " + e.Message); }
+                catch { }
+
+                string preview = text.Length > 24 ? text.Substring(0, 24) : text;
+                preview = preview.Replace("\n", " ").Replace("\r", " ");
+                Plugin.Log.LogInfo(
+                    "[TCGIB] go='" + goName + "' font='" + fontName + "' pop=" + pop +
+                    " ownChars=" + chars + " miss=U+" + missCp.ToString("X4") + " '" + (char)missCp +
+                    "' mat='" + matName + "' tex=" + tw + "x" + th + " text='" + preview + "'");
             }
-            catch (Exception e) { log.LogError("DumpOne err: " + e.Message); }
         }
 
         private static string SafeName(UnityEngine.Object o)
         {
             try { return o.name; } catch { return "?"; }
-        }
-
-        private static void LogCoverage(string label, TMP_FontAsset f)
-        {
-            var log = Plugin.Log;
-            if (f == null) { log.LogInfo(label + " = null"); return; }
-            string nm = SafeName(f);
-            int pop = -1; try { pop = (int)f.atlasPopulationMode; } catch { }
-            int chars = -1; try { chars = f.characterTable.Count; } catch { }
-            bool has5C07 = false, has5728 = false;
-            try { has5C07 = f.HasCharacter(0x5C07); } catch { }
-            try { has5728 = f.HasCharacter(0x5728); } catch { }
-            log.LogInfo(label + " '" + nm + "' pop=" + pop + " chars=" + chars +
-                        " 將=" + has5C07 + " 在=" + has5728);
         }
     }
 }
