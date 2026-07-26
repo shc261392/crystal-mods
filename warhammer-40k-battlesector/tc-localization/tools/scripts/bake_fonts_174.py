@@ -64,7 +64,9 @@ SA_VANILLA = _vanilla_src(
 RESS_VANILLA = _vanilla_src(
     "sharedassets1.assets.resS", os.path.join(DATA, "sharedassets1.assets.resS")
 )
-FONT_OTF = os.environ.get("MOD_FONT_OTF", os.path.join(REPO, ".copilot_workspace", "fonts", "NotoSansCJKjp-Regular.otf"))
+FONT_OTF = os.environ.get(
+    "MOD_FONT_OTF", os.path.join(REPO, ".copilot_workspace", "fonts", "NotoSansCJKjp-Regular.otf")
+)
 RES_PATCHED = os.path.join(REPO, "translation", "zh-TW", "dist", "resources.assets")
 OUT_DIR = os.path.join(REPO, ".copilot_workspace", "font_bake_out")
 
