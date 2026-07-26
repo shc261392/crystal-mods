@@ -9,13 +9,18 @@ using TMPro;
 
 namespace TCDiag
 {
-    // BepInEx 6 (IL2CPP) diagnostic: capture every ON-SCREEN TMP text whose font
-    // cannot render one of its CJK characters (i.e. every gibberish instance), so
-    // the culprit fonts can be identified. Does NOT swap fonts (so the true runtime
-    // font is observed). Deduplicated + capped to stay light over a long session.
+    // BepInEx 6 (IL2CPP) diagnostic v3: log EVERY distinct on-screen TMP text that
+    // contains CJK, with its font's full properties, so garbling screens can be
+    // identified even when the font *passes* HasCharacter (dynamic-font garble or
+    // wrong atlas/material). Does NOT swap fonts. Deduped by (font|GameObject) and
+    // capped so it stays light over a long session.
     //
-    // Grep the log for "[TCGIB]" to get one line per distinct gibberish instance.
-    [BepInPlugin(GUID, "TC Gibberish Scanner", "2.0.0")]
+    // Grep the log for "[TCTEXT]" — one line per distinct (font, object) pair:
+    //   [TCTEXT] go='..' font='..' pop=N chars=M atlas=WxH mat='..' firstCjk=U+XXXX
+    //            has=T/F anyMiss=T/F text='..'
+    // pop: 0 = static (uses pre-baked atlas), 1 = dynamic (runtime glyph gen — the
+    //      usual garble source). anyMiss=T means the font's own table lacks a CJK char.
+    [BepInPlugin(GUID, "TC Gibberish Scanner", "3.0.0")]
     public class Plugin : BasePlugin
     {
         public const string GUID = "com.crystalmods.tcdiag";
@@ -24,7 +29,7 @@ namespace TCDiag
         public override void Load()
         {
             Log = base.Log;
-            Log.LogInfo("TCDiag 2.0 loaded. Scanning on-screen CJK text for missing-glyph gibberish every 1s. Grep '[TCGIB]'.");
+            Log.LogInfo("TCDiag 3.0 loaded. Logging every on-screen CJK text + its font props every 1s. Grep '[TCTEXT]'.");
             ClassInjector.RegisterTypeInIl2Cpp<DiagBehaviour>();
             AddComponent<DiagBehaviour>();
         }
@@ -37,7 +42,7 @@ namespace TCDiag
         private float _timer;
         private float _hbTimer;
         private int _distinct;
-        private const int MaxDistinct = 1200;    // hard cap so we never flood
+        private const int MaxDistinct = 1500;   // hard cap so we never flood
         private readonly HashSet<string> _seen = new HashSet<string>();
 
         private void Update()
@@ -47,7 +52,7 @@ namespace TCDiag
             if (_hbTimer >= 30f)
             {
                 _hbTimer = 0f;
-                Plugin.Log.LogInfo("[TCHB] distinct gibberish instances so far: " + _distinct);
+                Plugin.Log.LogInfo("[TCHB] distinct CJK text objects so far: " + _distinct);
             }
             if (_timer < 1f) return;
             _timer = 0f;
@@ -72,7 +77,6 @@ namespace TCDiag
                 TMP_Text t = all[i];
                 if (t == null) continue;
 
-                // Only text actually shown on screen.
                 bool active;
                 try { active = t.isActiveAndEnabled && t.gameObject.activeInHierarchy; }
                 catch { continue; }
@@ -82,37 +86,40 @@ namespace TCDiag
                 try { text = t.text; } catch { continue; }
                 if (string.IsNullOrEmpty(text)) continue;
 
-                // Find the first CJK char the font cannot render (own table).
+                // First CJK char + whether ANY CJK char is missing from the font's own table.
                 TMP_FontAsset f;
                 try { f = t.font; } catch { continue; }
 
-                int missCp = -1;
+                int firstCjk = -1;
+                bool anyMiss = false;
+                int checkedCount = 0;
                 for (int k = 0; k < text.Length; k++)
                 {
                     int c = text[k];
                     if (!IsCjk(c)) continue;
+                    if (firstCjk < 0) firstCjk = c;
                     bool has = false;
-                    if (f != null)
-                    {
-                        try { has = f.HasCharacter(c); } catch { has = false; }
-                    }
-                    if (!has) { missCp = c; break; }
+                    if (f != null) { try { has = f.HasCharacter(c); } catch { has = false; } }
+                    if (!has) { anyMiss = true; break; }
+                    if (++checkedCount >= 24) break;
                 }
-                if (missCp < 0) continue; // renders fine (or no CJK) — not gibberish
+                if (firstCjk < 0) continue; // no CJK in this text
 
                 string fontName = f != null ? SafeName(f) : "<NULL>";
                 string goName;
                 try { goName = t.gameObject.name; } catch { goName = "?"; }
 
-                string key = fontName + "|" + goName + "|" + missCp;
-                if (!_seen.Add(key)) continue; // already logged this instance
+                string key = fontName + "|" + goName;
+                if (!_seen.Add(key)) continue;
                 _distinct++;
 
                 int pop = -1, chars = -1;
+                bool hasFirst = false;
                 if (f != null)
                 {
                     try { pop = (int)f.atlasPopulationMode; } catch { }
                     try { chars = f.characterTable.Count; } catch { }
+                    try { hasFirst = f.HasCharacter(firstCjk); } catch { }
                 }
                 string matName = "?"; int tw = -1, th = -1;
                 try
@@ -130,9 +137,10 @@ namespace TCDiag
                 string preview = text.Length > 24 ? text.Substring(0, 24) : text;
                 preview = preview.Replace("\n", " ").Replace("\r", " ");
                 Plugin.Log.LogInfo(
-                    "[TCGIB] go='" + goName + "' font='" + fontName + "' pop=" + pop +
-                    " ownChars=" + chars + " miss=U+" + missCp.ToString("X4") + " '" + (char)missCp +
-                    "' mat='" + matName + "' tex=" + tw + "x" + th + " text='" + preview + "'");
+                    "[TCTEXT] go='" + goName + "' font='" + fontName + "' pop=" + pop +
+                    " chars=" + chars + " atlas=" + tw + "x" + th + " mat='" + matName +
+                    "' firstCjk=U+" + firstCjk.ToString("X4") + " '" + (char)firstCjk +
+                    "' has=" + hasFirst + " anyMiss=" + anyMiss + " text='" + preview + "'");
             }
         }
 
