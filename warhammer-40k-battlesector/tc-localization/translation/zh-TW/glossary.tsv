@@ -1,0 +1,13 @@
+# Traditional-Chinese term corrections for WH40K Battlesector.
+#
+# Applied AFTER OpenCC conversion (s2tw) during the text build. Use this to fix
+# OpenCC phrase-conversion mistakes (e.g. s2twp turns 重装 -> 重灌 "reinstall")
+# and to enforce lore-consistent terminology.
+#
+# Format: one rule per line, <search><TAB><replace>. Lines starting with # and
+# blank lines are ignored. Rules are applied top-to-bottom as plain-text
+# replacements, so put longer / more specific terms before shorter ones.
+#
+# search	replace
+重灌仲裁者	重裝仲裁者
+腥紅	猩紅

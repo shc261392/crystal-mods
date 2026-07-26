@@ -33,32 +33,35 @@ setup: ## Install Python dependencies (UnityPy required)
 	@echo "✓ Python environment ready."
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Build
+# Build (1.7.7 pipeline: text + glossary -> assets -> ZIP)
 # ─────────────────────────────────────────────────────────────────────────────
 
 .PHONY: build
-build: ## Build patched asset file (full pipeline)
-	$(PYTHON) $(SCRIPTS)/extract_loc.py
-	$(PYTHON) $(SCRIPTS)/build_patch.py
-	$(PYTHON) $(SCRIPTS)/patch_font.py
-	$(PYTHON) $(SCRIPTS)/inject_loc.py
-	@echo "✓ Build complete. Output: dist/"
+build: ## Rebuild TC text from glossary + auto-bake glyphs + package ZIP
+	bash build.sh
 
-.PHONY: extract
-extract: ## Extract game asset strings (source/)
-	$(PYTHON) $(SCRIPTS)/extract_loc.py
+.PHONY: text
+text: ## Build TC text bins only (s2tw + glossary + punctuation)
+	$(PYTHON) $(SCRIPTS)/build_text.py
 
-.PHONY: patch-font
-patch-font: ## Apply font patches to glyph assets
-	$(PYTHON) $(SCRIPTS)/patch_font.py
-
-.PHONY: inject
-inject: ## Inject TC strings into game assets (dist/)
-	$(PYTHON) $(SCRIPTS)/inject_loc.py
+.PHONY: glossary
+glossary: build ## Alias for build — apply glossary.tsv and repackage
 
 .PHONY: analyze
 analyze: ## Analyze translation coverage and missing glyphs
 	$(PYTHON) $(SCRIPTS)/analyze.py
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Legacy pre-1.7.7 targets (kept for reference; not used by `make build`)
+# ─────────────────────────────────────────────────────────────────────────────
+
+.PHONY: legacy-build
+legacy-build: ## (legacy) old extract/build_patch/patch_font/inject pipeline
+	$(PYTHON) $(SCRIPTS)/extract_loc.py
+	$(PYTHON) $(SCRIPTS)/build_patch.py
+	$(PYTHON) $(SCRIPTS)/patch_font.py
+	$(PYTHON) $(SCRIPTS)/inject_loc.py
+	@echo "✓ Legacy build complete. Output: dist/"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Deploy
