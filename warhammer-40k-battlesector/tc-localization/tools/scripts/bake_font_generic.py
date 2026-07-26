@@ -63,6 +63,8 @@ def is_relevant(cp):
         or 0xF900 <= cp <= 0xFAFF
         or 0x3000 <= cp <= 0x303F
         or 0xFF00 <= cp <= 0xFFEF
+        or 0x2010 <= cp <= 0x2027  # general punctuation: – — ‘ ’ “ ” … •
+        or cp == 0x221E  # ∞ infinity
     )
 
 
