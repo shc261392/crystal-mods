@@ -300,10 +300,10 @@ a {
 }
 
 .label {
-  font-size: 0.74rem;
+  font-size: 0.65rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   color: var(--color-faint);
 }
 

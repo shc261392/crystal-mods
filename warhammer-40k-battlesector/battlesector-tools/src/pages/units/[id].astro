@@ -267,10 +267,10 @@ const vitals = [
 
   <!-- Vitals + Stat Index hexagon -->
   <div class="grid gap-4 mt-4 lg:grid-cols-[1fr_300px] items-start">
-  <section class="surface p-5 md:p-6">
-    <div class="grid gap-2.5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
+  <section class="surface p-4 md:p-5">
+    <div class="grid gap-1 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
       {vitals.map((v) => (
-        <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] px-3 py-3 text-center">
+        <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-base)] px-4 py-3 text-center">
           <div class="flex items-center justify-center gap-1">
             {getStatIcon(v.stat) && (
               <svg class="w-4 h-4 shrink-0" viewBox="0 0 20 20" aria-hidden="true">
@@ -284,7 +284,7 @@ const vitals = [
             )}
             <p class="label" style={`color:${v.accent}`}>{v.label}</p>
           </div>
-          <p class="text-2xl font-black tabular-nums mt-1 leading-none whitespace-nowrap" style={`color:${v.accent}`}>{v.value}</p>
+          <p class="text-xl font-black tabular-nums mt-1 leading-none whitespace-nowrap" style={`color:${v.accent}`}>{v.value}</p>
           {'sub' in v && v.sub && (
             <p class="text-[11px] text-[var(--color-faint)] tabular-nums mt-0.5 whitespace-nowrap">{v.sub}</p>
           )}
