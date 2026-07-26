@@ -45,9 +45,9 @@ namespace TCFix
     {
         public FixBehaviour(IntPtr ptr) : base(ptr) { }
 
-        // Scan ~10x/second so a newly-shown modal is corrected within ~0.1s (no
-        // visible 1-second gibberish flash) while keeping cost reasonable.
-        private const float ScanInterval = 0.1f;
+        // Scan ~5x/second so a newly-shown modal is corrected within ~0.2s (no
+        // visible 1-second gibberish flash) while keeping the per-scan cost low.
+        private const float ScanInterval = 0.2f;
 
         private TMP_FontAsset _good;
         private float _timer;
