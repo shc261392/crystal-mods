@@ -8,13 +8,19 @@ using TMPro;
 
 namespace TCFix
 {
-    // BepInEx 6 (IL2CPP) runtime fix. Several screens render Traditional-Chinese
-    // text through fonts that lack the Traditional-specific glyphs (the built-in
-    // "futura ... No Underlay" description font, plus modal/zone-modifier fonts),
-    // producing garbled output. This plugin scans on-screen TMP text and, for any
-    // text whose current font cannot render one of its CJK characters, swaps that
-    // text to the full-Traditional font "futura medium condensed bt SDF" (785).
-    [BepInPlugin(GUID, "TC Font Fix", "1.1.0")]
+    // BepInEx 6 (IL2CPP) runtime fix. Several fonts render Traditional-Chinese text
+    // incorrectly: the built-in futura variants "... - No Underlay" (static, 124
+    // Latin glyphs) and "... - with shadow" (dynamic, ~91 glyphs) have no real CJK
+    // coverage and produce garbled output via broken fallback / dynamic generation.
+    // This plugin finds on-screen TMP text that contains CJK but is drawn with a
+    // font that has only a small character table (i.e. not a full-CJK font) and
+    // swaps it to the full-Traditional font "futura medium condensed bt SDF" (785,
+    // ~3636 glyphs), which renders correct Traditional Chinese.
+    //
+    // Note: HasCharacter() searches fallbacks and returns true even for these broken
+    // fonts, so it CANNOT be used to detect the problem. The reliable signal is the
+    // font's own characterTable size (full-CJK fonts have thousands of glyphs).
+    [BepInPlugin(GUID, "TC Font Fix", "1.2.0")]
     public class Plugin : BasePlugin
     {
         public const string GUID = "com.crystalmods.tcfix";
@@ -22,11 +28,14 @@ namespace TCFix
 
         // Target (working, full-Traditional) font asset name.
         internal const string GoodFontName = "futura medium condensed bt SDF";
+        // A font with at least this many glyphs is treated as a real CJK font and
+        // left alone; anything smaller that draws CJK is swapped.
+        internal const int FullCjkMinChars = 3000;
 
         public override void Load()
         {
             Log = base.Log;
-            Log.LogInfo("TCFix 1.1.0 loaded. Swapping any CJK text whose font lacks the glyphs -> '" + GoodFontName + "'.");
+            Log.LogInfo("TCFix 1.2.0 loaded. Swapping CJK text on partial fonts (<" + FullCjkMinChars + " glyphs) -> '" + GoodFontName + "'.");
             ClassInjector.RegisterTypeInIl2Cpp<FixBehaviour>();
             AddComponent<FixBehaviour>();
         }
@@ -36,9 +45,9 @@ namespace TCFix
     {
         public FixBehaviour(IntPtr ptr) : base(ptr) { }
 
-        // Scan active text ~20x/second so a newly-shown modal is corrected within
-        // a frame or two (no visible 1-second gibberish flash) while keeping cost low.
-        private const float ScanInterval = 0.05f;
+        // Scan ~10x/second so a newly-shown modal is corrected within ~0.1s (no
+        // visible 1-second gibberish flash) while keeping cost reasonable.
+        private const float ScanInterval = 0.1f;
 
         private TMP_FontAsset _good;
         private float _timer;
@@ -57,10 +66,10 @@ namespace TCFix
             if (_timer < ScanInterval) return;
             _timer = 0f;
 
-            // Active scene text only (cheaper than FindObjectsOfTypeAll and exactly
-            // what is on screen).
+            // Use FindObjectsOfTypeAll (proven reliable in this Il2CppInterop build);
+            // filter to on-screen components ourselves.
             TMP_Text[] all;
-            try { all = UnityEngine.Object.FindObjectsOfType<TMP_Text>(); }
+            try { all = Resources.FindObjectsOfTypeAll<TMP_Text>(); }
             catch { return; }
             if (all == null) return;
 
@@ -68,17 +77,24 @@ namespace TCFix
             {
                 TMP_Text t = all[i];
                 if (t == null) continue;
+
+                bool active;
+                try { active = t.isActiveAndEnabled && t.gameObject.activeInHierarchy; }
+                catch { continue; }
+                if (!active) continue;
+
                 TMP_FontAsset f;
                 try { f = t.font; } catch { continue; }
-                if (f == null || ReferenceEquals(f, _good)) continue;
+                if (f != null && ReferenceEquals(f, _good)) continue;      // already good
+                if (f != null && SafeChars(f) >= Plugin.FullCjkMinChars) continue; // real CJK font
 
                 string text;
                 try { text = t.text; } catch { continue; }
-                if (!FontMissesCjk(f, text)) continue;
+                if (!HasCjk(text)) continue;                                // only CJK text
 
                 try
                 {
-                    string oldName = SafeName(f);
+                    string oldName = f != null ? SafeName(f) : "<NULL>";
                     t.font = _good;
                     t.SetAllDirty();
                     t.ForceMeshUpdate(false, false);
@@ -90,21 +106,13 @@ namespace TCFix
             }
         }
 
-        // True if the text contains at least one CJK character that the font's own
-        // character table cannot render (so it would garble / fall back badly).
-        private static bool FontMissesCjk(TMP_FontAsset f, string text)
+        private static bool HasCjk(string s)
         {
-            if (string.IsNullOrEmpty(text)) return false;
-            int checkedCount = 0;
-            for (int i = 0; i < text.Length; i++)
+            if (string.IsNullOrEmpty(s)) return false;
+            for (int i = 0; i < s.Length; i++)
             {
-                int c = text[i];
-                bool cjk = (c >= 0x3400 && c <= 0x9FFF) || (c >= 0xF900 && c <= 0xFAFF);
-                if (!cjk) continue;
-                bool has;
-                try { has = f.HasCharacter(c); } catch { return false; }
-                if (!has) return true;
-                if (++checkedCount >= 32) break; // cap work per text object
+                int c = s[i];
+                if ((c >= 0x3400 && c <= 0x9FFF) || (c >= 0xF900 && c <= 0xFAFF)) return true;
             }
             return false;
         }
@@ -121,7 +129,7 @@ namespace TCFix
                 if (f == null) continue;
                 string n; try { n = f.name; } catch { continue; }
                 if (n != Plugin.GoodFontName) continue;
-                if (SafeChars(f) > 3000) return f; // the full-TC instance
+                if (SafeChars(f) >= Plugin.FullCjkMinChars) return f; // the full-TC instance
             }
             return null;
         }
