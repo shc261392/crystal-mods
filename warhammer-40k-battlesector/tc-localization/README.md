@@ -1,179 +1,77 @@
-# WH40K Battlesector — Traditional Chinese Localization Mod
+# WH40K Battlesector — Traditional Chinese Localization
 
-Community Traditional Chinese (zh-TW) localization mod for **Warhammer 40,000: Battlesector** (Black Lab Games / Slitherine).
+Community **Traditional Chinese (zh-TW)** localization for **Warhammer 40,000:
+Battlesector** (Black Lab Games / Slitherine), game version **1.7.7**.
 
-## How It Works
+The game ships with Simplified Chinese only. This mod converts it to Traditional
+Chinese — menus, factions, units, campaign, mission text, unit **descriptions**,
+and the launcher. In-game, select **Chinese (Simplified)**; it displays as
+Traditional.
 
-This mod directly patches the game's `sharedassets1.assets` binary file — no third-party mod loader required. Traditional Chinese strings replace the Simplified Chinese slot in the asset file.
+> Version **0.2.2**. See [CHANGELOG.md](CHANGELOG.md) for changes and
+> [docs/DEVELOPER.md](docs/DEVELOPER.md) for the full technical record.
 
-**In-game:** Select **Chinese (Simplified)** to display Traditional Chinese text.
+## How it works
 
-The font work is focused on achieving full TC glyph coverage directly in the TextMesh Pro font assets.
+Warhammer 40,000: Battlesector renders unit/campaign **descriptions** (and several
+modals) through a font that has no Chinese glyphs and garbles Traditional-specific
+characters at runtime. Pure asset edits can't fix this. So the mod combines:
 
-## Status
+- **Asset localization** — SC→TC text in `resources.assets`, plus TextMesh Pro font
+  assets re-baked to full Traditional coverage (Noto Sans CJK TC).
+- **`TCFix`** — a small open-source **BepInEx 6 (IL2CPP)** plugin that, at runtime,
+  swaps any on-screen text whose font lacks the CJK glyphs to the full-Traditional
+  font. This is what fixes the descriptions and modals.
 
-| Component | Status |
-|---|---|
-| Auto-generated baseline (SC→TC) | ✅ Completed |
-| Terminology glossary | 🔧 In progress |
-| Manual review pass | 🔧 In progress |
-| Font pipeline (TC-only render target) | 🔧 In progress |
+Because of the runtime component, the mod requires the **Core (BepInEx6)** framework
+(a one-time dependency, shipped as a separate file on the mod page).
+
+## Install (Vortex — recommended)
+
+1. Install the **Warhammer 40,000: Battlesector** Vortex extension (Games → search).
+2. Install the **Core (BepInEx6)** framework file, then **Deploy**.
+3. Install this **Traditional Chinese Localization** file, then **Deploy**.
+4. Launch once to the main menu (first launch is slower — BepInEx initializes), then
+   set language to **Chinese (Simplified)** in Options. It displays as Traditional.
+
+**Uninstall:** purge/remove both mods in Vortex — the originals restore
+automatically. Manual: delete `winhttp.dll` from the game root and restore the
+backed-up `*.assets` / bundle files.
 
 ## Requirements
 
-- Warhammer 40,000: Battlesector (Steam / GOG)
-- **For script-based deployment:**
-  - Python 3.8+ with [UnityPy](https://github.com/K0lb3/UnityPy)
-  - Bash (Linux/WSL2) or PowerShell 5.0+ (Windows)
+- Warhammer 40,000: Battlesector **1.7.7** (Steam / GOG). Windows primary;
+  Linux/Proton less tested.
+- **Core (BepInEx6)** framework (separate file on the mod page).
 
-## Installation
-
-### Option A: Vortex Mod Manager (Recommended)
-
-1. **Install the Vortex extension** *(first time only)*
-   - Download from Nexus Mods
-   - Drag onto Vortex **Extensions** tab → **Enable**
-
-2. **Add the mod**
-   - Drag this mod zip onto Vortex
-
-3. **Deploy** — click *Deploy Mods*
-   - Vortex automatically backs up `sharedassets1.assets`
-   - Files deploy to `Warhammer 40K Battlesector_Data/`
-
-4. **Launch the game** — in-game, select **Chinese (Simplified)** locale
-
-**To uninstall:** Click *Purge Mods* in Vortex. Original `sharedassets1.assets` is restored.
-
-### Option B: Script Install (Windows / Linux / WSL2)
-
-#### Windows (PowerShell)
-
-```powershell
-# From repo root:
-.\deploy.ps1
-```
-
-#### Linux / WSL2
+## Building from source
 
 ```bash
-# From repo root:
-bash deploy.sh
+make build        # rebuild text from the glossary, auto-bake glyphs, package the ZIP
 ```
 
-Both scripts:
-- Auto-detect game installation via Steam
-- Create timestamped backups in `./backup/`
-- Deploy translation files
-- Verify integrity
+`make build` runs [`build.sh`](build.sh): OpenCC `s2tw` → glossary → punctuation →
+inject → bake missing glyphs → package. To correct a translation term, edit
+[`translation/zh-TW/glossary.tsv`](translation/zh-TW/glossary.tsv) and re-run
+`make build`.
 
-**To uninstall:**
+Prerequisites: Python with `UnityPy opencc freetype numpy scipy Pillow`, .NET
+(for the `FontTool` helper), and a pristine `resources.assets` via `MOD_VANILLA_RES`.
+See [docs/DEVELOPER.md](docs/DEVELOPER.md) for the font pipeline, `TCFix` build, and
+environment variables.
 
-```powershell
-# Windows
-.\uninstall.ps1
+## Layout
 
-# Linux / WSL2
-bash uninstall.sh
-```
+| Path | What |
+|---|---|
+| `bepinex/TCFix/` | Runtime font-swap plugin (source) |
+| `bepinex/TCDiag/` | Diagnostic plugin (developer only) |
+| `tools/scripts/` | Build/font tooling (`build_text.py`, `bake_font_generic.py`, …) |
+| `translation/zh-TW/glossary.tsv` | Editable term corrections |
+| `build.sh`, `Makefile` | Build entry points |
+| `docs/` | Developer guide, Nexus text, BepInEx setup |
 
-### Option C: Manual Install
+## License / credits
 
-1. **Locate game folder**
-   - Steam: Right-click **Warhammer 40,000: Battlesector** → **Manage** → **Browse local files**
-   - Common path: `C:\Program Files (x86)\Steam\steamapps\common\Warhammer 40K Battlesector\`
-
-2. **Backup the original**
-   ```
-   Warhammer 40K Battlesector_Data/sharedassets1.assets
-   → Warhammer 40K Battlesector_Data/sharedassets1.assets.backup
-   ```
-
-3. **Deploy the patched asset file**
-   - Copy `dist/sharedassets1.assets` to `Warhammer 40K Battlesector_Data/`
-
-4. **Launch the game** → select **Chinese (Simplified)** locale
-
-**To uninstall:**
-1. Delete `Warhammer 40K Battlesector_Data/sharedassets1.assets`
-2. Rename `sharedassets1.assets.backup` → `sharedassets1.assets`
-
----
-
-## Building from Source
-
-If you want to rebuild the patched asset file:
-
-### Requirements
-
-```bash
-pip install UnityPy
-```
-
-### Full Pipeline
-
-```bash
-# Extract → build → inject → deploy to game
-bash tools/scripts/deploy.sh
-```
-
-### Manual Build Steps
-
-```bash
-# 1. Extract game assets
-python3 tools/scripts/extract_assets.py
-
-# 2. Build TC translations
-python3 tools/scripts/build_translations.py
-
-# 3. Inject into assets
-python3 tools/scripts/inject_strings.py
-
-# 4. Verify output
-python3 tools/scripts/verify_build.py
-```
-
----
-
-## Project Structure
-
-```
-tc-localization/
-├── dist/                      # Built/patched assets (ready to deploy)
-├── source/                    # Extracted game asset sources
-│   ├── zh-CN/                # (reference) Simplified Chinese
-│   ├── zh-TW/                # Traditional Chinese source
-│   ├── en-US/
-│   ├── de-DE/
-│   ├── es-ES/
-│   ├── fr-FR/
-│   ├── ko-KR/
-│   ├── pl-PL/
-│   ├── pt-BR/
-│   └── ru-RU/
-├── config/                    # Build configuration
-├── tools/
-│   └── scripts/              # Python build & deploy tools
-├── README.md
-├── modinfo.json
-└── deploy.{sh,ps1}
-```
-
----
-
-## Contributing
-
-Corrections, terminology improvements, and font enhancements welcome!
-
-- **Translation issues?** Check `glossary/` and contribute fixes
-- **Font glyphs missing?** Report via Issues with screenshot
-- **Build tools?** See `tools/scripts/` for improvement suggestions
-
----
-
-## License & Attribution
-
-- **Game:** © Black Lab Games / Slitherine
-- **Mod:** Community contribution under [MIT License](../../../LICENSE)
-- **Font assets:** TextMesh Pro (© Unity Technologies)
-
+- Text via OpenCC (`s2tw`). Fonts based on **Noto Sans CJK TC**.
+- `TCFix` is open source (this repo, `bepinex/TCFix/`). BepInEx is LGPL-2.1.

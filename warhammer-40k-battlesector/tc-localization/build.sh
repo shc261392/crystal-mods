@@ -31,7 +31,7 @@ DIST="$ROOT/translation/zh-TW/dist"
 WS="$ROOT/.copilot_workspace"
 TEXT_OUT="$ROOT/.build/text"
 DATA="Warhammer 40K Battlesector_Data"
-ZIP_OUT="${MOD_ZIP_OUT:-$ROOT/../dist/wh40k-battlesector-tc-localization-v0.2.1.zip}"
+ZIP_OUT="${MOD_ZIP_OUT:-$ROOT/../dist/wh40k-battlesector-tc-localization-v0.2.2.zip}"
 TCFIX="$ROOT/bepinex/TCFix/bin/Release/TCFix.dll"
 
 command -v dotnet >/dev/null || { echo "dotnet not found"; exit 1; }

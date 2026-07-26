@@ -55,16 +55,23 @@ Vortex：清除（purge）／移除兩個模組，原始遊戲檔案會自動還
 - BepInEx 6 為預先發行（Bleeding Edge）版本，廣泛用於 IL2CPP 遊戲。
 - 可隨時安全移除。
 
-### 已知限制（持續改善中）
+### 版本更新（0.2.2）
 
-- 部分字（例如 眾）目前使用日文／簡體字形，而非繁體字形 —— 計畫改用繁體中文
-  Noto 字型重新烘焙字圖。
-- 部分標點目前為半形；計畫改為全形中文標點。
-- 部分強調字（粗體）目前偏粗。
+- **繁體字形**：字圖改由 **Noto Sans CJK TC** 重新烘焙，眾／骨／說 等字改用繁體字形。
+- **全形標點**：句中標點改為全形（，。！？：；（）……），數字與版本號不受影響。
+- **粗體**：降低 `<b>` 粗體權重，強調文字不再過粗。
+- **更廣的執行期修正（TCFix 1.2.0）**：修正**退出遊戲**、**十字軍區域加成／獎勵**、
+  存檔命名等先前仍亂碼的視窗，並將修正延遲由 1 秒縮短至約 0.2 秒（幾乎無閃爍）。
+- 補齊先前缺字：`！ ？ ）`、項目符號 `•`、`∞`。
+
+### 已知限制
+
+- 少數不常用符號或極少數畫面若使用未涵蓋字型仍可能顯示異常，歡迎回報。
 
 ### 製作資訊與原始碼
 
-- 文字轉換使用 OpenCC（s2tw）。字型基於 Noto Sans CJK。
+- 文字轉換使用 OpenCC（s2tw，字元級，避免 s2twp 的詞語誤轉）。字型基於 Noto Sans CJK TC。
+  校正詞彙表：`translation/zh-TW/glossary.tsv`（可編輯，`make build` 重建）。
 - **`TCFix` 外掛為開源軟體，原始碼公開於 GitHub 供審閱與自行編譯**：
   <https://github.com/shc261392/crystal-mods/tree/main/warhammer-40k-battlesector/tc-localization/bepinex/TCFix>
 - **Core (BepInEx6)** 為 **BepInEx 6（IL2CPP, Bleeding Edge）** 官方建置，未經修改重打包。
@@ -115,16 +122,28 @@ Vortex: purge/remove both mods — originals restore automatically. Manual: dele
 - BepInEx 6 is a Bleeding-Edge pre-release, widely used for IL2CPP games.
 - Safe to remove at any time.
 
-### Known limitations (being refined)
+### What's new in 0.2.2
 
-- Some characters (e.g. 眾) currently use JP/Simplified glyph shapes; a re-bake from a
-  Traditional-Chinese Noto is planned.
-- Some punctuation is half-width; full-width CJK punctuation planned.
-- Bold weight on some emphasized words is a little heavy.
+- **Traditional letterforms** — CJK glyphs re-baked from **Noto Sans CJK TC**
+  (眾/骨/說 etc. now use TC shapes).
+- **Full-width punctuation** — `，。！？：；（）……` where adjacent to CJK; numbers and
+  version strings untouched.
+- **Lighter bold** — reduced `<b>` weight so emphasis isn't too heavy.
+- **Broader runtime fix (TCFix 1.2.0)** — now also corrects the **exit-game modal**,
+  **Crusade zone modifiers/rewards**, and save/name dialogs; correction latency cut
+  from ~1s to ~0.2s (no visible flash).
+- Baked previously-missing glyphs: `！ ？ ）`, bullet `•`, `∞`.
+
+### Known limitations
+
+- A few uncommon symbols or rare screens using an uncovered font may still misrender
+  — please report them.
 
 ### Credits & source
 
-- Text via OpenCC (s2tw). Fonts based on Noto Sans CJK.
+- Text via OpenCC **`s2tw`** (character-level; avoids `s2twp` phrase errors such as
+  `重装 → 重灌`). Fonts based on Noto Sans CJK TC. Editable term glossary at
+  `translation/zh-TW/glossary.tsv` (`make build` rebuilds).
 - **`TCFix` plugin is open source** — audit or build it yourself from the repository:
   <https://github.com/shc261392/crystal-mods/tree/main/warhammer-40k-battlesector/tc-localization/bepinex/TCFix>
 - **Core (BepInEx6)** is an unmodified repackage of the official **BepInEx 6

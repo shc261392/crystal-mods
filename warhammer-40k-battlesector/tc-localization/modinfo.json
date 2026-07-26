@@ -2,7 +2,7 @@
   "id": "tc-localization",
   "name": "Traditional Chinese Localization",
   "game": "warhammer-40k-battlesector",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "Community",
   "category": "Localization",
   "platforms": ["windows", "linux-proton"],
