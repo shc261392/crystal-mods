@@ -1,0 +1,7 @@
+# Build outputs and large binaries
+dist/*.zip
+.copilot_workspace/
+payload/
+inputs/
+*.bundle
+__pycache__/

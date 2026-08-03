@@ -1,0 +1,1034 @@
+{
+  "_readme": "Hand-editable Crusade upgrade-card effects for the-great-crusade. Edit the numbers under each card's 'effects' and rebuild with `make` (every build reads this file). Only 'multiplier', 'addSubtract', 'chance', 'intValue' and 'stat' are applied; other keys are informational. Regenerate defaults with `make export-cards FORCE=1`. Player-facing upgrades are in cards.json; enemy / cluster-modifier cards are in cards-nonplayer.json.",
+  "_fields": {
+    "id": "Card internalID. Match key — do NOT change.",
+    "name": "Human label for the card (informational only).",
+    "note": "Auto-generated summary of the card's current effects (informational).",
+    "tier": "Card rarity/tier: Common | Uncommon | Rare | Legendary (informational).",
+    "costMultiplier": "Extra unit point-cost when this upgrade is taken. 0.1 = +10%, -0.1 = -10%, 0 = no change. Editable.",
+    "roles": "Unit roles that can be offered this card (informational).",
+    "effects": "List of stat changes applied when the card is picked.",
+    "effects[].stat": "Which stat changes (see _statTypes). Editable — retype to change the stat.",
+    "effects[].multiplier": "Percent change applied first. 0.2 = +20%, -0.5 = -50%, 0 = no multiplier.",
+    "effects[].addSubtract": "Flat amount added after the multiplier. 5 = +5, -3 = -3.",
+    "effects[].chance": "0-100 percent chance the effect triggers. 0 = always.",
+    "effects[].intValue": "Integer parameter used by a few stat types (leave as-is if unsure)."
+  },
+  "_tiers": {
+    "Common": 0,
+    "Uncommon": 1,
+    "Rare": 2,
+    "Legendary": 3
+  },
+  "_scope": "player upgrade cards",
+  "_statTypes": {
+    "Evasion": 1,
+    "Movement": 2,
+    "ActionPoints": 8,
+    "RangedFalloff": 9,
+    "MomentumGains": 15,
+    "HPPerModel": 18,
+    "AllArmor": 30,
+    "MeleeDamage": 1000,
+    "RangedAccuracy": 1001,
+    "MeleeAccuracy": 1002,
+    "RangedDamage": 1003,
+    "ArmorPiercing": 1004,
+    "MeleeArmorPiercing": 1007,
+    "AccuracyPerMomentum": 1011,
+    "Accuracy": 1013,
+    "Damage": 1014,
+    "MaximumWeaponRange": 1022,
+    "DamagePerMomentum": 1023,
+    "AwarenessRange": 2011
+  },
+  "cards": [
+    {
+      "id": 30,
+      "name": "HealthLessArmor",
+      "note": "Common: +15% HPPerModel; -1 AllArmor [unit cost -10%]",
+      "tier": "Common",
+      "costMultiplier": -0.1,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "HPPerModel",
+          "multiplier": 0.15,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "AllArmor",
+          "multiplier": 0.0,
+          "addSubtract": -1.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "LessMeleeDamage",
+      "note": "Common: -15% MeleeDamage [unit cost -20%]",
+      "tier": "Common",
+      "costMultiplier": -0.2,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "MeleeDamage",
+          "multiplier": -0.15,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "LessMomentumGain",
+      "note": "Common: -10% MomentumGains [unit cost -20%]",
+      "tier": "Common",
+      "costMultiplier": -0.2,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "MomentumGains",
+          "multiplier": -0.1,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "LessMovement",
+      "note": "Common: -1 Movement [unit cost -30%]",
+      "tier": "Common",
+      "costMultiplier": -0.3,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "Movement",
+          "multiplier": 0.0,
+          "addSubtract": -1.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "LessArmor",
+      "note": "Common: -1 AllArmor [unit cost -20%]",
+      "tier": "Common",
+      "costMultiplier": -0.2,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "AllArmor",
+          "multiplier": 0.0,
+          "addSubtract": -1.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "name": "ArmourPiercing&LessAccuracy",
+      "note": "Uncommon: +1 ArmorPiercing; -5 Accuracy [unit cost -15%]",
+      "tier": "Uncommon",
+      "costMultiplier": -0.15,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "ArmorPiercing",
+          "multiplier": 0.0,
+          "addSubtract": 1.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "Accuracy",
+          "multiplier": 0.0,
+          "addSubtract": -5.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "name": "Armour&Evasion",
+      "note": "Uncommon: +5 Evasion; +1 AllArmor [unit cost -5%]",
+      "tier": "Uncommon",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "Evasion",
+          "multiplier": 0.0,
+          "addSubtract": 5.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "AllArmor",
+          "multiplier": 0.0,
+          "addSubtract": 1.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "name": "AwarnessRange",
+      "note": "Uncommon: +1 AwarenessRange [unit cost -15%]",
+      "tier": "Uncommon",
+      "costMultiplier": -0.15,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "AwarenessRange",
+          "multiplier": 0.0,
+          "addSubtract": 1.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "name": "DamageRanged&LessAccuracy",
+      "note": "Uncommon: +30% RangedDamage; -5 RangedAccuracy [unit cost -15%]",
+      "tier": "Uncommon",
+      "costMultiplier": -0.15,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "RangedDamage",
+          "multiplier": 0.3,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "RangedAccuracy",
+          "multiplier": 0.0,
+          "addSubtract": -5.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "name": "Accuracy",
+      "note": "Uncommon: +5 Accuracy [unit cost -15%]",
+      "tier": "Uncommon",
+      "costMultiplier": -0.15,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "Accuracy",
+          "multiplier": 0.0,
+          "addSubtract": 5.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "name": "LessEvasion&Damage",
+      "note": "Uncommon: -5 Evasion; +25% Damage [unit cost -15%]",
+      "tier": "Uncommon",
+      "costMultiplier": -0.15,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "Evasion",
+          "multiplier": 0.0,
+          "addSubtract": -5.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "Damage",
+          "multiplier": 0.25,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "name": "LessArmorPiercing&Accuracy",
+      "note": "Uncommon: -1 ArmorPiercing; +10 Accuracy [unit cost -25%]",
+      "tier": "Uncommon",
+      "costMultiplier": -0.25,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "ArmorPiercing",
+          "multiplier": 0.0,
+          "addSubtract": -1.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "Accuracy",
+          "multiplier": 0.0,
+          "addSubtract": 10.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "name": "LessAccuracy&Damage",
+      "note": "Uncommon: -10 Accuracy; +30% Damage [unit cost -25%]",
+      "tier": "Uncommon",
+      "costMultiplier": -0.25,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "Accuracy",
+          "multiplier": 0.0,
+          "addSubtract": -10.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "Damage",
+          "multiplier": 0.3,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "name": "MaximumRange",
+      "note": "Uncommon: +1 MaximumWeaponRange [unit cost -10%]",
+      "tier": "Uncommon",
+      "costMultiplier": -0.1,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "MaximumWeaponRange",
+          "multiplier": 0.0,
+          "addSubtract": 1.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "name": "MaximumRange&AccuracyFalloff",
+      "note": "Uncommon: +1 MaximumWeaponRange; -2 RangedFalloff [unit cost -5%]",
+      "tier": "Uncommon",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "MaximumWeaponRange",
+          "multiplier": 0.0,
+          "addSubtract": 1.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "RangedFalloff",
+          "multiplier": 0.0,
+          "addSubtract": -2.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "name": "LessAccuracyFalloff&DamageRanged",
+      "note": "Uncommon: +5 RangedFalloff; +30% RangedDamage [unit cost -20%]",
+      "tier": "Uncommon",
+      "costMultiplier": -0.2,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "RangedFalloff",
+          "multiplier": 0.0,
+          "addSubtract": 5.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "RangedDamage",
+          "multiplier": 0.3,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 202,
+      "name": "ArmourPiercing",
+      "note": "Rare: +2 ArmorPiercing [unit cost +0%]",
+      "tier": "Rare",
+      "costMultiplier": 0.0,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "ArmorPiercing",
+          "multiplier": 0.0,
+          "addSubtract": 2.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 203,
+      "name": "Damage",
+      "note": "Rare: +50% Damage [unit cost -5%]",
+      "tier": "Rare",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "Damage",
+          "multiplier": 0.5,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 205,
+      "name": "DamageMelee",
+      "note": "Rare: +60% MeleeDamage [unit cost +0%]",
+      "tier": "Rare",
+      "costMultiplier": 0.0,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "MeleeDamage",
+          "multiplier": 0.6,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 206,
+      "name": "RangedAccuracyFalloff",
+      "note": "Rare: -10 RangedFalloff [unit cost -5%]",
+      "tier": "Rare",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "RangedFalloff",
+          "multiplier": 0.0,
+          "addSubtract": -10.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 207,
+      "name": "AccuracyMelee",
+      "note": "Rare: +20 MeleeAccuracy [unit cost -5%]",
+      "tier": "Rare",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "MeleeAccuracy",
+          "multiplier": 0.0,
+          "addSubtract": 20.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 208,
+      "name": "AccuracyRanged",
+      "note": "Rare: +20 RangedAccuracy [unit cost -5%]",
+      "tier": "Rare",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "RangedAccuracy",
+          "multiplier": 0.0,
+          "addSubtract": 20.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 210,
+      "name": "MeleeAccuracy&LessMeleeDamage",
+      "note": "Rare: +20 MeleeAccuracy; -20% MeleeDamage [unit cost -15%]",
+      "tier": "Rare",
+      "costMultiplier": -0.15,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "MeleeAccuracy",
+          "multiplier": 0.0,
+          "addSubtract": 20.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "MeleeDamage",
+          "multiplier": -0.2,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 212,
+      "name": "DamageRanged&RangedAccuracy",
+      "note": "Rare: +20% RangedDamage; +5 RangedAccuracy [unit cost -15%]",
+      "tier": "Rare",
+      "costMultiplier": -0.15,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "RangedDamage",
+          "multiplier": 0.2,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "RangedAccuracy",
+          "multiplier": 0.0,
+          "addSubtract": 5.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 215,
+      "name": "ArmorPiercing&LessAccuracy",
+      "note": "Rare: +1 ArmorPiercing; -5 Accuracy [unit cost -25%]",
+      "tier": "Rare",
+      "costMultiplier": -0.25,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "ArmorPiercing",
+          "multiplier": 0.0,
+          "addSubtract": 1.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "Accuracy",
+          "multiplier": 0.0,
+          "addSubtract": -5.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 220,
+      "name": "AccuracyPerMomentumDamagePerMomentum",
+      "note": "Rare: +1% AccuracyPerMomentum; +1% DamagePerMomentum [unit cost -10%]",
+      "tier": "Rare",
+      "costMultiplier": -0.1,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "AccuracyPerMomentum",
+          "multiplier": 0.01,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "DamagePerMomentum",
+          "multiplier": 0.01,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 221,
+      "name": "MoreHealthLessArmor",
+      "note": "Rare: +50% HPPerModel; -3 AllArmor [unit cost -15%]",
+      "tier": "Rare",
+      "costMultiplier": -0.15,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "HPPerModel",
+          "multiplier": 0.5,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "AllArmor",
+          "multiplier": 0.0,
+          "addSubtract": -3.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 222,
+      "name": "MoreDamagePerMomentumLessMomentumGain",
+      "note": "Rare: +2% DamagePerMomentum; -50% MomentumGains [unit cost -5%]",
+      "tier": "Rare",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "DamagePerMomentum",
+          "multiplier": 0.02,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "MomentumGains",
+          "multiplier": -0.5,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "MoreHealthLessMomentumGain",
+      "note": "Rare: +40% HPPerModel; -25% MomentumGains [unit cost -25%]",
+      "tier": "Rare",
+      "costMultiplier": -0.25,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "HPPerModel",
+          "multiplier": 0.4,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "MomentumGains",
+          "multiplier": -0.25,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 224,
+      "name": "MoreEvasionLessArmor",
+      "note": "Rare: +35 Evasion; -2 AllArmor [unit cost +15%]",
+      "tier": "Rare",
+      "costMultiplier": 0.15,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "Evasion",
+          "multiplier": 0.0,
+          "addSubtract": 35.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "AllArmor",
+          "multiplier": 0.0,
+          "addSubtract": -2.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 301,
+      "name": "AP",
+      "note": "Legendary: +1 ActionPoints [unit cost +10%]",
+      "tier": "Legendary",
+      "costMultiplier": 0.1,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "ActionPoints",
+          "multiplier": 0.0,
+          "addSubtract": 1.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 303,
+      "name": "ArmourPiercingMelee&DamageMelee",
+      "note": "Legendary: +2 MeleeArmorPiercing; +40% MeleeDamage [unit cost +5%]",
+      "tier": "Legendary",
+      "costMultiplier": 0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "MeleeArmorPiercing",
+          "multiplier": 0.0,
+          "addSubtract": 2.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "MeleeDamage",
+          "multiplier": 0.4,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 307,
+      "name": "ArmorPiercing&LessAccuracy",
+      "note": "Legendary: +2 ArmorPiercing; -10 Accuracy [unit cost -35%]",
+      "tier": "Legendary",
+      "costMultiplier": -0.35,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "ArmorPiercing",
+          "multiplier": 0.0,
+          "addSubtract": 2.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "Accuracy",
+          "multiplier": 0.0,
+          "addSubtract": -10.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 308,
+      "name": "MeleeDamageLessRangedDamage",
+      "note": "Legendary: +50% MeleeDamage; -50% RangedDamage [unit cost -60%]",
+      "tier": "Legendary",
+      "costMultiplier": -0.6,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "MeleeDamage",
+          "multiplier": 0.5,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "RangedDamage",
+          "multiplier": -0.5,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 309,
+      "name": "RangedDamageLessMeleeDamage",
+      "note": "Legendary: +50% RangedDamage; -50% MeleeDamage [unit cost -40%]",
+      "tier": "Legendary",
+      "costMultiplier": -0.4,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "RangedDamage",
+          "multiplier": 0.5,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "MeleeDamage",
+          "multiplier": -0.5,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    }
+  ]
+}

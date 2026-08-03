@@ -1,0 +1,548 @@
+{
+  "_readme": "Hand-editable Crusade upgrade-card effects for the-great-crusade. Edit the numbers under each card's 'effects' and rebuild with `make` (every build reads this file). Only 'multiplier', 'addSubtract', 'chance', 'intValue' and 'stat' are applied; other keys are informational. Regenerate defaults with `make export-cards FORCE=1`. Player-facing upgrades are in cards.json; enemy / cluster-modifier cards are in cards-nonplayer.json.",
+  "_fields": {
+    "id": "Card internalID. Match key — do NOT change.",
+    "name": "Human label for the card (informational only).",
+    "note": "Auto-generated summary of the card's current effects (informational).",
+    "tier": "Card rarity/tier: Common | Uncommon | Rare | Legendary (informational).",
+    "costMultiplier": "Extra unit point-cost when this upgrade is taken. 0.1 = +10%, -0.1 = -10%, 0 = no change. Editable.",
+    "roles": "Unit roles that can be offered this card (informational).",
+    "effects": "List of stat changes applied when the card is picked.",
+    "effects[].stat": "Which stat changes (see _statTypes). Editable — retype to change the stat.",
+    "effects[].multiplier": "Percent change applied first. 0.2 = +20%, -0.5 = -50%, 0 = no multiplier.",
+    "effects[].addSubtract": "Flat amount added after the multiplier. 5 = +5, -3 = -3.",
+    "effects[].chance": "0-100 percent chance the effect triggers. 0 = always.",
+    "effects[].intValue": "Integer parameter used by a few stat types (leave as-is if unsure)."
+  },
+  "_tiers": {
+    "Common": 0,
+    "Uncommon": 1,
+    "Rare": 2,
+    "Legendary": 3
+  },
+  "_scope": "enemy / cluster-modifier cards",
+  "_statTypes": {
+    "Evasion": 1,
+    "Movement": 2,
+    "AdditionalMeleeAttacks": 12,
+    "MomentumGains": 15,
+    "HealPerTurn": 17,
+    "AllArmor": 30,
+    "MeleeDamage": 1000,
+    "RangedAccuracy": 1001,
+    "MeleeAccuracy": 1002,
+    "ArmorPiercing": 1004,
+    "MeleeArmorPiercing": 1007,
+    "CriticalChance": 1009,
+    "Accuracy": 1013,
+    "Damage": 1014,
+    "RangedIgnorePartialCover": 1016,
+    "ChangeIncomingGrazeChance": 1028,
+    "ChangeOutcomingGrazeChance": 1029,
+    "AwarenessRange": 2011,
+    "AwarenessConeRange": 2012
+  },
+  "cards": [
+    {
+      "id": 501,
+      "name": "Enemy-Damage",
+      "note": "Common: +20% Damage [unit cost -10%]",
+      "tier": "Common",
+      "costMultiplier": -0.1,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "Damage",
+          "multiplier": 0.2,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 502,
+      "name": "Enemy-Evasion",
+      "note": "Common: +10 Evasion [unit cost -10%]",
+      "tier": "Common",
+      "costMultiplier": -0.1,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "Evasion",
+          "multiplier": 0.0,
+          "addSubtract": 10.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 503,
+      "name": "Enemy-Armor",
+      "note": "Common: +1 AllArmor [unit cost -10%]",
+      "tier": "Common",
+      "costMultiplier": -0.1,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "AllArmor",
+          "multiplier": 0.0,
+          "addSubtract": 1.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 505,
+      "name": "Enemy-ArmorPiercing",
+      "note": "Common: +1 ArmorPiercing [unit cost -10%]",
+      "tier": "Common",
+      "costMultiplier": -0.1,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "ArmorPiercing",
+          "multiplier": 0.0,
+          "addSubtract": 1.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 509,
+      "name": "Enemy-Accuracy",
+      "note": "Common: +20% Accuracy [unit cost -10%]",
+      "tier": "Common",
+      "costMultiplier": -0.1,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "Accuracy",
+          "multiplier": 0.2,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 510,
+      "name": "Enemy-Movement",
+      "note": "Common: +1 Movement [unit cost -10%]",
+      "tier": "Common",
+      "costMultiplier": -0.1,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "Movement",
+          "multiplier": 0.0,
+          "addSubtract": 1.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 511,
+      "name": "Enemy-CritChance",
+      "note": "Common: +25% CriticalChance [unit cost -5%]",
+      "tier": "Common",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "CriticalChance",
+          "multiplier": 0.25,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 512,
+      "name": "Enemy-IgnorePartialCover",
+      "note": "Common: RangedIgnorePartialCover [unit cost -10%]",
+      "tier": "Common",
+      "costMultiplier": -0.1,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "RangedIgnorePartialCover",
+          "multiplier": 0.0,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 513,
+      "name": "Enemy-HPperTurn",
+      "note": "Common: +10% HealPerTurn [unit cost -10%]",
+      "tier": "Common",
+      "costMultiplier": -0.1,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "HealPerTurn",
+          "multiplier": 0.1,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 514,
+      "name": "Enemy-MoreMeleeAttack",
+      "note": "Common: +2 AdditionalMeleeAttacks [unit cost -5%]",
+      "tier": "Common",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "AdditionalMeleeAttacks",
+          "multiplier": 0.0,
+          "addSubtract": 2.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 600,
+      "name": "ZoneModifier-LessMomentumGains",
+      "note": "Common: -5% MomentumGains [unit cost -5%]",
+      "tier": "Common",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "MomentumGains",
+          "multiplier": -0.05,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 602,
+      "name": "ZoneModifier-MoreRangedAccuracy",
+      "note": "Common: +10% RangedAccuracy [unit cost -5%]",
+      "tier": "Common",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "RangedAccuracy",
+          "multiplier": 0.1,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 603,
+      "name": "ZoneModifier-LessAwarnessRangeMoreMeleeDamage",
+      "note": "Common: -1 AwarenessRange; -1 AwarenessConeRange; +10% MeleeDamage [unit cost -5%]",
+      "tier": "Common",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "AwarenessRange",
+          "multiplier": 0.0,
+          "addSubtract": -1.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "AwarenessConeRange",
+          "multiplier": 0.0,
+          "addSubtract": -1.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "MeleeDamage",
+          "multiplier": 0.1,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 604,
+      "name": "ZoneModifier-MoreMeleeArmorPiercing",
+      "note": "Common: +1 MeleeArmorPiercing [unit cost -5%]",
+      "tier": "Common",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "MeleeArmorPiercing",
+          "multiplier": 0.0,
+          "addSubtract": 1.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 606,
+      "name": "ZoneModifier-LessMeleeAccuracy",
+      "note": "Common: -10% MeleeAccuracy [unit cost -5%]",
+      "tier": "Common",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "MeleeAccuracy",
+          "multiplier": -0.1,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 610,
+      "name": "ZoneModifier-MoreEvasion",
+      "note": "Common: +10 Evasion [unit cost -5%]",
+      "tier": "Common",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "Evasion",
+          "multiplier": 0.0,
+          "addSubtract": 10.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 611,
+      "name": "ZoneModifier-LessEvasion",
+      "note": "Common: -10 Evasion [unit cost -10%]",
+      "tier": "Common",
+      "costMultiplier": -0.1,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "Evasion",
+          "multiplier": 0.0,
+          "addSubtract": -10.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 612,
+      "name": "ZoneModifier-Graze",
+      "note": "Common: +5% ChangeOutcomingGrazeChance; +5% ChangeIncomingGrazeChance [unit cost -10%]",
+      "tier": "Common",
+      "costMultiplier": -0.1,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "ChangeOutcomingGrazeChance",
+          "multiplier": 0.05,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        },
+        {
+          "stat": "ChangeIncomingGrazeChance",
+          "multiplier": 0.05,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 613,
+      "name": "ZoneModifier-MeleeAccuracy",
+      "note": "Common: +10% MeleeAccuracy [unit cost -5%]",
+      "tier": "Common",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "MeleeAccuracy",
+          "multiplier": 0.1,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    },
+    {
+      "id": 614,
+      "name": "ZoneModifier-LessRangedAccuracy",
+      "note": "Common: -10% RangedAccuracy [unit cost -5%]",
+      "tier": "Common",
+      "costMultiplier": -0.05,
+      "roles": [
+        "HQ",
+        "Troop",
+        "Elite",
+        "FastAttack",
+        "HeavySupport",
+        "DedicatedTransport"
+      ],
+      "effects": [
+        {
+          "stat": "RangedAccuracy",
+          "multiplier": -0.1,
+          "addSubtract": 0.0,
+          "chance": 0.0,
+          "intValue": 0
+        }
+      ]
+    }
+  ]
+}
