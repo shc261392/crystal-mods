@@ -1,0 +1,9 @@
+# Build artifacts / scratch
+.build/
+.copilot_workspace/
+dist/
+__pycache__/
+
+# .NET / BepInEx plugin build outputs
+bin/
+obj/

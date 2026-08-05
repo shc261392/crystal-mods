@@ -1,0 +1,26 @@
+{
+  "name": "BepInEx Framework",
+  "id": "bepinex-framework",
+  "game": "warhammer40kbattlesector",
+  "version": "1.0.0",
+  "author": "crystal-mods (packaging); BepInEx contributors (runtime)",
+  "gameVersion": "1.7.7",
+  "engine": "Unity 6000.0.62f1 (IL2CPP)",
+  "type": "runtime-framework",
+  "description": "The BepInEx 6 (IL2CPP) modding runtime for Warhammer 40,000: Battlesector. A shared dependency required by plugin mods (e.g. the Traditional Chinese Localization font fix and Red Laser Lasgun). Install this once, then install any BepInEx plugin mod. Ships the official BepInEx Bleeding-Edge build #785 (win-x64) plus the UnityDoorstop loader; no game files are modified.",
+  "provides": "BepInEx 6 IL2CPP runtime (winhttp doorstop loader + BepInEx/core + bundled dotnet)",
+  "upstream": {
+    "project": "BepInEx (Bleeding Edge)",
+    "build": "785 (6.0.0-be.785+6abdba4)",
+    "url": "https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.785+6abdba4.zip",
+    "sha256_official_artifact": "2a7cbf74d26abe4765c3e662db1721b923bac39849ebfef2ca5dc7de7e2d9b7f"
+  },
+  "requires": [],
+  "deployFiles": [
+    "winhttp.dll",
+    "doorstop_config.ini",
+    ".doorstop_version",
+    "BepInEx/",
+    "dotnet/"
+  ]
+}

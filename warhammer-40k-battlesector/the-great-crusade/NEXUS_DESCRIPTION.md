@@ -8,9 +8,15 @@ Gameplay tuning for the **Crusade / Planetary Supremacy** roguelite in Warhammer
 - **Fast, steady leveling** — every level costs a flat 100 XP more (100, 200,
   300 …), so units rank up quickly and evenly.
 - **Level cap raised to 15** — roughly twice the upgrade picks per unit (14 vs 7).
-- **Top-tier cards at every level** — Rare and Legendary ("gold") upgrade cards
-  are offered from the very first level-up, so rushing levels no longer traps you
-  in the low card pool.
+- **Guaranteed top-tier cards at the upper levels** — Rare and Legendary ("gold")
+  upgrade cards are guaranteed once a unit reaches the upper levels (~level 8 of
+  15 and above). The early levels (roughly 1–7) keep close to the vanilla rarity
+  mix, so the payoff is climbing the ranks rather than an instant flood of gold.
+- **Cheaper upgrades** — in Crusade mode, taking an upgrade card normally raises a
+  unit's point cost. This mod trims that cost for **every** card, scaled by tier —
+  Common −10, Uncommon −15, Rare −20 and Legendary −25 percentage points off the
+  vanilla cost (rarer cards get a bigger discount). Units stay cheaper as they
+  upgrade, so a fully-upgraded veteran costs far less to field than in vanilla.
 
 Purely a data edit to the game's asset bundle — no code injection.
 
@@ -40,8 +46,8 @@ Purely a data edit to the game's asset bundle — no code injection.
 
 - **Crusade / Planetary Supremacy only** — the campaign and skirmish are unaffected.
 - **Not for multiplayer.** Disable it before playing multiplayer.
-- A unit has 15–16 top-tier cards vs 14 picks at level 15, so the good-card pool
-  is never exhausted.
+- Once you reach the top-tier levels, a unit has 15–16 top-tier cards to draw from
+  vs 14 picks at level 15, so the good-card pool is never exhausted.
 
 ## Disclaimer
 

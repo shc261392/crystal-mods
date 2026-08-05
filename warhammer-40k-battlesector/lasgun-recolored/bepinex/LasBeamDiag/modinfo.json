@@ -1,0 +1,18 @@
+{
+  "name": "Lasgun Laser — Beam Diagnostic",
+  "id": "lasgun-laser-diag",
+  "game": "warhammer40kbattlesector",
+  "version": "0.1.0",
+  "author": "crystal-mods",
+  "gameVersion": "1.7.7",
+  "engine": "Unity 6000.0.62f1 (IL2CPP)",
+  "type": "bepinex-plugin",
+  "description": "DIAGNOSTIC ONLY — changes no visuals. A BepInEx 6 (IL2CPP) plugin that logs each lasgun shot's projectile effect (name, start = muzzle position, end = target, trajectory) so the red laser-beam mod can be built on verified data. Requires the BepInEx runtime (shipped with the Traditional Chinese Localization mod) to be installed. Grep BepInEx/LogOutput.log for '[LASBEAM]'.",
+  "requires": [
+    "BepInEx 6 (IL2CPP) runtime — the BepInEx Framework mod"
+  ],
+  "deployFiles": [
+    "BepInEx/plugins/LasBeamDiag.dll"
+  ],
+  "notes": "Remove LasBeamDiag.dll from BepInEx/plugins/ (or disable in Vortex) after collecting the log."
+}

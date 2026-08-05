@@ -23,13 +23,13 @@ characters at runtime. Pure asset edits can't fix this. So the mod combines:
   swaps any on-screen text whose font lacks the CJK glyphs to the full-Traditional
   font. This is what fixes the descriptions and modals.
 
-Because of the runtime component, the mod requires the **Core (BepInEx6)** framework
-(a one-time dependency, shipped as a separate file on the mod page).
+Because of the runtime component, the mod requires the **BepInEx Framework**
+mod (a one-time shared dependency, installed separately — see its own mod page).
 
 ## Install (Vortex — recommended)
 
 1. Install the **Warhammer 40,000: Battlesector** Vortex extension (Games → search).
-2. Install the **Core (BepInEx6)** framework file, then **Deploy**.
+2. Install the **BepInEx Framework** mod, then **Deploy**.
 3. Install this **Traditional Chinese Localization** file, then **Deploy**.
 4. Launch once to the main menu (first launch is slower — BepInEx initializes), then
    set language to **Chinese (Simplified)** in Options. It displays as Traditional.
@@ -42,7 +42,7 @@ backed-up `*.assets` / bundle files.
 
 - Warhammer 40,000: Battlesector **1.7.7** (Steam / GOG). Windows primary;
   Linux/Proton less tested.
-- **Core (BepInEx6)** framework (separate file on the mod page).
+- **BepInEx Framework** mod (separate file on the mod page).
 
 ## Building from source
 

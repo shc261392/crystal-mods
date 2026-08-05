@@ -4,23 +4,45 @@ Community mods for **Warhammer 40,000: Battlesector** (Black Lab Games / Slither
 
 ## Available Mods
 
+### [BepInEx Framework](bepinex-framework/)
+The BepInEx 6 (IL2CPP) modding runtime, packaged as a one-click install. A
+**shared dependency** required by plugin mods (TC Localization's font fix, Red
+Laser Lasgun). Install once; adds no game-file changes. Ships the official
+BepInEx Bleeding-Edge build #785 (SHA-256 documented on the mod page).
+
+- **Installation:** Vortex Mod Manager (install first, launch game once)
+- **Status:** Packaged v1.0.0
+- **Repository:** [bepinex-framework/](bepinex-framework/)
+
 ### [TC Localization](tc-localization/)
-Traditional Chinese (zh-TW) localization mod. Directly patches the game's asset bundle to replace Simplified Chinese with Traditional Chinese. **In-game:** Select **Chinese (Simplified)** locale.
+Traditional Chinese (zh-TW) localization mod. Directly patches the game's asset bundle to replace Simplified Chinese with Traditional Chinese. **In-game:** Select **Chinese (Simplified)** locale. **Requires the BepInEx Framework mod** (for its runtime font fix).
 
 - **Installation:** Vortex Mod Manager (recommended) or script-based deploy
+- **Requires:** BepInEx Framework
 - **Status:** Ready for testing
 - **Repository:** [tc-localization/](tc-localization/)
 
 ### [The Great Crusade](the-great-crusade/)
 Gameplay tuning for the Crusade / Planetary Supremacy (Warzone) roguelite: fast
-flat leveling (+100 XP/level), max level raised to 15 for more upgrade picks, and
-top-tier (Rare/Legendary) upgrade cards available at every level. Data-only asset
-edit; levers were validated in-game.
+flat leveling (+100 XP/level), max level raised to 15 for more upgrade picks,
+top-tier (Rare/Legendary) upgrade cards guaranteed at the upper levels (~level 8+,
+with a small fallback so the offer never empties), and reduced per-tier upgrade
+point-costs. Data-only asset edit; levers were validated in-game.
 
 - **Installation:** Vortex Mod Manager (recommended) or script-based deploy
 - **Builds:** standalone, plus a TC-localization-compatible build (optional file)
 - **Status:** Built; core levers validated in-game
 - **Repository:** [the-great-crusade/](the-great-crusade/)
+
+### [Red Laser Lasgun](lasgun-recolored/bepinex/RedLaserLasgun/)
+BepInEx plugin that renders the Astra Militarum lasgun as a glowing red laser beam
+(muzzle → target) for all AM las weapons, with zero side effects on other weapons.
+**Requires the BepInEx Framework mod.**
+
+- **Installation:** Vortex Mod Manager (install BepInEx Framework first)
+- **Requires:** BepInEx Framework
+- **Status:** Built v1.1.0; validated in-game
+- **Repository:** [lasgun-recolored/bepinex/RedLaserLasgun/](lasgun-recolored/bepinex/RedLaserLasgun/)
 
 ## Vortex Extension
 

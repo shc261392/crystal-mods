@@ -17,6 +17,7 @@ preserved. Cards are matched by ``id`` (internalID); effects are matched by
 position, and each effect also carries its ``stat`` name so a stat type can be
 retyped by hand.
 """
+
 from __future__ import annotations
 
 import json
@@ -246,7 +247,9 @@ def _describe_effect(stat: str, mult: float, add: float, chance: float) -> str:
 
 def _card_note(tier: str, effects: list[dict], cost: float) -> str:
     """Human summary of a card, e.g. 'Rare: +20% RangedDamage [unit cost +5%]'."""
-    bits = [_describe_effect(e["stat"], e["multiplier"], e["addSubtract"], e["chance"]) for e in effects]
+    bits = [
+        _describe_effect(e["stat"], e["multiplier"], e["addSubtract"], e["chance"]) for e in effects
+    ]
     note = f"{tier}: " + "; ".join(bits) if bits else tier
     return f"{note} [unit cost {cost * 100:+.0f}%]"
 
@@ -333,7 +336,9 @@ def export_cards(env, player: bool | None = True) -> dict:
         else "ALL cards (frozen vanilla reference — do not hand-edit)"
     )
     # only list the stat types actually present, sorted by id, for a compact legend
-    doc["_statTypes"] = {name: sid for name, sid in sorted(used_stats.items(), key=lambda kv: kv[1])}
+    doc["_statTypes"] = {
+        name: sid for name, sid in sorted(used_stats.items(), key=lambda kv: kv[1])
+    }
     doc["cards"] = cards
     return doc
 
@@ -426,7 +431,9 @@ def apply_card_effects(env, *docs: dict) -> list[str]:
     return changes
 
 
-def apply_cost_policy(doc: dict, vanilla_by_id: dict[int, dict], tier_delta: dict[str, float] | None = None) -> int:
+def apply_cost_policy(
+    doc: dict, vanilla_by_id: dict[int, dict], tier_delta: dict[str, float] | None = None
+) -> int:
     """Set each card's costMultiplier = vanilla cost - tier reduction; refresh notes.
 
     Reads the vanilla cost from ``vanilla_by_id`` (from cards-vanilla.json) so the
@@ -440,7 +447,11 @@ def apply_cost_policy(doc: dict, vanilla_by_id: dict[int, dict], tier_delta: dic
         if delta is None:
             continue
         van = vanilla_by_id.get(int(c["id"]))
-        van_cost = float(van["costMultiplier"]) if van and "costMultiplier" in van else float(c.get("costMultiplier", 0.0))
+        van_cost = (
+            float(van["costMultiplier"])
+            if van and "costMultiplier" in van
+            else float(c.get("costMultiplier", 0.0))
+        )
         new_cost = round(van_cost - delta, 6)
         c["costMultiplier"] = new_cost
         c["note"] = _card_note(tier, c.get("effects", []), new_cost)

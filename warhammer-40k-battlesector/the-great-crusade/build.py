@@ -23,6 +23,7 @@ BaseSkipReward, and the WarzoneMapConfig starting requisition / HQ-token values.
 Usage (invoked by the Makefile):
     python build.py <base_kind>     # 'standalone' or 'tccompat'
 """
+
 from __future__ import annotations
 
 import json
@@ -31,22 +32,26 @@ import sys
 import zipfile
 from pathlib import Path
 
-import UnityPy
-
 import cards as cards_mod
+import UnityPy
 
 VERSION = "0.1.0"
 
 # ----------------------------------------------------------------------------
 # Tuned config (build-variant-as-code).
 # ----------------------------------------------------------------------------
-LEVEL_CAP = 15          # max crusade level (vanilla 8)
-STEP = 100              # flat XP per level: thresholds 100, 200, 300, ...
-TOP_TIER_RARITIES = (2, 3)   # Rare, Legendary
+LEVEL_CAP = 15  # max crusade level (vanilla 8)
+STEP = 100  # flat XP per level: thresholds 100, 200, 300, ...
+TOP_TIER_RARITIES = (2, 3)  # Rare, Legendary
+NON_TOP_TIER_RARITIES = (0, 1)  # Common, Uncommon
 # Card rarity is keyed to level/maxLevel (0..1). Force the top-tier drop rate to
 # 1.0 once a unit is at/above this progression, i.e. the *upper* levels — vanilla
 # rarity below it. 0.5 targets level ~8 of 15 (7/14 = 0.5). Levels 1-7 stay vanilla.
 RARITY_FULL_FROM = 0.5
+# At the upper levels keep a small non-zero drop rate for Common/Uncommon so the
+# offer never runs dry if a unit exhausts its Rare/Legendary pool (anti-softlock).
+FALLBACK_DROP = 0.1
+
 
 # ----------------------------------------------------------------------------
 # Paths (I/O plumbing).
@@ -77,15 +82,13 @@ VANILLA_REF_BUNDLE = Path(
     os.environ.get(
         "BS_VANILLA_REF",
         str(
-            REPO
-            / ".copilot_workspace/battlesector-data/emperors-lasgun/vanilla/"
+            REPO / ".copilot_workspace/battlesector-data/emperors-lasgun/vanilla/"
             "startup_assets_all.bundle"
         ),
     )
 )
 TC_BASE = REPO / (
-    "warhammer-40k-battlesector/tc-localization/translation/zh-TW/dist/"
-    "startup_assets_all.bundle"
+    "warhammer-40k-battlesector/tc-localization/translation/zh-TW/dist/startup_assets_all.bundle"
 )
 BASES = {"standalone": VANILLA_BASE, "tccompat": TC_BASE}
 BUNDLE_REL = "Warhammer 40K Battlesector_Data/StreamingAssets/startup_assets_all.bundle"
@@ -124,6 +127,33 @@ def _step_curve(template: dict, rarity: int) -> list:
     return out
 
 
+def _floor_curve(template: dict, early_value: float) -> list:
+    """Non-top-tier DropRate: ~vanilla early, then a small FALLBACK_DROP floor.
+
+    Keeps the early levels near vanilla, but at the upper levels leaves a small
+    non-zero chance so the level-up offer never empties if the Rare/Legendary
+    pool is exhausted (anti-softlock), while top-tier (1.0) still dominates.
+    """
+    points = [
+        (0.0, early_value),
+        (RARITY_FULL_FROM - 0.01, early_value),
+        (RARITY_FULL_FROM, FALLBACK_DROP),
+        (1.0, FALLBACK_DROP),
+    ]
+    out = []
+    for time, value in points:
+        kf = dict(template)
+        kf["time"] = time
+        kf["value"] = value
+        kf["inSlope"] = 0.0
+        kf["outSlope"] = 0.0
+        kf["inWeight"] = 0.0
+        kf["outWeight"] = 0.0
+        kf["weightedMode"] = 0
+        out.append(kf)
+    return out
+
+
 def apply_edits(env) -> list[str]:
     changes: list[str] = []
     thresholds = flat_thresholds(LEVEL_CAP)
@@ -148,19 +178,27 @@ def apply_edits(env) -> list[str]:
             f"expNeededToLevelUp {old_exp} -> {rc[exp_bf]} (flat +{STEP}, cap {LEVEL_CAP})"
         )
 
-        # 2) card rarity: top-tier (Rare/Legendary) guaranteed at the upper levels
+        # 2) card rarity: top-tier (Rare/Legendary) guaranteed at the upper levels,
+        #    with a small Common/Uncommon floor there so the offer never empties.
         cdp = _bf(rc, "CardDropProbabilities")
         if cdp:
             for entry in rc[cdp]:
                 rarity = entry.get(_bf(entry, "Rarity"))
                 dr = _bf(entry, "DropRate")
-                if rarity in TOP_TIER_RARITIES and dr:
-                    curve = entry[dr].get("m_Curve")
-                    if isinstance(curve, list) and curve:
-                        entry[dr]["m_Curve"] = _step_curve(curve[0], rarity)
+                if not dr:
+                    continue
+                curve = entry[dr].get("m_Curve")
+                if not (isinstance(curve, list) and curve):
+                    continue
+                if rarity in TOP_TIER_RARITIES:
+                    entry[dr]["m_Curve"] = _step_curve(curve[0], rarity)
+                elif rarity in NON_TOP_TIER_RARITIES:
+                    early = float(curve[0].get("value", FALLBACK_DROP))
+                    entry[dr]["m_Curve"] = _floor_curve(curve[0], early)
             changes.append(
                 f"CardDropProbabilities: rarities {TOP_TIER_RARITIES} -> 1.0 from "
-                f"progression {RARITY_FULL_FROM} (level ~8+)"
+                f"progression {RARITY_FULL_FROM} (level ~8+); {NON_TOP_TIER_RARITIES} "
+                f"floored at {FALLBACK_DROP} there (anti-softlock)"
             )
 
         # 3) extend levelMul to the new cap (safety)
@@ -274,7 +312,9 @@ def build(base_kind: str) -> Path:
     if VANILLA_CARDS_JSON.exists() and base_kind == "standalone":
         drift = cards_mod.check_vanilla(env, cards_mod.load_cards(VANILLA_CARDS_JSON))
         if drift:
-            print(f"   ! WARNING: base bundle differs from cards-vanilla.json ({len(drift)} field(s)):")
+            print(
+                f"   ! WARNING: base bundle differs from cards-vanilla.json ({len(drift)} field(s)):"
+            )
             for m in drift[:8]:
                 print(f"       {m}")
             print("     -> the base may not be pristine vanilla; verify BS_VANILLA_BUNDLE.")

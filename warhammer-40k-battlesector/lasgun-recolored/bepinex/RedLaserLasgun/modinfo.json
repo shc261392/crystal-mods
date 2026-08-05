@@ -1,0 +1,28 @@
+{
+  "name": "Red Laser Lasgun",
+  "id": "red-laser-lasgun",
+  "game": "warhammer40kbattlesector",
+  "version": "1.1.0",
+  "author": "crystal-mods",
+  "gameVersion": "1.7.7",
+  "engine": "Unity 6000.0.62f1 (IL2CPP)",
+  "type": "bepinex-plugin",
+  "description": "Renders the Astra Militarum lasgun as a glowing RED laser beam (muzzle to target) with ZERO side effects on other weapons. A BepInEx 6 (IL2CPP) plugin draws a per-shot additive, camera-facing beam (bright core + glow halo) using its own material and colours (shared game assets are never modified), and hides the original flying bolt. Affects all AM las weapons (Lasgun, Hot-Shot, Las Pistol, Multilaser, Lascannon).",
+  "targets": {
+    "weapons": "All Astra Militarum las weapons (effect name contains 'LasGun')"
+  },
+  "requires": [
+    "bepinex-framework >= 1.0.0 (the BepInEx Framework mod)"
+  ],
+  "compatibility": {
+    "note": "Runtime plugin (BepInEx/plugins/RedLaserLasgun.dll only). It modifies no asset bundle, so it has NO file conflicts and needs no compatibility patch.",
+    "bepinex-framework": "Required — provides the BepInEx 6 (IL2CPP) runtime this plugin loads under.",
+    "the-great-crusade": "Compatible. That mod edits startup_assets_all.bundle; this only adds a plugin DLL.",
+    "tc-localization": "Compatible. Coexists with TCFix.dll in BepInEx/plugins/.",
+    "lasgun-recolored": "Compatible. With HideBolt=true the bolt recolour is hidden; set HideBolt=false to keep the recoloured bolt alongside the beam."
+  },
+  "config": "BepInEx/config/com.crystalmods.redlaserlasgun.cfg — tune Width, GlowWidthMul, Duration, HideBolt, color R/G/B, Glow (edit + relaunch).",
+  "deployFiles": [
+    "BepInEx/plugins/RedLaserLasgun.dll"
+  ]
+}

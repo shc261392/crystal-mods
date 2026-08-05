@@ -3,7 +3,7 @@
 > Paste into the Nexus mod page description. 繁體中文在前（主要受眾），English below.
 > 本頁「檔案（FILES）」下載區共有兩個檔案：
 >   • 主檔案：繁體中文化本體
->   • 「Core (BepInEx6)」：必要的執行環境框架（只需安裝一次）
+>   • 「BepInEx Framework」：必要的執行環境框架（只需安裝一次）
 
 ---
 
@@ -20,7 +20,7 @@
 本模組分為**兩個檔案**（皆位於本頁面的「檔案（FILES）」下載區），各安裝一次即可，
 日後更新時通常只需更新本地化主檔案：
 
-1. **Core (BepInEx6)** —— 一次性的執行環境相依套件（**必要**，請先安裝）。
+1. **BepInEx Framework** —— 一次性的執行環境相依套件（**必要**，請先安裝）。
    幾乎不需要更新。
 2. **繁體中文化（主檔案）** —— 字型、文字與執行期修正外掛。日後的更新以此檔為主。
 
@@ -33,14 +33,14 @@
 
 1. 安裝 **Warhammer 40,000: Battlesector 的 Vortex 擴充功能**（Games → 搜尋），
    讓 Vortex 能管理本遊戲。
-2. 安裝 **Core (BepInEx6)** 檔案，然後按 **Deploy（部署）**。
+2. 安裝 **BepInEx Framework** 檔案，然後按 **Deploy（部署）**。
 3. 安裝**繁體中文化（主檔案）**，然後按 **Deploy**。
 4. 啟動遊戲**一次**並進入主選單（首次啟動較慢 —— BepInEx 正在初始化），接著在
    「選項」中將語言設為 **中文（簡體）**，畫面即會顯示為**繁體中文**。
 
 ### 安裝方式（手動）
 
-先將 **Core (BepInEx6)** 解壓到遊戲根目錄，再將**本模組**解壓到同一個遊戲根目錄
+先將 **BepInEx Framework** 解壓到遊戲根目錄，再將**本模組**解壓到同一個遊戲根目錄
 （允許覆蓋）。啟動遊戲一次。
 
 ### 移除方式
@@ -74,7 +74,7 @@ Vortex：清除（purge）／移除兩個模組，原始遊戲檔案會自動還
   校正詞彙表：`translation/zh-TW/glossary.tsv`（可編輯，`make build` 重建）。
 - **`TCFix` 外掛為開源軟體，原始碼公開於 GitHub 供審閱與自行編譯**：
   <https://github.com/shc261392/crystal-mods/tree/main/warhammer-40k-battlesector/tc-localization/bepinex/TCFix>
-- **Core (BepInEx6)** 為 **BepInEx 6（IL2CPP, Bleeding Edge）** 官方建置，未經修改重打包。
+- **BepInEx Framework** 為 **BepInEx 6（IL2CPP, Bleeding Edge）** 官方建置，未經修改重打包。
   官方來源（可自行下載驗證）：
   - BepInEx（LGPL-2.1）：<https://github.com/BepInEx/BepInEx>
   - Bleeding Edge builds：<https://builds.bepinex.dev/projects/bepinex_be>
@@ -94,7 +94,7 @@ menus, factions, units, campaign, mission text, unit descriptions, and the launc
 This mod ships as **two files on this page** (Files tab); install each once, then only
 update the localization:
 
-1. **Core (BepInEx6)** — a one-time runtime dependency (**required**, install first).
+1. **BepInEx Framework** — a one-time runtime dependency (**required**, install first).
 2. **Traditional Chinese Localization (main file)** — fonts, text, and the runtime fix
    plugin. This is the part updated over time.
 
@@ -106,7 +106,7 @@ update the localization:
 ### Installation (Vortex — recommended)
 
 1. Install the **Warhammer 40,000: Battlesector Vortex extension** (Games → search).
-2. Install the **Core (BepInEx6)** file, then **Deploy**.
+2. Install the **BepInEx Framework** file, then **Deploy**.
 3. Install the **Localization (main file)**, then **Deploy**.
 4. Launch once to the main menu (first launch is slower — BepInEx is initializing),
    then set language to **Chinese (Simplified)** in Options. It displays as Traditional.
@@ -146,7 +146,7 @@ Vortex: purge/remove both mods — originals restore automatically. Manual: dele
   `translation/zh-TW/glossary.tsv` (`make build` rebuilds).
 - **`TCFix` plugin is open source** — audit or build it yourself from the repository:
   <https://github.com/shc261392/crystal-mods/tree/main/warhammer-40k-battlesector/tc-localization/bepinex/TCFix>
-- **Core (BepInEx6)** is an unmodified repackage of the official **BepInEx 6
+- **BepInEx Framework** is an unmodified repackage of the official **BepInEx 6
   (IL2CPP, Bleeding Edge)** build. Verify/download from source:
   - BepInEx (LGPL-2.1): <https://github.com/BepInEx/BepInEx>
   - Bleeding Edge builds: <https://builds.bepinex.dev/projects/bepinex_be>

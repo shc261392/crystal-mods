@@ -7,6 +7,9 @@
   "category": "Localization",
   "platforms": ["windows", "linux-proton"],
   "supportedVersions": ["1.7.7"],
+  "requires": [
+    "bepinex-framework >= 1.0.0 (the BepInEx Framework mod — provides the BepInEx 6 IL2CPP runtime for the TCFix plugin)"
+  ],
   "vortex": {
     "extensionId": "game-warhammer40kbattlesector",
     "extensionPath": "../vortex-ext/game-warhammer40kbattlesector"
