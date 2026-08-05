@@ -18,8 +18,7 @@
     "note": "Runtime plugin (BepInEx/plugins/RedLaserLasgun.dll only). It modifies no asset bundle, so it has NO file conflicts and needs no compatibility patch.",
     "bepinex-framework": "Required — provides the BepInEx 6 (IL2CPP) runtime this plugin loads under.",
     "the-great-crusade": "Compatible. That mod edits startup_assets_all.bundle; this only adds a plugin DLL.",
-    "tc-localization": "Compatible. Coexists with TCFix.dll in BepInEx/plugins/.",
-    "lasgun-recolored": "Compatible. With HideBolt=true the bolt recolour is hidden; set HideBolt=false to keep the recoloured bolt alongside the beam."
+    "tc-localization": "Compatible. Coexists with TCFix.dll in BepInEx/plugins/."
   },
   "config": "BepInEx/config/com.crystalmods.redlaserlasgun.cfg — tune Width, GlowWidthMul, Duration, HideBolt, color R/G/B, Glow (edit + relaunch).",
   "deployFiles": [

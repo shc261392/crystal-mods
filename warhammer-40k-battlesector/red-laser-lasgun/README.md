@@ -46,13 +46,11 @@ bundle, so no file conflicts:
 - **BepInEx Framework** — required.
 - **The Great Crusade** — compatible (that mod edits a data bundle).
 - **Traditional Chinese Localization** — compatible (coexists with `TCFix.dll`).
-- **Lasgun Recolored** — compatible; with `HideBolt=true` the recoloured bolt is
-  hidden, set `HideBolt=false` to keep both.
 
 ## Build
 
 ```bash
-./package.sh        # dotnet build -c Release + zip -> ../../dist/red-laser-lasgun-v1.1.0.zip
+./package.sh        # dotnet build -c Release + zip -> ../dist/red-laser-lasgun-v1.1.0.zip
 ```
 
 Requires the .NET SDK and the game's `BepInEx/interop` assemblies (present after

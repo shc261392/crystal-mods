@@ -34,7 +34,7 @@ point-costs. Data-only asset edit; levers were validated in-game.
 - **Status:** Built; core levers validated in-game
 - **Repository:** [the-great-crusade/](the-great-crusade/)
 
-### [Red Laser Lasgun](lasgun-recolored/bepinex/RedLaserLasgun/)
+### [Red Laser Lasgun](red-laser-lasgun/)
 BepInEx plugin that renders the Astra Militarum lasgun as a glowing red laser beam
 (muzzle → target) for all AM las weapons, with zero side effects on other weapons.
 **Requires the BepInEx Framework mod.**
@@ -42,7 +42,7 @@ BepInEx plugin that renders the Astra Militarum lasgun as a glowing red laser be
 - **Installation:** Vortex Mod Manager (install BepInEx Framework first)
 - **Requires:** BepInEx Framework
 - **Status:** Built v1.1.0; validated in-game
-- **Repository:** [lasgun-recolored/bepinex/RedLaserLasgun/](lasgun-recolored/bepinex/RedLaserLasgun/)
+- **Repository:** [red-laser-lasgun/](red-laser-lasgun/)
 
 ## Vortex Extension
 
