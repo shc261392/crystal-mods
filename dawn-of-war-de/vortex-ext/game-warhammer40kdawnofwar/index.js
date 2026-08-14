@@ -35,6 +35,17 @@ const GAME_NAME = 'Warhammer 40,000: Dawn of War - Definitive Edition';
 const GAME_EXE = 'W40k.exe';
 
 /**
+ * Mod type for standalone `.module` mods. Unlike file-replacement mods (which
+ * deploy into the game directory), the Relic engine loads authored mods from
+ * the user-profile folder:
+ *   Windows : %APPDATA%\Relic Entertainment\Dawn of War\mods
+ *   Proton  : <lib>/steamapps/compatdata/<appid>/pfx/drive_c/users/steamuser/
+ *             AppData/Roaming/Relic Entertainment/Dawn of War/mods
+ */
+const USERMOD_TYPE = 'dow-de-usermod';
+const USERMOD_REL = path.join('Relic Entertainment', 'Dawn of War', 'mods');
+
+/**
  * Known first-level game directories used to detect game-root-relative
  * archives (layout already correct, no stripping needed).
  */
@@ -46,6 +57,43 @@ const ROOT_GAME_DIRS = ['W40k', 'WXP', 'DXP2', 'DXP3', 'DoWDE', 'Engine', 'Dev',
 
 function findGame() {
   return util.GameStoreHelper.findByAppId([STEAM_APP_ID]).then((game) => game.gamePath);
+}
+
+/**
+ * Resolve the user-profile "mods" folder where the engine auto-loads authored
+ * `.module` mods. Returns undefined if it cannot be determined.
+ *
+ * @param {string|undefined} gamePath  Discovered game install path.
+ */
+function resolveUserModsFolder(gamePath) {
+  if (process.platform === 'win32') {
+    const appData =
+      process.env.APPDATA ||
+      (process.env.USERPROFILE
+        ? path.join(process.env.USERPROFILE, 'AppData', 'Roaming')
+        : undefined);
+    return appData ? path.join(appData, USERMOD_REL) : undefined;
+  }
+
+  // Linux / Proton: the mods folder lives inside the Proton prefix.
+  // gamePath = <lib>/steamapps/common/Dawn of War Definitive Edition
+  if (gamePath) {
+    const steamapps = path.resolve(gamePath, '..', '..');
+    return path.join(
+      steamapps,
+      'compatdata',
+      STEAM_APP_ID,
+      'pfx',
+      'drive_c',
+      'users',
+      'steamuser',
+      'AppData',
+      'Roaming',
+      USERMOD_REL,
+    );
+  }
+
+  return undefined;
 }
 
 // ---------------------------------------------------------------------------
@@ -72,6 +120,62 @@ function hasFomodInstaller(files) {
   });
 }
 
+/** True if the archive contains a Dawn of War `.module` definition file. */
+function hasModuleFile(files) {
+  return files.some((f) => f.replace(/\\/g, '/').toLowerCase().endsWith('.module'));
+}
+
+// ---------------------------------------------------------------------------
+// Installer: standalone .module mod  (priority 15 — before the generic one)
+// ---------------------------------------------------------------------------
+
+/**
+ * Accepts archives that contain a `.module` file (and are not FOMOD). These are
+ * authored Dawn of War mods that must deploy to the user-profile mods folder.
+ */
+function testUserModContent(files, gameId) {
+  return Promise.resolve({
+    supported: gameId === GAME_ID && hasModuleFile(files) && !hasFomodInstaller(files),
+    requiredFiles: [],
+  });
+}
+
+/**
+ * Deploys a `.module` mod while preserving its own top-level folder, so the
+ * result is `mods/<ModName>/<ModName>.module`. Emits `setmodtype` so Vortex
+ * deploys it to the user-profile mods folder rather than the game directory.
+ *
+ * Handles three archive shapes:
+ *   - `.module` inside its own folder        → deploy as-is
+ *   - `.module` under an extra wrapper folder → strip down to the mod folder
+ *   - `.module` loose at the archive root     → wrap under `<ModName>/`
+ *
+ * @param {string[]} files  Archive file list.
+ */
+function installUserModContent(files) {
+  const normalized = files.map((f) => f.replace(/\\/g, '/')).filter((f) => !f.endsWith('/'));
+  const moduleFile = normalized.find((f) => f.toLowerCase().endsWith('.module'));
+  const moduleDir = path.posix.dirname(moduleFile);
+
+  let mapDest;
+  if (moduleDir === '.') {
+    const modName = path.posix.basename(moduleFile, path.posix.extname(moduleFile));
+    mapDest = (source) => `${modName}/${source}`;
+  } else {
+    const modParent = path.posix.dirname(moduleDir);
+    mapDest = (source) => (modParent === '.' ? source : path.posix.relative(modParent, source));
+  }
+
+  const instructions = normalized.map((source) => ({
+    type: 'copy',
+    source,
+    destination: mapDest(source),
+  }));
+  instructions.unshift({ type: 'setmodtype', value: USERMOD_TYPE });
+
+  return Promise.resolve({ instructions });
+}
+
 // ---------------------------------------------------------------------------
 // Installer: generic mod  (priority 20)
 // ---------------------------------------------------------------------------
@@ -85,6 +189,14 @@ function hasFomodInstaller(files) {
  */
 function testModContent(files, gameId) {
   if (hasFomodInstaller(files)) {
+    return Promise.resolve({
+      supported: false,
+      requiredFiles: [],
+    });
+  }
+
+  // Standalone .module mods are handled by the dedicated installer above.
+  if (hasModuleFile(files)) {
     return Promise.resolve({
       supported: false,
       requiredFiles: [],
@@ -193,6 +305,28 @@ function main(context) {
   // files to their specified paths. FOMOD archives are intentionally declined
   // in testModContent() so Vortex can show its built-in installer UI.
   context.registerInstaller('dow-mod', 20, testModContent, installModContent);
+
+  // Mod type: standalone `.module` mods deploy to the user-profile mods folder
+  // (%APPDATA%\Relic Entertainment\Dawn of War\mods) instead of the game dir.
+  context.registerModType(
+    USERMOD_TYPE,
+    25,
+    (gameId) => gameId === GAME_ID,
+    () => {
+      const state = context.api.getState();
+      const discovery = util.getSafe(
+        state,
+        ['settings', 'gameMode', 'discovered', GAME_ID],
+        undefined,
+      );
+      return resolveUserModsFolder(discovery?.path);
+    },
+    () => Promise.resolve(false),
+    { name: 'Dawn of War Mod (.module)', mergeMods: true },
+  );
+
+  // Installer for standalone `.module` mods — runs before the generic installer.
+  context.registerInstaller('dow-de-usermod', 15, testUserModContent, installUserModContent);
 
   return true;
 }

@@ -27,14 +27,37 @@ The game will appear under **Manage → Warhammer 40,000: Dawn of War - Definiti
 
 ## Supported Mod Types
 
-The extension handles **any mod** packaged with game-root-relative paths:
+The extension handles **two kinds of mods**:
+
+### 1. File-replacement mods → game directory
+
+Packaged with game-root-relative paths; deployed into the game install folder:
 
 - **Localization mods**: `Engine/Locale/Chinese/Engine.ucs`, `.fnt`, `.gfx`, `.sga`
 - **Campaign data**: `W40k/`, `WXP/`, `DXP2/`, `DXP3/`
 - **UI/Art assets**: `Engine/Data/art/`, `DoWDE/`
 - **Tools**: `Tools/`, `Dev/`
 
-Mods can be packaged in two ways:
+### 2. Standalone `.module` mods → user-profile mods folder
+
+Authored Dawn of War mods (an archive containing a `*.module` file) are **not**
+loaded from the game directory. The Relic engine auto-loads them from the
+user-profile mods folder, so the extension deploys them there instead:
+
+- **Windows**: `%APPDATA%\Relic Entertainment\Dawn of War\mods\`
+- **Linux/Proton**: `<library>/steamapps/compatdata/3556750/pfx/drive_c/users/steamuser/AppData/Roaming/Relic Entertainment/Dawn of War/mods/`
+
+Expected archive layout (the mod keeps its own folder):
+
+```
+MyMod/
+├── MyMod.module
+├── pipeline.ini
+└── Mod/Data/…
+```
+
+→ Deploys to `…/mods/MyMod/…`. Extra wrapper folders are stripped, and a loose
+`.module` at the archive root is wrapped under a folder named after it.
 
 ### Layout A: Game-Root-Relative
 
