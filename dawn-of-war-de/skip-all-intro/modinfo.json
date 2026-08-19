@@ -1,0 +1,10 @@
+{
+  "name": "Skip All Intros",
+  "version": "0.1.0",
+  "description": "Skips all intro/cinematic movies for Dawn of War Definitive Edition: every movie in Engine/Movies plus the Dark Crusade (DXP2) and Soulstorm (DXP3) campaign intros. Replaces each movie with a 0-byte empty file so the engine errors out and skips playback (video and audio).",
+  "author": "Crystal Mods",
+  "id": "skip-all-intro",
+  "game": "warhammer40kdawnofwar",
+  "category": "Gameplay",
+  "platforms": ["windows", "linux-proton"]
+}

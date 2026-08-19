@@ -1,0 +1,10 @@
+# Build artifacts
+dist/
+.copilot_workspace/
+# Generated replacement movies — rebuilt from scripts/generate_movies.py by
+# `make build` / `build.sh` / `build.ps1`. Only the generator is tracked.
+mod/
+__pycache__/
+*.pyc
+.venv/
+.ruff_cache/
