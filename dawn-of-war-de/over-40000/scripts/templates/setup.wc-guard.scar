@@ -1,0 +1,201 @@
+------------------------------------------------------------------------------------
+-- SetupUtil.scar
+-- (c) 2003 Relic Entertainment Inc.
+--
+-- Description:
+--		Contains helper functions for OnGameSetup function.  OnGameSetup
+--	is used for initializing the player settings (name, race, team etc)
+--
+-- Usage:
+--		Currently, the only function you need is Setup_Player( ).  This function
+--	is used to set a players settings all in one function.  The function returns
+--	you the playersId so you can store it in a global variable.
+--
+-- Example:
+--	function OnGameSetup( )
+--		g_player1 = Setup_Player(0, "PlayerDisplayName", "Orks", 1) 
+--		g_player2 = Setup_Player(1, "$20000", "Space Marines", 2)
+--		g_player3 = Setup_Player(2, "$20001", "Chaos", 2)
+--	end
+--
+--		In the above example, g_player2 and g_player3 will be on the same team.
+--	The Setup_Player function takes care of setting all player relationships.
+--
+-- ================================================================================
+-- OVER 40000 MOD
+-- ================================================================================
+-- This file is a modified copy of the vanilla `setup.scar`.
+--
+-- IMPORTANT: the cheat is NOT hooked via Setup_Player. Setup_Player is only
+-- called by single-player campaign missions that have their own .scar script.
+-- Campaign battles fought on shared multiplayer maps (e.g. "Cerulea" in
+-- Soulstorm) have NO .scar script - they use the engine's generic battle setup
+-- and never call Setup_Player, so a Setup_Player hook would never run there.
+--
+-- Instead the cheat is registered with `Scar_AddInit`, which runs for EVERY
+-- battle (single-player missions AND engine-driven multiplayer-map battles),
+-- because setup.scar is loaded by every mission/wincondition's `import("ScarUtil.scar")`.
+--
+-- The cheat applies player-only effects to the human player (player index 0):
+--   * requisition & power income     -> x10
+--   * requisition bank cap           -> +400000
+--   * starting requisition & power   -> 40001 (re-applied every ~2s for the
+--                                       first ~60s so mission/meta-campaign
+--                                       resets don't clobber it)
+--   * auto-reinforce (optional)      -> reinforce squads up to max each ~1s
+-- ================================================================================
+
+-- private data
+_TeamsTable = {}
+
+--? @group Setup
+
+--? @shortdesc Initializes the all of the players settings in one function and returns the playerID.
+--? @extdesc 
+--? In most cases you will call this function from OnGameSetup and store the returned playerId in  a global variable.  The player index should be in the range [0 , (numPlayers-1)].\n\n
+--? Valid player races are the shortnames of the race attrib files.\n\n
+--? Example:\n
+--?	function OnGameSetup( )\n
+--?	\tg_player1 = Setup_Player(0, "PlayerDisplayName", "ork_race", 1)\n
+--? \t-- g_player2 and g_player3 will be on the same team (allies)\n
+--? \tg_player2 = Setup_Player(1, "$20000", "space_marine_race", 2)\n
+--? \tg_player3 = Setup_Player(2, "$20001", "eldar_race", 2)\n
+--?	end
+--? @args Integer playerIndex, String playerName, String playerRace, Integer team
+--? @result PlayerID
+function Setup_Player(playerIndex, playerName, playerRace, team)
+	-- get player handle
+	local playerId = World_GetPlayerAt( playerIndex )
+	
+	-- set player name and race
+	Setup_SetPlayerName(playerId, playerName)
+	Setup_SetPlayerRace(playerId, playerRace)
+	
+	-- add player team to teams table to get called at game init
+	_TeamsTable[ playerIndex + 1 ] = team
+
+	return playerId
+end
+
+
+-- private impl
+
+function _Setup_Teams()
+	table.foreach(_TeamsTable,
+		function (key, value)
+			Player_SetTeam( World_GetPlayerAt( key-1 ) , value )
+		end
+	)
+end
+
+if not Scar_InitExists( _Setup_Teams ) then
+	Scar_AddInit( _Setup_Teams )
+end
+
+
+-- ============================================================================
+-- OVER 40000 MOD -- cheat hook (runs for every battle via Scar_AddInit)
+-- ============================================================================
+
+-- Registers the cheat rules for the human player (player index 0). Runs at game
+-- init for every battle, including engine-driven multiplayer-map campaigns.
+function Over40000_Init()
+	Over40000_PlayerId = World_GetPlayerAt( 0 )
+	Over40000_TopupCount = 0
+	Rule_AddOneShot( Over40000_ApplyCheat, 1.0 )
+	Rule_AddInterval( Over40000_StartupTopup, 2 )
+--[[OVER40000:WC_BEGIN]]
+	Over40000_Boosted = {}
+	Rule_AddInterval( Over40000_BoostWeaponCaps, 5 )
+--[[OVER40000:WC_END]]
+end
+
+if not Scar_InitExists( Over40000_Init ) then
+	Scar_AddInit( Over40000_Init )
+end
+
+
+-- Runs ~1s after game init.
+function Over40000_ApplyCheat()
+	if ( Over40000_PlayerId ~= nil ) then
+		Over40000_ApplyIncome( Over40000_PlayerId )
+		Player_SetResource( Over40000_PlayerId, RT_Requisition, 40001 )
+		Player_SetResource( Over40000_PlayerId, RT_Power, 40001 )
+	end
+end
+
+-- Missions / the meta-campaign reset the player's starting resources (e.g. to
+-- 1000) at unpredictable times. Re-apply 40001 every ~2s for the first ~60s so
+-- the player reliably starts with 40001 regardless of map or mission timing.
+function Over40000_StartupTopup()
+	Over40000_TopupCount = Over40000_TopupCount + 1
+	if ( Over40000_TopupCount > 30 ) then
+		Rule_Remove( Over40000_StartupTopup )
+		return
+	end
+	if ( Over40000_PlayerId ~= nil ) then
+		Player_SetResource( Over40000_PlayerId, RT_Requisition, 40001 )
+		Player_SetResource( Over40000_PlayerId, RT_Power, 40001 )
+	end
+end
+
+-- Raise the human player's resource income (player-only modifiers).
+function Over40000_ApplyIncome( playerId )
+	Over40000_ApplyPlayerModifier( playerId, "income_requisition_player_modifier", MUT_Multiplication, 10 )
+	Over40000_ApplyPlayerModifier( playerId, "income_power_player_modifier", MUT_Multiplication, 10 )
+	Over40000_ApplyPlayerModifier( playerId, "income_cap_requisition_player_modifier", MUT_Addition, 400000 )
+end
+
+-- Apply a named modifier to a single player.
+function Over40000_ApplyPlayerModifier( playerId, modifierName, usageType, value )
+	local modifier = Modifier_Create( MAT_Player, modifierName, usageType, false, value, "" )
+	Modifier_ApplyToPlayer( modifier, playerId )
+end
+
+--[[OVER40000:WC_BEGIN]]
+-- OVER 40000 MOD (experimental) -- raise weapon-upgrade (heavy weapon) caps
+-- The per-squad heavy-weapon cap (e.g. scout flamers, scourge dark lances) is a
+-- separate field not directly editable in the squad data. The engine exposes a
+-- runtime squad modifier, `max_upgrades_squad_modifier`, that raises it. It is
+-- applied ONCE per squad (tracked by squad game ID) so the cap does not stack,
+-- and re-applied only to newly-built squads. The amount added is 4x the squad's
+-- original cap (read via Squad_GetUpgradeMax at first application), so the final
+-- cap is 5x the vanilla value.
+--
+-- NOTE: this is the FIXED variant. Squad_GetUpgradeMax returns nil for squads
+-- that have no squad_reinforce_ext.max_upgrades (many vehicles, command units
+-- such as the Haemonculus HG, etc.), so `base * 4` used to throw a Lua error
+-- and crash the game on the 5s rule tick. Guard: skip squads where base is
+-- nil or <= 0. NOTE: still experimental.
+function Over40000_BoostWeaponCaps()
+	if ( Over40000_PlayerId ~= nil ) then
+		local sgroups = Player_GetSquads( Over40000_PlayerId )
+		-- figure out which squads are currently alive
+		local alive = {}
+		local markAlive = function ( sgroupid, itemindex, squadID )
+			alive[ Squad_GetGameID( squadID ) ] = true
+		end
+		SGroup_ForEach( sgroups, markAlive )
+		-- drop destroyed squads from the boosted table
+		for gid in pairs( Over40000_Boosted ) do
+			if alive[ gid ] == nil then
+				Over40000_Boosted[ gid ] = nil
+			end
+		end
+		-- boost only squads not yet boosted, by +4x their original cap
+		local boost = function ( sgroupid, itemindex, squadID )
+			local gid = Squad_GetGameID( squadID )
+			if Over40000_Boosted[ gid ] == nil then
+				Over40000_Boosted[ gid ] = true
+				local base = Squad_GetUpgradeMax( squadID )
+				if ( base ~= nil and base > 0 ) then
+					local modifier = Modifier_Create( MAT_SquadType, "max_upgrades_squad_modifier", MUT_Addition, false, base * 4, Squad_GetBlueprintName( squadID ) )
+					Modifier_ApplyToSquad( modifier, squadID )
+				end
+			end
+		end
+		SGroup_ForEach( sgroups, boost )
+	end
+end
+--[[OVER40000:WC_END]]
+

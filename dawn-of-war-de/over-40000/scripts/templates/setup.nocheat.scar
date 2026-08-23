@@ -1,0 +1,70 @@
+------------------------------------------------------------------------------------
+-- SetupUtil.scar
+-- (c) 2003 Relic Entertainment Inc.
+--
+-- Description:
+--		Contains helper functions for OnGameSetup function.  OnGameSetup
+--	is used for initializing the player settings (name, race, team etc)
+--
+-- Usage:
+--		Currently, the only function you need is Setup_Player( ).  This function
+--	is used to set a players settings all in one function.  The function returns
+--	you the playersId so you can store it in a global variable.
+--
+-- Example:
+--	function OnGameSetup( )
+--		g_player1 = Setup_Player(0, "PlayerDisplayName", "Orks", 1) 
+--		g_player2 = Setup_Player(1, "$20000", "Space Marines", 2)
+--		g_player3 = Setup_Player(2, "$20001", "Chaos", 2)
+--	end
+--
+--		In the above example, g_player2 and g_player3 will be on the same team.
+--	The Setup_Player function takes care of setting all player relationships.
+--
+
+-- private data
+_TeamsTable = {}
+
+--? @group Setup
+
+--? @shortdesc Initializes the all of the players settings in one function and returns the playerID.
+--? @extdesc 
+--? In most cases you will call this function from OnGameSetup and store the returned playerId in  a global variable.  The player index should be in the range [0 , (numPlayers-1)].\n\n
+--? Valid player races are the shortnames of the race attrib files.\n\n
+--? Example:\n
+--?	function OnGameSetup( )\n
+--?	\tg_player1 = Setup_Player(0, "PlayerDisplayName", "ork_race", 1)\n
+--? \t-- g_player2 and g_player3 will be on the same team (allies)\n
+--? \tg_player2 = Setup_Player(1, "$20000", "space_marine_race", 2)\n
+--? \tg_player3 = Setup_Player(2, "$20001", "eldar_race", 2)\n
+--?	end
+--? @args Integer playerIndex, String playerName, String playerRace, Integer team
+--? @result PlayerID
+function Setup_Player(playerIndex, playerName, playerRace, team)
+	-- get player handle
+	local playerId = World_GetPlayerAt( playerIndex )
+	
+	-- set player name and race
+	Setup_SetPlayerName(playerId, playerName)
+	Setup_SetPlayerRace(playerId, playerRace)
+	
+	-- add player team to teams table to get called at game init
+	_TeamsTable[ playerIndex + 1 ] = team
+	
+	return playerId
+end
+
+
+-- private impl
+
+function _Setup_Teams()
+	table.foreach(_TeamsTable,
+		function (key, value)
+			Player_SetTeam( World_GetPlayerAt( key-1 ) , value )
+		end
+	)
+end
+
+if not Scar_InitExists( _Setup_Teams ) then
+	Scar_AddInit( _Setup_Teams )
+end
