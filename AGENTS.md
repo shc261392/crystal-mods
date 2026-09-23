@@ -20,36 +20,44 @@ linked under "Progressive disclosure" below.
    and validate hypotheses BEFORE implementing fixes. If you find yourself
    creating automated fix scripts during root cause analysis, STOP and ask the
    user. Debugging requires patience; "done" must mean "correct," not just "fast."
-5. **Data modifications require approval**: NEVER modify game data files
+5. **Never overclaim beyond proof**: you may state only what the data/logs
+   directly support, and you must explicitly separate (a) verified facts from
+   (b) hypotheses. If you do not know why something happens, SAY SO — do not
+   present a low-confidence guess as an explanation, and never dismiss or
+   contradict a user's first-hand test result with an unproven theory. Claiming
+   a mechanism ("it is only visual", "that is the root cause", "it is fixed")
+   without direct evidence is a serious trust violation. Prefer "I do not know;
+   here is what I can verify" over a confident unsupported explanation.
+6. **Data modifications require approval**: NEVER modify game data files
    (Engine.ucs, .sga, fonts, save files, configs) without explicit user approval,
    especially during debugging. Always maintain backups, document changes, and
    test manually before automating.
-6. **Reversibility first**: prefer non-destructive operations. For anything
+7. **Reversibility first**: prefer non-destructive operations. For anything
    irreversible (force push, public repo flip, deleting backups, dropping
    `.sga`/`.pak` originals) confirm with the user.
-5. **Respect platform priorities**: Windows 11 is primary, WSL2 is the dev
+8. **Respect platform priorities**: Windows 11 is primary, WSL2 is the dev
    environment, Linux/Proton is secondary. Every deploy script must ship a
    `.ps1` and a `.sh` variant.
-6. **Locale preservation (DoW DE TC mod)**: For `dawn-of-war-de/unofficial-tc-patch/`,
+9. **Locale preservation (DoW DE TC mod)**: For `dawn-of-war-de/unofficial-tc-patch/`,
    only access paths within this project directory and `Engine/Locale/Chinese/`
    in the game installation. **`Engine/Locale/English/` is forbidden.** The game
    ships with Chinese locale; all deployments must preserve this. For other
    projects, apply locale preservation rules as appropriate to that game.
-7. **DOWDE deployment is FORBIDDEN**: For ALL `dawn-of-war-de/` projects, agent
-   deployment to game folder is **FORBIDDEN**. Only build the Vortex-installable
-   ZIP deliverable in `dist/`. User handles deployment manually. **NEVER ask for
-   deployment approval or offer to deploy.**
-8. **CRITICAL: Engine.ucs contains mixed content**: For `dawn-of-war-de/unofficial-tc-patch/`,
-   `Engine.ucs` contains BOTH Chinese localization AND English game mode keys
-   (e.g., "Dark Crusade", "Soulstorm"). **English keys are internal identifiers -
-   translating them BREAKS THE GAME.** **NEVER edit Engine.ucs without explicit
-   user approval.** See `dawn-of-war-de/unofficial-tc-patch/docs/ENGINE_UCS_STRUCTURE.md`.
-9. **CRITICAL: Credential safety**: **NEVER read `.env` files or credentials
-   into agent context.** Access secrets only via scripts/environment variables.
-   If a task requires credentials, instruct the user to run the script directly
-   or pass values via environment variables. Reading credentials into LLM context
-   risks exposure through conversation logs, debug output, or model training.
-9. **CRITICAL: Unrecoverable actions require dual verification**:
+10. **DOWDE deployment is FORBIDDEN**: For ALL `dawn-of-war-de/` projects, agent
+    deployment to game folder is **FORBIDDEN**. Only build the Vortex-installable
+    ZIP deliverable in `dist/`. User handles deployment manually. **NEVER ask for
+    deployment approval or offer to deploy.**
+11. **CRITICAL: Engine.ucs contains mixed content**: For `dawn-of-war-de/unofficial-tc-patch/`,
+    `Engine.ucs` contains BOTH Chinese localization AND English game mode keys
+    (e.g., "Dark Crusade", "Soulstorm"). **English keys are internal identifiers -
+    translating them BREAKS THE GAME.** **NEVER edit Engine.ucs without explicit
+    user approval.** See `dawn-of-war-de/unofficial-tc-patch/docs/ENGINE_UCS_STRUCTURE.md`.
+12. **CRITICAL: Credential safety**: **NEVER read `.env` files or credentials
+    into agent context.** Access secrets only via scripts/environment variables.
+    If a task requires credentials, instruct the user to run the script directly
+    or pass values via environment variables. Reading credentials into LLM context
+    risks exposure through conversation logs, debug output, or model training.
+13. **CRITICAL: Unrecoverable actions require dual verification**:
    - **Research FIRST**: before running ANY tool that modifies git history,
      deletes files, or performs system-wide changes, research the tool's behavior
      thoroughly (read docs, check man pages, verify examples).
@@ -60,7 +68,7 @@ linked under "Progressive disclosure" below.
      deletion), and get explicit user approval before proceeding.
    - **Examples requiring this process**: `git-filter-repo`, `git push --force`,
      `rm -rf`, database migrations, production deployments, batch file operations.
-10. **CRITICAL: UI verification mandate**: For any change to `src/pages/`,
+14. **CRITICAL: UI verification mandate**: For any change to `src/pages/`,
    `src/components/`, `src/layouts/`, or stylesheets:
    - **MUST use browser tools** (`open_browser_page`, `screenshot_page`) to verify
      changes visually before claiming completion
