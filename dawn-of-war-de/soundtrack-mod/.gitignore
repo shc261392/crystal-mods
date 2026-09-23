@@ -1,0 +1,11 @@
+# Build scratch and generated audio
+.copilot_workspace/
+# Source music you drop in (do not commit copyrighted audio)
+music/**/*.mp3
+music/**/*.wav
+music/**/*.flac
+music/**/*.ogg
+music/**/*.m4a
+music/**/*.aac
+# Keep faction folder structure via .gitkeep, ignore the audio itself
+!music/**/.gitkeep

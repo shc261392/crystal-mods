@@ -1,0 +1,24 @@
+[global]
+
+UIName = Faction Soundtrack
+Description = Per-faction custom music playlists for Dawn of War: Definitive Edition.
+DllName = DXP3Mod
+ModFolder = Mod
+ModVersion = 0.2
+TextureFE =
+TextureIcon =
+Playable = 1
+RuntimeMode = 3
+UseLegacyCampaignList = 0
+
+;; //////////////////////////////////////////////////////////////////
+;; Data folders for this MOD (relative to ModFolder).
+;; Scanned before the required (base) mods, so our loose overrides win.
+DataFolder.1 = Data
+
+;; //////////////////////////////////////////////////////////////////
+;; Base mods this mod builds on. DXP3 = Soulstorm (all 9 races).
+RequiredMod.1 = DXP3
+RequiredMod.2 = DXP2
+RequiredMod.3 = WXP
+RequiredMod.4 = W40k
