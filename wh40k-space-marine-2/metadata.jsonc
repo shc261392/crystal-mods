@@ -1,0 +1,55 @@
+// Warhammer 40,000: Space Marine 2 game metadata
+// _manual: true indicates this field was hand-edited and should not be overwritten by pcgw-fetch.
+// Note: pcgw-fetch could not complete automatically (PCGW Cargo API returns
+// "permission denied" for arbitrary queries as of 2026-08). Values below were
+// hand-verified against the PCGW article and the local Steam install.
+{
+  "$schema": "../docs/schemas/game-metadata.schema.json",
+  "pcgwPage": "Warhammer 40,000: Space Marine 2",
+  "displayName": "Warhammer 40,000: Space Marine 2",
+  "released": "2024-09-09",
+  "developers": [
+    "Saber Interactive"
+  ],
+  "publishers": [
+    "Focus Entertainment"
+  ],
+  "engine": [
+    "Swarm Engine (SWAR)"
+  ],
+  "graphicsApi": [
+    "Direct3D 12"
+  ],
+  "stores": {
+    "steam": {
+      "appId": "2183900"
+    },
+    "gog": null,
+    "epic": {
+      "url": "https://store.epicgames.com/p/warhammer-40000-space-marine-2",
+      "_manual": true
+    },
+    "ubisoft": null,
+    "microsoft": {
+      "appId": "9N9PCZWHVP2L",
+      "_manual": true
+    }
+  },
+  "os": {
+    "windows": "primary",
+    "macos": "unsupported",
+    "linuxProton": "supported"
+  },
+  "modding": {
+    "framework": "official-swarm-pak",
+    "vortexExtension": true
+  },
+  "links": {
+    "pcgw": "https://www.pcgamingwiki.com/wiki/Warhammer_40%2C000%3A_Space_Marine_2",
+    "nexus": "https://www.nexusmods.com/warhammer40000spacemarine2",
+    "officialModdingDocs": "https://spacemarine2-modding.prismray.io/",
+    "_manual": true
+  },
+  "_source": "manual",
+  "_fetchedAt": "2026-08-24T00:00:00Z"
+}

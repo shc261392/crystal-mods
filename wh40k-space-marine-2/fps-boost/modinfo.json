@@ -1,0 +1,22 @@
+{
+  "name": "fps-boost",
+  "id": "fps-boost",
+  "game": "wh40k-space-marine-2",
+  "version": "1.0.0",
+  "author": "Crystal Mods",
+  "category": "Performance",
+  "description": "Potato-mode performance config for Warhammer 40,000: Space Marine 2 that KEEPS public matchmaking (no mod, no private lobbies). The engine analysis proved below-Low quality values are pak-locked (any pak = private lobbies), so this stacks the aggressive levers that survive: in-game FSR 3 Frame Generation + Dynamic Resolution (target 120) + DLSS Quality, OS-level CPU-core aggression (physical-core pinning / SMT-off, high-power plan), and Lossless Scaling setup. Includes deploy/uninstall (power plan), apply-affinity.ps1, launch-sm2.sh, and the SSF1/engine config-surface research.",
+  "platforms": ["windows", "linux-proton"],
+  "supportedVersions": ["8.0+"],
+  "config": {
+    "game": "wh40k-space-marine-2",
+    "steamAppId": "2183900",
+    "installRel": "client_pc/root",
+    "nonMod": true
+  },
+  "links": {
+    "nexus": "https://www.nexusmods.com/warhammer40000spacemarine2",
+    "officialModdingDocs": "https://spacemarine2-modding.prismray.io/",
+    "engineAnalysis": "docs/engine-analysis.md"
+  }
+}

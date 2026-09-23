@@ -1,0 +1,29 @@
+{
+  "name": "potato-marines",
+  "id": "potato-marines",
+  "game": "wh40k-space-marine-2",
+  "version": "1.0.0",
+  "author": "Crystal Mods",
+  "category": "Performance",
+  "description": "Aggressive FPS mod for poor PCs. (1) Data pak forcing the engine's CPU systems below the lowest in-game tier: swarm spawn 0.7->0.2, gibs 23/43->6/12, ragdolls 5/15->0/2 (instant freeze), corpse cap 40->8, gore 65->12. (2) Engine config (game.cfg) disabling SSAO/SSR/RTAO/DOF/water-sim/covering/capsule+screen-space shadows, flooring volumetric-fog/lightshaft/shadow/effects quality, and capping engine workers to 8 (CPU job tuning). Private-lobby mod; local-install only, NOT published to Steam Workshop.",
+  "platforms": ["windows", "linux-proton"],
+  "supportedVersions": ["8.0+"],
+  "config": {
+    "game": "wh40k-space-marine-2",
+    "steamAppId": "2183900",
+    "installRel": "client_pc/root/mods",
+    "pak": "potato-marines.pak",
+    "pakConfig": "pak_config.yaml",
+    "engineConfig": "client_pc/root/config/pc/game.cfg",
+    "workshop": { "appId": "3856330", "publish": false }
+  },
+  "build": {
+    "script": "scripts/build_pak.py",
+    "output": "dist/potato-marines.pak"
+  },
+  "links": {
+    "nexus": "https://www.nexusmods.com/warhammer40000spacemarine2",
+    "officialModdingDocs": "https://spacemarine2-modding.prismray.io/",
+    "toolsetGuide": "../docs/modding-tools.md"
+  }
+}
