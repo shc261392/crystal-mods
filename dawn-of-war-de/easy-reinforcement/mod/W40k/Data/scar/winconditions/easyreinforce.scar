@@ -1,0 +1,40 @@
+------------------------------------------------------------------------------------
+-- Easy Reinforcement - DIAGNOSTIC VARIANT "NOOP" (A/B test)
+--
+-- This variant loads the rule exactly like the normal build but NEVER sends a
+-- command. Purpose: determine whether the "Invalid command receiver detected
+-- for command type 24, receiver type 2" log line comes from THIS mod's
+-- Command_SquadExt call, or from somewhere else entirely.
+--
+--   - If the error STILL appears with this build installed  -> the error is
+--     NOT from this mod's command (vanilla game / other mod).
+--   - If the error DISAPPEARS with this build installed    -> the error IS
+--     from this mod's Command_SquadExt call.
+--
+-- No reinforcement happens in this variant. This is diagnostic only.
+------------------------------------------------------------------------------------
+import("ScarUtil.scar");
+
+EasyReinforce_ReqThreshold = 1000
+
+function EasyReinforce_Init()
+	EasyReinforce_Group = SGroup_CreateIfNotFound( "easy_reinforce_group" )
+	Rule_AddInterval( EasyReinforce_MainRule, 1 )
+end
+
+Scar_AddInit( EasyReinforce_Init )
+
+function EasyReinforce_MainRule()
+	if Event_IsAnyRunning() then
+		return
+	end
+
+	local playerId = World_GetPlayerAt( 0 )
+	if ( playerId == nil ) then
+		return
+	end
+
+	-- NOOP: this variant does nothing. It intentionally does not send any
+	-- command, so the A/B test isolates whether the engine error originates
+	-- from this mod.
+end

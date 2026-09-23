@@ -1,0 +1,5 @@
+# Build artifacts
+dist/
+__pycache__/
+*.pyc
+.ruff_cache/

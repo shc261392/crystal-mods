@@ -1,0 +1,8 @@
+{
+  "name": "Easy Reinforcement",
+  "version": "0.1.3",
+  "description": "Automatically reinforces the player's squads to full strength via passive reinforce-overwatch, without interrupting their actions. Works in all campaigns including Dark Crusade and Soulstorm.",
+  "author": "Crystal Mods",
+  "id": "easy-reinforcement",
+  "game": "warhammer40kdawnofwar"
+}
