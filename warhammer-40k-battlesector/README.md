@@ -34,6 +34,19 @@ point-costs. Data-only asset edit; levers were validated in-game.
 - **Status:** Built; core levers validated in-game
 - **Repository:** [the-great-crusade/](the-great-crusade/)
 
+### [Army Painter](army-painter/)
+BepInEx plugin that recolors the **local player's army** at runtime — primary +
+secondary paint colours (e.g. Blood Angels red → Ultramarines blue) — with an
+in-game color-changing UI (F10 or on-screen button). Per-faction schemes persist
+in the BepInEx config; new units are auto-repainted. Uses MaterialPropertyBlock +
+cached albedo remap, so **no game asset is modified** and **Reset** fully
+restores the original paint. **Requires the BepInEx Framework mod.**
+
+- **Installation:** Vortex Mod Manager (install BepInEx Framework first)
+- **Requires:** BepInEx Framework
+- **Status:** Built v1.0.0; DiagMode provided for in-game validation
+- **Repository:** [army-painter/](army-painter/)
+
 ### [Red Laser Lasgun](red-laser-lasgun/)
 BepInEx plugin that renders the Astra Militarum lasgun as a glowing red laser beam
 (muzzle → target) for all AM las weapons, with zero side effects on other weapons.
