@@ -42,6 +42,10 @@
 --   * starting requisition & power   -> 40001 (re-applied every ~2s for the
 --                                       first ~60s so mission/meta-campaign
 --                                       resets don't clobber it)
+--   * Necron production speed        -> x4 when the human player is Necron
+--                                       (build/research/reinforce time x 1/4;
+--                                       EXPERIMENTAL -- see
+--                                       Over40000_ApplyNecronProductionCheat)
 --   * auto-reinforce (optional)      -> reinforce squads up to max each ~1s
 -- ================================================================================
 
@@ -102,7 +106,13 @@ end
 function Over40000_Init()
 	Over40000_PlayerId = World_GetPlayerAt( 0 )
 	Over40000_TopupCount = 0
-	Rule_AddOneShot( Over40000_ApplyCheat, 1.0 )
+	-- Apply the income/cap cheat the moment the opening cinematic (NIS) is done.
+	-- A fixed 1s one-shot fires while the NIS is still playing when the player
+	-- watches the whole intro, and the mission rebuilds player modifiers when the
+	-- cinematic ends -> the cap/income boost is lost. Polling Event_IsAnyRunning()
+	-- (the same mechanism the game's autosave rule uses) is timing-independent:
+	-- it applies right when the NIS ends, whether skipped at 1s or watched fully.
+	Rule_AddInterval( Over40000_ApplyCheat, 1 )
 	Rule_AddInterval( Over40000_StartupTopup, 2 )
 --[[OVER40000:WC_BEGIN]]
 	Over40000_Boosted = {}
@@ -115,19 +125,48 @@ if not Scar_InitExists( Over40000_Init ) then
 end
 
 
--- Runs ~1s after game init.
+-- Waits until the opening cinematic is done, then applies the income/cap cheat
+-- once and removes itself. Fires immediately on skip, or right after the NIS if
+-- the player watches it fully -- no fixed delay to tune.
 function Over40000_ApplyCheat()
+	if Event_IsAnyRunning() then
+		return
+	end
+	Rule_Remove( Over40000_ApplyCheat )
 	if ( Over40000_PlayerId ~= nil ) then
 		Over40000_ApplyIncome( Over40000_PlayerId )
 		Player_SetResource( Over40000_PlayerId, RT_Requisition, 40001 )
 		Player_SetResource( Over40000_PlayerId, RT_Power, 40001 )
+		if ( Player_GetRaceName( Over40000_PlayerId ) == "necron_race" ) then
+			Over40000_ApplyNecronProductionCheat( Over40000_PlayerId )
+		end
 	end
+end
+
+-- Necron production-speed cheat (EXPERIMENTAL).
+-- Necrons have no requisition economy; their pacing comes from production
+-- speed, which the engine implements via the three player time modifiers
+-- below (the game's own Obelisk uses the same three, each at percentage
+-- value -0.1 = ~10% time cut per fortification). A single fixed application
+-- is made instead:
+--   * value 0.25 with MUT_Multiplication -> build/research/reinforce time
+--     x 1/4, i.e. 400% production speed.
+-- Tunable: 1.0 = vanilla; lower = faster (0.5 = 2x, 0.25 = 4x).
+function Over40000_ApplyNecronProductionCheat( playerId )
+	Over40000_ApplyPlayerModifier( playerId, "recruit_time_player_modifier", MUT_Multiplication, 0.25 )
+	Over40000_ApplyPlayerModifier( playerId, "research_time_player_modifier", MUT_Multiplication, 0.25 )
+	Over40000_ApplyPlayerModifier( playerId, "reinforce_time_player_modifier", MUT_Multiplication, 0.25 )
 end
 
 -- Missions / the meta-campaign reset the player's starting resources (e.g. to
 -- 1000) at unpredictable times. Re-apply 40001 every ~2s for the first ~60s so
 -- the player reliably starts with 40001 regardless of map or mission timing.
+-- While the opening cinematic plays the mission has not started; skip those
+-- ticks so the 30-tick budget is not consumed during the NIS.
 function Over40000_StartupTopup()
+	if Event_IsAnyRunning() then
+		return
+	end
 	Over40000_TopupCount = Over40000_TopupCount + 1
 	if ( Over40000_TopupCount > 30 ) then
 		Rule_Remove( Over40000_StartupTopup )

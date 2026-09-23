@@ -267,7 +267,8 @@ def collect_scale_maps(extract_root: Path, squad_scale: int, policy: str,
                        exclude_single_model: bool = False, exclude_sp: bool = False,
                        descale_campaign_single: bool = False,
                        races: set[str] | None = None,
-                       squad_filter: set[str] | None = None
+                       squad_filter: set[str] | None = None,
+                       exclude_squads: set[str] | None = None
                        ) -> tuple[dict[str, int], dict[str, int]]:
     """Pre-scan every squad to map squad filename -> scale factor and each
     referenced EBP basename -> cost-division divisor.
@@ -280,6 +281,10 @@ def collect_scale_maps(extract_root: Path, squad_scale: int, policy: str,
     (extracted from the sbps path); other squads still get caps patched but
     are not scaled. The race is detected by looking for a `sbps\\races\\<race>`
     segment in the relative path.
+
+    `squad_filter` (optional) restricts scaling to ONLY the listed squads;
+    `exclude_squads` (optional) scales everything normally EXCEPT the listed
+    squads. Use one or the other, not both.
     """
     squad_map: dict[str, int] = {}
     ebp_map: dict[str, int] = {}
@@ -306,13 +311,23 @@ def collect_scale_maps(extract_root: Path, squad_scale: int, policy: str,
             if squad_filter is not None and eff > 0:
                 if rgd.name[:-4].lower() not in squad_filter:
                     eff = 0
+            if exclude_squads is not None and eff > 0:
+                if rgd.name[:-4].lower() in exclude_squads:
+                    eff = 0
             squad_map[(module, rgd.name)] = eff
             for ebp in squad_loadout_ebp_refs(aegd):
+                # The EBP cost divisor must match the model-count scale of the
+                # squads that spawn it. Use MAX across all referencing squads:
+                # an excluded squad (eff 0) sharing the same EBP basename must
+                # not prevent a scaled squad (eff 5) from getting its cost
+                # counter-scaled. (min was wrong: a single excluded _sp variant
+                # sharing the EBP zeroed the divisor -> scaled vehicles like the
+                # Chimera shipped at 5x cost/time.)
                 key = (module, ebp)
                 if key not in ebp_map:
                     ebp_map[key] = eff
-                else:
-                    ebp_map[key] = min(ebp_map[key], eff)
+                elif eff > ebp_map[key]:
+                    ebp_map[key] = eff
     return squad_map, ebp_map
 
 
@@ -547,6 +562,12 @@ def main() -> int:
                          "ONLY those squads are model-count scaled (caps still "
                          "patched for all). Complements --races; used to isolate "
                          "campaign-referenced squads.")
+    ap.add_argument("--blacklist-file", type=Path, default=None,
+                    help="path to a squad-scaling blacklist (one basename per line, "
+                         "no .rgd). When set, this REPLACES the default git-controlled "
+                         "blacklist (scripts/templates/squads.blacklist.txt). The "
+                         "default is always applied unless this override is passed, "
+                         "so `make build` is deterministic.")
     args = ap.parse_args()
     modules = tuple(m.strip() for m in args.modules.split(",") if m.strip())
     for m in modules:
@@ -561,6 +582,14 @@ def main() -> int:
             ln.strip().removesuffix(".rgd").lower()
             for ln in args.squads_file.read_text(encoding="utf-8").splitlines()
             if ln.strip()
+        )
+    exclude_squads: set[str] | None = None
+    blacklist_src = args.blacklist_file if args.blacklist_file is not None else TEMPLATES / "squads.blacklist.txt"
+    if blacklist_src.is_file():
+        exclude_squads = set(
+            ln.strip().removesuffix(".rgd").lower()
+            for ln in blacklist_src.read_text(encoding="utf-8").splitlines()
+            if ln.strip() and not ln.lstrip().startswith("#")
         )
 
     # ---- setup.scar (cheat hook) ----
@@ -626,7 +655,7 @@ def main() -> int:
                                               args.exclude_single_model == "on",
                                               args.exclude_sp == "on",
                                               args.descale_campaign_single == "on",
-                                              race_filter, squad_filter)
+                                              race_filter, squad_filter, exclude_squads)
         for module in modules:
             data_root = args.extract_root / module / "data"
             if not data_root.is_dir():
@@ -658,7 +687,7 @@ def main() -> int:
                                             args.exclude_single_model == "on",
                                             args.exclude_sp == "on",
                                             args.descale_campaign_single == "on",
-                                            race_filter, squad_filter)
+                                            race_filter, squad_filter, exclude_squads)
     for module in modules:
         data_root = args.extract_root / module / "data"
         if not data_root.is_dir():

@@ -1,0 +1,23 @@
+# Over 40000 — permanent model-count scaling blacklist
+#
+# Squads listed here (one basename per line, no .rgd suffix) are NEVER
+# model-count scaled, in any module, regardless of --squad-scale. The generator
+# loads this file by default, so `make build` / build.sh / build.ps1 are
+# deterministic. To use a different blacklist, pass --blacklist-file PATH
+# (replaces this default).
+#
+# Why each entry:
+# - dark_eldar_squad_talos
+#     The Talos is a vehicle-like squad. Scaling it ×5 crashes the game with
+#     "Invalid command receiver detected for command type 24, receiver type 2"
+#     when the AI fields it (e.g. Eldar vs Dark Eldar stronghold). Confirmed by
+#     bisection: with talos unscaled the error is gone; scaled, the mission
+#     crashes. Excluded globally so both player and AI talos stay 1-model.
+dark_eldar_squad_talos
+# - guard_squad_priest / guard_squad_commissar / guard_squad_psyker
+#     Attachable leader units (squad_can_attach_ext). Scaling them to ×5 breaks
+#     their ability to attach to host squads. Kept at 1 model so they attach
+#     normally.
+guard_squad_priest
+guard_squad_commissar
+guard_squad_psyker

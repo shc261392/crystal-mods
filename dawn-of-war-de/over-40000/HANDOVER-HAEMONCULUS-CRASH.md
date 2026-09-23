@@ -3,26 +3,32 @@
 > Paste the "Next-session prompt" block at the end of this file into your next
 > session to resume with full context.
 
-## Status — RESOLVED & RELEASED as 0.1.0
+## Status — RESOLVED & RELEASED as 0.1.6
 
 - **ROOT CAUSE CONFIRMED (in-game, 2x2 isolation + failed guard test).** The
   `Over40000_BoostWeaponCaps` (WC) block in `setup.scar` was **both necessary
   and sufficient** for the crash, and **the nil/0 guard did NOT fix it** (variant
   G crashed in-game).
 - **FIX SHIPPED:** the WC block is **removed entirely**.
-- **RELEASED as 0.1.3** in **two variants** (both: squad scale x5, can-attach
+- **RELEASED as 0.1.6** in **two variants** (both: squad scale x5, can-attach
   `scale`, EBP cost counter-scale, no WC block, single-model campaign variants
-  descaled):
-  - `dist/over-40000-v0.1.3.zip` — resource cheat on (start 40001 req/power,
+  descaled, cheat waits for opening NIS to finish, Dark Eldar Talos blacklisted,
+  63 squads' cost counter-scale fixed, attachable leaders Priest/Commissar/Psyker
+  blacklisted):
+  - `dist/over-40000-v0.1.6.zip` — resource cheat on (start 40001 req/power,
     ×10 income)
-  - `dist/over-40000-v0.1.3-normal-resources.zip` — normal resources
-- All diagnostic test builds (A–G, experimental, recommended) were **deleted**
-  from `dist/`. Generator defaults `--weapon-cap-boost off` and ships
-  vanilla `setup.scar` when `--resource-cheat off`.
-- The user's in-game confirmation of the final 0.1.3 build is the last open item
+  - `dist/over-40000-v0.1.6-normal-resources.zip` — normal resources
+- All diagnostic test builds (A–G, experimental, recommended, bisect/dataab)
+  were **deleted** from `dist/`. Generator defaults `--weapon-cap-boost off` and
+  ships vanilla `setup.scar` when `--resource-cheat off`. The talos exclusion is
+  a git-controlled blacklist (`scripts/templates/squads.blacklist.txt`) applied
+  by default; `--blacklist-file` overrides it.
+- The user's in-game confirmation of the final 0.1.6 build is the last open item
   (expected to pass — the WC block was the sole crash source; the DC/SS
   mission-start freeze from single-model honor-guard squads is fixed by
-  `--descale-campaign-single`).
+  `--descale-campaign-single`; the opening-cinematic cheat timing is fixed by
+  polling `Event_IsAnyRunning()` instead of a fixed 1s one-shot; the DE crash
+  from a scaled Talos is fixed by the blacklist).
 
 ## The confirmed root cause
 

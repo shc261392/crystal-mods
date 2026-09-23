@@ -18,6 +18,7 @@ Definitive Edition*.
 | **Resource income → ×10 requisition & power** (resource-cheat variant only) | Player only |
 | **Requisition bank cap → +400000** (resource-cheat variant only) | Player only |
 | **Unlimited unit build limits** (Terminators, Dreadnoughts, warbosses, etc.) | Dark Crusade & Soulstorm |
+| **Necron production speed → ×4** (resource-cheat variant only, EXPERIMENTAL) | Human player only, while playing Necrons (build/research/reinforce time × ¼) |
 
 Covered campaigns: **Main campaign**, **Winter Assault**, **Dark Crusade (DXP2)**,
 **Soulstorm (DXP3)**.
@@ -29,8 +30,8 @@ cheat:
 
 | ZIP | Resource cheat | Playstyle |
 |---|---|---|
-| `over-40000-v0.1.3.zip` | **On** — start with 40001 req/power, ×10 income | Full cheat: spam anything immediately |
-| `over-40000-v0.1.3-normal-resources.zip` | **Off** — normal resources | Same 5x squads / caps / unlimited limits, but you earn resources normally |
+| `over-40000-v0.1.7.zip` | **On** — start with 40001 req/power, ×10 income | Full cheat: spam anything immediately |
+| `over-40000-v0.1.7-normal-resources.zip` | **Off** — normal resources | Same 5x squads / caps / unlimited limits, but you earn resources normally |
 
 ## How it works (for maintainers)
 
@@ -41,6 +42,11 @@ cheat:
   is deliberately applied *after* `OnGameSetup` (the game itself only touches
   player data from delayed rules). Because modifiers are applied with
   `Modifier_ApplyToPlayer`, **the computer never benefits**.
+- **Necron production speed** (resource-cheat variant only) — when the human
+  player's race is Necron, `Over40000_ApplyNecronProductionCheat` applies the
+  three player time modifiers (`recruit_` / `research_` / `reinforce_time_player_modifier`)
+  at ×0.25 (time × ¼ ≈ 400% build speed). Tunable in the cheat template:
+  1.0 = vanilla, 0.5 = 2×, 0.25 = 4×.
 - `*/Data/attrib/racebps/*_race.rgd` — the **population/vehicle caps** come
   from here. Each race file is byte-identical to vanilla except the 4-byte
   `race_squad_cap_table` floats (`base/max squad cap`, `base/max support cap`)
@@ -57,9 +63,9 @@ cheat:
 
 ```bash
 cd dawn-of-war-de/over-40000
-make build            # -> dist/over-40000-v0.1.3.zip  (resource cheat on)
+make build            # -> dist/over-40000-v0.1.7.zip  (resource cheat on)
 make build RESOURCE_CHEAT=0
-                      # -> dist/over-40000-v0.1.3-normal-resources.zip
+                      # -> dist/over-40000-v0.1.7-normal-resources.zip
 ```
 
 - `SQUAD_SCALE=N` — multiply every squad's **initial** (`unit_min`) and **max
@@ -89,7 +95,7 @@ make build RESOURCE_CHEAT=0
 > scaling itself is unaffected.
 
 **Auto-reinforce** is a separate standalone mod:
-[`auto-reinforcement/`](../auto-reinforcement/README.md). Install it alongside
+[`easy-reinforcement/`](../easy-reinforcement/README.md). Install it alongside
 this mod to auto-reinforce your squads.
 
 **To revert to the pre-0.1.0 build:** rebuild without squad scaling
@@ -114,7 +120,7 @@ make build
 ## Install (Windows / Vortex)
 
 1. Install the **DoW DE game extension** for Vortex (`vortex-ext-game-warhammer40kdawnofwar-*.zip`) if you haven't — drag it onto Vortex's **Extensions** tab and enable it.
-2. Drag `dist/over-40000-v0.1.3.zip` (or the `-normal-resources` variant) onto Vortex and **Install**.
+2. Drag `dist/over-40000-v0.1.7.zip` (or the `-normal-resources` variant) onto Vortex and **Install**.
 3. Click **Deploy Mods**.
 4. Launch **Dawn of War Definitive Edition** from Vortex (or Steam — the loose files are already deployed to the game folder).
 
@@ -193,12 +199,78 @@ over-40000/
 │   ├── rgd_decode.py           # RGD (.rgd) binary decoder (Bob Jenkins hash)
 │   ├── scan_squad_caps.py      # finds squad build-limit requirements
 │   ├── generate_mod.py         # builds mod/ from an extraction tree
-│   └── templates/              # setup.scar / setup.nocheat.scar cheat hooks
+│   └── templates/              # setup.scar / setup.nocheat.scar cheat hooks, squads.blacklist.txt
 └── dist/                       # build output (gitignored)
 ```
 
 ## Version history
 
+- **0.1.7** — experimental **Necron production-speed cheat** (resource-cheat
+  variant only): when the human player plays Necrons, build / research /
+  reinforce time is multiplied by ¼ (~400% production speed) via the three
+  player time modifiers. Applies in skirmish, Dark Crusade and Soulstorm to
+  the human Necron player only — AI players and other races are unaffected.
+  Tunable in `scripts/templates/setup.scar`
+  (`Over40000_ApplyNecronProductionCheat`; 1.0 = vanilla, 0.5 = 2×,
+  0.25 = 4×).
+
+- **0.1.6** — separate the cost counter-scale + attachable-leader fixes from the
+  talos fix. **Cost counter-scale invariant fixed for 63 squads** across
+  DXP2 (26) and DXP3 (37): their EBP build cost/time was previously **not**
+  counter-scaled (a shared-EBP `_sp` variant zeroed the divisor via `min()`), so
+  they built at 5× cost/time. Now `max()` is used and a unit test
+  (`scripts/test_cost_counter_scale.py`, `make test`) enforces that every
+  model-scaled squad's EBP divisor equals its scale. Fixed squads:
+
+  **DXP2 (Dark Crusade) — 26:**
+  chaos_squad_defiler, chaos_squad_khorne_berserker_stronghold_sp,
+  chaos_squad_obliterator_stronghold_sp, chaos_squad_possessed_marine_stronghold_sp,
+  eldar_squad_falcon_grav_tank, eldar_squad_grav_platform_brightlance,
+  eldar_squad_wraithlord, guard_squad_chimera, guard_squad_enginseer,
+  guard_squad_hellhound, guard_squad_sentinel, necron_destroyer_squad,
+  necron_tomb_spyder_squad, ork_squad_killa_kan, ork_squad_trukk,
+  ork_squad_wartrak, space_marine_squad_assault_veteran_stronghold_sp,
+  space_marine_squad_dreadnought, space_marine_squad_dreadnought_hellfire,
+  space_marine_squad_land_speeder,
+  space_marine_squad_terminator_assault_veteran_stronghold_sp,
+  space_marine_squad_terminator_veteran_stronghold_sp,
+  space_marine_squad_veteran_stronghold_sp, tau_crisis_suit_squad,
+  tau_drone_harbinger_squad, tau_skyray_squad.
+
+  **DXP3 (Soulstorm) — 37:**
+  chaos_squad_bloodthirster, chaos_squad_defiler,
+  chaos_squad_khorne_berserker_stronghold_sp, chaos_squad_obliterator_stronghold_sp,
+  chaos_squad_possessed_marine_stronghold_sp, chaos_squad_sorcerer,
+  dark_eldar_squad_raider, eldar_harlequin_squad, eldar_squad_bonesinger,
+  eldar_squad_falcon_grav_tank, eldar_squad_fire_prism,
+  eldar_squad_grav_platform_brightlance, eldar_squad_vypers,
+  eldar_squad_wraithlord, guard_squad_chimera, guard_squad_enginseer,
+  guard_squad_hellhound, guard_squad_sentinel, necron_destroyer_squad,
+  necron_tomb_spyder_squad, ork_squad_fighta_bomba, ork_squad_killa_kan,
+  ork_squad_trukk, ork_squad_wartrak, sisters_squad_immolator_tank,
+  space_marine_squad_assault_veteran_stronghold_sp, space_marine_squad_dreadnought,
+  space_marine_squad_dreadnought_dxp3_nis, space_marine_squad_dreadnought_hellfire,
+  space_marine_squad_dreadnought_hellfire_dxp3_nis,
+  space_marine_squad_land_speeder,
+  space_marine_squad_terminator_assault_veteran_stronghold_sp,
+  space_marine_squad_terminator_veteran_stronghold_sp,
+  space_marine_squad_veteran_stronghold_sp, tau_crisis_suit_squad,
+  tau_drone_harbinger_squad, tau_skyray_squad.
+
+  Also in 0.1.6: attachable leaders **Priest / Commissar / Psyker** are
+  blacklisted from scaling so they stay 1-model and can attach.
+- **0.1.5** — fix DE mission crash: the **Dark Eldar Talos** is permanently
+  blacklisted from model-count scaling via a git-controlled blacklist file
+  (`scripts/templates/squads.blacklist.txt`). Scaling it ×5 crashed the game
+  with "Invalid command receiver detected for command type 24, receiver type 2"
+  when the AI fielded it (e.g. Eldar vs Dark Eldar stronghold). The blacklist is
+  applied by default in every build; pass `--blacklist-file PATH` to override
+  with a different list. `make build` is deterministic.
+- **0.1.4** — fix resource-cheat timing during opening cinematics. The cheat
+  now waits for `Event_IsAnyRunning()` to be false (opening NIS finished) before
+  applying the income/cap boost, instead of a fixed 1s one-shot that fired while
+  the cinematic was still playing and got reset when the mission initialized.
+  Works whether the cinematic is skipped at 1s or watched fully.
 - **0.1.3** — fix DC/SS mission-start freeze: **single-model campaign variants**
   in Dark Crusade/Soulstorm (`_advance_sp`, `_sp`, `_veteran_sp`, `_hg` name
   markers) are no longer model-count scaled. They are spawned at mission start

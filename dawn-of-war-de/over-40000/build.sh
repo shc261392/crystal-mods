@@ -20,7 +20,7 @@ GAME_DIR="${DOW_GAME_DIR:-}"
 EXTRACT_ROOT="${EXTRACT_ROOT:-../.copilot_workspace/extract}"
 SQUAD_SCALE=5
 RESOURCE_CHEAT=on
-VERSION="0.1.3"
+VERSION="0.1.7"
 
 while [[ $# -gt 0 ]]; do
     case "$1" in

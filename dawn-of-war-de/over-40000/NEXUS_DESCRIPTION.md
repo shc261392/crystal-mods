@@ -32,9 +32,9 @@ point. If you want a fair fight, this is not the mod for you.
 
 ## Two variants (choose ONE to install)
 
-1. **over-40000-v0.1.3** — full cheat: starts you with 40001 requisition & power
+1. **over-40000-v0.1.7** — full cheat: starts you with 40001 requisition & power
    and ×10 income, plus the 5x squads and caps.
-2. **over-40000-v0.1.3-normal-resources** — same 5x squads / caps / unlimited
+2. **over-40000-v0.1.7-normal-resources** — same 5x squads / caps / unlimited
    limits, but **normal resources**: no starting 40001, no income boost. You still
    field armies of 5-model Sentinels, you just have to earn them normally.
 
@@ -44,11 +44,18 @@ The two files are identical except for the resource cheat.
 > units) are intentionally **not** scaled to 5x — spawning 5 of them at mission
 > start would freeze the game. Regular single-model vehicles (Sentinels,
 > Rhinos, Predators…) still scale to 5x.
+>
+> The **Dark Eldar Talos** is also kept at 1 model (git-controlled blacklist):
+> scaling it crashed the game against Dark Eldar strongholds.
+>
+> Attachable leaders (Priest / Commissar / Psyker) are kept at 1 model so they
+> can still attach to squads. All model-scaled units have their build cost/time
+> counter-scaled so totals stay vanilla.
 
 ## Installation (Vortex, recommended)
 
 1. Install the **DoW DE game extension** for Vortex (`vortex-ext-game-warhammer40kdawnofwar-*.zip`) from this mod's Files tab, if you haven't — drag it onto Vortex's **Extensions** tab and enable it.
-2. Drag the chosen `over-40000-v0.1.3*.zip` onto Vortex and **Install**.
+2. Drag the chosen `over-40000-v0.1.7*.zip` onto Vortex and **Install**.
 3. Click **Deploy Mods**.
 4. Launch **Dawn of War Definitive Edition** from Vortex (or Steam — loose files are already deployed to the game folder).
 
@@ -61,7 +68,7 @@ The two files are identical except for the resource cheat.
   resources, caps and income.
 - Unit-limit overrides are data-wide, so the AI can also field unlimited
   Terminators. Caps/limits apply to AI too.
-- Auto-reinforce is a separate companion mod (`Auto Reinforcement`) — install it
+- Auto-reinforce is a separate companion mod (`Easy Reinforcement`) — install it
   alongside to auto-reinforce your oversized squads.
 
 ## Requirements

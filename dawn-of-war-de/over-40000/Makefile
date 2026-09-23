@@ -21,13 +21,14 @@ MOD_DIR  := mod
 DIST_DIR := dist
 SCRIPTS  := scripts
 
-# Version. The release is 0.1.3 (crash-fixed + module-scoped: single-model
+# Version. The release is 0.1.7 (0.1.6 crash-fixed + module-scoped single-model
+# exclusions + experimental Necron production-speed cheat). Vanilla single-model
 # campaign variants are excluded in W40k/WXP and in DXP2/DXP3, where the
-# base-game validator / mission-start min-loadout spawn would crash or freeze).
+# base-game validator / mission-start min-loadout spawn would crash or freeze.
 # Two variants ship:
-#   RESOURCE_CHEAT=1 (default) -> over-40000-v0.1.3.zip  (resource cheat on)
-#   RESOURCE_CHEAT=0           -> over-40000-v0.1.3-normal-resources.zip
-VERSION      := 0.1.3
+#   RESOURCE_CHEAT=1 (default) -> over-40000-v0.1.7.zip  (resource cheat on)
+#   RESOURCE_CHEAT=0           -> over-40000-v0.1.7-normal-resources.zip
+VERSION      := 0.1.7
 SQUAD_SCALE  ?= 5      ## multiply squad unit_min/unit_max by N (0 = off)
 RESOURCE_CHEAT ?= 1    ## 1 = start with 40001 req/power + x10 income
 
@@ -124,6 +125,10 @@ verify: ## Sanity-check the generated mod tree
 .PHONY: lint
 lint: ## Ruff-lint the generator scripts (needs uv / ruff)
 	uvx ruff check scripts/ 2>/dev/null || ruff check scripts/ 2>/dev/null || echo "note: ruff not installed, skipping"
+
+.PHONY: test
+test: ## Run the generator invariant unit tests (needs the extraction tree)
+	python3 scripts/test_cost_counter_scale.py
 
 .PHONY: clean
 clean: ## Remove build artifacts

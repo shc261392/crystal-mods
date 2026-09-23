@@ -15,7 +15,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$Version = "0.1.3"
+$Version = "0.1.7"
 if ($ResourceCheat -eq "off") { $PKG_NAME = "over-40000-v${Version}-normal-resources" }
 else { $PKG_NAME = "over-40000-v$Version" }
 $RepoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
