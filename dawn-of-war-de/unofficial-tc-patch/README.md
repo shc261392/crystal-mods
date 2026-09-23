@@ -346,12 +346,19 @@ Any backup or deployment state **not matching these hashes** is considered "touc
 
 ### Original Vanilla Files (Clean Baseline)
 
-These hashes represent the **unmodified original Chinese locale files** as shipped by Steam with the Definitive Edition:
+These hashes represent the **unmodified original Chinese locale files** as shipped by Steam with the Definitive Edition **after the 2026-08-12 game update**:
 
 | File | Size | SHA256 |
 |------|------|--------|
-| `Engine/Locale/Chinese/EnginLoc.sga` | 190M | `9174735668f20090bc5f1cbe443050b68a6e559aff288786f3b830e9e077cb4a` |
-| `Engine/Locale/Chinese/Engine.ucs` | 1.6M | `215baacd2846db80229b5763723b4b998642f197507dec752d65ce473f22ff02` |
+| `Engine/Locale/Chinese/EnginLoc.sga` | 190M | `9f688c0dede4b9674eba38e3842fe0148c53e4e0227f9eef80266086adb14eb3` |
+| `Engine/Locale/Chinese/Engine.ucs` | 1.6M | `1af4dc573d40317575690bc5d9ec47e22d1b2d2708801e48248e8ae256ca0f25` |
+
+> **Previous game version (pre-2026-08-12 update) hashes** (kept for reference when
+> comparing old Steam backups / Vortex `.vortex_backup` files):
+> `EnginLoc.sga` = `9174735668f20090bc5f1cbe443050b68a6e559aff288786f3b830e9e077cb4a`,
+> `Engine.ucs` = `490f3c85a7523e26751df969fe1377c94411ca9ca230436cf8dcc303928fe802`.
+> The 2026-08-12 update only changed `Engine.ucs` (4 strings); the `EnginLoc.sga`
+> archive payload is byte-identical to the previous version (container metadata only).
 
 ### Verification
 

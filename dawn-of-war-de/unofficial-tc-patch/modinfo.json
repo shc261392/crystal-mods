@@ -2,11 +2,11 @@
   "id": "unofficial-tc-patch",
   "name": "Unofficial Traditional Chinese Patch",
   "game": "dawn-of-war-de",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "author": "Community",
   "category": "Localization",
   "platforms": ["windows", "linux-proton"],
-  "supportedVersions": ["2.02.0"],
+  "supportedVersions": ["2.10.0"],
   "vortex": {
     "extensionId": "game-warhammer40kdawnofwar",
     "extensionPath": "../vortex-ext/game-warhammer40kdawnofwar"

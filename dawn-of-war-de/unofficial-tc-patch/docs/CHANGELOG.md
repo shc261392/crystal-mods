@@ -2,6 +2,25 @@
 
 All notable user-facing changes to the DoW DE Traditional Chinese patch are documented here.
 
+## 2026-08-13 — v1.0.9 Upstream game-update sync (Engine.ucs rebase)
+
+### Changed
+- **Rebased `Engine.ucs` onto the 2026-08-12 game update** (game v2.10.0, Steam buildid `24589546`).
+- Integrated the upstream delta — 3 string revisions and 1 new key:
+  - `695103` (power impulse tooltip), `4300069` (weapon damage tooltip), `11316670` (auto-match ban notice), new `11318197` (gunner squad damage text).
+- **Restored 16 strings the mod was missing** since its base predated them (Necron / Chaos / Ork upgrade descriptions `11276916–11276928`, `11276931`, hotkey tip `11316529`, matchmaking notice `11316670`).
+- Preserved all 4,947 existing TC text edits; 3-way merge had zero conflicts.
+
+### Technical
+- Verified the new `EnginLoc.sga` archive payload is **byte-identical** to the previous version (only container metadata differs) — no font/gfx content change was needed.
+- Rebuilt `EnginLocMod.sga` from the post-update vanilla `EnginLoc.sga`; re-applied subtitle-font fix (`gillsans_11b` / `gillsans_bold_16` → `NotoSansTC-Medium.ttf`) and the +4 size profile.
+- `scripts/build_sga.sh` (and legacy `rebuild_sga_auto.sh`) now prefer the **current** `EnginLoc.sga` over the pre-update `.vortex_backup`.
+- Updated baseline hashes in `README.md` to the post-update vanilla files.
+
+### Release
+- Version bumped to `1.0.9`.
+- Distribution: `dist/wh40k-dow-de-tc-mod-v1.0.9.zip`.
+
 ## 2026-07-18 — v1.0.7 Subtitle gibberish fix
 
 ### Fixed

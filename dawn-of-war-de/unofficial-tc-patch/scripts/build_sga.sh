@@ -111,16 +111,18 @@ mkdir -p "$DATA_DIR"
 ok "data/ directory cleaned"
 
 log "Extracting vanilla Chinese locale SGA from game..."
-# Use vortex backup (vanilla) if available, otherwise current SGA
+# Prefer the CURRENT EnginLoc.sga (post-2026-08-12 game update; the live file
+# is now the updated vanilla). Fall back to the Vortex backup only if the
+# current file is missing.
 VANILLA_SGA_BACKUP="${GAME_DIR}/Engine/Locale/Chinese/EnginLoc.sga.vortex_backup"
 VANILLA_SGA_CURRENT="${GAME_DIR}/Engine/Locale/Chinese/EnginLoc.sga"
 
-if [[ -f "$VANILLA_SGA_BACKUP" ]]; then
-    VANILLA_SGA="$VANILLA_SGA_BACKUP"
-    log "Using vanilla backup: EnginLoc.sga.vortex_backup"
-elif [[ -f "$VANILLA_SGA_CURRENT" ]]; then
+if [[ -f "$VANILLA_SGA_CURRENT" ]]; then
     VANILLA_SGA="$VANILLA_SGA_CURRENT"
-    warn "Using current EnginLoc.sga (may already be modded)"
+    log "Using current EnginLoc.sga (post-update vanilla)"
+elif [[ -f "$VANILLA_SGA_BACKUP" ]]; then
+    VANILLA_SGA="$VANILLA_SGA_BACKUP"
+    warn "Using vortex backup EnginLoc.sga.vortex_backup (pre-update; may be stale)"
 else
     err "Chinese locale SGA not found in Engine/Locale/Chinese/"
 fi
