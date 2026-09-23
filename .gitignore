@@ -1,6 +1,7 @@
 # ── Crystal Mods workspace ────────────────────────────────────────────────────
 # Agent-managed scratch space (per copilot-instructions). NEVER commit.
 .copilot_workspace/
+.copilot_workspace.meta
 
 # ── OS / IDE ─────────────────────────────────────────────────────────────────
 .DS_Store
