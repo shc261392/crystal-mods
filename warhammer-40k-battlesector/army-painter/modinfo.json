@@ -1,0 +1,31 @@
+{
+  "name": "Army Painter",
+  "id": "army-painter",
+  "game": "warhammer40kbattlesector",
+  "version": "1.0.0",
+  "author": "crystal-mods",
+  "gameVersion": "1.7.7",
+  "engine": "Unity 6000.0.62f1 (IL2CPP)",
+  "type": "bepinex-plugin",
+  "description": "Recolor your army's paint scheme in-game. A BepInEx 6 (IL2CPP) plugin recolors the local player's units (primary + secondary colours, e.g. Blood Angels red -> Ultramarines blue) with a hotkey-toggled color-changing UI. Per-faction colour schemes persist in the BepInEx config. Uses MaterialPropertyBlock + cached albedo remap: no game asset is ever modified and the whole paint job is reversible with one click. Also works on unit previews.",
+  "features": {
+    "ui": "In-game IMGUI window (F10 hotkey or on-screen button) with faction presets, RGB sliders, hex input, live tint preview, Apply and Reset.",
+    "recolor": "Auto-detects the two dominant paint colours of each unit texture and remaps them toward the chosen colours, preserving baked shading and leaving metal/grime untouched.",
+    "persistence": "Per-faction primary/secondary colours saved to BepInEx/config/com.crystalmods.armypainter.cfg; new units are auto-repainted.",
+    "scope": "Local player's whole army (ContestantType.LocalPlayer units); falls back to all visible models in army-builder / preview scenes."
+  },
+  "requires": [
+    "bepinex-framework >= 1.0.0 (the BepInEx Framework mod)"
+  ],
+  "compatibility": {
+    "note": "Runtime plugin (BepInEx/plugins/ArmyPainter.dll only). It modifies no asset bundle and no shared game material, so it has NO file conflicts.",
+    "bepinex-framework": "Required — provides the BepInEx 6 (IL2CPP) runtime this plugin loads under.",
+    "red-laser-lasgun": "Compatible. That plugin draws its own beam renderers/materials; this only sets MaterialPropertyBlocks on unit albedos.",
+    "tc-localization": "Compatible. Coexists with TCFix.dll in BepInEx/plugins/.",
+    "the-great-crusade": "Compatible. That mod edits data bundles; this adds only a plugin DLL."
+  },
+  "config": "BepInEx/config/com.crystalmods.armypainter.cfg — ToggleKey, ShowButton, AutoApply, HueWindow, SatThreshold, BlendFeather, DiagMode, and per-faction Primary/Secondary hex colours.",
+  "deployFiles": [
+    "BepInEx/plugins/ArmyPainter.dll"
+  ]
+}
