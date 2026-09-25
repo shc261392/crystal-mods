@@ -79,6 +79,23 @@ linked under "Progressive disclosure" below.
    - **Claiming "done" without browser verification + human approval is a critical error**
    - The commit-msg hook enforces commit message evidence
    - Human review is the final gatekeeper - agents can make visual interpretation mistakes
+15. **CRITICAL: Deterministic builds — one recipe per release**: Given the same
+    commit and the same extracted game data, every mod build MUST be deterministic:
+    the committed build command (`make build`) must always produce the same
+    byte-identical versioned zip set. **During a formal semver release NO build
+    arguments or overrides are allowed** — release zips come from the stock
+    `make build` invocation and nothing else. There is **ONE AND ONLY ONE way**
+    to build a release zip: never maintain 2+ candidate build rules, ad-hoc flag
+    combinations, alternate generators, or uncommitted build scripts for the same
+    deliverable. Required variants (e.g. resource-cheat on/off) must be expressed
+    in the committed build files (Makefile targets/defaults) so the single canonical
+    command reproduces the full release set. For mods that ship **more than one
+    zip, `make build` (no args) must build ALL zips of the release** — every
+    variant included; ad-hoc per-variant invocations are absolutely forbidden.
+    **Exception**: experimental builds
+    (bisect tests, diagnostics, test-variant zips) may use arbitrary args/recipes,
+    but their artifacts are test-only — never a formal version, never overwriting
+    the canonical release output.
 
 ## Repository contract
 

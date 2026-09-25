@@ -25,9 +25,13 @@ SCRIPTS  := scripts
 # exclusions + experimental Necron production-speed cheat). Vanilla single-model
 # campaign variants are excluded in W40k/WXP and in DXP2/DXP3, where the
 # base-game validator / mission-start min-loadout spawn would crash or freeze.
-# Two variants ship:
-#   RESOURCE_CHEAT=1 (default) -> over-40000-v0.1.7.zip  (resource cheat on)
-#   RESOURCE_CHEAT=0           -> over-40000-v0.1.7-normal-resources.zip
+#
+# The release set is TWO zips; `make build` with NO arguments builds BOTH:
+#   over-40000-v0.1.7.zip                  (resource cheat on)
+#   over-40000-v0.1.7-normal-resources.zip (no resource cheat)
+# Ad-hoc per-variant invocations (RESOURCE_CHEAT=…, SQUAD_SCALE=…) are
+# experimental/diagnostic ONLY and forbidden for formal releases (AGENTS.md
+# hard rule 15).
 VERSION      := 0.1.7
 SQUAD_SCALE  ?= 5      ## multiply squad unit_min/unit_max by N (0 = off)
 RESOURCE_CHEAT ?= 1    ## 1 = start with 40001 req/power + x10 income
@@ -39,8 +43,9 @@ PKG_NAME := over-40000-v$(VERSION)
 endif
 
 # Where the SGA extraction tree lives (gitignored scratch space).
-# Defaults to the workspace root's .copilot_workspace/extract.
-EXTRACT_ROOT ?= ../.copilot_workspace/extract
+# Resolves to the workspace root's .copilot_workspace/extract
+# (repo contract: mods live at <game>/<mod>/ = 2 levels deep).
+EXTRACT_ROOT ?= ../../.copilot_workspace/extract
 # Optional: override the auto-detected game dir. Also respects $DOW_GAME_DIR.
 GAME_DIR ?=
 
@@ -59,9 +64,9 @@ help:
 	@echo "  make verify       Sanity-check the generated mod/ tree"
 	@echo "  make clean        Remove build artifacts"
 	@echo ""
-	@echo "Overrides: make build EXTRACT_ROOT=... GAME_DIR=...  (or set DOW_GAME_DIR)"
-	@echo "Variants:  make build RESOURCE_CHEAT=0  -> normal resources (no resource cheat)"
-	@echo "           make build SQUAD_SCALE=N     -> model-count scale factor (default 5)"
+	@echo "make build builds the full release set (both zips) with NO arguments."
+	@echo "Infra path overrides (not content): make build EXTRACT_ROOT=... GAME_DIR=...  (or set DOW_GAME_DIR)"
+	@echo "Experimental ONLY (never for a release): make build SQUAD_SCALE=N / RESOURCE_CHEAT=0|1"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Regenerate mod tree from the game install
@@ -80,30 +85,40 @@ regenerate: ## Auto-extract game data (if missing) and regenerate mod/
 	$(PYTHON) $(SCRIPTS)/generate_mod.py "$(EXTRACT_ROOT)" "$(MOD_DIR)" $(GEN_ARGS)
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Build Vortex zip
+# Build Vortex zips
 # ─────────────────────────────────────────────────────────────────────────────
 
-.PHONY: build
-build: regenerate verify ## Regenerate + verify + package $(PKG_NAME).zip
-	@rm -rf "$(DIST_DIR)/$(PKG_NAME)" "$(DIST_DIR)/$(PKG_NAME).zip"
-	@mkdir -p "$(DIST_DIR)/$(PKG_NAME)"
-	@cp -r "$(MOD_DIR)"/W40k "$(MOD_DIR)"/WXP "$(MOD_DIR)"/DXP2 "$(MOD_DIR)"/DXP3 "$(DIST_DIR)/$(PKG_NAME)/"
-	@cd "$(DIST_DIR)/$(PKG_NAME)" && zip -r "../$(PKG_NAME).zip" . -x "*.DS_Store" >/dev/null
-	@echo "✓ $(DIST_DIR)/$(PKG_NAME).zip"
-	@echo "  Size: $$(du -sh "$(DIST_DIR)/$(PKG_NAME).zip" | cut -f1)"
-	@echo "  Files: $$(find "$(DIST_DIR)/$(PKG_NAME)" -type f | wc -l)"
+# The release build: `make build` with NO arguments produces the complete
+# release zip set (one zip per variant), deterministically, from the committed
+# generator + blacklist. Each variant regenerates into a CLEAN mod/ so no
+# variant leaks files into another. Ad-hoc content args are forbidden for
+# formal releases (AGENTS.md hard rule 15).
+.PHONY: build build-cheat build-normal
+build: build-cheat build-normal ## Build ALL release zips: resource-cheat + normal-resources (no args)
+
+build-cheat:   ## internal: (re)build the resource-cheat zip
+	$(MAKE) _build-variant RESOURCE_CHEAT=1
+
+build-normal:  ## internal: (re)build the normal-resources zip
+	$(MAKE) _build-variant RESOURCE_CHEAT=0
+
+.PHONY: _build-variant
+_build-variant: ## internal: regenerate + verify + package one variant (RESOURCE_CHEAT comes from the caller)
+	@rm -rf "$(MOD_DIR)"
+	$(MAKE) regenerate verify package-zip
 
 .PHONY: package
 package: build ## Alias for 'build'
 
-# Zip-only helper (used by build.sh / build.ps1 after they regenerate + verify)
+# Zip-only helper (used by build.sh / build.ps1 after they regenerate + verify).
+# Packaging is deterministic (scripts/package_zip.py) so `make build` yields
+# byte-identical zips for the same commit + game data (AGENTS.md hard rule 15).
 .PHONY: package-zip
 package-zip:
 	@rm -rf "$(DIST_DIR)/$(PKG_NAME)" "$(DIST_DIR)/$(PKG_NAME).zip"
 	@mkdir -p "$(DIST_DIR)/$(PKG_NAME)"
 	@cp -r "$(MOD_DIR)"/W40k "$(MOD_DIR)"/WXP "$(MOD_DIR)"/DXP2 "$(MOD_DIR)"/DXP3 "$(DIST_DIR)/$(PKG_NAME)/"
-	@cd "$(DIST_DIR)/$(PKG_NAME)" && zip -r "../$(PKG_NAME).zip" . -x "*.DS_Store" >/dev/null
-	@echo "✓ $(DIST_DIR)/$(PKG_NAME).zip"
+	$(PYTHON) $(SCRIPTS)/package_zip.py "$(DIST_DIR)/$(PKG_NAME)" "$(DIST_DIR)/$(PKG_NAME).zip"
 	@echo "  Size: $$(du -sh "$(DIST_DIR)/$(PKG_NAME).zip" | cut -f1)"
 	@echo "  Files: $$(find "$(DIST_DIR)/$(PKG_NAME)" -type f | wc -l)"
 
