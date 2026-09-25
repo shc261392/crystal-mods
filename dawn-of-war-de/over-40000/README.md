@@ -19,6 +19,8 @@ Definitive Edition*.
 | **Requisition bank cap → +400000** (resource-cheat variant only) | Player only |
 | **Unlimited unit build limits** (Terminators, Dreadnoughts, warbosses, etc.) | Dark Crusade & Soulstorm |
 | **Necron production speed → ×2** (resource-cheat variant only, EXPERIMENTAL) | Human player only, while playing Necrons (build/research/reinforce time × ½) |
+| **Ork waaagh economy — banner +4000 waaagh, cap 40001, waaagh growth ×2** (resource-cheat variant only) | Ork player only |
+| **Ork waaagh pool cap → 40001** (`max_pop_cap`) | All ork games, both variants |
 
 Covered campaigns: **Main campaign**, **Winter Assault**, **Dark Crusade (DXP2)**,
 **Soulstorm (DXP3)**.
@@ -33,20 +35,36 @@ cheat:
 | `over-40000-v0.1.7.zip` | **On** — start with 40001 req/power, ×10 income | Full cheat: spam anything immediately |
 | `over-40000-v0.1.7-normal-resources.zip` | **Off** — normal resources | Same 5x squads / caps / unlimited limits, but you earn resources normally |
 
+Ork waaagh zip scoping: the waaagh pool cap (`max_pop_cap` → **40001**) ships in
+**both** variants; the **+4000 waaagh per banner** value and the **×2 waaagh
+growth** ship in the resource-cheat zip only. Ork waaagh reinforce costs are
+floored at 1.0 in both.
+
 ## How it works (for maintainers)
 
-- `W40k/Data/scar/setup.scar` — every campaign mission calls `Setup_Player()`
-  from this SCAR library. The mod registers a one-shot rule for the human
-  player (index 0) that, ~1s after game init, applies per-player income
-  modifiers (×10 requisition & power) and sets 40000 requisition + power. It
-  is deliberately applied *after* `OnGameSetup` (the game itself only touches
-  player data from delayed rules). Because modifiers are applied with
-  `Modifier_ApplyToPlayer`, **the computer never benefits**.
+- `W40k/Data/scar/setup.scar` — the cheat is **not** hooked via `Setup_Player`
+  (that function only runs for scripted single-player missions). Instead the mod
+  registers a one-shot rule for the human player (index 0) via `Scar_AddInit`,
+  which runs for **every** battle (single-player missions *and* engine-driven
+  multiplayer-map battles). ~1s after game init the rule applies per-player
+  income modifiers (×10 requisition & power), sets requisition/power to 40001,
+  and removes itself. The 2s `StartupTopup` rule re-sets the resources for the
+  first ~60s so mission/meta-campaign resets don't clobber them. Because
+  modifiers are applied with `Modifier_ApplyToPlayer`, **the computer never
+  benefits**. Two battle types are excluded by the cheat guard:
+  **skirmish Economic Victory** games and the **Dark Crusade "Gather Power"
+  side mission** (`cl_vandea_coast`) — with the cheat their win conditions are
+  trivially satisfied, so `Over40000_IsCheatSuppressed()` keeps the cheat off.
 - **Necron production speed** (resource-cheat variant only) — when the human
   player's race is Necron, `Over40000_ApplyNecronProductionCheat` applies the
   three player time modifiers (`recruit_` / `research_` / `reinforce_time_player_modifier`)
-  at ×0.25 (time × ¼ ≈ 400% build speed). Tunable in the cheat template:
+  at ×0.5 (time × ½ ≈ 200% build speed). Tunable in the cheat template:
   1.0 = vanilla, 0.5 = 2×, 0.25 = 4×.
+- **Ork waaagh economy** (resource-cheat variant only) — the ork waaagh
+  banner's `population_cap_player_modifier` is raised from 10 to **4000** waaagh
+  per banner, the race `max_pop_cap` is raised to **40001** (both variants), and
+  the ork population-growth rate is **×2** so the waaagh pool fills fast enough
+  to reach the raised cap.
 - `*/Data/attrib/racebps/*_race.rgd` — the **population/vehicle caps** come
   from here. Each race file is byte-identical to vanilla except the 4-byte
   `race_squad_cap_table` floats (`base/max squad cap`, `base/max support cap`)
@@ -146,7 +164,10 @@ Test in this order — if a later step fails, the earlier ones are still valid.
   cap at **40001**.
 - Build a lot of units — you should be able to exceed the normal 20-pop / 6-vehicle cap easily.
 - Watch income for ~1 minute — it should come in far faster than vanilla (×10).
-- Play a **skirmish** game afterwards: caps and starting resources should be **vanilla** (this mod is campaign-only).
+- Play a **skirmish** game afterwards: the resource cheat applies there too
+  (it runs via `Scar_AddInit`, for every battle type) — but start a skirmish
+  game with the **Economic Victory** condition and confirm the cheat stays off,
+  so an EC win can't be trivially satisfied.
 
 ### 2. Soulstorm — unlimited Terminators
 
@@ -183,9 +204,12 @@ Test in this order — if a later step fails, the earlier ones are still valid.
 - The unit-limit `.rgd` overrides are compiled data — they load exactly like
   vanilla `.rgd` files. Each is byte-identical to the base except the
   `max_squad_cap` values.
-- The population/resource/income cheats run through the SCAR `Setup_Player`
-  hook, which only fires in **single-player campaign missions** — by design.
-- Skirmish/multiplayer intentionally keeps vanilla caps & resources.
+- The population/resource/income cheats are registered with `Scar_AddInit` in
+  `W40k/Data/scar/setup.scar`, so they run for **every battle type** — campaign
+  missions *and* skirmish / engine-driven multiplayer-map battles. **Exceptions:**
+  skirmish **Economic Victory** games and the Dark Crusade **"Gather Power"
+  side mission** (`cl_vandea_coast`) are excluded by the cheat guard, because
+  their win conditions would be trivially satisfied by the cheat.
 
 ## Repository layout
 
@@ -213,15 +237,33 @@ over-40000/
 
 ## Version history
 
-- **0.1.7** — experimental **Necron production-speed cheat** (resource-cheat
-  variant only): when the human player plays Necrons, build / research /
-  reinforce time is multiplied by ½ (~200% production speed) via the three
-  player time modifiers. Applies in skirmish, Dark Crusade and Soulstorm to
-  the human Necron player only — AI players and other races are unaffected.
-  Tunable in `scripts/templates/setup.scar`
-  (`Over40000_ApplyNecronProductionCheat`; 1.0 = vanilla, 0.5 = 2×,
-  0.25 = 4×). **Note:** the ×2 (0.5) value replaced the original ×4 (0.25)
-  in 0.1.7; the release zips in `dist/` are rebuilt from the retuned template.
+- **0.1.7** — **skirmish/total-battle retrofit + ork waaagh economy**, plus the
+  experimental **Necron production-speed cheat** (resource-cheat variant only).
+  - **Cheat now applies to every battle type.** The resource cheat previously
+    shipped a misleading "campaign-only" claim; it actually runs via
+    `Scar_AddInit` and applies in skirmish and engine-driven multiplayer-map
+    battles too. Two battle types are now explicitly **excluded** by the cheat
+    guard (`Over40000_IsCheatSuppressed` via `scripts/templates/setup.scar`):
+    **skirmish Economic Victory** games (win = reach resource goals, which the
+    cheat would instantly satisfy) and the **Dark Crusade "Gather Power" side
+    mission** (`cl_vandea_coast`, detected via its unique
+    `Rule_Power_Count_Objective_Variation` load-time marker). No single
+    `_EconVict`-style check covers both, so two markers are needed.
+  - **Ork waaagh economy fixed** (checks against the ×5 squad counter-scale
+    that divided waaagh reinforce costs to 0.2/0.4): reinforce-cost
+    **population rows are floored at 1.0** in both variants; the waaagh
+    **`max_pop_cap` is raised to 40001** in both variants; and in the
+    resource-cheat variant the **waaagh banner grants +4000 pop cap per banner**
+    (was 10 via `population_cap_player_modifier`) with **waaagh growth ×2**
+    so the pool fills to the new cap in a few banners.
+  - **Necron production speed**: when the human player plays Necrons, build /
+    research / reinforce time is multiplied by ½ (~200% production speed) via
+    the three player time modifiers. Applies to the human Necron player only —
+    AI players and other races are unaffected. Tunable in
+    `scripts/templates/setup.scar` (`Over40000_ApplyNecronProductionCheat`;
+    1.0 = vanilla, 0.5 = 2×, 0.25 = 4×). **Note:** the ×2 (0.5) value replaced
+    the original ×4 (0.25) in 0.1.7; the release zips in `dist/` are rebuilt
+    from the retuned template.
 
 - **0.1.6** — separate the cost counter-scale + attachable-leader fixes from the
   talos fix. **Cost counter-scale invariant fixed for 63 squads** across

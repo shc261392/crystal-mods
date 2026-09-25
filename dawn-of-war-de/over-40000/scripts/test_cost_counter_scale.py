@@ -1,8 +1,14 @@
 """Unit tests for the over-40000 generator invariants.
 
-These run against the scratch extraction tree
-(`../.copilot_workspace/extract`). They are skipped if the tree is missing
-(CI / fresh checkout), because the generator patches real game data.
+These run against the scratch SGA extraction tree
+(`<workspace-root>/.copilot_workspace/extract`). They are skipped if the tree
+is missing (CI / fresh checkout), because the generator patches real game data.
+
+The tree is located in this order:
+    1. `$DOW_EXTRACT_ROOT`  (set by `make test` from the Makefile's EXTRACT_ROOT)
+    2. the nearest `.copilot_workspace/extract` walking up from this file
+       (the mod lives at `<workspace>/dawn-of-war-de/over-40000`, so the scratch
+       space is 3 directories up from the mod dir, not 2)
 
 Critical invariant tested here:
     EVERY squad that is model-count scaled (eff > 0) MUST have every EBP it
@@ -11,6 +17,7 @@ Critical invariant tested here:
 """
 from __future__ import annotations
 
+import os
 import sys
 import unittest
 from pathlib import Path
@@ -19,7 +26,20 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from generate_mod import ALL_MODULES, collect_scale_maps, squad_loadout_ebp_refs  # noqa: E402
 
-EXTRACT = Path(__file__).parent.parent.parent / ".copilot_workspace" / "extract"
+
+def _resolve_extract_root() -> Path:
+    """Return the extraction tree root (may not exist -> tests skip)."""
+    env = os.environ.get("DOW_EXTRACT_ROOT")
+    if env:
+        return Path(env)
+    for parent in Path(__file__).resolve().parents:
+        cand = parent / ".copilot_workspace" / "extract"
+        if cand.is_dir():
+            return cand
+    return Path(__file__).resolve().parents[3] / ".copilot_workspace" / "extract"
+
+
+EXTRACT = _resolve_extract_root()
 
 
 @unittest.skipUnless(EXTRACT.is_dir(), "game-data extraction tree not present")

@@ -22,9 +22,11 @@ DIST_DIR := dist
 SCRIPTS  := scripts
 
 # Version. The release is 0.1.7 (0.1.6 crash-fixed + module-scoped single-model
-# exclusions + experimental Necron production-speed cheat). Vanilla single-model
-# campaign variants are excluded in W40k/WXP and in DXP2/DXP3, where the
-# base-game validator / mission-start min-loadout spawn would crash or freeze.
+# exclusions + experimental Necron production-speed cheat + skirmish retrofit
+# with EC / DC-side-mission cheat guard + ork waaagh economy fix). Vanilla
+# single-model campaign variants are excluded in W40k/WXP and in DXP2/DXP3,
+# where the base-game validator / mission-start min-loadout spawn would crash
+# or freeze.
 #
 # The release set is TWO zips; `make build` with NO arguments builds BOTH:
 #   over-40000-v0.1.7.zip                  (resource cheat on)
@@ -143,7 +145,7 @@ lint: ## Ruff-lint the generator scripts (needs uv / ruff)
 
 .PHONY: test
 test: ## Run the generator invariant unit tests (needs the extraction tree)
-	python3 scripts/test_cost_counter_scale.py
+	DOW_EXTRACT_ROOT="$(EXTRACT_ROOT)" $(PYTHON) scripts/test_cost_counter_scale.py
 
 .PHONY: clean
 clean: ## Remove build artifacts

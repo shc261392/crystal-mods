@@ -63,9 +63,14 @@ The two files are identical except for the resource cheat.
 
 ## Notes
 
-- The resource cheat is **campaign-only** (single-player missions and
-  engine-driven campaign battles). Skirmish / multiplayer keep vanilla
-  resources, caps and income.
+- The resource cheat applies to **every battle type** (single-player missions,
+  skirmish and engine-driven campaign battles) — except **Economic Victory**
+  skirmish games and the Dark Crusade **"Gather Power" side mission**, where
+  the cheat is intentionally suppressed so the win condition can't be trivially
+  satisfied.
+- The **ork waaagh economy** is fixed: waaagh reinforce costs are floored,
+  the waaagh pool cap is 40001, and the resource-cheat variant gives **+4000
+  waaagh per banner** with **×2 waaagh growth**.
 - Unit-limit overrides are data-wide, so the AI can also field unlimited
   Terminators. Caps/limits apply to AI too.
 - Auto-reinforce is a separate companion mod (`Easy Reinforcement`) — install it

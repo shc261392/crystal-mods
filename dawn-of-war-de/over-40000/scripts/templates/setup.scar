@@ -46,7 +46,13 @@
 --                                       (build/research/reinforce time x 1/2;
 --                                       EXPERIMENTAL -- see
 --                                       Over40000_ApplyNecronProductionCheat)
+--   * Ork waaagh accumulation        -> x2 population growth when the human
+--                                       player is Ork
 --   * auto-reinforce (optional)      -> reinforce squads up to max each ~1s
+--
+-- Economic-Victory skirmish games and the Dark Crusade "Gather Power" side
+-- mission are EXCLUDED: the cheat is suppressed there (see
+-- Over40000_IsCheatSuppressed) so it cannot instantly win a win-condition race.
 -- ================================================================================
 
 -- private data
@@ -133,14 +139,44 @@ function Over40000_ApplyCheat()
 		return
 	end
 	Rule_Remove( Over40000_ApplyCheat )
+	if Over40000_IsCheatSuppressed() then
+		Rule_Remove( Over40000_StartupTopup )
+		return
+	end
 	if ( Over40000_PlayerId ~= nil ) then
+		local raceName = Player_GetRaceName( Over40000_PlayerId )
 		Over40000_ApplyIncome( Over40000_PlayerId )
 		Player_SetResource( Over40000_PlayerId, RT_Requisition, 40001 )
 		Player_SetResource( Over40000_PlayerId, RT_Power, 40001 )
-		if ( Player_GetRaceName( Over40000_PlayerId ) == "necron_race" ) then
+		if ( raceName == "necron_race" ) then
 			Over40000_ApplyNecronProductionCheat( Over40000_PlayerId )
 		end
+		if ( raceName == "ork_race" ) then
+			-- Ork waaagh accumulation x2 (population growth rate).
+			-- The ork population pool (waaagh) fills faster, so a handful of
+			-- banners reaches the 40001 cap quickly.
+			Over40000_ApplyPlayerModifier( Over40000_PlayerId, "population_growth_rate_player_modifier", MUT_Multiplication, 2 )
+		end
 	end
+end
+
+-- Returns true when the resource cheat must stay OFF for this battle:
+--   * Economic-Victory skirmish games (_EconVict is set by economicvictory.scar,
+--     which only ships for W40k/DXP2): the win condition is reaching requisition
+--     /power goals, so +40001 resources and x10 income would instantly win.
+--   * The Dark Crusade "Gather Power" side mission (cl_vandea_coast): the win is
+--     accumulating g_power_goal power; the +40001 power cheat would instantly
+--     win it. That mission's scar is the only one defining
+--     Rule_Power_Count_Objective_Variation, so its load-time marker detects it
+--     (the cheat fires ~1s in, after scar load; g_power_goal is set ~3s).
+function Over40000_IsCheatSuppressed()
+	if _EconVict ~= nil then
+		return true
+	end
+	if Rule_Power_Count_Objective_Variation ~= nil then
+		return true
+	end
+	return false
 end
 
 -- Necron production-speed cheat (EXPERIMENTAL).
@@ -171,6 +207,10 @@ function Over40000_StartupTopup()
 	end
 	Over40000_TopupCount = Over40000_TopupCount + 1
 	if ( Over40000_TopupCount > 30 ) then
+		Rule_Remove( Over40000_StartupTopup )
+		return
+	end
+	if Over40000_IsCheatSuppressed() then
 		Rule_Remove( Over40000_StartupTopup )
 		return
 	end

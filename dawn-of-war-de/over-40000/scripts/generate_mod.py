@@ -39,6 +39,10 @@ RACE_SQ_TABLE = relic_hash("race_squad_cap_table")
 AEGD_OFF = 0x28  # DATAAEGD payload starts at file offset 0x28
 MAX_CAP = 40000.0
 RACE_CAP = 40001.0
+MAX_POP_CAP = relic_hash("max_pop_cap")  # ork waaagh pool cap (ork_race race_pop_table)
+ORK_BANNER_APPLY_TABLE = 0x7C408388      # ork_waagh_banner modifier apply table
+ORK_BANNER_MODIFIER_VALUE = 0x2ED8F799   # the apply-entry "value" float
+ORK_BANNER_POP_CAP = 4000.0              # cheat build: +4000 waaagh cap per banner
 
 TEMPLATES = Path(__file__).parent / "templates"
 
@@ -53,7 +57,9 @@ def _cap_field_hashes() -> dict[int, str]:
 
 
 def patch_race_caps(path: Path, target: float = RACE_CAP) -> bytes | None:
-    """Return a copy of a race .rgd with race_squad_cap_table caps set to target."""
+    """Return a copy of a race .rgd with race_squad_cap_table caps (and, when
+    present, the race_pop_table max_pop_cap) set to target. Only ork_race.rgd
+    carries max_pop_cap, so that float is patched there and nowhere else."""
     orig = path.read_bytes()
     size = struct.unpack_from("<I", orig, 0x24)[0]
     aegd = orig[AEGD_OFF:AEGD_OFF + size]
@@ -72,11 +78,88 @@ def patch_race_caps(path: Path, target: float = RACE_CAP) -> bytes | None:
         for kh2, typ2, vabs2 in tbl[1]:
             if typ2 == 0 and kh2 in fields:
                 file_offsets.append(AEGD_OFF + vabs2)
+    # ork waaagh pool cap: max_pop_cap lives in the race_pop_table (top-level key
+    # 0xfd01714f) and may sit in trailing bytes past the declared AEGD size;
+    # reach it with a nested walk and let the len(data) guard below decide.
+    stack = [12]
+    seen: set[int] = set()
+    while stack:
+        abs_t = stack.pop()
+        if abs_t in seen:
+            continue
+        seen.add(abs_t)
+        tbl = d._table(abs_t)
+        if tbl is None:
+            continue
+        for kh2, typ2, vabs2 in tbl[1]:
+            if typ2 == 100:
+                stack.append(vabs2)
+            elif typ2 == 0 and kh2 == MAX_POP_CAP:
+                file_offsets.append(AEGD_OFF + vabs2)
     if not file_offsets:
         return None
     data = bytearray(orig)
     for foff in file_offsets:
         # guard: the last float may sit in trailing bytes past the declared size
+        if foff + 4 <= len(data):
+            struct.pack_into("<f", data, foff, target)
+    return bytes(data)
+
+
+def patch_banner_pop_cap(path: Path, target: float = ORK_BANNER_POP_CAP) -> bytes | None:
+    """Return a copy of an ork_waagh_banner.rgd whose population_cap_player_modifier
+    value float is set to `target` (per-banner waaagh pop cap grant).
+
+    Semantic match: locate the applied-modifiers table (key 0x7c408388), then the
+    entry whose modifier-path reference (key REF / 0x49d60fae) ends with
+    `population_cap_player_modifier.lua`, and patch its value float
+    (key ORK_BANNER_MODIFIER_VALUE / 0x2ed8f799).
+    """
+    orig = path.read_bytes()
+    size = struct.unpack_from("<I", orig, 0x24)[0]
+    aegd = orig[AEGD_OFF:AEGD_OFF + size]
+    d = Decoder(aegd)
+    # locate every applied-modifiers table
+    apply_tables: list[int] = []
+    stack = [12]
+    seen: set[int] = set()
+    while stack:
+        abs_t = stack.pop()
+        if abs_t in seen:
+            continue
+        seen.add(abs_t)
+        tbl = d._table(abs_t)
+        if tbl is None:
+            continue
+        for kh, typ, vabs in tbl[1]:
+            if typ == 100:
+                if kh == ORK_BANNER_APPLY_TABLE:
+                    apply_tables.append(vabs)
+                stack.append(vabs)
+    value_offsets: list[int] = []
+    for apply_abs in apply_tables:
+        atl = d._table(apply_abs)
+        if atl is None:
+            continue
+        for kh, typ, vabs in atl[1]:
+            if typ != 100:
+                continue
+            entry = d._table(vabs)
+            if entry is None:
+                continue
+            modpath = ""
+            value_abs: int | None = None
+            for kh2, typ2, vabs2 in entry[1]:
+                if typ2 == 3 and kh2 == REF:
+                    modpath = d._read_cstr(vabs2).lower()
+                elif typ2 == 0 and kh2 == ORK_BANNER_MODIFIER_VALUE:
+                    value_abs = vabs2
+            if modpath.endswith("population_cap_player_modifier.lua") and value_abs is not None:
+                value_offsets.append(AEGD_OFF + value_abs)
+    if not value_offsets:
+        return None
+    data = bytearray(orig)
+    for foff in value_offsets:
         if foff + 4 <= len(data):
             struct.pack_into("<f", data, foff, target)
     return bytes(data)
@@ -128,8 +211,10 @@ UNIT_MAX = relic_hash("unit_max")
 SQUAD_REINFORCE = relic_hash("squad_reinforce_ext")
 COST_FIELD = relic_hash("cost")
 REQUISITION = relic_hash("requisition")
+POPULATION = relic_hash("population")
 COST_EXT = relic_hash("cost_ext")
-REINFORCE_FLOOR = 10.0
+REINFORCE_FLOOR = 10.0   # requisition reinforce cost floor (lowest vanilla value is 20)
+POPULATION_FLOOR = 1.0   # waaagh (ork population) reinforce cost floor
 ALL_MODULES = ("W40k", "WXP", "DXP2", "DXP3")
 
 # Squads/units that must NOT have their model count scaled: fixed-model
@@ -338,11 +423,11 @@ def collect_scale_maps(extract_root: Path, squad_scale: int, policy: str,
     return squad_map, ebp_map
 
 
-def find_squad_reinforce_cost_offsets(aegd: bytes) -> list[tuple[int, bool]]:
+def find_squad_reinforce_cost_offsets(aegd: bytes) -> list[tuple[int, str]]:
     """AEGD-relative offsets of every float under squad_reinforce_ext.cost.
-    Returns (offset, is_requisition)."""
+    Returns (offset, kind) where kind is 'requisition', 'population' or 'other'."""
     d = Decoder(aegd)
-    out: list[tuple[int, bool]] = []
+    out: list[tuple[int, str]] = []
     top = d._table(12)
     if top is None:
         return out
@@ -362,7 +447,13 @@ def find_squad_reinforce_cost_offsets(aegd: bytes) -> list[tuple[int, bool]]:
                     t = stack.pop()
                     for kh3, typ3, vabs3 in t[1]:
                         if typ3 == 0:
-                            out.append((vabs3, kh3 == REQUISITION))
+                            if kh3 == REQUISITION:
+                                kind = "requisition"
+                            elif kh3 == POPULATION:
+                                kind = "population"
+                            else:
+                                kind = "other"
+                            out.append((vabs3, kind))
                         elif typ3 == 100:
                             s3 = d._table(vabs3)
                             if s3 is not None:
@@ -472,15 +563,19 @@ def patch_squad_rgd(path: Path, max_cap: float = MAX_CAP, squad_scale: int = 0,
                     struct.pack_into("<f", data, foff, cur * squad_scale)
         if scale_costs:
             # counter-scale the per-model build/reinforce cost & time so totals stay vanilla
-            for off, is_req in find_squad_reinforce_cost_offsets(aegd):
+            for off, kind in find_squad_reinforce_cost_offsets(aegd):
                 foff = AEGD_OFF + off
                 if foff + 4 > len(data):
                     continue
                 cur = struct.unpack_from("<f", data, foff)[0]
                 if cur > 0:
                     new = cur / squad_scale
-                    if is_req and new < REINFORCE_FLOOR:
+                    if kind == "requisition" and new < REINFORCE_FLOOR:
                         new = REINFORCE_FLOOR
+                    if kind == "population" and new < POPULATION_FLOOR:
+                        # waaagh (ork population) reinforce costs must never drop
+                        # below 1.0 waaagh per reinforce tick
+                        new = POPULATION_FLOOR
                     struct.pack_into("<f", data, foff, new)
     patched = bytes(data)
     # sanity: re-decode the patched AEGD and confirm caps were rewritten
@@ -673,6 +768,30 @@ def main() -> int:
                 print(f"wrote {dst}")
             race_total += 1
     print(f"TOTAL patched race files: {race_total}")
+
+    # ---- ork waaagh banner (resource-cheat variant only: +4000 waaagh per banner) ----
+    banner_total = 0
+    if args.resource_cheat == "on":
+        for module in modules:
+            data_root = args.extract_root / module / "data"
+            if not data_root.is_dir():
+                continue
+            for rgd in sorted(data_root.rglob("*.rgd")):
+                if rgd.name != "ork_waagh_banner.rgd" or "ebps" not in str(rgd).replace("\\", "/"):
+                    continue
+                patched = patch_banner_pop_cap(rgd)
+                if patched is None:
+                    continue
+                deploy = to_deploy_path(rgd, args.extract_root, module)
+                dst = args.mod_root / deploy
+                if args.dry_run:
+                    print(f"would write {dst}")
+                else:
+                    dst.parent.mkdir(parents=True, exist_ok=True)
+                    dst.write_bytes(patched)
+                    print(f"wrote {dst}")
+                banner_total += 1
+        print(f"TOTAL patched ork banner files: {banner_total}")
 
     # ---- unit EBP per-model cost/time counter-scale (when squad_scale > 0) ----
     ebp_total = 0
