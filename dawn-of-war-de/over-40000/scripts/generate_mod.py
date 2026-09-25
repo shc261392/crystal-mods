@@ -268,7 +268,8 @@ def collect_scale_maps(extract_root: Path, squad_scale: int, policy: str,
                        descale_campaign_single: bool = False,
                        races: set[str] | None = None,
                        squad_filter: set[str] | None = None,
-                       exclude_squads: set[str] | None = None
+                       exclude_squads: set[str] | None = None,
+                       overrides: dict[str, int] | None = None
                        ) -> tuple[dict[str, int], dict[str, int]]:
     """Pre-scan every squad to map squad filename -> scale factor and each
     referenced EBP basename -> cost-division divisor.
@@ -285,6 +286,10 @@ def collect_scale_maps(extract_root: Path, squad_scale: int, policy: str,
     `squad_filter` (optional) restricts scaling to ONLY the listed squads;
     `exclude_squads` (optional) scales everything normally EXCEPT the listed
     squads. Use one or the other, not both.
+
+    `overrides` (optional, EXPERIMENTAL) maps squad basename (lowercase, no
+    .rgd) to a forced scale factor applied AFTER every other rule — wins over
+    blackslist/filters. Empty/None = canonical behavior.
     """
     squad_map: dict[str, int] = {}
     ebp_map: dict[str, int] = {}
@@ -314,6 +319,8 @@ def collect_scale_maps(extract_root: Path, squad_scale: int, policy: str,
             if exclude_squads is not None and eff > 0:
                 if rgd.name[:-4].lower() in exclude_squads:
                     eff = 0
+            if overrides:
+                eff = overrides.get(rgd.name[:-4].lower(), eff)
             squad_map[(module, rgd.name)] = eff
             for ebp in squad_loadout_ebp_refs(aegd):
                 # The EBP cost divisor must match the model-count scale of the
@@ -568,6 +575,13 @@ def main() -> int:
                          "blacklist (scripts/templates/squads.blacklist.txt). The "
                          "default is always applied unless this override is passed, "
                          "so `make build` is deterministic.")
+    ap.add_argument("--scale-overrides", default="",
+                    help="comma-separated SQUAD_BASENAME=factor overrides applied "
+                         "AFTER every other scaling rule (e.g. "
+                         "necron_tomb_spyder_squad=0,necron_scarab_squad=50). "
+                         "EXPERIMENTAL/diagnostic only — never used for a formal "
+                         "release (AGENTS.md hard rule 15). Empty = no overrides, "
+                         "canonical behavior.")
     args = ap.parse_args()
     modules = tuple(m.strip() for m in args.modules.split(",") if m.strip())
     for m in modules:
@@ -591,6 +605,19 @@ def main() -> int:
             for ln in blacklist_src.read_text(encoding="utf-8").splitlines()
             if ln.strip() and not ln.lstrip().startswith("#")
         )
+
+    # Experimental per-squad scale overrides (squad basename -> factor). Applied
+    # AFTER every other rule in collect_scale_maps. Empty by default: canonical
+    # builds are unaffected (AGENTS.md hard rule 15).
+    scale_overrides: dict[str, int] = {}
+    for tok in (t.strip() for t in args.scale_overrides.split(",") if t.strip()):
+        name, sep, factor = tok.partition("=")
+        if not sep:
+            raise SystemExit(f"error: bad --scale-overrides token '{tok}' (expected NAME=factor)")
+        try:
+            scale_overrides[name.strip().lower()] = int(factor)
+        except ValueError:
+            raise SystemExit(f"error: bad --scale-overrides factor '{factor}' in '{tok}'")
 
     # ---- setup.scar (cheat hook) ----
     if args.resource_cheat == "off":
@@ -655,7 +682,8 @@ def main() -> int:
                                               args.exclude_single_model == "on",
                                               args.exclude_sp == "on",
                                               args.descale_campaign_single == "on",
-                                              race_filter, squad_filter, exclude_squads)
+                                              race_filter, squad_filter, exclude_squads,
+                                              scale_overrides)
         for module in modules:
             data_root = args.extract_root / module / "data"
             if not data_root.is_dir():
@@ -687,7 +715,8 @@ def main() -> int:
                                             args.exclude_single_model == "on",
                                             args.exclude_sp == "on",
                                             args.descale_campaign_single == "on",
-                                            race_filter, squad_filter, exclude_squads)
+                                            race_filter, squad_filter, exclude_squads,
+                                            scale_overrides)
     for module in modules:
         data_root = args.extract_root / module / "data"
         if not data_root.is_dir():

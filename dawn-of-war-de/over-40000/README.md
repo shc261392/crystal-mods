@@ -18,7 +18,7 @@ Definitive Edition*.
 | **Resource income → ×10 requisition & power** (resource-cheat variant only) | Player only |
 | **Requisition bank cap → +400000** (resource-cheat variant only) | Player only |
 | **Unlimited unit build limits** (Terminators, Dreadnoughts, warbosses, etc.) | Dark Crusade & Soulstorm |
-| **Necron production speed → ×4** (resource-cheat variant only, EXPERIMENTAL) | Human player only, while playing Necrons (build/research/reinforce time × ¼) |
+| **Necron production speed → ×2** (resource-cheat variant only, EXPERIMENTAL) | Human player only, while playing Necrons (build/research/reinforce time × ½) |
 
 Covered campaigns: **Main campaign**, **Winter Assault**, **Dark Crusade (DXP2)**,
 **Soulstorm (DXP3)**.
@@ -172,6 +172,11 @@ Test in this order — if a later step fails, the earlier ones are still valid.
 
 ## Known limitations
 
+- **Engine hard-caps squads at 30 models.** Any ×5-scaled squad whose scaled
+  `unit_max` exceeds 30 is clamped to 30 by the engine in-game (observed:
+  everything reads 30/30 even when the shipped data says 75 / 750). **74 squads**
+  are affected; the full per-race enumeration is in
+  [`docs/ENGINE_SQUAD_CAP_30.md`](docs/ENGINE_SQUAD_CAP_30.md).
 - **Unit-limit overrides are data-wide.** The `required_squad_cap` change
   applies to AI players too (they can also field unlimited Terminators). This
   is inherent to how per-unit caps are stored.
@@ -190,6 +195,9 @@ over-40000/
 ├── pyproject.toml              # uv project (stdlib only)
 ├── modinfo.json                # mod metadata (not shipped in the zip)
 ├── README.md
+├── docs/
+│   ├── ENGINE_SQUAD_CAP_30.md   # 30-model engine cap — full per-race enumeration
+│   └── SINGLE_MODEL_HONOR_GUARD.md
 ├── NEXUS_DESCRIPTION.md        # copy-paste text for the Nexus mod page
 ├── mod/                        # generated mod tree (the deliverable)
 │   ├── W40k/Data/scar/setup.scar
@@ -207,12 +215,13 @@ over-40000/
 
 - **0.1.7** — experimental **Necron production-speed cheat** (resource-cheat
   variant only): when the human player plays Necrons, build / research /
-  reinforce time is multiplied by ¼ (~400% production speed) via the three
+  reinforce time is multiplied by ½ (~200% production speed) via the three
   player time modifiers. Applies in skirmish, Dark Crusade and Soulstorm to
   the human Necron player only — AI players and other races are unaffected.
   Tunable in `scripts/templates/setup.scar`
   (`Over40000_ApplyNecronProductionCheat`; 1.0 = vanilla, 0.5 = 2×,
-  0.25 = 4×).
+  0.25 = 4×). **Note:** the ×2 (0.5) value replaced the original ×4 (0.25)
+  in 0.1.7; the release zips in `dist/` are rebuilt from the retuned template.
 
 - **0.1.6** — separate the cost counter-scale + attachable-leader fixes from the
   talos fix. **Cost counter-scale invariant fixed for 63 squads** across
