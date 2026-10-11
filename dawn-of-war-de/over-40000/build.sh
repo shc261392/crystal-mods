@@ -3,8 +3,8 @@
 # Over 40000 - DoW DE power-cheat mod - build (Linux / WSL2)
 #
 # Builds the COMPLETE release zip set (both variants) with NO content args:
-#   dist/over-40000-v0.1.7.zip                  (resource cheat on)
-#   dist/over-40000-v0.1.7-normal-resources.zip (no resource cheat)
+#   dist/over-40000-v0.1.8.zip                  (resource cheat on)
+#   dist/over-40000-v0.1.8-normal-resources.zip (no resource cheat)
 #
 # Deterministic per AGENTS.md hard rule 15: same commit + same game data
 # always produce the same zips. This script only forwards infrastructure

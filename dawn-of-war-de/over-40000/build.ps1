@@ -2,8 +2,8 @@
 # Over 40000 - DoW DE power-cheat mod - build (Windows PowerShell)
 #
 # Builds the COMPLETE release zip set (both variants) with NO content args:
-#   dist\over-40000-v0.1.7.zip                  (resource cheat on)
-#   dist\over-40000-v0.1.7-normal-resources.zip (no resource cheat)
+#   dist\over-40000-v0.1.8.zip                  (resource cheat on)
+#   dist\over-40000-v0.1.8-normal-resources.zip (no resource cheat)
 #
 # Per AGENTS.md hard rule 15, only infrastructure path overrides are accepted;
 # content args (squad-scale, resource-cheat) are forbidden for releases.
@@ -16,7 +16,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$Version = "0.1.7"
+$Version = "0.1.8"
 $RepoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $RepoRoot
 

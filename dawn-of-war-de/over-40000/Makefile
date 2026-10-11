@@ -21,20 +21,21 @@ MOD_DIR  := mod
 DIST_DIR := dist
 SCRIPTS  := scripts
 
-# Version. The release is 0.1.7 (0.1.6 crash-fixed + module-scoped single-model
-# exclusions + experimental Necron production-speed cheat + skirmish retrofit
-# with EC / DC-side-mission cheat guard + ork waaagh economy fix). Vanilla
-# single-model campaign variants are excluded in W40k/WXP and in DXP2/DXP3,
-# where the base-game validator / mission-start min-loadout spawn would crash
-# or freeze.
+# Version. The release is 0.1.8 (0.1.7 + the Soulstorm Imperial Guard stronghold
+# garrison fix: the x5 guardsmen min-loadout spawn is capped to vanilla size for
+# that one mission by a patched campaign script -- see
+# docs/CAMPAIGN_GARRISON_CRASH.md -- since .rgd squad data cannot be scoped to a
+# single map). Vanilla single-model campaign variants are excluded in W40k/WXP
+# and in DXP2/DXP3, where the base-game validator / mission-start min-loadout
+# spawn would crash or freeze.
 #
 # The release set is TWO zips; `make build` with NO arguments builds BOTH:
-#   over-40000-v0.1.7.zip                  (resource cheat on)
-#   over-40000-v0.1.7-normal-resources.zip (no resource cheat)
+#   over-40000-v0.1.8.zip                  (resource cheat on)
+#   over-40000-v0.1.8-normal-resources.zip (no resource cheat)
 # Ad-hoc per-variant invocations (RESOURCE_CHEAT=…, SQUAD_SCALE=…) are
 # experimental/diagnostic ONLY and forbidden for formal releases (AGENTS.md
 # hard rule 15).
-VERSION      := 0.1.7
+VERSION      := 0.1.8
 SQUAD_SCALE  ?= 5      ## multiply squad unit_min/unit_max by N (0 = off)
 RESOURCE_CHEAT ?= 1    ## 1 = start with 40001 req/power + x10 income
 
@@ -137,6 +138,13 @@ verify: ## Sanity-check the generated mod tree
 	  [ "$$n" -gt 250 ] || { echo "ERROR: too few squad patches"; exit 1; }
 	@n=$$(find "$(MOD_DIR)" -name '*.lua' | wc -l); \
 	  [ "$$n" -eq 0 ] || { echo "ERROR: unexpected .lua data overrides present"; exit 1; }
+	@SCEN="$(MOD_DIR)/DXP3/Data/scenarios/sp/stronghold_imperial_guard.scar"; \
+	  test -f "$$SCEN" || { echo "ERROR: campaign garrison patch missing ($$SCEN)"; exit 1; }; \
+	  patched=$$(grep -Ec 'Util_CreateSquadsAtMarkerEx\(.*guard_squad_guardsmen' "$$SCEN" || true); \
+	  unpatched=$$(grep -Ec 'Util_CreateSquadsAtMarker\(.*guard_squad_guardsmen' "$$SCEN" || true); \
+	  [ "$$patched" -eq 11 ] && [ "$$unpatched" -eq 0 ] \
+	    || { echo "ERROR: campaign garrison patch wrong (patched=$$patched want 11, unpatched=$$unpatched want 0)"; exit 1; }; \
+	  echo "  campaign garrison patch: $$patched patched, $$unpatched unpatched"
 	@echo "✓ mod/ tree looks valid"
 
 .PHONY: lint

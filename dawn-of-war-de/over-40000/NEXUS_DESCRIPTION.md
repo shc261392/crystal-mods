@@ -32,9 +32,9 @@ point. If you want a fair fight, this is not the mod for you.
 
 ## Two variants (choose ONE to install)
 
-1. **over-40000-v0.1.7** — full cheat: starts you with 40001 requisition & power
+1. **over-40000-v0.1.8** — full cheat: starts you with 40001 requisition & power
    and ×10 income, plus the 5x squads and caps.
-2. **over-40000-v0.1.7-normal-resources** — same 5x squads / caps / unlimited
+2. **over-40000-v0.1.8-normal-resources** — same 5x squads / caps / unlimited
    limits, but **normal resources**: no starting 40001, no income boost. You still
    field armies of 5-model Sentinels, you just have to earn them normally.
 
@@ -51,11 +51,15 @@ The two files are identical except for the resource cheat.
 > Attachable leaders (Priest / Commissar / Psyker) are kept at 1 model so they
 > can still attach to squads. All model-scaled units have their build cost/time
 > counter-scaled so totals stay vanilla.
+>
+> The **Soulstorm Imperial Guard stronghold** opening garrison spawns at
+> **vanilla size** instead of 5x — squad data can't be scoped to one map, so this
+> is a per-mission fix. Everything else in that mission keeps 5x scaling.
 
 ## Installation (Vortex, recommended)
 
 1. Install the **DoW DE game extension** for Vortex (`vortex-ext-game-warhammer40kdawnofwar-*.zip`) from this mod's Files tab, if you haven't — drag it onto Vortex's **Extensions** tab and enable it.
-2. Drag the chosen `over-40000-v0.1.7*.zip` onto Vortex and **Install**.
+2. Drag the chosen `over-40000-v0.1.8*.zip` onto Vortex and **Install**.
 3. Click **Deploy Mods**.
 4. Launch **Dawn of War Definitive Edition** from Vortex (or Steam — loose files are already deployed to the game folder).
 

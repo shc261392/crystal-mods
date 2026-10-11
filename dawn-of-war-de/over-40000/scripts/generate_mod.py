@@ -595,6 +595,75 @@ def to_deploy_path(rgd_path: Path, extract_root: Path, module: str) -> str:
     return f"{module}/Data/{'/'.join(parts)}"
 
 
+# Campaign mission scripts are the only place a fix can be scoped to a single
+# map: squad `.rgd` data is global (one file shared by every mission and by
+# skirmish), so a data-level change can never be limited to one scenario. The
+# entries below rewrite known crash sites inside a specific mission script.
+#
+# DXP3 (Soulstorm), Imperial Guard stronghold: at game start the mission
+# force-garrisons the base guardsmen via `Util_CreateSquadsAtMarker(..., 1)`,
+# whose loadout of 0 means "min loadout". With the x5 squad scale that spawns a
+# 25-model squad straight into a building (loadout 0 -> unit_min 25), which
+# raises a SCAR error at mission start. Rewriting just these garrison calls to an
+# explicit vanilla loadout (5) restores the vanilla-size garrison; every other
+# scaled squad in the world is unaffected. Verified: with the patch the mission
+# starts clean. See docs/CAMPAIGN_GARRISON_CRASH.md.
+CAMPAIGN_SCRIPT_FIXES = [
+    {
+        "module": "DXP3",
+        "filename": "stronghold_imperial_guard.scar",
+        "pattern": re.compile(
+            rb"Util_CreateSquadsAtMarker\("
+            rb'([^,]*, *[^,]*, *"guard_squad_guardsmen", *[^,]*, *)1\)'
+        ),
+        "replacement": rb"Util_CreateSquadsAtMarkerEx(\g<1>5)",
+        "expected": 9,
+        "note": "IG stronghold force-garrisons x5 guardsmen (loadout 0 = min "
+                "loadout) into buildings -> SCAR error; force vanilla loadout 5",
+    },
+]
+
+
+def apply_campaign_script_fixes(extract_root: Path, mod_root: Path,
+                                modules: tuple[str, ...],
+                                dry_run: bool = False) -> int:
+    """Rewrite known campaign-mission crash sites into the mod tree.
+
+    Each fix is scoped to a single mission file (impossible at the `.rgd` data
+    level). Fails loudly if the required source script is missing or if the
+    expected number of replacements is not found (i.e. the game data changed), so
+    a partial/incompatible fix can never be shipped silently.
+    """
+    total = 0
+    for fix in CAMPAIGN_SCRIPT_FIXES:
+        module = fix["module"]
+        if module not in modules:
+            continue
+        data_root = extract_root / module / "data"
+        matches = sorted(data_root.rglob(fix["filename"])) if data_root.is_dir() else []
+        if len(matches) != 1:
+            raise SystemExit(
+                f"error: expected exactly one {module}/data/**/{fix['filename']} "
+                f"to patch, found {len(matches)}"
+            )
+        src = matches[0]
+        patched, n = fix["pattern"].subn(fix["replacement"], src.read_bytes())
+        if n != fix["expected"]:
+            raise SystemExit(
+                f"error: {src}: expected {fix['expected']} replacements for "
+                f"{fix['filename']}, found {n} (game data may have changed)"
+            )
+        dst = mod_root / to_deploy_path(src, extract_root, module)
+        if dry_run:
+            print(f"would write {dst}  ({n} garrison calls; {fix['note']})")
+        else:
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            dst.write_bytes(patched)
+            print(f"wrote {dst}  ({n} garrison calls; {fix['note']})")
+        total += 1
+    return total
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("extract_root", type=Path, help="extraction tree (with DXP2/data, DXP3/data)")
@@ -654,6 +723,14 @@ def main() -> int:
                          "loadout (scaling them freezes the SIM, e.g. Wraithlord HG "
                          "in Tau Stronghold). Skirmish single-model squads still "
                          "scale. Default off.")
+    ap.add_argument("--campaign-script-fix", choices=("on", "off"), default="on",
+                    help="when on (default), rewrite known campaign-mission crash "
+                         "sites into the mod tree. Currently the Soulstorm "
+                         "Imperial Guard stronghold, whose mission-start forced "
+                         "garrison spawns the x5-scaled guardsmen at min loadout "
+                         "into buildings and raises a SCAR error; the garrison is "
+                         "forced to a vanilla loadout. Turn off to reproduce the "
+                         "bug (diagnostics only).")
     ap.add_argument("--races", default="",
                     help="comma-separated list of race dirs to model-count scale "
                          "(e.g. space_marines,orks). Empty = all races. Caps still "
@@ -862,6 +939,12 @@ def main() -> int:
                 print(f"wrote {dst}")
             total += 1
     print(f"TOTAL patched squad files: {total}")
+
+    # ---- campaign mission-script fixes (single-map scoping) ----
+    if args.campaign_script_fix == "on":
+        fix_total = apply_campaign_script_fixes(args.extract_root, args.mod_root,
+                                                modules, args.dry_run)
+        print(f"TOTAL patched campaign scripts: {fix_total}")
     return 0
 
 

@@ -25,6 +25,11 @@ Definitive Edition*.
 Covered campaigns: **Main campaign**, **Winter Assault**, **Dark Crusade (DXP2)**,
 **Soulstorm (DXP3)**.
 
+> **Garrison exception:** the Soulstorm Imperial Guard stronghold's opening
+> garrison force-spawns the guardsmen at **vanilla size** instead of ×5. Squad
+> `.rgd` data is global and cannot be scoped to one map, so this is a *per-mission
+> script patch* — see [`docs/CAMPAIGN_GARRISON_CRASH.md`](docs/CAMPAIGN_GARRISON_CRASH.md).
+
 ## Two variants (choose ONE)
 
 The `dist/` folder ships two files that are identical except for the resource
@@ -32,8 +37,8 @@ cheat:
 
 | ZIP | Resource cheat | Playstyle |
 |---|---|---|
-| `over-40000-v0.1.7.zip` | **On** — start with 40001 req/power, ×10 income | Full cheat: spam anything immediately |
-| `over-40000-v0.1.7-normal-resources.zip` | **Off** — normal resources | Same 5x squads / caps / unlimited limits, but you earn resources normally |
+| `over-40000-v0.1.8.zip` | **On** — start with 40001 req/power, ×10 income | Full cheat: spam anything immediately |
+| `over-40000-v0.1.8-normal-resources.zip` | **Off** — normal resources | Same 5x squads / caps / unlimited limits, but you earn resources normally |
 
 Ork waaagh zip scoping: the waaagh pool cap (`max_pop_cap` → **40001**) ships in
 **both** variants; the **+4000 waaagh per banner** value and the **×2 waaagh
@@ -76,14 +81,21 @@ floored at 1.0 in both.
   `required_squad_cap` requirement (1/2/3/4 → 40000). These are valid `.rgd`
   files, so they load exactly like the base data. These are data-wide (apply
   to AI as well — inherent to the cap system).
+- `DXP3/Data/scenarios/sp/stronghold_imperial_guard.scar` — a **single-mission
+  fix** (the one place a change can be scoped to a single map, since `.rgd`
+  squad data is global). The Soulstorm IG stronghold force-garrisons the
+  ×5-scaled guardsmen at min loadout (25 models) straight into buildings at game
+  start, which raised a SCAR error; the 9 garrison calls are rewritten to an
+  explicit vanilla loadout (5) so the rest of the world keeps ×5 scaling. See
+  [`docs/CAMPAIGN_GARRISON_CRASH.md`](docs/CAMPAIGN_GARRISON_CRASH.md).
 
 ## Build (Linux / WSL2)
 
 ```bash
 cd dawn-of-war-de/over-40000
-make build            # -> dist/over-40000-v0.1.7.zip  (resource cheat on)
+make build            # -> dist/over-40000-v0.1.8.zip  (resource cheat on)
 make build RESOURCE_CHEAT=0
-                      # -> dist/over-40000-v0.1.7-normal-resources.zip
+                      # -> dist/over-40000-v0.1.8-normal-resources.zip
 ```
 
 - `SQUAD_SCALE=N` — multiply every squad's **initial** (`unit_min`) and **max
@@ -138,7 +150,7 @@ make build
 ## Install (Windows / Vortex)
 
 1. Install the **DoW DE game extension** for Vortex (`vortex-ext-game-warhammer40kdawnofwar-*.zip`) if you haven't — drag it onto Vortex's **Extensions** tab and enable it.
-2. Drag `dist/over-40000-v0.1.7.zip` (or the `-normal-resources` variant) onto Vortex and **Install**.
+2. Drag `dist/over-40000-v0.1.8.zip` (or the `-normal-resources` variant) onto Vortex and **Install**.
 3. Click **Deploy Mods**.
 4. Launch **Dawn of War Definitive Edition** from Vortex (or Steam — the loose files are already deployed to the game folder).
 
@@ -193,6 +205,11 @@ Test in this order — if a later step fails, the earlier ones are still valid.
 
 ## Known limitations
 
+- **The Soulstorm IG stronghold garrison spawns at vanilla size.** Squad `.rgd`
+  data is global, so the only per-map fix is the mission script; the garrison in
+  that one mission spawns 5-model guardsmen instead of the scaled 25 (see
+  [`docs/CAMPAIGN_GARRISON_CRASH.md`](docs/CAMPAIGN_GARRISON_CRASH.md)). Other
+  force-garrison missions are not patched.
 - **Engine hard-caps squads at 30 models.** Any ×5-scaled squad whose scaled
   `unit_max` exceeds 30 is clamped to 30 by the engine in-game (observed:
   everything reads 30/30 even when the shipped data says 75 / 750). **74 squads**
@@ -220,13 +237,15 @@ over-40000/
 ├── modinfo.json                # mod metadata (not shipped in the zip)
 ├── README.md
 ├── docs/
-│   ├── ENGINE_SQUAD_CAP_30.md   # 30-model engine cap — full per-race enumeration
+│   ├── CAMPAIGN_GARRISON_CRASH.md  # IG stronghold garrison fix (per-map script patch)
+│   ├── ENGINE_SQUAD_CAP_30.md      # 30-model engine cap — full per-race enumeration
 │   └── SINGLE_MODEL_HONOR_GUARD.md
 ├── NEXUS_DESCRIPTION.md        # copy-paste text for the Nexus mod page
 ├── mod/                        # generated mod tree (the deliverable)
 │   ├── W40k/Data/scar/setup.scar
-│   ├── DXP2/Data/attrib/sbps/**/*.lua
-│   └── DXP3/Data/attrib/sbps/**/*.lua
+│   ├── DXP2/Data/attrib/sbps/**/*.rgd
+│   ├── DXP3/Data/attrib/sbps/**/*.rgd
+│   └── DXP3/Data/scenarios/sp/stronghold_imperial_guard.scar
 ├── scripts/
 │   ├── rgd_decode.py           # RGD (.rgd) binary decoder (Bob Jenkins hash)
 │   ├── scan_squad_caps.py      # finds squad build-limit requirements
@@ -237,6 +256,16 @@ over-40000/
 
 ## Version history
 
+- **0.1.8** — fix the **Soulstorm Imperial Guard stronghold** crash. Scaling the
+  base `guard_squad_guardsmen`'s `unit_min` (spawn size) ×5 made the mission's
+  game-start forced garrison spawn 25-model squads at min loadout into buildings,
+  raising a SCAR error. Isolation builds proved the cost counter-scale and
+  `unit_max` are not involved — only `unit_min` is. Because `.rgd` squad data is
+  global, the fix is a **single-mission script patch**: the 9 garrison calls in
+  `stronghold_imperial_guard.scar` are rewritten to an explicit vanilla loadout
+  (5), so the rest of the world keeps full ×5 scaling. Applied automatically by
+  `make build` in **both** variants and asserted by `make verify`. See
+  [`docs/CAMPAIGN_GARRISON_CRASH.md`](docs/CAMPAIGN_GARRISON_CRASH.md).
 - **0.1.7** — **skirmish/total-battle retrofit + ork waaagh economy**, plus the
   experimental **Necron production-speed cheat** (resource-cheat variant only).
   - **Cheat now applies to every battle type.** The resource cheat previously
