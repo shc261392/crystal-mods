@@ -1,0 +1,16 @@
+[project]
+name = "black-book-tc-localization"
+version = "1.1.0"
+description = "Traditional Chinese localization for Black Book (Steam AppID 1138660)"
+requires-python = ">=3.11"
+dependencies = [
+  "opencc-python-reimplemented==0.1.7",
+  "ruamel.yaml==0.18.16",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["scripts"]

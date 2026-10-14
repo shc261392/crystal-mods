@@ -1,200 +1,112 @@
-# Black Book — Traditional Chinese Localization Mod
-# Uninstall script for Windows (PowerShell)
-#
-# Purpose:
-#   Removes deployed TC localization asset files and optionally restores from backup
-#
-# Usage:
-#   .\uninstall.ps1 [-NoRestore] [-Force]
-#
-# Requires: PowerShell 5.0+
+<#
+.SYNOPSIS
+  Black Book — Traditional Chinese Localization Mod uninstaller (Windows).
 
-#Requires -Version 5.0
+.DESCRIPTION
+  Restores the game's own Simplified Chinese config_zh.yaml files. No backup is
+  required: source\sc\ contains them byte-for-byte, which is also the input the
+  build converts from.
 
+.EXAMPLE
+  .\uninstall.ps1
+.EXAMPLE
+  .\uninstall.ps1 -GamePath 'D:\SteamLibrary\steamapps\common\Black Book'
+#>
+[CmdletBinding()]
 param(
-  [switch]$NoRestore,
-  [switch]$Force
+  [string]$GamePath = $env:GAME_PATH,
+  [switch]$DryRun
 )
 
-Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+Set-StrictMode -Version Latest
 
-# ============================================================================
-# Configuration
-# ============================================================================
+$ScriptDir  = Split-Path -Parent $MyInvocation.MyCommand.Path
+$SourceDir  = Join-Path $ScriptDir 'source\sc\StreamingAssets\Config'
 
-$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$ModDir = $ScriptDir
-$SteamAppId = '1138660'
-$GameDir = $null
-$BackupDir = Join-Path $ModDir 'backup'
-$RestoreBackup = -not $NoRestore
+$SteamRoots = @(
+  "$env:ProgramFiles(x86)\Steam",
+  "$env:ProgramFiles\Steam",
+  'C:\Program Files (x86)\Steam',
+  'D:\SteamLibrary',
+  'E:\SteamLibrary',
+  'G:\SteamLibrary'
+) | Where-Object { $_ -and (Test-Path $_) }
 
-# ============================================================================
-# Utility Functions
-# ============================================================================
-
-function Write-Log {
-  param([string]$Message)
-  $timestamp = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
-  Write-Host "[$timestamp] $Message"
+function Write-Log([string]$Message) {
+  Write-Host "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] $Message"
 }
 
-function Write-Error-Custom {
-  param([string]$Message)
-  Write-Host "[ERROR] $Message" -ForegroundColor Red
-  exit 1
-}
+function Get-BlackBookPath {
+  param([string]$Explicit)
 
-function Write-Warn {
-  param([string]$Message)
-  Write-Host "[WARN] $Message" -ForegroundColor Yellow
-}
-
-# ============================================================================
-# Steam Detection
-# ============================================================================
-
-function Find-SteamInstallPath {
-  Write-Log 'Locating Steam installation...'
-  
-  $steamPaths = @(
-    'HKCU:\Software\Valve\Steam',
-    'HKLM:\Software\Valve\Steam',
-    'HKLM:\Software\Wow6432Node\Valve\Steam'
-  )
-  
-  foreach ($regPath in $steamPaths) {
-    try {
-      if (Test-Path $regPath) {
-        $installPath = (Get-ItemProperty $regPath -ErrorAction SilentlyContinue).InstallPath
-        if ($installPath -and (Test-Path $installPath)) {
-          return $installPath
-        }
-      }
+  if ($Explicit) {
+    if (-not (Test-Path (Join-Path $Explicit 'Black Book_Data'))) {
+      throw "Not a Black Book folder: $Explicit"
     }
-    catch {}
+    return $Explicit
   }
-  
-  Write-Error-Custom 'Steam installation not found'
-}
 
-function Find-GameInSteam {
-  param([string]$SteamRoot)
-  
-  $possiblePaths = @(
-    (Join-Path $SteamRoot 'steamapps' 'common' 'Black Book'),
-    (Join-Path $SteamRoot 'steamapps' 'common' 'black-book')
-  )
-  
-  foreach ($path in $possiblePaths) {
-    if (Test-Path (Join-Path $path 'Black Book.exe')) {
-      return $path
+  foreach ($root in $SteamRoots) {
+    foreach ($candidate in @(
+        (Join-Path $root 'steamapps\common\Black Book'),
+        (Join-Path $root 'steamapps\common\black-book'))) {
+      if (Test-Path (Join-Path $candidate 'Black Book.exe')) { return $candidate }
     }
   }
-  
-  return $null
+  throw 'Black Book not found. Pass -GamePath or set the GAME_PATH environment variable.'
 }
 
-function Locate-Game {
-  Write-Log 'Locating Black Book...'
-  
-  $steamInstall = Find-SteamInstallPath
-  
-  $gamePath = Find-GameInSteam $steamInstall
-  if ($gamePath) {
-    Write-Log "Found game at: $gamePath"
-    return $gamePath
-  }
-  
-  Write-Error-Custom 'Black Book not found in Steam library'
+function Invoke-Copy {
+  param([string]$Source, [string]$Destination)
+  if ($DryRun) { Write-Host "      DRY-RUN: $Source -> $Destination" }
+  else { Copy-Item -LiteralPath $Source -Destination $Destination -Force }
 }
 
-# ============================================================================
-# Uninstall
-# ============================================================================
+Write-Log 'Black Book — Traditional Chinese Localization uninstaller'
+if ($DryRun) { Write-Log '(dry run: nothing will be written)' }
 
-function Remove-DeployedFiles {
-  param([string]$GamePath)
-  
-  Write-Log 'Removing deployed localization files...'
-  
-  $resourcesPath = Join-Path $GamePath 'Black Book_Data' 'resources'
-  if (Test-Path $resourcesPath) {
-    # Only remove TC asset files
-    Get-ChildItem $resourcesPath -Filter '*zh-TW*' -File | Remove-Item -Force
-    Get-ChildItem $resourcesPath -Filter '*TC*' -File | Remove-Item -Force
-    Write-Log '  ✓ Removed TC localization assets'
-  }
-  
-  # Remove fonts if deployed
-  $fontsPath = Join-Path $GamePath 'Fonts'
-  if (Test-Path $fontsPath) {
-    $fontFile = Join-Path $fontsPath 'NotoSansTC.asset'
-    if (Test-Path $fontFile) {
-      Remove-Item $fontFile -Force | Out-Null
-      Write-Log '  ✓ Removed NotoSansTC font asset'
-    }
-  }
-  
-  Write-Log '✓ Deployed files removed'
+if (-not (Test-Path $SourceDir)) {
+  throw "Restoration source not found: $SourceDir. Run 'git checkout source/sc' to restore it, or verify the game files through Steam (Properties -> Installed Files -> Verify integrity of game files)."
 }
 
-function Restore-FromBackup {
-  param([string]$GamePath)
-  
-  if (-not $RestoreBackup) {
-    Write-Log 'Skipping backup restoration (-NoRestore)'
-    return
-  }
-  
-  if (-not (Test-Path $BackupDir) -or @(Get-ChildItem $BackupDir -ErrorAction SilentlyContinue).Count -eq 0) {
-    Write-Log 'No backup found; skipping restoration'
-    return
-  }
-  
-  $latestBackup = Get-ChildItem $BackupDir -Filter 'game_backup_*' -Directory | 
-                  Sort-Object -Property Name -Descending | 
-                  Select-Object -First 1
-  
-  if (-not $latestBackup) {
-    Write-Log 'No valid backup found; skipping restoration'
-    return
-  }
-  
-  Write-Log "Restoring from backup: $($latestBackup.FullName)"
-  
-  $resourcesBak = Join-Path $latestBackup 'resources_original'
-  if (Test-Path $resourcesBak) {
-    $resourcesDest = Join-Path $GamePath 'Black Book_Data' 'resources'
-    if (Test-Path $resourcesDest) {
-      Remove-Item $resourcesDest -Recurse -Force | Out-Null
-    }
-    Copy-Item $resourcesBak $resourcesDest -Recurse -Force | Out-Null
-    Write-Log '  ✓ Resources restored'
-  }
-  
-  Write-Log '✓ Restoration complete'
+$game = Get-BlackBookPath -Explicit $GamePath
+Write-Log "Game directory: $game"
+
+$configDir = Join-Path $game 'Black Book_Data\StreamingAssets\Config'
+if (-not (Test-Path $configDir)) {
+  throw "Game config directory not found: $configDir"
 }
 
-# ============================================================================
-# Main
-# ============================================================================
+$files = Get-ChildItem -LiteralPath $SourceDir -Recurse -Filter 'config_zh.yaml'
+if ($files.Count -eq 0) { throw "Restoration source is empty: $SourceDir" }
+Write-Log "Restoring $($files.Count) Simplified Chinese config file(s)..."
 
-Write-Log 'Black Book — Traditional Chinese Localization Uninstaller'
-Write-Host ''
+foreach ($file in $files) {
+  $relative = $file.FullName.Substring($SourceDir.Length).TrimStart('\', '/')
+  $destination = Join-Path $configDir $relative
+  $parent = Split-Path -Parent $destination
+  if (-not (Test-Path $parent)) { New-Item -ItemType Directory -Path $parent -Force | Out-Null }
+  Invoke-Copy -Source $file.FullName -Destination $destination
+}
+Write-Log '  [ok] StreamingAssets\Config restored to the original Simplified Chinese'
 
-# Locate game
-$GameDir = Locate-Game
+# Remove the empty scratch folder an older version of this mod created.
+$stray = Join-Path $game 'Black Book_Data\resources'
+if (Test-Path -LiteralPath $stray) {
+  if (-not (Get-ChildItem -LiteralPath $stray -Force)) {
+    if ($DryRun) { Write-Host "      DRY-RUN: remove $stray" }
+    else { Remove-Item -LiteralPath $stray -Force; Write-Log '  [ok] removed stray empty resources\ folder' }
+  }
+}
 
-# Uninstall
-Remove-DeployedFiles $GameDir
-Restore-FromBackup $GameDir
-
 Write-Host ''
-Write-Host '==========================================' -ForegroundColor Green
-Write-Host 'Uninstall complete!' -ForegroundColor Green
-Write-Host '==========================================' -ForegroundColor Green
+Write-Host '=========================================='
+Write-Host 'Uninstall complete'
+Write-Host '=========================================='
 Write-Host ''
-Write-Host 'Black Book has been restored to its original state.'
+Write-Host "The game's own Simplified Chinese localisation is back in place."
 Write-Host ''
+Write-Host 'If anything still looks wrong, verify the install through Steam:'
+Write-Host '  right-click Black Book -> Properties -> Installed Files ->'
+Write-Host '  Verify integrity of game files'

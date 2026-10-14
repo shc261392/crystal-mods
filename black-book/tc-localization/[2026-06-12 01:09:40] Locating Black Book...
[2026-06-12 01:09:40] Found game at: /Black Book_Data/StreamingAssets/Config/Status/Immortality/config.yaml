@@ -1,7 +1,0 @@
-﻿Unique: true
-Name: Бессмертие
-Description: Стойкость к любому <sprite name="Damage">
-Sprite: StatZamorochit
-Harmful: true
-DecreaseOnStartTurn: true
-

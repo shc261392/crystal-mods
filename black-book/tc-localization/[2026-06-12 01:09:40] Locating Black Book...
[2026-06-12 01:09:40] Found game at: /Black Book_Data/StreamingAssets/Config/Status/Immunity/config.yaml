@@ -1,5 +1,0 @@
-﻿Unique: true
-Name: Стойкость ({StringData})
-Description: Не может быть под влиянием статуса {StringData}
-Sprite: StatusImmunity
-HideCounterOnPermanent: true

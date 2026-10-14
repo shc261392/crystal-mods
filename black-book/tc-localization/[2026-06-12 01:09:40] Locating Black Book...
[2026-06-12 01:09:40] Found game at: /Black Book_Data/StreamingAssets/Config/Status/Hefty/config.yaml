@@ -1,4 +1,0 @@
-﻿Unique: true
-Name: Дюжий
-Description: Ограничивает максимальный <sprite name="Damage"> по существу до {Duration}
-Sprite: StatHefty

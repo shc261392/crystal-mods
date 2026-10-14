@@ -2,499 +2,245 @@
 
 **繁體中文本地化模組**
 
-> **English** · [中文](#繁體中文安裝說明)
+> **English** · [中文](#繁體中文)
 
-Unofficial Traditional Chinese (繁體中文 / 正體中文) localization mod for **Black Book** (Steam App ID 1138660).
+Unofficial Traditional Chinese (繁體中文 / 正體中文) localisation for
+**Black Book** (Steam App ID 1138660).
 
-Converts game UI text from English to Taiwan Traditional Chinese (zh-TW) by directly replacing localization asset files, with professional terminology and Noto Sans TC font support.
+The game already ships a complete Simplified Chinese localisation. This mod
+converts it to Traditional Chinese using
+[OpenCC](https://github.com/BYVoid/OpenCC) `s2twp` (Simplified → Traditional,
+Taiwan, with phrase substitution) plus a small set of reviewed terminology
+corrections.
 
-## Features
+---
 
-- ✓ Full UI text translation via Unity asset replacement (no plugins needed)
-- ✓ Taiwan terminology (Taiwan-specific word choices and phrases)
-- ✓ Noto Sans TC font — excellent CJK character coverage
-- ✓ Multiple installation methods (Vortex, manual, script-based)
-- ✓ Works on Windows, WSL2, and Linux/Proton
-- ✓ Automatic backup & restoration
+## Coverage — read this first
 
-## How It Works
+Black Book stores its Chinese text in **two different places**, and this mod
+only converts one of them:
 
-This mod replaces the game's localization asset files in `Black Book_Data/resources/` with TC versions. No third-party plugins or translators are required—just direct asset replacement.
+| Where the text lives | What it is | Covered? |
+|---|---|---|
+| `Black Book_Data/StreamingAssets/Config/**/config_zh.yaml` | Item names and descriptions, ability names, quest and chapter text, demon list, credits screen — **3,479 strings in 1,448 files** | ✅ **Yes** |
+| `Black Book_Data/data.unity3d` | Menus, settings labels, tooltips, dialogue and story text baked into Unity assets — **~5,100 distinct strings** | ❌ **No** |
+
+Measured against the runtime string dump captured by XUnity AutoTranslator
+before it was removed: of **5,881** distinct strings the game actually displays,
+**766** come from the YAML configs and **5,115** (≈87%) come from Unity assets.
+
+**Consequence:** with this mod installed and no other translation layer, roughly
+87% of the game's text — menus, settings, tooltips, dialogue — is still
+Simplified Chinese. Item names, ability names, chapter titles and the credits
+screen are Traditional. **The two languages appear side by side.**
+
+Closing that gap means patching `data.unity3d` in place, which is a separate
+(and much riskier) piece of work. See [Roadmap](#roadmap).
+
+The game does **not** need a CJK font installed: it already ships
+`arialuni_sdf_u2018`, which covers Traditional characters.
+
+---
 
 ## Installation
 
-### Option A — Vortex Mod Manager (Recommended)
+### Option A — Script (recommended)
 
-1. **Install the Vortex extension**:
-   - Download `vortex-ext-game-black-book-v*.zip` from [Nexus Mods](#nexus-link)
-   - Drag it onto Vortex's **Extensions** tab and click *Enable*
-   - (Only needed once)
+**Linux / WSL2 / Git Bash**
 
-2. **Install the TC mod**:
-   - Download `tc-localization-v*.zip` from [Releases](#releases)
-   - Drag it onto Vortex's **Mods** tab
-
-3. **Deploy**:
-   - Click *Deploy Mods* in Vortex
-   - Launch Black Book
-
-4. **Uninstall** (optional):
-   - Click *Purge Mods* in Vortex
-
-### Option B — Manual Install (Windows)
-
-1. Download `tc-localization-v*.zip` from [Releases](#releases)
-2. Locate your Black Book game folder:
-   - In Steam, right-click **Black Book** → **Manage** → **Browse local files**
-   - Common paths: `C:\Program Files (x86)\Steam\steamapps\common\Black Book\`
-3. Extract the zip to the game folder
-4. Launch the game — text should appear in Traditional Chinese
-
-**To uninstall**:
-- Delete the TC asset files from `Black Book_Data/resources/`
-- Delete `Fonts/NotoSansTC.asset` (if present)
-
-### Option C — Script Install (Linux / WSL2 / Windows PowerShell)
-
-**Linux / WSL2**:
 ```bash
-cd /path/to/tc-localization
-bash deploy.sh
+cd tc-localization
+bash deploy.sh              # add --dry-run to preview
 ```
 
-**Windows (PowerShell, Run as Administrator)**:
+**Windows PowerShell**
+
 ```powershell
 cd C:\path\to\tc-localization
-.\deploy.ps1
+.\deploy.ps1                # add -DryRun to preview
 ```
 
-Both scripts:
-- Auto-detect your Steam installation
-- Create a timestamped backup
-- Deploy localization asset files
-- Print status and next steps
+Both scripts auto-detect the Steam install, write only the
+`config_zh.yaml` files, and leave every other game file alone. Pass
+`--game-path` / `-GamePath` if the game is somewhere unusual.
 
-**To uninstall**:
+### Option B — Manual
+
+1. Download `tc-localization-v*.zip` from Releases.
+2. Find your game folder (Steam → right-click **Black Book** → **Manage** →
+   **Browse local files**).
+3. Extract the zip over the game folder, merging into
+   `Black Book_Data/StreamingAssets/Config/`.
+
+### Uninstall
+
 ```bash
-bash uninstall.sh                  # Linux/WSL2
-.\uninstall.ps1                    # Windows (PowerShell)
+bash uninstall.sh           # Linux / WSL2 / Git Bash
+.\uninstall.ps1             # Windows PowerShell
 ```
 
-## System Requirements
+The game's own Simplified Chinese files are restored from `source/sc/`, which
+holds them byte-for-byte. **No backup is created or needed** — the same files
+are the build input.
 
-- **Black Book** (Steam App 1138660)
-- Windows 7+ or Linux (via Proton)
-- ~5 MB free space
-- Vortex 1.2+ (if using Vortex installation)
+If anything still looks wrong, verify the install through Steam:
+*right-click Black Book → Properties → Installed Files → Verify integrity of
+game files*.
 
-## Compatibility
+---
 
-- ✓ Windows 11 / Windows 10
-- ✓ WSL2 + Steam
-- ✓ Linux + Proton
-- ✓ Save game compatible (no save data modifications)
+## Building from source
+
+```bash
+make build
+```
+
+That is the **only** command that produces a release zip. It:
+
+1. **generates** — converts `source/sc/**` (the game's own Simplified Chinese)
+   into `payload/**` via OpenCC `s2twp`, then applies
+   `reference/overrides.tsv`;
+2. **validates** — runs five quality gates;
+3. **packages** — writes `dist/tc-localization-v<version>.zip`.
+
+The build never reads the installed game, so it works on any machine and
+always produces a byte-identical archive. Verify with:
+
+```bash
+make check-package
+```
+
+### Quality gates
+
+| Gate | Catches |
+|---|---|
+| `gate_coverage.py` | A source file with no payload counterpart, or a string key that disappeared. *(This is what caught `Service/Credits`, `Demons` and `Izba` being silently dropped.)* |
+| `gate_structure.py` | Key reordering, lost numbers/booleans, or encoding drift — the UTF-8 BOM and CRLF line endings the game itself ships must survive. |
+| `gate_simplified.py` | Any string that is not exactly `s2twp(source)`. Note `s2twp` is **not** idempotent: running it twice turns `托马希哈` into the wrong `託馬希哈`. |
+| `gate_overrides.py` | A manual correction in `overrides.tsv` that no longer matches anything. |
+| `gate_terminology.py` | Mainland-only wording that survives conversion (see `reference/terminology_banned.tsv`). |
+
+### Manual corrections
+
+`reference/overrides.tsv` holds reviewed corrections applied after conversion,
+one TAB-separated `file / key / text` row per line. It is plain text, so
+corrections are reviewable in a pull request rather than hidden in a script.
+
+---
+
+## Project layout
+
+```
+tc-localization/
+├── Makefile                  # the one canonical build
+├── pyproject.toml            # pinned build dependencies
+├── source/sc/                # the game's own Simplified Chinese config
+│                             #   (build input AND uninstall restoration source)
+├── payload/                  # generated, not committed
+├── reference/
+│   ├── overrides.tsv         # reviewed manual corrections
+│   ├── terminology_banned.tsv# Mainland-only terms to reject
+│   ├── TERMINOLOGY.md        # human glossary
+│   └── TC_STANDARDS.md       # writing conventions
+└── scripts/                  # builder, gates, packager
+```
+
+---
 
 ## Troubleshooting
 
-### Text appears as blank boxes (tofu)
+**Text is still Simplified in menus and dialogue.**
+Expected — see [Coverage](#coverage-read-this-first). Item names, ability
+names, chapter titles and the credits screen should be Traditional.
 
-This usually means the TC font asset didn't load:
-1. Verify `Fonts/NotoSansTC.asset` is deployed to the game folder
-2. Try reinstalling with Vortex: *Purge Mods* → *Deploy Mods*
-3. Check game logs for font loading errors
+**Text shows as empty boxes (tofu).**
+The game ships its own CJK font (`arialuni_sdf_u2018`); this mod does not
+replace it. If text is missing there too, the Simplified Chinese original was
+likely damaged — run `bash uninstall.sh` to restore it, or verify through Steam.
 
-### Text doesn't appear in TC
+**`make build` fails with a missing dependency.**
 
-1. Verify asset files are in `Black Book_Data/resources/`
-2. Try restarting the game
-3. Check file integrity: `ls -la Black Book_Data/resources/`
+```bash
+uv venv && uv pip install -e .
+```
 
-### Deploy script can't find the game
+---
 
-1. Install Black Book to Steam (not Epic/GOG)
-2. Run the script from the mod directory
-3. Manually specify the game path (Linux):
-   ```bash
-   GAME_PATH=/mnt/c/Program\ Files\ \(x86\)/Steam/steamapps/common/Black\ Book bash deploy.sh
-   ```
+## Roadmap
+
+- [ ] Convert the Unity asset text in `data.unity3d` so the mod covers ~100%
+      of the game instead of ~13%. Requires an asset-rewrite step and careful
+      regression testing.
+- [ ] Resolve `雠特` / `讎特` ("chort", a Slavic household spirit) — currently
+      transliterated to `讎特`, whose literal meaning is "feud". `楚特` is
+      probably the right transliteration. Affects 113 strings.
+- [ ] Review the 189 game directories that ship no Simplified Chinese at all.
+
+---
 
 ## Credits
 
-- **Translation**: Community
-- **Font**: [Noto Sans TC](https://fonts.google.com/noto/specimen/Noto+Sans+TC) by Google / Adobe
-- **Conversion tool**: [OpenCC](https://github.com/BYVoid/OpenCC)
+- **Game**: Black Book © HypeTrain Digital / Morteshka
+- **Simplified Chinese localisation**: the original developers and community
+- **Conversion**: [OpenCC](https://github.com/BYVoid/OpenCC) `s2twp`
+- **Mod**: Community
 
-## License
-
-This mod is provided as-is for personal use. Black Book is © HypeTrain Digital / Morteshka.
+This is an unofficial fan project. Not affiliated with or endorsed by
+HypeTrain Digital or Morteshka.
 
 ---
 
-## 繁體中文安裝說明
+## 繁體中文
 
-**Black Book — Traditional Chinese Localization Mod**（繁體中文本地化模組）
+非官方 **Black Book**（Steam App ID 1138660）繁體中文本地化模組。
 
-> **中文** · [English](#features) 上方
+遊戲本身已內建完整的簡體中文，本模組使用 OpenCC `s2twp` 加上人工校訂的
+術語修正，將其轉換為繁體中文。
 
-非官方 Black Book（Steam App ID 1138660）繁體中文本地化模組。
+### 覆蓋範圍（請先閱讀）
 
-透過直接取代遊戲本地化資源檔案，將遊戲 UI 文字從英文轉換成台灣繁體中文（zh-TW），配備專業術語及 Noto Sans TC 字型。
+| 文字所在位置 | 內容 | 有沒有轉換 |
+|---|---|---|
+| `StreamingAssets/Config/**/config_zh.yaml` | 物品名稱與說明、能力名稱、任務與章節標題、惡魔列表、製作人員名單 — **1,448 個檔案、3,479 條字串** | ✅ 有 |
+| `Black Book_Data/data.unity3d` | 選單、設定、提示、對話與劇情文字 — **約 5,100 條字串** | ❌ 沒有 |
 
-### 運作方式
+實測資料：在移除自動翻譯工具前擷取到的 5,881 條實際顯示字串中，只有 766 條
+來自 YAML 設定檔，其餘 5,115 條（約 87%）來自 Unity 資源檔。
 
-本模組取代 `Black Book_Data/resources/` 資料夾中的遊戲本地化資源檔案為繁體中文版本。不需要任何第三方外掛或翻譯工具—— 只是單純的資源檔案取代。
+**因此，安裝本模組後，物品名稱、能力名稱、章節標題與製作人員名單會是繁體，
+但選單、設定、提示與對話仍會是簡體，兩種文字會並存。**
 
-### 安裝方式
+補足這個缺口需要直接改寫 `data.unity3d`，屬於另一項風險較高的工作，詳見
+「Roadmap」。
 
-#### 方式 A — Vortex Mod Manager（推薦）
+遊戲已內建支援中日韓的字型（`arialuni_sdf_u2018`），無須另外安裝字型。
 
-1. **安裝 Vortex 擴充套件**：
-   - 從 [Nexus Mods](#nexus-link) 下載 `vortex-ext-game-black-book-v*.zip`
-   - 將檔案拖放到 Vortex 的 **Extensions** 標籤並點擊 *Enable*
-   - （只需要做一次）
+### 安裝／移除
 
-2. **安裝 TC 模組**：
-   - 從 [Releases](#releases) 下載 `tc-localization-v*.zip`
-   - 將檔案拖放到 Vortex 的 **Mods** 標籤
-
-3. **部署**：
-   - 在 Vortex 中點擊 *Deploy Mods*
-   - 啟動 Black Book
-
-4. **移除**（可選）：
-   - 在 Vortex 中點擊 *Purge Mods*
-
-#### 方式 B — 手動安裝（Windows）
-
-1. 從 [Releases](#releases) 下載 `tc-localization-v*.zip`
-2. 找到 Black Book 遊戲資料夾：
-   - 在 Steam 庫中對 **Black Book** 點右鍵 → **管理** → **瀏覽本機檔案**
-   - 常見路徑：`C:\Program Files (x86)\Steam\steamapps\common\Black Book\`
-3. 將 zip 檔案解壓到遊戲資料夾
-4. 啟動遊戲 — 文字應該會以繁體中文顯示
-
-**移除方式**：
-- 刪除 `Black Book_Data/resources/` 資料夾中的繁體中文資源檔案
-- 刪除 `Fonts/NotoSansTC.asset`（如果存在）
-
-#### 方式 C — 指令碼安裝（Linux / WSL2 / Windows PowerShell）
-
-**Linux / WSL2**：
 ```bash
-cd /path/to/tc-localization
-bash deploy.sh
+bash deploy.sh        # 安裝（加上 --dry-run 可先預覽）
+bash uninstall.sh     # 還原遊戲原本的簡體中文
 ```
 
-**Windows（PowerShell，以系統管理員身分執行）**：
-```powershell
-cd C:\path\to\tc-localization
-.\deploy.ps1
-```
+Windows PowerShell 請改用 `.\deploy.ps1` 與 `.\uninstall.ps1`。
 
-指令碼會自動：
-- 偵測 Steam 安裝位置
-- 建立備份
-- 部署本地化資源檔案
-- 顯示狀態和後續步驟
+不需要備份：模組中的 `source/sc/` 存放了遊戲原本的簡體中文設定檔，
+移除時會直接複製回去。
 
-**移除方式**：
+### 自行建置
+
 ```bash
-bash uninstall.sh                  # Linux/WSL2
-.\uninstall.ps1                    # Windows (PowerShell)
+make build
 ```
 
-### 常見問題
-
-#### 文字顯示為方塊（豆腐字）
-
-通常表示字型資源載入失敗：
-1. 確認 `Fonts/NotoSansTC.asset` 已部署到遊戲資料夾
-2. 試著用 Vortex 重新安裝：*Purge Mods* → *Deploy Mods*
-3. 檢查遊戲日誌確認字型是否正常載入
-
-#### 文字沒有顯示為繁體中文
-
-1. 確認資源檔案在 `Black Book_Data/resources/` 資料夾中
-2. 試著重啟遊戲
-3. 檢查檔案：`ls -la Black Book_Data/resources/`
-
-#### 安裝指令碼找不到遊戲
-
-1. 在 Steam 上安裝 Black Book（不是 Epic/GOG）
-2. 從模組資料夾執行指令碼
-3. 手動指定遊戲路徑（Linux）：
-   ```bash
-   GAME_PATH=/mnt/c/Program\ Files\ \(x86\)/Steam/steamapps/common/Black\ Book bash deploy.sh
-   ```
-
-### 下載連結
-
-- **Mod 發佈**: [GitHub Releases](#releases) / [Nexus Mods](#nexus-link)
-- **Vortex 擴充套件**: [Nexus Mods](#nexus-link)
-- **原始碼**: [GitHub](#github)
-
-### 系統需求
-
-- **Black Book**（Steam App 1138660）
-- Windows 7+ 或 Linux（透過 Proton）
-- 約 5 MB 可用空間
-- Vortex 1.2+（如使用 Vortex 安裝方式）
+這是唯一會產生發行版壓縮檔的指令，流程為「產生 → 檢查 → 封裝」，
+且完全不讀取遊戲安裝目錄，因此可在任何機器上重現相同的封裝檔。
 
 ### 致謝
 
-- **翻譯**: 社群
-- **字型**: [Noto Sans TC](https://fonts.google.com/noto/specimen/Noto+Sans+TC)（Google / Adobe）
-- **轉換工具**: [OpenCC](https://github.com/BYVoid/OpenCC)
-
----
-
-## Download Links
-
-- **Mod**: [GitHub Releases](https://github.com/shc261392/crystal-mods/releases) · [Nexus Mods](#nexus)
-- **Vortex Extension**: [Nexus Mods](#nexus)
-- **Source**: [GitHub](https://github.com/shc261392/crystal-mods/tree/main/black-book/tc-localization)
-
----
-
-*Last updated: 2026-06-10*
-
-## Features
-
-- ✓ Full UI text translation (menus, dialogs, item descriptions)
-- ✓ Taiwan terminology (Taiwan-specific word choices and phrases)
-- ✓ Noto Sans TC font — excellent CJK character coverage
-- ✓ Multiple installation methods (Vortex, manual, script-based)
-- ✓ Works on Windows, WSL2, and Linux/Proton
-- ✓ Automatic backup & restoration
-
-## Installation
-
-### Option A — Vortex Mod Manager (Recommended)
-
-1. **Install the Vortex extension**:
-   - Download `vortex-ext-game-black-book-v*.zip` from [Nexus Mods](#nexus-link)
-   - Drag it onto Vortex's **Extensions** tab and click *Enable*
-   - (Only needed once)
-
-2. **Install the TC mod**:
-   - Download `tc-localization-v*.zip` from [Releases](#releases)
-   - Drag it onto Vortex's **Mods** tab
-
-3. **Deploy**:
-   - Click *Deploy Mods* in Vortex
-   - Launch Black Book
-
-4. **Uninstall** (optional):
-   - Click *Purge Mods* in Vortex
-
-### Option B — Manual Install (Windows)
-
-1. Download `tc-localization-v*.zip` from [Releases](#releases)
-2. Locate your Black Book game folder:
-   - In Steam, right-click **Black Book** → **Manage** → **Browse local files**
-   - Common paths: `C:\Program Files (x86)\Steam\steamapps\common\Black Book\`
-3. Extract the zip to the game folder
-4. Launch the game — text should appear in Traditional Chinese
-
-**To uninstall**:
-- Delete the `AutoTranslator/Translation/zh-TW` folder and `Fonts/NotoSansTC.asset`
-
-### Option C — Script Install (Linux / WSL2 / Windows PowerShell)
-
-**Linux / WSL2**:
-```bash
-cd /path/to/tc-localization
-bash deploy.sh
-```
-
-**Windows (PowerShell, Run as Administrator)**:
-```powershell
-cd C:\path\to\tc-localization
-.\deploy.ps1
-```
-
-Both scripts:
-- Auto-detect your Steam installation
-- Create a timestamped backup
-- Deploy localization files
-- Print status and next steps
-
-**To uninstall**:
-```bash
-bash uninstall.sh                  # Linux/WSL2
-.\uninstall.ps1                    # Windows (PowerShell)
-```
-
-## System Requirements
-
-- **Black Book** (Steam App 1138660)
-- Windows 7+ or Linux (via Proton)
-- ~5 MB free space
-- Vortex 1.2+ (if using Vortex installation)
-
-## Compatibility
-
-- ✓ Windows 11 / Windows 10
-- ✓ WSL2 + Steam
-- ✓ Linux + Proton
-- ✓ Save game compatible (no save data modifications)
-
-## Troubleshooting
-
-### Text appears as blank boxes (tofu)
-
-This usually means font rendering failed:
-1. Verify `Fonts/NotoSansTC.asset` is deployed to the game folder
-2. Try reinstalling with Vortex: *Purge Mods* → *Deploy Mods*
-3. Check TextMeshPro is loading correctly in game logs
-
-### Text doesn't appear in TC
-
-1. Verify `AutoTranslator/Translation/zh-TW/` contains `Text/_Translations.txt`
-2. Try restarting the game
-3. Check file is not empty: `wc -l AutoTranslator/Translation/zh-TW/Text/_Translations.txt`
-
-### Deploy script can't find the game
-
-1. Install Black Book to Steam (not Epic/GOG)
-2. Run the script from the mod directory
-3. Manually specify the game path:
-   ```bash
-   GAME_PATH=/mnt/c/Program\ Files\ \(x86\)/Steam/steamapps/common/Black\ Book bash deploy.sh
-   ```
-
-## Credits
-
-- **Translation**: Community
-- **Font**: [Noto Sans TC](https://fonts.google.com/noto/specimen/Noto+Sans+TC) by Google / Adobe
-- **Conversion tool**: [OpenCC](https://github.com/BYVoid/OpenCC)
-
-## License
-
-This mod is provided as-is for personal use. Black Book is © HypeTrain Digital / Morteshka.
-
----
-
-## 繁體中文安裝說明
-
-**Black Book — Traditional Chinese Localization Mod**（繁體中文本地化模組）
-
-> **中文** · [English](#features) 上方
-
-非官方 Black Book（Steam App ID 1138660）繁體中文本地化模組。
-
-將遊戲 UI 文字從英文轉換成台灣繁體中文（zh-TW），配備專業術語及 Noto Sans TC 字型。
-
-### 安裝方式
-
-#### 方式 A — Vortex Mod Manager（推薦）
-
-1. **安裝 Vortex 擴充套件**：
-   - 從 [Nexus Mods](#nexus-link) 下載 `vortex-ext-game-black-book-v*.zip`
-   - 將檔案拖放到 Vortex 的 **Extensions** 標籤並點擊 *Enable*
-   - （只需要做一次）
-
-2. **安裝 TC 模組**：
-   - 從 [Releases](#releases) 下載 `tc-localization-v*.zip`
-   - 將檔案拖放到 Vortex 的 **Mods** 標籤
-
-3. **部署**：
-   - 在 Vortex 中點擊 *Deploy Mods*
-   - 啟動 Black Book
-
-4. **移除**（可選）：
-   - 在 Vortex 中點擊 *Purge Mods*
-
-#### 方式 B — 手動安裝（Windows）
-
-1. 從 [Releases](#releases) 下載 `tc-localization-v*.zip`
-2. 找到 Black Book 遊戲資料夾：
-   - 在 Steam 庫中對 **Black Book** 點右鍵 → **管理** → **瀏覽本機檔案**
-   - 常見路徑：`C:\Program Files (x86)\Steam\steamapps\common\Black Book\`
-3. 將 zip 檔案解壓到遊戲資料夾
-4. 啟動遊戲 — 文字應該會以繁體中文顯示
-
-**移除方式**：
-- 刪除 `AutoTranslator/Translation/zh-TW` 資料夾和 `Fonts/NotoSansTC.asset`
-
-#### 方式 C — 指令碼安裝（Linux / WSL2 / Windows PowerShell）
-
-**Linux / WSL2**：
-```bash
-cd /path/to/tc-localization
-bash deploy.sh
-```
-
-**Windows（PowerShell，以系統管理員身分執行）**：
-```powershell
-cd C:\path\to\tc-localization
-.\deploy.ps1
-```
-
-指令碼會自動：
-- 偵測 Steam 安裝位置
-- 建立備份
-- 部署本地化檔案
-- 顯示狀態和後續步驟
-
-**移除方式**：
-```bash
-bash uninstall.sh                  # Linux/WSL2
-.\uninstall.ps1                    # Windows (PowerShell)
-```
-
-### 常見問題
-
-#### 文字顯示為方塊（豆腐字）
-
-通常表示字型載入失敗：
-1. 確認 `Fonts/NotoSansTC.asset` 已部署到遊戲資料夾
-2. 試著用 Vortex 重新安裝：*Purge Mods* → *Deploy Mods*
-3. 檢查遊戲日誌確認 TextMeshPro 是否正常載入
-
-#### 文字沒有顯示為繁體中文
-
-1. 確認 `AutoTranslator/Translation/zh-TW/` 包含 `Text/_Translations.txt`
-2. 試著重啟遊戲
-3. 檢查檔案不是空的：`wc -l AutoTranslator/Translation/zh-TW/Text/_Translations.txt`
-
-#### 安裝指令碼找不到遊戲
-
-1. 在 Steam 上安裝 Black Book（不是 Epic/GOG）
-2. 從模組資料夾執行指令碼
-3. 手動指定遊戲路徑（Windows）：
-   ```powershell
-   $env:GAME_PATH = "D:\SteamLibrary\steamapps\common\Black Book"
-   .\deploy.ps1
-   ```
-
-### 下載連結
-
-- **Mod 發佈**: [GitHub Releases](#releases) / [Nexus Mods](#nexus-link)
-- **Vortex 擴充套件**: [Nexus Mods](#nexus-link)
-- **原始碼**: [GitHub](#github)
-
-### 系統需求
-
-- **Black Book**（Steam App 1138660）
-- Windows 7+ 或 Linux（透過 Proton）
-- 約 5 MB 可用空間
-- Vortex 1.2+（如使用 Vortex 安裝方式）
-
-### 致謝
-
-- **翻譯**: 社群
-- **字型**: [Noto Sans TC](https://fonts.google.com/noto/specimen/Noto+Sans+TC)（Google / Adobe）
-- **轉換工具**: [OpenCC](https://github.com/BYVoid/OpenCC)
-
----
-
-## Download Links
-
-- **Mod**: [GitHub Releases](https://github.com/shc261392/crystal-mods/releases) · [Nexus Mods](#nexus)
-- **Vortex Extension**: [Nexus Mods](#nexus)
-- **Source**: [GitHub](https://github.com/shc261392/crystal-mods/tree/main/black-book/tc-localization)
-
----
-
-*Last updated: 2026-06-10*
+- **遊戲**：Black Book © HypeTrain Digital / Morteshka
+- **簡體中文在地化**：原開發者與社群
+- **轉換工具**：[OpenCC](https://github.com/BYVoid/OpenCC) `s2twp`
+- **模組**：社群
+
+本為非官方同人專案，與 HypeTrain Digital、Morteshka 無任何關聯。

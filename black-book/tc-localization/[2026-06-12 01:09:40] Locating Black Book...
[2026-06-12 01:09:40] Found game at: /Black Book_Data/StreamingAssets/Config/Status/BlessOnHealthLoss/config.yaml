@@ -1,5 +1,0 @@
-﻿Unique: true
-Name: Ярость
-Description: Получить {Duration} благословения при каждой потере здоровья
-Sprite: StatBlessOnHealthLoss
-#DecreaseOnStartTurn: true

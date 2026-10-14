@@ -1,5 +1,0 @@
-﻿Unique: true
-Name: Увеличение защиты
-Description: Увеличивает <sprite name="Defence"> на {Duration} при потере здоровья
-Sprite: StatusShieldUp
-

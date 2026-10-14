@@ -1,5 +1,0 @@
-﻿Unique: true
-Name: Неприкасаемый
-Description: 'Положительные статусы нельзя снять. Продолжительность: {Duration}'
-Sprite: StatUntouchable
-DecreaseOnStartTurn: true

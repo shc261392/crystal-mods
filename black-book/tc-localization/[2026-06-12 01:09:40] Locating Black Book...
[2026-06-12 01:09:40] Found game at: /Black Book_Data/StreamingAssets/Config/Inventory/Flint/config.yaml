@@ -1,8 +1,0 @@
-﻿Name: Огниво
-InventoryItemName: Flint
-Flavour: Огонь, огонь, возьми свой огник!
-Sprite: Flint
-Cost: 120
-Effects:
-- Value: 1
-  Type: DamageOnLowHealth

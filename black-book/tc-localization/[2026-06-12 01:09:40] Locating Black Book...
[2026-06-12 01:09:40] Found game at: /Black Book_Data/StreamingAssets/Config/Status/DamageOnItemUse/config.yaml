@@ -1,4 +1,0 @@
-﻿Unique: true
-Name: Горящие травы
-Description: За каждый использованный предмет нанести всем противникам {Duration} <sprite name="Damage">
-Sprite: StatBurningWeed

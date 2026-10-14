@@ -4,12 +4,30 @@ Guidelines for Black Book TC translation.
 
 ---
 
-## Character Encoding & Text Processing
+## File format — match the game exactly
 
-- **Encoding**: UTF-8 (no BOM)
-- **Line endings**: LF (`\n`), not CRLF
+Black Book's own `config_zh.yaml` files ship as **UTF-8 with a BOM** and
+**CRLF** line endings (1,447 of 1,448 files; `Abilities/BAD_KNIFE` is the lone
+exception). The payload must reproduce that format byte-for-byte:
+
+- **Encoding**: UTF-8 **with BOM**
+- **Line endings**: CRLF (`\r\n`)
+- **Key order**: as in the original file — never re-sorted
+- **Quoting / comments / trailing newline**: preserved
+
+This is enforced by `scripts/gate_structure.py`. Earlier versions of this mod
+stripped the BOM and rewrote every file to LF; the game coped, but it was
+unnecessary churn on files the game itself had authored.
+
+---
+
+## Text processing
+
 - **Character set**: CJK Unified Ideographs (U+4E00–U+9FFF)
 - **Normalization**: NFKC (Compatibility Composition)
+- **Converter**: OpenCC `s2twp`, applied exactly **once**. `s2twp` is not
+  idempotent — a second pass turns `托马希哈` into `託馬希哈`, which is wrong
+  (托 is a surname particle). `scripts/gate_simplified.py` catches this.
 
 ---
 

@@ -1,5 +1,0 @@
-﻿Unique: true
-Name: Эфирный
-Description: 'Все атаки промахиваются по этому существу. Продолжительность: {Duration}'
-Sprite: StatusEther
-DecreaseOnStartTurn: true

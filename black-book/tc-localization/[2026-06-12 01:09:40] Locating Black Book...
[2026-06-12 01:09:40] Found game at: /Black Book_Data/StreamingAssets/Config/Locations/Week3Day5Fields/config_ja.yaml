@@ -1,7 +1,0 @@
-﻿Name: アリョシュキノの畑
-Description: チョルトが住みついてポレヴォイの邪魔をしているのはここだ。
-ShortQuestDescr: うるさいチョルトを追い払う
-LevelConfig:
-  Battle:
-    Name: うるさいチョルト
-

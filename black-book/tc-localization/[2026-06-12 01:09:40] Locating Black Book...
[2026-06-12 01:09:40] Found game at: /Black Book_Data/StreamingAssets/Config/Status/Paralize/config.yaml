@@ -1,6 +1,0 @@
-﻿Unique: true
-Name: Паралич
-Description: Нельзя использовать травы в течение {Duration} ходов
-Sprite: StatParalise
-Harmful: true
-

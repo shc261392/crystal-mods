@@ -1,5 +1,0 @@
-﻿Unique: true
-Name: Витийство (приказы)
-Description: Увеличивает количество <sprite name="Order"> в вашем заговоре на {Duration}
-Sprite: StatOrder
-

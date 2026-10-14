@@ -1,8 +1,0 @@
-﻿IdName: TestRoguelike
-Name: Бесконечные битвы
-LocationType: COMBAT
-Scene: Forest
-LevelConfig:
-  MixerSnapshot: snapshot:/Forest
-  Roguelike: true
-

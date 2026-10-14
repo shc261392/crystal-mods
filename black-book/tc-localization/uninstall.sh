@@ -1,208 +1,119 @@
 #!/usr/bin/env bash
 # Black Book — Traditional Chinese Localization Mod
-# Uninstall script for Linux / WSL2
+# Uninstall script for Linux / WSL2 / Git Bash
 #
-# Purpose:
-#   Removes deployed TC localization asset files and optionally restores from backup
+# Restores the game's own Simplified Chinese config_zh.yaml files. No backup
+# is required: source/sc/ contains them byte-for-byte, which is also the
+# input the build converts from.
 #
 # Usage:
-#   bash uninstall.sh [--no-restore] [--force]
+#   bash uninstall.sh [--dry-run] [--game-path PATH]
 
 set -euo pipefail
 
-# ============================================================================
-# Configuration
-# ============================================================================
-
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-MOD_DIR="$SCRIPT_DIR"
-STEAM_APP_ID="1138660"
+SOURCE_DIR="$SCRIPT_DIR/source/sc/StreamingAssets/Config"
+DRY_RUN=false
+GAME_DIR="${GAME_PATH:-}"
 
-GAME_DIR=""
-BACKUP_DIR="$MOD_DIR/backup"
-RESTORE_BACKUP=true
-FORCE=false
+log()  { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" >&2; }
+error() { echo "[ERROR] $*" >&2; exit 1; }
 
-# ============================================================================
-# Utility Functions
-# ============================================================================
-
-log() {
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*"
+# Every write to the game folder must go through this. Never bypass it.
+restore_file() {
+  if [[ "$DRY_RUN" == true ]]; then
+    echo "      DRY-RUN: would restore ${2#"$GAME_DIR"/}"
+  else
+    mkdir -p "$(dirname "$2")"
+    cp -f "$1" "$2"
+  fi
 }
 
-error() {
-  echo "[ERROR] $*" >&2
-  exit 1
-}
-
-warn() {
-  echo "[WARN] $*" >&2
-}
-
-# ============================================================================
-# Steam Path Detection
-# ============================================================================
-
-find_game_in_steam() {
-  local steam_root="$1"
-  
-  local steam_paths=(
-    "$steam_root/steamapps/common/Black Book"
-    "$steam_root/steamapps/common/black-book"
-  )
-  
-  for path in "${steam_paths[@]}"; do
-    if [[ -f "$path/Black Book.exe" ]]; then
-      echo "$path"
-      return 0
-    fi
-  done
-  
-  return 1
-}
+STEAM_ROOTS=(
+  "$HOME/.steam/steam"
+  "$HOME/.steam/root"
+  "$HOME/.local/share/Steam"
+  "/mnt/c/Program Files (x86)/Steam"
+  "/mnt/c/Program Files/Steam"
+  "/mnt/d/SteamLibrary"
+  "/mnt/e/SteamLibrary"
+  "/mnt/g/SteamLibrary"
+)
 
 locate_game() {
-  log "Locating Black Book..."
-  
-  local steam_roots=(
-    "$HOME/.steam/steam"
-    "$HOME/.steam/root"
-    "$HOME/.local/share/Steam"
-    "/mnt/c/Program Files (x86)/Steam"
-    "/mnt/d/SteamLibrary"
-    "C:/Program Files (x86)/Steam"
-    "D:/SteamLibrary"
-  )
-  
-  for steam_root in "${steam_roots[@]}"; do
-    if [[ -d "$steam_root" ]]; then
-      if local game=$(find_game_in_steam "$steam_root"); then
-        log "Found game at: $game"
-        echo "$game"
-        return 0
+  if [[ -n "$GAME_DIR" ]]; then
+    [[ -d "$GAME_DIR/Black Book_Data" ]] || error "Not a Black Book folder: $GAME_DIR"
+    echo "$GAME_DIR"; return 0
+  fi
+  local root path
+  for root in "${STEAM_ROOTS[@]}"; do
+    [[ -d "$root" ]] || continue
+    for path in "$root/steamapps/common/Black Book" "$root/steamapps/common/black-book"; do
+      if [[ -f "$path/Black Book.exe" ]]; then
+        echo "$path"; return 0
       fi
-    fi
+    done
   done
-  
-  error "Black Book not found in Steam library"
+  error "Black Book not found. Pass --game-path or set GAME_PATH."
 }
-
-# ============================================================================
-# Uninstall
-# ============================================================================
-
-remove_deployed_files() {
-  local game_path="$1"
-  
-  log "Removing deployed TC localization files..."
-  
-  # Remove the entire StreamingAssets/Config (will be restored from backup)
-  local config_path="$game_path/Black Book_Data/StreamingAssets/Config"
-  if [[ -d "$config_path" ]]; then
-    rm -rf "$config_path"
-    log "  ✓ Removed StreamingAssets/Config (will be restored from backup)"
-  fi
-  
-  # Remove fonts if they were deployed
-  local fonts_path="$game_path/Fonts"
-  if [[ -d "$fonts_path" ]] && [[ -f "$fonts_path/NotoSansTC.asset" ]]; then
-    rm -f "$fonts_path/NotoSansTC.asset"
-    log "  ✓ Removed NotoSansTC.asset"
-  fi
-  
-  log "✓ Deployed files removed"
-}
-
-restore_from_backup() {
-  local game_path="$1"
-  
-  if [[ "$RESTORE_BACKUP" == false ]]; then
-    log "Skipping backup restoration (--no-restore)"
-    log "WARNING: Game config files are missing. Restart game or verify Steam installation."
-    return 0
-  fi
-  
-  # Check for saved backup path first
-  if [[ -f "$MOD_DIR/.last_backup_path" ]]; then
-    local latest_backup=$(cat "$MOD_DIR/.last_backup_path")
-    if [[ ! -d "$latest_backup" ]]; then
-      latest_backup=""
-    fi
-  fi
-  
-  # If no saved path, find the most recent backup
-  if [[ -z "$latest_backup" ]]; then
-    latest_backup=$(ls -td "$BACKUP_DIR"/game_backup_* 2>/dev/null | head -1)
-  fi
-  
-  if [[ -z "$latest_backup" ]] || [[ ! -d "$latest_backup" ]]; then
-    error "No backup found! Cannot safely restore game files. Manually verify game integrity via Steam."
-  fi
-  
-  log "Restoring from backup: $latest_backup"
-  
-  # Restore Config directory
-  if [[ -d "$latest_backup/Config_original" ]]; then
-    mkdir -p "$(dirname "$game_path/Black Book_Data/StreamingAssets/Config")"
-    cp -r "$latest_backup/Config_original" "$game_path/Black Book_Data/StreamingAssets/Config" || \
-      error "Failed to restore Config directory"
-    log "  ✓ Config directory restored"
-  fi
-  
-  # Restore resources directory if it exists
-  if [[ -d "$latest_backup/resources_original" ]]; then
-    mkdir -p "$(dirname "$game_path/Black Book_Data/resources")"
-    cp -r "$latest_backup/resources_original" "$game_path/Black Book_Data/resources" || \
-      warn "Failed to restore resources directory"
-    log "  ✓ Resources restored"
-  fi
-  
-  log "✓ Restoration complete"
-  log ""
-  log "Game has been restored to its original state."
-  log "To verify game integrity, run: steam steam://validate/1138660"
-}
-
-# ============================================================================
-# Main
-# ============================================================================
 
 main() {
-  # Parse arguments
   while [[ $# -gt 0 ]]; do
     case "$1" in
-      --no-restore)
-        RESTORE_BACKUP=false
-        shift
-        ;;
-      --force)
-        FORCE=true
-        shift
-        ;;
-      *)
-        error "Unknown option: $1"
-        ;;
+      --dry-run)   DRY_RUN=true; shift ;;
+      --game-path) GAME_DIR="${2:?--game-path needs a value}"; shift 2 ;;
+      *)           error "Unknown option: $1" ;;
     esac
   done
-  
-  log "Black Book — Traditional Chinese Localization Uninstaller"
-  log ""
-  
-  # Locate game
-  GAME_DIR=$(locate_game)
-  
-  # Uninstall
-  remove_deployed_files "$GAME_DIR"
-  restore_from_backup "$GAME_DIR"
-  
-  log ""
-  log "=========================================="
-  log "Uninstall complete!"
-  log "=========================================="
-  log ""
-  log "Black Book has been restored to its original state."
-  log ""
+
+  log "Black Book — Traditional Chinese Localization uninstaller"
+  [[ "$DRY_RUN" == true ]] && log "(dry run: nothing will be written)"
+
+  if [[ ! -d "$SOURCE_DIR" ]]; then
+    error "Restoration source not found: $SOURCE_DIR"
+    error "Run 'git checkout source/sc' to restore it, or verify the game"
+    error "files through Steam (right-click -> Properties -> Verify integrity)."
+  fi
+
+  GAME_DIR="$(locate_game)"
+  log "Game directory: $GAME_DIR"
+
+  local config_dir="$GAME_DIR/Black Book_Data/StreamingAssets/Config"
+  [[ -d "$config_dir" ]] || error "Game config directory not found: $config_dir"
+
+  local count
+  count="$(find "$SOURCE_DIR" -name config_zh.yaml | wc -l)"
+  [[ "$count" -gt 0 ]] || error "Restoration source is empty: $SOURCE_DIR"
+  log "Restoring $count Simplified Chinese config file(s)..."
+
+  while IFS= read -r -d '' rel; do
+    restore_file "$SOURCE_DIR/$rel" "$config_dir/$rel"
+  done < <(cd "$SOURCE_DIR" && find . -name config_zh.yaml -printf '%P\0')
+
+  log "  ✓ $count file(s) restored to the game's original Simplified Chinese"
+
+  # Remove the empty scratch folder an older version of this mod created.
+  if [[ -d "$GAME_DIR/Black Book_Data/resources" ]]; then
+    if [[ "$DRY_RUN" == true ]]; then
+      echo "      DRY-RUN: would remove Black Book_Data/resources/"
+    else
+      rmdir "$GAME_DIR/Black Book_Data/resources" 2>/dev/null &&
+        log "  ✓ removed stray empty resources/ folder"
+    fi
+  fi
+
+  cat >&2 <<EOF
+
+==========================================
+Uninstall complete
+==========================================
+
+The game's own Simplified Chinese localisation is back in place.
+
+If anything still looks wrong, verify the install through Steam:
+  right-click Black Book -> Properties -> Installed Files ->
+  Verify integrity of game files
+EOF
 }
 
 main "$@"

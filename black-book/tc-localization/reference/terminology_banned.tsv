@@ -1,0 +1,27 @@
+# file	pattern	note
+#
+# Mainland-only wording that OpenCC's s2twp dictionary does NOT correct on its
+# own. Each pattern is rejected anywhere it appears in the payload.
+# scripts/gate_terminology.py enforces this.
+#
+# `file` is either the literal token `*` (any file) or a path relative to
+# StreamingAssets/Config. `pattern` is a literal substring, not a regex.
+
+*	本地化	Mainland-only; Taiwan's Ministry of Education standard is 在地化
+*	字地化	OpenCC s2twp mangles 化 into 字地化; use 在地化
+*	軟件	Mainland-only; Taiwan uses 軟體
+*	硬件	Mainland-only; Taiwan uses 硬體
+*	網絡	Mainland-only; Taiwan uses 網路
+*	視頻	Mainland-only; Taiwan uses 影片
+*	音頻	Mainland-only; Taiwan uses 音訊
+*	服務器	Mainland-only; Taiwan uses 伺服器
+*	內存	Mainland-only; Taiwan uses 記憶體
+*	回收站	Mainland-only; Taiwan uses 資源回收筒
+*	鼠標	Mainland-only; Taiwan uses 滑鼠
+*	打印	Mainland-only; Taiwan uses 列印
+*	菜單	Mainland-only; Taiwan uses 選單
+*	界面	Mainland-only; Taiwan uses 介面
+*	屏幕	Mainland-only; Taiwan uses 螢幕
+*	分辨率	Mainland-only; Taiwan uses 解析度
+*	信息	Mainland-only; Taiwan uses 資訊
+*	質量控制	Mainland-only; Taiwan credits use 品質管制

@@ -1,9 +1,0 @@
-Name: URAZI
-SkillName: AbilityURAZI
-Sprite: ConfusedDirectionsSkill
-RequiredSkills:
-SpriteOffsetX: -44.5
-SpriteOffsetY: -43.2
-Effects:
-- Type: AbilityUnlock
-  StringData: URAZI

@@ -1,8 +1,0 @@
-﻿Unique: true
-Name: Разложение
-Description: Увеличивает порчу в начале хода на {Duration}
-Sprite: StatDecomposure
-Harmful: true
-AdditionalStatusData: Waste
-DecreaseOnStartTurn: true
-

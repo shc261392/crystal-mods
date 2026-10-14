@@ -1,5 +1,0 @@
-﻿Unique: true
-Name: Неминуемость ({StringData})
-Description: Подавляет стойкость к {StringData}
-Sprite: StatusImmunitySuppression
-Harmful: true

@@ -1,4 +1,0 @@
-﻿Unique: true
-Name: Шипы
-Description: '{Duration} <sprite name="Damage"> при получении урона'
-Sprite: StatSpikes

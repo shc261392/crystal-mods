@@ -1,280 +1,121 @@
-# Black Book — Traditional Chinese Localization Mod
-# Deploy script for Windows (PowerShell)
-#
-# Purpose:
-#   1. Auto-detects Black Book in Steam library
-#   2. Validates game structure
-#   3. Backs up original game assets
-#   4. Deploys TC localization asset files to Black Book_Data/resources/
-#   5. Deploys Noto Sans TC font asset
-#
-# Usage:
-#   .\deploy.ps1 [-NoBackup] [-Force]
-#
-# Requires: PowerShell 5.0+
+<#
+.SYNOPSIS
+  Black Book — Traditional Chinese Localization Mod installer (Windows).
 
-#Requires -Version 5.0
+.DESCRIPTION
+  Copies the mod's TC config_zh.yaml files over the game's Simplified Chinese
+  originals. Restoration does NOT need a backup: source\sc\ holds the game's
+  own Simplified Chinese files byte-for-byte, and uninstall.ps1 copies them
+  back.
 
+.EXAMPLE
+  .\deploy.ps1
+.EXAMPLE
+  .\deploy.ps1 -GamePath 'D:\SteamLibrary\steamapps\common\Black Book'
+.EXAMPLE
+  .\deploy.ps1 -DryRun
+#>
+[CmdletBinding()]
 param(
-  [switch]$NoBackup,
-  [switch]$Force
+  [string]$GamePath = $env:GAME_PATH,
+  [switch]$DryRun
 )
 
-Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+Set-StrictMode -Version Latest
 
-# ============================================================================
-# Configuration
-# ============================================================================
+$ScriptDir  = Split-Path -Parent $MyInvocation.MyCommand.Path
+$PayloadDir = Join-Path $ScriptDir 'payload\Black Book_Data\StreamingAssets\Config'
 
-$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$ModDir = $ScriptDir
-$PayloadDir = Join-Path $ModDir 'payload'
-$SteamAppId = '1138660'
-$GameDir = $null
-$BackupDir = Join-Path $ModDir 'backup'
-$CreateBackup = -not $NoBackup
+$SteamRoots = @(
+  "$env:ProgramFiles(x86)\Steam",
+  "$env:ProgramFiles\Steam",
+  'C:\Program Files (x86)\Steam',
+  'D:\SteamLibrary',
+  'E:\SteamLibrary',
+  'G:\SteamLibrary'
+) | Where-Object { $_ -and (Test-Path $_) }
 
-# ============================================================================
-# Utility Functions
-# ============================================================================
-
-function Write-Log {
-  param([string]$Message)
-  $timestamp = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
-  Write-Host "[$timestamp] $Message"
+function Write-Log([string]$Message) {
+  Write-Host "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] $Message"
 }
 
-function Write-Error-Custom {
-  param([string]$Message)
-  Write-Host "[ERROR] $Message" -ForegroundColor Red
-  exit 1
-}
+function Get-BlackBookPath {
+  param([string]$Explicit)
 
-function Write-Warn {
-  param([string]$Message)
-  Write-Host "[WARN] $Message" -ForegroundColor Yellow
-}
-
-# ============================================================================
-# Steam Registry & Path Detection
-# ============================================================================
-
-function Find-SteamInstallPath {
-  Write-Log 'Locating Steam installation...'
-  
-  # Common Steam registry paths
-  $steamPaths = @(
-    'HKCU:\Software\Valve\Steam',
-    'HKLM:\Software\Valve\Steam',
-    'HKLM:\Software\Wow6432Node\Valve\Steam'
-  )
-  
-  foreach ($regPath in $steamPaths) {
-    try {
-      if (Test-Path $regPath) {
-        $installPath = (Get-ItemProperty $regPath -ErrorAction SilentlyContinue).InstallPath
-        if ($installPath -and (Test-Path $installPath)) {
-          return $installPath
-        }
-      }
+  if ($Explicit) {
+    if (-not (Test-Path (Join-Path $Explicit 'Black Book_Data'))) {
+      throw "Not a Black Book folder: $Explicit"
     }
-    catch {}
+    return $Explicit
   }
-  
-  Write-Error-Custom 'Steam installation not found in registry'
-}
 
-function Find-GameInSteam {
-  param([string]$SteamRoot)
-  
-  $possiblePaths = @(
-    (Join-Path $SteamRoot 'steamapps' 'common' 'Black Book'),
-    (Join-Path $SteamRoot 'steamapps' 'common' 'black-book')
-  )
-  
-  foreach ($path in $possiblePaths) {
-    if (Test-Path (Join-Path $path 'Black Book.exe')) {
-      return $path
+  foreach ($root in $SteamRoots) {
+    foreach ($candidate in @(
+        (Join-Path $root 'steamapps\common\Black Book'),
+        (Join-Path $root 'steamapps\common\black-book'))) {
+      if (Test-Path (Join-Path $candidate 'Black Book.exe')) { return $candidate }
     }
   }
-  
-  return $null
+  throw 'Black Book not found. Pass -GamePath or set the GAME_PATH environment variable.'
 }
 
-function Locate-Game {
-  Write-Log 'Locating Black Book...'
-  
-  # Try Steam registry first
-  $steamInstall = Find-SteamInstallPath
-  
-  # Check main Steam directory
-  $gamePath = Find-GameInSteam $steamInstall
-  if ($gamePath) {
-    Write-Log "Found game at: $gamePath"
-    return $gamePath
-  }
-  
-  # Check Steam library folders (libraryfolders.vdf)
-  $libFoldersPath = Join-Path $steamInstall 'steamapps' 'libraryfolders.vdf'
-  if (Test-Path $libFoldersPath) {
-    $content = Get-Content $libFoldersPath -Raw
-    # Simple regex to find library paths (basic parsing of VDF format)
-    $matches = [regex]::Matches($content, '"path"\s+"([^"]+)"')
-    
-    foreach ($match in $matches) {
-      $libPath = $match.Groups[1].Value
-      $gamePath = Find-GameInSteam $libPath
-      if ($gamePath) {
-        Write-Log "Found game at: $gamePath"
-        return $gamePath
-      }
-    }
-  }
-  
-  Write-Error-Custom 'Black Book not found in Steam library'
+function Invoke-Copy {
+  param([string]$Source, [string]$Destination)
+  if ($DryRun) { Write-Host "      DRY-RUN: $Source -> $Destination" }
+  else { Copy-Item -LiteralPath $Source -Destination $Destination -Force }
 }
 
-# ============================================================================
-# Validation
-# ============================================================================
+Write-Log 'Black Book — Traditional Chinese Localization installer'
+if ($DryRun) { Write-Log '(dry run: nothing will be written)' }
 
-function Test-GameStructure {
-  param([string]$GamePath)
-  
-  Write-Log 'Validating game structure...'
-  
-  $exe = Join-Path $GamePath 'Black Book.exe'
-  $dataDir = Join-Path $GamePath 'Black Book_Data'
-  
-  if (-not (Test-Path $exe)) {
-    Write-Error-Custom "Game executable not found: $exe"
-  }
-  
-  if (-not (Test-Path $dataDir)) {
-    Write-Error-Custom "Game data directory not found: $dataDir"
-  }
-  
-  Write-Log '✓ Game structure valid'
+if (-not (Test-Path $PayloadDir)) {
+  throw "Payload not found: $PayloadDir - run 'make build' first."
 }
 
-function Test-PayloadStructure {
-  Write-Log 'Validating mod payload...'
-  
-  $payloadPath = Join-Path $PayloadDir 'AutoTranslator' 'Translation' 'zh-TW'
-  
-  if (-not (Test-Path $payloadPath)) {
-    Write-Error-Custom "Payload missing: $payloadPath"
-  }
-  
-  Write-Log '✓ Payload structure valid'
+$game = Get-BlackBookPath -Explicit $GamePath
+Write-Log "Game directory: $game"
+
+$configDir = Join-Path $game 'Black Book_Data\StreamingAssets\Config'
+if (-not (Test-Path $configDir)) {
+  throw "Game config directory not found: $configDir"
 }
 
-# ============================================================================
-# Backup
-# ============================================================================
+$files = Get-ChildItem -LiteralPath $PayloadDir -Recurse -Filter 'config_zh.yaml'
+if ($files.Count -eq 0) { throw 'Payload contains no config_zh.yaml files' }
+Write-Log "Payload: $($files.Count) Traditional Chinese config file(s)"
 
-function Backup-Game {
-  param([string]$GamePath)
-  
-  if (-not $CreateBackup) {
-    Write-Log 'Skipping backup (--NoBackup)'
-    return
+Write-Log 'Installing...'
+foreach ($file in $files) {
+  $relative = $file.FullName.Substring($PayloadDir.Length).TrimStart('\', '/')
+  $destination = Join-Path $configDir $relative
+  $parent = Split-Path -Parent $destination
+  if (-not (Test-Path $parent)) { New-Item -ItemType Directory -Path $parent -Force | Out-Null }
+  Invoke-Copy -Source $file.FullName -Destination $destination
+}
+Write-Log "  [ok] wrote $($files.Count) file(s) into StreamingAssets\Config"
+
+# Remove the empty scratch folder an older version of this mod created.
+$stray = Join-Path $game 'Black Book_Data\resources'
+if (Test-Path -LiteralPath $stray) {
+  if (-not (Get-ChildItem -LiteralPath $stray -Force)) {
+    if ($DryRun) { Write-Host "      DRY-RUN: remove $stray" }
+    else { Remove-Item -LiteralPath $stray -Force; Write-Log '  [ok] removed stray empty resources\ folder' }
   }
-  
-  $backupTs = Get-Date -Format 'yyyyMMdd_HHmmss'
-  $backupPath = Join-Path $BackupDir "game_backup_$backupTs"
-  
-  Write-Log "Backing up game assets to: $backupPath"
-  New-Item -ItemType Directory -Path $backupPath -Force | Out-Null
-  
-  $resourcesPath = Join-Path $GamePath 'Black Book_Data' 'resources'
-  if (Test-Path $resourcesPath) {
-    Copy-Item $resourcesPath (Join-Path $backupPath 'resources_original') -Recurse -Force | Out-Null
-  }
-  
-  Write-Log '✓ Backup complete'
 }
 
-# ============================================================================
-# Deploy
-# ============================================================================
-
-function Deploy-Payload {
-  param([string]$GamePath)
-  
-  Write-Log 'Deploying localization payload...'
-  
-  # Deploy asset files
-  $payloadBlackBookData = Join-Path $PayloadDir 'Black Book_Data'
-  if (Test-Path $payloadBlackBookData) {
-    $destDir = Join-Path $GamePath 'Black Book_Data'
-    New-Item -ItemType Directory -Path $destDir -Force | Out-Null
-    Copy-Item (Join-Path $payloadBlackBookData '*') $destDir -Recurse -Force | Out-Null
-    Write-Log '  ✓ Black Book_Data/resources deployed'
-  }
-  
-  # Deploy Fonts
-  $fontsSrc = Join-Path $PayloadDir 'Fonts'
-  if ((Test-Path $fontsSrc) -and @(Get-ChildItem $fontsSrc -ErrorAction SilentlyContinue).Count -gt 0) {
-    $fontsDest = Join-Path $GamePath 'Fonts'
-    New-Item -ItemType Directory -Path $fontsDest -Force | Out-Null
-    Copy-Item (Join-Path $fontsSrc '*') $fontsDest -Recurse -Force | Out-Null
-    Write-Log '  ✓ Fonts deployed'
-  }
-  
-  Write-Log '✓ Deployment complete'
-}
-
-# ============================================================================
-# Post-Deploy
-# ============================================================================
-
-function Invoke-PostDeploy {
-  param([string]$GamePath)
-  
-  Write-Log 'Running post-deployment checks...'
-  
-  $deployedPath = Join-Path $GamePath 'Black Book_Data' 'resources'
-  if (Test-Path $deployedPath) {
-    $fileCount = @(Get-ChildItem $deployedPath -Recurse -File).Count
-    Write-Log "  ✓ $fileCount files deployed to Black Book_Data/resources/"
-  }
-  
-  Write-Log '✓ Post-deployment complete'
-  Write-Host ''
-  Write-Host '==========================================' -ForegroundColor Green
-  Write-Host 'Deployment successful!' -ForegroundColor Green
-  Write-Host '==========================================' -ForegroundColor Green
-  Write-Host ''
-  Write-Host 'Next steps:'
-  Write-Host '  1. Launch Black Book from Steam'
-  Write-Host '  2. Verify text appears in Traditional Chinese'
-  Write-Host '  3. Check for any rendering issues'
-  Write-Host ''
-  Write-Host 'To uninstall, run: .\uninstall.ps1'
-  Write-Host ''
-}
-
-# ============================================================================
-# Main
-# ============================================================================
-
-Write-Log 'Black Book — Traditional Chinese Localization Installer'
 Write-Host ''
-
-# Locate game
-$GameDir = Locate-Game
-
-# Validate
-Test-GameStructure $GameDir
-Test-PayloadStructure
-
-# Backup
-Backup-Game $GameDir
-
-# Deploy
-Deploy-Payload $GameDir
-
-# Post-deploy
-Invoke-PostDeploy $GameDir
+Write-Host '=========================================='
+Write-Host 'Installation complete'
+Write-Host '=========================================='
+Write-Host ''
+Write-Host 'Launch Black Book from Steam and check:'
+Write-Host '  - item names / descriptions in the inventory'
+Write-Host '  - ability names'
+Write-Host '  - chapter titles in the menu'
+Write-Host '  - the credits screen (Settings -> Credits)'
+Write-Host ''
+Write-Host 'Text that comes from Unity assets rather than config files is NOT'
+Write-Host 'covered by this mod. See the "Coverage" section of README.md.'
+Write-Host ''
+Write-Host 'To uninstall:  .\uninstall.ps1'

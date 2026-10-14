@@ -1,5 +1,0 @@
-﻿Unique: true
-Name: Отречение
-Description: Слова с защитой наносят {Duration} <sprite name="Damage">
-Sprite: StatOtrechenie
-Harmful: true

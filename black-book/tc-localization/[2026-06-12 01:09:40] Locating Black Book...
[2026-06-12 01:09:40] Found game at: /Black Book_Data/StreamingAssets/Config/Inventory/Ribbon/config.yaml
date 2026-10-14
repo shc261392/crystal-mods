@@ -1,9 +1,0 @@
-﻿Name: Дивья красота
-InventoryItemName: Ribbon
-Flavour: У меня ле честная дивья красота да, она украшенная, сбереженная, да
-Sprite: Ribbon
-Cost: 150
-Effects:
-- Value: 15
-  Type: IncreaseHealth
-

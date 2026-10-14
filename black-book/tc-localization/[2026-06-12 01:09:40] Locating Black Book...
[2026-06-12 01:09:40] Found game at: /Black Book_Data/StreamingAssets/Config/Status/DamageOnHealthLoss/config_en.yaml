@@ -1,3 +1,0 @@
-﻿Name: Damage when health is lost
-Description: Deals enemies {Duration} <sprite name="Damage">, when you lose <sprite name="Health">
-

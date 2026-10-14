@@ -2,19 +2,28 @@
   "id": "tc-localization",
   "name": "Traditional Chinese Localization",
   "game": "black-book",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Community",
   "category": "Localization",
-  "description": "Traditional Chinese (繁體中文) localization mod for Black Book. Replaces game UI text assets with TC translations using Noto Sans TC font support.",
+  "description": "Converts Black Book's built-in Simplified Chinese localisation to Traditional Chinese (zh-TW) using OpenCC s2twp, with reviewed terminology corrections. Replaces the StreamingAssets/Config config_zh.yaml files; no plugins or runtime translators required.",
+  "coverage": {
+    "type": "partial",
+    "note": "Converts the 1,448 config_zh.yaml files (3,479 strings). Text baked into data.unity3d (menus, settings, tooltips, dialogue) is NOT converted and stays Simplified Chinese. See README.md > Coverage."
+  },
   "platforms": ["windows", "linux-proton"],
   "supportedVersions": ["1.0"],
   "locale": "zh-TW",
+  "install": {
+    "root": "Black Book_Data/StreamingAssets/Config",
+    "pattern": "**/config_zh.yaml",
+    "requires": false,
+    "notes": "Only config_zh.yaml files are written. config.yaml, config_en/ja/ko.yaml and all asset bundles are left untouched."
+  },
   "vortex": {
     "extensionId": "game-black-book",
     "extensionPath": "../vortex-ext/game-black-book"
   },
   "links": {
-    "nexus": "https://www.nexusmods.com/blackbook/mods/xxxx",
     "source": "https://github.com/shc261392/crystal-mods/tree/main/black-book/tc-localization"
   }
 }

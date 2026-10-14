@@ -1,109 +1,83 @@
-.PHONY: build validate clean help install uninstall
+.PHONY: help build generate validate check-package clean install uninstall venv
 
 # ============================================================================
 # Black Book TC Localization Mod — Build System
+#
+# ONE canonical release command:
+#
+#     make build
+#
+# It regenerates the payload from the checked-in SC source, runs every quality
+# gate, and packages the release zip. No arguments, no overrides, no alternate
+# recipes (AGENTS.md rule 15).
 # ============================================================================
 
-SHELL := /bin/bash
-PYTHON := python3
-DIST_DIR := dist
-PAYLOAD_DIR := payload
-SCRIPTS_DIR := scripts
-REFERENCE_DIR := reference
+SHELL       := /bin/bash
+PYTHON      ?= python3
+MOD_DIR     := $(patsubst %/,%,$(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
+SCRIPTS_DIR := $(MOD_DIR)/scripts
+DIST_DIR    := $(MOD_DIR)/dist
+PAYLOAD_DIR := $(MOD_DIR)/payload
 
-MOD_VERSION := 1.0.0
-MOD_ZIP := tc-localization-v$(MOD_VERSION).zip
+MOD_VERSION := 1.1.0
+MOD_ZIP     := tc-localization-v$(MOD_VERSION).zip
+
+GATES := gate_coverage gate_structure gate_simplified gate_overrides gate_terminology
 
 help:
-	@echo "Black Book TC Localization Mod — Build Targets"
+	@echo "Black Book TC Localization Mod"
 	@echo ""
-	@echo "  make build      - Convert SC→TC, validate, package to $(DIST_DIR)/"
-	@echo "  make validate   - Run quality gates on payload"
-	@echo "  make clean      - Reset payload directory"
-	@echo "  make install    - Deploy mod to game (requires ./deploy.sh or deploy.ps1)"
-	@echo "  make help       - Show this help message"
+	@echo "  make build       - generate + validate + package -> dist/$(MOD_ZIP)"
+	@echo "  make generate    - SC source -> TC payload"
+	@echo "  make validate    - run all quality gates"
+	@echo "  make check-package - confirm the build is reproducible"
+	@echo "  make install     - deploy to the game (runs deploy.sh)"
+	@echo "  make uninstall   - restore the game (runs uninstall.sh)"
+	@echo "  make clean       - remove generated payload + dist"
 	@echo ""
 
-build: validate package
-	@echo "✓ Build complete: $(DIST_DIR)/$(MOD_ZIP)"
+# ---------------------------------------------------------------------------
+# The release build. Nothing else produces the release zip.
+# ---------------------------------------------------------------------------
+build: generate validate package
+	@echo ""
+	@echo "Build complete: dist/$(MOD_ZIP)"
 
+# ---------------------------------------------------------------------------
+generate:
+	@echo "==> Generating TC payload from source/sc"
+	@$(PYTHON) $(SCRIPTS_DIR)/build_tc_payload.py
+
+# ---------------------------------------------------------------------------
 validate:
-	@echo "Running quality gates..."
+	@echo "==> Running quality gates"
+	@for gate in $(GATES); do \
+		$(PYTHON) $(SCRIPTS_DIR)/$$gate.py || exit 1; \
+	done
 	@echo ""
-	@echo "[Gate 1] Checking YAML config structure..."
-	@if [ -d "$(PAYLOAD_DIR)/Black Book_Data/StreamingAssets/Config" ]; then \
-		YAML_COUNT=$$(find "$(PAYLOAD_DIR)/Black Book_Data/StreamingAssets/Config" -name "config_zh.yaml" | wc -l); \
-		if [ $$YAML_COUNT -gt 0 ]; then \
-			echo "[✓] Found $$YAML_COUNT TC config files"; \
-		else \
-			echo "[FAIL] No TC YAML config files found"; exit 1; \
-		fi; \
-	else \
-		echo "[FAIL] TC config directory not found"; exit 1; \
-	fi
-	@echo ""
-	@echo "[Gate 2] Validating YAML format..."
-	@$(PYTHON) $(SCRIPTS_DIR)/gate0_yaml_validator.py || exit 1
-	@echo ""
-	@echo "[Gate 3] Font asset validation (optional)..."
-	@if [ -d "$(PAYLOAD_DIR)/Fonts" ]; then \
-		FONT_COUNT=$$(find "$(PAYLOAD_DIR)/Fonts" -type f | wc -l); \
-		echo "[✓] Found $$FONT_COUNT font files"; \
-	else \
-		echo "[ℹ] No font files (optional for initial release)"; \
-	fi
-	@echo ""
-	@echo "✓ All validation gates passed"
 
+# ---------------------------------------------------------------------------
 package:
-	@echo "Packaging mod..."
-	@mkdir -p $(DIST_DIR)
-	@cd $(PAYLOAD_DIR) && zip -r ../$(DIST_DIR)/$(MOD_ZIP) . -x "*.git*" "*.DS_Store"
-	@echo "✓ Packaged to: $(DIST_DIR)/$(MOD_ZIP)"
+	@echo "==> Packaging"
+	@$(PYTHON) $(SCRIPTS_DIR)/package_zip.py \
+		--payload "$(PAYLOAD_DIR)" \
+		--dist "$(DIST_DIR)" \
+		--name "$(MOD_ZIP)"
 
-convert-sc-to-tc:
-	@echo "Extracting SC YAML configs and converting to TC..."
-	@$(PYTHON) $(SCRIPTS_DIR)/extract_and_convert_yaml.py || exit 1
-	@echo "✓ Conversion complete"
+# ---------------------------------------------------------------------------
+check-package:
+	@echo "==> Verifying the build is reproducible"
+	@$(PYTHON) $(SCRIPTS_DIR)/check_reproducible.py \
+		--dist "$(DIST_DIR)" --name "$(MOD_ZIP)"
 
+# ---------------------------------------------------------------------------
 clean:
-	@echo "Cleaning payload..."
-	@rm -rf $(PAYLOAD_DIR)/Black\ Book_Data/StreamingAssets/Config/
-	@rm -rf $(DIST_DIR)
-	@rm -f $(PAYLOAD_DIR)/EXTRACTION_REPORT.txt
-	@echo "✓ Cleaned"
+	@rm -rf "$(PAYLOAD_DIR)" "$(DIST_DIR)"
+	@rm -rf $(MOD_DIR)/scripts/__pycache__
+	@echo "Cleaned generated payload and dist/"
 
 install: build
-	@echo "Installing mod..."
-	@bash deploy.sh
+	@bash $(MOD_DIR)/deploy.sh
 
 uninstall:
-	@echo "Uninstalling mod..."
-	@bash uninstall.sh
-
-# ============================================================================
-# Development targets
-# ============================================================================
-
-.PHONY: glossary format-terminology
-
-glossary:
-	@echo "Opening terminology glossary..."
-	@cat $(REFERENCE_DIR)/TERMINOLOGY.md
-
-format-terminology:
-	@echo "Formatting terminology file..."
-	@$(PYTHON) $(SCRIPTS_DIR)/normalize_glossary.py $(REFERENCE_DIR)/TERMINOLOGY.md
-	@echo "✓ Terminology formatted"
-
-# ============================================================================
-# Continuous Integration targets (for CI/CD pipelines)
-# ============================================================================
-
-.PHONY: ci-validate ci-build
-
-ci-validate: validate
-	@echo "✓ CI validation passed"
-
-ci-build: ci-validate package
-	@echo "✓ CI build passed"
+	@bash $(MOD_DIR)/uninstall.sh

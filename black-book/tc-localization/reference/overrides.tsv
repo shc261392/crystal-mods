@@ -1,0 +1,26 @@
+# file	key	replacement
+#
+# Manual corrections applied AFTER the OpenCC s2twp pass. One entry per line,
+# TAB-separated. The leading `#` lines and blank lines are ignored.
+#
+# `file` is the path relative to StreamingAssets/Config, e.g.
+#     Inventory/AdamHead/config_zh.yaml
+# `key` is the dotted/indexed YAML path to the string scalar, e.g.
+#     Name
+#     LevelConfig.Battle.Name
+#     Developers.People[0].Titles[1].Title
+#
+# Every entry here is verified by scripts/gate_overrides.py: an override that
+# matches nothing is a build error, so typos can never ship silently.
+
+# --- Taiwan localisation terminology ---------------------------------------
+# OpenCC s2twp has no phrase rule for 地化 -> 在地化. Taiwan's Ministry of
+# Education standard is 在地化, not 本地化/字地化.
+Service/Credits/config_zh.yaml	ChineseLocalization.Header	簡體中文在地化
+Service/Credits/config_zh.yaml	ChineseLocalization.People[0].Titles[0].Title	在地化管理
+Service/Credits/config_zh.yaml	ChineseLocalization.People[1].Titles[0].Title	在地化
+Service/Credits/config_zh.yaml	ChineseLocalization.People[2].Titles[0].Title	在地化
+Service/Credits/config_zh.yaml	ChineseLocalization.People[3].Titles[0].Title	在地化
+
+# 質量 is Mainland usage for "quality"; Taiwan credits use 品質管制.
+Service/Credits/config_zh.yaml	Developers.People[5].Titles[0].Title	品質管制

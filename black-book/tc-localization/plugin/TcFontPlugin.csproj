@@ -1,0 +1,91 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Black Book TC Font plugin.
+
+    Targets netstandard2.0, matching Unity 2018.4's Mono profile — the same
+    target BepInEx 5 plugins use.
+
+    All game/BepInEx assemblies are referenced from outside the repo and marked
+    Private=false so they are not copied into the output:
+      - BepInEx 5.4.23.5 x64  (download, see build_plugin.sh)
+      - the game's own Managed folder
+
+    Override the two paths below on the command line if yours differ:
+      dotnet build -c Release -p:BepInExCore=... -p:GameManaged=...
+  -->
+
+  <PropertyGroup>
+    <!--
+      net472, NOT netstandard2.0.
+
+      Unity 2018.4 does not ship netstandard.dll or System.Runtime.dll, so a
+      netstandard2.0 plugin fails with "TypeLoadException: Failure has occurred
+      while loading a type" the moment BepInEx calls AddComponent on it.
+      .NET Framework 4.7.2 resolves against mscorlib/System/System.Core, all of
+      which the game already has in Managed/.
+    -->
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>BlackBookTcFont</AssemblyName>
+    <RootNamespace>BlackBookTcFont</RootNamespace>
+    <LangVersion>7.3</LangVersion>
+    <Nullable>disable</Nullable>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <Version>1.0.0</Version>
+    <NoWarn>$(NoWarn);CS0436</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Reference assemblies for net472 when building with the modern SDK. -->
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(BepInExCore)' == ''">
+    <BepInExCore>$(MSBuildThisFileDirectory)../.bepinex-refs/BepInEx/core</BepInExCore>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(GameManaged)' == ''">
+    <GameManaged>/mnt/d/SteamLibrary/steamapps/common/Black Book/Black Book_Data/Managed</GameManaged>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>$(BepInExCore)/BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(BepInExCore)/0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(GameManaged)/UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameManaged)/UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>$(GameManaged)/UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(GameManaged)/Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>$(GameManaged)/UnityEngine.TextCoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>$(GameManaged)/UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>$(GameManaged)/Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

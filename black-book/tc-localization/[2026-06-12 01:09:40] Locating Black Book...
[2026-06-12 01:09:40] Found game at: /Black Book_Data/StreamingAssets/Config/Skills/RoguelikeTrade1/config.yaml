@@ -1,1 +1,0 @@
-Name: Торговля ISkillName: RoguelikeTrade1Sprite: Trade1SkillDescription: Цены в магазине снижены на {CalculatedEffect}%Effects:- Value: 10  Type: ItemPriceDrop
