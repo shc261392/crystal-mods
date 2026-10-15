@@ -1,4 +1,4 @@
-.PHONY: help build generate validate check-package clean install uninstall venv
+.PHONY: help build generate build-plugin validate package check-package clean install uninstall
 
 # ============================================================================
 # Black Book TC Localization Mod — Build System
@@ -7,9 +7,13 @@
 #
 #     make build
 #
-# It regenerates the payload from the checked-in SC source, runs every quality
-# gate, and packages the release zip. No arguments, no overrides, no alternate
-# recipes (AGENTS.md rule 15).
+# It regenerates the payload from the checked-in SC source, compiles the
+# BepInEx plugin, runs every quality gate, and packages the release zip. No
+# arguments, no overrides, no alternate recipes (AGENTS.md rule 15).
+#
+# The Unity-built font bundle (plugin/bundles/tcserif) is a committed artifact:
+# TMP font assets cannot be produced without the Unity Editor. Regenerate it
+# with tools/unity-font/ - see its README.
 # ============================================================================
 
 SHELL       := /bin/bash
@@ -19,7 +23,7 @@ SCRIPTS_DIR := $(MOD_DIR)/scripts
 DIST_DIR    := $(MOD_DIR)/dist
 PAYLOAD_DIR := $(MOD_DIR)/payload
 
-MOD_VERSION := 1.1.0
+MOD_VERSION := 1.2.0
 MOD_ZIP     := tc-localization-v$(MOD_VERSION).zip
 
 GATES := gate_coverage gate_structure gate_simplified gate_overrides gate_terminology
@@ -27,19 +31,20 @@ GATES := gate_coverage gate_structure gate_simplified gate_overrides gate_termin
 help:
 	@echo "Black Book TC Localization Mod"
 	@echo ""
-	@echo "  make build       - generate + validate + package -> dist/$(MOD_ZIP)"
-	@echo "  make generate    - SC source -> TC payload"
-	@echo "  make validate    - run all quality gates"
+	@echo "  make build         - generate + compile plugin + validate + package"
+	@echo "  make generate      - SC source -> TC payload"
+	@echo "  make build-plugin  - compile the BepInEx plugin"
+	@echo "  make validate      - run all quality gates"
 	@echo "  make check-package - confirm the build is reproducible"
-	@echo "  make install     - deploy to the game (runs deploy.sh)"
-	@echo "  make uninstall   - restore the game (runs uninstall.sh)"
-	@echo "  make clean       - remove generated payload + dist"
+	@echo "  make install       - deploy to the game (runs deploy.sh)"
+	@echo "  make uninstall     - restore the game (runs uninstall.sh)"
+	@echo "  make clean         - remove generated payload, plugin output and dist"
 	@echo ""
 
 # ---------------------------------------------------------------------------
 # The release build. Nothing else produces the release zip.
 # ---------------------------------------------------------------------------
-build: generate validate package
+build: generate build-plugin validate package
 	@echo ""
 	@echo "Build complete: dist/$(MOD_ZIP)"
 
@@ -47,6 +52,11 @@ build: generate validate package
 generate:
 	@echo "==> Generating TC payload from source/sc"
 	@$(PYTHON) $(SCRIPTS_DIR)/build_tc_payload.py
+
+# ---------------------------------------------------------------------------
+build-plugin:
+	@echo "==> Compiling the BepInEx plugin"
+	@bash $(MOD_DIR)/build_plugin.sh
 
 # ---------------------------------------------------------------------------
 validate:
@@ -61,6 +71,7 @@ package:
 	@echo "==> Packaging"
 	@$(PYTHON) $(SCRIPTS_DIR)/package_zip.py \
 		--payload "$(PAYLOAD_DIR)" \
+		--stage "$(DIST_DIR)/stage" \
 		--dist "$(DIST_DIR)" \
 		--name "$(MOD_ZIP)"
 
@@ -73,8 +84,9 @@ check-package:
 # ---------------------------------------------------------------------------
 clean:
 	@rm -rf "$(PAYLOAD_DIR)" "$(DIST_DIR)"
+	@rm -rf $(MOD_DIR)/plugin/bin $(MOD_DIR)/plugin/obj
 	@rm -rf $(MOD_DIR)/scripts/__pycache__
-	@echo "Cleaned generated payload and dist/"
+	@echo "Cleaned generated payload, plugin output and dist/"
 
 install: build
 	@bash $(MOD_DIR)/deploy.sh
