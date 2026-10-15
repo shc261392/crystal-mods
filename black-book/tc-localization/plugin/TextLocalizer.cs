@@ -45,6 +45,37 @@ namespace BlackBookTcFont
         // DialogueDatabase
         // ------------------------------------------------------------------ //
 
+        /// <summary>
+        /// Convert one database. Called before the game registers it, because
+        /// DialogueLua snapshots every asset field into its Lua tables at that
+        /// point (DialogueLua.AddToTable) and the speaker-name UI reads the name
+        /// from that snapshot rather than from the live Field. Converting after
+        /// registration leaves the cached copy Simplified - which is exactly why
+        /// "Old Egor" kept showing as 老叶戈尔.
+        /// </summary>
+        public static int ConvertDatabase(DialogueDatabase db, ScTcConverter converter)
+        {
+            if (db == null) return 0;
+
+            int count = 0;
+            count += ConvertAssets(db.actors, converter);
+            count += ConvertAssets(db.items, converter);
+            count += ConvertAssets(db.locations, converter);
+            count += ConvertAssets(db.variables, converter);
+
+            foreach (Conversation conversation in db.conversations)
+            {
+                if (conversation == null) continue;
+                count += ConvertFields(conversation.fields, converter);
+                foreach (DialogueEntry entry in conversation.dialogueEntries)
+                {
+                    if (entry == null) continue;
+                    count += ConvertFields(entry.fields, converter);
+                }
+            }
+            return count;
+        }
+
         private static int ConvertDialogueDatabases(ScTcConverter converter, ManualLogSource log)
         {
             DialogueDatabase[] databases;
@@ -69,21 +100,7 @@ namespace BlackBookTcFont
             {
                 if (db == null) continue;
 
-                count += ConvertAssets(db.actors, converter);
-                count += ConvertAssets(db.items, converter);
-                count += ConvertAssets(db.locations, converter);
-                count += ConvertAssets(db.variables, converter);
-
-                foreach (Conversation conversation in db.conversations)
-                {
-                    if (conversation == null) continue;
-                    count += ConvertFields(conversation.fields, converter);
-                    foreach (DialogueEntry entry in conversation.dialogueEntries)
-                    {
-                        if (entry == null) continue;
-                        count += ConvertFields(entry.fields, converter);
-                    }
-                }
+                count += ConvertDatabase(db, converter);
             }
 
             log.LogInfo($"DialogueDatabase: converted {count} field(s) across {databases.Length} database(s).");

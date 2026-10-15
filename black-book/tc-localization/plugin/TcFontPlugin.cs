@@ -53,6 +53,9 @@ namespace BlackBookTcFont
         /// <summary>The Traditional font every Chinese text element is switched to.</summary>
         internal static TMP_FontAsset TcFont => _tcFont;
 
+        /// <summary>Shared converter, so patches can convert data before the game caches it.</summary>
+        internal static ScTcConverter Converter;
+
         private static readonly List<TMP_FontAsset> Fallbacks = new List<TMP_FontAsset>();
         private static TMP_FontAsset _tcFont;
         private static TMP_FontAsset _gameSourceFallback;
@@ -79,6 +82,7 @@ namespace BlackBookTcFont
             string dataPath = Path.Combine(Paths.PluginPath, DataFolder);
             _converter = new ScTcConverter();
             _converter.Load(dataPath);
+            Converter = _converter;
             Log.LogInfo(_converter.IsEmpty
                 ? "Conversion tables did not load - text will stay Simplified."
                 : "Conversion tables loaded.");
