@@ -1,0 +1,273 @@
+# Black Book TC - polish proposals (round 2)
+#
+# Produced by a review pass over the EN/SC/TC triples plus the runtime
+# dialogue/UI objects (71459 DialogueDatabase, 71461 TextTable).
+# These are PROPOSALS ONLY - nothing here is applied.
+#
+# Columns (TAB-separated):
+#   file       path relative to StreamingAssets/Config  (or runtime:71459 / runtime:71461)
+#   key        dotted YAML key
+#   english    the game's English text
+#   current    what the mod ships today
+#   polished   proposed replacement
+#   reason     one short phrase
+#
+# Rows already carried by reference/overrides.tsv or review/TRANSLATION_REVIEW.tsv
+# are deliberately NOT repeated here.
+#
+###############################################################################
+# !! NEEDS HUMAN APPROVAL - the "chort" term (700 occurrences) !!
+#
+# The Slavic household spirit "chort" (Russian чорт) is currently rendered
+# 讎特 / 雠特. 讎 means "feud / enmity", so 讎特 is meaningless. The term was
+# machine-translated and then converted by OpenCC. This is ONE term-level
+# decision that touches ~113 config strings across 91 files plus ~665 fields
+# in the runtime DialogueDatabase (obj 71459) - it is NOT itemised as rows
+# below on purpose; fix it once in the converter / a global term rule.
+#
+# RECOMMENDATION: 喬特
+#   * Phonetics: Russian ч is conventionally transliterated 喬 (Черный ->
+#     切爾內/喬爾內, Чорт -> 喬爾特). "喬特" matches чорт far better than
+#     "楚特" (楚 = "chu/ch'u"), which botches the vowel.
+#   * Collision: the game already uses 楚德 for "Chud'" (чудь). 楚特 would sit
+#     one character away from 楚德 and read as a variant of it.
+#   * Precedent: the game already uses 喬 for a "ch" name (George -> 喬治).
+# Runner-up: 楚特 (the earlier audit's pick) - rejected above for vowel +
+# collision reasons. A semantic alternative would be 小鬼 / 家鬼, but the game
+# treats chorts as a named household spirit, so a transliteration is closer.
+# DO NOT APPLY WITHOUT EXPLICIT SIGN-OFF.
+###############################################################################
+#
+# NOTE ON REGISTER: the game's SC script writes the narrator in a rustic
+# Northern-Mainland voice (俺 / 咋 / 孬 / 啥, heavy 兒化). Taiwan Mandarin has
+# none of these. The rows tagged "register" below normalise them. This is a
+# voice decision as much as a terminology one - please confirm the direction
+# (full normalisation vs keeping a rustic flavour) before applying en masse.
+file	key	english	current	polished	reason
+
+Demons	DemonConfigs.Andreiko.Description	Responsible for the 1840 famine in the Orlov gubernia. He is looking forward to a new age.	他盼望新時代，奧爾洛夫省1840年的饑荒就是他乾的好事兒。	他盼望新時代，奧爾洛夫省1840年的饑荒就是他乾的好事。	register (Taiwan vs Mainland)
+Inventory/Bag2	Flavour	We used to take these kozichka bags to school. It was so cool!	俺以前上學就背這種科濟奇卡包，特別有範兒！	我以前上學就背這種科濟奇卡包，特別有範兒！	register (Taiwan vs Mainland)
+Inventory/Bag3	Flavour	We had these purses woven from hay. From washcloth even.	這種袋子俺以前是用乾草編，還有用搓澡巾編的！	這種袋子我以前是用乾草編，還有用搓澡巾編的！	register (Taiwan vs Mainland)
+Inventory/BirdCurse	Flavour	Chud' buried it there, so it better stay that way	既然楚德人把它埋在那兒了，那讓它在那兒吧。	既然楚德人把它埋在那裡了，那讓它在那裡吧。	register (Taiwan vs Mainland)
+Inventory/CardSin	Flavour	We played the game called Sins. You put down two cards on top of other two. If they don't match, then you get a sin.	俺以前都喜歡玩“作孽”，就是你摸兩張牌，放在另外兩張上邊，只要有一對牌花色不一樣，你就作了一份孽。	我以前都喜歡玩“作孽”，就是你摸兩張牌，放在另外兩張上邊，只要有一對牌花色不一樣，你就作了一份孽。	register (Taiwan vs Mainland)
+Inventory/CuckooTears	Flavour	A young bride once turned into a cuckoo. This herb grows wherever she flies and sheds her tears. It can be used to turn werewolves back into their human selves.	一個年輕的新娘變成了杜鵑，邊飛邊流淚。她眼淚落到哪兒，哪兒就會生出這種植物。這花能讓狼人變回人類的形態。	一個年輕的新娘變成了杜鵑，邊飛邊流淚。她眼淚落到哪裡，哪裡就會生出這種植物。這花能讓狼人變回人類的形態。	register (Taiwan vs Mainland)
+Inventory/HeadChud	Flavour	My chicken dug out a thing like that once.	俺家雞之前叼出來過一個這樣的東西。	我家雞之前叼出來過一個這樣的東西。	register (Taiwan vs Mainland)
+Inventory/HeadWorm	Flavour	This brass trinket went through all sorts of things: through thick and thin.	這個黃銅玩意兒什麼事情都經歷過。	這個黃銅玩意什麼事情都經歷過。	register (Taiwan vs Mainland)
+Inventory/Kadilnitsa	Flavour	We were married, and the priest blessed us, his censer swinging back and forth.	神父當時在給俺倆主持婚禮，手裡的香爐就搖來晃去。	神父當時在給我倆主持婚禮，手裡的香爐就搖來晃去。	register (Taiwan vs Mainland)
+Inventory/LifeParaskeva	Flavour	We held a prayer for our cattle in November with the whole church and such. So that they'd stay healthy, the cattle that is.	俺十一月辦了一場禱告會，整個教堂都祈禱，希望家裡的牛沒病沒殃。	我十一月辦了一場禱告會，整個教堂都祈禱，希望家裡的牛沒病沒殃。	register (Taiwan vs Mainland)
+Inventory/MermaidHair	Flavour	Rusalka is sitting there, all black. Her hair is black as soot!	露莎卡就坐在那兒，頭髮黑得跟煤灰似的！	露莎卡就坐在那裡，頭髮黑得跟煤灰似的！	register (Taiwan vs Mainland)
+Inventory/Mixer	Flavour	We did some wild things in the past, weird things. We wore our masks, ran through people's homes, and divined with the whorl. 	俺以前啥怪事兒沒幹過，比如戴上面具，跑人家裡，用這種攪棍給人算命。	我以前什麼怪事沒幹過，比如戴上面具，跑人家裡，用這種攪棍給人算命。	register (Taiwan vs Mainland)
+Inventory/Mooseman	Flavour	An Old Permian God. There were many of them before, but where they disappeared to is unknown. They might as well be evil spirits today.	彼爾姆古代的神祗。這樣的神以前很多，但沒人知道他們都去哪兒了。今時今日，他們說不定已經成了邪靈精怪。	彼爾姆古代的神祗。這樣的神以前很多，但沒人知道他們都去哪裡了。今時今日，他們說不定已經成了邪靈精怪。	register (Taiwan vs Mainland)
+Inventory/OldArrow	Flavour	This storm cloud lets fly a fiery arrow. Where did it go?	烏雲中飛出一支火箭，飛哪兒去了？	烏雲中飛出一支火箭，飛哪裡去了？	register (Taiwan vs Mainland)
+Inventory/Razorva	Flavour	It is poisonous. One time my cow ate razorva, then it died.	這東西有毒。俺家牛就是吃這東西吃死的。	這東西有毒。我家牛就是吃這東西吃死的。	register (Taiwan vs Mainland)
+Inventory/SaintWater	Flavour	We made spells over cattle on Ivan's Day, sprinkled it with holy water so it would stay healthy	俺伊萬·庫帕拉節會給牛施咒，然後把聖水灑牛身上，這樣牛就能不生病了。	我伊萬·庫帕拉節會給牛施咒，然後把聖水灑牛身上，這樣牛就能不生病了。	register (Taiwan vs Mainland)
+Inventory/SewnIcon	Flavour	On Saint Pantaleon's day, we used to walk to the fields with icons. A priest was carrying one, along with water. There we prayed for rain to come.	到了聖潘捷列伊蒙日，俺就帶著聖像下地，神父拿一幅摺頁聖像，跟俺一齊在地裡求雨。	到了聖潘捷列伊蒙日，我就帶著聖像下地，神父拿一幅摺頁聖像，跟我一齊在地裡求雨。	register (Taiwan vs Mainland)
+Inventory/WhiteHeadTrava	Flavour	This white head herb, like chamomile, we gathered – it is used to heal many diseases.	這種白頭草跟俺平時摘的洋甘菊差不多，好些病都能治。	這種白頭草跟我平時摘的洋甘菊差不多，好些病都能治。	register (Taiwan vs Mainland)
+Inventory/Wrap	Flavour	The groom picked up his bride's veil, which is considered bad luck. He died soon after. 	新郎沒到大婚的日子就掀新娘的頭紗，有可能招厄運。之前有個新郎就幹過這樣的事兒，結果沒過多長時間就死了。	新郎沒到大婚的日子就掀新娘的頭紗，有可能招厄運。之前有個新郎就幹過這樣的事，結果沒過多長時間就死了。	register (Taiwan vs Mainland)
+Locations/AllyEgorCemetery	Description	Everyone from Vilgort is buried here. At one time it was reserved for people, but now there are dead animals here too. Spooky.	維葛特的人都埋在這兒。本來是專門埋人的地方，這又多了頭死牛，真瘮人。	維葛特的人都埋在這裡。本來是專門埋人的地方，這又多了頭死牛，真瘮人。	register (Taiwan vs Mainland)
+Locations/AllyEgorFair	Description	Since we're near Vilgort, we might as well visit the shopping stalls.	反正離維葛特也不遠，俺不如去集上逛逛。	反正離維葛特也不遠，我不如去集上逛逛。	register (Taiwan vs Mainland)
+Locations/AllyEgorRoad	Description	There's some sort of noise next to our izba. Could it be the chort from the cemetery?	俺家伊茲巴外邊有動靜，是不是墓地的那個邪靈找上門了？	我家伊茲巴外邊有動靜，是不是墓地的那個邪靈找上門了？	register (Taiwan vs Mainland)
+Locations/AllyEgorVilgort	Description	We should visit the abbe, and ask him some questions about this case.	俺得去找修道院長，仔細問問他是咋回事兒。	我得去找修道院長，仔細問問他是怎麼回事。	register (Taiwan vs Mainland)
+Locations/AllyHeadHouse	Description	And there's the Levonty's izba. Interesting, is there anything left of it? Anyone home?	這是列翁季的伊茲巴。有意思，不知道里邊還有啥，有人嗎？	這是列翁季的伊茲巴。有意思，不知道里邊還有什麼，有人嗎？	register (Taiwan vs Mainland)
+Locations/AllyKarnyshForest	Description	Reaching the heart of the forest is no easy task. The branches are in the way and the trees are gloomy. Hopefully, this will change once Karnysh becomes the master here.	到這片林子中央可不是件容易事兒，又有樹枝擋道，又有大樹遮天蔽日。等這地方歸卡尼什了，希望就能不這樣了。	到這片林子中央可不是件容易事，又有樹枝擋道，又有大樹遮天蔽日。等這地方歸卡尼什了，希望就能不這樣了。	register (Taiwan vs Mainland)
+Locations/AllyKarnyshSimonova	Description	In the village, we can learn more about that crow's forest.	俺可以去這個村仔細打聽打聽烏鴉相中的那片林子。	我可以去這個村仔細打聽打聽烏鴉相中的那片林子。	register (Taiwan vs Mainland)
+Locations/AllyKarnyshTsidovka	Description	The small river is wrapped in a damp fog. We were on the hill just a moment ago, and everything was visible. Can't see anything now.	河上盡是溼乎乎的霧氣。剛才在山上的時候，還啥都能看見，這邊就啥都看不見了。	河上盡是溼乎乎的霧氣。剛才在山上的時候，還什麼都能看見，這邊就什麼都看不見了。	register (Taiwan vs Mainland)
+Locations/AllyKarnyshWell	Description	What's that silhouette? Could that be a well?	那是啥東西？是井嗎？	那是什麼東西？是井嗎？	register (Taiwan vs Mainland)
+Locations/AllyNikolayCreek	Description	Something's not quite right about this creek. Things happen here. A peasant from the village asked you to check it out and deal with any spirits.	這條河不大正常，出了點怪事兒。自由村有個農民讓俺過去看看，萬一發現邪靈了，就給攆走。	這條河不大正常，出了點怪事。自由村有個農民讓我過去看看，萬一發現邪靈了，就給攆走。	register (Taiwan vs Mainland)
+Locations/AllyNikolayKishkonog	LongQuestDescr	Nikolay is troubled over his friend's disappearance, a hunter from Kishkonogov sloboda. We've set out in search of him.	尼古拉有個老朋友失蹤了，說是基什科諾格夫自由村的獵手，他擔心得要命，俺倆準備去找找這人。	尼古拉有個老朋友失蹤了，說是基什科諾格夫自由村的獵手，他擔心得要命，我倆準備去找找這人。	register (Taiwan vs Mainland)
+Locations/AllyNikolayPantina	Description	This road passes by Pantina village. My grandpa took me here when he was making his rounds as a koldun during the haymaking season.	這條路走潘提納村，爺爺當科爾敦的時候，每年一到割草曬草的時候，就經常帶我來這兒。	這條路走潘提納村，爺爺當科爾敦的時候，每年一到割草曬草的時候，就經常帶我來這裡。	register (Taiwan vs Mainland)
+Locations/AllyProshkaChurch	Description	Old churches keep many secrets. It looks like the Church of Transfiguration still has some hidden away.	老教堂一般都有不少秘密，這個主顯聖容教堂感覺還有啥秘密沒讓人知道。	老教堂一般都有不少秘密，這個主顯聖容教堂感覺還有什麼秘密沒讓人知道。	register (Taiwan vs Mainland)
+Locations/AllyProshkaCrossroads	Description	The wind has picked up. It better not rain. We'd be stuck here in Yanidor for who knows how long.	起風了，可別下雨啊。下雨的話，俺就不知道要在亞尼鐸等多長時間了。	起風了，可別下雨啊。下雨的話，我就不知道要在亞尼鐸等多長時間了。	register (Taiwan vs Mainland)
+Locations/MerchantKorob	Description	A peddler is a traveling merchant. Among his wares, one can sometimes find an occasional enchanted item.	這些生意人走街串巷吆喝叫賣，有時候賣的東西會有那麼一兩件沾了魔法的玩意兒。	這些生意人走街串巷吆喝叫賣，有時候賣的東西會有那麼一兩件沾了魔法的玩意。	register (Taiwan vs Mainland)
+Locations/MerchantKorob2	Description	A peddler is a traveling merchant. Among his wares, one can sometimes find an occasional enchanted item.	這些生意人走街串巷吆喝叫賣，有時候賣的東西會有那麼一兩件沾了魔法的玩意兒。	這些生意人走街串巷吆喝叫賣，有時候賣的東西會有那麼一兩件沾了魔法的玩意。	register (Taiwan vs Mainland)
+Locations/MerchantKorob3	Description	A peddler is a traveling merchant. Among his wares, one can sometimes find an occasional enchanted item.	這些生意人走街串巷吆喝叫賣，有時候賣的東西會有那麼一兩件沾了魔法的玩意兒。	這些生意人走街串巷吆喝叫賣，有時候賣的東西會有那麼一兩件沾了魔法的玩意。	register (Taiwan vs Mainland)
+Locations/UnusedWeek1Day4UstUrol	Description	Supplicants came from this village and told me that people hear someone talking in the cemetery at night. The living dead, perhaps?	這個村子有鄉親跑多遠到俺家，給我說他們夜裡聽見墓地有人說話。莫非有人死而復生？	這個村子有鄉親跑多遠到我家，給我說他們夜裡聽見墓地有人說話。莫非有人死而復生？	register (Taiwan vs Mainland)
+Locations/Week1Day1Gorodishenskoy	Description	It's said that the Chud' lived here. A dangerous and unholy place. The ravines are death traps at night. Falling into one will surely leave you crippled.	據說楚德人當年就住這個地方。這兒又不安全、又邪性，一到夜裡，不論什麼活物，進來就別想活著出去了。掉進這麼樣的河谷，摔斷腿都算是好事兒了。	據說楚德人當年就住這個地方。這裡又不安全、又邪性，一到夜裡，不論什麼活物，進來就別想活著出去了。掉進這麼樣的河谷，摔斷腿都算是好事了。	register (Taiwan vs Mainland)
+Locations/Week1Day1Nizva	Description	This river flows through Polyud Ridge. Someone in Pokcha village told me that this river was formed from the tears of Polyud. Sounds like a tall tale.	這條河流經潑留德嶺。波克恰村有人說這條河是英雄潑留德的眼淚淌出來的，聽著就不像是真事兒。	這條河流經潑留德嶺。波克恰村有人說這條河是英雄潑留德的眼淚淌出來的，聽著就不像是真事。	register (Taiwan vs Mainland)
+Locations/Week1Day2Crossroads	Description	These are the crossroads where my recent initiation took place. It is surely a place where both roads and human fates intersect.	我前天啟蒙儀式就是在這兒辦的，這個地方確實既是路交叉的地方，也是命運相交的地方。	我前天啟蒙儀式就是在這裡辦的，這個地方確實既是路交叉的地方，也是命運相交的地方。	register (Taiwan vs Mainland)
+Locations/Week1Day2KrivoyLog	Description	This ravine is curved, hence its name. Plenty of misfortunes happen around this place, leshiy's work, aye. An ill place this is.	這個山溝彎彎曲曲，就有了這個名字。這個地方出過不少事兒，噯耶，都跟列希脫不了干係，不是什麼好地方。	這個山溝彎彎曲曲，就有了這個名字。這個地方出過不少事，噯耶，都跟列希脫不了干係，不是什麼好地方。	register (Taiwan vs Mainland)
+Locations/Week1Day2MermaidWaters	Description	This picturesque backwater got its name because of the mermaid sightings back in the day. I've never seen any myself, though. 	這個地方是河水滯留形成的湖，風景如畫，叫“露莎卡湖”是因為之前有人在這兒見過露莎卡，我是沒親眼見過。	這個地方是河水滯留形成的湖，風景如畫，叫“露莎卡湖”是因為之前有人在這裡見過露莎卡，我是沒親眼見過。	register (Taiwan vs Mainland)
+Locations/Week1Day2Orlov	Description	Kurya is an old Permian word: an old riverbed. I can get to the old banyas through here, but who knows what lurks in these parts at night.	庫爾亞是古彼爾姆語的詞兒，意思是“老河床”。我穿過這個地方，就到那些老班尼亞所在的地方了，不過誰知道這兒晚上會有什麼。	庫爾亞是古彼爾姆語的詞兒，意思是“老河床”。我穿過這個地方，就到那些老班尼亞所在的地方了，不過誰知道這裡晚上會有什麼。	register (Taiwan vs Mainland)
+Locations/Week1Day2Znahar	Description	A famous herbalist appeared in these parts. I should check out the herbs she has for sale.	這這個地方來了個有名的藥師，我該去看看她那兒有什麼藥草。	這個地方來了個有名的藥師，我該去看看她那裡有什麼藥草。	register (Taiwan vs Mainland)
+Locations/Week1Day4Girl	Description	People rarely venture into these marshes. Since they're not really inhabited by anyone, various spirits have made this area their dwelling.	一般沒人敢來這個溼地，根本沒人住這兒，所以經常有各種邪靈出沒。	一般沒人敢來這個溼地，根本沒人住這裡，所以經常有各種邪靈出沒。	register (Taiwan vs Mainland)
+Locations/Week1Day4Log	Description	Peasants spotted a great whirlwind in this ravine a few days ago and asked me to check it out.	有老鄉前幾天在這個地方看見一個巨大的旋風，他們想讓我去看看是怎麼回事兒。	有老鄉前幾天在這個地方看見一個巨大的旋風，他們想讓我去看看是怎麼回事。	register (Taiwan vs Mainland)
+Locations/Week1Day4Salman	Description	People rarely venture into these marshes. Since they're not really inhabited by anyone, various spirits have made this area their dwelling.	一般沒人敢來這個溼地，根本沒人住這兒，所以經常有各種邪靈出沒。	一般沒人敢來這個溼地，根本沒人住這裡，所以經常有各種邪靈出沒。	register (Taiwan vs Mainland)
+Locations/Week1Day4Tashkov	Description	There's no shortage of waterfalls and ravines when you travel around Cherdyn' Uyezd. They say further to the west one can even see mountains that surround the region.	切爾登縣不論哪兒都能看到瀑布和山溝。他們說再往西走，就能看到環繞這片區域的山。	切爾登縣不論哪裡都能看到瀑布和山溝。他們說再往西走，就能看到環繞這片區域的山。	register (Taiwan vs Mainland)
+Locations/Week1Day5Bereg	Description	The road to Vilgort winds along the picturesque bank of the Kolva River.	去維葛特的路邊上就是科爾瓦河，這河的景色不孬。	去維葛特的路邊上就是科爾瓦河，這河的景色不錯。	register (Taiwan vs Mainland)
+Locations/Week1Day6Bonev	Description	Through these picturesque woods lies the road to Vilgort. Peasants say it's haunted. I'll have to inspect this road and get rid of any demons.	這條路的景色不孬，順著它走出這片樹林就是維葛特了。鄉親說這路上鬧鬼了，我得去看看咋回事兒，有邪靈的話就順手除了。	這條路的景色不錯，順著它走出這片樹林就是維葛特了。鄉親說這路上鬧鬼了，我得去看看怎麼回事，有邪靈的話就順手除了。	register (Taiwan vs Mainland)
+Locations/Week1Day6Izba	Description	Our demons spotted a magic herb in the grove near the izba. I should go and get it while the night is still young.	俺家的讎特在俺伊茲巴跟前的樹林發現了一種魔法藥草。趁現在天還沒黑透，我該去把它採回來。	我家的讎特在我伊茲巴跟前的樹林發現了一種魔法藥草。趁現在天還沒黑透，我該去把它採回來。	register (Taiwan vs Mainland)
+Locations/Week1Day6RoadToVilgort	Description	This part of the road passes close to a steep drop over the Kolva. Once a leshiy led some lad around here and nearly caused him to fall into the river.	這條路這塊兒旁邊就是個陡坡，下邊是科爾瓦河。之前有個列希把一個小男孩兒引到這個地方，差一點兒就讓他掉進河裡了。	這條路這塊兒旁邊就是個陡坡，下邊是科爾瓦河。之前有個列希把一個小男孩引到這個地方，差一點就讓他掉進河裡了。	register (Taiwan vs Mainland)
+Locations/Week1Day7Abachkin	Description	Thick woods are growing near Abachkin Waters. They're called the same way as the ones near Pyanteg. I wonder why.	亞布希金湖邊有一片樹林，樹長得很密，這地方和皮亞涅邊上的林子一樣，也隨了村莊的名字，也不知道這是個啥規矩。	亞布希金湖邊有一片樹林，樹長得很密，這地方和皮亞涅邊上的林子一樣，也隨了村莊的名字，也不知道這是個什麼規矩。	register (Taiwan vs Mainland)
+Locations/Week1Day7Vyatkino	Description	This old cemetery is abandoned. It's said that people from ancient times are buried here. That means that this is a powerful place. Maybe I could find some useful items?	這片墓地早就荒了，聽他們說，裡邊埋的都是古人，那這個地方的法力肯定不弱，我說不定能找著啥有用的東西？	這片墓地早就荒了，聽他們說，裡邊埋的都是古人，那這個地方的法力肯定不弱，我說不定能找著什麼有用的東西？	register (Taiwan vs Mainland)
+Locations/Week2Day1TelegrafBroken	Description	What could have done this? Evil spirits and perhaps even the weather may be opposed to such novelties.	這個線到底是咋斷的？是大風颳的嗎？還是有邪靈牴觸這個新鮮玩意兒？	這個線到底是怎麼斷的？是大風颳的嗎？還是有邪靈牴觸這個新鮮玩意？	register (Taiwan vs Mainland)
+Locations/Week2Day1UstBorov	Description	Plant settlement. The families of the workers and the manager live here.	工廠的家屬區，工人和廠長的家屬都住在這兒。	工廠的家屬區，工人和廠長的家屬都住在這裡。	register (Taiwan vs Mainland)
+Locations/Week2Day1UstBorovPlant	Description	The saltworks on the bank of the Kama. This place has become haunted recently by evil spirits, everyone around here knows that.	這家鹽廠就在卡馬河邊，周圍的人都知道這兒最近鬧邪靈了。	這家鹽廠就在卡馬河邊，周圍的人都知道這裡最近鬧邪靈了。	register (Taiwan vs Mainland)
+Locations/Week2Day2LarDay	Description	This is where they keep the salt brine before cooking it. This izba is closed shut – an ideal place for evil spirits.	鹽滷下鍋煮之前就存在這兒。這種伊茲巴封得嚴嚴實實，邪靈最喜歡這種地方。	鹽滷下鍋煮之前就存在這裡。這種伊茲巴封得嚴嚴實實，邪靈最喜歡這種地方。	register (Taiwan vs Mainland)
+Locations/Week2Day2LarNight	Description	This is where they keep the salt brine before cooking it. This izba is closed shut - an ideal place for evil spirits.	鹽滷下鍋煮之前就存在這兒。這種伊茲巴封得嚴嚴實實，邪靈最喜歡這種地方。	鹽滷下鍋煮之前就存在這裡。這種伊茲巴封得嚴嚴實實，邪靈最喜歡這種地方。	register (Taiwan vs Mainland)
+Locations/Week2Day3HellLake	Description	This is the lake Old Egor told me about. Various types of evil spirits are often seen here. This is because the border between worlds is thin here.	這就是葉戈爾爺爺說的那個湖，這地方經常能見著各種各樣的邪靈，因為世界的邊界在這兒不清晰。	這就是葉戈爾爺爺說的那個湖，這地方經常能見著各種各樣的邪靈，因為世界的邊界在這裡不清晰。	register (Taiwan vs Mainland)
+Locations/Week2Day3Nodia	Description	A hermit told me there used to be a hunter's camp here.	那個隱士說有幾個獵手之前在這兒紮了個營。	那個隱士說有幾個獵手之前在這裡紮了個營。	register (Taiwan vs Mainland)
+Locations/Week2Day3VerhChugr	Description	The swamp is so overgrown with moss that it looks like the back of some huge beast partially buried underground. I've heard stories of Mang-Ont. Could this be it?	這個沼澤到處長的都是苔蘚，看著就跟一頭巨獸有一部分埋在地下了似的。我聽說過芒昂的故事，難不成說的就是這兒？	這個沼澤到處長的都是苔蘚，看著就跟一頭巨獸有一部分埋在地下了似的。我聽說過芒昂的故事，難不成說的就是這裡？	register (Taiwan vs Mainland)
+Locations/Week2Day4Circle	Description	The dead walk around in circles. Why? The mermaid didn't tell me about that.	這些水鬼原地轉圈幹啥的？那個露莎卡沒跟我提過這事兒。	這些水鬼原地轉圈幹什麼的？那個露莎卡沒跟我提過這事。	register (Taiwan vs Mainland)
+Locations/Week2Day4Nets	Description	Fishermen have placed their nets here. They may be the same fishermen who helped me.	漁民把漁網下在這兒，可能就是送我過來的那幾個漁民。	漁民把漁網下在這裡，可能就是送我過來的那幾個漁民。	register (Taiwan vs Mainland)
+Locations/Week2Day4Sleigh	Description	There are a lot of logs here. Seems like anything that falls into the water can be found here.	這兒有不少木頭，看樣子掉水裡的東西都衝到這兒來了。	這裡有不少木頭，看樣子掉水裡的東西都衝到這裡來了。	register (Taiwan vs Mainland)
+Locations/Week2Day5Cemetery	Description	The road to the vodyanoi's chambers passes through an underwater cemetery. Not the most welcoming of spirits, these vodyanois.	去沃佳諾伊宮殿的路上有一片水下墓地。沃佳諾伊這種精怪不咋歡迎外人。	去沃佳諾伊宮殿的路上有一片水下墓地。沃佳諾伊這種精怪不太歡迎外人。	register (Taiwan vs Mainland)
+Locations/Week2Day5SaltCave	Description	An underwater cave west of the cemetery. What secrets does the vodyanoi hide there?	墓地西邊有個水下洞穴，沃佳諾伊是有啥秘密藏在那兒了嗎？	墓地西邊有個水下洞穴，沃佳諾伊是有什麼秘密藏在那裡了嗎？	register (Taiwan vs Mainland)
+Locations/Week2Day5Seaweed	Description	Another underwater thicket. Just like those at the surface.	又是一片水下叢林，跟陸上的沒啥兩樣。	又是一片水下叢林，跟陸上的沒什麼兩樣。	register (Taiwan vs Mainland)
+Locations/Week2Day5Throne	Description	I will meet Vakul here. He will hopefully be able to break the seal at once.	我到那兒就能見著瓦庫了，希望他能一下子就給我破了這個封印。	我到那裡就能見著瓦庫了，希望他能一下子就給我破了這個封印。	register (Taiwan vs Mainland)
+Locations/Week2Day5Throne	LongQuestDescr	The mermaid says that we're approaching Vakul's palace. I hope she's not leading me into another trap!	露莎卡說俺快到瓦庫的宮殿了，希望她這回沒坑我！	露莎卡說我快到瓦庫的宮殿了，希望她這回沒坑我！	register (Taiwan vs Mainland)
+Locations/Week2Day6ForestCut	Description	They say some bandits were felling timber here. Perhaps I can learn something about them.	他們說這兒前兩天有土匪砍樹，我可以過去看看。	他們說這裡前兩天有土匪砍樹，我可以過去看看。	register (Taiwan vs Mainland)
+Locations/Week2Day6Nekrasova	Description	A man lived in this village. The vodyanoi caught him and made him herd his cows. Now you can pray for his soul here.	這個村有個男的讓沃佳諾伊抓走給他放牛去了，可以在這兒給他辦個祈禱會。	這個村有個男的讓沃佳諾伊抓走給他放牛去了，可以在這裡給他辦個祈禱會。	register (Taiwan vs Mainland)
+Locations/Week2Day6Saltanovo	Description	A good village. I've been here plenty of times, lots of acquaintances too.	這個村好，我來過好幾次，也有不少熟人住這兒。	這個村好，我來過好幾次，也有不少熟人住這裡。	register (Taiwan vs Mainland)
+Locations/Week2Day7Godya	Description	A small river. Apparently, people used to drown here often. Nothing strange about that - there's a mill nearby.	這條小河以前好像經常有人淹死，沒啥奇怪的。河附近有一座磨坊。	這條小河以前好像經常有人淹死，沒什麼奇怪的。河附近有一座磨坊。	register (Taiwan vs Mainland)
+Locations/Week3Day1Backyard	Description	Chorts do all of our housework. You can hear the sound of an axe chopping right now.	讎特包攬了俺家所有家務，現在能聽到劈柴火的聲音。	讎特包攬了我家所有家務，現在能聽到劈柴火的聲音。	register (Taiwan vs Mainland)
+Locations/Week3Day1Field	Description	I have to follow this road to the island of trees.	我得走這條路，才能到小樹林那兒。	我得走這條路，才能到小樹林那裡。	register (Taiwan vs Mainland)
+Locations/Week3Day1Herbalist	Description	A famous herbalist is traveling through these parts. I should check out the herbs she has for sale.	這一片來了個很有名的藥師，我應該去她那兒看看有啥藥草。	這一片來了個很有名的藥師，我應該去她那裡看看有什麼藥草。	register (Taiwan vs Mainland)
+Locations/Week3Day2Ovins	Description	There's nothing to dry or store in the barns yet, so the youngsters are enjoying themselves.	這些糧倉還沒啥要烘乾、儲存的東西，年輕人就都跑這兒來唱歌聚會了。	這些糧倉還沒什麼要烘乾、儲存的東西，年輕人就都跑這裡來唱歌聚會了。	register (Taiwan vs Mainland)
+Locations/Week3Day2Pokcha	Description	I need to find out exactly where the brewers put the boiling pot. I don't want to wander along the Kolva all night!	我得先知道釀酒的工人具體是在哪兒煮麥芽漿的。我可不想大晚上的在科爾瓦河邊瞎晃盪！	我得先知道釀酒的工人具體是在哪裡煮麥芽漿的。我可不想大晚上的在科爾瓦河邊瞎晃盪！	register (Taiwan vs Mainland)
+Locations/Week3Day3Gorenka	LongQuestDescr	Weddings are tempting for kolduns. They are occasions where they can curse the newlyweds and demonstrate their powers. I should protect Nikolai and his changeling bride.	只要知道有人結婚，有些科爾敦心裡就癢癢，就想去壞人家的好事，藉著機會顯擺自己的能耐。尼古拉和他的換生靈新娘子馬上就要辦事兒了，我不能讓別人攪了他們的喜事。	只要知道有人結婚，有些科爾敦心裡就癢癢，就想去壞人家的好事，藉著機會炫耀自己的能耐。尼古拉和他的換生靈新娘子馬上就要辦事了，我不能讓別人攪了他們的喜事。	register (Taiwan vs Mainland)
+Locations/Week3Day3LoudRoom	Description	What is that noise? It couldn't be chorts, could it?	啥動靜？不會是讎特吧？	什麼動靜？不會是讎特吧？	register (Taiwan vs Mainland)
+Locations/Week3Day4Forest	Description	While we were busy with the wedding, that koldun could have taken advantage of the Crooked Forest	俺忙著籌備事兒的時候，這個科爾敦可能就已經在扭木林佈下了埋伏。	我忙著籌備事的時候，這個科爾敦可能就已經在扭木林佈下了埋伏。	register (Taiwan vs Mainland)
+Locations/Week3Day4Vilgort	LongQuestDescr	Some koldun is intent on disrupting the wedding. I need to protect the procession from curses and bring the guests to Vilgort.	有個科爾敦想壞了新人的喜事兒。我得保護接親的隊伍，不讓大家受了詛咒，然後把客人帶到維葛特。	有個科爾敦想壞了新人的喜事。我得保護接親的隊伍，不讓大家受了詛咒，然後把客人帶到維葛特。	register (Taiwan vs Mainland)
+Locations/Week3Day5Bereg	Description	This is the place the shepherd was attacked by wolves. They were probably the wedding guests!	放牛的那個人就是在這兒遇見狼群的，幾頭狼說不定就是喝喜酒的客人！	牧人就是在這裡遇見狼群的，幾頭狼說不定就是喝喜酒的客人！	register (Taiwan vs Mainland)
+Locations/Week3Day5Knijih	Description	I haven't heard anything about this village. What do they even do here, sell books, as the name implies?	從來沒聽說過這個村，這個地方是幹啥的，有人在這兒買書嗎？	從來沒聽說過這個村，這個地方是幹什麼的，有人在這裡買書嗎？	register (Taiwan vs Mainland)
+Locations/Week3Day5Pokcha	Description	I should check on the bride. How is she after yesterday's events?	我得去看看新娘，昨天出了那樣的事兒，不知道咋樣了。	我得去看看新娘，昨天出了那樣的事，不知道怎麼樣了。	register (Taiwan vs Mainland)
+Locations/Week3Day5Trakt	Description	This road is a wide one. I've rarely walked down one this big!	這條路可真寬，我還沒咋走過這麼寬的路呢！	這條路可真寬，我還沒怎麼走過這麼寬的路呢！	register (Taiwan vs Mainland)
+Locations/Week3Day6Polud	Description	They say that Polud was the name of a mighty hero. When he defeated all of his enemies, he went underground to sleep, waiting for his time to return.	他們都說潑留德是個大英雄的名字。這人打敗敵人之後，就跑地底下睡覺去了，啥時候需要他，他啥時候才會再來。	他們都說潑留德是個大英雄的名字。這人打敗敵人之後，就跑地底下睡覺去了，什麼時候需要他，他什麼時候才會再來。	register (Taiwan vs Mainland)
+Locations/Week3Day6Village	Description	People left this village long ago. It makes me sad to see all of these empty houses. It's as if I lived here once myself.	這個村荒了老長時間。我看著這一間間空房子，心裡也不好受，就好像我在這兒住過似的。	這個村荒了老長時間。我看著這一間間空房子，心裡也不好受，就好像我在這裡住過似的。	register (Taiwan vs Mainland)
+Locations/Week3Day6Woods	Description	I can't see anything from here. What's hiding there? Was that a shadow just now?..	站這兒啥都看不見。底下藏的啥東西？剛才那是個影子嗎？	站在這裡什麼都看不見。底下藏的什麼東西？剛才那是個影子嗎？	register (Taiwan vs Mainland)
+Locations/Week3Day7Blood	Description	Airat noticed grim markings on the grass and on the branches. We should learn what happened here.	艾拉特看見地上和樹枝上邊都有血，俺得過去看看是咋回事兒。	艾拉特看見地上和樹枝上邊都有血，我得過去看看是怎麼回事。	register (Taiwan vs Mainland)
+Locations/Week3Day7Cave	Description	The drowned woman told me about an old corpse at the spring outlet. Who could that be? A victim of the leshiy?	那個女水鬼說泉眼那邊有個人死了老長時間了。不知道是啥人？是讓列希弄死的嗎？	那個女水鬼說泉眼那邊有個人死了老長時間了。不知道是什麼人？是讓列希弄死的嗎？	register (Taiwan vs Mainland)
+Locations/Week3Day7Creek	Description	They say that the heroic Polud was loved by a girl called Vishera. I don't remember how the story goes, but her tears are all that remain. The spring bears her name.	他們說有個小女孩叫維謝拉，愛上了大英雄潑留德。具體咋回事兒我想不起來了，就記得她最後只剩下了眼淚，這眼泉的名字就是那麼來的。	他們說有個小女孩叫維謝拉，愛上了大英雄潑留德。具體怎麼回事我想不起來了，就記得她最後只剩下了眼淚，這眼泉的名字就是那麼來的。	register (Taiwan vs Mainland)
+Locations/Week3Day7Footstones	Description	Mount Polud looms over us. We'll reach the werewolves soon.	潑留德山高高聳立，俺馬上就能找到那些狼人了。	潑留德山高高聳立，我馬上就能找到那些狼人了。	register (Taiwan vs Mainland)
+Locations/Week3Day7Lair	Description	The master of the mountain lives here.	這座山的主宰住這兒。	這座山的主宰住這裡。	register (Taiwan vs Mainland)
+Locations/Week3Day7LairEntrance	Description	This is the threshold of the mountain halls. The master that commands the werewolves lives here.	這是山殿的門檻。狼人的主人就住在這兒。	這是山殿的門檻。狼人的主人就住在這裡。	register (Taiwan vs Mainland)
+Locations/Week4Day1Branches	Description	I can't see anything in this thicket. Did someone just move between the branches?	這一林子啥都看不見，剛才是不是有人竄過去了？	這一林子什麼都看不見，剛才是不是有人竄過去了？	register (Taiwan vs Mainland)
+Locations/Week4Day1FirTree	Description	My Lord, such a huge fir broken by the storm. I can see its branches from here.	我的主啊，這麼高一棵雲杉讓風給颳倒了。我站這兒都能看見那棵樹的樹枝。	我的主啊，這麼高一棵雲杉讓風給颳倒了。我站在這裡都能看見那棵樹的樹枝。	register (Taiwan vs Mainland)
+Locations/Week4Day1UnmovableWood	Description	How do I pass through here? This is no place for a human being.	得咋出去呢？這兒明顯不是人類該來的地方。	得怎麼出去呢？這裡明顯不是人類該來的地方。	register (Taiwan vs Mainland)
+Locations/Week4Day2Cart	Description	This is where that man's cart went offroad. Looks like it was carrying an entire granary.	那人的馬車在這兒滑進沼澤裡了，車上就跟裝了一個糧倉似的。	那人的馬車在這裡滑進沼澤裡了，車上就跟裝了一個糧倉似的。	register (Taiwan vs Mainland)
+Locations/Week4Day3BadPlace	Description	This morbid place is home to some sort of evil spirits, ancient ones at that. I can just feel it.	我能感覺到，這個地方住了啥邪靈，而且是個古代的邪靈。	我能感覺到，這個地方住了什麼邪靈，而且是個古代的邪靈。	register (Taiwan vs Mainland)
+Locations/Week4Day4Abandoned	Description	In their free time, young people gather in izbas that have no owners.	年輕小孩沒事兒的時候，就喜歡找個沒人的伊茲巴湊在一起。	年輕小孩沒事的時候，就喜歡找個沒人的伊茲巴湊在一起。	register (Taiwan vs Mainland)
+Locations/Week4Day4Galina	Description	This is the izba of the missing girl I disenchanted on the crossroads.	失蹤的女孩兒原來就住這兒，我昨天去十字路口替她除了詛咒。	失蹤的女孩原來就住這裡，我昨天去十字路口替她除了詛咒。	register (Taiwan vs Mainland)
+Locations/Week4Day6Forest	Description	This forest has also grown wild. This leshiy has no bounds. Where does he get so much power?	這片林子長野，這個列希也是肆無忌憚。他是哪兒來的那麼大能量？	這片林子長野，這個列希也是肆無忌憚。他是哪裡來的那麼大能量？	register (Taiwan vs Mainland)
+Locations/Week4Day6Icon	Description	Efim says that I can find an icon here that may help me.	葉菲姆說他在這兒藏了一幅神像，我可能用得上。	葉菲姆說他在這裡藏了一幅神像，我可能用得上。	register (Taiwan vs Mainland)
+Locations/Week4Day6Lug	Description	When you drink a lot of water, they call it guzzling. So what kind of a field is it? One that drinks a lot?	“牛飲”是大口喝水的意思，“牛飲田野”是啥意思？這片地很能喝水？	“牛飲”是大口喝水的意思，“牛飲田野”是什麼意思？這片地很能喝水？	register (Taiwan vs Mainland)
+Locations/Week4Day6Stump	Description	The road goes back to that old tree.	走這條路能到那棵老樹那兒。	走這條路能到那棵老樹那裡。	register (Taiwan vs Mainland)
+Locations/Week4Day7CreekBase	Description	Here's where that creek ends	這河到這兒就到頭了。	這河到這裡就到頭了。	register (Taiwan vs Mainland)
+Locations/Week4Day7Viam	Description	An old abandoned field. Why doesn't it have any trees?	這一片地全荒了，咋連棵樹都沒有？	這一片地全荒了，怎麼連棵樹都沒有？	register (Taiwan vs Mainland)
+Locations/Week5Day1Ezova	Description	This village is not far from Vilgort. That's why there are so many familiar faces.	這個村離維葛特不遠，在這兒能見到不少熟人。	這個村離維葛特不遠，在這裡能見到不少熟人。	register (Taiwan vs Mainland)
+Locations/Week5Day1VilgortChurch	LongQuestDescr	Nikolay and his bride are ready to get married, but Alexander has to continue to spoil their wedding. His chorts force him to. You intend to protect your friends and learn of the items for the Kupala rite in the process.	尼古拉兩口準備好辦喜事兒了，只是亞歷山大還要來搗亂，他這次是被讎特逼的。你想保護好這些朋友，同時瞭解庫帕拉儀式要用的各種東西。	尼古拉兩口準備好辦喜事了，只是亞歷山大還要來搗亂，他這次是被讎特逼的。你想保護好這些朋友，同時瞭解庫帕拉儀式要用的各種東西。	register (Taiwan vs Mainland)
+Locations/Week5Day2CherdynMarket	Description	I should visit the Cherdyn market. Who knows what I'll find here.	我該去切爾登的市場看看，誰知道我在那邊能見著啥東西。	我該去切爾登的市場看看，誰知道我在那邊能見著什麼東西。	register (Taiwan vs Mainland)
+Locations/Week5Day2Hotel	Description	That man who collects stories about evil spirits lives here.	收集邪靈故事的那個人就住這兒。	收集邪靈故事的那個人就住這裡。	register (Taiwan vs Mainland)
+Locations/Week5Day2Police	LongQuestDescr	To conduct the Kupala rite I need the church knife, among other things. The caretaker hid it somewhere.	要辦庫帕拉的儀式，就得有聖矛，不知道教堂門房把它藏啥地方去了。	要辦庫帕拉的儀式，就得有教堂刀，不知道教堂門房把它藏什麼地方去了。	register (Taiwan vs Mainland)
+Locations/Week5Day3Carpenter	Description	The carpenters established their own plant here, in Anbor. Why would anyone pay them, when you can always count on helping hands?	那幾個木匠在這兒蓋了個廠。木頭玩意兒完全都可以請人做，誰會來這兒買呢？	那幾個木匠在這裡蓋了個廠。木頭玩意完全都可以請人做，誰會來這裡買呢？	register (Taiwan vs Mainland)
+Locations/Week5Day3Herbalist	Description	It might be worth visiting the local herbalist to replenish my stock of herbs.	我得去本地的藥師那兒買點兒藥草。	我得去本地的藥師那裡買點兒藥草。	register (Taiwan vs Mainland)
+Locations/Week5Day3Pyanteg	Description	This village has another church, a bit newer than the Church of the Epiphany. They also built a school recently. I wish I could study in a real school.	他們村還有個教堂，蓋得比主顯節教堂晚一點兒。他們前兩年還蓋了個學校，我要是能在正兒八經的學校上兩年學該多好。	他們村還有個教堂，蓋得比主顯節教堂晚一點。他們前兩年還蓋了個學校，我要是能在正兒八經的學校上兩年學該多好。	register (Taiwan vs Mainland)
+Locations/Week5Day4BigField	Description	This village has it all. Big houses, big fields. They're pretty well-off if you ask me.	這個村是要啥有啥，大房子、大片的地，村裡人生活肯定也不孬。	這個村是要什麼有什麼，大房子、大片的地，村裡人生活肯定也不錯。	register (Taiwan vs Mainland)
+Locations/Week5Day4IskorVillage	Description	This village is large and quite beautiful. Which makes it that much harder to look at. Such a tragic sight. Where fever thrives, everything starts to decay.	這地方是個大村，住的人可不少，以前風景還好。現在成了這個樣，看著心裡真的難受。只要熱疫犯了，不論啥地方，都是死氣沉沉。	這地方是個大村，住的人可不少，以前風景還好。現在成了這個樣，看著心裡真的難受。只要熱疫犯了，不論什麼地方，都是死氣沉沉。	register (Taiwan vs Mainland)
+Locations/Week5Day4Road	Description	They say this road was once taken by a tsar being led to his own execution. What was the reason for it? I don't remember.	他們說有個皇帝上刑場走過這條路。是因為啥處刑的來著？想不起來了。	他們說有個皇帝上刑場走過這條路。是因為什麼處刑的來著？想不起來了。	register (Taiwan vs Mainland)
+Locations/Week5Day4SmallField	Description	This is the place where peasants leave gifts to the leshiy.	那個老鄉就是在這兒給列希上的供。	那個老鄉就是在這裡給列希上的供。	register (Taiwan vs Mainland)
+Locations/Week5Day5Crossroads	Description	This is where my initiation took place. Seems like a hundred years ago...Everything has changed so much.	我就是在這兒參加的啟蒙儀式，現在想想，感覺跟一百年前的事兒似的……全都變樣了。	我就是在這裡參加的啟蒙儀式，現在想想，感覺跟一百年前的事似的……全都變樣了。	register (Taiwan vs Mainland)
+Locations/Week5Day5EgorWoods	Description	Our house on the outskirts of Vilgort often attracts chorts. They're sure to turn up today, at the eve of the solstice.	俺家房子在維葛特郊外，經常招來讎特。今天是夏至前一天，肯定又會有讎特來。	我家房子在維葛特郊外，經常招來讎特。今天是夏至前一天，肯定又會有讎特來。	register (Taiwan vs Mainland)
+Locations/Week5Day5Fields	Description	It's getting dark. The forest isn't far from here. I can also visit the villagers and take a peek at what they're doing for the holiday. They always think of something fun.	天要黑了，那片林子離這兒不遠。我可以去瞅一眼大家節過得咋樣，他們有的是好玩的點子。	天要黑了，那片林子離這裡不遠。我可以去瞅一眼大家節過得怎麼樣，他們有的是好玩的點子。	register (Taiwan vs Mainland)
+Locations/Week5Day5KolvaFires	Description	The residents of Vilgort have built a fire and dance in circles. The girls are probably going to do divinations. I don't need divinations – I already know my destiny!	維葛特的鄉親生了個火堆，正圍在火邊跳舞。幾個丫頭可能在算命。我不用算命，我已經知道自己以後會是啥樣了！	維葛特的鄉親生了個火堆，正圍在火邊跳舞。幾個丫頭可能在算命。我不用算命，我已經知道自己以後會是什麼樣了！	register (Taiwan vs Mainland)
+Locations/Week6Day1Library	Description	I'm rather curious. What type of books does a prominent koldun keep in his library?	不知道家裡這麼顯赫的科爾敦家裡能有啥書？	不知道家裡這麼顯赫的科爾敦家裡能有什麼書？	register (Taiwan vs Mainland)
+Locations/Week6Day2Crawl	Description	Where do these tunnels lead? I should be careful not to get lost!	這個地道是上哪兒去的？我得千萬小心，別迷路了！	這個地道是上哪裡去的？我得千萬小心，別迷路了！	register (Taiwan vs Mainland)
+Locations/Week6Day2Dusty	Description	An untrodden path. Should I even look there?	那邊沒啥人去過，我該過去看看嗎？	那邊沒什麼人去過，我該過去看看嗎？	register (Taiwan vs Mainland)
+Locations/Week6Day2Pyanteg	Description	Should I stop by the merchant? I'll have a hard time dealing with Spinner without any herbs.	我是不是該去賣東西的那邊看看？手上啥藥草都沒有的話，肯定難能打敗織婆。	我是不是該去賣東西的那邊看看？手上什麼藥草都沒有的話，肯定很難打敗織婆。	register (Taiwan vs Mainland)
+Locations/Week6Day2Spinner	Description	What's over there? I can't see clearly. Is that a stove?	那邊是啥東西？看不大清，是爐子嗎？	那邊是什麼東西？看不大清，是爐子嗎？	register (Taiwan vs Mainland)
+Locations/Week6Day2WeaverMech	Description	I hear something. It sounds like someone is working the loom.	我聽見啥動靜了，聽著誰在用織布機。	我聽見什麼動靜了，聽著誰在用織布機。	register (Taiwan vs Mainland)
+Locations/Week6Day2Web	Description	You cannot hold me with this, Spinner!	織婆，這種玩意兒可攔不住我！	織婆，這種玩意可攔不住我！	register (Taiwan vs Mainland)
+Locations/Week6Day3Crossroads	Description	This is where it all began... I sense grandpa there, at the crossroads.	都是打這兒開始的……我感覺到爺爺在那兒，爺爺在十字路口。	都是打這裡開始的……我感覺到爺爺在那裡，爺爺在十字路口。	register (Taiwan vs Mainland)
+Locations/Week7Day1Fair	Description	Here chorts are trading their hellish goods. At hellish prices!	讎特的陰間東西都是在這兒賣，價錢貴得能嚇死人！	讎特的陰間東西都是在這裡賣，價錢貴得能嚇死人！	register (Taiwan vs Mainland)
+Locations/Week7Day1GatesOfHell	Description	To make my wish come true I have to pass through Hell itself! I've come too far to stop here.	我要想心願成真，就得從地獄中間傳過去！費了千辛萬苦才到這兒裡，絕對不能半途而廢！	我要想心願成真，就得從地獄中間穿過去！費了千辛萬苦才走到這裡，絕對不能半途而廢！	register (Taiwan vs Mainland)
+Locations/Week7Day1GatesOfHellPreIzba	Description	To make my wish come true I have to pass through Hell itself! I've come too far to stop here.	我要想心願成真，就得從地獄中間傳過去！費了千辛萬苦才到這兒裡，絕對不能半途而廢！	我要想心願成真，就得從地獄中間穿過去！費了千辛萬苦才走到這裡，絕對不能半途而廢！	register (Taiwan vs Mainland)
+Locations/Week7Day1Hideout	Description	This bald mountain hangs over the infernal fields. You could see everything from up there...	這個山上啥都沒有，爬山頂上應該能把整個地獄看得清清楚楚……	這個山上什麼都沒有，爬山頂上應該能把整個地獄看得清清楚楚……	register (Taiwan vs Mainland)
+Locations/Week7Day1Pits	Description	This looks exactly like the icons in our church. What was its name again? Saint Chort's?..	這地方看著跟俺村裡教堂擺的聖像一模一樣。叫啥來著？聖讎特教堂嗎？	這地方看著跟我村裡教堂擺的聖像一模一樣。叫什麼來著？聖讎特教堂嗎？	register (Taiwan vs Mainland)
+Locations/Week7Day2Barracks	Description	Some official houses stand here. Living in one of these is its own kind of Hell.	這兒有幾排像模像樣的房子，住這裡邊也是生不如死。	這裡有幾排像模像樣的房子，住這裡邊也是生不如死。	register (Taiwan vs Mainland)
+Locations/Week7Day2Pits	Description	I can't see anything there. Only darkness and bursts of flame.	那邊啥看不到，黑布隆冬，一會兒冒出來個火苗。	那邊什麼看不到，黑布隆冬，一會冒出來個火苗。	register (Taiwan vs Mainland)
+Abilities/GEORGY_BATUSHKA_ROGUELIKE	Name	George the Father	神父喬治	神父葉戈里	consistency - same EN as Georgy_Batushka (葉戈里)
+Abilities/GEORGY_WINNER_ROGUELIKE	Name	Saint George	聖徒喬治	聖徒葉戈里	consistency - same EN as Georgy_Winner (葉戈里)
+Abilities/GEORGY_SHEPARD_SMALL	Name	Little George the Shepherd	牛倌喬治	小牧者葉戈里	consistency + shepherd=牧者; was 牛倌喬治
+Abilities/NIKOLA_MILOSTIV_ROGUELIKE	Name	Nicholas the Merciful	至慈尼古拉斯	仁慈的尼古拉	consistency - same EN as NIKOLA_MILOSTIV; was 尼古拉斯
+Abilities/CIRCLE_BLADE_ROGUELIKE	Name	Circle Blade	圓刃	圓鋸	consistency - same EN as CIRCLE_BLADE
+Abilities/LESHAK_HOROVEY_ROGUELIKE	Name	Leshak-Horovey	列沙-哈洛韋	列沙-霍洛韋	consistency - same EN as LESHAK_HOROVEY
+Abilities/ROYAL_GUARD	Name	Royal Guard	御衛	皇家守衛	consistency - same EN as ROYAL_GUARD_ROGUELIKE
+Skills/EquipQuantity1	Name	Big Bag I	大包 I	揹包擴容 I	consistency - same EN as RoguelikeEquipQuantity1; 大包 is a literal gloss
+Skills/EquipQuantity2	Name	Big Bag II	大包 II	揹包擴容 II	consistency - same EN as RoguelikeEquipQuantity2
+Skills/EquipQuantity3	Name	Big Bag III	大包 III	揹包擴容 III	consistency - same EN as RoguelikeEquipQuantity3
+Skills/RoguelikeDarkEloquence	Name	Dark Eloquence	黑色辯才	黑暗辯才	consistency - same EN as DarkEloquence
+Skills/RoguelikeEvilUnderstand	Name	Understanding the Unholy	邪惡學識	知邪通魔	consistency - same EN as EvilUnderstand
+Skills/RoguelikeJuggle1	Name	Sleight of Hand I	手法嫻熟 I	巧手 I	consistency - same EN as Juggle1
+Skills/RoguelikeJuggle2	Name	Sleight of Hand II	手法嫻熟 II	巧手 II	consistency - same EN as Juggle2
+Skills/RoguelikeJuggle3	Name	Sleight of Hand III	手法嫻熟 III	巧手 III	consistency - same EN as Juggle3
+Skills/RoguelikeTrade1	Name	Trade I	交易 I	買賣 I	consistency - same EN as Trade1
+Skills/RoguelikeTrade2	Name	Trade II	交易 II	買賣 II	consistency - same EN as Trade2
+Skills/Trade1	Description	Shop prices are reduced by {CalculatedEffect}%	商品價格下降{CalculatedEffect}%	商店價格下降{CalculatedEffect}%	consistency - same EN as RoguelikeTrade1
+Skills/Trade2	Description	Shop prices are further reduced by {CalculatedEffect}%	商品價格進一步下降{CalculatedEffect}%	商店價格進一步下降{CalculatedEffect}%	consistency - same EN as RoguelikeTrade2
+Status/UnitScale	Name	Bydmom	比德莫	比德蒙	consistency - same EN as MENQW_BYDMOM
+Locations/AllyNikolayForest	LevelConfig.Battle.Name	Huge log	大木頭	巨大的原木	consistency - same EN as BattleAlternative.Name
+Abilities/FIRE	Name	Fire!	開火！	烈焰！	mistranslation - 開火 means "open fire/gunfire", not a fire spell
+Abilities/FILIMON_OLD_VIEW	Name	Ancient Gaze	老態龍鍾	亙古凝視	mistranslation - 老態龍鍾 = "decrepit"
+Abilities/FIRE_TIME	Name	Time of Fire	點火	火焰時刻	mistranslation - 點火 = "to light a fire"
+Abilities/RIZI	Name	Imperishable Phelonion	不朽權杖	不朽祭披	mistranslation - phelonion is a vestment, not 權杖 (sceptre)
+Abilities/RIZI_SMALL	Name	Imperishable Phelonion	不朽權杖	不朽祭披	mistranslation - phelonion is a vestment, not 權杖 (sceptre)
+Abilities/DEMON_BRANDER_BLESS	Name	Hellish Motivation	地獄禍心	地獄激勵	mistranslation - 禍心 = "evil intent"
+Abilities/DEMON_SWAN_ATTACK	Name	Toothy Bite	咬牙切齒	利齒撕咬	mistranslation - 咬牙切齒 = "gnash teeth"
+Abilities/MERMAN_WATER_SPEAR	Name	Water Spear	魚叉	水矛	mistranslation - 魚叉 = "harpoon"
+Abilities/DROWNER_PUZZLE_WASTE	Name	Headache Waste	頭痛悴敗	頭痛衰敗	non-word 悴敗 -> 衰敗 (Waste status)
+Abilities/PORCHA_FIERCE_WASTE	Name	Fierce Waste	兇暴悴敗	兇暴衰敗	non-word 悴敗 -> 衰敗
+Abilities/WHITE_HEAD_REGULAR	Name	Eretnik Waste	異屍悴敗	異屍衰敗	non-word 悴敗 -> 衰敗
+Abilities/WHITE_HEAD_LOYAL	Name	Eretnik Waste +	異屍悴敗+	異屍衰敗+	non-word 悴敗 -> 衰敗
+Status/Waste	Name	Waste	悴敗	衰敗	non-word 悴敗 -> 衰敗 (core debuff term)
+Status/Decomposure	Description	Increases Waste on the turn start by {Duration}	回合開始時，悴敗增加，持續{Duration}回合	回合開始時，衰敗增加，持續{Duration}回合	non-word 悴敗 -> 衰敗
+Status/Imperishable	Description	Waste restores health instead of dealing damage	悴敗會恢復生命，不會造成傷害	衰敗會恢復生命，不會造成傷害	non-word 悴敗 -> 衰敗
+Status/WasteOnHealthLoss	Description	Increases Waste on enemies by {Duration} each time health is lost	每次損失生命，敵方的悴敗效果增強{Duration}點	每次損失生命，敵方的衰敗效果增強{Duration}點	non-word 悴敗 -> 衰敗
+Status/DefenceOnItemUse	Name	Stony Herbs	焚藥	石藥	mistranslation - wrongly copied 焚藥 from DamageOnItemUse
+Status/MissChance	Name	Blind Eye	偏斜	盲眼	mistranslation - 偏斜 = "deflection" (EN: Blind Eye)
+Status/DoubleDamageOnCursed	Name	Righteousness	正直	正義	mistranslation - 正直 = "upright" (EN: Righteousness)
+Skills/ConfusedDirections	Name	Confusing Directives	含糊其辭	指示混亂	mistranslation - 含糊其辭 = "speak evasively"
+Inventory/ChurchTowel	Name	Church Towel	建堂節毛巾	教堂毛巾	mistranslation - 建堂節 = "patronal feast"
+Inventory/BurstingBone	Name	Bursting Bone	貓頭骨	爆裂骨	mistranslation - 貓頭骨 = "cat skull"
+Inventory/ThunderArrow	Name	Thunder Arrow	雷石	雷箭	mistranslation - 雷石 = "thunder stone"
+Inventory/BirdUrok	Name	Bird of Waste	鑑戒之鳥	衰敗之鳥	mistranslation - 鑑戒 = "warning" (EN: Bird of Waste)
+Inventory/Godmode	Flavour	Rip and Tear	隨心所欲	撕裂吧！	mistranslation - "Rip and Tear" joke lost; 隨心所欲 = "as you please"
+Inventory/ChurchKnife	Flavour	A hand that crosses is the same hand that holds a knife.	哪隻手劃十字聖號，就用哪隻手拿聖矛。	哪隻手劃十字聖號，就用哪隻手拿教堂刀。	consistency with applied Name override (教堂刀); was 聖矛
+Inventory/KupalaWreath	Flavour	My lovely betrothed, reveal thyself to me! I'll give you my decorated wreath!	喬裝打扮的未婚夫，速速在我面前現身！我這就把自己裝點的花環送給你！	我可愛的未婚夫，快在我面前現身！我這就把親手編的花環送給你！	mistranslation - 喬裝打扮 = "in disguise" (EN: my lovely betrothed)
+Inventory/CardDeck	Flavour	Three, seven, ace! Three, seven, queen!	三、七、艾斯！三、七、圈！	三、七、A！三、七、皇后！	mistranslation - 圈 is not "queen"; 艾斯 for ace
+Inventory/MermaidPhoto	Name	Salt worker's Photo	鹽廠廠長的照片	鹽工的照片	mistranslation - 廠長 = "factory director" (EN: salt worker)
+Inventory/MermaidPhoto	Flavour	The photo in a carved frame shows the salt worker Pakhom with a young girl by his side, the spitting image of the rusalka! The writing on the back says E. and P. Frolov.	照片上面是鹽廠廠長帕洪跟一個女孩，長得和那個露莎卡一模一樣！照片背面寫了幾個字：葉.弗羅洛夫與帕.弗羅洛夫。	照片上面是鹽工帕洪跟一個女孩，長得和那個露莎卡一模一樣！照片背面寫了幾個字：葉.弗羅洛夫與帕.弗羅洛夫。	mistranslation - 廠長 = "factory director" (EN: salt worker)
+Units/CheranLeg1	Name	Cheran's Paw	切蘭的腿	切蘭的爪	mistranslation - 腿 = "leg" (EN: Paw)
+Units/CheranLeg2	Name	Cheran's Paw	切蘭的腿	切蘭的爪	mistranslation - 腿 = "leg" (EN: Paw)
+Units/ObderihaDemon	Name	Coal Demon	煤炭讎特	煤炭魔鬼	mistranslation - EN Coal Demon, not a chort
+Units/Filimon	Name	Filimon the Shepherd	牛倌菲利蒙	牧者菲利蒙	mistranslation - shepherd = 牧者, not 牛倌 (cowherd)
+Inventory/ShepardPage	Name	Shepherd's Charter	牛倌的契據	牧者契據	consistency - shepherd = 牧者, not 牛倌 (cowherd)
+Inventory/ProkopiyStaff	Flavour	A shepherd walks by, swinging his staff, shouting at cows.	走過來一個牛倌，手裡舞著手杖，朝著牛群吆喝。	走過來一個牧人，手裡舞著手杖，朝著牛群吆喝。	consistency - shepherd = 牧者, not 牛倌 (cowherd)
+Locations/Week6Day1Library	Description	I'm rather curious. What type of books does a prominent koldun keep in his library?	不知道家裡這麼顯赫的科爾敦家裡能有啥書？	不知道這麼顯赫的科爾敦，書房裡都收藏些什麼書？	garbled - 家裡...科爾敦家裡 repeated; EN says library
+Locations/Week7Day1Hideout	Description	This bald mountain hangs over the infernal fields. You could see everything from up there...	這個山上啥都沒有，爬山頂上應該能把整個地獄看得清清楚楚……	這座光禿禿的山俯瞰著地獄的原野，爬到山頂應該能把整個地獄看得清清楚楚……	garbled - 這個山上啥都沒有/爬山頂上
+Locations/Week7Day2Pits	Description	I can't see anything there. Only darkness and bursts of flame.	那邊啥看不到，黑布隆冬，一會兒冒出來個火苗。	那邊什麼都看不到，一片漆黑，時不時冒出團火苗。	register + 黑布隆冬 dialect; awkward
+Locations/Week5Day4SmallField	Description	This is the place where peasants leave gifts to the leshiy.	那個老鄉就是在這兒給列希上的供。	這裡就是鄉親們給列希上供的地方。	mistranslation - EN plural "peasants"; 那個老鄉 wrong
+Locations/Week1Day1Gorodishenskoy	Description	It's said that the Chud' lived here. A dangerous and unholy place. The ravines are death traps at night. Falling into one will surely leave you crippled.	據說楚德人當年就住這個地方。這兒又不安全、又邪性，一到夜裡，不論什麼活物，進來就別想活著出去了。掉進這麼樣的河谷，摔斷腿都算是好事兒了。	據說楚德人當年就住在這裡。這地方又危險又邪門，一到夜裡，河谷就成了死亡陷阱，掉下去肯定摔斷腿。	over-embellished vs EN; awkward 這麼樣的河谷
+Status/PackLeader	Name	Pack Leader	領狼的人	狼群首領	literal - 領狼的人 = "the person who leads wolves"
+Abilities/SHUKA_BELUGA_ROGUELIKE	Name	Shuka-Beluga	白斑狗魚	舒卡-別盧加	mistranslation - EN is a proper name, not the fish 白斑狗魚
+#
+# --- Runtime DialogueDatabase (71459) / TextTable (71461) ---
+# 'current' = what the plugin ships (OpenCC s2twp of the bundle's SC column).
+# Confirmed corpus-wide runtime issues handled globally, NOT itemised below:
+#   * chort 雠特: 665 fields in 71459 + 31 fields in 71461 (see chort block above).
+#   * Mainland register in 71459: 俺 487, 咋 371, 孬 22, 啥 864 fields.
+#   * 'Waste' is 悴敗 (non-word) in the runtime too; fix via the config term.
+# The rows below are the individually-fixable mistranslations found.
+runtime:71461	Library	Library	書	書房	mistranslation - 书 = "book"; EN Library
+runtime:71461	StatusInvPrefix	Strengthens status	令	強化	mistranslation - 令 is an Order-page particle, not "strengthens status"
+runtime:71461	BackerRoguelike	New Game (Endless Battles)	無休對戰	新遊戲（無休對戰）	drops "New Game"; EN New Game (Endless Battles)
+runtime:71461	DEFENCE_ON_MONEY	Get <sprite name="Defence"> equal to the player's amount of rubles	獲得<sprite name="Defense">，數值等於玩家盧布的總數	獲得<sprite name="Defence">，數值等於玩家盧布總數	sprite name "Defense" (US) never resolves; all others use "Defence"
+runtime:71461	TutorialRoguelikeStart1	Welcome to the battle mode! You are about to go on a journey through the magic Cherdyn uyezd.	歡迎來到戰鬥模式！ 您即將踏上穿越神奇的 Cherdyn uyezd 的旅程。	歡迎來到對戰模式！您即將踏上穿越神奇切爾登縣的旅程。	untranslated "Cherdyn uyezd" left in Latin in the Chinese
+runtime:71461	NewRandomRoguelikeStartingItem	Add to collection: {ItemName}	新增：{ItemName}	加入收藏：{ItemName}	drops "to collection"; 添加 = "add"
+runtime:71461	InventoryStatusOnBattleStart	Gain {CalculatedEffect} {StatusName} on battle start	對戰開始時，{StatusName}{CalculatedEffect}	對戰開始時，獲得{CalculatedEffect}{StatusName}	drops the verb "Gain"
+runtime:71461	PurchaseChapter	Only the Next Chapter ({ChapName} out of 7)	只解鎖下一章（即第{ChapName}章，遊戲共7章	只解鎖下一章（第{ChapName}章／共7章）	unbalanced parenthesis; awkward
+runtime:71461	RoguelikeVictoryText2	Congratulations! You vanquished all the forces of evil once more. We thought this feat impossible, but you proved otherwise. Drowners of Vakul's throne are silent about your achievement. They are known even in Cherdyn's dungeons.\nEnemies grow stronger still. You've met Death {Value} times.	恭喜！你再次擊敗了所有邪惡勢力和他們的頭目撒旦。我們本以為沒人能夠做到，可以你的成就有力地反駁了我們，瓦庫宮殿的水鬼默默無言，然而你的戰績傳遍了彼爾姆，就連切爾登的地城也不例外。\n敵人變得更強了，你已見了死神{Value}次。	恭喜！你再次擊敗了所有邪惡勢力和他們的頭目撒旦。我們本以為沒人能做到，而你的成就有力地反駁了我們，瓦庫宮殿的水鬼默默無言，然而你的戰績傳遍了彼爾姆，就連切爾登的地城也不例外。\n敵人變得更強了，你已見了死神{Value}次。	garbled 可以你的成就 = "but your achievement"; 可以 is wrong
+runtime:71461	RoguelikeVictoryText	Congratulations! You vanquished all the forces of evil along with their leader - Satan. You've met Death {Value} times.\nAll enemies grow stronger. You can now try your best to vanquish Satan one more time.	恭喜！你消滅了所有邪惡勢力和他們頭目撒旦。你已見了死神{Value}次。\n所有敵人都變得更強了，現在可以試試再擊敗撒旦一次。。	恭喜！你消滅了所有邪惡勢力和他們的頭目撒旦。你已見了死神{Value}次。\n所有敵人都變得更強了，現在可以試試再擊敗撒旦一次。	double full stop 。。; missing 們
+runtime:71459	en#7296	Grazing traditionally started on Saint George's Day, the 6th of May. It was a holiday for the entire village. The shepherd asked owners not to be late, or he refused to graze their cattle. The owners drove their animals with pussy-willow branches leftover from Easter. When the herd was gathered, the shepherd walked around it clockwise holding an icon and reciting prayers. Sometimes, during the third round he cast a special shepherd's spell.	按照傳統，5月6日的聖格里高利日是開始放牧的日子，這是整個村莊的節日。牛羊倌會要求牲口主人準時交接，不然就拒絕幫他們放牧。主人用復活節剩下的柳枝驅趕牲口，牧群聚到一起之後，牧人會一邊抱著聖像順時針走，一邊禱告。牧人有時轉第三圈的時候還會施放特殊的牧人咒語。	按照傳統，5月6日聖葉戈里日是開始放牧的日子，這是整個村莊的節日。牧者會要求牲口主人準時交接，不然就拒絕幫他們放牧。主人用復活節剩下的柳枝驅趕牲口，牧群聚到一起之後，牧人會一邊抱著聖像順時針走，一邊禱告。牧人有時轉第三圈的時候還會施放特殊的牧人咒語。	Saint George rendered as 聖格里高利 (Gregory)
+runtime:71459	en#7298	A shepherd's charter was passed from generation to generation within a family or from a shepherd to his apprentice. A charter was a collection of spells to prevent animals from running away. The longest charters, in modern terms, could be up to 30 pages thick. Much depended on the traditions of the first cattle grazing, whether professional or non-professional. The charters were written by hand and read on St. George's Day. \nThere were all kinds of spells. The non-professional ones were short. For example, "As a belt clings to me, so I will cling to a cow." or "God bless me. Ward my herd against beast and snake this summer." The professional ones were longer and more complex. They included a prayerlike transformation, "a dressing of wonder," that addressed the saints, the creation of the earth, the sky, and the first man, a plea of warding, the construction of a fence, the closing of a gate with a lock whose key was hidden either in the sky or in the sea, calling the cows home, "spellbinding" the cows to a shepherd, covering the Virgin Mary with a chasuble, and requesting the Virgin Mary to send a "multitude of ships" to guard the herd. The set of spells was meant to create a universe, as well as a pasture – a cosmos folded to the size of the local area. \nEven if the shepherd was illiterate and sought the "spell" at a fair, he could still use it. The pages were folded and put into a tube along with a piece of wax from a funeral candle. The spell to protect a home worked the same way. Reading it wasn't necessary. It could simply be folded into a tube and hung by a string in the red corner under the icon case.	牧人的契據會在家中代代相傳，或由牧人傳給徒弟。契據上面有防止動物逃跑的咒語。按照現在的標準，一本契據最多能有30頁。無論咒語專不專業，很多事情都取決於第一次放牧有沒有履行傳統。這個契據需要用手寫，在聖格里高利日唸誦。\n咒語五花八門，不專業的都很簡短。例如“皮帶束我身，我手抓奶牛”，或者“上帝保佑我。願牧群今夏不受野獸和毒蛇侵擾。”專業的咒語更長、更復雜，變化跟禱詞一樣。“奇蹟顯現”可以指聖徒或天、地、人的創造，也可用來懇求庇佑、建造柵欄、用隱於天空或大海的鑰匙鎖門，召喚牛群回家；將牛群“用巫法引向”牧羊人、給聖母瑪利亞蓋上十字褡，還能請求聖母瑪利亞派“眾多船隻”守護牧群。這套咒語既可以創造一個宇宙，也可建造一個牧場，一個按當地比例縮小的宇宙。\n即使牧人不識字，也可以在集市上買到“咒語”。只要從葬禮蠟燭上摳一小塊蠟，然後把寫著咒語的紙摺好，將兩者放進一根管子就行了。保護家宅的咒語也是如此操作。咒語不一定要念出來，只需摺好放進管子，用繩子掛在紅角的聖像匣子下就好。	牧人的契據會在家中代代相傳，或由牧人傳給徒弟。契據上面有防止動物逃跑的咒語。按照現在的標準，一本契據最多能有30頁。無論咒語專不專業，很多事情都取決於第一次放牧有沒有履行傳統。這個契據需要用手寫，在聖葉戈里日念誦。\n咒語五花八門，不專業的都很簡短。例如「皮帶束我身，我手抓奶牛」，或者「上帝保佑我。願牧群今夏不受野獸和毒蛇侵擾。」專業的咒語更長、更複雜，變化跟禱詞一樣。「奇蹟顯現」可以指聖徒或天、地、人的創造，也可用來懇求庇佑、建造柵欄、用隱於天空或大海的鑰匙鎖門，召喚牛群回家；將牛群「用巫法引向」牧羊人、給聖母瑪利亞蓋上十字褡，還能請求聖母瑪利亞派「眾多船隻」守護牧群。這套咒語既可以創造一個宇宙，也可建造一個牧場，一個按當地比例縮小的宇宙。\n即使牧人不識字，也可以在集市上買到「咒語」。只要從葬禮蠟燭上摳一小塊蠟，然後把寫著咒語的紙摺好，將兩者放進一根管子就行了。保護家宅的咒語也是如此操作。咒語不一定要念出來，只需摺好放進管子，用繩子掛在紅角的聖像匣子下就好。	Saint George rendered as 聖格里高利 (Gregory)
+runtime:71459	en#8138	She gave it to him right after Saint George's day, when he whispered to the animals. He didn't take it.	聖格里高利日那天，他對著牲口唸了幾句咒，第二天，阿尼西婭就送他褲帶，結果他死活沒收。	聖葉戈里日那天，他對著牲口念了幾句咒，第二天，阿尼西婭就送他褲帶，結果他死活沒收。	Saint George rendered as 聖格里高利 (Gregory)
+runtime:71459	en#1200	What [em2]<link=88>demon</link>[/em2] is necessary for the Book to open the aspen seal?	怎麼才能要想破開黑書的楊之印？	要打開黑書的山楊封印，需要哪個[em2]<link=88>邪靈[/link][/em2]？	drops "demon"; 怎麼才能要想 garbled; markup link lost

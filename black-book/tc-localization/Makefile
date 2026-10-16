@@ -23,7 +23,7 @@ SCRIPTS_DIR := $(MOD_DIR)/scripts
 DIST_DIR    := $(MOD_DIR)/dist
 PAYLOAD_DIR := $(MOD_DIR)/payload
 
-MOD_VERSION := 1.2.1
+MOD_VERSION := 1.3.0
 MOD_ZIP     := tc-localization-v$(MOD_VERSION).zip
 
 GATES := gate_coverage gate_structure gate_simplified gate_overrides gate_terminology
