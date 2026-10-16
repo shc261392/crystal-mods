@@ -38,3 +38,39 @@ Abilities/Georgy_Shepard/config_zh.yaml	Name	牧者葉戈里
 Abilities/Georgy_Winner/config_zh.yaml	Name	聖徒葉戈里
 Abilities/GEORGY_FIRE/config_zh.yaml	Name	烈火葉戈里
 Abilities/NIKOLA_GEORGY/config_zh.yaml	Name	尼古拉與葉戈里
+
+# --- Corrected mistranslations inherited from the game's Simplified text ---
+# The game's own EN->SC pass produced real errors: Units/Satan was 死神
+# ("Death"), Status/Cunning was 赤腳醫生 ("barefoot doctor") with another
+# item's description, Abilities/MARY_EGYPT was 開火！ ("Fire!"). These are
+# authored replacements, reviewed in review/TRANSLATION_REVIEW.tsv.
+Locations/Week3Day7Blood/config_zh.yaml	Name	血跡
+Units/WolfDeadly/config_zh.yaml	Name	換生狼
+Units/WolfFedka/config_zh.yaml	Name	換生狼
+Skills/KeysKnowledge/config_zh.yaml	Name	鑰之學識
+Skills/OrdersKnowledge/config_zh.yaml	Name	令之學識
+Locations/RoguelikeVictory/config_zh.yaml	Name	無休對戰
+Units/Satan1/config_zh.yaml	Name	撒旦
+Units/Satan2/config_zh.yaml	Name	撒旦
+Abilities/CLEANSING_FIRE_ROGUELIKE/config_zh.yaml	Name	淨化之火
+Abilities/MARY_EGYPT/config_zh.yaml	Name	埃及的瑪利亞
+Status/Cunning/config_zh.yaml	Name	狡詐
+Status/Cunning/config_zh.yaml	Description	隱藏敵方單位的行動意圖
+Inventory/ChurchKnife/config_zh.yaml	Name	教堂刀
+Inventory/BirdCurse/config_zh.yaml	Name	詛咒之鳥
+Inventory/DogMushroom/config_zh.yaml	Name	狗菇
+Units/MermaidSalt/config_zh.yaml	Name	鹹水露莎卡
+Units/SnakeSorcerer/config_zh.yaml	Name	弄蛇科爾敦
+Locations/Week1Day7Vyatkino/config_zh.yaml	Name	維亞特基諾村墓地
+Locations/Week1Day6BathUnderground1/config_zh.yaml	LevelConfig.Battle.Name	邪煤
+Inventory/Sivulist/config_zh.yaml	Flavour	可治百病
+Abilities/ERETNIK_STRIKE/config_zh.yaml	Name	骨手
+Abilities/HELP_NIKOLA/config_zh.yaml	Name	出手相助吧，尼古拉
+Abilities/IN_LOOSE/config_zh.yaml	Name	散開！
+Status/DefenceGive/config_zh.yaml	Name	護佑
+Status/Untouchable/config_zh.yaml	Name	不可觸
+Locations/Week2Day5CemeteryBackers/config_zh.yaml	Name	洞穴墓地
+Units/SinnerHorse/config_zh.yaml	Name	罪人之馬
+Units/SnakeCopper/config_zh.yaml	Name	銅蛇
+Locations/Week2Day1NigneeMoshevo/config_zh.yaml	Description	這條電報線到這個村就終止了。
+Service/Credits/config_zh.yaml	Developers.People[0].Titles[2].Title	程式設計
