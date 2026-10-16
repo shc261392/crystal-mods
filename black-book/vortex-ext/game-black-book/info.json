@@ -1,7 +1,7 @@
 {
   "name": "Black Book",
-  "author": "Community",
+  "author": "shadowevor",
   "version": "1.0.0",
-  "description": "Adds support for Black Book (Steam App 1138660). Handles localization mods and font assets by intelligently routing files to AutoTranslator/Translation/<LOCALE>/, Fonts/, and game root.",
-  "url": "https://www.nexusmods.com/site/mods/xxxx"
+  "description": "Vortex extension for Black Book (Steam App 1138660, Windows). Adds game detection and a mod type for file-replacement mods: Traditional Chinese localization config files (Black Book_Data/StreamingAssets/Config/**), BepInEx plugins (BepInEx/plugins/), and the BepInEx 5 framework (winhttp.dll + BepInEx/), all deployed to the game root. Handles game-root-relative and single-wrapper-folder archives. Overwritten game files are backed up and restored automatically by Vortex on purge.",
+  "url": "https://github.com/shc261392/crystal-mods/tree/main/black-book/vortex-ext/game-black-book"
 }

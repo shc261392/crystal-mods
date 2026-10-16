@@ -10,14 +10,24 @@
     "type": "partial",
     "note": "Converts the 1,448 config_zh.yaml files (3,479 strings). Text baked into data.unity3d (menus, settings, tooltips, dialogue) is NOT converted and stays Simplified Chinese. See README.md > Coverage."
   },
-  "platforms": ["windows", "linux-proton"],
-  "supportedVersions": ["1.0"],
+  "platforms": [
+    "windows",
+    "linux-proton"
+  ],
+  "supportedVersions": [
+    "1.0"
+  ],
   "locale": "zh-TW",
   "install": {
-    "root": "Black Book_Data/StreamingAssets/Config",
-    "pattern": "**/config_zh.yaml",
-    "requires": false,
-    "notes": "Only config_zh.yaml files are written. config.yaml, config_en/ja/ko.yaml and all asset bundles are left untouched."
+    "root": ".",
+    "requires": true,
+    "requiresNote": "Requires the BepInEx 5 framework mod (winhttp.dll + BepInEx/core). Black Book is Unity 2018.4 Mono, so BepInEx 5 x64 - not BepInEx 6 IL2CPP.",
+    "paths": [
+      "Black Book_Data/StreamingAssets/Config/**/config_zh.yaml",
+      "BepInEx/plugins/BlackBookTcFont.dll",
+      "BepInEx/plugins/BlackBookTcFont/"
+    ],
+    "notes": "Only config_zh.yaml files are written under Black Book_Data; the game's config.yaml and config_en/ja/ko.yaml are untouched. Every .yaml file in the package is deployed to its recorded path relative to the game root."
   },
   "vortex": {
     "extensionId": "game-black-book",

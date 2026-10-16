@@ -1,32 +1,49 @@
-# Black Book Vortex Extension — Build
+# Black Book Vortex Extension
+
+The Vortex game extension for **Black Book** (Steam App ID `1138660`, Windows)
+lives in [`game-black-book/`](game-black-book/). See its
+[README](game-black-book/README.md) for the full description and the
+[NEXUS_DESCRIPTION.md](game-black-book/NEXUS_DESCRIPTION.md) for the Nexus mod
+page copy.
 
 ## Structure
 
 ```
 game-black-book/
-├── index.js          # Main extension logic (game discovery + installers)
-├── info.json         # Metadata (name, version, description)
-├── DESCRIPTION.md    # Long description for Vortex UI
-└── gameart.jpg       # 360×180 thumbnail — MISSING, needs to be added
+├── index.js             # Game registration + generic installer
+├── info.json            # Vortex manifest (name, author, version, description)
+├── gameart.jpg          # 640×360 game art
+├── README.md            # Extension README
+├── NEXUS_DESCRIPTION.md # Copy for the Nexus mod page
+└── scripts/
+    ├── fetch-gameart.sh # Regenerate gameart.jpg from the Steam header
+    └── package.js       # Build the flat Nexus-ready zip
 ```
 
-## Files Status
+## Install order (all three Black Book mods)
 
-- ✓ `index.js` — Complete
-- ✓ `info.json` — Complete
-- ✓ `DESCRIPTION.md` — Complete
-- ⚠ `gameart.jpg` — Needs to be created or sourced (360×180 px recommended)
+1. **BepInEx Framework** — `bepinex-framework-v*.zip` (shared runtime, once)
+2. **Traditional Chinese Localization** — `tc-localization-v*.zip`
+3. **This extension** — `game-black-book-*.zip` (install first if Vortex does
+   not yet list Black Book)
 
-## Next Steps
+## Packaging for Nexus
 
-1. Source or create `gameart.jpg` (game cover art, 360×180 px)
-2. Package extension: `zip -r vortex-ext-game-black-book-v1.0.0.zip game-black-book/`
-3. Upload to Nexus Mods for review
-
-## Building the Extension Package
+The extension archive must be flat (no wrapper folder). From
+`game-black-book/`:
 
 ```bash
-cd /home/shado/crystal-mods/black-book/vortex-ext
-mkdir -p dist
-zip -r dist/vortex-ext-game-black-book-v1.0.0.zip game-black-book/
+node scripts/package.js
 ```
+
+Output: `dist/game-black-book-<version>.zip`, containing `info.json`,
+`index.js`, `gameart.jpg` and `README.md` at the top level.
+
+## Regenerating game art
+
+```bash
+bash game-black-book/scripts/fetch-gameart.sh   # -> game-black-book/gameart.jpg
+```
+
+Hand-review the result (640×360, dark-background-safe, no text) before
+submitting to Nexus.

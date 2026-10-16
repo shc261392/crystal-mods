@@ -1,0 +1,26 @@
+{
+  "name": "BepInEx Framework",
+  "id": "bepinex-framework",
+  "game": "black-book",
+  "version": "1.0.0",
+  "author": "crystal-mods (packaging); BepInEx contributors (runtime)",
+  "gameVersion": "1.0",
+  "engine": "Unity 2018.4.31f1 (Mono, x64)",
+  "type": "runtime-framework",
+  "description": "The BepInEx 5.4.23.5 (x64) modding runtime for Black Book. A shared dependency required by the Traditional Chinese Localization plugin (BlackBookTcFont.dll). Install this once, then install the localization mod. Ships the official BepInEx 5.4.23.5 win-x64 release plus the UnityDoorstop loader; no game files are modified.",
+  "provides": "BepInEx 5.4.23.5 x64 runtime (winhttp UnityDoorstop proxy + BepInEx/core)",
+  "upstream": {
+    "project": "BepInEx",
+    "version": "5.4.23.5",
+    "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip",
+    "sha256_official_artifact": "82f9878551030f54657792c0740d9d51a09500eeae1fba21106b0c441e6732c4"
+  },
+  "requires": [],
+  "deployFiles": [
+    "winhttp.dll",
+    "doorstop_config.ini",
+    ".doorstop_version",
+    "changelog.txt",
+    "BepInEx/"
+  ]
+}

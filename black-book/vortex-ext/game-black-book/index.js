@@ -1,28 +1,39 @@
 /**
  * Vortex Game Extension — Black Book
  *
- * Steam App ID      : 1138660
- * Nexus domain      : blackbook
- * Main exe          : Black Book.exe
- * Engine            : Unity 2018.4 (Mono)
+ * Steam App ID : 1138660
+ * Nexus domain : blackbook
+ * Main exe     : Black Book.exe
+ * Data dir     : Black Book_Data
+ * Engine       : Unity 2018.4.31f1 (Mono, x64)
  *
  * Supported mod types
  * -------------------
- *  1. Localization mods: Unity asset replacement in Black Book_Data/
- *     - Replaces localization .asset files (string tables, text assets)
- *     - Routed to: Black Book_Data/resources/ or streamingassets/
- *     Examples:
- *       - Black Book_Data/resources/LocalizationZhTW.asset
- *       - Black Book_Data/StreamingAssets/Text_zh-TW.uasset
+ *  Generic replacement mods: files packaged with their full deployment paths
+ *  relative to the game root. The extension deploys them as-is.
  *
- *  2. Font mods: deployed to Black Book_Data/Resources/Fonts/
- *     Examples:
- *       - Black Book_Data/Resources/Fonts/NotoSansTC.asset
+ *  Examples:
+ *    - Localization data:
+ *        Black Book_Data/StreamingAssets/Config/<dir>/config_zh.yaml
+ *    - BepInEx plugins:
+ *        BepInEx/plugins/BlackBookTcFont.dll
+ *        BepInEx/plugins/BlackBookTcFont/{opencc_st.tsv,opencc_tw.tsv,tcserif}
+ *    - BepInEx framework (root-level loader files):
+ *        winhttp.dll, doorstop_config.ini, .doorstop_version
  *
- *  3. General mods: any files with full deployment paths relative to game root
+ *  The extension deploys files to the paths they specify, with optional
+ *  wrapper folder stripping for convenience.
  *
- * This extension intelligently routes files to their correct destinations based
- * on path patterns, with optional wrapper folder stripping for user convenience.
+ *  Backup/restore of overwritten game files (e.g. the Simplified Chinese
+ *  config_zh.yaml files) is handled automatically by Vortex's linking
+ *  deployment: the original file is renamed to `<file>.vortex_backup` on deploy
+ *  and renamed back on purge. The extension therefore does NOT implement its
+ *  own backup.
+ *
+ *  Registers both store builds: Steam (App ID 1138660) and GOG
+ *  (product id 2098791460). Both ids come from the repo's metadata.jsonc, which
+ *  is generated from PCGamingWiki — the repository's designated source of truth
+ *  for store IDs. Windows only.
  */
 
 'use strict';
@@ -36,174 +47,69 @@ const { fs, util } = require('vortex-api');
 
 const GAME_ID = 'black-book';
 const STEAM_APP_ID = '1138660';
+// From metadata.jsonc (PCGamingWiki). The id list there also carries two DLC ids.
+const GOG_ID = '2098791460';
+// The game's URL slug on nexusmods.com — distinct from GAME_ID (the internal
+// Vortex id). Used so Vortex can resolve Nexus mod-page URLs and nxm:// links.
+const NEXUS_DOMAIN = 'blackbook';
 const GAME_NAME = 'Black Book';
 const GAME_EXE = 'Black Book.exe';
+const DATA_DIR = 'Black Book_Data';
 
 /**
- * Known first-level game directories to detect mods packaged with game-root-relative
- * paths. Helps determine if a single wrapper folder should be stripped.
+ * Known first-level game directories used to detect game-root-relative
+ * archives (layout already correct, no stripping needed).
+ *
+ * Includes BepInEx so plugin mods that ship the modding runtime
+ * (winhttp.dll + BepInEx/) alongside game data deploy correctly to the game
+ * root. BepInEx generates its own config/cache/log files at runtime; those are
+ * not part of any mod and are left untouched.
  */
-const ROOT_GAME_DIRS = [
-  'Black Book_Data',
-  'AutoTranslator',
-  'BepInEx',
-  'Fonts',
-  'Mods',
-  'ReiPatcher',
-];
-
-// ---------------------------------------------------------------------------
-// Game Discovery
-// ---------------------------------------------------------------------------
+const ROOT_GAME_DIRS = ['Black Book_Data', 'BepInEx'];
 
 /**
- * Discovers the game by Steam App ID.
- * Supports Windows native and Proton/Linux.
+ * Loose root-level files that also indicate a game-root-relative archive
+ * (e.g. the BepInEx UnityDoorstop proxy shipped at the game root).
  */
+const ROOT_GAME_FILES = ['winhttp.dll', 'doorstop_config.ini', '.doorstop_version'];
+
+// ---------------------------------------------------------------------------
+// Game discovery
+// ---------------------------------------------------------------------------
+
 function findGame() {
-  return util.GameStoreHelper.findByAppId([STEAM_APP_ID])
-    .then((game) => game.gamePath)
-    .catch(() => {
-      throw new util.NotFound(`Black Book (App ID ${STEAM_APP_ID}) not found in Steam`);
-    });
+  // findByAppId resolves Steam App IDs and GOG product ids alike.
+  return util.GameStoreHelper.findByAppId([STEAM_APP_ID, GOG_ID]).then((game) => game.gamePath);
 }
 
 // ---------------------------------------------------------------------------
-// Setup / Prepare
+// Setup / prepare
 // ---------------------------------------------------------------------------
 
 /**
- * Ensures key game directories exist so mods can be deployed to them.
+ * Ensures the game directory is writable so Vortex can deploy mods.
+ * Vortex auto-creates subdirectories during deployment and automatically
+ * backs up any overwritten original files as `<file>.vortex_backup`,
+ * restoring them on purge — so no manual backup is required here.
+ *
+ * @param {object} discovery  IDiscoveryResult — contains `.path`
  */
 function prepareForModding(discovery) {
-  const baseGamePath = discovery.path;
-  const dirsToCreate = [
-    path.join(baseGamePath, 'Black Book_Data', 'resources'),
-    path.join(baseGamePath, 'Black Book_Data', 'StreamingAssets'),
-    path.join(baseGamePath, 'Black Book_Data', 'Resources', 'Fonts'),
-  ];
-
-  return Promise.all(dirsToCreate.map((dir) => fs.ensureDirWritableAsync(dir)));
+  return fs.ensureDirWritableAsync(discovery.path);
 }
 
 // ---------------------------------------------------------------------------
-// Installer: Localization Mod (priority 25)
-// Handles Unity asset replacement for localized strings
+// Installer: generic mod  (priority 20)
 // ---------------------------------------------------------------------------
 
 /**
- * Tests if this is a localization mod (files in localization asset paths).
- * Looks for .asset files, locale-specific naming, or Black Book_Data/ paths.
+ * Accepts all mods for this game. The extension handles any file layout
+ * by deploying files to their specified paths (with optional wrapper stripping).
+ *
+ * @param {string[]} files   List of paths inside the archive.
+ * @param {string}   gameId  Active game ID.
  */
-function testLocalizationModContent(files) {
-  const isLocMod = files.some(
-    (f) =>
-      (f.includes('zh-TW') || f.includes('zh_TW') || f.includes('localization')) &&
-      (f.endsWith('.asset') || f.includes('Black Book_Data')),
-  );
-
-  return Promise.resolve({
-    supported: isLocMod,
-    requiredFiles: [],
-  });
-}
-
-/**
- * Installs localization mod files to Black Book_Data/resources/ or StreamingAssets/.
- * Routes asset files to appropriate locations with optional wrapper stripping.
- */
-function installLocalizationModContent(files, gameId, modPath) {
-  const locFiles = files.filter(
-    (f) =>
-      (f.includes('zh-TW') || f.includes('zh_TW') || f.includes('localization')) &&
-      (f.endsWith('.asset') || f.includes('Black Book_Data')),
-  );
-
-  if (locFiles.length === 0) {
-    return Promise.resolve();
-  }
-
-  const commonPrefix = getCommonPrefix(locFiles);
-  const stripCount = shouldStripWrapper(commonPrefix, locFiles) ? 1 : 0;
-
-  const instructions = locFiles.map((file) => {
-    let destPath = stripCount > 0 ? file.split('/').slice(stripCount).join('/') : file;
-
-    // Ensure files are routed to Black Book_Data/ if not already
-    if (!destPath.startsWith('Black Book_Data')) {
-      const filename = path.basename(destPath);
-      destPath = path.join('Black Book_Data', 'resources', filename);
-    }
-
-    return {
-      type: 'copy',
-      source: file,
-      destination: destPath,
-    };
-  });
-
-  return Promise.resolve({ instructions });
-}
-
-// ---------------------------------------------------------------------------
-// Installer: Font Mod (priority 20)
-// Handles font assets and related files
-// ---------------------------------------------------------------------------
-
-/**
- * Tests if this is a font mod (contains Fonts/ or font-related files).
- */
-function testFontModContent(files) {
-  const isFontMod = files.some(
-    (f) => f.match(/^Fonts\//i) || f.match(/\.asset$/i) || f.match(/\.ttf$|\.otf$|\.fnt$/i),
-  );
-
-  return Promise.resolve({
-    supported: isFontMod,
-    requiredFiles: [],
-  });
-}
-
-/**
- * Installs font mod files to Black Book_Data/Resources/Fonts/.
- */
-function installFontModContent(files, gameId, modPath) {
-  const fontFiles = files.filter(
-    (f) => f.match(/^Fonts\//i) || f.match(/\.asset$/i) || f.match(/\.ttf$|\.otf$|\.fnt$/i),
-  );
-
-  const instructions = fontFiles.map((file) => {
-    let destPath;
-    if (file.startsWith('Fonts/')) {
-      // Keep Fonts/ structure; route to game folder
-      destPath = file;
-    } else if (file.match(/\.asset$/i)) {
-      // Route .asset files to Black Book_Data/Resources/Fonts/
-      destPath = path.join('Black Book_Data', 'Resources', 'Fonts', path.basename(file));
-    } else {
-      // Route other font files to Fonts/
-      destPath = path.join('Fonts', path.basename(file));
-    }
-
-    return {
-      type: 'copy',
-      source: file,
-      destination: destPath,
-    };
-  });
-
-  return Promise.resolve({ instructions });
-}
-
-// ---------------------------------------------------------------------------
-// Installer: Generic Mod (priority 10)
-// Fallback for any files packaged with correct game-root-relative paths
-// ---------------------------------------------------------------------------
-
-/**
- * Accepts all mods; serves as fallback installer.
- */
-function testGenericModContent(files, gameId) {
+function testModContent(files, gameId) {
   return Promise.resolve({
     supported: gameId === GAME_ID,
     requiredFiles: [],
@@ -211,77 +117,85 @@ function testGenericModContent(files, gameId) {
 }
 
 /**
- * Installs generic mods with optional wrapper stripping.
+ * Installs mod files by deploying them to their specified paths.
+ *
+ * Handles three archive layouts:
+ *
+ *   A) Game-root-relative (files start with known game directories or are
+ *      known root-level loader files):
+ *        Black Book_Data/StreamingAssets/Config/…/config_zh.yaml
+ *          → Black Book_Data/StreamingAssets/Config/…/config_zh.yaml
+ *        BepInEx/plugins/BlackBookTcFont.dll
+ *          → BepInEx/plugins/BlackBookTcFont.dll
+ *        winhttp.dll → winhttp.dll
+ *
+ *   B) Wrapped in a single top-level folder (auto-strips wrapper):
+ *        tc-localization-v1.3.0/Black Book_Data/StreamingAssets/…/config_zh.yaml
+ *        → Black Book_Data/StreamingAssets/…/config_zh.yaml
+ *
+ *   C) Fallback — deploy files as-is (forward slashes for consistency).
+ *
+ * @param {string[]} files  Archive file list.
  */
-function installGenericModContent(files, gameId, modPath) {
-  const instructions = files
-    .filter((f) => !f.endsWith('/'))
-    .map((file) => {
-      // Strip one wrapper folder if all files share the same top-level prefix
-      const commonPrefix = getCommonPrefix(files);
-      const stripCount = shouldStripWrapper(commonPrefix, files) ? 1 : 0;
+function installModContent(files) {
+  // Normalize all paths to forward slashes (Vortex internal format)
+  const normalized = files.map((f) => f.replace(/\\/g, '/')).filter((f) => !f.endsWith('/'));
 
-      const destPath = stripCount > 0 ? file.split('/').slice(stripCount).join('/') : file;
+  // Helper: Check if path starts with a known game directory (case-insensitive)
+  // or is a known root-level game file (e.g. the BepInEx doorstop proxy).
+  const startsWithGameDir = (filePath) =>
+    ROOT_GAME_DIRS.some((dir) => filePath.toLowerCase().startsWith(`${dir.toLowerCase()}/`)) ||
+    ROOT_GAME_FILES.some((f) => filePath.toLowerCase() === f.toLowerCase());
 
-      return {
+  // Layout A — Files already start with game root directories
+  if (normalized.some(startsWithGameDir)) {
+    return Promise.resolve({
+      instructions: normalized.map((source) => ({
         type: 'copy',
-        source: file,
-        destination: destPath,
-      };
+        source,
+        destination: source,
+      })),
     });
+  }
 
-  return Promise.resolve({ instructions });
+  // Detect potential wrapper folder
+  const topLevelDirs = [...new Set(normalized.map((f) => f.split('/')[0]))].filter(Boolean);
+  const hasSingleWrapper = topLevelDirs.length === 1;
+  const hasNestedContent = normalized.some((f) => f.includes('/'));
+
+  // Layout B — Single wrapper folder containing actual mod files
+  if (hasSingleWrapper && hasNestedContent) {
+    const wrapper = topLevelDirs[0];
+
+    return Promise.resolve({
+      instructions: normalized.map((source) => {
+        // Strip the wrapper folder using path.posix.relative
+        const relative = path.posix.relative(wrapper, source);
+        return {
+          type: 'copy',
+          source,
+          destination: relative,
+        };
+      }),
+    });
+  }
+
+  // Layout C — Deploy files as-is (forward slashes for consistency)
+  return Promise.resolve({
+    instructions: normalized.map((source) => ({
+      type: 'copy',
+      source,
+      destination: source,
+    })),
+  });
 }
 
 // ---------------------------------------------------------------------------
-// Utility Functions
+// Main entry point
 // ---------------------------------------------------------------------------
 
-/**
- * Finds the common path prefix of all files.
- */
-function getCommonPrefix(files) {
-  if (files.length === 0) return '';
-
-  const parts = files[0].split('/');
-  for (let i = 0; i < parts.length; i++) {
-    if (!files.every((f) => f.split('/')[i] === parts[i])) {
-      return parts.slice(0, i).join('/');
-    }
-  }
-
-  return parts.join('/');
-}
-
-/**
- * Determines if a single wrapper folder should be stripped.
- * Strips if:
- *   - Prefix is one level deep (e.g., "black-book-tc-mod")
- *   - All files are nested under it
- *   - The prefix does NOT match a known game directory
- */
-function shouldStripWrapper(prefix, files) {
-  if (!prefix || prefix.split('/').length !== 1) {
-    return false; // Multi-level or empty prefix
-  }
-
-  if (ROOT_GAME_DIRS.some((dir) => dir.toLowerCase() === prefix.toLowerCase())) {
-    return false; // Prefix is a known game directory
-  }
-
-  // Strip if all files are under the prefix
-  return files.every((f) => f.startsWith(prefix + '/'));
-}
-
-// ---------------------------------------------------------------------------
-// Module Export
-// ---------------------------------------------------------------------------
-
-module.exports = function setup(context) {
-  const { registerGame, registerModType, registerInstaller } = context.api;
-
-  // Register the game
-  registerGame({
+function main(context) {
+  context.registerGame({
     id: GAME_ID,
     name: GAME_NAME,
     mergeMods: true,
@@ -292,26 +206,22 @@ module.exports = function setup(context) {
     executable: () => GAME_EXE,
     requiredFiles: [GAME_EXE],
     setup: prepareForModding,
+    environment: {
+      SteamAPPId: STEAM_APP_ID,
+    },
+    details: {
+      steamAppId: parseInt(STEAM_APP_ID, 10),
+      gogAppId: parseInt(GOG_ID, 10),
+      nexusPageId: NEXUS_DOMAIN,
+    },
   });
 
-  // Register installer: Localization mod (priority 25, runs first)
-  registerInstaller(
-    'black-book-localization-installer',
-    25,
-    testLocalizationModContent,
-    installLocalizationModContent,
-  );
-
-  // Register installer: Font mod (priority 20)
-  registerInstaller('black-book-font-installer', 20, testFontModContent, installFontModContent);
-
-  // Register installer: Generic mod (priority 10, fallback)
-  registerInstaller(
-    'black-book-generic-installer',
-    10,
-    testGenericModContent,
-    installGenericModContent,
-  );
+  // Generic mod installer — handles all replacement mods (localization data,
+  // BepInEx plugins and the BepInEx framework) by deploying files to their
+  // specified paths, with single-wrapper-folder stripping.
+  context.registerInstaller('black-book-mod', 20, testModContent, installModContent);
 
   return true;
-};
+}
+
+module.exports = { default: main };

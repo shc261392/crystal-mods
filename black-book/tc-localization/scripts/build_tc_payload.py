@@ -253,7 +253,10 @@ def build_file(src: Path, rel: Path, dst: Path, stats: dict,
 
 def write_report(payload_root: Path, stats: dict, examples: list[tuple[str, str, str]]) -> None:
     """Write a build report next to the payload."""
-    report = payload_root.parent.parent / "EXTRACTION_REPORT.txt"
+    # Deliberately OUTSIDE Black Book_Data: package_zip.py stages that tree
+    # wholesale, so a report written inside it would be deployed into the
+    # game folder.
+    report = payload_root.parent.parent.parent / "EXTRACTION_REPORT.txt"
     lines = [
         "Black Book TC Localization - build report",
         "=" * 60,
