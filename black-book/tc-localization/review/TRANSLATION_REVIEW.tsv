@@ -1,47 +1,47 @@
-# Translation review - edit `suggested` and hand the file back.
+# Black Book TC - translation review
 #
-# Columns are TAB-separated:
+# Edit the `suggested` column and hand the file back. Rows you accept
+# get appended verbatim to reference/overrides.tsv
+# (file / key / suggested), then `make build` applies them.
+#
+# blank `suggested` = the Chinese has to be AUTHORED, not converted:
+#   the game's own Simplified translation is simply wrong there.
+#
+# Columns (TAB-separated):
 #   file       path relative to StreamingAssets/Config
 #   key        dotted YAML key
-#   english    the game's English text, for reference
-#   current    what the mod ships today
-#   suggested  proposed replacement - REVIEW BEFORE USE; blank where
-#              nobody could determine the intended wording
-#   issue      what is wrong
+#   english    the game's English text
+#   current    what the mod ships today (converted from the game's SC)
+#   suggested  proposed replacement, if any - REVIEW BEFORE USE
 #
-# Rows you accept can be appended verbatim to
-# reference/overrides.tsv (file / key / suggested), then `make build`.
-# A blank `suggested` means the Chinese has to be authored, not converted:
-# the game's own Simplified translation is simply wrong there.
-#
-file	key	english	current	suggested	issue
-Locations/Week3Day7Blood/config_zh.yaml	Name	血	血	血跡	game SC mistranslation
-Units/WolfDeadly/config_zh.yaml	Name	狼	狼	換生狼	game SC mistranslation
-Units/WolfFedka/config_zh.yaml	Name	狼	狼	換生狼	game SC mistranslation
-Skills/KeysKnowledge/config_zh.yaml	Name	鑰識	鑰識	鑰之學識	game SC mistranslation
-Skills/OrdersKnowledge/config_zh.yaml	Name	令識	令識	令之學識	game SC mistranslation
-Locations/RoguelikeVictory/config_zh.yaml	Name	對抗魔鬼	對抗魔鬼	無休對戰	game SC mistranslation
-Units/Satan1/config_zh.yaml	Name	死神	死神	撒旦	game SC mistranslation
-Units/Satan2/config_zh.yaml	Name	死神	死神	撒旦	game SC mistranslation
-Abilities/CLEANSING_FIRE_ROGUELIKE/config_zh.yaml	Name	地獄之火	地獄之火	淨化之火	game SC mistranslation
-Abilities/MARY_EGYPT/config_zh.yaml	Name	開火！	開火！	埃及的瑪利亞	game SC mistranslation
-Status/Cunning/config_zh.yaml	Name	赤腳醫生	赤腳醫生	狡詐	game SC mistranslation
-Status/Cunning/config_zh.yaml	Description	若敵方密咒詞語全為白，則不受傷害	若敵方密咒詞語全為白，則不受傷害	隱藏敵方單位的行動意圖	game SC mistranslation
-Inventory/ChurchKnife/config_zh.yaml	Name	聖矛	聖矛	教堂刀	game SC mistranslation
-Inventory/BirdCurse/config_zh.yaml	Name	看守之鳥	看守之鳥	詛咒之鳥	game SC mistranslation
-Inventory/DogMushroom/config_zh.yaml	Name	蛇頭菌	蛇頭菌	狗菇	game SC mistranslation
-Units/MermaidSalt/config_zh.yaml	Name	奧捷莉哈	奧捷莉哈	鹹水露莎卡	game SC mistranslation
-Units/SnakeSorcerer/config_zh.yaml	Name	奧捷莉哈	奧捷莉哈	弄蛇科爾敦	game SC mistranslation
-Locations/Week1Day7Vyatkino/config_zh.yaml	Name	扎布羅汀村墓地	扎布羅汀村墓地	維亞特基諾村墓地	game SC mistranslation
-Locations/Week1Day6BathUnderground1/config_zh.yaml	LevelConfig.Battle.Name	煤塊讎特	煤塊讎特	邪煤	game SC mistranslation
-Inventory/Sivulist/config_zh.yaml	Flavour	這種草生長在草甸和平坦之處，也可以在海洋和河流附近覓得。	這種草生長在草甸和平坦之處，也可以在海洋和河流附近覓得。	可治百病	game SC mistranslation
-Abilities/ERETNIK_STRIKE/config_zh.yaml	Name	瘦骨嶙峋	瘦骨嶙峋	骨手	game SC mistranslation
-Abilities/HELP_NIKOLA/config_zh.yaml	Name	上帝保佑尼古拉	上帝保佑尼古拉	出手相助吧，尼古拉	game SC mistranslation
-Abilities/IN_LOOSE/config_zh.yaml	Name	翻天覆地！	翻天覆地！	散開！	game SC mistranslation
-Status/DefenceGive/config_zh.yaml	Name	招架	招架	護佑	game SC mistranslation
-Status/Untouchable/config_zh.yaml	Name	賤民	賤民	不可觸	game SC mistranslation
-Locations/Week2Day5CemeteryBackers/config_zh.yaml	Name	贊助玩家墓地	贊助玩家墓地	洞穴墓地	game SC mistranslation
-Units/SinnerHorse/config_zh.yaml	Name	罪人	罪人	罪人之馬	game SC mistranslation
-Units/SnakeCopper/config_zh.yaml	Name	蛇蜥	蛇蜥	銅蛇	game SC mistranslation
-Locations/Week2Day1NigneeMoshevo/config_zh.yaml	Description	這個村的電報線斷了。	這個村的電報線斷了。	這條電報線到這個村就終止了。	game SC mistranslation
-Service/Credits/config_zh.yaml	Developers.People[0].Titles[2].Title	程式計	程式計	程式設計	game SC mistranslation
+file	key	english	current	suggested
+Locations/Week3Day7Blood/config_zh.yaml	Name	Blood Trail	血	血跡
+Units/WolfDeadly/config_zh.yaml	Name	Changeling Wolf	狼	換生狼
+Units/WolfFedka/config_zh.yaml	Name	Changeling Wolf	狼	換生狼
+Skills/KeysKnowledge/config_zh.yaml	Name	Knowledge of Keys	鑰識	鑰之學識
+Skills/OrdersKnowledge/config_zh.yaml	Name	Knowledge of Orders	令識	令之學識
+Locations/RoguelikeVictory/config_zh.yaml	Name	Endless Battles	對抗魔鬼	無休對戰
+Units/Satan1/config_zh.yaml	Name	Satan	死神	撒旦
+Units/Satan2/config_zh.yaml	Name	Satan	死神	撒旦
+Abilities/CLEANSING_FIRE_ROGUELIKE/config_zh.yaml	Name	Cleansing Fire	地獄之火	淨化之火
+Abilities/MARY_EGYPT/config_zh.yaml	Name	Mary of Egypt	開火！	埃及的瑪利亞
+Status/Cunning/config_zh.yaml	Name	Cunning	赤腳醫生	狡詐
+Status/Cunning/config_zh.yaml	Description	Hides unit intentions	若敵方密咒詞語全為白，則不受傷害	隱藏敵方單位的行動意圖
+Inventory/ChurchKnife/config_zh.yaml	Name	Church Knife	聖矛	教堂刀
+Inventory/BirdCurse/config_zh.yaml	Name	Bird of Curses	看守之鳥	詛咒之鳥
+Inventory/DogMushroom/config_zh.yaml	Name	Dog Mushroom	蛇頭菌	狗菇
+Units/MermaidSalt/config_zh.yaml	Name	Saltwater Mermaid	奧捷莉哈	鹹水露莎卡
+Units/SnakeSorcerer/config_zh.yaml	Name	Snake Koldun	奧捷莉哈	弄蛇科爾敦
+Locations/Week1Day7Vyatkino/config_zh.yaml	Name	Village Cemetery	扎布羅汀村墓地	維亞特基諾村墓地
+Locations/Week1Day6BathUnderground1/config_zh.yaml	LevelConfig.Battle.Name	Unholy Coals	煤塊讎特	邪煤
+Inventory/Sivulist/config_zh.yaml	Flavour	Protects from any disease	這種草生長在草甸和平坦之處，也可以在海洋和河流附近覓得。	可治百病
+Abilities/ERETNIK_STRIKE/config_zh.yaml	Name	Bony Hand	瘦骨嶙峋	骨手
+Abilities/HELP_NIKOLA/config_zh.yaml	Name	Lend Help, Nicholas	上帝保佑尼古拉	出手相助吧，尼古拉
+Abilities/IN_LOOSE/config_zh.yaml	Name	Scatter!	翻天覆地！	散開！
+Status/DefenceGive/config_zh.yaml	Name	Ward	招架	護佑
+Status/Untouchable/config_zh.yaml	Name	Untouchable	賤民	不可觸
+Locations/Week2Day5CemeteryBackers/config_zh.yaml	Name	Cave Cemetery	贊助玩家墓地	洞穴墓地
+Units/SinnerHorse/config_zh.yaml	Name	Sinner-horse	罪人	罪人之馬
+Units/SnakeCopper/config_zh.yaml	Name	Copper Snake	蛇蜥	銅蛇
+Locations/Week2Day1NigneeMoshevo/config_zh.yaml	Description	The telegraph line stops in this village.	這個村的電報線斷了。	這條電報線到這個村就終止了。
+Service/Credits/config_zh.yaml	Developers.People[0].Titles[2].Title	Programming	程式計	程式設計
