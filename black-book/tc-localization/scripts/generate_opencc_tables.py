@@ -121,10 +121,27 @@ def validate() -> None:
               f"({100 * same / total:.2f}%)")
 
 
+def load_manual_terms() -> dict[str, str]:
+    """Taiwan terms that OpenCC's dictionary misses, from reference/terms.tsv."""
+    path = SCRIPT_DIR / "reference" / "terms.tsv"
+    terms: dict[str, str] = {}
+    if not path.exists():
+        return terms
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        parts = line.split("\t")
+        if len(parts) >= 2 and parts[0].strip():
+            terms[parts[0].strip()] = parts[1]
+    return terms
+
+
 def main() -> int:
     print("Generating OpenCC runtime tables")
     write("opencc_st.tsv", load("STPhrases.txt"), load("STCharacters.txt"))
-    write("opencc_tw.tsv", load("TWPhrases.txt"), load("TWVariants.txt"))
+    # Manual Taiwan terms ride along in stage 2 so the runtime converter and the
+    # build-time payload stay identical.
+    write("opencc_tw.tsv", load("TWPhrases.txt"), load("TWVariants.txt"), load_manual_terms())
     validate()
     return 0
 

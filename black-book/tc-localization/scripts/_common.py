@@ -73,3 +73,52 @@ def format_flags(path: Path) -> tuple[bool, bool]:
     """Return ``(has_bom, uses_crlf)`` for a file."""
     raw = path.read_bytes()
     return raw.startswith(BOM), b"\r\n" in raw
+
+# --------------------------------------------------------------------------- #
+# Taiwan terminology
+# --------------------------------------------------------------------------- #
+
+TERMS_FILE = SCRIPT_DIR / "reference" / "terms.tsv"
+
+
+def load_terms() -> dict[str, str]:
+    """Taiwan term fixes applied to EVERY converted string.
+
+    OpenCC's s2twp dictionary does not cover every Mainland/Taiwan difference, and
+    some of the strings that need them (dialogue, UI labels) live in
+    data.unity3d and are only converted at runtime, so they cannot be expressed
+    as config overrides.
+    """
+    terms: dict[str, str] = {}
+    if not TERMS_FILE.exists():
+        return terms
+    for line in TERMS_FILE.read_text(encoding="utf-8").splitlines():
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        parts = line.split("\t")
+        if len(parts) >= 2 and parts[0].strip():
+            terms[parts[0].strip()] = parts[1]
+    return terms
+
+
+def apply_terms(text: str, terms: dict[str, str]) -> str:
+    """Longest-match replacement, so a longer term wins over a shorter one."""
+    if not text or not terms:
+        return text
+    longest = max(len(k) for k in terms)
+    out: list[str] = []
+    i, n = 0, len(text)
+    while i < n:
+        hit = None
+        for length in range(min(longest, n - i), 0, -1):
+            chunk = text[i:i + length]
+            if chunk in terms:
+                hit = terms[chunk]
+                i += length
+                break
+        if hit is None:
+            out.append(text[i])
+            i += 1
+        else:
+            out.append(hit)
+    return "".join(out)

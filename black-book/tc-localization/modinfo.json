@@ -2,7 +2,7 @@
   "id": "tc-localization",
   "name": "Traditional Chinese Localization",
   "game": "black-book",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "author": "Community",
   "category": "Localization",
   "description": "Converts Black Book's built-in Simplified Chinese localisation to Traditional Chinese (zh-TW) using OpenCC s2twp, with reviewed terminology corrections. Replaces the StreamingAssets/Config config_zh.yaml files; no plugins or runtime translators required.",

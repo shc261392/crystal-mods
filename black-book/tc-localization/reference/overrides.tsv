@@ -24,3 +24,17 @@ Service/Credits/config_zh.yaml	ChineseLocalization.People[3].Titles[0].Title	在
 
 # 質量 is Mainland usage for "quality"; Taiwan credits use 品質管制.
 Service/Credits/config_zh.yaml	Developers.People[5].Titles[0].Title	品質管制
+# --- OpenCC mangles 里 inside transliterated names ------------
+# s2twp's single-character rule 里 -> 裡 also fires in personal and
+# place names, where the character is a transliteration of a Slavic
+# name (Егор / Кириан / Суперик) and must stay 里.
+Inventory/Kiryan/config_zh.yaml	Name	智天使基里安
+Inventory/Superik/config_zh.yaml	Name	蘇佩里克
+Inventory/Superik/config_zh.yaml	Flavour	你的蘇佩里克可真漂亮！
+Abilities/Georgy_Batushka/config_zh.yaml	Name	神父葉戈里
+Abilities/Georgy_Brave/config_zh.yaml	Name	勇者葉戈里
+Abilities/Georgy_Prayer/config_zh.yaml	Name	虔信者葉戈里
+Abilities/Georgy_Shepard/config_zh.yaml	Name	牧者葉戈里
+Abilities/Georgy_Winner/config_zh.yaml	Name	聖徒葉戈里
+Abilities/GEORGY_FIRE/config_zh.yaml	Name	烈火葉戈里
+Abilities/NIKOLA_GEORGY/config_zh.yaml	Name	尼古拉與葉戈里

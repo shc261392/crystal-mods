@@ -1,0 +1,46 @@
+# file	key	replacement
+# PROPOSALS ONLY - not applied. Review before use.
+Locations/Week3Day7Blood/config_zh.yaml	Name	血跡
+Units/WolfDeadly/config_zh.yaml	Name	換生狼
+Units/WolfFedka/config_zh.yaml	Name	換生狼
+Skills/KeysKnowledge/config_zh.yaml	Name	鑰之學識
+Skills/OrdersKnowledge/config_zh.yaml	Name	令之學識
+Locations/RoguelikeVictory/config_zh.yaml	Name	無休對戰
+Units/Satan1/config_zh.yaml	Name	撒旦
+Units/Satan2/config_zh.yaml	Name	撒旦
+Abilities/CLEANSING_FIRE_ROGUELIKE/config_zh.yaml	Name	淨化之火
+Abilities/MARY_EGYPT/config_zh.yaml	Name	埃及的瑪利亞
+Status/Cunning/config_zh.yaml	Name	狡詐
+Status/Cunning/config_zh.yaml	Description	隱藏敵方單位的行動意圖
+Inventory/ChurchKnife/config_zh.yaml	Name	教堂刀
+Inventory/BirdCurse/config_zh.yaml	Name	詛咒之鳥
+Inventory/DogMushroom/config_zh.yaml	Name	狗菇
+Units/MermaidSalt/config_zh.yaml	Name	鹹水露莎卡
+Units/SnakeSorcerer/config_zh.yaml	Name	弄蛇科爾敦
+Locations/Week1Day7Vyatkino/config_zh.yaml	Name	維亞特基諾村墓地
+Locations/Week1Day6BathUnderground1/config_zh.yaml	LevelConfig.Battle.Name	邪煤
+# Abilities/Wind_Luka_Up::Description is a MULTI-LINE value; the override gate
+# splits on TAB per line, so it cannot be expressed here. Fix by editing the
+# generated payload / adding a multi-line-capable rule. EN: "{MinValue} damage
+# \nDraws a random page"  ->  TC should be "{MinValue}點傷害\n隨機抽取一頁"
+Inventory/Sivulist/config_zh.yaml	Flavour	可治百病
+Abilities/ERETNIK_STRIKE/config_zh.yaml	Name	骨手
+Abilities/HELP_NIKOLA/config_zh.yaml	Name	出手相助吧，尼古拉
+Abilities/IN_LOOSE/config_zh.yaml	Name	散開！
+Status/DefenceGive/config_zh.yaml	Name	護佑
+Status/Untouchable/config_zh.yaml	Name	不可觸
+Locations/Week2Day5CemeteryBackers/config_zh.yaml	Name	洞穴墓地
+Units/SinnerHorse/config_zh.yaml	Name	罪人之馬
+Units/SnakeCopper/config_zh.yaml	Name	銅蛇
+Locations/Week2Day1NigneeMoshevo/config_zh.yaml	Description	這條電報線到這個村就終止了。
+Inventory/Kiryan/config_zh.yaml	Name	智天使基里安
+Inventory/Superik/config_zh.yaml	Name	蘇佩里克
+Inventory/Superik/config_zh.yaml	Flavour	你的蘇佩里克可真漂亮！
+Abilities/Georgy_Batushka/config_zh.yaml	Name	神父葉戈里
+Abilities/Georgy_Brave/config_zh.yaml	Name	勇者葉戈里
+Abilities/Georgy_Prayer/config_zh.yaml	Name	虔信者葉戈里
+Abilities/Georgy_Shepard/config_zh.yaml	Name	牧者葉戈里
+Abilities/Georgy_Winner/config_zh.yaml	Name	聖徒葉戈里
+Abilities/GEORGY_FIRE/config_zh.yaml	Name	烈火葉戈里
+Abilities/NIKOLA_GEORGY/config_zh.yaml	Name	尼古拉與葉戈里
+Service/Credits/config_zh.yaml	Developers.People[0].Titles[2].Title	程式設計

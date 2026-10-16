@@ -18,7 +18,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-from _common import iter_strings, load, payload_root, source_root
+from _common import apply_terms, iter_strings, load, load_terms, payload_root, source_root
 
 try:
     from opencc import OpenCC
@@ -29,6 +29,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent.parent
 OVERRIDES_FILE = SCRIPT_DIR / "reference" / "overrides.tsv"
 
 CONVERTER = OpenCC("s2twp")
+TERMS = load_terms()
 
 
 def load_override_map() -> dict[str, dict[str, str]]:
@@ -63,7 +64,7 @@ def main() -> int:
             if key in file_overrides:
                 expected = file_overrides[key]
             elif key in src_leaves:
-                expected = CONVERTER.convert(src_leaves[key])
+                expected = apply_terms(CONVERTER.convert(src_leaves[key]), TERMS)
             else:
                 continue
             if value != expected:

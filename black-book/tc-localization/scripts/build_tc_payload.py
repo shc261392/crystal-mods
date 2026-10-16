@@ -38,6 +38,11 @@ try:
 except ImportError:  # pragma: no cover
     sys.exit("ERROR: ruamel.yaml is required. See pyproject.toml")
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _common import apply_terms, load_terms  # noqa: E402
+
+TERMS = load_terms()
+
 SCRIPT_DIR = Path(__file__).resolve().parent.parent
 SOURCE_DIR = SCRIPT_DIR / "source" / "sc" / "StreamingAssets" / "Config"
 PAYLOAD_DIR = SCRIPT_DIR / "payload" / "Black Book_Data" / "StreamingAssets" / "Config"
@@ -105,7 +110,7 @@ def convert_node(node: object, stats: dict[str, int]) -> int:
     if isinstance(node, dict):
         for key, value in node.items():
             if isinstance(value, str):
-                tc = CONVERTER.convert(value)
+                tc = apply_terms(CONVERTER.convert(value), TERMS)
                 if tc != value:
                     node[key] = tc
                     changed += 1
@@ -115,7 +120,7 @@ def convert_node(node: object, stats: dict[str, int]) -> int:
     elif isinstance(node, list):
         for index, value in enumerate(node):
             if isinstance(value, str):
-                tc = CONVERTER.convert(value)
+                tc = apply_terms(CONVERTER.convert(value), TERMS)
                 if tc != value:
                     node[index] = tc
                     changed += 1
