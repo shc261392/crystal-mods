@@ -34,19 +34,6 @@ point-costs. Data-only asset edit; levers were validated in-game.
 - **Status:** Built; core levers validated in-game
 - **Repository:** [the-great-crusade/](the-great-crusade/)
 
-### [Army Painter](army-painter/)
-BepInEx plugin that recolors the **local player's army** at runtime — primary +
-secondary paint colours (e.g. Blood Angels red → Ultramarines blue) — with an
-in-game color-changing UI (F10 or on-screen button). Per-faction schemes persist
-in the BepInEx config; new units are auto-repainted. Uses MaterialPropertyBlock +
-cached albedo remap, so **no game asset is modified** and **Reset** fully
-restores the original paint. **Requires the BepInEx Framework mod.**
-
-- **Installation:** Vortex Mod Manager (install BepInEx Framework first)
-- **Requires:** BepInEx Framework
-- **Status:** Built v1.0.0; DiagMode provided for in-game validation
-- **Repository:** [army-painter/](army-painter/)
-
 ### [Red Laser Lasgun](red-laser-lasgun/)
 BepInEx plugin that renders the Astra Militarum lasgun as a glowing red laser beam
 (muzzle → target) for all AM las weapons, with zero side effects on other weapons.
@@ -54,8 +41,37 @@ BepInEx plugin that renders the Astra Militarum lasgun as a glowing red laser be
 
 - **Installation:** Vortex Mod Manager (install BepInEx Framework first)
 - **Requires:** BepInEx Framework
-- **Status:** Built v1.1.0; validated in-game
+- **Status:** Built v1.1.1 (packaging fix); plugin validated in-game at v1.1.0
 - **Repository:** [red-laser-lasgun/](red-laser-lasgun/)
+
+### [Data Edit Tutorial](data_edit_tutorial.md)
+**Developer guide** covering how Battlesector unit & weapon stats are stored,
+edited, packaged and deployed. Starts from the raw `UnitDataTable` /
+`WeaponDataTable` asset bundle and ends with a Vortex-installable zip, including
+field references, compatibility rules and conflict resolution. The worked example
+was the now-retired **Superhuman Cadian** demo mod (Cadian Shock Troops ×2 stats,
+1-point cost; Lasgun 50 attacks).
+Pure **data edit** (UnityPy — no BepInEx).
+
+- **Audience:** mod developers
+- **Requires:** Python 3.11+ with UnityPy, plus your own game files
+- **Status:** Verified against Battlesector 1.7.7 / Unity 6000.0.62f1
+
+### [Warpstorm](warpstorm/)
+**Ultimate Battlesector Customization Tool** — a runtime unit & weapon stat
+editor in two parts: a **BepInEx 6 (IL2CPP) plugin** that applies edits to the
+game's live `RuntimeDataTables` (all modes, live F12 on/off toggle), and an
+**Avalonia configurator EXE** that browses every unit/weapon (using the
+BattleSector Tools catalog) and writes the plugin config. Runtime plugin → no
+file conflicts; stacks with any other mod.
+
+Also includes **Army Painter** (runtime army recolour), merged into the same
+plugin — there is no separate Army Painter mod.
+
+- **Installation:** Vortex (plugin) + run the configurator EXE
+- **Requires:** BepInEx Framework
+- **Status:** Built v0.1.0 (plugin + configurator compile, pipeline verified); in-game validation pending
+- **Repository:** [warpstorm/](warpstorm/)
 
 ## Vortex Extension
 
@@ -111,6 +127,15 @@ warhammer-40k-battlesector/
 │   ├── deploy.sh / deploy.ps1
 │   ├── uninstall.sh / uninstall.ps1
 │   └── dist/                         # Built ZIPs
+├── data_edit_tutorial.md             # Data-edit guide (UnityPy: unit/weapon stats)
+├── warpstorm/                        # Runtime unit/weapon stat editor (BepInEx + EXE)
+│   ├── plugin/                       #   BepInEx 6 (IL2CPP) plugin
+│   ├── configurator/                 #   Avalonia desktop EXE
+│   ├── shared/fields.json            #   editable field catalog
+│   ├── Makefile / package.sh|ps1
+│   └── dist/                         # Built ZIPs
+├── skills/
+│   └── battlesector-modding/SKILL.md # Agent skill: extract/edit/package mods
 └── vortex-ext/
     └── game-warhammer40kbattlesector/    # Vortex extension
         ├── index.js
@@ -124,7 +149,7 @@ warhammer-40k-battlesector/
 ## Links
 
 - **Game:** [Steam](https://store.steampowered.com/app/1295500/Warhammer_40000_Battlesector/) · [GOG](https://www.gog.com/game/warhammer_40k_battlesector)
-- **Nexus Mods:** [WH40K Battlesector Mods](https://www.nexusmods.com/warhammer40kbattlesector)
+- **Nexus Mods:** [WH40K Battlesector Mods](https://www.nexusmods.com/warhammer40000battlesector)
 - **PCGamingWiki:** [Warhammer 40,000: Battlesector](https://www.pcgamingwiki.com/wiki/Warhammer_40%2C000%3A_Battlesector)
 
 ## Research provenance (for contributors)

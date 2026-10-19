@@ -62,7 +62,6 @@ build.*/
 *.ttf
 *.ttc
 *.otf
-hybrid_fonts_tc/
 
 out/
 
