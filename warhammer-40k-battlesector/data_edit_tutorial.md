@@ -30,6 +30,10 @@ make build            # -> dist/<mod>-v<version>.zip
 The zip contains the patched bundle at its game-root-relative path, which the
 repo's Vortex extension deploys for you.
 
+A runnable reference implementation of this recipe is preserved at
+[`tools/data-edit/build.py`](tools/data-edit/build.py) (from the retired
+Superhuman Cadian demo).
+
 ---
 
 ## 1. Two kinds of Battlesector mods — pick the right one first
