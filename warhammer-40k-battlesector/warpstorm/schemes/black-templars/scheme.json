@@ -1,0 +1,47 @@
+{
+  "id": "black-templars",
+  "name": "Black Templars",
+  "version": "1.0.0",
+  "author": "crystal-mods",
+  "description": "Pitch-black crusader armour; brass kept. Badge: cross patt\u00e9e.",
+  "faction": "Ultramarines",
+  "primary": "17181B",
+  "secondary": "E8E4DA",
+  "rules": [
+    {
+      "hue": 222,
+      "width": 20,
+      "feather": 10,
+      "satMin": 0.22,
+      "valMax": 1.0,
+      "to": "17181B",
+      "satScale": 1.0,
+      "valScale": 1.0
+    },
+    {
+      "hue": 218,
+      "width": 18,
+      "feather": 8,
+      "satMin": 0.07,
+      "valMin": 0.45,
+      "valMax": 1.0,
+      "to": "4A4D52",
+      "satScale": 1.0,
+      "valScale": 1.0
+    }
+  ],
+  "badge": {
+    "textures": [
+      "ULT_Logo_D",
+      "ULT_Logo_edit_D",
+      "ULT_Logo_damaged_D"
+    ],
+    "rect": [
+      0.29,
+      0.015,
+      0.437,
+      0.16
+    ],
+    "image": "badge.png"
+  }
+}

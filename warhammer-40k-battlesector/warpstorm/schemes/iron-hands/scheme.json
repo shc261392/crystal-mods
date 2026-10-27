@@ -1,0 +1,47 @@
+{
+  "id": "iron-hands",
+  "name": "Iron Hands",
+  "version": "1.0.0",
+  "author": "crystal-mods",
+  "description": "Gunmetal-black armour of Medusa; brass kept. Badge: iron hand in a cog.",
+  "faction": "Ultramarines",
+  "primary": "24262A",
+  "secondary": "8C8C8C",
+  "rules": [
+    {
+      "hue": 222,
+      "width": 20,
+      "feather": 10,
+      "satMin": 0.22,
+      "valMax": 1.0,
+      "to": "24262A",
+      "satScale": 1.0,
+      "valScale": 1.0
+    },
+    {
+      "hue": 218,
+      "width": 18,
+      "feather": 8,
+      "satMin": 0.07,
+      "valMin": 0.45,
+      "valMax": 1.0,
+      "to": "60656B",
+      "satScale": 1.0,
+      "valScale": 1.0
+    }
+  ],
+  "badge": {
+    "textures": [
+      "ULT_Logo_D",
+      "ULT_Logo_edit_D",
+      "ULT_Logo_damaged_D"
+    ],
+    "rect": [
+      0.29,
+      0.015,
+      0.437,
+      0.16
+    ],
+    "image": "badge.png"
+  }
+}

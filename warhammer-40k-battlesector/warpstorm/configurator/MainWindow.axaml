@@ -1,0 +1,64 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Warpstorm.Configurator.MainWindow"
+        Title="Warpstorm Configurator"
+        Icon="avares://Warpstorm.Configurator/branding/warpstorm.png"
+        Width="1360" Height="860" MinWidth="1080" MinHeight="680"
+        WindowStartupLocation="CenterScreen">
+  <DockPanel>
+    <!-- Header: product name, unsaved state, language, actions. -->
+    <Border DockPanel.Dock="Top" Background="#140F0A" BorderBrush="#3A3127" BorderThickness="0,0,0,1"
+            Padding="16,8">
+      <Grid ColumnDefinitions="Auto,Auto,*,Auto,Auto">
+        <Image Source="avares://Warpstorm.Configurator/branding/warpstorm.png" Width="30" Height="30" />
+        <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8" Margin="10,0,24,0" VerticalAlignment="Center">
+          <TextBlock Text="Warpstorm" Classes="heading" FontSize="22" VerticalAlignment="Center" />
+          <TextBlock x:Name="AppTitle" Classes="faint" FontSize="14" VerticalAlignment="Bottom" Margin="0,0,0,3" />
+        </StackPanel>
+        <StackPanel x:Name="HeaderChips" Grid.Column="2" Orientation="Horizontal" Spacing="6"
+                    VerticalAlignment="Center" ClipToBounds="True" />
+        <StackPanel Grid.Column="3" Orientation="Horizontal" Spacing="6" Margin="12,0" VerticalAlignment="Center">
+          <PathIcon x:Name="LangLabel" Width="16" Height="16" Foreground="#908476" />
+          <ComboBox x:Name="LangBox" MinWidth="140" />
+        </StackPanel>
+        <StackPanel Grid.Column="4" Orientation="Horizontal" Spacing="6" VerticalAlignment="Center">
+          <Button x:Name="RevertButton" Classes="ghost" />
+          <Button x:Name="SaveButton" Classes="primary" />
+          <Button x:Name="MoreButton" Classes="ghost" Padding="8,6">
+            <Button.Flyout>
+              <MenuFlyout Placement="BottomEdgeAlignedRight">
+                <MenuItem x:Name="ImportButton" />
+                <MenuItem x:Name="ExportButton" />
+              </MenuFlyout>
+            </Button.Flyout>
+          </Button>
+        </StackPanel>
+      </Grid>
+    </Border>
+
+    <!-- Status bar -->
+    <Border DockPanel.Dock="Bottom" Background="#140F0A" BorderBrush="#3A3127" BorderThickness="0,1,0,0"
+            Padding="16,6">
+      <Grid ColumnDefinitions="Auto,*,Auto">
+        <ProgressBar x:Name="VerifyBar" Width="120" IsIndeterminate="True" IsVisible="False"
+                     Margin="0,0,10,0" VerticalAlignment="Center" />
+        <TextBlock x:Name="StatusText" Grid.Column="1" Text="" Classes="muted" FontSize="12"
+                   TextTrimming="CharacterEllipsis" />
+        <TextBlock x:Name="HotkeyText" Grid.Column="2" Classes="faint" FontSize="11" />
+      </Grid>
+    </Border>
+
+    <!-- Navigation rail -->
+    <Border DockPanel.Dock="Left" Width="196" Background="#110D09" BorderBrush="#3A3127"
+            BorderThickness="0,0,1,0" Padding="8,12">
+      <DockPanel>
+        <StackPanel DockPanel.Dock="Bottom" Spacing="4">
+          <TextBlock x:Name="NavFootnote" Classes="faint" FontSize="10" TextWrapping="Wrap" Margin="6,0" />
+        </StackPanel>
+        <StackPanel x:Name="NavPanel" Spacing="2" />
+      </DockPanel>
+    </Border>
+
+    <ContentControl x:Name="ContentHost" Margin="20,16" />
+  </DockPanel>
+</Window>

@@ -1,0 +1,47 @@
+{
+  "id": "blood-ravens",
+  "name": "Blood Ravens",
+  "version": "1.0.0",
+  "author": "crystal-mods",
+  "description": "Dark blood-red armour; brass kept. Badge: winged blood drop.",
+  "faction": "Ultramarines",
+  "primary": "5E1216",
+  "secondary": "D9CBA3",
+  "rules": [
+    {
+      "hue": 222,
+      "width": 20,
+      "feather": 10,
+      "satMin": 0.22,
+      "valMax": 1.0,
+      "to": "5E1216",
+      "satScale": 0.85,
+      "valScale": 0.75
+    },
+    {
+      "hue": 218,
+      "width": 18,
+      "feather": 8,
+      "satMin": 0.07,
+      "valMin": 0.45,
+      "valMax": 1.0,
+      "to": "8E4144",
+      "satScale": 1.0,
+      "valScale": 0.85
+    }
+  ],
+  "badge": {
+    "textures": [
+      "ULT_Logo_D",
+      "ULT_Logo_edit_D",
+      "ULT_Logo_damaged_D"
+    ],
+    "rect": [
+      0.29,
+      0.015,
+      0.437,
+      0.16
+    ],
+    "image": "badge.png"
+  }
+}

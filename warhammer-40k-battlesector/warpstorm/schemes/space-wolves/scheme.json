@@ -1,0 +1,47 @@
+{
+  "id": "space-wolves",
+  "name": "Space Wolves",
+  "version": "1.0.0",
+  "author": "crystal-mods",
+  "description": "Fenrisian blue-grey armour; brass kept. Badge: wolf head.",
+  "faction": "Ultramarines",
+  "primary": "55707F",
+  "secondary": "C9A227",
+  "rules": [
+    {
+      "hue": 222,
+      "width": 20,
+      "feather": 10,
+      "satMin": 0.22,
+      "valMax": 1.0,
+      "to": "55707F",
+      "satScale": 0.9,
+      "valScale": 0.85
+    },
+    {
+      "hue": 218,
+      "width": 18,
+      "feather": 8,
+      "satMin": 0.07,
+      "valMin": 0.45,
+      "valMax": 1.0,
+      "to": "93A7B2",
+      "satScale": 1.0,
+      "valScale": 0.95
+    }
+  ],
+  "badge": {
+    "textures": [
+      "ULT_Logo_D",
+      "ULT_Logo_edit_D",
+      "ULT_Logo_damaged_D"
+    ],
+    "rect": [
+      0.29,
+      0.015,
+      0.437,
+      0.16
+    ],
+    "image": "badge.png"
+  }
+}

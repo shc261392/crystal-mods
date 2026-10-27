@@ -43,6 +43,13 @@ const DATA_DIR = 'Warhammer 40K Battlesector_Data';
 const SHARED_ASSETS = 'sharedassets1.assets';
 
 /**
+ * Warpstorm ships its configurator inside the mod folder. Registered as a
+ * relative tool, Vortex only lists it (Dashboard -> Tools) once the file is
+ * deployed, so players do not have to dig through the game folder for it.
+ */
+const WARPSTORM_CONFIGURATOR = path.join('BepInEx', 'plugins', 'Warpstorm', 'Warpstorm.Configurator.exe');
+
+/**
  * Known first-level game directories used to detect game-root-relative
  * archives (layout already correct, no stripping needed).
  *
@@ -73,6 +80,24 @@ const ROOT_GAME_FILES = ['winhttp.dll', 'doorstop_config.ini', '.doorstop_versio
 
 function findGame() {
   return util.GameStoreHelper.findByAppId([STEAM_APP_ID, GOG_APP_ID]).then((game) => game.gamePath);
+}
+
+/**
+ * Makes Vortex launch the game through the Steam client instead of spawning
+ * the executable directly. A direct spawn is what Vortex does by default when
+ * this callback is absent, and it is why the Steam overlay is not injected —
+ * the overlay only hooks games "launched through Steam".
+ *
+ * Returning `{ launcher: 'steam' }` makes Vortex run
+ * `steam.exe -applaunch <steamAppId>` (using `details.steamAppId`). Non-Steam
+ * stores (e.g. GOG) resolve to `undefined`, which preserves the default direct
+ * launch.
+ *
+ * @param {string}           _gamePath  Game install path (unused).
+ * @param {string|undefined} store      Store the game was detected through.
+ */
+function requiresLauncher(_gamePath, store) {
+  return Promise.resolve(store === 'steam' ? { launcher: 'steam' } : undefined);
 }
 
 // ---------------------------------------------------------------------------
@@ -187,11 +212,23 @@ function main(context) {
     name: GAME_NAME,
     mergeMods: true,
     queryPath: findGame,
-    supportedTools: [],
+    supportedTools: [
+      {
+        id: 'warpstorm-configurator',
+        name: 'Warpstorm Configurator',
+        shortName: 'Warpstorm',
+        logo: 'warpstorm.png',
+        executable: () => WARPSTORM_CONFIGURATOR,
+        requiredFiles: [WARPSTORM_CONFIGURATOR],
+        relative: true,
+        detach: true,
+      },
+    ],
     queryModPath: () => '.',
     logo: 'gameart.jpg',
     executable: () => GAME_EXE,
     requiredFiles: [GAME_EXE, path.join(DATA_DIR, SHARED_ASSETS)],
+    requiresLauncher,
     setup: prepareForModding,
     environment: {
       SteamAPPId: STEAM_APP_ID,

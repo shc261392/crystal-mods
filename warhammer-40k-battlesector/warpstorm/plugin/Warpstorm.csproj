@@ -1,18 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <!--
-    Army Painter — BepInEx 6 (IL2CPP) runtime plugin for WH40K Battlesector.
-    Recolors the local player's army (primary + secondary paint remap) with an
-    in-game IMGUI color-changing UI. Requires the BepInEx Framework mod.
+    Warpstorm — BepInEx 6 (IL2CPP) runtime plugin for WH40K Battlesector.
+
+    Reads BepInEx/config/warpstorm/config.json and applies unit/weapon stat
+    edits to the game's live data tables (RuntimeDataTables), with a hotkey
+    on/off toggle that works in every game mode.
 
     Build:  dotnet build -c Release [-p:GameDir="<game root>"]
-    Output: bin/Release/ArmyPainter.dll  ->  <game>/BepInEx/plugins/
+    Output: bin/Release/Warpstorm.dll  ->  <game>/BepInEx/plugins/Warpstorm/
   -->
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <AssemblyName>ArmyPainter</AssemblyName>
-    <RootNamespace>ArmyPainter</RootNamespace>
+    <AssemblyName>Warpstorm</AssemblyName>
+    <RootNamespace>Warpstorm</RootNamespace>
     <LangVersion>latest</LangVersion>
     <Nullable>disable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -23,17 +25,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- Recolour math shared with the configurator's preview. -->
+    <Compile Include="../shared/PaintMath.cs" Link="PaintMath.cs" />
+    <Compile Include="../shared/SchemePack.cs" Link="SchemePack.cs" />
+    <Compile Include="../shared/PaintCache.cs" Link="PaintCache.cs" />
+    <!-- Portrait names per faction for Army Painter's 2D repaint. -->
+    <EmbeddedResource Include="../../battlesector-tools/src/data/units.json" LogicalName="units.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="BepInEx.Core"><HintPath>$(BepInExCore)/BepInEx.Core.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="BepInEx.Unity.IL2CPP"><HintPath>$(BepInExCore)/BepInEx.Unity.IL2CPP.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="BepInEx.Unity.Common"><HintPath>$(BepInExCore)/BepInEx.Unity.Common.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="Il2CppInterop.Runtime"><HintPath>$(BepInExCore)/Il2CppInterop.Runtime.dll</HintPath><Private>false</Private></Reference>
-    <Reference Include="0Harmony"><HintPath>$(BepInExCore)/0Harmony.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="Il2Cppmscorlib"><HintPath>$(BepInExInterop)/Il2Cppmscorlib.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="Assembly-CSharp"><HintPath>$(BepInExInterop)/Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="com.blacklab.multiplatformlibrary.runtime"><HintPath>$(BepInExInterop)/com.blacklab.multiplatformlibrary.runtime.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="UnityEngine.CoreModule"><HintPath>$(BepInExInterop)/UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="UnityEngine.IMGUIModule"><HintPath>$(BepInExInterop)/UnityEngine.IMGUIModule.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="UnityEngine.InputLegacyModule"><HintPath>$(BepInExInterop)/UnityEngine.InputLegacyModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.ImageConversionModule"><HintPath>$(BepInExInterop)/UnityEngine.ImageConversionModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UI"><HintPath>$(BepInExInterop)/UnityEngine.UI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.Addressables"><HintPath>$(BepInExInterop)/Unity.Addressables.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="UnityEngine.TextRenderingModule"><HintPath>$(BepInExInterop)/UnityEngine.TextRenderingModule.dll</HintPath><Private>false</Private></Reference>
   </ItemGroup>
 

@@ -1,0 +1,321 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Warpstorm.Configurator.App"
+             RequestedThemeVariant="Dark">
+  <!--
+    Grimdark theme mirroring BattleSector Tools (battlesector-tools/src/styles/
+    global.css): warm charcoal/bronze surfaces, gold accents, gilded panels.
+  -->
+  <Application.Resources>
+    <ResourceDictionary>
+      <Color x:Key="VoidColor">#0F0A06</Color>
+      <Color x:Key="BaseColor">#16100B</Color>
+      <Color x:Key="SurfaceColor">#201913</Color>
+      <Color x:Key="ElevatedColor">#2B221A</Color>
+      <Color x:Key="BorderColor">#493E30</Color>
+      <Color x:Key="BorderStrongColor">#7A6548</Color>
+      <Color x:Key="InkColor">#F2EEE6</Color>
+      <Color x:Key="MutedColor">#B6ACA1</Color>
+      <Color x:Key="FaintColor">#908476</Color>
+      <Color x:Key="GoldColor">#EFB656</Color>
+      <Color x:Key="GoldDimColor">#B7893B</Color>
+      <Color x:Key="BloodColor">#CC272B</Color>
+      <Color x:Key="WarpColor">#A35DE4</Color>
+      <Color x:Key="HpColor">#54BF5C</Color>
+
+      <SolidColorBrush x:Key="VoidBrush" Color="{StaticResource VoidColor}" />
+      <SolidColorBrush x:Key="BaseBrush" Color="{StaticResource BaseColor}" />
+      <SolidColorBrush x:Key="SurfaceBrush" Color="{StaticResource SurfaceColor}" />
+      <SolidColorBrush x:Key="ElevatedBrush" Color="{StaticResource ElevatedColor}" />
+      <SolidColorBrush x:Key="BorderBrush" Color="{StaticResource BorderColor}" />
+      <SolidColorBrush x:Key="BorderStrongBrush" Color="{StaticResource BorderStrongColor}" />
+      <SolidColorBrush x:Key="InkBrush" Color="{StaticResource InkColor}" />
+      <SolidColorBrush x:Key="MutedBrush" Color="{StaticResource MutedColor}" />
+      <SolidColorBrush x:Key="FaintBrush" Color="{StaticResource FaintColor}" />
+      <SolidColorBrush x:Key="GoldBrush" Color="{StaticResource GoldColor}" />
+      <SolidColorBrush x:Key="GoldDimBrush" Color="{StaticResource GoldDimColor}" />
+      <SolidColorBrush x:Key="BloodBrush" Color="{StaticResource BloodColor}" />
+      <SolidColorBrush x:Key="WarpBrush" Color="{StaticResource WarpColor}" />
+      <SolidColorBrush x:Key="HpBrush" Color="{StaticResource HpColor}" />
+
+      <FontFamily x:Key="BodyFont">avares://Warpstorm.Configurator/branding/fonts#Barlow</FontFamily>
+      <FontFamily x:Key="HeadingFont">avares://Warpstorm.Configurator/branding/fonts#Barlow Condensed</FontFamily>
+      <SolidColorBrush x:Key="PrimaryButtonBrush" Color="#D9A441" />
+      <SolidColorBrush x:Key="PrimaryButtonHoverBrush" Color="#E8B65A" />
+      <SolidColorBrush x:Key="HairlineBrush" Color="#3A3127" />
+      <SolidColorBrush x:Key="ExpanderHeaderBackground" Color="#1A140F" />
+      <SolidColorBrush x:Key="ExpanderHeaderBackgroundPointerOver" Color="#221A13" />
+      <SolidColorBrush x:Key="ExpanderHeaderBackgroundPressed" Color="#221A13" />
+      <SolidColorBrush x:Key="ExpanderHeaderBorderBrush" Color="#3A3127" />
+      <SolidColorBrush x:Key="ExpanderHeaderBorderBrushPointerOver" Color="#4A3D2C" />
+      <SolidColorBrush x:Key="ExpanderHeaderForeground" Color="#F2EEE6" />
+      <SolidColorBrush x:Key="ExpanderHeaderForegroundPointerOver" Color="#F2EEE6" />
+      <SolidColorBrush x:Key="ExpanderContentBackground" Color="#16110C" />
+      <SolidColorBrush x:Key="ExpanderContentBorderBrush" Color="#3A3127" />
+      <LinearGradientBrush x:Key="WindowBackgroundBrush" StartPoint="0%,0%" EndPoint="0%,100%">
+        <GradientStop Offset="0" Color="#1A130D" />
+        <GradientStop Offset="1" Color="#070402" />
+      </LinearGradientBrush>
+      <LinearGradientBrush x:Key="GildedBrush" StartPoint="0%,0%" EndPoint="0%,100%">
+        <GradientStop Offset="0" Color="#241C15" />
+        <GradientStop Offset="1" Color="#17110C" />
+      </LinearGradientBrush>
+      <LinearGradientBrush x:Key="GildedTopBrush" StartPoint="0%,0%" EndPoint="100%,0%">
+        <GradientStop Offset="0" Color="#00EFB656" />
+        <GradientStop Offset="0.5" Color="#B0EFB656" />
+        <GradientStop Offset="1" Color="#00EFB656" />
+      </LinearGradientBrush>
+
+      <!-- Fluent theme overrides so stock controls sit in the palette. -->
+      <SolidColorBrush x:Key="SystemControlHighlightAccentBrush" Color="{StaticResource GoldDimColor}" />
+      <Color x:Key="SystemAccentColor">#B7893B</Color>
+      <Color x:Key="SystemAccentColorDark1">#9C732F</Color>
+      <Color x:Key="SystemAccentColorLight1">#EFB656</Color>
+      <Color x:Key="SystemAccentColorLight2">#F5CB80</Color>
+      <SolidColorBrush x:Key="TextControlBackground" Color="{StaticResource BaseColor}" />
+      <SolidColorBrush x:Key="TextControlBackgroundPointerOver" Color="#1C150F" />
+      <SolidColorBrush x:Key="TextControlBackgroundFocused" Color="{StaticResource BaseColor}" />
+      <SolidColorBrush x:Key="TextControlBorderBrush" Color="{StaticResource BorderColor}" />
+      <SolidColorBrush x:Key="TextControlBorderBrushPointerOver" Color="{StaticResource BorderStrongColor}" />
+      <SolidColorBrush x:Key="TextControlBorderBrushFocused" Color="{StaticResource GoldDimColor}" />
+      <SolidColorBrush x:Key="ComboBoxBackground" Color="{StaticResource BaseColor}" />
+      <SolidColorBrush x:Key="ComboBoxBorderBrush" Color="{StaticResource BorderColor}" />
+      <SolidColorBrush x:Key="ComboBoxDropDownBackground" Color="{StaticResource ElevatedColor}" />
+      <SolidColorBrush x:Key="ButtonBackground" Color="{StaticResource ElevatedColor}" />
+      <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#3A2E20" />
+      <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#463724" />
+      <SolidColorBrush x:Key="ButtonBorderBrush" Color="{StaticResource BorderStrongColor}" />
+      <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="{StaticResource GoldDimColor}" />
+      <SolidColorBrush x:Key="ButtonForeground" Color="{StaticResource InkColor}" />
+      <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="{StaticResource InkColor}" />
+    </ResourceDictionary>
+  </Application.Resources>
+
+  <Application.Styles>
+    <FluentTheme />
+    <StyleInclude Source="avares://Avalonia.Controls.ColorPicker/Themes/Fluent/Fluent.xaml" />
+
+    <Style Selector="Window">
+      <Setter Property="FontFamily" Value="{StaticResource BodyFont}" />
+      <Setter Property="FontSize" Value="14" />
+      <Setter Property="Background" Value="{StaticResource WindowBackgroundBrush}" />
+      <Setter Property="Foreground" Value="{StaticResource InkBrush}" />
+    </Style>
+    <Style Selector="TextBlock">
+      <Setter Property="Foreground" Value="{StaticResource InkBrush}" />
+    </Style>
+
+    <!-- Surfaces -->
+    <!-- A section: no card, just a hairline above and room to breathe. -->
+    <Style Selector="Border.surface">
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="BorderBrush" Value="{StaticResource HairlineBrush}" />
+      <Setter Property="BorderThickness" Value="0,1,0,0" />
+      <Setter Property="CornerRadius" Value="0" />
+    </Style>
+    <!-- The one raised panel per page (unit header, paint editor). -->
+    <Style Selector="Border.gilded">
+      <Setter Property="Background" Value="#1E1812" />
+      <Setter Property="BorderBrush" Value="#4A3D2C" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="CornerRadius" Value="6" />
+    </Style>
+    <Style Selector="Border.gildedTop">
+      <Setter Property="IsVisible" Value="False" />
+    </Style>
+    <Style Selector="Border.tile">
+      <Setter Property="Background" Value="{StaticResource BaseBrush}" />
+      <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="CornerRadius" Value="6" />
+      <Setter Property="Padding" Value="6,5" />
+    </Style>
+    <Style Selector="Border.tile.modified">
+      <Setter Property="BorderBrush" Value="{StaticResource GoldBrush}" />
+      <Setter Property="Background" Value="#2A2112" />
+    </Style>
+    <Style Selector="Border.chip">
+      <Setter Property="Background" Value="#B32B221A" />
+      <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="CornerRadius" Value="999" />
+      <Setter Property="Padding" Value="8,2" />
+    </Style>
+    <Style Selector="Border.chip > TextBlock">
+      <Setter Property="FontSize" Value="11" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+      <Setter Property="Foreground" Value="{StaticResource MutedBrush}" />
+    </Style>
+    <Style Selector="Border.chip.gold">
+      <Setter Property="BorderBrush" Value="{StaticResource GoldDimBrush}" />
+      <Setter Property="Background" Value="#33EFB656" />
+    </Style>
+    <Style Selector="Border.chip.gold > TextBlock">
+      <Setter Property="Foreground" Value="{StaticResource GoldBrush}" />
+    </Style>
+    <Style Selector="Border.chip.ok > TextBlock">
+      <Setter Property="Foreground" Value="{StaticResource HpBrush}" />
+    </Style>
+    <Style Selector="Border.chip.bad > TextBlock">
+      <Setter Property="Foreground" Value="#F07A6E" />
+    </Style>
+    <Style Selector="Border.fieldRow">
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="BorderBrush" Value="Transparent" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="Padding" Value="8,3,6,3" />
+      <Setter Property="CornerRadius" Value="4" />
+    </Style>
+    <Style Selector="Border.fieldRow:pointerover">
+      <Setter Property="Background" Value="#14EFB656" />
+    </Style>
+    <Style Selector="Border.fieldRow.modified">
+      <Setter Property="Background" Value="#24EFB656" />
+    </Style>
+
+    <!-- Text roles -->
+    <Style Selector="TextBlock.label">
+      <Setter Property="FontSize" Value="12" />
+      <Setter Property="Foreground" Value="{StaticResource FaintBrush}" />
+    </Style>
+    <Style Selector="TextBlock.muted">
+      <Setter Property="Foreground" Value="{StaticResource MutedBrush}" />
+    </Style>
+    <Style Selector="TextBlock.faint">
+      <Setter Property="Foreground" Value="{StaticResource FaintBrush}" />
+    </Style>
+    <Style Selector="TextBlock.statLabel">
+      <Setter Property="Foreground" Value="{StaticResource GoldBrush}" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+    </Style>
+    <Style Selector="TextBlock.groupTitle">
+      <Setter Property="FontFamily" Value="{StaticResource HeadingFont}" />
+      <Setter Property="Foreground" Value="{StaticResource InkBrush}" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+      <Setter Property="FontSize" Value="18" />
+    </Style>
+    <Style Selector="TextBlock.heading">
+      <Setter Property="FontFamily" Value="{StaticResource HeadingFont}" />
+      <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+    <Style Selector="TextBlock.mono">
+      <Setter Property="FontFamily" Value="Cascadia Mono,Consolas,Menlo,monospace" />
+    </Style>
+
+    <!-- Buttons -->
+    <Style Selector="Button">
+      <Setter Property="CornerRadius" Value="7" />
+      <Setter Property="Padding" Value="12,6" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+    </Style>
+    <Style Selector="Button.primary">
+      <Setter Property="Background" Value="{StaticResource PrimaryButtonBrush}" />
+      <Setter Property="BorderBrush" Value="Transparent" />
+      <Setter Property="Foreground" Value="#1B1206" />
+      <Setter Property="FontWeight" Value="Bold" />
+      <Setter Property="Padding" Value="18,6" />
+    </Style>
+    <Style Selector="Button.primary:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="{StaticResource PrimaryButtonHoverBrush}" />
+      <Setter Property="Foreground" Value="#1B1206" />
+    </Style>
+    <Style Selector="Button.primary:disabled /template/ ContentPresenter">
+      <Setter Property="Background" Value="#4A3D2C" />
+      <Setter Property="Foreground" Value="#908476" />
+    </Style>
+    <Style Selector="Button.ghost">
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+    </Style>
+    <Style Selector="Button.icon">
+      <Setter Property="Padding" Value="0" />
+      <Setter Property="Width" Value="26" />
+      <Setter Property="Height" Value="26" />
+      <Setter Property="MinWidth" Value="26" />
+      <Setter Property="HorizontalContentAlignment" Value="Center" />
+      <Setter Property="VerticalContentAlignment" Value="Center" />
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+      <Setter Property="FontSize" Value="13" />
+    </Style>
+
+    <!-- Left navigation rail (ToggleButtons acting as tabs). -->
+    <Style Selector="ToggleButton.nav">
+      <Setter Property="HorizontalAlignment" Value="Stretch" />
+      <Setter Property="HorizontalContentAlignment" Value="Left" />
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="BorderBrush" Value="Transparent" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="CornerRadius" Value="5" />
+      <Setter Property="Padding" Value="10,8" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+      <Setter Property="Foreground" Value="{StaticResource MutedBrush}" />
+    </Style>
+    <Style Selector="ToggleButton.nav:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="#1AEFB656" />
+    </Style>
+    <Style Selector="ToggleButton.nav:checked /template/ ContentPresenter">
+      <Setter Property="Background" Value="#33EFB656" />
+      <Setter Property="Foreground" Value="{StaticResource InkBrush}" />
+    </Style>
+
+    <!-- Filter pills -->
+    <Style Selector="ToggleButton.pill">
+      <Setter Property="CornerRadius" Value="999" />
+      <Setter Property="Padding" Value="9,3" />
+      <Setter Property="FontSize" Value="11" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+      <Setter Property="Background" Value="#B32B221A" />
+      <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="Foreground" Value="{StaticResource MutedBrush}" />
+      <Setter Property="MinHeight" Value="0" />
+    </Style>
+    <Style Selector="ToggleButton.pill:checked /template/ ContentPresenter">
+      <Setter Property="Background" Value="#33EFB656" />
+      <Setter Property="BorderBrush" Value="{StaticResource GoldBrush}" />
+      <Setter Property="Foreground" Value="{StaticResource GoldBrush}" />
+    </Style>
+
+    <!-- List rows like UnitListRow.astro -->
+    <Style Selector="ListBox.catalog">
+      <Setter Property="Background" Value="Transparent" />
+    </Style>
+    <Style Selector="ListBox.catalog ListBoxItem">
+      <Setter Property="Padding" Value="0" />
+      <Setter Property="Margin" Value="0,0,0,1" />
+      <Setter Property="CornerRadius" Value="8" />
+    </Style>
+    <Style Selector="ListBox.catalog ListBoxItem /template/ ContentPresenter">
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="BorderBrush" Value="Transparent" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="CornerRadius" Value="5" />
+    </Style>
+    <Style Selector="ListBox.catalog ListBoxItem:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="{StaticResource ElevatedBrush}" />
+      <Setter Property="BorderBrush" Value="{StaticResource BorderStrongBrush}" />
+    </Style>
+    <Style Selector="ListBox.catalog ListBoxItem:selected /template/ ContentPresenter">
+      <Setter Property="Background" Value="#33EFB656" />
+      <Setter Property="BorderBrush" Value="{StaticResource GoldDimBrush}" />
+    </Style>
+
+    <Style Selector="TextBox">
+      <Setter Property="CornerRadius" Value="6" />
+    </Style>
+    <Style Selector="TextBox.value">
+      <Setter Property="FontFamily" Value="Cascadia Mono,Consolas,Menlo,monospace" />
+      <Setter Property="MinHeight" Value="26" />
+      <Setter Property="Padding" Value="8,3" />
+    </Style>
+    <Style Selector="ComboBox">
+      <Setter Property="CornerRadius" Value="6" />
+    </Style>
+    <Style Selector="ToolTip">
+      <Setter Property="Background" Value="#F02B221A" />
+      <Setter Property="BorderBrush" Value="#7A6548" />
+      <Setter Property="Foreground" Value="{StaticResource InkBrush}" />
+    </Style>
+  </Application.Styles>
+</Application>

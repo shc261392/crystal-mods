@@ -1,0 +1,17 @@
+{
+  "_comment": "Army Painter faction presets (merged into Warpstorm). Keys match Army Painter's config sections Faction.<key>; the configurator writes BepInEx/config/com.crystalmods.armypainter.cfg. factionId = the game's Faction enum value (Assembly-CSharp Faction), used for emblems/portraits.",
+  "factions": [
+    { "key": "BloodAngels", "factionId": 0, "name": "Blood Angels", "primary": "900F0F", "secondary": "E0C15A" },
+    { "key": "Ultramarines", "factionId": 11, "name": "Ultramarines", "primary": "10468F", "secondary": "E8E4DA" },
+    { "key": "AstraMilitarum", "factionId": 7, "name": "Astra Militarum", "primary": "5F6B3F", "secondary": "9A8F6A" },
+    { "key": "AdeptaSororitas", "factionId": 2, "name": "Adepta Sororitas", "primary": "8F1010", "secondary": "E8E4DA" },
+    { "key": "Ork", "factionId": 8, "name": "Orks", "primary": "2F6B2F", "secondary": "7A4A1E" },
+    { "key": "Tyranid", "factionId": 1, "name": "Tyranids", "primary": "7A2F6B", "secondary": "B0566B" },
+    { "key": "Necron", "factionId": 3, "name": "Necrons", "primary": "2F5A4A", "secondary": "63C89C" },
+    { "key": "MephritNecron", "factionId": 4, "name": "Mephrit Necrons", "primary": "C06828", "secondary": "48A8A0" },
+    { "key": "Tau", "factionId": 9, "name": "T'au", "primary": "B08A4A", "secondary": "D0C8B8" },
+    { "key": "KhorneChaos", "factionId": 5, "name": "Daemons of Khorne", "primary": "6B0F0F", "secondary": "C9A227" },
+    { "key": "BlackLegion", "factionId": 10, "name": "Black Legion", "primary": "22242A", "secondary": "B01212" },
+    { "key": "GenestealerCult", "factionId": 6, "name": "Genestealer Cult", "primary": "4A5A6B", "secondary": "8FB0C8" }
+  ]
+}

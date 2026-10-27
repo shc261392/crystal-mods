@@ -1,0 +1,42 @@
+{
+  "id": "warpstorm",
+  "name": "Warpstorm — Ultimate Battlesector Customization Tool",
+  "game": "warhammer-40k-battlesector",
+  "version": "1.1.0",
+  "author": "crystal-mods",
+  "category": "Gameplay",
+  "type": "bepinex-plugin",
+  "gameVersion": "1.7.7",
+  "engine": "Unity 6000.0.62f1 (IL2CPP)",
+  "description": "Unit & weapon stat editor and opt-in Army Painter for Warhammer 40,000: Battlesector. A BepInEx 6 (IL2CPP) plugin applies stat edits to the game's live data tables in every mode (hotkey on/off, live reload) and, only when you enable it and change a colour, repaints factions — 3D models and portraits — with custom colours or curated chapter schemes (10 Space Marine chapters with badges). The Warpstorm Configurator (Windows EXE) edits everything with a game-styled UI in 10 languages, previews and bakes paint ahead of time, and includes a Scheme Creator for your own packs.",
+  "requires": [
+    "bepinex-framework >= 1.0.0 (the BepInEx Framework mod)"
+  ],
+  "components": {
+    "plugin": {
+      "file": "BepInEx/plugins/Warpstorm/Warpstorm.dll",
+      "guid": "com.crystalmods.warpstorm"
+    },
+    "configurator": {
+      "file": "BepInEx/plugins/Warpstorm/Warpstorm.Configurator.exe",
+      "note": "Self-contained single EXE shipped in the same zip, in the mod's own folder. Run it from there (or copy it anywhere)."
+    },
+    "schemes": {
+      "dir": "BepInEx/plugins/Warpstorm/schemes/",
+      "note": "Built-in Army Painter scheme packs (Ultramarines models): salamanders, space-wolves, imperial-fists, white-scars, dark-angels, raven-guard, iron-hands, black-templars, crimson-fists, blood-ravens. Each also ships as dist/scheme-<id>-v<version>.zip."
+    }
+  },
+  "config": "BepInEx/config/warpstorm/config.json (stat edits), BepInEx/config/com.crystalmods.armypainter.cfg (paint), BepInEx/config/com.crystalmods.warpstorm.cfg (settings); user scheme packs in BepInEx/config/warpstorm/schemes/; baked paint in BepInEx/cache/warpstorm/paint/.",
+  "toggle": "F10 (configurable) toggles stat edits live; F9 reloads. F1 opens the in-game Army Painter window once Army Painter is opted in (BepInEx/config/com.crystalmods.armypainter.cfg [Paint] Enabled = true).",
+  "compatibility": {
+    "note": "Runtime plugin — adds one DLL and modifies no game file, so it has no file conflicts and stacks with any other mod (data edits, localization, Army Painter).",
+    "bepinex-framework": "Required — provides the BepInEx 6 (IL2CPP) runtime.",
+    "the-great-crusade": "Compatible (that mod edits a bundle; this edits runtime data).",
+    "tc-localization": "Compatible.",
+    "army-painter": "Built in (merged into Warpstorm.dll); the standalone Army Painter mod no longer exists — do not install one."
+  },
+  "deployFiles": [
+    "BepInEx/plugins/Warpstorm/Warpstorm.dll",
+    "BepInEx/plugins/Warpstorm/Warpstorm.Configurator.exe"
+  ]
+}

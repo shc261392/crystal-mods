@@ -1,0 +1,47 @@
+{
+  "id": "imperial-fists",
+  "name": "Imperial Fists",
+  "version": "1.0.0",
+  "author": "crystal-mods",
+  "description": "Bright Dorn-yellow armour; brass kept. Badge: clenched fist.",
+  "faction": "Ultramarines",
+  "primary": "E5B41C",
+  "secondary": "1C1D21",
+  "rules": [
+    {
+      "hue": 222,
+      "width": 20,
+      "feather": 10,
+      "satMin": 0.22,
+      "valMax": 1.0,
+      "to": "E5B41C",
+      "satScale": 1.0,
+      "valScale": 1.05
+    },
+    {
+      "hue": 218,
+      "width": 18,
+      "feather": 8,
+      "satMin": 0.07,
+      "valMin": 0.45,
+      "valMax": 1.0,
+      "to": "F3D36E",
+      "satScale": 1.0,
+      "valScale": 1.0
+    }
+  ],
+  "badge": {
+    "textures": [
+      "ULT_Logo_D",
+      "ULT_Logo_edit_D",
+      "ULT_Logo_damaged_D"
+    ],
+    "rect": [
+      0.29,
+      0.015,
+      0.437,
+      0.16
+    ],
+    "image": "badge.png"
+  }
+}
