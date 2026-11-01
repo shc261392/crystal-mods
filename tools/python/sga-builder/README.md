@@ -91,21 +91,12 @@ mkdir -p wh40k-dow-de-tc-mod-v1.0.3
 cp EnginLocMod.sga wh40k-dow-de-tc-mod-v1.0.3/
 ```
 
-### Step 3: Add Metadata
+### Step 3: No metadata in the package
 
-Create `wh40k-dow-de-tc-mod-v1.0.3/modinfo.json`:
-
-```json
-{
-  "id": "unofficial-tc-patch",
-  "name": "Unofficial Traditional Chinese Patch",
-  "version": "1.0.3",
-  "description": "Fixed Traditional Chinese localization with correct fonts and no tofu boxes",
-  "author": "Crystal Mods",
-  "modVersion": "1.0.3",
-  "gameVersion": ""
-}
-```
+Ship **game files only**. Do **not** create `modinfo.json` (or README/docs)
+inside the package directory: the Vortex extension deploys every archive path,
+so such files would land in the game root. `modinfo.json` is repo metadata —
+keep it in the repo, not the zip.
 
 ### Step 4: Package for Vortex
 

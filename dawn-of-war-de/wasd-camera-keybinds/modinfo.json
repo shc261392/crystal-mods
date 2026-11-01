@@ -2,7 +2,7 @@
   "id": "wasd-camera-keybinds",
   "name": "WSAD Camera Keybind Overhaul",
   "game": "dawn-of-war-de",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Community",
   "category": "Gameplay",
   "platforms": ["windows", "linux-proton"],

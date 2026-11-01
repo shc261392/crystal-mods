@@ -16,7 +16,7 @@
 #
 # Env:
 #   MOD_VANILLA_RES  vanilla resources.assets (see build_text.py)
-#   MOD_PY           python interpreter (default: venv in .copilot_workspace)
+#   MOD_PY           python interpreter (default: venv in .agent_workspace)
 #   MOD_FT           fonttool.dll path
 #   MOD_TC_OTF       Traditional OTF for new glyphs (NotoSansCJKtc)
 # ─────────────────────────────────────────────────────────────────────────────
@@ -24,14 +24,14 @@ set -euo pipefail
 cd "$(dirname "$0")"
 ROOT="$PWD"
 
-PY="${MOD_PY:-$ROOT/.copilot_workspace/venv/bin/python3}"
-FT="${MOD_FT:-$ROOT/.copilot_workspace/csharp/FontTool/bin/Release/net10.0/fonttool.dll}"
-OTF="${MOD_TC_OTF:-$ROOT/.copilot_workspace/fonts/NotoSansCJKtc-Regular.otf}"
+PY="${MOD_PY:-$ROOT/.agent_workspace/venv/bin/python3}"
+FT="${MOD_FT:-$ROOT/.agent_workspace/csharp/FontTool/bin/Release/net10.0/fonttool.dll}"
+OTF="${MOD_TC_OTF:-$ROOT/.agent_workspace/fonts/NotoSansCJKtc-Regular.otf}"
 DIST="$ROOT/translation/zh-TW/dist"
-WS="$ROOT/.copilot_workspace"
+WS="$ROOT/.agent_workspace"
 TEXT_OUT="$ROOT/.build/text"
 DATA="Warhammer 40K Battlesector_Data"
-ZIP_OUT="${MOD_ZIP_OUT:-$ROOT/../dist/wh40k-battlesector-tc-localization-v0.2.2.zip}"
+ZIP_OUT="${MOD_ZIP_OUT:-$ROOT/../dist/wh40k-battlesector-tc-localization-v0.2.3.zip}"
 TCFIX="$ROOT/bepinex/TCFix/bin/Release/TCFix.dll"
 
 command -v dotnet >/dev/null || { echo "dotnet not found"; exit 1; }
@@ -71,7 +71,9 @@ cp "$TCFIX" "$S/BepInEx/plugins/TCFix.dll"
 cp "$DIST/resources.assets" "$DIST/sharedassets0.assets" "$DIST/sharedassets1.assets" "$DIST/sharedassets1.assets.resS" "$S/$DATA/"
 cp "$DIST/startup_assets_all.bundle" "$DIST/mapbuilder-tools_assets_all.bundle" "$S/$DATA/StreamingAssets/"
 cp "$DIST/stringsChinese.resx" "$S/Launcher/Localization/"
-cp modinfo.json README.md "$S/"
+# modinfo.json + README.md are repo metadata, NOT game files. Never stage them
+# into the deployable archive — the Vortex extension deploys every archive path,
+# so they would end up in the game root.
 mkdir -p "$(dirname "$ZIP_OUT")"
 rm -f "$ZIP_OUT"
 ( cd "$S" && zip -r -X -q -1 "$ZIP_OUT" . )

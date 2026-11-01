@@ -21,21 +21,20 @@ MOD_DIR  := mod
 DIST_DIR := dist
 SCRIPTS  := scripts
 
-# Version. The release is 0.1.8 (0.1.7 + the Soulstorm Imperial Guard stronghold
-# garrison fix: the x5 guardsmen min-loadout spawn is capped to vanilla size for
-# that one mission by a patched campaign script -- see
-# docs/CAMPAIGN_GARRISON_CRASH.md -- since .rgd squad data cannot be scoped to a
-# single map). Vanilla single-model campaign variants are excluded in W40k/WXP
-# and in DXP2/DXP3, where the base-game validator / mission-start min-loadout
-# spawn would crash or freeze.
+# Version. The release is 0.1.9 (0.1.8 + the complex-upgrade squad fix: any
+# squad that spawns a trooper with the engine's combat_ext 'complex_upgrades'
+# flag is no longer model-count scaled, so it stays at one unit. The base-game
+# validator rejects complex-upgrade squads with unit count > 1, which aborts
+# mod init in -dev mode and freezes the game at the splash screen -- see
+# scripts/generate_mod.py --exclude-complex-upgrades and docs on -dev).
 #
 # The release set is TWO zips; `make build` with NO arguments builds BOTH:
-#   over-40000-v0.1.8.zip                  (resource cheat on)
-#   over-40000-v0.1.8-normal-resources.zip (no resource cheat)
+#   over-40000-v0.1.9.zip                  (resource cheat on)
+#   over-40000-v0.1.9-normal-resources.zip (no resource cheat)
 # Ad-hoc per-variant invocations (RESOURCE_CHEAT=…, SQUAD_SCALE=…) are
 # experimental/diagnostic ONLY and forbidden for formal releases (AGENTS.md
 # hard rule 15).
-VERSION      := 0.1.8
+VERSION      := 0.1.9
 SQUAD_SCALE  ?= 5      ## multiply squad unit_min/unit_max by N (0 = off)
 RESOURCE_CHEAT ?= 1    ## 1 = start with 40001 req/power + x10 income
 
@@ -46,9 +45,9 @@ PKG_NAME := over-40000-v$(VERSION)
 endif
 
 # Where the SGA extraction tree lives (gitignored scratch space).
-# Resolves to the workspace root's .copilot_workspace/extract
+# Resolves to the workspace root's .agent_workspace/extract
 # (repo contract: mods live at <game>/<mod>/ = 2 levels deep).
-EXTRACT_ROOT ?= ../../.copilot_workspace/extract
+EXTRACT_ROOT ?= ../../.agent_workspace/extract
 # Optional: override the auto-detected game dir. Also respects $DOW_GAME_DIR.
 GAME_DIR ?=
 
@@ -80,7 +79,7 @@ GAME_ARG := $(if $(GAME_DIR),--game-dir $(GAME_DIR))
 # Over40000_BoostWeaponCaps block crashed the game (nil Squad_GetUpgradeMax * 4)
 # and was removed from the recommended build. Pass --weapon-cap-boost on to
 # force it in (diagnostics only).
-GEN_ARGS := --squad-scale $(SQUAD_SCALE) --resource-cheat $(if $(filter 1,$(RESOURCE_CHEAT)),on,off) --exclude-single-model on --descale-campaign-single on
+GEN_ARGS := --squad-scale $(SQUAD_SCALE) --resource-cheat $(if $(filter 1,$(RESOURCE_CHEAT)),on,off) --exclude-single-model on --exclude-complex-upgrades on --descale-campaign-single on
 
 .PHONY: regenerate
 regenerate: ## Auto-extract game data (if missing) and regenerate mod/

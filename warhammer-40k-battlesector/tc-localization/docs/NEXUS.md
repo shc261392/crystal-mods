@@ -390,8 +390,7 @@ For Vortex extension:
 
 - [ ] Mod zip tested with Vortex
 - [ ] Mod zip tested with manual install
-- [ ] README.md included in zip
-- [ ] modinfo.json included in zip
+- [ ] Zip contains game files only (no README.md/modinfo.json — the Vortex extension deploys every archive path)
 - [ ] Screenshots captured (at least 3)
 - [ ] Banner image prepared
 - [ ] Vortex extension tested and works

@@ -25,12 +25,14 @@ STAGE="$(mktemp -d)"
 trap 'rm -rf "$STAGE"' EXIT
 mkdir -p "$STAGE/BepInEx/plugins"
 cp "$DLL" "$STAGE/BepInEx/plugins/RedLaserLasgun.dll"
-cp "$HERE/modinfo.json" "$STAGE/modinfo.json"
 
+# modinfo.json is repo metadata (the mod manifest), NOT a game file. Never stage
+# it into the deployable archive — the Vortex extension deploys every archive
+# path, so it would end up in the game root.
 echo "[3/3] zip -> dist/$NAME-v$VERSION.zip"
 mkdir -p "$DIST"
 OUT="$DIST/$NAME-v$VERSION.zip"
 rm -f "$OUT"
-( cd "$STAGE" && zip -rq "$OUT" BepInEx modinfo.json )
+( cd "$STAGE" && zip -rq "$OUT" BepInEx )
 echo "packaged -> $OUT"
 unzip -l "$OUT"

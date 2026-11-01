@@ -2,7 +2,7 @@
   "name": "BepInEx Framework",
   "id": "bepinex-framework",
   "game": "black-book",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "crystal-mods (packaging); BepInEx contributors (runtime)",
   "gameVersion": "1.0",
   "engine": "Unity 2018.4.31f1 (Mono, x64)",

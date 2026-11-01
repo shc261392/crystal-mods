@@ -4,6 +4,12 @@ All notable changes to this mod. Versions follow the `modinfo.json` `version`
 field. The mod ships as a Vortex ZIP; a separate **Core (BepInEx6)** framework ZIP
 is a one-time dependency (see the mod page).
 
+## 0.2.3
+
+Packaging fix: the release ZIP no longer ships `modinfo.json` / `README.md`.
+They are repo metadata, not game files, and the Vortex extension deploys every
+archive path, so they were landing in the game root.
+
 ## 0.2.2
 
 Refinement release focused on glyph quality, punctuation, and broader runtime

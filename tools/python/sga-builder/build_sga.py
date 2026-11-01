@@ -241,11 +241,10 @@ def main():
     print(f"1. Create Vortex package directory:")
     print(f"   mkdir -p wh40k-dow-de-tc-mod-v1.0.3/")
     print(f"   cp {args.output} wh40k-dow-de-tc-mod-v1.0.3/")
-    print(f"2. Add modinfo.json:")
-    print(f'   {{"id":"unofficial-tc-patch","name":"Unofficial TC Patch","version":"1.0.3"}}')
-    print(f"3. Package for Vortex:")
+    print(f"2. Package for Vortex (game files only — do NOT add modinfo.json;")
+    print(f"   the Vortex extension deploys every archive path):")
     print(f"   zip -r wh40k-dow-de-tc-mod-v1.0.3.zip wh40k-dow-de-tc-mod-v1.0.3/")
-    print(f"4. Deploy via Vortex")
+    print(f"3. Deploy via Vortex")
     print()
 
 

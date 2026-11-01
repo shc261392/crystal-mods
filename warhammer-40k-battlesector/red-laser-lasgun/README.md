@@ -50,7 +50,7 @@ bundle, so no file conflicts:
 ## Build
 
 ```bash
-./package.sh        # dotnet build -c Release + zip -> ../dist/red-laser-lasgun-v1.1.0.zip
+./package.sh        # dotnet build -c Release + zip -> ../dist/red-laser-lasgun-v1.1.1.zip
 ```
 
 Requires the .NET SDK and the game's `BepInEx/interop` assemblies (present after

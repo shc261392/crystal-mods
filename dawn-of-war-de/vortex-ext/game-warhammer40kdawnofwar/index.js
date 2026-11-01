@@ -60,6 +60,23 @@ function findGame() {
 }
 
 /**
+ * Makes Vortex launch the game through the Steam client instead of spawning
+ * the executable directly. A direct spawn is what Vortex does by default when
+ * this callback is absent, and it is why the Steam overlay is not injected —
+ * the overlay only hooks games "launched through Steam".
+ *
+ * Returning `{ launcher: 'steam' }` makes Vortex run
+ * `steam.exe -applaunch <steamAppId>` (using `details.steamAppId`). Non-Steam
+ * stores resolve to `undefined`, which preserves the default direct launch.
+ *
+ * @param {string}           _gamePath  Game install path (unused).
+ * @param {string|undefined} store      Store the game was detected through.
+ */
+function requiresLauncher(_gamePath, store) {
+  return Promise.resolve(store === 'steam' ? { launcher: 'steam' } : undefined);
+}
+
+/**
  * Resolve the user-profile "mods" folder where the engine auto-loads authored
  * `.module` mods. Returns undefined if it cannot be determined.
  *
@@ -291,6 +308,7 @@ function main(context) {
     logo: 'gameart.jpg',
     executable: () => GAME_EXE,
     requiredFiles: [GAME_EXE],
+    requiresLauncher,
     setup: prepareForModding,
     environment: {
       SteamAPPId: STEAM_APP_ID,

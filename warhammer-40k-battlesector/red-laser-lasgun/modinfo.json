@@ -2,7 +2,7 @@
   "name": "Red Laser Lasgun",
   "id": "red-laser-lasgun",
   "game": "warhammer40kbattlesector",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "crystal-mods",
   "gameVersion": "1.7.7",
   "engine": "Unity 6000.0.62f1 (IL2CPP)",

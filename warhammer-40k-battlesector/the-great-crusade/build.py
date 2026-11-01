@@ -28,6 +28,7 @@ from __future__ import annotations
 
 import json
 import os
+import shutil
 import sys
 import zipfile
 from pathlib import Path
@@ -35,7 +36,7 @@ from pathlib import Path
 import cards as cards_mod
 import UnityPy
 
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 
 # ----------------------------------------------------------------------------
 # Tuned config (build-variant-as-code).
@@ -58,7 +59,7 @@ FALLBACK_DROP = 0.1
 # ----------------------------------------------------------------------------
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[1]
-STAGE = HERE / ".copilot_workspace" / "stage"
+STAGE = HERE / ".agent_workspace" / "stage"
 DIST = HERE / "dist"
 CARDS_JSON = HERE / "cards.json"
 CARDS_NONPLAYER_JSON = HERE / "cards-nonplayer.json"
@@ -82,7 +83,7 @@ VANILLA_REF_BUNDLE = Path(
     os.environ.get(
         "BS_VANILLA_REF",
         str(
-            REPO / ".copilot_workspace/battlesector-data/emperors-lasgun/vanilla/"
+            REPO / ".agent_workspace/battlesector-data/emperors-lasgun/vanilla/"
             "startup_assets_all.bundle"
         ),
     )
@@ -162,7 +163,7 @@ def apply_edits(env) -> list[str]:
             continue
         try:
             t = o.read_typetree()
-        except Exception:  # noqa: BLE001
+        except Exception:
             continue
         if not isinstance(t, dict):
             continue
@@ -224,7 +225,7 @@ def verify(bundle_path: Path) -> None:
             continue
         try:
             t = o.read_typetree()
-        except Exception:  # noqa: BLE001
+        except Exception:
             continue
         if not isinstance(t, dict):
             continue
@@ -332,6 +333,10 @@ def build(base_kind: str) -> Path:
         print(f"   * card effects: {len(card_changes)} card(s) edited")
 
     stage = STAGE / base_kind
+    # Start from a clean stage: a previous build's leftovers (e.g. the old
+    # modinfo.json / README.md) must never leak into the archive.
+    if stage.exists():
+        shutil.rmtree(stage)
     bundle_out = stage / BUNDLE_REL
     bundle_out.parent.mkdir(parents=True, exist_ok=True)
     with open(bundle_out, "wb") as f:
@@ -339,12 +344,9 @@ def build(base_kind: str) -> Path:
 
     verify(bundle_out)
 
-    (stage / "modinfo.json").write_text(
-        json.dumps(modinfo(base_kind), indent=2, ensure_ascii=False)
-    )
-    readme = HERE / "README.md"
-    if readme.exists():
-        (stage / "README.md").write_text(readme.read_text())
+    # modinfo.json / README.md are repo metadata, NOT game files — never stage
+    # them, or the Vortex extension (which deploys every archive path) would put
+    # them in the game root.
 
     DIST.mkdir(parents=True, exist_ok=True)
     suffix = "-tccompat" if base_kind == "tccompat" else ""

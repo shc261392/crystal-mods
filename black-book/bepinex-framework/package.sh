@@ -13,7 +13,7 @@
 #
 # Output: ../dist/bepinex-framework-v1.0.0.zip
 # Layout (game root): winhttp.dll, doorstop_config.ini, .doorstop_version,
-#                    changelog.txt, BepInEx/core/*, modinfo.json
+#                    changelog.txt, BepInEx/core/*
 set -euo pipefail
 
 HERE="$(cd "$(dirname "$0")" && pwd)"
@@ -54,10 +54,11 @@ if [ "$SRC_ZIP" != "$CACHED" ]; then
   cp -f "$SRC_ZIP" "$CACHED"
 fi
 
-echo "[2/3] stage framework + modinfo"
+echo "[2/3] stage framework"
 mkdir -p "$STAGE/pkg"
 unzip -qo "$SRC_ZIP" -d "$STAGE/pkg"
-cp "$HERE/modinfo.json" "$STAGE/pkg/modinfo.json"
+# modinfo.json is repo metadata, NOT a game file — never staged, or the Vortex
+# extension (which deploys every archive path) would put it in the game root.
 
 # Deterministic archive (AGENTS.md rule 15): normalise every staged mtime to the
 # earliest timestamp the zip format can represent, then add the files in a fixed
@@ -69,4 +70,4 @@ mkdir -p "$DIST"
 rm -f "$OUT"
 ( cd "$STAGE/pkg" && find . -type f -printf '%P\n' | LC_ALL=C sort | zip -qX "$OUT" -@ )
 echo "packaged -> $OUT ($(du -h "$OUT" | cut -f1))"
-unzip -l "$OUT" | awk 'NR>3 {print $4}' | grep -E 'winhttp|doorstop|modinfo' | head
+unzip -l "$OUT" | awk 'NR>3 {print $4}' | grep -E 'winhttp|doorstop' | head

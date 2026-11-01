@@ -107,7 +107,7 @@ uninstall: ## Revert deployment (restore backups, re-enable original SGA)
 DIST_DIR  := dist
 VERSION   := $(shell python3 -c "import json,pathlib; print(json.loads(pathlib.Path('modinfo.json').read_text())['version'])" 2>/dev/null || echo "dev")
 PKG_NAME  := wh40k-dow-de-tc-mod-v$(VERSION)
-RELEASE_SGA  ?= ../../.copilot_workspace/dowde_campaign_bisect_20260608/sga/EnginLocTC_release_20260609_bigfont_tofu_safe.sga
+RELEASE_SGA  ?= ../../.agent_workspace/dowde_campaign_bisect_20260608/sga/EnginLocTC_release_20260609_bigfont_tofu_safe.sga
 EXT_DIR   := vortex-ext/game-warhammer40kdawnofwar
 EXT_ID    := game-warhammer40kdawnofwar
 EXT_VER   := $(shell python3 -c "import json,pathlib; print(json.loads(pathlib.Path('$(EXT_DIR)/info.json').read_text())['version'])" 2>/dev/null || echo "dev")
@@ -172,7 +172,7 @@ package-release: finalize-release package ## Standard release path: sync validat
 package-rc20: package-release ## Backward-compatible alias (deprecated)
 
 .PHONY: package-ext
-package-ext: ## Build Vortex extension zip (.copilot_workspace/dist/vortex-ext-*.zip)
+package-ext: ## Build Vortex extension zip (.agent_workspace/dist/vortex-ext-*.zip)
 	@echo "▶ Packaging Vortex extension $(EXT_NAME).zip ..."
 	@rm -rf "$(DIST_DIR)/$(EXT_NAME)"
 	@rm -f "$(DIST_DIR)/$(EXT_NAME).zip"
@@ -193,7 +193,7 @@ package-all: package package-ext package-keybinds ## Build both the mod archive 
 # Keybinding Overhaul mod (separate, ships standalone)
 # ─────────────────────────────────────────────────────────────────────────────
 
-KEYBINDS_VER     ?= 1.0.0
+KEYBINDS_VER     ?= 1.0.1
 KEYBINDS_SRC_DIR := mod/keybinds
 KEYBINDS_PRESETS := vanilla wasd-camera wasd-camera-ingame
 
@@ -208,9 +208,7 @@ package-keybinds: keybinds-build ## Build one zip per keybind preset under $(DIS
 	    echo "▶ Packaging $$pkg.zip ..."; \
 	    rm -rf "$(DIST_DIR)/$$pkg" "$(DIST_DIR)/$$pkg.zip"; \
 	    mkdir -p "$(DIST_DIR)/$$pkg"; \
-	    rsync -a --exclude='HOTKEYS.md' "$(KEYBINDS_SRC_DIR)/presets/$$preset/" "$(DIST_DIR)/$$pkg/"; \
-	    cp "$(KEYBINDS_SRC_DIR)/presets/$$preset/HOTKEYS.md" "$(DIST_DIR)/$$pkg/HOTKEYS.md"; \
-	    cp "$(KEYBINDS_SRC_DIR)/README.md" "$(DIST_DIR)/$$pkg/README.md"; \
+	    rsync -a --exclude='HOTKEYS.md' --exclude='README.md' "$(KEYBINDS_SRC_DIR)/presets/$$preset/" "$(DIST_DIR)/$$pkg/"; \
 	    (cd "$(DIST_DIR)/$$pkg" && zip -rq "../$$pkg.zip" . -x "*.DS_Store"); \
 	    echo "✓ $(DIST_DIR)/$$pkg.zip"; \
 	    echo "  Size: $$(du -sh "$(DIST_DIR)/$$pkg.zip" | cut -f1)"; \

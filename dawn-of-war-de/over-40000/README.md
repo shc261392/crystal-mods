@@ -4,16 +4,17 @@ A **Vortex-installable** fun mod for *Warhammer 40,000: Dawn of War —
 Definitive Edition*.
 
 > **This is a FUN mod, not a balance mod.** Game balance gets weird on purpose:
-> e.g. an Imperial Guard **Sentinel is a 5-model squad** and can shred targets
-> in seconds, Scouts field 10 models immediately, and you can build unlimited
-> Terminators. Some factions become hilariously overpowered. That is the point.
+> e.g. Space Marine Scouts field 10 models immediately, a Tactical squad fields
+> 20 (up to 40), and you can build unlimited Terminators. Some factions become
+> hilariously overpowered. That is the point. (Single-model "complex upgrade"
+> units — commanders, tanks, walkers — stay at **1 model**; see below.)
 
 ## What it does
 
 | Feature | Scope |
 |---|---|
 | **Unit (population) & vehicle (support) caps → 40001** | All modes & races (data-wide) |
-| **Squad model count → ×5** (initial & max reinforce), per-model cost counter-scaled | All races & campaigns |
+| **Squad model count → ×5** (initial & max reinforce), per-model cost counter-scaled | All races & campaigns — except complex-upgrade squads, which stay at 1 model (see below) |
 | **Starting requisition & power → 40001** (resource-cheat variant only) | Each campaign mission start |
 | **Resource income → ×10 requisition & power** (resource-cheat variant only) | Player only |
 | **Requisition bank cap → +400000** (resource-cheat variant only) | Player only |
@@ -37,8 +38,8 @@ cheat:
 
 | ZIP | Resource cheat | Playstyle |
 |---|---|---|
-| `over-40000-v0.1.8.zip` | **On** — start with 40001 req/power, ×10 income | Full cheat: spam anything immediately |
-| `over-40000-v0.1.8-normal-resources.zip` | **Off** — normal resources | Same 5x squads / caps / unlimited limits, but you earn resources normally |
+| `over-40000-v0.1.9.zip` | **On** — start with 40001 req/power, ×10 income | Full cheat: spam anything immediately |
+| `over-40000-v0.1.9-normal-resources.zip` | **Off** — normal resources | Same 5x squads / caps / unlimited limits, but you earn resources normally |
 
 Ork waaagh zip scoping: the waaagh pool cap (`max_pop_cap` → **40001**) ships in
 **both** variants; the **+4000 waaagh per banner** value and the **×2 waaagh
@@ -93,9 +94,9 @@ floored at 1.0 in both.
 
 ```bash
 cd dawn-of-war-de/over-40000
-make build            # -> dist/over-40000-v0.1.8.zip  (resource cheat on)
+make build            # -> dist/over-40000-v0.1.9.zip  (resource cheat on)
 make build RESOURCE_CHEAT=0
-                      # -> dist/over-40000-v0.1.8-normal-resources.zip
+                      # -> dist/over-40000-v0.1.9-normal-resources.zip
 ```
 
 - `SQUAD_SCALE=N` — multiply every squad's **initial** (`unit_min`) and **max
@@ -106,6 +107,20 @@ make build RESOURCE_CHEAT=0
   cost/build like 4 used to). Fixed-model "team" units (heavy-weapons teams,
   entrenched teams) are **excluded** — scaling their model count breaks their
   state machine and crashes the game.
+- **Complex-upgrade squads are never scaled** — they stay at **one unit**
+  (`--exclude-complex-upgrades on`, default, all modules). Any squad that
+  spawns a trooper carrying the engine's `combat_ext.complex_upgrades` flag is
+  left at its vanilla model count. The base game requires such squads to have
+  unit count 1 and otherwise raises
+  `MOD -- Fatal Data Error for squad '<s>', trooper '<t>'. Squads with complex
+  upgrades have a maximum unit count of one!`; in developer mode (`-dev`) that
+  aborts mod init and **freezes the game at the splash screen**. These units are
+  single-model in vanilla (commanders/leaders, tanks, walkers, bikes): Chaos
+  Lord/Sorcerer, SM Chaplain / Force Commander / Librarian / Predator, Guard
+  Leman Russ / Baneblade / Sentinel, Ork Warboss / Mek Boy / Killa Kan /
+  Wartrak, Eldar Farseer / Wraithlord / Falcon, Dark Eldar Archon / Haemonculus
+  / Ravager, Necron Lord, Sisters Canoness / Confessor / Immolator, Tau
+  Commander / Kroot Shaper, and similar.
 - `RESOURCE_CHEAT=1` (default) — start with **40001** requisition/power and ×10
   income; `RESOURCE_CHEAT=0` ships vanilla `setup.scar` for normal resources.
 - `--descale-campaign-single` (on in release builds) — **single-model campaign
@@ -131,26 +146,26 @@ this mod to auto-reinforce your squads.
 **To revert to the pre-0.1.0 build:** rebuild without squad scaling
 (`make build SQUAD_SCALE=0`) — that produces the old 0.3.0-style behaviour
 (caps + resource cheat only, no model-count scaling). A copy of the 0.3.0 zip
-is kept in `../.copilot_workspace/saved/`.
+is kept in `../.agent_workspace/saved/`.
 
 Regenerating `mod/` from a fresh game-data extraction:
 
 ```bash
 # 1) extract the SGAs once (scratch space, ~9 GB)
-cd .copilot_workspace
+cd .agent_workspace
 python3 -m venv sga-venv && sga-venv/bin/pip install relic-game-tool
 sga-venv/bin/relic sga unpack -q "<game>/DXP2/DXP2Data.sga" -o extract/DXP2
 sga-venv/bin/relic sga unpack -q "<game>/DXP3/DXP3Data.sga" -o extract/DXP3
 
 # 2) regenerate the mod tree
-make regenerate        # EXTRACT_ROOT=../.copilot_workspace/extract
+make regenerate        # EXTRACT_ROOT=../.agent_workspace/extract
 make build
 ```
 
 ## Install (Windows / Vortex)
 
 1. Install the **DoW DE game extension** for Vortex (`vortex-ext-game-warhammer40kdawnofwar-*.zip`) if you haven't — drag it onto Vortex's **Extensions** tab and enable it.
-2. Drag `dist/over-40000-v0.1.8.zip` (or the `-normal-resources` variant) onto Vortex and **Install**.
+2. Drag `dist/over-40000-v0.1.9.zip` (or the `-normal-resources` variant) onto Vortex and **Install**.
 3. Click **Deploy Mods**.
 4. Launch **Dawn of War Definitive Edition** from Vortex (or Steam — the loose files are already deployed to the game folder).
 
@@ -256,6 +271,21 @@ over-40000/
 
 ## Version history
 
+- **0.1.9** — **complex-upgrade squads stay at one unit.** Any squad that spawns
+  a trooper carrying the engine's `combat_ext.complex_upgrades` flag is no
+  longer model-count scaled, in any module. The base-game validator rejects a
+  complex-upgrade squad with unit count > 1
+  (`MOD -- Fatal Data Error for squad '<s>', trooper '<t>'. Squads with complex
+  upgrades have a maximum unit count of one!`). Without `-dev` the game ignored
+  it, but in **developer mode** the failed `MOD Data Validation` aborts mod init
+  and the engine retries mod load forever, **freezing the game at the splash
+  screen**. Added `--exclude-complex-upgrades` (default **on**) to the generator:
+  it reads each squad's spawned trooper EBPs and excludes any with the flag, so
+  these units ship (and stay) at 1 model. The affected squads are the vanilla
+  single-model commanders/tanks/walkers/bikes across all four modules
+  (DXP3 27, DXP2 21, W40k 16, WXP 17). A generator invariant test
+  (`make test`, `test_no_complex_upgrade_squad_is_scaled`) enforces it.
+  Non-complex single-model squads are unaffected.
 - **0.1.8** — fix the **Soulstorm Imperial Guard stronghold** crash. Scaling the
   base `guard_squad_guardsmen`'s `unit_min` (spawn size) ×5 made the mission's
   game-start forced garrison spawn 25-model squads at min loadout into buildings,

@@ -6,7 +6,7 @@
 # The binaries themselves are NOT committed — only this script is.
 #
 # Output: ../dist/bepinex-framework-v1.0.0.zip  (game-root layout: winhttp.dll,
-# doorstop_config.ini, .doorstop_version, BepInEx/, dotnet/ + modinfo.json)
+# doorstop_config.ini, .doorstop_version, BepInEx/, dotnet/)
 set -euo pipefail
 
 HERE="$(cd "$(dirname "$0")" && pwd)"
@@ -36,14 +36,15 @@ else
   SRC_ZIP="$DL"
 fi
 
-echo "[2/3] stage framework + modinfo"
+echo "[2/3] stage framework"
 mkdir -p "$STAGE/pkg"
 unzip -qo "$SRC_ZIP" -d "$STAGE/pkg"
-cp "$HERE/modinfo.json" "$STAGE/pkg/modinfo.json"
+# modinfo.json is repo metadata, NOT a game file — never staged, or the Vortex
+# extension (which deploys every archive path) would put it in the game root.
 
 echo "[3/3] zip -> dist/$(basename "$OUT")"
 mkdir -p "$DIST"
 rm -f "$OUT"
 ( cd "$STAGE/pkg" && zip -rqX "$OUT" . )
 echo "packaged -> $OUT ($(du -h "$OUT" | cut -f1))"
-unzip -l "$OUT" | awk '{print $4}' | grep -E '^[^/]+/?$|winhttp|doorstop|modinfo' | head
+unzip -l "$OUT" | awk '{print $4}' | grep -E '^[^/]+/?$|winhttp|doorstop' | head

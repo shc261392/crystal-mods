@@ -100,8 +100,8 @@ it's idempotent), and the per-tier amounts live in `TIER_COST_DELTA` in
 
 ## Builds
 
-- **`the-great-crusade-v0.1.0.zip`** (standalone) — built on the vanilla bundle.
-- **`the-great-crusade-tccompat-v0.1.0.zip`** — built on the Traditional Chinese
+- **`the-great-crusade-v0.1.1.zip`** (standalone) — built on the vanilla bundle.
+- **`the-great-crusade-tccompat-v0.1.1.zip`** — built on the Traditional Chinese
   Localization bundle, so it keeps TC fonts. See "Using with TC localization".
 
 ## Using with TC localization

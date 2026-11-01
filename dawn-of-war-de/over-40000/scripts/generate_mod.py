@@ -40,6 +40,7 @@ AEGD_OFF = 0x28  # DATAAEGD payload starts at file offset 0x28
 MAX_CAP = 40000.0
 RACE_CAP = 40001.0
 MAX_POP_CAP = relic_hash("max_pop_cap")  # ork waaagh pool cap (ork_race race_pop_table)
+COMPLEX_UPGRADES = relic_hash("complex_upgrades")  # trooper EBP combat_ext flag
 ORK_BANNER_APPLY_TABLE = 0x7C408388      # ork_waagh_banner modifier apply table
 ORK_BANNER_MODIFIER_VALUE = 0x2ED8F799   # the apply-entry "value" float
 ORK_BANNER_POP_CAP = 4000.0              # cheat build: +4000 waaagh cap per banner
@@ -289,21 +290,91 @@ def squad_loadout_ebp_refs(aegd: bytes) -> list[str]:
     return out
 
 
+def build_ebp_index(extract_root: Path, modules: tuple[str, ...] = ALL_MODULES
+                    ) -> dict[str, Path]:
+    """Map lowercase unit-EBP basename -> .rgd path (first module wins).
+
+    Resolves the trooper entities a squad spawns (`squad_loadout_ebp_refs`)
+    back to their entity data so the `combat_ext.complex_upgrades` flag can be
+    read (`squad_has_complex_upgrades`).
+    """
+    index: dict[str, Path] = {}
+    for module in modules:
+        data_root = extract_root / module / "data"
+        if not data_root.is_dir():
+            continue
+        for rgd in sorted(data_root.rglob("*.rgd")):
+            if "ebps" not in str(rgd).replace("\\", "/"):
+                continue
+            index.setdefault(rgd.name.lower(), rgd)
+    return index
+
+
+def ebp_has_complex_upgrades(path: Path) -> bool:
+    """True if this unit EBP's `combat_ext.complex_upgrades` flag is set.
+
+    The engine stores the flag as a single bool byte (the `.rgd` entry is
+    tagged int16, but only the first byte is meaningful: 1 = complex, 0 = not).
+    The base-game mod validators reject any squad that spawns a
+    complex-upgrade trooper while its unit count is > 1:
+
+        MOD -- Fatal Data Error for squad '<squad>', trooper '<trooper>'.
+               Squads with complex upgrades have a maximum unit count of one!
+
+    In developer mode (`-dev`) that validation aborts mod init, so these squads
+    must never be model-count scaled.
+    """
+    raw = path.read_bytes()
+    aegd = raw[AEGD_OFF:]          # to EOF: value offsets may sit past data_size
+    decoder = Decoder(aegd)
+    stack = [12]
+    seen: set[int] = set()
+    while stack:
+        abs_t = stack.pop()
+        if abs_t in seen or abs_t + 4 > len(aegd):
+            continue
+        seen.add(abs_t)
+        tbl = decoder._table(abs_t)
+        if tbl is None:
+            continue
+        for kh, typ, vabs in tbl[1]:
+            if kh == COMPLEX_UPGRADES:
+                foff = AEGD_OFF + vabs
+                if foff < len(raw):
+                    return raw[foff] != 0
+            elif typ == 100:
+                stack.append(vabs)
+    return False
+
+
+def squad_has_complex_upgrades(aegd: bytes, ebp_index: dict[str, Path]) -> bool:
+    """True if any trooper EBP this squad spawns carries complex_upgrades."""
+    for ebp in squad_loadout_ebp_refs(aegd):
+        path = ebp_index.get(ebp.lower())
+        if path is not None and ebp_has_complex_upgrades(path):
+            return True
+    return False
+
+
 def effective_scale_for(name: str, aegd: bytes, squad_scale: int, policy: str,
                         exclude_single_model: bool = False, exclude_sp: bool = False,
                         descale_campaign_single: bool = False,
-                        module: str = "") -> int:
+                        module: str = "", has_complex_upgrades: bool = False) -> int:
     """Model-count scale factor that should apply to this squad file.
 
     Returns 0 when the squad's model count must not change (fixed-model team
     squads, or squad_can_attach_ext squads excluded by the active policy).
 
+    `has_complex_upgrades` (all modules): the engine rejects any squad that
+    spawns a complex-upgrade trooper while its unit count is > 1 ("Squads with
+    complex upgrades have a maximum unit count of one!"). These squads are
+    single-model in vanilla; scaling them makes the base-game validator fail.
+    In `-dev` that validation aborts mod init, so they MUST stay at one unit.
+    Always excluded (never scaled) when the flag is set.
+
     `exclude_single_model` applies only to the base-game modules (W40k/WXP):
-    the base-game engine validates at mod load that squads with complex
-    upgrades stay at unit_max==1 ("Squads with complex upgrades have a
-    maximum unit count of one!"), so single-model squads cannot be scaled
-    there. DXP2/DXP3 have no such validation and single-model squads scale
-    freely.
+    any remaining single-model squad (unit_max==1, not already caught by the
+    complex-upgrade rule) is left unscaled there.
 
     `descale_campaign_single` applies only to the expansion modules
     (DXP2/DXP3): single-model squads whose name carries a campaign-only marker
@@ -318,6 +389,9 @@ def effective_scale_for(name: str, aegd: bytes, squad_scale: int, policy: str,
     if any(p in n for p in SQUAD_SCALE_EXCLUDE):
         return 0
     if squad_scale <= 0:
+        return 0
+    if has_complex_upgrades:
+        # complex-upgrade troopers force the squad to one unit (engine rule)
         return 0
     if exclude_single_model and module in ("W40k", "WXP") and squad_unit_max(aegd) == 1.0:
         return 0
@@ -354,7 +428,8 @@ def collect_scale_maps(extract_root: Path, squad_scale: int, policy: str,
                        races: set[str] | None = None,
                        squad_filter: set[str] | None = None,
                        exclude_squads: set[str] | None = None,
-                       overrides: dict[str, int] | None = None
+                       overrides: dict[str, int] | None = None,
+                       exclude_complex_upgrades: bool = True
                        ) -> tuple[dict[str, int], dict[str, int]]:
     """Pre-scan every squad to map squad filename -> scale factor and each
     referenced EBP basename -> cost-division divisor.
@@ -378,6 +453,7 @@ def collect_scale_maps(extract_root: Path, squad_scale: int, policy: str,
     """
     squad_map: dict[str, int] = {}
     ebp_map: dict[str, int] = {}
+    ebp_index = build_ebp_index(extract_root) if exclude_complex_upgrades else {}
     for module in ALL_MODULES:
         data_root = extract_root / module / "data"
         if not data_root.is_dir():
@@ -389,9 +465,12 @@ def collect_scale_maps(extract_root: Path, squad_scale: int, policy: str,
                 aegd = extract_aegd(rgd)
             except Exception:
                 continue
+            has_cu = (exclude_complex_upgrades
+                      and squad_has_complex_upgrades(aegd, ebp_index))
             eff = effective_scale_for(rgd.name, aegd, squad_scale, policy,
                                       exclude_single_model, exclude_sp,
-                                      descale_campaign_single, module)
+                                      descale_campaign_single, module,
+                                      has_complex_upgrades=has_cu)
             if races is not None and eff > 0:
                 rel = str(rgd.relative_to(data_root)).replace("\\", "/")
                 seg = rel.split("/sbps/races/")
@@ -723,6 +802,15 @@ def main() -> int:
                          "loadout (scaling them freezes the SIM, e.g. Wraithlord HG "
                          "in Tau Stronghold). Skirmish single-model squads still "
                          "scale. Default off.")
+    ap.add_argument("--exclude-complex-upgrades", choices=("on", "off"), default="on",
+                    help="when on (default), any squad that spawns a trooper with the "
+                         "engine's 'complex upgrades' flag (EBP combat_ext."
+                         "complex_upgrades) is NOT model-count scaled, so it stays at "
+                         "one unit. The engine rejects complex-upgrade squads with a "
+                         "unit count > 1 ('Squads with complex upgrades have a maximum "
+                         "unit count of one!'); in -dev mode that aborts mod init and "
+                         "freezes the game at the splash screen. Applies to all modules. "
+                         "Default on.")
     ap.add_argument("--campaign-script-fix", choices=("on", "off"), default="on",
                     help="when on (default), rewrite known campaign-mission crash "
                          "sites into the mod tree. Currently the Soulstorm "
@@ -879,7 +967,8 @@ def main() -> int:
                                               args.exclude_sp == "on",
                                               args.descale_campaign_single == "on",
                                               race_filter, squad_filter, exclude_squads,
-                                              scale_overrides)
+                                              scale_overrides,
+                                              exclude_complex_upgrades=args.exclude_complex_upgrades == "on")
         for module in modules:
             data_root = args.extract_root / module / "data"
             if not data_root.is_dir():
@@ -912,7 +1001,8 @@ def main() -> int:
                                             args.exclude_sp == "on",
                                             args.descale_campaign_single == "on",
                                             race_filter, squad_filter, exclude_squads,
-                                            scale_overrides)
+                                            scale_overrides,
+                                            exclude_complex_upgrades=args.exclude_complex_upgrades == "on")
     for module in modules:
         data_root = args.extract_root / module / "data"
         if not data_root.is_dir():

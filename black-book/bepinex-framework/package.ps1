@@ -7,7 +7,7 @@
 .DESCRIPTION
   Windows PowerShell equivalent of package.sh. Both scripts implement the SAME
   recipe: download the pinned upstream archive, verify its SHA-256, stage it
-  with modinfo.json, and write a flat, deterministic zip to ..\dist\.
+  and write a flat, deterministic zip to ..\dist\.
 
   Black Book is a Unity 2018.4 Mono title, so it needs BepInEx 5 (x64), NOT
   BepInEx 6 IL2CPP. Do not change the pin without also updating modinfo.json and
@@ -58,11 +58,12 @@ try {
     Copy-Item $SrcZip $Cached -Force
   }
 
-  Write-Host '[2/3] stage framework + modinfo'
+  Write-Host '[2/3] stage framework'
   $Pkg = Join-Path $Stage 'pkg'
   New-Item -ItemType Directory -Path $Pkg | Out-Null
   Expand-Archive -Path $SrcZip -DestinationPath $Pkg -Force
-  Copy-Item (Join-Path $Here 'modinfo.json') (Join-Path $Pkg 'modinfo.json') -Force
+  # modinfo.json is repo metadata, NOT a game file — never staged, or the Vortex
+  # extension (which deploys every archive path) would put it in the game root.
 
   Write-Host "[3/3] zip -> dist\$(Split-Path -Leaf $Out)"
   New-Item -ItemType Directory -Path $Dist -Force | Out-Null
