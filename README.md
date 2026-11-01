@@ -24,7 +24,7 @@ crystal-mods/
 ├── docs/                          Authoring guides + modding research
 │   └── modding/                   Vortex / Nexus / Unity / UE / BepInEx notes
 ├── .github/
-└── .copilot_workspace/            Agent scratch (gitignored)
+└── .agent_workspace/             Agent scratch (gitignored, created on demand)
 ```
 
 ### Platform targets

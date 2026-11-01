@@ -237,6 +237,6 @@ The vanilla `Engine/Locale/Chinese/EnginLoc.sga` already contains:
 
 ---
 
-**Research Report:** [`.copilot_workspace/REGRESSION_RESEARCH_REPORT.md`](.copilot_workspace/REGRESSION_RESEARCH_REPORT.md)  
+**Research Report:** [`.agent_workspace/REGRESSION_RESEARCH_REPORT.md`](.agent_workspace/REGRESSION_RESEARCH_REPORT.md)  
 **Build Complete:** 2026-07-18 10:32 UTC  
 **Ready for:** In-game testing and deployment

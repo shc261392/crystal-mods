@@ -15,7 +15,7 @@ into resources.assets. Building always from vanilla keeps the result idempotent.
 
 Env:
   MOD_VANILLA_RES  path to vanilla resources.assets
-                   (default: .copilot_workspace/vanilla-1.7.7/<data>/resources.assets)
+                   (default: .agent_workspace/vanilla-1.7.7/<data>/resources.assets)
   MOD_TEXT_OUT     output subdir under .build (default: text)
 """
 import os
@@ -35,7 +35,7 @@ TypeTreeHelper.read_typetree_boost = False
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 DATA_REL = "Warhammer 40K Battlesector_Data"
 DEFAULT_VANILLA = os.path.join(
-    REPO, ".copilot_workspace", "vanilla-1.7.7", DATA_REL, "resources.assets"
+    REPO, ".agent_workspace", "vanilla-1.7.7", DATA_REL, "resources.assets"
 )
 VANILLA_RES = os.environ.get("MOD_VANILLA_RES", DEFAULT_VANILLA)
 OUT_DIR = os.path.join(REPO, ".build", os.environ.get("MOD_TEXT_OUT", "text"))

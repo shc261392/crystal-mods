@@ -2,6 +2,6 @@ bin/
 obj/
 dist/
 assets/
-.copilot_workspace/
+.agent_workspace/
 *.user
 *.zip

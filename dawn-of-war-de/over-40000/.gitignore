@@ -1,6 +1,6 @@
 # Build artifacts
 dist/
-.copilot_workspace/
+.agent_workspace/
 # Generated binary mod data — rebuilt from the game install by `make build` /
 # `build.sh` / `build.ps1`. Only the text scar template and scripts are tracked.
 mod/

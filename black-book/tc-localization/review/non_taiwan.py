@@ -11,7 +11,7 @@ import collections
 import json
 from pathlib import Path
 
-HERE = Path("/home/shado/crystal-mods/.copilot_workspace/bb-tc-audit")
+HERE = Path("/home/shado/crystal-mods/.agent_workspace/bb-tc-audit")
 rows = [json.loads(line) for line in (HERE / "triples.jsonl").read_text(encoding="utf-8").splitlines()]
 
 # term -> (Taiwan equivalent, note). Broad list; only hits matter.

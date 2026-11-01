@@ -33,7 +33,7 @@ Game data flows through three stages:
 
 ## Stage 1: Parse Stats from YAML
 
-**Script**: `.copilot_workspace/battlesector-data/parse_stat_assets.py`
+**Script**: `.agent_workspace/battlesector-data/parse_stat_assets.py`
 
 **What it does**:
 - Reads `UnitDataTable.asset` and `WeaponDataTable.asset` (Unity YAML format)
@@ -52,7 +52,7 @@ Game data flows through three stages:
 
 **Run**:
 ```bash
-cd .copilot_workspace/battlesector-data
+cd .agent_workspace/battlesector-data
 python3 parse_stat_assets.py
 ```
 
@@ -60,7 +60,7 @@ python3 parse_stat_assets.py
 
 ## Stage 2: Prepare Website Data
 
-**Script**: `.copilot_workspace/battlesector-data/prepare_website_data.py`
+**Script**: `.agent_workspace/battlesector-data/prepare_website_data.py`
 
 **What it does**:
 - Reads `complete_stats/*.json`
@@ -84,7 +84,7 @@ python3 parse_stat_assets.py
 
 **Run**:
 ```bash
-cd .copilot_workspace/battlesector-data
+cd .agent_workspace/battlesector-data
 python3 prepare_website_data.py
 ```
 
@@ -148,7 +148,7 @@ In `weapons.json`:
 
 ### Check weapon abilities in complete stats
 ```bash
-cd .copilot_workspace/battlesector-data/complete_stats
+cd .agent_workspace/battlesector-data/complete_stats
 python3 -c "
 import json
 data = json.load(open('weapons_complete.json'))
@@ -159,7 +159,7 @@ print(f'Weapons with abilities: {count}')
 
 ### Find weapons with specific ability
 ```bash
-cd .copilot_workspace/battlesector-data/complete_stats
+cd .agent_workspace/battlesector-data/complete_stats
 python3 -c "
 import json
 ability_id = 20000
@@ -193,7 +193,7 @@ print(f'{weapon[\"name\"]}: {weapon.get(\"abilities\")}')
 
 ```bash
 # Re-extract from YAML
-cd .copilot_workspace/battlesector-data
+cd .agent_workspace/battlesector-data
 python3 parse_stat_assets.py
 
 # Re-prepare website data
@@ -204,7 +204,7 @@ python3 prepare_website_data.py
 
 **Check**: Are you running from the correct directory?
 
-Scripts expect to be run from `.copilot_workspace/battlesector-data/`
+Scripts expect to be run from `.agent_workspace/battlesector-data/`
 
 ### Name resolution issues
 
@@ -232,7 +232,7 @@ If names show as "Unknown Weapon X", the localization ID mapping may be incomple
 ## Related Documentation
 
 - [Data Extraction Verification](./data-extraction-verification.md) - Ability #20000 investigation
-- [Weapon Abilities UI Implementation Plan](../../.copilot_workspace/weapon-abilities-ui-implementation-plan.md)
+- [Weapon Abilities UI Implementation Plan](../../.agent_workspace/weapon-abilities-ui-implementation-plan.md)
 - Main README: Tool usage and deployment
 
 ---

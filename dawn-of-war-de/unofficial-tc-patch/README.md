@@ -240,7 +240,7 @@ the `DOW_GAME_DIR` environment variable.
 
 Every deployment creates a timestamped backup in `backup/<YYYYMMDD-HHmmss>/`
 containing the overwritten files. `uninstall.sh` / `uninstall.ps1` reads the
-last deploy state from `.copilot_workspace/last_deploy*.env` and uses it to
+last deploy state from `.agent_workspace/last_deploy*.env` and uses it to
 restore from the correct backup automatically.
 
 ### How the mod loads

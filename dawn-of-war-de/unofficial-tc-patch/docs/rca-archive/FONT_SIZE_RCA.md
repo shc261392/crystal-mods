@@ -14,7 +14,7 @@ User reported that all font size variants (32-48) looked completely identical in
 
 ### Step 1: Verify SGAs are different
 ```bash
-md5sum .copilot_workspace/extract_*/Engine/Locale/Chinese/EnginLoc.sga
+md5sum .agent_workspace/extract_*/Engine/Locale/Chinese/EnginLoc.sga
 ```
 **Result:** ✅ All SGAs had different MD5 hashes, proving they ARE different files.
 
@@ -200,7 +200,7 @@ size1600     = 36;  // 1600×1200 and higher
 $ python3 scripts/apply_font_fix.py --root . --size 48 --mode fallback-only
 [WRITE] files changed: 13/13, replacements: 13
 
-$ grep size .copilot_workspace/sga_48/font/notosans_m_16_xc.fnt
+$ grep size .agent_workspace/sga_48/font/notosans_m_16_xc.fnt
 sizeDefault = 48
 size640     = 32  ← WRONG
 size1600    = 32  ← WRONG
@@ -211,7 +211,7 @@ size1600    = 32  ← WRONG
 $ python3 scripts/apply_font_fix.py --root . --size 48 --mode all
 [WRITE] files changed: 13/13, replacements: 75
 
-$ grep size .copilot_workspace/sga_48/font/notosans_m_16_xc.fnt
+$ grep size .agent_workspace/sga_48/font/notosans_m_16_xc.fnt
 sizeDefault = 48
 size640     = 48  ← CORRECT
 size1600    = 48  ← CORRECT

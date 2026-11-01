@@ -69,7 +69,7 @@ local modifier = Modifier_Create( ..., base * 4, ... )
 error that crashes the game on the next 5 s tick. The Haemonculus HG was just
 the first such squad the tester built; **any** of the 432 would crash.
 
-Data points from the scan (`.copilot_workspace/scan_reinforce.py`):
+Data points from the scan (`.agent_workspace/scan_reinforce.py`):
 tactical=2.0, scourge=4.0, incubus HG=0.0 (ext present, base 0 → also skipped
 by the guard), Haemonculus HG=**no ext at all (nil)**.
 
@@ -163,15 +163,15 @@ can-attach `scale`) with the WC block removed. User-approved deliverable.
 - `over-40000/dist/over-40000-v0.1.0-normal-resources.zip` — **release B**
   (normal resources; setup.scar byte-identical to vanilla)
 - `over-40000/NEXUS_DESCRIPTION.md` — copy-paste text for the Nexus page
-- Scratch analysis tools under `../.copilot_workspace/`:
+- Scratch analysis tools under `../.agent_workspace/`:
   - `scan_reinforce.py`, `find_max_upgrades.py`, `dump_reinforce.py`,
     `dump_top_ext.py`, `dump_loadout.py` — mechanism data scans
   - `analyze_squad.py`, `scan_squads.py`, `scan_attach.py`, `attach_dump.py`,
     `dump_ext.py`, `diff_floats.py`, `check_ebp_costs.py`
   - `squad_scan.tsv` (866 squads), `attach_scan.tsv`
   - `build_g.sh`, `build_recommended.sh`, `build_release.sh` — build scripts
-- Extracted data: `../.copilot_workspace/extract/`
-- Saved builds: `../.copilot_workspace/saved/` (v0.3.0 + old zips)
+- Extracted data: `../.agent_workspace/extract/`
+- Saved builds: `../.agent_workspace/saved/` (v0.3.0 + old zips)
 
 ---
 

@@ -11,7 +11,7 @@ dependencies = []
 line-length = 100
 target-version = "py311"
 extend-exclude = [
-  ".copilot_workspace",
+  ".agent_workspace",
   "**/.venv",
   "**/build",
   "**/dist",

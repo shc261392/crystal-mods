@@ -40,7 +40,7 @@ GAME_ROOT = os.environ.get(
     "MOD_GAME_DIR", "/mnt/d/SteamLibrary/steamapps/common/Warhammer 40000 Battlesector"
 )
 FONT_OTF = os.environ.get(
-    "MOD_FONT_OTF", os.path.join(REPO, ".copilot_workspace", "fonts", "NotoSansCJKjp-Regular.otf")
+    "MOD_FONT_OTF", os.path.join(REPO, ".agent_workspace", "fonts", "NotoSansCJKjp-Regular.otf")
 )
 RES_PATCHED = os.path.join(REPO, "translation", "zh-TW", "dist", "resources.assets")
 OVERSAMPLE = 4
@@ -149,7 +149,7 @@ def main():
     assets_path = sys.argv[1]
     font_pid = int(sys.argv[2])
     out_sub = sys.argv[3]
-    out_dir = os.path.join(REPO, ".copilot_workspace", out_sub)
+    out_dir = os.path.join(REPO, ".agent_workspace", out_sub)
     os.makedirs(out_dir, exist_ok=True)
 
     gen = TypeTreeGenerator(UNITY_VERSION)

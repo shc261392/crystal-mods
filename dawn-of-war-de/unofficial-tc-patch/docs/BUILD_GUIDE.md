@@ -152,7 +152,7 @@ cd /home/shado/crystal-mods/dawn-of-war-de/unofficial-tc-patch
 GAME_DIR="/mnt/d/SteamLibrary/steamapps/common/Dawn of War Definitive Edition"
 
 # Create buildfile (must have CRLF line endings)
-cat > .copilot_workspace/EnginLocBuild.txt <<'EOF'
+cat > .agent_workspace/EnginLocBuild.txt <<'EOF'
 Archive
 TOCStart alias="data" relativeroot="."
 FileSettingsStart defcompression="1"
@@ -165,10 +165,10 @@ TOCEnd
 EOF
 
 # Convert to CRLF (required by Archive.exe)
-sed -i 's/$/\r/' .copilot_workspace/EnginLocBuild.txt
+sed -i 's/$/\r/' .agent_workspace/EnginLocBuild.txt
 
 # Convert paths to Windows UNC format
-WIN_BUILD="\\wsl.localhost\\Ubuntu\\home\\shado\\crystal-mods\\dawn-of-war-de\\unofficial-tc-patch\\.copilot_workspace\\EnginLocBuild.txt"
+WIN_BUILD="\\wsl.localhost\\Ubuntu\\home\\shado\\crystal-mods\\dawn-of-war-de\\unofficial-tc-patch\\.agent_workspace\\EnginLocBuild.txt"
 WIN_DATA="\\wsl.localhost\\Ubuntu\\home\\shado\\crystal-mods\\dawn-of-war-de\\unofficial-tc-patch\\data"
 WIN_OUTPUT="\\wsl.localhost\\Ubuntu\\home\\shado\\crystal-mods\\dawn-of-war-de\\unofficial-tc-patch\\EnginLocMod.sga"
 

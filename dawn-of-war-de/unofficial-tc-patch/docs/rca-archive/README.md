@@ -1,7 +1,7 @@
 # RCA & debugging archive (unofficial TC patch)
 
 These notes were recovered from the agent scratch directory
-(`.copilot_workspace/`) during housekeeping on 2026-10-20. They are kept for
+(`.agent_workspace/`) during housekeeping on 2026-10-20. They are kept for
 provenance: they document the font-size and subtitle regressions investigated
 between 2026-07-04 and 2026-07-19, and the build/verification steps used at the
 time.

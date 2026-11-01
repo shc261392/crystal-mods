@@ -1,5 +1,5 @@
 # Build scratch and generated audio
-.copilot_workspace/
+.agent_workspace/
 # Source music you drop in (do not commit copyrighted audio)
 music/**/*.mp3
 music/**/*.wav

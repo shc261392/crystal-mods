@@ -294,7 +294,7 @@ fi
 
 # 5. Record deployment state for uninstall
 if \! $DRY_RUN; then
-    DEPLOY_STATE="${REPO_ROOT}/.copilot_workspace/last_deploy.env"
+    DEPLOY_STATE="${REPO_ROOT}/.agent_workspace/last_deploy.env"
     mkdir -p "$(dirname "$DEPLOY_STATE")"
     cat > "$DEPLOY_STATE" <<ENVEOF
 GAME_DIR="${GAME_DIR}"

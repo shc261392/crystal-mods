@@ -1,6 +1,6 @@
 # Build artifacts / scratch
 .build/
-.copilot_workspace/
+.agent_workspace/
 dist/
 __pycache__/
 

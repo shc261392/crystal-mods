@@ -188,7 +188,10 @@ conflict with any other mod touching the same bundle.
 
 ## 11. Repository conventions (this repo)
 
-- Mods at `<game>/<mod>/`; scratch in `./.copilot_workspace/` (never `/tmp`);
+**The authoritative rules are in [`AGENTS.md`](../../../AGENTS.md) at the repo
+root. Read it before changing anything here; this section is only a reminder.**
+
+- Mods at `<game>/<mod>/`; scratch in `./.agent_workspace/` (never `/tmp`);
   distribution zips in the mod's `dist/`.
 - One deterministic build recipe: `make build`; required variants live in the
   committed files, not ad-hoc flags.

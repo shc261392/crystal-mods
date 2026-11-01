@@ -18,7 +18,7 @@ $ErrorActionPreference = 'Stop'
 $Here    = Split-Path -Parent $MyInvocation.MyCommand.Path
 $ModName = 'FactionSoundtrack'
 
-$Stage    = Join-Path $Here '.copilot_workspace/stage'
+$Stage    = Join-Path $Here '.agent_workspace/stage'
 $Dist     = Join-Path $Here 'dist'
 $Src      = Join-Path $Here 'src'
 $MusicSrc = Join-Path $Here 'music'

@@ -76,12 +76,12 @@ node -e "
     notes: 'Awaiting translation'
   }));
   console.log(JSON.stringify({ abilities }, null, 2));
-" > .copilot_workspace/ability-i18n-template.json
+" > .agent_workspace/ability-i18n-template.json
 ```
 
 ### Step 2: Add Your Translations
 
-Open `.copilot_workspace/ability-i18n-template.json` and add translations:
+Open `.agent_workspace/ability-i18n-template.json` and add translations:
 
 ```json
 {
@@ -147,7 +147,7 @@ Or use an online JSON Schema validator.
 ### Step 5: Move to Production
 
 ```bash
-cp .copilot_workspace/ability-i18n-template.json src/data/ability-i18n.json
+cp .agent_workspace/ability-i18n-template.json src/data/ability-i18n.json
 ```
 
 ## Translation Guidelines

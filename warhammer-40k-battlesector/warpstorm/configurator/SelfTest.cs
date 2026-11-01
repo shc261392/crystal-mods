@@ -53,7 +53,7 @@ public static class SelfTest
         if (snap.Weapons.TryGetValue("7010", out var w))
             Console.WriteLine($"  weapon 7010: Damage={V(w, "Damage")} Attacks={V(w, "Attacks")} AP={V(w, "ArmourPenetration")}");
 
-        var outDir = Path.Combine(Environment.CurrentDirectory, ".copilot_workspace", "warpstorm-selftest");
+        var outDir = Path.Combine(Environment.CurrentDirectory, ".agent_workspace", "warpstorm-selftest");
         Directory.CreateDirectory(outDir);
         var outPath = Path.Combine(outDir, "config.json");
 

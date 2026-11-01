@@ -1,6 +1,6 @@
 # Build outputs and large binaries
 dist/*.zip
-.copilot_workspace/
+.agent_workspace/
 payload/
 inputs/
 *.bundle

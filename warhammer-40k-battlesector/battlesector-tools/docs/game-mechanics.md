@@ -6,7 +6,7 @@ Keep this updated as research continues — it is the persistent record.
 
 Source data: AssetRipper export at
 `/mnt/d/mods/battlesector/ExportedProject/Assets`. Decompiled managed code:
-`.copilot_workspace/battlesector-data/decompiled/Assembly-CSharp.decompiled.cs`
+`.agent_workspace/battlesector-data/decompiled/Assembly-CSharp.decompiled.cs`
 (method bodies are AssetRipper stubs — field/struct layout is reliable, logic is
 not).
 
@@ -15,13 +15,13 @@ not).
 Use sources in this order when documenting or implementing mechanics:
 
 1. **Extracted game data (authoritative):**
-   - `.copilot_workspace/battlesector-data/complete_stats/**`
-   - `.copilot_workspace/battlesector-data/extracted_text_assets/**`
-   - `.copilot_workspace/battlesector-data/parsed_data/**`
+   - `.agent_workspace/battlesector-data/complete_stats/**`
+   - `.agent_workspace/battlesector-data/extracted_text_assets/**`
+   - `.agent_workspace/battlesector-data/parsed_data/**`
 2. **TC localization source (zh-TW display source):**
    - `../tc-localization/translation/zh-TW/source/zh-TW/**`
 3. **Official PDF manual (conceptual fallback only):**
-   - `.copilot_workspace/battlesector-data/Battlesector_manual_EBOOK.pdf`
+   - `.agent_workspace/battlesector-data/Battlesector_manual_EBOOK.pdf`
 
 If sources conflict, **extracted data always wins over manual text**.
 

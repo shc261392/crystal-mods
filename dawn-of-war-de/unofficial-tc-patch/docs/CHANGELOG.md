@@ -86,8 +86,8 @@ All notable user-facing changes to the DoW DE Traditional Chinese patch are docu
 
 ### Merge conflict context
 - 3-way merge inputs:
-  - old upstream: `.copilot_workspace/update-20260627/raw/old/Engine.ucs`
-  - new upstream: `.copilot_workspace/update-20260627/raw/new/Engine.ucs`
+  - old upstream: `.agent_workspace/update-20260627/raw/old/Engine.ucs`
+  - new upstream: `.agent_workspace/update-20260627/raw/new/Engine.ucs`
   - current mod UCS: `dist/wh40k-dow-de-tc-mod-v1.0.4/Engine/Locale/Chinese/Engine.ucs`
 - Conflict count: 2 keys (`11270884`, `11270885`), both in credits rows.
 - Resolution policy: keep upstream factual credits updates when mod delta is formatting-only.

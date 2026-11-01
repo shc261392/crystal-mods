@@ -109,7 +109,7 @@ def main():
     env = UnityPy.load(A)
     out_dir = None
     if mode == "write":
-        out_dir = os.path.join(REPO, ".copilot_workspace", sys.argv[2])
+        out_dir = os.path.join(REPO, ".agent_workspace", sys.argv[2])
         os.makedirs(out_dir, exist_ok=True)
 
     total = 0

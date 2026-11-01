@@ -44,7 +44,7 @@ payload/
 *.tmp
 
 # Development workspace
-.copilot_workspace/
+.agent_workspace/
 
 # Accidental output from the old broken deploy.sh, which redirected its log
 # lines into directory names. Removed from the repo in v1.1.0; ignored here so

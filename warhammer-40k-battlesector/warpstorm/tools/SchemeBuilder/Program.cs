@@ -27,7 +27,7 @@ internal static class Program
         string Opt(string name, string def) { int i = Array.IndexOf(args, name); return i >= 0 && i + 1 < args.Length ? args[i + 1] : def; }
         if (args[0] == "overview") return Overview(args, Opt);
         var pack = SchemePack.Load(Path.GetFullPath(args[1]));
-        string cache = Opt("--src", Path.Combine(Repo, "warpstorm", ".copilot_workspace", "scheme-src", "portraits"));
+        string cache = Opt("--src", Path.Combine(Repo, "warpstorm", ".agent_workspace", "scheme-src", "portraits"));
         var portraits = FactionPortraits(pack.Faction);
         Fetch(portraits, cache);
 
@@ -159,7 +159,7 @@ internal static class Program
     private static int Overview(string[] args, Func<string, string, string> opt)
     {
         string outPng = args[1];
-        string cache = opt("--src", Path.Combine(Repo, "warpstorm", ".copilot_workspace", "scheme-src", "portraits"));
+        string cache = opt("--src", Path.Combine(Repo, "warpstorm", ".agent_workspace", "scheme-src", "portraits"));
         string texDir = opt("--tex", null);
         string logo = opt("--logo", null);
         var dirs = args.Skip(2).TakeWhile(a => !a.StartsWith("--")).ToList();

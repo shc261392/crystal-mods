@@ -117,7 +117,7 @@ To add a translation correction: edit `glossary.tsv` (`search<TAB>replace`), run
 `MOD_VANILLA_RES`, `MOD_PY` (venv python), `MOD_FT` (fonttool.dll), `MOD_TC_OTF`
 (NotoSansCJKtc), `MOD_ZIP_OUT`. Python deps: `UnityPy`, `opencc`, `freetype`,
 `numpy`, `scipy`, `Pillow`. `FontTool` is a small AssetsTools.NET (C#/dotnet) helper
-under `.copilot_workspace/csharp/FontTool` (scratch; not tracked).
+under `.agent_workspace/csharp/FontTool` (scratch; not tracked).
 
 ---
 

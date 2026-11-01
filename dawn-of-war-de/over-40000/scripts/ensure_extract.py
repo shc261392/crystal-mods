@@ -9,7 +9,7 @@ present.
 Usage:
     python3 scripts/ensure_extract.py [--game-dir PATH] [--extract-root PATH] [--force]
 
-The extraction tree defaults to ../.copilot_workspace/extract (gitignored).
+The extraction tree defaults to ../.agent_workspace/extract (gitignored).
 """
 from __future__ import annotations
 
@@ -131,7 +131,7 @@ def main() -> int:
     ap.add_argument("--force", action="store_true")
     args = ap.parse_args()
 
-    extract_root = args.extract_root or Path(__file__).parent.parent.parent / ".copilot_workspace" / "extract"
+    extract_root = args.extract_root or Path(__file__).parent.parent.parent / ".agent_workspace" / "extract"
     extract_root = extract_root.resolve()
 
     game_dir = args.game_dir

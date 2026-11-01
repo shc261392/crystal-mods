@@ -154,8 +154,8 @@ warhammer-40k-battlesector/
 
 ## Research provenance (for contributors)
 
-- Manual reference source: `.copilot_workspace/battlesector-data/Battlesector_manual_EBOOK.pdf`
-- Structured mechanics/localization source: `.copilot_workspace/battlesector-data/**`
+- Manual reference source: `.agent_workspace/battlesector-data/Battlesector_manual_EBOOK.pdf`
+- Structured mechanics/localization source: `.agent_workspace/battlesector-data/**`
 - Precedence rule: when manual text conflicts with extracted game data,
   **extracted game data is authoritative**.
 

@@ -24,7 +24,7 @@ set -euo pipefail
 
 HERE="$(cd "$(dirname "$0")" && pwd)"
 ROOT="$(cd "$HERE/.." && pwd)"
-EXTRACT_ROOT="${1:-$ROOT/../.copilot_workspace/extract}"
+EXTRACT_ROOT="${1:-$ROOT/../.agent_workspace/extract}"
 DIST="$ROOT/dist"
 STAGE="$(mktemp -d "${TMPDIR:-/tmp}/ov4k-variants.XXXXXX")"
 trap 'rm -rf "$STAGE"' EXIT

@@ -18,7 +18,7 @@
 # Vanilla base: set BS_VANILLA_BUNDLE (or BS_GAME_DIR) to a pristine bundle.
 # See README "Build inputs".
 
-PYTHON ?= ../../.copilot_workspace/battlesector-data/venv/bin/python
+PYTHON ?= ../../.agent_workspace/battlesector-data/venv/bin/python
 BUILD  := $(PYTHON) build.py
 FORCE  ?=
 
@@ -39,5 +39,5 @@ cost-policy:
 	$(BUILD) cost-policy
 
 clean:
-	rm -rf .copilot_workspace/stage
+	rm -rf .agent_workspace/stage
 	rm -f dist/the-great-crusade*.zip

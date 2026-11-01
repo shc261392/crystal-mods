@@ -46,7 +46,7 @@ GAME_ROOT = os.environ.get(
     "MOD_GAME_DIR", "/mnt/d/SteamLibrary/steamapps/common/Warhammer 40000 Battlesector"
 )
 DIST_DIR = os.environ.get("MOD_DIST_DIR", os.path.join(REPO, "translation", "zh-TW", "dist"))
-FONT_OTF = os.environ.get("MOD_FONT_OTF", os.path.join(REPO, ".copilot_workspace", "fonts", "NotoSansCJKjp-Regular.otf"))
+FONT_OTF = os.environ.get("MOD_FONT_OTF", os.path.join(REPO, ".agent_workspace", "fonts", "NotoSansCJKjp-Regular.otf"))
 RES_PATCHED = os.path.join(DIST_DIR, "resources.assets")
 
 BUNDLE_DIST = os.path.join(DIST_DIR, "startup_assets_all.bundle")

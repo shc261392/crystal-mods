@@ -101,7 +101,7 @@ cd \\wsl.localhost\Ubuntu\home\shado\crystal-mods\dawn-of-war-de\unofficial-tc-p
 cd \\wsl.localhost\Ubuntu\home\shado\crystal-mods\dawn-of-war-de\unofficial-tc-patch
 
 "D:\SteamLibrary\steamapps\common\Dawn of War Definitive Edition\Archive.exe" ^
-  -build .copilot_workspace\EnginLocBuild.txt ^
+  -build .agent_workspace\EnginLocBuild.txt ^
   -sourcedir data ^
   -archive EnginLocMod.sga ^
   -verbose
@@ -125,8 +125,8 @@ ls -lh EnginLocMod.sga
 **From WSL2:**
 ```bash
 cd /home/shado/crystal-mods/dawn-of-war-de/unofficial-tc-patch
-mkdir -p .copilot_workspace/verify_final
-cd .copilot_workspace/verify_final
+mkdir -p .agent_workspace/verify_final
+cd .agent_workspace/verify_final
 "/mnt/d/SteamLibrary/steamapps/common/Dawn of War Definitive Edition/Archive.exe" \
   -extract "$(wslpath -w ../../EnginLocMod.sga)" \
   -outpath "$(wslpath -w $(pwd))"
@@ -187,8 +187,8 @@ M  data/font/*.fnt                              # All 13 files: sizeDefault = 36
 A  scripts/rebuild_sga_with_font_sizes.sh       # Automated bash script
 A  scripts/repack_sga_windows.ps1               # PowerShell repack script
 A  scripts/rebuild_sga.cmd                      # Windows CMD repack script  
-A  .copilot_workspace/EnginLocBuild.txt         # Archive.exe buildfile
-A  .copilot_workspace/AUTO_BUILD_STATUS.md      # This file
+A  .agent_workspace/EnginLocBuild.txt         # Archive.exe buildfile
+A  .agent_workspace/AUTO_BUILD_STATUS.md      # This file
 ```
 
 ---

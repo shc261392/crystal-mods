@@ -34,7 +34,7 @@ NEW_BOLD = float(os.environ.get("MOD_WEIGHT_BOLD", "0.4"))
 
 def main():
     assets_path = sys.argv[1]
-    out_dir = os.path.join(REPO, ".copilot_workspace", sys.argv[2])
+    out_dir = os.path.join(REPO, ".agent_workspace", sys.argv[2])
     os.makedirs(out_dir, exist_ok=True)
 
     env = UnityPy.load(assets_path)

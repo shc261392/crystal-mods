@@ -4,7 +4,7 @@
 
 .DESCRIPTION
     Reverts a previous deployment made by deploy.ps1.
-    Reads the last deploy state from .copilot_workspace\last_deploy_win.env.
+    Reads the last deploy state from .agent_workspace\last_deploy_win.env.
 
     Actions:
       1. Re-enable EnginLoc.sga (rename from .disabled → .sga)
@@ -31,7 +31,7 @@ param(
 $ErrorActionPreference = "Stop"
 $ScriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $LocaleSubPath = "Engine\Locale\Chinese"
-$DeployStateFile = Join-Path $ScriptRoot ".copilot_workspace\last_deploy_win.env"
+$DeployStateFile = Join-Path $ScriptRoot ".agent_workspace\last_deploy_win.env"
 
 $DeployDirs  = @("data")
 $DeployFiles = @("Engine.ucs")

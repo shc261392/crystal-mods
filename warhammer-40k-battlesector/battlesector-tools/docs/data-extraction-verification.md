@@ -44,7 +44,7 @@ MonoBehaviour:
 
 ### 2. Extraction Scripts
 
-**Location**: `../../.copilot_workspace/battlesector-data/*.py`
+**Location**: `../../.agent_workspace/battlesector-data/*.py`
 
 **Key Scripts**:
 
@@ -61,7 +61,7 @@ MonoBehaviour:
    - Converts to website-friendly format
    - No filtering or transformation of ability assignments
 
-**Output**: `../../.copilot_workspace/battlesector-data/complete_stats/*.json`
+**Output**: `../../.agent_workspace/battlesector-data/complete_stats/*.json`
 
 ### 3. Website Data
 
@@ -105,7 +105,7 @@ sed -n '11063,11150p' UnitDataTable.asset
 
 #### Step 3: Resolve Unit Name
 ```bash
-cd ../../.copilot_workspace/battlesector-data
+cd ../../.agent_workspace/battlesector-data
 grep "^197|" extracted_text_assets/text_repository-units.txt
 
 # Result: 197|Adepta Sororitas Battle Sisters|Unit Type Long|Unit
@@ -113,7 +113,7 @@ grep "^197|" extracted_text_assets/text_repository-units.txt
 
 #### Step 4: Verify Complete Stats
 ```bash
-cd ../../.copilot_workspace/battlesector-data
+cd ../../.agent_workspace/battlesector-data
 python3 -c "
 import json
 data = json.load(open('complete_stats/units_complete.json'))
@@ -165,7 +165,7 @@ When conflicts arise, follow this precedence:
    - Source of truth for game mechanics
    - Directly extracted from compiled game
 
-2. **Complete Stats** (`../../.copilot_workspace/battlesector-data/complete_stats/`)
+2. **Complete Stats** (`../../.agent_workspace/battlesector-data/complete_stats/`)
    - First derivation from raw YAML
    - Minimal transformation (name resolution only)
 
@@ -220,6 +220,6 @@ All data investigations must include:
 
 ## References
 
-- **Extraction Report**: `../../.copilot_workspace/battlesector-data/EXTRACTION_REPORT.md`
-- **Game Data Reference**: `../../.copilot_workspace/battlesector-data/GAME_DATA_REFERENCE.md`
+- **Extraction Report**: `../../.agent_workspace/battlesector-data/EXTRACTION_REPORT.md`
+- **Game Data Reference**: `../../.agent_workspace/battlesector-data/GAME_DATA_REFERENCE.md`
 - **Research Policy**: `README.md` (see "Research source policy")

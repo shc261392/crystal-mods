@@ -1,7 +1,7 @@
 # Black Book — Traditional Chinese translation audit (EN vs TC)
 
 **READ-ONLY audit.** No mod/game file was modified. All scratch artefacts live in
-`/home/shado/crystal-mods/.copilot_workspace/bb-tc-audit/`.
+`/home/shado/crystal-mods/.agent_workspace/bb-tc-audit/`.
 
 ## 0. What was audited and how
 
@@ -208,7 +208,7 @@ padding spaces the game uses for fixed-width UI (`疯      狂` for "Insane", et
 ## D. Suggested corrections (proposals only — NOT applied)
 
 Machine-verified against the live payload; written to
-`.copilot_workspace/bb-tc-audit/proposed_overrides.tsv`, format `file<TAB>key<TAB>replacement`.
+`.agent_workspace/bb-tc-audit/proposed_overrides.tsv`, format `file<TAB>key<TAB>replacement`.
 `file` is relative to `StreamingAssets/Config` (matching `reference/overrides.tsv`).
 
 ```

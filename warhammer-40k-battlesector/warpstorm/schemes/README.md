@@ -48,10 +48,10 @@ rules match a pixel, the strongest one wins.
 dotnet build tools/SchemeBuilder -c Release
 # review sheet: original vs scheme for every portrait (+ 3D albedos if exported)
 dotnet tools/SchemeBuilder/bin/Release/net10.0/SchemeBuilder.dll \
-  sheet schemes/<id> .copilot_workspace/scheme-review/<id>.png [--tex <albedo png dir>]
+  sheet schemes/<id> .agent_workspace/scheme-review/<id>.png [--tex <albedo png dir>]
 ```
 
 The source portraits are the game's Selection portraits, as published by
 BattleSector Tools. They are downloaded once into
-`.copilot_workspace/scheme-src/portraits/`. Text-on-white placeholder art is
+`.agent_workspace/scheme-src/portraits/`. Text-on-white placeholder art is
 skipped.

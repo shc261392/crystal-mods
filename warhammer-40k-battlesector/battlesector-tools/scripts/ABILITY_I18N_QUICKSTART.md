@@ -20,9 +20,9 @@ Extract game data to access all supported languages:
 
 3. **Copy to workspace**:
    ```bash
-   mkdir -p .copilot_workspace/battlesector-data/extracted_text_assets
+   mkdir -p .agent_workspace/battlesector-data/extracted_text_assets
    cp <game-export>/Assets/Resources/text_repository-*.txt \
-      .copilot_workspace/battlesector-data/extracted_text_assets/
+      .agent_workspace/battlesector-data/extracted_text_assets/
    ```
 
 4. **Run integration**:
@@ -88,7 +88,7 @@ Legend:
 
 ### "Extracted text assets not found"
 
-**Cause**: Game data hasn't been extracted to `.copilot_workspace/battlesector-data/`
+**Cause**: Game data hasn't been extracted to `.agent_workspace/battlesector-data/`
 
 **Solutions**:
 1. Extract game assets (see Option 1 above)
@@ -122,7 +122,7 @@ A: Only if text IDs change or new abilities are added to the game.
 A: Yes! Add them directly to `ability-overrides.source.json` or edit the generated `ability-i18n.json`.
 
 **Q: What if the script doesn't find matches?**
-A: Check `.copilot_workspace/ability-i18n-review.json` for suggestions, or add manual translations.
+A: Check `.agent_workspace/ability-i18n-review.json` for suggestions, or add manual translations.
 
 **Q: How do I integrate the output into the app?**
 A: See the "Integrating into Application" section in `ABILITY_I18N_README.md`.

@@ -186,7 +186,7 @@ Engine/
 4. ✅ Font changes take effect
 
 **Implementation:**
-1. Extract `EnginLocMod.sga` → `.copilot_workspace/package_source/`
+1. Extract `EnginLocMod.sga` → `.agent_workspace/package_source/`
 2. Apply font fix with size 36
 3. Package `data/` folder (no SGA)
 4. Update README to match

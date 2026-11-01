@@ -13,7 +13,7 @@ HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 GAME_DIR="${BS_GAME_DIR:-/mnt/d/SteamLibrary/steamapps/common/Warhammer 40000 Battlesector}"
 VER="$(grep -oP '"version"\s*:\s*"\K[^"]+' "$HERE/modinfo.json")"
 DIST="$HERE/dist"
-STAGE="$HERE/.copilot_workspace/stage"
+STAGE="$HERE/.agent_workspace/stage"
 PLUGIN_DIR="$STAGE/BepInEx/plugins/Warpstorm"
 
 rm -rf "$STAGE"

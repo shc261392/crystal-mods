@@ -17,7 +17,7 @@ MOD = Path("/home/shado/crystal-mods/black-book/tc-localization")
 TC_ROOT = MOD / "payload" / "Black Book_Data" / "StreamingAssets" / "Config"
 SC_ROOT = MOD / "source" / "sc" / "StreamingAssets" / "Config"
 GAME = Path("/mnt/d/SteamLibrary/steamapps/common/Black Book/Black Book_Data/StreamingAssets/Config")
-OUT = Path("/home/shado/crystal-mods/.copilot_workspace/bb-tc-audit")
+OUT = Path("/home/shado/crystal-mods/.agent_workspace/bb-tc-audit")
 
 
 def leaves(node, prefix=""):

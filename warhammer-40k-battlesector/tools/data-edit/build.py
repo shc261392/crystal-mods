@@ -133,7 +133,7 @@ WEAPON_PATCHES: dict[int, dict[str, object]] = {
 # ---------------------------------------------------------------------------
 
 HERE = Path(__file__).resolve().parent
-STAGE = HERE / ".copilot_workspace" / "stage"
+STAGE = HERE / ".agent_workspace" / "stage"
 DIST = HERE / "dist"
 BUNDLE_REL = "Warhammer 40K Battlesector_Data/StreamingAssets/startup_assets_all.bundle"
 

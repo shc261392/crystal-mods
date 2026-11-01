@@ -50,7 +50,7 @@ Engine/
 ### Verification
 Extracted `EnginLoc.sga` and confirmed:
 ```bash
-$ find .copilot_workspace/verify_fix -name "fontdecor.gfx" -exec ls -lh {} \;
+$ find .agent_workspace/verify_fix -name "fontdecor.gfx" -exec ls -lh {} \;
 -rw-r--r-- 1 shado shado 8.4M Jul 18 08:51 .../art/ui/swf/fontdecor.gfx
 ```
 
@@ -138,9 +138,9 @@ $ find .copilot_workspace/verify_fix -name "fontdecor.gfx" -exec ls -lh {} \;
 
 ## 📚 Related Documentation
 
-- **Full analysis**: `.copilot_workspace/REGRESSION_ANALYSIS_2026-07-12.md`
+- **Full analysis**: `.agent_workspace/REGRESSION_ANALYSIS_2026-07-12.md`
 - **Original fix**: `docs/FONTDECOR_ROOT_CAUSE_ANALYSIS.md`
-- **Build logs**: `.copilot_workspace/rebuild_test_*.log`
+- **Build logs**: `.agent_workspace/rebuild_test_*.log`
 
 ---
 

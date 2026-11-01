@@ -91,7 +91,7 @@ a re-translation.
 **Consequences & action taken**
 - The backup's `MANIFEST` hashes and its bundle copies are **modded, not pristine**.
 - The backup was **deleted**; the rebuild sources from a fresh read-only snapshot of
-  the clean vanilla 1.7.7 game (`.copilot_workspace/vanilla-1.7.7/`).
+  the clean vanilla 1.7.7 game (`.agent_workspace/vanilla-1.7.7/`).
 - Going forward, a pristine snapshot must be taken **only** immediately after a Steam
   update / verify, **before** any deploy.
 
@@ -138,7 +138,7 @@ All steps read the **clean vanilla 1.7.7** files and write to
 
 | Phase | Step | Tool | Output |
 |---|---|---|---|
-| 0 | Clean source snapshot | copy vanilla 1.7.7 → `.copilot_workspace/vanilla-1.7.7/` | source of truth |
+| 0 | Clean source snapshot | copy vanilla 1.7.7 → `.agent_workspace/vanilla-1.7.7/` | source of truth |
 | 1 | TC text (byte-identical `s2tw`) | `patch_resources_174.py` | `dist/resources.assets` |
 | 1 | Launcher TC (`s2twp`) | `patch_launcher.py` | `dist/stringsChinese.resx` |
 | 2 | Bake 939 missing TC glyphs into `pid 3644` | `bake_fonts_174.py` | `pid3644.bin` + edited `.resS` |

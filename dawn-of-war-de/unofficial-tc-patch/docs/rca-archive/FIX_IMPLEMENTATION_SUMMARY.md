@@ -17,7 +17,7 @@ Added fontdecor.gfx replacement logic to all rebuild scripts:
 
 ```bash
 # Replace broken TC fontdecor.gfx with vanilla version
-VANILLA_FONTDECOR=".copilot_workspace/game_chinese_fonts/art/ui/swf/fontdecor.gfx"
+VANILLA_FONTDECOR=".agent_workspace/game_chinese_fonts/art/ui/swf/fontdecor.gfx"
 TARGET_FONTDECOR="data/art/ui/swf/fontdecor.gfx"
 
 # Validation: Check vanilla file exists and is correct size (~8.4MB)
@@ -80,7 +80,7 @@ bash deploy.sh
 ## Validation Checklist
 
 - [x] Scripts modified: rebuild_sga_auto.sh, rebuild_sga_with_font_sizes.sh, master_rebuild.sh
-- [x] Vanilla fontdecor.gfx source verified at `.copilot_workspace/game_chinese_fonts/`
+- [x] Vanilla fontdecor.gfx source verified at `.agent_workspace/game_chinese_fonts/`
 - [x] Size validation added (must be >8MB)
 - [x] Error handling added (fails if vanilla file missing/corrupt)
 - [ ] Test rebuild executed

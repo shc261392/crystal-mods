@@ -72,8 +72,8 @@ hasImage(category: string, name: string): boolean
 - **dotenvx:** Secure credential management
 
 ### Scripts
-- `.copilot_workspace/battlesector-data/extract_icons.py` - Unity asset extraction with categorization
-- `.copilot_workspace/battlesector-data/upload_to_r2.sh` - Automated R2 upload with URL mapping generation
+- `.agent_workspace/battlesector-data/extract_icons.py` - Unity asset extraction with categorization
+- `.agent_workspace/battlesector-data/upload_to_r2.sh` - Automated R2 upload with URL mapping generation
 
 ## Verification
 
@@ -127,7 +127,7 @@ Cloudflare credentials stored securely in:
 
 ## Compliance
 
-- ✅ All temp files in `.copilot_workspace/` (not /tmp)
+- ✅ All temp files in `.agent_workspace/` (not /tmp)
 - ✅ User review requested via vscode_askQuestions (skipped - full automation requested)
 - ✅ Locale preservation rules applied (N/A - not DoW DE project)
 - ✅ Progressive disclosure followed (documentation linked in repo)

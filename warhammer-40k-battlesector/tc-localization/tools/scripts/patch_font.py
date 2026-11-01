@@ -1890,8 +1890,8 @@ def _load_external_otf_characters(otf_path: str) -> list:
     """
     import os
     
-    # Check if external OTF exists in .copilot_workspace
-    workspace_otf = os.path.join(os.path.dirname(__file__), "../../.copilot_workspace/NotoSansCJKtc-Regular.otf")
+    # Check if external OTF exists in .agent_workspace
+    workspace_otf = os.path.join(os.path.dirname(__file__), "../../.agent_workspace/NotoSansCJKtc-Regular.otf")
     if os.path.exists(workspace_otf):
         otf_path = workspace_otf
         print(f"  Using external OTF: {otf_path}")
@@ -2489,7 +2489,7 @@ def main() -> None:
     #    original Latin glyph indices (range 3..254) — starting at len(table)=124
     #    caused 19 duplicate GlyphTable entries that corrupted GlyphLookupDictionary
     #    and caused 58 chars to silently fail at runtime.
-    _ext_otf_path = os.path.join(REPO_ROOT, ".copilot_workspace", "NotoSansCJKtc-Regular.otf")
+    _ext_otf_path = os.path.join(REPO_ROOT, ".agent_workspace", "NotoSansCJKtc-Regular.otf")
     if os.path.isfile(_ext_otf_path):
         with open(_ext_otf_path, "rb") as _otf_f:
             _futura_noto_bytes = _otf_f.read()

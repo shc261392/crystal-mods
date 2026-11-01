@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-HERE = Path("/home/shado/crystal-mods/.copilot_workspace/bb-tc-audit")
+HERE = Path("/home/shado/crystal-mods/.agent_workspace/bb-tc-audit")
 rows = {(r["file"], r["key"]): r for r in
         (json.loads(l) for l in (HERE / "triples.jsonl").read_text(encoding="utf-8").splitlines())}
 

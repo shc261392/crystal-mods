@@ -37,5 +37,5 @@ package: build
 
 clean:
 	rm -rf plugin/bin plugin/obj configurator/bin configurator/obj
-	rm -rf .copilot_workspace/stage
+	rm -rf .agent_workspace/stage
 	rm -f dist/warpstorm-*.zip

@@ -3,7 +3,7 @@
 # uninstall.sh — WH40K DoW:DE Traditional Chinese Locale Mod reverter
 #
 # Restores the game to its pre-mod state by:
-#   1. Reading the last deploy state from .copilot_workspace/last_deploy.env
+#   1. Reading the last deploy state from .agent_workspace/last_deploy.env
 #   2. Removing deployed EnginLocMod.sga and Engine.ucs from the game's locale folder
 #   3. Optionally restoring from the timestamped backup
 #
@@ -17,7 +17,7 @@ RED='\033[0;31m'; GREEN='\033[0;32m'; YELLOW='\033[1;33m'
 CYAN='\033[0;36m'; BOLD='\033[1m'; RESET='\033[0m'
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DEPLOY_STATE="${REPO_ROOT}/.copilot_workspace/last_deploy.env"
+DEPLOY_STATE="${REPO_ROOT}/.agent_workspace/last_deploy.env"
 
 GAME_DIR=""
 DRY_RUN=false
@@ -36,7 +36,7 @@ usage() {
 Usage: bash uninstall.sh [OPTIONS]
 
 Reverts a previous mod deployment. Reads deploy state from
-.copilot_workspace/last_deploy.env (written by deploy.sh).
+.agent_workspace/last_deploy.env (written by deploy.sh).
 
 Options:
   --game-dir PATH   Override the stored game directory

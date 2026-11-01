@@ -18,7 +18,7 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$REPO_ROOT"
 
 GAME_DIR="${DOW_GAME_DIR:-}"
-EXTRACT_ROOT="${EXTRACT_ROOT:-../../.copilot_workspace/extract}"
+EXTRACT_ROOT="${EXTRACT_ROOT:-../../.agent_workspace/extract}"
 
 while [[ $# -gt 0 ]]; do
     case "$1" in

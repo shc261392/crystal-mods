@@ -155,7 +155,7 @@ tau 6. (20 are ⚠ min-capped, 54 reinforce to 30 from below.)
   Experiment invocation (experimental build only, never a formal release):
 
   ```
-  python3 scripts/generate_mod.py ../.copilot_workspace/extract mod \
+  python3 scripts/generate_mod.py ../.agent_workspace/extract mod \
       --squad-scale 5 --resource-cheat on \
       --exclude-single-model on --descale-campaign-single on \
       --scale-overrides "necron_tomb_spyder_squad=0,necron_tomb_spyder_no_flyer_squad=0,necron_scarab_squad=2,necron_scarab_no_flyer_squad=2"
@@ -170,5 +170,5 @@ canonical `make build` uses, then `unit_min`/`unit_max` floats are read from eac
 shipped squad file (raw-file view, `AEGD_OFF + field_offset`). Squads are deduped
 by basename across modules and reported at their highest-priority module.
 Reproducible for any extraction tree; re-run the scratch enumerator
-(`.copilot_workspace/enumerate_engine30.py`) and re-verify the diffs before
+(`.agent_workspace/enumerate_engine30.py`) and re-verify the diffs before
 updating this table.

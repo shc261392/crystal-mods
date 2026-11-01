@@ -52,7 +52,7 @@ TypeTreeHelper.read_typetree_boost = False
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 TC_OTF = os.environ.get(
     "MOD_TC_OTF",
-    os.path.join(REPO, ".copilot_workspace", "fonts", "NotoSansCJKtc-Regular.otf"),
+    os.path.join(REPO, ".agent_workspace", "fonts", "NotoSansCJKtc-Regular.otf"),
 )
 
 
@@ -60,7 +60,7 @@ def main():
     assets_path = sys.argv[1]
     font_pid = int(sys.argv[2])
     out_sub = sys.argv[3]
-    out_dir = os.path.join(REPO, ".copilot_workspace", out_sub)
+    out_dir = os.path.join(REPO, ".agent_workspace", out_sub)
     os.makedirs(out_dir, exist_ok=True)
 
     gen = TypeTreeGenerator(UNITY_VERSION)

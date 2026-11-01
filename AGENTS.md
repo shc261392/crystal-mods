@@ -6,9 +6,12 @@ linked under "Progressive disclosure" below.
 
 ## Hard rules
 
-1. **Scratch space**: use `./.copilot_workspace/` for any temporary content
-   (downloads, intermediate extracts, generated artifacts you're inspecting).
-   **Never use `/tmp`.** The directory is gitignored and safe to write to.
+1. **Scratch space**: use `.agent_workspace/` for any temporary content
+   (downloads, intermediate extracts, generated artifacts you're inspecting) —
+   the repo-root one (`./.agent_workspace/`) by default, or the nearest project's
+   own `.agent_workspace/` when a build script already points there.
+   **Never use `/tmp`.** The directory is gitignored and safe to write to; it is
+   scratch, so it may be deleted at any time — never keep anything there.
    **Distribution packages MUST use the project's `dist/` folder**, not temp folders.
 2. **Iterate with the user**: after completing any non-trivial task, call the
    `vscode_askQuestions` tool to request review / approval, or to clarify the

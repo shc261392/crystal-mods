@@ -42,7 +42,7 @@ $LocaleSubPath = "Engine\Locale\Chinese"
 $GameFolderName = "Dawn of War Definitive Edition"
 $Stamp = (Get-Date -Format "yyyyMMdd-HHmmss")
 $BackupRoot = Join-Path $ScriptRoot "backup"
-$DeployStateDir = Join-Path $ScriptRoot ".copilot_workspace"
+$DeployStateDir = Join-Path $ScriptRoot ".agent_workspace"
 $DeployStateFile = Join-Path $DeployStateDir "last_deploy_win.env"
 
 $DeployFiles = @("EnginLocMod.sga", "Engine.ucs")

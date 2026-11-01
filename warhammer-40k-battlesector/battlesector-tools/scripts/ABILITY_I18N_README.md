@@ -9,7 +9,7 @@ This script matches English ability text from `ability-overrides.source.json` to
 ## Data Sources (Priority Order)
 
 1. **Game extracted text** (primary authority):
-   - `.copilot_workspace/battlesector-data/extracted_text_assets/text_repository-*.txt`
+   - `.agent_workspace/battlesector-data/extracted_text_assets/text_repository-*.txt`
    - English, German, French, Spanish, Korean, Polish, Portuguese (BR), Russian, Chinese (Simplified)
 
 2. **TC localization mod** (Traditional Chinese):
@@ -61,7 +61,7 @@ pnpm run i18n:integrate-abilities:dry
    }
    ```
 
-2. **`.copilot_workspace/ability-i18n-review.json`** (if fuzzy matches exist):
+2. **`.agent_workspace/ability-i18n-review.json`** (if fuzzy matches exist):
    - Lists abilities that need manual review
    - Shows top candidate matches with similarity scores
    - Use this to verify fuzzy matches or add textIds to source
@@ -96,7 +96,7 @@ Thresholds:
 
 1. **Extract game data** (if not already done):
    ```bash
-   # Game files must be extracted to .copilot_workspace/battlesector-data/
+   # Game files must be extracted to .agent_workspace/battlesector-data/
    # See docs/game-mechanics.md for extraction process
    ```
 
@@ -116,7 +116,7 @@ Thresholds:
 
 5. **Review fuzzy matches** (if any):
    ```bash
-   cat .copilot_workspace/ability-i18n-review.json
+   cat .agent_workspace/ability-i18n-review.json
    ```
 
 ### Manual Review Process

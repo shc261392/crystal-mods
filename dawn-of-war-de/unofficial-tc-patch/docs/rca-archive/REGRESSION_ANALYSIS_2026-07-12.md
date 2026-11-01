@@ -126,7 +126,7 @@ The documentation (`docs/FONTDECOR_ROOT_CAUSE_ANALYSIS.md`) specifies the mod SG
 # After extraction, before building:
 
 log "Replacing broken TC fontdecor.gfx with vanilla version..."
-VANILLA_FONTDECOR=".copilot_workspace/game_chinese_fonts/art/ui/swf/fontdecor.gfx"
+VANILLA_FONTDECOR=".agent_workspace/game_chinese_fonts/art/ui/swf/fontdecor.gfx"
 TARGET_FONTDECOR="data/art/ui/swf/fontdecor.gfx"
 
 if [[ -f "$VANILLA_FONTDECOR" ]]; then

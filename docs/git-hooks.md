@@ -59,7 +59,7 @@ The hook is already installed in this repository. If you clone to a new location
 ### Purpose
 Enforces visual verification for UI changes to prevent broken deployments.
 
-**AGENTS.md Rule #9**: AI agents must:
+**AGENTS.md hard rule 14**: AI agents must:
 1. Visually verify UI changes using browser tools
 2. Take screenshot showing the working feature
 3. **Show screenshot to user and get explicit approval**

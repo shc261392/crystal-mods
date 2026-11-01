@@ -178,10 +178,10 @@ If Relic ships a new `keydefaults.lua` version:
 # 1. Unpack the current Engine.sga from your install
 uv run relic sga unpack \
     "<game-root>/Engine/Engine.sga" \
-    .copilot_workspace/engine_unpack
+    .agent_workspace/engine_unpack
 
 # 2. Refresh the committed stock copy
-cp .copilot_workspace/engine_unpack/defprofile/keydefaults.lua \
+cp .agent_workspace/engine_unpack/defprofile/keydefaults.lua \
    mod/keybinds/stock/keydefaults.lua
 
 # 3. Regenerate presets

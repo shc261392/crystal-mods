@@ -20,7 +20,7 @@ $Version = "0.1.8"
 $RepoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $RepoRoot
 
-if (-not $ExtractRoot) { $ExtractRoot = Join-Path (Resolve-Path "..\..").Path ".copilot_workspace\extract" }
+if (-not $ExtractRoot) { $ExtractRoot = Join-Path (Resolve-Path "..\..").Path ".agent_workspace\extract" }
 if (-not $GameDir) { $GameDir = $env:DOW_GAME_DIR }
 
 Write-Host "== Over 40000 - DoW DE build (Windows) =="

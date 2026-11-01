@@ -163,7 +163,7 @@ fi
 # ─────────────────────────────────────────────────────────────────────────────
 log "Setting up SGA build environment..."
 
-BUILD_FILE="${REPO_ROOT}/.copilot_workspace/EnginLocBuild.txt"
+BUILD_FILE="${REPO_ROOT}/.agent_workspace/EnginLocBuild.txt"
 OUTPUT_SGA="${REPO_ROOT}/EnginLocMod.sga"
 
 # ─────────────────────────────────────────────────────────────────────────────

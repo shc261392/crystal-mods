@@ -17,7 +17,7 @@ $GAME_DIR = "D:\SteamLibrary\steamapps\common\Dawn of War Definitive Edition"
 $ARCHIVE_EXE = "$GAME_DIR\Archive.exe"
 
 # Build the SGA
-& $ARCHIVE_EXE -c ".copilot_workspace\EnginLocBuild.txt" `
+& $ARCHIVE_EXE -c ".agent_workspace\EnginLocBuild.txt" `
   -r "data" `
   -a "EnginLocMod.sga" `
   -v

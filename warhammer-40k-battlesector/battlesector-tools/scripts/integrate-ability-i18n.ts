@@ -14,7 +14,7 @@
  *   5. Provide manual review recommendations for fuzzy matches
  *
  * Data sources (in priority order):
- *   - Game extracted text: .copilot_workspace/battlesector-data/extracted_text_assets/
+ *   - Game extracted text: .agent_workspace/battlesector-data/extracted_text_assets/
  *   - TC localization: ../tc-localization/translation/zh-TW/source/zh-TW/
  *   - Manual overrides (when automated matching fails)
  *
@@ -91,7 +91,7 @@ const TEXT_REPOSITORY_BASES = [
 const ABILITY_SOURCE = path.join(projectRoot, 'src', 'data', 'ability-overrides.source.json');
 const EXTRACTED_TEXT_ROOT = path.join(
   workspaceRoot,
-  '.copilot_workspace',
+  '.agent_workspace',
   'battlesector-data',
   'extracted_text_assets',
 );
@@ -106,7 +106,7 @@ const TC_MOD_ROOT = path.join(
 );
 
 const OUTPUT_PATH = path.join(projectRoot, 'src', 'data', 'ability-i18n.json');
-const REVIEW_PATH = path.join(projectRoot, '.copilot_workspace', 'ability-i18n-review.json');
+const REVIEW_PATH = path.join(projectRoot, '.agent_workspace', 'ability-i18n-review.json');
 
 // CLI flags
 const args = process.argv.slice(2);

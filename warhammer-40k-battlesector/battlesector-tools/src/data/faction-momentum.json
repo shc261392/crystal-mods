@@ -1,5 +1,5 @@
 {
-  "_source": "Verified from status_effects.json (StatusEffectDataTable) + decompiled StatChangeType enum. See .copilot_workspace/battlesector-data/docs_momentum_faction_mapping.md",
+  "_source": "Verified from status_effects.json (StatusEffectDataTable) + decompiled StatChangeType enum. See .agent_workspace/battlesector-data/docs_momentum_faction_mapping.md",
   "factions": {
     "0": {
       "passive": "Red Thirst",

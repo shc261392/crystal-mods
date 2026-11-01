@@ -16,7 +16,7 @@ VERSION="0.2"
 MOD_NAME="FactionSoundtrack"
 
 # Scratch staging lives OUTSIDE the repo deliverable path (gitignored).
-STAGE="$HERE/.copilot_workspace/stage"
+STAGE="$HERE/.agent_workspace/stage"
 DIST="$HERE/dist"
 SRC="$HERE/src"
 MUSIC_SRC="$HERE/music"
