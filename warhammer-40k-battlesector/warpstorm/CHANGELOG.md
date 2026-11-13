@@ -1,5 +1,25 @@
 # Changelog — Warpstorm
 
+## 1.2.1 — Configurator font fix
+
+The 1.2.0 configurator was built in a clean worktree where the six Barlow UI
+fonts were absent (they were excluded by the repository-wide `*.ttf` ignore
+rule), so the EXE started without its embedded fonts and crashed when opening
+the window:
+
+```
+Could not create glyphTypeface. Font family: Barlow Condensed
+(key: avares://Warpstorm.Configurator/branding/fonts)
+```
+
+The fonts are now committed, the configurator build fails if any of the six is
+missing, and the version is bumped so Vortex installs the fixed build. Plugin
+behaviour is unchanged.
+
+The configurator's embedded browser catalog is still the `battlesector-tools`
+dataset (187 units / 439 weapons); the plugin and the configurator's "Original"
+values read the live 1.8.0 tables (205 units / 446 weapons).
+
 ## 1.2.0 — Battlesector 1.8.0 support
 
 Battlesector 1.8.0 moved unit and weapon data into per-faction tables merged by

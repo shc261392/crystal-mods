@@ -26,9 +26,9 @@
 
     <!-- Windows icon + version resource (Explorer "Details", Task Manager name). -->
     <ApplicationIcon>branding/warpstorm.ico</ApplicationIcon>
-    <Version>1.2.0</Version>
-    <FileVersion>1.2.0.0</FileVersion>
-    <InformationalVersion>1.2.0</InformationalVersion>
+    <Version>1.2.1</Version>
+    <FileVersion>1.2.1.0</FileVersion>
+    <InformationalVersion>1.2.1</InformationalVersion>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     <Product>Warpstorm</Product>
     <AssemblyTitle>Warpstorm Configurator</AssemblyTitle>
@@ -77,5 +77,17 @@
     <Compile Include="../shared/SchemePack.cs" Link="SchemePack.cs" />
     <Compile Include="../shared/PaintCache.cs" Link="PaintCache.cs" />
   </ItemGroup>
+
+  <!-- Fail the build if the embedded UI fonts are missing. They used to be
+       caught by the repository-wide *.ttf ignore rule, which produced a
+       configurator EXE that crashed at startup with "Could not create
+       glyphTypeface ... Barlow Condensed". -->
+  <Target Name="VerifyConfiguratorFonts" BeforeTargets="PrepareForBuild">
+    <ItemGroup>
+      <_ConfiguratorFonts Include="branding/fonts/*.ttf" />
+    </ItemGroup>
+    <Error Condition="'@(_ConfiguratorFonts->Count())' != '6'"
+           Text="Warpstorm Configurator: expected 6 TTF fonts in branding/fonts (found @(_ConfiguratorFonts->Count())). They are committed; check the .gitignore exception." />
+  </Target>
 
 </Project>

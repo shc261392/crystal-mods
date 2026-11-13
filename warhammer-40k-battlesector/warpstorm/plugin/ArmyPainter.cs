@@ -35,11 +35,11 @@ namespace ArmyPainter
     // chosen colours while preserving luminance (baked shading) and leaving
     // near-neutral metal/grime pixels untouched. Results are cached per
     // (texture, target colours).
-    [BepInPlugin(GUID, "Army Painter", "1.2.0")]
+    [BepInPlugin(GUID, "Army Painter", "1.2.1")]
     public class Plugin : BasePlugin
     {
         public const string GUID = "com.crystalmods.armypainter";
-        public const string Version = "1.2.0";
+        public const string Version = "1.2.1";
         internal static new ManualLogSource Log;
         internal static ConfigFile Cfg;
 

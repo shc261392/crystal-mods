@@ -62,6 +62,9 @@ build.*/
 *.ttf
 *.ttc
 *.otf
+# Exception: Warpstorm Configurator's embedded UI fonts (SIL OFL, small, must
+# ship inside the EXE). Without these the configurator crashes on startup.
+!warhammer-40k-battlesector/warpstorm/configurator/branding/fonts/*.ttf
 
 out/
 
