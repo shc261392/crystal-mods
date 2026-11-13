@@ -240,9 +240,9 @@ your settings, delete these:
 
 | File | SHA-256 |
 |---|---|
-| `warpstorm-v1.2.1.zip` | `64a994edf9cdb720a9b08aaee46d093fc8f2264b78cc2934464184c4c73ea3b8` |
-| `Warpstorm.dll` | `47448c7e17f343e32f2d4901a2f794b13ffd1727758e1b7dcde414d2da018c8c` |
-| `Warpstorm.Configurator.exe` | `099db3109f4dc4abc65c223dbfc8f77ae6b21fc003ea1487846a88265142266f` |
+| `warpstorm-v1.2.1.zip` | `9c2739d5cdf99926d930b2126695cf141483f5c399dd6e026fb97ad26a6005e9` |
+| `Warpstorm.dll` | `37c07f19afaedc3da34815ebcaee60f08565cb9327684621b246b4c17638df00` |
+| `Warpstorm.Configurator.exe` | `168e7c0c09f8b9d846f091d7f8e1489b85e634341d05a0fb56a9c2a7bc62e232` |
 
 The chapter schemes are already inside the main zip. They are also available as
 separate `scheme-<chapter>-v<version>.zip` files for sharing.
