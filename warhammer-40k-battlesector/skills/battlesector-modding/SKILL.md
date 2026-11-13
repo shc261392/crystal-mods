@@ -1,6 +1,6 @@
 ---
 name: battlesector-modding
-description: Extract, edit, and package mods for Warhammer 40,000: Battlesector (Unity 6 IL2CPP). Use to change unit or weapon stats (HP, movement, action points, damage, attacks, armour penetration, point cost), patch the startup_assets_all.bundle Unity asset bundle with UnityPy, build BepInEx 6 IL2CPP runtime plugins, or produce a Vortex-installable mod zip from scratch.
+description: "Extract, edit, and package mods for Warhammer 40,000: Battlesector (Unity 6 IL2CPP). Use to change unit or weapon stats (HP, movement, action points, damage, attacks, armour penetration, point cost), patch the startup_assets_all.bundle Unity asset bundle with UnityPy, build BepInEx 6 IL2CPP runtime plugins, or produce a Vortex-installable mod zip from scratch."
 ---
 
 # Modding Warhammer 40,000: Battlesector
