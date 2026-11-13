@@ -21,8 +21,8 @@ DLL="$HERE/bin/Release/RedLaserLasgun.dll"
 [ -f "$DLL" ] || { echo "build produced no DLL at $DLL" >&2; exit 1; }
 
 echo "[2/3] stage Vortex layout"
-STAGE="$(mktemp -d)"
-trap 'rm -rf "$STAGE"' EXIT
+STAGE="$HERE/.agent_workspace/stage"
+rm -rf "$STAGE"
 mkdir -p "$STAGE/BepInEx/plugins"
 cp "$DLL" "$STAGE/BepInEx/plugins/RedLaserLasgun.dll"
 
@@ -33,6 +33,9 @@ echo "[3/3] zip -> dist/$NAME-v$VERSION.zip"
 mkdir -p "$DIST"
 OUT="$DIST/$NAME-v$VERSION.zip"
 rm -f "$OUT"
-( cd "$STAGE" && zip -rq "$OUT" BepInEx )
+# Deterministic archive: fixed timestamps + sorted entries.
+find "$STAGE/BepInEx" -exec touch -h -d '1980-01-01 00:00:00' {} +
+( cd "$STAGE" && find BepInEx | LC_ALL=C sort | zip -qX -D "$OUT" -@ )
+rm -rf "$STAGE"
 echo "packaged -> $OUT"
 unzip -l "$OUT"

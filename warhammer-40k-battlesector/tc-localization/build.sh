@@ -1,82 +1,88 @@
 #!/usr/bin/env bash
 # ─────────────────────────────────────────────────────────────────────────────
-# build.sh — Rebuild the TC localization from source (text + glossary) and
-# package the Vortex ZIP. Idempotent: text is rebuilt from vanilla each run, and
-# any new glyphs introduced by glossary/punctuation are baked automatically.
+# build.sh — Rebuild the Traditional Chinese localization for Battlesector 1.8.0
+# and package the Vortex ZIP. Idempotent: every step starts from a pristine
+# game file, so the same game build always produces the same assets.
 #
-# Steps:
-#   1. build_text.py         vanilla -> s2tw -> glossary -> punctuation -> text bins
-#   2. FontTool replace      inject the 7 TextAssets into resources.assets
-#   3. bake_font_generic     add any missing glyphs to fonts 785 (sa0) + 3644 (sa1)
-#   4. package               assemble dist/<mod>.zip
-#
-# The fonts' Traditional glyph re-render, bold-weight and static conversions are
-# already baked into the dist sharedassets; this script preserves them and only
-# adds newly-needed glyphs. Full font rebuilds are separate scripts.
+# Pipeline:
+#   1. TCFix plugin                     dotnet build
+#   2. build_text_180.py                SC text -> TC text in resources.assets
+#   3. bake_font_180.py (sharedassets2) NotoSansCJKjp-Regular SDF, atlas 1
+#   4. bake_font_180.py (startup)       Generated fallback font
+#      + add_font_fallback.py            other boot fonts fall back to it
+#   5. bake_font_180.py (mapbuilder)    map editor CJK font
+#   6. patch_launcher.py                launcher strings SC -> TC
+#   7. package                          dist/<mod>.zip
 #
 # Env:
-#   MOD_VANILLA_RES  vanilla resources.assets (see build_text.py)
-#   MOD_PY           python interpreter (default: venv in .agent_workspace)
-#   MOD_FT           fonttool.dll path
-#   MOD_TC_OTF       Traditional OTF for new glyphs (NotoSansCJKtc)
+#   MOD_GAME_DIR     game root (default: Steam library path)
+#   MOD_PY           python interpreter with UnityPy/freetype/scipy/opencc
+#   MOD_TC_OTF       Noto Sans CJK TC OTF used for missing glyphs
+#   MOD_ZIP_OUT      output zip path
 # ─────────────────────────────────────────────────────────────────────────────
 set -euo pipefail
 cd "$(dirname "$0")"
 ROOT="$PWD"
+GAME_DIR="${MOD_GAME_DIR:-/mnt/d/SteamLibrary/steamapps/common/Warhammer 40000 Battlesector}"
+DATA="Warhammer 40K Battlesector_Data"
+GAME_DATA="$GAME_DIR/$DATA"
 
-PY="${MOD_PY:-$ROOT/.agent_workspace/venv/bin/python3}"
-FT="${MOD_FT:-$ROOT/.agent_workspace/csharp/FontTool/bin/Release/net10.0/fonttool.dll}"
-OTF="${MOD_TC_OTF:-$ROOT/.agent_workspace/fonts/NotoSansCJKtc-Regular.otf}"
+PY="${MOD_PY:-$ROOT/../../.agent_workspace/battlesector-data/venv/bin/python}"
+[ -x "$PY" ] || PY=python3
+OTF="${MOD_TC_OTF:-$ROOT/../../.agent_workspace/fonts/NotoSansCJKtc-Regular.otf}"
+export MOD_TC_OTF="$OTF"
+
 DIST="$ROOT/translation/zh-TW/dist"
 WS="$ROOT/.agent_workspace"
-TEXT_OUT="$ROOT/.build/text"
-DATA="Warhammer 40K Battlesector_Data"
-ZIP_OUT="${MOD_ZIP_OUT:-$ROOT/../dist/wh40k-battlesector-tc-localization-v0.2.3.zip}"
+ZIP_OUT="${MOD_ZIP_OUT:-$ROOT/../dist/wh40k-battlesector-tc-localization-v0.3.0.zip}"
 TCFIX="$ROOT/bepinex/TCFix/bin/Release/TCFix.dll"
 
+[ -f "$GAME_DATA/resources.assets" ] || { echo "game data not found: $GAME_DATA"; exit 1; }
+[ -f "$OTF" ] || { echo "CJK font not found: $OTF (set MOD_TC_OTF)"; exit 1; }
 command -v dotnet >/dev/null || { echo "dotnet not found"; exit 1; }
-[ -f "$FT" ] || { echo "FontTool not built: $FT"; exit 1; }
 
-echo "==> 1. Build text (s2tw + glossary + punctuation)"
-"$PY" tools/scripts/build_text.py
+mkdir -p "$DIST"
 
-echo "==> 2. Inject text into resources.assets"
-cp "$DIST/resources.assets" "$WS/res_in.assets"
-while IFS=$'\t' read -r pid bin; do
-  [ -z "$pid" ] && continue
-  dotnet "$FT" replace "$WS/res_in.assets" "$WS/res_out.assets" "$pid" "$bin" >/dev/null
-  mv "$WS/res_out.assets" "$WS/res_in.assets"
-done < "$TEXT_OUT/manifest.txt"
-mv "$WS/res_in.assets" "$DIST/resources.assets"
-echo "    resources.assets updated"
+echo "==> 1. TCFix plugin"
+dotnet build "$ROOT/bepinex/TCFix/TCFix.csproj" -c Release >/dev/null
 
-echo "==> 3. Bake any new glyphs into fonts 785 (sa0) + 3644 (sa1)"
-MOD_FONT_OTF="$OTF" "$PY" tools/scripts/bake_font_generic.py "$DIST/sharedassets0.assets" 785 build_sa0
-if [ -f "$WS/build_sa0/tex_295.bin" ]; then
-  dotnet "$FT" replace "$DIST/sharedassets0.assets" "$WS/sa0.assets" 785 "$WS/build_sa0/font_785.bin" >/dev/null
-  dotnet "$FT" replace "$WS/sa0.assets" "$DIST/sharedassets0.assets" 295 "$WS/build_sa0/tex_295.bin" >/dev/null
-fi
-MOD_FONT_OTF="$OTF" "$PY" tools/scripts/bake_font_generic.py "$DIST/sharedassets1.assets" 3644 build_sa1
-if [ -f "$WS/build_sa1/font_3644.bin" ]; then
-  dotnet "$FT" replace "$DIST/sharedassets1.assets" "$WS/sa1.assets" 3644 "$WS/build_sa1/font_3644.bin" >/dev/null
-  mv "$WS/sa1.assets" "$DIST/sharedassets1.assets"
-  [ -f "$WS/build_sa1/sharedassets1.assets.resS" ] && cp "$WS/build_sa1/sharedassets1.assets.resS" "$DIST/sharedassets1.assets.resS"
-fi
-echo "    fonts updated"
+echo "==> 2. Text: SC -> TC in resources.assets"
+MOD_VANILLA_RES="$GAME_DATA/resources.assets" MOD_DIST_DIR="$DIST" \
+  "$PY" tools/scripts/build_text_180.py
 
-echo "==> 4. Package ZIP"
+echo "==> 3. Fonts: sharedassets2 (main UI + description CJK font)"
+cp "$GAME_DATA/sharedassets2.assets" "$DIST/sharedassets2.assets"
+MOD_FONT_OTF="$OTF" "$PY" tools/scripts/bake_font_180.py "$DIST/sharedassets2.assets" 370 1
+
+echo "==> 4. Fonts: startup bundle (boot/loading fallback)"
+cp "$GAME_DATA/StreamingAssets/startup_assets_all.bundle" "$DIST/startup_assets_all.bundle"
+MOD_FONT_OTF="$OTF" "$PY" tools/scripts/bake_font_180.py \
+  "$DIST/startup_assets_all.bundle" -6634277187469610597 0
+"$PY" tools/scripts/add_font_fallback.py "$DIST/startup_assets_all.bundle" \
+  -6634277187469610597 2045931099826710272 6858071789788628647 7178690147649604500
+
+echo "==> 5. Fonts: mapbuilder bundle (map editor CJK font)"
+cp "$GAME_DATA/StreamingAssets/mapbuilder-tools_assets_all.bundle" "$DIST/mapbuilder-tools_assets_all.bundle"
+MOD_FONT_OTF="$OTF" "$PY" tools/scripts/bake_font_180.py \
+  "$DIST/mapbuilder-tools_assets_all.bundle" -3782840183126329981 1
+
+echo "==> 6. Launcher strings SC -> TC"
+MOD_GAME_DIR="$GAME_DIR" MOD_DIST_DIR="$DIST" "$PY" tools/scripts/patch_launcher.py
+
+echo "==> 7. Package ZIP"
 S="$WS/stage"; rm -rf "$S"
 mkdir -p "$S/BepInEx/plugins" "$S/$DATA/StreamingAssets" "$S/Launcher/Localization"
 cp "$TCFIX" "$S/BepInEx/plugins/TCFix.dll"
-cp "$DIST/resources.assets" "$DIST/sharedassets0.assets" "$DIST/sharedassets1.assets" "$DIST/sharedassets1.assets.resS" "$S/$DATA/"
+cp "$DIST/resources.assets" "$DIST/sharedassets2.assets" "$S/$DATA/"
 cp "$DIST/startup_assets_all.bundle" "$DIST/mapbuilder-tools_assets_all.bundle" "$S/$DATA/StreamingAssets/"
 cp "$DIST/stringsChinese.resx" "$S/Launcher/Localization/"
 # modinfo.json + README.md are repo metadata, NOT game files. Never stage them
-# into the deployable archive — the Vortex extension deploys every archive path,
-# so they would end up in the game root.
+# into the deployable archive — the Vortex extension deploys every archive path.
 mkdir -p "$(dirname "$ZIP_OUT")"
 rm -f "$ZIP_OUT"
-( cd "$S" && zip -r -X -q -1 "$ZIP_OUT" . )
+find "$S" -exec touch -h -d '1980-01-01 00:00:00' {} +
+( cd "$S" && find . -type f | sed 's|^\./||' | LC_ALL=C sort | zip -qX -D "$ZIP_OUT" -@ )
 rm -rf "$S"
 echo "    wrote $ZIP_OUT"
 echo "==> Done. sha256:"; sha256sum "$ZIP_OUT"
+unzip -l "$ZIP_OUT"

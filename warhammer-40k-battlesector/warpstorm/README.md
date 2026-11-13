@@ -1,7 +1,7 @@
 # Warpstorm
 
 Stat editor and Army Painter for *Warhammer 40,000: Battlesector* (BepInEx 6,
-IL2CPP). Version 1.1.0. Single-player only.
+IL2CPP). Version 1.2.0. Single-player only.
 
 - **Stat editor.** Change any unit or weapon stat, including points costs. Edits
   apply in every game mode and can be toggled on and off in game.
@@ -96,7 +96,7 @@ You need the .NET SDK, plus the game's `BepInEx/interop` assemblies, which
 appear after BepInEx has run once.
 
 ```bash
-make build      # the release: dist/warpstorm-v1.1.0.zip + dist/scheme-<id>-v<ver>.zip, byte-identical per input
+make build      # the release: dist/warpstorm-v1.2.0.zip + dist/scheme-<id>-v<ver>.zip, byte-identical per input
 make selftest   # headless pipeline check (game detect, catalog, bundle read, config round-trip)
 python3 configurator/scripts/check-i18n.py   # all 10 string tables complete
 ```

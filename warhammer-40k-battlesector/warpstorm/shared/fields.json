@@ -60,6 +60,7 @@
     { "key": "Damage", "label": "Damage (max)", "type": "float", "group": "Core" },
     { "key": "ArmourPenetration", "label": "Armour Penetration", "type": "int", "group": "Core" },
     { "key": "Attacks", "label": "Attacks (shots)", "type": "int", "group": "Core" },
+    { "key": "ShotsPerSwitch", "label": "Shots per Switch", "type": "int", "group": "Core" },
     { "key": "APCost", "label": "AP Cost", "type": "int", "group": "Core" },
     { "key": "Accuracy", "label": "Accuracy %", "type": "float", "group": "Core" },
     { "key": "AccuracyFalloff", "label": "Accuracy Falloff", "type": "float", "group": "Core" },

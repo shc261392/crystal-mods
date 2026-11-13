@@ -83,6 +83,17 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
+# ─────────────────────────────────────────────────────────────────────────────
+# 1.8.0: this script still targets the 1.7.7 file layout (sharedassets1.assets)
+# and would corrupt a 1.8.0 install. Deployment is Vortex-only (see README).
+# ─────────────────────────────────────────────────────────────────────────────
+if [[ "${ALLOW_LEGACY_DEPLOY:-0}" != "1" ]]; then
+    printf "\n%s\n\n" "deploy.sh is disabled: it targets the 1.7.7 layout."
+    printf "%s\n" "Use Vortex (install BepInEx Framework, then this mod's zip)."
+    printf "%s\n\n" "To force the legacy 1.7.7 deploy anyway: ALLOW_LEGACY_DEPLOY=1 bash deploy.sh"
+    exit 1
+fi
+
 # Allow env-var override
 [[ -z "$GAME_DIR" && -n "${WH40K_BS_GAME_DIR:-}" ]] && GAME_DIR="$WH40K_BS_GAME_DIR"
 

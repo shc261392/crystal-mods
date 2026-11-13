@@ -2,11 +2,11 @@
   "id": "warpstorm",
   "name": "Warpstorm — Ultimate Battlesector Customization Tool",
   "game": "warhammer-40k-battlesector",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "crystal-mods",
   "category": "Gameplay",
   "type": "bepinex-plugin",
-  "gameVersion": "1.7.7",
+  "gameVersion": "1.8.0",
   "engine": "Unity 6000.0.62f1 (IL2CPP)",
   "description": "Unit & weapon stat editor and opt-in Army Painter for Warhammer 40,000: Battlesector. A BepInEx 6 (IL2CPP) plugin applies stat edits to the game's live data tables in every mode (hotkey on/off, live reload) and, only when you enable it and change a colour, repaints factions — 3D models and portraits — with custom colours or curated chapter schemes (10 Space Marine chapters with badges). The Warpstorm Configurator (Windows EXE) edits everything with a game-styled UI in 10 languages, previews and bakes paint ahead of time, and includes a Scheme Creator for your own packs.",
   "requires": [

@@ -22,7 +22,7 @@ namespace Warpstorm;
 public class Plugin : BasePlugin
 {
     public const string Guid = "com.crystalmods.warpstorm";
-    public const string Version = "1.1.0";
+    public const string Version = "1.2.0";
 
     internal static new ManualLogSource Log = null!;
     internal static ConfigFile Cfg = null!;

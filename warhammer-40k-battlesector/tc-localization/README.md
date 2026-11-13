@@ -1,27 +1,28 @@
 # WH40K Battlesector — Traditional Chinese Localization
 
 Community **Traditional Chinese (zh-TW)** localization for **Warhammer 40,000:
-Battlesector** (Black Lab Games / Slitherine), game version **1.7.7**.
+Battlesector** (Black Lab Games / Slitherine), game version **1.8.0**.
 
 The game ships with Simplified Chinese only. This mod converts it to Traditional
 Chinese — menus, factions, units, campaign, mission text, unit **descriptions**,
 and the launcher. In-game, select **Chinese (Simplified)**; it displays as
 Traditional.
 
-> Version **0.2.2**. See [CHANGELOG.md](CHANGELOG.md) for changes and
+> Version **0.3.0** (Battlesector 1.8.0). See [CHANGELOG.md](CHANGELOG.md) for changes and
 > [docs/DEVELOPER.md](docs/DEVELOPER.md) for the full technical record.
 
 ## How it works
 
-Warhammer 40,000: Battlesector renders unit/campaign **descriptions** (and several
-modals) through a font that has no Chinese glyphs and garbles Traditional-specific
-characters at runtime. Pure asset edits can't fix this. So the mod combines:
+Battlesector's fonts cover only the Simplified glyphs the vanilla text uses, and
+several of them are dynamic: Traditional-only characters come out missing or
+garbled. Pure asset edits can't fix this alone. So the mod combines:
 
-- **Asset localization** — SC→TC text in `resources.assets`, plus TextMesh Pro font
-  assets re-baked to full Traditional coverage (Noto Sans CJK TC).
+- **Asset localization** — SC→TC text in `resources.assets`, plus the 1.8.0
+  TextMesh Pro fonts (`sharedassets2.assets` and the startup/mapbuilder bundles)
+  re-baked to full Traditional coverage (Noto Sans CJK TC).
 - **`TCFix`** — a small open-source **BepInEx 6 (IL2CPP)** plugin that, at runtime,
   swaps any on-screen text whose font lacks the CJK glyphs to the full-Traditional
-  font. This is what fixes the descriptions and modals.
+  font. This is what fixes descriptions, modals and other partial fonts.
 
 Because of the runtime component, the mod requires the **BepInEx Framework**
 mod (a one-time shared dependency, installed separately — see its own mod page).
@@ -40,7 +41,7 @@ backed-up `*.assets` / bundle files.
 
 ## Requirements
 
-- Warhammer 40,000: Battlesector **1.7.7** (Steam / GOG). Windows primary;
+- Warhammer 40,000: Battlesector **1.8.0** (Steam / GOG). Windows primary;
   Linux/Proton less tested.
 - **BepInEx Framework** mod (separate file on the mod page).
 
@@ -55,8 +56,10 @@ inject → bake missing glyphs → package. To correct a translation term, edit
 [`translation/zh-TW/glossary.tsv`](translation/zh-TW/glossary.tsv) and re-run
 `make build`.
 
-Prerequisites: Python with `UnityPy opencc freetype numpy scipy Pillow`, .NET
-(for the `FontTool` helper), and a pristine `resources.assets` via `MOD_VANILLA_RES`.
+Prerequisites: Python with `UnityPy opencc freetype-py numpy scipy Pillow`, the
+.NET SDK (for `TCFix`), a pristine game install, and Noto Sans CJK TC at
+`MOD_TC_OTF` (see `build.sh`). Every step starts from the live vanilla files, so
+`make build` is reproducible.
 See [docs/DEVELOPER.md](docs/DEVELOPER.md) for the font pipeline, `TCFix` build, and
 environment variables.
 

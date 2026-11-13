@@ -24,7 +24,7 @@ pool.
 
 Card rarity is keyed to *level ÷ max-level*, so raising the cap alone would push
 top-tier cards further away; flattening the rarity curves compensates. Other
-knobs were tested in-game and **do nothing** in 1.7.7 — the XP multiplier, the
+knobs were tested in-game and **do nothing** in 1.7.7/1.8.0 — the XP multiplier, the
 upgrade-reroll cost, and all requisition/HQ-token/skip rewards are hardcoded or
 driven by a separate economy table — so this mod deliberately leaves them alone.
 
@@ -72,7 +72,7 @@ make export-cards FORCE=1    # overwrite both with vanilla defaults
 ### Vanilla reference (`cards-vanilla.json`)
 
 [`cards-vanilla.json`](cards-vanilla.json) is a **frozen, read-only** snapshot of
-all 55 cards' unmodified values (regenerated from a pristine 1.7.7 bundle by
+all 55 cards' unmodified values (regenerated from a pristine 1.8.0 bundle by
 `make export-cards`). It's **not applied** at build time — it's there so you can
 diff your edits against vanilla or reset a value. Every standalone build also
 checks the base bundle against it and **warns if the base isn't pristine vanilla**,
@@ -100,8 +100,8 @@ it's idempotent), and the per-tier amounts live in `TIER_COST_DELTA` in
 
 ## Builds
 
-- **`the-great-crusade-v0.1.1.zip`** (standalone) — built on the vanilla bundle.
-- **`the-great-crusade-tccompat-v0.1.1.zip`** — built on the Traditional Chinese
+- **`the-great-crusade-v0.1.2.zip`** (standalone) — built on the vanilla bundle.
+- **`the-great-crusade-tccompat-v0.1.2.zip`** — built on the Traditional Chinese
   Localization bundle, so it keeps TC fonts. See "Using with TC localization".
 
 ## Using with TC localization
@@ -139,7 +139,8 @@ Leveling/rarity parameters are code in [`build.py`](build.py) (`LEVEL_CAP`,
 selects the base. Every build applies both.
 
 ```bash
-make all PYTHON=/path/to/python-with-unitypy     # both ZIPs
+make build PYTHON=/path/to/python-with-unitypy   # both ZIPs (canonical release)
+make all                                         # alias of `make build`
 make standalone
 make tccompat
 make export-cards                                # regenerate cards.json defaults
@@ -148,7 +149,8 @@ make export-cards                                # regenerate cards.json default
 ### Build inputs
 
 - **Vanilla base** — a pristine `startup_assets_all.bundle`; point
-  `BS_VANILLA_BUNDLE` at it (default: the game folder's Vortex `.vortex_backup`).
+  `BS_VANILLA_BUNDLE` at it (default: the game folder's live
+  `startup_assets_all.bundle`, which is pristine right after a game update).
   Canonical clean source is **Steam → Verify integrity of game files**.
 - **TC-compat base** — the TC localization mod's dist bundle at
   `../tc-localization/translation/zh-TW/dist/startup_assets_all.bundle`.

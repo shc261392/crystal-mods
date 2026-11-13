@@ -68,7 +68,7 @@ in one Windows app, in ten languages, and nothing in the game files is changed.
 
 ## Requirements
 
-- Warhammer 40,000: Battlesector (Steam), version 1.7.7.
+- Warhammer 40,000: Battlesector (Steam), version 1.8.0.
 - **BepInEx Framework** (BepInEx 6, IL2CPP) mod.
 - Windows 10 or 11. The configurator needs no .NET install.
 
@@ -236,13 +236,13 @@ your settings, delete these:
 
 ---
 
-## Files and hashes (1.1.0)
+## Files and hashes (1.2.0)
 
 | File | SHA-256 |
 |---|---|
-| `warpstorm-v1.1.0.zip` | `b4578c21fa0cfa316bc49e28010676f59e655ec4add1c69b1b03b96817a34373` |
-| `Warpstorm.dll` | `293015c2093fd9d4bc1ca4bb4fc94cfc5a4dd8423e36fcf50c8222b5476dc10b` |
-| `Warpstorm.Configurator.exe` | `65bd6f0a712f27a979076e42731511fdf3eb849b265eead1a7fbcc83b8edc6d1` |
+| `warpstorm-v1.2.0.zip` | `e6ff862a7c19b1c547951e99caa861f2b6f6489545132f9f9b34e68850de12eb` |
+| `Warpstorm.dll` | `0639c0771f4df82ec5fd09317cab4e272a0c64a1ace853c6349a21229f0e1c69` |
+| `Warpstorm.Configurator.exe` | `debfa991c1605d0049d3a7a22762986ecc0efbc851f5fe68ca6910c0568adf97` |
 
 The chapter schemes are already inside the main zip. They are also available as
 separate `scheme-<chapter>-v<version>.zip` files for sharing.
@@ -260,5 +260,5 @@ stencil drawings.
 
 ## Changelog
 
-**1.1.0:** Army Painter is now opt-in and lazy; stat-only setups do no paint work
+**1.2.0:** Battlesector 1.8.0 support (Servants of Chaos, 202 units / 442 weapons, composite tables, `ShotsPerSwitch`). **1.1.0:** Army Painter is now opt-in and lazy; stat-only setups do no paint work
 in game. **1.0.0:** first public release. The full list is on the Changelog tab.

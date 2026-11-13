@@ -177,3 +177,49 @@ identified. Not shipped to users.
    glyphs, or they tofu — `make build` bakes them automatically.
 6. Use OpenCC **`s2tw`** (char-level), not `s2twp` (phrase) which mistranslates
    terms like `重装 → 重灌`.
+
+---
+
+## 8. Game 1.8.0 layout (current build)
+
+Game 1.8.0 restructured the assets; §1–§7 above describe the 1.7.7 mod and are
+kept as the research record. The current mod ships:
+
+| File | Purpose |
+|---|---|
+| `BepInEx/plugins/TCFix.dll` | Runtime font swap (1.3.0) |
+| `Warhammer 40K Battlesector_Data/resources.assets` | SC→TC text (7 TextAssets) |
+| `…_Data/sharedassets2.assets` | Fonts `368`–`372` (main UI CJK = **370**) |
+| `…_Data/StreamingAssets/startup_assets_all.bundle` | Boot fonts; `Generated` fallback baked |
+| `…_Data/StreamingAssets/mapbuilder-tools_assets_all.bundle` | Map editor CJK font |
+| `Launcher/Localization/stringsChinese.resx` | Launcher strings |
+
+Font facts (verified on 1.8.0):
+
+- `sharedassets0/1.assets` are now tiny and contain no fonts; do **not** ship
+  them. The `.resS` for `sharedassets1` no longer exists.
+- `sharedassets2` fonts: `368` FuturaBT (20), `369` Noto No-Underlay (2339),
+  **`370` Noto main (2516, two atlases)**, `371` Roboto (17), `372` futura (102).
+- `370` is dynamic (`m_AtlasPopulationMode = 1`) and its first atlas holds 2121
+  glyphs; atlas 1 holds 395. The missing Traditional glyphs are packed into a new
+  2048-pixel band added to atlas 1, then the font is forced Static (3754 glyphs,
+  atlas 2048×4096, `_TextureHeight` synced on the material).
+- The startup bundle's `Generated` font (pid `-6634277187469610597`, pt 17,
+  3295 glyphs, streamed atlas) is baked the same way (+941 glyphs, 2048×4096) and
+  installed as fallback of `2045931099826710272`, `6858071789788628647`,
+  `7178690147649604500`. On save, UnityPy inlines the former `.resS` atlas.
+- The mapbuilder bundle's `NotoSansCJKjp-Regular SDF`
+  (pid `-3782840183126329981`, atlas 1) is the same font as `370` and is baked
+  identically.
+- `TCFix` target: `NotoSansCJKjp-Regular SDF` with ≥3000 glyphs.
+
+Build entry points: `build.sh` → `build_text_180.py`, `bake_font_180.py`,
+`add_font_fallback.py`, `patch_launcher.py`. `bake_font_180.py` requires the
+il2cpp typetree generator (`GameAssembly.dll` + `global-metadata.dat`); the
+1.7.7 helper's `load_local_game()` path no longer resolves, so the script calls
+`load_il2cpp` explicitly.
+
+> Note: the old warning about `env.file.save()` corrupting Unity 6 `.assets` was
+> re-tested with UnityPy 1.25.4 — a no-op round-trip preserves every object's raw
+> bytes and the files reload correctly, so `build_text_180.py` uses it. The
+> modified font/atlas objects are also re-read and glyph-checked after saving.

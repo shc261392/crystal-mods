@@ -12,6 +12,7 @@
     { "key": "Tau", "factionId": 9, "name": "T'au", "primary": "B08A4A", "secondary": "D0C8B8" },
     { "key": "KhorneChaos", "factionId": 5, "name": "Daemons of Khorne", "primary": "6B0F0F", "secondary": "C9A227" },
     { "key": "BlackLegion", "factionId": 10, "name": "Black Legion", "primary": "22242A", "secondary": "B01212" },
-    { "key": "GenestealerCult", "factionId": 6, "name": "Genestealer Cult", "primary": "4A5A6B", "secondary": "8FB0C8" }
+    { "key": "GenestealerCult", "factionId": 6, "name": "Genestealer Cult", "primary": "4A5A6B", "secondary": "8FB0C8" },
+    { "key": "ChaosServants", "factionId": 12, "name": "Servants of Chaos", "primary": "6E2A22", "secondary": "B08A4A" }
   ]
 }

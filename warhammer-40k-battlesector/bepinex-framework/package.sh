@@ -20,8 +20,9 @@ PREBUILT="$DIST/wh40k-battlesector-bepinex6-il2cpp-be785.zip"
 OFFICIAL_URL="https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.785+6abdba4.zip"
 OFFICIAL_SHA256="2a7cbf74d26abe4765c3e662db1721b923bac39849ebfef2ca5dc7de7e2d9b7f"
 
-STAGE="$(mktemp -d)"
-trap 'rm -rf "$STAGE"' EXIT
+STAGE="$HERE/.agent_workspace/stage"
+rm -rf "$STAGE"
+mkdir -p "$STAGE"
 
 SRC_ZIP=""
 if [ -f "$PREBUILT" ]; then
@@ -48,3 +49,4 @@ rm -f "$OUT"
 ( cd "$STAGE/pkg" && zip -rqX "$OUT" . )
 echo "packaged -> $OUT ($(du -h "$OUT" | cut -f1))"
 unzip -l "$OUT" | awk '{print $4}' | grep -E '^[^/]+/?$|winhttp|doorstop' | head
+rm -rf "$STAGE"

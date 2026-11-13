@@ -35,11 +35,11 @@ namespace ArmyPainter
     // chosen colours while preserving luminance (baked shading) and leaving
     // near-neutral metal/grime pixels untouched. Results are cached per
     // (texture, target colours).
-    [BepInPlugin(GUID, "Army Painter", "1.1.0")]
+    [BepInPlugin(GUID, "Army Painter", "1.2.0")]
     public class Plugin : BasePlugin
     {
         public const string GUID = "com.crystalmods.armypainter";
-        public const string Version = "1.1.0";
+        public const string Version = "1.2.0";
         internal static new ManualLogSource Log;
         internal static ConfigFile Cfg;
 
@@ -1017,8 +1017,11 @@ namespace ArmyPainter
             {
                 if (RuntimeDataTables.HasInstance)
                 {
-                    var values = RuntimeDataTables.Instance.UnitDataTable?.values;
-                    for (int i = 0; values != null && i < values.Count; i++)
+                    // `.Values` merges the per-faction source tables (1.8.0+);
+                    // the raw `values` field is empty for composite tables.
+                    var table = RuntimeDataTables.Instance.UnitDataTable;
+                    var values = table?.Values;
+                    for (int i = 0; values != null && i < table.Count; i++)
                     {
                         var d = values[i];
                         if (d == null || d.Faction != faction) continue;
@@ -1451,6 +1454,7 @@ namespace ArmyPainter
             Add("KhorneChaos", "Daemons of Khorne", "6B0F0F", "C9A227");
             Add("BlackLegion", "Black Legion", "22242A", "B01212");
             Add("GenestealerCult", "Genestealer Cult", "4A5A6B", "8FB0C8");
+            Add("ChaosServants", "Servants of Chaos", "6E2A22", "B08A4A");
         }
 
         private static void Add(string key, string name, string priHex, string secHex)

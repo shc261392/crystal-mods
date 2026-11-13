@@ -8,26 +8,26 @@ using TMPro;
 
 namespace TCFix
 {
-    // BepInEx 6 (IL2CPP) runtime fix. Several fonts render Traditional-Chinese text
-    // incorrectly: the built-in futura variants "... - No Underlay" (static, 124
-    // Latin glyphs) and "... - with shadow" (dynamic, ~91 glyphs) have no real CJK
-    // coverage and produce garbled output via broken fallback / dynamic generation.
+    // BepInEx 6 (IL2CPP) runtime fix. 1.8.0 ships many TMP font variants; the
+    // Latin display fonts (futura/roboto) and the "No Underlay" CJK font only
+    // cover the Simplified glyphs the vanilla text uses. Traditional-only
+    // characters are either missing or garbled through dynamic generation.
     // This plugin finds on-screen TMP text that contains CJK but is drawn with a
-    // font that has only a small character table (i.e. not a full-CJK font) and
-    // swaps it to the full-Traditional font "futura medium condensed bt SDF" (785,
-    // ~3636 glyphs), which renders correct Traditional Chinese.
+    // font that has only a small character table (i.e. not a full-TC font) and
+    // swaps it to the patched full-Traditional "NotoSansCJKjp-Regular SDF"
+    // (3754 glyphs after the asset bake), which renders Traditional correctly.
     //
     // Note: HasCharacter() searches fallbacks and returns true even for these broken
     // fonts, so it CANNOT be used to detect the problem. The reliable signal is the
     // font's own characterTable size (full-CJK fonts have thousands of glyphs).
-    [BepInPlugin(GUID, "TC Font Fix", "1.2.0")]
+    [BepInPlugin(GUID, "TC Font Fix", "1.3.0")]
     public class Plugin : BasePlugin
     {
         public const string GUID = "com.crystalmods.tcfix";
         internal static new ManualLogSource Log;
 
         // Target (working, full-Traditional) font asset name.
-        internal const string GoodFontName = "futura medium condensed bt SDF";
+        internal const string GoodFontName = "NotoSansCJKjp-Regular SDF";
         // A font with at least this many glyphs is treated as a real CJK font and
         // left alone; anything smaller that draws CJK is swapped.
         internal const int FullCjkMinChars = 3000;
@@ -35,7 +35,7 @@ namespace TCFix
         public override void Load()
         {
             Log = base.Log;
-            Log.LogInfo("TCFix 1.2.0 loaded. Swapping CJK text on partial fonts (<" + FullCjkMinChars + " glyphs) -> '" + GoodFontName + "'.");
+            Log.LogInfo("TCFix 1.3.0 loaded. Swapping CJK text on partial fonts (<" + FullCjkMinChars + " glyphs) -> '" + GoodFontName + "'.");
             ClassInjector.RegisterTypeInIl2Cpp<FixBehaviour>();
             AddComponent<FixBehaviour>();
         }

@@ -6,7 +6,8 @@ description: Extract, edit, and package mods for Warhammer 40,000: Battlesector 
 # Modding Warhammer 40,000: Battlesector
 
 Everything needed to go from the installed game to a **Vortex-installable zip**.
-Verified on **Battlesector 1.7.7 / Unity 6000.0.62f1 (IL2CPP)**.
+Verified on **Battlesector 1.8.0 / Unity 6000.0.62f1 (IL2CPP)**. The 1.7.x
+table layout is also supported by the readers described below.
 
 ## 0. Decide the mod type first
 
@@ -23,9 +24,19 @@ when you must run code.
 
 ```
 <GameDir>/Warhammer 40K Battlesector_Data/StreamingAssets/startup_assets_all.bundle
-    ├─ MonoBehaviour "UnitDataTable"    (all unit stat sheets)
-    └─ MonoBehaviour "WeaponDataTable"  (all weapon stat sheets)
+    ├─ MonoBehaviour "UnitDataTable"    (1.7.x data; since 1.8.0 a composite with
+    │                                    empty keys/values and `sources` -> per-faction)
+    ├─ MonoBehaviour "UnitFactionDataTable_<Faction>"     (1.8.0 rows)
+    ├─ MonoBehaviour "WeaponDataTable"  (1.7.x data; composite since 1.8.0)
+    ├─ MonoBehaviour "WeaponFactionDataTable_<Faction>"   (1.8.0 rows)
+    └─ MonoBehaviour "SharedWeaponDataTable"              (1.8.0 shared weapons)
 ```
+
+**1.8.0 composite layout.** The parent tables keep `keys`/`values` empty and
+store a `sources` array. Read the per-faction tables for data edits, or call the
+parent's `Keys`/`Values` from a BepInEx plugin (they trigger the merge). New in
+1.8.0: `ShotsPerSwitch` on weapons (firing grouping/VFX, not damage) and
+`BallisticWeaponTargetType` value 3 (`SwitchingTargetPerMember`).
 
 - Game exe: `Warhammer 40K Battlesector.exe`; Steam app `1295500`, GOG `1248481392`.
 - Typical `GameDir`: Windows `D:\SteamLibrary\steamapps\common\Warhammer 40000 Battlesector`;
@@ -33,8 +44,10 @@ when you must run code.
 - A Vortex-deployed game keeps the pre-mod original as
   `startup_assets_all.bundle.vortex_backup` — **use that as the pristine base**
   (or Steam → *Verify integrity of game files*).
-- Table `path_id`s (v1.7.7, for reference only — **always find tables by `m_Name`**):
+- Table `path_id`s (1.7.7, for reference only — **always find tables by `m_Name`**):
   `UnitDataTable = -4059264497134316581`, `WeaponDataTable = 297598000547913130`.
+  In 1.8.0 find `UnitDataTable`/`WeaponDataTable` first, then walk their `sources`
+  (or match `*FactionDataTable_*` / `SharedWeaponDataTable`).
 
 ## 2. Toolchain
 
@@ -56,10 +69,13 @@ for o in env.objects:
         t = o.read_typetree()
     except Exception:
         continue                                 # non-script MonoBehaviours can't be parsed
-    if t.get("m_Name") == "UnitDataTable":
-        keys = [str(k) for k in t["keys"]]       # ids are STRINGS on 1.7.7
+    name = t.get("m_Name", "")
+    if name == "UnitDataTable" or name.startswith("UnitFactionDataTable_"):
+        keys = [str(k) for k in t["keys"]]       # ids are STRINGS
+        if "7003" not in keys:                   # composite parent / other faction
+            continue
         unit = t["values"][keys.index("7003")]   # Cadian Shock Troops
-        print(unit["MaxHealth"], unit["PointCost"])
+        print(name, unit["MaxHealth"], unit["PointCost"])
 ```
 
 Tables are parallel arrays: `values[i]` is the stat sheet for `keys[i]`. **Compare

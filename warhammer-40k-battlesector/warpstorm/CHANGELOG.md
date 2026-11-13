@@ -1,5 +1,23 @@
 # Changelog — Warpstorm
 
+## 1.2.0 — Battlesector 1.8.0 support
+
+Battlesector 1.8.0 moved unit and weapon data into per-faction tables merged by
+a composite table, added the Servants of Chaos faction (10 units) plus five more
+unit variants, and three weapons (Enraged Strikes, Plasma Rifle, Cyclic Ion
+Raker); it also added the `ShotsPerSwitch` weapon field and a third weapon
+targeting mode (`SwitchingTargetPerMember`).
+
+- The plugin reads the merged `CompositeDataTableBase` view, so stat edits apply
+  to every faction table in 1.8.0 (and still work on the 1.7.x plain tables).
+- The configurator follows the composite table's `sources` array when it reads
+  the game bundle; both layouts are supported.
+- New fields: `ShotsPerSwitch` is editable; the third targeting mode is shown.
+- Catalog regenerated from the 1.8.0 bundle: 202 units, 442 weapons, 12
+  factions (Servants of Chaos included).
+- Army Painter now includes the Servants of Chaos faction preset.
+- Supports game version 1.8.0.
+
 ## 1.1.0 — Army Painter is opt-in
 
 - **Army Painter now does no paint work in game by default.** It is opt-in:

@@ -6,8 +6,9 @@ built entirely from the game files you already own.
 
 This guide was originally written as the companion to the **Superhuman Cadian**
 demo mod (retired; its screenshots and numbers are kept here as worked examples).
-The mechanics below were verified against **Battlesector 1.7.7 / Unity 6000.0.62f1
-(IL2CPP)** on a real installation.
+The mechanics below were verified against **Battlesector 1.8.0 / Unity 6000.0.62f1
+(IL2CPP)** on a real installation. Since 1.8.0 the unit/weapon tables are
+composite: see the note under the read example below.
 
 > **Single-player only.** Data edits replace core game files. Do not use mods in
 > multiplayer — it can be treated as cheating and may result in bans.
@@ -117,13 +118,29 @@ for o in env.objects:
         continue
     t = o.read_typetree()                      # may raise on non-script MBs
     if t.get("m_Name") == "UnitDataTable":
+        # 1.7.x: keys/values are the real arrays.
+        # 1.8.0: UnitDataTable is composite; these arrays are EMPTY and the data
+        #         lives in the per-faction source tables (see the note below).
         keys, values = t["keys"], t["values"]
+        if not keys:
+            continue
         i = [str(k) for k in keys].index("7003")   # Cadian Shock Troops
         print(values[i]["MaxHealth"], values[i]["PointCost"])
 ```
 
-`keys` are **strings** on 1.7.7 (older dumps sometimes showed ints) — compare with
+`keys` are **strings** (older dumps sometimes showed ints) — compare with
 `str(id)` and you are safe either way (a `row_index()` helper does exactly that).
+
+### 1.8.0 composite tables
+
+`UnitDataTable` and `WeaponDataTable` are now `CompositeDataTableBase<T,U>` with a
+`sources` array. The rows live in 12 `UnitFactionDataTable_*` / 12
+`WeaponFactionDataTable_*` tables plus `SharedWeaponDataTable`; `Keys`/`Values`
+merge them at runtime (the plugin-side view), while the serialized `keys`/`values`
+of the parent table are empty. For a bundle data edit, find the row in the
+per-faction table (same `keys`/`values` layout) and patch it there. The 1.8.0
+weapons add `ShotsPerSwitch` (firing grouping/VFX, **not** a damage multiplier)
+and a third `BallisticWeaponTargetType` (`SwitchingTargetPerMember = 3`).
 
 To find an id, use the stats site (`battlesector-tools/`) or grep the dump:
 Cadian Shock Troops `7003`, Cadian Sergeant `7000`, Cadian Castellan `7004`.

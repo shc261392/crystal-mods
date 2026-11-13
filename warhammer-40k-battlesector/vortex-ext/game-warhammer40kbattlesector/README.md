@@ -8,7 +8,7 @@ modding support for **Warhammer 40,000: Battlesector**.
 - Auto-detects Steam (AppID `1295500`) and GOG installs
 - Custom mod type + installer for asset-replacement mods (drops files into
   `Warhammer 40K Battlesector_Data/`)
-- Overwritten originals (e.g. `sharedassets1.assets`) are backed up and
+- Overwritten originals (e.g. `sharedassets2.assets`) are backed up and
   restored automatically by Vortex (`*.vortex_backup`); *Purge Mods* reverts
   the game to vanilla — no manual restore needed
 

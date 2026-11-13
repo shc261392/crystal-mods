@@ -40,7 +40,9 @@ const GOG_APP_ID = '1248481392';
 const GAME_NAME = 'Warhammer 40,000: Battlesector';
 const GAME_EXE = 'Warhammer 40K Battlesector.exe';
 const DATA_DIR = 'Warhammer 40K Battlesector_Data';
-const SHARED_ASSETS = 'sharedassets1.assets';
+// Stable data file present in every build (sharedassets1.assets became a tiny
+// stub in 1.8.0, so it is no longer a reliable detection marker).
+const SHARED_ASSETS = 'resources.assets';
 
 /**
  * Warpstorm ships its configurator inside the mod folder. Registered as a

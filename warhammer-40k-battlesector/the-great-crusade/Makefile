@@ -22,7 +22,11 @@ PYTHON ?= ../../.agent_workspace/battlesector-data/venv/bin/python
 BUILD  := $(PYTHON) build.py
 FORCE  ?=
 
-.PHONY: all standalone tccompat export-cards cost-policy clean
+.PHONY: build all standalone tccompat export-cards cost-policy clean
+
+# Canonical release command (repository rule 15): one invocation builds every
+# ZIP of the release. `all` is kept as an alias for older docs.
+build: all
 
 all: standalone tccompat
 

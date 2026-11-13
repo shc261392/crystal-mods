@@ -9,7 +9,7 @@ namespace Warpstorm;
 /// <code>
 /// {
 ///   "schemaVersion": 1,
-///   "gameVersion": "1.7.7",
+///   "gameVersion": "1.8.0",
 ///   "enabled": true,
 ///   "units":   { "7003": { "MaxHealth": 60, "PointCost": 1 } },
 ///   "weapons": { "7010": { "Attacks": 50, "Damage": 8.0, "ArmourPenetration": 2 } }

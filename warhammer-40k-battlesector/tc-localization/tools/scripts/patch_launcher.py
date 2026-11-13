@@ -44,6 +44,10 @@ DIST_DIR        = os.environ.get("MOD_DIST_DIR", os.path.join(REPO_ROOT, "transl
 
 LAUNCHER_REL = os.path.join("Launcher", "Localization", "stringsChinese.resx")
 SOURCE_FILE  = os.path.join(MOD_BACKUP_DIR, LAUNCHER_REL)
+# The backup directory only exists while a mod is deployed. On a freshly updated
+# game the live file is pristine, so fall back to it.
+if not os.path.exists(SOURCE_FILE):
+    SOURCE_FILE = os.path.join(GAME_DIR, LAUNCHER_REL)
 DIST_FILE    = os.path.join(DIST_DIR, "stringsChinese.resx")
 
 # ── OpenCC converter ───────────────────────────────────────────────────────────

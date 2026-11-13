@@ -6,6 +6,14 @@
 # =============================================================================
 set -euo pipefail
 
+# 1.8.0: this script still targets the 1.7.7 file layout (sharedassets1.assets).
+# Vortex restores the originals on purge, so scripted uninstall is disabled.
+if [[ "${ALLOW_LEGACY_DEPLOY:-0}" != "1" ]]; then
+    printf "\n%s\n\n" "uninstall.sh is disabled: it targets the 1.7.7 layout."
+    printf "%s\n\n" "Purge/remove the mod in Vortex; the originals restore automatically."
+    exit 1
+fi
+
 RED='\033[0;31m'; GREEN='\033[0;32m'; YELLOW='\033[1;33m'
 CYAN='\033[0;36m'; BOLD='\033[1m'; RESET='\033[0m'
 

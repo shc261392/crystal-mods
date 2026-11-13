@@ -31,7 +31,7 @@ Purely a data edit to the game's asset bundle — no code injection.
 
 ## Requirements
 
-- Warhammer 40,000: Battlesector **1.7.7**.
+- Warhammer 40,000: Battlesector **1.8.0**.
 - No other mod that replaces `startup_assets_all.bundle` (except the TC setup above).
 
 ## Install

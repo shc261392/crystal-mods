@@ -45,11 +45,17 @@ internal static class TableApplier
         where TData : class
     {
         if (table == null) return 0;
-        var keys = table.keys;
-        var values = table.values;
+        // 1.8.0 moved the data into per-faction source tables merged by
+        // CompositeDataTableBase. The raw `keys`/`values` fields are empty now;
+        // the `Keys`/`Values` properties trigger the lazy merge and return the
+        // full set in both 1.7.7 (plain table) and 1.8.0 (composite).
+        var keys = table.Keys;
+        var values = table.Values;
         if (keys == null || values == null) return 0;
 
-        int count = Math.Min(keys.Count, values.Count);
+        // DataTableBase exposes Count directly; the IL2CPP IReadOnlyList returned
+        // by Keys/Values does not surface a usable Count property.
+        int count = table.Count;
         for (int i = 0; i < count; i++)
         {
             string id;

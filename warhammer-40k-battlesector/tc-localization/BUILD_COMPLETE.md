@@ -1,3 +1,6 @@
+> **Historical (mod 0.2.x, game 1.7.7).** For the current 1.8.0 build see
+> [CHANGELOG.md](CHANGELOG.md) §0.3.0 and [build.sh](build.sh).
+
 # Battlesector TC Mod — Build Complete ✅
 
 **Build Date:** 2026-07-04  

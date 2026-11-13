@@ -31,7 +31,7 @@ namespace RedLaserLasgun
     // hides the flying bolt (HideBolt) each frame while it is active.
     //
     // Tunable live via BepInEx/config/com.crystalmods.redlaserlasgun.cfg.
-    [BepInPlugin(GUID, "Red Laser Lasgun", "1.1.0")]
+    [BepInPlugin(GUID, "Red Laser Lasgun", "1.2.0")]
     public class Plugin : BasePlugin
     {
         public const string GUID = "com.crystalmods.redlaserlasgun";

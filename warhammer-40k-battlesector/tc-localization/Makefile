@@ -33,7 +33,7 @@ setup: ## Install Python dependencies (UnityPy required)
 	@echo "✓ Python environment ready."
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Build (1.7.7 pipeline: text + glossary -> assets -> ZIP)
+# Build (1.8.0 pipeline: text + font bake -> assets -> ZIP)
 # ─────────────────────────────────────────────────────────────────────────────
 
 .PHONY: build

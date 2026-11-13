@@ -16,7 +16,7 @@ Card effect values are read from the hand-editable ``cards.json`` (regenerate
 defaults with ``make export-cards``): every build overrides each upgrade card's
 stat modifiers from that file. See cards.py.
 
-Deliberately NOT touched (proven hardcoded / economy-table-driven in 1.7.7, i.e.
+Deliberately NOT touched (proven hardcoded / economy-table-driven in 1.7.7/1.8.0, i.e.
 editing them does nothing): xpMultiplier, UpgradeRerollCost, clusterRewardValue,
 BaseSkipReward, and the WarzoneMapConfig starting requisition / HQ-token values.
 
@@ -36,7 +36,7 @@ from pathlib import Path
 import cards as cards_mod
 import UnityPy
 
-VERSION = "0.1.1"
+VERSION = "0.1.2"
 
 # ----------------------------------------------------------------------------
 # Tuned config (build-variant-as-code).
@@ -73,21 +73,14 @@ VANILLA_BASE = Path(
     os.environ.get(
         "BS_VANILLA_BUNDLE",
         f"{_GAME_DIR}/Warhammer 40K Battlesector_Data/StreamingAssets/"
-        "startup_assets_all.bundle.vortex_backup",
+        "startup_assets_all.bundle",
     )
 )
-# Independently-stored pristine 1.7.7 bundle; the authoritative source for the
-# frozen cards-vanilla.json reference. Verified byte-for-byte identical to the
-# Vortex .vortex_backup across all 55 cards. Falls back to VANILLA_BASE.
-VANILLA_REF_BUNDLE = Path(
-    os.environ.get(
-        "BS_VANILLA_REF",
-        str(
-            REPO / ".agent_workspace/battlesector-data/emperors-lasgun/vanilla/"
-            "startup_assets_all.bundle"
-        ),
-    )
-)
+# Authoritative source for the frozen cards-vanilla.json reference. Defaults to
+# VANILLA_BASE (a pristine 1.8.0 bundle); override with BS_VANILLA_REF to point at
+# a separately stored pristine copy. Verified identical to 1.7.7 across all 55
+# cards, so the frozen reference stays valid for 1.8.0.
+VANILLA_REF_BUNDLE = Path(os.environ.get("BS_VANILLA_REF", str(VANILLA_BASE)))
 TC_BASE = REPO / (
     "warhammer-40k-battlesector/tc-localization/translation/zh-TW/dist/startup_assets_all.bundle"
 )
@@ -263,7 +256,7 @@ def modinfo(base_kind: str) -> dict:
         "author": "crystal-mods",
         "category": "Gameplay",
         "platforms": ["windows", "linux-proton"],
-        "supportedVersions": ["1.7.7"],
+        "supportedVersions": ["1.8.0"],
         "engine": "Unity 6000.0.62f1 (IL2CPP)",
         "description": (
             f"Crusade / Planetary Supremacy tuning: flat {STEP} XP per level up to "
@@ -301,7 +294,7 @@ def build(base_kind: str) -> Path:
             f"base bundle not found: {base}\n"
             "For 'standalone', point BS_VANILLA_BUNDLE at a pristine "
             "startup_assets_all.bundle (Steam -> Verify integrity of game files, or "
-            "a Vortex .vortex_backup). For 'tccompat', build the TC localization "
+            "the live bundle right after a game update). For 'tccompat', build the TC localization "
             "mod first so its dist bundle exists."
         )
 
@@ -356,7 +349,11 @@ def build(base_kind: str) -> Path:
     with zipfile.ZipFile(out_zip, "w", zipfile.ZIP_DEFLATED) as z:
         for p in sorted(stage.rglob("*")):
             if p.is_file():
-                z.write(p, p.relative_to(stage).as_posix())
+                # Deterministic archive: fixed timestamp + mode, sorted entries.
+                info = zipfile.ZipInfo(p.relative_to(stage).as_posix(), (1980, 1, 1, 0, 0, 0))
+                info.compress_type = zipfile.ZIP_DEFLATED
+                info.external_attr = 0o644 << 16
+                z.writestr(info, p.read_bytes())
     print(f"  packaged -> {out_zip.name} ({out_zip.stat().st_size / 1048576:.1f} MB)")
     return out_zip
 

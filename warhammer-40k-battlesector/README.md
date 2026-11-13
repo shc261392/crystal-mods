@@ -2,6 +2,9 @@
 
 Community mods for **Warhammer 40,000: Battlesector** (Black Lab Games / Slitherine).
 
+> **Game update 1.8.0:** root causes and per-mod fixes are documented in
+> [docs/GAME_UPDATE_1.8.0.md](docs/GAME_UPDATE_1.8.0.md).
+
 ## Available Mods
 
 ### [BepInEx Framework](bepinex-framework/)
@@ -11,15 +14,15 @@ Laser Lasgun). Install once; adds no game-file changes. Ships the official
 BepInEx Bleeding-Edge build #785 (SHA-256 documented on the mod page).
 
 - **Installation:** Vortex Mod Manager (install first, launch game once)
-- **Status:** Packaged v1.0.0
+- **Status:** Packaged v1.0.2 (Battlesector 1.8.0)
 - **Repository:** [bepinex-framework/](bepinex-framework/)
 
 ### [TC Localization](tc-localization/)
-Traditional Chinese (zh-TW) localization mod. Directly patches the game's asset bundle to replace Simplified Chinese with Traditional Chinese. **In-game:** Select **Chinese (Simplified)** locale. **Requires the BepInEx Framework mod** (for its runtime font fix).
+Traditional Chinese (zh-TW) localization mod. Directly patches the game's asset bundle to replace Simplified Chinese with Traditional Chinese. **In-game:** Select **Chinese (Simplified)** locale. **Requires the BepInEx Framework mod** (for its runtime font fix). Updated for Battlesector 1.8.0.
 
-- **Installation:** Vortex Mod Manager (recommended) or script-based deploy
+- **Installation:** Vortex Mod Manager (scripts in the mod target the old 1.7.7 layout and are disabled)
 - **Requires:** BepInEx Framework
-- **Status:** Ready for testing
+- **Status:** Built v0.3.0 for Battlesector 1.8.0
 - **Repository:** [tc-localization/](tc-localization/)
 
 ### [The Great Crusade](the-great-crusade/)
@@ -31,7 +34,7 @@ point-costs. Data-only asset edit; levers were validated in-game.
 
 - **Installation:** Vortex Mod Manager (recommended) or script-based deploy
 - **Builds:** standalone, plus a TC-localization-compatible build (optional file)
-- **Status:** Built; core levers validated in-game
+- **Status:** Built v0.1.2 for Battlesector 1.8.0; core levers validated in-game
 - **Repository:** [the-great-crusade/](the-great-crusade/)
 
 ### [Red Laser Lasgun](red-laser-lasgun/)
@@ -41,7 +44,7 @@ BepInEx plugin that renders the Astra Militarum lasgun as a glowing red laser be
 
 - **Installation:** Vortex Mod Manager (install BepInEx Framework first)
 - **Requires:** BepInEx Framework
-- **Status:** Built v1.1.1 (packaging fix); plugin validated in-game at v1.1.0
+- **Status:** Built v1.2.0 for Battlesector 1.8.0; plugin validated in-game at v1.1.0
 - **Repository:** [red-laser-lasgun/](red-laser-lasgun/)
 
 ### [Data Edit Tutorial](data_edit_tutorial.md)
@@ -55,7 +58,7 @@ Pure **data edit** (UnityPy — no BepInEx).
 
 - **Audience:** mod developers
 - **Requires:** Python 3.11+ with UnityPy, plus your own game files
-- **Status:** Verified against Battlesector 1.7.7 / Unity 6000.0.62f1
+- **Status:** Verified against Battlesector 1.8.0 / Unity 6000.0.62f1
 
 ### [Warpstorm](warpstorm/)
 **Ultimate Battlesector Customization Tool** — a runtime unit & weapon stat
@@ -70,7 +73,7 @@ plugin — there is no separate Army Painter mod.
 
 - **Installation:** Vortex (plugin) + run the configurator EXE
 - **Requires:** BepInEx Framework
-- **Status:** Built v0.1.0 (plugin + configurator compile, pipeline verified); in-game validation pending
+- **Status:** Built v1.2.0 for Battlesector 1.8.0; in-game validation pending
 - **Repository:** [warpstorm/](warpstorm/)
 
 ## Vortex Extension

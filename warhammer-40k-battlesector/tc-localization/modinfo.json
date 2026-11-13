@@ -2,13 +2,13 @@
   "id": "tc-localization",
   "name": "Traditional Chinese Localization",
   "game": "warhammer-40k-battlesector",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "author": "Community",
   "category": "Localization",
   "platforms": ["windows", "linux-proton"],
-  "supportedVersions": ["1.7.7"],
+  "supportedVersions": ["1.8.0"],
   "requires": [
-    "bepinex-framework >= 1.0.0 (the BepInEx Framework mod — provides the BepInEx 6 IL2CPP runtime for the TCFix plugin)"
+    "bepinex-framework >= 1.0.2 (the BepInEx Framework mod — provides the BepInEx 6 IL2CPP runtime for the TCFix plugin)"
   ],
   "vortex": {
     "extensionId": "game-warhammer40kbattlesector",

@@ -4,6 +4,30 @@ All notable changes to this mod. Versions follow the `modinfo.json` `version`
 field. The mod ships as a Vortex ZIP; a separate **Core (BepInEx6)** framework ZIP
 is a one-time dependency (see the mod page).
 
+## 0.3.0
+
+**Battlesector 1.8.0 support.** The game moved its TMP fonts out of
+`sharedassets0/1.assets` into `sharedassets2.assets`, rebuilt them as dynamic
+atlases, and replaced the description font with a CJK Noto variant.
+
+- **New asset layout.** The mod now patches `sharedassets2.assets` (fonts
+  `368`–`372`) instead of `sharedassets0/1.assets`; the two old files are no
+  longer touched.
+- **Full Traditional coverage for the main UI font.** `NotoSansCJKjp-Regular SDF`
+  (pid 370 in the new file, 2516 static glyphs) is baked to 3754 glyphs from Noto
+  Sans CJK TC, forced Static, and its atlas grows to 2048×4096 (material
+  `_TextureHeight` kept in sync).
+- **Boot/editor fonts.** The startup bundle's `Generated` fallback font is baked
+  and every boot font is pointed at it; the mapbuilder bundle's CJK font is baked
+  the same way as the main UI font.
+- **`TCFix` 1.3.0** now targets `NotoSansCJKjp-Regular SDF` (the full Traditional
+  font) instead of the 1.7.7 futura font, and still fixes CJK text drawn with
+  Latin/partial fonts.
+- **Text rebuild** from the 1.8.0 Chinese repositories (7 repositories; all new
+  strings included). Launcher strings regenerated (unchanged content, same 23
+  conversions).
+- Requires **BepInEx Framework 1.0.2** and game version **1.8.0**.
+
 ## 0.2.3
 
 Packaging fix: the release ZIP no longer ships `modinfo.json` / `README.md`.
