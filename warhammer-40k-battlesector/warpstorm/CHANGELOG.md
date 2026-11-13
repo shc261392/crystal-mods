@@ -16,9 +16,10 @@ The fonts are now committed, the configurator build fails if any of the six is
 missing, and the version is bumped so Vortex installs the fixed build. Plugin
 behaviour is unchanged.
 
-The configurator's embedded browser catalog is still the `battlesector-tools`
-dataset (187 units / 439 weapons); the plugin and the configurator's "Original"
-values read the live 1.8.0 tables (205 units / 446 weapons).
+The configurator's embedded browser catalog is refreshed to 202 units / 442
+weapons / 12 factions (Servants of Chaos included); the plugin and the
+configurator's "Original" values read the live 1.8.0 tables (205 units / 446
+weapons).
 
 ## 1.2.0 — Battlesector 1.8.0 support
 
