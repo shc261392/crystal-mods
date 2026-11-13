@@ -38,12 +38,24 @@ parent's `Keys`/`Values` from a BepInEx plugin (they trigger the merge). New in
 1.8.0: `ShotsPerSwitch` on weapons (firing grouping/VFX, not damage) and
 `BallisticWeaponTargetType` value 3 (`SwitchingTargetPerMember`).
 
+**1.8.0 content/font landmines.** 205 unit rows (10 Servants of Chaos units plus
+5 variants), 446 weapon rows, 12 factions; new weapons Enraged Strikes, Plasma
+Rifle, Cyclic Ion Raker. Fonts moved to `sharedassets2.assets` (pid 370
+`NotoSansCJKjp-Regular SDF`, 369 `... - No Underlay`, 368
+`FuturaBT-CondMedium SDF`, 371 Roboto, 372 futura). A TC bake grows the last
+atlas to 2048×4096 and must retarget any runtime font swap to pid 370 / name
+`NotoSansCJKjp-Regular SDF`.
+
 - Game exe: `Warhammer 40K Battlesector.exe`; Steam app `1295500`, GOG `1248481392`.
 - Typical `GameDir`: Windows `D:\SteamLibrary\steamapps\common\Warhammer 40000 Battlesector`;
   WSL `/mnt/d/SteamLibrary/steamapps/common/Warhammer 40000 Battlesector`.
-- A Vortex-deployed game keeps the pre-mod original as
-  `startup_assets_all.bundle.vortex_backup` — **use that as the pristine base**
-  (or Steam → *Verify integrity of game files*).
+- **Never assume `.vortex_backup` is pristine or current.** Vortex may keep a
+  backup from an older game build (during the 1.8.0 rollout the backup was still
+  1.7.7, dated July 22). Use Steam → *Verify integrity of game files*, or
+  snapshot the live file immediately after a game update, before deploying.
+- A missing `startup_assets_all.bundle` surfaces as Addressables
+  `RemoteProviderException: Invalid path in AssetBundleProvider` and the game
+  freezes at Bootstrap. Check that the live file exists, not only the backup.
 - Table `path_id`s (1.7.7, for reference only — **always find tables by `m_Name`**):
   `UnitDataTable = -4059264497134316581`, `WeaponDataTable = 297598000547913130`.
   In 1.8.0 find `UnitDataTable`/`WeaponDataTable` first, then walk their `sources`
@@ -115,6 +127,7 @@ data = env.file.save(packer="original")          # "original" keeps the bundle f
 | `Damage` | **max** damage (min = 75 % of it) |
 | `ArmourPenetration` | flat armour ignored; drives crit/graze |
 | `Attacks` | shots per attack (the in-game "attacks") |
+| `ShotsPerSwitch` | **1.8.0:** shots per target before switching (targeting/VFX; total shots still `Attacks`) |
 | `APCost` | AP to fire |
 | `Accuracy`, `AccuracyFalloff` | hit chance |
 | `MinimumRange`, `MaximumRange`, `OptimalRange` | range band |
@@ -123,7 +136,9 @@ data = env.file.save(packer="original")          # "original" keeps the bundle f
 | `Pistol` | melee-usable ranged |
 | `NameID`, `CustomIcon`, `Keywords`, `Abilities`, `ProjectileEffect` | **references — never scale** |
 
-There is **no `ShotsPerAttack`** field in the asset — use `Attacks`.
+There is **no `ShotsPerAttack`** field in the asset — `Attacks` is the total.
+1.8.0 adds `ShotsPerSwitch` and `BallisticWeaponTargetType` 3
+(`SwitchingTargetPerMember`).
 
 ## 6. Editing rules (don't corrupt the unit)
 
@@ -167,6 +182,12 @@ with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
 
 - Output to the mod's `dist/` folder (never `/tmp`). Zips and `*.bundle` are
   gitignored — commit the **source** (`build.py`, docs, scripts), not the zip.
+- **Ignored binaries.** `*.bundle`, `*.ttf` and `*.otf` are gitignored. If a mod
+  must embed a small licensed asset (e.g. the Warpstorm configurator's SIL-OFL
+  Barlow fonts), add a narrow `!` exception, commit the files, and make the
+  build fail when they are missing. A clean worktree does not inherit ignored
+  files; a silent empty glob produced a configurator EXE that crashed at
+  startup.
 - Provide a `Makefile` with one canonical `make build` and both `deploy.sh` +
   `deploy.ps1` (and matching `uninstall`) — repo rule 8.
 
@@ -176,6 +197,18 @@ Reference implementation: `warhammer-40k-battlesector/data_edit_tutorial.md`
 ### Verify before shipping
 Re-open the produced bundle and assert the new values, **and** confirm a second
 `make build` is byte-identical (sha256). Never claim "done" without both.
+
+### Troubleshooting a broken install
+
+- **Game freezes at Bootstrap / `Invalid path in AssetBundleProvider`:** the
+  live `startup_assets_all.bundle` is missing or the Vortex deployment is
+  incomplete. Purge mods, verify the game files, then redeploy. Do not restore a
+  stale `.vortex_backup` from an older build.
+- **Plugin not loading:** check `BepInEx/LogOutput.log` for the
+  `[Info : YourMod]` line; no line means the DLL was not deployed or BepInEx did
+  not run.
+- **Configurator/desktop tool exits immediately:** read its own log next to the
+  EXE; Avalonia font/asset failures point at a missing embedded resource.
 
 ## 9. BepInEx plugin path (behaviour mods)
 
@@ -189,6 +222,25 @@ Re-open the produced bundle and assert the new values, **and** confirm a second
    against the game's `BepInEx/interop/` assemblies.
 3. Ship `BepInEx/plugins/YourMod.dll` — the Vortex extension treats `BepInEx/` as
    a game-root dir and deploys it (Layout A). Reference: `red-laser-lasgun/`.
+
+### Applying data edits at runtime (no bundle replacement)
+
+The same stats can be edited from a plugin; Warpstorm is the reference. Known
+managed hooks in 1.8.0 (`BepInEx/interop/Assembly-CSharp.dll`):
+
+| Data | Hook |
+|---|---|
+| Units / weapons | `RuntimeDataTables.Instance.UnitDataTable` / `.WeaponDataTable`; use `.Keys` / `.Values` / `.Count` — they merge the composite source tables |
+| Upgrade cards | `.WarzoneUpgradesDataTable.AllUpgrades` / `.AllClusterModifiers`; each `WarzoneUpgradeCard.statsModifiers` |
+| XP / card drops | `.WarzoneConfig.RewardConfig` (`expNeededToLevelUp`, `CardDropProbabilities`, `rewardModifiers`) |
+| Localised text | `TextRepositoryManager.Instance.GetRepository(type)`, then its `strings` list or a `GetItem` Harmony hook |
+| Fonts | swap `TMP_FontAsset` references at runtime; TCFix is the reference |
+
+Trade-offs: a runtime plugin adds no file conflicts and survives asset
+re-serialisation, but requires BepInEx, must run after the tables load, and can
+break when IL2CPP type/field names change. A bundle edit needs no BepInEx and
+applies before any code, but wins the whole file and must be rebuilt on every
+game update.
 
 Plugin mods add files → **no conflicts**. Data edits overwrite files → they
 conflict with any other mod touching the same bundle.
