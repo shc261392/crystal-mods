@@ -231,6 +231,7 @@ managed hooks in 1.8.0 (`BepInEx/interop/Assembly-CSharp.dll`):
 | Data | Hook |
 |---|---|
 | Units / weapons | `RuntimeDataTables.Instance.UnitDataTable` / `.WeaponDataTable`; use `.Keys` / `.Values` / `.Count` — they merge the composite source tables |
+| Unit abilities | `UnitData.AbilityList` is a `List<UnitAbilitySlot>`; append `new UnitAbilitySlot { Ability = (AbilityType)20024, StartsLocked = false }` for Self Repair. Clone the list first so it can be reverted |
 | Upgrade cards | `.WarzoneUpgradesDataTable.AllUpgrades` / `.AllClusterModifiers`; each `WarzoneUpgradeCard.statsModifiers` |
 | XP / card drops | `.WarzoneConfig.RewardConfig` (`expNeededToLevelUp`, `CardDropProbabilities`, `rewardModifiers`) |
 | Localised text | `TextRepositoryManager.Instance.GetRepository(type)`, then its `strings` list or a `GetItem` Harmony hook |

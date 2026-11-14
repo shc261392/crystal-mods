@@ -26,9 +26,9 @@
 
     <!-- Windows icon + version resource (Explorer "Details", Task Manager name). -->
     <ApplicationIcon>branding/warpstorm.ico</ApplicationIcon>
-    <Version>1.2.1</Version>
-    <FileVersion>1.2.1.0</FileVersion>
-    <InformationalVersion>1.2.1</InformationalVersion>
+    <Version>1.2.2</Version>
+    <FileVersion>1.2.2.0</FileVersion>
+    <InformationalVersion>1.2.2</InformationalVersion>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     <Product>Warpstorm</Product>
     <AssemblyTitle>Warpstorm Configurator</AssemblyTitle>

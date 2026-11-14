@@ -1,7 +1,7 @@
 # Warpstorm
 
 Stat editor and Army Painter for *Warhammer 40,000: Battlesector* (BepInEx 6,
-IL2CPP). Version 1.2.1. Single-player only.
+IL2CPP). Version 1.2.2. Single-player only.
 
 - **Stat editor.** Change any unit or weapon stat, including points costs. Edits
   apply in every game mode and can be toggled on and off in game.
@@ -57,6 +57,24 @@ scanning, texture work or rendering at all.
 **In game:** **F10** toggles stat edits, **F9** reloads, **F1** opens the Army
 Painter window. You can change the keys under Settings.
 
+### Adding abilities (MVP)
+
+The configurator does not expose abilities yet. Hand-edit
+`BepInEx/config/warpstorm/config.json` and add an `AddAbilities` array to a unit.
+Example — **Self Repair (20024)** on a Traitor Chimera (**12008**):
+
+```json
+"units": {
+  "12008": { "AddAbilities": [20024] }
+}
+```
+
+The plugin clones the unit's ability list at load, appends valid abilities, and
+restores the original list when Warpstorm is toggled off (F10). Restart a battle
+for units that already exist. `20024` is the shared **Self Repair** passive
+(+30 HP per turn), already used by both Rhino variants. The configurator
+preserves the field when it saves, but has no dedicated Abilities UI yet.
+
 The full Army Painter walkthrough is in
 [docs/army-painter-guide.md](docs/army-painter-guide.md). The scheme pack format
 is described in [schemes/README.md](schemes/README.md).
@@ -96,7 +114,7 @@ You need the .NET SDK, plus the game's `BepInEx/interop` assemblies, which
 appear after BepInEx has run once.
 
 ```bash
-make build      # the release: dist/warpstorm-v1.2.1.zip + dist/scheme-<id>-v<ver>.zip, byte-identical per input
+make build      # the release: dist/warpstorm-v1.2.2.zip + dist/scheme-<id>-v<ver>.zip, byte-identical per input
 make selftest   # headless pipeline check (game detect, catalog, bundle read, config round-trip)
 python3 configurator/scripts/check-i18n.py   # all 10 string tables complete
 ```

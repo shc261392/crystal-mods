@@ -1,5 +1,20 @@
 # Changelog — Warpstorm
 
+## 1.2.2 — Add abilities (MVP)
+
+Units can now gain abilities at runtime. Add an `AddAbilities` array to a unit
+in `BepInEx/config/warpstorm/config.json`:
+
+```json
+"units": { "12008": { "AddAbilities": [20024] } }
+```
+
+`20024` is **Self Repair** (shared passive, +30 HP per turn; already on both
+Rhino variants). The plugin clones the unit's `AbilityList`, appends valid
+ability slots, and restores the original list when Warpstorm is toggled off.
+The configurator preserves the field when saving but has no dedicated Abilities
+UI yet. Restart a battle (or spawn new units) after saving.
+
 ## 1.2.1 — Configurator font fix
 
 The 1.2.0 configurator was built in a clean worktree where the six Barlow UI

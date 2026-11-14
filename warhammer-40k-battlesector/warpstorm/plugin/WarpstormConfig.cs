@@ -16,6 +16,10 @@ namespace Warpstorm;
 /// }
 /// </code>
 ///
+/// Units may also carry <c>"AddAbilities": [20024]</c> (20024 = Self Repair).
+/// The plugin clones the unit's <c>AbilityList</c> and appends valid slots at
+/// runtime; the original list is restored when Warpstorm is toggled off.
+///
 /// Keys are the in-game ids (stringified enums). Field names are the exact
 /// <c>Units.UnitData</c> / <c>Units.WeaponData</c> property names.
 /// </summary>

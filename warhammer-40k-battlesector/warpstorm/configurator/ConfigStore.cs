@@ -91,6 +91,11 @@ public static class ConfigStore
             ? (int)l
             : value.GetDouble(),
         JsonValueKind.String => value.GetString(),
+        // Keep arrays (AddAbilities: [20024]) when the configurator round-trips.
+        JsonValueKind.Array => value.EnumerateArray()
+            .Select(ToClr)
+            .Where(v => v != null)
+            .ToList(),
         _ => null,
     };
 }

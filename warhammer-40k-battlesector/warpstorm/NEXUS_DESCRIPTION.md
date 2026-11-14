@@ -236,13 +236,13 @@ your settings, delete these:
 
 ---
 
-## Files and hashes (1.2.1)
+## Files and hashes (1.2.2)
 
 | File | SHA-256 |
 |---|---|
-| `warpstorm-v1.2.1.zip` | `9c2739d5cdf99926d930b2126695cf141483f5c399dd6e026fb97ad26a6005e9` |
-| `Warpstorm.dll` | `37c07f19afaedc3da34815ebcaee60f08565cb9327684621b246b4c17638df00` |
-| `Warpstorm.Configurator.exe` | `168e7c0c09f8b9d846f091d7f8e1489b85e634341d05a0fb56a9c2a7bc62e232` |
+| `warpstorm-v1.2.2.zip` | `48c0ee73e2d2af9b01f7910653e7ece43a311c655317731702ebcdcbc87fc293` |
+| `Warpstorm.dll` | `b0f38f059e12f24f9916d99be2e094818d83e074b22e789078af5173a2e9f787` |
+| `Warpstorm.Configurator.exe` | `3d738ae7bde4031aa96fc6f29794b44c57035b8f7458d303821aabb5e096665b` |
 
 The chapter schemes are already inside the main zip. They are also available as
 separate `scheme-<chapter>-v<version>.zip` files for sharing.
@@ -260,5 +260,5 @@ stencil drawings.
 
 ## Changelog
 
-**1.2.1:** configurator startup fix — all six Barlow UI fonts are embedded again (the 1.2.0 build omitted them and crashed while opening the window). **1.2.0:** Battlesector 1.8.0 support (Servants of Chaos, 202 units / 442 weapons, composite tables, `ShotsPerSwitch`). **1.1.0:** Army Painter is now opt-in and lazy; stat-only setups do no paint work
+**1.2.2:** units can gain abilities via the `AddAbilities` config array (e.g. Self Repair `20024`); the plugin clones the ability list and reverts it on toggle-off. **1.2.1:** configurator startup fix — all six Barlow UI fonts are embedded again (the 1.2.0 build omitted them and crashed while opening the window). **1.2.0:** Battlesector 1.8.0 support (Servants of Chaos, 202 units / 442 weapons, composite tables, `ShotsPerSwitch`). **1.1.0:** Army Painter is now opt-in and lazy; stat-only setups do no paint work
 in game. **1.0.0:** first public release. The full list is on the Changelog tab.
